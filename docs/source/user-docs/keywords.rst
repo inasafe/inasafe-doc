@@ -98,7 +98,6 @@ Valid subcategories for category 'exposure':
    ============  ================
    exposure      population
    exposure      building
-   exposure      roads
    ============  ================
 
 Example keywords file entry::
@@ -178,7 +177,6 @@ Valid densities for different subcategories
    building      datatype        osm
    building      datatype        sigab
    building      datatype        other
-   roads         datatype        not used for roads
    ============ ============== =====================
 
 Assumptions
