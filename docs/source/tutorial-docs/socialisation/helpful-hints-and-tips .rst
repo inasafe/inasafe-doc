@@ -1,14 +1,18 @@
 Helpful Hints And Tips
 ======================
-You have now gone through InaSAFE using 4 different natural hazards, changing a variety of paramaters and analysing the results.  This chapter has been designed to help you understand a little more about InaSAFE as well as where you can go for help.
+You have now gone through InaSAFE using 4 different natural hazards, changing a
+variety of paramaters and analysing the results.  This chapter has been
+designed to help you understand a little more about InaSAFE as well as where
+you can go for help.
 
 InaSAFE option menu
 -------------------
 
- The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar’s options icon.
-.. image:: C:\Users\mahardika\Documents\GitHub\inasafe-doc\docs\resources\en\socialisation\insafe_options_tools.jpeg
+The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar’s options icon.
 
-.. image:: C:\Users\mahardika\Documents\GitHub\inasafe-doc\docs\resources\en\socialisation\Inasafe_Options.jpeg
+.. image:: /static/socialisation/insafe_options_tools.jpeg
+
+.. image:: /static/socialisation/Inasafe_Options.jpeg
 
 The following options are available on the Options Dialog:
 
