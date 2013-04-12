@@ -6,9 +6,9 @@ Introduction
 
 In this chapter you will run InaSAFE in Jakarta to determine the impact of a flood model on Jakarta’s population and buildings. 
 
-1. :guilabel: `Open` Jakarta_floods.qgs - File/Open Project... ,
+1. :guilabel:`Open` Jakarta_floods.qgs - File/Open Project... ,
 
-2. :guilabel:`Click` on :guilabel: `browse` navigate to *InaSAFE projects* and :guilabel:`Select` *Jakarta_floods*, :guilabel:`Click` open and then open again
+2. :guilabel:`Click` on browse navigate to *InaSAFE projects* and :guilabel:`Select` *Jakarta_floods*, :guilabel:`Click` open and then open again
  
 .. image:: /static/socialisation/page_28.jpg
    :align: center
