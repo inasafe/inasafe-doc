@@ -253,11 +253,11 @@ Map Canvas Extent
 55. :guilabel:`Run` steps 45-53 again place your 2 results below
 56. How many buildings are estimated to be flooded
 
-ANSWER  _____________________________________________________________
+ANSWER _____________________________________________________________
 
 57.How many people are estimated to need evacuation
 
-ANSWER  _____________________________________________________________
+ANSWER _____________________________________________________________
 
 .. Note:: You will now see that your results are different than the original InaSAFE runs,  this is because your extent window determines the area in which you are analysing the data. The next chapter will show you how to change this if needed.*
 
