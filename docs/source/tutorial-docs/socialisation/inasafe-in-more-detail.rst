@@ -222,15 +222,15 @@ Comparing Results - Optional
 
 You have now completed the following runs
 
-+--------------+-------------+------------+------------+-------------+-------------------+-------------+ 
-| Hazard	   |   Threshold |  Data Type |  Exposure  |  Data Type	 |  Impact function	 |  Data Type  |
-+==============+=============+============+============+=============+===================+=============+ 
-| flood model  |    1.0m     |   Raster	  |  People	   |   Raster	 |  Need Evacuation	 |             |
-| flood model  |    0.8m     |   Raster	  |  People	   |   Raster	 |  Need Evacuation	 |             |
-| flood model  |    1.0m     |   Raster	  | Buildings  |   Vector	 |   Be flooded	     |             |
-| flood 180113 |             |   Vector	  | Buildings  |   Vector	 |   Be flooded	     |             |
-| flood 180113 |     1%	     |   Vector	  |  People	   |   Raster	 |  Need Evacuation  |             |
-+--------------+-------------+------------+------------+-------------+-------------------+-------------+
+=============  =============  =============  ============  =============  ===================  ============= 
+**Hazard**	   **Threshold**  **Data Type**  **Exposure**  **Data Type**  **Impact function**  **Data Type**
+=============  =============  =============  ============  =============  ===================  ============= 
+flood model    1.0m           Raster	     People	       Raster	      Need Evacuation	   none              
+flood model    0.8m           Raster	     People	       Raster	      Need Evacuation      none                              
+flood model    1.0m           Raster	     Buildings     Vector	      Be flooded	       none                 
+flood 180113   none           Vector	     Buildings     Vector	      Be flooded	       none                
+flood 180113   1%	          Vector	     People	       Raster	      Need Evacuation      none              
+=============  =============  =============  ============  =============  ===================  =============
 
 	
 49. Please complete the Data Type for each impact layer you have created through InaSAFE
