@@ -66,7 +66,7 @@ You should now have a point that shows the location of Merapi. Lets take some ti
 15. Use the Information tool to find more out about the Volcano
 16. Use the measurement tool to find out how far away is the closest population hub (brown areas on the map)
 
-.. Note:: For the Information and Measurement tool to work you need to have the Merapi layer highlighted in the layer window.*
+.. Note:: For the Information and Measurement tool to work you need to have the Merapi layer highlighted in the layer window.
 
 .. image:: /static/socialisation/save_selection.png
    :align: center
@@ -102,15 +102,17 @@ As a default InaSAFE has made 3 hazard areas:
 #. 3-5 km
 #. 5-10 km
 
+.. image:: /static/socialisation/impact_function _editor_merapi2.png
+   :align: center
 
-*Note: that its written 3,5,10 so if you wanted Vent-2, 2-6 and then 6-10 it would be 2,6,10*
+.. Note:: that its written 3,5,10 so if you wanted Vent-2, 2-6 and then 6-10 it would be 2,6,10*
 
-24. Click OK
-25. Run InaSAFE
-26. Click InaSAFE Print, save accordingly
+24. :guilabel:`Click OK`
+25. :guilabel:`Run InaSAFE`
+26. :guilabel:`Click` InaSAFE Print, save accordingly
 27. Analysis Results
 
-*Note: Needs per week are based on the cumulative of all 3 zone hence vent - 10km*
+.. Note:: Needs per week are based on the cumulative of all 3 zone hence vent - 10km
 
 Free time
 ---------
@@ -123,7 +125,7 @@ In the event of **Merapi erupting** how many **buildings** will **be affected** 
 
 **ANSWER** _________________________ **ANSWER** ________________________ **ANSWER** __________________________
 
-*Note: You can see in this example, and in the previous flooding examples that we do not have every single building. In Jakarta we are confident that we have the majority of schools, hospitals etc. But around Merapi we only have a selection, most of which have no attributes, to make a scenario more useful a organised data collection is necessary!.*
+.. Note:: You can see in this example, and in the previous flooding examples that we do not have every single building. In Jakarta we are confident that we have the majority of schools, hospitals etc. But around Merapi we only have a selection, most of which have no attributes, to make a scenario more useful a organised data collection is necessary!.
 
 Earthquake
 ----------
@@ -132,14 +134,15 @@ Indonesia’s location on the edges of the Pacific, Eurasian, and Australian tec
 
 This particular scenario is a modelled version of the 2009 Padang earthquake.
 
-28. Open a QGIS project called Padang_earthquake.qgs - **File/Open Project...** , navigate to InaSAFE projects and select Padang_earthquake
-29. You will see that there is 4 layers in the layer panel, click on each of them to read the keywords in the InaSAFE window
+28. :guilabel:`Open` a QGIS project called Padang_earthquake.qgs - **File/Open Project...** , :guilabel:`navigate` to InaSAFE projects and :guilabel:`select` Padang_earthquake
+29. You will see that there is 4 layers in the layer panel, :guilabel:`click` on each of them to read the keywords in the InaSAFE window
 
-**image**
+.. image:: /static/socialisation/padang_earthquake2.png
+   :align: center
 
 30. Notice the difference between the first **people** layer and the second, the second one has a source of AsiaPop rescale, keep this in mind for the next step.
 31. In the **How many** drop box pick the top **people**.
-32. Use the Pan Map tool to move the map slightly.
+32. :guilabel:`Use` the Pan Map tool to move the map slightly.
 (click hold and slightly move the mouse - this is just to reset the extent)
 
 Memory usage warning
