@@ -30,11 +30,11 @@ The following options are available on the Options Dialog:
 
 **Run analysis in separate thread (experimental):** This option cause the analysis to be run in its own thread.
 
-.. note:: Note: Pressing Cancel at any time will close the options dialog and any changes made will not be applied.  Pressing Ok at any time will close the options dialog and any changes made will be applied immediately.
+.. note:: Pressing Cancel at any time will close the options dialog and any changes made will not be applied.  Pressing Ok at any time will close the options dialog and any changes made will be applied immediately.
  
 We encourage you to check (in addioion to the default ones)
-** * When clipping, also clip features (e.g. will clip polygon smaller)
-** * Help to improve InaSAFE by submitting errors to a remote server
+* When clipping, also clip features (e.g. will clip polygon smaller)
+* Help to improve InaSAFE by submitting errors to a remote server
  
 InaSAFE Website
 ---------------
