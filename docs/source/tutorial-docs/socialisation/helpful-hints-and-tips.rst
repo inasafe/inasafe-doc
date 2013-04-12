@@ -86,7 +86,7 @@ If you have a feature request, please use the issue tracker to let us know about
 Otherwise email inasafe-users@googlegroups.com
 
 **Where do I get Hazard and Exposure data from?**
-As explained in InaSAFE functionality chapter (page 13), you are able to get open exposure data from  www.asiapop.org for population and  from OpenStreetMap for structures (however you may need to still digitise the structures go to www.learnosm.org for more details). To download OSM data see Appendix :guilabel:`Getting OpenStreetMap Data` (page 56).
+As explained in InaSAFE functionality chapter (page 13), you are able to get open exposure data from  www.asiapop.org for population and  from OpenStreetMap for structures (however you may need to still digitise the structures go to www.learnosm.org for more details). To download OSM data see Appendix “Getting OpenStreetMap Data” (page 56).
 For hazard information it is best to approach your government science agencies or local universities to model earthquake, tsunami or floods.  However if it floods regularly in your region you could also develop a community floodprone footprint. 
 
 **Why does the plugin not show up in my QGIS Plugin Manager?**
@@ -101,5 +101,5 @@ One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not get 
 #. :guilabel:`Save` it and the plugin repo list should update. If it doesn’t, close and open QGIS to force an update.
 #. In the :guilabel:`python plugin manager` main tab now you should find InaSAFE available
  
-Thank you for attending this course.
+Thankyou for attending this course.
 If you would like to contact me directly my email address is kristy.vanputten@gmail.com
