@@ -5,4 +5,5 @@ InaSAFE Socialisation
    :maxdepth: 2
 
    introduction-and-overview
+   helpful-hints-and-tips
 
