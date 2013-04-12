@@ -26,7 +26,7 @@ Volcanoes in Indonesia
 
 There are 129 active volcanoes in Indonesia, and its always valuable to know how many people, or how much infrastructure is in a certain perimeter of the vent.Hence InaSAFE is able to use a vent location (point) as a hazard layer, the dataset that we are going to use came from downloading locations from Smithsonian website.  You may ask “How can we use a point to figure out impact? InaSAFE needs your help!.
 
-1. Open a QGIS project called Volcano_Indonesia.qgs - **File/Open Project...** , navigate to InaSAFE projects and select Volcano_Indonesia
+1. :guilabel:`Open a QGIS project` called Volcano_Indonesia.qgs - **File/Open Project...** , :guilabel:`navigate` to InaSAFE projects and select Volcano_Indonesia
 
 .. image:: ../_static/socialisation/volcanoes.png
    :align: center
