@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012, QGIS project
 # This file is distributed under the same license as the QGIS Documentation Project package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-07 10:27\n"
+"POT-Creation-Date: 2013-04-12 17:10\n"
 "PO-Revision-Date: 2013-03-07 09:27+0000\n"
 "Last-Translator: timlinux <tim@linfiniti.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/language/id/)\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
+"language/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 # 98b4208903e44a5a960d2e3ba57a0a51
@@ -142,8 +143,7 @@ msgstr ""
 #: ../../source/developer-docs/preparing_a_release.rst:35
 #: ../../source/developer-docs/preparing_a_release.rst:456
 msgid ""
-"Upload the updated package zip file to the new QGIS python plugin "
-"repository."
+"Upload the updated package zip file to the new QGIS python plugin repository."
 msgstr ""
 
 # 04e5bbf9774e4e1a8f7f6674a6e4bc33
@@ -159,9 +159,9 @@ msgstr ""
 # 29cc3fff9bb44ae89281a7543bb7233b
 #: ../../source/developer-docs/preparing_a_release.rst:42
 msgid ""
-"|project_name| will follow the `semantic versioning system "
-"<http://semver.org/>`_. Simply put, the following scheme should be applied "
-"to version numbers:"
+"|project_name| will follow the `semantic versioning system <http://semver."
+"org/>`_. Simply put, the following scheme should be applied to version "
+"numbers:"
 msgstr ""
 
 # e4938133095a421b88c114dcbe693e7a
@@ -234,8 +234,8 @@ msgstr ""
 # 0df2359bb0c3422aa863a8180e5efcbc
 #: ../../source/developer-docs/preparing_a_release.rst:60
 msgid ""
-"You have fixed various bugs without adding new features or breaking the API,"
-" and you are ready to immediately publish your work. Result: **New point "
+"You have fixed various bugs without adding new features or breaking the API, "
+"and you are ready to immediately publish your work. Result: **New point "
 "release.**"
 msgstr ""
 
@@ -271,9 +271,8 @@ msgstr ""
 # ff88424a5dae4a8a9ce34a97fc6adc9e
 #: ../../source/developer-docs/preparing_a_release.rst:80
 msgid ""
-"**Outcome:** At the end of  this step all `issues "
-"<https://github.com/AIFDR/inasafe/issues>`_ tagged for the release should be"
-" closed."
+"**Outcome:** At the end of  this step all `issues <https://github.com/AIFDR/"
+"inasafe/issues>`_ tagged for the release should be closed."
 msgstr ""
 
 # 72ba40ed5c304858a8e8a0c0625d6771
@@ -294,8 +293,8 @@ msgstr ""
 msgid ""
 "The purpose of creating a branch is to isolate incompatible and possibly "
 "unstable changes that take place in the *master branch* from stable code "
-"that forms the basis of a release. You will note from the diagram above that"
-" branches are named after the minor version, and are tagged with the point "
+"that forms the basis of a release. You will note from the diagram above that "
+"branches are named after the minor version, and are tagged with the point "
 "version at the point of release."
 msgstr ""
 
@@ -315,21 +314,20 @@ msgstr ""
 #: ../../source/developer-docs/preparing_a_release.rst:107
 msgid ""
 "These **Python Enhancement Proposals** (PEP) relate to the formatting of "
-"python source code. In particular they mandate spacing, layout, line lengths"
-" and so on. The outcome of PEP8 and PEP257 compliance is code that is "
-"consistently formatted accross the whole code base, regardless of "
-"authorship."
+"python source code. In particular they mandate spacing, layout, line lengths "
+"and so on. The outcome of PEP8 and PEP257 compliance is code that is "
+"consistently formatted accross the whole code base, regardless of authorship."
 msgstr ""
 
 # 172c727e0fe245c898117472f8b0ceaf
 #: ../../source/developer-docs/preparing_a_release.rst:112
 msgid ""
-"This consistency makes it easier to incorporate new members into the project"
-" team and to collaborate effectively within the team. A number of tools are "
+"This consistency makes it easier to incorporate new members into the project "
+"team and to collaborate effectively within the team. A number of tools are "
 "available to help you to identify PEP8 and PEP257 transgressions, and there "
 "is a Makefile target (:command:`make pep8` which will do a PEP8 test for "
-"you). Under the Eclipse/PyDev IDE, there is also on the fly checking support"
-" which can be enabled and that will notify you of any compliance issues as "
+"you). Under the Eclipse/PyDev IDE, there is also on the fly checking support "
+"which can be enabled and that will notify you of any compliance issues as "
 "illutrated in the screenshot below."
 msgstr ""
 
@@ -350,8 +348,8 @@ msgid ""
 "because if python is run in optimised mode e.g. python -O, these lines are "
 "ignored and the program logic will no longer work as expected. On some "
 "platforms the use of python optimised code is mandated and we are likely to "
-"get hard to investigate bug reports from end users at some unspecified point"
-" in the future."
+"get hard to investigate bug reports from end users at some unspecified point "
+"in the future."
 msgstr ""
 
 # 80417aa0d39b434989aee65bb179e224
@@ -359,8 +357,7 @@ msgstr ""
 msgid ""
 "This is a 'soft' requirement - since the python code for the plugin will be "
 "executed by the QGIS python internals, we can be fairly certain that python "
-"code will be executed with out the -O optimisation option for the short "
-"term."
+"code will be executed with out the -O optimisation option for the short term."
 msgstr ""
 
 # 2d3ccb45390e4945ada4d16a86dd4aaa
@@ -371,6 +368,12 @@ msgstr ""
 # bdf718594a1c4d7ebadc822663962072
 #: ../../source/developer-docs/preparing_a_release.rst:144
 msgid "Compile Qt resources and user interface files"
+msgstr ""
+
+# 14dbe9b783644d8aa1c66e4c6420de10
+#: ../../source/developer-docs/preparing_a_release.rst:146
+msgid ""
+"The Qt4 resource and user interface definition files supplied with InaSAFE"
 msgstr ""
 
 # 87cbc502970042d195134a046d7d2eb5
@@ -386,9 +389,9 @@ msgstr ""
 # f5e1681291c04d459e33f1f62ba3fbdd
 #: ../../source/developer-docs/preparing_a_release.rst:150
 msgid ""
-":command:`pyuic4` - A tool to compile Qt4 user interface definition files "
-"(.ui) into python source code. The .ui files contain xml which describes the"
-" placement of widgets within a user interface file."
+":command:`pyuic4` - A tool to compile Qt4 user interface definition files (."
+"ui) into python source code. The .ui files contain xml which describes the "
+"placement of widgets within a user interface file."
 msgstr ""
 
 # c40cbbb39d064974b21de6b5040d0126
@@ -451,8 +454,8 @@ msgstr ""
 #: ../../source/developer-docs/preparing_a_release.rst:186
 msgid ""
 "During the development process, unit tests should be written (following the "
-"principles of test driven development). A good test suite allows the code to"
-" be shipped with confidence knowing it will behave as expected. At the time "
+"principles of test driven development). A good test suite allows the code to "
+"be shipped with confidence knowing it will behave as expected. At the time "
 "of release, all the tests in the test suite should either pass or have "
 "documented reasons as to why they fail, and that they are expected to fail."
 msgstr ""
@@ -461,8 +464,8 @@ msgstr ""
 #: ../../source/developer-docs/preparing_a_release.rst:192
 msgid ""
 "In addition, tests should provide a code coverage of 80% or better of the "
-"shipped code base. More informationn on running unit tests is included in "
-":ref:`running-tests-label`."
+"shipped code base. More informationn on running unit tests is included in :"
+"ref:`running-tests-label`."
 msgstr ""
 
 # cff19a05a8ca40c697946dade338cc32
@@ -480,11 +483,11 @@ msgstr ""
 # 3788b8331c1e47e5ba5dd6229fd3b3ac
 #: ../../source/developer-docs/preparing_a_release.rst:202
 msgid ""
-"While unit testing provides a quantitative measure of the code's robustness,"
-" user acceptance testing provides a qualitative measure. The plugin should "
-"be made available to 'invested' users to test with real world data and in "
-"real world usage scenarios. Any issues with workflow, ease of use, quality "
-"of model outputs and reports etc. should be identified at this point and "
+"While unit testing provides a quantitative measure of the code's robustness, "
+"user acceptance testing provides a qualitative measure. The plugin should be "
+"made available to 'invested' users to test with real world data and in real "
+"world usage scenarios. Any issues with workflow, ease of use, quality of "
+"model outputs and reports etc. should be identified at this point and "
 "remedied."
 msgstr ""
 
@@ -519,9 +522,9 @@ msgstr ""
 #: ../../source/developer-docs/preparing_a_release.rst:221
 msgid ""
 "In addition to documenting new features, any new python modules introduced "
-"during the development work leading up to the release need to be included in"
-" the API documentation. This process is described in detail in the :ref"
-":`api-documentation-howto-label` document."
+"during the development work leading up to the release need to be included in "
+"the API documentation. This process is described in detail in the :ref:`api-"
+"documentation-howto-label` document."
 msgstr ""
 
 # 9245ee4878964ef4a049b940421aa3fa
@@ -539,10 +542,10 @@ msgstr ""
 # 3fa188ae0d8f45b29aa20bdf2b72a6de
 #: ../../source/developer-docs/preparing_a_release.rst:232
 msgid ""
-"A changelog should be maintained (:file:`docs/sources/user-"
-"docs/changelog.rst`) that lists the key new features and improvement made "
-"with each release. Use the :doc:`../user-docs/changelog` file to guide the "
-"style of any edits and additions made."
+"A changelog should be maintained (:file:`docs/sources/user-docs/changelog."
+"rst`) that lists the key new features and improvement made with each "
+"release. Use the :doc:`../user-docs/changelog` file to guide the style of "
+"any edits and additions made."
 msgstr ""
 
 # 9a8b785eaead4e24a91be788b4e2b937
@@ -598,8 +601,8 @@ msgstr ""
 # 918cbcf6f69044cfa244e2bf51a18821
 #: ../../source/developer-docs/preparing_a_release.rst:259
 msgid ""
-"The Graphical User Interface - primarily the :file:`gui` python package. Qt4"
-" .ts files are used for these translations."
+"The Graphical User Interface - primarily the :file:`gui` python package. "
+"Qt4 .ts files are used for these translations."
 msgstr ""
 
 # 6af6d267e178437ab443c79b735e7dc2
@@ -718,8 +721,8 @@ msgstr ""
 # ff2046d3aaa54242b7128ea23b481187
 #: ../../source/developer-docs/preparing_a_release.rst:320
 msgid ""
-"Immediately after branching, and then change the status designation to final"
-" just prior to tagging the release."
+"Immediately after branching, and then change the status designation to final "
+"just prior to tagging the release."
 msgstr ""
 
 # da74bf741bb744f9bf2ce48621015d7e
@@ -744,13 +747,13 @@ msgstr ""
 #: ../../source/developer-docs/preparing_a_release.rst:331
 msgid ""
 "At this point a test package should be generated that can be used to test "
-"the plugin in a clean room environment. A clean room environment comprises a"
-" system that has a fresh operating system installation with the desired "
+"the plugin in a clean room environment. A clean room environment comprises a "
+"system that has a fresh operating system installation with the desired "
 "version of QGIS installed, and **no other software**. It is probably a good "
 "practice to use machine virtualisation for this purpose, for example with "
 "images of a windows and a linux system installed. Some virtualisation tools "
-"such as vmware provide the ability to create a system snapshot and roll back"
-" to it."
+"such as vmware provide the ability to create a system snapshot and roll back "
+"to it."
 msgstr ""
 
 # 07e0b69ef4dc4ded86a5cdb3cc749935
@@ -783,8 +786,8 @@ msgstr ""
 # b1f22821e35e40baae363ca250f7de14
 #: ../../source/developer-docs/preparing_a_release.rst:355
 msgid ""
-"Now start QGIS and enable the plugin in the QGIS plugin manager ( "
-":menuselection:`Plugins --> Manage Plugins`)."
+"Now start QGIS and enable the plugin in the QGIS plugin manager ( :"
+"menuselection:`Plugins --> Manage Plugins`)."
 msgstr ""
 
 # 8f6890eb0ead4387afdcd367f24e9b36
@@ -795,9 +798,9 @@ msgstr ""
 # dd9fef4a8a3d4af68cab6b462ae29d4c
 #: ../../source/developer-docs/preparing_a_release.rst:361
 msgid ""
-"This step is only done for minor and major releases, point releases are only"
-" tagged. The branch should be named after the major and minor version "
-"numbers only - for example: :samp:`version-1_0`. The following console log "
+"This step is only done for minor and major releases, point releases are only "
+"tagged. The branch should be named after the major and minor version numbers "
+"only - for example: :samp:`version-1_0`. The following console log "
 "illustrates how to create a local branch, push it to the origin repository, "
 "remove the local branch and then track the repository version of the branch "
 "localy::"
@@ -848,8 +851,7 @@ msgstr ""
 # 71eb03fb6a884cae94eb2f885a864ad9
 #: ../../source/developer-docs/preparing_a_release.rst:399
 msgid ""
-"So in my case my GPG id is :samp:`97626237`. Now register that key with "
-"GIT::"
+"So in my case my GPG id is :samp:`97626237`. Now register that key with GIT::"
 msgstr ""
 
 # 5842670341f14e568dc76cb7a180a262
@@ -872,9 +874,10 @@ msgid ""
 "been checked. The tag should be named after the major, minor and point "
 "release for example :samp:`version-0_1_0`. If the release is a release "
 "candidate or and alpha release the letters :samp:`rc` or :samp:`a` "
-"respectively should be appended respectively, along with the related number."
-" For example version 0.1.0 alpha 1 would be tagged as :samp:`version-"
-"0_1_0a1`. To tag the release simply do it in git as illustrated below.::"
+"respectively should be appended respectively, along with the related number. "
+"For example version 0.1.0 alpha 1 would be tagged as :samp:"
+"`version-0_1_0a1`. To tag the release simply do it in git as illustrated "
+"below.::"
 msgstr ""
 
 # a4806c26061140a2ab138906a7090497
@@ -903,8 +906,8 @@ msgstr ""
 # 05ef22cdc52841d48b088f4ed4f1bc9a
 #: ../../source/developer-docs/preparing_a_release.rst:439
 msgid ""
-"You can differentiate release **branches** from release **tags** by the fact"
-" that branch names have only the minor version number (e.g. version-0_4) "
+"You can differentiate release **branches** from release **tags** by the fact "
+"that branch names have only the minor version number (e.g. version-0_4) "
 "whereas release tags are reserved for point releases (e.g. version-0_4_1)."
 msgstr ""
 
