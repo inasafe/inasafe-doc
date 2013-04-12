@@ -1,8 +1,8 @@
 Other Hazards in InaSAFE
 ========================
 
-**Objectives:**
----------------
+Objectives
+----------
 
 * To run InaSAFE with other hazards, specifically Volcano and Earthquake
 * To save a subset of an existing layer
@@ -10,8 +10,8 @@ Other Hazards in InaSAFE
 * To understand the difference in scale between hazards
 * To run InaSAFE using a Tsunami model (optional)
 
-**Expected Results:**
----------------------
+Expected Results
+----------------
 
 Participants are able to:
 
@@ -28,7 +28,7 @@ There are 129 active volcanoes in Indonesia, and its always valuable to know how
 
 1. Open a QGIS project called Volcano_Indonesia.qgs - **File/Open Project...** , navigate to InaSAFE projects and select Volcano_Indonesia
 
-.. image:: ..../_static/volcanoes.png
+.. image:: ..../_static/socialisation/volcanoes.png
    :align: center
 
 Select Feature and Save
