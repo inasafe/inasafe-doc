@@ -10,9 +10,9 @@ InaSAFE option menu
 
 The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar’s options icon.
 
-.. image:: /static/socialisation/insafe_options_tools.jpeg
+.. image:: /static/socialisation/insafe_options_tools.jpg
 
-.. image:: /static/socialisation/Inasafe_Options.jpeg
+.. image:: /static/socialisation/Inasafe_Options.jpg
 
 The following options are available on the Options Dialog:
 
@@ -48,11 +48,11 @@ InaSAFE Website
 ---------------
 This manual is by no far the only documentation on InaSAFE.  Within the InaSAFE website you can find not only documentation on training, but all user documentation and developer documentation.  This website is also updated with every new release.
  
-.. image:: /static/socialisation/Inasafe_Mainpage.jpeg
+.. image:: /static/socialisation/Inasafe_Mainpage.jpg
 
 Click on the Content to find out more
 
-.. image:: /static/socialisation/Inasafe_content.jpeg
+.. image:: /static/socialisation/Inasafe_content.jpg
 
 The website will be updated shortly with a new theme and logo.
 The content of this manual  (InaSAFE socialisation training manual) will also be found on the website in weeks to come.
