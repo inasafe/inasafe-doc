@@ -16,7 +16,7 @@ emergency managers need to answer questions like:
 Conceptually InaSAFE combines one exposure layer (e.g. buildings) with one hazard scenario
 (e.g. flooding) and returns an impact layer along with textual staticial summary.
 
-.. image:: ../docs/resources/en/socialisation/inasafe_concept.png
+.. image:: /static/socialisation/inasafe_concept.png
 
 InaSAFE is framed around questions such as:
 
@@ -132,7 +132,100 @@ or important infrastructure (buildings, bridges etc). that become a focus of int
 the impact of a specific hazard.
 
 
++--------------------------+-------------------------------------------+
+|       Exposure           |                  Type                     | 
++==========================+===========================================+
+| Population               | Density (people/units\ :sup:`2` \)        |                    
++--------------------------+-------------------------------------------+
+| Buildings                | Schoold, Hospitals                        |
++--------------------------+-------------------------------------------+
+| Other Man-made structure | Bridges, telecommunications               |
++--------------------------+-------------------------------------------+
+| \*Roads                  | major, minor                              |
++--------------------------+-------------------------------------------+
+| \*Landslide              | Agriculture, industrial                   |
++--------------------------+-------------------------------------------+
 
+*\*To come in future version of InaSAFE*
+
+The input Exposure layer must have:
+
+- a coordinate/location identifier
+- temporal information when the data was collected
+- type, if available
+
+Aggregation
+............
+
+For InaSAFE an aggregation layer is division of the hazard extent by boundaries not relating to the 
+hazard, more specifically administration boundaries such as districts, villages etc. This allows for 
+targeted response by the local governments, and an understanding of the division of impacted output. 
+Due to time constraints aggregation will only be included within the optional section.
+
+Impact Function
+---------------
+
+The core to InaSAFE  is its capability of having multiple Impact functions specific to the input data. 
+The impact function is a software programme that computes an impact assessment given a number of inputs. 
+The impact assessment will typically have a spatial component (e.g. a GIS layer which can be incorporated
+into a map) and a non-spatial component (e.g. a list of estimates of disaster risk reduction elements 
+such as how many bags of rice to make available, or a list of actions you may want to consider carrying out).
+
+Impact functions can be written for any contingency planning purpose, one example is the minimum needs 
+(minimum quantity of relief items per per person) that need to be supplied to refugees during/after a disaster. 
+The Indonesian Disaster Management Agency have identified these needs per day, and InaSAFE has used these numbers
+to calculate how much food, water, toilets, family kits etc are need during/after the disaster based on the number 
+of evacuated people. This output directly informs contingency planners how much of each item is needed to withstand 
+a major disaster.
+
+Additionally an Impact functions can be configured ‘on the fly’ during the analysis.  This will be touched 
+on during the training exercise.
+
+Keywords
+........
+
+An Impact function will automatically be chosen depending on the keywords that has been allocated to 
+the input layers. The purpose of the keywords file is to provide additional metadata needed by the 
+impact functions. For example, the keywords file will indicate whether a given dataset should be treated
+as a hazard or an exposure layer. It is also used to indicate the context of the layer (e.g. flood, 
+earthquake).
+
+Available Impact Functions
+..........................
+
++-------------------+----------------+--------------------------+--------------------------------------------------------------------+ 
+|       Hazard      |   How many     |         might            |                              output                                |
++===================+================+==========================+====================================================================+ 
+| Earthquake        | People         | die or be displaced      | Number of people dead or displaced                                 | 
++-------------------+----------------+--------------------------+--------------------------------------------------------------------+ 
+| Earthquake        | Buildings      | be affected              | Number of buildings affected                                       |
++-------------------+----------------+--------------------------+--------------------------------------------------------------------+
+| Flood             | People         | need evacuating          | Number of people affected and Number of people needing evacuation  |
++-------------------+----------------+--------------------------+--------------------------------------------------------------------+
+| Flood             | Buildings      | be affected              | Number of buildings affected                                       |
++-------------------+----------------+--------------------------+--------------------------------------------------------------------+
+| Tsunami           | People         | need evacuating          | Hazard Zone                                                        |
++-------------------+----------------+--------------------------+--------------------------------------------------------------------+
+| Tsunami           | Buildings      | be affected              | Number of buildings affected                                       |
++-------------------+----------------+--------------------------+--------------------------------------------------------------------+
+| Volcano           | People         | need evacuating          |  Number of people affected and Number of people needing evacuation |                   |                    |
++-------------------+----------------+--------------------------+--------------------------------------------------------------------+
+| Volcano			| Buildings      | be affected              | Number of buildings affected 
++-------------------+----------------+--------------------------+--------------------------------------------------------------------+
+
+*\*This is not the complete list of Impact functions currently in InaSAFE.*
+
+Output Data
+-----------
+Impact calculation produces an output layer representing potential damages or losses of affected exposure. 
+The output layer will come out once the impact calculation process is finished successfully.  
+As previously indicated this output layer could potentially be aggregated by administration boundaries.
+
+Using the example explained in Impact functions about the minimum needs, the output data will be both 
+a spatial layer indicating where people are (by density) and the non-spatial layer will have statistics
+on the minimum needs based on the number of people that ‘need evacuating’.
+
+.. image:: /static/socialisation/output_data.png
 
 
 
