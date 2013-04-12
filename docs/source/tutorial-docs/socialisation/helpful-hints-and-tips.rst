@@ -14,7 +14,7 @@ The InaSAFE plugin provides an options dialog which allows you to define various
 
 The following dialog will appear:
 
-.. image:: /static/socialisation/Inasafe_Options.jpg
+.. image:: /static/socialisation/inasafe_options.jpg
 
 The following options are available on the :guilabel:`Options Dialog`.
 
@@ -50,11 +50,11 @@ InaSAFE Website
 ---------------
 This manual is by no far the only documentation on InaSAFE.  Within the InaSAFE website you can find not only documentation on training, but all user documentation and developer documentation.  This website is also updated with every new release.
  
-.. image:: /static/socialisation/Inasafe_Mainpage.jpg
+.. image:: /static/socialisation/inasafe_mainpage.jpg
 
 Click on the Content to find out more
 
-.. image:: /static/socialisation/Inasafe_content.jpg
+.. image:: /static/socialisation/inasafe_content.jpg
 
 The website will be updated shortly with a new theme and logo.
 The content of this manual  (InaSAFE socialisation training manual) will also be found on the website in weeks to come.
