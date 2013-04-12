@@ -143,7 +143,7 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
 30. Notice the difference between the first **people** layer and the second, the second one has a source of AsiaPop rescale, keep this in mind for the next step.
 31. In the **How many** drop box pick the top **people**.
 32. :guilabel:`Use` the Pan Map tool to move the map slightly.
-(click hold and slightly move the mouse - this is just to reset the extent)
+(:guilabel:`click hold and slightly move the mouse` - this is just to reset the extent)
 
 Memory usage warning
 --------------------
@@ -151,7 +151,12 @@ Memory usage warning
 You can see there is a problem with memory usage, its tells you that you may not be able to run this InaSAFE project because your computer has not enough memory. 
 You will recall that there is another **people** layer, the difference is the size of the pixel, the one we are trying to run is 100 m by 100 m and the one we will run is 1km by 1km.
 
+.. image:: /static/socialisation/memory_error.png
+   :align: center
+
 **Basically less pixels less memory need**
+
+
 
 33. Select the second “people” in the drop down menu
 34. Click on the drop down menu for the “Might”, this is the first InaSAFE run where there are actually 2 impact functions that we can choose from!
