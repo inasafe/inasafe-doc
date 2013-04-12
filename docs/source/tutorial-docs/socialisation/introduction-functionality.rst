@@ -1,4 +1,4 @@
-INASAFE FUNCTIONALITY
+InaSAFE Functionality
 =====================
 Before we dive into using QGIS and InaSAFE, this chapter will explain InaSAFE current functionality, the functionality we will touch on today as well as the spatial datasets we will be using (located on your USB sticks).
 
@@ -57,7 +57,7 @@ Population
 :About: High resolution, contemporary data on human population distributions are a prerequisite for the accurate measurement of the impacts of population growth, for monitoring changes and for planning interventions. The AsiaPop project was initiated in July 2011 with an aim of producing detailed and freely-available population distribution maps for the whole of Asia.
 The raster pixel size is 100m by 100m.
 
-.. image::/static/socialisation/asiapop.jpg
+.. image:: /static/socialisation/asiapop.jpeg
    :align: center
 
 Structures
@@ -70,7 +70,7 @@ Structures
 :Coverage: World - incomplete
 :About:  OpenStreetMap is a collaborative project to create a free editable map of the world. Two major driving forces behind the establishment and growth of OSM have been restrictions on use or availability of map information across much of the world and the advent of inexpensive portable satellite navigation devices.
 
-.. image::/static/socialisation/openstreetmap.png
+.. image:: /static/socialisation/openstreetmap.png
    :align: center
    
 AusAID has been working with the Humanitarian OpenStreetMap Team over the last 2 years in piloting and training OpenStreetMap in Indonesia.  The result so far is over 800,000 buildings have been mapped.  
@@ -112,10 +112,10 @@ Flood Footprint
 :Coverage: Jakarta
 :About: Based on the subvillage boundaries that were map during the DKI mapping project, we were able to use this dataset during the recent floods to identify the areas that had been flooded based on information provided by the villages.
 
-.. image::/static/socialisation/floodmodel.png
+.. image:: /static/socialisation/floodmodel.png
    :align: left
 
-.. image::/static/socialisation/floodfootprint.png
+.. image:: /static/socialisation/floodfootprint.png
    :align: right
    
 Volcano
@@ -128,7 +128,7 @@ Volcano
 :Coverage: World
 :About: The Smithsonian’s Global Volcanism Program seeks better understanding of all volcanoes through documenting their eruptions — small as well as large — during the past 10,000 years. Through their website you are able to download a spreadsheet of all the recorded volcanoes.  This spreadsheet also has the volcano location, which has been turned into a point file.
 
-.. image::/static/socialisation/volcano.png
+.. image:: /static/socialisation/volcano.png
    :align: center
 
 Earthquake
@@ -144,7 +144,7 @@ ShakeMaps are generated automatically following moderate and large earthquakes b
 http://earthquake.usgs.gov/earthquakes/map/
 Pre-event / scenario based shakemaps need to be modelled by earthquake specialist.
 
-.. image::/static/socialisation/padang_earthquake.png
+.. image:: /static/socialisation/padang_earthquake.png
    :align: center
 
 Tsunami
@@ -157,7 +157,7 @@ Tsunami
 :Coverage: Maumere, Flores
 :About: In September 2011 the Indonesian government held a national exercise in Maumere, Flores. AIFDR assisted Badan Geologi in developing a tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was modelled using the an open source software called ANUGA and elevation from NEXTMap. The water depth is the maximum depth occurring across the entire tsunami event. http://anuga.anu.edu.au/ and http://intermap.com/
 
-.. image::/static/socialisation/tsunami.png
+.. image:: /static/socialisation/tsunami.png
    :align: center
    
 

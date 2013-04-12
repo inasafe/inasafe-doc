@@ -33,17 +33,15 @@ There are 129 active volcanoes in Indonesia, and its always valuable to know how
 Select Feature and Save
 -----------------------
 
-2. As you can see there are many Volcanoes in Indonesia, lets zoom into one volcano to analysis. Right click on the Volcanoes layer and select “Open Attribute Table”
-3. Type “Merapi” in “Look for” section - circle 1,
-4. select NAME from dropdown menu- circle 2 
-5. Click search - circle 3 -This will select only the Volcano that have Merapi in the name column
-6. Check “Show selected only - circle 4 -This will identify only the selected layers
-7. Click on “Pan map to the selected row” - circle 5 -Selected layer is centre  on the map canvas
+2. As you can see there are many Volcanoes in Indonesia, lets :guilabel:`zoom` into one volcano to analysis. :guilabel:`Right click` on the Volcanoes layer and :guilabel:`select` “Open Attribute Table”
+3. :guilabel:`Type` “Merapi” in “Look for” section |circle 1|,
+4. :guilabel:`select` NAME from dropdown menu- circle 2 
+5. :guilabel:`Click search` - circle 3 -This will select only the Volcano that have Merapi in the name column
+6. :guilabel:`Check` “Show selected only" - circle 4 -This will identify only the selected layers
+7. :guilabel:`Click` on “Pan map to the selected row” - circle 5 -Selected layer is centre  on the map canvas
 8. Close Attribute Table - circle 6
 
-
-**image**
-
+.. image:: /static/socialisation/merapi_attribute.png
 
 9. Click on the zoom to selected tool to zoom in further. Keep clicking the tool until you get to an extent similar to the one below. (The yellow triangle is Merapi)
 
