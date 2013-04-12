@@ -119,3 +119,43 @@ In the event of **Merapi erupting** how many **buildings** will **be affected** 
 **ANSWER** _________________________ **ANSWER** ________________________ **ANSWER** __________________________
 
 *Note: You can see in this example, and in the previous flooding examples that we do not have every single building. In Jakarta we are confident that we have the majority of schools, hospitals etc. But around Merapi we only have a selection, most of which have no attributes, to make a scenario more useful a organised data collection is necessary!.*
+
+Earthquake
+----------
+
+Indonesia’s location on the edges of the Pacific, Eurasian, and Australian tectonic plates makes it not only a site of numerous volcanoes but also frequent earthquakes. The hazard layer we are going to use for this example has been provided by Badan Geologi & AIFDR and describes the shaking or Modified Mercalli Intensity (MMI) Scale.
+
+This particular scenario is a modelled version of the 2009 Padang earthquake.
+
+28. Open a QGIS project called Padang_earthquake.qgs - **File/Open Project...** , navigate to InaSAFE projects and select Padang_earthquake
+29. You will see that there is 4 layers in the layer panel, click on each of them to read the keywords in the InaSAFE window
+
+**image**
+
+30. Notice the difference between the first **people** layer and the second, the second one has a source of AsiaPop rescale, keep this in mind for the next step.
+31. In the **How many** drop box pick the top **people**.
+32. Use the Pan Map tool to move the map slightly.
+(click hold and slightly move the mouse - this is just to reset the extent)
+
+Memory usage warning
+--------------------
+
+You can see there is a problem with memory usage, its tells you that you may not be able to run this InaSAFE project because your computer has not enough memory. 
+You will recall that there is another **peopl** layer, the difference is the size of the pixel, the one we are trying to run is 100 m by 100 m and the one we will run is 1km by 1km
+**Basically less pixels less memory need**
+
+33. Select the second “people” in the drop down menu
+34. Click on the drop down menu for the “Might”, this is the first InaSAFE run where there are actually 2 impact functions that we can choose from!
+35. Select the “Die or be displaced according to the pager model”
+*Note: This particular impact function was developed in Italy last November during a code sprint.*
+36. Run InaSAFE
+37. Click InaSAFE Print, save accordingly
+38. How many people are estimated to die?
+**AnsweR**
+_____________________________________________________________
+39. How many people are estimated to be displaced?
+**AnsweR**
+_____________________________________________________________
+
+
+
