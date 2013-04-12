@@ -1,8 +1,8 @@
 Other Hazards in InaSAFE
 ========================
 
-**Objectives:**
----------------
+Objectives
+----------
 
 * To run InaSAFE with other hazards, specifically Volcano and Earthquake
 * To save a subset of an existing layer
@@ -10,8 +10,8 @@ Other Hazards in InaSAFE
 * To understand the difference in scale between hazards
 * To run InaSAFE using a Tsunami model (optional)
 
-**Expected Results:**
----------------------
+Expected Results
+----------------
 
 Participants are able to:
 
@@ -26,25 +26,22 @@ Volcanoes in Indonesia
 
 There are 129 active volcanoes in Indonesia, and its always valuable to know how many people, or how much infrastructure is in a certain perimeter of the vent.Hence InaSAFE is able to use a vent location (point) as a hazard layer, the dataset that we are going to use came from downloading locations from Smithsonian website.  You may ask “How can we use a point to figure out impact? InaSAFE needs your help!.
 
-1. Open a QGIS project called Volcano_Indonesia.qgs - **File/Open Project...** , navigate to InaSAFE projects and select Volcano_Indonesia
+1. :guilabel:`Open a QGIS project` called Volcano_Indonesia.qgs - **File/Open Project...** , :guilabel:`navigate` to InaSAFE projects and select Volcano_Indonesia
 
-.. image:: ..../_static/volcanoes.png
-   :align: center
+.. image:: /static/socialisation/volcanoes.png
 
 Select Feature and Save
 -----------------------
 
-2. As you can see there are many Volcanoes in Indonesia, lets zoom into one volcano to analysis. Right click on the Volcanoes layer and select “Open Attribute Table”
-3. Type “Merapi” in “Look for” section - circle 1,
-4. select NAME from dropdown menu- circle 2 
-5. Click search - circle 3 -This will select only the Volcano that have Merapi in the name column
-6. Check “Show selected only - circle 4 -This will identify only the selected layers
-7. Click on “Pan map to the selected row” - circle 5 -Selected layer is centre  on the map canvas
+2. As you can see there are many Volcanoes in Indonesia, lets :guilabel:`zoom` into one volcano to analysis. :guilabel:`Right click` on the Volcanoes layer and :guilabel:`select` “Open Attribute Table”
+3. :guilabel:`Type` “Merapi” in “Look for” section |circle 1|,
+4. :guilabel:`select` NAME from dropdown menu- circle 2 
+5. :guilabel:`Click search` - circle 3 -This will select only the Volcano that have Merapi in the name column
+6. :guilabel:`Check` “Show selected only" - circle 4 -This will identify only the selected layers
+7. :guilabel:`Click` on “Pan map to the selected row” - circle 5 -Selected layer is centre  on the map canvas
 8. Close Attribute Table - circle 6
 
-
-**image**
-
+.. image:: /static/socialisation/merapi_attribute.png
 
 9. Click on the zoom to selected tool to zoom in further. Keep clicking the tool until you get to an extent similar to the one below. (The yellow triangle is Merapi)
 
@@ -141,7 +138,8 @@ Memory usage warning
 --------------------
 
 You can see there is a problem with memory usage, its tells you that you may not be able to run this InaSAFE project because your computer has not enough memory. 
-You will recall that there is another **peopl** layer, the difference is the size of the pixel, the one we are trying to run is 100 m by 100 m and the one we will run is 1km by 1km
+You will recall that there is another **people** layer, the difference is the size of the pixel, the one we are trying to run is 100 m by 100 m and the one we will run is 1km by 1km.
+
 **Basically less pixels less memory need**
 
 33. Select the second “people” in the drop down menu
@@ -154,16 +152,19 @@ You will recall that there is another **peopl** layer, the difference is the siz
 37. Click InaSAFE Print, save accordingly
 
 38. How many people are estimated to die?
-**AnsweR**
+
+**ANSWER**
 _____________________________________________________________
 
 39. How many people are estimated to be displaced?
-**AnsweR**
+
+**ANSWER**
 _____________________________________________________________
 
 
 40. Analysis the Action list, how is this different to the action list for floods or volcanoes?
-**AnsweR**
+
+**ANSWER**
 _____________________________________________________________________________________
 _____________________________________________________
 
@@ -196,5 +197,48 @@ You will see that there is 3 layers in the layer panel, click on each of them to
 **image**
 
 *Note: The InaSAFE functionality for Tsunami and floods are very similar, however due to the force of the tsunami waves, the maximum depth of the water that would affect people and infrastructure is shallower.*
+
+46. Check that InaSAFE has the following in the drop-down boxes
+#. A tsunami in Maumere (Mw 8.1)
+#. building
+#. be flooded
+
+47. Change the Impact function parameter to 0.3m
+48. How many buildings are estimated to be flooded
+
+*ANSWER* _____________________________________________________________
+
+49. Click InaSAFE Print, save accordingly
+50. Run InaSAFE again with the following in the drop-down boxes:
+#. A tsunami in maumere (Mw 8.1)
+#. people
+#. need evacuation
+
+51. Change the Impact function parameter to 0.5m
+52. How many people are estimated to need evacuation
+
+*ANSWER*
+_____________________________________________________________
+
+53. Click InaSAFE Print, save accordingly
+
+Map Canvas Extent
+-----------------
+
+**IMAGE**
+
+54. Try zooming into one section of the tsunami
+55. Run steps 45-53 again place your 2 results below
+56. How many buildings are estimated to be flooded
+
+ANSWER  _____________________________________________________________
+
+57.How many people are estimated to need evacuation
+
+ANSWER  _____________________________________________________________
+
+*Note: You will now see that your results are different than the original InaSAFE runs,  this is because your extent window determines the area in which you are analysing the data. The next chapter will show you how to change this if needed.*
+
+You have now gone through InaSAFE using 4 different natural hazards, changing a variety of paramaters and analysing the results.  This chapter has been designed to help you understand a little more about InaSAFE as well as where you can go for help.
 
 

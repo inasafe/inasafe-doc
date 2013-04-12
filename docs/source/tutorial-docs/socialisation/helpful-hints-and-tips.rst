@@ -8,7 +8,7 @@ you can go for help.
 InaSAFE option menu
 -------------------
 
-The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar’s :guilabel:`options icon`.
+The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar's :guilabel:`options icon`.
 
 .. image:: /static/socialisation/insafe_options_tools.jpg
 
@@ -16,17 +16,17 @@ The following dialog will appear:
 
 .. image:: /static/socialisation/Inasafe_Options.jpg
 
-The following options are available on the Options Dialog:
+The following options are available on the :guilabel:`Options Dialog`.
 
 **Only show visible layers in the InaSAFE dock:** This option will determine whether all (when unchecked) hazard and impact layers should be listed in the InaSAFE dock’s drop down menu. or (when checked) only visible layers.
 
-**Set QGIS layer name from** :guilabel:`Title` **in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree using the title keyword in the layer’s keywords file. If the layer has no ‘title’ in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply.
+**Set QGIS layer name from :guilabel:`title` in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree using the title keyword in the layer’s keywords file. If the layer has no ‘title’ in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply.
 
-**Zoom to impact layer on scenario estimate completion:** This option will cause the map view to zoom in/out in order to completely contain the InaSAFE impact scenario map output when an analysis completes.
+**Zoom to impact layer on scenario estimate completion:** This option will cause the map view to :guilabel:`zoom in/out` in order to completely contain the InaSAFE impact scenario map output when an analysis completes.
 
 **Hide exposure layer on scenario estimate completion:** This option will cause QGIS to turn off the exposure layer used when InaSAFE completes the current analysis. You can re-enable the layer visibility again by checking its checkbox in the legend.
 
-**Clip datasets to visible extent before analysis:** This option will cause QGIS to clip hazard and exposure layers to the currently visible extent on the map canvas.
+**Clip datasets to visible extent before analysis:** This option will cause QGIS to :guilabel:`clip` hazard and exposure layers to the currently visible extent on the map canvas.
 
 **When clipping, also clip features (e.g. will clip polygon smaller):** This option will clip any polygons that extend beyond the map canvas. For example if you have a flood hazard polygon layer that extends far beyond your area of interest, the flood polygons will be reduced so that only the part inside of your area of interested (map canvas extent) is retained. This can speed up processing time somewhat.
 
@@ -86,15 +86,15 @@ For hazard information it is best to approach your government science agencies o
 
 **Why does the plugin not show up in my QGIS Plugin Manager?**
 One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not get the new plugin repo added to your repo list. To fix this you can do:
-open QGIS
 
-#. Go Plugins -> Fetch Python Plugins
-#. click ‘Repositories’ tab
-#. click add
+#. open :guilabel:`QGIS`
+#. Go :guilabel:`Plugins` -> Fetch Python Plugins
+#. click :guilabel:`Repositories` tab
+#. click :guilabel:`add`
 #. Name: Official QGIS Repository
 #. Url: http://plugins.qgis.org/plugins/plugins.xml
-#. Save it and the plugin repo list should update. If it doesn’t, close and open QGIS to force an update.
-#. In the python plugin manager main tab now you should find InaSAFE available
+#. :guilabel:`Save` it and the plugin repo list should update. If it doesn’t, close and open QGIS to force an update.
+#. In the :guilabel:`python plugin manager` main tab now you should find InaSAFE available
  
 Thankyou for attending this course.
 If you would like to contact me directly my email address is kristy.vanputten@gmail.com

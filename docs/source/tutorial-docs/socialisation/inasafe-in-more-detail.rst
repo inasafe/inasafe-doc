@@ -1,6 +1,7 @@
 InaSAFE in more detail
 ======================
 
+
 Interrogating the output data
 -----------------------------
 
@@ -16,16 +17,19 @@ We are now going to use the basic QGIS tools to examine the datasets.
 **About Estimate building affected**
 ....................................
 
-1. Zoom into a section of buildings using the zoom in tool 
+1. Zoom into a section of buildings using the zoom in tool  
+
+.. image:: /static/socialisation/zoomin2.png
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
-
-Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
+.. image:: /static/socialisation/buildings_zoom.png Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
 
 2. Click once on “Estimate buildings affected”  to make sure layer is highlighted in blue
 
-3. Click on the information tool
+3. Click on the information tool 
+
+.. image:: /static/socialisation/zoomin2.png
 
 4. Click on an affected building (red)
 
@@ -169,8 +173,7 @@ Buildings within affected subvillages
 
 37. How many estimated buildings were flooded?
 
-Answer  __________________________
-......
+Answer  __________
 
 38. Take some time to examine the results, read through the InaSAFE window
 
@@ -205,13 +208,11 @@ Instead of determining how many people will be evacuated by  a spatial area, thi
 
 45. How many people were evacuated?
 
-AnsweR  __________________________
-......
+AnsweR  ___________
 
 46. How many people were affected?
 
-AnsweR  __________________________
-......
+AnsweR  ___________
 
 47. Take some time to examine the results, read through the InaSAFE window
 
@@ -222,23 +223,21 @@ Comparing Results - Optional
 
 You have now completed the following runs
 
-+--------------+-------------+------------+------------+-------------+-------------------+-------------+ 
-| Hazard	   |   Threshold |  Data Type |  Exposure  |  Data Type	 |  Impact function	 |  Data Type  |
-+==============+=============+============+============+=============+===================+=============+ 
-| flood model  |    1.0m     |   Raster	  |  People	   |   Raster	 |  Need Evacuation	 |             |
-| flood model  |    0.8m     |   Raster	  |  People	   |   Raster	 |  Need Evacuation	 |             |
-| flood model  |    1.0m     |   Raster	  | Buildings  |   Vector	 |   Be flooded	     |             |
-| flood 180113 |             |   Vector	  | Buildings  |   Vector	 |   Be flooded	     |             |
-| flood 180113 |     1%	     |   Vector	  |  People	   |   Raster	 |  Need Evacuation  |             |
-+--------------+-------------+------------+------------+-------------+-------------------+-------------+
+=============  =============  =============  ============  =============  ===================  =============
+**Hazard**     **Threshold**  **Data Type**  **Exposure**  **Data Type**  **Impact function**  **Data Type**
+=============  =============  =============  ============  =============  ===================  =============
+flood model    1.0m           Raster         People        Raster         Need Evacuation      none         
+flood model    0.8m           Raster         People        Raster         Need Evacuation      none         
+flood model    1.0m           Raster         Buildings     Vector         Be flooded           none         
+flood 180113   none           Vector         Buildings     Vector         Be flooded           none         
+flood 180113   1%             Vector         People        Raster         Need Evacuation      none         
+=============  =============  =============  ============  =============  ===================  =============
 
 	
 49. Please complete the Data Type for each impact layer you have created through InaSAFE
 
 50. Compare between results, 1. How different are the results, 2 Why are they different?
 
-1. AnsweR  _____________________________________________________________
-.........
+1. AnsweR  ______________
 
-2. AnsweR  _____________________________________________________________
-.........
+2. AnsweR  ______________
