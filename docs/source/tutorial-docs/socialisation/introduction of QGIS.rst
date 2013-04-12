@@ -120,7 +120,24 @@ Installing InaSAFE through the QGIS plugin repository
 InaSAFE also comes with a toolbar of its own
 
 6. To retrieve the InaSAFE toolbar, right click on the top tool bar and recheck “plugin”
+
+.. image:: ../_static/en/tools_inaSAFE.png
+	:align: center
+	
 7. Read to below to familiarise yourself with the InaSAFE tool set 
+
+INASAFE TOOLBAR
+---------------
+
+Show/hide InaSAFE panel
+
+Open InaSAFE Keywords Editor
+
+Resets the InaSAFE dock
+
+Open InaSAFE options dialogue
+
+Open InaSAFE Impact Functions Browser
 
 .. Note:: Later we will explore and use these tools
 
@@ -144,6 +161,35 @@ Installing OpenLayer through the QGIS plugin repository
 .. Note:: If you make a mistake in your zooming, use zoom to last tool
 
 9. Now navigate to your own house. (optional)
+
+QGIS NAVIGATION TOOLBAR
+-----------------------
+
+.. image:: ../_static/Socialisation/pan tool.png
+	:align: left 
+	
+Pan Map
+
+.. image:: ../_static/Socialisation/zoomin.png
+	:align: left 
+	
+Zoom In - *click on the icon and draw a box inside the map canvas*
+
+.. image:: ../_static/Socialisation/zoom out.png
+	:align: left
+	
+Zoom Out
+
+.. image:: ../_static/Socialisation/zoom_extent.png
+	:align: left
+	
+Zoom Full
+
+.. image:: ../_static/Socialisation/zooom to last.png
+	:align: left
+
+Zoom to last
+
 
 Indonesia
 

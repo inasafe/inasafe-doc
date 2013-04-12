@@ -12,13 +12,13 @@ Hazard
 ==========  ================  ===============  ==================  ======================  =============== 
 **Hazard**  **Spatial Type**  **Hazard Type**  **Attribute Name**  **Hazard Units/field**  **Parameters**
 ----------  ----------------  ---------------  ------------------  ----------------------  ---------------
-Flood       Raster            Depth            N/A                  m                      Threshold in m
-Flood       Polygon           Wet/Dry          affected             1/0                    Threshold in % 
-Volcano     Raster            Ash Load         N/A                  kg/m2                  none
-Volcano     Polygon           Category         KRB                  text                   none 
-Volcano     Point             Distance         Name                 text                   Radius in km 
+Flood       Raster            Depth            N/A                  m                      Threshold (m)
+Flood       Polygon           Wet/Dry          affected             1/0                    Threshold (%) 
+Volcano     Raster            Ash Load         N/A                  kg/m2                  
+Volcano     Polygon           Category         KRB                  text                    
+Volcano     Point             Distance         Name                 text                   Radius (km) 
 Earthquake  Raster            Shakemap         N/A                  MMI                    H/M/L value
-Tsunami     Raster            Depth            N/A                  m                      Threshold in m
+Tsunami     Raster            Depth            N/A                  m                      Threshold (m)
 ==========  ================  ===============  ==================  ======================  ===============
 
 Exposure
@@ -85,11 +85,11 @@ Hazard Layers used in Practical
 ===========  ================  ===============  ==================  ======================  =============== 
 **Hazard**   **Spatial Type**  **Hazard Type**  **Attribute Name**  **Hazard Units/field**  **Parameters**
 -----------  ----------------  ---------------  ------------------  ----------------------  ---------------
-Flood        Raster            Depth            N/A                 m                       Threshold in m
-Flood        Polygon           Wet/Dry          affected            1/0                     Threshold in % 
-Volcano      Point             Distance         Name                text                    Radius in km
+Flood        Raster            Depth            N/A                 m                       Threshold (m)
+Flood        Polygon           Wet/Dry          affected            1/0                     Threshold (%) 
+Volcano      Point             Distance         Name                text                    Radius (km)
 Earthquake   Raster            Shakemap         N/A                 MMI                     H/M/L value
-Tsunami      Raster            Depth            N/A                 m                       Threshold in m
+Tsunami      Raster            Depth            N/A                 m                       Threshold (m)
 ===========  ================  ===============  ==================  ======================  ===============
 
 Flood Model
