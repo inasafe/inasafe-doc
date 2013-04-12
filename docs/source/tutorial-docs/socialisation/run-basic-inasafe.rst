@@ -10,6 +10,7 @@ In this chapter you will run InaSAFE in Jakarta to determine the impact of a flo
 
 2. Click on “browse” navigate to *InaSAFE projects* and select *Jakarta_floods*, click open and then open again
  
+.. image:: ../static/socialisation/
   
 
 People need evacuating
@@ -30,6 +31,9 @@ People need evacuating
 * people
 
 * Need evacuating
+
+.. image:: ../static/socialisation/Show_people.png
+   :align: center
 
 .. note:: You can see that the Impact function below “Might” automatically changes depending on the layers added
 
@@ -160,7 +164,7 @@ Optional - Change the threshold to 0.8
 Basic Aggregation - Optional
 ----------------------------
 
-23. Click Add vector button
+23. Click Add vector button .. image:: ../static/socialisation/
 
 24. Navigate to the data folder and select InaSAFE projects/data/district_osm_jakarta.shp
 
@@ -175,6 +179,18 @@ Basic Aggregation - Optional
 29. Run InaSAFE again
 
 30. Click InaSAFE Print, save accordingly
+
+Keywords Editor
+---------------
+
+In the next chapter we will explore the keyword editor for the hazard and exposure layers.
+
+However the Keyword editor for postprocessing is slightly different. You are able to select an attribute to provide the percentage of females per aggregation area. If there is no such layer InaSAFE defaults at 50% or 0.5.
+
+If you would like more detail please ask at the end of the session
+
+.. image:: ../static/socialisation/Aggregation_keyword.png
+   :align: center 
 
 31. Keywords Editor window will pop up, press OK
 

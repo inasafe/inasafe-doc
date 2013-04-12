@@ -224,7 +224,7 @@ You have now completed the following runs
 
 +--------------+-------------+------------+------------+-------------+-------------------+-------------+ 
 | Hazard	   |   Threshold |  Data Type |  Exposure  |  Data Type	 |  Impact function	 |  Data Type  |
-+--------------+-------------+------------+------------+-------------+-------------------+-------------+ 
++==============+=============+============+============+=============+===================+=============+ 
 | flood model  |    1.0m     |   Raster	  |  People	   |   Raster	 |  Need Evacuation	 |             |
 | flood model  |    0.8m     |   Raster	  |  People	   |   Raster	 |  Need Evacuation	 |             |
 | flood model  |    1.0m     |   Raster	  | Buildings  |   Vector	 |   Be flooded	     |             |
