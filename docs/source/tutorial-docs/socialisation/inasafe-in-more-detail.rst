@@ -46,9 +46,11 @@ Here I clicked on the building circled in the above picture to result is below. 
 
 6. Uncheck the *“Estimated buildings affected”* and recheck one of  *“Population which Need evacuation”*
 
-7. Again zoom into an area of your choice
+7. Again zoom into an area of your choice .. image:: /static/socialisation/zoomin2.png 
 
-8. Click once on *“Population which Need evacuation”* and use the selection tool to select a pixel (square)
+8. Click once on *“Population which Need evacuation”* and use the selection tool to select a pixel (square) .. image:: /static/socialisation/information_tool.png
+
+.. image:: /static/socialisation/raster_examine_2.png
 
 Here I clicked on the light green area, to find that there is a value of 80.6411, which means there are approximately 80 people in one pixel (square). 
 
@@ -58,7 +60,7 @@ Click on other pixels to find out their value.
 
 9. Click Close
 
-10. Is each pixel really 100m by 100m, lets check. Use the measure line tool
+10. Is each pixel really 100m by 100m, lets check. Use the measure line tool .. image:: /static/socialisation/measure.png
 
 *Note: it maybe easier to measure one pixel by zooming in further.*
 
@@ -66,9 +68,11 @@ The answer is yes, a pixel is 100 meter across, and if you measure from top to b
 
 As you can see I got 102 meters but this is only because its very hard to click on one corner of the pixel and then the other, unless I zoom in real close!
 
+.. image:: /static/socialisation/measure_test.png
+
 11. Click Close
 
-12. Zoom back to full extent using the Zoom Full tool
+12. Zoom back to full extent using the Zoom Full tool  .. image:: /static/socialisation/zoom_extent.png
 
 13. Uncheck all layers except
 
@@ -80,10 +84,10 @@ As you can see I got 102 meters but this is only because its very hard to click 
 Flood footprint in InaSAFE
 --------------------------
 
-Adding a vector layer
+Adding a vector layer  
 .....................
 
-14. Click on the Add vector tool
+14. Click on the Add vector tool  .. image:: /static/socialisation/information_tool.png
 
 15. Click on browse and navigate to InaSAFE projects/data/ and select *flood_osm_bpbd18113_jakarta.shp* - click Open, then click Open again.
 
