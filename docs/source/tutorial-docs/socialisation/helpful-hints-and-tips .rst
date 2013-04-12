@@ -8,6 +8,8 @@ InaSAFE option menu
  The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar’s options icon.
 .. image:: C:\Users\mahardika\Documents\GitHub\inasafe-doc\docs\resources\en\socialisation\insafe_options_tools.jpeg
 
+.. image:: C:\Users\mahardika\Documents\GitHub\inasafe-doc\docs\resources\en\socialisation\Inasafe_Options.jpeg
+
 The following options are available on the Options Dialog:
 
 **Only show visible layers in the InaSAFE dock:** This option will determine whether all (when unchecked) hazard and impact layers should be listed in the InaSAFE dock’s drop down menu. or (when checked) only visible layers.
@@ -42,7 +44,12 @@ InaSAFE Website
 ---------------
 This manual is by no far the only documentation on InaSAFE.  Within the InaSAFE website you can find not only documentation on training, but all user documentation and developer documentation.  This website is also updated with every new release.
  
+.. image:: C:\Users\mahardika\Documents\GitHub\inasafe-doc\docs\resources\en\socialisation\Inasafe_Mainpage.jpeg
+
 Click on the Content to find out more
+
+.. image:: C:\Users\mahardika\Documents\GitHub\inasafe-doc\docs\resources\en\socialisation\Inasafe_content.jpeg
+
 The website will be updated shortly with a new theme and logo.
 The content of this manual  (InaSAFE socialisation training manual) will also be found on the website in weeks to come.
 
