@@ -12,3 +12,5 @@ Objectives:
 
 Expected Results:
 -----------------
+
+Participants are able to:
