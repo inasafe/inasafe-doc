@@ -7,5 +7,5 @@ This section of the documention describes how to use the |project_name| system.
    :maxdepth: 2
 
    tutorial
-   ../socialisation/index
+   socialisation/index
 
