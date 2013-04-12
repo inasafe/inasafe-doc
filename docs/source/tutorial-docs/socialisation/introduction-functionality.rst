@@ -57,7 +57,7 @@ Population
 :About: High resolution, contemporary data on human population distributions are a prerequisite for the accurate measurement of the impacts of population growth, for monitoring changes and for planning interventions. The AsiaPop project was initiated in July 2011 with an aim of producing detailed and freely-available population distribution maps for the whole of Asia.
 The raster pixel size is 100m by 100m.
 
-.. image:: /static/socialisation/asiapop1.jpeg
+.. image:: /static/socialisation/asia_pop.png
    :align: center
 
 Structures
@@ -130,6 +130,9 @@ Volcano
 
 .. image:: /static/socialisation/volcano.png
    :align: center
+   
+.. image:: /static/socialisation/earthquake.png
+   :align: right   
 
 Earthquake
 ..........
