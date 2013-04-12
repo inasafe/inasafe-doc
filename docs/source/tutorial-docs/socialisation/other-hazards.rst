@@ -154,16 +154,16 @@ You will recall that there is another **peopl** layer, the difference is the siz
 37. Click InaSAFE Print, save accordingly
 
 38. How many people are estimated to die?
-**AnsweR**
+**ANSWER**
 _____________________________________________________________
 
 39. How many people are estimated to be displaced?
-**AnsweR**
+**ANSWER**
 _____________________________________________________________
 
 
 40. Analysis the Action list, how is this different to the action list for floods or volcanoes?
-**AnsweR**
+**ANSWER**
 _____________________________________________________________________________________
 _____________________________________________________
 
@@ -196,5 +196,46 @@ You will see that there is 3 layers in the layer panel, click on each of them to
 **image**
 
 *Note: The InaSAFE functionality for Tsunami and floods are very similar, however due to the force of the tsunami waves, the maximum depth of the water that would affect people and infrastructure is shallower.*
+
+46. Check that InaSAFE has the following in the drop-down boxes
+#. A tsunami in Maumere (Mw 8.1)
+#. building
+#. be flooded
+
+47. Change the Impact function parameter to 0.3m
+48. How many buildings are estimated to be flooded
+
+*ANSWER*
+_____________________________________________________________
+
+49. Click InaSAFE Print, save accordingly
+50. Run InaSAFE again with the following in the drop-down boxes:
+#. A tsunami in maumere (Mw 8.1)
+#. people
+#. need evacuation
+
+51. Change the Impact function parameter to 0.5m
+52. How many people are estimated to need evacuation
+*ANSWER*
+_____________________________________________________________
+
+53. Click InaSAFE Print, save accordingly
+
+Map Canvas Extent
+-----------------
+
+**IMAGE**
+
+54. Try zooming into one section of the tsunami
+55. Run steps 45-53 again place your 2 results below
+56. How many buildings are estimated to be flooded
+ANSWER  _____________________________________________________________
+
+57.How many people are estimated to need evacuation
+ANSWER  _____________________________________________________________
+
+*Note: You will now see that your results are different than the original InaSAFE runs,  this is because your extent window determines the area in which you are analysing the data. The next chapter will show you how to change this if needed.*
+
+You have now gone through InaSAFE using 4 different natural hazards, changing a variety of paramaters and analysing the results.  This chapter has been designed to help you understand a little more about InaSAFE as well as where you can go for help.
 
 
