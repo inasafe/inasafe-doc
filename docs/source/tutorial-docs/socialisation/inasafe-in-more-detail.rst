@@ -23,21 +23,23 @@ We are now going to use the basic QGIS tools to examine the datasets.
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
-.. image:: /static/socialisation/buildings_zoom.png Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
+.. image:: /static/socialisation/buildings_zoom_2.png Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
 
 2. Click once on “Estimate buildings affected”  to make sure layer is highlighted in blue
 
 3. Click on the information tool 
 
-.. image:: /static/socialisation/zoomin2.png
+.. image:: /static/socialisation/information_tool.png
 
 4. Click on an affected building (red)
 
 Here I clicked on the building circled in the above picture to result is below.  This buildings has a lot of information recorded about it.
 
-Note: As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
+.. image:: /static/socialisation/identy_results.png Note: As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
 
-5. Zoom back to full extent using the Zoom Full tool 
+5. Zoom back to full extent using the Zoom Full tool
+
+.. image:: /static/socialisation/zoom_extent.png 
 
 **About Population which Needs evacuation**
 ...........................................
@@ -226,11 +228,11 @@ You have now completed the following runs
 =============  =============  =============  ============  =============  ===================  =============
 **Hazard**     **Threshold**  **Data Type**  **Exposure**  **Data Type**  **Impact function**  **Data Type**
 =============  =============  =============  ============  =============  ===================  =============
-flood model    1.0m           Raster         People        Raster         Need Evacuation      none         
-flood model    0.8m           Raster         People        Raster         Need Evacuation      none         
-flood model    1.0m           Raster         Buildings     Vector         Be flooded           none         
-flood 180113   none           Vector         Buildings     Vector         Be flooded           none         
-flood 180113   1%             Vector         People        Raster         Need Evacuation      none         
+flood model    1.0m           Raster         People        Raster         Need Evacuation                   
+flood model    0.8m           Raster         People        Raster         Need Evacuation                   
+flood model    1.0m           Raster         Buildings     Vector         Be flooded                        
+flood 180113                  Vector         Buildings     Vector         Be flooded                        
+flood 180113   1%             Vector         People        Raster         Need Evacuation                   
 =============  =============  =============  ============  =============  ===================  =============
 
 	
