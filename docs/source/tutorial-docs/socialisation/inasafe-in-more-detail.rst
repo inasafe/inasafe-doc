@@ -23,7 +23,9 @@ We are now going to use the basic QGIS tools to examine the datasets.
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
-.. image:: /static/socialisation/buildings_zoom_2.png Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
+.. image:: /static/socialisation/buildings_zoom_2.png 
+
+Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
 
 2. Click once on “Estimate buildings affected”  to make sure layer is highlighted in blue
 
@@ -35,7 +37,9 @@ Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
 Here I clicked on the building circled in the above picture to result is below.  This buildings has a lot of information recorded about it.
 
-.. image:: /static/socialisation/identy_results.png Note: As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
+.. image:: /static/socialisation/identy_results.png 
+
+Note: As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
 
 5. Zoom back to full extent using the Zoom Full tool
 
@@ -46,13 +50,17 @@ Here I clicked on the building circled in the above picture to result is below. 
 
 6. Uncheck the *“Estimated buildings affected”* and recheck one of  *“Population which Need evacuation”*
 
-7. Again zoom into an area of your choice .. image:: /static/socialisation/zoomin2.png 
+7. Again zoom into an area of your choice 
 
-8. Click once on *“Population which Need evacuation”* and use the selection tool to select a pixel (square) .. image:: /static/socialisation/information_tool.png
+.. image:: /static/socialisation/zoomin2.png 
 
-.. image:: /static/socialisation/raster_examine_2.png
+8. Click once on *“Population which Need evacuation”* and use the selection tool to select a pixel (square) 
+
+.. image:: /static/socialisation/information_tool.png
 
 Here I clicked on the light green area, to find that there is a value of 80.6411, which means there are approximately 80 people in one pixel (square). 
+
+.. image:: /static/socialisation/raster_examine_2.png
 
 In this dataset a pixel is 100m by 100m
 
@@ -87,15 +95,21 @@ Flood footprint in InaSAFE
 Adding a vector layer  
 .....................
 
-14. Click on the Add vector tool  .. image:: /static/socialisation/information_tool.png
+14. Click on the Add vector tool  .. image:: /static/socialisation/add_vector.png
 
 15. Click on browse and navigate to InaSAFE projects/data/ and select *flood_osm_bpbd18113_jakarta.shp* - click Open, then click Open again.
+
+.. image:: /static/socialisation/jakarta18113_added.png
 
 This dataset is the subvillage boundaries for Jakarta, during the floods in January this year the Provincial disaster mangers collected information about the flooding, one of which was the location of the flooded area by sub-village boundary.
 
 Lets examine this data by opening up its attribute table
 
+.. image:: /static/socialisation/openattributetable.png
+
 16. In the layer list Right click on the flood_osm_BPBD18113_jakarta layers  and select “Open Attribute Table”
+
+.. image:: /static/socialisation/attribute_table.png
 
 OBJECTID: 	Feature ID
 
@@ -124,9 +138,15 @@ Now we are going to colour only the area that were affected
 
 20. Select Categorised
 
+.. image:: /static/socialisation/select_category_2.png
+
 21. Select attribute from the Column
 
+.. image:: /static/socialisation/select_attribute.png
+
 22. Click on Classify (circle 1)
+
+.. image:: /static/socialisation/classify_2.png
 
 23. Click on ‘0’  (circle 2)
 
@@ -137,6 +157,8 @@ Now we are going to colour only the area that were affected
 26. Click Delete  (circle 3)
 
 27. Confirm that you only have 1 left
+
+
 
 28. Click OK (circle 6)
 
