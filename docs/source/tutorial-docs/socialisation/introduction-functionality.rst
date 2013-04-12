@@ -57,7 +57,7 @@ Population
 :About: High resolution, contemporary data on human population distributions are a prerequisite for the accurate measurement of the impacts of population growth, for monitoring changes and for planning interventions. The AsiaPop project was initiated in July 2011 with an aim of producing detailed and freely-available population distribution maps for the whole of Asia.
 The raster pixel size is 100m by 100m.
 
-.. image:: /static/socialisation/asiapop.jpeg
+.. image:: /static/socialisation/asiapop1.jpeg
    :align: center
 
 Structures
@@ -102,6 +102,9 @@ Flood Model
 :Coverage: Jakarta
 :About: The Flood model was created by scientist/engineers in coordination with DKI Jakarta Public Works based on the 2007 flood conditions.  The water depth is the maximum depth occurring across the entire flooding period.
 
+.. image:: /static/socialisation/floodmodel.png
+   :align: center
+   
 Flood Footprint
 ...............
 
@@ -112,11 +115,8 @@ Flood Footprint
 :Coverage: Jakarta
 :About: Based on the subvillage boundaries that were map during the DKI mapping project, we were able to use this dataset during the recent floods to identify the areas that had been flooded based on information provided by the villages.
 
-.. image:: /static/socialisation/floodmodel.png
-   :align: left
-
 .. image:: /static/socialisation/floodfootprint.png
-   :align: right
+   :align: center
    
 Volcano
 .......
@@ -141,11 +141,11 @@ Earthquake
 :Coverage: Padang
 :About: A shakemap is a representation of ground shaking produced by an earthquake.  This particular scenario was modelled based on the 30 September 2009 Mw 7.9 earthquake in Padang.
 ShakeMaps are generated automatically following moderate and large earthquakes by USGS.
-http://earthquake.usgs.gov/earthquakes/map/
+http://earthquake.usgs.gov/earthquakes/map/ .
 Pre-event / scenario based shakemaps need to be modelled by earthquake specialist.
 
-.. image:: /static/socialisation/padang_earthquake.png
-   :align: center
+.. image:: /static/socialisation/earthquake.png
+   :align: right
 
 Tsunami
 .......
