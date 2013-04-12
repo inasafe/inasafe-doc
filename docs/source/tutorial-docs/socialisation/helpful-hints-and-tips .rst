@@ -48,11 +48,11 @@ InaSAFE Website
 ---------------
 This manual is by no far the only documentation on InaSAFE.  Within the InaSAFE website you can find not only documentation on training, but all user documentation and developer documentation.  This website is also updated with every new release.
  
-.. image:: C:\Users\mahardika\Documents\GitHub\inasafe-doc\docs\resources\en\socialisation\Inasafe_Mainpage.jpeg
+.. image:: /static/socialisation/Inasafe_Mainpage.jpeg
 
 Click on the Content to find out more
 
-.. image:: C:\Users\mahardika\Documents\GitHub\inasafe-doc\docs\resources\en\socialisation\Inasafe_content.jpeg
+.. image:: /static/socialisation/Inasafe_content.jpeg
 
 The website will be updated shortly with a new theme and logo.
 The content of this manual  (InaSAFE socialisation training manual) will also be found on the website in weeks to come.
