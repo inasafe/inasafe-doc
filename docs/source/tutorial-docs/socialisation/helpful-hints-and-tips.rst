@@ -86,6 +86,7 @@ For hazard information it is best to approach your government science agencies o
 
 **Why does the plugin not show up in my QGIS Plugin Manager?**
 One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not get the new plugin repo added to your repo list. To fix this you can do:
+
 #. open :guilabel:`QGIS`
 #. Go :guilabel:`Plugins` -> Fetch Python Plugins
 #. click :guilabel:`Repositories` tab
