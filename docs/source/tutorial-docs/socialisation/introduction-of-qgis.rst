@@ -60,7 +60,7 @@ The elements identified in the figure below are:
 Setup QGIS
 ----------
 
-1. :guilabel: `Open Quantum GIS Desktop (1.8.0)` - This should be located on your desktop, or you can find it in your start menu.
+1. :guilabel:`Open Quantum GIS Desktop (1.8.0)` - This should be located on your desktop, or you can find it in your start menu.
 
 .. image:: /static/socialisation/qgis.png
    :align: center
@@ -75,7 +75,7 @@ Clean up tool bar
 
 To provide more space for your map canvas you will now choose to display the tools we will use today.
 
-#. Right click the toolbar and unmark, *Advance Digitising*, *Database*, *Digitising*,*File*, *Grass*, *OpenStreetMap*, *Raster*, *Vector*, *Web*.
+#. :guilabel:`Right click` the toolbar and unmark, *Advance Digitising*, *Database*, *Digitising*,*File*, *Grass*, *OpenStreetMap*, *Raster*, *Vector*, *Web*.
 #. Rearrange toolbar so its just one line, by holding down the left mouse button over the  and dragging the bar to where ever you would like to put it.
 
 .. image:: /static/socialisation/toolbar.PNG
@@ -92,31 +92,31 @@ Option Window
 Changing projection settings and understanding that QGIS is multilingual
 
 1. Go to Options window: **Settings/options**
-2. Click on the CRS tab
+2. :guilable:`Click` on the CRS tab
 
 .. image:: /static/socialisation/crs.PNG
    :align: center
    
-3. Check Enable 'on the fly' reprojection by default - This will enable that all spatial layers irrespective of their projection will follow the CRS allocated above
+3. :guilabel:`Check Enable` 'on the fly' reprojection by default - This will enable that all spatial layers irrespective of their projection will follow the CRS allocated above
 
 .. image:: /static/socialisation/enable.PNG
    :align: center
    
 .. Note:: This  will become default in the new version of QGIS (2.0),
 
-4. Click on the Locale tab
+4. :guilabel: `Click` on the Locale tab
 
 .. image:: /static/socialisation/locale.PNG
    :align: center
    
-5. Check Override system locale, scroll through all the languages that QGIS have been translated into! We will stick with english for this training, so no action is needed - un-check Override system locale.
+5. :guilabel:`Check` Override system locale, scroll through all the languages that QGIS have been translated into! We will stick with english for this training, so no action is needed - un-check Override system locale.
 
 .. image:: /static/socialisation/options2.PNG
    :align: center
    
 .. Note:: InaSAFE is dependent on Locale, but it has only been translated into bahasa Indonesian so far. World Bank is currently funding for the translation of InaSAFE into French and Portugal
 
-6. Click “Okay” in the bottom right corner of the Options window
+6. :guilabel:`Click` “Okay” in the bottom right corner of the Options window
 
 
 Installing Plugins
@@ -135,7 +135,7 @@ Installing InaSAFE through the QGIS plugin repository
 .. image:: /static/socialisation/inasafe_plugin.png
    :align: center
 
-3. Select InaSAFE and click Install plugin - this will take a couple of minutes for the plugin to download and install
+3. :guilabel:`Select` InaSAFE and :guilabel:`click` Install plugin - this will take a couple of minutes for the plugin to download and install
 4. A window should pop up saying: "Plugin installed successfully" - Click okay and then close the QGIS python plugin installer window
 5. You should now have an InaSAFE panel on the right hand side of your screen
 
@@ -151,7 +151,7 @@ InaSAFE also comes with a toolbar of its own
 	
 7. Read to below to familiarise yourself with the InaSAFE tool set 
 
-.. image:: /static/socialisation/inasafe_toolbar2.PNG
+.. image:: /static/socialisation/inasafe_toolbar2.JPG
    :align: center
 
 .. Note:: Later we will explore and use these tools
@@ -163,9 +163,9 @@ Installing OpenLayer through the QGIS plugin repository
 
 1. Go to **Plugins/Fetch Python Plugins...** This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
 2. Type openlayers into the filter box
-3. Select “OpenLayer Plugin” and click Install plugin - this will take a couple of minutes for the plugin to download and install
+3. :guilabel:`Select` “OpenLayer Plugin” and click Install plugin - this will take a couple of minutes for the plugin to download and install
 4. A window should pop up saying: "Plugin installed successfully" - Click okay and then close the QGIS python plugin installer window
-5. Click on Plugins, and hover your mouse over OpenLayers plugin
+5. :guilabel:`Click on Plugins`, and hover your mouse over OpenLayers plugin
 
 .. image:: /static/socialisation/openlayer1.PNG
    :align: center
@@ -177,7 +177,7 @@ Installing OpenLayer through the QGIS plugin repository
 	
 .. Note:: If you are familiar with Goggle Earth, navigating this imagery should be very similar
 
-7. Click on the zoom in tool, then draw a box (click and drag) over your country.
+7. :guilabel:`Click` on the zoom in tool, then draw a box (click and drag) over your country.
 8. Click on the Pan Map tool to shift the map so your country is in the centre of the screen
 
 .. Note:: If you make a mistake in your zooming, use zoom to last tool

@@ -34,7 +34,7 @@ Structures     Point             Structure type     type                text
 
 InaSAFE is a dynamic tool that can easily be adapted to other types of hazard and exposure layers.  The beauty of InaSAFE being open source, is that anyone that has a background in programming would be able to make their own Impact function.
 If you dont, see page 55 for more details.
-Please see the InaSAFE website for more information. http://inasafe.org
+Please see the InaSAFE website for more information go to http://inasafe.org
 
 Exposure Layers Used in Practical
 ---------------------------------
@@ -76,8 +76,8 @@ Structures
 AusAID has been working with the Humanitarian OpenStreetMap Team over the last 2 years in piloting and training OpenStreetMap in Indonesia.  The result so far is over 800,000 buildings have been mapped.  
 The scenarios we will look at within this workshop are situated in Jakarta, Merapi (Central Java and Yogyakarta), Sumatra (specifically Padang) and Maumere, Flores. Each one of these areas has a different OpenStreetMap data collection methodology. Below will explain the methodologies used in Jakarta and Padang.
 
-:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and BNPB (Nationals Disaster Managers) with assistance from AIFDR (Australia-Indonesia Facility for Disaster Reduction), the World Bank, UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held workshops in each of Jakarta’s 6 Districts in order to help Village Heads map their community boundaries and major infrastructure. Over 500 representatives from Jakarta’s 267 Villages participated in these workshops – and have mapped an impressive 6,000 buildings and all 2,668 sub-village boundaries (Rukun Warga-RW). http://www.aifdr.org/?p=619
-:Padang: Post Hati’s earthquake in 2010, there was a huge effort to map Hati through OSM, coordinating this effort was very hard, and hence AusAID subsequently funded the creation of OSM tasking Server.  The OSM tasking server is a web-base tool where you are able to select your own square to map.  The first pilot of the web-tool was in Padang, the specified area is now 100% finished with over 95,000 buildings mapped. However the buildings are purely footprints, an on the ground mapping effort is needed to record what type of building it is.  The tool is now being used across world to coordinate OSM mapping efforts. http://tasks.hotosm.org/
+:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and BNPB (Nationals Disaster Managers) with assistance from AIFDR (Australia-Indonesia Facility for Disaster Reduction), the World Bank, UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held workshops in each of Jakarta’s 6 Districts in order to help Village Heads map their community boundaries and major infrastructure. Over 500 representatives from Jakarta’s 267 Villages participated in these workshops – and have mapped an impressive 6,000 buildings and all 2,668 sub-village boundaries (Rukun Warga-RW). Go to http://www.aifdr.org/?p=619
+:Padang: Post Hati’s earthquake in 2010, there was a huge effort to map Hati through OSM, coordinating this effort was very hard, and hence AusAID subsequently funded the creation of OSM tasking Server.  The OSM tasking server is a web-base tool where you are able to select your own square to map.  The first pilot of the web-tool was in Padang, the specified area is now 100% finished with over 95,000 buildings mapped. However the buildings are purely footprints, an on the ground mapping effort is needed to record what type of building it is.  The tool is now being used across world to coordinate OSM mapping efforts. Go to http://tasks.hotosm.org/
 
 Hazard Layers used in Practical
 -------------------------------
@@ -97,7 +97,7 @@ Flood Model
 
 :Name:  HKL Flood Model
 :InaSAFE name:  a flood similar to the 2007 Jakarta event
-:Source: HKL - http://deltares.nl
+:Source: HKL - go to http://deltares.nl
 :license: Creative Commons by Attribution (CCbyA)
 :Coverage: Jakarta
 :About: The Flood model was created by scientist/engineers in coordination with DKI Jakarta Public Works based on the 2007 flood conditions.  The water depth is the maximum depth occurring across the entire flooding period.
@@ -123,10 +123,10 @@ Volcano
 
 :Name:  Global Volcanism Program
 :InaSAFE name:  volcano
-:Source: Smithsonian  http://volcano.si.edu
+:Source: Smithsonian from http://volcano.si.edu
 :license: United States Copyright
 :Coverage: World
-:About: The Smithsonian’s Global Volcanism Program seeks better understanding of all volcanoes through documenting their eruptions — small as well as large — during the past 10,000 years. Through their website you are able to download a spreadsheet of all the recorded volcanoes.  This spreadsheet also has the volcano location, which has been turned into a point file.
+:About: The Smithsonian's Global Volcanism Program seeks better understanding of all volcanoes through documenting their eruptions-small as well as large-during the past 10,000 years. Through their website you are able to download a spreadsheet of all the recorded volcanoes.  This spreadsheet also has the volcano location, which has been turned into a point file.
 
 .. image:: /static/socialisation/volcano.png
    :align: center
@@ -141,8 +141,8 @@ Earthquake
 :license: Creative Commons by Attribution
 :Coverage: Padang
 :About: A shakemap is a representation of ground shaking produced by an earthquake.  This particular scenario was modelled based on the 30 September 2009 Mw 7.9 earthquake in Padang.
-ShakeMaps are generated automatically following moderate and large earthquakes by USGS.
-http://earthquake.usgs.gov/earthquakes/map/ .
+ShakeMaps are generated automatically following moderate and large earthquakes by USGS. Go to http://earthquake.usgs.gov/earthquakes/map/
+
 Pre-event / scenario based shakemaps need to be modelled by earthquake specialist.
 
 .. image:: /static/socialisation/earthquake.png
@@ -156,7 +156,7 @@ Tsunami
 :Source: AIFDR and Badan Geologi
 :license: Creative Commons by Attribution
 :Coverage: Maumere, Flores
-:About: In September 2011 the Indonesian government held a national exercise in Maumere, Flores. AIFDR assisted Badan Geologi in developing a tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was modelled using the an open source software called ANUGA and elevation from NEXTMap. The water depth is the maximum depth occurring across the entire tsunami event. http://anuga.anu.edu.au/ and http://intermap.com/
+:About: In September 2011 the Indonesian government held a national exercise in Maumere, Flores. AIFDR assisted Badan Geologi in developing a tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was modelled using the an open source software called ANUGA and elevation from NEXTMap. The water depth is the maximum depth occurring across the entire tsunami event. Go to http://anuga.anu.edu.au/ and http://intermap.com/
 
 .. image:: /static/socialisation/tsunami.png
    :align: center
