@@ -208,9 +208,9 @@ Available Impact Functions
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 | Tsunami           | Buildings      | be affected              | Number of buildings affected                                       |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
-| Volcano           | People         | need evacuating          |  Number of people affected and Number of people needing evacuation |                   |                    |
+| Volcano           | People         | need evacuating          |  Number of people affected and Number of people needing evacuation |                     
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
-| Volcano			| Buildings      | be affected              | Number of buildings affected 
+| Volcano			| Buildings      | be affected              | Number of buildings affected                                       |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 
 *\*This is not the complete list of Impact functions currently in InaSAFE.*
