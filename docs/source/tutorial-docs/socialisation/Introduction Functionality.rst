@@ -14,8 +14,8 @@ Hazard
 ----------  ----------------  ---------------  ------------------  ----------------------  ---------------
 Flood       Raster            Depth            N/A                  m                      Threshold (m)
 Flood       Polygon           Wet/Dry          affected             1/0                    Threshold (%) 
-Volcano     Raster            Ash Load         N/A                  kg/m2                  none
-Volcano     Polygon           Category         KRB                  text                   none 
+Volcano     Raster            Ash Load         N/A                  kg/m2                  
+Volcano     Polygon           Category         KRB                  text                    
 Volcano     Point             Distance         Name                 text                   Radius (km) 
 Earthquake  Raster            Shakemap         N/A                  MMI                    H/M/L value
 Tsunami     Raster            Depth            N/A                  m                      Threshold (m)
