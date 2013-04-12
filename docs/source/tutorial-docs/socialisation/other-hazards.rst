@@ -1,8 +1,8 @@
 Other Hazards in InaSAFE
 ========================
 
-*Objectives:*
--------------
+**Objectives:**
+---------------
 
 * To run InaSAFE with other hazards, specifically Volcano and Earthquake
 * To save a subset of an existing layer
@@ -10,8 +10,8 @@ Other Hazards in InaSAFE
 * To understand the difference in scale between hazards
 * To run InaSAFE using a Tsunami model (optional)
 
-*Expected Results:*
--------------------
+**Expected Results:**
+---------------------
 
 Participants are able to:
 
@@ -68,4 +68,54 @@ You should now have a point that shows the location of Merapi. Lets take some ti
 
 *Note: For the Information and Measurement tool to work you need to have the Merapi layer highlighted in the layer window.*
 
+Keywords
+--------
 
+We are reminded by InaSAFE that we do not have a keyword for this new layer, so lets make one!
+
+17. Click on the keyword editor
+18. Fill out the title as **“Merapi erupting”**
+19. For the Category check Hazard
+20. For Subcategory select volcano
+21. Click OK
+
+
+
+Configure and Run InaSAFE
+-------------------------
+
+22. Check that InaSAFE has the following in the drop-down boxes
+
+ #. Merapi erupting
+ #. people
+ #. Need evacuation
+
+23. Before we run InaSAFE again, we have to tell InaSAFE what the hazard zone is!
+Click on the impact function editor
+As a default InaSAFE has made 3 hazard areas:
+
+#. Vent -3 km
+#. 3-5 km
+#. 5-10 km
+
+*Note: that its written 3,5,10 so if you wanted Vent-2, 2-6 and then 6-10 it would be 2,6,10*
+
+24. Click OK
+25. Run InaSAFE
+26. Click InaSAFE Print, save accordingly
+27. Analysis Results
+
+*Note: Needs per week are based on the cumulative of all 3 zone hence vent - 10km*
+
+Free time
+---------
+
+Its time for you to run through InaSAFE yourself, with no instructions, make sure to print each result!
+Take 10 mins to run:
+In the event of **Merapi erupting** how many **buildings** will **be affected** within 3,5,10 km of the vent
+In the event of **Merapi erupting** how many **people** will **be affected** within 5,10,25 km of the vent
+In the event of **Merapi erupting** how many **buildings** will **be affected** within 5,10,25 km of the vent
+
+**ANSWER** _________________________ **ANSWER** ________________________ **ANSWER** __________________________
+
+*Note: You can see in this example, and in the previous flooding examples that we do not have every single building. In Jakarta we are confident that we have the majority of schools, hospitals etc. But around Merapi we only have a selection, most of which have no attributes, to make a scenario more useful a organised data collection is necessary!.*
