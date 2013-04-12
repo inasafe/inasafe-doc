@@ -120,7 +120,9 @@ Free time
 Its time for you to run through InaSAFE yourself, with no instructions, make sure to print each result!
 Take 10 mins to run:
 In the event of **Merapi erupting** how many **buildings** will **be affected** within 3,5,10 km of the vent
+
 In the event of **Merapi erupting** how many **people** will **be affected** within 5,10,25 km of the vent
+
 In the event of **Merapi erupting** how many **buildings** will **be affected** within 5,10,25 km of the vent
 
 **ANSWER** _________________________ **ANSWER** ________________________ **ANSWER** __________________________
@@ -156,16 +158,18 @@ You will recall that there is another **people** layer, the difference is the si
 
 **Basically less pixels less memory need**
 
+.. image:: /static/socialisation/cell_size.png
+   :align: center
 
+33. :guilabel:`Select` the second “people” in the drop down menu
+34. :guilabel:`Click` on the drop down menu for the “Might”, this is the first InaSAFE run where there are actually 2 impact functions that we can choose from!
+35. :guilabel:`Select` the “Die or be displaced according to the pager model”
 
-33. Select the second “people” in the drop down menu
-34. Click on the drop down menu for the “Might”, this is the first InaSAFE run where there are actually 2 impact functions that we can choose from!
-35. Select the “Die or be displaced according to the pager model”
-*Note: This particular impact function was developed in Italy last November during a code sprint.*
+.. Note:: This particular impact function was developed in Italy last November during a code sprint.
 
-36. Run InaSAFE
+36. :guilabel:`Run` InaSAFE
 
-37. Click InaSAFE Print, save accordingly
+37. :guilabel:`Click` InaSAFE Print, :guilabel:`save` accordingly
 
 38. How many people are estimated to die?
 
@@ -191,13 +195,13 @@ As we are all aware, its generally not the earthquake that kills its the collaps
 
 Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
-41. Select “buildings” in the How many drop box
-42. Run InaSAFE
+41. :guilabel:`Select` “buildings” in the How many drop box
+42. :guilabel:`Run` InaSAFE
 
-*Note: InaSAFE is design to zoom into the extent of impact zone, hence in a minute or so, it will automatically zoom into Padang.*
+.. Note:: InaSAFE is design to zoom into the extent of impact zone, hence in a minute or so, it will automatically zoom into Padang.*
 
-43. Investigate the results, both by looking at the InaSAFE results, and using the information tool to select a building.
-44. Click InaSAFE Print, save accordingly
+43. :guilabel:`Investigate` the results, both by looking at the InaSAFE results, and using the information tool to select a building.
+44. :guilabel:`Click` InaSAFE Print, :guilabel:`save` accordingly 
 
 Tsunami (Optional)
 ------------------
@@ -206,13 +210,13 @@ The 1992 Flores earthquake occurred on December 12, 1992 on the island of
 Flores in Indonesia. With a magnitude of 7.8, it was the largest and also the deadliest earthquake in 1992. 
 This particular scenario is a modelled version of a Magnitude 8.1 earthquake generating a Tsunami that impact Maumere.
 
-45. Open a QGIS project called Maumere_tsunami.qgs - File/Open Project... , navigate to InaSAFE projects and select Maumere_tsunami
+45. :guilabel:`Open` a QGIS project called Maumere_tsunami.qgs - File/Open Project... , :guilabel:`navigate` to InaSAFE projects and :guilabel:`select` Maumere_tsunami
 
 You will see that there is 3 layers in the layer panel, click on each of them to read the keywords in the InaSAFE window
 
-**image**
+**Image**
 
-*Note: The InaSAFE functionality for Tsunami and floods are very similar, however due to the force of the tsunami waves, the maximum depth of the water that would affect people and infrastructure is shallower.*
+.. Note:: The InaSAFE functionality for Tsunami and floods are very similar, however due to the force of the tsunami waves, the maximum depth of the water that would affect people and infrastructure is shallower.*
 
 46. Check that InaSAFE has the following in the drop-down boxes
 #. A tsunami in Maumere (Mw 8.1)
