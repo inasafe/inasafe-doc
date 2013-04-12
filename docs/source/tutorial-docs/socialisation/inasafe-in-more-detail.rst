@@ -13,40 +13,70 @@ You will now have 3 layer that have been generated through InaSAFE
 We are now going to use the basic QGIS tools to examine the datasets. 
 
 
-About Estimate building affected
-................................
+**About Estimate building affected**
+....................................
 
-#. Zoom into a section of buildings using the zoom in tool
+#. Zoom into a section of buildings using the zoom in tool 
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
 
 Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
-Click once on “Estimate buildings affected”  to make sure layer is highlighted in blue
-Click on the information tool
-Click on an affected building (red)
+
+#. Click once on “Estimate buildings affected”  to make sure layer is highlighted in blue
+
+#. Click on the information tool
+
+#. Click on an affected building (red)
+
 Here I clicked on the building circled in the above picture to result is below.  This buildings has a lot of information recorded about it.
+
 Note: As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
-Zoom back to full extent using the Zoom Full tool 
-About Population which Needs evacuation
-Uncheck the “Estimated buildings affected” and recheck one of  “Population which Need evacuation”
-Again zoom into an area of your choice
-Click once on “Population which Need evacuation” and use the selection tool to select a pixel (square)
+
+#. Zoom back to full extent using the Zoom Full tool 
+
+**About Population which Needs evacuation**
+...........................................
+
+#. Uncheck the *“Estimated buildings affected”* and recheck one of  *“Population which Need evacuation”*
+
+#. Again zoom into an area of your choice
+
+#. Click once on *“Population which Need evacuation”* and use the selection tool to select a pixel (square)
+
 Here I clicked on the light green area, to find that there is a value of 80.6411, which means there are approximately 80 people in one pixel (square). 
+
 In this dataset a pixel is 100m by 100m
+
 Click on other pixels to find out their value.
-Click Close
-Is each pixel really 100m by 100m, lets check. Use the measure line tool
-Note: it maybe easier to measure one pixel by zooming in further.
+
+#. Click Close
+
+#. Is each pixel really 100m by 100m, lets check. Use the measure line tool
+
+*Note: it maybe easier to measure one pixel by zooming in further.*
+
 The answer is yes, a pixel is 100 meter across, and if you measure from top to bottom it will also be 100 meter.
+
 As you can see I got 102 meters but this is only because its very hard to click on one corner of the pixel and then the other, unless I zoom in real close!
-Click Close
-Zoom back to full extent using the Zoom Full tool
-Uncheck all layers except
-buildings
-people 
+
+#. Click Close
+
+#. Zoom back to full extent using the Zoom Full tool
+
+#. Uncheck all layers except
+
+* buildings
+
+* people
+ 
+ 
 Flood footprint in InaSAFE
+--------------------------
+
 Adding a vector layer
+.....................
+
 Click on the Add vector tool
 Click on browse and navigate to InaSAFE projects/data/ and select flood_osm_bpbd18113_jakarta.shp - click Open, then click Open again.
 This dataset is the subvillage boundaries for Jakarta, during the floods in January this year the Provincial disaster mangers collected information about the flooding, one of which was the location of the flooded area by sub-village boundary.
