@@ -116,7 +116,7 @@ Changing projection settings and understanding that QGIS is multilingual
    
 .. Note:: InaSAFE is dependent on Locale, but it has only been translated into bahasa Indonesian so far. World Bank is currently funding for the translation of InaSAFE into French and Portugal
 
-6. :guilabel:`Click` “Okay” in the bottom right corner of the Options window
+6. :guilabel:`Click` "Okay" in the bottom right corner of the Options window
 
 
 Installing Plugins
@@ -163,7 +163,7 @@ Installing OpenLayer through the QGIS plugin repository
 
 1. Go to **Plugins/Fetch Python Plugins...** This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
 2. Type openlayers into the filter box
-3. :guilabel:`Select` “OpenLayer Plugin” and click Install plugin - this will take a couple of minutes for the plugin to download and install
+3. :guilabel:`Select` "OpenLayer Plugin" and click Install plugin - this will take a couple of minutes for the plugin to download and install
 4. A window should pop up saying: "Plugin installed successfully" - Click okay and then close the QGIS python plugin installer window
 5. :guilabel:`Click on Plugins`, and hover your mouse over OpenLayers plugin
 
