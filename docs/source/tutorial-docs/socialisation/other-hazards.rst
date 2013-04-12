@@ -90,19 +90,19 @@ Configure and Run InaSAFE
 
 22. :guilabel:`Check` that InaSAFE has the following in the drop-down boxes
 
- #. Merapi erupting
- #. people
- #. Need evacuation
+ * Merapi erupting
+ * people
+ * Need evacuation
 
 23. Before we run InaSAFE again, we have to tell InaSAFE what the hazard zone is!
 :guilabel:`Click` on the impact function editor
 As a default InaSAFE has made 3 hazard areas:
 
-#. Vent -3 km
-#. 3-5 km
-#. 5-10 km
+* Vent -3 km
+* 3-5 km
+* 5-10 km
 
-.. image:: /static/socialisation/impact_function _editor_merapi2.png
+.. image:: /static/socialisation/impact_function_config.png
    :align: center
 
 .. Note:: that its written 3,5,10 so if you wanted Vent-2, 2-6 and then 6-10 it would be 2,6,10*
@@ -119,8 +119,11 @@ Free time
 
 Its time for you to run through InaSAFE yourself, with no instructions, make sure to print each result!
 Take 10 mins to run:
+
 In the event of **Merapi erupting** how many **buildings** will **be affected** within 3,5,10 km of the vent
+
 In the event of **Merapi erupting** how many **people** will **be affected** within 5,10,25 km of the vent
+
 In the event of **Merapi erupting** how many **buildings** will **be affected** within 5,10,25 km of the vent
 
 **ANSWER** _________________________ **ANSWER** ________________________ **ANSWER** __________________________
@@ -156,16 +159,18 @@ You will recall that there is another **people** layer, the difference is the si
 
 **Basically less pixels less memory need**
 
+.. image:: /static/socialisation/cell_size.png
+   :align: center
 
+33. :guilabel:`Select` the second “people” in the drop down menu
+34. :guilabel:`Click` on the drop down menu for the “Might”, this is the first InaSAFE run where there are actually 2 impact functions that we can choose from!
+35. :guilabel:`Select` the “Die or be displaced according to the pager model”
 
-33. Select the second “people” in the drop down menu
-34. Click on the drop down menu for the “Might”, this is the first InaSAFE run where there are actually 2 impact functions that we can choose from!
-35. Select the “Die or be displaced according to the pager model”
-*Note: This particular impact function was developed in Italy last November during a code sprint.*
+.. Note:: This particular impact function was developed in Italy last November during a code sprint.
 
-36. Run InaSAFE
+36. :guilabel:`Run` InaSAFE
 
-37. Click InaSAFE Print, save accordingly
+37. :guilabel:`Click` InaSAFE Print, :guilabel:`save` accordingly
 
 38. How many people are estimated to die?
 
@@ -191,13 +196,13 @@ As we are all aware, its generally not the earthquake that kills its the collaps
 
 Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
-41. Select “buildings” in the How many drop box
-42. Run InaSAFE
+41. :guilabel:`Select` “buildings” in the How many drop box
+42. :guilabel:`Run` InaSAFE
 
-*Note: InaSAFE is design to zoom into the extent of impact zone, hence in a minute or so, it will automatically zoom into Padang.*
+.. Note:: InaSAFE is design to zoom into the extent of impact zone, hence in a minute or so, it will automatically zoom into Padang.*
 
-43. Investigate the results, both by looking at the InaSAFE results, and using the information tool to select a building.
-44. Click InaSAFE Print, save accordingly
+43. :guilabel:`Investigate` the results, both by looking at the InaSAFE results, and using the information tool to select a building.
+44. :guilabel:`Click` InaSAFE Print, :guilabel:`save` accordingly 
 
 Tsunami (Optional)
 ------------------
@@ -206,54 +211,56 @@ The 1992 Flores earthquake occurred on December 12, 1992 on the island of
 Flores in Indonesia. With a magnitude of 7.8, it was the largest and also the deadliest earthquake in 1992. 
 This particular scenario is a modelled version of a Magnitude 8.1 earthquake generating a Tsunami that impact Maumere.
 
-45. Open a QGIS project called Maumere_tsunami.qgs - File/Open Project... , navigate to InaSAFE projects and select Maumere_tsunami
+45. :guilabel:`Open` a QGIS project called Maumere_tsunami.qgs - File/Open Project... , :guilabel:`navigate` to InaSAFE projects and :guilabel:`select` Maumere_tsunami
 
 You will see that there is 3 layers in the layer panel, click on each of them to read the keywords in the InaSAFE window
 
-**image**
+.. image:: /static/socialisation/maumere_tsunami2.png
+   :align: center
 
-*Note: The InaSAFE functionality for Tsunami and floods are very similar, however due to the force of the tsunami waves, the maximum depth of the water that would affect people and infrastructure is shallower.*
+.. Note:: The InaSAFE functionality for Tsunami and floods are very similar, however due to the force of the tsunami waves, the maximum depth of the water that would affect people and infrastructure is shallower.*
 
-46. Check that InaSAFE has the following in the drop-down boxes
-#. A tsunami in Maumere (Mw 8.1)
-#. building
-#. be flooded
+46. :guilabel:`Check` that InaSAFE has the following in the drop-down boxes
+* A tsunami in Maumere (Mw 8.1)
+* building
+* be flooded
 
-47. Change the Impact function parameter to 0.3m
+47. :guilabel:`Change` the Impact function parameter to 0.3m
 48. How many buildings are estimated to be flooded
 
 *ANSWER* _____________________________________________________________
 
-49. Click InaSAFE Print, save accordingly
-50. Run InaSAFE again with the following in the drop-down boxes:
+49. :guilabel:`Click` InaSAFE Print, save accordingly
+50. :guilabel:`Run` InaSAFE again with the following in the drop-down boxes:
 #. A tsunami in maumere (Mw 8.1)
 #. people
 #. need evacuation
 
-51. Change the Impact function parameter to 0.5m
+51. :guilabel:`Change` the Impact function parameter to 0.5m
 52. How many people are estimated to need evacuation
 
 *ANSWER*
 _____________________________________________________________
 
-53. Click InaSAFE Print, save accordingly
+53. :guilabel:`Click` InaSAFE Print, save accordingly
 
 Map Canvas Extent
 -----------------
 
-**IMAGE**
+.. image:: /static/socialisation/maumere_zoomin2.png
+   :align: center
 
-54. Try zooming into one section of the tsunami
-55. Run steps 45-53 again place your 2 results below
+54. Try :guilabel:`zooming` into one section of the tsunami
+55. :guilabel:`Run` steps 45-53 again place your 2 results below
 56. How many buildings are estimated to be flooded
 
-ANSWER  _____________________________________________________________
+ANSWER _____________________________________________________________
 
 57.How many people are estimated to need evacuation
 
-ANSWER  _____________________________________________________________
+ANSWER _____________________________________________________________
 
-*Note: You will now see that your results are different than the original InaSAFE runs,  this is because your extent window determines the area in which you are analysing the data. The next chapter will show you how to change this if needed.*
+.. Note:: You will now see that your results are different than the original InaSAFE runs,  this is because your extent window determines the area in which you are analysing the data. The next chapter will show you how to change this if needed.*
 
 You have now gone through InaSAFE using 4 different natural hazards, changing a variety of paramaters and analysing the results.  This chapter has been designed to help you understand a little more about InaSAFE as well as where you can go for help.
 

@@ -17,7 +17,7 @@ Participants are able to:
 
 * Identify basic elements of QGIS layout
 * Customise toolbar
-* Enable “on the fly reprojection by default”
+* Enable "on the fly reprojection by default"
 * Change QGIS to a different language
 * Install plugin
 * Use the navigational toolset
@@ -38,10 +38,10 @@ As information becomes increasingly spatially aware, there is no shortage of too
 
 Here are only some of the reasons:
 
-* It’s free, as in lunch. Installing and using the QGIS program costs you a grand total of zero money. No initial fee, no recurring fee, nothing.
-* It’s free, as in liberty. If you need extra functionality in QGIS, you can do more than just hope it will be included in the next release. You can sponsor the development of a feature, or add it yourself if you are familiar with programming.
-* It’s constantly developing. Because anyone can add new features and improve on existing ones, QGIS never stagnates. The development of a new tool can happen as quickly as you need it to.
-* Extensive help and documentation is available. If you’re stuck with anything, you can turn to the extensive documentation, your fellow QGIS users, or even the developers.
+* It's free, as in lunch. Installing and using the QGIS program costs you a grand total of zero money. No initial fee, no recurring fee, nothing.
+* It's free, as in liberty. If you need extra functionality in QGIS, you can do more than just hope it will be included in the next release. You can sponsor the development of a feature, or add it yourself if you are familiar with programming.
+* It's constantly developing. Because anyone can add new features and improve on existing ones, QGIS never stagnates. The development of a new tool can happen as quickly as you need it to.
+* Extensive help and documentation is available. If you're stuck with anything, you can turn to the extensive documentation, your fellow QGIS users, or even the developers.
 * Cross-platform. QGIS can be installed on MacOS, Windows and Linux.
 
 An overview of the Interface
@@ -54,20 +54,20 @@ The elements identified in the figure below are:
 #. Map canvas
 #. Status bar
 
-.. image:: /static/Socialisation/interface.png
+.. image:: /static/socialisation/interface.PNG
    :align: center
    
 Setup QGIS
 ----------
 
-1. Open Quantum GIS Desktop (1.8.0) - This should be located on your desktop, or you can find it in your start menu.
+1. :guilabel: `Open Quantum GIS Desktop (1.8.0)` - This should be located on your desktop, or you can find it in your start menu.
 
-.. image:: /static/Socialisation/qgis.png
+.. image:: /static/socialisation/qgis.png
    :align: center
 
 2. A hint window will come up, click okay.
 
-.. image:: /static/Socialisation/tips.png
+.. image:: /static/socialisation/tips.png
    :align: center
 
 Clean up tool bar
@@ -78,12 +78,12 @@ To provide more space for your map canvas you will now choose to display the too
 #. Right click the toolbar and unmark, *Advance Digitising*, *Database*, *Digitising*,*File*, *Grass*, *OpenStreetMap*, *Raster*, *Vector*, *Web*.
 #. Rearrange toolbar so its just one line, by holding down the left mouse button over the  and dragging the bar to where ever you would like to put it.
 
-.. image:: /static/Socialisation/toolbar.png
+.. image:: /static/socialisation/toolbar.PNG
    :align: center
    
 .. Note:: For future work you may want to add these tool back into your toolbar, this is as simple as right clicking on the toolbar and turning it back on.
 
-.. image:: /static/Socialisation/toolbar_2.png
+.. image:: /static/socialisation/toolbar_2.PNG
    :align: center
    
 Option Window
@@ -91,27 +91,27 @@ Option Window
 
 Changing projection settings and understanding that QGIS is multilingual
 
-1. Go to Options window: :guilabel: **Settings/options**
+1. Go to Options window: **Settings/options**
 2. Click on the CRS tab
 
-.. image:: /static/Socialisation/crs.png
+.. image:: /static/socialisation/crs.PNG
    :align: center
    
-3. Check Enable ‘on the fly’ reprojection by default - This will enable that all spatial layers irrespective of their projection will follow the CRS allocated above
+3. Check Enable 'on the fly' reprojection by default - This will enable that all spatial layers irrespective of their projection will follow the CRS allocated above
 
-.. image:: /static/Socialisation/enable.png
+.. image:: /static/socialisation/enable.PNG
    :align: center
    
 .. Note:: This  will become default in the new version of QGIS (2.0),
 
 4. Click on the Locale tab
 
-.. image:: /static/Socialisation/locale.png
+.. image:: /static/socialisation/locale.PNG
    :align: center
    
 5. Check Override system locale, scroll through all the languages that QGIS have been translated into! We will stick with english for this training, so no action is needed - un-check Override system locale.
 
-.. image:: /static/Socialisation/options2.png
+.. image:: /static/socialisation/options2.PNG
    :align: center
    
 .. Note:: InaSAFE is dependent on Locale, but it has only been translated into bahasa Indonesian so far. World Bank is currently funding for the translation of InaSAFE into French and Portugal
@@ -129,29 +129,29 @@ Installing InaSAFE through the QGIS plugin repository
 
 .. Note:: You must be connected to the internet for this section
 
-1. Go to Plugins/Fetch Python Plugins... This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
+1. Go to **Plugins/Fetch Python Plugins...** This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
 2. Type inasafe into the filter box
 
-.. image:: /static/Socialisation/inasafe_plugin.png
+.. image:: /static/socialisation/inasafe_plugin.png
    :align: center
 
 3. Select InaSAFE and click Install plugin - this will take a couple of minutes for the plugin to download and install
-4. A window should pop up saying: “Plugin installed successfully” - Click okay and then close the QGIS python plugin installer window
+4. A window should pop up saying: "Plugin installed successfully" - Click okay and then close the QGIS python plugin installer window
 5. You should now have an InaSAFE panel on the right hand side of your screen
 
-.. image:: /static/Socialisation/inasafe_tools.png
+.. image:: /static/socialisation/inasafe_tools.png
 	:align: center
 	
 InaSAFE also comes with a toolbar of its own
 
-6. To retrieve the InaSAFE toolbar, right click on the top tool bar and recheck “plugin”
+6. To retrieve the InaSAFE toolbar, right click on the top tool bar and recheck "plugin"
 
-.. image:: /static/Socialisation/tools_inasafe.png
+.. image:: /static/socialisation/tools_inasafe.PNG
    :align: center
 	
 7. Read to below to familiarise yourself with the InaSAFE tool set 
 
-.. image:: /static/Socialisation/inasafe_toolbar2.png
+.. image:: /static/socialisation/inasafe_toolbar2.PNG
    :align: center
 
 .. Note:: Later we will explore and use these tools
@@ -164,15 +164,15 @@ Installing OpenLayer through the QGIS plugin repository
 1. Go to **Plugins/Fetch Python Plugins...** This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
 2. Type openlayers into the filter box
 3. Select “OpenLayer Plugin” and click Install plugin - this will take a couple of minutes for the plugin to download and install
-4. A window should pop up saying: “Plugin installed successfully” - Click okay and then close the QGIS python plugin installer window
+4. A window should pop up saying: "Plugin installed successfully" - Click okay and then close the QGIS python plugin installer window
 5. Click on Plugins, and hover your mouse over OpenLayers plugin
 
-.. image:: /static/Socialisation/openlayer1.png
+.. image:: /static/socialisation/openlayer1.PNG
    :align: center
    
 6. Select ‘Add Bing Aerial layer’
 
-.. image:: /static/Socialisation/aerial_bing.png
+.. image:: /static/socialisation/aerial_bing.png
    :align: center
 	
 .. Note:: If you are familiar with Goggle Earth, navigating this imagery should be very similar
@@ -184,17 +184,17 @@ Installing OpenLayer through the QGIS plugin repository
 
 9. Now navigate to your own house. (optional)
 
-.. image:: /static/Socialisation/navigation.png
+.. image:: /static/socialisation/navigation.PNG
    :align: center
 
 Indonesia
 
-.. image:: /static/Socialisation/indonesia.png
+.. image:: /static/socialisation/indonesia.png
    :align: center
 	
 My home in Jakarta
 
-.. image:: /static/Socialisation/home.png
+.. image:: /static/socialisation/home.png
    :align: center
 	
 .. Note:: To use openlayers you must have connection to the Internet!

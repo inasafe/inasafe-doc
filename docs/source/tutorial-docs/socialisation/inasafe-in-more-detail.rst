@@ -7,9 +7,9 @@ Interrogating the output data
 
 You will now have 3 layer that have been generated through InaSAFE
 
-* 2 - “Population which need evacuating” - Raster Data
+* 2 - *Population which need evacuating* - Raster Data
 
-* 1 - “Estimated building affected” - Vector Data
+* 1 - *Estimated building affected* - Vector Data
 
 We are now going to use the basic QGIS tools to examine the datasets. 
 
@@ -23,9 +23,11 @@ We are now going to use the basic QGIS tools to examine the datasets.
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
-.. image:: /static/socialisation/buildings_zoom_2.png Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
+.. image:: /static/socialisation/buildings_zoom_2.png 
 
-2. Click once on “Estimate buildings affected”  to make sure layer is highlighted in blue
+Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
+
+2. Click once on *Estimate buildings affected*  to make sure layer is highlighted in blue
 
 3. Click on the information tool 
 
@@ -35,7 +37,9 @@ Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
 Here I clicked on the building circled in the above picture to result is below.  This buildings has a lot of information recorded about it.
 
-.. image:: /static/socialisation/identy_results.png Note: As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
+.. image:: /static/socialisation/identy_results.png 
+
+Note: As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
 
 5. Zoom back to full extent using the Zoom Full tool
 
@@ -44,13 +48,19 @@ Here I clicked on the building circled in the above picture to result is below. 
 **About Population which Needs evacuation**
 ...........................................
 
-6. Uncheck the *“Estimated buildings affected”* and recheck one of  *“Population which Need evacuation”*
+6. Uncheck the *Estimated buildings affected* and recheck one of  *Population which Need evacuation*
 
-7. Again zoom into an area of your choice
+7. Again zoom into an area of your choice 
 
-8. Click once on *“Population which Need evacuation”* and use the selection tool to select a pixel (square)
+.. image:: /static/socialisation/zoomin2.png 
+
+8. Click once on *Population which Need evacuation* and use the selection tool to select a pixel (square) 
+
+.. image:: /static/socialisation/information_tool.png
 
 Here I clicked on the light green area, to find that there is a value of 80.6411, which means there are approximately 80 people in one pixel (square). 
+
+.. image:: /static/socialisation/raster_examine_2.png
 
 In this dataset a pixel is 100m by 100m
 
@@ -58,7 +68,7 @@ Click on other pixels to find out their value.
 
 9. Click Close
 
-10. Is each pixel really 100m by 100m, lets check. Use the measure line tool
+10. Is each pixel really 100m by 100m, lets check. Use the measure line tool .. image:: /static/socialisation/measure.png
 
 *Note: it maybe easier to measure one pixel by zooming in further.*
 
@@ -66,9 +76,11 @@ The answer is yes, a pixel is 100 meter across, and if you measure from top to b
 
 As you can see I got 102 meters but this is only because its very hard to click on one corner of the pixel and then the other, unless I zoom in real close!
 
+.. image:: /static/socialisation/measure_test.png
+
 11. Click Close
 
-12. Zoom back to full extent using the Zoom Full tool
+12. Zoom back to full extent using the Zoom Full tool  .. image:: /static/socialisation/zoom_extent.png
 
 13. Uncheck all layers except
 
@@ -80,18 +92,24 @@ As you can see I got 102 meters but this is only because its very hard to click 
 Flood footprint in InaSAFE
 --------------------------
 
-Adding a vector layer
+Adding a vector layer  
 .....................
 
-14. Click on the Add vector tool
+14. Click on the Add vector tool  .. image:: /static/socialisation/add_vector.png
 
 15. Click on browse and navigate to InaSAFE projects/data/ and select *flood_osm_bpbd18113_jakarta.shp* - click Open, then click Open again.
+
+.. image:: /static/socialisation/jakarta18113_added.png
 
 This dataset is the subvillage boundaries for Jakarta, during the floods in January this year the Provincial disaster mangers collected information about the flooding, one of which was the location of the flooded area by sub-village boundary.
 
 Lets examine this data by opening up its attribute table
 
-16. In the layer list Right click on the flood_osm_BPBD18113_jakarta layers  and select “Open Attribute Table”
+.. image:: /static/socialisation/openattributetable.png
+
+16. In the layer list Right click on the flood_osm_BPBD18113_jakarta layers  and select *Open Attribute Table*
+
+.. image:: /static/socialisation/attribute_table.png
 
 OBJECTID: 	Feature ID
 
@@ -120,9 +138,15 @@ Now we are going to colour only the area that were affected
 
 20. Select Categorised
 
+.. image:: /static/socialisation/select_category_2.png
+
 21. Select attribute from the Column
 
+.. image:: /static/socialisation/select_attribute.png
+
 22. Click on Classify (circle 1)
+
+.. image:: /static/socialisation/classify_2.png
 
 23. Click on ‘0’  (circle 2)
 
@@ -134,9 +158,13 @@ Now we are going to colour only the area that were affected
 
 27. Confirm that you only have 1 left
 
+.. image:: /static/socialisation/1_left.png
+
 28. Click OK (circle 6)
 
 Below are the results
+
+.. image:: /static/socialisation/result.png
 
 You have now symbolised your first layer!  You can see only the subvillage areas that were flooded on the 18th of January! Now, can we use this hazard layer in InaSAFE?
 
@@ -145,9 +173,15 @@ Adding Keywords
 
 29. Read through the error message (that occurs when you highlight *flood_osm_BPBD18113_jakarta* layer).  InaSAFE has identified that the layer does not have a keyword file.  As explained on page 10.
 
+.. image:: /static/en/error-display.png
+
 30. Click on the keyword editor
 
-31. Fill out the title as **“Jakarta flooding on the 18th January 2013”**
+.. image:: /static/socialisation/pencil.png
+
+31. Fill out the title as **Jakarta flooding on the 18th January 2013**
+
+.. image:: /static/socialisation/keyword_editor.png
 
 32. For the Category check **Hazard**
 
@@ -162,6 +196,8 @@ Buildings within affected subvillages
 .....................................
 
 35. Check that InaSAFE has the following in the drop-down boxes
+
+.. image:: /static/socialisation/inasafe_floodpolygon.png
 
 * Jakarta flooding on the 18th January 2013
 
@@ -202,7 +238,11 @@ Instead of determining how many people will be evacuated by  a spatial area, thi
 
 42. Click on the impact function editor (pencil)
 
+.. image:: /static/socialisation/inasafe_pop.png
+
 43. As you can see the default is 1, Click OK
+
+.. image:: /static/socialisation/evacuation_per.png
 
 44. Run InaSAFE
 
