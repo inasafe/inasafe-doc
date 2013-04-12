@@ -10,7 +10,7 @@ In this chapter you will run InaSAFE in Jakarta to determine the impact of a flo
 
 2. Click on “browse” navigate to *InaSAFE projects* and select *Jakarta_floods*, click open and then open again
  
-.. image:: ../static/socialisation/page_28.jpeg
+.. image:: /static/socialisation/page_28.jpeg
    :align: center
 
 
@@ -33,19 +33,19 @@ People need evacuating
 
 * Need evacuating
 
-.. image:: ../static/socialisation/show_people.png
+.. image:: /static/socialisation/show_people.png
    :align: center
 
 .. note:: You can see that the Impact function below “Might” automatically changes depending on the layers added
 
 5. Lets run this scenario first - Click Run at the bottom right hand corner of the InaSAFE panel
 
-.. image:: ../static/socialisation/page_28_2.jpeg
+.. image:: /static/socialisation/page_28_2.jpeg
    :align: center
 
 A new layer should appear in the layer panel called “Population which needs evacuating” and in the InaSAFE Panel, inside the main window you will see text and statistics, lets explore this further.
  
- .. image:: ../static/socialisation/inasafe_print2.jpeg
+ .. image:: /static/socialisation/inasafe_print2.jpeg
    :align: center
  
 In this scenario there are 1,109,000 people that could be exposed to more than 1 meter of water, it is assumed that all of these people will need to evacuate their homes.
@@ -67,24 +67,24 @@ Print Results
 
 6. Click the print button at the bottom the inasafe panel
 
-.. image:: ../static/socialisation/inasafe_print3.jpeg
+.. image:: /static/socialisation/inasafe_print3.jpeg
    :align: center
  
 7. Navigate to where you would like to save the pdf, click save
 
-.. image:: ../static/socialisation/inasafe_result.jpeg
+.. image:: /static/socialisation/inasafe_result.jpeg
    :align: center
 
 Two pdfs will be generated
 
 .. note:: The result provides a map and a table of information about the impact.
 
-.. image:: ../static/socialisation/people_in_need_of_evacuation.jpeg
+.. image:: /static/socialisation/people_in_need_of_evacuation.jpeg
    :align: center
 
 **Help is needed to reconstruct the InaSAFE print output to be more benefical to disaster managers**
 
-.. image:: ../static/socialisation/people_in_need_of_evacuation_table.jpeg
+.. image:: /static/socialisation/people_in_need_of_evacuation_table.jpeg
    :align: center
 
 **If you get time during this course please proved us with your ideas on how the print map and table should look!**
@@ -96,12 +96,12 @@ What if the disaster manager has decided that actually anyone in more than 80cm 
 
 8. Click the impact function editor button (the pencil icon next to “Need Evacuation”)
 
-.. image:: ../static/socialisation/page_31.jpeg
+.. image:: /static/socialisation/page_31.jpeg
    :align: center
  
 9. Type 0.8 next to Thresholds
 
-.. image:: ../static/socialisation/page_31_2.jpeg
+.. image:: /static/socialisation/page_31_2.jpeg
    :align: center
 
 10. Click OK
@@ -121,7 +121,7 @@ Answer
 
 * buildings
 
-.. image:: ../static/socialisation/page_31_3.jpeg
+.. image:: /static/socialisation/page_31_3.jpeg
    :align: center
  
 
@@ -132,14 +132,14 @@ Buildings Affected
 
 16. Click on the arrow, as you can see you can not select people, as we have uncheck it in the layer panel
 
-.. image:: ../static/socialisation/page_31_4.jpeg
+.. image:: /static/socialisation/page_31_4.jpeg
    :align: center
 
 .. note:: If you want to be able to select layer that are not checked, there is an option in the InaSAFE options window that can be turned off - We will go through the option menu later in the training.
 
 17. Click Run
 
-.. image:: ../static/socialisation/inasafe_print.jpeg
+.. image:: /static/socialisation/inasafe_print.jpeg
    :align: center
  
 In this scenario approximately 796 buildings could be effected out of 13,629 buildings.
@@ -194,7 +194,7 @@ Optional - Change the threshold to 0.8
 Basic Aggregation - Optional
 ----------------------------
 
-23. Click Add vector button .. image:: ../static/socialisation/
+23. Click Add vector button .. image:: /static/socialisation/
 
 24. Navigate to the data folder and select InaSAFE projects/data/district_osm_jakarta.shp
 
@@ -219,7 +219,7 @@ However the Keyword editor for postprocessing is slightly different. You are abl
 
 If you would like more detail please ask at the end of the session
 
-.. image:: ../static/socialisation/aggregation_keyword.png
+.. image:: /static/socialisation/aggregation_keyword.png
    :align: center 
 
 31. Keywords Editor window will pop up, press OK
@@ -228,5 +228,5 @@ If you would like more detail please ask at the end of the session
 
 33. Click InaSAFE Print, save accordingly
 
-.. image:: ../static/socialisation/page_34.jpeg
+.. image:: /static/socialisation/page_34.jpeg
    :align: center
