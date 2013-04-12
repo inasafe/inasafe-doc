@@ -92,7 +92,7 @@ Option Window
 Changing projection settings and understanding that QGIS is multilingual
 
 1. Go to Options window: **Settings/options**
-2. :guilable:`Click` on the CRS tab
+2. :guilabel:`Click` on the CRS tab
 
 .. image:: /static/socialisation/crs.PNG
    :align: center
@@ -104,7 +104,7 @@ Changing projection settings and understanding that QGIS is multilingual
    
 .. Note:: This  will become default in the new version of QGIS (2.0),
 
-4. :guilabel: `Click` on the Locale tab
+4. :guilabel:`Click` on the Locale tab
 
 .. image:: /static/socialisation/locale.PNG
    :align: center
@@ -151,7 +151,7 @@ InaSAFE also comes with a toolbar of its own
 	
 7. Read to below to familiarise yourself with the InaSAFE tool set 
 
-.. image:: /static/socialisation/inasafe_toolbar2.JPG
+.. image:: /static/socialisation/inasafe_toolbar2.PNG
    :align: center
 
 .. Note:: Later we will explore and use these tools
