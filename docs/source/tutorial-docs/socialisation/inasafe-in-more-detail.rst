@@ -158,11 +158,13 @@ Now we are going to colour only the area that were affected
 
 27. Confirm that you only have 1 left
 
-
+.. image:: /static/socialisation/1_left.png
 
 28. Click OK (circle 6)
 
 Below are the results
+
+.. image:: /static/socialisation/result.png
 
 You have now symbolised your first layer!  You can see only the subvillage areas that were flooded on the 18th of January! Now, can we use this hazard layer in InaSAFE?
 
@@ -171,7 +173,11 @@ Adding Keywords
 
 29. Read through the error message (that occurs when you highlight *flood_osm_BPBD18113_jakarta* layer).  InaSAFE has identified that the layer does not have a keyword file.  As explained on page 10.
 
+.. image:: /static/en/error-display.png
+
 30. Click on the keyword editor
+
+.. image:: /static/socialisation/.png
 
 31. Fill out the title as **“Jakarta flooding on the 18th January 2013”**
 
