@@ -16,7 +16,7 @@ emergency managers need to answer questions like:
 Conceptually InaSAFE combines one exposure layer (e.g. buildings) with one hazard scenario
 (e.g. flooding) and returns an impact layer along with textual staticial summary.
 
-.. image:: ..docs/resources/en/socialisation/inasafe_concept.png
+.. image:: ../docs/resources/en/socialisation/inasafe_concept.png
 
 InaSAFE is framed around questions such as:
 
