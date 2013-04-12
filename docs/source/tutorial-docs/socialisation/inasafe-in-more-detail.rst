@@ -7,9 +7,9 @@ Interrogating the output data
 
 You will now have 3 layer that have been generated through InaSAFE
 
-* 2 - “Population which need evacuating” - Raster Data
+* 2 - *Population which need evacuating* - Raster Data
 
-* 1 - “Estimated building affected” - Vector Data
+* 1 - *Estimated building affected* - Vector Data
 
 We are now going to use the basic QGIS tools to examine the datasets. 
 
@@ -27,7 +27,7 @@ Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
 Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
 
-2. Click once on “Estimate buildings affected”  to make sure layer is highlighted in blue
+2. Click once on *Estimate buildings affected*  to make sure layer is highlighted in blue
 
 3. Click on the information tool 
 
@@ -48,13 +48,13 @@ Note: As mentioned before, this information was gathered by the Provincial disas
 **About Population which Needs evacuation**
 ...........................................
 
-6. Uncheck the *“Estimated buildings affected”* and recheck one of  *“Population which Need evacuation”*
+6. Uncheck the *Estimated buildings affected* and recheck one of  *Population which Need evacuation*
 
 7. Again zoom into an area of your choice 
 
 .. image:: /static/socialisation/zoomin2.png 
 
-8. Click once on *“Population which Need evacuation”* and use the selection tool to select a pixel (square) 
+8. Click once on *Population which Need evacuation* and use the selection tool to select a pixel (square) 
 
 .. image:: /static/socialisation/information_tool.png
 
@@ -107,7 +107,7 @@ Lets examine this data by opening up its attribute table
 
 .. image:: /static/socialisation/openattributetable.png
 
-16. In the layer list Right click on the flood_osm_BPBD18113_jakarta layers  and select “Open Attribute Table”
+16. In the layer list Right click on the flood_osm_BPBD18113_jakarta layers  and select *Open Attribute Table*
 
 .. image:: /static/socialisation/attribute_table.png
 
@@ -177,9 +177,11 @@ Adding Keywords
 
 30. Click on the keyword editor
 
-.. image:: /static/socialisation/.png
+.. image:: /static/socialisation/pencil.png
 
-31. Fill out the title as **“Jakarta flooding on the 18th January 2013”**
+31. Fill out the title as **Jakarta flooding on the 18th January 2013**
+
+.. image:: /static/socialisation/keyword_editor.png
 
 32. For the Category check **Hazard**
 
@@ -194,6 +196,8 @@ Buildings within affected subvillages
 .....................................
 
 35. Check that InaSAFE has the following in the drop-down boxes
+
+.. image:: /static/socialisation/inasafe_floodpolygon.png
 
 * Jakarta flooding on the 18th January 2013
 
@@ -234,7 +238,11 @@ Instead of determining how many people will be evacuated by  a spatial area, thi
 
 42. Click on the impact function editor (pencil)
 
+.. image:: /static/socialisation/inasafe_pop.png
+
 43. As you can see the default is 1, Click OK
+
+.. image:: /static/socialisation/evacuation_per.png
 
 44. Run InaSAFE
 
