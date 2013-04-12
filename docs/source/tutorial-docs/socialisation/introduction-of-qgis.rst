@@ -146,7 +146,7 @@ InaSAFE also comes with a toolbar of its own
 
 6. To retrieve the InaSAFE toolbar, right click on the top tool bar and recheck "plugin"
 
-.. image:: /static/socialisation/tools_inasafe.PNG
+.. image:: /static/socialisation/tools_inasafe.png
    :align: center
 	
 7. Read to below to familiarise yourself with the InaSAFE tool set 
