@@ -109,7 +109,7 @@ Lets examine this data by opening up its :guilabel: `attribute table`
 
 .. image:: /static/socialisation/openattributetable.png
 
-16. In the layer list :guilabel: `Right click` on the flood_osm_BPBD18113_jakarta layers  and select *Open Attribute Table*
+16. In the layer list :guilabel: `Right click` on the *flood_osm_BPBD18113_jakarta* layers  and select *Open Attribute Table*
 
 .. image:: /static/socialisation/attribute_table.png
 
@@ -150,11 +150,11 @@ Now we are going to colour only the area that were affected
 
 .. image:: /static/socialisation/classify_2.png
 
-23. :guilabel: `Click` on ‘0’  (circle 2)
+23. :guilabel: `Click` on 0  (circle 2)
 
 24. :guilabel: `Click Delete` (circle 3)
 
-25. :guilabel: `Click` on  ‘_’ (circle 4)
+25. :guilabel: `Click` on  _ (circle 4)
 
 26. :guilabel: `Click Delete`  (circle 3)
 
@@ -213,7 +213,7 @@ Buildings within affected subvillages
 
 37. How many estimated buildings were flooded?
 
-Answer  __________
+Answer  _______________________________________
 
 38. Take some time to :guilabel: `examine` the results, read through the InaSAFE window
 
@@ -252,11 +252,11 @@ Instead of determining how many people will be evacuated by  a spatial area, thi
 
 45. How many people were evacuated?
 
-AnsweR  ___________
+Answer  _______________________________________
 
 46. How many people were affected?
 
-AnsweR  ___________
+Answer  _______________________________________
 
 47. Take some time to examine the results, read through the InaSAFE window
 
@@ -282,6 +282,6 @@ flood 180113   1%             Vector         People        Raster         Need E
 
 50. :guilabel: `Compare` between results, 1. How different are the results, 2 Why are they different?
 
-1. Answer  ______________
+1. Answer  _______________________________________________________
 
-2. Answer  ______________
+2. Answer  _______________________________________________________
