@@ -16,10 +16,12 @@ emergency managers need to answer questions like:
 Conceptually InaSAFE combines one exposure layer (e.g. buildings) with one hazard scenario
 (e.g. flooding) and returns an impact layer along with textual staticial summary.
 
+.. image:: ../docs/resources/en/socialisation/inasafe_concept.png
+
 InaSAFE is framed around questions such as:
 
-*"In the event of **a flood similar to the 2007 Jakarta event** how many **people** might need 
-**evacuating**."*
+"In the event of **a flood similar to the 2007 Jakarta event** how many **people** might need 
+**evacuating**."
 
 Background
 ----------
@@ -55,20 +57,81 @@ co-director of the Australian Government funded Australia-Indonesia Facility for
 InaSAFE is now being taught across 6 provinces in Indonesia as one of the 3 open source software 
 tools used to enable development of realistic disaster scenarios for contingency planning. The other 2 tools are:
 
-#. OpenStreetMap  (OSM): is a free map of the world that anyone can add to and edit.  Utilizing community 
-mapping allows for more detailed information that can be fed into InaSAFE (i.e. How many houses will be 
-affected by a specific hazard).
-#. QuantumGIS  (QGIS): an open source Geographical Information System software that allows users to 
-spatially analyse their data. It is also the platform on which InaSAFE is built.
+#. OpenStreetMap  (OSM): is a free map of the world that anyone can add to and edit.  Utilizing community mapping allows for more detailed information that can be fed into InaSAFE (i.e. How many houses will be affected by a specific hazard).
+#. QuantumGIS  (QGIS): an open source Geographical Information System software that allows users to spatially analyse their data. It is also the platform on which InaSAFE is built.
 
 InaSAFE was selected as a 2012 Open Source Rookie of the Year by Black Duck, the trusted partner for
 open source software adoption, management and governance.  InaSAFE, along with projects from groups 
 such as Yahoo! and Twitter, was selected for this prestigious award from amongst 1,000’s of open 
 source programs that were started in 2012.
 
-Where appropriate spatial data doesn’t yet exist, external tools such as OpenStreetMap 
-(see page 15 for more details) can allow governments and communities to quickly and easily map their
-assets that are important to them.
+Input Data
+----------
+
+Effectively preparing for a disaster requires people from a wide range of sectors and backgrounds to 
+effectively work together and share their experience, expertise, and resources. Using InaSAFE to develop 
+a scenario requires the same spirit of cooperation and sharing of expertise and data.
+
+InaSAFE is designed to use and combine existing data from science agencies, local governments, and 
+communities themselves. Normally, information on the location of people and important assets are 
+provided by local communities and government departments responsible for each sector, often through 
+a facilitated part of a disaster preparedness and planning exercise.
+
+Where appropriate spatial data doesn’t yet exist, external tools such as OpenStreetMap (see ) 
+can allow governments and communities to quickly and easily map their assets that are important to them.
+
+.. note:: It is important to note that InaSAFE is not a hazard modelling tool. Information on hazards needs to be provided either by technical experts, often from Government agencies, universities or technical consultants, or from communities themselves based on their previous experiences.
+
+The more communities, scientists and governments share data and knowledge, the more realistic and 
+useful the InaSAFE scenario will be. InaSAFE accepts three types of Input data, Hazard, Exposure and 
+Aggregation.
+
+Hazard
+......
+
+Hazard can be seen as a condition, phenomenon, or human activity that potentially cause victims, 
+losses or destruction to social structure and environment. Events or phenomena that frequently are 
+seen as hazard potentials include earthquakes, tsunamis, floods, landslides, tornadoes etc.
+
+For InaSAFE, hazard data refers to a singular disaster scenario (i.e. a Mw 7.8 earthquake or a 
+volcanic eruption) that has been developed through scientific modelled software for infrequent events, 
+for more frequent events such as floods it can either be modelled by scientist or mapped by the community. 
+The hazard must be accompanied by specific units:
+
++-------------------+-------------------------------------------+--------------------+ 
+|       Hazard      |                  Modelled                 |     Footprints     | 
++===================+===========================================+====================+ 
+| Earthquake        | MMI (shakemap)                            |                    | 
++-------------------+-------------------------------------------+--------------------+ 
+| Tsunami           | Max depth in Meters                       |                    |
++-------------------+-------------------------------------------+--------------------+
+| Volcanic Eruption | ash load (kg\ :sup:`2` \/m\ :sup:`2` \)   | Hazard Zones       |
++-------------------+-------------------------------------------+--------------------+
+| Flood             | Max depth in Meters                       | Flood prone areas  |
++-------------------+-------------------------------------------+--------------------+
+| \*Landslide       |                                           | Hazard Zone        |
++-------------------+-------------------------------------------+--------------------+
+| \*Bush Fire       |                                           | Hazard Zone        |
++-------------------+-------------------------------------------+--------------------+
+| \*Cyclone/Tornado |                                           |                    |
++-------------------+-------------------------------------------+--------------------+
+
+*\*To come in future version of InaSAFE*
+
+The input Hazard layer must have:
+
+- a coordinates/location identifier
+- specific hazard intensity (e.g. flood depth, earthquake’s MMI)
+- temporal information when the event occurred or is expected to occur
+
+Exposure
+........
+
+For InaSAFE, exposure data is refers to as population density (number of people found in a certain area)
+or important infrastructure (buildings, bridges etc). that become a focus of interest when calculating 
+the impact of a specific hazard.
+
+
 
 
 

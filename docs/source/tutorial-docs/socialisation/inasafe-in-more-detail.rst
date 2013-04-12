@@ -16,33 +16,33 @@ We are now going to use the basic QGIS tools to examine the datasets.
 **About Estimate building affected**
 ....................................
 
-#. Zoom into a section of buildings using the zoom in tool 
+1. Zoom into a section of buildings using the zoom in tool 
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
 
 Note: that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
 
-#. Click once on “Estimate buildings affected”  to make sure layer is highlighted in blue
+2. Click once on “Estimate buildings affected”  to make sure layer is highlighted in blue
 
-#. Click on the information tool
+3. Click on the information tool
 
-#. Click on an affected building (red)
+4. Click on an affected building (red)
 
 Here I clicked on the building circled in the above picture to result is below.  This buildings has a lot of information recorded about it.
 
 Note: As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
 
-#. Zoom back to full extent using the Zoom Full tool 
+5. Zoom back to full extent using the Zoom Full tool 
 
 **About Population which Needs evacuation**
 ...........................................
 
-#. Uncheck the *“Estimated buildings affected”* and recheck one of  *“Population which Need evacuation”*
+6. Uncheck the *“Estimated buildings affected”* and recheck one of  *“Population which Need evacuation”*
 
-#. Again zoom into an area of your choice
+7. Again zoom into an area of your choice
 
-#. Click once on *“Population which Need evacuation”* and use the selection tool to select a pixel (square)
+8. Click once on *“Population which Need evacuation”* and use the selection tool to select a pixel (square)
 
 Here I clicked on the light green area, to find that there is a value of 80.6411, which means there are approximately 80 people in one pixel (square). 
 
@@ -50,9 +50,9 @@ In this dataset a pixel is 100m by 100m
 
 Click on other pixels to find out their value.
 
-#. Click Close
+9. Click Close
 
-#. Is each pixel really 100m by 100m, lets check. Use the measure line tool
+10. Is each pixel really 100m by 100m, lets check. Use the measure line tool
 
 *Note: it maybe easier to measure one pixel by zooming in further.*
 
@@ -60,11 +60,11 @@ The answer is yes, a pixel is 100 meter across, and if you measure from top to b
 
 As you can see I got 102 meters but this is only because its very hard to click on one corner of the pixel and then the other, unless I zoom in real close!
 
-#. Click Close
+11. Click Close
 
-#. Zoom back to full extent using the Zoom Full tool
+12. Zoom back to full extent using the Zoom Full tool
 
-#. Uncheck all layers except
+13. Uncheck all layers except
 
 * buildings
 
@@ -77,32 +77,61 @@ Flood footprint in InaSAFE
 Adding a vector layer
 .....................
 
-Click on the Add vector tool
-Click on browse and navigate to InaSAFE projects/data/ and select flood_osm_bpbd18113_jakarta.shp - click Open, then click Open again.
+14. Click on the Add vector tool
+
+15. Click on browse and navigate to InaSAFE projects/data/ and select *flood_osm_bpbd18113_jakarta.shp* - click Open, then click Open again.
+
 This dataset is the subvillage boundaries for Jakarta, during the floods in January this year the Provincial disaster mangers collected information about the flooding, one of which was the location of the flooded area by sub-village boundary.
+
 Lets examine this data by opening up its attribute table
-In the layer list Right click on the flood_osm_BPBD18113_jakarta layers  and select “Open Attribute Table”
+
+16. In the layer list Right click on the flood_osm_BPBD18113_jakarta layers  and select “Open Attribute Table”
+
 OBJECTID: 	Feature ID
+
 KAB_NAME:  District
+
 KEC_NAME:  Sub-district
+
 KEL_NAME:  Village
-RW: 		Sub-village
-affected:    	1= affected,              	                            	     NULL = not affected
-Close the Attribute table
+
+RW: 	   Sub-village
+
+affected:    	1= affected,              	                            	     
+
+                NULL = not affected
+
+17. Close the Attribute table
+
 Symbolising Vector
+..................
+
 Now we are going to colour only the area that were affected
-Double click on flood_osm_BPBD18113_jakarta layers - this will open up the properties table
-Make sure you are on the style tab
-Select Categorised
-Select attribute from the Column
-Click on Classify (circle 1)
-Click on ‘0’  (circle 2)
-Click Delete (circle 3)
-Click on  ‘_’ (circle 4)
-Click Delete  (circle 3)
-Confirm that you only have 1 left
-Click OK (circle 6)
+
+18. Double click on *flood_osm_BPBD18113_jakarta* layers - this will open up the properties table
+
+19. Make sure you are on the style tab
+
+20. Select Categorised
+
+21. Select attribute from the Column
+
+22. Click on Classify (circle 1)
+
+23. Click on ‘0’  (circle 2)
+
+24. Click Delete (circle 3)
+
+25. Click on  ‘_’ (circle 4)
+
+26. Click Delete  (circle 3)
+
+27. Confirm that you only have 1 left
+
+28. Click OK (circle 6)
+
 Below are the results
+
 You have now symbolised your first layer!  You can see only the subvillage areas that were flooded on the 18th of January! Now, can we use this hazard layer in InaSAFE?
 Adding Keywords
 Read through the error message (that occurs when you highlight flood_osm_BPBD18113_jakarta layer).  InaSAFE has identified that the layer does not have a keyword file.  As explained on page 10.
