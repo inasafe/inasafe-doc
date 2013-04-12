@@ -35,24 +35,26 @@ Select Feature and Save
 
 2. As you can see there are many Volcanoes in Indonesia, lets :guilabel:`zoom` into one volcano to analysis. :guilabel:`Right click` on the Volcanoes layer and :guilabel:`select` “Open Attribute Table”
 3. :guilabel:`Type` “Merapi” in “Look for” section |circle 1|,
-4. :guilabel:`select` NAME from dropdown menu- circle 2 
-5. :guilabel:`Click search` - circle 3 -This will select only the Volcano that have Merapi in the name column
-6. :guilabel:`Check` “Show selected only" - circle 4 -This will identify only the selected layers
-7. :guilabel:`Click` on “Pan map to the selected row” - circle 5 -Selected layer is centre  on the map canvas
+4. :guilabel:`select` NAME from dropdown menu |circle 2| 
+5. :guilabel:`Click search` |circle 3| This will select only the Volcano that have Merapi in the name column
+6. :guilabel:`Check` “Show selected only" |circle 4| This will identify only the selected layers
+7. :guilabel:`Click` on “Pan map to the selected row” |circle 5| Selected layer is centre  on the map canvas
 8. Close Attribute Table - circle 6
 
 .. image:: /static/socialisation/merapi_attribute2.png
+   :align: center
 
-9. Click on the zoom to selected tool to zoom in further. Keep clicking the tool until you get to an extent similar to the one below. (The yellow triangle is Merapi)
+9. :guilabel:`Click` on the zoom to selected tool to zoom in further. :guilabel:`Keep clicking` the tool until you get to an extent similar to the one below. |The yellow triangle is Merapi|
 
-**image**
+.. image:: /static/socialisation/merapi2.png
+   :align: center
 
 Now that we know where Merapi is, and have check that it is in fact in the right location, we are going to make a hazard layer with just this point.
 
-10. Right click on Volcano and ‘Save selection as’
-11. Click Browse and navigate to your data area, save as “Merapi” (circle 1)
-12. Check “Add saved file to map” (circle 2)
-13. Click OK (circle 3)
+10. :guilabel:`Right click` on Volcano and :guilabel:`Save selection as`
+11. :guilabel:`Click Browse` and :guilabel:`navigate` to your data area, :guilabel:`save as` “Merapi” |circle 1|
+12. Check “Add saved file to map” |circle 2|
+13. Click OK |circle 3|
 
 
 **image**
