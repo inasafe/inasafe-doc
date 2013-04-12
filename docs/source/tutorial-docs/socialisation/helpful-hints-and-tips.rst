@@ -46,6 +46,7 @@ The following options are available on the :guilabel:`Options Dialog`.
 .. note:: Pressing Cancel at any time will close the options dialog and any changes made will not be applied.  Pressing Ok at any time will close the options dialog and any changes made will be applied immediately.
  
 We encourage you to check (in addioion to the default ones):
+
 * When clipping, also clip features (e.g. will clip polygon smaller)
 * Help to improve InaSAFE by submitting errors to a remote server
  
