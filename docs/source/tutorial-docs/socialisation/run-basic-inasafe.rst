@@ -198,11 +198,20 @@ Basic Aggregation - Optional
 
 24. Navigate to the data folder and select InaSAFE projects/data/district_osm_jakarta.shp
 
+.. image:: /static/socialisation/page_33.jpg
+   :align: center 
+
 25. Click Open
  
 26. Click once on the district of Jakarta Layer
 
+.. image:: /static/socialisation/page_33_2.jpg
+   :align: center 
+
 27. Click on the drop down menu for “Aggregation results by” and select Subdistrict of Jakarta
+
+.. image:: /static/socialisation/page_33_3.jpg
+   :align: center 
 
 28. Change the threshold back to 1.0 (refer point 7)
 
