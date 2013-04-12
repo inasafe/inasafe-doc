@@ -8,9 +8,11 @@ you can go for help.
 InaSAFE option menu
 -------------------
 
-The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar’s options icon.
+The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar’s :guilabel:`options icon`.
 
 .. image:: /static/socialisation/insafe_options_tools.jpg
+
+The following dialog will appear:
 
 .. image:: /static/socialisation/Inasafe_Options.jpg
 
@@ -18,7 +20,7 @@ The following options are available on the Options Dialog:
 
 **Only show visible layers in the InaSAFE dock:** This option will determine whether all (when unchecked) hazard and impact layers should be listed in the InaSAFE dock’s drop down menu. or (when checked) only visible layers.
 
-**Set QGIS layer name from ‘title’ in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree using the title keyword in the layer’s keywords file. If the layer has no ‘title’ in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply.
+**Set QGIS layer name from :guilabel:`title` in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree using the title keyword in the layer’s keywords file. If the layer has no ‘title’ in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply.
 
 **Zoom to impact layer on scenario estimate completion:** This option will cause the map view to zoom in/out in order to completely contain the InaSAFE impact scenario map output when an analysis completes.
 
