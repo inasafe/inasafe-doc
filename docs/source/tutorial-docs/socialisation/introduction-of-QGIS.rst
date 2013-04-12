@@ -59,11 +59,11 @@ Setup QGIS
 
 1. Open Quantum GIS Desktop (1.8.0) - This should be located on your desktop, or you can find it in your start menu
 
-.. image:: ../_static/Socialisation/qgis.png
+.. image:: /static/Socialisation/qgis.png
 
 2. A hint window will come up, click okay
 
-.. image:: ../_static/Socialisation/Screen Shot 2013-03-03 at 12.15.21 PM.png
+.. image:: /static/Socialisation/Screen Shot 2013-03-03 at 12.15.21 PM.png
 
 Clean up tool bar
 .................
@@ -80,7 +80,7 @@ Option Window
 
 Changing projection settings and understanding that QGIS is multilingual
 
-1. Go to Options window: `<Settings/options>`_
+1. Go to Options window: :guilabel: `Settings/options`
 2. Click on the CRS tab
 3. Check Enable ‘on the fly’ reprojection by default - This will enable that all spatial layers irrespective of their projection will follow the CRS allocated above
 
@@ -153,6 +153,9 @@ Installing OpenLayer through the QGIS plugin repository
 5. Click on Plugins, and hover your mouse over OpenLayers plugin
 6. Select ‘Add Bing Aerial layer’
 
+.. image:: ../_static/Socialisation/aerial_bing.png
+	:align: center
+	
 .. Note:: If you are familiar with Goggle Earth, navigating this imagery should be very similar
 
 7. Click on the zoom in tool, then draw a box (click and drag) over your country.
