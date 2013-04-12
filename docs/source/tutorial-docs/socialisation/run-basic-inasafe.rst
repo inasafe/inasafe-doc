@@ -6,9 +6,9 @@ Introduction
 
 In this chapter you will run InaSAFE in Jakarta to determine the impact of a flood model on Jakarta’s population and buildings. 
 
-1. Open Jakarta_floods.qgs - File/Open Project... ,
+1. :guilabel: `Open` Jakarta_floods.qgs - File/Open Project... ,
 
-2. Click on “browse” navigate to *InaSAFE projects* and select *Jakarta_floods*, click open and then open again
+2. :guilabel:`Click` on :guilabel: `browse` navigate to *InaSAFE projects* and :guilabel:`Select` *Jakarta_floods*, :guilabel:`Click` open and then open again
  
 .. image:: /static/socialisation/page_28.jpg
    :align: center
@@ -25,7 +25,7 @@ People need evacuating
 
 * Be Flooded
 
-4. Click the arrow next to buildings, select people, it now should have:
+4. :guilabel:`Click` the arrow next to buildings, :guilabel:`Select` people, it now should have:
 
 * a flood similar to the 2007 Jakarta event
 
@@ -38,7 +38,7 @@ People need evacuating
 
 .. note:: You can see that the Impact function below “Might” automatically changes depending on the layers added
 
-5. Lets run this scenario first - Click Run at the bottom right hand corner of the InaSAFE panel
+5. Lets run this scenario first - :guilabel:`Click` Run at the bottom right hand corner of the InaSAFE panel
 
 .. image:: /static/socialisation/page_28_2.jpg
    :align: center
@@ -65,12 +65,12 @@ Statistical breakdown of Youth, Adults and Elderly.
 Print Results
 .............
 
-6. Click the print button at the bottom the inasafe panel
+6. :guilabel:`Click` the print button at the bottom the inasafe panel
 
 .. image:: /static/socialisation/inasafe_print3.jpg
    :align: center
  
-7. Navigate to where you would like to save the pdf, click save
+7. Navigate to where you would like to save the pdf, :guilabel:`Click` save
 
 .. image:: /static/socialisation/inasafe_result.jpg
    :align: center
@@ -94,7 +94,7 @@ Changing threshold
 
 What if the disaster manager has decided that actually anyone in more than 80cm of water should be evacuated?
 
-8. Click the impact function editor button (the pencil icon next to “Need Evacuation”)
+8. :guilabel:`Click` the impact function editor button (the pencil icon next to “Need Evacuation”)
 
 .. image:: /static/socialisation/page_31.jpg
    :align: center
@@ -104,16 +104,16 @@ What if the disaster manager has decided that actually anyone in more than 80cm 
 .. image:: /static/socialisation/page_31_2.jpg
    :align: center
 
-10. Click OK
+10. :guilabel:`Click` OK
 
-11. Click the Run button
+11. :guilabel:`Click` the Run button
  
 12. How many people need to be evacuated
 
 Answer
 ......
 
-13. Click InaSAFE Print, save as “ people in need of evacuation above 80cm”
+13. :guilabel:`Click` InaSAFE Print, save as “ people in need of evacuation above 80cm”
 
 14. Before moving onto buildings, lets turn some layers off. In your Layer panel you will now have 5 layers, we are going to uncheck everything but:
 
@@ -130,14 +130,14 @@ Buildings Affected
 
 15. Check that buildings is in the drop down menu under “How Many”
 
-16. Click on the arrow, as you can see you can not select people, as we have uncheck it in the layer panel
+16. :guilabel:`Click` on the arrow, as you can see you can not :guilabel:`Select` people, as we have uncheck it in the layer panel
 
 .. image:: /static/socialisation/page_31_4.jpg
    :align: center
 
-.. note:: If you want to be able to select layer that are not checked, there is an option in the InaSAFE options window that can be turned off - We will go through the option menu later in the training.
+.. note:: If you want to be able to :guilabel:`Select` layer that are not checked, there is an option in the InaSAFE options window that can be turned off - We will go through the option menu later in the training.
 
-17. Click Run
+17. :guilabel:`Click` Run
 
 .. image:: /static/socialisation/inasafe_print.jpg
    :align: center
@@ -172,7 +172,7 @@ Assume affected in above 1 meter of water
 Source of the Hazard and Population Datasets
  
  
-18. Click InaSAFE Print, save accordingly
+18. :guilabel:`Click` InaSAFE Print, save accordingly
 
 Optional - Change the threshold to 0.8
 ......................................
@@ -185,7 +185,7 @@ Optional - Change the threshold to 0.8
 
 * Be Flooded
 
-20. Click on the impact function tool (pencil) and change 1.0 to 0.8)
+20. :guilabel:`Click` on the impact function tool (pencil) and change 1.0 to 0.8)
 
 21. Run InaSAFE
 
@@ -194,21 +194,21 @@ Optional - Change the threshold to 0.8
 Basic Aggregation - Optional
 ----------------------------
 
-23. Click Add vector button .. image:: /static/socialisation/
+23. :guilabel:`Click` Add vector button .. image:: /static/socialisation/
 
-24. Navigate to the data folder and select InaSAFE projects/data/district_osm_jakarta.shp
+24. Navigate to the data folder and :guilabel:`Select` InaSAFE projects/data/district_osm_jakarta.shp
 
 .. image:: /static/socialisation/page_33.jpg
    :align: center 
 
-25. Click Open
+25. :guilabel:`Click` Open
  
-26. Click once on the district of Jakarta Layer
+26. :guilabel:`Click` once on the district of Jakarta Layer
 
 .. image:: /static/socialisation/page_33_2.jpg
    :align: center 
 
-27. Click on the drop down menu for “Aggregation results by” and select Subdistrict of Jakarta
+27. :guilabel:`Click` on the drop down menu for “Aggregation results by” and :guilabel:`Select` Subdistrict of Jakarta
 
 .. image:: /static/socialisation/page_33_3.jpg
    :align: center 
@@ -217,14 +217,14 @@ Basic Aggregation - Optional
 
 29. Run InaSAFE again
 
-30. Click InaSAFE Print, save accordingly
+30. :guilabel:`Click` InaSAFE Print, save accordingly
 
 Keywords Editor
 ---------------
 
 In the next chapter we will explore the keyword editor for the hazard and exposure layers.
 
-However the Keyword editor for postprocessing is slightly different. You are able to select an attribute to provide the percentage of females per aggregation area. If there is no such layer InaSAFE defaults at 50% or 0.5.
+However the Keyword editor for postprocessing is slightly different. You are able to :guilabel:`Select` an attribute to provide the percentage of females per aggregation area. If there is no such layer InaSAFE defaults at 50% or 0.5.
 
 If you would like more detail please ask at the end of the session
 
@@ -235,7 +235,7 @@ If you would like more detail please ask at the end of the session
 
 32. Scroll down the bottom of the results, you will see disaggregation of the population data and demographics by district.
 
-33. Click InaSAFE Print, save accordingly
+33. :guilabel:`Click` InaSAFE Print, save accordingly
 
 .. image:: /static/socialisation/page_34.jpg
    :align: center
