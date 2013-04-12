@@ -1,6 +1,7 @@
 InaSAFE in more detail
 ======================
 
+
 Interrogating the output data
 -----------------------------
 
@@ -173,7 +174,6 @@ Buildings within affected subvillages
 37. How many estimated buildings were flooded?
 
 Answer  __________
-......
 
 38. Take some time to examine the results, read through the InaSAFE window
 
@@ -209,12 +209,10 @@ Instead of determining how many people will be evacuated by  a spatial area, thi
 45. How many people were evacuated?
 
 AnsweR  ___________
-......
 
 46. How many people were affected?
 
 AnsweR  ___________
-......
 
 47. Take some time to examine the results, read through the InaSAFE window
 
@@ -241,7 +239,5 @@ flood 180113   1%	          Vector	     People	       Raster	      Need Evacuati
 50. Compare between results, 1. How different are the results, 2 Why are they different?
 
 1. AnsweR  ______________
-.........
 
 2. AnsweR  ______________
-.........
