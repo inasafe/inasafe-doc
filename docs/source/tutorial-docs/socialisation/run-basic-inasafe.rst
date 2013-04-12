@@ -70,6 +70,8 @@ Print Results
 .. image:: /static/socialisation/inasafe_print3.jpg
    :align: center
  
+.. _navigate-to-where-you-would-like-to-save-the-pdf,-click-save
+ 
 7. Navigate to where you would like to save the pdf, click save
 
 .. image:: /static/socialisation/inasafe_result.jpg
@@ -213,7 +215,7 @@ Basic Aggregation - Optional
 .. image:: /static/socialisation/page_33_3.jpg
    :align: center 
 
-28. Change the threshold back to 1.0 (refer point 7)
+28. Change the threshold back to 1.0 ( :ref: `refer point 7 <navigate-to-where-you-would-like-to-save-the-pdf,-click-save>`)
 
 29. Run InaSAFE again
 
