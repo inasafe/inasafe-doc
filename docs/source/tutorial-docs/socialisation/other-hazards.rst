@@ -34,17 +34,17 @@ Select Feature and Save
 -----------------------
 
 2. As you can see there are many Volcanoes in Indonesia, lets :guilabel:`zoom` into one volcano to analysis. :guilabel:`Right click` on the Volcanoes layer and :guilabel:`select` “Open Attribute Table”
-3. :guilabel:`Type` “Merapi” in “Look for” section |circle 1|,
-4. :guilabel:`select` NAME from dropdown menu |circle 2| 
-5. :guilabel:`Click search` |circle 3| This will select only the Volcano that have Merapi in the name column
-6. :guilabel:`Check` “Show selected only" |circle 4| This will identify only the selected layers
-7. :guilabel:`Click` on “Pan map to the selected row” |circle 5| Selected layer is centre  on the map canvas
-8. Close Attribute Table - circle 6
+3. :guilabel:`Type` “Merapi” in “Look for” section (circle 1),
+4. :guilabel:`select` NAME from dropdown menu (circle 2)
+5. :guilabel:`Click search` (circle 3) This will select only the Volcano that have Merapi in the name column
+6. :guilabel:`Check` “Show selected only" (circle 4) This will identify only the selected layers
+7. :guilabel:`Click` on “Pan map to the selected row” (circle 5) Selected layer is centre  on the map canvas
+8. Close Attribute Table (circle 6)
 
 .. image:: /static/socialisation/merapi_attribute2.png
    :align: center
 
-9. :guilabel:`Click` on the zoom to selected tool to zoom in further. :guilabel:`Keep clicking` the tool until you get to an extent similar to the one below. |The yellow triangle is Merapi|
+9. :guilabel:`Click` on the zoom to selected tool to zoom in further. :guilabel:`Keep clicking` the tool until you get to an extent similar to the one below. (The yellow triangle is Merapi)
 
 .. image:: /static/socialisation/merapi2.png
    :align: center
@@ -52,50 +52,56 @@ Select Feature and Save
 Now that we know where Merapi is, and have check that it is in fact in the right location, we are going to make a hazard layer with just this point.
 
 10. :guilabel:`Right click` on Volcano and :guilabel:`Save selection as`
-11. :guilabel:`Click Browse` and :guilabel:`navigate` to your data area, :guilabel:`save as` “Merapi” |circle 1|
-12. Check “Add saved file to map” |circle 2|
-13. Click OK |circle 3|
+11. :guilabel:`Click Browse` and :guilabel:`navigate` to your data area, :guilabel:`save as` “Merapi” (circle 1)
+12. Check “Add saved file to map” (circle 2)
+13. Click OK (circle 3)
 
+.. image:: /static/socialisation/save_selection.png
+   :align: center
 
-**image**
+14. :guilabel:`Uncheck` Volcanoes in the layer window. 
 
-
-14. Uncheck Volcanoes in the layer window. 
 You should now have a point that shows the location of Merapi. Lets take some time to examine the ‘dot’
+
 15. Use the Information tool to find more out about the Volcano
 16. Use the measurement tool to find out how far away is the closest population hub (brown areas on the map)
 
-*Note: For the Information and Measurement tool to work you need to have the Merapi layer highlighted in the layer window.*
+.. Note:: For the Information and Measurement tool to work you need to have the Merapi layer highlighted in the layer window.*
+
+.. image:: /static/socialisation/save_selection.png
+   :align: center
 
 Keywords
 --------
 
 We are reminded by InaSAFE that we do not have a keyword for this new layer, so lets make one!
 
-17. Click on the keyword editor
-18. Fill out the title as **“Merapi erupting”**
-19. For the Category check Hazard
-20. For Subcategory select volcano
-21. Click OK
+17. :guilabel:`Click` on the keyword editor
+18. :guilabel:`Fill` out the title as **“Merapi erupting”**
+19. For the Category check **Hazard**
+20. For Subcategory select **volcano**
+21. :guilabel:`Click OK`
 
-
+.. image:: /static/socialisation/merapi_keyword.png
+   :align: center
 
 Configure and Run InaSAFE
 -------------------------
 
-22. Check that InaSAFE has the following in the drop-down boxes
+22. :guilabel:`Check` that InaSAFE has the following in the drop-down boxes
 
  #. Merapi erupting
  #. people
  #. Need evacuation
 
 23. Before we run InaSAFE again, we have to tell InaSAFE what the hazard zone is!
-Click on the impact function editor
+:guilabel:`Click` on the impact function editor
 As a default InaSAFE has made 3 hazard areas:
 
 #. Vent -3 km
 #. 3-5 km
 #. 5-10 km
+
 
 *Note: that its written 3,5,10 so if you wanted Vent-2, 2-6 and then 6-10 it would be 2,6,10*
 
