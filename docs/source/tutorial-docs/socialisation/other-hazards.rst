@@ -102,7 +102,7 @@ As a default InaSAFE has made 3 hazard areas:
 * 3-5 km
 * 5-10 km
 
-**IMAGE**
+*IMAGE*
 
 .. Note:: that its written 3,5,10 so if you wanted Vent-2, 2-6 and then 6-10 it would be 2,6,10*
 
