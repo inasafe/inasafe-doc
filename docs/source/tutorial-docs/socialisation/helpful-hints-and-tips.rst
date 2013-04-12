@@ -15,7 +15,7 @@ The InaSAFE plugin provides an options dialog which allows you to define various
 
 The following dialog will appear:
 
-.. image:: /static/socialisation/inasafe_options.jpg
+.. image:: /static/socialisation/Options_window.png
 
 
 
