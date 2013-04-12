@@ -6,6 +6,7 @@ InaSAFE Socialisation
 
    introduction-and-overview
    inasafe-functionality
+   introduction-to-qgis
    other-hazards
    helpful-hints-and-tips
 
