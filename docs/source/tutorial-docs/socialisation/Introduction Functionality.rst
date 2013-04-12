@@ -9,28 +9,28 @@ As explained in the previous section, InaSAFE needs to have a hazard layer and a
 Hazard
 ......
 
-=========  ============  ===========  ==============  ==================  =============  
-Hazard     Spatial Type  Hazard Type  Attribute Name  Hazard Units/field  Parameters
----------  ------------  -----------  --------------  ------------------  -------------
-Flood      Raster        Depth        N/A             m                   Threshold(m)
-Flood      Polygon       Wet/Dry      affected        1/0                 Threshold(%) 
-Volcano    Raster        Ash Load     N/A             kg/m2               none
-Volcano    Polygon       Category     KRB             text                none 
-Volcano    Point         Distance     Name            text                Radius(km) 
-Earthquake Raster        Shakemap     N/A             MMI                 H/M/L value
-Tsunami    Raster        Depth        N/A             m                   Threshold(m)
-=========  ============  ===========  ==============  ==================  =============
+==========  ================  ===============  ==================  ======================  =============== 
+**Hazard**  **Spatial Type**  **Hazard Type**  **Attribute Name**  **Hazard Units/field**  **Parameters**
+----------  ----------------  ---------------  ------------------  ----------------------  ---------------
+Flood       Raster            Depth            N/A                  m                      Threshold in m
+Flood       Polygon           Wet/Dry          affected             1/0                    Threshold in % 
+Volcano     Raster            Ash Load         N/A                  kg/m2                  none
+Volcano     Polygon           Category         KRB                  text                   none 
+Volcano     Point             Distance         Name                 text                   Radius in km 
+Earthquake  Raster            Shakemap         N/A                  MMI                    H/M/L value
+Tsunami     Raster            Depth            N/A                  m                      Threshold in m
+==========  ================  ===============  ==================  ======================  ===============
 
 Exposure
 ........
 
-===========  ============  ==============  ==============  ===================   
-Exposure     Spatial Type  Exposure Type   Attribute Name  Hazard Units/Fields
------------  ------------  --------------  --------------  -------------------
-Population   Raster        Density         N/A             People per pixel 
-Structures   Polygon       Structure type  type            text
-Structures   Point         Structure type  type            text
-===========  ============  ==============  ==============  ===================
+=============  ================  =================  ==================  =======================   
+**Exposure**   **Spatial Type**  **Exposure Type**  **Attribute Name**  **Hazard Units/Fields**
+-------------  ----------------  -----------------  ------------------  -----------------------
+Population     Raster            Density            N/A                 People per pixel 
+Structures     Polygon           Structure type     type                text
+Structures     Point             Structure type     type                text
+=============  ================  =================  ==================  =======================
 
 InaSAFE is a dynamic tool that can easily be adapted to other types of hazard and exposure layers.  The beauty of InaSAFE being open source, is that anyone that has a background in programming would be able to make their own Impact function.
 If you dont, see page 55 for more details.
@@ -39,12 +39,12 @@ Please see the InaSAFE website for more information. http://inasafe.org
 Exposure Layers Used in Practical
 ---------------------------------
 
-==========  ============  ==============  ==============  ===================
-Exposure    Spatial Type  Exposure Type   Attribute Name  Hazard Units/Fields
-----------  ------------  --------------  --------------  -------------------
-Population  Raster        Density         N/A             People per Pixel 
-Structures  Polygon       Structure type  type            text
-==========  ============  ==============  ==============  ===================
+============  ================  =================  ==================  =======================
+**Exposure**  **Spatial Type**  **Exposure Type**  **Attribute Name**  **Hazard Units/Fields**
+------------  ----------------  -----------------  ------------------  -----------------------
+Population    Raster            Density            N/A                 People per Pixel 
+Structures    Polygon           Structure type     type                text
+============  ================  =================  ==================  =======================
 
 Population
 ..........
@@ -57,7 +57,7 @@ Population
 :About: High resolution, contemporary data on human population distributions are a prerequisite for the accurate measurement of the impacts of population growth, for monitoring changes and for planning interventions. The AsiaPop project was initiated in July 2011 with an aim of producing detailed and freely-available population distribution maps for the whole of Asia.
 The raster pixel size is 100m by 100m.
 
-.. image:: /Socialisation/asiapop.jpg
+.. image:: ../_static/Socialisation/asiapop.jpg
    :align: center
 
 Structures
@@ -70,7 +70,7 @@ Structures
 :Coverage: World - incomplete
 :About:  OpenStreetMap is a collaborative project to create a free editable map of the world. Two major driving forces behind the establishment and growth of OSM have been restrictions on use or availability of map information across much of the world and the advent of inexpensive portable satellite navigation devices.
 
-.. image:: /Socialisation/openstreetmap.png
+.. image:: ../_static/Socialisation/openstreetmap.png
    :align: center
    
 AusAID has been working with the Humanitarian OpenStreetMap Team over the last 2 years in piloting and training OpenStreetMap in Indonesia.  The result so far is over 800,000 buildings have been mapped.  
@@ -82,15 +82,15 @@ The scenarios we will look at within this workshop are situated in Jakarta, Mera
 Hazard Layers used in Practical
 -------------------------------
 
-=========  ============  ===========  ==============  ==================  =============  
-Hazard     Spatial Type  Hazard Type  Attribute Name  Hazard Units/field  Parameters
----------  ------------  -----------  --------------  ------------------  -------------
-Flood      Raster        Depth        N/A             m                   Threshold(m)
-Flood      Polygon       Wet/Dry      affected        1/0                 Threshold(%) 
-Volcano    Point         Distance     Name            text                Radius(km)
-Earthquake Raster        Shakemap     N/A             MMI                 H/M/L value
-Tsunami    Raster        Depth        N/A             m                   Threshold(m)
-=========  ============  ===========  ==============  ==================  =============
+===========  ================  ===============  ==================  ======================  =============== 
+**Hazard**   **Spatial Type**  **Hazard Type**  **Attribute Name**  **Hazard Units/field**  **Parameters**
+-----------  ----------------  ---------------  ------------------  ----------------------  ---------------
+Flood        Raster            Depth            N/A                 m                       Threshold in m
+Flood        Polygon           Wet/Dry          affected            1/0                     Threshold in % 
+Volcano      Point             Distance         Name                text                    Radius in km
+Earthquake   Raster            Shakemap         N/A                 MMI                     H/M/L value
+Tsunami      Raster            Depth            N/A                 m                       Threshold in m
+===========  ================  ===============  ==================  ======================  ===============
 
 Flood Model
 ...........
@@ -112,10 +112,10 @@ Flood Footprint
 :Coverage: Jakarta
 :About: Based on the subvillage boundaries that were map during the DKI mapping project, we were able to use this dataset during the recent floods to identify the areas that had been flooded based on information provided by the villages.
 
-.. image:: /Socialisation/floodmodel.png
+.. image:: ../_static/Socialisation/floodmodel.png
    :align: left
 
-.. image:: /Socialisation/floodfootprint.png
+.. image:: ../_static/Socialisation/floodfootprint.png
    :align: right
    
 Volcano
@@ -144,7 +144,7 @@ ShakeMaps are generated automatically following moderate and large earthquakes b
 http://earthquake.usgs.gov/earthquakes/map/
 Pre-event / scenario based shakemaps need to be modelled by earthquake specialist.
 
-.. image:: /Socialisation/padang_earthquake.png
+.. image:: ../_static/Socialisation/padang_earthquake.png
    :align: center
 
 Tsunami
@@ -157,7 +157,7 @@ Tsunami
 :Coverage: Maumere, Flores
 :About: In September 2011 the Indonesian government held a national exercise in Maumere, Flores. AIFDR assisted Badan Geologi in developing a tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was modelled using the an open source software called ANUGA and elevation from NEXTMap. The water depth is the maximum depth occurring across the entire tsunami event. http://anuga.anu.edu.au/ and http://intermap.com/
 
-.. image:: /Socialisation/tsunami.png
+.. image:: ../_static/Socialisation/tsunami.png
    :align: center
    
 
