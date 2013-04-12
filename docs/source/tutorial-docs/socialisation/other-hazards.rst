@@ -41,7 +41,7 @@ Select Feature and Save
 7. :guilabel:`Click` on “Pan map to the selected row” - circle 5 -Selected layer is centre  on the map canvas
 8. Close Attribute Table - circle 6
 
-.. image:: /static/socialisation/merapi_attribute.png
+.. image:: /static/socialisation/merapi_attribute2.png
 
 9. Click on the zoom to selected tool to zoom in further. Keep clicking the tool until you get to an extent similar to the one below. (The yellow triangle is Merapi)
 
