@@ -7,9 +7,9 @@ Interrogating the Output Data
 
 You will now have 3 layer that have been generated through InaSAFE
 
-* 2 - :guilabel: `*Population which need evacuating*` - Raster Data
+* 2 - :guilabel:`*Population which need evacuating*` - Raster Data
 
-* 1 - :guilabel: `*Estimated building affected*` - Vector Data
+* 1 - :guilabel:`*Estimated building affected*` - Vector Data
 
 We are now going to use the basic QGIS tools to examine the datasets. 
 
@@ -17,7 +17,7 @@ We are now going to use the basic QGIS tools to examine the datasets.
 **About Estimate Building Affected**
 ....................................
 
-1. :guilabel: `Zoom into` a section of buildings using the zoom in tool  
+1. :guilabel:`Zoom into` a section of buildings using the zoom in tool  
 
 .. image:: /static/socialisation/zoomin2.png
 
@@ -27,13 +27,13 @@ Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
 .. note:: *that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
 
-2. :guilabel: `Click once` on :guilabel: `*Estimate buildings affected*`  to make sure layer is highlighted in blue
+2. :guilabel:`Click once` on :guilabel:`*Estimate buildings affected*`  to make sure layer is highlighted in blue
 
-3. :guilabel: `Click` on the information tool 
+3. :guilabel:`Click` on the information tool 
 
 .. image:: /static/socialisation/information_tool.png
 
-4. :guilabel: `Click` on an affected building (red)
+4. :guilabel:`Click` on an affected building (red)
 
 Here I clicked on the building circled in the above picture to result is below.  This buildings has a lot of information recorded about it.
 
@@ -41,34 +41,34 @@ Here I clicked on the building circled in the above picture to result is below. 
 
 .. note:: *As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
 
-5. :guilabel: `Zoom back to full extent` using the Zoom Full tool
+5. :guilabel:`Zoom back to full extent` using the Zoom Full tool
 
 .. image:: /static/socialisation/zoom_extent.png 
 
 **About Population which Needs evacuation**
 ...........................................
 
-6. :guilabel: `Uncheck` the *Estimated buildings affected* and :guilabel: `recheck` one of  *Population which Need evacuation*
+6. :guilabel:`Uncheck` the *Estimated buildings affected* and :guilabel:`recheck` one of  *Population which Need evacuation*
 
-7. Again :guilabel: `zoom` into an area of your choice 
+7. Again :guilabel:`zoom` into an area of your choice 
 
 .. image:: /static/socialisation/zoomin2.png 
 
-8. :guilabel: `Click` once on *Population which Need evacuation* and use the selection tool to select a pixel (square) 
+8. :guilabel:`Click` once on *Population which Need evacuation* and use the selection tool to select a pixel (square) 
 
 .. image:: /static/socialisation/information_tool.png
 
-Here I clicked on the :guilabel: `light green area` , to find that there is a value of 80.6411, which means there are approximately 80 people in one pixel (square). 
+Here I clicked on the :guilabel:`light green area` , to find that there is a value of 80.6411, which means there are approximately 80 people in one pixel (square). 
 
 .. image:: /static/socialisation/raster_examine_2.png
 
 In this dataset a pixel is 100m by 100m
 
-:guilabel: `Click` on other pixels to find out their value.
+:guilabel:`Click` on other pixels to find out their value.
 
-9. :guilabel: `Click` Close
+9. :guilabel:`Click` Close
 
-10. Is each pixel really 100m by 100m, lets check. Use the :guilabel: `measure line tool` 
+10. Is each pixel really 100m by 100m, lets check. Use the :guilabel:`measure line tool` 
 
 .. image:: /static/socialisation/measure.png
 
@@ -80,11 +80,11 @@ As you can see I got 102 meters but this is only because its very hard to click 
 
 .. image:: /static/socialisation/measure_test.png
 
-11. :guilabel: `Click` Close
+11. :guilabel:`Click` Close
 
-12. :guilabel: `Zoom back` to full extent using the Zoom Full tool  .. image:: /static/socialisation/zoom_extent.png
+12. :guilabel:`Zoom back` to full extent using the Zoom Full tool  .. image:: /static/socialisation/zoom_extent.png
 
-13. :guilabel: `Uncheck` all layers except
+13. :guilabel:`Uncheck` all layers except
 
 * buildings
 
@@ -97,19 +97,19 @@ Flood Footprint in InaSAFE
 Adding a Vector Layer  
 .....................
 
-14. :guilabel: `Click` on the Add vector tool  .. image:: /static/socialisation/add_vector.png
+14. :guilabel:`Click` on the Add vector tool  .. image:: /static/socialisation/add_vector.png
 
-15. :guilabel: `Click` on browse and navigate to InaSAFE projects/data/ and select *flood_osm_bpbd18113_jakarta.shp* - click Open, then click Open again.
+15. :guilabel:`Click` on browse and navigate to InaSAFE projects/data/ and select *flood_osm_bpbd18113_jakarta.shp* - click Open, then click Open again.
 
 .. image:: /static/socialisation/jakarta18113_added.png
 
 This dataset is the subvillage boundaries for Jakarta, during the floods in January this year the Provincial disaster mangers collected information about the flooding, one of which was the location of the flooded area by sub-village boundary.
 
-Lets examine this data by opening up its :guilabel: `attribute table`
+Lets examine this data by opening up its :guilabel:`attribute table`
 
 .. image:: /static/socialisation/openattributetable.png
 
-16. In the layer list :guilabel: `Right click` on the *flood_osm_BPBD18113_jakarta* layers  and select *Open Attribute Table*
+16. In the layer list :guilabel:`Right click` on the *flood_osm_BPBD18113_jakarta* layers  and select *Open Attribute Table*
 
 .. image:: /static/socialisation/attribute_table.png
 
@@ -127,42 +127,42 @@ affected:    	1= affected,
 
                 NULL = not affected
 
-17. :guilabel: `Close` the Attribute table
+17. :guilabel:`Close` the Attribute table
 
 Symbolising Vector
 ..................
 
 Now we are going to colour only the area that were affected
 
-18. :guilabel: `Double click` on *flood_osm_BPBD18113_jakarta* layers - this will open up the properties table
+18. :guilabel:`Double click` on *flood_osm_BPBD18113_jakarta* layers - this will open up the properties table
 
 19. Make sure you are on the style tab
 
-20. Select :guilabel: `Categorised`
+20. Select :guilabel:`Categorised`
 
 .. image:: /static/socialisation/select_category_2.png
 
-21. :guilabel: `Select` attribute from the Column
+21. :guilabel:`Select` attribute from the Column
 
 .. image:: /static/socialisation/select_attribute.png
 
-22. Click on :guilabel: `Classify` (circle 1)
+22. Click on :guilabel:`Classify` (circle 1)
 
 .. image:: /static/socialisation/classify_2.png
 
-23. :guilabel: `Click` on 0  (circle 2)
+23. :guilabel:`Click` on 0  (circle 2)
 
-24. :guilabel: `Click Delete` (circle 3)
+24. :guilabel:`Click Delete` (circle 3)
 
-25. :guilabel: `Click` on  _ (circle 4)
+25. :guilabel:`Click` on  _ (circle 4)
 
-26. :guilabel: `Click Delete`  (circle 3)
+26. :guilabel:`Click Delete`  (circle 3)
 
 27. Confirm that you only have 1 left
 
 .. image:: /static/socialisation/1_left.png
 
-28. :guilabel: `Click OK` (circle 6)
+28. :guilabel:`Click OK` (circle 6)
 
 Below are the results
 
@@ -173,23 +173,23 @@ You have now symbolised your first layer!  You can see only the subvillage areas
 Adding Keywords
 ...............
 
-29. :guilabel: `Read` through the error message (that occurs when you highlight *flood_osm_BPBD18113_jakarta* layer).  InaSAFE has identified that the layer does not have a keyword file.  As explained on page 10.
+29. :guilabel:`Read` through the error message (that occurs when you highlight *flood_osm_BPBD18113_jakarta* layer).  InaSAFE has identified that the layer does not have a keyword file.  As explained on page 10.
 
 .. image:: /static/en/error-display.png
 
-30. :guilabel: `Click` on the keyword editor
+30. :guilabel:`Click` on the keyword editor
 
 .. image:: /static/socialisation/pencil.png
 
-31. :guilabel: `Fill out` the title as **Jakarta flooding on the 18th January 2013**
+31. :guilabel:`Fill out` the title as **Jakarta flooding on the 18th January 2013**
 
 .. image:: /static/socialisation/keyword_editor.png
 
-32. For the Category :guilabel: `check` **Hazard**
+32. For the Category :guilabel:`check` **Hazard**
 
-33. For Subcategory :guilabel: `select` **flood[wet/dry]**
+33. For Subcategory :guilabel:`select` **flood[wet/dry]**
 
-34. :guilabel: `Click OK`
+34. :guilabel:`Click OK`
 
 Lets run InaSAFE again with this new flood hazard footprint
 
@@ -197,7 +197,7 @@ Lets run InaSAFE again with this new flood hazard footprint
 Buildings within affected subvillages
 .....................................
 
-35. :guilabel: `Check` that InaSAFE has the following in the drop-down boxes
+35. :guilabel:`Check` that InaSAFE has the following in the drop-down boxes
 
 .. image:: /static/socialisation/inasafe_floodpolygon.png
 
@@ -207,7 +207,7 @@ Buildings within affected subvillages
 
 * Be Flooded
 
-36. :guilabel: `Click Run`
+36. :guilabel:`Click Run`
 
 .. note:: *This may take about a minute to run*
 
@@ -215,9 +215,9 @@ Buildings within affected subvillages
 
 Answer  _______________________________________
 
-38. Take some time to :guilabel: `examine` the results, read through the InaSAFE window
+38. Take some time to :guilabel:`examine` the results, read through the InaSAFE window
 
-39. :guilabel: `Click InaSAFE Print`, save accordingly
+39. :guilabel:`Click InaSAFE Print`, save accordingly
 
 Now that you have run InaSAFE to find out “how many buildings might be affected”, lets find out how many people.
 
@@ -228,9 +228,9 @@ Evacuation as a percentage
 
 Instead of determining how many people will be evacuated by  a spatial area, this scenario used the affected population. InaSAFE asks the user to input a percentage of the affected population that could be evacuated.
 
-40. :guilabel: `Un-check` buildings in the layer panel and recheck people
+40. :guilabel:`Un-check` buildings in the layer panel and recheck people
 
-41. :guilabel: `Check` that InaSAFE has the following in the drop-down boxes
+41. :guilabel:`Check` that InaSAFE has the following in the drop-down boxes
 
 * Jakarta flooding on the 18th January 2013
 
@@ -238,15 +238,15 @@ Instead of determining how many people will be evacuated by  a spatial area, thi
 
 * Need Evacuation
 
-42. :guilabel: `Click` on the impact function editor (pencil)
+42. :guilabel:`Click` on the impact function editor (pencil)
 
 .. image:: /static/socialisation/inasafe_pop.png
 
-43. As you can see the default is 1, :guilabel: `Click OK`
+43. As you can see the default is 1, :guilabel:`Click OK`
 
 .. image:: /static/socialisation/evacuation_per.png
 
-44. :guilabel: `Run` InaSAFE
+44. :guilabel:`Run` InaSAFE
 
 .. note:: *This may take about a minute to run*
 
@@ -260,7 +260,7 @@ Answer  _______________________________________
 
 47. Take some time to examine the results, read through the InaSAFE window
 
-48. :guilabel: `Click` InaSAFE Print, save accordingly
+48. :guilabel:`Click` InaSAFE Print, save accordingly
 
 Comparing Results - Optional
 ----------------------------
@@ -278,9 +278,9 @@ flood 180113   1%             Vector         People        Raster         Need E
 =============  =============  =============  ============  =============  ===================  =============
 
 	
-49. Please :guilabel: `complete` the Data Type for each impact layer you have created through InaSAFE
+49. Please :guilabel:`complete` the Data Type for each impact layer you have created through InaSAFE
 
-50. :guilabel: `Compare` between results, 1. How different are the results, 2 Why are they different?
+50. :guilabel:`Compare` between results, 1. How different are the results, 2 Why are they different?
 
 1. Answer  _______________________________________________________
 
