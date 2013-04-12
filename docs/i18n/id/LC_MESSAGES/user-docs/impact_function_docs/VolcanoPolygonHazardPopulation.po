@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-07 10:27\n"
+"POT-Creation-Date: 2013-04-12 17:10\n"
 "PO-Revision-Date: 2013-03-06 10:56+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/language/id/)\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
+"language/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 # fa1040e78562487c97da82a5f4b00873
@@ -32,27 +33,88 @@ msgstr ""
 msgid "**Unique Identifier**: Volcano Polygon Hazard Population"
 msgstr ""
 
+# 3b12cd4893cf410db775ee4f858eb23e
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:14
+msgid "**Author**: AIFDR"
+msgstr ""
+
 # 90f37eb643a2430795452bb58d043d0b
-#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:13
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:17
 msgid "**Rating**: 4"
 msgstr ""
 
 # f730df384c4546178e44444a9f4fe130
-#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:15
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:20
 msgid "**Title**: Need evacuation"
 msgstr ""
 
-# 3b12cd4893cf410db775ee4f858eb23e
-#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:17
-msgid "**Author**: AIFDR"
+# aa92d51a2d864e8cba994b122f7328cb
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:23
+msgid "**Synopsis**: To assess the impacts of volcano eruption on population."
+msgstr ""
+
+# 5af2e8b43c9b48be825b010245ace0dd
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:26
+msgid ""
+"**Actions**: Provide details about how many population would likely be "
+"affected by each hazard zones."
+msgstr ""
+
+# 3d7974c763af4c38a5cdcea8ee095f11
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:29
+msgid ""
+"**Hazard Input**: A hazard vector layer can be polygon or point. If polygon, "
+"it must have \"KRB\" attribute and the valuefor it are \"Kawasan Rawan "
+"Bencana I\", \"Kawasan Rawan Bencana II\", or \"Kawasan Rawan Bencana III."
+"\"If youwant to see the name of the volcano in the result, you need to add "
+"\"NAME\" attribute for point data or \"GUNUNG\" attribute for polygon data."
+msgstr ""
+
+# 4accc6a48498419bb1217f8bfe5ca0b7
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:32
+msgid ""
+"**Exposure Input**: An exposure raster layer where each cell represent "
+"population count."
+msgstr ""
+
+# bf90a68704c04217bbaf81dd5314be77
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:35
+msgid ""
+"**Output**: Vector layer contains population affected and the minimumneeds "
+"based on the population affected."
 msgstr ""
 
 # 3f702b529a4b44709af2adbe6b695e23
-#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:20
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:39
 msgid "Details"
 msgstr ""
 
 # ae8337f776f1476fb0b4eaef481b6e1e
-#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:22
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:41
 msgid "No documentation found"
+msgstr ""
+
+# 57ea547824c64759a0ec386bafbc5fc1
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:44
+msgid "Docstring"
+msgstr ""
+
+# 1d21794a1c5447ada60043ae79e003f6
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:46
+msgid "Impact function for volcano hazard zones impact on population"
+msgstr ""
+
+# 47964effff7a4e45a11e11a566e40b63
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:48
+msgid ""
+":author AIFDR :rating 4 :param requires category=='hazard' "
+"and                     subcategory in ['volcano'] and                     "
+"layertype=='vector'"
+msgstr ""
+
+# 79d77b4289324458be006162346cc54e
+#: ../../source/user-docs/impact_function_docs/VolcanoPolygonHazardPopulation.rst:52
+msgid ""
+":param requires category=='exposure' and                     "
+"subcategory=='population' and                     layertype=='raster'"
 msgstr ""

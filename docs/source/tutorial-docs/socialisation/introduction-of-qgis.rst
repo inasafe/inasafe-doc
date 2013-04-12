@@ -92,7 +92,7 @@ Option Window
 Changing projection settings and understanding that QGIS is multilingual
 
 1. Go to Options window: **Settings/options**
-2. :guilable:`Click` on the CRS tab
+2. :guilabel:`Click` on the CRS tab
 
 .. image:: /static/socialisation/crs.PNG
    :align: center
@@ -104,7 +104,7 @@ Changing projection settings and understanding that QGIS is multilingual
    
 .. Note:: This  will become default in the new version of QGIS (2.0),
 
-4. :guilabel: `Click` on the Locale tab
+4. :guilabel:`Click` on the Locale tab
 
 .. image:: /static/socialisation/locale.PNG
    :align: center
@@ -116,7 +116,7 @@ Changing projection settings and understanding that QGIS is multilingual
    
 .. Note:: InaSAFE is dependent on Locale, but it has only been translated into bahasa Indonesian so far. World Bank is currently funding for the translation of InaSAFE into French and Portugal
 
-6. :guilabel:`Click` “Okay” in the bottom right corner of the Options window
+6. :guilabel:`Click` "Okay" in the bottom right corner of the Options window
 
 
 Installing Plugins
@@ -146,12 +146,12 @@ InaSAFE also comes with a toolbar of its own
 
 6. To retrieve the InaSAFE toolbar, right click on the top tool bar and recheck "plugin"
 
-.. image:: /static/socialisation/tools_inasafe.PNG
+.. image:: /static/socialisation/tools_inasafe.png
    :align: center
 	
 7. Read to below to familiarise yourself with the InaSAFE tool set 
 
-.. image:: /static/socialisation/inasafe_toolbar2.JPG
+.. image:: /static/socialisation/inasafe_toolbar2.PNG
    :align: center
 
 .. Note:: Later we will explore and use these tools
@@ -163,7 +163,7 @@ Installing OpenLayer through the QGIS plugin repository
 
 1. Go to **Plugins/Fetch Python Plugins...** This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
 2. Type openlayers into the filter box
-3. :guilabel:`Select` “OpenLayer Plugin” and click Install plugin - this will take a couple of minutes for the plugin to download and install
+3. :guilabel:`Select` "OpenLayer Plugin" and click Install plugin - this will take a couple of minutes for the plugin to download and install
 4. A window should pop up saying: "Plugin installed successfully" - Click okay and then close the QGIS python plugin installer window
 5. :guilabel:`Click on Plugins`, and hover your mouse over OpenLayers plugin
 

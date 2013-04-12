@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2012, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-03-07 10:27\n"
+"POT-Creation-Date: 2013-04-12 17:10\n"
 "PO-Revision-Date: 2013-03-06 10:55+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/language/id/)\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
+"language/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 # c8098b17378d4b8e8fa63949357bc4ba
@@ -32,27 +33,92 @@ msgstr ""
 msgid "**Unique Identifier**: Flood Evacuation Function Vector Hazard"
 msgstr ""
 
+# 6cc1a9a60d404978ab2a5d74f08d5180
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:14
+msgid "**Author**: AIFDR"
+msgstr ""
+
 # cc474b2fbbbd42ad987be05e8ed3cccd
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:13
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:17
 msgid "**Rating**: 4"
 msgstr ""
 
 # 328e683396e9467087d569a5be07c514
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:15
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:20
 msgid "**Title**: Need evacuation"
 msgstr ""
 
-# 6cc1a9a60d404978ab2a5d74f08d5180
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:17
-msgid "**Author**: AIFDR"
+# 51aac57f63334e30b5413dad1b55d67b
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:23
+msgid ""
+"**Synopsis**: To assess the impacts of (flood or tsunami) inundation in "
+"vector format on population."
+msgstr ""
+
+# 4201602cb452494eb43229324f960be2
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:26
+msgid ""
+"**Actions**: Provide details about how many people would likely need to be "
+"evacuated, where they are located and what resources would be required to "
+"support them."
+msgstr ""
+
+# 17383a8c677d4856bc82d590652c4bbf
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:29
+msgid ""
+"**Hazard Input**: A hazard vector layer which has attribute affected the "
+"value is either 1 or 0"
+msgstr ""
+
+# 37563934173c4e6dba87952b52d801b2
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:32
+msgid ""
+"**Exposure Input**: An exposure raster layer where each cell represent "
+"population count."
+msgstr ""
+
+# 2ced2e10d0be4235afa07103fe16e091
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:35
+msgid ""
+"**Output**: Vector layer contains population affected and the minimumneeds "
+"based on evacuation percentage."
 msgstr ""
 
 # 9d17c3bafba54892803e6686326f21c6
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:20
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:39
 msgid "Details"
 msgstr ""
 
-# 5821274f592444f6b6d9b6e09d1a98c0
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:22
-msgid "No documentation found"
+# ee4e62ca327e482e857262b006c55661
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:41
+msgid ""
+"The population subject to inundation is determined whether inan area which "
+"affected or not. You can also set an evacuationpercentage to calculate how "
+"many percent of the total populationaffected to be evacuated. This number "
+"will be used to estimateneeds based on BNPB Perka 7/2008 minimum bantuan."
+msgstr ""
+
+# 0c436edb8f574e38b891cfd3265dd9d0
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:44
+msgid "Docstring"
+msgstr ""
+
+# d6256e7d2b794db3aa0799c363425de9
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:46
+msgid "Impact function for vector flood evacuation"
+msgstr ""
+
+# 9a4f28868c0b41299abd00f0b5371761
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:48
+msgid ""
+":author AIFDR :rating 4 :param requires category=='hazard' "
+"and                     subcategory in ['flood', 'tsunami'] "
+"and                     layertype=='vector'"
+msgstr ""
+
+# c8ce795795a24cedb648718ee2a4f085
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunctionVectorHazard.rst:52
+msgid ""
+":param requires category=='exposure' and                     "
+"subcategory=='population' and                     layertype=='raster'"
 msgstr ""

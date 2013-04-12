@@ -23,13 +23,13 @@ The following options are available on the :guilabel:`Options Dialog`.
 
 **Only show visible layers in the InaSAFE dock:** This option will determine whether all (when unchecked) hazard and impact layers should be listed in the InaSAFE dock’s drop down menu. or (when checked) only visible layers.
 
-**Set QGIS layer name from** :guilabel:`title` **in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree using the title keyword in the layer’s keywords file. If the layer has no ‘title’ in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply.
+**Set QGIS layer name from title in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree using the title keyword in the layer’s keywords file. If the layer has no ‘title’ in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply.
 
-**Zoom to impact layer on scenario estimate completion:** This option will cause the map view to :guilabel:`zoom in/out` in order to completely contain the InaSAFE impact scenario map output when an analysis completes.
+**Zoom to impact layer on scenario estimate completion:** This option will cause the map view to zoom in/out in order to completely contain the InaSAFE impact scenario map output when an analysis completes.
 
 **Hide exposure layer on scenario estimate completion:** This option will cause QGIS to turn off the exposure layer used when InaSAFE completes the current analysis. You can re-enable the layer visibility again by checking its checkbox in the legend.
 
-**Clip datasets to visible extent before analysis:** This option will cause QGIS to :guilabel:`clip` hazard and exposure layers to the currently visible extent on the map canvas.
+**Clip datasets to visible extent before analysis:** This option will cause QGIS to clip hazard and exposure layers to the currently visible extent on the map canvas.
 
 **When clipping, also clip features (e.g. will clip polygon smaller):** This option will clip any polygons that extend beyond the map canvas. For example if you have a flood hazard polygon layer that extends far beyond your area of interest, the flood polygons will be reduced so that only the part inside of your area of interested (map canvas extent) is retained. This can speed up processing time somewhat.
 
