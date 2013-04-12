@@ -102,7 +102,7 @@ As a default InaSAFE has made 3 hazard areas:
 #. 3-5 km
 #. 5-10 km
 
-.. image:: /static/socialisation/impact_function _editor_merapi2.png
+.. image:: /static/socialisation/impact_function _editor3.png
    :align: center
 
 .. Note:: that its written 3,5,10 so if you wanted Vent-2, 2-6 and then 6-10 it would be 2,6,10*
@@ -119,6 +119,7 @@ Free time
 
 Its time for you to run through InaSAFE yourself, with no instructions, make sure to print each result!
 Take 10 mins to run:
+
 In the event of **Merapi erupting** how many **buildings** will **be affected** within 3,5,10 km of the vent
 
 In the event of **Merapi erupting** how many **people** will **be affected** within 5,10,25 km of the vent
@@ -214,33 +215,34 @@ This particular scenario is a modelled version of a Magnitude 8.1 earthquake gen
 
 You will see that there is 3 layers in the layer panel, click on each of them to read the keywords in the InaSAFE window
 
-**Image**
+.. image:: /static/socialisation/maumere_tsunami2.png
+   :align: center
 
 .. Note:: The InaSAFE functionality for Tsunami and floods are very similar, however due to the force of the tsunami waves, the maximum depth of the water that would affect people and infrastructure is shallower.*
 
-46. Check that InaSAFE has the following in the drop-down boxes
+46. :guilabel:`Check` that InaSAFE has the following in the drop-down boxes
 #. A tsunami in Maumere (Mw 8.1)
 #. building
 #. be flooded
 
-47. Change the Impact function parameter to 0.3m
+47. :guilabel:`Change` the Impact function parameter to 0.3m
 48. How many buildings are estimated to be flooded
 
 *ANSWER* _____________________________________________________________
 
-49. Click InaSAFE Print, save accordingly
-50. Run InaSAFE again with the following in the drop-down boxes:
+49. :guilabel:`Click` InaSAFE Print, save accordingly
+50. :guilabel:`Run` InaSAFE again with the following in the drop-down boxes:
 #. A tsunami in maumere (Mw 8.1)
 #. people
 #. need evacuation
 
-51. Change the Impact function parameter to 0.5m
+51. :guilabel:`Change` the Impact function parameter to 0.5m
 52. How many people are estimated to need evacuation
 
 *ANSWER*
 _____________________________________________________________
 
-53. Click InaSAFE Print, save accordingly
+53. :guilabel:`Click` InaSAFE Print, save accordingly
 
 Map Canvas Extent
 -----------------
