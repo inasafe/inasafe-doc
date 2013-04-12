@@ -1,4 +1,4 @@
-INASAFE FUNCTIONALITY
+InaSAFE Functionality
 =====================
 Before we dive into using QGIS and InaSAFE, this chapter will explain InaSAFE current functionality, the functionality we will touch on today as well as the spatial datasets we will be using (located on your USB sticks).
 
