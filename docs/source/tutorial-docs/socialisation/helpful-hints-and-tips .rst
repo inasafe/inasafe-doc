@@ -6,6 +6,8 @@ InaSAFE option menu
 -------------------
 
  The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar’s options icon.
+.. image:: C:\Users\mahardika\Documents\GitHub\inasafe-doc\docs\resources\en\socialisation\insafe_options_tools.jpeg
+
 The following options are available on the Options Dialog:
 
 **Only show visible layers in the InaSAFE dock:** This option will determine whether all (when unchecked) hazard and impact layers should be listed in the InaSAFE dock’s drop down menu. or (when checked) only visible layers.
