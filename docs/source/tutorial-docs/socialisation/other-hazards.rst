@@ -28,7 +28,7 @@ There are 129 active volcanoes in Indonesia, and its always valuable to know how
 
 1. :guilabel:`Open a QGIS project` called Volcano_Indonesia.qgs - **File/Open Project...** , :guilabel:`navigate` to InaSAFE projects and select Volcano_Indonesia
 
-.. image::../_static/socialisation/volcanoes.png
+.. image::.. /static/socialisation/volcanoes.png
    :align: center
 
 Select Feature and Save
