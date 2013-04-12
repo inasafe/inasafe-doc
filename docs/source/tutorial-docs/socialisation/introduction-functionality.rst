@@ -130,9 +130,7 @@ Volcano
 
 .. image:: /static/socialisation/volcano.png
    :align: center
-   
-.. image:: /static/socialisation/earthquake.png
-   :align: right   
+     
 
 Earthquake
 ..........
@@ -147,6 +145,8 @@ ShakeMaps are generated automatically following moderate and large earthquakes b
 http://earthquake.usgs.gov/earthquakes/map/ .
 Pre-event / scenario based shakemaps need to be modelled by earthquake specialist.
 
+.. image:: /static/socialisation/earthquake.png
+   :align: center   
 
 Tsunami
 .......
