@@ -16,7 +16,7 @@ We are now going to use the basic QGIS tools to examine the datasets.
 **About Estimate building affected**
 ....................................
 
-1. Zoom into a section of buildings using the zoom in tool 
+1. Zoom into a section of buildings using the zoom in tool  .. image:: /static/socialisation/zoomin2.png
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
