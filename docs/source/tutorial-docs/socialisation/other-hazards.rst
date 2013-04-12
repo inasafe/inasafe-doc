@@ -90,20 +90,19 @@ Configure and Run InaSAFE
 
 22. :guilabel:`Check` that InaSAFE has the following in the drop-down boxes
 
- #. Merapi erupting
- #. people
- #. Need evacuation
+ * Merapi erupting
+ * people
+ * Need evacuation
 
 23. Before we run InaSAFE again, we have to tell InaSAFE what the hazard zone is!
 :guilabel:`Click` on the impact function editor
 As a default InaSAFE has made 3 hazard areas:
 
-#. Vent -3 km
-#. 3-5 km
-#. 5-10 km
+* Vent -3 km
+* 3-5 km
+* 5-10 km
 
-.. image:: /static/socialisation/impact_function _editor3.png
-   :align: center
+**IMAGE**
 
 .. Note:: that its written 3,5,10 so if you wanted Vent-2, 2-6 and then 6-10 it would be 2,6,10*
 
@@ -221,9 +220,9 @@ You will see that there is 3 layers in the layer panel, click on each of them to
 .. Note:: The InaSAFE functionality for Tsunami and floods are very similar, however due to the force of the tsunami waves, the maximum depth of the water that would affect people and infrastructure is shallower.*
 
 46. :guilabel:`Check` that InaSAFE has the following in the drop-down boxes
-#. A tsunami in Maumere (Mw 8.1)
-#. building
-#. be flooded
+* A tsunami in Maumere (Mw 8.1)
+* building
+* be flooded
 
 47. :guilabel:`Change` the Impact function parameter to 0.3m
 48. How many buildings are estimated to be flooded
@@ -247,10 +246,11 @@ _____________________________________________________________
 Map Canvas Extent
 -----------------
 
-**IMAGE**
+.. image:: /static/socialisation/maumere_zoomin2.png
+   :align: center
 
-54. Try zooming into one section of the tsunami
-55. Run steps 45-53 again place your 2 results below
+54. Try :guilabel:`zooming` into one section of the tsunami
+55. :guilabel:`Run` steps 45-53 again place your 2 results below
 56. How many buildings are estimated to be flooded
 
 ANSWER  _____________________________________________________________
@@ -259,7 +259,7 @@ ANSWER  _____________________________________________________________
 
 ANSWER  _____________________________________________________________
 
-*Note: You will now see that your results are different than the original InaSAFE runs,  this is because your extent window determines the area in which you are analysing the data. The next chapter will show you how to change this if needed.*
+.. Note:: You will now see that your results are different than the original InaSAFE runs,  this is because your extent window determines the area in which you are analysing the data. The next chapter will show you how to change this if needed.*
 
 You have now gone through InaSAFE using 4 different natural hazards, changing a variety of paramaters and analysing the results.  This chapter has been designed to help you understand a little more about InaSAFE as well as where you can go for help.
 
