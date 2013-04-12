@@ -59,11 +59,11 @@ Setup QGIS
 
 1. Open Quantum GIS Desktop (1.8.0) - This should be located on your desktop, or you can find it in your start menu
 
-.. image:: /Socialisation/qgis.png
+.. image:: ../_static/Socialisation/qgis.png
 
 2. A hint window will come up, click okay
 
-.. image:: /Socialisation/Screen Shot 2013-03-03 at 12.15.21 PM.png
+.. image:: ../_static/Socialisation/Screen Shot 2013-03-03 at 12.15.21 PM.png
 
 Clean up tool bar
 .................
@@ -107,14 +107,14 @@ Installing InaSAFE through the QGIS plugin repository
 1. Go to Plugins/Fetch Python Plugins... This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
 2. Type inasafe into the filter box
 
-.. image:: /Socialisation/inasafe_plugin.png
+.. image:: ../_static/Socialisation/inasafe_plugin.png
 	:align: center
 
 3. Select InaSAFE and click Install plugin - this will take a couple of minutes for the plugin to download and install
 4. A window should pop up saying: “Plugin installed successfully” - Click okay and then close the QGIS python plugin installer window
 5. You should now have an InaSAFE panel on the right hand side of your screen
 
-.. image:: /Socialisation/inasafe_tools.png
+.. image:: ../_static/Socialisation/inasafe_tools.png
 	:align: center
 	
 InaSAFE also comes with a toolbar of its own
@@ -147,12 +147,12 @@ Installing OpenLayer through the QGIS plugin repository
 
 Indonesia
 
-.. image:: ../Socialisation/indonesia.png
+.. image:: ../_static/Socialisation/indonesia.png
 	:align: center
 	
 My home in Jakarta
 
-.. image:: ../Socialisation/home.png
+.. image:: ../_static/Socialisation/home.png
 	:align: center
 	
 .. Note:: To use openlayers you must have connection to the Internet!
