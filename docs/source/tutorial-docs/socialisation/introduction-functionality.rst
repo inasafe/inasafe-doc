@@ -1,5 +1,5 @@
-InaSAFE Functionality
-=====================
+InaSAFE Functionality and Datasets to be used in Practical
+==========================================================
 Before we dive into using QGIS and InaSAFE, this chapter will explain InaSAFE current functionality, the functionality we will touch on today as well as the spatial datasets we will be using (located on your USB sticks).
 
 Current Functionality of InaSAFE
@@ -63,12 +63,12 @@ The raster pixel size is 100m by 100m.
 Structures
 ..........
 
-:Name: OpenStreetMap(OSM)
-:InaSAFE name: buildings
-:Source: http://openstreetmap.org
-:license: Open Data Commons Open Database License (ODbL)
-:Coverage: World - incomplete
-:About:  OpenStreetMap is a collaborative project to create a free editable map of the world. Two major driving forces behind the establishment and growth of OSM have been restrictions on use or availability of map information across much of the world and the advent of inexpensive portable satellite navigation devices.
+:Name: 					OpenStreetMap(OSM)
+:InaSAFE name: 	buildings
+:Source: 				http://openstreetmap.org
+:license: 			Open Data Commons Open Database License (ODbL)
+:Coverage: 			World - incomplete
+:About:  				OpenStreetMap is a collaborative project to create a free editable map of the world. Two major driving forces behind the establishment and growth of OSM have been restrictions on use or availability of map information across much of the world and the advent of inexpensive portable satellite navigation devices.
 
 .. image:: /static/socialisation/openstreetmap.png
    :align: center
