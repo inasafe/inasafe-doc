@@ -3,6 +3,4 @@ Options +FollowSymlinks -MultiViews
 RewriteEngine On
 RewriteBase /
 
-RewriteCond %{REQUEST_URI} !^/en/
-RewriteCond %{REQUEST_URI} !^/id/
-RewriteRule (.*) /en/$1 [L]
+RewriteRule ^$ /en [L]
