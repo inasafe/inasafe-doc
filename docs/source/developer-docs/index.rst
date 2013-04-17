@@ -34,4 +34,5 @@ Developer Documentation Contents:
    faq
    todo
    realtime
+   osm_building_downloads
 
