@@ -1,5 +1,5 @@
-InaSAFE Functionality
-=====================
+InaSAFE Functionality and Datasets to be used in Practical
+==========================================================
 Before we dive into using QGIS and InaSAFE, this chapter will explain InaSAFE current functionality, the functionality we will touch on today as well as the spatial datasets we will be using (located on your USB sticks).
 
 Current Functionality of InaSAFE
@@ -50,9 +50,9 @@ Population
 ..........
 
 :Name: AsiaPop
-:InaSAFE name: people
+:InaSAFE: people
 :Source: http://asiapop.org
-:Lisense: Creative Commons by Attribution (CCbyA)
+:License: Creative Commons by Attribution (CCbyA)
 :Coverage: ASEAN +
 :About: High resolution, contemporary data on human population distributions are a prerequisite for the accurate measurement of the impacts of population growth, for monitoring changes and for planning interventions. The AsiaPop project was initiated in July 2011 with an aim of producing detailed and freely-available population distribution maps for the whole of Asia.
 The raster pixel size is 100m by 100m.
@@ -63,12 +63,12 @@ The raster pixel size is 100m by 100m.
 Structures
 ..........
 
-:Name: OpenStreetMap(OSM)
-:InaSAFE name: buildings
-:Source: http://openstreetmap.org
-:license: Open Data Commons Open Database License (ODbL)
+:Name: 	OpenStreetMap(OSM)
+:InaSAFE: buildings
+:Source: 	http://openstreetmap.org
+:License: Open Data Commons Open Database License (ODbL)
 :Coverage: World - incomplete
-:About:  OpenStreetMap is a collaborative project to create a free editable map of the world. Two major driving forces behind the establishment and growth of OSM have been restrictions on use or availability of map information across much of the world and the advent of inexpensive portable satellite navigation devices.
+:About:  	OpenStreetMap is a collaborative project to create a free editable map of the world. Two major driving forces behind the establishment and growth of OSM have been restrictions on use or availability of map information across much of the world and the advent of inexpensive portable satellite navigation devices.
 
 .. image:: /static/socialisation/openstreetmap.png
    :align: center
@@ -96,9 +96,9 @@ Flood Model
 ...........
 
 :Name:  HKL Flood Model
-:InaSAFE name:  a flood similar to the 2007 Jakarta event
+:InaSAFE:  a flood similar to the 2007 Jakarta event
 :Source: HKL - go to http://deltares.nl
-:license: Creative Commons by Attribution (CCbyA)
+:License: Creative Commons by Attribution (CCbyA)
 :Coverage: Jakarta
 :About: The Flood model was created by scientist/engineers in coordination with DKI Jakarta Public Works based on the 2007 flood conditions.  The water depth is the maximum depth occurring across the entire flooding period.
 
@@ -109,9 +109,9 @@ Flood Footprint
 ...............
 
 :Name:  Jakarta flood areas on the 18/1/2013
-:InaSAFE name:  Jakarta flooding on the 18th January 2013
+:InaSAFE:  Jakarta flooding on the 18th January 2013
 :Source: OpenStreetMap and BPBD DKI Jakarta
-:license: Creative Commons by Attribution (CCbyA)
+:License: Creative Commons by Attribution (CCbyA)
 :Coverage: Jakarta
 :About: Based on the subvillage boundaries that were map during the DKI mapping project, we were able to use this dataset during the recent floods to identify the areas that had been flooded based on information provided by the villages.
 
@@ -122,9 +122,9 @@ Volcano
 .......
 
 :Name:  Global Volcanism Program
-:InaSAFE name:  volcano
+:InaSAFE:  volcano
 :Source: Smithsonian from http://volcano.si.edu
-:license: United States Copyright
+:License: United States Copyright
 :Coverage: World
 :About: The Smithsonian's Global Volcanism Program seeks better understanding of all volcanoes through documenting their eruptions-small as well as large-during the past 10,000 years. Through their website you are able to download a spreadsheet of all the recorded volcanoes.  This spreadsheet also has the volcano location, which has been turned into a point file.
 
@@ -136,9 +136,9 @@ Earthquake
 ..........
 
 :Name:  Shakemap of Pandang 2009 earthquake
-:InaSAFE name: an earthquake in Padang like 2009
+:InaSAFE: an earthquake in Padang like 2009
 :Source: Badan Geologi and AIFDR
-:license: Creative Commons by Attribution
+:License: Creative Commons by Attribution
 :Coverage: Padang
 :About: A shakemap is a representation of ground shaking produced by an earthquake.  This particular scenario was modelled based on the 30 September 2009 Mw 7.9 earthquake in Padang.
 ShakeMaps are generated automatically following moderate and large earthquakes by USGS. Go to http://earthquake.usgs.gov/earthquakes/map/
@@ -152,49 +152,12 @@ Tsunami
 .......
 
 :Name:  Maumere Tsunami
-:InaSAFE name:  A tsunami in maumere (Mw 8.1)
+:InaSAFE:  A tsunami in maumere (Mw 8.1)
 :Source: AIFDR and Badan Geologi
-:license: Creative Commons by Attribution
+:License: Creative Commons by Attribution
 :Coverage: Maumere, Flores
 :About: In September 2011 the Indonesian government held a national exercise in Maumere, Flores. AIFDR assisted Badan Geologi in developing a tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was modelled using the an open source software called ANUGA and elevation from NEXTMap. The water depth is the maximum depth occurring across the entire tsunami event. Go to http://anuga.anu.edu.au/ and http://intermap.com/
 
 .. image:: /static/socialisation/tsunami.png
    :align: center
-   
-
-
-
-
-
-
-
-
-
-
-
-   
-   
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-      
-
-
-
-
   
