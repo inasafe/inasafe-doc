@@ -11,5 +11,5 @@ This section of the documention describes |project_name| project direction.
    requirements
    rolled-over-2012
    milestones
-   strategic-objectives
+   strategic-objective
 
