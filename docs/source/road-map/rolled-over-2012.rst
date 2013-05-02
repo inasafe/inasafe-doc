@@ -28,25 +28,25 @@ Data is therefore hosted and maintained by different organisations. If data is h
 Skills: Web services, REST, QGIS, Python
 FTE: 3 months
 Resourcing: 
-Tickets: https://github.com/AIFDR/|project_name|/issues?milestone=12
+Tickets: https://github.com/AIFDR/inasafe/issues?milestone=12
 
 Ability to analyse impact on roads 
 ..................................
 
 Analysis of impact to roads (and indeed also railways, powerlines, etc) from a range of hazards important to contingency planning. |project_name| must therefore be able to assign hazard levels to line exposure data from raster and polygon hazard data. The functionality has been implemented in principle using Python with numpy. However, due to the irregular nature of the problem (e.g. individual line segments will be cut by polygon boundaries but must be brought back to the line item they belong to) it not fast enough for real life complex polygons and lines. 
 
-This implementation is invoked here: https://github.com/AIFDR/|project_name|/blob/new_std_doc/safe/engine/interpolation.py#L505
+This implementation is invoked here: https://github.com/AIFDR/inasafe/blob/new_std_doc/safe/engine/interpolation.py#L505
 and its high level tests are: 
-https://github.com/AIFDR/|project_name|/blob/new_std_doc/safe/engine/test_engine.py#L2115
-https://github.com/AIFDR/|project_name|/blob/new_std_doc/safe/engine/test_engine.py#L2223
-https://github.com/AIFDR/|project_name|/blob/new_std_doc/safe/engine/test_engine.py#L2350
+https://github.com/AIFDR/inasafe/blob/new_std_doc/safe/engine/test_engine.py#L2115
+https://github.com/AIFDR/inasafe/blob/new_std_doc/safe/engine/test_engine.py#L2223
+https://github.com/AIFDR/inasafe/blob/new_std_doc/safe/engine/test_engine.py#L2350
 
 The underlying routine is :
-https://github.com/AIFDR/|project_name|/blob/new_std_doc/safe/common/polygon.py#L594
+https://github.com/AIFDR/inasafe/blob/new_std_doc/safe/common/polygon.py#L594
 and its high level tests are from
-https://github.com/AIFDR/|project_name|/blob/new_std_doc/safe/common/test_polygon.py#L1200
+https://github.com/AIFDR/inasafe/blob/new_std_doc/safe/common/test_polygon.py#L1200
 to 
-https://github.com/AIFDR/|project_name|/blob/new_std_doc/safe/common/test_polygon.py#L1200
+https://github.com/AIFDR/inasafe/blob/new_std_doc/safe/common/test_polygon.py#L1200
 
 
 Options to reimplement this functionality include:
@@ -61,7 +61,7 @@ Option a would be the most attractive if possible, followed by c which is a fair
 Skills: Python, numpy, algorithms, GDAL, GEOS, Shapely, C, Cython, gcc,
 FTE: 6 months
 Resourcing: 
-Tickets: https://github.com/AIFDR/|project_name|/issues?milestone=9
+Tickets: https://github.com/AIFDR/inasafe/issues?milestone=9
 
 Raster and Styles in QGIS [FUTURE]
 ..................................
@@ -72,7 +72,7 @@ QGIS is currently able to access vector data remotely using WFS (Web Feature Ser
 Skills: Python, GIS, OGC, REST, WxS
 FTE: 2 months
 Resourcing: TBA
-Tickets: https://github.com/AIFDR/|project_name|/issues?milestone=18
+Tickets: https://github.com/AIFDR/inasafe/issues?milestone=18
 
 
 Software maintenance and bug fixing 
@@ -84,7 +84,7 @@ To make any software system functional it is essential to allocate resources for
 Skills: Software engineering, Python, QGIS, |project_name|
 FTE:
 Resourcing: 
-Tickets: https://github.com/AIFDR/|project_name|/issues?milestone=15 
+Tickets: https://github.com/AIFDR/inasafe/issues?milestone=15 
 
 |project_name| Core development (30 June 2013)
 .......................................
@@ -95,7 +95,7 @@ A significant number of outstanding issues remain for |project_name| to be finis
 Skills: Software engineering, Python, QGIS, GDAL, |project_name|
 FTE: 6 months
 Resourcing: GFDRR, $105k contract to Linfiniti, $5k contract to Software Engineer
-Tickets: https://github.com/AIFDR/|project_name|/issues?milestone=16
+Tickets: https://github.com/AIFDR/inasafe/issues?milestone=16
 
 Development and Maintenance of Documentation (31 March 2013)
 ............................................................
@@ -106,7 +106,7 @@ Documentation is essential for any software project. This must not only be produ
 Skills: Communication, |project_name|, Restructured Text
 FTE: 2 months
 Resourcing: AIFDR, $5k contract to Linfinity, $5k contract to Software Engineer, $10k contract to technical writer, Edi Dewanto
-Tickets: https://github.com/AIFDR/|project_name|/issues?milestone=11
+Tickets: https://github.com/AIFDR/inasafe/issues?milestone=11
 
 Training of software developers (30 June 2013)
 ...............................................

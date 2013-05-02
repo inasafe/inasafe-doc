@@ -141,7 +141,7 @@ Impact layer is currently chosen to be that of the hazard layer - mainly for aes
 #. arbitrary
 #. finest of the two input layer
 
-* Impact function writer’s guide: https://github.com/AIFDR/|project_name|/issues/487
+* Impact function writer’s guide: https://github.com/AIFDR/inasafe/issues/487
 * More developer documentation of |project_name|’s core
 * Show metadata such as filenames and impact functions for each run in impact report (issue #22)
 

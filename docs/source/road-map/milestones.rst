@@ -32,7 +32,7 @@ Final version with QGIS 2.0 compatibility
 * Custom branded QGIS installer which includes the |project_name| plugin.
 * Each impact function will be accompanied with a short instructional video embedded on the web site.
 
-Version 2.1: 
+Version 2.1
 ------------
 
 * Remove legacy support for QGIS 1.x releases to make the migration to QGIS 2.0 complete. 

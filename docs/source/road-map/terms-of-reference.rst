@@ -13,7 +13,7 @@ Terms of Reference
 	* Medi Herlianto (BNPB)
 Web links for |project_name| are
 
-Domain name: www.inasafe.org
+Domain name: http://www.inasafe.org
 
 Github repository: https://github.com/AIFDR/inasafe
 
