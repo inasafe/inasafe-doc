@@ -1,7 +1,7 @@
 InaSAFE Socialisation
 ======================
 
-This training course is designed to have hands on experience with InaSAFE, its not designed as a comprehensive course (we are still currently working on those), but to give participants an idea of what InaSAFE is capable of doing.
+This training course is designed to have hands on experience with InaSAFE. Its not designed as a comprehensive course (we are still currently working on those), but to give participants an idea of what InaSAFE is capable of doing.
 The course is scheduled to only run for 1/2 day.
 
 Objective
@@ -105,6 +105,6 @@ Create Commons by Attribution by BNPB/AIFDR/GFDRR.
 Author:
 .......
 
-Kristy Van Putten, Spatial Analyst/Data manager AIFDR
+`Kristy Van Putten <kristy.vanputten@gmail.com>`_, Spatial Analyst/Data manager AIFDR
 
 
