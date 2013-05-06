@@ -1,5 +1,9 @@
 InaSAFE Socialisation
 ======================
+
+This training course is designed to have hands on experience with InaSAFE, its not designed as a comprehensive course (we are still currently working on those), but to give participants an idea of what InaSAFE is capable of doing.
+The course is scheduled to only run for 1/2 day.
+
 Objective
 ---------
 
@@ -58,4 +62,49 @@ Training Materials
    inasafe-in-more-detail
    other-hazards
    helpful-hints-and-tips
+
+
+Credits
+-------
+InaSAFE Socialisation Training Manual was developed by Australia-Indonesia Facility for Disaster Reduction(AIFDR) - AusAID, The National Agency for Disaster Management, Indonesia and World Bank ‘s Global Facility for Disaster Reduction and Recovery Labs (GFDRR). 
+
+Manual based on:
+................
+
+* Version 1.1 of InaSAFE
+* Version 1.8 of Quantum
+
+Produced: 
+.........
+
+March 2013
+
+For inquiries, contact:
+.......................
+
+Australia-Indonesia Facility for Disaster Reduction (AIFDR), 
+Menara Thamrin Suite 1505 
+Jl. MH Thamrin Kav. 3, Jakarta 10250, Indonesia, 
+Ph: +62 21 398 30088 
+Fax: +62 21 398 30068   
+www.aifdr.org
+ 
+General information on InaSAFE appears online at 
+the InaSAFE website: www.inasafe.org
+
+Resources obtained by:
+......................
+
+Linifiniti Sphinx Theme
+
+Manual licenced under:
+.....................
+
+Create Commons by Attribution by BNPB/AIFDR/GFDRR.	
+
+Author:
+.......
+
+Kristy Van Putten, Spatial Analyst/Data manager AIFDR
+
 
