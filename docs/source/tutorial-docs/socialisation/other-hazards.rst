@@ -1,8 +1,7 @@
 Other Hazards in InaSAFE
 ========================
 
-Objectives
-----------
+**Objectives:**
 
 * To run InaSAFE with other hazards, specifically Volcano and Earthquake
 * To save a subset of an existing layer
@@ -10,8 +9,7 @@ Objectives
 * To understand the difference in scale between hazards
 * To run InaSAFE using a Tsunami model (optional)
 
-Expected Results
-----------------
+**Expected Results**
 
 Participants are able to:
 

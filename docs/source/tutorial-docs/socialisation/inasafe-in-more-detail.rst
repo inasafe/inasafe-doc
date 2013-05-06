@@ -1,6 +1,26 @@
 InaSAFE in More Detail
 ======================
 
+**Objectives:**
+
+* To interrogate the results using simple GIS tools (Zoom in, Zoom full, Information and Measurement tools) 
+* To add a new hazard layer, read its attribute table, and symbolize based on attribute
+* To create a keyword for the new hazard layer
+* To Run InaSAFE with the new hazard layer
+* To Run InaSAFE and add the percentage of affected people who will need evacuation
+* To explain the difference between the scenario run in last chapter with this chapter (optional)
+
+**Expected Results:**
+
+Participants are able to:
+
+* use simple GIS tools like zoom in, zoom full, information and measurement tools and interogate its attribute table
+* add a new vector layer and symbolised based on attribute
+* create a keyword file for a hazard layer
+* understand the difference between a model hazard and a footprint hazard
+* input the percentage of people that will need evacuating for a flood footprint hazard
+* rerun InaSAFE with new hazard layer and explain the difference between the flood model and new hazard layer. (optional) 
+
 
 Interrogating the Output Data
 -----------------------------
@@ -14,8 +34,8 @@ You will now have 3 layer that have been generated through InaSAFE
 We are now going to use the basic QGIS tools to examine the datasets. 
 
 
-**About Estimate Building Affected**
-....................................
+About Estimate Building Affected
+................................
 
 1. :guilabel:`Zoom into` a section of buildings using the zoom in tool  
 
@@ -45,8 +65,8 @@ Here I clicked on the building circled in the above picture to result is below. 
 
 .. image:: /static/socialisation/zoom_extent.png 
 
-**About Population which Needs evacuation**
-...........................................
+About Population which Needs evacuation
+.......................................
 
 6. :guilabel:`Uncheck` the *Estimated buildings affected* and :guilabel:`recheck` one of  *Population which Need evacuation*
 

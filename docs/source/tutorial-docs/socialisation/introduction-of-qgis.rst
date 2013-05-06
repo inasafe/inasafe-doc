@@ -1,8 +1,7 @@
 Introduction to QGIS
 ====================
 
-Objectives:
------------
+**Objectives:**
 
 * Basic understanding of QGIS and its layout
 * Basic setup of QGIS
@@ -10,8 +9,7 @@ Objectives:
 * Installation of OpenLayers Plugin
 * Navigation of QGIS using Microsoft bing imagery
 
-Expected Results:
------------------
+**Expected Results:**
 
 Participants are able to:
 
@@ -49,10 +47,10 @@ An overview of the Interface
 
 The elements identified in the figure below are:
 
-#. Layers list
-#. Toolbars
-#. Map canvas
-#. Status bar
+1. Layers list
+2. Toolbars
+3. Map canvas
+4. Status bar
 
 .. image:: /static/socialisation/interface.PNG
    :align: center
@@ -60,12 +58,12 @@ The elements identified in the figure below are:
 Setup QGIS
 ----------
 
-1. :guilabel:`Open Quantum GIS Desktop (1.8.0)` - This should be located on your desktop, or you can find it in your start menu.
+#. :guilabel:`Open Quantum GIS Desktop (1.8.0)` - This should be located on your desktop, or you can find it in your start menu.
 
 .. image:: /static/socialisation/qgis.png
    :align: center
 
-2. A hint window will come up, click okay.
+#. A hint window will come up, :guilabel:`click okay`.
 
 .. image:: /static/socialisation/tips.png
    :align: center
@@ -75,13 +73,15 @@ Clean up tool bar
 
 To provide more space for your map canvas you will now choose to display the tools we will use today.
 
-#. :guilabel:`Right click` the toolbar and unmark, *Advance Digitising*, *Database*, *Digitising*,*File*, *Grass*, *OpenStreetMap*, *Raster*, *Vector*, *Web*.
-#. Rearrange toolbar so its just one line, by holding down the left mouse button over the  and dragging the bar to where ever you would like to put it.
+#. :guilabel:`Right click` the toolbar and unmark, *Advance Digitising*, *Database*, *Digitising*, *File*, *Grass*, *OpenStreetMap*, *Raster*, *Vector*, *Web*.
+#. Rearrange toolbar so its just one line, by holding down the left mouse button over the dots on the left hans side of the tool, and dragging the bar to where ever you would like to put it.
 
 .. image:: /static/socialisation/toolbar.PNG
    :align: center
    
 .. Note:: For future work you may want to add these tool back into your toolbar, this is as simple as right clicking on the toolbar and turning it back on.
+
+Your QGIS should now look like this:
 
 .. image:: /static/socialisation/toolbar_2.PNG
    :align: center
@@ -89,7 +89,7 @@ To provide more space for your map canvas you will now choose to display the too
 Option Window
 .............
 
-Changing projection settings and understanding that QGIS is multilingual
+To change the projection settings and acknowledge that QGIS is multilingual
 
 1. Go to Options window: **Settings/options**
 2. :guilabel:`Click` on the CRS tab
@@ -130,12 +130,12 @@ Installing InaSAFE through the QGIS plugin repository
 .. Note:: You must be connected to the internet for this section
 
 1. Go to **Plugins/Fetch Python Plugins...** This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
-2. Type inasafe into the filter box
+2. Type *inasafe* into the filter box
 
 .. image:: /static/socialisation/inasafe_plugin.png
    :align: center
 
-3. :guilabel:`Select` InaSAFE and :guilabel:`click` Install plugin - this will take a couple of minutes for the plugin to download and install
+3. :guilabel:`Select` InaSAFE and :guilabel:`click Install plugin` - this will take a couple of minutes for the plugin to download and install
 4. A window should pop up saying: "Plugin installed successfully" - Click okay and then close the QGIS python plugin installer window
 5. You should now have an InaSAFE panel on the right hand side of your screen
 
@@ -144,7 +144,7 @@ Installing InaSAFE through the QGIS plugin repository
 	
 InaSAFE also comes with a toolbar of its own
 
-6. To retrieve the InaSAFE toolbar, right click on the top tool bar and recheck "plugin"
+6. To retrieve the InaSAFE toolbar, :guilabel:`right click` on the top tool bar and :guilabel:`recheck "plugin"`
 
 .. image:: /static/socialisation/tools_inasafe.png
    :align: center

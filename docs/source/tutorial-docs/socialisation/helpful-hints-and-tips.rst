@@ -1,5 +1,19 @@
 Helpful Hints And Tips
 ======================
+**Objectives:**
+
+* To read through the InaSAFE option menu
+* To know where to go for help
+* To go through some frequently ask questions 
+
+**Expected Results:**
+
+Participants are able to:
+
+* customise the InaSAFE option menu 
+* know where to go for help
+
+
 You have now gone through InaSAFE using 4 different natural hazards, changing a
 variety of paramaters and analysing the results.  This chapter has been
 designed to help you understand a little more about InaSAFE as well as where

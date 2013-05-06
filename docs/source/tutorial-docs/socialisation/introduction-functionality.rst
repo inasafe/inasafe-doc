@@ -52,7 +52,7 @@ Population
 :Name: AsiaPop
 :InaSAFE: people
 :Source: http://asiapop.org
-:License: Creative Commons by Attribution (CCbyA)
+:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: ASEAN +
 :About: High resolution, contemporary data on human population distributions are a prerequisite for the accurate measurement of the impacts of population growth, for monitoring changes and for planning interventions. The AsiaPop project was initiated in July 2011 with an aim of producing detailed and freely-available population distribution maps for the whole of Asia.
 The raster pixel size is 100m by 100m.
@@ -66,7 +66,7 @@ Structures
 :Name: 	OpenStreetMap(OSM)
 :InaSAFE: buildings
 :Source: 	http://openstreetmap.org
-:License: Open Data Commons Open Database License (ODbL)
+:License: `Open Data Commons Open Database License (ODbL) <http://opendatacommons.org/licenses/odbl/>`_
 :Coverage: World - incomplete
 :About:  	OpenStreetMap is a collaborative project to create a free editable map of the world. Two major driving forces behind the establishment and growth of OSM have been restrictions on use or availability of map information across much of the world and the advent of inexpensive portable satellite navigation devices.
 
@@ -111,7 +111,7 @@ Flood Footprint
 :Name:  Jakarta flood areas on the 18/1/2013
 :InaSAFE:  Jakarta flooding on the 18th January 2013
 :Source: OpenStreetMap and BPBD DKI Jakarta
-:License: Creative Commons by Attribution (CCbyA)
+:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Jakarta
 :About: Based on the subvillage boundaries that were map during the DKI mapping project, we were able to use this dataset during the recent floods to identify the areas that had been flooded based on information provided by the villages.
 
@@ -124,7 +124,7 @@ Volcano
 :Name:  Global Volcanism Program
 :InaSAFE:  volcano
 :Source: Smithsonian from http://volcano.si.edu
-:License: United States Copyright
+:License: `United States Copyright <http://www.copyright.gov/title17/>`_
 :Coverage: World
 :About: The Smithsonian's Global Volcanism Program seeks better understanding of all volcanoes through documenting their eruptions-small as well as large-during the past 10,000 years. Through their website you are able to download a spreadsheet of all the recorded volcanoes.  This spreadsheet also has the volcano location, which has been turned into a point file.
 
@@ -138,7 +138,7 @@ Earthquake
 :Name:  Shakemap of Pandang 2009 earthquake
 :InaSAFE: an earthquake in Padang like 2009
 :Source: Badan Geologi and AIFDR
-:License: Creative Commons by Attribution
+:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Padang
 :About: A shakemap is a representation of ground shaking produced by an earthquake.  This particular scenario was modelled based on the 30 September 2009 Mw 7.9 earthquake in Padang.
 ShakeMaps are generated automatically following moderate and large earthquakes by USGS. Go to http://earthquake.usgs.gov/earthquakes/map/
@@ -154,7 +154,7 @@ Tsunami
 :Name:  Maumere Tsunami
 :InaSAFE:  A tsunami in maumere (Mw 8.1)
 :Source: AIFDR and Badan Geologi
-:License: Creative Commons by Attribution
+:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Maumere, Flores
 :About: In September 2011 the Indonesian government held a national exercise in Maumere, Flores. AIFDR assisted Badan Geologi in developing a tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was modelled using the an open source software called ANUGA and elevation from NEXTMap. The water depth is the maximum depth occurring across the entire tsunami event. Go to http://anuga.anu.edu.au/ and http://intermap.com/
 

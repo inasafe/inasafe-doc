@@ -1,6 +1,24 @@
 Run basic InaSAFE
 =================
 
+**Objectives:**
+
+* To run InaSAFE using a flood model & population and examine the results 
+* To create a impact map
+* To modify the threshold of an impact function
+* To run InaSAFE using a flood model & building and examine the results
+* To run InaSAFE with aggregation (optional)
+
+**Expected Results:**
+
+Participants are able to:
+
+* run and understand the results of an InaSAFE using a flood model & population
+* create an impact map using the InaSAFE print button
+* change the threshold of an impact function
+* run and understand the results of an InaSAFE using a flood model & building
+* run InaSAFE with aggregation by district (optional)
+
 Introduction
 ------------
 
