@@ -14,11 +14,11 @@ emergency managers need to answer questions like:
 - which roads will be closed?
 
 Conceptually InaSAFE combines one exposure layer (e.g. buildings) with one hazard scenario
-(e.g. flooding) and returns an impact layer along with textual staticial summary.
+(e.g. flooding) and returns an impact layer along with textual statistical summary.
 
 InaSAFE is framed around questions such as:
 
-**"In the event of *a flood similar to the 2007 Jakarta event* how many *people* might need 
+"In the event of **a flood similar to the 2007 Jakarta event** how many *people* might need 
 *evacuating*."**
 
 .. image:: /static/socialisation/inasafe_concept.png
