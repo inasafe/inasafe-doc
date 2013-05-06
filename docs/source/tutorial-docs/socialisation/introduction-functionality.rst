@@ -1,6 +1,6 @@
 InaSAFE Functionality and Datasets to be used in Practical
 ==========================================================
-Before we dive into using QGIS and InaSAFE, this chapter will explain InaSAFE current functionality, the functionality we will touch on today as well as the spatial datasets we will be using (located on your USB sticks).
+Before we dive into using QGIS and InaSAFE, this chapter will explain InaSAFE current functionality, the functionality we will touch on during this short InaSAFE course as well as the spatial datasets we will be using (located at **link to data**).
 
 Current Functionality of InaSAFE
 --------------------------------
@@ -32,8 +32,8 @@ Structures     Polygon           Structure type     type                text
 Structures     Point             Structure type     type                text
 =============  ================  =================  ==================  =======================
 
+
 InaSAFE is a dynamic tool that can easily be adapted to other types of hazard and exposure layers.  The beauty of InaSAFE being open source, is that anyone that has a background in programming would be able to make their own Impact function.
-If you dont, see page 55 for more details.
 Please see the InaSAFE website for more information go to http://inasafe.org
 
 Exposure Layers Used in Practical
@@ -76,8 +76,8 @@ Structures
 AusAID has been working with the Humanitarian OpenStreetMap Team over the last 2 years in piloting and training OpenStreetMap in Indonesia.  The result so far is over 800,000 buildings have been mapped.  
 The scenarios we will look at within this workshop are situated in Jakarta, Merapi (Central Java and Yogyakarta), Sumatra (specifically Padang) and Maumere, Flores. Each one of these areas has a different OpenStreetMap data collection methodology. Below will explain the methodologies used in Jakarta and Padang.
 
-:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and BNPB (Nationals Disaster Managers) with assistance from AIFDR (Australia-Indonesia Facility for Disaster Reduction), the World Bank, UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held workshops in each of Jakarta’s 6 Districts in order to help Village Heads map their community boundaries and major infrastructure. Over 500 representatives from Jakarta’s 267 Villages participated in these workshops – and have mapped an impressive 6,000 buildings and all 2,668 sub-village boundaries (Rukun Warga-RW). Go to http://www.aifdr.org/?p=619
-:Padang: Post Hati’s earthquake in 2010, there was a huge effort to map Hati through OSM, coordinating this effort was very hard, and hence AusAID subsequently funded the creation of OSM tasking Server.  The OSM tasking server is a web-base tool where you are able to select your own square to map.  The first pilot of the web-tool was in Padang, the specified area is now 100% finished with over 95,000 buildings mapped. However the buildings are purely footprints, an on the ground mapping effort is needed to record what type of building it is.  The tool is now being used across world to coordinate OSM mapping efforts. Go to http://tasks.hotosm.org/
+:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and BNPB (Nationals Disaster Managers) with assistance from AIFDR (Australia-Indonesia Facility for Disaster Reduction), the World Bank, UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held workshops in each of Jakarta’s 6 Districts in order to help Village Heads map their community boundaries and major infrastructure. Over 500 representatives from Jakarta’s 267 Villages participated in these workshops and have mapped an impressive 6,000 buildings and all 2,668 sub-village boundaries (Rukun Warga-RW). Go to http://www.aifdr.org/?p=619
+:Padang: Post Hati's earthquake in 2010, there was a huge effort to map Hati through OSM, coordinating this effort was very hard, and hence AusAID subsequently funded the creation of OSM tasking Server.  The OSM tasking server is a web-base tool where you are able to select your own square to map.  The first pilot of the web-tool was in Padang, the specified area is now 100% finished with over 95,000 buildings mapped. However the buildings are purely footprints, an on the ground mapping effort is needed to record what type of building it is.  The tool is now being used across world to coordinate OSM mapping efforts. Go to http://tasks.hotosm.org/
 
 Hazard Layers used in Practical
 -------------------------------
@@ -97,8 +97,8 @@ Flood Model
 
 :Name:  HKL Flood Model
 :InaSAFE:  a flood similar to the 2007 Jakarta event
-:Source: HKL - go to http://deltares.nl
-:License: Creative Commons by Attribution (CCbyA)
+:Source: HKV - http://deltares.nl
+:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Jakarta
 :About: The Flood model was created by scientist/engineers in coordination with DKI Jakarta Public Works based on the 2007 flood conditions.  The water depth is the maximum depth occurring across the entire flooding period.
 

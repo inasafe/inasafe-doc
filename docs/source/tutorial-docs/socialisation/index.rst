@@ -19,12 +19,12 @@ Prerequisites
 -------------
 
 * Be able to operate a computer (word processing, presentations, internet, spreadsheets).
+* Basic skills in Geographic Information System is an advantage.
 * Laptop with:
 	* Minimum RAM of 2 GB (recommended 4 GB) 
 	* WIFI - connected to the internet
 	* Windows (XP, 7, 8), Linux (Training Ubuntu later than 12.04) or similar (e.g. Mint or Debian), Mac OSX (Lion - 10.7,  Snow Leopard -10.6)
 	* QuantumGIS 1.8 installed (www.qgis.org) or ability to install software on computer  i.e. have administration password
-* Basic skills in Geographic Information System is an advantage.
 
 Schedule
 --------
@@ -45,8 +45,8 @@ Schedule
 
 16:45 - 17:00  	 Helpful hints and tips
 
-Training material
------------------
+Training Materials
+------------------
 
 .. toctree::
    :maxdepth: 2

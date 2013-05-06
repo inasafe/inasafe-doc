@@ -16,12 +16,14 @@ emergency managers need to answer questions like:
 Conceptually InaSAFE combines one exposure layer (e.g. buildings) with one hazard scenario
 (e.g. flooding) and returns an impact layer along with textual staticial summary.
 
-.. image:: /static/socialisation/inasafe_concept.png
-
 InaSAFE is framed around questions such as:
 
-"In the event of **a flood similar to the 2007 Jakarta event** how many **people** might need 
-**evacuating**."
+**"In the event of *a flood similar to the 2007 Jakarta event* how many *people* might need 
+*evacuating*."**
+
+.. image:: /static/socialisation/inasafe_concept.png
+
+
 
 Background
 ----------
@@ -98,23 +100,23 @@ volcanic eruption) that has been developed through scientific modelled software 
 for more frequent events such as floods it can either be modelled by scientist or mapped by the community. 
 The hazard must be accompanied by specific units:
 
-+-------------------+-------------------------------------------+--------------------+ 
-|       Hazard      |                  Modelled                 |     Footprints     | 
-+===================+===========================================+====================+ 
-| Earthquake        | MMI (shakemap)                            |                    | 
-+-------------------+-------------------------------------------+--------------------+ 
-| Tsunami           | Max depth in Meters                       |                    |
-+-------------------+-------------------------------------------+--------------------+
-| Volcanic Eruption | ash load (kg\ :sup:`2` \/m\ :sup:`2` \)   | Hazard Zones       |
-+-------------------+-------------------------------------------+--------------------+
-| Flood             | Max depth in Meters                       | Flood prone areas  |
-+-------------------+-------------------------------------------+--------------------+
-| \*Landslide       |                                           | Hazard Zone        |
-+-------------------+-------------------------------------------+--------------------+
-| \*Bush Fire       |                                           | Hazard Zone        |
-+-------------------+-------------------------------------------+--------------------+
-| \*Cyclone/Tornado |                                           |                    |
-+-------------------+-------------------------------------------+--------------------+
++------------------------+-----------------------------------------+----------------------+ 
+|       Hazard           |                  Modelled               |     Footprints       | 
++========================+=========================================+======================+ 
+| Earthquake             | MMI (shakemap)                          |                      | 
++------------------------+-----------------------------------------+----------------------+ 
+| Tsunami                | Max depth in Meters                     |                      |
++------------------------+-----------------------------------------+----------------------+
+| Volcanic Eruption      | ash load (kg\ :sup:`2` \/m\ :sup:`2` \) | Hazard Zones         |
++------------------------+-----------------------------------------+----------------------+
+| Flood                  | Max depth in Meters                     | Flood prone areas    |
++------------------------+-----------------------------------------+----------------------+
+| \*Landslide            |                                         | Hazard Zone          |
++------------------------+-----------------------------------------+----------------------+
+| \*Bush Fire            |                                         | Hazard Zone          |
++------------------------+-----------------------------------------+----------------------+
+| \*Cyclone/Tornado      |                                         |                      |
++------------------------+-----------------------------------------+----------------------+
 
 *\*To come in future version of InaSAFE*
 
