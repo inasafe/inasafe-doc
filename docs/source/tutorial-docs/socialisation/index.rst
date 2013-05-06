@@ -83,14 +83,19 @@ For inquiries, contact:
 .......................
 
 Australia-Indonesia Facility for Disaster Reduction (AIFDR), 
+
 Menara Thamrin Suite 1505 
+
 Jl. MH Thamrin Kav. 3, Jakarta 10250, Indonesia, 
+
 Ph: +62 21 398 30088 
+
 Fax: +62 21 398 30068   
-www.aifdr.org
+
+http://www.aifdr.org
  
 General information on InaSAFE appears online at 
-the InaSAFE website: www.inasafe.org
+the InaSAFE website: http://www.inasafe.org
 
 Resources obtained by:
 ......................
