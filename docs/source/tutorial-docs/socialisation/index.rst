@@ -30,12 +30,19 @@ Schedule
 --------
 
 13:00 - 13:30	 Introduction and Overview of InaSAFE (Concept of InaSAFE, inputs and results)
+
 13:30 - 14:00	 Introduction to the Practical exercise
+
 14:00 - 14:30	 Introduction of QGIS (Concept, screen layout and setup and install plugin) 
+
 14:30 - 15:00	 Run basic InaSAFE (Flooding in Jakarta)
+
 15:00 - 15:30	 Break
+
 15:30 - 16:00	 InaSAFE in more detail (Explain keywords and simple spatial analysis)
+
 16:00 - 16:45	 Other hazard in InaSAFE (Volcano, Earthquake, Tsunami)
+
 16:45 - 17:00  	 Helpful hints and tips
 
 Training material
