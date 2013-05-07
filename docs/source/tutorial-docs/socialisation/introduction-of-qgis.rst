@@ -1,6 +1,9 @@
 Introduction to QGIS
 ====================
 
+.. image:: /static/socialisation/qgis_logo.png
+   :align: center
+  
 **Objectives:**
 
 * Basic understanding of QGIS and its layout
@@ -170,7 +173,7 @@ Installing OpenLayer through the QGIS plugin repository
 .. image:: /static/socialisation/openlayer1.PNG
    :align: center
    
-6. Select Add Bing Aerial layer
+6. Select **Add Bing Aerial layer**
 
 .. image:: /static/socialisation/aerial_bing.png
    :align: center
