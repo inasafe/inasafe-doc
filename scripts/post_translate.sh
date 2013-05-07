@@ -1,4 +1,10 @@
 #!/bin/bash
+export LD_LIBRARY_PATH=/opt/qgis18/lib:/opt/grass64/grass-6.4.3svn/lib:$LD_LIBRARY_PATH
+export PYTHONPATH=/opt/qgis18/share/qgis/python:/home/macho/Projects/linfiniti/inasafe-dev:$PYTHONPATH
+export QGIS_PREFIX_PATH=/opt/qgis18
+export QGIS_DEBUG=0
+export QGIS_LOG_FILE=/dev/null
+export QGIS_DEBUG_FILE=/dev/null
 
 # Based off the script from QGIS by Tim Sutton and Richard Duivenvoorde
 
@@ -83,7 +89,22 @@ do
   cp templates/index-${LOCALE}.html templates/index.html
 
   echo "Building HTML for locale '${LOCALE}'..."
-  ${SPHINXBUILD} -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html source ${HTMLDIR}/${LOCALE}
+  LOG=/tmp/sphinx$$.log
+  ${SPHINXBUILD} -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html source ${HTMLDIR}/${LOCALE} > $LOG
+  WARNINGS=`cat $LOG | grep warning`
+  ERRORS=`cat $LOG | grep ERROR`
+  if [[  $WARNINGS ]]
+  then
+    echo "Sphinx build produces warnings - Please fix"
+    echo $WARNINGS
+    exit 1
+  fi
+  if [[  $ERRORS ]]
+  then
+    echo "Sphinx build produces errors - Please fix\n"
+    echo $ERRORS
+    exit 1
+  fi
 
   # Remove the static html copy again
   rm templates/index.html
@@ -98,7 +119,7 @@ do
 
   # Traditional using texi2pdf....
   # Compile the latex docs for that locale
-  ${SPHINXBUILD} -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b latex source ${BUILDDIR}/latex/${LOCALE}
+  ${SPHINXBUILD} -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b latex source ${BUILDDIR}/latex/${LOCALE}  > /dev/null 2>&1
   # Compile the pdf docs for that locale
   # we use texi2pdf since latexpdf target is not available via
   # sphinx-build which we need to use since we need to pass language flag
