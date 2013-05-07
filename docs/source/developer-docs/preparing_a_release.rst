@@ -140,7 +140,7 @@ Compile Qt resources and user interface files
 .............................................
 
 The Qt4 resource and user interface definition files supplied with InaSAFE
- need to be compiled before they can be deployed. There are two utility
+need to be compiled before they can be deployed. There are two utility
 functions provided by Qt4 for this purpose:
 
 * :command:`pyuic4` - A tool to compile Qt4 user interface definition files
@@ -294,7 +294,7 @@ maintained.
 There are two files containing version numbers:
 
 * :file:`__init__.py`
-* :file:`metadata.txt
+* :file:`metadata.txt`
 
 In the init file you would typically update the version entry like this::
 

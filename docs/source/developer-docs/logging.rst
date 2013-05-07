@@ -25,7 +25,7 @@ in the :samp:`__init__.py` for the package::
 
 The utility method that sets up the logger will determine which logging
 backends are made available. In the :samp:`safe_qgis` package, a number of
-different backends are setup in the :funct:`setupLogger` function. The
+different backends are setup in the :func:`setupLogger` function. The
 logger will typically be assigned to a module variable :samp:`LOGGER`.
 
 To actually use the logger in your module you need to do something like this::
@@ -125,4 +125,4 @@ If you have written your one SAFE library client, you should set up your own
 logger instance - just be sure that it is a named logger (called
 :samp:`InaSAFE`) and any log messages from the safe library will be written
 to your logger. For inspiration on how to do this, take a look at the
- :func:`setupLogger` function in :file:`safe_qgis/utilities.py`.
+:func:`setupLogger` function in :file:`safe_qgis/utilities.py`.

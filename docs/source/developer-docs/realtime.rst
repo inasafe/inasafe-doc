@@ -213,10 +213,10 @@ Listing shake files on ftp server::
 
 Cron Jobs::
 
-There are two cron jobs - one to run the latest shake event regularly, and one
-to synchronise all the shake outputs::
+  There are two cron jobs - one to run the latest shake event regularly, and one
+  to synchronise all the shake outputs::
 
-  crontab -e
+    crontab -e
 
 Now add these lines (replacing <yourname>)::
 
@@ -364,7 +364,7 @@ your own template. More on that below in the next section.
 * **longitude-name**: Longitude
 * **date**: 26-7-2012
 * **time**: 2:15:35
-* **formatted-date-time: 26-Jul-12 02:15:35
+* **formatted-date-time**: 26-Jul-12 02:15:35
 * **located-label**: Located
 * **bearing-degrees**: -163.055923462
 * **distance**: 2.50
@@ -432,14 +432,18 @@ Configuration of population data
 Population data is used as the 'exposure' dataset for shake reports.
 The following priority will be used to determine the path of the population
 raster dataset.
-# the class attribute **self.populationRasterPath**
-    will be checked and if not None it will be used.
-# the environment variable :samp:`INASAFE_POPULATION_PATH` will be
-   checked if set it will be used.
-# A hard coded path of
-   :file:`/fixtures/exposure/population.tif` will be checked.
-# A hard coded path of
-   :file:`/usr/local/share/inasafe/exposure/population.tif` will be used.
+
+1. the class attribute **self.populationRasterPath**
+will be checked and if not None it will be used.
+
+2. the environment variable :samp:`INASAFE_POPULATION_PATH` will be
+checked if set it will be used.
+
+3. A hard coded path of :file:`/fixtures/exposure/population.tif` 
+will be checked.
+   
+4. A hard coded path of 
+:file:`/usr/local/share/inasafe/exposure/population.tif` will be used.
 
 
 Running a shake event

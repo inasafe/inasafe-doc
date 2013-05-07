@@ -63,7 +63,6 @@ If you feel there is an important impact function which is missing, there are tw
 avenues you can follow:
 
 * If you have basic python programming skills, you could implement a new impact function yourself.
-See :ref:`writing_impact_functions` for general guidelines on writing impact functions.
+  See :ref:`writing_impact_functions` for general guidelines on writing impact functions.
 * You can file a ticket on our `issue tracking system <https://github.com/AIFDR/inasafe/issues>`_,
   and if time and resources allow we will implement it for you.
-

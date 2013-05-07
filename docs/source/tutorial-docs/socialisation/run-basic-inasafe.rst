@@ -22,7 +22,7 @@ Participants are able to:
 Introduction
 ------------
 
-In this chapter you will run InaSAFE in Jakarta to determine the impact of a flood model on Jakarta’s population and buildings. 
+In this chapter you will run InaSAFE in Jakarta to determine the impact of a flood model on Jakarta's population and buildings. 
 
 1. :guilabel:`Open` Jakarta_floods.qgs - File/Open Project... ,
 
@@ -54,14 +54,14 @@ People need evacuating
 .. image:: /static/socialisation/show_people.png
    :align: center
 
-.. note:: You can see that the Impact function below “Might” automatically changes depending on the layers added
+.. note:: You can see that the Impact function below Â´MightÂ´ automatically changes depending on the layers added
 
 5. Lets run this scenario first - :guilabel:`Click` Run at the bottom right hand corner of the InaSAFE panel
 
 .. image:: /static/socialisation/page_28_2.jpg
    :align: center
 
-A new layer should appear in the layer panel called “Population which needs evacuating” and in the InaSAFE Panel, inside the main window you will see text and statistics, lets explore this further.
+A new layer should appear in the layer panel called Â´Population which needs evacuatingÂ´ and in the InaSAFE Panel, inside the main window you will see text and statistics, lets explore this further.
  
  .. image:: /static/socialisation/inasafe_print2.jpg
    :align: center
@@ -112,7 +112,7 @@ Changing threshold
 
 What if the disaster manager has decided that actually anyone in more than 80cm of water should be evacuated?
 
-8. :guilabel:`Click` the impact function editor button (the pencil icon next to “Need Evacuation”)
+8. :guilabel:`Click` the impact function editor button (the pencil icon next to Â´Need EvacuationÂ´)
 
 .. image:: /static/socialisation/page_31.jpg
    :align: center
@@ -131,7 +131,7 @@ What if the disaster manager has decided that actually anyone in more than 80cm 
 Answer
 ......
 
-13. :guilabel:`Click` InaSAFE Print, save as “ people in need of evacuation above 80cm”
+13. :guilabel:`Click` InaSAFE Print, save as Â´people in need of evacuation above 80cmÂ´
 
 14. Before moving onto buildings, lets turn some layers off. In your Layer panel you will now have 5 layers, we are going to uncheck everything but:
 
@@ -146,7 +146,7 @@ Answer
 Buildings Affected
 ------------------
 
-15. Check that buildings is in the drop down menu under “How Many”
+15. Check that buildings is in the drop down menu under Â´How ManyÂ´
 
 16. :guilabel:`Click` on the arrow, as you can see you can not :guilabel:`Select` people, as we have uncheck it in the layer panel
 
@@ -226,7 +226,7 @@ Basic Aggregation - Optional
 .. image:: /static/socialisation/page_33_2.jpg
    :align: center 
 
-27. :guilabel:`Click` on the drop down menu for “Aggregation results by” and :guilabel:`Select` Subdistrict of Jakarta
+27. :guilabel:`Click` on the drop down menu for Â´Aggregation results byÂ´ and :guilabel:`Select` Subdistrict of Jakarta
 
 .. image:: /static/socialisation/page_33_3.jpg
    :align: center 

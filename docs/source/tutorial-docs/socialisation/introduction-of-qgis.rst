@@ -161,7 +161,7 @@ OpenLayer Plugin
 
 Installing OpenLayer through the QGIS plugin repository
 
-1. Go to **Plugins/Fetch Python Plugins...** This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
+1. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a couple of minutes for QGIS to contact its repository and show the list of plugins available
 2. Type openlayers into the filter box
 3. :guilabel:`Select` "OpenLayer Plugin" and click Install plugin - this will take a couple of minutes for the plugin to download and install
 4. A window should pop up saying: "Plugin installed successfully" - Click okay and then close the QGIS python plugin installer window
@@ -170,7 +170,7 @@ Installing OpenLayer through the QGIS plugin repository
 .. image:: /static/socialisation/openlayer1.PNG
    :align: center
    
-6. Select ‘Add Bing Aerial layer’
+6. Select Add Bing Aerial layer
 
 .. image:: /static/socialisation/aerial_bing.png
    :align: center

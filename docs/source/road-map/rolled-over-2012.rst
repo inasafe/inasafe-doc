@@ -105,7 +105,7 @@ Resourcing:
 Tickets: https://github.com/AIFDR/inasafe/issues?milestone=15 
 
 |project_name| Core development (30 June 2013)
-.......................................
+..............................................
 
 A significant number of outstanding issues remain for |project_name| to be finished and it is very likely that more will appear as a result of the planned trials in the form of new or improved features.
 

@@ -35,9 +35,9 @@ The following dialog will appear:
 
 The following options are available on the :guilabel:`Options Dialog`.
 
-**Only show visible layers in the InaSAFE dock:** This option will determine whether all (when unchecked) hazard and impact layers should be listed in the InaSAFE dock’s drop down menu. or (when checked) only visible layers.
+**Only show visible layers in the InaSAFE dock:** This option will determine whether all (when unchecked) hazard and impact layers should be listed in the InaSAFE docks drop down menu. or (when checked) only visible layers.
 
-**Set QGIS layer name from title in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree using the title keyword in the layer’s keywords file. If the layer has no ‘title’ in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply.
+**Set QGIS layer name from title in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree using the title keyword in the layers keywords file. If the layer has no title in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply.
 
 **Zoom to impact layer on scenario estimate completion:** This option will cause the map view to zoom in/out in order to completely contain the InaSAFE impact scenario map output when an analysis completes.
 
@@ -91,7 +91,7 @@ InaSAFE is published under the GPL version 2 license, the full text of which is 
 Under the terms of the license of you may freely copy, share and modify the software, as long as you make it available under the same license.
 
 **How is the project funded?**
-The project is being developed ‘for the good of humanity’ and has been jointly developed by BNPB, AusAid & the World Bank.
+The project is being developed for the good of humanity and has been jointly developed by BNPB, AusAid & the World Bank.
 
 **I found a bug, how should I report it?**
 We manage the project issues using a GitHub issue tracker. The InaSAFE issue tracker is open to everyone, though you will first need to register a (free) account on GitHub to use it. You can find the GitHub self-registration page https://github.com/signup/free.
@@ -114,7 +114,7 @@ One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not get 
 #. click :guilabel:`add`
 #. Name: Official QGIS Repository
 #. Url: http://plugins.qgis.org/plugins/plugins.xml
-#. :guilabel:`Save` it and the plugin repo list should update. If it doesn’t, close and open QGIS to force an update.
+#. :guilabel:`Save` it and the plugin repo list should update. If it doesnt, close and open QGIS to force an update.
 #. In the :guilabel:`python plugin manager` main tab now you should find InaSAFE available
  
 Thank you for attending this course.

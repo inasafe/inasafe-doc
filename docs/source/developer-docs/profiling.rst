@@ -14,9 +14,11 @@ cProfile.runctx()
 so::
 
     self.preparePolygonLayerForAggr(theClippedHazardFilename, myHazardLayer)
+    
 would become::
 
     cProfile.runctx('self.preparePolygonLayerForAggr(theClippedHazardFilename, myHazardLayer)', globals(), locals())
+    
 see also http://stackoverflow.com/questions/1031657/profiling-self-and-arguments-in-python
 
 You can put a raise statement right after the runctx call so the execution is

@@ -195,7 +195,7 @@ http://aifdr.github.com/inasafe/
 See also: http://help.github.com/articles/creating-project-pages-manually
 
 Updating the site
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Deployment of the site requires the following steps:
 

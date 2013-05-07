@@ -166,6 +166,7 @@ Command line environment setup
 
 
 .. _windows_shell_launcher-label:
+
 Create a shell launcher
 .......................
 
@@ -242,9 +243,8 @@ the QGIS libs::
 Assuming you get no error messages, you have a functional python command
 line environment which you can use to test QGIS functionality with.
 
-
-
 .. _windows-nose-setup:
+
 Nose testing tools
 ------------------
 

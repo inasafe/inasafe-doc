@@ -45,7 +45,7 @@ Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
 .. image:: /static/socialisation/buildings_zoom_2.png 
 
-.. note:: *that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.
+.. note:: *that the red buildings are situated in water greater than 1 meter and the green building are determined not affected as they are in waters less than 1 meter deep.*
 
 2. :guilabel:`Click once` on :guilabel:`*Estimate buildings affected*`  to make sure layer is highlighted in blue
 
@@ -59,7 +59,7 @@ Here I clicked on the building circled in the above picture to result is below. 
 
 .. image:: /static/socialisation/identy_results.png 
 
-.. note:: *As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.
+.. note:: *As mentioned before, this information was gathered by the Provincial disaster managers, through an OpenStreetMap  data collection program.  They collect important structures and essential information about the building, such as name, address, type and building structural information.  Also included was if the building had roof access.*
 
 5. :guilabel:`Zoom back to full extent` using the Zoom Full tool
 
@@ -195,7 +195,7 @@ Adding Keywords
 
 29. :guilabel:`Read` through the error message (that occurs when you highlight *flood_osm_BPBD18113_jakarta* layer).  InaSAFE has identified that the layer does not have a keyword file.  As explained on page 10.
 
-.. image:: /static/en/error-display.png
+.. image:: /static/error-display.png
 
 30. :guilabel:`Click` on the keyword editor
 
@@ -239,12 +239,12 @@ Answer  _______________________________________
 
 39. :guilabel:`Click InaSAFE Print`, save accordingly
 
-Now that you have run InaSAFE to find out “how many buildings might be affected”, lets find out how many people.
+Now that you have run InaSAFE to find out how many buildings might be affected, lets find out how many people.
 
 Evacuation as a percentage
 ..........................
 
-.. note:: *We were able to determine how many people needed to be evacuate in the last scenario by specifying how deep the water had to be for the location to be determined unsafe.  However when you don’t know how deep the water is and you only know the flooded area, it is hard to determine how many people will need evacuating. InaSAFE therefore needs your help!*
+.. note:: *We were able to determine how many people needed to be evacuate in the last scenario by specifying how deep the water had to be for the location to be determined unsafe.  However when you dont know how deep the water is and you only know the flooded area, it is hard to determine how many people will need evacuating. InaSAFE therefore needs your help!*
 
 Instead of determining how many people will be evacuated by  a spatial area, this scenario used the affected population. InaSAFE asks the user to input a percentage of the affected population that could be evacuated.
 

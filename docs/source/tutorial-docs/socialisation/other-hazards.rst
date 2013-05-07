@@ -22,7 +22,7 @@ Participants are able to:
 Volcanoes in Indonesia
 ----------------------
 
-There are 129 active volcanoes in Indonesia, and its always valuable to know how many people, or how much infrastructure is in a certain perimeter of the vent.Hence InaSAFE is able to use a vent location (point) as a hazard layer, the dataset that we are going to use came from downloading locations from Smithsonian website.  You may ask “How can we use a point to figure out impact? InaSAFE needs your help!.
+There are 129 active volcanoes in Indonesia, and its always valuable to know how many people, or how much infrastructure is in a certain perimeter of the vent.Hence InaSAFE is able to use a vent location (point) as a hazard layer, the dataset that we are going to use came from downloading locations from Smithsonian website.  You may ask “How can we use a point to figure out impact? InaSAFE needs your help!.
 
 1. :guilabel:`Open a QGIS project` called Volcano_Indonesia.qgs - **File/Open Project...** , :guilabel:`navigate` to InaSAFE projects and select Volcano_Indonesia
 
@@ -36,7 +36,7 @@ Select Feature and Save
 4. :guilabel:`select` NAME from dropdown menu (circle 2)
 5. :guilabel:`Click search` (circle 3) This will select only the Volcano that have Merapi in the name column
 6. :guilabel:`Check` “Show selected only" (circle 4) This will identify only the selected layers
-7. :guilabel:`Click` on “Pan map to the selected row” (circle 5) Selected layer is centre  on the map canvas
+7. :guilabel:`Click` on “Pan map to the selected row” (circle 5) Selected layer is centre  on the map canvas
 8. Close Attribute Table (circle 6)
 
 .. image:: /static/socialisation/merapi_attribute2.png
@@ -144,6 +144,7 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
 30. Notice the difference between the first **people** layer and the second, the second one has a source of AsiaPop rescale, keep this in mind for the next step.
 31. In the **How many** drop box pick the top **people**.
 32. :guilabel:`Use` the Pan Map tool to move the map slightly.
+
 (:guilabel:`click hold and slightly move the mouse` - this is just to reset the extent)
 
 Memory usage warning
@@ -190,7 +191,7 @@ _____________________________________________________
 Will a building fall down in an earthquake?
 -------------------------------------------
 
-As we are all aware, its generally not the earthquake that kills its the collapsing buildings that kill the majority of the people. Hence understanding the structure of the building and how they may act under certain shaking is crucial in understanding the impact of an earthquake.  Unfortunately  earthquakes cover a large area, so mapping every structure in that area is extensive.  In Padang the international OpenStreetMap community assisted mapping, totalling roughly 95,000 structures. 
+As we are all aware, its generally not the earthquake that kills its the collapsing buildings that kill the majority of the people. Hence understanding the structure of the building and how they may act under certain shaking is crucial in understanding the impact of an earthquake.  Unfortunately  earthquakes cover a large area, so mapping every structure in that area is extensive.  In Padang the international OpenStreetMap community assisted mapping, totalling roughly 95,000 structures. 
 
 Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
@@ -252,14 +253,14 @@ Map Canvas Extent
 55. :guilabel:`Run` steps 45-53 again place your 2 results below
 56. How many buildings are estimated to be flooded
 
-ANSWER _____________________________________________________________
+ANSWER _____________________________________________________________
 
 57.How many people are estimated to need evacuation
 
 ANSWER _____________________________________________________________
 
-.. Note:: You will now see that your results are different than the original InaSAFE runs,  this is because your extent window determines the area in which you are analysing the data. The next chapter will show you how to change this if needed.*
+.. Note:: You will now see that your results are different than the original InaSAFE runs,  this is because your extent window determines the area in which you are analysing the data. The next chapter will show you how to change this if needed.*
 
-You have now gone through InaSAFE using 4 different natural hazards, changing a variety of paramaters and analysing the results.  This chapter has been designed to help you understand a little more about InaSAFE as well as where you can go for help.
+You have now gone through InaSAFE using 4 different natural hazards, changing a variety of paramaters and analysing the results.  This chapter has been designed to help you understand a little more about InaSAFE as well as where you can go for help.
 
 

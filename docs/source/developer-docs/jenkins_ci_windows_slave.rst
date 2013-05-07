@@ -4,7 +4,7 @@ Set up of Windows 'slave' builds for Jenkins
 Outline of procedure:
 ---------------------
 
-Set up a virtual machine. In our testing regieme we will be using:
+Set up a virtual machine. In our testing regime we will be using:
 
 * Windows 8 64bit
 * Windows 8 32bit
@@ -189,11 +189,10 @@ Next populate the options in:
 * :menuselection:`Jenkins --> Manage Jenkins --> Configuration --> Git Plugins`:
 
 * :menuselection:`Global Config user.name Value` : :kbd:`<your name>`
-* :menuselection:`Global Config user.email Value` : :kbd:`<your@email.com>
+* :menuselection:`Global Config user.email Value` : :kbd:`<your@email.com>`
 * :menuselection:`Create new accounts base on author/committer's email` : no
 
-Now click the :guiselection:`Save Button` to save your global configuration
-changes.
+Now click the :guilabel:`SaveButton` to save your global configuration changes.
 
 Job Configuration
 .................

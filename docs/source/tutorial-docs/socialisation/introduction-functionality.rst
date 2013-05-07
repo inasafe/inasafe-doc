@@ -55,6 +55,7 @@ Population
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: ASEAN +
 :About: High resolution, contemporary data on human population distributions are a prerequisite for the accurate measurement of the impacts of population growth, for monitoring changes and for planning interventions. The AsiaPop project was initiated in July 2011 with an aim of producing detailed and freely-available population distribution maps for the whole of Asia.
+
 The raster pixel size is 100m by 100m.
 
 .. image:: /static/socialisation/asia_pop.png
@@ -76,7 +77,7 @@ Structures
 AusAID has been working with the Humanitarian OpenStreetMap Team over the last 2 years in piloting and training OpenStreetMap in Indonesia.  The result so far is over 800,000 buildings have been mapped.  
 The scenarios we will look at within this workshop are situated in Jakarta, Merapi (Central Java and Yogyakarta), Sumatra (specifically Padang) and Maumere, Flores. Each one of these areas has a different OpenStreetMap data collection methodology. Below will explain the methodologies used in Jakarta and Padang.
 
-:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and BNPB (Nationals Disaster Managers) with assistance from AIFDR (Australia-Indonesia Facility for Disaster Reduction), the World Bank, UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held workshops in each of Jakarta’s 6 Districts in order to help Village Heads map their community boundaries and major infrastructure. Over 500 representatives from Jakarta’s 267 Villages participated in these workshops and have mapped an impressive 6,000 buildings and all 2,668 sub-village boundaries (Rukun Warga-RW). Go to http://www.aifdr.org/?p=619
+:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and BNPB (Nationals Disaster Managers) with assistance from AIFDR (Australia-Indonesia Facility for Disaster Reduction), the World Bank, UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held workshops in each of Jakartas 6 Districts in order to help Village Heads map their community boundaries and major infrastructure. Over 500 representatives from Jakartas 267 Villages participated in these workshops and have mapped an impressive 6,000 buildings and all 2,668 sub-village boundaries (Rukun Warga-RW). Go to http://www.aifdr.org/?p=619
 :Padang: Post Hati's earthquake in 2010, there was a huge effort to map Hati through OSM, coordinating this effort was very hard, and hence AusAID subsequently funded the creation of OSM tasking Server.  The OSM tasking server is a web-base tool where you are able to select your own square to map.  The first pilot of the web-tool was in Padang, the specified area is now 100% finished with over 95,000 buildings mapped. However the buildings are purely footprints, an on the ground mapping effort is needed to record what type of building it is.  The tool is now being used across world to coordinate OSM mapping efforts. Go to http://tasks.hotosm.org/
 
 Hazard Layers used in Practical
@@ -140,8 +141,7 @@ Earthquake
 :Source: Badan Geologi and AIFDR
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Padang
-:About: A shakemap is a representation of ground shaking produced by an earthquake.  This particular scenario was modelled based on the 30 September 2009 Mw 7.9 earthquake in Padang.
-ShakeMaps are generated automatically following moderate and large earthquakes by USGS. Go to http://earthquake.usgs.gov/earthquakes/map/
+:About: A shakemap is a representation of ground shaking produced by an earthquake.  This particular scenario was modelled based on the 30 September 2009 Mw 7.9 earthquake in Padang. ShakeMaps are generated automatically following moderate and large earthquakes by USGS. Go to http://earthquake.usgs.gov/earthquakes/map/
 
 Pre-event / scenario based shakemaps need to be modelled by earthquake specialist.
 

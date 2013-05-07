@@ -103,7 +103,7 @@ Resources obtained by:
 Linifiniti Sphinx Theme
 
 Manual licenced under:
-.....................
+......................
 
 Create Commons by Attribution by BNPB/AIFDR/GFDRR.	
 

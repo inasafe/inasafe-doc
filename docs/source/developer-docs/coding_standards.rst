@@ -51,7 +51,7 @@ Please observe the following coding standards when working on the codebase:
   * All type R: Refactor suggestions such as limiting the number of local
                 variables. We may bring some back later.
   * All type I: Information only
-  * W0142: Allow the Python feature F(*args, **kwargs)
+  * W0142: Allow the Python feature F(\*args, \*\*kwargs)
   * W0201: Allow definition of class attributes outside the constructor.
   * W0212: Allow access to protected members (e.g. _show_system_info)
   * W0231: Allow classes without constructors.

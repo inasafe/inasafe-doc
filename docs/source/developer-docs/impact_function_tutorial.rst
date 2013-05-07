@@ -5,8 +5,7 @@ Impact Function Tutorial
 This is a simple tutorial for writing of InaSAFE impact functions.
 
 .. note:: This is an old text that needs to be verified, but it may be helpful
-and can serve as a starting point for additional documentation.
-
+   and can serve as a starting point for additional documentation.
 
 ------------
 Introduction

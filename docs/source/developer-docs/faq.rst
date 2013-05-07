@@ -100,7 +100,7 @@ See also
 http://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script
 
 Why do I got 99999999 (or another big number) instead of NaN when I saved vector files?
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 InaSAFE needs to convert NaN to 99999999 or more specifically 8 digits of 9
 because NaN is not intepreted correclty on Windows. You can read more

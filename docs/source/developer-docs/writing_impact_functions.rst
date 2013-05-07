@@ -47,14 +47,16 @@ function in question.
 As a minimum, one must import functionality specific to the impact
 function framework, but depending on the usage other standard Python modules
 may be imported here. A minimal import section contains:
+
 ::
-    from safe.impact_functions.core import (FunctionProvider,
+
+  from safe.impact_functions.core import (FunctionProvider,
                                             get_hazard_layer,
                                             get_exposure_layer,
                                             get_question,
                                             get_function_title)
 
-    from safe.common.tables import Table, TableRow
+  from safe.common.tables import Table, TableRow
 
 The imported elements are
 
@@ -91,6 +93,7 @@ Additionally, and depending on the type of the resulting layer, a typical import
 
 or:
 ::
+
     from safe.storage.vector import Vector
 
 See `Raster <http://inasafe.org/api-docs/safe/storage/raster.html#module-safe.storage.raster>`_ and `Vector <http://inasafe.org/api-docs/safe/storage/raster.html#module-safe.storage.vector>`_ documentation for details.
