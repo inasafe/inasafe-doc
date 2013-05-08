@@ -16,7 +16,7 @@ from safe.api import (get_documentation,
                       get_plugins,
                       is_function_enabled,
                       get_doc_string)
-from gen_rst_script import (create_dirs, create_rst_file, insafe_dir_path)
+from gen_rst_script import (create_dirs, write_rst_file, insafe_dir_path)
 from third_party.odict import OrderedDict
 
 doc_dir = os.path.join('docs', 'source', 'user-docs')
@@ -74,7 +74,7 @@ def gen_rst_doc(impfunc_doc, impfunc_doc_str):
             content_rst += '\n' + '-' * len('Doc String') + '\n\n'
             content_rst += my_doc_str
 
-        create_rst_file(impact_func_doc_path, myFuncName.replace(' ', ''),
+        write_rst_file(impact_func_doc_path, myFuncName.replace(' ', ''),
                         content_rst)
 
 
@@ -101,7 +101,7 @@ def gen_impact_func_index(list_unique_identifier=None):
         content_rst += '   ' + impact_func_doc_dir + os.sep + \
                        ui.replace(' ', '') + '\n'
 
-    create_rst_file(os.path.join(insafe_dir_path, doc_dir),
+    write_rst_file(os.path.join(insafe_dir_path, doc_dir),
                     'impact_functions_doc',
                     content_rst)
 
