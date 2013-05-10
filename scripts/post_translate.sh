@@ -1,7 +1,7 @@
 #!/bin/bash
-export LD_LIBRARY_PATH=/opt/qgis18/lib:/opt/grass64/grass-6.4.3svn/lib:$LD_LIBRARY_PATH
-export PYTHONPATH=/opt/qgis18/share/qgis/python:/home/macho/Projects/linfiniti/inasafe-dev:$PYTHONPATH
-export QGIS_PREFIX_PATH=/opt/qgis18
+export QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
+export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
+export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$HOME/dev/python/inasafe-dev:$PYTHONPATH
 export QGIS_DEBUG=0
 export QGIS_LOG_FILE=/dev/null
 export QGIS_DEBUG_FILE=/dev/null
@@ -81,6 +81,7 @@ do
   #
   #        HTML Generation
   #
+
   #################################
 
   # Now prepare the index-[locale] template which is a manually translated,
@@ -127,10 +128,10 @@ do
   cp resources/InaSAFE_footer.png ${BUILDDIR}/latex/${LOCALE}/
   cd ${BUILDDIR}/latex/${LOCALE}/
   # Manipulate our latex a little - first add a standard footer
-  
+
   FOOTER1="\usepackage{wallpaper}"
   FOOTER2="\LRCornerWallPaper{1}{InaSAFE_footer.png}"
-  
+
   # need to build 3x to have proper toc and index
   texi2pdf --quiet InaSAFE-Documentation.tex
   texi2pdf --quiet InaSAFE-Documentation.tex

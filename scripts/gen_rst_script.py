@@ -77,10 +77,10 @@ def create_module_rst_file(module_name):
         module_name : name of the module.
     """
 
-    return_text = 'Module:  ' + module_name[:-3]
+    return_text = 'Module:  ' + module_name
     dash = '=' * len(return_text)
     return_text += '\n' + dash + '\n\n'
-    return_text += '.. automodule:: ' + module_name[:-3] + '\n\n'
+    return_text += '.. automodule:: ' + module_name + '\n\n'
     return_text += '      :members:\n\n'
     return_text += 'This module forms part of the `InaSAFE '
     return_text += '<http://inasafe.org>`_ tool.'
@@ -96,19 +96,19 @@ def create_dirs(path):
         os.makedirs(path)
 
 
-def write_rst_file(path_file, file_name, content):
+def write_rst_file(file_path, file_name, content):
     """Shorter procedure for creating rst file
     """
 
-    create_dirs(os.path.split(os.path.join(path_file, file_name))[0])
+    create_dirs(os.path.split(os.path.join(file_path, file_name))[0])
     try:
-        fl = open(os.path.join(path_file, file_name + '.rst'), 'w+')
+        fl = open(os.path.join(file_path, file_name + '.rst'), 'w+')
         fl.write(content)
         fl.close()
 
     except Exception, e:
-        print 'Creating ', os.path.join(path_file, file_name + '.rst'), \
-              ' failed: ', e
+        print ('Creating %s failed' % os.path.join(
+            file_path, file_name + '.rst'), e)
 
 
 def get_python_files_from_list(files, excluded_files=None):
@@ -188,44 +188,47 @@ def clean_api_docs_dirs():
     return inasafe_docs_path
 
 
-################################################################################
-
-
-def create_api_docs(dir_path, doc_path, max_depth=2):
+def create_api_docs(inasafe_code_path, inasafe_docs_path, max_depth=2):
     """Function for generating .rst file for all .py file in dir_path folder.
-        dir_path : path of the folder
+        inasafe_code_path : path of the folder
     """
-
-    dir_path_head = os.path.split(dir_path)[0]
-    len_dir_path = len(dir_path_head) + 1
-    doc_path = os.path.abspath(doc_path)
-    for path, dirs, files in os.walk(dir_path):
+    base_path = os.path.split(inasafe_code_path)[0]
+    for package, subpackages, candidate_files in os.walk(inasafe_code_path):
         # Checking __init__.py file
-        if '__init__.py' not in files:
+        if '__init__.py' not in candidate_files:
             continue
         # Creating directory for the package
-
-        new_dir = os.path.join(doc_path, path[len_dir_path:])
-        create_dirs(new_dir)
+        package_relative_path = package.replace(base_path + os.sep, '')
+        full_package_name = package_relative_path.replace(os.sep, '.')
+        new_rst_dir = os.path.join(inasafe_docs_path, package_relative_path)
+        create_dirs(new_rst_dir)
 
         # Create index_file for the directory
-        python_files = get_python_files_from_list(files)
-        package = string.replace(path[len_dir_path:], os.sep, '.')
+        modules = get_python_files_from_list(candidate_files)
         index_file_text = create_package_level_rst_index_file(
-            package, max_depth, python_files, dirs)
+            package_name=full_package_name,
+            max_depth=max_depth,
+            modules=modules,
+            inner_packages=subpackages)
+
+        index_package_path = os.path.join(
+            inasafe_docs_path, package_relative_path)
+        # calculate dir one up from package to store the index in
+        index_base_path, package_base_name = os.path.split(index_package_path)
+
         write_rst_file(
-            path_file=doc_path,
-            file_name=package,
+            file_path=index_base_path,
+            file_name=package_base_name,
             content=index_file_text)
 
         # Creating .rst file for each .py file
-        for py_file in python_files:
-            py_module_text = \
-                create_module_rst_file(string.replace(
-                    path[len_dir_path:] + '.' + py_file, os.sep, '.'))
+        for module in modules:
+            module = module[:-3]  # strip .py off the end
+            py_module_text = create_module_rst_file(
+                '%s.%s' % (full_package_name, module))
             write_rst_file(
-                path_file=new_dir,
-                file_name=py_file[:-3],
+                file_path=new_rst_dir,
+                file_name=module,
                 content=py_module_text)
 
 
@@ -249,16 +252,18 @@ def create_safe_qgis_api_docs(inasafe_code_path, inasafe_docs_path, max_depth):
     docs_safe_qgis_path = os.path.join(inasafe_docs_path, 'safe_qgis')
     create_dirs(docs_safe_qgis_path)
     for module in python_module_files:
+        module = module[:-3]  # strip .py from module name
         safe_qgis_text = create_module_rst_file('safe_qgis.' + module)
-        write_rst_file(docs_safe_qgis_path, module[:-3], safe_qgis_text)
+        write_rst_file(docs_safe_qgis_path, module, safe_qgis_text)
 
     # Creating safe_qgis_test module docs
     docs_safe_qgis_tests_path = os.path.join(inasafe_docs_path,
                                              'safe_qgis_tests')
     create_dirs(docs_safe_qgis_tests_path)
     for module in python_test_files:
+        module = module[:-3]  # strip .py from module name
         safe_qgis_text = create_module_rst_file('safe_qgis.' + module)
-        write_rst_file(docs_safe_qgis_tests_path, module[:-3], safe_qgis_text)
+        write_rst_file(docs_safe_qgis_tests_path, module, safe_qgis_text)
 
 
 def main():
@@ -269,9 +274,10 @@ def main():
     create_top_level_index(inasafe_docs_path, max_depth)
     create_safe_qgis_api_docs(inasafe_code_path, inasafe_docs_path, max_depth)
     # For general packages and modules in safe package
+    inasafe_code_path = os.path.join(inasafe_code_path, 'safe')
     create_api_docs(
-        dir_path=os.path.join(inasafe_code_path, 'safe'),
-        doc_path=inasafe_docs_path,
+        inasafe_code_path=inasafe_code_path,
+        inasafe_docs_path=inasafe_docs_path,
         max_depth=max_depth)
 
 
