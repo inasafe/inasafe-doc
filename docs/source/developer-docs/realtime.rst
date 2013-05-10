@@ -9,7 +9,7 @@ though in future we envisage additional support for other disaster types being
 facilitated.
 
 .. note:: This work was funded by the Australia-Indonesia Facility for Disaster
-          Reduction, Geoscience Australia and the GFDRR. We thank you for your
+          Reduction, Geoscience Australia and the World Bank-GFDRR. We thank you for your
           support.
 
 Historical Note
@@ -18,7 +18,7 @@ Historical Note
 The original prototype of the realtime system was implemented by Ole Nielsen
 (AusAID). The subsequent port of the realtime system to InaSAFE was implemented
 by Tim Sutton (Linfiniti Consulting CC., funded by The World Bank and the
-AIFDR).
+AIFDR-AUSAID).
 
 
 Supported Platforms

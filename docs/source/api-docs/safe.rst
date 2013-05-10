@@ -4,12 +4,10 @@ Package::safe
 .. toctree::
    :maxdepth: 2
 
-   safe/api
    safe/defaults
-   safe/common
-   safe/impact_functions
-   safe/test
-   safe/i18n
-   safe/engine
+   safe/api
    safe/storage
+   safe/impact_functions
+   safe/common
+   safe/engine
    safe/postprocessors

@@ -1,7 +1,7 @@
-Module:  safe.common.dynamic_translations
+Module:  safe_qgis.test_inasafe_lightmaps
 =========================================
 
-.. automodule:: safe.common.dynamic_translations
+.. automodule:: safe_qgis.test_inasafe_lightmaps
 
       :members:
 

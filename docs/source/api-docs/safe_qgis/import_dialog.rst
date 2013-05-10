@@ -1,7 +1,7 @@
-Module:  safe.storage.projection
+Module:  safe_qgis.import_dialog
 ================================
 
-.. automodule:: safe.storage.projection
+.. automodule:: safe_qgis.import_dialog
 
       :members:
 

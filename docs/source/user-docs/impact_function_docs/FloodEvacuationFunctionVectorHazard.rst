@@ -8,7 +8,7 @@ Overview
 Flood Evacuation Function Vector Hazard
 
 **Author**: 
-AIFDR
+AIFDR-AUSAID
 
 **Rating**: 
 4
@@ -41,7 +41,7 @@ Docstring
 
 Impact function for vector flood evacuation
 
-    :author AIFDR
+    :author AIFDR-AUSAID
     :rating 4
     :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami'] and                     layertype=='vector'
 

@@ -8,7 +8,7 @@ Overview
 Categorised Hazard Population Impact Function
 
 **Author**: 
-AIFDR
+AIFDR-AUSAID
 
 **Rating**: 
 2
@@ -44,7 +44,7 @@ Docstring
 
 Plugin for impact of population as derived by categorised hazard
 
-    :author AIFDR
+    :author AIFDR-AUSAID
     :rating 2
     :param requires category=='hazard' and                     unit=='normalised' and                     layertype=='raster'
 

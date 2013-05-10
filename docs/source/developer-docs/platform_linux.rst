@@ -78,7 +78,7 @@ you are a developer, the simplest way to do that is go to
 page like this::
 
    git clone git://github.com/AIFDR/inasafe.git  (for read only)
-   git clone git@github.com:AIFDR/inasafe.git    (to commit changes)
+   git clone git@github.com:AIFDR-AUSAID/inasafe.git    (to commit changes)
 
 
 QGIS installed in a non-standard location

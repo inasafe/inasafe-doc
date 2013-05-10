@@ -1,7 +1,7 @@
-Module:  safe.common.test_interpolate
+Module:  safe_qgis.test_import_dialog
 =====================================
 
-.. automodule:: safe.common.test_interpolate
+.. automodule:: safe_qgis.test_import_dialog
 
       :members:
 

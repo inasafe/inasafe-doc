@@ -8,7 +8,7 @@ Overview
 Flood Evacuation Function
 
 **Author**: 
-AIFDR
+AIFDR-AUSAID
 
 **Rating**: 
 4
@@ -44,7 +44,7 @@ Docstring
 
 Impact function for flood evacuation
 
-    :author AIFDR
+    :author AIFDR-AUSAID
     :rating 4
     :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami'] and                     layertype=='raster' and                     unit=='m'
 

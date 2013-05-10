@@ -1,7 +1,7 @@
-Module:  safe.storage.test_utilities
+Module:  safe_qgis.inasafe_lightmaps
 ====================================
 
-.. automodule:: safe.storage.test_utilities
+.. automodule:: safe_qgis.inasafe_lightmaps
 
       :members:
 

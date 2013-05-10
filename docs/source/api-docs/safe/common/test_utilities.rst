@@ -1,7 +1,7 @@
-Module:  safe.impact_functions.core
+Module:  safe.common.test_utilities
 ===================================
 
-.. automodule:: safe.impact_functions.core
+.. automodule:: safe.common.test_utilities
 
       :members:
 
