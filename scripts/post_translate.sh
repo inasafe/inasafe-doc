@@ -133,9 +133,9 @@ do
   FOOTER2="\LRCornerWallPaper{1}{InaSAFE_footer.png}"
 
   # need to build 3x to have proper toc and index
-  texi2pdf --quiet InaSAFE-Documentation.tex
-  texi2pdf --quiet InaSAFE-Documentation.tex
-  texi2pdf --quiet InaSAFE-Documentation.tex
+  texi2pdf --quiet InaSAFE-Documentation.tex > /dev/null 2>&1
+  texi2pdf --quiet InaSAFE-Documentation.tex > /dev/null 2>&1
+  texi2pdf --quiet InaSAFE-Documentation.tex > /dev/null 2>&1
   mv InaSAFE-Documentation.pdf ${PDFDIR}/InaSAFE-${VERSION}-Documentation-${LOCALE}.pdf
   popd
 done
