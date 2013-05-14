@@ -12,7 +12,7 @@ from safe.storage.raster import Raster
 class FloodPopulationEvacuationFunction(FunctionProvider):
     """Impact function for flood evacuation (tutorial)
 
-    :author AIFDR-AUSAID
+    :author AIFDR-AusAID
     :rating 4
     :param requires category=='hazard' and \
                     subcategory in ['flood', 'tsunami'] and \

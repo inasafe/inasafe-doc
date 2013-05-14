@@ -8,7 +8,7 @@ Overview
 Volcano Polygon Hazard Population
 
 **Author**: 
-AIFDR-AUSAID
+AIFDR-AusAID
 
 **Rating**: 
 4
@@ -41,7 +41,7 @@ Docstring
 
 Impact function for volcano hazard zones impact on population
 
-    :author AIFDR-AUSAID
+    :author AIFDR-AusAID
     :rating 4
     :param requires category=='hazard' and                     subcategory in ['volcano'] and                     layertype=='vector'
 

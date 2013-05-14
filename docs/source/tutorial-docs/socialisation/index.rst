@@ -66,7 +66,7 @@ Training Materials
 
 Credits
 -------
-InaSAFE Socialisation Training Manual was developed by Australia-Indonesia Facility for Disaster Reduction(AIFDR-AUSAID) - AusAID, The National Agency for Disaster Management, Indonesia and World Bank ‘s Global Facility for Disaster Reduction and Recovery Labs (World Bank-GFDRR). 
+InaSAFE Socialisation Training Manual was developed by Australia-Indonesia Facility for Disaster Reduction (AIFDR-AusAID), The National Agency for Disaster Management, Indonesia and World Bank ‘s Global Facility for Disaster Reduction and Recovery Labs (World Bank-GFDRR). 
 
 Manual based on:
 ................
@@ -82,7 +82,7 @@ March 2013
 For inquiries, contact:
 .......................
 
-Australia-Indonesia Facility for Disaster Reduction (AIFDR-AUSAID), 
+Australia-Indonesia Facility for Disaster Reduction (AIFDR-AusAID), 
 
 Menara Thamrin Suite 1505 
 
@@ -105,11 +105,11 @@ Linifiniti Sphinx Theme
 Manual licenced under:
 ......................
 
-Create Commons by Attribution by BNPB/AIFDR-AUSAID/World Bank-GFDRR.	
+Create Commons by Attribution by BNPB/AIFDR-AusAID/World Bank-GFDRR.	
 
 Author:
 .......
 
-`Kristy Van Putten <kristy.vanputten@gmail.com>`_, Spatial Analyst/Data manager AIFDR-AUSAID
+`Kristy Van Putten <kristy.vanputten@gmail.com>`_, Spatial Analyst/Data manager AIFDR-AusAID
 
 

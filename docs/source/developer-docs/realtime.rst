@@ -18,7 +18,7 @@ Historical Note
 The original prototype of the realtime system was implemented by Ole Nielsen
 (AusAID). The subsequent port of the realtime system to InaSAFE was implemented
 by Tim Sutton (Linfiniti Consulting CC., funded by The World Bank and the
-AIFDR-AUSAID).
+AIFDR-AusAID).
 
 
 Supported Platforms

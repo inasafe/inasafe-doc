@@ -154,7 +154,7 @@ Here is a log of the options we set for the Jenkins job:
 * :guilabel:`Xvfb` set to ticked.
 * :guilabel:`GitHub project` set to :kbd:`https://github.com/AIFDR/inasafe/`
 * :guilabel:`Source Code Management` check :guilabel:`Git` and set to
-  :kbd:`git@github.com:AIFDR-AUSAID/inasafe.git`
+  :kbd:`git@github.com:AIFDR-AusAID/inasafe.git`
 * :guilabel:`Branch Specifier (blank for default)` set to :kbd:`master`
 * :guilabel:`Repository browser` set to :kbd:`auto`
 * :guilabel:`Build Triggers` set to
@@ -281,7 +281,7 @@ to be done once and then Jenkins will work for all github projects.
 Back on the server::
 
    jenkins@maps:~$ cd /tmp/
-   jenkins@maps:/tmp$ git clone git@InaSAFEGithub:AIFDR-AUSAID/inasafe.git
+   jenkins@maps:/tmp$ git clone git@InaSAFEGithub:AIFDR-AusAID/inasafe.git
    Cloning into inasafe...
    The authenticity of host 'github.com (207.97.227.239)' can't be established.
    RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.

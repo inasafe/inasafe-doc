@@ -8,7 +8,7 @@ Overview
 Volcano Building Impact
 
 **Author**: 
-AIFDR-AUSAID
+AIFDR-AusAID
 
 **Rating**: 
 4
@@ -41,7 +41,7 @@ Docstring
 
 Risk plugin for volcano evacuation
 
-    :author AIFDR-AUSAID
+    :author AIFDR-AusAID
     :rating 4
     :param requires category=='hazard' and                     subcategory in ['volcano'] and                     layertype=='vector'
 
