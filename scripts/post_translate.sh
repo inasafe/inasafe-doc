@@ -20,6 +20,7 @@ pushd .
 cd $DOCROOT
 
 SPHINXBUILD=`which sphinx-build`
+TEXI2PDF=`which texi2pdf`
 
 # GENERATE PDF AND HTML FOR FOLLOWING LOCALES (EN IS ALWAYS GENERATED)
 LOCALES='id'
@@ -133,6 +134,12 @@ do
   FOOTER2="\LRCornerWallPaper{1}{InaSAFE_footer.png}"
 
   # need to build 3x to have proper toc and index
+  if [ -z $TEXI2PDF ]
+    then
+      echo You do not have texinfo package installed. Please install!
+      exit
+  fi
+
   texi2pdf --quiet InaSAFE-Documentation.tex > /dev/null 2>&1
   texi2pdf --quiet InaSAFE-Documentation.tex > /dev/null 2>&1
   texi2pdf --quiet InaSAFE-Documentation.tex > /dev/null 2>&1
