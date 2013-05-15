@@ -137,7 +137,7 @@ do
   if [ -z $TEXI2PDF ]
     then
       echo You do not have texinfo package installed. Please install!
-      exit
+      exit 1
   fi
 
   texi2pdf --quiet InaSAFE-Documentation.tex > /dev/null 2>&1
