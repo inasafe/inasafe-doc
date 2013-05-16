@@ -8,6 +8,18 @@
   <Directory /home/web/inasafe-docs/>
     Order deny,allow
     Allow from all
+    # For theming directory listings where appropriate
+    Options Indexes FollowSymLinks
+    IndexOptions +FancyIndexing
+    IndexOptions +FoldersFirst
+    IndexOptions +XHTML
+    IndexOptions +HTMLTable
+    IndexOptions +SuppressRules
+    HeaderName /en/_static/directory-listing-header.html
+    ReadmeName /en/_static/directory-listing-footer.html
+    IndexStyleSheet "/en/_static/bootstrap/css/bootstrap.min.css"
+    IndexIgnore .htaccess /resource
+    AllowOverride None
   </Directory>
 
   ErrorLog /var/log/apache2/inasafe-docs.linfiniti.error.log
