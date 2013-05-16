@@ -19,6 +19,7 @@ This section of the documention describes how to use the |project_name| system.
    data_types
    using-qgis
    beginning_spatialdata_analysis
+   inter_spatialdata_analysis
    getting_involved
    faq
    known_issues
