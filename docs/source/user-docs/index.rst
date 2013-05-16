@@ -18,6 +18,7 @@ This section of the documention describes how to use the |project_name| system.
    inasafe_projects
    data_types
    using-qgis
+   beginning_spatialdata_analysis
    getting_involved
    faq
    known_issues
