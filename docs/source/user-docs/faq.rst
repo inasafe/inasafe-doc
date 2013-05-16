@@ -133,3 +133,11 @@ get the new plugin repo added to your repo list. To fix this you can do:
   close and open QGIS to force an update.
 * In the python plugin manager main tab now you should find InaSAFE available
 
+How do I fix KeywordDbError on Windows?
+---------------------------------------
+
+It’s an issue related to permission issue. Normally, it occurs when  
+the keyword.db is not writable by current user. The thing that you have to do 
+is re-run QGIS as administrator or re-install QGIS as administrator.
+
+Please see `InaSAFE issue #459 <https://github.com/AIFDR/inasafe/issues/459>`_ and `InaSAFE issue #569 <https://github.com/AIFDR/inasafe/issues/569>`_ for further information.
