@@ -1,5 +1,11 @@
 #!/bin/bash
-export QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
+if [ -d /usr/local/qgis-1.8/ ]
+then
+  export QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
+else
+  export QGIS_PREFIX_PATH=/usr/local/qgis1.8/
+fi
+
 export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
 export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$HOME/dev/python/inasafe-dev:$PYTHONPATH
 export QGIS_DEBUG=0
