@@ -18,6 +18,7 @@ body {
 
 h3 {
   font-size: 22px;
+  color: #000000;
 }
 
 #locales li{
@@ -48,11 +49,18 @@ h3 {
   background-color: #fdfdfd;
 }
 
+.navbar-inverse .navbar-inner {
+background: #f86a27; /* Old browsers */
+background: -moz-linear-gradient(top, #f86a27 0%, #f86a27 9%, #fbad5a 47%, #f9d4ae 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f86a27), color-stop(9%,#f86a27), color-stop(47%,#fbad5a), color-stop(100%,#f9d4ae)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f86a27 0%,#f86a27 9%,#fbad5a 47%,#f9d4ae 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f86a27 0%,#f86a27 9%,#fbad5a 47%,#f9d4ae 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f86a27 0%,#f86a27 9%,#fbad5a 47%,#f9d4ae 100%); /* IE10+ */
+background: linear-gradient(to bottom, #f86a27 0%,#f86a27 9%,#fbad5a 47%,#f9d4ae 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f86a27', endColorstr='#f9d4ae',GradientType=0 ); /* IE6-9 */
 
-.navbar-inner {
-    background-image: url('img/bg-navbar.png') !important;
-    background-repeat: repeat-x;
 }
+
 
 .centered {text-align: center}​
 
@@ -75,7 +83,7 @@ h3 {
     font-weight: bold;
     border: 1px dashed #ddd;
     background: #eee;
-    color: #E44A00;
+    color: #f86a27;
     padding-left: 3px;
     padding-right: 3px;
 }
@@ -133,7 +141,7 @@ h3 {
 }
 
 .hero-unit {
-    background-color: #fcd9a5;
+    background-color: #F9D4AE;
     padding: 5px;
     text-align: center;
 }
@@ -146,42 +154,45 @@ h3 {
     font-variant: full-width;
 }
 
+span.inasafe {
+   color: #f76926 !important;
+}
 
 .alert-info {
-color: #905600;
-background-color: #fcd9a5;
-border-color: #ffb13d;
+color: #f76926;
+background-color: #fee8d1;
+border-color: #fbad5a;
 }
 
 a:hover {
-color: #fcb040;
+color: #000000;
 text-decoration: underline;
 }
 a:hover, a:active {
 outline: 0;
 }
 a {
-color: #905600;
+color: #f76926;
 text-decoration: none;
 }
 
 .guilabel {
-color: #905600; 
+color: #FBAD5A;
 }
 
 .navbar-inverse .nav .active > a, .navbar-inverse .nav .active > a:hover, .navbar-inverse .nav .active > a:focus {
 color: #ffffff;
-background-color: #905600;
+background-color: #fbad5a;
 }
 
 .navbar-inverse .brand:hover,
 .navbar-inverse .nav > li > a:hover {
-  color: #fcb040;
+  color: #f76926;
 }
 
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
-  color: #fcb040;
+  color: #f76926;
   background-color: transparent;
 }
 

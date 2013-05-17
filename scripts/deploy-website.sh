@@ -9,12 +9,11 @@ sudo service apache2 reload
 if not contains('/etc/hosts', 'inasafe-docs.localhost')
     append('/etc/hosts', 127.0.0.1 inasafe-docs.localhost)
 
-
+chmod +x scripts/post_translate.sh
 scripts/post_translate.sh
 cp -r docs/output/html/* /home/web/inasafe-docs
-cp scripts/.htaccess /home/web/inasafe-docs
 cp -r docs/output/pdf /home/web/inasafe-docs/
-
+cp scripts/.htaccess /home/web/inasafe-docs
 
 cp scripts/directory-listing-*.html /home/web/inasafe-docs/en/_static/
 
