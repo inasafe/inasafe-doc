@@ -1,13 +1,25 @@
 #!/bin/bash
-if [ -d /usr/local/qgis-1.8/ ]
+INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
+QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
+
+if [ -d $QGIS_PREFIX_PATH ]
 then
   export QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
 else
   export QGIS_PREFIX_PATH=/usr/local/qgis1.8/
 fi
 
+if [ -d $INASAFE_DEV_PATH ]
+then
+  export INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
+else
+  echo Please set INASAFE_DEV_PATH as PATH to your local
+  echo clone of inasafe repository inside this script
+ exit 1
+fi
+
 export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
-export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$HOME/dev/python/inasafe-dev:$PYTHONPATH
+export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$INASAFE_DEV_PATH:$PYTHONPATH
 export QGIS_DEBUG=0
 export QGIS_LOG_FILE=/dev/null
 export QGIS_DEBUG_FILE=/dev/null

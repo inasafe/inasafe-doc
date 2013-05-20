@@ -2,14 +2,14 @@
 {% set title = 'Home' %}
 
 {% block hero %}
-    <h2>Welcome to the InaSAFE project!</h2>
+    <h2>Welcome to the <span class="inasafe">InaSAFE</span> project!</h2>
     <p>Indonesian Scenario Assement for Emergencies </p>
     <div id="myCarousel" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
             <div class="item centered"><img src="{{ pathto('_static/img/carousel/team.jpg', 1)}}"/>
                 <div class="carousel-caption">
-                    <h4>InaSAFE developer 'code sprint'</h4>
+                    <h4><span class="inasafe">InaSAFE</span> developer 'code sprint'</h4>
                 </div>
             </div>
             <div class="item"><img src="{{ pathto('_static/img/carousel/jakarta.jpg', 1)}}"/>
@@ -19,17 +19,24 @@
             </div>
             <div class="active item"><img src="{{ pathto('_static/img/carousel/screenshot.jpg', 1)}}"/>
                 <div class="carousel-caption">
-                    <h4>InaSAFE earthquake on buildings scenario.</h4>
+                    <h4><span class="inasafe">InaSAFE</span> earthquake on buildings scenario.</h4>
                 </div>
             </div>
             <div class="item"><img src="{{ pathto('_static/img/carousel/translators.jpg', 1)}}"/>
                 <div class="carousel-caption">
-                    <h4>InaSAFE developer training session.</h4>
+                    <h4><span class="inasafe">InaSAFE</span> developer training session.</h4>
                 </div>
             </div>
             <div class="item"><img src="{{ pathto('_static/img/carousel/hot-training.jpg', 1)}}"/>
                 <div class="carousel-caption">
-                    <h4>InaSAFE Train the Trainer session.</h4>
+                    <h4><span class="inasafe">InaSAFE</span> Train the Trainer session.</h4>
+                </div>
+            </div>
+            <div class="item"><img
+                    src="{{ pathto('_static/img/carousel/inasafelaunch.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> role out in
+                        Indonesia.</h4>
                 </div>
             </div>
         </div>
@@ -48,41 +55,43 @@
                 {# We put the admonition inside the span because adding border #}
                 {# to the span will mess up the layout #}
                 <div class="admonition">
-                    <h3>What is InaSAFE?</h3>
+                    <h3>What is <span class="inasafe">InaSAFE</span>?</h3>
                     <p><img src="{{ pathto('_static/img/logo.png', 1)}}"/>
-                        The goal of InaSAFE is to create a tool that can provide
-                        rapid and relevant information in order to understand risk
-                        related to events such as volcanic eruptions, inundation
-                        from flood / tsunami, earthquakes and so on.
+                        <span class="inasafe">InaSAFE</span> is free software that produces realistic natural hazard
+			impact scenarios for better planning, preparedness and response
+			activities. It provides a simple but rigorous way to combine data
+			from scientists, local governments and communities to provide
+			insights into the likely impacts of future disaster events.
                     </p>
                     <p>
-                        InaSAFE is a collaborative effort between the
-                        Australia Aid Agency in Indonesia, the BNPB
-                        (Indonesia), the World Bank-GFDRR, the Australia-Indonesia
-                        Facility for Disaster Reduction, Universitas Gadja Mada and
-                        other participating organisations.
+			<span class="inasafe">InaSAFE</span> was conceived and initially developed by the Indonesia’s
+			National Disaster Management Agency (BNPB) and the Australian
+			Agency for International Development, through the
+			Australia-Indonesia Facility for Disaster Reduction, the
+			World Bank - Global Facility for Disaster Reduction and Recovery
+			(World Bank-GFDRR).
                     </p>
 
                     <p>
-                        Indonesian Scenario Assessment for Emergencies (InaSAFE) is
-                        a Free and Open Source Software (FOSS) project, published
-                        under the <a href="http://www.gnu.org/licenses/gpl-3.0.txt">
-                        GPL V3 license</a>. As such you may freely download,
-                        share and (if you like) modify the software.
+			Indonesian Scenario Assessment for Emergencies (<span class="inasafe">InaSAFE</span>) is
+			a Free and Open Source Software (FOSS) project, published under
+			the <a href="http://www.gnu.org/licenses/gpl-3.0.txt">
+			GPL V3 license</a>. As such you may freely download, share and
+			(if you like) modify the software.
                     </p>
                 </div>
             </div>
             <div class="span4">
                 <div class="admonition">
-                    <h3>Install InaSAFE!</h3>
+                    <h3>Install <span class="inasafe">InaSAFE</span>!</h3>
                     <p><img alt=""
                             src="{{ pathto('_static/img/qgis_logo.png', 1)}}"/>
-                        InaSAFE is a plugin for Quantum GIS (QGIS). QGIS
-                        (and InaSAFE) works on OSX, Windows and Linux.
+                        <span class="inasafe">InaSAFE</span> is a plugin for Quantum GIS (QGIS). QGIS
+                        (and <span class="inasafe">InaSAFE</span>) works on OSX, Windows and Linux.
                         You can download QGIS for free at
                         <a href="http://download.qgis.org">download.qgis.org</a>
                     </p>
-                    <p>Once you have QGIS installed, you can install InaSAFE in 5
+                    <p>Once you have QGIS installed, you can install <span class="inasafe">InaSAFE</span> in 5
                         easy steps! Open a recent version of
                         <a href="http://qgis.org">QGIS</a> (1.7 or better) and do:
                     </p>
@@ -93,11 +102,11 @@
                         <li>Type <span class='kbd'>InaSAFE</span> in the
                             <span class='guilabel'>Filter</span> box.
                         </li>
-                        <li>Tick the box next to the InaSAFE plugin.</li>
+                        <li>Tick the box next to the <span class="inasafe">InaSAFE</span> plugin.</li>
                         <li>Click the <span class='guilabel'>Install/upgrade plugin
                             </span> button.
                         </li>
-                        <li>Close the plugin manager and InaSAFE should be
+                        <li>Close the plugin manager and <span class="inasafe">InaSAFE</span> should be
                             installed and ready to use.
                         </li>
                     </ol>
@@ -105,11 +114,11 @@
             </div>
             <div class="span4">
                 <div class="admonition">
-                    <h3>Help using InaSAFE</h3>
+                    <h3>Help using <span class="inasafe">InaSAFE</span></h3>
                     <p>
                     <img alt=""
                          src="{{ pathto('_static/img/documentation57.png', 1)}}"/>
-                    We are actively building up documentation for InaSAFE that
+                    We are actively building up documentation for <span class="inasafe">InaSAFE</span> that
                     includes tutorials, general help and developer documentation:
                     </p>
                     <div class="alert alert-block">
@@ -117,19 +126,19 @@
                         <li>
                             <a href="../en/contents.html">
                                 <i class="icon-file icon-black"></i>
-                                InaSAFE online (HTML) manual.
+                                <span class="inasafe">InaSAFE</span> online (HTML) manual.
                             </a>
                         </li>
                         <li>
                             <a href="../pdf/InaSAFE-1.2-Documentation-en.pdf">
                                 <i class="icon-file icon-black"></i>
-                                InaSAFE offline (PDF) manual.
+                                <span class="inasafe">InaSAFE</span> offline (PDF) manual.
                             </a>
                         </li>
                         <li>
                             <a href="../pdf/">
                                 <i class="icon-file icon-black"></i>
-                                InaSAFE offline archive of manuals.
+                                <span class="inasafe">InaSAFE</span> offline archive of manuals.
                             </a>
                         </li>
                     </ul>
@@ -153,12 +162,12 @@
 
         <div class="alert alert-info centered">
 	    Disclaimer: Neither AIFDR-AusAID, nor the World Bank-GFDRR take any
-            responsibility for the correctness of outputs from InaSAFE or decisions derived
+            responsibility for the correctness of outputs from <span class="inasafe">InaSAFE</span> or decisions derived
             as a consequence.
         </div>
 
         <div class="alert alert-info centered">
-            InaSAFE Video Wall
+            <span class="inasafe">InaSAFE</span> Video Wall
         </div>
 
         <ul class="thumbnails">
@@ -173,7 +182,7 @@
                     <div class="caption">
                         <h3>Introduction</h3>
                         <p>The video above provides a short introduction
-                            to InaSAFE.</p>
+                            to <span class="inasafe">InaSAFE</span>.</p>
                     </div>
                 </div>
             </li>
@@ -186,7 +195,7 @@
                     </div>
                     <div class="caption">
                         <h3>AMCDRR</h3>
-                        <p>Dr. Trevor Dhu demonstrating InaSAFE to
+                        <p>Dr. Trevor Dhu demonstrating <span class="inasafe">InaSAFE</span> to
                             Indonesian President Susilo Bambang Yudhoyono
                             at the 5th Asian Ministerial Conference on
                             Disaster Risk Reduction held in Yogyakarta,
@@ -211,7 +220,7 @@
         </ul>
 
         <div class="alert alert-info centered">
-            InaSAFE Supporters and Partners
+            <span class="inasafe">InaSAFE</span> Supporters and Partners
         </div>
 
         <ul class="thumbnails">
