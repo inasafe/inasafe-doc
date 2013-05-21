@@ -478,55 +478,82 @@ different. We also define a title for the generated map:
 
 
 The impact grid calculated above must be displayed as a layer so needs some appropriate colouring.
-In this case we define 8 classes and assign a colour for each. We set the lowest class to be
-transparent and the others solid as that will give a nice visual appearance showing only areas
-that are impacted. We label class 1 as low,
-class 4 as medium and class 7 as high:
+For this purpose, the developer needs to create a *style_info*. *style_info* is a dictionary that contains:
+1. style_type.
+   This element defines what kind of style that the output of impact function 
+   will have. Currently, InaSAFE supports 3 styles: rasterStyle, graduatedSymbol, and categorizedSymbol. The first one is used for raster layer, the rest are for vector layer.
+2. style_classes.
+   This element define the style properties. There are several elements for it. They are
+   1. colours.
+      colours define the colur of each class. The number of colour will be used as the number of class also. You can simply enumerate the colour in a list.
+   2. label. Label is used for labelling the classes in the style. This is also used for map report.
+      For categorizedSymbol, you can enumerate it. For rasterStyle and graduatedStyle, we recommend
+      to use several functions. They are:
+      - create_classes : create classes from an array / numpy.array in several classes.
+      - humanize_class : We used the result from create_classes to make list of tuple that represent
+        the class in human form.
+      - create_label : by using each tuple from the result of humanize_class, it create label for it.
+        You can also add extra string in the label.
+    3. transparency. For transparency value. We usually use 100% transparant for the first class. For
+       standard, please use 0-1 scale.
+    4. min : The value of minimum value in the class for graduatedSymbol. Just take classes[i] for
+       min in class i
+    5. max : The value of maximum value in the class for graduatedSymbol. Just take classes[i] for
+       max in class i
+    6. quantity : The value of supremum (maximum value) in the class for rasterStyle. Just take
+       classes[i] for it.
+    7. value : the value for each category in categorizedStyle.
+3. target_field.
+   This element define where the attribute of style is saved in attribute table in vector layer.
+
+Below is the example of creating style_info.
+::
+
+        # Create style
+        colours = ['#FFFFFF', '#38A800', '#79C900', '#CEED00',
+                   '#FFCC00', '#FF6600', '#FF0000', '#7A0000']
+        classes = create_classes(my_impact.flat[:], len(colours))
+        interval_classes = humanize_class(classes)
+        style_classes = []
+        for i in xrange(len(colours)):
+            style_class = dict()
+            if i == 1:
+                label = create_label(interval_classes[i], 'Low')
+            elif i == 4:
+                label = create_label(interval_classes[i], 'Medium')
+            elif i == 7:
+                label = create_label(interval_classes[i], 'High')
+            else:
+                label = create_label(interval_classes[i], 'High')
+            style_class['label'] = label
+            style_class['quantity'] = classes[i]
+            if i == 0:
+                transparency = 100
+            else:
+                transparency = 0
+            style_class['transparency'] = transparency
+            style_class['colour'] = colours[i]
+            style_classes.append(style_class)
+
+        style_info = dict(target_field=None,
+                          style_classes=style_classes,
+                          style_type='rasterStyle')
+
+For printing map purpose, InaSAFE need several attributes. They are:
+1. map_title
+2. legend_notes
+3. legend_units
+4. legend_title
+
+For a better explanation, this is the snippet for the example:
 
 ::
 
-        # Generate 8 equidistant classes across the range of flooded population
-        # 8 is the number of classes in the predefined flood population style
-        # as imported
-        classes = numpy.linspace(numpy.nanmin(I.flat[:]),
-                                 numpy.nanmax(I.flat[:]), 8)
-
-        # Define 8 colours - on for each class
-        colours = ['#FFFFFF', '#38A800', '#79C900', '#CEED00',
-                   '#FFCC00', '#FF6600', '#FF0000', '#7A0000']
-
-        # Create style associating each class with a colour and transparency.
-        style_classes = []
-        for i, cls in enumerate(classes):
-            if i == 0:
-                # Smallest class has 100% transparency
-                transparency = 100
-            else:
-                # All the others are solid
-                transparency = 0
-
-            # Create labels for three of the classes
-            if i == 1:
-                label = 'Low [%.2f people/cell]' % cls
-            elif i == 4:
-                label = 'Medium [%.2f people/cell]' % cls
-            elif i == 7:
-                label = 'High [%.2f people/cell]' % cls
-            else:
-                label = ''
-
-            # Style dictionary for this class
-            d = dict(colour=colours[i],
-                     quantity=cls,
-                     transparency=transparency,
-                     label=label)
-            style_classes.append(d)
-
-        # Create style info for impact layer
-        style_info = dict(target_field=None,  # Only for vector data
-                          legend_title='Population Density',
-                          style_classes=style_classes)
-
+        # For printing map purpose
+        map_title = tr('People in need of evacuation')
+        legend_notes = tr('Thousand separator is represented by \'.\'')
+        legend_units = tr('(people per cell)')
+        legend_title = tr('Population density')
 
 Finally, we create and return a new raster object based on the calculated impact grid ``I``.
 We also assign
@@ -536,13 +563,16 @@ InaSAFE assumes that every impact function returns a raster or vector layer.
 ::
 
         # Create raster object and return
-        R = Raster(I,
-                   projection=inundation.get_projection(),
-                   geotransform=inundation.get_geotransform(),
-                   name='Population which %s' % get_function_title(self),
+        R = Raster(my_impact,
+                   projection=my_hazard.get_projection(),
+                   geotransform=my_hazard.get_geotransform(),
+                   name=tr('Population which %s') % get_function_title(self),
                    keywords={'impact_summary': impact_summary,
                              'impact_table': impact_table,
-                             'map_title': map_title},
+                             'map_title': map_title,
+                             'legend_notes': legend_notes,
+                             'legend_units': legend_units,
+                             'legend_title': legend_title},
                    style_info=style_info)
         return R
 
