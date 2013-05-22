@@ -2,48 +2,60 @@
 Continuous Integration Testing with Jenkins
 ===========================================
 
-.. note:: This documentation is Copyright Linfiniti Consulting CC. June 2012
+.. note:: This documentation is Copyright Linfiniti Consulting CC. May 2013
    and has been included here to provide provenance, and adapted for the
    InaSAFE project.
 
 `Jenkins <http://jenkins-ci.org/>`_ is an automated build and test server.
 
-.. warning:: These notes are a port of notes kept during setup of Jenkins
-   for some django projects and were written after the fact. As such, they
-   need to be proof read and validated on a new server instance.
-
 Installation procedure - Jenkins server
 ---------------------------------------
 
-The install procedure is described at http://pkg.jenkins-ci.org/debian/.
+If you want to have the most recent version of jenkins the install procedure 
+is described at http://pkg.jenkins-ci.org/debian/.
+
+*You can skip the following part if you want to use jenkins that comes with
+your Distribution:*
 
 To start, do this::
 
    wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 
-Now add this to your :file:`/etc/apt/sources.list`::
+Now add this to your **:file:`**/etc/apt/sources.list`::
 
    deb http://pkg.jenkins-ci.org/debian binary/
 
-Now do::
+In any case you will install jenkins with::
 
    sudo apt-get update
    sudo apt-get install jenkins
 
+Finishing this jenkins can now be viewed looking at 
+http://localhost:8080/
+
+If you already have a running instance of Apache on your Server or you want to run 
+several other pages too you might want to integrate the instance of jenkins into apache.
+
+If apache is not installed you can install apache::
+
+   sudo apt-get install apache2
+
+To integrate jenkins into apache you need to configure 
 
 DNS and Reverse Proxy
 ^^^^^^^^^^^^^^^^^^^^^
 
-I set up the following subdomain http://jenkins.linfiniti.com
+The following example uses hostname as a placeholder for your FQDN.
+In most cases (running on your own machine) hostname will be localhost.
 
-Now create a virtual host on the server's apache installation to reverse
+Create a virtual host on the server's apache installation to reverse
 proxy by creating this file:
-:file:`/etc/apache2/sites-available/3-jenkins.linfiniti.com` which should
+:file:`/etc/apache2/sites-available/jenkins.hostname` which should
 contain::
 
    <VirtualHost *:80>
-     ServerAdmin tim@linfiniti.com
-     ServerName jenkins.linfiniti.com
+     ServerAdmin tim@hostname
+     ServerName jenkins.hostname
 
      ProxyPass         / http://localhost:8080/
      ProxyPassReverse  / http://localhost:8080/
@@ -60,56 +72,57 @@ contain::
      # alert, emerg.
      LogLevel warn
 
-     ErrorLog /var/log/apache2/jenkins.linfiniti.error.log
-     CustomLog /var/log/apache2/jenkins.linfiniti.access.log combined
+     ErrorLog /var/log/apache2/jenkins.hostname.error.log
+     CustomLog /var/log/apache2/jenkins.hostname.access.log combined
      ServerSignature Off
 
    </VirtualHost>
 
+To use this Proxy on localhost we have to enable two apache Modules 
+in the installation.
+
+To do so do::
+
+   sudo a2enmod proxy
+   sudo a2enmod proxy_http
+
 Now enable this vhost::
 
-   sudo a2ensite 3-jenkins.linfiniti.com
-   sudo /etc/init.d/apache reload
+   sudo a2ensite jenkins.hostname
+   
+Depending on your distribution you have to restart apache either using 
+sudo /etc/init.d/apache reload
+or
+service apache2 reload
 
 Configure the server
 --------------------
 
-Go to http://jenkins.linfiniti.com and log in as an admin user.
+Go to http://jenkins.hostname and log in as an admin user.
 
 Enable Plugins
 ^^^^^^^^^^^^^^
 
 :menuselection:`Jenkins --> Manage Jenkins --> Manage Plugins` or go to
-http://jenkins.linfiniti.com/pluginManager/.
+http://jenkins.hostname/pluginManager/.
 
 Enable the following plugins:
 
-* External Monitor Job Type Plugin
-* LDAP Plugin
-* pam-auth
-* javadoc
-* ant
-* Jenkins Subversion Plug-in
-* Jenkins GIT plugin
-* Maven Integration plugin
-* Jenkins SLOCCount Plug-in
-* Jenkins Sounds plugin
-* Jenkins Translation Assistance plugin
-* ruby-runtime
-* Jenkins CVS Plug-in
-* Coverage/Complexity Scatter Plot PlugIn
-* Status Monitor Plugin
-* Git Parameter Plug-In
-* github-api
+* GIT plugin
 * GitHub plugin
-* Jenkins Violations plugin
-* git-notes Plugin
-* Twitter plugin
-* Jenkins Cobertura Plugin
-* Jenkins Gravatar plugin
-* Jenkins SSH Slaves plugin
-* xvfb
+* Xvfb Plugin
+* Violations
+* Status Monitor Plugin
+* Jenkins Sounds plugin
+* SLOCCount Plugin
+* dashboard-view
+* Cobertura Plugin
+* Coverage Complexity Scatter Plot PlugIn
 
+That should also resolve some other plugins as dependancies and install them.
+
+If you are using other private repositories on your server you might want to 
+lock down jenkins to make everything private and only give some people admin rights.
 
 Lock down access
 ^^^^^^^^^^^^^^^^
@@ -136,7 +149,7 @@ Other Configuration options
 * :guilabel:`GitHub Web Hook` set to :kbd:`Manually manage hook URLs`
 
 
-Creating the Jenkins Farminfo Job
+Creating the Jenkins InaSAFE Job
 ---------------------------------
 
 Create a new Job (project):
