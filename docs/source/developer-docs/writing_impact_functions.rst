@@ -23,7 +23,7 @@ and one exposure layer. All impact functions return
 * a layer that represents he result of the calculation (the impact layer).
 * style information for the impact layer.
 * a textual report typically summarising statistical information about the
-  impact such as estimated fatilities or number of buildings affected.
+  impact such as estimated fatalities or number of buildings affected.
 
 Layers can be either raster or vector types. See :ref:`data_types`
 for a complete list of admissible input layer types that can be sensibly
@@ -389,7 +389,8 @@ compatible and be used safely in numerical calculations:
 
 The method ``get_data()`` returns an array if the layer is raster and takes two arguments:
 
-:nan: Specify the value to use where nodata is available. In this case we use 0.0 as we only want to count hazard pixels with flooding and exposure pixels with non-zero population.
+:nan: Specify the value to use where NoData is available. In this case we use
+ 0.0 as we only want to count hazard pixels with flooding and exposure pixels with non-zero population.
 :scaling: Optional argument controlling if data is to be scaled. In this case we set it to True which means that if the corresponding raster layer was resampled by InaSAFE, the values will be correctly scaled by the squared ratio between its current and native resolution.
 
 .. note:: # FIXME (Ole): Tim - how do we cross reference docstrings? The problem is that we can't drop labels into them because they are auto-generated?
@@ -482,17 +483,19 @@ For this purpose, the developer needs to create a *style_info*. *style_info* is 
 
   1. style_type.
   This element defines the kind of style which the output of impact function
-  will have. Currently, InaSAFE supports 3 styles: rasterStyle, 
-  graduatedSymbol, and categorizedSymbol. The first one is used for raster 
+  will have. Currently, InaSAFE supports 3 styles: rasterStyle,
+  graduatedSymbol, and categorizedSymbol. The first one is used for raster
   layer, the rest are for vector layer.
   2. style_classes.
-  This element define the style properties. There are several elements for it. 
+  This element define the style properties. There are several elements for it.
   They are
 
     1. colours.
-    colours define the colur of each class. The number of colour will be used as the number of class also. You can simply enumerate the colour in a list.
+    colours define the colour of each class. The number of colour will be
+    used as the number of class also. You can simply enumerate the colour in a list.
+
     2. label.
-    Label is used for labelling the classes in the style. This is also used for map report. For categorizedSymbol, you can enumerate it. For rasterStyle and graduatedStyle, we 
+    Label is used for labelling the classes in the style. This is also used for map report. For categorizedSymbol, you can enumerate it. For rasterStyle and graduatedStyle, we
     recommend to use several functions.
     They are
 
@@ -500,10 +503,12 @@ For this purpose, the developer needs to create a *style_info*. *style_info* is 
       * humanize_class : We used the result from create_classes to make list of tuple that represent the class in human form.
       * create_label : by using each tuple from the result of humanize_class, it create label for it. You can also add extra string in the label.
 
-    3. transparency. For transparency value. We usually use 100% transparant for the first class. For standard, please use 0-1 scale.
+    3. transparency. For transparency value. We usually use 100% transparent
+    for the first class. For standard, please use 0-1 scale.
     4. min : The value of minimum value in the class for graduatedSymbol. Just take classes[i] for min in class i
     5. max : The value of maximum value in the class for graduatedSymbol. Just take classes[i] for max in class i
-    6. quantity : The value of supremum (maximum value) in the class for rasterStyle. Just take classes[i] for it.
+    6. quantity : The value of supreme (maximum value) in the class for
+    rasterStyle. Just take classes[i] for it.
     7. value : the value for each category in categorizedStyle.
 
   3. target_field.
