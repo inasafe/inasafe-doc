@@ -54,7 +54,8 @@ Reference
 .........
 
 “InaSAFE Documentation, Release 0.4.0-alpha”, Ole Moeller Nielsen & Tim Sutton,
-June 2012.  For more information, please visit `www.inasafe.org <http://inasafe.org>`_.
+June 2012.  For more information, please visit `www.inasafe.org
+<http://inasafe.org>`_.
 
 Installation
 ------------
@@ -281,7 +282,7 @@ desktop using the thumb drive distributed with this material.
 The inasafe_data package contains various geographic data that we will use
 along the workshop.
 
-Now, we will add the hazard layer in the INASAFE dock. For that, we need to add
+Now, we will add the hazard layer in the InaSAFE dock. For that, we need to add
 the hazard layer from QGIS first. The flood layer is in a raster format, so we
 will go to the QGIS menu, click on **Layer,** and select **Add Raster Layer.**
 
@@ -320,7 +321,7 @@ automatically the “In the event of” “How many combo” boxes. If the keywo
 were not created in advance, then we will create them by following one of the
 two steps:
 
-Go to the Inasafe tools on the toolbar, click on the **Keyword Editor** icon.
+Go to the InaSAFE tools on the toolbar, click on the **Keyword Editor** icon.
 
 .. image:: ../static/tutorial/015.png
    :align: center
@@ -391,8 +392,8 @@ Choose **structure** in the **Subcategory** scroll box. Click **OK.**
 .. image:: ../static/tutorial/019.png
    :align: center
 
-Now our OSM building exposure data can be used in INASAFE and was automatically
-entered in the **How many box** of the INASAFE dock panel.
+Now our OSM building exposure data can be used in InaSAFE and was automatically
+entered in the **How many box** of the InaSAFE dock panel.
 
 .. image:: ../static/tutorial/020.png
    :align: center
@@ -457,7 +458,7 @@ To enable the OpenLayer plugin, go to the QGIS **Plugin Manager** and select
 **OpenLayers Plugin.**
 
 Once installed you should be able to use background imagery and tiles from
-google, yahoo, bing and openstreetmap.
+google, yahoo, bing and OpenStreetMap.
 
 .. image:: ../static/tutorial/023.png
    :align: center
@@ -475,7 +476,7 @@ The data shown on the screen can be saved into a **PDF file** by clicking on
 **table** summarizing the results from the impact function.
 
 However, any change that you want to make into the final map document should be
-done **before** clicking on the **Print** button of the INASAFE dock panel. The
+done **before** clicking on the **Print** button of the InaSAFE dock panel. The
 print should be only use once the data is exactly as you want it to be
 displayed.
 
@@ -565,7 +566,7 @@ THANK YOU FOR YOUR PARTICIPATION! :)
 
 Let us know how you enjoyed the training and what you think about the tool.
 
-THE INASAFE TEAM
+THE InaSAFE TEAM
 
 * Indonesian Disaster Management Agency (BNPB)
 * AusAID - Australia-Indonesia Facility for Disaster Reduction
