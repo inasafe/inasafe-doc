@@ -483,9 +483,10 @@ For this purpose, the developer needs to create a *style_info*. *style_info* is 
 
   1. style_type.
   This element defines the kind of style which the output of impact function
-  will have. Currently, InaSAFE supports 3 styles: rasterStyle,
+  will have. Currently, InaSAFE supports three styles: rasterStyle,
   graduatedSymbol, and categorizedSymbol. The first one is used for raster
   layer, the rest are for vector layer.
+
   2. style_classes.
   This element define the style properties. There are several elements for it.
   They are
@@ -505,10 +506,14 @@ For this purpose, the developer needs to create a *style_info*. *style_info* is 
 
     3. transparency. For transparency value. We usually use 100% transparent
     for the first class. For standard, please use 0-1 scale.
+
     4. min : The value of minimum value in the class for graduatedSymbol. Just take classes[i] for min in class i
+
     5. max : The value of maximum value in the class for graduatedSymbol. Just take classes[i] for max in class i
+
     6. quantity : The value of supreme (maximum value) in the class for
     rasterStyle. Just take classes[i] for it.
+
     7. value : the value for each category in categorizedStyle.
 
   3. target_field.
