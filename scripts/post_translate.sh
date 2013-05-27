@@ -13,9 +13,18 @@ if [ -d $INASAFE_DEV_PATH ]
 then
   export INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
 else
-  echo Please set INASAFE_DEV_PATH as PATH to your local
-  echo clone of inasafe repository inside this script
- exit 1
+  if [ ! -d ../inasafe-dev ]
+  then
+    # check the repo out since it does not exist
+    pushd .
+    cd ..
+    git clone --depth 1 git://github.com/AIFDR/inasafe.git inasafe-dev
+    cd inasafe-dev
+    export INASAFE_DEV_PATH=`pwd`
+    popd
+  else
+    export INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
+  fi
 fi
 
 export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib

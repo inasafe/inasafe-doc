@@ -141,7 +141,7 @@ def build_doc(branch='master'):
     """
     _all()
     update_git_checkout(branch)
-    fabgis.fabgis.install_latex()
+    fabgis.fabgis.setup_latex()
 
     dir_name = os.path.join(env.repo_path, env.repo_alias)
     with cd(dir_name):
@@ -198,6 +198,40 @@ def initialise_docs_site():
     sudo('a2ensite inasafe-docs.conf')
     sudo('a2enmod rewrite')
     sudo('service apache2 reload')
+
+
+@task
+def setup_jenkins_jobs():
+    #fabgis.fabgis.initialise_jenkins_site()
+    xvfb_config = "org.jenkinsci.plugins.xvfb.XvfbBuildWrapper.xml"
+    job_dir = ['InaSAFE-Documentation']
+
+    with cd('/var/lib/jenkins/'):
+        if not exists(xvfb_config):
+            local_dir = os.path.dirname(__file__)
+            local_file = os.path.abspath(os.path.join(
+                local_dir,
+                'scripts',
+                'jenkins_jobs',
+                xvfb_config))
+            put(local_file,
+                "/var/lib/jenkins/", use_sudo=True)
+
+    with cd('/var/lib/jenkins/jobs/'):
+        for job in job_dir:
+            if not exists(job):
+                local_dir = os.path.dirname(__file__)
+                local_job_file = os.path.abspath(os.path.join(
+                    local_dir,
+                    'scripts',
+                    'jenkins_jobs',
+                    '%s.xml') % job)
+                sudo('mkdir /var/lib/jenkins/jobs/%s' % job)
+                put(local_job_file,
+                    "/var/lib/jenkins/jobs/%s/config.xml" % job,
+                    use_sudo=True)
+        sudo('chown -R jenkins:nogroup InaSAFE*')
+    sudo('service jenkins restart')
 
 
 @task
