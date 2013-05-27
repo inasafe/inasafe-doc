@@ -23,7 +23,7 @@ else
     export INASAFE_DEV_PATH=`pwd`
     popd
   else
-    export INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
+    export INASAFE_DEV_PATH=$HOME/jobs/InaSAFE-Documentation/inasafe-dev/
   fi
 fi
 
