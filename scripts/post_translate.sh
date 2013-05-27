@@ -33,6 +33,9 @@ export QGIS_DEBUG=0
 export QGIS_LOG_FILE=/dev/null
 export QGIS_DEBUG_FILE=/dev/null
 
+echo "LIBRARY_PATH="$LD_LIBRARY_PATH
+echo "PYTHONPATH="$PYTHONPATH
+
 # Based off the script from QGIS by Tim Sutton and Richard Duivenvoorde
 
 # Name of the dir containing static files
