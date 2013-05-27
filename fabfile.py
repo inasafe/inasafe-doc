@@ -80,51 +80,15 @@ def _all():
                                          'dev',
                                          'python')
             env.git_url = 'git://github.com/AIFDR/inasafe-doc.git'
+            env.repo_alias = 'inasafe-doc'
             env.code_path = os.path.join(env.repo_path, env.repo_alias)
 
     env.env_set = True
     fastprint('env.env_set = %s' % env.env_set)
 
 ###############################################################################
-# Next section contains helper methods tasks
+# Next section contains helper methods
 ###############################################################################
-
-
-def update_git_checkout(branch='master'):
-    """Make sure there is a read only git checkout.
-    Args:
-        branch: str - a string representing the name of the branch to build
-            from. Defaults to 'master'
-    To run e.g.::
-        fab -H 188.40.123.80:8697 remote update_git_checkout
-    """
-    _all()
-    fabtools.require.deb.package('git')
-    if not exists(env.code_path):
-        fastprint('Repo checkout does not exist, creating.')
-        run('mkdir -p %s' % env.repo_path)
-        with cd(env.repo_path):
-            run('git clone %s %s' % (env.git_url, env.repo_alias))
-    else:
-        fastprint('Repo checkout does exist, updating.')
-        with cd(env.code_path):
-            # Get any updates first
-            run('git fetch')
-            # Get rid of any local changes
-            run('git reset --hard')
-            # Get back onto master branch
-            run('git checkout master')
-            # Remove any local changes in master
-            run('git reset --hard')
-
-    with cd(env.code_path):
-        if branch != 'master':
-            run('git branch --track %s origin/%s' %
-                (branch, branch))
-            run('git checkout %s' % branch)
-        else:
-            run('git checkout master')
-        run('git pull')
 
 
 @task
@@ -140,7 +104,10 @@ def build_doc(branch='master'):
     .. note:: Using the branch option will not work for branches older than 1.1
     """
     _all()
-    update_git_checkout(branch)
+    fabgis.fabgis.update_git_checkout(
+        code_path=env.code_path,
+        url=env.git_url,
+        repo_alias=env.repo_alias)
     fabgis.fabgis.setup_latex()
 
     dir_name = os.path.join(env.repo_path, env.repo_alias)
@@ -202,7 +169,8 @@ def initialise_docs_site():
 
 @task
 def setup_jenkins_jobs():
-    #fabgis.fabgis.initialise_jenkins_site()
+    _all()
+    fabgis.fabgis.initialise_jenkins_site()
     xvfb_config = "org.jenkinsci.plugins.xvfb.XvfbBuildWrapper.xml"
     job_dir = ['InaSAFE-Documentation']
 
@@ -233,18 +201,3 @@ def setup_jenkins_jobs():
         sudo('chown -R jenkins:nogroup InaSAFE*')
     sudo('service jenkins restart')
 
-
-@task
-def show_environment():
-    """For diagnostics - show any pertinent info about server."""
-    _all()
-    fastprint('\n-------------------------------------------------\n')
-    fastprint('User: %s\n' % env.user)
-    fastprint('Host: %s\n' % env.hostname)
-    fastprint('Site Name: %s\n' % env.repo_site_name)
-    fastprint('Dest Path: %s\n' % env.plugin_repo_path)
-    fastprint('Home Path: %s\n' % env.home)
-    fastprint('Repo Path: %s\n' % env.repo_path)
-    fastprint('Git Url: %s\n' % env.git_url)
-    fastprint('Repo Alias: %s\n' % env.repo_alias)
-    fastprint('-------------------------------------------------\n')
