@@ -1,5 +1,5 @@
 Localised Images
-================================================================================
+================
 
 Please do not copy the english images in your directory.
 

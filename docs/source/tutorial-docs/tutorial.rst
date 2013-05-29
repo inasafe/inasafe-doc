@@ -63,9 +63,8 @@ Installation
 Install QGIS
 ............
 
-You need QGIS version 1.7 or newer.
-
-You can download the software from http://download.qgis.org.
+You need at least QGIS version 1.7 or newer which is available to be 
+downloaded from http://download.qgis.org.
 
 Install InaSAFE Plugin
 ......................
@@ -76,6 +75,7 @@ Option 1: From QGIS Repository:
 To install the InaSAFE, use the plugin manager in QGIS:
 
 :menuselection:`Plugins --> Fetch Python Plugins`
+
 Then search for ‘InaSAFE‘, select it and click the install button. The plugin
 will now be added to your plugins menu.
 
@@ -83,7 +83,7 @@ Option 2: Manual Installation:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To install the InaSAFE plugin, go to
-https://github.com/AIFDR/inasafe/downloads.
+http://plugins.qgis.org/plugins/inasafe/.
 
 The application package comes as a zip file. Please select the most updated
 version.
@@ -108,16 +108,16 @@ from the plugin manager.  To do this, open **Manage Plugins** from the
    :align: center
 
 A pop-up window that lists all available plugins in your current QGIS project
-will appear. Type **InaSAFE** in the filter box. You should see the InaSAFE
-plugin appear in the list. Now **tick the checkbox** next to it to enable the
-plugin.
+will appear. Type **InaSAFE** in the filter box. You should see the 
+`InaSAFE <http://inasafe.org/>`_ plugin appear in the list. Now 
+**tick the checkbox** next to it to enable the plugin.
 
 .. image:: ../static/tutorial/002.png
    :align: center
 
 The plugin now will be added to your **Plugins** menu.
 
-Now you will need to add the INASAFE panel on your QGIS interface. For that,
+Now you will need to add the InaSAFE panel on your QGIS interface. For that,
 select **Toggle Inasafe Dock** in the INASAFE plugin scroll list.
 
 .. image:: ../static/tutorial/003.png

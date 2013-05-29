@@ -9,7 +9,8 @@ write them. Some familiarity with the Python programming language will
 be helpful to fully appreciate this section. See also :ref:`impact_functions`
 for information about existing impact functions in InaSAFE.
 Three examples of impact functions for common combinations of input types are
-given in the sections :ref:`raster_raster`, :ref:`raster_vector` and :ref:`vector_vector`.
+given in the sections :ref:`raster_raster`, :ref:`raster_vector` and
+:ref:`vector_vector`.
 
 .. note:: This section is still work in progress
 
@@ -120,8 +121,8 @@ Following the docstring is a collection of variables that define and document th
 :title: Specifies the title of the impact function as displayed in the InaSAFE user interface
 :parameters: A (possibly ordered) dictionary of parameters that can be configured from the
              user interface. Anything listed here can be modified at runtime by clicking the pencil
-	     symbol next to the impact function. In this case it is the threshold used to define
-	     what water level signals evacuation.
+             symbol next to the impact function. In this case it is the threshold used to define
+             what water level signals evacuation.
 
 In addition, there is a collection of text variables used for various levels of documentation of this impact function. They are ``synopsis``, ``actions``, ``detailed_description``, ``hazard_input``, ``exposure_input`` and ``limitation``. See examples below for more possible usages.
 
@@ -508,7 +509,7 @@ For this purpose, the developer needs to create a *style_info*. *style_info* is 
      g. *value* : the value for each category in categorizedStyle.
 
   3. **target_field**
-    
+
      This element define where the attribute of style is saved in attribute table in vector layer.
 
 
