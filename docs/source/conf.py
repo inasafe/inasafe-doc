@@ -44,7 +44,7 @@ master_doc = 'contents'
 
 # General information about the project.
 project = u'InaSAFE Documentation Project'
-copyright = u'2012, InaSAFE project'
+copyright = u'2013, InaSAFE project'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -126,7 +126,7 @@ html_theme_path = ['../themes']
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
-html_short_title = 'InsSAFE Docs'
+html_short_title = 'InaSAFE Docs'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -155,10 +155,12 @@ html_static_path = ['static']
 html_sidebars = {
     'index': ['inasafe-base.html'],
     'contents': ['globaltoc.html', 'searchbox.html'],
+    'general/**': ['localtoc.html', 'searchbox.html'],
     'tutorial-docs/**': ['localtoc.html', 'searchbox.html'],
     'user-docs/**': ['localtoc.html', 'searchbox.html'],
     'developer-docs/**': ['localtoc.html', 'searchbox.html'],
-    'api-docs/**': ['localtoc.html', 'searchbox.html']}
+    'api-docs/**': ['localtoc.html', 'searchbox.html'],
+    'road-map/**': ['localtoc.html', 'searchbox.html']}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
