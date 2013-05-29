@@ -30,7 +30,7 @@ This section describes how to update/edit the english master documentation.
 
 * get an account on github.com
 * install required tools on your computer
-* login to github and create a fork of the InaSAFE-doc master branch
+* **login to github and create a fork of the [git@github.com:AIFDR/inasafe-doc.git](https://github.com/AIFDR/inasafe-doc)**
 * git clone your forked InaSAFE-doc project to your computer
 * run './scripts/post_translate.sh en' locally to build the english docs
 * edit/update the rst files with the english documentation from ./docs/source/
@@ -44,7 +44,7 @@ Generation
 
 Git clone your personal forked project::
 
- git clone git@github.com:&lt;user&gt;/inasafe-doc.git
+ git clone git@github.com:/user/inasafe-doc.git
  # to later update your tree do
  git pull --rebase origin master
 
@@ -99,7 +99,8 @@ Translating the english InaSAFE Documentation
 Every language has it's own maintainer, please contact them,
 if you want to help. You find a list of current language maintainers at the
 end of this document. If your language is not listed, join our community by
-sending a mail to `inasafe-users+subscribe@googlegroups.com`_ and ask for help.
+sending a mail to <inasafe-users+subscribe@googlegroups.com> and ask for
+help.
 
 HowTo for language maintainers
 ------------------------------
@@ -139,12 +140,11 @@ HowTo for translators
 * git clone your forked inasafe-doc repository to your computer
 * run './scripts/pre_translate.sh &lt;language&gt;' locally to build the
   translation files
-* translate the .po files locally and use an offline editor. `QtLinguist
-  &lt;http://qt-apps.org/content/show
-  .php/Qt+Linguist+Download?content=89360&gt;`_ being the highly recommended
-  choice.
+* translate the .po files locally and use an offline editor.
+  [QtLinguist](https://code.google.com/p/qtlinguistdownload/)
+  being the highly recommended choice.
 * with the english documentation from ./docs/source/ run '
-  ./scripts/post_translate.sh &lt;language&gt;' locally again to check your
+  ./scripts/post_translate.sh languagecode' locally again to check your
   translation
 * files translated need to be "synchronized" with the ones in the directory of
   the forked repo. Commit your changes to your private forked repository and
@@ -152,7 +152,7 @@ HowTo for translators
   owners of the repository you forked (language maintainer) asking him to
   accept your translations and move them to the "original repository". For
   doing that go on github.com, browse on the directory of your repository and
-   click pull request (https://help.github.com/articles/using-pull-requests).
+  click pull request (https://help.github.com/articles/using-pull-requests).
 * your language maintainer will take care that every significant translation go
   into the master repository.
 * Generally, as soon as you finish editing one or more .po files, you should
