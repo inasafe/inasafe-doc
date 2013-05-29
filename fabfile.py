@@ -47,38 +47,26 @@ def _all():
         'cunonia': 'inasafe-docs.localhost',
         'waterfall': 'inasafe-docs.localhost',
         'spur': 'inasafe-docs.localhost',
-        'maps.linfiniti.com': 'inasafe-docs.linfiniti.com',
+        'maps.linfiniti.com': 'inasafe.linfiniti.com',
         'linfiniti': 'inasafe-docs.linfiniti.com',
         #vagrant instance
-        'precise64': 'inasafe-docs.vagrant.localhost',
+        'vagrant-inasafe-doc': 'inasafe-docs.vagrant.localhost',
         'shiva': 'docs.inasafe.org'}
-    repo_site_names = {
-        'cunonia': 'inasafe-docs.localhost',
-        'waterfall': 'inasafe-docs.localhost',
-        'spur': 'inasafe-docs.localhost',
-        'maps.linfiniti.com': 'inasafe-docs.linfiniti.com',
-        'linfiniti': 'inasafe-crisis.linfiniti.com',
-        #vagrant instance
-        'inasafe': 'experimental.vagrant.localhost',
-        'shiva': 'experimental.inasafe.org'}
 
     with hide('output'):
         env.user = run('whoami')
         env.hostname = run('hostname')
-        if env.hostname not in repo_site_names:
-            print 'Error: %s not in: \n%s' % (env.hostname, repo_site_names)
-            exit()
-        elif env.hostname not in doc_site_names:
-            print 'Error: %s not in: \n%s' % (env.hostname, repo_site_names)
+        if env.hostname not in doc_site_names:
+            print 'Error: %s not in: \n%s' % (env.hostname, doc_site_names)
             exit()
         else:
-            env.repo_site_name = repo_site_names[env.hostname]
             env.doc_site_name = doc_site_names[env.hostname]
-            env.inasafe_web_path = '/home/web/inasafe-docs'
+            env.inasafe_release_web_path = (
+                '\/var\/www\/inasafe-release-documentation')
+            env.inasafe_master_web_path = (
+                '\/var\/www\/inasafe-master-documentation')
             env.home = os.path.join('/home/', env.user)
-            env.repo_path = os.path.join(env.home,
-                                         'dev',
-                                         'python')
+            env.repo_path = os.path.join(env.home, 'dev', 'python')
             env.git_url = 'git://github.com/AIFDR/inasafe-doc.git'
             env.repo_alias = 'inasafe-doc'
             env.code_path = os.path.join(env.repo_path, env.repo_alias)
@@ -89,6 +77,14 @@ def _all():
 ###############################################################################
 # Next section contains helper methods
 ###############################################################################
+
+
+def get_webdir(branch):
+    if 'master' == branch:
+        webdir = env.inasafe_master_web_path
+    else:
+        webdir = env.inasafe_release_web_path
+    return webdir
 
 
 @task
@@ -104,58 +100,69 @@ def build_doc(branch='master'):
     .. note:: Using the branch option will not work for branches older than 1.1
     """
     _all()
-    fabgis.fabgis.update_git_checkout(
-        code_path=env.code_path,
+    fabtools.require.deb.package('python-pip')
+    fabtools.require.deb.package('python-numpy')
+    fabtools.require.deb.package('python-qt4')
+    fabgis.install_qgis1_8()
+    sudo('pip install Sphinx')
+
+    fabgis.update_git_checkout(
+        code_path=env.repo_path,
         url=env.git_url,
-        repo_alias=env.repo_alias)
-    fabgis.fabgis.setup_latex()
+        repo_alias=env.repo_alias,
+        branch=branch)
+    fabgis.setup_latex()
 
     dir_name = os.path.join(env.repo_path, env.repo_alias)
     with cd(dir_name):
         # build the Documentation
         run('chmod +x scripts/post_translate.sh')
         run('scripts/post_translate.sh')
-        run('cp -r docs/output/html/* %s' % env.inasafe_web_path)
-        run('cp -r docs/output/pdf %s' % env.inasafe_web_path)
-        run('cp scripts/.htaccess %s' % env.inasafe_web_path)
-        run('cp scripts/directory*.html %s/en/_static/' % env.inasafe_web_path)
 
 
 @task
-def initialise_docs_site():
+def deploy_docs_site(branch='master'):
     """Initialise an InaSAFE docs site where we host docs and pdf."""
     _all()
     build_doc()
 
     fabtools.require.deb.package('apache2')
-    code_path = os.path.join(env.repo_path, env.repo_alias)
-    local_path = '%s/scripts' % code_path
+    code_path = env.code_path
+    webdir = get_webdir(branch)
 
-    if not exists(env.inasafe_web_path):
-        sudo('mkdir -p %s' % env.inasafe_web_path)
-        sudo('chown %s.%s %s' % (env.user, env.user, env.inasafe_web_path))
+    inasafe_docs_apache_conf = '%s.inasafe-docs.conf' % branch
+    inasafe_docs_apache_conf_template = 'inasafe-docs.conf.templ'
 
-    run('cp %(local_path)s/inasafe-docs.conf.templ '
-        '%(local_path)s/inasafe-docs.conf' % {'local_path': local_path})
+    if not exists(webdir):
+        sudo('mkdir -p %s' % webdir)
+        sudo('chown %s.%s %s' % (env.user, env.user, webdir))
 
-    sed('%s/inasafe-test.conf' % local_path,
-        'inasafe-docs.linfiniti.com',
-        env.repo_site_name)
+    apache_path = '/etc/apache2/sites-available/'
+    with cd(apache_path):
+        if not exists(inasafe_docs_apache_conf):
+            local_dir = os.path.dirname(__file__)
+            local_file = os.path.abspath(os.path.join(
+                local_dir,
+                'scripts',
+                inasafe_docs_apache_conf_template))
+            put(local_file,
+                "/etc/apache2/sites-available/%s" %
+                inasafe_docs_apache_conf_template,
+                use_sudo=True)
+
+        my_tokens = {
+            'SERVERNAME': env.doc_site_name,  # Web Url e.g. foo.com
+            'WEBMASTER': 'werner@linfiniti.com',  # email of web master
+            'DOCUMENTROOT': webdir,  # Content root .e.g. /var/www
+        }
+        fabgis.replace_tokens(inasafe_docs_apache_conf_template, my_tokens)
 
     with cd(code_path):
         # Copy built Documentation to the Webserver path
-        run('cp -r docs/output/html/* %s' % env.inasafe_web_path)
-        run('cp -r docs/output/pdf %s' % env.inasafe_web_path)
-        run('cp scripts/.htaccess %s' % env.inasafe_web_path)
-        run('cp scripts/directory*.html %s/en/_static/' % env.inasafe_web_path)
-
-    with cd('/etc/apache2/sites-available/'):
-        if exists('inasafe-docs.conf'):
-            sudo('a2dissite inasafe-docs.conf')
-            fastprint('Removing old apache2 conf', False)
-            sudo('rm inasafe-docs.conf')
-
-        sudo('ln -s %s/inasafe-docs.conf .' % local_path)
+        run('cp -r docs/output/html/* %s' % webdir)
+        run('cp -r docs/output/pdf %s' % webdir)
+        run('cp scripts/.htaccess %s' % webdir)
+        run('cp scripts/directory*.html %s/en/_static/' % webdir)
 
     # Add a hosts entry for local testing - only really useful for localhost
     hosts = '/etc/hosts'
@@ -168,12 +175,37 @@ def initialise_docs_site():
 
 
 @task
-def setup_jenkins_jobs():
+def setup_jenkins(use_upstream_repo=True, branch='master'):
+    """
+
+    :param use_upstream_repo:
+    :param branch:
+    :return:
+    """
     _all()
-    fabgis.fabgis.initialise_jenkins_site()
+
+    # We need some additional tools to run jenkins checks
+    fabtools.require.deb.package('xvfb')
+    fabtools.require.deb.package('pep8')
+    fabtools.require.deb.package('pylint')
+    fabtools.require.deb.package('pyflakes')
+    fabtools.require.deb.package('sloccount')
+
+    fabgis.initialise_jenkins_site(use_upstream_repo=use_upstream_repo)
+    fabgis.install_jenkins(use_upstream_repo)
+    setup_jenkins_jobs(branch=branch)
+
+
+@task
+def setup_jenkins_jobs(branch='master'):
+    """
+
+    :param branch:
+    :return:
+    """
+    _all()
     xvfb_config = "org.jenkinsci.plugins.xvfb.XvfbBuildWrapper.xml"
     job_dir = ['InaSAFE-Documentation']
-
     with cd('/var/lib/jenkins/'):
         if not exists(xvfb_config):
             local_dir = os.path.dirname(__file__)
@@ -200,4 +232,5 @@ def setup_jenkins_jobs():
                     use_sudo=True)
         sudo('chown -R jenkins:nogroup InaSAFE*')
     sudo('service jenkins restart')
-
+    webdir = get_webdir(branch)
+    fabtools.require.directory(webdir, use_sudo=True, owner='jenkins')
