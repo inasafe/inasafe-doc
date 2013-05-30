@@ -1,13 +1,6 @@
 #!/bin/bash
 INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
-QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
-
-if [ -d $QGIS_PREFIX_PATH ]
-then
-  export QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
-else
-  export QGIS_PREFIX_PATH=/usr/local/qgis1.8/
-fi
+export QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
 
 if [ -d $INASAFE_DEV_PATH ]
 then
