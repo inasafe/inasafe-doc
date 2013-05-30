@@ -72,7 +72,7 @@ Install InaSAFE Plugin
 Option 1: From QGIS Repository:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To install the InaSAFE, use the plugin manager in QGIS:
+To install the InaSAFE plugin, use the plugin manager in QGIS:
 
 :menuselection:`Plugins --> Fetch Python Plugins`
 
@@ -88,34 +88,33 @@ http://plugins.qgis.org/plugins/inasafe/.
 The application package comes as a zip file. Please select the most updated
 version.
 
-Extract the zip file into the QGIS directory :file:`C:\Users\<your
-username>\.qgis\python\plugins`.
+Extract the zip file into the QGIS directory :file:`C:\\Users\\<your
+username>\\.qgis\\python\\plugins`.
 
 After extracting the plugin, it should be available as
-:file:`C:\Users\<yourusername>\.qgis\python\plugins\inasafe`
+:file:`C:\\Users\\<your username>\\.qgis\\python\\plugins\\inasafe`
 
 Mac and Linux users need to follow the same procedure but instead the plugin
-directory will be under your :file:`$HOME` directory.
+directory (.qgis/python/plugins/) will be under your :file:`$HOME` directory.
 
 Enable InaSAFE Plugin in QGIS
 .............................
 
 Once the plugin is extracted in QGIS plugin directory, start QGIS and enable it
-from the plugin manager.  To do this, open **Manage Plugins** from the
-**Plugins** menu on the menu toolbar.
+from the plugin manager.  To do this, open :menuselection:`Plugins --> Manage Plugins` from the menu toolbar.
 
 .. image:: ../static/tutorial/001.png
    :align: center
 
 A pop-up window that lists all available plugins in your current QGIS project
-will appear. Type **InaSAFE** in the filter box. You should see the 
+will appear. Type :kbd:`InaSAFE` in the filter box. You should see the 
 `InaSAFE <http://inasafe.org/>`_ plugin appear in the list. Now 
 **tick the checkbox** next to it to enable the plugin.
 
 .. image:: ../static/tutorial/002.png
    :align: center
 
-The plugin now will be added to your **Plugins** menu.
+The plugin will be added to your :menuselection:`Plugins` menu.
 
 Now you will need to add the InaSAFE panel on your QGIS interface. For that,
 select **Toggle Inasafe Dock** in the INASAFE plugin scroll list.
@@ -123,7 +122,7 @@ select **Toggle Inasafe Dock** in the INASAFE plugin scroll list.
 .. image:: ../static/tutorial/003.png
    :align: center
 
-The InaSAFE dock panel will then appear on the left of your QGIS window.
+The InaSAFE dock panel will then appear on your QGIS window.
 
 .. image:: ../static/tutorial/004.png
    :align: center
@@ -182,16 +181,15 @@ The following options are available on the Options Dialog:
 * **Run analysis in separate thread (experimental):** This option cause the
   analysis to be run in its own thread.
 
-**WARNING!**
-
-* It is not recommended to use the threaded implementation at this time. For
-  this reason it is disabled by default.
-* Pressing Cancel at any time will close the options dialog and any changes
-  made will not be applied.
-* Pressing Ok at any time will close the options dialog and any changes made
-  will be applied immediately.
-* The exact button order shown on this dialog may differ depending on your
-  operating system or desktop environment.
+.. warning::
+  * It is not recommended to use the threaded implementation at this time. 
+    For this reason it is disabled by default.
+  * Pressing Cancel at any time will close the options dialog and any changes
+    made will not be applied.
+  * Pressing Ok at any time will close the options dialog and any changes made
+    will be applied immediately.
+  * The exact button order shown on this dialog may differ depending on your
+    operating system or desktop environment.
 
 Adjust Projection
 .................
@@ -199,13 +197,13 @@ Adjust Projection
 Before continuing we need to turn one more QGIS functionality on, to enable all
 data layers display in one projection (no matter what their projection).
 
-For that, go to QGIS **Settings/Project Properties.**
+For that, go to QGIS :menuselection:`&Settings --> Project Properties`
 
 .. image:: ../static/tutorial/008.png
    :align: center
 
-Click on **Coordinate Reference System (CRS)** tab in the new dialog box. Tick
-the **Enable ‘on the fly’ CRS transformation** box. And then **OK.**
+Click on :guilabel:`Coordinate Reference System (CRS)` tab in the new dialog box. Tick
+the :guilabel:`Enable ‘on the fly’ CRS transformation` box. And then :guilabel:`OK`.
 
 .. image:: ../static/tutorial/009.png
    :align: center
@@ -236,8 +234,7 @@ Or for more convenience, having them on top of each other.
 .. image:: ../static/tutorial/012.png
    :align: center
 
-The INASAFE panel contains 3 sections: **Questions, Results** and **Buttons.**
-We will explore those sections one by one.
+The INASAFE panel contains 3 sections: :guilabel:`Questions`, :guilabel:`Results` and :guilabel:`Buttons`. We will explore those sections one by one.
 
 The Questions Section
 .....................
@@ -275,33 +272,36 @@ area (polygon). For example:
   (this will not have depth related information)
 
 For our exercise, we will use an example from Jakarta, Indonesia. Those data
-are already installed on your computer at :file:`C:\Users\<your
-username>\desktop\inasafe_data`. If they are not, you can load the data on your
-desktop using the thumb drive distributed with this material.
+are already installed on your computer at :file:`C:\\Users\\<your
+username>\\desktop\\inasafe_data`. If they are not, you can download the data 
+to your desktop by pressing the :guilabel:`ZIP` button on 
+https://github.com/AIFDR/inasafe_data.
 
 The inasafe_data package contains various geographic data that we will use
 along the workshop.
 
 Now, we will add the hazard layer in the InaSAFE dock. For that, we need to add
 the hazard layer from QGIS first. The flood layer is in a raster format, so we
-will go to the QGIS menu, click on **Layer,** and select **Add Raster Layer.**
+will go to the QGIS menu, click on :menuselection:`Layer` and select 
+:menuselection:`Add Raster Layer`.
 
 .. image:: ../static/tutorial/013.png
    :align: center
 
 Once you click on that, a pop-up window will appear where you will have to
 fetch your flood data.  Please select the
-**“Flood_Design_Depth_Jakarta_geographic.asc”** file from the hazard folder.
+:file:`Flood_Design_Depth_Jakarta_geographic.asc` file from the hazard folder.
 This is a raster data (in ASCII format) that represents flooding depth in the
-Jakarta province. The display name is **Jakarta 2007 flood with dredging.**
+Jakarta province. The display name in InaSAFE is **Jakarta 2007 flood with dredging.**
 
-You will notice that the layer filled automatically the “hazard” area in the
-InaSAFE dock panel. There are two important things to note when **uploading
-data** in InaSAFE.
+.. note::
+  You will notice that the layer filled automatically the “hazard” area in the
+  InaSAFE dock panel. There are two important things to note when **uploading
+  data** in InaSAFE.
 
-* Data should follow a keyword metadata system that allows InaSAFE to determine
-  if the layer is a hazard or if it is an exposure.
-* The area of analysis should overlap.
+  * Data should follow a keyword metadata system that allows InaSAFE to determine
+    if the layer is a hazard or if it is an exposure.
+  * The area of analysis should overlap.
 
 Adding keyword metadata
 .......................
@@ -321,26 +321,26 @@ automatically the “In the event of” “How many combo” boxes. If the keywo
 were not created in advance, then we will create them by following one of the
 two steps:
 
-Go to the InaSAFE tools on the toolbar, click on the **Keyword Editor** icon.
+Go to the InaSAFE tools on the toolbar, click on the :guilabel:`Keyword Editor` icon.
 
 .. image:: ../static/tutorial/015.png
    :align: center
 
-Or, open the **Plugin** menu on QGIS toolbar, click on **InaSAFE,** then click
-on the **Keyword Editor** in the scroll list.
+Or, open the :menuselection:`Plugin` menu on QGIS toolbar, click on :menuselection:`InaSAFE`,
+then click on the :guilabel:`Keyword Editor` in the scroll list.
 
 .. image:: ../static/tutorial/016.png
    :align: center
 
 Once you click on the Keyword Editor, a dialog box containing the flood data
 will be prompted. Since the flood data is a hazard layer, pinpoint the
-**Hazard** Category. In the Subcategory, we will choose flood [m] because our
+:guilabel:`Hazard` Category. In the Subcategory, we will choose flood [m] because our
 data represents depth of flood in Jakarta in meter unit.
 
 .. image:: ../static/tutorial/017.png
    :align: center
 
-Then click **OK.**
+Then click :guilabel:`OK`
 
 Now the data follow the keyword rule, and can be used in the InaSAFE function.
 
@@ -358,7 +358,8 @@ to add the exposure layer to QGIS first. For our exercise, we will use the
 OpenStreetMap (OSM) data that represents buildings in Jakarta Province.
 
 The OSM building layer is in a vector format, so we will go to the QGIS menu
-toolbar, click on **Layer,** and select **Add Vector Layer.**
+toolbar, click on :menuselection:`Layer`, and select :menuselection:`Add 
+Vector Layer`.
 
 .. image:: ../static/tutorial/018.png
    :align: center
@@ -372,7 +373,7 @@ fetch your OSM buildings data.
 Please select the “OSM_building_footprints_20120629_Jakarta_All.shp” file from
 the exposure folder.
 
-Click **Open.**
+Click :guilabel:`Open`
 
 This is a vector data (in ESRI SHP format) that represents buildings data
 gathered by the Jakarta province community using the OSM participatory tools.
@@ -382,18 +383,20 @@ Please note that the exposure data should follow the same **keyword system**
 that we explained earlier for the hazard data.
 
 In our case, the keyword was already created. If the keyword was not created in
-advance, then we will create it by using the **Keyword Editor** in InaSAFE from
-the toolbar or from the **Plugins** menu.
+advance, then we will create it by using the :menuselection:`Keyword Editor`
+in InaSAFE from the toolbar or from the :menuselection:`Plugins` menu.
 
-Go to the **Plugin menu** on QGIS toolbar. Click on **InaSAFE.** Then, click on
-the **Keyword Editor** in the dialog box. Pinpoint the **Exposure** category.
-Choose **structure** in the **Subcategory** scroll box. Click **OK.**
+Go to the :menuselection:`Plugin menu` on QGIS toolbar. Click on 
+:menuselection:`InaSAFE.` Then, click on the :menuselection:`Keyword Editor`
+in the dialog box. Pinpoint the :guilabel:`Exposure` category.
+Choose :guilabel:`structure` in the :guilabel:`Subcategory` scroll box. 
+Then click :guilabel:`OK`
 
 .. image:: ../static/tutorial/019.png
    :align: center
 
 Now our OSM building exposure data can be used in InaSAFE and was automatically
-entered in the **How many box** of the InaSAFE dock panel.
+entered in the :guilabel:`How many box` of the InaSAFE dock panel.
 
 .. image:: ../static/tutorial/020.png
    :align: center
@@ -404,7 +407,7 @@ they are different projections.
 Impact Analysis
 ...............
 
-The impact function (**Might**) will spatially combine the hazard and exposure
+The impact function (:guilabel:`&Might`) will spatially combine the hazard and exposure
 input layers in order to postulate what the impacts of the hazard will be on
 the exposure infrastructure or people. By selecting a combination from the “In
 the event of” and “How many” combo boxes, an appropriate set of impact
@@ -415,14 +418,14 @@ for. For our flood analysis in Jakarta, we only have on predefined impact
 function which asks: **In case of flood event, how many buildings might be
 temporarily closed?** As we see on the previous step, this is filled
 automatically by default in the InaSAFE panel dock as soon as the hazard
-[flood] and exposure [buildings] layers are entered correctly.
+[**flood**] and exposure [**buildings**] layers are entered correctly.
 
 The Results section
 ...................
 
 Now that we have our two input layers and that we know what impacts we would
-like to assess, click on the **Run** button at the bottom to start the impact
-analysis. At the end of the process, figures will be shown in the **Results**
+like to assess, click on the :guilabel:`Run` button at the bottom to start the impact
+analysis. At the end of the process, figures will be shown in the :guilabel:`Results`
 section, a new layer will be added in the QGIS layer panel representing the
 result of the impact function, and the map will differentiate affected and
 non-affected building.
@@ -444,7 +447,7 @@ Enhancing the Map Output
 
 The final output map can be enhanced using cartographic functions in QGIS.
 Styles can be changed, background layer or other relevant layers can be added,
-layout can be changed using the **Print Composer** in QGIS.
+layout can be changed using the :menuselection:`File --> New Print Composer` in QGIS.
 
 If you would like to add openlayer background to your map, all you need to do
 is add a new plugin called **OpenLayer Plugin** in QGIS and follow the same
@@ -452,10 +455,12 @@ steps as we did to acquire the InaSAFE plugin.
 
 You can download the plugin from the website
 http://build.sourcepole.ch/qgis/plugins.xml, and put it in the QGIS plugin
-directory :file:`C:\Users\<your username>\.qgis\python\plugins`.
+directory depending on your operating system:
+Windows: :file:`C:\\Users\\<your username>\\.qgis\\python\\plugins`.
+Linux/MacOSX: :file:`$HOME/.qgis/python/plugins`.
 
-To enable the OpenLayer plugin, go to the QGIS **Plugin Manager** and select
-**OpenLayers Plugin.**
+To enable the OpenLayer plugin, go to the QGIS :menuselection:`Plugins --> Manage Plugins` 
+and select :menuselection:`OpenLayers Plugin`.
 
 Once installed you should be able to use background imagery and tiles from
 google, yahoo, bing and OpenStreetMap.
@@ -470,14 +475,14 @@ layers.
 Print Results
 .............
 
-The data shown on the screen can be saved into a **PDF file** by clicking on
-**Print** at the bottom of the InaSAFE panel. The PDF file contains then the
+The data shown on the screen can be saved into a :file:`PDF file` by clicking on
+:guilabel:`Print` at the bottom of the InaSAFE panel. The PDF file contains then the
 **legend** for the result of the impact assessment, the **map** created and a
 **table** summarizing the results from the impact function.
 
 However, any change that you want to make into the final map document should be
-done **before** clicking on the **Print** button of the InaSAFE dock panel. The
-print should be only use once the data is exactly as you want it to be
+done **before** clicking on the :guilabel:`Print` button of the InaSAFE dock panel. The
+print should be only used once the data is exactly as you want it to be
 displayed.
 
 .. image:: ../static/tutorial/024.png
@@ -492,21 +497,21 @@ layer.
 .. image:: ../static/tutorial/025.png
    :align: center
 
-Then **Save As** a shapefile or a raster. However the keywords and statistics
+Then :menuselection:`Save As` a shapefile or a raster. However the keywords and statistics
 do not get saved.
 
 .. image:: ../static/tutorial/026.png
    :align: center
 
 You can also save the project under QGIS so that you can access your current
-window view anytime needed. For that, go to the **File** menu on QGIS toolbar.
-Click on **Save Project As.**
+window view anytime needed. For that, go to the :guilabel:`File` menu on QGIS toolbar.
+Click on :guilabel:`Save Project As`.
 
 .. image:: ../static/tutorial/027.png
    :align: center
 
 Give a name to the project and put it in the directory you want to store your
-work. Then click on **Save.**
+work. Then click on :guilabel:`Save`.
 
 .. image:: ../static/tutorial/028.png
    :align: center
@@ -514,17 +519,17 @@ work. Then click on **Save.**
 Now that the project is saved under QGIS, you can go back to your work anytime
 you need. However, the statistical data will be lost whenever the project is
 closed. To get the data back, you will need to redo the impact analysis process
-we described above from **Run.**
+we described above from :guilabel:`Run`.
 
 The impact assessment can also be replicated for flood zone areas; the only
 change is to add the layer as a vector and using keyword flood (wet/dry).
 
-Go to QGIS **Layer/Add Vector Layer.**
+Go to QGIS :menuselection:`Layer --> Add Vector Layer`.
 
 .. image:: ../static/tutorial/029.png
    :align: center
 
-Add the **Jakarta_RW_2007flood.shp**
+Add the :file:`Jakarta_RW_2007flood.shp`
 
 .. image:: ../static/tutorial/030.png
    :align: center
@@ -544,13 +549,13 @@ International Language
 
 Both QGIS and InaSAFE come with multi-lingual support.
 
-Go to QGIS Settings/options.
+Go to QGIS :menuselection:`Settings --> Options`.
 
 .. image:: ../static/tutorial/032.png
    :align: center
 
-Go to the Locale tab, and click to **Override system locale.** You must close
-the QGIS project and reopen for the language to take hold.
+Go to the :guilabel:`Locale` tab, and click to :guilabel:`Override system locale`.
+You must close the QGIS project and reopen for the language to take hold.
 
 .. image:: ../static/tutorial/033.png
    :align: center
