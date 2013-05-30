@@ -180,9 +180,9 @@ Here is a log of the options we set for the Jenkins job:
 * :guilabel:`Build` add an :kbd:`Execute Shell` step and set the script as
   follows::
 
-       export PYTHONPATH=/usr/local/qgis1.8/share/qgis/python/
-       export LD_LIBRARY_PATH=/usr/local/qgis1.8/lib
-       export QGIS_PREFIX_PATH=/usr/local/qgis1.8/
+       export PYTHONPATH=/usr/local/qgis-1.8/share/qgis/python/
+       export LD_LIBRARY_PATH=/usr/local/qgis-1.8/lib
+       export QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
 
        # Make sure data dir is current and synced it its git clone
        scripts/update-test-data.sh
