@@ -100,10 +100,11 @@ def build_doc(branch='master'):
     .. note:: Using the branch option will not work for branches older than 1.1
     """
     _all()
-    fabtools.require.deb.package('python-pip')
-    fabtools.require.deb.package('python-numpy')
-    fabtools.require.deb.package('python-qt4')
+    fabgis.setup_inasafe()
+    # Needed for when running on headless servers
+    fabtools.require.deb.package('xvfb')
     fabgis.install_qgis1_8()
+
     sudo('pip install Sphinx')
 
     fabgis.update_git_checkout(
@@ -117,7 +118,7 @@ def build_doc(branch='master'):
     with cd(dir_name):
         # build the Documentation
         run('chmod +x scripts/post_translate.sh')
-        run('scripts/post_translate.sh')
+        run('xvfb-run scripts/post_translate.sh')
 
 
 @task
@@ -134,8 +135,8 @@ def deploy_docs_site(branch='master'):
     inasafe_docs_apache_conf_template = 'inasafe-docs.conf.templ'
 
     if not exists(webdir):
-        sudo('mkdir -p %s' % webdir)
-        sudo('chown %s.%s %s' % (env.user, env.user, webdir))
+        sudo('mkdir -p %s/pdf' % webdir)
+        sudo('chown -R %s.%s %s' % (env.user, env.user, webdir))
 
     apache_path = '/etc/apache2/sites-available/'
     with cd(apache_path):
@@ -167,7 +168,7 @@ def deploy_docs_site(branch='master'):
     # Add a hosts entry for local testing - only really useful for localhost
     hosts = '/etc/hosts'
     if not contains(hosts, 'inasafe-docs'):
-        append(hosts, '127.0.0.1 %s' % env.repo_site_name, use_sudo=True)
+        append(hosts, '127.0.0.1 %s' % env.doc_site_name, use_sudo=True)
 
     sudo('a2ensite inasafe-docs.conf')
     sudo('a2enmod rewrite')
