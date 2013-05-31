@@ -1,28 +1,32 @@
+======================
 Helpful Hints And Tips
 ======================
 **Objectives:**
 
-* To read through the InaSAFE option menu
+* To read through the |project_name| option menu
 * To know where to go for help
-* To go through some frequently ask questions 
+* To go through some frequently ask questions
 
 **Expected Results:**
 
 Participants are able to:
 
-* customise the InaSAFE option menu 
+* customise the |project_name| option menu
 * know where to go for help
 
 
-You have now gone through InaSAFE using 4 different natural hazards, changing a
-variety of paramaters and analysing the results.  This chapter has been
-designed to help you understand a little more about InaSAFE as well as where
-you can go for help.
+You have now gone through |project_name| using 4 different natural hazards,
+changing a variety of parameters and analysing the results.  This chapter has
+been designed to help you understand a little more about |project_name| as
+well as where you can go for help.
 
-InaSAFE option menu
--------------------
+|project_name| option menu
+--------------------------
 
-The InaSAFE plugin provides an options dialog which allows you to define various options relating to how InaSAFE will behave. The options dialog can be launched by clicking on the InaSAFE plugin toolbar's :guilabel:`options icon`.
+The |project_name| plugin provides an options dialog which allows you to
+define various options relating to how |project_name| will behave. The
+options dialog can be launched by clicking on the |project_name| plugin
+toolbar's :guilabel:`options icon`.
 
 .. image:: /static/socialisation/insafe_options_tools.jpg
 
@@ -35,41 +39,83 @@ The following dialog will appear:
 
 The following options are available on the :guilabel:`Options Dialog`.
 
-**Only show visible layers in the InaSAFE dock:** This option will determine whether all (when unchecked) hazard and impact layers should be listed in the InaSAFE docks drop down menu. or (when checked) only visible layers.
+**Only show visible layers in the InaSAFE dock:** This option will determine
+whether all (when unchecked) hazard and impact layers should be listed in the
+|project_name| docks drop down menu. or (when checked) only visible layers.
 
-**Set QGIS layer name from title in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree using the title keyword in the layers keywords file. If the layer has no title in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply.
+**Set QGIS layer name from title in keywords:** This option will (when
+enabled) cause QGIS to name layers in the Layers tree using the title keyword
+in the layers keywords file. If the layer has no title in its keywords,
+or it has no keywords at all, the normal QGIS behaviour for naming layers
+will apply.
 
-**Zoom to impact layer on scenario estimate completion:** This option will cause the map view to zoom in/out in order to completely contain the InaSAFE impact scenario map output when an analysis completes.
+**Zoom to impact layer on scenario estimate completion:** This option will
+cause the map view to zoom in/out in order to completely contain the
+|project_name| impact scenario map output when an analysis completes.
 
-**Hide exposure layer on scenario estimate completion:** This option will cause QGIS to turn off the exposure layer used when InaSAFE completes the current analysis. You can re-enable the layer visibility again by checking its checkbox in the legend.
+**Hide exposure layer on scenario estimate completion:** This option will
+cause QGIS to turn off the exposure layer used when |project_name| completes
+the current analysis. You can re-enable the layer visibility again by
+checking its checkbox in the legend.
 
-**Clip datasets to visible extent before analysis:** This option will cause QGIS to clip hazard and exposure layers to the currently visible extent on the map canvas.
+**Clip datasets to visible extent before analysis:** This option will cause
+QGIS to clip hazard and exposure layers to the currently visible extent on
+the map canvas.
 
-**When clipping, also clip features (e.g. will clip polygon smaller):** This option will clip any polygons that extend beyond the map canvas. For example if you have a flood hazard polygon layer that extends far beyond your area of interest, the flood polygons will be reduced so that only the part inside of your area of interested (map canvas extent) is retained. This can speed up processing time somewhat.
+**When clipping, also clip features (e.g. will clip polygon smaller):** This
+option will clip any polygons that extend beyond the map canvas. For example
+if you have a flood hazard polygon layer that extends far beyond your area of
+interest, the flood polygons will be reduced so that only the part inside of
+your area of interested (map canvas extent) is retained. This can speed up
+processing time somewhat.
 
-**Help to improve InaSAFE by submitting errors to a remote server:** This option, when enabled, will submit diagnostic information back to an InaSAFE project server in the event of any error taking place that we are able to trap. The information provided is useful to the InaSAFE team to improve the robustness of the software. Please note the warning text below this option which is included here in full:
+**Help to improve InaSAFE by submitting errors to a remote server:** This
+option, when enabled, will submit diagnostic information back to an
+|project_name| project server in the event of any error taking place that we
+are able to trap. The information provided is useful to the |project_name|
+team to improve the robustness of the software. Please note the warning text
+below this option which is included here in full:
 
-.. note:: The above setting requires a QGIS restart to disable / enable. Error messages and diagnostic information will be posted to http://sentry.linfiniti.com/inasafe-desktop/. Some institutions may not allow you to enable this feature - check with your network administrator if unsure. Although the data is submitted anonymously, the information contained in tracebacks may contain file system paths which reveal your identity or other information from your system.
+.. note:: The above setting requires a QGIS restart to disable / enable.
+   Error messages and diagnostic information will be posted to
+   http://sentry.linfiniti.com/inasafe-desktop/. Some institutions may not
+   allow you to enable this feature - check with your network administrator
+   if unsure. Although the data is submitted anonymously,
+   the information contained in tracebacks may contain file system paths
+   which reveal your identity or other information from your system.
 
-**Show intermediate layers generated by postprocessing:** This option will cause QGIS to show the intermediate files generated by the postprocessing steps in the map canvas.
+**Show intermediate layers generated by postprocessing:** This option will
+cause QGIS to show the intermediate files generated by the postprocessing
+steps in the map canvas.
 
-**Female ratio default value:** This is the default female to total population ratio used for generating gender breakdowns.
+**Female ratio default value:** This is the default female to total
+population ratio used for generating gender breakdowns.
 
-**Keyword cache for remote data sources:** This option is used to determine where keywords are stored for datasets where it is not possible to write them into a .keywords file. See Keywords System for more information on the keywords system.
+**Keyword cache for remote data sources:** This option is used to determine
+where keywords are stored for datasets where it is not possible to write them
+into a .keywords file. See Keywords System for more information on the
+keywords system.
 
-**Run analysis in separate thread (experimental):** This option cause the analysis to be run in its own thread.
+**Run analysis in separate thread (experimental):** This option cause the
+analysis to be run in its own thread.
 
-.. note:: Pressing Cancel at any time will close the options dialog and any changes made will not be applied.  Pressing Ok at any time will close the options dialog and any changes made will be applied immediately.
- 
-We encourage you to check (in addioion to the default ones):
+.. note:: Pressing Cancel at any time will close the options dialog and any
+   changes made will not be applied.  Pressing Ok at any time will close the
+   options dialog and any changes made will be applied immediately.
+
+We encourage you to check (in addition to the default ones):
 
 * When clipping, also clip features (e.g. will clip polygon smaller)
-* Help to improve InaSAFE by submitting errors to a remote server
- 
-InaSAFE Website
----------------
-This manual is by no far the only documentation on InaSAFE.  Within the InaSAFE website you can find not only documentation on training, but all user documentation and developer documentation.  This website is also updated with every new release.
- 
+* Help to improve |project_name| by submitting errors to a remote server
+
+|project_name| Website
+----------------------
+
+This manual is by no far the only documentation on |project_name|.  Within
+the |project_name| website you can find not only documentation on training,
+but all user documentation and developer documentation.  This website is also
+updated with every new release.
+
 .. image:: /static/socialisation/inasafe_mainpage.jpg
 
 Click on the :guilabel:`Content` to find out more
@@ -77,8 +123,8 @@ Click on the :guilabel:`Content` to find out more
 .. image:: /static/socialisation/inasafe_content.jpg
 
 
-The website will be updated shortly with a new theme and logo.
-The content of this manual  (InaSAFE socialisation training manual) will also be found on the website in weeks to come.
+The content of this manual  (|project_name| socialisation training manual)
+will also be found on the website in weeks to come.
 
 Frequently Asked Questions
 --------------------------
@@ -87,26 +133,42 @@ Frequently Asked Questions
 No, the software is completely Free and Open Source.
 
 **What license is InaSAFE published under?**
-InaSAFE is published under the GPL version 2 license, the full text of which is available at   	www.gnu.org/licenses/gpl-2.0.txt.
-Under the terms of the license of you may freely copy, share and modify the software, as long as you make it available under the same license.
+|project_name| is published under the GPL version 2 license,
+the full text of which is available at www.gnu.org/licenses/gpl-2.0.txt.
+Under the terms of the license of you may freely copy,
+share and modify the software, as long as you make it available under the
+same license.
 
 **How is the project funded?**
-The project is being developed for the good of humanity and has been jointly developed by BNPB, AusAid & the World Bank.
+The project is being developed for the good of humanity and has been jointly
+developed by BNPB, AusAid & the World Bank.
 
 **I found a bug, how should I report it?**
-We manage the project issues using a GitHub issue tracker. The InaSAFE issue tracker is open to everyone, though you will first need to register a (free) account on GitHub to use it. You can find the GitHub self-registration page https://github.com/signup/free.
+We manage the project issues using a GitHub issue tracker. The |project_name|
+issue tracker is open to everyone, though you will first need to register a
+(free) account on GitHub to use it. You can find the GitHub self-registration
+page https://github.com/signup/free.
 Otherwise email inasafe-users@googlegroups.com
 
 **Could we request a new feature?**
-If you have a feature request, please use the issue tracker to let us know about it, using the same procedure as for bug reporting.
+If you have a feature request, please use the issue tracker to let us know
+about it, using the same procedure as for bug reporting.
 Otherwise email inasafe-users@googlegroups.com
 
 **Where do I get Hazard and Exposure data from?**
-As explained in InaSAFE functionality chapter (page 13), you are able to get open exposure data from  www.asiapop.org for population and  from OpenStreetMap for structures (however you may need to still digitise the structures go to www.learnosm.org for more details). To download OSM data see Appendix :guilabel:`Getting OpenStreetMap Data` (page 56).
-For hazard information it is best to approach your government science agencies or local universities to model earthquake, tsunami or floods.  However if it floods regularly in your region you could also develop a community floodprone footprint. 
+As explained in |project_name| functionality chapter (page 13),
+you are able to get open exposure data from  www.asiapop.org for population
+and  from OpenStreetMap for structures (however you may need to still
+digitise the structures go to www.learnosm.org for more details). To download
+OSM data see Appendix :guilabel:`Getting OpenStreetMap Data` (page 56).
+For hazard information it is best to approach your government science
+agencies or local universities to model earthquake,
+tsunami or floods. However if it floods regularly in your region you could
+also develop a community flood-prone footprint.
 
 **Why does the plugin not show up in my QGIS Plugin Manager?**
-One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not get the new plugin repo added to your repo list. To fix this you can do:
+One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not
+get the new plugin repo added to your repo list. To fix this you can do:
 
 #. open :guilabel:`QGIS`
 #. Go :guilabel:`Plugins` -> Fetch Python Plugins
@@ -114,8 +176,11 @@ One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not get 
 #. click :guilabel:`add`
 #. Name: Official QGIS Repository
 #. Url: http://plugins.qgis.org/plugins/plugins.xml
-#. :guilabel:`Save` it and the plugin repo list should update. If it doesnt, close and open QGIS to force an update.
-#. In the :guilabel:`python plugin manager` main tab now you should find InaSAFE available
- 
+#. :guilabel:`Save` it and the plugin repo list should update. If it does not,
+   close and open QGIS to force an update.
+#. In the :guilabel:`python plugin manager` main tab now you should find
+   |project_name| available
+
 Thank you for attending this course.
-If you would like to contact me directly my email address is kristy.vanputten@gmail.com
+If you would like to contact me directly my email address is
+kristy.vanputten@gmail.com
