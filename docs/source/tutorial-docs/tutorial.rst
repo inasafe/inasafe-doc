@@ -76,8 +76,8 @@ To install the |project_name| plugin, use the plugin manager in QGIS:
 
 :menuselection:`Plugins --> Fetch Python Plugins`
 
-Then search for ‘|project_name|‘, select it and click the install button. The
-plugin will now be added to your plugins menu.
+Then search for :guilabel:`InaSAFE`, select it and click the install
+button. The plugin will now be added to your plugins menu.
 
 Option 2: Manual Installation:
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
