@@ -8,6 +8,8 @@
   ############################################
 
   ServerName    [SERVERNAME]
+  ServerAlias   [SITENAME].[SERVERNAME]
+  ServerAlias   [SITENAME].localhost
   ServerAdmin   [WEBMASTER]
 
   DocumentRoot [DOCUMENTROOT]
@@ -27,7 +29,7 @@
     ReadmeName /en/_static/directory-listing-footer.html
     IndexStyleSheet "/en/_static/bootstrap/css/bootstrap.min.css"
     IndexIgnore .htaccess /resource
-    AllowOverride None
+    AllowOverride All
   </Directory>
 
   ErrorLog /var/log/apache2/[SERVERNAME].error.log
