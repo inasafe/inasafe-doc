@@ -2,14 +2,13 @@
 Using the |project_name| Plugin
 ===============================
 
-This document describes the useage of the |project_name| 'dock panel' - which
+This document describes the usage of the |project_name| 'dock panel' - which
 is the main interface for running risk scenarios within the Quantum GIS
 environment.
 
-.. note:: In order to use the
-   |project_name| tool effectively, you should probably also read the
-   :doc:`keywords` and :doc:`impact_functions` documentation before you get
-   started.
+.. note:: In order to use the |project_name| tool effectively,
+   you should probably also read the :doc:`keywords` and
+   :doc:`impact_functions` documentation before you get started.
 
 The |project_name| Dock panel is the main way to interact with the tools that
 are provided in |project_name|. After you have installed the |project_name|

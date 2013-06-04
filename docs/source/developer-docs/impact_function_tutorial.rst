@@ -22,8 +22,8 @@ hazard and exposure layers. Features of the impact function system are:
 * Allow for additional functionality to be added easily
 * Provide up-to-date documentation on impact functions functionality
 
-Writing a Simple Raster impact function: Tutorial 01
-----------------------------------------------------
+Writing a Simple Raster impact function:
+----------------------------------------
 
 This section provides a beginners tutorial on writing a simple earthquake
 impact function from scratch. You will need to be familiar with the basics of

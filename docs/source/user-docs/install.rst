@@ -25,7 +25,7 @@ From Zip Archive
    above rather.
 
 We make regular releases of the |project_name| plugin and they are available at
-https://github.com/AIFDR/inasafe/downloads. Simply choose the most recent (i.e.
+http://plugins.qgis.org/plugins/inasafe/. Simply choose the most recent (i.e.
 the one with the largest version number) and save it to your hard disk.
 
 Now extract the zip file into the QGIS plugins directory. Under windows the

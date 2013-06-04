@@ -97,8 +97,9 @@ Please observe the following coding standards when working on the codebase:
 
 
 .. note:: Please see
-   :ref:`faq-revision-label` for details on how the revision tag is replaced
-   with the SHA1 for the file when the release packages are made.
+   :ref:`faq-revision-label` for details on how the
+   revision tag is replaced with the SHA1 for the file when the release
+   packages are made.
 
 Doc strings
 ...........
@@ -127,11 +128,9 @@ functions and class methods::
 * If you use a literal string or expression in more than one place, refactor
   it into a function or variable.
 
-
 Various other sphinx markup elements may be used in the docstrings too.
 For more information see also:
 http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
-
 
 .. _hig-label:
 
@@ -182,7 +181,6 @@ are listed here for your convenience:
   user interface minimalistic and use sensible defaults.
 + If clicking a button will spawn a new dialog, an ellipsis (...) should be
   suffixed to the button text.
-
 
 Code statistics
 ...............

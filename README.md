@@ -46,7 +46,7 @@ Git clone your personal forked project::
 
 * git clone git@github.com:/user/inasafe-doc.git
 
- # to later update your tree do
+to later update your tree do
 
 * git pull --rebase origin master
 

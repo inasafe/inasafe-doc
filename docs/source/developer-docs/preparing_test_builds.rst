@@ -58,7 +58,7 @@ example running :samp:`hostname` on the deployment server might return
 'linfiniti' in which case to deploy the inasafe-crisis.linfiniti.com repo we
 would add an entry to the fabfile.py as follows::
 
-    def _all():
+    def _setup_env():
         """Things to do regardless of whether command is local or remote."""
         site_names = {
             'waterfall': 'inasafe-test.localhost',

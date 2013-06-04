@@ -56,6 +56,7 @@ channel.
 is Free and Open Source. That means anyone (or any organisation) can freely
 modify, adapt and improve the software. We will welcome any contributions to
 |project_name|.
+
 The easiest way to do this is to
 `fork <https://help.github.com/articles/fork-a-repo>`_
 the |project_name| code base on GitHub and then send us a
@@ -69,5 +70,4 @@ management system mentioned above.
    :doc:`/developer-docs/coding_standards` and is continually tested by a
    comprehensive regression testing system. We have this requirement in place
    to ensure a good experience for our users and to ensure that users can
-   have confidence in the results produced by
-   |project_name|.
+   have confidence in the results produced by |project_name|.

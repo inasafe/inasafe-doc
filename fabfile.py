@@ -34,7 +34,7 @@ from fabtools.vagrant import vagrant
 env.env_set = False
 
 
-def _all():
+def _setup_env():
     """Things to do regardless of whether command is local or remote."""
     if env.env_set:
         fastprint('Environment already set!\n')
@@ -79,7 +79,7 @@ def _all():
 ###############################################################################
 
 
-def docs_get_webdir(branch):
+def get_webdir(branch):
     if 'master' == branch:
         webdir = env.inasafe_master_web_path
     else:
@@ -88,18 +88,18 @@ def docs_get_webdir(branch):
 
 
 @task
-def docs_builddocs(branch='master'):
+def build_doc(branch='master'):
     """Create a pdf and html doc tree and publish them online.
     Args:
         branch: str - a string representing the name of the branch to build
             from. Defaults to 'master'.
     To run e.g.::
-        fab -H 188.40.123.80:8697 build_documentation
+        fab -H 188.40.123.80:8697 build_doc
         or to package up a specific branch (in this case minimum_needs)
-        fab -H 88.198.36.154:8697 build_documentation:version-1_1
+        fab -H 88.198.36.154:8697 build_doc:version-1_1
     .. note:: Using the branch option will not work for branches older than 1.1
     """
-    _all()
+    _setup_env()
     fabgis.setup_inasafe()
     # Needed for when running on headless servers
     fabtools.require.deb.package('xvfb')
@@ -122,14 +122,14 @@ def docs_builddocs(branch='master'):
 
 
 @task
-def docs_deploy_website(branch='master'):
+def deploy_doc_webpage(branch='master'):
     """Initialise an InaSAFE docs site where we host docs and pdf."""
-    _all()
-    docs_builddocs()
+    _setup_env()
+    build_doc()
 
     fabtools.require.deb.package('apache2')
     code_path = env.code_path
-    webdir = docs_get_webdir(branch)
+    webdir = get_webdir(branch)
 
     # if hostname = jenkins or vagrant or livesite then
     # webdir = /var/www/inasafe-documentation
@@ -189,14 +189,14 @@ def docs_deploy_website(branch='master'):
 
 
 @task
-def jenkins_setup(use_upstream_repo=True, branch='master'):
+def setup_jenkins(use_upstream_repo=True, branch='master'):
     """
 
     :param use_upstream_repo:
     :param branch:
     :return:
     """
-    _all()
+    _setup_env()
 
     # We need some additional tools to run jenkins checks
     fabtools.require.deb.package('xvfb')
@@ -207,17 +207,17 @@ def jenkins_setup(use_upstream_repo=True, branch='master'):
 
     fabgis.jenkins_deploy_website(use_upstream_repo=use_upstream_repo)
     fabgis.install_jenkins(use_upstream_repo)
-    jenkins_jobs_setup(branch=branch)
+    setup_jenkins_jobs(branch=branch)
 
 
 @task
-def jenkins_jobs_setup(branch='master'):
+def setup_jenkins_jobs(branch='master'):
     """
     uploads the prepared jobs into jenkins for testing
     :param branch: which branch of the documentations
     :return:
     """
-    _all()
+    _setup_env()
     xvfb_config = "org.jenkinsci.plugins.xvfb.XvfbBuildWrapper.xml"
     job_dir = ['InaSAFE-Documentation']
     with cd('/var/lib/jenkins/'):
