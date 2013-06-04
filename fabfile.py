@@ -44,13 +44,13 @@ def _all():
     # Key is hostname as it resolves by running hostname directly on the server
     # value is desired web site url to publish the repo as.
     doc_site_names = {
-        'cunonia': 'inasafe-docs.localhost',
-        'waterfall': 'inasafe-docs.localhost',
-        'spur': 'inasafe-docs.localhost',
+        'cunonia': 'docs.localhost',
+        'waterfall': 'docs.localhost',
+        'spur': '-docs.localhost',
         'maps.linfiniti.com': 'inasafe.linfiniti.com',
-        'linfiniti': 'inasafe-docs.linfiniti.com',
+        'linfiniti': 'docs.linfiniti.com',
         #vagrant instance
-        'vagrant-inasafe-doc': 'inasafe-docs.vagrant.localhost',
+        'vagrant-inasafe-doc': 'docs.vagrant.localhost',
         'shiva': 'docs.inasafe.org'}
 
     with hide('output'):
@@ -79,7 +79,7 @@ def _all():
 ###############################################################################
 
 
-def get_webdir(branch):
+def docs_get_webdir(branch):
     if 'master' == branch:
         webdir = env.inasafe_master_web_path
     else:
@@ -88,7 +88,7 @@ def get_webdir(branch):
 
 
 @task
-def build_doc(branch='master'):
+def docs_builddocs(branch='master'):
     """Create a pdf and html doc tree and publish them online.
     Args:
         branch: str - a string representing the name of the branch to build
@@ -122,14 +122,25 @@ def build_doc(branch='master'):
 
 
 @task
-def deploy_docs_site(branch='master'):
+def docs_deploy_website(branch='master'):
     """Initialise an InaSAFE docs site where we host docs and pdf."""
     _all()
-    build_doc()
+    docs_builddocs()
 
     fabtools.require.deb.package('apache2')
     code_path = env.code_path
-    webdir = get_webdir(branch)
+    webdir = docs_get_webdir(branch)
+
+    # if hostname = jenkins or vagrant or livesite then
+    # webdir = /var/www/inasafe-documentation
+    # for now we set dir just for jenkins anyway
+    # probably we should just set a symlink
+
+    jenkins_webdir = '/var/www/inasafe-documentation'
+    if not exists(jenkins_webdir):
+        sudo('mkdir -p %s/pdf' % jenkins_webdir)
+        sudo('chown -R %s.%s %s' % (env.user, env.user, jenkins_webdir))
+        sudo('chmod -R 777 %s' % jenkins_webdir)
 
     inasafe_docs_apache_conf = '%s.inasafe-docs.conf' % branch
     inasafe_docs_apache_conf_template = 'inasafe-docs.conf.templ'
@@ -155,8 +166,10 @@ def deploy_docs_site(branch='master'):
             'SERVERNAME': env.doc_site_name,  # Web Url e.g. foo.com
             'WEBMASTER': 'werner@linfiniti.com',  # email of web master
             'DOCUMENTROOT': webdir,  # Content root .e.g. /var/www
+            'SITENAME': 'inasafe-docs',  # Choosen name of jenkins 'root'
         }
         fabgis.replace_tokens(inasafe_docs_apache_conf_template, my_tokens)
+        sudo('rm *.templ')
 
     with cd(code_path):
         # Copy built Documentation to the Webserver path
@@ -176,7 +189,7 @@ def deploy_docs_site(branch='master'):
 
 
 @task
-def setup_jenkins(use_upstream_repo=True, branch='master'):
+def jenkins_setup(use_upstream_repo=True, branch='master'):
     """
 
     :param use_upstream_repo:
@@ -192,16 +205,16 @@ def setup_jenkins(use_upstream_repo=True, branch='master'):
     fabtools.require.deb.package('pyflakes')
     fabtools.require.deb.package('sloccount')
 
-    fabgis.initialise_jenkins_site(use_upstream_repo=use_upstream_repo)
+    fabgis.jenkins_deploy_website(use_upstream_repo=use_upstream_repo)
     fabgis.install_jenkins(use_upstream_repo)
-    setup_jenkins_jobs(branch=branch)
+    jenkins_jobs_setup(branch=branch)
 
 
 @task
-def setup_jenkins_jobs(branch='master'):
+def jenkins_jobs_setup(branch='master'):
     """
-
-    :param branch:
+    uploads the prepared jobs into jenkins for testing
+    :param branch: which branch of the documentations
     :return:
     """
     _all()
