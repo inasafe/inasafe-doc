@@ -3,8 +3,7 @@
 InaSAFE Documentation
 =====================
 
-The InaSAFE Documentation is scheduled to be built every 8 hours.
-!!! Pdf versions of the manual are available here: http://inasafe.org/pdf/
+PDF versions of the Documentation are available here: http://inasafe.org/pdf/
 
 Tools you need to install, if you want to work on the documentation
 -------------------------------------------------------------------
@@ -23,9 +22,9 @@ github account and install the following tools:
 * texi2pdf (from packagemanager: in Ubuntu it is in package 'texinfo')
 * dvi2png (from packagemanager: in Ubuntu it is in package 'dvi2png')
 
-*****************************************
+
 Working on the english QGIS Documentation
-*****************************************
+=========================================
 
 This section describes how to update/edit the english master documentation.
 
@@ -45,57 +44,49 @@ Generation
 
 Git clone your personal forked project::
 
- git clone git@github.com:/user/inasafe-doc.git
+* git clone git@github.com:/user/inasafe-doc.git
+
  # to later update your tree do
- git pull --rebase origin master
 
-You should have a directory tree like this::
-
- ├── .tx                inside
- ├── docs
- ├── scripts            containing buildscripts
- ├── .gitignore         ignore some temporary created file on commit
- ├── fabfile.py         the fabfile to do all this with one command
- ├── icon.png           Icon to be put on the pages
- └── readme.rst         this file
+* git pull --rebase origin master
 
 Run post_translate.sh script to build the documentation::
 
- cd inasafe-doc
- sh ./scripts/post_translate.sh en
+* cd inasafe-doc
+
+* sh ./scripts/post_translate.sh en
 
 You can now edit the rst files in the folder ./docs/source/tutorial-docs/,
 e.g.::
 
- cd /docs/source/tutorial-docs/
- gedit tutorial.rst
+* cd /docs/source/tutorial-docs/
+* gedit tutorial.rst
 
 After editing the rst file, run 'post_translate.sh en' again to build the
 english pdf and html files::
 
- cd inasafe-doc
- sh scripts/post_translate.sh en
+*  cd inasafe-doc
+*  sh scripts/post_translate.sh en
 
 .. note:: if you want to create docs in another language, use the locale code as
    parameter.
 
 For example, to create indonesian docs::
 
- cd inasafe-doc
- sh scripts/post_translate.sh id
+* cd inasafe-doc
+* sh scripts/post_translate.sh id
 
 Now check, if the manual built correctly and commit and push your changes to
 your forked repository::
 
- git commit /docs/source/tutorial-docs/tutorial.rst -m 'updated tutorial'
- git push
+* git commit /docs/source/tutorial-docs/tutorial.rst -m 'updated tutorial'
+* git push
 
 In your github account you can now open a pull request to merge your changes
 from your forked to the official QGIS Documentation repository.
 
-*********************************************
 Translating the english InaSAFE Documentation
-*********************************************
+=============================================
 
 Every language has it's own maintainer, please contact them,
 if you want to help. You find a list of current language maintainers at the
