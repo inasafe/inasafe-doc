@@ -1,7 +1,8 @@
+============================
 |project_name| Road Map 2013
 ============================
 
-This section of the documention describes |project_name| project direction.
+This section of the documentation describes |project_name|'s project direction.
 
 .. toctree::
    :maxdepth: 2

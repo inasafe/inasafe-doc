@@ -1,3 +1,4 @@
+==========================
 Frequently Asked Questions
 ==========================
 
@@ -66,12 +67,13 @@ How do I get Open Street Map building data into |project_name|?
 
 For Indonesia, you can download latest collections at
 `data.kompetisiosm.org <http://data.kompetisiosm.org>`_. or you can add our
-Open Street Map building PostGIS mirror to InaSAFE:
+Open Street Map building PostGIS mirror to |project_name|:
 
  * Add PostGIS layer with host=203.77.224.77, database=osm, username=aifdr,
    port 5432, SSL mode=disable
  * Select view named vw_planet_osm_polygon
- * Build query: upper(geometrytype("way")) IN ('POLYGON','MULTIPOLYGON') AND BUILDING != ''
+ * Build query: upper(geometrytype("way")) IN ('POLYGON',
+   'MULTIPOLYGON') AND BUILDING != ''
 
 Another way, you can export osm data from HOT Exports:
  * Go to `Preset JOSM <http://josm.openstreetmap.de/wiki/Presets>`_.
@@ -124,20 +126,23 @@ One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not
 get the new plugin repo added to your repo list. To fix this you can do:
 
 * open QGIS
-* Go Plugins -> Fetch Python Plugins
-* click 'Repositories' tab
-* click add
+* Go :menuselection:`Plugins --> Fetch Python Plugins`
+* click :guilabel:`Repositories` tab
+* click :guilabel:`add`
 * :guilabel:`Name`: Official QGIS Repository
 * :guilabel:`Url`: http://plugins.qgis.org/plugins/plugins.xml
 * Save it and the plugin repo list should update. If it doesn't,
   close and open QGIS to force an update.
-* In the python plugin manager main tab now you should find InaSAFE available
+* In the python plugin manager main tab now you should find |project_name|
+  available
 
 How do I fix KeywordDbError on Windows?
 ---------------------------------------
 
-It’s an issue related to permission issue. Normally, it occurs when  
-the keyword.db is not writable by current user. The thing that you have to do 
+It’s an issue related to permission issue. Normally, it occurs when
+the keyword.db is not writable by current user. The thing that you have to do
 is re-run QGIS as administrator or re-install QGIS as administrator.
 
-Please see `InaSAFE issue #459 <https://github.com/AIFDR/inasafe/issues/459>`_ and `InaSAFE issue #569 <https://github.com/AIFDR/inasafe/issues/569>`_ for further information.
+Please see `InaSAFE issue #459 <https://github.com/AIFDR/inasafe/issues/459>`_
+and `InaSAFE issue #569 <https://github.com/AIFDR/inasafe/issues/569>`_ for
+further information.

@@ -2,7 +2,8 @@
 |project_name| user documentation
 =================================
 
-This section of the documention describes how to use the |project_name| system.
+This section of the documentation describes how to use the |project_name|
+system.
 
 .. toctree::
    :maxdepth: 2

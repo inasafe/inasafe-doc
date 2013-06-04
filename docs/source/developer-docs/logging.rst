@@ -1,7 +1,8 @@
+=======
 Logging
--------
+=======
 
-InaSAFE includes a logging subsystem that can be used to:
+|project_name| includes a logging subsystem that can be used to:
 
 * record event messages in the QGIS Log Console
 * record event messages to a file e.g.
@@ -11,12 +12,12 @@ InaSAFE includes a logging subsystem that can be used to:
 * email a developer a message when a logging event occurs (currently disabled)
 
 In this section we describe best practices and procedures for logging in
-InaSAFE.
+|project_name|.
 
 Getting and using the named Logger instance
 -------------------------------------------
 
-We use the 'InaSAFE' logger instance as standard. It is the responsibility
+We use the '|project_name|' logger instance as standard. It is the responsibility
 of each client package (e.g. :samp:`safe_qgis`) to setup the logger - typically
 in the :samp:`__init__.py` for the package::
 
@@ -58,9 +59,9 @@ The above example was contrived in the QGIS python console. When the exception
 originates inside a module, the traceback will include the complete call tree.
 
 Logging in loops
-------------------
-.. warning::
+----------------
 
+.. warning::
    Please be considerate when logging into loops as this can slow execution a
    lot (we had a spatial analysis loop with two logged messages and it took
    15sec for 1000 itterations, removing logging brought it to 5sec)
@@ -72,7 +73,7 @@ Remote logging
 
 There is support for logging to a remote server. This currently intended for
 developer use only and will provide ongoing statistics about the number and
-nature of exceptions taking place in InaSAFE.
+nature of exceptions taking place in |project_name|.
 
 .. note:: For privacy / security reasons this is disabled by default and you
     need to jump through two hoops to make it work.
@@ -103,9 +104,9 @@ QGIS Log Messages
 -----------------
 
 For the :samp:`safe_qgis` package, log messages will also be written to the
-QGIS log console under a tab labelled 'InaSAFE'. You can view these messages by
-clicking on the small triangular icon in the bottom right corner of the QGIS
-main window.
+QGIS log console under a tab labelled '|project_name|'. You can view these
+messages by clicking on the small triangular icon in the bottom right corner
+of the QGIS main window.
 
 .. figure:: /static/log-notifications.png
    :align:   center

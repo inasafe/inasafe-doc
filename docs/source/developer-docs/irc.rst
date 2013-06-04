@@ -1,9 +1,11 @@
-IRC Notes for InaSAFE
-=====================
+============================
+IRC Notes for |project_name|
+============================
 
 The IRC channel is #inasafe on freenode.
 
-The channel is logged, you can read the logs at http://irclogs.geoapt.com/inasafe/.
+The channel is logged, you can read the logs at
+http://irclogs.geoapt.com/inasafe/.
 
 Tim (timlinux) has ops and has registered the channel::
 
@@ -35,8 +37,8 @@ https://github.com/AIFDR/inasafe/admin/hooks with the following settings:
 * **Notice** : yes
 * **Active** : yes
 
-Also you need to do a mode change on the chanserv channel to enable outsider messages::
+Also you need to do a mode change on the chanserv channel to enable outsider
+messages::
 
    /query chanserv
    set #inasafe mlock -n
-

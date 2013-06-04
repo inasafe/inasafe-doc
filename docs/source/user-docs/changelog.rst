@@ -1,4 +1,3 @@
-
 ==========
 Whats new?
 ==========
@@ -35,7 +34,8 @@ Changelog for version 1.0.1
 Changelog for version 1.0.0
 ---------------------------
 
-* Added post processor infrastructure including gender and age specific indicators
+* Added post processor infrastructure including gender and age specific
+  indicators
 * Added data source attribution
 * Various GUI updates
 * Added use of transparency in generated maps
@@ -75,25 +75,28 @@ Changelog for version 0.5.0
 * Aggregation of raster impact layers by arbitrary polygon layers (such as
   kelurahan boundaries)
 * Limited support for runtime configuration of impact functions (e.g. by
-  changing thresholds). This is an interim measure while the team is working on
-  a GUI to manipulate impact functions more generally.
+  changing thresholds). This is an interim measure while the team is working
+  on a GUI to manipulate impact functions more generally.
 * More DRR actions added to impact function reports (such as how will warnings
   be disseminated, how will we reach stranded people etc.)
 * Volcanic (zonal hazard) impact assessments on building and population
-* New function table view that lists all the available impact functions and allows
-  them to be filtered by different criteria.
-* Lots of small improvements to error reporting, GUI, translations and code quality.
+* New function table view that lists all the available impact functions and
+  allows them to be filtered by different criteria.
+* Lots of small improvements to error reporting, GUI, translations and code
+  quality.
 
 Changelog for version 0.4.1
 ...........................
 
 * This is a minor bugfix release with packaging and documentation related
-  changes only so that InaSAFE can be deployed via the official QGIS repository.
+  changes only so that InaSAFE can be deployed via the official QGIS
+  repository.
 * Added InaSAFE tutorial to sphinx documentation
 
 Changelog for version 0.4.0
 ...........................
-* Ability to automatically handle multipart vector data: https://github.com/AIFDR/inasafe/issues/160
+* Ability to automatically handle multipart vector data:
+  https://github.com/AIFDR/inasafe/issues/160
 * Better error reporting:
 
  * https://github.com/AIFDR/inasafe/issues/170
@@ -110,7 +113,8 @@ Changelog for version 0.4.0
 
 * InaSAFE APIs better defined: https://github.com/AIFDR/inasafe/issues/134
 * Release procedure developed: https://github.com/AIFDR/inasafe/issues/109
-* Added estimate of displaced people to earthquake fatality model: https://github.com/AIFDR/inasafe/commit/04f0e1d
+* Added estimate of displaced people to earthquake fatality model:
+  https://github.com/AIFDR/inasafe/commit/04f0e1d
 * Achieved 100% translation for Bahasa Indonesia
 * Made bundled test and demo data public with associated license information
 * Added AusAid and World Bank logos to dock
@@ -176,4 +180,3 @@ Changelog for version 0.1.0:
 * removed dependency on SciPy
 * Support for internationalisation.
 * Comprehensive documentation system.
-

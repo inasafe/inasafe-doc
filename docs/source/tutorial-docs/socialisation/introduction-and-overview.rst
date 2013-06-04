@@ -103,9 +103,9 @@ local communities and government departments responsible for each sector,
 often through a facilitated part of a disaster preparedness and planning
 exercise.
 
-Where appropriate spatial data doesn’t yet exist, external tools such as
-OpenStreetMap (see ) can allow governments and communities to quickly and
-easily map their assets that are important to them.
+Where appropriate spatial data does not yet exist, external tools such as
+OpenStreetMap can allow governments and communities to quickly and easily map
+their assets that are important to them.
 
 .. note:: It is important to note that |project_name| is not a hazard
    modelling tool. Information on hazards needs to be provided either by
@@ -121,16 +121,18 @@ Aggregation.
 Hazard
 ......
 
-Hazard can be seen as a condition, phenomenon, or human activity that
-potentially cause victims, losses or destruction to social structure and
-environment. Events or phenomena that frequently are seen as hazard
-potentials include earthquakes, tsunamis, floods, landslides, tornadoes etc.
+  Hazard can be seen as a condition, phenomenon, or human activity that
+  potentially cause victims, losses or destruction to social structure and
+  environment. Events or phenomena that frequently are seen as hazard
+  potentials include earthquakes, tsunamis, floods, landslides, tornadoes etc.
 
 For |project_name|, hazard data refers to a singular disaster scenario (i.e.
 a Mw 7.8 earthquake or a volcanic eruption) that has been developed through
 scientific modelled software for infrequent events, for more frequent events
 such as floods it can either be modelled by scientist or mapped by the
-community. The hazard must be accompanied by specific units:
+community.
+
+The hazard must be accompanied by specific units:
 
 +------------------------+-----------------------------------------+----------------------+
 |       Hazard           |                  Modelled               |     Footprints       |
@@ -161,11 +163,10 @@ The input Hazard layer must have:
 Exposure
 ........
 
-For |project_name|, exposure data is refers to as population density (number
-of people found in a certain area) or important infrastructure (buildings,
-bridges etc). that become a focus of interest when calculating the impact of
-a specific hazard.
-
+  For |project_name|, exposure data is refers to as population density (number
+  of people found in a certain area) or important infrastructure (buildings,
+  bridges etc). that become a focus of interest when calculating the impact of
+  a specific hazard.
 
 +--------------------------+-------------------------------------------+
 |       Exposure           |                  Type                     |
@@ -192,43 +193,48 @@ The input Exposure layer must have:
 Aggregation
 ............
 
-For |project_name| an aggregation layer is division of the hazard extent by
-boundaries not relating to the hazard, more specifically administration
-boundaries such as districts, villages etc. This allows for targeted response
-by the local governments, and an understanding of the division of impacted
-output. Due to time constraints aggregation will only be included within the
-optional section.
+  For |project_name| an aggregation layer is division of the hazard extent by
+  boundaries not relating to the hazard, more specifically administration
+  boundaries such as districts, villages etc. This allows for targeted response
+  by the local governments, and an understanding of the division of impacted
+  output. Due to time constraints aggregation will only be included within the
+  optional section.
 
 Impact Function
 ---------------
 
-The core to |project_name|  is its capability of having multiple Impact functions specific to the input data.
-The impact function is a software programme that computes an impact assessment given a number of inputs.
-The impact assessment will typically have a spatial component (e.g. a GIS layer which can be incorporated
-into a map) and a non-spatial component (e.g. a list of estimates of disaster risk reduction elements
-such as how many bags of rice to make available, or a list of actions you may want to consider carrying out).
+The core to |project_name|  is its capability of having multiple Impact
+functions specific to the input data. The impact function is a software
+programme that computes an impact assessment given a number of inputs. The
+impact assessment will typically have a spatial component (e.g. a GIS layer
+which can be incorporated into a map) and a non-spatial component (e.g. a
+list of estimates of disaster risk reduction elements such as how many bags
+of rice to make available, or a list of actions you may want to consider
+carrying out).
 
-Impact functions can be written for any contingency planning purpose, one example is the minimum needs
-(minimum quantity of relief items per per person) that need to be supplied to refugees during/after a disaster.
-The Indonesian Disaster Management Agency have identified these needs per day, and |project_name| has used these numbers
-to calculate how much food, water, toilets, family kits etc are need during/after the disaster based on the number
-of evacuated people. This output directly informs contingency planners how much of each item is needed to withstand
-a major disaster.
+Impact functions can be written for any contingency planning purpose,
+one example is the minimum needs (minimum quantity of relief items per per
+person) that need to be supplied to refugees during/after a disaster. The
+Indonesian Disaster Management Agency have identified these needs per day,
+and |project_name| has used these numbers to calculate how much food, water,
+toilets, family kits etc are need during/after the disaster based on the
+number of evacuated people. This output directly informs contingency planners
+how much of each item is needed to withstand a major disaster.
 
-Additionally an Impact functions can be configured ‘on the fly’ during the analysis.  This will be touched
-on during the training exercise.
+Additionally an Impact functions can be configured ‘on the fly’ during the
+analysis.  This will be touched on during the training exercise.
 
-Keywords
-........
+Keywords:
+.........
 
-An Impact function will automatically be chosen depending on the keywords that has been allocated to
-the input layers. The purpose of the keywords file is to provide additional metadata needed by the
-impact functions. For example, the keywords file will indicate whether a given dataset should be treated
-as a hazard or an exposure layer. It is also used to indicate the context of the layer (e.g. flood,
-earthquake).
+  An Impact function will automatically be chosen depending on the keywords
+  that has been allocated to the input layers. The purpose of the keywords file
+  is to provide additional metadata needed by the impact functions. For
+  example, the keywords file will indicate whether a given dataset should be
+  treated as a hazard or an exposure layer. It is also used to indicate the
+  context of the layer (e.g. flood, earthquake).
 
-Available Impact Functions
-..........................
+**Available Impact Functions**
 
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 |       Hazard      |   How many     |         might            |                              output                                |
@@ -254,16 +260,14 @@ Available Impact Functions
 
 Output Data
 -----------
-Impact calculation produces an output layer representing potential damages or losses of affected exposure.
-The output layer will come out once the impact calculation process is finished successfully.
-As previously indicated this output layer could potentially be aggregated by administration boundaries.
+Impact calculation produces an output layer representing potential damages or
+losses of affected exposure. The output layer will come out once the impact
+calculation process is finished successfully. As previously indicated this
+output layer could potentially be aggregated by administration boundaries.
 
-Using the example explained in Impact functions about the minimum needs, the output data will be both
-a spatial layer indicating where people are (by density) and the non-spatial layer will have statistics
-on the minimum needs based on the number of people that ‘need evacuating’.
+Using the example explained in Impact functions about the minimum needs,
+the output data will be both a spatial layer indicating where people are (by
+density) and the non-spatial layer will have statistics on the minimum needs
+based on the number of people that ‘need evacuating’.
 
 .. image:: /static/socialisation/output_data.png
-
-
-
-

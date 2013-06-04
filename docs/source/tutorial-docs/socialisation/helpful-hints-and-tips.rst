@@ -123,9 +123,6 @@ Click on the :guilabel:`Content` to find out more
 .. image:: /static/socialisation/inasafe_content.jpg
 
 
-The content of this manual  (|project_name| socialisation training manual)
-will also be found on the website in weeks to come.
-
 Frequently Asked Questions
 --------------------------
 

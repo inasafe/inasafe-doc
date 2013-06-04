@@ -1,4 +1,3 @@
-
 ==============
 Postprocessors
 ==============
@@ -9,7 +8,6 @@ used effectively.
 
 .. note:: This document is still a work in progress.
 
-
 What is a postprocessor?
 ------------------------
 
@@ -17,7 +15,6 @@ A postprocessor is a function that takes the results from the impact function
 and calculates derivative indicators, for example if you have an affected
 population total, the Gender postprocessor will calculate gender specific
 indicators such as additional nutritional requirements for pregnant women
-
 
 Creating postprocessors
 -----------------------
@@ -50,7 +47,8 @@ the minimal class could look like this:
 
 After that you need to import the new class into postprocessor_factory and
 update AVAILABLE_POSTPTOCESSORS to include the postprocessor prefix (e.g.
-MySuper if the class is called MySuperPostprocessor and its human readable name)
+MySuper if the class is called MySuperPostprocessor and its human readable
+name)
 
 As last step you have to update or add the *parameters* variable to the impact
 functions that you want to use the new postprocessor. This will need to include
@@ -110,3 +108,4 @@ Data structure of results
                                                  (u'Elderly count', {'value': 27228, 'metadata': {}})]))
         ]
     }
+

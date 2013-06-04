@@ -1,14 +1,16 @@
+================
 Getting involved
 ================
 
-If you like the work we are doing in InaSAFE and would like to contribute,
-we will welcome your involvement. We spend a lot of time and effort trying to
-make a robust, user friendly and useful software platform, but there is
-no substitute for having interested users participating and sharing their
-needs, problems and successes! Here are a few simple ways you can get involved:
+If you like the work we are doing in |project_name| and would like to
+contribute, we will welcome your involvement. We spend a lot of time and
+effort trying to make a robust, user friendly and useful software platform,
+but there is no substitute for having interested users participating and
+sharing their needs, problems and successes! Here are a few simple ways you
+can get involved:
 
 **Visit our web site!** The web site will always represent the latest
-information on how to use InaSAFE. We encourage anyone who wants to get
+information on how to use |project_name|. We encourage anyone who wants to get
 involved with the project to first read the content available on the site to
 familiarise themselves with the content. The website is available at:
 
@@ -22,7 +24,6 @@ do not need a google account to use this forum) by sending an email to:
 inasafe-users+subscribe@googlegroups.com
 
 You can unsubscribe again at any time by simply sending an email to:
-
 
 inasafe-users+unsubscribe@googlegroups.com
 
@@ -42,27 +43,31 @@ web browser to join the chat room using the link below:
 
 http://webchat.freenode.net/
 
-On the form that appears, choose a user name, enter #inasafe in the :guilabel:`
-Channels:` box and complete the rest of the details in the form. After logging
-in wait a few moments and you will be take to the #inasafe channel.
+On the form that appears, choose a user name, enter #inasafe in the
+:guilabel:`Channels:` box and complete the rest of the details in the form.
+After logging in wait a few moments and you will be take to the #inasafe
+channel.
 
 .. note:: Other people in the room may not be actively watching the channel,
    so just ask your question and leave the chat window open and check back
    every now and then until you see other chat room members become active.
 
-**Submit your code!** We would really like to emphasise that InaSAFE is Free
-and Open Source. That means anyone (or any organisation) can freely modify,
-adapt and improve the software. We will welcome any contributions to InaSAFE.
-The easiest way to do this is to `fork <https://help.github.com/articles/fork-a-repo>`_
-the InaSAFE code base on GitHub and then send us a
+**Submit your code!** We would really like to emphasise that |project_name|
+is Free and Open Source. That means anyone (or any organisation) can freely
+modify, adapt and improve the software. We will welcome any contributions to
+|project_name|.
+The easiest way to do this is to
+`fork <https://help.github.com/articles/fork-a-repo>`_
+the |project_name| code base on GitHub and then send us a
 `pull request <https://help.github.com/articles/using-pull-requests>`_.
 
 We also welcome small improvements, translations or other fixes via the issue
 management system mentioned above.
 
-.. note:: We have strict requirements that all code submitted to InaSAFE is
-   compliant with high :doc:`/developer-docs/coding_standards` and is
-   continually tested by a comprehensive regression testing system.
-   We have this requirement in place to ensure a good experience for our users
-   and to ensure that users can have confidence in the results produced by
-   InaSAFE.
+.. note:: We have strict requirements that all code submitted to
+   |project_name| is compliant with high
+   :doc:`/developer-docs/coding_standards` and is continually tested by a
+   comprehensive regression testing system. We have this requirement in place
+   to ensure a good experience for our users and to ensure that users can
+   have confidence in the results produced by
+   |project_name|.

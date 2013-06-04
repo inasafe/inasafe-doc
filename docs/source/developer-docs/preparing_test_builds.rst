@@ -1,11 +1,11 @@
-==============
+===========
 Test builds
-==============
+===========
 
 Test builds are created using fabric (http://fabfile.org) and a bash script.
 
 Test builds are intended for early adopters / testers who want to use the
-bleeding edge version of InaSAFE.
+bleeding edge version of |project_name|.
 
 .. warning:: Using test builds may result in strange behaviour or bad things
   happening when you run your assessment. We try our best to keep the master
@@ -14,7 +14,7 @@ bleeding edge version of InaSAFE.
 
 This document has two sections:
 
-* How to configure QGIS to use the InaSAFE test builds repo.
+* How to configure QGIS to use the |project_name| test builds repo.
 * How to set up a test build server (intended only for sysadmins).
 
 Configuring QGIS to use test builds (from Linfiniti server).
@@ -28,12 +28,11 @@ Configuring QGIS to use test builds (from Linfiniti server).
 In the :guilabel:`Options` tab, tick the
 :guilabel:`Show all plugins, even those marked as experimental` option.
 
-You should now see the experimental versions of InaSAFE listed in the
+You should now see the experimental versions of |project_name| listed in the
 :guilabel:`Plugins` tab.
 
 .. note:: The URL may differ depending on where the test repo is hosted (see
-    below).
-
+   below).
 
 Configuring the hosting of the test build repo.
 --------------------------------------------------
@@ -73,7 +72,6 @@ server'. The resultant web site will have a new repository created that a
 user could add to their QGIS plugin repository list as::
 
     http://inasafe-crisis.linfiniti.com/plugins.xml
-
 
 Prepare your server:
 ....................

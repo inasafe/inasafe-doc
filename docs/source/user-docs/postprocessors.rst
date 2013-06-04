@@ -1,4 +1,3 @@
-
 ================
 Post-processors
 ================
@@ -35,8 +34,8 @@ inform you and will skip post-processing.
 Creating post-processors
 ------------------------
 
-If you feel there is an important post-processor which is missing, there are two
-avenues you can follow:
+If you feel there is an important post-processor which is missing,
+there are two avenues you can follow:
 
 * You can develop it yourself or with the aid of a programmer who has a good
   understanding of the python programming language.

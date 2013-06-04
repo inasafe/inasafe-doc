@@ -1,3 +1,4 @@
+============================================
 Set up of Windows 'slave' builds for Jenkins
 ============================================
 
@@ -30,14 +31,14 @@ With the base software installed, we will clone two GitHub repositories to
 the VM:
 
 * **InaSAFE.** The application that we will be testing.
-* **inasafe_data.** Test data required for unit testing the InaSAFE library.
+* **inasafe_data.** Test data required for unit testing the  library.
 
 Then we will configure the system to be able to run the unit tests, first
 independently of Jenkins, and then as a Jenkins job.
 
 Lastly, we will configure the VM Jenkins instance to be a slave for our Jenkins
-master and fire off the InaSAFE test suite in the VM whenever a commit is made
-to the InaSAFE master branch.
+master and fire off the |project_name| test suite in the VM whenever a commit is made
+to the |project_name| master branch.
 
 We will try to keep things as simple as possible. The VM instances should not
 be used for any other purpose in order to keep them small, fast and to avoid
@@ -54,7 +55,7 @@ We used the following configuration options when creating our virtual machines:
 
 All virtual machines were created using the free VirtualBox software.
 
-Note that you may need to enable virtualisation in your PC bios too.
+Note that you may need to enable virtualisation in your PCs BIOS too.
 
 All Virtual Machines were created with a *local* user account with
 
@@ -90,18 +91,17 @@ from github anonymously. If you take the former route, after copying them in
 to the plugins directory use the GitHub Windows app's options dialog to find
 them by clicking the 'scan for repositories' button.
 
-
 Python Install
 ..............
-
 
 * Download and install Python **32Bit** (even if you are running a 64 bit
   windows!!!) to match the version of python shipped with QGIS (python 2.7 in
   the case of QGIS 1.8).
 * Follow the process described in :ref:`windows_shell_launcher-label` so that
   you can use the QGIS libraries from a python shell. Note that you probably
-  need to change the second last line of that script to :samp:`cd "%HOMEPATH%\
-  .qgis\python\plugins\inasafe"` (removing the '-dev') at the end.
+  need to change the second last line of that script to
+  :samp:`cd "%HOMEPATH%\.qgis\python\plugins\inasafe"` (removing the '-dev')
+  at the end.
 * Follow the processed described in :ref:`windows-nose-setup` so that you have
   a working pip, nose etc.
 
@@ -127,11 +127,10 @@ Jenkins Install
 ...............
 
 Simply go to http://jenkins-ci.org/ and download the windows native package
- and then install it, taking all the defaults.
+and then install it, taking all the defaults.
 
 Once Jenkins is set up, open your browser at http://localhost:8080 to access
 the Jenkins page.
-
 
 Jenkins Configuration
 ---------------------
@@ -167,7 +166,7 @@ For simplicity, I also disabled the following plugins:
 
 System configuration
 ....................
-7
+
 We need to provide the path to git so that Jenkins can automatically make
 checkouts of each version.
 
@@ -178,7 +177,7 @@ the following path::
     C:\Users\inasafe\AppData\Local\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\bin\git.exe
 
 The GitHub application's git installer is a portable app and the path for you
-is going to look a little different - just lookin in your AppData dir and you
+is going to look a little different - just look in in your AppData dir and you
 should find it.
 
 .. note:: The Jenkins system user will need to have read permissions on the
@@ -233,5 +232,3 @@ produce output something like this the next time a commit takes place::
     Finished: SUCCESS
 
 That validates that at least your git checkout is working as expected.
-
-

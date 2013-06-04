@@ -1,25 +1,26 @@
-InaSAFE Realtime
-================
+=======================
+|project_name| Realtime
+=======================
 
-InaSAFE Realtime is a component of the InaSAFE project designed for deployment
-on a server and creation of Impact Maps a short interval after an event occurs.
+|project_name| Realtime is a component of the |project_name| project designed
+for deployment on a server and creation of Impact Maps a short interval after
+an event occurs.
 
 Currently the realtime system supports Earthquake fatality impact assessments,
 though in future we envisage additional support for other disaster types being
 facilitated.
 
 .. note:: This work was funded by the Australia-Indonesia Facility for Disaster
-          Reduction, Geoscience Australia and the World Bank-GFDRR. We thank you for your
-          support.
+   Reduction, Geoscience Australia and the World Bank-GFDRR. We thank you for
+   your support.
 
 Historical Note
 ---------------
 
 The original prototype of the realtime system was implemented by Ole Nielsen
-(AusAID). The subsequent port of the realtime system to InaSAFE was implemented
-by Tim Sutton (Linfiniti Consulting CC., funded by The World Bank and the
-AIFDR-AusAID).
-
+(AusAID). The subsequent port of the realtime system to |project_name| was
+implemented by Tim Sutton (Linfiniti Consulting CC., funded by The World Bank
+and the AIFDR-AusAID).
 
 Supported Platforms
 -------------------
@@ -33,37 +34,40 @@ Generated Products
 For every shake event, the tool produces a number of GIS products:
 
 * A raster layer interpolated from the original MMI point matrix and symbolized
-    according to the MMI scale colours.
+  according to the MMI scale colours.
 * A vector (shapefile) layer generated from the original MMI point matrix and
-    symbolized according to the MMI scale colours.
+  symbolized according to the MMI scale colours.
 * A vector (shapefile) layer depicting MMI isolines and symbolized according to
-    the MMI scale colours.
+  the MMI scale colours.
 * A cities layer (shapefile) which lists the affected cities along with key
-    data such as distance from and direction to epicenter, number of people resident in the city, mmi exposure etc.
+  data such as distance from and direction to epicenter,
+  number of people resident in the city, mmi exposure etc.
 
 In addition to the above mentioned GIS products, the following 3 files are
 created for each event:
 
 * A PNG file containing a single page report as illustrated above.
 * A large PNG image which contains exactly the same content as the pdf but in
-    an image format.
+  an image format.
 * A thumbnail PNG image which contains a reduced size image of the report.
 
 Architecture
 ------------
 
-InaSAFE Realtime is implemented by four main python modules:
+|project_name| Realtime is implemented by four main python modules:
 
 * **ftp_client** - A generic tool to fetch directory listings and
-    files from a remote server.
-* **shake_data** - A mostly generic tool to fetch shake files from
-    an ftp server. There is an expectation that the server layout
-    follows a simple flat structure where files are named
-    after the shake event and are in the format of shake data as
-    provided by the USGS (XXXXXX TODO fact check XXXX).
-    :samp:`ftp://118.97.83.243/20110413170148.inp.zip`
-    **Note:** This data is now no longer hosted via ftp and requires an ssh
-    account in order to retrieve it.
+  files from a remote server.
+
+* **shake_data** - A mostly generic tool to fetch shake files from an ftp
+  server. There is an expectation that the server layout follows a simple
+  flat structure where files are named after the shake event and are in the
+  format of shake data as provided by the USGS (XXXXXX TODO fact check XXXX).
+  :samp:`ftp://118.97.83.243/20110413170148.inp.zip`
+
+.. note:: This data is now no longer hosted via ftp and requires an ssh
+   account in order to retrieve it.
+
 * **shake_event** - A rather monolithic module that 'knows' how to
     fetch, unpack, process and generate a report for a quake event.
     The module logic is based on the standard shake data packaging
@@ -73,17 +77,17 @@ InaSAFE Realtime is implemented by four main python modules:
 * **make_map** - A simple python tool for running one or multiple shake
     analyses.
 
-InaSAFE has strong dependencies on QGIS (http://qgis.org) which is
+|project_name| has strong dependencies on QGIS (http://qgis.org) which is
 used for much of the data processing and reporting functionality.
 
 .. note:: Currently version 779e16603ee3fb8781c85a0e95913a1f6bbd2d6a is
     the 'known good' SHA1.
 
-Two of these dependencies is a template QGIS project and a map
-composition template. We have designed the realtime reporting engine
-to allow end users to customise the map report to their needs with little
-or no programming. The primary way to achieve this is by opening the custom
-template :file:`realtime/fixtures/realtime-template.qpt` in QGIS and modifying
+Two of these dependencies is a template QGIS project and a map composition
+template. We have designed the realtime reporting engine to allow end users
+to customise the map report to their needs with little or no programming. The
+primary way to achieve this is by opening the custom template
+:file:`realtime/fixtures/realtime-template.qpt` in QGIS and modifying
 its contents. You could also build a new template from scratch provided the
 item IDs listed in the section that follows are used.
 
@@ -137,7 +141,7 @@ You should see something like the listing below::
   >>> from qgis.core import *
   >>>
 
-Get InaSAFE ::
+Get |project_name| ::
 
   cd ~
   mkdir -p dev/python
@@ -238,8 +242,6 @@ Now edit the file and set its content to this::
   cd /home/<yourname>/dev/python/inasafe-realtime
   scripts/make-latest-shakemap.sh
 
-
-
 You also need to have the standard datasets needed for the cartography:
 
 * population
@@ -265,10 +267,10 @@ You can remove or replace them with your own elements as needed.
 * **logo-left** - the logo element at the top left corner of the map layout.
 * **right-logo** - the logo element at the top right corner of the map layout.
 * **overview-map** - a map overview showing the locality of the event. This
-    is the overview frame for map-0 (the main map in the layout). It is
-    locked and limited to show the population layer only.
+  is the overview frame for map-0 (the main map in the layout). It is
+  locked and limited to show the population layer only.
 * **legend** - a map legend, by default configured to show only the layer for
-    the population layer. It is locked and limited to the population layer.
+  the population layer. It is locked and limited to the population layer.
 
 Elements containing tokens for replacement
 ..........................................
@@ -278,30 +280,30 @@ contains. At render time any of the tokens in these elements will be replaced
 with translated (if an alternative locale is in effect) content from the
 map renderer according to the keywords listed below in this document.
 
-* **main-title** - the main title at the top of the page. By default this
-    element contains the keyword:
-    :samp:`[map-name]`.
-* **intensity-date** - the date and intensity of the event. By default this
-    label contains the following replacement tokens:
-    :samp:`M[mmi] [date] [time]`
-* **position-depth** - the position (lon, lat) and depth of the event. By
-    default this label contains the following replacement tokens:
-    :samp:`[longitude-name] [longitude-value] [latitude-name] [latitude-value] [depth-name] [depth-value] [depth-unit]`
-* **location-description** - the postion of the event described relative to
-    the nearest major populated place. By default this label contains the
-    following replacement tokens:
-    :samp:`[located-label] [distance] [distance-unit], [bearing-degrees] [bearing-compass] [direction-relation] [place-name]`
-* **elapsed-time** - the time elapsed between the event and when this report
-    was generated. By default this label contains the following replacement
-    tokens:
-    :samp:`[elapsed-time-label] [elapsed-time]`
-* **scalebar** - the scalebar which reflects the scale of the main map.
-    This is **Currently disabled**.
-* **disclaimer** - A block of text for displaying caveats, cautionary notes,
-    interpretive information and so on. This contains the following replacement
-    tokens: :samp:`[limitations]`.
-* **credits** - A block of text for displaying credits on the map output.
-    This contains the following replacement tokens: :samp:`[credits]`.
+    * **main-title** - the main title at the top of the page. By default this
+      element contains the keyword:
+      :samp:`[map-name]`.
+    * **intensity-date** - the date and intensity of the event. By default this
+      label contains the following replacement tokens:
+      :samp:`M[mmi] [date] [time]`
+    * **position-depth** - the position (lon, lat) and depth of the event. By
+      default this label contains the following replacement tokens:
+      :samp:`[longitude-name] [longitude-value] [latitude-name] [latitude-value] [depth-name] [depth-value] [depth-unit]`
+    * **location-description** - the postion of the event described relative to
+      the nearest major populated place. By default this label contains the
+      following replacement tokens:
+      :samp:`[located-label] [distance] [distance-unit], [bearing-degrees] [bearing-compass] [direction-relation] [place-name]`
+    * **elapsed-time** - the time elapsed between the event and when this report
+      was generated. By default this label contains the following replacement
+      tokens:
+      :samp:`[elapsed-time-label] [elapsed-time]`
+    * **scalebar** - the scalebar which reflects the scale of the main map.
+      This is **Currently disabled**.
+    * **disclaimer** - A block of text for displaying caveats, cautionary notes,
+      interpretive information and so on. This contains the following replacement
+      tokens: :samp:`[limitations]`.
+    * **credits** - A block of text for displaying credits on the map output.
+      This contains the following replacement tokens: :samp:`[credits]`.
 
 Elements that are directly updated by the renderer
 ..................................................
@@ -311,17 +313,16 @@ replaced by the realtime map renderer, although certain styling options
 (e.g. graticule settings on the map) will remain in effect.
 
 * **impacts-table** - a table generated by ShakeEvent which will list the
-    number of modelled affected people in each of the MMI bands. This is an
-    HTML element and output will fail if it is not present.
+  number of modelled affected people in each of the MMI bands. This is an
+  HTML element and output will fail if it is not present.
 * **main-map** - primary map used to display the event and neighbouring towns.
-    Developers can set a minimum number of neighbouring towns to display using
-    the ShakeEvent api. This is a map element and output will fail if it is
-    not present. This is an HTML element and output will fail if it is not
-    present.
+  Developers can set a minimum number of neighbouring towns to display using
+  the ShakeEvent api. This is a map element and output will fail if it is
+  not present. This is an HTML element and output will fail if it is not
+  present.
 * **affected-cities** - a table generated by ShakeEvent which will list the
-    closes N cities (configurable using the ShakeEvent api) listed in order of
-    shake intensity then number of people likely to be affected.
-
+  closes N cities (configurable using the ShakeEvent api) listed in order of
+  shake intensity then number of people likely to be affected.
 
 Replaceable Keywords
 ---------------------
@@ -381,7 +382,6 @@ your own template. More on that below in the next section.
 * **fatalities-range**: 5 - 55
 * **fatalities-count**: 55
 
-
 Customising the template
 ------------------------
 
@@ -395,7 +395,6 @@ this:
     completely.
 * Creating your own template from scratch and pointing the realtime tool to
     your preferred template.
-
 
 The template is provided as :file:`realtime/fixtures/realtime-template.qpt`
 and can be modified by opening the template using the QGIS map composer,
@@ -439,12 +438,11 @@ will be checked and if not None it will be used.
 2. the environment variable :samp:`INASAFE_POPULATION_PATH` will be
 checked if set it will be used.
 
-3. A hard coded path of :file:`/fixtures/exposure/population.tif` 
+3. A hard coded path of :file:`/fixtures/exposure/population.tif`
 will be checked.
-   
-4. A hard coded path of 
-:file:`/usr/local/share/inasafe/exposure/population.tif` will be used.
 
+4. A hard coded path of
+:file:`/usr/local/share/inasafe/exposure/population.tif` will be used.
 
 Running a shake event
 ---------------------
@@ -454,38 +452,38 @@ use the provided script :file:`scripts/make-shakemap.sh`. The script can be
 used with the following options:
 
 * **--list**: :samp:`scripts/make-shakemap.sh --list` - retrieve a list of
-    all known shake events on the server. Events are listed as their full
-    ftp url e.g. :file:`ftp://118.97.83.243/20121106084105.out.zip` and
-    both *inp* and *out* files are listed.
+  all known shake events on the server. Events are listed as their full
+  ftp url e.g. :file:`ftp://118.97.83.243/20121106084105.out.zip` and
+  both *inp* and *out* files are listed.
 * **[event id]**: :samp:`scripts/make-shakemap.sh 20121106084105` - retrieve
-    and process a single shake event. A pdf, png and thumbnail will be produced.
+  and process a single shake event. A pdf, png and thumbnail will be produced.
 * **--all**: :samp:`scripts/make-shakemap.sh --all` - process all identified
-    events on the server in batch mode. **Note:** this is experimental and
-    not production ready - we recommend to use the approach described in
-    :ref:`realtime-batch`.
+  events on the server in batch mode. **Note:** this is experimental and
+  not production ready - we recommend to use the approach described in
+  :ref:`realtime-batch`.
 * **no parameters**: :samp:`scripts/make-shakemap.sh` - fetch and process
-    the latest existing shake dataset. This is typically what you would want
-    to use as the target of a cron job.
+  the latest existing shake dataset. This is typically what you would want
+  to use as the target of a cron job.
 
 .. note:: The :file:`make_shakemap.sh` script is just a thin wrapper around
-    the python :mod:`realtime.make_map` python module.
+   the python :mod:`realtime.make_map` python module.
 
 .. note:: An english local shakemap will always be generated regardless of
-    the locale you have chosen (using the INASAFE_LOCALE env var). This en
-    version will be in addition to your chosen locale.
+   the locale you have chosen (using the INASAFE_LOCALE env var). This en
+   version will be in addition to your chosen locale.
 
 Unit tests
 -----------
 
-A complete set of unit tests is provided with the realtime package for InaSAFE.
-You can execute these tests like this::
+A complete set of unit tests is provided with the realtime package for
+|project_name|. You can execute these tests like this::
 
     nosetests -v --with-id --with-xcoverage --with-xunit --verbose \
         --cover-package=realtime realtime
 
-There are also a number of Jenkins tasks provided in the Makefile for InaSAFE
-to automate testing on our continuous integration server. You can view the
-current state of these tests by visiting this URL:
+There are also a number of Jenkins tasks provided in the Makefile for
+|project_name| to automate testing on our continuous integration server. You
+can view the current state of these tests by visiting this URL:
 
 http://jenkins.linfiniti.com/job/InaSAFE-Realtime/
 
@@ -494,11 +492,11 @@ http://jenkins.linfiniti.com/job/InaSAFE-Realtime/
 Batch validation & running
 ---------------------------
 
-
-The :file:`scripts/make-all-shakemaps.sh` provided in the InaSAFE source tree
-will automate the production of one shakemap report per event found on the
-shake ftp server. It contains a number of environment variable settings which
-can be used to control batch execution. First a complete script listing::
+The :file:`scripts/make-all-shakemaps.sh` provided in the |project_name|
+source tree will automate the production of one shakemap report per event
+found on the shake ftp server. It contains a number of environment variable
+settings which can be used to control batch execution. First a complete
+script listing::
 
     #!/bin/bash
 
@@ -523,20 +521,19 @@ An example of the output produced from such a batch run is provided at:
 
 http://quake.linfiniti.com/
 
-
-
 Hosting the shakemaps
 ---------------------
 
 In this section we describe how to easily host the shakemaps on a public web
 site.
 
-An apache configuration file and a set of resources are provided to make it easy
-to host the shakemap outputs. The resources provided can easily be modified to
-provide a pleasing, user friendly directory listing of shakemap reports.
+An apache configuration file and a set of resources are provided to make it
+easy to host the shakemap outputs. The resources provided can easily be
+modified to provide a pleasing, user friendly directory listing of shakemap
+reports.
 
 .. note:: You should adapt the paths used below to match the configuration of
-    your system.
+   your system.
 
 First create a file (as root / sudo) with this content in your
 :file:`/etc/apache2/sites-available/quake-apache.conf.` for example::
@@ -573,8 +570,8 @@ be hosted::
 
     mkdir -p /home/web/quake/public
 
-Unpack the :file:`realtime/fixtures/web/resource` directory into the
-above mentioned public directory. For example::
+Unpack the :file:`realtime/fixtures/web/resource` directory into the above
+mentioned public directory. For example::
 
     cd /home/web/quake/public
     cp -r ~/dev/python/inasafe/realtime/fixtures/web/resource .
@@ -599,14 +596,4 @@ And then add a line like this to the cron file::
     * * * * * /home/timlinux/dev/python/inasafe-realtime/realtime/fixtures/web/make-public.sh
 
 .. note:: The resources used in the above examples are all available in the
-    source code under :file:`realtime/fixtures/web`.
-
-
-
-
-
-
-
-
-
-http://paradox460.newsvine.com/_news/2008/04/05/1413490-how2-stylish-apache-directory-listings
+   source code under :file:`realtime/fixtures/web`.

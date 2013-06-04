@@ -1,9 +1,9 @@
-
+===========================
 Development under Gnu/Linux
 ===========================
 
-Risk-in-a-box is built in python and runs as a plugin in `QGIS
-<http://qgis.org>`_.
+Risk-in-a-box is built in python and runs as a plugin in
+`QGIS <http://qgis.org>`_.
 
 
 Quick Installation Guide - Linux (Debian based)
@@ -42,7 +42,7 @@ The Graphical User Interface components are built using
 `PyQt4 <http://www.riverbankcomputing.co.uk/software/pyqt/intro>`_ and the QGIS
 plugin API (useful resources: `the QGIS Python Cookbook
 <http://qgis.org/pyqgis-cookbook/>`_ and `the QGIS C++ API documentation
-<http://qgis.org/api/>`_).  As such it is helpful if you are familiar with these
+<http://qgis.org/api/>`_). As such it is helpful if you are familiar with these
 technologies (python, Qt4, PyQt4, QGIS). In addition, the following are needed
 on your machine in order to work effectively with the code base:
 
@@ -74,20 +74,20 @@ Cloning the source code from git
 
 To develop on the plugin, you first need to copy it to your local system. If
 you are a developer, the simplest way to do that is go to
-`~/.qgis/python/plugins` and clone inasafe from our GitHub repository
-page like this::
+:file:`~/.qgis/python/plugins` and clone |project_name| from our GitHub
+repository page like this::
 
    git clone git://github.com/AIFDR/inasafe.git  (for read only)
    git clone git@github.com:AIFDR-AusAID/inasafe.git    (to commit changes)
-
 
 QGIS installed in a non-standard location
 .........................................
 
 For running unit tests that need QGIS, you may need to adjust *PYTHONPATH* and
-*QGIS_PREFIX_PATH* if QGIS is running in a non standard location. For example with
-QGIS built from source into /usr/local (and python bindings global install
-option disabled), you could run these commands (or add them to your ~/.bashrc)::
+*QGIS_PREFIX_PATH* if QGIS is running in a non standard location. For example
+with QGIS built from source into /usr/local (and python bindings global install
+option disabled), you could run these commands (or add them to your ~/
+.bashrc)::
 
    export QGIS_PREFIX_PATH=/usr/local
    export PYTHONPATH=$PYTHONPATH:/usr/local/share/qgis/python/
@@ -95,12 +95,11 @@ option disabled), you could run these commands (or add them to your ~/.bashrc)::
 .. note:: The above can be set within Eclipse's project properties if you are
     running your tests using the PyDev IDE environment.
 
+Adding |project_name| to your python path:
+..........................................
 
-Adding inasafe to your python path:
-...................................
-
-Lastly, you should add the inasafe plugin folder to your PYTHONPATH so that
-package and module paths can be resolved correctly. E.g::
+Lastly, you should add the |project_name| plugin folder to your PYTHONPATH so
+that package and module paths can be resolved correctly. E.g::
 
    export PYTHONPATH=$PYTHONPATH:${HOME}/.qgis/python/plugins/inasafe
 
@@ -113,7 +112,7 @@ Running tests
 .............
 
 You can run all tests (which includes code coverage reports and other
-diagnostics) by doing this within the inasafe plugin folder::
+diagnostics) by doing this within the |project_name| plugin folder::
 
    make test
 
@@ -134,7 +133,7 @@ results::
 
    sudo pip install git+git://github.com/exogen/nose-achievements.git
 
-Now create this file in the root of your inasafe git checkout
+Now create this file in the root of your |project_name| git checkout
 :file:`setup.cfg`::
 
    [nosetests]
@@ -165,14 +164,17 @@ In the resulting project dialog, set the following details:
 
 * :guilabel:`Project name:` : :kbd:`inasafe`
 * :guilabel:`Use default` : :kbd:`uncheck`
-* :guilabel (linux):`Directory` : :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
-* :guilabel (windows):`Directory` : :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
+* :guilabel (linux):`Directory` :
+  :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
+* :guilabel (windows):`Directory` :
+  :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
 * :guilabel:`Choose project type` : :kbd:`Python`
 * :guilabel:`Grammar Version` : :kbd:`2.7`
 * :guilabel:`Add project directory to PYTHONPATH?` : :kbd:`check`
 
-At this point you should should click the link entitled 'Please configure an interpreter
-in related preferences before continuing.' And on the resulting dialog do:
+At this point you should should click the link entitled 'Please configure an
+interpreter in related preferences before continuing.' And on the resulting
+dialog do:
 
 * :guilabel:`Python Interpreters: New...` : :kbd:`click this button`
 
@@ -191,18 +193,19 @@ your::
 
 * :guilabel:`OK Button` : :kbd:`click this button`
 
-You will be returned to the Python Interpreters list and should see an entry for
-System Python 2.7 listed there. Now do in the *Libraries* tab:
+You will be returned to the Python Interpreters list and should see an entry
+for System Python 2.7 listed there. Now do in the *Libraries* tab:
 
 * :guilabel:`Finish` : :kbd:`click this button`
 
 Remote Debugging with Eclipse
 .............................
 
-For remote debugging, you should add pydevd to your PYTHONPATH before starting *QGIS*
-for example (you will need to adjust these paths to match your system)::
+For remote debugging, you should add pydevd to your PYTHONPATH before
+starting *QGIS* for example (you will need to adjust these paths to match
+your system)::
 
-	export PYTHONPATH=$PYTHONPATH:/home/timlinux/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.python.pydev.debug_2.3.0.2011121518/pysrc/
+  export PYTHONPATH=$PYTHONPATH:/home/timlinux/.eclipse/org.eclipse.platform_3.7.0_155965261/plugins/org.python.pydev.debug_2.3.0.2011121518/pysrc/
 
 .. note::
 
@@ -210,10 +213,10 @@ for example (you will need to adjust these paths to match your system)::
    PyDev debug server first before launching the Risk-in-a-box QGIS plugin
    otherwise QGIS will likely crash when it can't find the debug server.
 
-You will need to ensure that the PYTHONPATH containing your pydev package folder
-is set before you launch QGIS - for example by adding the above line to your ~/.bashrc
-or by making a small batch file containing the above export and then sourcing the file
-before launching QGIS e.g.::
+You will need to ensure that the PYTHONPATH containing your pydev package
+folder is set before you launch QGIS - for example by adding the above line
+to your ~/.bashrc or by making a small batch file containing the above export
+and then sourcing the file before launching QGIS e.g.::
 
     source riab_paths.sh
     /usr/local/bin/qgis
@@ -221,24 +224,19 @@ before launching QGIS e.g.::
 Running Unit tests from the IDE
 ...............................
 
-Python has very good integrated support for unit testing. The first thing
-you should do after setting up the IDE project is to run the tests. You can run tests
-in the following ways:
+Python has very good integrated support for unit testing. The first thing you
+should do after setting up the IDE project is to run the tests. You can run
+tests in the following ways:
 
-* For the entire inasafe package
+* For the entire |project_name| package
 * For individual sub packages (e.g. engine, gui, storage, impact_functions)
 * for an individual test module within a package
 * for an class within a test module
 * for an individual method within a test class
 
-You can view these individual entities by browsing and expanding nodes in the project
-panel in the left of the IDE.
+You can view these individual entities by browsing and expanding nodes in the
+project panel in the left of the IDE.
 
-.. note:: If you run the test suite for the entire inasafe package, it
+.. note:: If you run the test suite for the entire |project_name| package, it
     will mistakenly treat the sphinx documentation conf.py (docs.source.conf)
     as a test and fail for that test. This is 'normal' and can be ignored.
-
-
-
-
-

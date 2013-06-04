@@ -17,8 +17,8 @@ Each input GIS dataset used by |project_name| needs to have an accompanying
 keywords file. The purpose of the keywords file is to provide additional
 metadata needed by the impact functions. For example, the keywords file
 will indicate whether a given dataset should be treated as a *hazard* or an
-*impact* layer. It is also used to indicate the context of the layer (e.g. "it's
-a *flood* layer, it's an *earthquake* layer).
+*impact* layer. It is also used to indicate the context of the layer (e.g.
+"it's a *flood* layer, it's an *earthquake* layer).
 
 By convention and expectation, the keywords file should be named with the
 same base name of the GIS datasource it accompanies. For example a flood
@@ -30,8 +30,8 @@ Would need to have an accompanying keywords file saved as::
 
    c:\gisdata\flood.keywords
 
-.. note:: We recommend to **avoid using spaces** in your file
-   names and file paths!
+.. note:: We recommend to
+   **avoid using spaces** in your file names and file paths!
 
 The |project_name| QGIS plugin provides an editor for these keywords.
 The purpose of this document is to describe the keywords editor and to
@@ -118,9 +118,9 @@ entry::
   units: m
 
 In the above case there is a soft constraint to use a value for units of m,
-feet or wet/dry as defined by the table below because the subcategory is 'flood'
-. The following are the allowed units which are dependent on the subcategory
-defined.
+feet or wet/dry as defined by the table below because the subcategory is
+'flood'. The following are the allowed units which are dependent on the
+subcategory defined.
 
 Valid subcategories for subcategory 'tsunami' or subcategory 'flood':
 
@@ -183,7 +183,7 @@ Assumptions
 -----------
 
 The following assumptions are made about keywords, which may or may not be
-programmatically enforced by the InaSAFE library and GUI:
+programmatically enforced by the |project_name| library and GUI:
 
 * There should only be **one keyword for a given key** in the keywords file
 * Switching from hazard to exposure will clear parts of the GUI since in
@@ -260,9 +260,9 @@ plugins toolbar as illustrated below.
 .. figure:: /static/keyword-editor-icon.png
    :align:   center
 
-..note:: If you have not selected a layer in the QGIS legend,
-  the keyword editor icon in the toolbar and menus will **be disabbled** and
-  appear greyed out.
+.. note:: If you have not selected a layer in the QGIS legend,
+   the keyword editor icon in the toolbar and menus will
+   **be disabbled** and appear greyed out.
 
 Saving your edits
 -----------------
@@ -283,13 +283,13 @@ Keywords for remote and non-file based layers
 If you are using a PostgreSQL, WFS, Spatialite or other non-file based
 resources, you can still create keywords. In these circumstances the keywords
 will be written to a sqlite database - by default this database is stored
-as :file:`keywords.db` within the InaSAFE plugin directory root.
+as :file:`keywords.db` within the |project_name| plugin directory root.
 
 You may wish to use a different location for the :file:`keywords.db` keywords
-database - you can configure this by using the InaSAFE options dialog. The
-options dialog can be launched by clicking on the InaSAFE plugin toolbar's
-options icon (as shown below) or by doing :menuselection:`Plugins --> InaSAFE
---> InaSAFE Options`.
+database - you can configure this by using the |project_name| options dialog.
+The options dialog can be launched by clicking on the |project_name| plugin
+toolbar's options icon (as shown below) or by doing
+:menuselection:`Plugins --> InaSAFE --> InaSAFE Options`.
 
 .. figure:: /static/inasafe-options-icon.png
    :align:   center
@@ -302,15 +302,15 @@ below.
    :align:   center
 
 .. note:: (1) Support for remote and non-file based layers was added in
-   InaSAFE version 0.3.
+   |project_name| version 0.3.
    (2) The database can be opened using a sqlite editor such as sqliteman,
    but the data in the keywords table is not intended to be human readable
    or edited. The table columns consist of an MD5 hash based on the URI for
    the datasource (typically the database connection details) and a blob
    which contains the keywords as a pickled python dictionary.
 
-See the :doc:`options` document for more information about the InaSAFE options
-dialog.
+See the :doc:`options` document for more information about the |project_name|
+options dialog.
 
 Sharing your keywords cache
 ---------------------------
@@ -334,7 +334,7 @@ effectively use the same URI to load that layer e.g.::
 
 For certain resources (e.g. ArcInfo coverages, Spatialite databases) where
 the keywords cache is also used, you should take care to use a common mount
-point or network share to access the data if you wish to successfull hit the
+point or network share to access the data if you wish to successfully hit the
 cache with the layer's URI. For example you could have all users mount your
 data to the same place. Under Unix like operating systems this could look
 something like this::

@@ -4,14 +4,14 @@ Continuous Integration Testing with Jenkins
 
 .. note:: This documentation is Copyright Linfiniti Consulting CC. May 2013
    and has been included here to provide provenance, and adapted for the
-   InaSAFE project.
+   |project_name| project.
 
 `Jenkins <http://jenkins-ci.org/>`_ is an automated build and test server.
 
 Installation procedure - Jenkins server
 ---------------------------------------
 
-If you want to have the most recent version of jenkins the install procedure 
+If you want to have the most recent version of jenkins the install procedure
 is described at http://pkg.jenkins-ci.org/debian/.
 
 *You can skip the following part if you want to use jenkins that comes with
@@ -21,7 +21,7 @@ To start, do this::
 
    wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 
-Now add this to your **:file:`**/etc/apt/sources.list`::
+Now add this to your :file:`/etc/apt/sources.list`::
 
    deb http://pkg.jenkins-ci.org/debian binary/
 
@@ -30,31 +30,32 @@ In any case you will install jenkins with::
    sudo apt-get update
    sudo apt-get install jenkins
 
-Finishing this jenkins can now be viewed looking at 
+Finishing this jenkins can now be viewed looking at
 http://localhost:8080/
 
-If you already have a running instance of Apache on your Server or you want to run 
-several other pages too you might want to integrate the instance of jenkins into apache.
+If you already have a running instance of Apache on your Server or you want
+to run several other pages too you might want to integrate the instance of
+jenkins into apache.
 
 If apache is not installed you can install apache::
 
    sudo apt-get install apache2
 
-To integrate jenkins into apache you need to configure 
+To integrate jenkins into apache you need to configure
 
 DNS and Reverse Proxy
-^^^^^^^^^^^^^^^^^^^^^
+.....................
 
 The following example uses hostname as a placeholder for your FQDN.
 In most cases (running on your own machine) hostname will be localhost.
 
 Create a virtual host on the server's apache installation to reverse
 proxy by creating this file:
-:file:`/etc/apache2/sites-available/jenkins.hostname` which should
+:file:`/etc/apache2/sites-available/jenkins.hostname.conf` which should
 contain::
 
    <VirtualHost *:80>
-     ServerAdmin tim@hostname
+     ServerAdmin yourname@hostname
      ServerName jenkins.hostname
 
      ProxyPass         / http://localhost:8080/
@@ -78,8 +79,8 @@ contain::
 
    </VirtualHost>
 
-To use this Proxy on localhost we have to enable two apache Modules 
-in the installation.
+To use this Proxy on localhost we have to enable two apache Modules in the
+installation.
 
 To do so do::
 
@@ -88,12 +89,15 @@ To do so do::
 
 Now enable this vhost::
 
-   sudo a2ensite jenkins.hostname
-   
-Depending on your distribution you have to restart apache either using 
-sudo /etc/init.d/apache reload
-or
-service apache2 reload
+   sudo a2ensite jenkins.hostname.conf
+
+Depending on your distribution you have to restart apache either using::
+
+ sudo /etc/init.d/apache reload
+
+or::
+
+ service apache2 reload
 
 Configure the server
 --------------------
@@ -101,14 +105,13 @@ Configure the server
 Go to http://jenkins.hostname and log in as an admin user.
 
 Enable Plugins
-^^^^^^^^^^^^^^
+..............
 
 :menuselection:`Jenkins --> Manage Jenkins --> Manage Plugins` or go to
 http://jenkins.hostname/pluginManager/.
 
 Enable the following plugins:
 
-* GIT plugin
 * GitHub plugin
 * Xvfb Plugin
 * Violations
@@ -119,13 +122,14 @@ Enable the following plugins:
 * Cobertura Plugin
 * Coverage Complexity Scatter Plot PlugIn
 
-That should also resolve some other plugins as dependancies and install them.
+That should also resolve some other plugins as dependencies and install them.
 
-If you are using other private repositories on your server you might want to 
-lock down jenkins to make everything private and only give some people admin rights.
+If you are using other private repositories on your server you might want to
+lock down jenkins to make everything private and only give some people admin
+rights.
 
 Lock down access
-^^^^^^^^^^^^^^^^
+................
 
 We are hosting private repositories on the server so we want to make everything
 private. To do that we do:
@@ -137,20 +141,21 @@ Under :guilabel:`Access control - Security Realm`, check
 
 Under :guilabel:`Authorization` check
 :guilabel:`Project-based Matrix Authorization Strategy`, then add your admin
-users only here, giving them all permissions. We will add less priveledged users
-on a project by project basis.
+users only here, giving them all permissions. We will add less privileged
+users on a project by project basis.
 
 
 Other Configuration options
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...........................
 
 * :guilabel:`Jenkins URL` set to :kbd:`http://jenkins.linfiniti.com/`
-* :guilabel:`Sender E-mail Address` set to :kbd:`Linfiniti Jenkins <jenkins@linfiniti.com>`
+* :guilabel:`Sender E-mail Address` set to
+  :kbd:`Linfiniti Jenkins <jenkins@linfiniti.com>`
 * :guilabel:`GitHub Web Hook` set to :kbd:`Manually manage hook URLs`
 
 
-Creating the Jenkins InaSAFE Job
----------------------------------
+Creating the Jenkins |project_name| Job
+---------------------------------------
 
 Create a new Job (project):
 
@@ -237,7 +242,7 @@ Server Configuration in the shell
 We need to do the following on the server as the jenkins user:
 
 Create an ssh key for Jenkins
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.............................
 
 This key will be used to enable Jenkins access to private repos on GitHub. You
 only need to do this once on the server for each project::
@@ -255,7 +260,7 @@ only need to do this once on the server for each project::
    The key's randomart image is:
    +--[ RSA 2048]----+
    |               E |
-   |              .  |
+   | .            .  |
    |               . |
    |         .      .|
    |      . S    . + |
@@ -280,7 +285,7 @@ You need to create an ssh host alias so that when doing a git checkout, the
 correct keypair is used. Add this to the :file:`~/.ssh/config` of the jenkins
 user::
 
-   Host InaSAFEGitHub
+   Host |project_name|GitHub
         IdentityFile /home/jenkins/.ssh/id_rsa_inasafe
         HostName github.com
 
@@ -303,31 +308,30 @@ Back on the server::
 Also you should set the Jenkins git user and email::
 
    jenkins@maps:~$ git config --global user.email "jenkins@linfiniti.com"
-   jenkins@maps:~$ git config --global user.name "Jenkins Build Server @Linfiniti2"
+   jenkins@maps:~$ git config --global user.name "Jenkins Build Server"
 
 .. note:: The source tree will be in :file:`~/jobs/InaSAFE/workspace/`.
 
 Project setup
-^^^^^^^^^^^^^
+.............
 
-Try to do an intial build. It will fail because we have to copy the InaSAFE
-test data into the job directory. Use the same procedure as above to add
-ad deploy key to the inasafe-data repo and then clone it (as jenkins user)::
+Try to do an initial build. It will fail because we have to copy the
+|project_name| test data into the job directory. Use the same procedure as
+above to add ad deploy key to the inasafe-data repo and then clone it (as
+jenkins user)::
 
    cd ~/jobs/InaSAFE/
    git clone git@InaSAFEDataGitHub:timlinux/inasafe-data.git
 
 GitHub Hook Setup
-^^^^^^^^^^^^^^^^^
+.................
 
 In GitHub hooks, enable Jenkins (GitHub plugin) and set the url to::
 
    http://jenkins.linfiniti.com/github-webhook/
 
-
-
 Testing on Jenkins server
-^^^^^^^^^^^^^^^^^^^^^^^^^
+.........................
 
 Simply commit something and push it to the server. Turn the speakers on
 on your desktop with the Jenkins page (http://jenkins.linfiniti.com) open
@@ -343,6 +347,5 @@ Here are some useful resources we found while getting things set up.
 * http://hustoknow.blogspot.com/2011/02/setting-up-django-nose-on-hudson.html
 * http://blog.jvc26.org/2011/06/13/jenkins-ci-and-django-howto
 * https://sites.google.com/site/kmmbvnr/home/django-jenkins-tutorial (probably
-  the most usful article I found)
+  the most useful article I found)
 * http://blog.mathieu-leplatre.info/django-et-jenkins-fr.html (in French)
-

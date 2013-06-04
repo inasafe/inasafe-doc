@@ -1,9 +1,9 @@
-
+============================
 Development under MS Windows
 ============================
 
 In this document we will walk you through the different activities you will
-need to do as a windows developer wishing to work on the InaSAFE codebase.
+need to do as a windows developer wishing to work on the |project_name| codebase.
 
 Installation of version control tools
 -------------------------------------
@@ -29,46 +29,29 @@ illustrated below:
 .. figure:: /static/msysgit-step1.jpg
    :align:   center
 
-
-
 .. figure:: /static/msysgit-step2.jpg
    :align:   center
-
-
 
 .. figure:: /static/msysgit-step3.jpg
    :align:   center
 
-
-
 .. figure:: /static/msysgit-step4.jpg
    :align:   center
-
-
 
 .. figure:: /static/msysgit-step5.jpg
    :align:   center
 
-
-
 .. figure:: /static/msysgit-step6.jpg
    :align:   center
-
-
 
 .. figure:: /static/msysgit-step7.jpg
    :align:   center
 
-
-
 .. figure:: /static/msysgit-step8.jpg
    :align:   center
 
-
-
 .. figure:: /static/msysgit-step9.jpg
    :align:   center
-
 
 Check out the code and the test data
 ------------------------------------
@@ -109,7 +92,6 @@ console when the clone process is completed::
    Receiving objects: 100% (5002/5002), 2.38 MiB | 7 KiB/s, done.
    Resolving deltas: 100% (3505/3505), done.
 
-
 Checkout the test data
 ......................
 
@@ -118,11 +100,9 @@ To check out the test data from git, first open a GIT bash prompt as illustrated
 .. figure:: /static/msysgit-step10.jpg
    :align:   center
 
-
 The repository can now be cloned by issuing the commands listed below. (Already completed in previous step)::
 
    cd  /c/Documents\ and\ Settings/<your username>/.qgis/python/plugins/
-
    git clone https://<your username>@github.com/AIFDR/inasafe_data.git inasafe_data
 
 .. note:: The items in angle brackets above should be replaced with your
@@ -147,8 +127,9 @@ and install it by running the installation wizard and accepting the defaults
 throughout.
 
 After opening QGIS (:menuselection:`Start --> All Programs --> Quantum GIS Lisboa --> Quantum GIS Desktop (1.8.0)`)
-you need to enable the plugin from the plugin menu by doing :menuselection:`Plugins --> Manage Plugins`
-and then search for the |project_name| plugin in the list and enable it.
+you need to enable the plugin from the plugin menu by doing
+:menuselection:`Plugins --> Manage Plugins` and then search for the
+|project_name| plugin in the list and enable it.
 
 Windows Caveats
 ...............
@@ -158,12 +139,10 @@ features of the development environment - particularly the **Make** tools do not
 run on Windows. Some helper scripts have been written to substitute for make
 but they do not have feature parity with the make scripts.
 
-
 .. _windows-commandline_setup:
 
 Command line environment setup
 ------------------------------
-
 
 .. _windows_shell_launcher-label:
 
@@ -199,7 +178,8 @@ following listing in <QGIS Install Dir>/bin/python-shell.bat::
 .. note:: You may need to replace PROGRA~1 above with PROGRA~2 if you are
    on 64bit windows.
 
-.. note:: This script is for QGIS 1.8. You may need to do some adjustment if you are using another version of QGIS
+.. note:: This script is for QGIS 1.8. You may need to do some adjustment if
+   you are using another version of QGIS
 
 For easy access to this shell launcher, right click on the qgis-shell.bat script
 and (without releasing your initial right click) drag with the file onto your
@@ -254,15 +234,15 @@ Installing pip
 ..............
 
 We need to install easy_install so that we can install pip so that we can
-install nosetests and other python tools. Under windows you need to run a little
-script to install easy_install and then use easy_install to install pypi.
-Download the script on
-`this page <http://pypi.python.org/pypi/setuptools#windows>`_ called ez_setup.py
-and save it somewhere familiar e.g. :samp:`c:\temp`.
+install nosetests and other python tools. Under windows you need to run a
+little script to install easy_install and then use easy_install to install
+pypi. Download the script on
+`this page <http://pypi.python.org/pypi/setuptools#windows>`_ called
+ez_setup.py and save it somewhere familiar e.g. :samp:`c:\temp`.
 
 .. note:: If you use windows 32bit, do not download the .exe file as said on
-   `the page <http://pypi.python.org/pypi/setuptools#windows>`_, but just download the ez_setup.py
-
+   `the page <http://pypi.python.org/pypi/setuptools#windows>`_,
+   but just download the ez_setup.py
 
 Special note for Win64 bit users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -284,8 +264,8 @@ print sys.executable - is should show :samp:`c:\python27\python.exe` as per
 the demo session below::
 
     C:\Users\inasafe\.qgis\python\plugins\inasafe>python
-    Python 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)] on win
-    32
+    Python 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
+    on win32
     Type "help", "copyright", "credits" or "license" for more information.
     >>> import sys
     >>> print sys.executable
@@ -337,8 +317,6 @@ If the installation goes successfully, you should see output like this::
    Processing dependencies for pip
    Finished processing dependencies for pip
 
-
-
 Installing nose
 ...............
 
@@ -348,8 +326,8 @@ of tests in one go. With the nosecover plugin you can also generate coverage
 reports which will indicate how many lines of your code actually have been
 tested.
 
-
-To install these tools, launch your python prompt as administrator and then do::
+To install these tools, launch your python prompt as administrator and then
+do::
 
    pip install nose nose-cov
 
@@ -357,10 +335,10 @@ Running tests using nose
 ........................
 
 Once they are installed, you can run the nose tests from windows by going to
-the plugin directory/inasafe-dev folder (in your python-shell.bat shell session) and running::
+the plugin directory/inasafe-dev folder (in your python-shell.bat shell
+session) and running::
 
    runtests.bat
-
 
 Building sphinx documentation
 -----------------------------
@@ -379,8 +357,7 @@ administrator and then run the following command::
 
    pip install sphinx
 
-The cloud-sptheme package installs the sphinx theme we are using.
-
+The cloud-sp theme package installs the sphinx theme we are using.
 
 Building the documentation
 ..........................
@@ -396,12 +373,11 @@ go into your inasafe-dev/docs directory. Now run the following command::
 Viewing the documentation
 .........................
 
-The documentation can be viewed from withing QGIS by clicking the :guilabel:`help`
-button on the |project_name| dock panel, or you can view it in your browser by
-opening a url similar to this one::
+The documentation can be viewed from withing QGIS by clicking the
+:guilabel:`help` button on the |project_name| dock panel,
+or you can view it in your browser by opening a url similar to this one::
 
    file:///C:/Users/Tim%20Sutton/.qgis/python/plugins/inasafe/docs/_build/html/index.html
-
 
 Developing using Eclipse (Windows)
 ----------------------------------
@@ -434,7 +410,7 @@ Custom Eclipse Launcher
 
 You need to create a custom Eclipse launcher in order to use Eclipse PyDev. The
 process is similar to :ref:`windows-commandline_setup` in that you need to
-create a custom batch file that launches eclipse only after the osgeo4w
+create a custom batch file that launches eclipse only after the OSGEO4W
 environment has been imported. Here are the typical contexts of the file::
 
    @echo off
@@ -493,8 +469,7 @@ In the dialog that appears do:
 Another dialog will appear. Tick the first entry in the list that points to
 your::
 
-      C:\\users\\inasafe\\Downloads\\eclipse\\plugins\\org.python.pydev
-      _2.6.0.2012062818\\pysrc
+      C:\\users\\inasafe\\Downloads\\eclipse\\plugins\\org.python.pydev_2.6.0.2012062818\\pysrc
 
 The resulting list of python paths should look something like this::
 
@@ -535,7 +510,6 @@ Then click finsih to finish the new project dialog
 
 * :guilabel:`Finish` : :kbd:`click this button`
 
-
 Remote Debugging with Eclipse
 .............................
 
@@ -545,23 +519,21 @@ For remote debugging, you should add pydevd to your PYTHONPATH before starting
 
    SET PYTHONPATH=%PYTHONPATH%;C:\Progra~1\eclipse\plugins\org.python.pydev.debug_2.3.0.2011121518\pysrc
 
-
 .. note::
+     (1) You need to add a settrace() line at the point in your code where
+     you would like to initiate remote debugging. After that, you can insert
+     eclipse debugger breakpoints as per normal.
 
-   (1) You need to add a settrace() line at the point in your code where
-   you would like to initiate remote debugging. After that, you can insert
-   eclipse debugger breakpoints as per normal.
+     (2) If you are running with remote debugging enabled, be sure to start the
+     PyDev debug server first before launching the Risk-in-a-box QGIS plugin
+     otherwise QGIS will likely crash when it can't find the debug server.
 
-   (2) If you are running with remote debugging enabled, be sure to start the
-   PyDev debug server first before launching the Risk-in-a-box QGIS plugin
-   otherwise QGIS will likely crash when it can't find the debug server.
+     (3) Place the above PYTHONPATH command before the final line that launches
+     QGIS!
 
-   (3) Place the above PYTHONPATH command before the final line that launches
-   QGIS!
-
-   (4) The exact path used will vary on your system - check in your eclipse
-   plugins folder for "org.python.pydev.debug_<some date> to identify the
-   correct path.
+     (4) The exact path used will vary on your system - check in your eclipse
+     plugins folder for "org.python.pydev.debug_<some date> to identify the
+     correct path.
 
 To initiate a remote debugging session, add the settrace() directive to your
 source file and then start the python remote debugging service from the PyDev
@@ -585,7 +557,7 @@ Python has very good integrated support for unit testing. The first thing
 you should do after setting up the IDE project is to run the tests. You can run
 tests in the following ways:
 
-* For the entire inasafe package
+* For the entire |project_name| package
 * For individual sub packages (e.g. engine, gui, storage, impact_functions)
 * for an individual test module within a package
 * for an class within a test module
@@ -594,9 +566,10 @@ tests in the following ways:
 You can view these individual entities by browsing and expanding nodes in the
 project panel in the left of the IDE.
 
-.. note:: If you run the test suite for the entire inasafe package, it
-   will mistakenly treat the sphinx documentation conf.py (docs.source.conf)
-   as a test and fail for that test. This is 'normal' and can be ignored.
+.. note:: If you run the test suite for the entire |project_name| package, it
+   will mistakenly treat the sphinx documentation :file:`conf.py` (docs.source
+   .conf) as a test and fail for that test. This is 'normal' and can be
+   ignored.
 
 Setting PyDev to use the Nose test runner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

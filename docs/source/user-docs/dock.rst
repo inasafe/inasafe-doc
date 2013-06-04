@@ -6,9 +6,10 @@ This document describes the useage of the |project_name| 'dock panel' - which
 is the main interface for running risk scenarios within the Quantum GIS
 environment.
 
-.. note:: In order to use the |project_name| tool effectively, you should 
-   probably also read the :doc:`keywords` and :doc:`impact_functions`
-   documentation before you get started.
+.. note:: In order to use the
+   |project_name| tool effectively, you should probably also read the
+   :doc:`keywords` and :doc:`impact_functions` documentation before you get
+   started.
 
 The |project_name| Dock panel is the main way to interact with the tools that
 are provided in |project_name|. After you have installed the |project_name|
@@ -16,14 +17,14 @@ plugin, the dock panel will automatically load in QGIS, appearing on the left
 hand side of the screen.
 
 .. figure:: /static/inasafe-dock-panel.jpeg
-   :align:   center
+   :align: center
 
 You can drag and drop the dock panel to reposition it in the user interface.
-For example, dragging the panel towards the right margin of the QGIS application
-will dock it to the right side of the screen.
+For example, dragging the panel towards the right margin of the QGIS
+application will dock it to the right side of the screen.
 
 .. figure:: /static/docked-right.jpeg
-   :align:   center
+   :align: center
 
 There are 3 main areas to the panel:
 
@@ -40,7 +41,7 @@ The Questions Area
 
 The intention of InaSAFE is to make it really simple and easy to perform
 your impact analysis. The question area provides a simple way for you to
-formulate what it is you want to find out? All questions are formulated in 
+formulate what it is you want to find out? All questions are formulated in
 the form:
 
    If [**hazard**] how many [**exposure**] might [**impact**].
@@ -56,11 +57,11 @@ function documentation to find out more information about the various
 :doc:`impact_functions` implemented.
 
 The formulation of these questions if carried out by loading layers into QGIS
-that represent either **hazard** or **exposure** scenarious. 
+that represent either **hazard** or **exposure** scenarious.
 
-* A **hazard** (:guilabel:`In the event of`) may be represented as, for example,
-  a raster layer in QGIS where each pixel in the raster represents the current
-  flood depth following an inundation event.
+* A **hazard** (:guilabel:`In the event of`) may be represented as,
+  for example, a raster layer in QGIS where each pixel in the raster represents
+  the current flood depth following an inundation event.
 * An **exposure** (:guilabel:`How many`) layer could be represented, for
   example, as vector polygon data representing building outlines, or a raster
   outline where each pixel represents the number of people resident in that
@@ -96,7 +97,7 @@ to the user. Once an impact scenario has been run (see next section below),
 a summary table will be shown.
 
 .. figure:: /static/scenario-results.png
-   :align:   center
+   :align: center
 
 If you select an **impact layer** (i.e. a layer that was produced using an
 |project_name| impact function), in the QGIS layers list, this summary will
@@ -107,35 +108,37 @@ the keywords for that layer will be shown in the :guilabel:`Results` area,
 making it easy to understand what metadata exists for that layer.
 
 .. figure:: /static/keywords-for-active-layer.png
-   :align:   center
+   :align: center
 
 The :guilabel:`Results` area is also used to display status information. For
 example, when a suitable combination of **hazard**
-(:guilabel:`In the event of`), **exposure** (:guilabel:`How many`) and 
+(:guilabel:`In the event of`), **exposure** (:guilabel:`How many`) and
 **impact function** (:guilabel:`In the event of`) are selected, the results
 area will be updated to indicate that you can proceed to run the impact
 scenario calculation.
 
 .. figure:: /static/status-ready.png
-   :align:   center
+   :align: center
 
 While a scenario is being computed, the :guilabel:`Results` area displays the
 current progress of the analysis.
 
 .. figure:: /static/calculation-progress.png
-   :align:   center
+   :align: center
 
 Finally, the :guilabel:`Results` area is also used to display any error
 messages so that the user is informed as to what went wrong and why.
 
 .. figure:: /static/error-display.png
-   :align:   center
+   :align: center
 
-.. note:: At the bottom of error display you may see button like this: 
-   .. image:: ../../toggle-traceback.png If you click on this button, it
-   will display a box which will contain useful diagnostic information which 
-   can be submitted as part of a bug report if you think the error was 
-   incorrect.
+.. note:: At the bottom of error display you may see button like the following.
+   If you click on this button, it will display a box which will contain
+   useful diagnostic information which can be submitted as part of a bug
+   report if you think the error was incorrect.
+
+   .. image:: /static/toggle-traceback.png
+      :align: center
 
 The buttons area
 ----------------
@@ -160,8 +163,8 @@ be noted that:
 * Remote datasets will be copied locally before processing.
 * All datasets will be clipped to the intersection of the **hazard** layer,
   the **exposure** layer and the current view extents.
-* All clipped datasets will be converted (reprojected) to Geographic (EPSG:4326)
-  coordinate reference system before analysis.
+* All clipped datasets will be converted (reprojected) to Geographic
+  (EPSG:4326) coordinate reference system before analysis.
 
 
 

@@ -1,24 +1,24 @@
-
 =============================
 Maintaining the documentation
 =============================
 
 The documentation for |project_name| is written using ReSTructured text (.rst)
-and the Sphinx documenation builder. The best way to learn how to write .rst
+and the Sphinx documentation builder. The best way to learn how to write .rst
 is to look at the source of existing documentation - the markup syntax is
 very simple. There are a number of useful tags that you can use to make
 your documentation clear and visually interesting, the more commonly used in
 this document are listed below. For a more detailed list, please visit
-the `Spinx Inline Markup page <http://sphinx.pocoo.org/markup/inline.html>`_
+the `Sphinx Inline Markup page <http://sphinx.pocoo.org/markup/inline.html>`_
 
 A complete list of supported .rst markup is also available
 `here <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#block-quotes>`_.
 
 Common tags
-...........
+-----------
 
 Here are some common useful tags::
 
+   =======
    Heading
    =======
 
@@ -28,9 +28,16 @@ Here are some common useful tags::
    Sub subheading
    ..............
 
+   Subsubsubheading (if needed)
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
    `web link<http://foo.org>`_
 
    :doc:filename  (rst file without  extension)
+
+   See :ref:`writing_impact_functions`
+
+   e.g. :samp:`flood [m]` is used
 
    *italics*
 
@@ -39,6 +46,8 @@ Here are some common useful tags::
    .. note:: Note in a little call out box
 
    .. todo:: Todo item in a call out box
+
+   .. warning:: Much like Note but clearly visible
 
    .. table:: table title
 
@@ -52,9 +61,13 @@ Here are some common useful tags::
 
    :menuselection:`Plugins --> Manage Plugins`
 
+   :guilabel:`Ok Button`
+
    :kbd:`Control-x Control-f`
 
-   :guilabel:`Ok Button`
+   :file:`/etc/fstab`
+
+
 
 
 .. _api-documentation-howto-label:
@@ -162,19 +175,19 @@ you are reading now). However they don't support internationalisation and
 there are various other issues with it, so we opted to move our content into
 gh-pages. To use this, the site is stored in a special branch.
 
-Initial gh-pages setup
-......................
+Initial Github-pages setup
+..........................
 
 In order to set up the gh-pages branch this is the procedure followed.
 
 .. note:: This is a once-off process you do not need to repeat it, it is
    here for reference purposes only.
 
-Enable gh-pages in the gh project
+Enable Github-pages in the Github project
 `admin page <https://github.com/AIFDR/inasafe/admin>`_. On your local system
 do something like this::
 
-   git clone file:///home/timlinux/dev/python/inasafe-dev \
+   git clone file:///home/yourname/dev/python/inasafe-dev \
        inasafe-github-pages
    cd inasafe-github-pages
    cp ../inasafe-dev/.git/config .git/config
@@ -189,7 +202,7 @@ do something like this::
    git commit -a -m "First commit of docs"
    git push origin gh-pages
 
-Now wait ten minutes or so and the pages should be visble here at
+Now wait ten minutes or so and the pages should be visible here at
 http://aifdr.github.com/inasafe/
 
 See also: http://help.github.com/articles/creating-project-pages-manually
@@ -202,7 +215,9 @@ Deployment of the site requires the following steps:
 * Update the documentation as needed
 * Commit/push to master
 * Run scripts/update_website.sh
-* Apidoc are build automatically, this might update/create/remove some files. If it is the case, the script will ask you if you wish to commit those changes to master. Normally you should.
+* Apidoc are build automatically, this might update/create/remove some files.
+  If it is the case, the script will ask you if you wish to commit those
+  changes to master. Normally you should.
 * Wait approximately 10 minutes
 
 After this the changes should be visible here http://aifdr.github.com/inasafe/

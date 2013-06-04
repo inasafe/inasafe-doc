@@ -1,4 +1,6 @@
+.. _coding_standards:
 
+================
 Coding Standards
 ================
 
@@ -12,9 +14,13 @@ Please observe the following coding standards when working on the codebase:
 * Coding must follow a style guide. In case of Python it is
   `pep8 <http://www.python.org/dev/peps/pep-0008>`_ and
   using the command line tool pep8 (or :samp:`make pep8`) to enforce this.
-  The pep8 checks E121-E128 have been disabled until pep8 version 1.3 becomes widely available.
+  The pep8 checks E121-E128 have been disabled until pep8 version 1.3 becomes
+  widely available.
 * `Python documentation guide <http://www.python.org/dev/peps/pep-0257>`_
-* Comments should be complete sentences. If a comment is a phrase or sentence, its first word should be capitalized, unless it is an identifier that begins with a lower case letter (never alter the case of identifiers!). Comments should start with a # and a single space.
+* Comments should be complete sentences. If a comment is a phrase or
+  sentence, its first word should be capitalized, unless it is an identifier
+  that begins with a lower case letter (never alter the case of identifiers!)
+  . Comments should start with a # and a single space.
 * Adherence to regression/unit testing wherever possible (:samp:`make test`)
 * Use of github for revision control, issue tracking and management
 * Simple deployment procedure - all dependencies must be delivered with
@@ -24,10 +30,11 @@ Please observe the following coding standards when working on the codebase:
   be assumed to represent a working demo with all tests passing.
 * All strings should be internationalisation enabled. Please see :doc:`i18n`
   for details.
-* Code must pass a pylint validation (http://www.logilab.org/card/pylint_manual#what-is-pylint). You can test this using the make target
-  ``make pylint``. In some cases you may wish to override a line or
-  group of lines so that they are not validated by lint. You can do this by
-  adding either::
+* Code must pass a pylint validation
+  (http://www.logilab.org/card/pylint_manual#what-is-pylint). You can test
+  this using the make target ``make pylint``. In some cases you may wish to
+  override a line or group of lines so that they are not validated by lint.
+  You can do this by adding either::
 
      import foo  # pylint: disable=W1203
 
@@ -46,7 +53,8 @@ Please observe the following coding standards when working on the codebase:
      in the :samp:`[MESSAGES CONTROL]` section.
 
   The following pylint messages have been thus globally excluded from the
-  check. For a discussion of these see also github issue https://github.com/AIFDR/inasafe/issues/245.
+  check. For a discussion of these see also github issue
+  https://github.com/AIFDR/inasafe/issues/245.
 
   * All type R: Refactor suggestions such as limiting the number of local
                 variables. We may bring some back later.
@@ -88,9 +96,9 @@ Please observe the following coding standards when working on the codebase:
     __copyright__ += 'Disaster Reduction'
 
 
-.. note:: Please see :ref:`faq-revision-label` for details on how the revision
-   tag is replaced with the SHA1 for the file when the release packages are
-   made.
+.. note:: Please see
+   :ref:`faq-revision-label` for details on how the revision tag is replaced
+   with the SHA1 for the file when the release packages are made.
 
 Doc strings
 ...........
@@ -140,7 +148,7 @@ are listed here for your convenience:
   boxes with only a single widget / item inside.
 + Capitalise first letter only in labels:
   Labels (and group box labels) should be written as a phrase with leading
-  capital letter, and all remaing words written with lower case first letters
+  capital letter, and all remaining words written with lower case first letters
 + Do not end labels for widgets or group boxes with a colon:
   Adding a colon causes visual noise and does not impart additional meaning,
   so don't use them. An exception to this rule is when you have two labels next
@@ -148,7 +156,7 @@ are listed here for your convenience:
 + Keep harmful actions away from harmless ones:
   If you have actions for 'delete', 'remove' etc, try to impose adequate space
   between the harmful action and innocuous actions so that the users is less
-  likely to inadvertantly click on the harmful action.
+  likely to inadvertently click on the harmful action.
 + Always use a QButtonBox for 'OK', 'Cancel' etc buttons:
   Using a button box will ensure that the order of 'OK' and 'Cancel' etc,
   buttons is consistent with the operating system / locale / desktop

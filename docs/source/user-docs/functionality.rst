@@ -1,15 +1,15 @@
 .. _functionality:
 
-=====================
-InaSAFE Functionality
-=====================
+============================
+|project_name| Functionality
+============================
 
-This document describes InaSAFE's functionality in regard to what inputs are
-needed to carry on an analysis. At the highest level InaSAFE will take a
-hazard layer (such as ground shaking, water depth or ash load) and an
-exposure layer (such as population density or building footprints)
-and combine them according to an impact
-function to produce an impact layer and a report.
+This document describes |project_name|'s functionality in regard to what
+inputs are needed to carry on an analysis. At the highest level
+|project_name| will take a hazard layer (such as ground shaking,
+water depth or ash load) and an exposure layer (such as population density or
+building footprints) and combine them according to an impact function to
+produce an impact layer and a report.
 
 
 Hazard layers

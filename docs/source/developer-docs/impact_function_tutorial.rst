@@ -2,19 +2,18 @@
 Impact Function Tutorial
 ========================
 
-This is a simple tutorial for writing of InaSAFE impact functions.
+This is a simple tutorial for writing of |project_name| impact functions.
 
 .. note:: This is an old text that needs to be verified, but it may be helpful
    and can serve as a starting point for additional documentation.
 
-------------
 Introduction
 ------------
 
-InaSAFE contains a plugin system that allows complex impact functions to be
-implemented in Python (http://www.python.org) whilst (ideally) minimizing
-the need to understand all the complexity of the handling the hazard and
-exposure layers. Features of the impact function system are:
+|project_name| contains a plugin system that allows complex impact functions
+to be implemented in Python (http://www.python.org) whilst (ideally)
+minimizing the need to understand all the complexity of the handling the
+hazard and exposure layers. Features of the impact function system are:
 
 * Auto registration of new impact functions after restart
 * Derivation of more complex impact functions from simpler ones
@@ -23,7 +22,6 @@ exposure layers. Features of the impact function system are:
 * Allow for additional functionality to be added easily
 * Provide up-to-date documentation on impact functions functionality
 
-----------------------------------------------------
 Writing a Simple Raster impact function: Tutorial 01
 ----------------------------------------------------
 
@@ -31,7 +29,7 @@ This section provides a beginners tutorial on writing a simple earthquake
 impact function from scratch. You will need to be familiar with the basics of
 Python to be able to write and debug impact functions - if you are new to
 Python the standard Python tutorial is a great place to start
-(http://docs.python.org/tutorial/).
+see http://docs.python.org/tutorial/.
 
 For this impact function we want to calculate a simple impact by using the
 following function of the severity of hazard (i.e. the amount of ground shaking
@@ -44,20 +42,19 @@ following function of the severity of hazard (i.e. the amount of ground shaking
           P: Raster layer of population data on the same grid as H
           a,b: Parameters that were tuned from real world data
 
-
 Defining the impact class
-+++++++++++++++++++++++++
+.........................
 
 As the first step we need to define the impact function class.::
 
     class SimpleImpactEarthquakeFunction(FunctionProvider)
 
 Every impact function must be subclassed from FunctionProvider. This is the
-method of registration for the impact function and allows the InaSAFE Plugin
-Manager to know what impact functions are available.
+method of registration for the impact function and allows the |project_name|
+Plugin Manager to know what impact functions are available.
 
 Impact Parameters
-+++++++++++++++++
+.................
 
 Each impact function needs to be used in the correct context. Using a flood
 impact function for earthquakes will likely yield misleading results at best!
@@ -74,8 +71,8 @@ In the future impact functions may also support filtering by:
 * The geographic location
 * The available layer meta data
 
-InaSAFE will try to show users only those impact functions that can be validly
-run.
+|project_name| will try to show users only those impact functions that can be
+validly run.
 
 These parameters required to run the impact function, and indeed all specific
 parameters, are defined in the doc string of the class::
@@ -93,7 +90,8 @@ parameters, are defined in the doc string of the class::
                 layer_type=='raster'
         """
 
-This tells InaSAFE that this impact function requires at a minimum inputs of:
+This tells |project_name| that this impact function requires at a minimum
+inputs of:
 
 * category of 'hazard', with a layer subcategory of 'earthquake' and it must
   be a layerType of 'Raster'
@@ -110,7 +108,7 @@ evaluated.
        from the impact selection box.
 
 The calculation function
-++++++++++++++++++++++++
+........................
 
 Each impact function must then define a `run` method which contains the
 execution code::
@@ -152,12 +150,12 @@ data for the exposure and hazard.::
 
 
 At the end of the function the calculated impact layer R is returned. This
-return layer in our example is a Raster layer the correct projection for this
-layer is ensured by passingin the input layer projections.
+return layer in our example is a Raster layer. The correct projection for this
+layer is ensured by passing the input layer projections.
 
 
 Installing the impact function
-++++++++++++++++++++++++++++++
+..............................
 
 The whole impact function file will now read::
 
@@ -209,18 +207,14 @@ The whole impact function file will now read::
 Save this as SimpleImpactEarthquakeFunction.py into into the following
 directory::
 
-    [root InaSAFE dir]/safe/impact_functions/earthquake
+    [root |project_name| dir]/safe/impact_functions/earthquake
 
-Then start QGis and activate InaSAFE.
-
+Then start QGis and activate |project_name|.
 
 Testing the plugin
-++++++++++++++++++
+..................
 
 Load the following data
 
 * Earthquake ground shaking
 * Glp10ag (Population for Indonesia)
-
-...
-

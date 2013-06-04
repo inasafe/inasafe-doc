@@ -1,13 +1,14 @@
-
+======================================
 |project_name| developer documentation
 ======================================
 
 Additional useful links for developers:
 
-* GitHub site for InaSAFE : https://github.com/AIFDR/inasafe/
-* Continuous Integration testbed for InaSAFE : http://jenkins.linfiniti.com/job/InaSAFE/
+* GitHub site for |project_name| : https://github.com/AIFDR/inasafe/
+* Continuous Integration testbed for |project_name| :
+  http://jenkins.linfiniti.com/job/InaSAFE/
 * QGIS Plugin Home Page : http://plugins.qgis.org/plugins/inasafe/
-* InaSAFE Ohloh Project Stats : https://www.ohloh.net/p/inasafe
+* |project_name| Ohloh Project Stats : https://www.ohloh.net/p/inasafe
 
 Developer Documentation Contents:
 

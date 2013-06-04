@@ -1,9 +1,9 @@
+==========================
 Frequently Asked Questions
 ==========================
 
-
 How does the documentation work?
-::::::::::::::::::::::::::::::::
+--------------------------------
 
 The |project_name| documentation files are written using the RST format
 (`quickreference guide <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_)
@@ -29,9 +29,8 @@ The RST files are used for two products:
      service hook for ReadTheDocs at github:
      https://github.com/AIFDR/inasafe/admin/hooks
 
-
 How do I replace a string across multiple files
-:::::::::::::::::::::::::::::::::::::::::::::::
+-----------------------------------------------
 
 To replace string layer_type, say, with layertype across all python files
 in project, do::
@@ -47,14 +46,16 @@ Using rpl is much simpler, just do::
    rpl "oldstring" "newstring" *.py
 
 
-For details on the find command see `this article <http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/>`_.
+For details on the find command see
+`this article <http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/>`_.
 
 .. _faq-revision-label:
 
 How did you embed the git version SHA1 into each .py file?
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+----------------------------------------------------------
 
-The format was derived using the `git log format tag <http://schacon.github.com/git/git-log.html>`_.
+The format was derived using the
+`git log format tag <http://schacon.github.com/git/git-log.html>`_.
 It is stored in the source of each python as::
 
    __revision__ = '$Format:%H$'
@@ -67,9 +68,10 @@ git-archive by doing this::
    git add .gitattributes
 
 The above only needs to be done once and then all python files with format
-substitutions will be replaced when running git-archive. The actual substition
-takes place at the time that a git archive is generated (git archive creates a
-copy of the repo with all repository metadata stripped out). For example::
+substitutions will be replaced when running git-archive. The actual
+substitution takes place at the time that a git archive is generated (git
+archive creates a copy of the repo with all repository metadata stripped out)
+. For example::
 
   git archive version-0_3 | tar -x -C /tmp/inasafe-0.3.0
 
@@ -81,34 +83,35 @@ You can verify SHA1 replacement has been made by doing::
 The deployment of version tagged files is automated by using the
 :file:`scripts\release.sh` script.
 
-
 How do you profile code?
-::::::::::::::::::::::::
+------------------------
+::
 
-sudo apt-get install python-profiler 
-python -m cProfile -s time safe/common/test_polygon.py
+  sudo apt-get install python-profiler
+  python -m cProfile -s time safe/common/test_polygon.py
 
-and 
+and
+::
 
-sudo easy_install pycallgraph
-sudo apt-get install graphviz
-pycallgraph safe/common/test_polygon.py
-
-
+  sudo easy_install pycallgraph
+  sudo apt-get install graphviz
+  pycallgraph safe/common/test_polygon.py
 
 See also
 http://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script
 
-Why do I got 99999999 (or another big number) instead of NaN when I saved vector files?
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+Why do I got 99999999 instead of NaN when I saved vector files?
+---------------------------------------------------------------
 
-InaSAFE needs to convert NaN to 99999999 or more specifically 8 digits of 9
-because NaN is not intepreted correclty on Windows. You can read more
+|project_name| needs to convert NaN to 99999999 or more specifically 8 digits
+of 9 because NaN is not intepreted correclty on Windows. You can read more
 information about it on http://trac.osgeo.org/gdal/ticket/4799 or in Github
 issue `#269 <https://github.com/AIFDR/inasafe/issues/269>`_.
 
-But don't worry, when InaSAFE read vector file, it will convert the 1e+24 back
-to NaN. So, any computation inside InaSAFE will treat NaN as NaN in numpy.
+But don't worry, when |project_name| read vector file,
+it will convert the 1e+24 back to NaN. So, any computation inside
+|project_name| will treat NaN as NaN in numpy.
 
-.. note:: You'll need to convert the 1e+24 to NaN value manually if you want to use
-   it without InaSAFE.
+.. note:: You'll need to convert the 1e+24 to NaN value manually if you want
+   to use it without
+   |project_name|.
