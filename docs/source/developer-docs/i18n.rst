@@ -321,33 +321,67 @@ for each supported locale.
 Transifex
 ----------
 
-Tim Sutton: scripts/pre_translate.sh
-Tim Sutton: git commit -m "Regenerated translation po files" -a
-Tim Sutton: scripts/create-transifex-resources.sh
-Tim Sutton: and then wait quite a long time
-Tim Sutton: the script basically does this:
-Tim Sutton: - makes sure each po source file is registered as a transifex resource
-Tim Sutton: - adds a translation source for each locale (determined by subdirs of i18n dir)
-Tim Sutton:   for each resource
-Tim Sutton: - pushes the resources and their translation files to transifex
-Tim Sutton: eof
-Tim Sutton: when you want to collect any translations from transifex, it is the reverse process so you do:
-Tim Sutton: tx pull
-Tim Sutton: scripts/post_translate.sh
-Tim Sutton: git commit -m "Updated translations from transifex community edited translation files" -a
-Tim Sutton: eof
-Tim Sutton: that will basically ensure that any translations done on transifex get put into git
-Tim Sutton: note that in scripts/create-transifex-resources.sh there is a VERSION variable that must be configured for each QGIS release
-Tim Sutton: in the form 1-8 (. char is not allowed)
-Tim Sutton: so that is the theoretical procedureTim Sutton: you can also push a po file individually using the command line client like this:
-Tim Sutton: tx push -s -t -l de -r qgis-documentation.v1-8-docs-qgis-gui
-Tim Sutton: that will push the source (-s) and translation file (-t) for language (-l) de for the resource (-r) qgis-documentation.v1-8-docs-qgis-gui up to the transifex web server
+Things you need to do once per Client Computer:
+
+* Transifex account on www.transifex.org
+* sudo pip install transifex-client
+* go to /tmp and write tx init to create your .transifexrc file
+* go back to inasafe-doc
+
+To generate the .po files which are the base for translations you have to use
+
+:command:`scripts/pre_translate.sh`
+
+That will read the current strings, filter out the strings that can be
+translated and create the .po files.
+The command:
+
+:command:`git commit -m "Regenerated translation po files" -a`
+
+will commit that newly created .po files.
+
+Now we have to create the resources for transifex for which there is another
+script:
+
+Use
+
+:command:`scripts/create-transifex-resources.sh`
+
+and then wait quite a long time until the creation is finished.
+
+This script basically does this:
+* makes sure each po source file is registered as a transifex resource
+* adds a translation source for each locale (determined by subdirs of i18n dir)
+
+  for each resource
+  * pushes the resources and their translation files to transifex
+
+When you want to collect any translations from transifex,
+it is the reverse process so you do:
+
+:command:`tx pull`
+:command:`scripts/post_translate.sh`
+:command:`git commit -m "Updated translations from transifex community edited translation files" -a`
+
+that will basically ensure that any translations done on transifex get put
+into git.
+
+.. note:: In :command:`scripts/create-transifex-resources.sh` there is a
+   VERSION variable that must be configured for each QGIS release in the form
+    1-8 (. char is not allowed)
+
+you can also push a po file individually using the command line client like
+this:
+:command:`tx push -s -t -l de -r qgis-documentation.v1-8-docs-qgis-gui`
+that will push the source (-s) and translation file (-t) for language (-l) de
+for the resource (-r) qgis-documentation.v1-8-docs-qgis-gui up to the
+transifex web server
 Tim Sutton: however running that I see the same error you reported:
 Tim Sutton: Remote server replied: Error uploading file: There is a syntax error in your file
 Tim Sutton: so lets try that msgfrmt -c command and see if we can figure out why
 Otto Dassau: usually there is a "fuzzy" word in the header
 Otto Dassau: and somewhere in the text might be some etxra "" in the translation part that shouldn't be there.
-Tim Sutton: timlinux@waterfall:~/dev/cpp/QGIS-Documentation$ msgfmt -c i18n/en/LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po
+timlinux@waterfall:~/dev/cpp/QGIS-Documentation$ msgfmt -c i18n/en/LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po
 msgfmt: i18n/en/LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po: warning: PO file header fuzzy warning: older versions of msgfmt will give an error on this
 Tim Sutton: ok so I dont have a good solution on how to deal with that
 Tim Sutton: does linguist also have the same issues

@@ -1,3 +1,5 @@
+.. _bug_reporting:
+
 ===============================
 Reporting bugs and getting help
 ===============================

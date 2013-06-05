@@ -13,10 +13,17 @@ the `Sphinx Inline Markup page <http://sphinx.pocoo.org/markup/inline.html>`_
 A complete list of supported .rst markup is also available
 `here <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#block-quotes>`_.
 
-Common tags
------------
+Try to not write more than 80 Characters in one line. That makes the
+Documentation much easier to maintain.
+
+Common tags used in the Documentation:
+--------------------------------------
 
 Here are some common useful tags::
+
+   |project_name| is currently a substitution for InaSAFE and should be used
+   where appropriate to make it possible to change the Project name at one
+   place
 
    =======
    Heading
@@ -25,7 +32,7 @@ Here are some common useful tags::
    SubHeading
    ----------
 
-   Sub subheading
+   Subsubheading
    ..............
 
    Subsubsubheading (if needed)
@@ -59,6 +66,16 @@ Here are some common useful tags::
    units         feet
    ============  ================
 
+   +-----------------------+-----------------------+
+   | Symbol                | Meaning               |
+   +=======================+=======================+
+   | .. image:: tent.png   | Campground            |
+   +-----------------------+-----------------------+
+   | .. image:: waves.png  | Lake                  |
+   +-----------------------+-----------------------+
+   | .. image:: peak.png   | Mountain              |
+   +-----------------------+-----------------------+
+
    :menuselection:`Plugins --> Manage Plugins`
 
    :guilabel:`Ok Button`
@@ -67,8 +84,27 @@ Here are some common useful tags::
 
    :file:`/etc/fstab`
 
+   :command:`make docs`
 
+    .. figure:: picture.png
+       :scale: 50 %
+       :alt: map to buried treasure
+       :figwidth: lenght or percentage of current line width
+       :figclass: text
 
+        This is the caption of the figure (a simple paragraph).
+
+    .. image:: ../static/tutorial/001.png
+       :height: 100px
+       :width: 200 px
+       :scale: 50 %
+       :alt: alternate text
+       :align: center
+       Image description
+
+remark: use pt instead of px because of latex output
+A4 = height ~ 1000pt
+A4 = width ~ 700pt
 
 .. _api-documentation-howto-label:
 
@@ -99,7 +135,7 @@ There should be a blank line between each paragraph and before the Args option.
 Where multiple inputs or outputs are used, a ReSTructured text bullet list
 should be used to list them.
 
-.. note:: You can use any ReSTructured text withing the docstring to deliver
+.. note:: You can use any ReSTructured text within the docstring to deliver
    rich markup in the final API documentation outputs.
 
 In order for a new module's documentation to appear in the API docs, the
