@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-05 08:54\n"
+"POT-Creation-Date: 2013-06-05 09:23\n"
 "PO-Revision-Date: 2013-03-06 11:01+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
@@ -557,38 +557,146 @@ msgstr ""
 msgid "Transifex"
 msgstr ""
 
-# 3455d6a493fc46e29d12a0f8d79cacf7
+# 568db32373934ba5b790f05d3ab3e208
 #: ../../source/developer-docs/i18n.rst:328
+msgid "Things you need to do once per Client Computer:"
+msgstr ""
+
+# c5cf2af48bd4496cb0e90d780ef12030
+#: ../../source/developer-docs/i18n.rst:330
+msgid "Transifex account on www.transifex.org"
+msgstr ""
+
+# 6560037a9dc74ef49fcaaf3eb4745197
+#: ../../source/developer-docs/i18n.rst:331
+msgid "sudo pip install transifex-client"
+msgstr ""
+
+# 33bc6326ff574b929fee5bd25606b6c9
+#: ../../source/developer-docs/i18n.rst:332
+msgid "go to /tmp and write tx init to create your .transifexrc file"
+msgstr ""
+
+# 5e1fe81c2da8458395eb07e7075e3214
+#: ../../source/developer-docs/i18n.rst:333
+msgid "go back to inasafe-doc"
+msgstr ""
+
+# db88c9fe41c54e3e9fd9c9234e8c4d75
+#: ../../source/developer-docs/i18n.rst:335
 msgid ""
-"Tim Sutton: scripts/pre_translate.sh Tim Sutton: git commit -m \"Regenerated "
-"translation po files\" -a Tim Sutton: scripts/create-transifex-resources.sh "
-"Tim Sutton: and then wait quite a long time Tim Sutton: the script basically "
-"does this: Tim Sutton: - makes sure each po source file is registered as a "
-"transifex resource Tim Sutton: - adds a translation source for each locale "
-"(determined by subdirs of i18n dir) Tim Sutton:   for each resource Tim "
-"Sutton: - pushes the resources and their translation files to transifex Tim "
-"Sutton: eof Tim Sutton: when you want to collect any translations from "
-"transifex, it is the reverse process so you do: Tim Sutton: tx pull Tim "
-"Sutton: scripts/post_translate.sh Tim Sutton: git commit -m \"Updated "
-"translations from transifex community edited translation files\" -a Tim "
-"Sutton: eof Tim Sutton: that will basically ensure that any translations "
-"done on transifex get put into git Tim Sutton: note that in scripts/create-"
-"transifex-resources.sh there is a VERSION variable that must be configured "
-"for each QGIS release Tim Sutton: in the form 1-8 (. char is not allowed) "
-"Tim Sutton: so that is the theoretical procedureTim Sutton: you can also "
-"push a po file individually using the command line client like this: Tim "
-"Sutton: tx push -s -t -l de -r qgis-documentation.v1-8-docs-qgis-gui Tim "
-"Sutton: that will push the source (-s) and translation file (-t) for "
-"language (-l) de for the resource (-r) qgis-documentation.v1-8-docs-qgis-gui "
-"up to the transifex web server Tim Sutton: however running that I see the "
-"same error you reported: Tim Sutton: Remote server replied: Error uploading "
-"file: There is a syntax error in your file Tim Sutton: so lets try that "
-"msgfrmt -c command and see if we can figure out why Otto Dassau: usually "
-"there is a \"fuzzy\" word in the header Otto Dassau: and somewhere in the "
-"text might be some etxra \"\" in the translation part that shouldn't be "
-"there. Tim Sutton: timlinux@waterfall:~/dev/cpp/QGIS-Documentation$ msgfmt -"
-"c i18n/en/LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po msgfmt: i18n/"
-"en/LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po: warning: PO file "
+"To generate the .po files which are the base for translations you have to use"
+msgstr ""
+
+# d1d657b9f65544aa868d4c7c32c92da6
+#: ../../source/developer-docs/i18n.rst:337
+msgid ":command:`scripts/pre_translate.sh`"
+msgstr ""
+
+# d3292ab606a84b96998ef6048e0aa50f
+#: ../../source/developer-docs/i18n.rst:339
+msgid ""
+"That will read the current strings, filter out the strings that can be "
+"translated and create the .po files. The command:"
+msgstr ""
+
+# 8057e69cf9114e4a97998c6a4b1a4adf
+#: ../../source/developer-docs/i18n.rst:343
+msgid ":command:`git commit -m \"Regenerated translation po files\" -a`"
+msgstr ""
+
+# a0e53e1ffdae4b8ca747cd12b5b6a3c1
+#: ../../source/developer-docs/i18n.rst:345
+msgid "will commit that newly created .po files."
+msgstr ""
+
+# 60ec3e80fbc34d62921b9bed816b731c
+#: ../../source/developer-docs/i18n.rst:347
+msgid ""
+"Now we have to create the resources for transifex for which there is another "
+"script:"
+msgstr ""
+
+# 2518e16f71da491a8a04ef8c11d174fe
+#: ../../source/developer-docs/i18n.rst:350
+msgid "Use"
+msgstr ""
+
+# a55db110c48f40be8efd2edb1112c614
+#: ../../source/developer-docs/i18n.rst:352
+msgid ":command:`scripts/create-transifex-resources.sh`"
+msgstr ""
+
+# fb18e8c3415e47c19f5370b7991983dd
+#: ../../source/developer-docs/i18n.rst:354
+msgid "and then wait quite a long time until the creation is finished."
+msgstr ""
+
+# 372d0c9df70b4327bff60c6910b9dd3c
+#: ../../source/developer-docs/i18n.rst:356
+msgid ""
+"This script basically does this: * makes sure each po source file is "
+"registered as a transifex resource * adds a translation source for each "
+"locale (determined by subdirs of i18n dir)"
+msgstr ""
+
+# a1c23a6449304b6c8f61b751b69c1cd2
+#: ../../source/developer-docs/i18n.rst:360
+msgid ""
+"for each resource * pushes the resources and their translation files to "
+"transifex"
+msgstr ""
+
+# b48a9feb907a4903804d4c118d5c246c
+#: ../../source/developer-docs/i18n.rst:363
+msgid ""
+"When you want to collect any translations from transifex, it is the reverse "
+"process so you do:"
+msgstr ""
+
+# b80158b805bb4dc792b25b3db1f747d2
+#: ../../source/developer-docs/i18n.rst:366
+msgid ""
+":command:`tx pull` :command:`scripts/post_translate.sh` :command:`git commit "
+"-m \"Updated translations from transifex community edited translation files"
+"\" -a`"
+msgstr ""
+
+# d2e1d77a8b824b6194f2b6aaa1aa7a57
+#: ../../source/developer-docs/i18n.rst:370
+msgid ""
+"that will basically ensure that any translations done on transifex get put "
+"into git."
+msgstr ""
+
+# 75b8f73c9a954110b1661ad8a086c329
+#: ../../source/developer-docs/i18n.rst:373
+msgid ""
+"In :command:`scripts/create-transifex-resources.sh` there is a VERSION "
+"variable that must be configured for each QGIS release in the form"
+msgstr ""
+
+# b861b313830c400aaced6f9abf294746
+#: ../../source/developer-docs/i18n.rst:375
+msgid "1-8 (. char is not allowed)"
+msgstr ""
+
+# a4dd6a3b42c84ac0ab0b8cdc9b12a2e8
+#: ../../source/developer-docs/i18n.rst:377
+msgid ""
+"you can also push a po file individually using the command line client like "
+"this: :command:`tx push -s -t -l de -r qgis-documentation.v1-8-docs-qgis-"
+"gui` that will push the source (-s) and translation file (-t) for language (-"
+"l) de for the resource (-r) qgis-documentation.v1-8-docs-qgis-gui up to the "
+"transifex web server Tim Sutton: however running that I see the same error "
+"you reported: Tim Sutton: Remote server replied: Error uploading file: There "
+"is a syntax error in your file Tim Sutton: so lets try that msgfrmt -c "
+"command and see if we can figure out why Otto Dassau: usually there is a "
+"\"fuzzy\" word in the header Otto Dassau: and somewhere in the text might be "
+"some etxra \"\" in the translation part that shouldn't be there. "
+"timlinux@waterfall:~/dev/cpp/QGIS-Documentation$ msgfmt -c i18n/en/"
+"LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po msgfmt: i18n/en/"
+"LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po: warning: PO file "
 "header fuzzy warning: older versions of msgfmt will give an error on this "
 "Tim Sutton: ok so I dont have a good solution on how to deal with that Tim "
 "Sutton: does linguist also have the same issues"

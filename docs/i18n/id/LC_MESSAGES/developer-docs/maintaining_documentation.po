@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-05 08:54\n"
+"POT-Creation-Date: 2013-06-05 09:23\n"
 "PO-Revision-Date: 2013-03-06 11:01+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
@@ -43,23 +43,37 @@ msgid ""
 "docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#block-quotes>`_."
 msgstr ""
 
-# c723e1ae1df64e019f20880669047ac2
-#: ../../source/developer-docs/maintaining_documentation.rst:21
-msgid "Common tags"
+# a5486064345c415db4fe765ac9dea91a
+#: ../../source/developer-docs/maintaining_documentation.rst:20
+msgid ""
+"Try to not write more than 80 Characters in one line. That makes the "
+"Documentation much easier to maintain."
+msgstr ""
+
+# e8566d8bcee7426e8876946fd78707ca
+#: ../../source/developer-docs/maintaining_documentation.rst:24
+msgid "Common tags used in the Documentation:"
 msgstr ""
 
 # a2b6ffd092a44a4db6f7d9e9fa2f7962
-#: ../../source/developer-docs/maintaining_documentation.rst:23
+#: ../../source/developer-docs/maintaining_documentation.rst:26
 msgid "Here are some common useful tags::"
 msgstr ""
 
+# 21646d4883ca412c92a9b76f7f456d1c
+#: ../../source/developer-docs/maintaining_documentation.rst:109
+msgid ""
+"remark: use pt instead of px because of latex output A4 = height ~ 1000pt A4 "
+"= width ~ 700pt"
+msgstr ""
+
 # 89a7a421ffe241aea7c3abf8050d8ebc
-#: ../../source/developer-docs/maintaining_documentation.rst:80
+#: ../../source/developer-docs/maintaining_documentation.rst:116
 msgid "Creating API Documentation"
 msgstr ""
 
 # de4767bbf28d43cab2999832ab62f04b
-#: ../../source/developer-docs/maintaining_documentation.rst:82
+#: ../../source/developer-docs/maintaining_documentation.rst:118
 msgid ""
 "Each class method and function in the code base must include a docstring "
 "explaining its usage and purpose as per the example listed below (taken from "
@@ -67,35 +81,35 @@ msgid ""
 msgstr ""
 
 # df7c80b0939c487c84b267a100c63316
-#: ../../source/developer-docs/maintaining_documentation.rst:101
+#: ../../source/developer-docs/maintaining_documentation.rst:137
 msgid ""
 "There should be a blank line between each paragraph and before the Args "
 "option."
 msgstr ""
 
 # 0fbf9f36e6474d3b82e8e8f6462e1418
-#: ../../source/developer-docs/maintaining_documentation.rst:103
+#: ../../source/developer-docs/maintaining_documentation.rst:139
 msgid ""
 "Where multiple inputs or outputs are used, a ReSTructured text bullet list "
 "should be used to list them."
 msgstr ""
 
-# a44f293839734a8c8be8c7c6a5a30fe7
-#: ../../source/developer-docs/maintaining_documentation.rst:106
+# 9443c9e9e3b14f54bf827f225aabc2bf
+#: ../../source/developer-docs/maintaining_documentation.rst:142
 msgid ""
-"You can use any ReSTructured text withing the docstring to deliver rich "
+"You can use any ReSTructured text within the docstring to deliver rich "
 "markup in the final API documentation outputs."
 msgstr ""
 
 # d09964ca9bd846138ccc16ae77c69611
-#: ../../source/developer-docs/maintaining_documentation.rst:109
+#: ../../source/developer-docs/maintaining_documentation.rst:145
 msgid ""
 "In order for a new module's documentation to appear in the API docs, the "
 "following steps are required:"
 msgstr ""
 
 # 26b766207f1d4dcdb59c27353a30c9a0
-#: ../../source/developer-docs/maintaining_documentation.rst:112
+#: ../../source/developer-docs/maintaining_documentation.rst:148
 msgid ""
 "Create a new file in :file:`docs/source/api-docs/<package_name>` named after "
 "the module. For example, for the gui/riab.py module we would create :file:"
@@ -104,7 +118,7 @@ msgid ""
 msgstr ""
 
 # c6fba523769a45d794fb5fdf2792aa8c
-#: ../../source/developer-docs/maintaining_documentation.rst:116
+#: ../../source/developer-docs/maintaining_documentation.rst:152
 msgid ""
 "Add the new file to the API docs master index (:file:`docs/source/api-docs/"
 "index.rst`). The .rst extension is not needed or desired when adding to the "
@@ -112,43 +126,43 @@ msgid ""
 msgstr ""
 
 # ebca21501b2e4ac29fce9593afd76d04
-#: ../../source/developer-docs/maintaining_documentation.rst:119
+#: ../../source/developer-docs/maintaining_documentation.rst:155
 msgid ""
 "Regenerate the documentation using the :command:`make docs` command from the "
 "top level directory in the source tree."
 msgstr ""
 
 # 0cac6eb521f74d5bb364c1aa0e057a4c
-#: ../../source/developer-docs/maintaining_documentation.rst:121
+#: ../../source/developer-docs/maintaining_documentation.rst:157
 msgid ""
 "Add the new .rst file and generated html files to the revision control "
 "system."
 msgstr ""
 
 # 5f193024c10847b68b1bae12d45a2e68
-#: ../../source/developer-docs/maintaining_documentation.rst:123
+#: ../../source/developer-docs/maintaining_documentation.rst:159
 msgid ""
 "It is probably most expedient to simply copy and rename one of the existing "
 "API documentation files and replace the python module paths therein."
 msgstr ""
 
 # 07e4305ff06040a4bedf35c27cd205cb
-#: ../../source/developer-docs/maintaining_documentation.rst:126
+#: ../../source/developer-docs/maintaining_documentation.rst:162
 msgid "An example of the contents of a module's API .rst if provided below::"
 msgstr ""
 
 # c9a3f1affabf4574be5914e934f8060f
-#: ../../source/developer-docs/maintaining_documentation.rst:134
+#: ../../source/developer-docs/maintaining_documentation.rst:170
 msgid "This module forms part of the `InaSAFE <http://inasafe.org>`_ tool."
 msgstr ""
 
 # 848a19af24504e709d12b9d246d2a9ae
-#: ../../source/developer-docs/maintaining_documentation.rst:136
+#: ../../source/developer-docs/maintaining_documentation.rst:172
 msgid "A couple of things should be noted here:"
 msgstr ""
 
 # a89d22397a914ec891fd6169163a793c
-#: ../../source/developer-docs/maintaining_documentation.rst:138
+#: ../../source/developer-docs/maintaining_documentation.rst:174
 msgid ""
 "Sphinx provides automodule and autoclass directives. We have opted to use "
 "**automodule** for all API documentation because autoclass requires that "
@@ -157,38 +171,38 @@ msgid ""
 msgstr ""
 
 # 39eb5796686a4d7ab78647faad509c2f
-#: ../../source/developer-docs/maintaining_documentation.rst:141
+#: ../../source/developer-docs/maintaining_documentation.rst:177
 msgid "Automodule must point to a fully qualified python module path."
 msgstr ""
 
 # b538c8eb28fb4aeea8d89323115c6bbd
-#: ../../source/developer-docs/maintaining_documentation.rst:142
+#: ../../source/developer-docs/maintaining_documentation.rst:178
 msgid ""
 "The **members** directive instructs autodocs to enumerate all classes and "
 "functions in that module."
 msgstr ""
 
 # 0bfbbfb91620440599023544878da066
-#: ../../source/developer-docs/maintaining_documentation.rst:146
+#: ../../source/developer-docs/maintaining_documentation.rst:182
 msgid ""
 "Once the new document has been added and the documentation generated, you "
 "should see it appear in the API section of the |project_name| documentation."
 msgstr ""
 
 # 19bff705f7e542bf816648da12a0ee37
-#: ../../source/developer-docs/maintaining_documentation.rst:153
+#: ../../source/developer-docs/maintaining_documentation.rst:189
 msgid "Documenting new features"
 msgstr ""
 
 # afd38045c4334a6cabda6fae08a9b437
-#: ../../source/developer-docs/maintaining_documentation.rst:155
+#: ../../source/developer-docs/maintaining_documentation.rst:191
 msgid ""
 "New features should be well documented and that documentation should be made "
 "available uder the :file:`user-docs` subfolder of the sphinx sources tree."
 msgstr ""
 
 # c33e01171f5845b7a51b9f1ae23688d9
-#: ../../source/developer-docs/maintaining_documentation.rst:158
+#: ../../source/developer-docs/maintaining_documentation.rst:194
 msgid ""
 "For example, when the keywords editor dialog feature was introduced, we "
 "created a new sphinx document :file:`docs/sources/user-docs/keywords.rst` "
@@ -197,7 +211,7 @@ msgid ""
 msgstr ""
 
 # 9f8b017d0eff4b40b401a198ec3e914b
-#: ../../source/developer-docs/maintaining_documentation.rst:169
+#: ../../source/developer-docs/maintaining_documentation.rst:205
 msgid ""
 "Where the 'keywords' parameter indicates the user-docs/\\*.rst document that "
 "should be opened when the help button is clicked. The general style and "
@@ -206,12 +220,12 @@ msgid ""
 msgstr ""
 
 # 0e5815f65b9a4632baae3cc5bcab350f
-#: ../../source/developer-docs/maintaining_documentation.rst:175
+#: ../../source/developer-docs/maintaining_documentation.rst:211
 msgid "Publishing the documentation to GitHub Pages"
 msgstr ""
 
 # 7c203b20289345a39357633bba23fcaa
-#: ../../source/developer-docs/maintaining_documentation.rst:177
+#: ../../source/developer-docs/maintaining_documentation.rst:213
 msgid ""
 "Initially we have used http://readthedocs.org to host our site (and the "
 "pages you are reading now). However they don't support internationalisation "
@@ -220,69 +234,69 @@ msgid ""
 msgstr ""
 
 # ca3c09769216488eb581caa5bef59d07
-#: ../../source/developer-docs/maintaining_documentation.rst:183
+#: ../../source/developer-docs/maintaining_documentation.rst:219
 msgid "Initial Github-pages setup"
 msgstr ""
 
 # 4bf0919b8b1f4528a637a6d7f2aaf65e
-#: ../../source/developer-docs/maintaining_documentation.rst:185
+#: ../../source/developer-docs/maintaining_documentation.rst:221
 msgid "In order to set up the gh-pages branch this is the procedure followed."
 msgstr ""
 
 # 0f5b38f5173b4a5c835eef8fcf218e13
-#: ../../source/developer-docs/maintaining_documentation.rst:187
+#: ../../source/developer-docs/maintaining_documentation.rst:223
 msgid ""
 "This is a once-off process you do not need to repeat it, it is here for "
 "reference purposes only."
 msgstr ""
 
 # 3bfb56c8038b47e6b7de650656f94ba0
-#: ../../source/developer-docs/maintaining_documentation.rst:190
+#: ../../source/developer-docs/maintaining_documentation.rst:226
 msgid ""
 "Enable Github-pages in the Github project `admin page <https://github.com/"
 "AIFDR/inasafe/admin>`_. On your local system do something like this::"
 msgstr ""
 
 # 73417ef505b94239a95558b18dc44037
-#: ../../source/developer-docs/maintaining_documentation.rst:209
+#: ../../source/developer-docs/maintaining_documentation.rst:245
 msgid ""
 "Now wait ten minutes or so and the pages should be visible here at http://"
 "aifdr.github.com/inasafe/"
 msgstr ""
 
 # 7094d5308e1344b990f28f3c30bd8ab3
-#: ../../source/developer-docs/maintaining_documentation.rst:212
+#: ../../source/developer-docs/maintaining_documentation.rst:248
 msgid ""
 "See also: http://help.github.com/articles/creating-project-pages-manually"
 msgstr ""
 
 # f6c3c97754d94f0899de8e85fb7d8862
-#: ../../source/developer-docs/maintaining_documentation.rst:215
+#: ../../source/developer-docs/maintaining_documentation.rst:251
 msgid "Updating the site"
 msgstr ""
 
 # 0002054caa9049579b991da88ac58fdf
-#: ../../source/developer-docs/maintaining_documentation.rst:217
+#: ../../source/developer-docs/maintaining_documentation.rst:253
 msgid "Deployment of the site requires the following steps:"
 msgstr ""
 
 # e1a099e5b4db4b0c8c631c3e26243c22
-#: ../../source/developer-docs/maintaining_documentation.rst:219
+#: ../../source/developer-docs/maintaining_documentation.rst:255
 msgid "Update the documentation as needed"
 msgstr ""
 
 # 05209830886248e1928188adc9f76367
-#: ../../source/developer-docs/maintaining_documentation.rst:220
+#: ../../source/developer-docs/maintaining_documentation.rst:256
 msgid "Commit/push to master"
 msgstr ""
 
 # e3eb3a6c299d490685144c730a92092a
-#: ../../source/developer-docs/maintaining_documentation.rst:221
+#: ../../source/developer-docs/maintaining_documentation.rst:257
 msgid "Run scripts/update_website.sh"
 msgstr ""
 
 # 58c36d0c8c624fea9bc6305e17a19aea
-#: ../../source/developer-docs/maintaining_documentation.rst:222
+#: ../../source/developer-docs/maintaining_documentation.rst:258
 msgid ""
 "Apidoc are build automatically, this might update/create/remove some files. "
 "If it is the case, the script will ask you if you wish to commit those "
@@ -290,19 +304,19 @@ msgid ""
 msgstr ""
 
 # f3537f9437304dd8800293b62f1a2dec
-#: ../../source/developer-docs/maintaining_documentation.rst:225
+#: ../../source/developer-docs/maintaining_documentation.rst:261
 msgid "Wait approximately 10 minutes"
 msgstr ""
 
 # fae41ed3c0e34bc4890f783a24bfa212
-#: ../../source/developer-docs/maintaining_documentation.rst:227
+#: ../../source/developer-docs/maintaining_documentation.rst:263
 msgid ""
 "After this the changes should be visible here http://aifdr.github.com/"
 "inasafe/ and http://inasafe.org."
 msgstr ""
 
 # 261fcac23dbc4d6eae637cf9dcaea814
-#: ../../source/developer-docs/maintaining_documentation.rst:230
+#: ../../source/developer-docs/maintaining_documentation.rst:266
 msgid ""
 "Also see http://github.com/AIFDR/inasafe/issues/257 for further details of "
 "how the documentation publishing process works."
