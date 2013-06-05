@@ -127,8 +127,8 @@ get the new plugin repo added to your repo list. To fix this you can do:
 
 * open QGIS
 * Go :menuselection:`Plugins --> Fetch Python Plugins`
-* click :guilabel:`Repositories` tab
-* click :guilabel:`add`
+* Click :guilabel:`Repositories` tab
+* Click :guilabel:`add`
 * :guilabel:`Name`: Official QGIS Repository
 * :guilabel:`Url`: http://plugins.qgis.org/plugins/plugins.xml
 * Save it and the plugin repo list should update. If it doesn't,
@@ -143,6 +143,15 @@ It’s an issue related to permission issue. Normally, it occurs when
 the keyword.db is not writable by current user. The thing that you have to do
 is re-run QGIS as administrator or re-install QGIS as administrator.
 
+Another way to solve it is deleting the registry of InaSAFE. You can do it
+by opening :guilabel:`regedit` (Registry Editor). To open regedit, you need 
+to search it in :guilabel:`Start Menu` (it is usually not shown in Start 
+Menu). Open regedit. Find inasafe registry under :menuselection:`My Computer 
+--> Software --> QuantumGIS --> QGIS --> PythonPlugins`. After that, 
+right click on the inasafe, and click :guilabel:`Delete`. Restart QGIS and 
+try to run InaSAFE again to see if it works.
+
 Please see `InaSAFE issue #459 <https://github.com/AIFDR/inasafe/issues/459>`_
-and `InaSAFE issue #569 <https://github.com/AIFDR/inasafe/issues/569>`_ for
+, `InaSAFE issue #564 <https://github.com/AIFDR/inasafe/issues/564>`_, and 
+`InaSAFE issue #569 <https://github.com/AIFDR/inasafe/issues/569>`_ for
 further information.
