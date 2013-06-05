@@ -525,7 +525,7 @@ For remote debugging, you should add pydevd to your PYTHONPATH before starting
      eclipse debugger breakpoints as per normal.
 
      (2) If you are running with remote debugging enabled, be sure to start the
-     PyDev debug server first before launching the Risk-in-a-box QGIS plugin
+     PyDev debug server first before launching the |project_name| QGIS plugin
      otherwise QGIS will likely crash when it can't find the debug server.
 
      (3) Place the above PYTHONPATH command before the final line that launches

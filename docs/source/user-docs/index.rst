@@ -23,6 +23,7 @@ system.
    beginning_spatialdata_analysis
    inter_spatialdata_analysis
    getting_involved
+   writing_documentation
    faq
    known_issues
    changelog

@@ -20,9 +20,8 @@ From Zip Archive
 ----------------
 
 .. warning:: This installation method is not recommended unless you have no
-   internet access or wish to use a specific version of
-   |project_name|. Please install using the plugin repository described
-   above rather.
+   internet access or wish to use a specific version of |project_name|.
+   Please install using the plugin repository described above rather.
 
 We make regular releases of the |project_name| plugin and they are available at
 http://plugins.qgis.org/plugins/inasafe/. Simply choose the most recent (i.e.
@@ -36,7 +35,7 @@ After extracting the plugin, it should be available as
 :file:`c:\\Users\\<your username>\\.qgis\\python\\plugins\\inasafe\\`.
 
 Mac and Linux users need to follow the same procedure but instead the plugin
-directory will be under the $HOME directory.
+directory will be under the $HOME directory. (.qgis/python/plugins/)
 
 Once the plugin is extracted, start QGIS and enable it from the plugin manager.
 To do this open the plugin manager

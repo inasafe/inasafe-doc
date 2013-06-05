@@ -2,7 +2,7 @@
 Development under Gnu/Linux
 ===========================
 
-Risk-in-a-box is built in python and runs as a plugin in
+|project_name| is written in python and runs as a plugin in
 `QGIS <http://qgis.org>`_.
 
 
@@ -77,7 +77,7 @@ you are a developer, the simplest way to do that is go to
 :file:`~/.qgis/python/plugins` and clone |project_name| from our GitHub
 repository page like this::
 
-   git clone git://github.com/AIFDR/inasafe.git  (for read only)
+   git clone git://github.com/AIFDR/inasafe.git         (for read only)
    git clone git@github.com:AIFDR-AusAID/inasafe.git    (to commit changes)
 
 QGIS installed in a non-standard location
@@ -124,8 +124,7 @@ riabclipper test you would do::
 Achievements
 ............
 
-.. note:: This is optional and thus not hard coded into the
-   makefile.
+.. note:: This is optional and thus not hard coded into the Makefile.
 
 Optionally you can enable nose achievments which is a motivational
 tool that gives you little achievement awards based on your test
@@ -147,7 +146,6 @@ Developing using Eclipse (Linux)
 --------------------------------
 .. note:: This is optional - you can use any environment you like for editing
    python, or even a simple text editor.
-
 
 If you wish to use an IDE for development, please refer to
 `this article <http://linfiniti.com/2011/12/remote-debugging-qgis-python-plugins-with-pydev/>`_
@@ -210,7 +208,7 @@ your system)::
 .. note::
 
    If you are running with remote debugging enabled, be sure to start the
-   PyDev debug server first before launching the Risk-in-a-box QGIS plugin
+   PyDev debug server first before launching the |project_name| QGIS plugin
    otherwise QGIS will likely crash when it can't find the debug server.
 
 You will need to ensure that the PYTHONPATH containing your pydev package

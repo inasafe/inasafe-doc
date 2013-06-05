@@ -22,7 +22,8 @@ Developer Documentation Contents:
    profiling
    i18n
    version_control
-   maintaining_documentation
+   writing_api_documentation
+   building_documentation
    writing_impact_functions
    impact_function_tutorial
    postprocessors
