@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-05 08:58\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 9102920be6944ffaa81cae91c11b9e1e
+#: ../../source/developer-docs/osm_building_downloads.rst:7
+msgid "Fetching Building data from OSM"
+msgstr ""
+
+# a992f8234cca4c6db1ad787323b4ac6e
+#: ../../source/developer-docs/osm_building_downloads.rst:9
+msgid ""
+"This document describes in detail research into and procedures for "
+"downloading building footprint data and converting it to a shapefile. The "
+"notes below will be incorporated into a simple web app to provide this "
+"functionality."
+msgstr ""
+
+# 5bc6e6d13059430e80e5df53ba304d68
+#: ../../source/developer-docs/osm_building_downloads.rst:14
+msgid "Overpass Queries for Buildings"
+msgstr ""
+
+# ded4e8a35de54c1fa64966da09c30ea6
+#: ../../source/developer-docs/osm_building_downloads.rst:17
+msgid "Get buildings for an area in osm xml"
+msgstr ""
+
+# 1a02f250bf2547fda6ce5adfa6e83f10
+#: ../../source/developer-docs/osm_building_downloads.rst:19
+msgid "As xml::"
+msgstr ""
+
+# 227308fa2294417cbc60dea0235b6dba
+#: ../../source/developer-docs/osm_building_downloads.rst:24
+msgid "Get buildings for an area in geojson"
+msgstr ""
+
+# 8763a64fb4494b2e98beae7bc7b98636
+#: ../../source/developer-docs/osm_building_downloads.rst:26
+msgid "As json (not used but just here in case of future needs)::"
+msgstr ""
+
+# 339f22157be340ffbc0daef59c4b335b
+#: ../../source/developer-docs/osm_building_downloads.rst:31
+msgid "Fetch with python"
+msgstr ""
+
+# 0c417168fd98411693d74bd4a7a34c15
+#: ../../source/developer-docs/osm_building_downloads.rst:33
+msgid "Example python script to retrieve geometries::"
+msgstr ""
+
+# 188d107a4799412a836343aefafc2522
+#: ../../source/developer-docs/osm_building_downloads.rst:50
+msgid ""
+"you can html encode your overpass queries using this tool: http://meyerweb."
+"com/eric/tools/dencoder/ also there is http://overpass-turbo.eu/ which is a "
+"really good tool for experimenting with overpass queries."
+msgstr ""
+
+# cb02c555b21b44c393da003de1eebc56
+#: ../../source/developer-docs/osm_building_downloads.rst:56
+msgid "Get Dane Springmeyer's style converter"
+msgstr ""
+
+# 2eeb225e885e4de9ae56398c95d81d27
+#: ../../source/developer-docs/osm_building_downloads.rst:58
+msgid ""
+"We want to convert the JOSM preset file (think of it as an xml file that "
+"will generate a form in JOSM to ensure the correct attributes are captured) "
+"into as shp2pgsql style file (which determines what the schema and rules are "
+"for importing osm data into PostgreSQL). To do this we use a converter tool "
+"written by Dane Springmeyer::"
+msgstr ""
+
+# 32b6c5af681041469add5daa9e12d3a4
+#: ../../source/developer-docs/osm_building_downloads.rst:67
+msgid "Get the JOSM preset"
+msgstr ""
+
+# 0ddc0a826e8749c8b218fb80621a2a70
+#: ../../source/developer-docs/osm_building_downloads.rst:69
+msgid ""
+"For the JOSM preset mentioned above, we want to use one created by Kristy "
+"van Puk::"
+msgstr ""
+
+# 5645d53a720849d097e42f86283337c6
+#: ../../source/developer-docs/osm_building_downloads.rst:75
+msgid "Get the default OSM style"
+msgstr ""
+
+# a2183afd4bda45dbad28b146094f072e
+#: ../../source/developer-docs/osm_building_downloads.rst:77
+msgid ""
+"We need to have this for the JOSM conversion step coming up as it will be "
+"merged in as the base style."
+msgstr ""
+
+# 0c005dc36bc84362ab6c52ae66e16250
+#: ../../source/developer-docs/osm_building_downloads.rst:80
+msgid ""
+"curl -O http://svn.openstreetmap.org/applications/utils/export/osm2pgsql/"
+"default.style"
+msgstr ""
+
+# 03816d4c03044ced9f65c947be55a974
+#: ../../source/developer-docs/osm_building_downloads.rst:83
+msgid "Convert the JOSM preset to and OSM2PGSQL style"
+msgstr ""
+
+# 5ccde291310c4ec6a5500834923dc9ed
+#: ../../source/developer-docs/osm_building_downloads.rst:85
+msgid ""
+"The file downloaded above misses the group element so you should insert this "
+"after the presets opening tag::"
+msgstr ""
+
+# 3d15093b666a46978de9a2f502ff4231
+#: ../../source/developer-docs/osm_building_downloads.rst:90
+msgid "and this before the presets closing tag::"
+msgstr ""
+
+# 7c87e5f5ced7464eb480f946dfbd3e99
+#: ../../source/developer-docs/osm_building_downloads.rst:94
+msgid ""
+"Now you can convert it using hte preset2style application we downloaded "
+"previously::"
+msgstr ""
+
+# fe46ffe7b6e64e709df871bf337c5566
+#: ../../source/developer-docs/osm_building_downloads.rst:100
+msgid "Creating a shapefile"
+msgstr ""
+
+# 44b6c545272149128bbb012a7b1e2fe4
+#: ../../source/developer-docs/osm_building_downloads.rst:102
+msgid ""
+"You need to have postgresql / postgis installed and osm2pgsql. OSX users can "
+"find precompiled binaries for osm2pgsql here: http://cl.ly/201r35290x0e"
+msgstr ""
+
+# 2e8ffb7d94c64512994e156ae79900fa
+#: ../../source/developer-docs/osm_building_downloads.rst:105
+msgid ""
+"Save the above python script as fetch_osm_xml.py. To automate the process "
+"you can do e.g.::"
+msgstr ""
+
+# 123e142ad78541d7a994fa19cd144449
+#: ../../source/developer-docs/osm_building_downloads.rst:118
+msgid "Then save it as a script and run it e.g.::"
+msgstr ""

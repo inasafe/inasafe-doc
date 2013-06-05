@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-12 17:10\n"
+"POT-Creation-Date: 2013-06-05 08:54\n"
 "PO-Revision-Date: 2013-03-06 11:01+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
@@ -60,23 +60,23 @@ msgid ""
 "The translation system works differently for different parts of the project:"
 msgstr ""
 
-# 1b6a2a8460c9488997d43dddd7a6cbb7
+# 8be47970c5c14601b65b32ce517f5829
 #: ../../source/developer-docs/i18n.rst:23
 msgid ""
-"Strings that appear in the InaSAFE graphical user interface (gui module). "
-"These include buttons, help strings, menu items etc"
+"Strings that appear in the |project_name| graphical user interface (gui "
+"module). These include buttons, help strings, menu items etc"
 msgstr ""
 
-# ad0dd472843f4a80a76e03c5d06a8d5a
+# 9d42ff1893794512a83a3999dd7208f1
 #: ../../source/developer-docs/i18n.rst:25
 msgid ""
-"Strings that appear in the Python code which constitutes the rest of InaSAFE "
-"including the impact functions"
+"Strings that appear in the Python code which constitutes the rest of |"
+"project_name| including the impact functions"
 msgstr ""
 
-# 862dca1de90a4d469fd0038e82b784ba
+# dc23400f832645f2a2cc097986320f11
 #: ../../source/developer-docs/i18n.rst:27
-msgid "Strings that appear in data and keywords used by InaSAFE"
+msgid "Strings that appear in data and keywords used by |project_name|"
 msgstr ""
 
 # d2940fb6ce0d4d11acba05171118ae84
@@ -130,115 +130,111 @@ msgid "Import the gettext helper e.g::"
 msgstr ""
 
 # 68e467bc138846d39cbc8cbca24a6bdb
-#: ../../source/developer-docs/i18n.rst:57
+#: ../../source/developer-docs/i18n.rst:58
 msgid "All strings should be wrapped using the tr helper e.g::"
 msgstr ""
 
-# cb9b42c1fcf348d88f1ff26d58659451
-#: ../../source/developer-docs/i18n.rst:61
+# 32c7545112b04814b5aacc04b72a3f9f
+#: ../../source/developer-docs/i18n.rst:62
 msgid ""
 "The library will use at run-time the :samp:`LANG` environment variable which "
 "should be set to the iso code e.g. 'id' for 'Indonesia' of the Locale you "
 "wish to use. This is done automatically for you by the QGIS Plugin, but if "
 "you are using the riab library in another context, be sure to set it before "
-"using any libary functions if you want them to return translated strings e."
+"using any library functions if you want them to return translated strings e ."
 "g.::"
 msgstr ""
 
 # a151e4a4708644ccb06c1bf91d5d61d7
-#: ../../source/developer-docs/i18n.rst:72
+#: ../../source/developer-docs/i18n.rst:73
 msgid "Translation of strings that appear at runtime"
 msgstr ""
 
-# 690d373d10a54c50b33fd96540238ba7
-#: ../../source/developer-docs/i18n.rst:74
-msgid "This applies e.g. to titles of layers or attribute names in data."
-msgstr ""
-
-# db6e34257fe246dcb1c9fe700a613e91
-#: ../../source/developer-docs/i18n.rst:76
+# 1f4c04bc881348b5b8a257e56eef6f59
+#: ../../source/developer-docs/i18n.rst:75
 msgid ""
-"The translation system works by scanning the Python code for strings marked "
-"as described above. However, it has know way of knowing about titles of "
-"layers or names that appear in datasets processed by InaSAFE. However, if "
+"This applies e.g. to titles of layers or attribute names in data. The "
+"translation system works by scanning the Python code for strings marked as "
+"described above. However, it has know way of knowing about titles of layers "
+"or names that appear in datasets processed by |project_name|. However, if "
 "such names are known a priori they can be made visible to the translation "
 "system as follows:"
 msgstr ""
 
 # 997cee4c95274477af70478bf07abd56
-#: ../../source/developer-docs/i18n.rst:78
+#: ../../source/developer-docs/i18n.rst:82
 msgid "Edit the file::"
 msgstr ""
 
 # c31fc540823f46588627cd88067150e8
-#: ../../source/developer-docs/i18n.rst:82
+#: ../../source/developer-docs/i18n.rst:86
 msgid ""
-"and add the name to the dictionary \"names\". E.g. :samp:`'college' = "
-"tr('college')`"
+"and add the name to the dictionary \"names\". E.g. :samp:`'college' = tr"
+"('college')`"
 msgstr ""
 
 # 965da718e66746c7b4cba9f466561a99
-#: ../../source/developer-docs/i18n.rst:83
+#: ../../source/developer-docs/i18n.rst:88
 msgid "Update the translation strings as described in the section below"
 msgstr ""
 
 # 34283bcadd124b2799e31cb468b9afdc
-#: ../../source/developer-docs/i18n.rst:84
+#: ../../source/developer-docs/i18n.rst:89
 msgid ""
 "Make impact functions refer to the dynamic translations e.g. as in this "
 "example::"
 msgstr ""
 
 # 713356e9eb684ac6b66d665847e48a39
-#: ../../source/developer-docs/i18n.rst:93
+#: ../../source/developer-docs/i18n.rst:98
 msgid "Make translations"
 msgstr ""
 
 # 0c795fb9ad274f2997c2ef6cdef8469d
-#: ../../source/developer-docs/i18n.rst:95
+#: ../../source/developer-docs/i18n.rst:100
 msgid ""
 "When new strings have been added as described above the procedure to "
 "translate them is (example is given for LANG=id):"
 msgstr ""
 
 # 035dfa19b8874682918b82edc94515ad
-#: ../../source/developer-docs/i18n.rst:97
+#: ../../source/developer-docs/i18n.rst:103
 msgid ""
 "run :samp:`make update-translation-strings` to collect all strings marked "
 "for translation"
 msgstr ""
 
 # 3272d3b6b6c64d02b148dcd1de3c54f7
-#: ../../source/developer-docs/i18n.rst:98
+#: ../../source/developer-docs/i18n.rst:105
 msgid ""
 "Using either an editor or the tool Qt Linguist provide translations in the "
 "files"
 msgstr ""
 
 # edac8d1d6ab745b8b84b99843326092f
-#: ../../source/developer-docs/i18n.rst:100
+#: ../../source/developer-docs/i18n.rst:108
 msgid "safe/i18n/id/LC_MESSAGES/inasafe.po"
 msgstr ""
 
 # 1e19243c1d7646988a31fa2f3de1e1dd
-#: ../../source/developer-docs/i18n.rst:101
+#: ../../source/developer-docs/i18n.rst:109
 msgid "safe_qgis/i18n/inasafe_id.ts"
 msgstr ""
 
-# af2bdcadc1d94411945af2762ec8eac9
-#: ../../source/developer-docs/i18n.rst:103
+# 140295d032874503aa0fbbfbdbb6a107
+#: ../../source/developer-docs/i18n.rst:111
 msgid ""
 "run :samp:`make compile-translation-strings` to make the translations "
-"available to InaSAFE"
+"available to |project_name|"
 msgstr ""
 
 # c98fb9ff57a5466aa6fcb075a8ead7e9
-#: ../../source/developer-docs/i18n.rst:107
+#: ../../source/developer-docs/i18n.rst:116
 msgid "QGIS Plugin"
 msgstr ""
 
 # f2e38b229a634ec1af6598b5e9ba9bff
-#: ../../source/developer-docs/i18n.rst:109
+#: ../../source/developer-docs/i18n.rst:118
 msgid ""
 "The QGIS Plugin uses QtLinguist. this free, open source application can be "
 "downloaded and used to translate the Qt translation files."
@@ -246,61 +242,61 @@ msgstr ""
 
 # 3950a266933f42b3a0fabf21710105ff
 # 11073b63372447609d14c272e246e347
-#: ../../source/developer-docs/i18n.rst:114
-#: ../../source/developer-docs/i18n.rst:204
+#: ../../source/developer-docs/i18n.rst:122
+#: ../../source/developer-docs/i18n.rst:211
 msgid "Preparing for a release"
 msgstr ""
 
 # 7569cc7b4e9448068a5b328aaf19b961
 # 4d70824b5f0d40d8bbf03f6ef04dbfce
-#: ../../source/developer-docs/i18n.rst:116
-#: ../../source/developer-docs/i18n.rst:206
+#: ../../source/developer-docs/i18n.rst:124
+#: ../../source/developer-docs/i18n.rst:213
 msgid "As developer, before a release you should do:"
 msgstr ""
 
 # 405265a8fadb440cab9019f096491b4c
 # 1b839193a3004ea488fd222eb2656f58
-#: ../../source/developer-docs/i18n.rst:118
-#: ../../source/developer-docs/i18n.rst:208
+#: ../../source/developer-docs/i18n.rst:126
+#: ../../source/developer-docs/i18n.rst:215
 msgid ""
 "run :samp:`make update-translation-strings` to update the translation files"
 msgstr ""
 
 # afc69c0429394020ab15c91caf7a4642
-#: ../../source/developer-docs/i18n.rst:119
+#: ../../source/developer-docs/i18n.rst:127
 msgid "distribute the .ts files under :samp:`gui/i18n` to the translators"
 msgstr ""
 
 # 83afbfa0abf44895bc8cee2bb5c0602a
-#: ../../source/developer-docs/i18n.rst:120
+#: ../../source/developer-docs/i18n.rst:128
 msgid "instruct them to open the .ts file for their locale with QtLinguist"
 msgstr ""
 
 # 86502eba07a04f9593858c351cbf3e7f
 # 63c98f6d82eb466e85fda9905acfaabe
-#: ../../source/developer-docs/i18n.rst:121
-#: ../../source/developer-docs/i18n.rst:212
+#: ../../source/developer-docs/i18n.rst:129
+#: ../../source/developer-docs/i18n.rst:219
 msgid ""
 "commit the returned file from the translator when all strings have been "
 "translated"
 msgstr ""
 
 # 725d624a57ff4a8b9ce6efbf1910075a
-#: ../../source/developer-docs/i18n.rst:123
+#: ../../source/developer-docs/i18n.rst:131
 msgid ""
 "run :samp:`make compile-translation-strings` to create binary loadable "
 "translations"
 msgstr ""
 
 # 3c5862db3e3641deaff540d305421961
-#: ../../source/developer-docs/i18n.rst:125
+#: ../../source/developer-docs/i18n.rst:133
 msgid ""
 "ensure the .qm files are distributed with the release (the .ts files do not "
 "need to be released)"
 msgstr ""
 
 # 1938750cacc04c60aeea08d6cfb32119
-#: ../../source/developer-docs/i18n.rst:129
+#: ../../source/developer-docs/i18n.rst:136
 msgid ""
 "Translators should take heed - when refreshing the .ts file in QtLinguist, "
 "the file *must be closed* (:menuselection:`File --> Close`) and then "
@@ -311,8 +307,8 @@ msgstr ""
 
 # a7f486142dcd4fefb96594fc9d9759ae
 # cee3045b3f444de4b967046129072a4d
-#: ../../source/developer-docs/i18n.rst:136
-#: ../../source/developer-docs/i18n.rst:226
+#: ../../source/developer-docs/i18n.rst:144
+#: ../../source/developer-docs/i18n.rst:235
 msgid ""
 "*make update-translation-strings* is non destructive. That is, you can "
 "safely run it as many times as you like, new strings will be added to it, "
@@ -322,13 +318,13 @@ msgstr ""
 
 # 9061b4cbd72e45bf8af50a22d6d1b44e
 # 779e8ad3d6654761ae49d8a51a16cce2
-#: ../../source/developer-docs/i18n.rst:143
-#: ../../source/developer-docs/i18n.rst:234
+#: ../../source/developer-docs/i18n.rst:151
+#: ../../source/developer-docs/i18n.rst:243
 msgid "Adding a new language"
 msgstr ""
 
 # 39e106f997564e7496f6ba95bf456c6e
-#: ../../source/developer-docs/i18n.rst:145
+#: ../../source/developer-docs/i18n.rst:153
 msgid ""
 "To add a new language, edit the :samp:`gui/riab.pro` file and append the new "
 "locale to the bottom of the file. For example, to add South African english "
@@ -336,53 +332,53 @@ msgid ""
 msgstr ""
 
 # 6fe866cfeae247f2a558b06683e7c4bf
-#: ../../source/developer-docs/i18n.rst:151
+#: ../../source/developer-docs/i18n.rst:159
 msgid "to this::"
 msgstr ""
 
 # 10997a63c0574330869e1dbea90ab8d3
-#: ../../source/developer-docs/i18n.rst:156
+#: ../../source/developer-docs/i18n.rst:164
 msgid ""
 "Save and close the .pro file. Next run :samp:`make update-translation-"
 "strings` to generate the new .ts file under gui/i18n. Don't forget to :samp:"
 "`git add` the new file and place it under version control."
 msgstr ""
 
-# bbd39ad7a5e9442d81f442f073befde6
-#: ../../source/developer-docs/i18n.rst:161
-msgid "InaSAFE Library Translations"
+# 337b813e3b79491c94917d083504639f
+#: ../../source/developer-docs/i18n.rst:169
+msgid "|project_name| Library Translations"
 msgstr ""
 
 # e6c9f50082a340289d0035416368e4ed
-#: ../../source/developer-docs/i18n.rst:164
+#: ../../source/developer-docs/i18n.rst:172
 msgid "Low level gettext usage"
 msgstr ""
 
 # b86c7e25b8de4489b8406d4a377b5886
-#: ../../source/developer-docs/i18n.rst:166
+#: ../../source/developer-docs/i18n.rst:174
 msgid "Translation is done using gettext."
 msgstr ""
 
 # c3aff24e8aab4219a245b8b915742980
-#: ../../source/developer-docs/i18n.rst:168
+#: ../../source/developer-docs/i18n.rst:176
 msgid "Create the initial .po file::"
 msgstr ""
 
 # 1615793913634db08bcea1678399b587
-#: ../../source/developer-docs/i18n.rst:172
+#: ../../source/developer-docs/i18n.rst:180
 msgid ""
 "After you create the initial .pot, you need to specify the characterset and "
 "encoding for that file (by editing it with a text editor). For example::"
 msgstr ""
 
 # 52d250ba8a4343b08ba91229a3ae706e
-#: ../../source/developer-docs/i18n.rst:179
+#: ../../source/developer-docs/i18n.rst:186
 msgid ""
 "If you add strings to the file, update the .pot file by adding -j option::"
 msgstr ""
 
 # 880770f99d994030b61ad049b040d182
-#: ../../source/developer-docs/i18n.rst:183
+#: ../../source/developer-docs/i18n.rst:190
 msgid ""
 "Next, you can make the .po files available to translators. Recent versions "
 "of QtLinguist support translations of .po files, so you can use a similar "
@@ -390,7 +386,7 @@ msgid ""
 msgstr ""
 
 # a2ce1234534d4f348bdf9f777f11fd93
-#: ../../source/developer-docs/i18n.rst:187
+#: ../../source/developer-docs/i18n.rst:194
 msgid ""
 "When the .po file has been updated, it should be committed to the git "
 "repository (e.g. via a pull request from the user's repository clone, or by "
@@ -400,57 +396,57 @@ msgid ""
 msgstr ""
 
 # 0edde0b5646149d0b5b39e78569a4842
-#: ../../source/developer-docs/i18n.rst:195
+#: ../../source/developer-docs/i18n.rst:202
 msgid ""
 "The :samp:`msgfmt` command accepts one or more input files which can be "
 "merged into a single :samp:`.mo`."
 msgstr ""
 
 # 2d51ae45a0e84d598aec3be04f486c21
-#: ../../source/developer-docs/i18n.rst:198
+#: ../../source/developer-docs/i18n.rst:205
 msgid ""
 "These functions are wrapped as make scripts so you should not need to use "
 "them on a day to day basis."
 msgstr ""
 
 # 2ffb20a54f5144d7963d030e4f8f08cd
-#: ../../source/developer-docs/i18n.rst:209
+#: ../../source/developer-docs/i18n.rst:216
 msgid ""
 "distribute the .po files under :samp:`i18n/<locale>/LC_MESSAGES/riab.po` to "
 "the translators"
 msgstr ""
 
 # 3ffade4cd62c4acd800b3b3cf9ae1c73
-#: ../../source/developer-docs/i18n.rst:211
+#: ../../source/developer-docs/i18n.rst:218
 msgid "instruct them to open the .po file for their locale with QtLinguist"
 msgstr ""
 
 # 673e7b928e3c4383b81e49ecefe1ff67
-#: ../../source/developer-docs/i18n.rst:214
+#: ../../source/developer-docs/i18n.rst:221
 msgid ""
 "run :samp:`make compile-translation-strings` to create binary loadable "
 "translations (.mo files)"
 msgstr ""
 
 # f68dcf4110b340489adb2b1ef57f5473
-#: ../../source/developer-docs/i18n.rst:216
+#: ../../source/developer-docs/i18n.rst:223
 msgid ""
 "ensure the .mo files are distributed with the release (the .po files do not "
 "need to be released)"
 msgstr ""
 
-# b995c6d3b53247049820b77014000f38
-#: ../../source/developer-docs/i18n.rst:220
+# 61ee82f4b8a24e6bb0cb72d39a072bb0
+#: ../../source/developer-docs/i18n.rst:227
 msgid ""
 "Translators should take heed - when refreshing the .po file in QtLinguist, "
 "the file *must be closed* (:menuselection:`File --> Close`) and then "
-"reopened. Simply loading doing (:menuselection:`File --< Open`) and choosing "
+"reopened. Simply loading doing (:menuselection:`File --> Open`) and choosing "
 "the same file you already have in the workspace will not refresh the "
 "workspace with any new changes that appeared on disk."
 msgstr ""
 
 # 1876f4518ae84eb2b8e6d6b21ef6a937
-#: ../../source/developer-docs/i18n.rst:236
+#: ../../source/developer-docs/i18n.rst:245
 msgid ""
 "To add a new language, edit the :samp:`Makefile` file and append the new "
 "locale to the bottom of the file. For example, to add South African english "
@@ -458,22 +454,22 @@ msgid ""
 msgstr ""
 
 # a43319bedecb4dcc915771ff6d4ddf0c
-#: ../../source/developer-docs/i18n.rst:242
+#: ../../source/developer-docs/i18n.rst:251
 msgid "copy one of the existing stanzas e.g.::"
 msgstr ""
 
-# 17c90abf28ee4ff780d7e53ca7e0450a
-#: ../../source/developer-docs/i18n.rst:248
+# e91ce57a468942ccaa9a5985db7134c9
+#: ../../source/developer-docs/i18n.rst:257
 msgid ""
 "Save and close the Makefile file. Next you need to create the initial "
 "translation stringlist for that locale by creating a locale directory and "
 "running the command above without the :samp:`-j` (j is for 'join' which "
 "merges old content with new, avoiding destroying previous translated "
-"strings). So for example you would run from the command line::"
+"strings) . So for example you would run from the command line::"
 msgstr ""
 
 # d57d7c76060e4dcda5fe083d4bdd6180
-#: ../../source/developer-docs/i18n.rst:259
+#: ../../source/developer-docs/i18n.rst:268
 msgid ""
 "The above adding a hypothetical new translation for South African English. "
 "After the inital creation of your .po files using the above commands, you "
@@ -482,7 +478,7 @@ msgid ""
 msgstr ""
 
 # 2339edf14efb4beea0c35ab64b4f482b
-#: ../../source/developer-docs/i18n.rst:265
+#: ../../source/developer-docs/i18n.rst:275
 msgid ""
 "to generate the updated .po file under i18n/en_ZA/LC_MESSAGES. Don't forget "
 "to :samp:`git add` the new directory and file and place them under version "
@@ -490,7 +486,7 @@ msgid ""
 msgstr ""
 
 # a4d856b08b8d4355a6a83a61245f012c
-#: ../../source/developer-docs/i18n.rst:268
+#: ../../source/developer-docs/i18n.rst:279
 msgid ""
 "To convert the .po file to a binary .mo file (which is used at runtime for "
 "the actual translation), follow the :ref:`library-release-label` section "
@@ -498,12 +494,12 @@ msgid ""
 msgstr ""
 
 # 92a2cecbac774cba987b60db6b68ea80
-#: ../../source/developer-docs/i18n.rst:272
+#: ../../source/developer-docs/i18n.rst:283
 msgid "Adding a new source file for translation"
 msgstr ""
 
 # e0e8a112a17440eaa7a40fb47d81dae6
-#: ../../source/developer-docs/i18n.rst:274
+#: ../../source/developer-docs/i18n.rst:285
 msgid ""
 "To add a new source file, edit the :samp:`Makefile` file and append the new "
 "sourcefile to the bottom of the file list in the :samp:`update-translation-"
@@ -511,19 +507,19 @@ msgid ""
 msgstr ""
 
 # c4f719071f07453f8e3c75cfec61f2c0
-#: ../../source/developer-docs/i18n.rst:282
+#: ../../source/developer-docs/i18n.rst:293
 msgid "Would become::"
 msgstr ""
 
 # 2d6765cdd3964e4fa83a268f48728684
-#: ../../source/developer-docs/i18n.rst:289
+#: ../../source/developer-docs/i18n.rst:300
 msgid ""
 "The above adding the impact_function *flood_population_fatality* to the list "
 "of translatable source files. Now run::"
 msgstr ""
 
 # b2550e8b3471492093a71187bd4f8035
-#: ../../source/developer-docs/i18n.rst:294
+#: ../../source/developer-docs/i18n.rst:305
 msgid ""
 "to generate the updated .po file and make it available to translators. When "
 "the translated file is returned, convert the .po file to a binary .mo file "
@@ -532,24 +528,24 @@ msgid ""
 msgstr ""
 
 # d77b66e990ad47dc983527c8f65af5d9
-#: ../../source/developer-docs/i18n.rst:300
+#: ../../source/developer-docs/i18n.rst:311
 msgid "Sphinx Translation"
 msgstr ""
 
-# 5dcf247354ca4d3ba2793ab15660daf8
-#: ../../source/developer-docs/i18n.rst:302
+# 79e8985a0bab423f98204fccd548150d
+#: ../../source/developer-docs/i18n.rst:313
 msgid ""
 "Generic documentation on how to translate sphinx documentation is available "
-"`here <http://sphinx.pocoo.org/latest/intl.html>`-."
+"`here <http://sphinx.pocoo.org/latest/intl.html>`_."
 msgstr ""
 
 # b299b62ad4924de69bec5d058f946b96
-#: ../../source/developer-docs/i18n.rst:305
+#: ../../source/developer-docs/i18n.rst:316
 msgid "Initial notes on the process::"
 msgstr ""
 
 # 2ef5c46a3c794c1baa308fcecfe59ccb
-#: ../../source/developer-docs/i18n.rst:310
+#: ../../source/developer-docs/i18n.rst:321
 msgid ""
 "Which will create pot files which can be found under build/locale. Note that "
 "this make target needs to be tweaked so that it builds a unique directory "
@@ -557,63 +553,43 @@ msgid ""
 msgstr ""
 
 # e70eeafeaf9743eaa938a1c1d14195af
-#: ../../source/developer-docs/i18n.rst:315
+#: ../../source/developer-docs/i18n.rst:326
 msgid "Transifex"
 msgstr ""
 
-# cb3e074c553d4fb9b6a149dbe9c401d2
-#: ../../source/developer-docs/i18n.rst:317
+# 3455d6a493fc46e29d12a0f8d79cacf7
+#: ../../source/developer-docs/i18n.rst:328
 msgid ""
-"[3:16:23 PM] Tim Sutton: scripts/pre_translate.sh [3:16:40 PM] Tim Sutton: "
-"git commit -m \"Regenerated translation po files\" -a [3:17:13 PM] Tim "
-"Sutton: scripts/create-transifex-resources.sh [3:17:22 PM] Tim Sutton: and "
-"then wait quite a long time [3:17:30 PM] Tim Sutton: the script basically "
-"does this: [3:17:50 PM] Tim Sutton: - makes sure each po source file is "
-"registered as a transifex resource [3:18:16 PM] Tim Sutton: - adds a "
-"translation source for each locale (determined by subdirs of i18n dir) "
-"[3:18:29 PM] Tim Sutton:   for each resource [3:18:47 PM] Tim Sutton: - "
-"pushes the resources and their translation files to transifex [3:18:52 PM] "
-"Tim Sutton: eof [3:19:17 PM] Tim Sutton: when you want to collect any "
-"translations from transifex, it is the reverse process so you do: [3:19:25 "
-"PM] Tim Sutton: tx pull [3:19:32 PM] Tim Sutton: scripts/post_translate.sh "
-"[3:20:01 PM] Tim Sutton: git commit -m \"Updated translations from transifex "
-"community edited translation files\" -a [3:20:07 PM] Tim Sutton: eof "
-"[3:20:25 PM] Tim Sutton: that will basically ensure that any translations "
-"done on transifex get put into git [3:20:55 PM] Tim Sutton: note that in "
-"scripts/create-transifex-resources.sh there is a VERSION variable that must "
-"be configured for each QGIS release [3:21:07 PM] Tim Sutton: in the form 1-8 "
-"(. char is not allowed) [3:21:28 PM] Tim Sutton: so that is the theoretical "
-"procedure [3:21:46 PM] Tim Sutton: you can also push a po file individually "
-"using the command line client like this: [3:22:07 PM] Tim Sutton: tx push -s "
-"-t -l de -r qgis-documentation.v1-8-docs-qgis-gui [3:22:54 PM] Tim Sutton: "
-"that will push the source (-s) and translation file (-t) for language (-l) "
-"de for the resource (-r) qgis-documentation.v1-8-docs-qgis-gui up to the "
-"transifex web server [3:23:04 PM] Tim Sutton: however running that I see the "
-"same error you reported: [3:23:11 PM] Tim Sutton: Remote server replied: "
-"Error uploading file: There is a syntax error in your file [3:23:26 PM] Tim "
-"Sutton: so lets try that msgfrmt -c command and see if we can figure out why"
-msgstr ""
-
-# 6e5ccb6bb6434ca8a642614960a68be0
-#: ../../source/developer-docs/i18n.rst:343
-msgid ""
-"[3:23:53 PM] Otto Dassau: usually there is a \"fuzzy\" word in the header "
-"[3:24:26 PM] Otto Dassau: and somewhere in the text might be some etxra \"\" "
-"in the translation part that shouldn't be there. [3:24:53 PM] Tim Sutton: "
-"timlinux@waterfall:~/dev/cpp/QGIS-Documentation$ msgfmt -c i18n/en/"
-"LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po msgfmt: i18n/en/"
-"LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po: warning: PO file "
-"header fuzzy"
-msgstr ""
-
-# 248b7e6a019145a88694563201c49439
-#: ../../source/developer-docs/i18n.rst:347
-msgid "warning: older versions of msgfmt will give an error on this"
-msgstr ""
-
-# d627a7a68c2042328b5634283d928fd6
-#: ../../source/developer-docs/i18n.rst:348
-msgid ""
-"[3:25:10 PM] Tim Sutton: ok so I dont have a good solution on how to deal "
-"with that [3:25:25 PM] Tim Sutton: does linguist also have the same issues"
+"Tim Sutton: scripts/pre_translate.sh Tim Sutton: git commit -m \"Regenerated "
+"translation po files\" -a Tim Sutton: scripts/create-transifex-resources.sh "
+"Tim Sutton: and then wait quite a long time Tim Sutton: the script basically "
+"does this: Tim Sutton: - makes sure each po source file is registered as a "
+"transifex resource Tim Sutton: - adds a translation source for each locale "
+"(determined by subdirs of i18n dir) Tim Sutton:   for each resource Tim "
+"Sutton: - pushes the resources and their translation files to transifex Tim "
+"Sutton: eof Tim Sutton: when you want to collect any translations from "
+"transifex, it is the reverse process so you do: Tim Sutton: tx pull Tim "
+"Sutton: scripts/post_translate.sh Tim Sutton: git commit -m \"Updated "
+"translations from transifex community edited translation files\" -a Tim "
+"Sutton: eof Tim Sutton: that will basically ensure that any translations "
+"done on transifex get put into git Tim Sutton: note that in scripts/create-"
+"transifex-resources.sh there is a VERSION variable that must be configured "
+"for each QGIS release Tim Sutton: in the form 1-8 (. char is not allowed) "
+"Tim Sutton: so that is the theoretical procedureTim Sutton: you can also "
+"push a po file individually using the command line client like this: Tim "
+"Sutton: tx push -s -t -l de -r qgis-documentation.v1-8-docs-qgis-gui Tim "
+"Sutton: that will push the source (-s) and translation file (-t) for "
+"language (-l) de for the resource (-r) qgis-documentation.v1-8-docs-qgis-gui "
+"up to the transifex web server Tim Sutton: however running that I see the "
+"same error you reported: Tim Sutton: Remote server replied: Error uploading "
+"file: There is a syntax error in your file Tim Sutton: so lets try that "
+"msgfrmt -c command and see if we can figure out why Otto Dassau: usually "
+"there is a \"fuzzy\" word in the header Otto Dassau: and somewhere in the "
+"text might be some etxra \"\" in the translation part that shouldn't be "
+"there. Tim Sutton: timlinux@waterfall:~/dev/cpp/QGIS-Documentation$ msgfmt -"
+"c i18n/en/LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po msgfmt: i18n/"
+"en/LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po: warning: PO file "
+"header fuzzy warning: older versions of msgfmt will give an error on this "
+"Tim Sutton: ok so I dont have a good solution on how to deal with that Tim "
+"Sutton: does linguist also have the same issues"
 msgstr ""

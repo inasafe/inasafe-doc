@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-12 17:10\n"
+"POT-Creation-Date: 2013-06-05 08:54\n"
 "PO-Revision-Date: 2013-03-07 09:24+0000\n"
 "Last-Translator: timlinux <tim@linfiniti.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
@@ -258,12 +258,12 @@ msgid ""
 "keywords file entry::"
 msgstr ""
 
-# c7852e67f7cb495fb2358db92568acc5
+# 06de031bb5a54576b6849e0e61c98cde
 #: ../../source/user-docs/keywords.rst:124
 msgid ""
 "In the above case there is a soft constraint to use a value for units of m, "
 "feet or wet/dry as defined by the table below because the subcategory is "
-"'flood' . The following are the allowed units which are dependent on the "
+"'flood'. The following are the allowed units which are dependent on the "
 "subcategory defined."
 msgstr ""
 
@@ -399,11 +399,11 @@ msgstr ""
 msgid "Assumptions"
 msgstr ""
 
-# d6af52a58a1045e8928085dcbe89e9e7
+# 9ce949a197a1407d8cdad96f7ad04685
 #: ../../source/user-docs/keywords.rst:189
 msgid ""
 "The following assumptions are made about keywords, which may or may not be "
-"programmatically enforced by the InaSAFE library and GUI:"
+"programmatically enforced by the |project_name| library and GUI:"
 msgstr ""
 
 # 4b439ffd6d424c27bb6a128d3c9e9b86
@@ -558,16 +558,11 @@ msgid ""
 "may use the keywords editor icon on the plugins toolbar as illustrated below."
 msgstr ""
 
-# 26d1f906e07b4203ae1667595e4a33ae
-#: ../../source/user-docs/keywords.rst:269
-msgid "..note:: If you have not selected a layer in the QGIS legend,"
-msgstr ""
-
-# 88e0d674303b4de6b5c01849459dd5dd
-#: ../../source/user-docs/keywords.rst:268
+# b993061fc1d6479db0e5c1c5c3305d11
+#: ../../source/user-docs/keywords.rst:267
 msgid ""
-"the keyword editor icon in the toolbar and menus will **be disabbled** and "
-"appear greyed out."
+"If you have not selected a layer in the QGIS legend, the keyword editor icon "
+"in the toolbar and menus will **be disabbled** and appear greyed out."
 msgstr ""
 
 # 0a07af78935943abbda80340169558ad
@@ -600,23 +595,24 @@ msgstr ""
 msgid "Keywords for remote and non-file based layers"
 msgstr ""
 
-# 7130dd681f174cd1b948b48c5e33990c
+# a0392550e358415ba3650c03b05f5397
 #: ../../source/user-docs/keywords.rst:287
 msgid ""
 "If you are using a PostgreSQL, WFS, Spatialite or other non-file based "
 "resources, you can still create keywords. In these circumstances the "
 "keywords will be written to a sqlite database - by default this database is "
-"stored as :file:`keywords.db` within the InaSAFE plugin directory root."
+"stored as :file:`keywords.db` within the |project_name| plugin directory "
+"root."
 msgstr ""
 
-# 8ece3640fa3849b4adfa1733400aca5d
+# 708e2ec4a6bf4d95a262efb7402a1fc7
 #: ../../source/user-docs/keywords.rst:292
 msgid ""
 "You may wish to use a different location for the :file:`keywords.db` "
-"keywords database - you can configure this by using the InaSAFE options "
-"dialog. The options dialog can be launched by clicking on the InaSAFE plugin "
-"toolbar's options icon (as shown below) or by doing :menuselection:`Plugins "
-"--> InaSAFE --> InaSAFE Options`."
+"keywords database - you can configure this by using the |project_name| "
+"options dialog. The options dialog can be launched by clicking on the |"
+"project_name| plugin toolbar's options icon (as shown below) or by doing :"
+"menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
 msgstr ""
 
 # f2d81bde8ac64c8b8d511f3caa63b3b5
@@ -627,10 +623,10 @@ msgid ""
 "as shown below."
 msgstr ""
 
-# 8dda0002c8b44ad59d564c34b5eb0ff9
+# 28f65aedf456403489213ada8b7e2e58
 #: ../../source/user-docs/keywords.rst:308
 msgid ""
-"(1) Support for remote and non-file based layers was added in InaSAFE "
+"(1) Support for remote and non-file based layers was added in |project_name| "
 "version 0.3. (2) The database can be opened using a sqlite editor such as "
 "sqliteman, but the data in the keywords table is not intended to be human "
 "readable or edited. The table columns consist of an MD5 hash based on the "
@@ -638,11 +634,11 @@ msgid ""
 "blob which contains the keywords as a pickled python dictionary."
 msgstr ""
 
-# 96b493b8bbd244f2a99936cecfd90206
+# 86ba75edbbe2476da2fe13a60b8bd9b2
 #: ../../source/user-docs/keywords.rst:316
 msgid ""
-"See the :doc:`options` document for more information about the InaSAFE "
-"options dialog."
+"See the :doc:`options` document for more information about the |"
+"project_name| options dialog."
 msgstr ""
 
 # 3a1fe201c74d478c84a238b48a852103
@@ -672,15 +668,15 @@ msgid ""
 "effectively use the same URI to load that layer e.g.::"
 msgstr ""
 
-# f0cd494c80a14706a2daacf7c0a602b5
+# 612ecdcb985b44019c48302de12d0c28
 #: ../../source/user-docs/keywords.rst:339
 msgid ""
 "For certain resources (e.g. ArcInfo coverages, Spatialite databases) where "
 "the keywords cache is also used, you should take care to use a common mount "
-"point or network share to access the data if you wish to successfull hit the "
-"cache with the layer's URI. For example you could have all users mount your "
-"data to the same place. Under Unix like operating systems this could look "
-"something like this::"
+"point or network share to access the data if you wish to successfully hit "
+"the cache with the layer's URI. For example you could have all users mount "
+"your data to the same place. Under Unix like operating systems this could "
+"look something like this::"
 msgstr ""
 
 # 5afb0ddd5716445689d26605df651395

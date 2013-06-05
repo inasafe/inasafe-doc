@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-04-12 17:10\n"
+"POT-Creation-Date: 2013-06-05 08:54\n"
 "PO-Revision-Date: 2013-03-06 11:00+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 # 225098ec4172424c9d74c43bb9e6f4a8
-#: ../../source/developer-docs/faq.rst:6
+#: ../../source/developer-docs/faq.rst:7
 msgid "Frequently Asked Questions"
 msgstr ""
 
@@ -34,11 +34,6 @@ msgid ""
 "The |project_name| documentation files are written using the RST format "
 "(`quickreference guide <http://docutils.sourceforge.net/docs/user/rst/"
 "quickref.html>`_) and stored with the source code in github::"
-msgstr ""
-
-# 1516d02429274c0dab4529e4aa16fd15
-#: ../../source/developer-docs/faq.rst:35
-msgid "The RST files are used for two products:"
 msgstr ""
 
 # db43b84d0d3240a88236ea31e1cdb0b2
@@ -75,29 +70,29 @@ msgid ""
 msgstr ""
 
 # de5d377881ad4c6eb8a5e542002d6a90
-#: ../../source/developer-docs/faq.rst:38
+#: ../../source/developer-docs/faq.rst:37
 msgid "How do I replace a string across multiple files"
 msgstr ""
 
 # a93b1a851c094c65b37e3d9fd54a5c7e
-#: ../../source/developer-docs/faq.rst:40
+#: ../../source/developer-docs/faq.rst:39
 msgid ""
 "To replace string layer_type, say, with layertype across all python files in "
 "project, do::"
 msgstr ""
 
 # 71cccaf4899246c8be425de86457ef42
-#: ../../source/developer-docs/faq.rst:45
+#: ../../source/developer-docs/faq.rst:44
 msgid "Alternative you can install the 'rpl' command line tool::"
 msgstr ""
 
 # 01f9614b565f4712a4851124eace9f4a
-#: ../../source/developer-docs/faq.rst:49
+#: ../../source/developer-docs/faq.rst:48
 msgid "Using rpl is much simpler, just do::"
 msgstr ""
 
 # 6ca9497fb5024058ae2101be3f4b9972
-#: ../../source/developer-docs/faq.rst:54
+#: ../../source/developer-docs/faq.rst:53
 msgid ""
 "For details on the find command see `this article <http://rushi.wordpress."
 "com/2008/08/05/find-replace-across-multiple-files-in-linux/>`_."
@@ -116,93 +111,77 @@ msgid ""
 msgstr ""
 
 # 0aed83a435e3423b9b9d6e7347bf907b
-#: ../../source/developer-docs/faq.rst:66
+#: ../../source/developer-docs/faq.rst:67
 msgid ""
 "'%H' being the format tag for the SHA1. The __revision__ is **not** updated "
 "with each commit. Rather is is registered with git for replacement when "
 "using git-archive by doing this::"
 msgstr ""
 
-# 6a0424514d1040fea6cfe944f0ba234e
-#: ../../source/developer-docs/faq.rst:73
+# 1b1b1c4c4617476290b70ae8e7bb5f43
+#: ../../source/developer-docs/faq.rst:74
 msgid ""
 "The above only needs to be done once and then all python files with format "
 "substitutions will be replaced when running git-archive. The actual "
-"substition takes place at the time that a git archive is generated (git "
+"substitution takes place at the time that a git archive is generated (git "
 "archive creates a copy of the repo with all repository metadata stripped "
-"out). For example::"
+"out) . For example::"
 msgstr ""
 
 # 71bfc9f062e7439d8372336118fac9d4
-#: ../../source/developer-docs/faq.rst:80
+#: ../../source/developer-docs/faq.rst:82
 msgid "You can verify SHA1 replacement has been made by doing::"
 msgstr ""
 
 # 93823ff399294a98a23cba5f71c0c7ae
-#: ../../source/developer-docs/faq.rst:85
+#: ../../source/developer-docs/faq.rst:87
 msgid ""
 "The deployment of version tagged files is automated by using the :file:"
 "`scripts\\release.sh` script."
 msgstr ""
 
 # d15de8f5de85499f9bdcf3646991df99
-#: ../../source/developer-docs/faq.rst:90
+#: ../../source/developer-docs/faq.rst:91
 msgid "How do you profile code?"
 msgstr ""
 
-# 0b02d3c079644b12aea8cabb0890ff30
-#: ../../source/developer-docs/faq.rst:92
-msgid ""
-"sudo apt-get install python-profiler python -m cProfile -s time safe/common/"
-"test_polygon.py"
-msgstr ""
-
-# 201f3cf640f04b62b63886d6f4f1d35a
-#: ../../source/developer-docs/faq.rst:95
-msgid "and"
-msgstr ""
-
-# 7e1f1801e6c1446598e033b8cf4ecb93
+# 990180a895bd4998886126b7524f91bf
 #: ../../source/developer-docs/faq.rst:97
-msgid ""
-"sudo easy_install pycallgraph sudo apt-get install graphviz pycallgraph safe/"
-"common/test_polygon.py"
+msgid "and ::"
 msgstr ""
 
 # 6a310ecf34fe4247b1dbf55028cb5a93
-#: ../../source/developer-docs/faq.rst:103
+#: ../../source/developer-docs/faq.rst:104
 msgid ""
 "See also http://stackoverflow.com/questions/582336/how-can-you-profile-a-"
 "python-script"
 msgstr ""
 
-# 787f9afbbc894de8848de204faa9a4da
-#: ../../source/developer-docs/faq.rst:107
-msgid ""
-"Why do I got 99999999 (or another big number) instead of NaN when I saved "
-"vector files?"
+# e132a3fcef4a4a2f91412d7f003502fb
+#: ../../source/developer-docs/faq.rst:108
+msgid "Why do I got 99999999 instead of NaN when I saved vector files?"
 msgstr ""
 
-# 083522a91f3440dcaa3d25bdfd1c1c79
-#: ../../source/developer-docs/faq.rst:109
+# 2d6d5622cbe547f19e937576865ab46a
+#: ../../source/developer-docs/faq.rst:110
 msgid ""
-"InaSAFE needs to convert NaN to 99999999 or more specifically 8 digits of 9 "
-"because NaN is not intepreted correclty on Windows. You can read more "
-"information about it on http://trac.osgeo.org/gdal/ticket/4799 or in Github "
-"issue `#269 <https://github.com/AIFDR/inasafe/issues/269>`_."
+"|project_name| needs to convert NaN to 99999999 or more specifically 8 "
+"digits of 9 because NaN is not intepreted correclty on Windows. You can read "
+"more information about it on http://trac.osgeo.org/gdal/ticket/4799 or in "
+"Github issue `#269 <https://github.com/AIFDR/inasafe/issues/269>`_."
 msgstr ""
 
-# 78b7d498bf7f47acb9c2ba855eafeda5
-#: ../../source/developer-docs/faq.rst:114
+# eeeca1f4721c4cada45e2ee65d9295a1
+#: ../../source/developer-docs/faq.rst:115
 msgid ""
-"But don't worry, when InaSAFE read vector file, it will convert the 1e+24 "
-"back to NaN. So, any computation inside InaSAFE will treat NaN as NaN in "
-"numpy."
+"But don't worry, when |project_name| read vector file, it will convert the 1e"
+"+24 back to NaN. So, any computation inside |project_name| will treat NaN as "
+"NaN in numpy."
 msgstr ""
 
-# 48c18c8835ed4c40a4c1386a7b3e7904
-#: ../../source/developer-docs/faq.rst:117
+# 7cd30c3ec9b847aab12dc3b7e1bc80a1
+#: ../../source/developer-docs/faq.rst:119
 msgid ""
 "You'll need to convert the 1e+24 to NaN value manually if you want to use it "
-"without InaSAFE."
+"without |project_name|."
 msgstr ""
