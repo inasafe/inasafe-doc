@@ -323,31 +323,25 @@ Transifex
 
 Things you need to do once per Client Computer:
 
-* Transifex account on www.transifex.org
-* sudo pip install transifex-client
-* go to /tmp and write tx init to create your .transifexrc file
-* go back to inasafe-doc
+* Create a Transifex account on http://www.transifex.org
+* :command:`sudo pip install transifex-client`
+* go to :file:`/tmp` and write :command:`tx init` to create your
+  :file:`.transifexrc` file
+* go back to your :file:`inasafe-doc` folder
 
 To generate the .po files which are the base for translations you have to use
-
-:command:`scripts/pre_translate.sh`
-
+:command:`scripts/pre_translate.sh`.
 That will read the current strings, filter out the strings that can be
 translated and create the .po files.
 The command:
-
 :command:`git commit -m "Regenerated translation po files" -a`
-
 will commit that newly created .po files.
-
 Now we have to create the resources for transifex for which there is another
 script:
-
 Use
-
 :command:`scripts/create-transifex-resources.sh`
-
-and then wait quite a long time until the creation is finished.
+and then wait quite a long time until the creation is finished. The script
+itself does the necessary tx push to push updates to transifex.
 
 This script basically does this:
 * makes sure each po source file is registered as a transifex resource
@@ -368,20 +362,32 @@ into git.
 
 .. note:: In :command:`scripts/create-transifex-resources.sh` there is a
    VERSION variable that must be configured for each QGIS release in the form
-    1-8 (. char is not allowed)
+   1-8 (. char is not allowed)
 
 you can also push a po file individually using the command line client like
 this:
+
 :command:`tx push -s -t -l de -r qgis-documentation.v1-8-docs-qgis-gui`
+
 that will push the source (-s) and translation file (-t) for language (-l) de
 for the resource (-r) qgis-documentation.v1-8-docs-qgis-gui up to the
-transifex web server
-Tim Sutton: however running that I see the same error you reported:
-Tim Sutton: Remote server replied: Error uploading file: There is a syntax error in your file
-Tim Sutton: so lets try that msgfrmt -c command and see if we can figure out why
-Otto Dassau: usually there is a "fuzzy" word in the header
-Otto Dassau: and somewhere in the text might be some etxra "" in the translation part that shouldn't be there.
-timlinux@waterfall:~/dev/cpp/QGIS-Documentation$ msgfmt -c i18n/en/LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po
-msgfmt: i18n/en/LC_MESSAGES/docs/user_manual/introduction/qgis_gui.po: warning: PO file header fuzzy warning: older versions of msgfmt will give an error on this
-Tim Sutton: ok so I dont have a good solution on how to deal with that
-Tim Sutton: does linguist also have the same issues
+transifex web server.
+
+Creating Documentation locally
+..............................
+
+To be up to date with transifex and local translations and to be able to look
+at your newly created Documentation with a browser locally on your filesystem
+you should basically follow this workflow:
+
+Inside the inasafe-doc directory do
+::
+
+  tx pull           (for pulling new translations)
+  git commit        to update the local translations with that from transifex
+  git push          (not necessary to push it up to the repository esp. if
+                     you do not have write access to master)
+  ./scripts/post-translate.sh (actually creates the documentation in the
+                              output folder under docs where you should than
+                              find a html and a pdf folder.
+
