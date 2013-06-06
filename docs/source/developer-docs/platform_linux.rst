@@ -9,8 +9,14 @@ Development under Gnu/Linux
 Quick Installation Guide - Linux (Debian based)
 -----------------------------------------------
 
-These instructions are for setting up a development version on a Debian based
-linux system such as Ubuntu or Mint.
+These instructions are for setting up a development environment on a
+Debian based linux system such as Ubuntu or Mint.
+
+There are actually three ways of setting up a development environment for
+|project_name|:
+
+1. Setting up the bash-script way
+.................................
 
 1. Goto the area where you do development, e.g cd ~/sandbox
 2. wget bit.ly/inasafe-install
@@ -32,8 +38,22 @@ To run the plugin start QGIS and enable it from the
 If this doesn't work see section towards the end of this document about
 dependencies and try to do a manual install.
 
-Manual Installation Guide - Linux (Debian based)
-------------------------------------------------
+2. Setting up the fabric/fabgis way
+...................................
+
+There is an much easier and more advanced way to control the setup of the
+environment. If is done with `Fabric <http://fabfile.org>`_.
+
+Obviously you need to have fabric installed. Fabric itself is Python based
+and you need to install two more modules with python with pip.
+If you don't have pip installed you should install it too.
+
+sudo apt-get install python-pip
+pip install fabtools
+pip install fabgis
+
+3. Manual Installation Guide - Linux (Debian based)
+...................................................
 
 Dependencies
 ............

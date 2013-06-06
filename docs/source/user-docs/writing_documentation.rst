@@ -21,9 +21,7 @@ Common tags used in the Documentation:
 
 Here are some common useful tags::
 
-   |project_name|   is currently a substitution for InaSAFE and should be used
-                    where appropriate to make it possible to change the Project
-                    name at one place
+   |project_name|   is currently a substitution for the Project name (InaSAFE)
 
    =======
    Heading

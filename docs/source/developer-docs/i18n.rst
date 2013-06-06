@@ -373,21 +373,3 @@ that will push the source (-s) and translation file (-t) for language (-l) de
 for the resource (-r) qgis-documentation.v1-8-docs-qgis-gui up to the
 transifex web server.
 
-Creating Documentation locally
-..............................
-
-To be up to date with transifex and local translations and to be able to look
-at your newly created Documentation with a browser locally on your filesystem
-you should basically follow this workflow:
-
-Inside the inasafe-doc directory do
-::
-
-  tx pull           (for pulling new translations)
-  git commit        to update the local translations with that from transifex
-  git push          (not necessary to push it up to the repository esp. if
-                     you do not have write access to master)
-  ./scripts/post-translate.sh (actually creates the documentation in the
-                              output folder under docs where you should than
-                              find a html and a pdf folder.
-

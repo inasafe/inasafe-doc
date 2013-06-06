@@ -22,11 +22,36 @@ packages that are needed to build the documentation.
 
 UPDATE PACKAGE DEPENDENCIES
 
+pre_translate.sh
+git commit new translation files
+scripts/create-transifex-resources.sh
+tx pull
+post_translate.sh
+git commit
 
-Updating the website
+Building documentation locally
+..............................
+
+To be up to date with transifex and local translations and to be able to look
+at your newly created Documentation with a browser locally on your filesystem
+you should basically follow this workflow:
+
+Inside the inasafe-doc directory do
+::
+
+  tx pull           (for pulling new translations)
+  git commit        to update the local translations with that from transifex
+  git push          (not necessary to push it up to the repository esp. if
+                     you do not have write access to master)
+  ./scripts/post-translate.sh (actually creates the documentation in the
+                              output folder under docs where you should than
+                              find a html and a pdf folder.
+
+Updating the webpage
 --------------------
 
-Deployment of the site requires the following steps:
+As the webpage is also written in ReSTructured text and managed within github
+the deployment of the webpage requires the following steps:
 
 * Update the documentation as needed
 * Commit/push to master/your master
