@@ -106,6 +106,16 @@ TODO: remove this, or make this obsolete ?? #}
                         </li>
                         <li><a href="https://github.com/AIFDR/inasafe">Get the code</a>
                         </li>
+                        <li><div id="searchbox" style="none">
+                                <form class="navbar-form pull-right" id="search" action="search.html" method="get">
+                                <input type="text" name="q" placeholder="Search"/>
+                                <input type="submit" value="Go" />
+                                <input type="hidden" name="check_keywords" value="yes" />
+                                <input type="hidden" name="area" value="default" />
+                                </form>
+                            </div>
+                        <script type="text/javascript">$('#searchbox').show(0);</script>
+                        </li>
                     </ul>
                 </div>{# end of nav-collapse #}
             </div>
@@ -117,7 +127,7 @@ TODO: remove this, or make this obsolete ?? #}
                 {# These are the prev | next | index links to the right #}
                 {% for rellink in rellinks %}
                 <li class="right"
-                {% if loop.first %}style="margin-right: 10px"{% endif %}>
+                {% if loop.first %}style="margin-right: 10px"{% endif %} >
                 <a href="{{ pathto(rellink[0]) }}"
                    title="{{ rellink[1]|striptags }}"
                    style="z-index:{{ loop.counter }};"
@@ -157,7 +167,9 @@ TODO: remove this, or make this obsolete ?? #}
     {# Now our standard footer #}
     <div class="container">
         <div class="alert alert-info centered">
-            Contact ole.moller.nielsen@gmail.com for more information.
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
             Source code available on
             <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
             Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
