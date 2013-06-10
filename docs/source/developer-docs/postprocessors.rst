@@ -20,8 +20,9 @@ Creating postprocessors
 -----------------------
 
 Adding a new postprocessor is as simple as adding a new class called
-XxxxxxPostprocessor that inherits AbstractPostprocessor with one mandatory
-method (process), 2 optional ones and as many indicators as you need.
+XxxxxxPostprocessor that inherits AbstractPostprocessor with 2 mandatory
+methods (process, description), 2 optional ones and as many indicators as you
+need.
 
 the minimal class could look like this:
 ::
@@ -29,6 +30,9 @@ the minimal class could look like this:
     class MySuperPostprocessor(AbstractPostprocessor):
         def __init__(self):
             AbstractPostprocessor.__init__(self)
+
+        def description(self):
+            return 'mydescription'
 
         def setup(self, params):
             AbstractPostprocessor.setup(self, None)
