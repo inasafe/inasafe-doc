@@ -88,15 +88,15 @@ def get_webdir(branch):
 
 
 @task
-def build_doc(branch='master'):
+def build_docs(branch='master'):
     """Create a pdf and html doc tree and publish them online.
     Args:
         branch: str - a string representing the name of the branch to build
             from. Defaults to 'master'.
     To run e.g.::
-        fab -H 188.40.123.80:8697 build_doc
+        fab -H 188.40.123.80:8697 build_docs
         or to package up a specific branch (in this case minimum_needs)
-        fab -H 88.198.36.154:8697 build_doc:version-1_1
+        fab -H 88.198.36.154:8697 build_docs:version-1_1
     .. note:: Using the branch option will not work for branches older than 1.1
     """
     _setup_env()
@@ -122,10 +122,10 @@ def build_doc(branch='master'):
 
 
 @task
-def deploy_doc_webpage(branch='master'):
+def setup_docs_webpage(branch='master'):
     """Initialise an InaSAFE docs site where we host docs and pdf."""
     _setup_env()
-    build_doc()
+    build_docs()
 
     fabtools.require.deb.package('apache2')
     code_path = env.code_path
@@ -198,7 +198,7 @@ def setup_jenkins(use_upstream_repo=True, branch='master'):
     """
     _setup_env()
 
-    # We need some additional tools to run jenkins checks
+    # We need some additional tools to run jenkins checks for documentation
     fabtools.require.deb.package('xvfb')
     fabtools.require.deb.package('pep8')
     fabtools.require.deb.package('pylint')
