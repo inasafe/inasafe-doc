@@ -144,8 +144,8 @@ Skills: Software engineering, Python, QGIS, GDAL, |project_name|
 
 FTE: 6 months
 
-Resourcing: World Bank-|GFDRR|, $105k contract to linfiniti,
-$5k contract to Software Engineer
+Resourcing: World Bank-|GFDRR|, contract to linfiniti,
+contract to Software Engineer
 
 Tickets: https://github.com/AIFDR/inasafe/issues?milestone=16
 
@@ -162,8 +162,8 @@ Skills: Communication, |project_name|, Restructured Text
 
 FTE: 2 months
 
-Resourcing: |AIFDR|, |AusAID|, $5k contract to linfiniti, $5k contract to Software
-Engineer, $10k contract to technical writer, Edi Dewanto
+Resourcing: |AIFDR|, |AusAID|, contract to linfiniti, contract to Software
+Engineer, contract to technical writer, Edi Dewanto
 
 Tickets: https://github.com/AIFDR/inasafe/issues?milestone=11
 
@@ -179,8 +179,8 @@ Skills: Communication, DRR, |project_name|
 
 FTE: 6 months
 
-Resourcing: |AIFDR|, |AusAID|, $5k contract to software engineer,
-$5k contract to linfiniti
+Resourcing: |AIFDR|, |AusAID|, contract to software engineer, 
+contract to linfiniti
 
 Tickets:
 
