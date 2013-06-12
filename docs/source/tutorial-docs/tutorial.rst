@@ -594,6 +594,6 @@ Let us know how you enjoyed the training and what you think about the tool.
 
 THE |project_name| TEAM
 
-* Indonesian Disaster Management Agency (BNPB)
-* AusAID - Australia-Indonesia Facility for Disaster Reduction
+* Indonesian Disaster Management Agency (|BNPB|)
+* |AusAID| - Australia-Indonesia Facility for Disaster Reduction
 * World Bank - Global Facility for Disaster Reduction and Recovery

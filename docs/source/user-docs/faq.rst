@@ -31,9 +31,7 @@ How is the project funded?
 --------------------------
 
 The project is being developed 'for the good of humanity' and has been
-jointly developed by `BNPB <http://www.bnpb.go.id/>`_,
-`AusAid <http://www.ausaid.gov.au/>`_ &
-`the World Bank <http://www.worldbank.org/>`_.
+jointly developed by |BNPB|, AusAid & the `World Bank <http://www.worldbank.org/>`_.
 
 Could we request a new feature?
 -------------------------------

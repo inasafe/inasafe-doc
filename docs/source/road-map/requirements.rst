@@ -13,9 +13,9 @@ plan the focus will be on:
 **Flood impact on**
 
 * Buildings, irrespective of their construction and based on the levels
-  defined in BNPB’s guidelines (Perka 2) where available e.g. < 1m, 1-3m, >3m
+  defined in |BNPB|’s guidelines (Perka 2) where available e.g. < 1m, 1-3m, >3m
 * Population (counts based on a threshold to be decided) and the associated
-  needs for clean water, rice, sanitary facilities etc as defined in the BNPB
+  needs for clean water, rice, sanitary facilities etc as defined in the |BNPB|
   standards (Perka 7).
 
 **Tsunami impact on**
@@ -33,7 +33,7 @@ plan the focus will be on:
 **Real-time Earthquake Impact** (see also functionality listed below)
 
 * Replace existing real time earthquake impact prototype currently running at
-  BNPB with new version, based on |project_name| and using the earthquake
+  |BNPB| with new version, based on |project_name| and using the earthquake
   impact function specified above.
 
 **Categorised Hazard**

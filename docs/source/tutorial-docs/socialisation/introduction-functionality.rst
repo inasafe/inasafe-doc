@@ -91,7 +91,7 @@ Structures
 .. image:: /static/socialisation/openstreetmap.png
    :align: center
 
-AusAID has been working with the Humanitarian OpenStreetMap Team over the
+|AusAID| has been working with the Humanitarian OpenStreetMap Team over the
 last 2 years in piloting and training OpenStreetMap in Indonesia.  The result
 so far is over 800,000 buildings have been mapped. The scenarios we will look
 at within this workshop are situated in Jakarta, Merapi (Central Java and
@@ -100,8 +100,8 @@ Flores. Each one of these areas has a different OpenStreetMap data
 collection methodology. Below will explain the methodologies used in Jakarta
 and Padang.
 
-:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and BNPB (Nationals
-    Disaster Managers) with assistance from |AIFDR|, AusAID, the World Bank, 
+:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (Nationals
+    Disaster Managers) with assistance from |AIFDR|, |AusAID|, the World Bank, 
     UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held
     workshops in each of Jakartas 6 Districts in order to help Village Heads
     map their community boundaries and major infrastructure. Over 500
@@ -111,7 +111,7 @@ and Padang.
 
 :Padang: Post Hati's earthquake in 2010, there was a huge effort to map Hati
     through OSM, coordinating this effort was very hard,
-    and hence AusAID subsequently funded the creation of OSM tasking Server.
+    and hence |AusAID| subsequently funded the creation of OSM tasking Server.
     The OSM tasking server is a web-base tool where you are able to select
     your own square to map.  The first pilot of the web-tool was in Padang,
     the specified area is now 100% finished with over 95,
@@ -188,7 +188,7 @@ Earthquake
 
 :Name:  Shakemap of Pandang 2009 earthquake
 :InaSAFE: an earthquake in Padang like 2009
-:Source: Badan Geologi and |AIFDR|, AusAID
+:Source: Badan Geologi and |AIFDR|, |AusAID|
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Padang
 :About: A shakemap is a representation of ground shaking produced by an
@@ -208,11 +208,11 @@ Tsunami
 
 :Name:  Maumere Tsunami
 :InaSAFE:  A tsunami in maumere (Mw 8.1)
-:Source: |AIFDR|, AusAID and Badan Geologi
+:Source: |AIFDR|, |AusAID| and Badan Geologi
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Maumere, Flores
 :About: In September 2011 the Indonesian government held a national exercise
-    in Maumere, Flores. |AIFDR| and AusAID assisted Badan Geology in developing a
+    in Maumere, Flores. |AIFDR| and |AusAID| assisted Badan Geology in developing a
     tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was
     modelled using the an open source software called ANUGA and elevation
     from NEXTMap. The water depth is the maximum depth occurring across the

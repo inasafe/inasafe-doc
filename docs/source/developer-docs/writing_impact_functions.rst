@@ -310,7 +310,7 @@ The impact function itself is embodied in a Python class with a doc string:
     class FloodPopulationEvacuationFunction(FunctionProvider):
         """Impact function for flood evacuation (tutorial)
 
-        :author AIFDR, AusAID
+        :author AIFDR, |AusAID|
         :rating 4
         :param requires category=='hazard' and \
                         subcategory in ['flood', 'tsunami'] and \
@@ -333,7 +333,7 @@ The impact function itself is embodied in a Python class with a doc string:
                                 'exceeding a threshold (default 1m) is '
                                 'calculated and returned as a raster layer.'
                                 'In addition the total number and the required '
-                                'needs in terms of the BNPB (Perka 7) ')
+                                'needs in terms of the |BNPB| (Perka 7) ')
 
         hazard_input = ('A hazard raster layer where each cell '
                         'represents flood depth (in meters).')
@@ -478,7 +478,7 @@ We can now use this estimate to calculate the needs required. In this case
 it is based on an Indonesian standard:
 ::
 
-        # Calculate estimated needs based on BNPB Perka 7/2008 minimum bantuan
+        # Calculate estimated needs based on |BNPB| Perka 7/2008 minimum bantuan
 
         # 400g per person per day
         rice = int(evacuated * 2.8)
@@ -525,7 +525,7 @@ shown on the screen. They can be identical but are usually slightly different
                            'Total population: %s' % total,
                            'People need evacuation if flood levels '
                            'exceed %(eps).1f m' % {'eps': threshold},
-                           'Minimum needs are defined in BNPB '
+                           'Minimum needs are defined in |BNPB| '
                            'regulation 7/2008'])
         impact_summary = Table(table_body).toNewlineFreeString()
 

@@ -148,7 +148,7 @@ Changelog for version 0.2.1:
 * Removed generated file from polygon test
 * Removed the -dev designation from branch releases
 * Fix indent error causing noise to show in qgis plugin manager
-* Fixed typo - BNPD to BNPB
+* Fixed typo - BNPD to |BNPB|
 * Fixed bug where close button does not dispose of the help dialog
 * Fixed an issue that prevented the use of earthquake functions when using
   keywords with lowercase mmi. Closes #142

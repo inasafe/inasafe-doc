@@ -99,7 +99,14 @@ rst_prolog = """
 
 rst_epilog = """
 .. |project_name| replace:: InaSAFE
-.. |AIFDR| replace:: AIFDR
+.. |AIFDR| replace:: AIFDR_
+.. _AIFDR: http://www.aifdr.org/
+.. |BNPB| replace:: BNPB_
+.. _BNPB: http://www.bnpb.go.id/
+.. |AusAID| replace:: AusAID_
+.. _AusAID: http://www.ausaid.gov.au/
+.. |GFDRR| replace:: GFDRR_
+.. _GFDRR: http://www.gfdrr.org/
 """
 
 

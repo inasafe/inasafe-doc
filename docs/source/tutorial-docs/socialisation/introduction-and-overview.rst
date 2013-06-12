@@ -64,7 +64,7 @@ weeks of its preliminary launch.
 |project_name| (Version 1.0) was officially launched at the 5th Asian
 Ministerial Conference for Disaster Risk Reduction in Yogyakarta,
 23–25 October 2012, by Mr Dodi Ruswandi, the Deputy for disaster reduction
-and preparedness from Indonesia’s Disaster Management Agency (BNPB),
+and preparedness from Indonesia’s Disaster Management Agency (|BNPB|),
 Mr Abhas Jha,  Disaster risk management coordinator for East Asia and the
 Pacific from the World Bank, and Dr Matt Hayne co-director of the Australian
 Government funded Australia-Indonesia Facility for Disaster Reduction.

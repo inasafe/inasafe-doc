@@ -8,7 +8,7 @@ Overview
 Flood Evacuation Function Vector Hazard
 
 **Author**: 
-|AIFDR|, AusAID
+|AIFDR|, |AusAID|
 
 **Rating**: 
 4
@@ -34,14 +34,14 @@ Vector layer contains population affected and the minimumneeds based on evacuati
 Details
 -------
 
-The population subject to inundation is determined whether inan area which affected or not. You can also set an evacuationpercentage to calculate how many percent of the total populationaffected to be evacuated. This number will be used to estimateneeds based on BNPB Perka 7/2008 minimum bantuan.
+The population subject to inundation is determined whether inan area which affected or not. You can also set an evacuationpercentage to calculate how many percent of the total populationaffected to be evacuated. This number will be used to estimateneeds based on |BNPB| Perka 7/2008 minimum bantuan.
 
 Docstring
 ----------
 
 Impact function for vector flood evacuation
 
-    :author |AIFDR|, AusAID
+    :author |AIFDR|, |AusAID|
     :rating 4
     :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami'] and                     layertype=='vector'
 

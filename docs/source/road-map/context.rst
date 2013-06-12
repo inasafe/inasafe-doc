@@ -7,10 +7,10 @@ along major tectonic plate boundaries. It is along these boundaries that the
 biggest volcanoes and earthquakes happen, including those that cause tsunamis
 such as the one that devastated many countries in Asia in December 2004.
 
-BNPB has identified a priority need to improve Indonesia’s methodology for
+|BNPB| has identified a priority need to improve Indonesia’s methodology for
 contingency planning with an emphasis on the use of realistic disaster
 scenarios as the starting point for this new, comprehensive process.
-BNPB has been working with the Australia-Indonesia Facility for Disaster
+|BNPB| has been working with the Australia-Indonesia Facility for Disaster
 Reduction (|AIFDR|) and the World Bank on a methodology and associated
 software tools for developing realistic disaster scenarios for contingency
 planning.

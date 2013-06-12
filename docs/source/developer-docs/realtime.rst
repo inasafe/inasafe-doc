@@ -11,16 +11,16 @@ though in future we envisage additional support for other disaster types being
 facilitated.
 
 .. note:: This work was funded by the Australia-Indonesia Facility for Disaster
-   Reduction, Geoscience Australia and the World Bank-GFDRR. We thank you for
+   Reduction, Geoscience Australia and the World Bank-|GFDRR|. We thank you for
    your support.
 
 Historical Note
 ---------------
 
 The original prototype of the realtime system was implemented by Ole Nielsen
-(AusAID). The subsequent port of the realtime system to |project_name| was
+(|AusAID|). The subsequent port of the realtime system to |project_name| was
 implemented by Tim Sutton (Linfiniti Consulting CC., funded by The World Bank
-,|AIFDR| and AusAID).
+,|AIFDR| and |AusAID|).
 
 Supported Platforms
 -------------------
@@ -345,7 +345,7 @@ your own template. More on that below in the next section.
   levels of ground shaking. The estimate is based on ground
   shaking data from BMKG, population density data from asiapop
   .org, place information from geonames.org and software developed
-  by BNPB. Limitations in the estimates of ground shaking,
+  by |BNPB|. Limitations in the estimates of ground shaking,
   population  data and place names datasets may result in
   significant misrepresentation of the on-the-ground situation in
   the figures shown here. Consequently decisions should not be
