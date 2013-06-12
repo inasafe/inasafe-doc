@@ -1,3 +1,5 @@
+.. _getting_involved:
+
 ================
 Getting involved
 ================
@@ -16,16 +18,8 @@ familiarise themselves with the content. The website is available at:
 
 http://inasafe.org
 
-
-**Join our mailing list!** If you would like to discuss methodologies, using
-the software or any issues you encounter, you can join our google group (you
-do not need a google account to use this forum) by sending an email to:
-
-inasafe-users+subscribe@googlegroups.com
-
-You can unsubscribe again at any time by simply sending an email to:
-
-inasafe-users+unsubscribe@googlegroups.com
+If you need help in solving some problems with |project_name| you should take
+a look at :ref:`getting_help`
 
 **Use our issue tracker!** We maintain an issue tracker here:
 

@@ -179,7 +179,7 @@ Skills: Communication, DRR, |project_name|
 
 FTE: 6 months
 
-Resourcing: |AIFDR|, |AusAID|, contract to software engineer, 
+Resourcing: |AIFDR|, |AusAID|, contract to software engineer,
 contract to linfiniti
 
 Tickets:

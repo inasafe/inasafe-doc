@@ -10,6 +10,7 @@ system.
 
    install
    screenshots
+   getting_help
    dock
    functionality
    keywords
