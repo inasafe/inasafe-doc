@@ -310,7 +310,7 @@ The impact function itself is embodied in a Python class with a doc string:
     class FloodPopulationEvacuationFunction(FunctionProvider):
         """Impact function for flood evacuation (tutorial)
 
-        :author AIFDR-AusAID
+        :author AIFDR, AusAID
         :rating 4
         :param requires category=='hazard' and \
                         subcategory in ['flood', 'tsunami'] and \

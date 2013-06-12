@@ -99,6 +99,7 @@ rst_prolog = """
 
 rst_epilog = """
 .. |project_name| replace:: InaSAFE
+.. |AIFDR| replace:: AIFDR
 """
 
 

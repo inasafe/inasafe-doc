@@ -101,9 +101,8 @@ collection methodology. Below will explain the methodologies used in Jakarta
 and Padang.
 
 :Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and BNPB (Nationals
-    Disaster Managers) with assistance from AIFDR-AusAID (Australia-Indonesia
-    Facility for Disaster Reduction), the World Bank, UNOCHA,
-    Humanitarian OpenStreetMap Team and University of Indonesia held
+    Disaster Managers) with assistance from |AIFDR|, AusAID, the World Bank, 
+    UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held
     workshops in each of Jakartas 6 Districts in order to help Village Heads
     map their community boundaries and major infrastructure. Over 500
     representatives from Jakartas 267 Villages participated in these
@@ -189,7 +188,7 @@ Earthquake
 
 :Name:  Shakemap of Pandang 2009 earthquake
 :InaSAFE: an earthquake in Padang like 2009
-:Source: Badan Geologi and AIFDR-AusAID
+:Source: Badan Geologi and |AIFDR|, AusAID
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Padang
 :About: A shakemap is a representation of ground shaking produced by an
@@ -209,11 +208,11 @@ Tsunami
 
 :Name:  Maumere Tsunami
 :InaSAFE:  A tsunami in maumere (Mw 8.1)
-:Source: AIFDR-AusAID and Badan Geologi
+:Source: |AIFDR|, AusAID and Badan Geologi
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Maumere, Flores
 :About: In September 2011 the Indonesian government held a national exercise
-    in Maumere, Flores. AIFDR-AusAID assisted Badan Geology in developing a
+    in Maumere, Flores. |AIFDR| and AusAID assisted Badan Geology in developing a
     tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was
     modelled using the an open source software called ANUGA and elevation
     from NEXTMap. The water depth is the maximum depth occurring across the

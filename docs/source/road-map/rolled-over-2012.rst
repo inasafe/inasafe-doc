@@ -17,7 +17,7 @@ BPNB since August 2011. The replacement will address some shortcomings of the
 prototype to do with appearance of automatically generated map,
 extensibility and maintenance. The transition to |project_name| also allows
 for the inclusion of fatality estimates. The replacement was developed by
-Tim Sutton in Q3/Q4 of 2012 and is running at AIFDR-AusAID. Still
+Tim Sutton in Q3/Q4 of 2012 and is running at |AIFDR| and AusAID. Still
 outstanding is obtaining feedback from BNPB on the design and deployment at
 BNPB.
 
@@ -144,7 +144,7 @@ Skills: Software engineering, Python, QGIS, GDAL, |project_name|
 
 FTE: 6 months
 
-Resourcing: World Bank-GFDRR, $105k contract to Linfiniti,
+Resourcing: World Bank-GFDRR, $105k contract to linfiniti,
 $5k contract to Software Engineer
 
 Tickets: https://github.com/AIFDR/inasafe/issues?milestone=16
@@ -162,7 +162,7 @@ Skills: Communication, |project_name|, Restructured Text
 
 FTE: 2 months
 
-Resourcing: AIFDR-AusAID, $5k contract to Linfinity, $5k contract to Software
+Resourcing: |AIFDR|, AusAID, $5k contract to linfiniti, $5k contract to Software
 Engineer, $10k contract to technical writer, Edi Dewanto
 
 Tickets: https://github.com/AIFDR/inasafe/issues?milestone=11
@@ -179,8 +179,8 @@ Skills: Communication, DRR, |project_name|
 
 FTE: 6 months
 
-Resourcing: AIFDR-AusAID, $5k contract to software engineer,
-$5k contract to Linfiniti
+Resourcing: |AIFDR|, AusAID, $5k contract to software engineer,
+$5k contract to linfiniti
 
 Tickets:
 
@@ -196,6 +196,6 @@ Skills: Communication, DRR, |project_name|
 
 FTE: 1 months
 
-Resourcing: AIFDR-AusAID, BNPB
+Resourcing: |AIFDR|, AusAID, BNPB
 
 Tickets:
