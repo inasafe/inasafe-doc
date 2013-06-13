@@ -21,8 +21,6 @@ system.
    inasafe_projects
    data_types
    using-qgis
-   beginning_spatialdata_analysis
-   inter_spatialdata_analysis
    getting_involved
    writing_documentation
    faq
