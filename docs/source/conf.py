@@ -162,13 +162,13 @@ html_static_path = ['static']
 #html_sidebars = {}
 html_sidebars = {
     'index': ['inasafe-base.html'],
-    'contents': ['globaltoc.html', ],
-    'general/**': ['localtoc.html', ],
-    'tutorial-docs/**': ['localtoc.html', 'globaltoc.html'],
-    'user-docs/**': ['localtoc.html', 'searchbox.html'],
-    'developer-docs/**': ['localtoc.html', 'searchbox.html'],
-    'api-docs/**': ['localtoc.html', 'searchbox.html'],
-    'road-map/**': ['localtoc.html', 'searchbox.html']}
+    'contents': ['globaltoc.html'],
+    'general/**': ['globaltoc.html', 'searchbox.html'],
+    'tutorial-docs/**': ['globaltoc.html'],
+    'user-docs/**': ['globaltoc.html'],
+    'developer-docs/**': ['globaltoc.html'],
+    'api-docs/**': ['globaltoc.html'],
+    'road-map/**': ['globaltoc.html']}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
