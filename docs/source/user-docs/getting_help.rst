@@ -16,6 +16,9 @@ You can unsubscribe again at any time by simply sending an email to:
 
 inasafe-users+unsubscribe@googlegroups.com
 
+You can read the archive of asked Questions on the InaSAFE-users group page:
+https://groups.google.com/forum/?fromgroups#!forum/inasafe-users
+
 Localised help
 --------------
 
