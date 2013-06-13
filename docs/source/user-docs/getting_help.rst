@@ -4,6 +4,11 @@
 Getting help
 ============
 
+.. _google_group:
+
+|project_name| Google Group:
+----------------------------
+
 **Join our mailing list!** If you experience problems in using
 |project_name| or have suggestions on improving the software or you would
 just get in contact with other persons using |project_name| you can join our
@@ -16,7 +21,8 @@ You can unsubscribe again at any time by simply sending an email to:
 
 inasafe-users+unsubscribe@googlegroups.com
 
-You can read the archive of asked Questions on the InaSAFE-users group page:
+You can read and browse the archive of asked Questions on the
+|project_name|-users group page at:
 https://groups.google.com/forum/?fromgroups#!forum/inasafe-users
 
 Localised help
