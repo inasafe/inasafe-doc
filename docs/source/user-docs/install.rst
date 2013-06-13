@@ -1,4 +1,4 @@
-.. _install_howto:
+.. _install-howto:
 
 =========================
 Installing |project_name|

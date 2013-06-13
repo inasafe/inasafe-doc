@@ -1,6 +1,6 @@
-========================================
-Writing Documentation for |project_name|
-========================================
+=====================
+Writing Documentation
+=====================
 
 The documentation for |project_name| is written using ReSTructured text (.rst)
 and the Sphinx documentation builder. The best way to learn how to write .rst
@@ -44,10 +44,10 @@ Here are some common useful tags::
    :ref:`my-reference-label`    points to a reference which has to be
                                 implemented like:
 
-            ..  _my-reference-label:
-
-            Section to cross-reference
-            --------------------------
+   ..  _my-reference-label:     The anchor for the :ref: needs to be
+                                in front of a Section.
+   Section to cross-reference   Like it is here.
+   --------------------------
 
    :doc:`../user-docs/filename` referencing an internal file
 

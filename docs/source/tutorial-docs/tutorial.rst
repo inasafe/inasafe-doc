@@ -25,7 +25,7 @@ Prerequisites
 This training is designed for those with a basic or intermediate knowledge of
 GIS, who wants to integrate scientific-based risk impact scenario in their
 decision-making. Since the tool is a QGIS plugin, some knowledge of the QGIS
-environment will help, but not required.
+environment will help, but is not required.
 
 Goals
 .....

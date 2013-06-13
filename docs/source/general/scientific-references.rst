@@ -1,4 +1,4 @@
-.. _scientific-references:
+.. _scientific-reference:
 
 ====================
 Scientific-Reference

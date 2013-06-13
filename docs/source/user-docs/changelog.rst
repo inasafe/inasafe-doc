@@ -2,6 +2,11 @@
 Whats new?
 ==========
 
+.. _changelog:
+
+Changelog for version |release|
+-------------------------------
+
 Changelog for version 1.1.0
 ---------------------------
 

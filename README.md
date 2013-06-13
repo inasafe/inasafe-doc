@@ -23,8 +23,8 @@ github account and install the following tools:
 * dvi2png (from packagemanager: in Ubuntu it is in package 'dvi2png')
 
 
-Working on the english QGIS Documentation
-=========================================
+Working on the english Documentation
+====================================
 
 This section describes how to update/edit the english master documentation.
 
@@ -83,7 +83,7 @@ your forked repository::
 * git push
 
 In your github account you can now open a pull request to merge your changes
-from your forked to the official QGIS Documentation repository.
+from your forked to the official Documentation repository.
 
 Translating the english InaSAFE Documentation
 =============================================
@@ -108,8 +108,8 @@ pull request to the language maintainer's repository. Once the maintainer
 receives a pull request, he should check the changes, accept the pull request
 and merge the changes with the official inasafe-doc repository.
 
-If the maintainer needs to add a new language workflow
-------------------------------------------------------
+Workflow for adding a new language
+----------------------------------
 
 * add your locale code in the pre_translate.sh script in the line with 'LOCALE='
 * run 'scripts/pre_translate.sh'. There will be a new directory in the i18n

@@ -14,12 +14,12 @@ The Philippines adopts Indonesia’s open source disaster mitigation tool
 =======================================================================
 
 `The Department of Science and Technology <http://www.dost.gov.ph/>`_  revealed
-plans to adopt `InaSAFE <http://inasafe.org/>`_, a disaster mitigation
+plans to adopt |project_name|, a disaster mitigation
 technology from Indonesia, to its `Nationwide Operational Assessment of
 Hazard <http://noah.dost.gov.ph/>`_ (NOAH) project in a bid to improve
 disaster planning and preparedness in the country.
 
-`InaSAFE <http://inasafe.org/>`_, or Indonesia Scenario Assessment for
+|project_name|, or Indonesia Scenario Assessment for
 Emergency, is an open source software that produces realistic natural hazard
 impact scenarios to help decision makers in their disaster planning,
 preparedness and response activities.
@@ -32,7 +32,7 @@ affected and those that are likely to be affected, how many
 people will need to be evacuated and what roads will be closed among others.
 
 According to an official statement, NOAH will adopt Indonesia’s
-`InaSAFE <http://inasafe.org/>`_ because it has a lot in common with the
+|project_name| because it has a lot in common with the
 Philippines, especially in topography and natural hazards.
 
 Abigail Baca, disaster and risk management officer of the World Bank East
@@ -40,7 +40,7 @@ Asia and Pacific Region said that InaSAFE proved effective during the recent
 floods in Jakarta, Indonesia and it can be applied in the Philippines.
 
 Meanwhile, Dr. Alfredo Francisco Mahar Lagmay of Project NOAH disclosed that
-`InaSAFE <http://inasafe.org/>`_ will be integrated into Project NOAH to
+|project_name| will be integrated into Project NOAH to
 supplement existing technologies used to mitigate, if not totally prevent,
 massive destruction caused by strong typhoons similar to tropical storm Washi
 in 2011 and Bopha in December 2012.
@@ -49,7 +49,7 @@ in 2011 and Bopha in December 2012.
 information at the NOAH website and make them available to a wider
 community,” he said.
 
-`InaSAFE <http://inasafe.org/>`_ is available free of charge. Interested
+|project_name| is available free of charge. Interested
 parties can get the code from
 `GitHub <https://github.com/AIFDR/inasafe#readme>`_.
 
@@ -64,9 +64,8 @@ DOST’s Project NOAH adopts Indonesian technology for disaster mitigation
 
 The Department of Science and Technology’s (DOST) Project NOAH (Nationwide
 Operational Assessment of Hazards) is adopting the disaster mitigating
-technology called `InaSAFE <http://inasafe.org/>`_ from Indonesia.
-`InaSAFE <http://inasafe.org/>`_ is an acronym for Indonesia Scenario
-Assessment for Emergency.
+technology called |project_name| from Indonesia. |project_name| is an acronym
+for Indonesia Scenario Assessment for Emergency.
 
 It is an open source technology, which means it is free,
 readily accessed from the internet and may be modified by users. With this
@@ -79,10 +78,9 @@ Community Resilience Through the Use of New Technology” conducted by Project
 NOAH.
 
 Abigail Baca, disaster and risk management officer of the World Bank East
-Asia and Pacific Region said that `InaSAFE <http://inasafe.org/>`_ proved
-effective during the recent floods in Jakarta and Indonesia; thus,
-they arrived at a conclusion that it can be likewise applied in the
-Philippines.
+Asia and Pacific Region said that |project_name| proved effective during the
+recent floods in Jakarta and Indonesia; thus, they arrived at a conclusion
+that it can be likewise applied in the Philippines.
 
 Dr. Alfredo Francisco Mahar Lagmay of Project NOAH disclosed that InaSAFE
 will be integrated into Project NOAH to supplement existing technologies used
