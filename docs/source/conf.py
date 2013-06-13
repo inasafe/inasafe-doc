@@ -162,9 +162,9 @@ html_static_path = ['static']
 #html_sidebars = {}
 html_sidebars = {
     'index': ['inasafe-base.html'],
-    'contents': ['globaltoc.html', 'searchbox.html'],
-    'general/**': ['localtoc.html', 'searchbox.html'],
-    'tutorial-docs/**': ['localtoc.html', 'searchbox.html'],
+    'contents': ['globaltoc.html', ],
+    'general/**': ['localtoc.html', ],
+    'tutorial-docs/**': ['localtoc.html', 'globaltoc.html'],
     'user-docs/**': ['localtoc.html', 'searchbox.html'],
     'developer-docs/**': ['localtoc.html', 'searchbox.html'],
     'api-docs/**': ['localtoc.html', 'searchbox.html'],

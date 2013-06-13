@@ -4,7 +4,7 @@ InaSAFE Documentation
 =====================
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 3
 
     tutorial-docs/index
     user-docs/index
