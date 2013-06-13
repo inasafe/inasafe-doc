@@ -120,14 +120,18 @@ do
   ERRORS=`cat $LOG | grep ERROR`
   if [[  $WARNINGS ]]
   then
-    echo "Sphinx build produces warnings - Please fix"
+    echo "***********************************************"
+    echo "* Sphinx build produces warnings - Please fix *"
     echo $WARNINGS
+    echo "***********************************************"
     exit 1
   fi
   if [[  $ERRORS ]]
   then
-    echo "Sphinx build produces errors - Please fix\n"
+    echo "*********************************************"
+    echo "* Sphinx build produces errors - Please fix *"
     echo $ERRORS
+    echo "*********************************************"
     exit 1
   fi
 
