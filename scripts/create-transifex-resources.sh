@@ -38,8 +38,8 @@ do
     for LOCALE in $LOCALES
     do
         LOCALEFILE=`echo $POFILE | sed "s/\/en\//\/$LOCALE\//g"`
-        tx set -r $RESOURCE -l $LOCALE  "$LOCALEFILE" 
-    done 
+        tx set -r $RESOURCE -l $LOCALE  "$LOCALEFILE"
+    done
     # When we are done in this block we should have created a section in the
     # .tx/config file that looks like this:
     #
@@ -52,41 +52,7 @@ do
     #	type = PO
   done
 done
-#
-# Now safe package
-#
-POFILE='safe/i18n/en/LC_MESSAGES/inasafe.po'
-RESOURCE='safe/i18n/<lang>/LC_MESSAGES/inasafe.po'
 
-tx set -t PO --auto-local -r inasafe.safe \
-  $RESOURCE \
-  --source safe/i18n/en/LC_MESSAGES/inasafe.po \
-  --source-lang en --execute
-
-for LOCALE in $LOCALES
-do
-  LOCALEFILE=`echo $POFILE | sed "s/\/en\//\/$LOCALE\//g"`
-  tx set -r $RESOURCE -l $LOCALE  "$LOCALEFILE" 
-done 
-
-#
-# Now safe_qgis package
-#
-
-TSFILE='safe_qgis/i18n/inasafe_en.ts'
-RESOURCE='safe_qgis/i18n/inasafe_<lang>.ts'
-
-tx set -t QT --auto-local -r inasafe.safe_qgis \
-  $RESOURCE \
-  --source-lang en \
-  --source $TSFILE \
-  --execute
-
-for LOCALE in $LOCALES
-do
-  LOCALEFILE=`echo $TSFILE | sed "s/\_en/\_$LOCALE/g"`
-  tx set -r $RESOURCE -l $LOCALE  "$LOCALEFILE" 
-done 
 
 #Print out a listing of all registered resources
 tx status
