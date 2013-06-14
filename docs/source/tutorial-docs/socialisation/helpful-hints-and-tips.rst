@@ -1,3 +1,9 @@
+..
+  This is basically a Copy & Paste Section from user-manual/options.rst but
+  it should be kept here to have the socialisation short-manual available as
+  compact as possible. The Option Section should be kept up to date in the
+  User manual and should be copy/pasted after updating it there.
+
 ======================
 Helpful Hints And Tips
 ======================
@@ -5,7 +11,7 @@ Helpful Hints And Tips
 
 * To read through the |project_name| option menu
 * To know where to go for help
-* To go through some frequently ask questions
+* To go through some frequently asked questions
 
 **Expected Results:**
 
@@ -16,65 +22,66 @@ Participants are able to:
 
 
 You have now gone through |project_name| using 4 different natural hazards,
-changing a variety of parameters and analysing the results.  This chapter has
+changing a variety of parameters and analysing the results. This chapter has
 been designed to help you understand a little more about |project_name| as
 well as where you can go for help.
 
 |project_name| option menu
 --------------------------
+.. COPY PASTE from USER MANUAL SECTION OPTIONS FROM HERE
 
 The |project_name| plugin provides an options dialog which allows you to
 define various options relating to how |project_name| will behave. The
 options dialog can be launched by clicking on the |project_name| plugin
-toolbar's :guilabel:`options icon`.
+toolbar's options icon (as shown below) or by doing
+:menuselection:`Plugins --> InaSAFE --> InaSAFE Options`.
 
-.. image:: /static/socialisation/insafe_options_tools.jpg
+.. figure:: /static/inasafe-options-icon.png
+   :align:   center
 
+Then the dialog will appear, looking something like this:
 
-The following dialog will appear:
+.. figure:: /static/inasafe-options-dialog.png
+   :align:   center
 
-.. image:: /static/socialisation/Options_window.png
+.. note:: You can click on the :guilabel:`Help` button at any time and it
+   will open the help documentation browser to this page.
 
+The following options are available on the :guilabel:`Options Dialog`:
 
-
-The following options are available on the :guilabel:`Options Dialog`.
-
-**Only show visible layers in the InaSAFE dock:** This option will determine
-whether all (when unchecked) hazard and impact layers should be listed in the
-|project_name| docks drop down menu. or (when checked) only visible layers.
-
-**Set QGIS layer name from title in keywords:** This option will (when
-enabled) cause QGIS to name layers in the Layers tree using the title keyword
-in the layers keywords file. If the layer has no title in its keywords,
-or it has no keywords at all, the normal QGIS behaviour for naming layers
-will apply.
-
-**Zoom to impact layer on scenario estimate completion:** This option will
-cause the map view to zoom in/out in order to completely contain the
-|project_name| impact scenario map output when an analysis completes.
-
-**Hide exposure layer on scenario estimate completion:** This option will
-cause QGIS to turn off the exposure layer used when |project_name| completes
-the current analysis. You can re-enable the layer visibility again by
-checking its checkbox in the legend.
-
-**Clip datasets to visible extent before analysis:** This option will cause
-QGIS to clip hazard and exposure layers to the currently visible extent on
-the map canvas.
-
-**When clipping, also clip features (e.g. will clip polygon smaller):** This
-option will clip any polygons that extend beyond the map canvas. For example
-if you have a flood hazard polygon layer that extends far beyond your area of
-interest, the flood polygons will be reduced so that only the part inside of
-your area of interested (map canvas extent) is retained. This can speed up
-processing time somewhat.
-
-**Help to improve InaSAFE by submitting errors to a remote server:** This
-option, when enabled, will submit diagnostic information back to an
-|project_name| project server in the event of any error taking place that we
-are able to trap. The information provided is useful to the |project_name|
-team to improve the robustness of the software. Please note the warning text
-below this option which is included here in full:
+* :guilabel:`Only show visible layers in the InaSAFE dock` : This option will
+  determine whether **all** (when unchecked) hazard and impact layers should
+  be listed in the |project_name| dock's combo boxes. or (when checked) only
+  visible layers.
+* :guilabel:`Set QGIS layer name from 'title' in keywords` : This option will
+  (when enabled) cause QGIS to name layers in the :guilabel:`Layers tree`
+  using the `title` keyword in the layer's keywords file. If the layer
+  has no 'title' in its keywords, or it has no keywords at all, the normal
+  QGIS behaviour for naming layers will apply.
+* :guilabel:`Zoom to impact layer on scenario estimate completion` : This
+  option will cause the map view to zoom in/out in order to completely contain
+  the |project_name| impact scenario map output when an analysis completes.
+* :guilabel:`Hide exposure layer on scenario estimate completion` : This
+  option will cause QGIS to turn off the exposure layer used when
+  |project_name| completes the current analysis. You can re-enable the layer
+  visibility again by checking its checkbox in the legend.
+* :guilabel:`Clip datasets to visible extent before analysis` : This
+  option will cause QGIS to clip hazard and exposure layers to the currently
+  visible extent on the map canvas.
+* :guilabel:`When clipping, also clip features (e.g. will clip polygon
+  smaller)`: This option will any polygons that extend beyond the analysis
+  extents to be clipped so that they are contained by the analysis extents.
+  For example if you have a flood hazard polygon layer that extends far
+  beyond your area of interest, the flood polygons will be reduced so that
+  only the part inside of your area of interested is retained. This can
+  speed up processing time somewhat.
+* :guilabel:`Help to improve InaSAFE by submitting errors to a remote server` :
+  This option, when enabled, will submit diagnostic information back to an
+  |project_name| project server in the event of any error taking place that
+  we are able to trap. The information provided is useful to the
+  |project_name| team to improve the robustness of the software we produce
+  and to spot trends in issues people encounter. Please note the warning text
+  below this option which is included here in full:
 
 .. note:: The above setting requires a QGIS restart to disable / enable.
    Error messages and diagnostic information will be posted to
@@ -84,24 +91,31 @@ below this option which is included here in full:
    the information contained in tracebacks may contain file system paths
    which reveal your identity or other information from your system.
 
-**Show intermediate layers generated by postprocessing:** This option will
-cause QGIS to show the intermediate files generated by the postprocessing
-steps in the map canvas.
+* :guilabel:`Show intermediate layers generated by postprocessing` : This
+  option will cause QGIS to show the intermediate files generated by the
+  postprocessing steps in the map canvas.
+* :guilabel:`Default female ratio` : This is the default female to total
+  population ratio used por generating Gender breakdowns
+* :guilabel:`Keyword cache for remote datasources` : This option is used to
+  determine where keywords are stored for datasets where it is not possible
+  to write them into a .keywords file. See :ref:`keywords-system` in the
+  |project_name| User-Manual for more information on the keywords system.
+* :guilabel:`Run analysis in separate thread (experimental)` : This option
+  cause the analysis to be run in its own thread.
 
-**Female ratio default value:** This is the default female to total
-population ratio used for generating gender breakdowns.
+.. warning:: It is not recommended to use the threaded implementation at this
+   time. For this reason it is disabled by default.
 
-**Keyword cache for remote data sources:** This option is used to determine
-where keywords are stored for datasets where it is not possible to write them
-into a .keywords file. See Keywords System for more information on the
-keywords system.
+.. note:: Pressing
+   :guilabel:`Cancel` at any time will close the options
+   dialog and any changes made will **not** be applied.
+   Pressing :guilabel:`Ok` at any time will close the options dialog and any
+   changes made **will** be applied immediately.
 
-**Run analysis in separate thread (experimental):** This option cause the
-analysis to be run in its own thread.
+.. note:: The exact button order shown on this dialog may differ depending on
+   your operating system or desktop environment.
 
-.. note:: Pressing Cancel at any time will close the options dialog and any
-   changes made will not be applied.  Pressing Ok at any time will close the
-   options dialog and any changes made will be applied immediately.
+.. COPY PASTE from USER MANUAL SECTION OPTIONS UP TO HERE
 
 We encourage you to check (in addition to the default ones):
 

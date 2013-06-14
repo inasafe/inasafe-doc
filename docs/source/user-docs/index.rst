@@ -18,7 +18,6 @@ system.
    impact_functions
    impact_functions_doc
    postprocessors
-   inasafe_projects
    data_types
    using-qgis
    getting_involved

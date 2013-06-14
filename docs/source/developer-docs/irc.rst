@@ -42,3 +42,4 @@ messages::
 
    /query chanserv
    set #inasafe mlock -n
+

@@ -1,4 +1,4 @@
-.. _keywords_system:
+.. _keywords-system:
 
 ===============
 Keywords System
@@ -345,7 +345,6 @@ Under Windows you could always the same drive letter and path the to share
 e.g.::
 
    Z:\gisdata\jk.sqlite
-
 
 Getting help
 ------------
