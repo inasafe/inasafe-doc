@@ -159,11 +159,11 @@ html_static_path = ['static']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+#html_sidebars = {'contents': ['globaltoc.html', 'searchbox.html']}
 html_sidebars = {
     'index': ['inasafe-base.html'],
     'contents': ['globaltoc.html'],
-    'general/**': ['globaltoc.html', 'searchbox.html'],
+    'general/**': ['globaltoc.html'],
     'tutorial-docs/**': ['globaltoc.html'],
     'user-docs/**': ['globaltoc.html'],
     'developer-docs/**': ['globaltoc.html'],

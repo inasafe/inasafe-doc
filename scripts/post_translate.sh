@@ -80,7 +80,7 @@ else
   done
 fi
 
-# We need to flush the build dir or the translations dont come through
+# We need to flush the build dir or the translations don't come through
 rm -rf ${BUILDDIR}
 mkdir ${BUILDDIR}
 #Add english to the list and generated docs
@@ -105,9 +105,7 @@ do
   #
   #        HTML Generation
   #
-
   #################################
-
   # Now prepare the index-[locale] template which is a manually translated,
   # unique per locale page that gets copied to index.html for the doc
   # generation process.
@@ -137,6 +135,11 @@ do
 
   # Remove the static html copy again
   rm templates/index.html
+
+  # hack to avoid error when using Search in contents.html but search
+  # itself still does not work
+
+  rpl '#/../search.html' 'search.html' ./output/html/${LOCALE}/contents.html
 
   #################################
   #
