@@ -51,6 +51,9 @@ mkdir ${BUILDDIR}
 # .pot files
 sphinx-build -d ${BUILDDIR}/doctrees -b gettext $SOURCE i18n/pot/
 
+# We do not want the developer-docs being translated so take them out of here
+rm -rf i18n/pot/developer-docs
+
 # Now iteratively update the locale specific .po files with any new strings
 # needed translation
 for LOCALE in ${LOCALES}

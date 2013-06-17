@@ -7,14 +7,13 @@
 #
 # Tim Sutton, March 2013
 
-
 #
 # Sphinx documentation first
 #
 
 LOCALES=`ls docs/i18n`
 
-for ITEM in user-docs developer-docs tutorial-docs
+for ITEM in general user-docs tutorial-docs road-map 
 do
   for POFILE in `find docs/i18n/en/LC_MESSAGES/${ITEM}/ -type f -name '*.po'`
   do
