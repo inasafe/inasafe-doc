@@ -139,7 +139,7 @@ do
   # hack to avoid error when using Search in contents.html but search
   # itself still does not work
 
-  rpl '#/../search.html' 'search.html' ./output/html/${LOCALE}/contents.html
+  rpl -q '#/../search.html' 'search.html' ./output/html/${LOCALE}/contents.html
 
   #################################
   #
@@ -178,6 +178,6 @@ do
 done
 
 rm -rf source/static
-#rm -rf ${BUILDDIR}
+rm -rf ${BUILDDIR}
 
 popd
