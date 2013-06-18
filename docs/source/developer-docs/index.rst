@@ -18,6 +18,7 @@ Developer Documentation Contents:
    platform_linux
    platform_windows
    coding_standards
+   rfc/index
    logging
    profiling
    i18n
