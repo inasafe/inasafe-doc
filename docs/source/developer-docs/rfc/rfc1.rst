@@ -1,8 +1,26 @@
-=====
-RFC 1
-=====
+======
+RFC #1
+======
 
-This is about
--------------
+RFC Title
+---------
 
-And another viel
+**Author(s):**
+
+**Date:**
+
+Abstract
+........
+
+
+Content
+.......
+
+Subheading
+^^^^^^^^^^
+
+Tables and Figures
+
+**bold** *italics* the usual stuff 
+
+
