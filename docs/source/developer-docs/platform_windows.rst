@@ -14,7 +14,9 @@ Setup msysgit
 To check out the code for development, you first need to install a git client.
 We cover msysgit here, but you can also use
 `tortoisegit <http://code.google.com/p/tortoisegit/downloads/list>`_
-if you prefer (although the tortoise git procedure is not covered here).
+or `SourceTree <http://sourcetreeapp.com/>`_ and there is even a Windows github 
+client `GitHub Windows <http://windows.github.com/>`_ .
+if you prefer.
 
 To install msysgit (which is a command line git client), download the latest
 version of the software from the
