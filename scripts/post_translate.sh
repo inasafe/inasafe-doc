@@ -110,9 +110,7 @@ do
   # unique per locale page that gets copied to index.html/irchat.html for the doc
   # generation process.
   cp templates/index-${LOCALE}.html templates/index.html
-  echo "Copied index for '${LOCALE}'"
   cp templates/irchat-${LOCALE}.html templates/irchat.html
-  echo "Copied irchat '${LOCALE}'"
 
   echo "Building HTML for locale '${LOCALE}'..."
   LOG=/tmp/sphinx$$.log
