@@ -55,6 +55,8 @@ TODO: remove this, or make this obsolete ?? #}
                 window.location.href.indexOf(currentPage) - 3,
                 window.location.href.indexOf(currentPage) - 1);
         $('#flag_' + currentLang).css('background-color', '#cccccc');
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
     })
 
     {#  load current page in a different language #}
