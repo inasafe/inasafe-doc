@@ -72,7 +72,7 @@ release = '1.2.0'
 # for source files.
 # Deprecated since version 1.0 of sphinx .. use exclude_patterns instead
 # exclude_trees = ['buildout', 'build']
-exclude_patterns = ['build'] 
+exclude_patterns = ['build']
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None
 
@@ -173,7 +173,9 @@ html_sidebars = {
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
-html_additional_pages = {'index': 'index.html'}
+html_additional_pages = {
+    'index': 'index.html',
+    'irchat': 'irchat.html'}
 
 # If false, no module index is generated.
 #html_use_modindex = True

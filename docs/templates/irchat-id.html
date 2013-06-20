@@ -1,0 +1,71 @@
+<is></is>{% extends "inasafe-base.html" %}
+{% set title = 'Live Chat' %}
+
+{% block hero %}
+<iframe src="http://webchat.freenode.net?channels=inasafe&uio=MTE9MzE28"
+        width="700" height="400"></iframe>
+{% endblock %}
+{% block body %}
+<div class="alert alert-info centered">
+            <a href="../id/irchat.html">Ganti ke Bahasa Indonesia!</a>
+</div>
+<div class="alert alert-info left">
+            <h3>Help using <span class="inasafe">InaSAFE</span> IRC-Chat</h3>
+</div>
+        <div class="row" id="blocks-row">
+            <div class="span4">
+                {# We put the admonition inside the span because adding border #}
+                {# to the span will mess up the layout #}
+                <div class="admonition">
+                <h5>Login:</h5>
+                    <div class="alert alert-block">
+                    <ul>
+                        <li>Enter a Nickname in the Nickname Field.
+                        </li>
+                        <li>Read the CAPTCHA and enter it in the Field below.
+                        </li>
+                        <li>Click on Connect.
+                        </li>
+                        <li>The Chat-window will open.
+                        </li>
+                        <li>If you cannot read the CAPTCHA click the Reload
+                            button. Another CAPTCHA will appear which you
+                            might be able to read.
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="admonition">
+                <h5>Rules:</h5>
+                    <div class="alert alert-block">
+                    <ul>
+                        <li>Ask your question without asking to ask.
+                        </li>
+                        <li>Be patient. There is not always someone around at
+                            the very same second answering your question.
+                        </li>
+                        <li>Wait for some time. Your message is readable for
+                            other users that are inside the chat. It might
+                            take a bit to answer you question too.
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="admonition">
+                <h5>Logout:</h5>
+                    Just click on a menu item to go to another page or close
+                    the browser window. No need to logout.
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-danger centered">
+            Disclaimer: Neither AIFDR and AusAID, nor the World Bank-GFDRR take
+            any responsibility for the correctness of outputs from InaSAFE or
+            decisions derived as a consequence.
+        </div>
+{% endblock %}

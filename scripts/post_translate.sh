@@ -106,10 +106,13 @@ do
   #        HTML Generation
   #
   #################################
-  # Now prepare the index-[locale] template which is a manually translated,
-  # unique per locale page that gets copied to index.html for the doc
+  # Now prepare the index/irchat-[locale] template which is a manually translated,
+  # unique per locale page that gets copied to index.html/irchat.html for the doc
   # generation process.
   cp templates/index-${LOCALE}.html templates/index.html
+  echo "Copied index for '${LOCALE}'"
+  cp templates/irchat-${LOCALE}.html templates/irchat.html
+  echo "Copied irchat '${LOCALE}'"
 
   echo "Building HTML for locale '${LOCALE}'..."
   LOG=/tmp/sphinx$$.log
@@ -135,11 +138,12 @@ do
 
   # Remove the static html copy again
   rm templates/index.html
+  rm templates/irchat.html
 
-  # hack to avoid error when using Search in contents.html but search
-  # itself still does not work
-
+  # hack to avoid error when using Search in contents.html
   rpl -q '#/../search.html' 'search.html' ./output/html/${LOCALE}/contents.html
+  # same applies for having the IRC-Chat Navigation Link
+  rpl -q '#/../irchat.html' 'irchat.html' ./output/html/${LOCALE}/contents.html
 
   #################################
   #
