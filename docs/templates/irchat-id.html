@@ -1,5 +1,5 @@
 <is></is>{% extends "inasafe-base.html" %}
-{% set title = 'Live Chat' %}
+{% set title = 'Chat live!' %}
 
 {% block hero %}
 <iframe src="http://webchat.freenode.net?channels=inasafe&uio=MTE9MzE28"
@@ -7,27 +7,27 @@
 {% endblock %}
 {% block body %}
 <div class="alert alert-info centered">
-            <a href="../id/irchat.html">Ganti ke Bahasa Indonesia!</a>
+            <a href="../id/irchat.html">Switch to English!</a>
 </div>
         <div class="row" id="blocks-row">
             <div class="span4">
                 {# We put the admonition inside the span because adding border #}
                 {# to the span will mess up the layout #}
                 <div class="admonition">
-                <h5>Login</h5>
+                <h5>Masuk</h5>
                     <div class="alert alert-block">
                     <ul>
-                        <li>Enter a Nickname in the Nickname Field.
+                        <li>Masukan Nickname di kotak Nickname.
                         </li>
-                        <li>Read the CAPTCHA and enter it in the Field below.
+                        <li>Baca CAPTCHA dan masukan ke kotak di bawahnya.
                         </li>
-                        <li>Click on Connect.
+                        <li>Klik Connect.
                         </li>
-                        <li>The Chat-window will open.
+                        <li>Jendela chat akan terbuka.
                         </li>
-                        <li>If you cannot read the CAPTCHA click the Reload
-                            button. Another CAPTCHA will appear which you
-                            might be able to read.
+                        <li>Jika Anda tidak bisa membaca CAPTCHA-nya klik tombol
+                            Reload. CAPTCHA lain akan muncul yang mungkin lebih 
+                            bisa Anda baca.
                         </li>
                     </ul>
                     </div>
@@ -35,17 +35,18 @@
             </div>
             <div class="span4">
                 <div class="admonition">
-                <h5>Rules</h5>
+                <h5>Peraturan</h5>
                     <div class="alert alert-block">
                     <ul>
-                        <li>Ask your question without asking to ask.
+                        <li>Tanyakan pertanyaan tanpa perlu bertanya apakah boleh 
+                            Anda bertanya.
                         </li>
-                        <li>Be patient. There is not always someone around at
-                            the very same second answering your question.
+                        <li>Bersabarlah. Tidak selalu akan ada orang yang 
+                            menjawab seketika setelah Anda bertanya.
                         </li>
-                        <li>Wait for some time. Your message is readable for
-                            other users that are inside the chat. It might
-                            take a bit to answer you question too.
+                        <li>Tunggu beberapa saat. Pesan Anda dapat dibaca oleh 
+                            pengguna lain yang berada dalam chat. Mungkin butuh 
+                            waktu juga untuk menjawab pertanyaan Anda.
                         </li>
                     </ul>
                     </div>
@@ -53,16 +54,17 @@
             </div>
             <div class="span4">
                 <div class="admonition">
-                <h5>Logout</h5>
-                    Just click on a menu item to go to another page or close
-                    the browser window. No need to logout.
+                <h5>Keluar</h5>
+                    Cukup klik pada item menu untuk pergi ke halaman lain atau 
+                    tutup jendela browser. Tidak perlu logout.
                 </div>
             </div>
         </div>
 
         <div class="alert alert-danger centered">
-            Disclaimer: Neither AIFDR and AusAID, nor the World Bank-GFDRR take
-            any responsibility for the correctness of outputs from InaSAFE or
-            decisions derived as a consequence.
+            Peringatan: Tidak ada dari AIFDR-AusAID, World Bank, atau
+            World Bank-GFDRR bertanggung jawab atas kebenaran hasil
+            dari <strong><span class="inasafe">InaSAFE</span></strong> atau
+            keputusan yang mengikutinya sebagai konsekuensi.
         </div>
 {% endblock %}
