@@ -1,6 +1,6 @@
-============================
-|project_name| Road Map 2013
-============================
+=============
+Road Map 2013
+=============
 
 This section of the documentation describes |project_name|'s project direction.
 

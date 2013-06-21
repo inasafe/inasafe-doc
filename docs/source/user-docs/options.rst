@@ -1,8 +1,8 @@
-.. _options:
+.. _options-menu:
 
-======================
-|project_name| Options
-======================
+=======
+Options
+=======
 
 The |project_name| plugin provides an options dialog which allows you to
 define various options relating to how |project_name| will behave. The

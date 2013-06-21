@@ -1,6 +1,6 @@
-============================
-|project_name| Socialisation
-============================
+=============
+Socialisation
+=============
 
 This training course is designed to have hands on experience with
 |project_name|. Its not designed as a comprehensive course (we are still
@@ -61,21 +61,6 @@ Schedule
 16:00 - 16:45  Other hazard in |project_name| (Volcano, Earthquake, Tsunami)
 
 16:45 - 17:00  Helpful hints and tips
-
-Training Materials
-------------------
-
-.. toctree::
-   :maxdepth: 2
-
-   introduction-and-overview
-   introduction-functionality
-   introduction-of-qgis
-   run-basic-inasafe
-   inasafe-in-more-detail
-   other-hazards
-   helpful-hints-and-tips
-
 
 Credits
 -------
