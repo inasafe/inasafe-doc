@@ -30,7 +30,6 @@ Package::safe_qgis
    safe_qgis/keywords_dialog
    safe_qgis/exceptions
    safe_qgis/dock
-   safe_qgis/resources
    safe_qgis/map
    safe_qgis/safe_interface
    safe_qgis/function_options_dialog_base
