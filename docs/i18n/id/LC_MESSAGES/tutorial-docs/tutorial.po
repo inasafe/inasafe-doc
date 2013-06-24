@@ -8,756 +8,1036 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-17 13:51\n"
+"POT-Creation-Date: 2013-06-24 15:26\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/tutorial-docs/tutorial.rst:9
 # a39854c78ba84191bab69bbdf89bb423
+#: ../../source/tutorial-docs/tutorial.rst:9
 msgid "|project_name| Tutorial"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:12
 # c342cb57857049a6a7bb68ac86c187af
+#: ../../source/tutorial-docs/tutorial.rst:12
 msgid "Overview"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:15
 # 078b1a0e97494858a6b532b834561214
+#: ../../source/tutorial-docs/tutorial.rst:15
 msgid "Description"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:17
 # 6908af54b99b4e43abd6f0230089d125
-msgid "|project_name| is a plugin for QGIS software. It aims to produce realistic natural hazard impact scenarios for better planning, preparedness and response activities, using hazard and exposure geographic data. A user’s manual developed by Ole Moeller Nielsen and Tim Sutton complements this short training material. During this training, you will explore the different components of |project_name| plugin and their usage for an easy-to-use risk and impact scenarios assessments. A data sample will be provided with the present material to give you the ability to learn how to manipulate data in |project_name|, what the requirements of the data are and what kind of results you can expect out of the data."
+#: ../../source/tutorial-docs/tutorial.rst:17
+msgid ""
+"|project_name| is a plugin for QGIS software. It aims to produce realistic "
+"natural hazard impact scenarios for better planning, preparedness and "
+"response activities, using hazard and exposure geographic data. A user’s "
+"manual developed by Ole Moeller Nielsen and Tim Sutton complements this "
+"short training material. During this training, you will explore the "
+"different components of |project_name| plugin and their usage for an easy-to-"
+"use risk and impact scenarios assessments. A data sample will be provided "
+"with the present material to give you the ability to learn how to manipulate "
+"data in |project_name|, what the requirements of the data are and what kind "
+"of results you can expect out of the data."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:29
 # 83c3996b201b4d6799d18d8798e291d9
+#: ../../source/tutorial-docs/tutorial.rst:29
 msgid "Prerequisites"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:31
 # 9ad9d6647e184978bc1b9501b5a0944d
-msgid "This training is designed for those with a basic or intermediate knowledge of GIS, who wants to integrate scientific-based risk impact scenario in their decision-making. Since the tool is a QGIS plugin, some knowledge of the QGIS environment will help, but is not required."
+#: ../../source/tutorial-docs/tutorial.rst:31
+msgid ""
+"This training is designed for those with a basic or intermediate knowledge "
+"of GIS, who wants to integrate scientific-based risk impact scenario in "
+"their decision-making. Since the tool is a QGIS plugin, some knowledge of "
+"the QGIS environment will help, but is not required."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:37
 # a27b16a6737e434d8ef394ac52c38b91
+#: ../../source/tutorial-docs/tutorial.rst:37
 msgid "Goals"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:39
 # 25ebedb61938412fb061513190e08d56
+#: ../../source/tutorial-docs/tutorial.rst:39
 msgid "After the training, you will be able to:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:41
 # 8746c158120244f0b4b8b793c01951c2
+#: ../../source/tutorial-docs/tutorial.rst:41
 msgid "install a plugin in QGIS and understand its usage for spatial analysis"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:42
 # 2547cc93529b4bb3ab0951c2bef7c426
-msgid "understand what are hazard and exposure data and how they can be used to estimate impacts"
+#: ../../source/tutorial-docs/tutorial.rst:42
+msgid ""
+"understand what are hazard and exposure data and how they can be used to "
+"estimate impacts"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:44
 # bc3aa05217f44090843a92998afb463a
+#: ../../source/tutorial-docs/tutorial.rst:44
 msgid "learn how to prepare the data to be able to use it in |project_name|"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:45
 # cf0cc943aade41e0b2eb06c9eddb31a7
+#: ../../source/tutorial-docs/tutorial.rst:45
 msgid "perform a risk scenario using flood and earthquake data"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:46
 # a7537539e162432da85b74742964e766
+#: ../../source/tutorial-docs/tutorial.rst:46
 msgid "analyze estimated impact of the example scenarios"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:47
 # a3360c91f82d4c82880a4d05d447adf5
+#: ../../source/tutorial-docs/tutorial.rst:47
 msgid "learn how to print and save the result of the simulation"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:50
 # ebde67b5a3eb421f80cef71ea584c774
+#: ../../source/tutorial-docs/tutorial.rst:50
 msgid "Software Requirements"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:52
 # 1d199577e7f641039d3515bbaf58a803
-msgid "To complete the exercise, you need a standard computer with at least 4GB of RAM running Windows, Linux or Mac OS X. You also need to install the following on your computer:"
+#: ../../source/tutorial-docs/tutorial.rst:52
+msgid ""
+"To complete the exercise, you need a standard computer with at least 4GB of "
+"RAM running Windows, Linux or Mac OS X. You also need to install the "
+"following on your computer:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:56
 # a79c772ad2854edd8c08d483d53c5088
+#: ../../source/tutorial-docs/tutorial.rst:56
 msgid "QGIS"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:57
 # 3880eed50eb44a0daae0b0f2659c9016
+#: ../../source/tutorial-docs/tutorial.rst:57
 msgid "|project_name| plugin."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:60
 # 602dce0d486b43808b062f1e6fb98d8a
+#: ../../source/tutorial-docs/tutorial.rst:60
 msgid "Reference"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:62
 # abf5ef54aa514ea181422da0cb9e02ba
-msgid "“|project_name| Documentation, Release 0.4.0-alpha”, Ole Moeller Nielsen & Tim Sutton, June 2012.  For more information, please visit `www.inasafe.org <http://inasafe.org>`_."
+#: ../../source/tutorial-docs/tutorial.rst:62
+msgid ""
+"“|project_name| Documentation, Release 0.4.0-alpha”, Ole Moeller Nielsen & "
+"Tim Sutton, June 2012.  For more information, please visit `www.inasafe.org "
+"<http://inasafe.org>`_."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:67
 # 6206c050d25740d98a16567cd5a2021a
+#: ../../source/tutorial-docs/tutorial.rst:67
 msgid "Installation"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:70
 # 5c297b4b77094ffab5af2e7c58821ab2
+#: ../../source/tutorial-docs/tutorial.rst:70
 msgid "Install QGIS"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:72
 # 916db4cde7d34a13af0b67469f085b6f
-msgid "You need at least QGIS version 1.7 or newer which is available to be downloaded from http://download.qgis.org."
+#: ../../source/tutorial-docs/tutorial.rst:72
+msgid ""
+"You need at least QGIS version 1.7 or newer which is available to be "
+"downloaded from http://download.qgis.org."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:76
 # 718151d42a3c4d73a264dd2253dfd83b
+#: ../../source/tutorial-docs/tutorial.rst:76
 msgid "Install |project_name| Plugin"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:79
 # a8599ead8ea14d8a8b705e08b7cb778f
+#: ../../source/tutorial-docs/tutorial.rst:79
 msgid "Option 1: From QGIS Repository:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:81
 # 6fd80eaf28044cfcb09ba5e509c60042
+#: ../../source/tutorial-docs/tutorial.rst:81
 msgid "To install the |project_name| plugin, use the plugin manager in QGIS:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:83
 # 33b1ad11672c4237bb27c7574817f389
+#: ../../source/tutorial-docs/tutorial.rst:83
 msgid ":menuselection:`Plugins --> Fetch Python Plugins`"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:85
 # b560fda72eba4dda87204de3b5a64aae
-msgid "Then search for :guilabel:`InaSAFE`, select it and click the install button. The plugin will now be added to your plugins menu."
+#: ../../source/tutorial-docs/tutorial.rst:85
+msgid ""
+"Then search for :guilabel:`InaSAFE`, select it and click the install button. "
+"The plugin will now be added to your plugins menu."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:89
 # 7404a47dc6bf4ef9ba8bf1e42515d9ab
+#: ../../source/tutorial-docs/tutorial.rst:89
 msgid "Option 2: Manual Installation:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:91
 # df51b74df8294479b250df642d93072b
-msgid "To install the |project_name| plugin, go to http://plugins.qgis.org/plugins/inasafe/."
+#: ../../source/tutorial-docs/tutorial.rst:91
+msgid ""
+"To install the |project_name| plugin, go to http://plugins.qgis.org/plugins/"
+"inasafe/."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:94
 # b64b89b779bd4be98906b9a34f2d9731
-msgid "The application package comes as a zip file. Please select the most updated version."
+#: ../../source/tutorial-docs/tutorial.rst:94
+msgid ""
+"The application package comes as a zip file. Please select the most updated "
+"version."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:97
 # 41f51d2363da42c6b760b41b3c027ece
-msgid "Extract the zip file into the QGIS directory :file:`C:\\\\Users\\\\<your username>\\\\.qgis\\\\python\\\\plugins`."
+#: ../../source/tutorial-docs/tutorial.rst:97
+msgid ""
+"Extract the zip file into the QGIS directory :file:`C:\\\\Users\\\\<your "
+"username>\\\\.qgis\\\\python\\\\plugins`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:100
 # 4bf6076b03ff4adda126eaf210d5a286
-msgid "After extracting the plugin, it should be available as :file:`C:\\\\Users\\\\<your username>\\\\.qgis\\\\python\\\\plugins\\\\inasafe`"
+#: ../../source/tutorial-docs/tutorial.rst:100
+msgid ""
+"After extracting the plugin, it should be available as :file:`C:\\\\Users\\"
+"\\<your username>\\\\.qgis\\\\python\\\\plugins\\\\inasafe`"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:103
 # b62201b387d7447ea0a7c15f7450420a
-msgid "Mac and Linux users need to follow the same procedure but instead the plugin directory (.qgis/python/plugins/) will be under your :file:`$HOME` directory."
+#: ../../source/tutorial-docs/tutorial.rst:103
+msgid ""
+"Mac and Linux users need to follow the same procedure but instead the plugin "
+"directory (.qgis/python/plugins/) will be under your :file:`$HOME` directory."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:107
 # ada4fe4a7fe94ed58a0edfd5d2f77c44
+#: ../../source/tutorial-docs/tutorial.rst:107
 msgid "Enable |project_name| Plugin in QGIS"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:109
 # 65e2261a32844d4fa1bbb3ab6b6bf076
-msgid "Once the plugin is extracted in QGIS plugin directory, start QGIS and enable it from the plugin manager.  To do this, open :menuselection:`Plugins --> Manage Plugins` from the menu toolbar."
+#: ../../source/tutorial-docs/tutorial.rst:109
+msgid ""
+"Once the plugin is extracted in QGIS plugin directory, start QGIS and enable "
+"it from the plugin manager.  To do this, open :menuselection:`Plugins --> "
+"Manage Plugins` from the menu toolbar."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:116
 # 9fab47b9838a494d9b2ad1269bfc8893
-msgid "A pop-up window that lists all available plugins in your current QGIS project will appear. Type :kbd:`InaSAFE` in the filter box. You should see the |project_name| plugin appear in the list. Now **tick the checkbox** next to it to enable the plugin."
+#: ../../source/tutorial-docs/tutorial.rst:116
+msgid ""
+"A pop-up window that lists all available plugins in your current QGIS "
+"project will appear. Type :kbd:`InaSAFE` in the filter box. You should see "
+"the |project_name| plugin appear in the list. Now **tick the checkbox** next "
+"to it to enable the plugin."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:124
 # ac8f5cc452254cb09c40bfde9194fcd7
+#: ../../source/tutorial-docs/tutorial.rst:124
 msgid "The plugin will be added to your :menuselection:`Plugins` menu."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:126
 # 66955abd070c43d4a9727044a64c8977
-msgid "Now you will need to add the |project_name| panel on your QGIS interface. For that, select :menuselection:`Toggle InaSAFE Dock` in the |project_name| plugin scroll list."
+#: ../../source/tutorial-docs/tutorial.rst:126
+msgid ""
+"Now you will need to add the |project_name| panel on your QGIS interface. "
+"For that, select :menuselection:`Toggle InaSAFE Dock` in the |project_name| "
+"plugin scroll list."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:133
 # 60c6b5ec59fc419fa069b6708ffd3f60
+#: ../../source/tutorial-docs/tutorial.rst:133
 msgid "The |project_name| dock panel will then appear on your QGIS window."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:138
 # 9a6fdbd26d5e4effbdae7d8b3f31d87a
-msgid "It is the main way to interact with the tools that are provided in |project_name|."
+#: ../../source/tutorial-docs/tutorial.rst:138
+msgid ""
+"It is the main way to interact with the tools that are provided in |"
+"project_name|."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:141
 # fd870fdbf533479fa52786b2dff47083
+#: ../../source/tutorial-docs/tutorial.rst:141
 msgid "Also, an |project_name| icon will appear on the QGIS toolbar."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:147
 # 9f8f895e83a14099a11db6ee737c40ef
+#: ../../source/tutorial-docs/tutorial.rst:147
 msgid "Using |project_name|"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:150
 # 8047102d2fc5403b8e6c2b279e45a2c7
+#: ../../source/tutorial-docs/tutorial.rst:150
 msgid "|project_name| Options"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:152
 # ba21666370684165b602807ae69d9c21
-msgid "The |project_name| plugin provides an options dialog which allows you to define various options relating to how |project_name| will behave. The options dialog can be launched by clicking on the |project_name| plugin toolbar’s options icon (as shown below) or from QGIS :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
+#: ../../source/tutorial-docs/tutorial.rst:152
+msgid ""
+"The |project_name| plugin provides an options dialog which allows you to "
+"define various options relating to how |project_name| will behave. The "
+"options dialog can be launched by clicking on the |project_name| plugin "
+"toolbar’s options icon (as shown below) or from QGIS :menuselection:`Plugins "
+"--> InaSAFE --> InaSAFE Options`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:161
 # bb80af9fdb0c469882ef91cb40e4bb89
+#: ../../source/tutorial-docs/tutorial.rst:161
 msgid "Then the dialog will appear, looking something like this:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:166
 # 809a987b340f4e90a082c2ae6fc9564d
-msgid "You can click on the Help button at any time and it will open the help documentation browser to this page."
+#: ../../source/tutorial-docs/tutorial.rst:166
+msgid ""
+"You can click on the Help button at any time and it will open the help "
+"documentation browser to this page."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:169
 # 46a326f2ddd34fc6ab88daea466512cb
+#: ../../source/tutorial-docs/tutorial.rst:169
 msgid "The following options are available on the Options Dialog:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:171
 # 39fc92fb98f3463b96bd381a0a8e238c
-msgid "**Only show visible layers in the InaSAFE dock:** This option will determine whether (when unchecked) all hazard, exposure and impact layers should be listed in the |project_name| dock’s combo boxes; or (when checked) only visible layers."
+#: ../../source/tutorial-docs/tutorial.rst:171
+msgid ""
+"**Only show visible layers in the InaSAFE dock:** This option will determine "
+"whether (when unchecked) all hazard, exposure and impact layers should be "
+"listed in the |project_name| dock’s combo boxes; or (when checked) only "
+"visible layers."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:175
 # ef3cb9c73d6c4424a4a33088e30ff847
-msgid "**Set QGIS layer name from ‘title’ in keywords:** This option will (when enabled) cause QGIS to name layers in the Layers tree, using the title keyword in the layer’s keywords file. If the layer has no ‘title’ in its keywords, or it has no keywords at all, the normal QGIS behavior for naming layers will apply."
+#: ../../source/tutorial-docs/tutorial.rst:175
+msgid ""
+"**Set QGIS layer name from ‘title’ in keywords:** This option will (when "
+"enabled) cause QGIS to name layers in the Layers tree, using the title "
+"keyword in the layer’s keywords file. If the layer has no ‘title’ in its "
+"keywords, or it has no keywords at all, the normal QGIS behavior for naming "
+"layers will apply."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:180
 # b791ff456a134d95868b908c08605d97
-msgid "**Zoom to impact layer on scenario estimate completion:** This option will cause the map view to zoom in/out in order to completely contain the |project_name| impact scenario map output when an analysis is completed."
+#: ../../source/tutorial-docs/tutorial.rst:180
+msgid ""
+"**Zoom to impact layer on scenario estimate completion:** This option will "
+"cause the map view to zoom in/out in order to completely contain the |"
+"project_name| impact scenario map output when an analysis is completed."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:183
 # beb3d8538d2d486688f14dda6acc1945
-msgid "**Hide exposure layer on scenario estimate completion:** This option will cause QGIS to turn off the exposure layer used when |project_name| completes the current analysis. You can re-enable the layer visibility again by checking its checkbox in the legend."
+#: ../../source/tutorial-docs/tutorial.rst:183
+msgid ""
+"**Hide exposure layer on scenario estimate completion:** This option will "
+"cause QGIS to turn off the exposure layer used when |project_name| completes "
+"the current analysis. You can re-enable the layer visibility again by "
+"checking its checkbox in the legend."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:187
 # bd8fd2df4245464a8d6eaf3ccb3636de
-msgid "**Keyword cache for remote datasources:** This option is used to determine where keywords are stored for datasets where it is not possible to write them into a .keywords file. See Keywords System for more information on the keywords system."
+#: ../../source/tutorial-docs/tutorial.rst:187
+msgid ""
+"**Keyword cache for remote datasources:** This option is used to determine "
+"where keywords are stored for datasets where it is not possible to write "
+"them into a .keywords file. See Keywords System for more information on the "
+"keywords system."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:191
 # 302e9bc4e1c6425d824f10b4c0defb45
-msgid "**Run analysis in separate thread (experimental):** This option cause the analysis to be run in its own thread."
+#: ../../source/tutorial-docs/tutorial.rst:191
+msgid ""
+"**Run analysis in separate thread (experimental):** This option cause the "
+"analysis to be run in its own thread."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:195
 # ea888a3f769b4b0b8696fb641c628434
-msgid "It is not recommended to use the threaded implementation at this time. For this reason it is disabled by default."
+#: ../../source/tutorial-docs/tutorial.rst:195
+msgid ""
+"It is not recommended to use the threaded implementation at this time. For "
+"this reason it is disabled by default."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:197
 # 71debcf0c4f44eddb1b6eb775cd9764a
-msgid "Pressing Cancel at any time will close the options dialog and any changes made will not be applied."
+#: ../../source/tutorial-docs/tutorial.rst:197
+msgid ""
+"Pressing Cancel at any time will close the options dialog and any changes "
+"made will not be applied."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:199
 # 1b8037a58eb94d25b1a41b9353ebe31f
-msgid "Pressing Ok at any time will close the options dialog and any changes made will be applied immediately."
+#: ../../source/tutorial-docs/tutorial.rst:199
+msgid ""
+"Pressing Ok at any time will close the options dialog and any changes made "
+"will be applied immediately."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:201
 # 6be9736255b94389a8b24b580a63613a
-msgid "The exact button order shown on this dialog may differ depending on your operating system or desktop environment."
+#: ../../source/tutorial-docs/tutorial.rst:201
+msgid ""
+"The exact button order shown on this dialog may differ depending on your "
+"operating system or desktop environment."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:205
 # de611c2417124d9ea26cb396ccfbd426
+#: ../../source/tutorial-docs/tutorial.rst:205
 msgid "Adjust Projection"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:207
 # 5cace20ab66f45eb8b161d6e429c7547
-msgid "Before continuing we need to turn one more QGIS functionality on, to enable all data layers display in one projection (no matter what their projection)."
+#: ../../source/tutorial-docs/tutorial.rst:207
+msgid ""
+"Before continuing we need to turn one more QGIS functionality on, to enable "
+"all data layers display in one projection (no matter what their projection)."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:210
 # 9c703b00946945529c6c7ffaa1705a7e
+#: ../../source/tutorial-docs/tutorial.rst:210
 msgid "For that, go to QGIS :menuselection:`&Settings --> Project Properties`"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:215
 # ba6ee72955ed48d6a136fce4232cfd41
-msgid "Click on :guilabel:`Coordinate Reference System (CRS)` tab in the new dialog box. Tick the :guilabel:`Enable ‘on the fly’ CRS transformation` box. And then :guilabel:`OK`."
+#: ../../source/tutorial-docs/tutorial.rst:215
+msgid ""
+"Click on :guilabel:`Coordinate Reference System (CRS)` tab in the new dialog "
+"box. Tick the :guilabel:`Enable ‘on the fly’ CRS transformation` box. And "
+"then :guilabel:`OK`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:222
 # 7e54c3b4675145b986868828329cef84
-msgid "Now, any data layer that we will integrate into our project will be adjusted on the same coordinate."
+#: ../../source/tutorial-docs/tutorial.rst:222
+msgid ""
+"Now, any data layer that we will integrate into our project will be adjusted "
+"on the same coordinate."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:226
 # d39e9fc4350844e08673dda51c5722d2
+#: ../../source/tutorial-docs/tutorial.rst:226
 msgid "Exploring |project_name| Plugin"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:228
 # 9ff420c11c1540529f8361da94dea34c
-msgid "You can drag and drop the dock panel to reposition it in the user interface. For example, dragging the panel towards the right margin of the QGIS application will dock it to the right side of the screen."
+#: ../../source/tutorial-docs/tutorial.rst:228
+msgid ""
+"You can drag and drop the dock panel to reposition it in the user interface. "
+"For example, dragging the panel towards the right margin of the QGIS "
+"application will dock it to the right side of the screen."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:232
 # 12392c12e21a4b74a5354b784d2bf666
-msgid "Depending on your preference you could show the :guilabel:`Layer` and :guilabel:`InaSAFE` panel at the same time."
+#: ../../source/tutorial-docs/tutorial.rst:232
+msgid ""
+"Depending on your preference you could show the :guilabel:`Layer` and :"
+"guilabel:`InaSAFE` panel at the same time."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:238
 # 09f7e145c5d34a428f7a3dc54d4e909c
-msgid "Or have the :guilabel:`Layer` and :guilabel:`InaSAFE` panels in a tab systems."
+#: ../../source/tutorial-docs/tutorial.rst:238
+msgid ""
+"Or have the :guilabel:`Layer` and :guilabel:`InaSAFE` panels in a tab "
+"systems."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:243
 # 8aae450db6354ff7be9e3173b114c40f
+#: ../../source/tutorial-docs/tutorial.rst:243
 msgid "Or for more convenience, having them on top of each other."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:248
 # 5d88f4a7b19b4793b5888a1870acf3bc
-msgid "The |project_name| panel contains 3 sections: :guilabel:`Questions`, :guilabel:`Results` and :guilabel:`Buttons`. We will explore those sections one by one."
+#: ../../source/tutorial-docs/tutorial.rst:248
+msgid ""
+"The |project_name| panel contains 3 sections: :guilabel:`Questions`, :"
+"guilabel:`Results` and :guilabel:`Buttons`. We will explore those sections "
+"one by one."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:253
 # 6661239e3809419b8a1cd8a6b01e9e70
+#: ../../source/tutorial-docs/tutorial.rst:253
 msgid "The Questions Section"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:255
 # 07a55ad54e13455b91c042a4461a754d
-msgid "The intention of |project_name| is to make it really simple and easy to perform your impact analysis. The Questions area provides a simple way for you to formulate what it is you want to find out? All questions are formulated in the form:"
+#: ../../source/tutorial-docs/tutorial.rst:255
+msgid ""
+"The intention of |project_name| is to make it really simple and easy to "
+"perform your impact analysis. The Questions area provides a simple way for "
+"you to formulate what it is you want to find out? All questions are "
+"formulated in the form:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:260
 # a0e97bf861934af1a1bb44725b87aff7
-msgid "*In the event of* **[hazard]** *how many* **[exposure]** *might* **[impact].**"
+#: ../../source/tutorial-docs/tutorial.rst:260
+msgid ""
+"*In the event of* **[hazard]** *how many* **[exposure]** *might* **[impact]."
+"**"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:262
 # 21041425134e42f19f4e497bb422ef5e
-msgid "For example: “In the event of a **flood** how many **buildings** might be **closed**?”"
+#: ../../source/tutorial-docs/tutorial.rst:262
+msgid ""
+"For example: “In the event of a **flood** how many **buildings** might be "
+"**closed**?”"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:265
 # e55150e8ccb841efba3d3b40ddad4ec6
+#: ../../source/tutorial-docs/tutorial.rst:265
 msgid "Let’s practice this exercise."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:267
 # 276c3cc114904503a278f2b1f9cf4b18
-msgid "In order to answer such question, |project_name| developers have built a number of impact functions that cover risk scenarios such as flood, tsunami, volcanic ash fall, earthquake and so on. In our case, we will use the flood impact function."
+#: ../../source/tutorial-docs/tutorial.rst:267
+msgid ""
+"In order to answer such question, |project_name| developers have built a "
+"number of impact functions that cover risk scenarios such as flood, tsunami, "
+"volcanic ash fall, earthquake and so on. In our case, we will use the flood "
+"impact function."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:272
 # 027cbd6a07754b55b755cf432f521f27
-msgid "To answer our question “In the event of a flood, how many buildings might be closed”, we need to complete all the areas in the Questions section: hazard, exposure, impact."
+#: ../../source/tutorial-docs/tutorial.rst:272
+msgid ""
+"To answer our question “In the event of a flood, how many buildings might be "
+"closed”, we need to complete all the areas in the Questions section: hazard, "
+"exposure, impact."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:277
 # 6c2b9b78b5d645c3a6ee1c1acc25310d
+#: ../../source/tutorial-docs/tutorial.rst:277
 msgid "Hazard"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:279
 # 4032f218b2304b78bac8676814139f3d
+#: ../../source/tutorial-docs/tutorial.rst:279
 msgid "Hazard is the physical event that creates the risk."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:281
 # 532d5a3860cf4c41a23b933188f0a8ac
-msgid "A hazard (in **the event of**) may be represented as a raster layer or as an area (polygon). For example:"
+#: ../../source/tutorial-docs/tutorial.rst:281
+msgid ""
+"A hazard (in **the event of**) may be represented as a raster layer or as an "
+"area (polygon). For example:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:284
 # bcfc1480d71b46fabf34271886df598a
-msgid "**Raster:** where each pixel in the raster represents the current flood depth following an inundation event."
+#: ../../source/tutorial-docs/tutorial.rst:284
+msgid ""
+"**Raster:** where each pixel in the raster represents the current flood "
+"depth following an inundation event."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:286
 # 500d370994f3430e86564a87189e5d0c
-msgid "**Polygon:** where it has been identified that flood has existed in that area (this will not have depth related information)"
+#: ../../source/tutorial-docs/tutorial.rst:286
+msgid ""
+"**Polygon:** where it has been identified that flood has existed in that "
+"area (this will not have depth related information)"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:289
 # 92ac3c1938d74459917cdb3c258c6fe5
-msgid "For our exercise, we will use an example from Jakarta, Indonesia. Those data are already installed on your computer at :file:`C:\\\\Users\\\\<your username>\\\\desktop\\\\inasafe_data`. If they are not, you can download the data to your desktop by pressing the :guilabel:`ZIP` button on https://github.com/AIFDR/inasafe_data."
+#: ../../source/tutorial-docs/tutorial.rst:289
+msgid ""
+"For our exercise, we will use an example from Jakarta, Indonesia. Those data "
+"are already installed on your computer at :file:`C:\\\\Users\\\\<your "
+"username>\\\\desktop\\\\inasafe_data`. If they are not, you can download the "
+"data to your desktop by pressing the :guilabel:`ZIP` button on https://"
+"github.com/AIFDR/inasafe_data."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:295
 # f873f486f9b940d6a42b9708f3dc8597
-msgid "The inasafe_data package contains various geographic data that we will use along the workshop."
+#: ../../source/tutorial-docs/tutorial.rst:295
+msgid ""
+"The inasafe_data package contains various geographic data that we will use "
+"along the workshop."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:298
 # 2ef869ff4d6a44939637366061c64910
-msgid "Now, we will add the hazard layer in the |project_name| dock. For that, we need to add the hazard layer from QGIS first. The flood layer is in a raster format, so we will go to the QGIS menu, click on :menuselection:`Layer` and select :menuselection:`Add Raster Layer`."
+#: ../../source/tutorial-docs/tutorial.rst:298
+msgid ""
+"Now, we will add the hazard layer in the |project_name| dock. For that, we "
+"need to add the hazard layer from QGIS first. The flood layer is in a raster "
+"format, so we will go to the QGIS menu, click on :menuselection:`Layer` and "
+"select :menuselection:`Add Raster Layer`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:306
 # 3ab6c596b7cb4180a2a8b39e6453ce9a
-msgid "Once you click on that, a pop-up window will appear where you will have to fetch your flood data.  Please select the :file:`Flood_Design_Depth_Jakarta_geographic.asc` file from the hazard folder. This is a raster data (in ASCII format) that represents flooding depth in the Jakarta province. The display name in |project_name| is **Jakarta 2007 flood with dredging.**"
+#: ../../source/tutorial-docs/tutorial.rst:306
+msgid ""
+"Once you click on that, a pop-up window will appear where you will have to "
+"fetch your flood data.  Please select the :file:"
+"`Flood_Design_Depth_Jakarta_geographic.asc` file from the hazard folder. "
+"This is a raster data (in ASCII format) that represents flooding depth in "
+"the Jakarta province. The display name in |project_name| is **Jakarta 2007 "
+"flood with dredging.**"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:314
 # 8c1fe7711702479ab39ed478181e0d3f
-msgid "You will notice that the layer filled automatically the “hazard” area in the |project_name| dock panel. There are two important things to note when **uploading  data** in |project_name|."
+#: ../../source/tutorial-docs/tutorial.rst:314
+msgid ""
+"You will notice that the layer filled automatically the “hazard” area in the "
+"|project_name| dock panel. There are two important things to note when "
+"**uploading  data** in |project_name|."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:318
 # d5192fff4e3048aead08ae6f275b6763
-msgid "Data should follow a keyword metadata system that allows |project_name| to determine if the layer is a hazard or if it is an exposure."
+#: ../../source/tutorial-docs/tutorial.rst:318
+msgid ""
+"Data should follow a keyword metadata system that allows |project_name| to "
+"determine if the layer is a hazard or if it is an exposure."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:320
 # 8f0cd1ef346e4f3bb469e2129bb57718
+#: ../../source/tutorial-docs/tutorial.rst:320
 msgid "The area of analysis should overlap."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:323
 # 3a9bc794558d4df9b777f7b1340232c8
+#: ../../source/tutorial-docs/tutorial.rst:323
 msgid "Adding keyword metadata"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:325
 # e724e01b1ded495bb644a885aaa88382
-msgid "You may be wondering how the |project_name| plugin determines whether a layer should be listed in the “In the event of” “How many” combo boxes? The plugin relies on simple keyword metadata to be associated with each layer (*The keyword system is described in detail in the user’s manual under Keywords System*). Each layer that has a keyword allocating it’s category to hazard will be listed in the “In the event of” combo. Similarly, a category of exposure in the keywords for a layer will result in it being listed under the “How many” combo. |project_name| uses the combination of category, subcategory, units and datatype keywords to determine which impact functions will be listed in the “Might” combo."
+#: ../../source/tutorial-docs/tutorial.rst:325
+msgid ""
+"You may be wondering how the |project_name| plugin determines whether a "
+"layer should be listed in the “In the event of” “How many” combo boxes? The "
+"plugin relies on simple keyword metadata to be associated with each layer "
+"(*The keyword system is described in detail in the user’s manual under "
+"Keywords System*). Each layer that has a keyword allocating it’s category to "
+"hazard will be listed in the “In the event of” combo. Similarly, a category "
+"of exposure in the keywords for a layer will result in it being listed under "
+"the “How many” combo. |project_name| uses the combination of category, "
+"subcategory, units and datatype keywords to determine which impact functions "
+"will be listed in the “Might” combo."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:336
 # 6605765bb7324d3694983865cce1c752
-msgid "In our exercise, the keywords were already created, so the data could fill automatically the “In the event of” “How many combo” boxes. If the keywords were not created in advance, then we will create them by following one of the two steps:"
+#: ../../source/tutorial-docs/tutorial.rst:336
+msgid ""
+"In our exercise, the keywords were already created, so the data could fill "
+"automatically the “In the event of” “How many combo” boxes. If the keywords "
+"were not created in advance, then we will create them by following one of "
+"the two steps:"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:341
 # d79747e414234538a3777bf14b618877
-msgid "Go to the |project_name| tools on the toolbar, click on the :guilabel:`Keyword Editor` icon."
+#: ../../source/tutorial-docs/tutorial.rst:341
+msgid ""
+"Go to the |project_name| tools on the toolbar, click on the :guilabel:"
+"`Keyword Editor` icon."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:347
 # 5ef8dfc4bd3c4e1a8a5685b4d5dd9ca9
-msgid "Or, open the :menuselection:`Plugin` menu on QGIS toolbar, click on :menuselection:`InaSAFE`, then click on the :guilabel:`Keyword Editor` in the scroll list."
+#: ../../source/tutorial-docs/tutorial.rst:347
+msgid ""
+"Or, open the :menuselection:`Plugin` menu on QGIS toolbar, click on :"
+"menuselection:`InaSAFE`, then click on the :guilabel:`Keyword Editor` in the "
+"scroll list."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:354
 # 8681c986cbb746069c50b0eaf3186146
-msgid "Once you click on the Keyword Editor, a dialog box containing the flood data will be prompted. Since the flood data is a hazard layer, pinpoint the :guilabel:`Hazard` Category. In the Subcategory, we will choose flood [m] because our data represents depth of flood in Jakarta in meter unit."
+#: ../../source/tutorial-docs/tutorial.rst:354
+msgid ""
+"Once you click on the Keyword Editor, a dialog box containing the flood data "
+"will be prompted. Since the flood data is a hazard layer, pinpoint the :"
+"guilabel:`Hazard` Category. In the Subcategory, we will choose flood [m] "
+"because our data represents depth of flood in Jakarta in meter unit."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:362
 # 395d47367f8142308d19e54a7198a1a6
+#: ../../source/tutorial-docs/tutorial.rst:362
 msgid "Then click :guilabel:`OK`"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:364
 # 87b93ce4ea8c4aa4abb2263cab48fcda
-msgid "Now the data follow the keyword rule, and can be used in the |project_name| function."
+#: ../../source/tutorial-docs/tutorial.rst:364
+msgid ""
+"Now the data follow the keyword rule, and can be used in the |project_name| "
+"function."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:368
 # a1c78db9015e4dafbc4673057420d11b
+#: ../../source/tutorial-docs/tutorial.rst:368
 msgid "Exposure"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:370
 # eb61d59bca554a8da50ba6805d2cfcec
+#: ../../source/tutorial-docs/tutorial.rst:370
 msgid "Exposure is the sum of assets and population that are at risks."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:372
 # 017775b12eee4bcab0bbac919efa123f
-msgid "An exposure (How **many**) layer could be represented, for example, as vector polygon data representing building outlines, or a raster outline where each pixel represents the number of people resident in that cell."
+#: ../../source/tutorial-docs/tutorial.rst:372
+msgid ""
+"An exposure (How **many**) layer could be represented, for example, as "
+"vector polygon data representing building outlines, or a raster outline "
+"where each pixel represents the number of people resident in that cell."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:376
 # 5426c833ccd14671a2e9c99b9586d6e6
-msgid "Now, we will add the exposure layer in our |project_name| project. For that, we need to add the exposure layer to QGIS first. For our exercise, we will use the OpenStreetMap (OSM) data that represents buildings in Jakarta Province."
+#: ../../source/tutorial-docs/tutorial.rst:376
+msgid ""
+"Now, we will add the exposure layer in our |project_name| project. For that, "
+"we need to add the exposure layer to QGIS first. For our exercise, we will "
+"use the OpenStreetMap (OSM) data that represents buildings in Jakarta "
+"Province."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:381
 # 934882c90d7646a7ba5058ba2d1eaa32
-msgid "The OSM building layer is in a vector format, so we will go to the QGIS menu toolbar, click on :menuselection:`Layer`, and select :menuselection:`Add Vector Layer`."
+#: ../../source/tutorial-docs/tutorial.rst:381
+msgid ""
+"The OSM building layer is in a vector format, so we will go to the QGIS menu "
+"toolbar, click on :menuselection:`Layer`, and select :menuselection:`Add "
+"Vector Layer`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:388
 # b80dcba65e2f4255ac826f600cdb7818
-msgid "Once you click on that, a pop-up window will appear where you will have to fetch your OSM buildings data."
+#: ../../source/tutorial-docs/tutorial.rst:388
+msgid ""
+"Once you click on that, a pop-up window will appear where you will have to "
+"fetch your OSM buildings data."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:394
 # 9b9ad9c601c440238644ac9848abba61
-msgid "Please select the “OSM_building_footprints_20120629_Jakarta_All.shp” file from the exposure folder."
+#: ../../source/tutorial-docs/tutorial.rst:394
+msgid ""
+"Please select the “OSM_building_footprints_20120629_Jakarta_All.shp” file "
+"from the exposure folder."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:397
 # db71536f20f746619173e9de0dabc74c
+#: ../../source/tutorial-docs/tutorial.rst:397
 msgid "Click :guilabel:`Open`"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:399
 # a3c44e9924ba4f6e878e58237abb5bf5
-msgid "This is a vector data (in ESRI SHP format) that represents buildings data gathered by the Jakarta province community using the OSM participatory tools. The display name is “OSM **buildings** ”."
+#: ../../source/tutorial-docs/tutorial.rst:399
+msgid ""
+"This is a vector data (in ESRI SHP format) that represents buildings data "
+"gathered by the Jakarta province community using the OSM participatory "
+"tools. The display name is “OSM **buildings** ”."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:403
 # 10248f3db31c4e16ac01e4657700730e
-msgid "Please note that the exposure data should follow the same **keyword system** that we explained earlier for the hazard data."
+#: ../../source/tutorial-docs/tutorial.rst:403
+msgid ""
+"Please note that the exposure data should follow the same **keyword system** "
+"that we explained earlier for the hazard data."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:406
 # b91ac2bdfae64cbc96e333d282565596
-msgid "In our case, the keyword was already created. If the keyword was not created in advance, then we will create it by using the :menuselection:`Keyword Editor` in |project_name| from the toolbar or from the :menuselection:`Plugins` menu."
+#: ../../source/tutorial-docs/tutorial.rst:406
+msgid ""
+"In our case, the keyword was already created. If the keyword was not created "
+"in advance, then we will create it by using the :menuselection:`Keyword "
+"Editor` in |project_name| from the toolbar or from the :menuselection:"
+"`Plugins` menu."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:410
 # 5ba8c3c73f2d4217922613477516a384
-msgid "Go to the :menuselection:`Plugin menu` on QGIS toolbar. Click on :menuselection:`InaSAFE`. Then, click on the :menuselection:`Keyword Editor` in the dialog box. Pinpoint the :guilabel:`Exposure` category. Choose :guilabel:`structure` in the :guilabel:`Subcategory` scroll box. Then click :guilabel:`OK`"
+#: ../../source/tutorial-docs/tutorial.rst:410
+msgid ""
+"Go to the :menuselection:`Plugin menu` on QGIS toolbar. Click on :"
+"menuselection:`InaSAFE`. Then, click on the :menuselection:`Keyword Editor` "
+"in the dialog box. Pinpoint the :guilabel:`Exposure` category. Choose :"
+"guilabel:`structure` in the :guilabel:`Subcategory` scroll box. Then click :"
+"guilabel:`OK`"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:419
 # d3fd1dde3b644797819ebe090cdf3688
-msgid "Now our OSM building exposure data can be used in |project_name| and was automatically entered in the :guilabel:`How many box` of the |project_name| dock panel."
+#: ../../source/tutorial-docs/tutorial.rst:419
+msgid ""
+"Now our OSM building exposure data can be used in |project_name| and was "
+"automatically entered in the :guilabel:`How many box` of the |project_name| "
+"dock panel."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:426
 # 39b51b2c9b0140c3ac6c7c4e79935f3e
-msgid "Also note that the 2 datasets are sitting on top of one another even though they are different projections."
+#: ../../source/tutorial-docs/tutorial.rst:426
+msgid ""
+"Also note that the 2 datasets are sitting on top of one another even though "
+"they are different projections."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:430
 # 0e67320a97494021b05b4556ebc83155
+#: ../../source/tutorial-docs/tutorial.rst:430
 msgid "Impact Analysis"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:432
 # 120419422804467a867f1405aba99e32
-msgid "The impact function (:guilabel:`&Might`) will spatially combine the hazard and exposure input layers in order to postulate what the impacts of the hazard will be on the exposure infrastructure or people. By selecting a combination from the “In the event of” and “How many” combo boxes, an appropriate set of impact functions will be listed in the “Might” combo box."
+#: ../../source/tutorial-docs/tutorial.rst:432
+msgid ""
+"The impact function (:guilabel:`&Might`) will spatially combine the hazard "
+"and exposure input layers in order to postulate what the impacts of the "
+"hazard will be on the exposure infrastructure or people. By selecting a "
+"combination from the “In the event of” and “How many” combo boxes, an "
+"appropriate set of impact functions will be listed in the “Might” combo box."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:438
 # bfc591b2fd0d4cc2a4d8675951ad8dc9
-msgid "Impact scenarios are predefined depending on what the decision-maker is looking for. For our flood analysis in Jakarta, we only have on predefined impact function which asks: **In case of flood event, how many buildings might be temporarily closed?** As we see on the previous step, this is filled automatically by default in the |project_name| panel dock as soon as the hazard [**flood**] and exposure [**buildings**] layers are entered correctly."
+#: ../../source/tutorial-docs/tutorial.rst:438
+msgid ""
+"Impact scenarios are predefined depending on what the decision-maker is "
+"looking for. For our flood analysis in Jakarta, we only have on predefined "
+"impact function which asks: **In case of flood event, how many buildings "
+"might be temporarily closed?** As we see on the previous step, this is "
+"filled automatically by default in the |project_name| panel dock as soon as "
+"the hazard [**flood**] and exposure [**buildings**] layers are entered "
+"correctly."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:446
 # e7c6c243b2964a6f891754f31b0a74ea
+#: ../../source/tutorial-docs/tutorial.rst:446
 msgid "The Results section"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:448
 # 6f1072f1feda44e49fd4ba4c73a5587c
-msgid "Now that we have our two input layers and that we know what impacts we would like to assess, click on the :guilabel:`Run` button at the bottom to start the impact analysis. At the end of the process, figures will be shown in the :guilabel:`Results` section, a new layer will be added in the QGIS layer panel representing the result of the impact function, and the map will differentiate affected and non-affected building."
+#: ../../source/tutorial-docs/tutorial.rst:448
+msgid ""
+"Now that we have our two input layers and that we know what impacts we would "
+"like to assess, click on the :guilabel:`Run` button at the bottom to start "
+"the impact analysis. At the end of the process, figures will be shown in "
+"the :guilabel:`Results` section, a new layer will be added in the QGIS layer "
+"panel representing the result of the impact function, and the map will "
+"differentiate affected and non-affected building."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:461
 # 6405bd36958f4a149bec7cc58c31f723
-msgid "The result shows **total number of buildings** and the **number of buildings that might be temporarily closed** in the event of a flood. Also, there is an **Action Checklist** where the question: *Are the critical facilities still open?* And a **Note** description explaining that buildings are said flooded when the flood level exceeds 1m."
+#: ../../source/tutorial-docs/tutorial.rst:461
+msgid ""
+"The result shows **total number of buildings** and the **number of buildings "
+"that might be temporarily closed** in the event of a flood. Also, there is "
+"an **Action Checklist** where the question: *Are the critical facilities "
+"still open?* And a **Note** description explaining that buildings are said "
+"flooded when the flood level exceeds 1m."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:468
 # f4742782f02540f3a6e391e82934844d
+#: ../../source/tutorial-docs/tutorial.rst:468
 msgid "Enhancing the Map Output"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:470
 # e2de0bd6b4294379adc75d5f622d7b90
-msgid "The final output map can be enhanced using cartographic functions in QGIS. Styles can be changed, background layer or other relevant layers can be added, layout can be changed using the :menuselection:`File --> New Print Composer` in QGIS."
+#: ../../source/tutorial-docs/tutorial.rst:470
+msgid ""
+"The final output map can be enhanced using cartographic functions in QGIS. "
+"Styles can be changed, background layer or other relevant layers can be "
+"added, layout can be changed using the :menuselection:`File --> New Print "
+"Composer` in QGIS."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:475
 # 513fc6aa21d540c4b69ffc37c1288a2e
-msgid "If you would like to add openlayer background to your map, all you need to do is add a new plugin called **OpenLayer Plugin** in QGIS and follow the same steps as we did to acquire the |project_name| plugin."
+#: ../../source/tutorial-docs/tutorial.rst:475
+msgid ""
+"If you would like to add openlayer background to your map, all you need to "
+"do is add a new plugin called **OpenLayer Plugin** in QGIS and follow the "
+"same steps as we did to acquire the |project_name| plugin."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:479
 # 8505a032b1af4be8b298d46c558d9dfb
-msgid "You can download the plugin from the website http://build.sourcepole.ch/qgis/plugins.xml, and put it in the QGIS plugin directory depending on your operating system: Windows: :file:`C:\\\\Users\\\\<your username>\\\\.qgis\\\\python\\\\plugins`. Linux/MacOSX: :file:`$HOME/.qgis/python/plugins`."
+#: ../../source/tutorial-docs/tutorial.rst:479
+msgid ""
+"You can download the plugin from the website http://build.sourcepole.ch/qgis/"
+"plugins.xml, and put it in the QGIS plugin directory depending on your "
+"operating system: Windows: :file:`C:\\\\Users\\\\<your username>\\\\.qgis\\"
+"\\python\\\\plugins`. Linux/MacOSX: :file:`$HOME/.qgis/python/plugins`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:485
 # f446084eea3e47e8a829b48f41e27905
-msgid "To enable the OpenLayer plugin, go to the QGIS :menuselection:`Plugins --> Manage Plugins` and select :menuselection:`OpenLayers Plugin`."
+#: ../../source/tutorial-docs/tutorial.rst:485
+msgid ""
+"To enable the OpenLayer plugin, go to the QGIS :menuselection:`Plugins --> "
+"Manage Plugins` and select :menuselection:`OpenLayers Plugin`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:489
 # 23ec2ac6beb64f2c8baa14f743ec9c80
-msgid "Once installed you should be able to use background imagery and tiles from google, yahoo, bing and OpenStreetMap."
+#: ../../source/tutorial-docs/tutorial.rst:489
+msgid ""
+"Once installed you should be able to use background imagery and tiles from "
+"google, yahoo, bing and OpenStreetMap."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:495
 # acf62ccdf1d14df6a637181c97b102f9
-msgid "For our exercise, let’s add the Google Satellite view to our map as a background. Make sure that the background is not on top of the other active layers."
+#: ../../source/tutorial-docs/tutorial.rst:495
+msgid ""
+"For our exercise, let’s add the Google Satellite view to our map as a "
+"background. Make sure that the background is not on top of the other active "
+"layers."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:500
 # c5f115bc8c5b467ea6b6ec01e1de06e9
+#: ../../source/tutorial-docs/tutorial.rst:500
 msgid "Print Results"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:502
 # a02f5160c3a44366a14de965fb5d9d7e
-msgid "The data shown on the screen can be saved into a :file:`PDF file` by clicking on :guilabel:`Print` at the bottom of the |project_name| panel. The PDF file contains then the **legend** for the result of the impact assessment, the **map** created and a **table** summarizing the results from the impact function."
+#: ../../source/tutorial-docs/tutorial.rst:502
+msgid ""
+"The data shown on the screen can be saved into a :file:`PDF file` by "
+"clicking on :guilabel:`Print` at the bottom of the |project_name| panel. The "
+"PDF file contains then the **legend** for the result of the impact "
+"assessment, the **map** created and a **table** summarizing the results from "
+"the impact function."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:508
 # e96ba2b3a4bf41e483a2ddf82801407a
-msgid "However, any change that you want to make into the final map document should be done **before** clicking on the :guilabel:`Print` button of the |project_name| dock panel. The print should be only used once the data is exactly as you want it to be displayed."
+#: ../../source/tutorial-docs/tutorial.rst:508
+msgid ""
+"However, any change that you want to make into the final map document should "
+"be done **before** clicking on the :guilabel:`Print` button of the |"
+"project_name| dock panel. The print should be only used once the data is "
+"exactly as you want it to be displayed."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:517
 # 32f40371810f48c39ed467fa311648dc
+#: ../../source/tutorial-docs/tutorial.rst:517
 msgid "Save results and QGIS project"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:519
 # 1ce41c96743348cd89f20bcee3ae6658
-msgid "The output layer result of the assessment can be saved by right clicking on the layer."
+#: ../../source/tutorial-docs/tutorial.rst:519
+msgid ""
+"The output layer result of the assessment can be saved by right clicking on "
+"the layer."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:525
 # b3702ee7806a4bb6b90a7c9a5a334048
-msgid "Then :menuselection:`Save As` a shapefile or a raster. However the keywords and statistics do not get saved."
+#: ../../source/tutorial-docs/tutorial.rst:525
+msgid ""
+"Then :menuselection:`Save As` a shapefile or a raster. However the keywords "
+"and statistics do not get saved."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:531
 # 32da3003afae4e87910de4e27a15ad54
-msgid "You can also save the project under QGIS so that you can access your current window view anytime needed. For that, go to the :guilabel:`File` menu on QGIS toolbar. Click on :guilabel:`Save Project As`."
+#: ../../source/tutorial-docs/tutorial.rst:531
+msgid ""
+"You can also save the project under QGIS so that you can access your current "
+"window view anytime needed. For that, go to the :guilabel:`File` menu on "
+"QGIS toolbar. Click on :guilabel:`Save Project As`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:539
 # f6344b79779c467e868592934f7c48b6
-msgid "Give a name to the project and put it in the directory you want to store your work. Then click on :guilabel:`Save`."
+#: ../../source/tutorial-docs/tutorial.rst:539
+msgid ""
+"Give a name to the project and put it in the directory you want to store "
+"your work. Then click on :guilabel:`Save`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:545
 # f3230c76e2634c1f90f92d3336787180
-msgid "Now that the project is saved under QGIS, you can go back to your work anytime you need. However, the statistical data will be lost whenever the project is closed. To get the data back, you will need to redo the impact analysis process we described above from :guilabel:`Run`."
+#: ../../source/tutorial-docs/tutorial.rst:545
+msgid ""
+"Now that the project is saved under QGIS, you can go back to your work "
+"anytime you need. However, the statistical data will be lost whenever the "
+"project is closed. To get the data back, you will need to redo the impact "
+"analysis process we described above from :guilabel:`Run`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:550
 # 5f01d18de4b94939901c36badbd58a0a
-msgid "The impact assessment can also be replicated for flood zone areas; the only change is to add the layer as a vector and using keyword flood (wet/dry)."
+#: ../../source/tutorial-docs/tutorial.rst:550
+msgid ""
+"The impact assessment can also be replicated for flood zone areas; the only "
+"change is to add the layer as a vector and using keyword flood (wet/dry)."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:553
 # a17f22ac42e0498baf4860febbb9e6fd
+#: ../../source/tutorial-docs/tutorial.rst:553
 msgid "Go to QGIS :menuselection:`Layer --> Add Vector Layer`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:558
 # ce7e8a4c49e14ce184bdf887c57f7129
+#: ../../source/tutorial-docs/tutorial.rst:558
 msgid "Add the :file:`Jakarta_RW_2007flood.shp`"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:563
 # 7b50a525800e454c814149965bd930ba
-msgid "The impact functions can also be modified to pull out certain attributes from the input layers, in this case it can tease out the breakup of building types."
+#: ../../source/tutorial-docs/tutorial.rst:563
+msgid ""
+"The impact functions can also be modified to pull out certain attributes "
+"from the input layers, in this case it can tease out the breakup of building "
+"types."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:569
 # a66f230f055e4221bf96e711b34c7caf
-msgid "The flood zone areas were derived from sub-village administration boundaries and defined as areas that were flooded in the last large flood in Jakarta in 2007."
+#: ../../source/tutorial-docs/tutorial.rst:569
+msgid ""
+"The flood zone areas were derived from sub-village administration boundaries "
+"and defined as areas that were flooded in the last large flood in Jakarta in "
+"2007."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:574
 # 6236deedbb7b460a8265a37a0eec5afe
+#: ../../source/tutorial-docs/tutorial.rst:574
 msgid "International Language"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:576
 # 9ff9a74ed52a40a0a2db20551cfd3bec
+#: ../../source/tutorial-docs/tutorial.rst:576
 msgid "Both QGIS and |project_name| come with multi-lingual support."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:578
 # c9b206bb6a6e4116bd6067154c6b21c9
+#: ../../source/tutorial-docs/tutorial.rst:578
 msgid "Go to QGIS :menuselection:`Settings --> Options`."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:583
 # f8ab6770832b48f8b51e91bf5cc09fbd
-msgid "Go to the :guilabel:`Locale` tab, and click to :guilabel:`Override system locale`. You must close the QGIS project and reopen for the language to take hold."
+#: ../../source/tutorial-docs/tutorial.rst:583
+msgid ""
+"Go to the :guilabel:`Locale` tab, and click to :guilabel:`Override system "
+"locale`. You must close the QGIS project and reopen for the language to take "
+"hold."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:590
 # 9dc19c86bd2f4ba3aa510a75116169d5
-msgid "At this point |project_name| has only been translated into Indonesian, however there is a framework that can support all languages outlined in QGIS."
+#: ../../source/tutorial-docs/tutorial.rst:590
+msgid ""
+"At this point |project_name| has only been translated into Indonesian, "
+"however there is a framework that can support all languages outlined in QGIS."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:595
 # 00e0d632308a4bb0a63058fe0d539912
+#: ../../source/tutorial-docs/tutorial.rst:595
 msgid "Thank You"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:597
 # bf52bea2344b43ed93345560c8ffd4d8
+#: ../../source/tutorial-docs/tutorial.rst:597
 msgid "THANK YOU FOR YOUR PARTICIPATION! :)"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:599
 # e4c7c95bf2e5425587f95e8f83f380f2
-msgid "Let us know how you enjoyed the training and what you think about the tool."
+#: ../../source/tutorial-docs/tutorial.rst:599
+msgid ""
+"Let us know how you enjoyed the training and what you think about the tool."
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:601
 # 579242b3c9eb4bb987cf65a8ec96f75b
+#: ../../source/tutorial-docs/tutorial.rst:601
 msgid "THE |project_name| TEAM"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:603
 # 5ec3e9c98a3f4b138507d8cf556f3e8b
+#: ../../source/tutorial-docs/tutorial.rst:603
 msgid "Indonesian Disaster Management Agency (|BNPB|)"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:604
 # 8c36d9e182d64f3390df4d5474e1aac3
+#: ../../source/tutorial-docs/tutorial.rst:604
 msgid "|AusAID| - Australia-Indonesia Facility for Disaster Reduction"
 msgstr ""
 
-#: ../../source/tutorial-docs/tutorial.rst:605
 # c5b39daabf7044048a8a8c8620d7223f
+#: ../../source/tutorial-docs/tutorial.rst:605
 msgid "World Bank - Global Facility for Disaster Reduction and Recovery"
 msgstr ""
-

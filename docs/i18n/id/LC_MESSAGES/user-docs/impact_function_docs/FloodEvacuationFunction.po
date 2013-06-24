@@ -8,101 +8,129 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-17 13:51\n"
+"POT-Creation-Date: 2013-06-24 15:26\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:6
 # 83c871d7175e48f3974f2a7f277e0a28
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:6
 msgid "Flood Evacuation Function"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:9
 # ad900cbfdd864ddd874c207b4e42757f
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:9
 msgid "Overview"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:11
 # cd363af91eda4743ac1523e493d40282
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:11
 msgid "**Unique Identifier**: Flood Evacuation Function"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:14
 # 3909bbd5f41648469b56403a5eff2ab9
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:14
 msgid "**Author**: |AIFDR|, |AusAID|"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:17
 # 3933b4f149b341f1ab3fcf4eb0144ac3
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:17
 msgid "**Rating**: 4"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:20
 # f0e15156a035451ca4c06b663df0c6db
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:20
 msgid "**Title**: Need evacuation"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:23
 # f7369006bcfe482e994e4ad50d8a2dc1
-msgid "**Synopsis**: To assess the impacts of (flood or tsunami) inundation in raster format on population."
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:23
+msgid ""
+"**Synopsis**: To assess the impacts of (flood or tsunami) inundation in "
+"raster format on population."
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:26
 # 8a9b8dfc0f0a45f582f6522f2c5a7c4e
-msgid "**Actions**: Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them."
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:26
+msgid ""
+"**Actions**: Provide details about how many people would likely need to be "
+"evacuated, where they are located and what resources would be required to "
+"support them."
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:29
 # 5cf9a3e86624449fb7b03d0d2b02e3a2
-msgid "**Hazard Input**: A hazard raster layer where each cell represents flood depth (in meters)."
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:29
+msgid ""
+"**Hazard Input**: A hazard raster layer where each cell represents flood "
+"depth (in meters)."
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:32
 # 2da89dfd301c4cc8a6c83c4f7975d90d
-msgid "**Exposure Input**: An exposure raster layer where each cell represent population count."
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:32
+msgid ""
+"**Exposure Input**: An exposure raster layer where each cell represent "
+"population count."
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:35
 # c1e7a3f67c8b48c1b0df727a596af4c6
-msgid "**Output**: Raster layer contains population affected and the minimumneeds based on the population affected."
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:35
+msgid ""
+"**Output**: Raster layer contains population affected and the minimumneeds "
+"based on the population affected."
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:38
 # 509e81e89aa641fdbc9d75944c87ae00
-msgid "**Limitation**: The default threshold of 1 meter was selected based on consensus, not hard evidence."
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:38
+msgid ""
+"**Limitation**: The default threshold of 1 meter was selected based on "
+"consensus, not hard evidence."
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:42
 # a1b1167e70af463bb1ef4b827729a7a8
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:42
 msgid "Details"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:44
 # e36ddd5c1113479dbf1b72af90206a0f
-msgid "The population subject to inundation exceeding a threshold (default 1m) is calculated and returned as a raster layer.In addition the total number and the required needs in terms of the |BNPB| (Perka 7) are reported. The threshold can be changed and even contain multiple numbers in which case evacuation and needs are calculated using the largest number with population breakdowns provided for the smaller numbers. The population raster is resampled to the resolution of the hazard raster and is rescaled so that the resampled population counts reflect estimates of population count per resampled cell. The resulting impact layer has the same resolution and reflects population count per cell which are affected by inundation."
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:44
+msgid ""
+"The population subject to inundation exceeding a threshold (default 1m) is "
+"calculated and returned as a raster layer.In addition the total number and "
+"the required needs in terms of the |BNPB| (Perka 7) are reported. The "
+"threshold can be changed and even contain multiple numbers in which case "
+"evacuation and needs are calculated using the largest number with population "
+"breakdowns provided for the smaller numbers. The population raster is "
+"resampled to the resolution of the hazard raster and is rescaled so that the "
+"resampled population counts reflect estimates of population count per "
+"resampled cell. The resulting impact layer has the same resolution and "
+"reflects population count per cell which are affected by inundation."
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:47
 # 893875cf82dd43b5ab0014e077956e85
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:47
 msgid "Docstring"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:49
 # 0c3543105dbf4cb1b073a7703184a99b
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:49
 msgid "Impact function for flood evacuation"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:51
 # 5aab6213eb7c40379f6210b5717644ec
-msgid ":author |AIFDR|, |AusAID| :rating 4 :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami'] and                     layertype=='raster' and                     unit=='m'"
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:51
+msgid ""
+":author |AIFDR|, |AusAID| :rating 4 :param requires category=='hazard' "
+"and                     subcategory in ['flood', 'tsunami'] "
+"and                     layertype=='raster' and                     unit=='m'"
 msgstr ""
 
-#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:55
 # 5d15a9f7e9814ad0a8d5550a8f0e31be
-msgid ":param requires category=='exposure' and                     subcategory=='population' and                     layertype=='raster'"
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:55
+msgid ""
+":param requires category=='exposure' and                     "
+"subcategory=='population' and                     layertype=='raster'"
 msgstr ""
-

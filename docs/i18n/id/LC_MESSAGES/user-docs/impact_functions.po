@@ -8,91 +8,126 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-17 13:51\n"
+"POT-Creation-Date: 2013-06-24 15:26\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/user-docs/impact_functions.rst:9
 # 5f2d1392ff5b4843a3bff03c0a8852fe
+#: ../../source/user-docs/impact_functions.rst:9
 msgid "Impact Functions"
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:11
 # 3788fe6447604f8fa0c6cb8277e49468
-msgid "This document explains the purpose of impact functions and lists the different available impact function and the requirements each has to be used effectively. See :ref:`writing_impact_functions` for more information about writing new impact functions."
+#: ../../source/user-docs/impact_functions.rst:11
+msgid ""
+"This document explains the purpose of impact functions and lists the "
+"different available impact function and the requirements each has to be used "
+"effectively. See :ref:`writing_impact_functions` for more information about "
+"writing new impact functions."
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:18
 # 6b0f185512e74c8b94e88cd4b4a111a9
+#: ../../source/user-docs/impact_functions.rst:18
 msgid "What is an impact function?"
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:20
 # e7826a76f8d34e4fbc7d2e575bce2bb1
-msgid "In impact function is a software programme that computes a risk assessment given a number of inputs. The risk assessment will typically have a spatial component (e.g. a GIS layer which can be incorporated into a map) and a non-spatial component (e.g. a list of actions you may want to consider carrying out, or a list of estimates of disaster risk reduction elements such as how many bags of rice to make available)."
+#: ../../source/user-docs/impact_functions.rst:20
+msgid ""
+"In impact function is a software programme that computes a risk assessment "
+"given a number of inputs. The risk assessment will typically have a spatial "
+"component (e.g. a GIS layer which can be incorporated into a map) and a non-"
+"spatial component (e.g. a list of actions you may want to consider carrying "
+"out, or a list of estimates of disaster risk reduction elements such as how "
+"many bags of rice to make available)."
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:28
 # 8a98e5b38d4b4bbb9603f6c0a11b35b9
+#: ../../source/user-docs/impact_functions.rst:28
 msgid "Selecting an impact function"
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:30
 # 722f835e9a1a4021bf4fceb029450795
-msgid "Impact functions are bundled with the |project_name| software. The graphical user interface (provided as a plugin for QGIS will offer a list of impact functions that can be used based on the layers you have loaded and their :doc:`keywords <keywords>`."
+#: ../../source/user-docs/impact_functions.rst:30
+msgid ""
+"Impact functions are bundled with the |project_name| software. The graphical "
+"user interface (provided as a plugin for QGIS will offer a list of impact "
+"functions that can be used based on the layers you have loaded and their :"
+"doc:`keywords <keywords>`."
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:36
 # a87801ff00dd4e95b748f55881e8567e
+#: ../../source/user-docs/impact_functions.rst:36
 msgid "Exploring impact functions"
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:38
 # 46c687a9a5214b9abc996647e673defc
-msgid "You can use the impact function table to explore all of the possible impact functions that can be used. They are listed in a table with a series of pick-lists (combo boxes) above which can be used to filter the functions based on different criteria as illustrated below."
+#: ../../source/user-docs/impact_functions.rst:38
+msgid ""
+"You can use the impact function table to explore all of the possible impact "
+"functions that can be used. They are listed in a table with a series of pick-"
+"lists (combo boxes) above which can be used to filter the functions based on "
+"different criteria as illustrated below."
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:46
 # 7e10f5cf189145bd87847460c5e78762
-msgid "When applying a filter set, the list of available functions that meet those criteria is updated as shown below."
+#: ../../source/user-docs/impact_functions.rst:46
+msgid ""
+"When applying a filter set, the list of available functions that meet those "
+"criteria is updated as shown below."
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:52
 # 960778ab621e4363bdc2613efae9e6d5
-msgid "The impact function table is simply a browser to help you to familiarise yourself with the functions available. For the actual usage of the functions you need to have layers available (i.e. loaded in QGIS) with the appropriate keywords for your target function."
+#: ../../source/user-docs/impact_functions.rst:52
+msgid ""
+"The impact function table is simply a browser to help you to familiarise "
+"yourself with the functions available. For the actual usage of the functions "
+"you need to have layers available (i.e. loaded in QGIS) with the appropriate "
+"keywords for your target function."
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:58
 # 56fc7ed0f522460a94d4e65ada381d3a
+#: ../../source/user-docs/impact_functions.rst:58
 msgid "Configurable Impact Functions"
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:60
 # 5490d6b208724261b8ff8b11581531af
-msgid "Some impact functions can be configured before use. For example if you have a raster flood hazard layer where each pixel represents flood depth, you can set depth thresholds (low / medium / high)"
+#: ../../source/user-docs/impact_functions.rst:60
+msgid ""
+"Some impact functions can be configured before use. For example if you have "
+"a raster flood hazard layer where each pixel represents flood depth, you can "
+"set depth thresholds (low / medium / high)"
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:65
 # 67973dac33964236a380d3f3fbd53b0b
+#: ../../source/user-docs/impact_functions.rst:65
 msgid "Creating impact functions"
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:67
 # b47e9fc67a4b4914a4d35dccf8cf64ee
-msgid "If you feel there is an important impact function which is missing, there are two avenues you can follow:"
+#: ../../source/user-docs/impact_functions.rst:67
+msgid ""
+"If you feel there is an important impact function which is missing, there "
+"are two avenues you can follow:"
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:70
 # 4d35323a8ac4478da776384f4c6150af
-msgid "If you have basic python programming skills, you could implement a new impact function yourself. See :ref:`writing_impact_functions` for general guidelines on writing impact functions."
+#: ../../source/user-docs/impact_functions.rst:70
+msgid ""
+"If you have basic python programming skills, you could implement a new "
+"impact function yourself. See :ref:`writing_impact_functions` for general "
+"guidelines on writing impact functions."
 msgstr ""
 
-#: ../../source/user-docs/impact_functions.rst:73
 # 4f24fe01c2934f0d851189c3014aa68f
-msgid "You can file a ticket on our `issue tracking system <https://github.com/AIFDR/inasafe/issues>`_, and if time and resources allow we will implement it for you."
+#: ../../source/user-docs/impact_functions.rst:73
+msgid ""
+"You can file a ticket on our `issue tracking system <https://github.com/"
+"AIFDR/inasafe/issues>`_, and if time and resources allow we will implement "
+"it for you."
 msgstr ""
-
