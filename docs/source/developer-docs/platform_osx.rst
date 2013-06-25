@@ -1,6 +1,6 @@
-============================
-Development under MS Windows
-============================
+=====================
+Development under OSX
+=====================
 
 In this document we will walk you through the different activities you will
 need to do as an OSX developer wishing to work on the |project_name| codebase.
