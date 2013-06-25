@@ -17,6 +17,7 @@ Developer Documentation Contents:
 
    platform_linux
    platform_windows
+   platform_osx
    coding_standards
    logging
    profiling
