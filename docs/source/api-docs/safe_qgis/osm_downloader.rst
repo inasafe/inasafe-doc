@@ -1,7 +1,7 @@
 Module:  safe_qgis.osm_downloader
 =================================
 
-.. automodule:: safe_qgis.osm_downlaoder
+.. automodule:: safe_qgis.osm_downloader
 
       :members:
 
