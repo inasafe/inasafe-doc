@@ -23,3 +23,13 @@ Packages safe
 
    safe
 
+
+Unit Tests
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   safe_qgis_tests
+
+

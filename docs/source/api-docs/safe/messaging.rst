@@ -8,4 +8,5 @@ Package::safe.messaging
    messaging/error_message
    messaging/styles
    messaging/test_messaging
+   messaging/example
    messaging/item

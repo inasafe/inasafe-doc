@@ -1,7 +1,7 @@
-Module:  safe_qgis.impact_calculator_thread
+Module:  safe.messaging.example.gui_example
 ===========================================
 
-.. automodule:: safe_qgis.impact_calculator_thread
+.. automodule:: safe.messaging.example.gui_example
 
       :members:
 

@@ -9,6 +9,7 @@ Package::safe.common
    common/polygon
    common/geodesy
    common/dynamic_translations
+   common/signals
    common/converter
    common/test_utilities
    common/testing

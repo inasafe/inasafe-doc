@@ -2,6 +2,9 @@
 {% set title = 'Home' %}
 
 {% block hero %}
+    <div class="alert alert-info centered">
+            <a href="../id/index.html">Ganti ke Bahasa Indonesia!</a>
+    </div>
     <h2>Welcome to the <span class="inasafe">InaSAFE</span> project!</h2>
     <p>Indonesian Scenario Assessment for Emergencies </p>
     <div id="myCarousel" class="carousel slide">
@@ -75,9 +78,6 @@
     <script type="text/javascript">$('.carousel').carousel();</script>
 {% endblock %}
 {% block body %}
-        <div class="alert alert-info centered">
-            <a href="../id/index.html">Ganti ke Bahasa Indonesia!</a>
-        </div>
         <div class="row" id="blocks-row">
             <div class="span4">
                 {# We put the admonition inside the span because adding border #}

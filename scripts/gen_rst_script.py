@@ -12,7 +12,7 @@ __copyright__ += 'Disaster Reduction'
 
 import os
 from shutil import rmtree
-import string
+# import string
 import sys
 
 # Text
