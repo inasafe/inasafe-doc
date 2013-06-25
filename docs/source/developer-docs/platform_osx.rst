@@ -198,11 +198,10 @@ earlier and making the following small configuration changes:
   <path to your inasafe checkout>/third_party
 
 2) Edit your unittest defaults and ensure the key / value pairs below are added.
- :menuselection:`Run --> Edit Configurations --> Defaults --> Python Tests --> Unit tests`
- and click the ellipses (...) next to :guilabel:`Environment Variables` ::
+:menuselection:`Run --> Edit Configurations --> Defaults --> Python Tests --> Unit tests`
+and click the ellipses (...) next to :guilabel:`Environment Variables` ::
   
   PYTHONPATH : /Applications/QGIS.app/Contents/Resources/python
   QGIS_PREFIX_PATH : /Applications/QGIS.app/contents/MacOS
   QGIS_PATH : /Applications/QGIS.app
-
 
