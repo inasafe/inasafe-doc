@@ -309,7 +309,7 @@ below.
    the datasource (typically the database connection details) and a blob
    which contains the keywords as a pickled python dictionary.
 
-See the :doc:`options` document for more information about the |project_name|
+See the :doc:`./options` document for more information about the |project_name|
 options dialog.
 
 Sharing your keywords cache

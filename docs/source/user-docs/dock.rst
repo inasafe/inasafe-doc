@@ -53,7 +53,7 @@ In order to answer such questions, the |project_name| developers have built
 a number of **impact functions** that cover scenarios such as flood,
 tsunami, volcanic ash fall, earthquake and so on. You can read our impact
 function documentation to find out more information about the various
-:doc:`impact_functions` implemented.
+:doc:`./impact_functions` implemented.
 
 The formulation of these questions if carried out by loading layers into QGIS
 that represent either **hazard** or **exposure** scenarious.
