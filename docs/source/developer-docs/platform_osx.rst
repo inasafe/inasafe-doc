@@ -205,5 +205,3 @@ earlier and making the following small configuration changes:
   QGIS_PREFIX_PATH : /Applications/QGIS.app/contents/MacOS
   QGIS_PATH : /Applications/QGIS.app
 
-
-2) 
