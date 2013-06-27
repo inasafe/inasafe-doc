@@ -2,9 +2,12 @@
 {% set title = 'Live Chat' %}
 
 {% block hero %}
-    <div class="alert alert-info centered">
-            <a href="../id/index.html">Ganti ke Bahasa Indonesia!</a>
-    </div>
+    <div style="position: absolute; top: 50; right: 50; z-index: 10000;">
+            <div class="hero-unit">
+            <a href="../en/irchat.html"><img src="_static/img/flags/gb.png"></a>
+            <a href="../id/irchat.html"><img src="_static/img/flags/id.png"></a>
+            </div>
+        </div>
     <iframe src="http://webchat.freenode.net?channels=inasafe&uio=MTE9MzE28"
     width="700" height="400"></iframe>
 {% endblock %}

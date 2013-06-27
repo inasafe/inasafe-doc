@@ -2,6 +2,12 @@
 {% set title = 'Home' %}
 
 {% block hero %}
+    <div style="position: absolute; top: 50; right: 50; z-index: 10000;">
+        <div class="hero-unit">
+        <a href="../en/index.html"><img src="_static/img/flags/gb.png"></a>
+        <a href="../id/index.html"><img src="_static/img/flags/id.png"></a>
+        </div>
+    </div>
     <h2>Selamat Datang di Proyek <span class="inasafe">InaSAFE</span>!</h2>
     <p>Indonesian Scenario Assessment for Emergencies </p>
     <div id="myCarousel" class="carousel slide">
@@ -58,9 +64,6 @@
     <script type="text/javascript">$('.carousel').carousel();</script>
 {% endblock %}
 {% block body %}
-        <div class="alert alert-info centered">
-            <a href="../en/index.html">Switch to English!</a>
-        </div>
         <div class="row" id="blocks-row">
             <div class="span4">
                 {# We put the admonition inside the span because adding border #}
