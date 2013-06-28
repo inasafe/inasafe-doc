@@ -73,17 +73,17 @@ Government funded Australia-Indonesia Facility for Disaster Reduction.
 the 3 open source software tools used to enable development of realistic
 disaster scenarios for contingency planning. The other 2 tools are:
 
-#. OpenStreetMap  (OSM): is a free map of the world that anyone can add to
-   and edit.  Utilizing community mapping allows for more detailed information
+#. OpenStreetMap (OSM): is a free map of the world that anyone can add to
+   and edit. Utilizing community mapping allows for more detailed information
    that can be fed into |project_name| (i.e. How many houses will be affected
    by a specific hazard).
-#. QuantumGIS  (QGIS): an open source Geographical Information System
+#. QuantumGIS (QGIS): an open source Geographical Information System
    software that allows users to spatially analyse their data. It is also the
    platform on which |project_name| is built.
 
 |project_name| was selected as a 2012 Open Source Rookie of the Year by Black
 Duck, the trusted partner for open source software adoption,
-management and governance.  |project_name|, along with projects from groups
+management and governance. |project_name|, along with projects from groups
 such as Yahoo! and Twitter, was selected for this prestigious award from
 amongst 1,000’s of open source programs that were started in 2012.
 
