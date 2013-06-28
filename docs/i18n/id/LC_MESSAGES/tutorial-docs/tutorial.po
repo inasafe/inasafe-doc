@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-06-17 14:14\n"
-"PO-Revision-Date: 2013-06-21 10:10+0000\n"
+"PO-Revision-Date: 2013-06-27 07:49+0000\n"
 "Last-Translator: dika <mahardika.fadmastuti@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/language/id/)\n"
 "MIME-Version: 1.0\n"
@@ -361,7 +361,7 @@ msgid ""
 "where keywords are stored for datasets where it is not possible to write "
 "them into a .keywords file. See Keywords System for more information on the "
 "keywords system."
-msgstr "**Keyword cache for remote datasources:** Pilihan ini digunakan untuk menentukan di mana kata kunci (keywords) disimpan untuk dataset, dimana tidak mungkin untuk menulis kata kunci tersebut ke dalam file *.keywords. Lihat *Keywords System* untuk informasi lebih lanjut."
+msgstr "**Keyword cache for remote datasources:** Pilihan ini digunakan untuk menentukan di mana kata kunci (keywords) disimpan untuk dataset, dimana tidak mungkin untuk menulis kata kunci tersebut ke dalam file .keywords. Lihat *Keywords System* untuk informasi lebih lanjut."
 
 # 54aa2241301b405990af98c90d63d8f6
 #: ../../source/tutorial-docs/tutorial.rst:191
@@ -433,7 +433,7 @@ msgstr "Sekarang, setiap data yang akan kita integrasikan ke dalam proyek akan d
 # 656b5c778740431aa9216d62b75af409
 #: ../../source/tutorial-docs/tutorial.rst:226
 msgid "Exploring |project_name| Plugin"
-msgstr "Menjelajah Plugin |project_name|"
+msgstr "Menelusuri Plugin |project_name|"
 
 # d0348dde677e4e5585c3018f23373153
 #: ../../source/tutorial-docs/tutorial.rst:228
@@ -482,7 +482,7 @@ msgid ""
 "perform your impact analysis. The Questions area provides a simple way for "
 "you to formulate what it is you want to find out? All questions are "
 "formulated in the form:"
-msgstr "Tujuan dari |project_name| adalah untuk melakukan analisis dampak Anda dengan sederhana dan mudah. Bagian pertanyaan menyediakan cara sederhana bagi Anda untuk merumuskan apa yang Anda ingin temukan? Semua pertanyaan dirumuskan dalam bentuk sebagai berikut:"
+msgstr "Tujuan dari |project_name| adalah untuk melakukan analisis dampak dengan sederhana dan mudah. Bagian pertanyaan menyediakan cara sederhana bagi Anda untuk merumuskan apa yang Anda ingin temukan? Semua pertanyaan dirumuskan dalam bentuk sebagai berikut:"
 
 # 6f02f26a054845f180036a67bcf935e3
 #: ../../source/tutorial-docs/tutorial.rst:260
@@ -510,7 +510,7 @@ msgid ""
 "number of impact functions that cover risk scenarios such as flood, tsunami,"
 " volcanic ash fall, earthquake and so on. In our case, we will use the flood"
 " impact function."
-msgstr "Untuk menjawab pertanyaan seperti itu, pengembang |project_name| telah membangun sejumlah fungsi dampak yang mencakup skenario resiko seperti banjir, tsunami, abu vulkanik, gempa bumi dan sebagainya. Pada kasus kita, kita akan menggunakan fungsi dampak banjir."
+msgstr "Untuk menjawab pertanyaan seperti itu, pengembang |project_name| telah membangun sejumlah fungsi dampak yang mencakup skenario resiko seperti banjir, tsunami, abu vulkanik, gempa bumi, dan sebagainya. Pada kasus kita, kita akan menggunakan fungsi dampak banjir."
 
 # 84798995b6d44f1ea921328ac636b31f
 #: ../../source/tutorial-docs/tutorial.rst:272
@@ -559,7 +559,7 @@ msgid ""
 "username>\\\\desktop\\\\inasafe_data`. If they are not, you can download the"
 " data to your desktop by pressing the :guilabel:`ZIP` button on "
 "https://github.com/AIFDR/inasafe_data."
-msgstr "Untuk latihan kita, kita akan menggunakan contoh dari Jakarta, Indonesia. Data-data tersebut sudah terinstal pada komputer Anda di :file:`C:\\\\Users\\\\<your username>\\\\desktop\\\\inasafe_data`. Jika mereka tidak ada, Anda dapat mendownload data pada  komputer Anda dengan menekan tombol  :guilabel:`ZIP` dalam https://github.com/AIFDR/inasafe_data."
+msgstr "Untuk latihan kita, kita akan menggunakan contoh dari Jakarta, Indonesia. Data tersebut sudah tersimpan dalam komputer Anda di :file:`C:\\\\Users\\\\<your username>\\\\desktop\\\\inasafe_data`. Jika mereka tidak ada, Anda dapat mendownload data pada  komputer Anda dengan menekan tombol  :guilabel:`ZIP` dalam https://github.com/AIFDR/inasafe_data."
 
 # 622cc146503548138f7980790c9991f0
 #: ../../source/tutorial-docs/tutorial.rst:295
@@ -601,7 +601,7 @@ msgstr "Anda akan melihat bahwa layer mengisi area “hazard” secara otomatis 
 msgid ""
 "Data should follow a keyword metadata system that allows |project_name| to "
 "determine if the layer is a hazard or if it is an exposure."
-msgstr "Data harus mengikuti sistem metadata kata kunci yang memungkinkan |project_name| untuk menentukan apakah layer tersebut ancaman atau apakah layer tersebut keterpaparan."
+msgstr "Data harus mengikuti sistem metadata kata kunci (keyword) yang memungkinkan |project_name| untuk menentukan apakah layer tersebut berupa layer ancaman atau apakah layer tersebut merupakan layer keterpaparan."
 
 # 5f6b4012d5024aadbad9fea5e88db77e
 #: ../../source/tutorial-docs/tutorial.rst:320
@@ -626,7 +626,7 @@ msgid ""
 "under the “How many” combo. |project_name| uses the combination of category,"
 " subcategory, units and datatype keywords to determine which impact "
 "functions will be listed in the “Might” combo."
-msgstr "Anda mungkin bertanya-tanya bagaimana plugin |project_name| menentukan apakah layer harus didaftarkan dalam combo-box  “In the event of” “How many”? Plugin bergantung pada metadata kata kunci sederhana untuk diasosiasi dengan setiap layer  (*Sistem kata kunci menjelaskan dengan rinci pada manual pengguna di bawah Sistem Kata kunci*). Setiap layer memiliki kata kunci mengalokasikan kategori untuk ancaman yang akan dicantumkan pada combo  “In the event of”. Demikian pula, kategori keterpaparan pada kata kunci untuk layer akan menghasilkan di dalamnya di bawah combo “How many”. |project_name| menggunakan kombinasi kategori, subkategori, unit dan tipe data kata kunci untuk menentukan fungsi dampak yang akan dicantumkan dalam combo “Might”. "
+msgstr "Anda mungkin bertanya-tanya bagaimana plugin |project_name| menentukan apakah layer harus didaftarkan dalam combo-box  “In the event of” “How many”? Plugin bergantung pada metadata kata kunci sederhana untuk diasosiasi dengan setiap layer  (*Sistem kata kunci menjelaskan dengan rinci pada manual pengguna di bawah Sistem Kata kunci*). Setiap layer memiliki kata kunci (keyword) mengalokasikan kategori untuk ancaman yang akan dicantumkan pada combo  “In the event of”. Demikian pula, kategori keterpaparan pada kata kunci untuk layer akan menghasilkan di dalamnya di bawah combo “How many”. |project_name| menggunakan kombinasi kategori, subkategori, unit, dan tipe data kata kunci (keyword) untuk menentukan fungsi dampak yang akan dicantumkan dalam combo “Might”. "
 
 # 83ffab7fb93741aeaaabf3511826d9cf
 #: ../../source/tutorial-docs/tutorial.rst:336
@@ -642,7 +642,7 @@ msgstr "Dalam pelatihan kita, keywords sudah dibuat, sehingga data tersebut dapa
 msgid ""
 "Go to the |project_name| tools on the toolbar, click on the "
 ":guilabel:`Keyword Editor` icon."
-msgstr "Arahkan ke alat |project_name| dalam toolbar, klik pada ikon  :guilabel:`Keyword Editor`."
+msgstr "Arahkan tool |project_name| dalam toolbar, klik pada ikon  :guilabel:`Keyword Editor`."
 
 # 70f0af1c85a744418db374307db20d67
 #: ../../source/tutorial-docs/tutorial.rst:347
@@ -725,7 +725,7 @@ msgstr "Pilih file \"OSM_building_footprints_20120629_Jakarta_All.shp\" dari fol
 # 2ad7f86b874d44169cfcde6da22eb6b9
 #: ../../source/tutorial-docs/tutorial.rst:397
 msgid "Click :guilabel:`Open`"
-msgstr "Klik  :guilabel:`Open`"
+msgstr "Klik :guilabel:`Open`"
 
 # 3043b45476774c2da0d50b8042b52c73
 #: ../../source/tutorial-docs/tutorial.rst:399
@@ -749,7 +749,7 @@ msgid ""
 " in advance, then we will create it by using the :menuselection:`Keyword "
 "Editor` in |project_name| from the toolbar or from the "
 ":menuselection:`Plugins` menu."
-msgstr "Pada kasus kita, kata kunci sudah dibuat. Jika kata kunci belum dibuat di awal, kemudian kita akan membuatnya dengan menggunakan :menuselection:`Keyword Editor` di |project_name| dari toolbar atau dari menu :menuselection:`Plugins`."
+msgstr "Pada kasus kita, kata kunci (keyword) sudah dibuat. Jika kata kunci belum dibuat di awal, kita dapat membuatnya dengan menggunakan :menuselection:`Keyword Editor` di |project_name| dari toolbar atau dari menu :menuselection:`Plugins`."
 
 # 718c8197e8174cb0b4acba5c4ba158f1
 #: ../../source/tutorial-docs/tutorial.rst:410
@@ -789,7 +789,7 @@ msgid ""
 "hazard will be on the exposure infrastructure or people. By selecting a "
 "combination from the “In the event of” and “How many” combo boxes, an "
 "appropriate set of impact functions will be listed in the “Might” combo box."
-msgstr "Fungsi dampak (:guilabel:`&Might`) akan menggabungkan layer input ancaman dan keterpaparan secara otomatis sehingga untuk mengasumsikan apa dampak ancaman pada infrastruktur keterpaparan atau orang. Dengan memilih gabungan dari combo box “In the event of” dan “How many”, aturan sesuai dengan fungsi dampak yang akan dicantumkan di kotak combo “Might”."
+msgstr "Fungsi dampak (:guilabel:`&Might`) akan menggabungkan layer input ancaman dan keterpaparan secara otomatis sehingga untuk mengasumsikan apa dampak ancaman bencana pada infrastruktur keterpaparan atau orang. Dengan memilih gabungan dari combo box “In the event of” dan “How many”, aturan sesuai dengan fungsi dampak yang akan dicantumkan di kotak combo “Might”."
 
 # aadb5f17ba6f48e6b9cb912a03d463dc
 #: ../../source/tutorial-docs/tutorial.rst:438
@@ -801,7 +801,7 @@ msgid ""
 "filled automatically by default in the |project_name| panel dock as soon as "
 "the hazard [**flood**] and exposure [**buildings**] layers are entered "
 "correctly."
-msgstr "Skenario dampak yang telah ditetapkan tergantung pada apa yang dicari oleh pembuat keputusan. Untuk analisis banjir di Jakarta, kita hanya menetapkan fungsi dampak standar yang meminta: **Dalam kasus peristiwa banjir, berapa banyak bangunan yang mungkin ditutup sementara?** Seperti yang kita lihat ditahapan sebelumnya, ini diisi secara otomatis dengan standar pada dock panel |project_name| sebagai layer ancaman [**flood**] dan keterpaparan [**buildings**] dimasukkan dengan lengkap."
+msgstr "Skenario dampak yang telah ditetapkan tergantung pada apa yang dicari oleh pembuat keputusan. Untuk analisis banjir di Jakarta, kita hanya menetapkan fungsi dampak standar yang diminta: **Dalam kasus peristiwa banjir, berapa banyak bangunan yang mungkin ditutup sementara?** Seperti yang kita lihat ditahapan sebelumnya, ini diisi secara otomatis dengan standar pada dock panel |project_name| sebagai layer ancaman [**flood**] dan keterpaparan [**buildings**] dimasukkan dengan lengkap."
 
 # a1b1a876dfbd4f188da2ac1fcc425f2a
 #: ../../source/tutorial-docs/tutorial.rst:446
@@ -817,7 +817,7 @@ msgid ""
 " :guilabel:`Results` section, a new layer will be added in the QGIS layer "
 "panel representing the result of the impact function, and the map will "
 "differentiate affected and non-affected building."
-msgstr "Sekarang kita memiliki dua layer input dan kita mengetahui dampak apa yang akan kita nilai, klik pada tombol :guilabel:`Run` di bagian bawah untuk memulai analisis dampak. Pada akhir proses, angka akan ditampilkan paa bagian :guilabel:`Results`, layer baru akan ditambahkan pada panel layer QGIS mewakili hasil fungsi dampak, dan peta akan membedakan bangunan yang terdampak dan tidak terdampak."
+msgstr "Sekarang kita memiliki dua layer input dan kita mengetahui dampak apa yang akan kita nilai, klik pada tombol :guilabel:`Run` di bagian bawah untuk memulai analisis dampak. Pada akhir proses, angka hasil perhitungan akan ditampilkan pada bagian :guilabel:`Results`, layer baru akan ditambahkan pada panel layer QGIS mewakili hasil fungsi dampak, dan peta hasil akan membedakan secara otomatis bangunan yang terdampak dan tidak terdampak."
 
 # ddecd768ed59467fa95c6852ce23877d
 #: ../../source/tutorial-docs/tutorial.rst:461
@@ -859,7 +859,7 @@ msgid ""
 "directory depending on your operating system: Windows: "
 ":file:`C:\\\\Users\\\\<your username>\\\\.qgis\\\\python\\\\plugins`. "
 "Linux/MacOSX: :file:`$HOME/.qgis/python/plugins`."
-msgstr "Anda dapat mendownload plugin dari situs http://build.sourcepole.ch/qgis/plugins.xml, dan meletakannya di direktori plugin QGIS tergantung pada sistem operasi Anda: Windows: :file:`C:\\\\Users\\\\<your username>\\\\.qgis\\\\python\\\\plugins`. Linux/MacOSX: :file:`$HOME/.qgis/python/plugins`."
+msgstr "Anda dapat mendownload plugin dari situs http://build.sourcepole.ch/qgis/plugins.xml, dan meletakannya di direktori plugin QGIS tergantung pada sistem operasi Anda: Windows: :file:`C:\\\\Users\\\\<username Anda>\\\\.qgis\\\\python\\\\plugins`. Linux/MacOSX: :file:`$HOME/.qgis/python/plugins`."
 
 # 790a999db61d4c158b75b8ea706be1ae
 #: ../../source/tutorial-docs/tutorial.rst:485
@@ -873,7 +873,7 @@ msgstr "Untuk mengaktifkan plugin OpenLayer, arahkan ke QGIS  :menuselection:`Pl
 msgid ""
 "Once installed you should be able to use background imagery and tiles from "
 "google, yahoo, bing and OpenStreetMap."
-msgstr "Setelah terinstal, Anda harus dapat menggunakan latar belakang citra satelit dan tile dari google, yahoo, bing dan OpenStreetMap."
+msgstr "Setelah terinstal, Anda sudah bisa menggunakan latar belakang citra satelit dan tile dari google, yahoo, bing, dan OpenStreetMap."
 
 # 21be9c0931d84ea48bf7aedef6ada689
 #: ../../source/tutorial-docs/tutorial.rst:495
@@ -905,7 +905,7 @@ msgid ""
 " be done **before** clicking on the :guilabel:`Print` button of the "
 "|project_name| dock panel. The print should be only used once the data is "
 "exactly as you want it to be displayed."
-msgstr "Meskipun demikian, berbagai perubahan yang Anda inginkan untuk dibuat ke dalam dokumen peta akhir harus dilakukan **sebelum** mengklik pada tombol :guilabel:`Print` dock panel |project_name|. Tombol print hanya boleh digunakan begitu data tersebut sesuai dengan yang Anda inginkan untuk ditampilkan."
+msgstr "Meskipun demikian, berbagai perubahan yang Anda inginkan untuk dibuat ke dalam dokumen peta akhir harus dilakukan **sebelum** mengklik tombol :guilabel:`Print` dock panel |project_name|. Tombol print hanya boleh digunakan begitu data tersebut sudah sesuai dengan yang Anda inginkan untuk ditampilkan."
 
 # 10647af183c545eca8e2845d577ac707
 #: ../../source/tutorial-docs/tutorial.rst:517
@@ -924,7 +924,7 @@ msgstr "Layer hasil dari penilaian dapat disimpan dengan cara klik kanan pada la
 msgid ""
 "Then :menuselection:`Save As` a shapefile or a raster. However the keywords "
 "and statistics do not get saved."
-msgstr "Kemudian  :menuselection:`Save As` sebagai shapefile atau raster. Meskipun demikian kata kunci dan statistik tidak ikut tersimpan."
+msgstr "Kemudian  :menuselection:`Save As` sebagai shapefile atau raster. Meskipun demikian kata kunci (keyword) dan statistik tidak ikut tersimpan."
 
 # 5bb72529a38d4c07abf5d949cf657199
 #: ../../source/tutorial-docs/tutorial.rst:531
@@ -948,7 +948,7 @@ msgid ""
 "anytime you need. However, the statistical data will be lost whenever the "
 "project is closed. To get the data back, you will need to redo the impact "
 "analysis process we described above from :guilabel:`Run`."
-msgstr "Sekarang setelah proyek dismpan di dalam QGIS, Anda dapat kembali ke pekerjaan Anda kapanpun. Meskipun demikian, data statistik akan hilang ketika proyek ditutup. Untuk mendapatkannya kembali, Anda perlu melakukan redo proses analisis dampak yang telah kita jelaskan di atas dari :guilabel:`Run`."
+msgstr "Sekarang setelah proyek dismpan di dalam QGIS, Anda dapat kembali ke pekerjaan Anda kapan pun. Meskipun demikian, data statistik akan hilang ketika proyek ditutup. Untuk mendapatkannya kembali, Anda perlu melakukan redo proses analisis dampak yang telah kita jelaskan di atas dari :guilabel:`Run`."
 
 # edf4e277d1c54463b286fbb47571efe9
 #: ../../source/tutorial-docs/tutorial.rst:550
@@ -1004,7 +1004,7 @@ msgid ""
 "Go to the :guilabel:`Locale` tab, and click to :guilabel:`Override system "
 "locale`. You must close the QGIS project and reopen for the language to take"
 " hold."
-msgstr "Arahkan ke tab :guilabel:`Locale`, dan klik pada  :guilabel:`Override system locale`. Anda harus menutup proyek QGIS dan buka kembali untuk bahasa yang dipilih menjadi aktif."
+msgstr "Arahkan ke tab :guilabel:`Locale`, dan klik pada  :guilabel:`Override system locale`. Anda harus menutup proyek QGIS dan buka kembali untuk mengaktifkan bahasa yang dipilih."
 
 # aabf7589626c4419bf6cc6d851595655
 #: ../../source/tutorial-docs/tutorial.rst:590
@@ -1012,7 +1012,7 @@ msgid ""
 "At this point |project_name| has only been translated into Indonesian, "
 "however there is a framework that can support all languages outlined in "
 "QGIS."
-msgstr "Sejauh ini |project_name| hanya diterjemahkan ke dalam bahasa Indonesia, meskipun demikian ada garis besar yang dapat mendukung semua bahasa dalam QGIS."
+msgstr "Sejauh ini |project_name| hanya diterjemahkan ke dalam Bahasa Indonesia, meskipun demikian ada garis besar yang dapat mendukung semua bahasa dalam QGIS."
 
 # 70bc7c6345724ae79f46b09c981b744c
 #: ../../source/tutorial-docs/tutorial.rst:595
