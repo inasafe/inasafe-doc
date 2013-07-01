@@ -16,7 +16,7 @@ Introduction
 We have already seen InaSAFE in action. We’ve installed the plugin and have run a disaster analysis on a Jakarta flood scenario.  We learned about hazard and exposure data.  In this chapter, we’ll review what we’ve learned and go a bit further.  By now you should be pretty comfortable with QGIS, and your knowledge will continue to grow as you practice your new skills.  We will work through a disaster scenario more slowly to better understand InaSAFE, and in Unit 4 we will go to even deeper.
 
 
-      1.  Hazards, Exposures and Impact
+1.  Hazards, Exposures and Impact
 
 Let’s being by reviewing what we the inputs and outputs of InaSAFE - **hazard**, **exposure**, and **impact**.  These terms are important for you to remember because the analysis process will always depend on these three things.
 
@@ -44,7 +44,7 @@ Previously we ran InaSAFE with exposure data consisting of population data from 
 **Impact** is the result we get after InaSAFE processes the effect of the hazard data upon the exposure data.  For example, if there is an earthquake model in Lembang, and we process it against building data in Bandung, our impact layer may show those houses that would be severely damaged, those somewhat damaged, and those mildly damaged.  In other words, what goes in to InaSAFE are hazards and exposure.  What comes out is impact.
 
 
-    2.  The InaSAFE Interface
+2.  The InaSAFE Interface
 
 Before we run any scenarios, let’s take a closer look at the InaSAFE interface. Open a new project in QGIS.
 
@@ -66,7 +66,7 @@ For example: "In the event of an earthquake how many buildings might be closed?"
 The other parts of the InaSAFE we have seen in action.  The Results section is filled in with information once InaSAFE is run, and the Buttons allow us to run a scenario, print, and access help.
 
 
-     3.  Adding Hazard Data
+3.  Adding Hazard Data
 
 Hazards can be represented by vector layers or by raster layers.  Remember that raster layers are like images with many pixels, and each pixel represents some data about an area on the ground.  A raster that shows elevation, for example, will contain pixels with different values based on the altitude of the location.  Similarly, a raster that represents an earthquake will contain the magnitude of the earthquake at the time of the event in every pixel in the raster.
 
@@ -85,7 +85,7 @@ Let’s begin by adding our hazard layer to QGIS.  It’s a raster model of an earth
 You will notice that the hazard dropdown box has been automatically filled in the InaSAFE panel.  This is because the data file has already been prepared for us with keyword metadata (fancy words for settings) that tells InaSAFE whether it’s a hazard or exposure layer.  When we add the exposure data, we will learn how to do inform InaSAFE ourselves.
 
 
-    4.  Exposure
+4.  Exposure
 
 Exposure can also be represented by vectors or rasters.  In fact we’ve already seen this in the Jakarta flood scenario.  When we ran that analysis our population layer was a raster, with each pixel representing the population of a given area on the Earth.  Our buildings on the other hand, were vectors.
 
@@ -98,7 +98,7 @@ Let’s add our exposure data to QGIS - once again we will be using buildings obta
 <img src="\tutorial\intro-analysis\12_layerbox.png" />
 * Notice that unlike the hazard layer, it does not appear automatically in InaSAFE!
 
-        5.  Adding Keyword Metadata
+5.  Adding Keyword Metadata
 
 In order for InaSAFE to know that our layers are hazard or exposure datasets, we need to assign keywords to the layers using the InaSAFE keyword tool.  Let’s take a look at the keywords that have already been created on the hazard layer.
 
@@ -117,8 +117,7 @@ In order for InaSAFE to know that our layers are hazard or exposure datasets, we
 * Notice that the layer now appears in the InaSAFE dock panel.<br>
 <img src="\tutorial\intro-analysis\12_inasafefinal.png" />
 
-
-        6.  Impact Analysis
+6.  Impact Analysis
 
 Now our hazard and exposure data are set in the InaSAFE panel, because the appropriate keywords have been added to our layers.  Note that if we were to add a second exposure layer to our project, we would be able to choose which exposure layer we wanted from the InaSAFE dropdown menu.  The same applies to hazard layers.
 
@@ -131,7 +130,7 @@ The third dropdown box is the impact function (“Might”).  This concludes our que
 <img src="\tutorial\intro-analysis\12_impactanalyst2.png" />
 
 
-        7.  Improve the InaSAFE Output Map
+7.  Improve the InaSAFE Output Map
 
 We can improve our impact map by editing the symbology in QGIS.  Styles can be changed, other relevant layers can be added, and the layout can be changed using the Print Composer.
 
@@ -143,13 +142,13 @@ Let’s add Bing aerial imagery as a background for our map.
 <img src="\tutorial\intro-analysis\12_bingimagery.png" />
 
 
-        8.  Using the Print Button
+8.  Using the Print Button
 
 The data displayed on the screen can be saved to a PDF file by clicking Print at the bottom of the InaSAFE panel.  As we’ve seen already, two files will be created, one containing the map and another the data.  Note that you can adjust the print out of your map by adding layers and changing symbologies, and also by zooming to areas of your choosing.<br>
 <img src="\tutorial\intro-analysis\12_printbutton.png" />
 
 
-     9.  Save Your Results
+9.  Save Your Results
 
 You can save the impact layer that InaSAFE created, and you can save the QGIS project to come back to it later, but note that the InaSAFE statistics cannot be saved (except when you save them in a PDF).  To get the statistics again in QGIS, you will need to run the analysis again.
 
