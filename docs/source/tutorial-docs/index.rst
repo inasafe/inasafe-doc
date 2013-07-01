@@ -10,6 +10,7 @@ system.
 
    tutorial
    socialisation/index
+   intro-analysis/index
 
 Training Materials
 ------------------
@@ -24,4 +25,23 @@ Training Materials
    socialisation/inasafe-in-more-detail
    socialisation/other-hazards
    socialisation/helpful-hints-and-tips
+
+Tutorials
+---------
+
+.. toctree::
+   :maxdepth: 2
+
+   intro-analysis/basic-qgis
+   intro-analysis/inasafe-scenario
+   intro-analysis/map-projection
+   intro-analysis/raster
+   intro-analysis/working-vector
+   intro-analysis/categorize-labelling
    intro-analysis/introduction
+   intro-analysis/new-vector
+   intro-analysis/understanding-inasafe
+   intro-analysis/getting-support
+   intro-analysis/map-composer
+   intro-analysis/qgis-plugins
+   intro-analysis/vector-analysis
