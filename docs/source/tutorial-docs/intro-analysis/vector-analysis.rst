@@ -15,14 +15,13 @@ The power of GIS is its ability to help us analyze data.  Vector data can be ana
 1.  The GIS Process
 	   
 Before we start, it would be useful to give a brief overview of a process that can be used to solve any GIS problem.  The steps are simple:
-
 1. State the Problem
 2. Get the Data
 3. Analyze the Problem
 4. Present the Results
 
 
-        2.  The Problem
+2.  The Problem
 	   
 Let’s start off the process by deciding on a problem to solve.  Let’s say you’re a disaster manager, and you need to provide the best locations to place refugees (IDPs) in villages surrounding Mount Merapi when it erupts. You’ve come up with the following criteria for these locations:
 
@@ -33,7 +32,7 @@ Let’s start off the process by deciding on a problem to solve.  Let’s say you’re
  5. The land area should be between 50000-150000 m².
 
 
-        3.  The Data
+3.  The Data
 	  
 To answer these questions, we’re going to need the following data:
  1. Landuse in Sleman regency
@@ -43,7 +42,7 @@ To answer these questions, we’re going to need the following data:
 <br>For this exercise the data has been provided already, but in a real scenario you may need to find providers for the datasets in question.  In Indonesia, the National Land Agency and BNPB Bappeda are good sources for the types of data you will need, and OpenStreetMap can be used as a source for roads and infrastructure.
 
 
-     4. Start a Project
+4. Start a Project
 	 
 So now that we know what we want to do, let’s start doing it!
 
@@ -66,7 +65,7 @@ The data we are working with now is similar to that from previous chapters, but 
 
 Now that we’ve got the data, let’s analyze the problem!
 
-     5.Analyzing the Problem: Farms and Dry Fields
+5.Analyzing the Problem: Farms and Dry Fields
 	 
 The first criterion we’re facing is that the land must be a farm or dry field, and it must be in one of three areas.  So let’s tell QGIS to only show us the farms and dry fields that are, in fact, in these sub-districts!
 
@@ -102,7 +101,7 @@ We are going to build a query.  A query is a statement that allows us to show on
 Well done!  We’ve applied our first criteria to begin solving the problem!
 
 
-     6.The Danger Zone
+6.The Danger Zone
 
 Our next criteria is that our chosen location should be outside of the danger zone, which is defined by the layer ***KRB III.***  For this we can use the Spatial Query tool.
 
@@ -130,7 +129,7 @@ The next steps of our analysis will be easier if we save this selection as a sep
 <img src="\tutorial\intro-analysis\10_layer.png" />
 
 
-        7.  Finding Important Roads
+7.  Finding Important Roads
 
 We have a problem with our roads layer, similar to that of our vegetation layer.  Our roads layer has too many roads!  We only want to use main roads for our analysis, so that we can meet the criteria that our location is within 300 meters of a major road.  Once again, we will use the Query Builder.
 
@@ -142,13 +141,13 @@ We have a problem with our roads layer, similar to that of our vegetation layer.
 
 
 
-        8.  Looking for Health Facilities
+8.  Looking for Health Facilities
 
 * Using the same approach, build a query for the ***lokasi_penting*** layer as shown:
 "Fungsi" = 'Kesehatan'
 
 
-        9.  Buffering Roads
+9.  Buffering Roads
 
 Okay, we’ve refined our data a bit so that it shows us the features we are interested in analyzing.  Remember that according to our criteria our land area should be within 300 meters of a main road and close to a health facility.  QGIS allows us to calculate distances from any vector object, and we will use this functionality to help us reach a solution.
 
@@ -177,7 +176,7 @@ Note that we input the buffer distance in meters.  Good thing we used projected 
 Interesting!  Those big fat lines are actually areas that are within 300 meters of primary and secondary roads.
 
 
-     10.Buffering Health Facilities
+10.Buffering Health Facilities
 
 * Now try it yourself!  Using the same approach, create a new buffer layer around your health facilities.  The buffer should be 2.5 km in radius, and save the new layer in the same directory as ***buffer_fas_kesehatan_2.5km.shp.***  Your resulting map will look something like this:<br>
 <img src="\tutorial\intro-analysis\10_buffer3.png" />
@@ -186,7 +185,7 @@ Interesting!  Those big fat lines are actually areas that are within 300 meters 
 
 
 
-     11.Overlapping Areas
+11.Overlapping Areas
 
 Now we can see areas where a main road is 300 meters away and where there is a health facility within 2.5 km.  But we only want the areas where both of these criteria are satisfied at once!  To do that we will use the Intersect tool.
 
@@ -200,7 +199,7 @@ Now we can see areas where a main road is 300 meters away and where there is a h
 <img src="\tutorial\intro-analysis\10_buffer4.png" />
 
 
-     12.Select Farms and Dry Fields
+12.Select Farms and Dry Fields
 Now we have the layer ***kebun_tegalan***, which satisfies two of our criteria, and the layer ***intersect_buffer_jalan_kesehatan.shp*** which satisfied two other criteria.  We need to know where they overlap!
 
 * Go to Vector ? Research Tools ? Select by location.  A dialog will appear.
@@ -219,7 +218,7 @@ Let’s save this selection as a new layer.
 <img src="\tutorial\intro-analysis\10_buffer6.png" />
 
 
-     13.Select Land Areas of the Appropriate Size
+13.Select Land Areas of the Appropriate Size
 Hooray!  We have now found land areas that meet four of our five criteria.  The only remaining criteria is the size of the land.  We need to make sure that our possible locations are between 50000-150000 m².
 
 * Open the attribute table for the ***kebun_tegalan_lokasi_terpilih*** layer.  You’ll notice that there is a column named luas_ha.  This is the size of the area in hectares.  We could use this field to answer our question, but let’s add another column that contains the size of the area in square meters.
