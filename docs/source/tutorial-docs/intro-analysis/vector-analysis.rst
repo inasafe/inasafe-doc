@@ -24,7 +24,6 @@ Before we start, it would be useful to give a brief overview of a process that c
 2.  The Problem
 	   
 Let’s start off the process by deciding on a problem to solve.  Let’s say you’re a disaster manager, and you need to provide the best locations to place refugees (IDPs) in villages surrounding Mount Merapi when it erupts. You’ve come up with the following criteria for these locations:
-
  1. The area should be a dry field or farm in the districts Ngemplak, Turi or Pakem.
  2. The area must be outside of Merapi Eruption Disaster Prone Region III.
  3. Access to the site should be easy, so it will not be more than 300 meters from a main roads.
