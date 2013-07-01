@@ -72,10 +72,11 @@ Quantum GIS (QGIS) is a user friendly open-source Geographic Information System 
 
 
 QGIS is awesome because:
-1. It’s completely free.  It doesn’t cost anything.
-2. It’s free, as in liberty.  If you think a feature is missing, you can sponsor the development of a feature, or add it yourself if you are familiar with programming.
-3. It’s constantly developing and improving.  Because many people continue adding features, it keeps getting better.
-4. Extensive help and documentation is available.  If you have problems you can always turn to the software documentation, other QGIS users, or even the developers.
+
+- It’s completely free.  It doesn’t cost anything.
+- It’s free, as in liberty.  If you think a feature is missing, you can sponsor the development of a feature, or add it yourself if you are familiar with programming.
+- It’s constantly developing and improving.  Because many people continue adding features, it keeps getting better.
+- Extensive help and documentation is available.  If you have problems you can always turn to the software documentation, other QGIS users, or even the developers.
 
 
 QGIS has many plugins which extend the core functionality of the software.  One of these plugins is InaSAFE, which can be used to analyze the impact of a disaster and create a list of actions needed to be taken when a disaster occurs.  QGIS and InaSAFE can also help to determine the location of ideal places of refuge, evacuation routes, areas likely to be damaged, and more.
