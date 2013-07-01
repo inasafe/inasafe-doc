@@ -4,10 +4,10 @@ Introduction
 Learning Objectives
 --------------------
 
-1. Understand the concept of GIS
-2. Understand the benefits of GIS in informing contingency plan 
-3. Understand the use of QGIS/InaSAFE
-4. Understand the benefits of using QGIS/InaSAFE for developing disaster scenario to inform contingency planning
+* Understand the concept of GIS
+* Understand the benefits of GIS in informing contingency plan 
+* Understand the use of QGIS/InaSAFE
+* Understand the benefits of using QGIS/InaSAFE for developing disaster scenario to inform contingency planning
 
 
 Data vs. Information
@@ -32,27 +32,29 @@ A Geographic Information System (GIS) is a system designed to enable people to w
 
 
 GIS provides different ways to analyze data.  It enables us to ask complex questions, such as:
-1. where are all schools with more than 100 students?
-2. how many children live in a certain district?
-3. How many women live within 500 meters of a certain hospital?
-4. What is the shortest walking path from a given point to a hospital?
+* *where are all schools with more than 100 students?*
+* *how many children live in a certain district?*
+* *How many women live within 500 meters of a certain hospital?*
+* *What is the shortest walking path from a given point to a hospital?*
 
 
 GIS helps us to answer these sorts of questions.  In the previous unit we learned how to collect data, and in this unit we will see how to analyze it.
  
 GIS for Preparing Contingency Plans
+-----------------------------------
+
 GIS has an important role in contingency planning.  A contingency plan is intended to support community preparedness to anticipate the arrival of a potentially hazardous event, such as an earthquake or tsunami. [a] The purpose of such a plan is to minimize casualties and losses in case of such an event.
 
 
 Before contemplating a contingency plan, one must first consider potential disaster scenarios.  A good plan will likely answer questions such as:
-1. what sort of disaster would be likely to happen?
-2. how widespread will the impact be?
-3. who is responsible for helping?
-4. what can be given as aid?
-5. where are the priority areas?
+* *what sort of disaster would be likely to happen?*
+* *how widespread will the impact be?*
+* *who is responsible for helping?*
+* *what can be given as aid?*
+* *where are the priority areas?*
 
 
-In other words, a contingency plan answers the question, who does what, where and when?
+In other words, a contingency plan answers the question, ***who does what, where and when?***
 
 
 A Geographic Information System is able to help planners answer these questions, especially the important spatial elements of contingency planning.  GIS may be used to model hazardous events so that they can be better predicted and reduce risk.  It may be used to plan evacuation routes prior to a disaster.  When a disaster occurs, GIS may also play a role in the emergency response phase.  It can be used to map the area affected and position of refugee camps, so that helpers can be directed to the most useful locations to aid those affected.  After a disaster, GIS may also be used to plan for rehabilitation and reconstruction.  Overall, GIS helps to perform analysis of a disaster, damage and losses caused, and opportunities for reducing risk.
