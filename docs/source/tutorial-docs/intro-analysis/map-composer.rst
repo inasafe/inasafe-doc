@@ -135,7 +135,7 @@ When you are finished, your map layout should look similiar to this:<br>
 <img src="\tutorial\intro-analysis\11_maplayout3.png" />
 
 
-7.Print!
+8. Print!
 
  * Lastly, you can print your map.  This part is easy, you can simply click the “Print” button and follow the dialog.<br>
 <img src="\tutorial\intro-analysis\11_printbutton.png" />
