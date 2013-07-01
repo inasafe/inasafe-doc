@@ -24,7 +24,7 @@ Note that if you followed along with the instructions in the introduction to thi
 
 ### 1. Get Quantum GIS
 * The Quantum GIS installer is contained in the file package that comes with this guide, in ***software/QGIS-OSGeo4W-1.8.0-2-Setup.exe.***  If you have this file, skip to section 2.  Otherwise you can download it from the QGIS website.
-* Open your web browser and in the address bar at the top of the window, type (https://qgis.org) .  Press enter.
+* Open your web browser and in the address bar at the top of the window, type <https://qgis.org>`_. Press enter.
 
 <img src="\tutorial\intro-analysis\2_1.png" />
 
@@ -166,7 +166,7 @@ Now we will add an additional layer containing roads to our project.
 * Navigate to the file ***qgis/Sleman/Jalan_Sleman_OSM.shp*** (in the training directory). Select the file and click Open.
 
 
-NOTE:  One of the most common file formats are **shapefiles**, which end with the extension **.shp**.  Shapefiles are often used to save geodata, and are commonly used with GIS applications like Quantum GIS.
+.. note::  One of the most common file formats are **shapefiles**, which end with the extension **.shp**.  Shapefiles are often used to save geodata, and are commonly used with GIS applications like Quantum GIS.
 
 
 * You should now see your new layer appear both in the map canvas and in the layers list.  It should be drawn above both the district and railway layers.
@@ -176,15 +176,17 @@ NOTE:  One of the most common file formats are **shapefiles**, which end with th
 ### 5.  Basic QGIS Tools
 We’ve already taken a look at the QGIS toolbar and seen the tools for opening a project and adding a new layer.  Here’s a list of some other commonly used tools.  Feel free to play around with them if you like.  The important thing for now is to start getting familiar with QGIS.
 
+.. table::
 
-| <img src="\tutorial\intro-analysis\2_26.png" /> | Toggle Editing        | Edit features in a layer  	    				|
-| <img src="\tutorial\intro-analysis\2_27.png" /> | Pan Map				  | Drag the map to a new location  				|
-| <img src="\tutorial\intro-analysis\2_28.png" /> | Zoom In      		  | Zoom in on the map             					|
-| <img src="\tutorial\intro-analysis\2_29.png" /> | Zoom Out			  | Zoom out on the map   							|
-| <img src="\tutorial\intro-analysis\2_30.png" /> | Zoom Full      		  | Zoom so that all layers fit in the map window   |
-| <img src="\tutorial\intro-analysis\2_31.png" /> | Open Attribute Table  | Open a layer’s attribute table  				|
-| <img src="\tutorial\intro-analysis\2_32.png" /> | Select Single Feature | Select a feature in the selected layer  		|	
-	
+	================================================ ======================= ================================================
+	<img src="\tutorial\intro-analysis\2_26.png" />   Toggle Editing          Edit features in a layer  	    		
+	<img src="\tutorial\intro-analysis\2_27.png" />   Pan Map				  Drag the map to a new location  				
+	<img src="\tutorial\intro-analysis\2_28.png" />   Zoom In      		  	  Zoom in on the map             					
+	<img src="\tutorial\intro-analysis\2_29.png" />   Zoom Out			      Zoom out on the map   							
+	<img src="\tutorial\intro-analysis\2_30.png" />   Zoom Full      		  Zoom so that all layers fit in the map window   
+	<img src="\tutorial\intro-analysis\2_31.png" />   Open Attribute Table    Open a layer’s attribute table  				
+	<img src="\tutorial\intro-analysis\2_32.png" />   Select Single Feature   Select a feature in the selected layer  			
+	================================================ ======================= =================================================
 
 ### 6. Navigate the Map
 - Before we examine the attributes of individual features, let’s take a quick look at how to navigate the map.  The main controls for moving the map around and zooming in and out are by default on the panels at the top of QGIS.
