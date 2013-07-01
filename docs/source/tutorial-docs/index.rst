@@ -24,3 +24,4 @@ Training Materials
    socialisation/inasafe-in-more-detail
    socialisation/other-hazards
    socialisation/helpful-hints-and-tips
+   intro-analysis/introduction
