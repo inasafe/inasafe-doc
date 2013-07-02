@@ -1,6 +1,6 @@
-======================================
-|project_name| developer documentation
-======================================
+=======================
+Developer documentation
+=======================
 
 Additional useful links for developers:
 

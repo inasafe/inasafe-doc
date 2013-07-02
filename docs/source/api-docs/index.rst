@@ -1,5 +1,5 @@
-InaSAFE API documentation
-===========================
+API documentation
+=================
 
 This is the API documentation for the InaSAFE project.
 You can find out more about the InaSAFE project by visiting

@@ -1,6 +1,6 @@
-=================================
-|project_name| user documentation
-=================================
+==================
+User documentation
+==================
 
 This section of the documentation describes how to use the |project_name|
 system.
