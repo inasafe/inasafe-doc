@@ -48,12 +48,12 @@ Previously we ran InaSAFE with exposure data consisting of population data from 
 
 Before we run any scenarios, let’s take a closer look at the InaSAFE interface. Open a new project in QGIS.
 
-* If the InaSAFE toolbar is not visible, right-click on the toolbars and make sure that “Plugins” is checked.  The toolbar looks like this:<br>
-<img src="\tutorial\intro-analysis\12_inasafetoolbar.png" />
-* To show the InaSAFE panel, click on the button named “Toggle InaSAFE dock.”<br>
-<img src="\tutorial\intro-analysis\12_inasafedock.png" />
-* Note that just like QGIS toolbars, you can drag and drop the InaSAFE dock panel to change its position on the QGIS interface.  You can pull it away as a separate window, or place it below the Layers list.  It’s quite convenient in its location on the right side of QGIS, so we will leave it there.<br>
-<img src="\tutorial\intro-analysis\12_inasafebox.png" />
+* If the InaSAFE toolbar is not visible, right-click on the toolbars and make sure that “Plugins” is checked.  The toolbar looks like this:
+.. image:: /static/tutorial/intro-analysis/12_inasafetoolbar.png
+* To show the InaSAFE panel, click on the button named “Toggle InaSAFE dock.
+.. image:: /static/tutorial/intro-analysis/12_inasafedock.png
+* Note that just like QGIS toolbars, you can drag and drop the InaSAFE dock panel to change its position on the QGIS interface.  You can pull it away as a separate window, or place it below the Layers list.  It’s quite convenient in its location on the right side of QGIS, so we will leave it there.
+.. image:: /static/tutorial/intro-analysis/12_inasafebox.png
 
 
 The InaSAFE panel consists of three parts: Questions, Results and Buttons.  The questions are mixed in with dropdown boxes - this is where we establish our input data and define the scenario that we want InaSAFE to process.  The purpose of InaSAFE is to make your impact analysis very simple and easy to do.  The Questions section provides a simple way for you to formulate what you want to know.  All questions are created in the following format:
@@ -76,10 +76,10 @@ An earthquake can also be modelled with vector data, although the detail of the 
 
 Let’s begin by adding our hazard layer to QGIS.  It’s a raster model of an earthquake in Lembang.
 
-* Click the “Add Raster Layer” button.<br>
-<img src="\tutorial\intro-analysis\12_rasterlayer.png" />
+* Click the “Add Raster Layer” button.
+.. image:: /static/tutorial/intro-analysis/12_rasterlayer.png
 * Navigate to the **qgis/Bandung** folder and add **Lembang_Earthquake_Scenario.asc.** This data is raster data (in ASCII format) which represents the magnitude of the earthquake. The layer will look like this:<br>
-<img src="\tutorial\intro-analysis\12_hazarddata.png" />
+.. image:: /static/tutorial/intro-analysis/12_hazarddata.png
 
 
 You will notice that the hazard dropdown box has been automatically filled in the InaSAFE panel.  This is because the data file has already been prepared for us with keyword metadata (fancy words for settings) that tells InaSAFE whether it’s a hazard or exposure layer.  When we add the exposure data, we will learn how to do inform InaSAFE ourselves.
@@ -92,30 +92,30 @@ Exposure can also be represented by vectors or rasters.  In fact we’ve already s
 
 Let’s add our exposure data to QGIS - once again we will be using buildings obtained from OpenStreetMap.
 
-* Click on the “Add Vector Layer” button.<br>
-<img src="\tutorial\intro-analysis\12_vectorlayer.png" />
-* Add the file **Bangunan_Bandung.shp**, which is located in the **qgis/Bandung** folder.<br>
-<img src="\tutorial\intro-analysis\12_layerbox.png" />
+* Click on the “Add Vector Layer” button.
+.. image:: /static/tutorial/intro-analysis/12_vectorlayer.png
+* Add the file **Bangunan_Bandung.shp**, which is located in the **qgis/Bandung** folder.
+.. image:: /static/tutorial/intro-analysis/12_layerbox.png
 * Notice that unlike the hazard layer, it does not appear automatically in InaSAFE!
 
 ### 5.  Adding Keyword Metadata
 
 In order for InaSAFE to know that our layers are hazard or exposure datasets, we need to assign keywords to the layers using the InaSAFE keyword tool.  Let’s take a look at the keywords that have already been created on the hazard layer.
 
-* Select the earthquake layer in the Layers list, and click on the “InaSAFE Keyword Editor” button.<br>
-<img src="\tutorial\intro-analysis\12_inasafeeditor.png" />
-* You can see that this layer has already been assigned some keyword information for InaSAFE, including its title, a category, and a subcategory.<br>
-<img src="\tutorial\intro-analysis\12_keywordeditor1.png" />
+* Select the earthquake layer in the Layers list, and click on the “InaSAFE Keyword Editor” button.
+.. image:: /static/tutorial/intro-analysis/12_inasafeeditor.png
+* You can see that this layer has already been assigned some keyword information for InaSAFE, including its title, a category, and a subcategory.
+.. image:: /static/tutorial/intro-analysis/12_keywordeditor1.png
 
 
-* Click OK, and now select the Bangunan_Bandung layer and open the keyword editor.<br>
-<img src="\tutorial\intro-analysis\12_keywordeditor2.png" />
+* Click OK, and now select the Bangunan_Bandung layer and open the keyword editor.
+.. image:: /static/tutorial/intro-analysis/12_keywordeditor2.png
 
 
 * You’ll notice that title and category are set, but not the subcategory!
 * Change this to “structure,” and then click OK.
-* Notice that the layer now appears in the InaSAFE dock panel.<br>
-<img src="\tutorial\intro-analysis\12_inasafefinal.png" />
+* Notice that the layer now appears in the InaSAFE dock panel.
+.. image:: /static/tutorial/intro-analysis/12_inasafefinal.png
 
 ### 6.  Impact Analysis
 
@@ -125,9 +125,9 @@ Now our hazard and exposure data are set in the InaSAFE panel, because the appro
 The third dropdown box is the impact function (“Might”).  This concludes our question, and defines the function that InaSAFE will run behind the scenes.  InaSAFE developers have written many of these functions to analyze all sorts of hazard and exposure layers.  The function that is selected for us here will process the hazard and exposure layers spatially to determine how the exposure layer will “be affected.”
 
 
-* Click the “Run” button at the bottom to start the impact analysis.  At the end of the process, the statistics will be displayed in the Results section, and a new layer will be added to the Layers list that describes the result of the analysis.  The map will distinguish between buildings that are affected and those that are not.<br>
-<img src="\tutorial\intro-analysis\12_impactanalyst1.png" /><br>
-<img src="\tutorial\intro-analysis\12_impactanalyst2.png" />
+* Click the “Run” button at the bottom to start the impact analysis.  At the end of the process, the statistics will be displayed in the Results section, and a new layer will be added to the Layers list that describes the result of the analysis.  The map will distinguish between buildings that are affected and those that are not.
+.. image:: /static/tutorial/intro-analysis/12_impactanalyst1.png
+.. image:: /static/tutorial/intro-analysis/12_impactanalyst2.png
 
 
 ### 7.  Improve the InaSAFE Output Map
@@ -138,14 +138,14 @@ We can improve our impact map by editing the symbology in QGIS.  Styles can be c
 Let’s add Bing aerial imagery as a background for our map.
 
 * Go to Plugins ? OpenLayers plugin ? Add Bing Aerial layer.
-* Drag the layer below your new impact layer.  If the buildings don’t show correctly above the imagery, right-click on the layer and select “Update drawing order.”<br>
-<img src="\tutorial\intro-analysis\12_bingimagery.png" />
+* Drag the layer below your new impact layer.  If the buildings don’t show correctly above the imagery, right-click on the layer and select “Update drawing order.”
+.. image:: /static/tutorial/intro-analysis/12_bingimagery.png
 
 
 ### 8.  Using the Print Button
 
-The data displayed on the screen can be saved to a PDF file by clicking Print at the bottom of the InaSAFE panel.  As we’ve seen already, two files will be created, one containing the map and another the data.  Note that you can adjust the print out of your map by adding layers and changing symbologies, and also by zooming to areas of your choosing.<br>
-<img src="\tutorial\intro-analysis\12_printbutton.png" />
+The data displayed on the screen can be saved to a PDF file by clicking Print at the bottom of the InaSAFE panel.  As we’ve seen already, two files will be created, one containing the map and another the data.  Note that you can adjust the print out of your map by adding layers and changing symbologies, and also by zooming to areas of your choosing.
+.. image:: /static/tutorial/intro-analysis/12_printbutton.png
 
 
 ### 9.  Save Your Results
@@ -159,10 +159,10 @@ You can save the impact layer that InaSAFE created, and you can save the QGIS pr
 
 To save the project:
 
-* Click on the “Save Project” button at the top of QGIS.<br>
-<img src="\tutorial\intro-analysis\12_disket.png" />
+* Click on the “Save Project” button at the top of QGIS.
+.. image:: /static/tutorial/intro-analysis/12_disket.png
 * Give a name to the project and put it in the directory you want to save your work. Then click Save.<br>
-<img src="\tutorial\intro-analysis\12_projectbox.png" />
+.. image:: /static/tutorial/intro-analysis/12_projectbox.png
  
 
 
