@@ -2,7 +2,6 @@ Module:  safe.engine.interpolation
 ==================================
 
 .. automodule:: safe.engine.interpolation
-
-      :members:
+   :members:
 
 This module forms part of the `InaSAFE <http://inasafe.org>`_ tool.

@@ -80,8 +80,8 @@ def create_module_rst_file(module_name):
     return_text = 'Module:  ' + module_name
     dash = '=' * len(return_text)
     return_text += '\n' + dash + '\n\n'
-    return_text += '.. automodule:: ' + module_name + '\n\n'
-    return_text += '      :members:\n\n'
+    return_text += '.. automodule:: ' + module_name + '\n'
+    return_text += '   :members:\n\n'
     return_text += 'This module forms part of the `InaSAFE '
     return_text += '<http://inasafe.org>`_ tool.'
 

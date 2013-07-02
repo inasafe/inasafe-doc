@@ -2,7 +2,6 @@ Module:  safe.engine.impact_functions_for_testing.itb_fatality_model_configurabl
 =================================================================================
 
 .. automodule:: safe.engine.impact_functions_for_testing.itb_fatality_model_configurable
-
-      :members:
+   :members:
 
 This module forms part of the `InaSAFE <http://inasafe.org>`_ tool.

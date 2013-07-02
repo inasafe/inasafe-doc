@@ -2,7 +2,6 @@ Module:  safe.messaging.item.image
 ==================================
 
 .. automodule:: safe.messaging.item.image
-
-      :members:
+   :members:
 
 This module forms part of the `InaSAFE <http://inasafe.org>`_ tool.
