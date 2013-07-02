@@ -26,26 +26,29 @@ Note that if you followed along with the instructions in the introduction to thi
 * The Quantum GIS installer is contained in the file package that comes with this guide, in ***software/QGIS-OSGeo4W-1.8.0-2-Setup.exe.***  If you have this file, skip to section 2.  Otherwise you can download it from the QGIS website.
 * Open your web browser and in the address bar at the top of the window, type <https://qgis.org>`_. Press enter.
 
-<img src="\tutorial\intro-analysis\2_1.png" />
+.. image:: /static/intro-analysis/2_1.jpg
+   :align: center
 
 * The QGIS website will look something like this:
 
-<img src="\tutorial\intro-analysis\2_2.png" />
+.. image:: /static/intro-analysis/2_2.jpg
+   :align: center
 
 * Click ‘Download Now Free!”
 
-<img src="\tutorial\intro-analysis\2_3.png" />
+.. image:: /static/intro-analysis/2_3.jpg
+   :align: center
 
 * If you are using Windows click on **1.1 Standalone Installer (recommended for new users)**.
 
-<img src="\tutorial\intro-analysis\2_4.png" />
+.. image:: /static/intro-analysis/2_4.jpg
+   :align: center
 
 * If you are not using Windows, select your Operating System from the menu.
 * Click on “Download QGIS”
 
-<img src="\tutorial\intro-analysis\2_5.png" />
-
-
+.. image:: /static/intro-analysis/2_5.jpg
+   :align: center
 
 * When the file is downloaded, run it and follow the instructions to install Quantum GIS.
 
@@ -53,50 +56,59 @@ Note that if you followed along with the instructions in the introduction to thi
 ### 2. Install Quantum GIS
 * Open the folder where you have the QGIS installation file.
 
-<img src="\tutorial\intro-analysis\2_6.png" />
+.. image:: /static/intro-analysis/2_6.jpg
+   :align: center
 
 * Run the installation file. If you are installing QGIS version 1.8.0, it should look like this:
 
-<img src="\tutorial\intro-analysis\2_7.png" />
+.. image:: /static/intro-analysis/2_7.jpg
+   :align: center
 
 * Click Next.
 * Click “I Agree” to agree with the conditions in the license agreement.
 
-<img src="\tutorial\intro-analysis\2_8.png" />
+.. image:: /static/intro-analysis/2_8.jpg
+   :align: center
 
 * The next window asks where you would like to install QGIS.  In most cases, the default should be fine.  Click Next.
 
-<img src="\tutorial\intro-analysis\2_9.png" />
+.. image:: /static/intro-analysis/2_9.jpg
+   :align: center
 
 * In the next window, Click “Install” without checking any of the boxes.
 
-<img src="\tutorial\intro-analysis\2_10.png" />
+.. image:: /static/intro-analysis/2_10.jpg
+   :align: center
 
 * QGIS will begin to install.  It may take a few minutes to complete.
 
-<img src="\tutorial\intro-analysis\2_11.png" />
+.. image:: /static/intro-analysis/2_11.jpg
+   :align: center
 
 * Click “Finish” to complete the installation.
 * You can now open QGIS from your Start Menu.
 
-<img src="\tutorial\intro-analysis\2_12.png" />
+.. image:: /static/intro-analysis/2_12.jpg
+   :align: center
 
 * Quantum GIS will look something like this:
 
-<img src="\tutorial\intro-analysis\2_13.png" />
+.. image:: /static/intro-analysis/2_13.jpg
+   :align: center
 
 ### 3. The QGIS Layout
 In this section we will open up a QGIS project, and take a look at the different pieces of the QGIS interface.  If you installed InaSAFE previously, make sure it is closed by clicking on the X in the upper right corner of the InaSAFE panel.  If  it isn’t open or you haven’t installed it yet, carry on.  We will come back to this later.
 
-<img src="\tutorial\intro-analysis\2_14.png" />
+.. image:: /static/intro-analysis/2_14.jpg
+   :align: center
 
 * Click on the folder icon on the upper toolbar or go to File ? Open Project...
 
 * Navigate to the tutorial files and go into the ***qgis***/ directory.  Open the file named ***sleman_2_2.qgs***.
 * QGIS should now look something like the following image.  Let’s pause for a moment and go over the various components of the QGIS interface.
 
-<img src="\tutorial\intro-analysis\2_15.png" />
-
+.. image:: /static/intro-analysis/2_15.jpg
+   :align: center
 
 ***Map Canvas***
 This is the window where the map is shown.  Our project has two different files open, one which shows districts of the Sleman regency, and another that shows the railway line running through the area.  You can see both of these files are drawn together in the map canvas.
@@ -106,13 +118,15 @@ This is the window where the map is shown.  Our project has two different files 
 On the left side of QGIS is the layers list.  This lists the layers, or files, that are loaded into our QGIS project.  In this project, we have two layers, ***Kecamatan_Sleman*** and ***railway_Sleman_OSM***.  The layers panel not only shows all the files that are currently open, it also determines the order that they will be drawn on the map canvas.  A layer that is at the bottom of the list will be drawn first, and any layers above it will be drawn on top.
 * Click on the layer ***railway_Sleman_OSM*** and drag it below the layer named ***Kecamatan_Sleman***.
 
-<img src="\tutorial\intro-analysis\2_16.png" />
+.. image:: /static/intro-analysis/2_16.jpg
+   :align: center
 
 * Notice how the map canvas changes.  The railway layer is now shown below the district layer, and part of the railway is now obscured.  A map will never show railway hidden beneath district areas, so go ahead and move the layers back.
 * Uncheck the box next to a layer’s name.  It will be hidden from the map canvas.
 * You can expand collapsed items by clicking the arrow or plus symbol beside them.  This will provide you with more information on the layer’s current appearance.
 
-<img src="\tutorial\intro-analysis\2_17.png" />
+.. image:: /static/intro-analysis/2_17.jpg
+   :align: center
 
 * Right-click on a layer to view a menu with menu extra options.  You’ll be using some of them before long, so take a look around!
 
@@ -120,16 +134,19 @@ On the left side of QGIS is the layers list.  This lists the layers, or files, t
 ***Toolbars***
 At the top of QGIS are a large number of tools, which are contained within various “toolbars.”  For example, the File toolbar allows you to save, load, print, and start a new project.  We already used one of these tools when we opened this project.
 
-<img src="\tutorial\intro-analysis\2_18.png" />
+.. image:: /static/intro-analysis/2_18.jpg
+   :align: center
 
 * By hovering your mouse over an icon, the name of the tool will appear to help you identify each tool.
 * The number of tools (buttons) can seem a bit overwhelming at first, but you will gradually get to know them.  The tools are grouped into related functions on toolbars.  If you look closed you can see a vertical array of ten dots to the left of each toolbar.  If you grab these with your mouse, you can move the toolbar to a more convenient location, or separate it so that it sits on its own.
 
-<img src="\tutorial\intro-analysis\2_19.png" />
+.. image:: /static/intro-analysis/2_19.jpg
+   :align: center
 
 * If you feel overwhelmed by the number of toolbars, you can customize the interface to see only the tools you use most often, adding or removing toolbars as necessary.  To add or remove a toolbar, right-click on any of the toolbars, or go to View ? Toolbars.
 
-<img src="\tutorial\intro-analysis\2_20.png" />
+.. image:: /static/intro-analysis/2_20.jpg
+   :align: center
 
 * Let’s remove some of the toolbars that we will not be using in this training, to make the interface a bit cleaner.  Right-click on the toolbar, and uncheck the boxes next to the following toolbars:
 	* Advanced Digitizing
@@ -140,16 +157,17 @@ At the top of QGIS are a large number of tools, which are contained within vario
 	* Vector
 * After removing these toolbars and moving them around, your tools should look like this:
 
-<img src="\tutorial\intro-analysis\2_21.png" />
+.. image:: /static/intro-analysis/2_21.jpg
+   :align: center
  
-
 Even if they are not visible in a toolbar, all of your tools will remain accessible via the menus. For example, if you remove the File toolbar (which contains the Save button), you can still save your map by clicking on the File menu and then clicking on Save.
 
 
 ***Status Bar***
 This shows information about the current map.  It allows you to adjust the map scale and see the mouse cursor’s coordinates on the map.
 
-<img src="\tutorial\intro-analysis\2_22.png" />
+.. image:: /static/intro-analysis/2_22.jpg
+   :align: center
 
 The coordinates of this map are the same type of coordinates that you learned about when learning about GPS devices.  The status bar show shows the longitude and latitude of your mouse cursor.
 
@@ -160,9 +178,15 @@ This may not all be clear right now, but as you progress in your knowledge of GI
 ### 4.  Add Vector Layer
 Now we will add an additional layer containing roads to our project.
 * Click on the “Add Vector Layer” button on the toolbar.
-<img src="\tutorial\intro-analysis\2_23.png" />
+
+.. image:: /static/intro-analysis/2_23.jpg
+   :align: center
+
 * A dialog box will open.  Click the “Browse” button.
-<img src="\tutorial\intro-analysis\2_24.png" />
+
+.. image:: /static/intro-analysis/2_24.jpg
+   :align: center
+   
 * Navigate to the file ***qgis/Sleman/Jalan_Sleman_OSM.shp*** (in the training directory). Select the file and click Open.
 
 
@@ -171,7 +195,8 @@ Now we will add an additional layer containing roads to our project.
 
 * You should now see your new layer appear both in the map canvas and in the layers list.  It should be drawn above both the district and railway layers.
 
-<img src="\tutorial\intro-analysis\2_25.png" />
+.. image:: /static/intro-analysis/2_25.jpg
+   :align: center
 
 ### 5.  Basic QGIS Tools
 We’ve already taken a look at the QGIS toolbar and seen the tools for opening a project and adding a new layer.  Here’s a list of some other commonly used tools.  Feel free to play around with them if you like.  The important thing for now is to start getting familiar with QGIS.
@@ -191,7 +216,8 @@ We’ve already taken a look at the QGIS toolbar and seen the tools for opening a 
 ### 6. Navigate the Map
 - Before we examine the attributes of individual features, let’s take a quick look at how to navigate the map.  The main controls for moving the map around and zooming in and out are by default on the panels at the top of QGIS.
 
-<img src="\tutorial\intro-analysis\2_33.png" />
+.. image:: /static/intro-analysis/2_33.jpg
+   :align: center
 
 - When you click on one of these buttons, it changes what you can do with your mouse in the main map window.
 - Select the first button that looks like a hand.  Now hold your left mouse button down and drag your mouse in the map window.  This allows you to pan the map, or move it around.
@@ -205,4 +231,5 @@ Summary
 
 That’s it for this chapter.  We’ve covered a lot!  By now you should have your first taste of QGIS and know some of the basics.  Go ahead and save your project by clicking on the “Save” button on the top toolbar.
 
-<img src="\tutorial\intro-analysis\2_34.png" />
+.. image:: /static/intro-analysis/2_34.jpg
+   :align: center
