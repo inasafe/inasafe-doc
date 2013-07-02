@@ -32,10 +32,10 @@ A Geographic Information System (GIS) is a system designed to enable people to w
 
 
 GIS provides different ways to analyze data.  It enables us to ask complex questions, such as:
-* *where are all schools with more than 100 students?*
-* *how many children live in a certain district?*
-* *How many women live within 500 meters of a certain hospital?*
-* *What is the shortest walking path from a given point to a hospital?*
+- *where are all schools with more than 100 students?*
+- *how many children live in a certain district?*
+- *How many women live within 500 meters of a certain hospital?*
+- *What is the shortest walking path from a given point to a hospital?*
 
 
 GIS helps us to answer these sorts of questions.  In the previous unit we learned how to collect data, and in this unit we will see how to analyze it.
@@ -47,11 +47,11 @@ GIS has an important role in contingency planning.  A contingency plan is intend
 
 
 Before contemplating a contingency plan, one must first consider potential disaster scenarios.  A good plan will likely answer questions such as:
-* *what sort of disaster would be likely to happen?*
-* *how widespread will the impact be?*
-* *who is responsible for helping?*
-* *what can be given as aid?*
-* *where are the priority areas?*
+- *what sort of disaster would be likely to happen?*
+- *how widespread will the impact be?*
+- *who is responsible for helping?*
+- *what can be given as aid?*
+- *where are the priority areas?*
 
 
 In other words, a contingency plan answers the question, ***who does what, where and when?***
@@ -77,7 +77,8 @@ QGIS has many plugins which extend the core functionality of the software.  One 
 
 
 
-<img src="/tutorial/intro-analysis/1_introduction.png" />
+.. figure:: /intro-analysis/1_introduction.png
+   :align:   center
 
 InaSAFE provides overviews of potential disaster scenarios, of their outcomes, as well as maps which can aid decision makers when disaster strikes.  Maps are an effective way of communicating disaster impact, but showing in a simple way the areas of damage, such as the extent of flood-affected areas and buildings affected by a flood.
 
