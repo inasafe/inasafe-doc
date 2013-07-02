@@ -21,7 +21,7 @@ Your map is a means to communicate information (as well as new ideas and you) to
 No matter what media you plan to distribute your map by (whether it’s printed or sent over the internet), you must pay attention to how you compose your map elements in the layout.  In this chapter we will discuss the presentation of printed maps, and create our very own.
 
 
-1.  The Map Composer
+### 1.  The Map Composer
 
 The QGIS Map Composer allows you layout your map and prepare it for printing.  Apart from your map, you are able to add additional information such as images, labels, legends, and scalebars.
 
@@ -49,7 +49,7 @@ Take a look at the icons across the top of the window.  We will use some of thes
   .. image:: /static/tutorial/intro-analysis/11_move.png **Select / Move Item** allows us to move choose and move the elements that you add to the map layout.  With this tool selected, you can right-click on an element to lock its position.
 
 
-2.  Add New Map
+### 2.  Add New Map
 
  * In the Print Composer window, click on the “Add new map” icon.
 .. image:: /static/tutorial/intro-analysis/11_mapicon.png
@@ -65,7 +65,7 @@ Take a look at the icons across the top of the window.  We will use some of thes
 
 
 
-3.  Add a Title
+### 3.  Add a Title
 
  * Now we’ve got the most important thing added to our map layout - the map!  But let’s add some additional elements to make it more informative.
  * Let’s add a title to our map.  Click on the “Add new label” button.
@@ -77,7 +77,7 @@ Take a look at the icons across the top of the window.  We will use some of thes
 .. image:: /static/tutorial/intro-analysis/11_maplayout.png
 
 
-4.  Add a Scale Bar
+### 4.  Add a Scale Bar
 
  * Let’s add a scale bar, so that anyone who looks at our map will have an idea what size area this map shows.  Click on the “Add scale bar” button.
 .. image:: /static/tutorial/intro-analysis/11_scalebarbutton.png
@@ -90,7 +90,7 @@ Take a look at the icons across the top of the window.  We will use some of thes
 .. image:: /static/tutorial/intro-analysis/11_scalebarresult.png
 
 
-5.  Create a Grid
+### 5.  Create a Grid
 
  * Now let’s create a grid for our map.
  * Choose the “Select” tool and click on the map.
@@ -106,7 +106,7 @@ Take a look at the icons across the top of the window.  We will use some of thes
 .. image:: /static/tutorial/intro-analysis/11_gridresult.png
 
 
-6.  Overview Inset
+### 6.  Overview Inset
 
  * Next, let’s add an inset that gives views of our map a little more information about what they are looking at.  Minimize the Print Composer and go back into QGIS.
  * Add the layer ***Indonesia.shp***, which is located in ***qgis/peta_dunia.***  Cllick “Zoom Full.”
@@ -120,7 +120,7 @@ Take a look at the icons across the top of the window.  We will use some of thes
 .. image:: /static/tutorial/intro-analysis/11_maplayout2.png
 
 
-7.  Add a Legend
+### 7.  Add a Legend
 
 Now let’s add a legend so that viewers of our map will know what our symbology represents.
 
