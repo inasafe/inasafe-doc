@@ -5,6 +5,5 @@ Package::safe.messaging.example
    :maxdepth: 2
 
    example/error_message_example
-   example/console_example
    example/gui_example
-   example/resources
+   example/console_example

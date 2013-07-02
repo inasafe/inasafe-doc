@@ -4,21 +4,21 @@ Package::safe.messaging.item
 .. toctree::
    :maxdepth: 2
 
-   item/text
-   item/preformatted_text
+   item/important_text
+   item/row
    item/line_break
    item/heading
-   item/table
-   item/bulleted_list
-   item/emphasized_text
-   item/success_paragraph
-   item/row
-   item/paragraph
-   item/abstract_list
-   item/link
-   item/image
-   item/cell
-   item/exceptions
    item/numbered_list
+   item/emphasized_text
+   item/image
+   item/table
+   item/text
+   item/exceptions
+   item/preformatted_text
+   item/bulleted_list
+   item/paragraph
+   item/success_paragraph
    item/message_element
-   item/important_text
+   item/abstract_list
+   item/cell
+   item/link
