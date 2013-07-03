@@ -16,11 +16,12 @@ from shutil import rmtree
 import sys
 
 # Text
-index_header = 'InaSAFE API documentation\n'
-index_header += '===========================\n\n'
-index_header += 'This is the API documentation for the InaSAFE project.\n'
-index_header += 'You can find out more about the InaSAFE project by visiting\n'
-index_header += '`inasafe.org <http://www.inasafe.org/>`_.\n\n'
+INDEX_HEADER = 'API documentation\n'
+INDEX_HEADER += '=================\n'
+INDEX_HEADER += 'This is the API documentation for the InaSAFE project.\n'
+INDEX_HEADER += 'You can find out more about the InaSAFE project by visiting\n'
+INDEX_HEADER += '`inasafe.org <http://www.inasafe.org/>`_.\n\n'
+EXCLUDED_PACKAGES = ['i18n', 'test', 'converter_data', 'ui', 'resources']
 
 
 def create_top_level_index_entry(title, max_depth, subtitles):
@@ -50,7 +51,6 @@ def create_package_level_rst_index_file(
         modules : list of module in the package.
     """
 
-    excluded_packages = ['i18n', 'test', 'converter_data']
     excluded_modules = ['converter_data']
     if inner_packages is None:
         inner_packages = []
@@ -65,7 +65,7 @@ def create_package_level_rst_index_file(
             continue
         return_text += '   ' + upper_package + os.sep + module[:-3] + '\n'
     for inner_package in inner_packages:
-        if inner_package in excluded_packages:
+        if inner_package in EXCLUDED_PACKAGES:
             continue
         return_text += '   ' + upper_package + os.sep + inner_package + '\n'
 
@@ -82,8 +82,6 @@ def create_module_rst_file(module_name):
     return_text += '\n' + dash + '\n\n'
     return_text += '.. automodule:: ' + module_name + '\n'
     return_text += '   :members:\n\n'
-    return_text += 'This module forms part of the `InaSAFE '
-    return_text += '<http://inasafe.org>`_ tool.'
 
     return return_text
 
@@ -119,47 +117,29 @@ def get_python_files_from_list(files, excluded_files=None):
         excluded_files = ['__init__.py']
     python_files = []
     for fl in files:
-        if fl.endswith('.py') and not fl in excluded_files:
+        if (fl.endswith('.py') and not
+                fl in excluded_files and not
+                fl.startswith('test')):
             python_files.append(fl)
 
     return python_files
 
 
-def create_top_level_index(inasafe_docs_path, max_depth=2):
+def create_top_level_index(inasafe_docs_path, packages, max_depth=2):
     #assemble a list of python files in the safe_qgis Package
+    page_text = INDEX_HEADER
+    for package in packages:
+        # Write top level index file entries for safe_qgis, safe and Unit Tests
+        text = create_top_level_index_entry(
+            title='Package %s' % package,
+            max_depth=max_depth,
+            subtitles=[package])
 
-    # Write top level index file entries for safe_qgis, safe and Unit Tests
-    safe_qgis_text = create_top_level_index_entry(
-        title='Package safe_qgis',
-        max_depth=max_depth,
-        subtitles=['safe_qgis'])
-    safe_qgis_tests_text = create_top_level_index_entry(
-        title='Unit Tests',
-        max_depth=max_depth,
-        subtitles=['safe_qgis_tests'])
-    safe_package_text = create_top_level_index_entry(
-        title='Packages safe',
-        max_depth=max_depth,
-        subtitles=['safe'])
-    index_content = ('%s\n%s\n%s\n%s\n' % (
-        index_header, safe_qgis_text, safe_package_text, safe_qgis_tests_text))
+        page_text += '%s\n' % text
+
     write_rst_file(
         inasafe_docs_path, 'index',
-        index_content)
-
-
-def get_safe_qgis_files(inasafe_code_path):
-    safe_qgis_package_path = os.path.join(inasafe_code_path, 'safe_qgis')
-    safe_qgis_file_list = os.listdir(safe_qgis_package_path)
-    python_module_files = []
-    python_test_files = []
-    python_files = get_python_files_from_list(safe_qgis_file_list)
-    for python_file in python_files:
-        if python_file.startswith('test'):
-            python_test_files.append(python_file)
-        else:
-            python_module_files.append(python_file)
-    return python_module_files, python_test_files
+        page_text)
 
 
 def get_inasafe_code_path():
@@ -188,17 +168,25 @@ def clean_api_docs_dirs():
     return inasafe_docs_path
 
 
-def create_api_docs(inasafe_code_path, inasafe_docs_path, max_depth=2):
+def create_api_docs(code_path, inasafe_docs_path, max_depth=2):
     """Function for generating .rst file for all .py file in dir_path folder.
         inasafe_code_path : path of the folder
     """
-    base_path = os.path.split(inasafe_code_path)[0]
-    for package, subpackages, candidate_files in os.walk(inasafe_code_path):
+    base_path = os.path.split(code_path)[0]
+    for package, subpackages, candidate_files in os.walk(code_path):
         # Checking __init__.py file
         if '__init__.py' not in candidate_files:
             continue
         # Creating directory for the package
         package_relative_path = package.replace(base_path + os.sep, '')
+        index_package_path = os.path.join(
+            inasafe_docs_path, package_relative_path)
+        # calculate dir one up from package to store the index in
+        index_base_path, package_base_name = os.path.split(index_package_path)
+
+        if package_base_name in EXCLUDED_PACKAGES:
+            continue
+
         full_package_name = package_relative_path.replace(os.sep, '.')
         new_rst_dir = os.path.join(inasafe_docs_path, package_relative_path)
         create_dirs(new_rst_dir)
@@ -210,11 +198,6 @@ def create_api_docs(inasafe_code_path, inasafe_docs_path, max_depth=2):
             max_depth=max_depth,
             modules=modules,
             inner_packages=subpackages)
-
-        index_package_path = os.path.join(
-            inasafe_docs_path, package_relative_path)
-        # calculate dir one up from package to store the index in
-        index_base_path, package_base_name = os.path.split(index_package_path)
 
         write_rst_file(
             file_path=index_base_path,
@@ -232,53 +215,21 @@ def create_api_docs(inasafe_code_path, inasafe_docs_path, max_depth=2):
                 content=py_module_text)
 
 
-def create_safe_qgis_api_docs(inasafe_code_path, inasafe_docs_path, max_depth):
-
-    python_module_files, python_test_files = get_safe_qgis_files(
-        inasafe_code_path)
-    safe_qgis_text = create_package_level_rst_index_file(
-        package_name='safe_qgis',
-        max_depth=max_depth,
-        modules=python_module_files)
-    write_rst_file(inasafe_docs_path, 'safe_qgis', safe_qgis_text)
-    # Creating safe_qgis_tests.rst file
-    safe_qgis_test_text = create_package_level_rst_index_file(
-        package_name='safe_qgis_tests',
-        max_depth=max_depth,
-        modules=python_test_files)
-    write_rst_file(inasafe_docs_path, 'safe_qgis_tests', safe_qgis_test_text)
-
-    # Creating safe_qgis module docs
-    docs_safe_qgis_path = os.path.join(inasafe_docs_path, 'safe_qgis')
-    create_dirs(docs_safe_qgis_path)
-    for module in python_module_files:
-        module = module[:-3]  # strip .py from module name
-        safe_qgis_text = create_module_rst_file('safe_qgis.' + module)
-        write_rst_file(docs_safe_qgis_path, module, safe_qgis_text)
-
-    # Creating safe_qgis_test module docs
-    docs_safe_qgis_tests_path = os.path.join(inasafe_docs_path,
-                                             'safe_qgis_tests')
-    create_dirs(docs_safe_qgis_tests_path)
-    for module in python_test_files:
-        module = module[:-3]  # strip .py from module name
-        safe_qgis_text = create_module_rst_file('safe_qgis.' + module)
-        write_rst_file(docs_safe_qgis_tests_path, module, safe_qgis_text)
-
-
 def main():
 
     inasafe_code_path = get_inasafe_code_path()
     inasafe_docs_path = clean_api_docs_dirs()
     max_depth = 2
-    create_top_level_index(inasafe_docs_path, max_depth)
-    create_safe_qgis_api_docs(inasafe_code_path, inasafe_docs_path, max_depth)
-    # For general packages and modules in safe package
-    inasafe_code_path = os.path.join(inasafe_code_path, 'safe')
-    create_api_docs(
-        inasafe_code_path=inasafe_code_path,
-        inasafe_docs_path=inasafe_docs_path,
-        max_depth=max_depth)
+    packages = ['safe', 'safe_qgis']
+
+    create_top_level_index(inasafe_docs_path, packages, max_depth)
+
+    for package in packages:
+        code_path = os.path.join(inasafe_code_path, package)
+        create_api_docs(
+            code_path=code_path,
+            inasafe_docs_path=inasafe_docs_path,
+            max_depth=max_depth)
 
 
 if __name__ == '__main__':
