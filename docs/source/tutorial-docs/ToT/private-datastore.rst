@@ -29,41 +29,45 @@ Data uploaded to the private HOT Datastore is only accessible to people who have
 
 
 ### 1.  Installing the SDS plugin
-This plug-in allows private data to be streamlined into the private data store.  The newest version of JOSM is required for the SDS plugin to run.  (If you do not have a recent version of JOSM, download and install it from http://josm.openstreetmap.de/.  If you cannot install the latest version, go to the Appendix to see how you can install this plug-in by source).  
-? Open the preferences menu in JOSM and go to the plugins tab.
+This plug-in allows private data to be streamlined into the private data store.  The newest version of JOSM is required for the SDS plugin to run.  (If you do not have a recent version of JOSM, download and install it from http://josm.openstreetmap.de/.  If you cannot install the latest version, go to the Appendix to see how you can install this plug-in by source).
 
-? Click “Download List” to ensure that all available plugins are listed.
-? In the search box, type “sds”.
+* Open the preferences menu in JOSM and go to the plugins tab.
+
+* Click “Download List” to ensure that all available plugins are listed.
+* In the search box, type “sds”.
 
 
-? Check the box next to the plugin to activate it.  You will need to restart JOSM.
+* Check the box next to the plugin to activate it.  You will need to restart JOSM.
 
-? If JOSM is open, restart it.
+* If JOSM is open, restart it.
 
 If the steps above works fine / successful then you do not need to perform the steps described below. But if it does not work find the plugin "sds" in the Preferences menu, you have to perform manual steps in the install plugin sds, namely:
+
 * Download the plugin sds in http://kunden.geofabrik.de/03df698c95134f04949eb67ac7ba2195/   website and click on sds.jar, then you are instructed to keep the plugin.
 
 * Click the Start Menu and type "% APPDATA%" in the search box. Click the name of the folder "Roaming".
 
 
 
-? In the open window, double-click on "JOSM" to open the program file JOSM.
-? Double-click the folder "plugins"
-? Move sds.jar that have been downloaded to this folder
-? If the JOSM is open you must be restart it first.
+* In the open window, double-click on "JOSM" to open the program file JOSM.
+* Double-click the folder "plugins"
+* Move sds.jar that have been downloaded to this folder
+* If the JOSM is open you must be restart it first.
 
-2.  Using the Plugin
+### 2.  Using the Plugin
+
 Editing the map works just the same as before.  The only difference is that when you upload changes, some tags will be automatically saved on the private datastore, and the rest will be saved directly onto OpenStreetMap.
 
-? After installing the plugin, the first time you download data you will be asked for your HOT datastore username and password.
+* After installing the plugin, the first time you download data you will be asked for your HOT datastore username and password.
 
 
 
-? In order to use the plugin, you need to enter your username and password.  To save them, check the box next to “Save user and password.”
-? The private datastore is now working.  When you upload changes, the usual tags will be saved to OSM, and special private tags will be saved to the datastore.
+* In order to use the plugin, you need to enter your username and password.  To save them, check the box next to “Save user and password.”
+* The private datastore is now working.  When you upload changes, the usual tags will be saved to OSM, and special private tags will be saved to the datastore.
 
-3.  How SDS Plugins Works
-       How does the plugin know which data you want to store on OpenStreetMap and which data you want to store publicly?  Quite simply, it knows because of the tags.  Normal tags go to OpenStreetMap, as always, but you can use new tags with a special prefix that will be sent to the private datastore.  By default, any tag that begins with the prefix “hot:” will go to the private datastore.  If you open the Preferences menu you will see a new tab on the bottom for SDS plugin options:
+### 3.  How SDS Plugins Works
+
+How does the plugin know which data you want to store on OpenStreetMap and which data you want to store publicly?  Quite simply, it knows because of the tags.  Normal tags go to OpenStreetMap, as always, but you can use new tags with a special prefix that will be sent to the private datastore.  By default, any tag that begins with the prefix “hot:” will go to the private datastore.  If you open the Preferences menu you will see a new tab on the bottom for SDS plugin options:
 
 
 
@@ -77,18 +81,21 @@ In this case, the first two tags will be saved on OSM.  The third tag, because i
 
 You will most likely collaborate with others when using the private datastore, so you will have a standard list of tags to use for the specific data your are collecting.  These tags can then be made into a presets menu, which will provide an easy-to-use form for adding both public and private data.
 
-4. Access Datastore Online
+### 4. Access Datastore Online
+
 You could access datastore online through http://bit.ly/sds-hot2 and login with your username and password.
 
-4.1 Private Data Store Users
+#### 4.1 Private Data Store Users
 There is 2 types of Data Store users. They are Admin who can add new projects or users onto SDS and Personal are regular users who joined on some project that using SDS. This is the screenshoot :
 
 
-       4.2 Figure of Using Private Data Store and JOSM 
+#### 4.2 Figure of Using Private Data Store and JOSM 
        
 
-       4.3 Editing Data Store Online
-       You can edit your data in SDS online. These are the steps :
+#### 4.3 Editing Data Store Online
+
+You can edit your data in SDS online. These are the steps :
+
 * Open this site http://bit.ly/sds-hot2
 * Username : test@example.com (Personal)
 * Password : osmosm123
@@ -102,7 +109,8 @@ There is 2 types of Data Store users. They are Admin who can add new projects or
 
 	
 
-4.4 Add data on Data Store Online
+#### 4.4 Add data on Data Store Online
+
 You can directly add your data on Data Store. These are the steps :
 	
 * Click Map Search and Load OSM Geometries
@@ -118,10 +126,11 @@ You can directly add your data on Data Store. These are the steps :
 
 
 
-4.5 Add and Edit User on Private Data Store
+#### 4.5 Add and Edit User on Private Data Store
+
 * Open this site : http://bit.ly/sds-hot2 
 * Username : admin@example.com (admin)
-* Password : os
+* Password : osm
 * Klik user administration
 
 * Click Add New User
@@ -140,7 +149,7 @@ Edit Users
        
 
 
-4.6 Add Project on Private Data Store
+#### 4.6 Add Project on Private Data Store
 
 * Click Project
 * Click Create New Project
@@ -155,22 +164,22 @@ Edit Users
 
 * Next you have to write Tag Fields Definition in JavaScript Object Notatioan (JSON) language. You have to translate Extensible Mark-up Language (XML) language at Preset that you want to use into JSON language. 
 * Let’s see the difference between XML Preset and JSON
-XML
+**XML**
 
        
-JSON
+**JSON**
 
 
 NOTE: 
-1. If your preset use ELEMENT COMBO, MULTISELECT or CHECK KEY it must converted with format
+1. If your preset use **ELEMENT COMBO, MULTISELECT or CHECK KEY** it must converted with format
 
 {“type”:”select”,”tag”:”YOUR KEY”,”en”:”YOUR COLOUMN TABLE NAME”,”option”:[“VALUES 1”,”VALUES 2”, “DST..”]},
 
-Example (first is XML, second is JSON)
+Example **(first is XML, second is JSON)**
 
 
 
-2. If your preset use ELEMENT TEXT, it must converted with format
+2. If your preset use **ELEMENT TEXT**, it must converted with format
 
 {“type”:”text”,”tag”:”YOUR KEY”,”en”:” YOUR COLOUMN TABLE NAME”},
 
@@ -201,33 +210,38 @@ Write your tag definition into JSON language at the available row of Tag Field D
 * You also can download the table in the CSV format or Excel format.
 
 B. General Questions
+---------------------
+***How to save our data?***
 
-How to save our data?
 To save your private data the steps are similar like upload your changes to OSM. Remember to always use right prefix (in this case is :hot) with your private tag to make sure that they will be saved on your private database and would not be published.
 
-How much users can use the same account? How if I would like to add users?
+***How much users can use the same account? How if I would like to add users?***
+
 There is no limit for users account. At the moment users access organized by HOT
 
-How much data that I can save in my private server?
+***How much data that I can save in my private server?***
+
 A lot of Data
 
-Is there any easy way to search certain private data?
+***Is there any easy way to search certain private data?***
+
 When you login to the datastore.hotosm.org you will have a choice to do some tag search. This is possible to you to search certain tag.
 
 C. Summary
-   In this chapter we learn about how to install SDS plugin and how to use it to save some specific data for private datastore. You have seen the website private datastore and see how to save some information separately. SDS is a great tool to your group to collect private information using OpenStreetMap. If you want to collect private information, call HOT and manage your data type which are want you save in private datastore.
+-----------
+In this chapter we learn about how to install SDS plugin and how to use it to save some specific data for private datastore. You have seen the website private datastore and see how to save some information separately. SDS is a great tool to your group to collect private information using OpenStreetMap. If you want to collect private information, call HOT and manage your data type which are want you save in private datastore.
 
 D. Appendix
-Geometries In OpenStreetMap, is drawing shapes on OpenStreetMap maps.
 
- JSON      	JavaScript Object Notation (JSON) is a text-based open standard designed for human in 
+**Geometries** In OpenStreetMap, is drawing shapes on OpenStreetMap maps.
+
+**JSON**  JavaScript Object Notation (JSON) is a text-based open standard designed for human in 
                  	 data exchange.
 
-Plugin 	In computing, a plug-in (or plugin) is a set of software components that adds specific capabilities to software applications greater. If supported, plug-in allows to change the function of the application.
+**Plugin** 	In computing, a plug-in (or plugin) is a set of software components that adds specific capabilities to software applications greater. If supported, plug-in allows to change the function of the application.
 
-Prefix	 Prefix. Affixes are added at the beginning of a word.
+**Prefix**	 Prefix. Affixes are added at the beginning of a word.
 
-Private 
-Datastore 	personal data storage space that is different from the data of a general nature
+**Private Datastore** 	personal data storage space that is different from the data of a general nature
 
-SDS 	Separate Data Store. OpenStreetMap is a feature that allows you to separate the data can only be accessed by certain parties (private) from public data. To split the data to the storage space will be different from the general data
+**SDS** Separate Data Store. OpenStreetMap is a feature that allows you to separate the data can only be accessed by certain parties (private) from public data. To split the data to the storage space will be different from the general data
