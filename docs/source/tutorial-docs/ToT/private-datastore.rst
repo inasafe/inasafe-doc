@@ -21,8 +21,8 @@ A. Introduction
 OpenStreetMap data is open and available to anyone who would like to access it.  However, there may be times when you want to use OpenStreetMap to collect data, but you would like to keep some attributes stored in a private database.  For this, HOT has developed an additional tool for JOSM known as the SDS (Separate Data Store).
 
 The SDS allows you to create maps and add data into JOSM the same as always, but when you upload your edits, public data will be saved to the OpenStreetMap database, and private data will be saved separately to the HOT Datastore.
-
-
+.. image:: /static/tutorial/ToT/3_dataflow.png
+	:align: center
 How the SDS Plugin works with JOSM
 ----------------------------------
 Data uploaded to the private HOT Datastore is only accessible to people who have an account at datastore.hotosm.org.  This chapter is designed for people who already have an account and desire to store private geospatial information, such as household income, personal health care data,  or the location of gold mines.  If you do not have a HOT Datastore account or if you want to set up your own private datastore server please contact Kate Chapman (k8chapman@gmail.com).
@@ -32,10 +32,12 @@ Data uploaded to the private HOT Datastore is only accessible to people who have
 This plug-in allows private data to be streamlined into the private data store.  The newest version of JOSM is required for the SDS plugin to run.  (If you do not have a recent version of JOSM, download and install it from http://josm.openstreetmap.de/.  If you cannot install the latest version, go to the Appendix to see how you can install this plug-in by source).
 
 * Open the preferences menu in JOSM and go to the plugins tab.
-
+.. image:: /static/tutorial/ToT/3_plugin.png
+	:align: center
 * Click “Download List” to ensure that all available plugins are listed.
 * In the search box, type “sds”.
-
+.. image:: /static/tutorial/ToT/3_pluginbox.png
+	:align: center
 
 * Check the box next to the plugin to activate it.  You will need to restart JOSM.
 
@@ -46,8 +48,8 @@ If the steps above works fine / successful then you do not need to perform the s
 * Download the plugin sds in http://kunden.geofabrik.de/03df698c95134f04949eb67ac7ba2195/   website and click on sds.jar, then you are instructed to keep the plugin.
 
 * Click the Start Menu and type "% APPDATA%" in the search box. Click the name of the folder "Roaming".
-
-
+.. image:: /static/tutorial/ToT/3_roaming.png
+	:align: center
 
 * In the open window, double-click on "JOSM" to open the program file JOSM.
 * Double-click the folder "plugins"
