@@ -61,7 +61,8 @@ If the steps above works fine / successful then you do not need to perform the s
 Editing the map works just the same as before.  The only difference is that when you upload changes, some tags will be automatically saved on the private datastore, and the rest will be saved directly onto OpenStreetMap.
 
 * After installing the plugin, the first time you download data you will be asked for your HOT datastore username and password.
-
+.. image:: /static/tutorial/ToT/3_api.png
+	:align: center
 
 
 * In order to use the plugin, you need to enter your username and password.  To save them, check the box next to “Save user and password.”
@@ -70,13 +71,15 @@ Editing the map works just the same as before.  The only difference is that when
 ### 3.  How SDS Plugins Works
 
 How does the plugin know which data you want to store on OpenStreetMap and which data you want to store publicly?  Quite simply, it knows because of the tags.  Normal tags go to OpenStreetMap, as always, but you can use new tags with a special prefix that will be sent to the private datastore.  By default, any tag that begins with the prefix “hot:” will go to the private datastore.  If you open the Preferences menu you will see a new tab on the bottom for SDS plugin options:
-
+.. image:: /static/tutorial/ToT/3_preferences.png
+	:align: center
 
 
 There are some basic settings here.  By default the server URL is set to the HOT datastore, and your username and password can be saved here as well.  The line labelled “SDS tag prefix” contains the prefix that will cause tags to be saved on the private datastore.  By default it is “hot:”
 
 When you create or edit an object on the map, you can apply tags like this:
-
+.. image:: /static/tutorial/ToT/3_attributebox.png
+	:align: center
 
 
 In this case, the first two tags will be saved on OSM.  The third tag, because it has the prefix hot: will be saved on the private datastore.
@@ -86,13 +89,17 @@ You will most likely collaborate with others when using the private datastore, s
 ### 4. Access Datastore Online
 
 You could access datastore online through http://bit.ly/sds-hot2 and login with your username and password.
-
+.. image:: /static/tutorial/ToT/3_sds.png
+	:align: center
+	
 #### 4.1 Private Data Store Users
 There is 2 types of Data Store users. They are Admin who can add new projects or users onto SDS and Personal are regular users who joined on some project that using SDS. This is the screenshoot :
-
+.. image:: /static/tutorial/ToT/3_datastoreuser.png
+	:align: center
 
 #### 4.2 Figure of Using Private Data Store and JOSM 
-       
+.. image:: /static/tutorial/ToT/3_datastorefigure.png
+	:align: center
 
 #### 4.3 Editing Data Store Online
 
@@ -102,7 +109,8 @@ You can edit your data in SDS online. These are the steps :
 * Username : test@example.com (Personal)
 * Password : osmosm123
 * Clik tag search
-
+.. image:: /static/tutorial/ToT/3_tagsearch.png
+	:align: center
 
 * Add ‘String’ which is a name when we saved the sds tag and click search
 
