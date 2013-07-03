@@ -50,7 +50,7 @@ h3 {
   padding-right: 15px;
   border-radius: 6px;
 }
-
+/* adding background gradient on top - solid for old/not standard browsers*/
 .navbar-inverse .navbar-inner {
 background: #f86a27; /* Old browsers */
 background: -moz-linear-gradient(top, #f86a27 0%, #f86a27 9%, #fbad5a 47%, #f9d4ae 100%); /* FF3.6+ */
@@ -69,6 +69,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f86a27', end
     box-sizing: border-box;
 }
 */
+
+/* color for disclaimer (used when files need to be revised)*/
+tt.descname {
+    color: #f76926
+}
 .centered {text-align: center}​
 
 /** Themeing of sphinx markup now **/
