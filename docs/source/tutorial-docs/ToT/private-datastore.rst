@@ -113,27 +113,30 @@ You can edit your data in SDS online. These are the steps :
 	:align: center
 
 * Add ‘String’ which is a name when we saved the sds tag and click search
-
+.. image:: /static/tutorial/ToT/3_string.png
+	:align: center
 * You only can edit the objects attribute that has saved in JOSM but if you want to delete objects you must to use JOSM.
 * Click Save Tags
-
+.. image:: /static/tutorial/ToT/3_saveobjects.png
+	:align: center
 	
 
 #### 4.4 Add data on Data Store Online
 
 You can directly add your data on Data Store. These are the steps :
-	
+.. image:: /static/tutorial/ToT/3_sds2.png
+	:align: center
 * Click Map Search and Load OSM Geometries
-
+.. image:: /static/tutorial/ToT/3_mapsearch.png
+	:align: center
 * After that add/edit information about object that chosen by you
-
-
-
-
+.. image:: /static/tutorial/ToT/3_mapsearch2.png
+	:align: center
+.. image:: /static/tutorial/ToT/3_mapsearch3.png
+	:align: center
 * After you finish click Save tags
-
-
-
+.. image:: /static/tutorial/ToT/3_savetag.png
+	:align: center
 
 
 #### 4.5 Add and Edit User on Private Data Store
@@ -142,81 +145,77 @@ You can directly add your data on Data Store. These are the steps :
 * Username : admin@example.com (admin)
 * Password : osm
 * Klik user administration
-
+.. image:: /static/tutorial/ToT/3_useradministration.png
+	:align: center
 * Click Add New User
-
+.. image:: /static/tutorial/ToT/3_newuser.png
+	:align: center
 
 * Click Save if you finish
-
+.. image:: /static/tutorial/ToT/3_saveuser.png
+	:align: center
+	
 Edit Users
 * Click user administration
 * Click “Eye Symbol” in the left box
 * Click Edit User
-
-
-	
+.. image:: /static/tutorial/ToT/3_edituser.png
+	:align: center
+.. image:: /static/tutorial/ToT/3_edituser2.png
+	:align: center
+.. image:: /static/tutorial/ToT/3_edituser3.png
+	:align: center	
 
        
-
-
 #### 4.6 Add Project on Private Data Store
 
 * Click Project
 * Click Create New Project
+.. image:: /static/tutorial/ToT/3_addproject.png
+	:align: center
+.. image:: /static/tutorial/ToT/3_addproject2.png
+	:align: center
+.. image:: /static/tutorial/ToT/3_addproject3.png
+	:align: center
 
 
-
-
-
-
-
-       
-
-* Next you have to write Tag Fields Definition in JavaScript Object Notatioan (JSON) language. You have to translate Extensible Mark-up Language (XML) language at Preset that you want to use into JSON language. 
-* Let’s see the difference between XML Preset and JSON
+* Next you have to write **Tag Fields Definition** in JavaScript Object Notatioan (JSON) language. You have to translate Extensible Mark-up Language (XML) language at **Preset that you want to use into JSON language.** 
+* Let’s see the difference between **XML Preset and JSON**
 **XML**
-
+.. image:: /static/tutorial/ToT/3_xml.png
+	:align: center
        
 **JSON**
+.. image:: /static/tutorial/ToT/3_json.png
+	:align: center
 
-
-NOTE: 
+**NOTE:** 
 1. If your preset use **ELEMENT COMBO, MULTISELECT or CHECK KEY** it must converted with format
 
 {“type”:”select”,”tag”:”YOUR KEY”,”en”:”YOUR COLOUMN TABLE NAME”,”option”:[“VALUES 1”,”VALUES 2”, “DST..”]},
 
 Example **(first is XML, second is JSON)**
-
-
+.. image:: /static/tutorial/ToT/3_xmlandjson.png
+	:align: center
 
 2. If your preset use **ELEMENT TEXT**, it must converted with format
 
 {“type”:”text”,”tag”:”YOUR KEY”,”en”:” YOUR COLOUMN TABLE NAME”},
 
 Example (first is XML, second is JSON)
-
+.. image:: /static/tutorial/ToT/3_xmlandjson2.png
+	:align: center
 
 
 Write your tag definition into JSON language at the available row of Tag Field Definition (JSON)
+.. image:: /static/tutorial/ToT/3_tagjson.png
+	:align: center
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* You can upload your presets in your project to the row of Preset File
-* Click Create Project if your finish
-* If you click Project on right corner, you can see your Project. Click View Table  to see the data. If there is any ERROR, it possibly there is mistake at your JSON tag definition! If it doesn’t you will see a table like this :
-
+* You can upload your presets in your project to the row of **Preset File**
+* Click **Create Project** if your finish
+* If you click **Project** on right corner, you can see your Project. Click **View Table**  to see the data. If there is any ERROR, it possibly there is **mistake at your JSON tag definition!** If it doesn’t you will see a table like this :
+.. image:: /static/tutorial/ToT/3_tagtable.png
+	:align: center
 * You also can download the table in the CSV format or Excel format.
 
 B. General Questions
