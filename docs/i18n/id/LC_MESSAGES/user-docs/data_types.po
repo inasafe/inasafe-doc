@@ -1,208 +1,202 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# 
-# Translators:
-# raniedwianugrah <raniedwianugrah@gmail.com>, 2013
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe\n"
+"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-17 14:14\n"
-"PO-Revision-Date: 2013-06-19 10:27+0000\n"
-"Last-Translator: emirhartato <emir.hartato@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/language/id/)\n"
+"POT-Creation-Date: 2013-07-04 09:06\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
-# f59bef4ef11d48b5b1a5cd5d3f3e932b
+# 0fe98dcc25224f3db0c1afa6e7173de0
 #: ../../source/user-docs/data_types.rst:11
 msgid "Data Types"
-msgstr "Tipe-tipe Data"
+msgstr ""
 
-# cf8275a7e6eb4bb78f5f6025742ed967
+# c5cecd681da5464b9bf206911541fcfd
 #: ../../source/user-docs/data_types.rst:13
 msgid ""
 "The impact functions essentially combine spatial data in different formats "
 "through a common interpolation library. This essentially allows values from "
-"one data set to be assigned to another independent of their types. Given two"
-" layers H and E, say, the call::"
-msgstr "Fungsi dampak dasarnya menggabungkan data spasial dalam format yang berbeda melalui perpustakaan umum interpolasi. Hal ini pada dasarnya memungkinkan nilai dari satu set data yang ditugaskan independen lain dari jenis mereka. Mengingat dua lapisan H dan E, yang disebut::"
+"one data set to be assigned to another independent of their types. Given two "
+"layers H and E, say, the call::"
+msgstr ""
 
-# a39524033c4d41a5baca35a0afc0455a
+# 1ddcefddd5044d638e73b4d5aa9fb248
 #: ../../source/user-docs/data_types.rst:20
 msgid ""
-"will produce a new layer with all values from H transferred to E in a manner"
-" appropriate for the data types of H and E. Generally, existing values in E "
+"will produce a new layer with all values from H transferred to E in a manner "
+"appropriate for the data types of H and E. Generally, existing values in E "
 "will be also be carried over to I. Conceptually, the new layer I represents "
 "the values of H interpolated to E."
-msgstr "akan menghasilkan layer baru dengan semua nilai dari H ditransfer ke E dengan cara yang sesuai untuk tipe data H dan E. Umumnya, nilai-nilai yang ada pada E juga akan dilakukan ke l. Secara konseptual, layer baru l mewakili nilai H diinterpolasi ke E."
+msgstr ""
 
-# 50dcb2d742344cc9bb16d9d31b992f7a
+# 09f6a376259a4b6ba4e990e4f0299889
 #: ../../source/user-docs/data_types.rst:25
 msgid ""
 "The function takes a number of optional keyword arguments that pertain to "
 "certain type combinations. They are:"
-msgstr "Fungsi ini mengambil sejumlah alasan pemilihan kata kunci yang berhhubungan dengan kombinasi jenis. Mereka adalah:"
+msgstr ""
 
-# 8b90d18e026e4d198c61f30cada70c26
+# c2e3e093e6ff4f82baae231e5a5f7577
 #: ../../source/user-docs/data_types.rst:28
 msgid ""
 "layer_name: Optional name of returned layer. If None (default) the name of "
 "the exposure layer is used."
-msgstr "layer_name: Opsional nama kembali layer. Jika tidak ada (default) nama layer keterpaparan digunakan."
+msgstr ""
 
-# cf3823f97928479ab85c3f3c8c6d76a3
+# d684729f1b684f4ba57f32ae6506d845
 #: ../../source/user-docs/data_types.rst:30
 msgid "attribute_name:"
-msgstr "attribute_name:"
+msgstr ""
 
-# c6b1c47bd758442d9d18d7eb5860b3d7
+# 3266d02b024b4b6e806aeb9c1f30f1af
 #: ../../source/user-docs/data_types.rst:32
 msgid ""
-"If hazard layer is of type raster, this is the name for new attribute in the"
-" result containing the hazard level. If None (default) the name of hazard is"
-" used"
-msgstr "Jika layer bahaya adalah tipe raster, ini adalah nama untuk atribut baru pada hasil yang mengandung tingkat bahaya. Jika tidak ada (default) nama bahaya digunakan"
+"If hazard layer is of type raster, this is the name for new attribute in the "
+"result containing the hazard level. If None (default) the name of hazard is "
+"used"
+msgstr ""
 
-# e30fbd3100084034ade50d610d5509e3
+# 85a3f078428944c086e840b46905bbf5
 #: ../../source/user-docs/data_types.rst:35
 msgid ""
 "If hazard layer is of type vector, it is the name of the attribute to "
 "transfer from the hazard layer into the result. If None (default) all "
 "attributes are transferred."
-msgstr "Jika layer bahaya adalah tipe vektor, ini adalah nama atribut untuk mentransfer dari layer bahaya ke dalam hasil. Jika tidak ada (default) semua atribut yang ditransfer."
+msgstr ""
 
-# 561d88a29ab44b7f9f66c8be819d1419
+# dbdde8facab743118721bf23c78ce4f3
 #: ../../source/user-docs/data_types.rst:39
 msgid ""
-"mode: Interpolation mode for raster to point interpolation only. Options are"
-" 'linear' (default) or 'constant'"
-msgstr "mode: Modus interpolasi untuk raster ke titik interpolasi saja. Pilihannya adalah 'linear' (default) atau 'constant'"
+"mode: Interpolation mode for raster to point interpolation only. Options are "
+"'linear' (default) or 'constant'"
+msgstr ""
 
-# c37a2287aa934a27bdc81ab6946ab71e
+# 8683f4bdaccb429d88a70680a23ef4c4
 #: ../../source/user-docs/data_types.rst:43
 msgid ""
 "The following table shows allowed combinations and what interpolation means "
 "in each case."
-msgstr "Tabel berikut ini menunjukkan kombinasi yang diperbolehkan dan interpolasi apa yang berarti dalam setiap kasus."
+msgstr ""
 
-# 7024da5b6144456aa7daf0e244c8b1ba
+# 2c252ce85bbf494190dec5bf49940ad7
 #: ../../source/user-docs/data_types.rst:49
 msgid "H"
-msgstr "H"
+msgstr ""
 
-# 9c22a127de79449ba1002e7257f02f2b
+# 63fb0c9839c74b8986855b7eb0ef34b5
 #: ../../source/user-docs/data_types.rst:49
 msgid "E"
-msgstr "E"
+msgstr ""
 
-# 16162247a839445587ef1e986b33dd41
+# 33bfb01824c243338a0dde1609539f57
 #: ../../source/user-docs/data_types.rst:49
 msgid "Methodology"
-msgstr "Metodologi"
+msgstr ""
 
-# fd47ad4ec1f1494b90f1d674c7d706ea
+# 3d0ff6c8aa744768a11e8fc59c462628
 #: ../../source/user-docs/data_types.rst:49
 msgid "Return value"
-msgstr "Pengembalian nilai"
+msgstr ""
 
-# e6c7d20c5f5e4b0ebce3da826f72a7c4
-# b2168a3ebec84ca8a7478d59a2b65820
-# 2131a76267174497bc1be38f92bc7a36
-# 9619ffb383ce47cda4c3b968eba737b4
-# 241f11d8ac2b431b997e6832dbb31b6a
-# eed3bb9ce26b4881814cfb04ad9cdfcf
-# 7acbf4cbf3604bbfbae7c4dbc87f55be
+# 3f347c17969e4ff787e5c7a6104c8587
+# 5902148f04b34b90b802094751489123
+# 93b4125e1a3f4033a0e3926b078c49cb
+# c9bdb8cad48d4237ade61cd3d833f7d5
+# 5139d471a6db488fab683e5270e242ce
+# 864569f244d544a691d64f620d5b84e6
+# ae821dc5aa4943a7ad0f58160e994dbf
 #: ../../source/user-docs/data_types.rst:51
 #: ../../source/user-docs/data_types.rst:53
 #: ../../source/user-docs/data_types.rst:55
-#: ../../source/user-docs/data_types.rst:55
 #: ../../source/user-docs/data_types.rst:57
-#: ../../source/user-docs/data_types.rst:63
 #: ../../source/user-docs/data_types.rst:63
 msgid "Polygon"
-msgstr "Poligon"
+msgstr ""
 
-# 1f95596c80a34c53a2b84e15266209e5
-# 0f288badee5543df878e5790928b71a0
-# 39de567b51a54bb29dc05e1f74f2196a
-# 83e2e41709774a8a9d21446d4a008483
-# d5c2f6f9bfde41188afe5ac4a1d3586c
-#: ../../source/user-docs/data_types.rst:51
+# c618ac779b2e4759bfbcc7cb6efca7e7
+# b3ca40d287e5426e84f96add3064b35e
+# b6c3b4928f6941b99c0f61c5491ac57e
+# 4cf6930f867f461496928d81a73570bd
+# 6f505d53a6ca4af1b09edb0c0709260c
 #: ../../source/user-docs/data_types.rst:51
 #: ../../source/user-docs/data_types.rst:57
 #: ../../source/user-docs/data_types.rst:59
-#: ../../source/user-docs/data_types.rst:59
 msgid "Point"
-msgstr "Titik"
+msgstr ""
 
-# 032e891c5cb843e79fc12dde9578ce12
+# b6afb6511b434ba48a335335feb3eb19
 #: ../../source/user-docs/data_types.rst:51
 msgid "Clip points to polygon and assign all attributes"
-msgstr "Memotong titik ke poligon dan menetapkan semua atribut"
+msgstr ""
 
-# 63b35b094c41409098a7a3291fb7becd
-# 4bed06a0f6cb4341b2c2c64592fcf8b0
+# 119e8792206b48ceb23590840c83b226
+# 8930fac684884312a32f193c0a53061c
 #: ../../source/user-docs/data_types.rst:53
 #: ../../source/user-docs/data_types.rst:61
 msgid "Line"
-msgstr "Garis"
+msgstr ""
 
-# d9d4a2a7b25a430ca0a6151d3de4d3e2
-# 49b1aff05ba24a51b0c734ece71949a7
-# 73373ef1a10d45398cdb1a772dbcc7f4
+# 95a694d5b3c84784a3b83a87857d5b2a
+# a8dddd6a0eaa4908816a9824fcb3bae9
+# 3c8c2eafbe7c4cda931e938568efde19
 #: ../../source/user-docs/data_types.rst:53
 #: ../../source/user-docs/data_types.rst:55
 #: ../../source/user-docs/data_types.rst:61
 msgid "N/A"
-msgstr "N/A"
+msgstr ""
 
-# c658397031554373b9a8b69f6f0e75bd
-# 7ddbb67024d241bd9ce64c264006bc46
-# 61973e847c734c8bbc9a45323ffae6c1
-# a7d4ac91609d4b9caaa0de4ee49ae83f
-# e4f2e26b26c148a498e72462adffe582
-# b6ac9e4ad92b4029940ffc84ecf53ca3
-# 392c81034c2b4cc08e8c4f9665948a8e
+# f4cb17c4fa5142d4805fb342707eaf63
+# 8c14e392a30a4eb4a03b712ecb44de03
+# ea64cfc2705a4367953292b4def2ffff
+# 096d03fdd814494198fe8fde06b9cb70
+# 4a58d7c7e48d4c6c8d3ed3fb653da952
+# 3b73e18e96ad4705bc4427b6bd1c76c5
+# 7de81091eb574cfd8dcebb315f05e8ee
 #: ../../source/user-docs/data_types.rst:57
 #: ../../source/user-docs/data_types.rst:59
 #: ../../source/user-docs/data_types.rst:61
 #: ../../source/user-docs/data_types.rst:63
 #: ../../source/user-docs/data_types.rst:65
-#: ../../source/user-docs/data_types.rst:65
-#: ../../source/user-docs/data_types.rst:65
 msgid "Raster"
-msgstr "Raster"
+msgstr ""
 
-# 166ec96bbdfc4f808da469c8c02effea
+# 2d0f478d92f84daa8c1a6d542ab6f756
 #: ../../source/user-docs/data_types.rst:57
 msgid "Convert to points and use Polygon-Point algorithm"
-msgstr "Konversi untuk titik dan menggunakan algoritma Polygon-Point"
+msgstr ""
 
-# d1dc4503df354e57b10853ee761ecb10
+# 17e9a6956329402093602aec9dd54289
 #: ../../source/user-docs/data_types.rst:59
 msgid "Bilinear or piecewise constant interpolation"
-msgstr "Bilinear atau bagian interpolasi konstan"
+msgstr ""
 
-# 4abe936a598d48e0951656c78d0a4c14
+# 717328b4ccff4084ba71a245d6ce26dc
 #: ../../source/user-docs/data_types.rst:63
 msgid "Convert to centroids and use Raster-Point algorithm"
-msgstr "Konversi ke centroid dan menggunakan algoritma Raster-Point"
+msgstr ""
 
-# 1c99195bdd45477fb555016fd5eb0805
+# 289c3a6b881e4f72a9c5c3685cd3b519
 #: ../../source/user-docs/data_types.rst:65
 msgid "Check that rasters are aligned and return E"
-msgstr "Periksa raster yang selaras dan kembali E"
+msgstr ""
 
-# a39033f3c3474beba571abdd96806b7f
+# fc0f61e5a30147e58963a25248eb0b5f
 #: ../../source/user-docs/data_types.rst:69
 msgid ""
 "See :ref:`writing_impact_functions` for more information and "
-"`assign_hazard_values_to_exposure_data <http://inasafe.org/api-"
-"docs/safe/engine/interpolation.html#safe.engine.interpolation.assign_hazard_values_to_exposure_data>`_"
-" for the full documentation of this function."
-msgstr "See :ref:`writing_impact_functions` untuk informasi lebih lanjut dan `assign_hazard_values_to_exposure_data <http://inasafe.org/api-docs/safe/engine/interpolation.html#safe.engine.interpolation.assign_hazard_values_to_exposure_data>`_ untuk dokumentasi lengkap fungsi ini."
+"`assign_hazard_values_to_exposure_data <http://inasafe.org/api-docs/safe/"
+"engine/interpolation.html#safe.engine.interpolation."
+"assign_hazard_values_to_exposure_data>`_ for the full documentation of this "
+"function."
+msgstr ""
