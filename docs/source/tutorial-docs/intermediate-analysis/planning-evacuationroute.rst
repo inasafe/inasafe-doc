@@ -28,7 +28,6 @@ The term fastest route indicates the route a person can take between point A and
 * A new plugin window will appear in your project window that looks like this:
 .. image:: /static/tutorial/intermediate-analysis/4_shortestpathbox.png
 
-
 ### 2.  Edit Plugin Settings
 
 * We must edit some settings in order for the "Shortest path" plugin to work.  Go to Vector  Road graph  Settings.
@@ -37,14 +36,9 @@ The term fastest route indicates the route a person can take between point A and
 * "Topology tolerance" should be set to 4.
 * On the "Transportation layer" tab, select ***Jalan_Sirahan*** as the layer.  This layer contains the streets that the plugin will use to calculate routes.  The rest will remain the same.  It should look like this:
 .. image:: /static/tutorial/intermediate-analysis/4_roadgraph1.png
-
-
 * On the "Default settings" tab, we must fill in the direction and speed.  Choose "two-way direction" and 25 for the speed (meaning 25 km/hr).  This assumes that traffic can go in both directions and a maximum speed of 25 km/hr.
 .. image:: /static/tutorial/intermediate-analysis/4_roadgraph2.png
-
-
 * Click OK.
-
 
 ### 3.  Choose Start and End Points
 
@@ -60,20 +54,15 @@ The Road Graph plugin calculates either the shortest or fastest route between tw
 * Click "Calculate."
 * The time and distance required for the evacuation route will be displayed.
 .. image:: /static/tutorial/intermediate-analysis/4_length.png
-
-
 * In this example, the length of the fastest route between our two points is about 1.97 kilometers and the travel time is 0.0788 hours, which is about 5 minutes.  This time in our example is determined by the distance and our default speed of 25 km/hr.  This speed can be changed, and can even be set to different amount for each segment of road.
 * The route is also drawn on our map
 .. image:: /static/tutorial/intermediate-analysis/4_route.png
-
-
 * To save the evacuation route as a separate layer, click on Export  New temporary layer, and click OK.
 .. image:: /static/tutorial/intermediate-analysis/4_exportfeature.png
-
-
 * You may need to choose a CRS for the new layer.  UTM zone 49S should work fine.
 * The layer will be added to your Layers list as shortest_path, but you still need to save the layer.
-* To save, right-click on the layer and click "Save as…"
+* To save, right-click on the layer and click "Save as"
  
 **Summary**
+
 In this chapter we've learned how to calculate the shortest distance between two points using the Road Graph plugin.  Using this you can easily determine evacuation routes from various areas.  Evacuation routes are important for contingency plans, and those living in threatened areas can be educated with the quickest and safest routes to take in the event of an emergency.
