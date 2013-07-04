@@ -242,15 +242,14 @@ In this chapter we learn about how to install SDS plugin and how to use it to sa
 
 D. Appendix
 
-**Geometries** In OpenStreetMap, is drawing shapes on OpenStreetMap maps.
+:Geometries: In OpenStreetMap, is drawing shapes on OpenStreetMap maps.
 
-**JSON**  JavaScript Object Notation (JSON) is a text-based open standard designed for human in 
-                 	 data exchange.
+:JSON: JavaScript Object Notation (JSON) is a text-based open standard designed for human in data exchange.
 
-**Plugin** 	In computing, a plug-in (or plugin) is a set of software components that adds specific capabilities to software applications greater. If supported, plug-in allows to change the function of the application.
+:Plugin: In computing, a plug-in (or plugin) is a set of software components that adds specific capabilities to software applications greater. If supported, plug-in allows to change the function of the application.
 
-**Prefix**	 Prefix. Affixes are added at the beginning of a word.
+:Prefix: Prefix. Affixes are added at the beginning of a word.
 
-**Private Datastore** 	personal data storage space that is different from the data of a general nature
+:Private Datastore: personal data storage space that is different from the data of a general nature
 
-**SDS** Separate Data Store. OpenStreetMap is a feature that allows you to separate the data can only be accessed by certain parties (private) from public data. To split the data to the storage space will be different from the general data
+:SDS: Separate Data Store. OpenStreetMap is a feature that allows you to separate the data can only be accessed by certain parties (private) from public data. To split the data to the storage space will be different from the general data
