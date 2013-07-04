@@ -72,17 +72,12 @@ In QGIS, we can use the same types of sources to get information about the groun
 - Click Open. An image will load into your map.
 - Find the new image in the Layers list.
 - Click and drag it to the bottom of the list so that it is below the vector layer you created in the previous section.
-
 .. image:: /static/tutorial/intro-analysis/9_8.png
-
 - Go to Settings -> Project Properties... and enable "on the fly" transformation.
 - Make sure that "WGS 84" is selected as the CRS, and click OK.
-
 .. image:: /static/tutorial/intro-analysis/9_9.png
-
 - Right click on the **_UGM_** layer, and click "Zoom to Layer Extent."
 - Zoom in to the center of the raster image.  We will be digitizing three areas:
-
 .. image:: /static/tutorial/intro-analysis/9_10.png
 
 <br>
@@ -219,7 +214,7 @@ In order to georeference this image, we need to associate points on the image to
 .. image:: /static/tutorial/intro-analysis/9_28.png
 
 - Click on the very top left point of the map, right where the top border of the map meets the left border.
-- A box will pop up requesting the x and y coordinates of the point you just clicked.  Luckily, the coordinates are written in blue on the map.  The longitude (x coordinate) is 110° 15' 00" E and the latitude (y coordinate) is 7° 29' 47" S.  We can enter the coordinates in the box as follows.  Remember that south and west coordinates will be negative numbers.
+- A box will pop up requesting the x and y coordinates of the point you just clicked.  Luckily, the coordinates are written in blue on the map.  The longitude (x coordinate) is 110 15' 00" E and the latitude (y coordinate) is 7 29' 47" S.  We can enter the coordinates in the box as follows.  Remember that south and west coordinates will be negative numbers.
 
 .. image:: /static/tutorial/intro-analysis/9_29.png
 
