@@ -42,6 +42,8 @@ mkdir -p source/static
 # copy english resources to static to be able to do a proper sphinx-build
 cp -r resources/en/* source/static/
 
+rm -rf 
+
 BUILDDIR=build
 # be sure to remove an old build dir
 rm -rf ${BUILDDIR}
@@ -51,8 +53,9 @@ mkdir ${BUILDDIR}
 # .pot files
 sphinx-build -d ${BUILDDIR}/doctrees -b gettext $SOURCE i18n/pot/
 
-# We do not want the developer-docs being translated so take them out of here
+# We do not want the developer-docs/api-docs being translated so take them out of here
 rm -rf i18n/pot/developer-docs
+rm -rf i18n/pot/api-docs
 
 # Now iteratively update the locale specific .po files with any new strings
 # needed translation
