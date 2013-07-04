@@ -10,7 +10,7 @@ Learning Objectives
 
 Introduction
 ------------
-The power of GIS is its ability to help us analyze data.  Vector data can be analyzed to reveal how different features interact with each other.  In this chapter, we’ll work through the GIS process, attempting to solve a problem, and as we proceed, we will learn about various analysis tools that QGIS provides.
+The power of GIS is its ability to help us analyze data.  Vector data can be analyzed to reveal how different features interact with each other.  In this chapter, we'll work through the GIS process, attempting to solve a problem, and as we proceed, we will learn about various analysis tools that QGIS provides.
 
 ### 1.  The GIS Process
 	   
@@ -23,7 +23,7 @@ Before we start, it would be useful to give a brief overview of a process that c
 
 ### 2.  The Problem
 	   
-Let’s start off the process by deciding on a problem to solve.  Let’s say you’re a disaster manager, and you need to provide the best locations to place refugees (IDPs) in villages surrounding Mount Merapi when it erupts. You’ve come up with the following criteria for these locations:
+Let's start off the process by deciding on a problem to solve.  Let's say you're a disaster manager, and you need to provide the best locations to place refugees (IDPs) in villages surrounding Mount Merapi when it erupts. You've come up with the following criteria for these locations:
 1. The area should be a dry field or farm in the districts Ngemplak, Turi or Pakem.
 2. The area must be outside of Merapi Eruption Disaster Prone Region III.
 3. Access to the site should be easy, so it will not be more than 300 meters from a main roads.
@@ -33,7 +33,7 @@ Let’s start off the process by deciding on a problem to solve.  Let’s say you’re
 
 ### 3.  The Data
 	  
-To answer these questions, we’re going to need the following data:
+To answer these questions, we're going to need the following data:
 1. Landuse in Sleman regency
 2. Streets in Sleman
 3. Location of health facilities
@@ -43,7 +43,7 @@ To answer these questions, we’re going to need the following data:
 
 ### 4. Start a Project
 	 
-So now that we know what we want to do, let’s start doing it!
+So now that we know what we want to do, let's start doing it!
 
 * Start a new QGIS project.
 .. image:: /static/tutorial/intro-analysis/10_new.png
@@ -54,19 +54,19 @@ So now that we know what we want to do, let’s start doing it!
 NOTE:  Most of the layers are pretty self-explanatory, but what are KRB3, KRB2, and KRB1?  These layers show areas of **impact** when Merapi erupts.  KRB3 is the area of worst impact, KRB2 is medium, and KRB1 has little impact.  In this scenario we want to find locations that are not within KRB3. 
 
 
-The data we are working with now is similar to that from previous chapters, but now it is in a Projected Coordinate System.  The previous data was saved in WGS84 - this meant that the coordinates of our features were stored in degrees, which aren’t very good for measuring size or distance.  By using a projected system our coordinates are in meters, which is important for analysis, because we can easily measure distances between and around features.
+The data we are working with now is similar to that from previous chapters, but now it is in a Projected Coordinate System.  The previous data was saved in WGS84 - this meant that the coordinates of our features were stored in degrees, which aren't very good for measuring size or distance.  By using a projected system our coordinates are in meters, which is important for analysis, because we can easily measure distances between and around features.
 
 
 * Rename the layers by right-clicking on them and selecting the Rename option.
 * Give them the new, simpler names ***jalan, lokasi_penting, KRB III*** and ***vegetasi.***
 * Save your map as ***merapi_analisis.qgs.***
-* In your operating system’s file manager, create a new folder under ***qgis/Sleman/Merapi*** and call it ***evakuasi_bencana.***  This is where you’ll save the datasets that we will create during our anaysis.
+* In your operating system's file manager, create a new folder under ***qgis/Sleman/Merapi*** and call it ***evakuasi_bencana.***  This is where you'll save the datasets that we will create during our anaysis.
 
-Now that we’ve got the data, let’s analyze the problem!
+Now that we've got the data, let's analyze the problem!
 
 ### 5.  Analyzing the Problem: Farms and Dry Fields
 	 
-The first criterion we’re facing is that the land must be a farm or dry field, and it must be in one of three areas.  So let’s tell QGIS to only show us the farms and dry fields that are, in fact, in these sub-districts!
+The first criterion we're facing is that the land must be a farm or dry field, and it must be in one of three areas.  So let's tell QGIS to only show us the farms and dry fields that are, in fact, in these sub-districts!
 
 * Right-click on the ***vegetasi*** layer in the Layers list.
 * Select the option Query.... This opens the Query Builder dialog.
@@ -82,22 +82,22 @@ We are going to build a query.  A query is a statement that allows us to show on
 * Click the = button (under Operators).
 .. image:: /static/tutorial/intro-analysis/10_equal.png
 * Double-click the value Ngemplak in the Values list.
-* Click “OR”.
+* Click "OR".
 * Repeat these steps twice more, using the values Turi and Pakem instead of Ngemplak.  The query should look like this:
 .. image:: /static/tutorial/intro-analysis/10_sql1.png
-* Click “AND”.
-* Now highlight **guna_lahan** in the Fields list, and click the “All” button to load the values.
+* Click "AND".
+* Now highlight **guna_lahan** in the Fields list, and click the "All" button to load the values.
 * Double-click **guna_lahan**.  Then click the = button.  Then double-click the value KEBUN.
-* Click “OR”.
+* Click "OR".
 * Repeat the previous step but instead of KEBUN use TEGALAN.  Your query should look like this:
 .. image:: /static/tutorial/intro-analysis/10_sql2.png
 
 
-* The idea is that query will filter the data layer so that it will only show us features that we want - that is, farms and dry fields in Pakem, Turi, and Ngemplak.  But we need to add one thing to our query: parentheses.  Without these, our query won’t work quite right.  We need to add two pair of parentheses on each side of the word AND, like so:
+* The idea is that query will filter the data layer so that it will only show us features that we want - that is, farms and dry fields in Pakem, Turi, and Ngemplak.  But we need to add one thing to our query: parentheses.  Without these, our query won't work quite right.  We need to add two pair of parentheses on each side of the word AND, like so:
 .. image:: /static/tutorial/intro-analysis/10_sql3.png
 * Click OK.  Our **vegetasi** layer has far fewer features now.
 .. image:: /static/tutorial/intro-analysis/10_vegetasi.png
-Well done!  We’ve applied our first criteria to begin solving the problem!
+Well done!  We've applied our first criteria to begin solving the problem!
 
 
 ### 6.  The Danger Zone
@@ -105,10 +105,10 @@ Well done!  We’ve applied our first criteria to begin solving the problem!
 Our next criteria is that our chosen location should be outside of the danger zone, which is defined by the layer ***KRB III.***  For this we can use the Spatial Query tool.
 
 * Go to Vector ? Spatial Query ? Spatial Query.
-* Under “Select source features from” choose “**vegetasi**”.  In the next box choose “Is disjoint.”  The third box should be set to “KRB III”.  The Spatial Query window should look like this:
+* Under "Select source features from" choose "**vegetasi**".  In the next box choose "Is disjoint."  The third box should be set to "KRB III".  The Spatial Query window should look like this:
 .. image:: /static/tutorial/intro-analysis/10_spatialquery.png
 
-* Click “Apply.”  Then click “Close” once the selection has been applied.
+* Click "Apply."  Then click "Close" once the selection has been applied.
 
 
 Now the ***vegetasi*** layer looks like the image below.  Notice that all the features have been selected that fall **outside** the ***KRB III*** area.
@@ -148,16 +148,16 @@ We have a problem with our roads layer, similar to that of our vegetation layer.
 
 ### 9.  Buffering Roads
 
-Okay, we’ve refined our data a bit so that it shows us the features we are interested in analyzing.  Remember that according to our criteria our land area should be within 300 meters of a main road and close to a health facility.  QGIS allows us to calculate distances from any vector object, and we will use this functionality to help us reach a solution.
+Okay, we've refined our data a bit so that it shows us the features we are interested in analyzing.  Remember that according to our criteria our land area should be within 300 meters of a main road and close to a health facility.  QGIS allows us to calculate distances from any vector object, and we will use this functionality to help us reach a solution.
 
- * Make sure that only the ***jalan*** and ***kebun_tegalan*** layers are visible, to simplify the map while you’re working.
+ * Make sure that only the ***jalan*** and ***kebun_tegalan*** layers are visible, to simplify the map while you're working.
  * Go to Vector ? Geoprocessing Tools ? Buffer(s).
 .. image:: /static/tutorial/intro-analysis/10_vector.png
 
 
-* In the first dropdown box choose “jalan”
-* Enter “300” next to Buffer distance.
-* Check the box next to “Dissolve buffer results.”
+* In the first dropdown box choose "jalan"
+* Enter "300" next to Buffer distance.
+* Check the box next to "Dissolve buffer results."
 * Click Browse and type buffer_jalan_300m.shp for the filename.
 .. image:: /static/tutorial/intro-analysis/10_buffer.png
 
@@ -166,11 +166,11 @@ Note that we input the buffer distance in meters.  Good thing we used projected 
 
 
 * Click OK.  QGIS will create a buffer around the streets that extends 300 meters.
-* When you are asked to add the new layer to the TOC, click “Yes.”  (“TOC” stands for “Table of Contents”, by which it means the Layers list).
+* When you are asked to add the new layer to the TOC, click "Yes."  ("TOC" stands for "Table of Contents", by which it means the Layers list).
 .. image:: /static/tutorial/intro-analysis/10_toc.png
 
 * Close the Buffer dialog and witness your new layer:
-.. image:: /static/utorial/intro-analysis/10_buffer2.png
+.. image:: /static/tutorial/intro-analysis/10_buffer2.png
 
 Interesting!  Those big fat lines are actually areas that are within 300 meters of primary and secondary roads.
 
@@ -206,28 +206,28 @@ Now we have the layer ***kebun_tegalan***, which satisfies two of our criteria, 
 .. image:: /static/tutorial/intro-analysis/10_select.png
 
 
-* Click OK and you’ll see the results are selected (they are yellow).
+* Click OK and you'll see the results are selected (they are yellow).
 .. image:: /static/tutorial/intro-analysis/10_buffer5.png
 
-Let’s save this selection as a new layer.
+Let's save this selection as a new layer.
 
 * Right-click on the kebun_tegalan layer in the Layers list.
 * Select Save Selection As....
-* Name the new file kebun_tegalan_lokasi_terpilih.shp and check the box next to “Add saved file to map.”  If we hide all the other layers, we can see the resulting layer:
+* Name the new file kebun_tegalan_lokasi_terpilih.shp and check the box next to "Add saved file to map."  If we hide all the other layers, we can see the resulting layer:
 .. image:: /static/tutorial/intro-analysis/10_buffer6.png
 
 
 ### 13.  Select Land Areas of the Appropriate Size
 Hooray!  We have now found land areas that meet four of our five criteria.  The only remaining criteria is the size of the land.  We need to make sure that our possible locations are between 50000-150000 m².
 
-* Open the attribute table for the ***kebun_tegalan_lokasi_terpilih*** layer.  You’ll notice that there is a column named luas_ha.  This is the size of the area in hectares.  We could use this field to answer our question, but let’s add another column that contains the size of the area in square meters.
+* Open the attribute table for the ***kebun_tegalan_lokasi_terpilih*** layer.  You'll notice that there is a column named luas_ha.  This is the size of the area in hectares.  We could use this field to answer our question, but let's add another column that contains the size of the area in square meters.
 * Select the ***kebun_tegalan_lokasi_terpilih*** layer and enter edit mode:
 .. image:: /static/tutorial/intro-analysis/10_pencil.png
 * Start the field calculator (located in the Attribute Table window)<br>
 .. image:: /static/tutorial/intro-analysis/10_calculator.png
-* Check the box next to “Create a new field”.  In the box type “luas_m2.”
+* Check the box next to "Create a new field".  In the box type "luas_m2."
 .. image:: /static/tutorial/intro-analysis/10_newfield.png
-* Click on “Geometry,” and then double-click “$area.”
+* Click on "Geometry," and then double-click "$area."
 .. image:: /static/tutorial/intro-analysis/10_fieldcalculator.png
 * Click OK.
 * You should now see a new column on your attribute table, named **luas_m2.**  And QGIS has filled it in for us with square meters!
@@ -245,7 +245,7 @@ Hooray!  We have now found land areas that meet four of our five criteria.  The 
 .. image:: /static/tutorial/intro-analysis/10_result.png
 
 
-That’s it!  We have eight pieces of land that meet ALL of our criteria.  Any of these pieces of land might be suitable for a location to place refugees.
+That's it!  We have eight pieces of land that meet ALL of our criteria.  Any of these pieces of land might be suitable for a location to place refugees.
 
 
 
