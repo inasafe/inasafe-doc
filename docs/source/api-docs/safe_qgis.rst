@@ -10,3 +10,8 @@ Package::safe_qgis
    safe_qgis/exceptions
    safe_qgis/dock
    safe_qgis/safe_interface
+   safe_qgis/impact_statistics
+   safe_qgis/tools
+   safe_qgis/batch
+   safe_qgis/utilities
+   safe_qgis/report

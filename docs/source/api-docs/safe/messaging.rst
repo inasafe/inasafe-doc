@@ -7,6 +7,5 @@ Package::safe.messaging
    messaging/message
    messaging/error_message
    messaging/styles
-   messaging/test_messaging
    messaging/example
    messaging/item
