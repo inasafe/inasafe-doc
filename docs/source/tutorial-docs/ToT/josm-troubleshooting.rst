@@ -128,6 +128,9 @@ Here are the steps to split the upload process :
 E. Plugin not downloaded and installed properly
 -----------------------------------------------
 
+.. image:: /static/tutorial/ToT/4_tot_1.png
+   :align: center
+   
 **Problem :**
 
 This problem occurs because the plugin failed to be downloaded or not downloaded completely (for example, because of the internet connection suddenly cut off in the middle of the download process). 
@@ -141,16 +144,23 @@ Download the plugin again when the internet connection stable. However, the prev
 
 1. Open this folder **“C:\Users\SamsungOke\AppData\Roaming”** (Note : “SamsungOke” is the name of your laptop). Actually there is a faster way to open this folder by click on **“Start”** menu at the bottom left corner of your laptop, then type  **“%AppData%”**
 
+.. image:: /static/tutorial/ToT/4_tot_2.png
+   :align: center
 
 It will show you a name of a folder called **"Roaming"**. Select (left click) on the name (“Roaming”). Then, the **"Roaming"** folder will be opened, as shown below :
 
-
+.. image:: /static/tutorial/ToT/4_tot_3.png
+   :align: center
+   
 2. Once the **“Roaming”** folder is open, find a folder called **JOSM**. Open JOSM folder (Attention ! This folder is not located in “C:\Program Files”). Here is the content of the folder:
 
+.. image:: /static/tutorial/ToT/4_tot_4.png
+   :align: center
 
 After you open the JOSM folder, find **“plugin”** folder and open it, then remove the plugin that failed to be downloaded previous. In this example, you failed to download “building_tools” plugin. So, just delete “building _tools” plugin file .
 
-
+.. image:: /static/tutorial/ToT/4_tot_5.png
+   :align: center
 
 3. After you remove that file, re-download and install the plugin when the internet connection was stable. 
 
@@ -162,7 +172,8 @@ However, if the internet connection is not stable or weak connections (so the do
 **“C:\Users\samsung\AppData\Roaming\JOSM”**
 It will opened the folder JOSM, and then go to the **plugin** folder. In the plugin folder, you wil see several folders that are installed on your JOSM. 
 
-
+.. image:: /static/tutorial/ToT/4_tot_6.png
+   :align: center
 
 Once the plugin folder (picture above) on your friend’s computer open, copy the plugin you need. Save to your flash. 
 
@@ -170,24 +181,29 @@ Once the plugin folder (picture above) on your friend’s computer open, copy the 
 
 * If the plugin does not have the extra folder, you can simply copy the file extension **.jar (Executable Jar File).** Example, for plugin “building tools”, You can simply copy one file is **“building_tools.jar”**.
 
-
+.. image:: /static/tutorial/ToT/4_tot_7.png
+   :align: center
 
 * If you need plugins have additionals folder, you need copy the folder anyway. Example for the “ImportImage” plugin, you need copy the two files are file **“ImportImagePlugin.jar”** and the **”ImportImagePlugin”** folder.
 
-
+.. image:: /static/tutorial/ToT/4_tot_8.png
+   :align: center
 
 2. Open your flash, find the plugin file that you have copied, then **“Paste”** the plugin on your computer. Where have to paste these plugin? That is the folder where the plugins should be installed (this folder is the same folder where the plugin is copied), namely :
 
 **“C:\Users\samsung\AppData\Roaming\JOSM\plugins”**
 
+.. image:: /static/tutorial/ToT/4_tot_9.png
+   :align: center
 
 3. The process that you just do not yet enable / install the plugin, you still have to install the plugin. How :
 
-* Open your JOSM, and then go to **“Preference”**  (cick this icon  or click menu **“Edit”** > **“Preferences"**)
-* Go to the tab **“Plugin”** , and type the name of plugin you just copy. Now you should be able to see the plugin in the plugin list.
+* Open your JOSM, and then go to **“Preference”**  (cick this icon image:: /static/tutorial/ToT/4_tot_10.png or click menu **“Edit”** > **“Preferences"**)
+* Go to the tab **“Plugin”** image:: /static/tutorial/ToT/4_tot_11.png , and type the name of plugin you just copy. Now you should be able to see the plugin in the plugin list.
 * Tick at the check box beside the name of the plugin. 
 
-
+.. image:: /static/tutorial/ToT/4_tot_12.png
+   :align: center
 
 Then click OK, Installation should instantly work and the following message box will appear.
 
@@ -196,23 +212,28 @@ Then click OK, Installation should instantly work and the following message box 
 F. Projection system do not compatible with OSM data 
 ----------------------------------------------------
 
+.. image:: /static/tutorial/ToT/4_tot_13.png
+   :align: center
+
 **Problem :**
 
 When you download the OSM data, sometimes the OSM data can not appear, but instead appear as above. This is because the projection system is not defined on JOSM proper projection system. The recommended projection system are  (i) **Mercator**, or (ii) **WGSGeographic84**. Why? Because basically OpenStreetMap is covering the whole world, then the projection system used is a global projection, which can cover the entire region of the world. If it appear like the picture above, please check the coordinate system defined in your JOSM. How :
 
-* Open your **JOSM**, then go to **“Preference”** (click this icon  or click menu **“Edit”** > **“Preferences”**)
-* Select the tab for 3 from the top, with a picture . Then select the leftmost tab “Map Projection”. Once the page **“Map Projection”** is open, Look in “Projection method”. In the following example, the system-defined projection is “Belgian Lambert 1972”. Projection system is not the proper projection system to appear the OSM data. That’s why the OSM data can not open and appeared properly.
+* Open your **JOSM**, then go to **“Preference”** (click this icon image:: /static/tutorial/ToT/4_tot_10.png  or click menu **“Edit”** > **“Preferences”**)
+* Select the tab for 3 from the top, with a picture image:: /static/tutorial/ToT/4_tot_15.png. Then select the leftmost tab “Map Projection”. Once the page **“Map Projection”** is open, Look in “Projection method”. In the following example, the system-defined projection is “Belgian Lambert 1972”. Projection system is not the proper projection system to appear the OSM data. That’s why the OSM data can not open and appeared properly.
 
-
+.. image:: /static/tutorial/ToT/4_tot_16.png
+   :align: center
 
 **Solution :**
 
 To fix this problem, you should change the projection system on JOSM with proper projection system, namely  (i) Mercator atau (ii) WGSGeographic84. How :
 
-* Open your **JOSM**, then go to **“Preference”**  (click this icon i or click menu **“Edit”** > **“Preferences”**)
-* Select the tab for 3 from the top, with a picture . Then select the leftmost tab **“Map Projection”**. Once the page “Map Projection” is open, look in the “Projection method”. In the following example, the defined projection system is “Belgian Lambert 1972”. Replace the projection system, Gantilah sistem proyeksi tersebut, a (i) **Mercator** or (ii) **WGSGeographic84**.
+* Open your **JOSM**, then go to **“Preference”**  (click this icon image:: /static/tutorial/ToT/4_tot_10.png or click menu **“Edit”** > **“Preferences”**)
+* Select the tab for 3 from the top, with a picture image:: /static/tutorial/ToT/4_tot_15.png. Then select the leftmost tab **“Map Projection”**. Once the page “Map Projection” is open, look in the “Projection method”. In the following example, the defined projection system is “Belgian Lambert 1972”. Replace the projection system, Gantilah sistem proyeksi tersebut, a (i) **Mercator** or (ii) **WGSGeographic84**.
 
-
+.. image:: /static/tutorial/ToT/4_tot_17.png
+   :align: center
 
 * Note : You can also replace the projection system to UTM. However, you should know what is right in the zone region you download it. If you wrong on the defining zones, the same problem (the OSM data not appear in JOSM) will occur.
 * After you have defined the correct projection system, click OK then download OSM data back.
