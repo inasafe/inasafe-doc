@@ -71,7 +71,6 @@ The first criterion we're facing is that the land must be a farm or dry field, a
 
 We are going to build a query.  A query is a statement that allows us to show only the data that we want from a layer.  In this case, we want to instruct QGIS to only show us farms and dry fields which have a sub-district value equal to Ngemplak, Turi, or Pakem.
 
-<<<<<<< HEAD
 * Double-click the word ***kec*** in the Fields list.
 * Click the = button (under Operators).
 .. image:: /static/tutorial/intro-analysis/10_equal.png
@@ -85,23 +84,6 @@ We are going to build a query.  A query is a statement that allows us to show on
 * Click "OR".
 * Repeat the previous step but instead of KEBUN use TEGALAN.  Your query should look like this:
 .. image:: /static/tutorial/intro-analysis/10_sql2.png
-=======
-	* Double-click the word ***kec*** in the Fields list.
-	* Click the = button (under Operators).
-		.. image:: /static/tutorial/intro-analysis/10_equal.png
-	* Double-click the value Ngemplak in the Values list.
-	* Click "OR".
-	* Repeat these steps twice more, using the values Turi and Pakem instead of Ngemplak.  The query should look like this:
-		.. image:: /static/tutorial/intro-analysis/10_sql1.png
-	* Click "AND".
-	* Now highlight **guna_lahan** in the Fields list, and click the "All" button to load the values.
-	* Double-click **guna_lahan**.  Then click the = button.  Then double-click the value KEBUN.
-	* Click "OR".
-	* Repeat the previous step but instead of KEBUN use TEGALAN.  Your query should look like this:
-		.. image:: /static/tutorial/intro-analysis/10_sql2.png
-
-
->>>>>>> abd042cd6b098227975c9eedcccbf7381cab608c
 * The idea is that query will filter the data layer so that it will only show us features that we want - that is, farms and dry fields in Pakem, Turi, and Ngemplak.  But we need to add one thing to our query: parentheses.  Without these, our query won't work quite right.  We need to add two pair of parentheses on each side of the word AND, like so:
 .. image:: /static/tutorial/intro-analysis/10_sql3.png
 * Click OK.  Our **vegetasi** layer has far fewer features now.
