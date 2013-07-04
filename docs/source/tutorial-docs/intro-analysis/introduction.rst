@@ -54,7 +54,7 @@ Before contemplating a contingency plan, one must first consider potential disas
 - *where are the priority areas?*
 
 
-In other words, a contingency plan answers the question, ***who does what, where and when?***
+In other words, a contingency plan answers the question, **who does what, where and when?**
 
 A Geographic Information System is able to help planners answer these questions, especially the important spatial elements of contingency planning.  GIS may be used to model hazardous events so that they can be better predicted and reduce risk.  It may be used to plan evacuation routes prior to a disaster.  When a disaster occurs, GIS may also play a role in the emergency response phase.  It can be used to map the area affected and position of refugee camps, so that helpers can be directed to the most useful locations to aid those affected.  After a disaster, GIS may also be used to plan for rehabilitation and reconstruction.  Overall, GIS helps to perform analysis of a disaster, damage and losses caused, and opportunities for reducing risk.
 
@@ -68,17 +68,17 @@ Quantum GIS (QGIS) is a user friendly open-source Geographic Information System 
 
 QGIS is awesome because:
 
-- It’s completely free.  It doesn’t cost anything.
-- It’s free, as in liberty.  If you think a feature is missing, you can sponsor the development of a feature, or add it yourself if you are familiar with programming.
-- It’s constantly developing and improving.  Because many people continue adding features, it keeps getting better.
+- It's completely free.  It doesn't cost anything.
+- It's free, as in liberty.  If you think a feature is missing, you can sponsor the development of a feature, or add it yourself if you are familiar with programming.
+- It's constantly developing and improving.  Because many people continue adding features, it keeps getting better.
 - Extensive help and documentation is available.  If you have problems you can always turn to the software documentation, other QGIS users, or even the developers.
 
 QGIS has many plugins which extend the core functionality of the software.  One of these plugins is InaSAFE, which can be used to analyze the impact of a disaster and create a list of actions needed to be taken when a disaster occurs.  QGIS and InaSAFE can also help to determine the location of ideal places of refuge, evacuation routes, areas likely to be damaged, and more.
 
 
 
-.. figure:: /intro-analysis/1_introduction.png
-   :align:   center
+.. image:: /static/tutorial/intro-analysis/1_introduction.png
+   :align: center
 
 InaSAFE provides overviews of potential disaster scenarios, of their outcomes, as well as maps which can aid decision makers when disaster strikes.  Maps are an effective way of communicating disaster impact, but showing in a simple way the areas of damage, such as the extent of flood-affected areas and buildings affected by a flood.
 
