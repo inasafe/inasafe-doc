@@ -34,10 +34,13 @@ Raster data essentially comes in the form of an image.  It is made up of pixels,
 	- Go to Settings -> Project Properties...
 	- Enable "on the fly" reprojection.
 	.. image:: /static/tutorial/intro-analysis/7_onthefly.png
+	
 	- Click OK.
 
 The raster should display nicely underneath your vector data layers.
+
 .. image:: /static/tutorial/intro-analysis/7_map1.png
+
 
 <br>
 ###2. Changing Raster Symbology
