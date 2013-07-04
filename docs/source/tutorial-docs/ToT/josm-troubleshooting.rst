@@ -21,7 +21,8 @@ When you edit or add data into OpenStreetMap (OSM) through JOSM editor, sometime
 
 A. API Error
 -------------
-
+.. image:: /static/tutorial/ToT/4_apierror.png
+	:align: center
 **Problem:**
 
 When you are trying to download OSM data, sometimes this error message (see the picture above) appear. This problem occurs because JOSM could not connect to OSM  server.
@@ -33,7 +34,8 @@ Make sure you have connected to the internet. If you are not connected yet to th
 1. Close JOSM, then go to this directory on your computer:
    **“C:\Users\(username komputer Anda)\AppData\Roaming\JOSM”**
 2. You will find these two files :  **“preferences.xml” and “prefrences.xml_backup”**
-
+.. image:: /static/tutorial/ToT/4_preferences.png
+	:align: center
 
 3. Move those files to other directory, but make sure to right click on your mouse first and then select **“Cut”**. Store those files in a convenient location in mind (e.g. “Documents”) by right click on your mouse and then select **“Paste”**.
 4. Run JOSM. Re-download OSM data. But, perhaps you aware that some settings (for example the plugins setting) are missing. Close your JOSM now.
@@ -44,8 +46,6 @@ Make sure you have connected to the internet. If you are not connected yet to th
 
 B. JOSM compatibility for Windows 8
 ------------------------------------
-
-
 **Problem:**
 
 For Windows 8 Operating System user, after you install JOSM, you  have to set the JOSM compatibility in order your JOSM work properly.
@@ -55,18 +55,21 @@ For Windows 8 Operating System user, after you install JOSM, you  have to set th
 The following are the steps to set JOSM compatibility for Windows 8:
 
 1. Right click on JOSM shortcut at your desktop, then select **“Properties”**
-
-
+.. image:: /static/tutorial/ToT/4_windows8.png
+	:align: center
 
 2. You will see “Proprties” window. Click on **“Compatibility”** tab, and check on **“Run this program in compatibility mode for :”**, select **“Windows XP (Service Pack 3)”** or **“Windows 7”**. Finally, check on **“Run this program as an administrator”** also, and then click **OK.**
-
+.. image:: /static/tutorial/ToT/4_josmproperties.png
+	:align: center
+	
 C. Troubleshoot in Remote Control JOSM
 --------------------------------------
 
 **Problem:**
 
 Some websites such as KeepRight and Tasking Manager using Remote Control feature in JOSM. Unfortunately, remote control feature sometimes do not work properly, thus JOSM do not respond the request from  KeepRight or Tasking Manager site.
-
+.. image:: /static/tutorial/ToT/4_osmtasking.png
+	:align: center
 
 OSM Tasking Manager using Remote Control feature in JOSM 
 to connect the area you had choosen in Tasking Manager to JOSM software.
@@ -76,39 +79,52 @@ When this problem occurs, no warning or error message appear either in JOSM or y
 **Solution:**
 
 1. Open JOSM, then click on **Edit** > **Preferences**. Go on tab **Remote Control**, make sure you have check the **“Enable Remote Control”** check box. Restart JOSM.
-
-
+.. image:: /static/tutorial/ToT/4_preferences2.png
+	:align: center
 
 2. Make sure you have run JOSM before you click on ‘JOSM’ button on Tasking Manager or  KeepRight site. If JOSM still not working properly, try to use another internet browser such as Google Chrome, Firefox, or Opera
 3. If you have work with another browser but remote control still not working properly, it means that **there is a problem on your localhost**.
 4. Open your **“Preference”** Window, go on to Remote Control setting, then note your  **port number** where the remote control works. Commonly, the default setting for your localhost remote control is 8111.
-
+.. image:: /static/tutorial/ToT/4_remotecontrol.png
+	:align: center
 5. Click on **‘Start’** menu, then select **‘Control Panel’**
-
+.. image:: /static/tutorial/ToT/4_controlpanel.png
+	:align: center
 6. Click on **‘System and Security’**
-
+.. image:: /static/tutorial/ToT/4_systemsecurity.png
+	:align: center
 7. Click on **‘Windows Firewall’**
-
+.. image:: /static/tutorial/ToT/4_firewall.png
+	:align: center
 8. Click on **‘Advanced Setting’**
-
+.. image:: /static/tutorial/ToT/4_advance.png
+	:align: center
 9. You should see a new window as follow. Click on **‘Inbound Rules’** at the left side, and then click on **‘New Rule’** at the right side.
-
+.. image:: /static/tutorial/ToT/4_newrule.png
+	:align: center
 10. A new window will appear as shown below. For **‘Rule Type’** choose **‘Port’**, then click on  **‘Next’**.
-
+.. image:: /static/tutorial/ToT/4_ruletype.png
+	:align: center
 11. Select **‘TCP’**, and choose **‘Specific local ports’**. Fill in the appropriate port number as what defined in the Remote Control setting (the default is: 8111, your port number may be different). Finally, click on **‘Next’** button
-
+.. image:: /static/tutorial/ToT/4_tcp.png
+	:align: center
 12. Next setting is **Action Setting**. Select **‘Allow the connection’**, then click on **‘Next’** button
-
+.. image:: /static/tutorial/ToT/4_connection.png
+	:align: center
 13. Next setting is **Profile setting**. Make sure you have check all of the check box on the right side (**Domain, Private, dan Public**). Then click on **‘Next’** button.
-
+.. image:: /static/tutorial/ToT/4_profile.png
+	:align: center
 14 Finally, you just need to give a name for your setting. Give a name that is easy to remember. And for the **‘Description’** box, you  can leave it blank. Click on **‘Finish’** then restart your computer.
-
+.. image:: /static/tutorial/ToT/4_finish.png
+	:align: center
+	
 D. Uploading data with limited internet connection
 --------------------------------------------------
 **Problem :**
 
 If your internet connection is slow, but you want to upload your edits on OSM data, some problem may be occurs. The most common problem when you upload OSM data in a big size is some data will be uploaded repeatedly. Thus, when you see the object in JOSM, the object (line and polygon) looks thick (see the picture below).
-
+.. image:: /static/tutorial/ToT/4_poligon.png
+	:align: center
 
 So, if you have slow internet connection, to prevent error during upload, try to upload your data periodically such as every 10 - 15 objects or every 5 -10 minutes. The longer you postpone to upload your edits, the bigger data will be accumulated, thus the upload process will take longer time and you may have conflict with other user. 
 
@@ -118,10 +134,12 @@ If you are already edit a lot of objects, you can split your upload process into
 Here are the steps to split the upload process :
 
 1. Once you upload OSM data by click on “Uplaod” icon, you will see the window below. Click on **‘Advanced Configuration’**
-
+.. image:: /static/tutorial/ToT/4_advance2.png
+	:align: center
 
 2. Choose **‘Upload data in chunks of objects’** option. Here, you can define the number of objects you want to upload for each upload process. For example, you want to upload 5000 object, and previously you have define to upload every 1000 object, thus the upload process will be divided into 5 times and each upload process JOSM will upload 1000 objects. Don’t forget to click on **‘Upload Changes’** after you change the setting. By split upload into some sections, upload process will be lighter and faster, even in a slow internet connection.
-
+.. image:: /static/tutorial/ToT/4_chunk.png
+	:align: center
 
 **Note :** You do not need to return to this window every time you want to split your upload process into some sections. Once you set it and upload your data, JOSM automatically will save this setting for the next upload process. You can easily change the number of object you want to upload for each upload process through this setting.
 
@@ -240,13 +258,13 @@ To fix this problem, you should change the projection system on JOSM with proper
 
 G. Failed to download “Bing Aerial Attribution”
 ------------------------------------------------
-
+.. image:: /static/tutorial/ToT/4_bing.png
+	:align: center
 **Problem :**
 
 To use the imagery from “Bing” (**Bing satellite**), first of all JOSM should download “Bing aerial attributions” (“Bing aerial attributions” is a file contains basic information about the Bing imagery). The download process may have problem/failed because an internet connection. JOSM will display an error message like **“Error loading Bing attributions”** at the bottom right corner (see picture above). Here is a part from “Bing aerial attributions”.
-
-
-
+.. image:: /static/tutorial/ToT/4_bing2.png
+	:align: center
 
 If the downloaded file fails, then an error message **“Error loading Bing attributions”** will appear at the bottom right corner of JOSM. 
 
@@ -256,7 +274,8 @@ If the downloaded file fails, then an error message **“Error loading Bing attrib
 
 H. Internal Server Error
 ------------------------
-
+.. image:: /static/tutorial/ToT/4_ise.png
+	:align: center
 **Problems :**
 
 When you downloading data from OSM server or uploading data to the OSM server, JOSM tries to build a connection with the OSM server that has been configured on “Preferences” in JOSM. However, sometimes problems occur in the OSM server. If the OSM server is having trouble, then JOSM will display an error message like picture above.
