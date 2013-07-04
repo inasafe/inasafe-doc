@@ -84,7 +84,7 @@ Note that if you followed along with the instructions in the introduction to thi
 
 .. image:: /static/tutorial/intro-analysis/2_11.png
    :align: center
-"
+
 * Click "Finish" to complete the installation.
 * You can now open QGIS from your Start Menu.
 
@@ -187,7 +187,7 @@ Now we will add an additional layer containing roads to our project.
 .. image:: /static/tutorial/intro-analysis/2_24.png
    :align: center
    
-* Navigate to the file ***qgis/Sleman/Jalan_Sleman_OSM.shp*** (in the training directory). Select the file and click Open.
+* Navigate to the file **qgis/Sleman/Jalan_Sleman_OSM.shp** (in the training directory). Select the file and click Open.
 
 
 .. note::  One of the most common file formats are **shapefiles**, which end with the extension **.shp**.  Shapefiles are often used to save geodata, and are commonly used with GIS applications like Quantum GIS.
@@ -201,24 +201,21 @@ Now we will add an additional layer containing roads to our project.
 ### 5.  Basic QGIS Tools
 We've already taken a look at the QGIS toolbar and seen the tools for opening a project and adding a new layer.  Here's a list of some other commonly used tools.  Feel free to play around with them if you like.  The important thing for now is to start getting familiar with QGIS.
 
-.. table::
-
-	==================================================== =========================== ================================================
-	.. image:: /static/tutorial/intro-analysis/2_26.png    Toggle Editing              Edit features in a layer  
-	   :align: center
-	.. image:: /static/tutorial/intro-analysis/2_27.png    Pan Map                     Drag the map to a new location
-       :align: center
-	.. image:: /static/tutorial/intro-analysis/2_28.png    Zoom In                     Zoom in on the map
-       :align: center
-	.. image:: /static/tutorial/intro-analysis/2_29.png    Zoom Out                    Zoom out on the map 
-       :align: center
-	.. image:: /static/tutorial/intro-analysis/2_30.png    Zoom Full                   Zoom so that all layers fit in the map window
-       :align: center
-	.. image:: /static/tutorial/intro-analysis/2_31.png    Open Attribute Table        Open a layer's attribute table
-       :align: center
-	.. image:: /static/tutorial/intro-analysis/2_32.png    Select Single Feature       Select a feature in the selected layer
-       :align: center  			
-	==================================================== ============================ =================================================
++----------------------------------------------------+-----------------------------+-----------------------------------------------+
+| image:: /static/tutorial/intro-analysis/2_26.png   | Toggle Editing              | Edit features in a layer                      |
++----------------------------------------------------+-----------------------------+-----------------------------------------------+ 
+| image:: /static/tutorial/intro-analysis/2_27.png   | Pan Map                     | Drag the map to a new location                | 
++----------------------------------------------------+-----------------------------+-----------------------------------------------+
+| image:: /static/tutorial/intro-analysis/2_28.png   | Zoom In                     | Zoom in on the map                            | 
++----------------------------------------------------+-----------------------------+-----------------------------------------------+
+| image:: /static/tutorial/intro-analysis/2_29.png   | Zoom Out                    | Zoom out on the map                           |
++----------------------------------------------------+-----------------------------+-----------------------------------------------+
+| image:: /static/tutorial/intro-analysis/2_30.png   | Zoom Full                   | Zoom so that all layers fit in the map window |
++----------------------------------------------------+-----------------------------+-----------------------------------------------+
+| image:: /static/tutorial/intro-analysis/2_31.png   | Open Attribute Table        | Open a layer's attribute table                |
++----------------------------------------------------+-----------------------------+-----------------------------------------------+
+| image:: /static/tutorial/intro-analysis/2_32.png   | Select Single Feature       | Select a feature in the selected layer        |
++----------------------------------------------------+-----------------------------+-----------------------------------------------+
 
 ### 6. Navigate the Map
 - Before we examine the attributes of individual features, let's take a quick look at how to navigate the map.  The main controls for moving the map around and zooming in and out are by default on the panels at the top of QGIS.
