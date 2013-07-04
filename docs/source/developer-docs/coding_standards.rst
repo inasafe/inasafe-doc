@@ -30,6 +30,11 @@ Please observe the following coding standards when working on the codebase:
   be assumed to represent a working demo with all tests passing.
 * All strings should be internationalisation enabled. Please see :doc:`i18n`
   for details.
+* If you use a few lines of code in more than one place, refactor them into
+  their own function.
+* If you use a literal string or expression in more than one place, refactor
+  it into a function or variable.
+
 * Code must pass a pylint validation
   (http://www.logilab.org/card/pylint_manual#what-is-pylint). You can test
   this using the make target ``make pylint``. In some cases you may wish to
@@ -104,33 +109,47 @@ Please observe the following coding standards when working on the codebase:
 Doc strings
 ...........
 
-All code should be self documenting. We used the following style for documenting
-functions and class methods::
+All code should be self documenting. Please take special note and follow
+these PEP guidelines and sphinx documents:
 
-    def setKeywordDbPath(self, thePath):
+* http://www.python.org/dev/peps/pep-0287/
+* http://sphinx-doc.org/markup/desc.html#info-field-lists
+* http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
+
+We use the following style for documenting functions and class methods::
+
+    def setKeywordDbPath(self, path):
         """Set the path for the keyword database (sqlite).
 
         The file will be used to search for keywords for non local datasets.
 
-        Args:
-            * thePath: a valid path to a sqlite database. The database does
-                  not need to exist already, but the user should be able to write
-                  to the path provided.
-        Returns:
-            None
-        Raises:
-            None
+        :param path: A valid path to a sqlite database. The database does
+            not need to exist already, but the user should be able to write
+            to the path provided.
+        :type path: str
+
+        :returns: Flag indicating if the path was set successfully.
+        :rtype: boolean
+
+
         """
         self.keywordDbPath = str(thePath)
 
-* If you use a few lines of code in more than one place, refactor them into
-  their own function.
-* If you use a literal string or expression in more than one place, refactor
-  it into a function or variable.
+Note the following in the above example:
 
-Various other sphinx markup elements may be used in the docstrings too.
-For more information see also:
-http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
+* param and type are grouped together with no line break between them.
+* If the param description is more than one line, indent the successive lines
+  with 4 spaces.
+* A newline should be placed after each type and rtype.
+* If multiple types are allowed, separate them with commas e.g. :rtype: str,
+  boolean.
+* If a function or method returns nothing, no returns section is used.
+* If a function or method raises nothing explicitly, not raises section is
+  used.
+* If a function or method is extremely obvious there is no need to have
+  anything more than a single line docstring.
+
+
 
 .. _hig-label:
 
