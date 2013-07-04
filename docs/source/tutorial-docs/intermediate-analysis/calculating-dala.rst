@@ -29,7 +29,7 @@ The BPBD has created a guide for damage and loss assessment for Indonesia, which
 
 These are the guidelines for **Damage & Loss Assessment**.
 
-.. image:: /static/intermediate-analysis/6_1.png
+.. image:: /static/tutorial/intermediate-analysis/6_1.png
    :align: center
 
 Notice that there are several elements at work here.  First, damage to different types of infrastructure is “valued” differently.  To put losses into monetary terms, a the loss of a bridge has a loss value as does the loss of a public building or a private home.  Then, depending on whether a feature suffers heavy, medium, or low damage, a multiplier is applied to determine the value of the loss.
@@ -47,13 +47,13 @@ We will create a Damage and Loss Assessment Map using our data from Sirahan Vill
 	- **Batas_Desa_Sirahan**
 	- **Bangunan_Sirahan**
 
-.. image:: /static/intermediate-analysis/6_2.png
+.. image:: /static/tutorial/intermediate-analysis/6_2.png
    :align: center
 
 We will assume that all the buildings in the **area_terdampak_Sirahan layer** (hazard zone) suffered heavy damage from the disaster.  Let’s create a spatial query to filter out these buildings.
 - Go to Vector ? Spatial Query ? Spatial Query and enter the fields like this:
 
-.. image:: /static/intermediate-analysis/6_3.png
+.. image:: /static/tutorial/intermediate-analysis/6_3.png
    :align: center
    
 - We now have a bunch of buildings selected which we are assuming will suffer heavy damages.  According to the BNPB Guide, we can assess the loss of heavily damaged buildings at a rate of 1.8million Rp. / square meter, and the multiplier factor is 70%.  Our formula for calculating losses is:
@@ -63,51 +63,51 @@ We will assume that all the buildings in the **area_terdampak_Sirahan layer** (h
         in order to get a calculation of the value of total losses.
 - We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector ? Geoprocessing Tools ? Intersect and fill in the fields as follows:
 
-.. image:: /static/intermediate-analysis/6_4.png
+.. image:: /static/tutorial/intermediate-analysis/6_4.png
    :align: center
 
 - Save the result as **Bangunan_Terdampak_perDusun**.
 - Hide the original buildings layer so that your map looks like this:
 
-.. image:: /static/intermediate-analysis/6_5.png
+.. image:: /static/tutorial/intermediate-analysis/6_5.png
    :align: center
 
 - Because we used the intersect tool our attribute table will include the DUSUN attribute.
 
-.. image:: /static/intermediate-analysis/6_6.png
+.. image:: /static/tutorial/intermediate-analysis/6_6.png
    :align: center
 
 
 ### 3. Calculate Damage Area
 - On the attribute table of **Bangunan_Terdampak_perDusun**, click the “Toggle Editing” button.
 
-.. image:: /static/intermediate-analysis/6_7.png
+.. image:: /static/tutorial/intermediate-analysis/6_7.png
    :align: center
 
 - Then click the “New Column” button.
 
-.. image:: /static/intermediate-analysis/6_8.png
+.. image:: /static/tutorial/intermediate-analysis/6_8.png
    :align: center
 
 - Create a new column named “Damage” of type decimal number:
 
-.. image:: /static/intermediate-analysis/6_9.png
+.. image:: /static/tutorial/intermediate-analysis/6_9.png
    :align: center
 
 - To calculate the damaged area of affected buildings we will use the field calculator to determine the number of square meters in each building feature.  Click on “Field Calculator.”
 
-.. image:: /static/intermediate-analysis/6_10.png
+.. image:: /static/tutorial/intermediate-analysis/6_10.png
    :align: center
 
 - Check the box next to “Update existing field” and select “Damage_Area” in the dropdown box.
 - Find “$area” under Geometry in the function list and double-click on it, so that it appears in the Expression box at the bottom.  It should look like this:
 
-.. image:: /static/intermediate-analysis/6_11.png
+.. image:: /static/tutorial/intermediate-analysis/6_11.png
    :align: center
 
 - Click OK.  You will see that the column is filled in with the area, in square meters, of the buildings.
 
-.. image:: /static/intermediate-analysis/6_12.png
+.. image:: /static/tutorial/intermediate-analysis/6_12.png
    :align: center
 
 - Click the “Toggle Editing” button and be sure to save your edits.
@@ -119,7 +119,7 @@ We will be using a QGIS plugin called Group Stats in order to calculate damages 
 - Type “group stats” and when you find the plugin, select it and click “Install.”
 - Once it is installed, go to Plugins ? Group Stats ? Group Stats
 
-.. image:: /static/intermediate-analysis/6_13.png
+.. image:: /static/tutorial/intermediate-analysis/6_13.png
    :align: center
 
 - In  ‘Choose vector layer’ choose Bangunan_Terdampak_perDusun
@@ -127,7 +127,7 @@ We will be using a QGIS plugin called Group Stats in order to calculate damages 
 - In  ‘Choose field attributes’ fill in ‘Damage’.
 - Click on “Calculate.”  The results should look like this:
 
-.. image:: /static/intermediate-analysis/6_14.png
+.. image:: /static/tutorial/intermediate-analysis/6_14.png
    :align: center
 
 - Select all the rows by clicking on the top row, holding SHIFT, and clicking on the last row.
@@ -138,7 +138,7 @@ We will be using a QGIS plugin called Group Stats in order to calculate damages 
 Now we’ve calculated the damaged area and we’ve created a table with damage data for various hamlets in Sirahan.  Now let’s implement our losses formula in the same way.
 - Go back to the attribute table for **Bangunan_Terdampak_perDusun**  and add a new column named “Losses.”
 
-.. image:: /static/intermediate-analysis/6_15.png
+.. image:: /static/tutorial/intermediate-analysis/6_15.png
    :align: center
 
 - Once again, open the Field Calculator.
@@ -146,7 +146,7 @@ Now we’ve calculated the damaged area and we’ve created a table with damage data
 - At the bottom in the Expression box, enter the following formula:
 :samp: “Damage” * 1800000 * 0.7
 
-.. image:: /static/intermediate-analysis/6_16.png
+.. image:: /static/tutorial/intermediate-analysis/6_16.png
    :align: center
 
 - Your new column is now filled with information calculated from this formula, which assesses the value of losses in Rp for each individual building.  Save the layer and end the editing session.
@@ -159,7 +159,7 @@ Now let’s calculate losses per hamlet using Group Stats again.
 - In ‘Choose field attributes’ fill in ‘Losses’.
 - Click “Calculate.”  
 
-.. image:: /static/intermediate-analysis/6_17.png
+.. image:: /static/tutorial/intermediate-analysis/6_17.png
    :align: center
 
 - The new table shows the losses in each hamlet.
@@ -170,18 +170,18 @@ Now let’s calculate losses per hamlet using Group Stats again.
 Now we will join the tables that we created to our Batas_Desa_Sirahan attribute table and then use them to add new columns to the file.
 - Add the files **BNG_Damages** and **BNG_Losses** into QGIS, using “Add vector layer”
  
-.. image:: /static/intermediate-analysis/6_18.png
+.. image:: /static/tutorial/intermediate-analysis/6_18.png
    :align: center
 
 - They will appear in your Layers list but not on your map, because they are not geographic data files, but rather tables.
 
-.. image:: /static/intermediate-analysis/6_19.png
+.. image:: /static/tutorial/intermediate-analysis/6_19.png
    :align: center
 
 - Now we will perform an operation to join the layer **Batas_Desa_Sirahan** with **BNG_Damage**. Right click on the **Batas_Desa_Sirahan** layer and go to Properties.
 - Go to the Joins tab:
 
-.. image:: /static/intermediate-analysis/6_20.png
+.. image:: /static/tutorial/intermediate-analysis/6_20.png
    :align: center
 
 - Click the plus sign and fill in the following fields:
@@ -193,30 +193,30 @@ Now we will join the tables that we created to our Batas_Desa_Sirahan attribute 
 - Click toggle *editing* and choose Field *Calculator*.
 - This time we will create a new field inside the field calculator.  Fill in the top of the window like this:
 
-.. image:: /static/intermediate-analysis/6_21.png
+.. image:: /static/tutorial/intermediate-analysis/6_21.png
    :align: center
 
 - Then in the expression box, enter
 “Sum”
 
-.. image:: /static/intermediate-analysis/6_22.png
+.. image:: /static/tutorial/intermediate-analysis/6_22.png
    :align: center
 
  
 -  Click OK.  The *BNG_Dmg* column now contains the same value as column Sum in **BNG_Damage.csv**
 - As the damage values for each hamlet have been obtained we can delete the join.  Right-click **Batas_Desa_Sirahan**, select properties, go to the Join tab, and click the minus button.
 
-.. image:: /static/intermediate-analysis/6_23.png
+.. image:: /static/tutorial/intermediate-analysis/6_23.png
    :align: center
 
 - Now click the plus button, but this time join **BNG_Losses** in the same way as before:
  
-.. image:: /static/intermediate-analysis/6_24.png
+.. image:: /static/tutorial/intermediate-analysis/6_24.png
    :align: center
 
 - Open the attribute table for **Batas_Desa_Sirahan**, click toggle editing and open the Field Calculator.  Fill in as follows:
 
-.. image:: /static/intermediate-analysis/6_25.png
+.. image:: /static/tutorial/intermediate-analysis/6_25.png
    :align: center
 
 
@@ -224,7 +224,7 @@ Now we will join the tables that we created to our Batas_Desa_Sirahan attribute 
 - Now that we have calculated the loss value and saved it in a new column, we can remove the join.  Open the layer properties and click the minus button to remove the join with **BNG_Losses**. 
 - The attribute table when you finish will look like this:
 
-.. image:: /static/intermediate-analysis/6_26.png
+.. image:: /static/tutorial/intermediate-analysis/6_26.png
    :align: center
 
 
@@ -238,12 +238,12 @@ Now we will conclude by representing these damage and loss values as a chart in 
 - Click “Find Maximum Value.”
 - In the size box enter “500.”
 
-.. image:: /static/intermediate-analysis/6_27.png
+.. image:: /static/tutorial/intermediate-analysis/6_27.png
    :align: center
 
 - The resulting map will look like this:
 
-.. image:: /static/intermediate-analysis/6_28.png
+.. image:: /static/tutorial/intermediate-analysis/6_28.png
    :align: center
 
 
