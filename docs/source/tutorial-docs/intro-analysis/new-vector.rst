@@ -77,12 +77,13 @@ In QGIS, we can use the same types of sources to get information about the groun
 
 * Go to Settings -> Project Properties... and enable "on the fly" transformation.
 * Make sure that "WGS 84" is selected as the CRS, and click OK.
-.. image:: /static/tutorial/intro-analysis/9_9.png
+
+	.. image:: /static/tutorial/intro-analysis/9_9.png
 
 * Right click on the **_UGM_** layer, and click "Zoom to Layer Extent."
 * Zoom in to the center of the raster image.  We will be digitizing three areas:
-.. image:: /static/tutorial/intro-analysis/9_10.png
 
+	.. image:: /static/tutorial/intro-analysis/9_10.png
 
 <br>
 ###3. Digitizing
