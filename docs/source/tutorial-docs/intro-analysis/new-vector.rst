@@ -66,14 +66,16 @@ When you create new data, it should obviously represent objects that really exis
 In QGIS, we can use the same types of sources to get information about the ground.  In this example, we will once again turn to aerial imagery, but instead of using Bing, we will use a raster image provided in the tutorial directory.
 
 * Click on the Add Raster Layer button:
-.. image:: /static/tutorial/intro-analysis/9_7.png
+
+	.. image:: /static/tutorial/intro-analysis/9_7.png
 
 * Navigate to **_qgis/Sleman/_**.
 * Select the file **_UGM.tif_**.
 * Click Open. An image will load into your map.
 * Find the new image in the Layers list.
 * Click and drag it to the bottom of the list so that it is below the vector layer you created in the previous section.
-.. image:: /static/tutorial/intro-analysis/9_8.png
+
+	.. image:: /static/tutorial/intro-analysis/9_8.png
 
 * Go to Settings -> Project Properties... and enable "on the fly" transformation.
 * Make sure that "WGS 84" is selected as the CRS, and click OK.
