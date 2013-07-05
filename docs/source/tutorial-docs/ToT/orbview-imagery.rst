@@ -13,7 +13,7 @@ After studying this chapter, the participants will be able to:
 A. Downloading Imagery Orbview3 from USGS
 -----------------------------------------
 
-When you digitize a region by using JOSM, problems frequently arise that satellite imagery (Bing) are not clear, covered with clouds even some area don’t have detailed satellite imagery. These problems can be solved by using a plugin in JOSM is "ImportImagePlugin", with these plugin you can open imagery obtained from other sources and used for digitizing. One of the imagery that can be used is Orbview Imagery that can be downloaded for free in <http://earthexplorer.usgs.gov/>`_.
+When you digitize a region by using JOSM, problems frequently arise that satellite imagery (Bing) are not clear, covered with clouds even some area don't have detailed satellite imagery. These problems can be solved by using a plugin in JOSM is "ImportImagePlugin", with these plugin you can open imagery obtained from other sources and used for digitizing. One of the imagery that can be used is Orbview Imagery that can be downloaded for free in <http://earthexplorer.usgs.gov/>`_.
 
 .. image:: /static/tutorial/ToT/2_tot_1.png
    :align: center
@@ -21,7 +21,7 @@ When you digitize a region by using JOSM, problems frequently arise that satelli
 Orbview 3 has a spatial resolution of 1 meter (panchromatic) and 4 meter (multispectral), orbiting at an altitude of 470 km, the resolution temporal is 3 days and were able to record the data of 2,100 km2.
 A steps to download the Orbviewimagery :
 
-1.	Visit the website <http://earthexplorer.usgs.gov/>`_ , requirement to download the imagery must have an account at the USGS, if you don’t have an account you can click "Register"
+1.	Visit the website <http://earthexplorer.usgs.gov/>`_ , requirement to download the imagery must have an account at the USGS, if you don't have an account you can click "Register"
 
 .. image:: /static/tutorial/ToT/2_tot_2.png
    :align: center
@@ -31,7 +31,7 @@ A steps to download the Orbviewimagery :
 .. image:: /static/tutorial/ToT/2_tot_3.png
    :align: center
 
-3.	Next you need to fill out some relating to your purpose using the imagery derived from USGS. The field box is long enough, you don’t have worry about this, just fill your needs, and the USGS just want to know the downloaded imagery is used for what purposes.
+3.	Next you need to fill out some relating to your purpose using the imagery derived from USGS. The field box is long enough, you don't have worry about this, just fill your needs, and the USGS just want to know the downloaded imagery is used for what purposes.
  
 .. image:: /static/tutorial/ToT/2_tot_4.png
    :align: center
@@ -59,13 +59,9 @@ A steps to download the Orbviewimagery :
 
 In the left column there are several menus to description on the OrbView 3 imagery, namely:
 .. image:: /static/tutorial/ToT/2_tot_9.png = show footprint to determine the coverage area of the imagery will be downloaded
-
 .. image:: /static/tutorial/ToT/2_tot_10.png = show browse overlay is one part of the show footprint 
-
 .. image:: /static/tutorial/ToT/2_tot_11.png = show metadata and browse to display the data from the imagery will be downloaded
-
 .. image:: /static/tutorial/ToT/2_tot_12.png = download option to download the imagery you want to use
-
 
 9.	When you have to select one imageryor all imagery you want to download, a command will appear where you must select which one of the data that will be used like as the image below, you can select the fourth line.
 
@@ -87,7 +83,7 @@ Often when we *ImportImage* plugin to display the OrbView imagery, will appear w
 
 The display that appears due to insufficient memory in JOSM 
 
-Look like this because the memory allocated for JOSM only 494 MB so that to carry out the command displaying images, JOSM don’t have enough memory. It is certainly will be difficult for us to use satellite imagery that we’ve had. But this can be solved with some enough complicated techniques.   
+Look like this because the memory allocated for JOSM only 494 MB so that to carry out the command displaying images, JOSM don't have enough memory. It is certainly will be difficult for us to use satellite imagery that we've had. But this can be solved with some enough complicated techniques.   
 
 1.	Find a file named "josm-tested.jar" in program files >josm> josm-latest.jar / josm-tested.jar. On some computers might be the name could be "josm-latest.jar"
 
@@ -96,21 +92,16 @@ Look like this because the memory allocated for JOSM only 494 MB so that to carr
 The given file is a file box to be created shortcut 
 
 2.   Create a new file with a text editor (Notepad or Notepad++), then copy the contents of text below into your notepad:
-
-:samp: java -jar -Xmx1g josm-tested.jar
+java -jar -Xmx1g josm-tested.jar
 
 3.  Then click File > Save As. Save the notepad file in the folder Program Files > JOSM with the ALL FILES  format and then give it a name with the suffix ".bat" for example "run-josm-more-memory.bat" (without quotation marks) or can change Save As Type to Batch File (*.bat, *.cmd *.nt).
 .. image:: /static/tutorial/ToT/2_tot_17.png
-   :align: center
 
 4.  Now copy a file that you created as a shortcut (right click > create shortcut), then save on the Desktop.
 .. image:: /static/tutorial/ToT/2_tot_18.png
-   :align: center
 
 5.  If you want to run JOSM with larger memory, you can double click in the shortcut you created. It will be come out a command prompt window. Wait a moment, JOSM will run with larger memory and you can open larger the OrbView 3 satellite imagery by utilizing aImportmage plugin.
-
 .. image:: /static/tutorial/ToT/2_tot_19.png
-   :align: center
  
 Display indicating that you have successfully executed JOSM with larger memory allocation
 
@@ -120,19 +111,19 @@ C. Using  the"ImportImage" Plugin in JOSM
 
 Important thing to do before using the OrbView imagery in JOSM that adds memory (you can see the steps of additional memory in tutorial).After you download from USGS, and get Orbview imagery file in format .rar, to open the imagery in JOSM you need to download the "ImportImage" plugin. Steps to be carried out, is:
 
-- Open JOSM, then click Edit – Preferences – box Plugin (power jack icon) – ImportImagePlugin, click Ok and Restart JOSM.
+- Open JOSM, then click Edit > Preferences > box Plugin (power jack icon) > ImportImagePlugin, click Ok and Restart JOSM.
 
 .. image:: /static/tutorial/ToT/2_tot_20.png
    :align: center
 
-- After JOSM open again, before you add imagery to JOSM first you have to setting coordinate in UTM projection which is same with the imagery. You can do it with click Edit – Preferences – PilihKotak Presets (di bawahgambar globe) – Map projection – Ok – and you don’t have to restart your JOSM again.
+- After JOSM open again, before you add imagery to JOSM first you have to setting coordinate in UTM projection which is same with the imagery. You can do it with click Edit > Preferences > PilihKotak Presets (di bawahgambar globe) > Map projection > Ok > and you don't have to restart your JOSM again.
 
-If you don’t know the coordinate of the imagery that you download, you can see it in Quantum GIS with open it in JPG format and right click on the image then click Properties and the coordinate information will shown.
+If you don't know the coordinate of the imagery that you download, you can see it in Quantum GIS with open it in JPG format and right click on the image then click Properties and the coordinate information will shown.
  
 .. image:: /static/tutorial/ToT/2_tot_21.png
    :align: center
  
-- Once the image is properly projected, you can now open the image in JOSM.  Click File ? Import Image and open the file you recently downloaded.  You should find three files in the extracted folder (.rar).  You want to chose the .jpg. 
+- Once the image is properly projected, you can now open the image in JOSM.  Click File > Import Image and open the file you recently downloaded.  You should find three files in the extracted folder (.rar).  You want to chose the .jpg. 
 
 .. image:: /static/tutorial/ToT/2_tot_22.png
 
@@ -144,12 +135,12 @@ If you don’t know the coordinate of the imagery that you download, you can see i
 
 .. image:: /static/tutorial/ToT/2_tot_24.png
 
-- After you add and edit data from imagery on OSM layer you can upload that changes with click File – Upload Data.
+* After you add and edit data from imagery on OSM layer you can upload that changes with click File > Upload Data.
 
 D. Summary
 -----------
 
-Congratulations! You should now be able to add satellite imagery using the ¨ImportImage¨ plugin.  In this guide we used free images from Orbview 3, but  the plugin can allow any other  public domain imagery.
+Congratulations! You should now be able to add satellite imagery using the "ImportImage" plugin.  In this guide we used free images from Orbview 3, but  the plugin can allow any other  public domain imagery.
 
 ### Final Reminders:
 - You cannot import commercial satellite imagery, such as Google Earth Imagery, to OpenstreetMap.  If you work with satellite imagery please read the terms and conditions beforehand. It is not legal to copy commercial or other maps onto OpenstreetMap.
