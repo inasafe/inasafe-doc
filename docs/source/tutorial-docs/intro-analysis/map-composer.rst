@@ -37,19 +37,33 @@ Take a look at the icons across the top of the window.  We will use some of thes
 
 .. image:: /static/tutorial/intro-analysis/11_newmap.png  **Add New Map** will add a map element.  This is what we will use to add the map from our project into our print layout.  It should be noted, however, that if we change the map in our QGIS project, it will not update the same map that we have added to our print composer, as we shall see later.
 
-.. image:: /static/tutorial/intro-analysis/11_image.png  **Add Image** allows us to add a picture.  You can add a company or organizational logo, or simply display images from a particular location. You can also add an image of a compass (to point North).
+.. image:: /static/tutorial/intro-analysis/11_image.png
 
-.. image:: /static/tutorial/intro-analysis/11_label.png  **Add New Label** is used for adding text to the layout, such as titles or other information.
+**Add Image** allows us to add a picture.  You can add a company or organizational logo, or simply display images from a particular location. You can also add an image of a compass (to point North).
 
-.. image:: /static/tutorial/intro-analysis/11_legend.png  **Add New Legend** is for adding a legend, which will conform to the active layer in the QGIS window.
+.. image:: /static/tutorial/intro-analysis/11_label.png
 
-.. image:: /static/tutorial/intro-analysis/11_scalebar.png  **Add New Scalebar** is used to add a scale to the layout.
+**Add New Label** is used for adding text to the layout, such as titles or other information.
 
-.. image:: /static/tutorial/intro-analysis/11_ellipse.png  **Add Ellipse/Triangle/Rectangle** is used to add one of these geometric shapes.  For example, this might be used to indicate special areas or highlight things on the map.
+.. image:: /static/tutorial/intro-analysis/11_legend.png
 
-.. image:: /static/tutorial/intro-analysis/11_arrow.png  **Add Arrow** is used to draw an arrow on the map layout.
+**Add New Legend** is for adding a legend, which will conform to the active layer in the QGIS window.
 
-.. image:: /static/tutorial/intro-analysis/11_move.png  **Select / Move Item** allows us to move choose and move the elements that you add to the map layout.  With this tool selected, you can right-click on an element to lock its position.
+.. image:: /static/tutorial/intro-analysis/11_scalebar.png
+
+**Add New Scalebar** is used to add a scale to the layout.
+
+.. image:: /static/tutorial/intro-analysis/11_ellipse.png
+
+**Add Ellipse/Triangle/Rectangle** is used to add one of these geometric shapes.  For example, this might be used to indicate special areas or highlight things on the map.
+
+.. image:: /static/tutorial/intro-analysis/11_arrow.png
+
+**Add Arrow** is used to draw an arrow on the map layout.
+
+.. image:: /static/tutorial/intro-analysis/11_move.png
+
+**Select / Move Item** allows us to move choose and move the elements that you add to the map layout.  With this tool selected, you can right-click on an element to lock its position.
 
 2. Add New Map
 ...............
