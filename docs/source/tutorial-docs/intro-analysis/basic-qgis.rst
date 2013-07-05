@@ -50,12 +50,13 @@ Note that if you followed along with the instructions in the introduction to thi
 .. image:: /static/tutorial/intro-analysis/2_5.png
 
 * When the file is downloaded, run it and follow the instructions to install Quantum GIS.
+
 2. Install Quantum GIS
 ......................
+
 * Open the folder where you have the QGIS installation file.
 
 .. image:: /static/tutorial/intro-analysis/2_6.png
-   :align: center
 
 * Run the installation file. If you are installing QGIS version 1.8.0, it should look like this:
 
