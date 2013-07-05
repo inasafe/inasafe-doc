@@ -18,29 +18,30 @@ Raster data essentially comes in the form of an image.  It is made up of pixels,
 
 <br>
 ###1. Loading Raster Data
-- Open the project named _**sleman___2___7.qgs**_ in the directory **_qgis/_**.  We've simplified the project since our last chapter, to make it easier to follow along, and so that our layers load a bit faster.  However, if you are comfortable you can easily carry on with your project from the previous chapter.
-- Click on the Load Raster Layer button:
+
+* Open the project named _**sleman___2___7.qgs**_ in the directory **_qgis/_**.  We've simplified the project since our last chapter, to make it easier to follow along, and so that our layers load a bit faster.  However, if you are comfortable you can easily carry on with your project from the previous chapter.
+* Click on the Load Raster Layer button:
 
 .. image:: /static/tutorial/intro-analysis/7_loadraster.png
 
-- The Load Raster Layer dialog will open.  Find the file in the directory **_Sleman/_** named **_Sleman.tif_**.  Open it.
-- QGIS will open a dialog which explains that the new layers does not have a CRS assigned.  In the box at the bottom, scroll down until you find **WGS 84 / UTM zone 49S**.  Select it and click OK.
+* The Load Raster Layer dialog will open.  Find the file in the directory **_Sleman/_** named **_Sleman.tif_**.  Open it.
+* QGIS will open a dialog which explains that the new layers does not have a CRS assigned.  In the box at the bottom, scroll down until you find **WGS 84 / UTM zone 49S**.  Select it and click OK.
 
 .. image:: /static/tutorial/intro-analysis/7_coordinatereference.png
 
-- When the raster layer loads, be sure to drag it to the bottom of your layers list.
-- If you can't see the raster layer, you may need to enable "on the fly" transformations.  To do so:
+* When the raster layer loads, be sure to drag it to the bottom of your layers list.
+* If you can't see the raster layer, you may need to enable "on the fly" transformations.  To do so:
 
 	- Go to Settings -> Project Properties...
 	- Enable "on the fly" reprojection.
-	.. image:: /static/tutorial/intro-analysis/7_onthefly.png
+	
+		.. image:: /static/tutorial/intro-analysis/7_onthefly.png
 	
 	- Click OK.
 
-The raster should display nicely underneath your vector data layers.
+* The raster should display nicely underneath your vector data layers.
 
-.. image:: /static/tutorial/intro-analysis/7_map1.png
-
+	.. image:: /static/tutorial/intro-analysis/7_map1.png
 
 <br>
 ###2. Changing Raster Symbology
