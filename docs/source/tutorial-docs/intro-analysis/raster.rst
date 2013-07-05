@@ -37,9 +37,9 @@ Raster data essentially comes in the form of an image.  It is made up of pixels,
 	
 	- Click OK.
 
-The raster should display nicely underneath your vector data layers.
+- The raster should display nicely underneath your vector data layers.
 
-.. image:: /static/tutorial/intro-analysis/7_map1.png
+	.. image:: /static/tutorial/intro-analysis/7_map1.png
 
 
 <br>
