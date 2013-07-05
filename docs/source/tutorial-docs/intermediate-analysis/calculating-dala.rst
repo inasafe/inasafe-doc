@@ -54,32 +54,31 @@ We will create a Damage and Loss Assessment Map using our data from Sirahan Vill
    :align: center
 
 We will assume that all the buildings in the **area_terdampak_Sirahan layer** (hazard zone) suffered heavy damage from the disaster.  Let's create a spatial query to filter out these buildings.
-- Go to Vector ? Spatial Query ? Spatial Query and enter the fields like this:
+* Go to Vector ? Spatial Query ? Spatial Query and enter the fields like this:
 
 .. image:: /static/tutorial/intermediate-analysis/6_3.png
    :align: center
    
-- We now have a bunch of buildings selected which we are assuming will suffer heavy damages.  According to the BNPB Guide, we can assess the loss of heavily damaged buildings at a rate of 1.8million Rp. / square meter, and the multiplier factor is 70%.  Our formula for calculating losses is:
-:samp: Total Building area x Loss Value per m2 x Multiplier factor
-- Therefore we want to calculate:
-	:samp: Total Building Area x 1.8 million Rp. x 70%
+* We now have a bunch of buildings selected which we are assuming will suffer heavy damages.  According to the BNPB Guide, we can assess the loss of heavily damaged buildings at a rate of 1.8million Rp. / square meter, and the multiplier factor is 70%.  Our formula for calculating losses is:
+Total Building area x Loss Value per m2 x Multiplier factor
+* Therefore we want to calculate:
+Total Building Area x 1.8 million Rp. x 70%
 in order to get a calculation of the value of total losses.
 
 * We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector > Geoprocessing Tools > Intersect and fill in the fields as follows:
 
 .. image:: /static/tutorial/intermediate-analysis/6_4.png
 
-- Save the result as **Bangunan_Terdampak_perDusun**.
-- Hide the original buildings layer so that your map looks like this:
+* Save the result as **Bangunan_Terdampak_perDusun**.
+* Hide the original buildings layer so that your map looks like this:
 
 .. image:: /static/tutorial/intermediate-analysis/6_5.png
    :align: center
 
-- Because we used the intersect tool our attribute table will include the DUSUN attribute.
+* Because we used the intersect tool our attribute table will include the DUSUN attribute.
 
 .. image:: /static/tutorial/intermediate-analysis/6_6.png
    :align: center
-
 
 3. Calculate Damage Area
 ........................
@@ -150,7 +149,7 @@ Now we've calculated the damaged area and we've created a table with damage data
 - Once again, open the Field Calculator.
 - Check "Update existing field" and choose "Losses"
 - At the bottom in the Expression box, enter the following formula:
-:samp: "Damage" * 1800000 * 0.7
+"Damage" * 1800000 * 0.7
 
 .. image:: /static/tutorial/intermediate-analysis/6_16.png
 
@@ -223,14 +222,12 @@ Now we will join the tables that we created to our Batas_Desa_Sirahan attribute 
 .. image:: /static/tutorial/intermediate-analysis/6_25.png
    :align: center
 
-
 - Click OK and save the layer.
 - Now that we have calculated the loss value and saved it in a new column, we can remove the join.  Open the layer properties and click the minus button to remove the join with **BNG_Losses**. 
 - The attribute table when you finish will look like this:
 
 .. image:: /static/tutorial/intermediate-analysis/6_26.png
    :align: center
-
 
 8. Create a Chart
 .................
@@ -251,13 +248,10 @@ Now we will conclude by representing these damage and loss values as a chart in 
 .. image:: /static/tutorial/intermediate-analysis/6_28.png
    :align: center
 
-
 The size of each bubble represents the loss values in each hamlet. The bigger the size, the heavier the losses.  Creating a map with this sort of chart can be an effective way to communicate the impact of a disaster.
-
 
 Summary
 -------
-
 In this chapter we have learned about methodology for evaluating losses, and we have learned how to calculate this in QGIS.  We also learned how to export tables, join them with shapefiles, and overlay charts on top of our map.
 
 
