@@ -64,7 +64,6 @@ Total Building area x Loss Value per m2 x Multiplier factor
 * Therefore we want to calculate:
 Total Building Area x 1.8 million Rp. x 70%
 in order to get a calculation of the value of total losses.
-
 * We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector > Geoprocessing Tools > Intersect and fill in the fields as follows:
 
 .. image:: /static/tutorial/intermediate-analysis/6_4.png
@@ -155,7 +154,6 @@ Now we've calculated the damaged area and we've created a table with damage data
 
 - Your new column is now filled with information calculated from this formula, which assesses the value of losses in Rp for each individual building. Save the layer and end the editing session.
 
-
 6. Losses Group Stats
 .....................
 Now let's calculate losses per hamlet using Group Stats again.
@@ -210,7 +208,6 @@ Now we will join the tables that we created to our Batas_Desa_Sirahan attribute 
 - As the damage values for each hamlet have been obtained we can delete the join.  Right-click **Batas_Desa_Sirahan**, select properties, go to the Join tab, and click the minus button.
 
 .. image:: /static/tutorial/intermediate-analysis/6_23.png
-   :align: center
 
 - Now click the plus button, but this time join **BNG_Losses** in the same way as before:
  
