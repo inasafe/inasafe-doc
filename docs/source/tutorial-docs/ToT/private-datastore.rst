@@ -64,6 +64,7 @@ If the steps above works fine / successful then you do not need to perform the s
 Editing the map works just the same as before.  The only difference is that when you upload changes, some tags will be automatically saved on the private datastore, and the rest will be saved directly onto OpenStreetMap.
 
 * After installing the plugin, the first time you download data you will be asked for your HOT datastore username and password.
+
   .. image:: /static/tutorial/ToT/3_api.png
 	 :align: center
 
@@ -96,7 +97,7 @@ You could access datastore online through http://bit.ly/sds-hot2 and login with 
 	:align: center
 	
 4.1 Private Data Store Users
-...........................
+............................
 There is 2 types of Data Store users. They are Admin who can add new projects or users onto SDS and Personal are regular users who joined on some project that using SDS. This is the screenshoot :
 
 .. image:: /static/tutorial/ToT/3_datastoreuser.png
@@ -207,6 +208,7 @@ Edit Users
 
 * Next you have to write **Tag Fields Definition** in JavaScript Object Notatioan (JSON) language. You have to translate Extensible Mark-up Language (XML) language at **Preset that you want to use into JSON language.** 
 * Let's see the difference between **XML Preset and JSON**
+
 **XML**
 
   .. image:: /static/tutorial/ToT/3_xml.png
