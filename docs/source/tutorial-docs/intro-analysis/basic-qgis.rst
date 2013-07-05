@@ -19,11 +19,12 @@ Introduction
 In this chapter, we will get started using Quantum GIS (QGIS).  You'll see how to install the software (if you haven't already), understand the layout and interface, and other core functions of the software.  By the end of this chapter, you'll be on your way to becoming a competent GIS user!
 
 
-Note that if you followed along with the instructions in the introduction to this guide, you may have already installed QGIS and InaSAFE.  If so, feel free to skip ahead to section three in this chapter.  Otherwise, let's start here and get QGIS installed.
+Note that if you followed along with the instructions in the introduction to this guide, you may have already installed QGIS and InaSAFE. If so, feel free to skip ahead to section three in this chapter.  Otherwise, let's start here and get QGIS installed.
 
 
-### 1. Get Quantum GIS
-* The Quantum GIS installer is contained in the file package that comes with this guide, in **software/QGIS-OSGeo4W-1.8.0-2-Setup.exe.**  If you have this file, skip to section 2.  Otherwise you can download it from the QGIS website.
+1. Get Quantum GIS
+..................
+* The Quantum GIS installer is contained in the file package that comes with this guide, in **software/QGIS-OSGeo4W-1.8.0-2-Setup.exe.** If you have this file, skip to section 2.  Otherwise you can download it from the QGIS website.
 * Open your web browser and in the address bar at the top of the window, type <https://qgis.org>`_. Press enter.
 
 .. image:: /static/tutorial/intro-analysis/2_1.png
@@ -53,7 +54,8 @@ Note that if you followed along with the instructions in the introduction to thi
 * When the file is downloaded, run it and follow the instructions to install Quantum GIS.
 
 
-### 2. Install Quantum GIS
+2. Install Quantum GIS
+......................
 * Open the folder where you have the QGIS installation file.
 
 .. image:: /static/tutorial/intro-analysis/2_6.png
@@ -96,7 +98,8 @@ Note that if you followed along with the instructions in the introduction to thi
 .. image:: /static/tutorial/intro-analysis/2_13.png
    :align: center
 
-### 3. The QGIS Layout
+3. The QGIS Layout
+..................
 In this section we will open up a QGIS project, and take a look at the different pieces of the QGIS interface.  If you installed InaSAFE previously, make sure it is closed by clicking on the X in the upper right corner of the InaSAFE panel.  If  it isn't open or you haven't installed it yet, carry on.  We will come back to this later.
 
 .. image:: /static/tutorial/intro-analysis/2_14.png
@@ -175,7 +178,8 @@ The coordinates of this map are the same type of coordinates that you learned ab
 This may not all be clear right now, but as you progress in your knowledge of GIS is will make more and more sense.
 
 
-### 4.  Add Vector Layer
+4.  Add Vector Layer
+....................
 Now we will add an additional layer containing roads to our project.
 * Click on the "Add Vector Layer" button on the toolbar.
 
@@ -198,7 +202,8 @@ Now we will add an additional layer containing roads to our project.
 .. image:: /static/tutorial/intro-analysis/2_25.png
    :align: center
 
-### 5.  Basic QGIS Tools
+5.  Basic QGIS Tools
+....................
 We've already taken a look at the QGIS toolbar and seen the tools for opening a project and adding a new layer.  Here's a list of some other commonly used tools.  Feel free to play around with them if you like.  The important thing for now is to start getting familiar with QGIS.
 
 +----------------------------------------------------+-----------------------------+-----------------------------------------------+
@@ -217,7 +222,8 @@ We've already taken a look at the QGIS toolbar and seen the tools for opening a 
 | image:: /static/tutorial/intro-analysis/2_32.png   | Select Single Feature       | Select a feature in the selected layer        |
 +----------------------------------------------------+-----------------------------+-----------------------------------------------+
 
-### 6. Navigate the Map
+6. Navigate the Map
+....................
 - Before we examine the attributes of individual features, let's take a quick look at how to navigate the map.  The main controls for moving the map around and zooming in and out are by default on the panels at the top of QGIS.
 
 .. image:: /static/tutorial/intro-analysis/2_33.png
