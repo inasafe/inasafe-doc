@@ -52,7 +52,6 @@ Note that if you followed along with the instructions in the introduction to thi
 
 * When the file is downloaded, run it and follow the instructions to install Quantum GIS.
 
-
 2. Install Quantum GIS
 ......................
 * Open the folder where you have the QGIS installation file.

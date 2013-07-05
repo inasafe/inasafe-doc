@@ -43,12 +43,12 @@ By adding up all of the damage it is possible to assess the total damages caused
 ..................................
 We will create a Damage and Loss Assessment Map using our data from Sirahan Village that we have been working with throughout this unit.
 - Open QGIS and make sure that the following layers are loaded into your project:
-	- **area_terdampak_Sirahan**
-	- **Jalan_Sirahan**
-	- **Sungai_Sirahan**
-	- **Batas_Desa_Sirahan**
-	- **Bangunan_Sirahan**
-
+	* **area_terdampak_Sirahan**
+	* **Jalan_Sirahan**
+	* **Sungai_Sirahan**
+	* **Batas_Desa_Sirahan**
+	* **Bangunan_Sirahan**
+	
 .. image:: /static/tutorial/intermediate-analysis/6_2.png
    :align: center
 
@@ -62,8 +62,9 @@ We will assume that all the buildings in the **area_terdampak_Sirahan layer** (h
 :samp: Total Building area x Loss Value per m2 x Multiplier factor
 - Therefore we want to calculate:
 	:samp: Total Building Area x 1.8 million Rp. x 70%
-    in order to get a calculation of the value of total losses.
-- We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector > Geoprocessing Tools > Intersect and fill in the fields as follows :
+	in order to get a calculation of the value of total losses.
+
+- We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector > Geoprocessing Tools > Intersect and fill in the fields as follows:
 
 .. image:: /static/tutorial/intermediate-analysis/6_4.png
 
