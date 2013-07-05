@@ -21,7 +21,7 @@ OpenStreetMap data is open and available to anyone who would like to access it. 
 
 The SDS allows you to create maps and add data into JOSM the same as always, but when you upload your edits, public data will be saved to the OpenStreetMap database, and private data will be saved separately to the HOT Datastore.
 
-.. image:: /static/tutorial/tot/3_dataflow.png
+.. image:: /static/tutorial/ToT/3_dataflow.png
 	:align: center
 	
 How the SDS Plugin works with JOSM
@@ -34,13 +34,13 @@ Data uploaded to the private HOT Datastore is only accessible to people who have
 This plug-in allows private data to be streamlined into the private data store.  The newest version of JOSM is required for the SDS plugin to run.  (If you do not have a recent version of JOSM, download and install it from http://josm.openstreetmap.de/  If you cannot install the latest version, go to the Appendix to see how you can install this plug-in by source).
 
 * Open the preferences menu in JOSM and go to the plugins tab.
-  .. image:: /static/tutorial/tot/3_plugin.png
+  .. image:: /static/tutorial/ToT/3_plugin.png
 	 :align: center
 	 
 * Click "Download List" to ensure that all available plugins are listed.
 * In the search box, type "sds".
 
-  .. image:: /static/tutorial/tot/3_pluginbox.png
+  .. image:: /static/tutorial/ToT/3_pluginbox.png
 	 :align: center
 
 * Check the box next to the plugin to activate it.  You will need to restart JOSM.
@@ -51,7 +51,7 @@ If the steps above works fine / successful then you do not need to perform the s
 * Download the plugin sds in http://kunden.geofabrik.de/03df698c95134f04949eb67ac7ba2195/   website and click on sds.jar, then you are instructed to keep the plugin.
 * Click the Start Menu and type "% APPDATA%" in the search box. Click the name of the folder "Roaming".
 
-  .. image:: /static/tutorial/tot/3_roaming.png
+  .. image:: /static/tutorial/ToT/3_roaming.png
 	 :align: center
 
 * In the open window, double-click on "JOSM" to open the program file JOSM.
@@ -65,7 +65,7 @@ Editing the map works just the same as before.  The only difference is that when
 
 * After installing the plugin, the first time you download data you will be asked for your HOT datastore username and password.
 
-  .. image:: /static/tutorial/tot/3_api.png
+  .. image:: /static/tutorial/ToT/3_api.png
 	 :align: center
 
 * In order to use the plugin, you need to enter your username and password.  To save them, check the box next to "Save user and password."
@@ -75,14 +75,14 @@ Editing the map works just the same as before.  The only difference is that when
 .........................
 How does the plugin know which data you want to store on OpenStreetMap and which data you want to store publicly?  Quite simply, it knows because of the tags.  Normal tags go to OpenStreetMap, as always, but you can use new tags with a special prefix that will be sent to the private datastore.  By default, any tag that begins with the prefix "hot:" will go to the private datastore.  If you open the Preferences menu you will see a new tab on the bottom for SDS plugin options:
 
-.. image:: /static/tutorial/tot/3_preferences.png
+.. image:: /static/tutorial/ToT/3_preferences.png
 	:align: center
 
 There are some basic settings here.  By default the server URL is set to the HOT datastore, and your username and password can be saved here as well.  The line labelled "SDS tag prefix" contains the prefix that will cause tags to be saved on the private datastore.  By default it is "hot:"
 
 When you create or edit an object on the map, you can apply tags like this:
 
-.. image:: /static/tutorial/tot/3_attributebox.png
+.. image:: /static/tutorial/ToT/3_attributebox.png
 	:align: center
 
 In this case, the first two tags will be saved on OSM.  The third tag, because it has the prefix hot: will be saved on the private datastore.
@@ -93,20 +93,20 @@ You will most likely collaborate with others when using the private datastore, s
 ..........................
 You could access datastore online through http://bit.ly/sds-hot2 and login with your username and password.
 
-.. image:: /static/tutorial/tot/3_sds.png
+.. image:: /static/tutorial/ToT/3_sds.png
 	:align: center
 	
 4.1 Private Data Store Users
 ............................
 There is 2 types of Data Store users. They are Admin who can add new projects or users onto SDS and Personal are regular users who joined on some project that using SDS. This is the screenshoot :
 
-.. image:: /static/tutorial/tot/3_datastoreuser.png
+.. image:: /static/tutorial/ToT/3_datastoreuser.png
 	:align: center
 
 4.2 Figure of Using Private Data Store and JOSM
 ................................................
 
-.. image:: /static/tutorial/tot/3_datastorefigure.png
+.. image:: /static/tutorial/ToT/3_datastorefigure.png
 	:align: center
 
 4.3 Editing Data Store Online
@@ -118,43 +118,43 @@ You can edit your data in SDS online. These are the steps :
 * Password : osmosm123
 * Clik tag search
 
-  .. image:: /static/tutorial/tot/3_tagsearch.png
+  .. image:: /static/tutorial/ToT/3_tagsearch.png
 	 :align: center
 
 * Add 'String' which is a name when we saved the sds tag and click search
 
-  .. image:: /static/tutorial/tot/3_string.png
+  .. image:: /static/tutorial/ToT/3_string.png
 	 :align: center
 	 
 * You only can edit the objects attribute that has saved in JOSM but if you want to delete objects you must to use JOSM.
 * Click Save Tags
 
-  .. image:: /static/tutorial/tot/3_saveobjects.png
+  .. image:: /static/tutorial/ToT/3_saveobjects.png
 	 :align: center
 	
 4.4 Add data on Data Store Online
 .................................
 You can directly add your data on Data Store. These are the steps :
 
-.. image:: /static/tutorial/tot/3_sds2.png
+.. image:: /static/tutorial/ToT/3_sds2.png
 	:align: center
 	
 * Click Map Search and Load OSM Geometries
 
-  .. image:: /static/tutorial/tot/3_mapsearch.png
+  .. image:: /static/tutorial/ToT/3_mapsearch.png
 	 :align: center
 	
 * After that add/edit information about object that chosen by you
 
-  .. image:: /static/tutorial/tot/3_mapsearch2.png
+  .. image:: /static/tutorial/ToT/3_mapsearch2.png
 	 :align: center
 	
-  .. image:: /static/tutorial/tot/3_mapsearch3.png
+  .. image:: /static/tutorial/ToT/3_mapsearch3.png
 	 :align: center
 	 
 * After you finish click Save tags
 
-.. image:: /static/tutorial/tot/3_savetag.png
+.. image:: /static/tutorial/ToT/3_savetag.png
 	:align: center
 	
 4.5 Add and Edit User on Private Data Store
@@ -165,17 +165,17 @@ You can directly add your data on Data Store. These are the steps :
 * Password : osm
 * Klik user administration
 
-  .. image:: /static/tutorial/tot/3_useradministration.png
+  .. image:: /static/tutorial/ToT/3_useradministration.png
 	 :align: center
 	
 * Click Add New User
 
-  .. image:: /static/tutorial/tot/3_newuser.png
+  .. image:: /static/tutorial/ToT/3_newuser.png
 	 :align: center
 
 * Click Save if you finish
 
-  .. image:: /static/tutorial/tot/3_saveuser.png
+  .. image:: /static/tutorial/ToT/3_saveuser.png
 	 :align: center
 	
 Edit Users
@@ -183,13 +183,13 @@ Edit Users
 * Click "Eye Symbol" in the left box
 * Click Edit User
 
-  .. image:: /static/tutorial/tot/3_edituser.png
+  .. image:: /static/tutorial/ToT/3_edituser.png
 	 :align: center
 	 
-  .. image:: /static/tutorial/tot/3_edituser2.png
+  .. image:: /static/tutorial/ToT/3_edituser2.png
 	 :align: center
 	 
-  .. image:: /static/tutorial/tot/3_edituser3.png
+  .. image:: /static/tutorial/ToT/3_edituser3.png
 	 :align: center	
 
 4.6 Add Project on Private Data Store
@@ -197,25 +197,26 @@ Edit Users
 * Click Project
 * Click Create New Project
 
-  .. image:: /static/tutorial/tot/3_addproject.png
+  .. image:: /static/tutorial/ToT/3_addproject.png
 	 :align: center
 	 
-  .. image:: /static/tutorial/tot/3_addproject2.png
+  .. image:: /static/tutorial/ToT/3_addproject2.png
 	 :align: center
 	
-  .. image:: /static/tutorial/tot/3_addproject3.png
+  .. image:: /static/tutorial/ToT/3_addproject3.png
 	 :align: center
 
 * Next you have to write **Tag Fields Definition** in JavaScript Object Notatioan (JSON) language. You have to translate Extensible Mark-up Language (XML) language at **Preset that you want to use into JSON language.** 
 * Let's see the difference between **XML Preset and JSON**
+
 **XML**
 
-  .. image:: /static/tutorial/tot/3_xml.png
+  .. image:: /static/tutorial/ToT/3_xml.png
 	 :align: center
        
 **JSON**
 
-  .. image:: /static/tutorial/tot/3_json.png
+  .. image:: /static/tutorial/ToT/3_json.png
 	 :align: center
 
 **NOTE:** 
@@ -225,7 +226,7 @@ Edit Users
 
 Example **(first is XML, second is JSON)**
 
-.. image:: /static/tutorial/tot/3_xmlandjson.png
+.. image:: /static/tutorial/ToT/3_xmlandjson.png
 	:align: center
 
 2. If your preset use **ELEMENT TEXT**, it must converted with format
@@ -234,19 +235,19 @@ Example **(first is XML, second is JSON)**
 
 Example (first is XML, second is JSON)
 
-.. image:: /static/tutorial/tot/3_xmlandjson2.png
+.. image:: /static/tutorial/ToT/3_xmlandjson2.png
 	:align: center
 
 Write your tag definition into JSON language at the available row of Tag Field Definition (JSON)
 
-.. image:: /static/tutorial/tot/3_tagjson.png
+.. image:: /static/tutorial/ToT/3_tagjson.png
 	:align: center
 
 * You can upload your presets in your project to the row of **Preset File**
 * Click **Create Project** if your finish
 * If you click **Project** on right corner, you can see your Project. Click **View Table**  to see the data. If there is any ERROR, it possibly there is **mistake at your JSON tag definition!** If it doesn't you will see a table like this :
 
-.. image:: /static/tutorial/tot/3_tagtable.png
+.. image:: /static/tutorial/ToT/3_tagtable.png
 	:align: center
 	
 * You also can download the table in the CSV format or Excel format.
