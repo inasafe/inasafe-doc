@@ -13,7 +13,7 @@ After studying this chapter, the participants will be able to:
 A. Downloading Imagery Orbview3 from USGS
 -----------------------------------------
 
-When you digitize a region by using JOSM, problems frequently arise that satellite imagery (Bing) are not clear, covered with clouds even some area don’t have detailed satellite imagery. These problems can be solved by using a plugin in JOSM is “ImportImagePlugin”, with these plugin you can open imagery obtained from other sources and used for digitizing. One of the imagery that can be used is Orbview Imagery that can be downloaded for free in <http://earthexplorer.usgs.gov/>`_.
+When you digitize a region by using JOSM, problems frequently arise that satellite imagery (Bing) are not clear, covered with clouds even some area don’t have detailed satellite imagery. These problems can be solved by using a plugin in JOSM is "ImportImagePlugin", with these plugin you can open imagery obtained from other sources and used for digitizing. One of the imagery that can be used is Orbview Imagery that can be downloaded for free in <http://earthexplorer.usgs.gov/>`_.
 
 .. image:: /static/tutorial/ToT/2_tot_1.png
    :align: center
@@ -21,7 +21,7 @@ When you digitize a region by using JOSM, problems frequently arise that satelli
 Orbview 3 has a spatial resolution of 1 meter (panchromatic) and 4 meter (multispectral), orbiting at an altitude of 470 km, the resolution temporal is 3 days and were able to record the data of 2,100 km2.
 A steps to download the Orbviewimagery :
 
-1.	Visit the website <http://earthexplorer.usgs.gov/>`_ , requirement to download the imagery must have an account at the USGS, if you don’t have an account you can click “Register”
+1.	Visit the website <http://earthexplorer.usgs.gov/>`_ , requirement to download the imagery must have an account at the USGS, if you don’t have an account you can click "Register"
 
 .. image:: /static/tutorial/ToT/2_tot_2.png
    :align: center
@@ -42,7 +42,7 @@ A steps to download the Orbviewimagery :
    :align: center
 
 5.	After login with your account, you can begin the process of downloading imagery in an area you want. In the below window, will display satellite maps, you can select the area you want to downloaded to pan and zoom in/zoom out until the area you want can be found. For example, you want to download a region Sorong, Papua Barat. The next step you have to draw a box around the area you want downloaded.
-6.	When an error occurs in the area you choose, you can click “clear kriteria”. Clear criteria function to remove the area you have chosen, so you can start to choose the area you want. How to draw a box with the left click one by one to form a polygon. Then click “Data Sets” (located in the bottom left box).
+6.	When an error occurs in the area you choose, you can click "clear kriteria". Clear criteria function to remove the area you have chosen, so you can start to choose the area you want. How to draw a box with the left click one by one to form a polygon. Then click "Data Sets" (located in the bottom left box).
 
 .. image:: /static/tutorial/ToT/2_tot_6.png
    :align: center 
@@ -58,17 +58,14 @@ A steps to download the Orbviewimagery :
    :align: center
 
 In the left column there are several menus to description on the OrbView 3 imagery, namely:
-.. image:: /static/tutorial/ToT/2_tot_9.png
-   :align: left		   				= show footprint to determine the coverage area of the imagery will be downloaded
+.. image:: /static/tutorial/ToT/2_tot_9.png = show footprint to determine the coverage area of the imagery will be downloaded
 
-.. image:: /static/tutorial/ToT/2_tot_10.png
-   :align: left   					= show browse overlay is one part of the show footprint 
+.. image:: /static/tutorial/ToT/2_tot_10.png = show browse overlay is one part of the show footprint 
 
-.. image:: /static/tutorial/ToT/2_tot_11.png
-   :align: left   					= show metadata and browse to display the data from the imagery will be downloaded 
+.. image:: /static/tutorial/ToT/2_tot_11.png = show metadata and browse to display the data from the imagery will be downloaded
 
-.. image:: /static/tutorial/ToT/2_tot_12.png
-   :align: left					   = download option to download the imagery you want to use
+.. image:: /static/tutorial/ToT/2_tot_12.png = download option to download the imagery you want to use
+
 
 9.	When you have to select one imageryor all imagery you want to download, a command will appear where you must select which one of the data that will be used like as the image below, you can select the fourth line.
 
@@ -92,7 +89,7 @@ The display that appears due to insufficient memory in JOSM
 
 Look like this because the memory allocated for JOSM only 494 MB so that to carry out the command displaying images, JOSM don’t have enough memory. It is certainly will be difficult for us to use satellite imagery that we’ve had. But this can be solved with some enough complicated techniques.   
 
-1.	Find a file named “josm-tested.jar” in program files >josm> josm-latest.jar / josm-tested.jar. On some computers might be the name could be “josm-latest.jar”
+1.	Find a file named "josm-tested.jar" in program files >josm> josm-latest.jar / josm-tested.jar. On some computers might be the name could be "josm-latest.jar"
 
 .. image:: /static/tutorial/ToT/2_tot_16.png
    :align: center	 
@@ -102,13 +99,11 @@ The given file is a file box to be created shortcut
 
 :samp: java -jar -Xmx1g josm-tested.jar
 
-3.  Then click File > Save As. Save the notepad file in the folder Program Files > JOSM with the ALL FILES  format and then give it a name with the suffix “.bat” for example “run-josm-more-memory.bat” (without quotation marks) or can change Save As Type to Batch File (*.bat, *.cmd *.nt).
-
+3.  Then click File > Save As. Save the notepad file in the folder Program Files > JOSM with the ALL FILES  format and then give it a name with the suffix ".bat" for example "run-josm-more-memory.bat" (without quotation marks) or can change Save As Type to Batch File (*.bat, *.cmd *.nt).
 .. image:: /static/tutorial/ToT/2_tot_17.png
-   :align: center	
+   :align: center
 
 4.  Now copy a file that you created as a shortcut (right click > create shortcut), then save on the Desktop.
-
 .. image:: /static/tutorial/ToT/2_tot_18.png
    :align: center
 
@@ -120,10 +115,10 @@ The given file is a file box to be created shortcut
 Display indicating that you have successfully executed JOSM with larger memory allocation
 
 
-C. Using  the“ImportImage” Plugin in JOSM
+C. Using  the"ImportImage" Plugin in JOSM
 -----------------------------------------
 
-Important thing to do before using the OrbView imagery in JOSM that adds memory (you can see the steps of additional memory in tutorial).After you download from USGS, and get Orbview imagery file in format .rar, to open the imagery in JOSM you need to download the “ImportImage” plugin. Steps to be carried out, is:
+Important thing to do before using the OrbView imagery in JOSM that adds memory (you can see the steps of additional memory in tutorial).After you download from USGS, and get Orbview imagery file in format .rar, to open the imagery in JOSM you need to download the "ImportImage" plugin. Steps to be carried out, is:
 
 - Open JOSM, then click Edit – Preferences – box Plugin (power jack icon) – ImportImagePlugin, click Ok and Restart JOSM.
 
@@ -145,7 +140,7 @@ If you don’t know the coordinate of the imagery that you download, you can see i
 
 .. image:: /static/tutorial/ToT/2_tot_23.png
 
-- Everytime you want to add information or digitize in JOSM, you must always remember to “Download From OSM”,  it is very useful as a layer to know what data that have been digitize on OpenStreetMap with other users.Hopefully, with the new imagery you will be able to digitize uncharted territory or improve existing data.
+- Everytime you want to add information or digitize in JOSM, you must always remember to "Download From OSM",  it is very useful as a layer to know what data that have been digitize on OpenStreetMap with other users.Hopefully, with the new imagery you will be able to digitize uncharted territory or improve existing data.
 
 .. image:: /static/tutorial/ToT/2_tot_24.png
 
