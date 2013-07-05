@@ -59,14 +59,13 @@ We will assume that all the buildings in the **area_terdampak_Sirahan layer** (h
    :align: center
    
 - We now have a bunch of buildings selected which we are assuming will suffer heavy damages.  According to the BNPB Guide, we can assess the loss of heavily damaged buildings at a rate of 1.8million Rp. / square meter, and the multiplier factor is 70%.  Our formula for calculating losses is:
-:samp: Total Building area x Loss Value per m² x Multiplier factor
+:samp: Total Building area x Loss Value per m2 x Multiplier factor
 - Therefore we want to calculate:
 	:samp: Total Building Area x 1.8 million Rp. x 70%
     in order to get a calculation of the value of total losses.
-- We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector ? Geoprocessing Tools ? Intersect and fill in the fields as follows:
+- We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector > Geoprocessing Tools > Intersect and fill in the fields as follows :
 
 .. image:: /static/tutorial/intermediate-analysis/6_4.png
-   :align: center
 
 - Save the result as **Bangunan_Terdampak_perDusun**.
 - Hide the original buildings layer so that your map looks like this:
@@ -154,7 +153,7 @@ Now we've calculated the damaged area and we've created a table with damage data
 .. image:: /static/tutorial/intermediate-analysis/6_16.png
    :align: center
 
-- Your new column is now filled with information calculated from this formula, which assesses the value of losses in Rp for each individual building.  Save the layer and end the editing session.
+- Your new column is now filled with information calculated from this formula, which assesses the value of losses in Rp for each individual building. Save the layer and end the editing session.
 
 
 6. Losses Group Stats
@@ -208,8 +207,7 @@ Now we will join the tables that we created to our Batas_Desa_Sirahan attribute 
 .. image:: /static/tutorial/intermediate-analysis/6_22.png
    :align: center
 
- 
--  Click OK.  The *BNG_Dmg* column now contains the same value as column Sum in **BNG_Damage.csv**
+- Click OK.  The *BNG_Dmg* column now contains the same value as column Sum in **BNG_Damage.csv**
 - As the damage values for each hamlet have been obtained we can delete the join.  Right-click **Batas_Desa_Sirahan**, select properties, go to the Join tab, and click the minus button.
 
 .. image:: /static/tutorial/intermediate-analysis/6_23.png
@@ -257,13 +255,10 @@ Now we will conclude by representing these damage and loss values as a chart in 
 The size of each bubble represents the loss values in each hamlet. The bigger the size, the heavier the losses.  Creating a map with this sort of chart can be an effective way to communicate the impact of a disaster.
 
 
-
-
 Summary
 -------
 
 In this chapter we have learned about methodology for evaluating losses, and we have learned how to calculate this in QGIS.  We also learned how to export tables, join them with shapefiles, and overlay charts on top of our map.
 
 
-________________
 [1] Source:https://www.gfdrr.org/gfdrr/Track-III-TA-Tools

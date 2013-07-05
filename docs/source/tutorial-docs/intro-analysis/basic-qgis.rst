@@ -47,7 +47,6 @@ Note that if you followed along with the instructions in the introduction to thi
 
 * If you are not using Windows, select your Operating System from the menu.
 * Click on "Download QGIS"
-
 .. image:: /static/tutorial/intro-analysis/2_5.png
    :align: center
 
