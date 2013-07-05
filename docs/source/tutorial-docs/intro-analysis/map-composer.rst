@@ -35,7 +35,9 @@ This is the window where you can compose the layout of a map that you want to pr
 
 Take a look at the icons across the top of the window.  We will use some of these as we lay our map out, so here's an overview of what they do:
 
-.. image:: /static/tutorial/intro-analysis/11_newmap.png  **Add New Map** will add a map element.  This is what we will use to add the map from our project into our print layout.  It should be noted, however, that if we change the map in our QGIS project, it will not update the same map that we have added to our print composer, as we shall see later.
+.. image:: /static/tutorial/intro-analysis/11_newmap.png  
+
+**Add New Map** will add a map element.  This is what we will use to add the map from our project into our print layout.  It should be noted, however, that if we change the map in our QGIS project, it will not update the same map that we have added to our print composer, as we shall see later.
 
 .. image:: /static/tutorial/intro-analysis/11_image.png
 
