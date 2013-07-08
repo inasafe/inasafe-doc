@@ -85,24 +85,24 @@ The display that appears due to insufficient memory in JOSM
 
 Look like this because the memory allocated for JOSM only 494 MB so that to carry out the command displaying images, JOSM don't have enough memory. It is certainly will be difficult for us to use satellite imagery that we've had. But this can be solved with some enough complicated techniques.   
 
-1.	Find a file named "josm-tested.jar" in program files >josm> josm-latest.jar / josm-tested.jar. On some computers might be the name could be "josm-latest.jar"
+1. Find a file named "josm-tested.jar" in program files >josm> josm-latest.jar / josm-tested.jar. On some computers might be the name could be "josm-latest.jar"
 
 .. image:: /static/tutorial/ToT/2_tot_16.png
    :align: center	 
 The given file is a file box to be created shortcut 
 
-2.   Create a new file with a text editor (Notepad or Notepad++), then copy the contents of text below into your notepad:
+2. Create a new file with a text editor (Notepad or Notepad++), then copy the contents of text below into your notepad:
 java -jar -Xmx1g josm-tested.jar
 
-3.  Then click File > Save As. Save the notepad file in the folder Program Files > JOSM with the ALL FILES  format and then give it a name with the suffix ".bat" for example "run-josm-more-memory.bat" (without quotation marks) or can change Save As Type to Batch File (*.bat, *.cmd *.nt).
+3. Then click File > Save As. Save the notepad file in the folder Program Files > JOSM with the ALL FILES  format and then give it a name with the suffix ".bat" for example "run-josm-more-memory.bat" (without quotation marks) or can change Save As Type to Batch File (*.bat, *.cmd *.nt).
 .. image:: /static/tutorial/ToT/2_tot_17.png
 
-4.  Now copy a file that you created as a shortcut (right click > create shortcut), then save on the Desktop.
+4. Now copy a file that you created as a shortcut (right click > create shortcut), then save on the Desktop.
 .. image:: /static/tutorial/ToT/2_tot_18.png
 
-5.  If you want to run JOSM with larger memory, you can double click in the shortcut you created. It will be come out a command prompt window. Wait a moment, JOSM will run with larger memory and you can open larger the OrbView 3 satellite imagery by utilizing aImportmage plugin.
+5. If you want to run JOSM with larger memory, you can double click in the shortcut you created. It will be come out a command prompt window. Wait a moment, JOSM will run with larger memory and you can open larger the OrbView 3 satellite imagery by utilizing a ImportImage plugin.
 .. image:: /static/tutorial/ToT/2_tot_19.png
- 
+
 Display indicating that you have successfully executed JOSM with larger memory allocation
 
 
