@@ -18,7 +18,6 @@ Introduction
 
 In this chapter, we will get started using Quantum GIS (QGIS).  You'll see how to install the software (if you haven't already), understand the layout and interface, and other core functions of the software.  By the end of this chapter, you'll be on your way to becoming a competent GIS user!
 
-
 Note that if you followed along with the instructions in the introduction to this guide, you may have already installed QGIS and InaSAFE. If so, feel free to skip ahead to section three in this chapter.  Otherwise, let's start here and get QGIS installed.
 
 
@@ -53,10 +52,10 @@ Note that if you followed along with the instructions in the introduction to thi
 
 2. Install Quantum GIS
 ......................
-
 * Open the folder where you have the QGIS installation file.
 
 .. image:: /static/tutorial/intro-analysis/2_6.png
+   :align: center
 
 * Run the installation file. If you are installing QGIS version 1.8.0, it should look like this:
 
