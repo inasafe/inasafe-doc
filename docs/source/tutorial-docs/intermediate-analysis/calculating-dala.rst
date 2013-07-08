@@ -64,7 +64,6 @@ We will assume that all the buildings in the **area_terdampak_Sirahan layer** (h
 - Therefore we want to calculate:
 Total Building Area x 1.8 million Rp. x 70%
 in order to get a calculation of the value of total losses.
-
 - We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector > Geoprocessing Tools > Intersect and fill in the fields as follows:
 .. image:: /static/tutorial/intermediate-analysis/6_4.png
 
@@ -72,7 +71,6 @@ in order to get a calculation of the value of total losses.
 - Hide the original buildings layer so that your map looks like this:
 
 .. image:: /static/tutorial/intermediate-analysis/6_5.png
-   :align: center
 
 - Because we used the intersect tool our attribute table will include the DUSUN attribute.
 
