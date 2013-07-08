@@ -1,0 +1,45 @@
+========
+Tutorial
+========
+
+This section of the documentation describes how to use the |project_name|
+system.
+
+.. toctree::
+   :maxdepth: 2
+
+   tutorial
+   socialisation/index
+
+Training Materials
+------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   socialisation/introduction-and-overview
+   socialisation/introduction-functionality
+   socialisation/introduction-of-qgis
+   socialisation/run-basic-inasafe
+   socialisation/inasafe-in-more-detail
+   socialisation/other-hazards
+   socialisation/helpful-hints-and-tips
+   intro-analysis/introduction
+   intro-analysis/basic-qgis
+   intro-analysis/qgis-plugins
+   intro-analysis/inasafe-scenario
+   intro-analysis/working-vector
+   intro-analysis/categorize-labelling
+   intro-analysis/raster
+   intro-analysis/map-projection
+   intro-analysis/new-vector
+   intro-analysis/vector-analysis
+   intro-analysis/map-composer
+   intro-analysis/understanding-inasafe
+   intro-analysis/getting-support
+   intermediate-analysis/introduction
+   intermediate-analysis/review-qgis
+   intermediate-analysis/preparingdata-inasafe
+   intermediate-analysis/planning-evacuationroute
+   intermediate-analysis/determining-idp
+   intermediate-analysis/calculating-dala

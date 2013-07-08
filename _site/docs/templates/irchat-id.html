@@ -1,0 +1,72 @@
+{% extends "inasafe-base.html" %}
+{% set title = 'Chat live!' %}
+
+{% block hero %}
+    <div style="float: left; margin-right: -30px">
+        <div class="hero-unit">
+        <a href="../en/irchat.html"><img src="_static/img/flags/gb.png"></a>
+        <a href="../id/irchat.html"><img src="_static/img/flags/id.png"></a>
+        </div>
+    </div>
+    <iframe src="http://webchat.freenode.net?channels=inasafe&uio=MTE9MzE28"
+        width="700" height="400"></iframe>
+{% endblock %}
+{% block body %}
+        <div class="row" id="blocks-row">
+            <div class="span4">
+                {# We put the admonition inside the span because adding border #}
+                {# to the span will mess up the layout #}
+                <div class="admonition">
+                <h3>Masuk</h3>
+                    <ul>
+                        <li>Masukan Nickname di kotak Nickname.
+                        </li>
+                        <li>Baca CAPTCHA dan masukan ke kotak di bawahnya.
+                        </li>
+                        <li>Klik Connect.
+                        </li>
+                        <li>Jendela chat akan terbuka.
+                        </li>
+                        <li>Jika Anda tidak bisa membaca CAPTCHA-nya klik tombol
+                            Reload. CAPTCHA lain akan muncul yang mungkin lebih
+                            bisa Anda baca.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="admonition">
+                <h3>Peraturan</h3>
+                    <ul>
+                        <li>Tidak perlu bertanya apakah boleh menanyakan
+                            pertanyaan Anda, kami  menganjurkan untuk menanyakan
+                            pertanyaan apapun.
+                        </li>
+                        <li>Bersabarlah. Anggota dari ruang chat ini mungkin
+                            sedang sibuk dengan pekerjaan lainnya atau sedang
+                            jauh dari komputer. Silahkan masuk ke saluran dan
+                            katakan hello dan tunggu aktivitas yang muncul.
+                        </li>
+                        <li>Jaga jendela chat tetap terbuka - meski orang lain
+                            membalas Anda mereka mungkin sibuk dengan pekerjaan
+                            lain sehingga tidak selalu dapat membalas dengan seketika.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="admonition">
+                <h3>Keluar</h3>
+                    Cukup klik pada item menu untuk pergi ke halaman lain atau
+                    tutup jendela browser. Tidak perlu logout.
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-danger centered">
+            Peringatan: Tidak ada dari AIFDR-AusAID, World Bank, atau
+            World Bank-GFDRR bertanggung jawab atas kebenaran hasil
+            dari <strong><span class="inasafe">InaSAFE</span></strong> atau
+            keputusan yang mengikutinya sebagai konsekuensi.
+        </div>
+{% endblock %}

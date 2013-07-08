@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# 
+# Translators:
+# emirhartato <emir.hartato@gmail.com>, 2013
+# dika <mahardika.fadmastuti@gmail.com>, 2013
+# raniedwianugrah <raniedwianugrah@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: inasafe\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-17 14:14\n"
+"PO-Revision-Date: 2013-06-26 01:48+0000\n"
+"Last-Translator: emirhartato <emir.hartato@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/language/id/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# de26c833e571494aab61ce6294b93b35
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:6
+msgid "Flood Evacuation Function"
+msgstr "Fungsi Evakuasi Banjir"
+
+# f027b0fa235545f3827dacbb85a24aae
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:9
+msgid "Overview"
+msgstr "Gambaran umum"
+
+# 13a7379b08d14a3cabb8e501d43b0570
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:11
+msgid "**Unique Identifier**: Flood Evacuation Function"
+msgstr "**Identifikasi Unik**: Fungsi Evakuasi Banjir"
+
+# f4785c3abb354f399822daed0df36160
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:14
+msgid "**Author**: |AIFDR|, |AusAID|"
+msgstr "**Pembuat**: |AIFDR|, |AusAID|"
+
+# b7ff03d80a5e450dab672b95f6a1080e
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:17
+msgid "**Rating**: 4"
+msgstr "**Rating**: 4"
+
+# 03c4913edd7b48b6b2dff882b4ee902e
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:20
+msgid "**Title**: Need evacuation"
+msgstr "**Judul**: Butuh Evakuasi"
+
+# b2df1134d21a4b5f9a2bb7f0ad174b66
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:23
+msgid ""
+"**Synopsis**: To assess the impacts of (flood or tsunami) inundation in "
+"raster format on population."
+msgstr "**Synopsis**: Untuk menghitung dampak genangan (banjir atau tsunami) dalam format raster pada penduduk."
+
+# 8d6df85063c5410db670fe44c5335187
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:26
+msgid ""
+"**Actions**: Provide details about how many people would likely need to be "
+"evacuated, where they are located and what resources would be required to "
+"support them."
+msgstr "**Tindakan**: Menyediakan rincian mengenai berapa banyak orang yang perlu dievakuasi, dimana lokasi keberadaan mereka dan sumber daya apa yang dibutuhkan untuk mendukung keselamatan mereka."
+
+# 3b958344a4aa4fee8b1c12dc76de9d58
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:29
+msgid ""
+"**Hazard Input**: A hazard raster layer where each cell represents flood "
+"depth (in meters)."
+msgstr "**Hazard Input**: Layer raster ancaman dimana setiap sel mewakili kedalaman banjir (dalam meter)."
+
+# fea401b11e4c4619bbd21dae3d1c2577
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:32
+msgid ""
+"**Exposure Input**: An exposure raster layer where each cell represent "
+"population count."
+msgstr "**Input Keterpaparan**: Layer data keterpaparan berjenis raster data dimana setiap sel mewakili sejumlah populasi penduduk."
+
+# 87ad029619044554b7658e44484312cd
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:35
+msgid ""
+"**Output**: Raster layer contains population affected and the minimumneeds "
+"based on the population affected."
+msgstr "**Output**: Layer raster berisi penduduk terdampak dan kebutuhan minimum berdasarkan pada penduduk terdampak."
+
+# 4a96d018b9f34a56a0d5f11e20459aec
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:38
+msgid ""
+"**Limitation**: The default threshold of 1 meter was selected based on "
+"consensus, not hard evidence."
+msgstr "**Limitation**: Ambang batas standar 1 meter telah dipilih berdasarkan pada kesepakatan, bukan bukti yang nyata."
+
+# c732381b88c24da9bdff73d179fbc5c0
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:42
+msgid "Details"
+msgstr "Detail"
+
+# 856590043de84fd19791d3daaa7e0543
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:44
+msgid ""
+"The population subject to inundation exceeding a threshold (default 1m) is "
+"calculated and returned as a raster layer.In addition the total number and "
+"the required needs in terms of the |BNPB| (Perka 7) are reported. The "
+"threshold can be changed and even contain multiple numbers in which case "
+"evacuation and needs are calculated using the largest number with population"
+" breakdowns provided for the smaller numbers. The population raster is "
+"resampled to the resolution of the hazard raster and is rescaled so that the"
+" resampled population counts reflect estimates of population count per "
+"resampled cell. The resulting impact layer has the same resolution and "
+"reflects population count per cell which are affected by inundation."
+msgstr "Subjek populasi genangan yang melebihi ambang batas (standar 1 m) dihitung dan dikembalikan sebagai layer raster. Selain itu jumlah dan kebutuhan yang diperlukan sesuai aturan |BNPB| (Perka 7) yang dilaporkan. Ambang batas dapat diubah dan bahkan berisi beberapa nilai dalam hal evakuasi dan kebutuhan dihitung menggunakan jumlah terbesar dengan hitungan populasi yang disediakan untuk jumlah terkecil. Raster populasi dilakukan pengambilan sampel ulang untuk resolusi raster ancaman dan diskalakan kembali sehingga jumlah populasi pengambilan sampel ulang mencermikan estimasi jumlah populasi per sel pengambilan sampel. Layer dampak yang dihasilkan memiliki resolusi yang sama dan mencerminkan jumlah populasi per sel yang terdampak oleh genangan."
+
+# ac6410ee572e4e2399b9860223301eea
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:47
+msgid "Docstring"
+msgstr "Docstring"
+
+# c7b069a6eb0e44fda91202843491e94a
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:49
+msgid "Impact function for flood evacuation"
+msgstr "Fungsi dampak untuk evakuasi banjir"
+
+# 38e9fe12bc2047219e60e89e70b15189
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:51
+msgid ""
+":author |AIFDR|, |AusAID| :rating 4 :param requires category=='hazard' and"
+"                     subcategory in ['flood', 'tsunami'] and"
+"                     layertype=='raster' and                     unit=='m'"
+msgstr ":author |AIFDR|, |AusAID| :rating 4 :param membutuhkan category=='hazard' dan subkategori pada ['flood', 'tsunami'] dan layertype=='raster' dan unit=='m'"
+
+# 4b03046ace9549daa0e43bd082125742
+#: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:55
+msgid ""
+":param requires category=='exposure' and                     "
+"subcategory=='population' and                     layertype=='raster'"
+msgstr ":param membutuhkan category=='exposure' dan subcategory=='population' dan layertype=='raster'"
