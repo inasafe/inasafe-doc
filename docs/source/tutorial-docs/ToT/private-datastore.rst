@@ -34,13 +34,16 @@ Data uploaded to the private HOT Datastore is only accessible to people who have
 This plug-in allows private data to be streamlined into the private data store.  The newest version of JOSM is required for the SDS plugin to run.  (If you do not have a recent version of JOSM, download and install it from http://josm.openstreetmap.de/  If you cannot install the latest version, go to the Appendix to see how you can install this plug-in by source).
 
 * Open the preferences menu in JOSM and go to the plugins tab.
+
   .. image:: /static/tutorial/tot/3_plugin.png
 	 :align: center
 	 
 * Click "Download List" to ensure that all available plugins are listed.
 * In the search box, type "sds".
-.. image:: /static/tutorial/tot/3_pluginbox.png
 
+  .. image:: /static/tutorial/tot/3_pluginbox.png
+	 :align:center
+	 
 * Check the box next to the plugin to activate it.  You will need to restart JOSM.
 * If JOSM is open, restart it.
 
