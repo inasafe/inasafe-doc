@@ -64,7 +64,6 @@ We will assume that all the buildings in the **area_terdampak_Sirahan layer** (h
 - Therefore we want to calculate:
 Total Building Area x 1.8 million Rp. x 70%
 in order to get a calculation of the value of total losses.
-
 - We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made. Go to Vector > Geoprocessing Tools > Intersect and fill in the fields as follows:
 .. image:: /static/tutorial/intermediate-analysis/6_4.png
 
@@ -77,7 +76,6 @@ in order to get a calculation of the value of total losses.
 
 .. image:: /static/tutorial/intermediate-analysis/6_6.png
    :align: center
-
 
 3. Calculate Damage Area
 ........................
@@ -153,13 +151,14 @@ Now we've calculated the damaged area and we've created a table with damage data
 .. image:: /static/tutorial/intermediate-analysis/6_16.png
 
 - Your new column is now filled with information calculated from this formula, which assesses the value of losses in Rp for each individual building. Save the layer and end the editing session.
+
 6. Losses Group Stats
 .....................
 Now let's calculate losses per hamlet using Group Stats again.
 - In  'Choose vector layer' choose Bangunan_Terdampak_perDusun
 - In 'Choose classification field' type in 'DUSUN'
 - In 'Choose field attributes' fill in 'Losses'.
-- Click "Calculate."  
+- Click "Calculate."
 
 .. image:: /static/tutorial/intermediate-analysis/6_17.png
    :align: center
@@ -205,10 +204,11 @@ Now we will join the tables that we created to our Batas_Desa_Sirahan attribute 
 
 - Click OK.  The *BNG_Dmg* column now contains the same value as column Sum in **BNG_Damage.csv**
 - As the damage values for each hamlet have been obtained we can delete the join.  Right-click **Batas_Desa_Sirahan**, select properties, go to the Join tab, and click the minus button.
+
 .. image:: /static/tutorial/intermediate-analysis/6_23.png
 
 - Now click the plus button, but this time join **BNG_Losses** in the same way as before:
- 
+
 .. image:: /static/tutorial/intermediate-analysis/6_24.png
 
 - Open the attribute table for **Batas_Desa_Sirahan**, click toggle editing and open the Field Calculator.  Fill in as follows:
