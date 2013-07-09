@@ -42,7 +42,7 @@ By adding up all of the damage it is possible to assess the total damages caused
 2. Damage and Loss Assessment Map
 ..................................
 We will create a Damage and Loss Assessment Map using our data from Sirahan Village that we have been working with throughout this unit.
-- Open QGIS and make sure that the following layers are loaded into your project:
+* Open QGIS and make sure that the following layers are loaded into your project:
 
 	* **area_terdampak_Sirahan**
 	* **Jalan_Sirahan**
@@ -54,25 +54,27 @@ We will create a Damage and Loss Assessment Map using our data from Sirahan Vill
    :align: center
 
 We will assume that all the buildings in the **area_terdampak_Sirahan layer** (hazard zone) suffered heavy damage from the disaster.  Let's create a spatial query to filter out these buildings.
-- Go to Vector ? Spatial Query ? Spatial Query and enter the fields like this:
+
+* Go to Vector ? Spatial Query ? Spatial Query and enter the fields like this:
 
 .. image:: /static/tutorial/intermediate-analysis/6_3.png
    :align: center
    
-- We now have a bunch of buildings selected which we are assuming will suffer heavy damages.  According to the BNPB Guide, we can assess the loss of heavily damaged buildings at a rate of 1.8million Rp. / square meter, and the multiplier factor is 70%.  Our formula for calculating losses is:
+* We now have a bunch of buildings selected which we are assuming will suffer heavy damages.  According to the BNPB Guide, we can assess the loss of heavily damaged buildings at a rate of 1.8million Rp. / square meter, and the multiplier factor is 70%.  Our formula for calculating losses is:
 :samp: Total Building area x Loss Value per m2 x Multiplier factor
-- Therefore we want to calculate:
+* Therefore we want to calculate:
 Total Building Area x 1.8 million Rp. x 70%
 in order to get a calculation of the value of total losses.
-- We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector > Geoprocessing Tools > Intersect and fill in the fields as follows:
+* We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made.  Go to Vector > Geoprocessing Tools > Intersect and fill in the fields as follows:
+
 .. image:: /static/tutorial/intermediate-analysis/6_4.png
 
-- Save the result as **Bangunan_Terdampak_perDusun**.
-- Hide the original buildings layer so that your map looks like this:
+* Save the result as **Bangunan_Terdampak_perDusun**.
+* Hide the original buildings layer so that your map looks like this:
 
 .. image:: /static/tutorial/intermediate-analysis/6_5.png
 
-- Because we used the intersect tool our attribute table will include the DUSUN attribute.
+* Because we used the intersect tool our attribute table will include the DUSUN attribute.
 
 .. image:: /static/tutorial/intermediate-analysis/6_6.png
    :align: center
