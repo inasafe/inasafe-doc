@@ -43,3 +43,8 @@ Training Materials
    intermediate-analysis/planning-evacuationroute
    intermediate-analysis/determining-idp
    intermediate-analysis/calculating-dala
+   ToT/orbview-imagery
+   ToT/quality-assurance
+   ToT/private-datastore
+   ToT/josm-troubleshooting
+   ToT/postgis-configuration
