@@ -42,7 +42,7 @@ This plug-in allows private data to be streamlined into the private data store. 
 * In the search box, type "sds".
 
   .. image:: /static/tutorial/tot/3_pluginbox.png
-	 :align:center
+     :align:center
 	 
 * Check the box next to the plugin to activate it.  You will need to restart JOSM.
 * If JOSM is open, restart it.
