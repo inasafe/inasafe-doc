@@ -12,5 +12,4 @@ Package::safe_qgis
    safe_qgis/tools
    safe_qgis/utilities
    safe_qgis/widgets
-   safe_qgis/work
    safe_qgis/impact_statistics
