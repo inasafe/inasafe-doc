@@ -133,9 +133,28 @@ We use the following style for documenting functions and class methods::
 
 
         """
-        self.keywordDbPath = str(thePath)
+        self.keywordDbPath = str(path)
 
-Note the following in the above example:
+Another example::
+
+    def add_layers(scenario_dir, paths):
+        """Add the layers described in a scenario file to QGIS.
+
+        :param scenario_dir: Base directory to find path.
+        :type scenario_dir: str
+
+        :param paths: Path of scenario file (or a list of paths).
+        :type paths: str, list
+
+        :raises: Exception, TypeError, FileNotFoundError
+
+        Note:
+            * Exception - occurs when paths have illegal extension
+            * TypeError - occurs when paths is not string or list
+            * FileNotFoundError - occurs when file not found
+    """
+
+Note the following in the above examples:
 
 * param and type are grouped together with no line break between them.
 * If the param description is more than one line, indent the successive lines

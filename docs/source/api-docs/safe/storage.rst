@@ -4,12 +4,12 @@ Package::safe.storage
 .. toctree::
    :maxdepth: 2
 
-   storage/clipping
+   storage/layer
+   storage/raster
+   storage/utilities_test
    storage/core
    storage/geometry
-   storage/layer
    storage/projection
-   storage/raster
-   storage/utilities
-   storage/utilities_test
+   storage/clipping
    storage/vector
+   storage/utilities
