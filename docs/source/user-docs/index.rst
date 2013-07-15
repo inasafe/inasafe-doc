@@ -1,4 +1,5 @@
-==================
+.. _user_documentation:
+
 User documentation
 ==================
 
@@ -9,7 +10,6 @@ system.
    :maxdepth: 2
 
    install
-   screenshots
    getting_help
    dock
    functionality
@@ -22,7 +22,5 @@ system.
    using-qgis
    getting_involved
    writing_documentation
-   faq
-   known_issues
    changelog
 

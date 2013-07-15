@@ -13,7 +13,7 @@
 
 LOCALES=`ls docs/i18n`
 
-for ITEM in general user-docs tutorial-docs road-map 
+for ITEM in general user-docs training road-map 
 do
   for POFILE in `find docs/i18n/en/LC_MESSAGES/${ITEM}/ -type f -name '*.po'`
   do

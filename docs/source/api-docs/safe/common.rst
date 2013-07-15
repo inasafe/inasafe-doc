@@ -4,15 +4,15 @@ Package::safe.common
 .. toctree::
    :maxdepth: 2
 
-   common/interpolation1d
-   common/geodesy
    common/numerics
-   common/signals
-   common/interpolation2d
-   common/converter
-   common/version
    common/polygon
-   common/tables
+   common/geodesy
    common/dynamic_translations
-   common/exceptions
+   common/signals
+   common/converter
    common/utilities
+   common/exceptions
+   common/tables
+   common/interpolation2d
+   common/interpolation1d
+   common/version

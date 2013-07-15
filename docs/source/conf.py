@@ -165,7 +165,7 @@ html_sidebars = {
     'index': ['inasafe-base.html'],
     'contents': ['globaltoc.html'],
     'general/**': ['globaltoc.html'],
-    'tutorial-docs/**': ['globaltoc.html'],
+    'training/**': ['globaltoc.html'],
     'user-docs/**': ['globaltoc.html'],
     'developer-docs/**': ['globaltoc.html'],
     'api-docs/**': ['globaltoc.html'],

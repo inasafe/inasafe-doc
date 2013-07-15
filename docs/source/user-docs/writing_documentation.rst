@@ -102,9 +102,9 @@ Here are some common useful tags::
 
         This is the caption of the figure (a simple paragraph).
 
-    .. image:: ../static/tutorial/001.png
-       :height: 100px
-       :width: 200 px
+    .. image:: /static/tutorial/001.png
+       :height: 100 px
+       :width: 200 pt
        :scale: 50 %
        :alt: alternate text
        :align: center

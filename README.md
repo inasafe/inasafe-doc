@@ -56,11 +56,11 @@ Run post_translate.sh script to build the documentation::
 
 * sh ./scripts/post_translate.sh en
 
-You can now edit the rst files in the folder ./docs/source/tutorial-docs/,
+You can now edit the rst files in the folder ./docs/source/general/,
 e.g.::
 
-* cd /docs/source/tutorial-docs/
-* gedit tutorial.rst
+* cd /docs/source/general/
+* gedit news.rst
 
 After editing the rst file, run 'post_translate.sh en' again to build the
 english pdf and html files::
@@ -79,7 +79,7 @@ For example, to create indonesian docs::
 Now check, if the manual built correctly and commit and push your changes to
 your forked repository::
 
-* git commit /docs/source/tutorial-docs/tutorial.rst -m 'updated tutorial'
+* git commit /docs/source/general/news.rst -m 'updated news'
 * git push
 
 In your github account you can now open a pull request to merge your changes

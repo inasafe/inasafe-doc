@@ -8,195 +8,174 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-04 09:06\n"
+"POT-Creation-Date: 2013-07-15 16:50\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# 0fe98dcc25224f3db0c1afa6e7173de0
 #: ../../source/user-docs/data_types.rst:11
+# 32e9bfbf1cec411387f144269652dfe5
 msgid "Data Types"
 msgstr ""
 
-# c5cecd681da5464b9bf206911541fcfd
 #: ../../source/user-docs/data_types.rst:13
-msgid ""
-"The impact functions essentially combine spatial data in different formats "
-"through a common interpolation library. This essentially allows values from "
-"one data set to be assigned to another independent of their types. Given two "
-"layers H and E, say, the call::"
+# 88c072666cfd49abbb4f3664e6a21ca2
+msgid "The impact functions essentially combine spatial data in different formats through a common interpolation library. This essentially allows values from one data set to be assigned to another independent of their types. Given two layers H and E, say, the call::"
 msgstr ""
 
-# 1ddcefddd5044d638e73b4d5aa9fb248
 #: ../../source/user-docs/data_types.rst:20
-msgid ""
-"will produce a new layer with all values from H transferred to E in a manner "
-"appropriate for the data types of H and E. Generally, existing values in E "
-"will be also be carried over to I. Conceptually, the new layer I represents "
-"the values of H interpolated to E."
+# 6bd9c01c82064737a874abe18bd68a7b
+msgid "will produce a new layer with all values from H transferred to E in a manner appropriate for the data types of H and E. Generally, existing values in E will be also be carried over to I. Conceptually, the new layer I represents the values of H interpolated to E."
 msgstr ""
 
-# 09f6a376259a4b6ba4e990e4f0299889
 #: ../../source/user-docs/data_types.rst:25
-msgid ""
-"The function takes a number of optional keyword arguments that pertain to "
-"certain type combinations. They are:"
+# 43a9e3f96f2f43338f6b3a2e2f022554
+msgid "The function takes a number of optional keyword arguments that pertain to certain type combinations. They are:"
 msgstr ""
 
-# c2e3e093e6ff4f82baae231e5a5f7577
 #: ../../source/user-docs/data_types.rst:28
-msgid ""
-"layer_name: Optional name of returned layer. If None (default) the name of "
-"the exposure layer is used."
+# 7736d726b1934fa8902225793415d28f
+msgid "layer_name: Optional name of returned layer. If None (default) the name of the exposure layer is used."
 msgstr ""
 
-# d684729f1b684f4ba57f32ae6506d845
 #: ../../source/user-docs/data_types.rst:30
+# 09fb3b80139742939c5dccc9fe90f6f8
 msgid "attribute_name:"
 msgstr ""
 
-# 3266d02b024b4b6e806aeb9c1f30f1af
 #: ../../source/user-docs/data_types.rst:32
-msgid ""
-"If hazard layer is of type raster, this is the name for new attribute in the "
-"result containing the hazard level. If None (default) the name of hazard is "
-"used"
+# 127775d671f94712a832e32fc6a5db79
+msgid "If hazard layer is of type raster, this is the name for new attribute in the result containing the hazard level. If None (default) the name of hazard is used"
 msgstr ""
 
-# 85a3f078428944c086e840b46905bbf5
 #: ../../source/user-docs/data_types.rst:35
-msgid ""
-"If hazard layer is of type vector, it is the name of the attribute to "
-"transfer from the hazard layer into the result. If None (default) all "
-"attributes are transferred."
+# 13afd4507755423eb20b86a5217c6079
+msgid "If hazard layer is of type vector, it is the name of the attribute to transfer from the hazard layer into the result. If None (default) all attributes are transferred."
 msgstr ""
 
-# dbdde8facab743118721bf23c78ce4f3
 #: ../../source/user-docs/data_types.rst:39
-msgid ""
-"mode: Interpolation mode for raster to point interpolation only. Options are "
-"'linear' (default) or 'constant'"
+# 6dc86c4736ae431c835021a9c832b70b
+msgid "mode: Interpolation mode for raster to point interpolation only. Options are 'linear' (default) or 'constant'"
 msgstr ""
 
-# 8683f4bdaccb429d88a70680a23ef4c4
 #: ../../source/user-docs/data_types.rst:43
-msgid ""
-"The following table shows allowed combinations and what interpolation means "
-"in each case."
+# 485585c51ce04b10ade77a3bb30ca698
+msgid "The following table shows allowed combinations and what interpolation means in each case."
 msgstr ""
 
-# 2c252ce85bbf494190dec5bf49940ad7
 #: ../../source/user-docs/data_types.rst:49
+# 1f6c0092c5694afa8dbde2b7dc491346
 msgid "H"
 msgstr ""
 
-# 63fb0c9839c74b8986855b7eb0ef34b5
 #: ../../source/user-docs/data_types.rst:49
+# 2ce76e02946845648ac7fe925f739dd8
 msgid "E"
 msgstr ""
 
-# 33bfb01824c243338a0dde1609539f57
 #: ../../source/user-docs/data_types.rst:49
+# 3588fcfb0f0d40c4bdafaef9aa469b09
 msgid "Methodology"
 msgstr ""
 
-# 3d0ff6c8aa744768a11e8fc59c462628
 #: ../../source/user-docs/data_types.rst:49
+# 0e07735fe64846178f5fe771ee10ffc0
 msgid "Return value"
 msgstr ""
 
-# 3f347c17969e4ff787e5c7a6104c8587
-# 5902148f04b34b90b802094751489123
-# 93b4125e1a3f4033a0e3926b078c49cb
-# c9bdb8cad48d4237ade61cd3d833f7d5
-# 5139d471a6db488fab683e5270e242ce
-# 864569f244d544a691d64f620d5b84e6
-# ae821dc5aa4943a7ad0f58160e994dbf
 #: ../../source/user-docs/data_types.rst:51
 #: ../../source/user-docs/data_types.rst:53
 #: ../../source/user-docs/data_types.rst:55
+#: ../../source/user-docs/data_types.rst:55
 #: ../../source/user-docs/data_types.rst:57
 #: ../../source/user-docs/data_types.rst:63
+#: ../../source/user-docs/data_types.rst:63
+# 66012a4ce0bd448c8a6c2e0d5578be4a
+# f68f8d7fb41e4acba2c14ca5e9be6b75
+# eb23f090f4b54ac387c0a64fbf62c2d2
+# 3a2f7900191442d38befbe9013f49c02
+# ce62dbc01ebf4fdcbaec25e95dfabae7
+# 07dcf692fd39479e99af13411637c3ac
+# a757e2cdfa844e42975f8729091de383
 msgid "Polygon"
 msgstr ""
 
-# c618ac779b2e4759bfbcc7cb6efca7e7
-# b3ca40d287e5426e84f96add3064b35e
-# b6c3b4928f6941b99c0f61c5491ac57e
-# 4cf6930f867f461496928d81a73570bd
-# 6f505d53a6ca4af1b09edb0c0709260c
+#: ../../source/user-docs/data_types.rst:51
 #: ../../source/user-docs/data_types.rst:51
 #: ../../source/user-docs/data_types.rst:57
 #: ../../source/user-docs/data_types.rst:59
+#: ../../source/user-docs/data_types.rst:59
+# e843bf6d6d4248b7a93e1b3b470d62ae
+# 7d82af47fe0943f5be28155933e8e310
+# 1e2a71423ce947e7a130d380b859a014
+# 2e4f810030a0410da67c1acc23544cd6
+# 578f421f0cf9412ea40ffd16b36077ff
 msgid "Point"
 msgstr ""
 
-# b6afb6511b434ba48a335335feb3eb19
 #: ../../source/user-docs/data_types.rst:51
+# 5d4e7bd3cf25498e9fc8569686e39f0f
 msgid "Clip points to polygon and assign all attributes"
 msgstr ""
 
-# 119e8792206b48ceb23590840c83b226
-# 8930fac684884312a32f193c0a53061c
 #: ../../source/user-docs/data_types.rst:53
 #: ../../source/user-docs/data_types.rst:61
+# b49145366e1f4a2d8e48385fd635c735
+# 4d0b122b898f40a788444c4d54fbec7f
 msgid "Line"
 msgstr ""
 
-# 95a694d5b3c84784a3b83a87857d5b2a
-# a8dddd6a0eaa4908816a9824fcb3bae9
-# 3c8c2eafbe7c4cda931e938568efde19
 #: ../../source/user-docs/data_types.rst:53
 #: ../../source/user-docs/data_types.rst:55
 #: ../../source/user-docs/data_types.rst:61
+# 4d3faa5694174a0db4c6d60ee6093b5f
+# ee49a206f92c4d3b823d2785eb270ff7
+# fd48f8c881c24cae9a744443f540482c
 msgid "N/A"
 msgstr ""
 
-# f4cb17c4fa5142d4805fb342707eaf63
-# 8c14e392a30a4eb4a03b712ecb44de03
-# ea64cfc2705a4367953292b4def2ffff
-# 096d03fdd814494198fe8fde06b9cb70
-# 4a58d7c7e48d4c6c8d3ed3fb653da952
-# 3b73e18e96ad4705bc4427b6bd1c76c5
-# 7de81091eb574cfd8dcebb315f05e8ee
 #: ../../source/user-docs/data_types.rst:57
 #: ../../source/user-docs/data_types.rst:59
 #: ../../source/user-docs/data_types.rst:61
 #: ../../source/user-docs/data_types.rst:63
 #: ../../source/user-docs/data_types.rst:65
+#: ../../source/user-docs/data_types.rst:65
+#: ../../source/user-docs/data_types.rst:65
+# 67d4a600356f458dbac1dd5f627eb296
+# 89badcb93dfd4cf7854a4915ddec334c
+# 7f1f998d96364c9a8576af4b83c5cbd8
+# d4a3aace7dfe409ba14889864b2e5604
+# 7023049ba1254a59804c3f759d36ee7c
+# 48ddf18c1ffa4f40a7969d85b834c472
+# c3639ce749044629b670c3fea1875e53
 msgid "Raster"
 msgstr ""
 
-# 2d0f478d92f84daa8c1a6d542ab6f756
 #: ../../source/user-docs/data_types.rst:57
+# 76466dc067ac406290d2b6e8d494a753
 msgid "Convert to points and use Polygon-Point algorithm"
 msgstr ""
 
-# 17e9a6956329402093602aec9dd54289
 #: ../../source/user-docs/data_types.rst:59
+# e47a0a9ddc34420bb6ce329e9d8f5647
 msgid "Bilinear or piecewise constant interpolation"
 msgstr ""
 
-# 717328b4ccff4084ba71a245d6ce26dc
 #: ../../source/user-docs/data_types.rst:63
+# b340388145e445c09a7c8228db2e8d3a
 msgid "Convert to centroids and use Raster-Point algorithm"
 msgstr ""
 
-# 289c3a6b881e4f72a9c5c3685cd3b519
 #: ../../source/user-docs/data_types.rst:65
+# 919de86df84d4c9cb8be3b4e6d0fa133
 msgid "Check that rasters are aligned and return E"
 msgstr ""
 
-# fc0f61e5a30147e58963a25248eb0b5f
 #: ../../source/user-docs/data_types.rst:69
-msgid ""
-"See :ref:`writing_impact_functions` for more information and "
-"`assign_hazard_values_to_exposure_data <http://inasafe.org/api-docs/safe/"
-"engine/interpolation.html#safe.engine.interpolation."
-"assign_hazard_values_to_exposure_data>`_ for the full documentation of this "
-"function."
+# c15a0b502ad143ccb8a229223d05663e
+msgid "See :ref:`writing_impact_functions` for more information and `assign_hazard_values_to_exposure_data <http://inasafe.org/api-docs/safe/engine/interpolation.html#safe.engine.interpolation.assign_hazard_values_to_exposure_data>`_ for the full documentation of this function."
 msgstr ""
+
