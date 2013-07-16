@@ -1,6 +1,7 @@
-===========================================
-Introduction and Overview of |project_name|
-===========================================
+.. _introduction_and_overview:
+
+Introduction and Overview
+=========================
 
 Concept
 -------

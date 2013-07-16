@@ -231,10 +231,9 @@ Adding Keywords
 
 29. :guilabel:`Read` through the error message (that occurs when you
     highlight *flood_osm_BPBD18113_jakarta* layer).  |project_name| has
-    identified that the layer does not have a keyword file.  As explained on
-    page 10.
+    identified that the layer does not have a keyword file.
 
-.. image:: /static/error-display.png
+.. image:: /static/user-docs/error-display.png
 
 30. :guilabel:`Click` on the keyword editor
 

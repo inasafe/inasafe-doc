@@ -1,6 +1,7 @@
-===============================
-Using the |project_name| Plugin
-===============================
+.. _using_the_plugin:
+
+Using the Plugin
+================
 
 This document describes the usage of the |project_name| 'dock panel' - which
 is the main interface for running risk scenarios within the Quantum GIS
@@ -12,28 +13,36 @@ environment.
 
 The |project_name| Dock panel is the main way to interact with the tools that
 are provided in |project_name|. After you have installed the |project_name|
-plugin, the dock panel will automatically load in QGIS, appearing on the left
-hand side of the screen.
+plugin, the dock panel will automatically load in QGIS and appear somewhere
+on your screen. It will look like this:
 
-.. figure:: /static/inasafe-dock-panel.jpeg
+.. figure:: /static/user-docs/dock-panel.png
+   :scale: 75 %
+   :alt: Docking Panel
    :align: center
+
+   Docking Panel
+
 
 You can drag and drop the dock panel to reposition it in the user interface.
 For example, dragging the panel towards the right margin of the QGIS
 application will dock it to the right side of the screen.
 
-.. figure:: /static/docked-right.jpeg
+.. figure:: /static/user-docs/docked-right.png
+   :scale: 50 %
+   :alt: Dock on the right
    :align: center
+
+   Dock on the right with loaded Project
 
 There are 3 main areas to the panel:
 
 * the :guilabel:`Questions` area
 * the :guilabel:`Results` area
-* the buttons area
+* the :guilabel:`Buttons` area
 
 At any time you can obtain help in |project_name| by clicking on the
 :guilabel:`help` buttons provided on each dock and dialog.
-
 
 The Questions Area
 ------------------
@@ -77,16 +86,16 @@ be listed in the :guilabel:`Might` combo box.
 You may be wondering how the |project_name| plugin determines whether a layer
 should be listed in the :guilabel:`In the event of` or :guilabel:`How many`
 combo boxes? The plugin relies on simple keyword metadata to be associated
-with each layer. The keyword system is described in detail in :doc:`keywords`.
+with each layer.
+The keyword system is described in detail in :doc:`keywords`.
 Each layer that has a keyword allocating it's **category** to **hazard** will
-be listed in the :guilabel:`In the event of` combo. Similarly, a **category**
-of **exposure** in the keywords for a layer will result in it being listed
-under the :guilabel:`How many` combo.
+be listed in the :guilabel:`In the event of` combo.
+Similarly, a **category** of **exposure** in the keyw`ords for a layer will
+result in it being listed under the :guilabel:`How many` combo.
 
 |project_name| uses the combination of **category**, **subcategory**, **units**
 and **datatype** keywords to determine which **impact functions** will be
 listed in the :guilabel:`Might` combo.
-
 
 The results area
 ----------------
@@ -95,8 +104,12 @@ The :guilabel:`Results` area is used to display various useful feedback items
 to the user. Once an impact scenario has been run (see next section below),
 a summary table will be shown.
 
-.. figure:: /static/scenario-results.png
+.. figure:: /static/user-docs/scenario-results.png
+   :scale: 50 %
+   :alt: Scenario results
    :align: center
+
+   Processed scenario with loaded and shown results
 
 If you select an **impact layer** (i.e. a layer that was produced using an
 |project_name| impact function), in the QGIS layers list, this summary will
@@ -106,43 +119,57 @@ When you select a **hazard** or **exposure** layer in the QGIS layers list,
 the keywords for that layer will be shown in the :guilabel:`Results` area,
 making it easy to understand what metadata exists for that layer.
 
-.. figure:: /static/keywords-for-active-layer.png
+.. figure:: /static/user-docs/keywords-for-active-layer.png
+   :scale: 50 %
+   :alt: Dock on the right
    :align: center
+
+   Showing keywords for active Layer
 
 The :guilabel:`Results` area is also used to display status information. For
 example, when a suitable combination of **hazard**
 (:guilabel:`In the event of`), **exposure** (:guilabel:`How many`) and
 **impact function** (:guilabel:`In the event of`) are selected, the results
 area will be updated to indicate that you can proceed to run the impact
-scenario calculation.
+scenario calculation. The :menuselection:`Run` Button will be activated.
 
-.. figure:: /static/status-ready.png
+.. figure:: /static/user-docs/status-ready.png
+   :scale: 75 %
+   :alt: Ready to run
    :align: center
 
-While a scenario is being computed, the :guilabel:`Results` area displays the
-current progress of the analysis.
-
-.. figure:: /static/calculation-progress.png
-   :align: center
+   Activated Run button
 
 Finally, the :guilabel:`Results` area is also used to display any error
-messages so that the user is informed as to what went wrong and why.
+messages so that the user is informed as to what went wrong and why. You
+might want to scroll down a bit in the messaging window.
 
-.. figure:: /static/error-display.png
+.. figure:: /static/user-docs/error-display.png
+   :scale: 75 %
+   :alt: Displaying Problems
    :align: center
+
+   Showing error messages
 
 .. note:: At the bottom of error display you may see button like the following.
    If you click on this button, it will display a box which will contain
    useful diagnostic information which can be submitted as part of a bug
    report if you think the error was incorrect.
 
-   .. image:: /static/toggle-traceback.png
-      :align: center
+   .. image:: /static/user-docs/toggle-traceback.png
+       :scale: 75 %
 
 The buttons area
 ----------------
 
 The buttons area contains three buttons:
+
+.. figure:: /static/user-docs/buttons.png
+    :scale: 75 %
+    :align: center
+    :alt: Buttons area
+
+    Buttons Area
 
 * :guilabel:`Help` - click on this if you need context help, such as the
   document you are reading right now!
@@ -156,7 +183,7 @@ Data conversions when running a scenario
 ----------------------------------------
 
 When running a scenario, the data being used needs to be processed into a state
-where it is acceptible for use by the impact function. In particular it should
+where it is acceptable for use by the impact function. In particular it should
 be noted that:
 
 * Remote datasets will be copied locally before processing.

@@ -10,7 +10,7 @@ Where can I download the latest version of |project_name|?
 ..........................................................
 
 The latest version of |project_name| can be found following the
-  :ref:`install-howto` Guide.
+  :ref:`installation` Guide.
 
 I found a bug, how should I report it?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

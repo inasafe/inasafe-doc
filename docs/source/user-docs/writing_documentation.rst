@@ -1,4 +1,5 @@
-=====================
+.. _writing_documentation:
+
 Writing Documentation
 =====================
 
@@ -16,6 +17,12 @@ A complete list of supported .rst markup is also available
 Try to not write more than 80 Characters in one line. That makes the
 Documentation much easier to maintain.
 
+Try to give an anchor to reference to for at least every new Heading (Page).
+If it is useful and important you might also want to put anchors on
+SubHeadings.
+
+.. _common_tags:
+
 Common tags used in the Documentation:
 --------------------------------------
 
@@ -23,7 +30,6 @@ Here are some common useful tags::
 
    |project_name|   is currently a substitution for the Project name (InaSAFE)
 
-   =======
    Heading
    =======
 
@@ -48,6 +54,7 @@ Here are some common useful tags::
                                 in front of a Section.
    Section to cross-reference   Like it is here.
    --------------------------
+
 
    :doc:`../user-docs/filename` referencing an internal file
 
@@ -108,7 +115,6 @@ Here are some common useful tags::
        :scale: 50 %
        :alt: alternate text
        :align: center
-       Image description
 
 remark: use pt instead of px because of latex output
 A4 = height ~ 1000pt

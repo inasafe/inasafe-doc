@@ -1,6 +1,8 @@
-=================================================================
-|project_name| Functionality and Datasets to be used in Practical
-=================================================================
+.. _functionality_and_datasets:
+
+Functionality and Datasets to be used in Practical
+==================================================
+
 Before we dive into using QGIS and |project_name|, this chapter will explain
 |project_name|  current functionality, the functionality we will touch on
 during this short |project_name| course as well as the spatial datasets we
@@ -101,7 +103,7 @@ collection methodology. Below will explain the methodologies used in Jakarta
 and Padang.
 
 :Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (Nationals
-    Disaster Managers) with assistance from |AIFDR|, |AusAID|, the World Bank, 
+    Disaster Managers) with assistance from |AIFDR|, |AusAID|, the World Bank,
     UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held
     workshops in each of Jakartas 6 Districts in order to help Village Heads
     map their community boundaries and major infrastructure. Over 500

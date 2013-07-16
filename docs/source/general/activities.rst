@@ -1,6 +1,5 @@
 .. _activities:
 
-==========
 Activities
 ==========
 
@@ -14,7 +13,7 @@ All users of |project_name|, especially those using earlier |project_name|
 releases are encouraged to upgrade to this release.
 
 |project_name| can be updated using the QGIS Plugin installer or following
-the :ref:`install-howto` guide.
+the :ref:`installation` guide.
 
 For a full list of changes in |project_name| |release|,
 see the :ref:`changelog`

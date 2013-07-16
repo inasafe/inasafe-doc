@@ -8,216 +8,302 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-15 16:50\n"
+"POT-Creation-Date: 2013-07-16 10:03\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/user-docs/dock.rst:7
 # 94eaf1ba94a74a2fa764825b5f0f70ba
+#: ../../source/user-docs/dock.rst:7
 msgid "Using the |project_name| Plugin"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:9
 # 35170fae44f14b7db1ba6ebf165c60d9
-msgid "This document describes the usage of the |project_name| 'dock panel' - which is the main interface for running risk scenarios within the Quantum GIS environment."
+#: ../../source/user-docs/dock.rst:9
+msgid ""
+"This document describes the usage of the |project_name| 'dock panel' - which "
+"is the main interface for running risk scenarios within the Quantum GIS "
+"environment."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:13
 # 619132a307a34875affe4ab9ed3b5b09
-msgid "In order to use the |project_name| tool effectively, you should probably also read the :doc:`keywords` and :doc:`impact_functions` documentation before you get started."
+#: ../../source/user-docs/dock.rst:13
+msgid ""
+"In order to use the |project_name| tool effectively, you should probably "
+"also read the :doc:`keywords` and :doc:`impact_functions` documentation "
+"before you get started."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:17
 # 34a630786d544a008dae0000a8ffb462
-msgid "The |project_name| Dock panel is the main way to interact with the tools that are provided in |project_name|. After you have installed the |project_name| plugin, the dock panel will automatically load in QGIS, appearing on the left hand side of the screen."
+#: ../../source/user-docs/dock.rst:17
+msgid ""
+"The |project_name| Dock panel is the main way to interact with the tools "
+"that are provided in |project_name|. After you have installed the |"
+"project_name| plugin, the dock panel will automatically load in QGIS, "
+"appearing on the left hand side of the screen."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:25
 # 361c530ce1fb43da8673fcc3a84a148c
-msgid "You can drag and drop the dock panel to reposition it in the user interface. For example, dragging the panel towards the right margin of the QGIS application will dock it to the right side of the screen."
+#: ../../source/user-docs/dock.rst:25
+msgid ""
+"You can drag and drop the dock panel to reposition it in the user interface. "
+"For example, dragging the panel towards the right margin of the QGIS "
+"application will dock it to the right side of the screen."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:32
 # fe1f39f1dab3443297144b39c9858695
+#: ../../source/user-docs/dock.rst:32
 msgid "There are 3 main areas to the panel:"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:34
 # 115bced4b1c54515beab8510271908e5
+#: ../../source/user-docs/dock.rst:34
 msgid "the :guilabel:`Questions` area"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:35
 # 7e6819c41c114ad28344f550f4d12f08
+#: ../../source/user-docs/dock.rst:35
 msgid "the :guilabel:`Results` area"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:36
 # 0d2b355cbba94f44bde10e25ecd43b8c
+#: ../../source/user-docs/dock.rst:36
 msgid "the buttons area"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:38
 # decca260497d46edb926c8f45a512558
-msgid "At any time you can obtain help in |project_name| by clicking on the :guilabel:`help` buttons provided on each dock and dialog."
+#: ../../source/user-docs/dock.rst:38
+msgid ""
+"At any time you can obtain help in |project_name| by clicking on the :"
+"guilabel:`help` buttons provided on each dock and dialog."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:43
 # 888f7209e0c843838b5e6559611f350c
+#: ../../source/user-docs/dock.rst:43
 msgid "The Questions Area"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:45
 # 8732b2344df0480199ab0166e9a29f32
-msgid "The intention of InaSAFE is to make it really simple and easy to perform your impact analysis. The question area provides a simple way for you to formulate what it is you want to find out? All questions are formulated in the form:"
+#: ../../source/user-docs/dock.rst:45
+msgid ""
+"The intention of InaSAFE is to make it really simple and easy to perform "
+"your impact analysis. The question area provides a simple way for you to "
+"formulate what it is you want to find out? All questions are formulated in "
+"the form:"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:50
 # 8c88a6280004452a98d8beb3c159ba44
+#: ../../source/user-docs/dock.rst:50
 msgid "If [**hazard**] how many [**exposure**] might [**impact**]."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:52
 # a52f7cf1f8254b9180f019e758d4f01e
+#: ../../source/user-docs/dock.rst:52
 msgid "For example:"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:54
 # 895db7402a344487b4fd439254aa2dc7
+#: ../../source/user-docs/dock.rst:54
 msgid "If **there is a flood** how many **schools** might **be closed**."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:56
 # df09eae42b414a6895b1edd750453b91
-msgid "In order to answer such questions, the |project_name| developers have built a number of **impact functions** that cover scenarios such as flood, tsunami, volcanic ash fall, earthquake and so on. You can read our impact function documentation to find out more information about the various :doc:`./impact_functions` implemented."
+#: ../../source/user-docs/dock.rst:56
+msgid ""
+"In order to answer such questions, the |project_name| developers have built "
+"a number of **impact functions** that cover scenarios such as flood, "
+"tsunami, volcanic ash fall, earthquake and so on. You can read our impact "
+"function documentation to find out more information about the various :doc:"
+"`./impact_functions` implemented."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:62
 # 7cdcabf5d59344939f58fd8e8a2e0471
-msgid "The formulation of these questions if carried out by loading layers into QGIS that represent either **hazard** or **exposure** scenarious."
+#: ../../source/user-docs/dock.rst:62
+msgid ""
+"The formulation of these questions if carried out by loading layers into "
+"QGIS that represent either **hazard** or **exposure** scenarious."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:65
 # 6e6fca4a78544eb5a7b6816c90f5a389
-msgid "A **hazard** (:guilabel:`In the event of`) may be represented as, for example, a raster layer in QGIS where each pixel in the raster represents the current flood depth following an inundation event."
+#: ../../source/user-docs/dock.rst:65
+msgid ""
+"A **hazard** (:guilabel:`In the event of`) may be represented as, for "
+"example, a raster layer in QGIS where each pixel in the raster represents "
+"the current flood depth following an inundation event."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:68
 # b90e2b4868e2443787bef02397b97322
-msgid "An **exposure** (:guilabel:`How many`) layer could be represented, for example, as vector polygon data representing building outlines, or a raster outline where each pixel represents the number of people resident in that cell."
+#: ../../source/user-docs/dock.rst:68
+msgid ""
+"An **exposure** (:guilabel:`How many`) layer could be represented, for "
+"example, as vector polygon data representing building outlines, or a raster "
+"outline where each pixel represents the number of people resident in that "
+"cell."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:73
 # 7dec8f17f01c4ec8b9a418926b491553
-msgid "The **impact function** (:guilabel:`Might`) will combine these two input layers in a mathematical model in order to postulate what the impacts of the hazard will be on the exposure infrastructure or people."
+#: ../../source/user-docs/dock.rst:73
+msgid ""
+"The **impact function** (:guilabel:`Might`) will combine these two input "
+"layers in a mathematical model in order to postulate what the impacts of the "
+"hazard will be on the exposure infrastructure or people."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:77
 # 815479ebe5994312bfd983737838c9da
-msgid "By selecting a combination from the :guilabel:`In the event of` and :guilabel:`How many` combo boxes, an appropriate set of impact functions will be listed in the :guilabel:`Might` combo box."
+#: ../../source/user-docs/dock.rst:77
+msgid ""
+"By selecting a combination from the :guilabel:`In the event of` and :"
+"guilabel:`How many` combo boxes, an appropriate set of impact functions will "
+"be listed in the :guilabel:`Might` combo box."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:81
 # 8e40c178bf464675aec5f8e3370dda17
-msgid "You may be wondering how the |project_name| plugin determines whether a layer should be listed in the :guilabel:`In the event of` or :guilabel:`How many` combo boxes? The plugin relies on simple keyword metadata to be associated with each layer. The keyword system is described in detail in :doc:`keywords`. Each layer that has a keyword allocating it's **category** to **hazard** will be listed in the :guilabel:`In the event of` combo. Similarly, a **category** of **exposure** in the keywords for a layer will result in it being listed under the :guilabel:`How many` combo."
+#: ../../source/user-docs/dock.rst:81
+msgid ""
+"You may be wondering how the |project_name| plugin determines whether a "
+"layer should be listed in the :guilabel:`In the event of` or :guilabel:`How "
+"many` combo boxes? The plugin relies on simple keyword metadata to be "
+"associated with each layer. The keyword system is described in detail in :"
+"doc:`keywords`. Each layer that has a keyword allocating it's **category** "
+"to **hazard** will be listed in the :guilabel:`In the event of` combo. "
+"Similarly, a **category** of **exposure** in the keywords for a layer will "
+"result in it being listed under the :guilabel:`How many` combo."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:90
 # dfbf24838ff649cda11b7ebcd95cbd9a
-msgid "|project_name| uses the combination of **category**, **subcategory**, **units** and **datatype** keywords to determine which **impact functions** will be listed in the :guilabel:`Might` combo."
+#: ../../source/user-docs/dock.rst:90
+msgid ""
+"|project_name| uses the combination of **category**, **subcategory**, "
+"**units** and **datatype** keywords to determine which **impact functions** "
+"will be listed in the :guilabel:`Might` combo."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:96
 # b8262603bd1944f4b60778e921961564
+#: ../../source/user-docs/dock.rst:96
 msgid "The results area"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:98
 # ed8de2aecb5e4608a8049533a8a92d3e
-msgid "The :guilabel:`Results` area is used to display various useful feedback items to the user. Once an impact scenario has been run (see next section below), a summary table will be shown."
+#: ../../source/user-docs/dock.rst:98
+msgid ""
+"The :guilabel:`Results` area is used to display various useful feedback "
+"items to the user. Once an impact scenario has been run (see next section "
+"below), a summary table will be shown."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:105
 # f7a661bd573a4468ba1f691fb76c7688
-msgid "If you select an **impact layer** (i.e. a layer that was produced using an |project_name| impact function), in the QGIS layers list, this summary will also be displayed in the results area."
+#: ../../source/user-docs/dock.rst:105
+msgid ""
+"If you select an **impact layer** (i.e. a layer that was produced using an |"
+"project_name| impact function), in the QGIS layers list, this summary will "
+"also be displayed in the results area."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:109
 # 0f3c0668e82b4636b1bba0235f5cd18a
-msgid "When you select a **hazard** or **exposure** layer in the QGIS layers list, the keywords for that layer will be shown in the :guilabel:`Results` area, making it easy to understand what metadata exists for that layer."
+#: ../../source/user-docs/dock.rst:109
+msgid ""
+"When you select a **hazard** or **exposure** layer in the QGIS layers list, "
+"the keywords for that layer will be shown in the :guilabel:`Results` area, "
+"making it easy to understand what metadata exists for that layer."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:116
 # 2277ecc989334d43ba6db4a6c5703ee1
-msgid "The :guilabel:`Results` area is also used to display status information. For example, when a suitable combination of **hazard** (:guilabel:`In the event of`), **exposure** (:guilabel:`How many`) and **impact function** (:guilabel:`In the event of`) are selected, the results area will be updated to indicate that you can proceed to run the impact scenario calculation."
+#: ../../source/user-docs/dock.rst:116
+msgid ""
+"The :guilabel:`Results` area is also used to display status information. For "
+"example, when a suitable combination of **hazard** (:guilabel:`In the event "
+"of`), **exposure** (:guilabel:`How many`) and **impact function** (:guilabel:"
+"`In the event of`) are selected, the results area will be updated to "
+"indicate that you can proceed to run the impact scenario calculation."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:126
 # 64069e885a5144ab80ec3dc8a5cb9c72
-msgid "While a scenario is being computed, the :guilabel:`Results` area displays the current progress of the analysis."
+#: ../../source/user-docs/dock.rst:126
+msgid ""
+"While a scenario is being computed, the :guilabel:`Results` area displays "
+"the current progress of the analysis."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:132
 # 3399881267424d8c906a3fac341939fe
-msgid "Finally, the :guilabel:`Results` area is also used to display any error messages so that the user is informed as to what went wrong and why."
+#: ../../source/user-docs/dock.rst:132
+msgid ""
+"Finally, the :guilabel:`Results` area is also used to display any error "
+"messages so that the user is informed as to what went wrong and why."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:138
 # eb9e4207366c4920b09e75a3178d39d5
-msgid "At the bottom of error display you may see button like the following. If you click on this button, it will display a box which will contain useful diagnostic information which can be submitted as part of a bug report if you think the error was incorrect."
+#: ../../source/user-docs/dock.rst:138
+msgid ""
+"At the bottom of error display you may see button like the following. If you "
+"click on this button, it will display a box which will contain useful "
+"diagnostic information which can be submitted as part of a bug report if you "
+"think the error was incorrect."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:147
 # e8e65f937dd94fa2bb9f236db99d5b48
+#: ../../source/user-docs/dock.rst:147
 msgid "The buttons area"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:149
 # f94e098036794f8abe1b09ec1b6b65bf
+#: ../../source/user-docs/dock.rst:149
 msgid "The buttons area contains three buttons:"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:151
 # 9e4eadb94900411fa9e737431340deea
-msgid ":guilabel:`Help` - click on this if you need context help, such as the document you are reading right now!"
+#: ../../source/user-docs/dock.rst:151
+msgid ""
+":guilabel:`Help` - click on this if you need context help, such as the "
+"document you are reading right now!"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:153
 # fef7747f048d47b0ae30d157610e5167
-msgid ":guilabel:`Print...` - click on this if you wish to create a pdf of your impact scenarion project. An **impact layer** must be active before the :guilabel:`Print...` button will be enabled."
+#: ../../source/user-docs/dock.rst:153
+msgid ""
+":guilabel:`Print...` - click on this if you wish to create a pdf of your "
+"impact scenarion project. An **impact layer** must be active before the :"
+"guilabel:`Print...` button will be enabled."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:156
 # 9fb58ba11ff34f08a5fe8615caef6061
-msgid ":guilabel:`Run` - if the combination of options in the :guilabel:`Questions` area's combo boxes will allow you to run a scenario, this button is enabled."
+#: ../../source/user-docs/dock.rst:156
+msgid ""
+":guilabel:`Run` - if the combination of options in the :guilabel:`Questions` "
+"area's combo boxes will allow you to run a scenario, this button is enabled."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:160
 # 9f0cd36c98d24a34b9a44521703c6d3d
+#: ../../source/user-docs/dock.rst:160
 msgid "Data conversions when running a scenario"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:162
 # ed0ff32726f242b19c75cae0b668a292
-msgid "When running a scenario, the data being used needs to be processed into a state where it is acceptible for use by the impact function. In particular it should be noted that:"
+#: ../../source/user-docs/dock.rst:162
+msgid ""
+"When running a scenario, the data being used needs to be processed into a "
+"state where it is acceptible for use by the impact function. In particular "
+"it should be noted that:"
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:166
 # f0dbf7a31f0849a8b0063251e551cfaf
+#: ../../source/user-docs/dock.rst:166
 msgid "Remote datasets will be copied locally before processing."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:167
 # 8caffffada7c44698e9230734dffc31a
-msgid "All datasets will be clipped to the intersection of the **hazard** layer, the **exposure** layer and the current view extents."
+#: ../../source/user-docs/dock.rst:167
+msgid ""
+"All datasets will be clipped to the intersection of the **hazard** layer, "
+"the **exposure** layer and the current view extents."
 msgstr ""
 
-#: ../../source/user-docs/dock.rst:169
 # 082a5e054c6a41c1bd0cae163b2addc4
-msgid "All clipped datasets will be converted (reprojected) to Geographic (EPSG:4326) coordinate reference system before analysis."
+#: ../../source/user-docs/dock.rst:169
+msgid ""
+"All clipped datasets will be converted (reprojected) to Geographic "
+"(EPSG:4326) coordinate reference system before analysis."
 msgstr ""
-
