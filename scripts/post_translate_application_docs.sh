@@ -67,23 +67,17 @@ for LOCALE in ${LOCALES}
 # Compile the html docs for this locale
 do
   # cleanup all images for the other locale
-  rm -rf /tmp/source/static
-  mkdir -p /tmp/source/static
+  rm -rf static
+  mkdir -p static
   # copy english (base) resources to the static dir
-  cp -r ../../resources/en/user-docs /tmp/source/static
+  cp -r ../../resources/en/user-docs static
   # now overwrite possible available (localised) resources over the english ones
-  cp -r ../../resources/${LOCALE}/user-docs* /tmp/source/static
+  cp -r ../../resources/${LOCALE}/user-docs* static
 
   rm -rf /tmp/inasafe-user-docs-i18n
   mkdir -p /tmp/inasafe-user-docs-i18n/${LOCALE}/LC_MESSAGES
   cp -r ../../i18n/${LOCALE}/LC_MESSAGES/user-docs/* \
         /tmp/inasafe-user-docs-i18n/${LOCALE}/LC_MESSAGES
-
-  #################################
-  #
-  #        HTML Generation
-  #
-  #################################
 
   echo "Building HTML for locale '${LOCALE}'..."
   LOG=/tmp/sphinx-app-docs-${LOCALE}-$$.log
@@ -91,12 +85,12 @@ do
 
   # Some manual cleanups
   rm -rf $HTMLDIR/$LOCALE/_static/img/carousel
-
+  rm -rf $HTMLDIR/$LOCALE/_sources
 done
 
 
 
-rm -rf /tmp/source/static
+rm -rf static
 rm -rf ${BUILDDIR}
 
 popd

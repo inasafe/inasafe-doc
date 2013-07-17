@@ -60,7 +60,7 @@ html_theme = 'inasafe-theme'
 html_theme_path = ['../../themes']
 html_short_title = 'InaSAFE Docs'
 html_favicon = 'favicon.ico'
-html_static_path = ['/tmp/source/static']
+html_static_path = ['static']
 html_sidebars = {
     'index': ['globaltoc.html'],
     'user-docs/**': ['globaltoc.html'], }
