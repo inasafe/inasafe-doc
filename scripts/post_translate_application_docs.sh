@@ -61,6 +61,8 @@ if [ $1 ]; then
   LOCALES=$1
 fi
 
+echo "Locales: $LOCALES"
+
 for LOCALE in ${LOCALES}
 # Compile the html docs for this locale
 do
@@ -68,9 +70,14 @@ do
   rm -rf /tmp/source/static
   mkdir -p /tmp/source/static
   # copy english (base) resources to the static dir
-  cp -r ../../resources/en/* /tmp/source/static
+  cp -r ../../resources/en/user-docs /tmp/source/static
   # now overwrite possible available (localised) resources over the english ones
-  cp -r ../../resources/${LOCALE}/* /tmp/source/static
+  cp -r ../../resources/${LOCALE}/user-docs* /tmp/source/static
+
+  rm -rf /tmp/inasafe-user-docs-i18n
+  mkdir -p /tmp/inasafe-user-docs-i18n/${LOCALE}/LC_MESSAGES
+  cp -r ../../i18n/${LOCALE}/LC_MESSAGES/user-docs/* \
+        /tmp/inasafe-user-docs-i18n/${LOCALE}/LC_MESSAGES
 
   #################################
   #
@@ -79,32 +86,15 @@ do
   #################################
 
   echo "Building HTML for locale '${LOCALE}'..."
-  LOG=/tmp/sphinx-app-docs$$.log
+  LOG=/tmp/sphinx-app-docs-${LOCALE}-$$.log
   ${SPHINXBUILD} -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html . ${HTMLDIR}/${LOCALE} > $LOG
-  WARNINGS=`cat $LOG | grep warning`
-  ERRORS=`cat $LOG | grep ERROR`
-  if [[  $WARNINGS ]]
-  then
-    echo "***********************************************"
-    echo "* Sphinx build produces warnings - Please fix *"
-    echo $WARNINGS
-    echo "***********************************************"
-    exit 1
-  fi
-  if [[  $ERRORS ]]
-  then
-    echo "*********************************************"
-    echo "* Sphinx build produces errors - Please fix *"
-    echo $ERRORS
-    echo "*********************************************"
-    exit 1
-  fi
 
-  # hack to avoid error when using Search in contents.html
-  rpl -q '#/../search.html' 'search.html' ./output/html/${LOCALE}/contents.html
+  # Some manual cleanups
+  rm -rf $HTMLDIR/$LOCALE/_static/img/carousel
 
-  popd
 done
+
+
 
 rm -rf /tmp/source/static
 rm -rf ${BUILDDIR}

@@ -75,5 +75,6 @@ htmlhelp_basename = 'InaSAFEUserGuide'
 html_show_sphinx = False
 html_show_copyright = False
 
+locale_dirs = ['/tmp/inasafe-user-docs-i18n']
 # create 1 po file per rst file instead of one po file per module
 gettext_compact = False
