@@ -1,4 +1,5 @@
-==========================
+.. _building_documentation:
+
 Building the Documentation
 ==========================
 

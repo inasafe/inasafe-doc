@@ -4,11 +4,13 @@ Writing Documentation
 =====================
 
 The documentation for |project_name| is written using ReSTructured text (.rst)
-and the Sphinx documentation builder. The best way to learn how to write .rst
-is to look at the source of existing documentation - the markup syntax is
-very simple. There are a number of useful tags that you can use to make
-your documentation clear and visually interesting, the more commonly used in
-this document are listed below. For a more detailed list, please visit
+and the Sphinx documentation builder.
+
+The best way to learn how to write .rst is to look at the source of existing
+documentation - the markup syntax is very simple. There are a number of
+useful tags that you can use to make your documentation clear and visually
+interesting, the more commonly used in this document are listed below. For a
+more detailed list, please visit
 the `Sphinx Inline Markup page <http://sphinx.pocoo.org/markup/inline.html>`_
 
 A complete list of supported .rst markup is also available
@@ -140,13 +142,13 @@ Things you have to have to be able to help with documentation:
 
 * A github account.
 * A fork of the inasafe-doc branch (only if you do not have commit access to
-  the main repository.
+  the main repository).
 
 Creating a github Account is done by clicking on the "Sign up for free"
 button on https://github.com/ and fill out the necessary fields.
 
 This Documentation assumes that you have the whole |project_name| source
-available under $HOME/dev/python/...
+available under :file:`$HOME/dev/python/...`
 
 Cloning your forked github |project_name| Documentation by entering following
 commands:
@@ -154,6 +156,7 @@ commands:
 :command:`git clone https://github.com/<your username>/inasafe-doc.git`
 
 then search for the .rst file you'd like to extend/fix and work on it.
+
 Afterwards commit your local changes to your local clone with the command
 
 :command:`git commit -a -m"fixed a typo"`
@@ -166,4 +169,4 @@ You can than do a pull request on github to request your changes to be
 reviewed and taken into the official documentation.
 
 If you want to build the documentation locally on your Computer you should
-read :doc:`../developer-docs/building_documentation`
+read :ref:`building_documentation` inside the Developer Documentation.

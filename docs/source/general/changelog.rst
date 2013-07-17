@@ -1,12 +1,11 @@
-==========
-Whats new?
-==========
-
 .. _changelog:
+
+Changelog
+=========
 
 Changelog for version |release|
 -------------------------------
-* Zero impact or "all is well" handling. See 
+* Zero impact or "all is well" handling. See
   https://github.com/AIFDR/inasafe/issues/583
 
 Changelog for version 1.1.0

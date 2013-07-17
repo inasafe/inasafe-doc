@@ -3,21 +3,23 @@
 Screenshots
 ===========
 
-.. figure:: /static/screenshot-small.jpg
-   :width: 400 px
-   :align:   center
+.. figure:: /static/general/screenshot.jpg
+   :scale: 50 %
    :alt: Screenshot from QGIS 1.7.4
+   :align: center
 
    |project_name| on QGIS 1.7.4
 
-.. figure:: /static/screenshot1-small.jpg
-   :align:   center
-   :alt:
+.. figure:: /static/general/screenshot1.jpg
+   :scale: 50 %
+   :alt: Screenshot from QGIS 1.7.4
+   :align: center
 
    |project_name| on QGIS 1.7.4
 
-.. figure:: /static/screenshot2-small.jpg
-   :align:   center
+.. figure:: /static/general/screenshot2.jpg
+   :scale: 50 %
    :alt: Screenshot from QGIS 1.7.4
+   :align: center
 
    |project_name| on QGIS 1.7.4

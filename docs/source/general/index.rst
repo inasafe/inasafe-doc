@@ -24,4 +24,5 @@ happening anymore please report back so that someone can change the entries.
    faq
    screenshots
    known_issues
+   changelog
 

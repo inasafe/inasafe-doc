@@ -1,8 +1,5 @@
-.. FIXME (Ole). I think this should move to developer documentation
-
 .. _data_types:
 
-==========
 Data Types
 ==========
 

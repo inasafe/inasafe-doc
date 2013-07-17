@@ -220,10 +220,9 @@ relevant documentation.
 Update the changelog
 --------------------
 
-A changelog should be maintained (:file:`docs/sources/user-docs/changelog.rst`)
+A changelog should be maintained (:file:`docs/sources/general/changelog.rst`)
 that lists the key new features and improvement made with each release. Use
-the :doc:`../user-docs/changelog` file to guide the style of any edits and
-additions made.
+the :ref:`changelog` file to guide the style of any edits and additions made.
 
 The changelog should not exhaustively list every commit that took place. Rather
 it should list the key features and bug fixes that were made during the

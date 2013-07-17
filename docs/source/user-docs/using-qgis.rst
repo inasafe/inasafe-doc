@@ -1,4 +1,5 @@
-==========
+.. _using_qgis:
+
 Using QGIS
 ==========
 
@@ -19,12 +20,3 @@ general and QGIS in particular:
   Application.
 * The `QGIS Training Manual <http://manual.linfiniti.com>`_ by Linfiniti
   Consulting that provides a detailed training guide on QGIS and PostGIS.
-
-Things to cover (suggested by Trias Aditya)
-
-- access to statistics data
-- access to WFS (for exposure data)
-- access to WMS (for background data)
-- you have got an idea to access WCS (e.g. hazard, elevation data etc)
-- map the projected impact into graphical charts (this will be my
-  favourites then...)

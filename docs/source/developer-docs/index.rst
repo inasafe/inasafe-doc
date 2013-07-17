@@ -1,4 +1,5 @@
-=======================
+.. _developer_documentation:
+
 Developer documentation
 =======================
 
@@ -26,6 +27,7 @@ Developer Documentation Contents:
    writing_api_documentation
    building_documentation
    writing_impact_functions
+   data_types
    impact_function_tutorial
    postprocessors
    bug_reporting

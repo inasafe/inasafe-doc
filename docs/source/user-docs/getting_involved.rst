@@ -1,6 +1,5 @@
 .. _getting_involved:
 
-================
 Getting involved
 ================
 
@@ -11,7 +10,10 @@ but there is no substitute for having interested users participating and
 sharing their needs, problems and successes! Here are a few simple ways you
 can get involved:
 
-**Visit our web site!** The web site will always represent the latest
+Visit our web site!
+^^^^^^^^^^^^^^^^^^^
+
+The web site will always represent the latest
 information on how to use |project_name|. We encourage anyone who wants to get
 involved with the project to first read the content available on the site to
 familiarise themselves with the content. The website is available at:
@@ -21,7 +23,10 @@ http://inasafe.org
 If you need help in solving some problems with |project_name| you should take
 a look at :ref:`getting_help`
 
-**Use our issue tracker!** We maintain an issue tracker here:
+Use our issue tracker!
+^^^^^^^^^^^^^^^^^^^^^^
+
+We maintain an issue tracker here:
 
 http://github.com/AIFDR/inasafe/issues
 
@@ -29,11 +34,17 @@ On this page you can browse and search existing issues and create new issues.
 The issue tracker is a great place to let us know about specific bugs you
 encounter or tell us about new features you would like to see in the software.
 
-**Chat live to developers on IRC!** Internet Relay Chat (IRC) is a chat room
-environment where you can talk (by typing messages) to other inasafe users and
-developers to discuss ideas and get help. You can use your own IRC client and
-join #inasafe on the irc.freenode.net network. Alternatively, you can use your
-web browser to join the chat room using the link below:
+Chat live to developers on IRC!
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Internet Relay Chat (IRC) is a chat room environment where you can talk (by
+typing messages) to other inasafe users and developers to discuss ideas and
+get help. You can use your own IRC client and join #inasafe on the irc
+.freenode.net network.
+We also have a direct link at our Webpage http://www.inasafe.org. Just click
+on :menuselection:`Chat live!` and join us in the channel.
+Alternatively, you can use your web browser to join the chat room using the
+link below:
 
 http://webchat.freenode.net/
 
@@ -46,9 +57,12 @@ channel.
    so just ask your question and leave the chat window open and check back
    every now and then until you see other chat room members become active.
 
-**Submit your code!** We would really like to emphasise that |project_name|
-is Free and Open Source. That means anyone (or any organisation) can freely
-modify, adapt and improve the software. We will welcome any contributions to
+Submit your code!
+^^^^^^^^^^^^^^^^^
+
+We would really like to emphasise that |project_name| is Free and Open Source
+. That means anyone (or any organisation) can freely modify,
+adapt and improve the software. We will welcome any contributions to
 |project_name|.
 
 The easiest way to do this is to
@@ -65,3 +79,5 @@ management system mentioned above.
    comprehensive regression testing system. We have this requirement in place
    to ensure a good experience for our users and to ensure that users can
    have confidence in the results produced by |project_name|.
+
+

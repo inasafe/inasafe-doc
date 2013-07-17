@@ -1,6 +1,5 @@
 .. _impact_functions:
 
-================
 Impact Functions
 ================
 
@@ -36,14 +35,22 @@ functions that can be used. They are listed in a table with a series of
 pick-lists (combo boxes) above which can be used to filter the functions
 based on different criteria as illustrated below.
 
-.. figure:: /static/impact_function_table_unfiltered.png
-   :align:  center
+.. figure:: /static/user-docs/impact_function_table_unfiltered.*
+   :scale: 75 %
+   :align: center
+   :alt: unfiltered impact function table
+
+   Unfiltered impact function table
 
 When applying a filter set, the list of available functions that meet those
 criteria is updated as shown below.
 
-.. figure:: /static/impact_function_table_filtered.png
-   :align:  center
+.. figure:: /static/user-docs/impact_function_table_filtered.*
+   :scale: 75 %
+   :align: center
+   :alt: filtered impact function table
+
+   Filtered impact function table
 
 The impact function table is simply a browser to help you to familiarise
 yourself with the functions available. For the actual usage of the functions
@@ -57,7 +64,7 @@ Some impact functions can be configured before use. For example if you have
 a raster flood hazard layer where each pixel represents flood depth,
 you can set depth thresholds (low / medium / high)
 
-Creating impact functions
+Creating Impact Functions
 -------------------------
 
 If you feel there is an important impact function which is missing,

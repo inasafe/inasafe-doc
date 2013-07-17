@@ -16,7 +16,7 @@ are provided in |project_name|. After you have installed the |project_name|
 plugin, the dock panel will automatically load in QGIS and appear somewhere
 on your screen. It will look like this:
 
-.. figure:: /static/user-docs/dock-panel.png
+.. figure:: /static/user-docs/dock-panel.*
    :scale: 75 %
    :alt: Docking Panel
    :align: center
@@ -28,7 +28,7 @@ You can drag and drop the dock panel to reposition it in the user interface.
 For example, dragging the panel towards the right margin of the QGIS
 application will dock it to the right side of the screen.
 
-.. figure:: /static/user-docs/docked-right.png
+.. figure:: /static/user-docs/docked-right.*
    :scale: 50 %
    :alt: Dock on the right
    :align: center
@@ -97,14 +97,14 @@ result in it being listed under the :guilabel:`How many` combo.
 and **datatype** keywords to determine which **impact functions** will be
 listed in the :guilabel:`Might` combo.
 
-The results area
+The Results Area
 ----------------
 
 The :guilabel:`Results` area is used to display various useful feedback items
 to the user. Once an impact scenario has been run (see next section below),
 a summary table will be shown.
 
-.. figure:: /static/user-docs/scenario-results.png
+.. figure:: /static/user-docs/scenario-results.*
    :scale: 50 %
    :alt: Scenario results
    :align: center
@@ -119,7 +119,7 @@ When you select a **hazard** or **exposure** layer in the QGIS layers list,
 the keywords for that layer will be shown in the :guilabel:`Results` area,
 making it easy to understand what metadata exists for that layer.
 
-.. figure:: /static/user-docs/keywords-for-active-layer.png
+.. figure:: /static/user-docs/keywords-for-active-layer.*
    :scale: 50 %
    :alt: Dock on the right
    :align: center
@@ -133,7 +133,7 @@ example, when a suitable combination of **hazard**
 area will be updated to indicate that you can proceed to run the impact
 scenario calculation. The :menuselection:`Run` Button will be activated.
 
-.. figure:: /static/user-docs/status-ready.png
+.. figure:: /static/user-docs/status-ready.*
    :scale: 75 %
    :alt: Ready to run
    :align: center
@@ -144,32 +144,48 @@ Finally, the :guilabel:`Results` area is also used to display any error
 messages so that the user is informed as to what went wrong and why. You
 might want to scroll down a bit in the messaging window.
 
-.. figure:: /static/user-docs/error-display.png
+.. figure:: /static/user-docs/error-display.*
    :scale: 75 %
    :alt: Displaying Problems
    :align: center
 
    Showing error messages
 
+To have more space for the results available your Question is automatically
+hidden to make the results area as large as possible to display the results.
+If you want to have a look again what the question was that you formulated
+click on the :guilabel:`Show question form` button on top of the result area.
+
+.. figure:: /static/user-docs/show_question_form.*
+   :scale: 75 %
+   :alt: Show question form
+   :align: center
+
+   Show question form
+
+If you want to hide the question again to have more space to display the
+results again, just make the Layer you just calculated with |project_name|
+active again in the :guilabel:`Layers` list of QGIS.
+
 .. note:: At the bottom of error display you may see button like the following.
    If you click on this button, it will display a box which will contain
    useful diagnostic information which can be submitted as part of a bug
    report if you think the error was incorrect.
 
-   .. image:: /static/user-docs/toggle-traceback.png
-       :scale: 75 %
+   .. image:: /static/user-docs/toggle-traceback.*
+      :scale: 75 %
 
-The buttons area
+The Buttons Area
 ----------------
 
 The buttons area contains three buttons:
 
-.. figure:: /static/user-docs/buttons.png
-    :scale: 75 %
-    :align: center
-    :alt: Buttons area
+.. figure:: /static/user-docs/buttons.*
+   :scale: 75 %
+   :align: center
+   :alt: Buttons area
 
-    Buttons Area
+   Buttons Area
 
 * :guilabel:`Help` - click on this if you need context help, such as the
   document you are reading right now!
@@ -192,8 +208,12 @@ be noted that:
 * All clipped datasets will be converted (reprojected) to Geographic
   (EPSG:4326) coordinate reference system before analysis.
 
+.. _analysis_parameters:
 
+Setting Analysis Parameters
+---------------------------
 
-
+Depending on what Impact Function you have chosen you have different options
+to adjust the parameters of the your question you are asking.
 
 

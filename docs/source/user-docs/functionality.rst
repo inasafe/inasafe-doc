@@ -1,21 +1,20 @@
 .. _functionality:
 
-============================
-|project_name| Functionality
-============================
+=============
+Functionality
+=============
 
 This document describes |project_name|'s functionality in regard to what
-inputs are needed to carry on an analysis. At the highest level
-|project_name| will take a hazard layer (such as ground shaking,
-water depth or ash load) and an exposure layer (such as population density or
-building footprints) and combine them according to an impact function to
-produce an impact layer and a report.
-
+inputs are needed to carry on an analysis.
+At the highest level |project_name| will take a hazard layer (such as ground
+shaking, water depth or ash load) and an exposure layer (such as population
+density or building footprints) and combine them according to an impact
+function to produce an impact layer and a report.
 
 Hazard layers
 -------------
 
-The hazard layers supported are
+The supported hazard layers are:
 
 +-----------+-------------+-------------------+---------------+--------------------+--------------+
 |Hazard     |Spatial type |Hazard type        |Attribute name |Hazard units/fields |Parameters    |
@@ -34,7 +33,6 @@ The hazard layers supported are
 +-----------+-------------+-------------------+---------------+--------------------+--------------+
 |Tsunami    |Raster       |Depth              |N/A            |m                   |Threshold [m] |
 +-----------+-------------+-------------------+---------------+--------------------+--------------+
-
 
 Exposure layers
 ---------------

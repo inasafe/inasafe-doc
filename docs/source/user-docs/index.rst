@@ -13,14 +13,12 @@ system.
    getting_help
    dock
    functionality
-   keywords
    options
+   keywords
    impact_functions
    impact_functions_doc
    postprocessors
-   data_types
    using-qgis
    getting_involved
    writing_documentation
-   changelog
 

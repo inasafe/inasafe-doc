@@ -1,6 +1,5 @@
 .. _keywords-system:
 
-===============
 Keywords System
 ===============
 
@@ -14,24 +13,26 @@ The keywords system is used by the :ref:`impact_functions` to determine the
 nature of the input layers that have been passed to them.
 
 Each input GIS dataset used by |project_name| needs to have an accompanying
-keywords file. The purpose of the keywords file is to provide additional
-metadata needed by the impact functions. For example, the keywords file
-will indicate whether a given dataset should be treated as a *hazard* or an
-*impact* layer. It is also used to indicate the context of the layer (e.g.
-"it's a *flood* layer, it's an *earthquake* layer).
+keywords file.
+The purpose of the keywords file is to provide additional metadata needed by
+the impact functions.
+For example, the keywords file will indicate whether a given dataset should
+be treated as a *hazard* or an *impact* layer.
+It is also used to indicate the context of the layer (e.g. "it's a *flood*
+layer", "it's an *earthquake* layer").
 
 By convention and expectation, the keywords file should be named with the
 same base name of the GIS datasource it accompanies. For example a flood
-dataset saved as::
+dataset saved as:
 
-   c:\gisdata\flood.tif
+:file:`C:\\gisdata\\flood.tif`
 
-Would need to have an accompanying keywords file saved as::
+Would need to have an accompanying keywords file saved as:
 
-   c:\gisdata\flood.keywords
+:file:`C:\\gisdata\\flood.keywords`
 
-.. note:: We recommend to
-   **avoid using spaces** in your file names and file paths!
+.. note:: We recommend to **avoid using spaces** in your file names and file
+   paths!
 
 The |project_name| QGIS plugin provides an editor for these keywords.
 The purpose of this document is to describe the keywords editor and to
@@ -54,8 +55,8 @@ In this section we lay out the guidelines for keyword usage.
 Category
 ........
 
-Every dataset should have a category assigned to it. Category should be
-written in lower case.
+Every dataset should have a category assigned to it.
+Category should be written in lower case.
 
 .. table::
 
@@ -65,6 +66,7 @@ written in lower case.
    category  hazard
    category  exposure
    ========  ================
+
 
 Example keywords file entry::
 
@@ -86,6 +88,7 @@ Valid subcategories for category 'hazard':
    subcategory      flood
    subcategory      tephra
    ============  ================
+
 
 Where tephra is volcanic ashfall.
 
@@ -117,6 +120,7 @@ entry::
   subcategory: flood
   units: m
 
+
 In the above case there is a soft constraint to use a value for units of m,
 feet or wet/dry as defined by the table below because the subcategory is
 'flood'. The following are the allowed units which are dependent on the
@@ -133,6 +137,7 @@ Valid subcategories for subcategory 'tsunami' or subcategory 'flood':
    units         wet/dry
    units         feet
    ============  ================
+
 
 In the case where the units are m (meters) or feet, the input dataset should be
 a raster layer where each cell in the raster represents a depth in the units
@@ -151,6 +156,7 @@ Valid subcategories for subcategory 'volcano'
    ============  ================
    units         kg2/m2
    ============  ================
+
 
 In this case the dataset should be a raster layer where each cell represents
 the kilograms per meters squared of ash fall on that cell.
@@ -178,6 +184,7 @@ Valid densities for different subcategories
    building      datatype        sigab
    building      datatype        other
    ============ ============== =====================
+
 
 Assumptions
 -----------
@@ -207,7 +214,7 @@ The keywords editor graphical user interface
 
 The graphical user interface for keyword editing is divided into two parts:
 
-1.) **Minimal mode**: In this mode, only following options are provided:
+1) **Minimal mode**: In this mode, only following options are provided:
 
    * **Title** - a 'friendly' name for the dataset which will be displayed in
      reports, the user interface and so on.
@@ -220,8 +227,12 @@ The graphical user interface for keyword editing is divided into two parts:
 
 An example of the keywords editor in minimal mode is shown below.
 
-.. figure:: /static/keyword-editor-simple.jpeg
-   :align:   center
+.. figure:: /static/user-docs/keyword-editor-simple.*
+   :scale: 75 %
+   :align: center
+   :alt: Opened keyword editor window
+
+   Opened keyword editor window
 
 2) **Advanced mode**: In this mode several extra options are provided in
    addition to the minimal mode options. Unlike minimal mode, in advanced mode
@@ -243,10 +254,12 @@ An example of the keywords editor in minimal mode is shown below.
     by :kbd:`Control-clicking` on multiple keyword entries in the current
     keyword list and then clicking :guilabel:`Remove selected`
 
-An example of the keywords editor in advanced mode is shown below.
+.. figure:: /static/user-docs/keyword-editor-advanced.*
+   :scale: 75 %
+   :align: center
+   :alt: Advanced mode of keyword editor
 
-.. figure:: /static/keyword-editor-advanced.jpeg
-   :align:   center
+   Advanced mode of keyword editor
 
 Invoking the keywords editor
 ----------------------------
@@ -257,12 +270,16 @@ QGIS layers list, and then using the plugin menu to start the editor
 Alternatively, you may use the keywords editor icon on the
 plugins toolbar as illustrated below.
 
-.. figure:: /static/keyword-editor-icon.png
-   :align:   center
+.. figure:: /static/user-docs/keyword-editor-icon.*
+   :scale: 100 %
+   :align: center
+   :alt: Keyword editor icon
+
+   Keyword editor icon
 
 .. note:: If you have not selected a layer in the QGIS legend,
    the keyword editor icon in the toolbar and menus will
-   **be disabbled** and appear greyed out.
+   **be disabled** and appear greyed out.
 
 Saving your edits
 -----------------
@@ -274,8 +291,8 @@ Cancelling your edits
 ---------------------
 
 You can cancel your changes at any time by pressing the :guilabel:`Cancel`
-button. No changes will be written to disk and your .keywords file will
-remain in its original state.
+button. No changes will be written to disk and your :file:`*.keywords` file
+will remain in its original state.
 
 Keywords for remote and non-file based layers
 ---------------------------------------------
@@ -291,23 +308,33 @@ The options dialog can be launched by clicking on the |project_name| plugin
 toolbar's options icon (as shown below) or by doing
 :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`.
 
-.. figure:: /static/inasafe-options-icon.png
-   :align:   center
+.. figure:: /static/user-docs/inasafe-options-icon.*
+   :scale: 100 %
+   :align: center
+   :alt: Options Icon
+
+   Selecting the options icon
 
 When the options dialog is opened, the keywords database path can be specified
 using the :guilabel:`keyword cache for remote datasources` option as shown
 below.
 
-.. figure:: /static/options-keyword-db-path.png
-   :align:   center
+.. figure:: /static/user-docs/options-keyword-db-path.*
+   :scale: 100 %
+   :align: center
+   :alt: Path to options database
 
-.. note:: (1) Support for remote and non-file based layers was added in
-   |project_name| version 0.3.
-   (2) The database can be opened using a sqlite editor such as sqliteman,
-   but the data in the keywords table is not intended to be human readable
-   or edited. The table columns consist of an MD5 hash based on the URI for
-   the datasource (typically the database connection details) and a blob
-   which contains the keywords as a pickled python dictionary.
+   Path to options database
+
+.. note::
+
+   1. Support for remote and non-file based layers was added in |project_name|
+      version 0.3.
+   2. The database can be opened using a sqlite editor such as sqliteman,
+      but the data in the keywords table is not intended to be human readable
+      or edited. The table columns consist of an MD5 hash based on the URI for
+      the datasource (typically the database connection details) and a blob
+      which contains the keywords as a pickled python dictionary.
 
 See the :doc:`./options` document for more information about the |project_name|
 options dialog.
@@ -337,14 +364,14 @@ the keywords cache is also used, you should take care to use a common mount
 point or network share to access the data if you wish to successfully hit the
 cache with the layer's URI. For example you could have all users mount your
 data to the same place. Under Unix like operating systems this could look
-something like this::
+something like this:
 
-   /mnt/gisdata/jk.sqlite
+:file:`/mnt/gisdata/jk.sqlite`
 
 Under Windows you could always the same drive letter and path the to share
-e.g.::
+e.g.:
 
-   Z:\gisdata\jk.sqlite
+:file:`Z:\\gisdata\\jk.sqlite`
 
 Getting help
 ------------
@@ -352,4 +379,3 @@ Getting help
 If you need help using the keywords editor, you can click on the
 :guilabel:`Help` button at the bottom of the dialog and this page will be
 displayed.
-

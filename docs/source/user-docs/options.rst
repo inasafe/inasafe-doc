@@ -1,6 +1,5 @@
 .. _options-menu:
 
-=======
 Options
 =======
 
@@ -10,15 +9,25 @@ options dialog can be launched by clicking on the |project_name| plugin
 toolbar's options icon (as shown below) or by doing
 :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`.
 
-.. figure:: /static/inasafe-options-icon.png
-   :align:   center
+.. figure:: /static/user-docs/inasafe-options-icon.*
+   :scale: 100 %
+   :align: center
+   :alt: Options icon
+
+   Options icon
 
 Then the dialog will appear, looking something like this:
 
-.. figure:: /static/inasafe-options-dialog.png
-   :align:   center
+.. figure:: /static/user-docs/inasafe-options-dialog.*
+   :scale: 75 %
+   :align: center
+   :alt: Options dialog
 
-.. note:: You can click on the :guilabel:`Help` button at any time and it
+   Options dialog
+
+.. note::
+
+   You can click on the :guilabel:`Help` button at any time and it
    will open the help documentation browser to this page.
 
 The following options are available on the :guilabel:`Options Dialog`:
@@ -57,8 +66,9 @@ The following options are available on the :guilabel:`Options Dialog`:
   and to spot trends in issues people encounter. Please note the warning text
   below this option which is included here in full:
 
-.. note:: The above setting requires a QGIS restart to disable / enable.
-   Error messages and diagnostic information will be posted to
+.. note::
+   The above setting requires a QGIS restart to disable/enable. Error
+   messages and diagnostic information will be posted to
    http://sentry.linfiniti.com/inasafe-desktop/. Some institutions may not
    allow you to enable this feature - check with your network administrator
    if unsure. Although the data is submitted anonymously,
