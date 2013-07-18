@@ -48,7 +48,11 @@ You should see the |project_name| plugin appear in the list.
 Now tick the checkbox next to it to enable the plugin.
 
 .. figure:: /static/user-docs/plugin-manager.png
+   :scale: 75 %
    :align: center
+   :alt: Plugin Manager
+
+   Plugin Manager
 
 System Requirements
 -------------------

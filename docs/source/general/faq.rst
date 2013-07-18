@@ -6,7 +6,7 @@ Frequently asked Questions
 Here you will find a lot of Questions answered which often appear on the
 :ref:`google_group`.
 
-**Where can I download the latest version of |project_name|?**
+**Where can I download the latest version?**
 
 The latest version of |project_name| can be found following the
 :ref:`installation` Guide.
@@ -19,11 +19,11 @@ issue tracker is open to everyone, though you will first need to register a
 (free) account on GitHub to use it. You can find the GitHub self-registration
 page `here <https://github.com/signup/free>`_.
 
-**Do I need to pay to use |project_name|?**
+**Do I need to pay?**
 
 No, the software is completely Free and Open Source.
 
-**What license is |project_name| published under?**
+**What license is it published under?**
 
 |project_name| is published under the GPL version 2 license, the full text of
 which is available at
@@ -60,7 +60,7 @@ For vector data use ogr2ogr. For example from TM-3 zone 48.2::
 
    ogr2ogr -s_srs EPSG:23834 -t_srs EPSG:4326 <target>.shp <source>.shp
 
-**How do I get Open Street Map building data into |project_name|?**
+**How do I get Open Street Map building data?**
 
 For Indonesia, you can download latest collections at
 `data.kompetisiosm.org <http://data.kompetisiosm.org>`_. or you can add our
