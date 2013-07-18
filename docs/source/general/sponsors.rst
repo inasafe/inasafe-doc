@@ -3,12 +3,16 @@
 Sponsors
 ========
 
-We are proud to present our Sponsors:
+|project_name| is made possible and supported by:
 
-|AIFDR|
+The development of |project_name| has been supported by the
 
-|BNPB|
+* Indonesian Disaster Management Agency (|BNPB|) and
+* |AusAID|, through the
+* Australia-Indonesia Facility for Disaster Reduction (|AIFDR|),
+  as well as the
+* World Bank and the Global Facility for Disaster Reduction and Recovery
+  (|GFDRR|).
 
-|AusAID|
+|project_name| is a plugin built for the open source Quantum GIS application.
 
-|GFDRR|

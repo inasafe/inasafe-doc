@@ -62,7 +62,7 @@ In order to answer such questions, the |project_name| developers have built
 a number of **impact functions** that cover scenarios such as flood,
 tsunami, volcanic ash fall, earthquake and so on. You can read our impact
 function documentation to find out more information about the various
-:doc:`./impact_functions` implemented.
+:ref:`impact_functions` implemented.
 
 The formulation of these questions if carried out by loading layers into QGIS
 that represent either **hazard** or **exposure** scenarious.
@@ -214,6 +214,35 @@ Setting Analysis Parameters
 ---------------------------
 
 Depending on what Impact Function you have chosen you have different options
-to adjust the parameters of the your question you are asking.
+to adjust the parameters of the your question you are asking. Some Impact
+Functions have more configurable Options and some have less. Always depending
+on the Impact Function itself and the question you are going to ask.
 
+To open the Impact Function Configuration Dialog you need to click on the
+:guilabel:`...` Button next to the :guilabel:`Might` paragraph in the
+|project_name| dock.
 
+.. figure:: /static/user-docs/imp_func_conf1.*
+   :scale: 75 %
+   :align: center
+   :alt: Impact Function Configurator
+
+   Open the Impact Function Configurator
+
+You might have up to 3 tabs visible.
+
+ * Options: Depending in the Impact function you selected,
+   you can influence the result of your question here (the Impact Function)
+   by setting different initial values which are presented depending on the
+   function you choose (Some Impact functions might now be able to be
+   influenced).
+ * Postprocessors: Breaks down the different values inside the
+ * Minimum Needs: If it is something that effects for eg people it works out
+   the minimum needs of the people affected by the impact scenario. To use
+   that function you should have the necessary data available and calculate
+   this by using the :ref:`minimum_needs_tool`.
+
+.. figure:: /static/user-docs/imp_func_conf2.*
+   :scale: 75 %
+   :align: center
+   :alt: Impact Function Configurator

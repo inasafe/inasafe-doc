@@ -11,8 +11,8 @@ Obviously you want to see how it looks like first. For that purpose we
 prepared some nice :doc:`Screenshots <./screenshots>` for you.
 
 Unluckily |project_name| has some :ref:`known_issues` which you should know
-about first before using the Software. If you cannot find these issues
-happening anymore please report back so that someone can change the entries.
+about before using the Software.
+If you cannot find these issues happening anymore, please report back.
 
 .. toctree::
    :maxdepth: 2

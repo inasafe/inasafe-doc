@@ -1,4 +1,4 @@
-.. _options-menu:
+.. _options-toolbar:
 
 Options
 =======
@@ -9,7 +9,7 @@ options dialog can be launched by clicking on the |project_name| plugin
 toolbar's options icon (as shown below) or by doing
 :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`.
 
-.. figure:: /static/user-docs/inasafe-options-icon.*
+.. figure:: /static/user-docs/toolbar_options.*
    :scale: 100 %
    :align: center
    :alt: Options icon

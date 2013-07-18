@@ -30,7 +30,7 @@ well as where you can go for help.
 --------------------------
 
 The detailed description of the |project_name| Options can be found in the
-:ref:`options-menu` Section of the User Manual.
+:ref:`options-toolbar` Section of the User Manual.
 
 We encourage you to check (in addition to the default ones):
 

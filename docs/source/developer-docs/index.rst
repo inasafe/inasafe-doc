@@ -16,6 +16,7 @@ Developer Documentation Contents:
 .. toctree::
    :maxdepth: 3
 
+   overview
    platform_linux
    platform_windows
    platform_osx

@@ -13,6 +13,7 @@ system.
    getting_help
    dock
    functionality
+   toolbar
    options
    keywords
    impact_functions

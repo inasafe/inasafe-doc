@@ -2,6 +2,7 @@
 
 Getting help
 ============
+
 Here you can find the places to go first looking for help.
 
 .. _google_group:

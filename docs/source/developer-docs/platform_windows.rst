@@ -14,7 +14,7 @@ Setup msysgit
 To check out the code for development, you first need to install a git client.
 We cover msysgit here, but you can also use
 `tortoisegit <http://code.google.com/p/tortoisegit/downloads/list>`_
-or `SourceTree <http://sourcetreeapp.com/>`_ and there is even a Windows github 
+or `SourceTree <http://sourcetreeapp.com/>`_ and there is even a Windows github
 client `GitHub Windows <http://windows.github.com/>`_ .
 if you prefer.
 
@@ -28,32 +28,6 @@ is good enough. For example at the time of writing I downloaded
 Once the file is downloaded, run it and respond to the installer prompts as
 illustrated below:
 
-.. figure:: /static/msysgit-step1.jpg
-   :align:   center
-
-.. figure:: /static/msysgit-step2.jpg
-   :align:   center
-
-.. figure:: /static/msysgit-step3.jpg
-   :align:   center
-
-.. figure:: /static/msysgit-step4.jpg
-   :align:   center
-
-.. figure:: /static/msysgit-step5.jpg
-   :align:   center
-
-.. figure:: /static/msysgit-step6.jpg
-   :align:   center
-
-.. figure:: /static/msysgit-step7.jpg
-   :align:   center
-
-.. figure:: /static/msysgit-step8.jpg
-   :align:   center
-
-.. figure:: /static/msysgit-step9.jpg
-   :align:   center
 
 Check out the code and the test data
 ------------------------------------
@@ -65,10 +39,6 @@ Clone the code repository
 .........................
 
 First open a GIT bash prompt as illustrated below:
-
-.. figure:: /static/msysgit-step10.jpg
-   :align:   center
-
 
 The repository can now be cloned by issuing the commands listed below.::
 
@@ -99,8 +69,6 @@ Checkout the test data
 
 To check out the test data from git, first open a GIT bash prompt as illustrated below:
 
-.. figure:: /static/msysgit-step10.jpg
-   :align:   center
 
 The repository can now be cloned by issuing the commands listed below. (Already completed in previous step)::
 
