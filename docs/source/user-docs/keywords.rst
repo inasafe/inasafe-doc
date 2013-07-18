@@ -9,8 +9,8 @@ system.
 Purpose
 -------
 
-The keywords system is used by the :ref:`impact_functions` to determine the
-nature of the input layers that have been passed to them.
+The keywords system is used by the :ref:`Impact Functions <impact_functions>`
+to determine the nature of the input layers that have been passed to them.
 
 Each input GIS dataset used by |project_name| needs to have an accompanying
 keywords file.

@@ -71,7 +71,7 @@ def generate_documentation(metadata, doc_strings):
                 if my_key == 'detailed_description':
                     continue
                 my_pretty_key = pretty_key(my_key)
-                rst_content += ('** %s ** : \n' % my_pretty_key)
+                rst_content += ('**%s**: \n' % my_pretty_key)
                 if my_value is None or len(my_value) == 0:
                     rst_content += 'No documentation found'
                 else:

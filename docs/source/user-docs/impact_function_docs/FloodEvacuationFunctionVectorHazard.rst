@@ -8,7 +8,7 @@ Overview
 Flood Evacuation Function Vector Hazard
 
 **Author**: 
-|AIFDR|, |AusAID|
+AIFDR
 
 **Rating**: 
 4
@@ -29,20 +29,21 @@ A hazard vector layer which has attribute affected the value is either 1 or 0
 An exposure raster layer where each cell represent population count.
 
 **Output**: 
-Vector layer contains population affected and the minimumneeds based on evacuation percentage.
+Vector layer contains population affected and the minimum needs based on evacuation percentage.
 
 Details
 -------
 
-The population subject to inundation is determined whether inan area which affected or not. You can also set an evacuationpercentage to calculate how many percent of the total populationaffected to be evacuated. This number will be used to estimateneeds based on |BNPB| Perka 7/2008 minimum bantuan.
+The population subject to inundation is determined whether in an area which affected or not. You can also set an evacuation percentage to calculate how many percent of the total population affected to be evacuated. This number will be used to estimate needs based on BNPB Perka 7/2008 minimum bantuan.
 
 Docstring
 ----------
 
 Impact function for vector flood evacuation
 
-    :author |AIFDR|, |AusAID|
+    :author AIFDR
     :rating 4
+
     :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami'] and                     layertype=='vector'
 
     :param requires category=='exposure' and                     subcategory=='population' and                     layertype=='raster'
