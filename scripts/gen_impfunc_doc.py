@@ -13,44 +13,55 @@ __copyright__ += 'Disaster Reduction'
 
 import os
 from shutil import rmtree
-from safe.api import (get_documentation,
-                      get_plugins,
-                      is_function_enabled,
-                      get_doc_string)
-from gen_rst_script import (create_dirs, write_rst_file, insafe_dir_path)
+from safe.api import (
+    get_metadata,
+    get_plugins,
+    is_function_enabled,
+    get_doc_string)
+from gen_rst_script import (create_dirs, write_rst_file, get_inasafe_code_path)
 from third_party.odict import OrderedDict
 
 doc_dir = os.path.join('docs', 'source', 'user-docs')
 impact_func_doc_dir = 'impact_function_docs'
 
 
-def pretty_key(myKey):
-    """Return a pretty key for documentation. Just remove underscore and
-    capitalize
-    :param myKey:string
-    :return: a pretty one
+def pretty_key(key):
+    """Pretty key for documentation - removes underscore and capitalize.
+
+    :param key: Key to format.
+    :type key: str
+
+    :returns: A nicely formatted string.
+    :rtype: str
     """
-    MyPrettyKey = myKey.replace('_', ' ').title()
-    return MyPrettyKey
+    pretty_key = key.replace('_', ' ').title()
+    return pretty_key
 
 
-def gen_rst_doc(impfunc_doc, impfunc_doc_str):
-    """Generate .rst file
-    :param
-        impfunc_doc : dictionary that contains documentation
-    :return
-        None
+def gen_rst_doc(metadata, doc_strings):
+    """Generates an .rst file for an impact function.
+
+    The .rst file will contain the docstring and the standard metadata fields
+    for the impact function.
+
+    :param metadata: Key value pairs containing function documentation.
+    :type metadata: dict
+
+    :param doc_strings: Key Value Pair where the key is an impact function
+        name and the value is the docstring for that impact function.
+    :type doc_strings: dict
     """
-    impact_func_doc_path = os.path.join(insafe_dir_path, doc_dir,
-                                        impact_func_doc_dir)
-    for myFuncName, myDoc in impfunc_doc.items():
-        content_rst = myFuncName
-        content_rst += '\n' + '=' * len(myFuncName) + '\n\n'
+    impact_func_doc_path = os.path.join(
+        get_inasafe_code_path(), doc_dir, impact_func_doc_dir)
+
+    for name, docstring in metadata.items():
+        content_rst = name
+        content_rst += '\n' + '=' * len(name) + '\n\n'
         # provide documentation
         content_rst += 'Overview'
         content_rst += '\n' + '-' * len('Overview') + '\n\n'
-        if type(myDoc) is dict or type(myDoc) is OrderedDict:
-            for mykey, myValue in myDoc.items():
+        if type(docstring) is dict or type(docstring) is OrderedDict:
+            for mykey, myValue in docstring.items():
                 if mykey == 'detailed_description':
                     continue
                 my_pretty_key = pretty_key(mykey)
@@ -62,21 +73,23 @@ def gen_rst_doc(impfunc_doc, impfunc_doc_str):
                 content_rst += '\n\n'
             content_rst += 'Details'
             content_rst += '\n' + '-' * len('Details') + '\n\n'
-            if ('detailed_description' in myDoc.keys()) and \
-                    (len(myDoc['detailed_description']) > 0):
-                content_rst += myDoc['detailed_description']
+            if ('detailed_description' in docstring.keys()) and \
+                    (len(docstring['detailed_description']) > 0):
+                content_rst += docstring['detailed_description']
             else:
                 content_rst += 'No documentation found'
         else:
             content_rst += 'No documentation found'
-        if myFuncName in impfunc_doc_str:
-            my_doc_str = impfunc_doc_str[myFuncName]
+        if name in doc_strings:
+            my_doc_str = doc_strings[name]
             content_rst += '\n\nDocstring'
             content_rst += '\n' + '-' * len('Doc String') + '\n\n'
             content_rst += my_doc_str
 
-        write_rst_file(impact_func_doc_path, myFuncName.replace(' ', ''),
-                        content_rst)
+        write_rst_file(
+            impact_func_doc_path,
+            name.replace(' ', ''),
+            content_rst)
 
 
 def gen_impact_func_index(list_unique_identifier=None):
@@ -90,42 +103,44 @@ def gen_impact_func_index(list_unique_identifier=None):
     content_rst += title_page + '\n'
     content_rst += '=' * len(title_page) + '\n\n'
 
-    content_rst += ('This document explains the purpose of impact functions '
-                    'and lists the different available impact function and '
-                    'the requirements each has to be used effectively.\n\n')
+    content_rst += (
+        'This document explains the purpose of impact functions and lists the '
+        'different available impact function and the requirements each has to '
+        'be used effectively.\n\n')
 
     content_rst += '.. toctree::\n'
     content_rst += '   :maxdepth: 2\n\n'
 
     # list impact function
-    for ui in list_unique_identifier:
-        content_rst += '   ' + impact_func_doc_dir + os.sep + \
-                       ui.replace(' ', '') + '\n'
+    for identifier in list_unique_identifier:
+        content_rst += ('   %s%s%s\n' % (
+            impact_func_doc_dir, os.sep, identifier.replace(' ', '')))
 
-    write_rst_file(os.path.join(insafe_dir_path, doc_dir),
-                    'impact_functions_doc',
-                    content_rst)
+    write_rst_file(
+        os.path.join(get_inasafe_code_path(), doc_dir),
+        'impact_functions_doc',
+        content_rst)
 
 
 if __name__ == "__main__":
     # remove old files, in case you disabled or remove impact function
-    impact_func_doc_dir_path = (os.path.join(insafe_dir_path, doc_dir,
-                                             impact_func_doc_dir))
+    impact_func_doc_dir_path = (
+        os.path.join(get_inasafe_code_path(), doc_dir, impact_func_doc_dir))
     if os.path.exists(impact_func_doc_dir_path):
         rmtree(impact_func_doc_dir_path)
 
-    impfunc_doc = {}
-    impfunc_doc_str = {}
+    metadata = {}
+    doc_strings = {}
     # Get all impact functions
     plugins_dict = get_plugins()
     for myKey, myFunc in plugins_dict.iteritems():
         if not is_function_enabled(myFunc):
             continue
-        impfunc_doc[myKey] = get_documentation(myKey)
-        impfunc_doc_str[myKey] = get_doc_string(myFunc)
+        metadata[myKey] = get_metadata(myKey)
+        doc_strings[myKey] = get_doc_string(myFunc)
     list_unique_identifier = [x['unique_identifier']
-                              for x in impfunc_doc.values()]
+                              for x in metadata.values()]
     gen_impact_func_index(list_unique_identifier)
 
     create_dirs(impact_func_doc_dir_path)
-    gen_rst_doc(impfunc_doc, impfunc_doc_str)
+    gen_rst_doc(metadata, doc_strings)
