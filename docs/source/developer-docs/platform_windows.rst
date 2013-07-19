@@ -1,4 +1,5 @@
-============================
+.. _development_under_windows:
+
 Development under MS Windows
 ============================
 

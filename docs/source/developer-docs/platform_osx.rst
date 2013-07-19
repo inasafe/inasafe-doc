@@ -1,4 +1,5 @@
-=====================
+.. _development_under_osx:
+
 Development under OSX
 =====================
 
@@ -12,7 +13,7 @@ Setup GitHub for OSX
 .....................
 
 To check out the code for development, you first need to install a git client.
-You can get detailed instructions including a native OSX client here: 
+You can get detailed instructions including a native OSX client here:
 https://help.github.com/articles/set-up-git#platform-mac
 
 
@@ -25,7 +26,7 @@ using the tools we installed above.
 Clone the code repository
 .........................
 
-First open a bash prompt. The repository can now be cloned by issuing the 
+First open a bash prompt. The repository can now be cloned by issuing the
 commands listed below.::
 
    cd ~
@@ -85,7 +86,7 @@ OSX Caveats
 Our primary development platform is Linux (specifically Ubuntu Linux). Some
 features of the development environment - particularly the **Make** tools do not
 run on OSX without first installing XCode and the XCode command line tools. Even with
-make installed the OSX environment does not yes have feature parity with the 
+make installed the OSX environment does not yes have feature parity with the
 Linux platform.
 
 .. _osx-commandline_setup:
@@ -99,8 +100,8 @@ Create a shell launcher
 .......................
 
 A command line environment is useful for running unit tests and for developing
-and testing standalone scripts written to use the |project_name| libraries. Under 
-OSX you need to ensure that your environment is properly configured in order to 
+and testing standalone scripts written to use the |project_name| libraries. Under
+OSX you need to ensure that your environment is properly configured in order to
 find QGIS and its libraries.
 
 We have provided scripts that do this as :file:`runmake-osx.sh`,
@@ -109,12 +110,12 @@ We have provided scripts that do this as :file:`runmake-osx.sh`,
 .. note:: These scripts may need some adjustment if you are using newer versions
     of GDAL.
 
-The first two scripts mentioned above can be used to run make commands (e.g. 
+The first two scripts mentioned above can be used to run make commands (e.g.
 ```./runmake-osx.sh pylint``` will do the pylint checks). The last script can be
 used to add the QGIS options needed to use QGIS python bindings to your python path
 like this::
 
-    source runshell-osx.sh 
+    source runshell-osx.sh
 
 Which should produce output like this::
 
@@ -125,7 +126,7 @@ Which should produce output like this::
 Verifying your system path
 ..........................
 
-To verify your path, launch your python shell (by typing ```python``` at the prompt). 
+To verify your path, launch your python shell (by typing ```python``` at the prompt).
 Now enter the follow simple script which will do a simple test to see if you can import
 the QGIS libs::
 
@@ -178,7 +179,7 @@ PyCharm Setup
 -------------
 
 `PyCharm <http://www.jetbrains.com/pycharm/>`_ is our preferred and supported
-IDE for InaSAFE. Although the software is not free, as InaSAFE is an open source 
+IDE for InaSAFE. Although the software is not free, as InaSAFE is an open source
 project, InaSAFE developers may use PyCharm without charge - please contact
 the project team for details on how to activate your copy.
 
@@ -190,8 +191,8 @@ simply be a question of opening the inasafe-dev directory that you checked out
 earlier and making the following small configuration changes:
 
 
-1) Create a new python environment profile in 
-:menuselection:`Settings --> Project Interpreter --> Python Interpreters` called 
+1) Create a new python environment profile in
+:menuselection:`Settings --> Project Interpreter --> Python Interpreters` called
 :kbd:`Python with QGIS 1.8 libs` and add the following paths to it::
 
   /Applications/QGIS.app/Contents/Resources/python
@@ -200,7 +201,7 @@ earlier and making the following small configuration changes:
 2) Edit your unittest defaults and ensure the key / value pairs below are added.
 :menuselection:`Run --> Edit Configurations --> Defaults --> Python Tests --> Unit tests`
 and click the ellipses (...) next to :guilabel:`Environment Variables` ::
-  
+
   PYTHONPATH : /Applications/QGIS.app/Contents/Resources/python
   QGIS_PREFIX_PATH : /Applications/QGIS.app/contents/MacOS
   QGIS_PATH : /Applications/QGIS.app

@@ -17,6 +17,7 @@ Developer Documentation Contents:
    :maxdepth: 3
 
    overview
+   fabgis
    platform_linux
    platform_windows
    platform_osx

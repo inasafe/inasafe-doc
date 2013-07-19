@@ -4,11 +4,10 @@ Building the Documentation
 ==========================
 
 Building the documentation means that you must have inasafe-doc AND inasafe
-cloned to your local computer because inasafe-doc takes some API Information
-out of inasafe-dev to Produce the API Documentation.
+(-dev) cloned to your local computer because inasafe-doc takes some API
+Information out of inasafe-dev to Produce the API Documentation.
 
-To do that you only have to enter this
-::
+To do that you only have to enter this on the command line of a terminal::
 
   mkdir -p $HOME/dev/python
   cd $HOME/dev/python
@@ -16,12 +15,35 @@ To do that you only have to enter this
   https://github.com/AIFDR/inasafe-doc.git inasafe-doc
 
 You have to follow this directory structure because some scripts building the
-documentation assume to have the source code available under this structure.
+documentation assume to have the source code available in this structure.
 
 Now that you have the source code available we need to make sure to have all
 packages that are needed to build the documentation.
 
-UPDATE PACKAGE DEPENDENCIES
+All of the Documentation is written in reStructuredText (.rst) files.
+You can find an overview about rst at their webpage:
+http://docutils.sourceforge.net/rst.html
+
+Obviously you have to install docutils and as we heavily rely on `Sphinx
+<http://sphinx-doc.org/>`_ for compiling our Documentation you will also need
+Sphinx.
+
+By the time of writing the minimum version numbers that you have to use are:
+
+* docutils: docutils (0.10)
+* Sphinx: Sphinx (1.2b1)
+
+updated versions of docutils and Sphinx can be easily installed with `pip
+<https://pypi.python.org/pypi/pip>`_ by doing:
+
+:command:`pip install --upgrade docutils`
+and
+:command:`pip install --upgrade Sphinx`
+
+at the command line.
+
+pip itself should be available as a package in linux (depending on the
+distribution you use).
 
 pre_translate.sh
 git commit new translation files
@@ -34,11 +56,10 @@ Building documentation locally
 ..............................
 
 To be up to date with transifex and local translations and to be able to look
-at your newly created Documentation with a browser locally on your filesystem
+at your newly created Documentation locally on your filesystem with a browser
 you should basically follow this workflow:
 
-Inside the inasafe-doc directory do
-::
+Inside the inasafe-doc directory do::
 
   tx pull           (for pulling new translations)
   git commit        to update the local translations with that from transifex

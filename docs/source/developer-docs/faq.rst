@@ -1,9 +1,9 @@
-==========================
+.. _faq_developer:
+
 Frequently Asked Questions
 ==========================
 
-How does the documentation work?
---------------------------------
+**How does the documentation work?**
 
 The |project_name| documentation files are written using the RST format
 (`quickreference guide <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`_)
@@ -29,8 +29,7 @@ The RST files are used for two products:
      service hook for ReadTheDocs at github:
      https://github.com/AIFDR/inasafe/admin/hooks
 
-How do I replace a string across multiple files
------------------------------------------------
+**How do I replace a string across multiple files**
 
 To replace string layer_type, say, with layertype across all python files
 in project, do::
@@ -49,10 +48,7 @@ Using rpl is much simpler, just do::
 For details on the find command see
 `this article <http://rushi.wordpress.com/2008/08/05/find-replace-across-multiple-files-in-linux/>`_.
 
-.. _faq-revision-label:
-
-How did you embed the git version SHA1 into each .py file?
-----------------------------------------------------------
+**How did you embed the git version SHA1 into each .py file?**
 
 The format was derived using the
 `git log format tag <http://schacon.github.com/git/git-log.html>`_.
@@ -83,8 +79,7 @@ You can verify SHA1 replacement has been made by doing::
 The deployment of version tagged files is automated by using the
 :file:`scripts\release.sh` script.
 
-How do you profile code?
-------------------------
+**How do you profile code?**
 ::
 
   sudo apt-get install python-profiler
@@ -100,8 +95,7 @@ and
 See also
 http://stackoverflow.com/questions/582336/how-can-you-profile-a-python-script
 
-Why do I got 99999999 instead of NaN when I saved vector files?
----------------------------------------------------------------
+**Why do I get 99999999 instead of NaN when I saved vector files?**
 
 |project_name| needs to convert NaN to 99999999 or more specifically 8 digits
 of 9 because NaN is not intepreted correclty on Windows. You can read more

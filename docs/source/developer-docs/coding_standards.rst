@@ -101,10 +101,9 @@ Please observe the following coding standards when working on the codebase:
     __copyright__ += 'Disaster Reduction'
 
 
-.. note:: Please see
-   :ref:`faq-revision-label` for details on how the
-   revision tag is replaced with the SHA1 for the file when the release
-   packages are made.
+.. note::
+   Please see :ref:`faq_developer` for details on how the revision tag
+   is replaced with the SHA1 for the file when the release packages are made.
 
 Doc strings
 ...........
