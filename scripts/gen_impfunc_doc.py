@@ -23,7 +23,8 @@ from safe.api import (
     get_plugins,
     is_function_enabled,
     get_doc_string)
-from gen_rst_script import (create_dirs, write_rst_file, get_inasafe_code_path)
+from gen_rst_script import (create_dirs, write_rst_file,
+                            get_inasafe_documentation_path)
 from third_party.odict import OrderedDict
 
 doc_dir = os.path.join('docs', 'source', 'user-docs')
@@ -57,7 +58,7 @@ def generate_documentation(metadata, doc_strings):
     :type doc_strings: dict
     """
     impact_func_doc_path = os.path.join(
-        get_inasafe_code_path(), doc_dir, impact_func_doc_dir)
+        get_inasafe_documentation_path(), doc_dir, impact_func_doc_dir)
 
     for name, docstring in metadata.items():
         rst_content = name
@@ -127,7 +128,7 @@ def create_index(function_ids=None):
         content_rst += ('   %s%s%s\n' % (
             impact_func_doc_dir, os.sep, identifier.replace(' ', '')))
 
-    index_path = os.path.join(get_inasafe_code_path(), doc_dir)
+    index_path = os.path.join(get_inasafe_documentation_path(), doc_dir)
     write_rst_file(
         index_path,
         'impact_functions_doc',
@@ -137,7 +138,9 @@ def create_index(function_ids=None):
 if __name__ == "__main__":
     # remove old files, in case you disabled or remove impact function
     documentation_path = (
-        os.path.join(get_inasafe_code_path(), doc_dir, impact_func_doc_dir))
+        os.path.join(get_inasafe_documentation_path(), doc_dir,
+                     impact_func_doc_dir))
+
     if os.path.exists(documentation_path):
         rmtree(documentation_path)
 

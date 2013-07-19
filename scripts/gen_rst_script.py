@@ -157,6 +157,20 @@ def get_inasafe_code_path():
     return inasafe_code_path
 
 
+def get_inasafe_documentation_path():
+    # determine the path to inasafe code using default or argv as needed
+    inasafe_code_path = os.path.abspath(
+        os.path.join(os.path.dirname(__file__), '..', '..', 'inasafe-doc'))
+    if len(sys.argv) > 2:
+        sys.exit(
+            'Usage:\n%s [optional path to inasafe directory]\n'
+            % (sys.argv[0]))
+    elif len(sys.argv) == 2:
+        print('Building rst files from %s' % sys.argv[1])
+        inasafe_code_path = os.path.abspath(sys.argv[1])
+
+    return inasafe_code_path
+
 def clean_api_docs_dirs():
     # remove old api-docs if it exists and recreate it
     inasafe_docs_path = os.path.abspath(
