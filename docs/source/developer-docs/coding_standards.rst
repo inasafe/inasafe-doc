@@ -105,6 +105,26 @@ Please observe the following coding standards when working on the codebase:
    Please see :ref:`faq_developer` for details on how the revision tag
    is replaced with the SHA1 for the file when the release packages are made.
 
+Qt Guidelines
+.............
+
+Don't use old style signal/slot connectors::
+
+    myButton = self.pbnHelp
+    QtCore.QObject.connect(
+        myButton, QtCore.SIGNAL('clicked()'), self.show_help)
+
+Use new style connectors::
+
+    self.pbnHelp.clicked.connect(self.show_help)
+
+Also in some cases using the Qt API will lead you into conflict with our PEP8
+naming conventions for methods and variables. This is unavoidable but should
+be used only in these specific instances e.g.::
+
+    def on_foo_indexChanged():
+        pass
+
 Doc strings
 ...........
 
