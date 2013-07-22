@@ -278,6 +278,9 @@ pdf_compressed = True
 # If false, no coverpage is generated.
 #pdf_use_coverpage = True
 
+html_show_sphinx = False
+html_show_copyright = False
+
 locale_dirs = ['../i18n']
 
 # create 1 po file per rst file instead of one po file per module

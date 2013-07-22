@@ -79,5 +79,3 @@ management system mentioned above.
    comprehensive regression testing system. We have this requirement in place
    to ensure a good experience for our users and to ensure that users can
    have confidence in the results produced by |project_name|.
-
-

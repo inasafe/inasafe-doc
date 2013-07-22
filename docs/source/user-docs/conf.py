@@ -57,7 +57,7 @@ rst_epilog = """
 .. _GFDRR: http://www.gfdrr.org/
 """
 html_theme = 'inasafe-theme'
-html_theme_path = ['../../themes']
+html_theme_path = ['../../themes_application_docs']
 html_short_title = 'InaSAFE Docs'
 html_favicon = 'favicon.ico'
 html_static_path = ['static']
