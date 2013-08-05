@@ -4,12 +4,13 @@
 
 import os
 from fabric.api import *
-from datetime import datetime
 from fabric.contrib.files import contains, exists, append, sed
 import fabtools
 from fabtools import require
-from fabgis import fabgis
+# noinspection PyUnresolvedReferences
+from fabgis.qgis import install_qgis1_8
 # Don't remove even though its unused
+# noinspection PyUnresolvedReferences
 from fabtools.vagrant import vagrant
 
 # Usage for localhost commands:
