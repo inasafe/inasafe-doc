@@ -9,6 +9,10 @@ import fabtools
 from fabtools import require
 # noinspection PyUnresolvedReferences
 from fabgis.qgis import install_qgis1_8
+from fabgis.jenkins import jenkins_deploy_website, install_jenkins
+from fabgis.utilities import replace_tokens, update_git_checkout
+from fabgis.inasafe import setup_inasafe
+from fabgis.sphinx import setup_latex
 # Don't remove even though its unused
 # noinspection PyUnresolvedReferences
 from fabtools.vagrant import vagrant
@@ -101,19 +105,19 @@ def build_docs(branch='master'):
     .. note:: Using the branch option will not work for branches older than 1.1
     """
     _setup_env()
-    fabgis.setup_inasafe()
+    setup_inasafe()
     # Needed for when running on headless servers
     fabtools.require.deb.package('xvfb')
-    fabgis.install_qgis1_8()
+    install_qgis1_8()
 
     sudo('pip install Sphinx')
 
-    fabgis.update_git_checkout(
+    update_git_checkout(
         code_path=env.repo_path,
         url=env.git_url,
         repo_alias=env.repo_alias,
         branch=branch)
-    fabgis.setup_latex()
+    setup_latex()
 
     dir_name = os.path.join(env.repo_path, env.repo_alias)
     with cd(dir_name):
@@ -169,7 +173,7 @@ def setup_docs_webpage(branch='master'):
             'DOCUMENTROOT': webdir,  # Content root .e.g. /var/www
             'SITENAME': 'inasafe-docs',  # Choosen name of jenkins 'root'
         }
-        fabgis.replace_tokens(inasafe_docs_apache_conf_template, my_tokens)
+        replace_tokens(inasafe_docs_apache_conf_template, my_tokens)
         sudo('rm *.templ')
 
     with cd(code_path):
@@ -206,8 +210,8 @@ def setup_jenkins(use_upstream_repo=True, branch='master'):
     fabtools.require.deb.package('pyflakes')
     fabtools.require.deb.package('sloccount')
 
-    fabgis.jenkins_deploy_website(use_upstream_repo=use_upstream_repo)
-    fabgis.install_jenkins(use_upstream_repo)
+    jenkins_deploy_website(use_upstream_repo=use_upstream_repo)
+    install_jenkins(use_upstream_repo)
     setup_jenkins_jobs(branch=branch)
 
 
