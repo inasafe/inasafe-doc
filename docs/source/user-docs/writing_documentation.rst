@@ -57,6 +57,8 @@ Here are some common useful tags::
    Section to cross-reference   Like it is here.
    --------------------------
 
+   :ref:`title <my-reference-label>` Same as above except using the Title and
+                                     not the referenced headline.
 
    :doc:`../user-docs/filename` referencing an internal file
 

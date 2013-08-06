@@ -18,10 +18,10 @@ Toggle |project_name| Dock
 
 This button enables and hides the |project_name| dock. After enabling the
 dock you are able to move it around your screen. Dock and undock it wherever
-you want it to have and keep it even as a separated window.
+you want to have it and keep it even as a separated window.
 
 You can find more Information about the dock itself in the
-:ref:`using_the_plugin` section.
+:ref:`toolbar-dock` section.
 
 |project_name| Keyword Editor
 -----------------------------
@@ -34,8 +34,8 @@ You can find more Information about the dock itself in the
    Keyword Editor
 
 The Keyword Editor button opens the Keyword editor which is described in
-:ref:`keywords-system`. Basically it enables you to easily edit the Keywords
-needed for |project_name| to create useful output.
+:ref:`toolbar-keywords`. Basically it enables you to easily edit the
+Keywords needed for |project_name| to create useful output.
 
 Reset Dock
 ----------
@@ -61,7 +61,7 @@ button just resets/reloads the dock to its initial state.
    |project_name| Options
 
 This button opens the Options window which is described in
-:ref:`options-toolbar`
+:ref:`toolbar-options`
 
 |project_name| Impact Functions Browser
 ---------------------------------------
@@ -73,9 +73,11 @@ This button opens the Options window which is described in
 
    |project_name| Impact Functions Browser
 
-This button opens the Impact Function Browser. It basically enables you to
-filter and browse impact functions that are available in |project_name|. More
-information about that topic can be found in :ref:`impact_functions`.
+This button opens the Impact Function Browser.
+
+It basically enables you to filter and browse impact functions that are
+available in |project_name|. More information about that topic can be found
+in :ref:`impact_functions`.
 
 .. _minimum_needs_tool:
 
@@ -92,15 +94,15 @@ information about that topic can be found in :ref:`impact_functions`.
 This tool will calculated minimum needs for evacuated people.
 To use this tool effectively:
 
-Load a polygon layer in QGIS.
-Typically the layer will represent administrative districts where people have
-gone to an evacuation center.
-Ensure that the layer has an INTEGER attribute for the number of displaced
-people associated with each feature.
-Use the pick lists below to select the layer and the population field and
-then press 'OK'.
-A new layer will be added to QGIS after the calculation is complete. The
-layer will contain the minimum needs per district/administrative boundary.
+* Load a polygon layer in QGIS.
+  Typically the layer will represent administrative districts where people have
+  gone to an evacuation center.
+* Ensure that the layer has an INTEGER attribute for the number of displaced
+  people associated with each feature.
+* Use the pick lists below to select the layer and the population field and
+  then press 'OK'.
+* A new layer will be added to QGIS after the calculation is complete. The
+  layer will contain the minimum needs per district/administrative boundary.
 
 |project_name| Converter
 ------------------------

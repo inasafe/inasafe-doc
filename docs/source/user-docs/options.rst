@@ -1,4 +1,4 @@
-.. _options-toolbar:
+.. _toolbar-options:
 
 Options
 =======
@@ -82,7 +82,7 @@ The following options are available on the :guilabel:`Options Dialog`:
   population ratio used por generating Gender breakdowns
 * :guilabel:`Keyword cache for remote datasources` : This option is used to
   determine where keywords are stored for datasets where it is not possible
-  to write them into a .keywords file. See :ref:`keywords-system` in the
+  to write them into a .keywords file. See :ref:`toolbar-keywords` in the
   |project_name| User-Manual for more information on the keywords system.
 * :guilabel:`Run analysis in separate thread (experimental)` : This option
   cause the analysis to be run in its own thread.

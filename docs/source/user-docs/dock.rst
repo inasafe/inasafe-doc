@@ -1,7 +1,7 @@
-.. _using_the_plugin:
+.. _toolbar-dock:
 
-Using the Plugin
-================
+Using |project_name|
+====================
 
 This document describes the usage of the |project_name| 'dock panel' - which
 is the main interface for running risk scenarios within the Quantum GIS
