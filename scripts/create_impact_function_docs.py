@@ -23,7 +23,7 @@ from safe.api import (
     get_plugins,
     is_function_enabled,
     get_doc_string)
-from gen_rst_script import (create_dirs, write_rst_file,
+from create_api_docs import (create_dirs, write_rst_file,
                             get_inasafe_documentation_path)
 from third_party.odict import OrderedDict
 

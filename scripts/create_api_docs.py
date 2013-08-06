@@ -184,7 +184,9 @@ def clean_api_docs_dirs():
 
 def create_api_docs(code_path, inasafe_docs_path, max_depth=2):
     """Function for generating .rst file for all .py file in dir_path folder.
-        inasafe_code_path : path of the folder
+    :param code_path:
+    :param inasafe_docs_path: path of the folder
+    :param max_depth:
     """
     base_path = os.path.split(code_path)[0]
     for package, subpackages, candidate_files in os.walk(code_path):
