@@ -96,16 +96,18 @@ Here are some common useful tags::
    +-----------------------+-----------------------+
    | Symbol                | Meaning               |
    +=======================+=======================+
-   | .. image:: tent.png   | Campground            |
+   | .. image:: tent.*     | Campground            |
    +-----------------------+-----------------------+
-   | .. image:: waves.png  | Lake                  |
+   | .. image:: waves.*    | Lake                  |
    +-----------------------+-----------------------+
-   | .. image:: peak.png   | Mountain              |
+   | .. image:: peak.*     | Mountain              |
    +-----------------------+-----------------------+
 
+    figure and images are easily exchangeable when using * instead of jpg or
+    png. In that way the Pictures can be exchanged to a new format without
+    changing the source code.
 
-
-    .. figure:: picture.png
+    .. figure:: picture.*
        :scale: 50 %
        :alt: map to buried treasure
        :figwidth: lenght or percentage of current line width
@@ -113,7 +115,7 @@ Here are some common useful tags::
 
         This is the caption of the figure (a simple paragraph).
 
-    .. image:: /static/tutorial/001.png
+    .. image:: /static/tutorial/001.*
        :height: 100 px
        :width: 200 pt
        :scale: 50 %
