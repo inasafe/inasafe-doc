@@ -6,6 +6,8 @@ Toolbar
 This Section contains the explanation of the different icons in the Toolbar
 and the function behind the icons.
 
+.. _toolbar_dock:
+
 Toggle |project_name| Dock
 --------------------------
 
@@ -23,6 +25,8 @@ you want to have it and keep it even as a separated window.
 You can find more Information about the dock itself in the
 :ref:`toolbar-dock` section.
 
+.. _toolbar_keyword_editor:
+
 |project_name| Keyword Editor
 -----------------------------
 
@@ -34,8 +38,10 @@ You can find more Information about the dock itself in the
    Keyword Editor
 
 The Keyword Editor button opens the Keyword editor which is described in
-:ref:`toolbar-keywords`. Basically it enables you to easily edit the
+:ref:`toolbar_keywords`. Basically it enables you to easily edit the
 Keywords needed for |project_name| to create useful output.
+
+.. _toolbar_reset_dock:
 
 Reset Dock
 ----------
@@ -50,6 +56,8 @@ Reset Dock
 The Name is self speaking. In Case of any drawing issue inside the dock this
 button just resets/reloads the dock to its initial state.
 
+.. _toolbar_options:
+
 |project_name| Options
 ----------------------
 
@@ -62,6 +70,8 @@ button just resets/reloads the dock to its initial state.
 
 This button opens the Options window which is described in
 :ref:`toolbar-options`
+
+.. _toolbar_impact_functions_browser:
 
 |project_name| Impact Functions Browser
 ---------------------------------------
@@ -79,7 +89,7 @@ It basically enables you to filter and browse impact functions that are
 available in |project_name|. More information about that topic can be found
 in :ref:`impact_functions`.
 
-.. _minimum_needs_tool:
+.. _toolbar_minimum_needs:
 
 |project_name| Minimum Needs Tool
 ----------------------------------
@@ -92,17 +102,10 @@ in :ref:`impact_functions`.
    |project_name| Minimum Needs Tool
 
 This tool will calculated minimum needs for evacuated people.
-To use this tool effectively:
 
-* Load a polygon layer in QGIS.
-  Typically the layer will represent administrative districts where people have
-  gone to an evacuation center.
-* Ensure that the layer has an INTEGER attribute for the number of displaced
-  people associated with each feature.
-* Use the pick lists below to select the layer and the population field and
-  then press 'OK'.
-* A new layer will be added to QGIS after the calculation is complete. The
-  layer will contain the minimum needs per district/administrative boundary.
+For a guidance howto use this tool take a look in :ref:`minimum_needs`.
+
+.. _toolbar_converter:
 
 |project_name| Converter
 ------------------------
@@ -115,19 +118,10 @@ To use this tool effectively:
    |project_name| Converter
 
 This tool will convert an earthquake 'shakemap' that is in grid xml format
-to a GeoTIFF file. The imported file can be used in InaSAFE as an input for
-impact functions that require and earthquake layer. To use this tool
-effectively:
+to a GeoTIFF file.
+For more detailed information look at :ref:`converter`.
 
- * Select a grid.xml for the input layer.
- * Choose where to write the output layer to.
- * Choose the interpolation algorithm that should be used when converting the
-   xml grid to a raster. If unsure keep the default.
-
-If you want to obtain shake data you can get it for free from the USGS
-shakemap site: http://earthquake.usgs.gov/earthquakes/shakemap/list.php?y=2013
-
-.. _batch_runner:
+.. _toolbar_batch_runner:
 
 |project_name| Batch Runner
 ---------------------------
@@ -139,12 +133,11 @@ shakemap site: http://earthquake.usgs.gov/earthquakes/shakemap/list.php?y=2013
 
    |project_name| Converter
 
-Before running the Batch Runner you might want to use the
-:ref:`save_scenario` tool to first save some scenarios on which you can let
-the batch runner do its work. This tool lets you run saved scenarios in one
-go. It lets you select scenarios or let run all scenarios in one go.
+The Batch Runner lets you load saved scenarios (:ref:`save_scenario`) and
+batch run them in one go.
+You can find more information about using this tool at :ref:`batch_runner`
 
-.. _save_scenario:
+.. _toolbar_save_scenario:
 
 Save current scenario
 ---------------------
@@ -157,9 +150,12 @@ Save current scenario
    |project_name| Converter
 
 This is the tool you need to prepare/save scenarios for the
-:ref:`batch_runner` Tool. It lets you save the current visible scenario in
-QGIS to a :file:`.txt` file. This file you can open as a scenario again in
+:ref:`toolbar_batch_runner` Tool. It lets you save the current visible scenario
+in QGIS to a :file:`.txt` file. This file you can open as a scenario again in
 Batch runner and recalculate it.
+A more detailed description is available in :ref:`batch_runner`
+
+.. _toolbar_openstreetmap_downloader:
 
 |project_name| OpenStreetMap Downloader
 ---------------------------------------
@@ -173,19 +169,3 @@ Batch runner and recalculate it.
 
 This tool will fetch building ('structure') data from the OpenStreetMap
 project for you.
-The downloaded data will have |project_name| keywords defined and a default
-QGIS style applied. To use this tool effectively:
-
-Use QGIS to zoom in to the area for which you want building data to be
-retrieved.
-Check the output directory is correct. Note that the saved dataset
-will be called buildings.shp (and its associated files).
-
-.. warning::
-   If a dataset already exists in the output directory it will be overwritten.
-   This tool requires a working internet connection and fetching buildings will
-   consume your bandwidth.
-
-.. note::
-   Downloaded data is copyright OpenStreetMap contributors (click for more
-   info).

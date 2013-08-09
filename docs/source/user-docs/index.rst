@@ -11,12 +11,9 @@ system.
 
    install
    getting_help
-   dock
-   functionality
    toolbar
-   options
-   keywords
-   impact_functions
+   functions_doc
+   functionality
    impact_functions_doc
    postprocessors
    using-qgis

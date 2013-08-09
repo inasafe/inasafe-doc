@@ -240,7 +240,7 @@ You might have up to 3 tabs visible.
  * Minimum Needs: If it is something that effects for eg people it works out
    the minimum needs of the people affected by the impact scenario. To use
    that function you should have the necessary data available and calculate
-   this by using the :ref:`minimum_needs_tool`.
+   this by using the :ref:`minimum_needs`.
 
 .. figure:: /static/user-docs/imp_func_conf2.*
    :scale: 75 %
