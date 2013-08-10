@@ -8,7 +8,6 @@ Run basic |project_name|
 * To create a impact map
 * To modify the threshold of an impact function
 * To run |project_name| using a flood model & building and examine the results
-* To run |project_name| with aggregation
 
 **Expected Results:**
 
@@ -20,7 +19,6 @@ Participants are able to:
 * change the threshold of an impact function
 * run and understand the results of an |project_name| using a flood model &
   building
-* run |project_name| with aggregation by district 
 
 **Data for Practical**
 You can download this from `my dropbox<http://bit.ly/inasafe_resources>`_
@@ -85,7 +83,7 @@ evacuating*
 In the |project_name| Panel, inside the main window you will see text and statistics, 
 lets explore this further.
 
-.. image:: /static/training/socialisation/033_inasafewindow1.png
+.. image:: /static/training/socialisation/033_peoplefloodresult.png
    :align: center
 
 **Evacuation:** There are 1,109,000 people that are in water that is deeper than 1 meter.
@@ -111,7 +109,7 @@ breakdown of Youth, Adults and Elderly.
 Print Results
 .............
 
-6. :guilabel:`Print` at the bottom the inasafe panel
+6. :guilabel:`Print` at the bottom the |project_name| panel
 
 .. image:: /static/training/socialisation/034_print.png
    :align: center
@@ -129,9 +127,9 @@ Two PDFs will be generated
 .. image:: /static/training/socialisation/035_People_in_need_of_evacuation_1m_table.pdf
    :align: center
 
-.. note:: In the new version of InaSAFE the developers will look more into the layout of
-these pdfs. *If you get time during this course please proved us with your ideas on how
-the print map and table should look!*
+.. note:: In the new version of |project_name| the developers will look more into the 
+layout of these pdfs. *If you get time during this course please proved us with your 
+ideas on how the print map and table should look!*
 
 Changing threshold
 ..................
@@ -139,7 +137,7 @@ Changing threshold
 What if the disaster manager has decided that people should be evacuated if they are in 
 80cm or more of water?
 
-8. :guilabel:`Show question form` found at the top of the InaSAFE panel.
+8. :guilabel:`Show question form` found at the top of the |project_name| panel.
 
 .. image:: /static/training/socialisation/036_showquestion.png
    :align: center
@@ -162,7 +160,7 @@ Parameter* which is found beside the *Need evacuation*
 .. todo:: How many people need to be evacuated? **Answer:**______________________ 
 Is this the answer you were expecting? **Answer:**_____________________
 
-12. :guilabel:`Print` at the bottom the inasafe panel
+12. :guilabel:`Print` at the bottom the |project_name| panel
 
 .. image:: /static/training/socialisation/034_print.png
    :align: center
@@ -182,28 +180,27 @@ Is this the answer you were expecting? **Answer:**_____________________
 Buildings Affected
 ------------------
 
-15. Check that buildings is in the drop down menu under ´How Many´
+15. Confirm that the |project_name| panel is the same as the image below
 
-16. :guilabel:`Click` on the arrow, as you can see you can not
-    :guilabel:`Select` people, as we have uncheck it in the layer panel
-
-.. image:: /static/socialisation/page_31_4.jpg
+.. image:: /static/training/socialisation/040_inasafebuidlingflood.png
    :align: center
 
-.. note:: If you want to be able to Select layer that are not
-   checked, there is an option in the InaSAFE options window that can
-   be turned off. We will go through the option menu later in the training.
+16. Notice that if you click on the *building* the people option is not available,
+	this is because people are unchecked in the table of contents.
 
-17. :guilabel:`Click` Run
+.. note:: If you want to be able to select layers within the |project_name| panel that are
+   not checked in the table of contents you can modify the |project_name| options.
+   We will go through the option menu later in the training.
 
-.. image:: /static/socialisation/inasafe_print.jpg
+17. :guilabel:`Run` the new combination.
+
+.. image:: /static/training/socialisation/041_buildingfloodresults.png
    :align: center
 
-In this scenario approximately 796 buildings could be effected out of 13,
-629 buildings.
+In this scenario approximately 796 buildings could be effected out of 13,629 buildings.
 
 Due to the provincial BPBD work in OpenStreetMap they have mapped all
-important building (and then sum).
+important building (and then sum!).
 
 Important buildings are defined as:
 
@@ -216,82 +213,43 @@ Important buildings are defined as:
 * Schools
 * Sports Centres
 
-A different set of Actions have been identified to relate to structures.
+**Action Checklist:** A different set of Actions have been identified to 
+relate to structures.
 
-Assume affected in above 1 meter of water
-Source of the Hazard and Population Datasets
+**Note:** Similar to the last |project_name| analysis, this analysis also assumes impact
+is in water above 1 meter.
+
+**Detailed building type report:** This is a breakdown of important infrastructure, when
+you choose to aggregate (we will do this later) this table will show the number of 
+buildings by aggregation boundary.
+
+**Source:** of the Hazard and Population Datasets
 
 
-18. :guilabel:`Click` |project_name| Print, save accordingly
+18. :guilabel:`Print` at the bottom the |project_name| panel
+
+.. image:: /static/training/socialisation/034_print.png
+   :align: center
+   
+19. Navigate to where you would like to save the pdf, add :kbd: `_1m` at the end of 
+*Buildings_inundated* :guilabel:`Save`
+
 
 Optional - Change the threshold to 0.8
 ......................................
 
-19. Check that |project_name| has the following in the drop-down boxes
+20. Check that |project_name| has the following in the drop-down boxes
 
 * a flood similar to the 2007 Jakarta event
 * buildings
 * Be Flooded
 
-20. :guilabel:`Click` on the impact function tool (pencil) and change 1.0 to
-    0.8)
+20. To change the impact function select :guilabel: `...` *Configure Impact Function 
+Parameter* which is found beside the *Be flooded*
 
-21. Run |project_name|
+21. Type :kbd:`0.8` in the window
 
-22. Print and save accordingly
+22. :guilabel:`Run`
 
-Basic Aggregation - Optional
-----------------------------
+23. Print and save accordingly
 
-23. :guilabel:`Click` Add vector button .. image:: /static/socialisation/
-
-24. Navigate to the data folder and :guilabel:`Select` |project_name|
-    projects/data/district_osm_jakarta.shp
-
-.. image:: /static/socialisation/page_33.jpg
-   :align: center
-
-25. :guilabel:`Click` Open
-
-26. :guilabel:`Click` once on the district of Jakarta Layer
-
-.. image:: /static/socialisation/page_33_2.jpg
-   :align: center
-
-27. :guilabel:`Click` on the drop down menu for ´Aggregation results by´ and
-    :guilabel:`Select` Subdistrict of Jakarta
-
-.. image:: /static/socialisation/page_33_3.jpg
-   :align: center
-
-28. Change the threshold back to 1.0 (refer point 7)
-
-29. Run |project_name| again
-
-30. :guilabel:`Click` |project_name| Print, save accordingly
-
-Keywords Editor
----------------
-
-In the next chapter we will explore the keyword editor for the hazard and
-exposure layers.
-
-However the Keyword editor for postprocessing is slightly different. You are
-able to :guilabel:`Select` an attribute to provide the percentage of females
-per aggregation area. If there is no such layer |project_name| defaults at
-50% or 0.5.
-
-If you would like more detail please ask at the end of the session
-
-.. image:: /static/socialisation/aggregation_keyword.png
-   :align: center
-
-31. Keywords Editor window will pop up, press OK
-
-32. Scroll down the bottom of the results, you will see disaggregation of
-the population data and demographics by district.
-
-33. :guilabel:`Click` |project_name| Print, save accordingly
-
-.. image:: /static/socialisation/page_34.jpg
-   :align: center

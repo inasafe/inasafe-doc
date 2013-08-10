@@ -12,8 +12,7 @@
 * To Run |project_name| with the new hazard layer
 * To Run |project_name| and add the percentage of affected people who will need
   evacuation
-* To explain the difference between the scenario run in last chapter with
-  this chapter (optional)
+* To aggregate the results  
 
 **Expected Results:**
 
@@ -26,18 +25,17 @@ Participants are able to:
 * understand the difference between a model hazard and a footprint hazard
 * input the percentage of people that will need evacuating for a flood
   footprint hazard
-* rerun |project_name| with new hazard layer and explain the difference
-  between the flood model and new hazard layer. (optional)
+* aggregate impact results by administration areas  
 
 
 Interrogating the Output Data
 -----------------------------
 
-You will now have 3 layer that have been generated through |project_name|
+You will now have 3 or 4 layer that have been generated through |project_name|
 
-* 2 - :guilabel:`*Population which need evacuating*` - Raster Data
+* 2 - *Population which need evacuating* - Raster Data
 
-* 1 - :guilabel:`*Estimated building affected*` - Vector Data
+* 1or2 - *Estimated building affected* - Vector Data
 
 We are now going to use the basic QGIS tools to examine the datasets.
 
@@ -45,9 +43,10 @@ We are now going to use the basic QGIS tools to examine the datasets.
 About Estimate Building Affected
 ................................
 
-1. :guilabel:`Zoom into` a section of buildings using the zoom in tool
+1. Using the :guilabel:`Zoom In` tool, zoom to a cluster of buildings
 
-.. image:: /static/socialisation/zoomin2.png
+
+
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
@@ -357,3 +356,59 @@ flood 180113   1%             Vector         People        Raster         Need E
 1. Answer _____________________________________________________
 
 2. Answer _____________________________________________________
+
+Basic Aggregation - Optional
+----------------------------
+
+23. :guilabel:`Click` Add vector button .. image:: /static/socialisation/
+
+24. Navigate to the data folder and :guilabel:`Select` |project_name|
+    projects/data/district_osm_jakarta.shp
+
+.. image:: /static/socialisation/page_33.jpg
+   :align: center
+
+25. :guilabel:`Click` Open
+
+26. :guilabel:`Click` once on the district of Jakarta Layer
+
+.. image:: /static/socialisation/page_33_2.jpg
+   :align: center
+
+27. :guilabel:`Click` on the drop down menu for ´Aggregation results by´ and
+    :guilabel:`Select` Subdistrict of Jakarta
+
+.. image:: /static/socialisation/page_33_3.jpg
+   :align: center
+
+28. Change the threshold back to 1.0 (refer point 7)
+
+29. Run |project_name| again
+
+30. :guilabel:`Click` |project_name| Print, save accordingly
+
+Keywords Editor
+---------------
+
+In the next chapter we will explore the keyword editor for the hazard and
+exposure layers.
+
+However the Keyword editor for postprocessing is slightly different. You are
+able to :guilabel:`Select` an attribute to provide the percentage of females
+per aggregation area. If there is no such layer |project_name| defaults at
+50% or 0.5.
+
+If you would like more detail please ask at the end of the session
+
+.. image:: /static/socialisation/aggregation_keyword.png
+   :align: center
+
+31. Keywords Editor window will pop up, press OK
+
+32. Scroll down the bottom of the results, you will see disaggregation of
+the population data and demographics by district.
+
+33. :guilabel:`Click` |project_name| Print, save accordingly
+
+.. image:: /static/socialisation/page_34.jpg
+   :align: center
