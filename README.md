@@ -1,5 +1,5 @@
-.. image:: /static/inasafe_logo.svg
-<http://inasafe.org>
+.. image:: /inasafe_logo.svg
+`web link<http://inasafe.org>`_
 
 InaSAFE Documentation
 =====================
