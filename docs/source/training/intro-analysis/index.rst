@@ -1,5 +1,7 @@
-Tutorials
-=========
+.. _intro-analysis:
+
+Beginner Training 
+=================
 
 .. toctree::
    :maxdepth: 2

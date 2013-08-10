@@ -1,5 +1,4 @@
-.. image:: inasafe_logo.*
- <http://inasafe.org>
+[![][InaSAFEImage]][website]
 
 InaSAFE Documentation
 =====================
@@ -160,3 +159,5 @@ This will generate and update the .po files needed for translations. If all
 is fine, take care, that the translation go into the repository of your
 language maintainer.
 
+[InaSAFEImage]: http://inasafe.org/_static/icon.png
+[website]: http://inasafe.org/
