@@ -7,8 +7,8 @@ Socialisation
    :maxdepth: 2
 
    introduction
-   introduction-and-overview
-   introduction-functionality
+   overview
+   introduction-practical
    introduction-of-qgis
    run-basic-inasafe
    inasafe-in-more-detail

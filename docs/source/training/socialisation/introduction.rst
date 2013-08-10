@@ -47,15 +47,12 @@ Schedule
 ========   ==================================================================
 **Time**   **Activity**
 --------   ------------------------------------------------------------------
-30min      Introduction and Overview of |project_name| (Concept of
-               |project_name|, inputs and results)
+30min      Overview of |project_name| (Concept of|project_name|, inputs and results)
 30min      Introduction to the Practical exercise
-30min      Introduction of QGIS (Concept, screen layout and setup and
-               install plugin)
+30min      Introduction of QGIS (Concept, screen layout, setup and install plugin)
 30min      Run basic |project_name| (Flooding in Jakarta)
 30min      Break
-30min      |project_name| in more detail (Explain keywords and simple
-               spatial analysis)
+30min      |project_name| in more detail (Explain keywords and simple spatial analysis)
 45min      Other hazard in |project_name| (Volcano, Earthquake, Tsunami)
 15min      Helpful hints and tips
 ========   ==================================================================

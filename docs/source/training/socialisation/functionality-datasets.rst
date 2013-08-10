@@ -1,4 +1,4 @@
-.. _functionality_and_datasets:
+.. _functionality-datasets:
 
 Functionality and Datasets to be used in Practical
 ==================================================

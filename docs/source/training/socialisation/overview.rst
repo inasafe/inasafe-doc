@@ -1,7 +1,7 @@
-.. _introduction_and_overview:
+.. _overview:
 
-Introduction and Overview
-=========================
+Overview
+========
 
 Concept
 -------
