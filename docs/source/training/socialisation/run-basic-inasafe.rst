@@ -108,69 +108,67 @@ breakdown of Youth, Adults and Elderly.
 
 **Source:** where the exposure and hazard data originally came from.
 
-
-
-
-
-
-
 Print Results
 .............
 
-6. :guilabel:`Click` the print button at the bottom the inasafe panel
+6. :guilabel:`Print` at the bottom the inasafe panel
 
-.. image:: /static/socialisation/inasafe_print3.jpg
+.. image:: /static/training/socialisation/034_print.png
    :align: center
 
-7. Navigate to where you would like to save the pdf, :guilabel:`Click` save
-
-.. image:: /static/socialisation/inasafe_result.jpg
-   :align: center
+7. Navigate to where you would like to save the pdf, add :kbd: `_1m` at the end of 
+*People_in_need_of_evacuation* :guilabel:`Save` 
 
 Two PDFs will be generated
 
 .. note:: The result provides a map and a table of information about the impact.
 
-.. image:: /static/socialisation/people_in_need_of_evacuation.jpg
+.. image:: /static/training/socialisation/035_People_in_need_of_evacuation_1m.pdf
    :align: center
 
-**Help is needed to reconstruct the InaSAFE print output to be more
-benefical to disaster managers**
-
-.. image:: /static/socialisation/people_in_need_of_evacuation_table.jpg
+.. image:: /static/training/socialisation/035_People_in_need_of_evacuation_1m_table.pdf
    :align: center
 
-**If you get time during this course please proved us with your ideas on how
-the print map and table should look!**
+.. note:: In the new version of InaSAFE the developers will look more into the layout of
+these pdfs. *If you get time during this course please proved us with your ideas on how
+the print map and table should look!*
 
 Changing threshold
 ..................
 
-What if the disaster manager has decided that actually anyone in more than
-80cm of water should be evacuated?
+What if the disaster manager has decided that people should be evacuated if they are in 
+80cm or more of water?
 
-8. :guilabel:`Click` the impact function editor button (the pencil icon next
-   to ´Need Evacuation´)
+8. :guilabel:`Show question form` found at the top of the InaSAFE panel.
 
-.. image:: /static/socialisation/page_31.jpg
+.. image:: /static/training/socialisation/036_showquestion.png
    :align: center
 
-9. Type 0.8 next to Thresholds
+9. To change the impact function select :guilabel: `...` *Configure Impact Function 
+Parameter* which is found beside the *Need evacuation*
 
-.. image:: /static/socialisation/page_31_2.jpg
+.. image:: /static/training/socialisation/037_functionchange.png
    :align: center
 
-10. :guilabel:`Click` OK
+9. Type :kbd:`0.8` in the window
 
-11. :guilabel:`Click` the Run button
+.. image:: /static/training/socialisation/038_configure.png
+   :align: center
 
-12. How many people need to be evacuated
+10. :guilabel:`OK`
 
-Answer
-......
+11. :guilabel:`Run`
 
-13. :guilabel:`Click` |project_name| Print, save as ´people in need of
-    evacuation above 80cm´
+.. todo:: How many people need to be evacuated? **Answer:**______________________ 
+Is this the answer you were expecting? **Answer:**_____________________
+
+12. :guilabel:`Print` at the bottom the inasafe panel
+
+.. image:: /static/training/socialisation/034_print.png
+   :align: center
+   
+13. Navigate to where you would like to save the pdf, add :kbd: `_80cm` at the end of 
+*People_in_need_of_evacuation* :guilabel:`Save`
 
 14. Before moving onto buildings, lets turn some layers off. In your Layer
     panel you will now have 5 layers, we are going to uncheck everything but:
@@ -178,7 +176,7 @@ Answer
 * a flood similar to the 2007 Jakarta event
 * buildings
 
-.. image:: /static/socialisation/page_31_3.jpg
+.. image:: /static/training/socialisation/039_buildingflood.png
    :align: center
 
 Buildings Affected
