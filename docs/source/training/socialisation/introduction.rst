@@ -44,24 +44,21 @@ Prerequisites
 Schedule
 --------
 
-13:00 - 13:30  Introduction and Overview of |project_name| (Concept of
+========   ==================================================================
+**Time**   **Activity**
+--------   ------------------------------------------------------------------
+30min      Introduction and Overview of |project_name| (Concept of
                |project_name|, inputs and results)
-
-13:30 - 14:00  Introduction to the Practical exercise
-
-14:00 - 14:30  Introduction of QGIS (Concept, screen layout and setup and
+30min      Introduction to the Practical exercise
+30min      Introduction of QGIS (Concept, screen layout and setup and
                install plugin)
-
-14:30 - 15:00  Run basic |project_name| (Flooding in Jakarta)
-
-15:00 - 15:30  Break
-
-15:30 - 16:00  |project_name| in more detail (Explain keywords and simple
+30min      Run basic |project_name| (Flooding in Jakarta)
+30min      Break
+30min      |project_name| in more detail (Explain keywords and simple
                spatial analysis)
-
-16:00 - 16:45  Other hazard in |project_name| (Volcano, Earthquake, Tsunami)
-
-16:45 - 17:00  Helpful hints and tips
+45min      Other hazard in |project_name| (Volcano, Earthquake, Tsunami)
+15min      Helpful hints and tips
+========   ==================================================================
 
 Credits
 -------
@@ -73,16 +70,28 @@ Global Facility for Disaster Reduction and Recovery Labs (World Bank-|GFDRR|).
 Manual based on:
 ................
 
-* Version 1.1 of |project_name|
+* Version 1.2 of |project_name|
 * Version 1.8 of Quantum GIS
+
+**OR**
+
+* Version 2.0 of |project_name|
+* Version 2.0 of Quantum GIS
 
 Produced:
 .........
 
-March 2013
+August 2013
 
 For inquiries, contact:
 .......................
+
+General information on |project_name| appears online at
+the |project_name| website: http://www.inasafe.org
+
+Contact: info@inasafe.org
+
+**OR**
 
 Australia-Indonesia Facility for Disaster Reduction (|AIFDR|),
 
@@ -96,8 +105,6 @@ Fax: +62 21 398 30068
 
 http://www.aifdr.org
 
-General information on |project_name| appears online at
-the |project_name| website: http://www.inasafe.org
 
 Resources obtained by:
 ......................

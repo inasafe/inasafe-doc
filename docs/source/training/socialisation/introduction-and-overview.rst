@@ -17,8 +17,9 @@ emergency managers need to answer questions like:
 - which roads will be closed?
 
 Conceptually |project_name| combines one exposure layer (e.g. buildings) with
-one hazard scenario (e.g. flooding) and returns an impact layer along with
-textual statistical summary.
+one hazard scenario (e.g. flooding) and returns a spatial impact layer along with
+textual statistical summary and action questions.
+
 
 |project_name| is framed around questions such as:
 
@@ -27,7 +28,8 @@ textual statistical summary.
 
 .. image:: /static/socialisation/inasafe_concept.png
 
-
+|project_name| is also able to aggregate the impact results by administration
+boundary and provided breakdown information about gender and age of affected.
 
 Background
 ----------
