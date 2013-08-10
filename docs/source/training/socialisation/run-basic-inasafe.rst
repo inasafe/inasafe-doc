@@ -8,7 +8,7 @@ Run basic |project_name|
 * To create a impact map
 * To modify the threshold of an impact function
 * To run |project_name| using a flood model & building and examine the results
-* To run |project_name| with aggregation (optional)
+* To run |project_name| with aggregation
 
 **Expected Results:**
 
@@ -20,80 +20,99 @@ Participants are able to:
 * change the threshold of an impact function
 * run and understand the results of an |project_name| using a flood model &
   building
-* run |project_name| with aggregation by district (optional)
+* run |project_name| with aggregation by district 
+
+**Data for Practical**
+You can download this from `my dropbox<http://bit.ly/inasafe_resources>`_
+or it will be provided to you during the training. 
 
 Introduction
 ------------
 
 In this chapter you will run |project_name| in Jakarta to determine the
-impact of a flood model on Jakarta's population and buildings.
+impact of a flood model on both Jakarta's population and buildings.  The 
 
-1. :guilabel:`Open` Jakarta_floods.qgs - File/Open Project... ,
+1. :menuselection: `File --> Open Projects` 
 
-2. :guilabel:`Click` on browse navigate to |project_name| projects and
-   :guilabel:`Select` *Jakarta_floods*, :guilabel:`Click` open and then open
-   again
+2. A message box *Do you want to save the current project* :guilabel:`Don't Save`
 
-.. image:: /static/socialisation/page_28.jpg
+.. image:: /static/training/socialisation/028_saveproject.png
+   :align: center
+
+3. Navigate to the *InaSAFE_project* folder and :guilabel:`Select` *Jakarta_floods.qgs*, 
+   :guilabel:`Open`
+
+.. image:: /static/training/socialisation/029_jakartafloods.png
    :align: center
 
 
 People need evacuating
 ----------------------
 
-3. As you can see the |project_name| panel has the first three drop down
-   menus filed in already:
+As you can see the |project_name| panel has the first three drop down menus 
+filed in already:
 
 * a flood similar to the 2007 Jakarta event
 * buildings
 * Be Flooded
 
-4. :guilabel:`Click` the arrow next to buildings, :guilabel:`Select` people,
+4. In the |project_name| panel :guilabel:`Click` on buildings, :guilabel:`Select` people,
    it now should have:
 
 * a flood similar to the 2007 Jakarta event
 * people
 * Need evacuating
 
-.. image:: /static/socialisation/show_people.png
+.. image:: /static/training/socialisation/030_showpeople.png
    :align: center
 
-.. note:: You can see that the Impact function below ´Might´ automatically
-   changes depending on the layers added
+.. note:: You can see that the Impact function below *Might* automatically
+   changed from *Be Flooded* to *Need evacuation* this is dependant on the 
+   combination of the hazard and exposure layers
 
-5. Lets run this scenario first - :guilabel:`Click` Run at the bottom right
+5. Lets run this scenario first - :guilabel:`Run` at the bottom right
    hand corner of the |project_name| panel.
 
-.. image:: /static/socialisation/page_28_2.jpg
+.. image:: /static/training/socialisation/031_run.png
    :align: center
 
-A new layer should appear in the layer panel called ´Population which needs
-evacuating´ and in the |project_name| Panel, inside the main window you will
-see text and statistics, lets explore this further.
+A new layer should appear in the layer panel called *Population which needs
+evacuating* 
 
- .. image:: /static/socialisation/inasafe_print2.jpg
+.. image:: /static/training/socialisation/032_results.png
    :align: center
 
-In this scenario there are 1,109,000 people that could be exposed to more
-than 1 meter of water, it is assumed that all of these people will need to
-evacuate their homes.
+In the |project_name| Panel, inside the main window you will see text and statistics, 
+lets explore this further.
 
-The Minimum needs, is calculated using the above evacuation number to
+.. image:: /static/training/socialisation/033_inasafewindow1.png
+   :align: center
+
+**Evacuation:** There are 1,109,000 people that are in water that is deeper than 1 meter.
+It is assumed that all of these people will need to evacuate their homes.  The threshold 
+of 1 meter can be changed (see Changing Threshold).
+
+**Minimum needs:** is calculated using the above number of evacuated people to
 estimate the amount of food, water and other products that the refugees will
-need to survive.
+need to survive.  The figures are based on an Indonesian policy.
 
-Action list: designed to make disaster managers think about what they need
+**Action checklist:** designed to make disaster managers think about what they need
 to do to prepare for the event.
 
-.. note:: explains the total people in the map canvas,
-   when evacuation is needed,  and source of the minimum needs assessment.
+**Notes:** explains the total people in the map canvas, the threshold of water depth 
+that requires evacuation and th source of the minimum needs assessment.
 
-Source of the Hazard and Population Datasets
+**Detailed gender and age report:** Statistical breakdown of the number of females, 
+and added minimum needs for women hygiene and pregnant women. As well as statistical 
+breakdown of Youth, Adults and Elderly.
 
-Statistical breakdown of the number of females, and added minimum needs for
-women hygiene and pregnant women.
+**Source:** where the exposure and hazard data originally came from.
 
-Statistical breakdown of Youth, Adults and Elderly.
+
+
+
+
+
 
 Print Results
 .............
