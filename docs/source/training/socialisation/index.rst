@@ -8,7 +8,7 @@ Socialisation
 
    introduction
    overview
-   introduction-practical
+   functionality-datasets
    introduction-of-qgis
    run-basic-inasafe
    inasafe-in-more-detail
