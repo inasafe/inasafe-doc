@@ -70,11 +70,6 @@ Manual based on:
 * Version 1.2 of |project_name|
 * Version 1.8 of Quantum GIS
 
-**OR**
-
-* Version 2.0 of |project_name|
-* Version 2.0 of Quantum GIS
-
 Produced:
 .........
 

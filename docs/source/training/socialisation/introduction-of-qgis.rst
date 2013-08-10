@@ -2,7 +2,7 @@
 Introduction to QGIS
 ====================
 
-.. image:: /static/socialisation/qgis_logo.png
+.. image:: /static/training/socialisation/010_qgis_logo.png
    :align: center
 
 **Objectives:**
@@ -71,8 +71,12 @@ The elements identified in the figure below are:
 3. Map canvas
 4. Status bar
 
-.. image:: /static/socialisation/interface.PNG
+.. image:: /static/training/socialisation/011_interface.PNG
    :align: center
+
+===================
+Begin Practical
+===================
 
 Setup QGIS
 ----------
@@ -80,37 +84,37 @@ Setup QGIS
 #. :guilabel:`Open Quantum GIS Desktop (1.8.0)` - This should be located on
    your desktop, or you can find it in your start menu.
 
-.. image:: /static/socialisation/qgis.png
+.. image:: /static/training/socialisation/012_qgis_desktop.png
    :align: center
 
-#. A hint window will come up, :guilabel:`click okay`.
+#. A hint window will come up, :guilabel:`Click Ok`.
 
-.. image:: /static/socialisation/tips.png
+.. image:: /static/training/socialisation/013_tips.png
    :align: center
 
 Clean up tool bar
 .................
 
-To provide more space for your map canvas you will now choose to display the
-tools we will use today.
+To provide more space for your map canvas we will uncheck the tools we will not be 
+using today.
 
-#. :guilabel:`Right click` the toolbar and unmark, *Advance Digitising*,
+#. :guilabel:`Right Click` the toolbar and :guilabel: `Uncheck`, *Advance Digitising*,
    *Database*, *Digitising*, *File*, *Grass*, *OpenStreetMap*, *Raster*,
    *Vector*, *Web*.
-#. Rearrange toolbar so its just one line, by holding down the left mouse
-   button over the dots on the left hans side of the tool,
-   and dragging the bar to where ever you would like to put it.
+#. Rearrange toolbar so its just one line, `Left Click` and `Hold`
+   the vertical dots on the left hand side of the tool.  
+   Drag to the first line of the toolbar.
 
-.. image:: /static/socialisation/toolbar.PNG
+.. image:: /static/training/socialisation/014_verticaldots.PNG
    :align: center
 
 .. Note:: For future work you may want to add these tool back into your
    toolbar, this is as simple as right clicking on the toolbar and turning it
    back on.
 
-Your QGIS should now look like this:
+Your QGIS toolbar should go from 3 lines to 1 line:
 
-.. image:: /static/socialisation/toolbar_2.PNG
+.. image:: /static/training/socialisation/015_toolbar_clean.PNG
    :align: center
 
 Option Window
@@ -118,38 +122,38 @@ Option Window
 
 To change the projection settings and acknowledge that QGIS is multilingual
 
-1. Go to Options window: **Settings/options**
-2. :guilabel:`Click` on the CRS tab
+1. Go to Options window: :menuselection:`Settings --> Options`
+2. :guilabel:`Select` the **CRS** tab of the options menu
 
-.. image:: /static/socialisation/crs.PNG
+.. image:: /static/training/socialisation/016_crs.PNG
    :align: center
 
-3. :guilabel:`Check Enable` 'on the fly' reprojection by default - This will
+3. :guilabel:`Check` *Enable on the fly reprojection by default* - This will
    enable that all spatial layers irrespective of their projection will
    follow the CRS allocated above
 
-.. image:: /static/socialisation/enable.PNG
+.. image:: /static/training/socialisation/017_onthefly.PNG
    :align: center
 
-.. Note:: This  will become default in the new version of QGIS (2.0),
+.. Note:: This  will become default in the new version of QGIS 2.0
 
-4. :guilabel:`Click` on the Locale tab
+4. :guilabel:`Select` on the **Locale** tab of the options menu
 
-.. image:: /static/socialisation/locale.PNG
+.. image:: /static/training/socialisation/018_locale.PNG
    :align: center
 
-5. :guilabel:`Check` Override system locale, scroll through all the languages
+5. :guilabel:`Check` *Override system locale*, scroll through all the languages
    that QGIS have been translated into! We will stick with english for this
-   training, so no action is needed - un-check Override system locale.
+   training, so no action is needed - :guilabel:`Uncheck` *Override system locale*.
 
-.. image:: /static/socialisation/options2.PNG
+.. image:: /static/training/socialisation/019_locale_select.PNG
    :align: center
 
 .. Note:: |project_name| is dependent on Locale, but it has only been
    translated into bahasa Indonesian so far. World Bank is currently funding
    for the translation of |project_name| into French and Portugal
 
-6. :guilabel:`Click` "Okay" in the bottom right corner of the Options window
+6. :guilabel:`Ok` in the bottom right corner of the Options window
 
 
 Installing Plugins
@@ -162,38 +166,53 @@ Installing |project_name| through the QGIS plugin repository
 
 .. Note:: You must be connected to the internet for this section
 
-1. Go to **Plugins/Fetch Python Plugins...** This will take a couple of
-   minutes for QGIS to contact its repository and show the list of plugins
-   available
+1. Go to :menuselection:`Plugins --> Fetch Python Plugins...` 
+   This will take a couple of minutes for QGIS to contact its repository and 
+   show the list of plugins available
+
 2. Type :kbd:`inasafe` into the filter box
 
-.. image:: /static/socialisation/inasafe_plugin.png
+.. image:: /static/training/socialisation/020_inasafe_plugin.png
    :align: center
 
-3. :guilabel:`Select` |project_name| and :guilabel:`click Install plugin` -
+3. :guilabel:`Select` |project_name| and :guilabel:`Install plugin` -
    this will take a couple of minutes for the plugin to download and install.
-4. A window should pop up saying: "Plugin installed successfully" - Click
-   okay and then close the QGIS python plugin installer window.
+   
+4. A window should pop up saying: "Plugin installed successfully" :guilabel:`Ok`
+   and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
+
 5. You should now have an |project_name| panel on the right hand side of your
    screen.
 
-.. image:: /static/socialisation/inasafe_tools.png
+.. image:: /static/training/socialisation/021_inasafe_gettingstarted.png
    :align: center
 
 |project_name| also comes with a toolbar of its own
 
-6. To retrieve the |project_name| toolbar, :guilabel:`right click` on the top
-   tool bar and :guilabel:`recheck "plugin"`
+6. To retrieve the |project_name| toolbar, :guilabel:`Right Click` on the top
+   tool bar and :guilabel:`Recheck` *plugin*
 
-.. image:: /static/socialisation/tools_inasafe.png
+.. image:: /static/training/socialisation/022_inasafetoolbar.png
    :align: center
 
-7. Read to below to familiarise yourself with the |project_name| tool set
-
-.. image:: /static/socialisation/inasafe_toolbar2.PNG
-   :align: center
+============================================    ====================================
+**Symbol**										**Name**
+--------------------------------------------	------------------------------------
+.. image:: /static/general/icon_dock			Toggle Dock
+.. image:: /static/general/icon_keywords		Keyword Editor
+.. image:: /static/general/icon_rest			Reset Dock
+.. image:: /static/general/icon_options			Options
+.. image:: /static/general/icon_impactfunctions	Impact Functions Browser
+.. image:: /static/general/icon_minimumneeds	Minimum Needs Tool
+.. image:: /static/general/icon_converter		Converter
+.. image:: /static/general/icon_batch			Batch Runner
+.. image:: /static/general/icon_save			Save Current Scenario
+.. image:: /static/general/icon_osm				OpenStreetMap downloader
+--------------------------------------------	------------------------------------
 
 .. Note:: Later we will explore and use these tools.
+
+For more information :doc:`../user-docs/toolbar`
 
 OpenLayer Plugin
 .................
@@ -203,44 +222,61 @@ Installing OpenLayer through the QGIS plugin repository
 1. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a
    couple of minutes for QGIS to contact its repository and show the list of
    plugins available.
-2. Type openlayers into the filter box.
-3. :guilabel:`Select` "OpenLayer Plugin" and click Install plugin - this will
+2. Type :kbd:`openlayers` into the filter box.
+3. :guilabel:`Select` *OpenLayer Plugin* then :guilabel: `Install plugin` - this will
    take a couple of minutes for the plugin to download and install.
-4. A window should pop up saying: "Plugin installed successfully" - Click
-   okay and then close the QGIS python plugin installer window.
-5. :guilabel:`Click on Plugins`, and hover your mouse over OpenLayers plugin
+4. A window should pop up saying: "Plugin installed successfully"  :guilabel:`Ok`
+   and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
+5. Hover mouse over :menuselection:`Plugins --> OpenLayer Plugin`
 
-.. image:: /static/socialisation/openlayer1.PNG
+.. image:: /static/training/socialisation/023_openlayer.PNG
    :align: center
 
-6. Select **Add Bing Aerial layer**
+6. :guilabel:`Select` *Add Bing Aerial layer*
 
-.. image:: /static/socialisation/aerial_bing.png
+.. image:: /static/training/socialisation/024_aerial_bing.png
    :align: center
 
 .. Note:: If you are familiar with Goggle Earth, navigating this imagery
    should be very similar.
 
-7. :guilabel:`Click` on the zoom in tool, then draw a box (click and drag)
-   over your country.
-8. Click on the Pan Map tool to shift the map so your country is in the
+**Activity:** Navigate to your home
+...................................
+
+Using the navigation tools below, zoom into your home.
+
+============================================    ====================================
+**Symbol**										**Name**
+--------------------------------------------	------------------------------------
+.. image:: /static/general/icon_pan				Pan Map
+.. image:: /static/general/icon_zoomin			Zoom In
+.. image:: /static/general/icon_zoomout			Zoom Out
+.. image:: /static/general/icon_zoomfull		Zoom to Full
+.. image:: /static/general/icon_zoomlast		Zoom Last
+.. image:: /static/general/icon_zoomnext		Zoom Next
+--------------------------------------------	------------------------------------
+
+7. :guilabel:`Click` *zoom In*, draw a box (click and drag) over your country.
+
+8. :guilabel:`Click` *Pan Map*, shift the map so your country is in the
    centre of the screen.
 
-.. Note:: If you make a mistake in your zooming, use zoom to last tool
+.. Note:: If you make a mistake in your zooming, use *Zoom Last* tool.
 
-9. Now navigate to your own house. (optional)
-
-.. image:: /static/socialisation/navigation.PNG
-   :align: center
+9. Navigate to your own house or work 
 
 Indonesia
 
-.. image:: /static/socialisation/indonesia.png
+.. image:: /static/training/socialisation/025_indonesia.png
    :align: center
 
-My home in Jakarta
+Jakarta
 
-.. image:: /static/socialisation/home.png
+.. image:: /static/training/socialisation/026_jakarta.png
+   :align: center
+   
+Menara Thamrin
+.. image:: /static/training/socialisation/027_mt.png
    :align: center
 
 .. Note:: To use openlayers you must have connection to the Internet!

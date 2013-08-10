@@ -129,9 +129,9 @@ For more detailed information look at :ref:`converter`.
 .. figure:: /static/user-docs/toolbar_batch.*
    :scale: 75 %
    :align: center
-   :alt: Converter
+   :alt: Batch_Runner
 
-   |project_name| Converter
+   |project_name| Batch Runner
 
 The Batch Runner lets you load saved scenarios (:ref:`save_scenario`) and
 batch run them in one go.
@@ -145,9 +145,9 @@ Save current scenario
 .. figure:: /static/user-docs/toolbar_scenario.*
    :scale: 75 %
    :align: center
-   :alt: Converter
+   :alt: Save Current Scenario
 
-   |project_name| Converter
+   |project_name| Save Current Scenario
 
 This is the tool you need to prepare/save scenarios for the
 :ref:`toolbar_batch_runner` Tool. It lets you save the current visible scenario

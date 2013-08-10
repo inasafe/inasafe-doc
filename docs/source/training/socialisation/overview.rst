@@ -26,7 +26,7 @@ textual statistical summary and action questions.
 "In the event of **a flood similar to the 2007 Jakarta event** how many
 *people* might need *evacuating*."
 
-.. image:: /static/training/socialisation/inasafe_concept.png
+.. image:: /static/training/socialisation/001_inasafe_concept.png
 
 |project_name| is also able to aggregate the impact results by administration
 boundary and provided breakdown information about gender and age of affected.
@@ -273,4 +273,4 @@ the output data will be both a spatial layer indicating where people are (by
 density) and the non-spatial layer will have statistics on the minimum needs
 based on the number of people that ‘need evacuating’.
 
-.. image:: /static/socialisation/output_data.png
+.. image:: /static/training/socialisation/002_output_data.png

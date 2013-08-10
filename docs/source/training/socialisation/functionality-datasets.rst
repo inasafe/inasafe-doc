@@ -70,7 +70,7 @@ Population
     detailed and freely-available population distribution maps for the whole
     of Asia.
 
-.. image:: /static/socialisation/asia_pop.png
+.. image:: /static/training/socialisation/003_asia_pop.png
    :height: 500pt
    :align: center
 
@@ -90,7 +90,7 @@ Structures
     availability of map information across much of the world and the advent
     of inexpensive portable satellite navigation devices.
 
-.. image:: /static/socialisation/openstreetmap.png
+.. image:: /static/training/socialisation/004_openstreetmap.png
    :align: center
 
 |AusAID| has been working with the Humanitarian OpenStreetMap Team over the
@@ -148,7 +148,7 @@ Flood Model
     water depth is the maximum depth occurring across the entire flooding
     period.
 
-.. image:: /static/socialisation/floodmodel.png
+.. image:: /static/training/socialisation/005_floodmodel.png
    :align: center
 
 Flood Footprint
@@ -164,7 +164,7 @@ Flood Footprint
     floods to identify the areas that had been flooded based on information
     provided by the villages.
 
-.. image:: /static/socialisation/floodfootprint.png
+.. image:: /static/training/socialisation/006_floodfootprint.png
    :align: center
 
 Volcano
@@ -181,7 +181,7 @@ Volcano
     download a spreadsheet of all the recorded volcanoes.  This spreadsheet
     also has the volcano location, which has been turned into a point file.
 
-.. image:: /static/socialisation/volcano.png
+.. image:: /static/training/socialisation/007_volcano.png
    :align: center
 
 
@@ -202,7 +202,7 @@ Earthquake
 Pre-event / scenario based shakemaps need to be modelled by earthquake
 specialist.
 
-.. image:: /static/socialisation/earthquake.png
+.. image:: /static/training/socialisation/008_earthquake.png
    :align: center
 
 Tsunami
@@ -221,5 +221,5 @@ Tsunami
     entire tsunami event. Go to http://anuga.anu.edu.au/
     and http://intermap.com/
 
-.. image:: /static/socialisation/tsunami.png
+.. image:: /static/training/socialisation/009_tsunami.png
    :align: center
