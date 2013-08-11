@@ -186,10 +186,10 @@ Buildings Affected
    :align: center
 
 16. Notice that if you click on the *building* the people option is not available,
-	this is because people are unchecked in the table of contents.
+	this is because *people* is not checked in the **Layer List**.
 
 .. note:: If you want to be able to select layers within the |project_name| panel that are
-   not checked in the table of contents you can modify the |project_name| options.
+   not checked in the **Layer List** you can modify the |project_name| options.
    We will go through the option menu later in the training.
 
 17. :guilabel:`Run` the new combination.

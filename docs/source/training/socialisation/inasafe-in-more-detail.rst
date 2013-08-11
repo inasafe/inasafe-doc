@@ -39,100 +39,105 @@ You will now have 3 or 4 layer that have been generated through |project_name|
 
 We are now going to use the basic QGIS tools to examine the datasets.
 
+============================================    ====================================
+**Symbol**										**Name**
+--------------------------------------------	------------------------------------
+.. image:: /static/general/icon_identify		Identify Features
+.. image:: /static/general/icon_attribute		Open Attribute Table
+.. image:: /static/general/icon_line			Measure Line
+.. image:: /static/general/icon_area			Measure Area
+.. image:: /static/general/icon_zoomlayer		Zoom to Layer
+.. image:: /static/general/icon_zoomin			Zoom In
+.. image:: /static/general/add_vector			Add Vector Layer
+--------------------------------------------	------------------------------------
+
 
 About Estimate Building Affected
 ................................
 
 1. Using the :guilabel:`Zoom In` tool, zoom to a cluster of buildings
 
-
-
-
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
-.. image:: /static/socialisation/buildings_zoom_2.png
-
-.. note:: *that the red buildings are situated in water greater than 1 meter
+.. image:: /static/training/socialisation/042_buildings_zoom.png
+   :align: center
+   
+.. note:: That the red buildings are situated in water greater than 1 meter
    and the green building are determined not affected as they are in waters
-   less than 1 meter deep.*
+   less than 1 meter deep.
 
-2. :guilabel:`Click once` on :guilabel:`*Estimate buildings affected*`  to
-   make sure layer is highlighted in blue
+2. :guilabel:`Select` *Estimate buildings affected* in the **Layer List** to highlight
+   the layer. It should now be in blue.
 
-3. :guilabel:`Click` on the information tool
+.. image:: /static/training/socialisation/043_highlight.png
+   :align: center
 
-.. image:: /static/socialisation/information_tool.png
+3. Use the :guilabel:`Identify Features` tool to select a building
 
-4. :guilabel:`Click` on an affected building (red)
+Here I clicked on the building circled in the above picture, the results are below.
+This buildings has a lot of information recorded about it.
 
-Here I clicked on the building circled in the above picture to result is
-below. This buildings has a lot of information recorded about it.
-
-.. image:: /static/socialisation/identy_results.png
-
-.. note:: *As mentioned before, this information was gathered by the
+.. image:: /static/training/socialisation/044_identifyresults.png
+   :align: center
+.. note:: As mentioned before, this information was gathered by the
    Provincial disaster managers, through an OpenStreetMap  data collection
    program.  They collect important structures and essential information
    about the building, such as name, address, type and building structural
-   information.  Also included was if the building had roof access.*
+   information.  Also included was if the building had roof access.
 
-5. :guilabel:`Zoom back to full extent` using the Zoom Full tool
+4. Click on :guilabel:`Zoom to Layer` - this will get you back to extent of 
+*Estimate building affected*
 
-.. image:: /static/socialisation/zoom_extent.png
 
-About Population which Needs evacuation
+About Population which needs evacuation
 .......................................
 
-6. :guilabel:`Uncheck` the *Estimated buildings affected* and
-   :guilabel:`recheck` one of  *Population which Need evacuation*
+5. In the **Layer list** :guilabel:`Uncheck` the *Estimated buildings affected* and
+   :guilabel:`Check` one of  the *Population which Need evacuation*
 
-7. Again :guilabel:`zoom` into an area of your choice
+6. :guilabel:`Select` *Population which Need evacuation* in the **Layer List** to highlight
+   the layer. It should now be in blue.
 
-.. image:: /static/socialisation/zoomin2.png
+7. :guilabel:`Zoom In` to an area of your choice
 
-8. :guilabel:`Click` once on *Population which Need evacuation* and use the
-   selection tool to select a pixel (square)
-
-.. image:: /static/socialisation/information_tool.png
+8. Use the :guilabel:`Identify Features` tool to select a pixel (square) of the 
+selected *Population which Need evacuation*
 
 Here I clicked on the :guilabel:`light green area` , to find that there is a
 value of 80.6411, which means there are approximately 80 people in one pixel
 (square).
 
-.. image:: /static/socialisation/raster_examine_2.png
+.. image:: /static/training/socialisation/045_examineraster.png
+   :align: center
+   
+.. note:: In this dataset a pixel is 100m by 100m
 
-In this dataset a pixel is 100m by 100m
+9.  Use the :guilabel:`Identify Features` tool to select other pixels to find out 
+their value.
 
-:guilabel:`Click` on other pixels to find out their value.
+10. :guilabel:`Close` the **Identify Results** box
 
-9. :guilabel:`Click` Close
+11. Is each pixel really 100m by 100m? lets check. Use the :guilabel:`Measure Line` tool
 
-10. Is each pixel really 100m by 100m, lets check. Use the
-    :guilabel:`measure line tool`
-
-.. image:: /static/socialisation/measure.png
-
-.. note:: *It maybe easier to measure one pixel by zooming in further.*
+.. note:: It maybe easier to measure one pixel by zooming in further.
 
 The answer is yes, a pixel is 100 meter across, and if you measure from top
 to bottom it will also be 100 meter.
+
+.. image:: /static/training/socialisation/046_measuretest.png
+   :align: center
 
 As you can see I got 102 meters but this is only because its very hard to
 click on one corner of the pixel and then the other, unless I zoom in real
 close!
 
-.. image:: /static/socialisation/measure_test.png
+12. :guilabel:`Close` the **Measure** box
 
-11. :guilabel:`Click` Close
+13. Use the :guilabel:`Zoom to Layer` to go back to the full extent of the select layer.
 
-12. :guilabel:`Zoom back` to full extent using the Zoom Full tool
-
-.. image:: /static/socialisation/zoom_extent.png
-
-13. :guilabel:`Uncheck` all layers except
+14. :guilabel:`Uncheck` all layers except:
 
 * buildings
-
 * people
 
 
@@ -142,30 +147,31 @@ Flood Footprint in |project_name|
 Adding a Vector Layer
 .....................
 
-14. :guilabel:`Click` on the Add vector tool
+15. Select on the :guilabel:`Add Vector` tool
 
-.. image:: /static/socialisation/add_vector.png
+16. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE Projects*, 
+:guilabel:`Select` *flood_osm_bpbd18113_jakarta.shp*, :guilabel:`Open` in the **Open an 
+OGR Support** window and :guilabel:`Open` again in the **Source** window.
 
-15. :guilabel:`Click` on browse and navigate to |project_name| projects/data/
-    and select *flood_osm_bpbd18113_jakarta.shp* - click Open,
-    then click Open again.
-
-.. image:: /static/socialisation/jakarta18113_added.png
-
+.. image:: /static/training/socialisation/047_jakarta18113.png
+   :align: center
+   
 This dataset is the subvillage boundaries for Jakarta,
 during the floods in January this year the Provincial disaster mangers
 collected information about the flooding, one of which was the location of
 the flooded area by sub-village boundary.
 
-Lets examine this data by opening up its :guilabel:`attribute table`
+.. note:: The InaSAFE panel is currently showing a warning "Layer keywords missing:"
+we will address this concern in later steps.
 
-.. image:: /static/socialisation/openattributetable.png
+Lets examine this data by opening up its *attribute table*
 
-16. In the layer list :guilabel:`Right click` on the
-    *flood_osm_BPBD18113_jakarta* layers  and select *Open Attribute Table*
+17. Make sure the *flood_osm_bpbd18113_jakarta* is highlight (blue line in the 
+**Layer List**). Select the :guilabel:`Open Attribute Table` tool. 
 
-.. image:: /static/socialisation/attribute_table.png
-
+.. image:: /static/training/socialisation/048_attributetable.png
+   :align: center
+   
 OBJECTID:  Feature ID
 
 KAB_NAME:  District
@@ -177,50 +183,52 @@ KEL_NAME:  Village
 RW:        Sub-village
 
 affected:  1= affected,
-           NULL = not affected
+           NULL = not affected 
+           
+.. note:: This is the same information as the Identify Feature tool, but instead of just
+viewing one object information, you can see all of the object at once.
 
-17. :guilabel:`Close` the Attribute table
+18. :guilabel:`Close` the Attribute table
 
 Symbolising Vector
 ..................
 
-Now we are going to colour only the area that were affected
+Now we are going to stylise the subvillage administration boundary to only see the 
+affected = 1 areas. 
 
-18. :guilabel:`Double click` on *flood_osm_BPBD18113_jakarta* layers - this
+19. :guilabel:`Double click` on *flood_osm_BPBD18113_jakarta* layers - this
     will open up the properties table
 
-19. Make sure you are on the style tab
+20. Navigate to the style tab
 
-20. Select :guilabel:`Categorised`
+.. image:: /static/training/socialisation/049_styletab.png
+   :align: center
 
-.. image:: /static/socialisation/select_category_2.png
+21. Follow the below steps to stylise the subvillage boundaries as illustrated in the 
+picture and table below.
 
-21. :guilabel:`Select` attribute from the Column
+===========  	======================================================================
+**Number**	 	**Step**								
+-----------  	----------------------------------------------------------------------
+1			 	Select "Catergorized" from the drop down menu
+2				Select "affected" from the Column drop down menu
+3				Click "Classify"
+4				Highlight the row light blue "0 0"
+5				Click "Delete"
+6				Highlight the row dark blue "    "
+7				Click "Delete" 
+8				Confirm you only have 1 row left
+9				Close the **Layer Properties** window
+-----------  	----------------------------------------------------------------------
 
-.. image:: /static/socialisation/select_attribute.png
-
-22. Click on :guilabel:`Classify` (circle 1)
-
-.. image:: /static/socialisation/classify_2.png
-
-23. :guilabel:`Click` on 0  (circle 2)
-
-24. :guilabel:`Click Delete` (circle 3)
-
-25. :guilabel:`Click` on  _ (circle 4)
-
-26. :guilabel:`Click Delete`  (circle 3)
-
-27. Confirm that you only have 1 left
-
-.. image:: /static/socialisation/1_left.png
-
-28. :guilabel:`Click OK` (circle 6)
+.. image:: /static/training/socialisation/050_layerproperties.png
+   :align: center
 
 Below are the results
 
-.. image:: /static/socialisation/result.png
-
+.. image:: /static/training/socialisation/051_styleflood.png
+   :align: center
+   
 You have now symbolised your first layer!  You can see only the subvillage
 areas that were flooded on the 18th of January! Now, can we use this hazard
 layer in |project_name|?
@@ -228,29 +236,33 @@ layer in |project_name|?
 Adding Keywords
 ...............
 
-29. :guilabel:`Read` through the error message (that occurs when you
-    highlight *flood_osm_BPBD18113_jakarta* layer).  |project_name| has
-    identified that the layer does not have a keyword file.
+22. As previously pointed out the |project_name| panel is showing a warning. It is 
+explaining to us that the layer highlight *flood_osm_BPBD18113_jakarta* has no keywords.
+Lets follow the instructions and select the :guilabel:`InaSAFE Keyword` tool.
 
-.. image:: /static/user-docs/error-display.png
+.. image:: /static/training/socialisation/052_keyword.png
+   :align: center
 
-30. :guilabel:`Click` on the keyword editor
 
-.. image:: /static/socialisation/pencil.png
+23. In the *Keywords Editor* window you have an option of changing the Title, Category and 
+Subcategory. We are going to do just that by following the steps in the table below
 
-31. :guilabel:`Fill out` the title as
-    **Jakarta flooding on the 18th January 2013**
+==============  	======================================================================
+**Quick edit**	 	**Variable**								
+--------------  	----------------------------------------------------------------------
+Title				:kbd:`Jakarta flooding on the 18th January 2013`
+Category			Hazard
+Subcategory			flood[wet/dry]
+--------------  	----------------------------------------------------------------------
 
-.. image:: /static/socialisation/keyword_editor.png
+.. image:: /static/training/socialisation/053_keywordedited.png
+   :align: center
 
-32. For the Category :guilabel:`check` **Hazard**
-
-33. For Subcategory :guilabel:`select` **flood[wet/dry]**
-
-34. :guilabel:`Click OK`
+24. Close the Keyword editor: :guilabel:`OK`
 
 Lets run |project_name| again with this new flood hazard footprint
 
+For more information about Keywords :doc:`../user-docs/function_docs/keywords`
 
 Buildings within affected subvillages
 .....................................
