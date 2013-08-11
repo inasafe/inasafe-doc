@@ -50,7 +50,7 @@ We are now going to use the basic QGIS tools to examine the datasets.
 .. image:: /static/general/icon_zoomlayer		Zoom to Layer
 .. image:: /static/general/icon_zoomin			Zoom In
 .. image:: /static/general/add_vector			Add Vector Layer
---------------------------------------------	------------------------------------
+============================================    ====================================
 
 
 About Estimate Building Affected
@@ -220,7 +220,7 @@ picture and table below.
 7				Click "Delete" 
 8				Confirm you only have 1 row left
 9				Close the **Layer Properties** window
------------  	----------------------------------------------------------------------
+===========  	======================================================================
 
 .. image:: /static/training/socialisation/050_layerproperties.png
    :align: center
@@ -254,7 +254,7 @@ Subcategory. We are going to do just that by following the steps in the table be
 Title				:kbd:`Jakarta flooding on the 18th January 2013`
 Category			Hazard
 Subcategory			flood[wet/dry]
---------------  	----------------------------------------------------------------------
+==============  	======================================================================
 
 .. image:: /static/training/socialisation/053_keywordedited.png
    :align: center
@@ -354,7 +354,7 @@ You have now completed the following runs
 
 =============  =============  =============  ============  =============  ===================  =============
 **Hazard**     **Threshold**  **Data Type**  **Exposure**  **Data Type**  **Impact function**  **Data Type**
-=============  =============  =============  ============  =============  ===================  =============
+-------------  -------------  -------------  ------------  -------------  -------------------  -------------
 flood model    1.0m           Raster         People        Raster         Need Evacuation
 flood model    0.8m           Raster         People        Raster         Need Evacuation
 flood model    1.0m           Raster         Buildings     Vector         Be flooded
@@ -431,6 +431,6 @@ many *buildings*
 
 .. note:: *This may take about a minute to run*
 
-.. image:: /static/training/socialisation/059_aggregationresults.png
+.. image:: /static/training/socialisation/060_buildingaggregationresults.png
    :align: center
 

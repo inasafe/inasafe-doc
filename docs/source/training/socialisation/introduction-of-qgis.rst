@@ -209,7 +209,7 @@ Installing |project_name| through the QGIS plugin repository
 .. image:: /static/general/icon_batch			Batch Runner
 .. image:: /static/general/icon_save			Save Current Scenario
 .. image:: /static/general/icon_osm				OpenStreetMap downloader
---------------------------------------------	------------------------------------
+============================================    ====================================
 
 .. Note:: Later we will explore and use these tools.
 
@@ -255,7 +255,7 @@ Using the navigation tools below, zoom into your home.
 .. image:: /static/general/icon_zoomfull		Zoom to Full
 .. image:: /static/general/icon_zoomlast		Zoom Last
 .. image:: /static/general/icon_zoomnext		Zoom Next
---------------------------------------------	------------------------------------
+============================================    ====================================
 
 7. :guilabel:`Click` *zoom In*, draw a box (click and drag) over your country.
 
