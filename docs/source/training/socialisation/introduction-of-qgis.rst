@@ -123,13 +123,13 @@ Option Window
 
 To change the projection settings and acknowledge that QGIS is multilingual
 
-1. Go to Options window: :menuselection:`Settings --> Options`
-2. :guilabel:`Select` the **CRS** tab of the options menu
+#. Go to Options window: :menuselection:`Settings --> Options`
+#. :guilabel:`Select` the **CRS** tab of the options menu
 
 .. image:: /static/training/socialisation/016_crs.PNG
    :align: center
 
-3. :guilabel:`Check` *Enable on the fly reprojection by default* - This will
+#. :guilabel:`Check` *Enable on the fly reprojection by default* - This will
    enable that all spatial layers irrespective of their projection will
    follow the CRS allocated above
 
@@ -138,12 +138,12 @@ To change the projection settings and acknowledge that QGIS is multilingual
 
 .. Note:: This  will become default in the new version of QGIS 2.0
 
-4. :guilabel:`Select` on the **Locale** tab of the options menu
+#. :guilabel:`Select` on the **Locale** tab of the options menu
 
 .. image:: /static/training/socialisation/018_locale.PNG
    :align: center
 
-5. :guilabel:`Check` *Override system locale*, scroll through all the languages
+#. :guilabel:`Check` *Override system locale*, scroll through all the languages
    that QGIS have been translated into! We will stick with english for this
    training, so no action is needed - :guilabel:`Uncheck` *Override system locale*.
 
@@ -154,7 +154,7 @@ To change the projection settings and acknowledge that QGIS is multilingual
    translated into bahasa Indonesian so far. World Bank is currently funding
    for the translation of |project_name| into French and Portugal
 
-6. :guilabel:`Ok` in the bottom right corner of the Options window
+#. :guilabel:`Ok` in the bottom right corner of the Options window
 
 
 Installing Plugins
@@ -167,22 +167,22 @@ Installing |project_name| through the QGIS plugin repository
 
 .. Note:: You must be connected to the internet for this section
 
-1. Go to :menuselection:`Plugins --> Fetch Python Plugins...` 
+#. Go to :menuselection:`Plugins --> Fetch Python Plugins...` 
    This will take a couple of minutes for QGIS to contact its repository and 
    show the list of plugins available
 
-2. Type :kbd:`inasafe` into the filter box
+#. Type :kbd:`inasafe` into the filter box
 
 .. image:: /static/training/socialisation/020_inasafe_plugin.png
    :align: center
 
-3. :guilabel:`Select` |project_name| and :guilabel:`Install plugin` -
+#. :guilabel:`Select` |project_name| and :guilabel:`Install plugin` -
    this will take a couple of minutes for the plugin to download and install.
    
-4. A window should pop up saying: "Plugin installed successfully" :guilabel:`Ok`
+#. A window should pop up saying: "Plugin installed successfully" :guilabel:`Ok`
    and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
 
-5. You should now have an |project_name| panel on the right hand side of your
+#. You should now have an |project_name| panel on the right hand side of your
    screen.
 
 .. image:: /static/training/socialisation/021_inasafe_gettingstarted.png
@@ -190,7 +190,7 @@ Installing |project_name| through the QGIS plugin repository
 
 |project_name| also comes with a toolbar of its own
 
-6. To retrieve the |project_name| toolbar, :guilabel:`Right Click` on the top
+#. To retrieve the |project_name| toolbar, :guilabel:`Right Click` on the top
    tool bar and :guilabel:`Recheck` *plugin*
 
 .. image:: /static/training/socialisation/022_inasafetoolbar.png
@@ -220,20 +220,20 @@ OpenLayer Plugin
 
 Installing OpenLayer through the QGIS plugin repository
 
-1. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a
+#. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a
    couple of minutes for QGIS to contact its repository and show the list of
    plugins available.
-2. Type :kbd:`openlayers` into the filter box.
-3. :guilabel:`Select` *OpenLayer Plugin* then :guilabel: `Install plugin` - this will
+#. Type :kbd:`openlayers` into the filter box.
+#. :guilabel:`Select` *OpenLayer Plugin* then :guilabel: `Install plugin` - this will
    take a couple of minutes for the plugin to download and install.
-4. A window should pop up saying: "Plugin installed successfully"  :guilabel:`Ok`
+#. A window should pop up saying: "Plugin installed successfully"  :guilabel:`Ok`
    and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
-5. Hover mouse over :menuselection:`Plugins --> OpenLayer Plugin`
+#. Hover mouse over :menuselection:`Plugins --> OpenLayer Plugin`
 
 .. image:: /static/training/socialisation/023_openlayer.PNG
    :align: center
 
-6. :guilabel:`Select` *Add Bing Aerial layer*
+#. :guilabel:`Select` *Add Bing Aerial layer*
 
 .. image:: /static/training/socialisation/024_aerial_bing.png
    :align: center
@@ -257,26 +257,26 @@ Using the navigation tools below, zoom into your home.
 .. image:: /static/general/icon_zoomnext		Zoom Next
 ============================================    ====================================
 
-7. :guilabel:`Click` *zoom In*, draw a box (click and drag) over your country.
+#. :guilabel:`Click` *zoom In*, draw a box (click and drag) over your country.
 
-8. :guilabel:`Click` *Pan Map*, shift the map so your country is in the
+#. :guilabel:`Click` *Pan Map*, shift the map so your country is in the
    centre of the screen.
 
 .. Note:: If you make a mistake in your zooming, use *Zoom Last* tool.
 
-9. Navigate to your own house or work 
+#. Navigate to your own house or work 
 
-Indonesia
+**Indonesia**
 
 .. image:: /static/training/socialisation/025_indonesia.png
    :align: center
 
-Jakarta
+**Jakarta**
 
 .. image:: /static/training/socialisation/026_jakarta.png
    :align: center
    
-Menara Thamrin
+**Menara Thamrin**
 .. image:: /static/training/socialisation/027_mt.png
    :align: center
 

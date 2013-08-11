@@ -32,14 +32,14 @@ Introduction
 In this chapter you will run |project_name| in Jakarta to determine the
 impact of a flood model on both Jakarta's population and buildings.  The 
 
-1. :menuselection: `File --> Open Projects` 
+#. :menuselection: `File --> Open Projects` 
 
-2. A message box *Do you want to save the current project* :guilabel:`Don't Save`
+#. A message box *Do you want to save the current project* :guilabel:`Don't Save`
 
 .. image:: /static/training/socialisation/028_saveproject.png
    :align: center
 
-3. Navigate to the *InaSAFE_project* folder and :guilabel:`Select` *Jakarta_floods.qgs*, 
+#. Navigate to the *InaSAFE_project* folder and :guilabel:`Select` *Jakarta_floods.qgs*, 
    :guilabel:`Open`
 
 .. image:: /static/training/socialisation/029_jakartafloods.png
@@ -56,7 +56,7 @@ filed in already:
 * buildings
 * Be Flooded
 
-4. In the |project_name| panel :guilabel:`Click` on buildings, :guilabel:`Select` people,
+#. In the |project_name| panel :guilabel:`Click` on buildings, :guilabel:`Select` people,
    it now should have:
 
 * a flood similar to the 2007 Jakarta event
@@ -70,7 +70,7 @@ filed in already:
    changed from *Be Flooded* to *Need evacuation* this is dependant on the 
    combination of the hazard and exposure layers
 
-5. Lets run this scenario first - :guilabel:`Run` at the bottom right
+#. Lets run this scenario first - :guilabel:`Run` at the bottom right
    hand corner of the |project_name| panel.
 
 .. image:: /static/training/socialisation/031_run.png
@@ -111,12 +111,12 @@ breakdown of Youth, Adults and Elderly.
 Print Results
 .............
 
-6. :guilabel:`Print` at the bottom the |project_name| panel
+#. :guilabel:`Print` at the bottom the |project_name| panel
 
 .. image:: /static/training/socialisation/034_print.png
    :align: center
 
-7. Navigate to where you would like to save the pdf, add :kbd: `_1m` at the end of 
+#. Navigate to where you would like to save the pdf, add :kbd: `_1m` at the end of 
 *People_in_need_of_evacuation* :guilabel:`Save` 
 
 Two PDFs will be generated
@@ -139,39 +139,39 @@ Changing threshold
 What if the disaster manager has decided that people should be evacuated if they are in 
 80cm or more of water?
 
-8. :guilabel:`Show question form` found at the top of the |project_name| panel.
+#. :guilabel:`Show question form` found at the top of the |project_name| panel.
 
 .. image:: /static/training/socialisation/036_showquestion.png
    :align: center
 
-9. To change the impact function select :guilabel: `...` *Configure Impact Function 
-Parameter* which is found beside the *Need evacuation*
+#. To change the impact function select :guilabel: `...` *Configure Impact Function 
+   Parameter* which is found beside the *Need evacuation*
 
 .. image:: /static/training/socialisation/037_functionchange.png
    :align: center
 
-9. Type :kbd:`0.8` in the window
+#. Type :kbd:`0.8` in the window
 
 .. image:: /static/training/socialisation/038_configure.png
    :align: center
 
-10. :guilabel:`OK`
+#. :guilabel:`OK`
 
-11. :guilabel:`Run`
+#. :guilabel:`Run`
 
 .. todo:: How many people need to be evacuated? **Answer:**______________________ 
 Is this the answer you were expecting? **Answer:**_____________________
 
-12. :guilabel:`Print` at the bottom the |project_name| panel
+#. :guilabel:`Print` at the bottom the |project_name| panel
 
 .. image:: /static/training/socialisation/034_print.png
    :align: center
    
-13. Navigate to where you would like to save the pdf, add :kbd: `_80cm` at the end of 
-*People_in_need_of_evacuation* :guilabel:`Save`
+#. Navigate to where you would like to save the pdf, add :kbd: `_80cm` at the end of 
+   *People_in_need_of_evacuation* :guilabel:`Save`
 
-14. Before moving onto buildings, lets turn some layers off. In your Layer
-    panel you will now have 5 layers, we are going to uncheck everything but:
+#. Before moving onto buildings, lets turn some layers off. In your Layer
+   panel you will now have 5 layers, we are going to uncheck everything but:
 
 * a flood similar to the 2007 Jakarta event
 * buildings
@@ -182,19 +182,19 @@ Is this the answer you were expecting? **Answer:**_____________________
 Buildings Affected
 ------------------
 
-15. Confirm that the |project_name| panel is the same as the image below
+#. Confirm that the |project_name| panel is the same as the image below
 
 .. image:: /static/training/socialisation/040_inasafebuidlingflood.png
    :align: center
 
-16. Notice that if you click on the *building* the people option is not available,
-	this is because *people* is not checked in the **Layer List**.
+#. Notice that if you click on the *building* the people option is not available,
+   this is because *people* is not checked in the **Layer List**.
 
 .. note:: If you want to be able to select layers within the |project_name| panel that are
    not checked in the **Layer List** you can modify the |project_name| options.
    We will go through the option menu later in the training.
 
-17. :guilabel:`Run` the new combination.
+#. :guilabel:`Run` the new combination.
 
 .. image:: /static/training/socialisation/041_buildingfloodresults.png
    :align: center
@@ -228,30 +228,30 @@ buildings by aggregation boundary.
 **Source:** of the Hazard and Population Datasets
 
 
-18. :guilabel:`Print` at the bottom the |project_name| panel
+#. :guilabel:`Print` at the bottom the |project_name| panel
 
 .. image:: /static/training/socialisation/034_print.png
    :align: center
    
-19. Navigate to where you would like to save the pdf, add :kbd: `_1m` at the end of 
-*Buildings_inundated* :guilabel:`Save`
+#. Navigate to where you would like to save the pdf, add :kbd: `_1m` at the end of 
+   *Buildings_inundated* :guilabel:`Save`
 
 
 Optional - Change the threshold to 0.8
 ......................................
 
-20. Check that |project_name| has the following in the drop-down boxes
+#. Check that |project_name| has the following in the drop-down boxes
 
 * a flood similar to the 2007 Jakarta event
 * buildings
 * Be Flooded
 
-20. To configures the impact function select :guilabel: `...` *Configure Impact Function 
+#. To configures the impact function select :guilabel: `...` *Configure Impact Function 
 Parameter* which is found beside the *Be flooded*
 
-21. Type :kbd:`0.8` in the window
+#. Type :kbd:`0.8` in the window
 
-22. :guilabel:`Run`
+#. |project_name| :guilabel:`Run`
 
-23. Print and save accordingly
+#. |project_name| :guilabel:`Print` and save accordingly
 
