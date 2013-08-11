@@ -387,52 +387,50 @@ of islands!)
 :guilabel:`Select` *district_osm_jakarta.shp*, :guilabel:`Open` in the **Open an 
 OGR Support** window and :guilabel:`Open` again in the **Source** window.
 
-
-
-.. image:: /static/socialisation/page_33.jpg
+.. image:: /static/training/socialisation/056_district.png
    :align: center
 
-25. :guilabel:`Click` Open
+39. This layer already has its keywords filled out, lets go through these:
 
-26. :guilabel:`Click` once on the district of Jakarta Layer
+* **Category** postprocessing - *Layer to be used after impact is derived*
 
-.. image:: /static/socialisation/page_33_2.jpg
+* **Aggregation attribute** KAB_NAME - *The name of the attribute you wan to aggregate*
+
+* **Subcategory** aggregation
+
+* **Title** District's of Jakarta
+
+* **Source** OpenStreetMap
+
+* **Female ratio attribute** PEREMPUAN - *Attribute name of female percentage per district*
+
+By looking at the district layer attribute table you can see that the names of the 
+attribute correspond.
+
+.. image:: /static/training/socialisation/057_districtattribute.png
    :align: center
 
-27. :guilabel:`Click` on the drop down menu for ´Aggregation results by´ and
-    :guilabel:`Select` Subdistrict of Jakarta
+40. :guilabel:`Select` the *District's of Jakarta* from the drop down menu under 
+*Aggregate results by*, and check that the other sections are field out according to 
+the image below.
 
-.. image:: /static/socialisation/page_33_3.jpg
+.. image:: /static/training/socialisation/058_aggregationselect.png
    :align: center
 
-28. Change the threshold back to 1.0 (refer point 7)
+41. |project_name|:guilabel:`Run` 
 
-29. Run |project_name| again
+.. note:: *This may take about a minute to run*
 
-30. :guilabel:`Click` |project_name| Print, save accordingly
+.. image:: /static/training/socialisation/059_aggregationresults.png
+   :align: center
+   
+42. Lets see what the results would be for buildings, change How many *people* to How 
+many *buildings*
 
-Keywords Editor
----------------
+43. |project_name|:guilabel:`Run` 
 
-In the next chapter we will explore the keyword editor for the hazard and
-exposure layers.
+.. note:: *This may take about a minute to run*
 
-However the Keyword editor for postprocessing is slightly different. You are
-able to :guilabel:`Select` an attribute to provide the percentage of females
-per aggregation area. If there is no such layer |project_name| defaults at
-50% or 0.5.
-
-If you would like more detail please ask at the end of the session
-
-.. image:: /static/socialisation/aggregation_keyword.png
+.. image:: /static/training/socialisation/059_aggregationresults.png
    :align: center
 
-31. Keywords Editor window will pop up, press OK
-
-32. Scroll down the bottom of the results, you will see disaggregation of
-the population data and demographics by district.
-
-33. :guilabel:`Click` |project_name| Print, save accordingly
-
-.. image:: /static/socialisation/page_34.jpg
-   :align: center
