@@ -24,7 +24,7 @@ textual statistical summary and action questions.
 |project_name| is framed around questions such as:
 
 "In the event of **a flood similar to the 2007 Jakarta event** how many
-*people* might need *evacuating*."
+**people** might need **evacuating**."
 
 .. image:: /static/training/socialisation/001_inasafe_concept.png
 
@@ -124,10 +124,10 @@ Aggregation.
 Hazard
 ......
 
-  Hazard can be seen as a condition, phenomenon, or human activity that
-  potentially cause victims, losses or destruction to social structure and
-  environment. Events or phenomena that frequently are seen as hazard
-  potentials include earthquakes, tsunamis, floods, landslides, tornadoes etc.
+Hazard can be seen as a condition, phenomenon, or human activity that
+potentially cause victims, losses or destruction to social structure and
+environment. Events or phenomena that frequently are seen as hazard
+potentials include earthquakes, tsunamis, floods, landslides, tornadoes etc.
 
 For |project_name|, hazard data refers to a singular disaster scenario (i.e.
 a Mw 7.8 earthquake or a volcanic eruption) that has been developed through
@@ -166,10 +166,10 @@ The input Hazard layer must have:
 Exposure
 ........
 
-  For |project_name|, exposure data is refers to as population density (number
-  of people found in a certain area) or important infrastructure (buildings,
-  bridges etc). that become a focus of interest when calculating the impact of
-  a specific hazard.
+For |project_name|, exposure data is refers to as population density (number
+of people found in a certain area) or important infrastructure (buildings,
+bridges etc). that become a focus of interest when calculating the impact of
+a specific hazard.
 
 +--------------------------+-------------------------------------------+
 |       Exposure           |                  Type                     |
@@ -196,12 +196,12 @@ The input Exposure layer must have:
 Aggregation
 ............
 
-  For |project_name| an aggregation layer is division of the hazard extent by
-  boundaries not relating to the hazard, more specifically administration
-  boundaries such as districts, villages etc. This allows for targeted response
-  by the local governments, and an understanding of the division of impacted
-  output. Due to time constraints aggregation will only be included within the
-  optional section.
+For |project_name| an aggregation layer is division of the hazard extent by
+boundaries not relating to the hazard, more specifically administration
+boundaries such as districts, villages etc. This allows for targeted response
+by the local governments, and an understanding of the division of impacted
+output. Due to time constraints aggregation will only be included within the
+optional section.
 
 Impact Function
 ---------------
@@ -274,3 +274,5 @@ density) and the non-spatial layer will have statistics on the minimum needs
 based on the number of people that ‘need evacuating’.
 
 .. image:: /static/training/socialisation/002_output_data.png
+
+

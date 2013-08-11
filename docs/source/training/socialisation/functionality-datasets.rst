@@ -1,12 +1,12 @@
 .. _functionality-datasets:
 
-Functionality and Datasets to be used in Practical
-==================================================
+Functionality and Datasets
+==========================
 
 Before we dive into using QGIS and |project_name|, this chapter will explain
 |project_name|  current functionality, the functionality we will touch on
 during this short |project_name| course as well as the spatial datasets we
-will be using (located at **link to data**).
+will be using.
 
 Current Functionality of |project_name|
 ---------------------------------------
@@ -28,6 +28,7 @@ Earthquake  Raster            Shakemap         N/A                  MMI         
 Tsunami     Raster            Depth            N/A                  m                      Threshold (m)
 ==========  ================  ===============  ==================  ======================  ===============
 
+
 **Exposure:**
 
 =============  ================  =================  ==================  =======================
@@ -38,8 +39,10 @@ Structures     Polygon           Structure type     type                text
 Structures     Point             Structure type     type                text
 =============  ================  =================  ==================  =======================
 
+
 .. note:: For information on what is a Raster, Vector and the different Vector objects 
 please go to :doc:`rastervsvector`
+
 
 |project_name| is a dynamic tool that can easily be adapted to other types of
 hazard and exposure layers.  The beauty of |project_name| being open source,
@@ -47,8 +50,10 @@ is that anyone that has a background in programming would be able to make
 their own Impact function. Please see the |project_name| website for more
 information go to http://inasafe.org
 
+
 .. note:: For information on |project| functions please go to 
 :doc:`../user-docs/functions_doc`
+
 
 Exposure Layers Used in Practical
 ---------------------------------
@@ -228,3 +233,5 @@ Tsunami
 
 .. image:: /static/training/socialisation/009_tsunami.png
    :align: center
+
+

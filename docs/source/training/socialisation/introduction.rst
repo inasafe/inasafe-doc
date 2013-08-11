@@ -47,7 +47,7 @@ Schedule
 ========   ==================================================================
 **Time**   **Activity**
 --------   ------------------------------------------------------------------
-30min      Overview of |project_name| (Concept of|project_name|, inputs and results)
+30min      Overview of |project_name| (Concept of |project_name|, inputs and results)
 30min      Introduction to the Practical exercise
 30min      Introduction of QGIS (Concept, screen layout, setup and install plugin)
 20min      Run basic |project_name| (Flooding in Jakarta)
@@ -113,3 +113,5 @@ Author:
 
 `Kristy Van Putten <kristy.vanputten@gmail.com>`_, Spatial Analyst/Data
 manager |AIFDR|, |AusAID|
+
+

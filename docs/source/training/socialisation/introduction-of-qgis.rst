@@ -4,7 +4,7 @@ Introduction to QGIS
 ====================
 
 .. image:: /static/training/socialisation/010_qgis_logo.png
-   :align: center
+   :align: left
 
 **Objectives:**
 
