@@ -4,7 +4,8 @@
   compact as possible. The Option Section should be kept up to date in the
   User manual and should be copy/pasted after updating it there.
 
-======================
+.. _helpful-hints-and-tips:
+
 Helpful Hints And Tips
 ======================
 **Objectives:**

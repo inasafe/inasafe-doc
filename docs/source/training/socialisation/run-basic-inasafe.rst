@@ -1,3 +1,5 @@
+.. _run-basic-inasafe:
+
 Run basic |project_name|
 ========================
 
@@ -244,7 +246,7 @@ Optional - Change the threshold to 0.8
 * buildings
 * Be Flooded
 
-20. To change the impact function select :guilabel: `...` *Configure Impact Function 
+20. To configures the impact function select :guilabel: `...` *Configure Impact Function 
 Parameter* which is found beside the *Be flooded*
 
 21. Type :kbd:`0.8` in the window

@@ -1,4 +1,5 @@
-===============================
+.. _other-hazards:
+
 Other Hazards in |project_name|
 ===============================
 

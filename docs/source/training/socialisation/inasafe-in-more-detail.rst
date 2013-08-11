@@ -1,4 +1,5 @@
-=============================
+.. _insafe-in-more-detail:
+
 |project_name| in More Detail
 =============================
 
@@ -147,7 +148,7 @@ Flood Footprint in |project_name|
 Adding a Vector Layer
 .....................
 
-15. Select on the :guilabel:`Add Vector` tool
+15. Use the :guilabel:`Add Vector` tool
 
 16. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE Projects*, 
 :guilabel:`Select` *flood_osm_bpbd18113_jakarta.shp*, :guilabel:`Open` in the **Open an 
@@ -267,32 +268,34 @@ For more information about Keywords :doc:`../user-docs/function_docs/keywords`
 Buildings within affected subvillages
 .....................................
 
-35. :guilabel:`Check` that |project_name| has the following in the drop-down
-    boxes
+25. Confirm that the |project_name| window has the following its drop down menu.
 
-.. image:: /static/socialisation/inasafe_floodpolygon.png
-
+.. image:: /static/training/socialisation/054_inasafepanel.png
+   :align: center
+   
 * Jakarta flooding on the 18th January 2013
 
 * buildings
 
 * Be Flooded
 
-36. :guilabel:`Click Run`
+26. |project_name|:guilabel:`Run` 
 
 .. note:: *This may take about a minute to run*
 
-37. How many estimated buildings were flooded?
+.. todo:: How many estimated buildings were flooded? **Answer**  ___________________
 
-Answer  _____________________________________
+27. Read through the |project_name| results, how different is this to the previous 
+|project_name| building analysis?
 
-38. Take some time to :guilabel:`examine` the results,
-    read through the |project_name| window
+.. todo:: Why are the results so different? *Consider the diferences between the hazard
+layers, model vs footprint*. **Answer**  ______________ Which hazard is more accurate, or 
+are there other factors to consider?
 
-39. :guilabel:`Click InaSAFE Print`, save accordingly
+28. |project_name|:guilabel:`Print`, save accordingly
 
 Now that you have run |project_name| to find out how many buildings might be
-affected, lets find out how many people.
+affected by the affected subvillage boundaries, lets find out how many people.
 
 Evacuation as a percentage
 ..........................
@@ -305,12 +308,11 @@ Evacuation as a percentage
 
 Instead of determining how many people will be evacuated by  a spatial area,
 this scenario used the affected population. |project_name| asks the user to
-input a percentage of the affected population that could be evacuated.
+input a percentage of the affected population that may need evacuating.
 
-40. :guilabel:`Un-check` buildings in the layer panel and recheck people
+29. :guilabel:`Uncheck` *buildings* in the **Layer List** and :guilabel:`Check` *people*
 
-41. :guilabel:`Check` that |project_name| has the following in the drop-down
-    boxes
+30. Confirm that the |project_name| window has the following its drop down menu.
 
 * Jakarta flooding on the 18th January 2013
 
@@ -318,30 +320,32 @@ input a percentage of the affected population that could be evacuated.
 
 * Need Evacuation
 
-42. :guilabel:`Click` on the impact function editor (pencil)
+31. To configure the impact function select :guilabel: `...` *Configure Impact Function 
+Parameter* which is found beside the *Need Evacuation*
 
-.. image:: /static/socialisation/inasafe_pop.png
+.. image:: /static/training/socialisation/055_inasafeconfigure.png
+   :align: center
+   
+.. note:: Within the *Configure Impact Function Parameter* window you are able to change
+not only the percentage of evacuated people but also the ratio of youth/adult/elder and 
+the amount of minimum needs per person per week.  *Improvement: need to add units to 
+minimum needs
+   
+32. In the options tab you can see that default is 1, for this first analysis we will 
+keep this figure. :guilabel:`OK`
 
-43. As you can see the default is 1, :guilabel:`Click OK`
-
-.. image:: /static/socialisation/evacuation_per.png
-
-44. :guilabel:`Run` |project_name|
+33. |project_name|:guilabel:`Run` 
 
 .. note:: *This may take about a minute to run*
 
-45. How many people were evacuated?
+.. todo:: How many people were evacuated? **Answer** __________________________
+How many people were affected? **Answer** __________________________
 
-Answer  _______________________________________
+34. Read through the |project_name| results, how different is this to the previous 
+|project_name| people analysis?
 
-46. How many people were affected?
+35. |project_name| :guilabel:`Print`, save accordingly
 
-Answer  _______________________________________
-
-47. Take some time to examine the results, read through the |project_name|
-    window
-
-48. :guilabel:`Click` |project_name| Print, save accordingly
 
 Comparing Results - Optional
 ----------------------------
@@ -358,24 +362,32 @@ flood 180113                  Vector         Buildings     Vector         Be flo
 flood 180113   1%             Vector         People        Raster         Need Evacuation
 =============  =============  =============  ============  =============  ===================  =============
 
+36. Complete the last column of the above table. For more information on data type
+go to :doc:`rastervsvector`
 
-49. Please :guilabel:`complete` the Data Type for each impact layer you have
-    created through |project_name|
+.. todo: How different are the results? **Answer** __________________________,
+Why are they different? **Answer** __________________________
 
-50. :guilabel:`Compare` between results, 1. How different are the results,
-    2. Why are they different?
 
-1. Answer _____________________________________________________
-
-2. Answer _____________________________________________________
-
-Basic Aggregation - Optional
+Basic Aggregation
 ----------------------------
 
-23. :guilabel:`Click` Add vector button .. image:: /static/socialisation/
+Going through this training, you probably thinking thats great but what if I want to 
+breakdown the impacted results by an administration boundary, in this section we show you 
+how.
 
-24. Navigate to the data folder and :guilabel:`Select` |project_name|
-    projects/data/district_osm_jakarta.shp
+First we need to add an administration boundary, the boundary we are going to use is the 
+mainland district boundaries of Jakarta (Jakarta has 6 districts, but we will be only 
+looking at 5 because the 6th is the Thousand Island -as the name suggest its a huge amount
+of islands!)
+
+37. Use the :guilabel:`Add Vector` button 
+
+38. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE Projects*, 
+:guilabel:`Select` *district_osm_jakarta.shp*, :guilabel:`Open` in the **Open an 
+OGR Support** window and :guilabel:`Open` again in the **Source** window.
+
+
 
 .. image:: /static/socialisation/page_33.jpg
    :align: center

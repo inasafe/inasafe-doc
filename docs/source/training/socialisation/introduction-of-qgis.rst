@@ -1,4 +1,5 @@
-====================
+.. _introduction-of-qgis:
+
 Introduction to QGIS
 ====================
 
