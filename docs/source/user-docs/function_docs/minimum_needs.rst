@@ -3,7 +3,29 @@
 Minimum Needs Tool
 ==================
 
-This tool calculates the minimum needs for evacuated people.
+The purpose of the minimum needs tool is to provide a quick method of
+calculating support requirements (in terms of food, water etc.) for displaced
+persons.
+
+The minimum needs are based on 'Perka 7/2008' according to the following
+formulas:
+
+* 400g rice per person per day (2.8kg per week).
+* 2.5l drinking water per person per day (17.5l per week).
+* 15l clean water per person per day (105l per week).
+* 1 family kit per family per week (assumes 5 people per family which is
+  not specified in perka).
+* 20 people per toilet.
+
+.. note:: In the current version of InaSAFE, these guidelines cannot be
+    adjusted by the user. In a future version we will provide this facility.
+
+In order to use this tool, you need to first load a polygon layer in QGIS that
+contains areas (e.g. administrative areas) with an attribute that represents
+the number of displaced people in each area.
+
+When the layer is loaded, click on the :guilabel:`Minimum Needs` tool in the
+toolbar:
 
 .. figure:: /static/user-docs/minimum_needs_tool.*
    :scale: 75 %
@@ -12,15 +34,11 @@ This tool calculates the minimum needs for evacuated people.
 
    Minimum Needs Tool
 
-To use this tool effectively:
+In the dialog that appears, choose the QGIS layer that contains the
+administrative boundaries and then select the attribute in that layer that
+represents the number of displaced people.
 
-Load a polygon layer in QGIS. Typically the layer will represent
-administrative districts where people have gone to an evacuation center.
-Ensure that the layer has an INTEGER attribute for the number of displaced
-people associated with each feature.
-Use the pick lists below to select the layer and the population field and
-then press :guilabel:`OK`.
-A new layer will be added to QGIS after the calculation is complete. The
-layer will contain the minimum needs per district/administrative boundary.
+When you are ready, press the :guilabel:`OK` button on the dialog.
 
-
+After the analysis is completed, new keywords will be associated with the
+layer that indicate the needs according to the formulas defined above.
