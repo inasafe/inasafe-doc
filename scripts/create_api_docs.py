@@ -171,6 +171,7 @@ def get_inasafe_documentation_path():
 
     return inasafe_code_path
 
+
 def clean_api_docs_dirs():
     # remove old api-docs if it exists and recreate it
     inasafe_docs_path = os.path.abspath(

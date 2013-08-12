@@ -7,6 +7,8 @@ Changelog for version |release|
 -------------------------------
 * Zero impact or "all is well" handling. See
   https://github.com/AIFDR/inasafe/issues/583
+* Support minimum needs parameter customisation for impact functions where
+  impact is on population.
 
 Changelog for version 1.1.0
 ---------------------------
