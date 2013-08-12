@@ -418,17 +418,17 @@ attribute correspond.
 .. image:: /static/training/socialisation/058_aggregationselect.png
    :align: center
 
-41. |project_name|:guilabel:`Run` 
+#. |project_name|:guilabel:`Run` 
 
 .. note:: *This may take about a minute to run*
 
 .. image:: /static/training/socialisation/059_aggregationresults.png
    :align: center
    
-42. Lets see what the results would be for buildings, change How many *people* to How 
-many *buildings*
+#. Lets see what the results would be for buildings, change How many *people* to How 
+   many *buildings*
 
-43. |project_name|:guilabel:`Run` 
+#. |project_name|:guilabel:`Run` 
 
 .. note:: *This may take about a minute to run*
 
