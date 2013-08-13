@@ -40,8 +40,8 @@ Structures     Point             Structure type     type                text
 =============  ================  =================  ==================  =======================
 
 
-.. note:: For information on what is a Raster, Vector and the different Vector objects 
-please go to :doc:`rastervsvector`
+.. note:: For information on what is a Raster, Vector and the different
+   Vector objects please go to :doc:`rastervsvector`
 
 
 |project_name| is a dynamic tool that can easily be adapted to other types of
@@ -51,9 +51,8 @@ their own Impact function. Please see the |project_name| website for more
 information go to http://inasafe.org
 
 
-.. note:: For information on |project| functions please go to 
-:doc:`../user-docs/functions_doc`
-
+.. note:: For information on |project_name| functions please go to
+   :doc:`../../user-docs/functions_doc`
 
 Exposure Layers Used in Practical
 ---------------------------------

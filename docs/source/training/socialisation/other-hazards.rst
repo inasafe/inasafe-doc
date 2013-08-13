@@ -35,7 +35,7 @@ impact? |project_name| needs your help!.
    **File/Open Project...** , :guilabel:`navigate` to |project_name| projects
    and select Volcano_Indonesia
 
-.. image:: /static/socialisation/volcanoes.png
+.. image:: /static/socialisation/volcanoes.*
 
 Select Feature and Save
 -----------------------
@@ -53,14 +53,14 @@ Select Feature and Save
    layer is centre  on the map canvas
 8. Close Attribute Table (circle 6)
 
-.. image:: /static/socialisation/merapi_attribute2.png
+.. image:: /static/socialisation/merapi_attribute2.*
    :align: center
 
 9. :guilabel:`Click` on the zoom to selected tool to zoom in further.
    :guilabel:`Keep clicking` the tool until you get to an extent similar to the
    one below. (The yellow triangle is Merapi)
 
-.. image:: /static/socialisation/merapi2.png
+.. image:: /static/socialisation/merapi2.*
    :align: center
 
 Now that we know where Merapi is, and have check that it is in fact in the
@@ -72,7 +72,7 @@ right location, we are going to make a hazard layer with just this point.
 12. Check “Add saved file to map” (circle 2)
 13. Click OK (circle 3)
 
-.. image:: /static/socialisation/save_selection.png
+.. image:: /static/socialisation/save_selection.*
    :align: center
 
 14. :guilabel:`Uncheck` Volcanoes in the layer window.
@@ -87,7 +87,7 @@ time to examine the ‘dot’.
 .. Note:: For the Information and Measurement tool to work you need to have
    the Merapi layer highlighted in the layer window.
 
-.. image:: /static/socialisation/save_selection.png
+.. image:: /static/socialisation/save_selection.*
    :align: center
 
 Keywords
@@ -102,7 +102,7 @@ layer, so lets make one!
 20. For Subcategory select :guilabel:`volcano`
 21. :guilabel:`Click OK`
 
-.. image:: /static/socialisation/merapi_keyword.png
+.. image:: /static/socialisation/merapi_keyword.*
    :align: center
 
 Configure and Run |project_name|
@@ -125,7 +125,7 @@ As a default |project_name| has made 3 hazard areas:
 * 3-5 km
 * 5-10 km
 
-.. image:: /static/socialisation/impact_function_config.png
+.. image:: /static/socialisation/impact_function_config.*
    :align: center
 
 .. Note:: that its written 3,5,10 so if you wanted Vent-2,
@@ -183,7 +183,7 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
     :guilabel:`click` on each of them to read the keywords in the
     |project_name| window
 
-.. image:: /static/socialisation/padang_earthquake2.png
+.. image:: /static/socialisation/padang_earthquake2.*
    :align: center
 
 30. Notice the difference between the first **people** layer and the second,
@@ -204,12 +204,12 @@ enough memory. You will recall that there is another **people** layer,
 the difference is the size of the pixel, the one we are trying to run is 100
 m by 100 m and the one we will run is 1km by 1km.
 
-.. image:: /static/socialisation/memory_error.png
+.. image:: /static/socialisation/memory_error.*
    :align: center
 
 **Basically less pixels less memory need**
 
-.. image:: /static/socialisation/cell_size.png
+.. image:: /static/socialisation/cell_size.*
    :align: center
 
 33. :guilabel:`Select` the second “people” in the drop down menu
@@ -277,7 +277,7 @@ of a Magnitude 8.1 earthquake generating a Tsunami that impact Maumere.
 You will see that there is 3 layers in the layer panel,
 click on each of them to read the keywords in the |project_name| window.
 
-.. image:: /static/socialisation/maumere_tsunami2.png
+.. image:: /static/socialisation/maumere_tsunami2.*
    :align: center
 
 .. Note:: The InaSAFE functionality for Tsunami and floods are very similar,
@@ -315,7 +315,7 @@ click on each of them to read the keywords in the |project_name| window.
 Map Canvas Extent
 -----------------
 
-.. image:: /static/socialisation/maumere_zoomin2.png
+.. image:: /static/socialisation/maumere_zoomin2.*
    :align: center
 
 54. Try :guilabel:`zooming` into one section of the tsunami
@@ -337,5 +337,3 @@ You have now gone through |project_name| using 4 different natural hazards,
 changing a variety of paramaters and analysing the results.  This chapter has
 been designed to help you understand a little more about |project_name| as
 well as where you can go for help.
-
-
