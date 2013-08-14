@@ -101,8 +101,7 @@ listed in the :guilabel:`Might` combo.
 The chosen impact function can be configured (if applicable) by pressing the
 small ellipses (...) button next to the chosen impact function.
 
-
-XXXX Werner need a screenshot of the impact function parameters dialog.
+This is explained in more detail below under :ref:`analysis_parameters`
 
 As of InaSAFE 1.2, you can now also choose an aggregation layer. Aggregation
 allows you to specify an additional layer when defining the analysis criteria.
