@@ -3,8 +3,8 @@
 Converter
 =========
 
-The imported file can be used in InaSAFE as an input for
-impact functions that require and earthquake layer.
+The imported file can be used in InaSAFE as an input for impact functions
+that require an earthquake layer.
 
 .. figure:: /static/user-docs/converter.*
    :scale: 75 %

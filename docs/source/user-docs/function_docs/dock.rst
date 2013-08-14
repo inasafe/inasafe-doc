@@ -87,15 +87,36 @@ You may be wondering how the |project_name| plugin determines whether a layer
 should be listed in the :guilabel:`In the event of` or :guilabel:`How many`
 combo boxes? The plugin relies on simple keyword metadata to be associated
 with each layer.
+
 The keyword system is described in detail in :doc:`keywords`.
 Each layer that has a keyword allocating it's **category** to **hazard** will
 be listed in the :guilabel:`In the event of` combo.
-Similarly, a **category** of **exposure** in the keyw`ords for a layer will
+Similarly, a **category** of **exposure** in the keywords for a layer will
 result in it being listed under the :guilabel:`How many` combo.
 
 |project_name| uses the combination of **category**, **subcategory**, **units**
 and **datatype** keywords to determine which **impact functions** will be
 listed in the :guilabel:`Might` combo.
+
+The chosen impact function can be configured (if applicable) by pressing the
+small ellipses (...) button next to the chosen impact function.
+
+
+XXXX Werner need a screenshot of the impact function parameters dialog.
+
+As of InaSAFE 1.2, you can now also choose an aggregation layer. Aggregation
+allows you to specify an additional layer when defining the analysis criteria.
+This layer will be used to provide a by-area breakdown of the results of the
+analysis. For example if you are carrying out an analysis for a city, you can
+use district areas within the city to provide per-area results.
+In the absence of an aggregation layer, the analysis extent is used as the
+aggregation unit. To use this option you need to load a polygon based layer
+into QGIS that represents the areas you wish to summarise by.
+
+.. note:: After running an analysis, the question area is hidden to maximise
+    the amount of space allocated to the results area (see below). You can
+    re-open the question area at any time by pressing the :guilabel:`Show
+    question form` button.
 
 The Results Area
 ----------------
