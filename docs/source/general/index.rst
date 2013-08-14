@@ -25,4 +25,5 @@ If you cannot find these issues happening anymore, please report back.
    screenshots
    known_issues
    changelog
+   governance/index
 
