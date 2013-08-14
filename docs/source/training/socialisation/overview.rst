@@ -16,10 +16,9 @@ emergency managers need to answer questions like:
 - which hospitals can still take patients; and
 - which roads will be closed?
 
-Conceptually |project_name| combines one exposure layer (e.g. buildings) with
-one hazard scenario (e.g. flooding) and returns a spatial impact layer along with
-textual statistical summary and action questions.
-
+Conceptually |project_name| combines one exposure layer (e.g. location of buildings) with
+one hazard scenario (e.g. flooding footprint) and returns a spatial impact layer along 
+with textual statistical summary and action questions.
 
 |project_name| is framed around questions such as:
 
@@ -198,10 +197,11 @@ Aggregation
 
 For |project_name| an aggregation layer is division of the hazard extent by
 boundaries not relating to the hazard, more specifically administration
-boundaries such as districts, villages etc. This allows for targeted response
-by the local governments, and an understanding of the division of impacted
-output. Due to time constraints aggregation will only be included within the
-optional section.
+boundaries such as districts, villages etc. Instead of just knowing the total 
+number of people affected by the hazard, |project_name| is able to aggregate
+allowing the user know how many people are affected in a certain administration 
+area. Hence the local governments will be able understand the impact to their
+specific area.
 
 Impact Function
 ---------------

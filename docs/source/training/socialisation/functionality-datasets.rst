@@ -28,6 +28,7 @@ Earthquake  Raster            Shakemap         N/A                  MMI         
 Tsunami     Raster            Depth            N/A                  m                      Threshold (m)
 ==========  ================  ===============  ==================  ======================  ===============
 
+KRB = Kawansan Rawan Bencana
 
 **Exposure:**
 
