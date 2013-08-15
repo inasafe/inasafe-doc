@@ -3,9 +3,9 @@
 Save Scenario
 =============
 
-The Save current scenario tool lets you save scenarios (:ref:`save_scenario`)
-and batch run them again in the batch runner tool
-(:ref:`toolbar_batch_runner`) in one go:
+The Save current scenario tool lets you save scenarios
+(:ref:`toolbar_save_scenario`) and batch run them again in the batch runner
+tool (:ref:`batch_runner`) in one go:
 
 .. figure:: /static/user-docs/save_scenario.*
    :scale: 75 %

@@ -31,7 +31,7 @@ rm -rf ${BUILDDIR}
 mkdir -p ${BUILDDIR}
 
 # output dirs
-HTMLDIR=`pwd`/../../output-app-docs/html
+HTMLDIR=`pwd`/../../../output-app-docs/html
 mkdir -p ${HTMLDIR}
 
 VERSION=`cat conf.py | grep "version = '.*'" | grep -o "[0-9].[0-9]"`

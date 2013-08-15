@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-08-15 13:11\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/user-docs/application-help/options.rst:8
+# da767d3454dc4f78bd4e9bbf0ca89f21
+msgid "Options"
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:10
+# 349d446a219446c682a001a30c78081a
+msgid "The |project_name| plugin provides an options dialog which allows you to define various options relating to how |project_name| will behave. The options dialog can be launched by clicking on the |project_name| plugin toolbar's options icon (as shown below) or by doing :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:21
+# ee5d2f871e5e4564a422a442c67fb542
+msgid "Options icon"
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:23
+# fbfff851f1a4477aab0939c3cf1cc4e9
+msgid "Then the dialog will appear, looking something like this:"
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:30
+# 26fc0e4876d04c43abeaca88191a1236
+msgid "Options dialog"
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:34
+# 003d4c1ec7104f56bae524465a86a369
+msgid "You can click on the :guilabel:`Help` button at any time and it will open the help documentation browser to this page."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:37
+# 39a0b155054c4ab59e002516bdeff0cd
+msgid "The following options are available on the :guilabel:`Options Dialog`:"
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:39
+# 47f0e6506c244e2ebe9202794202489d
+msgid ":guilabel:`Only show visible layers in the InaSAFE dock` : This option will determine whether **all** (when unchecked) hazard and impact layers should be listed in the |project_name| dock's combo boxes. or (when checked) only visible layers."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:43
+# 37706530e4424751bf493fe3876d5cee
+msgid ":guilabel:`Set QGIS layer name from 'title' in keywords` : This option will (when enabled) cause QGIS to name layers in the :guilabel:`Layers tree` using the `title` keyword in the layer's keywords file. If the layer has no 'title' in its keywords, or it has no keywords at all, the normal QGIS behaviour for naming layers will apply."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:48
+# 972c457ce228499d960622ab74661ce6
+msgid ":guilabel:`Zoom to impact layer on scenario estimate completion` : This option will cause the map view to zoom in/out in order to completely contain the |project_name| impact scenario map output when an analysis completes."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:51
+# ded79ca274b9448ea7193608ed2eaa88
+msgid ":guilabel:`Hide exposure layer on scenario estimate completion` : This option will cause QGIS to turn off the exposure layer used when |project_name| completes the current analysis. You can re-enable the layer visibility again by checking its checkbox in the legend."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:55
+# 1059640c44a149afa61816170040dc2e
+msgid ":guilabel:`Clip datasets to visible extent before analysis` : This option will cause QGIS to clip hazard and exposure layers to the currently visible extent on the map canvas."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:58
+# 1beff367299a47038646051f9bf558be
+msgid ":guilabel:`When clipping, also clip features (e.g. will clip polygon smaller)`: This option will any polygons that extend beyond the analysis extents to be clipped so that they are contained by the analysis extents. For example if you have a flood hazard polygon layer that extends far beyond your area of interest, the flood polygons will be reduced so that only the part inside of your area of interested is retained. This can speed up processing time somewhat."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:65
+# fffbc4ff1aaa4b88b4200bae95c86b56
+msgid ":guilabel:`Help to improve InaSAFE by submitting errors to a remote server` : This option, when enabled, will submit diagnostic information back to an |project_name| project server in the event of any error taking place that we are able to trap. The information provided is useful to the |project_name| team to improve the robustness of the software we produce and to spot trends in issues people encounter. Please note the warning text below this option which is included here in full:"
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:74
+# 104a229a71e44150b180e4d901de33e3
+msgid "The above setting requires a QGIS restart to disable/enable. Error messages and diagnostic information will be posted to http://sentry.linfiniti.com/inasafe-desktop/. Some institutions may not allow you to enable this feature - check with your network administrator if unsure. Although the data is submitted anonymously, the information contained in tracebacks may contain file system paths which reveal your identity or other information from your system."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:82
+# 8c1abb9965cb450ea2ffdbd6092e08cd
+msgid ":guilabel:`Show intermediate layers generated by postprocessing` : This option will cause QGIS to show the intermediate files generated by the postprocessing steps in the map canvas."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:85
+# 0624139acad340c1a3e3e074d6a32f9d
+msgid ":guilabel:`Default female ratio` : This is the default female to total population ratio used por generating Gender breakdowns"
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:87
+# be705ea49b874b80be8a93945c04ed60
+msgid ":guilabel:`Keyword cache for remote datasources` : This option is used to determine where keywords are stored for datasets where it is not possible to write them into a .keywords file. See :ref:`toolbar_keywords` in the |project_name| User-Manual for more information on the keywords system."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:91
+# caad283440454c55b8199a6e16bb0cc5
+msgid ":guilabel:`Run analysis in separate thread (experimental)` : This option cause the analysis to be run in its own thread."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:94
+# 4e515a2ef12247f596c9ed78ecb195af
+msgid "It is not recommended to use the threaded implementation at this time. For this reason it is disabled by default."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:97
+# 028cda8ede574b169391565d0d8e5872
+msgid "Pressing :guilabel:`Cancel` at any time will close the options dialog and any changes made will **not** be applied. Pressing :guilabel:`Ok` at any time will close the options dialog and any changes made **will** be applied immediately."
+msgstr ""
+
+#: ../../source/user-docs/application-help/options.rst:102
+# 6e6f24092e8e4969a4321da56cf17cb9
+msgid "The exact button order shown on this dialog may differ depending on your operating system or desktop environment."
+msgstr ""
+
