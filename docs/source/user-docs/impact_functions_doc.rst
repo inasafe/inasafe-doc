@@ -7,12 +7,12 @@ This document explains the purpose of impact functions and lists the different a
 .. toctree::
    :maxdepth: 2
 
-   impact_function_docs/PAGFatalityFunction
-   impact_function_docs/VolcanoPolygonHazardPopulation
-   impact_function_docs/FloodEvacuationFunctionVectorHazard
-   impact_function_docs/FloodEvacuationFunction
-   impact_function_docs/FloodBuildingImpactFunction
-   impact_function_docs/CategorisedHazardPopulationImpactFunction
-   impact_function_docs/ITBFatalityFunction
-   impact_function_docs/VolcanoBuildingImpact
-   impact_function_docs/EarthquakeBuildingImpactFunction
+   impact-function-docs/PAGFatalityFunction
+   impact-function-docs/VolcanoPolygonHazardPopulation
+   impact-function-docs/FloodEvacuationFunctionVectorHazard
+   impact-function-docs/FloodEvacuationFunction
+   impact-function-docs/FloodBuildingImpactFunction
+   impact-function-docs/CategorisedHazardPopulationImpactFunction
+   impact-function-docs/ITBFatalityFunction
+   impact-function-docs/VolcanoBuildingImpact
+   impact-function-docs/EarthquakeBuildingImpactFunction
