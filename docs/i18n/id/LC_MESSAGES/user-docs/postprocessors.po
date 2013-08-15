@@ -1,135 +1,78 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-# Translators:
-# emirhartato <emir.hartato@gmail.com>, 2013
-# Ismail Sunni <imajimatika@gmail.com>, 2013
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe\n"
+"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-05 17:13\n"
-"PO-Revision-Date: 2013-06-17 11:00+0000\n"
-"Last-Translator: emirhartato <emir.hartato@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
-"language/id/)\n"
-"Language: id\n"
+"POT-Creation-Date: 2013-08-15 11:42\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
 
-# a243c68099994929ac2698e6855053d9
 #: ../../source/user-docs/postprocessors.rst:8
+# f396adedb34c4c23b63e69b1e6fc9467
 msgid "Post-processors"
-msgstr "Pasca-prosesor"
+msgstr ""
 
-# 7007990ea00f4407ac59f8005e046589
 #: ../../source/user-docs/postprocessors.rst:10
-msgid ""
-"This document explains the purpose of post-processors and lists the "
-"different available post-processors and the requirements each has to be used "
-"effectively."
+# eb21f8845cf545aaaf2834806c87b690
+msgid "This document explains the purpose of post-processors and lists the different available post-processors and the requirements each has to be used effectively."
 msgstr ""
-"Dokumen ini menjelaskan tujuan dari pasca-prosesor dan daftar pasca-prosesor "
-"berbeda yang tersedia dan kebutuhan yang diperlukan untuk digunakan dengan "
-"efektif."
 
-# 49c986a90c5548d490b86449f93ed4ce
 #: ../../source/user-docs/postprocessors.rst:15
+# bc2ec03e6f2348e78a330d7b4a9de7f7
 msgid "What is a post-processor?"
-msgstr "Apa itu pasca-prosesor?"
+msgstr ""
 
-# 015075fe38b3430fb31b78f889ab929e
 #: ../../source/user-docs/postprocessors.rst:17
-msgid ""
-"A postprocessor is a function that takes the results from the impact "
-"function and calculates derivative indicators, for example if you have an "
-"affected population total, the **Gender** post-processor will calculate "
-"gender specific indicators such as additional nutritional requirements for "
-"pregnant women"
+# b54c0f70420649ac9d3fc0da1a8d49f4
+msgid "A postprocessor is a function that takes the results from the impact function and calculates derivative indicators, for example if you have an affected population total, the **Gender** post-processor will calculate gender specific indicators such as additional nutritional requirements for pregnant women"
 msgstr ""
-"Postprocessor merupakan sebuah fungsi yang akan mengambil hasil dari fungsi "
-"dampak dan mengkalkulasikan indikator turunan, sebagai contoh jika anda "
-"mempunyai jumlah populasi terdampak, post-processor **Gender** akan "
-"memperhitungkan indikator sebagai informasi nutrisi tambahan yang dibutuhkan "
-"untuk ibu hamil."
 
-# bdcc1bf7ca08435cb0f3af33f61716a3
 #: ../../source/user-docs/postprocessors.rst:23
+# d5237adf0d0f4818809cbac58e137a6d
 msgid "Selecting a post-processor"
-msgstr "Memilih pasca-prosesor"
+msgstr ""
 
-# 14f0e386e0ad45ec8f8fc7cb80d84b84
 #: ../../source/user-docs/postprocessors.rst:25
-#, fuzzy
-msgid ""
-"Post-processors and their settings can be edited in the user configurable "
-"function parameters dialog. See :ref:`analysis_parameters` to find the "
-"correct buttons. To disable a post-processor simply go to the :guilabel:"
-"`Postprocessors` tab and enable or disable any post-processor you like by "
-"clicking on the checkbox next to it. You can even set the postprocessing "
-"values you like here by entering the values in the fields. The same is valid "
-"for any other setting you might encounter there. If you don't see a post-"
-"processors field, it means that the impact function you are trying to use "
-"does not support any post processor"
+# 997bf9f485c84ec887a78e934d398cab
+msgid "Post-processors and their settings can be edited in the user configurable function parameters dialog. See :ref:`analysis_parameters` to find the correct buttons. To disable a post-processor simply go to the :guilabel:`Postprocessors` tab and enable or disable any post-processor you like by clicking on the checkbox next to it. You can even set the postprocessing values you like here by entering the values in the fields. The same is valid for any other setting you might encounter there. If you don't see a post-processors field, it means that the impact function you are trying to use does not support any post processor"
 msgstr ""
-"Post-processor beserta pengaturannya dapat di-edit pada dialog fungsi "
-"parameter di pengaturan pengguna. Untuk menon-aktifkan post-processor dengan "
-"mudah, ubah :guilabel: `Postprocessors` :samp: `\"'on':True\" menjadi \"'on':"
-"False\"`. Pengaturan tersebut juga berlaku untuk pengaturan apapun yang "
-"mungkin akan anda temukan. Jika anda tidak melihat sebuah baris post-"
-"processor, itu berarti fungsi dampak yang anda ingin gunakan tidak mendukung "
-"psot-processor apapun."
 
-# a243c68099994929ac2698e6855053d9
 #: ../../source/user-docs/postprocessors.rst:41
-#, fuzzy
+# 592eb0ce35d849c39003079800e84bca
 msgid "Post-processor configuration"
-msgstr "Pasca-prosesor"
+msgstr ""
 
-# d3c868aba794407c98d286e7f3858e72
 #: ../../source/user-docs/postprocessors.rst:43
-msgid ""
-"Each activated post-processor will create an additional report in the dock "
-"and in the printout. If problems arise while post processing, the system "
-"will inform you and will skip post-processing."
+# b14053a9c4c648cca07efbf852ce6c41
+msgid "Each activated post-processor will create an additional report in the dock and in the printout. If problems arise while post processing, the system will inform you and will skip post-processing."
 msgstr ""
-"Setiap post-processor yang aktif akan membuat sebuah laporan tambahan pada "
-"dek dan pada hasil cetak. Jika terjadi suatu masalah pada saat post "
-"processing, sistem akan memberi tahu anda dan akan melewati post-processing."
 
-# eda62d43f83046eaa734822caaeca72a
 #: ../../source/user-docs/postprocessors.rst:48
+# cf520b9689244301965e248ec58e45e8
 msgid "Creating post-processors"
-msgstr "Membuat pasca-prosesor"
+msgstr ""
 
-# 2fb0032cee57484eaec0fe3b626befe0
 #: ../../source/user-docs/postprocessors.rst:50
-msgid ""
-"If you feel there is an important post-processor which is missing, there are "
-"two avenues you can follow:"
+# 340d4dd8aa76498b8ff97ec82f400758
+msgid "If you feel there is an important post-processor which is missing, there are two avenues you can follow:"
 msgstr ""
-"Jika anda merasa terdapat suatu post-processor penting yang tidak ada, "
-"terdapat dua langkah yang anda dapat ikuti:"
 
-# 4ee74dc348234c83865c472638e3710c
 #: ../../source/user-docs/postprocessors.rst:53
-msgid ""
-"You can develop it yourself or with the aid of a programmer who has a good "
-"understanding of the python programming language."
+# c7e2c87a5b1c4e1388fae708b0cf1d2b
+msgid "You can develop it yourself or with the aid of a programmer who has a good understanding of the python programming language."
 msgstr ""
-"Anda dapat mengembagkannya sendiri atau dengan bantuan seorang programmer "
-"yang memiliki pemahaman baik mengenai bahasa program python"
 
-# 3bb7fc8d00444e12bfb0e3bfeaee7c37
 #: ../../source/user-docs/postprocessors.rst:55
-msgid ""
-"You can file a ticket on our `issue tracking system <https://github.com/"
-"AIFDR/inasafe/issues>`_, and if time and resources allow we will implement "
-"it for you."
+# fa2299c6cedc4a55b0520d0d915ad393
+msgid "You can file a ticket on our `issue tracking system <https://github.com/AIFDR/inasafe/issues>`_, and if time and resources allow we will implement it for you."
 msgstr ""
-"Anda dapat melaporkan sebuah tiket pada `sistem pengecekan masalah <https://"
-"github.com/AIFDR/inasafe/issues>`_, dan jika terdapat waktu dan sumber daya, "
-"kami akan mengimplementasikannya untuk anda."
+

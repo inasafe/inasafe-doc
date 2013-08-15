@@ -8,735 +8,594 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-09 12:34\n"
+"POT-Creation-Date: 2013-08-15 11:42\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# a78c2a3f90df46939d1140270cbeab12
 #: ../../source/user-docs/function_docs/keywords.rst:8
+# 306be74f9340480ca0b411ba6f1178ff
 msgid "Keywords System"
 msgstr ""
 
-# f8c51143fd9249b9b28465ce6ae9f0e0
 #: ../../source/user-docs/function_docs/keywords.rst:10
-msgid ""
-"This document describes the purpose and usage of the |project_name| "
-"*keywords* system."
+# ed847fcfbad5490a98e0e086cc7fb7be
+msgid "This document describes the purpose and usage of the |project_name| *keywords* system."
 msgstr ""
 
-# 32207d7ae66c4d31875293fb8d14ca4e
 #: ../../source/user-docs/function_docs/keywords.rst:14
+# 89bff52b219e40d4a30a89d542b3f6c6
 msgid "Purpose"
 msgstr ""
 
-# 30c57ff7b03e44c585e3f39a04e8a139
 #: ../../source/user-docs/function_docs/keywords.rst:16
-msgid ""
-"The keywords system is used by the :ref:`Impact Functions "
-"<impact_functions>` to determine the nature of the input layers that have "
-"been passed to them."
+# 8cfcd1b31e58473cb1e842b706eef7b6
+msgid "The keywords system is used by the :ref:`Impact Functions <impact_functions>` to determine the nature of the input layers that have been passed to them."
 msgstr ""
 
-# 2f285c10b6d94aec9573c9dee003064c
 #: ../../source/user-docs/function_docs/keywords.rst:19
-msgid ""
-"Each input GIS dataset used by |project_name| needs to have an accompanying "
-"keywords file. The purpose of the keywords file is to provide additional "
-"metadata needed by the impact functions. For example, the keywords file will "
-"indicate whether a given dataset should be treated as a *hazard* or an "
-"*impact* layer. It is also used to indicate the context of the layer (e.g. "
-"\"it's a *flood* layer\", \"it's an *earthquake* layer\")."
+# fbe68bda0e934206b9f5d22365e7e6f5
+msgid "Each input GIS dataset used by |project_name| needs to have an accompanying keywords file. The purpose of the keywords file is to provide additional metadata needed by the impact functions. For example, the keywords file will indicate whether a given dataset should be treated as a *hazard* or an *impact* layer. It is also used to indicate the context of the layer (e.g. \"it's a *flood* layer\", \"it's an *earthquake* layer\")."
 msgstr ""
 
-# 7bf1c088aa1c499f9a87688d10cff28c
 #: ../../source/user-docs/function_docs/keywords.rst:28
-msgid ""
-"By convention and expectation, the keywords file should be named with the "
-"same base name of the GIS datasource it accompanies. For example a flood "
-"dataset saved as:"
+# 1a72d3b2d4e24820b90b5da4bc5cd81e
+msgid "By convention and expectation, the keywords file should be named with the same base name of the GIS datasource it accompanies. For example a flood dataset saved as:"
 msgstr ""
 
-# ce034de633ad4ababf0fffac722051cb
 #: ../../source/user-docs/function_docs/keywords.rst:32
+# 4899bc099c3e48f1b93141b336047125
 msgid ":file:`C:\\\\gisdata\\\\flood.tif`"
 msgstr ""
 
-# cc8aaf6886be417490c1fec56502bddd
 #: ../../source/user-docs/function_docs/keywords.rst:34
+# 4ce65e2942bd40908d3f62c99a6cbda3
 msgid "Would need to have an accompanying keywords file saved as:"
 msgstr ""
 
-# 0e1549cf24064975afa6c2a69bcc28f6
 #: ../../source/user-docs/function_docs/keywords.rst:36
+# 78aa62c5a3f440568ea7cec7254ec2cc
 msgid ":file:`C:\\\\gisdata\\\\flood.keywords`"
 msgstr ""
 
-# fcecb4960ad64f16a00ce44741ef1ee9
 #: ../../source/user-docs/function_docs/keywords.rst:38
-msgid ""
-"We recommend to **avoid using spaces** in your file names and file paths!"
+# bb1aa4d8571f4e98be20d08c208919db
+msgid "We recommend to **avoid using spaces** in your file names and file paths!"
 msgstr ""
 
-# 885eca47246a46958036e54e78af49ed
 #: ../../source/user-docs/function_docs/keywords.rst:41
-msgid ""
-"The |project_name| QGIS plugin provides an editor for these keywords. The "
-"purpose of this document is to describe the keywords editor and to provide "
-"guidelines as to the use of keywords."
+# 57fdc25029e4476784b87bd3b364c85b
+msgid "The |project_name| QGIS plugin provides an editor for these keywords. The purpose of this document is to describe the keywords editor and to provide guidelines as to the use of keywords."
 msgstr ""
 
-# d8e27a50c0af4ed7854148a2c561db4e
 #: ../../source/user-docs/function_docs/keywords.rst:45
-msgid ""
-"Currently keywords are not validated by the library. This means if you for "
-"example misspell a keyword, use the wrong letter case (e.g. upper case "
-"instead of lower case) or provide the wrong keyword for the context (e.g. "
-"provide a subcategory of flood to an exposure category), the system will not "
-"be able to determine what to do with the file. For that reason you should "
-"follow the guidelines below carefully to ensure you have entered your "
-"keywords correctly."
+# 0eb00eca2ac9433fa9239d71a333e9e8
+msgid "Currently keywords are not validated by the library. This means if you for example misspell a keyword, use the wrong letter case (e.g. upper case instead of lower case) or provide the wrong keyword for the context (e.g. provide a subcategory of flood to an exposure category), the system will not be able to determine what to do with the file. For that reason you should follow the guidelines below carefully to ensure you have entered your keywords correctly."
 msgstr ""
 
-# 7c811adf70c945cabfdfc0882664c5e8
 #: ../../source/user-docs/function_docs/keywords.rst:55
+# 0652a83cc0744f4b9907d3cd31f4f5f8
 msgid "Guidelines"
 msgstr ""
 
-# ce492072cf6042cda909a24f112c4cdc
 #: ../../source/user-docs/function_docs/keywords.rst:57
+# 0b7f7b5f8918403fba615296faa1cc20
 msgid "In this section we lay out the guidelines for keyword usage."
 msgstr ""
 
-# ede724834b4f45c3a64f2cf8aa660b1b
 #: ../../source/user-docs/function_docs/keywords.rst:60
+# c2998101f63848338b27fbf7d5aed19f
 msgid "Category"
 msgstr ""
 
-# c4b2c4a35dcc498b9c69afbcf4341dc0
 #: ../../source/user-docs/function_docs/keywords.rst:62
-msgid ""
-"Every dataset should have a category assigned to it. Category should be "
-"written in lower case."
+# 6c991d6025154641aebf0ce33ef81ffd
+msgid "Every dataset should have a category assigned to it. Category should be written in lower case."
 msgstr ""
 
-# b5b6db000e09449c888f5257cd469d59
-# 1149818fa9d440fab384852a1c3245b8
-# 4cd4d3fa080145debd0f1b30a498a527
-# 4c12178c59594d4f9500fbf1950956ff
-# 7a08f5468bf54d828f036eb82dc904da
-# 21b976e4907947e6aca8104204c454b5
 #: ../../source/user-docs/function_docs/keywords.rst:68
 #: ../../source/user-docs/function_docs/keywords.rst:89
 #: ../../source/user-docs/function_docs/keywords.rst:104
 #: ../../source/user-docs/function_docs/keywords.rst:138
 #: ../../source/user-docs/function_docs/keywords.rst:159
 #: ../../source/user-docs/function_docs/keywords.rst:183
+# 09a0007578694ec38b20f28fba65af65
+# d8ad3e326935496895264f6baa244210
+# 80728fc3829b46f6a63b72cfe094458f
+# 0dd7c7d0cc3947d681e6220046b5c703
+# cf6627a3f05148579347b980a78b71e6
+# 4ae8bb7d17974a27a420fa70b99e8126
 msgid "Key"
 msgstr ""
 
-# ae100c5a9f764bdbbab9bb300c715087
-# 3dd5512a562e42f8bbe7d55c26dead96
-# a42482203ef745adaa57a78f4125786b
-# edf587a14f874b5e8eebaba30fa1cafb
-# 0d3f9661adab4eac9bc63f8c4a2a630b
-# b5e9a6717c3c4064a4ede344d7119525
 #: ../../source/user-docs/function_docs/keywords.rst:68
 #: ../../source/user-docs/function_docs/keywords.rst:89
 #: ../../source/user-docs/function_docs/keywords.rst:104
 #: ../../source/user-docs/function_docs/keywords.rst:138
 #: ../../source/user-docs/function_docs/keywords.rst:159
 #: ../../source/user-docs/function_docs/keywords.rst:183
+# b9b077ce83414dcc85819790655d1a46
+# 348bc927f1f947519a20d18c42699a40
+# ff6f8ec8d45e4efc89903ca337bc35c2
+# be30ada02dd54e4f8189f1e901d7a623
+# cfc9773f5dc0441fb966022074de81a5
+# d3299a70334341dc9d8409a332ed597c
 msgid "Allowed Values"
 msgstr ""
 
-# 97ae1f99d16b471db764a2569140dd87
-# 3dd712bacc734d5fb47980b9cf94c430
 #: ../../source/user-docs/function_docs/keywords.rst:70
 #: ../../source/user-docs/function_docs/keywords.rst:71
+# 177920dc88d24cfabc2b8b8a77b71eb2
+# 1bd3264f87dc43e19b06c895c2ba85ec
 msgid "category"
 msgstr ""
 
-# d9c2ff54a7f64c8ea8874e54c5bacd18
 #: ../../source/user-docs/function_docs/keywords.rst:70
+# 5aa06bbdde0b458aa10d659032b07658
 msgid "hazard"
 msgstr ""
 
-# 5fc690075dec48cb803ad1dbd666909f
-# 056356793ed14ec9a37d69beec0539f5
-# 8d3f5c1d8f154dd29324b760d87c99a4
 #: ../../source/user-docs/function_docs/keywords.rst:71
 #: ../../source/user-docs/function_docs/keywords.rst:106
 #: ../../source/user-docs/function_docs/keywords.rst:107
+# 84b2ec41c06c40de99208fe738c152da
+# bc097fd2426a4412a3d8c1c0020ac705
+# 7fad0c5a30864fa88763b09fe94eae29
 msgid "exposure"
 msgstr ""
 
-# ecf44de629e7495892090221d5540186
-# 10aa7c03c73a4fc5bd19173bb4800463
 #: ../../source/user-docs/function_docs/keywords.rst:75
 #: ../../source/user-docs/function_docs/keywords.rst:110
+# 882cd7eb1b3a414f9b3a87285c5d7d13
+# 603892bef67045faa5ba748b7c29bdac
 msgid "Example keywords file entry::"
 msgstr ""
 
-# 4e42e2bbdbc44e119174856a541716e5
-# cce4faebd80c48fd8731a6cde54d7516
 #: ../../source/user-docs/function_docs/keywords.rst:80
 #: ../../source/user-docs/function_docs/keywords.rst:183
+# d77e3177e7314c96acfe2b82f2439315
+# 11de0ebc29c245988b3924304748aa4d
 msgid "Subcategory"
 msgstr ""
 
-# 48e636f585954ad7ac8d16ab702de3c2
 #: ../../source/user-docs/function_docs/keywords.rst:82
+# c5e4d3ec721442c1876dea55108aa9ee
 msgid "The selection of a subcategory value is dependent on the category:"
 msgstr ""
 
-# b4134e2ba26b459ea412161b29acc1eb
 #: ../../source/user-docs/function_docs/keywords.rst:84
+# 2d5929c71ad64142919306309b8c0602
 msgid "Valid subcategories for category 'hazard':"
 msgstr ""
 
-# 198edc4d48614f18bd357096a6749018
-# 5d0f0e9cead643a0a4ac94f582b22b82
-# ee84c1eda0784d91896d6196c559d3bb
 #: ../../source/user-docs/function_docs/keywords.rst:91
 #: ../../source/user-docs/function_docs/keywords.rst:92
 #: ../../source/user-docs/function_docs/keywords.rst:93
+# b95fb95132c24c559d774b5f054e117f
+# 1a4869aed90b44c3ba553ccfc676fc0e
+# bf063c46b1e74d3da7362fc2a90f651b
 msgid "subcategory"
 msgstr ""
 
-# 9ffc8deff5cb4fc5b37702f192a7fc66
 #: ../../source/user-docs/function_docs/keywords.rst:91
+# 67f3c3d60f3442428b6eaba8154d6b71
 msgid "tsunami"
 msgstr ""
 
-# 3be9c6af822e4371ab378ce725268bd9
 #: ../../source/user-docs/function_docs/keywords.rst:92
+# ebc5e25fbb944cc7830597968e8b84a8
 msgid "flood"
 msgstr ""
 
-# 99bdcddfb42e465db843eab6cf504f36
 #: ../../source/user-docs/function_docs/keywords.rst:93
+# cd243d4f878246ecba60e68a207af7e9
 msgid "tephra"
 msgstr ""
 
-# 8bc83ad46af94fdf83e48b01cf00c0f6
 #: ../../source/user-docs/function_docs/keywords.rst:97
+# 32a09acafda14cb7ae681737682ba846
 msgid "Where tephra is volcanic ashfall."
 msgstr ""
 
-# 04ed897efce4497a9c7e104dc3544b22
 #: ../../source/user-docs/function_docs/keywords.rst:99
+# b397f764e7c74d73bdf051f75feae45b
 msgid "Valid subcategories for category 'exposure':"
 msgstr ""
 
-# 36ad26e080de48248075de1d1b32aadd
-# c6bf69bd979c40aa82edf746680e36c5
-# 2fceff8cfa154f6da43e96a62501b5f2
 #: ../../source/user-docs/function_docs/keywords.rst:106
 #: ../../source/user-docs/function_docs/keywords.rst:185
 #: ../../source/user-docs/function_docs/keywords.rst:186
+# f03a7e6dc63248c988d431a0d0c8f12a
+# 93f13894cce9427daa49102e85f571d6
+# 8793cb81bb744ff781e16ba7b62287db
 msgid "population"
 msgstr ""
 
-# ed0ca85aee10442582e06aa61607f009
-# 8992acf5b94c457d90626e124478e32a
-# 1e511b04a8144f31a9998f6726aff10f
-# 5f1a045737794cd6b71e4e03d2f6d9b6
 #: ../../source/user-docs/function_docs/keywords.rst:107
 #: ../../source/user-docs/function_docs/keywords.rst:187
 #: ../../source/user-docs/function_docs/keywords.rst:188
 #: ../../source/user-docs/function_docs/keywords.rst:189
+# a0e50bf975854b33830b01a341a5c6b3
+# 16050f8bbce54653aee60c80c7667c23
+# 1997f6426d8e4eca967282ba3a7596f8
+# a5d9e5d97bd54a57984a97de3179a501
 msgid "building"
 msgstr ""
 
-# b44b376f67b544408476e488af5f4929
 #: ../../source/user-docs/function_docs/keywords.rst:116
+# dd2fe4028f6d49ab8c935e7c0859623f
 msgid "Units"
 msgstr ""
 
-# 45352e686f7a4b8c88386358954e8a64
 #: ../../source/user-docs/function_docs/keywords.rst:118
-msgid ""
-"The units keyword is only valid in the context of 'hazard' layers, and is "
-"used to indicate the metric or imperial units represented by each data "
-"entity (a grid cell or a vector feature) in the hazard layer. Example "
-"keywords file entry::"
+# c3851babd33145f18dcaa6ac9f64df74
+msgid "The units keyword is only valid in the context of 'hazard' layers, and is used to indicate the metric or imperial units represented by each data entity (a grid cell or a vector feature) in the hazard layer. Example keywords file entry::"
 msgstr ""
 
-# dba26dc76d0d4a6b8a50b2aedf9b6beb
 #: ../../source/user-docs/function_docs/keywords.rst:128
-msgid ""
-"In the above case there is a soft constraint to use a value for units of m, "
-"feet or wet/dry as defined by the table below because the subcategory is "
-"'flood'. The following are the allowed units which are dependent on the "
-"subcategory defined."
+# d10a848d398d455e9cd76e417b68c4d9
+msgid "In the above case there is a soft constraint to use a value for units of m, feet or wet/dry as defined by the table below because the subcategory is 'flood'. The following are the allowed units which are dependent on the subcategory defined."
 msgstr ""
 
-# 3939b991142b4918a2cc61cf17bfc82c
 #: ../../source/user-docs/function_docs/keywords.rst:133
+# 6fe4878700894db883f9f937dcce0fb1
 msgid "Valid subcategories for subcategory 'tsunami' or subcategory 'flood':"
 msgstr ""
 
-# 06499cd060b14bd6928334a9c5b02817
-# c197faf1857d4a6b9329446828bc69cf
-# bb143c7c01c543b8b2edbb57b91853b5
-# 021d249f6958499b81cbb07add8bb4d4
 #: ../../source/user-docs/function_docs/keywords.rst:140
 #: ../../source/user-docs/function_docs/keywords.rst:141
 #: ../../source/user-docs/function_docs/keywords.rst:142
 #: ../../source/user-docs/function_docs/keywords.rst:161
+# e798da8b8d294645892b3a03d23844b0
+# f7779beb09a149a78ecbe70ec0d1d5f5
+# 070bfb79747b4f578bdbceca3b25eef9
+# ccd1753b1081497dac5506de5e662496
 msgid "units"
 msgstr ""
 
-# b149b6187fbe49c69bbe047845a084d3
 #: ../../source/user-docs/function_docs/keywords.rst:140
+# fcbc7167dcba4d4f89694b15536a813b
 msgid "m"
 msgstr ""
 
-# 2566acdbfe6a4bf792920ef36438f7bc
 #: ../../source/user-docs/function_docs/keywords.rst:141
+# 74aecf1c5ab149209284188a1fd89043
 msgid "wet/dry"
 msgstr ""
 
-# 0aa3cdf154964475a8baa2e3c0902006
 #: ../../source/user-docs/function_docs/keywords.rst:142
+# 9df6fe9e08c74b20b78823c0d57dac14
 msgid "feet"
 msgstr ""
 
-# a215eab9d9ad4501bdfa07a718850251
 #: ../../source/user-docs/function_docs/keywords.rst:146
-msgid ""
-"In the case where the units are m (meters) or feet, the input dataset should "
-"be a raster layer where each cell in the raster represents a depth in the "
-"units specified."
+# 0ea6c85a8e0b4bb7801b138c3e5ef2e3
+msgid "In the case where the units are m (meters) or feet, the input dataset should be a raster layer where each cell in the raster represents a depth in the units specified."
 msgstr ""
 
-# 041c5b34069944aea9ea21b5f41cd71d
 #: ../../source/user-docs/function_docs/keywords.rst:150
-msgid ""
-"In the case of wet/dry, the input dataset needs to be a vector polygon "
-"layer. Any area that is inside a polygon is considered 'wet' and any area "
-"outside of a polygon is considered to be 'dry'."
+# c538f6414d2e4a1a8c017444d09961bf
+msgid "In the case of wet/dry, the input dataset needs to be a vector polygon layer. Any area that is inside a polygon is considered 'wet' and any area outside of a polygon is considered to be 'dry'."
 msgstr ""
 
-# 2b8fac66c3e444c1aa0ba56407f73e06
 #: ../../source/user-docs/function_docs/keywords.rst:154
+# 1e741f0837064de7880051b0ebb5b568
 msgid "Valid subcategories for subcategory 'volcano'"
 msgstr ""
 
-# 795b28eba2b344f1818c48d9c96f183e
 #: ../../source/user-docs/function_docs/keywords.rst:161
+# 1cf24a0444f846219bc64663b9e10a5f
 msgid "kg2/m2"
 msgstr ""
 
-# fe9eb692bc7b47c2a67a66a15b68171b
 #: ../../source/user-docs/function_docs/keywords.rst:165
-msgid ""
-"In this case the dataset should be a raster layer where each cell represents "
-"the kilograms per meters squared of ash fall on that cell."
+# 9e99523464e3445d9c28927b498bfe86
+msgid "In this case the dataset should be a raster layer where each cell represents the kilograms per meters squared of ash fall on that cell."
 msgstr ""
 
-# 58b8c7edc74e4f659cee8d23172a2dfd
 #: ../../source/user-docs/function_docs/keywords.rst:168
-msgid ""
-"'units' and 'datatype' (described below) should be considered to be mutually "
-"exclusive - i.e. they should not both be present in any given keywords file."
+# 544b75a117da43579a502709be41c98e
+msgid "'units' and 'datatype' (described below) should be considered to be mutually exclusive - i.e. they should not both be present in any given keywords file."
 msgstr ""
 
-# 62d85e48137e474a8a81ff6ea29a7789
 #: ../../source/user-docs/function_docs/keywords.rst:173
+# 2c71b1159fcb43b9b9fbac4546c2049b
 msgid "Datatype"
 msgstr ""
 
-# 8651956e9ded4469b0aa769467284dd9
 #: ../../source/user-docs/function_docs/keywords.rst:175
-msgid ""
-"The datatype keyword is specific to exposure layers and represents the "
-"datatype of people, infrastructure etc. within a given area."
+# 3d3a105880b742c28873260054b4e2c1
+msgid "The datatype keyword is specific to exposure layers and represents the datatype of people, infrastructure etc. within a given area."
 msgstr ""
 
-# 6bafb42c98d448fab3cb7137877ffea2
 #: ../../source/user-docs/function_docs/keywords.rst:178
+# 5f92c3ac573040d6a10e6e6017895d71
 msgid "Valid densities for different subcategories"
 msgstr ""
 
-# 8933231737de405794aa7ee6eb3e5b90
-# 49dafce35c854fbe9dd1bd97e6676476
-# 61654ee473454b8b83817c7195b797f7
-# 7001889241cf433ca8763e67111dfbab
-# 078004b7251a40c3861163ce93c9681b
 #: ../../source/user-docs/function_docs/keywords.rst:185
 #: ../../source/user-docs/function_docs/keywords.rst:186
 #: ../../source/user-docs/function_docs/keywords.rst:187
 #: ../../source/user-docs/function_docs/keywords.rst:188
 #: ../../source/user-docs/function_docs/keywords.rst:189
+# 3a43f2b0df1c4f9ea281595a12f70355
+# fb634bd7507d43a4909666fb4f39ea74
+# dcc2c02252ec47799cc038a3811c5f79
+# bb5491bdceeb4bf8b8357df4dc815bfe
+# 66a8f50f0c37431fba9b72ee10a53ce4
 msgid "datatype"
 msgstr ""
 
-# 41d5f703d4014daf99423b6ac2241ad1
 #: ../../source/user-docs/function_docs/keywords.rst:185
+# 429e0816858e4943bbac0b3a04f8df9f
 msgid "count"
 msgstr ""
 
-# 8e9957e721a34a54901fe1b9296d9ca5
 #: ../../source/user-docs/function_docs/keywords.rst:186
+# 9a29f26da9aa4ff2aba2cf566705828b
 msgid "density"
 msgstr ""
 
-# 4ce08123153a4eb5b656f43f4f939b35
 #: ../../source/user-docs/function_docs/keywords.rst:187
+# 82f38a95e86249bb8a0e69cb0ac22abb
 msgid "osm"
 msgstr ""
 
-# 39618ae907cc4b25b36a8f1c93864ee7
 #: ../../source/user-docs/function_docs/keywords.rst:188
+# 1abd5b5c4f8f4f858e2054205f070fe2
 msgid "sigab"
 msgstr ""
 
-# fc32218c91cc4b769217efa5121e6f4d
 #: ../../source/user-docs/function_docs/keywords.rst:189
+# d26d0602c5bd4219ab54fb05238bba4c
 msgid "other"
 msgstr ""
 
-# 3451b60822ec4613bf44e18355a24be3
 #: ../../source/user-docs/function_docs/keywords.rst:194
+# 6d0dd662915149d2a55bc28ca3b04345
 msgid "Assumptions"
 msgstr ""
 
-# 0080f576c2b240f6af71a9a2e8a09f4a
 #: ../../source/user-docs/function_docs/keywords.rst:196
-msgid ""
-"The following assumptions are made about keywords, which may or may not be "
-"programmatically enforced by the |project_name| library and GUI:"
+# d4641aa854b24d5a8325cbe3c6df72a2
+msgid "The following assumptions are made about keywords, which may or may not be programmatically enforced by the |project_name| library and GUI:"
 msgstr ""
 
-# 3fbdbb319b224854ba9ecf2ed21088de
 #: ../../source/user-docs/function_docs/keywords.rst:199
-msgid ""
-"There should only be **one keyword for a given key** in the keywords file"
+# c45d2a751db947c8947dff2567c08d1d
+msgid "There should only be **one keyword for a given key** in the keywords file"
 msgstr ""
 
-# 34a977e25e4445ca87133f3d9f92fa89
 #: ../../source/user-docs/function_docs/keywords.rst:200
-msgid ""
-"Switching from hazard to exposure will clear parts of the GUI since in "
-"general most keywords are category dependent. In particular, selecting "
-"**'hazard'** will remove the **'datatype'** key/value pair, and selecting "
-"**'exposure'** will remove the **'units'** key value pair."
+# b874d261edaa4874b7fde9adcbc0f035
+msgid "Switching from hazard to exposure will clear parts of the GUI since in general most keywords are category dependent. In particular, selecting **'hazard'** will remove the **'datatype'** key/value pair, and selecting **'exposure'** will remove the **'units'** key value pair."
 msgstr ""
 
-# 0b45d3a5a5ad411d94dff21859e41cf8
 #: ../../source/user-docs/function_docs/keywords.rst:204
-msgid ""
-"Keywords for **category** are **enforced** to be one of 'hazard' or "
-"'exposure' by the GUI."
+# 5683845bcff34bd5b8afb2c1a35d91c3
+msgid "Keywords for **category** are **enforced** to be one of 'hazard' or 'exposure' by the GUI."
 msgstr ""
 
-# 24ba8b6e6f384dbba9c0e7bc233d3033
 #: ../../source/user-docs/function_docs/keywords.rst:206
-msgid ""
-"All keywords should be in **lower case**, **without spaces** with the "
-"exception of 'Title' whose value may contain both spaces and mixed case "
-"letters."
+# af8e851f6552462f910e1b467b965346
+msgid "All keywords should be in **lower case**, **without spaces** with the exception of 'Title' whose value may contain both spaces and mixed case letters."
 msgstr ""
 
-# a067e01117f54ed68862c3dfad40968e
 #: ../../source/user-docs/function_docs/keywords.rst:209
-msgid ""
-"Values for keywords should generally be lower case, with the exception of "
-"**datatype values may be in upper case** (e.g. MMI)"
+# 6b4f6256f69d4f69bdfb499a21ee81dd
+msgid "Values for keywords should generally be lower case, with the exception of **datatype values may be in upper case** (e.g. MMI)"
 msgstr ""
 
-# 2e92b36757814cf0a4769aa53976a3fc
 #: ../../source/user-docs/function_docs/keywords.rst:211
-msgid ""
-"Keys and values should **not contain colons**. In the keyword editor, any "
-"colons will be replaced with a full stop character."
+# ec51ba6d983e49f39cd91eab8731245b
+msgid "Keys and values should **not contain colons**. In the keyword editor, any colons will be replaced with a full stop character."
 msgstr ""
 
-# 1b7a1067c2604d5d820bd716b2cf4e8d
 #: ../../source/user-docs/function_docs/keywords.rst:213
-msgid ""
-"All other Keywords and values that do not fit the above domain lists may be "
-"used but they may produce undesired results."
+# 58e7eea1939248f58e69dc2111464986
+msgid "All other Keywords and values that do not fit the above domain lists may be used but they may produce undesired results."
 msgstr ""
 
-# 0f049b8cf423464ab2894fef8161b05b
 #: ../../source/user-docs/function_docs/keywords.rst:217
+# d2761550492e4066b0af122d7093654f
 msgid "The keywords editor graphical user interface"
 msgstr ""
 
-# b101d3afbfff4fa9bf8600c6e44debce
 #: ../../source/user-docs/function_docs/keywords.rst:219
-msgid ""
-"The graphical user interface for keyword editing is divided into two parts:"
+# f805540616b641518f422119597f1b2b
+msgid "The graphical user interface for keyword editing is divided into two parts:"
 msgstr ""
 
-# c4e33cecf3cb473d9a00053dfefb8e20
 #: ../../source/user-docs/function_docs/keywords.rst:221
+# f2489f9bce72467fa0f8b3bba36929ed
 msgid "**Minimal mode**: In this mode, only following options are provided:"
 msgstr ""
 
-# 3aa98ba060704451914896b316572c7c
 #: ../../source/user-docs/function_docs/keywords.rst:223
-msgid ""
-"**Title** - a 'friendly' name for the dataset which will be displayed in "
-"reports, the user interface and so on."
+# 5ff38fe7ad0849f69080830c3e8e7558
+msgid "**Title** - a 'friendly' name for the dataset which will be displayed in reports, the user interface and so on."
 msgstr ""
 
-# 016f5f6f8fef4d139f8a884802fd00fb
 #: ../../source/user-docs/function_docs/keywords.rst:225
+# 58e8654f83814cb0bfdab5d2213defd0
 msgid "**Category** - A mandatory choice between 'hazard' and 'exposure'."
 msgstr ""
 
-# a69618e8bff44da0a9709dda386e2b3f
 #: ../../source/user-docs/function_docs/keywords.rst:226
-msgid ""
-"**Subcategory** - An amalgamated subcategory/units picklist (in the case of "
-"hazard) or amalgamated subcategory/datatype ( in the case of exposure). In "
-"this case, the secondary characteristic ( units or datatype) are shown in "
-"square brackets after the subcategory name e.g. :samp:`flood [m]` is used "
-"for subcategory 'flood', units 'm'."
+# 43dd122252164dbe8af0a536f555ccd1
+msgid "**Subcategory** - An amalgamated subcategory/units picklist (in the case of hazard) or amalgamated subcategory/datatype ( in the case of exposure). In this case, the secondary characteristic ( units or datatype) are shown in square brackets after the subcategory name e.g. :samp:`flood [m]` is used for subcategory 'flood', units 'm'."
 msgstr ""
 
-# c2d81a4bd1134f80998c4bf10edd2480
 #: ../../source/user-docs/function_docs/keywords.rst:232
+# 1444675724304d8193afc597eda16bec
 msgid "An example of the keywords editor in minimal mode is shown below."
 msgstr ""
 
-# 21332069d35448d497f628801ef50e1d
 #: ../../source/user-docs/function_docs/keywords.rst:239
+# 571705c0f23d426682d87f43eadb4279
 msgid "Opened keyword editor window"
 msgstr ""
 
-# 499044d1dc844e01b2be1ff7328bda4c
 #: ../../source/user-docs/function_docs/keywords.rst:241
-msgid ""
-"**Advanced mode**: In this mode several extra options are provided in "
-"addition to the minimal mode options. Unlike minimal mode, in advanced mode "
-"only basic validation is performed and the user is given more flexibility to "
-"manually define and remove key/value pairs. Three sections are provided for "
-"this:"
+# c76c18fae8324b4e8cb5ba60fe6aefcb
+msgid "**Advanced mode**: In this mode several extra options are provided in addition to the minimal mode options. Unlike minimal mode, in advanced mode only basic validation is performed and the user is given more flexibility to manually define and remove key/value pairs. Three sections are provided for this:"
 msgstr ""
 
-# 12092a21d6e34a5db662ae2247186bbc
 #: ../../source/user-docs/function_docs/keywords.rst:247
-msgid ""
-"**Predefined** - In this section, the user selects from a constrained list "
-"of keywords, enters a free-form value and then adds the key/value pair to "
-"the keywords list (see below)."
+# 311d9272954548569426654b35ba8ad2
+msgid "**Predefined** - In this section, the user selects from a constrained list of keywords, enters a free-form value and then adds the key/value pair to the keywords list (see below)."
 msgstr ""
 
-# a55200edfc044be18e4eac004ee467cf
 #: ../../source/user-docs/function_docs/keywords.rst:250
-msgid ""
-"**User defined** - In this section, there is no constraint on the keywords "
-"entered - any single lower case word will be accepted for both the key and "
-"the value components."
+# b61f482a2829499597026fddc5134792
+msgid "**User defined** - In this section, there is no constraint on the keywords entered - any single lower case word will be accepted for both the key and the value components."
 msgstr ""
 
-# a5b697a7bdea4913ab0f2cffdfada342
 #: ../../source/user-docs/function_docs/keywords.rst:253
-msgid ""
-"**Current keywords** - In this area a complete list of all the keywords for "
-"the dataset are displayed. The keywords list here is updated when any "
-"changes are made in both the simple and advanced mode editors. It is also "
-"possible in this area to manually remove unwanted keywords using the 'remove "
-"selected' button. Multiple keywords can be removed in a single operation by :"
-"kbd:`Control-clicking` on multiple keyword entries in the current keyword "
-"list and then clicking :guilabel:`Remove selected`"
+# 8a6b9c3055264d9aba8112406725a726
+msgid "**Current keywords** - In this area a complete list of all the keywords for the dataset are displayed. The keywords list here is updated when any changes are made in both the simple and advanced mode editors. It is also possible in this area to manually remove unwanted keywords using the 'remove selected' button. Multiple keywords can be removed in a single operation by :kbd:`Control-clicking` on multiple keyword entries in the current keyword list and then clicking :guilabel:`Remove selected`"
 msgstr ""
 
-# 45f9a35fb9224af6be36255f480bdbb1
 #: ../../source/user-docs/function_docs/keywords.rst:266
+# fa7af7001dcf4957ab9accfa8bb59bcf
 msgid "Advanced mode of keyword editor"
 msgstr ""
 
-# 35b3c3dfcaff41c4b5a39761b0990b74
 #: ../../source/user-docs/function_docs/keywords.rst:269
+# 1ddef856fa374d45a4e3191119dfd894
 msgid "Invoking the keywords editor"
 msgstr ""
 
-# 9ab39a9d45b94d53b955ecb9df45a532
 #: ../../source/user-docs/function_docs/keywords.rst:271
-msgid ""
-"The keyword editor can easily be invoked by **selecting any layer** in the "
-"QGIS layers list, and then using the plugin menu to start the editor (:"
-"menuselection:`Plugins --> InaSAFE --> Keyword Editor`). Alternatively, you "
-"may use the keywords editor icon on the plugins toolbar as illustrated below."
+# 89e96375c0b748ef9fec3af91403d660
+msgid "The keyword editor can easily be invoked by **selecting any layer** in the QGIS layers list, and then using the plugin menu to start the editor (:menuselection:`Plugins --> InaSAFE --> Keyword Editor`). Alternatively, you may use the keywords editor icon on the plugins toolbar as illustrated below."
 msgstr ""
 
-# 9248f0756e674a1392618910a91a05a2
 #: ../../source/user-docs/function_docs/keywords.rst:282
+# 1a26459e0c8246729f9d964a6615910b
 msgid "Keyword editor icon"
 msgstr ""
 
-# 555454c752a74f9ea667dc81a84d6602
 #: ../../source/user-docs/function_docs/keywords.rst:284
-msgid ""
-"If you have not selected a layer in the QGIS legend, the keyword editor icon "
-"in the toolbar and menus will **be disabled** and appear greyed out."
+# 2aa483a488334585bb0611062f13263c
+msgid "If you have not selected a layer in the QGIS legend, the keyword editor icon in the toolbar and menus will **be disabled** and appear greyed out."
 msgstr ""
 
-# f00e31b8e2074284bf4297b98b1f0c1b
 #: ../../source/user-docs/function_docs/keywords.rst:289
+# 17b5acf733064fae8032b97fe09d41af
 msgid "Saving your edits"
 msgstr ""
 
-# edc1a4c480b54ff4950b3ebb82a28375
 #: ../../source/user-docs/function_docs/keywords.rst:291
-msgid ""
-"To save your keyword edits, simply press the :guilabel:`OK` button and the ."
-"keywords file will be written to disk."
+# 2c81d0bc932a4cf58e0c7f2860d80f44
+msgid "To save your keyword edits, simply press the :guilabel:`OK` button and the .keywords file will be written to disk."
 msgstr ""
 
-# ac81098e4b604dfc9b3f7013257434d1
 #: ../../source/user-docs/function_docs/keywords.rst:295
+# 656e511fd3ec48d2be8ebf8583c7c019
 msgid "Cancelling your edits"
 msgstr ""
 
-# c04bb331c7c74233ba6d16b1abb55113
 #: ../../source/user-docs/function_docs/keywords.rst:297
-msgid ""
-"You can cancel your changes at any time by pressing the :guilabel:`Cancel` "
-"button. No changes will be written to disk and your :file:`*.keywords` file "
-"will remain in its original state."
+# 1021eb4aa28e4874a4f1de52e7ad2d6b
+msgid "You can cancel your changes at any time by pressing the :guilabel:`Cancel` button. No changes will be written to disk and your :file:`*.keywords` file will remain in its original state."
 msgstr ""
 
-# 563d1da2dcf84c4a9fa7d9d7d0a7e2d7
 #: ../../source/user-docs/function_docs/keywords.rst:302
+# 2bc3c51c52314d73ad80980858594935
 msgid "Keywords for remote and non-file based layers"
 msgstr ""
 
-# 300bddd1eb5d4c13a789e49ddd9f65af
 #: ../../source/user-docs/function_docs/keywords.rst:304
-msgid ""
-"If you are using a PostgreSQL, WFS, Spatialite or other non-file based "
-"resources, you can still create keywords. In these circumstances the "
-"keywords will be written to a sqlite database - by default this database is "
-"stored as :file:`keywords.db` within the |project_name| plugin directory "
-"root."
+# a951e127bc7e4311bf3e77a1836c65d4
+msgid "If you are using a PostgreSQL, WFS, Spatialite or other non-file based resources, you can still create keywords. In these circumstances the keywords will be written to a sqlite database - by default this database is stored as :file:`keywords.db` within the |project_name| plugin directory root."
 msgstr ""
 
-# dd18f674b30e42828f9b35d48488021c
 #: ../../source/user-docs/function_docs/keywords.rst:309
-msgid ""
-"You may wish to use a different location for the :file:`keywords.db` "
-"keywords database - you can configure this by using the |project_name| "
-"options dialog. The options dialog can be launched by clicking on the |"
-"project_name| plugin toolbar's options icon (as shown below) or by doing :"
-"menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
+# 8dbdb0c644bd46fbbd9551ecc7d5ca96
+msgid "You may wish to use a different location for the :file:`keywords.db` keywords database - you can configure this by using the |project_name| options dialog. The options dialog can be launched by clicking on the |project_name| plugin toolbar's options icon (as shown below) or by doing :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
 msgstr ""
 
-# 48bf679149864d9b870ba9737564723c
 #: ../../source/user-docs/function_docs/keywords.rst:320
+# dffe9c69731f41de910404b8d9186f07
 msgid "Selecting the options icon"
 msgstr ""
 
-# 052233e588104fcab0688626d69040d5
 #: ../../source/user-docs/function_docs/keywords.rst:322
-msgid ""
-"When the options dialog is opened, the keywords database path can be "
-"specified using the :guilabel:`keyword cache for remote datasources` option "
-"as shown below."
+# 0a5b68e07532419a887b9fea280a3ff9
+msgid "When the options dialog is opened, the keywords database path can be specified using the :guilabel:`keyword cache for remote datasources` option as shown below."
 msgstr ""
 
-# 1e3d9843bf984e929626665bd5b9b370
 #: ../../source/user-docs/function_docs/keywords.rst:331
+# b7bf9415521b475581272e00ee556a18
 msgid "Path to options database"
 msgstr ""
 
-# e6a5d120905d40dfb75e2b155250a311
 #: ../../source/user-docs/function_docs/keywords.rst:335
-msgid ""
-"Support for remote and non-file based layers was added in |project_name| "
-"version 0.3."
+# 3aaf230b5be449719500b968ec9790f3
+msgid "Support for remote and non-file based layers was added in |project_name| version 0.3."
 msgstr ""
 
-# cf07622865014b8db9bc78c24bb9d409
 #: ../../source/user-docs/function_docs/keywords.rst:337
-msgid ""
-"The database can be opened using a sqlite editor such as sqliteman, but the "
-"data in the keywords table is not intended to be human readable or edited. "
-"The table columns consist of an MD5 hash based on the URI for the datasource "
-"(typically the database connection details) and a blob which contains the "
-"keywords as a pickled python dictionary."
+# e0b991b5042e4878923501a3e30334d5
+msgid "The database can be opened using a sqlite editor such as sqliteman, but the data in the keywords table is not intended to be human readable or edited. The table columns consist of an MD5 hash based on the URI for the datasource (typically the database connection details) and a blob which contains the keywords as a pickled python dictionary."
 msgstr ""
 
-# 671d06b2a17c4c82a68c4ff24118472b
 #: ../../source/user-docs/function_docs/keywords.rst:343
-msgid ""
-"See the :doc:`./options` document for more information about the |"
-"project_name| options dialog."
+# af13768a06e94c0da7c14b3fe94d52fd
+msgid "See the :doc:`./options` document for more information about the |project_name| options dialog."
 msgstr ""
 
-# 048aedf6d7034aaba2c702fbe101e0e7
 #: ../../source/user-docs/function_docs/keywords.rst:347
+# d5050e9f8a2c4ce0ab1972eeaa74cc4f
 msgid "Sharing your keywords cache"
 msgstr ""
 
-# 53e2a2c6e6b74d3eb802161b40b7df89
 #: ../../source/user-docs/function_docs/keywords.rst:349
-msgid ""
-"In theory you can place the keywords file on a network share and create a "
-"shared keyword repository in a multi-user environment, but you should note "
-"that the layer URI hashes need to be identical in order for a layer's "
-"keyword to be found. This means that, for (contrived), example::"
+# dde0e3178e5c483893d7364aac115c31
+msgid "In theory you can place the keywords file on a network share and create a shared keyword repository in a multi-user environment, but you should note that the layer URI hashes need to be identical in order for a layer's keyword to be found. This means that, for (contrived), example::"
 msgstr ""
 
-# 4922ac63b4de4f72943120576c5ecf0b
 #: ../../source/user-docs/function_docs/keywords.rst:356
+# 2173bb1ef56d4879b745f864e5436d59
 msgid "would not be considered the same as::"
 msgstr ""
 
-# 9aef380befa34e54b1398b9c0d76a39d
 #: ../../source/user-docs/function_docs/keywords.rst:360
-msgid ""
-"since the user credentials differ, resulting in a different URI. To work "
-"around this you could create a common account so that every user will "
-"effectively use the same URI to load that layer e.g.::"
+# f578fa316f29490ea7727ba03f147d19
+msgid "since the user credentials differ, resulting in a different URI. To work around this you could create a common account so that every user will effectively use the same URI to load that layer e.g.::"
 msgstr ""
 
-# 8f12847b12d540f5b76bb4e57825c624
 #: ../../source/user-docs/function_docs/keywords.rst:366
-msgid ""
-"For certain resources (e.g. ArcInfo coverages, Spatialite databases) where "
-"the keywords cache is also used, you should take care to use a common mount "
-"point or network share to access the data if you wish to successfully hit "
-"the cache with the layer's URI. For example you could have all users mount "
-"your data to the same place. Under Unix like operating systems this could "
-"look something like this:"
+# d750b1ebec5549e09041fa5696d2f62e
+msgid "For certain resources (e.g. ArcInfo coverages, Spatialite databases) where the keywords cache is also used, you should take care to use a common mount point or network share to access the data if you wish to successfully hit the cache with the layer's URI. For example you could have all users mount your data to the same place. Under Unix like operating systems this could look something like this:"
 msgstr ""
 
-# 6b4da522e61f4f9a940039d5ad326475
 #: ../../source/user-docs/function_docs/keywords.rst:373
+# 150ddc6cb56846dc96b64497ff3d911c
 msgid ":file:`/mnt/gisdata/jk.sqlite`"
 msgstr ""
 
-# 2ee63020e29949e79c113b4f1515f487
 #: ../../source/user-docs/function_docs/keywords.rst:375
-msgid ""
-"Under Windows you could always the same drive letter and path the to share e."
-"g.:"
+# 5f7eb1dc461445bbabc1fa8a42dc2864
+msgid "Under Windows you could always the same drive letter and path the to share e.g.:"
 msgstr ""
 
-# 53010230ffcf4108ab452ab4b4b079a2
 #: ../../source/user-docs/function_docs/keywords.rst:378
+# d8c6d105fe8d44b59e4dc6faa998a9d3
 msgid ":file:`Z:\\\\gisdata\\\\jk.sqlite`"
 msgstr ""
 
-# 1943ac040b5c4ae987537817656168fe
 #: ../../source/user-docs/function_docs/keywords.rst:381
+# ab264139f15b436d9205998194af7827
 msgid "Getting help"
 msgstr ""
 
-# edc42f5dad624870ab619f4b3a37b179
 #: ../../source/user-docs/function_docs/keywords.rst:383
-msgid ""
-"If you need help using the keywords editor, you can click on the :guilabel:"
-"`Help` button at the bottom of the dialog and this page will be displayed."
+# d5284fba93614525bd0fa05127f1117d
+msgid "If you need help using the keywords editor, you can click on the :guilabel:`Help` button at the bottom of the dialog and this page will be displayed."
 msgstr ""
+

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-15 16:52\n"
+"POT-Creation-Date: 2013-08-15 11:44\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,92 +17,92 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:6
-# a09071c555a3424cb70f6b44f674452a
+# f92f5fbf74554686904bba706bb42a40
 msgid "Flood Evacuation Function"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:9
-# ec4b48f51ab341b1bdbd6c442dca42c1
+# ad195479e2d4411e99e5f23160735ef3
 msgid "Overview"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:11
-# 4883e76914fd45e49e7786a153391c89
+# fda8592376194d068d6c7f8792b84c2d
 msgid "**Unique Identifier**: Flood Evacuation Function"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:14
-# eef513d028c140e39e514ef28c744aab
-msgid "**Author**: |AIFDR|, |AusAID|"
+# da662bcafb88498bb7f6a09dfaef65dd
+msgid "**Author**: AIFDR"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:17
-# 6129821a337a47a7b5d235e66fc73a62
+# 3b8686dddc41413b8ff3f093665ae21e
 msgid "**Rating**: 4"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:20
-# d30d45d2919240ce8e26806ecb688694
+# 2a6242fb734548bebed8b1cd4371573d
 msgid "**Title**: Need evacuation"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:23
-# a12293c5e7994687a5c2cae80211b4b9
+# a110f22a88834b8ca35046da56b276a0
 msgid "**Synopsis**: To assess the impacts of (flood or tsunami) inundation in raster format on population."
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:26
-# 3f9f82bd1b794ca6827e3d6add4696e5
+# 383fcb8661024014a02faa34dcaa484d
 msgid "**Actions**: Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them."
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:29
-# 3454a9b8c7d54897ae3e2c4533896c7f
+# 95851f505c1240228fc8f577054e7ea5
 msgid "**Hazard Input**: A hazard raster layer where each cell represents flood depth (in meters)."
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:32
-# 22e36171222245ffb2236136d49f7bcc
+# 586ca258e4224fc6a0799094e18a90aa
 msgid "**Exposure Input**: An exposure raster layer where each cell represent population count."
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:35
-# 66a1705e2981466bbc719f79dd4789a8
-msgid "**Output**: Raster layer contains population affected and the minimumneeds based on the population affected."
+# c81e206f5cd84a2288f620fac4b94629
+msgid "**Output**: Raster layer contains population affected and the minimum needs based on the population affected."
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:38
-# 577630636fa1423897000fe7971ede5a
+# 5906f5dd2d1a4ef8a5c33c887572c6dc
 msgid "**Limitation**: The default threshold of 1 meter was selected based on consensus, not hard evidence."
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:42
-# 23fcfa148d4a4d50abba2cb1065bac13
+# d7e39470a0f840e78cc00ae90b835421
 msgid "Details"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:44
-# d9a68e3bfc604be2b3ed9a02a6a8ef1f
-msgid "The population subject to inundation exceeding a threshold (default 1m) is calculated and returned as a raster layer.In addition the total number and the required needs in terms of the |BNPB| (Perka 7) are reported. The threshold can be changed and even contain multiple numbers in which case evacuation and needs are calculated using the largest number with population breakdowns provided for the smaller numbers. The population raster is resampled to the resolution of the hazard raster and is rescaled so that the resampled population counts reflect estimates of population count per resampled cell. The resulting impact layer has the same resolution and reflects population count per cell which are affected by inundation."
+# ca77db464e2f4e819c0fa49f10ddb80a
+msgid "The population subject to inundation exceeding a threshold (default 1m) is calculated and returned as a raster layer. In addition the total number and the required needs in terms of the BNPB (Perka 7) are reported. The threshold can be changed and even contain multiple numbers in which case evacuation and needs are calculated using the largest number with population breakdowns provided for the smaller numbers. The population raster is resampled to the resolution of the hazard raster and is rescaled so that the resampled population counts reflect estimates of population count per resampled cell. The resulting impact layer has the same resolution and reflects population count per cell which are affected by inundation."
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:47
-# 6a02ac9f894a446ba06fce2af9c089a0
+# 77fe28f7e90b48e99842ecc823156a1a
 msgid "Docstring"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:49
-# 1c80a44667d84f158bae27a31d4aa9ea
+# 70c21aacec21478f96adf9a8e3be1392
 msgid "Impact function for flood evacuation"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:51
-# e3cddfea98234632945d79f39e58618c
-msgid ":author |AIFDR|, |AusAID| :rating 4 :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami'] and                     layertype=='raster' and                     unit=='m'"
+# 200b1f8c5a2241f996b5bff186acfb6c
+msgid ":author AIFDR :rating 4 :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami'] and                     layertype=='raster' and                     unit=='m'"
 msgstr ""
 
 #: ../../source/user-docs/impact_function_docs/FloodEvacuationFunction.rst:55
-# eee321fd7ebd483c8fd74ba484436918
+# 89d3f8519c904f3fb8982da1ef86792e
 msgid ":param requires category=='exposure' and                     subcategory=='population' and                     layertype=='raster'"
 msgstr ""
 
