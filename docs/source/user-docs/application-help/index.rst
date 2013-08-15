@@ -3,8 +3,8 @@
 Application Help
 ================
 
-This section of the documentation describes how to use the |project_name|
-system.
+This document explains the purpose of the different functions available in
+|project_name| Tool, how (and where) to find them and howto use them.
 
 .. toctree::
    :maxdepth: 2
