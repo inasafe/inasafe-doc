@@ -11,7 +11,7 @@ the list of :ref:`technical_working_group`.
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    psc
    twg

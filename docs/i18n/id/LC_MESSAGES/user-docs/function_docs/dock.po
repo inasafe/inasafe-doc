@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-09 12:34\n"
+"POT-Creation-Date: 2013-08-15 10:42\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,34 +171,74 @@ msgid ""
 "be listed in the :guilabel:`Might` combo box."
 msgstr ""
 
-# d78f0286bcd749a1be0ec824a8e875c7
+# d1d2c51d5e9d467fb3721d6c913f76f9
 #: ../../source/user-docs/function_docs/dock.rst:90
 msgid ""
 "You may be wondering how the |project_name| plugin determines whether a "
 "layer should be listed in the :guilabel:`In the event of` or :guilabel:`How "
 "many` combo boxes? The plugin relies on simple keyword metadata to be "
-"associated with each layer. The keyword system is described in detail in :"
-"doc:`keywords`. Each layer that has a keyword allocating it's **category** "
-"to **hazard** will be listed in the :guilabel:`In the event of` combo. "
-"Similarly, a **category** of **exposure** in the keyw`ords for a layer will "
-"result in it being listed under the :guilabel:`How many` combo."
+"associated with each layer."
+msgstr ""
+
+# 98ce98137d944ad3a1269de4c5bf7d94
+#: ../../source/user-docs/function_docs/dock.rst:95
+msgid ""
+"The keyword system is described in detail in :doc:`keywords`. Each layer "
+"that has a keyword allocating it's **category** to **hazard** will be listed "
+"in the :guilabel:`In the event of` combo. Similarly, a **category** of "
+"**exposure** in the keywords for a layer will result in it being listed "
+"under the :guilabel:`How many` combo."
 msgstr ""
 
 # 47f4f389ab1e42e092b853ff1098a609
-#: ../../source/user-docs/function_docs/dock.rst:100
+#: ../../source/user-docs/function_docs/dock.rst:101
 msgid ""
 "|project_name| uses the combination of **category**, **subcategory**, "
 "**units** and **datatype** keywords to determine which **impact functions** "
 "will be listed in the :guilabel:`Might` combo."
 msgstr ""
 
-# 1267c75f5fcf4b00926748b44b4a4f0f
+# 53e6bebcf4724fd792b2fa12fcb3b110
 #: ../../source/user-docs/function_docs/dock.rst:105
+msgid ""
+"The chosen impact function can be configured (if applicable) by pressing the "
+"small ellipses (...) button next to the chosen impact function."
+msgstr ""
+
+# 3fcbc29051204a47b68b675119008825
+#: ../../source/user-docs/function_docs/dock.rst:108
+msgid "This is explained in more detail below under :ref:`analysis_parameters`"
+msgstr ""
+
+# 760e6ec6ac234bb9aa4c38e2b9b701aa
+#: ../../source/user-docs/function_docs/dock.rst:110
+msgid ""
+"As of InaSAFE 1.2, you can now also choose an aggregation layer. Aggregation "
+"allows you to specify an additional layer when defining the analysis "
+"criteria. This layer will be used to provide a by-area breakdown of the "
+"results of the analysis. For example if you are carrying out an analysis for "
+"a city, you can use district areas within the city to provide per-area "
+"results. In the absence of an aggregation layer, the analysis extent is used "
+"as the aggregation unit. To use this option you need to load a polygon based "
+"layer into QGIS that represents the areas you wish to summarise by."
+msgstr ""
+
+# 644802146c75417aa032b2343e833633
+#: ../../source/user-docs/function_docs/dock.rst:119
+msgid ""
+"After running an analysis, the question area is hidden to maximise the "
+"amount of space allocated to the results area (see below). You can re-open "
+"the question area at any time by pressing the :guilabel:`Show question form` "
+"button."
+msgstr ""
+
+# 1267c75f5fcf4b00926748b44b4a4f0f
+#: ../../source/user-docs/function_docs/dock.rst:125
 msgid "The Results Area"
 msgstr ""
 
 # e2ea1cfcbd474f689a0a0056294da395
-#: ../../source/user-docs/function_docs/dock.rst:107
+#: ../../source/user-docs/function_docs/dock.rst:127
 msgid ""
 "The :guilabel:`Results` area is used to display various useful feedback "
 "items to the user. Once an impact scenario has been run (see next section "
@@ -206,12 +246,12 @@ msgid ""
 msgstr ""
 
 # 93779608ee0f42328077fe1cc77b8e19
-#: ../../source/user-docs/function_docs/dock.rst:116
+#: ../../source/user-docs/function_docs/dock.rst:136
 msgid "Processed scenario with loaded and shown results"
 msgstr ""
 
 # d4ac3196f4744750b172359a80c96574
-#: ../../source/user-docs/function_docs/dock.rst:118
+#: ../../source/user-docs/function_docs/dock.rst:138
 msgid ""
 "If you select an **impact layer** (i.e. a layer that was produced using an |"
 "project_name| impact function), in the QGIS layers list, this summary will "
@@ -219,7 +259,7 @@ msgid ""
 msgstr ""
 
 # afd276a736c449dc94e78332ef5d8ba4
-#: ../../source/user-docs/function_docs/dock.rst:122
+#: ../../source/user-docs/function_docs/dock.rst:142
 msgid ""
 "When you select a **hazard** or **exposure** layer in the QGIS layers list, "
 "the keywords for that layer will be shown in the :guilabel:`Results` area, "
@@ -227,12 +267,12 @@ msgid ""
 msgstr ""
 
 # 28bd8da12db947ca9f2e94e9dac8dd84
-#: ../../source/user-docs/function_docs/dock.rst:131
+#: ../../source/user-docs/function_docs/dock.rst:151
 msgid "Showing keywords for active Layer"
 msgstr ""
 
 # 88684cfa52274c00a46081a64d7c8c7e
-#: ../../source/user-docs/function_docs/dock.rst:133
+#: ../../source/user-docs/function_docs/dock.rst:153
 msgid ""
 "The :guilabel:`Results` area is also used to display status information. For "
 "example, when a suitable combination of **hazard** (:guilabel:`In the event "
@@ -243,12 +283,12 @@ msgid ""
 msgstr ""
 
 # 98cf9682c423477a8193219a02ae5153
-#: ../../source/user-docs/function_docs/dock.rst:145
+#: ../../source/user-docs/function_docs/dock.rst:165
 msgid "Activated Run button"
 msgstr ""
 
 # 194e9bd6ed9a4242bec922569514e205
-#: ../../source/user-docs/function_docs/dock.rst:147
+#: ../../source/user-docs/function_docs/dock.rst:167
 msgid ""
 "Finally, the :guilabel:`Results` area is also used to display any error "
 "messages so that the user is informed as to what went wrong and why. You "
@@ -256,12 +296,12 @@ msgid ""
 msgstr ""
 
 # 8c9cb2d2a18a4dd2b205c67ed13450e8
-#: ../../source/user-docs/function_docs/dock.rst:156
+#: ../../source/user-docs/function_docs/dock.rst:176
 msgid "Showing error messages"
 msgstr ""
 
 # 7ebef4e1b4154d279245b421270e28e5
-#: ../../source/user-docs/function_docs/dock.rst:158
+#: ../../source/user-docs/function_docs/dock.rst:178
 msgid ""
 "To have more space for the results available your Question is automatically "
 "hidden to make the results area as large as possible to display the results. "
@@ -270,12 +310,12 @@ msgid ""
 msgstr ""
 
 # 3d1448e4f97042cb9f026ef77d973dd1
-#: ../../source/user-docs/function_docs/dock.rst:168
+#: ../../source/user-docs/function_docs/dock.rst:188
 msgid "Show question form"
 msgstr ""
 
 # 50bad05ed4d044009380deacc4c482c6
-#: ../../source/user-docs/function_docs/dock.rst:170
+#: ../../source/user-docs/function_docs/dock.rst:190
 msgid ""
 "If you want to hide the question again to have more space to display the "
 "results again, just make the Layer you just calculated with |project_name| "
@@ -283,7 +323,7 @@ msgid ""
 msgstr ""
 
 # 1c572a5db71245d9ae1c41ca87e02309
-#: ../../source/user-docs/function_docs/dock.rst:174
+#: ../../source/user-docs/function_docs/dock.rst:194
 msgid ""
 "At the bottom of error display you may see button like the following. If you "
 "click on this button, it will display a box which will contain useful "
@@ -292,29 +332,29 @@ msgid ""
 msgstr ""
 
 # 08374e184d384a8a8ea5be5a3b247b42
-#: ../../source/user-docs/function_docs/dock.rst:183
+#: ../../source/user-docs/function_docs/dock.rst:203
 msgid "The Buttons Area"
 msgstr ""
 
 # f1d45f0d0d194be3b10a7494d602e492
-#: ../../source/user-docs/function_docs/dock.rst:185
+#: ../../source/user-docs/function_docs/dock.rst:205
 msgid "The buttons area contains three buttons:"
 msgstr ""
 
 # fa71f24593c545009d7d5d02598dbb3c
-#: ../../source/user-docs/function_docs/dock.rst:192
+#: ../../source/user-docs/function_docs/dock.rst:212
 msgid "Buttons Area"
 msgstr ""
 
 # 14ba0826bc0a45148fe6ace587b6ed2a
-#: ../../source/user-docs/function_docs/dock.rst:194
+#: ../../source/user-docs/function_docs/dock.rst:214
 msgid ""
 ":guilabel:`Help` - click on this if you need context help, such as the "
 "document you are reading right now!"
 msgstr ""
 
 # 1f919b10f7f64e35ba5336c355a792a6
-#: ../../source/user-docs/function_docs/dock.rst:196
+#: ../../source/user-docs/function_docs/dock.rst:216
 msgid ""
 ":guilabel:`Print...` - click on this if you wish to create a pdf of your "
 "impact scenarion project. An **impact layer** must be active before the :"
@@ -322,19 +362,19 @@ msgid ""
 msgstr ""
 
 # 0ba2be7794054783b588f0de2ca13bf5
-#: ../../source/user-docs/function_docs/dock.rst:199
+#: ../../source/user-docs/function_docs/dock.rst:219
 msgid ""
 ":guilabel:`Run` - if the combination of options in the :guilabel:`Questions` "
 "area's combo boxes will allow you to run a scenario, this button is enabled."
 msgstr ""
 
 # d3ded7aeb4cf465cb9526c418c047335
-#: ../../source/user-docs/function_docs/dock.rst:203
+#: ../../source/user-docs/function_docs/dock.rst:223
 msgid "Data conversions when running a scenario"
 msgstr ""
 
 # 147cb7596e824924b84f5b01b285b50f
-#: ../../source/user-docs/function_docs/dock.rst:205
+#: ../../source/user-docs/function_docs/dock.rst:225
 msgid ""
 "When running a scenario, the data being used needs to be processed into a "
 "state where it is acceptable for use by the impact function. In particular "
@@ -342,31 +382,31 @@ msgid ""
 msgstr ""
 
 # 7810ad963b9c47c5bdb351297c2cfc30
-#: ../../source/user-docs/function_docs/dock.rst:209
+#: ../../source/user-docs/function_docs/dock.rst:229
 msgid "Remote datasets will be copied locally before processing."
 msgstr ""
 
 # 17c80490ad3745cbae61b95ce2a874c6
-#: ../../source/user-docs/function_docs/dock.rst:210
+#: ../../source/user-docs/function_docs/dock.rst:230
 msgid ""
 "All datasets will be clipped to the intersection of the **hazard** layer, "
 "the **exposure** layer and the current view extents."
 msgstr ""
 
 # 2d56e44821614c0f83d1d79ff205f73b
-#: ../../source/user-docs/function_docs/dock.rst:212
+#: ../../source/user-docs/function_docs/dock.rst:232
 msgid ""
 "All clipped datasets will be converted (reprojected) to Geographic "
 "(EPSG:4326) coordinate reference system before analysis."
 msgstr ""
 
 # 25e5c2ddc8b04e4da1341d0b31639789
-#: ../../source/user-docs/function_docs/dock.rst:218
+#: ../../source/user-docs/function_docs/dock.rst:238
 msgid "Setting Analysis Parameters"
 msgstr ""
 
 # c11e6cd9c3be4df281e63e956da6cdb8
-#: ../../source/user-docs/function_docs/dock.rst:220
+#: ../../source/user-docs/function_docs/dock.rst:240
 msgid ""
 "Depending on what Impact Function you have chosen you have different options "
 "to adjust the parameters of the your question you are asking. Some Impact "
@@ -376,7 +416,7 @@ msgid ""
 msgstr ""
 
 # 2328697d19f243c9b4479f1194a60518
-#: ../../source/user-docs/function_docs/dock.rst:225
+#: ../../source/user-docs/function_docs/dock.rst:245
 msgid ""
 "To open the Impact Function Configuration Dialog you need to click on the :"
 "guilabel:`...` Button next to the :guilabel:`Might` paragraph in the |"
@@ -384,17 +424,17 @@ msgid ""
 msgstr ""
 
 # eed8a6c53064464b959b8003bd08e91c
-#: ../../source/user-docs/function_docs/dock.rst:234
+#: ../../source/user-docs/function_docs/dock.rst:254
 msgid "Open the Impact Function Configurator"
 msgstr ""
 
 # 5b47d77c26234d4d932204ca3edfba33
-#: ../../source/user-docs/function_docs/dock.rst:236
+#: ../../source/user-docs/function_docs/dock.rst:256
 msgid "You might have up to 3 tabs visible."
 msgstr ""
 
 # efb9a6d2cab341af90cf4c50331d753c
-#: ../../source/user-docs/function_docs/dock.rst:238
+#: ../../source/user-docs/function_docs/dock.rst:258
 msgid ""
 "Options: Depending in the Impact function you selected, you can influence "
 "the result of your question here (the Impact Function) by setting different "
@@ -403,12 +443,12 @@ msgid ""
 msgstr ""
 
 # 3f24a6c41067413f852359e2dd77b345
-#: ../../source/user-docs/function_docs/dock.rst:243
+#: ../../source/user-docs/function_docs/dock.rst:263
 msgid "Postprocessors: Breaks down the different values inside the"
 msgstr ""
 
 # 9c8e38fc3d014a6f8f6af5080ef02135
-#: ../../source/user-docs/function_docs/dock.rst:244
+#: ../../source/user-docs/function_docs/dock.rst:264
 msgid ""
 "Minimum Needs: If it is something that effects for eg people it works out "
 "the minimum needs of the people affected by the impact scenario. To use that "

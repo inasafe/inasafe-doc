@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-09 12:34\n"
+"POT-Creation-Date: 2013-08-15 10:42\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,28 +20,90 @@ msgstr ""
 # 1033dba15511423eab8c908a7e36ba9f
 # ed3cb127aa9942868a18349352592569
 #: ../../source/user-docs/function_docs/minimum_needs.rst:8
-#: ../../source/user-docs/function_docs/minimum_needs.rst:17
+#: ../../source/user-docs/function_docs/minimum_needs.rst:39
 msgid "Minimum Needs Tool"
 msgstr ""
 
-# 2b1b1fb106784575a5290f95fbf24ec0
+# 697e81e5b352446e9c16a244c72e8a4b
 #: ../../source/user-docs/function_docs/minimum_needs.rst:10
-msgid "This tool calculates the minimum needs for evacuated people."
-msgstr ""
-
-# 3df6c81d33ef4898810a1cb98de80cd2
-#: ../../source/user-docs/function_docs/minimum_needs.rst:19
-msgid "To use this tool effectively:"
-msgstr ""
-
-# d7a324b539af4c459cfd8a3681e89832
-#: ../../source/user-docs/function_docs/minimum_needs.rst:21
 msgid ""
-"Load a polygon layer in QGIS. Typically the layer will represent "
-"administrative districts where people have gone to an evacuation center. "
-"Ensure that the layer has an INTEGER attribute for the number of displaced "
-"people associated with each feature. Use the pick lists below to select the "
-"layer and the population field and then press :guilabel:`OK`. A new layer "
-"will be added to QGIS after the calculation is complete. The layer will "
-"contain the minimum needs per district/administrative boundary."
+"The purpose of the minimum needs tool is to provide a quick method of "
+"calculating support requirements (in terms of food, water etc.) for "
+"displaced persons."
+msgstr ""
+
+# d5182ec2ced34cf6880ca6aa70bb0b1d
+#: ../../source/user-docs/function_docs/minimum_needs.rst:14
+msgid ""
+"The minimum needs are based on 'Perka 7/2008' according to the following "
+"formulas:"
+msgstr ""
+
+# 390f4935bb07480eb259cbf61f60ee7a
+#: ../../source/user-docs/function_docs/minimum_needs.rst:17
+msgid "400g rice per person per day (2.8kg per week)."
+msgstr ""
+
+# 9a1a6db684494824b7fc882650652cd4
+#: ../../source/user-docs/function_docs/minimum_needs.rst:18
+msgid "2.5l drinking water per person per day (17.5l per week)."
+msgstr ""
+
+# 29c02bb559a04f01804ea3cf48f70481
+#: ../../source/user-docs/function_docs/minimum_needs.rst:19
+msgid "15l clean water per person per day (105l per week)."
+msgstr ""
+
+# 8ae06cdee24742adb28bf08e0586098f
+#: ../../source/user-docs/function_docs/minimum_needs.rst:20
+msgid ""
+"1 family kit per family per week (assumes 5 people per family which is not "
+"specified in perka)."
+msgstr ""
+
+# c30efb1e56e1429cafd97a601bd13761
+#: ../../source/user-docs/function_docs/minimum_needs.rst:22
+msgid "20 people per toilet."
+msgstr ""
+
+# 16e4cd89bf2f4b6396a82d99fdf14f15
+#: ../../source/user-docs/function_docs/minimum_needs.rst:24
+msgid ""
+"In the current version of InaSAFE, these guidelines cannot be adjusted by "
+"the user. In a future version we will provide this facility."
+msgstr ""
+
+# 4485e7668a6d48acbd09a896ad52a79f
+#: ../../source/user-docs/function_docs/minimum_needs.rst:27
+msgid ""
+"In order to use this tool, you need to first load a polygon layer in QGIS "
+"that contains areas (e.g. administrative areas) with an attribute that "
+"represents the number of displaced people in each area."
+msgstr ""
+
+# 241d9f04389241398f4ed15ee33ab9e0
+#: ../../source/user-docs/function_docs/minimum_needs.rst:31
+msgid ""
+"When the layer is loaded, click on the :guilabel:`Minimum Needs` tool in the "
+"toolbar:"
+msgstr ""
+
+# 249a58a1d3ea41b49ed8836bb5c88ac9
+#: ../../source/user-docs/function_docs/minimum_needs.rst:41
+msgid ""
+"In the dialog that appears, choose the QGIS layer that contains the "
+"administrative boundaries and then select the attribute in that layer that "
+"represents the number of displaced people."
+msgstr ""
+
+# d5b6b3ec0e064f5cbea0a7d81d22fdd5
+#: ../../source/user-docs/function_docs/minimum_needs.rst:45
+msgid "When you are ready, press the :guilabel:`OK` button on the dialog."
+msgstr ""
+
+# 345157529d8c42a0b00a093eac2dca0a
+#: ../../source/user-docs/function_docs/minimum_needs.rst:47
+msgid ""
+"After the analysis is completed, new keywords will be associated with the "
+"layer that indicate the needs according to the formulas defined above."
 msgstr ""
