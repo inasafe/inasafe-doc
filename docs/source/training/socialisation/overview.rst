@@ -230,12 +230,12 @@ analysis.  This will be touched on during the training exercise.
 Keywords:
 .........
 
-  An Impact function will automatically be chosen depending on the keywords
-  that has been allocated to the input layers. The purpose of the keywords file
-  is to provide additional metadata needed by the impact functions. For
-  example, the keywords file will indicate whether a given dataset should be
-  treated as a hazard or an exposure layer. It is also used to indicate the
-  context of the layer (e.g. flood, earthquake).
+An Impact function will automatically be chosen depending on the keywords
+that has been allocated to the input layers. The purpose of the keywords file
+is to provide additional metadata needed by the impact functions. For
+example, the keywords file will indicate whether a given dataset should be
+treated as a hazard or an exposure layer. It is also used to indicate the 
+context of the layer (e.g. flood, earthquake).
 
 **Available Impact Functions**
 
