@@ -46,11 +46,11 @@ the |project_name| website you can find not only documentation on training,
 but all user documentation and developer documentation.  This website is also
 updated with every new release.
 
-.. image:: /static/socialisation/inasafe_mainpage.*
+Add image /static/socialisation/inasafe_mainpage.*
 
 Click on the :guilabel:`Content` to find out more
 
-.. image:: /static/socialisation/inasafe_content.*
+Add image /static/socialisation/inasafe_content.*
 
 Frequently Asked Questions
 --------------------------

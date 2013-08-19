@@ -35,7 +35,7 @@ impact? |project_name| needs your help!.
    **File/Open Project...** , :guilabel:`navigate` to |project_name| projects
    and select Volcano_Indonesia
 
-.. image:: /static/socialisation/volcanoes.*
+Add image /static/socialisation/volcanoes.*
 
 Select Feature and Save
 -----------------------
@@ -53,16 +53,14 @@ Select Feature and Save
    layer is centre  on the map canvas
 8. Close Attribute Table (circle 6)
 
-.. image:: /static/socialisation/merapi_attribute2.*
-   :align: center
-
+Add image /static/socialisation/merapi_attribute2.*
+   
 9. :guilabel:`Click` on the zoom to selected tool to zoom in further.
    :guilabel:`Keep clicking` the tool until you get to an extent similar to the
    one below. (The yellow triangle is Merapi)
 
-.. image:: /static/socialisation/merapi2.*
-   :align: center
-
+Add image/static/socialisation/merapi2.*
+ 
 Now that we know where Merapi is, and have check that it is in fact in the
 right location, we are going to make a hazard layer with just this point.
 
@@ -72,9 +70,8 @@ right location, we are going to make a hazard layer with just this point.
 12. Check “Add saved file to map” (circle 2)
 13. Click OK (circle 3)
 
-.. image:: /static/socialisation/save_selection.*
-   :align: center
-
+Add image /static/socialisation/save_selection.*
+   
 14. :guilabel:`Uncheck` Volcanoes in the layer window.
 
 You should now have a point that shows the location of Merapi. Lets take some
@@ -87,8 +84,8 @@ time to examine the ‘dot’.
 .. Note:: For the Information and Measurement tool to work you need to have
    the Merapi layer highlighted in the layer window.
 
-.. image:: /static/socialisation/save_selection.*
-   :align: center
+Add image /static/socialisation/save_selection.*
+
 
 Keywords
 --------
@@ -102,8 +99,8 @@ layer, so lets make one!
 20. For Subcategory select :guilabel:`volcano`
 21. :guilabel:`Click OK`
 
-.. image:: /static/socialisation/merapi_keyword.*
-   :align: center
+Add image /static/socialisation/merapi_keyword.*
+
 
 Configure and Run |project_name|
 --------------------------------
@@ -125,9 +122,8 @@ As a default |project_name| has made 3 hazard areas:
 * 3-5 km
 * 5-10 km
 
-.. image:: /static/socialisation/impact_function_config.*
-   :align: center
-
+Add image /static/socialisation/impact_function_config.*
+   
 .. Note:: that its written 3,5,10 so if you wanted Vent-2,
    2-6 and then 6-10 it would be 2,6,10*
 
@@ -183,8 +179,8 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
     :guilabel:`click` on each of them to read the keywords in the
     |project_name| window
 
-.. image:: /static/socialisation/padang_earthquake2.*
-   :align: center
+Add image /static/socialisation/padang_earthquake2.*
+
 
 30. Notice the difference between the first **people** layer and the second,
     the second one has a source of AsiaPop rescale, keep this in mind for the
@@ -204,14 +200,12 @@ enough memory. You will recall that there is another **people** layer,
 the difference is the size of the pixel, the one we are trying to run is 100
 m by 100 m and the one we will run is 1km by 1km.
 
-.. image:: /static/socialisation/memory_error.*
-   :align: center
-
+Add image /static/socialisation/memory_error.*
+   
 **Basically less pixels less memory need**
 
-.. image:: /static/socialisation/cell_size.*
-   :align: center
-
+Add image /static/socialisation/cell_size.*
+   
 33. :guilabel:`Select` the second “people” in the drop down menu
 34. :guilabel:`Click` on the drop down menu for the “Might”,
     this is the first |project_name| run where there are actually 2 impact
@@ -277,8 +271,8 @@ of a Magnitude 8.1 earthquake generating a Tsunami that impact Maumere.
 You will see that there is 3 layers in the layer panel,
 click on each of them to read the keywords in the |project_name| window.
 
-.. image:: /static/socialisation/maumere_tsunami2.*
-   :align: center
+Add image /static/socialisation/maumere_tsunami2.*
+
 
 .. Note:: The InaSAFE functionality for Tsunami and floods are very similar,
    however due to the force of the tsunami waves, the maximum depth of the
@@ -315,8 +309,8 @@ click on each of them to read the keywords in the |project_name| window.
 Map Canvas Extent
 -----------------
 
-.. image:: /static/socialisation/maumere_zoomin2.*
-   :align: center
+Add image /static/socialisation/maumere_zoomin2.*
+
 
 54. Try :guilabel:`zooming` into one section of the tsunami
 55. :guilabel:`Run` steps 45-53 again place your 2 results below
