@@ -86,14 +86,20 @@ Clone the code repository
 
 First open a GIT bash prompt as described above.
 
-The repository can now be cloned by issuing the commands listed below.::
+The repository can now be cloned by issuing these commands:
 
+Users on windows < Windows 7::
+   
    cd  /c/Documents\ and\ Settings/<your username>/
 
+Windows 7 or newer::
+
+   cd  /c/Users/<your username>/
+
+All windows versions::
+
    mkdir -p .qgis/python/plugins
-
    cd .qgis/python/plugins/
-
    git clone https://<your username>@github.com/AIFDR/inasafe.git inasafe-dev
 
 .. note:: The items in angle brackets above should be replaced with your
@@ -118,7 +124,16 @@ To check out the test data from git, first open a GIT bash prompt as illustrated
 
 The repository can now be cloned by issuing the commands listed below. (Already completed in previous step)::
 
+Users on windows < Windows 7::
+   
    cd  /c/Documents\ and\ Settings/<your username>/.qgis/python/plugins/
+
+Windows 7 or newer::
+
+   cd  /c/Users/<your username>/.qgis/python/plugins/
+
+All windows versions::
+
    git clone https://<your username>@github.com/AIFDR/inasafe_data.git inasafe_data
 
 .. note:: The items in angle brackets above should be replaced with your
