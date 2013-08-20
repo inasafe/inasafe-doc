@@ -201,13 +201,16 @@ Installing |project_name| through the QGIS plugin repository
 .. image:: /static/training/socialisation/021_insafe_gettingstarted.*
    :align: center
 
-|project_name| also comes with a toolbar of its own
+
+|project_name| also comes with a toolbar of its own!
 
 16. To retrieve the |project_name| toolbar, :guilabel:`Right Click` on the top
-   tool bar and :guilabel:`Recheck` *plugin*
+   tool bar and :guilabel:`Recheck` **plugin**
+
 
 .. image:: /static/training/socialisation/022_inasafetoolbar.*
    :align: center
+
 
 ================								   ========================
 **Symbol**                                          **Name**
@@ -234,9 +237,8 @@ Installing |project_name| through the QGIS plugin repository
    :align: center
 ================                                    ========================
 
-.. Note:: Later we will explore and use these tools.
-
-For more information :doc:`../../user-docs/toolbar`
+.. Note:: Later we will explore and use these tools.  For more information
+ :doc:`../../user-docs/toolbar`
 
 OpenLayer Plugin
 ................
@@ -246,17 +248,17 @@ Installing OpenLayer through the QGIS plugin repository
 17. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a
    couple of minutes for QGIS to contact its repository and show the list of
    plugins available.
-#. Type :kbd:`openlayers` into the filter box.
-#. :guilabel:`Select` *OpenLayer Plugin* then :guilabel: `Install plugin` - this will
+18. Type :kbd:`openlayers` into the filter box.
+19. :guilabel:`Select` *OpenLayer Plugin* then :guilabel:`Install plugin` - this will
    take a couple of minutes for the plugin to download and install.
-#. A window should pop up saying: "Plugin installed successfully"  :guilabel:`Ok`
+20. A window should pop up saying: "Plugin installed successfully"  :guilabel:`Ok`
    and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
-#. Hover mouse over :menuselection:`Plugins --> OpenLayer Plugin`
+21. Hover mouse over :menuselection:`Plugins --> OpenLayer Plugin`
 
 .. image:: /static/training/socialisation/023_openlayers.*
    :align: center
 
-#. :guilabel:`Select` *Add Bing Aerial layer*
+22. :guilabel:`Select` *Add Bing Aerial layer*
 
 .. image:: /static/training/socialisation/024_aerial_bing.*
    :align: center
@@ -269,25 +271,25 @@ Installing OpenLayer through the QGIS plugin repository
 
 Using the navigation tools below, zoom into your home.
 
-==========================================  ============
+==========================================  =============
 **Symbol**                                  **Name**
-------------------------------------------  ------------
+------------------------------------------  -------------
 .. image:: /static/general/icon_pan.*       Pan Map
 .. image:: /static/general/icon_zoomin.*    Zoom In
 .. image:: /static/general/icon_zoomout.*   Zoom Out
 .. image:: /static/general/icon_zoomfull.*  Zoom to Full
 .. image:: /static/general/icon_zoomlast.*  Zoom Last
 .. image:: /static/general/icon_zoomnext.*  Zoom Next
-==========================================  ============
+==========================================  =============
 
-#. :guilabel:`Click` *zoom In*, draw a box (click and drag) over your country.
+23. :guilabel:`Click` *zoom In*, draw a box (click and drag) over your country.
 
-#. :guilabel:`Click` *Pan Map*, shift the map so your country is in the
+24. :guilabel:`Click` *Pan Map*, shift the map so your country is in the
    centre of the screen.
 
 .. Note:: If you make a mistake in your zooming, use *Zoom Last* tool.
 
-#. Navigate to your own house or work
+25. Navigate to your own house or work
 
 **Indonesia**
 
