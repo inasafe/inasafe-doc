@@ -19,7 +19,7 @@ development environment for InaSAFE under Windows:
 * Create a custom shell launcher with a python prompt
 * Setup your IDE (Eclipse PyDev or PyCharm)
 
-You may also wish to read :doc:`jenkins_ci_windows_slave.rst` if you wish to
+You may also wish to read :doc:`jenkins_ci_windows_slave` if you wish to
 set up automated test suite running using Jenkins.
 
 
@@ -122,7 +122,7 @@ Checkout the test data
 To check out the test data from git, first open a GIT bash prompt as illustrated below:
 
 
-The repository can now be cloned by issuing the commands listed below. (Already completed in previous step)::
+The repository can now be cloned by issuing the commands listed below. (Already completed in previous step):
 
 Users on windows < Windows 7::
    
