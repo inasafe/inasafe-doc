@@ -116,6 +116,10 @@ console when the clone process is completed::
    Receiving objects: 100% (5002/5002), 2.38 MiB | 7 KiB/s, done.
    Resolving deltas: 100% (3505/3505), done.
 
+.. note:: Why do we check it out as inasafe-dev ? We do this so that the
+   standard release package can be used on the same system using the QGIS
+   plugin manager.
+
 Checkout the test data
 ......................
 
@@ -374,8 +378,101 @@ session) and running::
 
    runtests.bat
 
+Developing using PyCharm
+------------------------
+
+.. note:: This is optional - you can use any environment you like for editing
+   python, or even a simple text editor.
+
+
+.. note:: PyCharm is unfortunately not FOSS (Free and Open Source Software),
+   however they do provide free licenses for Open Source projects, which
+   InaSAFE has been granted. If you wish to make use of this license, please
+   contact info@inasafe.org for your copy.
+
+Download and Install
+....................
+
+Download PyCharm from their 
+`download page <http://www.jetbrains.com/pycharm/download/index.html>`_ and
+then install it taking all the defaults. Note that the download is approximately
+125mb at the time of writing this (version 2.7).
+
+Once the installation is complete, start PyCharm and accept all the defaults for
+the first-run wizard. You may be prompted to restart pycharm at the end of that
+process - which you should do.
+
+
+Making PyCharm 'QGIS Aware'
+...........................
+
+We need to have various environment variables set in the PyCharm context in 
+a similar way we do with :ref:`windows-commandline_setup`. Make a copy of 
+your qgis-shell batch file and call it qgis-pycharm.bat.
+
+Now alter the last line so that it launches pycharm instead of a shell as
+per this example below::
+
+	@echo off
+	SET OSGEO4W_ROOT=C:\PROGRA~2\QUANTU~1
+	call "%OSGEO4W_ROOT%"\bin\o4w_env.bat
+	call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.2\etc\env.bat
+	@echo off
+	SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins\1.9
+	path %PATH%;%OSGEO4W_ROOT%\apps\qgis\bin
+	path %PATH%;%OSGEO4W_ROOT%\apps\grass\grass-6.4.2\lib
+	path %PATH%;"%OSGEO4W_ROOT%\apps\Python27\Scripts\"
+
+	set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
+	set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
+	set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
+	cd "%HOMEPATH%\.qgis\python\plugins\inasafe-dev"
+	set PATH=c:\python27;%PATH%
+	start "PyCharm aware of Quantum GIS" /B "C:\Program Files (x86)\JetBrains\PyCharm 2.7.3\bin\pycharm.exe" %*
+
+Now use this PyCharm launcher whenever you need to do development work on InaSAFE.
+
+.. note:: Right drag the batch file onto your start menu to make an easily accessible
+   shortcut to your custom PyCharm launcher.
+
+Setup InaSAFE project
+.....................
+
+On the PyCharm welcome screen, choose :guilabel:`Open Directory` and open the
+git checkout you made i.e.::
+   
+   c:\Users\<username>\.qgis\python\plugins\inasafe-dev"
+
+Again, note that you should replace **<username>** with the appropriate name
+for your user account.
+
+
+Verifying that your environment is correct
+..........................................
+
+Open one of the source files that references QGIS e.g. :file:`safe_qgis/widgets/dock.py`
+and ensure that the import statements near the top of the file are not underlined in 
+red. Note that you should wait a few minutes until PyCharm indicates it has completed
+updating its indexes in the status bar at the bottom of the PyCharm window.
+
+
+Running Tests
+.............
+
+To run individual tests (or all tests within a package and its subpackages)
+simply :menuselection:`right-click` on any package containing test modules
+or on an individual test module and choose 
+:menuselection:`Run Nosetests in ...`.
+
+
+
 Developing using Eclipse (Windows)
 ----------------------------------
+
+.. warning:: We have standardised on using PyCharm for InaSAFE development (see 
+   above section). This section of documentation is left here for reference 
+   purposes in the hopes that it may help die-hard PyDev fans, but it will 
+   no longer be maintained.
 
 .. note:: This is optional - you can use any environment you like for editing
    python, or even a simple text editor.
