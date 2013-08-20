@@ -67,10 +67,10 @@ An overview of the Interface
 
 The elements identified in the figure below are:
 
-1. Layers list
-2. Toolbars
-3. Map canvas
-4. Status bar
+**1. Layers list**
+**2. Toolbars**
+**3. Map canvas**
+**4. Status bar**
 
 .. image:: /static/training/socialisation/011_interface.*
    :align: center
@@ -81,16 +81,19 @@ Begin Practical
 Setup QGIS
 ----------
 
-#. :guilabel:`Open Quantum GIS Desktop (1.8.0)` - This should be located on
+1. :guilabel:`Open Quantum GIS Desktop (1.8.0)` - This should be located on
    your desktop, or you can find it in your start menu.
 
 .. image:: /static/training/socialisation/012_qgis_desktop.*
    :align: center
 
-#. A hint window will come up, :guilabel:`Click Ok`.
+
+2. A hint window will come up, close the window by clicking :guilabel:`OK`.
 
 .. image:: /static/training/socialisation/013_tips.*
    :align: center
+   
+ .. Note:: At a later date I recommend you read through these hints by clicking on *Next*
 
 Clean up tool bar
 .................
@@ -98,10 +101,20 @@ Clean up tool bar
 To provide more space for your map canvas we will uncheck the tools we will not be
 using today.
 
-#. :guilabel:`Right Click` the toolbar and :guilabel: `Uncheck`, *Advance Digitising*,
-   *Database*, *Digitising*, *File*, *Grass*, *OpenStreetMap*, *Raster*,
-   *Vector*, *Web*.
-#. Rearrange toolbar so its just one line, `Left Click` and `Hold`
+3. :guilabel:`Right Click` the toolbar and :guilabel:`Uncheck`, 
+	
+	* Advance Digitising
+   	* Database
+   	* Digitising
+   	* File
+   	* Grass
+   	* OpenStreetMap
+   	* Raster
+   	* Vector
+   	* Web
+   
+   	   
+4. Rearrange toolbar so its just one line, :guilabel:`Left Click` and :guilabel:`Hold`
    the vertical dots on the left hand side of the tool.
    Drag to the first line of the toolbar.
 
@@ -109,7 +122,7 @@ using today.
    :align: center
 
 .. Note:: For future work you may want to add these tool back into your
-   toolbar, this is as simple as right clicking on the toolbar and turning it
+   toolbar, this is as simple as :guilabel:`Right Clicking` on the toolbar and turning it
    back on.
 
 Your QGIS toolbar should go from 3 lines to 1 line:
@@ -117,18 +130,19 @@ Your QGIS toolbar should go from 3 lines to 1 line:
 .. image:: /static/training/socialisation/015_toolbar_clean.*
    :align: center
 
+
 Option Window
 .............
 
 To change the projection settings and acknowledge that QGIS is multilingual
 
-#. Go to Options window: :menuselection:`Settings --> Options`
-#. :guilabel:`Select` the **CRS** tab of the options menu
+5. Go to Options window: :menuselection:`Settings --> Options`
+6. :guilabel:`Select` the **CRS** tab of the options menu
 
 .. image:: /static/training/socialisation/016_crs.*
    :align: center
 
-#. :guilabel:`Check` *Enable on the fly reprojection by default* - This will
+7. :guilabel:`Check` *Enable on the fly reprojection by default* - This will
    enable that all spatial layers irrespective of their projection will
    follow the CRS allocated above
 
@@ -137,12 +151,12 @@ To change the projection settings and acknowledge that QGIS is multilingual
 
 .. Note:: This  will become default in the new version of QGIS 2.0
 
-#. :guilabel:`Select` on the **Locale** tab of the options menu
+8. :guilabel:`Select` on the **Locale** tab of the options menu
 
 .. image:: /static/training/socialisation/018_locale.*
    :align: center
 
-#. :guilabel:`Check` *Override system locale*, scroll through all the languages
+9. :guilabel:`Check` *Override system locale*, scroll through all the languages
    that QGIS have been translated into! We will stick with english for this
    training, so no action is needed - :guilabel:`Uncheck` *Override system locale*.
 
@@ -153,7 +167,7 @@ To change the projection settings and acknowledge that QGIS is multilingual
    translated into bahasa Indonesian so far. World Bank is currently funding
    for the translation of |project_name| into French and Portugal
 
-#. :guilabel:`Ok` in the bottom right corner of the Options window
+10. :guilabel:`Ok` in the bottom right corner of the Options window
 
 
 Installing Plugins
@@ -166,22 +180,22 @@ Installing |project_name| through the QGIS plugin repository
 
 .. Note:: You must be connected to the internet for this section
 
-#. Go to :menuselection:`Plugins --> Fetch Python Plugins...`
+11. Go to :menuselection:`Plugins --> Fetch Python Plugins...`
    This will take a couple of minutes for QGIS to contact its repository and
    show the list of plugins available
 
-#. Type :kbd:`inasafe` into the filter box
+12. Type :kbd:`inasafe` into the filter box
 
 .. image:: /static/training/socialisation/020_inasafe_plugin.*
    :align: center
 
-#. :guilabel:`Select` |project_name| and :guilabel:`Install plugin` -
+13. :guilabel:`Select` |project_name| and :guilabel:`Install plugin` -
    this will take a couple of minutes for the plugin to download and install.
 
-#. A window should pop up saying: "Plugin installed successfully" :guilabel:`Ok`
+14. A window should pop up saying: "Plugin installed successfully" :guilabel:`Ok`
    and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
 
-#. You should now have an |project_name| panel on the right hand side of your
+15. You should now have an |project_name| panel on the right hand side of your
    screen.
 
 .. image:: /static/training/socialisation/021_insafe_gettingstarted.*
@@ -189,26 +203,36 @@ Installing |project_name| through the QGIS plugin repository
 
 |project_name| also comes with a toolbar of its own
 
-#. To retrieve the |project_name| toolbar, :guilabel:`Right Click` on the top
+16. To retrieve the |project_name| toolbar, :guilabel:`Right Click` on the top
    tool bar and :guilabel:`Recheck` *plugin*
 
 .. image:: /static/training/socialisation/022_inasafetoolbar.*
    :align: center
 
-=================================================   ========================
+================								   ========================
 **Symbol**                                          **Name**
--------------------------------------------------   ------------------------
+-----------------                                  ------------------------
 .. image:: /static/general/icon_dock.*              Toggle Dock
+   :align: center
 .. image:: /static/general/icon_keywords.*          Keyword Editor
+   :align: center
 .. image:: /static/general/icon_reset.*             Reset Dock
+   :align: center
 .. image:: /static/general/icon_options.*           Options
+   :align: center
 .. image:: /static/general/icon_impactfunctions.*   Impact Functions Browser
+   :align: center
 .. image:: /static/general/icon_minimumneeds.*      Minimum Needs Tool
+   :align: center
 .. image:: /static/general/icon_converter.*         Converter
+   :align: center
 .. image:: /static/general/icon_batch.*             Batch Runner
+   :align: center
 .. image:: /static/general/icon_save.*              Save Current Scenario
+   :align: center
 .. image:: /static/general/icon_osm.*               OpenStreetMap downloader
-=================================================   ========================
+   :align: center
+================                                    ========================
 
 .. Note:: Later we will explore and use these tools.
 
@@ -219,7 +243,7 @@ OpenLayer Plugin
 
 Installing OpenLayer through the QGIS plugin repository
 
-#. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a
+17. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a
    couple of minutes for QGIS to contact its repository and show the list of
    plugins available.
 #. Type :kbd:`openlayers` into the filter box.

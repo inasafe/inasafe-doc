@@ -227,8 +227,8 @@ how much of each item is needed to withstand a major disaster.
 Additionally an Impact functions can be configured ‘on the fly’ during the
 analysis.  This will be touched on during the training exercise.
 
-Keywords:
-.........
+Keywords
+........
 
 An Impact function will automatically be chosen depending on the keywords
 that has been allocated to the input layers. The purpose of the keywords file
@@ -237,7 +237,8 @@ example, the keywords file will indicate whether a given dataset should be
 treated as a hazard or an exposure layer. It is also used to indicate the 
 context of the layer (e.g. flood, earthquake).
 
-**Available Impact Functions**
+Available Impact Functions
+..........................
 
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 |       Hazard      |   How many     |         might            |                              output                                |

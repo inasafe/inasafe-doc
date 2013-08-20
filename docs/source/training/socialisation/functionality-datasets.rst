@@ -33,7 +33,7 @@ KRB = Kawansan Rawan Bencana
 **Exposure:**
 
 =============  ================  =================  ==================  =======================
-**Exposure**   **Spatial Type**  **Exposure Type**  **Attribute Name**  **Hazard Units/Fields**
+**Exposure**   **Spatial Type**  **Exposure Type**  **Attribute Name**  **Exposure Units/Fields**
 -------------  ----------------  -----------------  ------------------  -----------------------
 Population     Raster            Density            N/A                 People per pixel
 Structures     Polygon           Structure type     type                text
@@ -41,8 +41,10 @@ Structures     Point             Structure type     type                text
 =============  ================  =================  ==================  =======================
 
 
-.. note:: For information on what is a Raster, Vector and the different
-   Vector objects please go to :doc:`rastervsvector`
+
+.. note:: For information on what is a Raster or a Vector, as well as the difference 
+	between Vector objects please go to :doc:`rastervsvector`
+
 
 
 |project_name| is a dynamic tool that can easily be adapted to other types of
@@ -52,8 +54,11 @@ their own Impact function. Please see the |project_name| website for more
 information go to http://inasafe.org
 
 
+
 .. note:: For information on |project_name| functions please go to
    :doc:`../../user-docs/functions_doc`
+
+
 
 Exposure Layers Used in Practical
 ---------------------------------
@@ -119,7 +124,7 @@ and Padang.
     map their community boundaries and major infrastructure. Over 500
     representatives from Jakartas 267 Villages participated in these
     workshops and have mapped an impressive 6,000 buildings and all 2,668
-    sub-village boundaries (Rukun Warga-RW). Go to http://www.aifdr.org/?p=619
+    sub-village boundaries (Rukun Warga-RW). Go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
 
 :Padang: Post Hati's earthquake in 2010, there was a huge effort to map Hati
     through OSM, coordinating this effort was very hard,
@@ -130,7 +135,7 @@ and Padang.
     000 buildings mapped. However the buildings are purely footprints,
     an on the ground mapping effort is needed to record what type of building
     it is. The tool is now being used across world to coordinate OSM
-    mapping efforts. Go to http://tasks.hotosm.org/
+    mapping efforts. Go to `OSM Tasking Manager <http://tasks.hotosm.org/>`_
 
 Hazard Layers used in Practical
 -------------------------------
@@ -148,9 +153,9 @@ Tsunami      Raster            Depth            N/A                 m           
 Flood Model
 ...........
 
-:Name:  HKL Flood Model
+:Name:  HKV Flood Model
 :InaSAFE:  a flood similar to the 2007 Jakarta event
-:Source: HKV - http://deltares.nl
+:Source: `HKV <http://deltares.nl>`_
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Jakarta
 :About: The Flood model was created by scientist/engineers in coordination
@@ -164,7 +169,7 @@ Flood Model
 Flood Footprint
 ...............
 
-:Name:  Jakarta flood areas on the 18/1/2013
+:Name:  Jakarta flood areas on the 18/1/2013 by sub village boundaries
 :InaSAFE:  Jakarta flooding on the 18th January 2013
 :Source: OpenStreetMap and BPBD DKI Jakarta
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_

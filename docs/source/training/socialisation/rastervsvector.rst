@@ -29,7 +29,7 @@ represented using pixels of various different colour values.
 .. note:: Basically, Vector data is like using a pen, where you can draw a
    point, a line or a polygon, Raster data is like taking a picture with a
    camera, where each square has one value, and all the squares (pixels)
-   combined make a picture.
+   combine to make a picture.
 
 **Raster = Model Hazard or population density**
 
