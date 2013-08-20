@@ -3,31 +3,76 @@
 Development under MS Windows
 ============================
 
+Overview
+--------
+
 In this document we will walk you through the different activities you will
 need to do as a windows developer wishing to work on the |project_name| codebase.
+There are a number of steps that need to be performed in order to have a usable
+development environment for InaSAFE under Windows:
+
+* Install a GIT client
+* Checkout the InaSAFE code and the InaSAFE standard test data
+* Install QGIS
+* Install a 32 bit version of python (windows 64 bit users only)
+* Install pip and other requirements for running tests
+* Create a custom shell launcher with a python prompt
+* Setup your IDE (Eclipse PyDev or PyCharm)
+
+You may also wish to read :doc:`jenkins_ci_windows_slave.rst` if you wish to
+set up automated test suite running using Jenkins.
+
 
 Installation of version control tools
 -------------------------------------
 
-Setup msysgit
-.............
+Setup GitHub for windows
+........................
 
 To check out the code for development, you first need to install a git client.
-We cover msysgit here, but you can also use
-`tortoisegit <http://code.google.com/p/tortoisegit/downloads/list>`_
-or `SourceTree <http://sourcetreeapp.com/>`_ and there is even a Windows github
-client `GitHub Windows <http://windows.github.com/>`_ .
-if you prefer.
+We cover `GitHub for Windows <http://windows.github.com/>`_  but you can use 
+another client if you prefer.
 
-To install msysgit (which is a command line git client), download the latest
-version of the software from the
-`msysgit web site <http://code.google.com/p/msysgit/downloads/list>`_.
-There is no need to get the 'full install' - just fetching the latest 'preview'
-is good enough. For example at the time of writing I downloaded
-:samp:`Git-1.7.9-preview20120201.exe`. The download is around 14mb in size.
+To install the github windows client (which includes a command line git client), 
+download the latest version of the software from the
+`GitHub for Windows <http://windows.github.com/>`_ web site. The download size 
+will be at least 40mb and will vary depending if you have the application 
+requirements installed (the installer will download and install the appropriate 
+.net framework if needed).
 
-Once the file is downloaded, run it and respond to the installer prompts as
-illustrated below:
+Then run the installer and follow the prompts as directed. We recommend that
+you create an account on `github <http://github.com>`_ as it will make it 
+possible to submit bug reports and generally participate in the InaSAFE project.
+
+Then enter your account details in the GitHub git client as directed.
+
+Configure the default git shell
+...............................
+
+Next set your preferred shell to 'git bash' by going to the GitHub windows home
+screen (if needed, press the left facing arrow in the top left of the GitHub 
+windows panel repeatedly until the arrow disappears). Now use 
+:menuselection:`tools --> options` (in the top center of the window), to move
+to the options panel. In the :guilabel:`default shell` section, select 
+:menuselection:`Git Bash`.
+
+Now click :guilabel:`update` and close the GitHub windows application.
+
+Verify your git shell
+.....................
+
+We will do all the remaining tasks using the command line git client as it gives
+more accurate control over git and the procedure is more closely aligned to that
+of other operating systems. So let us verify that your shell is available:
+
+:menuselection:`Windows Start --> All Programs --> GitHub Inc. --> Git Shell`
+
+Confirm that the window title for the window that appears starts with 'MINGWIN32'.
+
+From now on use this shell for all the commands that follow below.
+
+.. note:: Create a shortcut on your start button to the github shell as you will
+   use if often!
 
 
 Check out the code and the test data
@@ -39,7 +84,7 @@ using the tools we installed above.
 Clone the code repository
 .........................
 
-First open a GIT bash prompt as illustrated below:
+First open a GIT bash prompt as described above.
 
 The repository can now be cloned by issuing the commands listed below.::
 
@@ -211,9 +256,9 @@ pypi. Download the script on
 `this page <http://pypi.python.org/pypi/setuptools#windows>`_ called
 ez_setup.py and save it somewhere familiar e.g. :samp:`c:\temp`.
 
-.. note:: If you use windows 32bit, do not download the .exe file as said on
-   `the page <http://pypi.python.org/pypi/setuptools#windows>`_,
-   but just download the ez_setup.py
+.. note:: If you use windows 32bit, do not download the .exe file as described 
+   on `this page <http://pypi.python.org/pypi/setuptools#windows>`_, rather
+   just download the ez_setup.py
 
 Special note for Win64 bit users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -242,6 +287,9 @@ the demo session below::
     >>> print sys.executable
     c:\python27\python.exe
     >>>
+
+.. note:: QGIS 2.0 should ship as a 64bit binary (including python), so the
+   above step should no longer be needed in future versions.
 
 For both 32 and 64 bit
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -310,45 +358,6 @@ the plugin directory/inasafe-dev folder (in your python-shell.bat shell
 session) and running::
 
    runtests.bat
-
-Building sphinx documentation
------------------------------
-
-`Sphinx <http://sphinx.pocoo.org>`_ is a tool for building documentation that
-has been written in the ReSTructured text markup language (a simple wiki like
-format). You can build the sphinx documentation under windows using a helper
-script provided in the docs directory of the |project_name| source directory,
-but first you need to actually install sphinx.
-
-Installing sphinx
-.................
-
-Launch your QGIS python shell environment (see :ref:`windows-pip-setup`) as
-administrator and then run the following command::
-
-   pip install sphinx
-
-The cloud-sp theme package installs the sphinx theme we are using.
-
-Building the documentation
-..........................
-
-To build the documentation, open a QGIS python shell (no need to be admin) and
-go into your inasafe-dev/docs directory. Now run the following command::
-
-   make.bat html
-
-.. note:: Only the html make target has been tested. To use other make targets
-   you may need to perform further system administrative tasks.
-
-Viewing the documentation
-.........................
-
-The documentation can be viewed from withing QGIS by clicking the
-:guilabel:`help` button on the |project_name| dock panel,
-or you can view it in your browser by opening a url similar to this one::
-
-   file:///C:/Users/Tim%20Sutton/.qgis/python/plugins/inasafe/docs/_build/html/index.html
 
 Developing using Eclipse (Windows)
 ----------------------------------
