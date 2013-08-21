@@ -21,7 +21,6 @@ Participants are able to:
 * customise the |project_name| option menu
 * know where to go for help
 
-
 You have now gone through |project_name| using 4 different natural hazards,
 changing a variety of parameters and analysing the results. This chapter has
 been designed to help you understand a little more about |project_name| as
@@ -46,11 +45,13 @@ the |project_name| website you can find not only documentation on training,
 but all user documentation and developer documentation.  This website is also
 updated with every new release.
 
-Add image /static/socialisation/inasafe_mainpage.*
+.. image:: /static/training/socialisation/077_website.*
+   :align: center
 
 Click on the :guilabel:`Content` to find out more
 
-Add image /static/socialisation/inasafe_content.*
+.. image:: /static/training/socialisation/078_websitedoc.*
+   :align: center
 
 Frequently Asked Questions
 --------------------------

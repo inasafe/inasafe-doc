@@ -94,14 +94,14 @@ The raster pixel size is 100m by 100m.
 Structures
 ..........
 
-:Name: 	OpenStreetMap(OSM)
+:Name: 	|OSM|
 :InaSAFE: buildings
 :Source: 	http://openstreetmap.org
 :License: `Open Data Commons Open Database License (ODbL) <http://opendatacommons.org/licenses/odbl/>`_
 :Coverage: World - incomplete
 :About:  	OpenStreetMap is a collaborative project to create a free
     editable map of the world. Two major driving forces behind the
-    establishment and growth of OSM have been restrictions on use or
+    establishment and growth of |OSM| have been restrictions on use or
     availability of map information across much of the world and the advent
     of inexpensive portable satellite navigation devices.
 
@@ -127,7 +127,7 @@ and Padang.
     sub-village boundaries (Rukun Warga-RW). Go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
 
 :Padang: Post Hati's earthquake in 2010, there was a huge effort to map Hati
-    through OSM, coordinating this effort was very hard,
+    through |OSM|, coordinating this effort was very hard,
     and hence |AusAID| subsequently funded the creation of OSM tasking Server.
     The OSM tasking server is a web-base tool where you are able to select
     your own square to map.  The first pilot of the web-tool was in Padang,
@@ -171,7 +171,7 @@ Flood Footprint
 
 :Name:  Jakarta flood areas on the 18/1/2013 by sub village boundaries
 :InaSAFE:  Jakarta flooding on the 18th January 2013
-:Source: OpenStreetMap and BPBD DKI Jakarta
+:Source: |OSM| and BPBD DKI Jakarta
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Jakarta
 :About: Based on the subvillage boundaries that were map during the DKI

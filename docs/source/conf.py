@@ -108,6 +108,11 @@ rst_epilog = """
 .. _AusAID: http://www.ausaid.gov.au/
 .. |GFDRR| replace:: GFDRR_
 .. _GFDRR: http://www.gfdrr.org/
+.. |GA| replace:: GA_
+.. _Geoscience Australia: http://www.ga.gov.au/
+.. |OSM| replace:: OSM_
+.. _OpenStreetMap: http://www.openstreetmap.org/
+
 """
 
 
