@@ -110,8 +110,8 @@ Create Commons by Attribution by |BNPB|/|AIFDR|/|AusAID|/World Bank-|GFDRR|.
 Author:
 .......
 
-`Kristy Van Putten <kristy.vanputten@gmail.com>`_, Spatial Analyst/Data
-manager |AIFDR|, |AusAID|
+`Kristy Van Putten <kristy.vanputten@gmail.com>`_, Deputy Risk and Vulnerability
+manager |AIFDR| |GA|
 
 
 
