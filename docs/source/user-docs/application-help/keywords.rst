@@ -13,9 +13,8 @@ The keywords system is used by the :ref:`Impact Functions <impact_functions>`
 to determine the nature of the input layers that have been passed to them.
 
 Each input GIS dataset used by |project_name| needs to have an accompanying
-keywords file.
-The purpose of the keywords file is to provide additional metadata needed by
-the impact functions.
+keywords file. The purpose of the keywords file is to provide additional
+metadata needed by the impact functions.
 For example, the keywords file will indicate whether a given dataset should
 be treated as a *hazard* or an *impact* layer.
 It is also used to indicate the context of the layer (e.g. "it's a *flood*
@@ -208,6 +207,11 @@ programmatically enforced by the |project_name| library and GUI:
   colons will be replaced with a full stop character.
 * All other Keywords and values that do not fit the above domain lists may be
   used but they may produce undesired results.
+
+Translations
+------------
+Although |project_name| is available in different languages, the 'key' in the
+keywords files should always be written in english.
 
 The keywords editor graphical user interface
 --------------------------------------------

@@ -103,14 +103,16 @@ small ellipses (...) button next to the chosen impact function.
 
 This is explained in more detail below under :ref:`analysis_parameters`
 
-As of InaSAFE 1.2, you can now also choose an aggregation layer. Aggregation
-allows you to specify an additional layer when defining the analysis criteria.
-This layer will be used to provide a by-area breakdown of the results of the
-analysis. For example if you are carrying out an analysis for a city, you can
-use district areas within the city to provide per-area results.
-In the absence of an aggregation layer, the analysis extent is used as the
-aggregation unit. To use this option you need to load a polygon based layer
-into QGIS that represents the areas you wish to summarise by.
+As of InaSAFE 1.2, you can now also choose an aggregation layer for both
+raster and vector layers.
+
+Aggregation allows you to specify an additional layer when defining the
+analysis criteria. This layer will be used to provide a by-area breakdown of
+the results of the analysis. For example if you are carrying out an analysis
+for a city, you can use district areas within the city to provide per-area
+results. In the absence of an aggregation layer, the analysis extent is used
+as the aggregation unit. To use this option you need to load a polygon based
+layer into QGIS that represents the areas you wish to summarise by.
 
 .. note:: After running an analysis, the question area is hidden to maximise
     the amount of space allocated to the results area (see below). You can
@@ -251,16 +253,16 @@ To open the Impact Function Configuration Dialog you need to click on the
 
 You might have up to 3 tabs visible.
 
- * Options: Depending in the Impact function you selected,
+ * :guilabel:`Options`: Depending in the Impact function you selected,
    you can influence the result of your question here (the Impact Function)
    by setting different initial values which are presented depending on the
    function you choose (Some Impact functions might now be able to be
    influenced).
- * Postprocessors: Breaks down the different values inside the
- * Minimum Needs: If it is something that effects for eg people it works out
-   the minimum needs of the people affected by the impact scenario. To use
-   that function you should have the necessary data available and calculate
-   this by using the :ref:`minimum_needs`.
+ * :guilabel:`Postprocessors`: Breaks down the different values inside the
+ * :guilabel:`Minimum Needs`: If it is something that effects for eg people it
+   works out the minimum needs of the people affected by the impact scenario.
+   To use that function you should have the necessary data available and
+   calculate this by using the :ref:`minimum_needs`.
 
 .. figure:: /static/user-docs/imp_func_conf2.*
    :scale: 75 %

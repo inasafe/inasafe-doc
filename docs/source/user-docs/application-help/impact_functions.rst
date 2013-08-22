@@ -12,10 +12,10 @@ information about writing new impact functions.
 What is an impact function?
 ---------------------------
 
-In impact function is a software programme that computes a risk assessment
-given a number of inputs. The risk assessment will typically have a spatial
+In impact function is a software program that computes a risk assessment
+given a number of inputs. The risk assessment will typically have a *spatial*
 component (e.g. a GIS layer which can be incorporated into a map) and a
-non-spatial component (e.g. a list of actions you may want to consider
+*non-spatial* component (e.g. a list of actions you may want to consider
 carrying out, or a list of estimates of disaster risk reduction elements such
 as how many bags of rice to make available).
 

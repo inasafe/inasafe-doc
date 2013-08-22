@@ -8,7 +8,7 @@ calculating support requirements (in terms of food, water etc.) for displaced
 persons.
 
 The minimum needs are based on 'Perka 7/2008' according to the following
-formulas:
+default formulas:
 
 * 400g rice per person per day (2.8kg per week).
 * 2.5l drinking water per person per day (17.5l per week).

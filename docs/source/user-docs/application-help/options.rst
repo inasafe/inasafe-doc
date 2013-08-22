@@ -84,11 +84,10 @@ The following options are available on the :guilabel:`Options Dialog`:
   determine where keywords are stored for datasets where it is not possible
   to write them into a .keywords file. See :ref:`toolbar_keywords` in the
   |project_name| User-Manual for more information on the keywords system.
-* :guilabel:`Run analysis in separate thread (experimental)` : This option
-  cause the analysis to be run in its own thread.
+* :guilabel:`Enable developer mode`. With this option enabled,
+  you can right click on the report area and use the webkit debug tools to
+  debug the output. **This option is intended for advanced users only.**
 
-.. warning:: It is not recommended to use the threaded implementation at this
-   time. For this reason it is disabled by default.
 
 .. note:: Pressing :guilabel:`Cancel` at any time will close the options
    dialog and any changes made will **not** be applied.
