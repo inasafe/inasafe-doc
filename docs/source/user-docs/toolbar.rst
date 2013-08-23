@@ -103,7 +103,7 @@ in :ref:`impact_functions`.
 
 This tool will calculated minimum needs for evacuated people.
 
-For a guidance howto use this tool take a look in :ref:`minimum_needs`.
+For a guidance how to use this tool take a look in :ref:`minimum_needs`.
 
 .. _toolbar_converter:
 
