@@ -1,55 +1,113 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
+# Translators:
+# adissadis <adz.only@gmail.com>, 2013
+# dewisulistio <dewi.sulistio@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
+"Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-15 14:10\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"POT-Creation-Date: 2013-08-23 10:23\n"
+"PO-Revision-Date: 2013-08-22 07:20+0000\n"
+"Last-Translator: adissadis <adz.only@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
+"language/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
+# c5cae014069c49aca1953f75562f2d0d
+# 576441802e3044c29a02faafe7204817
 #: ../../source/user-docs/application-help/converter.rst:8
-#: ../../source/user-docs/application-help/converter.rst:18
-# 67c8859861a8459d9ca51215f209b6ab
-# 032fdc9790024ee6abb2f333c5e7ac21
+#: ../../source/user-docs/application-help/converter.rst:25
 msgid "Converter"
-msgstr ""
+msgstr "Konverter"
 
+# cbcc1a28408e41c8ae971a0f5c2aae55
 #: ../../source/user-docs/application-help/converter.rst:10
-# b829d42de4054ed981711201ae971c48
-msgid "The imported file can be used in InaSAFE as an input for impact functions that require an earthquake layer."
+msgid ""
+"Shakemaps are useful for carrying out contingency planning for the event of "
+"an earthquake. Normally these are distributed as grid.xml files which are "
+"not usable in |project_name| or QGIS. This tool will import a grid.xml file "
+"as a GEOTIFF file from where it can be used within |project_name|."
 msgstr ""
 
-#: ../../source/user-docs/application-help/converter.rst:20
-# 2beec0e91bd04f63a3d9c07b25726325
-msgid "To use this tool effectively:"
+# 350dfb86754b45a4b84ad6616a9c97b8
+#: ../../source/user-docs/application-help/converter.rst:15
+msgid ""
+"Two different interpolation algorithms can be used during the import process "
+"- ``Nearest Neighbour`` and ``Inverse Distance``. After the conversion, the "
+"tool automatically creates |project_name| keyword metadata for the layer so "
+"that it can be used immediately for analysis."
 msgstr ""
 
-#: ../../source/user-docs/application-help/converter.rst:22
-# 6ef0b3e162f34ad4a2dbc0575fb0086a
-msgid "Select a grid.xml for the input layer."
-msgstr ""
-
-#: ../../source/user-docs/application-help/converter.rst:23
-# ae8da5efbf884414b20ef8dc9568202b
-msgid "Choose where to write the output layer to."
-msgstr ""
-
-#: ../../source/user-docs/application-help/converter.rst:24
-# d852a804a2604585837dad37e1d5c598
-msgid "Choose the interpolation algorithm that should be used when converting the xml grid to a raster. If unsure keep the default."
-msgstr ""
-
+# ae07499bebda4f31bd7f3c1e6ca3d43c
 #: ../../source/user-docs/application-help/converter.rst:27
-# 1477149608884ee684862549ab2b87bb
-msgid "If you want to obtain shake data you can get it for free from the USGS shakemap site: http://earthquake.usgs.gov/earthquakes/shakemap/list.php?y=2013"
+msgid "To use this tool effectively:"
+msgstr "Untuk menggunakan alat ini secara efektif:"
+
+# 88eee6c1262043b2b60689e73e05356a
+#: ../../source/user-docs/application-help/converter.rst:29
+msgid "Select a grid.xml for the input layer."
+msgstr "Pilih grid.xml untk layer input."
+
+# 9c1ec36bfd6346539e5e0f74f5089a00
+#: ../../source/user-docs/application-help/converter.rst:30
+msgid "Choose where to write the output layer to."
+msgstr "Pilih lokasi untuk menulis layer output."
+
+# 9d1759419de84446a039cb622329f700
+#: ../../source/user-docs/application-help/converter.rst:31
+msgid ""
+"Choose the interpolation algorithm that should be used when converting the "
+"xml grid to a raster. If unsure keep the default."
+msgstr ""
+"Pilih algoritma interpolasi yang harus digunakan ketika mengubah grid xml "
+"menjadi raster. Jika tidak yakin simpan sebagai default."
+
+# 4fff7d1a4f3b44039de85b14b79d9584
+#: ../../source/user-docs/application-help/converter.rst:34
+#, fuzzy
+msgid ""
+"You can obtain shake data for free from the `USGS shakemap site <http://"
+"earthquake.usgs.gov/earthquakes/shakemap/list.php?y=2013>`_."
+msgstr ""
+"Jika Anda ingin memperoleh data gempa Anda bisa mendapatkannya secara gratis "
+"dari situs shakemap USGS : http://earthquake.usgs.gov/earthquakes/shakemap/"
+"list.php?y=2013"
+
+# 32d46f795bbd44bc93b121ba27318ad0
+#: ../../source/user-docs/application-help/converter.rst:37
+msgid ""
+"If you download the grid file, you should right-click on it and choose :"
+"menuselection:`Save as` in order to ensure that it is saved properly. OSX "
+"and Linux users may also consider using command line tools to fetch the grid "
+"file:"
 msgstr ""
 
+# 51896ae72bf342c198aea5dffe4891a4
+#: ../../source/user-docs/application-help/converter.rst:41
+msgid "OSX::"
+msgstr ""
+
+# c2986f36455b40d2b534a0a4a03a41b5
+#: ../../source/user-docs/application-help/converter.rst:45
+msgid "Linux::"
+msgstr ""
+
+# d26cdb1f26d049af9855f767526bcc6a
+#: ../../source/user-docs/application-help/converter.rst:49
+msgid "Replace the <shake id> in the commands above with the actual shake id."
+msgstr ""
+
+# f34adac2c7cd4f1594ffed7eceb013c5
+#~ msgid ""
+#~ "The imported file can be used in InaSAFE as an input for impact functions "
+#~ "that require an earthquake layer."
+#~ msgstr ""
+#~ "File yang diimpor dapat digunakan dalam InaSAFE sebagai masukan untuk "
+#~ "fungsi dampak yang memerlukan layer gempa."
