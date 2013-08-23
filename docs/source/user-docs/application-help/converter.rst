@@ -5,13 +5,13 @@ Converter
 
 Shakemaps are useful for carrying out contingency planning for the event of an
 earthquake. Normally these are distributed as grid.xml files which are not
-usable in InaSAFE or QGIS. This tool will import a grid.xml file as a
-GEOTIFF file from where it can be used within InaSAFE.
+usable in |project_name| or QGIS. This tool will import a grid.xml file as a
+GEOTIFF file from where it can be used within |project_name|.
 
 Two different interpolation algorithms can be used during the import process -
 ``Nearest Neighbour`` and ``Inverse Distance``. After the conversion, the tool
-automatically creates InaSAFE keyword metadata for the layer so that it can be
-used immediately for analysis.
+automatically creates |project_name| keyword metadata for the layer so that
+it can be used immediately for analysis.
 
 .. figure:: /static/user-docs/converter.*
    :scale: 75 %
