@@ -258,7 +258,10 @@ You might have up to 3 tabs visible.
    by setting different initial values which are presented depending on the
    function you choose (Some Impact functions might now be able to be
    influenced).
- * :guilabel:`Postprocessors`: Breaks down the different values inside the
+ * :guilabel:`Postprocessors`: Takes the results from the impact function and
+   calculates derivative indicators, for example if you have an affected
+   population total, the Gender postprocessor will calculate gender specific
+   indicators such as additional nutritional requirements for pregnant women
  * :guilabel:`Minimum Needs`: If it is something that effects for eg people it
    works out the minimum needs of the people affected by the impact scenario.
    To use that function you should have the necessary data available and
