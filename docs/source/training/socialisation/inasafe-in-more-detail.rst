@@ -261,7 +261,7 @@ Subcategory			flood[wet/dry]
 Lets run |project_name| again with this new flood hazard footprint
 
 For more information about Keywords have a look in
-:doc:`../../user-docs/function_docs/keywords`
+:doc:`../../user-docs/application-help/keywords`
 
 Buildings within affected subvillages
 .....................................

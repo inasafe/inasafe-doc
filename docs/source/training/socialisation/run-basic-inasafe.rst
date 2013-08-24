@@ -198,7 +198,7 @@ Buildings Affected
 
 .. note:: If you want to be able to select layers within the |project_name| panel that are
    not checked in the **Layer List** you can modify the |project_name| options. For more 
-   information :doc:`../../user-docs/function_docs/options`
+   information :doc:`../../user-docs/application-help/options`
    We will also go through the option menu in :doc:`helpful-hints-and-tips`
    
 18. :guilabel:`Run` the new combination.
