@@ -12,7 +12,7 @@ system.
    install
    getting_help
    toolbar
-   functions_doc
+   application-help/index
    functionality
    impact_functions_doc
    postprocessors

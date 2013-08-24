@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-15 16:52\n"
+"POT-Creation-Date: 2013-08-15 14:10\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,83 +16,98 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/user-docs/install.rst:9
-# 86dbe143cd494518898c67952ab22f17
-msgid "Installing |project_name|"
+#: ../../source/user-docs/install.rst:8
+# 1faf1ab75ba0412d93236267d5da5c98
+msgid "Installation"
 msgstr ""
 
-#: ../../source/user-docs/install.rst:12
-# b795c4f8df404014b8faa9d458925d94
-msgid "|project_name| is a plugin for `Quantum GIS <http://qgis.org>`_ (QGIS), so QGIS must be installed first."
+#: ../../source/user-docs/install.rst:11
+# 0bc92156c17a46ffa2fd4c5ba1d2a8ed
+msgid "|project_name| is a plugin for `Quantum GIS <http://qgis.org>`_ (QGIS), so QGIS must be installed first via QGIS Python Plugin Repository"
 msgstr ""
 
-#: ../../source/user-docs/install.rst:16
-# e3fdedceb063426caddb42a20759a945
-msgid "Via QGIS Python Plugin Repository"
-msgstr ""
-
-#: ../../source/user-docs/install.rst:18
-# d2e40a4393f94ffb83864fef5cb07ce4
+#: ../../source/user-docs/install.rst:14
+# e4e80a9823854c3595eaa60a9a2b59fc
 msgid "To install |project_name|, use the plugin manager in QGIS:"
 msgstr ""
 
-#: ../../source/user-docs/install.rst:20
-# 57153ea9602b437cb1a71073399d286b
+#: ../../source/user-docs/install.rst:16
+# 5aad93ebfd1c42e6adea4ecf54ed0c46
 msgid ":menuselection:`Plugins --> Fetch Python Plugins`"
 msgstr ""
 
-#: ../../source/user-docs/install.rst:22
-# d839728f517f4ff2bd0f4d72c8d91187
+#: ../../source/user-docs/install.rst:18
+# a064debf123c48daa740b2e2767d52d7
 msgid "Search for '|project_name|', select it and click the install button. The plugin will now be added to your plugins menu."
 msgstr ""
 
-#: ../../source/user-docs/install.rst:26
-# 87db209a9ced4a74a7413a53874052fa
+#: ../../source/user-docs/install.rst:22
+# 26deb3514fde4291a5d9f961f3556067
 msgid "From Zip Archive"
 msgstr ""
 
-#: ../../source/user-docs/install.rst:28
-# 5873fa34228349c4b4cfe1ed1384dfbc
+#: ../../source/user-docs/install.rst:24
+# 10b71116d2314b25abbc7b34dedf9c82
 msgid "This installation method is not recommended unless you have no internet access or wish to use a specific version of |project_name|. Please install using the plugin repository described above rather."
 msgstr ""
 
-#: ../../source/user-docs/install.rst:32
-# 4837582930954d538c1927c53a7704f0
+#: ../../source/user-docs/install.rst:28
+# 4830dbaf35a349699c9fa704d254eb90
 msgid "We make regular releases of the |project_name| plugin and they are available at http://plugins.qgis.org/plugins/inasafe/. Simply choose the most recent (i.e. the one with the largest version number) and save it to your hard disk."
 msgstr ""
 
-#: ../../source/user-docs/install.rst:36
-# 4a83ffad796d4ace816ab0a9a1c73a81
-msgid "Now extract the zip file into the QGIS plugins directory. Under windows the plugins directory is under :file:`c:\\\\Users\\\\<your username>\\\\.qgis\\\\python\\\\plugins`."
+#: ../../source/user-docs/install.rst:32
+# ef34ddd879f14fbfaf5a949ca970f0f7
+msgid "Now extract the zip file into the QGIS plugins directory. Under windows the plugins directory is under:"
 msgstr ""
 
-#: ../../source/user-docs/install.rst:40
-# 575861d27cfc4b6a8a983742a7312604
-msgid "After extracting the plugin, it should be available as :file:`c:\\\\Users\\\\<your username>\\\\.qgis\\\\python\\\\plugins\\\\inasafe\\\\`."
+#: ../../source/user-docs/install.rst:35
+# e8750f0bb7494a94bd2180d65c542456
+msgid ":file:`C:\\\\Users\\\\<your username>\\\\.qgis\\\\python\\\\plugins`."
 msgstr ""
 
-#: ../../source/user-docs/install.rst:43
-# 7d6063d61f7743e3b6e6f31c7d28b25c
-msgid "Mac and Linux users need to follow the same procedure but instead the plugin directory will be under the $HOME directory. (.qgis/python/plugins/)"
+#: ../../source/user-docs/install.rst:37
+# ab7b1f024a4a4faf9019a81ce4a150c7
+msgid "After extracting the plugin, it should be available as:"
+msgstr ""
+
+#: ../../source/user-docs/install.rst:39
+# 70132930f8be41eb9e657cf4d2c2d746
+msgid ":file:`C:\\\\Users\\\\<your username>\\\\.qgis\\\\python\\\\plugins\\\\inasafe\\\\`."
+msgstr ""
+
+#: ../../source/user-docs/install.rst:41
+# 3470043318094dbe9d90d7a924d54889
+msgid "Mac and Linux users need to follow the same procedure but instead the plugin directory will be under the $HOME directory:"
+msgstr ""
+
+#: ../../source/user-docs/install.rst:44
+# 41c2ed801f2e451a8afbe116401cd55c
+msgid ":file:`~/.qgis/python/plugins/`"
 msgstr ""
 
 #: ../../source/user-docs/install.rst:46
-# 60bbffea96034753a446505ee14bb8fb
-msgid "Once the plugin is extracted, start QGIS and enable it from the plugin manager. To do this open the plugin manager (:menuselection:`Plugins --> Manage plugins...`) and type :samp:`insafe` into the filter box. You should see the |project_name| plugin appear in the list. Now tick the checkbox next to it to enable the plugin."
-msgstr ""
-
-#: ../../source/user-docs/install.rst:56
-# 592e9ad955a0466e9900e16c42b0c4ee
-msgid "System Requirements"
+# 1d6c6191725e468ab7c754cf76f663fa
+msgid "Once the plugin is extracted, start QGIS and enable it from the plugin manager. To do this open the plugin manager :menuselection:`Plugins --> Manage plugins...` and type :samp:`insafe` into the filter box. You should see the |project_name| plugin appear in the list. Now tick the checkbox next to it to enable the plugin."
 msgstr ""
 
 #: ../../source/user-docs/install.rst:58
-# b74bf805faef41e786e5f1e7a6be828c
+# 23544241c12a43a8b669d38c2e7f4e0e
+msgid "Plugin Manager"
+msgstr ""
+
+#: ../../source/user-docs/install.rst:61
+# 66ff31f44f6b4d34acfee614782a3fe8
+msgid "System Requirements"
+msgstr ""
+
+#: ../../source/user-docs/install.rst:63
+# 7dbfe72446e244bdad1c1a978d75c8ce
 msgid "A standard PC with at least 4GB of RAM running Windows, Linux or Mac OS X"
 msgstr ""
 
-#: ../../source/user-docs/install.rst:59
-# 78664578a59145be874f3bef2903eac2
+#: ../../source/user-docs/install.rst:64
+# dcdb5af33c2847069fabfec7252060d7
 msgid "The Open Source Geographic Information System QGIS (http://www.qgis.org). |project_name| requires QGIS version 1.7 or newer."
 msgstr ""
 

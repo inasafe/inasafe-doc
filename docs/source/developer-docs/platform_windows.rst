@@ -3,31 +3,76 @@
 Development under MS Windows
 ============================
 
+Overview
+--------
+
 In this document we will walk you through the different activities you will
 need to do as a windows developer wishing to work on the |project_name| codebase.
+There are a number of steps that need to be performed in order to have a usable
+development environment for InaSAFE under Windows:
+
+* Install a GIT client
+* Checkout the InaSAFE code and the InaSAFE standard test data
+* Install QGIS
+* Install a 32 bit version of python (windows 64 bit users only)
+* Install pip and other requirements for running tests
+* Create a custom shell launcher with a python prompt
+* Setup your IDE (Eclipse PyDev or PyCharm)
+
+You may also wish to read :doc:`jenkins_ci_windows_slave` if you wish to
+set up automated test suite running using Jenkins.
+
 
 Installation of version control tools
 -------------------------------------
 
-Setup msysgit
-.............
+Setup GitHub for windows
+........................
 
 To check out the code for development, you first need to install a git client.
-We cover msysgit here, but you can also use
-`tortoisegit <http://code.google.com/p/tortoisegit/downloads/list>`_
-or `SourceTree <http://sourcetreeapp.com/>`_ and there is even a Windows github
-client `GitHub Windows <http://windows.github.com/>`_ .
-if you prefer.
+We cover `GitHub for Windows <http://windows.github.com/>`_  but you can use 
+another client if you prefer.
 
-To install msysgit (which is a command line git client), download the latest
-version of the software from the
-`msysgit web site <http://code.google.com/p/msysgit/downloads/list>`_.
-There is no need to get the 'full install' - just fetching the latest 'preview'
-is good enough. For example at the time of writing I downloaded
-:samp:`Git-1.7.9-preview20120201.exe`. The download is around 14mb in size.
+To install the github windows client (which includes a command line git client), 
+download the latest version of the software from the
+`GitHub for Windows <http://windows.github.com/>`_ web site. The download size 
+will be at least 40mb and will vary depending if you have the application 
+requirements installed (the installer will download and install the appropriate 
+.net framework if needed).
 
-Once the file is downloaded, run it and respond to the installer prompts as
-illustrated below:
+Then run the installer and follow the prompts as directed. We recommend that
+you create an account on `github <http://github.com>`_ as it will make it 
+possible to submit bug reports and generally participate in the InaSAFE project.
+
+Then enter your account details in the GitHub git client as directed.
+
+Configure the default git shell
+...............................
+
+Next set your preferred shell to 'git bash' by going to the GitHub windows home
+screen (if needed, press the left facing arrow in the top left of the GitHub 
+windows panel repeatedly until the arrow disappears). Now use 
+:menuselection:`tools --> options` (in the top center of the window), to move
+to the options panel. In the :guilabel:`default shell` section, select 
+:menuselection:`Git Bash`.
+
+Now click :guilabel:`update` and close the GitHub windows application.
+
+Verify your git shell
+.....................
+
+We will do all the remaining tasks using the command line git client as it gives
+more accurate control over git and the procedure is more closely aligned to that
+of other operating systems. So let us verify that your shell is available:
+
+:menuselection:`Windows Start --> All Programs --> GitHub Inc. --> Git Shell`
+
+Confirm that the window title for the window that appears starts with 'MINGWIN32'.
+
+From now on use this shell for all the commands that follow below.
+
+.. note:: Create a shortcut on your start button to the github shell as you will
+   use if often!
 
 
 Check out the code and the test data
@@ -39,16 +84,22 @@ using the tools we installed above.
 Clone the code repository
 .........................
 
-First open a GIT bash prompt as illustrated below:
+First open a GIT bash prompt as described above.
 
-The repository can now be cloned by issuing the commands listed below.::
+The repository can now be cloned by issuing these commands:
 
+Users on windows < Windows 7::
+   
    cd  /c/Documents\ and\ Settings/<your username>/
 
+Windows 7 or newer::
+
+   cd  /c/Users/<your username>/
+
+All windows versions::
+
    mkdir -p .qgis/python/plugins
-
    cd .qgis/python/plugins/
-
    git clone https://<your username>@github.com/AIFDR/inasafe.git inasafe-dev
 
 .. note:: The items in angle brackets above should be replaced with your
@@ -65,15 +116,28 @@ console when the clone process is completed::
    Receiving objects: 100% (5002/5002), 2.38 MiB | 7 KiB/s, done.
    Resolving deltas: 100% (3505/3505), done.
 
+.. note:: Why do we check it out as inasafe-dev ? We do this so that the
+   standard release package can be used on the same system using the QGIS
+   plugin manager.
+
 Checkout the test data
 ......................
 
 To check out the test data from git, first open a GIT bash prompt as illustrated below:
 
 
-The repository can now be cloned by issuing the commands listed below. (Already completed in previous step)::
+The repository can now be cloned by issuing the commands listed below. (Already completed in previous step):
 
+Users on windows < Windows 7::
+   
    cd  /c/Documents\ and\ Settings/<your username>/.qgis/python/plugins/
+
+Windows 7 or newer::
+
+   cd  /c/Users/<your username>/.qgis/python/plugins/
+
+All windows versions::
+
    git clone https://<your username>@github.com/AIFDR/inasafe_data.git inasafe_data
 
 .. note:: The items in angle brackets above should be replaced with your
@@ -211,9 +275,9 @@ pypi. Download the script on
 `this page <http://pypi.python.org/pypi/setuptools#windows>`_ called
 ez_setup.py and save it somewhere familiar e.g. :samp:`c:\temp`.
 
-.. note:: If you use windows 32bit, do not download the .exe file as said on
-   `the page <http://pypi.python.org/pypi/setuptools#windows>`_,
-   but just download the ez_setup.py
+.. note:: If you use windows 32bit, do not download the .exe file as described 
+   on `this page <http://pypi.python.org/pypi/setuptools#windows>`_, rather
+   just download the ez_setup.py
 
 Special note for Win64 bit users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -242,6 +306,9 @@ the demo session below::
     >>> print sys.executable
     c:\python27\python.exe
     >>>
+
+.. note:: QGIS 2.0 should ship as a 64bit binary (including python), so the
+   above step should no longer be needed in future versions.
 
 For both 32 and 64 bit
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -311,47 +378,101 @@ session) and running::
 
    runtests.bat
 
-Building sphinx documentation
------------------------------
+Developing using PyCharm
+------------------------
 
-`Sphinx <http://sphinx.pocoo.org>`_ is a tool for building documentation that
-has been written in the ReSTructured text markup language (a simple wiki like
-format). You can build the sphinx documentation under windows using a helper
-script provided in the docs directory of the |project_name| source directory,
-but first you need to actually install sphinx.
+.. note:: This is optional - you can use any environment you like for editing
+   python, or even a simple text editor.
 
-Installing sphinx
-.................
 
-Launch your QGIS python shell environment (see :ref:`windows-pip-setup`) as
-administrator and then run the following command::
+.. note:: PyCharm is unfortunately not FOSS (Free and Open Source Software),
+   however they do provide free licenses for Open Source projects, which
+   InaSAFE has been granted. If you wish to make use of this license, please
+   contact info@inasafe.org for your copy.
 
-   pip install sphinx
+Download and Install
+....................
 
-The cloud-sp theme package installs the sphinx theme we are using.
+Download PyCharm from their 
+`download page <http://www.jetbrains.com/pycharm/download/index.html>`_ and
+then install it taking all the defaults. Note that the download is approximately
+125mb at the time of writing this (version 2.7).
 
-Building the documentation
-..........................
+Once the installation is complete, start PyCharm and accept all the defaults for
+the first-run wizard. You may be prompted to restart pycharm at the end of that
+process - which you should do.
 
-To build the documentation, open a QGIS python shell (no need to be admin) and
-go into your inasafe-dev/docs directory. Now run the following command::
 
-   make.bat html
+Making PyCharm 'QGIS Aware'
+...........................
 
-.. note:: Only the html make target has been tested. To use other make targets
-   you may need to perform further system administrative tasks.
+We need to have various environment variables set in the PyCharm context in 
+a similar way we do with :ref:`windows-commandline_setup`. Make a copy of 
+your qgis-shell batch file and call it qgis-pycharm.bat.
 
-Viewing the documentation
-.........................
+Now alter the last line so that it launches pycharm instead of a shell as
+per this example below::
 
-The documentation can be viewed from withing QGIS by clicking the
-:guilabel:`help` button on the |project_name| dock panel,
-or you can view it in your browser by opening a url similar to this one::
+	@echo off
+	SET OSGEO4W_ROOT=C:\PROGRA~2\QUANTU~1
+	call "%OSGEO4W_ROOT%"\bin\o4w_env.bat
+	call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.2\etc\env.bat
+	@echo off
+	SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins\1.9
+	path %PATH%;%OSGEO4W_ROOT%\apps\qgis\bin
+	path %PATH%;%OSGEO4W_ROOT%\apps\grass\grass-6.4.2\lib
+	path %PATH%;"%OSGEO4W_ROOT%\apps\Python27\Scripts\"
 
-   file:///C:/Users/Tim%20Sutton/.qgis/python/plugins/inasafe/docs/_build/html/index.html
+	set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
+	set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
+	set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
+	cd "%HOMEPATH%\.qgis\python\plugins\inasafe-dev"
+	set PATH=c:\python27;%PATH%
+	start "PyCharm aware of Quantum GIS" /B "C:\Program Files (x86)\JetBrains\PyCharm 2.7.3\bin\pycharm.exe" %*
+
+Now use this PyCharm launcher whenever you need to do development work on InaSAFE.
+
+.. note:: Right drag the batch file onto your start menu to make an easily accessible
+   shortcut to your custom PyCharm launcher.
+
+Setup InaSAFE project
+.....................
+
+On the PyCharm welcome screen, choose :guilabel:`Open Directory` and open the
+git checkout you made i.e.::
+   
+   c:\Users\<username>\.qgis\python\plugins\inasafe-dev"
+
+Again, note that you should replace **<username>** with the appropriate name
+for your user account.
+
+
+Verifying that your environment is correct
+..........................................
+
+Open one of the source files that references QGIS e.g. :file:`safe_qgis/widgets/dock.py`
+and ensure that the import statements near the top of the file are not underlined in 
+red. Note that you should wait a few minutes until PyCharm indicates it has completed
+updating its indexes in the status bar at the bottom of the PyCharm window.
+
+
+Running Tests
+.............
+
+To run individual tests (or all tests within a package and its subpackages)
+simply :menuselection:`right-click` on any package containing test modules
+or on an individual test module and choose 
+:menuselection:`Run Nosetests in ...`.
+
+
 
 Developing using Eclipse (Windows)
 ----------------------------------
+
+.. warning:: We have standardised on using PyCharm for InaSAFE development (see 
+   above section). This section of documentation is left here for reference 
+   purposes in the hopes that it may help die-hard PyDev fans, but it will 
+   no longer be maintained.
 
 .. note:: This is optional - you can use any environment you like for editing
    python, or even a simple text editor.

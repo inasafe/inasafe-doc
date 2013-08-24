@@ -28,7 +28,7 @@ from create_api_docs import (create_dirs, write_rst_file,
 from third_party.odict import OrderedDict
 
 doc_dir = os.path.join('docs', 'source', 'user-docs')
-impact_func_doc_dir = 'impact_function_docs'
+impact_func_doc_dir = 'impact-function-docs'
 
 
 def pretty_key(key):

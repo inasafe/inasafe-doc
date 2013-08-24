@@ -14,7 +14,7 @@ What is a postprocessor?
 A postprocessor is a function that takes the results from the impact function
 and calculates derivative indicators, for example if you have an affected
 population total, the Gender postprocessor will calculate gender specific
-indicators such as additional nutritional requirements for pregnant women
+indicators such as additional nutritional requirements for pregnant women.
 
 Creating postprocessors
 -----------------------

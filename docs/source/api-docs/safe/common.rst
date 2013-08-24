@@ -11,6 +11,7 @@ Package::safe.common
    common/tables
    common/signals
    common/exceptions
+   common/interpolation
    common/dynamic_translations
    common/version
    common/interpolation2d

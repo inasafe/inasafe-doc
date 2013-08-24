@@ -125,6 +125,8 @@ be used only in these specific instances e.g.::
     def on_foo_indexChanged():
         pass
 
+.. _doc-strings-label:
+
 Doc strings
 ...........
 
@@ -186,8 +188,11 @@ Note the following in the above examples:
   used.
 * If a function or method is extremely obvious there is no need to have
   anything more than a single line docstring.
+* If a function or method returns a tuple it should be be documented as 
+  ``:rtype: (<type>, <type>, ..)`` e.g. ``:rtype: (int, int)``.
 
-
+Please also see the :ref:`api-documentation-howto-label` section for more
+information on how to document your code properly.
 
 .. _hig-label:
 

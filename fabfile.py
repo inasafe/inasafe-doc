@@ -10,9 +10,12 @@ from fabtools import require
 # noinspection PyUnresolvedReferences
 from fabgis.qgis import install_qgis1_8
 from fabgis.jenkins import jenkins_deploy_website, install_jenkins
-from fabgis.utilities import replace_tokens, update_git_checkout
+from fabgis.utilities import replace_tokens
+from fabgis.git import update_git_checkout
 from fabgis.inasafe import setup_inasafe
 from fabgis.sphinx import setup_latex
+from fabgis.docker import (
+    setup_docker, start_docker_daemon, create_docker_container)
 # Don't remove even though its unused
 # noinspection PyUnresolvedReferences
 from fabtools.vagrant import vagrant
@@ -37,6 +40,11 @@ from fabtools.vagrant import vagrant
 
 # Global options
 env.env_set = False
+
+@task
+def localhost():
+    """Simple convenient alias for running commands on localhost."""
+    env.hosts = ['%s@localhost' % env.user]
 
 
 def _setup_env():

@@ -11,7 +11,7 @@ Creating API Documentation
 --------------------------
 
 Each API Function needs to be documented according to the |project_name|
-guidelines.
+:doc:`coding_standards`.
 
 For that each class method and function in the code base must include a
 docstring explaining its usage and purpose as per the example listed below
@@ -23,19 +23,15 @@ docstring explaining its usage and purpose as per the example listed below
         and then see if we can get a valid translation file
         for whatever locale is effectively being used.
 
-        Args:
-           thePreferredLocale - optional parameter which if set
-               will override any other way of determining locale.
-        Returns:
-           None.
-        Raises:
-           no exceptions explicitly raised.
+        :params preferred_locale: Override any other way of determining locale.
+        :type preferred_local: str
         """
+
+For a more detailed example see :ref:`doc-strings-label`.
 
 There should be a blank line between each paragraph and before the Args option.
 
-Where multiple inputs or outputs are used, a ReSTructured text bullet list
-should be used to list them.
+Where multiple inputs or outputs are used, a blank line should separate them.
 
 .. note:: You can use any ReSTructured text within the docstring to deliver
    rich markup in the final API documentation outputs.
@@ -54,8 +50,8 @@ following steps are required:
   the top level directory in the source tree.
 * Add the new .rst file and generated html files to the revision control system.
 
-.. note:: It is probably most expedient to simply copy and rename one of the
-   existing API documentation files and replace the python module paths therein.
+.. note:: The above steps are automated using the
+    :file:`scripts/gen_rst_script.py` file available in the inasafe-doc repo.
 
 An example of the contents of a module's API .rst if provided below::
 
@@ -90,18 +86,18 @@ New features should be well documented and that documentation should be made
 available under the :file:`user-docs` subfolder of the sphinx sources tree.
 
 For example, when the keywords editor dialog feature was introduced, we created
-a new sphinx document :file:`docs/sources/user-docs/keywords.rst` which
+a new sphinx document :file:`docs/sources/user-docs/dock.rst` which
 documents this new feature. Additionally, the help button is set to launch
 the help dialog in the context of the new help document e.g.::
 
-   def showHelp(self):
-      """Load the help text for the keywords gui"""
-      if not self.helpDialog:
-         self.helpDialog = RiabHelp(self.iface.mainWindow(), 'keywords')
-      self.helpDialog.show()
+    from safe_qgis.utilities.help import show_context_help
 
-Where the 'keywords' parameter indicates the user-docs/\*.rst document that
+    def show_help(self):
+        """Load the help text into the system browser."""
+        show_context_help(context='dock')
+
+Where the 'dock' parameter indicates the user-docs/\*.rst document that
 should be opened when the help button is clicked. The general style and
 approach used in existing documentation should inform your documentation
-process so that all the documentation is constent.
+process so that all the documentation is consistent.
 
