@@ -14,8 +14,7 @@ from fabgis.utilities import replace_tokens
 from fabgis.git import update_git_checkout
 from fabgis.inasafe import setup_inasafe
 from fabgis.sphinx import setup_latex
-from fabgis.docker import (
-    setup_docker, start_docker_daemon, create_docker_container)
+
 # Don't remove even though its unused
 # noinspection PyUnresolvedReferences
 from fabtools.vagrant import vagrant
