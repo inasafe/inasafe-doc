@@ -92,8 +92,10 @@ Setup QGIS
 
 .. image:: /static/training/socialisation/013_tips.*
    :align: center
-   
- .. Note:: At a later date I recommend you read through these hints by clicking on *Next*
+
+
+.. Note:: At a later date I recommend you read through these hints by
+   clicking on *Next*
 
 Clean up tool bar
 .................
@@ -101,8 +103,8 @@ Clean up tool bar
 To provide more space for your map canvas we will uncheck the tools we will not be
 using today.
 
-3. :guilabel:`Right Click` the toolbar and :guilabel:`Uncheck`, 
-	
+3. :guilabel:`Right Click` the toolbar and :guilabel:`Uncheck`,
+
 	* Advance Digitising
    	* Database
    	* Digitising
@@ -112,8 +114,8 @@ using today.
    	* Raster
    	* Vector
    	* Web
-   
-   	   
+
+
 4. Rearrange toolbar so its just one line, :guilabel:`Left Click` and :guilabel:`Hold`
    the vertical dots on the left hand side of the tool.
    Drag to the first line of the toolbar.
@@ -181,8 +183,8 @@ Installing |project_name| through the QGIS plugin repository
 .. Note:: You must be connected to the internet for this section
 
 11. Go to :menuselection:`Plugins --> Fetch Python Plugins...`
-   This will take a couple of minutes for QGIS to contact its repository and
-   show the list of plugins available
+This will take a couple of minutes for QGIS to contact its repository and
+show the list of plugins available
 
 12. Type :kbd:`inasafe` into the filter box
 
@@ -190,13 +192,13 @@ Installing |project_name| through the QGIS plugin repository
    :align: center
 
 13. :guilabel:`Select` |project_name| and :guilabel:`Install plugin` -
-   this will take a couple of minutes for the plugin to download and install.
+this will take a couple of minutes for the plugin to download and install.
 
-14. A window should pop up saying: "Plugin installed successfully" :guilabel:`Ok`
-   and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
+14. A window should pop up saying: "Plugin installed successfully"
+:guilabel:`Ok` and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
 
 15. You should now have an |project_name| panel on the right hand side of your
-   screen.
+screen.
 
 .. image:: /static/training/socialisation/021_insafe_gettingstarted.*
    :align: center
@@ -205,16 +207,16 @@ Installing |project_name| through the QGIS plugin repository
 |project_name| also comes with a toolbar of its own!
 
 16. To retrieve the |project_name| toolbar, :guilabel:`Right Click` on the top
-   tool bar and :guilabel:`Recheck` **plugin**
+tool bar and :guilabel:`Recheck` **plugin**
 
 
 .. image:: /static/training/socialisation/022_inasafetoolbar.*
    :align: center
 
 
-================								   ========================
+=================================================   ========================
 **Symbol**                                          **Name**
------------------                                  ------------------------
+-------------------------------------------------   ------------------------
 .. image:: /static/general/icon_dock.*              Toggle Dock
    :align: center
 .. image:: /static/general/icon_keywords.*          Keyword Editor
@@ -235,10 +237,10 @@ Installing |project_name| through the QGIS plugin repository
    :align: center
 .. image:: /static/general/icon_osm.*               OpenStreetMap downloader
    :align: center
-================                                    ========================
+=================================================   ========================
 
 .. Note:: Later we will explore and use these tools.  For more information
- :doc:`../../user-docs/toolbar`
+   :doc:`../../user-docs/toolbar`
 
 OpenLayer Plugin
 ................
@@ -246,13 +248,13 @@ OpenLayer Plugin
 Installing OpenLayer through the QGIS plugin repository
 
 17. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a
-   couple of minutes for QGIS to contact its repository and show the list of
-   plugins available.
+couple of minutes for QGIS to contact its repository and show the list of
+plugins available.
 18. Type :kbd:`openlayers` into the filter box.
 19. :guilabel:`Select` *OpenLayer Plugin* then :guilabel:`Install plugin` - this will
-   take a couple of minutes for the plugin to download and install.
+take a couple of minutes for the plugin to download and install.
 20. A window should pop up saying: "Plugin installed successfully"  :guilabel:`Ok`
-   and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
+and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
 21. Hover mouse over :menuselection:`Plugins --> OpenLayer Plugin`
 
 .. image:: /static/training/socialisation/023_openlayers.*
@@ -285,7 +287,7 @@ Using the navigation tools below, zoom into your home.
 23. :guilabel:`Click` *zoom In*, draw a box (click and drag) over your country.
 
 24. :guilabel:`Click` *Pan Map*, shift the map so your country is in the
-   centre of the screen.
+centre of the screen.
 
 .. Note:: If you make a mistake in your zooming, use *Zoom Last* tool.
 

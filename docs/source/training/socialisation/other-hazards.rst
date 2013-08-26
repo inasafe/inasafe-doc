@@ -27,11 +27,11 @@ Volcanoes in Indonesia
 There are 129 active volcanoes in Indonesia, and its always valuable to know
 how many people, or how much infrastructure is in a certain perimeter of the
 vent. Hence |project_name| is able to use a vent location (point) as a hazard
-layer, the dataset that we are going to use in section of the training was 
-downloaded from the Smithsonian website.  You may ask “How can we use a point 
+layer, the dataset that we are going to use in section of the training was
+downloaded from the Smithsonian website.  You may ask “How can we use a point
 to figure out impact? |project_name| needs your help!.
 
-1. :menuselection:`File --> Open Projects`, browse to *Volcano_Indonesia.qgs* 
+1. :menuselection:`File --> Open Projects`, browse to *Volcano_Indonesia.qgs*
 
 .. image:: /static/training/socialisation/061_volcano.*
    :align: center
@@ -41,7 +41,7 @@ Select Feature and Save
 
 2. As you can see there are many Volcanoes in Indonesia,
    lets zoom into one volcano to analysis. :guilabel:`Right Click`
-   on the Volcanoes layer in the **Layer List** and :guilabel:`Select` 
+   on the Volcanoes layer in the **Layer List** and :guilabel:`Select`
    *Open Attribute Table*
 3. In the *Look for* section type :kbd:`Merapi` (circle 1),
 4. :guilabel:`Select` **NAME** from dropdown menu (circle 2)
@@ -55,13 +55,13 @@ Select Feature and Save
 
 .. image:: /static/training/socialisation/062_merapi_attribute.*
    :align: center
-   
+
 9. :guilabel:`Zoom to Selection` to zoom in further, continue until you get to an extent
 	similar to the one below. (The yellow triangle is Merapi)
 
 .. image:: /static/training/socialisation/063_merapi.*
    :align: center
- 
+
 Now that we know where Merapi is, and have check that it is in fact in the
 right location, we are going to make a hazard layer with just this point.
 
@@ -72,9 +72,9 @@ right location, we are going to make a hazard layer with just this point.
 12. :guilabel:`Check` *Add saved file to map* (circle 2)
 13. :guilabel:`OK` (circle 3)
 
-.. image:: /static/training/socialisation/064_save_merapi.*
+.. image:: /static/training/socialisation/064_save_volcano.*
    :align: center
-   
+
 14. :guilabel:`Uncheck` Volcanoes in the layer window.
 
 You should now have a point that shows the location of Merapi. Lets take some
@@ -118,10 +118,10 @@ Configure and Run |project_name|
 	* people
 	* Need evacuation
 
-Before we run |project_name| again, we have to tell |project_name| what the hazard 
-zone is! 
+Before we run |project_name| again, we have to tell |project_name| what the hazard
+zone is!
 
-23. Click on :guilabel:`...` (impact function editor) next to *Need evacuation* 
+23. Click on :guilabel:`...` (impact function editor) next to *Need evacuation*
 As a default |project_name| has made 3 hazard areas:
 
 	* Vent -3 km
@@ -130,7 +130,7 @@ As a default |project_name| has made 3 hazard areas:
 
 .. image:: /static/training/socialisation/067_volcano_config.*
    :align: center
-   
+
 .. Note:: that its written 3,5,10 so if you wanted the categories to be Vent-5,
    5-10 and then 10-25 then you would type  5,10,25
 
@@ -177,12 +177,12 @@ Earthquake
 Indonesia’s location on the edges of the Pacific, Eurasian,
 and Australian tectonic plates makes it not only a site of numerous volcanoes
 but also frequent earthquakes. The hazard layer we are going to use for this
-example has been provided by Badan Geologi and |AIFDR|, |AusAID| and describes the
-shaking or Modified Mercalli Intensity (MMI) Scale.
+example has been provided by Badan Geologi and |AIFDR|,
+|AusAID| and describes the shaking or Modified Mercalli Intensity (MMI) Scale.
 
 This particular scenario is a modelled version of the 2009 Padang earthquake.
 
-28. :menuselection:`File --> Open Projects`, browse to *Padang_earthquake.qgs* 
+28. :menuselection:`File --> Open Projects`, browse to *Padang_earthquake.qgs*
 
 .. image:: /static/training/socialisation/069_earthquake.*
    :align: center
@@ -195,10 +195,10 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
 .. image:: /static/training/socialisation/070_people_scale.*
    :align: center
 
-.. Note: Notice the difference between the first **people** layer and the other 2 people,
-    the second one has a source of *AsiaPop rescaled 1km2*, the third *AsiaPop rescaled
-    5km2*
-    
+.. Note:: Notice the difference between the first **people** layer and the
+   other 2 people, the second one has a source of *AsiaPop rescaled 1km2*,
+   the third *AsiaPop rescaled 5km2*
+
 30. Make sure the only **people** checked is Source= AsiaPop
 31. In the **How many** drop box pick the top **people**.
 32. :guilabel:`Run` |project_name|
@@ -210,28 +210,28 @@ Memory usage warning
    :align: center
 
 A warning message appears "You may not have sufficient free system memory to carry
-out the analysis.  See the dock panel message for more information. Would you like to 
-continue regardless?" 
+out the analysis.  See the dock panel message for more information. Would you like to
+continue regardless?"
 
 33. :guilabel:`No`
 
 You will see in the |project_name| panel that there is a suggestion on how to continue:
-"Try zooming in to a smaller area or using a raster layer with a coarser resolution to 
-speed up execution and reduce memory requirements. You could also try adding more RAM 
+"Try zooming in to a smaller area or using a raster layer with a coarser resolution to
+speed up execution and reduce memory requirements. You could also try adding more RAM
 to your computer"
 
 You will recall that there is another 2 **people** layer,
 the difference is the size of the pixel, the one we are trying to run is 100
 m by 100 m and the one we will run now is 1km by 1km.  If the 1km population fails,
-the third **people** layer is our backup! 
-   
+the third **people** layer is our backup!
+
 **Basically less pixels less memory need**
 
 .. image:: /static/training/socialisation/072_cellsize.*
    :align: center
-   
-34. :guilabel:`Check` the second “people” in the drop down menu - check the keywords to 
-confirm its the source is *AsiaPop 1km2*
+
+34. :guilabel:`Check` the second “people” in the drop down menu - check the
+    keywords to confirm its the source is *AsiaPop 1km2*
 35. :guilabel:`Click` on the drop down menu for the “Might”,
     this is the first |project_name| run where there are actually 2 impact
     functions that we can choose from!
@@ -294,7 +294,7 @@ Flores in Indonesia. With a magnitude of 7.8, it was the largest and also the
 deadliest earthquake in 1992. This particular scenario is a modelled version
 of a Magnitude 8.1 earthquake generating a Tsunami that impact Maumere.
 
-45. :menuselection:`File --> Open Projects`, browse to *Maumere_tsunami.qgs* 
+45. :menuselection:`File --> Open Projects`, browse to *Maumere_tsunami.qgs*
 
 You will see that there is 2 layers in the layer panel,
 click on each of them to read the keywords in the |project_name| window.
@@ -306,13 +306,13 @@ click on each of them to read the keywords in the |project_name| window.
    however due to the force of the tsunami waves, the maximum depth of the
    water that would affect people and infrastructure is shallower.
 
-46. Confirm that |project_name| window has the following: 
+46. Confirm that |project_name| window has the following:
     boxes.
 
 	* A tsunami in Maumere (Mw 8.1)
 	* people
 	* be flooded
-	
+
 47. :guilabel:`...` to change the water level for evacuation from 1m to :kbd:`0.5m`
 
 48. :guilabel:`Run` |project_name|
@@ -329,49 +329,53 @@ Map Canvas Extent
 .. image:: /static/training/socialisation/074_tsunami_zoom.*
    :align: center
 
-You will now see that your results are different than the original InaSAFE runs, 
-this is because your extent window determines the area in which you are analysing
-the data. The next chapter will show you how to change this if needed.
+You will now see that your results are different than the original InaSAFE runs,
+this is because your extent window determines the area in which you are
+analysing the data. The next chapter will show you how to change this if
+needed.
 
-.. note: The population coverage coastline in this zoomed in area is different to the
-hazard coastline, this can be a significant problem when your population dataset does not
-reflect the same extents as reality. Through OpenLayers select Bing imagery and examine
-the two layers (people and tsunami). Always quality assure your input layers.
+.. note:: The population coverage coastline in this zoomed in area is
+   different to the hazard coastline, this can be a significant problem when
+   your population dataset does not reflect the same extents as reality.
+   Through OpenLayers select Bing imagery and examine the two layers (people
+   and tsunami). Always quality assure your input layers.
 
 
 OpenStreetMap Downloader
 ------------------------
 
-Notice that there is no building footprints in this project file, that is because we are 
-going to download it straight from |OSM| server.
+Notice that there is no building footprints in this project file,
+that is because we are going to download it straight from |OSM| server.
 
 52. Highlight the tsunami layer and :guilabel:`Zoom to Layer`
 
-53. guilabel:`InaSAFE OpenStreetMap Downloader` 
+53. guilabel:`InaSAFE OpenStreetMap Downloader`
 
 .. image:: /static/training/socialisation/075_osmdownloader.*
    :align: center
 
-.. note: The extent of the **Map Canvas** will automatically be added to the Bounding box.
+.. note:: The extent of the **Map Canvas** will automatically be added to the
+   Bounding box.
 
 54. Confirm the location of the output directory, :guilabel:`OK`
 
-.. image:: /static/training/socialisation/076_buildingloaded.*
+.. image:: /static/training/socialisation/076_building_loaded.*
    :align: center
 
-.. note: On inspection of the buildings, they dont really have many attributes at all,
-This area was digitised for this analysis, field surveys are still to be conducted.  
+.. note:: On inspection of the buildings, they don't really have many
+   attributes at all. This area was digitised for this analysis,
+   field surveys are still to be conducted.
 
-55. Confirm that |project_name| window has the following: 
+55. Confirm that |project_name| window has the following:
     boxes.
 
-	* A tsunami in Maumere (Mw 8.1)
-	* buildings
-	* be flooded
-	
+  * A tsunami in Maumere (Mw 8.1)
+  * buildings
+  * be flooded
+
 56. :guilabel:`Run` |project_name|
 
 57. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
 
-.. note: For more information on the OSM loader please go to 
- :doc:`../../user-docs/application-help/openstreetmap_downloader`
+.. note:: For more information on the OSM loader please go to
+   :doc:`../../user-docs/application-help/openstreetmap_downloader`
