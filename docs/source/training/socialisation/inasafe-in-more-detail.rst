@@ -150,9 +150,10 @@ Adding a Vector Layer
 
 15. Use the :guilabel:`Add Vector` tool
 
-16. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE Projects*,
-   :guilabel:`Select` *flood_osm_bpbd18113_jakarta.shp*, :guilabel:`Open` in the **Open an
-   OGR Support** window and :guilabel:`Open` again in the **Source** window.
+16. Use :guilabel:`Browse` to navigate to the *data* folder within
+*InaSAFE Projects*, :guilabel:`Select` *flood_osm_bpbd18113_jakarta.shp*,
+:guilabel:`Open` in the **Open an OGR Support** window and :guilabel:`Open`
+again in the **Source** window.
 
 .. image:: /static/training/socialisation/047_jakarta18113.*
    :align: center
@@ -168,11 +169,12 @@ the flooded area by sub-village boundary.
 Lets examine this data by opening up its *attribute table*
 
 17. Make sure the *flood_osm_bpbd18113_jakarta* is highlighted (blue line in the
-   **Layer List**). Select the :guilabel:`Open Attribute Table` tool.
+**Layer List**). Select the :guilabel:`Open Attribute Table` tool.
 
 .. image:: /static/training/socialisation/048_attributetable.*
    :align: center
 
+<<<<<<< HEAD
 	OBJECTID:  Feature ID
 	KAB_NAME:  District
 	KEC_NAME:  Sub-district
@@ -180,6 +182,17 @@ Lets examine this data by opening up its *attribute table*
 	RW:        Sub-village
 	affected:  1= affected,
            		NULL = not affected
+=======
+::
+
+  :OBJECTID:  Feature ID
+  :KAB_NAME:  District
+  :KEC_NAME:  Sub-district
+  :KEL_NAME:  Village
+  :RW:        Sub-village
+  :affected:  1= affected
+  NULL = not affected
+>>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
 
 .. note:: This is the same information as the Identify Feature tool, but
    instead of just viewing one object information, you can see all of the
@@ -194,7 +207,7 @@ Now we are going to stylise the subvillage administration boundary to only see t
 affected = 1 areas.
 
 19. :guilabel:`Double click` on *flood_osm_BPBD18113_jakarta* layers - this
-   will open up the properties table
+will open up the properties table
 
 20. Navigate to the style tab
 
@@ -203,21 +216,21 @@ affected = 1 areas.
 
 
 21. Follow the below steps to stylise the subvillage boundaries as illustrated in the
-   picture and table below.
+picture and table below.
 
-======     ================================================
-**Number**      **Step**
-------     ------------------------------------------------
-1               Select "Catergorized" from the drop down menu
-2               Select "affected" from the Column drop down menu
-3               Click "Classify"
-4               Highlight the row light blue "0 0"
-5               Click "Delete"
-6               Highlight the row dark blue "    "
-7               Click "Delete"
-8               Confirm you only have 1 row left
-9               Close the **Layer Properties** window
-======     ================================================
+==========     ================================================
+**Number**     **Step**
+----------     ------------------------------------------------
+1              Select "Catergorized" from the drop down menu
+2              Select "affected" from the Column drop down menu
+3              Click "Classify"
+4              Highlight the row light blue "0 0"
+5              Click "Delete"
+6              Highlight the row dark blue "    "
+7              Click "Delete"
+8              Confirm you only have 1 row left
+9              Close the **Layer Properties** window
+==========     ================================================
 
 .. image:: /static/training/socialisation/050_layerproperties.*
    :align: center
@@ -234,16 +247,17 @@ layer in |project_name|?
 Adding Keywords
 ...............
 
-22. As previously pointed out the |project_name| panel is showing a warning. It is
-   explaining to us that the layer highlight *flood_osm_BPBD18113_jakarta* has no keywords.
-   Lets follow the instructions and select the :guilabel:`InaSAFE Keyword` tool.
+22. As previously pointed out the |project_name| panel is showing a warning.
+It is explaining to us that the layer highlight *flood_osm_BPBD18113_jakarta*
+has no keywords. Lets follow the instructions and select the
+:guilabel:`InaSAFE Keyword` tool.
 
 .. image:: /static/training/socialisation/052_keyword.png
    :align: center
 
 
 23. In the *Keywords Editor* window you have an option of changing the Title, Category and
-   Subcategory. We are going to do just that by following the steps in the table below
+Subcategory. We are going to do just that by following the steps in the table below
 
 ==============  	================================================
 **Quick edit**	 	**Variable**
@@ -253,7 +267,7 @@ Category			Hazard
 Subcategory			flood[wet/dry]
 ==============  	================================================
 
-.. image:: /static/training/socialisation/053_keywordedited.png
+.. image:: /static/training/socialisation/053_keywordedited.*
    :align: center
 
 24. Close the Keyword editor: :guilabel:`OK`
@@ -268,7 +282,7 @@ Buildings within affected subvillages
 
 25. Confirm that the |project_name| window has the following its drop down menu.
 
-.. image:: /static/training/socialisation/054_inasafepanel.png
+.. image:: /static/training/socialisation/054_inasafepanel.*
    :align: center
 
 * Jakarta flooding on the 18th January 2013
@@ -282,7 +296,7 @@ Buildings within affected subvillages
 .. todo:: How many estimated buildings were flooded? **Answer**  ___________________
 
 27. Read through the |project_name| results, how different is this to the previous
-   |project_name| building analysis?
+|project_name| building analysis?
 
 .. todo:: Why are the results so different? *Consider the diferences between
    the hazard layers, model vs footprint*. **Answer**  ______________ Which
@@ -310,12 +324,18 @@ input a percentage of the affected population that may need evacuating.
 
 30. Confirm that the |project_name| window has the following its drop down menu.
 
+<<<<<<< HEAD
 * Jakarta flooding on the 18th January 2013
 * people
 * Need Evacuation
+=======
+  * Jakarta flooding on the 18th January 2013
+  * people
+  * Need Evacuation
+>>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
 
 31. To configure the impact function select :guilabel: `...` *Configure Impact Function
-   Parameter* which is found beside the *Need Evacuation*
+Parameter* which is found beside the *Need Evacuation*
 
 .. image:: /static/training/socialisation/055_inasafeconfigure.png
    :align: center
@@ -326,7 +346,7 @@ input a percentage of the affected population that may need evacuating.
    week.  *Improvement:* need to add units to minimum needs
 
 32. In the options tab you can see that default is 1, for this first analysis we will
-   keep this figure. :guilabel:`OK`
+keep this figure. :guilabel:`OK`
 
 33. :guilabel:`Run` |project_name|
 
@@ -336,7 +356,7 @@ input a percentage of the affected population that may need evacuating.
    How many people were affected? **Answer** __________________________
 
 34. Read through the |project_name| results, how different is this to the previous
-   |project_name| people analysis?
+|project_name| people analysis?
 
 35. :guilabel:`Print` |project_name|, save accordingly
 
@@ -357,9 +377,9 @@ flood 180113   1%             Vector         People        Raster         Need E
 =============  =============  =============  ============  =============  ===================  =============
 
 36. Complete the last column of the above table. For more information on data type
-   go to :doc:`rastervsvector`
+go to :doc:`rastervsvector`
 
-.. todo: How different are the results? **Answer** __________________________,
+.. todo:: How different are the results? **Answer** __________________________,
    Why are they different? **Answer** __________________________
 
 
@@ -378,8 +398,8 @@ of islands!)
 36. Use the :guilabel:`Add Vector` button
 
 37. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE Projects*,
-   :guilabel:`Select` *district_osm_jakarta.shp*, :guilabel:`Open` in the **Open an
-   OGR Support** window and :guilabel:`Open` again in the **Source** window.
+:guilabel:`Select` *district_osm_jakarta.shp*, :guilabel:`Open` in the **Open an
+OGR Support** window and :guilabel:`Open` again in the **Source** window.
 
 .. image:: /static/training/socialisation/056_district.png
    :align: center
@@ -400,8 +420,8 @@ attribute correspond.
    :align: center
 
 39. :guilabel:`Select` the *District's of Jakarta* from the drop down menu under
-   *Aggregate results by*, and check that the other sections are field out according to
-   the image below.
+*Aggregate results by*, and check that the other sections are field out according to
+the image below.
 
 .. image:: /static/training/socialisation/058_aggregationselect.png
    :align: center
@@ -414,7 +434,7 @@ attribute correspond.
    :align: center
 
 41. Lets see what the results would be for buildings, change How many *people* to How
-   many *buildings*
+many *buildings*
 
 42. :guilabel:`Run` |project_name|
 

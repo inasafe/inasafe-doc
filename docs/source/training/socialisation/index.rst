@@ -15,13 +15,14 @@ Schedule
 .. toctree::
    :maxdepth: 1	
 
-   overview  (30 min)
-   functionality-datasets (30 min)
-   introduction-of-qgis (30 min)
-   run-basic-inasafe (20 min)
-   inasafe-in-more-detail (40 min)
-   other-hazards (45 min)
-   helpful-hints-and-tips (15 min)
+   overview
+   functionality-datasets
+   introduction-of-qgis
+   rastervsvector
+   run-basic-inasafe
+   inasafe-in-more-detail
+   other-hazards
+   helpful-hints-and-tips
 
 
 Objective
