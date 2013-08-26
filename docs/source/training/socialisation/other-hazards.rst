@@ -55,6 +55,7 @@ Select Feature and Save
 
 .. image:: /static/training/socialisation/062_merapi_attribute.*
    :align: center
+
    
 9. :guilabel:`Zoom to Selection` to zoom in further, continue until you get to an extent
 	similar to the one below. (The yellow triangle is Merapi)
@@ -114,9 +115,9 @@ Configure and Run |project_name|
 22. Conform that |project_name| has the following in the drop-down
     boxes
 
-	* Merapi erupting
-	* people
-	* Need evacuation
+* Merapi erupting
+* people
+* Need evacuation
 
 Before we run |project_name| again, we have to tell |project_name| what the hazard 
 zone is! 
@@ -124,9 +125,9 @@ zone is!
 23. Click on :guilabel:`...` (impact function editor) next to *Need evacuation* 
 As a default |project_name| has made 3 hazard areas:
 
-	* Vent -3 km
-	* 3-5 km
-	* 5-10 km
+* Vent -3 km
+* 3-5 km
+* 5-10 km
 
 .. image:: /static/training/socialisation/067_volcano_config.*
    :align: center
@@ -135,8 +136,11 @@ As a default |project_name| has made 3 hazard areas:
    5-10 and then 10-25 then you would type  5,10,25
 
 24. :guilabel:`OK`
+
 25. :guilabel:`Run` |project_name|
+
 26. :guilabel:`Click` |project_name| Print, save accordingly
+
 27. Analysis Results
 
 .. image:: /static/training/socialisation/068_merapi_results.*
@@ -153,13 +157,13 @@ with no instructions, make sure to print each result!
 Take 10 mins to run:
 
 In the event of **Merapi erupting** how many **buildings** will
-**be affected** within 3,5,10 km of the vent.
+**be affected** within **3,5,10*** km of the vent.
 
 In the event of **Merapi erupting** how many **people** will
-**be affected** within 5,10,25 km of the vent.
+**be affected** within **5,10,25** km of the vent.
 
 In the event of **Merapi erupting** how many **buildings** will
-**be affected** within 5,10,25 km of the vent.
+**be affected** within **5,10,25** km of the vent.
 
 **ANSWER** __________________________
 **ANSWER** __________________________
@@ -200,7 +204,9 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
     5km2*
     
 30. Make sure the only **people** checked is Source= AsiaPop
+
 31. In the **How many** drop box pick the top **people**.
+
 32. :guilabel:`Run` |project_name|
 
 Memory usage warning
@@ -231,10 +237,12 @@ the third **people** layer is our backup!
    :align: center
    
 34. :guilabel:`Check` the second “people” in the drop down menu - check the keywords to 
-confirm its the source is *AsiaPop 1km2*
+	confirm its the source is *AsiaPop 1km2*
+
 35. :guilabel:`Click` on the drop down menu for the “Might”,
     this is the first |project_name| run where there are actually 2 impact
     functions that we can choose from!
+
 36. :guilabel:`Select` the “Die or be displaced according to the pager model”
 
 .. Note:: This particular impact function was developed in Italy last
@@ -258,6 +266,7 @@ How many people are estimated to be displaced?
 
 **ANSWER** __________________________
 
+
 Will a building fall down in an earthquake?
 -------------------------------------------
 
@@ -272,10 +281,12 @@ assisted mapping, totalling roughly 95,000 structures.
 Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
 40. :guilabel:`Uncheck` *people* in the **Layer List** and :guilabel:`Check` *building*
+
 41. Confirm that |project_name| window has the following:
-	* an earthquake in Padang like in 2009
-	* buildings
-	* be affected
+
+* an earthquake in Padang like in 2009
+* buildings
+* be affected
 
 42. :guilabel:`Run` |project_name|
 
@@ -284,6 +295,7 @@ Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
 43. Investigate the results, both by looking at the
     |project_name| results, and using the information tool to select a building.
+
 44. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
 
 Tsunami
@@ -309,9 +321,9 @@ click on each of them to read the keywords in the |project_name| window.
 46. Confirm that |project_name| window has the following: 
     boxes.
 
-	* A tsunami in Maumere (Mw 8.1)
-	* people
-	* be flooded
+* A tsunami in Maumere (Mw 8.1)
+* people
+* be flooded
 	
 47. :guilabel:`...` to change the water level for evacuation from 1m to :kbd:`0.5m`
 
@@ -365,9 +377,9 @@ This area was digitised for this analysis, field surveys are still to be conduct
 55. Confirm that |project_name| window has the following: 
     boxes.
 
-	* A tsunami in Maumere (Mw 8.1)
-	* buildings
-	* be flooded
+* A tsunami in Maumere (Mw 8.1)
+* buildings
+* be flooded
 	
 56. :guilabel:`Run` |project_name|
 

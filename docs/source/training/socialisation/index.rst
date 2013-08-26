@@ -13,7 +13,7 @@ Schedule
 --------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1	
 
    overview  (30 min)
    functionality-datasets (30 min)

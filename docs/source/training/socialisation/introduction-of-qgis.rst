@@ -137,6 +137,7 @@ Option Window
 To change the projection settings and acknowledge that QGIS is multilingual
 
 5. Go to Options window: :menuselection:`Settings --> Options`
+
 6. :guilabel:`Select` the **CRS** tab of the options menu
 
 .. image:: /static/training/socialisation/016_crs.*
@@ -212,30 +213,20 @@ Installing |project_name| through the QGIS plugin repository
    :align: center
 
 
-================								   ========================
+===========								            ===============================
 **Symbol**                                          **Name**
------------------                                  ------------------------
+-----------                                         -------------------------------
 .. image:: /static/general/icon_dock.*              Toggle Dock
-   :align: center
 .. image:: /static/general/icon_keywords.*          Keyword Editor
-   :align: center
 .. image:: /static/general/icon_reset.*             Reset Dock
-   :align: center
 .. image:: /static/general/icon_options.*           Options
-   :align: center
 .. image:: /static/general/icon_impactfunctions.*   Impact Functions Browser
-   :align: center
 .. image:: /static/general/icon_minimumneeds.*      Minimum Needs Tool
-   :align: center
 .. image:: /static/general/icon_converter.*         Converter
-   :align: center
 .. image:: /static/general/icon_batch.*             Batch Runner
-   :align: center
 .. image:: /static/general/icon_save.*              Save Current Scenario
-   :align: center
 .. image:: /static/general/icon_osm.*               OpenStreetMap downloader
-   :align: center
-================                                    ========================
+===========                                         ===============================
 
 .. Note:: Later we will explore and use these tools.  For more information
  :doc:`../../user-docs/toolbar`
@@ -248,11 +239,15 @@ Installing OpenLayer through the QGIS plugin repository
 17. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a
    couple of minutes for QGIS to contact its repository and show the list of
    plugins available.
+
 18. Type :kbd:`openlayers` into the filter box.
+
 19. :guilabel:`Select` *OpenLayer Plugin* then :guilabel:`Install plugin` - this will
    take a couple of minutes for the plugin to download and install.
+
 20. A window should pop up saying: "Plugin installed successfully"  :guilabel:`Ok`
    and :guilabel:`Close` the *QGIS Python Plugin Installer* window.
+
 21. Hover mouse over :menuselection:`Plugins --> OpenLayer Plugin`
 
 .. image:: /static/training/socialisation/023_openlayers.*
@@ -271,16 +266,17 @@ Installing OpenLayer through the QGIS plugin repository
 
 Using the navigation tools below, zoom into your home.
 
-==========================================  =============
+===========                                ===============================
 **Symbol**                                  **Name**
-------------------------------------------  -------------
+-----------                                -------------------------------
 .. image:: /static/general/icon_pan.*       Pan Map
 .. image:: /static/general/icon_zoomin.*    Zoom In
 .. image:: /static/general/icon_zoomout.*   Zoom Out
 .. image:: /static/general/icon_zoomfull.*  Zoom to Full
 .. image:: /static/general/icon_zoomlast.*  Zoom Last
 .. image:: /static/general/icon_zoomnext.*  Zoom Next
-==========================================  =============
+===========                                 ==============================
+
 
 23. :guilabel:`Click` *zoom In*, draw a box (click and drag) over your country.
 

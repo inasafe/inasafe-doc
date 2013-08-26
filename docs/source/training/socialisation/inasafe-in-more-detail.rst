@@ -40,9 +40,9 @@ You will now have 3 or 4 layer that have been generated through |project_name|
 
 We are now going to use the basic QGIS tools to examine the datasets.
 
-===========================================     ====================
+===========     								=======================
 **Symbol**                                      **Name**
--------------------------------------------     --------------------
+-----------     								-----------------------
 .. image:: /static/general/icon_identify.*      Identify Features
 .. image:: /static/general/icon_attribute.*     Open Attribute Table
 .. image:: /static/general/icon_line.*          Measure Line
@@ -50,7 +50,7 @@ We are now going to use the basic QGIS tools to examine the datasets.
 .. image:: /static/general/icon_zoomlayer.*     Zoom to Layer
 .. image:: /static/general/icon_zoomin.*        Zoom In
 .. image:: /static/general/icon_addvector.*     Add Vector Layer
-===========================================     ====================
+===========     								=======================
 
 
 About Estimate Building Affected
@@ -105,7 +105,7 @@ About Population which needs evacuation
    selected *Population which Need evacuation*
 
 Here I clicked on the :guilabel:`light green area` , to find that there is a
-value of 80.6411, which means there are approximately 80 people in one pixel
+value of **80.6411**, which means there are approximately 80 people in one pixel
 (square).
 
 .. image:: /static/training/socialisation/045_examineraster.*
@@ -138,8 +138,8 @@ close!
 
 14. :guilabel:`Uncheck` all layers except:
 
-	* buildings
-	* people
+* buildings
+* people
 
 
 Flood Footprint in |project_name|
@@ -173,12 +173,12 @@ Lets examine this data by opening up its *attribute table*
 .. image:: /static/training/socialisation/048_attributetable.*
    :align: center
 
-	:OBJECTID:  Feature ID
-	:KAB_NAME:  District
-	:KEC_NAME:  Sub-district
-	:KEL_NAME:  Village
-	:RW:        Sub-village
-	:affected:  1= affected,
+	OBJECTID:  Feature ID
+	KAB_NAME:  District
+	KEC_NAME:  Sub-district
+	KEL_NAME:  Village
+	RW:        Sub-village
+	affected:  1= affected,
            		NULL = not affected
 
 .. note:: This is the same information as the Identify Feature tool, but
@@ -271,9 +271,9 @@ Buildings within affected subvillages
 .. image:: /static/training/socialisation/054_inasafepanel.png
    :align: center
 
-	* Jakarta flooding on the 18th January 2013
-	* buildings
-	* Be Flooded
+* Jakarta flooding on the 18th January 2013
+* buildings
+* Be Flooded
 
 26. |project_name|:guilabel:`Run`
 
@@ -310,9 +310,9 @@ input a percentage of the affected population that may need evacuating.
 
 30. Confirm that the |project_name| window has the following its drop down menu.
 
-	* Jakarta flooding on the 18th January 2013
-	* people
-	* Need Evacuation
+* Jakarta flooding on the 18th January 2013
+* people
+* Need Evacuation
 
 31. To configure the impact function select :guilabel: `...` *Configure Impact Function
    Parameter* which is found beside the *Need Evacuation*
@@ -328,7 +328,7 @@ input a percentage of the affected population that may need evacuating.
 32. In the options tab you can see that default is 1, for this first analysis we will
    keep this figure. :guilabel:`OK`
 
-33. |project_name|:guilabel:`Run`
+33. :guilabel:`Run` |project_name|
 
 .. note:: *This may take about a minute to run*
 
@@ -338,7 +338,7 @@ input a percentage of the affected population that may need evacuating.
 34. Read through the |project_name| results, how different is this to the previous
    |project_name| people analysis?
 
-35. |project_name| :guilabel:`Print`, save accordingly
+35. :guilabel:`Print` |project_name|, save accordingly
 
 
 Comparing Results - Optional
@@ -386,12 +386,12 @@ of islands!)
 
 38. This layer already has its keywords filled out, lets go through these:
 
-	:Category: postprocessing - *Layer to be used after impact is derived*
-	:Aggregation attribute: KAB_NAME - *The name of the attribute you wan to aggregate*
-	:Subcategory: aggregation
-	:Title: District's of Jakarta
-	:Source: OpenStreetMap
-	:Female ratio attribute: PEREMPUAN - *Attribute name of female percentage per district*
+	Category: postprocessing - *Layer to be used after impact is derived*
+	Aggregation attribute: KAB_NAME - *The name of the attribute you wan to aggregate*
+	Subcategory: aggregation
+	Title: District's of Jakarta
+	Source: OpenStreetMap
+	Female ratio attribute: PEREMPUAN - *Attribute name of female percentage per district*
 
 By looking at the district layer attribute table you can see that the names of the
 attribute correspond.
@@ -406,7 +406,7 @@ attribute correspond.
 .. image:: /static/training/socialisation/058_aggregationselect.png
    :align: center
 
-40. |project_name|:guilabel:`Run`
+40. :guilabel:`Run` |project_name|
 
 .. note:: *This may take about a minute to run*
 
@@ -416,7 +416,7 @@ attribute correspond.
 41. Lets see what the results would be for buildings, change How many *people* to How
    many *buildings*
 
-42. |project_name|:guilabel:`Run`
+42. :guilabel:`Run` |project_name|
 
 .. note:: *This may take about a minute to run*
 

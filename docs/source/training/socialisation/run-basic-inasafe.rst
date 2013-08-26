@@ -52,16 +52,16 @@ People need evacuating
 As you can see the |project_name| panel has the first three drop down menus
 filed in already:
 
-	* a flood similar to the 2007 Jakarta event
-	* buildings
-	* Be Flooded
+* a flood similar to the 2007 Jakarta event
+* buildings
+* Be Flooded
 
 4. In the |project_name| panel :guilabel:`Click` on buildings, :guilabel:`Select` people,
    it now should have:
 
-	* a flood similar to the 2007 Jakarta event
-	* people
-	* Need evacuating
+* a flood similar to the 2007 Jakarta event
+* people
+* Need evacuating
 
 .. image:: /static/training/socialisation/030_showpeople.*
    :align: center
@@ -118,7 +118,7 @@ Print Results
 
 
 7. Navigate to where you would like to save the pdf, add :kbd:`_1m` at the end of
-*People_in_need_of_evacuation* :guilabel:`Save`
+	*People_in_need_of_evacuation* :guilabel:`Save`
 
 Two PDFs will be generated
 
@@ -156,7 +156,7 @@ What if the disaster manager has decided that people should be evacuated if they
 11. :guilabel:`OK`
 
 
-12. :guilabel:`Run`
+12. :guilabel:`Run` |project_name|
 
 .. image:: /static/training/socialisation/031_run.*
    :align: center
@@ -179,8 +179,8 @@ How have the numbers changed?
 15. Before moving onto buildings, lets turn some layers off. In your Layer
    panel you will now have 5 layers, we are going to uncheck everything but:
 
-	* a flood similar to the 2007 Jakarta event
-	* buildings
+* a flood similar to the 2007 Jakarta event
+* buildings
 
 .. image:: /static/training/socialisation/039_buildingflood.*
    :align: center
@@ -213,14 +213,14 @@ important building (and then sum!).
 
 Important buildings are defined as:
 
-	* Clinic
-	* Fire Stations
-	* Government
-	* Hospitals
-	* Place of Worship
-	* Police
-	* Schools
-	* Sports Centres
+* Clinic
+* Fire Stations
+* Government
+* Hospitals
+* Place of Worship
+* Police
+* Schools
+* Sports Centres
 
 **Action Checklist:** A different set of Actions have been identified to
 relate to structures.
@@ -249,12 +249,12 @@ Optional - Change the threshold to 0.8
 
 21. Check that |project_name| has the following in the drop-down boxes
 
-	* a flood similar to the 2007 Jakarta event
-	* buildings
-	* Be Flooded
+* a flood similar to the 2007 Jakarta event
+* buildings
+* Be Flooded
 
 22. To configures the impact function select :guilabel: `...` *Configure Impact Function
-Parameter* which is found beside the *Be flooded*
+	Parameter* which is found beside the *Be flooded*
 
 23. Type :kbd:`0.8` in the window
 
