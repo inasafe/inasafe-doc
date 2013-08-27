@@ -52,28 +52,16 @@ People need evacuating
 As you can see the |project_name| panel has the first three drop down menus
 filed in already:
 
-<<<<<<< HEAD
 * a flood similar to the 2007 Jakarta event
 * buildings
 * Be Flooded
-=======
-    * a flood similar to the 2007 Jakarta event
-    * buildings
-    * Be Flooded
->>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
 
 4. In the |project_name| panel :guilabel:`Click` on buildings, :guilabel:`Select` people,
    it now should have:
 
-<<<<<<< HEAD
 * a flood similar to the 2007 Jakarta event
 * people
 * Need evacuating
-=======
-    * a flood similar to the 2007 Jakarta event
-    * people
-    * Need evacuating
->>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
 
 .. image:: /static/training/socialisation/030_showpeople.*
    :align: center
@@ -129,8 +117,8 @@ Print Results
    :align: center
 
 
-7. Navigate to where you would like to save the pdf, add :kbd:`_1m` at the end of
-	*People_in_need_of_evacuation* :guilabel:`Save`
+7. Navigate to where you would like to save the pdf, add :kbd:`_1m` at the
+end of *People_in_need_of_evacuation* :guilabel:`Save`
 
 Two PDFs will be generated
 
@@ -154,8 +142,8 @@ What if the disaster manager has decided that people should be evacuated if they
 .. image:: /static/training/socialisation/036_showquestion.*
    :align: center
 
-9. To change the impact function select :guilabel:`...` *Configure Impact Function
-   Parameter* which is found beside the *Need evacuation*
+9. To change the impact function select :guilabel:`...` *Configure Impact
+Function Parameter* which is found beside the *Need evacuation*
 
 .. image:: /static/training/socialisation/037_functionchange.*
    :align: center
@@ -185,19 +173,14 @@ How have the numbers changed?
 .. image:: /static/training/socialisation/034_print.*
    :align: center
 
-14. Navigate to where you would like to save the pdf, add :kbd:`_80cm` at the
-end of *People_in_need_of_evacuation* :guilabel:`Save`
+14. Navigate to where you would like to save the pdf, add :kbd:`_80cm` at the end of
+*People_in_need_of_evacuation* :guilabel:`Save`
 
 15. Before moving onto buildings, lets turn some layers off. In your Layer
 panel you will now have 5 layers, we are going to uncheck everything but:
 
-<<<<<<< HEAD
 * a flood similar to the 2007 Jakarta event
 * buildings
-=======
-    * a flood similar to the 2007 Jakarta event
-    * buildings
->>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
 
 .. image:: /static/training/socialisation/039_buildingflood.*
    :align: center
@@ -213,10 +196,9 @@ Buildings Affected
 17. Notice that if you click on the *building* the people option is not available,
 this is because *people* is not checked in the **Layer List**.
 
-.. note:: If you want to be able to select layers within the |project_name|
-   panel that are not checked in the **Layer List** you can modify the
-   |project_name| options. For more information
-   :doc:`../../user-docs/application-help/options`.
+.. note:: If you want to be able to select layers within the |project_name| panel that are
+   not checked in the **Layer List** you can modify the |project_name| options. For more
+   information :doc:`../../user-docs/application-help/options`
    We will also go through the option menu in :doc:`helpful-hints-and-tips`
 
 18. :guilabel:`Run` the new combination.
@@ -231,7 +213,6 @@ important building (and then sum!).
 
 Important buildings are defined as:
 
-<<<<<<< HEAD
 * Clinic
 * Fire Stations
 * Government
@@ -240,16 +221,6 @@ Important buildings are defined as:
 * Police
 * Schools
 * Sports Centres
-=======
-    * Clinic
-    * Fire Stations
-    * Government
-    * Hospitals
-    * Place of Worship
-    * Police
-    * Schools
-    * Sports Centres
->>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
 
 **Action Checklist:** A different set of Actions have been identified to
 relate to structures.
@@ -263,34 +234,27 @@ buildings by aggregation boundary.
 
 **Source:** of the Hazard and Population Datasets
 
+
 19. :guilabel:`Print` at the bottom the |project_name| panel
 
-.. image:: /static/training/socialisation/034_print.*
+.. image:: /static/training/socialisation/034_print.png
    :align: center
 
-20. Navigate to where you would like to save the pdf, add :kbd: `_1m` at the
-end of *Buildings_inundated* :guilabel:`Save`
+20. Navigate to where you would like to save the pdf, add :kbd: `_1m` at the end of
+*Buildings_inundated* :guilabel:`Save`
+
 
 Optional - Change the threshold to 0.8
 ......................................
 
 21. Check that |project_name| has the following in the drop-down boxes
 
-<<<<<<< HEAD
 * a flood similar to the 2007 Jakarta event
 * buildings
 * Be Flooded
 
 22. To configures the impact function select :guilabel: `...` *Configure Impact Function
-	Parameter* which is found beside the *Be flooded*
-=======
-    * a flood similar to the 2007 Jakarta event
-    * buildings
-    * Be Flooded
-
-22. To configures the impact function select :guilabel: `...` *Configure
-Impact Function Parameter* which is found beside the *Be flooded*
->>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
+Parameter* which is found beside the *Be flooded*
 
 23. Type :kbd:`0.8` in the window
 

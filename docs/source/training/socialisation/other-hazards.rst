@@ -56,10 +56,7 @@ Select Feature and Save
 .. image:: /static/training/socialisation/062_merapi_attribute.*
    :align: center
 
-<<<<<<< HEAD
-   
-=======
->>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
+
 9. :guilabel:`Zoom to Selection` to zoom in further, continue until you get to an extent
 	similar to the one below. (The yellow triangle is Merapi)
 
@@ -184,8 +181,8 @@ Earthquake
 Indonesia’s location on the edges of the Pacific, Eurasian,
 and Australian tectonic plates makes it not only a site of numerous volcanoes
 but also frequent earthquakes. The hazard layer we are going to use for this
-example has been provided by Badan Geologi and |AIFDR|,
-|AusAID| and describes the shaking or Modified Mercalli Intensity (MMI) Scale.
+example has been provided by Badan Geologi and |AIFDR|, |AusAID| and describes the
+shaking or Modified Mercalli Intensity (MMI) Scale.
 
 This particular scenario is a modelled version of the 2009 Padang earthquake.
 
@@ -202,9 +199,9 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
 .. image:: /static/training/socialisation/070_people_scale.*
    :align: center
 
-.. Note:: Notice the difference between the first **people** layer and the
-   other 2 people, the second one has a source of *AsiaPop rescaled 1km2*,
-   the third *AsiaPop rescaled 5km2*
+.. Note: Notice the difference between the first **people** layer and the other 2 people,
+    the second one has a source of *AsiaPop rescaled 1km2*, the third *AsiaPop rescaled
+    5km2*
 
 30. Make sure the only **people** checked is Source= AsiaPop
 
@@ -238,16 +235,10 @@ the third **people** layer is our backup!
 
 .. image:: /static/training/socialisation/072_cellsize.*
    :align: center
-<<<<<<< HEAD
-   
-34. :guilabel:`Check` the second “people” in the drop down menu - check the keywords to 
+
+34. :guilabel:`Check` the second “people” in the drop down menu - check the keywords to
 	confirm its the source is *AsiaPop 1km2*
 
-=======
-
-34. :guilabel:`Check` the second “people” in the drop down menu - check the
-    keywords to confirm its the source is *AsiaPop 1km2*
->>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
 35. :guilabel:`Click` on the drop down menu for the “Might”,
     this is the first |project_name| run where there are actually 2 impact
     functions that we can choose from!
@@ -330,17 +321,10 @@ click on each of them to read the keywords in the |project_name| window.
 46. Confirm that |project_name| window has the following:
     boxes.
 
-<<<<<<< HEAD
 * A tsunami in Maumere (Mw 8.1)
 * people
 * be flooded
-	
-=======
-	* A tsunami in Maumere (Mw 8.1)
-	* people
-	* be flooded
 
->>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
 47. :guilabel:`...` to change the water level for evacuation from 1m to :kbd:`0.5m`
 
 48. :guilabel:`Run` |project_name|
@@ -358,9 +342,8 @@ Map Canvas Extent
    :align: center
 
 You will now see that your results are different than the original InaSAFE runs,
-this is because your extent window determines the area in which you are
-analysing the data. The next chapter will show you how to change this if
-needed.
+this is because your extent window determines the area in which you are analysing
+the data. The next chapter will show you how to change this if needed.
 
 .. note:: The population coverage coastline in this zoomed in area is
    different to the hazard coastline, this can be a significant problem when
@@ -391,26 +374,18 @@ that is because we are going to download it straight from |OSM| server.
    :align: center
 
 .. note:: On inspection of the buildings, they don't really have many
-   attributes at all. This area was digitised for this analysis,
+   attributes at all, this area was digitised for this analysis,
    field surveys are still to be conducted.
 
-55. Confirm that |project_name| window has the following:
-    boxes.
+55. Confirm that  window has the following boxes.
 
-<<<<<<< HEAD
-* A tsunami in Maumere (Mw 8.1)
-* buildings
-* be flooded
-	
-=======
   * A tsunami in Maumere (Mw 8.1)
   * buildings
   * be flooded
 
->>>>>>> 9ed9a1933ff85e7582bead0b25e5fa4837189be7
 56. :guilabel:`Run` |project_name|
 
 57. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
 
 .. note:: For more information on the OSM loader please go to
-   :doc:`../../user-docs/application-help/openstreetmap_downloader`
+   :ref:`openstreetmap_downloader`
