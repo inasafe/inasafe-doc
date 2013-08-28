@@ -318,7 +318,7 @@ input a percentage of the affected population that may need evacuating.
 * people
 * Need Evacuation
 
-31. To configure the impact function select :guilabel: `...`
+31. To configure the impact function select :guilabel:`...`
 *Configure Impact Function Parameter* which is found beside the
 *Need Evacuation*
 
