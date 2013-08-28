@@ -122,7 +122,7 @@ As you can see I got 102 meters but this is only because its very hard to
 click on one corner of the pixel and then the other, unless I zoom in real
 close!
 
-.. image:: /static/socialisation/measure_tes*
+.. image:: /static/socialisation/measure_test.*
 
 11. :guilabel:`Click` Close
 
