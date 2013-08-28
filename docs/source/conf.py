@@ -112,6 +112,10 @@ rst_epilog = """
 .. _GA: http://www.ga.gov.au/
 .. |OSM| replace:: OSM_
 .. _OSM: http://www.openstreetmap.org/
+.. |Linfiniti| replace:: Linfiniti_
+.. _Linfiniti: http://linfiniti.com
+.. |HOT| replace:: HOT_
+.. _HOT: http://hot.openstreetmap.org/
 
 """
 
