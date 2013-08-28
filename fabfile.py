@@ -3,8 +3,9 @@
 # Tim Sutton, Jan 2013
 
 import os
-from fabric.api import *
+from fabric.api import env, task, fastprint, hide, run, sudo, cd, put
 from fabric.contrib.files import contains, exists, append, sed
+from fabric.colors import red, green, blue
 import fabtools
 from fabtools import require
 # noinspection PyUnresolvedReferences
@@ -13,7 +14,7 @@ from fabgis.jenkins import jenkins_deploy_website, install_jenkins
 from fabgis.utilities import replace_tokens
 from fabgis.git import update_git_checkout
 from fabgis.inasafe import setup_inasafe
-from fabgis.sphinx import setup_latex
+from fabgis.sphinx import setup_latex, setup_sphinx, setup_transifex
 
 # Don't remove even though its unused
 # noinspection PyUnresolvedReferences
@@ -40,6 +41,7 @@ from fabtools.vagrant import vagrant
 # Global options
 env.env_set = False
 
+
 @task
 def localhost():
     """Simple convenient alias for running commands on localhost."""
@@ -49,10 +51,10 @@ def localhost():
 def _setup_env():
     """Things to do regardless of whether command is local or remote."""
     if env.env_set:
-        fastprint('Environment already set!\n')
+        fastprint(green('Environment already set!\n'))
         return
 
-    fastprint('Setting environment!\n')
+    fastprint(blue('Setting environment!\n'))
     # Key is hostname as it resolves by running hostname directly on the server
     # value is desired web site url to publish the repo as.
     doc_site_names = {
@@ -111,20 +113,22 @@ def build_docs(branch='master'):
         fab -H 88.198.36.154:8697 build_docs:version-1_1
     .. note:: Using the branch option will not work for branches older than 1.1
     """
+    fastprint(blue('Running build docs task.'))
     _setup_env()
     setup_inasafe()
     # Needed for when running on headless servers
     fabtools.require.deb.package('xvfb')
     install_qgis1_8()
 
-    sudo('pip install Sphinx')
+    setup_sphinx()
+    setup_transifex()
+    setup_latex()
 
     update_git_checkout(
         code_path=env.repo_path,
         url=env.git_url,
         repo_alias=env.repo_alias,
         branch=branch)
-    setup_latex()
 
     dir_name = os.path.join(env.repo_path, env.repo_alias)
     with cd(dir_name):
