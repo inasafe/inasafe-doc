@@ -65,6 +65,7 @@ def _setup_env():
         'linfiniti': 'docs.linfiniti.com',
         #vagrant instance
         'vagrant-inasafe-doc': 'docs.vagrant.localhost',
+        '0d37a87e25e2': 'inasafe.org',  # production docker container on l3
         'shiva': 'docs.inasafe.org'}
 
     with hide('output'):
