@@ -118,7 +118,7 @@ def build_docs(branch='master'):
     _setup_env()
     setup_inasafe()
     # Needed for when running on headless servers
-    fabtools.require.deb.packages('xvfb software-properties-common')
+    fabtools.require.deb.packages('xvfb software-properties-common rpl')
     install_qgis1_8()
 
     setup_sphinx()
