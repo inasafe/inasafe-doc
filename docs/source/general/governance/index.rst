@@ -3,15 +3,16 @@
 Project Governance
 ==================
 
-The |project_name| Project is organised, sponsored and worked on by a lots of
-people. To get a overview who is responsible for what and working where here
-is the list of :ref:`project_steering_commitee` and on the technical side
-the list of :ref:`technical_working_group`.
+|project_name| has been developed as an Open Source project to ensure world wide 
+collaboration, as well as transparency and quality of the software. |project_name|
+relies on disaster managers, developers, trainers, translators and of course users to 
+develop the software. 
 
-Contents:
+People from all over the world are currently working on this project, so we thought
+it would be best to list here who they are, who they work for and their skill base 
+:ref:`community`.
 
-.. toctree::
-   :maxdepth: 3
+|project_name| still has a public release procedure which represents an endorsed 
+version of the software.  The new release is stored in the Quantum GIS repository.
+The procedure is documented here :ref:`governance`
 
-   psc
-   twg
