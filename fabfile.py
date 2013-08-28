@@ -53,6 +53,7 @@ def build_docs(branch='master'):
     setup_inasafe()
     # Needed for when running on headless servers
     fabtools.require.deb.package('xvfb')
+    fabtools.require.deb.package('rpl')
     install_qgis1_8()
 
     setup_sphinx()
