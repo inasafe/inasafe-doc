@@ -31,7 +31,7 @@ from fabtools.vagrant import vagrant
 # Global options
 repo_path = os.path.join(os.path.dirname(__file__), 'dev', 'python')
 code_path = os.path.join(repo_path, 'inasafe-doc')
-web_directory = os.path.join('var', 'www', 'inasafe-org')
+web_directory = os.path.join('/', 'var', 'www', 'inasafe-org')
 
 
 @task
