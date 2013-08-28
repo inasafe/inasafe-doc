@@ -47,11 +47,11 @@ About Estimate Building Affected
 
 1. :guilabel:`Zoom into` a section of buildings using the zoom in tool
 
-.. image:: /static/socialisation/zoomin2.png
+.. image:: /static/socialisation/zoomin2.*
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
-.. image:: /static/socialisation/buildings_zoom_2.png
+.. image:: /static/socialisation/buildings_zoom_2.*
 
 .. note:: *that the red buildings are situated in water greater than 1 meter
    and the green building are determined not affected as they are in waters
@@ -62,14 +62,14 @@ Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
 3. :guilabel:`Click` on the information tool
 
-.. image:: /static/socialisation/information_tool.png
+.. image:: /static/socialisation/information_tool.*
 
 4. :guilabel:`Click` on an affected building (red)
 
 Here I clicked on the building circled in the above picture to result is
 below. This buildings has a lot of information recorded about it.
 
-.. image:: /static/socialisation/identy_results.png
+.. image:: /static/socialisation/identy_results.*
 
 .. note:: *As mentioned before, this information was gathered by the
    Provincial disaster managers, through an OpenStreetMap  data collection
@@ -79,7 +79,7 @@ below. This buildings has a lot of information recorded about it.
 
 5. :guilabel:`Zoom back to full extent` using the Zoom Full tool
 
-.. image:: /static/socialisation/zoom_extent.png
+.. image:: /static/socialisation/zoom_extent.*
 
 About Population which Needs evacuation
 .......................................
@@ -89,18 +89,18 @@ About Population which Needs evacuation
 
 7. Again :guilabel:`zoom` into an area of your choice
 
-.. image:: /static/socialisation/zoomin2.png
+.. image:: /static/socialisation/zoomin2.*
 
 8. :guilabel:`Click` once on *Population which Need evacuation* and use the
    selection tool to select a pixel (square)
 
-.. image:: /static/socialisation/information_tool.png
+.. image:: /static/socialisation/information_tool.*
 
 Here I clicked on the :guilabel:`light green area` , to find that there is a
 value of 80.6411, which means there are approximately 80 people in one pixel
 (square).
 
-.. image:: /static/socialisation/raster_examine_2.png
+.. image:: /static/socialisation/raster_examine_2.*
 
 In this dataset a pixel is 100m by 100m
 
@@ -111,7 +111,7 @@ In this dataset a pixel is 100m by 100m
 10. Is each pixel really 100m by 100m, lets check. Use the
     :guilabel:`measure line tool`
 
-.. image:: /static/socialisation/measure.png
+.. image:: /static/socialisation/measure.*
 
 .. note:: *It maybe easier to measure one pixel by zooming in further.*
 
@@ -122,13 +122,13 @@ As you can see I got 102 meters but this is only because its very hard to
 click on one corner of the pixel and then the other, unless I zoom in real
 close!
 
-.. image:: /static/socialisation/measure_test.png
+.. image:: /static/socialisation/measure_tes*
 
 11. :guilabel:`Click` Close
 
 12. :guilabel:`Zoom back` to full extent using the Zoom Full tool
 
-.. image:: /static/socialisation/zoom_extent.png
+.. image:: /static/socialisation/zoom_extent.*
 
 13. :guilabel:`Uncheck` all layers except
 
@@ -145,13 +145,13 @@ Adding a Vector Layer
 
 14. :guilabel:`Click` on the Add vector tool
 
-.. image:: /static/socialisation/add_vector.png
+.. image:: /static/socialisation/add_vector.*
 
 15. :guilabel:`Click` on browse and navigate to |project_name| projects/data/
     and select *flood_osm_bpbd18113_jakarta.shp* - click Open,
     then click Open again.
 
-.. image:: /static/socialisation/jakarta18113_added.png
+.. image:: /static/socialisation/jakarta18113_added.*
 
 This dataset is the subvillage boundaries for Jakarta,
 during the floods in January this year the Provincial disaster mangers
@@ -160,12 +160,12 @@ the flooded area by sub-village boundary.
 
 Lets examine this data by opening up its :guilabel:`attribute table`
 
-.. image:: /static/socialisation/openattributetable.png
+.. image:: /static/socialisation/openattributetable.*
 
 16. In the layer list :guilabel:`Right click` on the
     *flood_osm_BPBD18113_jakarta* layers  and select *Open Attribute Table*
 
-.. image:: /static/socialisation/attribute_table.png
+.. image:: /static/socialisation/attribute_table.*
 
 OBJECTID:  Feature ID
 
@@ -194,15 +194,15 @@ Now we are going to colour only the area that were affected
 
 20. Select :guilabel:`Categorised`
 
-.. image:: /static/socialisation/select_category_2.png
+.. image:: /static/socialisation/select_category_2.*
 
 21. :guilabel:`Select` attribute from the Column
 
-.. image:: /static/socialisation/select_attribute.png
+.. image:: /static/socialisation/select_attribute.*
 
 22. Click on :guilabel:`Classify` (circle 1)
 
-.. image:: /static/socialisation/classify_2.png
+.. image:: /static/socialisation/classify_2.*
 
 23. :guilabel:`Click` on 0  (circle 2)
 
@@ -214,13 +214,13 @@ Now we are going to colour only the area that were affected
 
 27. Confirm that you only have 1 left
 
-.. image:: /static/socialisation/1_left.png
+.. image:: /static/socialisation/1_left.*
 
 28. :guilabel:`Click OK` (circle 6)
 
 Below are the results
 
-.. image:: /static/socialisation/result.png
+.. image:: /static/socialisation/result.*
 
 You have now symbolised your first layer!  You can see only the subvillage
 areas that were flooded on the 18th of January! Now, can we use this hazard
@@ -233,16 +233,16 @@ Adding Keywords
     highlight *flood_osm_BPBD18113_jakarta* layer).  |project_name| has
     identified that the layer does not have a keyword file.
 
-.. image:: /static/user-docs/error-display.png
+.. image:: /static/user-docs/error-display.*
 
 30. :guilabel:`Click` on the keyword editor
 
-.. image:: /static/socialisation/pencil.png
+.. image:: /static/socialisation/pencil.*
 
 31. :guilabel:`Fill out` the title as
     **Jakarta flooding on the 18th January 2013**
 
-.. image:: /static/socialisation/keyword_editor.png
+.. image:: /static/socialisation/keyword_editor.*
 
 32. For the Category :guilabel:`check` **Hazard**
 
@@ -259,7 +259,7 @@ Buildings within affected subvillages
 35. :guilabel:`Check` that |project_name| has the following in the drop-down
     boxes
 
-.. image:: /static/socialisation/inasafe_floodpolygon.png
+.. image:: /static/socialisation/inasafe_floodpolygon.*
 
 * Jakarta flooding on the 18th January 2013
 
@@ -309,11 +309,11 @@ input a percentage of the affected population that could be evacuated.
 
 42. :guilabel:`Click` on the impact function editor (pencil)
 
-.. image:: /static/socialisation/inasafe_pop.png
+.. image:: /static/socialisation/inasafe_pop.*
 
 43. As you can see the default is 1, :guilabel:`Click OK`
 
-.. image:: /static/socialisation/evacuation_per.png
+.. image:: /static/socialisation/evacuation_per.*
 
 44. :guilabel:`Run` |project_name|
 

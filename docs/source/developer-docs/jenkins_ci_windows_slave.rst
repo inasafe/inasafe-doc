@@ -30,8 +30,8 @@ installing the following components on each windows slave:
 With the base software installed, we will clone two GitHub repositories to
 the VM:
 
-* **InaSAFE.** The application that we will be testing.
-* **inasafe_data.** Test data required for unit testing the  library.
+* **|project_name|** The application that we will be testing.
+* **inasafe_data** Test data required for unit testing the  library.
 
 Then we will configure the system to be able to run the unit tests, first
 independently of Jenkins, and then as a Jenkins job.
