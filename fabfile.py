@@ -87,7 +87,7 @@ def _setup_env():
             env.code_path = os.path.join(env.repo_path, env.repo_alias)
 
     env.env_set = True
-    fastprint('env.env_set = %s' % env.env_set)
+    fastprint(green('env.env_set = %s\n') % env.env_set)
 
 ###############################################################################
 # Next section contains helper methods
@@ -118,7 +118,7 @@ def build_docs(branch='master'):
     _setup_env()
     setup_inasafe()
     # Needed for when running on headless servers
-    fabtools.require.deb.package('xvfb')
+    fabtools.require.deb.packages('xvfb software-properties-common')
     install_qgis1_8()
 
     setup_sphinx()
