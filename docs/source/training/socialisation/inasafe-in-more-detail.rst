@@ -1,4 +1,5 @@
-=============================
+.. _insafe-in-more-detail:
+
 |project_name| in More Detail
 =============================
 
@@ -12,8 +13,7 @@
 * To Run |project_name| with the new hazard layer
 * To Run |project_name| and add the percentage of affected people who will need
   evacuation
-* To explain the difference between the scenario run in last chapter with
-  this chapter (optional)
+* To aggregate the results
 
 **Expected Results:**
 
@@ -26,114 +26,119 @@ Participants are able to:
 * understand the difference between a model hazard and a footprint hazard
 * input the percentage of people that will need evacuating for a flood
   footprint hazard
-* rerun |project_name| with new hazard layer and explain the difference
-  between the flood model and new hazard layer. (optional)
+* aggregate impact results by administration areas
 
 
 Interrogating the Output Data
 -----------------------------
 
-You will now have 3 layer that have been generated through |project_name|
+You will now have 3 or 4 layer that have been generated through |project_name|
 
-* 2 - :guilabel:`*Population which need evacuating*` - Raster Data
+* 2 - *Population which need evacuating* - Raster Data
 
-* 1 - :guilabel:`*Estimated building affected*` - Vector Data
+* 1 or 2 - *Estimated building affected* - Vector Data
 
 We are now going to use the basic QGIS tools to examine the datasets.
+
+===========================================     ====================
+**Symbol**                                      **Name**
+-------------------------------------------     --------------------
+.. image:: /static/general/icon_identify.*      Identify Features
+.. image:: /static/general/icon_attribute.*     Open Attribute Table
+.. image:: /static/general/icon_line.*          Measure Line
+.. image:: /static/general/icon_area.*          Measure Area
+.. image:: /static/general/icon_zoomlayer.*     Zoom to Layer
+.. image:: /static/general/icon_zoomin.*        Zoom In
+.. image:: /static/general/icon_addvector.*     Add Vector Layer
+===========================================     ====================
 
 
 About Estimate Building Affected
 ................................
 
-1. :guilabel:`Zoom into` a section of buildings using the zoom in tool
-
-.. image:: /static/socialisation/zoomin2.*
+1. Using the :guilabel:`Zoom In` tool, zoom to a cluster of buildings
 
 Here we have zoomed into 2 rivers going through the middle of Jakarta.
 
-.. image:: /static/socialisation/buildings_zoom_2.*
+.. image:: /static/training/socialisation/042_buildings_zoom.*
+   :align: center
 
-.. note:: *that the red buildings are situated in water greater than 1 meter
+.. note:: That the red buildings are situated in water greater than 1 meter
    and the green building are determined not affected as they are in waters
-   less than 1 meter deep.*
+   less than 1 meter deep.
 
-2. :guilabel:`Click once` on :guilabel:`*Estimate buildings affected*`  to
-   make sure layer is highlighted in blue
+2. :guilabel:`Select` *Estimate buildings affected* in the **Layer List** to highlight
+   the layer. It should now be in blue.
 
-3. :guilabel:`Click` on the information tool
+.. image:: /static/training/socialisation/043_highlight.*
+   :align: center
 
-.. image:: /static/socialisation/information_tool.*
+3. Use the :guilabel:`Identify Features` tool to select a building
 
-4. :guilabel:`Click` on an affected building (red)
+Here I clicked on the building circled in the above picture, the results are below.
+This buildings has a lot of information recorded about it.
 
-Here I clicked on the building circled in the above picture to result is
-below. This buildings has a lot of information recorded about it.
-
-.. image:: /static/socialisation/identy_results.*
-
-.. note:: *As mentioned before, this information was gathered by the
+.. image:: /static/training/socialisation/044_identifyresults.*
+   :align: center
+.. note:: As mentioned before, this information was gathered by the
    Provincial disaster managers, through an OpenStreetMap  data collection
    program.  They collect important structures and essential information
    about the building, such as name, address, type and building structural
-   information.  Also included was if the building had roof access.*
+   information.  Also included was if the building had roof access.
 
-5. :guilabel:`Zoom back to full extent` using the Zoom Full tool
+4. Click on :guilabel:`Zoom to Layer` - this will get you back to extent of
+   *Estimate building affected*
 
-.. image:: /static/socialisation/zoom_extent.*
 
-About Population which Needs evacuation
+About Population which needs evacuation
 .......................................
 
-6. :guilabel:`Uncheck` the *Estimated buildings affected* and
-   :guilabel:`recheck` one of  *Population which Need evacuation*
+5. In the **Layer list** :guilabel:`Uncheck` the *Estimated buildings affected* and
+   :guilabel:`Check` one of  the *Population which Need evacuation*
 
-7. Again :guilabel:`zoom` into an area of your choice
+6. :guilabel:`Select` *Population which Need evacuation* in the **Layer List** to highlight
+   the layer. It should now be in blue.
 
-.. image:: /static/socialisation/zoomin2.*
+7. :guilabel:`Zoom In` to an area of your choice
 
-8. :guilabel:`Click` once on *Population which Need evacuation* and use the
-   selection tool to select a pixel (square)
-
-.. image:: /static/socialisation/information_tool.*
+8. Use the :guilabel:`Identify Features` tool to select a pixel (square) of the
+   selected *Population which Need evacuation*
 
 Here I clicked on the :guilabel:`light green area` , to find that there is a
-value of 80.6411, which means there are approximately 80 people in one pixel
+value of **80.6411**, which means there are approximately 80 people in one pixel
 (square).
 
-.. image:: /static/socialisation/raster_examine_2.*
+.. image:: /static/training/socialisation/045_examineraster.*
+   :align: center
 
-In this dataset a pixel is 100m by 100m
+.. note:: In this dataset a pixel is 100m by 100m
 
-:guilabel:`Click` on other pixels to find out their value.
+9. Use the :guilabel:`Identify Features` tool to select other pixels to find out
+   their value.
 
-9. :guilabel:`Click` Close
+10. :guilabel:`Close` the **Identify Results** box
 
-10. Is each pixel really 100m by 100m, lets check. Use the
-    :guilabel:`measure line tool`
+11. Is each pixel really 100m by 100m? lets check. Use the :guilabel:`Measure Line` tool
 
-.. image:: /static/socialisation/measure.*
-
-.. note:: *It maybe easier to measure one pixel by zooming in further.*
+.. note:: It maybe easier to measure one pixel by zooming in further.
 
 The answer is yes, a pixel is 100 meter across, and if you measure from top
 to bottom it will also be 100 meter.
+
+.. image:: /static/training/socialisation/046_measuretest.*
+   :align: center
 
 As you can see I got 102 meters but this is only because its very hard to
 click on one corner of the pixel and then the other, unless I zoom in real
 close!
 
-.. image:: /static/socialisation/measure_test.*
+12. :guilabel:`Close` the **Measure** box
 
-11. :guilabel:`Click` Close
+13. Use the :guilabel:`Zoom to Layer` to go back to the full extent of the select layer.
 
-12. :guilabel:`Zoom back` to full extent using the Zoom Full tool
-
-.. image:: /static/socialisation/zoom_extent.*
-
-13. :guilabel:`Uncheck` all layers except
+14. :guilabel:`Uncheck` all layers except:
 
 * buildings
-
 * people
 
 
@@ -143,84 +148,87 @@ Flood Footprint in |project_name|
 Adding a Vector Layer
 .....................
 
-14. :guilabel:`Click` on the Add vector tool
+15. Use the :guilabel:`Add Vector` tool
 
-.. image:: /static/socialisation/add_vector.*
+16. Use :guilabel:`Browse` to navigate to the *data* folder within
+*InaSAFE Projects*, :guilabel:`Select` *flood_osm_bpbd18113_jakarta.shp*,
+:guilabel:`Open` in the **Open an OGR Support** window and :guilabel:`Open`
+again in the **Source** window.
 
-15. :guilabel:`Click` on browse and navigate to |project_name| projects/data/
-    and select *flood_osm_bpbd18113_jakarta.shp* - click Open,
-    then click Open again.
-
-.. image:: /static/socialisation/jakarta18113_added.*
+.. image:: /static/training/socialisation/047_jakarta18113.*
+   :align: center
 
 This dataset is the subvillage boundaries for Jakarta,
 during the floods in January this year the Provincial disaster mangers
 collected information about the flooding, one of which was the location of
 the flooded area by sub-village boundary.
 
-Lets examine this data by opening up its :guilabel:`attribute table`
+.. note:: The InaSAFE panel is currently showing a warning "Layer keywords missing:"
+   we will address this concern in later steps.
 
-.. image:: /static/socialisation/openattributetable.*
+Lets examine this data by opening up its *attribute table*
 
-16. In the layer list :guilabel:`Right click` on the
-    *flood_osm_BPBD18113_jakarta* layers  and select *Open Attribute Table*
+17. Make sure the *flood_osm_bpbd18113_jakarta* is highlighted (blue line in the
+**Layer List**). Select the :guilabel:`Open Attribute Table` tool.
 
-.. image:: /static/socialisation/attribute_table.*
+.. image:: /static/training/socialisation/048_attributetable.*
+   :align: center
 
-OBJECTID:  Feature ID
+::
 
-KAB_NAME:  District
+  :OBJECTID:  Feature ID
+  :KAB_NAME:  District
+  :KEC_NAME:  Sub-district
+  :KEL_NAME:  Village
+  :RW:        Sub-village
+  :affected:  1= affected
+  NULL = not affected
 
-KEC_NAME:  Sub-district
+.. note:: This is the same information as the Identify Feature tool, but
+   instead of just viewing one object information, you can see all of the
+   object at once.
 
-KEL_NAME:  Village
-
-RW:        Sub-village
-
-affected:  1= affected,
-           NULL = not affected
-
-17. :guilabel:`Close` the Attribute table
+18. :guilabel:`Close` the Attribute table
 
 Symbolising Vector
 ..................
 
-Now we are going to colour only the area that were affected
+Now we are going to stylise the subvillage administration boundary to only see the
+affected = 1 areas.
 
-18. :guilabel:`Double click` on *flood_osm_BPBD18113_jakarta* layers - this
-    will open up the properties table
+19. :guilabel:`Double click` on *flood_osm_BPBD18113_jakarta* layers - this
+will open up the properties table
 
-19. Make sure you are on the style tab
+20. Navigate to the style tab
 
-20. Select :guilabel:`Categorised`
+.. image:: /static/training/socialisation/049_styletab.*
+   :align: center
 
-.. image:: /static/socialisation/select_category_2.*
 
-21. :guilabel:`Select` attribute from the Column
+21. Follow the below steps to stylise the subvillage boundaries as illustrated in the
+picture and table below.
 
-.. image:: /static/socialisation/select_attribute.*
+==========     ================================================
+**Number**     **Step**
+----------     ------------------------------------------------
+1              Select "Catergorized" from the drop down menu
+2              Select "affected" from the Column drop down menu
+3              Click "Classify"
+4              Highlight the row light blue "0 0"
+5              Click "Delete"
+6              Highlight the row dark blue "    "
+7              Click "Delete"
+8              Confirm you only have 1 row left
+9              Close the **Layer Properties** window
+==========     ================================================
 
-22. Click on :guilabel:`Classify` (circle 1)
-
-.. image:: /static/socialisation/classify_2.*
-
-23. :guilabel:`Click` on 0  (circle 2)
-
-24. :guilabel:`Click Delete` (circle 3)
-
-25. :guilabel:`Click` on  _ (circle 4)
-
-26. :guilabel:`Click Delete`  (circle 3)
-
-27. Confirm that you only have 1 left
-
-.. image:: /static/socialisation/1_left.*
-
-28. :guilabel:`Click OK` (circle 6)
+.. image:: /static/training/socialisation/050_layerproperties.*
+   :align: center
 
 Below are the results
 
-.. image:: /static/socialisation/result.*
+.. image:: /static/training/socialisation/051_styleflood.*
+   :align: center
 
 You have now symbolised your first layer!  You can see only the subvillage
 areas that were flooded on the 18th of January! Now, can we use this hazard
@@ -229,59 +237,65 @@ layer in |project_name|?
 Adding Keywords
 ...............
 
-29. :guilabel:`Read` through the error message (that occurs when you
-    highlight *flood_osm_BPBD18113_jakarta* layer).  |project_name| has
-    identified that the layer does not have a keyword file.
+22. As previously pointed out the |project_name| panel is showing a warning.
+It is explaining to us that the layer highlight *flood_osm_BPBD18113_jakarta*
+has no keywords. Lets follow the instructions and select the
+:guilabel:`InaSAFE Keyword` tool.
 
-.. image:: /static/user-docs/error-display.*
+.. image:: /static/training/socialisation/052_keyword.png
+   :align: center
 
-30. :guilabel:`Click` on the keyword editor
 
-.. image:: /static/socialisation/pencil.*
+23. In the *Keywords Editor* window you have an option of changing the Title, Category and
+Subcategory. We are going to do just that by following the steps in the table below
 
-31. :guilabel:`Fill out` the title as
-    **Jakarta flooding on the 18th January 2013**
+==============  	================================================
+**Quick edit**	 	**Variable**
+--------------  	------------------------------------------------
+Title				:kbd:`Jakarta flooding on the 18th January 2013`
+Category			Hazard
+Subcategory			flood[wet/dry]
+==============  	================================================
 
-.. image:: /static/socialisation/keyword_editor.*
+.. image:: /static/training/socialisation/053_keywordedited.*
+   :align: center
 
-32. For the Category :guilabel:`check` **Hazard**
-
-33. For Subcategory :guilabel:`select` **flood[wet/dry]**
-
-34. :guilabel:`Click OK`
+24. Close the Keyword editor: :guilabel:`OK`
 
 Lets run |project_name| again with this new flood hazard footprint
 
+For more information about Keywords have a look in
+:doc:`../../user-docs/application-help/keywords`
 
 Buildings within affected subvillages
 .....................................
 
-35. :guilabel:`Check` that |project_name| has the following in the drop-down
-    boxes
+25. Confirm that the |project_name| window has the following its drop down menu.
 
-.. image:: /static/socialisation/inasafe_floodpolygon.*
+.. image:: /static/training/socialisation/054_inasafepanel.*
+   :align: center
 
 * Jakarta flooding on the 18th January 2013
-
 * buildings
-
 * Be Flooded
 
-36. :guilabel:`Click Run`
+26. |project_name|:guilabel:`Run`
 
 .. note:: *This may take about a minute to run*
 
-37. How many estimated buildings were flooded?
+.. todo:: How many estimated buildings were flooded? **Answer**  ___________________
 
-Answer  _____________________________________
+27. Read through the |project_name| results, how different is this to the previous
+|project_name| building analysis?
 
-38. Take some time to :guilabel:`examine` the results,
-    read through the |project_name| window
+.. todo:: Why are the results so different? *Consider the diferences between
+   the hazard layers, model vs footprint*. **Answer**  ______________ Which
+   hazard is more accurate, or are there other factors to consider?
 
-39. :guilabel:`Click InaSAFE Print`, save accordingly
+28. |project_name|:guilabel:`Print`, save accordingly
 
 Now that you have run |project_name| to find out how many buildings might be
-affected, lets find out how many people.
+affected by the affected subvillage boundaries, lets find out how many people.
 
 Evacuation as a percentage
 ..........................
@@ -294,43 +308,45 @@ Evacuation as a percentage
 
 Instead of determining how many people will be evacuated by  a spatial area,
 this scenario used the affected population. |project_name| asks the user to
-input a percentage of the affected population that could be evacuated.
+input a percentage of the affected population that may need evacuating.
 
-40. :guilabel:`Un-check` buildings in the layer panel and recheck people
+29. :guilabel:`Uncheck` *buildings* in the **Layer List** and :guilabel:`Check` *people*
 
-41. :guilabel:`Check` that |project_name| has the following in the drop-down
-    boxes
+30. Confirm that the |project_name| window has the following its drop down menu.
 
 * Jakarta flooding on the 18th January 2013
-
 * people
-
 * Need Evacuation
 
-42. :guilabel:`Click` on the impact function editor (pencil)
+31. To configure the impact function select :guilabel: `...`
+*Configure Impact Function Parameter* which is found beside the
+*Need Evacuation*
 
-.. image:: /static/socialisation/inasafe_pop.*
+.. image:: /static/training/socialisation/055_inasafeconfigure.png
+   :align: center
 
-43. As you can see the default is 1, :guilabel:`Click OK`
+.. note:: Within the *Configure Impact Function Parameter* window you are
+   able to change not only the percentage of evacuated people but also the
+   ratio of youth/adult/elder and the amount of minimum needs per person per
+   week.  *Improvement:* need to add units to minimum needs
 
-.. image:: /static/socialisation/evacuation_per.*
+32. In the options tab you can see that default is 1, for this first analysis
+we will keep this figure. :guilabel:`OK`
 
-44. :guilabel:`Run` |project_name|
+33. :guilabel:`Run` |project_name|
 
 .. note:: *This may take about a minute to run*
 
-45. How many people were evacuated?
+.. todo:: How many people were evacuated?
+   **Answer** __________________________
+   How many people were affected?
+   **Answer** __________________________
 
-Answer  _______________________________________
+34. Read through the |project_name| results, how different is this to the previous
+|project_name| people analysis?
 
-46. How many people were affected?
+35. :guilabel:`Print` |project_name|, save accordingly
 
-Answer  _______________________________________
-
-47. Take some time to examine the results, read through the |project_name|
-    window
-
-48. :guilabel:`Click` |project_name| Print, save accordingly
 
 Comparing Results - Optional
 ----------------------------
@@ -339,7 +355,7 @@ You have now completed the following runs
 
 =============  =============  =============  ============  =============  ===================  =============
 **Hazard**     **Threshold**  **Data Type**  **Exposure**  **Data Type**  **Impact function**  **Data Type**
-=============  =============  =============  ============  =============  ===================  =============
+-------------  -------------  -------------  ------------  -------------  -------------------  -------------
 flood model    1.0m           Raster         People        Raster         Need Evacuation
 flood model    0.8m           Raster         People        Raster         Need Evacuation
 flood model    1.0m           Raster         Buildings     Vector         Be flooded
@@ -347,13 +363,70 @@ flood 180113                  Vector         Buildings     Vector         Be flo
 flood 180113   1%             Vector         People        Raster         Need Evacuation
 =============  =============  =============  ============  =============  ===================  =============
 
+36. Complete the last column of the above table. For more information on data type
+go to :doc:`rastervsvector`
 
-49. Please :guilabel:`complete` the Data Type for each impact layer you have
-    created through |project_name|
+.. todo:: How different are the results? **Answer** __________________________,
+   Why are they different? **Answer** __________________________
 
-50. :guilabel:`Compare` between results, 1. How different are the results,
-    2. Why are they different?
 
-1. Answer _____________________________________________________
+Basic Aggregation
+----------------------------
 
-2. Answer _____________________________________________________
+Going through this training, you probably thinking thats great but what if I want to
+breakdown the impacted results by an administration boundary, in this section we show you
+how.
+
+First we need to add an administration boundary, the boundary we are going to use is the
+mainland district boundaries of Jakarta (Jakarta has 6 districts, but we will be only
+looking at 5 because the 6th is the Thousand Island -as the name suggest its a huge amount
+of islands!)
+
+36. Use the :guilabel:`Add Vector` button
+
+37. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE Projects*,
+:guilabel:`Select` *district_osm_jakarta.shp*, :guilabel:`Open` in the **Open an
+OGR Support** window and :guilabel:`Open` again in the **Source** window.
+
+.. image:: /static/training/socialisation/056_district.png
+   :align: center
+
+38. This layer already has its keywords filled out, lets go through these:
+
+	Category: postprocessing - *Layer to be used after impact is derived*
+	Aggregation attribute: KAB_NAME - *The name of the attribute you wan to aggregate*
+	Subcategory: aggregation
+	Title: District's of Jakarta
+	Source: OpenStreetMap
+	Female ratio attribute: PEREMPUAN - *Attribute name of female percentage per district*
+
+By looking at the district layer attribute table you can see that the names of the
+attribute correspond.
+
+.. image:: /static/training/socialisation/057_districtattribute.png
+   :align: center
+
+39. :guilabel:`Select` the *District's of Jakarta* from the drop down menu under
+*Aggregate results by*, and check that the other sections are field out according to
+the image below.
+
+.. image:: /static/training/socialisation/058_aggregationselect.png
+   :align: center
+
+40. :guilabel:`Run` |project_name|
+
+.. note:: *This may take about a minute to run*
+
+.. image:: /static/training/socialisation/059_aggregationresults.png
+   :align: center
+
+41. Lets see what the results would be for buildings, change How many *people* to How
+many *buildings*
+
+42. :guilabel:`Run` |project_name|
+
+.. note:: *This may take about a minute to run*
+
+.. image:: /static/training/socialisation/060_buildingaggregationresult.*
+   :align: center
+

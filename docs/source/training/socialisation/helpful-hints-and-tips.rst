@@ -4,7 +4,8 @@
   compact as possible. The Option Section should be kept up to date in the
   User manual and should be copy/pasted after updating it there.
 
-======================
+.. _helpful-hints-and-tips:
+
 Helpful Hints And Tips
 ======================
 **Objectives:**
@@ -19,7 +20,6 @@ Participants are able to:
 
 * customise the |project_name| option menu
 * know where to go for help
-
 
 You have now gone through |project_name| using 4 different natural hazards,
 changing a variety of parameters and analysing the results. This chapter has
@@ -45,12 +45,13 @@ the |project_name| website you can find not only documentation on training,
 but all user documentation and developer documentation.  This website is also
 updated with every new release.
 
-.. image:: /static/socialisation/inasafe_mainpage.jpg
+.. image:: /static/training/socialisation/077_website.*
+   :align: center
 
 Click on the :guilabel:`Content` to find out more
 
-.. image:: /static/socialisation/inasafe_content.jpg
-
+.. image:: /static/training/socialisation/078_websitedoc.*
+   :align: center
 
 Frequently Asked Questions
 --------------------------

@@ -16,17 +16,16 @@ emergency managers need to answer questions like:
 - which hospitals can still take patients; and
 - which roads will be closed?
 
-Conceptually |project_name| combines one exposure layer (e.g. buildings) with
-one hazard scenario (e.g. flooding) and returns a spatial impact layer along with
-textual statistical summary and action questions.
-
+Conceptually |project_name| combines one exposure layer (e.g. location of buildings) with
+one hazard scenario (e.g. flooding footprint) and returns a spatial impact layer along 
+with textual statistical summary and action questions.
 
 |project_name| is framed around questions such as:
 
 "In the event of **a flood similar to the 2007 Jakarta event** how many
-*people* might need *evacuating*."
+**people** might need **evacuating**."
 
-.. image:: /static/socialisation/inasafe_concept.png
+.. image:: /static/training/socialisation/001_inasafe_concept.png
 
 |project_name| is also able to aggregate the impact results by administration
 boundary and provided breakdown information about gender and age of affected.
@@ -124,10 +123,10 @@ Aggregation.
 Hazard
 ......
 
-  Hazard can be seen as a condition, phenomenon, or human activity that
-  potentially cause victims, losses or destruction to social structure and
-  environment. Events or phenomena that frequently are seen as hazard
-  potentials include earthquakes, tsunamis, floods, landslides, tornadoes etc.
+Hazard can be seen as a condition, phenomenon, or human activity that
+potentially cause victims, losses or destruction to social structure and
+environment. Events or phenomena that frequently are seen as hazard
+potentials include earthquakes, tsunamis, floods, landslides, tornadoes etc.
 
 For |project_name|, hazard data refers to a singular disaster scenario (i.e.
 a Mw 7.8 earthquake or a volcanic eruption) that has been developed through
@@ -166,10 +165,10 @@ The input Hazard layer must have:
 Exposure
 ........
 
-  For |project_name|, exposure data is refers to as population density (number
-  of people found in a certain area) or important infrastructure (buildings,
-  bridges etc). that become a focus of interest when calculating the impact of
-  a specific hazard.
+For |project_name|, exposure data is refers to as population density (number
+of people found in a certain area) or important infrastructure (buildings,
+bridges etc). that become a focus of interest when calculating the impact of
+a specific hazard.
 
 +--------------------------+-------------------------------------------+
 |       Exposure           |                  Type                     |
@@ -196,12 +195,13 @@ The input Exposure layer must have:
 Aggregation
 ............
 
-  For |project_name| an aggregation layer is division of the hazard extent by
-  boundaries not relating to the hazard, more specifically administration
-  boundaries such as districts, villages etc. This allows for targeted response
-  by the local governments, and an understanding of the division of impacted
-  output. Due to time constraints aggregation will only be included within the
-  optional section.
+For |project_name| an aggregation layer is division of the hazard extent by
+boundaries not relating to the hazard, more specifically administration
+boundaries such as districts, villages etc. Instead of just knowing the total 
+number of people affected by the hazard, |project_name| is able to aggregate
+allowing the user know how many people are affected in a certain administration 
+area. Hence the local governments will be able understand the impact to their
+specific area.
 
 Impact Function
 ---------------
@@ -227,17 +227,18 @@ how much of each item is needed to withstand a major disaster.
 Additionally an Impact functions can be configured ‘on the fly’ during the
 analysis.  This will be touched on during the training exercise.
 
-Keywords:
-.........
+Keywords
+........
 
-  An Impact function will automatically be chosen depending on the keywords
-  that has been allocated to the input layers. The purpose of the keywords file
-  is to provide additional metadata needed by the impact functions. For
-  example, the keywords file will indicate whether a given dataset should be
-  treated as a hazard or an exposure layer. It is also used to indicate the
-  context of the layer (e.g. flood, earthquake).
+An Impact function will automatically be chosen depending on the keywords
+that has been allocated to the input layers. The purpose of the keywords file
+is to provide additional metadata needed by the impact functions. For
+example, the keywords file will indicate whether a given dataset should be
+treated as a hazard or an exposure layer. It is also used to indicate the 
+context of the layer (e.g. flood, earthquake).
 
-**Available Impact Functions**
+Available Impact Functions
+..........................
 
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 |       Hazard      |   How many     |         might            |                              output                                |
@@ -273,4 +274,6 @@ the output data will be both a spatial layer indicating where people are (by
 density) and the non-spatial layer will have statistics on the minimum needs
 based on the number of people that ‘need evacuating’.
 
-.. image:: /static/socialisation/output_data.png
+.. image:: /static/training/socialisation/002_output_data.png
+
+
