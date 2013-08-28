@@ -8,21 +8,19 @@ e.g.::
 .. note:: Vagrant tasks will only run if they @task decorator is used on
    the function. See show_environment function below.
 
+Tim Sutton, Jan 2013
 """
-# Tim Sutton, Jan 2013
 
 import os
-from fabric.api import env, task, fastprint, hide, run, sudo, cd, put
+from fabric.api import task, fastprint, run, sudo, cd, put
 from fabric.contrib.files import contains, exists, append, upload_template
-from fabric.colors import red, green, blue
+from fabric.colors import green, blue
 import fabtools
 from fabtools import require
-# noinspection PyUnresolvedReferences
 from fabgis.qgis import install_qgis1_8
 from fabgis.jenkins import jenkins_deploy_website, install_jenkins
 from fabgis.git import update_git_checkout
 from fabgis.inasafe import setup_inasafe
-from fabgis.sphinx import setup_latex
 # noinspection PyUnresolvedReferences
 from fabgis.docker import setup_docker, create_docker_container
 from fabgis.sphinx import setup_latex, setup_sphinx, setup_transifex
@@ -31,8 +29,8 @@ from fabgis.sphinx import setup_latex, setup_sphinx, setup_transifex
 from fabtools.vagrant import vagrant
 
 # Global options
-repo_path = os.path.join(env.home, 'dev', 'python')
-code_path = os.path.join(env.repo_path, 'inasafe-doc')
+repo_path = os.path.join(os.path.dirname(__file__), 'dev', 'python')
+code_path = os.path.join(repo_path, 'inasafe-doc')
 web_directory = os.path.join('var', 'www', 'inasafe-org')
 
 
@@ -52,7 +50,6 @@ def build_docs(branch='master'):
     .. note:: Using the branch option will not work for branches older than 1.1
     """
     fastprint(blue('Running build docs task.'))
-    _setup_env()
     setup_inasafe()
     # Needed for when running on headless servers
     fabtools.require.deb.package('xvfb')
@@ -69,8 +66,7 @@ def build_docs(branch='master'):
         branch=branch)
     setup_latex()
 
-    dir_name = os.path.join(env.repo_path, env.repo_alias)
-    with cd(dir_name):
+    with cd(code_path):
         # build the Documentation
         run('chmod +x scripts/post_translate.sh')
         run('xvfb-run scripts/post_translate.sh')
@@ -87,24 +83,13 @@ def setup_docs_web_site(branch='master'):
     build_docs()
 
     fabtools.require.deb.package('apache2')
-    code_path = env.code_path
 
-    # if hostname = jenkins or vagrant or live site then
-    # web_directory = /var/www/inasafe-documentation
-    # for now we set dir just for jenkins anyway
-    # probably we should just set a symlink
-
-    jenkins_webdir = '/var/www/inasafe-documentation'
-    if not exists(jenkins_webdir):
-        sudo('mkdir -p %s/pdf' % jenkins_webdir)
-        sudo('chown -R %s.%s %s' % (env.user, env.user, jenkins_webdir))
-        sudo('chmod -R 777 %s' % jenkins_webdir)
-
-    apache_conf_template = 'inasafe-docs.conf.templ'
+    apache_conf_template = 'inasafe-doc.conf.templ'
 
     if not exists(web_directory):
         sudo('mkdir -p %s/pdf' % web_directory)
-        sudo('chown -R %s.%s %s' % (env.user, env.user, web_directory))
+        # TODO: Fix perms below
+        #sudo('chown -R %s.%s %s' % (user, user, web_directory))
 
     apache_path = '/etc/apache2/sites-available/'
 
@@ -117,7 +102,7 @@ def setup_docs_web_site(branch='master'):
         apache_conf_template))
 
     context = {
-        'server_name': env.doc_site_name,  # Web Url e.g. foo.com
+        'server_name': 'inasafe.org',  # Web Url e.g. foo.com
         'web_master': 'info@inasafe.org',  # email of web master
         'document_root': web_directory,  # Content root .e.g. /var/www
     }
@@ -142,7 +127,7 @@ def setup_docs_web_site(branch='master'):
     # Add a hosts entry for local testing - only really useful for localhost
     hosts = '/etc/hosts'
     if not contains(hosts, 'inasafe-docs'):
-        append(hosts, '127.0.0.1 %s' % env.doc_site_name, use_sudo=True)
+        append(hosts, '127.0.0.1 inasafe-doc.localhost', use_sudo=True)
 
     sudo('a2ensite inasafe-docs.conf')
     sudo('a2enmod rewrite')
