@@ -208,7 +208,7 @@ def setup_docs_web_site(branch='master'):
     if not exists(web_directory):
         require.directory('mkdir -p %s/pdf' % web_directory, True, 'web')
         # TODO: Fix perms below
-        #sudo('chown -R %s.%s %s' % (user, user, web_directory))
+    sudo('chown -R %s.%s %s' % ('web', 'web', web_directory))
 
     apache_path = '/etc/apache2/sites-available/'
 
