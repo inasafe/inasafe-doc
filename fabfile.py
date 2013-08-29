@@ -1,9 +1,42 @@
 # ~/fabfile.py
 """A Fabric file for carrying out various administrative tasks with InaSAFE.
 
-e.g.::
+There are four use cases.
+
+1) The first is where you want to deploy into a docker container running on a
+remote server and you don't have direct ssh access into the container. In
+that case e.g.::
+
+    fab -H foo:1234 setup_docs_web_proxy
+
+Will log in to the remote server, install docker, create a container,
+create a user named 'web' in the container and install all needed software
+needed to build the docs. It will then host a web site inside the container.
+Lastly it will create a small apache vhost on the container's host that
+proxies traffic into and out of the container.
+
+2) In the second case you may want to install everything into a vagrant box or
+directly on to a remote server. In that case the typical use would be::
 
     fab -H foo:1234 setup_docs_web_site
+
+That sets up the docs as a publicly hostable web site as well as building
+them.
+
+3) In the third case, you may want to only build the docs on a system and
+forgo hosting them as a web site. In that case you may do something like this::
+
+
+    fab -H foo:1234 build_docs
+
+
+That will ensure that everything needed to build the docs is installed and
+then check out and build the docs.
+
+4) In the fourth case, you want to deploy a jenkins job to regularly build
+the docs::
+
+    fab -H foo:1234 setup_jenkins setup_jenkins_jobs
 
 .. note:: Vagrant tasks will only run if they @task decorator is used on
    the function. See show_environment function below.
