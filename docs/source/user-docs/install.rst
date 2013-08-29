@@ -1,11 +1,14 @@
 .. _installation:
 
+
 Installation
 ============
 
+
 .. note::
-   |project_name| is a plugin for `Quantum GIS <http://qgis.org>`_ (QGIS), so
+   |project_name| is a plugin for Quantum GIS (|QGIS|), so
    QGIS must be installed first via QGIS Python Plugin Repository
+
 
 To install |project_name|, use the plugin manager in QGIS:
 
@@ -13,6 +16,53 @@ To install |project_name|, use the plugin manager in QGIS:
 
 Search for '|project_name|', select it and click the install button.
 The plugin will now be added to your plugins menu.
+
+For more information :doc:`../training/socialisation/introduction-of-qgis`
+
+
+From InaSAFE test repository
+----------------------------
+
+
+During development of an InaSAFE version, developers make a test version of
+the software for people to trial. Here are the instructions on how to install
+this test version.
+
+1. :menuselection:`Plugins --> Fetch Python Plugins`
+2. :guilabel:`Click` on **Options** tab and :guilabel:`Check` *Show all plugins, even those marked as experimental*
+
+.. image:: /static/user-docs/installer_options.*
+   :align: center
+
+3. :guilabel:`Click` on **Repository** tab and :guilabel:`Add` a new repository
+
+.. image:: /static/user-docs/python_installer.*
+   :align: center
+
+4. Type the following into the Repository details
+
+**Name:** 	InaSAFE Test
+**URL:**	http://expertmental.inasafe.org/
+
+.. image:: /static/user-docs/repository_details.*
+   :align: center
+
+5. :guilabel:`OK`
+
+6. You should now have 2 repositories connected, :guilabel:`Click` on **Plugins**
+
+.. image:: /static/user-docs/connected.*
+   :align: center
+
+7. :guilabel:`Upgrade plugin`
+
+.. image:: /static/user-docs/upgradeable.*
+   :align: center
+
+8. InaSAFE has now been upgraded, all you need to do now is restart Quantum GIS
+
+.. image:: /static/user-docs/restart.*
+   :align: center
 
 From Zip Archive
 ----------------
@@ -59,3 +109,4 @@ System Requirements
  - A standard PC with at least 4GB of RAM running Windows, Linux or Mac OS X
  - The Open Source Geographic Information System QGIS (http://www.qgis.org).
    |project_name| requires QGIS version 1.7 or newer.
+
