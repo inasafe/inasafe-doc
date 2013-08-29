@@ -151,9 +151,9 @@ Adding a Vector Layer
 15. Use the :guilabel:`Add Vector` tool
 
 16. Use :guilabel:`Browse` to navigate to the *data* folder within
-*InaSAFE Projects*, :guilabel:`Select` *flood_osm_bpbd18113_jakarta.shp*,
-:guilabel:`Open` in the **Open an OGR Support** window and :guilabel:`Open`
-again in the **Source** window.
+   *InaSAFE Projects*, :guilabel:`Select` *flood_osm_bpbd18113_jakarta.shp*,
+   :guilabel:`Open` in the **Open an OGR Support** window and :guilabel:`Open`
+   again in the **Source** window.
 
 .. image:: /static/training/socialisation/047_jakarta18113.*
    :align: center
@@ -169,7 +169,7 @@ the flooded area by sub-village boundary.
 Lets examine this data by opening up its *attribute table*
 
 17. Make sure the *flood_osm_bpbd18113_jakarta* is highlighted (blue line in the
-**Layer List**). Select the :guilabel:`Open Attribute Table` tool.
+   **Layer List**). Select the :guilabel:`Open Attribute Table` tool.
 
 .. image:: /static/training/socialisation/048_attributetable.*
    :align: center
@@ -195,7 +195,7 @@ Now we are going to stylise the subvillage administration boundary to only see t
 affected = 1 areas.
 
 19. :guilabel:`Double click` on *flood_osm_BPBD18113_jakarta* layers - this
-will open up the properties table
+    will open up the properties table
 
 20. Navigate to the style tab
 
@@ -204,7 +204,7 @@ will open up the properties table
 
 
 21. Follow the below steps to stylise the subvillage boundaries as illustrated in the
-picture and table below.
+    picture and table below.
 
 ==========     ================================================
 **Number**     **Step**
@@ -236,17 +236,17 @@ Adding Keywords
 ...............
 
 22. As previously pointed out the |project_name| panel is showing a warning.
-It is explaining to us that the layer highlight *flood_osm_BPBD18113_jakarta*
-has no keywords. Lets follow the instructions and select the
-:guilabel:`InaSAFE Keyword` tool.
+   It is explaining to us that the layer highlight *flood_osm_BPBD18113_jakarta*
+   has no keywords. Lets follow the instructions and select the
+   :guilabel:`InaSAFE Keyword` tool.
 
 .. image:: /static/training/socialisation/052_keyword.png
    :align: center
 
 
 23. In the *Keywords Editor* window you have an option of changing the **Title**, 
-**Category** and **Subcategory**. We are going to do just that by following the 
-steps in the table below:
+   **Category** and **Subcategory**. We are going to do just that by following the 
+   steps in the table below:
 
 ==============  	================================================
 **Quick edit**	 	**Variable**

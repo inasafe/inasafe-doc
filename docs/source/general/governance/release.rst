@@ -40,9 +40,11 @@ so has adopted the conventions used in QGIS:
 * Major releases are versions that provide significant improvements to the software. 
 A major release may change both the user interface and the underlying programming 
 interface. Major releases are numbered as 1.0.0, 2.0.0, …
+
 * Minor releases provide extensions and improvements to the software. They possibly 
 modify the user interface but must maintain compatibility with the existing programming 
 interface. Minor releases are numbered as 1.1.0, 1.2.0, …
+
 * Point releases contain corrections of errors, optimisations and small improvements 
 that maintain compatibility with both the user interface and the programming interface. 
 Point releases are numbered as 1.1.1, 1.1.2, …

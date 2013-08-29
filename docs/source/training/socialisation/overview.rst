@@ -231,7 +231,7 @@ how much of each item is needed to withstand a major disaster.
 
 Additionally an impact functions can be configured ‘on the fly’ during the
 analysis.  This will be touched on during the training exercise.
-:ref:`impact_functions`
+:doc:`../../user-docs/application-help/impact-functions`
 
 
 

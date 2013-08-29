@@ -4,7 +4,7 @@ Development under Gnu/Linux
 ===========================
 
 |project_name| is written in python and runs as a plugin in
-`QGIS <http://qgis.org>`_.
+|QGIS|.
 
 
 Quick Installation Guide - Linux (Debian based)
