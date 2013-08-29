@@ -20,10 +20,11 @@ If you cannot find these issues happening anymore, please report back.
    news
    activities
    sponsors
+   governance/index
    scientific-references
    faq
    screenshots
    known_issues
    changelog
-   governance/index
+   
 
