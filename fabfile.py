@@ -24,7 +24,10 @@ from fabgis.git import update_git_checkout
 from fabgis.inasafe import setup_inasafe
 # noinspection PyUnresolvedReferences
 from fabgis.docker import (
-    setup_docker, create_docker_container, get_docker_port_mappings)
+    setup_docker,
+    create_docker_container,
+    get_docker_port_mappings,
+    current_docker_container)
 from fabgis.sphinx import setup_latex, setup_sphinx, setup_transifex
 from fabgis.system import create_user
 # Don't remove even though its unused
@@ -83,16 +86,14 @@ def setup_web_user():
 
 
 @task
-def setup_docs_web_proxy(container_id=None):
+def setup_docs_web_proxy():
     """Set up a mod proxy based vhost to forward web traffic to internal host.
 
     If container_id is none, it will also install docker and set up the
     entire documentation web site inside that docker container.
 
-    :param container_id: A docker hash for a container hosting the site.
-    :type container_id: str
     """
-
+    container_id = current_docker_container()
     if container_id is None:
         setup_docker()
         container_id = create_docker_container(image='fabgis/sshd')
