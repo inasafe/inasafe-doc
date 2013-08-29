@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-15 14:10\n"
+"POT-Creation-Date: 2013-08-29 15:39\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,38 +18,58 @@ msgstr ""
 
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:8
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:18
-# ea64959df7ea433d9b521869a15c709c
-# ba2c1894b71b4a718962ba218ff187c1
+# 823c94d4d2834073a193d6e4cd3b8107
+# 7810acce4a294b12884f66c30ad75c37
 msgid "OpenStreetMap Downloader"
 msgstr ""
 
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:10
-# 8ce5ad779b9c46d6b0448de2e698a1a1
+# 66efe35c566f457aa9778fee769ae251
 msgid "This tool will fetch building ('structure') data from the OpenStreetMap project for you."
 msgstr ""
 
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:20
-# 91f22f93560145649da883d00233b3ef
-msgid "The downloaded data will have |project_name| keywords defined and a default QGIS style applied. To use this tool effectively:"
+# eb91691960c443eebf18abe56504b827
+msgid "InaSAFE supports the use of building data in various impact functions. In particular we support building footprints sourced from the `OpenStreetMap <https://openstreetmap.org>`_ project (OSM). The tool requires internet connection as it fetches the data via a web service running on `Linfiniti's OSM Reporter <http://osm.linfiniti.com>`_ web site."
 msgstr ""
 
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:23
-# 97c787ba6a264ca1b638d43916b51420
-msgid "To use this tool effectively:"
-msgstr ""
-
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:25
-# d27dde8eee4f43e8a8641c939f258f07
-msgid "Use QGIS to zoom in to the area for which you want building data to be retrieved. Check the output directory is correct. Note that the saved dataset will be called buildings.shp (and its associated files)."
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:26
+# b65d2425f8e2433dad979130b6cf7eda
+msgid "The data, once downloaded will be available to you as a shapefile. A style file is automatically created so that it symbolises nicely in QGIS. In addition, the correct keyword metadata is created for the downloaded dataset so that it can be used directly in InaSAFE impact scenario analyses."
 msgstr ""
 
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:31
-# 5797fe1fa9494d508e57e5b3a0ffe7e1
-msgid "If a dataset already exists in the output directory it will be overwritten. This tool requires a working internet connection and fetching buildings will consume your bandwidth."
+# e02a5f6b70434efe8a32a95e1bb5426f
+msgid "**Note:** The building downloader service has limitations as to the size of datasets that can be retrieved. As such you may experience issues trying to fetch e.g. country wide building footprint data. Generally datasets at a city level and below should work well."
 msgstr ""
 
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:36
-# b1d4d14cc5c34145af5a8d5ad9eeaea8
+# 9212a9cfe6b64c3ea45595057e587d42
+msgid "To use this tool effectively:"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:38
+# 6f275a4575154a56bf56c11d06ad2b36
+msgid "Use QGIS to zoom in to the area for which you want building data to be retrieved."
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:40
+# ce4fde6fe9ff4005a14f4d60d5875c70
+msgid "Check the output directory is correct. Note that the saved dataset will be called buildings.shp (and its associated files)."
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:42
+# f4355f1e2fc44ac0bb24abd132f536c0
+msgid "Press the :guilabel:`OK Button` and wait for the data to be retrieved."
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:46
+# 40d4395215c74c95834effc14bbb0d11
+msgid "If a dataset already exists in the output directory it will be overwritten. This tool requires a working internet connection and fetching buildings will consume your bandwidth."
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:51
+# d5c43f30672d4c1c8d1e54ec4ab10748
 msgid "Downloaded data is copyright OpenStreetMap contributors (click for more info)."
 msgstr ""
 

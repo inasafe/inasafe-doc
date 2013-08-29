@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-15 14:10\n"
+"POT-Creation-Date: 2013-08-29 15:39\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,39 +17,64 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/user-docs/application-help/converter.rst:8
-#: ../../source/user-docs/application-help/converter.rst:18
-# c5cae014069c49aca1953f75562f2d0d
-# 576441802e3044c29a02faafe7204817
+#: ../../source/user-docs/application-help/converter.rst:25
+# 031a0ace4bb541589682cd145ab64635
+# a461540f9d3f4b2ea41f1d15a4764e38
 msgid "Converter"
 msgstr ""
 
 #: ../../source/user-docs/application-help/converter.rst:10
-# f34adac2c7cd4f1594ffed7eceb013c5
-msgid "The imported file can be used in InaSAFE as an input for impact functions that require an earthquake layer."
+# c8f7f0fd94a746568c719a2528a6b2a6
+msgid "Shakemaps are useful for carrying out contingency planning for the event of an earthquake. Normally these are distributed as grid.xml files which are not usable in |project_name| or QGIS. This tool will import a grid.xml file as a GEOTIFF file from where it can be used within |project_name|."
 msgstr ""
 
-#: ../../source/user-docs/application-help/converter.rst:20
-# ae07499bebda4f31bd7f3c1e6ca3d43c
-msgid "To use this tool effectively:"
-msgstr ""
-
-#: ../../source/user-docs/application-help/converter.rst:22
-# 88eee6c1262043b2b60689e73e05356a
-msgid "Select a grid.xml for the input layer."
-msgstr ""
-
-#: ../../source/user-docs/application-help/converter.rst:23
-# 9c1ec36bfd6346539e5e0f74f5089a00
-msgid "Choose where to write the output layer to."
-msgstr ""
-
-#: ../../source/user-docs/application-help/converter.rst:24
-# 9d1759419de84446a039cb622329f700
-msgid "Choose the interpolation algorithm that should be used when converting the xml grid to a raster. If unsure keep the default."
+#: ../../source/user-docs/application-help/converter.rst:15
+# 420a1cb851404abfb2f3d7d8ef7e910f
+msgid "Two different interpolation algorithms can be used during the import process - ``Nearest Neighbour`` and ``Inverse Distance``. After the conversion, the tool automatically creates |project_name| keyword metadata for the layer so that it can be used immediately for analysis."
 msgstr ""
 
 #: ../../source/user-docs/application-help/converter.rst:27
-# 4fff7d1a4f3b44039de85b14b79d9584
-msgid "If you want to obtain shake data you can get it for free from the USGS shakemap site: http://earthquake.usgs.gov/earthquakes/shakemap/list.php?y=2013"
+# 43c61baa7c22475cac0343dd0c3823ad
+msgid "To use this tool effectively:"
+msgstr ""
+
+#: ../../source/user-docs/application-help/converter.rst:29
+# 82c0c5e1697546da841c4981c32268f8
+msgid "Select a grid.xml for the input layer."
+msgstr ""
+
+#: ../../source/user-docs/application-help/converter.rst:30
+# a95cec04c60c4cfe84b194fa0242015d
+msgid "Choose where to write the output layer to."
+msgstr ""
+
+#: ../../source/user-docs/application-help/converter.rst:31
+# 6c59842b0ec54f329724ce664d5df02c
+msgid "Choose the interpolation algorithm that should be used when converting the xml grid to a raster. If unsure keep the default."
+msgstr ""
+
+#: ../../source/user-docs/application-help/converter.rst:34
+# 8f78c2b410954e39b5c98a7b734bab03
+msgid "You can obtain shake data for free from the `USGS shakemap site <http://earthquake.usgs.gov/earthquakes/shakemap/list.php?y=2013>`_."
+msgstr ""
+
+#: ../../source/user-docs/application-help/converter.rst:37
+# b6cf1e8a62a842cab886640963f278b1
+msgid "If you download the grid file, you should right-click on it and choose :menuselection:`Save as` in order to ensure that it is saved properly. OSX and Linux users may also consider using command line tools to fetch the grid file:"
+msgstr ""
+
+#: ../../source/user-docs/application-help/converter.rst:41
+# 59d28beabfaf4c55b48f59f607449df6
+msgid "OSX::"
+msgstr ""
+
+#: ../../source/user-docs/application-help/converter.rst:45
+# bca24d0ee5e4401587057f4f4d2f9626
+msgid "Linux::"
+msgstr ""
+
+#: ../../source/user-docs/application-help/converter.rst:49
+# a10c4bc52d004b38bd7318ff42ac4798
+msgid "Replace the <shake id> in the commands above with the actual shake id."
 msgstr ""
 
