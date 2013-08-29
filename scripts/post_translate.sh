@@ -1,10 +1,10 @@
 #!/bin/bash
-INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
+INASAFE_DEV_PATH=../inasafe-dev
 export QGIS_PREFIX_PATH=/usr/local/qgis-1.8
 
 if [ -d $INASAFE_DEV_PATH ]
 then
-  export INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
+  echo 'Using InaSAFE-dev in $INASAFE_DEV_PATH'
 else
   if [ ! -d ../inasafe-dev ]
   then

@@ -91,7 +91,7 @@ def setup_web_user():
 
 @task
 def setup_remotely():
-    """Set up teh container on a remote server - uses nested fabgis calls.
+    """Set up the container on a remote server - uses nested fabgis calls.
 
     Use this task when you want to set up the container on a remote server.
     It will log in to the server and then run fabric in a shell session so
