@@ -93,51 +93,54 @@ def setup_docs_web_proxy():
     entire documentation web site inside that docker container.
 
     """
-    container_id = current_docker_container()
-    if container_id is None:
-        setup_docker()
-        container_id = create_docker_container(image='fabgis/sshd')
-        port_mappings = get_docker_port_mappings(container_id)
-        ssh_port = port_mappings[22]
-        run('fab -H root@%s:%i setup_web_user' % (env.host, ssh_port))
-        run('fab -H web@%s:%i setup_docs_web_site' % (env.host, ssh_port))
-    else:
-        port_mappings = get_docker_port_mappings(container_id)
+    work_dir = '/home/web/inasafe.org'
+    require.directory(work_dir)
+    with cd(work_dir):
+        container_id = current_docker_container()
+        if container_id is None:
+            setup_docker()
+            container_id = create_docker_container(image='fabgis/sshd')
+            port_mappings = get_docker_port_mappings(container_id)
+            ssh_port = port_mappings[22]
+            run('fab -H root@%s:%i setup_web_user' % (env.host, ssh_port))
+            run('fab -H web@%s:%i setup_docs_web_site' % (env.host, ssh_port))
+        else:
+            port_mappings = get_docker_port_mappings(container_id)
 
-    http_port = port_mappings[80]
+        http_port = port_mappings[80]
 
-    fabtools.require.deb.package('apache2')
-    sudo('a2enmod proxy proxy_http')
+        fabtools.require.deb.package('apache2')
+        sudo('a2enmod proxy proxy_http')
 
-    context = {
-        'internal_host': env.host,
-        'internal_port': http_port,
-        'server_name': 'inasafe.org'
-    }
+        context = {
+            'internal_host': env.host,
+            'internal_port': http_port,
+            'server_name': 'inasafe.org'
+        }
 
-    apache_conf_template = 'inasafe-doc.conf.templ'
-    apache_path = '/etc/apache2/sites-available/'
+        apache_conf_template = 'inasafe.org.mod_proxy.conf.templ'
+        apache_path = '/etc/apache2/sites-available/'
 
-    # Clone and replace tokens in apache conf
+        # Clone and replace tokens in apache conf
 
-    local_dir = os.path.dirname(__file__)
-    local_file = os.path.abspath(os.path.join(
-        local_dir,
-        'scripts',
-        apache_conf_template))
+        local_dir = os.path.dirname(__file__)
+        local_file = os.path.abspath(os.path.join(
+            local_dir,
+            'scripts',
+            apache_conf_template))
 
-    fastprint(green('Using %s for template' % local_file))
+        fastprint(green('Using %s for template' % local_file))
 
-    destination = '%s/inasafe.org' % apache_path
+        destination = '%s/inasafe.org' % apache_path
 
-    upload_template(
-        local_file,
-        destination,
-        context=context,
-        use_sudo=True)
+        upload_template(
+            local_file,
+            destination,
+            context=context,
+            use_sudo=True)
 
-    require.apache.enable('a2ensite inasafe.org')
-    restart('apache2')
+        require.apache.enable('inasafe.org')
+        restart('apache2')
 
 
 @task
