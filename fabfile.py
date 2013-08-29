@@ -63,7 +63,8 @@ def build_docs(branch='master'):
     # Needed for when running on headless servers
     fabtools.require.deb.package('xvfb')
     fabtools.require.deb.package('rpl')
-    install_qgis1_8()
+    if not exists('/usr/local/qgis-1.8'):
+        install_qgis1_8()
 
     setup_sphinx()
     setup_transifex()
@@ -74,7 +75,6 @@ def build_docs(branch='master'):
         url='git://github.com/AIFDR/inasafe-doc.git',
         repo_alias='inasafe-doc',
         branch=branch)
-    setup_latex()
 
     with cd(code_path):
         # build the Documentation
