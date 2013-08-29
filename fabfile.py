@@ -248,7 +248,8 @@ def setup_docs_web_site(branch='master'):
     if not contains(hosts, 'inasafe-docs'):
         append(hosts, '127.0.0.1 inasafe-doc.localhost', use_sudo=True)
 
-    require.apache.enable('a2ensite inasafe-docs.conf')
+    require.apache.enable('inasafe-docs')
+    require.apache.disable('default')
     sudo('a2enmod rewrite')
     restart('apache2')
 
