@@ -6,7 +6,7 @@ export QGIS_PREFIX_PATH=/usr/local/qgis-1.8
 
 if [ -d $INASAFE_DEV_PATH ]
 then
-  echo 'Using InaSAFE-dev in $INASAFE_DEV_PATH'
+  echo 'Using InaSAFE-dev in' $INASAFE_DEV_PATH
 else
   if [ ! -d ../inasafe-dev ]
   then
