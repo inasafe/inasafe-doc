@@ -54,7 +54,6 @@ Name                Agency        Position                     Role        Commi
 Agus Wibowo         |BNPB|        Data and Information Manager Steer       TWG
 Kristy Van Putten   |AIFDR|, |GA| Deputy R&V Manger            Steer,train TWG
 Viven Deparday      |GFDRR|                                    Developer   TWG
-Liana Razafindrazay |GFDRR|                                    Test,train
 Tim Sutton          |Linfiniti|   Head of Linfiniti            Developer   Release coordinator
 =================== ============= ============================ =========== ===================
 
