@@ -1,5 +1,7 @@
 #!/bin/bash
-INASAFE_DEV_PATH=../inasafe-dev
+# Next line is a trick to get absolute path from relative path
+# http://stackoverflow.com/questions/4045253/converting-relative-path-into-absolute-path
+INASAFE_DEV_PATH=`cd "../inasafe-dev"; pwd`
 export QGIS_PREFIX_PATH=/usr/local/qgis-1.8
 
 if [ -d $INASAFE_DEV_PATH ]
