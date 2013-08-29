@@ -104,6 +104,19 @@ def setup_remotely():
         container_id = create_docker_container(image='fabgis/sshd')
         port_mappings = get_docker_port_mappings(container_id)
         ssh_port = port_mappings[22]
+
+        run('wget -O fabfile.py https://github.com/AIFDR/inasafe-doc'
+            '/raw/master/fabfile.py')
+        require.directory('scripts')
+
+        run(
+            'wget -O scripts/inasafe-doc.conf.templ https://github'
+            '.com/AIFDR/inasafe-doc/raw/master/scripts/inasafe-doc.conf.templ')
+        run(
+            'wget -O scripts/inasafe.org.mod_proxy.conf.templ https://github'
+            '.com/AIFDR/inasafe-doc/raw/master/scripts/inasafe.org.mod_proxy.'
+            'conf.templ')
+
         run('venv/bin/fab -H root@%s:%i setup_web_user' % (
             env.host, ssh_port))
         run('venv/bin/fab -H web@%s:%i setup_docs_web_site' % (
