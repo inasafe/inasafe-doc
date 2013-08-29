@@ -38,7 +38,7 @@ You can find more Information about the dock itself in the
    Keyword Editor
 
 The Keyword Editor button opens the Keyword editor which is described in
-:ref:`toolbar_keywords`. Basically it enables you to easily edit the
+:ref:`keywords`. Basically it enables you to easily edit the
 Keywords needed for |project_name| to create useful output.
 
 .. _toolbar_reset_dock:

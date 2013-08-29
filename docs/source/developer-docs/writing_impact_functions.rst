@@ -1,6 +1,5 @@
 .. _writing_impact_functions:
 
-========================
 Writing Impact Functions
 ========================
 
@@ -132,7 +131,7 @@ They are:
                  keyword, layertype, which takes the values 'raster' or
                  'vector' is always present and is inferred automatically by
                  |project_name|. For more information about keywords please
-                 refer to :ref:`toolbar_keywords` and refer to the examples
+                 refer to :ref:`keywords` and refer to the examples
                  below.
 
 Following the docstring is a collection of variables that define and document
@@ -358,7 +357,7 @@ must be tagged as 'exposure' with subcategory 'population' and also having
 layertype 'raster'. Except for layertype which is automatically inferred by
 |project_name| all other keywords must be specified with each layer e.g. by
 using the |project_name| keyword editor or by manually editing the keywords
-file. See also :ref:`toolbar_keywords`.
+file. See also :ref:`keywords`.
 
 The rest of this section comprise the documentation variables and the
 parameters dictionary which in this case makes one variable available for
@@ -777,4 +776,4 @@ works with two raster input layers has the requirements section
 
 This means that the impact function will only be selected if it is presented
 with two input layers whose associated keywords match these requirements. For
-more information about keywords please refer to :ref:`toolbar_keywords`.
+more information about keywords please refer to :ref:`keywords`.

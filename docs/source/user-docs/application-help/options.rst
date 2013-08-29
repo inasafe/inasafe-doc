@@ -82,7 +82,7 @@ The following options are available on the :guilabel:`Options Dialog`:
   population ratio used por generating Gender breakdowns
 * :guilabel:`Keyword cache for remote datasources` : This option is used to
   determine where keywords are stored for datasets where it is not possible
-  to write them into a .keywords file. See :ref:`toolbar_keywords` in the
+  to write them into a .keywords file. See :ref:`keywords` in the
   |project_name| User-Manual for more information on the keywords system.
 * :guilabel:`Enable developer mode`. With this option enabled,
   you can right click on the report area and use the webkit debug tools to

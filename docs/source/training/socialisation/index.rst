@@ -16,6 +16,7 @@ currently working on those), but to give participants an idea of what
    overview
    functionality-datasets
    introduction-of-qgis
+   rastervsvector
    run-basic-inasafe
    inasafe-in-more-detail
    other-hazards

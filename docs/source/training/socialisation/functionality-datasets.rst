@@ -16,17 +16,17 @@ layer and a exposure layer to create an impact layer. Currently
 
 **Hazard:**
 
-==========  ================  ===============  ==================  ==================  ===============
+==========  ================  ===============  ==================  ======================  ===============
 **Hazard**  **Spatial Type**  **Hazard Type**  **Attribute Name**  **Hazard Units/field**  **Parameters**
-----------  ----------------  ---------------  ------------------  ------------------  ---------------
-Flood       Raster            Depth            N/A                  m                  Threshold (m)
-Flood       Polygon           Wet/Dry          affected             1/0                Threshold (%)
+----------  ----------------  ---------------  ------------------  ----------------------  ---------------
+Flood       Raster            Depth            N/A                  m                      Threshold (m)
+Flood       Polygon           Wet/Dry          affected             1/0                    Threshold (%)
 Volcano     Raster            Ash Load         N/A                  kg/m2
 Volcano     Polygon           Category         KRB                  text
-Volcano     Point             Distance         Name                 text               Radius (km)
-Earthquake  Raster            Shakemap         N/A                  MMI                H/M/L value
-Tsunami     Raster            Depth            N/A                  m                  Threshold (m)
-==========  ================  ===============  ==================  ==================  ===============
+Volcano     Point             Distance         Name                 text                   Radius (km)
+Earthquake  Raster            Shakemap         N/A                  MMI                    H/M/L value
+Tsunami     Raster            Depth            N/A                  m                      Threshold (m)
+==========  ================  ===============  ==================  ======================  ===============
 
 KRB = Kawansan Rawan Bencana (Volcano Hazard level)
 
@@ -41,15 +41,15 @@ Structures     Point             Structure type      type                text
 =============  ================  ==================  ==================  =======================
 
 
-.. note:: For information on what is a Raster or a Vector, as well as the difference 
+.. note:: For information on what is a Raster or a Vector, as well as the difference
 	between Vector objects please go to :doc:`rastervsvector`
 
 
 |project_name| is a dynamic tool that can easily be adapted to other types of
 hazard and exposure layers.  The beauty of |project_name| being open source,
 is that anyone that has a background in programming would be able to make
-their own Impact function. For more information 
-:doc:`../../developer-docs/impact-fuunction-tutorial`
+their own Impact function. For more information
+:ref:`impact_function_tutorial`
 
 
 Exposure Layers Used in Practical

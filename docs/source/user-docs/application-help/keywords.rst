@@ -1,4 +1,4 @@
-.. _toolbar_keywords:
+.. _keywords:
 
 Keywords System
 ===============

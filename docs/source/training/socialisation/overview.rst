@@ -17,7 +17,7 @@ emergency managers need to answer questions like:
 - which roads will be closed?
 
 Conceptually |project_name| combines one exposure layer (e.g. location of buildings) with
-one hazard scenario (e.g. flooding footprint) and returns a spatial impact layer along 
+one hazard scenario (e.g. flooding footprint) and returns a spatial impact layer along
 with textual statistical summary and action questions.
 
 |project_name| is framed around questions such as:
@@ -53,20 +53,20 @@ location of primary schools and estimated number of students affected by a
 possible tsunami in Maumere (when it happened during the school hours).
 |project_name| has been developed as a QuantumGIS plugin to enable end users
 to not only complete an InaSAFE analysis, but to also analysis the result using
-the suite of QGIS tools that are available. The software has been designed as a 
-simple user interface in a hope that disaster managers and end users can easily 
+the suite of QGIS tools that are available. The software has been designed as a
+simple user interface in a hope that disaster managers and end users can easily
 use |project_name| for creating impact maps to inform contigency planning.
 
 |project_name| was preliminarily launched by Dr Agus Wibowo, Head of the Data
 Center at the Indonesia’s Disaster Management Agency (|BNPB|),
-at the Understanding Risk Forum in Cape Town on 3 July,2012. There were over 300 
+at the Understanding Risk Forum in Cape Town on 3 July,2012. There were over 300
 downloads of the software within the first three weeks of its preliminary launch.
 
 |project_name| (Version 1.0) was officially launched at the 5th Asian
 Ministerial Conference for Disaster Risk Reduction in Yogyakarta,
 23–25 October 2012, by Mr Dodi Ruswandi, the Deputy for disaster reduction
-and preparedness, |BNPB|, Mr Abhas Jha,  Disaster risk management coordinator 
-for East Asia and the Pacific from the World Bank, and Dr Matt Hayne co-director 
+and preparedness, |BNPB|, Mr Abhas Jha,  Disaster risk management coordinator
+for East Asia and the Pacific from the World Bank, and Dr Matt Hayne co-director
 of Australia-Indonesia Facility for Disaster Reduction (|AIFDR|).
 
 |project_name| is now being taught across 6 provinces in Indonesia as one of
@@ -103,7 +103,7 @@ local communities and government departments responsible for each sector,
 often through a facilitated part of a disaster preparedness and planning
 exercise.
 
-If the spatial data does not yet exist, external tools such as OpenStreetMap 
+If the spatial data does not yet exist, external tools such as OpenStreetMap
 (|OSM|) can allow governments and communities to quickly and easily map
 their assets that are important to them.
 
@@ -193,13 +193,13 @@ The input Exposure layer must have:
 Aggregation
 ............
 
-|project_name| prides itself on simplicity, but with each question answered a 
-new one arises. “In the event of **<hazard>** how many **<exposure>** will be 
-affected?“, is the core question that is answered by InaSAFE, but aggregation 
-adds to this by providing options to divide your results by area such as 
-province boundaries. Instead of just knowing the total number of people affected 
+|project_name| prides itself on simplicity, but with each question answered a
+new one arises. “In the event of **<hazard>** how many **<exposure>** will be
+affected?“, is the core question that is answered by InaSAFE, but aggregation
+adds to this by providing options to divide your results by area such as
+province boundaries. Instead of just knowing the total number of people affected
 by the hazard, |project_name| is able to aggregate
-allowing the user know how many people are affected in a certain administration 
+allowing the user know how many people are affected in a certain administration
 area. Hence the local governments will be able understand the impact to their
 specific area.
 
@@ -215,24 +215,24 @@ the 2 layer, or it could be a complicated function that calculate if a building
 would fall down in an earthquake based on building structure informaton
 
 The output of the impact fuction will typically have a spatial component (e.g. a
-GIS layer which automatically loads into the map canvas) and a non-spatial 
-component (e.g. a list of estimates of disaster risk reduction elements such as 
-how many kilos of rice to make available, or a list of actions you may want to 
+GIS layer which automatically loads into the map canvas) and a non-spatial
+component (e.g. a list of estimates of disaster risk reduction elements such as
+how many kilos of rice to make available, or a list of actions you may want to
 consider carrying out) which will be found in the InaSAFE window panel.
 
 Impact functions can be written for any contingency planning purpose,
 one example is the minimum needs (minimum quantity of relief items per per
 person) that need to be supplied to refugees during/after a disaster. The
-Indonesian Disaster Management Agency (|BNPB) have identified these needs per day,
-and |project_name| has used these numbers to calculate how much food, water,
-toilets, family kits etc are need during/after the disaster based on the
-number of evacuated people. This output directly informs contingency planners
-how much of each item is needed to withstand a major disaster.
+Indonesian Disaster Management Agency (|BNPB|) have identified these needs
+per day, and |project_name| has used these numbers to calculate how much
+food, water, toilets, family kits etc are need during/after the disaster
+based on the number of evacuated people. This output directly informs
+contingency planners how much of each item is needed to withstand a major
+disaster.
 
 Additionally an impact functions can be configured ‘on the fly’ during the
 analysis.  This will be touched on during the training exercise.
-:doc:`../../user-docs/application-help/impact-functions`
-
+:ref:`impact_functions`
 
 
 Keywords
@@ -242,7 +242,7 @@ An Impact function will automatically be chosen depending on the keywords
 that has been allocated to the input layers. The purpose of the keywords file
 is to provide additional metadata needed by the impact functions. For
 example, the keywords file will indicate whether a given dataset should be
-treated as a hazard or an exposure layer. It is also used to indicate the 
+treated as a hazard or an exposure layer. It is also used to indicate the
 context of the layer (e.g. flood, earthquake). :ref:`keywords`
 
 Available Impact Functions

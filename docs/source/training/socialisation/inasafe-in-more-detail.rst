@@ -68,7 +68,7 @@ Here we have zoomed into 2 rivers going through the middle of Jakarta.
    less than 1 meter deep.
 
 2. :guilabel:`Select` *Estimate buildings affected* in the **Layer List** to highlight
-   the layer. It should now be in blue.
+the layer. It should now be in blue.
 
 .. image:: /static/training/socialisation/043_highlight.*
    :align: center
@@ -87,7 +87,7 @@ This buildings has a lot of information recorded about it.
    information.  Also included was if the building had roof access.
 
 4. Click on :guilabel:`Zoom to Layer` - this will get you back to extent of
-   *Estimate building affected*
+*Estimate building affected*
 
 
 About Population which needs evacuation
@@ -102,7 +102,7 @@ About Population which needs evacuation
 7. :guilabel:`Zoom In` to an area of your choice
 
 8. Use the :guilabel:`Identify Features` tool to select a pixel (square) of the
-   selected *Population which Need evacuation*
+selected *Population which Need evacuation*
 
 Here I clicked on the :guilabel:`light green area` , to find that there is a
 value of **80.6411**, which means there are approximately 80 people in one pixel
@@ -114,7 +114,7 @@ value of **80.6411**, which means there are approximately 80 people in one pixel
 .. note:: In this dataset a pixel is 100m by 100m
 
 9. Use the :guilabel:`Identify Features` tool to select other pixels to find out
-   their value.
+their value.
 
 10. :guilabel:`Close` the **Identify Results** box
 
@@ -151,9 +151,9 @@ Adding a Vector Layer
 15. Use the :guilabel:`Add Vector` tool
 
 16. Use :guilabel:`Browse` to navigate to the *data* folder within
-   *InaSAFE Projects*, :guilabel:`Select` *flood_osm_bpbd18113_jakarta.shp*,
-   :guilabel:`Open` in the **Open an OGR Support** window and :guilabel:`Open`
-   again in the **Source** window.
+*InaSAFE Projects*, :guilabel:`Select` *flood_osm_bpbd18113_jakarta.shp*,
+:guilabel:`Open` in the **Open an OGR Support** window and :guilabel:`Open`
+again in the **Source** window.
 
 .. image:: /static/training/socialisation/047_jakarta18113.*
    :align: center
@@ -168,19 +168,21 @@ the flooded area by sub-village boundary.
 
 Lets examine this data by opening up its *attribute table*
 
-17. Make sure the *flood_osm_bpbd18113_jakarta* is highlighted (blue line in the
-   **Layer List**). Select the :guilabel:`Open Attribute Table` tool.
+17. Make sure the *flood_osm_bpbd18113_jakarta* is highlighted (blue line in
+the **Layer List**). Select the :guilabel:`Open Attribute Table` tool.
 
 .. image:: /static/training/socialisation/048_attributetable.*
    :align: center
 
-OBJECTID:  Feature ID
-KAB_NAME:  District
-KEC_NAME:  Sub-district
-KEL_NAME:  Village
-RW:        Sub-village
-affected:  1= affected
-					 NULL = not affected
+::
+
+  OBJECTID:  Feature ID
+  KAB_NAME:  District
+  KEC_NAME:  Sub-district
+  KEL_NAME:  Village
+  RW:        Sub-village
+  affected:  1= affected
+  NULL = not affected
 
 .. note:: This is the same information as the Identify Feature tool, but
    instead of just viewing one object information, you can see all of the
@@ -191,11 +193,11 @@ affected:  1= affected
 Symbolising Vector
 ..................
 
-Now we are going to stylise the subvillage administration boundary to only see the
-affected = 1 areas.
+Now we are going to stylise the subvillage administration boundary to only
+see the affected = 1 areas.
 
 19. :guilabel:`Double click` on *flood_osm_BPBD18113_jakarta* layers - this
-    will open up the properties table
+will open up the properties table
 
 20. Navigate to the style tab
 
@@ -203,8 +205,8 @@ affected = 1 areas.
    :align: center
 
 
-21. Follow the below steps to stylise the subvillage boundaries as illustrated in the
-    picture and table below.
+21. Follow the below steps to stylise the subvillage boundaries as
+illustrated in the picture and table below.
 
 ==========     ================================================
 **Number**     **Step**
@@ -236,25 +238,25 @@ Adding Keywords
 ...............
 
 22. As previously pointed out the |project_name| panel is showing a warning.
-   It is explaining to us that the layer highlight *flood_osm_BPBD18113_jakarta*
-   has no keywords. Lets follow the instructions and select the
-   :guilabel:`InaSAFE Keyword` tool.
+It is explaining to us that the layer highlight *flood_osm_BPBD18113_jakarta*
+has no keywords. Lets follow the instructions and select the
+:guilabel:`InaSAFE Keyword` tool.
 
-.. image:: /static/training/socialisation/052_keyword.png
+.. image:: /static/training/socialisation/052_keyword.*
    :align: center
 
 
-23. In the *Keywords Editor* window you have an option of changing the **Title**, 
-   **Category** and **Subcategory**. We are going to do just that by following the 
-   steps in the table below:
+23. In the *Keywords Editor* window you have an option of changing the
+**Title**, **Category** and **Subcategory**. We are going to do just that by
+following the steps in the table below:
 
-==============  	================================================
-**Quick edit**	 	**Variable**
---------------  	------------------------------------------------
-Title							:kbd:`Jakarta flooding on the 18th January 2013`
-Category					Hazard
-Subcategory				flood[wet/dry]
-==============  	================================================
+==============  ================================================
+**Quick edit**  **Variable**
+--------------  ------------------------------------------------
+Title           :kbd:`Jakarta flooding on the 18th January 2013`
+Category        Hazard
+Subcategory     flood[wet/dry]
+==============  ================================================
 
 .. image:: /static/training/socialisation/053_keywordedited.*
    :align: center

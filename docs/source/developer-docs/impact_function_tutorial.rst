@@ -1,4 +1,5 @@
-========================
+.. _impact_function_tutorial:
+
 Impact Function Tutorial
 ========================
 
