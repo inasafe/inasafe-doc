@@ -101,7 +101,12 @@ def setup_remotely():
     with cd(work_dir):
         run('echo "fabgis" > requirements.txt')
         setup_venv(work_dir)
-        container_id = create_docker_container(image='fabgis/sshd')
+
+        container_id = current_docker_container()
+
+        if container_id is None:
+            container_id = create_docker_container(image='fabgis/sshd')
+
         port_mappings = get_docker_port_mappings(container_id)
         ssh_port = port_mappings[22]
 
@@ -140,10 +145,10 @@ def setup_docs_web_proxy():
         container_id_file = 'fabgis.container.id'
         if not exists(container_id_file):
             setup_docker()
-            create_docker_container()
 
-        container_id = current_docker_container()
         setup_remotely()
+        container_id = current_docker_container()
+
         port_mappings = get_docker_port_mappings(container_id)
 
         http_port = port_mappings[80]
