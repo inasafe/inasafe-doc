@@ -174,15 +174,13 @@ Lets examine this data by opening up its *attribute table*
 .. image:: /static/training/socialisation/048_attributetable.*
    :align: center
 
-::
-
-  :OBJECTID:  Feature ID
-  :KAB_NAME:  District
-  :KEC_NAME:  Sub-district
-  :KEL_NAME:  Village
-  :RW:        Sub-village
-  :affected:  1= affected
-  NULL = not affected
+OBJECTID:  Feature ID
+KAB_NAME:  District
+KEC_NAME:  Sub-district
+KEL_NAME:  Village
+RW:        Sub-village
+affected:  1= affected
+					 NULL = not affected
 
 .. note:: This is the same information as the Identify Feature tool, but
    instead of just viewing one object information, you can see all of the
@@ -246,15 +244,16 @@ has no keywords. Lets follow the instructions and select the
    :align: center
 
 
-23. In the *Keywords Editor* window you have an option of changing the Title, Category and
-Subcategory. We are going to do just that by following the steps in the table below
+23. In the *Keywords Editor* window you have an option of changing the **Title**, 
+**Category** and **Subcategory**. We are going to do just that by following the 
+steps in the table below:
 
 ==============  	================================================
 **Quick edit**	 	**Variable**
 --------------  	------------------------------------------------
-Title				:kbd:`Jakarta flooding on the 18th January 2013`
-Category			Hazard
-Subcategory			flood[wet/dry]
+Title							:kbd:`Jakarta flooding on the 18th January 2013`
+Category					Hazard
+Subcategory				flood[wet/dry]
 ==============  	================================================
 
 .. image:: /static/training/socialisation/053_keywordedited.*
@@ -328,7 +327,7 @@ input a percentage of the affected population that may need evacuating.
 .. note:: Within the *Configure Impact Function Parameter* window you are
    able to change not only the percentage of evacuated people but also the
    ratio of youth/adult/elder and the amount of minimum needs per person per
-   week.  *Improvement:* need to add units to minimum needs
+   week.  **Improvement:** need to add units to minimum needs
 
 32. In the options tab you can see that default is 1, for this first analysis
 we will keep this figure. :guilabel:`OK`
@@ -363,11 +362,13 @@ flood 180113                  Vector         Buildings     Vector         Be flo
 flood 180113   1%             Vector         People        Raster         Need Evacuation
 =============  =============  =============  ============  =============  ===================  =============
 
+
 36. Complete the last column of the above table. For more information on data type
 go to :doc:`rastervsvector`
 
-.. todo:: How different are the results? **Answer** __________________________,
-   Why are they different? **Answer** __________________________
+How different are the results? **Answer** __________________________,
+
+Why are they different? **Answer** __________________________
 
 
 Basic Aggregation
@@ -393,12 +394,17 @@ OGR Support** window and :guilabel:`Open` again in the **Source** window.
 
 38. This layer already has its keywords filled out, lets go through these:
 
-	Category: postprocessing - *Layer to be used after impact is derived*
-	Aggregation attribute: KAB_NAME - *The name of the attribute you wan to aggregate*
-	Subcategory: aggregation
-	Title: District's of Jakarta
-	Source: OpenStreetMap
-	Female ratio attribute: PEREMPUAN - *Attribute name of female percentage per district*
+Category: postprocessing - *Layer to be used after impact is derived*
+
+Aggregation attribute: KAB_NAME - *The name of the attribute you wan to aggregate*
+
+Subcategory: aggregation
+
+Title: District's of Jakarta
+
+Source: OpenStreetMap
+
+Female ratio attribute: PEREMPUAN - *Attribute name of female percentage per district*
 
 By looking at the district layer attribute table you can see that the names of the
 attribute correspond.

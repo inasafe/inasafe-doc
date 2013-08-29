@@ -116,6 +116,9 @@ rst_epilog = """
 .. _Linfiniti: http://linfiniti.com
 .. |HOT| replace:: HOT_
 .. _HOT: http://hot.openstreetmap.org/
+.. |QGIS| replace:: QGIS_
+.. _QGIS: http://qgis.org/
+
 
 """
 

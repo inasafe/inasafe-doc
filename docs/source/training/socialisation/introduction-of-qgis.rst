@@ -4,7 +4,8 @@ Introduction to QGIS
 ====================
 
 .. image:: /static/training/socialisation/010_qgis_logo.png
-   :align: left
+   :align: right
+   :scale: 30 %
 
 **Objectives:**
 
@@ -28,7 +29,7 @@ Participants are able to:
 Introduction
 ------------
 
-Quantum GIS (QGIS) is a user friendly Open Source Geographic Information
+Quantum GIS (|QGIS|) is a user friendly Open Source Geographic Information
 System (GIS).  It runs on Linux, Unix, Mac OSX, Windows and Android and
 supports numerous vector, raster, and database formats and functionality.
 `<http://www.qgis.org>`_
@@ -75,7 +76,9 @@ The elements identified in the figure below are:
 .. image:: /static/training/socialisation/011_interface.*
    :align: center
 
-Begin Practical
+
+
+Start of Practical
 ===================
 
 Setup QGIS
@@ -104,15 +107,15 @@ using today.
 
 3. :guilabel:`Right Click` the toolbar and :guilabel:`Uncheck`,
 
-  * Advance Digitising
-  * Database
-  * Digitising
-  * File
-  * Grass
-  * OpenStreetMap
-  * Raster
-  * Vector
-  * Web
+* Advance Digitising
+* Database
+* Digitising
+* File
+* Grass
+* OpenStreetMap
+* Raster
+* Vector
+* Web
 
 4. Rearrange toolbar so its just one line, :guilabel:`Left Click` and
 :guilabel:`Hold` the vertical dots on the left hand side of the tool. Drag to
@@ -210,7 +213,7 @@ top tool bar and :guilabel:`Recheck` **plugin**
 
 
 .. image:: /static/training/socialisation/022_inasafetoolbar.*
-   :align: center
+   :align: left
 
 
 =================================================   ========================
@@ -235,6 +238,10 @@ OpenLayer Plugin
 ................
 
 Installing OpenLayer through the QGIS plugin repository
+
+.. Note:: To use openlayers you must have connection to the Internet at 
+	 all times!
+
 
 17. Go to :menuselection:`Plugins --> Fetch Python Plugins`. This will take a
 couple of minutes for QGIS to contact its repository and show the list
@@ -261,8 +268,8 @@ this will take a couple of minutes for the plugin to download and install.
 .. Note:: If you are familiar with Goggle Earth, navigating this imagery
    should be very similar.
 
-**Activity:** Navigate to your home
-...................................
+**Activity:** Navigate to your home or office
+.............................................
 
 Using the navigation tools below, zoom into your home.
 
@@ -301,4 +308,3 @@ centre of the screen.
 .. image:: /static/training/socialisation/027_mt.*
    :align: center
 
-.. Note:: To use openlayers you must have connection to the Internet!

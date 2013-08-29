@@ -30,17 +30,20 @@ Introduction
 ------------
 
 In this chapter you will run |project_name| in Jakarta to determine the
-impact of a flood model on both Jakarta's population and buildings.  The
+impact of a flood model on both Jakarta's population and buildings.
 
 1. :menuselection:`File --> Open Projects`
 
-2. A message box appears: *Do you want to save the current project?* :guilabel:`Don't Save`
+2. A message box appears: *Do you want to save the current project?* 
+   :guilabel:`Don't Save`
 
 .. image:: /static/training/socialisation/028_saveproject.*
    :align: center
 
-3. Navigate to the *InaSAFE_project* folder and :guilabel:`Select` *Jakarta_floods.qgs*,
-   :guilabel:`Open`
+3. :guilabel:`Navigate` to the *InaSAFE_project* folder and :guilabel:`Select` 
+	 *Jakarta_floods.qgs*, :guilabel:`Open`
+
+The result of opening the project:
 
 .. image:: /static/training/socialisation/029_jakartafloods.*
    :align: center
@@ -50,7 +53,7 @@ People need evacuating
 ----------------------
 
 As you can see the |project_name| panel has the first three drop down menus
-filed in already:
+filled in already:
 
 * a flood similar to the 2007 Jakarta event
 * buildings
@@ -66,7 +69,7 @@ filed in already:
 .. image:: /static/training/socialisation/030_showpeople.*
    :align: center
 
-.. note:: You can see that the Impact function below *Might* automatically
+.. note:: You can see that the Impact function below **Might** automatically
    changed from *Be Flooded* to *Need evacuation* this is dependant on the
    combination of the hazard and exposure layers
 
@@ -88,7 +91,7 @@ lets explore this further.
 .. image:: /static/training/socialisation/033_peoplefloodresult.*
    :align: center
 
-**Evacuation:** There are 1,109,000 people that are in water that is deeper than 1 meter.
+**Evacuation:** There are 1,109,000 people that are located in water deeper than 1 meter.
 It is assumed that all of these people will need to evacuate their homes.  The threshold
 of 1 meter can be changed (see Changing Threshold below).
 

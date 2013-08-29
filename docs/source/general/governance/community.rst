@@ -9,7 +9,7 @@ The list below provides the details of the main contributors who ensure the foll
 * Provide guidance to the general direction of the project
 * Provide a central point of contact for the project
 * Ensure that the various expectations placed on the project by its members and
-  the users of|project_name| are met to the best degree possible
+  the users of |project_name| are met to the best degree possible
 * Vote on issues relating to project governance
 * Arbitrate disputes
 * Deal with confidential and legal matters that may arise

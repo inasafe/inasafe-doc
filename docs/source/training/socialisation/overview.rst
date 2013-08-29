@@ -7,7 +7,7 @@ Concept
 -------
 To effectively prepare for future floods, earthquakes or tsunami you must
 first understand the likely impacts that need to be managed. For example,
-to prepare contingency plans for a severe flood in Jakarta,
+to prepare a contingency plan for a severe flood in Jakarta,
 emergency managers need to answer questions like:
 
 - what are the areas likely to be affected;
@@ -28,7 +28,7 @@ with textual statistical summary and action questions.
 .. image:: /static/training/socialisation/001_inasafe_concept.png
 
 |project_name| is also able to aggregate the impact results by administration
-boundary and provided breakdown information about gender and age of affected.
+boundary and provided breakdown information about gender and age of affected people.
 
 Background
 ----------
@@ -37,10 +37,10 @@ As one of the most hazard-prone and densely populated countries in the world,
 Indonesia faces significant risk of loss of lives and challenges to
 development progress as a result of natural disasters. The development of
 contingency plans is seen as an important step to strengthen disaster risk
-reduction programs.However this can only be effective when contingency plans
+reduction programs. However this can only be effective when contingency plans
 utilises realistic hazard scenario. Realistic hazard scenarios require
-scientific, sound and up-to-date data related to sources of hazard and
-elements of exposure.  Such map-based contingency plans offer accurate and
+scientific, sound and up-to-date data hazard information as well as up-to-date, scale
+appropriate exposure.  Such map-based contingency plans offer accurate and
 comprehensive results in calculating minimum relief items,
 identifying safe places, and sectorial planning.
 
@@ -52,34 +52,32 @@ the impacts by a single hazard would have on specific sectors. For example
 location of primary schools and estimated number of students affected by a
 possible tsunami in Maumere (when it happened during the school hours).
 |project_name| has been developed as a QuantumGIS plugin to enable end users
-to do scenario development using their collected hazard and exposure data.
-The software has been designed as a simple user interface in a hope that
-disaster managers and end users can easily use it for creating disaster
-scenario maps in Indonesia easily.
+to not only complete an InaSAFE analysis, but to also analysis the result using
+the suite of QGIS tools that are available. The software has been designed as a 
+simple user interface in a hope that disaster managers and end users can easily 
+use |project_name| for creating impact maps to inform contigency planning.
 
-|project_name| was preliminarily launched by Dr Agus Wibowo,
-the Head of Indonesian Disaster Management Agency’s Data Centre,
-at the Understanding Risk Forum in Cape Town on 3 July,
-2012. There were over 300 downloads of the software within the first three
-weeks of its preliminary launch.
+|project_name| was preliminarily launched by Dr Agus Wibowo, Head of the Data
+Center at the Indonesia’s Disaster Management Agency (|BNPB|),
+at the Understanding Risk Forum in Cape Town on 3 July,2012. There were over 300 
+downloads of the software within the first three weeks of its preliminary launch.
 
 |project_name| (Version 1.0) was officially launched at the 5th Asian
 Ministerial Conference for Disaster Risk Reduction in Yogyakarta,
 23–25 October 2012, by Mr Dodi Ruswandi, the Deputy for disaster reduction
-and preparedness from Indonesia’s Disaster Management Agency (|BNPB|),
-Mr Abhas Jha,  Disaster risk management coordinator for East Asia and the
-Pacific from the World Bank, and Dr Matt Hayne co-director of the Australian
-Government funded Australia-Indonesia Facility for Disaster Reduction.
+and preparedness, |BNPB|, Mr Abhas Jha,  Disaster risk management coordinator 
+for East Asia and the Pacific from the World Bank, and Dr Matt Hayne co-director 
+of Australia-Indonesia Facility for Disaster Reduction (|AIFDR|).
 
 |project_name| is now being taught across 6 provinces in Indonesia as one of
 the 3 open source software tools used to enable development of realistic
 disaster scenarios for contingency planning. The other 2 tools are:
 
-#. OpenStreetMap (OSM): is a free map of the world that anyone can add to
+#. OpenStreetMap (|OSM|): is a free map of the world that anyone can add to
    and edit. Utilizing community mapping allows for more detailed information
    that can be fed into |project_name| (i.e. How many houses will be affected
    by a specific hazard).
-#. QuantumGIS (QGIS): an open source Geographical Information System
+#. QuantumGIS (|QGIS|): an open source Geographical Information System
    software that allows users to spatially analyse their data. It is also the
    platform on which |project_name| is built.
 
@@ -105,8 +103,8 @@ local communities and government departments responsible for each sector,
 often through a facilitated part of a disaster preparedness and planning
 exercise.
 
-Where appropriate spatial data does not yet exist, external tools such as
-OpenStreetMap can allow governments and communities to quickly and easily map
+If the spatial data does not yet exist, external tools such as OpenStreetMap 
+(|OSM|) can allow governments and communities to quickly and easily map
 their assets that are important to them.
 
 .. note:: It is important to note that |project_name| is not a hazard
@@ -175,7 +173,7 @@ a specific hazard.
 +==========================+===========================================+
 | Population               | Density (people/units\ :sup:`2` \)        |
 +--------------------------+-------------------------------------------+
-| Buildings                | Schoold, Hospitals                        |
+| Buildings                | Schools, Hospitals                        |
 +--------------------------+-------------------------------------------+
 | Other Man-made structure | Bridges, telecommunications               |
 +--------------------------+-------------------------------------------+
@@ -195,37 +193,47 @@ The input Exposure layer must have:
 Aggregation
 ............
 
-For |project_name| an aggregation layer is division of the hazard extent by
-boundaries not relating to the hazard, more specifically administration
-boundaries such as districts, villages etc. Instead of just knowing the total 
-number of people affected by the hazard, |project_name| is able to aggregate
+|project_name| prides itself on simplicity, but with each question answered a 
+new one arises. “In the event of **<hazard>** how many **<exposure>** will be 
+affected?“, is the core question that is answered by InaSAFE, but aggregation 
+adds to this by providing options to divide your results by area such as 
+province boundaries. Instead of just knowing the total number of people affected 
+by the hazard, |project_name| is able to aggregate
 allowing the user know how many people are affected in a certain administration 
 area. Hence the local governments will be able understand the impact to their
 specific area.
 
+
 Impact Function
 ---------------
 
-The core to |project_name|  is its capability of having multiple Impact
-functions specific to the input data. The impact function is a software
-programme that computes an impact assessment given a number of inputs. The
-impact assessment will typically have a spatial component (e.g. a GIS layer
-which can be incorporated into a map) and a non-spatial component (e.g. a
-list of estimates of disaster risk reduction elements such as how many bags
-of rice to make available, or a list of actions you may want to consider
-carrying out).
+The core to |project_name| is its capability of having multiple Impact
+functions specific to the input data. An impact function generally only deals
+with the combination of 1 hazard layer with 1 exposure layer. The way it is
+combined is specfic to the impact function, it could be a simple overlay of
+the 2 layer, or it could be a complicated function that calculate if a building
+would fall down in an earthquake based on building structure informaton
+
+The output of the impact fuction will typically have a spatial component (e.g. a
+GIS layer which automatically loads into the map canvas) and a non-spatial 
+component (e.g. a list of estimates of disaster risk reduction elements such as 
+how many kilos of rice to make available, or a list of actions you may want to 
+consider carrying out) which will be found in the InaSAFE window panel.
 
 Impact functions can be written for any contingency planning purpose,
 one example is the minimum needs (minimum quantity of relief items per per
 person) that need to be supplied to refugees during/after a disaster. The
-Indonesian Disaster Management Agency have identified these needs per day,
+Indonesian Disaster Management Agency (|BNPB) have identified these needs per day,
 and |project_name| has used these numbers to calculate how much food, water,
 toilets, family kits etc are need during/after the disaster based on the
 number of evacuated people. This output directly informs contingency planners
 how much of each item is needed to withstand a major disaster.
 
-Additionally an Impact functions can be configured ‘on the fly’ during the
+Additionally an impact functions can be configured ‘on the fly’ during the
 analysis.  This will be touched on during the training exercise.
+:ref:`impact_functions`
+
+
 
 Keywords
 ........
@@ -235,7 +243,7 @@ that has been allocated to the input layers. The purpose of the keywords file
 is to provide additional metadata needed by the impact functions. For
 example, the keywords file will indicate whether a given dataset should be
 treated as a hazard or an exposure layer. It is also used to indicate the 
-context of the layer (e.g. flood, earthquake).
+context of the layer (e.g. flood, earthquake). :ref:`keywords`
 
 Available Impact Functions
 ..........................
