@@ -28,6 +28,7 @@ from fabgis.docker import (
     create_docker_container,
     get_docker_port_mappings,
     current_docker_container)
+from fabgis.virtualenv import setup_venv
 from fabgis.sphinx import setup_latex, setup_sphinx, setup_transifex
 from fabgis.system import create_user
 # Don't remove even though its unused
@@ -38,6 +39,7 @@ from fabtools.vagrant import vagrant
 repo_path = os.path.join(os.path.dirname(__file__), 'dev', 'python')
 code_path = os.path.join(repo_path, 'inasafe-doc')
 web_directory = os.path.join('/', 'var', 'www', 'inasafe-org')
+work_dir = '/home/web/inasafe.org'
 
 
 @task
@@ -86,6 +88,29 @@ def setup_web_user():
 
 
 @task
+def setup_remotely():
+    """Set up teh container on a remote server - uses nested fabgis calls.
+
+    Use this task when you want to set up the container on a remote server.
+    It will log in to the server and then run fabric in a shell session so
+    that all requests appear to originate locally. This is a work around for
+    current inability to tunnel cleanly into the docker container from
+    outside the docker's host.
+
+    """
+    with cd(work_dir):
+        run('echo "fabgis" > requirements.txt')
+        setup_venv(work_dir)
+        container_id = create_docker_container(image='fabgis/sshd')
+        port_mappings = get_docker_port_mappings(container_id)
+        ssh_port = port_mappings[22]
+        run('venv/bin/fab -H root@%s:%i setup_web_user' % (
+            env.host, ssh_port))
+        run('venv/bin/fab -H web@%s:%i setup_docs_web_site' % (
+            env.host, ssh_port))
+
+
+@task
 def setup_docs_web_proxy():
     """Set up a mod proxy based vhost to forward web traffic to internal host.
 
@@ -93,19 +118,20 @@ def setup_docs_web_proxy():
     entire documentation web site inside that docker container.
 
     """
-    work_dir = '/home/web/inasafe.org'
+
     require.directory(work_dir)
     with cd(work_dir):
-        container_id = current_docker_container()
-        if container_id is None:
+        run('echo "fabgis" > requirements.txt')
+        setup_venv(work_dir)
+
+        container_id_file = 'fabgis.container.id'
+        if not exists(container_id_file):
             setup_docker()
-            container_id = create_docker_container(image='fabgis/sshd')
-            port_mappings = get_docker_port_mappings(container_id)
-            ssh_port = port_mappings[22]
-            run('fab -H root@%s:%i setup_web_user' % (env.host, ssh_port))
-            run('fab -H web@%s:%i setup_docs_web_site' % (env.host, ssh_port))
-        else:
-            port_mappings = get_docker_port_mappings(container_id)
+            create_docker_container()
+
+        container_id = current_docker_container()
+        setup_remotely()
+        port_mappings = get_docker_port_mappings(container_id)
 
         http_port = port_mappings[80]
 
@@ -119,7 +145,7 @@ def setup_docs_web_proxy():
         }
 
         apache_conf_template = 'inasafe.org.mod_proxy.conf.templ'
-        apache_path = '/etc/apache2/sites-available/'
+        apache_path = '/etc/apache2/sites-available'
 
         # Clone and replace tokens in apache conf
 
@@ -131,7 +157,7 @@ def setup_docs_web_proxy():
 
         fastprint(green('Using %s for template' % local_file))
 
-        destination = '%s/inasafe.org' % apache_path
+        destination = '%s/inasafe.org.conf' % apache_path
 
         upload_template(
             local_file,
