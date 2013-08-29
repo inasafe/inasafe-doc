@@ -18,6 +18,7 @@ from fabric.colors import green, blue
 import fabtools
 from fabtools import require
 from fabtools.service import restart
+from fabtools.require import directory
 from fabgis.qgis import install_qgis1_8
 from fabgis.jenkins import jenkins_deploy_website, install_jenkins
 from fabgis.git import update_git_checkout
@@ -77,6 +78,7 @@ def build_docs(branch='master'):
 
     with cd(code_path):
         # build the Documentation
+        directory('/var/www/inasafe-org/', True, 'web')
         run('chmod +x scripts/post_translate.sh')
         run('xvfb-run scripts/post_translate.sh')
 
