@@ -206,7 +206,7 @@ def setup_docs_web_site(branch='master'):
     apache_conf_template = 'inasafe-doc.conf.templ'
 
     if not exists(web_directory):
-        sudo('mkdir -p %s/pdf' % web_directory)
+        require.directory('mkdir -p %s/pdf' % web_directory, True, 'web')
         # TODO: Fix perms below
         #sudo('chown -R %s.%s %s' % (user, user, web_directory))
 
