@@ -78,7 +78,9 @@ def build_docs(branch='master'):
 
     with cd(code_path):
         # build the Documentation
-        directory('/var/www/inasafe-org/', True, 'web')
+        directory(work_dir, True, 'web')
+        # in case it already exists
+        sudo('chown -R web.web %s' % work_dir)
         run('chmod +x scripts/post_translate.sh')
         run('xvfb-run scripts/post_translate.sh')
 
