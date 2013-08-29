@@ -7,13 +7,13 @@
   #                                          #
   ############################################
 
-  ServerName    [server_name]
-  ServerAdmin   [web_master]
+  ServerName    %(server_name)s
+  ServerAdmin   %(web_master)s
 
-  DocumentRoot [document_root]
+  DocumentRoot %(document_root)s
   DirectoryIndex index.html
 
-  <Directory [document_root]>
+  <Directory %(document_root)s>
     Order deny,allow
     Allow from all
     # For theming directory listings where appropriate
@@ -30,8 +30,8 @@
     AllowOverride All
   </Directory>
 
-  ErrorLog /var/log/apache2/[server_name].error.log
-  CustomLog /var/log/apache2/[server_name].access.log combined
+  ErrorLog /var/log/apache2/%(server_name)s.error.log
+  CustomLog /var/log/apache2/%(server_name)s.access.log combined
   ServerSignature Off
 
 </VirtualHost>

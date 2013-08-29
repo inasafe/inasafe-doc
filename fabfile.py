@@ -12,18 +12,21 @@ Tim Sutton, Jan 2013
 """
 
 import os
-from fabric.api import task, fastprint, run, sudo, cd, put
+from fabric.api import task, fastprint, run, sudo, cd, put, env
 from fabric.contrib.files import contains, exists, append, upload_template
 from fabric.colors import green, blue
 import fabtools
 from fabtools import require
+from fabtools.service import restart
 from fabgis.qgis import install_qgis1_8
 from fabgis.jenkins import jenkins_deploy_website, install_jenkins
 from fabgis.git import update_git_checkout
 from fabgis.inasafe import setup_inasafe
 # noinspection PyUnresolvedReferences
-from fabgis.docker import setup_docker, create_docker_container
+from fabgis.docker import (
+    setup_docker, create_docker_container, get_docker_port_mappings)
 from fabgis.sphinx import setup_latex, setup_sphinx, setup_transifex
+from fabgis.system import create_user
 # Don't remove even though its unused
 # noinspection PyUnresolvedReferences
 from fabtools.vagrant import vagrant
@@ -74,6 +77,68 @@ def build_docs(branch='master'):
 
 
 @task
+def setup_web_user():
+    """Set up a user called web inside the container."""
+    create_user('web')
+
+@task
+def setup_docs_web_proxy(container_id=None):
+    """Set up a mod proxy based vhost to forward web traffic to internal host.
+
+    If container_id is none, it will also install docker and set up the
+    entire documentation web site inside that docker container.
+
+    :param container_id: A docker hash for a container hosting the site.
+    :type container_id: str
+    """
+
+    if container_id is None:
+        setup_docker()
+        container_id = create_docker_container(image='fabgis/sshd')
+        port_mappings = get_docker_port_mappings(container_id)
+        ssh_port = port_mappings[22]
+        run('fab -H root@%s:%i setup_web_user' % (env.host, ssh_port))
+        run('fab -H web@%s:%i setup_docs_web_site' % (env.host, ssh_port))
+    else:
+        port_mappings = get_docker_port_mappings(container_id)
+
+    http_port = port_mappings[80]
+
+    fabtools.require.deb.package('apache2')
+    sudo('a2enmod proxy proxy_http')
+
+    context = {
+        'internal_host': env.host,
+        'internal_port': http_port,
+        'server_name': 'inasafe.org'
+    }
+
+    apache_conf_template = 'inasafe-doc.conf.templ'
+    apache_path = '/etc/apache2/sites-available/'
+
+    # Clone and replace tokens in apache conf
+
+    local_dir = os.path.dirname(__file__)
+    local_file = os.path.abspath(os.path.join(
+        local_dir,
+        'scripts',
+        apache_conf_template))
+
+    fastprint(green('Using %s for template' % local_file))
+
+    destination = '%s/inasafe.org' % apache_path
+
+    upload_template(
+        local_file,
+        destination,
+        context=context,
+        use_sudo=True)
+
+    require.apache.enable('a2ensite inasafe.org')
+    restart('apache2')
+
+
+@task
 def setup_docs_web_site(branch='master'):
     """Initialise an InaSAFE docs site where we host docs and pdf.
 
@@ -110,7 +175,7 @@ def setup_docs_web_site(branch='master'):
 
     fastprint(green('Using %s for template' % local_file))
 
-    destination = '%s/inasafe-docs.apache.conf' % apache_path
+    destination = '%s/inasafe-docs.conf' % apache_path
 
     upload_template(
         local_file,
@@ -130,9 +195,9 @@ def setup_docs_web_site(branch='master'):
     if not contains(hosts, 'inasafe-docs'):
         append(hosts, '127.0.0.1 inasafe-doc.localhost', use_sudo=True)
 
-    sudo('a2ensite inasafe-docs.conf')
+    require.apache.enable('a2ensite inasafe-docs.conf')
     sudo('a2enmod rewrite')
-    sudo('service apache2 reload')
+    restart('apache2')
 
 
 @task
