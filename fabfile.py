@@ -81,6 +81,7 @@ def setup_web_user():
     """Set up a user called web inside the container."""
     create_user('web')
 
+
 @task
 def setup_docs_web_proxy(container_id=None):
     """Set up a mod proxy based vhost to forward web traffic to internal host.
