@@ -30,7 +30,7 @@ installing the following components on each windows slave:
 With the base software installed, we will clone two GitHub repositories to
 the VM:
 
-* **|project_name|** The application that we will be testing.
+* **InaSAFE** The application that we will be testing.
 * **inasafe_data** Test data required for unit testing the  library.
 
 Then we will configure the system to be able to run the unit tests, first
@@ -84,7 +84,7 @@ GitHub for Windows Install
 * Install from http://windows.github.com
 * Do not log in with your account details (for security)
 * In options, set your default storage directory to
-  :file:`C:\Users\inasafe\.qgis\python\plugins`
+  :file:`C:\\Users\\inasafe\\.qgis\\python\\plugins`
 
 Copy over the repositories from the host system (quickest) or check them out
 from github anonymously. If you take the former route, after copying them in
@@ -100,7 +100,8 @@ Python Install
 * Follow the process described in :ref:`windows_shell_launcher-label` so that
   you can use the QGIS libraries from a python shell. Note that you probably
   need to change the second last line of that script to
-  :samp:`cd "%HOMEPATH%\.qgis\python\plugins\inasafe"` (removing the '-dev')
+  :samp:`cd "%HOMEPATH%\\.qgis\\python\\plugins\\inasafe"` (removing the
+  '-dev')
   at the end.
 * Follow the processed described in :ref:`windows-nose-setup` so that you have
   a working pip, nose etc.
@@ -222,7 +223,8 @@ produce output something like this the next time a commit takes place::
 
     Started by timer
     Building in workspace C:\Jenkins\jobs\inasafe-win8-64\workspace
-    Checkout:workspace / C:\Jenkins\jobs\inasafe-win8-64\workspace - hudson.remoting.LocalChannel@1fd5730
+    Checkout:workspace / C:\Jenkins\jobs\inasafe-win8-64\workspace - hudson
+    .remoting.LocalChannel@1fd5730
     Using strategy: Default
     Last Built Revision: Revision 5403e3ba45129b42edaa2bc0ebd12e8c9ead868e (origin/version-1_1)
     Fetching changes from 1 remote Git repository
