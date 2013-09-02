@@ -85,7 +85,6 @@ Sutopo Purwo Nugroho |BNPB|            Head Data, Information & PR Steer        
 Wisnu Widjaja        |BNPB|, |AIFDR|   Co-Director AIFDR           Steer            PSC
 Trevor Dhu           |AIFDR|, |AusAID| Co-Director AIFDR           Steer            PSC
 Iwan Gunawan         |GFDRR|                                       Steer            PSC
-Abby Bacca           World Bank                                    Steer
 ==================== ================= =========================== ================ ============
 
 

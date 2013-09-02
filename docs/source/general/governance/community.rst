@@ -1,7 +1,7 @@
 .. _community:
 
-People working on the Project
-=============================
+Contributors
+============+
 
 |project_name| has been developed by many people since its establishment in June 2012.
 The list below provides the details of the main contributors who ensure the following:
