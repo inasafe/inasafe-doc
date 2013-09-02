@@ -1,25 +1,26 @@
 #!/bin/bash
 # Next line is a trick to get absolute path from relative path
 # http://stackoverflow.com/questions/4045253/converting-relative-path-into-absolute-path
-INASAFE_DEV_PATH=`cd "../inasafe-dev"; pwd`
+if [ "$USER" == "jenkins" ]
+then
+    # Next line is a trick to get absolute path from relative path
+    # http://stackoverflow.com/questions/4045253/converting-relative-path-into-absolute-path
+    INASAFE_DEV_PATH=`cd "../../InaSAFE-Release-Branch-QGIS1/workspace"; pwd`
+else
+    INASAFE_DEV_PATH=`cd "../inasafe-dev"; pwd`
+fi
 export QGIS_PREFIX_PATH=/usr/local/qgis-1.8
 
 if [ -d $INASAFE_DEV_PATH ]
 then
   echo 'Using InaSAFE-dev in' $INASAFE_DEV_PATH
 else
-  if [ ! -d ../inasafe-dev ]
-  then
     # check the repo out since it does not exist
     pushd .
-    cd ..
+    mkdir -p $INASAFE_DEV_PATH
+    cd $INASAFE_DEV_PATH
     git clone --depth 1 git://github.com/AIFDR/inasafe.git inasafe-dev
-    cd inasafe-dev
-    export INASAFE_DEV_PATH=`pwd`
     popd
-  else
-    export INASAFE_DEV_PATH=$HOME/jobs/InaSAFE-Documentation/inasafe-dev/
-  fi
 fi
 
 export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
