@@ -5,12 +5,12 @@ Package::safe_qgis.utilities
    :maxdepth: 2
 
    utilities/styling
-   utilities/impact_calculator_thread
    utilities/clipper
-   utilities/impact_calculator
-   utilities/memory_checker
-   utilities/help
    utilities/utilities_for_testing
+   utilities/help
    utilities/keyword_io
+   utilities/impact_calculator
    utilities/custom_logging
+   utilities/memory_checker
    utilities/utilities
+   utilities/impact_calculator_thread
