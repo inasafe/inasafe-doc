@@ -42,14 +42,14 @@ Structures     Point             Structure type      type                text
 
 
 .. note:: For information on what is a Raster or a Vector, as well as the difference
-	between Vector objects please go to :doc:`rastervsvector`
+   between Vector objects please go to :doc:`rastervsvector`
 
 
 |project_name| is a dynamic tool that can easily be adapted to other types of
 hazard and exposure layers.  The beauty of |project_name| being open source,
 is that anyone that has a background in programming would be able to make
-their own Impact function. For more information
-:ref:`impact_function_tutorial`
+their own Impact function.
+For more information see take a look at :ref:`impact_function_tutorial`
 
 
 Exposure Layers Used in Practical
