@@ -46,17 +46,20 @@ to let us know about it, using the same procedure as for bug reporting.
 **How do I rename a shape file and all the helper files?**
 
 Use the rename command. rename [ -v ] [ -n ] [ -f ] perlexpr [ files ].
-For example::
+For example
+::
 
     rename -v "s/^building/OSM_building_polygons_20110905/" building.*
 
 **How do I reproject a spatial data file to WGS84 geographic coordinates?**
 
-For raster data, use gdalwarp, for example::
+For raster data, use gdalwarp, for example
+::
 
    gdalwarp -t_srs EPSG:4326 <source>.tif <target>.tif
 
-For vector data use ogr2ogr. For example from TM-3 zone 48.2::
+For vector data use ogr2ogr. For example from TM-3 zone 48.2
+::
 
    ogr2ogr -s_srs EPSG:23834 -t_srs EPSG:4326 <target>.shp <source>.shp
 
@@ -97,19 +100,22 @@ Another way, you can export osm data from HOT Exports:
 
 On Ubuntu, get the packages gtk-recordmydesktop and mencoder
 Record using recordmydesktop (start and stop icon in the top bar)
-Convert to other formats using mencoder, e.g::
+Convert to other formats using mencoder, e.g
+::
 
    mencoder -idx yogya_analysis-6.ogv -ovc lavc -oac lavc -lavcopts \
    vcodec=mpeg4:vpass=1 -of lavf -o yogya_analysis.avi
 
-or::
+or
+::
 
    mencoder -idx yogya_analysis-6.ogv -ovc lavc -oac lavc -lavcopts \
    vcodec=wmv2 -of lavf -o yogya_analysis.wmv
 
 **How do I convert a vector hazard layer to a raster layer?**
 
-For vector to raster conversion, use gdal_rasterize utility, for example::
+For vector to raster conversion, use gdal_rasterize utility, for example
+::
 
    gdal_rasterize -a <attribute_name> -l <source>.shp <destination>.tif
 

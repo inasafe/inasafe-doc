@@ -28,7 +28,8 @@ SubHeadings.
 Common tags used in the Documentation:
 --------------------------------------
 
-Here are some common useful tags::
+Here are some common useful tags
+::
 
    |project_name|   is currently a substitution for the Project name (InaSAFE)
 

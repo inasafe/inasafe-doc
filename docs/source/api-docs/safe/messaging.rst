@@ -5,7 +5,7 @@ Package::safe.messaging
    :maxdepth: 2
 
    messaging/error_message
-   messaging/styles
    messaging/message
+   messaging/styles
    messaging/item
    messaging/example

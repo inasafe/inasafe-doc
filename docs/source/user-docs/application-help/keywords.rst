@@ -67,7 +67,8 @@ Category should be written in lower case.
    ========  ================
 
 
-Example keywords file entry::
+Example keywords file entry
+::
 
   category: hazard
 
@@ -102,7 +103,8 @@ Valid subcategories for category 'exposure':
    exposure      building
    ============  ================
 
-Example keywords file entry::
+Example keywords file entry
+::
 
   category: hazard
   subcategory: flood
@@ -113,7 +115,8 @@ Units
 The units keyword is only valid in the context of 'hazard' layers, and is
 used to indicate the metric or imperial units represented by each data entity
 (a grid cell or a vector feature) in the hazard layer. Example keywords file
-entry::
+entry
+::
 
   category: hazard
   subcategory: flood
@@ -349,17 +352,20 @@ Sharing your keywords cache
 In theory you can place the keywords file on a network share and create
 a shared keyword repository in a multi-user environment, but you should note
 that the layer URI hashes need to be identical in order for a layer's keyword
-to be found. This means that, for (contrived), example::
+to be found. This means that, for (contrived), example
+::
 
    connection=postgresql,user=joe,password=secret,resource=osm_buildings
 
-would not be considered the same as::
+would not be considered the same as
+::
 
    connection=postgresql,user=anne,password=secret,resource=osm_buildings
 
 since the user credentials differ, resulting in a different URI. To work
 around this you could create a common account so that every user will
-effectively use the same URI to load that layer e.g.::
+effectively use the same URI to load that layer e.g.
+::
 
    connection=postgresql,user=public,password=secret,resource=osm_buildings
 
