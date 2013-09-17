@@ -181,8 +181,8 @@ the **Layer List**). Select the :guilabel:`Open Attribute Table` tool.
   KEC_NAME:  Sub-district
   KEL_NAME:  Village
   RW:        Sub-village
-  affected:  1= affected
-  NULL = not affected
+  affected:  1 = affected
+  			 0 = not affected
 
 .. note:: This is the same information as the Identify Feature tool, but
    instead of just viewing one object information, you can see all of the
@@ -196,7 +196,7 @@ Symbolising Vector
 Now we are going to stylise the subvillage administration boundary to only
 see the affected = 1 areas.
 
-19. :guilabel:`Double click` on *flood_osm_BPBD18113_jakarta* layers - this
+19. :guilabel:`Double click` on *flood_osm_bpbd18113_jakarta* layers - this
 will open up the properties table
 
 20. Navigate to the style tab

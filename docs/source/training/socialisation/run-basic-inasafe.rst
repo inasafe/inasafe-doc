@@ -209,21 +209,23 @@ this is because *people* is not checked in the **Layer List**.
 .. image:: /static/training/socialisation/041_buildingfloodresults.png
    :align: center
 
-In this scenario approximately 796 buildings could be effected out of 13,629 buildings.
+In this scenario approximately 1,434 buildings could be effected out of 31,515 buildings.
 
 Due to the provincial BPBD work in OpenStreetMap they have mapped all
 important building (and then sum!).
 
 Important buildings are defined as:
 
-* Clinic
-* Fire Stations
+* Clinic/doctors
+* Fire stations
 * Government
 * Hospitals
 * Place of Worship
-* Police
+* Police stations
+* Residential
 * Schools
-* Sports Centres
+* Sports Facilities 
+* Univeristy/college
 
 **Action Checklist:** A different set of Actions have been identified to
 relate to structures.

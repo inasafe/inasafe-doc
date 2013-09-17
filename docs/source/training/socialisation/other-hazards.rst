@@ -166,8 +166,11 @@ In the event of **Merapi erupting** how many **buildings** will
 **be affected** within **5,10,25** km of the vent.
 
 **ANSWER** __________________________
+
 **ANSWER** __________________________
+
 **ANSWER** __________________________
+
 
 .. Note:: You can see in this example, and in the previous flooding examples
    that we do not have every single building. In Jakarta we are confident that
@@ -231,7 +234,7 @@ the difference is the size of the pixel, the one we are trying to run is 100
 m by 100 m and the one we will run now is 1km by 1km.  If the 1km population fails,
 the third **people** layer is our backup!
 
-**Basically less pixels less memory need**
+**Basically less pixels less memory need.**
 
 .. image:: /static/training/socialisation/072_cellsize.*
    :align: center
