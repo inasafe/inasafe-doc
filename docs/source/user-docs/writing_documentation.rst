@@ -182,7 +182,7 @@ To coordinate translation of InaSAFE into Bahasa Indonesian we have developed
 a table of commonly used terms and translation. 
 
 
-*FIXME Do not translate table!!!
+* FIXME Do not translate table!!!
 
 ============  	================
  English      	Bahasa Indonesia
