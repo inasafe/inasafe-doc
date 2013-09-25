@@ -175,3 +175,26 @@ reviewed and taken into the official documentation.
 
 If you want to build the documentation locally on your Computer you should
 read :ref:`building_documentation` inside the Developer Documentation.
+
+Indonesian Translation Index
+---------------------------------
+To coordinate translation of InaSAFE into Bahasa Indonesian we have developed
+a table of commonly used terms and translation. 
+
+
+*FIXME Do not translate table!!!
+
+============  	================
+ English      	Bahasa Indonesia
+============  	================
+hazard			bencana
+exposure		keterpaparan   
+    
+============  	================
+
+We have also made a blanket decision not to translate the following words:
+
+* python
+* qgis
+
+Please add to this list as required.
