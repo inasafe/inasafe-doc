@@ -1,74 +1,57 @@
+CURRICULUM
+==========
 
-CURRICULLUM
-
-**CONTINGENCY PLAN USING OSM AND QGIS/InaSAFE**
+CONTINGENCY PLANNING WITH OPENSTREETMAP (OSM) AND QGIS/InaSAFE
+--------------------------------------------------------------
 
 BADAN NASIONAL PENANGGULANGAN BENCANA
-
-**2013**
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2013
+^^^^
 
 
 FOREWORD
 ********
 
-Contingency planning with OpenStreetMap (OSM) and QGIS/InaSAFE workshop program are designed to deliver knowledges and skills for provincial and districal disaster management agency official and staffThese knowledges and skills will help them to be able to reduce and manage disaster risk.
+Contingency planning with OpenStreetMap (OSM) and QGIS/InaSAFE workshop program are designed to deliver knowledges and skills for provincial and districal disaster management agency official and staff in order to handle emergencies since the beginning of the disaster. These knowledges and skills will help them to be able to reduce and manage disaster risk. 
 
-Badan Nasional Penanggulangan Bencana (BNPB)has identified priority needs to improve the methodology that can be used for contingency planning.
-This methodology is focused on the use of realistic disaster scenario as starting point for this new comprehensive process.
+Badan Nasional Penanggulangan Bencana (BNPB) has identified priority needs to improve the methodology that can be used for contingency planning. This methodology is focused on the use of realistic disaster scenario as starting point for this new comprehensive process. 
 
-BNPB andAusAIDthroughAustralia-Indonesia Facility for Disaster Reduction(AIFDR) have working together to create a methodology and an open-source software tools related with realistic disaster scenario development as an input for contingency planning.
-It will allow emergency disastermanagers to improve theirown scenarioscoring which can be used as an input for their disaster contingency planning.
-
-To helpworkshop center of BNPB (Pusat Diklat BNPB) for effective and systematic workshop in order to reach all competencies needed, it is necessary to develop a curriculum.
-Therefore, this workshop curriculum Scenario Development fo Contingency Planning using OSM and QGIS/InaSAFE is developed to be used as reference in workshop enforcement, both for national level or provincial/district.
-This curriculum will be enhanced throughTest
+BNPB and AusAID through Australia-Indonesia Facility for Disaster Reduction (AIFDR) have working together to create a methodology and an open-source software tools related with realistic disaster scenario development as an input for contingency planning. It will allow emergency disaster managers to improve their own scenario scoring which can be used as an input for their disaster contingency planning. 
+To help workshop center of BNPB (Pusat Diklat BNPB) for effective and systematic workshop in order to reach all competencies needed, it is necessary to develop a curriculum. Therefore, this workshop curriculum Scenario Development fo Contingency Planning using OSM and QGIS/InaSAFE is developed to be used as reference in workshop enforcement, both for national level or provincial/district. This curriculum will be enhanced through Test and input from stakeholders, both from government agency and non-government agency.
 
 We hope this curriculum can be useful.
 
-
-TABLE OF CONTENTS
-*****************
 
 
 INTRODUCTION
 ************
 
-As one of the most hazard-prone and densely populated countries in the world, Indonesia faces significant risk of loss of life and challenges to development progress as a result of natural disasters.
-This is why disaster risk reduction has been recognised by the Government of Indonesia as one of their top eleven priorities in the Medium-Term Development Plan (2010-2014).
-In recognition of the impact of disasters on developing economies, AusAID’s policy on disaster risk reduction highlights the importance of investing in disaster reduction.
+As one of the most hazard-prone and densely populated countries in the world, Indonesia faces significant risk of loss of life and challenges to development progress as a result of natural disasters. This is why disaster risk reduction has been recognised by the Government of Indonesia as one of their top eleven priorities in the Medium-Term Development Plan (2010-2014). In recognition of the impact of disasters on developing economies, AusAID’s policy on disaster risk reduction highlights the importance of investing in disaster reduction . 
 
-BNPB has a mandate to increase the overall disaster management capacity of Indonesia includingworkshopfor managers who handle disasters at the sub-national level.
-To date, BNPB’s Education andWorkshopCentre has been developing a range ofworkshopcurriculum andModulees with specific focus on a) Basic Disaster Management, b) Rapid Assessment and Coordination, and c) Contingency Planning.
-BNPB has been working with various actors and stakeholders on the development ofworkshopModulees.
+BNPB has a mandate to increase the overall disaster management capacity of Indonesia including workshop for managers who handle disasters at the sub-national level. To date, BNPB’s Education and Workshop Centre has been developing a range of workshop curriculum and Modulees with specific focus on a) Basic Disaster Management, b) Rapid Assessment and Coordination, and c) Contingency Planning. BNPB has been working with various actors and stakeholders on the development of workshop Modulees.
+BNPB has identified a priority need to improve its methodology for contingency planning with an emphasis on the use of realistic disaster scenarios as the starting point for this new, comprehensive process.
 
-BNPB has identified a priority need to improve its methodology for contingency planning with an emphasis on the use of*realistic*
+BNPB and AusAID through the Australia-Indonesia Facility for Disaster Reduction have been working together on a methodology and associated open source software  for developing realistic disaster scenarios for contingency planning. This will enable emergency managers to develop their own scenario assessments that can feed into their disaster contingency plans.  Over the last year three specific tools have been piloted in Indonesia with huge success:
 
-BNPB and AusAID through the Australia-Indonesia Facility for Disaster Reduction have been working together on a methodology and associated open source software for developing realistic disaster scenarios for contingency planning.
-This will enable emergency managers to develop their own scenario assessments that can feed into their disaster contingency plans.
-Over the last year three specific tools have been piloted in Indonesia with huge success:
-
-- InaSAFE: is free and open source software that produces realistic natural hazard impact scenarios for better planning, preparedness and response activities.
+- **InaSAFE**: is free and open source software that produces realistic natural hazard impact scenarios for better planning, preparedness and response activities.
   It is being developed by AIFDR in close consultation with BNPB.
 
-- OpenStreetMapInaSAFE (i.e. How many houses will be affected by a specific hazard).
+- **OpenStreetMap (OSM) tools**: OSM is a free map of the world that anyone can add to and edit.  Utilizing community mapping allows for more detailed information to be collected that can be utilized for analysis in InaSAFE (i.e. How many houses will be affected by a specific hazard).
 
-- QuantumGIS
+- **QuantumGIS  (QGIS)**: is an open source Geographical Information System (GIS) software that allows users to spatially analyse their data, it is also the platform on which InaSAFE is built.
 
-In order to ensure uptake, effectiveness and sustainability of these tools it is necessary to develop andTesta comprehensiveworkshoppackage for each individual tool as well as creating a pool of trainers across Indonesia.
+In order to ensure uptake, effectiveness and sustainability of these tools it is necessary to develop and Test a comprehensive workshop package for each individual tool as well as creating a pool of trainers across Indonesia. 
+ 
+This curriculum outline describes competencies to be achieved, the lists of content required to achieve the competencies in the workshop package, and the program structure of the workshop course . The workshop consists of beginner, intermediate and advance levels. The beginner workshop is mainly aimed to introduce participants to the concept of realistic disaster scenario development and help them become socialized to the concepts and explore all three of the open source tools. In contingency planning, having realistic disaster scenarios contribute test significantly to the reliability of the created planning results. As complexity and uncertainty are common in developing realistic disaster scenarios, advanced knowledge and skills in mapping and impact calculations using OSM, QGIS, and InaSAFE are required. For this reason, the intermediate level of the workshop on OSM, QGIS and InaSAFE is required to further participants’ knowledge and skills to work with the tools in anticipating possible disaster events and impacts. The workshop is expected to be furthered with an advanced level course and Workshop for Trainers course of which the curriculum will be developed separately.
 
-
-This curriculum outline describes competencies to be achieved, the lists of content required to achieve the competencies in theworkshopworkshopworkshopworkshopconcept of realistic disaster scenario development and help them become socialisedto the concepts andexplore all three of the open source tools.
-In contingency planning, having realistic disaster scenarioscontribuTestare common in developing realistic disaster scenarios, advanced knowledge and skills in mapping and impact calculations using OSM, QGIS, and InaSAFE are required.
-For thisreason, the intermediate level of theworkshopworkshopanWorkshop
-
-To gain the required competencies, theworkshopcourse is expected to apply andragogical principles (a learning approach for adults) with an emphasis on real tasks in the field and various methods in engaging active participation from the participants.
-
+To gain the required competencies, the workshop course is expected to apply andragogical principles (a learning approach for adults) with an emphasis on real tasks in the field and various methods in engaging active participation from the participants.  
 
 
 LEVELS OF WORKSHOP
 ******************
 
-OSM and QGIS workshops consists of three levels:
+The workshopOSM and QGIS/InaSAFE consists of three levels:
 
 1. Beginner
 
@@ -80,151 +63,153 @@ OSM and QGIS workshops consists of three levels:
 CURRICULUM
 **********
 
+**A. Aims**
 
-Aims
-====
+The scheme of the curriculum on Scenario Development for Contingency Planning by using OSMand QGIS/InaSAFE is designed to provide a reference to workshop organizers at national, provincial and district levels. 
 
-The scheme of the curriculum on Scenario Development for Contingency Planning by usingOSMand QGIS/InaSAFE is designed to provide a reference toworkshop
+This workshop course on  Scenario Development for Contingency Planning by using OSMand QGIS/InaSAFE consists of two seperate workshops for each technology, and each technology workshop is composed of three levels. However, this curriculum outline only describes two levels for each kind:
 
-ThisworkshopOSMand QGIS/InaSAFEconsists of two seperate workshops for each technology, and each technologyworkshop:
+1. Workshop spatial data collection OSM for beginners and intermediate levels
 
-1. Workshopspatial data collectionOSMfor beginners and intermediate levels
+2. Workshop spatial data analysis QGIS/InaSAFE for beginners and intermediate levels
 
-2. Workshopspatial data analysysQGIS/InaSAFEfor beginners and intermediate levels
-
-Bothworkshopworkshopscientific hazard layers, OSMandAFE.
+Both workshop courses are interrelated. After participating in both workshop courses, participants are expected to be able to develop scenario for contingency planning by using scientific hazard layers, OSM and QGIS/InaSAFE. 
 
 
-Target
-======
+**B. Target**
 
-**Target participants for the workshops**
+The target participants of the workshop courses, both at beginner and intermediate levels are: 
 
 1. Personnels responsible in developing contingency plans at BPBD at provincial and district levels, priority is given to those working in the prevention working unit.
-
 2. Lecturers and students from relevant departments such as Geography, Geodesy, Geomathics, Information Technology and other earth-related science.
-
-3. Representatives fromNGOs working in disaster risk reduction
-
+3. Representatives from NGOs working in disaster risk reduction
 4. Other relevant organizations such as Army, Police, Red Cross, and Scouts.
+5. Other relevant agencies. 
 
-5. Other relevant agencies.
 
-
-**Qualifications for participation at beginner level:**
+Qualifications for participation at beginner level:
 
 1. Be able to operate computer (word processing, presentations, internet, spreadsheets).
+2. Bring a laptop with minimum RAM of 2 GB (recommended 4 GB)
+3. Having a GPS unit and understanding of its working is an advantage
+4. Having basic skills in Geographic Information System is an advantage
 
-2. Bring a laptop with minimum RAM of 2GB (recommended 4 GB)
+Qualifications for participation at intermediate level:
 
-3. Havinga GPS unit and understanding of its working is an advantage
-
-4. Having basic skills in Geographic
-
-
-**Qualifications for participation at intermediate level:**
-
-1. MUST have attended theworkshopread through the beginner manuals
-
+1. MUST have attended the workshop at beginner level OR equivalent knowledge OR Have a background in Geography Information System, and have read through the beginner manuals
 2. Be able to operate computer (word processing, presentations, internet, spreadsheet).
-
-3. Bring a laptop with minimum RAM of2
-
-4. An understanding ofic
-
+3. Bring a laptop with minimum RAM of 2 GB recommended 4 GB
+4. An understanding of Geographic Information Systems
 5. Having a GPS unit and understanding of its working is an advantage
 
+ 
+**C. Map of Competencies**
 
-Map of Competencies
-===================
+**1. Workshop Collecting Data Using OSM**
 
-   1. **Workshop Collecting Data Using OSM**
++----+-------------+---------------------------------------------------------------------------------------------------------------------+
+| No.| Level       | Standard Competency and Basic Competencies 																		 |
++====+=============+=====================================================================================================================+
+| A. | Beginner    | **Collecting Spatial Data with OSM**     																			 |
+|    |             |																													 |
+|    |             | 1.	Drawing map of an area as basic understanding of OpenStreetMap 													 |
+|    |             | 2.	Be able to operate OpenStreetMap 																				 |
+|    |             | 3.	Be able to operate JOSM 																						 |
+|    |             | 4.	Be able to use GPS to add data to OSM 																			 |
+|    |             | 5.	Be able to use Field Papers to add data to OSM 																	 |
+|    |             | 6.	Be able to edit a map and add information to OSM using JOSM 													 |
+|    |             | 7.	Correct imagery offset 																							 |
+|    |             | 8.	Getting OSM data in a specific format to be analyzed further in GIS (Geographic Information System) software     |
++----+-------------+---------------------------------------------------------------------------------------------------------------------+
+| B. | Intermediate| **Quality Assurance for contributing of OSM mapping**															     |
+|    |             | 																 				  									 |
+|    |             | 1.	Applying better digitizing technique for improving quality of the resulting data 								 |
+|    |             | 2.	Use JOSM Validation tools to ensure the quality of contribution of mapping given								 |
+|    |             | 3.	Resolving conflict when uploading OSM data 																		 |
+|    |             | 4.	Creating preset file in JOSM																			 		 |
+|    |             | 5.	Using private data store feature for keep private data															 |
+|    |             | 6.	Creating and editing page in OSM Wiki 													 						 |
++----+-------------+---------------------------------------------------------------------------------------------------------------------+
+                                   
 
-+----+--------------+-------------------------------------------------------+
-| No | Level        | Standard Competencyand Basic Competencies             |
-+----+--------------+-------------------------------------------------------+
-| A. | Beginner     | **Collecting Spatial Data with OSM****None**          |
-+----+--------------+-------------------------------------------------------+
-| B. | Intermediate | **Quality Assurance for contributing of OSM mapping** |
-+----+--------------+-------------------------------------------------------+
 
-**None**
+**2. Data Analysis Using QGIS and InaSAFE Workshop**
 
-1. **Data Analysis Using QGIS and InaSAFE Workshop**
++----+-------------+---------------------------------------------------------------------------------------------------------------------+
+| No.| Level       | Standard Competency and Basic Competencies 																		 |
++====+=============+=====================================================================================================================+
+| A. | Beginner    | **Managing spatial data using QGIS and analyzing disaster impact scenario using InaSAFE** 				   			 |
+|    |             |																													 |
+|    |             | 1.	Using GIS to develop scenario for contingency planning 															 |
+|    |             | 2.	Explaining the benefit of QGIS and InaSAFE for developing realistic scenario for contingency planning			 |
+|    |             | 3.	Installing QGIS and explaining QGIS user interface 																 |
+|    |             | 4.	Using QGIS plugins 																								 |
+|    |             | 5.	Determining projection system and transformation in QGIS 														 |
+|    |             | 6.	Working with vector data 																						 |
+|    |             | 7.	Categorizing and creating label from vector data 																 |
+|    |             | 8.	Working with raster data     																					 |
+|    |             | 9. Creating and editing new vector layer    																		 |
+|    |             | 10. Analyzing vector data to solve problem    																		 |
+|    |             | 11. Creating maps with Map composer 																			     |
+|    |             | 12. Using InaSAFE    																								 |
+|    |             | 13. Keeping interaction and communication to support QGIS and InaSAFE in Indonesia     							 |
++----+-------------+---------------------------------------------------------------------------------------------------------------------+
+| B. | Intermediate| **Spatial Data Analysis using QGIS and InaSAFE which is related to contingency planning**						     |
+|    |             | 																 				  									 |
+|    |             | 1.	Understand QGIS concepts 																						 |
+|	 |			   | 2.	Preparing data and keywordsforInaSAFE 																			 |
+|	 |			   | 3.	Preparing data andkeywordsforInaSAFE 																			 |
+|	 |			   | 4.	Planning evacuation route based on hazard Information 															 |
+|	 |			   | 5.	Calculate damage and lossess1.	Applying better digitizing technique for improving quality of the resulting data |								 
++----+-------------+---------------------------------------------------------------------------------------------------------------------+
 
-+----+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| No | Level        | Standard Competency and Basic Competency                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-+----+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| A. | Beginner     | Managing spatial data using QGIS and analyzing disaster impact scenario using InaSAFE1.  Using GIS to develop scenario for contingency planning 2.Explaining the benefit of QGIS and InaSAFE for developing realistic scenario for contingency planning 3.Installing QGIS and explaining QGIS user interface 4.Using QGIS plugins 5.Determining projection system and transformation in QGIS 6.Working with vector data 7.Categorizing and creating label from vector data 8.Working with raster data 9.Creating and editing new vector layer 10.  Analyzing vector data to solve problem 11.Creating maps with Map Composer 12.  Using InaSAFE 13. Keeping interaction and communication to support QGIS and InaSAFE in Indonesia |
-+----+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| B. | Intermediate | Spatial Data Analysis using QGIS and InaSAFE which is related to contingency planning.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-+----+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
+1. Identifying exact competencies that have to be learnt to collect spatial data using OSM and analyze the data using QGIS/InaSAFE. Competencies are elaborated as Standard Competency or workshop material competency, basic competency, and indicator. Standard Competency or workshop material competency is the minimum requirement of participant qualification which stands for their knowledge, attitude, and skill that need to be achieved for a workshop material. Basic competency is a number of skills that need to be mastered by the participant in a workshop material as a reference of indicator building. Indicator is:
 
-Curriculum Development
-======================
+    a. Behavioral characteristics (measurable evidence) that can give an idea that the workshop participants have achieved basic competency
+    b. Basic competency achievement mark which is marked from measurable behavior such as attitude, knowledges, and skills.
+    c. Developed in accordance with the characteristics of the workshop participant, conditions and workshop organizer. 
+    d. The formulation is using measurable operational and / or observable.
+    e. Used as a basis to develop an assessment tool.
 
-The Contingency Planning Using OSM and QGIS/InaSAFE curriculum has been developed through this process:
+2. Compiling all teaching and workshop materials used in the workshop. 
+3. Soliciting input from participants who have attended the workshop, both from beginner or intermediate workshop. 
+4. Discuss with the workshop trainers to make sure: 
 
-1. Identifying exact competencies that have to be learnt to collect spatial data using OSM and analyze the data using QGIS/InaSAFE.
+    a.	All materials needed are included. 
+    b.	Depth of the material in accordance with the competencies to be mastered.
+    c.	Organizing materials arranged in systematic. 
 
-Competencies are elaborated as Standard Competency
-
-Standard Competencyor workshop material competency is the minimum requirement of participant qualification which stands for theirknowledge, attitude, and skill that need to be achieved for a workshop material.
-
-Basic competency is a number of skills that need to be mastered by the participant in a workshop material as a reference of indicator building.
-
-Indicator is:
-
-a. Behavioral characteristics (measurable evidence)that can give an idea that the workshopparticipants have achieved basic competency
-
-b.Basic competency achievement mark which is marked from measurable behavior such as attitude, knowledges, and skills.
-
-c. Developed in accordance with the characteristics ofthe workshop participant, conditions and workshop organizer.
-
-d.The formulationisusing measurable operational and / or observable.
-
-e. Used as a basis to develop an assessment tool.
-
-1. Compiling all teaching and workshop materials used in the workshop.
-
-2. Soliciting input from participants who have attended the workshop, both from beginner or intermediate workshop.
-
-3. Discuss with the workshop trainers to make sure:
-
-   1. All materials needed are included.
-
-   2. Depth of the material in accordance with the competencies to be mastered.
-
-   3. Organizing materials arranged insystematicly.
 
 
 Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
-=================================================================
+*****************************************************************
 
-   - Data Collection Using OSM Beginner Level
+**Data Collection Using OSM Beginner Level**
 
-**Standard Competency****:****Collecting spatial data using OSM**
+**Standard Competency: Collecting spatial data using OSM**
 
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| Basic Competency                                                         | Indicator                                                                                                                                                | Core Material                                                                                                                       |
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| 1.Drawing map of an aera as basic understanding of OpenStreetMap         |                                                                                                                                                          | **Basic Concept of****OpenStreetMap****Website**                                                                                    |
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                          |                                                                                                                                                          | **Working with OSM**                                                                                                                |
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                          |                                                                                                                                                          | **Working with****JOSM**                                                                                                            |
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                          |                                                                                                                                                          | **Using GPS**                                                                                                                       |
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| 5.Use*field paper*to add data in OSM                                     |                                                                                                                                                          | **Field **                                                                                                                          |
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-| 6.Edit the maps and add some information in OSM with using JOSM software | 6.1 Download current OSM data on the area youwant to edit.6.2 Set the layer JOSM6.3 Editing OSM data6.4 Editing Tag6.5 Upload OSM data6.6 Save OSM files | **Editing OpenStreetMap with JOSM**                                                                                                 |
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                          |                                                                                                                                                          | **Imagery Offset**1.Definition imagery offset2.Part of imagery (resolution and georeference)3.Imagery offset4.Fixing imagery offset |
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
-|                                                                          |                                                                                                                                                          | **Getting OSM Data**                                                                                                                |
-+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+| Basic competency 			                                          | Indicator       		   									     | Core material 										  | 																		 
++=====================================================================+==================================================================+========================================================+
+|1. Drawing map of an area as basic understanding of OpenStreetMap 	  | 																 | **Basic Concept of OpenStreetMap Website**			  |
+|    																  | 1. Explain the concept and definition of OpenStreetMap	   	     | 														  |
+|    																  | 2. Explain the definition and objectives of data collection 	 | 1. Concept and definition of OpenStreetMap 			  |
+|     					  											  | 3. Explain the composition of a map 							 | 2. Definition and objectives of data collection 		  |
+|    																  | 4. Make a handwriting sketch of an area		 					 | 3. Component of a map 								  |
+|																	  | 																 | 4. Handwriting sketch of an area 	     	          |														
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+|1. Drawing map of an area as basic understanding of OpenStreetMap 	  | 																 | **Basic Concept of OpenStreetMap Website**			  |
+|    																  | 1. Explain the concept and definition of OpenStreetMap	   	     | 														  |
+|    																  | 2. Explain the definition and objectives of data collection 	 | 1. Concept and definition of OpenStreetMap 			  |
+|     					  											  | 3. Explain the composition of a map 							 | 2. Definition and objectives of data collection 		  |
+|    																  | 4. Make a handwriting sketch of an area		 					 | 3. Component of a map 								  |
+|																	  | 																 | 4. Handwriting sketch of an area 	     	          |														
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+
+
+
 
 2. Data Collection Using OSM Intermediate Level Workshop
 
@@ -304,7 +289,7 @@ Curriculum Structure
 
 Based on curriculum, program structure is designed as follow.
 
-**1. Data Collection Using OSM Beginner Level**
+1.**Data Collection Using OSM Beginner Level**
 
 +-----+----------------------------------------+-----------------------------------------+
 | No  | **Workshop Material**                  | **Time (learning hour****)**@ 45Minutes |
@@ -372,7 +357,7 @@ Based on curriculum, program structure is designed as follow.
 |     | Total                                      | 30                                              |
 +-----+--------------------------------------------+-------------------------------------------------+
 
-**3. Data Analysis Using QGIS/InaSAFE Beginner Level**
+3.Data Analysis Using QGIS/InaSAFE Beginner Level
 
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 | No | **Workshop Material**                                                                                 | **Time (learning hour****)**@ 45Minutes |
@@ -418,7 +403,7 @@ Based on curriculum, program structure is designed as follow.
 |    | Total                                                                                                 | 50                                      |
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 
-**4. Data Analysis Using QGIS/InaSAFE Intermediate Level**
+4.Data Analysis Using QGIS/InaSAFE Intermediate Level
 
 +----+-----------------------------------------+-----------------------------------------+
 | No | **Workshop Material**                   | **Time (learning hour****)**@ 45Minutes |
@@ -461,9 +446,9 @@ This syllabus will still be described in more detail in thetoolkit/workshop manu
 
 **Contingency Planning Using OSM and QGIS/InaSAFE Syllabus**
 
-**1. Data Collection Using OSM Beginner Level**
+**1. Data Collection Using OSM Beginner Level****None**
 
-**Standard Competency: Collecting spatial data using OSM**
+Standard Competency:Collecting spatial data using OSM
 
 +-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+------------------------------------------------------------------------------------------------------------------------------+
 | Basic Competency                                                                                          | Indicator                                                                                                                                                                                                             | Material                                                                                                                               | LearningActivity                                                                                                                                                                                                                                                                                     | Time Allocation       | Assessment   | Learning Source                                                                                                              |
@@ -501,10 +486,9 @@ This syllabus will still be described in more detail in thetoolkit/workshop manu
 | Getting OSM data in a certain format for further analysis in Geography Information System (GIS) software. |                                                                                                                                                                                                                       | **Getting OSM Data**                                                                                                                   | Participants are practicing how to download OSM data from Geofabrik website, and downloading OSM data based on area and tags needed using Hot\-Export                                                                                                                                                | 90Minutes             |              | ProjectorSlide PPModulee9Participant’s computer                                                                              |
 +-----------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+------------------------------------------------------------------------------------------------------------------------------+
 
-**2. Data Collection Using OSM Intermediate Level Workshop**
+2. Data Collection Using OSM Intermediate Level Workshop
 
-**Standard Competency: Quality Assurance for contributing of OSM mapping**
-
+**None****Quality Assurance for contributing of OSM mapping**
 
 +-------------------------------------------------------------------------------------+-----------+------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+-------------------------------------------------------------------------------------------------+
 | Basic Competency                                                                    | Indicator | Core Material                                  | Learning Activity                                                                                                                                                                                                                                                                                                                          | Time Allocation | Assesment    | Learning Source                                                                                 |
@@ -534,9 +518,9 @@ This syllabus will still be described in more detail in thetoolkit/workshop manu
 | Create and edit page in OSM wiki                                                    |           | **Wiki OpenStreetMap**                         | Participants are doing FGD about wiki OpenStreetMapParticipants are practicing how to create OSM wiki account, editing wiki, learning about wiki format, creating new wiki page, uploading images, translating pages, and view the changelog.                                                                                              | 2Hours          | TestPractice | ProjectorSlide PPModuleeParticipant’s computer                                                  |
 +-------------------------------------------------------------------------------------+-----------+------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+--------------+-------------------------------------------------------------------------------------------------+
 
-**3.Data Analysis Using QGIS/InaSAFE Beginner Level Workshop**
+**3.****Data Analysis Using QGIS/InaSAFE Beginner Level Workshop**
 
-**Standard Competency:Managing spatial data using QGIS and analyzing disaster impact scenario using InaSAFE**
+Standard Competency:Managing spatial data using QGIS and analyzing disaster impact scenario using InaSAFE
 
 +-------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------+------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------+-------+----------------------------------------+------------------------------------------------+
 | Basic Competency                                                                                      | Indicator             | Core Material                                                                                                                        | Learning Activity                                                                                                                                                                                                                                                                                                                                                                                                                     | Time Allocation   | Assesment     | Learning Source                                                                         |
@@ -594,9 +578,9 @@ This syllabus will still be described in more detail in thetoolkit/workshop manu
 | Keeping interaction to maintain analysis data network using QGIS/InaSAFE                              |                                                                   | **Social Media to Keep QGIS and InaSAFE Interaction**                                                                                                                                                                                       | Participants are expected to keep update with social media through Facebook or QGIS Forum.                                                                                                                                                                                         | 60Minutes                 | TestPractice                                   | ProjectorSlide PPModuleeParticipant’s computer |
 +-------------------------------------------------------------------------------------------------------+-----------------------+-------------------------------------------+------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+-------+-------+----------------------------------------+------------------------------------------------+
 
-**4. Data Analysis Using QGIS/InaSAFE Intermediate Level Workshop**
+4. Data Analysis Using QGIS/InaSAFE Intermediate Level Workshop
 
-**Standard Competency: Spatial dataanalysis using QGIS and InaSAFE which is related to contingency planning.**
+Standard Competency: Spatial dataanalysis using QGIS and InaSAFE which is related to contingency planning.
 
 +-------------------------------------------------------+-----------+----------------------+----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+--------+--------+-------+-------+---------------------------------------------------------+
 | Basic Competency                                      | Indicator | **Core Material**                                                                                                                                       | Learning Activity                                                                                                                                                                                                                                                                                                                                           | Time Allocation | Assesment     | Learning Source                                         |
