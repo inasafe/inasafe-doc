@@ -1,4 +1,4 @@
-.. image:: /static/beginner/qgis-inasafe/image6.png
+.. image:: /static/training/beginner/qgis-inasafe/image6.png
 
 ********
 Module 5
@@ -23,11 +23,11 @@ The CRS that all the data as well as the map itself are in right now is called W
 - Open the project world.qgs, located in the qgis/ folder
 - Zoom in to Indonesia by using the Zoom In tool.
 
-.. image:: /static/beginner/qgis-inasafe/image54.png
+.. image:: /static/training/beginner/qgis-inasafe/image54.png
  
 - Setting the scale in the Scale field, which is in the Status Bar along the bottom of the screen. While over Indonesia, set this value to 1:20000000 (one to twenty million).
 
-.. image:: /static/beginner/qgis-inasafe/image55.png
+.. image:: /static/training/beginner/qgis-inasafe/image55.png
  
 - Now pan around the map while keeping an eye on the Scale field.
 
@@ -45,15 +45,15 @@ Every QGIS project has a CRS, and each of the data layers have a CRS too.  Often
 
 - To enable “on the fly” projection, click on the CRS Status button in the Status Bar along the bottom of the QGIS window:
 
-.. image:: /static/beginner/qgis-inasafe/image56.png
+.. image:: /static/training/beginner/qgis-inasafe/image56.png
  
 - In the dialog that appears, check the box next to Enable ‘on the fly’ CRS transformation.
 
-.. image:: /static/beginner/qgis-inasafe/image57.png
+.. image:: /static/training/beginner/qgis-inasafe/image57.png
  
 - Type the word global into the Filter field. One CRS (NSIDC EASE-Grid Global) will appear in the list below.
 
-.. image:: /static/beginner/qgis-inasafe/image58.png
+.. image:: /static/training/beginner/qgis-inasafe/image58.png
  
 - Click on it to select it, then click OK.
 - Notice how the shape of Indonesia changes. All projections work by changing the apparent shapes of objects on Earth.
@@ -83,7 +83,7 @@ To correct this:
 
 Now, because they’re made to project in the same CRS, the two datasets fit perfectly:
 
-.. image:: /static/beginner/qgis-inasafe/image59.png
+.. image:: /static/training/beginner/qgis-inasafe/image59.png
  
 When combining data from different sources, it’s important to remember that they might not be in the same CRS. “On the fly” reprojection helps you to display them together.
 
@@ -102,11 +102,11 @@ Let’s reproject the Indonesia layer so that it is in the same CRS as the proje
 - Check the box next to “Add saved file to map.”
 - The Save vector layer as... dialog now looks like this:
 
-.. image:: /static/beginner/qgis-inasafe/image60.png
+.. image:: /static/training/beginner/qgis-inasafe/image60.png
  
 - Click OK and after a minute, you should be presented with:
 
-.. image:: /static/beginner/qgis-inasafe/image61.png
+.. image:: /static/training/beginner/qgis-inasafe/image61.png
  
 - Click OK.
 - Now your new layer, Indonesia_terproyeksi, will be shown in the layers panel.  If you turn off “on the fly” reprojection, this layer will still be shown correctly, because it has been reprojected into the same CRS as the project (and the continents layer).
@@ -119,7 +119,7 @@ There are many more projections than just those included in QGIS by default. You
 - Load the vector layer oceans.shp located in qgis/peta_dunia/.
 - Go to Settings ‣ Custom CRS... and you’ll see this dialog:
 
-.. image:: /static/beginner/qgis-inasafe/image62.png
+.. image:: /static/training/beginner/qgis-inasafe/image62.png
  
 - We will create a projection known as Van der Grinten I.  This interesting projection represents the Earth on a circular field instead of a rectangular field, as most projections do.
 - Enter “Van der Grinten I” in the Name field.
@@ -127,25 +127,25 @@ There are many more projections than just those included in QGIS by default. You
 
 +proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +a=6371000 +b=6371000 +units=m +no_defs
 
-.. image:: /static/beginner/qgis-inasafe/image63.png
+.. image:: /static/training/beginner/qgis-inasafe/image63.png
  
 - Click the Save button:
 
-.. image:: /static/beginner/qgis-inasafe/image64.png
+.. image:: /static/training/beginner/qgis-inasafe/image64.png
 
 - Click OK.
 - Enable “on the fly” reprojection.
 
-.. image:: /static/beginner/qgis-inasafe/image65.png
+.. image:: /static/training/beginner/qgis-inasafe/image65.png
  
 - Search for your newly defined projection by typing it into the Filter box:
 
-.. image:: /static/beginner/qgis-inasafe/image66.png
+.. image:: /static/training/beginner/qgis-inasafe/image66.png
  
 - You should see it appear in the box at the bottom.  Select it, and click OK.
 - Once you’ve applied the new projection, the map will be reprojected like this:
 
-.. image:: /static/beginner/qgis-inasafe/image67.png
+.. image:: /static/training/beginner/qgis-inasafe/image67.png
  
 
  

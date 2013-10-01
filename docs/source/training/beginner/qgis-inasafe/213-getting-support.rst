@@ -1,4 +1,4 @@
-.. image:: /static/beginner/qgis-inasafe/image6.png
+.. image:: /static/training/beginner/qgis-inasafe/image6.png
 
 *********
 Module 13
@@ -15,7 +15,7 @@ Getting Support
 
 With the development of social media today, it is great that QGIS and InaSAFE users can exchange ideas online.  One common platform that can be used is Facebook.  You can join the Facebook group Forum Pengguna QGIS dan InaSAFE Indonesia to discuss the experiences or difficulties you have using QGIS and InaSAFE.
 
-.. image:: /static/beginner/qgis-inasafe/image287.png
+.. image:: /static/training/beginner/qgis-inasafe/image287.png
   
 **2. QGIS Tutorials**
 

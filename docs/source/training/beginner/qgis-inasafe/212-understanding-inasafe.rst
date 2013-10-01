@@ -1,4 +1,4 @@
-.. image:: /static/beginner/qgis-inasafe/image6.png
+.. image:: /static/training/beginner/qgis-inasafe/image6.png
 
 *********
 Module 12
@@ -49,15 +49,15 @@ Before we run any scenarios, let’s take a closer look at the InaSAFE interface
 
 - If the InaSAFE toolbar is not visible, right-click on the toolbars and make sure that “Plugins” is checked.  The toolbar looks like this:
 
-.. image:: /static/beginner/qgis-inasafe/image270.png
+.. image:: /static/training/beginner/qgis-inasafe/image270.png
  
 - To show the InaSAFE panel, click on the button named “Toggle InaSAFE dock.”
 
-.. image:: /static/beginner/qgis-inasafe/image271.png
+.. image:: /static/training/beginner/qgis-inasafe/image271.png
  
 - Note that just like QGIS toolbars, you can drag and drop the InaSAFE dock panel to change its position on the QGIS interface.  You can pull it away as a separate window, or place it below the Layers list.  It’s quite convenient in its location on the right side of QGIS, so we will leave it there.
 
-.. image:: /static/beginner/qgis-inasafe/image272.png
+.. image:: /static/training/beginner/qgis-inasafe/image272.png
  
 The InaSAFE panel consists of three parts: Questions, Results and Buttons.  The questions are mixed in with dropdown boxes - this is where we establish our input data and define the scenario that we want InaSAFE to process.  The purpose of InaSAFE is to make your impact analysis very simple and easy to do.  The Questions section provides a simple way for you to formulate what you want to know.  All questions are created in the following format:
 
@@ -76,11 +76,11 @@ Let’s begin by adding our hazard layer to QGIS.  It’s a raster model of an e
 
 - Click the “Add Raster Layer” button.
 
-.. image:: /static/beginner/qgis-inasafe/image273.png
+.. image:: /static/training/beginner/qgis-inasafe/image273.png
  
 - Navigate to the qgis/Bandung folder and add Lembang_Earthquake_Scenario.asc. This data is raster data (in ASCII format) which represents the magnitude of the earthquake. The layer will look like this:
 
-.. image:: /static/beginner/qgis-inasafe/image274.png
+.. image:: /static/training/beginner/qgis-inasafe/image274.png
  
 You will notice that the hazard dropdown box has been automatically filled in the InaSAFE panel.  This is because the data file has already been prepared for us with keyword metadata (fancy words for settings) that tells InaSAFE whether it’s a hazard or exposure layer.  When we add the exposure data, we will learn how to do inform InaSAFE ourselves.
 
@@ -92,11 +92,11 @@ Let’s add our exposure data to QGIS - once again we will be using buildings ob
 
 - Click on the “Add Vector Layer” button.
 
-.. image:: /static/beginner/qgis-inasafe/image275.png
+.. image:: /static/training/beginner/qgis-inasafe/image275.png
  
 - Add the file Bangunan_Bandung.shp, which is located in the qgis/Bandung folder.
 
-.. image:: /static/beginner/qgis-inasafe/image276.png
+.. image:: /static/training/beginner/qgis-inasafe/image276.png
  
 - Notice that unlike the hazard layer, it does not appear automatically in InaSAFE!
 
@@ -106,21 +106,21 @@ In order for InaSAFE to know that our layers are hazard or exposure datasets, we
 
 - Select the earthquake layer in the Layers list, and click on the “InaSAFE Keyword Editor” button.
 
-.. image:: /static/beginner/qgis-inasafe/image277.png
+.. image:: /static/training/beginner/qgis-inasafe/image277.png
  
 - You can see that this layer has already been assigned some keyword information for InaSAFE, including its title, a category, and a subcategory.
 
-.. image:: /static/beginner/qgis-inasafe/image278.png 
+.. image:: /static/training/beginner/qgis-inasafe/image278.png 
 
 - Click OK, and now select the Bangunan_Bandung layer and open the keyword editor.
 
-.. image:: /static/beginner/qgis-inasafe/image279.png
+.. image:: /static/training/beginner/qgis-inasafe/image279.png
  
 - You’ll notice that title and category are set, but not the subcategory!
 - Change this to “structure,” and then click OK.
 - Notice that the layer now appears in the InaSAFE dock panel.
 
-.. image:: /static/beginner/qgis-inasafe/image280.png
+.. image:: /static/training/beginner/qgis-inasafe/image280.png
  
 **6. Impact Analysis**
 
@@ -130,9 +130,9 @@ The third dropdown box is the impact function (“Might”).  This concludes our
 
 Click the “Run” button at the bottom to start the impact analysis.  At the end of the process, the statistics will be displayed in the Results section, and a new layer will be added to the Layers list that describes the result of the analysis.  The map will distinguish between buildings that are affected and those that are not.
 
-.. image:: /static/beginner/qgis-inasafe/image281.png
+.. image:: /static/training/beginner/qgis-inasafe/image281.png
 
-.. image:: /static/beginner/qgis-inasafe/image282.png
+.. image:: /static/training/beginner/qgis-inasafe/image282.png
  
 
 **7. Improve the InaSAFE Output Map**
@@ -143,13 +143,13 @@ Let’s add Bing aerial imagery as a background for our map.
 - Go to Plugins ‣ OpenLayers plugin ‣ Add Bing Aerial layer.
 - Drag the layer below your new impact layer.  If the buildings don’t show correctly above the imagery, right-click on the layer and select “Update drawing order.”
 
-.. image:: /static/beginner/qgis-inasafe/image283.png
+.. image:: /static/training/beginner/qgis-inasafe/image283.png
  
 **8.  Using the Print Button**
 
 The data displayed on the screen can be saved to a PDF file by clicking Print at the bottom of the InaSAFE panel.  As we’ve seen already, two files will be created, one containing the map and another the data.  Note that you can adjust the print out of your map by adding layers and changing symbology, and also by zooming to areas of your choosing.
 
-.. image:: /static/beginner/qgis-inasafe/image284.png
+.. image:: /static/training/beginner/qgis-inasafe/image284.png
  
 **9. Save Your Results**
 
@@ -163,10 +163,10 @@ To save the project:
 
 - Click on the “Save Project” button at the top of QGIS.
 
-.. image:: /static/beginner/qgis-inasafe/image285.png
+.. image:: /static/training/beginner/qgis-inasafe/image285.png
  
 - Give a name to the project and put it in the directory you want to save your work. Then click Save.
 
-.. image:: /static/beginner/qgis-inasafe/image286.png
+.. image:: /static/training/beginner/qgis-inasafe/image286.png
  
   
