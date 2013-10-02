@@ -12,3 +12,6 @@ training is 5 days long.
 
    socialisation/index
    intro-analysis/index
+   curriculum/index
+   beginner/index
+   intermediate/index

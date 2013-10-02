@@ -1,4 +1,4 @@
-.. image:: /static/beginner/qgis-inasafe/image6.png
+.. image:: /static/training/beginner/qgis-inasafe/image6.png
 
 ********
 Module 6
@@ -34,15 +34,15 @@ It’s important to know that the data you will be working with does not only re
 - You can see in your project the position of Sleman districts, the railway, and some roads, but you can’t see all of the data contained in those layers.
 - Select Jalan_Sleman_OSM in the layers list.
 
-.. image:: /static/beginner/qgis-inasafe/image68.png
+.. image:: /static/training/beginner/qgis-inasafe/image68.png
  
 - Click the “Open Attribute Table” button:
 
-.. image:: /static/beginner/qgis-inasafe/image69.png
+.. image:: /static/training/beginner/qgis-inasafe/image69.png
  
 - You will see a table with more data about the streets layer.  This extra data is called attribute data.  The lines that you can see on your map represent where the streets go - this is the spatial data. You will remember in JOSM that there was the same division.  The points, lines, and shapes you drew tell us where, but the tags, or attributes, tell us what.  These definitions are commonly used in GIS, so it’s essential to remember them!
 
-.. image:: /static/beginner/qgis-inasafe/image70.png
+.. image:: /static/training/beginner/qgis-inasafe/image70.png
  
 - Take a look at the attribute table.  Each row in the table is associated with one feature in the streets layer.  Each column contains one of the attributes.  If you select other layers and click on the “Open Attribute Table” button, you’ll see different tables.
 - Close the attribute table.
@@ -56,7 +56,7 @@ You’ve already added vector data to a project once, in the form of a shapefile
 - Do you remember how to add a shapefile?  Try adding the layer POI_Sleman_OSM, from the shapefile located in the tutorial directory.  If you don’t remember how to add a new vector layer, refer to the instructions in chapter 2.
 - Your project should look like this after the new layer has been added:
 
-.. image:: /static/beginner/qgis-inasafe/image71.png
+.. image:: /static/training/beginner/qgis-inasafe/image71.png
  
 
 **Databases**
@@ -65,17 +65,17 @@ Shapefiles (and other types of files) are one way to store geographic data.  You
 
 - Let’s try adding a layer from a database. Click on the following icon.  If you can’t find it, right-click on the toolbar and make sure that the “Manage Layers” toolbar is enabled.
 
-.. image:: /static/beginner/qgis-inasafe/image72.png
+.. image:: /static/training/beginner/qgis-inasafe/image72.png
  
 - You will see a dialog box.  Click “New.”
 
-.. image:: /static/beginner/qgis-inasafe/image73.png
+.. image:: /static/training/beginner/qgis-inasafe/image73.png
  
 - Navigate to the qgis_data/Sleman folder and find the file guna_lahan.db.  Select the file and click “Open.”
 - Now in the original dialog box, you will see that the dropdown button now contains “guna_lahan.db @ ...”, followed by the path of the database file on your computer.
 - Click “Connect.”  You will see the following in the box:
 
-.. image:: /static/beginner/qgis-inasafe/image74.png
+.. image:: /static/training/beginner/qgis-inasafe/image74.png
  
 - This database actually has three different layers available, all saved in the database.  Click on the first layer to select it, then hold SHIFT and click the last layer to select them all.
 - Click “Add.”  This will add all three layers to our project.
@@ -85,7 +85,7 @@ Shapefiles (and other types of files) are one way to store geographic data.  You
 - The layers you have just added are all polygon layers, so you will want to drag them down below the line and point layers.  If you have a checkbox beneath your layers list that reads “Control rendering order,” go ahead and check it.
 - Let’s remove a couple of layers to make it easier to deal with our data.  Right-click on the railway and district layers and click “Remove.”  Then order your layers like this:
 
-.. image:: /static/beginner/qgis-inasafe/image75.png 
+.. image:: /static/training/beginner/qgis-inasafe/image75.png 
 
 **4. Symbology**
 
@@ -103,19 +103,19 @@ To change a layer’s symbology, we will open its Layer Properties. Let’s begi
 
 - In the Properties window select the “Style” tab on the far left.
 
-.. image:: /static/beginner/qgis-inasafe/image76.png 
+.. image:: /static/training/beginner/qgis-inasafe/image76.png 
  
 - Click the “Change” button.
 
-.. image:: /static/beginner/qgis-inasafe/image77.png 
+.. image:: /static/training/beginner/qgis-inasafe/image77.png 
 
 - A standard color dialog will appear.  Choose a grey color and click OK.
 
-.. image:: /static/beginner/qgis-inasafe/image78.png
+.. image:: /static/training/beginner/qgis-inasafe/image78.png
  
 - Click OK again in the Layer Properties window, and you will see the color change being applied to the layer.
 
-.. image:: /static/beginner/qgis-inasafe/image79.png 
+.. image:: /static/training/beginner/qgis-inasafe/image79.png 
 
 *4.2  Changing Symbol Structure*
 
@@ -124,27 +124,27 @@ This is good stuff so far, but there’s more to a layer’s symbology than just
 - Open the Layer Properties window for the vegetasi layer.  Under the Style tab, you will see the same kind of dialog as before. This time, however, we will do more than just change the color.
 - Click on the Change... button below the color display:
 
-.. image:: /static/beginner/qgis-inasafe/image80.png 
+.. image:: /static/training/beginner/qgis-inasafe/image80.png 
  
 - The Symbol properties dialog will appear.
 
-.. image:: /static/beginner/qgis-inasafe/image81.png 
+.. image:: /static/training/beginner/qgis-inasafe/image81.png 
  
 - Change the color inside the polygons in the layer by clicking the button next to the Color label:
 
-.. image:: /static/beginner/qgis-inasafe/image82.png 
+.. image:: /static/training/beginner/qgis-inasafe/image82.png 
  
 - In the dialog that appears, choose a new color (that seems to suit vegetation).
 - Click OK.
 - Next, we want to get rid of the lines between all the farms.
 - Click on the Border style dropdown. At the moment, it should be showing a short line and the words Solid Line.
 
-.. image:: /static/beginner/qgis-inasafe/image83.png 
+.. image:: /static/training/beginner/qgis-inasafe/image83.png 
  
 - Change this to No Pen.
 - Click OK, and then OK again.  Now when we look at our map, the vegetasi layer will have a new color and no lines between polygons.
 
-.. image:: /static/beginner/qgis-inasafe/image84.png 
+.. image:: /static/training/beginner/qgis-inasafe/image84.png 
  
 - Try changing the symbology of the pemukiman layer so that it also does not have outlines.
  
@@ -156,25 +156,25 @@ Sometimes you will find that one of your layers is not suitable for a given scal
 
 In our case, we may decide to hide our streets layer when we are zoomed out very far (a small scale).  For example, the streets layer is not very useful when we are zoomed out far and it looks like a blob.
 
-.. image:: /static/beginner/qgis-inasafe/image85.png 
+.. image:: /static/training/beginner/qgis-inasafe/image85.png 
  
 Let’s enable scale-based rendering:
 
 - Open the Layer Properties dialog for the Jalan_Sleman_OSM layer.
 - Activate the General tab.
 
-.. image:: /static/beginner/qgis-inasafe/image86.png 
+.. image:: /static/training/beginner/qgis-inasafe/image86.png 
  
 - Enable scale-based rendering by clicking on the checkbox labeled “Use scale dependent rendering.”  Then change the value in “Maximum” to 100000.
 
-.. image:: /static/beginner/qgis-inasafe/image87.png 
+.. image:: /static/training/beginner/qgis-inasafe/image87.png 
  
 - Click OK.
 - Now look at your map and see what happens when you zoom in and out.  The streets layer should appear when you are at a large scale and disappear at small scales.
 
 *NOTE:  You can use your mouse wheel to zoom in increments. Alternatively, use the zoom tools to draw a box and zoom to it:*
 
-.. image:: /static/beginner/qgis-inasafe/image88.png 
+.. image:: /static/training/beginner/qgis-inasafe/image88.png 
  
 *4.4 Adding Symbol Layers*
 
@@ -183,15 +183,15 @@ Now that you know how to change simple symbology for layers, the next step is to
 - Go back to the vegetasi layer’s Symbol properties dialog as before.
 - In this example, the current symbol has no outline (i.e., it uses the No Pen border style).
 
-.. image:: /static/beginner/qgis-inasafe/image89.png 
+.. image:: /static/training/beginner/qgis-inasafe/image89.png 
  
 - Click on the + button on the left.
 
-.. image:: /static/beginner/qgis-inasafe/image90.png 
+.. image:: /static/training/beginner/qgis-inasafe/image90.png 
  
 - Click on it and another symbol layer will be added to the list:
 
-.. image:: /static/beginner/qgis-inasafe/image91.png 
+.. image:: /static/training/beginner/qgis-inasafe/image91.png 
  
 *Note that it may appear different in color, but we’re going to change that anyway.*
 
@@ -202,11 +202,11 @@ It’s important not to get confused between a map layer and a symbol layer. A m
 - Set the border style to No Pen, as before.
 - Change the fill style to something other than Solid or No brush. For example:
 
-.. image:: /static/beginner/qgis-inasafe/image92.png 
+.. image:: /static/training/beginner/qgis-inasafe/image92.png 
  
 - Click OK and then OK and take a look at your layers new symbology.
 
-.. image:: /static/beginner/qgis-inasafe/image93.png 
+.. image:: /static/training/beginner/qgis-inasafe/image93.png 
  
 - Now try it yourself.  Add an additional symbology layer to the Jalan_Sleman_OSM layer.
 
@@ -215,35 +215,35 @@ It’s important not to get confused between a map layer and a symbol layer. A m
 
 - This will result in your roads looking something like this:
 
-.. image:: /static/beginner/qgis-inasafe/image94.png 
+.. image:: /static/training/beginner/qgis-inasafe/image94.png 
  
 - Our streets now appear to have an outline, but they seem disjointed, as if they don’t connect with each other.  To prevent this from happening, you can enable symbol levels, which will control the order in which the different symbol layers are rendered.
 - In the Layer Properties dialog, click on Advanced ‣ Symbol levels:
 
-.. image:: /static/beginner/qgis-inasafe/image95.png 
+.. image:: /static/training/beginner/qgis-inasafe/image95.png 
  
 - The Symbol Levels dialog will appear.  Check the box next to “Enable symbol levels.”
 
-.. image:: /static/beginner/qgis-inasafe/image96.png 
+.. image:: /static/training/beginner/qgis-inasafe/image96.png 
  
 - Your map will now look like this:
 
-.. image:: /static/beginner/qgis-inasafe/image97.png 
+.. image:: /static/training/beginner/qgis-inasafe/image97.png 
  
 - When you’re done, you can save the symbol itself in QGIS so that you won’t have to do all this work again if you want to use the symbol again in the future.  Save your current symbol style by clicking the Save Style ... button under the Style tab of the Layer Properties dialog.
 
-.. image:: /static/beginner/qgis-inasafe/image98.png 
+.. image:: /static/training/beginner/qgis-inasafe/image98.png 
  
 - Give your style file a name and save. You can load a previously saved style at any time by clicking the Load Style ... button. Before you change a style, keep in mind that any unsaved style you are replacing will be lost.
 - Try to change the appearance of the streets layer again, so that the roads are dark gray or black, with a thin yellow outline, and a dashed white line running in the middle.
 
-.. image:: /static/beginner/qgis-inasafe/image99.png 
+.. image:: /static/training/beginner/qgis-inasafe/image99.png 
  
 *4.5 Classified Symbology*
 
 Symbol levels also work for classified layers (i.e., layers having multiple symbols).  We will cover classification in the next chapter, but you can see how it works here with roads.  By classifying various streets according to their type, we can give them different symbologies and they will still appear to flow into each other.
 
-.. image:: /static/beginner/qgis-inasafe/image100.png 
+.. image:: /static/training/beginner/qgis-inasafe/image100.png 
  
 *4.6 Symbol layer types*
 
@@ -255,44 +255,44 @@ Each type of vector (point, line and polygon) has its own set of symbol layer ty
 
 - Change the symbol properties for the POI_Sleman_OSM layer:
 
-.. image:: /static/beginner/qgis-inasafe/image101.png 
+.. image:: /static/training/beginner/qgis-inasafe/image101.png 
  
 - You can access the various symbol layer types by clicking the dropdown box in the upper right corner.
 
-.. image:: /static/beginner/qgis-inasafe/image102.png 
+.. image:: /static/training/beginner/qgis-inasafe/image102.png 
  
 - Investigate the various options available to you, and choose a symbol layer type other than the default Simple Marker.
 - If in doubt, use an Ellipse Marker.
 - Choose a white outline and dark fill, with a symbol width of 2.00 and symbol height of 4.00.
 
-.. image:: /static/beginner/qgis-inasafe/image103.png 
+.. image:: /static/training/beginner/qgis-inasafe/image103.png 
  
 
 **Vector Lines**
 
 - To see the various symbology options for vector lines, open the streets layer properties and click on the dropdown box:
 
-.. image:: /static/beginner/qgis-inasafe/image104.png 
+.. image:: /static/training/beginner/qgis-inasafe/image104.png 
  
 - Click on “Marker line.”
 
-.. image:: /static/beginner/qgis-inasafe/image105.png 
+.. image:: /static/training/beginner/qgis-inasafe/image105.png 
  
 - Click on the Change button next to the Marker label.
 
-.. image:: /static/beginner/qgis-inasafe/image106.png 
+.. image:: /static/training/beginner/qgis-inasafe/image106.png 
  
 - Change the symbol properties to match this dialog:
 
-.. image:: /static/beginner/qgis-inasafe/image107.png
+.. image:: /static/training/beginner/qgis-inasafe/image107.png
  
 - Change the interval to 2.00:
 
-.. image:: /static/beginner/qgis-inasafe/image108.png 
+.. image:: /static/training/beginner/qgis-inasafe/image108.png 
  
 - Your road should now look something like this:
 
-.. image:: /static/beginner/qgis-inasafe/image109.png 
+.. image:: /static/training/beginner/qgis-inasafe/image109.png 
  
 Once you have applied the style, take a look at its results on the map. As you can see, these symbols change direction along with the road but don’t always bend along with it. This is useful for some purposes, but not for others. If you prefer, you can change the symbol layer in question back to the way it was before.
 
@@ -300,21 +300,21 @@ Once you have applied the style, take a look at its results on the map. As you c
 
 - Now let’s change the symbol layer type for the pemukiman layer.  Take a look at the dropdown menu as you’ve done for the point and line layers, and see what the various options can do.
 
-.. image:: /static/beginner/qgis-inasafe/image110.png 
+.. image:: /static/training/beginner/qgis-inasafe/image110.png 
  
 - Feel free to play around with the various options.  We will use the Point pattern fill with the following settings:
 
-.. image:: /static/beginner/qgis-inasafe/image111.png 
+.. image:: /static/training/beginner/qgis-inasafe/image111.png 
  
 - Add a new symbol layer with a normal Simple fill.
 - Make it gray with no outlines.
 - Move it underneath the point pattern symbol layer with the Move down button:
 
-.. image:: /static/beginner/qgis-inasafe/image112.png 
+.. image:: /static/training/beginner/qgis-inasafe/image112.png 
  
 - The symbol properties should look like this:
 
-.. image:: /static/beginner/qgis-inasafe/image113.png 
+.. image:: /static/training/beginner/qgis-inasafe/image113.png 
 
 As a result, you have a textured symbol for the urban layer, with the added benefit that you can change the size, shape and distance of the individual dots that make up the texture.
 

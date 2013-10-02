@@ -22,16 +22,6 @@ All contents and materials on this document is licensed as Public Domain. You ca
 More information about Public Domain License: 
 http://wiki.creativecommons.org/Publicdomain/zero/1.0/LegalText_(Indonesian)
 
-Preface
-*******
-Every day thousands of people contribute to OpenStreetMap, a project with the lofty goal of mapping the world. Most OSM software is free and open source, and the data is open for anyone to use. The idea is simple: if you make a map of your town and I make a map of mine, we can share those maps on a common platform. With enough people contributing, we can make maps and collect data throughout the world.
-
-Collecting Spatial Data with OSM Intermediate Level Module is step-by-step guide designed to help anyone who wants to increase their skill for editing OSM data. This module might look difficult, especially for those who start knowing OSM. So, we recommend that for those people to start reading Collecting Spatial Data with OSM Beginner Level Module first before you read this module.
-
-This guide is made for those who want to increase their technical skill during editing OSM data, it also shows how to do geometry validation to reduce common mistakes that might happen during editing process.
-
-We hope it can be useful.
-
 
 About Us
 ********
@@ -64,4 +54,15 @@ Humanitarian OpenStreetMap Team (HOT)
 Free, collaborative maps are uniquely valuable to humanitarian work, especially in places where base map data is often scarce, out of date, or rapidly changing. OpenStreetMap is a web project to create a free and open map of the entire world, built entirely by volunteers surveying with GPS, digitizing aerial imagery, and collecting and liberating existing public sources of geographic data. The Humanitarian OpenStreetMap Team (HOT) is an initiative to apply the principles and activities of open source and open data sharing towards humanitarian response and economic development.
 
 http://hot.openstreetmap.org
+
+
+Preface
+*******
+Every day thousands of people contribute to OpenStreetMap, a project with the lofty goal of mapping the world. Most OSM software is free and open source, and the data is open for anyone to use. The idea is simple: if you make a map of your town and I make a map of mine, we can share those maps on a common platform. With enough people contributing, we can make maps and collect data throughout the world.
+
+Collecting Spatial Data with OSM Intermediate Level Module is step-by-step guide designed to help anyone who wants to increase their skill for editing OSM data. This module might look difficult, especially for those who start knowing OSM. So, we recommend that for those people to start reading Collecting Spatial Data with OSM Beginner Level Module first before you read this module.
+
+This guide is made for those who want to increase their technical skill during editing OSM data, it also shows how to do geometry validation to reduce common mistakes that might happen during editing process.
+
+We hope it can be useful.
 
