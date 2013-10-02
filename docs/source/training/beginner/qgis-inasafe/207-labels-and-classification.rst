@@ -1,4 +1,4 @@
-.. image:: /static/beginner/qgis-inasafe/image6.png
+.. image:: /static/training/beginner/qgis-inasafe/image6.png
 
 ********
 Module 7
@@ -22,11 +22,11 @@ If you would like to start with the examples used in this chapter, begin by open
 
 - Open the attribute table for the POI_Sleman_OSM layer by selecting it in the layers list and clicking on the Open Attribute Table button (you can also right-click on the layer and select Open Attribute Table).
 
-.. image:: /static/beginner/qgis-inasafe/image114.png 
+.. image:: /static/training/beginner/qgis-inasafe/image114.png 
  
 - Which field would be the most useful to use as a label?
 
-.. image:: /static/beginner/qgis-inasafe/image115.png 
+.. image:: /static/training/beginner/qgis-inasafe/image115.png 
  
 You now know how to use the attribute table to see what is actually in the data you’re using. A dataset will only be useful to you if it has the attributes that you care about. If you know which attributes you need, you can quickly decide if you’re able to use a given dataset, or if you need to look for another one that has the required attribute data.
 
@@ -42,50 +42,50 @@ Before being able to access the Label tool, you will need to ensure that it has 
 - Go to the menu item View ‣ Toolbars.
 - Ensure that the Label item has a checkmark next to it. If it doesn’t, click on the Label item, and it will be activated.  The Label toolbar looks like this:
 
-.. image:: /static/beginner/qgis-inasafe/image116.png 
+.. image:: /static/training/beginner/qgis-inasafe/image116.png 
  
 - Click on the POI_Sleman_OSM layer in the Layers list, so that it is highlighted.
 - Click on the “Labelling” button:
 
-.. image:: /static/beginner/qgis-inasafe/image117.png 
+.. image:: /static/training/beginner/qgis-inasafe/image117.png 
  
 This gives you the Layer labeling settings dialog.
 
 - Check the box next to Label this layer with....
 
-.. image:: /static/beginner/qgis-inasafe/image118.png 
+.. image:: /static/training/beginner/qgis-inasafe/image118.png 
  
 - We must indicate which of the attribute fields we want to use for the labels.  The NAME field is the mostly likely candidate for a label, so let’s select NAME from the list:
 
-.. image:: /static/beginner/qgis-inasafe/image119.png 
+.. image:: /static/training/beginner/qgis-inasafe/image119.png 
  
 - Click OK.  The map should now have labels like this:
 
-.. image:: /static/beginner/qgis-inasafe/image120.png 
+.. image:: /static/training/beginner/qgis-inasafe/image120.png 
  
 What we have so far is good, but as you can see, the labels are overlapping the points that they are associated with. That doesn’t look very nice. The text is also a bit larger than it needs to be. Let’s fix these problems!
 
 - Open the Label tool again by clicking on its button as before.
 - Click on the ellipsis (...) button to change the text properties:
 
-.. image:: /static/beginner/qgis-inasafe/image121.png 
+.. image:: /static/training/beginner/qgis-inasafe/image121.png 
  
 A standard text change dialog appears, similar to those in many other programs. Change the font to Arial size 9. Your labels will now look like this:
 
-.. image:: /static/beginner/qgis-inasafe/image122.png 
+.. image:: /static/training/beginner/qgis-inasafe/image122.png 
  
 That’s the font problem solved! Now let’s look at the problem of the labels overlapping the points, but before we do that, let’s take a look at the Buffer option.
 
 - Open the Label tool dialog.
 - Deactivate the label buffer by clicking on the checkbox next to the text that says Buffer.
 
-.. image:: /static/beginner/qgis-inasafe/image123.png 
+.. image:: /static/training/beginner/qgis-inasafe/image123.png 
  
 - Click Apply.
 
 Note the effects in the map:
 
-.. image:: /static/beginner/qgis-inasafe/image124.png 
+.. image:: /static/training/beginner/qgis-inasafe/image124.png 
  
 Now you can see why we usually need label buffers!
 
@@ -95,22 +95,22 @@ Back to the problem of the labels that overlap points.
 
 - In the Label tool dialog, go to the Advanced tab.
 
-.. image:: /static/beginner/qgis-inasafe/image125.png 
+.. image:: /static/training/beginner/qgis-inasafe/image125.png 
  
 - Change the value of Label distance to 2.
 
-.. image:: /static/beginner/qgis-inasafe/image126.png 
+.. image:: /static/training/beginner/qgis-inasafe/image126.png 
  
 - Click Apply.  The labels no longer hover over the icons, but are “buffered” a short distance away:
 
-.. image:: /static/beginner/qgis-inasafe/image127.png 
+.. image:: /static/training/beginner/qgis-inasafe/image127.png 
  
 
 **Labeling lines**
 
 Now that you know how labeling works, there’s an additional problem. Points and polygons are easy to label, but what about lines? If you label them the same way as the points, your results would look like this:
 
-.. image:: /static/beginner/qgis-inasafe/image128.png 
+.. image:: /static/training/beginner/qgis-inasafe/image128.png 
  
 This is not very useful! To make lines behave, we’ll need to edit some options.
 
@@ -120,11 +120,11 @@ This is not very useful! To make lines behave, we’ll need to edit some options
 - Zoom in so that the scale is around 1:10000.
 - In the Label tool dialog’s Advanced tab, choose the following settings:
 
-.. image:: /static/beginner/qgis-inasafe/image129.png 
+.. image:: /static/training/beginner/qgis-inasafe/image129.png 
 
 The map will look somewhat like this, depending on scale:
 
-.. image:: /static/beginner/qgis-inasafe/image130.png
+.. image:: /static/training/beginner/qgis-inasafe/image130.png
  
 It’s better than before, but still not ideal. For starters, some of the names appear more than once, and that’s not always necessary. To prevent that from happening:
 
@@ -139,7 +139,7 @@ Another useful function is to prevent labels being drawn for features too short 
 Here’s the result:
  
 
-.. image:: /static/beginner/qgis-inasafe/image131.png 
+.. image:: /static/training/beginner/qgis-inasafe/image131.png 
 
 As you can see, this hides a lot of the labels that were previously visible, because of the difficulty of making some of them follow twisting street lines and still be legible. You can decide which of these options to use, depending on what you think seems more useful or what looks better.
 
@@ -149,7 +149,7 @@ Now that you know how attributes can make a visual difference for your map, how 
 
 Labels are a good way to communicate information such as the names of individual places, but they can’t be used for everything. For example, let’s say that we want to show which district each feature in our vegetation layer is in.  Using labels, it would look like this:
 
-.. image:: /static/beginner/qgis-inasafe/image132.png 
+.. image:: /static/training/beginner/qgis-inasafe/image132.png 
  
 Obviously this is not ideal, so we need another solution. That’s what this lesson is about!  In this section, we will learn how to classify vector data effectively.
 
@@ -159,39 +159,39 @@ Obviously this is not ideal, so we need another solution. That’s what this les
 - Go to the Style tab.
 - Click on the dropdown that says Single Symbol:
 
-.. image:: /static/beginner/qgis-inasafe/image133.png 
+.. image:: /static/training/beginner/qgis-inasafe/image133.png 
  
 - Change it to Categorized and the interface will change:
 
-.. image:: /static/beginner/qgis-inasafe/image134.png 
+.. image:: /static/training/beginner/qgis-inasafe/image134.png 
  
 - Change the Column to guna_lahan and the Color ramp to Spectral:
 
-.. image:: /static/beginner/qgis-inasafe/image135.png 
+.. image:: /static/training/beginner/qgis-inasafe/image135.png 
  
 - Click the button labeled Classify:
 
-.. image:: /static/beginner/qgis-inasafe/image136.png 
+.. image:: /static/training/beginner/qgis-inasafe/image136.png 
  
 - Click OK.  You’ll see something like this:
 
-.. image:: /static/beginner/qgis-inasafe/image137.png 
+.. image:: /static/training/beginner/qgis-inasafe/image137.png 
  
 - Click the arrow (or plus sign) next to rural in the Layer list, you’ll see the categories explained:
 
-.. image:: /static/beginner/qgis-inasafe/image138.png 
+.. image:: /static/training/beginner/qgis-inasafe/image138.png 
  
 So, this is useful! But it hurts your eyes to look at it, so let’s see what we can do about that.
 
 - Open Layer Properties and go to the Style tab again.
 - Click the “Change” button next to Symbol.
 
-.. image:: /static/beginner/qgis-inasafe/image139.png 
+.. image:: /static/training/beginner/qgis-inasafe/image139.png 
  
 - Remove the outline as you did in the previous chapter.  (change the border style to “No Pen”)
 - Click the Delete all button:
 
-.. image:: /static/beginner/qgis-inasafe/image140.png 
+.. image:: /static/training/beginner/qgis-inasafe/image140.png 
  
 - Now click Classify again, and the new symbols will appear.
 
@@ -199,12 +199,12 @@ You’ll notice they don’t have outlines. This is because because you just rem
 
 - Change the color for each type of vegetation by double-clicking on the colored block next to its name.  You can change the color for each type of vegetation to something that you think is more applicable, as we’ve done here:
 
-.. image:: /static/beginner/qgis-inasafe/image141.png 
+.. image:: /static/training/beginner/qgis-inasafe/image141.png 
  
 - Notice that the category on the bottom is empty.  Select it, and click the Delete button.
 - When we click OK our map looks like this:
 
-.. image:: /static/beginner/qgis-inasafe/image142.png 
+.. image:: /static/training/beginner/qgis-inasafe/image142.png 
  
 If you feel confident in your new classification skills, try to classify the residential layer yourself.  Use darker colors to distinguish it from vegetation.
 
@@ -214,20 +214,20 @@ In the previous example, we classified the vegetasi layer by what is known as no
 
 - Open the attribute table for the pemukiman layer.  Notice the final column, luas_ha.  This attribute contains the size of the land area contained within that feature polygon.
 
-.. image:: /static/beginner/qgis-inasafe/image143.png 
+.. image:: /static/training/beginner/qgis-inasafe/image143.png 
  
 - Open the layer properties for pemukiman.
 - Change the Style type to “Graduated,” and use luas_ha as the column.
 
-.. image:: /static/beginner/qgis-inasafe/image144.png  
+.. image:: /static/training/beginner/qgis-inasafe/image144.png  
 
 - Because we are categorizing with numbers this time, a color gradient will be useful for representing our categories.  Click on “Oranges” in the color ramp, and then click Classify.
 
-.. image:: /static/beginner/qgis-inasafe/image145.png 
+.. image:: /static/training/beginner/qgis-inasafe/image145.png 
  
 - Now you’ll have something like this:
 
-.. image:: /static/beginner/qgis-inasafe/image146.png 
+.. image:: /static/training/beginner/qgis-inasafe/image146.png 
  
 
 

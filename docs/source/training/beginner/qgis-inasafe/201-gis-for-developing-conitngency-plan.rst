@@ -1,4 +1,4 @@
-.. image:: /static/beginner/qgis-inasafe/image6.png
+.. image:: /static/training/beginner/qgis-inasafe/image6.png
 
 ********
 Module 1

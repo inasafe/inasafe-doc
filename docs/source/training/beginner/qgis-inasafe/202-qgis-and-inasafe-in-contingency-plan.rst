@@ -1,4 +1,4 @@
-.. image:: /static/beginner/qgis-inasafe/image6.png
+.. image:: /static/training/beginner/qgis-inasafe/image6.png
 
 ********
 Module 2
@@ -46,7 +46,7 @@ QGIS is awesome because:
 
 QGIS has many plugins which extend the core functionality of the software.  One of these plugins is InaSAFE, which can be used to analyze the impact of a disaster and create a list of actions needed to be taken when a disaster occurs.  QGIS and InaSAFE can also help to determine the location of ideal places of refuge, evacuation routes, areas likely to be damaged, and more.
 
-.. image:: /static/beginner/qgis-inasafe/image7.png
+.. image:: /static/training/beginner/qgis-inasafe/image7.png
 
 
 InaSAFE provides overviews of potential disaster scenarios, of their outcomes, as well as maps which can aid decision makers when disaster strikes.  Maps are an effective way of communicating disaster impact, but showing in a simple way the areas of damage, such as the extent of flood-affected areas and buildings affected by a flood.
