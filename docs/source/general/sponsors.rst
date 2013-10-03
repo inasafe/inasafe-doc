@@ -7,12 +7,13 @@ Sponsors
 
 The development of |project_name| has been supported by the
 
-* Indonesian Disaster Management Agency (|BNPB|) and
-* |AusAID|, through the
+* Indonesian Disaster Management Agency (|BNPB|),
+* Australia Agency for International Development (|AusAID|) and
+* Geoscience Australia (|GA|), through the
 * Australia-Indonesia Facility for Disaster Reduction (|AIFDR|),
   as well as the
-* World Bank and the Global Facility for Disaster Reduction and Recovery
-  (|GFDRR|).
+* World Bank and the 
+* Global Facility for Disaster Reduction and Recovery (|GFDRR|).
 
 |project_name| is a plugin built for the open source Quantum GIS application.
 
