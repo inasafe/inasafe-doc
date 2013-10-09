@@ -104,7 +104,7 @@ and testing standalone scripts written to use the |project_name| libraries. Unde
 OSX you need to ensure that your environment is properly configured in order to
 find QGIS and its libraries.
 
-We have provided scripts that do this as :file:`runmake-osx.sh`,
+We have provided scripts that do this as :file:`run-make-osx.sh`,
 :file:`run-test-osx.sh` and :file:`run-env-osx.sh`.
 
 .. note:: These scripts may need some adjustment if you are using newer versions
