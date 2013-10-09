@@ -30,8 +30,8 @@ First open a bash prompt. The repository can now be cloned by issuing the
 commands listed below.::
 
    cd ~
-   mkdir -p .qgis/python/plugins
-   cd .qgis/python/plugins/
+   mkdir -p .qgis2/python/plugins
+   cd .qgis2/python/plugins/
    git clone https://<your username>@github.com/AIFDR/inasafe.git inasafe-dev
 
 .. note:: The items in angle brackets above should be replaced with your
@@ -53,7 +53,7 @@ Checkout the test data
 
 The repository can now be cloned by issuing the commands listed below.::
 
-   cd  ~/.qgis/python/plugins/
+   cd  ~/.qgis2/python/plugins/
    git clone https://<your username>@github.com/AIFDR/inasafe_data.git inasafe_data
 
 .. note:: The items in angle brackets above should be replaced with your
@@ -105,7 +105,7 @@ OSX you need to ensure that your environment is properly configured in order to
 find QGIS and its libraries.
 
 We have provided scripts that do this as :file:`runmake-osx.sh`,
-:file:`runtest-osx.sh` and :file:`runshell-osx.sh`.
+:file:`run-test-osx.sh` and :file:`run-env-osx.sh`.
 
 .. note:: These scripts may need some adjustment if you are using newer versions
     of GDAL.
