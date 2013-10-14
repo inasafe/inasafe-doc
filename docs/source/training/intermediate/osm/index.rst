@@ -1,4 +1,4 @@
-.. _osm:
+.. _interm_osm:
 
 Unit 3: Data Collection Using OpenStreetMap Intermediate Level
 ==============================================================

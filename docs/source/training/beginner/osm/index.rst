@@ -1,4 +1,4 @@
-.. _osm:
+.. _begin_osm:
 
 Unit 1: Data Collection Using OpenStreetMap Beginner Level
 ==========================================================
@@ -12,6 +12,6 @@ Unit 1: Data Collection Using OpenStreetMap Beginner Level
    103-working-with-josm
    104-using-gps
    105-field-papers
-   106-editing-with-josm
+   106-editing-osm-with-josm
    107-imagery-offset
    108-getting-osm-data

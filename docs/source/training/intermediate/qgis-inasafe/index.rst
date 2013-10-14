@@ -1,4 +1,4 @@
-.. _qgis-inasafe:
+.. _interm_qgis_inasafe:
 
 Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level
 ===============================================================
@@ -11,5 +11,5 @@ Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level
    402-preparing-data-and-keywords-for-inasafe
    403-determining-idp-camp-location
    404-planning-evacuation-route
-   405-calculating-damage-and-losses
-  
+   405-calculating-damages-and-losses
+
