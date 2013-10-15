@@ -7,21 +7,36 @@ The documentation for |project_name| is written using ReSTructured text (.rst)
 and the Sphinx documentation builder.
 
 The best way to learn how to write .rst is to look at the source of existing
-documentation - the markup syntax is very simple. There are a number of
-useful tags that you can use to make your documentation clear and visually
-interesting, the more commonly used in this document are listed below. For a
-more detailed list, please visit
-the `Sphinx Inline Markup page <http://sphinx.pocoo.org/markup/inline.html>`_
+documentation - the markup syntax is very simple.
+There are a number of useful tags that you can use to make your documentation
+clear and visually interesting, the more commonly used in this document are
+listed below.
+For a more detailed list, please visit the
+`Sphinx Inline Markup page <http://sphinx.pocoo.org/markup/inline.html>`_
 
 A complete list of supported .rst markup is also available
 `here <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#block-quotes>`_.
 
-Try to not write more than 80 Characters in one line. That makes the
-Documentation much easier to maintain.
+Following are a few tips for documentation writers:
 
-Try to give an anchor to reference to for at least every new Heading (Page).
-If it is useful and important you might also want to put anchors on
-SubHeadings.
+1. There is a 'Community Edition" of
+   `PyCharm <http://www.jetbrains.com/pycharm/>`_ available. Consider using
+   this for writing documentation.
+#. Try to not write more than **80 Characters in one line**. That makes the
+   Documentation much easier to maintain.
+#. Try to give an anchor to reference to for at least every new Heading (Page).
+   If it is useful and important you might also want to put anchors on
+   SubHeadings.
+#. Try to avoid duplicate target names (anchors). Always use unique
+   identifiers. If you are not sure - the longer the name the unlikely it is
+   already used.
+#. Try to use underscores (_) in filenames and links (anchors) as a separator.
+#. Try to use dashes (-) in directory names as a separator.
+#. Try to avoid using tables wherever possible. Only use tables if there is.
+   really no other way to display the documentation.
+#. If you have to use tables try to avoid using TABS in favour of SPACES.
+   TABS only confuse the Computer while building documentation and leads to
+   unnecessary errors.
 
 .. _common_tags:
 
@@ -32,17 +47,28 @@ Here are some common useful tags
 ::
 
    |project_name|   is currently a substitution for the Project name (InaSAFE)
+   Normally, there are no heading levels assigned to certain characters as the structure is determined from the succession of headings. However, for the Python documentation, this convention is used which you may follow:
 
-   Heading
+   # with overline, for parts
+   * with overline, for chapters
+
+   First two are normaly not used as we usually start with a section.
+
+   =, for sections
+   -, for subsections
+   ^, for subsubsections
+   ", for paragraphs
+
+   Section
    =======
 
-   SubHeading
+   SubSection
    ----------
 
-   Subsubheading
-   ..............
+   Subsubsection
+   .............
 
-   Subsubsubheading (if needed)
+   Subsubsubsection (if needed)
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
    **bold**
 
@@ -179,7 +205,7 @@ read :ref:`building_documentation` inside the Developer Documentation.
 Indonesian Translation Index
 ---------------------------------
 To coordinate translation of InaSAFE into Bahasa Indonesian we have developed
-a table of commonly used terms and translation. 
+a table of commonly used terms and translation.
 
 
 * FIXME Do not translate table!!!
@@ -188,8 +214,8 @@ a table of commonly used terms and translation.
  English      	Bahasa Indonesia
 ============  	================
 hazard			bencana
-exposure		keterpaparan   
-    
+exposure		keterpaparan
+
 ============  	================
 
 We have also made a blanket decision not to translate the following words:
