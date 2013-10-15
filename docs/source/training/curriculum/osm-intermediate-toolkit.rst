@@ -9,7 +9,6 @@ BADAN NASIONAL PENANGGULANGAN BENCANA
 2013
 ....
 
-
 About Toolkit
 ^^^^^^^^^^^^^
 
@@ -72,8 +71,8 @@ Workshop Materials
 1. Advanced Editing
 2. Quality Assurance
 3. Resolving Conflict when uploading OSM data
-4. XML and presets inJOSM
-5. UsingPrivate Datastore
+4. XML and presets in JOSM
+5. Using Private Datastore
 6. Wiki OpenStreetMap
 
 Workshop Strategies
@@ -179,7 +178,8 @@ Time : 4 hours
 
 Basic Competency
 ****************
-1. Apply a better digitizing techniques for improving the quality of the resulting data
+1. Apply a better digitizing techniques for improving the quality of the
+   resulting data
 
 Indicator
 *********
@@ -299,7 +299,7 @@ FAQ (Frequently Asked Question)
 It's because the zoom level problem. Try to zoom in into that line. It will
 show the building after the proper zoom.
 
-**I want create a circle, but why I got a very huge circle with �create a circle� tool from utilsplugins2 tool?**
+**I want create a circle, but why I got a very huge circle with 'create a circle' tool from utilsplugins2 tool?**
 It's because when we want to create a circle we must add a way with 2 nodes.
 If that way have more than 2 nodes, the result of the circle will be very big.
 
@@ -402,7 +402,7 @@ Basic Competency
 
 Indicator
 *********
-1. Explain reason conflict occur when uploading OSM data
+1. Explain the reason why conflict occurs when uploading OSM data
 2. Resolving conflict when uploading OSM data
 3. Explain how to avoid conflict when uploading OSM data
 
@@ -586,16 +586,16 @@ Time    : 2 Hours
 
 Basic Competency
 ****************
-5.      Using the private data store feature for the personal data storage
+5. Using the private data store feature for the personal data storage
 
 Indicator
 *********
-1.      Explain the private data store  function
-2.      Explain the data type can be published and the data is private
-3.      Install the plug-in private data store  into JOSM
-4.      Using the plug-in private data store in the shorting of public data
-        and private
-5.      Access the online datastore
+1. Explain the private data store  function
+2. Explain the data type can be published and the data is private
+3. Install the plug-in private data store  into JOSM
+4. Using the plug-in private data store in the shorting of public data
+   and private
+5. Access the online datastore
 
 Outcome
 *******
@@ -612,12 +612,12 @@ Core Material
 4. How SDS plugin works
 5. Access the online datastore
 
-    a. User Private Datastore
-    b. A diagram for the using of private datastore and JOSM
-    c. Edit the online data store
-    d. How to add the online datastore
-    e. How to add and to edit user in private datastore
-    f. How to add project in private datastore
+  a. User Private Datastore
+  b. A diagram for the using of private datastore and JOSM
+  c. Edit the online data store
+  d. How to add the online datastore
+  e. How to add and to edit user in private datastore
+  f. How to add project in private datastore
 
 Activities
 **********
@@ -783,4 +783,3 @@ Activities
 |    the participants will learn the other format more detail and   |               |               |
 |    will start editing and create the real new page.               |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-

@@ -76,13 +76,15 @@ Workshop Strategies
 
 Tools
 ^^^^^
-1. Copy of �Data Collection Using OSM for Beginner Guide� for participants
+1. Copy of 'Data Collection Using OSM for Beginner Guide' for participants
 2. A place or room, with tables and seats
 3. Computer (ideally, one computer is used by two participants,
    but it will be better if one computer is used by one participant)
 4. A Printer (to print out *Field Papers*)
-5. A Projector (to present slide and demonstrate technical instruction and software)
-6. *GPS* devices (ideally, one *GPS* is used by two or three participants in a group)
+5. A Projector (to present slide and demonstrate technical instruction and
+   software)
+6. *GPS* devices (ideally, one *GPS* is used by two or three participants in
+   a group)
 7. Battery for *GPS* devices
 8. USB cable to connect *GPS* devices to computer
 9. USB *Flashdisk* to transfer *file* and *software*
@@ -320,16 +322,27 @@ FAQ (Frequently Asked Question)
 
 **How  did the UK begin mapping? How did OpenStreetMap start?**
 
-*OpenStreetMap* start with just a handful of volunteers who had GPS devices. They would go out, collect data on their GPS and make sketches of maps and take notes, and then add the data into OSM database at home. These initial volunteers hosted �Mapping Parties� in different towns, in which anybody could come out with them one day and go mapping.  These parties helped expand the network of volunteers, get more people involved, and create great maps of different towns.
+*OpenStreetMap* start with just a handful of volunteers who had GPS devices.
+They would go out, collect data on their GPS and make sketches of maps and
+take notes, and then add the data into OSM database at home. These initial
+volunteers hosted "Mapping Parties" in different towns,
+in which anybody could come out with them one day and go mapping.  These
+parties helped expand the network of volunteers, get more people involved,
+and create great maps of different towns.
 
 **How did they create maps so thoroughly? What technologies did they use?**
 
-At the beginning, mappers only have GPS to work with, and any map  data that was freely given to the *OpenStreetMap* community. Later, *OSM* made a deal with *Yahoo!* To be able to use their sattelite imagery to draw maps with. More recently, Microsoft has made its imagery available to *OSM*.
+At the beginning, mappers only have GPS to work with, and any map  data that
+was freely given to the *OpenStreetMap* community. Later,
+*OSM* made a deal with *Yahoo!* To be able to use their satellite imagery
+to draw maps with. More recently, Microsoft has made its imagery available
+to *OSM*.
 
 **Can we use OSM with Google Maps?**
 
-It is not legal to use *Google Maps* as a resource when editing *OpenStreetMap*.  Google has not given permission for this like Microsoft has, and so it is not acceptable to use.
-
+It is not legal to use *Google Maps* as a resource when editing
+*OpenStreetMap*.  Google has not given permission for this like Microsoft
+has, and so it is not acceptable to use.
 
 **Session 2**
 ^^^^^^^^^^^^^
@@ -475,9 +488,10 @@ Indicator
 2. *JOSM* Installation
 3. *JOSM Preferences*
 4. Using Basic Tools
-5. Drawing nodes, way, and shape in *JOSM* based on map that you made in the previous session
+5. Drawing nodes, way, and shape in *JOSM* based on map that you made in the
+   previous session
 6. Change Objects
-7. Add informations to the objects using �presets� menu
+7. Add informations to the objects using presets menu
 
 Outcome
 *******
@@ -905,15 +919,23 @@ FAQ (Frequently Asked Question)
 
 **How we can print big size map? Example for poster or community mapping project?**
 
-One of the best way to do this is using QGIS program, but this is would not discuss in this session. You can make some clue about QGIS after you practice and understand how to make a big size map. If you need to make it now, you can using http://fieldpapers.org and make it together.
+One of the best way to do this is using QGIS program, but this is would not
+discuss in this session. You can make some clue about QGIS after you
+practice and understand how to make a big size map. If you need to make it
+now, you can using http://fieldpapers.org and make it together.
 
 **How to scan Field Papers?**
 
-You can use scanner or handphone or camera to take photo of field papers then put it into JOSM.
+You can use scanner or handphone or camera to take photo of field papers
+then put it into JOSM.
 
 **What should I do if upload process Field Papers really slow/do not work?**
 
-Unfotunately, Field Papers website not always 100% working even the process could be longer than your lunch break. This is the trainer could say to participants. They can use Field Papers as a note and you (trainer) can show to them how to put imagery and using GPS data, this is could help them to edit their map with the same way.
+Unfortunately, Field Papers website not always 100% working even the process
+could be longer than your lunch break. This is the trainer could say to
+participants. They can use Field Papers as a note and you (trainer) can show
+to them how to put imagery and using GPS data, this is could help them to
+edit their map with the same way.
 
 
 **Session 6**
@@ -1210,9 +1232,9 @@ Activities
 |                                                                   |               |               |
 | Fasilitator showing:                                              |               |               |
 |                                                                   |               |               |
-| - How to participants can discuss thourgh social                  |               |               |
-|   media such as Gruop Facebook or twitter.                        |               |               |
-| - How to participans can join the mailing talk-id                 |               |               |
+| - How to participants can discuss through social                  |               |               |
+|   media such as Group Facebook or twitter.                        |               |               |
+| - How to participants can join the mailing talk-id                |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
 Common Problem
