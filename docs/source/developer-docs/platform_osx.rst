@@ -104,7 +104,7 @@ and testing standalone scripts written to use the |project_name| libraries. Unde
 OSX you need to ensure that your environment is properly configured in order to
 find QGIS and its libraries.
 
-We have provided scripts that do this as :file:`runmake-osx.sh`,
+We have provided scripts that do this as :file:`run-make-osx.sh`,
 :file:`run-test-osx.sh` and :file:`run-env-osx.sh`.
 
 .. note:: These scripts may need some adjustment if you are using newer versions
@@ -115,13 +115,13 @@ The first two scripts mentioned above can be used to run make commands (e.g.
 used to add the QGIS options needed to use QGIS python bindings to your python path
 like this::
 
-    source runshell-osx.sh
+    source run-env-osx.sh
 
 Which should produce output like this::
 
     QGIS PATH: /Applications/QGIS.app/contents/MacOS
     PYTHON PATH: :/Applications/QGIS.app/Contents/Resources/python:/Library/Frameworks/
-    GDAL.framework/Versions/1.9/Python/2.7/site-packages
+    GDAL.framework/Versions/1.10/Python/2.7/site-packages
 
 Verifying your system path
 ..........................
@@ -170,7 +170,7 @@ Running tests using nose
 Once they are installed, you can run the nose tests from OSX by going to
 the plugin directory/inasafe-dev folder and running::
 
-   ./runtests-osx.sh
+   ./run-test-osx.sh
 
 .. note:: The tests do not all run successfully on OSX yet - we are working
    to remedy this.
