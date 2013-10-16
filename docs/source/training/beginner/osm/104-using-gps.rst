@@ -39,12 +39,14 @@ Every place on Earth has unique geographic coordinates.
 For example: -8.639298 Latitude, 116.311607 Longitude is a location in
 Lombok, Indonesia.
 
-.. image:: /static/training/beginner/osm/image34.*
+.. figure:: /static/training/beginner/osm/image34.*
    :align: center
+
    *Google Earth software, showing coordinates of a place in Lombok, Indonesia.*
 
-.. image:: /static/training/beginner/osm/image35.*
+.. figure:: /static/training/beginner/osm/image35.*
    :align: center
+
    *Garmin eTrex Vista HCx*
 
 **2. Turn on the GPS**
@@ -52,7 +54,7 @@ Lombok, Indonesia.
 - Before you turn on your GPS, go outside where you have a clear view of the
   sky.  Because the GPS determines your location by receiving signals from
   satellites, **it won’t work indoors**.
-- On the right side of your GPS, press and hold the :guilabel:`Power` button.  
+- On the right side of your GPS, press and hold the :guilabel:`Power` button.
   The GPS will start, and it will show you the Satellites page.  You should see
   something like the image below.  Your GPS is looking for satellite signals.
   When it has connected to three or more satellites, it will have your location.
@@ -60,7 +62,7 @@ Lombok, Indonesia.
 .. image:: /static/training/beginner/osm/image36.*
    :align: center
 
-- Once your location is determined, the :guilabel:`Satellite` screen will 
+- Once your location is determined, the :guilabel:`Satellite` screen will
   disappear and you will see the :guilabel:`Main Menu`.
 
 .. image:: /static/training/beginner/osm/image37.*
@@ -70,7 +72,7 @@ Lombok, Indonesia.
 
 *3.1. GPS mode settings*
 
-- Access the :guilabel:`Setup` menu on the :guilabel:`Main Menu` by using the 
+- Access the :guilabel:`Setup` menu on the :guilabel:`Main Menu` by using the
   :guilabel:`Page` button. Then go to the :guilabel:`System`.
 
 .. image:: /static/training/beginner/osm/image38.*
@@ -79,7 +81,7 @@ Lombok, Indonesia.
 .. image:: /static/training/beginner/osm/image39.*
    :align: center
 
-- In the :guilabel:`System` menu you can find some of the settings are as 
+- In the :guilabel:`System` menu you can find some of the settings are as
   follows:
 
 a) GPS: regulate how the GPS sensor work. Choose the "Normal" option. The
