@@ -1,4 +1,4 @@
-.. image:: /static/training/intermediate/osm/image6.png
+.. image:: /static/training/intermediate/osm/image6.*
 
 
 Module 6: Editing Wiki OpenStreetMap
@@ -24,23 +24,23 @@ In this chapter we will learn how to add and edit pages on the OSM wiki.  We wil
 
 **1. The Wiki and Signing Up**
 
-.. image:: /static/training/intermediate/osm/image135.png
+.. image:: /static/training/intermediate/osm/image135.*
 
 - Go to http://wiki.openstreetmap.org to see the main wiki page.  You’ll see a lot of things here, and many links to other pages on the wiki.  In the left column are links to some of the main pages.  At the top of the page are a list of all the languages in which you can view this page.  If it’s available, you can switch the page to your language.  Try exploring some of the links on the page and see the kind of information available on the wiki.
 - You don’t need to have an account in order to view the OSM wiki, but you will need to create an account if you want to edit or add pages.  Note that this is not the same as your OpenStreetMap account.  You need to create a new account, although you can use the same name on the wiki as you did when signing up for OpenStreetMap.
 - To create a new account, click on “Log in / create account” in the upper right corner of the website.
 
-.. image:: /static/training/intermediate/osm/image136.png
+.. image:: /static/training/intermediate/osm/image136.*
 
 - If you already have an account you can login on this page.  Otherwise click on “Create an account.”
 
-.. image:: /static/training/intermediate/osm/image137.png
+.. image:: /static/training/intermediate/osm/image137.*
 
 - Fill in the form with the username you want to create, your password twice, your email address, and your real name.  In the CAPTCHA box at the top you need to type the two words that are shown in the box.  This is a security prevention to ensure that you are human, and not a computer.
 - When you have filled in all the fields click “Create account.”
 - Now you will be automatically logged in, and you will see your username and other links available in the upper right corner of the website.
 
-.. image:: /static/training/intermediate/osm/image138.png
+.. image:: /static/training/intermediate/osm/image138.*
 
 **2. Getting Started**
 
@@ -48,20 +48,20 @@ Let’s start out by editing our user page.  Every user has a page on the wiki. 
 
 - Go to your user page by clicking on your username in the upper right corner.  My username is “MapJeff”, so I will click on this.
 
-.. image:: /static/training/intermediate/osm/image139.png
+.. image:: /static/training/intermediate/osm/image139.*
 
 - Right now the page is empty.  Click on “edit this page” to add something to it.
 - We can type anything into the editor to add information to the page.  For example, let’s add some basic information and a description.  You can add your own information, but here is an example.
 
-.. image:: /static/training/intermediate/osm/image140.png
+.. image:: /static/training/intermediate/osm/image140.*
 
 - When you have added some text, enter a summary of your changes in the box next to “Summary” and click “Save Page.”  The page will look something like this:
 
-.. image:: /static/training/intermediate/osm/image141.png
+.. image:: /static/training/intermediate/osm/image141.*
 
 - This is great because I have successfully saved my text to the page, but it is no good because it not formatted in a good way.  In order to make it look nice, we need to learn some of the basic wiki formatting techniques.  Click “Edit” at the top of the page, and let’s make some more changes to our page.
 
-.. image:: /static/training/intermediate/osm/image142.png
+.. image:: /static/training/intermediate/osm/image142.*
 
 - If you understood the previous chapter on XML, you will remember that we used **elements** which have opening tags and closing tags.  We will do something similar on the wiki, using special characters to surround the text we want to appear a certain way.
 - The wiki doesn’t automatically put new lines in unless we ask it to, so we need to put the tag <br> at the end of each of our lines in the first section.  This will cause a line break to occur.
@@ -71,15 +71,15 @@ Let’s start out by editing our user page.  Every user has a page on the wiki. 
 
 - Now our code looks like this:
 
-.. image:: /static/training/intermediate/osm/image143.png
+.. image:: /static/training/intermediate/osm/image143.*
 
 - And after we save it the page will look nicely formatted:
 
-.. image:: /static/training/intermediate/osm/image144.png
+.. image:: /static/training/intermediate/osm/image144.*
 
 - Practice formatting your text in different ways.  A small hint:  the buttons above the text box will automatically insert different types of formatting code into your text!
 
-.. image:: /static/training/intermediate/osm/image145.png
+.. image:: /static/training/intermediate/osm/image145.*
 
 - Once you have saved your page, it will be viewable by anyone on the internet.  The following link goes to my page, but if you replace my username with yours, it will go to your user page.
 
@@ -244,7 +244,7 @@ It is good practise and increases readability to use a space as second/third cha
 
 **Result**
 
-.. image:: /static/training/intermediate/osm/image147.png
+.. image:: /static/training/intermediate/osm/image147.*
 
 Play around with all these different techniques for formatting your wiki.  If you want an example of all of these things, try viewing the test page I created here:
 https://wiki.openstreetmap.org/wiki/User:MapJeff/testpage
@@ -294,11 +294,11 @@ You may want keep an eye on pages that you have edited yourself, or that you hav
 
 To add a page to your watchlist, click on the star at the top of the page section:
 
-.. image:: /static/training/intermediate/osm/image148.png
+.. image:: /static/training/intermediate/osm/image148.*
 
 Then, you can view your watchlist by clicking on “My Watchlist” at the top of the page:
 
-.. image:: /static/training/intermediate/osm/image149.png
+.. image:: /static/training/intermediate/osm/image149.*
 
 On the “My Watchlist” page you choose to show changes to your watched pages within the past hours, or days, or since you started watching the page.
 

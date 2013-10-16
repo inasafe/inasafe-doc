@@ -1,4 +1,4 @@
-.. image:: /static/training/intermediate/osm/image6.png
+.. image:: /static/training/intermediate/osm/image6.*
 
 
 Module 4: Creating JOSM File Presets
@@ -19,7 +19,7 @@ By now you probably have a good understanding of how objects are drawn in JOSM, 
 
 Remember that after you draw an object on the map in JOSM, you need to attach tags in order to describe what it is, it’s name, and any any other attributes.  For example when you want to create a clothing shop with the name “Some Clothing Shop”, you need two tags - one to describe the point as a clothing shop, and one to hold the name.  In JOSM, the tags are shown in the *Properties* window when an object is selected.
 
-.. image:: /static/training/intermediate/osm/image88.png
+.. image:: /static/training/intermediate/osm/image88.*
 
 Tags consist of two parts, the **key** and the **value**.  The key typically defines the type of information you are attaching, and the value defines the specific object.  Here, we have two tags, and hence two pairs of keys and values.
 
@@ -31,11 +31,11 @@ Tags consist of two parts, the **key** and the **value**.  The key typically def
 
 When we create a point with these tags, JOSM knows to display the icon like this:
 
-.. image:: /static/training/intermediate/osm/image89.png
+.. image:: /static/training/intermediate/osm/image89.*
 
 And when we look at this on the `openstreetmap.org <http://openstreetmap.org>`_ website, the object looks like this:
 
-.. image:: /static/training/intermediate/osm/image90.png
+.. image:: /static/training/intermediate/osm/image90.*
 
 The reason this works is because we’ve applied the appropriate **tags**.
 
@@ -47,7 +47,7 @@ http://wiki.openstreetmap.org/wiki/Map_Features
 
 This web page has grown longer and longer over the years as people have sought to map more and more things and have needed more tags to do so.  It is impossible to remember all of these tags, and quite a hassle to look them up every time you need them.  Hence, JOSM has a Presets menu which makes it much easier to apply the correct tags to an object.  With the Presets menu, we can easily find the entry for school, enter information into a form, and not have to worry about whether the correct tag is **amenity=school** or **education=school** or something else entirely.
 
-.. image:: /static/training/intermediate/osm/image91.png
+.. image:: /static/training/intermediate/osm/image91.*
 
 Notice that when you add attributes using the presets menu, the correct tags are automatically added in the Properties menu on the right.
 
@@ -118,12 +118,12 @@ As you’ve already discovered, JOSM comes pre-loaded with a presets menu that i
 - Open JOSM and open the Preferences menu by going to Edit ‣ Preferences.
 - Click on the third icon from the top which looks like this:
 
-.. image:: /static/training/intermediate/osm/image92.png
+.. image:: /static/training/intermediate/osm/image92.*
 
 - Click on the third tab labelled Tagging Presets.
 - Select “Buildings by Kate Chapman” and click on the right arrow button to add it to Active presets.
 
-.. image:: /static/training/intermediate/osm/image93.png
+.. image:: /static/training/intermediate/osm/image93.*
 
 - Click OK.
 - Restart JOSM.
@@ -131,9 +131,9 @@ As you’ve already discovered, JOSM comes pre-loaded with a presets menu that i
 - Create a point and make sure it is selected.
 - Go to the Presets menu.  You should now see the presets that you added at the bottom.  Click on “Building” to see the the building presets form.
 
-.. image:: /static/training/intermediate/osm/image94.png
+.. image:: /static/training/intermediate/osm/image94.*
 
-.. image:: /static/training/intermediate/osm/image95.png
+.. image:: /static/training/intermediate/osm/image95.*
 
 When we added these new presets through the preferences menu, what we were doing is adding an XML file that describes how the new menu should behave.  In the next sections, we will learn how to create our own XML presets file that we can load into JOSM.
 
@@ -141,11 +141,11 @@ When we added these new presets through the preferences menu, what we were doing
 
 To understand how a presets file is written, let’s first look at the XML for one of the pre-loaded presets in JOSM.  When you go to the presets menu and select Facilities ‣ Culture ‣ Place of Worship you will see a form like this:
 
-.. image:: /static/training/intermediate/osm/image96.png
+.. image:: /static/training/intermediate/osm/image96.*
 
 The XML for this form looks like this:
 
-**<item name="Place of Worship" icon="presets/church.png" type="node,closedway,relation">**
+**<item name="Place of Worship" icon="presets/church.*" type="node,closedway,relation">**
 
      **<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=place_of_worship" />**
 
@@ -172,7 +172,7 @@ The first line is the opening tag of our root element **<item>**.  There are sev
 +--------------------------------+-------------------------------------------------------------------------+
 | name="Place of Worship"        | The name of what you are creating.                                      |
 +--------------------------------+-------------------------------------------------------------------------+
-| icon="presets/church.png"      | The icon of the object. PNGs are the most effective in OSM since they   |
+| icon="presets/church.*"      | The icon of the object. *s are the most effective in OSM since they   |
 |                                | are compressed low-color graphics with transparent backgrounds.         |
 +--------------------------------+-------------------------------------------------------------------------+
 | type="node,closedway,relation" | The types of object that this preset can be applied to.  Node means it  |
@@ -235,19 +235,19 @@ Now look at the possible tags we have described in the table above.  What is the
 
 For **utility:water**, **utility:phone**, and **utility:internet**, there are four possible values that the user can select from on our form, so the best way to add this is with a combo box - that is, a dropdown menu where the user can select one of the options.  The tag **utility:electrical** only has two possible values, yes or no, so the best way to show this on our form is with a checkbox, although we could use a dropdown box if we wanted as well.  When we are finished our form should look like this:
 
-.. image:: /static/training/intermediate/osm/image97.png
+.. image:: /static/training/intermediate/osm/image97.*
 
 - Open a text editor and follow along as we create the XML for this preset.  A simple and common editor to use on Windows is called Notepad.  DO NOT use a word processing program like Microsoft Word.
 
-.. image:: /static/training/intermediate/osm/image98.png
+.. image:: /static/training/intermediate/osm/image98.*
 
 - First, we need to create a root element in our XML so that JOSM knows it is a presets file.
 
-.. image:: /static/training/intermediate/osm/image99.png
+.. image:: /static/training/intermediate/osm/image99.*
 
 - Next let’s create an element called <group>.  This is not actually necessary because we are only creating one preset, but it will demonstrate how we can create submenus with many different options on our presets menu.  Don’t forget to add the closing tags **</group>** and **</presets>** to your elements.
 
-.. image:: /static/training/intermediate/osm/image100.png
+.. image:: /static/training/intermediate/osm/image100.*
 
 - Now we can create an item on our menu.  We want to create an <item> element inside of the group element.  Add the following text:
 
@@ -274,7 +274,7 @@ For **utility:water**, **utility:phone**, and **utility:internet**, there are fo
 
 - When you are finished your file will look like this:
 
-.. image:: /static/training/intermediate/osm/image101.png
+.. image:: /static/training/intermediate/osm/image101.*
 
 Much of this is similar to what you saw previously.  Let’s analyze it.  Inside the **<item>** element we have created six more elements:
 
@@ -305,7 +305,7 @@ Now let’s open our presets file in JOSM and see how it looks!
 - Open the Preferences in JOSM and go to Tagging Presets, as you did previously.
 - On the right side next to Active presets click on the + button.
 
-.. image:: /static/training/intermediate/osm/image102.png
+.. image:: /static/training/intermediate/osm/image102.*
 
 - Type “Household Presets” into the Name field.
 - Next to URL / File, open the xml file that you just created.
@@ -314,7 +314,7 @@ Now let’s open our presets file in JOSM and see how it looks!
 - Create a new layer and add a point.
 - Go to the presets menu.  You should see the menu that you just created!
 
-.. image:: /static/training/intermediate/osm/image103.png
+.. image:: /static/training/intermediate/osm/image103.*
 
 
  

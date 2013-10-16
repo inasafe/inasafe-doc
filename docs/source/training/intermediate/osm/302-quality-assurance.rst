@@ -1,4 +1,4 @@
-.. image:: /static/training/intermediate/osm/image6.png
+.. image:: /static/training/intermediate/osm/image6.*
 
 
 Module 2: Quality Assurance
@@ -22,7 +22,7 @@ tools, which can aid us further in identifying mistakes on OpenStreetMap.
 
 Sometimes when you go to upload your edits you get a pop-up window like this:
 
-.. image:: /static/training/intermediate/osm/image55.png
+.. image:: /static/training/intermediate/osm/image55.*
    :align: center
 
 This is JOSM’s way of telling you that there is suspicious data and that you
@@ -53,7 +53,7 @@ Let’s see how to use the validation tool:
   :guilabel:`Validation Results` window in the right panel, click on the blue 
   checkmark on the left to show it.
 
-.. image:: /static/training/intermediate/osm/image56.png 
+.. image:: /static/training/intermediate/osm/image56.* 
    :align: center
 
 - Ensure that nothing on the map is selected.  If you run the validation tool
@@ -61,14 +61,14 @@ Let’s see how to use the validation tool:
   the whole map. Hover your mouse in the validation window and click
   :guilabel:`Validation`
 
-.. image:: /static/training/intermediate/osm/image57.png
+.. image:: /static/training/intermediate/osm/image57.*
    :align: center
  
 - The map will change and any warnings will be circled in yellow, errors in red.
   In the :guilabel:`Validation Results` window you will see a list of warnings 
   and errors, if there are any.
  	
-.. image:: /static/training/intermediate/osm/image58.png
+.. image:: /static/training/intermediate/osm/image58.*
    :align: center
 
 - Errors should almost always be fixed.  You can zoom to an error, by right
@@ -78,7 +78,7 @@ Let’s see how to use the validation tool:
   types of errors and click the :guilabel:`Fix` button in the window. Many 
   errors, however, need to be corrected manually.
 
-.. image:: /static/training/intermediate/osm/image59.png
+.. image:: /static/training/intermediate/osm/image59.*
    :align: center
  
 - Usually there are many more warnings than errors.  By giving you a warning,
@@ -113,25 +113,25 @@ To see how the tasking manager works, let’s take a closer look.
 - Open your Internet browser and go to tasks.hotosm.org. You will see a page
   like this:
 
-.. image:: /static/training/intermediate/osm/image60.png
+.. image:: /static/training/intermediate/osm/image60.*
    :align: center
  
 - Click :guilabel:`Log in using your OpenStreetMap account` Here you are
   agreeing to allow this application some access to your OpenStreetMap account.
   Click :guilabel:`Save Changes`.
 
-.. image:: /static/training/intermediate/osm/image61.png
+.. image:: /static/training/intermediate/osm/image61.*
    :align: center
   
 - Now you will see the current list of projects.  These are different places
   that people are coordinating to map.
 
-.. image:: /static/training/intermediate/osm/image62.png
+.. image:: /static/training/intermediate/osm/image62.*
    :align: center
  
 - Click on one of the projects to see more information about it.
 
-.. image:: /static/training/intermediate/osm/image63.png
+.. image:: /static/training/intermediate/osm/image63.*
    :align: center
  
 - This page shows you everything you need to know about the project.  On the
@@ -144,7 +144,7 @@ To see how the tasking manager works, let’s take a closer look.
   collaborators are meant to help map.  By clicking on :guilabel:`Task` you can
   take a grid square to work on yourself.
 
-.. image:: /static/training/intermediate/osm/image64.png
+.. image:: /static/training/intermediate/osm/image64.*
    :align: center
 
 - Here you see a view of the square that you have offered to map.  You can
@@ -155,7 +155,7 @@ To see how the tasking manager works, let’s take a closer look.
   the  :guilabel:`Remote Settings` tab and check the box next to
   :guilabel:`Enable remote control`.  Restart JOSM.
 
-.. image:: /static/training/intermediate/osm/image65.png
+.. image:: /static/training/intermediate/osm/image65.*
    :align: center
            
 - Go back to the Tasking Manager and choose JOSM.  If you have JOSM open and you
@@ -168,7 +168,7 @@ To see how the tasking manager works, let’s take a closer look.
   If you were unable to complete the task, click :guilabel:`Unlock it` to make 
   it available again for other mappers.
 
-.. image:: /static/training/intermediate/osm/image66.png
+.. image:: /static/training/intermediate/osm/image66.*
    :align: center
  
 - If you are wondering what happens when you finish an area, the grid square
@@ -183,7 +183,7 @@ To see how the tasking manager works, let’s take a closer look.
 **Ways that are not closed**: usually a line that does not form a polygon.  
 Common examples are buildings where the first node does not meet the last node.
 
-.. image:: /static/training/intermediate/osm/image67.png
+.. image:: /static/training/intermediate/osm/image67.*
    :align: center
  
 To fix this, select both nodes and go to :menuselection:`Tools ‣ Merge Nodes` 
@@ -191,7 +191,7 @@ to connect them.
 
 **Crossing Buildings (Overlapping Buildings)**: buildings that overlap each other.
  
-.. image:: /static/training/intermediate/osm/image68.png
+.. image:: /static/training/intermediate/osm/image68.*
    :align: center
 
 To fix this, move the nodes of one of the buildings outside of the other building.
@@ -199,7 +199,7 @@ To fix this, move the nodes of one of the buildings outside of the other buildin
 **Untagged Nodes or Ways**: If someone draws a point or a line but forgets to 
 give it any tags, then it is useless, because it doesn’t mean anything.
 
-.. image:: /static/training/intermediate/osm/image69.png
+.. image:: /static/training/intermediate/osm/image69.*
    :align: center
  
 To fix this, apply tags to the object to identify it, or delete it if it is a 
@@ -210,7 +210,7 @@ does not connect, this raises a warning.  Many times this warning is not
 important, but it helps to find road intersections that are supposed to connect 
 but do not.
 
-.. image:: /static/training/intermediate/osm/image70.png
+.. image:: /static/training/intermediate/osm/image70.*
    :align: center
  
 **Crossing ways**: Lines that cross other lines without being connected will 
@@ -218,7 +218,7 @@ raise warnings.  Many times this is not a problem, because the crossing ways
 are intentional - such as in the case of bridges, or streets and rivers that 
 cross landuse polygons.  It is sometimes helpful, however to find errors.
 
-.. image:: /static/training/intermediate/osm/image71.png
+.. image:: /static/training/intermediate/osm/image71.*
    :align: center
  
 OpenStreetMap depends on people correcting and editing mistakes.  Editing and 
@@ -254,20 +254,20 @@ OpenStreetMap website. You can find the list of these standard presets **here**
 - You can switch the site into Indonesian by choosing :guilabel:`id` from the 
   dropdown box in the in the upper right.
 
-.. image:: /static/training/intermediate/osm/image72.png
+.. image:: /static/training/intermediate/osm/image72.*
    :align: center
  
 - Click on “Pengecekan data untuk Asia” to check the OSM data in Asia.  This 
   will open up a slippy map with errors displayed on it.  You can navigate to 
   your area of interest by using the zoom and pan functions.
 
-.. image:: /static/training/intermediate/osm/image73.png
+.. image:: /static/training/intermediate/osm/image73.*
    :align: center
 
 - The types of errors are listed on the left of the map.  You can get more 
   details about each error by clicking on the icons which hover above the map.
 
-.. image:: /static/training/intermediate/osm/image74.png
+.. image:: /static/training/intermediate/osm/image74.*
    :align: center
  
 - In order to fix one of the errors, you can click on the links to edit in 

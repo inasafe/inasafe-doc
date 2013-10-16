@@ -1,4 +1,4 @@
-.. image:: /static/training/intermediate/osm/image6.png
+.. image:: /static/training/intermediate/osm/image6.*
 
 
 Module 5: Using Private Data Store
@@ -16,7 +16,7 @@ Module 5: Using Private Data Store
 OpenStreetMap data is open and available to anyone who would like to access it.  However, there may be times when you want to use OpenStreetMap to collect data, but you would like to keep some attributes stored in a private database.  For this, HOT has developed an additional tool for JOSM known as the SDS (Separate Data Store).
 The SDS allows you to create maps and add data into JOSM the same as always, but when you upload your edits, public data will be saved to the OpenStreetMap database, and private data will be saved separately to the HOT Datastore.
 
-.. image:: /static/training/intermediate/osm/image104.png
+.. image:: /static/training/intermediate/osm/image104.*
  
 *How the SDS Plugin works with JOSM*
 
@@ -28,12 +28,12 @@ This plug-in allows private data to be streamlined into the private data store. 
 
 - Open the preferences menu in JOSM and go to the plugins tab.
 
-.. image:: /static/training/intermediate/osm/image105.png
+.. image:: /static/training/intermediate/osm/image105.*
  
 - Click “Download List” to ensure that all available plugins are listed.
 - In the search box, type “sds”.
 
-.. image:: /static/training/intermediate/osm/image106.png 
+.. image:: /static/training/intermediate/osm/image106.* 
 
 - Check the box next to the plugin to activate it.  You will need to restart JOSM.
 - If JOSM is open, restart it.
@@ -45,7 +45,7 @@ If you are unable to find the “sds” plugin on the Preferences menu, you may 
 - Download the sds plugin by going to http://kunden.geofabrik.de/03df698c95134f04949eb67ac7ba2195/ and clicking on *sds.jar*
 - Click on the Start Menu and type “%APPDATA%” into the search box.  Click on the folder named “Roaming.”
 
-.. image:: /static/training/intermediate/osm/image107.png 
+.. image:: /static/training/intermediate/osm/image107.* 
  
 - In the window that opens, double-click on “JOSM” to open the JOSM program files.
 - Double-click on the “plugins” folder to open it. Move the *sds.jar* file into this folder.
@@ -56,7 +56,7 @@ Editing the map works just the same as before.  The only difference is that when
 
 - After installing the plugin, the first time you download data you will be asked for your HOT datastore username and password.
 
-.. image:: /static/training/intermediate/osm/image108.png  
+.. image:: /static/training/intermediate/osm/image108.*  
 
 - In order to use the plugin, you need to enter your username and password.  To save them, check the box next to “Save user and password.”
 - The private datastore is now working.  When you upload changes, the usual tags will be saved to OSM, and special private tags will be saved to the datastore.
@@ -65,7 +65,7 @@ Editing the map works just the same as before.  The only difference is that when
 
 How does the plugin know which data you want to store on OpenStreetMap and which data you want to store publicly?  Quite simply, it knows because of the tags.  Normal tags go to OpenStreetMap, as always, but you can use new tags with a special prefix that will be sent to the private datastore.  By default, any tag that begins with the prefix **“hot:”** will go to the private datastore.  If you open the Preferences menu you will see a new tab on the bottom for SDS plugin options:
 
-.. image:: /static/training/intermediate/osm/image109.png 
+.. image:: /static/training/intermediate/osm/image109.* 
 
  
 
@@ -73,7 +73,7 @@ There are some basic settings here.  By default the server URL is set to the HOT
 
 When you create or edit an object on the map, you can apply tags like this:
 
-.. image:: /static/training/intermediate/osm/image110.png 
+.. image:: /static/training/intermediate/osm/image110.* 
  
 
 In this case, the first two tags will be saved on OSM.  The third tag, because it has the prefix **hot:** will be saved on the private datastore.
@@ -84,18 +84,18 @@ You will most likely collaborate with others when using the private datastore, s
 
 Just like `openstreetmap.org <http://openstreetmap.org>`_ , you can access the online datastore directly, by visiting http://sds.openstreetmap.or.id and logging in with your username and password.  
 
-.. image:: /static/training/intermediate/osm/image111.png 
+.. image:: /static/training/intermediate/osm/image111.* 
  
  
 *4.1 Private Data Store Users*
 There is 2 types of Data Store users. They are Admin who can add new projects or users onto SDS and Personal are regular users who joined on some project that using SDS. This is the screenshoot :
 
-.. image:: /static/training/intermediate/osm/image112.png 
+.. image:: /static/training/intermediate/osm/image112.* 
  
  
 *4.2 Figure of Using Private Data Store and JOSM*
 
-.. image:: /static/training/intermediate/osm/image113.png 
+.. image:: /static/training/intermediate/osm/image113.* 
  
  
 *4.3 Editing Data Store Online*
@@ -107,15 +107,15 @@ You can edit your data in SDS online. These are the steps :
 - Password : osmidpersonal
 - Clik tag search
 
-.. image:: /static/training/intermediate/osm/image114.png 
+.. image:: /static/training/intermediate/osm/image114.* 
  
 - Add 'String' which is a name when we saved the sds tag and click search
 
-.. image:: /static/training/intermediate/osm/image115.png 
+.. image:: /static/training/intermediate/osm/image115.* 
  
 - You only can edit the objects attribute that has saved in JOSM but if you want to delete objects you must to use JOSM.
  
-.. image:: /static/training/intermediate/osm/image116.png 
+.. image:: /static/training/intermediate/osm/image116.* 
  
 - Click Save Tags
 
@@ -125,19 +125,19 @@ You can directly add your data on Data Store. These are the steps :
 
 - Click Map Search and Load OSM Geometries
 
-.. image:: /static/training/intermediate/osm/image117.png 
+.. image:: /static/training/intermediate/osm/image117.* 
 
-.. image:: /static/training/intermediate/osm/image118.png 
+.. image:: /static/training/intermediate/osm/image118.* 
  
 - After that add/edit information about object that chosen by you
 
-.. image:: /static/training/intermediate/osm/image119.png 
+.. image:: /static/training/intermediate/osm/image119.* 
  
 - After you finish click Save tags
 
-.. image:: /static/training/intermediate/osm/image120.png 
+.. image:: /static/training/intermediate/osm/image120.* 
 
-.. image:: /static/training/intermediate/osm/image121.png 
+.. image:: /static/training/intermediate/osm/image121.* 
  
 
 *4.5 Add and Edit User on Private Data Store*
@@ -147,13 +147,13 @@ You can directly add your data on Data Store. These are the steps :
 - Password : osmidceria
 - Click user administration
 
-.. image:: /static/training/intermediate/osm/image122.png 
+.. image:: /static/training/intermediate/osm/image122.* 
  
 - Click Add New User
 
-.. image:: /static/training/intermediate/osm/image123.png 
+.. image:: /static/training/intermediate/osm/image123.* 
 
-.. image:: /static/training/intermediate/osm/image124.png 
+.. image:: /static/training/intermediate/osm/image124.* 
  
 - Click Save if you finished
 
@@ -162,33 +162,33 @@ You can directly add your data on Data Store. These are the steps :
 
 - Click user administration
 
-.. image:: /static/training/intermediate/osm/image125.png
+.. image:: /static/training/intermediate/osm/image125.*
  
 - Click "Eye Symbol" in the left box
 
-.. image:: /static/training/intermediate/osm/image126.png
+.. image:: /static/training/intermediate/osm/image126.*
  
 - Click Edit User
 
-.. image:: /static/training/intermediate/osm/image127.png 
+.. image:: /static/training/intermediate/osm/image127.* 
 
 *4.6 Add Project on Private Data Store*
 
 - Click Project
 - Click Create New Project
 
-.. image:: /static/training/intermediate/osm/image128.png 
+.. image:: /static/training/intermediate/osm/image128.* 
  
 - Next you have to write Tag Fields Definition in JavaScript Object Notatioan (JSON) language. You have to translate Extensible Mark-up Language (XML) language at Preset that you want to use into JSON language.
 - Let's see the difference between XML Preset and JSON
 
 XML
 
-.. image:: /static/training/intermediate/osm/image129.png 
+.. image:: /static/training/intermediate/osm/image129.* 
        
 JSON
 
-.. image:: /static/training/intermediate/osm/image130.png 
+.. image:: /static/training/intermediate/osm/image130.* 
  
 NOTE:
 
@@ -197,7 +197,7 @@ NOTE:
 
 Example (first is XML, second is JSON)
 
-.. image:: /static/training/intermediate/osm/image131.png 
+.. image:: /static/training/intermediate/osm/image131.* 
  
 
 2. If your preset use ELEMENT TEXT, it must converted with format
@@ -206,17 +206,17 @@ Example (first is XML, second is JSON)
 
 Example (first is XML, second is JSON)
 
-.. image:: /static/training/intermediate/osm/image132.png 
+.. image:: /static/training/intermediate/osm/image132.* 
  
 - Write your tag definition into JSON language at the available row of Tag Field Definition (JSON)
 
-.. image:: /static/training/intermediate/osm/image33.png 
+.. image:: /static/training/intermediate/osm/image33.* 
  
 - Click Create Project if your finish
 - You can upload your presets in your project to the row of Preset File
 - If you click Project on right corner, you can see your Project. Click **View Table**  to see the data. If there is any ERROR, it possibly there is mistake at your JSON tag definition! If it doesn't you will see a table like this :
 
-.. image:: /static/training/intermediate/osm/image134.png 
+.. image:: /static/training/intermediate/osm/image134.* 
 
 - You also can download the table in the CSV format or Excel format.
 
