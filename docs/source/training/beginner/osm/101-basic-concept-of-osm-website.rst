@@ -30,12 +30,17 @@ important, and who it might be important to.
 .. image:: /static/training/beginner/osm/image7.*
    :align: center
 
-.. image:: /static/training/beginner/osm/image8.*
+.. figure:: /static/training/beginner/osm/image8.*
    :align: center
+<<<<<<< HEAD
    
 
 *A village in Indonesia (up), and an example of a handdrawn map (bellow)*
 
+=======
+
+   *A village in Indonesia (up), and an example of a handdrawn map (bellow).*
+>>>>>>> upstream/master
 
 If your town is like most, you may have drawn some lines to represent roads,
 possibly a river or stream.  Perhaps you added important buildings such as
