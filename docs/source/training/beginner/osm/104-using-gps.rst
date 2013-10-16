@@ -41,11 +41,15 @@ Lombok, Indonesia.
 
 .. image:: /static/training/beginner/osm/image34.*
    :align: center
-   *Google Earth software, showing coordinates of a place in Lombok, Indonesia.*
+
+*Google Earth software, showing coordinates of a place in Lombok, Indonesia.*
+
 
 .. image:: /static/training/beginner/osm/image35.*
    :align: center
-   *Garmin eTrex Vista HCx*
+
+                        *Garmin eTrex Vista HCx*
+
 
 **2. Turn on the GPS**
 
@@ -85,7 +89,8 @@ Lombok, Indonesia.
 a) GPS: regulate how the GPS sensor work. Choose the :menuselection:`Normal` 
    option. The device captures only the signals from the GPS satellites. But 
    your position accuracy sometimes less accurate (about 10-30 meters).
-c) WAAS/EGNOS: WAAS stands for Wide Area Augmentation System,
+
+b) WAAS/EGNOS: WAAS stands for Wide Area Augmentation System,
    while EGNOS stands for Euro Geostationary Navigation Overlay Service.
    There are generally provided by the GPS accuracy is 15 meters. WAAS /
    EGNOS is a system satellites and ground stations that provide GPS signal
@@ -100,6 +105,7 @@ c) WAAS/EGNOS: WAAS stands for Wide Area Augmentation System,
 
 c) Battery Type: To optimize power usage, should be adapted to the type of
    battery you use (default: Alkaline).
+
 d) Text Language: You can choose language you want to use.
 
 .. image:: /static/training/beginner/osm/image41.*
@@ -405,7 +411,7 @@ limitations of GPS, they can still obtain information of data without the
 need to stay / settle on that location and do not need to rent a GPS.
 
 The easiest way to upload GPS tracks is to download the plugin 
-:gulabel:`DirectUpload`:
+:guilabel:`DirectUpload`:
 
 - Open JOSM and Click :menuselection:`Edit > Preference > Plugin` box.
 - Type directupload on the :guilabel:`Search` box, give the check mark, then 
