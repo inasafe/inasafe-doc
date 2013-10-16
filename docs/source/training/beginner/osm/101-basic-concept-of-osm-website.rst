@@ -32,8 +32,15 @@ important, and who it might be important to.
 
 .. figure:: /static/training/beginner/osm/image8.*
    :align: center
+<<<<<<< HEAD
+   
+
+*A village in Indonesia (up), and an example of a handdrawn map (bellow)*
+
+=======
 
    *A village in Indonesia (up), and an example of a handdrawn map (bellow).*
+>>>>>>> upstream/master
 
 If your town is like most, you may have drawn some lines to represent roads,
 possibly a river or stream.  Perhaps you added important buildings such as
@@ -48,7 +55,8 @@ of what is on the ground.
 .. image:: /static/training/beginner/osm/image10.*
    :align: center
 
-*Examples of Symbols.*
+                         *Examples of Symbols.*
+
 
 Your map is informative.  You might use a map like this to explain to
 someone where different places are, where problems are in your community,
@@ -86,7 +94,8 @@ at any time, totally free.
 .. image:: /static/training/beginner/osm/image11.*
    :align: center
 
-*Digital Maps with OpenStreetMap.*
+                 *Digital Maps with OpenStreetMap.*
+
 
 OpenStreetMap is digital, which makes it extremely useful for us,
 and it is shared, which means that everybody benefits from the work of
