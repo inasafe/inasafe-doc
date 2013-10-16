@@ -42,22 +42,13 @@ Lombok, Indonesia.
 .. figure:: /static/training/beginner/osm/image34.*
    :align: center
 
-<<<<<<< HEAD
-*Google Earth software, showing coordinates of a place in Lombok, Indonesia.*
-
-=======
    *Google Earth software, showing coordinates of a place in Lombok, Indonesia.*
->>>>>>> upstream/master
 
 .. figure:: /static/training/beginner/osm/image35.*
    :align: center
 
-<<<<<<< HEAD
-                        *Garmin eTrex Vista HCx*
-
-=======
    *Garmin eTrex Vista HCx*
->>>>>>> upstream/master
+
 
 **2. Turn on the GPS**
 
@@ -94,8 +85,8 @@ Lombok, Indonesia.
 - In the :guilabel:`System` menu you can find some of the settings are as
   follows:
 
-a) GPS: regulate how the GPS sensor work. Choose the :menuselection:`Normal` 
-   option. The device captures only the signals from the GPS satellites. But 
+a) GPS: regulate how the GPS sensor work. Choose the :menuselection:`Normal`
+   option. The device captures only the signals from the GPS satellites. But
    your position accuracy sometimes less accurate (about 10-30 meters).
 
 b) WAAS/EGNOS: WAAS stands for Wide Area Augmentation System,
@@ -103,7 +94,7 @@ b) WAAS/EGNOS: WAAS stands for Wide Area Augmentation System,
    There are generally provided by the GPS accuracy is 15 meters. WAAS /
    EGNOS is a system satellites and ground stations that provide GPS signal
    corrections, giving you a better position accuracy (to less than 3
-   meters). You should choose the mode WAAS / EGNOS by selecting 
+   meters). You should choose the mode WAAS / EGNOS by selecting
    :menuselection:`Enabled`
    to get better accuracy, but with the consequence you have to prepare a
    backup battery.
@@ -121,9 +112,9 @@ d) Text Language: You can choose language you want to use.
 
 *3.2. Unit Settings*
 
-Access the menu :menuselection:`Setup > Units`. In this menu, you can manage 
-want to display units. For examples, in meter, feet, and other. You can also 
-manage position format (decimal degree, decimal minutes degree, second minutes 
+Access the menu :menuselection:`Setup > Units`. In this menu, you can manage
+want to display units. For examples, in meter, feet, and other. You can also
+manage position format (decimal degree, decimal minutes degree, second minutes
 degree), datum (standard WGS 84) and projection (standard WGS 84).
 
 .. image:: /static/training/beginner/osm/image42.*
@@ -134,7 +125,7 @@ degree), datum (standard WGS 84) and projection (standard WGS 84).
 
 *3.3. Times Settings*
 
-Access the menu  :menuselection:`Setup > Time`. You can manage time format 
+Access the menu  :menuselection:`Setup > Time`. You can manage time format
 (12 hours or 24 hours) and your time zone.
 
 .. image:: /static/training/beginner/osm/image44.*
@@ -145,13 +136,13 @@ Access the menu  :menuselection:`Setup > Time`. You can manage time format
 
 *3.4. Page Settings*
 
-Access the menu :menuselection:`Setup > Page Sequences`. You remember about 
+Access the menu :menuselection:`Setup > Page Sequences`. You remember about
 function Pages button ? You can manage pages function often your use,
 so you do not a lot of pressing a button to access the page function. You
 can press the Page button several times to page you want access the function
-. You can add page function with select :guilabel:`Add Page` then select 
-function such as: :guilabel:`Tracks` (to see details of your trip), 
-:guilabel:`Map` (to view maps), :guilabel:`Satellite` (to view the status 
+. You can add page function with select :guilabel:`Add Page` then select
+function such as: :guilabel:`Tracks` (to see details of your trip),
+:guilabel:`Map` (to view maps), :guilabel:`Satellite` (to view the status
 satellite, position, and accuracy).
 
  .. image:: /static/training/beginner/osm/image46.*
@@ -231,8 +222,8 @@ e) “Least often” – track recording infrequently
    :align: center
 
 
-- If you return to the :guilabel:`Satellites` page, you can see that you are 
-  connected to three or more satellites.  In the upper left corner are your 
+- If you return to the :guilabel:`Satellites` page, you can see that you are
+  connected to three or more satellites.  In the upper left corner are your
   coordinates, your latitude and longitude.
 - Flip to the Map page, and you can see a map of where you are.  If you have
   added OSM maps to your GPS, you may see roads and places.  Otherwise,
@@ -270,8 +261,8 @@ or the shape of a field.
 **6. Save Your Location**
 
 - To save your current location as a waypoint, click the :kbd:`X` button until
-  your reach the Main Menu.  Using the joystick, move it so that :guilabel:`Mark` 
-  is highlighted on the screen.  Push the joystick button down to open the 
+  your reach the Main Menu.  Using the joystick, move it so that :guilabel:`Mark`
+  is highlighted on the screen.  Push the joystick button down to open the
   :guilabel:`Save Waypoint` page.
 
 .. image:: /static/training/beginner/osm/image56.*
@@ -286,8 +277,8 @@ or the shape of a field.
   along with the information you want to collect with this object.  Next you
   will see the time and date when the point is recorded.  Below that are the
   coordinates, followed by the altitude.
-- Use the joystick to move to the :guilabel:`OK` button at the bottom of the 
-  screen. Press the joystick button down to save this point.  Be sure to write 
+- Use the joystick to move to the :guilabel:`OK` button at the bottom of the
+  screen. Press the joystick button down to save this point.  Be sure to write
   down the number of the point, along with what the place is and any other
   information you want to record about the place in your notebook.
 - Press the :kbd:`X` button to go to the map page.  You should now see your point
@@ -311,17 +302,17 @@ or the shape of a field.
    :align: center
 
 - If you would like to empty the track log to delete earlier recordings,
-  use the joystick to select :guilabel:`Clear`, and press the joystick down.  
+  use the joystick to select :guilabel:`Clear`, and press the joystick down.
   The bar at the top should read “0%”.
 - To turn on the log, move the joystick to highlight “On”,
   and press the joystick down.  The track log is now recording your path.
-- Under the :guilabel:`Set up` option, you also can set time or distance 
-  intervals to track.  Time intervals instruct your GPS to record your location 
-  at given intervals.  If you have a memory card in your GPS, it is good 
-  practice to set this to 1 second, meaning that every second your location will 
-  be added to the track log.  This may be useful when detailed surveys are 
+- Under the :guilabel:`Set up` option, you also can set time or distance
+  intervals to track.  Time intervals instruct your GPS to record your location
+  at given intervals.  If you have a memory card in your GPS, it is good
+  practice to set this to 1 second, meaning that every second your location will
+  be added to the track log.  This may be useful when detailed surveys are
   needed.
-- Press the :kbd:`X` button to go to the map page.  As you move you will see 
+- Press the :kbd:`X` button to go to the map page.  As you move you will see
   your track shown as a series of dots.
 
 **8. Copy Waypoints and Tracks to the Computer**
@@ -367,18 +358,18 @@ or the shape of a field.
 - Click :guilabel:`Next`.
 - Click :guilabel:`I accept` and :guilabel:`Next`.
 - Continue clicking :guilabel:`Next` until the program installs.
-- When the program has finished installing, click :guilabel:`Finish` to start 
+- When the program has finished installing, click :guilabel:`Finish` to start
   GPSBabel.
 
 *8.5. Copy Tracks and Waypoints*
 
-- Click in the circle next to the word :guilabel:`Device` at the top of the 
+- Click in the circle next to the word :guilabel:`Device` at the top of the
   window.
 
 .. image:: /static/training/beginner/osm/image59.*
    :align: center
 
-- In the dropdown menu labelled :guilabel:`Format`, select 
+- In the dropdown menu labelled :guilabel:`Format`, select
   :guilabel:`Garmin serial/USB protocol`
 - Go down to the middle of the window, under Output.  In the dropdown menu
   labelled :guilabel:`Format`, select :guilabel:`GPX XML`:
@@ -398,7 +389,7 @@ or the shape of a field.
 *8.6. Open in JOSM*
 
 - Now open JOSM.  On the top menu, click :menuselection:`File > Open...`
-- Find and select the file that you created with GPSBabel.  Click 
+- Find and select the file that you created with GPSBabel.  Click
   :guilabel:`Open`.
 - You should now see your points and tracks loaded into JOSM.
 
@@ -418,11 +409,11 @@ don’t have access, who can’t reach the location or because of the
 limitations of GPS, they can still obtain information of data without the
 need to stay / settle on that location and do not need to rent a GPS.
 
-The easiest way to upload GPS tracks is to download the plugin 
+The easiest way to upload GPS tracks is to download the plugin
 :guilabel:`DirectUpload`:
 
 - Open JOSM and Click :menuselection:`Edit > Preference > Plugin` box.
-- Type directupload on the :guilabel:`Search` box, give the check mark, then 
+- Type directupload on the :guilabel:`Search` box, give the check mark, then
   click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/osm/image62.*
@@ -460,7 +451,7 @@ The easiest way to upload GPS tracks is to download the plugin
 
 - Click :guilabel:`Upload Trace`. If requested to enter a username and password,
   you can enter the username and password of the account OpenStreetMap and
-  check the :guilabel:`save user and password` then click 
+  check the :guilabel:`save user and password` then click
   :guilabel:`Authenticate`.
 
 **10. Edit GPS Data using JOSM**
@@ -469,8 +460,8 @@ After you successfully open and upload the GPS data, you must enter the GPS
 data as the field result into OSM server. The following way:
 
 - Open a file gpx results of your field data back using JOSM.
-- Click :menuselection:`File > Download from OSM`, You don’t have to re-draw 
-- the box to download because JOSM been reading your region according to the GPS 
+- Click :menuselection:`File > Download from OSM`, You don’t have to re-draw
+- the box to download because JOSM been reading your region according to the GPS
   layer automatically. Click :guilabel:`Download`.
 
 .. image:: /static/training/beginner/osm/image65.*
