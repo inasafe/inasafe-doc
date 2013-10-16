@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.png
 
-********
-Module 5
-********
-Map Projection Basics
-=====================
+
+Module 5: Map Projection Basics
+===============================
 
 **Learning Objectives**
 

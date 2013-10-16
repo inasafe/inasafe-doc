@@ -1,10 +1,8 @@
 .. image:: /static/training/intermediate/osm/image6.png
 
-********
-Module 6
-********
-Editing Wiki OpenStreetMap
-==========================
+
+Module 6: Editing Wiki OpenStreetMap
+====================================
 
 **Learning Objectives**
 

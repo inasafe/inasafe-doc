@@ -1,10 +1,8 @@
 .. image:: /static/training/intermediate/qgis-inasafe/image6.png
 
-********
-Module 4
-********
-Planning Evacuation Route Based on Hazard Information
-=====================================================
+
+Module 4: Planning Evacuation Route Based on Hazard Information
+===============================================================
 
 **Learning Objectives**
 

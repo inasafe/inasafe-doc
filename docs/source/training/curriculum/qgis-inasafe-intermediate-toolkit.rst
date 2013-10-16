@@ -1,8 +1,8 @@
-Quantum GIS and InaSAFE Intermediate
-====================================
+Unit 4 Facilitator Guide
+========================
 
-Trainer's Toolkit - (A Guide to Facilitator)
---------------------------------------------
+Intermediate QGIS-InaSAFE Trainer's Toolkit - (A Guide to Facilitator)
+----------------------------------------------------------------------
 
 BADAN NASIONAL PENANGGULANGAN BENCANA
 .....................................

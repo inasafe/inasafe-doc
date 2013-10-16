@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-********
-Module 7
-********
-Imagery Offset
-==============
+
+Module 7: Imagery Offset
+========================
 
 **Learning Objectives**
 

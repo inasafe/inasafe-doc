@@ -1,10 +1,8 @@
 .. image:: /static/training/intermediate/osm/image6.png
 
-********
-Module 5
-********
-Using Private Data Store
-========================
+
+Module 5: Using Private Data Store
+==================================
 
 **Learning Objectives**
 

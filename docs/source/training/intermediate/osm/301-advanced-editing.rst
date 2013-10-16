@@ -1,10 +1,8 @@
 .. image:: /static/training/intermediate/osm/image6.png
 
-********
-Module 1
-********
-Advanced Editing
-================
+
+Module 1: Advanced Editing
+==========================
 
 **Learning Objectives**
 
