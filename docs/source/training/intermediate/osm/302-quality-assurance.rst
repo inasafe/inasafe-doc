@@ -1,10 +1,8 @@
 .. image:: /static/training/intermediate/osm/image6.png
 
-********
-Module 2
-********
-Quality Assurance
-=================
+
+Module 2: Quality Assurance
+===========================
 
 **Learning Objectives**
 

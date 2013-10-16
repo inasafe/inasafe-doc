@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.png
 
-*********
-Module 12
-*********
-Understanding InaSAFE
-=====================
+
+Module 12: Understanding InaSAFE
+================================
 
 **Learning Objectives**
 

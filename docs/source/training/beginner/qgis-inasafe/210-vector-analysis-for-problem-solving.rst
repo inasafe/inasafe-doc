@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.png
 
-*********
-Module 10
-*********
-Vector Analysis for Problem Solving
-===================================
+
+Module 10: Vector Analysis for Problem Solving
+==============================================
 
 **Learning Objectives**
 

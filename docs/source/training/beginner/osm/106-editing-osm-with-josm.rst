@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-********
-Module 6
-********
-Editing OpenStreetMap with JOSM
-===============================
+
+Module 6: Editing OpenStreetMap with JOSM
+=========================================
 
 **Learning Objectives**
 

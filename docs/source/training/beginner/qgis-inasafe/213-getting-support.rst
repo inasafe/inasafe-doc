@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.png
 
-*********
-Module 13
-*********
-Getting Support
-===============
+
+Module 13: Getting Support
+==========================
 
 **Learning Objectives**
 

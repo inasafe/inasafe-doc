@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-********
-Module 3
-********
-The Basics of QGIS
-==================
+
+Module 3: The Basics of QGIS
+============================
 
 **Learning Objectives**
 

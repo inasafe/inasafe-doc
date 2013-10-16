@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.png
 
-********
-Module 7
-********
-Labels and Classification
-=========================
+
+Module 7: Labels and Classification
+===================================
 
 **Learning Objectives**
 

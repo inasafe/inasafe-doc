@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-********
-Module 8
-********
-Working with Raster Data
-========================
+
+Module 8: Working with Raster Data
+==================================
 
 **Learning Objectives**
 

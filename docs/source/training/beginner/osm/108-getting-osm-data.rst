@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-********
-Module 8
-********
-Getting OSM Data
-================
+
+Module 8: Getting OSM Data
+==========================
 
 **Learning Objectives**
 

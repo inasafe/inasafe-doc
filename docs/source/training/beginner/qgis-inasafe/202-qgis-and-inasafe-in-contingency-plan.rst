@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.png
 
-********
-Module 2
-********
-QGIS and InaSAFE in Contingency Plan
-====================================
+
+Module 2: QGIS and InaSAFE in Contingency Plan
+==============================================
 
 **Learning Objectives**
 
