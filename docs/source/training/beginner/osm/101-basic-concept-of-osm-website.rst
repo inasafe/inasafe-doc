@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-********
-Module 1
-********
-Basic Concept of OpenStreetMap Website
-======================================
+
+Module 1: Basic Concept of OpenStreetMap Website
+================================================
 
 
 **Learning Objectives**

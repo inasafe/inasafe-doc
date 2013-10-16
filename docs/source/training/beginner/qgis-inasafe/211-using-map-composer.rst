@@ -1,10 +1,8 @@
 .. figure:: /static/training/beginner/qgis-inasafe/image6.*
 
-Module 11
-*********
 
-Using Map Composer
-==================
+Module 11: Using Map Composer
+=============================
 
 **Learning Objectives**
 

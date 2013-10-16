@@ -1,10 +1,8 @@
 .. image:: /static/training/intermediate/qgis-inasafe/image6.png
 
-********
-Module 1
-********
-Review QGIS
-============
+
+Module 1: Review QGIS
+=====================
 
 **Learning Objectives**
 

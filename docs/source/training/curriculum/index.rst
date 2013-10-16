@@ -1,10 +1,12 @@
 .. _curriculum:
 
-CURRICULUM AND GUIDE FOR FACILITATOR
+Curriculum and Guide for Facilitator
 ====================================
 
 This  is the curriculum and guide for facilitator for training course that
-has been designed to have hands on experience with |project_name|.
+has been designed by Badan Nasional Penanggulangan Bencana (BNPB), 
+Humanitarian OpenStreetMap Team (HOT), and Australia-Indonesia Facility for 
+Disaster Reduction (AIFDR) to have hands on experience with |project_name|.
 
 .. toctree::
    :maxdepth: 1

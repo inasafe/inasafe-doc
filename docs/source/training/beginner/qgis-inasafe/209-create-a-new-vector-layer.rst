@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-********
-Module 9
-********
-Create a New Vector Layer
-=========================
+
+Module 9: Create a New Vector Layer
+===================================
 
 **Learning Objectives**
 

@@ -1,11 +1,8 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-********
-Module 2
-********
 
-Working with OSM
-================
+Module 2: Working with OSM
+==========================
 
 **Learning Objectives**
 

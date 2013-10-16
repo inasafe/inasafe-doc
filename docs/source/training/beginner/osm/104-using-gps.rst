@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/osm/image33.*
 
-********
-Module 4
-********
-Using GPS
-=========
+
+Module 4: Using GPS
+===================
 
 **Learning Objectives**
 

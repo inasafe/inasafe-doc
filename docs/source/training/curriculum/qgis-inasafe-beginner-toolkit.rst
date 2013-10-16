@@ -1,8 +1,8 @@
-Quantum GIS and InaSAFE Beginner Guide
-======================================
+Unit 2 Facilitator Guide
+========================
 
-Trainer's Toolkit - (Guide for Facilitator)
--------------------------------------------
+Beginner QGIS-InaSAFE Trainer's Toolkit - (A Guide for Facilitator)
+-------------------------------------------------------------------
 
 BADAN NASIONAL PENANGGULANGAN BENCANA
 .....................................

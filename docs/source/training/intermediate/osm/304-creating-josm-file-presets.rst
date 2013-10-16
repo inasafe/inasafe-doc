@@ -1,11 +1,8 @@
 .. image:: /static/training/intermediate/osm/image6.png
 
-********
-Module 4
-********
 
-Creating JOSM File Presets
-==========================
+Module 4: Creating JOSM File Presets
+====================================
 
 **Learning Objectives**
 

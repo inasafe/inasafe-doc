@@ -1,11 +1,7 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-********
-Module 3
-********
-
-Working with JOSM
-=================
+Module 3: Working with JOSM
+===========================
 
 **Learning Objectives**
 

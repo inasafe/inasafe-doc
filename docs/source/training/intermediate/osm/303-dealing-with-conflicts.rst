@@ -1,10 +1,8 @@
 .. image:: /static/training/intermediate/osm/image6.png
 
-********
-Module 3
-********
-Dealing With Conflicts
-======================
+
+Module 3: Dealing With Conflicts
+================================
 
 **Learning Objectives**
 

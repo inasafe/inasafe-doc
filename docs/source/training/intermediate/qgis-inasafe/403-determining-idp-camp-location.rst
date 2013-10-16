@@ -1,10 +1,8 @@
 .. image:: /static/training/intermediate/qgis-inasafe/image6.png
 
-********
-Module 3
-********
-Determining IDP Camp Location
-=============================
+
+Module 3: Determining IDP Camp Location
+=======================================
 
 **Learning Objectives**
 

@@ -1,10 +1,8 @@
 .. image:: /static/training/beginner/osm/image67.*
 
-********
-Module 5
-********
-Field Papers
-============
+
+Module 5: Field Papers
+======================
 
 **Learning Objectives**
 

@@ -1,8 +1,8 @@
-Intermediate OpenStreetMap
-==========================
+Unit 3 Facilitator Guide
+========================
 
-Trainer's Toolkit - (Guide for Facilitator)
-
+Intermediate OpenStreetMap Trainer's Toolkit - (A Guide for Facilitator)
+------------------------------------------------------------------------
 
 BADAN NASIONAL PENANGGULANGAN BENCANA
 .....................................
