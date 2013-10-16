@@ -79,7 +79,7 @@ success:
   information to be collected that can be utilized for analysis in InaSAFE (i
   .e. How many houses will be affected by a specific hazard).
 
-- **QuantumGIS  (QGIS)**: is an open source Geographical Information System
+- **QGIS**: is an open source Geographical Information System
   (GIS) software that allows users to spatially analyse their data,
   it is also the platform on which InaSAFE is built.
 
@@ -1024,8 +1024,8 @@ be easier to understand if read the prepared toolkit.
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
 |Installing QGIS and explaining QGIS user interface                       |                                                                  |**QGIS Installation and QGIS User Interface Layout**        | Participants are learn and practice   | 180 Minutes            | Practice         | Projector                     |
 |                                                                         | 1. Downloading QGIS                                              |                                                            | how to get QGIS, Installing QGIS,     |                        |                  | Slide PP                      |
-|                                                                         | 2. Installing QGIS                                               | 1. Getting QuantumGIS                                      | Layout QGIS, adding vector layer,     |                        |                  | Module 3                      |
-|                                                                         | 3. Opening QGIS project that has been saved before               | 2. Installing QuantumGIS                                   | basic QGIS tools, panning map         |                        |                  | Participant's computer        |
+|                                                                         | 2. Installing QGIS                                               | 1. Getting QGIS                                            | Layout QGIS, adding vector layer,     |                        |                  | Module 3                      |
+|                                                                         | 3. Opening QGIS project that has been saved before               | 2. Installing QGIS                                         | basic QGIS tools, panning map         |                        |                  | Participant's computer        |
 |                                                                         | 4. Looking at available layer list                               | 3. QGIS User interface layout                              |                                       |                        |                  | QGIS Installation file        |
 |                                                                         | 5. Accessing basic tool from toolbar                             | 4. Adding vector layer                                     |                                       |                        |                  |                               |
 |                                                                         | 6. Cleaning the toolbar                                          | 5. QGIS basic tool                                         |                                       |                        |                  |                               |

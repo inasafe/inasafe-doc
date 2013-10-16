@@ -33,62 +33,71 @@ good understanding of how to draw maps in JOSM.
   or Internet Explorer.
 - In the address bar at the top of the window, enter the following text and
   press Enter: `josm.openstreetmap.de <http://josm.openstreetmap.de>`_
-- You can also find this website by searching for “JOSM”
+- You can also find this website by searching for :kbd:`JOSM`
+
 - The website should look something like this:
 
 .. image:: /static/training/beginner/osm/image17.*
+   :align: center
 
-- If you have Windows installed on your computer, click “Windows Installer”
-  to download JOSM. If you have a different operating system,
-  click on the link for your system. Your download should begin. In this
-  module we will assume that you are using Windows, but the instructions are
-  similar for other operating systems.
+- If you have Windows installed on your computer, click 
+  :guilabel:`Windows Installer` to download JOSM. If you have a different 
+  operating system, click on the link for your system. Your download should 
+  begin. In this module we will assume that you are using Windows, but the 
+  instructions are similar for other operating systems.
 
 **2. Install JOSM**
 
 - You may have problems installing JOSM if Java is not already installed on
-  your computer.  You can install Java by running jre-7u21-windows-i586 in the
-  software/ folder.  You can also download it here:
+  your computer.  You can install Java by running **jre-7u21-windows-i586** 
+  in the software/ folder.  You can also download it here:
   `http://www.java.com/en/download/ <http://www.java.com/en/download/>`_
 - Find the JOSM install file on your computer.  It should be named
-  josm-setup.exe.  Double-click it to begin setup.
-- Click ‘OK’, ‘Next’, ‘I Agree’, and ‘Install’. When the installation is
-  complete, click ‘Finish’ to launch JOSM for the first time. Later,
-  when you want to start JOSM, you can do so by clicking on the Start Menu in
+  **josm-setup.exe**.  :guilabel:`Double-click` it to begin setup.
+- Click :guilabel:`OK`, :guilabel:`Next`, :guilabel:`I Agree`, and 
+  :guilabel:`Install`. When the installation is complete, click 
+  :guilabel:`Finish` to launch JOSM for the first time. Later, when you want 
+  to start JOSM, you can do so by clicking on the :menuselection:`Start Menu` in
   the lower left corner of your computer, and clicking the program JOSM.
 - You may see a window pop up that asks if you want to update the software.
   You don’t need to update it since it is new.  Press the button that says
-  “Cancel.”  If you don’t ever want to see this message again,
-  check the box at the bottom before pressing “Cancel.”
+  :guilabel:`Cancel`. If you don’t ever want to see this message again,
+  check the box at the bottom before pressing :guilabel:`Cancel`
 - When JOSM starts, it will look something like this:
 
 .. image:: /static/training/beginner/osm/image18.*
+   :align: center
 
 **3. Change JOSM Settings**
 
 Before we begin using JOSM, it’s a good idea to change some of the settings
 so that is will be easier to use. To change the settings,
-click “Edit” on the top menu, and then click “Preferences.”
+click :guilabel:`Edit` on the top menu, and then click :guilabel:`Preferences`
 
 .. image:: /static/training/beginner/osm/image19.*
+   :align: center
 
 *3.1. Add Bing Imagery*
 
 - We want to be able to use satellite imagery when we are making our maps,
   so let’s add that from the Preferences window. On the left side of the
   Preferences window there are different icons for different settings. Click
-  on the icon that says “WMS TMS”. You may need to click on the down arrow to
-  find it:
+  on the icon that says :guilabel:`WMS TMS`. You may need to click on the down 
+  arrow to find it:
 
 .. image:: /static/training/beginner/osm/image20.*
+   :align: center
 
 .. image:: /static/training/beginner/osm/image21.*
+   :align: center
 
-- Click on “Bing Sat”. Then Click “Activate”.
+- Click on :guilabel:`Bing Sat`. Then Click :guilabel:`Activate`.
 
 .. image:: /static/training/beginner/osm/image22.*
+   :align: center
 
-- You should now see “Bing Sat” in the list below the Activate button.
+- You should now see :guilabel:`Bing Sat` in the list below the
+  :guilabel:`Activate` button.
 
 *3.2. Add Presets*
 
@@ -96,18 +105,20 @@ click “Edit” on the top menu, and then click “Preferences.”
   Don’t worry if this is unclear right now - we will learn more about it as
   we go along.
 - You should still have the Preferences window open. If you don’t,
-  click Edit ‣ Preferences to open the window.
+  click :menuselection:`Edit ‣ Preferences` to open the window.
 - On the left side, click the icon that looks like a grid.
 
  .. image:: /static/training/beginner/osm/image23.*
+    :align: center
 
-- Click the tab at the top that reads “Tagging Presets”.
-- Under “Available Presets” find and select the entry labelled “Buildings
-  Indonesia.”  Then click the blue arrow to the right of this box.
+- Click the tab at the top that reads :guilabel:`Tagging Presets`.
+- Under ':guilabel:`Available Presets` find and select the entry labelled 
+  :kbd:`Buildings Indonesia` Then click the blue arrow to the right of this box.
 
 .. image:: /static/training/beginner/osm/image24.*
+   :align: center
 
-- Click OK.
+- Click :guilabel:`OK`.
 
 *3.3. Add Plugins*
 
@@ -115,37 +126,43 @@ click “Edit” on the top menu, and then click “Preferences.”
   plugins that can be downloaded.
 - To download the plugins that we need, we must first open the Preferences
   window.
-- In the Preferences window, click the Plugin icon to the left:
+- In the :guilabel:`Preferences` window, click the :guilabel:`Plugin` icon to 
+  the left:
 
 .. image:: /static/training/beginner/osm/image25.*
+   :align: center
 
 - In the plugin window, first you need to download the plugin list by
-  clicking "Download list". It will takes a few minutes.
+  clicking :guilabel:`Download list`. It will takes a few minutes.
 - After the plugin list appears, type the name of the plugin you want to
-  download in the "Search"
+  download in the :guilabel:`Search`
 
 .. image:: /static/training/beginner/osm/image26.*
+   :align: center
 
 - After found the plugin will be downloaded, give a 'check' on the left of
   the plugin name.
-- Click OK.
+- Click :guilabel:`OK`.
 
 *3.4. Change Language*
 
 - JOSM has been translated into many languages. If it has been translated
-  into your language, you can change it in the Preferences.
-- If you don’t have the Preferences window open, click Edit ‣ Preferences.
+  into your language, you can change it in the :guilabel:`Preferences`.
+- If you don’t have the Preferences window open, click 
+  :menuselection:`Edit ‣ Preferences`.
 - On the left side, click the icon that looks like a paint can and paintbrush.
-- At the top of the window, click the tab that says “Look and Feel”.
-- Choose your language in the dropdown box next to the word “Language”.
-- Click OK.
+- At the top of the window, click the tab that says :guilabel:`Look and Feel`.
+- Choose your language in the dropdown box next to the word :guilabel:`Language`
+- Click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/osm/image27.*
+   :align: center
 
-- You need to restart JOSM to save your settings. Click “File” in the upper
-  left corner, and Click “Exit” at the bottom of the menu.
-- Start JOSM again by going to the Windows Start Menu in the bottom left
-  corner. Find JOSM and click on it to start.
+- You need to restart JOSM to save your settings. Click :menuselection:`File` 
+  in the upper left corner, and Click :menuselection:`Exit` at the bottom of 
+  the menu.
+- Start JOSM again by going to the Windows :menuselection:`Start Menu` in the 
+- bottom left corner. Find JOSM and click on it to start.
 
 *4. Learn Basic Drawing with JOSM*
 
@@ -153,16 +170,18 @@ click “Edit” on the top menu, and then click “Preferences.”
   ways to draw maps with JOSM. Note that this map is not real,
   in that it is not a real map of a real place, so we will not save it on
   OpenStreetMap.
-- The file is located in osm/ and is named sample.osm.
-- Let’s open the sample map file in JOSM. Open JOSM. Click the “Open” button
-  in the upper left.
+- The file is located in osm/ and is named :kbd:`sample.osm`
+- Let’s open the sample map file in JOSM. Open JOSM. Click the :guilabel:`Open` 
+  button in the upper left.
 
  .. image:: /static/training/beginner/osm/image28.*
+    :align: center
 
-- Find the file sample.osm. Click on it, and then click “Open”.
+- Find the file :kbd:`sample.osm`. Click on it, and then click :guilabel:`Open`.
 - You should now see a sample map, similar to this:
 
 .. image:: /static/training/beginner/osm/image29.*
+   :align: center
 
 *4.1. Basic Operations*
 
@@ -175,12 +194,13 @@ click “Edit” on the top menu, and then click “Preferences.”
   left mouse down and moving the bar left or right with your mouse.
 
 .. image:: /static/training/beginner/osm/image30.*
+   :align: center
 
 - Look at the sample map. There a few different types of objects here. There
   is a river, a forest, some buildings, several roads, and a couple of shops.
   To select an object, click on it with your left mouse button.
 
-*4.2.   Points, Lines, and Shapes (polygon)*
+*4.2. Points, Lines, and Shapes (polygon)*
 
 - As you click different objects on the sample map, notice that there are
   three different types of objects on the map. There are points, lines,
@@ -200,10 +220,11 @@ click “Edit” on the top menu, and then click “Preferences.”
   exactly like a line - the only difference is that the line begins at the
   same point where it ends.
 - You may notice that when you select an object, a list appears to the right
-  of the map in a window called “Properties”. These are known as tags. Tags
-  are information that is tied to a point, line or shape that describes what
-  it is. For now all you need to know is that this information helps describe
-  whether our object is a forest, a river, a building, or something else.
+  of the map in a window called :guilabel:`Properties`. These are known as tags. 
+  **Tags** are information that is tied to a point, line or shape that describes 
+  what it is. For now all you need to know is that this information helps 
+  describe whether our object is a forest, a river, a building, or something 
+  else.
 - Think about drawing a map by hand, and how you are also drawing points,
   lines, and shapes. What other places are best represented by points? Lines?
   Shapes?
@@ -215,25 +236,29 @@ Now, let’s try to practice drawing an object (point, line and shape).
   map. The most important buttons, however, are at the top of these column.
   These buttons change what you can do with your mouse.
 - The top four buttons in this column are the most important. They allow you
-  to: Select, Draw, Zoom in, Delete
-- Until now, you have been using the Select tool, which looks like this:
+  to: :guilabel:`Select`, :guilabel:`Draw`, :guilabel:`Zoom in`, 
+  :guilabel:`Delete`
+- Until now, you have been using the :guilabel:`Select` tool, which looks like 
+  this:
 
 .. image:: /static/training/beginner/osm/image31.*
+   :align: center
 
 - Before you draw, you need to make sure that nothing is selected. Click in
   the black space on the map, where it is empty, to make sure nothing is
   selected.
-- Click on the second button, the Draw tool.
+- Click on the second button, the :guilabel:`Draw` tool.
 
 .. image:: /static/training/beginner/osm/image32.*
+   :align: center
 
-- Find an empty area on the map, and double-click with your mouse. This will
-  draw a single point.
-- To draw a line, single-click with your mouse. Move your mouse and click
-  again. Continue until you are happy with your line. To end the line,
-  double-click your mouse.
+- Find an empty area on the map, and :guilabel:`double-click` with your mouse. 
+  This will draw a single point.
+- To draw a line, :guilabel:`single-click` with your mouse. Move your mouse and 
+  click again. Continue until you are happy with your line. To end the line,
+  :guilabel:`double-click` your mouse.
 - Draw a shape the same way that you draw a line, but finish the shape by
-  double-clicking on the point where you started the line.
+  :guilabel:`double-clicking` on the point where you started the line.
 
 *4.3. Changing Objects*
 
@@ -251,18 +276,19 @@ Now, let’s try to practice drawing an object (point, line and shape).
   but we still haven’t defined what they represent. We want to be able to say
   that our points are shops, schools, or something else,
   and whether our shapes are fields, buildings, or something else.
-- Click on the Select tool, in the column of buttons on the left.
+- Click on the :guilabel:`Select` tool, in the column of buttons on the left.
 
 .. image:: /static/training/beginner/osm/image31.*
+   :align: center
 
-- Select one of the objects that you drew with the Draw tool. On the top
-  menu, click “Presets”. Move your mouse through the sub-menu to the type of
-  location you would like to define.
+- Select one of the objects that you drew with the :guilabel:`Draw tool`. On the 
+  top menu, click :menuselection:`Presets`. Move your mouse through the sub-menu
+  to the type of location you would like to define.
 - When you click on a preset, a form will pop up asking you for more
   information. You do not have to fill in every field, but you may wish to add
   some of the important fields, such as the name of the object.
-- When you are finished entering the information, click “Apply Preset”. If
-  everything went well, your point, line, or shape should change colors or
+- When you are finished entering the information, click :guilabel:`Apply Preset`
+  . If everything went well, your point, line, or shape should change colors or
   show a symbol. This is because you have defined what it is.
 
 **Exercise:**

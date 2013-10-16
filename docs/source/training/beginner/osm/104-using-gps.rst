@@ -32,51 +32,55 @@ from telephone companies, it receives signals from satellites that are going
 around the Earth. By receiving these signals from the satellites,
 a GPS is able to calculate your exact location on the planet.  It records
 this location in coordinates, which are two long numbers.  One number tells
-you how far East or West you are - this is called longitude.  The second
-number tells you how far North or South you are - this is called latitude.
+you how far East or West you are - this is called **longitude**.  The second
+number tells you how far North or South you are - this is called **latitude**.
 Every place on Earth has unique geographic coordinates.
 
 For example: -8.639298 Latitude, 116.311607 Longitude is a location in
 Lombok, Indonesia.
 
 .. image:: /static/training/beginner/osm/image34.*
-
-*Google Earth software, showing coordinates of a place in Lombok, Indonesia.*
+   :align: center
+   *Google Earth software, showing coordinates of a place in Lombok, Indonesia.*
 
 .. image:: /static/training/beginner/osm/image35.*
-
-*Garmin eTrex Vista HCx*
+   :align: center
+   *Garmin eTrex Vista HCx*
 
 **2. Turn on the GPS**
 
 - Before you turn on your GPS, go outside where you have a clear view of the
   sky.  Because the GPS determines your location by receiving signals from
-  satellites, it won’t work indoors.
-- On the right side of your GPS, press and hold the Power button.  The GPS
-  will start, and it will show you the Satellites page.  You should see
+  satellites, **it won’t work indoors**.
+- On the right side of your GPS, press and hold the :guilabel:`Power` button.  
+  The GPS will start, and it will show you the Satellites page.  You should see
   something like the image below.  Your GPS is looking for satellite signals.
-  When it has connected to three or more satellites,
-  it will have your location.
+  When it has connected to three or more satellites, it will have your location.
 
 .. image:: /static/training/beginner/osm/image36.*
+   :align: center
 
-- Once your location is determined, the Satellite screen will disappear and
-  you will see the main menu.
+- Once your location is determined, the :guilabel:`Satellite` screen will 
+  disappear and you will see the :guilabel:`Main Menu`.
 
 .. image:: /static/training/beginner/osm/image37.*
+   :align: center
 
 **3. GPS Setting**
 
 *3.1. GPS mode settings*
 
-- Access the Setup menu on the Main Menu by using the Page button. Then go
-  to the System.
+- Access the :guilabel:`Setup` menu on the :guilabel:`Main Menu` by using the 
+  :guilabel:`Page` button. Then go to the :guilabel:`System`.
 
 .. image:: /static/training/beginner/osm/image38.*
+   :align: center
 
 .. image:: /static/training/beginner/osm/image39.*
+   :align: center
 
-- In the System menu you can find some of the settings are as follows:
+- In the :guilabel:`System` menu you can find some of the settings are as 
+  follows:
 
 a) GPS: regulate how the GPS sensor work. Choose the "Normal" option. The
    device captures only the signals from the GPS satellites. But your

@@ -28,12 +28,11 @@ and when you’re finished, think about why the information you included is
 important, and who it might be important to.
 
 .. image:: /static/training/beginner/osm/image7.*
+   :align: center
 
-..
-    We are missing the image8 here
-    .. image:: /static/training/beginner/osm/image8.*
-
-*A village in Indonesia (up), and an example of a handdrawn map (bellow).*
+.. image:: /static/training/beginner/osm/image8.*
+   :align: center
+   *A village in Indonesia (up), and an example of a handdrawn map (bellow).*
 
 If your town is like most, you may have drawn some lines to represent roads,
 possibly a river or stream.  Perhaps you added important buildings such as
@@ -43,8 +42,10 @@ a square to symbolize a building, and so on.  Your map is a representation
 of what is on the ground.
 
 .. image:: /static/training/beginner/osm/image9.*
+   :align: center
 
 .. image:: /static/training/beginner/osm/image10.*
+   :align: center
 
 *Examples of Symbols.*
 
@@ -82,6 +83,7 @@ thing is that OSM maps are saved on the internet, and anyone can access them
 at any time, totally free.
 
 .. image:: /static/training/beginner/osm/image11.*
+   :align: center
 
 *Digital Maps with OpenStreetMap.*
 
