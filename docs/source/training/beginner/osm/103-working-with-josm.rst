@@ -33,7 +33,7 @@ good understanding of how to draw maps in JOSM.
   or Internet Explorer.
 - In the address bar at the top of the window, enter the following text and
   press Enter: `josm.openstreetmap.de <http://josm.openstreetmap.de>`_
-- You can also find this website by searching for :kbd:`JOSM`
+- You can also find this website by searching for JOSM
 
 - The website should look something like this:
 
@@ -170,14 +170,14 @@ click :guilabel:`Edit` on the top menu, and then click :guilabel:`Preferences`
   ways to draw maps with JOSM. Note that this map is not real,
   in that it is not a real map of a real place, so we will not save it on
   OpenStreetMap.
-- The file is located in osm/ and is named :kbd:`sample.osm`
+- The file is located in osm/ and is named sample.osm
 - Let’s open the sample map file in JOSM. Open JOSM. Click the :guilabel:`Open` 
   button in the upper left.
 
  .. image:: /static/training/beginner/osm/image28.*
     :align: center
 
-- Find the file :kbd:`sample.osm`. Click on it, and then click :guilabel:`Open`.
+- Find the file sample.osm. Click on it, and then click :guilabel:`Open`.
 - You should now see a sample map, similar to this:
 
 .. image:: /static/training/beginner/osm/image29.*

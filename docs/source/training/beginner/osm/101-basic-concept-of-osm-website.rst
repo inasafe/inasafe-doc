@@ -32,7 +32,10 @@ important, and who it might be important to.
 
 .. image:: /static/training/beginner/osm/image8.*
    :align: center
-   *A village in Indonesia (up), and an example of a handdrawn map (bellow).*
+   
+
+*A village in Indonesia (up), and an example of a handdrawn map (bellow)*
+:align: center   
 
 If your town is like most, you may have drawn some lines to represent roads,
 possibly a river or stream.  Perhaps you added important buildings such as
@@ -48,6 +51,7 @@ of what is on the ground.
    :align: center
 
 *Examples of Symbols.*
+:align: center
 
 Your map is informative.  You might use a map like this to explain to
 someone where different places are, where problems are in your community,
