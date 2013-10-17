@@ -62,7 +62,7 @@ Because OpenStreetMap is so open, anybody can add any tags they want to
 anything.  But what happens when mappers in England disagree with mappers in
 Japan about the best way to tag something?  For example, it is important that
 all schools have the same tag describing it as a school.  If some people tag
-schools as **amenity=school** but others tag them as **education=school**, 
+schools as **amenity=school** but others tag them as **education=school**,
 it is a problem.  Hence, people must agree on how to tag places.
 
 OpenStreetMap has been around for many years now, so there is an accepted
@@ -186,7 +186,7 @@ additional presets for specific information that you want to collect.  You can
 create your own presets menu by writing it in XML, and then loading it in JOSM.
 First, let’s look at how we can load additional presets menus into JOSM.
 
-- Open JOSM and open the Preferences menu by going to 
+- Open JOSM and open the Preferences menu by going to
   :menuselection:`Edit ‣ Preferences`
 - Click on the third icon from the top which looks like this:
 
@@ -194,7 +194,7 @@ First, let’s look at how we can load additional presets menus into JOSM.
    :align: center
 
 - Click on the third tab labelled :guilabel:`Tagging Presets`.
-- Select *"Buildings by Kate Chapman”* and click on the right arrow button to 
+- Select *"Buildings by Kate Chapman”* and click on the right arrow button to
   add it to Active presets.
 
 .. image:: /static/training/intermediate/osm/image93.*
@@ -222,7 +222,7 @@ load into JOSM.
 
 To understand how a presets file is written, let’s first look at the XML for one
 of the pre-loaded presets in JOSM.  When you go to the presets menu and select
-:menuselection:`Facilities ‣ Culture ‣ Place of Worship` you will see a form 
+:menuselection:`Facilities ‣ Culture ‣ Place of Worship` you will see a form
 like this:
 
 .. image:: /static/training/intermediate/osm/image96.*
@@ -259,7 +259,7 @@ several attributes describing the element.
 +--------------------------------+-------------------------------------------------------------------------+
 | name="Place of Worship"        | The name of what you are creating.                                      |
 +--------------------------------+-------------------------------------------------------------------------+
-| icon="presets/church.*"        | The icon of the object. *s are the most effective in OSM since they     |
+| icon="presets/church.*"        | The icon of the object. \*s are the most effective in OSM since they    |
 |                                | are compressed low-color graphics with transparent backgrounds.         |
 +--------------------------------+-------------------------------------------------------------------------+
 | type="node,closedway,relation" | The types of object that this preset can be applied to.  Node means it  |
@@ -351,7 +351,7 @@ our form should look like this:
    :align: center
 
 - Open a text editor and follow along as we create the XML for this preset.  A
-  simple and common editor to use on Windows is called Notepad.  DO NOT use a 
+  simple and common editor to use on Windows is called Notepad.  DO NOT use a
   word processing program like Microsoft Word.
 
 .. image:: /static/training/intermediate/osm/image98.*
@@ -363,15 +363,15 @@ our form should look like this:
 .. image:: /static/training/intermediate/osm/image99.*
    :align: center
 
-- Next let’s create an element called <group>.  This is not actually necessary 
-  because we are only creating one preset, but it will demonstrate how we can 
-  create submenus with many different options on our presets menu.  Don’t forget 
+- Next let’s create an element called <group>.  This is not actually necessary
+  because we are only creating one preset, but it will demonstrate how we can
+  create submenus with many different options on our presets menu.  Don’t forget
   to add the closing tags **</group>** and **</presets>** to your elements.
 
 .. image:: /static/training/intermediate/osm/image100.*
    :align: center
 
-- Now we can create an item on our menu.  We want to create an <item> element 
+- Now we can create an item on our menu.  We want to create an <item> element
   inside of the group element.  Add the following text:
 
 **<item name="Household">**
@@ -400,7 +400,7 @@ our form should look like this:
 
 .. image:: /static/training/intermediate/osm/image101.*
 
-Much of this is similar to what you saw previously.  Let’s analyze it.  Inside 
+Much of this is similar to what you saw previously.  Let’s analyze it.  Inside
 the **<item>** element we have created six more elements:
 
 1. <key>
@@ -438,8 +438,8 @@ tag to our object that says **utility:electrical=yes**.
   Notepad, go to :menuselection:`File ‣ Save`
 - Type in household_access.xml as the filename.
 
-- In the box that says :guilabel:`Save as type:` be sure to select 
-  :guilabel:`All Files`, because we don’t want to save the file as a text 
+- In the box that says :guilabel:`Save as type:` be sure to select
+  :guilabel:`All Files`, because we don’t want to save the file as a text
   document, but rather as an XML document.
 - Click :guilabel:`Save`
 
