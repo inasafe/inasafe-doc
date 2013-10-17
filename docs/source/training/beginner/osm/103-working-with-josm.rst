@@ -53,7 +53,7 @@ good understanding of how to draw maps in JOSM.
   in the software/ folder.  You can also download it here:
   `http://www.java.com/en/download/ <http://www.java.com/en/download/>`_
 - Find the JOSM install file on your computer.  It should be named
-  **josm-setup.exe**.  :guilabel:`Double-click` it to begin setup.
+  **josm-setup.exe**. Double-click it to begin setup.
 - Click :guilabel:`OK`, :guilabel:`Next`, :guilabel:`I Agree`, and 
   :guilabel:`Install`. When the installation is complete, click 
   :guilabel:`Finish` to launch JOSM for the first time. Later, when you want 
@@ -252,13 +252,13 @@ Now, let’s try to practice drawing an object (point, line and shape).
 .. image:: /static/training/beginner/osm/image32.*
    :align: center
 
-- Find an empty area on the map, and :guilabel:`double-click` with your mouse. 
+- Find an empty area on the map, and double-click with your mouse. 
   This will draw a single point.
-- To draw a line, :guilabel:`single-click` with your mouse. Move your mouse and 
+- To draw a line, single-click with your mouse. Move your mouse and 
   click again. Continue until you are happy with your line. To end the line,
-  :guilabel:`double-click` your mouse.
+  double-click your mouse.
 - Draw a shape the same way that you draw a line, but finish the shape by
-  :guilabel:`double-clicking` on the point where you started the line.
+  double-clicking on the point where you started the line.
 
 *4.3. Changing Objects*
 
