@@ -56,6 +56,7 @@ photograph is taken with a handheld camera, a mobile phone,
 or a satellite orbiting Earth.
 
 .. image:: /static/training/beginner/osm/image108.*
+   :align: center
 
 Resolution refers to the number of pixels wide by the number of pixels high
 that an image is.  More pixels means higher resolution,
@@ -76,6 +77,7 @@ and in many places it is worse than two meters, at which point it becomes
 difficult to identify objects in the image.
 
 .. image:: /static/training/beginner/osm/image109.*
+   :align: center
 
 The higher the resolution of an aerial image, the easier it is to use in
 making maps.
@@ -109,6 +111,7 @@ process, the images do not line up perfectly with each other.  Hence one,
 or both, must be inaccurate.
 
 .. image:: /static/training/beginner/osm/image110.*
+   :align: center
 
 We’ve learned about two major ways of making maps - one is by utilizing
 aerial imagery to identify features on the ground, and another is by using
@@ -124,6 +127,7 @@ recognize the error.  Observe the GPS trace in this image,
 compared with the Bing aerial imagery layer beneath it:
 
 .. image:: /static/training/beginner/osm/image111.*
+   :align: center
 
 Because of what we now know, it is clear that the GPS trace is likely to be
 accurate, and the image beneath it is out of place.
@@ -143,26 +147,31 @@ will be able to align your imagery.  Since OpenStreetMap users often upload
 their GPS tracks to the OSM database, we can download them and use them to
 align our imagery.
 
-- Click on the download button.
-- Check the box next to “Raw GPS Data” near the top of the Download window.
-  Select your area and click “Download.”
+- Click on the :guilabel:`Download` button.
+- Check the box next to :guilabel:`Raw GPS Data` near the top of the 
+  :guilabel:`Download` window. Select your area and click 
+  :guilabel:`Download`.
 
 .. image:: /static/training/beginner/osm/image112.*
+   :align: center
 
 - This will download an additional layer to JOSM containing GPS tracks.
   Depending on how many tracks have been uploaded by OSM users,
   you may see few tracks (or even no tracks):
 
 .. image:: /static/training/beginner/osm/image113.*
+   :align: center
 
 - Or, you may see many tracks:
 
 .. image:: /static/training/beginner/osm/image114.*
+   :align: center
 
-- To adjust an imagery layer, click on the “Adjust imagery offset” button at
-  the top of JOSM.
+- To adjust an imagery layer, click on the :guilabel:`Adjust imagery offset` 
+  button at the top of JOSM.
 
 .. image:: /static/training/beginner/osm/image115.*
+   :align: center
 
 - Ignoring the box that pops up, use your mouse to drag the imagery layer so
   that it aligns correctly with the GPS tracks.  The GPS tracks should line
@@ -170,13 +179,14 @@ align our imagery.
   offset numbers in the box change.
 
 .. image:: /static/training/beginner/osm/image116.*
+   :align: center
 
 - If you like, you can save these offset settings by entering a bookmark
-  name and then clicking OK.  You can then automatically apply the same
-  settings later by going to Imagery ‣ Imagery offset and clicking on your
-  bookmark.
-- If you do not want to save the offset, simply click OK without entering a
-  bookmark name.
+  name and then clicking :guilabel:`OK`.  You can then automatically apply 
+  the same settings later by going to :menuselection:`Imagery ‣ Imagery offset` 
+  and clicking on your bookmark.
+- If you do not want to save the offset, simply click :guilabel:`OK` without 
+  entering a bookmark name.
 
 What if there are no GPS tracks on OpenStreetMap, and you don’t have a GPS?
 Without GPS tracks, it is difficult to align imagery.  If it is a relatively
@@ -192,11 +202,13 @@ these steps:
 - Click on the latitude and longitude in the bottom left corner of JOSM.
 
 .. image:: /static/training/beginner/osm/image117.*
+   :align: center
 
 - In the dialog that opens, enter the latitude and longitude of the place
   that you know, and enter a small number for Zoom, about five or ten.
 
 .. image:: /static/training/beginner/osm/image118.*
+   :align: center
 
 - This will zoom and center the map to your longitude and latitude.  Now you
   can move the imagery as you did previously so that the feature you know is
@@ -229,15 +241,19 @@ and should always check for it before mapping an area.  To help with this
 problem, some smart people created a plugin that allows users to save offset
 information in a database and share it with others.  Let’s see how this works:
 
-- Open the Preferences menu in JOSM, and click on the Plugins tab.
+- Open the :guilabel:`Preferences` menu in JOSM, and click on the 
+  :guilabel:`Plugins` tab.
 
 .. image:: /static/training/beginner/osm/image119.*
+   :align: center
 
-- Find the plugin named **“imagery_offset_db”** and check the box next to it.
+- Find the plugin named *“imagery_offset_db”* and check the box next to it.
 
 .. image:: /static/training/beginner/osm/image120.*
+   :align: center
 
-- Click OK.  You will need to restart JOSM to finish the plugin installation.
+- Click :guilabel:`OK`.  You will need to restart JOSM to finish the plugin 
+  installation.
 
 In the same way that you are able to save offsets as bookmarks,
 this plugin allows you to save offsets to a central database,
@@ -256,6 +272,7 @@ this database.
   icon with a red exclamation point on it at the top of JOSM, like this:
 
 .. image:: /static/training/beginner/osm/image121.*
+   :align: center
 
 - Click on the button and the plugin will communicate with the database to
   see if there are existing offsets in this area.
@@ -264,29 +281,34 @@ this database.
   apply to the map.
 
 .. image:: /static/training/beginner/osm/image122.*
+   :align: center
 
 - This causes the imagery layer to shift.  However,
   when we add someone else’s offset like this, we should check that it is
   valid by comparing to GPS tracks.
 
 .. image:: /static/training/beginner/osm/image123.*
+   :align: center
 
 - We can see that the imagery layer is in fact misaligned.  We don’t want
   other users to use this offset, so we should mark it as incorrect in the
-  database.  Click on the “Offsets” button again (it won’t have a red
+  database.  Click on the :guilabel:`Offsets` button again (it won’t have a red
   exclamation mark anymore).
 
 .. image:: /static/training/beginner/osm/image124.*
+   :align: center
 
 - This time when the dialog opens, right-click on the offset and click
-  “Deprecate Offset.”
+  :guilabel:`Deprecate Offset`.
 
 .. image:: /static/training/beginner/osm/image125.*
+   :align: center
 
-- Click “Yes” to confirm.
+- Click :guilabel:`Yes` to confirm.
 - You will need to enter a reason for deprecating this offset.
 
 .. image:: /static/training/beginner/osm/image126.*
+   :align: center
 
 
 *4.3. Add Imagery Offset to the Database*
@@ -294,21 +316,24 @@ this database.
 Now that we have marked this user’s offset as "deprecated", we should add an
 improved offset to the database.
 
-- Click on the “Adjust imagery offset” button.
+- Click on the :guilabel:`Adjust imagery offset` button.
 - Adjust the imagery to match the GPS tracks.  Click OK in the box.
-- Now go to Offset ‣ Store Imagery Offset...
+- Now go to :menuselection:`Offset ‣ Store Imagery Offset...`
 
 .. image:: /static/training/beginner/osm/image127.*
+   :align: center
 
 - Enter a description of the offset in the box that opens.
 
 .. image:: /static/training/beginner/osm/image128.*
+   :align: center
 
-- Click OK.  Your offset will be saved to the database.
+- Click :guilabel:`OK`.  Your offset will be saved to the database.
 - Now let’s hide the GPS layer and look at the OSM data against the
   correctly placed imagery.
 
 .. image:: /static/training/beginner/osm/image129.*
+   :align: center
 
 Oh No!  Somebody mapped this area with misaligned imagery,
 so the area is not correctly mapped.  This will take some time to fix.
@@ -321,6 +346,7 @@ offsets that have been uploaded to the database, and it also has a cool map
 feature that visualizes where the offsets are located, as you can see here:
 
 .. image:: /static/training/beginner/osm/image130.*
+   :align: center
 
 One last thing to remember is that the imagery may not be offset the same
 distance everywhere!  This is especially true in regions where there are

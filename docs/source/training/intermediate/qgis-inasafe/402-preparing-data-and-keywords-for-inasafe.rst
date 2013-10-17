@@ -1,4 +1,4 @@
-.. image:: /static/training/intermediate/qgis-inasafe/image6.png
+.. image:: /static/training/intermediate/qgis-inasafe/image6.*
 
 
 Module 2: Preparing Data and Keywords for InaSAFE
@@ -35,7 +35,7 @@ In this Module, our hazard input will be a flood in the village of Sirahan, in M
 
 The InaSAFE impact functions produce an output layer representing potential damages or losses on the affected exposure layer. This output layer will be created once the impact calculation process is finished processing.  InaSAFE has many impact functions available, which are listed through the 'Impact Functions Doc' menu (see below). The impact calculation will only be possible when users provide the hazard and exposure layer data sets and, when necessary, users define the required parameters through the keyword editor correctly.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image27.png
+.. image:: /static/training/intermediate/qgis-inasafe/image27.*
 
 **Aggregation** is used to reclassify the result of the impact calculation according to a specific administrative boundary level.
 
@@ -50,7 +50,7 @@ We’ve worked with OpenStreetMap data a lot already.  Now we will utilize a web
 
 - Open your web browser and navigate to export.hotosm.org. The site will look like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image28.png
+.. image:: /static/training/intermediate/qgis-inasafe/image28.*
  
 The HOT Export website allows you to choose an area and create a data extract from that area.  Then you can download the data in a variety of formats that are easily read by QGIS.
 
@@ -59,21 +59,21 @@ The HOT Export website allows you to choose an area and create a data extract fr
 - Zoom in on the map until you can see the village Sirahan, which is just northwest of Yogyakarta.
 - Click “Select Area” and then draw a box around Sirahan village.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image29.png
+.. image:: /static/training/intermediate/qgis-inasafe/image29.*
  
 - The page should look somethings like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image30.png
+.. image:: /static/training/intermediate/qgis-inasafe/image30.*
  
 - Click the “Create Job” button.
 - You will be asked to define a presets file - this is like the presets that you added to JOSM in the previous unit, except here, they define the attributes that InaSAFE will provide.  Choose “preset file-INASAFE.”
 
-.. image:: /static/training/intermediate/qgis-inasafe/image31.png
+.. image:: /static/training/intermediate/qgis-inasafe/image31.*
  
 - Click the “Save” button.
 - Take a few breaths!  It may take a few minutes for the data extraction job to process.  When it is finished, the page will change and you will see a list of files you can download like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image32.png
+.. image:: /static/training/intermediate/qgis-inasafe/image32.*
  
 - Click on “ESRI Shapefile” to download shapefiles, and once you have it, extract (unzip) the archive on your computer.  It should create a directory named extract.shp
 
@@ -81,7 +81,7 @@ The HOT Export website allows you to choose an area and create a data extract fr
 
 - We will use this OpenStreetMap data as our exposure data.  Open a new QGIS project and add all of the shapefiles that you downloaded as vector layers.  You should have four layers:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image33.png
+.. image:: /static/training/intermediate/qgis-inasafe/image33.*
  
 For reasons that will become clear later, we need to change the map projection from the default OSM projection (WGS 84) to WGS 84 / UTM 49S.  In other words, we need a CRS that uses meters, not degrees.
 
@@ -90,12 +90,12 @@ For reasons that will become clear later, we need to change the map projection f
 - Next to CRS, click “Browse.”
 - In the filter box, type “UTM zone 49S”, as shown below:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image34.png
+.. image:: /static/training/intermediate/qgis-inasafe/image34.*
 
 - Select the CRS “WGS 84 / UTM zone 49S” and click OK.
 - The “Save vector layer as...” dialog will look like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image35.png
+.. image:: /static/training/intermediate/qgis-inasafe/image35.*
  
 This is the layer that we will be using as our exposure data.  You can remove the other OpenStreetMap layers, or if you would like them to remain visible, go to Settings > Project Properties and enable “on the fly” transformation.”
 
@@ -105,23 +105,23 @@ Since we’ll be using this buildings layer as our exposure, we need to set the 
 
 - Select the Bangunan_Sirahan layer in your Layers list and then click the “Keyword Editor” button on the InaSAFE toolbar.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image36.png
+.. image:: /static/training/intermediate/qgis-inasafe/image36.*
  
 - Adjust the settings so that the keyword editor looks similar to the following:  Most likely you will only need to change the subcategory field to “structure.”
 
-.. image:: /static/training/intermediate/qgis-inasafe/image37.png
+.. image:: /static/training/intermediate/qgis-inasafe/image37.*
  
 - Now we will do something new, which is to add advanced keywords.  Click on the “Show advanced editor” button.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image38.png
+.. image:: /static/training/intermediate/qgis-inasafe/image38.*
  
 - You can add keywords manually using the advanced editor.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image39.png
+.. image:: /static/training/intermediate/qgis-inasafe/image39.*
  
 - Manually add a keyword so that the value of datatype is osm.  It should look like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image40.png
+.. image:: /static/training/intermediate/qgis-inasafe/image40.*
  
 - Click OK.  You should see the layer appropriately loaded in the InaSAFE panel.
 
@@ -131,50 +131,50 @@ The hazard data that we have used previously has come from government agencies a
 
 - Click “Add Vector Layer...” and add area_terdampak_Sirahan.shp in the qgis/Sirahan directory.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image41.png
+.. image:: /static/training/intermediate/qgis-inasafe/image41.*
  
 - You can see that this layer is already known to InaSAFE, so presumably it has keywords already set.  Select the layer and open the keywords editor.
 - Notice that the subcategory is set to “flood [wet/dry].”
 
-.. image:: /static/training/intermediate/qgis-inasafe/image42.png
+.. image:: /static/training/intermediate/qgis-inasafe/image42.*
  
 - Because of the way that InaSAFE calculates this function, we need to make sure that this exposure layer has a column in the attribute table that InaSAFE expects, named “AFFECTED”
 - Click OK and then open the attribute table for the area_terdampak_Sirahan layer.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image43.png
+.. image:: /static/training/intermediate/qgis-inasafe/image43.*
  
 - We need to add some data to this layer so that QGIS can run the flood function correctly.  When QGIS runs the flood function, it checks every feature in the hazard layer to make sure that it is in fact a flood prone area.  Hence, each feature must have an attribute named  AFFECTED.
 - First, let’s add the new column to our layer.
 - Still in the attribute table, click the “Toggle Editing” button.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image44.png
+.. image:: /static/training/intermediate/qgis-inasafe/image44.*
  
 - Click on the “New Column” icon.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image45.png
+.. image:: /static/training/intermediate/qgis-inasafe/image45.*
 
 - Type ‘affected’ as the name and select Text(string) for Type.  Give 10 for the width.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image46.png
+.. image:: /static/training/intermediate/qgis-inasafe/image46.*
  
 - Click OK.
 - Now select each value in the column “affected” and type “1”, instead of NULL.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image47.png
+.. image:: /static/training/intermediate/qgis-inasafe/image47.*
  
 Click “Save Edits” and then “Toggle Editing” to stop your editing process.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image48.png
+.. image:: /static/training/intermediate/qgis-inasafe/image48.*
 
 **6.  Run InaSAFE**
 
 Everything is prepared now - our layers are loaded, the keywords are set, and we’ve ensured that they layers have the data that InaSAFE expects.  Time to click “Run”!
 
-.. image:: /static/training/intermediate/qgis-inasafe/image49.png 
+.. image:: /static/training/intermediate/qgis-inasafe/image49.* 
 
 The results should looks something like this:
  
-.. image:: /static/training/intermediate/qgis-inasafe/image50.png
+.. image:: /static/training/intermediate/qgis-inasafe/image50.*
 
 Save your project!  We’ll be using it in the coming Modules...
 
