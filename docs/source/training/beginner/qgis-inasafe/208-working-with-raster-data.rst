@@ -10,54 +10,60 @@ Module 8: Working with Raster Data
 - Transform raster symbology
 - Explore a raster layer
 
-Thus far we’ve worked mostly with vector data, which consists of features,
-and these features are themselves made up of points and lines.  In this
-chapter we will learn about raster data.  Remember when you were editing
-OpenStreetMap in JOSM? The points, lines and shapes that you drew were
-vector data. But when you loaded Bing aerial imagery in the background,
-that was raster data. So what’s the difference?
+Thus far we’ve worked mostly with vector data, which consists of features, and
+these features are themselves made up of points and lines.  In this chapter we
+will learn about raster data.  Remember when you were editing OpenStreetMap in
+JOSM? The points, lines and shapes that you drew were vector data. But when you
+loaded Bing aerial imagery in the background, that was raster data. So what’s
+the difference?
 
-Raster data essentially comes in the form of an image.  It is made up of
-pixels, like a photograph, and a raster image will always be some number of
-pixels wide and some number of pixels high.  If you zoom in far enough on a
-raster image, it will start to become blurry, just as if you opened a photo
-on your computer and zoomed in very close.  As we’ll see in this chapter,
-however, a raster image can mean more than just a photograph from the sky.
-Follow along and we’ll learn all about rasters!
+Raster data essentially comes in the form of an image.  It is made up of pixels,
+like a photograph, and a raster image will always be some number of pixels wide
+and some number of pixels high.  If you zoom in far enough on a raster image, it
+will start to become blurry, just as if you opened a photo on your computer and
+zoomed in very close.  As we’ll see in this chapter, however, a raster image can
+mean more than just a photograph from the sky. Follow along and we’ll learn all
+about rasters!
+
 
 **1. Loading Raster Data**
 
-- Open the project named sleman_2_7.qgs in the directory qgis/.  We’ve
-  simplified the project since our last chapter, to make it easier to follow
-  along, and so that our layers load a bit faster.  However,
-  if you are comfortable you can easily carry on with your project from the previous chapter.
-- Click on the Load Raster Layer button:
+- Open the project named :doc:`sleman_2_7.qgs` in the directory :doc:`qgis/`.  
+  We’ve simplified the project since our last chapter, to make it easier to 
+  follow along, and so that our layers load a bit faster.  However, if you are comfortable you can easily carry on with your project from the previous 
+  chapter.
+- Click on the :guilabel:`Load Raster Layer` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image147.*
+   :align: center
 
 - The Load Raster Layer dialog will open.  Find the file in the directory
-  Sleman/ named Sleman.tif.  Open it.
+  :doc:`Sleman/` named :doc:`Sleman.tif`.  Open it.
 - QGIS will open a dialog which explains that the new layers does not have a
-  CRS assigned.  In the box at the bottom, scroll down until you find WGS 84
-  / UTM zone 49S.  Select it and click OK.
+  CRS assigned.  In the box at the bottom, scroll down until you find 
+  **WGS 84 / UTM zone 49S**.  Select it and click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image148.*
+   :align: center
 
 - When the raster layer loads, be sure to drag it to the bottom of your
   layers list.
 - If you can’t see the raster layer, you may need to enable “on the fly”
   transformations.  To do so:
 
-  - Go to Settings ‣ Project Properties...
-  - Enable “on the fly” reprojection.
+  - Go to :menuselection:`Settings ‣ Project Properties...`
+  - :guilabel:`Enable “on the fly” reprojection`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image149.*
+   :align: center
 
-- Click OK.
+- Click :guilabel:`OK`.
 
 The raster should display nicely underneath your vector data layers.
 
 .. image:: /static/training/beginner/qgis-inasafe/image150.*
+   :align: center
+
 
 **2. Changing Raster Symbology**
 
@@ -68,14 +74,16 @@ visible and useful.  In this section we’ll add a new kind of raster and see
 how to change it’s symbology.
 
 - First let’s remove our previous raster image so that our project will load
-  faster.  Right-click on the Sleman layer and click “Remove.”
-- Click on the Load Raster Layer button:
+  faster.  Right-click on the **Sleman** layer and click :guilabel:`Remove`.
+- Click on the :guilabel:`Load Raster Layer` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image147.*
+   :align: center
 
-- Open the file named SRTM_Sleman.tif, which is located in Sleman/SRTM.
-- When it appears in the Layers list, right-click on it and click “Rename.”
-  Give it the name DEM.
+- Open the file named :doc:`SRTM_Sleman.tif`, which is located in 
+  :doc:`Sleman/SRTM`.
+- When it appears in the Layers list, right-click on it and click 
+  :guilabel:`Rename`. Give it the name :kbc:`DEM`.
 
 .. note:: This dataset is a Digital Elevation Model (DEM). It’s a map of the
    elevation (altitude) of the terrain, showing us where the mountains and
@@ -89,6 +97,7 @@ how to change it’s symbology.
   rectangle. It’s seen here with the roads layers on top:
 
 .. image:: /static/training/beginner/qgis-inasafe/image151.*
+   :align: center
 
 The layer appears gray (and doesn’t give us any information) because its
 symbology hasn’t been customized yet.  In the color aerial photograph we
@@ -96,17 +105,20 @@ loaded previously, everything is already defined.  But if you load a raster
 image and it’s just a gray rectangle, then you know there’s no symbology for
 it yet. It still needs to be defined. So that’s what we will do now.
 
-- Open the Layer Properties dialog for the SRTM layer, which is now named DEM.
+- Open the :guilabel:`Layer Properties` dialog for the **SRTM** layer, 
+  which is now named **DEM**.
 - Switch to the Style tab.  This shows the current symbology settings,
   and as we’ve seen, they don’t give us much information on the layer.  Let’s
   make sure the layer has data in it.
-- Change the Color map to Pseudocolor:
+- Change the Color map to *Pseudocolor*:
 
 .. image:: /static/training/beginner/qgis-inasafe/image152.*
+   :align: center
 
-- Click OK.  The raster should look like this:
+- Click :guilabel:`OK`.  The raster should look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image153.*
+   :align: center
 
 - Good! This tells us that there is data in this layer. And by looking at
   it we can get an idea of where the elevation gets higher. In the north we
@@ -118,11 +130,13 @@ which is usually a color value.  For example, if you zoom in very closely on
 a photograph you can see those individual pixels, like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image154.*
+  :align: center
 
 The value of each cell is saved in the file.  Imagine the file being saved
 something like this, where each square is a pixel:
 
 .. image:: /static/training/beginner/qgis-inasafe/image155.*
+   :align: center
 
 Of course the computer doesn’t understand words for colors.  In fact the
 value of each cell would be a number, which the computer then associates
@@ -142,24 +156,29 @@ value in the file and ending at the highest pixel value.  In other words,
 if the pixel values looked like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image156.*
+   :align: center
 
 QGIS would create a spectrum equating numbers to colors like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image157.*
+   :align: center
 
 And render the image like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image158.*
+   :align: center
 
-- Open Layer Properties again.
-- Switch the Color map back to Grayscale.
-- Tell it to use Custom min / max values:
+- Open :guilabel:`Layer Properties` again.
+- Switch the *Color map* back to *Grayscale*.
+- Tell it to use *Custom min / max values*:
 
 .. image:: /static/training/beginner/qgis-inasafe/image159.*
+   :align: center
 
-- Under Contrast enhancement, set the value of Current to “Stretch To MinMax”:
+- Under Contrast enhancement, set the value of Current to *Stretch To MinMax*:
 
 .. image:: /static/training/beginner/qgis-inasafe/image160.*
+   :align: center
 
 But what are the minimum and maximum values that should be used?  The ones
 that are currently under Custom min / max values are the same values that
@@ -168,41 +187,48 @@ minimum and maximum pixel values that are actually in the image.  You can
 determine those values easily by loading the minimum and maximum values of
 the raster.
 
-- Under Load min / max values from band, select Estimate (faster).
-- Click the Load button:
+- Under Load min / max values from band, select :guilabel:`Estimate (faster)`.
+- Click the :guilabel:`Load` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image161.*
+   :align: center
 
 Notice how the Custom min / max values have changed.  The lowest pixel value
 in this image file is 0 and the highest is about 195.
 
 .. image:: /static/training/beginner/qgis-inasafe/image162.*
+   :align: center
 
-- Click OK.  You should see the values of the raster properly displayed,
-  with the darker colors representing valleys and the lighter ones, mountains:
+- Click :guilabel:`OK`.  You should see the values of the raster properly 
+  displayed, with the darker colors representing valleys and the lighter ones, 
+  mountains:
 
 .. image:: /static/training/beginner/qgis-inasafe/image163.*
+   :align: center
 
 We’ve learned to do this the tricky way, but can we do it faster?  Of
 course!  Now that you understand what needs to be done,
 you’ll be glad to know that there’s a tool for doing all of this easily.
 
-- Remove the current DEM from the Layers list, by right-clicking and
-  clicking “Remove.”
-- Load the raster image again, renaming it to DEM as before. It’s will be a
+- Remove the current **DEM** from the Layers list, by right-clicking and
+  clicking :guilabel:`Remove`.
+- Load the raster image again, renaming it to **DEM** as before. It’s will be a
   gray rectangle again.
-- Enable the tool you’ll need by enabling View ‣ Toolbars ‣ Raster. These
-  icons will appear in the interface:
+- Enable the tool you’ll need by enabling 
+  :menuselection:`View ‣ Toolbars ‣ Raster`. These icons will appear in the 
+  interface:
 
 .. image:: /static/training/beginner/qgis-inasafe/image164.*
+   :align: center
 
 The button on the right will stretch the minimum and maximum values to give
 you the best contrast in the local area that you’re zoomed into. It’s useful
 for large datasets. The button on the left will stretch the minimum and
 maximum values to constant values across the whole image.
 
-- Click the button on the left (Stretch Histogram to Full Dataset). You’ll
-  see the data is now correctly represented as before! Easy!
+- Click the button on the left :guilabel:`(Stretch Histogram to Full Dataset)`. 
+  You’ll see the data is now correctly represented as before! Easy!
+
 
 **3. Terrain Analysis**
 
@@ -223,25 +249,30 @@ maps the terrain using light and shadow to create a 3D-looking image.
 To work with DEMs, you should use QGIS’ all-in-one DEM (Terrain models)
 analysis tool.
 
-- Click on the menu item Raster ‣ Analysis ‣ DEM (Terrain models).
-- In the dialog that appears, ensure that the Input file is the DEM layer.
-- Set the Output file to hillshade.tif in the directory qgis/Sleman/.
+- Click on the menu item 
+  :menuselection:`Raster ‣ Analysis ‣ DEM (Terrain models)`.
+- In the dialog that appears, ensure that the Input file is the **DEM** layer.
+- Set the Output file to :kbd:`hillshade.tif` in the directory 
+  :doc:`qgis/Sleman/`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image165.*
+   :align: center
 
 - Check the box next to Load into canvas when finished.
 
 .. image:: /static/training/beginner/qgis-inasafe/image166.*
+   :align: center
 
 - You may leave all the other options unchanged.
-- Click OK to generate the hillshade.
-- When it tells you that processing is completed, click OK on the message to
-  get rid of it.
-- Click Close on the main DEM (Terrain models) dialog.
+- Click :guilabel:`OK` to generate the hillshade.
+- When it tells you that processing is completed, click :guilabel:`OK` on the 
+  message to get rid of it.
+- Click :guilabel:`Close` on the main DEM (Terrain models) dialog.
 
 You will now have a new layer called hillshade that looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image167.*
+   :align: center
 
 This looks more 3-Dimensional, but can we improve on this?  On its own,
 the hillshade looks like a plaster cast.  It will look better if we can
@@ -255,28 +286,34 @@ given time of day. But it can also be used for aesthetic purposes,
 to make the map look better. The key to this is setting the hillshade to
 being mostly transparent.
 
-- Change the symbology of the original DEM layer to use the Pseudocolor
+- Change the symbology of the original **DEM** layer to use the *Pseudocolor*
   scheme.
 - Hide all the layers except the DEM and hillshade layers.
-- Click and drag the DEM to be beneath the hillshade layer in the Layers list.
+- Click and drag the **DEM** to be beneath the **hillshade** layer in the Layers
+  list.
 
 .. image:: /static/training/beginner/qgis-inasafe/image168.*
+   :align: center
 
 - Control rendering order(beneath the list) should be checked as well.
 
 .. image:: /static/training/beginner/qgis-inasafe/image169.*
+  :align: center
 
-- Now we will make the hillshade layer somewhat transparent.  Open its Layer
-  Properties and go to the Transparency tab.
-- Set the Global transparency to 50%:
+- Now we will make the hillshade layer somewhat transparent.  Open its 
+  :guilabel:`Layer Properties` and go to the :guilabel:`Transparency` tab.
+- Set the *Global transparency* to *50%*:
 
 .. image:: /static/training/beginner/qgis-inasafe/image170.*
+   :align: center
 
-- Click OK on the Layer Properties dialog. You’ll get a result like this:
+- Click :guilabel:`OK` on the Layer Properties dialog. You’ll get a result like 
+  this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image171.*
+   :align: center
 
-- Switch the hillshade layer off and back on in the Layers list to see the
+- Switch the **hillshade** layer *off* and back on in the Layers list to see the
   difference it makes.
 
 Using a hillshade in this way, it’s possible to enhance the topography of
