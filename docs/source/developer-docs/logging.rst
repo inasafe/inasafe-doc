@@ -67,7 +67,7 @@ Logging in loops
    15sec for 1000 itterations, removing logging brought it to 5sec.
    In another case, using 2700 aggregation units resulted in inasafe blocking 
    due to one single logging call.
-   The issue is _probably_ the refreshing of class QgsMessageLogViewer
+   The issue is *probably* the refreshing of class QgsMessageLogViewer
    See also :ref:`profiling`
 
 
