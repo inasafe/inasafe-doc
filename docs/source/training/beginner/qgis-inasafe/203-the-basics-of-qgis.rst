@@ -25,74 +25,93 @@ this guide, you may have already installed QGIS and InaSAFE.  If so,
 feel free to skip ahead to section three in this chapter.  Otherwise,
 let’s start here and get QGIS installed.
 
+
 **1. Get QGIS**
 
 - The QGIS installer is contained in the file package that comes with
-  this guide, in software/QGIS-OSGeo4W-1.8.0-2-Setup.exe.  If you have this
-  file, skip to section 2.  Otherwise you can download it from the QGIS website.
+  this guide, in :doc:`...software/QGIS-OSGeo4W-1.8.0-2-Setup.exe`.  If you have
+  this file, skip to section 2.  Otherwise you can download it from the QGIS 
+  website.
 - Open your web browser and in the address bar at the top of the window,
-  type qgis.org.  Press enter.
+  type :kbd:`qgis.org`.  Press :guilabel:`Enter`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image8.*
+   :align: center
 
 - The QGIS website will look something like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image9.*
+   :align: center
 
-- Click ‘Download Now Free!”
+- Click :guilabel:`Download Now Free!`
 
 .. image:: /static/training/beginner/qgis-inasafe/image10.*
+   :align: center
 
-- If you are using Windows click on 1.1 Standalone Installer (recommended
+- If you are using Windows click on :guilabel:`1.1 Standalone Installer` 
+  (recommended
   for new users).
 
 .. image:: /static/training/beginner/qgis-inasafe/image11.*
+   :align: center
 
 - If you are not using Windows, select your Operating System from the menu.
-- Click on “Download QGIS”
+- Click on :guilabel:`Download QGIS`
 
 .. image:: /static/training/beginner/qgis-inasafe/image12.*
+   :align: center
 
 - When the file is downloaded, run it and follow the instructions to install
   QGIS.
+
 
 **2. Install QGIS**
 
 - Open the folder where you have the QGIS installation file.
 
 .. image:: /static/training/beginner/qgis-inasafe/image13.*
+   :align: center
 
 - Run the installation file. If you are installing QGIS version 1.8.0,
   it should look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image14.*
+   :align: center
 
-- Click Next.
-- Click “I Agree” to agree with the conditions in the license agreement.
+- Click :guilabel:`Next`.
+- Click :guilabel:`I Agree` to agree with the conditions in the license 
+  agreement.
 
 .. image:: /static/training/beginner/qgis-inasafe/image15.*
+   :align: center
 
 - The next window asks where you would like to install QGIS.  In most cases,
-  the default should be fine.  Click Next.
+  the default should be fine.  Click :guilabel:`Next`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image16.*
+   :align: center
 
-- In the next window, Click “Install” without checking any of the boxes.
+- In the next window, Click :guilabel:`Install` without checking any of the 
+  boxes.
 
 .. image:: /static/training/beginner/qgis-inasafe/image17.*
+   :align: center
 
 - QGIS will begin to install.  It may take a few minutes to complete.
 
 .. image:: /static/training/beginner/qgis-inasafe/image18.*
+   :align: center
 
-- Click “Finish” to complete the installation.
+- Click :guilabel:`Finish` to complete the installation.
 - You can now open QGIS from your Start Menu.
 
 .. image:: /static/training/beginner/qgis-inasafe/image19.*
+   :align: center
 
 - QGIS will look something like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image20.*
+   :align: center
 
 
 **3. The QGIS Layout**
@@ -103,17 +122,19 @@ previously, make sure it is closed by clicking on the X in the upper right
 corner of the InaSAFE panel.  If  it isn’t open or you haven’t installed it
 yet, carry on.  We will come back to this later.
 
-- Click on the folder icon on the upper toolbar or go to File ‣ Open Project
-  ...
+- Click on the folder icon on the upper toolbar or go to 
+  :menuselection:`File ‣ Open Project...`
 
 .. image:: /static/training/beginner/qgis-inasafe/image21.*
+   :align: center
 
-- Navigate to the tutorial files and go into the qgis/ directory.  Open the
-  file named sleman_2_2.qgs.
+- Navigate to the tutorial files and go into the :doc:`qgis/` directory.  
+  Open the file named :doc:`sleman_2_2.qgs`.
 - QGIS should now look something like the following image.  Let’s pause for
   a moment and go over the various components of the QGIS interface.
 
 .. image:: /static/training/beginner/qgis-inasafe/image22.*
+   :align: center
 
 **Map Canvas**
 
@@ -126,16 +147,17 @@ see both of these files are drawn together in the map canvas.
 
 On the left side of QGIS is the layers list.  This lists the layers,
 or files, that are loaded into our QGIS project.  In this project,
-we have two layers, Kecamatan_Sleman and railway_Sleman_OSM.  The layers
-panel not only shows all the files that are currently open,
+we have two layers, :doc:`Kecamatan_Sleman` and :doc:`railway_Sleman_OSM`.
+The layers panel not only shows all the files that are currently open,
 it also determines the order that they will be drawn on the map canvas.  A
-layer that is at the bottom of the list will be drawn first,
-and any layers above it will be drawn on top.
+layer that is at the bottom of the list will be drawn first, and any layers 
+above it will be drawn on top.
 
-- Click on the layer railway_Sleman_OSM and drag it below the layer named
-  Kecamatan_Sleman.
+- Click on the layer :guilabel:`railway_Sleman_OSM` and drag it below the layer 
+  named Kecamatan_Sleman.
 
 .. image:: /static/training/beginner/qgis-inasafe/image23.*
+   :align: center
 
 - Notice how the map canvas changes.  The railway layer is now shown below
   the district layer, and part of the railway is now obscured.  A map will
@@ -148,6 +170,7 @@ and any layers above it will be drawn on top.
   appearance.
 
 .. image:: /static/training/beginner/qgis-inasafe/image24.*
+   :align: center
 
 - Right-click on a layer to view a menu with menu extra options.  You’ll be
   using some of them before long, so take a look around!
@@ -155,11 +178,12 @@ and any layers above it will be drawn on top.
 **Toolbars**
 
 At the top of QGIS are a large number of tools, which are contained within
-various “toolbars.”  For example, the File toolbar allows you to save, load,
+various “toolbars”.  For example, the File toolbar allows you to save, load,
 print, and start a new project.  We already used one of these tools when we
 opened this project.
 
 .. image:: /static/training/beginner/qgis-inasafe/image25.*
+   :align: center
 
 - By hovering your mouse over an icon, the name of the tool will appear to
   help you identify each tool.
@@ -171,13 +195,15 @@ opened this project.
   or separate it so that it sits on its own.
 
 .. image:: /static/training/beginner/qgis-inasafe/image26.*
+   :align: center
 
 - If you feel overwhelmed by the number of toolbars, you can customize the
   interface to see only the tools you use most often,
   adding or removing toolbars as necessary.  To add or remove a toolbar,
-  right-click on any of the toolbars, or go to View ‣ Toolbars.
+  right-click on any of the toolbars, or go to :menuselection:`View ‣ Toolbars`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image27.*
+   :align: center
 
 - Let’s remove some of the toolbars that we will not be using in this
   training, to make the interface a bit cleaner.  Right-click on the toolbar,
@@ -194,11 +220,12 @@ opened this project.
   your tools should look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image28.*
+   :align: center
 
 Even if they are not visible in a toolbar, all of your tools will remain
-accessible via the menus. For example, if you remove the File toolbar (which
-contains the Save button), you can still save your map by clicking on the
-File menu and then clicking on Save.
+accessible via the menus. For example, if you remove the **File toolbar** (which
+contains the **Save** button), you can still save your map by clicking on the
+:guilabel:`File` menu and then clicking on :guilabel:`Save`.
 
 **Status Bar**
 
@@ -206,6 +233,7 @@ This shows information about the current map.  It allows you to adjust the
 map scale and see the mouse cursor’s coordinates on the map.
 
 .. image:: /static/training/beginner/qgis-inasafe/image29.*
+   :align: center
 
 The coordinates of this map are the same type of coordinates that you
 learned about when learning about GPS devices.  The status bar show shows
@@ -214,29 +242,33 @@ the longitude and latitude of your mouse cursor.
 This may not all be clear right now, but as you progress in your knowledge
 of GIS is will make more and more sense.
 
+
 **4. Add Vector Layer**
 
 Now we will add an additional layer containing roads to our project.
 
-- Click on the “Add Vector Layer” button on the toolbar.
+- Click on the :guilabel:`Add Vector Layer` button on the toolbar.
 
 .. image:: /static/training/beginner/qgis-inasafe/image30.*
+   :align: center
 
-- A dialog box will open.  Click the “Browse” button.
+- A dialog box will open.  Click the :guilabel:`Browse` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image31.*
+   :align: center
 
-- Navigate to the file qgis/Sleman/Jalan_Sleman_OSM.shp (in the training
-  directory). Select the file and click Open.
+- Navigate to the file :doc:`qgis/Sleman/Jalan_Sleman_OSM.shp` (in the training
+  directory). Select the file and click :guilabel:`Open`.
 
 .. note::  One of the most common file formats are shapefiles,
    which end with the extension .shp. Shapefiles are often used to save
    geodata, and are commonly used with GIS applications like QGIS.
-
+   
 - You should now see your new layer appear both in the map canvas and in the
   layers list.  It should be drawn above both the district and railway layers.
 
 .. image:: /static/training/beginner/qgis-inasafe/image32.*
+   :align: center
 
 
 **5. Basic QGIS Tools**
@@ -264,6 +296,7 @@ important thing for now is to start getting familiar with QGIS.
 |                                                             |                                      | layer                            |
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
 
+
 **6. Navigate the Map**
 
 - Before we examine the attributes of individual features,
@@ -272,6 +305,7 @@ important thing for now is to start getting familiar with QGIS.
   the top of QGIS.
 
 .. image:: /static/training/beginner/qgis-inasafe/image40.*
+   :align: center
 
 - When you click on one of these buttons, it changes what you can do with
   your mouse in the main map window.
