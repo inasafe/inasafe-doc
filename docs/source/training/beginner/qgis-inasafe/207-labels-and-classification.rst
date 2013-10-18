@@ -6,7 +6,7 @@ Module 7: Labels and Classification
 
 **Learning Objectives**
 
-- Explore attribute data of an object and to understand the uses of different 
+- Explore attribute data of an object and to understand the uses of different
   types of data
 - Add labels to vector layers
 - Symbolize vector data using categories
@@ -24,7 +24,7 @@ lesson we will explore the attribute data of an object and understand what the
 various data can be useful for.
 
 If you would like to start with the examples used in this chapter, begin by
-opening the QGIS project :doc:`sleman_2_6.qgs`.
+opening the QGIS project :file:`sleman_2_6.qgs`.
 
 
 **1. Attribute Data**
@@ -34,13 +34,13 @@ opening the QGIS project :doc:`sleman_2_6.qgs`.
   (you can also right-click on the layer and select Open Attribute Table).
 
 .. image:: /static/training/beginner/qgis-inasafe/image114.*
-   :align: center 
- 
+   :align: center
+
 - Which field would be the most useful to use as a label?
 
 .. image:: /static/training/beginner/qgis-inasafe/image115.*
    :align: center
- 
+
 You now know how to use the attribute table to see what is actually in the data
 you’re using. A dataset will only be useful to you if it has the attributes that
 you care about. If you know which attributes you need, you can quickly decide if
@@ -71,33 +71,33 @@ ensure that it has been activated.
 
 .. image:: /static/training/beginner/qgis-inasafe/image116.*
    :align: center
- 
-- Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers list, so that it 
+
+- Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers list, so that it
   is highlighted.
 - Click on the :guilabel:`Labelling` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image117.*
    :align: center
- 
+
 This gives you the Layer labeling settings dialog.
 
 - Check the box next to :guilabel:`Label this layer with...`
 
 .. image:: /static/training/beginner/qgis-inasafe/image118.*
    :align: center
- 
+
 - We must indicate which of the attribute fields we want to use for the labels.
   The **NAME** field is the mostly likely candidate for a label, so let’s select
   NAME from the list:
 
 .. image:: /static/training/beginner/qgis-inasafe/image119.*
    :align: center
- 
+
 - Click :guilabel:`OK`.  The map should now have labels like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image120.*
    :align: center
- 
+
 What we have so far is good, but as you can see, the labels are overlapping the
 points that they are associated with. That doesn’t look very nice. The text is
 also a bit larger than it needs to be. Let’s fix these problems!
@@ -107,31 +107,31 @@ also a bit larger than it needs to be. Let’s fix these problems!
 
 .. image:: /static/training/beginner/qgis-inasafe/image121.*
    :align: center
- 
+
 A standard text change dialog appears, similar to those in many other programs.
 Change the font to *Arial size 9*. Your labels will now look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image122.*
    :align: center
- 
+
 That’s the font problem solved! Now let’s look at the problem of the labels
 overlapping the points, but before we do that, let’s take a look at the Buffer
 option.
 
 - Open the :guilabel:`Label tool` dialog.
-- Deactivate the label buffer by clicking on the checkbox next to the text that 
+- Deactivate the label buffer by clicking on the checkbox next to the text that
   says :guilabel:`Buffer`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image123.*
-   :align: center 
- 
+   :align: center
+
 - Click :guilabel:`Apply`.
 
 Note the effects in the map:
 
 .. image:: /static/training/beginner/qgis-inasafe/image124.*
    :align: center
- 
+
 Now you can see why we usually need label buffers!
 
 - Reactivate the buffers by clicking in the same checkbox as before, and then clicking Apply.
@@ -142,17 +142,17 @@ Back to the problem of the labels that overlap points.
 
 .. image:: /static/training/beginner/qgis-inasafe/image125.*
    :align: center
- 
+
 - Change the value of *Label distance to 2*.
 
 .. image:: /static/training/beginner/qgis-inasafe/image126.*
    :align: center
- 
+
 - Click :guilabel:`Apply`.  The labels no longer hover over the icons, but are “buffered” a short distance away:
 
 .. image:: /static/training/beginner/qgis-inasafe/image127.*
-   :align: center 
- 
+   :align: center
+
 
 **Labeling lines**
 
@@ -162,7 +162,7 @@ as the points, your results would look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image128.*
    :align: center
- 
+
 This is not very useful! To make lines behave, we’ll need to edit some options.
 
 - Hide the **POI_Sleman_OSM** layer so that it doesn’t distract you.
@@ -172,13 +172,13 @@ This is not very useful! To make lines behave, we’ll need to edit some options
 - In the Label tool dialog’s Advanced tab, choose the following settings:
 
 .. image:: /static/training/beginner/qgis-inasafe/image129.*
-   :align: center 
+   :align: center
 
 The map will look somewhat like this, depending on scale:
 
 .. image:: /static/training/beginner/qgis-inasafe/image130.*
    :align: center
- 
+
 It’s better than before, but still not ideal. For starters, some of the names
 appear more than once, and that’s not always necessary. To prevent that from
 happening:
@@ -198,7 +198,7 @@ to be of notice.
   settings dialog.
 
 Here’s the result:
- 
+
 .. image:: /static/training/beginner/qgis-inasafe/image131.*
    :align: center
 
@@ -221,7 +221,7 @@ labels, it would look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image132.*
    :align: center
- 
+
 Obviously this is not ideal, so we need another solution. That’s what this
 lesson is about!  In this section, we will learn how to classify vector data
 effectively.
@@ -234,33 +234,33 @@ effectively.
 
 .. image:: /static/training/beginner/qgis-inasafe/image133.*
    :align: center
- 
+
 - Change it to *Categorized* and the interface will change:
 
 .. image:: /static/training/beginner/qgis-inasafe/image134.*
    :align: center
- 
+
 - Change the Column to **guna_lahan** and the Color ramp to *Spectral*:
 
 .. image:: /static/training/beginner/qgis-inasafe/image135.*
-   :align: center 
- 
+   :align: center
+
 - Click the button labeled :guilabel:`Classify`:
 
 .. image:: /static/training/beginner/qgis-inasafe/image136.*
-   :align: center 
- 
+   :align: center
+
 - Click :guilabel:`OK`.  You’ll see something like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image137.*
    :align: center
- 
+
 - Click the :guilabel:`arrow` (or :guilabel:`plus` sign) next to rural in the
   Layer list, you’ll see the categories explained:
 
 .. image:: /static/training/beginner/qgis-inasafe/image138.*
    :align: center
- 
+
 So, this is useful! But it hurts your eyes to look at it, so let’s see what we
 can do about that.
 
@@ -269,14 +269,14 @@ can do about that.
 
 .. image:: /static/training/beginner/qgis-inasafe/image139.*
    :align: center
- 
-- Remove the outline as you did in the previous chapter.  (change the border 
+
+- Remove the outline as you did in the previous chapter.  (change the border
   style to “No Pen”)
 - Click the :guilabel:`Delete all` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image140.*
    :align: center
- 
+
 - Now click :guilabel:`Classify` again, and the new symbols will appear.
 
 You’ll notice they don’t have outlines. This is because because you just removed
@@ -288,14 +288,14 @@ the outlines!
 
 .. image:: /static/training/beginner/qgis-inasafe/image141.*
    :align: center
- 
-- Notice that the category on the bottom is empty.  Select it, and click the 
+
+- Notice that the category on the bottom is empty.  Select it, and click the
   :guilabel:`Delete` button.
 - When we click :guilabel:`OK` our map looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image142.*
    :align: center
- 
+
 If you feel confident in your new classification skills, try to classify the
 residential layer yourself.  Use darker colors to distinguish it from
 vegetation.
@@ -314,21 +314,21 @@ positive numbers, sych as land area, is known as ratio classification.
 
 .. image:: /static/training/beginner/qgis-inasafe/image143.*
    :align: center
- 
-- Open the :guilabel:`layer properties` for **pemukiman**. 
-- Change the :guilabel:`Style type` to *"Graduated"*, and use *luas_ha* as the 
+
+- Open the :guilabel:`layer properties` for **pemukiman**.
+- Change the :guilabel:`Style type` to *"Graduated"*, and use *luas_ha* as the
   column.
 
 .. image:: /static/training/beginner/qgis-inasafe/image144.*
    :align: center
 
 - Because we are categorizing with numbers this time, a color gradient will be
-  useful for representing our categories.  Click on :guilabel:`Oranges` in the  
+  useful for representing our categories.  Click on :guilabel:`Oranges` in the
   color ramp, and then click :guilabel:`Classify`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image145.*
    :align: center
- 
+
 - Now you’ll have something like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image146.*

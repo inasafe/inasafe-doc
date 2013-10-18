@@ -22,14 +22,14 @@ Before you can add new vector data, you need a vector dataset (a layer) to
 add it to.  In our case, we’ll begin by creating a new data layer,
 and then we’ll add features to it.  First, we must define our dataset.
 
-- :guilabel:`Create a new project` in QGIS, by clicking on the 
+- :guilabel:`Create a new project` in QGIS, by clicking on the
   :guilabel:`New Project` icon.
 
 .. image:: /static/training/beginner/qgis-inasafe/image172.*
    :align: center
 
 - Go to :menuselection:`Layer ‣ New ‣ New Shapefile Layer`.  You’ll be presented
-with the following dialog:
+  with the following dialog:
 
 .. image:: /static/training/beginner/qgis-inasafe/image173.*
    :align: center
@@ -47,10 +47,10 @@ Once you’ve mastered this, creating a point or a line layer should be easy!
 .. image:: /static/training/beginner/qgis-inasafe/image174.*
    :align: center
 
-- We’ll specify the Coordinate Reference System (CRS) in the next box. By
-  default the box will contain the CRS of the project,
-  which for us will be WGS84. This is a widely used and very useful CRS,
-  so let’s stick with it!
+- We’ll specify the Coordinate Reference System (CRS) in the next box.
+  By default the box will contain the CRS of the project, which for us will
+  be WGS84.
+  This is a widely used and very useful CRS, so let’s stick with it!
 
 .. image:: /static/training/beginner/qgis-inasafe/image175.*
    :align: center
@@ -96,10 +96,10 @@ tutorial directory.
 .. image:: /static/training/beginner/qgis-inasafe/image178.*
    :align: center
 
-- Navigate to :doc:`..qgis/Sleman/`. 
-- Select the file **UGM.tif**. 
-- Click :guilabel:`Open`. An image will load into your map. 
-- Find the new image in the Layers list. 
+- Navigate to :file:`../qgis/Sleman/`.
+- Select the file **UGM.tif**.
+- Click :guilabel:`Open`. An image will load into your map.
+- Find the new image in the Layers list.
 - :guilabel:`Click and drag` it to the bottom of the list so that
   it is below the vector layer you created in the previous section.
 
@@ -107,15 +107,15 @@ tutorial directory.
    :align: center
 
 - Go to :menuselection:`Settings ‣ Project Properties` and :guilabel:`enable
-“on the fly”` transformation. 
+  “on the fly”` transformation.
 - Make sure that “WGS 84” is selected as the CRS, and click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image180.*
    :align: center
 
-- Right click on the :guilabel:`UGM layer`, and click 
-:guilabel:`Zoom to Layer Extent`
-- Zoom in to the center of the raster image.  We will be digitizing three
+- Right click on the :guilabel:`UGM layer`, and click
+  :guilabel:`Zoom to Layer Extent`
+- Zoom in to the center of the raster image. We will be digitizing three
   areas:
 
 .. image:: /static/training/beginner/qgis-inasafe/image181.*
@@ -136,10 +136,11 @@ Let’s enter edit mode for the *gedung_campus* layer:
 - Click on the :guilabel:`Toggle Editing` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image182.*
-   :align:center
+   :align: center
 
 - If you can’t find this button, check that the Digitizing toolbar is
-  enabled. There should be a check mark next to the 
+  enabled.
+  There should be a check mark next to the
   :menuselection:`View ‣ Toolbars ‣ Digitizing` menu entry.
 - Once you are in edit mode, the digitizing tools will become active:
 
@@ -184,8 +185,8 @@ The first feature you’ll digitize is GPS field:
 - Place more points by clicking further along the edge,
   until the shape you’re drawing completely covers the field.  This is very
   similar to drawing a polygon in JOSM.
-- To place your last point, :guilabel:`right-click` where you want it to be. 
-This will finalize the feature and show you the Attributes dialog.
+- To place your last point, :guilabel:`right-click` where you want it to be.
+  This will finalize the feature and show you the Attributes dialog.
 - Fill in the values as shown here:
 
 .. image:: /static/training/beginner/qgis-inasafe/image186.*
@@ -238,8 +239,8 @@ to that layer.
    :align: center
 
 .. note:: Now you know how to create polygon features!  Creating points and
-   line layers is just as easy - you simply need to define the type of layer 
-   when you create it, and of course you can only create points in point layers 
+   line layers is just as easy - you simply need to define the type of layer
+   when you create it, and of course you can only create points in point layers
    and lines in line layers.
 
 **4. Georeferencing**
@@ -283,8 +284,8 @@ which looks like this:
 .. image:: /static/training/beginner/qgis-inasafe/image196.*
    :align: center
 
-- Find the *file peta_krb_merapi_2002.jpg*, which is located in the the folder 
-:doc:`..qgis/Sleman/Merapi`.  Click :guilabel:`Open`
+- Find the *file peta_krb_merapi_2002.jpg*, which is located in the the folder
+  :file:`../qgis/Sleman/Merapi`.  Click :guilabel:`Open`
 - Select :guilabel:`WGS 84` when prompted and click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image197.*
@@ -297,7 +298,7 @@ coordinates written on it at every corner.  So, to georeference this image,
 we will create four GCPs, one at each corner of the map,
 and we will turn our jpeg file into a geotiff, a georeferenced image.
 
-- :guilabel:`Zoom in` to the upper-left corner of the map by using the zoom 
+- :guilabel:`Zoom in` to the upper-left corner of the map by using the zoom
   button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image198.*
@@ -308,7 +309,7 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
 .. image:: /static/training/beginner/qgis-inasafe/image199.*
    :align: center
 
-- :guilabel:`Click on` the very top left point of the map, right where the 
+- :guilabel:`Click on` the very top left point of the map, right where the
    top border of the map meets the left border.
 - A box will pop up requesting the x and y coordinates of the point you just
   clicked.  Luckily, the coordinates are written in blue on the map.  The
@@ -350,9 +351,9 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
 .. image:: /static/training/beginner/qgis-inasafe/image204.*
    :align: center
 
-- If you are asked to select the layer’s coordinate system, 
+- If you are asked to select the layer’s coordinate system,
   :guilabel:`choose` **WGS 84**.
-- Go to :menuselection:`Settings ‣ Project Properties` and make sure 
+- Go to :menuselection:`Settings ‣ Project Properties` and make sure
   that on the fly transformation is enabled.
 
 .. image:: /static/training/beginner/qgis-inasafe/image205.*

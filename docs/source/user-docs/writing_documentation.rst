@@ -19,7 +19,9 @@ A complete list of supported .rst markup is also available
 
 Following are a few tips for documentation writers:
 
-1. There is a 'Community Edition" of
+1. Take a look in the `lookup table <./lookup_table.html>`_ to see which terms
+   and phrases are used and which you should definitely **not** translate.
+#. There is a 'Community Edition" of
    `PyCharm <http://www.jetbrains.com/pycharm/>`_ available. Consider using
    this for writing documentation.
 #. Try to not write more than **80 Characters in one line**. That makes the
@@ -47,7 +49,9 @@ Here are some common useful tags
 ::
 
    |project_name|   is currently a substitution for the Project name (InaSAFE)
-   Normally, there are no heading levels assigned to certain characters as the structure is determined from the succession of headings. However, for the Python documentation, this convention is used which you may follow:
+   Normally, there are no heading levels assigned to certain characters as the
+   structure is determined from the succession of headings. However, for the
+   Python documentation, this convention is used which you may follow:
 
    # with overline, for parts
    * with overline, for chapters
@@ -201,26 +205,3 @@ reviewed and taken into the official documentation.
 
 If you want to build the documentation locally on your Computer you should
 read :ref:`building_documentation` inside the Developer Documentation.
-
-Indonesian Translation Index
----------------------------------
-To coordinate translation of InaSAFE into Bahasa Indonesian we have developed
-a table of commonly used terms and translation.
-
-
-* FIXME Do not translate table!!!
-
-============  	================
- English      	Bahasa Indonesia
-============  	================
-hazard			bencana
-exposure		keterpaparan
-
-============  	================
-
-We have also made a blanket decision not to translate the following words:
-
-* python
-* qgis
-
-Please add to this list as required.

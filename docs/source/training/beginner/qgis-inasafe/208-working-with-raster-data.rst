@@ -28,19 +28,20 @@ about rasters!
 
 **1. Loading Raster Data**
 
-- Open the project named :doc:`sleman_2_7.qgs` in the directory :doc:`qgis/`.  
-  We’ve simplified the project since our last chapter, to make it easier to 
-  follow along, and so that our layers load a bit faster.  However, if you are comfortable you can easily carry on with your project from the previous 
-  chapter.
+- Open the project named :file:`sleman_2_7.qgs` in the directory :file:`qgis/`.
+  We’ve simplified the project since our last chapter, to make it easier to
+  follow along, and so that our layers load a bit faster. However,
+  if you are comfortable you can easily carry on with your project from the
+  previous chapter.
 - Click on the :guilabel:`Load Raster Layer` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image147.*
    :align: center
 
 - The Load Raster Layer dialog will open.  Find the file in the directory
-  :doc:`Sleman/` named :doc:`Sleman.tif`.  Open it.
+  :file:`Sleman/` named :file:`Sleman.tif`.  Open it.
 - QGIS will open a dialog which explains that the new layers does not have a
-  CRS assigned.  In the box at the bottom, scroll down until you find 
+  CRS assigned.  In the box at the bottom, scroll down until you find
   **WGS 84 / UTM zone 49S**.  Select it and click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image148.*
@@ -80,10 +81,10 @@ how to change it’s symbology.
 .. image:: /static/training/beginner/qgis-inasafe/image147.*
    :align: center
 
-- Open the file named :doc:`SRTM_Sleman.tif`, which is located in 
-  :doc:`Sleman/SRTM`.
-- When it appears in the Layers list, right-click on it and click 
-  :guilabel:`Rename`. Give it the name :kbc:`DEM`.
+- Open the file named :file:`SRTM_Sleman.tif`, which is located in
+  :file:`Sleman/SRTM`.
+- When it appears in the Layers list, right-click on it and click
+  :guilabel:`Rename`. Give it the name :kbd:`DEM`.
 
 .. note:: This dataset is a Digital Elevation Model (DEM). It’s a map of the
    elevation (altitude) of the terrain, showing us where the mountains and
@@ -105,7 +106,7 @@ loaded previously, everything is already defined.  But if you load a raster
 image and it’s just a gray rectangle, then you know there’s no symbology for
 it yet. It still needs to be defined. So that’s what we will do now.
 
-- Open the :guilabel:`Layer Properties` dialog for the **SRTM** layer, 
+- Open the :guilabel:`Layer Properties` dialog for the **SRTM** layer,
   which is now named **DEM**.
 - Switch to the Style tab.  This shows the current symbology settings,
   and as we’ve seen, they don’t give us much information on the layer.  Let’s
@@ -199,8 +200,8 @@ in this image file is 0 and the highest is about 195.
 .. image:: /static/training/beginner/qgis-inasafe/image162.*
    :align: center
 
-- Click :guilabel:`OK`.  You should see the values of the raster properly 
-  displayed, with the darker colors representing valleys and the lighter ones, 
+- Click :guilabel:`OK`.  You should see the values of the raster properly
+  displayed, with the darker colors representing valleys and the lighter ones,
   mountains:
 
 .. image:: /static/training/beginner/qgis-inasafe/image163.*
@@ -214,8 +215,8 @@ you’ll be glad to know that there’s a tool for doing all of this easily.
   clicking :guilabel:`Remove`.
 - Load the raster image again, renaming it to **DEM** as before. It’s will be a
   gray rectangle again.
-- Enable the tool you’ll need by enabling 
-  :menuselection:`View ‣ Toolbars ‣ Raster`. These icons will appear in the 
+- Enable the tool you’ll need by enabling
+  :menuselection:`View ‣ Toolbars ‣ Raster`. These icons will appear in the
   interface:
 
 .. image:: /static/training/beginner/qgis-inasafe/image164.*
@@ -226,7 +227,7 @@ you the best contrast in the local area that you’re zoomed into. It’s useful
 for large datasets. The button on the left will stretch the minimum and
 maximum values to constant values across the whole image.
 
-- Click the button on the left :guilabel:`(Stretch Histogram to Full Dataset)`. 
+- Click the button on the left :guilabel:`(Stretch Histogram to Full Dataset)`.
   You’ll see the data is now correctly represented as before! Easy!
 
 
@@ -249,11 +250,11 @@ maps the terrain using light and shadow to create a 3D-looking image.
 To work with DEMs, you should use QGIS’ all-in-one DEM (Terrain models)
 analysis tool.
 
-- Click on the menu item 
+- Click on the menu item
   :menuselection:`Raster ‣ Analysis ‣ DEM (Terrain models)`.
 - In the dialog that appears, ensure that the Input file is the **DEM** layer.
-- Set the Output file to :kbd:`hillshade.tif` in the directory 
-  :doc:`qgis/Sleman/`.
+- Set the Output file to :kbd:`hillshade.tif` in the directory
+  :file:`qgis/Sleman/`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image165.*
    :align: center
@@ -265,7 +266,7 @@ analysis tool.
 
 - You may leave all the other options unchanged.
 - Click :guilabel:`OK` to generate the hillshade.
-- When it tells you that processing is completed, click :guilabel:`OK` on the 
+- When it tells you that processing is completed, click :guilabel:`OK` on the
   message to get rid of it.
 - Click :guilabel:`Close` on the main DEM (Terrain models) dialog.
 
@@ -300,14 +301,14 @@ being mostly transparent.
 .. image:: /static/training/beginner/qgis-inasafe/image169.*
   :align: center
 
-- Now we will make the hillshade layer somewhat transparent.  Open its 
+- Now we will make the hillshade layer somewhat transparent.  Open its
   :guilabel:`Layer Properties` and go to the :guilabel:`Transparency` tab.
 - Set the *Global transparency* to *50%*:
 
 .. image:: /static/training/beginner/qgis-inasafe/image170.*
    :align: center
 
-- Click :guilabel:`OK` on the Layer Properties dialog. You’ll get a result like 
+- Click :guilabel:`OK` on the Layer Properties dialog. You’ll get a result like
   this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image171.*

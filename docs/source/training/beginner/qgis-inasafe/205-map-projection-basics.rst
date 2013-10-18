@@ -23,19 +23,19 @@ The CRS that all the data as well as the map itself are in right now is called
 WGS84. This is a very common Geographic Coordinate System (GCS) for representing
 data. But there’s a problem, as we will see.
 
-- Open the project :doc:`world.qgs`, located in the :doc:`qgis/ folder`
+- Open the project :file:`world.qgs`, located in the :file:`qgis/ folder`
 - Zoom in to Indonesia by using the Zoom In tool.
 
 .. image:: /static/training/beginner/qgis-inasafe/image54.*
    :align: center
- 
+
 - Setting the scale in the Scale field, which is in the Status Bar along the
   bottom of the screen. While over Indonesia, set this value to 1:20000000 (one
   to twenty million).
 
 .. image:: /static/training/beginner/qgis-inasafe/image55.*
    :align: center
- 
+
 - Now pan around the map while keeping an eye on the Scale field.
 
 Notice the scale changing? That’s because you’re moving away from the one point
@@ -58,9 +58,7 @@ To solve this, we’ll use a Projected Coordinate System (PCS) instead.  A PCS
 change and corrects it.  Therefore, to keep the scale constant, we should
 reproject our data to use a PCS.
 
-*Projection is the act of taking coordinates on a sphere (like the earth), and
-*manipulating them so that they can be displayed on a flat surface.
-
+*Projection is the act of taking coordinates on a sphere (like the earth), and manipulating them so that they can be displayed on a flat surface.*
 
 **2. “On the Fly” Reprojection**
 
@@ -76,7 +74,7 @@ the data.  The term that we use for this is reprojecting “on the fly.”
 .. image:: /static/training/beginner/qgis-inasafe/image56.*
    :align: center
 
-- In the dialog that appears, check the box next to 
+- In the dialog that appears, check the box next to
   :guilabel:`Enable ‘on the fly’ CRS transformation`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image57.*
@@ -99,9 +97,9 @@ the data.  The term that we use for this is reprojecting “on the fly.”
 “CRSes.
 
 - Deactivate :guilabel:`“on the fly” reprojection` again, by unchecking the box
-  next to Enable ‘on the fly’ CRS transformation. 
-- Now let’s add another vector layer, located in 
-  :doc:`qgis/peta_dunia/Indonesia.shp`.
+  next to Enable ‘on the fly’ CRS transformation.
+- Now let’s add another vector layer, located in
+  :file:`qgis/peta_dunia/Indonesia.shp`.
 
 What do you notice? The layer isn’t visible! But that’s easy to fix, right?
 
@@ -151,7 +149,7 @@ projection.
 - Select :guilabel:`Save As...` in the menu that appears. You will be shown the
   **Save vector layer as...** dialog.
 - Click on the :guilabel:`Browse` button next to the :guilabel:`Save as field`.
-- Navigate to :doc:`qgis/peta_dunia/` and specify the name of the new layer as
+- Navigate to :file:`qgis/peta_dunia/` and specify the name of the new layer as
   :kbd:` Indonesia_terproyeksi.shp`.
 - Leave the Encoding unchanged.
 - Change the value of the Layer CRS dropdown to **Project CRS**.
@@ -160,12 +158,12 @@ projection.
 
 .. image:: /static/training/beginner/qgis-inasafe/image60.*
    :align: center
- 
+
 - Click :guilabel:`OK` and after a minute, you should be presented with:
 
 .. image:: /static/training/beginner/qgis-inasafe/image61.*
    :align: center
- 
+
 - Click :guilabel:`OK`.
 
 - Now your new layer, **Indonesia_terproyeksi**, will be shown in the layers
@@ -180,12 +178,12 @@ There are many more projections than just those included in QGIS by default. You
 can even create your own projections.  Let’s see how this works.
 
 - Start a new map.
-- Load the vector layer :doc:`oceans.shp` located in :doc:`qgis/peta_dunia/`.
+- Load the vector layer :file:`oceans.shp` located in :file:`qgis/peta_dunia/`.
 - Go to :menuselection:`Settings ‣ Custom CRS...` and you’ll see this dialog:
 
 .. image:: /static/training/beginner/qgis-inasafe/image62.*
    :align: center
- 
+
 - We will create a projection known as Van der Grinten I.  This interesting
   projection represents the Earth on a circular field instead of a rectangular
   field, as most projections do.
@@ -196,7 +194,7 @@ can even create your own projections.  Let’s see how this works.
 
 .. image:: /static/training/beginner/qgis-inasafe/image63.*
    :align: center
- 
+
 - Click the :guilabel:`Save` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image64.*
@@ -207,13 +205,13 @@ can even create your own projections.  Let’s see how this works.
 
 .. image:: /static/training/beginner/qgis-inasafe/image65.*
    :align: center
- 
+
 - Search for your newly defined projection by typing it into the Filter box:
 
 .. image:: /static/training/beginner/qgis-inasafe/image66.*
    :align: center
- 
-- You should see it appear in the box at the bottom.  Select it, and click 
+
+- You should see it appear in the box at the bottom.  Select it, and click
   :guilabel:`OK`.
 - Once you’ve applied the new projection, the map will be reprojected like this:
 

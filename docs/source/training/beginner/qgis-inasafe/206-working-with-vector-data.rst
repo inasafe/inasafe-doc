@@ -47,21 +47,21 @@ your polygons overlapping your lines and points.
 It’s important to know that the data you will be working with does not only
 represent where objects are in space, but also tells you what those objects are.
 
-- Open the project :doc:`sleman_2_5.qgs`.  This is the same project that you
+- Open the project :file:`sleman_2_5.qgs`.  This is the same project that you
   worked with in Module 3.
 - Close the InaSAFE panel if you still have it open.
-- You can see in your project the position of Sleman districts, the railway, and
-  some roads, but you can’t see all of the data contained in those layers.
+- You can see in your project the position of Sleman districts, the railway,
+  and some roads, but you can’t see all of the data contained in those layers.
 - Select **Jalan_Sleman_OSM** in the layers list.
 
 .. image:: /static/training/beginner/qgis-inasafe/image68.*
    :align: center
- 
+
 - Click the :guilabel:`Open Attribute Table` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image69.*
    :align: center
- 
+
 - You will see a table with more data about the streets layer.  This extra data
   is called *attribute data*.  The lines that you can see on your map represent
   where the streets go this is the *spatial data*. You will remember in JOSM
@@ -71,7 +71,7 @@ represent where objects are in space, but also tells you what those objects are.
 
 .. image:: /static/training/beginner/qgis-inasafe/image70.*
    :align: center
- 
+
 - Take a look at the attribute table.  Each row in the table is associated with
   one feature in the streets layer.  Each column contains one of the attributes.
   If you select other layers and click on the :guilabel:`Open Attribute Table`
@@ -94,14 +94,14 @@ project, you should always add the one that ends in **.shp**, but the rest of
 the files are important too!
 
 - Do you remember how to add a shapefile?  Try adding the layer
-  :doc:`POI_Sleman_OSM`, from the shapefile located in the tutorial directory.
-  If you don’t remember how to add a new vector layer, refer to the instructions
-  in chapter 2.
+  :file:`POI_Sleman_OSM`, from the shapefile located in the tutorial directory.
+  If you don’t remember how to add a new vector layer,
+  refer to the instructions in chapter 2.
 - Your project should look like this after the new layer has been added:
 
 .. image:: /static/training/beginner/qgis-inasafe/image71.*
    :align: center
- 
+
 **Databases**
 
 Shapefiles (and other types of files) are one way to store geographic data.  You
@@ -117,14 +117,14 @@ over a network or even the internet.
 
 .. image:: /static/training/beginner/qgis-inasafe/image72.*
    :align: center
- 
+
 - You will see a dialog box.  Click :guilabel:`New`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image73.*
    :align: center
- 
-- Navigate to the :doc:`qgis_data/Sleman` folder and find the :doc:`file
-  guna_lahan.db`.  Select the file and click :guilabel:`Open`.
+
+- Navigate to the :file:`qgis_data/Sleman` folder and find the
+  :file:`file guna_lahan.db`.  Select the file and click :guilabel:`Open`.
 - Now in the original dialog box, you will see that the dropdown button now
   contains *“guna_lahan.db @ ...”*, followed by the path of the database file on
   your computer.
@@ -132,7 +132,7 @@ over a network or even the internet.
 
 .. image:: /static/training/beginner/qgis-inasafe/image74.*
    :align: center
- 
+
 - This database actually has three different layers available, all saved in the
   database.  Click on the first layer to select it, then hold :kbd:`SHIFT` and
   click the last layer to select them all.
@@ -152,7 +152,7 @@ over a network or even the internet.
   :guilabel:`Remove`.  Then order your layers like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image75.*
-   :align: center 
+   :align: center
 
 
 **4. Symbology**
@@ -171,7 +171,7 @@ information that people will understand and be able to use.
 
 *4.1  Changing colors*
 
-To change a layer’s symbology, we will open its :guilabel:`Layer Properties`. 
+To change a layer’s symbology, we will open its :guilabel:`Layer Properties`.
 Let’s begin by changing the color of the *pemukiman* layer.
 
 - Right-click on the **pemukiman** layer in the Layers list.
@@ -183,8 +183,8 @@ Let’s begin by changing the color of the *pemukiman* layer.
 - In the Properties window select the :guilabel:`Style` tab on the far left.
 
 .. image:: /static/training/beginner/qgis-inasafe/image76.*
-   :align: center 
- 
+   :align: center
+
 - Click the :guilabel:`Change` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image77.*
@@ -195,8 +195,8 @@ Let’s begin by changing the color of the *pemukiman* layer.
 
 .. image:: /static/training/beginner/qgis-inasafe/image78.*
    :align: center
- 
-- Click :guilabel:`OK` again in the **Layer Properties** window, and you will 
+
+- Click :guilabel:`OK` again in the **Layer Properties** window, and you will
   see the color change being applied to the layer.
 
 .. image:: /static/training/beginner/qgis-inasafe/image79.*
@@ -216,18 +216,18 @@ map less visually cluttered.
 
 .. image:: /static/training/beginner/qgis-inasafe/image80.*
    :align: center
- 
+
 - The Symbol properties dialog will appear.
 
 .. image:: /static/training/beginner/qgis-inasafe/image81.*
-   :align: center 
- 
+   :align: center
+
 - Change the color inside the polygons in the layer by clicking the button next
   to the Color label:
 
 .. image:: /static/training/beginner/qgis-inasafe/image82.*
    :align: center
- 
+
 - In the dialog that appears, choose a new color (that seems to suit
   vegetation).
 - Click :guilabel:`OK`.
@@ -238,18 +238,18 @@ map less visually cluttered.
 
 .. image:: /static/training/beginner/qgis-inasafe/image83.*
    :align: center
- 
+
 - Change this to :guilabel:`No Pen`.
 
 - Click :guilabel:`OK`, and then :guilabel:`OK` again.  Now when we look at our
   map, the vegetasi layer will have a new color and no lines between polygons.
 
 .. image:: /static/training/beginner/qgis-inasafe/image84.*
-   :align: center 
- 
+   :align: center
+
 - Try changing the symbology of the pemukiman layer so that it also does not
   have outlines.
- 
+
 *4.3 Scale-based Visibility*
 
 Sometimes you will find that one of your layers is not suitable for a given
@@ -268,24 +268,24 @@ far (a small scale).  For example, the streets layer is not very useful when we
 are zoomed out far and it looks like a blob.
 
 .. image:: /static/training/beginner/qgis-inasafe/image85.*
-   :align: center 
- 
+   :align: center
+
 Let’s enable scale-based rendering:
 
-- Open the :guilabel:`Layer Properties` dialog for the **Jalan_Sleman_OSM** 
+- Open the :guilabel:`Layer Properties` dialog for the **Jalan_Sleman_OSM**
   layer.
 - Activate the :guilabel:`General` tab.
 
 .. image:: /static/training/beginner/qgis-inasafe/image86.*
    :align: center
- 
+
 - Enable scale-based rendering by clicking on the checkbox labeled
   :guilabel:`Use scale dependent rendering`.  Then change the value in
   *“Maximum”* to *100000*.
 
 .. image:: /static/training/beginner/qgis-inasafe/image87.*
    :align: center
- 
+
 - Click :guilabel:`OK`.
 - Now look at your map and see what happens when you zoom in and out.  The
   streets layer should appear when you are at a large scale and disappear at
@@ -295,8 +295,8 @@ Let’s enable scale-based rendering:
    use the zoom tools to draw a box and zoom to it:
 
 .. image:: /static/training/beginner/qgis-inasafe/image88.*
-   :align: center 
- 
+   :align: center
+
 *4.4 Adding Symbol Layers*
 
 Now that you know how to change simple symbology for layers, the next step is to
@@ -308,17 +308,17 @@ create more complex symbology. QGIS allows you to do this using symbol layers.
 
 .. image:: /static/training/beginner/qgis-inasafe/image89.*
    :align: center
- 
+
 - Click on the :kbd:`+` button on the left.
 
 .. image:: /static/training/beginner/qgis-inasafe/image90.*
    :align: center
- 
+
 - Click on it and another symbol layer will be added to the list:
 
 .. image:: /static/training/beginner/qgis-inasafe/image91.*
    :align: center
- 
+
 .. note:: Note that it may appear different in color, but we’re going to change
    that anyway.
 
@@ -337,14 +337,14 @@ symbol layer, to prevent confusion.
 - Change the fill style to something other than Solid or No brush. For example:
 
 .. image:: /static/training/beginner/qgis-inasafe/image92.*
-   :align: center 
- 
+   :align: center
+
 - Click :guilabel:`OK` and then :guilabel:`OK` and take a look at your layers
   new symbology.
 
 .. image:: /static/training/beginner/qgis-inasafe/image93.*
    :align: center
- 
+
 - Now try it yourself.  Add an additional symbology layer to the
   **Jalan_Sleman_OSM** layer.
 
@@ -355,37 +355,37 @@ symbol layer, to prevent confusion.
 
 .. image:: /static/training/beginner/qgis-inasafe/image94.*
    :align: center
- 
+
 - Our streets now appear to have an outline, but they seem disjointed, as if
   they don’t connect with each other.  To prevent this from happening, you can
   enable symbol levels, which will control the order in which the different
   symbol layers are rendered.
-- In the **Layer Properties** dialog, click on 
+- In the **Layer Properties** dialog, click on
   :menuselection:`Advanced ‣ Symbol levels...`:
 
 .. image:: /static/training/beginner/qgis-inasafe/image95.*
    :align: center
- 
-- The Symbol Levels dialog will appear.  Check the box next to 
+
+- The Symbol Levels dialog will appear.  Check the box next to
   :guilabel:`Enable symbol levels`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image96.*
    :align: center
- 
+
 - Your map will now look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image97.*
    :align: center
- 
+
 - When you’re done, you can save the symbol itself in QGIS so that you won’t
   have to do all this work again if you want to use the symbol again in the
-  future.  Save your current symbol style by clicking the 
-  :guilabel:`Save Style...` button under the Style tab of the Layer Properties 
+  future.  Save your current symbol style by clicking the
+  :guilabel:`Save Style...` button under the Style tab of the Layer Properties
   dialog.
 
 .. image:: /static/training/beginner/qgis-inasafe/image98.*
    :align: center
- 
+
 - Give your style file a name and save. You can load a previously saved style at
   any time by clicking the :guilabel:`Load Style ...` button. Before you change
   a style, keep in mind that any unsaved style you are replacing will be lost.
@@ -395,7 +395,7 @@ symbol layer, to prevent confusion.
 
 .. image:: /static/training/beginner/qgis-inasafe/image99.*
    :align: center
- 
+
 *4.5 Classified Symbology*
 
 Symbol levels also work for classified layers (i.e., layers having multiple
@@ -405,8 +405,8 @@ type, we can give them different symbologies and they will still appear to flow
 into each other.
 
 .. image:: /static/training/beginner/qgis-inasafe/image100.*
-   :align: center 
- 
+   :align: center
+
 *4.6 Symbol layer types*
 
 In addition to setting fill colors and using predefined patterns, you can use
@@ -422,56 +422,56 @@ types. First we will look at the types available for points.
 - Change the symbol properties for the POI_Sleman_OSM layer:
 
 .. image:: /static/training/beginner/qgis-inasafe/image101.*
-   :align: center 
- 
+   :align: center
+
 - You can access the various symbol layer types by clicking the dropdown box in
   the upper right corner.
 
 .. image:: /static/training/beginner/qgis-inasafe/image102.*
    :align: center
- 
+
 - Investigate the various options available to you, and choose a symbol layer
- type other than the default Simple Marker.
+  type other than the default Simple Marker.
 - If in doubt, use an *Ellipse Marker*.
 - Choose a *white outline* and *dark fill*, with a *symbol width of 2.00* and
   symbol *height of 4.00*.
 
 .. image:: /static/training/beginner/qgis-inasafe/image103.*
    :align: center
- 
+
 **Vector Lines**
 
-- To see the various symbology options for vector lines, open the **streets** 
+- To see the various symbology options for vector lines, open the **streets**
   :guilabel:`layer properties` and click on the dropdown box:
 
 .. image:: /static/training/beginner/qgis-inasafe/image104.*
    :align: center
- 
+
 - Click on :guilabel:`Marker line`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image105.*
    :align: center
- 
+
 - Click on the :guilabel:`Change` button next to the Marker label.
 
 .. image:: /static/training/beginner/qgis-inasafe/image106.*
    :align: center
- 
+
 - Change the symbol properties to match this dialog:
 
 .. image:: /static/training/beginner/qgis-inasafe/image107.*
    :align: center
- 
+
 - Change the *interval* to 2.00:
 
 .. image:: /static/training/beginner/qgis-inasafe/image108.*
    :align: center
- 
+
 - Your road should now look something like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image109.*
    :align: center
- 
+
 Once you have applied the style, take a look at its results on the map. As you
 can see, these symbols change direction along with the road but don’t always
 bend along with it. This is useful for some purposes, but not for others. If you
@@ -486,21 +486,21 @@ before.
 
 .. image:: /static/training/beginner/qgis-inasafe/image110.*
    :align: center
- 
+
 - Feel free to play around with the various options.  We will use the Point
   pattern fill with the following settings:
 
 .. image:: /static/training/beginner/qgis-inasafe/image111.*
    :align: center
- 
+
 - Add a new symbol layer with a *normal Simple fill*.
 - Make it *gray with no outlines*.
-- Move it underneath the point pattern symbol layer with the 
+- Move it underneath the point pattern symbol layer with the
   :guilabel:`Move down` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image112.*
    :align: center
- 
+
 - The symbol properties should look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image113.*

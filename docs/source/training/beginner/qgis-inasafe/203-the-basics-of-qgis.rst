@@ -29,9 +29,9 @@ let’s start here and get QGIS installed.
 **1. Get QGIS**
 
 - The QGIS installer is contained in the file package that comes with
-  this guide, in :doc:`...software/QGIS-OSGeo4W-1.8.0-2-Setup.exe`.  If you have
-  this file, skip to section 2.  Otherwise you can download it from the QGIS 
-  website.
+  this guide, in :file:`...software/QGIS-OSGeo4W-1.8.0-2-Setup.exe`.  If you
+  have this file, skip to section 2.  Otherwise you can download it from the
+  QGIS website.
 - Open your web browser and in the address bar at the top of the window,
   type :kbd:`qgis.org`.  Press :guilabel:`Enter`.
 
@@ -48,7 +48,7 @@ let’s start here and get QGIS installed.
 .. image:: /static/training/beginner/qgis-inasafe/image10.*
    :align: center
 
-- If you are using Windows click on :guilabel:`1.1 Standalone Installer` 
+- If you are using Windows click on :guilabel:`1.1 Standalone Installer`
   (recommended
   for new users).
 
@@ -79,7 +79,7 @@ let’s start here and get QGIS installed.
    :align: center
 
 - Click :guilabel:`Next`.
-- Click :guilabel:`I Agree` to agree with the conditions in the license 
+- Click :guilabel:`I Agree` to agree with the conditions in the license
   agreement.
 
 .. image:: /static/training/beginner/qgis-inasafe/image15.*
@@ -91,7 +91,7 @@ let’s start here and get QGIS installed.
 .. image:: /static/training/beginner/qgis-inasafe/image16.*
    :align: center
 
-- In the next window, Click :guilabel:`Install` without checking any of the 
+- In the next window, Click :guilabel:`Install` without checking any of the
   boxes.
 
 .. image:: /static/training/beginner/qgis-inasafe/image17.*
@@ -122,14 +122,14 @@ previously, make sure it is closed by clicking on the X in the upper right
 corner of the InaSAFE panel.  If  it isn’t open or you haven’t installed it
 yet, carry on.  We will come back to this later.
 
-- Click on the folder icon on the upper toolbar or go to 
+- Click on the folder icon on the upper toolbar or go to
   :menuselection:`File ‣ Open Project...`
 
 .. image:: /static/training/beginner/qgis-inasafe/image21.*
    :align: center
 
-- Navigate to the tutorial files and go into the :doc:`qgis/` directory.  
-  Open the file named :doc:`sleman_2_2.qgs`.
+- Navigate to the tutorial files and go into the :file:`qgis/` directory.
+  Open the file named :file:`sleman_2_2.qgs`.
 - QGIS should now look something like the following image.  Let’s pause for
   a moment and go over the various components of the QGIS interface.
 
@@ -145,15 +145,16 @@ see both of these files are drawn together in the map canvas.
 
 **Layers List**
 
-On the left side of QGIS is the layers list.  This lists the layers,
-or files, that are loaded into our QGIS project.  In this project,
-we have two layers, :doc:`Kecamatan_Sleman` and :doc:`railway_Sleman_OSM`.
+On the left side of QGIS is the layers list.
+This lists the layers, or files, that are loaded into our QGIS project.
+In this project, we have two layers, :file:`Kecamatan_Sleman` and
+:file:`railway_Sleman_OSM`.
 The layers panel not only shows all the files that are currently open,
-it also determines the order that they will be drawn on the map canvas.  A
-layer that is at the bottom of the list will be drawn first, and any layers 
+it also determines the order that they will be drawn on the map canvas.
+A layer that is at the bottom of the list will be drawn first, and any layers
 above it will be drawn on top.
 
-- Click on the layer :guilabel:`railway_Sleman_OSM` and drag it below the layer 
+- Click on the layer :guilabel:`railway_Sleman_OSM` and drag it below the layer
   named Kecamatan_Sleman.
 
 .. image:: /static/training/beginner/qgis-inasafe/image23.*
@@ -257,13 +258,14 @@ Now we will add an additional layer containing roads to our project.
 .. image:: /static/training/beginner/qgis-inasafe/image31.*
    :align: center
 
-- Navigate to the file :doc:`qgis/Sleman/Jalan_Sleman_OSM.shp` (in the training
-  directory). Select the file and click :guilabel:`Open`.
+- Navigate to the file :file:`qgis/Sleman/Jalan_Sleman_OSM.shp` (in the
+  training directory). Select the file and click :guilabel:`Open`.
 
 .. note::  One of the most common file formats are shapefiles,
-   which end with the extension .shp. Shapefiles are often used to save
-   geodata, and are commonly used with GIS applications like QGIS.
-   
+   which end with the extension .shp.
+   Shapefiles are often used to save geodata, and are commonly used with
+   GIS applications like QGIS.
+
 - You should now see your new layer appear both in the map canvas and in the
   layers list.  It should be drawn above both the district and railway layers.
 

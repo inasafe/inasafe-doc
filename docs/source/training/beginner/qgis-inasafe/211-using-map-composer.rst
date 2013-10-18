@@ -33,8 +33,8 @@ The QGIS Map Composer allows you layout your map and prepare it for printing
 images, labels, legends, and scalebars.
 
 - Let’s start with some data in the Sleman regency that has already been
-  symbolized.  Open the project named :doc:`../qgis/print_2_11.qgs in the qgis/ 
-  directory.
+  symbolized.  Open the project named :file:`../qgis/print_2_11.qgs` in the
+  qgis/ directory.
 
 .. image:: /static/training/beginner/qgis-inasafe/image237.*
    :align: center
@@ -44,7 +44,7 @@ images, labels, legends, and scalebars.
   Merapi eruption model.
 - Let’s see how we can use Map Composer to adjust the layout and prepare
   this map for printing.
-- Go to :menuselection:`File ‣ New Print Composer`.  A new window will load that 
+- Go to :menuselection:`File ‣ New Print Composer`.  A new window will load that
   looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image238.*
@@ -59,7 +59,7 @@ legend, and so on.  These are elements commonly used on printed maps.
 Take a look at the icons across the top of the window.  We will use some of
 these as we lay our map out, so here’s an overview of what they do:
 
-.. image:: /static/training/beginner/qgis-inasafe/image239.*
+.. figure:: /static/training/beginner/qgis-inasafe/image239.*
    :align: center
 
    **Add New Map** will add a map element.  This is what we will use to add
@@ -68,43 +68,43 @@ these as we lay our map out, so here’s an overview of what they do:
    it will not update the same map that we have added to our print composer,
    as we shall see later.
 
-.. image:: /static/training/beginner/qgis-inasafe/image240.*
+.. figure:: /static/training/beginner/qgis-inasafe/image240.*
    :align: center
 
    **Add Image** allows us to add a picture.  You can add a company or
    organizational logo, or simply display images from a particular location.
    You can also add an image of a compass (to point North).
 
-.. image:: /static/training/beginner/qgis-inasafe/image241.*
+.. figure:: /static/training/beginner/qgis-inasafe/image241.*
    :align: center
 
    **Add New Label** is used for adding text to the layout,
    such as titles or other information.
 
-.. image:: /static/training/beginner/qgis-inasafe/image242.*
+.. figure:: /static/training/beginner/qgis-inasafe/image242.*
    :align: center
 
    **Add New Legend** is for adding a legend, which will conform to the
    active layer in the QGIS window.
 
-.. image:: /static/training/beginner/qgis-inasafe/image243.*
+.. figure:: /static/training/beginner/qgis-inasafe/image243.*
    :align: center
 
    **Add New Scalebar** is used to add a scale to the layout.
 
-.. image:: /static/training/beginner/qgis-inasafe/image244.*
+.. figure:: /static/training/beginner/qgis-inasafe/image244.*
    :align: center
 
    **Add Ellipse/Triangle/Rectangle** is used to add one of these geometric
    shapes.  For example, this might be used to indicate special areas or
    highlight things on the map.
 
-.. image:: /static/training/beginner/qgis-inasafe/image245.*
+.. figure:: /static/training/beginner/qgis-inasafe/image245.*
    :align: center
 
    **Add Arrow** is used to draw an arrow on the map layout.
 
-.. image:: /static/training/beginner/qgis-inasafe/image246.*
+.. figure:: /static/training/beginner/qgis-inasafe/image246.*
    :align: center
 
    **Select / Move Item** allows us to move choose and move the elements
@@ -118,7 +118,7 @@ these as we lay our map out, so here’s an overview of what they do:
 .. image:: /static/training/beginner/qgis-inasafe/image247.*
    :align: center
 
-- Next, click and drag your mouse across the canvas, :guilabel:`creating a box`. 
+- Next, click and drag your mouse across the canvas, :guilabel:`creating a box`.
   Your map layout should look similar to this when you are done:
 
 .. image:: /static/training/beginner/qgis-inasafe/image248.*
@@ -133,8 +133,8 @@ these as we lay our map out, so here’s an overview of what they do:
 .. image:: /static/training/beginner/qgis-inasafe/image249.*
    :align: center
 
-- Edit the :guilabel:`Scale and press Enter`.  You’ll see that the scale 
-  (zoom level) of the map element changes.  A scale of about 200000 should 
+- Edit the :guilabel:`Scale and press Enter`.  You’ll see that the scale
+  (zoom level) of the map element changes.  A scale of about 200000 should
   be good for this project.
 
 .. note:: that when you change the scale some parts of your map may become
@@ -160,7 +160,7 @@ these as we lay our map out, so here’s an overview of what they do:
 .. image:: /static/training/beginner/qgis-inasafe/image252.*
    :align: center
 
-- Click the :guilabel:`Font` button and change the text size to 18 and make it 
+- Click the :guilabel:`Font` button and change the text size to 18 and make it
   bold. Change the alignment to center.  Lastly, add the following text,
   or create your own:
 
@@ -175,13 +175,13 @@ these as we lay our map out, so here’s an overview of what they do:
 **4. Add a Scale Bar**
 
 - Let’s add a scale bar, so that anyone who looks at our map will have an
-  idea what size area this map shows.  Click on the :guilabel:`Add scale bar` 
+  idea what size area this map shows.  Click on the :guilabel:`Add scale bar`
   button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image255.*
    :align: center
 
-- :guilabel:`Draw the new scalebar` element on your map.  A good location for 
+- :guilabel:`Draw the new scalebar` element on your map.  A good location for
   it is in the lower left corner of your map layout.
 - Next we need adjust the scalebar options.  Since our project is in a PCS
   (Projected Coordinate System), our measurements are in meters.  Enter the
@@ -203,14 +203,14 @@ these as we lay our map out, so here’s an overview of what they do:
 .. image:: /static/training/beginner/qgis-inasafe/image258.*
    :align: center
 
-- In the panel on the right you should see the word :guilabel:`Grid`. 
+- In the panel on the right you should see the word :guilabel:`Grid`.
   Click on it.
 - Check the box next to :guilabel:`Show grid?` and enter the following values:
 
 .. image:: /static/training/beginner/qgis-inasafe/image259.*
    :align: center
 
-- Check the box next to :guilabel:`Draw annotation` and enter the following 
+- Check the box next to :guilabel:`Draw annotation` and enter the following
   values:
 
 .. image:: /static/training/beginner/qgis-inasafe/image260.*
@@ -227,8 +227,8 @@ these as we lay our map out, so here’s an overview of what they do:
 - Next, let’s add an inset that gives views of our map a little more
   information about what they are looking at.  Minimize the Print Composer and
   go back into QGIS.
-- Add the layer **Indonesia.shp**, which is located in :doc:`..qgis/peta_dunia. 
-  Click :guilabel:`Zoom Full`.
+- Add the layer **Indonesia.shp**, which is located in
+  :file:`../qgis/peta_dunia`. Click :guilabel:`Zoom Full`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image262.*
    :align: center
@@ -238,7 +238,7 @@ these as we lay our map out, so here’s an overview of what they do:
 .. image:: /static/training/beginner/qgis-inasafe/image263.*
    :align: center
 
-- Return to the Map Composer and create a new map with the 
+- Return to the Map Composer and create a new map with the
   :guilabel:`Add new map` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image247.*
@@ -263,9 +263,9 @@ symbology represents.
 
 - Draw a box in the remaining empty space on our map layout. You will see a
   legend with all of our symbologies shown in a list.
-- In the panel on the right, click on :guilabel:`Legend items`. 
-  Use the edit button to change the names on the legend.  Use the + an - 
-  buttons to add or remove items from the legend.  You may choose which elements 
+- In the panel on the right, click on :guilabel:`Legend items`.
+  Use the edit button to change the names on the legend.  Use the + an -
+  buttons to add or remove items from the legend.  You may choose which elements
   are important to include.  Our legend has been made to look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image266.*
