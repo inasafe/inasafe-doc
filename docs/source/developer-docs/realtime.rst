@@ -165,7 +165,7 @@ For local testing only you can use quake.localhost for your host then add this t
 Now deploy your site::
 
   sudo a2dissite default
-  sudo a2enssite quake-apache.conf
+  sudo a2ensite quake-apache.conf
   cd /home
   chmod a+X web
   mkdir web/quake
