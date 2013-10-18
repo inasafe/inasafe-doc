@@ -1,4 +1,3 @@
-
 |project_name| Realtime
 =======================
 
@@ -148,7 +147,7 @@ Get |project_name| ::
   cd dev/python
   git clone git://github.com/AIFDR/inasafe.git inasafe-realtime
   cd inasafe-realtime
-  sudo apt-get install python-tz paramikio
+  sudo apt-get install python-tz paramiko
 
 Setup Apache::
 
@@ -166,7 +165,7 @@ For local testing only you can use quake.localhost for your host then add this t
 Now deploy your site::
 
   sudo a2dissite default
-  sudo a2enssite quake-apache.conf
+  sudo a2ensite quake-apache.conf
   cd /home
   chmod a+X web
   mkdir web/quake

@@ -9,7 +9,7 @@ Module 3: Determining IDP Camp Location
 - Develop criteria for determining an ideal IDP camp location
 - Using geoprocessing tools
 - Using Spatial Query: Contains, Within, Equal, Intersect, and Is Disjoint
-- Combine Geoprocessing Tools and Spatial Query to select building(s) for 
+- Combine Geoprocessing Tools and Spatial Query to select building(s) for
   temporary IDP camps
 
 Another important part of disaster planning is determining potential locations
@@ -55,7 +55,7 @@ new layer.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image52.*
    :align: center
- 
+
 **Clip**
 
 Clip is used to cut an input feature with another feature (clip feature). The
@@ -64,23 +64,23 @@ feature will follow the shape of the clipping feature.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image53.*
    :align: center
- 
+
 **Union**
 
 Union is used to make a new feature by combining two features. The feature
 produced contains features and attributes from the two sources features.
- 
+
 .. image:: /static/training/intermediate/qgis-inasafe/image54.*
    :align: center
 
 **Dissolve**
 
-Dissolve is used to combine features inside layers that have the same value in 
-one of their fields. 
+Dissolve is used to combine features inside layers that have the same value in
+one of their fields.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image55.*
    :align: center
- 
+
 **2. Spatial Queries**
 
 Spatial Query is used to find the relationship between two features. The
@@ -88,7 +88,7 @@ resulting value is either TRUE or FALSE, unlike the geoprocessing functions
 above, which result in new geometric features.  Thus performing a Spatial Query
 is more like asking a yes or no question.  Various Spatial Query functions are
 covered here:
- 
+
 **Within**
 
 Within is used to ask the question: ‘is feature A are fully located inside
@@ -111,7 +111,7 @@ feature A contain feature B?”
 Equal results in TRUE if two features have the same position and size.   In the
 above example, the result would be FALSE, because feature A and feature B do not
 have the same size or the same position.
- 
+
 **Intersect**
 
 Like the geoprocessing intersect tool we mentioned in the previous section, this
@@ -121,7 +121,7 @@ features intersect, this query will return TRUE.
 .. image:: /static/training/intermediate/qgis-inasafe/image57.*
    :align: center
 
- 
+
 **Is Disjoint**
 
 This function is the opposite of Intersect, meaning that it will return TRUE if
@@ -191,9 +191,9 @@ right!  Is Disjoint let’s us search for features in one layer that DO NOT touc
 features in another layer.
 
 - Click on :menuselection:`Vector > Spatial Query > Spatial Query`
-- Choose Bangunan_Sirahan as the input layer in 
+- Choose Bangunan_Sirahan as the input layer in
   :guilabel:`Select source features from`
-- Use the Is Disjoint operator and choose area_terdampak_Sirahan as the 
+- Use the Is Disjoint operator and choose area_terdampak_Sirahan as the
   reference feature.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image60.*
@@ -205,17 +205,16 @@ features in another layer.
 .. image:: /static/training/intermediate/qgis-inasafe/image61.*
    :align: center
 
-- Save the selection as a new layer named Bangunan_Sirahan_terpilih.shp and add 
+- Save the selection as a new layer named Bangunan_Sirahan_terpilih.shp and add
   it to the map.
 - Remove the old buildings layer.
 
-**5. Criteria #2:  Location Must Have Direct Access to a Primary/Secondary Road
-**within 20 meters
+**5. Criteria #2:  Location Must Have Direct Access to a Primary/Secondary Road within 20 meters**
 
 Now, we need to consider our second criteria, that the building chosen as an IDP
 refuge is close to a main road.  We used the same consideration with our example
-in Unit 2.  Do you remember how we can do this?  First, we must use the 
-:guilabel:`Query Builder` so that we are only using the primary and secondary 
+in Unit 2.  Do you remember how we can do this?  First, we must use the
+:guilabel:`Query Builder` so that we are only using the primary and secondary
 rules.  Then we will use one of the Geoprocessing Tools – Buffer!
 
 - Right-click on the Jalan_Sirahan layer and click :guilabel:`Query`.
@@ -223,20 +222,20 @@ rules.  Then we will use one of the Geoprocessing Tools – Buffer!
 
 *"tipe_jln" = 'Jalan Desa' OR "tipe_jln" = 'Jalan Kabupaten'*
 
-- Click :guilabel:`Test`.  This will run the query and tell you how many 
+- Click :guilabel:`Test`.  This will run the query and tell you how many
   features meet the conditions in your query.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image62.*
 
-- You should see that our map shows fewer roads now, because we have filtered 
-  out those that are not primary or secondary.  Now that we have the roads, 
+- You should see that our map shows fewer roads now, because we have filtered
+  out those that are not primary or secondary.  Now that we have the roads,
   we will create a buffer around them.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image63.*
    :align: center
 
- 
-- Select the Jalan_Sirahan layer and go to 
+
+- Select the Jalan_Sirahan layer and go to
   :menuselection:`Vector > Geoprocessing tools > Buffer(s)`:
 
 .. image:: /static/training/intermediate/qgis-inasafe/image64.*
@@ -263,9 +262,9 @@ need to do another spatial query, this time of type Within.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image67.*
    :align: center
- 
+
 - Click :menuselection:`Apply`.
-- The buildings that are within the roads buffer will be selected. Right-click 
+- The buildings that are within the roads buffer will be selected. Right-click
   on the Bangunan_Sirahan_Terpilih layer and click :guilabel:`Save Selection As…`
   Save the selection with the name Bangunan_Sirahan_buffer_20m.
 
