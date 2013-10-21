@@ -7,19 +7,19 @@ then
     # http://stackoverflow.com/questions/4045253/converting-relative-path-into-absolute-path
     INASAFE_DEV_PATH=`cd "../../InaSAFE-Release-Branch-QGIS1/workspace"; pwd`
 else
-    INASAFE_DEV_PATH=`cd "../inasafe-dev"; pwd`
+    INASAFE_DEV_PATH=`cd "../inasafe"; pwd`
 fi
-export QGIS_PREFIX_PATH=/usr/local/qgis-2.0
+export QGIS_PREFIX_PATH=/usr/local/qgis-1.8
 
 if [ -d $INASAFE_DEV_PATH ]
 then
-  echo 'Using InaSAFE-dev in' $INASAFE_DEV_PATH
+  echo 'Using InaSAFE in' $INASAFE_DEV_PATH
 else
     # check the repo out since it does not exist
     pushd .
     mkdir -p $INASAFE_DEV_PATH
     cd $INASAFE_DEV_PATH
-    git clone --depth 1 git://github.com/AIFDR/inasafe.git inasafe-dev
+    git clone --depth 1 git://github.com/AIFDR/inasafe.git inasafe
     popd
 fi
 
