@@ -1,2 +1,0 @@
-Understanding |project_name|
-============================
