@@ -23,7 +23,8 @@ Participants are able to:
   building
 
 **Data for Practical**
-You can download this from `my dropbox <http://bit.ly/inasafe_resources>`_
+You can download this from `InaSAFE dropbox
+<https://www.dropbox.com/l/0KGR0TTpdOM9ZqzEkNud5c/invites>`_
 or it will be provided to you during the training.
 
 Introduction
@@ -34,13 +35,13 @@ impact of a flood model on both Jakarta's population and buildings.
 
 1. :menuselection:`File --> Open Projects`
 
-2. A message box appears: *Do you want to save the current project?* 
+2. A message box appears: *Do you want to save the current project?*
    :guilabel:`Don't Save`
 
 .. image:: /static/training/socialisation/028_saveproject.*
    :align: center
 
-3. :guilabel:`Navigate` to the *InaSAFE_project* folder and :guilabel:`Select` 
+3. :guilabel:`Navigate` to the *InaSAFE_project* folder and :guilabel:`Select`
 	 *Jakarta_floods.qgs*, :guilabel:`Open`
 
 The result of opening the project:
@@ -103,7 +104,7 @@ need to survive.  The figures are based on an Indonesian policy.
 to do to prepare for the event.
 
 **Notes:** explains the total people in the map canvas, the threshold of water depth
-that requires evacuation and th source of the minimum needs assessment.
+that requires evacuation and the source of the minimum needs assessment.
 
 **Detailed gender and age report:** Statistical breakdown of the number of females,
 and added minimum needs for women hygiene and pregnant women. As well as statistical
@@ -118,6 +119,7 @@ Print Results
 
 .. image:: /static/training/socialisation/034_print.*
    :align: center
+
 
 
 7. Navigate to where you would like to save the pdf, add :kbd:`_1m` at the
@@ -224,7 +226,7 @@ Important buildings are defined as:
 * Police stations
 * Residential
 * Schools
-* Sports Facilities 
+* Sports Facilities
 * Univeristy/college
 
 **Action Checklist:** A different set of Actions have been identified to

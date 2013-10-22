@@ -12,7 +12,7 @@ Current Functionality of |project_name|
 ---------------------------------------
 As explained in the previous section, |project_name| needs to have a hazard
 layer and a exposure layer to create an impact layer. Currently
-|project_name| impact functions relys on the follwing datasets:
+|project_name| impact functions relies on the following datasets:
 
 **Hazard:**
 
@@ -112,13 +112,13 @@ and Padang.
 :Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (Nationals
     Disaster Managers) with assistance from |AIFDR|, |AusAID|, the World Bank,
     UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held
-    workshops in each of Jakartas 6 Districts in order to help Village Heads
+    workshops in each of Jakarta's 6 Districts in order to help Village Heads
     map their community boundaries and major infrastructure. Over 500
-    representatives from Jakartas 267 Villages participated in these
+    representatives from Jakarta's 267 Villages participated in these
     workshops and have mapped an impressive 6,000 buildings and all 2,668
     sub-village boundaries (Rukun Warga-RW). Go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
 
-:Padang: Post Hati's earthquake in 2010, there was a huge effort to map Hati
+:Padang: Post Haiti's earthquake in 2010, there was a huge effort to map Haiti
     through |OSM|, coordinating this effort was very hard,
     and hence |AusAID| subsequently funded the creation of OSM tasking Server.
     The OSM tasking server is a web-base tool where you are able to select
@@ -166,7 +166,7 @@ Flood Footprint
 :Source: |OSM| and BPBD DKI Jakarta
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Jakarta
-:About: Based on the subvillage boundaries that were map during the DKI
+:About: Based on the sub-village boundaries that were map during the DKI
     mapping project, we were able to use this dataset during the recent
     floods to identify the areas that had been flooded based on information
     provided by the villages.
