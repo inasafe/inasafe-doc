@@ -11,6 +11,7 @@ This document explains the purpose of the different functions available in
 
    dock
    keywords
+   reports
    options
    impact_functions
    minimum_needs
