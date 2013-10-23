@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 11: Using Map Composer
 =============================
 
@@ -143,7 +142,6 @@ these as we lay our map out, so here’s an overview of what they do:
 
 .. image:: /static/training/beginner/qgis-inasafe/image250.*
    :align: center
-
 
 **3. Add a Title**
 

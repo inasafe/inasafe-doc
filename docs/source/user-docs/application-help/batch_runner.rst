@@ -43,6 +43,6 @@ this tool, but this should be considered an **experimental** feature still at
 this stage.
 
 Before running the Batch Runner you might want to use the
-:ref:`toolbar_save_scenario` tool to first save some scenarios on which you
+:ref:`tb_save_scenario` tool to first save some scenarios on which you
 can let the batch runner do its work. This tool lets you run saved scenarios
 in one go. It lets you select scenarios or let run all scenarios in one go.

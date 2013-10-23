@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/osm/image33.*
 
-
 Module 4: Using GPS
 ===================
 
@@ -48,7 +47,6 @@ Lombok, Indonesia.
    :align: center
 
    *Garmin eTrex Vista HCx*
-
 
 **2. Turn on the GPS**
 
@@ -197,7 +195,6 @@ e) “Least often” – track recording infrequently
 
 .. image:: /static/training/beginner/osm/image50.*
    :align: center
-
 
 **4. Navigate the GPS**
 

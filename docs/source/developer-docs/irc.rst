@@ -1,3 +1,5 @@
+.. _irc_notes:
+
 IRC Notes for |project_name|
 ============================
 

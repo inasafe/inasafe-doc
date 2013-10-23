@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/osm/image67.*
 
-
 Module 5: Field Papers
 ======================
 
@@ -49,7 +48,6 @@ reference to add them digitally into OpenStreetMap.
 .. image:: /static/training/beginner/osm/image69.*
    :align: center
 
-
 **2. How does Field Papers work?**
 
 If you follow the Field Papers process described above,
@@ -97,7 +95,7 @@ Now let’s learn how to create and use Field Papers.
 
 - Click on the various buttons to see what each does.  Note that in our
   example, we are presented with a two page set of Field Papers.  To add or
-  subtract a page, we can click on the :guilabel:`+` and :guilabel:`-` buttons 
+  subtract a page, we can click on the :guilabel:`+` and :guilabel:`-` buttons
   on the map.
 
 .. image:: /static/training/beginner/osm/image74.*
@@ -121,7 +119,6 @@ Now let’s learn how to create and use Field Papers.
 .. image:: /static/training/beginner/osm/image77.*
    :align: center
 
-
 - When you’re finished, click :guilabel:`Next`
 - Next give your map a name, and if you want, you can add notes to be
   printed on the map, such as questions you want to remember to answer or
@@ -140,7 +137,7 @@ Now let’s learn how to create and use Field Papers.
 .. image:: /static/training/beginner/osm/image79.*
    :align: center
 
-- When your print is ready, scroll to the bottom and click 
+- When your print is ready, scroll to the bottom and click
   :guilabel:`Download PDF`
   The Field Papers should begin downloading.   If it loads in your browser,
   you may need to save it by going to :menuselection:`File > Save`.
@@ -217,7 +214,7 @@ put checks on the fieldpapers box - Click :guilabel:`OK` then Restart your JOSM.
 
 - Open your browser and open Field Papers website: http://fieldpapers.org
 
-- Click :guilabel:`Watch` Menu - move your mouse to the bottom and click 
+- Click :guilabel:`Watch` Menu - move your mouse to the bottom and click
   :guilabel:`Snapshots` until your browser page looks like this:
 
 .. image:: /static/training/beginner/osm/image85.*
@@ -251,9 +248,9 @@ put checks on the fieldpapers box - Click :guilabel:`OK` then Restart your JOSM.
 - Currently you have Field Papers layers that can be used as a reference to
   add OSM data according to field result (survey) that has been done. It is
   important to remember to edit the data we need to download OSM data first
-  by clicking :menuselection:`File > Download from OSM`. You don’t have to 
-  re-draw the box to download because JOSM been reading your region according 
-  to the Field Papers layer automatically. Then Click :guilabel:`Download` 
+  by clicking :menuselection:`File > Download from OSM`. You don’t have to
+  re-draw the box to download because JOSM been reading your region according
+  to the Field Papers layer automatically. Then Click :guilabel:`Download`
   to download that area.
 
 .. image:: /static/training/beginner/osm/image89.*

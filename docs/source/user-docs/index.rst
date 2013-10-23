@@ -16,7 +16,7 @@ system.
    functionality
    impact_functions_doc
    postprocessors
-   using-qgis
+   using_qgis
    getting_involved
    writing_documentation
 

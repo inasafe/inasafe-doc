@@ -1,10 +1,9 @@
 .. image:: /static/training/beginner/qgis-inasafe/image1.*
 
-
 Disclaimer
 **********
 
-This document is initial draft and still in reviewing phase by these parties: 
+This document is initial draft and still in reviewing phase by these parties:
 
 • Badan Nasional Penanggulangan Bencana (BNPB)
 • Australia-Indonesia Facility for Disaster Reduction (AIFDR-AusAID)
@@ -18,11 +17,11 @@ License
 
 .. image:: /static/training/beginner/qgis-inasafe/image2.*
    :align: center
- 
+
 All contents and materials on this document is licensed as Public Domain. You
 can copy, modify, spread, and showing this module without permission.
 
-More information about Public Domain License: 
+More information about Public Domain License:
 http://wiki.creativecommons.org/Publicdomain/zero/1.0/LegalText_(Indonesian)
 
 Preface
@@ -51,7 +50,6 @@ development for contingency plan.
 
 We hope it can be useful.
 
-
 About Us
 ********
 Badan Nasional Penanggulangan Bencana (BNPB)
@@ -69,12 +67,11 @@ and formulator and Refugee (IDP) management to act quickly and appropriately and
 effectively and efficiently; and coordinating the implementation of disaster
 management activities in a planned, integrated, and comprehensive.
 
-http://bnpb.go.id 
-
+http://bnpb.go.id
 
 Australia-Indonesia Facility for Disaster Reduction (AIFDR)
 ===========================================================
- 
+
 .. image:: /static/training/beginner/qgis-inasafe/image4.*
    :align: center
 
@@ -86,9 +83,7 @@ Australia-Indonesia facility. The launch marks an important event in the strong
 relationship now shared by both countries and their united commitment to better
 prepare for and respond to natural disasters in Indonesia.
 
-
 http://aifdr.org
-
 
 Humanitarian OpenStreetMap Team (HOT)
 =====================================

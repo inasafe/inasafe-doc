@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 6: Working with Vector Data
 ==================================
 
@@ -41,7 +40,6 @@ Almost always, polygon layers will be at the bottom of your layer list, line
 layers in the middle, and point layers at the top.  You don’t generally want
 your polygons overlapping your lines and points.
 
-
 **2. Attribute Data**
 
 It’s important to know that the data you will be working with does not only
@@ -62,22 +60,21 @@ represent where objects are in space, but also tells you what those objects are.
 .. image:: /static/training/beginner/qgis-inasafe/image69.*
    :align: center
 
-- You will see a table with more data about the streets layer.  This extra data
-  is called *attribute data*.  The lines that you can see on your map represent
+- You will see a table with more data about the streets layer. This extra data
+  is called *attribute data*. The lines that you can see on your map represent
   where the streets go this is the *spatial data*. You will remember in JOSM
-  that there was the same division.  The points, lines, and shapes you drew tell
+  that there was the same division. The points, lines, and shapes you drew tell
   us **where**, but the tags, or attributes, tell us **what**.  These
   definitions are commonly used in GIS, so it’s essential to remember them!
 
 .. image:: /static/training/beginner/qgis-inasafe/image70.*
    :align: center
 
-- Take a look at the attribute table.  Each row in the table is associated with
-  one feature in the streets layer.  Each column contains one of the attributes.
+- Take a look at the attribute table. Each row in the table is associated with
+  one feature in the streets layer. Each column contains one of the attributes.
   If you select other layers and click on the :guilabel:`Open Attribute Table`
   button, you’ll see different tables.
 - Close the attribute table.
-
 
 **3. Adding Vector Data**
 
@@ -153,7 +150,6 @@ over a network or even the internet.
 
 .. image:: /static/training/beginner/qgis-inasafe/image75.*
    :align: center
-
 
 **4. Symbology**
 

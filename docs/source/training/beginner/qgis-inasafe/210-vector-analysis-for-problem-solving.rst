@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 10: Vector Analysis for Problem Solving
 ==============================================
 
@@ -240,14 +239,13 @@ meters of a major road.  Once again, we will use the Query Builder.
 **8.  Looking for Health Facilities**
 
 - Using the same approach, build a query for the lokasi_penting layer as shown:
-
-*"Fungsi" = 'Kesehatan'*
+  *"Fungsi" = 'Kesehatan'*
 
 **9. Buffering Roads**
 
 Okay, we’ve refined our data a bit so that it shows us the features we are
-interested in analyzing.  Remember that according to our criteria our land area
-should be within 300 meters of a main road and close to a health facility.  QGIS
+interested in analyzing. Remember that according to our criteria our land area
+should be within 300 meters of a main road and close to a health facility. QGIS
 allows us to calculate distances from any vector object, and we will use this
 functionality to help us reach a solution.
 

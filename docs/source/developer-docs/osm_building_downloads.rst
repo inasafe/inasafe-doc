@@ -1,4 +1,5 @@
-===============================
+.. _osm_building_downloads:
+
 Fetching Building data from OSM
 ===============================
 

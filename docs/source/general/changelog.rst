@@ -8,7 +8,7 @@ Changelog for version |release|
 
 * User Interface
 
-  * Improvements to |project_name| :ref:`panel <toolbar-dock>`: overhauled
+  * Improvements to |project_name| :ref:`panel <tb_dock>`: overhauled
     panel with improved messaging system.
   * Icon and branding overhaul: updated branding with a new Icon.
 

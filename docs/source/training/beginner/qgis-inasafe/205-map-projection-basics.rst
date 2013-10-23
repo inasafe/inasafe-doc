@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 5: Map Projection Basics
 ===============================
 
@@ -15,7 +14,6 @@ Module 5: Map Projection Basics
 We’ve talked a little bit about Coordinate Reference Systems (CRSs) previously,
 but haven’t covered it in depth.  In this chapter, we’ll look more at what a CRS
 means practically, and how it affects our work in QGIS.
-
 
 **1. Coordinate Reference System (CRS)**
 
@@ -58,7 +56,9 @@ To solve this, we’ll use a Projected Coordinate System (PCS) instead.  A PCS
 change and corrects it.  Therefore, to keep the scale constant, we should
 reproject our data to use a PCS.
 
-*Projection is the act of taking coordinates on a sphere (like the earth), and manipulating them so that they can be displayed on a flat surface.*
+.. note::
+   Projection is the act of taking coordinates on a sphere (like the earth),
+   and manipulating them so that they can be displayed on a flat surface.
 
 **2. “On the Fly” Reprojection**
 
@@ -132,7 +132,6 @@ When combining data from different sources, it’s important to remember that th
 might not be in the same CRS. “On the fly” reprojection helps you to display
 them together.
 
-
 **3. Saving a Dataset to Another CRS**
 
 It’s great that QGIS can reproject layers on the fly so that we can work with
@@ -170,7 +169,6 @@ projection.
   panel.  If you turn off “on the fly” reprojection, this layer will still be
   shown correctly, because it has been reprojected into the same CRS as the
   project (and the continents layer).
-
 
 **4. Creating Your Own Projection**
 

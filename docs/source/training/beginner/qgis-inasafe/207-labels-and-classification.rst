@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 7: Labels and Classification
 ===================================
 
@@ -26,7 +25,6 @@ various data can be useful for.
 If you would like to start with the examples used in this chapter, begin by
 opening the QGIS project :file:`sleman_2_6.qgs`.
 
-
 **1. Attribute Data**
 
 - Open the attribute table for the **POI_Sleman_OSM** layer by selecting it in
@@ -50,7 +48,6 @@ has the required attribute data.
 Different attributes are useful for different purposes. Some of them can be
 represented directly as text for the map user to see.  Next we’ll see how to use
 attributes as labels, so that users can see the text on your map.
-
 
 **2. The Label Tool**
 
@@ -134,7 +131,8 @@ Note the effects in the map:
 
 Now you can see why we usually need label buffers!
 
-- Reactivate the buffers by clicking in the same checkbox as before, and then clicking Apply.
+- Reactivate the buffers by clicking in the same checkbox as before,
+  and then clicking Apply.
 
 Back to the problem of the labels that overlap points.
 
@@ -148,11 +146,11 @@ Back to the problem of the labels that overlap points.
 .. image:: /static/training/beginner/qgis-inasafe/image126.*
    :align: center
 
-- Click :guilabel:`Apply`.  The labels no longer hover over the icons, but are “buffered” a short distance away:
+- Click :guilabel:`Apply`. The labels no longer hover over the icons,
+  but are “buffered” a short distance away:
 
 .. image:: /static/training/beginner/qgis-inasafe/image127.*
    :align: center
-
 
 **Labeling lines**
 
@@ -166,7 +164,8 @@ as the points, your results would look like this:
 This is not very useful! To make lines behave, we’ll need to edit some options.
 
 - Hide the **POI_Sleman_OSM** layer so that it doesn’t distract you.
-- Activate labels for the **Jalan_Sleman_OSM** layer as before. (Remember to use the Label tool on the toolbar, not the one in Label Properties!)
+- Activate labels for the **Jalan_Sleman_OSM** layer as before. (Remember to
+  use the Label tool on the toolbar, not the one in Label Properties!)
 - Set the font *Size to 9* so that you can see more labels.
 - Zoom in so that the scale is *around 1:10000*.
 - In the Label tool dialog’s Advanced tab, choose the following settings:
@@ -210,7 +209,6 @@ what you think seems more useful or what looks better.
 Now that you know how attributes can make a visual difference for your map, how
 about using them to change the symbology of objects themselves? That’s the topic
 for the next section!
-
 
 **3. Classification**
 

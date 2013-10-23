@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 12: Understanding InaSAFE
 ================================
 
@@ -16,12 +15,11 @@ Module 12: Understanding InaSAFE
 - Improving InaSAFE Output Map
 - Saving and Printing scenario result
 
-
 We have already seen InaSAFE in action. We’ve installed the plugin and have run
-a disaster analysis on a Jakarta flood scenario.  We learned about hazard and
-exposure data.  In this chapter, we’ll review what we’ve learned and go a bit
-further.  By now you should be pretty comfortable with QGIS, and your knowledge
-will continue to grow as you practice your new skills.  We will work through a
+a disaster analysis on a Jakarta flood scenario. We learned about hazard and
+exposure data. In this chapter, we’ll review what we’ve learned and go a bit
+further. By now you should be pretty comfortable with QGIS, and your knowledge
+will continue to grow as you practice your new skills. We will work through a
 disaster scenario more slowly to better understand InaSAFE, and in Unit 4 we
 will go to even deeper.
 
@@ -31,8 +29,8 @@ Let’s being by reviewing what we the inputs and outputs of InaSAFE - **hazard*
 **exposure**, and **impact**.  These terms are important for you to remember
 because the analysis process will always depend on these three things.
 
-**Hazards** (also called disasters) are what we call the data layers (layers) that
-describe the extent and magnitude of natural events (such as earthquakes,
+**Hazards** (also called disasters) are what we call the data layers (layers)
+that describe the extent and magnitude of natural events (such as earthquakes,
 tsunamis, volcanic eruptions) that could potentially cause an event or series
 of events that threaten and disrupt the lives and livelihoods of people.
 
@@ -224,7 +222,6 @@ layer will “be affected.”
 .. image:: /static/training/beginner/qgis-inasafe/image282.*
    :align: center
 
-
 **7. Improve the InaSAFE Output Map**
 
 We can improve our impact map by editing
@@ -276,5 +273,3 @@ To save the project:
 
 .. image:: /static/training/beginner/qgis-inasafe/image286.*
    :align: center
-
-  

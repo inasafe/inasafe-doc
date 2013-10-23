@@ -1,4 +1,5 @@
-==========
+.. _rm_milestones:
+
 Milestones
 ==========
 

@@ -1,4 +1,4 @@
-.. _toolbar-options:
+.. _toolbar_options:
 
 Options
 =======
@@ -85,13 +85,13 @@ The following options are available on the :guilabel:`Options Dialog`:
   to write them into a .keywords file. See :ref:`keywords` in the
   |project_name| User-Manual for more information on the keywords system.
 * :guilabel:`Logo for maps (must be x x y)`: This option is used to determine
-  custom logo that will be used in a pdf of your impact scenario project. See
-  :ref:`reports` in the |project_name| User-Manual for more information on the
-  reports. **NOTE**: image should have size X x Y.
-* :guilabel:`Report template`: This option is used to determine custom template
-  that will be used for generating a pdf of your impact scenario project. See
-  :ref:`reports` in the |project_name| User-Manual for more information on the
-  reports.
+  a custom logo that will be used in the pdf of your impact scenario project.
+  See :ref:`toolbar_reports` in the |project_name| User-Manual for more
+  information on the reports. **NOTE**: image should have size X x Y.
+* :guilabel:`Report template`: This option is used to determine a custom
+  template that will be used for generating a pdf of your impact scenario
+  project. See :ref:`toolbar_reports` in the |project_name| User-Manual for
+  more information on the reports.
 * :guilabel:`Enable developer mode`. With this option enabled,
   you can right click on the report area and use the webkit debug tools to
   debug the output. **This option is intended for advanced users only.**
@@ -99,7 +99,7 @@ The following options are available on the :guilabel:`Options Dialog`:
 
 .. note:: Pressing :guilabel:`Cancel` at any time will close the options
    dialog and any changes made will **not** be applied.
-   Pressing :guilabel:`Ok` at any time will close the options dialog and any
+   Pressing :guilabel:`OK` at any time will close the options dialog and any
    changes made **will** be applied immediately.
 
 .. note:: The exact button order shown on this dialog may differ depending on

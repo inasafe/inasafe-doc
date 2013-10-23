@@ -1,4 +1,5 @@
-==============
+.. _postprocessors:
+
 Postprocessors
 ==============
 

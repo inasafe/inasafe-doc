@@ -1,4 +1,5 @@
-===================
+.. _preparing_a_release:
+
 Preparing a release
 ===================
 

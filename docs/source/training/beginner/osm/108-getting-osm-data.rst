@@ -1,15 +1,14 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-
 Module 8: Getting OSM Data
 ==========================
 
 **Learning Objectives**
 
-- Downloading OpenStreetMap data from the Geofabrik website
+- Downloading OpenStreetMap data from the
+  `Geofabrik <http://download.geofabrik.de/openstreetmap/>`_ website
 - Downloading OpenStreetMap data in according to region and necessary data
   by using Hot-Export
-
 
 After you learn how to add and edit data in OpenStreetMap (OSM),
 now maybe you want the data obtained as a back up or if you want the
@@ -41,9 +40,9 @@ http://download.geofabrik.de/openstreetmap/
    :align: center
 
 - Then if you want to obtain the Indonesian data with shapefile (.shp)
-  format, you click on the :guilabel:`indonesia-latest.shp.zip` link and the 
-  file will be downloaded. There are several formats that can be downloaded one 
-  popular formats such as shapefile (shp) with  points, polyline, and  
+  format, you click on the :guilabel:`indonesia-latest.shp.zip` link and the
+  file will be downloaded. There are several formats that can be downloaded one
+  popular formats such as shapefile (shp) with  points, polyline, and
   polygon layer.
 
 You can check the last time data is updated. Please note,
@@ -62,11 +61,10 @@ attribute, you can use the Hot-Exports data download service.
 .. image:: /static/training/beginner/osm/image134.*
    :align: center
 
-
 - To obtain the data from this website you must have an account first,
   if you don’t have account you must create one. The first step by clicking
-  :guilabel:`Create Account` in the bottom left corner, then fill your email, 
-  password, and confirmation password, after filling with complete click 
+  :guilabel:`Create Account` in the bottom left corner, then fill your email,
+  password, and confirmation password, after filling with complete click
   :guilabel:`Create Account`.  Then you will see a message like this *“A message
   with a confirmation link has been sent to your email address. Please open the
   link to activate your account.”* indicating that your account has been
@@ -82,7 +80,7 @@ attribute, you can use the Hot-Exports data download service.
    :align: center
 
 - If you have successfully successfully into the website,
-  to obtain the data you want click :guilabel:`New Job`, then fill in your name 
+  to obtain the data you want click :guilabel:`New Job`, then fill in your name
   and the job description. Furthermore, to select the area you are getting,
   look at the box OpenStreetMap maps of the box you can select the area you
   want to get with the highlight area to choose select area with the arrow
@@ -102,8 +100,8 @@ attribute, you can use the Hot-Exports data download service.
 - Then the server will immediately process your request. The process depends
   on the area you choose and the server capacity. After that you can select
   the file format you want to download such as ESRI Shapefile. All download
-  requests that you create will appear on the :guilabel:`Job`. So if any time 
-  you want to download on the same area, you can search the name job for the 
+  requests that you create will appear on the :guilabel:`Job`. So if any time
+  you want to download on the same area, you can search the name job for the
   previous job name that you have created and you can download it again without
   having to click on :guilabel:`New Job`.
 

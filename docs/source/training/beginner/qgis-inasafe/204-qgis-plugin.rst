@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 4: QGIS Plugin
 =====================
 
@@ -43,7 +42,6 @@ and activate a new plugin in the next section.
 .. image:: /static/training/beginner/qgis-inasafe/image43.*
    :align: center
 
-
 **2. Installing Plugins**
 
 There are many more plugins, but they must first be downloaded.  To download a
@@ -58,8 +56,6 @@ Note that plugins which have already been downloaded can be activated or
 deactivated from the :menuselection:`Manage Plugins` menu.  If it has not yet
 been downloaded, downloading a plugin from the
 :menuselection:`Fetch Python Plugins` menu will automatically activate it.
-
-
 **3. The OpenLayers Plugin**
 
 The OpenLayers plugin allows you to view various web maps as a layer in QGIS.
@@ -115,7 +111,6 @@ from within QGIS.  Follow along and we’ll see what this means.
 
 .. image:: /static/training/beginner/qgis-inasafe/image52.*
    :align: center
-
 
 - Adding a layer such as Bing Aerial Imagery will change the Coordinate
   Reference System, or CRS, of your project. Essentially this means that your

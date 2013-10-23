@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-
 Module 6: Editing OpenStreetMap with JOSM
 =========================================
 
@@ -12,7 +11,6 @@ Module 6: Editing OpenStreetMap with JOSM
 - Editing Tag
 - Upload OSM data
 - Save OSM files
-
 
 In Module 3 you installed JOSM and began drawing your first points, lines,
 and shapes. You added presets to these objects in order to attach
@@ -69,11 +67,11 @@ map.
   and add to the OpenStreetMap data.
 - To the right of the map window are a series of panels,
   which each do something different. Typically when you first install JOSM
-  several panels are shown by default, such as :guilabel:`Layers`, 
-  :guilabel:`Properties`, and :guilabel:`Selection`. When you select a point, 
+  several panels are shown by default, such as :guilabel:`Layers`,
+  :guilabel:`Properties`, and :guilabel:`Selection`. When you select a point,
   line, or shape in the map window, it will be shown in the :guilabel:`Selection`
-  panel. Information about the object will be shown in the :guilabel:`Properties` 
-  panel, and the username of the author of that object will be shown in the 
+  panel. Information about the object will be shown in the :guilabel:`Properties`
+  panel, and the username of the author of that object will be shown in the
   :guilabel:`Authors` panel.
 
 .. image:: /static/training/beginner/osm/image91.*
@@ -82,7 +80,7 @@ map.
 - On the left side of JOSM, there are several toolbars,
   which consist of many buttons. At the top of this bar are different buttons
   which change what you can do with your mouse. You are already familiar with
-  the first two, the :guilabel:`Select` tool and the :guilabel:`Draw tool`. 
+  the first two, the :guilabel:`Select` tool and the :guilabel:`Draw tool`.
   The other tools make it easier to zoom in, delete an object, draw a shape,
   or create a line that is parallel to another line.
 - Below these tools are many more buttons. These buttons control what you
@@ -105,16 +103,16 @@ map.
 
 - Because our map window is already showing the area that we want to edit,
   it is easy to download the OpenStreetMap data for this area. Click on
-  :menuselection:`File` in the top left corner of JOSM and click 
+  :menuselection:`File` in the top left corner of JOSM and click
   :menuselection:`Download from OSM`. This will open up the :guilabel:`Download`
-  window. You can access this window more simply by clicking on the 
+  window. You can access this window more simply by clicking on the
   :guilabel:`Download` button, shown here:
 
 .. image:: /static/training/beginner/osm/image93.*
    :align: center
 
 - When the download window opens, you should see a map with a pink box drawn
-  on it. If you don’t see the map, click on the tab marked 
+  on it. If you don’t see the map, click on the tab marked
   :guilabel:`Slippy map`
 
 .. image:: /static/training/beginner/osm/image94.*
@@ -136,7 +134,7 @@ map.
 - Open your GPS file and downloaded data from OpenStreetMap,
   if you haven’t already. You may notice that when you open a file,
   or add Field Papers, or download from OpenStreetMap, another item is added
-  to the :guilabel:`Layers` panel on the right side of JOSM. Your 
+  to the :guilabel:`Layers` panel on the right side of JOSM. Your
   :guilabel:`Layers` panel may look something like this:
 
 .. image:: /static/training/beginner/osm/image95.*
@@ -148,7 +146,7 @@ map.
   the GPS, and “30 Juni 2011.gpx” is the track from the GPS. Finally,
   “Field Papers” is the layer created when I added my Field Papers into JOSM.
   You can add the Bing imagery layer, which shows satellite imagery,
-  by clicking :menuselection:`Imagery` on the top menu of JOSM and selecting 
+  by clicking :menuselection:`Imagery` on the top menu of JOSM and selecting
   :menuselection:`Bing Sat`.
 - To hide one of these layers, select one of them with your mouse and click
   the :guilabel:`Show/Hide` button that looks like this:
@@ -183,10 +181,10 @@ map.
   or you can use buttons on the keyboard as shortcuts.  The shortcut keys
   will be indicated in parentheses below.
 - If you want to move a point, line, or shape, use the :`guilabel:`Select` tool
-  (:kbd:`S`).Click on an object and drag it where it should be. This can be 
+  (:kbd:`S`).Click on an object and drag it where it should be. This can be
   used to correct the location of items that have been put in the wrong place.
 - Use the :guilabel:`Draw` tool (:kbd:`A`) to draw new points, lines,
-  and shapes. Describe these objects by selecting from the 
+  and shapes. Describe these objects by selecting from the
   :menuselection:`Presets` menu, as you did in Module 3.
 
 .. image:: /static/training/beginner/osm/image99.*
@@ -194,14 +192,14 @@ map.
 
 - Remember that your GPS points and your Field Papers don’t automatically go
   into OpenStreetMap. You need to add them to the OSM map digitally,
-  using the :guilabel:`Draw` tool. But your points, tracks, and Field Papers 
+  using the :guilabel:`Draw` tool. But your points, tracks, and Field Papers
   can be seen in the background as a guide.
 - Let’s assume that you saved a waypoint on your GPS named 030,
   and you wrote in your notebook that 030 is a school. To add this point into
-  OpenStreetMap, you should select the :menuselection:`Draw` tool, and 
-  double-click on top of point 030 in your map window. This will create a point. 
-  Then go to the :menuselection:`Presets` menu, and find the preset for school. 
-  Enter the name of the school and click :guilabel:`Apply Preset`. 
+  OpenStreetMap, you should select the :menuselection:`Draw` tool, and
+  double-click on top of point 030 in your map window. This will create a point.
+  Then go to the :menuselection:`Presets` menu, and find the preset for school.
+  Enter the name of the school and click :guilabel:`Apply Preset`.
   Do the same to add lines and shapes.
 
 .. image:: /static/training/beginner/osm/image100.*
@@ -212,7 +210,7 @@ map.
 - When you draw a point, line, or shape, it has a location,
   but no information about what it is. In other words, we know where it is,
   but not what it is. Before now, we have been using items from the
-  :menuselection:`Presets` menu to define what it is.  The way OpenStreetMap 
+  :menuselection:`Presets` menu to define what it is.  The way OpenStreetMap
   knows what an object is is by using tags.
 - A tag is like a label that you can put on something. For example,
   if I draw a square, it’s only a square. But then I add multiple tags to it
@@ -229,21 +227,20 @@ map.
 .. image:: /static/training/beginner/osm/image101.*
    :align: center
 
-
 *4.1. Editing Tags*
 
 - You can add, edit, and delete these tags from this panel. The tags are
   traditionally in English however, so it is often better to use the
-  :menuselection:`Presets` menu.  When you add or change tags, such as primary 
+  :menuselection:`Presets` menu.  When you add or change tags, such as primary
   highway versus footpath, the style will change according to the tag.
 - To edit an existing object:
 
 1. Select it.
 2. Edit the tags in one of two ways:
 
-  a) You can use the :menuselection:`Presets` menu to open up a form and edit 
+  a) You can use the :menuselection:`Presets` menu to open up a form and edit
      the information,  or
-  b) you can edit the tags directly in the :guilabel:`Properties` window on the 
+  b) you can edit the tags directly in the :guilabel:`Properties` window on the
      right.
 
 .. image:: /static/training/beginner/osm/image102.*
@@ -254,8 +251,8 @@ map.
 *Tagging Nodes When You Want to Tag Lines or Polygons.*
 
 - When you are adding tags to a node, you select the node and then add your
-  tags (or use the :menuselection:`presets` menu).  When you want to add tags 
-  to a line or polygon, it is important that you select the line, and NOT the 
+  tags (or use the :menuselection:`presets` menu).  When you want to add tags
+  to a line or polygon, it is important that you select the line, and NOT the
   nodes that make up the line.
 - A common mistake is to use the JOSM select tool to draw a box around an
   object, which causes everything, both the line and the nodes to be selected,
@@ -268,15 +265,14 @@ map.
 - For more information about tags and presets can be found on the
   Intermediate OpenStreetMap Guide Module 4: XML and Preset in JOSM.
 
- 
 **5. Upload Changes**
 
 - After you have made a couple of changes to improve the map,
   let’s save those changes to OpenStreetMap. To save the changes,
   we need to be connected to the internet, because we are in fact uploading
   the changes to OpenStreetMap.
-- Click :menuselection:`File` on the top menu, and then click 
-  :menuselection:`Upload Data`. This will open up the upload window. You can 
+- Click :menuselection:`File` on the top menu, and then click
+  :menuselection:`Upload Data`. This will open up the upload window. You can
   access this window more simply by clicking on the upload button, shown here:
 
 .. image:: /static/training/beginner/osm/image104.*
@@ -325,15 +321,15 @@ the OpenStreetMap Map with the following steps:
   that you can edit it offline, and then upload it later when you have
   internet access again.
 - To save an OSM file, make sure that it is the active layer in the the
-  Layers panel. Click :menuselection:`File` on the top menu, and click 
-  :menuselection:`Save`. Choose a location for the file and give it a name. 
+  Layers panel. Click :menuselection:`File` on the top menu, and click
+  :menuselection:`Save`. Choose a location for the file and give it a name.
   You can also save by clicking this button:
 
 .. image:: /static/training/beginner/osm/image107.*
    :align: center
 
 - You can now close JOSM and your data will be saved. When you want to open
-  the file again, simply open JOSM, go to the :menuselection:`File` menu, and 
+  the file again, simply open JOSM, go to the :menuselection:`File` menu, and
   click :menuselection:`Open...`
 
 **7. Choosing a variety of options and menu by using the keyboard**
@@ -345,7 +341,7 @@ keyboard shortcuts and their functions are generally used:
 
 - :kbd:`S`: Select tool (select objects)
 - :kbd:`A`: Draw tool (draw objects)
-- :KBD:`Z`: Zoom tool
+- :kbd:`Z`: Zoom tool
 - :kbd:`Ctrl + >` : Zoom out
 - :kbd:`Ctrl + <` : Zoom in
 - :kbd:`P`: Split Way

@@ -1,4 +1,5 @@
-==================
+.. _rm_terms_of_reference:
+
 Terms of Reference
 ==================
 

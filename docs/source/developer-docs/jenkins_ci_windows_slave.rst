@@ -1,4 +1,5 @@
-============================================
+.. _jenkins_windows_slave:
+
 Set up of Windows 'slave' builds for Jenkins
 ============================================
 

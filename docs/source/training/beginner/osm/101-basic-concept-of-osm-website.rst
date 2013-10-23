@@ -1,9 +1,7 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-
 Module 1: Basic Concept of OpenStreetMap Website
 ================================================
-
 
 **Learning Objectives**
 
@@ -88,7 +86,6 @@ at any time, totally free.
    :align: center
 
    *Digital Maps with OpenStreetMap.*
-
 
 OpenStreetMap is digital, which makes it extremely useful for us,
 and it is shared, which means that everybody benefits from the work of

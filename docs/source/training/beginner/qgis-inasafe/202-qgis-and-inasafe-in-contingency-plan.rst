@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 2: QGIS and InaSAFE in Contingency Plan
 ==============================================
 
@@ -65,13 +64,13 @@ visualize, manage, edit, analyze data, and compose printable maps. QGIS is
 awesome because:
 
 - It’s completely free.  It doesn’t cost anything.
-- It’s free, as in liberty.  If you think a feature is missing, you can sponsor 
-  the development of a feature, or add it yourself if you are familiar with 
+- It’s free, as in liberty.  If you think a feature is missing, you can sponsor
+  the development of a feature, or add it yourself if you are familiar with
   programming.
 - It’s constantly developing and improving.  Because many people continue adding
   features, it keeps getting better.
-- Extensive help and documentation is available. If you have problems you can 
-  always turn to the software documentation, other QGIS users, or even the 
+- Extensive help and documentation is available. If you have problems you can
+  always turn to the software documentation, other QGIS users, or even the
   developers.
 
 QGIS has many plugins which extend the core functionality of the software. One
@@ -82,7 +81,6 @@ refuge, evacuation routes, areas likely to be damaged, and more.
 
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
    :align: center
-
 
 InaSAFE provides overviews of potential disaster scenarios, of their outcomes,
 as well as maps which can aid decision makers when disaster strikes.  Maps are

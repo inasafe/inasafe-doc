@@ -1,3 +1,4 @@
+.. _writing_api_doc:
 
 Writing API documentation
 =========================

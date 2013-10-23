@@ -6,7 +6,7 @@ Toolbar
 This Section contains the explanation of the different icons in the Toolbar
 and the function behind the icons.
 
-.. _toolbar_dock:
+.. _tb_dock:
 
 Toggle |project_name| Dock
 --------------------------
@@ -23,9 +23,9 @@ dock you are able to move it around your screen. Dock and undock it wherever
 you want to have it and keep it even as a separated window.
 
 You can find more Information about the dock itself in the
-:ref:`toolbar-dock` section.
+:ref:`toolbar_dock` section.
 
-.. _toolbar_keyword_editor:
+.. _tb_keyword_editor:
 
 |project_name| Keyword Editor
 -----------------------------
@@ -41,7 +41,7 @@ The Keyword Editor button opens the Keyword editor which is described in
 :ref:`keywords`. Basically it enables you to easily edit the
 Keywords needed for |project_name| to create useful output.
 
-.. _toolbar_reset_dock:
+.. _tb_reset_dock:
 
 Reset Dock
 ----------
@@ -56,7 +56,7 @@ Reset Dock
 The Name is self speaking. In Case of any drawing issue inside the dock this
 button just resets/reloads the dock to its initial state.
 
-.. _toolbar_options:
+.. _tb_options:
 
 |project_name| Options
 ----------------------
@@ -69,9 +69,9 @@ button just resets/reloads the dock to its initial state.
    |project_name| Options
 
 This button opens the Options window which is described in
-:ref:`toolbar-options`
+:ref:`toolbar_options`
 
-.. _toolbar_impact_functions_browser:
+.. _tb_impact_functions_browser:
 
 |project_name| Impact Functions Browser
 ---------------------------------------
@@ -89,7 +89,7 @@ It basically enables you to filter and browse impact functions that are
 available in |project_name|. More information about that topic can be found
 in :ref:`impact_functions`.
 
-.. _toolbar_minimum_needs:
+.. _tb_minimum_needs:
 
 |project_name| Minimum Needs Tool
 ----------------------------------
@@ -105,7 +105,7 @@ This tool will calculated minimum needs for evacuated people.
 
 For a guidance how to use this tool take a look in :ref:`minimum_needs`.
 
-.. _toolbar_converter:
+.. _tb_converter:
 
 |project_name| Converter
 ------------------------
@@ -121,7 +121,7 @@ This tool will convert an earthquake 'shakemap' that is in grid xml format
 to a GeoTIFF file.
 For more detailed information look at :ref:`converter`.
 
-.. _toolbar_batch_runner:
+.. _tb_batch_runner:
 
 |project_name| Batch Runner
 ---------------------------
@@ -137,7 +137,7 @@ The Batch Runner lets you load saved scenarios (:ref:`save_scenario`) and
 batch run them in one go.
 You can find more information about using this tool at :ref:`batch_runner`
 
-.. _toolbar_save_scenario:
+.. _tb_save_scenario:
 
 Save current scenario
 ---------------------
@@ -150,12 +150,12 @@ Save current scenario
    |project_name| Save Current Scenario
 
 This is the tool you need to prepare/save scenarios for the
-:ref:`toolbar_batch_runner` Tool. It lets you save the current visible scenario
+:ref:`tb_batch_runner` Tool. It lets you save the current visible scenario
 in QGIS to a :file:`.txt` file. This file you can open as a scenario again in
 Batch runner and recalculate it.
 A more detailed description is available in :ref:`batch_runner`
 
-.. _toolbar_openstreetmap_downloader:
+.. _tb_openstreetmap_downloader:
 
 |project_name| OpenStreetMap Downloader
 ---------------------------------------

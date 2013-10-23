@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 3: The Basics of QGIS
 ============================
 
@@ -24,7 +23,6 @@ Note that if you followed along with the instructions in the introduction to
 this guide, you may have already installed QGIS and InaSAFE.  If so,
 feel free to skip ahead to section three in this chapter.  Otherwise,
 let’s start here and get QGIS installed.
-
 
 **1. Get QGIS**
 
@@ -63,7 +61,6 @@ let’s start here and get QGIS installed.
 
 - When the file is downloaded, run it and follow the instructions to install
   QGIS.
-
 
 **2. Install QGIS**
 
@@ -112,7 +109,6 @@ let’s start here and get QGIS installed.
 
 .. image:: /static/training/beginner/qgis-inasafe/image20.*
    :align: center
-
 
 **3. The QGIS Layout**
 
@@ -243,7 +239,6 @@ the longitude and latitude of your mouse cursor.
 This may not all be clear right now, but as you progress in your knowledge
 of GIS is will make more and more sense.
 
-
 **4. Add Vector Layer**
 
 Now we will add an additional layer containing roads to our project.
@@ -272,7 +267,6 @@ Now we will add an additional layer containing roads to our project.
 .. image:: /static/training/beginner/qgis-inasafe/image32.*
    :align: center
 
-
 **5. Basic QGIS Tools**
 
 We’ve already taken a look at the QGIS toolbar and seen the tools for
@@ -297,7 +291,6 @@ important thing for now is to start getting familiar with QGIS.
 |.. image:: /static/training/beginner/qgis-inasafe/image39.*  | Select single feature                | Select a feature in selected     |
 |                                                             |                                      | layer                            |
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
-
 
 **6. Navigate the Map**
 

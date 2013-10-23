@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/osm/image1.*
 
-
 Disclaimer
 **********
 
@@ -24,7 +23,6 @@ You can copy, modify, spread, and showing this module without permission.
 More information about Public Domain License:
 http://wiki.creativecommons.org/Publicdomain/zero/1.0/LegalText_(Indonesian)
 
-
 About Us
 ********
 Badan Nasional Penanggulangan Bencana (BNPB)
@@ -44,7 +42,6 @@ planned, integrated, and comprehensive.
 
 http://bnpb.go.id
 
-
 Australia-Indonesia Facility for Disaster Reduction (AIFDR)
 ===========================================================
 
@@ -59,9 +56,7 @@ event in the strong relationship now shared by both countries and their
 united commitment to better prepare for and respond to natural disasters in
 Indonesia.
 
-
 http://aifdr.org
-
 
 Humanitarian OpenStreetMap Team (HOT)
 =====================================

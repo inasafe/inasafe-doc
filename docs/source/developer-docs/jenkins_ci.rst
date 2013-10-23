@@ -1,4 +1,5 @@
-===========================================
+.. _jenkins_installation:
+
 Continuous Integration Testing with Jenkins
 ===========================================
 

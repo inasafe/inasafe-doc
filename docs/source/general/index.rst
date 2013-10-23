@@ -1,4 +1,4 @@
-.. about_:
+.. _about:
 
 About |project_name|
 ====================
@@ -26,5 +26,5 @@ If you cannot find these issues happening anymore, please report back.
    screenshots
    known_issues
    changelog
-   
+
 

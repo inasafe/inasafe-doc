@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/qgis-inasafe/image6.*
 
-
 Module 8: Working with Raster Data
 ==================================
 
@@ -24,7 +23,6 @@ will start to become blurry, just as if you opened a photo on your computer and
 zoomed in very close.  As we’ll see in this chapter, however, a raster image can
 mean more than just a photograph from the sky. Follow along and we’ll learn all
 about rasters!
-
 
 **1. Loading Raster Data**
 
@@ -64,7 +62,6 @@ The raster should display nicely underneath your vector data layers.
 
 .. image:: /static/training/beginner/qgis-inasafe/image150.*
    :align: center
-
 
 **2. Changing Raster Symbology**
 

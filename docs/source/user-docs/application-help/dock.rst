@@ -1,4 +1,4 @@
-.. _toolbar-dock:
+.. _toolbar_dock:
 
 Using |project_name|
 ====================

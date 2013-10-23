@@ -1,6 +1,5 @@
 .. image:: /static/training/beginner/osm/image6.*
 
-
 Module 7: Imagery Offset
 ========================
 
@@ -148,8 +147,8 @@ their GPS tracks to the OSM database, we can download them and use them to
 align our imagery.
 
 - Click on the :guilabel:`Download` button.
-- Check the box next to :guilabel:`Raw GPS Data` near the top of the 
-  :guilabel:`Download` window. Select your area and click 
+- Check the box next to :guilabel:`Raw GPS Data` near the top of the
+  :guilabel:`Download` window. Select your area and click
   :guilabel:`Download`.
 
 .. image:: /static/training/beginner/osm/image112.*
@@ -167,7 +166,7 @@ align our imagery.
 .. image:: /static/training/beginner/osm/image114.*
    :align: center
 
-- To adjust an imagery layer, click on the :guilabel:`Adjust imagery offset` 
+- To adjust an imagery layer, click on the :guilabel:`Adjust imagery offset`
   button at the top of JOSM.
 
 .. image:: /static/training/beginner/osm/image115.*
@@ -182,10 +181,10 @@ align our imagery.
    :align: center
 
 - If you like, you can save these offset settings by entering a bookmark
-  name and then clicking :guilabel:`OK`.  You can then automatically apply 
-  the same settings later by going to :menuselection:`Imagery ‣ Imagery offset` 
+  name and then clicking :guilabel:`OK`.  You can then automatically apply
+  the same settings later by going to :menuselection:`Imagery ‣ Imagery offset`
   and clicking on your bookmark.
-- If you do not want to save the offset, simply click :guilabel:`OK` without 
+- If you do not want to save the offset, simply click :guilabel:`OK` without
   entering a bookmark name.
 
 What if there are no GPS tracks on OpenStreetMap, and you don’t have a GPS?
@@ -241,7 +240,7 @@ and should always check for it before mapping an area.  To help with this
 problem, some smart people created a plugin that allows users to save offset
 information in a database and share it with others.  Let’s see how this works:
 
-- Open the :guilabel:`Preferences` menu in JOSM, and click on the 
+- Open the :guilabel:`Preferences` menu in JOSM, and click on the
   :guilabel:`Plugins` tab.
 
 .. image:: /static/training/beginner/osm/image119.*
@@ -252,7 +251,7 @@ information in a database and share it with others.  Let’s see how this works:
 .. image:: /static/training/beginner/osm/image120.*
    :align: center
 
-- Click :guilabel:`OK`.  You will need to restart JOSM to finish the plugin 
+- Click :guilabel:`OK`.  You will need to restart JOSM to finish the plugin
   installation.
 
 In the same way that you are able to save offsets as bookmarks,
@@ -309,7 +308,6 @@ this database.
 
 .. image:: /static/training/beginner/osm/image126.*
    :align: center
-
 
 *4.3. Add Imagery Offset to the Database*
 

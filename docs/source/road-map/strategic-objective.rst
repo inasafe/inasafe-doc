@@ -1,4 +1,5 @@
-===================
+.. _rm_strategic_objective:
+
 Strategic Objective
 ===================
 
