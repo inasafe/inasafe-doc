@@ -96,7 +96,7 @@ The basic construct of a "perfect" issue report will look like this
 
  # Expected outcome
  People working with this feature would have the following benefits of it:
- As already done in commit @ae56eg which is documented in
+ As already done in commit @ae56eb which is documented in
  AIFDR/inasafe-doc@4a78fe i reference here
 
 
