@@ -1,9 +1,3 @@
-..
-  This is basically a Copy & Paste Section from user-manual/options.rst but
-  it should be kept here to have the socialisation short-manual available as
-  compact as possible. The Option Section should be kept up to date in the
-  User manual and should be copy/pasted after updating it there.
-
 .. _helpful-hints-and-tips:
 
 Helpful Hints And Tips
@@ -60,8 +54,8 @@ Frequently Asked Questions
 No, the software is completely Free and Open Source.
 
 **What license is InaSAFE published under?**
-|project_name| is published under the GPL version 2 license,
-the full text of which is available at www.gnu.org/licenses/gpl-2.0.txt.
+|project_name| is published under the GPL version 3 license,
+the full text of which is available at www.gnu.org/licenses/gpl-3.0.txt.
 Under the terms of the license of you may freely copy,
 share and modify the software, as long as you make it available under the
 same license.
@@ -107,7 +101,3 @@ get the new plugin repo added to your repo list. To fix this you can do:
    close and open QGIS to force an update.
 #. In the :guilabel:`python plugin manager` main tab now you should find
    |project_name| available
-
-Thank you for attending this course.
-If you would like to contact me directly my email address is
-kristy.vanputten@gmail.com

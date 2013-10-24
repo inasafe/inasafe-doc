@@ -17,7 +17,7 @@ To install |project_name|, use the plugin manager in QGIS:
 Search for '|project_name|', select it and click the install button.
 The plugin will now be added to your plugins menu.
 
-For more information :doc:`../training/socialisation/introduction-of-qgis`
+For more information :doc:`../training/socialisation/introduction_of_qgis`
 
 
 From InaSAFE test repository

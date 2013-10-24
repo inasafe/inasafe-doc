@@ -10,9 +10,10 @@ will be using.
 
 Current Functionality of |project_name|
 ---------------------------------------
+
 As explained in the previous section, |project_name| needs to have a hazard
-layer and a exposure layer to create an impact layer. Currently
-|project_name| impact functions relies on the following datasets:
+layer and a exposure layer to create an impact layer.
+Currently |project_name| impact functions relies on the following datasets:
 
 **Hazard:**
 
@@ -40,17 +41,15 @@ Structures     Polygon           Structure type      type                text
 Structures     Point             Structure type      type                text
 =============  ================  ==================  ==================  =======================
 
-
-.. note:: For information on what is a Raster or a Vector, as well as the difference
-   between Vector objects please go to :doc:`rastervsvector`
-
+.. note:: For information on what is a Raster or a Vector,
+   as well as the difference between Vector objects please go to
+   :doc:`rastervsvector`
 
 |project_name| is a dynamic tool that can easily be adapted to other types of
-hazard and exposure layers.  The beauty of |project_name| being open source,
-is that anyone that has a background in programming would be able to make
-their own Impact function.
+hazard and exposure layers.
+The beauty of |project_name| being open source, is that anyone that has a
+background in programming would be able to make their own Impact function.
 For more information see take a look at :ref:`impact_function_tutorial`
-
 
 Exposure Layers Used in Practical
 ---------------------------------
@@ -86,37 +85,40 @@ The raster pixel size is 100m by 100m.
 Structures
 ..........
 
-:Name: 	|OSM|
+:Name: |OSM|
 :InaSAFE: buildings
-:Source: 	http://openstreetmap.org
+:Source: http://openstreetmap.org
 :License: `Open Data Commons Open Database License (ODbL) <http://opendatacommons.org/licenses/odbl/>`_
 :Coverage: World - incomplete
-:About:  	OpenStreetMap is a collaborative project to create a free
-    editable map of the world. Two major driving forces behind the
-    establishment and growth of |OSM| have been restrictions on use or
-    availability of map information across much of the world and the advent
-    of inexpensive portable satellite navigation devices.
+:About:  OpenStreetMap is a collaborative project to create a free
+    editable map of the world.
+    Two major driving forces behind the establishment and growth of |OSM|
+    have been restrictions on use or availability of map information across
+    much of the world and the advent of inexpensive portable satellite
+    navigation devices.
 
 .. image:: /static/training/socialisation/004_openstreetmap.png
    :align: center
 
 |AusAID| has been working with the Humanitarian OpenStreetMap Team over the
-last 2 years in piloting and training OpenStreetMap in Indonesia.  The result
-so far is over 1,300,000 buildings have been mapped. The scenarios we will look
-at within this workshop are situated in Jakarta, Merapi (Central Java and
-Yogyakarta), Sumatra (specifically Padang) and Maumere,
-Flores. Each one of these areas has a different OpenStreetMap data
-collection methodology. Below will explain the methodologies used in Jakarta
-and Padang.
+last 2 years in piloting and training OpenStreetMap in Indonesia.
+The result so far is over 1,300,000 buildings have been mapped.
+The scenarios we will look at within this workshop are situated in Jakarta,
+Merapi (Central Java and Yogyakarta), Sumatra (specifically Padang) and
+Maumere, Flores.
+Each one of these areas has a different OpenStreetMap data collection
+methodology.
+Below will explain the methodologies used in Jakarta and Padang.
 
 :Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (Nationals
     Disaster Managers) with assistance from |AIFDR|, |AusAID|, the World Bank,
     UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held
     workshops in each of Jakarta's 6 Districts in order to help Village Heads
-    map their community boundaries and major infrastructure. Over 500
-    representatives from Jakarta's 267 Villages participated in these
+    map their community boundaries and major infrastructure.
+    Over 500 representatives from Jakarta's 267 Villages participated in these
     workshops and have mapped an impressive 6,000 buildings and all 2,668
-    sub-village boundaries (Rukun Warga-RW). Go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
+    sub-village boundaries (Rukun Warga-RW).
+    Go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
 
 :Padang: Post Haiti's earthquake in 2010, there was a huge effort to map Haiti
     through |OSM|, coordinating this effort was very hard,
@@ -207,7 +209,7 @@ Earthquake
     http://earthquake.usgs.gov/earthquakes/map/
 
 Pre-event / scenario based shakemaps need to be modelled by earthquake
-specialist.
+specialists.
 
 .. image:: /static/training/socialisation/008_earthquake.png
    :align: center
@@ -230,5 +232,3 @@ Tsunami
 
 .. image:: /static/training/socialisation/009_tsunami.png
    :align: center
-
-

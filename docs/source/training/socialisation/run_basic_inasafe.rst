@@ -201,10 +201,11 @@ Buildings Affected
 17. Notice that if you click on the *building* the people option is not available,
 this is because *people* is not checked in the **Layer List**.
 
-.. note:: If you want to be able to select layers within the |project_name| panel that are
-   not checked in the **Layer List** you can modify the |project_name| options. For more
-   information :doc:`../../user-docs/application-help/options`
-   We will also go through the option menu in :doc:`helpful-hints-and-tips`
+.. note:: If you want to be able to select layers within the
+   |project_name| panel that are not checked in the **Layer List** you can
+   modify the |project_name| options.
+   For more information :doc:`../../user-docs/application-help/options`.
+   We will also go through the option menu in :doc:`helpful_hints_and_tips`
 
 18. :guilabel:`Run` the new combination.
 

@@ -56,7 +56,6 @@ Select Feature and Save
 .. image:: /static/training/socialisation/062_merapi_attribute.*
    :align: center
 
-
 9. :guilabel:`Zoom to Selection` to zoom in further, continue until you get to an extent
 	similar to the one below. (The yellow triangle is Merapi)
 
@@ -85,13 +84,12 @@ time to examine the ‘dot’.
 16. Use the :guilabel:`Measure line` tool to find out how far away is the closest
     population hub (brown areas on the map)
 
-.. Note:: For the Identify feature and Measure line tool to work you need to have
-   the Merapi layer highlighted in the layer window. Which can be accomplished by
-   clicking once on the layer in the Layer List.
+.. note:: For the Identify feature and Measure line tool to work you need to
+   have the Merapi layer highlighted in the layer window. Which can be
+   accomplished by clicking once on the layer in the Layer List.
 
 .. image:: /static/training/socialisation/065_merapi_nokeyword.*
    :align: center
-
 
 Keywords
 --------
@@ -108,7 +106,6 @@ layer, so lets make one!
 .. image:: /static/training/socialisation/066_merapi_keyword.*
    :align: center
 
-
 Configure and Run |project_name|
 --------------------------------
 
@@ -123,7 +120,7 @@ Before we run |project_name| again, we have to tell |project_name| what the haza
 zone is!
 
 23. Click on :guilabel:`...` (impact function editor) next to *Need evacuation*
-As a default |project_name| has made 3 hazard areas:
+    As a default |project_name| has made 3 hazard areas:
 
 * Vent -3 km
 * 3-5 km
@@ -132,7 +129,7 @@ As a default |project_name| has made 3 hazard areas:
 .. image:: /static/training/socialisation/067_volcano_config.*
    :align: center
 
-.. Note:: that its written 3,5,10 so if you wanted the categories to be Vent-5,
+.. note:: that its written 3,5,10 so if you wanted the categories to be Vent-5,
    5-10 and then 10-25 then you would type  5,10,25
 
 24. :guilabel:`OK`
@@ -146,7 +143,7 @@ As a default |project_name| has made 3 hazard areas:
 .. image:: /static/training/socialisation/068_merapi_results.*
    :align: center
 
-.. Note:: Needs per week are based on the cumulative of all 3 zone hence vent
+.. note:: Needs per week are based on the cumulative of all 3 zone hence vent
    - 10km
 
 Free time
@@ -155,24 +152,24 @@ Free time
 It is time for you to run through |project_name| yourself,
 with no instructions, make sure to print each result!
 Take 10 mins to run:
+::
 
-In the event of **Merapi erupting** how many **buildings** will
-**be affected** within **3,5,10*** km of the vent.
+ In the event of Merapi erupting how many buildings will
+ be affected within 3,5,10 km of the vent?
 
-In the event of **Merapi erupting** how many **people** will
-**be affected** within **5,10,25** km of the vent.
+ ANSWER __________________________
 
-In the event of **Merapi erupting** how many **buildings** will
-**be affected** within **5,10,25** km of the vent.
+ In the event of Merapi erupting how many people will
+ be affected within 5,10,25 km of the vent?
 
-**ANSWER** __________________________
+ ANSWER __________________________
 
-**ANSWER** __________________________
+ In the event of Merapi erupting how many buildings will
+ be affected within **5,10,25** km of the vent?
 
-**ANSWER** __________________________
+ ANSWER __________________________
 
-
-.. Note:: You can see in this example, and in the previous flooding examples
+.. note:: You can see in this example, and in the previous flooding examples
    that we do not have every single building. In Jakarta we are confident that
    we have the majority of schools, hospitals etc. But around Merapi we only
    have a selection, most of which have no attributes,
@@ -202,9 +199,9 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
 .. image:: /static/training/socialisation/070_people_scale.*
    :align: center
 
-.. Note: Notice the difference between the first **people** layer and the other 2 people,
-    the second one has a source of *AsiaPop rescaled 1km2*, the third *AsiaPop rescaled
-    5km2*
+.. note:: Notice the difference between the first **people** layer and the
+   other 2 people, the second one has a source of *AsiaPop rescaled 1km2*,
+   the third *AsiaPop rescaled 5km2*
 
 30. Make sure the only **people** checked is Source= AsiaPop
 
@@ -218,29 +215,32 @@ Memory usage warning
 .. image:: /static/training/socialisation/071_memory.*
    :align: center
 
-A warning message appears "You may not have sufficient free system memory to carry
-out the analysis.  See the dock panel message for more information. Would you like to
-continue regardless?"
+A warning message appears "You may not have sufficient free system memory to
+carry out the analysis.
+See the dock panel message for more information.
+Would you like to continue regardless?"
 
 33. :guilabel:`No`
 
-You will see in the |project_name| panel that there is a suggestion on how to continue:
-"Try zooming in to a smaller area or using a raster layer with a coarser resolution to
-speed up execution and reduce memory requirements. You could also try adding more RAM
-to your computer"
+You will see in the |project_name| panel that there is a suggestion on how
+to continue:
+
+"Try zooming in to a smaller area or using a raster layer with a coarser
+resolution to speed up execution and reduce memory requirements. You could
+also try adding more RAM to your computer"
 
 You will recall that there is another 2 **people** layer,
 the difference is the size of the pixel, the one we are trying to run is 100
-m by 100 m and the one we will run now is 1km by 1km.  If the 1km population fails,
-the third **people** layer is our backup!
+m by 100 m and the one we will run now is 1km by 1km.
+If the 1km population fails, the third **people** layer is our backup!
 
 **Basically less pixels less memory need.**
 
 .. image:: /static/training/socialisation/072_cellsize.*
    :align: center
 
-34. :guilabel:`Check` the second “people” in the drop down menu - check the keywords to
-	confirm its the source is *AsiaPop 1km2*
+34. :guilabel:`Check` the second “people” in the drop down menu - check the
+    keywords to confirm its the source is *AsiaPop 1km2*
 
 35. :guilabel:`Click` on the drop down menu for the “Might”,
     this is the first |project_name| run where there are actually 2 impact
@@ -248,38 +248,43 @@ the third **people** layer is our backup!
 
 36. :guilabel:`Select` the “Die or be displaced according to the pager model”
 
-.. Note:: This particular impact function was developed in Italy last
+.. note:: This particular impact function was developed in Italy last
    November during a code sprint.
 
 37. :guilabel:`Run` |project_name|
 
 38. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
 
-How many people are estimated to die?
+::
 
-**ANSWER** __________________________
+ How many people are estimated to die?
 
-How many people are estimated to be displaced?
+ ANSWER __________________________
 
-**ANSWER** __________________________
+ How many people are estimated to be displaced?
+
+ ANSWER __________________________
 
 
 39. Analysis the Action list, how is this different to the action list for
     floods or volcanoes?
 
-**ANSWER** __________________________
+::
+
+ ANSWER __________________________
 
 
 Will a building fall down in an earthquake?
 -------------------------------------------
 
-As we are all aware, its generally not the earthquake that kills its the
-collapsing buildings that kill the majority of the people. Hence
-understanding the structure of the building and how they may act under
+As we are all aware, its generally not the earthquake that kills,
+its the collapsing buildings that kill the majority of the people.
+Hence understanding the structure of the building and how they may act under
 certain shaking is crucial in understanding the impact of an earthquake.
 Unfortunately  earthquakes cover a large area, so mapping every structure in
-that area is extensive.  In Padang the international |OSM| community
-assisted mapping, totalling roughly 95,000 structures.
+that area is extensive.
+In Padang the international |OSM| community assisted mapping,
+totalling roughly 95,000 structures.
 
 Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
@@ -293,7 +298,7 @@ Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
 42. :guilabel:`Run` |project_name|
 
-.. Note:: InaSAFE is design to zoom into the extent of impact zone,
+.. note:: InaSAFE is design to zoom into the extent of impact zone,
    hence in a minute or so, it will automatically zoom into Padang.
 
 43. Investigate the results, both by looking at the
@@ -305,9 +310,11 @@ Tsunami
 ------------------
 
 The 1992 Flores earthquake occurred on December 12, 1992 on the island of
-Flores in Indonesia. With a magnitude of 7.8, it was the largest and also the
-deadliest earthquake in 1992. This particular scenario is a modelled version
-of a Magnitude 8.1 earthquake generating a Tsunami that impact Maumere.
+Flores in Indonesia.
+With a magnitude of 7.8, it was the largest and also the deadliest earthquake
+in 1992.
+This particular scenario is a modelled version of a Magnitude 8.1 earthquake
+generating a Tsunami that impact Maumere.
 
 45. :menuselection:`File --> Open Projects`, browse to *Maumere_tsunami.qgs*
 
@@ -317,12 +324,11 @@ click on each of them to read the keywords in the |project_name| window.
 .. image:: /static/training/socialisation/073_tsunami.*
    :align: center
 
-.. Note:: The InaSAFE functionality for Tsunami and floods are very similar,
+.. note:: The InaSAFE functionality for Tsunami and floods are very similar,
    however due to the force of the tsunami waves, the maximum depth of the
    water that would affect people and infrastructure is shallower.
 
-46. Confirm that |project_name| window has the following:
-    boxes.
+46. Confirm that |project_name| window has the following boxes.
 
 * A tsunami in Maumere (Mw 8.1)
 * people
@@ -337,23 +343,24 @@ click on each of them to read the keywords in the |project_name| window.
 Map Canvas Extent
 -----------------
 
-50. We are going to run again, but only on a 1/4 of the extent, :guilabel:`Zoom In`
+50. We are going to run again, but only on a 1/4 of the extent,
+    :guilabel:`Zoom In`
 
 51. :guilabel:`Run` |project_name|
 
 .. image:: /static/training/socialisation/074_tsunami_zoom.*
    :align: center
 
-You will now see that your results are different than the original InaSAFE runs,
-this is because your extent window determines the area in which you are analysing
-the data. The next chapter will show you how to change this if needed.
+You will now see that your results are different than the original InaSAFE
+runs, this is because your extent window determines the area in which you are
+analysing the data.
+The next chapter will show you how to change this if needed.
 
 .. note:: The population coverage coastline in this zoomed in area is
    different to the hazard coastline, this can be a significant problem when
    your population dataset does not reflect the same extents as reality.
    Through OpenLayers select Bing imagery and examine the two layers (people
    and tsunami). Always quality assure your input layers.
-
 
 OpenStreetMap Downloader
 ------------------------

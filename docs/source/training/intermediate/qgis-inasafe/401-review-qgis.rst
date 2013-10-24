@@ -1,6 +1,5 @@
 .. image:: /static/training/intermediate/qgis-inasafe/image6.*
 
-
 Module 1: Review QGIS
 =====================
 
@@ -10,33 +9,36 @@ Module 1: Review QGIS
 - Explain about data symbology
 - Explain about map layout
 
-Before we dive deeper into InaSAFE,  we will spend this Module in a review of
-the QGIS techniques that we covered in Unit 2.  We will once more go over some
-of they key aspects of QGIS, including adding vector and raster layers,
-symbolizing layers, and using the Print Composer for layouting.  If you feel
-competent in all of these areas, feel free to jump ahead to the next Module, but
-if you’d like a brief review, follow along!
+Before we dive deeper into InaSAFE, we will spend this Module in a review of
+the QGIS techniques that we covered in Unit 2.
+We will once more go over some of they key aspects of QGIS,
+including adding vector and raster layers, symbolizing layers,
+and using the Print Composer for layouting.
+If you feel competent in all of these areas, feel free to jump ahead to the
+next Module, but if you’d like a brief review, follow along!
 
 **1. Data Types in Quantum GIS**
 
-As you may recall, there are two types of data that we often use in QGIS: raster
-data and vector data.  Raster data is characterized as an array of data which
-consists of rows and columns, like the pixels in an image.  Vector data, on the
-other hand, consists of discrete features made of points and lines, and their
-position is defined by coordinates.
+As you may recall, there are two types of data that we often use in QGIS:
+raster data and vector data.
+Raster data is characterized as an array of data which consists of rows and
+columns, like the pixels in an image.
+Vector data, on the other hand, consists of discrete features made of points
+and lines, and their position is defined by coordinates.
 
 *1.1  Adding Vector Data*
 
 Let’s add vector data to a new project.
 
-- Open a new QGIS project.  Your map and Layers list should be empty.
+- Open a new QGIS project. Your map and Layers list should be empty.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image7.*
    :align: center
 
-- There are two ways to add a new vector layer to your project.  You can
-  navigate to :menuselection:`Layer > Add Vector Layer...` on the menu or you
-  can click on the :guilabel:`Add Vector Layer` button on the toolbar:
+- There are two ways to add a new vector layer to your project.
+  You can navigate to :menuselection:`Layer > Add Vector Layer...` on the
+  menu or you can click on the :guilabel:`Add Vector Layer` button on the
+  toolbar:
 
 .. image:: /static/training/intermediate/qgis-inasafe/image8.*
    :align: center
@@ -50,29 +52,38 @@ Let’s add vector data to a new project.
 
 - Click on the :guilabel:`Browse` button and navigate to your exercise data.
   Go into the *qgis/Sleman/* directory and select *Jalan_Sleman_OSM, POI_Sleman*
-  and *Kecamatan_Sleman*.  You can select multiple files by holding the
-  :kbd:`CTRL` key on your keyboard as you click each file.
-- Click :guilabel:`Open` and then :guilabel:`Open` again.
+  and *Kecamatan_Sleman*.
+  You can select multiple files by holding the :kbd:`CTRL` key on your
+  keyboard as you click each file.
+  Click :guilabel:`Open` and then :guilabel:`Open` again.
 - Your map canvas now will looks like this:
 
 .. image:: /static/training/intermediate/qgis-inasafe/image10.*
    :align: center
 
-Great!  You’ve added some vector data to your map.  Don’t forget there are three
-kinds of vectors - points, lines, and polygons.  We have just added one layer of
-each type.
+Great! You’ve added some vector data to your map.
+Don’t forget there are three kinds of vectors
+
+- points,
+- lines,
+- and polygons.
+
+We have just added one layer of each type.
 
 *1.2  Adding Raster Data*
 
-Raster data has different characteristics compared to vector data. Raster data
-is composed by rows and columns which form small boxes (known as pixels). The
-‘box’es contains information, which is usually expressed as grayscale or color.
+Raster data has different characteristics compared to vector data.
+Raster data is composed by rows and columns which form small boxes (known as
+pixels).
+The ‘box’es contains information, which is usually expressed as grayscale or
+color.
 The information in each pixel could be the altitude of a point, the size of the
 population, the area’s color, and so forth.
 
-- There are two ways to add a new raster layer to your project.  You can
-  navigate to :menuselection:`Layer > Add Raster Layer...` on the menu or you
-  can click on the :menuselection:`Add Vector Layer` button on the toolbar:
+- There are two ways to add a new raster layer to your project.
+  You can navigate to :menuselection:`Layer > Add Raster Layer...` on the
+  menu or you can click on the :menuselection:`Add Vector Layer` button on
+  the toolbar:
 
 .. image:: /static/training/intermediate/qgis-inasafe/image11.*
    :align: center
@@ -83,7 +94,8 @@ population, the area’s color, and so forth.
 .. image:: /static/training/intermediate/qgis-inasafe/image12.*
    :align: center
 
-- Click Open.  The raster will be added to our project as a grey-colored square.
+- Click :guilabel:`Open`.
+  The raster will be added to our project as a grey-colored square.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image13.*
    :align: center
@@ -92,16 +104,17 @@ Next we will symbolize the data to make it easier to understand.
 
 **2. Symbolizing Data**
 
-Layer symbology is useful so that users can easily understand our maps.  It is
-also important to make our maps more attractive.  Your choice of a layer’s
-symbology is very important to deliver the right information.
+Layer symbology is useful so that users can easily understand our maps.
+It is also important to make our maps more attractive.
+Your choice of a layer’s symbology is very important to deliver the right
+information.
 
 *2.1  Symbolize the Districts*
 
 Let’s symbolize the district layer that we’ve added:
 
-- Right click on the *Kecamatan_Sleman* layer, and choose :guilabel:`Properties`
-  , or double click the layer name.
+- Right click on the *Kecamatan_Sleman* layer,
+  and choose :guilabel:`Properties`, or double click the layer name.
 - Click on the :guilabel:`Style` tab.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image14.*
@@ -122,8 +135,8 @@ Let’s symbolize the district layer that we’ve added:
    :align: center
 
 - Change the Color Ramp to a set of colors that you like, and then click
-  :guilabel:`Classify`. It may look something like this (although your colors
-  will be different):
+  :guilabel:`Classify`.
+  It may look something like this (although your colors will be different):
 
 .. image:: /static/training/intermediate/qgis-inasafe/image17.*
    :align: center
@@ -149,8 +162,8 @@ Next, let’s symbolize our roads layer.
 
 - This isn’t ideal. To fix this, open the :guilabel:`Properties` dialog and on
   the :guilabel:`Style` tab click on the :guilabel:`Advanced` button and choose
-  :guilabel:`Symbol Levels`.  Check to box next to
-  :guilabel:`Enable symbol levels`.
+  :guilabel:`Symbol Levels`.
+  Check to box next to :guilabel:`Enable symbol levels`.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image19.*
    :align: center
@@ -167,7 +180,8 @@ Try editing the symbology of the *POI_Sleman_OSM* layer on your own.
 Lastly, let’s fix our raster layer so that it doesn’t look just like a grey
 rectangle.
 
-- Make sure that the raster toolbar is activated.  It should look like this:
+- Make sure that the raster toolbar is activated.
+  It should look like this:
 
 .. image:: /static/training/intermediate/qgis-inasafe/image21.*
    :align: center
@@ -185,13 +199,15 @@ rectangle.
 
 **3. Map Layout**
 
-Your map is a medium to communicate information (as well as your ideas) to your
-map’s reader.  You use layer symbology to convey the content of your data so
-that it can be easily understood by the user.  By creating a map layout, you are
-going a step further in using your map as a way to convey information.
+Your map is a medium to communicate information (as well as your ideas) to
+your map’s reader.
+You use layer symbology to convey the content of your data so that it can be
+easily understood by the user.
+By creating a map layout, you are going a step further in using your map as a
+way to convey information.
 
-For a full review of Map Composer, refer back to Unit 2.  For now, let’s create
-a basic layout with a legend.
+For a full review of Map Composer, refer back to Unit 2.
+For now, let’s create a basic layout with a legend.
 
 - Start a new :guilabel:`Map Composer` window by going to
   :menuselection:`File > New Print Composer`
@@ -212,10 +228,8 @@ a basic layout with a legend.
 .. image:: /static/training/intermediate/qgis-inasafe/image26.*
    :align: center
 
-Play around a bit with the Print Composer if you like, and refresh your memory!
+Play around a bit with the Print Composer if you like,
+and refresh your memory!
 
-We hope this was a useful refresher.  Now it’s time to get back to InaSAFE!
-
-
-
- 
+We hope this was a useful refresher.
+Now it’s time to get back to InaSAFE!

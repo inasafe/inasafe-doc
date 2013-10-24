@@ -67,15 +67,17 @@ Here we have zoomed into 2 rivers going through the middle of Jakarta.
    and the green building are determined not affected as they are in waters
    less than 1 meter deep.
 
-2. :guilabel:`Select` *Estimate buildings affected* in the **Layer List** to highlight
-the layer. It should now be in blue.
+2. :guilabel:`Select` *Estimate buildings affected* in the **Layer List** to
+   highlight the layer.
+   It should now be in blue.
 
 .. image:: /static/training/socialisation/043_highlight.*
    :align: center
 
 3. Use the :guilabel:`Identify Features` tool to select a building
 
-Here I clicked on the building circled in the above picture, the results are below.
+Here I clicked on the building circled in the above picture,
+the results are below.
 This buildings has a lot of information recorded about it.
 
 .. image:: /static/training/socialisation/044_identifyresults.*
@@ -93,32 +95,35 @@ This buildings has a lot of information recorded about it.
 About Population which needs evacuation
 .......................................
 
-5. In the **Layer list** :guilabel:`Uncheck` the *Estimated buildings affected* and
-   :guilabel:`Check` one of  the *Population which Need evacuation*
+5. In the **Layer list** :guilabel:`Uncheck` the *Estimated buildings
+   affected* and :guilabel:`Check` one of  the *Population which Need
+   evacuation*
 
-6. :guilabel:`Select` *Population which Need evacuation* in the **Layer List** to highlight
-   the layer. It should now be in blue.
+6. :guilabel:`Select` *Population which Need evacuation* in the **Layer
+   List** to highlight the layer.
+   It should now be in blue.
 
 7. :guilabel:`Zoom In` to an area of your choice
 
-8. Use the :guilabel:`Identify Features` tool to select a pixel (square) of the
-selected *Population which Need evacuation*
+8. Use the :guilabel:`Identify Features` tool to select a pixel (square) of
+   the selected *Population which Need evacuation*
 
 Here I clicked on the :guilabel:`light green area` , to find that there is a
-value of **80.6411**, which means there are approximately 80 people in one pixel
-(square).
+value of **80.6411**, which means there are approximately 80 people in one
+pixel (square).
 
 .. image:: /static/training/socialisation/045_examineraster.*
    :align: center
 
 .. note:: In this dataset a pixel is 100m by 100m
 
-9. Use the :guilabel:`Identify Features` tool to select other pixels to find out
-their value.
+9. Use the :guilabel:`Identify Features` tool to select other pixels to find
+   out their value.
 
 10. :guilabel:`Close` the **Identify Results** box
 
-11. Is each pixel really 100m by 100m? lets check. Use the :guilabel:`Measure Line` tool
+11. Is each pixel really 100m by 100m? lets check. Use the
+    :guilabel:`Measure Line` tool
 
 .. note:: It maybe easier to measure one pixel by zooming in further.
 
@@ -134,7 +139,8 @@ close!
 
 12. :guilabel:`Close` the **Measure** box
 
-13. Use the :guilabel:`Zoom to Layer` to go back to the full extent of the select layer.
+13. Use the :guilabel:`Zoom to Layer` to go back to the full extent of the
+    select layer.
 
 14. :guilabel:`Uncheck` all layers except:
 
@@ -163,13 +169,13 @@ during the floods in January this year the Provincial disaster mangers
 collected information about the flooding, one of which was the location of
 the flooded area by sub-village boundary.
 
-.. note:: The InaSAFE panel is currently showing a warning "Layer keywords missing:"
-   we will address this concern in later steps.
+.. note:: The InaSAFE panel is currently showing a warning "Layer keywords
+   missing:" we will address this concern in later steps.
 
 Lets examine this data by opening up its *attribute table*
 
 17. Make sure the *flood_osm_bpbd18113_jakarta* is highlighted (blue line in
-the **Layer List**). Select the :guilabel:`Open Attribute Table` tool.
+    the **Layer List**). Select the :guilabel:`Open Attribute Table` tool.
 
 .. image:: /static/training/socialisation/048_attributetable.*
    :align: center
@@ -182,7 +188,7 @@ the **Layer List**). Select the :guilabel:`Open Attribute Table` tool.
   KEL_NAME:  Village
   RW:        Sub-village
   affected:  1 = affected
-  			 0 = not affected
+             0 = not affected
 
 .. note:: This is the same information as the Identify Feature tool, but
    instead of just viewing one object information, you can see all of the
@@ -197,7 +203,7 @@ Now we are going to stylise the subvillage administration boundary to only
 see the affected = 1 areas.
 
 19. :guilabel:`Double click` on *flood_osm_bpbd18113_jakarta* layers - this
-will open up the properties table
+    will open up the properties table
 
 20. Navigate to the style tab
 
@@ -206,12 +212,12 @@ will open up the properties table
 
 
 21. Follow the below steps to stylise the subvillage boundaries as
-illustrated in the picture and table below.
+    illustrated in the picture and table below.
 
 ==========     ================================================
 **Number**     **Step**
 ----------     ------------------------------------------------
-1              Select "Catergorized" from the drop down menu
+1              Select "Categorized" from the drop down menu
 2              Select "affected" from the Column drop down menu
 3              Click "Classify"
 4              Highlight the row light blue "0 0"
@@ -230,25 +236,27 @@ Below are the results
 .. image:: /static/training/socialisation/051_styleflood.*
    :align: center
 
-You have now symbolised your first layer!  You can see only the subvillage
-areas that were flooded on the 18th of January! Now, can we use this hazard
-layer in |project_name|?
+You have now symbolised your first layer!
+You can see only the subvillage areas that were flooded on the 18th of
+January!
+Now, can we use this hazard layer in |project_name|?
 
 Adding Keywords
 ...............
 
 22. As previously pointed out the |project_name| panel is showing a warning.
-It is explaining to us that the layer highlight *flood_osm_BPBD18113_jakarta*
-has no keywords. Lets follow the instructions and select the
-:guilabel:`InaSAFE Keyword` tool.
+    It is explaining to us that the layer highlight
+    *flood_osm_BPBD18113_jakarta* has no keywords.
+    Lets follow the instructions and select the :guilabel:`InaSAFE Keyword`
+    tool.
 
 .. image:: /static/training/socialisation/052_keyword.*
    :align: center
 
 
 23. In the *Keywords Editor* window you have an option of changing the
-**Title**, **Category** and **Subcategory**. We are going to do just that by
-following the steps in the table below:
+    **Title**, **Category** and **Subcategory**.
+    We are going to do just that by following the steps in the table below:
 
 ==============  ================================================
 **Quick edit**  **Variable**
@@ -271,7 +279,8 @@ For more information about Keywords have a look in
 Buildings within affected subvillages
 .....................................
 
-25. Confirm that the |project_name| window has the following its drop down menu.
+25. Confirm that the |project_name| window has the following its drop down
+    menu.
 
 .. image:: /static/training/socialisation/054_inasafepanel.*
    :align: center
@@ -284,14 +293,21 @@ Buildings within affected subvillages
 
 .. note:: *This may take about a minute to run*
 
-.. todo:: How many estimated buildings were flooded? **Answer**  ___________________
+::
+
+  How many estimated buildings were flooded?
+  Answer  ___________________
 
 27. Read through the |project_name| results, how different is this to the previous
-|project_name| building analysis?
+    |project_name| building analysis?
 
-.. todo:: Why are the results so different? *Consider the diferences between
-   the hazard layers, model vs footprint*. **Answer**  ______________ Which
-   hazard is more accurate, or are there other factors to consider?
+::
+
+  Why are the results so different?
+  Consider the differences between the hazard layers, model vs footprint.
+  Answer  ______________
+  Which hazard is more accurate, or are there other factors to consider?
+  Answer  ______________
 
 28. |project_name|:guilabel:`Print`, save accordingly
 
@@ -308,10 +324,12 @@ Evacuation as a percentage
    many people will need evacuating. InaSAFE therefore needs your help!
 
 Instead of determining how many people will be evacuated by  a spatial area,
-this scenario used the affected population. |project_name| asks the user to
-input a percentage of the affected population that may need evacuating.
+this scenario used the affected population.
+|project_name| asks the user to input a percentage of the affected population
+that may need evacuating.
 
-29. :guilabel:`Uncheck` *buildings* in the **Layer List** and :guilabel:`Check` *people*
+29. :guilabel:`Uncheck` *buildings* in the **Layer List** and
+    :guilabel:`Check` *people*
 
 30. Confirm that the |project_name| window has the following its drop down menu.
 
@@ -320,8 +338,8 @@ input a percentage of the affected population that may need evacuating.
 * Need Evacuation
 
 31. To configure the impact function select :guilabel:`...`
-*Configure Impact Function Parameter* which is found beside the
-*Need Evacuation*
+    *Configure Impact Function Parameter* which is found beside the
+    *Need Evacuation*
 
 .. image:: /static/training/socialisation/055_inasafeconfigure.png
    :align: center
@@ -332,22 +350,23 @@ input a percentage of the affected population that may need evacuating.
    week.  **Improvement:** need to add units to minimum needs
 
 32. In the options tab you can see that default is 1, for this first analysis
-we will keep this figure. :guilabel:`OK`
+    we will keep this figure. :guilabel:`OK`
 
 33. :guilabel:`Run` |project_name|
 
 .. note:: *This may take about a minute to run*
 
-.. todo:: How many people were evacuated?
-   **Answer** __________________________
-   How many people were affected?
-   **Answer** __________________________
+::
+
+ How many people were evacuated?
+ Answer __________________________
+ How many people were affected?
+ Answer __________________________
 
 34. Read through the |project_name| results, how different is this to the previous
-|project_name| people analysis?
+    |project_name| people analysis?
 
 35. :guilabel:`Print` |project_name|, save accordingly
-
 
 Comparing Results - Optional
 ----------------------------
@@ -364,32 +383,34 @@ flood 180113                  Vector         Buildings     Vector         Be flo
 flood 180113   1%             Vector         People        Raster         Need Evacuation
 =============  =============  =============  ============  =============  ===================  =============
 
+36. Complete the last column of the above table. For more information on data
+    type go to :doc:`rastervsvector`
 
-36. Complete the last column of the above table. For more information on data type
-go to :doc:`rastervsvector`
+::
 
-How different are the results? **Answer** __________________________,
-
-Why are they different? **Answer** __________________________
-
+  How different are the results?
+  Answer __________________________,
+  Why are they different?
+  Answer __________________________
 
 Basic Aggregation
 ----------------------------
 
-Going through this training, you probably thinking thats great but what if I want to
-breakdown the impacted results by an administration boundary, in this section we show you
-how.
+Going through this training, you probably thinking thats great but what if I
+want to breakdown the impacted results by an administration boundary,
+in this section we show you how.
 
-First we need to add an administration boundary, the boundary we are going to use is the
-mainland district boundaries of Jakarta (Jakarta has 6 districts, but we will be only
-looking at 5 because the 6th is the Thousand Island -as the name suggest its a huge amount
-of islands!)
+First we need to add an administration boundary, the boundary we are going
+to use is the mainland district boundaries of Jakarta (Jakarta has 6
+districts, but we will be only looking at 5 because the 6th is the Thousand
+Island -as the name suggest its a huge amount of islands!)
 
 36. Use the :guilabel:`Add Vector` button
 
-37. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE Projects*,
-:guilabel:`Select` *district_osm_jakarta.shp*, :guilabel:`Open` in the **Open an
-OGR Support** window and :guilabel:`Open` again in the **Source** window.
+37. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE
+    Projects*, :guilabel:`Select` *district_osm_jakarta.shp*,
+    :guilabel:`Open` in the **Open an OGR Support** window and
+    :guilabel:`Open` again in the **Source** window.
 
 .. image:: /static/training/socialisation/056_district.png
    :align: center
@@ -406,17 +427,18 @@ Title: District's of Jakarta
 
 Source: OpenStreetMap
 
-Female ratio attribute: PEREMPUAN - *Attribute name of female percentage per district*
+Female ratio attribute: PEREMPUAN -
+*Attribute name of female percentage per district*
 
-By looking at the district layer attribute table you can see that the names of the
-attribute correspond.
+By looking at the district layer attribute table you can see that the names
+of the attribute correspond.
 
 .. image:: /static/training/socialisation/057_districtattribute.png
    :align: center
 
-39. :guilabel:`Select` the *District's of Jakarta* from the drop down menu under
-*Aggregate results by*, and check that the other sections are field out according to
-the image below.
+39. :guilabel:`Select` the *District's of Jakarta* from the drop down menu
+    under *Aggregate results by*, and check that the other sections are field
+    out according to the image below.
 
 .. image:: /static/training/socialisation/058_aggregationselect.png
    :align: center
@@ -428,8 +450,8 @@ the image below.
 .. image:: /static/training/socialisation/059_aggregationresults.png
    :align: center
 
-41. Lets see what the results would be for buildings, change How many *people* to How
-many *buildings*
+41. Lets see what the results would be for buildings,
+    change How many *people* to How many *buildings*
 
 42. :guilabel:`Run` |project_name|
 
@@ -437,4 +459,3 @@ many *buildings*
 
 .. image:: /static/training/socialisation/060_buildingaggregationresult.*
    :align: center
-
