@@ -38,11 +38,11 @@ expensive. Therefore we make a guide how to analyze the data with GIS software,
 which is free and open for the purposes of disaster management, particularly in
 the preparation of contingency plans.
 
-The software used is Quantum GIS (QGIS) is a Geographic Information System (GIS)
-that is user-friendly and open-source. InaSAFE  is a free software and open-
-source, that can create realistic scenario of natural disasters impact for
-planning, preparation, and better response. InaSAFE is developed by AIFDR
-through consultation with BNPB.
+The software used is |QGIS| is a Geographic Information System (GIS) that is
+user-friendly and open-source. InaSAFE  is a free software and open-source,
+that can create realistic scenario of natural disasters impact for planning,
+preparation, and better response.
+InaSAFE is developed by |AIFDR| through consultation with |BNPB|.
 
 Analyzing Data with QGIS and InaSAFE is designed to complement the
 previous unit to collect spatial data with OpenStreetMap for scenario

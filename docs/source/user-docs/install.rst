@@ -1,14 +1,11 @@
 .. _installation:
 
-
 Installation
 ============
 
-
 .. note::
-   |project_name| is a plugin for Quantum GIS (|QGIS|), so
-   QGIS must be installed first via QGIS Python Plugin Repository
-
+   |project_name| is a plugin for |QGIS|, so QGIS must be installed first via
+    QGIS Python Plugin Repository.
 
 To install |project_name|, use the plugin manager in QGIS:
 
@@ -19,10 +16,8 @@ The plugin will now be added to your plugins menu.
 
 For more information :doc:`../training/socialisation/introduction_of_qgis`
 
-
 From InaSAFE test repository
 ----------------------------
-
 
 During development of an InaSAFE version, developers make a test version of
 the software for people to trial. Here are the instructions on how to install
@@ -151,4 +146,3 @@ System Requirements
  - A standard PC with at least 4GB of RAM running Windows, Linux or Mac OS X
  - The Open Source Geographic Information System QGIS (http://www.qgis.org).
    |project_name| requires QGIS version 1.7 or newer.
-

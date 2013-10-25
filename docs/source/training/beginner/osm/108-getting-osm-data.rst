@@ -12,7 +12,7 @@ Module 8: Getting OSM Data
 
 After you learn how to add and edit data in OpenStreetMap (OSM),
 now maybe you want the data obtained as a back up or if you want the
-Geography Information System software that Open Source is  Quantum GIS
+Geography Information System software that Open Source is |QGIS|
 (http://qgis.org).
 
 **1. Getting OSM Data on Geofabrik Website**

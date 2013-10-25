@@ -29,8 +29,8 @@ Prerequisites
   * WIFI - connected to the internet
   * Windows (XP, 7, 8), Linux (Training Ubuntu later than 12.04) or similar
     (e.g. Mint or Debian), Mac OSX (Lion - 10.7,  Snow Leopard -10.6)
-  * QuantumGIS 1.8 installed (www.qgis.org) or ability to install software
-    on computer  i.e. have administration password
+  * |QGIS| 1.8 installed http://www.qgis.org or ability to install software
+    on computer i.e. have administration password
 
 Credits
 -------
@@ -43,7 +43,7 @@ Manual based on:
 ................
 
 * Version 1.2 of |project_name|
-* Version 1.8 of Quantum GIS
+* Version 1.8 of |QGIS|
 
 Produced:
 .........
@@ -81,7 +81,7 @@ Linfiniti Sphinx Theme
 Manual licenced under:
 ......................
 
-Create Commons by Attribution by |BNPB|/|AIFDR|/|AusAID|/World Bank-|GFDRR|.
+Creative Commons by Attribution by |BNPB|/|AIFDR|/|AusAID|/World Bank-|GFDRR|.
 
 Author:
 .......

@@ -29,23 +29,23 @@ Participants are able to:
 Introduction
 ------------
 
-Quantum GIS (|QGIS|) is a user friendly Open Source Geographic Information
-System (GIS).  It runs on Linux, Unix, Mac OSX, Windows and Android and
-supports numerous vector, raster, and database formats and functionality.
+|QGIS| is a user friendly Open Source Geographic Information System (GIS).
+It runs on Linux, Unix, Mac OSX, Windows and Android and supports numerous
+vector, raster, and database formats and functionality.
 `<http://www.qgis.org>`_
 
-Quantum GIS provides a continuously growing number of capabilities provided
-by core functions and plugins. You can visualize, manage, edit, analyse data,
-and compose printable maps.
-QGIS is also the platform of |project_name|, and hence the basic of QGIS will
-be taught in the workshop.
+|QGIS| provides a continuously growing number of capabilities provided
+by core functions and plugins.
+You can visualize, manage, edit, analyse data, and compose printable maps.
+|QGIS| is also the platform of |project_name|, and hence the basic of |QGIS|
+will be taught in the workshop.
 
-Why QGIS?
----------
+Why |QGIS|?
+-----------
 
 As information becomes increasingly spatially aware, there is no shortage of
 tools able to full fill some or all commonly used GIS functions. Why should
-anyone be using QGIS over some other GIS software package?
+anyone be using |QGIS| over some other GIS software package?
 
 Here are only some of the reasons:
 
@@ -84,7 +84,7 @@ Start of Practical
 Setup QGIS
 ----------
 
-1. :guilabel:`Open Quantum GIS Desktop (1.8.0)` - This should be located on
+1. :guilabel:`Open QGIS Desktop (1.8.0)` - This should be located on
 your desktop, or you can find it in your start menu.
 
 .. image:: /static/training/socialisation/012_qgis_desktop.*

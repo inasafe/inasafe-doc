@@ -17,7 +17,7 @@ and using the Print Composer for layouting.
 If you feel competent in all of these areas, feel free to jump ahead to the
 next Module, but if you’d like a brief review, follow along!
 
-**1. Data Types in Quantum GIS**
+**1. Data Types in QGIS**
 
 As you may recall, there are two types of data that we often use in QGIS:
 raster data and vector data.

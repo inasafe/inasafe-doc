@@ -12,8 +12,8 @@ The development of |project_name| has been supported by the
 * Geoscience Australia (|GA|), through the
 * Australia-Indonesia Facility for Disaster Reduction (|AIFDR|),
   as well as the
-* World Bank and the 
+* World Bank and the
 * Global Facility for Disaster Reduction and Recovery (|GFDRR|).
 
-|project_name| is a plugin built for the open source Quantum GIS application.
+|project_name| is a plugin built for the open source |QGIS| application.
 

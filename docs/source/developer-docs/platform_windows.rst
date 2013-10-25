@@ -22,7 +22,6 @@ development environment for InaSAFE under Windows:
 You may also wish to read :doc:`jenkins_ci_windows_slave` if you wish to
 set up automated test suite running using Jenkins.
 
-
 Installation of version control tools
 -------------------------------------
 
@@ -30,18 +29,18 @@ Setup GitHub for windows
 ........................
 
 To check out the code for development, you first need to install a git client.
-We cover `GitHub for Windows <http://windows.github.com/>`_  but you can use 
+We cover `GitHub for Windows <http://windows.github.com/>`_  but you can use
 another client if you prefer.
 
-To install the github windows client (which includes a command line git client), 
+To install the github windows client (which includes a command line git client),
 download the latest version of the software from the
-`GitHub for Windows <http://windows.github.com/>`_ web site. The download size 
-will be at least 40mb and will vary depending if you have the application 
-requirements installed (the installer will download and install the appropriate 
+`GitHub for Windows <http://windows.github.com/>`_ web site. The download size
+will be at least 40mb and will vary depending if you have the application
+requirements installed (the installer will download and install the appropriate
 .net framework if needed).
 
 Then run the installer and follow the prompts as directed. We recommend that
-you create an account on `github <http://github.com>`_ as it will make it 
+you create an account on `github <http://github.com>`_ as it will make it
 possible to submit bug reports and generally participate in the InaSAFE project.
 
 Then enter your account details in the GitHub git client as directed.
@@ -50,10 +49,10 @@ Configure the default git shell
 ...............................
 
 Next set your preferred shell to 'git bash' by going to the GitHub windows home
-screen (if needed, press the left facing arrow in the top left of the GitHub 
-windows panel repeatedly until the arrow disappears). Now use 
+screen (if needed, press the left facing arrow in the top left of the GitHub
+windows panel repeatedly until the arrow disappears). Now use
 :menuselection:`tools --> options` (in the top center of the window), to move
-to the options panel. In the :guilabel:`default shell` section, select 
+to the options panel. In the :guilabel:`default shell` section, select
 :menuselection:`Git Bash`.
 
 Now click :guilabel:`update` and close the GitHub windows application.
@@ -74,7 +73,6 @@ From now on use this shell for all the commands that follow below.
 .. note:: Create a shortcut on your start button to the github shell as you will
    use if often!
 
-
 Check out the code and the test data
 ------------------------------------
 
@@ -89,7 +87,7 @@ First open a GIT bash prompt as described above.
 The repository can now be cloned by issuing these commands:
 
 Users on windows < Windows 7::
-   
+
    cd  /c/Documents\ and\ Settings/<your username>/
 
 Windows 7 or newer::
@@ -125,11 +123,10 @@ Checkout the test data
 
 To check out the test data from git, first open a GIT bash prompt as illustrated below:
 
-
 The repository can now be cloned by issuing the commands listed below. (Already completed in previous step):
 
 Users on windows < Windows 7::
-   
+
    cd  /c/Documents\ and\ Settings/<your username>/.qgis/python/plugins/
 
 Windows 7 or newer::
@@ -275,7 +272,7 @@ pypi. Download the script on
 `this page <http://pypi.python.org/pypi/setuptools#windows>`_ called
 ez_setup.py and save it somewhere familiar e.g. :samp:`c:\temp`.
 
-.. note:: If you use windows 32bit, do not download the .exe file as described 
+.. note:: If you use windows 32bit, do not download the .exe file as described
    on `this page <http://pypi.python.org/pypi/setuptools#windows>`_, rather
    just download the ez_setup.py
 
@@ -384,16 +381,14 @@ Developing using PyCharm
 .. note:: This is optional - you can use any environment you like for editing
    python, or even a simple text editor.
 
-
 .. note:: PyCharm is unfortunately not FOSS (Free and Open Source Software),
-   however they do provide free licenses for Open Source projects, which
-   InaSAFE has been granted. If you wish to make use of this license, please
-   contact info@inasafe.org for your copy.
+   however they do support the OpenSource Community by providing a "Free
+   Community Edition" of PyCharm (http://www.jetbrains.com/pycharm/)
 
 Download and Install
 ....................
 
-Download PyCharm from their 
+Download PyCharm from their
 `download page <http://www.jetbrains.com/pycharm/download/index.html>`_ and
 then install it taking all the defaults. Note that the download is approximately
 125mb at the time of writing this (version 2.7).
@@ -402,76 +397,72 @@ Once the installation is complete, start PyCharm and accept all the defaults for
 the first-run wizard. You may be prompted to restart pycharm at the end of that
 process - which you should do.
 
-
 Making PyCharm 'QGIS Aware'
 ...........................
 
-We need to have various environment variables set in the PyCharm context in 
-a similar way we do with :ref:`windows-commandline_setup`. Make a copy of 
+We need to have various environment variables set in the PyCharm context in
+a similar way we do with :ref:`windows-commandline_setup`. Make a copy of
 your qgis-shell batch file and call it qgis-pycharm.bat.
 
 Now alter the last line so that it launches pycharm instead of a shell as
 per this example below::
 
-	@echo off
-	SET OSGEO4W_ROOT=C:\PROGRA~2\QUANTU~1
-	call "%OSGEO4W_ROOT%"\bin\o4w_env.bat
-	call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.2\etc\env.bat
-	@echo off
-	SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins\1.9
-	path %PATH%;%OSGEO4W_ROOT%\apps\qgis\bin
-	path %PATH%;%OSGEO4W_ROOT%\apps\grass\grass-6.4.2\lib
-	path %PATH%;"%OSGEO4W_ROOT%\apps\Python27\Scripts\"
+  @echo off
+  SET OSGEO4W_ROOT=C:\PROGRA~2\QUANTU~1
+  call "%OSGEO4W_ROOT%"\bin\o4w_env.bat
+  call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.2\etc\env.bat
+  @echo off
+  SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins\1.9
+  path %PATH%;%OSGEO4W_ROOT%\apps\qgis\bin
+  path %PATH%;%OSGEO4W_ROOT%\apps\grass\grass-6.4.2\lib
+  path %PATH%;"%OSGEO4W_ROOT%\apps\Python27\Scripts\"
 
-	set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
-	set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
-	set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
-	cd "%HOMEPATH%\.qgis\python\plugins\inasafe-dev"
-	set PATH=c:\python27;%PATH%
-	start "PyCharm aware of Quantum GIS" /B "C:\Program Files (x86)\JetBrains\PyCharm 2.7.3\bin\pycharm.exe" %*
+  set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
+  set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
+  set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
+  cd "%HOMEPATH%\.qgis\python\plugins\inasafe-dev"
+  set PATH=c:\python27;%PATH%
+  start "PyCharm aware of Quantum GIS" /B "C:\Program Files (x86)\JetBrains\PyCharm 2.7.3\bin\pycharm.exe" %*
 
-Now use this PyCharm launcher whenever you need to do development work on InaSAFE.
+Now use this PyCharm launcher whenever you need to do development work on
+|project_name|.
 
 .. note:: Right drag the batch file onto your start menu to make an easily accessible
    shortcut to your custom PyCharm launcher.
 
-Setup InaSAFE project
-.....................
+Setup |project_name| project
+............................
 
 On the PyCharm welcome screen, choose :guilabel:`Open Directory` and open the
 git checkout you made i.e.::
-   
+
    c:\Users\<username>\.qgis\python\plugins\inasafe-dev"
 
 Again, note that you should replace **<username>** with the appropriate name
 for your user account.
 
-
 Verifying that your environment is correct
 ..........................................
 
 Open one of the source files that references QGIS e.g. :file:`safe_qgis/widgets/dock.py`
-and ensure that the import statements near the top of the file are not underlined in 
+and ensure that the import statements near the top of the file are not underlined in
 red. Note that you should wait a few minutes until PyCharm indicates it has completed
 updating its indexes in the status bar at the bottom of the PyCharm window.
-
 
 Running Tests
 .............
 
 To run individual tests (or all tests within a package and its subpackages)
 simply :menuselection:`right-click` on any package containing test modules
-or on an individual test module and choose 
+or on an individual test module and choose
 :menuselection:`Run Nosetests in ...`.
-
-
 
 Developing using Eclipse (Windows)
 ----------------------------------
 
-.. warning:: We have standardised on using PyCharm for InaSAFE development (see 
-   above section). This section of documentation is left here for reference 
-   purposes in the hopes that it may help die-hard PyDev fans, but it will 
+.. warning:: We have standardised on using PyCharm for InaSAFE development (see
+   above section). This section of documentation is left here for reference
+   purposes in the hopes that it may help die-hard PyDev fans, but it will
    no longer be maintained.
 
 .. note:: This is optional - you can use any environment you like for editing
@@ -557,7 +548,6 @@ In the dialog that appears do:
   :kbd:`C:\\Program Files (x86)\\Quantum GIS Lisboa\\bin\\python.exe`
 * :guilabel:`OK Button` : :kbd:`click this button`
 
-
 Another dialog will appear. Tick the first entry in the list that points to
 your::
 
@@ -637,7 +627,6 @@ using standard Eclipse debugging tools (done most easily from the debugging
 perspective).
 
 .. note:: Always remove or comment out settrace() when are done debugging!
-
 
 Running Unit tests from the IDE
 ...............................

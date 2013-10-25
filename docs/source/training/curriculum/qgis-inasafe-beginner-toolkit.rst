@@ -380,8 +380,8 @@ Core Material
 *************
 **QGIS Installation and QGIS User Interface Layout**
 
-1. Getting Quantum GIS
-2. Installing Quantum GIS
+1. Getting QGIS
+2. Installing QGIS
 3. QGIS user interface layout
 4. Adding vector layer
 5. QGIS basic tool
@@ -561,7 +561,7 @@ Activities
 | 2. Then the facilitator explained to the participants             | Practice      |               |
 |    how to save a vector data into another projection system.      |               | Module 5      |
 | 3. In the end, gave a challenge to the participants to            | Q & A         |               |
-|    make a projection system in Quantum GIS, and                   |               |               |
+|    make a projection system in QGIS, and                          |               |               |
 |    ask them to explain why they chose that                        |               |               |
 |    projection system.                                             |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
@@ -577,7 +577,7 @@ Common Problem
 **************
 If during training the Internet network is inadequate,
 You should have prepared a *OpenLayer* plugin in a flash disk and shared to
-the participants moved to the plugin folder in the folder Quantum GIS.
+the participants moved to the plugin folder in the folder QGIS.
 
 
 **Session 6**
@@ -1108,17 +1108,17 @@ Activities
 |                                                                   |               | *presentation*|
 | 1. In this session you will be explaining how to make             | Practice      |               |
 |    maps that are ready to be printed using                        |               | Projector     |
-|    QuantumGIS. First, you need to explain that it is              |               |               |
+|    QGIS. First, you need to explain that it is                    |               |               |
 |    important to change the projection system into                 |               | Module 11     |
 |    mercator projection system (Universal Transverse               |               |               |
 |    Mercator/UTM) and ask the participant to change                |               |               |
-|    all of the data� projection into the same projection system.   |               |               |
+|    all of the data projection into the same projection system.    |               |               |
 | 2. Ask the basic elements that must be put into the               |               |               |
 |    map to the participants and show them some                     |               |               |
 |    examples of good maps and bad maps. You should                 |               |               |
 |    emphasize the basic elements of maps to the participants.      |               |               |
 | 3. After that you should explain the interface of the             |               |               |
-|    Map Composer in QuantumGIS. Explain about the                  |               |               |
+|    Map Composer in QGIS. Explain about the                        |               |               |
 |    functions of the toolbars and then do practice and             |               |               |
 |    input the data into the print composer page, adjust            |               |               |
 |    the scale so all of the data that needed to be shown           |               |               |

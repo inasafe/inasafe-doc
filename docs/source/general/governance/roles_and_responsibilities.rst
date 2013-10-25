@@ -2,33 +2,38 @@
 
 Roles and Responsibilities
 ==========================
-|project_name| was conceived and initially developed by the Indonesia's National Disaster
-Management Agency (|BNPB|) and the Australian Agency for International Development,
-through the Australia-Indonesia Facility for Disaster Reduction (|AIFDR|) and the
-World Bank - Global Facility for Disaster Reduction and Recovery (World Bank-|GFDRR|).
+|project_name| was conceived and initially developed by the Indonesia's
+National Disaster Management Agency (|BNPB|) and the Australian Agency for
+International Development, through the Australia-Indonesia Facility for
+Disaster Reduction (|AIFDR|) and the World Bank - Global Facility for
+Disaster Reduction and Recovery (World Bank-|GFDRR|).
 
-|AIFDR| in coordination with |BNPB| are driving the development of |project_name| through
-the use of |project_name| in 6 Indonesian provinces. After the launch of
-|project_name| in October 2012, |AIFDR| on behalf of |BNPB| and |AusAID|
-conducted scenario development for contingency planning training in 6
-Indonesian provinces through the Humanitarian OpenStreetMap Team (HOT) and
-the University of Gadjah Mada (UGM). The training consisted of 2 sections,
-data collection through OpenStreetMap and data analysis through Quantum GIS
-and InaSAFE.  The training was conducted in 3 stage beginner, intermediate and
-Train the Trainer.  At present the training program is being revised by HOT to incorporate
+|AIFDR| in coordination with |BNPB| are driving the development of
+|project_name| through the use of |project_name| in 6 Indonesian provinces.
+After the launch of |project_name| in October 2012, |AIFDR| on behalf of
+|BNPB| and |AusAID| conducted scenario development for contingency planning
+training in 6 Indonesian provinces through the Humanitarian OpenStreetMap
+Team (HOT) and the University of Gadjah Mada (UGM). The training consisted of
+2 sections, data collection through OpenStreetMap and data analysis through
+QGIS and InaSAFE.
+The training was conducted in 3 stage beginner, intermediate and Train the
+Trainer.
+At present the training program is being revised by HOT to incorporate
 lessons learnt in the field as well as upgrades to the software.
 
-The use of the |project_name| has trigged an avalanche of new feature request that has
-been prioritised by |BNPB| and |AIFDR| and is being developed by |Linfiniti|.
+The use of the |project_name| has trigged an avalanche of new feature
+request that has been prioritised by |BNPB| and |AIFDR| and is being
+developed by |Linfiniti|.
 See :ref:`road_map` for more details.  UGM is also conducting an 8 month
 scoping mission interviewing disaster mangers, scientist, and other stakeholders
 to devise a priority list for |project_name| in Indonesia.
 
 The World Bank through |GFDRR| is developing an online version of
 |project_name|, using the core functionality of QGIS-InaSAFE,
-the online version will allow people to complete the same
-core analysis without having to download the software. |GFDRR| is also
-helping other countries to roll out InaSAFE to disaster managers in the field.
+the online version will allow people to complete the same core analysis
+without having to download the software.
+|GFDRR| is also helping other countries to roll out InaSAFE to disaster
+managers in the field.
 
 
 Technical Working Group

@@ -4,8 +4,7 @@ Using |project_name|
 ====================
 
 This document describes the usage of the |project_name| 'dock panel' - which
-is the main interface for running risk scenarios within the Quantum GIS
-environment.
+is the main interface for running risk scenarios within the QGIS environment.
 
 .. note:: In order to use the |project_name| tool effectively,
    you should probably also read the :doc:`keywords` and
