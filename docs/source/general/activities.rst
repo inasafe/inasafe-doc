@@ -3,6 +3,10 @@
 Activities
 ==========
 
+If you'd like to see an overview about where in the world this |project_name|
+page is accessed from you have to take a look at the
+`Piwik <http://piwik.hotosm.org/index.php?idSite=2>`_ page.
+
 Developer Meetings
 ------------------
 
