@@ -183,9 +183,9 @@ In the resulting project dialog, set the following details:
 
 * :guilabel:`Project name:` : :kbd:`inasafe`
 * :guilabel:`Use default` : :kbd:`uncheck`
-* :guilabel (linux):`Directory` :
+* :guilabel:`(linux) Directory` :
   :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
-* :guilabel (windows):`Directory` :
+* :guilabel:`(windows) Directory` :
   :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
 * :guilabel:`Choose project type` : :kbd:`Python`
 * :guilabel:`Grammar Version` : :kbd:`2.7`
