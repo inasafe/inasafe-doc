@@ -1,0 +1,658 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-30 08:39\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:8
+# 930b3fd2568f4c81aa334a5520f44a8e
+msgid "Module 4: Using GPS"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:10
+# 95cd2cc1299947b3aba6982334eb11d5
+msgid "**Learning Objectives**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:12
+# 10d760f1da304927ac4053eae92d5ec0
+msgid "Understanding what is GPS and types of GPS"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:13
+# 8283f9b3f41840e2bc2abb49812873d3
+msgid "Turn on GPS"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:14
+# a0ba4fb9d9e940c4aacf6570db582f53
+msgid "Setting GPS"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:15
+# fa866919aeda46a196a084528f76bf43
+msgid "Understanding the factor that affected GPS accuracy"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:16
+# 6c39d4dfd28c4e8da90b1a7d534360f4
+msgid "Understanding about track and waypoints"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:17
+# 8412ec8843014894a32504c2f6ab677d
+msgid "Collect data using GPS"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:18
+# ac158f19a45a44afa8f0afd59d1f511d
+msgid "Copy GPS data (track dan waypoint) to computer"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:19
+# 4ee81747e6ac4999a64234cd17220115
+msgid "Open waypoint and track on JOSM"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:20
+# 43d8616ec2b34a6893582b48ffdc198e
+msgid "Upload GPS track in JOSM"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:21
+# eac333dcfb304bb995c93df6f935c0cd
+msgid "Editing based on GPS data on JOSM"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:23
+# fec0be4a56144fcebd92ffaee8638d5a
+msgid "In this module we will learn step by step how to download and install JOSM, the Java OpenStreetMap editor. We will change some of the settings in JOSM to make it easier to use. Then we will open a sample map and learn some of the basic operations of the software. Remember in Module 1 when we asked you to draw a map of your town or village? We will conclude this module by drawing your map again, this time digitally. After this you should have a good understanding of how to draw maps in JOSM."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:31
+# 166942d5b8534ab18ab95d49eaba92b4
+msgid "**1. What is GPS?**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:33
+# 367f5c990af84ea7a78dfcac901df592
+msgid "A GPS is like a mobile phone, except that instead of receiving radio signals from telephone companies, it receives signals from satellites that are going around the Earth. By receiving these signals from the satellites, a GPS is able to calculate your exact location on the planet.  It records this location in coordinates, which are two long numbers.  One number tells you how far East or West you are - this is called **longitude**.  The second number tells you how far North or South you are - this is called **latitude**. Every place on Earth has unique geographic coordinates."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:42
+# 4b730e39de8149238869d7b56bb6e2cd
+msgid "For example: -8.639298 Latitude, 116.311607 Longitude is a location in Lombok, Indonesia."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:0
+# 55ed92b830ec4f3d8e2fe4f44af1382b
+msgid "*Google Earth software, showing coordinates of a place in Lombok, Indonesia.*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:0
+# 9ef590f4a33340d78281d05a44c3e40c
+msgid "*Garmin eTrex Vista HCx*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:55
+# 3566e1cdc3064d3293a803a6c724038a
+msgid "**2. Turn on the GPS**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:57
+# 017af580294447c2bffa48a895360398
+msgid "Before you turn on your GPS, go outside where you have a clear view of the sky.  Because the GPS determines your location by receiving signals from satellites, **it won’t work indoors**."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:60
+# 3802cd3da3a141bb9168d0593a251cbc
+msgid "On the right side of your GPS, press and hold the :guilabel:`Power` button. The GPS will start, and it will show you the Satellites page.  You should see something like the image below.  Your GPS is looking for satellite signals. When it has connected to three or more satellites, it will have your location."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:68
+# f5503471127a467b9c8f0db924f510e4
+msgid "Once your location is determined, the :guilabel:`Satellite` screen will disappear and you will see the :guilabel:`Main Menu`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:74
+# 03308e1738df4ef08697211526310f95
+msgid "**3. GPS Setting**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:76
+# e6d062758d4b4f9fa52f305eb02ad9d6
+msgid "*3.1. GPS mode settings*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:78
+# 8f30dd7f56244cbb8269bbe6840735a4
+msgid "Access the :guilabel:`Setup` menu on the :guilabel:`Main Menu` by using the :guilabel:`Page` button. Then go to the :guilabel:`System`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:87
+# a14b0f21eeaa42f3865b8b892bde8e94
+msgid "In the :guilabel:`System` menu you can find some of the settings are as follows:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:90
+# ab0921156ec642d8b14962b5cfcd7695
+msgid "GPS: regulate how the GPS sensor work. Choose the :menuselection:`Normal` option. The device captures only the signals from the GPS satellites. But your position accuracy sometimes less accurate (about 10-30 meters)."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:94
+# 331b6219959c4d53a017f05dbe0456ed
+msgid "WAAS/EGNOS: WAAS stands for Wide Area Augmentation System, while EGNOS stands for Euro Geostationary Navigation Overlay Service. There are generally provided by the GPS accuracy is 15 meters. WAAS / EGNOS is a system satellites and ground stations that provide GPS signal corrections, giving you a better position accuracy (to less than 3 meters). You should choose the mode WAAS / EGNOS by selecting :menuselection:`Enabled` to get better accuracy, but with the consequence you have to prepare a backup battery."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:107
+# 9974abb230ae4cbb95240b58e041c5f6
+msgid "Battery Type: To optimize power usage, should be adapted to the type of battery you use (default: Alkaline)."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:110
+# 120259ba929043efae5c3792d5ada8cd
+msgid "Text Language: You can choose language you want to use."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:115
+# 621a03260fa24fdd9c2eddac2c1e38a7
+msgid "*3.2. Unit Settings*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:117
+# c549aee4328d42e8a62dc0235e16f375
+msgid "Access the menu :menuselection:`Setup > Units`. In this menu, you can manage want to display units. For examples, in meter, feet, and other. You can also manage position format (decimal degree, decimal minutes degree, second minutes degree), datum (standard WGS 84) and projection (standard WGS 84)."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:128
+# d5a72fbe08634900b757169a6a4c853b
+msgid "*3.3. Times Settings*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:130
+# 48e9c391484e4142b25086a3792515e6
+msgid "Access the menu  :menuselection:`Setup > Time`. You can manage time format (12 hours or 24 hours) and your time zone."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:139
+# 63e8b5dc719f4f9493f611a578713c8c
+msgid "*3.4. Page Settings*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:141
+# 962c89ba2161402980ad7298db5d2b4d
+msgid "Access the menu :menuselection:`Setup > Page Sequences`. You remember about function Pages button ? You can manage pages function often your use, so you do not a lot of pressing a button to access the page function. You can press the Page button several times to page you want access the function . You can add page function with select :guilabel:`Add Page` then select function such as: :guilabel:`Tracks` (to see details of your trip), :guilabel:`Map` (to view maps), :guilabel:`Satellite` (to view the status satellite, position, and accuracy)."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:156
+# 57c804baa9a94f9db38ad5e3b27075ef
+msgid "*3.5. Tracks*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:158
+# fd29cef94c7a4c61b7768145f5e79a39
+msgid "Access Tracks menu. Do you remember the track function? Tracks can record your track ride, it is very useful for mapping the road. In the menu there are a few settings such as:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:162
+# 3ed86740d5764b5bbe36dfaf17511ab4
+msgid "Track Log:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:164
+# d4fee0f1347348d69bc794eddaa61a2e
+msgid "“On” - track record, track trail will be visible on the map. Make sure the setting is selected before you start mapping."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:166
+# 3d688a68f47640a8b34aca37a9abe927
+msgid "“Off” - stop recording the track, should you choose this setting every time you finish mapping."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:172
+# 5665eefff407481a93f37ae24db1a319
+msgid "Then, still in the :menuselection:`Track menu`, select :guilabel:`Setup`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:177
+# 814ee2c8c79540b6ab802aaa9a465b3d
+msgid "“Wrap When Full”: Put a check in this option. GPS device can save automatic your track, after out of memory."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:179
+# 514d069df4004c2492f646dd706eec3f
+msgid "Record Method:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:181
+# 2412295de24746fda4cec0cc2feddac8
+msgid "“Distance” – track recording every certain distance range"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:182
+# 62a0467354f4459ea02c16192e79207a
+msgid "“Time” – track recording every time range"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:183
+# 1425eb1b06a74604a334a54d3fb49d5e
+msgid "“Auto” – track recording automatic (should be choose this setting)"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:185
+# af82c34f60284077b2dbb6b364cc1a47
+msgid "Interval:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:187
+# 87dcd50c9d7f496c82bd162ad570def2
+msgid "This setting decide how often the GPS will record your track ride. Often you record your track make produce a line of track is smooth and tidy but will drain the battery faster. If least often, recording infrequently, the line produced track will appear broken."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:192
+# f4610cc533b14dd5b105ea7aa03f8889
+msgid "“Most often” – track recording at any time as often as possible"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:193
+# 9cd71af6c1e54662835083bf6eacb312
+msgid "“More often” – track recording done as often as possible"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:194
+# f5532a9fdeb24ea581671ed6282f80c3
+msgid "“Normal” – track recording at normal"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:195
+# c1a9e767aeb84e82a1c082e7d87e7570
+msgid "“Less often” – track recording not at any time (below normally)"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:196
+# e3b1739ed0f0413e8fc3156059bd219e
+msgid "“Least often” – track recording infrequently"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:198
+# ba02626d97494a9a821a62cc6d48217f
+msgid "Color: You can change display line color on track maps."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:203
+# ba5cf980a3bc408681adc603a8e262ee
+msgid "**4. Navigate the GPS**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:205
+# c939a64c460a4dbfa07afbd683ed1691
+msgid "The GPS has different screens and menus that allow you to do different things.  To switch between screens, press the button marked :kbd:`X`, just above the power button on the right side of the device.  This button also serves to go back.  If you press something by mistake and would like to cancel or go back, press the :kbd:`X` button."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:210
+# fa3b1a32d3f74826a73b0ab6630342f6
+msgid "By pressing the :kbd:`X` button, you should be able to flip through different screens that will look something like this:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:226
+# 8a2f1b59061a4767897e589953078615
+msgid "If you return to the :guilabel:`Satellites` page, you can see that you are connected to three or more satellites.  In the upper left corner are your coordinates, your latitude and longitude."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:229
+# 32975ac1d12b42c3990fd8844ea4c504
+msgid "Flip to the Map page, and you can see a map of where you are.  If you have added OSM maps to your GPS, you may see roads and places.  Otherwise, the map may look quite blank. Zoom in and out by pressing the up and down arrow buttons on the left side of the GPS."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:234
+# d46e08a8e5a145b6bdc12f20075d0a9a
+msgid "**5. Tracks and Waypoints**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:236
+# 0ba72cf7293240d9ac7314bc1ec1bab3
+msgid "Your GPS records two kinds of information that are useful for creating maps or saving the coordinates of a place.  First, it allows you to save your location in the memory of the GPS.  When you save a location, the coordinates will be saved with a name.  For example, your first saved point will be named 001, the second 002, and so on.  When you save a point, you can write down the number on a piece of paper, along with a note about what it is, any any attribute or indicators you would like to know.  Saved locations on your GPS are called waypoints."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:246
+# fba816830cc642648d76e6f1e6824d57
+msgid "Second, your GPS can save what are called tracks. While a waypoint only saves a single location, a track will save a series of locations wherever you move.  For example, the track will record your location every one second, or every one meter, and the result will be a series of dots that show the path of where you have been.  Tracks are useful for mapping objects that are represented by lines or shapes, such as the course of a road, or the shape of a field."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:257
+# a0017a4b7dd245aeb49925c6485090ba
+msgid "A GPS can record a single point as well as a path of where you travel. Here the points are numbered in the order they are recorded. The path or “track” is shown in green line and the “waypoint” is shown in red."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:262
+# d3c5d134c84f44c08aff687f3feb40e5
+msgid "**6. Save Your Location**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:264
+# 6a9605b4a5834c1094ac64fa0e4411d7
+msgid "To save your current location as a waypoint, click the :kbd:`X` button until your reach the Main Menu.  Using the joystick, move it so that :guilabel:`Mark` is highlighted on the screen.  Push the joystick button down to open the :guilabel:`Save Waypoint` page."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:275
+# 77917f00cb60482d9dbb1d3647627345
+msgid "You can see on this page some information about the waypoint that you are saving.  First is the name.  If this is your first waypoint, it probably reads “001”.  This is the number you should record on paper along with the information you want to collect with this object.  Next you will see the time and date when the point is recorded.  Below that are the coordinates, followed by the altitude."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:281
+# fb7935d87d874a618540569dfabbbf4c
+msgid "Use the joystick to move to the :guilabel:`OK` button at the bottom of the screen. Press the joystick button down to save this point.  Be sure to write down the number of the point, along with what the place is and any other information you want to record about the place in your notebook."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:285
+# 4556e0d0629e40a3a6938f4a02cf7119
+msgid "Press the :kbd:`X` button to go to the map page.  You should now see your point on the map."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:288
+# 81db3498027948eb942d9c79e4acf4cf
+msgid "**7. Turn on the Track Log**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:290
+# 9caa6c308a42473490e2970f82b67146
+msgid "Now that we have learned how to save points, let’s learn how to turn the track log on and off.  When the track log is turned on, it will automatically record your path.  It’s good practice to turn on the log when you begin mapping, and turn it off when you are finished.  You will then be able to look at the track on a computer and see the path that you mapped.  If you would like to map the course of a road, it is a good idea to save a waypoint at the beginning and end of the road, writing in your notebook the name and type of the road, and any other important information about the road."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:299
+# 8ee6eb6cc5e24b64832bb7c8c10a51dd
+msgid "To turn on the track log, click the :kbd:`X` button until your reach the page that says Track Log."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:305
+# be5a807db63b4bcc8f704eaaca4ff8c6
+msgid "If you would like to empty the track log to delete earlier recordings, use the joystick to select :guilabel:`Clear`, and press the joystick down. The bar at the top should read “0%”."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:308
+# 8ba5cbd3b65444ab93c4c3bd0ec9d16b
+msgid "To turn on the log, move the joystick to highlight “On”, and press the joystick down.  The track log is now recording your path."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:310
+# 4084948e7b0340a18445d428663d79c6
+msgid "Under the :guilabel:`Set up` option, you also can set time or distance intervals to track.  Time intervals instruct your GPS to record your location at given intervals.  If you have a memory card in your GPS, it is good practice to set this to 1 second, meaning that every second your location will be added to the track log.  This may be useful when detailed surveys are needed."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:316
+# 0a68fea8d4a14406bc925f365b89023f
+msgid "Press the :kbd:`X` button to go to the map page.  As you move you will see your track shown as a series of dots."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:319
+# 097a3d3f08c84d0bb7f8673916dcce4a
+msgid "**8. Copy Waypoints and Tracks to the Computer**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:321
+# 85aa97cfd89f4959af455bac48cf7189
+msgid "*8.1. Attach GPS to the Computer*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:323
+# e0048dd6a8d94458b308ade4c3ba39db
+msgid "When you are finished mapping with the GPS you will want to copy the points and tracks to your computer so that you can open them in JOSM. First, turn off the track log on your GPS, by going to the track page and selecting :guilabel:`Off`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:327
+# a0fb37b6942f45ec9da64c4918a58e6b
+msgid "Attach the GPS to your computer with the cable.  One end should plug into your computer’s USB port, and the other goes into the back of the GPS, beneath the rubber flap at the top.  The GPS should be turned on to copy the points and tracks."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:332
+# 0831ba24ef074671aaa7fbf364411366
+msgid "*8.2. Install GPS Drivers*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:334
+# 27e2475049a148d991badec4eaf9dc0e
+msgid "You may need to install GPS drivers on your computer.  Open your training folder and find software/USBDrivers_23.exe.  Double-click it and install."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:336
+# 85f0f042a1c74f41b457181a8b23c669
+msgid "If you don’t have this file, you can download it.  Open your internet browser and go to: `http://www8.garmin.com/support/download_details .jsp?id=591 <http://www8.garmin.com/support/download_details.jsp?id=591>`_"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:340
+# b4e3934f8d9f4437bc6e116980c8140e
+msgid "Click :guilabel:`Download` to get the installation file.  Locate it on your computer, and :kbd:`double-click` to install."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:343
+# c71c70455f1e449c8cfdfe5cec30a140
+msgid "*8.3. Get the GPSBabel Setup Program*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:345
+# 322675b4dd18441fb0a986cb5ddcb799
+msgid "GPSBabel is a program that allows us to copy data from the GPS.  It is saved as *GPSBabel-1.4.2-Setup* in the software/ folder."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:347
+# f756d1edba2f4f4eacf9e9f04ad0451c
+msgid "If you don’t have GPSbabel already, open your web browser and go to `www.gpsbabel.org <http://www.gpsbabel.org>`_"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:350
+# 38fbd1e8c8e245e0a1c1cf5313bb9418
+msgid "Click :guilabel:`Downloads` at the top of the page."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:351
+# 848b40a506414b5ea2fb1355d574716a
+msgid "Scroll down the page.  If your computer uses Windows, you want to download the installation file for Windows.  Click *GPSBabel-1.4.2-Setup.exe*.  The file will be downloaded to your computer."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:355
+# 810fef51ac6d45e0969835659090b1a2
+msgid "*8.4. Install GPSBabel*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:357
+# 95bf29c68bf546cda1a079a5cc0f3f59
+msgid "Locate the GPSBabel setup file on your computer. :kbd:`Double-click` it to install."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:359
+# dada8fe33f8e47d384225c97b26dbfa9
+msgid "Click :guilabel:`Next`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:360
+# 6092e49329b24d69972f93c0cc422e99
+msgid "Click :guilabel:`I accept` and :guilabel:`Next`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:361
+# b81c6dc7f33f4b188e17a08049911ecf
+msgid "Continue clicking :guilabel:`Next` until the program installs."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:362
+# e81539d7d5a246faa81e5843943469cc
+msgid "When the program has finished installing, click :guilabel:`Finish` to start GPSBabel."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:365
+# 85cd344fe0e842e0850eecce8ef3638e
+msgid "*8.5. Copy Tracks and Waypoints*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:367
+# b22a69f7940d446ba611eb9b7c477212
+msgid "Click in the circle next to the word :guilabel:`Device` at the top of the window."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:373
+# c7eab2084b1348eb868ce901dca7ce82
+msgid "In the dropdown menu labelled :guilabel:`Format`, select :guilabel:`Garmin serial/USB protocol`"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:375
+# e5bb3c5a14a14eeface3f455d9ba1c5a
+msgid "Go down to the middle of the window, under Output.  In the dropdown menu labelled :guilabel:`Format`, select :guilabel:`GPX XML`:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:381
+# 53771227bc684097817deda8d2300294
+msgid "Click :guilabel:`File Name` and type a name for your saved file.  It should be something that describes the data, such as the date and the location.  For example: *jakarta-07-07-2011*."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:384
+# 1755ce272a1543078ddf0f1f4a4ca5fa
+msgid "Make sure your GPS is connected to the computer and turned on."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:385
+# c7be6ac002c04bd083dbaf955eb526f6
+msgid "Click :guilabel:`Apply` in the bottom right corner of the window."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:386
+# 6e909a03f4844c9c89f422caf0998abb
+msgid "If all goes well you should see a bar move across the screen, indicating that the data is being retrieved from the GPS.  When it is finished, your points and track will be saved in the file that you selected."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:390
+# 06ba0bad444a4fcdb43f0e55ebcf2de2
+msgid "*8.6. Open in JOSM*"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:392
+# 1f1692e1df0f42b89e856df69c7e12f5
+msgid "Now open JOSM.  On the top menu, click :menuselection:`File > Open...`"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:393
+# 4ac20a644c3f4008a05e84056bf8e03c
+msgid "Find and select the file that you created with GPSBabel.  Click :guilabel:`Open`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:395
+# aeee37790ddb4a7bbfbf6dd30faaa4af
+msgid "You should now see your points and tracks loaded into JOSM."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:400
+# 289f9d1c85ab434e86bdf7cb56110366
+msgid "**9. Upload GPS data in JOSM**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:402
+# 9a4e595bdd75406c9786c36be4dc9998
+msgid "Adding GPS tracks and waypoints to the OSM server is very useful for many reasons / goals. (If you don’t want your GPX data is seen by others, you don’t need to read this section. You just show your GPX Data on JOSM locally on your computer). First of all, it should be understood that the tracks GPS is the most helpful way to collecting data and georeference (provides geographic/spatial references) objects in the OSM. Upload GPX tracks to the server allows you to share more information. Other people who don’t have access, who can’t reach the location or because of the limitations of GPS, they can still obtain information of data without the need to stay / settle on that location and do not need to rent a GPS."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:413
+# cd227840cedf4ef1a13e6f0c1c3985e9
+msgid "The easiest way to upload GPS tracks is to download the plugin :guilabel:`DirectUpload`:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:416
+# 22f48edfe66849859ada67870cf29bc8
+msgid "Open JOSM and Click :menuselection:`Edit > Preference > Plugin` box."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:417
+# 7407ad988c594b759e75dcb52d8bf255
+msgid "Type directupload on the :guilabel:`Search` box, give the check mark, then click :guilabel:`OK`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:423
+# d568e395b5124093b632661d55d22694
+msgid "Restart JOSM."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:424
+# a649dd305722473c9694f66d1d6c681b
+msgid "Open your GPX file on JOSM."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:425
+# 9db9a9cb3814474b8c8da2afb9bc1057
+msgid "Click :menuselection:`Tools > Upload Traces`"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:430
+# 7d06dea3474e4eed99ef704635aa2db9
+msgid "Describe your GPX file, write multiple tags, and visibility. On visibility option, you can chose “private”, “public”, “trackable”, or “identifiable”:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:433
+# 4d17f9009fad46c4bd137507061b3f67
+msgid "Private: tracks will not appear on the public track list. Trackpoints are accessible at different times through the GPS APIs public without time stamp."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:436
+# 21a97e60510345eba1f43230ef76f0a1
+msgid "Public: your tracks will be visible to the public (general) on your GPS tracks and GPS tracks on the public list. Other users can still download your tracks from the public track list and their time making a point contained in it. However, the data does not appear in the API reference on the page of your tracks."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:441
+# 3d2f0b6a1a2b4957ac507a6254ba7909
+msgid "Trackable: tracks will not appear on the track list public, but trackpoints will remain accessible via the public API and its GPS time taking its points. Other users can still download trackpoints but it will not be referenced with you."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:445
+# 587e782f89d14f3e83deea5376a3ffa3
+msgid "Identifiable: Your tracks will be visible to the public (general) on your GPS tracks and public GPS tracks list. Other users can download your tracks and connect with your username. Making time points on the track can also be accessed through the public API GPS."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:453
+# 40873a78e1d7472e9a21031b0f63140c
+msgid "Click :guilabel:`Upload Trace`. If requested to enter a username and password, you can enter the username and password of the account OpenStreetMap and check the :guilabel:`save user and password` then click :guilabel:`Authenticate`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:458
+# fb63b44020504fb68aa7ae8e55e2fad1
+msgid "**10. Edit GPS Data using JOSM**"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:460
+# ffb055c4c997435c826039de04d38575
+msgid "After you successfully open and upload the GPS data, you must enter the GPS data as the field result into OSM server. The following way:"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:463
+# 3b65df3b33aa48198677cf733734674b
+msgid "Open a file gpx results of your field data back using JOSM."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:464
+# a91abd1b74e247568f5b850b3d90003e
+msgid "Click :menuselection:`File > Download from OSM`, You don’t have to re-draw"
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:465
+# 385619b5fb004fa2b7321086b9536d79
+msgid "the box to download because JOSM been reading your region according to the GPS layer automatically. Click :guilabel:`Download`."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:471
+# 5cd921464f9a466a9046c35cd1eb7307
+msgid "After downloading the data successfully and appears in JOSM layer, you can edit the OSM Data (Data Layer) is based on the GPS field data. To make it easier to add data, you can add Bing Satellite imagery. You can draw an uncharted street (a line) with the following results of the existing record GPS tracks."
+msgstr ""
+
+#: ../../source/training/beginner/osm/104-using-gps.rst:480
+# 6ff0b6175e334166917b3a28d1050036
+msgid "After you have finished editing OSM data, don’t forget to upload the data to the OSM, click :menuselection:`File > Upload Data`."
+msgstr ""
+

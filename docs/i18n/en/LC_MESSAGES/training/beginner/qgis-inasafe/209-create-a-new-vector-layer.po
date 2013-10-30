@@ -1,0 +1,722 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-30 10:04\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 5ec2a8768e3f48e6ab220e790692f650
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:8
+msgid "Module 9: Create a New Vector Layer"
+msgstr ""
+
+# 8f15d4a8ab1648e7aa236ed52f9078a5
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:10
+msgid "**Learning Objectives**"
+msgstr ""
+
+# 73c074c1ad934069bbbf1939027020ec
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:12
+msgid "Add a raster layer for digitizing"
+msgstr ""
+
+# abbaad5c7b864420b9be65aa12e5498b
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:13
+msgid "Create new vector features (polygons, lines and points)"
+msgstr ""
+
+# 94763ecdd51b4b03895d8e4fafcf8c05
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:14
+msgid ""
+"Digitize a new vector layer by tracing the raster layer, considering topology"
+msgstr ""
+
+# ccd887f38bcc42eaa4697ee9482b7034
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:15
+msgid "Georeference an image"
+msgstr ""
+
+# aa81e701f0f047b0a025a5e7819e0e6f
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:17
+msgid ""
+"Creating a map using data that already exists is only the beginning. We have "
+"already learned how to edit and add features to OpenStreetMap using JOSM. In "
+"this chapter, we will discuss how to edit existing vector layers in QGIS, "
+"and how to create an entirely new dataset."
+msgstr ""
+
+# 251aaf1df75642bf92ad7b6a68ace24c
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:22
+msgid "**1. The Layer Creation Dialog**"
+msgstr ""
+
+# a90091ff77744c5aa3e46205b2c93e90
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:24
+msgid ""
+"Before you can add new vector data, you need a vector dataset (a layer) to "
+"add it to.  In our case, we’ll begin by creating a new data layer, and then "
+"we’ll add features to it.  First, we must define our dataset."
+msgstr ""
+
+# ad0e39e4141a4afab3d0f4536f850b6d
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:28
+msgid ""
+":guilabel:`Create a new project` in QGIS, by clicking on the :guilabel:`New "
+"Project` icon."
+msgstr ""
+
+# 9a3c0f31c0244bb6ac898a4bb3b677ce
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:34
+msgid ""
+"Go to :menuselection:`Layer ‣ New ‣ New Shapefile Layer`.  You’ll be "
+"presented with the following dialog:"
+msgstr ""
+
+# 5df5f8adf8b14c81ae4b34b77b2b43fe
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:40
+msgid ""
+"At this point we must decide what kind of dataset we want to create. "
+"Remember that a data layer can only contain features of points, lines, or "
+"polygons - never a mix.  So we must define here, when we create the layer, "
+"what type of data it will contain."
+msgstr ""
+
+# e6f077daf84e4aae9d3b15960557fc60
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:45
+msgid ""
+"Since polygons are made up of points and lines, let’s jump into polygons. "
+"Once you’ve mastered this, creating a point or a line layer should be easy!"
+msgstr ""
+
+# 593bd6fd2c1d4a3b8b1a7e8096e914c8
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:48
+msgid "Click on the :guilabel:`Polygon` button :"
+msgstr ""
+
+# c037b86f6a31472ab346b7c41f9b2725
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:53
+msgid ""
+"We’ll specify the Coordinate Reference System (CRS) in the next box. By "
+"default the box will contain the CRS of the project, which for us will be "
+"WGS84. This is a widely used and very useful CRS, so let’s stick with it!"
+msgstr ""
+
+# 3535b122d6794fa5994368166d11e0ca
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:61
+msgid ""
+"When we create our new layer, the attribute table will only have one column "
+"by default - **id**.  This attribute contains a unique id number for every "
+"feature.  We can add additional fields to the attribute table now, when we "
+"create the layer.  Let’s add a name field."
+msgstr ""
+
+# 1216e92c9eb84d959eb35e54ce147b85
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:65
+msgid ""
+"Type :kbd:`nama` into the box next to Name.  The settings should match those "
+"shown here:"
+msgstr ""
+
+# 8a1f2ada45e64a05bb18d28ff6d28e58
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:71
+msgid "Click the :guilabel:`Add` to attributes list button."
+msgstr ""
+
+# 848b397fe9804c139e6c155165465e80
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:72
+msgid "Your attributes list should now look like this."
+msgstr ""
+
+# ab8514fa7af14a66857441b7c488503d
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:77
+msgid "Click :guilabel:`OK`. A save dialog will appear."
+msgstr ""
+
+# a0ac449883414012b87372c9aa8950aa
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:78
+msgid "Navigate to a directory of your choosing."
+msgstr ""
+
+# 635172f9f0d940a6be653169e9eb23e0
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:79
+msgid "Save your new layer as :kbd:`gedung_kampus.shp`."
+msgstr ""
+
+# 7b1449a7d877480fba4efa26fb277f29
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:81
+msgid "The new layer should appear in your Layers list."
+msgstr ""
+
+# 56d82e5ebb804c44af34b1f0f8869bfc
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:83
+msgid "**2. Data sources**"
+msgstr ""
+
+# b18177c4927544de80b5012d43e9f619
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:85
+msgid ""
+"When you create new data, it should obviously represent objects that really "
+"exist on the ground.  We have already learned of numerous ways to collect "
+"data using OpenStreetMap tools.  We learned about GPS to record locations, "
+"Walking Papers, and of course, aerial imagery.  These are all tools that we "
+"can use to identify real-life locations and record them in a digital data "
+"layer."
+msgstr ""
+
+# 6a378d72455148d699465c70a49c848e
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:92
+msgid ""
+"In QGIS, we can use the same types of sources to get information about the "
+"ground.  In this example, we will once again turn to aerial imagery, but "
+"instead of using Bing, we will use a raster image provided in the tutorial "
+"directory."
+msgstr ""
+
+# fdd45d0cf0a6438c815178ce69b05e22
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:97
+msgid "Click on the :guilabel:`Add Raster Layer` button:"
+msgstr ""
+
+# 69a6ff6f52034f9f952f7b1578444b81
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:102
+msgid "Navigate to :file:`../qgis/Sleman/`."
+msgstr ""
+
+# 8cd1ccd599174c6187434b33de25104b
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:103
+msgid "Select the file **UGM.tif**."
+msgstr ""
+
+# 939a0f3ed2044871afb001a2bc9bc68d
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:104
+msgid "Click :guilabel:`Open`. An image will load into your map."
+msgstr ""
+
+# 85ca9e1d6ef64c8fb6bf06e9b10e989c
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:105
+msgid "Find the new image in the Layers list."
+msgstr ""
+
+# ac35648dadee4d09a9c14cb1d5a6d12d
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:106
+msgid ""
+":guilabel:`Click and drag` it to the bottom of the list so that it is below "
+"the vector layer you created in the previous section."
+msgstr ""
+
+# 8b4d5f9724c04e5f836a70cd079f7f5e
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:112
+msgid ""
+"Go to :menuselection:`Settings ‣ Project Properties` and :guilabel:`enable "
+"“on the fly”` transformation."
+msgstr ""
+
+# d629dcf6dd5b42ab9c643701c0db2843
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:114
+msgid ""
+"Make sure that “WGS 84” is selected as the CRS, and click :guilabel:`OK`."
+msgstr ""
+
+# 8774ed6689c345a3835821c0600d2fbb
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:119
+msgid ""
+"Right click on the :guilabel:`UGM layer`, and click :guilabel:`Zoom to Layer "
+"Extent`"
+msgstr ""
+
+# 6e154ce561ba44e29fb3b83ca6278174
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:121
+msgid ""
+"Zoom in to the center of the raster image. We will be digitizing three areas:"
+msgstr ""
+
+# 3d1e65f7b64243289d558fe46ee591fd
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:127
+msgid "**3. Digitizing**"
+msgstr ""
+
+# 62cee655f36e4bfa9f952eefcd16099c
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:129
+msgid ""
+"Digitizing, as you might have guessed, is the art (or science) of creating "
+"digital vector data from another source, such as a raster image.  In order "
+"to begin digitizing, we must first enter Edit mode.  GIS software commonly "
+"requires a separate mode for editing, to prevent users from accidentally "
+"editing or deleting important data.  Edit mode is switched on or off "
+"individually for each layer."
+msgstr ""
+
+# ebc2a94078414602abfe5a77ec380f58
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:136
+msgid "Let’s enter edit mode for the *gedung_campus* layer:"
+msgstr ""
+
+# 1e71df84b6a749e7a7c0d9c401d0dce0
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:138
+msgid ":guilabel:`Select` **gedung_campus** in the Layer list."
+msgstr ""
+
+# a7aeb07808514e64b25a75312c7c6548
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:139
+msgid "Click on the :guilabel:`Toggle Editing` button:"
+msgstr ""
+
+# 5654a1a5abc342dd98b37401e2881932
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:144
+msgid ""
+"If you can’t find this button, check that the Digitizing toolbar is enabled. "
+"There should be a check mark next to the :menuselection:`View ‣ Toolbars ‣ "
+"Digitizing` menu entry."
+msgstr ""
+
+# 003be99ce79345c3b4fc3dcd74b2dc37
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:148
+msgid "Once you are in edit mode, the digitizing tools will become active:"
+msgstr ""
+
+# a1e8bf9ddd714e65be47aa2f5875b85f
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:153
+msgid "From left to right on the image above, they are:"
+msgstr ""
+
+# 330919ac91fa4499ae0f8b9df48a25ba
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:155
+msgid "**Toggle Edit**: activates / deactivates edit mode."
+msgstr ""
+
+# 418544567e6e4a999173fd2fc9350e1e
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:156
+msgid "**Save Edits**: saves changes made to the layer."
+msgstr ""
+
+# 82a88208b1af4871b91149aa9db3db36
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:157
+msgid "**Add Feature**: start digitizing a new feature."
+msgstr ""
+
+# 410c4494673a404ab4f779a1eae051f1
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:158
+msgid "**Move Feature(s)**: move an entire feature around."
+msgstr ""
+
+# 0a9caa149eaf4b9fa029da13c1b504ec
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:159
+msgid "**Node Tool**: move only one part of a feature."
+msgstr ""
+
+# a9b834ea852241e897bb14537733af1a
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:160
+msgid ""
+"**Delete Selected**: delete the selected feature (only active if a feature "
+"is selected)."
+msgstr ""
+
+# f9d83e402e24454dbc719873d8932c1c
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:162
+msgid ""
+"**Cut Features**: cut the selected feature (only active if a feature is "
+"selected)."
+msgstr ""
+
+# 03a90cf651f44eebb459068ae442c418
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:164
+msgid ""
+"**Copy Features**: copy the selected feature (only active if a feature is "
+"selected)."
+msgstr ""
+
+# 7d57a565039d4c7ea5cc845c59299f58
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:166
+msgid ""
+"**Paste Features**: paste a cut or copied feature back into the map (only "
+"active if a feature has been cut or copied)."
+msgstr ""
+
+# 0403590a34184875831b1d5f0b782e12
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:169
+msgid "We want to add a new feature."
+msgstr ""
+
+# 2e94d2d2ff5746149d8810ef687b0d3b
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:171
+msgid "Click on the :guilabel:`Add Feature` button to start digitizing:"
+msgstr ""
+
+# 1a30e4527b874c4cb4f80001f66ba576
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:176
+msgid ""
+"You’ll notice that your mouse cursor becomes a crosshair. This allows you to "
+"more accurately place the points you’ll be digitizing. Remember that even as "
+"you’re using the digitizing tool, you can zoom in and out on your map by "
+"rolling the mouse wheel, and you can pan around by holding down the mouse "
+"wheel and dragging around in the map."
+msgstr ""
+
+# 5e5a4d8b2711472c8ebcfa0208894a18
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:182
+msgid "The first feature you’ll digitize is GPS field:"
+msgstr ""
+
+# 32c5925605044f52ad921ef78c0d85cc
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:187
+msgid "Start by clicking on a point somewhere along the edge of the field."
+msgstr ""
+
+# df0faa589894423d9112946184c0f415
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:188
+msgid ""
+"Place more points by clicking further along the edge, until the shape you’re "
+"drawing completely covers the field.  This is very similar to drawing a "
+"polygon in JOSM."
+msgstr ""
+
+# 014f27bdff6f4c639b3ee2ab34e7d8d9
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:191
+msgid ""
+"To place your last point, :guilabel:`right-click` where you want it to be. "
+"This will finalize the feature and show you the Attributes dialog."
+msgstr ""
+
+# c64583d2693942aca09b77acf172b7c7
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:193
+msgid "Fill in the values as shown here:"
+msgstr ""
+
+# 97b8213c666649a1b80423504585989d
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:198
+msgid "Click :guilabel:`OK`. You’ve created a new feature!"
+msgstr ""
+
+# 5ae5d8c4aca84644ac4a646a4e2bd0db
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:200
+msgid ""
+"Remember, if you’ve make a mistake while digitizing a feature, you can "
+"always edit it later.  Simply finish digitizing the feature and then follow "
+"these steps:"
+msgstr ""
+
+# 8f097b359ea445e2883b0a1663672440
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:204
+msgid "Select the feature with the Select :guilabel:`Single Feature` tool:"
+msgstr ""
+
+# 0975a496644e45aa953f267d2520a80b
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:209
+msgid "Then use one of these tools to edit the feature:"
+msgstr ""
+
+# 94ac82676f6a4b688d0aaa6cadcd4fe3
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:212
+msgid "Move feature(s) tools"
+msgstr ""
+
+# 021b111e401e43e9862a1cd8ffcce4b5
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:212
+msgid "Move the entire feature(s)"
+msgstr ""
+
+# 8418849d274c42a2b1892d131cf7f844
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:214
+msgid "Node tools"
+msgstr ""
+
+# 5fdb96f83ab3485bbe6fc8efc756c55d
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:214
+msgid "move only one point where you may have misclicked"
+msgstr ""
+
+# 9bda5a10812c48ceab63214522b3a45e
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:216
+msgid "Delete selected"
+msgstr ""
+
+# 2ff5c0da6009490694f1ef19d090cb3f
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:216
+msgid "get rid of the feature entirely so you can try again"
+msgstr ""
+
+# 6f66533bc14541eab969866b840895ec
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:218
+msgid "Edit > Undo or Ctrl + Z on keyboard"
+msgstr ""
+
+# e39842bedc974df98d3c44507ae8cfc3
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:218
+msgid "Undo mistakes"
+msgstr ""
+
+# e8cbae5250e54f80bb040dbcbbed9501
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:221
+msgid "Now try it on your own:"
+msgstr ""
+
+# 04b31827501f4bbba373e33350834582
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:223
+msgid ""
+"Digitize the school itself and the upper field. Use this image to assist you:"
+msgstr ""
+
+# 29472ad68ac24fbab52b7b7982a8f473
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:228
+msgid "Remember that each new feature needs to have a unique id value!"
+msgstr ""
+
+# 3d747cf7361b464b9fe54102327a0b24
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:230
+msgid ""
+"When you are finished adding features to a layer, you must save the changes "
+"to that layer."
+msgstr ""
+
+# 72dc207eab9643f3a566df087ab71ee3
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:233
+msgid "Click on the :guilabel:`Toggle Editing` button."
+msgstr ""
+
+# 3a74498add924bb5a284b85e842b095a
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:238
+msgid "You will be asked to save your edits.  Click :guilabel:`Save`"
+msgstr ""
+
+# a956888f32c540ef8c7d5524da0d344d
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:243
+msgid ""
+"Now you know how to create polygon features!  Creating points and line "
+"layers is just as easy - you simply need to define the type of layer when "
+"you create it, and of course you can only create points in point layers and "
+"lines in line layers."
+msgstr ""
+
+# b411e5597ad24bee9ac313fafbe07b1d
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:248
+msgid "**4. Georeferencing**"
+msgstr ""
+
+# ee790bd5699c4da389f74ad922a73991
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:250
+msgid ""
+"In the previous section we digitized a raster image, thus creating vector "
+"data.  This is essentially the same process as when we use Bing imagery in "
+"JOSM to add to OpenStreetMap.  And in both of these cases, the imagery that "
+"we use is already **georeferenced** - that is, it is correctly placed in its "
+"proper location."
+msgstr ""
+
+# 80aba117cdd94b4fa960539b067386b9
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:256
+msgid ""
+"When an image is georeferenced, it is stretched in different ways so that "
+"each pixel in the image corresponds as closely as possible to the area it "
+"represents on the spherical Earth.  Because it is difficult to perfectly "
+"align a flat image on a round object, there are often small georeferencing "
+"errors, as we learned previously with imagery offset."
+msgstr ""
+
+# 300b990fd9104d67ac0430bc8a58acf8
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:262
+msgid ""
+"What if you have a map that is not georeferenced?  What if you have a paper "
+"map given to you by a government agency?  How can you digitize it?"
+msgstr ""
+
+# 2eab7e93e6e64cf780cdf3ff3ceb7095
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:265
+msgid ""
+"The first step is to turn your paper map into a digital image that you can "
+"manipulate with your computer.  You can do this with a scanner (or possibly "
+"a digital camera), although doing so is beyond the scope of this chapter."
+msgstr ""
+
+# 1f523b609814410dbaa8cac83d86fe63
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:269
+msgid "*4.1 Georeference an Image*"
+msgstr ""
+
+# a4187416e6c84bb9b48b471eb404da4f
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:271
+msgid ""
+"Now we will learn how to georeference an image in QGIS so that is correctly "
+"located on Earth.  We will be using a map provided in the tutorial files, "
+"which looks like this:"
+msgstr ""
+
+# 56476aa21dff4cadabf2afbd10303c66
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:278
+msgid "Start a new QGIS project.  Save your previous work if you like."
+msgstr ""
+
+# a3590441d82d4af885e247db62e542ea
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:279
+msgid "Go to :menuselection:`Raster ‣ Georeferencer ‣ Georeferencer`."
+msgstr ""
+
+# 4392273bf1c441079bc627926c60be6c
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:284
+msgid "Click the :guilabel:`Open raster` button."
+msgstr ""
+
+# 60ea174e23dc493eba31ac795386e905
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:289
+msgid ""
+"Find the *file peta_krb_merapi_2002.jpg*, which is located in the the "
+"folder :file:`../qgis/Sleman/Merapi`.  Click :guilabel:`Open`"
+msgstr ""
+
+# c6a27b2fe4ae45a09933b59a473cef6c
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:291
+msgid "Select :guilabel:`WGS 84` when prompted and click :guilabel:`OK`."
+msgstr ""
+
+# 60f5d37e100548a4ada4d33943b8bf9b
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:296
+msgid ""
+"In order to georeference this image, we need to associate points on the "
+"image to known points on the Earth.  Such points are called ground control "
+"points (GCPs).  Luckily, this map image has latitude and longitude "
+"coordinates written on it at every corner.  So, to georeference this image, "
+"we will create four GCPs, one at each corner of the map, and we will turn "
+"our jpeg file into a geotiff, a georeferenced image."
+msgstr ""
+
+# eba3f9ed66c24ea49f933a4bc5be0a46
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:303
+msgid ""
+":guilabel:`Zoom in` to the upper-left corner of the map by using the zoom "
+"button."
+msgstr ""
+
+# bca65754a6b5427a8af7c5a237d1f060
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:309
+msgid "Click the :guilabel:`Add point` button."
+msgstr ""
+
+# 7ce8c09c60c5438bbe4cfaa0a30d2a45
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:314
+msgid ""
+":guilabel:`Click on` the very top left point of the map, right where the"
+msgstr ""
+
+# 7cb1f1a61ddc4b0196134c2f616c3e3f
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:315
+msgid "top border of the map meets the left border."
+msgstr ""
+
+# f2e61346558d48f783ae184cf61b073b
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:316
+msgid ""
+"A box will pop up requesting the x and y coordinates of the point you just "
+"clicked.  Luckily, the coordinates are written in blue on the map.  The "
+"longitude (x coordinate) is 110° 15’ 00” E and the latitude (y coordinate) "
+"is 7° 29’ 47” S.  We can enter the coordinates in the box as follows. "
+"Remember that south and west coordinates will be negative numbers."
+msgstr ""
+
+# ae5f0630f2b84d25a91fd39a835d5546
+# ea722123f5eb4da4bb079547ac5cc6cf
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:325
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:349
+msgid "Click :guilabel:`OK`"
+msgstr ""
+
+# 895d4ae83196442a889a2e1a3af45dac
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:326
+msgid ""
+"You will see a red point appear showing the location of your control point, "
+"and an entry in the table at the bottom."
+msgstr ""
+
+# 245f3e5d968e49e684ab85a8e7923bc1
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:328
+msgid ""
+"Repeat this process, creating ground control points at each of the four "
+"corners of the map.  Remember to enter the longitude and latitude that is "
+"written at each corner.  When you are finished, you should have four GCPs "
+"and your table will look like this:"
+msgstr ""
+
+# 3740556bc1fe437e8643aaeb19be97cb
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:336
+msgid "Lastly we will adjust the settings and then create our output file."
+msgstr ""
+
+# 47e86f052ebc4fb2ab66e73669194621
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:337
+msgid "Click on the :guilabel:`Transformation settings` button."
+msgstr ""
+
+# 05a7962cecdb4100a4602af99688b585
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:342
+msgid "Next to :guilabel:`Transformation type` select :guilabel:`Linear`"
+msgstr ""
+
+# 95b2fc8d8c2243088057b9104d2819c3
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:343
+msgid ""
+"Provide a filename for the output raster.  The file type will be **.tif**"
+msgstr ""
+
+# 0202789b1a7947219ea2af3ca4a6e6e4
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:344
+msgid ""
+"Check the box next to **Load in QGIS when done**. It should look like this:"
+msgstr ""
+
+# c01c655f75414ea9b36c7d58081162c3
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:350
+msgid ""
+"Now we are ready to produce the georeferenced image file.  Click on the :"
+"guilabel:`Start georeferencing` button."
+msgstr ""
+
+# 916df4ce554549c68f4ec057b05db3b0
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:356
+msgid ""
+"If you are asked to select the layer’s coordinate system, :guilabel:`choose` "
+"**WGS 84**."
+msgstr ""
+
+# 89a24a9b36254b438f74b378149091a1
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:358
+msgid ""
+"Go to :menuselection:`Settings ‣ Project Properties` and make sure that on "
+"the fly transformation is enabled."
+msgstr ""
+
+# 9e84417d4c9e4c66935efb7e1a71ffd7
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:364
+msgid ""
+"The output **.tif** file will be created and automatically added to your "
+"project.  If you hover over the image, you should see coordinates at the "
+"bottom of QGIS which are close the the coordinates you entered when placing "
+"the GCPs."
+msgstr ""
+
+# 50f72a6e4da54749a45a09084e2ff333
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:372
+msgid ""
+"Another way to see that the image is correctly placed is by adding a layer "
+"with the OpenLayers plugin.  Here we have added Bing satellite imagery, and "
+"made our new geotiff transparent to see Merapi in the background."
+msgstr ""
+
+# 2192bba9ddb748fb8647fa65e5847872
+#: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:379
+msgid ""
+"Knowing how to georeference is important when you want to digitize from a "
+"paper map or an image that is not already georeferenced.  Once you have "
+"georeferenced an image like this, you can apply the same digitization "
+"techniques that we learned previously in this chapter to create vector "
+"shapefiles that can be used in QGIS and InaSAFE."
+msgstr ""

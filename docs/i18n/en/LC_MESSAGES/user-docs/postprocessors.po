@@ -8,71 +8,109 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-08-29 15:39\n"
+"POT-Creation-Date: 2013-10-30 10:04\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+# 6cc9dd42e70e446bb15df2ac7b678495
 #: ../../source/user-docs/postprocessors.rst:8
-# 0ebc1980bf8c4f4799df6c4a9e969073
 msgid "Post-processors"
 msgstr ""
 
+# 8bc465081e664f0aa4cf4e2d4a9d4977
 #: ../../source/user-docs/postprocessors.rst:10
-# 747e221ccd87437589fb4ef57e3f9530
-msgid "This document explains the purpose of post-processors and lists the different available post-processors and the requirements each has to be used effectively."
+msgid ""
+"This document explains the purpose of post-processors and lists the "
+"different available post-processors and the requirements each has to be used "
+"effectively."
 msgstr ""
 
+# fe5c75c1634341d997300d54eec1c8d8
 #: ../../source/user-docs/postprocessors.rst:15
-# 94fb6856cb8c49f6bcb1242b13536b01
 msgid "What is a post-processor?"
 msgstr ""
 
+# e0bd569d41994371bce8f85dff408eec
 #: ../../source/user-docs/postprocessors.rst:17
-# 82ec91c16f2740de82a4bbe49f84f20d
-msgid "A postprocessor is a function that takes the results from the impact function and calculates derivative indicators, for example if you have an affected population total, the **Gender** post-processor will calculate gender specific indicators such as additional nutritional requirements for pregnant women"
+msgid ""
+"A postprocessor is a function that takes the results from the impact "
+"function and calculates derivative indicators, for example if you have an "
+"affected population total, the **Gender** post-processor will calculate "
+"gender specific indicators such as additional nutritional requirements for "
+"pregnant women"
 msgstr ""
 
+# 3f7dc84775714ca6b4da5f229359c29d
 #: ../../source/user-docs/postprocessors.rst:23
-# 9373eb1bb6164035a1978688b44ed7a8
 msgid "Selecting a post-processor"
 msgstr ""
 
+# b18c8a78ec56486eb1c19e5db7a9ff35
 #: ../../source/user-docs/postprocessors.rst:25
-# 320648cbb5784099b32c80b8d3d7e43e
-msgid "Post-processors and their settings can be edited in the user configurable function parameters dialog. See :ref:`analysis_parameters` to find the correct buttons. To disable a post-processor simply go to the :guilabel:`Postprocessors` tab and enable or disable any post-processor you like by clicking on the checkbox next to it. You can even set the postprocessing values you like here by entering the values in the fields. The same is valid for any other setting you might encounter there. If you don't see a post-processors field, it means that the impact function you are trying to use does not support any post processor"
+msgid ""
+"Post-processors and their settings can be edited in the user configurable "
+"function parameters dialog. See :ref:`analysis_parameters` to find the "
+"correct buttons."
 msgstr ""
 
-#: ../../source/user-docs/postprocessors.rst:41
-# d66ef14adeb94799bd5e4beedb89fe12
+# 4b9ea39b51ac42c58b91cd1a3b2de610
+#: ../../source/user-docs/postprocessors.rst:29
+msgid ""
+"To disable a post-processor simply go to the :guilabel:`Postprocessors` tab "
+"and enable or disable any post-processor you like by clicking on the "
+"checkbox next to it. You can even set the postprocessing values you like "
+"here by entering the values in the fields."
+msgstr ""
+
+# 251695d06b3e4c6cacccda227c93cc5a
+#: ../../source/user-docs/postprocessors.rst:34
+msgid ""
+"The same is valid for any other setting you might encounter there. If you "
+"don't see a post-processors field, it means that the impact function you are "
+"trying to use does not support any post processor"
+msgstr ""
+
+# dba945a7b5eb4567ae1df7d8d972e67d
+#: ../../source/user-docs/postprocessors.rst:0
 msgid "Post-processor configuration"
 msgstr ""
 
-#: ../../source/user-docs/postprocessors.rst:43
-# 4ead244859374b419c9b40b52dec41ba
-msgid "Each activated post-processor will create an additional report in the dock and in the printout. If problems arise while post processing, the system will inform you and will skip post-processing."
+# a53b7f7f3ab241ccabe9490b928a4b38
+#: ../../source/user-docs/postprocessors.rst:45
+msgid ""
+"Each activated post-processor will create an additional report in the dock "
+"and in the printout. If problems arise while post processing, the system "
+"will inform you and will skip post-processing."
 msgstr ""
 
-#: ../../source/user-docs/postprocessors.rst:48
-# b38ffe4930814605a3277ed30e582e78
+# 9fb940df51774a68a4eaa71b82b9905e
+#: ../../source/user-docs/postprocessors.rst:50
 msgid "Creating post-processors"
 msgstr ""
 
-#: ../../source/user-docs/postprocessors.rst:50
-# c391343030d64a9e81d94f0cde12ebf8
-msgid "If you feel there is an important post-processor which is missing, there are two avenues you can follow:"
+# 3fbbd0cc53544a2181cb694c09c9ed25
+#: ../../source/user-docs/postprocessors.rst:52
+msgid ""
+"If you feel there is an important post-processor which is missing, there are "
+"two avenues you can follow:"
 msgstr ""
 
-#: ../../source/user-docs/postprocessors.rst:53
-# 3c2e631f513848c09097976040023bda
-msgid "You can develop it yourself or with the aid of a programmer who has a good understanding of the python programming language."
-msgstr ""
-
+# c4ae0cd03e7b49b4955f2d633af0ab6e
 #: ../../source/user-docs/postprocessors.rst:55
-# 2ad3417d48e84adeae56118fefeb215c
-msgid "You can file a ticket on our `issue tracking system <https://github.com/AIFDR/inasafe/issues>`_, and if time and resources allow we will implement it for you."
+msgid ""
+"You can develop it yourself or with the aid of a programmer who has a good "
+"understanding of the python programming language."
 msgstr ""
 
+# ddefc539a50e4eff9f10d74cb746e977
+#: ../../source/user-docs/postprocessors.rst:57
+msgid ""
+"You can file a ticket on our `issue tracking system <https://github.com/"
+"AIFDR/inasafe/issues>`_, and if time and resources allow we will implement "
+"it for you."
+msgstr ""

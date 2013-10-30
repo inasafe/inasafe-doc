@@ -1,0 +1,573 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-30 08:39\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:8
+# 0d05245be7ec4ac582d06581dddf31d4
+msgid "Module 5: Calculating Damages and Losses"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:10
+# b76a0e79991d4351868d4178a96ba7ea
+msgid "**Learning Objectives**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:12
+# 704abe1f40bf4baa8f72f048c9961523
+msgid "Explain the definition of damages, losses, and their calculation based on exposure data from OSM/community participation which is impacted by disasters"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:14
+# a9ea51c4e790459eb99311ccc1259d9b
+msgid "Explain damage and losses assessment values based on BNPB and BPBD"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:15
+# 9e45188400a04a73bddcf442195f6bfb
+msgid "Making damage and losses map"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:16
+# 86b5a34aca914aaabb27c58bab30768f
+msgid "Calculate damage area"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:17
+# 8bbe8520aebb46d2b4422956b90bbea8
+msgid "Manipulate attributes data of affected features to obtain damage values for each object"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:19
+# 86c8b18b7d4241c28f0546d937815463
+msgid "Manipulate attributes data of affected features to obtain losses values for each object"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:21
+# 729270792cd047f29ed227fa8885e691
+msgid "Grouping attributes data for each administration area (hamlet, village, subdistrict)"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:23
+# 1545155a3cf640cea403b45a87d9cad9
+msgid "Join attribute data for each administration area (hamlet, village, subdistrict)"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:25
+# c66d2d53419b499b926e792eb665ebce
+msgid "Present damages and losses value using charts"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:27
+# 5396d6e1927a44d0bc6b1d65fe554429
+msgid "**A Damage and Loss Assessment (DaLA)** is usually created after after a disaster. The standard DaLA methodology was developed by the UN Economic Commission for Latin America and the Caribbean (UN-ECLAC) in 1972, and has evolved with various international organizations since. Simply, it is a methodology for approximating damage and losses due to a disaster, basing calculations on a country’s economy and individual livelihoods to define the needs for recovery and reconstruction."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:36
+# e47cf29e03bc4bf499df6e48dfb7adad
+msgid "A Damage and Loss Assessment includes the following:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:38
+# 9c96a9cb9cfa4aabb4c628883d18ba8f
+msgid "Damage calculated as the replacement value of totally or partially destroyed physical assets;"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:40
+# 100cd63e636d47bbbbca4e4b6ddcfe52
+msgid "Losses in the flows of  economy that arise from the temporary absence of the damaged assets;"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:42
+# 790ccb0ce2464da09879acbd24721936
+msgid "The resultant impact on post-disaster macroeconomic performance, with special reference to economic growth/GDP, the balance of payments and fiscal situation of the Government."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:46
+# 8121f53aaf244ab6acabe7a143a1ef20
+msgid "In this Module we will learn how to calculate some of the basic data used in a DaLA, and use various QGIS functions to design a thematic map that shows damage and loss."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:50
+# e62ac46b46c641958aa40f08702d8feb
+msgid "**1. BPBD Damage Assessment Guide**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:52
+# 5309d3d984c844ca8938b8cc7039e8b2
+msgid "The BPBD has created a guide for damage and loss assessment for Indonesia, which defines varying degrees of damage and the economic impact of individual elements. Parts of this definition are shown here:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:57
+# 2976d28351bb4f5bbcb9ff006b40308c
+msgid "These are the guidelines for **Damage & Loss Assessment.**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:62
+# 5fbe37c4f31b4d11893e352a7aa8082b
+msgid "Notice that there are several elements at work here.  First, damage to different types of infrastructure is “valued” differently. To put losses into monetary terms, a the loss of a bridge has a loss value as does the loss of a public building or a private home. Then, depending on whether a feature suffers heavy, medium, or low damage, a multiplier is applied to determine the value of the loss."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:69
+# 840ae126f8674e3b8662932e85054807
+msgid "By adding up all of the damage it is possible to assess the total damages caused by a disaster. In the remainder of this Module, we will calculate the value of the losses in our Sirahan project, and see how we can display them graphically using our map, based on the damage suffered in each hamlet."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:75
+# d3835cad1e6f4f3e97d61122184ed34d
+msgid "**2. Damage and Losses Assessment Map**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:77
+# 6009075dfacf40fcac1aa7126f531e13
+msgid "We will create a Damage and Loss Assessment Map using our data from Sirahan Village that we have been working with throughout this module."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:85
+# 19a312b6282d48c58f5ed87991c6767a
+msgid "Open QGIS and make sure that the following layers are loaded into your project:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:81
+# af90835aa36144eea3748ebc48d1673a
+msgid "area_terdampak_Sirahan"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:82
+# 35cb874ddb7d44568acde04e51b5f39b
+msgid "Jalan_Sirahan"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:83
+# 4a66a32eae2a46e289ccf34563028de2
+msgid "Sungai_Sirahan"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:84
+# bf98db82cc4644298fbd5c433c805068
+msgid "Batas_Desa_Sirahan"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:85
+# 362359f8b4d44f12b7593b16dffe3997
+msgid "Bangunan_Sirahan"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:90
+# 133f6c8bc48343658f93c7c2f1eb8514
+msgid "We will assume that all the buildings in the area_terdampak_Sirahan layer (hazard zone) suffered heavy damage from the disaster. Let’s create a spatial query to filter out these buildings."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:94
+# 350f90bab4d6475da8daa798f55819f2
+msgid "Go to :menuselection:`Vector > Spatial Query > Spatial Query` and enter the fields like this:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:100
+# 90b20f41b32046018a9e68c9df631778
+msgid "We now have a bunch of buildings selected which we are assuming will suffer heavy damages. According to the BNPB Guide, we can assess the loss of heavily damaged buildings at a rate of 1.8million Rp. / square meter, and the multiplier factor is 70%. Our formula for calculating losses is:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:107
+# 4aaa08c53e114b95a5222e246f8d328b
+msgid "*Total Building area x Loss Value per m² x Multiplier factor*"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:109
+# 420fff91006d4f8589440132d9107b48
+msgid "Therefore we want to calculate:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:111
+# a64c3cbaccad497fa7e076ce2452a8a6
+msgid "**Total Building Area x 1.8 million Rp. x 70%**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:113
+# 29d00723898c43f2a1d1d9094dc1a0f2
+msgid "in order to get a calculation of the value of total losses."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:115
+# 8249a07cac9b46b19b2321d973e7c77a
+msgid "We will use the Intersect Geoprocessing tool so that we can combine attributes from our district layer with the selection of buildings we have just made. Go to :menuselection:`Vector > Geoprocessing Tools > Intersect` and fill in the fields as follows:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:124
+# e448894ffed0485fbac0cbb72796cd96
+msgid "Save the result as Bangunan_Terdampak_perDusun."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:125
+# f7e5ab6060fc45539aa46eb55f75e82e
+msgid "Hide the original buildings layer so that your map looks like this:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:130
+# 43f91f647b274d4ea3aa99a5522dd171
+msgid "Since we used the intersect tool. Our attribute table will include the DUSUN attribute."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:136
+# d9eac19546c9412e91426172ac35e029
+msgid "**3. Calculate Damage Area**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:138
+# 1c0324a657a6481791a3ba13ae5b1367
+msgid "On the attribute table of Bangunan_Terdampak_perDusun, click the :guilabel:`Toggle Editing` button."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:144
+# cb177e4918384d62b4e9d37806ef1945
+msgid "Then click the :guilabel:`New Column` button."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:149
+# 83927a18fd50472b95cc9c7b106545e9
+msgid "Create a new column named “Damage” of type decimal number:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:154
+# 7bfe41cd750b4c5ea8776a7d1eb33003
+msgid "To calculate the damaged area of affected buildings we will use the field calculator to determine the number of square meters in each building feature. Click on :guilabel:`Field Calculator`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:161
+# f0a3ef4b9ffa408d89347073a2cdbd53
+msgid "Check the box next to :guilabel:`Update existing field` and select “Damage_Area” in the dropdown box."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:163
+# 78b9a4df127944379ab1e838a4db8b13
+msgid "Find :menuselection:`$area` under :guilabel:`Geometry` in the function list and double-click on it, so that it appears in the Expression box at the bottom. It should look like this:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:171
+# 2e7bce9c9439445fa39e0212f4b838c9
+msgid "Click :guilabel:`OK`. You will see that the column is filled in with the area, in square meters, of the buildings."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:178
+# 5dc994dde894464f9e03984a73ef5b1f
+msgid "Click the :guilabel:`Toggle Editing` button and be sure to save your edits."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:180
+# 5fefffb7c02443369a209105e0b4397f
+msgid "**4. Calculate Damages Using “Group Stats” Plugin**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:182
+# 1b0d031ddb0141fca8b1caef01eeca00
+msgid "We will be using a QGIS plugin called Group Stats in order to calculate damages by each hamlet within Sirahan. You will need to be connected to the internet to install this plugin."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:186
+# a04222ebf08346fdb17d18a7ebf1027d
+msgid "Go to :menuselection:`Plugins > Fetch Python Plugins`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:187
+# cbd7190e885d440d96c2d0fa0b0296a1
+msgid "Type “group stats” and when you find the plugin, select it and click :guilabel:`Install`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:189
+# ecb5c3f2bb044e108b76c550b5c7a81a
+msgid "Once it is installed, go to :menuselection:`Plugins > Group Stats > Group Stats`"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:194
+# a94050f375b64fb888bd59ecd9fd2708
+msgid "In :guilabel:`Choose vector layer` choose Bangunan_Terdampak_perDusun"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:195
+# 56170d400833437285ecacf70957684d
+msgid "In :guilabel:`Choose classification field` fill in ‘DUSUN’"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:196
+# aa16238d4ae7454e8b74f0b50cd99727
+msgid "In :guilabel:`Choose field attributes` fill in ‘Damage’."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:197
+# 17bd3a09d86f42ef9babf6c9ba2fe79a
+msgid "Click on :guilabel:`Calculate`  The results should look like this:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:202
+# 54b48200137a401c9d56c9aa44b774b3
+msgid "Select all the rows by clicking on the top row, holding :kbd:`SHIFT`, and clicking on the last row."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:204
+# 1fc657f4e52e4ef4b40d9e401165f40f
+msgid "Click :guilabel:`Save` and save it as BNG_Damages."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:206
+# 9184dd0d753e4d15a7cf9d2ec230abaa
+msgid "**5. Calculate Losses**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:208
+# 02a77a5a86c64da0a012f353c3e3edbe
+msgid "Now we’ve calculated the damaged area and we’ve created a table with damage data for various hamlets in Sirahan. Now let’s implement our losses formula in the wame way."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:212
+# c6fe4b2ae3b649a2b1fa04b36107c5cf
+msgid "Go back to the attribute table for Bangunan_Terdampak_perDusun and add a new column named “Losses.”"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:218
+# ea7ce0606ff040e1aad8429449cfd343
+msgid "Once again, open the :guilabel:`Field Calculator`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:219
+# dc0a947604d548f8a7d47dea1d2548f2
+msgid "Check :guilabel:`Update existing field` and choose “Losses”"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:220
+# 3d6b3058be214b889c3a18085cf8ef91
+msgid "At the bottom in the Expression box, enter the following formula:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:222
+# 07503dc6db6c4878ae6984ce3d14c103
+msgid "*“Damage” * 1800000 * 0.7*"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:227
+# 4ecdd350d1db4dfc909abbac8e31c21f
+msgid "Your new column is now filled with information calculated from this formula, which assesses the value of losses in Rp for each individual building. Save the layer and end the editing session."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:231
+# 8fc217390fc04f3dba1d409ebcfb4248
+msgid "**6. Calculating Losses Using “Group Stats” Plugin**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:233
+# 22d1139f195c4caaa8c36e2b41d41668
+msgid "Now let’s calculate losses per hamlet using Group Stats again."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:235
+# 2ed42e68984a475289c4ea233deffebb
+msgid "In  :guilabel:`Choose vector layer` choose Bangunan_Terdampak_perDusun"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:236
+# 3b333854185347faa564abaa6b00fda0
+msgid "In :guilabel:`Choose classification field` type in ‘DUSUN’"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:237
+# c86c20ea2e554b2795a409056e46ef37
+msgid "In :guilabel:`Choose field attributes` fill in ‘Losses’."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:238
+# 3ca90ea3f4bf48e7942f757e923a7335
+msgid "Click :guilabel:`Calculate`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:243
+# df912de361684a2c8443b03f2fec33b1
+msgid "The new table shows the losses in each hamlet."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:244
+# d2be00c229834750b5510582dac5ce3a
+msgid "Select all the rows in the table and click :guilabel:`Save`. Save as BNG_Losses."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:247
+# cd78c88cd6184c91b252aea742a02edd
+msgid "**7. Join Data**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:249
+# da247bfe6ba84c4fbd15ec74820b6583
+msgid "Now we will join the tables that we created to our Batas_Desa_Sirahan attribute table and then use them to add new columns to the file."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:252
+# b99b5150019540989ac89eb314547e82
+msgid "Add the files BNG_Damages and BNG_Losses into QGIS, using :guilabel:`Add vector layer`"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:258
+# 55dfa6bd0fba4db3a887700daba86123
+msgid "They will appear in your Layers list but not on your map, because they are not geographic data files, but rather tables."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:264
+# ede2da5a19d841d7b2019edcf54bc39b
+msgid "Now we will perform an operation to join the layer Batas_Desa_Sirahan with BNG_Damage. Right click on the Batas_Desa_Sirahan layer and go to Properties."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:267
+# e8e059ac418c4864a37ecc2f6632e90a
+msgid "Go to the Joins tab:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:274
+# 865a1bea338941759e1297760588c198
+msgid "Click the plus sign and fill in the following fields:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:273
+# 41ae0ed7cefb419abe4fc3489d82e51a
+msgid "Join layer : BNG_Damages"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:274
+# c933aed795664869ab84c5b701ffb01b
+msgid "Join field: DUSUN"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:275
+# 5250746531064fd2bd7c8a9b488df94d
+msgid "Target field : DUSUN"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:276
+# 694ab81a2f56494c8140a43863e9b60c
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:277
+# b8eb1da469144bc093ae8d967f1ad26e
+msgid "Open the Attribute Table for Batas_Desa_Sirahan. You can see that the table we calculated with group stats is now attached to our attributes for each hamlet."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:280
+# e984a6b37fd342f1ab43933bf09b4614
+msgid "Click :guilabel:`toggle editing` and choose :guilabel:`Field Calculator`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:281
+# 1f074b1d1878412a954d5e34ec0e958a
+msgid "This time we will create a new field inside the field calculator. Fill in the top of the window like this:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:287
+# a2333efe02734fc082b2f7fe8fcc5024
+msgid "Then in the expression box, enter *“Sum”*"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:292
+# 2fdad9d0326649ffaa2a44db9a0dc469
+msgid "Click :guilabel:`OK`. The BNG_Dmg column now contains the same value as column Sum in BNG_Damage .csv."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:295
+# 6c9b1df8a5f84a7fb2403346b248a0ee
+msgid "As the damage values for each hamlet have been obtained we can delete the join. Right-click Batas_Desa_Sirahan, select properties, go to the :guilabel:`Join tab`, and click the minus button."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:303
+# 85517bb981b448e7903701b99502d65e
+msgid "Now click the plus button, but this time join BNG_Losses in the same way as before:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:312
+# afe7e397ca7848f69c497082797230af
+msgid "Open the attribute table for Batas_Desa_Sirahan, click toggle editing and open the :guilabel:`Field Calculator`. Fill in as follows:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:319
+# e36a11bee370439dad0c8032ece7d358
+msgid "Click :guilabel:`OK` and save the layer."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:320
+# e69f4094c0704bbdbb45418c04e81873
+msgid "Now that we have calculated the loss value and saved it in a new column, we can remove the join. Open the layer properties and click the minus button to remove the join with BNG_Losses."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:324
+# b7eb28e07351487d88d8c837abddc711
+msgid "The attribute table when you finish will look like this:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:329
+# b6e69298c2ae49c286a83498c8c43f4c
+msgid "**8. Create a Chart**"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:331
+# bec8504dadeb4f09a57b4b3cf31fe1f6
+msgid "Now we will conclude by representing these damage and loss values as a chart in QGIS."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:334
+# 9554406c7a23499d9147fe6953e85fdd
+msgid "Go the the properties for the Batas_Desa_Sirahan layer and go to the :guilabel:`Overlay` tab."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:336
+# 88e8e6c86d294ce78ff39aa531d368ba
+msgid "Check the box next to :guilabel:`Display diagrams`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:337
+# 14e418373d9348649cbb41bb379c80bf
+msgid "Make sure :guilabel:`Pie chart` is selected in the dropdown."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:338
+# 8c67ae75b9094b31982f81818eca44a3
+msgid "Choose BNG_Dmg next to :guilabel:`Attributes` and click :guilabel:`Add`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:339
+# 07fa25cded5a4565a5e7c2f2df089328
+msgid "The following dropdown boxes should read “linearly scaling” and “BNG_Dmg.”"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:340
+# cd0ade99af6249a2af6f95134b1ef747
+msgid "Click :guilabel:`Find Maximum Value`."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:341
+# a3135fdf4dab4c3886ebb8cf8f5fa838
+msgid "In the size box enter “500.”"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:346
+# f2e603639e1b4c56b28312c00fe2c9a0
+msgid "The resulting map will look like this:"
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:351
+# b9c290607556415cb9ccd861aacfe6ce
+msgid "The size of each bubble represents the loss values in each hamlet. The bigger the size, the heavier the losses. Creating a map with this sort of chart can be an effective way to communicate the impact of a disaster."
+msgstr ""
+
+#: ../../source/training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.rst:356
+# 40c6b1597d424f2da49a4072f4f7e62b
+msgid "In this Module we have learned about methodology for evaluating losses, and we have learned how to calculate this in QGIS. We also learned how to export tables, join them with shapefiles, and overlay charts on top of our map."
+msgstr ""
+

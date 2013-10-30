@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-04 15:01\n"
+"POT-Creation-Date: 2013-10-30 08:39\n"
 "PO-Revision-Date: 2013-09-04 12:50+0000\n"
 "Last-Translator: macho <werner.macho@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/"
@@ -91,10 +91,11 @@ msgstr "**Lisensi apa yang digunakan untuk publikasi?**"
 
 # dc31349b0c0548eb9bbcbf56d97d0832
 #: ../../source/general/faq.rst:32
+#, fuzzy
 msgid ""
-"|project_name| is published under the GPL version 2 license, the full text "
-"of which is available at `www.gnu.org/licenses/gpl-2.0.txt <http://www.gnu."
-"org/licenses/gpl-2.0.txt>`_."
+"|project_name| is published under the GPL version 3 license, the full text "
+"of which is available at `http://www.gnu.org/licenses/gpl-3.0.txt <http://"
+"www.gnu.org/licenses/gpl-3.0.txt>`_."
 msgstr ""
 "|project_name| dipublikasikan dibawah lisensi GPL versi 2, dimana teks "
 "dokumennya tersedia di `www.gnu.org/licenses/gpl-2.0.txt <http://www.gnu.org/"
@@ -342,27 +343,20 @@ msgstr ""
 "Konversikan ke format lain dengan menggunakan mencoder, contoh::"
 
 # 2761ea85904045679788b359849481bd
-#: ../../source/general/faq.rst:114
+#: ../../source/general/faq.rst:113
 #, fuzzy
 msgid "or"
 msgstr "atau::"
 
-# 2a80fe955e8541a3baf178bf3611f4ec
-#: ../../source/general/faq.rst:116
-msgid ""
-"mencoder -idx yogya_analysis-6.ogv -ovc lavc -oac lavc -lavcopts \\ "
-"vcodec=wmv2 -of lavf -o yogya_analysis.wmv"
-msgstr ""
-
 # 05235c559e66461d829e15c942918e7e
-#: ../../source/general/faq.rst:119
+#: ../../source/general/faq.rst:120
 msgid "**How do I convert a vector hazard layer to a raster layer?**"
 msgstr ""
 "**Bagaimana saya mengkonversikan sebuah layer vektor ancaman menjadi sebuah "
 "layer raster?**"
 
 # e2a511f3fce5428f8efe74407198d52a
-#: ../../source/general/faq.rst:121
+#: ../../source/general/faq.rst:122
 #, fuzzy
 msgid ""
 "For vector to raster conversion, use gdal_rasterize utility, for example ::"
@@ -371,12 +365,12 @@ msgstr ""
 "contoh::"
 
 # 256126c677b8481f8e994ba354d5075e
-#: ../../source/general/faq.rst:127
+#: ../../source/general/faq.rst:128
 msgid "Why does the plugin not show up in my QGIS Plugin Manager?"
 msgstr "Mengapa plugin tidak muncul pada QGIS Plugin Manager saya?"
 
 # c32b7d788e5147e98be294fc29d6bf41
-#: ../../source/general/faq.rst:129
+#: ../../source/general/faq.rst:130
 msgid ""
 "One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not "
 "get the new plugin repo added to your repo list. To fix this you can do:"
@@ -386,37 +380,37 @@ msgstr ""
 "repo. Untuk memperbaikinya, Anda dapat melakukan hal berikut:"
 
 # 794343bd36264dc48c0b288a06ab985d
-#: ../../source/general/faq.rst:132
+#: ../../source/general/faq.rst:133
 msgid "open QGIS"
 msgstr "buka QGIS"
 
 # 702a80aa9b224d10a54a1b401cf533c6
-#: ../../source/general/faq.rst:133
+#: ../../source/general/faq.rst:134
 msgid "Go :menuselection:`Plugins --> Fetch Python Plugins`"
 msgstr "Buka :menuselection:`Plugins --> Fetch Python Plugins`"
 
 # 8329ddf7bc174d9882ccb8d0f2025832
-#: ../../source/general/faq.rst:134
+#: ../../source/general/faq.rst:135
 msgid "Click :guilabel:`Repositories` tab"
 msgstr "Klik tab :guilabel:`Repositories`"
 
 # b7630ddccddb4c5389f4868f6a17cc9e
-#: ../../source/general/faq.rst:135
+#: ../../source/general/faq.rst:136
 msgid "Click :guilabel:`add`"
 msgstr "Klik :guilabel:`add`"
 
 # 6e58b8a7c4fe4310adc43b5fadd67d2f
-#: ../../source/general/faq.rst:136
+#: ../../source/general/faq.rst:137
 msgid ":guilabel:`Name`: Official QGIS Repository"
 msgstr ":guilabel:`Name`: Official QGIS Repository"
 
 # a1bc2f1e0dd14ea88a2015d4e6d4fc4d
-#: ../../source/general/faq.rst:137
+#: ../../source/general/faq.rst:138
 msgid ":guilabel:`Url`: http://plugins.qgis.org/plugins/plugins.xml"
 msgstr ":guilabel:`Url`: http://plugins.qgis.org/plugins/plugins.xml"
 
 # 810df3858e934da28545f12272fe68de
-#: ../../source/general/faq.rst:138
+#: ../../source/general/faq.rst:139
 msgid ""
 "Save it and the plugin repo list should update. If it doesn't, close and "
 "open QGIS to force an update."
@@ -425,7 +419,7 @@ msgstr ""
 "buka QGIS untuk memaksa proses update."
 
 # 2345842b8c10487b8d7f2ba52cf10799
-#: ../../source/general/faq.rst:140
+#: ../../source/general/faq.rst:141
 msgid ""
 "In the python plugin manager main tab now you should find |project_name| "
 "available"
@@ -434,12 +428,12 @@ msgstr ""
 "project_name| yang tersedia"
 
 # f9b9f8aa481743ccb70039e778d107e7
-#: ../../source/general/faq.rst:143
+#: ../../source/general/faq.rst:144
 msgid "**How do I fix KeywordDbError on Windows?**"
 msgstr "**Bagaimana saya memperbaiki KeywordDbError di Windows?**"
 
 # 6c53f91b8f3147a1845a419730f7dd1d
-#: ../../source/general/faq.rst:145
+#: ../../source/general/faq.rst:146
 msgid ""
 "It’s an issue related to permission issue. Normally, it occurs when the "
 "keyword.db is not writable by current user. The thing that you have to do is "
@@ -451,7 +445,7 @@ msgstr ""
 "menginstal kembali QGIS sebagai administrator."
 
 # 04881a63f7f047e68f6681d439e453c8
-#: ../../source/general/faq.rst:149
+#: ../../source/general/faq.rst:150
 msgid ""
 "Another way to solve it is deleting the registry of InaSAFE. You can do it "
 "by opening :guilabel:`regedit` (Registry Editor). To open regedit, you need "
@@ -471,7 +465,7 @@ msgstr ""
 "melihat jika itu bekerja."
 
 # 8e9a652e1f27414c854fd8a3d44f04f6
-#: ../../source/general/faq.rst:157
+#: ../../source/general/faq.rst:158
 msgid ""
 "Please see `InaSAFE issue #459 <https://github.com/AIFDR/inasafe/"
 "issues/459>`_ , `InaSAFE issue #564 <https://github.com/AIFDR/inasafe/"

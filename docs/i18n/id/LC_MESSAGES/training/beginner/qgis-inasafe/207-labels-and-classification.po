@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-10-30 08:39\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:8
+# d6276fb6b85c494fb843fd5f3454a361
+msgid "Module 7: Labels and Classification"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:10
+# f4d324569bc54f3cb2e4d631e7988c44
+msgid "**Learning Objectives**"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:12
+# 2b09509ff7354f7385c5f3246956d919
+msgid "Explore attribute data of an object and to understand the uses of different types of data"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:14
+# 7cef5b7c56f0497bab4ac00054dbe0e0
+msgid "Add labels to vector layers"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:15
+# cfe9eacebde745a182d020f3569ab6eb
+msgid "Symbolize vector data using categories"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:17
+# 80c42ca4906849e9a786cc13fba2b683
+msgid "Up to now, none of the changes we have made to the map have been influenced by the objects that are being shown. In other words, every type of vegetation looks alike, and all the roads look alike. When looking at the map, the viewers don’t know anything about the roads they are seeing; only that there is a road of a certain shape in a certain area."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:23
+# 33ee41c69c6042408f18841a63f06df0
+msgid "But the whole strength of GIS is that all the objects that are visible on the map also have attributes. Maps in a GIS aren’t just pictures. They represent not only objects in locations, but also information about those objects.  In this lesson we will explore the attribute data of an object and understand what the various data can be useful for."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:29
+# 5825438914714e4abf600bfc4149dd33
+msgid "If you would like to start with the examples used in this chapter, begin by opening the QGIS project :file:`sleman_2_6.qgs`."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:32
+# ed6b5d7334aa4c32a4da40613ab00f96
+msgid "**1. Attribute Data**"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:34
+# 5b8dbd1847eb4dd19b9e7b47ba0baa7f
+msgid "Open the attribute table for the **POI_Sleman_OSM** layer by selecting it in the layers list and clicking on the :guilabel:`Open Attribute Table` button (you can also right-click on the layer and select Open Attribute Table)."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:41
+# 5a0a663a1ba441c1aab9b5de9fd42523
+msgid "Which field would be the most useful to use as a label?"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:46
+# 81305a86cfc84b99b20364b8f664533b
+msgid "You now know how to use the attribute table to see what is actually in the data you’re using. A dataset will only be useful to you if it has the attributes that you care about. If you know which attributes you need, you can quickly decide if you’re able to use a given dataset, or if you need to look for another one that has the required attribute data."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:52
+# 4c4451c669174478b09f44a261d80ece
+msgid "Different attributes are useful for different purposes. Some of them can be represented directly as text for the map user to see.  Next we’ll see how to use attributes as labels, so that users can see the text on your map."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:56
+# c32fd16a0eb149278943f44fd28a7c94
+msgid "**2. The Label Tool**"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:58
+# ea2042c1bab94bef86e8687fb9ba7ebc
+msgid "Labels can be added to a map to show any information about an object. Any vector layer can have labels associated with it.  Labels rely on the attribute data of a layer for their content."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:62
+# b11f271bb520472295e7f61c219566bd
+msgid "There are several ways to add labels in QGIS, but some are better than others. You may notice that when you open the Layer Properties window for a layer, there is a tab called “Labels.”  While this tab is designed to put labels on your map, it is not nearly as good as the so-called “Label Tool,” which we will learn in this section. Before being able to access the **Label tool**, you will need to ensure that it has been activated."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:69
+# 61a9e1db63a14663b63b7b23b020016f
+msgid "Go to the menu item :menuselection:`View ‣ Toolbars`."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:70
+# 70f0b96957a74bd5b48dbd8d1be36a28
+msgid "Ensure that the Label item has a checkmark next to it. If it doesn’t, click on the Label item, and it will be activated.  The Label toolbar looks like this:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:76
+# 1d000a3de64741e78dc294b662949e43
+msgid "Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers list, so that it is highlighted."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:78
+# 71ba47fcfa3140b88dddf5334f033d97
+msgid "Click on the :guilabel:`Labelling` button:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:83
+# 097f2e410845422b9e53bd914eba912f
+msgid "This gives you the Layer labeling settings dialog."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:85
+# a9ffb2af61074962a2608535b652a957
+msgid "Check the box next to :guilabel:`Label this layer with...`"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:90
+# d0adb3116cf544eaa907857b5757a00a
+msgid "We must indicate which of the attribute fields we want to use for the labels. The **NAME** field is the mostly likely candidate for a label, so let’s select NAME from the list:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:97
+# 17f8e826c0fb4a2982731a8761afd2f1
+msgid "Click :guilabel:`OK`.  The map should now have labels like this:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:102
+# a8c84ad773704344a6371f4092144659
+msgid "What we have so far is good, but as you can see, the labels are overlapping the points that they are associated with. That doesn’t look very nice. The text is also a bit larger than it needs to be. Let’s fix these problems!"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:106
+# 2fa2d2dd6b434af28981208133f6d358
+msgid "Open the :guilabel:`Label tool` again by clicking on its button as before."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:107
+# 5a948975a7e24a6b9587799b626ac67a
+msgid "Click on the :guilabel:`ellipsis (...)` button to change the text properties:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:112
+# 8ab055bc9b52431a9f48171075449597
+msgid "A standard text change dialog appears, similar to those in many other programs. Change the font to *Arial size 9*. Your labels will now look like this:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:118
+# c5c33207461b4a50898622686f30dcde
+msgid "That’s the font problem solved! Now let’s look at the problem of the labels overlapping the points, but before we do that, let’s take a look at the Buffer option."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:122
+# f7d68a0f0d0544d0868a91da5c2a87b7
+msgid "Open the :guilabel:`Label tool` dialog."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:123
+# 7e58b54a27ab48648137b9f38673e92c
+msgid "Deactivate the label buffer by clicking on the checkbox next to the text that says :guilabel:`Buffer`."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:129
+# 74ee8313920d46b0b35a4985ece4227b
+msgid "Click :guilabel:`Apply`."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:131
+# 89040105376e425999b98a8fc39d7462
+msgid "Note the effects in the map:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:136
+# 3b797b62979340a69c8cb4d7b69608f9
+msgid "Now you can see why we usually need label buffers!"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:138
+# ff75ed6bf351416ab1931af923d381b0
+msgid "Reactivate the buffers by clicking in the same checkbox as before, and then clicking Apply."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:141
+# 70fc569e27614f189811e4c620a99ca5
+msgid "Back to the problem of the labels that overlap points."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:143
+# dfcc26ad1b424701acc2d6bae7c33806
+msgid "In the Label tool dialog, go to the :guilabel:`Advanced` tab."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:148
+# e83c17654271497b845d889f9bccdfbb
+msgid "Change the value of *Label distance to 2*."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:153
+# fd8e363632ce4a2d8c282863861ed069
+msgid "Click :guilabel:`Apply`. The labels no longer hover over the icons, but are “buffered” a short distance away:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:159
+# 2709236d65c24d59bc698223368f9a9c
+msgid "**Labeling lines**"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:161
+# b0d7ef9c7ca345b0bb5248e008cfef1a
+msgid "Now that you know how labeling works, there’s an additional problem. Points and polygons are easy to label, but what about lines? If you label them the same way as the points, your results would look like this:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:168
+# 92157183c7a3434ab9b409109643b5ed
+msgid "This is not very useful! To make lines behave, we’ll need to edit some options."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:170
+# a4efe47f43614603abc1322d73e81965
+msgid "Hide the **POI_Sleman_OSM** layer so that it doesn’t distract you."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:171
+# 9ec9c04021dd40ae8b2848a130f02660
+msgid "Activate labels for the **Jalan_Sleman_OSM** layer as before. (Remember to use the Label tool on the toolbar, not the one in Label Properties!)"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:173
+# 33e33687fa284ce9afd28af454e3b086
+msgid "Set the font *Size to 9* so that you can see more labels."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:174
+# a1a34453dd8c44228753d840f2044f88
+msgid "Zoom in so that the scale is *around 1:10000*."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:175
+# 3a609f44bd94499f9b7c1cfc284d34f7
+msgid "In the Label tool dialog’s Advanced tab, choose the following settings:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:180
+# e804dec87625456487e6fa1d8356791b
+msgid "The map will look somewhat like this, depending on scale:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:185
+# 587059366d4d4d5ba04d003d3189d3a7
+msgid "It’s better than before, but still not ideal. For starters, some of the names appear more than once, and that’s not always necessary. To prevent that from happening:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:189
+# e9e497aa616e496eae21ae665b9c842b
+msgid "Enable the option :guilabel:`Merge connected lines` to avoid duplicate labels (also under the Advanced tab you may need to scroll down to see it)."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:192
+# 22deb5443f2a4215a0fec69b32b10cca
+msgid "Another useful function is to prevent labels being drawn for features too short to be of notice."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:195
+# d6b8587f0aa547b18356a158b69d7550
+msgid "Set the value of :guilabel:`Suppress labeling of features smaller than ...` to *5 mm* and note the results when you click :guilabel:`Apply`."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:197
+# 495eedc3955542b49cb4281c9fe726f6
+msgid "Try out different :guilabel:`Placement settings` as well (also under the Advanced tab). As we’ve seen before, the horizontal option is not a good idea in this case, so let’s try the curved option instead!"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:200
+# 99f269d458414b8295216d9e0878853a
+msgid "Select the *curved* option under the Advanced tab of the Layer labeling settings dialog."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:203
+# e97758991c834aad9867d40109dc27f0
+msgid "Here’s the result:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:208
+# 3fbdd02b112e4b5284e2fb1b52412e95
+msgid "As you can see, this hides a lot of the labels that were previously visible, because of the difficulty of making some of them follow twisting street lines and still be legible. You can decide which of these options to use, depending on what you think seems more useful or what looks better."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:213
+# 1554263f75b9403da6e6da26b25640ea
+msgid "Now that you know how attributes can make a visual difference for your map, how about using them to change the symbology of objects themselves? That’s the topic for the next section!"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:217
+# f0d39c23356e4c0fb5d9f5184065dd43
+msgid "**3. Classification**"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:219
+# 3c1b8aa6233b4f87859e0533929dd61e
+msgid "Labels are a good way to communicate information such as the names of individual places, but they can’t be used for everything. For example, let’s say that we want to show which district each feature in our vegetation layer is in.  Using labels, it would look like this:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:227
+# a7d979365e1c4a7fa13c3540300dc05c
+msgid "Obviously this is not ideal, so we need another solution. That’s what this lesson is about!  In this section, we will learn how to classify vector data effectively."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:231
+# 4e986c7fc5bc4a24bb0c1e5fc5942c1b
+msgid "**Classifying nominal data**"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:233
+# ff7ab25a6ec049e0afe59ceee436ca12
+msgid "Open :guilabel:`Layer Properties` for the **vegetasi** layer."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:234
+# 92dd737932b44bca8fec88880b941311
+msgid "Go to the :guilabel:`Style` tab."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:235
+# 8ba339195522465994bbb5ed8b28a9ab
+msgid "Click on the dropdown that says :guilabel:`Single Symbol`:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:240
+# 0062012d351c4905b37c6522aaa23552
+msgid "Change it to *Categorized* and the interface will change:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:245
+# 479fa1283c6d43b384ce753471b7fe5d
+msgid "Change the Column to **guna_lahan** and the Color ramp to *Spectral*:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:250
+# 23aa993b3291461dbd60fd257a9a2f70
+msgid "Click the button labeled :guilabel:`Classify`:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:255
+# 4e7bdf30c8094731accccddb66b6f743
+msgid "Click :guilabel:`OK`.  You’ll see something like this:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:260
+# a536dbdd5f2d47b4a154baad4793e451
+msgid "Click the :guilabel:`arrow` (or :guilabel:`plus` sign) next to rural in the Layer list, you’ll see the categories explained:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:266
+# 6d21f43cfad046aab58a7eea1a817223
+msgid "So, this is useful! But it hurts your eyes to look at it, so let’s see what we can do about that."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:269
+# fc82a5126c9b40b1af28d7b6c01bd1a1
+msgid "Open :guilabel:`Layer Properties` and go to the :guilabel:`Style` tab again."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:270
+# ccd7a61d50704cf895862d6dba38c1cc
+msgid "Click the :guilabel:`Change` button next to Symbol."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:275
+# e619ca37cb2941e287f34c6c80af156f
+msgid "Remove the outline as you did in the previous chapter.  (change the border style to “No Pen”)"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:277
+# 077182b0a8994b6db22fc98a17cff9f3
+msgid "Click the :guilabel:`Delete all` button:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:282
+# 80cfd548184b4ffead4fcf7f6633b202
+msgid "Now click :guilabel:`Classify` again, and the new symbols will appear."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:284
+# d18bf9ad21ab498ba7ba479f14d3f03e
+msgid "You’ll notice they don’t have outlines. This is because because you just removed the outlines!"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:287
+# 8057ec3f8e044d4e928a88ae82897802
+msgid "Change the color for each type of vegetation by double-clicking on the colored block next to its name.  You can change the color for each type of vegetation to something that you think is more applicable, as we’ve done here:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:294
+# c951bd25f1e0433aa3c7c19b886b32a6
+msgid "Notice that the category on the bottom is empty.  Select it, and click the :guilabel:`Delete` button."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:296
+# 97acf050c8e74212895064325ce6f09d
+msgid "When we click :guilabel:`OK` our map looks like this:"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:301
+# 9b554bd896df4e219ddaeb3b4536117c
+msgid "If you feel confident in your new classification skills, try to classify the residential layer yourself.  Use darker colors to distinguish it from vegetation."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:305
+# 579aec34472f48a5bef1d688a4dcfc4f
+msgid "**Ratio classification**"
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:307
+# 0f530e382f8f49769c6187e55fd79d09
+msgid "In the previous example, we classified the **vegetasi** layer by what is known as nominal classification.  This type of classification is when categories are defined based on names.  Next we will classify the **pemukiman** layer based on the size of each feature.  Classifiying with attributes that contain only positive numbers, sych as land area, is known as ratio classification."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:313
+# 557e26d8698b498c84f2581f80d3eba2
+msgid "Open the :guilabel:`attribute table` for the **pemukiman** layer.  Notice the final column, *luas_ha*.  This attribute contains the size of the land area contained within that feature polygon."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:320
+# ac6f4237fd7e4c5f99c67559e59f5269
+msgid "Open the :guilabel:`layer properties` for **pemukiman**."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:321
+# d1595c7a8785472cb05facb512649b7a
+msgid "Change the :guilabel:`Style type` to *\"Graduated\"*, and use *luas_ha* as the column."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:327
+# 1382fba498f34c94bb7cce0923d60b93
+msgid "Because we are categorizing with numbers this time, a color gradient will be useful for representing our categories.  Click on :guilabel:`Oranges` in the color ramp, and then click :guilabel:`Classify`."
+msgstr ""
+
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:334
+# e33f999004b346ddad4ff4ded66e5d96
+msgid "Now you’ll have something like this:"
+msgstr ""
+
