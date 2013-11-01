@@ -8,7 +8,7 @@ Sponsors
 The development of |project_name| has been supported by the
 
 * Indonesian Disaster Management Agency (|BNPB|),
-* Australia Agency for International Development (|AusAID|) and
+* Department of Foreign Affairs and Trade - Australian Aid (|DFAT_AusAid|) and
 * Geoscience Australia (|GA|), through the
 * Australia-Indonesia Facility for Disaster Reduction (|AIFDR|),
   as well as the

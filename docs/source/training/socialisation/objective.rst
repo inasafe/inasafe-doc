@@ -81,7 +81,7 @@ Linfiniti Sphinx Theme
 Manual licenced under:
 ......................
 
-Creative Commons by Attribution by |BNPB|/|AIFDR|/|AusAID|/World Bank-|GFDRR|.
+Creative Commons by Attribution by |BNPB|/|AIFDR|/|DFAT_AusAid|/World Bank-|GFDRR|.
 
 Author:
 .......

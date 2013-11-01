@@ -5,9 +5,9 @@ Disclaimer
 
 This document is initial draft and still in reviewing phase by these parties:
 
-• Badan Nasional Penanggulangan Bencana (BNPB)
-• Australia-Indonesia Facility for Disaster Reduction (AIFDR-AusAID)
-• Humanitarian OpenStreetMap Team (HOT)
+• Badan Nasional Penanggulangan Bencana (|BNPB|)
+• Australia-Indonesia Facility for Disaster Reduction (|AIFDR|-|DFAT_AusAid|)
+• Humanitarian OpenStreetMap Team (|HOT|)
 
 All contents and materials on this document possibly changed without public
 notice.
@@ -25,11 +25,11 @@ You are free:
 - to copy, distribute, display, and perform the work
 - to make derivative works
 - to make commercial use of the work
-  
+
 You must give the original author credit.
 
 More information about CCbyA License:
-http://creativecommons.org/licenses/by/3.0/au/deed.en_GB 
+http://creativecommons.org/licenses/by/3.0/au/deed.en_GB
 
 About Us
 ********

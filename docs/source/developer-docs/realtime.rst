@@ -17,9 +17,9 @@ Historical Note
 ---------------
 
 The original prototype of the realtime system was implemented by Ole Nielsen
-(|AusAID|). The subsequent port of the realtime system to |project_name| was
-implemented by Tim Sutton (Linfiniti Consulting CC., funded by The World Bank
-,|AIFDR| and |AusAID|).
+(|DFAT_AusAid|). The subsequent port of the realtime system to |project_name|
+was implemented by Tim Sutton (Linfiniti Consulting CC.,
+funded by The World Bank ,|AIFDR| and |DFAT_AusAid|).
 
 Supported Platforms
 -------------------

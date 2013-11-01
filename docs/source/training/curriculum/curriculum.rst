@@ -1,5 +1,5 @@
-Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE 
---------------------------------------------------------------
+Contingency Planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
+-----------------------------------------------------------------------
 
 BADAN NASIONAL PENANGGULANGAN BENCANA
 .....................................
@@ -9,34 +9,35 @@ BADAN NASIONAL PENANGGULANGAN BENCANA
 FOREWORD
 ========
 
-Contingency planning with OpenStreetMap (OSM) and QGIS/InaSAFE workshop
-program are designed to deliver knowledge and skills for provincial and
-districal disaster management agency official and staff in order to handle
-emergencies since the beginning of the disaster. These knowledge and skills
-will help them to be able to reduce and manage disaster risk.
+Contingency planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
+workshop program are designed to deliver knowledge and skills for provincial
+and districal disaster management agency official and staff in order to handle
+emergencies since the beginning of the disaster.
+These knowledge and skills will help them to be able to reduce and manage
+disaster risk.
 
-Badan Nasional Penanggulangan Bencana (BNPB) has identified priority needs
-to improve the methodology that can be used for contingency planning. This
-methodology is focused on the use of realistic disaster scenario as starting
-point for this new comprehensive process.
+Badan Nasional Penanggulangan Bencana (|BNPB|) has identified priority needs
+to improve the methodology that can be used for contingency planning.
+This methodology is focused on the use of realistic disaster scenario as
+starting point for this new comprehensive process.
 
-BNPB and AusAID through Australia-Indonesia Facility for Disaster Reduction
-(AIFDR) have working together to create a methodology and an open-source
-software tools related with realistic disaster scenario development as an
-input for contingency planning. It will allow emergency disaster managers to
-improve their own scenario scoring which can be used as an input for their
-disaster contingency planning.
-To help workshop center of BNPB (Pusat Diklat BNPB) for effective and
+|BNPB| and |DFAT_AusAid| through Australia-Indonesia Facility for Disaster
+Reduction (|AIFDR|) have working together to create a methodology and an
+open-source software tools related with realistic disaster scenario
+development as an input for contingency planning.
+It will allow emergency disaster managers to improve their own scenario
+scoring which can be used as an input for their disaster contingency planning.
+To help workshop center of |BNPB| (Pusat Diklat BNPB) for effective and
 systematic workshop in order to reach all competencies needed,
-it is necessary to develop a curriculum. Therefore, this workshop curriculum
-Scenario Development fo Contingency Planning using OSM and QGIS/InaSAFE is
-developed to be used as reference in workshop enforcement,
-both for national level or provincial/district. This curriculum will be
-enhanced through Test and input from stakeholders, both from government
-agency and non-government agency.
+it is necessary to develop a curriculum.
+Therefore, this workshop curriculum Scenario Development fo Contingency
+Planning using OSM and |QGIS|/|project_name| is developed to be used as
+reference in workshop enforcement, both for national level or
+provincial/district.
+This curriculum will be enhanced through Test and input from stakeholders,
+both from government agency and non-government agency.
 
 We hope this curriculum can be useful.
-
 
 INTRODUCTION
 ============
@@ -47,41 +48,47 @@ development progress as a result of natural disasters. This is why disaster
 risk reduction has been recognised by the Government of Indonesia as one of
 their top eleven priorities in the Medium-Term Development Plan (2010-2014).
 In recognition of the impact of disasters on developing economies,
-AusAID’s policy on disaster risk reduction highlights the importance of
+AusAid’s policy on disaster risk reduction highlights the importance of
 investing in disaster reduction .
 
-BNPB has a mandate to increase the overall disaster management capacity of
+|BNPB| has a mandate to increase the overall disaster management capacity of
 Indonesia including workshop for managers who handle disasters at the
 sub-national level. To date, BNPB’s Education and Workshop Centre has been
 developing a range of workshop curriculum and Modules with specific focus
-on a) Basic Disaster Management, b) Rapid Assessment and Coordination,
-and c) Contingency Planning. BNPB has been working with various actors and
-stakeholders on the development of workshop Modules.
-BNPB has identified a priority need to improve its methodology for
+on
+
+  a) Basic Disaster Management,
+  b) Rapid Assessment and Coordination, and
+  c) Contingency Planning.
+
+|BNPB| has been working with various actors and stakeholders on the
+development of workshop Modules.
+|BNPB| has identified a priority need to improve its methodology for
 contingency planning with an emphasis on the use of realistic disaster
 scenarios as the starting point for this new, comprehensive process.
 
-BNPB and AusAID through the Australia-Indonesia Facility for Disaster
+|BNPB| and |DFAT_AusAid| through the Australia-Indonesia Facility for Disaster
 Reduction have been working together on a methodology and associated open
 source software  for developing realistic disaster scenarios for contingency
-planning. This will enable emergency managers to develop their own scenario
-assessments that can feed into their disaster contingency plans.  Over the
-last year three specific tools have been piloted in Indonesia with huge
-success:
+planning.
+This will enable emergency managers to develop their own scenario assessments
+that can feed into their disaster contingency plans.
+Over the last year three specific tools have been piloted in Indonesia with
+huge success:
 
 - **InaSAFE**: is free and open source software that produces realistic
   natural hazard impact scenarios for better planning,
   preparedness and response activities.
-  It is being developed by AIFDR in close consultation with BNPB.
+  It is being developed by |AIFDR| in close consultation with |BNPB|.
 
 - **OpenStreetMap (OSM) tools**: OSM is a free map of the world that anyone
   can add to and edit.  Utilizing community mapping allows for more detailed
-  information to be collected that can be utilized for analysis in InaSAFE (i
-  .e. How many houses will be affected by a specific hazard).
+  information to be collected that can be utilized for analysis in
+  |project_name| (i.e. How many houses will be affected by a specific hazard).
 
 - **QGIS**: is an open source Geographical Information System
   (GIS) software that allows users to spatially analyse their data,
-  it is also the platform on which InaSAFE is built.
+  it is also the platform on which |project_name| is built.
 
 In order to ensure uptake, effectiveness and sustainability of these tools
 it is necessary to develop and Test a comprehensive workshop package for
