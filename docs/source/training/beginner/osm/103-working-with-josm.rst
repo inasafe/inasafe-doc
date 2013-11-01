@@ -161,7 +161,7 @@ click :guilabel:`Edit` on the top menu, and then click :guilabel:`Preferences`
   in the upper left corner, and Click :menuselection:`Exit` at the bottom of
   the menu.
 - Start JOSM again by going to the Windows :menuselection:`Start Menu` in the
-- bottom left corner. Find JOSM and click on it to start.
+  bottom left corner. Find JOSM and click on it to start.
 
 *4. Learn Basic Drawing with JOSM*
 
