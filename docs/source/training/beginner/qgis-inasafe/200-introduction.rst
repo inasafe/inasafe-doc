@@ -91,7 +91,7 @@ Universitas Gadjah Mada
 Universitas Gadjah Mada (internationally known as Gadjah Mada University ;
 Abbreviation : UGM) is an Indonesian public ivy league research university
 located in Yogyakarta, Indonesia. Department of Geodetic Engineering, Faculty of
-Engineering focuses on education, research, and commmunity services related to
+Engineering focuses on education, research, and community services related to
 geodesy and geomatics engineering, including acquisition, analysis, and uses of
 detailed and accurate geospatial data and large-scale maps using open source
 geospatial software for disaster management.
