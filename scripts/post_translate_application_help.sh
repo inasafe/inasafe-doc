@@ -81,7 +81,7 @@ do
 
   echo "Building HTML for locale '${LOCALE}'..."
   LOG=/tmp/sphinx-app-docs-${LOCALE}-$$.log
-  ${SPHINXBUILD} -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html . ${HTMLDIR}/${LOCALE} > $LOG
+  ${SPHINXBUILD} -Q -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html . ${HTMLDIR}/${LOCALE} > $LOG
 
   # Some manual cleanups
   rm -rf $HTMLDIR/$LOCALE/_static/img/carousel
