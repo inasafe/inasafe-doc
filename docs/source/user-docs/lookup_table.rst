@@ -23,10 +23,27 @@ exposure        keterpaparan
 
 ============    ================
 
+The list of abbrevations to use (including the automatic link to the
+respective homepage) is:
+::
+
+  |project_name| for InaSAFE
+  |AIFDR|
+  |BNPB|
+  |DFATAusAid| for DFAT-Australian Aid
+  |GFDRR|
+  |GA| for Geoscience Australia
+  |OSM|
+  |Linfiniti|
+  |HOT|
+  |QGIS|
+
 We have also made a blanket decision not to translate the following words:
 
 * python
 * qgis
 
 Please add to this list as required.
+
+
 

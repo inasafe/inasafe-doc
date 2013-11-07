@@ -51,7 +51,7 @@ rst_epilog = """
 .. _AIFDR: http://www.aifdr.org/
 .. |BNPB| replace:: BNPB_
 .. _BNPB: http://www.bnpb.go.id/
-.. |DFAT_AusAid| replace:: `DFAT-Australian Aid`_
+.. |DFATAusAid| replace:: `DFAT-Australian Aid`_
 .. _DFAT-Australian Aid: http://aid.dfat.gov.au
 .. |GFDRR| replace:: GFDRR_
 .. _GFDRR: http://www.gfdrr.org/

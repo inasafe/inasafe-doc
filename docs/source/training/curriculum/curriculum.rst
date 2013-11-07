@@ -21,7 +21,7 @@ to improve the methodology that can be used for contingency planning.
 This methodology is focused on the use of realistic disaster scenario as
 starting point for this new comprehensive process.
 
-|BNPB| and |DFAT_AusAid| through Australia-Indonesia Facility for Disaster
+|BNPB| and |DFATAusAid| through Australia-Indonesia Facility for Disaster
 Reduction (|AIFDR|) have working together to create a methodology and an
 open-source software tools related with realistic disaster scenario
 development as an input for contingency planning.
@@ -67,7 +67,7 @@ development of workshop Modules.
 contingency planning with an emphasis on the use of realistic disaster
 scenarios as the starting point for this new, comprehensive process.
 
-|BNPB| and |DFAT_AusAid| through the Australia-Indonesia Facility for Disaster
+|BNPB| and |DFATAusAid| through the Australia-Indonesia Facility for Disaster
 Reduction have been working together on a methodology and associated open
 source software  for developing realistic disaster scenarios for contingency
 planning.

@@ -6,7 +6,7 @@ Disclaimer
 This document is initial draft and still in reviewing phase by these parties:
 
 • Badan Nasional Penanggulangan Bencana (|BNPB|)
-• Australia-Indonesia Facility for Disaster Reduction (|AIFDR|-|DFAT_AusAid|)
+• Australia-Indonesia Facility for Disaster Reduction (|AIFDR|-|DFATAusAid|)
 • Humanitarian OpenStreetMap Team (|HOT|)
 
 All contents and materials on this document possibly changed without public
