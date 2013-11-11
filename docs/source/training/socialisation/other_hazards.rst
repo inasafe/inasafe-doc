@@ -181,7 +181,7 @@ Earthquake
 Indonesia’s location on the edges of the Pacific, Eurasian,
 and Australian tectonic plates makes it not only a site of numerous volcanoes
 but also frequent earthquakes. The hazard layer we are going to use for this
-example has been provided by Badan Geologi and |AIFDR|, |AusAID| and describes the
+example has been provided by Badan Geologi and |AIFDR|, |DFATAusAid| and describes the
 shaking or Modified Mercalli Intensity (MMI) Scale.
 
 This particular scenario is a modelled version of the 2009 Padang earthquake.

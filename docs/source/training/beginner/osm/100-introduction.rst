@@ -5,9 +5,9 @@ Disclaimer
 
 This document is initial draft and still in reviewing phase by these parties:
 
-• Badan Nasional Penanggulangan Bencana (BNPB)
-• Australia-Indonesia Facility for Disaster Reduction (AIFDR-AusAID)
-• Humanitarian OpenStreetMap Team (HOT)
+• Badan Nasional Penanggulangan Bencana (|BNPB|)
+• Australia-Indonesia Facility for Disaster Reduction (|AIFDR|-|DFATAusAid|)
+• Humanitarian OpenStreetMap Team (|HOT|)
 
 All contents and materials on this document possibly changed without public
 notice.
@@ -17,11 +17,19 @@ License
 
 .. image:: /static/training/beginner/osm/image2.*
 
-All contents and materials on this document is licensed as Public Domain.
-You can copy, modify, spread, and showing this module without permission.
+All contents and materials on this document is licensed as Creative Commons
+Attribution Australia (CCbyA).
 
-More information about Public Domain License:
-http://wiki.creativecommons.org/Publicdomain/zero/1.0/LegalText_(Indonesian)
+You are free:
+
+- to copy, distribute, display, and perform the work
+- to make derivative works
+- to make commercial use of the work
+
+You must give the original author credit.
+
+More information about CCbyA License:
+http://creativecommons.org/licenses/by/3.0/au/deed.en_GB
 
 About Us
 ********
@@ -30,7 +38,7 @@ Badan Nasional Penanggulangan Bencana (BNPB)
 
 .. image:: /static/training/beginner/osm/image3.*
 
-BNPB is Indonesia’s National Disaster Management Agency. BNPB is a
+BNPB is Indonesia’s National Disaster Management Agency. |BNPB| is a
 non-departmental ministerial-level government agency, tasked with providing
 guidance and direction to the efforts of disaster management that includes
 disaster prevention, emergency response, rehabilitation,
@@ -47,7 +55,7 @@ Australia-Indonesia Facility for Disaster Reduction (AIFDR)
 
 .. image:: /static/training/beginner/osm/image4.*
 
-The Australia-Indonesia Facility for Disaster Reduction (AIFDR) is a joint
+The Australia-Indonesia Facility for Disaster Reduction (|AIFDR|) is a joint
 initiative between the governments of Australia and Indonesia. We work to
 strengthen Indonesia's ability to reduce the impact of disasters. The
 Australian and Indonesian governments at a special ceremony on 15 July 2010
@@ -68,12 +76,26 @@ especially in places where base map data is often scarce, out of date,
 or rapidly changing. OpenStreetMap is a web project to create a free and
 open map of the entire world, built entirely by volunteers surveying with
 GPS, digitizing aerial imagery, and collecting and liberating existing
-public sources of geographic data. The Humanitarian OpenStreetMap Team (HOT)
+public sources of geographic data. The Humanitarian OpenStreetMap Team (|HOT|)
 is an initiative to apply the principles and activities of open source and
 open data sharing towards humanitarian response and economic development.
 
 http://hot.openstreetmap.org
 
+Universitas Gadjah Mada
+=======================
+
+.. image:: /static/training/beginner/osm/ugm.*
+
+Universitas Gadjah Mada (internationally known as Gadjah Mada University ;
+Abbreviation : UGM) is an Indonesian public ivy league research university
+located in Yogyakarta, Indonesia. Department of Geodetic Engineering, Faculty of
+Engineering focuses on education, research, and commmunity services related to
+geodesy and geomatics engineering, including acquisition, analysis, and uses of
+detailed and accurate geospatial data and large-scale maps using open source
+geospatial software for disaster management.
+
+http://ugm.ac.id
 
 Preface
 *******

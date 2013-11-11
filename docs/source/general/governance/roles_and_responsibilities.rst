@@ -3,19 +3,19 @@
 Roles and Responsibilities
 ==========================
 |project_name| was conceived and initially developed by the Indonesia's
-National Disaster Management Agency (|BNPB|) and the Australian Agency for
-International Development, through the Australia-Indonesia Facility for
-Disaster Reduction (|AIFDR|) and the World Bank - Global Facility for
+National Disaster Management Agency (|BNPB|) and the Department of Foreign
+Affairs and Trade - Australian Aid, through the Australia-Indonesia Facility
+for Disaster Reduction (|AIFDR|) and the World Bank - Global Facility for
 Disaster Reduction and Recovery (World Bank-|GFDRR|).
 
 |AIFDR| in coordination with |BNPB| are driving the development of
 |project_name| through the use of |project_name| in 6 Indonesian provinces.
 After the launch of |project_name| in October 2012, |AIFDR| on behalf of
-|BNPB| and |AusAID| conducted scenario development for contingency planning
-training in 6 Indonesian provinces through the Humanitarian OpenStreetMap
-Team (HOT) and the University of Gadjah Mada (UGM). The training consisted of
-2 sections, data collection through OpenStreetMap and data analysis through
-QGIS and InaSAFE.
+|BNPB| and |DFATAusAid| conducted scenario development for contingency
+planning training in 6 Indonesian provinces through the Humanitarian
+OpenStreetMap Team (HOT) and the University of Gadjah Mada (UGM). The
+training consisted of 2 sections, data collection through OpenStreetMap and
+data analysis through QGIS and InaSAFE.
 The training was conducted in 3 stage beginner, intermediate and Train the
 Trainer.
 At present the training program is being revised by HOT to incorporate
@@ -87,11 +87,11 @@ This group is responsible for approving the |project_name| roadmap.
 PSC Members
 ...........
 
-==================== ================= =========================== ================ ============
-Name                 Agency            Position                    Role             Committee
--------------------- ----------------- --------------------------- ---------------- ------------
-Sutopo Purwo Nugroho |BNPB|            Head Data, Information & PR Steer            PSC
-Wisnu Widjaja        |BNPB|, |AIFDR|   Co-Director AIFDR           Steer            PSC
-Trevor Dhu           |AIFDR|, |AusAID| Co-Director AIFDR           Steer            PSC
-Iwan Gunawan         |GFDRR|                                       Steer            PSC
-==================== ================= =========================== ================ ============
+==================== ====================== =========================== ================ ============
+Name                 Agency                 Position                    Role             Committee
+-------------------- ---------------------- --------------------------- ---------------- ------------
+Sutopo Purwo Nugroho |BNPB|                 Head Data, Information & PR Steer            PSC
+Wisnu Widjaja        |BNPB|, |AIFDR|        Co-Director AIFDR           Steer            PSC
+Trevor Dhu           |AIFDR|, |DFATAusAid|  Co-Director AIFDR           Steer            PSC
+Iwan Gunawan         |GFDRR|                                            Steer            PSC
+==================== ====================== =========================== ================ ============

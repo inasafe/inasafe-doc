@@ -1,5 +1,5 @@
-Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE 
---------------------------------------------------------------
+Contingency Planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
+-----------------------------------------------------------------------
 
 BADAN NASIONAL PENANGGULANGAN BENCANA
 .....................................
@@ -9,34 +9,35 @@ BADAN NASIONAL PENANGGULANGAN BENCANA
 FOREWORD
 ========
 
-Contingency planning with OpenStreetMap (OSM) and QGIS/InaSAFE workshop
-program are designed to deliver knowledge and skills for provincial and
-districal disaster management agency official and staff in order to handle
-emergencies since the beginning of the disaster. These knowledge and skills
-will help them to be able to reduce and manage disaster risk.
+Contingency planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
+workshop program are designed to deliver knowledge and skills for provincial
+and districal disaster management agency official and staff in order to handle
+emergencies since the beginning of the disaster.
+These knowledge and skills will help them to be able to reduce and manage
+disaster risk.
 
-Badan Nasional Penanggulangan Bencana (BNPB) has identified priority needs
-to improve the methodology that can be used for contingency planning. This
-methodology is focused on the use of realistic disaster scenario as starting
-point for this new comprehensive process.
+Badan Nasional Penanggulangan Bencana (|BNPB|) has identified priority needs
+to improve the methodology that can be used for contingency planning.
+This methodology is focused on the use of realistic disaster scenario as
+starting point for this new comprehensive process.
 
-BNPB and AusAID through Australia-Indonesia Facility for Disaster Reduction
-(AIFDR) have working together to create a methodology and an open-source
-software tools related with realistic disaster scenario development as an
-input for contingency planning. It will allow emergency disaster managers to
-improve their own scenario scoring which can be used as an input for their
-disaster contingency planning.
-To help workshop center of BNPB (Pusat Diklat BNPB) for effective and
+|BNPB| and |DFATAusAid| through Australia-Indonesia Facility for Disaster
+Reduction (|AIFDR|) have working together to create a methodology and an
+open-source software tools related with realistic disaster scenario
+development as an input for contingency planning.
+It will allow emergency disaster managers to improve their own scenario
+scoring which can be used as an input for their disaster contingency planning.
+To help workshop center of |BNPB| (Pusat Diklat BNPB) for effective and
 systematic workshop in order to reach all competencies needed,
-it is necessary to develop a curriculum. Therefore, this workshop curriculum
-Scenario Development fo Contingency Planning using OSM and QGIS/InaSAFE is
-developed to be used as reference in workshop enforcement,
-both for national level or provincial/district. This curriculum will be
-enhanced through Test and input from stakeholders, both from government
-agency and non-government agency.
+it is necessary to develop a curriculum.
+Therefore, this workshop curriculum Scenario Development fo Contingency
+Planning using OSM and |QGIS|/|project_name| is developed to be used as
+reference in workshop enforcement, both for national level or
+provincial/district.
+This curriculum will be enhanced through Test and input from stakeholders,
+both from government agency and non-government agency.
 
 We hope this curriculum can be useful.
-
 
 INTRODUCTION
 ============
@@ -47,41 +48,47 @@ development progress as a result of natural disasters. This is why disaster
 risk reduction has been recognised by the Government of Indonesia as one of
 their top eleven priorities in the Medium-Term Development Plan (2010-2014).
 In recognition of the impact of disasters on developing economies,
-AusAID’s policy on disaster risk reduction highlights the importance of
+AusAid’s policy on disaster risk reduction highlights the importance of
 investing in disaster reduction .
 
-BNPB has a mandate to increase the overall disaster management capacity of
+|BNPB| has a mandate to increase the overall disaster management capacity of
 Indonesia including workshop for managers who handle disasters at the
 sub-national level. To date, BNPB’s Education and Workshop Centre has been
 developing a range of workshop curriculum and Modules with specific focus
-on a) Basic Disaster Management, b) Rapid Assessment and Coordination,
-and c) Contingency Planning. BNPB has been working with various actors and
-stakeholders on the development of workshop Modules.
-BNPB has identified a priority need to improve its methodology for
+on
+
+  a) Basic Disaster Management,
+  b) Rapid Assessment and Coordination, and
+  c) Contingency Planning.
+
+|BNPB| has been working with various actors and stakeholders on the
+development of workshop Modules.
+|BNPB| has identified a priority need to improve its methodology for
 contingency planning with an emphasis on the use of realistic disaster
 scenarios as the starting point for this new, comprehensive process.
 
-BNPB and AusAID through the Australia-Indonesia Facility for Disaster
+|BNPB| and |DFATAusAid| through the Australia-Indonesia Facility for Disaster
 Reduction have been working together on a methodology and associated open
 source software  for developing realistic disaster scenarios for contingency
-planning. This will enable emergency managers to develop their own scenario
-assessments that can feed into their disaster contingency plans.  Over the
-last year three specific tools have been piloted in Indonesia with huge
-success:
+planning.
+This will enable emergency managers to develop their own scenario assessments
+that can feed into their disaster contingency plans.
+Over the last year three specific tools have been piloted in Indonesia with
+huge success:
 
 - **InaSAFE**: is free and open source software that produces realistic
   natural hazard impact scenarios for better planning,
   preparedness and response activities.
-  It is being developed by AIFDR in close consultation with BNPB.
+  It is being developed by |AIFDR| in close consultation with |BNPB|.
 
 - **OpenStreetMap (OSM) tools**: OSM is a free map of the world that anyone
   can add to and edit.  Utilizing community mapping allows for more detailed
-  information to be collected that can be utilized for analysis in InaSAFE (i
-  .e. How many houses will be affected by a specific hazard).
+  information to be collected that can be utilized for analysis in
+  |project_name| (i.e. How many houses will be affected by a specific hazard).
 
 - **QGIS**: is an open source Geographical Information System
   (GIS) software that allows users to spatially analyse their data,
-  it is also the platform on which InaSAFE is built.
+  it is also the platform on which |project_name| is built.
 
 In order to ensure uptake, effectiveness and sustainability of these tools
 it is necessary to develop and Test a comprehensive workshop package for
@@ -118,12 +125,13 @@ The workshopOSM and QGIS/InaSAFE consists of three levels:
 
 1. Beginner
 2. Intermediate
-3. ToT
+3. Training of Trainer (ToT)
 
 CURRICULUM
 ==========
 
-**A. Aims**
+A. Aims
+=======
 
 The scheme of the curriculum on Scenario Development for Contingency
 Planning by using OSMand QGIS/InaSAFE is designed to provide a reference to
@@ -132,7 +140,6 @@ workshop organizers at national, provincial and district levels.
 This workshop course on  Scenario Development for Contingency Planning by
 using OSMand QGIS/InaSAFE consists of two separate workshops for each
 technology, and each technology workshop is composed of three levels.
-However, this curriculum outline only describes two levels for each kind:
 
 1. Workshop spatial data collection OSM for beginners and intermediate levels
 
@@ -143,7 +150,20 @@ Both workshop courses are interrelated. After participating in both workshop
 courses, participants are expected to be able to develop scenario for
 contingency planning by using scientific hazard layers, OSM and QGIS/InaSAFE.
 
-**B. Target**
+3. Training of trainer workshop for contingency planing using OSM, QGIS, and InaSAFE
+
+The main objective of this training is to train people to be leaders and
+trainers in Scenario Development program for Contingency Plan (SD4CP) in their
+respective regions. After completing the training, participants will have the
+facilitation skills about OSM / QGIS / InaSAFE which is needed as facilitator,
+and training skills to help train others in developing a realistic disaster
+scenario that can be used in contingency plans. This will lead to better
+decision-making during the process of making contingency plans. Also expected
+TOT participants can provide technical assistance for their respective regions.
+
+
+B. Target
+=========
 
 The target participants of the workshop courses, both at beginner and
 intermediate levels are:
@@ -176,13 +196,24 @@ Qualifications for participation at intermediate level:
 4. An understanding of Geographic Information Systems
 5. Having a GPS unit and understanding of its working is an advantage
 
-**C. Map of Competencies**
+Qualifications for participants at Training of Trainer (ToT) level:
+
+1. Has followed OSM and QGIS/InasAFE  workshop both beginner and intermediate
+   levels.
+2. Demonstrate the potential to be a key person of or advocate as well as a
+   trainer (trainers) in the training program for the Scenario Development
+   Contingency Plan in their respective region.
+3. Satisfactory completion of prerequisite tasks (as assessed by HOT).
+
+
+C. Map of Competencies
+======================
 
 **1. Workshop Collecting Data Using OSM**
 
 
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
-| No.| Level       | Standard Competency and Basic Competencies                                                                          |
+| No.| Level       | Standard Competency and Basic Competency                                                                            |
 +====+=============+=====================================================================================================================+
 | A. | Beginner    | **Collecting Spatial Data with OSM**                                                                                |
 |    |             |                                                                                                                     |
@@ -211,7 +242,7 @@ Qualifications for participation at intermediate level:
 
 
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
-| No.| Level       | Standard Competency and Basic Competencies                                                                          |
+| No.| Level       | Standard Competency and Basic Competency                                                                            |
 +====+=============+=====================================================================================================================+
 | A. | Beginner    | **Managing spatial data using QGIS and analyzing disaster impact scenario using InaSAFE**                           |
 |    |             |                                                                                                                     |
@@ -235,9 +266,25 @@ Qualifications for participation at intermediate level:
 |    |             | 2. Preparing data and keywords for InaSAFE                                                                          |
 |    |             | 3. Preparing data and keywords for InaSAFE                                                                          |
 |    |             | 4. Planning evacuation route based on hazard Information                                                            |
-|    |             | 5. Calculate damage and lossess1. Applying better digitizing technique for improving quality of the resulting data  |
+|    |             | 5. Calculate damage and lossess                                                                                     |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 
+
+**3. Training of Trainer Workshop**
+
+Standard Competency and Basic Competency
+
+**Participant can be a workshop facilitator to teach Data collection and Data
+Analysis through OSM, QGIS, and InaSAFE in their respective region.**
+
+1. Mastering how to implement adult learning
+2. Demonstrating basic teaching skills
+3. Practising Data Collection and Analysis through OSM, QGIS, and InaSAFE
+   workshop
+
+
+D. Curriculum Development
+=========================
 
 1. Identifying exact competencies that have to be learnt to collect spatial
    data using OSM and analyze the data using QGIS/InaSAFE. Competencies are
@@ -268,8 +315,8 @@ Qualifications for participation at intermediate level:
     c. Organizing materials arranged in systematic.
 
 
-Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
-=================================================================
+E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
+====================================================================
 
 **Data Collection Using OSM Beginner Level Workshop**
 
@@ -444,7 +491,8 @@ Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 
 **Data Analysis Using QGIS and InaSAFE Beginner Level Workshop**
 
-**Standard Competency: Managing spatial data using QGIS and analyzing disaster impact scenario using InaSAFE**
+**Standard Competency: Managing spatial data using QGIS and analyzing disaster**
+**impact scenario using |project_name|**
 
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
@@ -562,7 +610,8 @@ Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 
 **Data Analysis Using QGIS and InaSAFE Intermediate Level Workshop**
 
-**Standard Competency: Data spatial analysis using QGIS and InaSAFE which is related to contingency planning**
+**Standard Competency: Data spatial analysis using QGIS and InaSAFE which is**
+**related to contingency planning**
 
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
@@ -618,6 +667,42 @@ Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 |                                                                     | 8. Combining attribute data for each administrative area (small  |                                                            |
 |                                                                     |    village, village, subdistrict)                                |                                                            |
 |                                                                     | 9. Presenting the damages and losses assessment using a diagram  |                                                            |
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
+
+
+
+**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and
+InaSAFE**
+
+**Standard Competency: Participant can be a workshop facilitator to teach Data
+collection and Data Analysis through OSM, QGIS, and InaSAFE in their respective
+region.**
+
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
+| Basic competency                                                    | Indicator                                                        | Core material                                              |
++=====================================================================+==================================================================+============================================================+
+|1. Mastering how to implement adult learning                         |                                                                  |**Adult Learning**                                          |
+|                                                                     | 1. Explain the principles of adult learning                      |                                                            |
+|                                                                     | 2. Analyzing the characteristics of adult learning               | 1. Principles of adult learning                            |
+|                                                                     | 3. Determining strategies, teaching methods or techniques that   | 2. Characteristics of adult learning                       |
+|                                                                     |    apply adult learning                                          | 3. Strategies, teaching methods or techniques that apply   |
+|                                                                     | 4. Evaluating adult learning                                     |    adult learning                                          |
+|                                                                     |                                                                  | 4. Adult learning evaluation                               |
+|                                                                     |                                                                  |                                                            |
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
+|2. Demonstrating basic teaching skills                               |                                                                  |**Communication skills**                                    |
+|                                                                     | 1. Describe the principles of effective communication            |                                                            |
+|                                                                     | 2. Describing the communication models in workshop               | 1. Principles of effective communication                   |
+|                                                                     | 3. Demonstrate the basic skills component of teaching / workshop | 2. Communication models in workshop                        |
+|                                                                     |                                                                  | 3. Basic teaching skills component                         |
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
+|3. Practising Data Collection and Analysis through OSM, QGIS, and    |                                                                  |** Facilitator Skills for Data Collection and Analysis      |
+|   InaSAFE workshop                                                  |                                                                  |through OSM, QGIS, and InaSAFE workshop                     |
+|                                                                     |                                                                  |                                                            |
+|                                                                     | 1. Practicing data collection and analysis through OSM, QGIS     | 1. Implementation of adult learning in data collection and |
+|                                                                     |    and InaSAFE workshop using adult learning                     |    analysis through OSM, QGIS, and InaSAFE workshop        |
+|                                                                     | 2. Practicing communication skills in data collection and        | 2. Implementation of communication skills data collection  |
+|                                                                     |    analysis through OSM, QGIS, and InaSAFE workshop              |    and analysis through OSM, QGIS, and InaSAFE workshop    |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 
 
@@ -746,7 +831,7 @@ Based on curriculum, program structure is designed as follow.
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 
 
-**4.Data Analysis Using QGIS/InaSAFE Intermediate Level**
+**4. Data Analysis Using QGIS/InaSAFE Intermediate Level**
 
 
 +----+-----------------------------------------+-----------------------------------------+
@@ -779,6 +864,33 @@ Based on curriculum, program structure is designed as follow.
 |    | Total                                   | 50                                      |
 +----+-----------------------------------------+-----------------------------------------+
 
+
+**5. Training of Trainer for Contingency Planning using OSM, QGIS, and InaSAFE**
+
++----+-----------------------------------------+-----------------------------------------+
+| No | Workshop Material                       | Time (learning hour) @ 45Minutes        |
++====+=========================================+=========================================+
+|    | **General Program**                     | **1**                                   |
++----+-----------------------------------------+-----------------------------------------+
+| 1. | BNPB Policy                             | 1                                       |
++----+-----------------------------------------+-----------------------------------------+
+|    | **Main Program**                        | **6**                                   |
++----+-----------------------------------------+-----------------------------------------+
+| 2. | Adult learning                          | 2                                       |
++----+-----------------------------------------+-----------------------------------------+
+| 3. | Communication skills                    | 2                                       |
++----+-----------------------------------------+-----------------------------------------+
+| 4. | Practising Data Collection and Analysis | 2                                       |
+|    | through OSM, QGIS, and InaSAFE workshop |                                         |
++----+-----------------------------------------+-----------------------------------------+
+|    | **Supporting Program**                  | **2**                                   |
++----+-----------------------------------------+-----------------------------------------+
+| 8. | Opening and Closing                     | 1                                       |
++----+-----------------------------------------+-----------------------------------------+
+| 9. | Workshop Evaluation                     | 1                                       |
++----+-----------------------------------------+-----------------------------------------+
+|    | Total                                   | 9                                       |
++----+-----------------------------------------+-----------------------------------------+
 
 Syllabus
 ========
@@ -1213,3 +1325,56 @@ be easier to understand if read the prepared toolkit.
 |                                                                     | 9. Presenting the damages and losses assessment using a diagram  |                                                            |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
+
+**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and
+InaSAFE**
+
+**Standard Competency: Participant can be a workshop facilitator to teach Data
+collection and Data Analysis through OSM, QGIS, and InaSAFE in their respective
+region.**
+
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+| Basic competency                                                    | Indicator                                                        | Core material                                              | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
++=====================================================================+==================================================================+============================================================+=======================================+========================+============================+===============================+
+|**1. Adult Learning (2 Hours)**                                                                                                                                                                                                                                                                                                    |
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|Mastering how to implement adult learning                            |                                                                  |**Adult Learning**                                          | 1. Partisipant asking about           | 90 minutes             | Test                       | Projector                     |
+|                                                                     | 1. Explain the principles of adult learning                      |                                                            |    characteristic and principle of    |                        |                            | Slide PPT                     |
+|                                                                     | 2. Analyzing the characteristics of adult learning               | 1. Principles of adult learning                            |    adult learning                     |                        |                            | Module 1                      |
+|                                                                     | 3. Determining strategies, teaching methods or techniques that   | 2. Characteristics of adult learning                       | 2. Participant discussing about       |                        |                            | Plano Paper                   |
+|                                                                     |    apply adult learning                                          | 3. Strategies, teaching methods or techniques that apply   |    strategy of adult learning         |                        |                            | HVS Paper                     |
+|                                                                     | 4. Evaluating adult learning                                     |    adult learning                                          | 3. Participant discussing in pair     |                        |                            | Small ball                    |
+|                                                                     |                                                                  | 4. Adult learning evaluation                               |    about how to evaluate adult        |                        |                            | Music                         |
+|                                                                     |                                                                  |                                                            |    learning                           |                        |                            |                               |
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|**2. Communication Skill (2 Hours)**                                                                                                                                                                                                                                                                                               |
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|Demonstrating basic teaching skills                                  |                                                                  |**Communication skills**                                    | 1. Participant asking about the       | 90 minutes             | Test                       | Projector                     |
+|                                                                     | 1. Describe the principles of effective communication            |                                                            |    principles of effective            |                        | Practice                   | Slide PP                      |
+|                                                                     | 2. Describing the communication models in workshop               | 1. Principles of effective communication                   | 2. Participant discussing about       |                        |                            | Module 2                      |
+|                                                                     | 3. Demonstrate the basic skills component of teaching / workshop | 2. Communication models in workshop                        |    communication models in the        |                        |                            |                               |
+|                                                                     |                                                                  | 3. Basic teaching skills component                         |    training                           |                        |                            |                               |
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|**3. Facilitator Skills for Data Collection and Analysis through OSM, QGIS, and InaSAFE workshop (2 hours)**                                                                                                                                                                                                                       |
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|Practising Data Collection and Analysis through OSM, QGIS, and       |                                                                  |** Facilitator Skills for Data Collection and Analysis      | Participant practicing their          | 90 minutes             | Practice                   | Projector                     |
+|InaSAFE workshop                                                     |                                                                  |through OSM, QGIS, and InaSAFE workshop                     | facilitating skill for data collection|                        |                            | Slide PPT                     |
+|                                                                     |                                                                  |                                                            | and analysis using OSM, QGIS, and     |                        |                            |                               |
+|                                                                     | 1. Practicing data collection and analysis through OSM, QGIS     | 1. Implementation of adult learning in data collection and | InaSAFE Workshop                      |                        |                            |                               |
+|                                                                     |    and InaSAFE workshop using adult learning                     |    analysis through OSM, QGIS, and InaSAFE workshop        |                                       |                        |                            |                               |
+|                                                                     | 2. Practicing communication skills in data collection and        | 2. Implementation of communication skills data collection  |                                       |                        |                            |                               |
+|                                                                     |    analysis through OSM, QGIS, and InaSAFE workshop              |    and analysis through OSM, QGIS, and InaSAFE workshop    |                                       |                        |                            |                               |
++---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+
+
+
+F. Closing
+==========
+
+After organizing this Training of Trainer for Scenario Development for
+Contingency Planning using OSM and QGIS/InaSAFE Curriculum Scheme by BNPB, we
+are hoping that workshop organizer from National level or province/district
+level can use this document as refference in order to create same output. This
+curriculum will always be improved through several Test and input from
+stakeholders, such as government official or non-government which included in
+working group.

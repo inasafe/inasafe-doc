@@ -1,7 +1,7 @@
+.. _contents:
 
-=====================
-InaSAFE Documentation
-=====================
+|project_name| Documentation
+============================
 
 .. toctree::
     :maxdepth: 3

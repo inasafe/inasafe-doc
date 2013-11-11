@@ -18,29 +18,29 @@ following:
 * Provide a stable base of 'institutional knowledge' to the project
 
 
-==================== ===================== ============================= ================ ====================
-Name                 Agency                Position                      Role             Committee
--------------------- --------------------- ----------------------------- ---------------- --------------------
-Sutopo Purwo Nugroho |BNPB|                Head Data, Information & PR   Steer            PSC
-Wisnu Widjaja        |BNPB|, |AIFDR|       Co-Director AIFDR             Steer            PSC
-Agus Wibowo          |BNPB|                Data and Information Manager  Steer            TWG
-Trevor Dhu           |AIFDR|, |AusAID|     Co-Director AIFDR             Steer            PSC
-David Robinson       |AIFDR|, |GA|         R&V Manager                   Steer
-Kristy Van Putten    |AIFDR|, |GA|         Deputy R&V Manger             Steer,train      TWG
-Charlotte Morgan     |AIFDR|, |GA|         Spatial Analyst/Data Manger   Test,train
-Ole Nielsen          |GA|                  Software Developer Manager    Developer
-Iwan Gunawan         |GFDRR|                                             Steer            PSC
-Abby Bacca           World Bank                                          Steer
-Ariel Nunez          |GFDRR|                                             Developer
-Robert Soden         |GFDRR|                                             Test,train
-Viven Deparday       |GFDRR|                                             Developer        TWG
-Liana Razafindrazay  |GFDRR|                                             Test,train
-Tim Sutton           |Linfiniti|           Head of Linfiniti             Developer        Release coordinator
-Werner Macho         |Linfiniti|           Manage Doc and Infrastructure Developer
-Christian Christelis |Linfiniti|                                         Developer
-Marco Bernasocchi    |Linfiniti|                                         Developer
-Yantisa Akhadi       |HOT|, Indonesia      Trainer OSM/InaSAFE/QGIS      Train, translate
-==================== ===================== ============================= ================ ====================
+==================== ========================== ============================= ================ ====================
+Name                 Agency                     Position                      Role             Committee
+-------------------- -------------------------- ----------------------------- ---------------- --------------------
+Sutopo Purwo Nugroho |BNPB|                     Head Data, Information & PR   Steer            PSC
+Wisnu Widjaja        |BNPB|, |AIFDR|            Co-Director AIFDR             Steer            PSC
+Agus Wibowo          |BNPB|                     Data and Information Manager  Steer            TWG
+Trevor Dhu           |AIFDR|, |DFATAusAid|      Co-Director AIFDR             Steer            PSC
+David Robinson       |AIFDR|, |GA|              R&V Manager                   Steer
+Kristy Van Putten    |AIFDR|, |GA|              Deputy R&V Manger             Steer,train      TWG
+Charlotte Morgan     |AIFDR|, |GA|              Spatial Analyst/Data Manger   Test,train
+Ole Nielsen          |GA|                       Software Developer Manager    Developer
+Iwan Gunawan         |GFDRR|                                                  Steer            PSC
+Abby Bacca           World Bank                                               Steer
+Ariel Nunez          |GFDRR|                                                  Developer
+Robert Soden         |GFDRR|                                                  Test,train
+Viven Deparday       |GFDRR|                                                  Developer        TWG
+Liana Razafindrazay  |GFDRR|                                                  Test,train
+Tim Sutton           |Linfiniti|                Head of Linfiniti             Developer        Release coordinator
+Werner Macho         |Linfiniti|                Manage Doc and Infrastructure Developer
+Christian Christelis |Linfiniti|                                              Developer
+Marco Bernasocchi    |Linfiniti|                                              Developer
+Yantisa Akhadi       |HOT|, Indonesia           Trainer OSM/InaSAFE/QGIS      Train, translate
+==================== ========================== ============================= ================ ====================
 
 Other past and present key contributors are found below:
 
@@ -67,5 +67,3 @@ Gighi                                       Developer                       inac
 Oscar                                       Developer                       inactive
 Ted Dunstone                                Developer                       inactive
 ==================== =====================  ===========================     ================
-
-

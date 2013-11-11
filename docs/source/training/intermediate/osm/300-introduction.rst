@@ -5,9 +5,9 @@ Disclaimer
 
 This document is initial draft and still in reviewing phase by these parties:
 
-• Badan Nasional Penanggulangan Bencana (BNPB)
-• Australia-Indonesia Facility for Disaster Reduction (AIFDR-AusAID)
-• Humanitarian OpenStreetMap Team (HOT)
+• Badan Nasional Penanggulangan Bencana (|BNPB|)
+• Australia-Indonesia Facility for Disaster Reduction (|AIFDR|-|DFATAusAid|)
+• Humanitarian OpenStreetMap Team (|HOT|)
 
 All contents and materials on this document possibly changed without public
 notice.
@@ -15,13 +15,21 @@ notice.
 License
 *******
 
-.. image:: /static/training/intermediate/osm/image2.*
+.. image:: /static/training/beginner/osm/image2.*
 
-All contents and materials on this document is licensed as Public Domain.
-You can copy, modify, spread, and showing this module without permission.
+All contents and materials on this document is licensed as Creative Commons
+Attribution Australia (CCbyA).
 
-More information about Public Domain License:
-http://wiki.creativecommons.org/Publicdomain/zero/1.0/LegalText_(Indonesian)
+You are free:
+
+- to copy, distribute, display, and perform the work
+- to make derivative works
+- to make commercial use of the work
+
+You must give the original author credit.
+
+More information about CCbyA License:
+http://creativecommons.org/licenses/by/3.0/au/deed.en_GB
 
 About Us
 ********
@@ -74,6 +82,22 @@ principles and activities of open source and open data sharing towards
 humanitarian response and economic development.
 
 http://hot.openstreetmap.org
+
+Universitas Gadjah Mada
+=======================
+
+.. image:: /static/training/beginner/osm/ugm.*
+
+Universitas Gadjah Mada (internationally known as Gadjah Mada University ;
+Abbreviation : UGM) is an Indonesian public ivy league research university
+located in Yogyakarta, Indonesia. Department of Geodetic Engineering, Faculty of
+Engineering focuses on education, research, and commmunity services related to
+geodesy and geomatics engineering, including acquisition, analysis, and uses of
+detailed and accurate geospatial data and large-scale maps using open source
+geospatial software for disaster management.
+
+http://ugm.ac.id
+
 
 
 Preface
