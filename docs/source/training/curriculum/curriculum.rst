@@ -198,10 +198,10 @@ Qualifications for participation at intermediate level:
 
 Qualifications for participants at Training of Trainer (ToT) level:
 
-1. Has followed OSM and QGIS/InasAFE  workshop both beginner and intermediate 
+1. Has followed OSM and QGIS/InasAFE  workshop both beginner and intermediate
    levels.
-2. Demonstrate the potential to be a key person of or advocate as well as a 
-   trainer (trainers) in the training program for the Scenario Development 
+2. Demonstrate the potential to be a key person of or advocate as well as a
+   trainer (trainers) in the training program for the Scenario Development
    Contingency Plan in their respective region.
 3. Satisfactory completion of prerequisite tasks (as assessed by HOT).
 
@@ -274,12 +274,12 @@ C. Map of Competencies
 
 Standard Competency and Basic Competency
 
-**Participant can be a workshop facilitator to teach Data collection and Data 
-Analysis through OSM, QGIS, and InaSAFE in their respective region.** 
+**Participant can be a workshop facilitator to teach Data collection and Data
+Analysis through OSM, QGIS, and InaSAFE in their respective region.**
 
 1. Mastering how to implement adult learning
 2. Demonstrating basic teaching skills
-3. Practising Data Collection and Analysis through OSM, QGIS, and InaSAFE 
+3. Practising Data Collection and Analysis through OSM, QGIS, and InaSAFE
    workshop
 
 
@@ -491,8 +491,8 @@ E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 
 **Data Analysis Using QGIS and InaSAFE Beginner Level Workshop**
 
-**Standard Competency: Managing spatial data using QGIS and analyzing disaster
-**impact scenario using InaSAFE
+**Standard Competency: Managing spatial data using QGIS and analyzing disaster**
+**impact scenario using |project_name|**
 
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
@@ -610,8 +610,8 @@ E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 
 **Data Analysis Using QGIS and InaSAFE Intermediate Level Workshop**
 
-**Standard Competency: Data spatial analysis using QGIS and InaSAFE which is
-**related to contingency planning
+**Standard Competency: Data spatial analysis using QGIS and InaSAFE which is**
+**related to contingency planning**
 
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
@@ -671,12 +671,12 @@ E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 
 
 
-**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and 
+**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and
 InaSAFE**
 
-**Standard Competency: Participant can be a workshop facilitator to teach Data 
-collection and Data Analysis through OSM, QGIS, and InaSAFE in their respective 
-region.** 
+**Standard Competency: Participant can be a workshop facilitator to teach Data
+collection and Data Analysis through OSM, QGIS, and InaSAFE in their respective
+region.**
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                              |
@@ -1326,12 +1326,12 @@ be easier to understand if read the prepared toolkit.
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
 
-**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and 
+**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and
 InaSAFE**
 
-**Standard Competency: Participant can be a workshop facilitator to teach Data 
-collection and Data Analysis through OSM, QGIS, and InaSAFE in their respective 
-region.** 
+**Standard Competency: Participant can be a workshop facilitator to teach Data
+collection and Data Analysis through OSM, QGIS, and InaSAFE in their respective
+region.**
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                              | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
@@ -1350,7 +1350,7 @@ region.**
 |**2. Communication Skill (2 Hours)**                                                                                                                                                                                                                                                                                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Demonstrating basic teaching skills                                  |                                                                  |**Communication skills**                                    | 1. Participant asking about the       | 90 minutes             | Test                       | Projector                     |
-|                                                                     | 1. Describe the principles of effective communication            |                                                            |    principles of effective            |                        | Practice                   | Slide PP                      |                              
+|                                                                     | 1. Describe the principles of effective communication            |                                                            |    principles of effective            |                        | Practice                   | Slide PP                      |
 |                                                                     | 2. Describing the communication models in workshop               | 1. Principles of effective communication                   | 2. Participant discussing about       |                        |                            | Module 2                      |
 |                                                                     | 3. Demonstrate the basic skills component of teaching / workshop | 2. Communication models in workshop                        |    communication models in the        |                        |                            |                               |
 |                                                                     |                                                                  | 3. Basic teaching skills component                         |    training                           |                        |                            |                               |
