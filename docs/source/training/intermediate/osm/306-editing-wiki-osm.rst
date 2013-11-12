@@ -21,6 +21,9 @@ a website where users can create different web pages about different topics
 and in different languages.
 To see the OSM wiki, visit http://wiki.openstreetmap.org
 
+
+**1. Definision of Wiki OpenStreetMap**
+
 A wiki is a website where any user can add pages and edit existing pages.
 It is based on the same principle as OpenStreetMap, the only difference is
 that with OSM users are editing maps, while wiki users are editing text.
@@ -43,7 +46,7 @@ We will learn the guidelines for contributing, the special markup language for
 creating a wiki page, and helpful ways for improving the wiki,
 such as translating important pages.
 
-**1. The Wiki and Signing Up**
+**2. The Wiki and Signing Up**
 
 .. image:: /static/training/intermediate/osm/image135.*
    :align: center
@@ -86,13 +89,13 @@ such as translating important pages.
 .. image:: /static/training/intermediate/osm/image138.*
    :align: center
 
-**2. Getting Started**
+**3. Edit**
 
-Let’s start out by editing our user page.
-Every user has a page on the wiki.
+Let’s start out by editing our user page. Every user has a page on the wiki.
 These pages are commonly used to provide information about yourself, your
 location, for interpersonal communication, and for creating test pages and
 drafts.
+
 This is a great place for us to start, and learn the basics of editing a wiki
 page.
 
@@ -165,11 +168,12 @@ page.
 
 https://wiki.openstreetmap.org/wiki/User:MapJeff
 
-**3. More Formatting**
+**4. The Format of Writing Wiki**
 
 In this section we will discuss many of the different ways you can format your
 information on a wiki page and the appropriate codes to use to create
 different elements.
+
 It’s a good idea to practice before trying to create an official wiki page
 that you want others to see, so first let’s create a sub-page under your user
 page where you can play around and practice editing.
@@ -378,7 +382,7 @@ Compare the wiki text to the way it is formatted when you are viewing it.
 You can find more information on editing at
 http://wiki.openstreetmap.org/wiki/Help:Wiki-Editing.
 
-**4. Conventions and Guidelines**
+**5. Creating A New Page in Wiki**
 
 You can create any wiki page the same way that you have created your user
 page.
@@ -412,7 +416,69 @@ When Structuring a Page
   Remember that you can look at the code for any page by clicking on the edit
   tab and seeing how other users format their text.
 
-**5. Translating Pages**
+
+**6. Upload File and Photo/Image**
+
+To add or insert files or images on Wikimedia pages, first we have to upload a 
+file or image to the Wikipedia website. Here are the steps:
+
+1. Uploading files or images to the Wikipedia website.
+
+- Open https://wiki.openstreetmap.org website.
+- Make sure you are logged in.
+- Then click :guilabel:`Upload file` which is in the left side of the screen, 
+  under the Tools menu.
+
+.. image:: /static/training/intermediate/osm/image148.*
+   :align: center
+
+- After Upload file page opened, click :guilabel:`Choose File` at Source file name. 
+  Find the file that will be uploaded from your computer.
+
+.. image:: /static/training/intermediate/osm/image149.*
+   :align: center
+
+- Terms file to upload: 
+
+1) Maximum file/image size: 70 MB
+2) Permitted file/image type: doc, pdf, odt, odp (for file) dan png, gif, jpg, 
+   jpeg, svg (for image).
+
+- After choosing the file, click “Upload file” at the bottom of the page.
+- Then it will show a page like this:
+
+.. image:: /static/training/intermediate/osm/image150.*
+
+*Example of file upload*
+
+.. image:: /static/training/intermediate/osm/image151.*
+
+*Example of image upload*
+
+- Your file/image uploaded successfully! However, this file/image has not been 
+  on your page. 
+
+
+2. Insert file / image on the Wikipedia page.
+
+- Look the file/image name that you uploaded before, example: 
+  File:Mapping jakarta.JPG and File:Pemetaan dengan OSM.pdf.
+- To insert a file / image on your page, you have to go to the page that you 
+  want to modify and then click :guilabel:`Edit`
+- Copy the name of file/image you have uploaded into the editing box, as shown 
+  below:
+
+.. image:: /static/training/intermediate/osm/image152.*
+   :align: center
+
+- Then click :guilabel:`Save page` under the editing box.
+- The result will look like this:
+
+.. image:: /static/training/intermediate/osm/image153.*
+   :align: center
+
+
+**7. Translating Pages**
 
 One very useful thing that can be done on the wiki is to translate important
 pages into your language.
@@ -447,6 +513,8 @@ and translating it into your language.
 This will allow you to keep all of the original formatting and links
 correctly, but translate the English text into your own language.
 
+
+
 **6. Watching Pages**
 
 You may want keep an eye on pages that you have edited yourself, or that you
@@ -458,14 +526,19 @@ have edited them.
 To add a page to your watchlist, click on the star at the top of the page
 section:
 
-.. image:: /static/training/intermediate/osm/image148.*
+.. image:: /static/training/intermediate/osm/image154.*
    :align: center
 
 Then, you can view your watchlist by clicking on “My Watchlist” at the top of
 the page:
 
-.. image:: /static/training/intermediate/osm/image149.*
+.. image:: /static/training/intermediate/osm/image155.*
    :align: center
 
 On the :guilabel:`My Watchlist` page you choose to show changes to your watched
 pages within the past hours, or days, or since you started watching the page.
+
+
+
+
+
