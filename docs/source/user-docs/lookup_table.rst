@@ -22,12 +22,13 @@ hazard                             ancaman bencana
 exposure                           keterpaparan
 activities                         langkah kegiatan
 common problem                     masalah yang sering dijumpai
-workshop                           diklat
+workshop                           lokakarya
 jobs                               job
 working with                       pengoperasian/mengoperasikan
 demo                               demonstrasi
 module                             modul
 learning activity                  kegiatan pembelajaran
+population                         populasi
 
 ===============================    ===========================================
 
@@ -50,6 +51,12 @@ We have also made a blanket decision not to translate the following words:
 
 * python
 * qgis
+* batch runner
+* review
+* tool
+* template
+* input
+* output
 
 Please add to this list as required.
 
