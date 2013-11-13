@@ -6,7 +6,7 @@ Submit an Issue
 You are more than welcome to let us know when you have found a bug or an
 issue in |project_name|.
 
-You can take the advantage of using MD language on github to make your report
+You can take the advantage of using MD language on |github| to make your report
 looking more nicely and better visible to the developers.
 
 To be able to track your issue best we have the following rules that make
