@@ -147,17 +147,32 @@ to highlight them all) and then hit :kbd:`SHIFT + J` to merge the objects.
 .. image:: /static/training/intermediate/osm/image20.*
    :align: center
 
+Furthermore, you can also change the default settings (size and tagging) on
+:menuselection:`Data > Set building size`
+
+.. image:: /static/training/intermediate/osm/image21.*
+   :align: center
+
+If you are dealing with a similar size of building, you can change building in
+certain dimensions, such as 5 x 6 meter (unit in meter). Furthermore, if you
+mapping same infrastructure, such as townhouses in same area, you can edit tags
+on :guilabel:`Advanced` tab that all objects are mapped into same building tools.
+
+.. image:: /static/training/intermediate/osm/image22.*
+   :align: center
+
+
 **Utilsplugin2 (More Tools)**
 
 The plugin utilsplugin2 has several features that are also useful for editing.
 
-.. image:: /static/training/intermediate/osm/image21.*
+.. image:: /static/training/intermediate/osm/image23.*
    :align: center
 
 After you install this plugin, a new menu will appear called
 :menuselection:`More Tools`
 
-.. image:: /static/training/intermediate/osm/image22.*
+.. image:: /static/training/intermediate/osm/image24.*
    :align: center
 
 The following tools are generally the most useful:
@@ -166,7 +181,7 @@ The following tools are generally the most useful:
   missing nodes in intersections of selected ways.  It is good practice that
   roads and rivers should always have common nodes where they intersect.
 
-.. image:: /static/training/intermediate/osm/image23.*
+.. image:: /static/training/intermediate/osm/image25.*
    :align: center
 
 - **Copy Tags from Previous Selection:**  This function makes copying tags
@@ -178,7 +193,7 @@ The following tools are generally the most useful:
   untagged object and then another untagged object, you will not be able to
   copy any tags.
 
-.. image:: /static/training/intermediate/osm/image24.*
+.. image:: /static/training/intermediate/osm/image26.*
    :align: center
 
 - **Add Source Tag:** This tool simplifies adding a source tag. It remembers
@@ -192,12 +207,12 @@ The following tools are generally the most useful:
   can (2) just draw the object again (3) select the old and new object (4)
   press :guilabel:`Replace Geometry` to transfer all the information over.
 
-.. image:: /static/training/intermediate/osm/image25.*
+.. image:: /static/training/intermediate/osm/image27.*
    :align: center
 
 Utilsplugin2 also provides a new selection menu that provides more tools:
 
-.. image:: /static/training/intermediate/osm/image26.*
+.. image:: /static/training/intermediate/osm/image28.*
    :align: center
 
 These tools have proved to be the most useful:
@@ -211,7 +226,7 @@ These tools have proved to be the most useful:
     -- polygons, ways and relations
     -- unselect the nodes and tag appropriately.
 
-.. image:: /static/training/intermediate/osm/image27.*
+.. image:: /static/training/intermediate/osm/image29.*
    :align: center
 
 - **Select Last Modified Nodes:**  This tool permits you to go back to the
@@ -238,7 +253,7 @@ are not part of the building. This is an example of a relation. The relation
 would contain several polygons - and the attributes of the building would be
 attached to the relation, not the polygons.
 
-.. image:: /static/training/intermediate/osm/image28.*
+.. image:: /static/training/intermediate/osm/image30.*
    :align: center
 
 Relations are used to represent anything that requires a collection of objects
@@ -259,12 +274,12 @@ polygons you need to:
 1. Select all of the polygons.
 2. Go to :menuselection:`Tools ‣ Create multipolygon`
 
-.. image:: /static/training/intermediate/osm/image29.*
+.. image:: /static/training/intermediate/osm/image31.*
    :align: center
 
 3. The polygons should automatically be created as a multi-polygon.
 
-.. image:: /static/training/intermediate/osm/image30.*
+.. image:: /static/training/intermediate/osm/image32.*
    :align: center
 
 You will then see your building as a a solid shape with the inner polygons
@@ -274,7 +289,7 @@ can see this multipologyon on OSM by going to
 http://www.openstreetmap.org/browse/relation/2435797.
 It will appear on OpenStreetMap like this:
 
-.. image:: /static/training/intermediate/osm/image31.*
+.. image:: /static/training/intermediate/osm/image33.*
    :align: center
 
 *2.2  Another MultiPolygon*
@@ -285,10 +300,10 @@ of members and covering a much larger area.
 It can be viewed on the OpenStreetMap site here:
 http://www.openstreetmap.org/browse/relation/1046961.
 
-.. image:: /static/training/intermediate/osm/image32.*
+.. image:: /static/training/intermediate/osm/image34.*
    :align: center
 
-.. image:: /static/training/intermediate/osm/image33.*
+.. image:: /static/training/intermediate/osm/image35.*
    :align: center
 
 *This river contains ten ways that are connected like a long polygon.*
@@ -304,9 +319,9 @@ these can be tagged as such.
 Additional features, such as bus stops represented by separate nodes can also
 be tagged as relation members.
 
-.. image:: /static/training/intermediate/osm/image34.*
+.. image:: /static/training/intermediate/osm/image36.*
 
-.. image:: /static/training/intermediate/osm/image35.*
+.. image:: /static/training/intermediate/osm/image37.*
 
 1. Make sure that all of the ways in which the route runs along are
    appropriately tagged. For example, **highway = footway**.
@@ -324,12 +339,12 @@ be tagged as relation members.
    :menuselection:`Route master` is the main route that a bus takes,
    while route is a variant path of the bus.
 
-.. image:: /static/training/intermediate/osm/image36.*
+.. image:: /static/training/intermediate/osm/image38.*
    :align: center
 
 4. Fill in the corresponding information about the bus route.
 
-.. image:: /static/training/intermediate/osm/image37.*
+.. image:: /static/training/intermediate/osm/image39.*
    :align: center
 
 Relations are difficult to understand and do not have to be used often,
@@ -337,105 +352,3 @@ but they are necessary to know about.  As you get more developed with your
 OSM skills and want to create more complex building, river and routes,
 relations will be useful.
 
-**3. Editing Tips**
-
-In this section we will go over some common mistakes in JOSM and provide some
-editing tips for making your maps great!
-
-*3.1  Some Objects Should Not Connect*
-
-When you are creating polygons and lines that are not supposed to be
-connected, make sure that they are not merged together by sharing a node.
-For example, highway nodes should not be snapped to buildings,
-because no one likes a road that leads directly into a wall!  If you want to
-disentangle two or more objects that share the same node,
-select the node and press :kbd:`G`
-
-.. image:: /static/training/intermediate/osm/image38.*
-   :align: center
-
-.. image:: /static/training/intermediate/osm/image39.*
-   :align: center
-
-But, Some Objects Should Connect
-
-However, some objects **SHOULD connect!**  Road intersections should always be
-snapped together.  If two roads do not share a common node, then the computer
-has no way of knowing that the roads actually connect to each other.
-
-.. image:: /static/training/intermediate/osm/image40.*
-   :align: center
-
-*3.2 Overlapping Objects*
-
-A common error is to have overlapping polygons when the objects they represent
-do not overlap in real life.
-A building cannot overlap another building.
-This mistake is commonly made with buildings and landuse polygons.
-For example, a polygon drawn to represent a park outside a building should not
-overlap with the building.
-Instead it should be drawn next to the building.
-
-There are some exceptions to this rule, such as schools.
-Within a school yard you might identify individual buildings using polygons,
-yet you also might want to create a polygon around the entire school yard.
-In this case it is fine for the polygons to overlap, but the rule to follow
-here is to make sure that the buildings are completely inside the landuse
-polygon.
-
-.. image:: /static/training/intermediate/osm/image41.*
-   :align: center
-
-.. image:: /static/training/intermediate/osm/image42.*
-   :align: center
-
-We all make mistakes, and as you map more you will make less mistakes!
-Just remember that even if you upload data that contains mistakes,
-it is simple to fix your mistakes and upload the change again.
-This is what is great about OSM, you can always make it better!
-
-*3.3  Tracing Correctly*
-
-OSM can do amazing things with identifying where objects end and what labels
-these objects should have; however, it needs your help in doing so.
-For example, if you create a road that turns into another road without a
-distinct node, then JOSM will continue labeling the road as the previous one.
-Therefore, it is necessary that you make all of your roads and objects as
-clearly and rigid as possible.
-
-.. image:: /static/training/intermediate/osm/image43.*
-   :align: center
-
-**4. Keyboard Shortcuts**
-
-Lastly, let’s cover a topic that can save a lot of time when you’re editing.
-Sometimes it can be annoying to repeatedly click to select different options
-and menus in JOSM.
-Luckily there are shortcut keys on the keyboard that allow you to do many
-common tasks.
-Here is a list of some of the most commonly used shortcut keys,
-along with what they do:
-
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image44.*   | Chooses the Select tool             |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image45.*   | Deletes Selected Object             |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image46.*   | Chooses the Draw Tool               |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image47.*   | Chooses the Zoom tool               |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image48.*   | Zoom in                             |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image49.*   | Zoom out                            |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image50.*   | Split way                           |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image51.*   | Combine Way                         |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image52.*   | Align in circle                     |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image53.*   | Align in line                       |
-+----------------------------------------------------------+-------------------------------------+
-| .. image:: /static/training/intermediate/osm/image54.*   | Orthogonalize (make a shape square) |
-+----------------------------------------------------------+-------------------------------------+

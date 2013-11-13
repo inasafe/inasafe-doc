@@ -23,7 +23,7 @@ which can aid us further in identifying mistakes on OpenStreetMap.
 
 Sometimes when you go to upload your edits you get a pop-up window like this:
 
-.. image:: /static/training/intermediate/osm/image55.*
+.. image:: /static/training/intermediate/osm/image40.*
    :align: center
 
 This is JOSM’s way of telling you that there is suspicious data and that you
@@ -57,7 +57,7 @@ Let’s see how to use the validation tool:
   :guilabel:`Validation Results` window in the right panel, click on the blue
   checkmark on the left to show it.
 
-.. image:: /static/training/intermediate/osm/image56.*
+.. image:: /static/training/intermediate/osm/image41.*
    :align: center
 
 - Ensure that nothing on the map is selected.
@@ -65,14 +65,14 @@ Let’s see how to use the validation tool:
   it will only validate what you have selected, and not the whole map.
   Hover your mouse in the validation window and click :guilabel:`Validation`.
 
-.. image:: /static/training/intermediate/osm/image57.*
+.. image:: /static/training/intermediate/osm/image42.*
    :align: center
 
 - The map will change and any warnings will be circled in yellow, errors in red.
   In the :guilabel:`Validation Results` window you will see a list of warnings
   and errors, if there are any.
 
-.. image:: /static/training/intermediate/osm/image58.*
+.. image:: /static/training/intermediate/osm/image43.*
    :align: center
 
 - Errors should almost always be fixed.
@@ -84,7 +84,7 @@ Let’s see how to use the validation tool:
   :guilabel:`Fix` button in the window.
   Many errors, however, need to be corrected manually.
 
-.. image:: /static/training/intermediate/osm/image59.*
+.. image:: /static/training/intermediate/osm/image44.*
    :align: center
 
 - Usually there are many more warnings than errors.
@@ -123,7 +123,7 @@ To see how the tasking manager works, let’s take a closer look.
 - Open your Internet browser and go to tasks.hotosm.org. You will see a page
   like this:
 
-.. image:: /static/training/intermediate/osm/image60.*
+.. image:: /static/training/intermediate/osm/image45.*
    :align: center
 
 - Click :guilabel:`Log in using your OpenStreetMap account` Here you are
@@ -131,18 +131,18 @@ To see how the tasking manager works, let’s take a closer look.
   account.
   Click :guilabel:`Save Changes`.
 
-.. image:: /static/training/intermediate/osm/image61.*
+.. image:: /static/training/intermediate/osm/image46.*
    :align: center
 
 - Now you will see the current list of projects.
   These are different places that people are coordinating to map.
 
-.. image:: /static/training/intermediate/osm/image62.*
+.. image:: /static/training/intermediate/osm/image47.*
    :align: center
 
 - Click on one of the projects to see more information about it.
 
-.. image:: /static/training/intermediate/osm/image63.*
+.. image:: /static/training/intermediate/osm/image48.*
    :align: center
 
 - This page shows you everything you need to know about the project.
@@ -158,7 +158,7 @@ To see how the tasking manager works, let’s take a closer look.
   By clicking on :guilabel:`Task` you can take a grid square to work on
   yourself.
 
-.. image:: /static/training/intermediate/osm/image64.*
+.. image:: /static/training/intermediate/osm/image49.*
    :align: center
 
 - Here you see a view of the square that you have offered to map.
@@ -171,7 +171,7 @@ To see how the tasking manager works, let’s take a closer look.
   :guilabel:`Enable remote control`.
   Restart JOSM.
 
-.. image:: /static/training/intermediate/osm/image65.*
+.. image:: /static/training/intermediate/osm/image50.*
    :align: center
 
 - Go back to the Tasking Manager and choose JOSM.
@@ -186,7 +186,7 @@ To see how the tasking manager works, let’s take a closer look.
   If you were unable to complete the task, click :guilabel:`Unlock it` to make
   it available again for other mappers.
 
-.. image:: /static/training/intermediate/osm/image66.*
+.. image:: /static/training/intermediate/osm/image51.*
    :align: center
 
 - If you are wondering what happens when you finish an area, the grid square
@@ -197,10 +197,85 @@ To see how the tasking manager works, let’s take a closer look.
 
 **4. Editing Tips**
 
+In this section we will go over some common mistakes in JOSM and provide some
+editing tips for making your maps great!
+
+**Some Objects Should Not Connect**
+
+When you are creating polygons and lines that are not supposed to be connected,
+make sure that they are not merged together by sharing a node.  For example,
+highway nodes should not be snapped to buildings, because no one likes a road
+that leads directly into a wall!  If you want to disentangle two or more obejcts
+that share the same node, select the node and press :kbd:`G`.
+
+.. image:: /static/training/intermediate/osm/image52.*
+   :align: center
+
+.. image:: /static/training/intermediate/osm/image53.*
+   :align: center
+
+**But, Some Objects Should Connect**
+
+However, some objects SHOULD connect!  Road intersections should always be
+snapped together.  If two roads do not share a common node, then the computer
+has no way of knowing that the roads actually connect to each other.
+
+.. image:: /static/training/intermediate/osm/image54.*
+   :align: center
+
+
+**Overlapping Objects**
+
+A common error is to have overlapping polygons when the objects they represent
+do not overlap in real life.  A building cannot overlap another building.  This
+mistake is commonly made with buildings and landuse polygons.  For example, a
+polygon drawn to represent a park outside a building should not overlap with the
+building.  Instead it should be drawn next to the building. There are some
+exceptions to this rule, such as schools.  Within a school yard you might
+identify individual buildings using polygons, yet you also might want to create
+a polygon around the entire school yard.  In this case it is fine for the
+polygons to overlap, but the rule to follow here is to make sure that the
+buildings are completely inside the landuse polygon.
+
+
+.. image:: /static/training/intermediate/osm/image55.*
+   :align: center
+
+.. image:: /static/training/intermediate/osm/image56.*
+   :align: center
+
+
+We all make mistakes, and as you map more you will make less mistakes!  Just
+remember that even if you upload data that contains mistakes, it is simple to
+fix your mistakes and upload the change again.  This is what is great about OSM,
+you can always make it better!
+
+**Tracing Correctly**
+
+OSM can do amazing things with identifying where objects end and what labels
+these objects should have; however, it needs your help in doing so.  For
+example, if you create a road that turns into another road without a distinct
+node, then JOSM will continue labeling the road as the previous one.  Therefore,
+it is necessary that you make all of your roads and objects as clearly and rigid
+as possible.
+
+
+.. image:: /static/training/intermediate/osm/image57.*
+   :align: center
+
+
+We will conclude this section with additional tips: 
+Rotate object: If you hold :kbd:`CTRL + SHIFT` and hold while sliding your 
+mouse, then you can rotate the selected object.
+
+.. image:: /static/training/intermediate/osm/image58.*
+   :align: center
+
+
 **Ways that are not closed**: usually a line that does not form a polygon.
 Common examples are buildings where the first node does not meet the last node.
 
-.. image:: /static/training/intermediate/osm/image67.*
+.. image:: /static/training/intermediate/osm/image59.*
    :align: center
 
 To fix this, select both nodes and go to :menuselection:`Tools ‣ Merge Nodes`
@@ -209,7 +284,7 @@ to connect them.
 **Crossing Buildings (Overlapping Buildings)**: buildings that overlap each
 other.
 
-.. image:: /static/training/intermediate/osm/image68.*
+.. image:: /static/training/intermediate/osm/image60.*
    :align: center
 
 To fix this, move the nodes of one of the buildings outside of the other
@@ -218,7 +293,7 @@ building.
 **Untagged Nodes or Ways**: If someone draws a point or a line but forgets to
 give it any tags, then it is useless, because it does not mean anything.
 
-.. image:: /static/training/intermediate/osm/image69.*
+.. image:: /static/training/intermediate/osm/image61.*
    :align: center
 
 To fix this, apply tags to the object to identify it, or delete it if it is a
@@ -226,10 +301,11 @@ mistake.
 
 **End node near another way**: If a line ends very close to another line but
 does not connect, this raises a warning.
+
 Many times this warning is not important, but it helps to find road
 intersections that are supposed to connect but do not.
 
-.. image:: /static/training/intermediate/osm/image70.*
+.. image:: /static/training/intermediate/osm/image62.*
    :align: center
 
 **Crossing ways**: Lines that cross other lines without being connected will
@@ -239,7 +315,7 @@ such as in the case of bridges, or streets and rivers that cross landuse
 polygons.
 It is sometimes helpful, however to find errors.
 
-.. image:: /static/training/intermediate/osm/image71.*
+.. image:: /static/training/intermediate/osm/image63.*
    :align: center
 
 OpenStreetMap depends on people correcting and editing mistakes.
@@ -278,7 +354,7 @@ You can find the list of these standard presets **here**
 - You can switch the site into Indonesian by choosing :guilabel:`id` from the
   dropdown box in the in the upper right.
 
-.. image:: /static/training/intermediate/osm/image72.*
+.. image:: /static/training/intermediate/osm/image64.*
    :align: center
 
 - Click on “Pengecekan data untuk Asia” to check the OSM data in Asia.
@@ -286,19 +362,79 @@ You can find the list of these standard presets **here**
   You can navigate to your area of interest by using the zoom and pan
   functions.
 
-.. image:: /static/training/intermediate/osm/image73.*
+.. image:: /static/training/intermediate/osm/image65.*
    :align: center
 
 - The types of errors are listed on the left of the map.
   You can get more details about each error by clicking on the icons which
   hover above the map.
 
-.. image:: /static/training/intermediate/osm/image74.*
+.. image:: /static/training/intermediate/osm/image66.*
    :align: center
 
-- In order to fix one of the errors, you can click on the links to edit in
-  either JOSM or Potlatch.
-  Note that to edit in JOSM you must have the JOSM Remote Control enabled.
 
-The Keep Right website is a great way to keep an eye on your area of interest
-and fix and errors that may exist in the OSM data.
+- After you find territory and find out his mistake. Certainly next step is to
+  fix the error. First step, make sure you have selected an error/lightning (by
+  left click on the lightning image). After that, determine where you would fix
+  the error, whether on the "JOSM" or "Potlatch". Note: we recommend that the
+  editing in JOSM, because its editing features are more complete.
+
+
+- In order to fix one of the errors, you can click on the links to edit in
+  either JOSM or Potlatch.  Note that to edit in JOSM you must have the JOSM
+  Remote Control enabled.
+
+.. image:: /static/training/intermediate/osm/image67.*
+   :align: center
+
+Setting “Remote Control” JOSM
+
+- Before you start working with "Keepright", make sure you have enabled "Remote
+  Control" in JOSM. To check this, open your JOSM, then select the menu 
+  :menuselection:`Edit > Preferences`. Once the window :guilabel:`Preferences` 
+  appears, select the tab :guilabel:`Remote Control`
+
+
+.. image:: /static/training/intermediate/osm/image68.*
+   :align: center
+
+.. image:: /static/training/intermediate/osm/image69.*
+   :align: center
+
+- Next, you will see the window like this
+  
+
+.. image:: /static/training/intermediate/osm/image70.*
+
+*image (a)*
+
+
+.. image:: /static/training/intermediate/osm/image71.*
+
+*image (b)*
+
+- Check box in the left of :guilabel:`Enable Remote Control` is checked/enabled. 
+  In Image (a) the :guilabel:`Enable Remote Control` is not activated. If not, 
+  please checklist the box, such as Image (b). Click :guilabel:`OK` and Restart 
+  JOSM. Furthermore, you can work with "www.keepright.ipax.at".
+
+- Now, open JOSM you will see that JOSM now been content with data that we have
+  chosen earlier on the site "KeepRright".
+
+.. image:: /static/training/intermediate/osm/image72.*
+
+Make sure JOSM is open
+
+
+.. image:: /static/training/intermediate/osm/image73.*
+
+Now OSM data from “KeepRight” delivered to your JOSM
+
+- Immediately fix to existing errors. How do I fix and what tools are needed to
+  fix it??? It all depends on the type of error. If you forget, go back material
+  on "Advanced Editing" and "Quality Assurance"
+
+- After fixed the error, return to website "www.keepright.ipax.at" to confirm
+  error has been fixed or not. If you've fixed the error, select (by left-
+  clicking) on the top radio button option.
+
