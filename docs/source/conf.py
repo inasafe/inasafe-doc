@@ -118,6 +118,8 @@ rst_epilog = """
 .. _HOT: http://hot.openstreetmap.org/
 .. |QGIS| replace:: QGIS_
 .. _QGIS: http://qgis.org/
+.. |github| replace:: github_
+.. _github: https://github.com/AIFDR
 """
 
 

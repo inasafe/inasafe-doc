@@ -9,10 +9,10 @@ Overview
 In this document we will walk you through the different activities you will
 need to do as a windows developer wishing to work on the |project_name| codebase.
 There are a number of steps that need to be performed in order to have a usable
-development environment for InaSAFE under Windows:
+development environment for |project_name| under Windows:
 
 * Install a GIT client
-* Checkout the InaSAFE code and the InaSAFE standard test data
+* Checkout the |project_name| code and the |project_name| standard test data
 * Install QGIS
 * Install a 32 bit version of python (windows 64 bit users only)
 * Install pip and other requirements for running tests
@@ -32,16 +32,17 @@ To check out the code for development, you first need to install a git client.
 We cover `GitHub for Windows <http://windows.github.com/>`_  but you can use
 another client if you prefer.
 
-To install the github windows client (which includes a command line git client),
-download the latest version of the software from the
-`GitHub for Windows <http://windows.github.com/>`_ web site. The download size
-will be at least 40mb and will vary depending if you have the application
-requirements installed (the installer will download and install the appropriate
-.net framework if needed).
+To install the |github| windows client (which includes a command line git
+client), download the latest version of the software from the
+`GitHub for Windows <http://windows.github.com/>`_ web site.
+The download size will be at least 40mb and will vary depending if you have
+the application requirements installed (the installer will download and
+install the appropriate .NET framework if needed).
 
-Then run the installer and follow the prompts as directed. We recommend that
-you create an account on `github <http://github.com>`_ as it will make it
-possible to submit bug reports and generally participate in the InaSAFE project.
+Then run the installer and follow the prompts as directed.
+We recommend that you create an account on |github| as it will make it
+possible to submit bug reports and generally participate in the
+|project_name| project.
 
 Then enter your account details in the GitHub git client as directed.
 
@@ -106,7 +107,7 @@ All windows versions::
 When the final command above runs, you should see something like this in the
 console when the clone process is completed::
 
-   $ git clone https://timlinux@github.com/AIFDR/inasafe.git inasafe-dev
+   $ git clone https://<your username>@github.com/AIFDR/inasafe.git inasafe-dev
    Cloning into 'inasafe'...
    remote: Counting objects: 5002, done.
    remote: Compressing objects: 100% (1526/1526), done.
@@ -143,7 +144,7 @@ All windows versions::
 When the final command above runs, you should see something like this in the
 console when the clone process is completed::
 
-   $ git clone https://timlinux@github.com/AIFDR/inasafe_data.git inasafe_data
+   $ git clone https://<your username>@github.com/AIFDR/inasafe_data.git inasafe_data
    Cloning into 'inasafe_data'...
    remote: Counting objects: 5002, done.
    remote: Compressing objects: 100% (1526/1526), done.
@@ -460,10 +461,11 @@ or on an individual test module and choose
 Developing using Eclipse (Windows)
 ----------------------------------
 
-.. warning:: We have standardised on using PyCharm for InaSAFE development (see
-   above section). This section of documentation is left here for reference
-   purposes in the hopes that it may help die-hard PyDev fans, but it will
-   no longer be maintained.
+.. warning:: We have standardised on using PyCharm for |project_name|
+   development (see above section).
+   This section of documentation is left here for reference purposes in the
+   hopes that it may help die-hard PyDev fans, but it will no longer be
+   maintained.
 
 .. note:: This is optional - you can use any environment you like for editing
    python, or even a simple text editor.
