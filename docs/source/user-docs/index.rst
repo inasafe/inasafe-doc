@@ -18,5 +18,6 @@ system.
    postprocessors
    using_qgis
    getting_involved
+   issue_tracker
    writing_documentation
 
