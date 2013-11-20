@@ -29,6 +29,10 @@ demo                               demonstrasi
 module                             modul
 learning activity                  kegiatan pembelajaran
 population                         populasi
+keyword                            kata kunci
+update                             pembaharuan
+option                             opsi
+interface                          tampilan
 
 ===============================    ===========================================
 
@@ -57,6 +61,12 @@ We have also made a blanket decision not to translate the following words:
 * template
 * input
 * output
+* layer
+* layout
+* upload
+* download
+* tag
+* edit
 
 Please add to this list as required.
 
