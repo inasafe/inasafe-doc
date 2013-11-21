@@ -66,8 +66,11 @@ Population
 
 :Name: AsiaPop
 :InaSAFE: people
-:Source: http://asiapop.org
+:Source: http://worldpop.org.uk
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Download: `Indonesia Population Download <http://www.worldpop.org
+    .uk/data/summary/?contselect=Asia&countselect=Indonesia&typeselect
+    =Population>`_
 :Coverage: ASEAN +
 :About: High resolution, contemporary data on human population distributions
     are a prerequisite for the accurate measurement of the impacts of
