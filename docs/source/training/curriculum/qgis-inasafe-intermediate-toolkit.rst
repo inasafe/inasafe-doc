@@ -13,7 +13,7 @@ BADAN NASIONAL PENANGGULANGAN BENCANA
 About Toolkit
 ^^^^^^^^^^^^^
 **Toolkit  QGIS-InaSAFE For Intermediate** design as a guide for facilitator
-to train users of QGIS and InaSAFE who  followed the beginner training before.
+to train users of QGIS and InaSAFE who followed the beginner training before.
 The materials in this guide will preparing you to do training with the wide
 range participants, including common problem and also provide the best
 methodology for you to train the participants to increase their skill in data
@@ -22,16 +22,16 @@ processing and data analysis with QGIS and InaSAFE.
 When you plan for QGIS-InaSafe training for Intermediate,
 there are some factors that you have to be considered,
 like duration of training, resources, numbers of facilitator,
-and their technical skill. Do not forget before follow this training the
-participants have been followed the beginner training of OSM and QGIS-InaSafe
-before. This Toolkit will help you to prepare training for wide range
+and their technical skill.
+Do not forget before follow this training the participants have been followed
+the beginner training of OSM and QGIS-InaSafe before.
+This Toolkit will help you to prepare training for wide range
 participants, however it would be focus to how to teach them to increase
 their knowledge and skill.
 
 The purpose of this toolkit is for preparing you, facilitators,
 to teach participants to process digital map on QGIS and a hazard data
 analysis and exposure with InaSAFE correctly.
-
 
 Purpose of Workshop
 ^^^^^^^^^^^^^^^^^^^
@@ -59,7 +59,6 @@ Workshop Materials
 4. Planning evacuation route
 5. Calculate damage and losses
 
-
 Workshop Strategies
 ^^^^^^^^^^^^^^^^^^^
 1. Methods applied in this workshop is participatory teaching,
@@ -85,10 +84,12 @@ Tools
 6. Good internet connection
 7. Snacks and Coffee Break
 
-
 Schedule
 ^^^^^^^^
-These are outline for training schedule for five days that has been tested to a wide range participants in some provinces in Indonesia. You can changes or give advice about this schedule related our discussion before.
+These are outline for training schedule for five days that has been tested
+to a wide range participants in some provinces in Indonesia.
+You can changes or give advice about this schedule related our discussion
+before.
 
 Day I:
 ******
@@ -156,8 +157,6 @@ Day III:
 | 16.15 - 17.15 | Evaluation and closing                               | Plenary Session                |
 +---------------+------------------------------------------------------+--------------------------------+
 
-
-
 **Workshop Planning**
 .....................
 
@@ -173,9 +172,9 @@ Understand QGIS Concept
 
 Indicator
 *********
-1.	Identify QGIS data types
-2.	Explain Data Symbolization
-3.	Explain Map Layout
+1. Identify QGIS data types
+2. Explain Data Symbolization
+3. Explain Map Layout
 
 Outcome
 *******
@@ -185,10 +184,9 @@ Core Material
 *************
 *QGISReview*
 
-1.	QGISData Types
-2.	Data Symbolization
-3.	Map Layout
-
+1. QGISData Types
+2. Data Symbolization
+3. Map Layout
 
 Activities
 **********
@@ -202,7 +200,7 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **FGD 65'**                                                       | FGD           | *Slide PP*    |
 |                                                                   |               |               |
-| Discussion and ask to parcitipant in FGD about :                  |               |               |
+| Discussion and ask to participant in FGD about :                  |               |               |
 |                                                                   |               |               |
 | - QGIS data type                                                  |               |               |
 | - Data symbolization                                              |               | Module 1      |
@@ -213,7 +211,7 @@ Activities
 | Participant is asked to give some encourage about problems using  |               |               |
 | QGIS.                                                             |               |               |
 |                                                                   |               |               |
-| - QGIS data type                                                  |               |               | 
+| - QGIS data type                                                  |               |               |
 | - Data symbolization                                              |               |               |
 | - Map layout                                                      |               |               |
 |                                                                   |               |               |
@@ -221,7 +219,6 @@ Activities
 | **Closing 5'**                                                    | Q & A         |               |
 | Participants asked to explain what they get in this session       |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-
 
 **Session 2**
 ^^^^^^^^^^^^^
@@ -235,29 +232,27 @@ Preparing data and keywords for InaSAFE
 
 Indicator
 *********
-1.	Explain about Input Data
-2.	Get OSM Data from HOT Exports
-3.	Input Data
-4.	AddKeywords
-5.	Preparing Hazard Layer
-6.	RunningInaSAFE
-
+1. Explain about Input Data
+2. Get OSM Data from HOT Exports
+3. Input Data
+4. AddKeywords
+5. Preparing Hazard Layer
+6. RunningInaSAFE
 
 Outcome
 *******
-Hazard Impact map based on InaSAFE anlysis result
+Hazard Impact map based on InaSAFE analysis result
 
 Core Material
 *************
 *Preparing Data and Keyword for InaSAFE*
 
-1.	Review about Input
-2.	Get OSM Data from HOT Exports
-3.	Input Data
-4.	Add Keywords
-5.	Preparing Hazard Layer
-6.	RunningInaSAFE
-
+1. Review about Input
+2. Get OSM Data from HOT Exports
+3. Input Data
+4. Add Keywords
+5. Preparing Hazard Layer
+6. RunningInaSAFE
 
 Activities
 **********
@@ -273,7 +268,7 @@ Activities
 |                                                                   | Q & A         | Projector     |
 | 1. Facilitator explains material about preparing data and keyword |               | Microphone    |
 |    for InaSAFE                                                    |               |               |
-| 2. Participants taught how to get OSM data for exposure data and  |               |               |               |
+| 2. Participants taught how to get OSM data for exposure data and  |               |               |
 |    how to use InaSAFE to get affected buildings                   |               | Module 2      |
 | 3. Q & A session for participants to ask anything about           |               |               |
 |    materials will be held after presentation                      |               |               |
@@ -286,10 +281,9 @@ Activities
 | by conclusion.                                                    |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-
 **Session 3**
 ^^^^^^^^^^^^^
-Temporary IDP (Internally Displaced Persons) Camps Planning 
+Temporary IDP (Internally Displaced Persons) Camps Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 225 minutes
 
@@ -299,29 +293,27 @@ Choosing a temporary IDP camps or evacuation
 
 Indicator
 *********
-1.	Creating the criteria for determining the location of IDP camps
-2.	Using geoprocessing tools
-3.	Using Spatial Query: Contains, Within, Equal, Intersect, dan Is Disjoint
-4.	Combining Geoprocessing tools and Spatial Query for temporary IDP camps
-
+1. Creating the criteria for determining the location of IDP camps
+2. Using geoprocessing tools
+3. Using Spatial Query: Contains, Within, Equal, Intersect, dan Is Disjoint
+4. Combining Geoprocessing tools and Spatial Query for temporary IDP camps
 
 Outcome
 *******
-Gained location of the building for the evacuation using QGIS based on correct 
+Gained location of the building for the evacuation using QGIS based on correct
 requirements evacuation.
 
 Core Material
 *************
 *Temporary IDP Camp Planning*
 
-1.	Tool Geoprocessing
-2.	Spatial Query
-3.	Criteria and IDP Camp Data
-4.	Criteria #1: The building should be outside of affected area
-5.	Criteria #2: The location should have direct access to primary/secondary 
-    road not more than 20 meters.
-6.	Criteria #3: The buildings should have at least 225 meters wide square
-  	
+1. Tool Geoprocessing
+2. Spatial Query
+3. Criteria and IDP Camp Data
+4. Criteria #1: The building should be outside of affected area
+5. Criteria #2: The location should have direct access to primary/secondary
+   road not more than 20 meters.
+6. Criteria #3: The buildings should have at least 225 meters wide square
 
 Activities
 **********
@@ -337,7 +329,7 @@ Activities
 |                                                                   | Q & A         |               |
 | 1. Facilitator presented the material temporary IDP camps         |               |               |
 |    planning                                                       |               |               |
-| 2. Participants will be given the explanation about spatial       |               |               |               |
+| 2. Participants will be given the explanation about spatial       |               |               |
 |    analysis for IDP camps planning process such as buffer         |               |               |
 |    clip, intersect, union, and dissolve, and also determine       |               |               |
 |    temporary IDP camps.                                           |               |               |
@@ -353,12 +345,9 @@ Activities
 | Some participants are asked to conclude this learning session.    |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-
-
-
 **Session 4**
 ^^^^^^^^^^^^^
-Evacuation Route Planning 
+Evacuation Route Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 180 minutes
 
@@ -368,12 +357,11 @@ Planning evacuation route based on hazard information
 
 Indicator
 *********
-1.	Explaining the concept of shortest path and fastest route
-2.	Using Road Graph Plugin
-3.	Setting the speed and direction of the road
-4.	Determining the starting point and destination point
-5.	Doing route analysis and selection
-
+1. Explaining the concept of shortest path and fastest route
+2. Using Road Graph Plugin
+3. Setting the speed and direction of the road
+4. Determining the starting point and destination point
+5. Doing route analysis and selection
 
 Outcome
 *******
@@ -428,10 +416,9 @@ The use of this road graph plugin should turn off "On the Fly" in the projection
 system because if it is not turned off, the analysis of road graph plugin will
 not appear despite being defined starting point and end point.
 
-
 **Session 4**
 ^^^^^^^^^^^^^
-Damages and Losses Assessment 
+Damages and Losses Assessment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 210 minutes
 
@@ -441,40 +428,39 @@ Assessing Damages and Losses
 
 Indicator
 *********
-1.	Explaining the definition of damage, loss, and calculations based on 
-    exposure data from the OSM / community participation affected
-2.	Explaining the damages and losses assessment of BNPB and BPBD
-3.	Making Damage and Losses Assessment Map
-4.	Calculating Damage Area
-5.	Manipulating affected feature attribute to obtain damages for the value of 
-    each object
-6.	Manipulating affected feature attribute to obtain losses for the value of 
-    each object
-7.	Grouping attribute data for each administrative area (small village, village
-    , subdistrict) 
-8.	Combining attribute data for each administrative area (small village, village
-    , subdistrict)
-9.	Presenting the damages and losses assessment using a diagram
 
-
+1. Explaining the definition of damage, loss, and calculations based on
+   exposure data from the OSM / community participation affected
+2. Explaining the damages and losses assessment of BNPB and BPBD
+3. Making Damage and Losses Assessment Map
+4. Calculating Damage Area
+5. Manipulating affected feature attribute to obtain damages for the value of
+   each object
+6. Manipulating affected feature attribute to obtain losses for the value of
+   each object
+7. Grouping attribute data for each administrative area (small village,
+   village, subdistrict)
+8. Combining attribute data for each administrative area (small village,
+   village, subdistrict)
+9. Presenting the damages and losses assessment using a diagram
 
 Outcome
 *******
-Calculation of damages and losses assessment with the maps and tables calculation
+Calculation of damages and losses assessment with the maps and tables
+calculation.
 
 Core Material
 *************
 *Damages and Losses Assessment*
 
-1.	BPBD’s Damages Assessment Guide
-2.	Damages and Losses Assessment Map
-3.	Calculating Damage Areas
-4.	Calculating Damages with Group Stat Plugin
-5.	Calculating Losses
-6.	Calculating Losses with Group Stat Plugin
-7.	Join Data
-8.	Creating Diagram
-
+1. BPBD’s Damages Assessment Guide
+2. Damages and Losses Assessment Map
+3. Calculating Damage Areas
+4. Calculating Damages with Group Stat Plugin
+5. Calculating Losses
+6. Calculating Losses with Group Stat Plugin
+7. Join Data
+8. Creating Diagram
 
 Activities
 **********
@@ -489,13 +475,13 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demo and Practice 180'**                                        | Discussion    | *Slide PP*    |
 |                                                                   |               | Module 5      |
-| 1. Facilitator give an explanation about the definition of damange|               |               |
+| 1. Facilitator give an explanation about the definition of damage |               |               |
 |    and losses assessment (DALA), DALA benefits, and examples of   |               |               |
 |    DALA that already used by some organizations/agencies to       |               |               |
 |    calculate post-disaster                                        |               |               |
 | 2. The facilitator gives an example calculation of damage and     |               |               |
-|    lossess assessment that will be completed together. It         |               |               |
-|    recommended training dat ausing the InaSAFE calculation results|               |               |
+|    losses assessment that will be completed together. It          |               |               |
+|    recommended training dat using the InaSAFE calculation results |               |               |
 |    to look continuity between InaSAFE and DALA calculation.       |               |               |
 | 3. In calculations using Group Stats plugin in order to calculate |               |               |
 |    damage and losses by village                                   |               |               |
@@ -509,12 +495,9 @@ Activities
 | participants time to ask question about this session              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-
 **FAQ (Frequently Asked Question)**
 
-*How to get the data source that can be used as a reference for the calculation 
-of damages and losses assessment? *
+*How to get the data source that can be used as a reference for the calculation of damages and losses assessment?*
 
-Data sources in damage and loss assessment table obtained from relevant agencies (BNPB dan BPBD) 
-
-
+Data sources in damage and loss assessment table obtained from relevant
+agencies (BNPB dan BPBD)
