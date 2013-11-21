@@ -5,9 +5,9 @@ Module 13: Getting Support
 
 **Learning Objectives**
 
-- Know how to connect with other people that have done the training through
-  social media
-- Know how to offer suggestions for the development of QGIS / InaSAFE
+- Using social media to keep the interaction alive
+- Accessing QGIS tutorial website
+
 
 **1. Facebook**
 

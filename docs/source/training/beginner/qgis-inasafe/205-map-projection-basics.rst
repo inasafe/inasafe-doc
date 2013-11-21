@@ -7,7 +7,7 @@ Module 5: Map Projection Basics
 
 - Understand Coordinate Reference Systems (CRS)
 - Identify the CRS of a vector dataset
-- Perform reprojection “on the fly”
+- ● Doing “on the fly” reprojection
 - Save dataset with a different CRS
 - Making its own projection
 
@@ -132,7 +132,7 @@ When combining data from different sources, it’s important to remember that th
 might not be in the same CRS. “On the fly” reprojection helps you to display
 them together.
 
-**3. Saving a Dataset to Another CRS**
+**3. Dataset with different CRS**
 
 It’s great that QGIS can reproject layers on the fly so that we can work with
 them in the same project.  But this requires more time for our computer to

@@ -8,7 +8,7 @@ Module 1: GIS for Developing Contingency Plan
 - Distinguishing data and information
 - Understand the concept of GIS
 
-**Data vs. Information**
+**The difference between data and information**
 
 In the first unit, we looked at OpenStreetMap and how to collect data and add it
 to the worldwide map.  But what do we mean when we say that we collect data?  Is
@@ -29,7 +29,7 @@ In this unit we will take this even further.  We will learn how to perform
 geographic data analysis, and thereby learn how to make our data more useful,
 informative, and effective.
 
-**What is a Geographic Information System (GIS)?**
+**Terminology of Geographic Information System (GIS)**
 
 A Geographic Information System (GIS) is a system designed to enable people to
 work with data related to places on the Earth.  A GIS allows the creation,

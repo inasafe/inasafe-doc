@@ -110,7 +110,7 @@ let’s start here and get QGIS installed.
 .. image:: /static/training/beginner/qgis-inasafe/image20.*
    :align: center
 
-**3. The QGIS Layout**
+**3. Terminology of Geographic Information System (GIS)**
 
 In this section we will open up a QGIS project, and take a look at the
 different pieces of the QGIS interface.  If you installed InaSAFE

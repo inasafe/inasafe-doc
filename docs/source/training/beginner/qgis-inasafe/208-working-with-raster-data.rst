@@ -5,9 +5,10 @@ Module 8: Working with Raster Data
 
 **Learning Objectives**
 
-- Loading Raster Data
-- Transform raster symbology
-- Explore a raster layer
+- Creating Raster Data 
+- Changing Raster Symbology
+- Doing Terrain Analysis
+
 
 Thus far we’ve worked mostly with vector data, which consists of features, and
 these features are themselves made up of points and lines.  In this chapter we
@@ -63,7 +64,7 @@ The raster should display nicely underneath your vector data layers.
 .. image:: /static/training/beginner/qgis-inasafe/image150.*
    :align: center
 
-**2. Changing Raster Symbology**
+**2. How to Change Raster Symbology**
 
 Not all raster data consists of aerial photographs. There are many other
 forms of raster data, and in many of those cases,

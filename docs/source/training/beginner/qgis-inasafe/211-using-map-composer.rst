@@ -6,8 +6,8 @@ Module 11: Using Map Composer
 **Learning Objectives**
 
 - Arrange map layout
+- Adding new map
 - Add title to a map
-- Add legend to a map
 - Add graphic and numeric scales
 - Add grid to a map
 - Adding inset
