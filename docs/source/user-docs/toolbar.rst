@@ -38,10 +38,10 @@ You can find more Information about the dock itself in the
    Keyword Editor
 
 The Keyword Editor button opens the Keyword editor which is described in
-:ref:`keywords`. Basically it enables you to easily edit the
+:ref:`keywords_system`. Basically it enables you to easily edit the
 Keywords needed for |project_name| to create useful output.
 
-.. _tb_reset_dock:
+.. _tb_reset_dock_missst:
 
 Reset Dock
 ----------
