@@ -243,7 +243,7 @@ that has been allocated to the input layers. The purpose of the keywords file
 is to provide additional metadata needed by the impact functions. For
 example, the keywords file will indicate whether a given dataset should be
 treated as a hazard or an exposure layer. It is also used to indicate the
-context of the layer (e.g. flood, earthquake). :ref:`keywords`
+context of the layer (e.g. flood, earthquake). :ref:`keywords_system`
 
 Available Impact Functions
 ..........................

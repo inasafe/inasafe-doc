@@ -82,7 +82,7 @@ The following options are available on the :guilabel:`Options Dialog`:
   population ratio used por generating Gender breakdowns
 * :guilabel:`Keyword cache for remote datasources` : This option is used to
   determine where keywords are stored for datasets where it is not possible
-  to write them into a .keywords file. See :ref:`keywords` in the
+  to write them into a .keywords file. See :ref:`keywords_system` in the
   |project_name| User-Manual for more information on the keywords system.
 * :guilabel:`Logo for maps (must be x x y)`: This option is used to determine
   a custom logo that will be used in the pdf of your impact scenario project.

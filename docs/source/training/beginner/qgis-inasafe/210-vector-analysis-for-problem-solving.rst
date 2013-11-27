@@ -9,7 +9,7 @@ Module 10: Vector Analysis for Problem Solving
 - Identifying problems
 - Explaining data needed
 - Starting a project
-- Analysing problems
+- Analyzing problems
 - Identifying hazard zone
 - Looking for Important Roads
 - Looking for Medical Facilities

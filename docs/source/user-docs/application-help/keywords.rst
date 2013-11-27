@@ -1,4 +1,4 @@
-.. _keywords:
+.. _keywords_system:
 
 Keywords System
 ===============
