@@ -90,6 +90,7 @@ We have also made a blanket decision not to translate the following words:
 * plugin
 * overlay
 * file
+* node
 
 Please add to this list as required.
 
