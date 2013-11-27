@@ -18,7 +18,7 @@ a table of commonly used terms and translation.
 ===============================    ===========================================
  English                           Bahasa Indonesia
 ===============================    ===========================================
-hazard                             ancaman bencana
+hazard                             ancaman
 exposure                           keterpaparan
 activities                         langkah kegiatan
 common problem                     masalah yang sering dijumpai
@@ -31,8 +31,20 @@ learning activity                  kegiatan pembelajaran
 population                         populasi
 keyword                            kata kunci
 update                             pembaharuan
-option                             opsi
-interface                          tampilan
+option                             pilihan
+interface                          antarmuka/tampilan antarmuka (sesuaikan dengan kalimat)
+software                           perangkat lunak
+hardware                           perangkat keras
+check                              tanda centang
+checklist                          daftar aktivitas/daftar kebutuhan
+GIS                                SIG
+explore                            eksplorasi
+track                              jalur
+website                            situs
+login                              masuk
+username                           nama pengguna
+attribute                          atribut
+symbology                          pengaturan simbol
 
 ===============================    ===========================================
 
@@ -67,6 +79,17 @@ We have also made a blanket decision not to translate the following words:
 * download
 * tag
 * edit
+* field papers
+* value
+* query
+* buffer
+* field
+* track log
+* field calculator
+* outcome
+* plugin
+* overlay
+* file
 
 Please add to this list as required.
 
