@@ -39,12 +39,21 @@ check                              tanda centang
 checklist                          daftar aktivitas/daftar kebutuhan
 GIS                                SIG
 explore                            eksplorasi
-track                              jalur
 website                            situs
 login                              masuk
 username                           nama pengguna
 attribute                          atribut
 symbology                          pengaturan simbol
+footprint hazard                   batas area bencana
+building footprint                 batas tapak bangunan
+way                                garis
+polygon                            poligon
+editing                            mengedit
+browse                             telusuri
+password                           kata sandi
+dropdown                           daftar pilihan
+default                            pengaturan bawaan
+contingency                        kontinjensi
 
 ===============================    ===========================================
 
@@ -84,13 +93,16 @@ We have also made a blanket decision not to translate the following words:
 * query
 * buffer
 * field
-* track log
 * field calculator
 * outcome
 * plugin
 * overlay
 * file
 * node
+* track
+* track log
+* waypoint
+* copy & paste
 
 Please add to this list as required.
 
