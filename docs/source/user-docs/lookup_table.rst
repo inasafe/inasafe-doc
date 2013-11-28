@@ -74,35 +74,35 @@ respective homepage) is:
 
 We have also made a blanket decision not to translate the following words:
 
-* python
-* qgis
-* batch runner
-* review
-* tool
-* template
-* input
-* output
-* layer
-* layout
-* upload
-* download
-* tag
-* edit
-* field papers
-* value
-* query
-* buffer
-* field
-* field calculator
-* outcome
-* plugin
-* overlay
-* file
-* node
-* track
-* track log
-* waypoint
-* copy & paste
+* *python*
+* *qgis*
+* *batch runner*
+* *review*
+* *tool*
+* *template*
+* *input*
+* *output*
+* *layer*
+* *layout*
+* *upload*
+* *download*
+* *tag*
+* *edit*
+* *field papers*
+* *value*
+* *query*
+* *buffer*
+* *field*
+* *field calculator*
+* *outcome*
+* *plugin*
+* *overlay*
+* *file*
+* *node*
+* *track*
+* *track log*
+* *waypoint*
+* *copy & paste*
 
 Please add to this list as required.
 
