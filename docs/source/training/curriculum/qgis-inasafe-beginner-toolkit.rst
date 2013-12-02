@@ -89,7 +89,7 @@ Tools
 1. Copy of Data Analysis Using QGIS and InaSAFE Beginner's Guide for
    participant
 2. An indoor place or room with tables and seats
-3. Some computer unit (ideally one computer is maximumly use for two persons,
+3. Some computer unit (ideally one computer per two persons maximum,
    but, it is better for each person has their own computer)
 4. A printer (for printing *Walking Papers*)
 5. A projector (for presenting and demonstrating software usage)

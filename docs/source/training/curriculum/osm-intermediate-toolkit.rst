@@ -275,7 +275,7 @@ Activities
 |    participans to close the layer and open second training file   | Practice      | Projector     |
 |    **"utilsplugin2_sample.osm"**. With this file,participants can |               | Computer/     |
 |    practice some important tools in **"utilplugin2_sample.osm"**. |               | Laptop        |
-|    With this file, participans can practice some important tools  |               |               |
+|    With this file, participants can practice some important tools  |               |               |
 |    in **"util2plugin"** plugin.                                   |               |               |
 | 2. Facilitator explains some important tools in utilplugin2       |               |               |
 |    plugin such as *add source tag, select way nodes, overplace    |               |               |
@@ -515,7 +515,7 @@ Activities
 | **Introduction 10'**                                              | Lecture       | Powerpoint    |
 |                                                                   |               |               |
 | 1. The facilitator presenting the importance of sessions,         | Q & A         | Presentations |
-|    objectives, outcome and activies.                              | Discussion    | Projector     |
+|    objectives, outcome and activities.                              | Discussion    | Projector     |
 | 2. The facilitator gives some question to make sure that the      |               |               |
 |    participants still remember what is preset and tag             |               |               |
 | 3. Make sure that the participants understands that is the simple |               |               |
@@ -552,7 +552,7 @@ Activities
 |**Making Your Own Preset File 45'**                                | Practise      | Powerpoint    |
 |                                                                   |               |               |
 | 1. The facilitator helps the participants to install Notepad++    |               | Presentations |
-|    because in this session the participans need this software     |               | Projector     |
+|    because in this session the participants need this software     |               | Projector     |
 | 2. The participants were asked to open the *presets_sample.xml*   |               | Computer/     |
 |    file has been provided by trainer and given on USB flash disk. |               | Laptop        |
 |    This file is empty preset file provided as the starting point  |               | USB Flash     |
@@ -568,9 +568,9 @@ Activities
 | **Entering new preset file to JOSM 15'**                          | Q & A         |               |
 |                                                                   |               |               |
 | 1. Asked about how to add preset through the "Preferences" menu.  | Practice      |               |
-| 2. After they sucessfully entered the preset file to JOSM,        |               |               |
+| 2. After they successfully entered the preset file to JOSM,        |               |               |
 |    the alternative would be some participants found an error.     |               |               |
-|    Usually error it happens because participans careless in       |               |               |
+|    Usually error it happens because participants careless in       |               |               |
 |    inserting a string or xml code are complicated. Help           |               |               |
 |    participants who encounter errors. After all participants      |               |               |
 |    managed to run the preset file in JOSM. Try together using the |               |               |
@@ -647,7 +647,7 @@ Activities
 |                                                                   |               |               |
 | 1. Show how to install this plugin and ask to the participants    |               |               |
 |    to install the plugin in their computer/laptop. Then the       |               |               |
-|    participants requested use the spesific presets to provide     |               |               |
+|    participants requested use the specific presets to provide     |               |               |
 |    private data tag.                                              |               |               |
 | 2. Download area that will be mapped using JOSM, ask the          |               |               |
 |    participants to edit one of object (must be a building), point |               |               |

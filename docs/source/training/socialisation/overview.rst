@@ -38,7 +38,7 @@ Indonesia faces significant risk of loss of lives and challenges to
 development progress as a result of natural disasters. The development of
 contingency plans is seen as an important step to strengthen disaster risk
 reduction programs. However this can only be effective when contingency plans
-utilises realistic hazard scenario. Realistic hazard scenarios require
+utilise realistic hazard scenario. Realistic hazard scenarios require
 scientific, sound and up-to-date data hazard information as well as up-to-date, scale
 appropriate exposure.  Such map-based contingency plans offer accurate and
 comprehensive results in calculating minimum relief items,
@@ -55,7 +55,7 @@ possible tsunami in Maumere (when it happened during the school hours).
 to not only complete an InaSAFE analysis, but to also analysis the result using
 the suite of QGIS tools that are available. The software has been designed as a
 simple user interface in a hope that disaster managers and end users can easily
-use |project_name| for creating impact maps to inform contigency planning.
+use |project_name| for creating impact maps to inform contingency planning.
 
 |project_name| was preliminarily launched by Dr Agus Wibowo, Head of the Data
 Center at the Indonesia’s Disaster Management Agency (|BNPB|),
@@ -210,11 +210,11 @@ Impact Function
 The core to |project_name| is its capability of having multiple Impact
 functions specific to the input data. An impact function generally only deals
 with the combination of 1 hazard layer with 1 exposure layer. The way it is
-combined is specfic to the impact function, it could be a simple overlay of
+combined is specific to the impact function, it could be a simple overlay of
 the 2 layer, or it could be a complicated function that calculate if a building
-would fall down in an earthquake based on building structure informaton
+would fall down in an earthquake based on building structure information
 
-The output of the impact fuction will typically have a spatial component (e.g. a
+The output of the impact function will typically have a spatial component (e.g. a
 GIS layer which automatically loads into the map canvas) and a non-spatial
 component (e.g. a list of estimates of disaster risk reduction elements such as
 how many kilos of rice to make available, or a list of actions you may want to

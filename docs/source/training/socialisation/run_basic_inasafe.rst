@@ -228,7 +228,7 @@ Important buildings are defined as:
 * Residential
 * Schools
 * Sports Facilities
-* Univeristy/college
+* University/college
 
 **Action Checklist:** A different set of Actions have been identified to
 relate to structures.
@@ -261,7 +261,7 @@ Optional - Change the threshold to 0.8
 * buildings
 * Be Flooded
 
-22. To configures the impact function select :guilabel: `...` *Configure Impact Function
+22. To configures the impact function select :guilabel:`...` *Configure Impact Function
 Parameter* which is found beside the *Be flooded*
 
 23. Type :kbd:`0.8` in the window

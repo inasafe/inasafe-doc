@@ -109,7 +109,7 @@ layer, so lets make one!
 Configure and Run |project_name|
 --------------------------------
 
-22. Conform that |project_name| has the following in the drop-down
+22. Confirm that |project_name| has the following in the drop-down
     boxes
 
 * Merapi erupting
@@ -365,12 +365,12 @@ The next chapter will show you how to change this if needed.
 OpenStreetMap Downloader
 ------------------------
 
-Notice that there is no building footprints in this project file,
-that is because we are going to download it straight from |OSM| server.
+Notice that there are no building footprints in this project file,
+that is because we are going to download them straight from |OSM| server.
 
 52. Highlight the tsunami layer and :guilabel:`Zoom to Layer`
 
-53. guilabel:`InaSAFE OpenStreetMap Downloader`
+53. :guilabel:`InaSAFE OpenStreetMap Downloader`
 
 .. image:: /static/training/socialisation/075_osmdownloader.*
    :align: center
