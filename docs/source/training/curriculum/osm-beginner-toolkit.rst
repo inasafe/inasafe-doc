@@ -491,7 +491,7 @@ Indicator
 5. Drawing nodes, way, and shape in *JOSM* based on map that you made in the
    previous session
 6. Change Objects
-7. Add informations to the objects using presets menu
+7. Add information to the objects using presets menu
 
 Outcome
 *******
@@ -507,7 +507,7 @@ Core Material
       - Add Bing Imagery
       - Add Presets
       - Add *Plugins*
-      - Languange Setting
+      - Language Setting
 4. Draw Map using JOSM
       - Basic Operation
       - Nodes, Ways, and Shapes
@@ -608,9 +608,9 @@ click a button. To activate it, install it in preferences.
 
 **Could we make a tag in Bahasa Indonesia?**
 
-Theoretical, You can add any tag to nodes, ways or shapes on OSM. But
+Theoretical, you can add any tag to nodes, ways or shapes on OSM. But
 because all of the objects on OSM save in international databases and cover
-whole world, need consentia about how to make a tag. As an example,
+whole world, need consensus about how to make a tag. As an example,
 hospital still a hospital in England, France, even Indonesia. If every
 country give a tag with their own language it will be difficult and confusing
 to show the icon or symbol for different location. Because OSM made in
@@ -714,7 +714,7 @@ Activities
 | What GPS can do and how it works on the smartphone.               |               | Module 4      |
 | As example:                                                       |               |               |
 |                                                                   |               |               |
-| - Handphone emited signal from radio tower, GPS                   |               |               |
+| - Handphone emitted signal from radio tower, GPS                  |               |               |
 |   receive signal from satellite from spaces.                      |               |               |
 | - When receive the signal, GPS can track absolute                 |               |               |
 |   location in earth.                                              |               |               |
@@ -1131,7 +1131,7 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Explain Imagery 60'**                                           | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| The fasilitator explain about:                                    |               |               |
+| The facilitator explain about:                                    |               |               |
 | Imagery starting from satellite imagery component,                |               |               |
 | resolution and georeference.                                      |               | Module 7      |
 |                                                                   |               |               |
@@ -1139,7 +1139,7 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Add plugin imagery_offset_db in JOSM 20'**                      | Practice      | Computer      |
 |                                                                   |               |               |
-| 1. The Fasiliator asked the participants to add imagery           |               | Participant   |
+| 1. The facilitator asked the participants to add imagery          |               | Participant   |
 |    offset_db plugin from the Plugins list in Preferences.         |               |               |
 | 2. Then participants are guided step-by-step utilize the          |               | Projector     |
 |    functionality of the plugin.                                   |               |               |
@@ -1176,7 +1176,7 @@ Core Material
 *************
 **Getting OSM Data**
 
-1. Download OpenStreetMap data from Geofabric website
+1. Download OpenStreetMap data from Geofabrik website
 2. Download OpenStreetMap data in according to region and necessary data by
    using Hot-Export
 
@@ -1190,15 +1190,15 @@ Activities
 | Facilitator present the important this session, purpose           |               |               |
 | *outcome* and activity                                            |               | Module 9      |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Download OSM vector file through the site Geofabrik**           | Lecture       | Computer      |
-| **Download vektor file  20'**                                     |               |               |
+| **Download OSM vector file through the site Geofabrik*            | Lecture       | Computer      |
+| **Download vector file  20'**                                     |               |               |
 |                                                                   |               | Participants  |
 | 1. Facilitator shows how participants can get OSM                 | Practice      |               |
 |    data in form of shapefiles through Geofabrik                   |               | Projector     |
 |    website that can be processed by software QGIS                 |               |               |
 |    and InaSAFE.                                                   |               |               |
 | 2. Participants were asked to download vector files via           |               |               |
-|    Geofabrik website.                                             |               |               |
+|    Geofabrick website.                                            |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Download vector file OSM via Hot-Export website 30'**           | Lecture       | Computer      |
 |                                                                   |               |               |
@@ -1230,7 +1230,7 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing and Follow-up 15'**                                     | Demonstration |               |
 |                                                                   |               |               |
-| Fasilitator showing:                                              |               |               |
+| Facilitator showing:                                              |               |               |
 |                                                                   |               |               |
 | - How to participants can discuss through social                  |               |               |
 |   media such as Group Facebook or twitter.                        |               |               |

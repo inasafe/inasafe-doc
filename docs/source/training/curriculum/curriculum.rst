@@ -134,11 +134,11 @@ A. Aims
 =======
 
 The scheme of the curriculum on Scenario Development for Contingency
-Planning by using OSMand QGIS/InaSAFE is designed to provide a reference to
+Planning by using OSM and QGIS/InaSAFE is designed to provide a reference to
 workshop organizers at national, provincial and district levels.
 
 This workshop course on  Scenario Development for Contingency Planning by
-using OSMand QGIS/InaSAFE consists of two separate workshops for each
+using OSM and QGIS/InaSAFE consists of two separate workshops for each
 technology, and each technology workshop is composed of three levels.
 
 1. Workshop spatial data collection OSM for beginners and intermediate levels
@@ -198,7 +198,7 @@ Qualifications for participation at intermediate level:
 
 Qualifications for participants at Training of Trainer (ToT) level:
 
-1. Has followed OSM and QGIS/InasAFE  workshop both beginner and intermediate
+1. Has followed OSM and QGIS/InaSAFE  workshop both beginner and intermediate
    levels.
 2. Demonstrate the potential to be a key person of or advocate as well as a
    trainer (trainers) in the training program for the Scenario Development
@@ -266,7 +266,7 @@ C. Map of Competencies
 |    |             | 2. Preparing data and keywords for InaSAFE                                                                          |
 |    |             | 3. Preparing data and keywords for InaSAFE                                                                          |
 |    |             | 4. Planning evacuation route based on hazard Information                                                            |
-|    |             | 5. Calculate damage and lossess                                                                                     |
+|    |             | 5. Calculate damage and losses                                                                                      |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 
 
