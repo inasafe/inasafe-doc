@@ -1,26 +1,29 @@
 .. _development_under_windows:
 
-Development under MS Windows
-============================
+Development under Windows
+=========================
 
 Overview
 --------
 
 In this document we will walk you through the different activities you will
-need to do as a windows developer wishing to work on the |project_name| codebase.
-There are a number of steps that need to be performed in order to have a usable
-development environment for |project_name| under Windows:
+need to do as a windows developer wishing to work on the |project_name|
+codebase.
+There are a number of steps that need to be performed in order to have a
+usable development environment for |project_name| under Windows:
 
-* Install a GIT client
-* Checkout the |project_name| code and the |project_name| standard test data
-* Install QGIS
-* Install a 32 bit version of python (windows 64 bit users only)
-* Install pip and other requirements for running tests
-* Create a custom shell launcher with a python prompt
-* Setup your IDE (Eclipse PyDev or PyCharm)
+* Install a GIT client.
+* Checkout the |project_name| code and the |project_name| standard test data.
+* Install QGIS.
+* Install a 32 bit version of python (windows 64 bit users only).
+* Install pip and other requirements for running tests.
+* Create a custom shell launcher with a python prompt.
+* Setup your IDE (Eclipse PyDev or PyCharm).
 
-You may also wish to read :doc:`jenkins_ci_windows_slave` if you wish to
-set up automated test suite running using Jenkins.
+.. note:: If you only want to run only the jenkins test suite there is no need
+   to checkout the project code. This is task to be done by jenkins than.
+   You may also wish to read :doc:`jenkins_ci_windows_slave` if you wish to
+   set up automated test suite running using Jenkins.
 
 Installation of version control tools
 -------------------------------------
@@ -32,29 +35,29 @@ To check out the code for development, you first need to install a git client.
 We cover `GitHub for Windows <http://windows.github.com/>`_  but you can use
 another client if you prefer.
 
-To install the |github| windows client (which includes a command line git
-client), download the latest version of the software from the
-`GitHub for Windows <http://windows.github.com/>`_ web site.
-The download size will be at least 40mb and will vary depending if you have
-the application requirements installed (the installer will download and
-install the appropriate .NET framework if needed).
+The download size for this client will be at least 40mb and will vary
+depending if you have the application requirements installed (the installer
+will download and install the appropriate .NET framework if needed).
 
-Then run the installer and follow the prompts as directed.
+After downloading run the installer and follow the prompts as directed.
+
 We recommend that you create an account on |github| as it will make it
 possible to submit bug reports and generally participate in the
 |project_name| project.
 
-Then enter your account details in the GitHub git client as directed.
+Enter your account details in the GitHub git client as directed.
 
 Configure the default git shell
 ...............................
 
-Next set your preferred shell to 'git bash' by going to the GitHub windows home
+Next set your preferred shell to 'git bash' by going to the GitHub window  home
 screen (if needed, press the left facing arrow in the top left of the GitHub
-windows panel repeatedly until the arrow disappears). Now use
-:menuselection:`tools --> options` (in the top center of the window), to move
-to the options panel. In the :guilabel:`default shell` section, select
-:menuselection:`Git Bash`.
+windows panel repeatedly until the arrow disappears).
+
+Now use :menuselection:`tools --> options` (in the top center of the window),
+to move to the options panel.
+
+In the :guilabel:`default shell` section, select :menuselection:`Git Bash`.
 
 Now click :guilabel:`update` and close the GitHub windows application.
 
@@ -63,37 +66,38 @@ Verify your git shell
 
 We will do all the remaining tasks using the command line git client as it gives
 more accurate control over git and the procedure is more closely aligned to that
-of other operating systems. So let us verify that your shell is available:
+of other operating systems.
+So let us verify that your shell is available:
 
 :menuselection:`Windows Start --> All Programs --> GitHub Inc. --> Git Shell`
 
-Confirm that the window title for the window that appears starts with 'MINGWIN32'.
+Confirm that the window title for the window that appears starts with
+'MINGWIN32'.
 
 From now on use this shell for all the commands that follow below.
 
 .. note:: Create a shortcut on your start button to the github shell as you will
    use if often!
 
-Check out the code and the test data
-------------------------------------
+Check out code and test data
+----------------------------
 
-In this section we actually check out the source code and the test data
-using the tools we installed above.
+In this section we actually check out the source code and the test data using
+the tools we installed above.
 
 Clone the code repository
 .........................
 
 First open a GIT bash prompt as described above.
-
 The repository can now be cloned by issuing these commands:
 
 Users on windows < Windows 7::
 
-   cd  /c/Documents\ and\ Settings/<your username>/
+   cd  C:/Documents and Settings/<your username>/
 
 Windows 7 or newer::
 
-   cd  /c/Users/<your username>/
+   cd  C:/Users/<your username>/
 
 All windows versions::
 
@@ -115,9 +119,9 @@ console when the clone process is completed::
    Receiving objects: 100% (5002/5002), 2.38 MiB | 7 KiB/s, done.
    Resolving deltas: 100% (3505/3505), done.
 
-.. note:: Why do we check it out as inasafe-dev ? We do this so that the
-   standard release package can be used on the same system using the QGIS
-   plugin manager.
+.. note:: Why do we check it out as inasafe-dev?
+   We do this so that the standard release package can be used on the same
+   system using the QGIS plugin manager.
 
 Checkout the test data
 ......................
@@ -130,7 +134,7 @@ The repository can now be cloned by issuing the commands listed below.
 
 Users on windows < Windows 7::
 
-   cd  C:/Documents\ and\ Settings/<your username>/.qgis/python/plugins/
+   cd  C:/Documents and Settings/<your username>/.qgis/python/plugins/
 
 Windows 7 or newer::
 
@@ -162,23 +166,24 @@ and install it by running the installation wizard and accepting the defaults
 throughout.
 
 After opening QGIS
-(:menuselection:`Start-->All Programs-->QGIS Lisboa-->QGIS Desktop (1.8.0)`)
+(:menuselection:`Start-->All Programs-->QGIS Dufour-->QGIS Desktop (2.0.1)`)
 you need to enable the plugin from the plugin menu by doing
-:menuselection:`Plugins --> Manage Plugins` and then search for the
-|project_name| plugin in the list and enable it.
+:menuselection:`Plugins --> Manage and Install Plugins...`.
+Then search the list for the |project_name| plugin and enable it.
 
 Windows Caveats
 ...............
 
-Our primary development platform is Linux (specifically Ubuntu Linux). Some
-features of the development environment - particularly the **Make** tools do not
-run on Windows. Some helper scripts have been written to substitute for make
-but they do not have feature parity with the make scripts.
+Our primary development platform is Linux (specifically Ubuntu Linux).
+Some features of the development environment - particularly the **Make**
+tools do not run on Windows.
+Some helper scripts have been written to substitute for make but they do not
+have feature parity with the make scripts.
 
 .. _windows-commandline_setup:
 
-Command line environment setup
-------------------------------
+Command line setup
+------------------
 
 .. _windows_shell_launcher-label:
 
@@ -218,15 +223,15 @@ Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
 .. note:: This script is for QGIS 2.0.
    You may need to do some adjustment if you are using another version of QGIS.
 
-For easy access to this shell launcher, right click on the qgis-shell.bat script
-and (without releasing your initial right click) drag with the file onto your
-start / windows button in the bottom left corner of the screen.
+For easy access to this shell launcher, right click on the qgis-shell.bat
+script and (without releasing your initial right click) drag with the file
+onto your start / windows button in the bottom left corner of the screen.
 
 Verifying your system path
 ..........................
 
-To verify your path, launch your python shell (by clicking the python-shell.bat)
-and then start a python shell.
+To verify your path, launch your python shell (by clicking the python-shell
+.bat) and then start a python shell.
 Don't be alarmed when it says "The system cannot find the path specified." It
 should work anyway.
 
@@ -288,6 +293,8 @@ ez_setup.py and save it somewhere familiar e.g. :samp:`c:\temp`.
    on `this page <http://pypi.python.org/pypi/setuptools#windows>`_, rather
    just download the ez_setup.py
 
+Continue on :ref:`run_pip_install`
+
 Special note for Win64 bit users
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -303,8 +310,9 @@ There are two options for doing this:
   environment variable (on Windows 7: :menuselection:`System Properties -->
   Advanced --> Environment Variables`).
 
-To verify that you have the correct python in your path launch python and
-print sys.executable - is should show :samp:`c:\python27\python.exe` as per
+To verify that you have the correct version of python in your path launch a
+python shell and execute the command :command:`print sys.executable` - is
+should show :samp:`c:\python27\python.exe` as per
 the demo session below::
 
     C:\Users\inasafe\.qgis\python\plugins\inasafe>python
@@ -313,19 +321,21 @@ the demo session below::
     Type "help", "copyright", "credits" or "license" for more information.
     >>> import sys
     >>> print sys.executable
-    c:\python27\python.exe
+    C:\Python27\python.exe
     >>>
 
 .. note:: QGIS 2.0 should ship as a 64bit binary (including python), so the
    above step should no longer be needed in future versions.
+
+.. _run_pip_install:
 
 For both 32 and 64 bit
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Next launch the shell (python-shell.bat as described in
 :ref:`windows-commandline_setup`) **as administrator** (by right clicking the
-file and choosing run as administrator). Then from the command line, launch
-:command:`ez_setup.py` by typing this::
+file and choosing run as administrator).
+Then from the command line, launch :command:`ez_setup.py` by typing this::
 
    python c:\temp\ez_setup.py
 
@@ -369,9 +379,9 @@ Installing nose
 
 `Nose <http://somethingaboutorange.com/mrl/projects/nose/>`_ is a tool for
 automation of running python unit tests. With nose you can run a whole batch
-of tests in one go. With the nosecover plugin you can also generate coverage
-reports which will indicate how many lines of your code actually have been
-tested.
+of tests in one go.
+With the nosecover plugin you can also generate coverage reports which will
+indicate how many lines of your code actually have been tested.
 
 To install these tools, launch your python prompt as administrator and then
 do::
@@ -386,6 +396,8 @@ the plugin directory/inasafe-dev folder (in your python-shell.bat shell
 session) and running::
 
    runtests.bat
+
+.. _developing_using_pycharm:
 
 Developing using PyCharm
 ------------------------
@@ -402,19 +414,20 @@ Download and Install
 
 Download PyCharm from their
 `download page <http://www.jetbrains.com/pycharm/download/index.html>`_ and
-then install it taking all the defaults. Note that the download is approximately
-125mb at the time of writing this (version 2.7).
+install it taking all the defaults.
+Note that the download is approximately 100 MB.
 
-Once the installation is complete, start PyCharm and accept all the defaults for
-the first-run wizard. You may be prompted to restart pycharm at the end of that
-process - which you should do.
+Once the installation is complete, start PyCharm and accept all the defaults
+for the first-run wizard.
+You may be prompted to restart pycharm at the end of that process - which you
+should do.
 
 Making PyCharm 'QGIS Aware'
 ...........................
 
 We need to have various environment variables set in the PyCharm context in
-a similar way we do with :ref:`windows-commandline_setup`. Make a copy of
-your qgis-shell batch file and call it qgis-pycharm.bat.
+a similar way we do with :ref:`windows-commandline_setup`.
+Make a copy of your qgis-shell batch file and call it qgis-pycharm.bat.
 
 Now alter the last line so that it launches pycharm instead of a shell as
 per this example below::
@@ -439,8 +452,8 @@ per this example below::
 Now use this PyCharm launcher whenever you need to do development work on
 |project_name|.
 
-.. note:: Right drag the batch file onto your start menu to make an easily accessible
-   shortcut to your custom PyCharm launcher.
+.. note:: Right drag the batch file onto your start menu to make an easily
+   accessible shortcut to your custom PyCharm launcher.
 
 Setup |project_name| project
 ............................
@@ -469,11 +482,11 @@ simply :menuselection:`right-click` on any package containing test modules
 or on an individual test module and choose
 :menuselection:`Run Nosetests in ...`.
 
-Developing using Eclipse (Windows)
-----------------------------------
+Developing using Eclipse
+------------------------
 
-.. warning:: We have standardised on using PyCharm for |project_name|
-   development (see above section).
+.. warning:: We have standardised on using PyCharm for
+   |project_name| development see :ref:`developing_using_pycharm`.
    This section of documentation is left here for reference purposes in the
    hopes that it may help die-hard PyDev fans, but it will no longer be
    maintained.
@@ -489,45 +502,48 @@ Installing Eclipse
 ..................
 
 You can download and install eclipse by getting the latest installer at
-`eclipse.org <http://eclipse.org>`_. Just run the installer accepting all
-defaults.
+`eclipse.org <http://eclipse.org>`_.
+Just run the installer accepting all defaults.
 
 Installing PyDev
 ................
 
 With Eclipse running, click  on :menuselection:`Help --> Eclipse Marketplace`
 and from the resulting dialog that appears, type :kbd:`PyDev` into the search
-box and then click :guilabel:`Go`. On the search results page, choose PyDev
-and click the :guilabel:`Install` button next to it. Agree to the license terms
-and accept the aptana certificate, then restart Eclipse as requested.
+box and then click :guilabel:`Go`.
+On the search results page, choose PyDev and click the :guilabel:`Install`
+button next to it.
+Agree to the license terms and accept the aptana certificate,
+then restart Eclipse as requested.
 
 Custom Eclipse Launcher
 .......................
 
-You need to create a custom Eclipse launcher in order to use Eclipse PyDev. The
-process is similar to :ref:`windows-commandline_setup` in that you need to
+You need to create a custom Eclipse launcher in order to use Eclipse PyDev.
+The process is similar to :ref:`windows-commandline_setup` in that you need to
 create a custom batch file that launches eclipse only after the OSGEO4W
-environment has been imported. Here are the typical contexts of the file::
+environment has been imported.
+Here are the typical contexts of the file::
 
    @echo off
 
-   SET OSGEO4W_ROOT=C:\PROGRA~2\QUANTU~1
+   SET OSGEO4W_ROOT=C:\PROGRA~2\QGISDU~1
    call "%OSGEO4W_ROOT%"\bin\o4w_env.bat
-   call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.2\etc\env.bat
+   call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.3\etc\env.bat
    @echo off
-   SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins\1.8
-   path %PATH%;%OSGEO4W_ROOT%\apps\qgis\bin;%OSGEO4W_ROOT%\apps\grass\grass-6.4.2\lib
+   SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins
+   path %PATH%;%OSGEO4W_ROOT%\apps\qgis\bin;%OSGEO4W_ROOT%\apps\grass\grass-6.4.3\lib
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
    set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
    "C:\Progra~2\eclipse\eclipse.exe"
 
-.. note:: Use the path where your eclipse was extracted. Also note that PROGRA~2 may
-   be PROGRA~1 in 32bit windows.
+.. note:: Use the path where your eclipse was extracted.
+   Also note that PROGRA~2 may be PROGRA~1 in 32bit windows.
 
-Save this file under <QGIS Install Dir>/bin/python-shell.bat and then right-drag
-it from explorer to your Windows start button to create an easily accessible
-shortcut to eclipse.
+Save this file under <QGIS Install Dir>/bin/python-shell.bat and then
+right-drag it from explorer to your Windows start button to create an easily
+accessible shortcut to eclipse.
 
 Creating a project
 ..................
@@ -546,8 +562,9 @@ In the resulting project dialog, set the following details:
 * :guilabel:`Grammar Version` : :kbd:`2.7`
 * :guilabel:`Add project directory to PYTHONPATH?` : :kbd:`check`
 
-.. note:: The python shipped with QGIS for windows is version 2.7 so you should
-   avoid using any additions to the python spec introduced in later versions.
+.. note:: The python shipped with QGIS for windows is version 2.7 so you
+   should avoid using any additions to the python spec introduced in later
+   versions.
 
 At this point you should should click the link entitled 'Please configure an interpreter
 in related preferences before continuing.' And on the resulting dialog do:
@@ -558,66 +575,65 @@ In the dialog that appears do:
 
 * :guilabel:`Interpreter Name` : :kbd:`QGIS Python 2.7`
 * :guilabel:`Interpreter Executable` :
-  :kbd:`C:\\Program Files (x86)\\Quantum GIS Lisboa\\bin\\python.exe`
+  :kbd:`C:\\Program Files (x86)\\QGIS Doufur\\bin\\python.exe`
 * :guilabel:`OK Button` : :kbd:`click this button`
 
-Another dialog will appear. Tick the first entry in the list that points to
-your::
+Another dialog will appear.
+Tick the first entry in the list that points to your::
 
-      C:\\users\\inasafe\\Downloads\\eclipse\\plugins\\org.python.pydev_2.6.0.2012062818\\pysrc
+      C:\\Users\\inasafe\\Downloads\\eclipse\\plugins\\org.python.pydev_2.6.0.2012062818\\pysrc
 
 The resulting list of python paths should look something like this::
 
    C:\Program Files\eclipse\plugins\org.python.pydev_2.6.0.2012062818\pysrc
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\DLLs
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\plat-win
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\lib-tk
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages\win32
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages\win32\lib
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages\Pythonwin
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages\wx-2.8-msw-unicode
+   C:\PROGRA~1\QGIS Dufour\apps\Python27\DLLs
+   C:\PROGRA~1\QGIS Dufour\apps\Python27\lib
+   C:\PROGRA~1\QGIS Dufour\apps\Python27\lib\plat-win
+   C:\PROGRA~1\QGIS Dufour\apps\Python27\lib\lib-tk
+   C:\PROGRA~1\QGIS Dufour\apps\Python27
+   C:\PROGRA~1\QGIS Dufour\apps\Python27\lib\site-packages
+   C:\PROGRA~1\QGIS Dufour\apps\Python27\lib\site-packages\win32
+   C:\PROGRA~1\QGIS Dufour\apps\Python27\lib\site-packages\win32\lib
+   C:\PROGRA~1\QGIS Dufour\apps\Python27\lib\site-packages\Pythonwin
+   C:\PROGRA~1\QGIS Dufour\apps\Python27\lib\site-packages\wx-2.8-msw-unicode
 
 Click on the :guilabel:`New folder` button and add the QGIS python dir::
 
-   C:\Program Files\Quantum GIS Lisboa\apps\qgis\python
+   C:\Program Files\QGIS Dufour\apps\qgis\python
 
 * :guilabel:`OK Button` : :kbd:`click this button`
 
-You will be returned to the Python Interpreters list and should see an entry for
-**QGIS Python 2.7** listed there. Now do in the **Environment** tab:
+You will be returned to the Python Interpreters list and should see an entry
+for **QGIS Python 2.7** listed there.
+Now do in the **Environment** tab:
 
 :guilabel:`New`
 
 In the dialog that appears
 
 :guilabel:`Name` : :kbd:`QGIS_PREFIX_PATH`
-:guilabel:`Value` : :kbd:`C:\\PROGRA~1\\QUANTU~1\\apps\\qgis`
+:guilabel:`Value` : :kbd:`C:\\PROGRA~1\\QGISDU~1\\apps\\qgis`
 
 Then click ok to close the environment variable editor.
 
 * :guilabel:`Ok` : :kbd:`click this button`
 
-Then click finsih to finish the new project dialog
-.
-
-* :guilabel:`Finish` : :kbd:`click this button`
+Then click :guilabel:`Finish` to finish the new project dialog.
 
 Remote Debugging with Eclipse
 .............................
 
 For remote debugging, you should add pydevd to your PYTHONPATH before starting
-*QGIS*. Under Windows, the best way to do this is to add the following line to
-:command:`qgis.bat` under C:\Program Files (x86)\Quantum GIS Wroclaw\bin::
+*QGIS*.
+Under Windows, the best way to do this is to add the following line to
+:command:`qgis.bat` under C:\Program Files (x86)\QGIS Dufour\bin::
 
    SET PYTHONPATH=%PYTHONPATH%;C:\Progra~1\eclipse\plugins\org.python.pydev.debug_2.3.0.2011121518\pysrc
 
 .. note::
      (1) You need to add a settrace() line at the point in your code where
-     you would like to initiate remote debugging. After that, you can insert
-     eclipse debugger breakpoints as per normal.
+     you would like to initiate remote debugging.
+     After that, you can insert eclipse debugger breakpoints as per normal.
 
      (2) If you are running with remote debugging enabled, be sure to start the
      PyDev debug server first before launching the |project_name| QGIS plugin
@@ -632,12 +648,13 @@ For remote debugging, you should add pydevd to your PYTHONPATH before starting
 
 To initiate a remote debugging session, add the settrace() directive to your
 source file and then start the python remote debugging service from the PyDev
-debug perspective. Then launch QGIS (or your command line application) and
-use the application until the settrace line is encountered. QGIS will appear
-to freeze - this is normal. Now switch to Eclipse and you should see the
-settrace line has been highlighted in green and you can step through the code
-using standard Eclipse debugging tools (done most easily from the debugging
-perspective).
+debug perspective.
+Then launch QGIS (or your command line application) and use the application
+until the settrace line is encountered.
+QGIS will appear to freeze - this is normal.
+Now switch to Eclipse and you should see the settrace line has been
+highlighted in green and you can step through the code using standard Eclipse
+debugging tools (done most easily from the debugging perspective).
 
 .. note:: Always remove or comment out settrace() when are done debugging!
 
@@ -647,9 +664,10 @@ Running Unit tests from the IDE
 Using PyDev's build in test runner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Python has very good integrated support for unit testing. The first thing
-you should do after setting up the IDE project is to run the tests. You can run
-tests in the following ways:
+Python has very good integrated support for unit testing.
+The first thing you should do after setting up the IDE project is to run the
+tests.
+You can run tests in the following ways:
 
 * For the entire |project_name| package
 * For individual sub packages (e.g. engine, gui, storage, impact_functions)
@@ -662,14 +680,15 @@ project panel in the left of the IDE.
 
 .. note:: If you run the test suite for the entire |project_name| package, it
    will mistakenly treat the sphinx documentation :file:`conf.py` (docs.source
-   .conf) as a test and fail for that test. This is 'normal' and can be
-   ignored.
+   .conf) as a test and fail for that test.
+   This is 'normal' and can be ignored.
 
 Setting PyDev to use the Nose test runner
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can also configure Eclipse to run the tests using nose (which is
-recommended). To do this first do:
+recommended).
+To do this first do:
 
 :menuselection:`Window --> Preferences --> PyDev -- PyUnit`
 
@@ -682,5 +701,6 @@ As with using Pydev's built in test runner, you can also run any module, class
 etc. while using the nose test runner by right clicking on the item in the
 PyDev package explorer.
 
-.. note:: Actually, we can run the test runner until this step. But, we got a
-   problem, so you need to install python in your windows machine.
+.. note:: Actually, we can run the test runner until this step.
+   But, we got a problem, so you need to install python in your windows
+   machine.

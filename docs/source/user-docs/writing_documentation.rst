@@ -114,6 +114,16 @@ Here are some common useful tags
 
    .. warning:: Much like Note but clearly visible
 
+   There are more markers available:
+
+   .. attention::
+   .. caution::
+   .. danger::
+   .. error::
+   .. hint::
+   .. important::
+   .. tip::
+
    .. table:: table title
 
    ============  ================
