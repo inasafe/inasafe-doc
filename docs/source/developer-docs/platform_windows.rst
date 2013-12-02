@@ -122,17 +122,19 @@ console when the clone process is completed::
 Checkout the test data
 ......................
 
-To check out the test data from git, first open a GIT bash prompt as illustrated below:
+To check out the test data from git, first open a GIT bash prompt as
+illustrated below:
 
-The repository can now be cloned by issuing the commands listed below. (Already completed in previous step):
+The repository can now be cloned by issuing the commands listed below.
+(Already completed in previous step):
 
 Users on windows < Windows 7::
 
-   cd  /c/Documents\ and\ Settings/<your username>/.qgis/python/plugins/
+   cd  C:/Documents\ and\ Settings/<your username>/.qgis/python/plugins/
 
 Windows 7 or newer::
 
-   cd  /c/Users/<your username>/.qgis/python/plugins/
+   cd  C:/Users/<your username>/.qgis/python/plugins/
 
 All windows versions::
 
@@ -159,7 +161,8 @@ Download the latest QGIS 'standalone' installer from http://download.qgis.org
 and install it by running the installation wizard and accepting the defaults
 throughout.
 
-After opening QGIS (:menuselection:`Start --> All Programs --> Quantum GIS Lisboa --> Quantum GIS Desktop (1.8.0)`)
+After opening QGIS
+(:menuselection:`Start-->All Programs-->QGIS Lisboa-->QGIS Desktop (1.8.0)`)
 you need to enable the plugin from the plugin menu by doing
 :menuselection:`Plugins --> Manage Plugins` and then search for the
 |project_name| plugin in the list and enable it.
@@ -187,32 +190,33 @@ and testing standalone scripts written to use the |project_name| libraries.
 
 We will create a custom shell launcher that will give you a python
 shell environment using the python that comes bundled with QGIS, and that sets
-various paths and evironment variables so everything works as expected. Save the
-following listing in <QGIS Install Dir>/bin/python-shell.bat::
+various paths and environment variables so everything works as expected.
+Find out the PATHs by using the command 'dir /x'.
+Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
 
    @echo off
-   SET OSGEO4W_ROOT=C:\PROGRA~1\QUANTU~1
+   SET OSGEO4W_ROOT=C:\PROGRA~1\QGISDU~1
    call "%OSGEO4W_ROOT%"\bin\o4w_env.bat
-   call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.2\etc\env.bat
+   call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.3\etc\env.bat
    @echo off
-   SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins\1.9
+   SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins
    path %PATH%;%OSGEO4W_ROOT%\apps\qgis\bin
-   path %PATH%;%OSGEO4W_ROOT%\apps\grass\grass-6.4.2\lib
+   path %PATH%;%OSGEO4W_ROOT%\apps\grass\grass-6.4.3\lib
    path %PATH%;"%OSGEO4W_ROOT%\apps\Python27\Scripts\"
 
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
    set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
-   cd "%HOMEPATH%\.qgis\python\plugins\inasafe-dev"
-   start "Quantum GIS Shell" /B "cmd.exe" %*
+   cd "%HOMEPATH%\.qgis\python\plugins\inasafe"
+   start "QGIS Shell" /B "cmd.exe" %*
 
 .. note:: The QGIS_PREFIX_PATH environment variable should be unquoted!.
 
 .. note:: You may need to replace PROGRA~1 above with PROGRA~2 if you are
-   on 64bit windows.
+   on 64bit windows and using the 32bit QGIS Version.
 
-.. note:: This script is for QGIS 1.8. You may need to do some adjustment if
-   you are using another version of QGIS
+.. note:: This script is for QGIS 2.0.
+   You may need to do some adjustment if you are using another version of QGIS.
 
 For easy access to this shell launcher, right click on the qgis-shell.bat script
 and (without releasing your initial right click) drag with the file onto your
@@ -222,7 +226,11 @@ Verifying your system path
 ..........................
 
 To verify your path, launch your python shell (by clicking the python-shell.bat)
-and then start a python shell. Now enter the follow simple script::
+and then start a python shell.
+Don't be alarmed when it says "The system cannot find the path specified." It
+should work anyway.
+
+Now enter the follow simple script::
 
    import sys
    for item in sys.path:
@@ -231,24 +239,24 @@ and then start a python shell. Now enter the follow simple script::
 Which should produce output like this::
 
    C:\Users\inasafe\.qgis\python\plugins\inasafe-dev
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\qgis\python
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\Lib\site-packages
-   C:\PROGRA~1\Quantum GIS Lisboa\bin\python27.zip
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\DLLs
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\plat-win
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\lib-tk
-   C:\PROGRA~1\Quantum GIS Lisboa\bin
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages\PIL
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages\win32
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages\win32\lib
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages\Pythonwin
-   C:\PROGRA~1\Quantum GIS Lisboa\apps\Python27\lib\site-packages\wx-2.8-msw-unicode
+   C:\PROGRA~1\QGISDU~1\apps\qgis\python
+   C:\PROGRA~1\QGISDU~1\apps\Python27\Lib\site-packages
+   C:\PROGRA~1\QGISDU~1\bin\python27.zip
+   C:\PROGRA~1\QGISDU~1\apps\Python27\DLLs
+   C:\PROGRA~1\QGISDU~1\apps\Python27\lib
+   C:\PROGRA~1\QGISDU~1\apps\Python27\lib\plat-win
+   C:\PROGRA~1\QGISDU~1\apps\Python27\lib\lib-tk
+   C:\PROGRA~1\QGISDU~1\bin
+   C:\PROGRA~1\QGISDU~1\apps\Python27
+   C:\PROGRA~1\QGISDU~1\apps\Python27\lib\site-packages\PIL
+   C:\PROGRA~1\QGISDU~1\apps\Python27\lib\site-packages\win32
+   C:\PROGRA~1\QGISDU~1\apps\Python27\lib\site-packages\win32\lib
+   C:\PROGRA~1\QGISDU~1\apps\Python27\lib\site-packages\Pythonwin
+   C:\PROGRA~1\QGISDU~1\apps\Python27\lib\site-packages\wx-2.8-msw-unicode
 
 It is particularly the second and third lines that you need to have in place
-so that the QGIS libs can found. Now dow a simple test to see if you can import
-the QGIS libs::
+so that the QGIS libs can be found. Now do a simple test to see if you can
+import the QGIS libs::
 
    from qgis.core import *
    exit()
@@ -266,10 +274,13 @@ Nose testing tools
 Installing pip
 ..............
 
-We need to install easy_install so that we can install pip so that we can
-install nosetests and other python tools. Under windows you need to run a
-little script to install easy_install and then use easy_install to install
-pypi. Download the script on
+We need to install easy_install so that we can install pip to install
+nosetests and other python tools.
+
+Under Windows you need to run a little script to install easy_install and
+then use easy_install to install pypi.
+
+Download the script on
 `this page <http://pypi.python.org/pypi/setuptools#windows>`_ called
 ez_setup.py and save it somewhere familiar e.g. :samp:`c:\temp`.
 

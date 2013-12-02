@@ -16,8 +16,9 @@ The latest version of |project_name| can be found following the
 We manage the project issues using a GitHub issue tracker. The
 `InaSAFE <https://github.com/AIFDR/inasafe/issues?direction=desc&sort=created&state=open>`_
 issue tracker is open to everyone, though you will first need to register a
-(free) account on GitHub to use it. You can find the GitHub self-registration
-page `here <https://github.com/signup/free>`_.
+(free) account on GitHub to use it.
+You can find the GitHub self-registration page
+`here <https://github.com/signup/free>`_.
 
 **Do I need to pay?**
 
@@ -141,14 +142,18 @@ get the new plugin repo added to your repo list. To fix this you can do:
 **How do I fix KeywordDbError on Windows?**
 
 It’s an issue related to permission issue. Normally, it occurs when
-the keyword.db is not writable by current user. The thing that you have to do
-is re-run QGIS as administrator or re-install QGIS as administrator.
+the keyword.db is not writable by current user.
+The thing that you have to do is re-run QGIS as Administrator or re-install
+QGIS as Administrator.
 
-Another way to solve it is deleting the registry of InaSAFE. You can do it
-by opening :guilabel:`regedit` (Registry Editor). To open regedit, you need
-to search it in :guilabel:`Start Menu` (it is usually not shown in Start
-Menu). Open regedit. Find inasafe registry under :menuselection:`My Computer
---> Software --> QuantumGIS --> QGIS --> PythonPlugins`. After that,
+Another way to solve it is deleting the registry of InaSAFE.
+You can do it by opening :guilabel:`regedit` (Registry Editor).
+To open regedit, you need to search it in :guilabel:`Start Menu` (it is
+usually not shown in Start Menu).
+
+Open regedit.
+
+Find inasafe registry under :menuselection:`My Computer--> Software --> QGIS --> QGIS --> PythonPlugins`. After that,
 right click on the inasafe, and click :guilabel:`Delete`. Restart QGIS and
 try to run InaSAFE again to see if it works.
 

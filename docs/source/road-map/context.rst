@@ -43,7 +43,7 @@ scenarios. |project_name| provides quantitative information such as:
   evacuation centres.
 
 |project_name| is based on the well established Open Source project QGIS
-(Quantum Geographical Information System) and is designed to
+and is designed to
 
 * be easy to use
 * allow results to be reproduced
