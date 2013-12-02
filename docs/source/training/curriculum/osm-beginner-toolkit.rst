@@ -714,7 +714,7 @@ Activities
 | What GPS can do and how it works on the smartphone.               |               | Module 4      |
 | As example:                                                       |               |               |
 |                                                                   |               |               |
-| - Handphone emitted signal from radio tower, GPS                   |               |               |
+| - Handphone emitted signal from radio tower, GPS                  |               |               |
 |   receive signal from satellite from spaces.                      |               |               |
 | - When receive the signal, GPS can track absolute                 |               |               |
 |   location in earth.                                              |               |               |
@@ -1139,7 +1139,7 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Add plugin imagery_offset_db in JOSM 20'**                      | Practice      | Computer      |
 |                                                                   |               |               |
-| 1. The facilitator asked the participants to add imagery           |               | Participant   |
+| 1. The facilitator asked the participants to add imagery          |               | Participant   |
 |    offset_db plugin from the Plugins list in Preferences.         |               |               |
 | 2. Then participants are guided step-by-step utilize the          |               | Projector     |
 |    functionality of the plugin.                                   |               |               |
@@ -1190,7 +1190,7 @@ Activities
 | Facilitator present the important this session, purpose           |               |               |
 | *outcome* and activity                                            |               | Module 9      |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Download OSM vector file through the site Geofabrik*           | Lecture       | Computer      |
+| **Download OSM vector file through the site Geofabrik*            | Lecture       | Computer      |
 | **Download vector file  20'**                                     |               |               |
 |                                                                   |               | Participants  |
 | 1. Facilitator shows how participants can get OSM                 | Practice      |               |
@@ -1198,7 +1198,7 @@ Activities
 |    website that can be processed by software QGIS                 |               |               |
 |    and InaSAFE.                                                   |               |               |
 | 2. Participants were asked to download vector files via           |               |               |
-|    Geofabrick website.                                             |               |               |
+|    Geofabrick website.                                            |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Download vector file OSM via Hot-Export website 30'**           | Lecture       | Computer      |
 |                                                                   |               |               |

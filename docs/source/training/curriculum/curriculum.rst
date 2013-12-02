@@ -266,7 +266,7 @@ C. Map of Competencies
 |    |             | 2. Preparing data and keywords for InaSAFE                                                                          |
 |    |             | 3. Preparing data and keywords for InaSAFE                                                                          |
 |    |             | 4. Planning evacuation route based on hazard Information                                                            |
-|    |             | 5. Calculate damage and losses                                                                                     |
+|    |             | 5. Calculate damage and losses                                                                                      |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 
 
