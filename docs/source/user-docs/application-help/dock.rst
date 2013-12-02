@@ -211,7 +211,8 @@ The buttons area contains three buttons:
 * :guilabel:`Help` - click on this if you need context help, such as the
   document you are reading right now!
 * :guilabel:`Print...` - click on this if you wish to create a pdf of your
-  impact scenarion project. An **impact layer** must be active before the
+  impact scenarion project or just generate report and open it in composer for
+  further tuning. An **impact layer** must be active before the
   :guilabel:`Print...` button will be enabled.
 * :guilabel:`Run` - if the combination of options in the :guilabel:`Questions`
   area's combo boxes will allow you to run a scenario, this button is enabled.
@@ -270,3 +271,40 @@ You might have up to 3 tabs visible.
    :scale: 75 %
    :align: center
    :alt: Impact Function Configurator
+
+.. _impact_report:
+
+Generating impact report
+------------------------
+
+When scenario analysis completed you may want to generate a report. Usually
+:guilabel:`Print...`  button will be enabled immediatelly after analysis. If it
+still inactive, select impact layer in QGIS ToC.
+
+To start report generation you need to click on the :guilabel:`Print...` button
+in the buttons area. This will open an :guilabel:`Impact report` dialog.
+
+.. figure:: /static/user-docs/impact_report_dlg.*
+   :scale: 75 %
+   :align: center
+   :alt: Impact Report configuration
+
+   Impact report configuration
+
+Dialog has three major areas:
+
+ * :guilabel:`Area to print` group: allows to customize extent of the report
+   map. There are two options available. Choose :guilabel:`Current extent` if
+   current canvas extent represents necessary area. :guilabel:`Analysis extent`
+   will set extent of the report map to impact layer extent.
+ * :guilabel:`Template to use` group: here you can select desired template for
+   your report. In combobox listed all templates bundled with plugin plus
+   templates from user-defined template directory (see :ref:`toolbar_options`)
+   for information how to set templates directory. It is also possible to
+   select custom template from any location: just activate radiobutton under
+   combobox and provide path to template using :guilabel:`...` button.
+ * buttons area: contains four buttons. :guilabel:`Open PDF` button used to
+   generate report and export it in PDF format. Resulting file(s) will be
+   opened in your default PDF viewer. :guilabel:`Open composer` used when you
+   need to adjust generated report before printing. In this case report will be
+   opened in QGIS composer and you can edit it as needed.
