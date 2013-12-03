@@ -21,7 +21,7 @@ usable development environment for |project_name| under Windows:
 * Setup your IDE (Eclipse PyDev or PyCharm).
 
 .. note:: If you only want to run only the jenkins test suite there is no need
-   to checkout the project code. This is task to be done by jenkins than.
+   to checkout the project code. This is task to be done by Jenkins than.
    You may also wish to read :doc:`jenkins_ci_windows_slave` if you wish to
    set up automated test suite running using Jenkins.
 
@@ -395,7 +395,7 @@ Once they are installed, you can run the nose tests from windows by going to
 the plugin directory/inasafe-dev folder (in your python-shell.bat shell
 session) and running::
 
-   runtests.bat
+   run-tests-win.bat
 
 .. _developing_using_pycharm:
 

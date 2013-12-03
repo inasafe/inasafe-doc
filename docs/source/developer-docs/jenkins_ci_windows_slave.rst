@@ -91,10 +91,22 @@ GitHub for Windows Install
   :file:`C:\\Users\\inasafe\\.qgis2\\python\\plugins`
 
 Copy over the repositories from the host system (quickest) or check them out
-from github anonymously.
-If you take the former route, after copying them in to the plugins directory
-use the GitHub Windows app's options dialog to find them by clicking the
-'scan for repositories' button.
+from github anonymously by using the Git Shell (It seems that the GUI does not
+support cloning projects anonymously).
+
+Do that by opening the Git Shell and assigning the command::
+
+  git clone https://github.com/AIFDR/inasafe.git
+
+We also need the test data available in this freshly cloned directory.
+So clone the test data inside this inasafe clone.
+To do this enter the commands::
+
+  git clone https://github.com/AIFDR/inasafe_data.git inasafe_data
+
+If you take the former route of just copying them over, after copying them in
+to the plugins directory use the GitHub Windows apps options dialog to find
+them by clicking the 'scan for repositories' button.
 
 Python Install
 ..............
@@ -110,9 +122,12 @@ Python Install
   a working pip, nose etc.
 
 Now run the tests and ensure that they can be run from the command line
-*before* attempting to run them via Jenkins::
+*before* attempting to run them via Jenkins. Again, this is just to make sure
+ that everything is setup nicely to avoid any problems on Jenkins.
+::
 
     C:\Users\inasafe\.qgis\python\plugins\inasafe>runtests.bat
+
 
 .net 3.5 Install
 ................

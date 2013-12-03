@@ -24,7 +24,7 @@ Participants are able to:
 
 **Data for Practical**
 You can download this from `InaSAFE dropbox
-<https://www.dropbox.com/l/0KGR0TTpdOM9ZqzEkNud5c/invites>`_
+<https://data.inasafe.org>`_
 or it will be provided to you during the training.
 
 Introduction
