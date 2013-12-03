@@ -123,7 +123,7 @@ Python Install
 
 Now run the tests and ensure that they can be run from the command line
 *before* attempting to run them via Jenkins. Again, this is just to make sure
- that everything is setup nicely to avoid any problems on Jenkins.
+that everything is setup nicely to avoid any problems on Jenkins.
 ::
 
     C:\Users\inasafe\.qgis\python\plugins\inasafe>runtests.bat

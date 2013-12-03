@@ -20,8 +20,8 @@ usable development environment for |project_name| under Windows:
 * Create a custom shell launcher with a python prompt.
 * Setup your IDE (Eclipse PyDev or PyCharm).
 
-.. note:: If you only want to run only the jenkins test suite there is no need
-   to checkout the project code. This is task to be done by Jenkins than.
+.. note:: If you only want to run the jenkins test suite there is no need
+   to checkout the project code. This is a task to be done by Jenkins.
    You may also wish to read :doc:`jenkins_ci_windows_slave` if you wish to
    set up automated test suite running using Jenkins.
 
