@@ -88,10 +88,11 @@ The following options are available on the :guilabel:`Options Dialog`:
   a custom logo that will be used in the pdf of your impact scenario project.
   See :ref:`toolbar_reports` in the |project_name| User-Manual for more
   information on the reports. **NOTE**: image should have size X x Y.
-* :guilabel:`Report template`: This option is used to determine a custom
-  template that will be used for generating a pdf of your impact scenario
-  project. See :ref:`toolbar_reports` in the |project_name| User-Manual for
-  more information on the reports.
+* :guilabel:`Report template`: This option is used to determine a directory
+  with custom templates. Templates from this directory will be available for
+  usage when generating report on your impact scenario project. See
+  :ref:`toolbar_reports` in the |project_name| User-Manual for more information
+  on the reports.
 * :guilabel:`Enable developer mode`. With this option enabled,
   you can right click on the report area and use the webkit debug tools to
   debug the output. **This option is intended for advanced users only.**
