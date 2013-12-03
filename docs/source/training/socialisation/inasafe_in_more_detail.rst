@@ -165,12 +165,12 @@ again in the **Source** window.
    :align: center
 
 This dataset is the subvillage boundaries for Jakarta,
-during the floods in January this year the Provincial disaster mangers
+during the floods in January this year the Provincial disaster managers
 collected information about the flooding, one of which was the location of
 the flooded area by sub-village boundary.
 
-.. note:: The InaSAFE panel is currently showing a warning "Layer keywords
-   missing:" we will address this concern in later steps.
+.. note:: The |project_name| panel is currently showing a warning "Layer
+   keywords missing:" we will address this concern in later steps.
 
 Lets examine this data by opening up its *attribute table*
 
