@@ -100,6 +100,7 @@ Do that by opening the Git Shell and assigning the command::
 
 We also need the test data available in this freshly cloned directory.
 So clone the test data inside this inasafe clone.
+
 To do this enter the commands::
 
   git clone https://github.com/AIFDR/inasafe_data.git inasafe_data
@@ -108,11 +109,9 @@ If you take the former route of just copying them over, after copying them in
 to the plugins directory use the GitHub Windows apps options dialog to find
 them by clicking the 'scan for repositories' button.
 
-Python Install
-..............
+Python
+......
 
-* Download and install Python **32Bit** (even if you are running a 64 bit
-  windows!!!) to match the version of python shipped with QGIS.
 * Follow the process described in :ref:`windows_shell_launcher-label` so that
   you can use the QGIS libraries from a python shell.
   Note that you probably need to change the second last line of that script to
@@ -122,24 +121,27 @@ Python Install
   a working pip, nose etc.
 
 Now run the tests and ensure that they can be run from the command line
-*before* attempting to run them via Jenkins. Again, this is just to make sure
-that everything is setup nicely to avoid any problems on Jenkins.
+*before* attempting to run them via Jenkins.
+Again, this is just to make sure that everything is setup nicely to avoid any
+problems on Jenkins.
 ::
 
     C:\Users\inasafe\.qgis\python\plugins\inasafe>runtests.bat
 
 
-.net 3.5 Install
+.NET 3.5 Install
 ................
 
-To install Jenkins, you first need to ensure you have .net 3.5 on your system.
-Windows 8 ships with .net 4+ so you need to manually install the older version
-too. First visit http://www.microsoft.com/en-us/download/details.aspx?id=21
-and either choose the .NET Framework Full Package (around 200mb, the option
-I took) or get the online installer. Note that the full package link is near
-the bottom of the page.
+To install Jenkins, you first need to ensure you have .NET 3.5 on your system.
+With Windows 7 you are safe. You already have .NET 3.5 installed.
 
-Run the installer and accept all the defaults to install the .net 3.5
+Windows 8 ships with .NET 4+ so you need to manually install the older version
+too.
+First visit http://www.microsoft.com/en-us/download/details.aspx?id=21 and
+either choose the .NET Framework Full Package or get the online installer.
+Note that the full package link is near the bottom of the page.
+
+Run the installer and accept all the defaults to install the .NET 3.5
 framework.
 
 Jenkins Install
