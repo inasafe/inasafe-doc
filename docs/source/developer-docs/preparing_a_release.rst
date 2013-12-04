@@ -330,19 +330,19 @@ vmware provide the ability to create a system snapshot and roll back to it.
 
 To generate a test package, use the :file:`scripts/release.sh` bash script.
 
-For exampled to create a test package for version 0.1.0 of the software,
+For exampled to create a test package for version 1.2.0 of the software,
 issue the following command::
 
-   scripts/release.sh 0.1.0
+   scripts/release.sh 1.2.0
 
 The generated package will be placed in the /tmp directory of your linux system.
 
 Once the clean system is started, extract the package contents into the user's
 personal plugin directory. For example under Linux::
 
-   mkdir -p ~/.qgis/python/plugins
-   cd ~/.qgis/python/plugins
-   unzip inasafe.0.1.0.zip
+   mkdir -p ~/.qgis2/python/plugins
+   cd ~/.qgis2/python/plugins
+   unzip inasafe.1.2.0.zip
 
 Now start QGIS and enable the plugin in the QGIS plugin manager (
 :menuselection:`Plugins --> Manage Plugins`).
@@ -401,10 +401,10 @@ Tagging
 Tagging the release provides a 'known good' state for the software which
 represents a point in time where all of the above items in this list have
 been checked. The tag should be named after the major, minor and point release
-for example :samp:`version-0_1_0`. If the release is a release candidate or
+for example :samp:`version-1.2.0`. If the release is a release candidate or
 and alpha release the letters :samp:`rc` or :samp:`a` respectively should
 be appended respectively, along with the related number. For example version
-0.1.0 alpha 1 would be tagged as :samp:`version-0_1_0a1`. To tag the release
+1.2.0 alpha 1 would be tagged as :samp:`version-1.2.0a1`. To tag the release
 simply do it in git as illustrated below.::
 
    git tag -s version-1_1_0 -m "Version 1.1.0"

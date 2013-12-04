@@ -95,7 +95,7 @@ Cloning the source code from git
 
 To develop on the plugin, you first need to copy it to your local system. If
 you are a developer, the simplest way to do that is go to
-:file:`~/.qgis/python/plugins` and clone |project_name| from our GitHub
+:file:`~/.qgis2/python/plugins` and clone |project_name| from our GitHub
 repository page like this::
 
    git clone git://github.com/AIFDR/inasafe.git         (for read only)
@@ -122,7 +122,7 @@ Adding |project_name| to your python path:
 Lastly, you should add the |project_name| plugin folder to your PYTHONPATH so
 that package and module paths can be resolved correctly. E.g::
 
-   export PYTHONPATH=$PYTHONPATH:${HOME}/.qgis/python/plugins/inasafe
+   export PYTHONPATH=$PYTHONPATH:${HOME}/.qgis2/python/plugins/inasafe
 
 Once again you could add this to your .bashrc or set it in Eclipse for
 convenience if needed.
@@ -184,9 +184,9 @@ In the resulting project dialog, set the following details:
 * :guilabel:`Project name:` : :kbd:`inasafe`
 * :guilabel:`Use default` : :kbd:`uncheck`
 * :guilabel:`(linux) Directory` :
-  :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
+  :kbd:`/home/<your user name>/.qgis2/python/plugins/inasafe/`
 * :guilabel:`(windows) Directory` :
-  :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
+  :kbd:`/home/<your user name>/.qgis2/python/plugins/inasafe/`
 * :guilabel:`Choose project type` : :kbd:`Python`
 * :guilabel:`Grammar Version` : :kbd:`2.7`
 * :guilabel:`Add project directory to PYTHONPATH?` : :kbd:`check`

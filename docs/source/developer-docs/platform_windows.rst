@@ -101,8 +101,8 @@ Windows 7 or newer::
 
 All windows versions::
 
-   mkdir -p .qgis/python/plugins
-   cd .qgis/python/plugins/
+   mkdir -p .qgis2/python/plugins
+   cd .qgis2/python/plugins/
    git clone https://<your username>@github.com/AIFDR/inasafe.git inasafe-dev
 
 .. note:: The items in angle brackets above should be replaced with your
@@ -134,11 +134,11 @@ The repository can now be cloned by issuing the commands listed below.
 
 Users on windows < Windows 7::
 
-   cd  C:/Documents and Settings/<your username>/.qgis/python/plugins/
+   cd  C:/Documents and Settings/<your username>/.qgis2/python/plugins/
 
 Windows 7 or newer::
 
-   cd  C:/Users/<your username>/.qgis/python/plugins/
+   cd  C:/Users/<your username>/.qgis2/python/plugins/
 
 All windows versions::
 
@@ -212,7 +212,7 @@ Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
    set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
-   cd "%HOMEPATH%\.qgis\python\plugins\inasafe"
+   cd "%HOMEPATH%\.qgis2\python\plugins\inasafe"
    start "QGIS Shell" /B "cmd.exe" %*
 
 .. note:: The QGIS_PREFIX_PATH environment variable should be unquoted!.
@@ -243,7 +243,7 @@ Now enter the follow simple script::
 
 Which should produce output like this::
 
-   C:\Users\inasafe\.qgis\python\plugins\inasafe-dev
+   C:\Users\inasafe\.qgis2\python\plugins\inasafe-dev
    C:\PROGRA~1\QGISDU~1\apps\qgis\python
    C:\PROGRA~1\QGISDU~1\apps\Python27\Lib\site-packages
    C:\PROGRA~1\QGISDU~1\bin\python27.zip
@@ -315,7 +315,7 @@ python shell and execute the command :command:`print sys.executable` - is
 should show :samp:`c:\python27\python.exe` as per
 the demo session below::
 
-    C:\Users\inasafe\.qgis\python\plugins\inasafe>python
+    C:\Users\inasafe\.qgis2\python\plugins\inasafe>python
     Python 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
     on win32
     Type "help", "copyright", "credits" or "license" for more information.
@@ -445,7 +445,7 @@ per this example below::
   set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
   set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
   set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
-  cd "%HOMEPATH%\.qgis\python\plugins\inasafe-dev"
+  cd "%HOMEPATH%\.qgis2\python\plugins\inasafe-dev"
   set PATH=c:\python27;%PATH%
   start "PyCharm aware of Quantum GIS" /B "C:\Program Files (x86)\JetBrains\PyCharm 2.7.3\bin\pycharm.exe" %*
 
@@ -461,7 +461,7 @@ Setup |project_name| project
 On the PyCharm welcome screen, choose :guilabel:`Open Directory` and open the
 git checkout you made i.e.::
 
-   c:\Users\<username>\.qgis\python\plugins\inasafe-dev"
+   c:\Users\<username>\.qgis2\python\plugins\inasafe-dev"
 
 Again, note that you should replace **<username>** with the appropriate name
 for your user account.
@@ -557,7 +557,7 @@ In the resulting project dialog, set the following details:
 * :guilabel:`Project name:` : :kbd:`inasafe`
 * :guilabel:`Use default` : :kbd:`uncheck`
 * :guilabel (windows):`Directory` :
-  :kbd:`C:\\Users\\<user>\\.qgis\\python\\plugins\\inasafe\\`
+  :kbd:`C:\\Users\\<user>\\.qgis2\\python\\plugins\\inasafe\\`
 * :guilabel:`Choose project type` : :kbd:`Python`
 * :guilabel:`Grammar Version` : :kbd:`2.7`
 * :guilabel:`Add project directory to PYTHONPATH?` : :kbd:`check`
