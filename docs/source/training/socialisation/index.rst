@@ -10,6 +10,11 @@ on those), but to give participants an idea of what |project_name| is capable
 of doing.
 The course is scheduled to only run for 1/2 day.
 
+The data used in this course is available for download on
+`data.inasafe.org <http://data.inasafe.org/>`_.
+Ask your trainer which data you will need to download or your trainer will
+give you the data on a USB-Stick anyway.
+
 .. toctree::
    :maxdepth: 1
 

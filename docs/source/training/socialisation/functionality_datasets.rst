@@ -8,6 +8,11 @@ Before we dive into using QGIS and |project_name|, this chapter will explain
 during this short |project_name| course as well as the spatial datasets we
 will be using.
 
+The data used in this course is available for download on
+`data.inasafe.org <http://data.inasafe.org/>`_.
+Ask your trainer which data you will need to download or your trainer will
+give you the data on a USB-Stick anyway.
+
 Current Functionality of |project_name|
 ---------------------------------------
 
