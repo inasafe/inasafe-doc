@@ -9,6 +9,11 @@ Australia-Indonesia Facility for Disaster Reduction (AIFDR) to have hands
 on experience with |project_name| from data collection until data analysis 
 for contingency plan. The course is scheduled to run for 10 days.
 
+The data used in this course is available for download on
+`data.inasafe.org <http://data.inasafe.org/>`_.
+Ask your trainer which data you will need to download or your trainer will
+give you the data on a USB-Stick anyway.
+
 .. toctree::
    :maxdepth: 2
 
