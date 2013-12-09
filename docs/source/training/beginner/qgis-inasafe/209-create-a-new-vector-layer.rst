@@ -1,4 +1,4 @@
-.. image:: /static/training/beginner/qgis-inasafe/image6.*
+.. image:: /static/training/beginner/qgis-inasafe/image7.*
 
 Module 9: Create a New Vector Layer
 ===================================
@@ -92,7 +92,7 @@ tutorial directory.
 
 - Click on the :guilabel:`Add Raster Layer` button:
 
-.. image:: /static/training/beginner/qgis-inasafe/image178.*
+.. image:: /static/training/beginner/qgis-inasafe/image147.*
    :align: center
 
 - Navigate to :file:`../qgis/Sleman/`.
@@ -102,14 +102,14 @@ tutorial directory.
 - :guilabel:`Click and drag` it to the bottom of the list so that
   it is below the vector layer you created in the previous section.
 
-.. image:: /static/training/beginner/qgis-inasafe/image179.*
+.. image:: /static/training/beginner/qgis-inasafe/image178.*
    :align: center
 
-- Go to :menuselection:`Settings ‣ Project Properties` and :guilabel:`enable
+- Go to :menuselection:`Project ‣ Project Properties` and :guilabel:`enable
   “on the fly”` transformation.
 - Make sure that “WGS 84” is selected as the CRS, and click :guilabel:`OK`.
 
-.. image:: /static/training/beginner/qgis-inasafe/image180.*
+.. image:: /static/training/beginner/qgis-inasafe/image179.*
    :align: center
 
 - Right click on the :guilabel:`UGM layer`, and click
@@ -117,7 +117,7 @@ tutorial directory.
 - Zoom in to the center of the raster image. We will be digitizing three
   areas:
 
-.. image:: /static/training/beginner/qgis-inasafe/image181.*
+.. image:: /static/training/beginner/qgis-inasafe/image180.*
    :align: center
 
 **3. Digitizing**
@@ -134,7 +134,7 @@ Let’s enter edit mode for the *gedung_campus* layer:
 - :guilabel:`Select` **gedung_campus** in the Layer list.
 - Click on the :guilabel:`Toggle Editing` button:
 
-.. image:: /static/training/beginner/qgis-inasafe/image182.*
+.. image:: /static/training/beginner/qgis-inasafe/image35.*
    :align: center
 
 - If you can’t find this button, check that the Digitizing toolbar is
@@ -143,7 +143,7 @@ Let’s enter edit mode for the *gedung_campus* layer:
   :menuselection:`View ‣ Toolbars ‣ Digitizing` menu entry.
 - Once you are in edit mode, the digitizing tools will become active:
 
-.. image:: /static/training/beginner/qgis-inasafe/image183.*
+.. image:: /static/training/beginner/qgis-inasafe/image181.*
    :align: center
 
 From left to right on the image above, they are:
@@ -166,7 +166,7 @@ We want to add a new feature.
 
 - Click on the :guilabel:`Add Feature` button to start digitizing:
 
-.. image:: /static/training/beginner/qgis-inasafe/image184.*
+.. image:: /static/training/beginner/qgis-inasafe/image182.*
    :align: center
 
 - You’ll notice that your mouse cursor becomes a crosshair. This allows you
@@ -177,7 +177,7 @@ We want to add a new feature.
 
 The first feature you’ll digitize is GPS field:
 
-.. image:: /static/training/beginner/qgis-inasafe/image185.*
+.. image:: /static/training/beginner/qgis-inasafe/image183.*
    :align: center
 
 - Start by clicking on a point somewhere along the edge of the field.
@@ -188,7 +188,7 @@ The first feature you’ll digitize is GPS field:
   This will finalize the feature and show you the Attributes dialog.
 - Fill in the values as shown here:
 
-.. image:: /static/training/beginner/qgis-inasafe/image186.*
+.. image:: /static/training/beginner/qgis-inasafe/image184.*
    :align: center
 
 - Click :guilabel:`OK`. You’ve created a new feature!
@@ -199,17 +199,17 @@ The first feature you’ll digitize is GPS field:
 
 - Select the feature with the Select :guilabel:`Single Feature` tool:
 
-.. image:: /static/training/beginner/qgis-inasafe/image187.*
+.. image:: /static/training/beginner/qgis-inasafe/image185.*
    :align: center
 
 Then use one of these tools to edit the feature:
 
 +----------------------------------------------------------------+--------------------------------------+-------------------------------------------------------+
-|.. image:: /static/training/beginner/qgis-inasafe/image188.*    | Move feature(s) tools                | Move the entire feature(s)                            |
+|.. image:: /static/training/beginner/qgis-inasafe/image186.*    | Move feature(s) tools                | Move the entire feature(s)                            |
 +----------------------------------------------------------------+--------------------------------------+-------------------------------------------------------+
-|.. image:: /static/training/beginner/qgis-inasafe/image189.*    | Node tools                           | move only one point where you may have misclicked     |
+|.. image:: /static/training/beginner/qgis-inasafe/image187.*    | Node tools                           | move only one point where you may have misclicked     |
 +----------------------------------------------------------------+--------------------------------------+-------------------------------------------------------+
-|.. image:: /static/training/beginner/qgis-inasafe/image190.*    | Delete selected                      | get rid of the feature entirely so you can try again  |
+|.. image:: /static/training/beginner/qgis-inasafe/image188.*    | Delete selected                      | get rid of the feature entirely so you can try again  |
 +----------------------------------------------------------------+--------------------------------------+-------------------------------------------------------+
 | Edit > Undo or Ctrl + Z on keyboard                            | Undo mistakes                        |                                                       |
 +----------------------------------------------------------------+--------------------------------------+-------------------------------------------------------+
@@ -218,7 +218,7 @@ Now try it on your own:
 
 - Digitize the school itself and the upper field. Use this image to assist you:
 
-.. image:: /static/training/beginner/qgis-inasafe/image191.*
+.. image:: /static/training/beginner/qgis-inasafe/image189.*
    :align: center
 
 - Remember that each new feature needs to have a unique id value!
@@ -228,12 +228,12 @@ to that layer.
 
 - Click on the :guilabel:`Toggle Editing` button.
 
-.. image:: /static/training/beginner/qgis-inasafe/image192.*
+.. image:: /static/training/beginner/qgis-inasafe/image35.*
    :align: center
 
 - You will be asked to save your edits.  Click :guilabel:`Save`
 
-.. image:: /static/training/beginner/qgis-inasafe/image193.*
+.. image:: /static/training/beginner/qgis-inasafe/image190.*
    :align: center
 
 .. note:: Now you know how to create polygon features!  Creating points and
@@ -268,25 +268,25 @@ Now we will learn how to georeference an image in QGIS so that is correctly
 located on Earth.  We will be using a map provided in the tutorial files,
 which looks like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image194.*
+.. image:: /static/training/beginner/qgis-inasafe/image191.*
    :align: center
 
 - Start a new QGIS project.  Save your previous work if you like.
 - Go to :menuselection:`Raster ‣ Georeferencer ‣ Georeferencer`.
 
-.. image:: /static/training/beginner/qgis-inasafe/image195.*
+.. image:: /static/training/beginner/qgis-inasafe/image192.*
    :align: center
 
 - Click the :guilabel:`Open raster` button.
 
-.. image:: /static/training/beginner/qgis-inasafe/image196.*
+.. image:: /static/training/beginner/qgis-inasafe/image193.*
    :align: center
 
 - Find the *file peta_krb_merapi_2002.jpg*, which is located in the the folder
   :file:`../qgis/Sleman/Merapi`.  Click :guilabel:`Open`
 - Select :guilabel:`WGS 84` when prompted and click :guilabel:`OK`.
 
-.. image:: /static/training/beginner/qgis-inasafe/image197.*
+.. image:: /static/training/beginner/qgis-inasafe/image194.*
    :align: center
 
 In order to georeference this image, we need to associate points on the
@@ -299,12 +299,12 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
 - :guilabel:`Zoom in` to the upper-left corner of the map by using the zoom
   button.
 
-.. image:: /static/training/beginner/qgis-inasafe/image198.*
+.. image:: /static/training/beginner/qgis-inasafe/image195.*
    :align: center
 
 - Click the :guilabel:`Add point` button.
 
-.. image:: /static/training/beginner/qgis-inasafe/image199.*
+.. image:: /static/training/beginner/qgis-inasafe/image196.*
    :align: center
 
 - :guilabel:`Click on` the very top left point of the map, right where the
@@ -315,7 +315,7 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
   is 7° 29’ 47” S.  We can enter the coordinates in the box as follows.
   Remember that south and west coordinates will be negative numbers.
 
-.. image:: /static/training/beginner/qgis-inasafe/image200.*
+.. image:: /static/training/beginner/qgis-inasafe/image197.*
    :align: center
 
 - Click :guilabel:`OK`
@@ -326,35 +326,41 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
   written at each corner.  When you are finished, you should have four GCPs
   and your table will look like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image201.*
+.. image:: /static/training/beginner/qgis-inasafe/image198.*
    :align: center
 
 - Lastly we will adjust the settings and then create our output file.
 - Click on the :guilabel:`Transformation settings` button.
 
-.. image:: /static/training/beginner/qgis-inasafe/image202.*
+.. image:: /static/training/beginner/qgis-inasafe/image199.*
    :align: center
 
 - Next to :guilabel:`Transformation type` select :guilabel:`Linear`
 - Provide a filename for the output raster.  The file type will be **.tif**
 - Check the box next to **Load in QGIS when done**. It should look like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image203.*
+.. image:: /static/training/beginner/qgis-inasafe/image200.*
+   :align: center
+  
+- Click :guilabel:`OK`.  
+- Then look at the table.
+
+.. image:: /static/training/beginner/qgis-inasafe/image201.*
    :align: center
 
-- Click :guilabel:`OK`
+- Make sure the residual value is near zero to improve accuracy.
 - Now we are ready to produce the georeferenced image file.  Click on the
   :guilabel:`Start georeferencing` button.
 
-.. image:: /static/training/beginner/qgis-inasafe/image204.*
+.. image:: /static/training/beginner/qgis-inasafe/image202.*
    :align: center
 
 - If you are asked to select the layer’s coordinate system,
   :guilabel:`choose` **WGS 84**.
-- Go to :menuselection:`Settings ‣ Project Properties` and make sure
+- Go to :menuselection:`Project ‣ Project Properties` and make sure
   that on the fly transformation is enabled.
 
-.. image:: /static/training/beginner/qgis-inasafe/image205.*
+.. image:: /static/training/beginner/qgis-inasafe/image203.*
    :align: center
 
 - The output **.tif** file will be created and automatically added to your
@@ -362,14 +368,14 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
   bottom of QGIS which are close the the coordinates you entered when placing
   the GCPs.
 
-.. image:: /static/training/beginner/qgis-inasafe/image206.*
+.. image:: /static/training/beginner/qgis-inasafe/image204.*
    :align: center
 
 - Another way to see that the image is correctly placed is by adding a layer
   with the OpenLayers plugin.  Here we have added Bing satellite imagery,
   and made our new geotiff transparent to see Merapi in the background.
 
-.. image:: /static/training/beginner/qgis-inasafe/image207.*
+.. image:: /static/training/beginner/qgis-inasafe/image205.*
    :align: center
 
 Knowing how to georeference is important when you want to digitize from a

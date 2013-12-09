@@ -1,4 +1,4 @@
-.. image:: /static/training/beginner/qgis-inasafe/image6.*
+.. image:: /static/training/beginner/qgis-inasafe/image7.*
 
 Module 13: Getting Support
 ==========================
@@ -17,7 +17,7 @@ Facebook.  You can join the Facebook group **Forum Pengguna QGIS dan InaSAFE
 Indonesia** to discuss the experiences or difficulties you have using QGIS and
 InaSAFE.
 
-.. image:: /static/training/beginner/qgis-inasafe/image287.*
+.. image:: /static/training/beginner/qgis-inasafe/image299.*
    :align: center
 
 **2. QGIS Tutorials**

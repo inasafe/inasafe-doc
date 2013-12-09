@@ -1,4 +1,4 @@
-.. image:: /static/training/beginner/qgis-inasafe/image6.*
+.. image:: /static/training/beginner/qgis-inasafe/image7.*
 
 Module 5: Map Projection Basics
 ===============================
@@ -24,14 +24,14 @@ data. But there’s a problem, as we will see.
 - Open the project :file:`world.qgs`, located in the :file:`qgis/ folder`
 - Zoom in to Indonesia by using the Zoom In tool.
 
-.. image:: /static/training/beginner/qgis-inasafe/image54.*
+.. image:: /static/training/beginner/qgis-inasafe/image37.*
    :align: center
 
 - Setting the scale in the Scale field, which is in the Status Bar along the
   bottom of the screen. While over Indonesia, set this value to 1:20000000 (one
   to twenty million).
 
-.. image:: /static/training/beginner/qgis-inasafe/image55.*
+.. image:: /static/training/beginner/qgis-inasafe/image60.*
    :align: center
 
 - Now pan around the map while keeping an eye on the Scale field.
@@ -71,19 +71,19 @@ the data.  The term that we use for this is reprojecting “on the fly.”
 - To enable “on the fly” projection, click on the :guilabel:`CRS Status` button
   in the Status Bar along the bottom of the QGIS window:
 
-.. image:: /static/training/beginner/qgis-inasafe/image56.*
+.. image:: /static/training/beginner/qgis-inasafe/image61.*
    :align: center
 
 - In the dialog that appears, check the box next to
   :guilabel:`Enable ‘on the fly’ CRS transformation`.
 
-.. image:: /static/training/beginner/qgis-inasafe/image57.*
+.. image:: /static/training/beginner/qgis-inasafe/image62.*
    :align: center
 
 - Type the word global into the Filter field. One CRS (NSIDC EASE-Grid Global)
   will appear in the list below.
 
-.. image:: /static/training/beginner/qgis-inasafe/image58.*
+.. image:: /static/training/beginner/qgis-inasafe/image63.*
    :align: center
 
 - Click on it to select it, then click :guilabel:`OK`.
@@ -125,7 +125,7 @@ correct this:
 Now, because they’re made to project in the same CRS, the two datasets fit
 perfectly:
 
-.. image:: /static/training/beginner/qgis-inasafe/image59.*
+.. image:: /static/training/beginner/qgis-inasafe/image64.*
    :align: center
 
 When combining data from different sources, it’s important to remember that they
@@ -155,12 +155,12 @@ projection.
 - Check the box next to :guilabel:`Add saved file to map`.
 - The **Save vector layer as...** dialog now looks like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image60.*
+.. image:: /static/training/beginner/qgis-inasafe/image65.*
    :align: center
 
 - Click :guilabel:`OK` and after a minute, you should be presented with:
 
-.. image:: /static/training/beginner/qgis-inasafe/image61.*
+.. image:: /static/training/beginner/qgis-inasafe/image66.*
    :align: center
 
 - Click :guilabel:`OK`.
@@ -179,7 +179,7 @@ can even create your own projections.  Let’s see how this works.
 - Load the vector layer :file:`oceans.shp` located in :file:`qgis/peta_dunia/`.
 - Go to :menuselection:`Settings ‣ Custom CRS...` and you’ll see this dialog:
 
-.. image:: /static/training/beginner/qgis-inasafe/image62.*
+.. image:: /static/training/beginner/qgis-inasafe/image67.*
    :align: center
 
 - We will create a projection known as Van der Grinten I.  This interesting
@@ -190,28 +190,24 @@ can even create your own projections.  Let’s see how this works.
 
 +proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +a=6371000 +b=6371000 +units=m +no_defs
 
-.. image:: /static/training/beginner/qgis-inasafe/image63.*
-   :align: center
-
-- Click the :guilabel:`Save` button:
-
-.. image:: /static/training/beginner/qgis-inasafe/image64.*
+.. image:: /static/training/beginner/qgis-inasafe/image68.*
    :align: center
 
 - Click :guilabel:`OK`.
+- Go to :menuselection:`Project → Project Properties`.
 - Enable “on the fly” reprojection.
 
-.. image:: /static/training/beginner/qgis-inasafe/image65.*
+.. image:: /static/training/beginner/qgis-inasafe/image69.*
    :align: center
 
 - Search for your newly defined projection by typing it into the Filter box:
 
-.. image:: /static/training/beginner/qgis-inasafe/image66.*
+.. image:: /static/training/beginner/qgis-inasafe/image70.*
    :align: center
 
 - You should see it appear in the box at the bottom.  Select it, and click
   :guilabel:`OK`.
 - Once you’ve applied the new projection, the map will be reprojected like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image67.*
+.. image:: /static/training/beginner/qgis-inasafe/image71.*
    :align: center

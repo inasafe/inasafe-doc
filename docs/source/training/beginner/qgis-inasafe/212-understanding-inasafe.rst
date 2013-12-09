@@ -1,4 +1,4 @@
-.. image:: /static/training/beginner/qgis-inasafe/image6.*
+.. image:: /static/training/beginner/qgis-inasafe/image7.*
 
 Module 12: Understanding InaSAFE
 ================================
@@ -66,19 +66,20 @@ and exposure.  What comes out is impact.
 **2. The InaSAFE Interface**
 
 Before we run any scenarios, let’s take a closer look at the InaSAFE interface.
-Open a new project in QGIS.
+Make sure you’ve installed InaSAFE plugins (see Module 4 for reference if 
+you forgot how to do it) Open a new project in QGIS.
 
 - If the InaSAFE toolbar is not visible, :guilabel:`right-click` on the
   **toolbars** and make sure that :guilabel:`Plugins` is checked.  The
   toolbar looks like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image270.*
+.. image:: /static/training/beginner/qgis-inasafe/image278.*
    :align: center
 
 - To show the InaSAFE panel, click on the button named
   :guilabel:`Toggle InaSAFE dock`.
 
-.. image:: /static/training/beginner/qgis-inasafe/image271.*
+.. image:: /static/training/beginner/qgis-inasafe/image279.*
    :align: center
 
 .. note:: That just like QGIS toolbars, you can drag and drop the InaSAFE dock
@@ -86,7 +87,7 @@ Open a new project in QGIS.
    a separate window, or place it below the Layers list.  It’s quite convenient
    in its location on the right side of QGIS, so we will leave it there.
 
-.. image:: /static/training/beginner/qgis-inasafe/image272.*
+.. image:: /static/training/beginner/qgis-inasafe/image280.*
    :align: center
 
 The InaSAFE panel consists of three parts: Questions, Results and Buttons.  The
@@ -123,7 +124,7 @@ earthquake in Lembang.
 
 - Click the :guilabel:`Add Raster Layer` button.
 
-.. image:: /static/training/beginner/qgis-inasafe/image273.*
+.. image:: /static/training/beginner/qgis-inasafe/image281.*
    :align: center
 
 - Navigate to the :file:`../qgis/Bandung` folder and add
@@ -131,7 +132,13 @@ earthquake in Lembang.
   format) which represents the magnitude of the earthquake. The layer will
   look like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image274.*
+.. image:: /static/training/beginner/qgis-inasafe/image282.*
+   :align: center
+
+Try to change the layer band into Singleband Pseudocolor until the layer 
+look like this image below (refer to Modul 8, if you forgot how to do it!):
+
+.. image:: /static/training/beginner/qgis-inasafe/image283.*
    :align: center
 
 You will notice that the hazard dropdown box has been automatically filled in
@@ -152,13 +159,13 @@ obtained from OpenStreetMap.
 
 - Click on the :guilabel:`Add Vector Layer` button.
 
-.. image:: /static/training/beginner/qgis-inasafe/image275.*
+.. image:: /static/training/beginner/qgis-inasafe/image284.*
    :align: center
 
 - Add the file Bangunan_Bandung.shp, which is located
   in the qgis/Bandung folder.
 
-.. image:: /static/training/beginner/qgis-inasafe/image276.*
+.. image:: /static/training/beginner/qgis-inasafe/image285.*
    :align: center
 
 - Notice that unlike the hazard layer, it does not appear automatically in
@@ -173,26 +180,31 @@ take a look at the keywords that have already been created on the hazard layer.
 - :guilabel:`Select` the **earthquake** layer in the Layers list, and click on
   the :guilabel:`InaSAFE Keyword Editor` button.
 
-.. image:: /static/training/beginner/qgis-inasafe/image277.*
+.. image:: /static/training/beginner/qgis-inasafe/image286.*
    :align: center
 
 - You can see that this layer has already been assigned some keyword information
   for InaSAFE, including its title, a category, and a subcategory.
 
-.. image:: /static/training/beginner/qgis-inasafe/image278.*
+.. image:: /static/training/beginner/qgis-inasafe/image287.*
    :align: center
 
 - Click :guilabel:`OK`, and now :guilabel:`select` the **Bangunan_Bandung**
   layer and open the keyword editor.
 
-.. image:: /static/training/beginner/qgis-inasafe/image279.*
+.. image:: /static/training/beginner/qgis-inasafe/image288.*
    :align: center
 
 - You’ll notice that title and category are set, but not the subcategory!
 - Change this to :guilabel:`structure`, and then click :guilabel:`OK`.
 - Notice that the layer now appears in the InaSAFE dock panel.
 
-.. image:: /static/training/beginner/qgis-inasafe/image280.*
+.. image:: /static/training/beginner/qgis-inasafe/image289.*
+   :align: center
+
+- Click :guialbel:`Run` to calculate impact analysis and wait for a moment
+
+.. image:: /static/training/beginner/qgis-inasafe/image290.*
    :align: center
 
 **6. Impact Analysis**
@@ -216,10 +228,7 @@ layer will “be affected.”
   the result of the analysis.  The map will distinguish between buildings
   that are affected and those that are not.
 
-.. image:: /static/training/beginner/qgis-inasafe/image281.*
-   :align: center
-
-.. image:: /static/training/beginner/qgis-inasafe/image282.*
+.. image:: /static/training/beginner/qgis-inasafe/image291.*
    :align: center
 
 **7. Improve the InaSAFE Output Map**
@@ -235,19 +244,44 @@ Let’s add Bing aerial imagery as a background for our map.
   correctly above the imagery, :guilabel:`right-click` on the layer and select
   :guilabel:`Update drawing order`.
 
-.. image:: /static/training/beginner/qgis-inasafe/image283.*
+.. image:: /static/training/beginner/qgis-inasafe/image292.*
    :align: center
 
 **8.  Using the Print Button**
 
 The data displayed on the screen can be saved to a PDF file by clicking Print at
-the bottom of the InaSAFE panel.  As we’ve seen already, two files will be
-created, one containing the map and another the data.  Note that you can adjust
-the print out of your map by adding layers and changing symbology, and also by
-zooming to areas of your choosing.
+the bottom of the InaSAFE panel.
 
-.. image:: /static/training/beginner/qgis-inasafe/image284.*
+- Klik on InaSAFE result layer, then click :guilabel:`Print`
+- A window will show up, you can choose the extent that you want to be printed.
+  
+  1. *Analysis extent* if you want to print all the analysis result
+  2. *Current extent* if you want to print analysis result based on QGIS 
+     map canvas
+
+- You also can pick the template (basic or InaSAFE). If you have QGIS 
+  composer template file (.qpt format), you also can use it. For now, 
+  let’s choose Basic.
+
+.. image:: /static/training/beginner/qgis-inasafe/image293.*
    :align: center
+
+- If you want to add additional information on your layout before it will 
+  be printed, you can click :guilabel:`Open Composer`. If you want to save 
+  it in PDF format to print it, click :guilabel:`Open PDF`
+- Choose your save location and click :guilabel:`Save`.
+
+
+.. image:: /static/training/beginner/qgis-inasafe/image294.*
+   :align: center
+
+.. image:: /static/training/beginner/qgis-inasafe/image295.*
+   :align: center
+
+.. image:: /static/training/beginner/qgis-inasafe/image296.*
+   :align: center
+
+
 
 **9. Save Your Results**
 
@@ -265,11 +299,11 @@ To save the project:
 
 - Click on the :guilabel:`Save Project` button at the top of QGIS.
 
-.. image:: /static/training/beginner/qgis-inasafe/image285.*
+.. image:: /static/training/beginner/qgis-inasafe/image297.*
    :align: center
 
 - Give a name to the project and put it in the directory you want to save your
   work. Then click :guilabel:`Save`.
 
-.. image:: /static/training/beginner/qgis-inasafe/image286.*
+.. image:: /static/training/beginner/qgis-inasafe/image298.*
    :align: center
