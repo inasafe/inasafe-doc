@@ -1,4 +1,4 @@
-.. image:: /static/training/beginner/qgis-inasafe/image6.*
+.. image:: /static/training/beginner/qgis-inasafe/image7.*
 
 Module 7: Labels and Classification
 ===================================
@@ -31,12 +31,12 @@ opening the QGIS project :file:`sleman_2_6.qgs`.
   the layers list and clicking on the :guilabel:`Open Attribute Table` button
   (you can also right-click on the layer and select Open Attribute Table).
 
-.. image:: /static/training/beginner/qgis-inasafe/image114.*
+.. image:: /static/training/beginner/qgis-inasafe/image40.*
    :align: center
 
 - Which field would be the most useful to use as a label?
 
-.. image:: /static/training/beginner/qgis-inasafe/image115.*
+.. image:: /static/training/beginner/qgis-inasafe/image117.*
    :align: center
 
 You now know how to use the attribute table to see what is actually in the data
@@ -66,33 +66,33 @@ ensure that it has been activated.
 - Ensure that the Label item has a checkmark next to it. If it doesn’t, click on
   the Label item, and it will be activated.  The Label toolbar looks like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image116.*
+.. image:: /static/training/beginner/qgis-inasafe/image118.*
    :align: center
 
 - Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers list, so that it
   is highlighted.
 - Click on the :guilabel:`Labelling` button:
 
-.. image:: /static/training/beginner/qgis-inasafe/image117.*
+.. image:: /static/training/beginner/qgis-inasafe/image119.*
    :align: center
 
 This gives you the Layer labeling settings dialog.
 
 - Check the box next to :guilabel:`Label this layer with...`
 
-.. image:: /static/training/beginner/qgis-inasafe/image118.*
+.. image:: /static/training/beginner/qgis-inasafe/image120.*
    :align: center
 
 - We must indicate which of the attribute fields we want to use for the labels.
   The **NAME** field is the mostly likely candidate for a label, so let’s select
   NAME from the list:
 
-.. image:: /static/training/beginner/qgis-inasafe/image119.*
+.. image:: /static/training/beginner/qgis-inasafe/image121.*
    :align: center
 
 - Click :guilabel:`OK`.  The map should now have labels like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image120.*
+.. image:: /static/training/beginner/qgis-inasafe/image122.*
    :align: center
 
 What we have so far is good, but as you can see, the labels are overlapping the
@@ -100,53 +100,37 @@ points that they are associated with. That doesn’t look very nice. The text is
 also a bit larger than it needs to be. Let’s fix these problems!
 
 - Open the :guilabel:`Label tool` again by clicking on its button as before.
-- Click on the :guilabel:`ellipsis (...)` button to change the text properties:
-
-.. image:: /static/training/beginner/qgis-inasafe/image121.*
-   :align: center
-
-A standard text change dialog appears, similar to those in many other programs.
-Change the font to *Arial size 9*. Your labels will now look like this:
-
-.. image:: /static/training/beginner/qgis-inasafe/image122.*
-   :align: center
-
-That’s the font problem solved! Now let’s look at the problem of the labels
-overlapping the points, but before we do that, let’s take a look at the Buffer
-option.
-
-- Open the :guilabel:`Label tool` dialog.
-- Deactivate the label buffer by clicking on the checkbox next to the text that
-  says :guilabel:`Buffer`.
+- Click on the :guilabel:`Text` tab button to change the text properties:
 
 .. image:: /static/training/beginner/qgis-inasafe/image123.*
    :align: center
 
-- Click :guilabel:`Apply`.
-
-Note the effects in the map:
+- A standard text change dialog appears, similar to those in many other
+  programs. Change the font to *Arial size 9*. 
+- Now click on :guilabel:`Buffer` tab to add buffer on the text. Check 
+  box labelled :guilabel:`Draw text buffer`
 
 .. image:: /static/training/beginner/qgis-inasafe/image124.*
    :align: center
 
-Now you can see why we usually need label buffers!
-
-- Reactivate the buffers by clicking in the same checkbox as before,
-  and then clicking Apply.
-
-Back to the problem of the labels that overlap points.
-
-- In the Label tool dialog, go to the :guilabel:`Advanced` tab.
+- Your labels will look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image125.*
    :align: center
+
+Now you can see why we usually need label buffers!
+
+That’s the font problem solved! Now let’s look at the problem of the labels
+overlapping the points.
+
+- In the Label tool dialog, go to the :guilabel:`Distance` tab.
 
 - Change the value of *Label distance to 2*.
 
 .. image:: /static/training/beginner/qgis-inasafe/image126.*
    :align: center
 
-- Click :guilabel:`Apply`. The labels no longer hover over the icons,
+- Click :guilabel:`OK`. The labels no longer hover over the icons,
   but are “buffered” a short distance away:
 
 .. image:: /static/training/beginner/qgis-inasafe/image127.*

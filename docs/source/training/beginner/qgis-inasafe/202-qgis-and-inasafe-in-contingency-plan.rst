@@ -1,4 +1,4 @@
-.. image:: /static/training/beginner/qgis-inasafe/image6.*
+.. image:: /static/training/beginner/qgis-inasafe/image7.*
 
 Module 2: QGIS and InaSAFE in Contingency Plan
 ==============================================
@@ -79,7 +79,7 @@ disaster and create a list of actions needed to be taken when a disaster occurs.
 QGIS and InaSAFE can also help to determine the location of ideal places of
 refuge, evacuation routes, areas likely to be damaged, and more.
 
-.. image:: /static/training/beginner/qgis-inasafe/image7.*
+.. image:: /static/training/beginner/qgis-inasafe/image8.*
    :align: center
 
 InaSAFE provides overviews of potential disaster scenarios, of their outcomes,

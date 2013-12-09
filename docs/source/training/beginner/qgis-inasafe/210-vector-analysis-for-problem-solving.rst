@@ -1,4 +1,4 @@
-.. image:: /static/training/beginner/qgis-inasafe/image6.*
+.. image:: /static/training/beginner/qgis-inasafe/image7.*
 
 Module 10: Vector Analysis for Problem Solving
 ==============================================
@@ -72,14 +72,14 @@ So now that we know what we want to do, let’s start doing it!
 
 - Start a new QGIS project.
 
-.. image:: /static/training/beginner/qgis-inasafe/image208.*
+.. image:: /static/training/beginner/qgis-inasafe/image206.*
    :align: center
 
 - Start adding the layers we will use.  In the :file:`../Sleman/Merapi` folder,
   add the layers **jalan_sleman_49S**,  **tempat_penting_Sleman_49S**,
   **KRB3_49S** and **vegetasi_49S**.  Your Layers list should look like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image209.*
+.. image:: /static/training/beginner/qgis-inasafe/image207.*
    :align: center
 
 .. note::  Most of the layers are pretty self-explanatory, but what are KRB3,
@@ -114,14 +114,18 @@ and it must be in one of three areas.  So let’s tell QGIS to only show us the
 farms and dry fields that are, in fact, in these sub-districts!
 
 - :guilabel:`Right-click` on the **vegetasi** layer in the Layers list.
-- :guilabel:`Select` the option **Query**.... This opens the Query Builder
-  dialog.
+- :guilabel:`Select` the option :guilabel:`Filter...` This opens the 
+  Query Builder dialog.
+
+.. image:: /static/training/beginner/qgis-inasafe/image208.*
+   :align: center
+
 - :guilabel:`Scroll down` in the Fields list on the left of this dialog until
   you see the field **kec**.
 - Click on it once.
 - Click the :guilabel:`All` button underneath the Values list:
 
-.. image:: /static/training/beginner/qgis-inasafe/image210.*
+.. image:: /static/training/beginner/qgis-inasafe/image209.*
    :align: center
 
 We are going to build a query.  A query is a statement that allows us to show
@@ -132,7 +136,7 @@ Ngemplak, Turi, or Pakem.
 - :guilabel:`Double-click` the word kec in the **Fields list**.
 - :guilabel:`Click` the = button (under Operators).
 
-.. image:: /static/training/beginner/qgis-inasafe/image211.*
+.. image:: /static/training/beginner/qgis-inasafe/image210.*
    :align: center
 
 - :guilabel:`Double-click` the value Ngemplak in the Values list.
@@ -140,7 +144,7 @@ Ngemplak, Turi, or Pakem.
 - Repeat these steps twice more, using the values Turi and Pakem
   instead of Ngemplak. The query should look like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image212.*
+.. image:: /static/training/beginner/qgis-inasafe/image211.*
    :align: center
 
 - Click :guilabel:`AND`.
@@ -152,7 +156,7 @@ Ngemplak, Turi, or Pakem.
 - Repeat the previous step but instead of KEBUN use TEGALAN.
   Your query should look like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image213.*
+.. image:: /static/training/beginner/qgis-inasafe/image212.*
    :align: center
 
 - The idea is that query will filter the data layer so that it will only show us
@@ -162,12 +166,12 @@ Ngemplak, Turi, or Pakem.
   Without these, our query won’t work quite right.
   We need to add two pair of parentheses on each side of the word AND, like so:
 
-.. image:: /static/training/beginner/qgis-inasafe/image214.*
+.. image:: /static/training/beginner/qgis-inasafe/image213.*
    :align: center
 
 - Click :guilabel:`OK`. Our **vegetasi** layer has far fewer features now.
 
-.. image:: /static/training/beginner/qgis-inasafe/image215.*
+.. image:: /static/training/beginner/qgis-inasafe/image214.*
    :align: center
 
 .. note:: Well done!  We’ve applied our first criteria to begin solving the
@@ -180,6 +184,10 @@ zone, which is defined by the layer **KRB III**.  For this we can use the Spatia
 Query tool.
 
 - Go to :menuselection:`Vector ‣ Spatial Query ‣ Spatial Query`.
+
+.. image:: /static/training/beginner/qgis-inasafe/image215.*
+   :align: center
+
 - Under :guilabel:`Select source features from` choose **vegetasi**.
   In the next box choose :guilabel:`Is disjoint`  The third box should be set
   to **KRB III**.  The Spatial Query window should look like this:
@@ -190,29 +198,40 @@ Query tool.
 - Click :guilabel:`Apply`  Then click :guilabel:`Close`
   once the selection has been applied.
 
+.. image:: /static/training/beginner/qgis-inasafe/image217.*
+   :align: center
+
 Now the vegetasi layer looks like the image below.  Notice that all the features
 have been selected that fall outside the KRB III area.
 
-.. image:: /static/training/beginner/qgis-inasafe/image217.*
+.. image:: /static/training/beginner/qgis-inasafe/image218.*
    :align: center
 
 The next steps of our analysis will be easier if we save this selection as a
 separate layer.
 
 - :guilabel:`Right-click` on the **vegetasi layer** and
-  click :guilabel:`Save As`....
+  click :guilabel:`Save Selection As...`
+
+.. image:: /static/training/beginner/qgis-inasafe/image219.*
+   :align: center
+
 - Next to the Save as field in the dialog that appears,
   click the :guilabel:`Browse` button.
 - :guilabel:`Save` the layer under **evakuasi_bencana**, as kebun_tegalan.shp
 - :guilabel:`Check` the Add saved file to map box in the
   **Save vector layer as**... dialog.
+
+.. image:: /static/training/beginner/qgis-inasafe/image220.*
+   :align: center
+
 - Click :guilabel:`OK`. It will tell you that Export to vector file has been
   completed.
 - Click :guilabel:`OK`.
 - :guilabel:`Right-click` on the old vegetation layer and remove it.
   You should have these layers remaining:
 
-.. image:: /static/training/beginner/qgis-inasafe/image218.*
+.. image:: /static/training/beginner/qgis-inasafe/image221.*
    :align: center
 
 **7. Finding Important Roads**
@@ -233,7 +252,7 @@ meters of a major road.  Once again, we will use the Query Builder.
   type this command into the query box.  But be careful that you type it
   correctly!
 
-.. image:: /static/training/beginner/qgis-inasafe/image219.*
+.. image:: /static/training/beginner/qgis-inasafe/image222.*
    :align: center
 
 **8.  Looking for Health Facilities**
@@ -251,18 +270,22 @@ functionality to help us reach a solution.
 
 - Make sure that only the **jalan** and **kebun_tegalan** layers are visible,
   to simplify the map while you’re working.
-- Go to :menuselection:`Vector ‣ Geoprocessing Tools ‣ Buffer(s)`.
 
-.. image:: /static/training/beginner/qgis-inasafe/image220.*
+.. image:: /static/training/beginner/qgis-inasafe/image223.*
    :align: center
 
-- In the first dropdown box :guilabel:`choose` **jala**
+- Go to :menuselection:`Vector ‣ Geoprocessing Tools ‣ Buffer(s)`.
+
+.. image:: /static/training/beginner/qgis-inasafe/image224.*
+   :align: center
+
+- In the first dropdown box :guilabel:`choose` **jalan**
 - :guilabel:`Enter` “300” next to Buffer distance.
 - Check the box next to :guilabel:`Dissolve buffer results.`
 - Click :guilabel:`Browse` and type :kbd:`buffer_jalan_300m.shp` for the
   filename.
 
-.. image:: /static/training/beginner/qgis-inasafe/image221.*
+.. image:: /static/training/beginner/qgis-inasafe/image225.*
    :align: center
 
 .. note:: that we input the buffer distance in meters. Good thing we used
@@ -273,12 +296,12 @@ functionality to help us reach a solution.
 - When you are asked to add the new layer to the TOC, click :guilabel:`Yes`
   (“TOC” stands for “Table of Contents”, by which it means the Layers list)
 
-.. image:: /static/training/beginner/qgis-inasafe/image222.*
+.. image:: /static/training/beginner/qgis-inasafe/image226.*
    :align: center
 
 - :guilabel:`Close` the Buffer dialog and witness your new layer:
 
-.. image:: /static/training/beginner/qgis-inasafe/image223.*
+.. image:: /static/training/beginner/qgis-inasafe/image227.*
    :align: center
 
 .. note:: Interesting!  Those big fat lines are actually areas that are within
@@ -287,12 +310,13 @@ functionality to help us reach a solution.
 **10. Buffering Health Facilities**
 
 - Now try it yourself!  Using the same approach, create a new buffer layer
-  around your health facilities.  The buffer should be 2.5 km in radius,
-  and save the new layer in the same directory as
-  **buffer_fas_kesehatan_2.5km.shp**.  Your resulting map will
-  look something like this:
-
-.. image:: /static/training/beginner/qgis-inasafe/image224.*
+  around your health facilities.  The buffer should be 2.5 km in radius.
+- Don’t forget to check the box :gulabel:`Dissolve buffer results` so 
+  every overlapping buffer will become 1 feature. Then save the new layer in
+  the same directory as buffer_fas_kesehatan_2.5km.shp. Your resulting map 
+  will look something like this:
+  
+.. image:: /static/training/beginner/qgis-inasafe/image228.*
    :align: center
 
 .. note:: Remember that the buffer distance is in meters. Keep this in mind
@@ -305,11 +329,15 @@ health facility within 2.5 km.  But we only want the areas where both of these
 criteria are satisfied at once!  To do that we will use the Intersect tool.
 
 - Go to :menuselection:`Vector ‣ Geoprocessing Tools ‣ Intersect`.
+
+.. image:: /static/training/beginner/qgis-inasafe/image229.*
+   :align: center
+
 - :guilabel:`Enter` **buffer_fas_kesehatan_2.5km** and **buffer_jalan_300m**
   as the two input layers.
   Name the output shapefile :kbd:`intersect_buffer_jalan_kesehatan.shp`
 
-.. image:: /static/training/beginner/qgis-inasafe/image225.*
+.. image:: /static/training/beginner/qgis-inasafe/image230.*
    :align: center
 
 - Click :guilabel:`OK` and add the layer to the Layers list when prompted.
@@ -317,7 +345,7 @@ criteria are satisfied at once!  To do that we will use the Intersect tool.
   the areas where they intersect.  These are the areas where both of
   these criteria are satisfied.
 
-.. image:: /static/training/beginner/qgis-inasafe/image226.*
+.. image:: /static/training/beginner/qgis-inasafe/image231.*
    :align: center
 
 **12. Select Farms and Dry Fields**
@@ -328,14 +356,18 @@ criteria.  We need to know where they overlap!
 
 - Go to :menuselection:`Vector ‣ Research Tools ‣ Select by location`.
   A dialog will appear.
+
+.. image:: /static/training/beginner/qgis-inasafe/image232.*
+   :align: center
+
 - Set it up like this:
 
-.. image:: /static/training/beginner/qgis-inasafe/image227.*
+.. image:: /static/training/beginner/qgis-inasafe/image233.*
    :align: center
 
 - Click :guilabel:`OK` and you’ll see the results are selected (they are yellow)
 
-.. image:: /static/training/beginner/qgis-inasafe/image228.*
+.. image:: /static/training/beginner/qgis-inasafe/image234.*
    :align: center
 
 Let’s save this selection as a new layer.
@@ -343,10 +375,14 @@ Let’s save this selection as a new layer.
 - :guilabel:`Right-click` on the **kebun_tegalan layer** in the Layers list.
 - Select :guilabel:`Save Selection As`....
 - :guilabel:`Name` the new file :kbd:`kebun_tegalan_lokasi_terpilih.shp` and
-  check the box next to :guilabel:`Add saved file to map`.  If we hide all the
-  other layers, we can see the resulting layer:
+  check the box next to :guilabel:`Add saved file to map`.  
 
-.. image:: /static/training/beginner/qgis-inasafe/image229.*
+.. image:: /static/training/beginner/qgis-inasafe/image235.*
+   :align: center
+
+- If we hide all the other layers, we can see the resulting layer:
+
+.. image:: /static/training/beginner/qgis-inasafe/image236.*
    :align: center
 
 **13. Select Land Areas of the Appropriate Size**
@@ -361,54 +397,65 @@ possible locations are between 50000-150000 m².
   but let’s add another column that contains the size of the area in
   square meters.
 
-- :guilabel:`Select` the **kebun_tegalan_lokasi_terpilih** layer and
-  enter edit mode:
+- :guilabel:`Select` the **kebun_tegalan_lokasi_terpilih** layer and open 
+- attribute table:
 
-.. image:: /static/training/beginner/qgis-inasafe/image230.*
+.. image:: /static/training/beginner/qgis-inasafe/image237.*
+   :align: center
+
+- Enter editing mode by clicking this button:
+
+.. image:: /static/training/beginner/qgis-inasafe/image238.*
    :align: center
 
 - :guilabel:`Start the field calculator` (located in the Attribute Table window)
 
-.. image:: /static/training/beginner/qgis-inasafe/image231.*
+.. image:: /static/training/beginner/qgis-inasafe/image239.*
    :align: center
 
 - :guilabel:`Check the box` next to **Create a new field**.  In the box type
   “luas_m2.”
 
-.. image:: /static/training/beginner/qgis-inasafe/image232.*
+.. image:: /static/training/beginner/qgis-inasafe/image240.*
    :align: center
 
-- :guilabel:`Click on` **Geometry** and then :guilabel:`double-click` **$area**
+- Change Output field type as Decimal number (real), then click on 
+  :gulabel:`Geometry` and then double-click **$area**.
 
-.. image:: /static/training/beginner/qgis-inasafe/image233.*
+.. image:: /static/training/beginner/qgis-inasafe/image241.*
    :align: center
 
 - Click :guilabel:`OK`.
 - You should now see a new column on your attribute table, named :kbd:`luas_m2`.
   And QGIS has filled it in for us with square meters!
-- Click the edit mode button again, and save your edits.
 
-.. image:: /static/training/beginner/qgis-inasafe/image234.*
+.. image:: /static/training/beginner/qgis-inasafe/image242.*
    :align: center
 
-- Now we can just do a simple query.
+- Click the edit mode button again, and save your edits.
+
+.. image:: /static/training/beginner/qgis-inasafe/image243.*
+   :align: center
+
+- Close the attribute table. Now we can just do a simple query.
 - :guilabel:`Right-click` on the **kebun_tegalan_lokasi_terpilih** layer and
   click :guilabel:`Query`...
 - Enter the following:
 
 *"luas_m2" >= 50000 AND "luas_m2" <= 150000*
 
-.. image:: /static/training/beginner/qgis-inasafe/image235.*
+.. image:: /static/training/beginner/qgis-inasafe/image244.*
    :align: center
 
 - Click :guilabel:`OK`.
 
-.. image:: /static/training/beginner/qgis-inasafe/image236.*
+.. image:: /static/training/beginner/qgis-inasafe/image245.*
    :align: center
 
 That’s it!  We have eight pieces of land that meet ALL of our criteria.
 Any of these pieces of land might be suitable for a location to place refugees.
-
+Then you can right-click **kebun_tegalan_terpilih** layer and Save As 
+a new layer. Give the file name **refugees_location.shp**
 
  
 

@@ -1,4 +1,4 @@
-.. image:: /static/training/beginner/qgis-inasafe/image6.*
+.. image:: /static/training/beginner/qgis-inasafe/image7.*
 
 Module 8: Working with Raster Data
 ==================================
@@ -51,7 +51,7 @@ about rasters!
 - If you can’t see the raster layer, you may need to enable “on the fly”
   transformations.  To do so:
 
-  - Go to :menuselection:`Settings ‣ Project Properties...`
+  - Go to :menuselection:`Project ‣ Project Properties...`
   - :guilabel:`Enable “on the fly” reprojection`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image149.*
@@ -168,15 +168,12 @@ And render the image like this:
    :align: center
 
 - Open :guilabel:`Layer Properties` again.
-- Switch the *Color map* back to *Grayscale*.
-- Tell it to use *Custom min / max values*:
+- Switch the render type back to Singleband Gray (1)
+- Tell it to use Custom min / max values (2)
+- Under Contrast enhancement, set the value of Current to 
+  “Stretch To MinMax” (3)
 
 .. image:: /static/training/beginner/qgis-inasafe/image159.*
-   :align: center
-
-- Under Contrast enhancement, set the value of Current to *Stretch To MinMax*:
-
-.. image:: /static/training/beginner/qgis-inasafe/image160.*
    :align: center
 
 But what are the minimum and maximum values that should be used?  The ones
@@ -189,20 +186,20 @@ the raster.
 - Under Load min / max values from band, select :guilabel:`Estimate (faster)`.
 - Click the :guilabel:`Load` button:
 
-.. image:: /static/training/beginner/qgis-inasafe/image161.*
+.. image:: /static/training/beginner/qgis-inasafe/image160.*
    :align: center
 
 Notice how the Custom min / max values have changed.  The lowest pixel value
 in this image file is 0 and the highest is about 195.
 
-.. image:: /static/training/beginner/qgis-inasafe/image162.*
+.. image:: /static/training/beginner/qgis-inasafe/image161.*
    :align: center
 
 - Click :guilabel:`OK`.  You should see the values of the raster properly
   displayed, with the darker colors representing valleys and the lighter ones,
   mountains:
 
-.. image:: /static/training/beginner/qgis-inasafe/image163.*
+.. image:: /static/training/beginner/qgis-inasafe/image162.*
    :align: center
 
 We’ve learned to do this the tricky way, but can we do it faster?  Of
@@ -217,7 +214,7 @@ you’ll be glad to know that there’s a tool for doing all of this easily.
   :menuselection:`View ‣ Toolbars ‣ Raster`. These icons will appear in the
   interface:
 
-.. image:: /static/training/beginner/qgis-inasafe/image164.*
+.. image:: /static/training/beginner/qgis-inasafe/image163.*
    :align: center
 
 The button on the right will stretch the minimum and maximum values to give
@@ -250,6 +247,10 @@ analysis tool.
 
 - Click on the menu item
   :menuselection:`Raster ‣ Analysis ‣ DEM (Terrain models)`.
+
+.. image:: /static/training/beginner/qgis-inasafe/image164.*
+   :align: center
+
 - In the dialog that appears, ensure that the Input file is the **DEM** layer.
 - Set the Output file to :kbd:`hillshade.tif` in the directory
   :file:`qgis/Sleman/`.
@@ -294,7 +295,7 @@ being mostly transparent.
 .. image:: /static/training/beginner/qgis-inasafe/image168.*
    :align: center
 
-- Control rendering order(beneath the list) should be checked as well.
+- Control rendering order (beneath the list) should be checked as well.
 
 .. image:: /static/training/beginner/qgis-inasafe/image169.*
   :align: center
