@@ -44,7 +44,7 @@ images, labels, legends, and scalebars.
 - Let’s see how we can use Map Composer to adjust the layout and prepare
   this map for printing.
 - Go to :menuselection:`Project ‣ New Print Composer`. Then, give an unique
- title name for your layout, for example: **My Layout 1**. Click OK, then
+  title name for your layout, for example: **My Layout 1**. Click OK, then
   A new window will load that looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image247.*
@@ -62,7 +62,7 @@ change paper size, number of pages, and quality of output.
 .. figure:: /static/training/beginner/qgis-inasafe/image248.*
    :align: center
 
-Take a look at the icons across the top of the window.  We will use some 
+Take a look at the icons across the top of the window.  We will use some
 of these as we lay our map out, so here’s an overview of what they do:
 
    **Add New Map** will add a map element.  This is what we will use to add
@@ -140,7 +140,7 @@ of these as we lay our map out, so here’s an overview of what they do:
   (zoom level) of the map element changes.  A scale of about 200000 should
   be good for this project.
 
-- You also can add frame by clicking box next to :guilabl:`Frame`. 
+- You also can add frame by clicking box next to :guilabel:`Frame`.
   And you can configure the frame color and border thickness.
 
 .. image:: /static/training/beginner/qgis-inasafe/image259.*
@@ -231,21 +231,26 @@ of these as we lay our map out, so here’s an overview of what they do:
    :align: center
 
 Tips:
-1. Play around a little bit with coordinate format. You can change 
-   the coordinate format either with Decimal like we set on the example, 
-   or you can change it into Degree Minute format (DD MM) or Degree 
-   Minute Second (DD MM SS).
-2. Also you can play with coordinate placement. You can place inside frame 
-   or outside frame. And the orientation either vertical or horizontal.
-3. You also can change the font type and font size by clicking 
-  :guilabel:`Font` on the panel
+
+1. Play around a little bit with coordinate format.
+You can change the coordinate format either with Decimal like we set on the
+example, or you can change it into Degree Minute format (DD MM) or Degree
+Minute Second (DD MM SS).
+
+2. Also you can play with coordinate placement.
+You can place inside frame or outside frame.
+And the orientation either vertical or horizontal.
+
+3. You also can change the font type and font size by clicking
+:guilabel:`Font` on the panel
 
 
 **6. Overview Inset**
 
 - Next, let’s add an inset that gives views of our map a little more
-  information about what they are looking at.  Minimize the Print Composer and
-  go back into QGIS.
+  information about what they are looking at.
+  Minimize the Print Composer and go back into QGIS.
+
 - Add the layer **Indonesia.shp**, which is located in
   :file:`../qgis/peta_dunia`. Click :guilabel:`Zoom Full`.
 
@@ -265,7 +270,7 @@ Tips:
 
 - :guilabel:`Draw a small box` on the right side of your map layout.
 - The current view of your QGIS project will appear in the new map element
-  (but notice that the old map element doesn’t change!) Add a frame 
+  (but notice that the old map element doesn’t change!) Add a frame
   for the inset, so it will look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image271.*
@@ -286,7 +291,7 @@ symbology represents.
 - In the panel on the right, click on :guilabel:`Legend items`.
   Use the edit button to change the names on the legend.  Use the + an -
   buttons to add or remove items from the legend.  You may choose which elements
-  are important to include. 
+  are important to include.
 
 .. image:: /static/training/beginner/qgis-inasafe/image272.*
    :align: center

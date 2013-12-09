@@ -114,7 +114,7 @@ and it must be in one of three areas.  So let’s tell QGIS to only show us the
 farms and dry fields that are, in fact, in these sub-districts!
 
 - :guilabel:`Right-click` on the **vegetasi** layer in the Layers list.
-- :guilabel:`Select` the option :guilabel:`Filter...` This opens the 
+- :guilabel:`Select` the option :guilabel:`Filter...` This opens the
   Query Builder dialog.
 
 .. image:: /static/training/beginner/qgis-inasafe/image208.*
@@ -311,11 +311,11 @@ functionality to help us reach a solution.
 
 - Now try it yourself!  Using the same approach, create a new buffer layer
   around your health facilities.  The buffer should be 2.5 km in radius.
-- Don’t forget to check the box :gulabel:`Dissolve buffer results` so 
+- Don’t forget to check the box :guilabel:`Dissolve buffer results` so
   every overlapping buffer will become 1 feature. Then save the new layer in
-  the same directory as buffer_fas_kesehatan_2.5km.shp. Your resulting map 
+  the same directory as buffer_fas_kesehatan_2.5km.shp. Your resulting map
   will look something like this:
-  
+
 .. image:: /static/training/beginner/qgis-inasafe/image228.*
    :align: center
 
@@ -375,7 +375,7 @@ Let’s save this selection as a new layer.
 - :guilabel:`Right-click` on the **kebun_tegalan layer** in the Layers list.
 - Select :guilabel:`Save Selection As`....
 - :guilabel:`Name` the new file :kbd:`kebun_tegalan_lokasi_terpilih.shp` and
-  check the box next to :guilabel:`Add saved file to map`.  
+  check the box next to :guilabel:`Add saved file to map`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image235.*
    :align: center
@@ -397,7 +397,7 @@ possible locations are between 50000-150000 m².
   but let’s add another column that contains the size of the area in
   square meters.
 
-- :guilabel:`Select` the **kebun_tegalan_lokasi_terpilih** layer and open 
+- :guilabel:`Select` the **kebun_tegalan_lokasi_terpilih** layer and open
 - attribute table:
 
 .. image:: /static/training/beginner/qgis-inasafe/image237.*
@@ -419,8 +419,8 @@ possible locations are between 50000-150000 m².
 .. image:: /static/training/beginner/qgis-inasafe/image240.*
    :align: center
 
-- Change Output field type as Decimal number (real), then click on 
-  :gulabel:`Geometry` and then double-click **$area**.
+- Change Output field type as Decimal number (real), then click on
+  :guilabel:`Geometry` and then double-click **$area**.
 
 .. image:: /static/training/beginner/qgis-inasafe/image241.*
    :align: center
@@ -454,7 +454,7 @@ possible locations are between 50000-150000 m².
 
 That’s it!  We have eight pieces of land that meet ALL of our criteria.
 Any of these pieces of land might be suitable for a location to place refugees.
-Then you can right-click **kebun_tegalan_terpilih** layer and Save As 
+Then you can right-click **kebun_tegalan_terpilih** layer and Save As
 a new layer. Give the file name **refugees_location.shp**
 
  

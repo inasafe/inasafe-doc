@@ -293,42 +293,6 @@ ez_setup.py and save it somewhere familiar e.g. :samp:`c:\temp`.
    on `this page <http://pypi.python.org/pypi/setuptools#windows>`_, rather
    just download the ez_setup.py
 
-Continue on :ref:`run_pip_install`
-
-Special note for Win64 bit users
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If your Windows is 64bit, you need to do a little trick to install pip.
-There are two options for doing this:
-
-* Add the following line near the end of your command shell launcher (as
-  described in :ref:`windows_shell_launcher-label`):
-
-  :samp:`set PATH=c:\python27;%PATH%`
-
-* First you have to install python 32bit and add its path to PATH variable in
-  environment variable (on Windows 7: :menuselection:`System Properties -->
-  Advanced --> Environment Variables`).
-
-To verify that you have the correct version of python in your path launch a
-python shell and execute the command :command:`print sys.executable` - is
-should show :samp:`c:\python27\python.exe` as per
-the demo session below::
-
-    C:\Users\inasafe\.qgis2\python\plugins\inasafe>python
-    Python 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
-    on win32
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>> import sys
-    >>> print sys.executable
-    C:\Python27\python.exe
-    >>>
-
-.. note:: QGIS 2.0 should ship as a 64bit binary (including python), so the
-   above step should no longer be needed in future versions.
-
-.. _run_pip_install:
-
 For both 32 and 64 bit
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -363,14 +327,15 @@ If the installation goes successfully, you should see output like this::
    warning: no previously-included files matching '*.txt' found under directory 'docs\_build'
    no previously-included directories found matching 'docs\_build\_sources'
    Adding pip 1.1 to easy-install.pth file
-   Installing pip-script.py script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip.exe script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip.exe.manifest script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip-2.5-script.py script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip-2.5.exe script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip-2.5.exe.manifest script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
+   Installing pip-script.py script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip.exe script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip.exe.manifest script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip-2.5-script.py script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip-2.5.exe script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip-2.5.exe.manifest script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
 
-   Installed c:\progra~2\quantu~1\apps\python25\lib\site-packages\pip-1.1-py2.5.egg
+   Installed C:\PROGRA~2\QGISDU~1\apps\python25\lib\site-packages\pip-1.1-py2.5
+   .egg
    Processing dependencies for pip
    Finished processing dependencies for pip
 
@@ -433,7 +398,7 @@ Now alter the last line so that it launches pycharm instead of a shell as
 per this example below::
 
   @echo off
-  SET OSGEO4W_ROOT=C:\PROGRA~2\QUANTU~1
+  SET OSGEO4W_ROOT=C:\PROGRA~2\QGISDU~1
   call "%OSGEO4W_ROOT%"\bin\o4w_env.bat
   call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.2\etc\env.bat
   @echo off

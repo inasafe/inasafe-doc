@@ -66,7 +66,7 @@ and exposure.  What comes out is impact.
 **2. The InaSAFE Interface**
 
 Before we run any scenarios, let’s take a closer look at the InaSAFE interface.
-Make sure you’ve installed InaSAFE plugins (see Module 4 for reference if 
+Make sure you’ve installed InaSAFE plugins (see Module 4 for reference if
 you forgot how to do it) Open a new project in QGIS.
 
 - If the InaSAFE toolbar is not visible, :guilabel:`right-click` on the
@@ -135,7 +135,7 @@ earthquake in Lembang.
 .. image:: /static/training/beginner/qgis-inasafe/image282.*
    :align: center
 
-Try to change the layer band into Singleband Pseudocolor until the layer 
+Try to change the layer band into Singleband Pseudocolor until the layer
 look like this image below (refer to Modul 8, if you forgot how to do it!):
 
 .. image:: /static/training/beginner/qgis-inasafe/image283.*
@@ -202,7 +202,7 @@ take a look at the keywords that have already been created on the hazard layer.
 .. image:: /static/training/beginner/qgis-inasafe/image289.*
    :align: center
 
-- Click :guialbel:`Run` to calculate impact analysis and wait for a moment
+- Click :guilabel:`Run` to calculate impact analysis and wait for a moment
 
 .. image:: /static/training/beginner/qgis-inasafe/image290.*
    :align: center
@@ -210,23 +210,27 @@ take a look at the keywords that have already been created on the hazard layer.
 **6. Impact Analysis**
 
 Now our hazard and exposure data are set in the InaSAFE panel, because the
-appropriate keywords have been added to our layers.  Note that if we were to add
-a second exposure layer to our project, we would be able to choose which
-exposure layer we wanted from the InaSAFE dropdown menu.  The same applies to
-hazard layers.
+appropriate keywords have been added to our layers.
+Note that if we were to add a second exposure layer to our project,
+we would be able to choose which exposure layer we wanted from the InaSAFE
+dropdown menu.
+The same applies to hazard layers.
 
-The third dropdown box is the impact function (“Might”).  This concludes our
-question, and defines the function that InaSAFE will run behind the scenes.
+The third dropdown box is the impact function (“Might”).
+This concludes our question, and defines the function that InaSAFE will run
+behind the scenes.
 InaSAFE developers have written many of these functions to analyze all sorts of
-hazard and exposure layers.  The function that is selected for us here will
-process the hazard and exposure layers spatially to determine how the exposure
-layer will “be affected.”
+hazard and exposure layers.
+The function that is selected for us here will process the hazard and
+exposure layers spatially to determine how the exposure layer will “be
+affected.”
 
 - Click the :guilabel:`Run` button at the bottom to start the impact analysis.
   At the end of the process, the statistics will be displayed in the Results
   section, and a new layer will be added to the Layers list that describes
-  the result of the analysis.  The map will distinguish between buildings
-  that are affected and those that are not.
+  the result of the analysis.
+  The map will distinguish between buildings that are affected and those that
+  are not.
 
 .. image:: /static/training/beginner/qgis-inasafe/image291.*
    :align: center
@@ -254,20 +258,20 @@ the bottom of the InaSAFE panel.
 
 - Klik on InaSAFE result layer, then click :guilabel:`Print`
 - A window will show up, you can choose the extent that you want to be printed.
-  
+
   1. *Analysis extent* if you want to print all the analysis result
-  2. *Current extent* if you want to print analysis result based on QGIS 
+  2. *Current extent* if you want to print analysis result based on QGIS
      map canvas
 
-- You also can pick the template (basic or InaSAFE). If you have QGIS 
-  composer template file (.qpt format), you also can use it. For now, 
+- You also can pick the template (basic or InaSAFE). If you have QGIS
+  composer template file (.qpt format), you also can use it. For now,
   let’s choose Basic.
 
 .. image:: /static/training/beginner/qgis-inasafe/image293.*
    :align: center
 
-- If you want to add additional information on your layout before it will 
-  be printed, you can click :guilabel:`Open Composer`. If you want to save 
+- If you want to add additional information on your layout before it will
+  be printed, you can click :guilabel:`Open Composer`. If you want to save
   it in PDF format to print it, click :guilabel:`Open PDF`
 - Choose your save location and click :guilabel:`Save`.
 

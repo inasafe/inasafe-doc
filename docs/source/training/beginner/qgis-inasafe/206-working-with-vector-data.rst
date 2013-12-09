@@ -208,7 +208,7 @@ map less visually cluttered.
 - Open the :guilabel:`Layer Properties` window for the **vegetasi** layer.
   Under the Style   tab, you will see the same kind of dialog as before. This
   time, however, we   will do more than just change the color.
-- Click on the Simple Fill under the symbol layer column panel. 
+- Click on the Simple Fill under the symbol layer column panel.
   Then Symbol layer dialog will appear next to the symbol layer column panel.
 
 .. image:: /static/training/beginner/qgis-inasafe/image83.*
@@ -270,7 +270,7 @@ Let’s enable scale-based rendering:
    :align: center
 
 - Enable scale-based rendering by clicking on the checkbox
-  :gulabel:`Scale dependent visibility` then change the value in “Maximum” to 
+  :guilabel:`Scale dependent visibility` then change the value in “Maximum” to
   1:10 and “Minimum” to 1:100000
 
 .. image:: /static/training/beginner/qgis-inasafe/image88.*
@@ -414,7 +414,7 @@ types. First we will look at the types available for points.
 .. image:: /static/training/beginner/qgis-inasafe/image102.*
    :align: center
 
-- You can access the various symbol layer types by clicking a symbol layer (1) 
+- You can access the various symbol layer types by clicking a symbol layer (1)
   then clicking the dropdown box in the upper right corner (2)
 
 .. image:: /static/training/beginner/qgis-inasafe/image103.*
@@ -456,8 +456,8 @@ types. First we will look at the types available for points.
 .. image:: /static/training/beginner/qgis-inasafe/image109.*
    :align: center
 
-- Now, click on :gulabel:`Marker line` on symbol layers panel, then change the 
-  interval to 2.00:
+- Now, click on :guilabel:`Marker line` on symbol layers panel,
+  then change the interval to 2.00:
 
 .. image:: /static/training/beginner/qgis-inasafe/image110.*
    :align: center
@@ -467,11 +467,11 @@ types. First we will look at the types available for points.
 .. image:: /static/training/beginner/qgis-inasafe/image112.*
    :align: center
 
-Once you have applied the style, take a look at its results on the map. If the 
-dots not shown up, check the advanced setting and go back to Symbol level. 
-Change the upper symbol layer to “2”. Then click OK. As you can see, these 
-symbols change direction along with the road but don’t always bend along with 
-it. This is useful for some purposes, but not for others. If you prefer, you 
+Once you have applied the style, take a look at its results on the map. If the
+dots not shown up, check the advanced setting and go back to Symbol level.
+Change the upper symbol layer to “2”. Then click OK. As you can see, these
+symbols change direction along with the road but don’t always bend along with
+it. This is useful for some purposes, but not for others. If you prefer, you
 can change the symbol layer in question back to the way it was before.
 
 **Vector Polygons**
