@@ -1,4 +1,4 @@
-.. image:: /static/training/intermediate/qgis-inasafe/image6.*
+.. image:: /static/training/intermediate/qgis-inasafe/image7.*
 
 Module 2: Preparing Data and Keywords for InaSAFE
 =================================================

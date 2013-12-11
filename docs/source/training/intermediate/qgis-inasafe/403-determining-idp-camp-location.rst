@@ -1,4 +1,4 @@
-.. image:: /static/training/intermediate/qgis-inasafe/image6.*
+.. image:: /static/training/intermediate/qgis-inasafe/image7.*
 
 Module 3: Determining IDP Camp Location
 =======================================
@@ -12,10 +12,8 @@ Module 3: Determining IDP Camp Location
   temporary IDP camps
 
 Another important part of disaster planning is determining potential locations
-for IDP camps.
-To do this we need to be able to take various criteria into account in
-finding an appropriate location.
-In Unit 2 we did exactly this.
+for IDP camps. To do this we need to be able to take various criteria into 
+account in finding an appropriate location. In Unit 2 we did exactly this.
 We analyzed various layers and performed a GIS analysis to determine several
 land areas appropriate for IDP camps near Merapi.
 
@@ -212,9 +210,14 @@ features in another layer.
    :align: center
 
 - Click :guilabel:`Apply`
-- The buildings outside of the affected flood areas will become selected:
+- A window like image below will show, click :guilabel:`Close`
 
 .. image:: /static/training/intermediate/qgis-inasafe/image61.*
+   :align: center
+
+- The buildings outside of the affected flood areas will become selected:
+
+.. image:: /static/training/intermediate/qgis-inasafe/image62.*
    :align: center
 
 - Save the selection as a new layer named Bangunan_Sirahan_terpilih.shp and
@@ -240,31 +243,31 @@ Then we will use one of the Geoprocessing Tools – Buffer!
   This will run the query and tell you how many features meet the conditions
   in your query.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image62.*
+.. image:: /static/training/intermediate/qgis-inasafe/image63.*
 
 - You should see that our map shows fewer roads now, because we have filtered
   out those that are not primary or secondary.
   Now that we have the roads, we will create a buffer around them.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image63.*
+.. image:: /static/training/intermediate/qgis-inasafe/image64.*
    :align: center
 
 - Select the Jalan_Sirahan layer and go to
   :menuselection:`Vector > Geoprocessing tools > Buffer(s)`:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image64.*
+.. image:: /static/training/intermediate/qgis-inasafe/image65.*
    :align: center
 
 - Set it up like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image65.*
+.. image:: /static/training/intermediate/qgis-inasafe/image66.*
    :align: center
 
 - Save the layer as Jalan_Sirahan_buffer_20m.shp.
   Click :guilabel:`OK` and QGIS will create the buffer,
   which will look like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image66.*
+.. image:: /static/training/intermediate/qgis-inasafe/image67.*
    :align: center
 
 Now we have a layer which shows the areas that are within 20 meters of the
@@ -276,7 +279,7 @@ Hence we need to do another spatial query, this time of type Within.
 - Go to :menuselection:`Vector > Spatial Query > Spatial Query`.
 - Fill in the fields to look like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image67.*
+.. image:: /static/training/intermediate/qgis-inasafe/image68.*
    :align: center
 
 - Click :menuselection:`Apply`.
@@ -299,14 +302,14 @@ the residents of Sirahan whose homes are affected by the flood.
 
 - Click :guilabel:`Test`.  The query should return only a handful of features.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image68.*
+.. image:: /static/training/intermediate/qgis-inasafe/image69.*
    :align: center
 
 - Take a closer look at the remaining buildings.
   You can inspect the features of each individually by using the
   :guilabel:`Identify Features` tool.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image69.*
+.. image:: /static/training/intermediate/qgis-inasafe/image70.*
    :align: center
 
 - In the very south tip of Sirahan you should find a building that is identified
@@ -318,11 +321,12 @@ the residents of Sirahan whose homes are affected by the flood.
   camp, and when you consider that it is also a hospital,
   it clearly makes a good location.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image70.*
+.. image:: /static/training/intermediate/qgis-inasafe/image71.*
    :align: center
 
 In this Module we reviewed the various Geoprocessing tools and the spatial
 queries, and we used some of them to analyze our problem – where should we put
 an IDP camp.
+
 This is yet another key component of contingency planning,
 and luckily it’s not too difficult to perform with the right knowledge of GIS.

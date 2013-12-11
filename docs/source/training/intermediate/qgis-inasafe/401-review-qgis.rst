@@ -1,4 +1,4 @@
-.. image:: /static/training/intermediate/qgis-inasafe/image6.*
+.. image:: /static/training/intermediate/qgis-inasafe/image7.*
 
 Module 1: Review QGIS
 =====================
@@ -32,7 +32,7 @@ Let’s add vector data to a new project.
 
 - Open a new QGIS project. Your map and Layers list should be empty.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image7.*
+.. image:: /static/training/intermediate/qgis-inasafe/image8.*
    :align: center
 
 - There are two ways to add a new vector layer to your project.
@@ -40,14 +40,14 @@ Let’s add vector data to a new project.
   menu or you can click on the :guilabel:`Add Vector Layer` button on the
   toolbar:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image8.*
+.. image:: /static/training/intermediate/qgis-inasafe/image9.*
    :align: center
 
 - If you can’t find the toolbar button, right-click the toolbars and make sure
   that the box is checked next to :guilabel:`File`
 - The :guilabel:`Add vector layer` dialog looks like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image9.*
+.. image:: /static/training/intermediate/qgis-inasafe/image10.*
    :align: center
 
 - Click on the :guilabel:`Browse` button and navigate to your exercise data.
@@ -58,7 +58,7 @@ Let’s add vector data to a new project.
   Click :guilabel:`Open` and then :guilabel:`Open` again.
 - Your map canvas now will looks like this:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image10.*
+.. image:: /static/training/intermediate/qgis-inasafe/image11.*
    :align: center
 
 Great! You’ve added some vector data to your map.
@@ -85,19 +85,19 @@ population, the area’s color, and so forth.
   menu or you can click on the :menuselection:`Add Vector Layer` button on
   the toolbar:
 
-.. image:: /static/training/intermediate/qgis-inasafe/image11.*
+.. image:: /static/training/intermediate/qgis-inasafe/image12.*
    :align: center
 
 - Navigate to qgis/Sleman/SRTM/ and select *SRTM_Sleman.tif*, which depicts the
   topography of the area.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image12.*
+.. image:: /static/training/intermediate/qgis-inasafe/image13.*
    :align: center
 
 - Click :guilabel:`Open`.
   The raster will be added to our project as a grey-colored square.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image13.*
+.. image:: /static/training/intermediate/qgis-inasafe/image14.*
    :align: center
 
 Next we will symbolize the data to make it easier to understand.
@@ -117,14 +117,14 @@ Let’s symbolize the district layer that we’ve added:
   and choose :guilabel:`Properties`, or double click the layer name.
 - Click on the :guilabel:`Style` tab.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image14.*
+.. image:: /static/training/intermediate/qgis-inasafe/image15.*
    :align: center
 
 - Notice all the options that we have to change the appearance of this layer.
   We can change the layer’s transparency or its color, or make even more
   detailed variations by clicking on :guilabel:`Change`
 
-.. image:: /static/training/intermediate/qgis-inasafe/image15.*
+.. image:: /static/training/intermediate/qgis-inasafe/image16.*
    :align: center
 
 - We can also base the symbology on the data contained in the layer itself.

@@ -87,7 +87,7 @@ http://hot.openstreetmap.org
 Universitas Gadjah Mada
 =======================
 
-.. image:: /static/training/beginner/osm/ugm.*
+.. image:: /static/training/beginner/osm/image6.*
 
 Universitas Gadjah Mada (internationally known as Gadjah Mada University ;
 Abbreviation : UGM) is an Indonesian public ivy league research university
