@@ -194,7 +194,7 @@ j. Adult will continuing their learning process if they satisfied with their
 
 *The difference between Pedagogy and Andragogy*
 
-+=====================+=============================+==========================+
++---------------------+-----------------------------+--------------------------+
 | Aspect              | Pedagogy                    | Andragogy                |
 +=====================+=============================+==========================+
 | Concept about       | Dependent                   | Has ability to guide     |
@@ -216,7 +216,7 @@ j. Adult will continuing their learning process if they satisfied with their
 |                     | 2. The knowledge will       | 2. Knowledge and skill   |
 |                     |    beneficial in the future |    will be useful for    |
 |                     | 3. Learning orientation is  |    better life           |
-|                     |    material centered        | 3. Learning orientatuin  |
+|                     |    material centered        | 3. Learning orientation  |
 |                     |                             |    activity centered     |
 +---------------------+-----------------------------+--------------------------+
 
@@ -484,7 +484,7 @@ evaluator only has two choices, for example correct-wrong, observable-
 unobservable. In that case, there is not middle score, therefore, checklist is
 more practicable to observe large number of subjects. Example of checklist:
 
-+=======+========================+=================+===============+
++-------+------------------------+-----------------+---------------+
 | No.   | Scoring Aspect         | Good            | Not Good      |
 +=======+========================+=================+===============+
 | 1.    |                        |                 |               |
@@ -507,7 +507,7 @@ continuosly (there more than two scoring options). The scale is ranged from not
 perfect to perfect. For example: 1 = not competent, 2 = enough competent, 3 =
 competent, 4 = very competent. This is the example:
 
-+=======+========================+========+=======+=======+=======+
++-------+------------------------+--------+-------+-------+-------+
 | No.   | Scoring Aspect         | Score                          |
 +=======+========================+========+=======+=======+=======+
 |       |                        |  1     | 2     | 3     | 4     |
