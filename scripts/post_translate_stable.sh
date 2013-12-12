@@ -182,7 +182,7 @@ do
   popd
 done
 
-#rm -rf source/static
-#rm -rf ${BUILDDIR}
+rm -rf source/static
+rm -rf ${BUILDDIR}
 
 popd
