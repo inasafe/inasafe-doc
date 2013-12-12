@@ -468,7 +468,7 @@ If participants do not have email account, you need to help them make a new one.
 
 If you decided to show participants how to edit using *Potlach editor* in the
 *OSM* website, first they need to install Flash on their computer. The guide
-to install flash is in the **Beginner�s Guide**.  Please remember this
+to install flash is in the **Beginners Guide**.  Please remember this
 activity would takes some hours for this session.
 
 

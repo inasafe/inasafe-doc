@@ -269,13 +269,13 @@ When nesting lists you may mix bullet lists and numbered lists on each level.
 |                                         |                                             |
 | \# Another item\                        | 2. Another item                             |
 +-----------------------------------------+---------------------------------------------+
-|\* This list has\                        | ● This list has                             |
+|\* This list has\                        | This list has                               |
 |                                         |                                             |
 | \*# two levels.\                        |  1. two levels.                             |
 |                                         |                                             |
 | \*# Numbers on the second level\        |  2. Numbers on the second level, and        |
 |                                         |                                             |
-|\* bullets on the first level\           | ● bullets on the first level                |
+|\* bullets on the first level\           | bullets on the first level                  |
 +-----------------------------------------+---------------------------------------------+
 
 **Links**

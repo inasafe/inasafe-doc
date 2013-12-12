@@ -687,7 +687,7 @@ Common Problem :
 
 - Problem with internet connection if connection slow make the practice
   session become longer
-- The online private datastore server can�t use together because limited
+- The online private datastore server cant be used together cause of limited
   bandwidth, so the participants are usually asked to not practice and just
   see the facilitator to practice.
 

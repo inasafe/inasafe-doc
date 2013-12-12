@@ -4,8 +4,8 @@ Preparing a release
 ===================
 
 This document outlines the steps that need to be carried out in order
-to issue a new release of the |project_name| plugin. The steps can be outlined
-as follows and are described in detail below:
+to issue a new release of the |project_name| plugin.
+The steps can be outlined as follows and are described in detail below:
 
 * Identify what version number the new release will be assigned.
 * Close all issues marked as blockers for the release.
@@ -14,7 +14,7 @@ as follows and are described in detail below:
 * Ensure no assert statements are critical to code flow
 * Ensure that Qt resources and user interface files have been compiled
 * Ensure that user interface files meet HIG compliance
-* Enure all unit tests complete successfully and that tests that are expected
+* Ensure all unit tests complete successfully and that tests that are expected
   to fail are documented.
 * Ensure that user acceptance testing has been carried out.
 * Ensure that all translation string lists have been updated and that the
@@ -23,7 +23,7 @@ as follows and are described in detail below:
 * Ensure that the API documentation is up to date.
 * Update the changelog.
 * Ensure that the sphinx documentation is compiled.
-* Generate python optimsed (.pyo) files for all sources.
+* Generate python optimised (.pyo) files for all sources.
 * Update the plugin metadata to reflect current version.
 * Generate a test package and validate in a clean room environment.
 * Optionally branch the release in the revision control system.
@@ -35,33 +35,31 @@ as follows and are described in detail below:
 Release numbering
 -----------------
 
-|project_name| will follow the `semantic versioning system <http://semver.org/>`_.
-Simply put, the following scheme should be applied to version numbers:
+|project_name| will follow the
+`semantic versioning system <http://semver.org/>`_.
+Simply put, the following scheme should be applied to version numbers::
 
-.. table::
+  Version Increment  Intention
 
-   ===================  ============================================================
-    Version Increment     Intention
-   ===================  ============================================================
-    Major e.g 1.0.0     API incompatibility with the previous major release.
-    Minor e.g. 1.1.0    API compatibility and extension over previous minor release.
-    Point e.g. 1.1.1    API compatibility, bug fixes for previous point release.
-    Alpha e.g. 1.0.0a   Feature incomplete preview of a minor or major release
-    RC e.g. 1.1.0rc1    Feature complete preview of a minor or major release
-   ===================  ============================================================
+  Major e.g. 1.0.0   API incompatibility with the previous major release.
+  Minor e.g. 1.1.0   API compatibility and extension over previous minor release.
+  Point e.g. 1.1.1   API compatibility, bug fixes for previous point release.
+  Alpha e.g. 1.0.0a  Feature incomplete preview of a minor or major release.
+  RC e.g. 1.1.0rc1   Feature complete preview of a minor or major release.
 
 To identify the next release number, the table above can simply be applied.
 Here are a couple of examples.
 
 * You have fixed various bugs without adding new features or breaking the API,
-  and you are ready to immediately publish your work. Result: **New point
-  release.**
+  and you are ready to immediately publish your work.
+  Result: **New point release.**
 * You have implemented many new features, some of which required breaking API
-  compatibility with the existing major release. Now you would like to make
-  a public preview of your work before committing to a final release. Result:
-  **New major release candidate.**
+  compatibility with the existing major release.
+  Now you would like to make a public preview of your work before committing
+  to a final release.
+  Result: **New major release candidate.**
 
-**Outcome:** A version number for the next release eg. 0.1.0.
+**Outcome:** A version number for the next release e.g. 0.1.0.
 
 Issue completion
 ----------------

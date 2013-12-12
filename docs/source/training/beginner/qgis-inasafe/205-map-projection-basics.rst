@@ -7,7 +7,7 @@ Module 5: Map Projection Basics
 
 - Understand Coordinate Reference Systems (CRS)
 - Identify the CRS of a vector dataset
-- ● Doing “on the fly” reprojection
+- Doing “on the fly” reprojection
 - Save dataset with a different CRS
 - Making its own projection
 
