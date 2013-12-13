@@ -31,7 +31,7 @@ layer, the dataset that we are going to use in section of the training was
 downloaded from the Smithsonian website.  You may ask “How can we use a point
 to figure out impact? |project_name| needs your help!.
 
-1. :menuselection:`File --> Open Projects`, browse to *Volcano_Indonesia.qgs*
+1. :menuselection:`Project --> Open Projects`, browse to *Volcano_Indonesia.qgs*
 
 .. image:: /static/training/socialisation/061_volcano.*
    :align: center
@@ -43,45 +43,48 @@ Select Feature and Save
    lets zoom into one volcano to analysis. :guilabel:`Right Click`
    on the Volcanoes layer in the **Layer List** and :guilabel:`Select`
    *Open Attribute Table*
-3. In the *Look for* section type :kbd:`Merapi` (circle 1),
-4. :guilabel:`Select` **NAME** from dropdown menu (circle 2)
-5. :guilabel:`Search` (circle 3). This will select only the Volcano that
-   have Merapi in the name column
-6. :guilabel:`Check` *Show selected only* (circle 4) This will identify only
-   the selected layers.
-7. :guilabel:`Click` on *Pan map to the selected row* (circle 5). Selected
-   layer should be in the centre  on the map canvas
-8. :guilabel:`Close` Attribute Table Window (circle 6)
+3. Click :guilabel:`Show All Features` (circle 1), then hover your pointer to 
+   :guilabel:`Column Filter` (circle 2), then select *NAME* column (circle 3)
 
 .. image:: /static/training/socialisation/062_merapi_attribute.*
    :align: center
 
-9. :guilabel:`Zoom to Selection` to zoom in further, continue until you get to an extent
-	similar to the one below. (The yellow triangle is Merapi)
+4. We will try to find Mount Merapi. Type in :kbd:`merapi` (1), make sure you 
+   uncheck :guilabel:`Case Sensitive` (2) so it will ignore whether it upper or
+   lower case. Then click :guilabel:`Apply` (3).
+
+.. image:: /static/training/socialisation/062_merapi_attribute2.*
+   :align: center
+
+5. Click on the row (circle 1), :kbd:`drag` the Attribute Table Window so
+   you can see the your map canvas then click :guilabel:`Zoom to selected row` 
+   (circle 2). Try to zoom in on your map then click 
+   :guilabel:`Zoom to selected row` again from table attribute until you get
+   to an extent similar to the one below.
 
 .. image:: /static/training/socialisation/063_merapi.*
    :align: center
 
-Now that we know where Merapi is, and have check that it is in fact in the
-right location, we are going to make a hazard layer with just this point.
+7. Now that we know where Merapi is, and have check that it is in fact in the
+   right location, we are going to make a hazard layer with just this point.
 
-10. :guilabel:`Right Click` on Volcano in the **Layer List**
-	and :guilabel:`Save selection as`
-11. :guilabel:`Browse` and navigate to your data area,
+8. :guilabel:`Right Click` on Volcano in the **Layer List**
+	  and :guilabel:`Save selection as`
+9. :guilabel:`Browse` and navigate to your data area,
     :guilabel:`save as` “Merapi” (circle 1).
-12. :guilabel:`Check` *Add saved file to map* (circle 2)
-13. :guilabel:`OK` (circle 3)
+10. :guilabel:`Check` *Add saved file to map* (circle 2)
+11. :guilabel:`OK` (circle 3)
 
 .. image:: /static/training/socialisation/064_save_volcano.*
    :align: center
 
-14. :guilabel:`Uncheck` Volcanoes in the layer window.
+12. :guilabel:`Uncheck` Volcanoes in the layer window.
 
 You should now have a point that shows the location of Merapi. Lets take some
 time to examine the ‘dot’.
 
-15. Use the :guilabel:`Identify feature` tool to find more out about the Volcano
-16. Use the :guilabel:`Measure line` tool to find out how far away is the closest
+13. Use the :guilabel:`Identify feature` tool to find more out about the Volcano
+14. Use the :guilabel:`Measure line` tool to find out how far away is the closest
     population hub (brown areas on the map)
 
 .. note:: For the Identify feature and Measure line tool to work you need to

@@ -84,7 +84,7 @@ Start of Practical
 Setup QGIS
 ----------
 
-1. :guilabel:`Open QGIS Desktop (1.8.0)` - This should be located on
+1. :guilabel:`Open QGIS Desktop (2.0.1)` - This should be located on
 your desktop, or you can find it in your start menu.
 
 .. image:: /static/training/socialisation/012_qgis_desktop.*
@@ -153,8 +153,6 @@ To change the projection settings and acknowledge that QGIS is multilingual
 .. image:: /static/training/socialisation/017_onthefly.*
    :align: center
 
-.. Note:: This  will become default in the new version of QGIS 2.0
-
 8. :guilabel:`Select` on the **Locale** tab of the options menu
 
 .. image:: /static/training/socialisation/018_locale.*
@@ -186,20 +184,20 @@ Installing |project_name| through the QGIS plugin repository
 
 .. note:: You must be connected to the internet for this section
 
-11. Go to :menuselection:`Plugins --> Fetch Python Plugins...` This will take
+11. Go to :menuselection:`Plugins --> Manage and Install Plugins` This will take
     a couple of minutes for QGIS to contact its repository and show the list of
     plugins available
 
-12. Type :kbd:`inasafe` into the filter box
+12. Go to :guilabel:`New` tab. Type :kbd:`inasafe` into the filter box
 
 .. image:: /static/training/socialisation/020_inasafe_plugin.*
    :align: center
 
-13. :guilabel:`Select` |project_name| and :guilabel:`Install plugin` - this
+13. :guilabel:`Select` |project_name| and :guilabel:`Install` - this
     will take a couple of minutes for the plugin to download and install.
 
 14. A window should pop up saying: "Plugin installed successfully"
-    :guilabel:`Ok` and :guilabel:`Close` the *QGIS Python Plugin Installer*
+    :guilabel:`Ok` and :guilabel:`Close` the *QGIS Plugin Manager*
     window.
 
 15. You should now have an |project_name| panel on the right hand side of
@@ -243,7 +241,7 @@ Installing OpenLayers through the QGIS plugin repository
    times!
 
 
-17. Go to :menuselection:`Plugins --> Fetch Python Plugins`.
+17. Go to :menuselection:`Plugins --> Manage and Install Plugin`.
     This will take a couple of minutes for QGIS to contact its repository and
     show the list of plugins available.
 

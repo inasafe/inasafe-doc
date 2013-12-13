@@ -42,8 +42,8 @@ Global Facility for Disaster Reduction and Recovery Labs (World Bank-|GFDRR|).
 Manual based on:
 ................
 
-* Version 1.2 of |project_name|
-* Version 1.8 of |QGIS|
+* Version 2.0 of |project_name|
+* Version 2.0 of |QGIS|
 
 Produced:
 .........
