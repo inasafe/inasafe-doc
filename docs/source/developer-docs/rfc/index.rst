@@ -16,4 +16,13 @@ Developer Documentation Contents:
 .. toctree::
    :maxdepth: 3
 
+   rfctemplate
    rfc1
+   rfc2
+   rfc3
+   rfc4
+   rfc5
+   rfc6
+   rfc7
+   rfc8
+
