@@ -22,7 +22,7 @@ and in different languages.
 To see the OSM wiki, visit http://wiki.openstreetmap.org
 
 
-**1. Definision of Wiki OpenStreetMap**
+**1. Definition of Wiki OpenStreetMap**
 
 A wiki is a website where any user can add pages and edit existing pages.
 It is based on the same principle as OpenStreetMap, the only difference is
@@ -269,13 +269,13 @@ When nesting lists you may mix bullet lists and numbered lists on each level.
 |                                         |                                             |
 | \# Another item\                        | 2. Another item                             |
 +-----------------------------------------+---------------------------------------------+
-|\* This list has\                        | ● This list has                             |
+|\* This list has\                        | This list has                               |
 |                                         |                                             |
 | \*# two levels.\                        |  1. two levels.                             |
 |                                         |                                             |
 | \*# Numbers on the second level\        |  2. Numbers on the second level, and        |
 |                                         |                                             |
-|\* bullets on the first level\           | ● bullets on the first level                |
+|\* bullets on the first level\           | bullets on the first level                  |
 +-----------------------------------------+---------------------------------------------+
 
 **Links**
@@ -416,32 +416,32 @@ When Structuring a Page
   Remember that you can look at the code for any page by clicking on the edit
   tab and seeing how other users format their text.
 
-
 **6. Upload File and Photo/Image**
 
-To add or insert files or images on Wikimedia pages, first we have to upload a 
+To add or insert files or images on Wikimedia pages, first we have to upload a
 file or image to the Wikipedia website. Here are the steps:
 
 1. Uploading files or images to the Wikipedia website.
 
 - Open https://wiki.openstreetmap.org website.
 - Make sure you are logged in.
-- Then click :guilabel:`Upload file` which is in the left side of the screen, 
+- Then click :guilabel:`Upload file` which is in the left side of the screen,
   under the Tools menu.
 
 .. image:: /static/training/intermediate/osm/image148.*
    :align: center
 
-- After Upload file page opened, click :guilabel:`Choose File` at Source file name. 
+- After Upload file page opened, click :guilabel:`Choose File` at Source file
+  name.
   Find the file that will be uploaded from your computer.
 
 .. image:: /static/training/intermediate/osm/image149.*
    :align: center
 
-- Terms file to upload: 
+- Terms file to upload:
 
 1) Maximum file/image size: 70 MB
-2) Permitted file/image type: doc, pdf, odt, odp (for file) dan png, gif, jpg, 
+2) Permitted file/image type: doc, pdf, odt, odp (for file) dan png, gif, jpg,
    jpeg, svg (for image).
 
 - After choosing the file, click “Upload file” at the bottom of the page.
@@ -455,17 +455,16 @@ file or image to the Wikipedia website. Here are the steps:
 
 *Example of image upload*
 
-- Your file/image uploaded successfully! However, this file/image has not been 
-  on your page. 
-
+- Your file/image uploaded successfully! However, this file/image has not been
+  on your page.
 
 2. Insert file / image on the Wikipedia page.
 
-- Look the file/image name that you uploaded before, example: 
+- Look the file/image name that you uploaded before, example:
   File:Mapping jakarta.JPG and File:Pemetaan dengan OSM.pdf.
-- To insert a file / image on your page, you have to go to the page that you 
+- To insert a file / image on your page, you have to go to the page that you
   want to modify and then click :guilabel:`Edit`
-- Copy the name of file/image you have uploaded into the editing box, as shown 
+- Copy the name of file/image you have uploaded into the editing box, as shown
   below:
 
 .. image:: /static/training/intermediate/osm/image152.*
@@ -476,7 +475,6 @@ file or image to the Wikipedia website. Here are the steps:
 
 .. image:: /static/training/intermediate/osm/image153.*
    :align: center
-
 
 **7. Translating Pages**
 
@@ -513,8 +511,6 @@ and translating it into your language.
 This will allow you to keep all of the original formatting and links
 correctly, but translate the English text into your own language.
 
-
-
 **6. Watching Pages**
 
 You may want keep an eye on pages that you have edited yourself, or that you
@@ -537,8 +533,3 @@ the page:
 
 On the :guilabel:`My Watchlist` page you choose to show changes to your watched
 pages within the past hours, or days, or since you started watching the page.
-
-
-
-
-

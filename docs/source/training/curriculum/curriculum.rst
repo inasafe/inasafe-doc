@@ -44,18 +44,19 @@ INTRODUCTION
 
 As one of the most hazard-prone and densely populated countries in the
 world, Indonesia faces significant risk of loss of life and challenges to
-development progress as a result of natural disasters. This is why disaster
-risk reduction has been recognised by the Government of Indonesia as one of
-their top eleven priorities in the Medium-Term Development Plan (2010-2014).
+development progress as a result of natural disasters.
+This is why disaster risk reduction has been recognised by the Government of
+Indonesia as one of their top eleven priorities in the Medium-Term
+Development Plan (2010-2014).
 In recognition of the impact of disasters on developing economies,
 AusAid’s policy on disaster risk reduction highlights the importance of
 investing in disaster reduction .
 
 |BNPB| has a mandate to increase the overall disaster management capacity of
 Indonesia including workshop for managers who handle disasters at the
-sub-national level. To date, BNPB’s Education and Workshop Centre has been
-developing a range of workshop curriculum and Modules with specific focus
-on
+sub-national level.
+To date, BNPB’s Education and Workshop Centre has been developing a range of
+workshop curriculum and Modules with specific focus on
 
   a) Basic Disaster Management,
   b) Rapid Assessment and Coordination, and
@@ -82,9 +83,10 @@ huge success:
   It is being developed by |AIFDR| in close consultation with |BNPB|.
 
 - **OpenStreetMap (OSM) tools**: OSM is a free map of the world that anyone
-  can add to and edit.  Utilizing community mapping allows for more detailed
-  information to be collected that can be utilized for analysis in
-  |project_name| (i.e. How many houses will be affected by a specific hazard).
+  can add to and edit.
+  Utilizing community mapping allows for more detailed information to be
+  collected that can be utilized for analysis in |project_name| (i.e. How
+  many houses will be affected by a specific hazard).
 
 - **QGIS**: is an open source Geographical Information System
   (GIS) software that allows users to spatially analyse their data,
@@ -96,27 +98,28 @@ each individual tool as well as creating a pool of trainers across Indonesia.
 
 This curriculum outline describes competencies to be achieved,
 the lists of content required to achieve the competencies in the workshop
-package, and the program structure of the workshop course . The workshop
-consists of beginner, intermediate and advance levels. The beginner workshop
-is mainly aimed to introduce participants to the concept of realistic
-disaster scenario development and help them become socialized to the
-concepts and explore all three of the open source tools. In contingency
-planning, having realistic disaster scenarios contribute test significantly
-to the reliability of the created planning results. As complexity and
-uncertainty are common in developing realistic disaster scenarios,
-advanced knowledge and skills in mapping and impact calculations using OSM,
-QGIS, and InaSAFE are required. For this reason, the intermediate level of
-the workshop on OSM, QGIS and InaSAFE is required to further participants’
-knowledge and skills to work with the tools in anticipating possible
-disaster events and impacts. The workshop is expected to be furthered with
-an advanced level course and Workshop for Trainers course of which the
-curriculum will be developed separately.
+package, and the program structure of the workshop course.
+The workshop consists of beginner, intermediate and advance levels. The
+beginner workshop is mainly aimed to introduce participants to the concept of
+realistic disaster scenario development and help them become socialized to the
+concepts and explore all three of the open source tools.
+In contingency planning, having realistic disaster scenarios contribute test
+significantly to the reliability of the created planning results.
+As complexity and uncertainty are common in developing realistic disaster
+scenarios, advanced knowledge and skills in mapping and impact calculations
+using OSM, QGIS, and InaSAFE are required.
+For this reason, the intermediate level of the workshop on OSM,
+QGIS and InaSAFE is required to further participants’ knowledge and skills to
+work with the tools in anticipating possible disaster events and impacts.
+
+The workshop is expected to be furthered with an advanced level course and
+Workshop for Trainers course of which the curriculum will be developed
+separately.
 
 To gain the required competencies, the workshop course is expected to apply
 andragogical principles (a learning approach for adults) with an emphasis on
 real tasks in the field and various methods in engaging active participation
 from the participants.
-
 
 LEVELS OF WORKSHOP
 ==================
@@ -146,20 +149,25 @@ technology, and each technology workshop is composed of three levels.
 2. Workshop spatial data analysis QGIS/InaSAFE for beginners and
    intermediate levels
 
-Both workshop courses are interrelated. After participating in both workshop
-courses, participants are expected to be able to develop scenario for
-contingency planning by using scientific hazard layers, OSM and QGIS/InaSAFE.
+Both workshop courses are interrelated.
+After participating in both workshop courses, participants are expected to be
+able to develop scenario for contingency planning by using scientific hazard
+layers, OSM and QGIS/InaSAFE.
 
-3. Training of trainer workshop for contingency planing using OSM, QGIS, and InaSAFE
+3. Training of trainer workshop for contingency planing using OSM, QGIS,
+   and InaSAFE
 
 The main objective of this training is to train people to be leaders and
 trainers in Scenario Development program for Contingency Plan (SD4CP) in their
-respective regions. After completing the training, participants will have the
-facilitation skills about OSM / QGIS / InaSAFE which is needed as facilitator,
+respective regions.
+After completing the training, participants will have the facilitation skills
+about OSM / QGIS / InaSAFE which is needed as facilitator,
 and training skills to help train others in developing a realistic disaster
-scenario that can be used in contingency plans. This will lead to better
-decision-making during the process of making contingency plans. Also expected
-TOT participants can provide technical assistance for their respective regions.
+scenario that can be used in contingency plans.
+This will lead to better decision-making during the process of making
+contingency plans.
+Also expected TOT participants can provide technical assistance for their
+respective regions.
 
 
 B. Target
@@ -205,12 +213,10 @@ Qualifications for participants at Training of Trainer (ToT) level:
    Contingency Plan in their respective region.
 3. Satisfactory completion of prerequisite tasks (as assessed by HOT).
 
-
 C. Map of Competencies
 ======================
 
 **1. Workshop Collecting Data Using OSM**
-
 
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 | No.| Level       | Standard Competency and Basic Competency                                                                            |
@@ -236,10 +242,7 @@ C. Map of Competencies
 |    |             | 6. Creating and editing page in OSM Wiki                                                                            |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 
-
-
 **2. Data Analysis Using QGIS and InaSAFE Workshop**
-
 
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 | No.| Level       | Standard Competency and Basic Competency                                                                            |
@@ -269,7 +272,6 @@ C. Map of Competencies
 |    |             | 5. Calculate damage and losses                                                                                      |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 
-
 **3. Training of Trainer Workshop**
 
 Standard Competency and Basic Competency
@@ -282,22 +284,22 @@ Analysis through OSM, QGIS, and InaSAFE in their respective region.**
 3. Practising Data Collection and Analysis through OSM, QGIS, and InaSAFE
    workshop
 
-
 D. Curriculum Development
 =========================
 
 1. Identifying exact competencies that have to be learnt to collect spatial
-   data using OSM and analyze the data using QGIS/InaSAFE. Competencies are
-   elaborated as Standard Competency or workshop material competency,
-   basic competency, and indicator. Standard Competency or workshop material
-   competency is the minimum requirement of participant qualification which
-   stands for their knowledge, attitude, and skill that need to be achieved
-   for a workshop material. Basic competency is a number of skills that need
-   to be mastered by the participant in a workshop material as a reference
-   of indicator building. Indicator is:
+   data using OSM and analyze the data using QGIS/InaSAFE.
+   Competencies are elaborated as Standard Competency or workshop material
+   competency, basic competency, and indicator.
+   Standard Competency or workshop material competency is the minimum
+   requirement of participant qualification which stands for their knowledge,
+   attitude, and skill that need to be achieved for a workshop material.
+   Basic competency is a number of skills that need to be mastered by the
+   participant in a workshop material as a reference of indicator building.
+   Indicator is:
 
     a. Behavioral characteristics (measurable evidence) that can give an
-       idea that the workshop participants have achieved basic competency
+       idea that the workshop participants have achieved basic competency.
     b. Basic competency achievement mark which is marked from measurable
        behavior such as attitude, knowledge, and skills.
     c. Developed in accordance with the characteristics of the workshop
@@ -320,8 +322,8 @@ E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 
 **Data Collection Using OSM Beginner Level Workshop**
 
-**Standard Competency: Collecting spatial data using OSM**
-
+**Standard Competency:**
+Collecting spatial data using OSM
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                          |
@@ -417,11 +419,10 @@ E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 |                                                                     |                                                                  |                                                        |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 
-
 **Data Collection Using OSM Intermediate Level Workshop**
 
-**Standard Competency: Quality Assurance for contributing of OSM mapping**
-
+**Standard Competency:**
+Quality Assurance for contributing of OSM mapping
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                          |
@@ -488,12 +489,11 @@ E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 |                                                                     | 8. View changelog                                                | 8. How to view changelog                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 
-
 **Data Analysis Using QGIS and InaSAFE Beginner Level Workshop**
 
-**Standard Competency: Managing spatial data using QGIS and analyzing disaster**
-**impact scenario using |project_name|**
-
+**Standard Competency:**
+Managing spatial data using QGIS and analyzing disaster impact scenario using
+|project_name|
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                              |
@@ -607,12 +607,11 @@ E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 |                                                                     |                                                                  | 2. QGIS tutorial website                                   |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 
-
 **Data Analysis Using QGIS and InaSAFE Intermediate Level Workshop**
 
-**Standard Competency: Data spatial analysis using QGIS and InaSAFE which is**
-**related to contingency planning**
-
+**Standard Competency:**
+Data spatial analysis using QGIS and |project_name| which is related to
+contingency planning.
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                              |
@@ -669,14 +668,11 @@ E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
 |                                                                     | 9. Presenting the damages and losses assessment using a diagram  |                                                            |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 
+**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and InaSAFE**
 
-
-**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and
-InaSAFE**
-
-**Standard Competency: Participant can be a workshop facilitator to teach Data
-collection and Data Analysis through OSM, QGIS, and InaSAFE in their respective
-region.**
+**Standard Competency:**
+Participant can be a workshop facilitator to teach Data collection and Data
+Analysis through OSM, QGIS, and |project_name| in their respective region.
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                              |
@@ -705,14 +701,12 @@ region.**
 |                                                                     |    analysis through OSM, QGIS, and InaSAFE workshop              |    and analysis through OSM, QGIS, and InaSAFE workshop    |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 
-
 Curriculum Structure
 ====================
 
 Based on curriculum, program structure is designed as follow.
 
 **1. Data Collection Using OSM Beginner Level**
-
 
 +-----+----------------------------------------+-----------------------------------------+
 | No  | Workshop Material                      | Time (learning hour) @ 45Minutes        |
@@ -748,9 +742,7 @@ Based on curriculum, program structure is designed as follow.
 |     | Total                                  | 50                                      |
 +-----+----------------------------------------+-----------------------------------------+
 
-
 **2. Data Collection Using OSM Intermediate Level**
-
 
 +-----+--------------------------------------------+-------------------------------------------------+
 | No  | Workshop Material                          | Time (learning hour) @ 45 Minutes               |
@@ -782,9 +774,7 @@ Based on curriculum, program structure is designed as follow.
 |     | Total                                      | 30                                              |
 +-----+--------------------------------------------+-------------------------------------------------+
 
-
 **3.Data Analysis Using QGIS/InaSAFE Beginner Level**
-
 
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 | No | Workshop Material                                                                                     | Time (learning hour) @ 45 Minutes       |
@@ -830,9 +820,7 @@ Based on curriculum, program structure is designed as follow.
 |    | Total                                                                                                 | 50                                      |
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 
-
 **4. Data Analysis Using QGIS/InaSAFE Intermediate Level**
-
 
 +----+-----------------------------------------+-----------------------------------------+
 | No | Workshop Material                       | Time (learning hour) @ 45Minutes        |
@@ -863,7 +851,6 @@ Based on curriculum, program structure is designed as follow.
 +----+-----------------------------------------+-----------------------------------------+
 |    | Total                                   | 50                                      |
 +----+-----------------------------------------+-----------------------------------------+
-
 
 **5. Training of Trainer for Contingency Planning using OSM, QGIS, and InaSAFE**
 
@@ -909,8 +896,8 @@ be easier to understand if read the prepared toolkit.
 
 **Data Collection Using OSM Beginner Level**
 
-**Standard Competency:Collecting spatial data using OSM**
-
+**Standard Competency:**
+Collecting spatial data using OSM
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                          | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
@@ -1023,11 +1010,10 @@ be easier to understand if read the prepared toolkit.
 |                                                                     |                                                                  |                                                        |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
-
 **Data Collection Using OSM Intermediate Level Workshop**
 
-**Standard Competency: Quality Assurance for contributing of OSM mapping**
-
+**Standard Competency:**
+Quality Assurance for contributing of OSM mapping
 
 +----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 | Basic competency                                               | Indicator                                                        | Core material                                          | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
@@ -1107,11 +1093,11 @@ be easier to understand if read the prepared toolkit.
 |                                                                | 8. View changelog                                                | 8. How to view changelog                               |                                       |                        |                            |                               |
 +----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
-
 **Data Analysis Using QGIS and InaSAFE Beginner Level Workshop**
 
-**Standard Competency: Managing spatial data using QGIS and analyzing disaster impact scenario using InaSAFE**
-
+**Standard Competency:**
+Managing spatial data using QGIS and analyzing disaster impact scenario using
+|project_name|
 
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
 | Basic competency                                                        | Indicator                                                        | Core material                                              | Learning Activity                     | Time Allocation        | Assessment       | Learning Sources              |
@@ -1253,11 +1239,11 @@ be easier to understand if read the prepared toolkit.
 |                                                                         |                                                                  | 2. QGIS tutorial website                                   |                                       |                        |                  | Participant's Computer        |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
 
-
 **Data Analysis Using QGIS and InaSAFE Intermediate Level Workshop**
 
-**Standard Competency: Data spatial analysis using QGIS and InaSAFE which is related to contingency planning**
-
+**Standard Competency:**
+Data spatial analysis using QGIS and |project_name| which is related to
+contingency planning.
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                              | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
@@ -1325,13 +1311,11 @@ be easier to understand if read the prepared toolkit.
 |                                                                     | 9. Presenting the damages and losses assessment using a diagram  |                                                            |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
+**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and InaSAFE**
 
-**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and
-InaSAFE**
-
-**Standard Competency: Participant can be a workshop facilitator to teach Data
-collection and Data Analysis through OSM, QGIS, and InaSAFE in their respective
-region.**
+**Standard Competency:**
+Participant can be a workshop facilitator to teach Data collection and Data
+Analysis through OSM, QGIS, and |project_name| in their respective region.
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                              | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
@@ -1366,15 +1350,13 @@ region.**
 |                                                                     |    analysis through OSM, QGIS, and InaSAFE workshop              |    and analysis through OSM, QGIS, and InaSAFE workshop    |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
-
-
 F. Closing
 ==========
 
 After organizing this Training of Trainer for Scenario Development for
 Contingency Planning using OSM and QGIS/InaSAFE Curriculum Scheme by BNPB, we
 are hoping that workshop organizer from National level or province/district
-level can use this document as refference in order to create same output. This
-curriculum will always be improved through several Test and input from
+level can use this document as reference in order to create same output.
+This curriculum will always be improved through several Test and input from
 stakeholders, such as government official or non-government which included in
 working group.

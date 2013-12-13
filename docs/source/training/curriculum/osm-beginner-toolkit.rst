@@ -6,23 +6,22 @@ Beginning OpenStreetMap Trainer's Toolkit - (A Guide to Facilitator)
 
 BADAN NASIONAL PENANGGULANGAN BENCANA
 .....................................
+
 2013
 ....
 
-
 About Toolkit
 ^^^^^^^^^^^^^
-
 **The Beginning OpenStreetMap Trainer Toolkit** is designed to prepare
-trainers to deliver an introductory training course to new users of OSM. The
-materials included will prepare trainers to conduct trainings with a variety
-of audiences and to cover common problems and pitfalls,
+trainers to deliver an introductory training course to new users of OSM.
+The materials included will prepare trainers to conduct trainings with a
+variety of audiences and to cover common problems and pitfalls,
 and also provide trainers with the best methodologies to engage new mappers.
 
 When organizing an OpenStreetMap workshop, numerous factors must be
 considered, including the length of time you have to train,
-available resources, number of trainee and their technical skills.  This
-toolkit will help trainers prepare trainings for different types of
+available resources, number of trainee and their technical skills.
+This toolkit will help trainers prepare trainings for different types of
 participants, but it will primarily focus on educating those with little or
 no experience with GPS, map making, and computers.
 
@@ -66,37 +65,40 @@ Workshop Strategies
 1. Methods applied in this workshop is participatory teaching,
    emphasizes on full participation of the participant in every section and
    activities during the workshop, instead of lecture method.
-2. Participants oriented. Participants are encouraged to find and getting
-   knowledge and skill needed by themselves.
-3. Trainers serve as facilitators. Trainers only facilitate in order to the
-   ideas emerged during the workshop come from the participants,
-   not only from trainers. However, trainers must be ready and give the better
-   knowledge and argument when the participants need any assistance.
+2. Participants oriented.
+   Participants are encouraged to find and getting knowledge and skill needed
+   by themselves.
+3. Trainers serve as facilitators.
+   Trainers only facilitate in order to the ideas emerged during the workshop
+   come from the participants, not only from trainers.
+   However, trainers must be ready and give the better knowledge and argument
+   when the participants need any assistance.
 4. *Outcome* oriented. Workshop must produces *outcomes* mentioned before.
 
 Tools
 ^^^^^
-1. Copy of 'Data Collection Using OSM for Beginner Guide' for participants
-2. A place or room, with tables and seats
+1. Copy of 'Data Collection Using OSM for Beginner Guide' for participants.
+2. A place or room, with tables and seats.
 3. Computer (ideally, one computer is used by two participants,
-   but it will be better if one computer is used by one participant)
-4. A Printer (to print out *Field Papers*)
+   but it will be better if one computer is used by one participant).
+4. A Printer (to print out *Field Papers*).
 5. A Projector (to present slide and demonstrate technical instruction and
-   software)
+   software).
 6. *GPS* devices (ideally, one *GPS* is used by two or three participants in
-   a group)
-7. Battery for *GPS* devices
-8. USB cable to connect *GPS* devices to computer
-9. USB *Flashdisk* to transfer *file* and *software*
-10. Good internet connection
-11. Snacks and Coffee Break
+   a group).
+7. Battery for *GPS* devices.
+8. USB cable to connect *GPS* devices to computer.
+9. USB *Flashdisk* to transfer *file* and *software*.
+10. Good internet connection.
+11. Snacks and Coffee Break.
 
 Schedule
 ^^^^^^^^
 Below is *outline* of schedule for 5 days workshop that has been tested in
-several groups in different workshop in Indonesia. You may change some of
-them that might be more useful, applicable, and meet your needs depend on
-some factors must be considered as we have discussed before.
+several groups in different workshop in Indonesia.
+You may change some of them that might be more useful, applicable,
+and meet your needs depend on some factors must be considered as we have
+discussed before.
 
 Day I:
 ******
@@ -216,6 +218,7 @@ Day V:
 
 **Session 1**
 ^^^^^^^^^^^^^
+
 Basic Concept of *OpenStreetMap* Website
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 90 minutes
@@ -320,32 +323,34 @@ Activities
 FAQ (Frequently Asked Question)
 *******************************
 
-**How  did the UK begin mapping? How did OpenStreetMap start?**
+**How did the UK begin mapping? How did OpenStreetMap start?**
 
 *OpenStreetMap* start with just a handful of volunteers who had GPS devices.
 They would go out, collect data on their GPS and make sketches of maps and
-take notes, and then add the data into OSM database at home. These initial
-volunteers hosted "Mapping Parties" in different towns,
-in which anybody could come out with them one day and go mapping.  These
-parties helped expand the network of volunteers, get more people involved,
-and create great maps of different towns.
+take notes, and then add the data into OSM database at home.
+These initial volunteers hosted "Mapping Parties" in different towns,
+in which anybody could come out with them one day and go mapping.
+These parties helped expand the network of volunteers,
+get more people involved, and create great maps of different towns.
 
 **How did they create maps so thoroughly? What technologies did they use?**
 
-At the beginning, mappers only have GPS to work with, and any map  data that
-was freely given to the *OpenStreetMap* community. Later,
-*OSM* made a deal with *Yahoo!* To be able to use their satellite imagery
-to draw maps with. More recently, Microsoft has made its imagery available
-to *OSM*.
+At the beginning, mappers only have GPS to work with, and any map data that
+was freely given to the *OpenStreetMap* community.
+Later, *OSM* made a deal with *Yahoo!* to be able to use their satellite
+imagery to draw maps with.
+More recently, Microsoft has made its imagery available to *OSM*.
 
 **Can we use OSM with Google Maps?**
 
 It is not legal to use *Google Maps* as a resource when editing
-*OpenStreetMap*.  Google has not given permission for this like Microsoft
-has, and so it is not acceptable to use.
+*OpenStreetMap*.
+Google has not given permission for this like Microsoft has,
+and so it is not acceptable to use.
 
 **Session 2**
 ^^^^^^^^^^^^^
+
 Working with *OSM*
 ^^^^^^^^^^^^^^^^^^
 Time : 180 minutes
@@ -451,29 +456,30 @@ Activities
 FAQ (Frequently Asked Question)
 *******************************
 
-**Forget Password**
+**Forgot Password**
 
-Sometimes participants forget their password. In this case,
-you need to help
-them to reset or make a new password, if that is not possible you have to
-make a new email account. If the participants already have *OpenStreetMap*
-account but they forget the password, you could help them to reset their
-password and sent it to their email.
+Sometimes participants forget their password.
+In this case,you need to help them to reset or make a new password,
+if that is not possible you have to make a new email account.
+If the participants already have *OpenStreetMap* account but they forget the
+password, you could help them to reset their password and sent it to their
+email.
 
 **Do not have email**
 
-If participants do not have email account, you need to help them make a new one.
+If participants do not have email account, you need to help them make a new
+one.
 
 **The software not installed (Flash)**
 
 If you decided to show participants how to edit using *Potlach editor* in the
-*OSM* website, first they need to install Flash on their computer. The guide
-to install flash is in the **Beginner�s Guide**.  Please remember this
-activity would takes some hours for this session.
-
+*OSM* website, first they need to install Flash on their computer.
+The guide to install flash is in the **Beginners Guide**.
+Please remember this activity would takes some hours for this session.
 
 **Session 3**
 ^^^^^^^^^^^^^
+
 Working with *JOSM*
 ^^^^^^^^^^^^^^^^^^^
 Time : 180 minutes
@@ -513,7 +519,6 @@ Core Material
       - Nodes, Ways, and Shapes
       - Change Objects
       - Add Presets
-
 
 Activities
 **********
@@ -574,29 +579,34 @@ Common Problem
 
 **Setting on Mac and Ubuntu**
 
-The Step to setting on Mac and Ubuntu is quite easy. JOSM is a software based
-on Java so do with the platform independent, but you have to make sure your
-Java is already installed in your computer system. GPSBabel does not have
-GUI for Linux, so it would be hard to Linux users especially for newbie
-users. This software does not include in system packet for Windows but it is
-easy to download.
+The Step to setting on Mac and Ubuntu is quite easy.
+JOSM is a software based on Java so do with the platform independent,
+but you have to make sure your Java is already installed in your computer
+system.
+GPSBabel does not have GUI for Linux, so it would be hard to Linux users
+especially for newbie users.
+This software does not include in system packet for Windows but it is easy to
+download.
 
 **JOSM runs out of memory**
 
 Sometimes if someone download a lot of imagery and data on JOSM,
-your computer runs out of memory and crash. The solution is start JOSM with
-a batch file that will tell JOSM to add extra memory. A file batch example
-is provide in this toolkit, but you have to edit it using text editor to put
-the file-josm.jar in the right way.
+your computer runs out of memory and crash.
+The solution is start JOSM with a batch file that will tell JOSM to add extra
+memory.
+A file batch example is provide in this toolkit, but you have to edit it
+using text editor to put the file-josm.jar in the right way.
 
 **Participants add tag on nodes not in the ways**
 
 Sometimes it is difficult to OSM new users to understand that way is consist
-from some nodes. Therefore any tag that you put supposed add on the ways or
-polygon rather than nodes on the ways. As an example, new users select all
-nodes on the objects by draw a box around the object. This is make all of
-nodes have tag whereas they supposed to do not have tag. This is important
-for you to know from beginning, for a good mapping.
+from some nodes.
+Therefore any tag that you put supposed add on the ways or polygon rather
+than nodes on the ways.
+As an example, new users select all nodes on the objects by draw a box around
+the object.
+This is make all of nodes have tag whereas they supposed to do not have tag.
+This is important for you to know from beginning, for a good mapping.
 
 FAQ (Frequently Asked Question)
 *******************************
@@ -604,44 +614,51 @@ FAQ (Frequently Asked Question)
 **Is there any easy way to restart JOSM after we finish install plugins?**
 
 Yes, there is a plugin that you can add which allow you to restart JOSM by
-click a button. To activate it, install it in preferences.
+click a button.
+To activate it, install it in preferences.
 
 **Could we make a tag in Bahasa Indonesia?**
 
-Theoretical, you can add any tag to nodes, ways or shapes on OSM. But
-because all of the objects on OSM save in international databases and cover
-whole world, need consensus about how to make a tag. As an example,
-hospital still a hospital in England, France, even Indonesia. If every
-country give a tag with their own language it will be difficult and confusing
-to show the icon or symbol for different location. Because OSM made in
-England, English Language is language which accepted for tag. However if you
-want to make preset menu using your own language it still possible and when
-you click that preset is still can use.
+Theoretical, you can add any tag to nodes, ways or shapes on OSM.
+But because all of the objects on OSM are saved in international databases
+and cover the whole world, we need a consensus about how to make a tag.
+As an example, a hospital is still a hospital in England, France and
+even in Indonesia.
+If every country gives a tag with their own language it will be difficult and
+confusing to show the icon or symbol for different locations.
+Because OSM is made in England, and english is a very common language
+all over the world, the english language is the language which is accepted for
+tagging in OpenStreetMap.
+However if you want to make the preset menu using your own language it is
+still possible.
 
-**Could we change the color of nodes and ways and could we change the icon and symbol? How we print it?**
+**Can we change the color of nodes and ways and can we change the icon and symbol? How can we print it?**
 
-You can change the color of the objects in setting menu. This is very
-useful, especially when we hard to see nodes on ways and shapes in different
-background. When Participants ask about how to change the symbol or show the
-name of objects, you need to tell them that this program is for editing data
-not to see the preview or result and print a map. All of nodes and tag will
-be saved in database, but some other software could you use to make your
-map better. As an example is OpenStreetMap, but there is another more
-available.  The difference between editing data and rendering on another
-software might be quite hard to understand by participants in the beginning.
+You can change the color of the objects in setting menu.
+This is very useful especially when it is hard to see nodes on ways and
+shapes on different background.
+When Participants ask about how to change the symbol or show the name of
+objects, you need to tell them that this program is for editing data
+not to see the preview or result and print a map.
+All of nodes and tag will be saved in a database, but you can use some other
+software to make your map better.
+A good example is OpenStreetMap, but there are a lot more available.
+The difference between editing data and rendering on another software might
+be quite hard to understand by participants in the beginning.
 
 **What the difference between preset and tag?**
 
 Tag is a part of information that you can put in nodes,
-ways or shapes (polygon) to describe one of the attributes. Preset is a
-simple way to give a tag to the objects without how to fix the tag manually.
-As an example you have to give tag to the hospital with tag amenity=hospital
-to identify it correctly, but because there is a lot of tag it is easier by
-preset menu that will make a correct tag automatically.
-
+ways or shapes (polygon) to describe one of the attributes.
+Preset is a simple way to give a tag to the objects without knowing how to fix
+the tag manually.
+As an example you have to give a tag to the hospital (tag amenity=hospital)
+to identify it correctly, but because there is are lots of tags it is easier
+using the preset menu that will make the correct tag automatically.
 
 **Session 4**
 ^^^^^^^^^^^^^
+
 Using GPS
 ^^^^^^^^^
 Time : 6 hours 15 minutes
@@ -775,38 +792,38 @@ Common Problem
 
 It is not good thing if your GPS run of your battery,
 so make sure every group have reserved battery when they go out to mapping.
-When they come back, they need to move data from GPS to computer,
-It is better if every group bring reserved cable so more fast when we want to
-copy the data to computer.
+When they come back, they need to move data from GPS to computer.
+It is better if every group has their own cable, in that way it will be a lot
+faster copying the data to the computer.
 
 **Same format to all GPS**
 
-Before training, make sure all GPS in the same format,
-this is for make participants not confuse. Main point that we have to make
-sure are:
+Before training, make sure all GPS devices are set to the same format.
+This is for not confusing the participants.
+The main point that we have is to make sure that:
 
-- Arrangement from page is same: Main Menu. Track Menu, Map, Satellites
-- Save coordinate in decimal degrees
-- Unit in meter
-- Elevation has been calibrated
+- Arrangement from page is same: Main Menu. Track Menu, Map, Satellites.
+- Save coordinate in decimal degrees.
+- Units are in meter.
+- Elevation has been calibrated.
 
 FAQ (Frequently Asked Question)
 *******************************
 
-**What projection that GPS use to collect the Data?**
+**What projection does that GPS use to collect the Data?**
 
-GPS can be set to record in different projection, but for our need,
-GPS we will be set on coordinate geographic WGS84.
+GPS can be set to record in different projections, but for our need,
+the GPS must be set on coordinate geographic projection WGS84 (EPSG:4326).
 
-**How accurate the GPS? How accuracy can affected the data?**
+**How accurate is the GPS? How can the accuracy affect the data?**
 
-Your GPS usually has accuracy about 3-15 meter. Satellites pages on your GPS
-indicate accuracy when in use. For mapping need, inaccuracy like that could
-be ignored.
-
+Your GPS usually has an accuracy of about 3-15 meter.
+Satellites pages on your GPS indicate the accuracy when it is in use.
+For our mapping needs, inaccuracy like that can be ignored.
 
 **Session 5**
 ^^^^^^^^^^^^^
+
 *Field Papers*
 ^^^^^^^^^^^^^^
 Time : 6 hours 15 minutes
@@ -917,26 +934,27 @@ Activities
 FAQ (Frequently Asked Question)
 *******************************
 
-**How we can print big size map? Example for poster or community mapping project?**
+**How can we print big size maps?**
+**An example for poster or community mapping project?**
 
-One of the best way to do this is using QGIS program, but this is would not
-discuss in this session. You can make some clue about QGIS after you
-practice and understand how to make a big size map. If you need to make it
-now, you can using http://fieldpapers.org and make it together.
+One of the best way to do this is using the QGIS program,
+but this is not a topic covered in this session.
+You can make some clue about QGIS after you practice and understand how to
+produce a big size map.
+If you need to do it now, you can use http://fieldpapers.org.
 
 **How to scan Field Papers?**
 
-You can use scanner or handphone or camera to take photo of field papers
-then put it into JOSM.
+You can use a scanner or a mobile(smartphone) or a camera to take photos of
+field papers and then put it into JOSM.
 
-**What should I do if upload process Field Papers really slow/do not work?**
+**What should I do if uploading the process Field Papers is really slow or does not work at all?**
 
-Unfortunately, Field Papers website not always 100% working even the process
-could be longer than your lunch break. This is the trainer could say to
-participants. They can use Field Papers as a note and you (trainer) can show
-to them how to put imagery and using GPS data, this is could help them to
-edit their map with the same way.
-
+Unfortunately, the Field Papers website is not always 100% working.
+The process of uploading a Paper could be longer than your lunch break.
+The participants can use the Field Papers as a note and you (trainer) can
+show them how to put imagery and use GPS data.
+This could help them to edit their map in the same way.
 
 **Session 6**
 ^^^^^^^^^^^^^
@@ -1057,36 +1075,43 @@ Activities
 FAQ (Frequently Asked Question)
 *******************************
 
-**Should I use the point or polygon to identify a restaurant in a mall?**
+**Should I use a point or a polygon to identify a restaurant in a mall?**
 
-You should use the point to which one. Polygon that good used if you know
-clearly the shape of a building or area, and if you want to identify a
-landmark in the larger polygon, such as a building is better to use point.
+You should use the point.
+Polygons are used if you clearly know the shape of a building or area.
+If you want to identify a landmark inside a larger polygon,
+such as a building it is better to use a point.
 
-**How to mapping a bridge in JOSM?**
+**How to map a bridge in JOSM?**
 
-To mark a bridge, you need to do a split (separate) bridge lines along of
-other parts of the line which is the usual way. If you have a road that
-crosses a river, you can click on the dots on the side of the river and press
-'P' on the keyboard to split the line at that point. Then the selected line
-can be mark bridge with preset menu.
+To mark a bridge, you need to split the lines which mark the bridge (usually
+a way) on both sides of the bridge.
+If you have a road that crosses a river, you can click on the dots on the
+side of the river and press 'P' on the keyboard to split the line at that
+point.
+Then the selected line can be tagged as bridge using the preset menu.
 
-**How to create building was digitized have square perfect?**
+**How to digitize a building to have perfect square shape?**
 
-Not easy to make a perfect box, then there are tools that can make the
-proper angle at each corner of a polygon. Select polygon and press 'Q' on
-the keyboard to shape polygon.
+It is not easy to make a perfect square only using you own hand.
+Luckily there are tools that can make the proper angle at each corner of a
+polygon.
+Select the polygon (building) and press 'Q' on the keyboard to shape
+that polygon.
 
-**The map has not been updated OpenStreetMap edits**
+**The map on OpenStreetMap does not show the edits immediately**
 
-Usually it will take about 5-10 minutes to see change existing maps in
-OpenStreetMap. If after that you still can not see the changes may be due to
-your browser captures the old maps. The first step refresh your page. If not
-successful then you should delete cache in your browser. You can choose for
-example in Google Chrome you select Tools -> Clear Browsing Data. You can
-select "Empty the cache" and click "Clear browsing data. After that you call
-or go to the website again you have the new map should appear.
-
+Usually it will take about 5-10 minutes to see your changes appearing
+on the existing maps in OpenStreetMap.
+If you can not see the changes on OpenStreetmap after that time it may be due
+to your browser is still caching the old map.
+The first step in this case is to reload the page in your browser.
+If this is not successful you should delete the cache in your browser.
+For example in Google Chrome you select Tools -> Clear Browsing Data.
+Select "Empty the cache" and click "Clear browsing data.
+Than refresh the page again and your edits should appear.
+Sometimes it still can take a while until changes to OpenStreetMap appear on
+the main page.
 
 **Session 7**
 ^^^^^^^^^^^^^
@@ -1158,14 +1183,15 @@ Time : 90 minutes
 
 Basic Competency
 ****************
-8. Getting OSM data in a certain format for further analysis in Geography
+8. Getting OSM data in a certain format for further analysis in Geographic
 Information System (GIS) software.
 
 Indicator
 *********
-1. Download OpeStreetMap data from Geofabrik Website
-2. Download OpenStreetMap data in according to region and necessary data by
-   using Hot-Export
+1. Download OpenStreetMap data from the `Geofabrik <http://www.geofabrik.de/>`_
+   webpage.
+2. Download OpenStreetMap data according to the region and necessity by
+   using Hot-Export.
 
 Outcome
 *******
@@ -1176,9 +1202,10 @@ Core Material
 *************
 **Getting OSM Data**
 
-1. Download OpenStreetMap data from Geofabrik website
-2. Download OpenStreetMap data in according to region and necessary data by
-   using Hot-Export
+1. Download OpenStreetMap data from the `Geofabrik <http://www.geofabrik.de/>`_
+   webpage.
+2. Download OpenStreetMap data according to the region and necessity by
+   using Hot-Export.
 
 Activities
 **********
@@ -1198,7 +1225,7 @@ Activities
 |    website that can be processed by software QGIS                 |               |               |
 |    and InaSAFE.                                                   |               |               |
 | 2. Participants were asked to download vector files via           |               |               |
-|    Geofabrick website.                                            |               |               |
+|    Geofabrik website.                                             |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Download vector file OSM via Hot-Export website 30'**           | Lecture       | Computer      |
 |                                                                   |               |               |
@@ -1237,16 +1264,19 @@ Activities
 | - How to participants can join the mailing talk-id                |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-Common Problem
-**************
+Common Problems
+***************
 
-You need to know that server Hot-Export using a first come-first serve means
-the server serves the user who executes the first data request OSM. The size
-of the desired area also affect the process of Hot-Export. The greater total
-area will eat the longer process.
+You need to know that the Hot-Export server uses a first come - first serve
+strategy.
+That means the server serves the user who executes the first data request
+first.
+The size of the desired area also affects the process of Hot-Export.
+The greater the total area is the longer the process will take.
 
 **Error with osm2pgsql**
 
-It means hot-export server to crash. This can occur because the storage space
-on the server hard drive was full. Report this disruption to
-team.id@hotosm.org for later followed up.
+That means that the Hot-Export server has crashed.
+This can occur because the storage space on the server HD is filled up and
+there is no space left to process your data.
+Report this disruption to team.id@hotosm.org.
