@@ -248,9 +248,13 @@ buildings by aggregation boundary.
 .. image:: /static/training/socialisation/034_print.png
    :align: center
 
-20. Navigate to where you would like to save the pdf, add :kbd: `_1m` at the end of
-*Buildings_inundated* :guilabel:`Save`
+20. You can choose whether you want print the whole analysis or current extent.
+    You also can pick print template or you can navigate to your own QGIS template
+    (.qpt). Click :guilabel:`Open PDF` then navigate to where you would like to 
+    save the pdf, add :kbd: `_1m` at the end of *Buildings_inundated* :guilabel:`Save`
 
+.. image:: /static/training/socialisation/034_print2.png
+   :align: center
 
 Optional - Change the threshold to 0.8
 ......................................
