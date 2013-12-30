@@ -147,7 +147,7 @@ Get |project_name| ::
   cd dev/python
   git clone git://github.com/AIFDR/inasafe.git inasafe-realtime
   cd inasafe-realtime
-  sudo apt-get install python-tz paramiko
+  sudo apt-get install python-tz python-paramiko
 
 Setup Apache::
 
