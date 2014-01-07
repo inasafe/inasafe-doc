@@ -1,4 +1,4 @@
-. _objective:
+.. _objective:
 
 Objective
 =========
@@ -14,7 +14,7 @@ Target Audience
   district levels.
 * Lecturers and students from relevant departments such as Geography,
   Geodesy, Geomathics, Information Technology and other earth-related science.
-* Representatives from NGOs working in disaster risk reduction
+* Representatives from NGOs working in disaster management
 * Other relevant organizations and agencies
 
 Prerequisites
@@ -28,16 +28,17 @@ Prerequisites
   * Minimum RAM of 2 GB (recommended 4 GB)
   * WIFI - connected to the internet
   * Windows (XP, 7, 8), Linux (Training Ubuntu later than 12.04) or similar
-    (e.g. Mint or Debian), Mac OSX (Lion - 10.7,  Snow Leopard -10.6)
+    (e.g. Mint or Debian), Mac OSX (Maverick through to Snow Leopard -10.6)
   * |QGIS| 1.8 installed http://www.qgis.org or ability to install software
     on computer i.e. have administration password
 
 Credits
 -------
-|project_name| Socialisation Training Manual was developed by
-Australia-Indonesia Facility for Disaster Reduction (|AIFDR|),
-The National Agency for Disaster Management, Indonesia and World Bank ‘s
-Global Facility for Disaster Reduction and Recovery Labs (World Bank-|GFDRR|).
+|project_name| Socialisation Training Manual was developed by Indonesia and
+ Australian Governments through Australia-Indonesia Facility for Disaster
+ Reduction (|AIFDR|) and Indonesian Agency for Disaster Management,
+ and World Bank ‘s Global Facility for Disaster Reduction and Recovery Labs
+ (World Bank-|GFDRR|).
 
 Manual based on:
 ................

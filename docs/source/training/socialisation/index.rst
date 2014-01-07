@@ -5,15 +5,14 @@ Socialisation
 
 This training course is designed to have hands on experience with
 |project_name|.
-It is not designed as a comprehensive course (we are still currently working
-on those), but to give participants an idea of what |project_name| is capable
+It is not designed as a comprehensive course (please see :ref:`training`),
+but to give participants an idea of what |project_name| is capable
 of doing.
 The course is scheduled to only run for 1/2 day.
 
-The data used in this course is available for download on
-`data.inasafe.org <http://data.inasafe.org/>`_.
-Ask your trainer which data you will need to download or your trainer will
-give you the data on a USB-Stick anyway.
+The data used in this course is available for download in English on
+`data.inasafe.org <http://data.inasafe.org/InaSAFE_Resources/Scenario
+Package Data/InaSAFE Project.zip>`_
 
 .. toctree::
    :maxdepth: 1

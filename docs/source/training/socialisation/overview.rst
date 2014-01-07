@@ -14,11 +14,12 @@ emergency managers need to answer questions like:
 - how many people will need to be evacuated and sheltered;
 - which schools will be closed;
 - which hospitals can still take patients; and
-- which roads will be closed?
+- which roads are blocked?
 
-Conceptually |project_name| combines one exposure layer (e.g. location of buildings) with
-one hazard scenario (e.g. flooding footprint) and returns a spatial impact layer along
-with textual statistical summary and action questions.
+Conceptually |project_name| combines one exposure layer (e.g. location of
+buildings) with one hazard scenario (e.g. flooding footprint) and returns a
+spatial impact layer along with textual statistical summary and action
+questions.
 
 |project_name| is framed around questions such as:
 
@@ -28,7 +29,8 @@ with textual statistical summary and action questions.
 .. image:: /static/training/socialisation/001_inasafe_concept.png
 
 |project_name| is also able to aggregate the impact results by administration
-boundary and provided breakdown information about gender and age of affected people.
+boundary and provided breakdown information about gender and age of affected
+people.
 
 Background
 ----------
@@ -39,9 +41,9 @@ development progress as a result of natural disasters. The development of
 contingency plans is seen as an important step to strengthen disaster risk
 reduction programs. However this can only be effective when contingency plans
 utilise realistic hazard scenario. Realistic hazard scenarios require
-scientific, sound and up-to-date data hazard information as well as up-to-date, scale
-appropriate exposure.  Such map-based contingency plans offer accurate and
-comprehensive results in calculating minimum relief items,
+scientific, sound and up-to-date data hazard information as well as up-to-date,
+scale appropriate exposure information.  Such map-based contingency plans
+offer accurate and comprehensive results in calculating minimum relief items,
 identifying safe places, and sectorial planning.
 
 |project_name| is free and open source software that provides a simple but
@@ -51,11 +53,12 @@ events. The software is focused on examining, in detail,
 the impacts by a single hazard would have on specific sectors. For example
 location of primary schools and estimated number of students affected by a
 possible tsunami in Maumere (when it happened during the school hours).
-|project_name| has been developed as a QuantumGIS plugin to enable end users
+|project_name| has been developed as a |QGIS| plugin to enable end users
 to not only complete an InaSAFE analysis, but to also analysis the result using
-the suite of QGIS tools that are available. The software has been designed as a
-simple user interface in a hope that disaster managers and end users can easily
-use |project_name| for creating impact maps to inform contingency planning.
+the suite of |QGIS| tools that are available. The software has been designed
+as a simple user interface in a hope that disaster managers and end users can
+ easily use |project_name| for creating impact maps to inform contingency
+ planning.
 
 |project_name| was preliminarily launched by Dr Agus Wibowo, Head of the Data
 Center at the Indonesia’s Disaster Management Agency (|BNPB|),
@@ -77,9 +80,9 @@ disaster scenarios for contingency planning. The other 2 tools are:
    and edit. Utilizing community mapping allows for more detailed information
    that can be fed into |project_name| (i.e. How many houses will be affected
    by a specific hazard).
-#. QuantumGIS (|QGIS|): an open source Geographical Information System
-   software that allows users to spatially analyse their data. It is also the
-   platform on which |project_name| is built.
+#. |QGIS|: an open source Geographical Information System software that
+allows users to spatially analyse their data. It is also the platform on
+which |project_name| is built.
 
 |project_name| was selected as a 2012 Open Source Rookie of the Year by Black
 Duck, the trusted partner for open source software adoption,
@@ -103,15 +106,14 @@ local communities and government departments responsible for each sector,
 often through a facilitated part of a disaster preparedness and planning
 exercise.
 
-If the spatial data does not yet exist, external tools such as OpenStreetMap
-(|OSM|) can allow governments and communities to quickly and easily map
+If the spatial data does not yet exist, external tools such as
+|OSM| can allow governments and communities to quickly and easily map
 their assets that are important to them.
 
-.. note:: It is important to note that |project_name| is not a hazard
-   modelling tool. Information on hazards needs to be provided either by
-   technical experts, often from Government agencies,
-   universities or technical consultants, or from communities themselves
-   based on their previous experiences.
+.. note::  |project_name| is *NOT* a hazard modelling tool. Information on
+hazards needs to be provided either by technical experts, often from Government
+agencies, universities or technical consultants, or from communities themselves
+based on their previous experiences.
 
 The more communities, scientists and governments share data and knowledge,
 the more realistic and useful the |project_name| scenario will be.
@@ -165,7 +167,7 @@ Exposure
 
 For |project_name|, exposure data is refers to as population density (number
 of people found in a certain area) or important infrastructure (buildings,
-bridges etc). that become a focus of interest when calculating the impact of
+bridges etc) that become a focus of interest when calculating the impact of
 a specific hazard.
 
 +--------------------------+-------------------------------------------+
@@ -199,9 +201,9 @@ affected?“, is the core question that is answered by InaSAFE, but aggregation
 adds to this by providing options to divide your results by area such as
 province boundaries. Instead of just knowing the total number of people affected
 by the hazard, |project_name| is able to aggregate
-allowing the user know how many people are affected in a certain administration
-area. Hence the local governments will be able understand the impact to their
-specific area.
+allowing the user to know how many people are affected in a certain
+administration area. Hence the local governments will be able understand the
+impact to their specific area.
 
 
 Impact Function
