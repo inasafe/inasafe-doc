@@ -10,7 +10,7 @@ Package::safe.common
    common/geodesy
    common/dynamic_translations
    common/signals
-   common/converter
+   common/shake_grid_converter
    common/utilities
    common/exceptions
    common/tables

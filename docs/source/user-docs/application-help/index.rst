@@ -19,3 +19,4 @@ This document explains the purpose of the different functions available in
    batch_runner
    save_scenario
    openstreetmap_downloader
+   impact_layer_merge_tool
