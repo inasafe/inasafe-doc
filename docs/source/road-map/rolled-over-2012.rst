@@ -14,7 +14,7 @@ Real time earthquake impact system
 ..................................
 
 Replacement of prototype earthquake impact system which has been running at
-BPNB since August 2011. The replacement will address some shortcomings of the
+BNPB since August 2011. The replacement will address some shortcomings of the
 prototype to do with appearance of automatically generated map,
 extensibility and maintenance. The transition to |project_name| also allows
 for the inclusion of fatality estimates. The replacement was developed by
