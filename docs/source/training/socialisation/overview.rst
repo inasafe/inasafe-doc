@@ -6,8 +6,8 @@ Overview
 Concept
 -------
 To effectively prepare for future floods, earthquakes or tsunami you must
-first understand the likely impacts that need to be managed. For example,
-to prepare a contingency plan for a severe flood in Jakarta,
+first understand the likely impacts that need to be managed.
+For example, to prepare a contingency plan for a severe flood in Jakarta,
 emergency managers need to answer questions like:
 
 - what are the areas likely to be affected;
@@ -61,13 +61,13 @@ as a simple user interface in a hope that disaster managers and end users can
  planning.
 
 |project_name| was preliminarily launched by Dr Agus Wibowo, Head of the Data
-Center at the Indonesia’s Disaster Management Agency (|BNPB|),
+Center at the Indonesia´s Disaster Management Agency (|BNPB|),
 at the Understanding Risk Forum in Cape Town on 3 July,2012. There were over 300
 downloads of the software within the first three weeks of its preliminary launch.
 
 |project_name| (Version 1.0) was officially launched at the 5th Asian
 Ministerial Conference for Disaster Risk Reduction in Yogyakarta,
-23–25 October 2012, by Mr Dodi Ruswandi, the Deputy for disaster reduction
+23-25 October 2012, by Mr Dodi Ruswandi, the Deputy for disaster reduction
 and preparedness, |BNPB|, Mr Abhas Jha,  Disaster risk management coordinator
 for East Asia and the Pacific from the World Bank, and Dr Matt Hayne co-director
 of Australia-Indonesia Facility for Disaster Reduction (|AIFDR|).
@@ -76,8 +76,8 @@ of Australia-Indonesia Facility for Disaster Reduction (|AIFDR|).
 the 3 open source software tools used to enable development of realistic
 disaster scenarios for contingency planning. The other 2 tools are:
 
-#. OpenStreetMap (|OSM|): is a free map of the world that anyone can add to
-   and edit. Utilizing community mapping allows for more detailed information
+#. OpenStreetMap (|OSM|): is a free map of the world that anyone can add to and edit.
+   Utilizing community mapping allows for more detailed information
    that can be fed into |project_name| (i.e. How many houses will be affected
    by a specific hazard).
 #. |QGIS|: an open source Geographical Information System software that
