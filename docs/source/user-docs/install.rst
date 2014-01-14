@@ -50,7 +50,7 @@ this test version.
       :align: center
 
 6. You should now have 2 repositories connected, :guilabel:`Click` on
-   **Installed** and check that InaSAFE plugin is :guilabel:`Check
+   **Installed** and check that InaSAFE plugin is :guilabel:`Check`
 
    .. image:: /static/user-docs/InaSAFE_installed.*
       :align: center

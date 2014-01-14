@@ -70,7 +70,7 @@ for East Asia and the Pacific from the World Bank, and Dr Matt Hayne co-director
 of Australia-Indonesia Facility for Disaster Reduction (|AIFDR|).
 
 |project_name| (Version 2.0) will officially be launched at the opening of
-the InaDRTG center in Jakarta in March 2014 by |BNBP|.
+the InaDRTG center in Jakarta in March 2014 by |BNPB|.
 
 |project_name| is being taught across 6 provinces in Indonesia as one of
 the 3 open source software tools used to enable development of realistic

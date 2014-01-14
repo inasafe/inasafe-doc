@@ -90,7 +90,6 @@ your desktop, or you can find it in your start menu.
 .. image:: /static/training/socialisation/012_qgis_desktop.*
    :align: center
 
-
 2. A hint window will come up, close the window by clicking :guilabel:`OK`.
 
 .. image:: /static/training/socialisation/013_tips.*
@@ -188,9 +187,9 @@ Installing |project_name| through the QGIS plugin repository
 hence please follow instructions to download the InaSAFE experimental
 :ref:`install` and skip steps 11-14.
 
-11. Go to :menuselection:`Plugins --> Manage and Install Plugins` This will take
-    a couple of minutes for QGIS to contact its repository and show the list of
-    plugins available
+11. Go to :menuselection:`Plugins --> Manage and Install Plugins` This will
+take a couple of minutes for QGIS to contact its repository and show the list
+ of plugins available
 
 12. Go to :guilabel:`New` tab. Type :kbd:`inasafe` into the filter box
 
@@ -231,6 +230,7 @@ hence please follow instructions to download the InaSAFE experimental
 .. image:: /static/general/icon_batch.*             Batch Runner
 .. image:: /static/general/icon_save.*              Save Current Scenario
 .. image:: /static/general/icon_osm.*               OpenStreetMap downloader
+.. image:: /static/general/icon_merge.*             Impact Layer Merge
 =================================================   ========================
 
 .. Note:: Later we will explore and use these tools.  For more information
