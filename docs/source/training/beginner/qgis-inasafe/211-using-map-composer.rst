@@ -65,54 +65,40 @@ change paper size, number of pages, and quality of output.
 Take a look at the icons across the top of the window.  We will use some
 of these as we lay our map out, so here’s an overview of what they do:
 
-   **Add New Map** will add a map element.  This is what we will use to add
-   the map from our project into our print layout.  It should be noted,
-   however, that if we change the map in our QGIS project,
-   it will not update the same map that we have added to our print composer,
-   as we shall see later.
 
-.. figure:: /static/training/beginner/qgis-inasafe/image249.*
-   :align: center
 
-   **Add Image** allows us to add a picture.  You can add a company or
-   organizational logo, or simply display images from a particular location.
-   You can also add an image of a compass (to point North).
++----------------------------------------------------------------+--------------------------------------------------------------------------+
+| Display Icon                                                   | Function                                                                 |
++================================================================+==========================================================================+
+| .. image:: /static/training/beginner/qgis-inasafe/image249.*   | **Add New Map** will add a map element.  This is what we will use to add |
+|                                                                | the map from our project into our print layout.  It should be noted,     |
+|                                                                | however, that if we change the map in our QGIS project,                  |
+|                                                                | it will not update the same map that we have added to our print composer,|
+|                                                                | as we shall see later.                                                   |
++----------------------------------------------------------------+--------------------------------------------------------------------------+
+| .. image:: /static/training/beginner/qgis-inasafe/image250.*   | **Add Image** allows us to add a picture.  You can add a company or      |
+|                                                                | organizational logo, or simply display images from a particular location.|
+|                                                                | You can also add an image of a compass (to point North).                 |
++----------------------------------------------------------------+--------------------------------------------------------------------------+
+| .. image:: /static/training/beginner/qgis-inasafe/image251.*   | **Add New Label** is used for adding text to the layout,                 |
+|                                                                | such as titles or other information.                                     |
++----------------------------------------------------------------+--------------------------------------------------------------------------+
+| .. image:: /static/training/beginner/qgis-inasafe/image252.*   | **Add New Legend** is for adding a legend, which will conform to the     |
+|                                                                | active layer in the QGIS window.                                         |
++----------------------------------------------------------------+--------------------------------------------------------------------------+
+| .. image:: /static/training/beginner/qgis-inasafe/image253.*   | **Add New Scalebar** is used to add a scale to the layout.               |
++----------------------------------------------------------------+--------------------------------------------------------------------------+
+| .. image:: /static/training/beginner/qgis-inasafe/image254.*   | **Add Ellipse/Triangle/Rectangle** is used to add one of these geometric |
+|                                                                | shapes.  For example, this might be used to indicate special areas or    |
+|                                                                | highlight things on the map.                                             |
++----------------------------------------------------------------+--------------------------------------------------------------------------+
+| .. image:: /static/training/beginner/qgis-inasafe/image255.*   | **Add Arrow** is used to draw an arrow on the map layout.                |
++----------------------------------------------------------------+--------------------------------------------------------------------------+
+| .. image:: /static/training/beginner/qgis-inasafe/image256.*   | **Select / Move Item** allows us to move choose and move the elements    |
+|                                                                | that you add to the map layout.  With this tool selected,                |
+|                                                                | you can right -click on an element to lock its position.                 |
++----------------------------------------------------------------+--------------------------------------------------------------------------+
 
-.. figure:: /static/training/beginner/qgis-inasafe/image250.*
-   :align: center
-
-   **Add New Label** is used for adding text to the layout,
-   such as titles or other information.
-
-.. figure:: /static/training/beginner/qgis-inasafe/image251.*
-   :align: center
-
-   **Add New Legend** is for adding a legend, which will conform to the
-   active layer in the QGIS window.
-
-.. figure:: /static/training/beginner/qgis-inasafe/image252.*
-   :align: center
-
-   **Add New Scalebar** is used to add a scale to the layout.
-
-.. figure:: /static/training/beginner/qgis-inasafe/image253.*
-   :align: center
-
-   **Add Ellipse/Triangle/Rectangle** is used to add one of these geometric
-   shapes.  For example, this might be used to indicate special areas or
-   highlight things on the map.
-
-.. figure:: /static/training/beginner/qgis-inasafe/image254.*
-   :align: center
-
-   **Add Arrow** is used to draw an arrow on the map layout.
-
-.. figure:: /static/training/beginner/qgis-inasafe/image255.*
-   :align: center
-
-   **Select / Move Item** allows us to move choose and move the elements
-   that you add to the map layout.  With this tool selected,
-   you can right -click on an element to lock its position.
 
 **2. Add New Map**
 
