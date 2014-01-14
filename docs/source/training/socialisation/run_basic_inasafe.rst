@@ -116,9 +116,9 @@ Print Results
 .............
 
 .. note:: You can choose whether you want print the whole analysis or current
-extent. You also can pick print template or you can navigate to your own QGIS
- template (.qpt). For more information about printing Click :guilabel:`Help`
- in the print window.
+   extent. You also can pick print template or you can navigate to your own
+   QGIS template (.qpt). For more information about printing Click
+   :guilabel:`Help` in the print window.
 
 6. :guilabel:`Print` at the bottom the |project_name| panel
 
@@ -126,17 +126,16 @@ extent. You also can pick print template or you can navigate to your own QGIS
    :align: center
 
 7. A window will pop up, ensure **Area of print** = Analysis extent and
-**Template to use** = inasafe. :guilabel:`Open PDF`
+   **Template to use** = inasafe. :guilabel:`Open PDF`
 
 .. image:: /static/training/socialisation/034a_impact_report.*
    :align: center
 
 8. Navigate to where you would like to save the pdf,
-and type :kbd:`Jakartaflood_evacuation_1m` :guilabel:`Save`
+   and type :kbd:`Jakartaflood_evacuation_1m` :guilabel:`Save`
 
 .. image:: /static/training/socialisation/034b_save_report.*
    :align: center
-
 
 Two PDFs will be generated
 
