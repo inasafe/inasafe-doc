@@ -187,9 +187,9 @@ Installing |project_name| through the QGIS plugin repository
 hence please follow instructions to download the InaSAFE experimental
 :ref:`install` and skip steps 11-14.
 
-11. Go to :menuselection:`Plugins --> Manage and Install Plugins` This will
-take a couple of minutes for QGIS to contact its repository and show the list
-of plugins available.
+11. Go to :menuselection:`Plugins --> Manage and Install Plugins`. This will
+    take a couple of minutes for QGIS to contact its repository and show the
+    list of plugins available.
 
 12. Go to :guilabel:`New` tab. Type :kbd:`inasafe` into the filter box
 
