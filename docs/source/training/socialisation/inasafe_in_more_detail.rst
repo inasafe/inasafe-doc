@@ -405,9 +405,9 @@ to use is the mainland district boundaries of Jakarta (Jakarta has 6
 districts, but we will be only looking at 5 because the 6th is the Thousand
 Island -as the name suggest its a huge amount of islands!)
 
-36. Use the :guilabel:`Add Vector` button
+37. Use the :guilabel:`Add Vector` button
 
-37. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE
+38. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE
     Projects*, :guilabel:`Select` *district_osm_jakarta.shp*,
     :guilabel:`Open` in the **Open an OGR Support** window and
     :guilabel:`Open` again in the **Source** window.
@@ -415,7 +415,7 @@ Island -as the name suggest its a huge amount of islands!)
 .. image:: /static/training/socialisation/056_district.png
    :align: center
 
-38. This layer already has its keywords filled out, lets go through these:
+39. This layer already has its keywords filled out, lets go through these:
 
 Category: postprocessing - *Layer to be used after impact is derived*
 
@@ -436,24 +436,24 @@ of the attribute correspond.
 .. image:: /static/training/socialisation/057_districtattribute.png
    :align: center
 
-39. :guilabel:`Select` the *District's of Jakarta* from the drop down menu
+40. :guilabel:`Select` the *District's of Jakarta* from the drop down menu
     under *Aggregate results by*, and check that the other sections are field
     out according to the image below.
 
 .. image:: /static/training/socialisation/058_aggregationselect.png
    :align: center
 
-40. :guilabel:`Run` |project_name|
+41. :guilabel:`Run` |project_name|
 
 .. note:: *This may take about a minute to run*
 
 .. image:: /static/training/socialisation/059_aggregationresults.png
    :align: center
 
-41. Lets see what the results would be for buildings,
+42. Lets see what the results would be for buildings,
     change How many *people* to How many *buildings*
 
-42. :guilabel:`Run` |project_name|
+43. :guilabel:`Run` |project_name|
 
 .. note:: *This may take about a minute to run*
 

@@ -43,26 +43,29 @@ Select Feature and Save
    lets zoom into one volcano to analysis. :guilabel:`Right Click`
    on the Volcanoes layer in the **Layer List** and :guilabel:`Select`
    *Open Attribute Table*
-3. Click :guilabel:`Show All Features` (circle 1), then hover your pointer to 
+3. Click :guilabel:`Show All Features` (circle 1), then hover your pointer to
    :guilabel:`Column Filter` (circle 2), then select *NAME* column (circle 3)
 
 .. image:: /static/training/socialisation/062_merapi_attribute.*
    :align: center
 
-4. We will try to find Mount Merapi. Type in :kbd:`merapi` (1), make sure you 
+4. We will try to find Mount Merapi. Type in :kbd:`merapi` (1), make sure you
    uncheck :guilabel:`Case Sensitive` (2) so it will ignore whether it upper or
    lower case. Then click :guilabel:`Apply` (3).
 
 .. image:: /static/training/socialisation/062_merapi_attribute2.*
    :align: center
 
-5. Click on the row (circle 1), :kbd:`drag` the Attribute Table Window so
-   you can see the your map canvas then click :guilabel:`Zoom to selected row` 
-   (circle 2). Try to zoom in on your map then click 
-   :guilabel:`Zoom to selected row` again from table attribute until you get
-   to an extent similar to the one below.
+5. Click on the "merapi" row by clicking 163 this will select the point,
+move the window slightly so you can see the map - you should be able to see
+the volcano as its highlighted in yellow.
 
 .. image:: /static/training/socialisation/063_merapi.*
+   :align: center
+
+6. :guilabel:`Zoom In` by draging a small box around the highlighted point
+
+.. image:: /static/training/socialisation/063a_merapi2.*
    :align: center
 
 7. Now that we know where Merapi is, and have check that it is in fact in the
