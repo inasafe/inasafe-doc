@@ -4,10 +4,10 @@ The Impact Layer Merge Tool
 ===========================
 
 In some cases you may wish to create a report containing the combined output of
-two impact functions for the same area. For example You may carry out an
-assessment of the impact of a flood on population and on buildings and combine
-the results into a single report. The impact layer merge tool allows you to do
-this.
+two impact functions for the same area for the *same hazard, different
+exposures**. For example You may carry out an assessment of the impact of a
+flood on population and on buildings and combine the results into a single
+report. The impact layer merge tool allows you to do this.
 
 
 .. figure:: /static/user-docs/impact_merge_dialog.*
