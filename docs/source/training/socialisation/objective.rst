@@ -1,4 +1,4 @@
-. _objective:
+.. _objective:
 
 Objective
 =========
@@ -81,7 +81,7 @@ Linfiniti Sphinx Theme
 Manual licenced under:
 ......................
 
-Creative Commons by Attribution by |BNPB|/|AIFDR|/|DFATAusAid|/World Bank-|GFDRR|.
+Creative Commons by Attribution by |BNPB|/|DFATAusAid|/World Bank-|GFDRR|.
 
 Author:
 .......

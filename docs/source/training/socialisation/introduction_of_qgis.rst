@@ -184,6 +184,10 @@ Installing |project_name| through the QGIS plugin repository
 
 .. note:: You must be connected to the internet for this section
 
+.. note:: Currently InaSAFE v2.0 has not been released,
+hence please follow instructions to download the InaSAFE experimental
+:ref:`install` and skip steps 11-14.
+
 11. Go to :menuselection:`Plugins --> Manage and Install Plugins` This will take
     a couple of minutes for QGIS to contact its repository and show the list of
     plugins available

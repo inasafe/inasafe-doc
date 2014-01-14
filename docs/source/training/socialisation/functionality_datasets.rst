@@ -119,7 +119,7 @@ methodology.
 Below will explain the methodologies used in Jakarta and Padang.
 
 :Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (Nationals
-    Disaster Managers) with assistance from |AIFDR|, |DFATAusAid|, the World Bank,
+    Disaster Managers) with assistance from |DFATAusAid|, the World Bank,
     UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held
     workshops in each of Jakarta's 6 Districts in order to help Village Heads
     map their community boundaries and major infrastructure.

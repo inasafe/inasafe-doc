@@ -69,7 +69,10 @@ and preparedness, |BNPB|, Mr Abhas Jha,  Disaster risk management coordinator
 for East Asia and the Pacific from the World Bank, and Dr Matt Hayne co-director
 of Australia-Indonesia Facility for Disaster Reduction (|AIFDR|).
 
-|project_name| is now being taught across 6 provinces in Indonesia as one of
+|project_name| (Version 2.0) will officially be launched at the opening of
+the InaDRTG center in Jakarta in March 2014 by |BNBP|.
+
+|project_name| is being taught across 6 provinces in Indonesia as one of
 the 3 open source software tools used to enable development of realistic
 disaster scenarios for contingency planning. The other 2 tools are:
 
@@ -177,12 +180,14 @@ a specific hazard.
 +--------------------------+-------------------------------------------+
 | Other Man-made structure | Bridges, telecommunications               |
 +--------------------------+-------------------------------------------+
-| \*Roads                  | major, minor                              |
+| \!Roads                  | major, minor                              |
 +--------------------------+-------------------------------------------+
 | \*Landslide              | Agriculture, industrial                   |
 +--------------------------+-------------------------------------------+
 
-*\*To come in future version of InaSAFE*
+\!Is available for hazard layer footprints only, the next version of InaSAFE
+will allow for Modelled hazards.
+\*To come in future version of InaSAFE*
 
 The input Exposure layer must have:
 
@@ -198,9 +203,9 @@ new one arises. “In the event of **<hazard>** how many **<exposure>** will be
 affected?“, is the core question that is answered by InaSAFE, but aggregation
 adds to this by providing options to divide your results by area such as
 province boundaries. Instead of just knowing the total number of people affected
-by the hazard, |project_name| is able to aggregate
-allowing the user know how many people are affected in a certain administration
-area. Hence the local governments will be able understand the impact to their
+by the hazard, |project_name| is able to aggregate allowing the user to
+understand how many people are affected in a certain administration area.
+Hence the local governments will be able understand the impact to their
 specific area.
 
 
@@ -210,15 +215,16 @@ Impact Function
 The core to |project_name| is its capability of having multiple Impact
 functions specific to the input data. An impact function generally only deals
 with the combination of 1 hazard layer with 1 exposure layer. The way it is
-combined is specfic to the impact function, it could be a simple overlay of
+combined is specific to the impact function, it could be a simple overlay of
 the 2 layer, or it could be a complicated function that calculate if a building
-would fall down in an earthquake based on building structure informaton
+would fall down in an earthquake based on building structure information
 
-The output of the impact fuction will typically have a spatial component (e.g. a
-GIS layer which automatically loads into the map canvas) and a non-spatial
-component (e.g. a list of estimates of disaster risk reduction elements such as
-how many kilos of rice to make available, or a list of actions you may want to
-consider carrying out) which will be found in the InaSAFE window panel.
+The output of the impact function will typically have a spatial component (e
+.g. a GIS layer which automatically loads into the map canvas) and a
+non-spatial component (e.g. a list of estimates of disaster risk reduction
+elements such as how many kilos of rice to make available,
+or a list of actions you may want to consider carrying out) which will be
+found in the InaSAFE window panel.
 
 Impact functions can be written for any contingency planning purpose,
 one example is the minimum needs (minimum quantity of relief items per per
