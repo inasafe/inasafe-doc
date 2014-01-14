@@ -84,15 +84,19 @@ The following options are available on the :guilabel:`Options Dialog`:
   determine where keywords are stored for datasets where it is not possible
   to write them into a .keywords file. See :ref:`keywords_system` in the
   |project_name| User-Manual for more information on the keywords system.
-* :guilabel:`Logo for maps (must be x x y)`: This option is used to determine
-  a custom logo that will be used in the pdf of your impact scenario project.
-  See :ref:`toolbar_reports` in the |project_name| User-Manual for more
-  information on the reports. **NOTE**: image should have size X x Y.
+* :guilabel:`Organisation logo`: This option is used to determine
+  a custom logo that will be used as organisation logo in the pdf of your
+  impact scenario project. See :ref:`toolbar_reports` in the |project_name|
+  User-Manual for more information on the reports.
 * :guilabel:`Report template`: This option is used to determine a directory
   with custom templates. Templates from this directory will be available for
   usage when generating report on your impact scenario project. See
   :ref:`toolbar_reports` in the |project_name| User-Manual for more information
   on the reports.
+* :guilabel:`Disclaimer text`: This option is used to change default disclaimer
+  text, printed in reports. Just enter your own text and it will be used
+  instead of the default one. See :ref:`toolbar_reports` in the |project_name|
+  User-Manual for more information on the reports.
 * :guilabel:`Enable developer mode`. With this option enabled,
   you can right click on the report area and use the webkit debug tools to
   debug the output. **This option is intended for advanced users only.**
