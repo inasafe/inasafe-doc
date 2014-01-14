@@ -299,8 +299,8 @@ Dialog has three major areas:
    will set extent of the report map to impact layer extent.
  * :guilabel:`Template to use` group: here you can select desired template for
    your report. In combobox listed all templates bundled with plugin plus
-   templates from user-defined template directory (see :ref:`toolbar_options`)
-   for information how to set templates directory. It is also possible to
+   templates from user-defined template directory (see :ref:`toolbar_options`
+   for information how to set templates directory). It is also possible to
    select custom template from any location: just activate radiobutton under
    combobox and provide path to template using :guilabel:`...` button.
  * buttons area: contains four buttons. :guilabel:`Open PDF` button used to
