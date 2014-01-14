@@ -23,17 +23,18 @@ During development of an InaSAFE version, developers make a test version of
 the software for people to trial. Here are the instructions on how to install
 this test version.
 
-1. :menuselection:`Plugins --> Fetch Python Plugins`
-2. :guilabel:`Click` on **Options** tab and :guilabel:`Check`
-   *Show all plugins, even those marked as experimental*
+1. :menuselection:`Plugins --> Manage and Install Plugins`
 
-   .. image:: /static/user-docs/installer_options.*
+   .. image:: /static/user-docs/plugin_manager.*
       :align: center
 
-3. :guilabel:`Click` on **Repository** tab and :guilabel:`Add` a new repository
+2. :guilabel:`Click` on **Settings** tab and :guilabel:`Check`
+   *Show all experimental plugins*
 
-   .. image:: /static/user-docs/python_installer.*
+   .. image:: /static/user-docs/experimental.*
       :align: center
+
+3. :guilabel:`Click` on * :guilabel:`Add` at the bottom of the window
 
 4. Type the following into the Repository details
 
@@ -45,18 +46,17 @@ this test version.
 
 5. :guilabel:`OK`
 
-6. You should now have 2 repositories connected, :guilabel:`Click` on
-   **Plugins**
-
    .. image:: /static/user-docs/connected.*
       :align: center
 
-7. :guilabel:`Upgrade plugin`
+6. You should now have 2 repositories connected, :guilabel:`Click` on
+   **Installed** and check that InaSAFE plugin is :guilabel:`Check
 
-   .. image:: /static/user-docs/upgradeable.*
+   .. image:: /static/user-docs/InaSAFE_installed.*
       :align: center
 
-8. InaSAFE has now been upgraded, all you need to do now is restart QGIS
+7. InaSAFE experimental has now been installed, its best to restart
+QGIS before using InaSAFE.
 
    .. image:: /static/user-docs/restart.*
       :align: center
