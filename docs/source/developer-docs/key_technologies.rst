@@ -3,7 +3,7 @@
 Key Technologies
 ================
 
-Here you can find ressources you should read first to understand howto and
+Here you can find resources you should read first to understand how and
 where to contribute to |project_name|.
 
 Tutorials

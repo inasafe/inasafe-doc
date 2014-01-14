@@ -21,16 +21,18 @@ This document has two sections:
 Configuring QGIS to use test builds (from Linfiniti server).
 ------------------------------------------------------------
 
-* :menuselection:`Plugins --> Fetch Python Plugins --> Repository Tab --> Add...`
+* :menuselection:`Plugins --> Manage and Install Plugins`
+* :guilabel:`Settings Tab`
+* Tick :guilabel:`Show also experimental plugins` option.
+* then scroll down to the bottom so you can see the :guilabel:`Plugin repositories` entry.
+* Click :guilabel:`Add...` and in the dialog that appears enter:
 * :guilabel:`Name:` :kbd:`InaSAFE Testing`
 * :guilabel:`URL:` :kbd:`http://inasafe-test.linfiniti.com/plugins.xml`
 * :guilabel:`OK`
 
-In the :guilabel:`Options` tab, tick the
-:guilabel:`Show all plugins, even those marked as experimental` option.
 
 You should now see the experimental versions of |project_name| listed in the
-:guilabel:`Plugins` tab.
+:guilabel:`All` tab.
 
 .. note:: The URL may differ depending on where the test repo is hosted (see
    below).
@@ -86,7 +88,7 @@ Create a package:
 
 Initialise everything (run this on your desktop)::
 
-    fab -H 188.40.123.80:8697 remote build_test
+    fab -H <hostname/ip> build_test_package
 
 .. note:: You need to be able to authenticate on the server hosting the
     test builds.
@@ -94,7 +96,7 @@ Initialise everything (run this on your desktop)::
 The above would create a test package based on current master by default. You
 can also specify a branch to build the package from like this::
 
-    fab -H 188.40.123.80:8697 remote build_test_package:branch=version-1_1
+    fab -H <hostname/ip> build_test_package:branch=version-1_1
 
 Version number increments:
 ..........................
