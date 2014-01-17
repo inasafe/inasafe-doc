@@ -5,6 +5,6 @@ Package::safe.engine
    :maxdepth: 2
 
    engine/core
-   engine/interpolation
    engine/utilities
+   engine/interpolation
    engine/impact_functions_for_testing

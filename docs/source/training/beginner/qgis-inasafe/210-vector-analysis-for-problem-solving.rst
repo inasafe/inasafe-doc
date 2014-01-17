@@ -187,7 +187,7 @@ Query tool.
 .. image:: /static/training/beginner/qgis-inasafe/image216.*
    :align: center
 
-- Click :guilabel:`Apply`  Then click :guilabel:`Close`
+- Click :guilabel:`Apply` then click :guilabel:`Close`
   once the selection has been applied.
 
 Now the vegetasi layer looks like the image below.  Notice that all the features

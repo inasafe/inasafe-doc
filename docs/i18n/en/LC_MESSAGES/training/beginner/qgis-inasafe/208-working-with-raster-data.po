@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-01 16:48\n"
+"POT-Creation-Date: 2014-01-17 20:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,33 +17,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# 878f18ffedbc4a1db454cb0d3fce5081
+# 72c14ea259f548bf99a91f9971271da2
 #: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:8
 msgid "Module 8: Working with Raster Data"
 msgstr ""
 
-# 1e3e7ec701ee4363a3e6b06549ef15e1
+# cdd876752678402cac8179ac98d58d78
 #: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:10
 msgid "**Learning Objectives**"
 msgstr ""
 
-# 935e05bc9d2a4e88a5338802a06edc91
+# 530f3bf0b3ea453fa62deda33140f708
 #: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:12
-msgid "Loading Raster Data"
+msgid "Creating Raster Data"
 msgstr ""
 
-# 578cb6cf65ea4b648d792e75946b8756
+# 25292abfbffd4f49a12c38404a1a13ff
 #: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:13
-msgid "Transform raster symbology"
+msgid "Changing Raster Symbology"
 msgstr ""
 
-# 02620d27a70f44968edf73e2aab43e51
+# 8f47d440706d47908fb610c8698cf3ce
 #: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:14
-msgid "Explore a raster layer"
+msgid "Doing Terrain Analysis"
 msgstr ""
 
-# 4ece5bd591074a3e905698510efae0a8
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:16
+# bcbdeace1ce94b4185481fe5b3852636
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:17
 msgid ""
 "Thus far we’ve worked mostly with vector data, which consists of features, "
 "and these features are themselves made up of points and lines.  In this "
@@ -53,8 +53,8 @@ msgid ""
 "was raster data. So what’s the difference?"
 msgstr ""
 
-# e5e9a05e86c54f78a68033320f5db8fd
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:23
+# f0a0e2c9a94e482da9b320eaab3784bb
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:24
 msgid ""
 "Raster data essentially comes in the form of an image.  It is made up of "
 "pixels, like a photograph, and a raster image will always be some number of "
@@ -65,13 +65,13 @@ msgid ""
 "Follow along and we’ll learn all about rasters!"
 msgstr ""
 
-# e1e89d1daf324d2aa45477c5b517f81c
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:31
+# 09494a31c7f24647904eb8a1c0a60f91
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:32
 msgid "**1. Loading Raster Data**"
 msgstr ""
 
-# 6e66ec04972849678a8d1a0f4ab462f8
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:33
+# adb1aeed43b34cc881dd1e62446402af
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:34
 msgid ""
 "Open the project named :file:`sleman_2_7.qgs` in the directory :file:`qgis/"
 "`. We’ve simplified the project since our last chapter, to make it easier to "
@@ -80,69 +80,69 @@ msgid ""
 "chapter."
 msgstr ""
 
-# 09e967aa2c03467187e36e3bbe927b62
-# fff4cca61a73491eaf103ac70b7cd320
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:38
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:80
+# a736723ea0cd4291bc79f96146cacf29
+# 3eeff5423f584183835762ada3d44152
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:39
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:81
 msgid "Click on the :guilabel:`Load Raster Layer` button:"
 msgstr ""
 
-# 464f1af1dc19403bb633275b60b12476
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:43
+# 7d8e8de0e9094f2193f02b4558649b88
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:44
 msgid ""
 "The Load Raster Layer dialog will open.  Find the file in the directory :"
 "file:`Sleman/` named :file:`Sleman.tif`.  Open it."
 msgstr ""
 
-# 82c978dec5954f72b59e81bf96f3afe1
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:45
+# 10f0d24aae6b43a485a8c15c3f861aad
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:46
 msgid ""
 "QGIS will open a dialog which explains that the new layers does not have a "
 "CRS assigned.  In the box at the bottom, scroll down until you find **WGS "
 "84 / UTM zone 49S**.  Select it and click :guilabel:`OK`."
 msgstr ""
 
-# 156d3b7291504e46b1917af31e321530
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:52
+# 824dae3384c642778f8fe90c5de00db9
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:53
 msgid ""
 "When the raster layer loads, be sure to drag it to the bottom of your layers "
 "list."
 msgstr ""
 
-# f54ff541c5ad4259b3ee83f7e888733c
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:54
+# 4417601ae9a744bcb534b6641bdf907d
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:55
 msgid ""
 "If you can’t see the raster layer, you may need to enable “on the fly” "
 "transformations.  To do so:"
 msgstr ""
 
-# 99efe03c3e7a49ca9a2ec1c371a578d4
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:57
+# 2151513648db40a99729e6e49fefb2f9
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:58
 msgid "Go to :menuselection:`Settings ‣ Project Properties...`"
 msgstr ""
 
-# 329da08e52e74358ada0eda92d8e9d5a
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:58
+# c8f71e55743247e7a09578ddae3c34f9
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:59
 msgid ":guilabel:`Enable “on the fly” reprojection`."
 msgstr ""
 
-# 4179b7bb5f37401ca5c7b4bc66134820
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:63
+# 7d22f933999c491b8c3a5b301d2defe5
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:64
 msgid "Click :guilabel:`OK`."
 msgstr ""
 
-# 087f4cf98a64493f8665963de0f64ba8
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:65
+# 7fb2330bedaa4ce38a71adfcedfdf9b2
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:66
 msgid "The raster should display nicely underneath your vector data layers."
 msgstr ""
 
-# f93eed42dbc14f62878d18c997969bf8
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:70
-msgid "**2. Changing Raster Symbology**"
+# ea97b9bb9fd74d1f8ddfcc7da4efcb36
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:71
+msgid "**2. How to Change Raster Symbology**"
 msgstr ""
 
-# 88be78b992184f80bb3de6793f9a4515
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:72
+# 3cd6b97ed81d4a4b9ee4ded7adeda380
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:73
 msgid ""
 "Not all raster data consists of aerial photographs. There are many other "
 "forms of raster data, and in many of those cases, it’s essential to "
@@ -151,29 +151,29 @@ msgid ""
 "symbology."
 msgstr ""
 
-# 440981810927451180ba6ba98a5147e0
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:78
+# b5166edc276a4300bc9df3ebf738e2e4
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:79
 msgid ""
 "First let’s remove our previous raster image so that our project will load "
 "faster.  Right-click on the **Sleman** layer and click :guilabel:`Remove`."
 msgstr ""
 
-# 13e79a4a9ba84cf8b35b85984a75cf34
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:85
+# 54da87df5bcd4277b515fc2f3b991e4e
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:86
 msgid ""
 "Open the file named :file:`SRTM_Sleman.tif`, which is located in :file:"
 "`Sleman/SRTM`."
 msgstr ""
 
-# f52595a0a981406b8b2edbb77c3bac87
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:87
+# e80e6987e57e4f8a9b5616d6e0f40c50
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:88
 msgid ""
 "When it appears in the Layers list, right-click on it and click :guilabel:"
 "`Rename`. Give it the name :kbd:`DEM`."
 msgstr ""
 
-# 14f5e3e6b8f04a3aae0db779975d25f0
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:90
+# 4bbba9154eaf472ab8b02fa89d6d5656
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:91
 msgid ""
 "This dataset is a Digital Elevation Model (DEM). It’s a map of the elevation "
 "(altitude) of the terrain, showing us where the mountains and valleys are. "
@@ -184,15 +184,15 @@ msgid ""
 "elevation."
 msgstr ""
 
-# 370f00ab633146d7ba8c72c200861588
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:98
+# 2bec86d18b8046a68ca869f3acdf3d58
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:99
 msgid ""
 "When it loads, you’ll notice that the new raster image appears as a gray "
 "rectangle. It’s seen here with the roads layers on top:"
 msgstr ""
 
-# a79f448c33084c4f9d6c9e933f216384
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:104
+# 4ad2ef9500a84da182305a437ccf1b1c
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:105
 msgid ""
 "The layer appears gray (and doesn’t give us any information) because its "
 "symbology hasn’t been customized yet.  In the color aerial photograph we "
@@ -201,41 +201,41 @@ msgid ""
 "it yet. It still needs to be defined. So that’s what we will do now."
 msgstr ""
 
-# 9ee6535d38514c778eadf335c287cda0
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:110
+# d86f6f3ce53f42f4ba45eea9f762702f
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:111
 msgid ""
 "Open the :guilabel:`Layer Properties` dialog for the **SRTM** layer, which "
 "is now named **DEM**."
 msgstr ""
 
-# 482e184374a74ec5a82f741aa686a49a
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:112
+# 18699ccfaf4a4e1e8eca632fc5f71072
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:113
 msgid ""
 "Switch to the Style tab.  This shows the current symbology settings, and as "
 "we’ve seen, they don’t give us much information on the layer.  Let’s make "
 "sure the layer has data in it."
 msgstr ""
 
-# fba6cfb02c33431ca3a7e6aaf126d91b
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:115
+# 39f4cf6e0ac34300b1948c08d90bad47
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:116
 msgid "Change the Color map to *Pseudocolor*:"
 msgstr ""
 
-# d7f7d337972a4bf2bd5444d9d4fa8a17
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:120
+# 8cecfa742fc9497aa24a6ec4e189dd47
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:121
 msgid "Click :guilabel:`OK`.  The raster should look like this:"
 msgstr ""
 
-# f83627f3c9bc4eb4bb0d6ffadabdb00c
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:125
+# f00f146232bf4a2da193137219a43e47
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:126
 msgid ""
 "Good! This tells us that there is data in this layer. And by looking at it "
 "we can get an idea of where the elevation gets higher. In the north we can "
 "see the location of Mount Merapi."
 msgstr ""
 
-# 0d5d0ddf714445f4b73455c366fd5339
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:129
+# e8dcaa82abfe49258ac3c1d47aa9d933
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:130
 msgid ""
 "Let’s stop for a minute and understand what is happening here. Remember that "
 "an image is made up of pixels, individual cells that contain a value, which "
@@ -243,15 +243,15 @@ msgid ""
 "photograph you can see those individual pixels, like this:"
 msgstr ""
 
-# a376bcd4fa57402284a0252b18e62c7f
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:137
+# 45cf8cdbd94944e7a68900006df14209
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:138
 msgid ""
 "The value of each cell is saved in the file.  Imagine the file being saved "
 "something like this, where each square is a pixel:"
 msgstr ""
 
-# 12e10b381ba043c39050fd0643a31e6c
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:143
+# 72205e1cd5cb4d238520c9c473e3978a
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:144
 msgid ""
 "Of course the computer doesn’t understand words for colors.  In fact the "
 "value of each cell would be a number, which the computer then associates "
@@ -265,8 +265,8 @@ msgid ""
 "see all the different pixel values shown with various colors."
 msgstr ""
 
-# d57d10243e7f41b9ae31bcb8c29c2490
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:154
+# e1977df1510f47699b9ca2a2ac63b60a
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:155
 msgid ""
 "It would be nice to represent our DEM layer as a grayscale spectrum, rather "
 "than a variety of bright colors..  Next we will tell QGIS to symbolize the "
@@ -275,39 +275,39 @@ msgid ""
 "values looked like this:"
 msgstr ""
 
-# 77bb66eab4564a52859b9ac94a07103a
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:163
+# dd7e7b2177014b3ab5394348728e87e8
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:164
 msgid "QGIS would create a spectrum equating numbers to colors like this:"
 msgstr ""
 
-# dfe97053f9654e38aea72145d3a6ba05
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:168
+# fa930c00b6ae48ea8d05b3d73910de2d
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:169
 msgid "And render the image like this:"
 msgstr ""
 
-# b5345e5432f3445ba34d5937e5846296
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:173
+# 2704a9133d484921bd233e1528e5f53c
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:174
 msgid "Open :guilabel:`Layer Properties` again."
 msgstr ""
 
-# d3755f1510cd48228077a40db2a995ca
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:174
+# 517bf7f5765145bda6b333d0fa32a8ed
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:175
 msgid "Switch the *Color map* back to *Grayscale*."
 msgstr ""
 
-# 37aa9db65c45425eac155a25d886f207
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:175
+# 43b31fd5eda9402fbb8ae11736bdbf6d
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:176
 msgid "Tell it to use *Custom min / max values*:"
 msgstr ""
 
-# 55c7a4cffc474723bccfb5dc766c9b5c
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:180
+# ce5b1f6a652544578d1e2b5a3bc5610d
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:181
 msgid ""
 "Under Contrast enhancement, set the value of Current to *Stretch To MinMax*:"
 msgstr ""
 
-# 6c81faa16bb04893962b6524e5635174
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:185
+# a21959dd70c64928b33ba9cd68cfcb1d
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:186
 msgid ""
 "But what are the minimum and maximum values that should be used?  The ones "
 "that are currently under Custom min / max values are the same values that "
@@ -317,63 +317,63 @@ msgid ""
 "the raster."
 msgstr ""
 
-# 93e0c2ea78f343e495b363634c3d9cbc
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:192
+# d71d06298d874f1a9eadf620c3584cbf
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:193
 msgid ""
 "Under Load min / max values from band, select :guilabel:`Estimate (faster)`."
 msgstr ""
 
-# 65f4122dd96f46b3add64c35c6f9a139
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:193
+# f44f58b283b9470faab7d26d69fd0201
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:194
 msgid "Click the :guilabel:`Load` button:"
 msgstr ""
 
-# 7c388907876f449e8f72e71e0822d968
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:198
+# 3bcf9e6a16fd4fbfa786ee6bc39ba1a8
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:199
 msgid ""
 "Notice how the Custom min / max values have changed.  The lowest pixel value "
 "in this image file is 0 and the highest is about 195."
 msgstr ""
 
-# dcb6bef56cfb49c89c003c3bc8f5c313
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:204
+# e0c8fe8c025b4cf7a9e45bed93edf60b
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:205
 msgid ""
 "Click :guilabel:`OK`.  You should see the values of the raster properly "
 "displayed, with the darker colors representing valleys and the lighter ones, "
 "mountains:"
 msgstr ""
 
-# 19579148c8b344028422c00ad08500a9
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:211
+# 16ddcedebb6b473483483fa9c8a92918
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:212
 msgid ""
 "We’ve learned to do this the tricky way, but can we do it faster?  Of "
 "course!  Now that you understand what needs to be done, you’ll be glad to "
 "know that there’s a tool for doing all of this easily."
 msgstr ""
 
-# d15e07f2498641c987960b97294376c4
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:215
+# adc0bd636b0b41349dc78327a2534365
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:216
 msgid ""
 "Remove the current **DEM** from the Layers list, by right-clicking and "
 "clicking :guilabel:`Remove`."
 msgstr ""
 
-# dd5a86c91d7e4ec7bc1764333f3c4bc8
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:217
+# 179ade59637c4694be597eb1f59e5285
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:218
 msgid ""
 "Load the raster image again, renaming it to **DEM** as before. It’s will be "
 "a gray rectangle again."
 msgstr ""
 
-# a76e95198c81487d8dc3bdd4b5683e28
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:219
+# f67438bd0ddf47a4b8722bea7304529c
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:220
 msgid ""
 "Enable the tool you’ll need by enabling :menuselection:`View ‣ Toolbars ‣ "
 "Raster`. These icons will appear in the interface:"
 msgstr ""
 
-# b2f7f31590564383ae9ed2ca86d81c3f
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:226
+# 27bd6d7571bf419cbf0a76be9f04d8a4
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:227
 msgid ""
 "The button on the right will stretch the minimum and maximum values to give "
 "you the best contrast in the local area that you’re zoomed into. It’s useful "
@@ -381,20 +381,20 @@ msgid ""
 "maximum values to constant values across the whole image."
 msgstr ""
 
-# cc15376a9c3c412aa07e7fd0551bd1ad
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:231
+# 799a11f5e4e9464abb647f3945975ba6
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:232
 msgid ""
-"Click the button on the left :guilabel:`(Stretch Histogram to Full Dataset)"
-"`. You’ll see the data is now correctly represented as before! Easy!"
+"Click the button on the left :guilabel:`(Stretch Histogram to Full "
+"Dataset)`. You’ll see the data is now correctly represented as before! Easy!"
 msgstr ""
 
-# 8383a56efb33401ebac365ecf822ff1e
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:235
+# 8ab2691c024f49e1bc81a523d8b9fada
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:236
 msgid "**3. Terrain Analysis**"
 msgstr ""
 
-# ac6de9311a434150954f94d518631d2a
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:237
+# 043867482e3244618859e557b87b477e
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:238
 msgid ""
 "Certain types of rasters allow you to gain more insight into the terrain "
 "that they represent. Digital Elevation Models (DEMs) are particularly useful "
@@ -402,13 +402,13 @@ msgid ""
 "raster, in order to try to extract even more information from it."
 msgstr ""
 
-# d9653b8d21f34d51b376fc917ccadd00
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:242
+# a8045420061d44eeb92c746a836f6fde
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:243
 msgid "*3.1  Calculating a Hillshade*"
 msgstr ""
 
-# 036fc7aa958549339ea4bd47529c4039
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:244
+# d047ccd994254d1cb1525cc7e47e7ab3
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:245
 msgid ""
 "The DEM you have on your map right now does show you the elevation of the "
 "terrain, but it can sometimes seem a little abstract. It contains all the 3D "
@@ -418,67 +418,67 @@ msgid ""
 "and shadow to create a 3D-looking image."
 msgstr ""
 
-# a113fb579fcc4d8a885d77dbf8d2fc62
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:251
+# 1f1352c7cdac4466b0c8cbfb92ac094b
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:252
 msgid ""
 "To work with DEMs, you should use QGIS’ all-in-one DEM (Terrain models) "
 "analysis tool."
 msgstr ""
 
-# fb6c61dfe5074fda940515d26a8e5490
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:254
+# 5df06d9071444bffb93f965834226e7e
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:255
 msgid ""
 "Click on the menu item :menuselection:`Raster ‣ Analysis ‣ DEM (Terrain "
 "models)`."
 msgstr ""
 
-# f0aa1b44709446f7b7f28418aa979eb3
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:256
+# b6207f6a2bf8473999aaa07b7e018993
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:257
 msgid ""
 "In the dialog that appears, ensure that the Input file is the **DEM** layer."
 msgstr ""
 
-# fb52e90e816442d4860ab6596dd696c6
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:257
+# 98415adb76e84661826c61fceb9bc0d5
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:258
 msgid ""
 "Set the Output file to :kbd:`hillshade.tif` in the directory :file:`qgis/"
 "Sleman/`."
 msgstr ""
 
-# 61192158b57d4a05b5bd45e5f03f03bb
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:263
+# ef20ad35263141fcba38328df6b56a97
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:264
 msgid "Check the box next to Load into canvas when finished."
 msgstr ""
 
-# 55a82642f2f2497480fdb99f1239e716
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:268
+# 6f0d35c50c0041ea8fa7ed019c83b977
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:269
 msgid "You may leave all the other options unchanged."
 msgstr ""
 
-# cab5df767f3d4e3eb786ee2f491e0e77
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:269
+# c291d1798f6643f195873dfda922cbfd
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:270
 msgid "Click :guilabel:`OK` to generate the hillshade."
 msgstr ""
 
-# 39f26e8b40cb4e72b76ec1361da89a42
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:270
+# ddea45f7e92847619d6eedcba0ba402d
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:271
 msgid ""
 "When it tells you that processing is completed, click :guilabel:`OK` on the "
 "message to get rid of it."
 msgstr ""
 
-# 4e0be41dad16479c9d39825e7841f594
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:272
+# 833801f382bc4556a06376159ef5741e
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:273
 msgid "Click :guilabel:`Close` on the main DEM (Terrain models) dialog."
 msgstr ""
 
-# a27fcea07d464ad8939e07ba38fa214d
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:274
+# 0e4d7f787fc4462bae7fbfa01cde62d0
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:275
 msgid "You will now have a new layer called hillshade that looks like this:"
 msgstr ""
 
-# 6a8a9d0f103249a9bd22a27edcc9d2b6
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:279
+# 9952fe8d3c6540778efb1e450b1a1576
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:280
 msgid ""
 "This looks more 3-Dimensional, but can we improve on this?  On its own, the "
 "hillshade looks like a plaster cast.  It will look better if we can combine "
@@ -486,13 +486,13 @@ msgid ""
 "an overlay."
 msgstr ""
 
-# b4807d60d766478eb47078085ae99718
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:284
+# 5aeb2e5f31964569ab4b64beef60fe31
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:285
 msgid "*3.2  Using a Hillshade as an Overlay*"
 msgstr ""
 
-# 74b4f70183b14b25b283365a27674dfc
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:286
+# 413100f670ea49699fd59167fbac73c7
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:287
 msgid ""
 "A hillshade can provide very useful information about the sunlight at a "
 "given time of day. But it can also be used for aesthetic purposes, to make "
@@ -500,58 +500,58 @@ msgid ""
 "mostly transparent."
 msgstr ""
 
-# ea24a83b658f445c8522ea6e1362ed14
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:291
+# 5e679566b24143cea5af714f16a4fb33
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:292
 msgid ""
 "Change the symbology of the original **DEM** layer to use the *Pseudocolor* "
 "scheme."
 msgstr ""
 
-# 39bde49f0b9e452eb0623026893f1fd7
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:293
+# 9011a4bde6784ac2aa7389433afa9b6f
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:294
 msgid "Hide all the layers except the DEM and hillshade layers."
 msgstr ""
 
-# 4e28affebb2c443a9bf62cf218d2a23d
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:294
+# e1a625ea6ade42288a274687d2f6baaa
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:295
 msgid ""
 "Click and drag the **DEM** to be beneath the **hillshade** layer in the "
 "Layers list."
 msgstr ""
 
-# 4a6647ca5c3c4425bf9a70f6603cd095
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:300
+# 6e98f43c2a9c477f85ebcffe7ab3caa2
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:301
 msgid "Control rendering order(beneath the list) should be checked as well."
 msgstr ""
 
-# 64a1479621bd462a843c30159d1a24ae
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:305
+# 59379eb02a0d4b63a318e44c3afa8f86
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:306
 msgid ""
 "Now we will make the hillshade layer somewhat transparent.  Open its :"
 "guilabel:`Layer Properties` and go to the :guilabel:`Transparency` tab."
 msgstr ""
 
-# 093ea2c19c584fe4933c5b6cb0392ebe
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:307
+# 2841831f97c448af9d0219e1607f51b3
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:308
 msgid "Set the *Global transparency* to *50%*:"
 msgstr ""
 
-# 41ff358eba1947969aab984b226ce1cd
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:312
+# a8d6e6c196034c9a9a619e6fc0e94d0d
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:313
 msgid ""
 "Click :guilabel:`OK` on the Layer Properties dialog. You’ll get a result "
 "like this:"
 msgstr ""
 
-# 5149cdff6b864e1d8b1479bb3aa5929a
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:318
+# 5b8ce99369514893bb9e8ca4add171d7
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:319
 msgid ""
 "Switch the **hillshade** layer *off* and back on in the Layers list to see "
 "the difference it makes."
 msgstr ""
 
-# a495dabf74834b358e9946be0e544b67
-#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:321
+# 62277cda19c340399034963855aa0eaa
+#: ../../source/training/beginner/qgis-inasafe/208-working-with-raster-data.rst:322
 msgid ""
 "Using a hillshade in this way, it’s possible to enhance the topography of "
 "the landscape. If the effect doesn’t seem strong enough to you, you can "

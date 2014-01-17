@@ -499,23 +499,26 @@ Then copy the plugin to C:\Users\Computer\.qgis\python\plugins folder.
 
 **How if Fetch Python Plugin - Plugin menu is not available?**
 
-This problem can be solve by opening setting from *fetch python plugin*
+This problem can be solved by opening settings from *fetch python plugin*
 option menu. You have to tick *check for updates* on startup which should
 add list of new plugin automatically.
 
 
 **Session 5**
 ^^^^^^^^^^^^^
+
 Projection Systems and Transformation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 90 minutes
 
 Basic Competency
 ****************
+
 5. Applying Projection Systems and Transformation in QGIS
 
 Indicator
 *********
+
 1. Explain Coordinate Reference Systems (CRS)
 2. Identify the CRS of the vector dataset
 3. Doing *on the fly* reprojection
