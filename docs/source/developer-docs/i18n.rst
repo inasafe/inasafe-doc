@@ -177,18 +177,19 @@ Low level gettext usage
 Translation is done using gettext.
 
 Create the initial .po file::
+    
+    xgettext -d id -o i18n/id/LC_MESSAGES/inasafe.po i18ntest.py
 
-   xgettext -d id -o i18n/id/LC_MESSAGES/inasafe.po i18ntest.py
 
 After you create the initial .pot, you need to specify the characterset and
 encoding for that file (by editing it with a text editor). For example::
-
-   "Content-Type: text/plain; charset=UTF-8\n"
-   "Content-Transfer-Encoding: 8bit\n"
+    
+    "Content-Type: text/plain; charset=UTF-8\n"
+    "Content-Transfer-Encoding: 8bit\n"
 
 If you add strings to the file, update the .pot file by adding -j option::
-
-   xgettext -j -d id -o i18n/id/LC_MESSAGES/inasafe.po i18ntest.py
+    
+    xgettext -j -d id -o i18n/id/LC_MESSAGES/inasafe.po i18ntest.py
 
 Next, you can make the .po files available to translators. Recent versions of
 QtLinguist support translations of .po files, so you can use a similar process
