@@ -76,7 +76,7 @@ This applies e.g. to titles of layers or attribute names in data.
 The translation system works by scanning the Python code for strings marked
 as described above. However, it has know way of knowing about titles of
 layers or names that appear in datasets processed by |project_name|.
-However, if such names are known a priori they can be made visible to the
+However, if such names are known a-priori they can be made visible to the
 translation system as follows:
 
 * Edit the file::
@@ -111,7 +111,95 @@ translate them is (example is given for LANG=id):
 * run :samp:`make compile-translation-strings` to make the translations
   available to |project_name|
 
+Adding a new language
+---------------------
+
+To add a new language, edit the :samp:`Makefile` file and append the new
+locale to the bottom of the file. For example, to add South African english
+as a new locale, change this section::
+
+    # LOCALES = space delimited list of iso codes to generate po files for
+    # Please dont remove en here
+    LOCALES = en id
+
+By adding the local identified 'af' ::
+
+    LOCALES = en id af
+
+Save and close the Makefile. Next you need to create the initial
+translation stringlist for that locale. After the inital creation of your .po
+files using the above commands, you can update them anytime the strings in the
+library have been changed by doing::
+
+   make update-translation-strings`
+
+to generate the gettext .po files under :file:`safe\i18n/en_ZA/LC_MESSAGES` the
+and Qt Linguist .ts files under :file:`safe_qgis.i18n`.
+
+.. note:: Don't forget to ``git add`` the new files to place them under version
+    control.
+
+To convert the .po file to a binary .mo file (which is used at runtime for
+the actual translation), follow the :ref:`library-release-label` section above.
+
 .. _qgis-plugin:
+
+Transifex
+----------
+
+Initial setup
+.............
+
+Things you need to do once per Client Computer:
+
+* Create a Transifex account on http://www.transifex.org
+* :command:`sudo pip install transifex-client`
+* go to :file:`/tmp` and write :command:`tx init` to create your
+  :file:`.transifexrc` file
+* go back to your :file:`inasafe-doc` folder
+
+
+Transifex calls files 'resources' and each resource you upload can be
+translated into any of the locales you have set up in transifex. In InaSAFE
+we have two resources (and the separate inasafe-doc project has many more).
+The resource in InaSAFE are:
+
+* safe (gettext based .po file for the safe package)
+* safe_qgis (Qt based .ts file for the safe_qgis package)
+
+The methodology for creation of these resources can be reviewed in
+:file:`scripts/create-transifex-resources.sh`. **Note:** you do not need to
+run this script as it is a once-off activity per project.
+
+This script basically does this:
+* makes sure each po source file is registered as a transifex resource
+* adds a translation source for each locale (determined by subdirs of i18n dir)
+  for each resource
+* pushes the resources and their translation files to transifex
+
+Pulling and pushing changes from transifex
+..........................................
+
+A typical session to pull update and then push strings to transifex looks like
+this::
+
+  tx pull -a -f
+  836  make update-translation-strings
+  git add safe/i18n
+  git add safe_qgis/i18n/
+  git commit -m "Translation file updates" -a
+  tx push -t -s -l id
+
+
+Which pushes the Indonesian updated translations files to transifex at the end
+ready for further input from translators. You can also push individual files
+like this:
+
+:command:`tx push -s -t -l id -r safe`
+
+that will push the source (-s) and translation file (-t) for language (-l) de
+for the resource (-r) safe up to the transifex web server.
+
 
 QGIS Plugin
 -----------
@@ -131,9 +219,11 @@ As developer, before a release you should do:
 * Run :samp:`make update-translation-strings` to update the translation files.
 * Distribute the .ts files under :samp:`gui/i18n` to the translators (i.e. by
   uploading them to transifex).
-* Instruct them to open the .ts file for their locale with QtLinguist.
+* Instruct them to open the .ts file for their locale with QtLinguist (by
+  downloading from transifex), or to use the online tools transifex provides.
 * Commit the returned file from the translator when all strings have been
-  translated.
+  translated by downloading it from transifex and replacing the file in the
+  source tree.
 * Run :samp:`make compile-translation-strings` to create binary loadable
   translations.
 * Ensure the .qm files are distributed with the release (the .ts files do not
@@ -152,24 +242,6 @@ As developer, before a release you should do:
    strings will remain translated.
 
 
-Adding a new language
-.....................
-
-To add a new language, edit the :samp:`safe_qgis/inasafe.pro` file and append
-the new locale to the bottom of the file. For example,
-to add South African english as a new locale, change this::
-
-   TRANSLATIONS = i18n/inasafe_id.ts
-
-to this::
-
-    TRANSLATIONS = i18n/inasafe_id.ts\
-                   i18n/inasafe_en_ZA.ts
-
-Save and close the .pro file. Next run :samp:`make update-translation-strings`
-to generate the new .ts file under safe_qgis/i18n. Don't forget to
-:samp:`git add` the new file and place it under version control.
-
 .. _library-translations:
 
 |project_name| Library Translations
@@ -177,6 +249,10 @@ to generate the new .ts file under safe_qgis/i18n. Don't forget to
 
 Low level gettext usage
 .......................
+
+.. note:: This is here for reference only, the
+    ``make update-translation-strings`` make target will do all this for you.
+
 
 Translation is done using gettext.
 
@@ -219,21 +295,22 @@ Preparing for a release
 
 As developer, before a release you should do:
 
-* run :samp:`make update-translation-strings` to update the translation files
-* distribute the .po files under :samp:`i18n/<locale>/LC_MESSAGES/inasafe.po` to
-  the translators (typically by
-* instruct them to open the .po file for their locale with QtLinguist
-* commit the returned file from the translator when all strings have been
-  translated
-* run :samp:`make compile-translation-strings` to create binary loadable
-  translations (.mo files)
-* ensure the .mo files are distributed with the release (the .po files do not
-  need to be released)
+* Run :samp:`make update-translation-strings` to update the translation files.
+* Upload the translation strings to transifex.
+* Instruct your translateors to open the .po file for their locale with
+  QtLinguist (by downloading from transifex), or to use the online tools
+  transifex provides.
+* Commit the returned file from the translator when all strings have been
+  translated by downloading it from transifex and replacing the file in the
+  source tree.
+* Run :samp:`make compile-translation-strings` to create binary loadable
+  translations (.mo files).
+* Ensure the .mo files are distributed with the release (the .po files do not
+  need to be released).
 
 
 .. note:: Translators should take heed - when refreshing the .po file in
-   QtLinguist, the file
-   *must be closed* (:menuselection:`File --> Close`) and
+   QtLinguist, the file *must be closed* (:menuselection:`File --> Close`) and
    then reopened. Simply loading doing (:menuselection:`File --> Open`) and
    choosing the same file you already have in the workspace will not refresh the
    workspace with any new changes that appeared on disk.
@@ -245,38 +322,6 @@ As developer, before a release you should do:
    strings will remain translated.
 
 
-
-Adding a new language
-.....................
-
-To add a new language, edit the :samp:`Makefile` file and append the new
-locale to the bottom of the file. For example, to add South African english
-as a new locale, change this section::
-
-    # LOCALES = space delimited list of iso codes to generate po files for
-    # Please dont remove en here
-    LOCALES = en id
-
-By adding the local identified 'af' ::
-
-    LOCALES = en id af
-
-Save and close the Makefile. Next you need to create the initial
-translation stringlist for that locale. After the inital creation of your .po
-files using the above commands, you can update them anytime the strings in the
-library have been changed by doing::
-
-   make update-translation-strings`
-
-to generate the gettext .po files under :file:`safe\i18n/en_ZA/LC_MESSAGES` the
-and Qt Linguist .ts files under :file:`safe_qgis.i18n`.
-
-.. note:: Don't forget to ``git add`` the new files to place them under version
-    control.
-
-To convert the .po file to a binary .mo file (which is used at runtime for
-the actual translation), follow the :ref:`library-release-label` section above.
-
 Adding a new source file for translation
 ........................................
 
@@ -287,76 +332,6 @@ To add a new source file, run::
 to generate the updated .po file and make it available to translators. When
 the translated file is returned from the translators (or via transifex) we will
 convert the .po file to a binary .mo file (which is used at runtime
-for the actual translation)
-then follow the :ref:`library-release-label` section above.
-
-Sphinx Translation
-------------------
-
-Generic documentation on how to translate sphinx documentation is available
-`here <http://sphinx.pocoo.org/latest/intl.html>`_.
-
-Initial notes on the process::
-
-   cd docs
-   make gettext
-
-Which will create pot files which can be found under build/locale. Note that
-this make target needs to be tweaked so that it builds a unique directory
-for each supported locale.
-
-Transifex
-----------
-
-Things you need to do once per Client Computer:
-
-* Create a Transifex account on http://www.transifex.org
-* :command:`sudo pip install transifex-client`
-* go to :file:`/tmp` and write :command:`tx init` to create your
-  :file:`.transifexrc` file
-* go back to your :file:`inasafe-doc` folder
-
-To generate the .po files which are the base for translations you have to use
-:command:`scripts/pre_translate.sh`.
-That will read the current strings, filter out the strings that can be
-translated and create the .po files.
-The command:
-:command:`git commit -m "Regenerated translation po files" -a`
-will commit that newly created .po files.
-Now we have to create the resources for transifex for which there is another
-script:
-Use
-:command:`scripts/create-transifex-resources.sh`
-and then wait quite a long time until the creation is finished. The script
-itself does the necessary tx push to push updates to transifex.
-
-This script basically does this:
-* makes sure each po source file is registered as a transifex resource
-* adds a translation source for each locale (determined by subdirs of i18n dir)
-
-  for each resource
-  * pushes the resources and their translation files to transifex
-
-When you want to collect any translations from transifex,
-it is the reverse process so you do:
-
-:command:`tx pull`
-:command:`scripts/post_translate.sh`
-:command:`git commit -m "Updated translations from transifex community edited translation files" -a`
-
-that will basically ensure that any translations done on transifex get put
-into git.
-
-.. note:: In :command:`scripts/create-transifex-resources.sh` there is a
-   VERSION variable that must be configured for each QGIS release in the form
-   1-8 (. char is not allowed)
-
-you can also push a po file individually using the command line client like
-this:
-
-:command:`tx push -s -t -l de -r qgis-documentation.v1-8-docs-qgis-gui`
-
-that will push the source (-s) and translation file (-t) for language (-l) de
-for the resource (-r) qgis-documentation.v1-8-docs-qgis-gui up to the
-transifex web server.
+for the actual translation) then follow the :ref:`library-release-label`
+section above.
 
