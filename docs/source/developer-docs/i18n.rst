@@ -172,6 +172,7 @@ The methodology for creation of these resources can be reviewed in
 run this script as it is a once-off activity per project.
 
 This script basically does this:
+
 * makes sure each po source file is registered as a transifex resource
 * adds a translation source for each locale (determined by subdirs of i18n dir)
   for each resource
@@ -182,20 +183,20 @@ Pulling and pushing changes from transifex
 
 A typical session to pull update and then push strings to transifex looks like
 this::
-
-  tx pull -a -f
-  836  make update-translation-strings
-  git add safe/i18n
-  git add safe_qgis/i18n/
-  git commit -m "Translation file updates" -a
-  tx push -t -s -l id
+    
+    tx pull -a -f
+    make update-translation-strings
+    git add safe/i18n
+    git add safe_qgis/i18n/
+    git commit -m "Translation file updates" -a
+    tx push -t -s -l id
 
 
 Which pushes the Indonesian updated translations files to transifex at the end
 ready for further input from translators. You can also push individual files
-like this:
-
-:command:`tx push -s -t -l id -r safe`
+like this::
+    
+    tx push -s -t -l id -r safe
 
 that will push the source (-s) and translation file (-t) for language (-l) de
 for the resource (-r) safe up to the transifex web server.

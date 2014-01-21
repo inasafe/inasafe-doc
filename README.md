@@ -1,5 +1,7 @@
 [![][InaSAFEImage]][website]
 
+[![Build Status](http://jenkins.inasafe.org/buildStatus/icon?job=InaSAFE-Website-Test-develop)](http://jenkins.inasafe.org/job/InaSAFE-Website-Test-develop/)
+
 InaSAFE Documentation
 =====================
 
