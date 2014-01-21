@@ -168,6 +168,15 @@ safe_qgis tools tests you would do::
 
    nosetests -v safe_qgis.tools.test
 
+
+If you wish to run tests under xvfb (a virtual framebuffer), you can do::
+
+    sudo apt-get install xvfb
+
+To run tests under xvfb you can now do::
+
+    xvfb-run --server-args="-screen 0, 1024x768x24" make guitest
+
 Achievements
 ............
 
