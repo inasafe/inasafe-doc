@@ -8,507 +8,371 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-17 20:22+0100\n"
+"POT-Creation-Date: 2014-01-24 11:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# 629a69668a5349778f460fcdd51da965
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:8
+# 9559801eace747eea0568be8bee0cb2f
 msgid "Module 12: Understanding InaSAFE"
 msgstr ""
 
-# 55357f4d918247e88c96fc04f29b4798
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:10
+# 68218256e4814190802c90b66565a0fe
 msgid "**Learning Objectives**"
 msgstr ""
 
-# 9506f9354ded44e284560b9a18681d76
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:12
+# ac9b6cf71e194cfbb8778401246fc771
 msgid "Explaining the concept of Hazard, Exposure, and Impact data"
 msgstr ""
 
-# 26e54fda780d4aa3a000218ec7096926
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:13
+# a61f97cf93be40929df857ae173a8dd7
 msgid "Explaining how to get Impact"
 msgstr ""
 
-# ef0bfa7c8a8947eba3ef13fa3b9d9542
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:14
+# e81ade17c8cb4598a56ee7672c17ab82
 msgid "Explaining InaSAFE’s interface"
 msgstr ""
 
-# ae1c3be71d4b4b9daa784becb478eb21
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:15
+# 70c146430a2641c3a2c90e30462362fd
 msgid "Adding hazard data"
 msgstr ""
 
-# a3bd674b8fb34d97bc371da8dc811cd3
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:16
+# 444d1dc005b84eca928c7e9d56ec8274
 msgid "Adding unprocessed exposure data (vector and raster)"
 msgstr ""
 
-# 7aad573d07f9410f8760c7858dc26854
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:17
+# 78325bf9f45e4580a8b11e36a360626c
 msgid "Using keywords editor"
 msgstr ""
 
-# c099b70ca1814b03997c1efcb025cf70
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:18
+# 35878eeee70b4dff9ceb9e89910cfee4
 msgid "Analyzing Impact"
 msgstr ""
 
-# e247677d5a7f449ea867dd9edd25fa5c
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:19
+# 1d619a28356743cd804b1999298d99b3
 msgid "Improving InaSAFE Output Map"
 msgstr ""
 
-# be15d38a458e4665b7bfb72d4b55ef70
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:20
+# 99283cc970204b8db9cac16e329f53f0
 msgid "Saving and Printing scenario result"
 msgstr ""
 
-# c38ad857ffd343b2ae98da915997d88d
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:22
-msgid ""
-"We have already seen InaSAFE in action. We’ve installed the plugin and have "
-"run a disaster analysis on a Jakarta flood scenario. We learned about hazard "
-"and exposure data. In this chapter, we’ll review what we’ve learned and go a "
-"bit further. By now you should be pretty comfortable with QGIS, and your "
-"knowledge will continue to grow as you practice your new skills. We will "
-"work through a disaster scenario more slowly to better understand InaSAFE, "
-"and in Unit 4 we will go to even deeper."
+# edfeaeeba6c94797827c4a3cfc5b54bd
+msgid "We have already seen InaSAFE in action. We’ve installed the plugin and have run a disaster analysis on a Jakarta flood scenario. We learned about hazard and exposure data. In this chapter, we’ll review what we’ve learned and go a bit further. By now you should be pretty comfortable with QGIS, and your knowledge will continue to grow as you practice your new skills. We will work through a disaster scenario more slowly to better understand InaSAFE, and in Unit 4 we will go to even deeper."
 msgstr ""
 
-# 33d68e4a843d4580b81fd9074d831f73
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:30
+# ece6119a103443e2a1dc4c5a4208d1b0
 msgid "**1. Hazards, Exposures and Impact**"
 msgstr ""
 
-# 0d3e1ff499574f51876a91e0d22eb262
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:32
-msgid ""
-"Let’s being by reviewing what we the inputs and outputs of InaSAFE - "
-"**hazard**, **exposure**, and **impact**.  These terms are important for you "
-"to remember because the analysis process will always depend on these three "
-"things."
+# cb7e1e42d0164c43a164f5b6fa0dacdd
+msgid "Let’s being by reviewing what we the inputs and outputs of InaSAFE - **hazard**, **exposure**, and **impact**.  These terms are important for you to remember because the analysis process will always depend on these three things."
 msgstr ""
 
-# 2c49440fca5449769d0c16738d762332
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:36
-msgid ""
-"**Hazards** (also called disasters) are what we call the data layers "
-"(layers) that describe the extent and magnitude of natural events (such as "
-"earthquakes, tsunamis, volcanic eruptions) that could potentially cause an "
-"event or series of events that threaten and disrupt the lives and "
-"livelihoods of people."
+# 4885dc8da3e84f80b5989a05b0f1748a
+msgid "**Hazards** (also called disasters) are what we call the data layers (layers) that describe the extent and magnitude of natural events (such as earthquakes, tsunamis, volcanic eruptions) that could potentially cause an event or series of events that threaten and disrupt the lives and livelihoods of people."
 msgstr ""
 
-# fff0f6307bf344e598bdc31ce164ef2b
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:41
+# 803a9f2cc66146cb9c615463a99ecc63
 msgid "Generally, hazards that we model:"
 msgstr ""
 
-# b255b4982c1f404fb6310b964af97018
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:43
+# 304fcd8c35434d14a48fb1325b9f5491
 msgid "are at a particular location"
 msgstr ""
 
-# ce03104efdea4f8cb2eba0dc3275484f
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:44
+# d39989374a2f4d089e9b2a5d52dc97c2
 msgid "have a measured intensity"
 msgstr ""
 
-# 0c62e39d95f74739829f788f3d0674dd
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:45
+# ff77d472a0994c56923548ae70c4d279
 msgid "have a measured duration"
 msgstr ""
 
-# 4d2b7f17204445cab27993d873c5e57f
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:46
+# c3da906d578c436181f0c82a1d2a64a0
 msgid "have a certain time frame"
 msgstr ""
 
-# 614407fca5bc4703a156244f81499893
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:48
-msgid ""
-"In our previous look at InaSAFE we used a flood in Jakarta as our hazard.  "
-"In this chapter we will use a dataset modelled from an earthquake in Lembang."
+# 9b2bf5399fbe4061925f9e6211822989
+msgid "In our previous look at InaSAFE we used a flood in Jakarta as our hazard.  In this chapter we will use a dataset modelled from an earthquake in Lembang."
 msgstr ""
 
-# 01743cd04d4449eaaec8e21aafa66e0b
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:51
-msgid ""
-"**Exposure** data represents things that are at risk when faced with a "
-"potential hazard.  This can be man-made features such as public buildings, "
-"houses, roads, and bridges, or it can be so-called natural features, such as "
-"population, rice paddies, and lakes.  These exposed elements can be divided "
-"into various categories, including physical elements (houses, power lines), "
-"economic elements (agricultural land, access to employment), social elements "
-"(vulnerable groups, population density), and environmental elements (air, "
-"water, plants and animals)."
+# 97c32857037d482daea6de1e30fffad8
+msgid "**Exposure** data represents things that are at risk when faced with a potential hazard.  This can be man-made features such as public buildings, houses, roads, and bridges, or it can be so-called natural features, such as population, rice paddies, and lakes.  These exposed elements can be divided into various categories, including physical elements (houses, power lines), economic elements (agricultural land, access to employment), social elements (vulnerable groups, population density), and environmental elements (air, water, plants and animals)."
 msgstr ""
 
-# 12aadf2a99014f81a5f47cdb86778049
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:59
-msgid ""
-"Previously we ran InaSAFE with exposure data consisting of population data "
-"from AsiaPop, and building data from OpenStreetMap.  In this chapter’s "
-"analysis we will once again use OSM data."
+# 7fe62764ade44d639d0b05ed48621402
+msgid "Previously we ran InaSAFE with exposure data consisting of population data from AsiaPop, and building data from OpenStreetMap.  In this chapter’s analysis we will once again use OSM data."
 msgstr ""
 
-# 2acbfbe487c24cf8a89e7cc33c532f33
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:63
-msgid ""
-"**Impact** is the result we get after InaSAFE processes the effect of the "
-"hazard data upon the exposure data.  For example, if there is an earthquake "
-"model in Lembang, and we process it against building data in Bandung, our "
-"impact layer may show those houses that would be severely damaged, those "
-"somewhat damaged, and those mildly damaged.  In other words, what goes in to "
-"InaSAFE are hazards and exposure.  What comes out is impact."
+# b9332df6f19c42c79856cac035383133
+msgid "**Impact** is the result we get after InaSAFE processes the effect of the hazard data upon the exposure data.  For example, if there is an earthquake model in Lembang, and we process it against building data in Bandung, our impact layer may show those houses that would be severely damaged, those somewhat damaged, and those mildly damaged.  In other words, what goes in to InaSAFE are hazards and exposure.  What comes out is impact."
 msgstr ""
 
-# d6c13b444d66478dbca94f180e63375a
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:70
+# 7f2c0722d98f480a8148640760f8e022
 msgid "**2. The InaSAFE Interface**"
 msgstr ""
 
-# a582f2d1c0af4c3eac38318b80e40497
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:72
-msgid ""
-"Before we run any scenarios, let’s take a closer look at the InaSAFE "
-"interface. Open a new project in QGIS."
+# f070d23c936246c3a1c377f39e8f932d
+msgid "Before we run any scenarios, let’s take a closer look at the InaSAFE interface. Open a new project in QGIS."
 msgstr ""
 
-# dcd11bad971e428681ff56afd2a74931
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:75
-msgid ""
-"If the InaSAFE toolbar is not visible, :guilabel:`right-click` on the "
-"**toolbars** and make sure that :guilabel:`Plugins` is checked.  The toolbar "
-"looks like this:"
+# fb7f6d89237d4072a41203e64f643f12
+msgid "If the InaSAFE toolbar is not visible, :guilabel:`right-click` on the **toolbars** and make sure that :guilabel:`Plugins` is checked.  The toolbar looks like this:"
 msgstr ""
 
-# 71384a5ef51a4711a2a9e7feaa9afcc7
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:82
-msgid ""
-"To show the InaSAFE panel, click on the button named :guilabel:`Toggle "
-"InaSAFE dock`."
+# 2d1af12adc494e4c8ca8e2cf79f0e085
+msgid "To show the InaSAFE panel, click on the button named :guilabel:`Toggle InaSAFE dock`."
 msgstr ""
 
-# 34a0f0cdc2a84eb08d36e65090444eba
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:88
-msgid ""
-"That just like QGIS toolbars, you can drag and drop the InaSAFE dock panel "
-"to change its position on the QGIS interface.  You can pull it away as a "
-"separate window, or place it below the Layers list.  It’s quite convenient "
-"in its location on the right side of QGIS, so we will leave it there."
+# 3028c109eebc471b96604b58b4f784d4
+msgid "That just like QGIS toolbars, you can drag and drop the InaSAFE dock panel to change its position on the QGIS interface.  You can pull it away as a separate window, or place it below the Layers list.  It’s quite convenient in its location on the right side of QGIS, so we will leave it there."
 msgstr ""
 
-# 1ab60c7a6adb43aaaa684987b0de1c64
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:96
-msgid ""
-"The InaSAFE panel consists of three parts: Questions, Results and Buttons.  "
-"The questions are mixed in with dropdown boxes - this is where we establish "
-"our input data and define the scenario that we want InaSAFE to process.  The "
-"purpose of InaSAFE is to make your impact analysis very simple and easy to "
-"do.  The Questions section provides a simple way for you to formulate what "
-"you want to know.  All questions are created in the following format:"
+# e5c7fc6fbd8c4c2eb5b16abd047c08b4
+msgid "The InaSAFE panel consists of three parts: Questions, Results and Buttons.  The questions are mixed in with dropdown boxes - this is where we establish our input data and define the scenario that we want InaSAFE to process.  The purpose of InaSAFE is to make your impact analysis very simple and easy to do.  The Questions section provides a simple way for you to formulate what you want to know.  All questions are created in the following format:"
 msgstr ""
 
-# 9f420797159e4129bc5e06cc597f6112
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:103
-msgid ""
-"*In the event of [hazard] how many [exposure] might [impact]? For example:"
-"\"In the event of an earthquake how many buildings might be closed?\"*"
+# f1dc759df54b468eb80748fa5cf478b9
+msgid "*In the event of [hazard] how many [exposure] might [impact]? For example:\"In the event of an earthquake how many buildings might be closed?\"*"
 msgstr ""
 
-# 9a1df928974249ceb862ceb58424fc8f
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:106
-msgid ""
-"The other parts of the InaSAFE we have seen in action.  The Results section "
-"is filled in with information once InaSAFE is run, and the Buttons allow us "
-"to run a scenario, print, and access help."
+# 0ee25a58e46f4b8eaca69c2d5ecc1cf8
+msgid "The other parts of the InaSAFE we have seen in action.  The Results section is filled in with information once InaSAFE is run, and the Buttons allow us to run a scenario, print, and access help."
 msgstr ""
 
-# 54091a8690ef489cb7ee6b170a9d6c21
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:110
+# e8abc1f5a528426eae3d3338d45b7b3a
 msgid "**3.  Adding Hazard Data**"
 msgstr ""
 
-# bb30ba2062e44c318c7d30ba4c9f9f34
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:112
-msgid ""
-"**Hazards** can be represented by vector layers or by raster layers.  "
-"Remember that raster layers are like images with many pixels, and each pixel "
-"represents some data about an area on the ground.  A raster that shows "
-"elevation, for example, will contain pixels with different values based on "
-"the altitude of the location.  Similarly, a raster that represents an "
-"earthquake will contain the magnitude of the earthquake at the time of the "
-"event in every pixel in the raster."
+# 17f02681a3064792b9e392168d5d49bb
+msgid "**Hazards** can be represented by vector layers or by raster layers.  Remember that raster layers are like images with many pixels, and each pixel represents some data about an area on the ground.  A raster that shows elevation, for example, will contain pixels with different values based on the altitude of the location.  Similarly, a raster that represents an earthquake will contain the magnitude of the earthquake at the time of the event in every pixel in the raster."
 msgstr ""
 
-# 166ef14ad5b54d4aaa4811fe3893d358
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:120
-msgid ""
-"An earthquake can also be modelled with vector data, although the detail of "
-"the data will most likely be lower.  In this case vector polygons will "
-"represent the area where the earthquake occurred, and possibly various "
-"polygons will show areas of differing magnitudes."
+# c2a38c15ec7547d1a2f05020d468c940
+msgid "An earthquake can also be modelled with vector data, although the detail of the data will most likely be lower.  In this case vector polygons will represent the area where the earthquake occurred, and possibly various polygons will show areas of differing magnitudes."
 msgstr ""
 
-# 3f972b62f9504cfb88714ec427882e76
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:125
-msgid ""
-"Let’s begin by adding our hazard layer to QGIS.  It’s a raster model of an "
-"earthquake in Lembang."
+# 25717dff503b4b6c8474e3b4a0a30ff1
+msgid "Let’s begin by adding our hazard layer to QGIS.  It’s a raster model of an earthquake in Lembang."
 msgstr ""
 
-# 8d942ce5a20b467a970ab5d10cd897cb
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:128
+# bf44a0007e5b48c9bd2d808c89b0ebea
 msgid "Click the :guilabel:`Add Raster Layer` button."
 msgstr ""
 
-# 2733b4f9e7a644be840da56937b17475
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:133
-msgid ""
-"Navigate to the :file:`../qgis/Bandung` folder and add "
-"**Lembang_Earthquake_Scenario.asc**. This data is raster data (in ASCII "
-"format) which represents the magnitude of the earthquake. The layer will "
-"look like this:"
+# 2088de6584914350a3d36ae8fc1ae524
+msgid "Navigate to the :file:`../qgis/Bandung` folder and add **Lembang_Earthquake_Scenario.asc**. This data is raster data (in ASCII format) which represents the magnitude of the earthquake. The layer will look like this:"
 msgstr ""
 
-# 43423b6d720d4e4e9810da4625f7da25
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:141
-msgid ""
-"You will notice that the hazard dropdown box has been automatically filled "
-"in the InaSAFE panel.  This is because the data file has already been "
-"prepared for us with keyword metadata (fancy words for settings) that tells "
-"InaSAFE whether it’s a hazard or exposure layer.  When we add the exposure "
-"data, we will learn how to do inform InaSAFE ourselves."
+# af0f67ebb48e4f788fb11c9e4aa806d4
+msgid "You will notice that the hazard dropdown box has been automatically filled in the InaSAFE panel.  This is because the data file has already been prepared for us with keyword metadata (fancy words for settings) that tells InaSAFE whether it’s a hazard or exposure layer.  When we add the exposure data, we will learn how to do inform InaSAFE ourselves."
 msgstr ""
 
-# 149dbc67bc384d1489c322ae61df13de
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:147
+# c4bc13c696c848708c2ff91b1a000066
 msgid "**4. Exposure**"
 msgstr ""
 
-# 55642f93577f4724a596a93304e751b6
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:149
-msgid ""
-"**Exposure** can also be represented by vectors or rasters.  In fact we’ve "
-"already seen this in the Jakarta flood scenario.  When we ran that analysis "
-"our population layer was a raster, with each pixel representing the "
-"population of a given area on the Earth.  Our buildings on the other hand, "
-"were vectors."
+# de103ec8945d4f22883fd76a275e663b
+msgid "**Exposure** can also be represented by vectors or rasters.  In fact we’ve already seen this in the Jakarta flood scenario.  When we ran that analysis our population layer was a raster, with each pixel representing the population of a given area on the Earth.  Our buildings on the other hand, were vectors."
 msgstr ""
 
-# dc1f996e11424a07bc847996d3e63d23
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:154
-msgid ""
-"Let’s add our exposure data to QGIS - once again we will be using buildings "
-"obtained from OpenStreetMap."
+# d305160922a1478fb7c6336251788803
+msgid "Let’s add our exposure data to QGIS - once again we will be using buildings obtained from OpenStreetMap."
 msgstr ""
 
-# 50a8c9d019d445d382e022d6ec59cad9
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:157
+# cc401d7aa6bd4a459c6b395d1579523a
 msgid "Click on the :guilabel:`Add Vector Layer` button."
 msgstr ""
 
-# 997cf1bdd6fe44809442c151a9ebe095
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:162
-msgid ""
-"Add the file Bangunan_Bandung.shp, which is located in the qgis/Bandung "
-"folder."
+# b477dbf5412143adaab2a17b8d3a5f24
+msgid "Add the file Bangunan_Bandung.shp, which is located in the qgis/Bandung folder."
 msgstr ""
 
-# f9102de7489e4abd830d005a7e5f43fa
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:168
-msgid ""
-"Notice that unlike the hazard layer, it does not appear automatically in "
-"InaSAFE!"
+# 9eaf43f837554700b43e575f25d6bb1f
+msgid "Notice that unlike the hazard layer, it does not appear automatically in InaSAFE!"
 msgstr ""
 
-# 3754dff538c64ab98dc527fcfa276685
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:171
+# cb43f6bce1aa456ca8ea4c4b475487ba
 msgid "**5. Adding Keyword Metadata**"
 msgstr ""
 
-# 9f24e76977c24b558a9b029da4a9243a
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:173
-msgid ""
-"In order for InaSAFE to know that our layers are hazard or exposure "
-"datasets, we need to assign keywords to the layers using the InaSAFE keyword "
-"tool.  Let’s take a look at the keywords that have already been created on "
-"the hazard layer."
+# a02cddade4d3448c8ed9a269c03f2e1b
+msgid "In order for InaSAFE to know that our layers are hazard or exposure datasets, we need to assign keywords to the layers using the InaSAFE keyword tool.  Let’s take a look at the keywords that have already been created on the hazard layer."
 msgstr ""
 
-# f6dc4bb126084929bfe988be19481d1f
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:177
-msgid ""
-":guilabel:`Select` the **earthquake** layer in the Layers list, and click on "
-"the :guilabel:`InaSAFE Keyword Editor` button."
+# 3f64f4bf95db4b45838b28e3baff3db1
+msgid ":guilabel:`Select` the **earthquake** layer in the Layers list, and click on the :guilabel:`InaSAFE Keyword Editor` button."
 msgstr ""
 
-# b52ae1a1396c474f85dc79e7813d8803
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:183
-msgid ""
-"You can see that this layer has already been assigned some keyword "
-"information for InaSAFE, including its title, a category, and a subcategory."
+# e882c7ab387d4ff6868100c930ba2f3d
+msgid "You can see that this layer has already been assigned some keyword information for InaSAFE, including its title, a category, and a subcategory."
 msgstr ""
 
-# 9b43ead153fb47f7a0d40d9bdd242627
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:189
-msgid ""
-"Click :guilabel:`OK`, and now :guilabel:`select` the **Bangunan_Bandung** "
-"layer and open the keyword editor."
+# 7fef3d771bf149b9a52b80caf34224f0
+msgid "Click :guilabel:`OK`, and now :guilabel:`select` the **Bangunan_Bandung** layer and open the keyword editor."
 msgstr ""
 
-# b6ea3cb1939a46a19c73f68397c7756a
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:195
+# 23fc48d0fd1d48768962568d62ec7659
 msgid "You’ll notice that title and category are set, but not the subcategory!"
 msgstr ""
 
-# 701b438a9d2b4a59845b678897bbea43
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:196
+# d72f1af3d3dc4c8b9b6b3a135cb6b73d
 msgid "Change this to :guilabel:`structure`, and then click :guilabel:`OK`."
 msgstr ""
 
-# 40e0cf99b1f04a8d832305846b362a94
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:197
+# 24eea184cf524bbb90e68901a56ebcfc
 msgid "Notice that the layer now appears in the InaSAFE dock panel."
 msgstr ""
 
-# ef0c90e86022426e9b8df59fef50d4d3
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:202
+# 195015e49ecb455bbce7a95e3dd530a8
 msgid "**6. Impact Analysis**"
 msgstr ""
 
-# 4fc9461b199f4f2d8edf1d42bb68705c
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:204
-msgid ""
-"Now our hazard and exposure data are set in the InaSAFE panel, because the "
-"appropriate keywords have been added to our layers.  Note that if we were to "
-"add a second exposure layer to our project, we would be able to choose which "
-"exposure layer we wanted from the InaSAFE dropdown menu.  The same applies "
-"to hazard layers."
+# 75292809016b4d3f81eb9f9083fc882c
+msgid "Now our hazard and exposure data are set in the InaSAFE panel, because the appropriate keywords have been added to our layers.  Note that if we were to add a second exposure layer to our project, we would be able to choose which exposure layer we wanted from the InaSAFE dropdown menu.  The same applies to hazard layers."
 msgstr ""
 
-# f867a423a50746f49befa63efc97ce13
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:210
-msgid ""
-"The third dropdown box is the impact function (“Might”).  This concludes our "
-"question, and defines the function that InaSAFE will run behind the scenes. "
-"InaSAFE developers have written many of these functions to analyze all sorts "
-"of hazard and exposure layers.  The function that is selected for us here "
-"will process the hazard and exposure layers spatially to determine how the "
-"exposure layer will “be affected.”"
+# 005be6bb657f42d79d07fc83a69a2b13
+msgid "The third dropdown box is the impact function (“Might”).  This concludes our question, and defines the function that InaSAFE will run behind the scenes. InaSAFE developers have written many of these functions to analyze all sorts of hazard and exposure layers.  The function that is selected for us here will process the hazard and exposure layers spatially to determine how the exposure layer will “be affected.”"
 msgstr ""
 
-# 0feb5bd178f9497390be5403f6696626
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:217
-msgid ""
-"Click the :guilabel:`Run` button at the bottom to start the impact analysis. "
-"At the end of the process, the statistics will be displayed in the Results "
-"section, and a new layer will be added to the Layers list that describes the "
-"result of the analysis.  The map will distinguish between buildings that are "
-"affected and those that are not."
+# cdbbacaba3ad4757988ba437835a4dab
+msgid "Click the :guilabel:`Run` button at the bottom to start the impact analysis. At the end of the process, the statistics will be displayed in the Results section, and a new layer will be added to the Layers list that describes the result of the analysis.  The map will distinguish between buildings that are affected and those that are not."
 msgstr ""
 
-# b3e34aa8dcd349ea982c2afadc8b0c96
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:229
+# a99f2d349f4d4c47bb0afa3e79653b92
 msgid "**7. Improve the InaSAFE Output Map**"
 msgstr ""
 
-# 5a00f24108464056a106536a0bd9b695
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:231
-msgid ""
-"We can improve our impact map by editing the symbology in QGIS.  Styles can "
-"be changed, other relevant layers can be added, and the layout can be "
-"changed using the Print Composer."
+# b1b922ea4bb64242a60523d08a1fb5d4
+msgid "We can improve our impact map by editing the symbology in QGIS.  Styles can be changed, other relevant layers can be added, and the layout can be changed using the Print Composer."
 msgstr ""
 
-# 625e74d16e6946bca08b028a8add9896
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:235
+# 49fb0263dbee49ceb4a866fd1ac995a2
 msgid "Let’s add Bing aerial imagery as a background for our map."
 msgstr ""
 
-# 357d07ea9b6e42eabc1750d92b15f297
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:237
-msgid ""
-"Go to :menuselection:`Plugins ‣ OpenLayers plugin ‣ Add Bing Aerial layer`."
+# 6ad0d3d159c443ee8c5760da7891f8a9
+msgid "Go to :menuselection:`Plugins ‣ OpenLayers plugin ‣ Add Bing Aerial layer`."
 msgstr ""
 
-# e8fb2cd222344a57bbbb8f161ca345de
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:238
-msgid ""
-"Drag the layer below your new impact layer.  If the buildings don’t show "
-"correctly above the imagery, :guilabel:`right-click` on the layer and "
-"select :guilabel:`Update drawing order`."
+# faff866545cc4da0a7995b2b0f3a1410
+msgid "Drag the layer below your new impact layer.  If the buildings don’t show correctly above the imagery, :guilabel:`right-click` on the layer and select :guilabel:`Update drawing order`."
 msgstr ""
 
-# 64eef6e8783947ae82bcf5ae5b2aeda6
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:245
+# 8f7fc7e60af6412abf87a28a460e62c5
 msgid "**8.  Using the Print Button**"
 msgstr ""
 
-# 878f41e53a1b4271b9fbab6421a449c8
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:247
-msgid ""
-"The data displayed on the screen can be saved to a PDF file by clicking "
-"Print at the bottom of the InaSAFE panel.  As we’ve seen already, two files "
-"will be created, one containing the map and another the data.  Note that you "
-"can adjust the print out of your map by adding layers and changing "
-"symbology, and also by zooming to areas of your choosing."
+# cd2beaf5bcce47f48382901c31e428cf
+msgid "The data displayed on the screen can be saved to a PDF file by clicking Print at the bottom of the InaSAFE panel.  As we’ve seen already, two files will be created, one containing the map and another the data.  Note that you can adjust the print out of your map by adding layers and changing symbology, and also by zooming to areas of your choosing."
 msgstr ""
 
-# b9a3d41721944959adc5c91cad1ab912
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:256
+# 2e4391891f2c4a0fac2f5d2453d68806
 msgid "**9. Save Your Results**"
 msgstr ""
 
-# e0524fe3984345c8b503cdc977765fa8
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:258
-msgid ""
-"You can save the impact layer that InaSAFE created, and you can save the "
-"QGIS project to come back to it later, but note that the InaSAFE statistics "
-"cannot be saved (except when you save them in a PDF).  To get the statistics "
-"again in QGIS, you will need to run the analysis again."
+# 38fe177b76ca4661a80cc12228804cca
+msgid "You can save the impact layer that InaSAFE created, and you can save the QGIS project to come back to it later, but note that the InaSAFE statistics cannot be saved (except when you save them in a PDF).  To get the statistics again in QGIS, you will need to run the analysis again."
 msgstr ""
 
-# 7ba4de9aad5c4039bda4945b484c8760
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:263
-msgid ""
-"To save the newly generated layer, :guilabel:`right-click` on it in the "
-"**Layers list**."
+# 89558569c3be40b790fb070a669ad4ab
+msgid "To save the newly generated layer, :guilabel:`right-click` on it in the **Layers list**."
 msgstr ""
 
-# fb5913cd25c14abe9e2aa6ea98280276
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:265
+# c4dbe97bdfc349ca85be451028dab8d3
 msgid "Click :guilabel:`Save As`..."
 msgstr ""
 
-# 1384b4f12d4d4895b57a65ec69b9d8d7
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:266
+# 8a6fe741cf224245aba912625121ff9d
 msgid "Select a name and location for the file.  Click :guilabel:`OK`."
 msgstr ""
 
-# 8ca7392532fb4b8ca0bb75cc10b61a1d
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:268
+# de331df9b2ce44c6830aa61ede32aba0
 msgid "To save the project:"
 msgstr ""
 
-# 981638a796174ffd9216e5212826d602
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:270
+# cdf8ba9f543347f4b82d45cba2098d52
 msgid "Click on the :guilabel:`Save Project` button at the top of QGIS."
 msgstr ""
 
-# e6287389b96b4b02994086a80c334c30
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:275
-msgid ""
-"Give a name to the project and put it in the directory you want to save your "
-"work. Then click :guilabel:`Save`."
+# 607215587f16409c9fc1f26eb1d275ef
+msgid "Give a name to the project and put it in the directory you want to save your work. Then click :guilabel:`Save`."
 msgstr ""
+

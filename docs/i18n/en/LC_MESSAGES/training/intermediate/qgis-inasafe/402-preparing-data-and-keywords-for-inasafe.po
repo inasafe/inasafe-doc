@@ -8,526 +8,396 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-17 20:22+0100\n"
+"POT-Creation-Date: 2014-01-24 11:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# c57e264410b74d119e43155b70fd6e9c
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:8
+# 8b0ea5c4857447b1ac20e6c648e85bab
 msgid "Module 2: Preparing Data and Keywords for InaSAFE"
 msgstr ""
 
-# 50fe5e52b7354b08b42df48fd1de8ec0
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:10
+# a35ada73da52449eada94f325e6d2db5
 msgid "**Learning Objectives**"
 msgstr ""
 
-# d2e647b5f94e42a190977af1f35e5240
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:12
+# 8e10d93fa1834d9fb016fccb17deef72
 msgid "Explain about input"
 msgstr ""
 
-# 2b7da01b0bfa468ead878ed4a5e2b33f
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:13
+# 6596d518dd6d4a30a2c93cfb6e830b03
 msgid "Getting OSM data from HOT export"
 msgstr ""
 
-# 0d05d8da25d74a87af438a3c77a57ab8
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:14
+# f7682b2136ce4733bab59241bdad261c
 msgid "Load data"
 msgstr ""
 
-# e9bcf381586c47f8993cba483ecc6b84
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:15
+# 5fab72b8f95e4c418b4589dcab0c6fd8
 msgid "Add keywords"
 msgstr ""
 
-# 050e2d10dd684496b70bda5e30ad4d82
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:16
+# c6e19ea4996e499bac459ea479d53267
 msgid "Prepare hazard layer"
 msgstr ""
 
-# a727e3cb362c4af991e4ec2d555d3c96
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:17
+# 5cd37e6d2e454020a19d32bc23e38c1e
 msgid "Run InaSAFE"
 msgstr ""
 
-# 1e6ff7c22fcf4abb8ebe212582fa5794
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:19
-msgid ""
-"Now you you know your way around QGIS and InaSAFE, let’s dive deeper. In "
-"this Module, you will see how to prepare your own data so that it can be "
-"processed in InaSAFE. Much of what we cover in this Module you’ve already "
-"done, although we will go over some of it in more detail. We’ll be using the "
-"project created in this Module throughout the rest of the unit, so be sure "
-"to save it along the way!"
+# 968d5dea6cfa45979c958f514ab8a200
+msgid "Now you you know your way around QGIS and InaSAFE, let’s dive deeper. In this Module, you will see how to prepare your own data so that it can be processed in InaSAFE. Much of what we cover in this Module you’ve already done, although we will go over some of it in more detail. We’ll be using the project created in this Module throughout the rest of the unit, so be sure to save it along the way!"
 msgstr ""
 
-# 2260e765926343c8ad1bd0af208b6d9f
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:27
+# bcc70eaab20f441098f44281cc78a757
 msgid "**1. Review about Inputs**"
 msgstr ""
 
-# c8f9d37ad1b341338094ee3102c7678c
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:29
+# 4c44c82e63eb4f0396a7ca9a997e4993
 msgid "Let’s review the types of data used by InaSAFE."
 msgstr ""
 
-# 6eb45c89d06b47aa8b241531a34b7a7d
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:31
-msgid ""
-"**Hazards** are conditions, phenomenon, or human activity that potentially "
-"cause victims and destruction to society and environment. Frequently "
-"observed hazards are earthquakes, tsunamis, floods, landslides, and "
-"tornadoes."
+# ba98ac6e8bd04f69a749d9c2d7a5dbd3
+msgid "**Hazards** are conditions, phenomenon, or human activity that potentially cause victims and destruction to society and environment. Frequently observed hazards are earthquakes, tsunamis, floods, landslides, and tornadoes."
 msgstr ""
 
-# 03f66e86e5f9485ea9cbcaa558e10099
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:36
-msgid ""
-"When we are working in InaSAFE, hazard data refers to a vector or raster "
-"dataset that represents the level and magnitude of an event that can "
-"potentially cause damages. To be used for impact calculation in InaSAFE, "
-"level and magnitude of an event scenario must be mapped over the area of "
-"interest. This means that hazard data must be geographic - it must have "
-"location.  We have already looked at hazard data for the 2007 Jakarta Flood "
-"and the Lembang Earthquake. These hazard layers were produced from "
-"scientific modeling conducted by scientific organizations and government "
-"agencies. These are typical sources for such hazard data, although in cases "
-"of flood hazards such data may also be gathered from affected communities."
+# c5ee63a8b81d4a1e83e0283c37f269b1
+msgid "When we are working in InaSAFE, hazard data refers to a vector or raster dataset that represents the level and magnitude of an event that can potentially cause damages. To be used for impact calculation in InaSAFE, level and magnitude of an event scenario must be mapped over the area of interest. This means that hazard data must be geographic - it must have location.  We have already looked at hazard data for the 2007 Jakarta Flood and the Lembang Earthquake. These hazard layers were produced from scientific modeling conducted by scientific organizations and government agencies. These are typical sources for such hazard data, although in cases of flood hazards such data may also be gathered from affected communities."
 msgstr ""
 
-# db63dd7b11ce40e8a314cb2585adc29c
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:49
+# 1c1b4fcd8296456d9a8324203030a1dd
 msgid "Generally, hazard data has the following characteristics:"
 msgstr ""
 
-# d07f5451edaf40f5be9da04132668477
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:51
+# e3c9c51d9398464b99b89b5309ad078d
 msgid "are at a particular location"
 msgstr ""
 
-# cf7e957b916b436fafbc631a3c2aa086
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:52
-msgid ""
-"have a measured intensity (ie. the depth of a flood or the MMI of an "
-"earthquake)"
+# c1cf95b9593748ca88c634bc79457e43
+msgid "have a measured intensity (ie. the depth of a flood or the MMI of an earthquake)"
 msgstr ""
 
-# 330d6587e498404cb781e4bd9b1b98f8
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:54
+# 30ed8028c96d423a99cf194178d93166
 msgid "have a measured duration of impact (ie. hours or days after a flood)"
 msgstr ""
 
-# aeaaf565b7034f268e5c86c29049a985
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:55
+# ceaf8d63eed34ab4bc98a258c73e3753
 msgid "have a certain time frame (ie. in the case of a sea rise flood)"
 msgstr ""
 
-# 24ca059838704590814dac819fa7162d
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:57
-msgid ""
-"In this Module, our hazard input will be a flood in the village of Sirahan, "
-"in Magelang regency in Central Java. The data for this flood comes from "
-"participatory mapping activities done by community members as part of the "
-"REKOMPAK project. The data is in the training folder *qgis/Sirahan/*."
+# b67a827d066441c2b2b833ef2ad727be
+msgid "In this Module, our hazard input will be a flood in the village of Sirahan, in Magelang regency in Central Java. The data for this flood comes from participatory mapping activities done by community members as part of the REKOMPAK project. The data is in the training folder *qgis/Sirahan/*."
 msgstr ""
 
-# 02b868542fdf476cbf9f6d7ba78aba61
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:63
-msgid ""
-"**Exposure** data refers to natural and man-made objects that may be "
-"affected if a disaster scenario really happens. In this Module we will use "
-"building exposure data created in OpenStreetMap."
+# 603947f1d36747d88ff261a886437fbc
+msgid "**Exposure** data refers to natural and man-made objects that may be affected if a disaster scenario really happens. In this Module we will use building exposure data created in OpenStreetMap."
 msgstr ""
 
-# 61277b3bb86344d0bfd3efb17d345509
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:67
-msgid ""
-"The InaSAFE impact functions produce an output layer representing potential "
-"damages or losses on the affected exposure layer. This output layer will be "
-"created once the impact calculation process is finished processing. InaSAFE "
-"has many impact functions available, which are listed through the 'Impact "
-"Functions Doc' menu (see below). The impact calculation will only be "
-"possible when users provide the hazard and exposure layer data sets and, "
-"when necessary, users define the required parameters through the keyword "
-"editor correctly."
+# 10bda6af0c53404d8da4def16f730eb1
+msgid "The InaSAFE impact functions produce an output layer representing potential damages or losses on the affected exposure layer. This output layer will be created once the impact calculation process is finished processing. InaSAFE has many impact functions available, which are listed through the 'Impact Functions Doc' menu (see below). The impact calculation will only be possible when users provide the hazard and exposure layer data sets and, when necessary, users define the required parameters through the keyword editor correctly."
 msgstr ""
 
-# 252bb2d4f0c1471689295d397f5453d2
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:80
-msgid ""
-"**Aggregation** is used to reclassify the result of the impact calculation "
-"according to a specific administrative boundary level."
+# c0e1a61b7c0d4dd9a2c0d334b2f8ecfa
+msgid "**Aggregation** is used to reclassify the result of the impact calculation according to a specific administrative boundary level."
 msgstr ""
 
-# 7e019aa0dcb642ae9e4f76dc6f46ae78
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:83
-msgid ""
-"**Keywords** define which category a dataset belongs to, whether hazard or "
-"exposure. They are also used to define specific parameters to be considered, "
-"as we shall see. After you calculate the impact of a scenario with InaSAFE, "
-"what next? Well, the impact calculation can be used to prepare a contingency "
-"plan. That's why relevant questions and remarks are displayed in the Result "
-"section, which may then be considered by disaster risk managers or planning "
-"managers."
+# e2990abdd9ea4c8ba6c745cf2514014a
+msgid "**Keywords** define which category a dataset belongs to, whether hazard or exposure. They are also used to define specific parameters to be considered, as we shall see. After you calculate the impact of a scenario with InaSAFE, what next? Well, the impact calculation can be used to prepare a contingency plan. That's why relevant questions and remarks are displayed in the Result section, which may then be considered by disaster risk managers or planning managers."
 msgstr ""
 
-# 68769129ed344899b9fba03d0885baff
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:92
+# 714d78f1307242dcb92c62317fbca08f
 msgid "**2. Getting OSM Data from HOT Exports**"
 msgstr ""
 
-# c44614dd76264974838758f8c13a2b34
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:94
-msgid ""
-"In previous scenarios, we used example data provided in the training "
-"directory, but to set up our scenario in the village of Sirahan, let’s "
-"access the OpenStreetMap data ourselves to use as our exposure layer. We "
-"will use the OSM buildings to calculate how many buildings (and which) will "
-"be inundated when a flood occurs similar to our hazard model."
+# 3bd1d097c152499ea813fe5fb8afab9f
+msgid "In previous scenarios, we used example data provided in the training directory, but to set up our scenario in the village of Sirahan, let’s access the OpenStreetMap data ourselves to use as our exposure layer. We will use the OSM buildings to calculate how many buildings (and which) will be inundated when a flood occurs similar to our hazard model."
 msgstr ""
 
-# bd238a67349e4dc7b1218e6f0e5f4809
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:100
-msgid ""
-"We’ve worked with OpenStreetMap data a lot already. Now we will utilize a "
-"website where we can quickly and easily access the data from OSM."
+# 40eb19b08c804640bd9cb06be6fd7c1d
+msgid "We’ve worked with OpenStreetMap data a lot already. Now we will utilize a website where we can quickly and easily access the data from OSM."
 msgstr ""
 
-# 0846486ffd3646acb839b2d3777ca360
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:104
-msgid ""
-"Open your web browser and navigate to export.hotosm.org. The site will look "
-"like this:"
+# 6a52c0b749f8484888fe8271f6320d2f
+msgid "Open your web browser and navigate to export.hotosm.org. The site will look like this:"
 msgstr ""
 
-# d8336e21613b4543a988924751058274
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:110
-msgid ""
-"The HOT Export website allows you to choose an area and create a data "
-"extract from that area. Then you can download the data in a variety of "
-"formats that are easily read by QGIS."
+# 5b9def037e9540dbb9385652e5586c7b
+msgid "The HOT Export website allows you to choose an area and create a data extract from that area. Then you can download the data in a variety of formats that are easily read by QGIS."
 msgstr ""
 
-# b2722f7c65374e299ee21fd8dcf7ff2d
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:115
+# 60067b68cd314af884ed3006f3f1c299
 msgid "In the upper right corner, click :guilabel:`New Job`"
 msgstr ""
 
-# 9df21684c702434fa73c1c65aef11a1f
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:116
+# 41880cb37c6f4be7874f8f0af553ad46
 msgid "Give the job a name, such as *“Desa Sirahan”*"
 msgstr ""
 
-# 7d863cc2f5fb464d9396774b47a0d215
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:117
-msgid ""
-"Zoom in on the map until you can see the village Sirahan, which is just "
-"northwest of Yogyakarta."
+# 4a1e95c552dc4016a5b351459c39cd97
+msgid "Zoom in on the map until you can see the village Sirahan, which is just northwest of Yogyakarta."
 msgstr ""
 
-# 911ae8967e4d420d9cdc2795eb406251
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:119
-msgid ""
-"Click :guilabel:`Select Area` and then draw a box around Sirahan village."
+# 3eead13431b94f779698f1d8905c99f7
+msgid "Click :guilabel:`Select Area` and then draw a box around Sirahan village."
 msgstr ""
 
-# 2dc8f13376054d81bd1b39a6a0ae88d1
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:124
+# e23cc09fdd894786b9321a5c7e79c5e7
 msgid "The page should look somethings like this:"
 msgstr ""
 
-# f81cad080b0844f18a79ce838c332e87
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:129
+# b34d0649f2ef4488867fd01864c1a218
 msgid "Click the :guilabel:`Create Job` button."
 msgstr ""
 
-# 36e622e5e9104ce8b2b361c1b8fae227
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:130
+# 2daf95a7834f42ccaefb6d25e53130e0
 msgid "You will be asked to define a presets file"
 msgstr ""
 
-# 3705bfbd97eb408597936708511e9c1a
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:131
-msgid ""
-"this is like the presets that you added to JOSM in the previous unit, except "
-"here, they define the attributes that InaSAFE will provide.  Choose “preset "
-"file-INASAFE.”"
+# 8289a4197dc049e88c627492ffd12f25
+msgid "this is like the presets that you added to JOSM in the previous unit, except here, they define the attributes that InaSAFE will provide.  Choose “preset file-INASAFE.”"
 msgstr ""
 
-# a6e8e89738e64aeb98bf903c617cfa1f
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:138
+# c4875f7e37444c2d953375ba355d6e17
 msgid "Click the :guilabel:`Save` button."
 msgstr ""
 
-# 6f81f8d46acb4becb68a3ce0b38f4d05
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:139
-msgid ""
-"Take a few breaths!  It may take a few minutes for the data extraction job "
-"to process. When it is finished, the page will change and you will see a "
-"list of files you can download like this:"
+# 30d4f60c98b34890aafed7e597116a3d
+msgid "Take a few breaths!  It may take a few minutes for the data extraction job to process. When it is finished, the page will change and you will see a list of files you can download like this:"
 msgstr ""
 
-# e3b6e9ea6316428a8121bef3b1c79c40
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:147
-msgid ""
-"Click on :guilabel:`ESRI Shapefile` to download shapefiles, and once you "
-"have it, extract (unzip) the archive on your computer. It should create a "
-"directory named extract.shp"
+# 97b36eb70cd64f17b026c032fa163f01
+msgid "Click on :guilabel:`ESRI Shapefile` to download shapefiles, and once you have it, extract (unzip) the archive on your computer. It should create a directory named extract.shp"
 msgstr ""
 
-# 21c2c8f3c8da4c2cbb01313bd262d20d
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:151
+# d0a93ea5c6f64b10b4139fe93651679f
 msgid "**3. Load Data**"
 msgstr ""
 
-# fdd88fae26234271a1629f485c2206a9
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:153
-msgid ""
-"We will use this OpenStreetMap data as our exposure data. Open a new QGIS "
-"project and add all of the shapefiles that you downloaded as vector layers. "
-"You should have four layers:"
+# f267a7e34ea1485f902757169caa4786
+msgid "We will use this OpenStreetMap data as our exposure data. Open a new QGIS project and add all of the shapefiles that you downloaded as vector layers. You should have four layers:"
 msgstr ""
 
-# 72b6ca2eba294c40b2c9fd28cc5de452
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:161
-msgid ""
-"For reasons that will become clear later, we need to change the map "
-"projection from the default OSM projection (WGS 84) to WGS 84 / UTM 49S. In "
-"other words, we need a CRS that uses meters, not degrees."
+# 58e837b4434442a6871665c89afbd9cc
+msgid "For reasons that will become clear later, we need to change the map projection from the default OSM projection (WGS 84) to WGS 84 / UTM 49S. In other words, we need a CRS that uses meters, not degrees."
 msgstr ""
 
-# 511a5d2340664b78a6f2a182980f8ab2
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:165
-msgid ""
-"Right click on the *planet_osm_polygon* layer and click :guilabel:`Save as`."
+# f67af57c7b114df7a620af4478fd576a
+msgid "Right click on the *planet_osm_polygon* layer and click :guilabel:`Save as`."
 msgstr ""
 
-# 503685953ecf4dac9a91eee8421d249e
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:166
-msgid ""
-"Click :guilabel:`Browse` and navigate to a place where you would like to put "
-"the new shapefile. Name the file *Bangunan_Sirahan* and click :guilabel:"
-"`Save`"
+# 9b5ad801ee884138b8ee72940dd706a6
+msgid "Click :guilabel:`Browse` and navigate to a place where you would like to put the new shapefile. Name the file *Bangunan_Sirahan* and click :guilabel:`Save`"
 msgstr ""
 
-# f4c708fcd6664ba6a08ba5ef7f638b80
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:169
+# 8109758dbfe2491086ba9dba4481758d
 msgid "Next to CRS, click :guilabel:`Browse`."
 msgstr ""
 
-# de6f94c019f641c19804bd9c649b53ec
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:170
+# 58b21637d0834d4bae9b9fa2c8db8bbd
 msgid "In the filter box, type *UTM zone 49S*, as shown below:"
 msgstr ""
 
-# a33bca4849744528bc1f64ed72eece64
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:175
+# 856e331569ca4939801ba23998ad9473
 msgid "Select the CRS *WGS 84 / UTM zone 49S* and click :guilabel:`OK`."
 msgstr ""
 
-# 5b7578241d0b4a0a9075a1afcea47ce3
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:176
+# ba401db4017943c1ae0ef9d4116c7810
 msgid "The :guilabel:`Save vector layer as...` dialog will look like this:"
 msgstr ""
 
-# 532c83a392dd444aa0598cf86f47f297
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:181
-msgid ""
-"This is the layer that we will be using as our exposure data. You can remove "
-"the other OpenStreetMap layers, or if you would like them to remain visible, "
-"go to :menuselection:`Settings > Project Properties` and :guilabel:`enable "
-"“on the fly” transformation`."
+# 0231b49a45234c168ab5bfc6792db0ee
+msgid "This is the layer that we will be using as our exposure data. You can remove the other OpenStreetMap layers, or if you would like them to remain visible, go to :menuselection:`Settings > Project Properties` and :guilabel:`enable “on the fly” transformation`."
 msgstr ""
 
-# 5ecbde7b1716432489edc67b46b58e56
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:186
+# 1d90f5a89a5944538f4e5a5ec51471e9
 msgid "**4. Adding Keywords**"
 msgstr ""
 
-# 48737904311c43af9626284c482dd7ab
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:188
-msgid ""
-"Since we’ll be using this buildings layer as our exposure, we need to set "
-"the keywords so that InaSAFE knows what the layer contains. If you remember "
-"from Unit 2, this is done with the keywords editor."
+# 823136c19d6346d5858e8acfbb7df9ca
+msgid "Since we’ll be using this buildings layer as our exposure, we need to set the keywords so that InaSAFE knows what the layer contains. If you remember from Unit 2, this is done with the keywords editor."
 msgstr ""
 
-# 5da6fdd2a79345de8dded610db6b4c08
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:192
-msgid ""
-"Select the Bangunan_Sirahan layer in your Layers list and then click the :"
-"guilabel:`Keyword Editor` button on the InaSAFE toolbar."
+# c0801de997ea43169f19cbe7df57ef11
+msgid "Select the Bangunan_Sirahan layer in your Layers list and then click the :guilabel:`Keyword Editor` button on the InaSAFE toolbar."
 msgstr ""
 
-# 8027103460a240808127200374d4bce5
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:198
-msgid ""
-"Adjust the settings so that the keyword editor looks similar to the "
-"following: Most likely you will only need to change the subcategory field to "
-"*structure*."
+# de9d5a03bf1c4c43a7b3adfb881bdc4e
+msgid "Adjust the settings so that the keyword editor looks similar to the following: Most likely you will only need to change the subcategory field to *structure*."
 msgstr ""
 
-# e17c593f523c4af2a677eee4e21c7884
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:206
-msgid ""
-"Now we will do something new, which is to add advanced keywords. Click on "
-"the :guilabel:`Show advanced editor` button."
+# a88e68672e1d4f88839f5e8475fe6517
+msgid "Now we will do something new, which is to add advanced keywords. Click on the :guilabel:`Show advanced editor` button."
 msgstr ""
 
-# 0e9952a504024f4a969ed4ebe6c4c0c0
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:212
+# ff284b3cd4bc4daab67918d56cfe4ec8
 msgid "You can add keywords manually using the advanced editor."
 msgstr ""
 
-# 0b1d2ec70a23402c9f14dd28ac28646b
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:217
-msgid ""
-"Manually add a keyword so that the value of datatype is osm. It should look "
-"like this:"
+# 1b370b3a17954297a0dec7f9b2ba6258
+msgid "Manually add a keyword so that the value of datatype is osm. It should look like this:"
 msgstr ""
 
-# d19294f3ee9d4fb9b392428a3501399d
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:223
-msgid ""
-"Click :guilabel:`OK`. You should see the layer appropriately loaded in the "
-"InaSAFE panel."
+# a96b121e22ba4a8fac0a956253f6bc3d
+msgid "Click :guilabel:`OK`. You should see the layer appropriately loaded in the InaSAFE panel."
 msgstr ""
 
-# 9e5e6a9f8dd14ffcbba0393aaf4fb017
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:226
+# d890591b5ab84fa4b5b038b2662f571b
 msgid "**5. Preparing Hazard Layer**"
 msgstr ""
 
-# 2502dc17dc4442b4b11c172e28bdf8e8
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:228
-msgid ""
-"The hazard data that we have used previously has come from government "
-"agencies and scientific institutions. This time, we will use data that came "
-"from community mapping activities, that is, from regular community members "
-"on the ground. The data was created as a paper map and later converted into "
-"digital format. The data has already been prepared, so we simply need to add "
-"it as our hazard layer."
+# 4d3a6a6bbc5847dfa4209349bbcc4f0c
+msgid "The hazard data that we have used previously has come from government agencies and scientific institutions. This time, we will use data that came from community mapping activities, that is, from regular community members on the ground. The data was created as a paper map and later converted into digital format. The data has already been prepared, so we simply need to add it as our hazard layer."
 msgstr ""
 
-# 0d845fd9491840a79127ae1f9359f177
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:237
-msgid ""
-"Click :guilabel:`Add Vector Layer...` and add *area_terdampak_Sirahan.shp* "
-"in the *qgis/Sirahan* directory."
+# cb0e225fce234690a7ac0a880f1c2ad3
+msgid "Click :guilabel:`Add Vector Layer...` and add *area_terdampak_Sirahan.shp* in the *qgis/Sirahan* directory."
 msgstr ""
 
-# d60edd7eec4b4949843371111faad21b
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:243
-msgid ""
-"You can see that this layer is already known to InaSAFE, so presumably it "
-"has keywords already set. Select the layer and open the keywords editor."
+# 54257cfc12ef4c1b8e52aa0d4a8f0d69
+msgid "You can see that this layer is already known to InaSAFE, so presumably it has keywords already set. Select the layer and open the keywords editor."
 msgstr ""
 
-# 668f504a8f904057a91914ecb357dfb7
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:246
+# 639023107a8744eaac44d436a6cf43f1
 msgid "Notice that the subcategory is set to *flood [wet/dry]*"
 msgstr ""
 
-# f5b4a8d970e64a52944bd9fc7d8b2687
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:251
-msgid ""
-"Because of the way that InaSAFE calculates this function, we need to make "
-"sure that this exposure layer has a column in the attribute table that "
-"InaSAFE expects, named “AFFECTED”"
+# dbc3a869d72e454280a11af83a611edb
+msgid "Because of the way that InaSAFE calculates this function, we need to make sure that this exposure layer has a column in the attribute table that InaSAFE expects, named “AFFECTED”"
 msgstr ""
 
-# 6ef1ac32c78a414eacd3fb97d2a79885
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:254
-msgid ""
-"Click OK and then open the attribute table for the *area_terdampak_Sirahan* "
-"layer."
+# 461a1d2ef4e5480b93ba78f0b78754e9
+msgid "Click OK and then open the attribute table for the *area_terdampak_Sirahan* layer."
 msgstr ""
 
-# 1bbcc3a3ca0b48a7ab16fca5cf97b813
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:260
-msgid ""
-"We need to add some data to this layer so that QGIS can run the flood "
-"function correctly. When QGIS runs the flood function, it checks every "
-"feature in the hazard layer to make sure that it is in fact a flood prone "
-"area. Hence, each feature must have an attribute named AFFECTED."
+# 6be6860ba828490a80726543e864d982
+msgid "We need to add some data to this layer so that QGIS can run the flood function correctly. When QGIS runs the flood function, it checks every feature in the hazard layer to make sure that it is in fact a flood prone area. Hence, each feature must have an attribute named AFFECTED."
 msgstr ""
 
-# 0a6cf7bd1e5046c39cb9bca66315c938
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:265
+# 0976c294983940b1a6e07b7233b26b01
 msgid "First, let’s add the new column to our layer."
 msgstr ""
 
-# f85125eaf8ac403fb5dfc9b8b76f3416
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:266
-msgid ""
-"Still in the attribute table, click the :guilabel:`Toggle Editing` button."
+# f56ceade622f4331841a4d9614eb96bd
+msgid "Still in the attribute table, click the :guilabel:`Toggle Editing` button."
 msgstr ""
 
-# 85ef43626ce24193bc880db1b256e240
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:271
+# 29045ab259354d6fa351d0c2100576a0
 msgid "Click on the :guilabel:`New Column` icon."
 msgstr ""
 
-# 1ae20ff0693c4cf89b0358487dac3292
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:276
-msgid ""
-"Type ‘affected’ as the name and select Text(string) for Type. Give 10 for "
-"the width."
+# cf82829266814032babbc522501e0612
+msgid "Type ‘affected’ as the name and select Text(string) for Type. Give 10 for the width."
 msgstr ""
 
-# 39ce6cad1eac47d99dafc229f0c7de47
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:282
+# d7aada4f49b849a7a5fc4ddcb7ab831f
 msgid "Click :guilabel:`OK`."
 msgstr ""
 
-# d27c24890266422cb7557be162934748
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:283
-msgid ""
-"Now select each value in the column “affected” and type “1”, instead of NULL."
+# 503fc081a6d647a9877ffd5f338289eb
+msgid "Now select each value in the column “affected” and type “1”, instead of NULL."
 msgstr ""
 
-# 431d5ef8e1c447fe99ff6f084e04e406
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:288
-msgid ""
-"Click :guilabel:`Save Edits` and then :guilabel:`Toggle Editing` to stop "
-"your editing process."
+# d808e10f94ca49efa54aebcbf0dd8060
+msgid "Click :guilabel:`Save Edits` and then :guilabel:`Toggle Editing` to stop your editing process."
 msgstr ""
 
-# 00caa5793c0146f5901f30b85f5cc6aa
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:294
+# fa58a2eed597428b97a49be7aabeec83
 msgid "**6. Run InaSAFE**"
 msgstr ""
 
-# b517eae8bf3b4bff95e39922893dda9d
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:296
-msgid ""
-"Everything is prepared now - our layers are loaded, the keywords are set, "
-"and we’ve ensured that they layers have the data that InaSAFE expects. Time "
-"to click :guilabel:`Run`!"
+# 6223d2d12f85423987ff38e0606b0109
+msgid "Everything is prepared now - our layers are loaded, the keywords are set, and we’ve ensured that they layers have the data that InaSAFE expects. Time to click :guilabel:`Run`!"
 msgstr ""
 
-# 5d9ae66823084026bd54558f1a0a5d67
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:303
+# 43fc0a97f2dd401399cf5b15bc5c30d3
 msgid "The results should looks something like this:"
 msgstr ""
 
-# 13142b84a37344d6b895a3b6cbe98841
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:308
+# bf47c650511643b8a3b9befd8ac03ac6
 msgid "Save your project! We’ll be using it in the upcoming Modules..."
 msgstr ""
 
-# 005b7f7ed165491ca05e2d5f7f81b8db
 #: ../../source/training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.rst:311
-msgid ""
-"We’ve run a few scenarios, but what is next? In the next Modules we will use "
-"our QGIS skills to find the best evacuation routes for people to use in the "
-"case of the flood disaster, as well as examining appropriate places for IDP "
-"camps."
+# 6dda03d9bcc54e83b42e9500fdc25425
+msgid "We’ve run a few scenarios, but what is next? In the next Modules we will use our QGIS skills to find the best evacuation routes for people to use in the case of the flood disaster, as well as examining appropriate places for IDP camps."
 msgstr ""
+

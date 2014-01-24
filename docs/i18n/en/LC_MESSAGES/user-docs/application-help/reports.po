@@ -8,234 +8,181 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 1.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-17 20:22+0100\n"
+"POT-Creation-Date: 2014-01-24 11:52+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# dccd6fbc5a4642b594ce51e05e66ab13
 #: ../../source/user-docs/application-help/reports.rst:8
+# dc34173a224c4e0da98cb825c6a10574
 msgid "Reports"
 msgstr ""
 
-# f0762f90081540d298309f0f0c5b4090
 #: ../../source/user-docs/application-help/reports.rst:10
-msgid ""
-"Reports about the impact scenario project are generated using QGIS composer "
-"templates. The default template is being shipped with the plugin, but you "
-"can easily create your own templates in QGIS and use them as basis for your "
-"reports."
+# c20250f45e9547739cb60e334e0988d5
+msgid "Reports about the impact scenario project are generated using QGIS composer templates. The default template is being shipped with the plugin, but you can easily create your own templates in QGIS and use them as basis for your reports."
 msgstr ""
 
-# ebe3aa84596f41118dd3455b4b6a1278
 #: ../../source/user-docs/application-help/reports.rst:16
+# a854e41daffa4a039bba2d6583ec7b6b
 msgid "Localized templates are supported via the following simple schema:"
 msgstr ""
 
-# 0f52128cf8034b6d8de461bf5f730e6f
 #: ../../source/user-docs/application-help/reports.rst:18
-msgid ""
-"if there is a specified template called :file:`/path/to/template/foo.qpt` "
-"then the plugin looks in the template directory :file:`/path/to/template/` "
-"for a file called file :file:`foo-LANG.qpt`, where \"LANG\" is the language "
-"code of the system locale."
+# 77b8f012e37d4c609a8fa5640bb26212
+msgid "if there is a specified template called :file:`/path/to/template/foo.qpt` then the plugin looks in the template directory :file:`/path/to/template/` for a file called file :file:`foo-LANG.qpt`, where \"LANG\" is the language code of the system locale."
 msgstr ""
 
-# 4c7493df461a4de697b55d910b256463
 #: ../../source/user-docs/application-help/reports.rst:23
-msgid ""
-"If such a file exists it will be used for report creation, otherwise the "
-"original template :file:`/path/to/template/foo.qpt` will be used."
+# 3ed331d249724587900dd41b092002c0
+msgid "If such a file exists it will be used for report creation, otherwise the original template :file:`/path/to/template/foo.qpt` will be used."
 msgstr ""
 
-# b5dc516fbedd4d2c9e220e6efebf39e0
 #: ../../source/user-docs/application-help/reports.rst:28
+# c219cf65cf5d4e7c85a9937b286e0495
 msgid "Report Template Elements"
 msgstr ""
 
-# aa93493a5fe54281b5f6815f3a8705e0
 #: ../../source/user-docs/application-help/reports.rst:30
+# 21d1443135744534aa5ab49de55d9882
 msgid "A Template contains the next three groups of elements:"
 msgstr ""
 
-# 5e240e1abbbc48948688f3cb9b4d8930
 #: ../../source/user-docs/application-help/reports.rst:32
+# ac5f49946c8b4637b5aafcfd6b0b7454
 msgid "**Static elements**."
 msgstr ""
 
-# b9544d13938a45f3b0853bd848c0cc49
 #: ../../source/user-docs/application-help/reports.rst:33
+# 8eaf8f28dea6461e96741bc7efa2fb82
 msgid "**Elements containing tokens for replacement**."
 msgstr ""
 
-# 2d15e2481684453a8d2ad37c8150c813
 #: ../../source/user-docs/application-help/reports.rst:34
+# 2875446224b642219b1cd4f6006c5ca2
 msgid "**Elements that are directly updated by the renderer**."
 msgstr ""
 
-# 1d166c419abb4689ac3300f85cde8821
 #: ../../source/user-docs/application-help/reports.rst:37
+# 0c239a48c264488e91718915f2ddc8cc
 msgid "Static Elements"
 msgstr ""
 
-# 336669da47bd44658a5e2a5e6c548941
 #: ../../source/user-docs/application-help/reports.rst:39
-msgid ""
-"These are elements which are not changed during report generation, e.g. some "
-"logos/images, additional texts, etc. You can safely remove such elements or "
-"replace them with your own as needed."
+# 96880faf8154448d8f8ca15f02975c71
+msgid "These are elements which are not changed during report generation, e.g. some logos/images, additional texts, etc. You can safely remove such elements or replace them with your own as needed."
 msgstr ""
 
-# a67dee2728a240779c06d996d08b2d45
 #: ../../source/user-docs/application-help/reports.rst:44
+# 8c83569cb53044d5b62d2af166fd0cee
 msgid "Elements containing tokens for replacement"
 msgstr ""
 
-# 10d15afed9e345afa51e9ab5daab3a33
 #: ../../source/user-docs/application-help/reports.rst:46
-msgid ""
-"In this case the element name is not significant, only the token(s) it "
-"contains. At render time any of the tokens in these elements will be "
-"replaced with translated content (if an alternative locale is in effect) "
-"from the plugin according to the keywords listed below in this document."
+# ab1d0c53ae7a4707847ed70cf77b57a4
+msgid "In this case the element name is not significant, only the token(s) it contains. At render time any of the tokens in these elements will be replaced with translated content (if an alternative locale is in effect) from the plugin according to the keywords listed below in this document."
 msgstr ""
 
-# 0d3e7a8d88804c26bd92f99b17ab70e2
 #: ../../source/user-docs/application-help/reports.rst:52
+# 9634710de81240fbb5bf53c07e425510
 msgid "Elements that are directly updated by the renderer"
 msgstr ""
 
-# 8df8f3c426cf4dd59641a126ba81cb2b
 #: ../../source/user-docs/application-help/reports.rst:54
-msgid ""
-"In this case any content that may be present in the element is completely "
-"replaced by the realtime map renderer, although certain styling options (e."
-"g. graticule settings on the map) will remain in effect."
+# 80a89c06dcad4b8aa044267b92975726
+msgid "In this case any content that may be present in the element is completely replaced by the realtime map renderer, although certain styling options (e.g. graticule settings on the map) will remain in effect."
 msgstr ""
 
-# c525b5f031044c73bb6af3f643157b2b
 #: ../../source/user-docs/application-help/reports.rst:58
-msgid ""
-"This elements are recognized by their ID's and currently the plugin supports "
-"the following elements:"
+# 4ca4b477d88849db926b19c441eea5b4
+msgid "This elements are recognized by their ID's and currently the plugin supports the following elements:"
 msgstr ""
 
-# 3767c22f67e64a988a67c0c653fbd680
 #: ../../source/user-docs/application-help/reports.rst:61
-msgid ""
-"**safe-logo** --- QGIS composer image, which will be used for displaying "
-"organization logo. By default BNPB logo is used. To use custom logo image, "
-"set the path to your PNG file in the plugin Options dialog (see :ref:"
-"`toolbar_options` for details)."
+# 93c3382f737c48a0882a35f4d683848f
+msgid "**safe-logo** --- QGIS composer image, which will be used for displaying organization logo. By default BNPB logo is used. To use custom logo image, set the path to your PNG file in the plugin Options dialog (see :ref:`toolbar_options` for details)."
 msgstr ""
 
-# c663330e158e481294997c58e6abc36a
 #: ../../source/user-docs/application-help/reports.rst:65
-msgid ""
-"**impact-map** --- QGIS composer map, which will be used for displaying the "
-"impact scenario."
+# b13dd299f3ef43a498f157c784f57997
+msgid "**impact-map** --- QGIS composer map, which will be used for displaying the impact scenario."
 msgstr ""
 
-# 907093bc82914c9798cb5fcf339acc13
 #: ../../source/user-docs/application-help/reports.rst:67
-msgid ""
-"**impact-legend** --- QGIS composer legend, which will be used for "
-"displaying the legend of the impact scenario."
+# 8f624c2693a447eda8f325c28fb11097
+msgid "**impact-legend** --- QGIS composer legend, which will be used for displaying the legend of the impact scenario."
 msgstr ""
 
-# 38665924a61a43f39decc6e46f4ec417
 #: ../../source/user-docs/application-help/reports.rst:71
+# 9e2aebc507ae4a0a8f287d1cc3278d35
 msgid "Replaceable Keywords"
 msgstr ""
 
-# c75ccab6a0124984a1f7e5cb88903023
 #: ../../source/user-docs/application-help/reports.rst:73
-msgid ""
-"This section describes tokenised keywords that are passed to the map "
-"template. To insert any of these keywords into the map template, simply "
-"enclose the key in [] (e.g. [place-name]) and it will be replaced by the "
-"text value (e.g. Tondano). The list includes static phrases which have been "
-"internationalised (and so they will be displayed in the language of the "
-"selected map local, defaulting to English where no translation if available)."
+# a4b01ca6d452492db37bef5826e7da2e
+msgid "This section describes tokenised keywords that are passed to the map template. To insert any of these keywords into the map template, simply enclose the key in [] (e.g. [place-name]) and it will be replaced by the text value (e.g. Tondano). The list includes static phrases which have been internationalised (and so they will be displayed in the language of the selected map local, defaulting to English where no translation if available)."
 msgstr ""
 
-# a25234b937d5479ab98695b2ebb0c414
 #: ../../source/user-docs/application-help/reports.rst:80
+# 344231408cfc44659f63a57e802c1816
 msgid "The following tokenized keywords are supported:"
 msgstr ""
 
-# 566f5c32a7ba4133871b583af290e3e4
 #: ../../source/user-docs/application-help/reports.rst:82
+# 211b09ba541d4d82a6b90c02d1c36fe0
 msgid "**impact-title** --- title of the impact scenario map."
 msgstr ""
 
-# 8a6aea1fe02b4d2982d2921a52b47a1e
 #: ../../source/user-docs/application-help/reports.rst:83
+# 1f7fb51f4fc44066a65fc375b91fbf16
 msgid "**date** --- date of the assessment."
 msgstr ""
 
-# 6c2faba26a684cb7a214c7bd1e7a4d50
 #: ../../source/user-docs/application-help/reports.rst:84
+# ab324be9266e45c38efc2711307a6d8a
 msgid "**time** --- time of the assessment."
 msgstr ""
 
-# 8f06ffba10764ee791dd97ba2aa39995
 #: ../../source/user-docs/application-help/reports.rst:85
+# f90eac0f239f448d989cbe41cd9ebc5f
 msgid "**safe-version** --- version of the plugin used."
 msgstr ""
 
-# 65ee66153f8c4b998b6dff0478b2c8f5
 #: ../../source/user-docs/application-help/reports.rst:88
+# 785e3dda008a4415a9ffb130cd5e99d9
 msgid "Custom templates"
 msgstr ""
 
-# b026bd780aa3429788a369fd316cdb3b
 #: ../../source/user-docs/application-help/reports.rst:90
-msgid ""
-"You have a few options to customise the template **without doing any "
-"programming**. There are three primary ways you can achieve this:"
+# 1ea79cde4ced4aceaacc3e6b5442e805
+msgid "You have a few options to customise the template **without doing any programming**. There are three primary ways you can achieve this:"
 msgstr ""
 
-# 3c0774bdf72a4a099fc76e6eaefb3d8f
 #: ../../source/user-docs/application-help/reports.rst:93
-msgid ""
-"Moving replaceable keywords into different elements, or removing them "
-"completely."
+# 00dc6d2699c241a4bbe78b8897ac47c3
+msgid "Moving replaceable keywords into different elements, or removing them completely."
 msgstr ""
 
-# f19b32da36054260bc1565963713bda0
 #: ../../source/user-docs/application-help/reports.rst:95
-msgid ""
-"Changing template elements look and feel (e.g. setting up fonts, colors, "
-"borders, etc), moving the template elements themselves around or adding / "
-"removing them completely."
+# a13e0a2fc2304e2f8fd344145832db26
+msgid "Changing template elements look and feel (e.g. setting up fonts, colors, borders, etc), moving the template elements themselves around or adding / removing them completely."
 msgstr ""
 
-# acf0b3995c5a446e81e7e306070bf306
 #: ../../source/user-docs/application-help/reports.rst:98
-msgid ""
-"Creating your own template from scratch and using it instead of default one."
+# 2fa995481a5842f1af47597dad5aa095
+msgid "Creating your own template from scratch and using it instead of default one."
 msgstr ""
 
-# 9238318e04c946ecbd9b50b51136cb7b
 #: ../../source/user-docs/application-help/reports.rst:100
-msgid ""
-"The template is provided as :file:`inasafe/safe_qgis/resources/qgis-composer-"
-"templates/inasafe.qpt` and can be modified by opening the template using the "
-"QGIS map composer, making your changes and then overwriting the template or "
-"saving it in any directory. You should take care to test your template "
-"changes before using it in a production environment."
+# cec5547795064d109c40c837557372b6
+msgid "The template is provided as :file:`inasafe/safe_qgis/resources/qgis-composer-templates/inasafe.qpt` and can be modified by opening the template using the QGIS map composer, making your changes and then overwriting the template or saving it in any directory. You should take care to test your template changes before using it in a production environment."
 msgstr ""
 
-# 7274c9cd5b584f8ca51b5bcf435e5f32
 #: ../../source/user-docs/application-help/reports.rst:108
-msgid ""
-"To use a custom template instead of the default one, go to :menuselection:"
-"`Plugins --> InaSAFE --> InaSAFE Options` or click on the |project_name| "
-"plugin toolbar's options icon. In Options dialog specify :guilabel:`Report "
-"template` setting. It should contain full path to your custom template."
+# ef0700256b0c4aec850ada0ed620e701
+msgid "To use a custom template instead of the default one, go to :menuselection:`Plugins --> InaSAFE --> InaSAFE Options` or click on the |project_name| plugin toolbar's options icon. In Options dialog specify :guilabel:`Report template` setting. It should contain full path to your custom template."
 msgstr ""
+
