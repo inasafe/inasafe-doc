@@ -40,7 +40,7 @@ To use this tool, follow this procedure:
 * Select the aggregation layer that was used to generate the first and second
   impact layer.
 * Select an output directory.
-* Check 'Use own report template' checkbox and select the report template 
+* Check 'Use customized report template' checkbox and select the report template 
   file if you want to use your own template. Note that all the map composer 
   components that are needed must be fulfilled.
 * Click OK to generate the per aggregation area combined summaries.
