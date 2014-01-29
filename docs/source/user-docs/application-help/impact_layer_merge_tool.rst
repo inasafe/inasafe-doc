@@ -40,6 +40,9 @@ To use this tool, follow this procedure:
 * Select the aggregation layer that was used to generate the first and second
   impact layer.
 * Select an output directory.
+* Check 'Use own report template' checkbox and select the report template 
+  file if you want to use your own template. Note that all the map composer 
+  components that are needed must be fulfilled.
 * Click OK to generate the per aggregation area combined summaries.
 
 Generated outputs
@@ -69,5 +72,55 @@ In the case of impact assessments where **no** aggregation has been used, only
 a single pdf report is generated. In the case of impact assessments where
 aggregation **has** been used, one pdf is generated per aggregation area.
 
-.. note:: After report generation completes, you need to manually open the
-    output directly with your file manager in order to view the resulting PDFs.
+.. note:: After report generation completes, the output directory will be 
+opened automatically.
+
+Using Customized Template
+-------------------------
+The default template report is located in 
+**/resources/qgis-composer-templates/merged-report.qpt**. If that template does 
+not satisfy your needs, you can use your own report template. Before using your
+own report template, make sure that your template contains all of these elements 
+with id:
+
+* **impact-map**, a QgsComposerMap
+* **safe-logo**, a QgsComposerPicture
+* **summary-report**, a QgsComposerLabel
+* **aggregation-area**, a QgsComposerLabel
+* **map-scale**, a QgsComposerScaleBar
+* **map-legend**, a QgsComposerLegend
+* **organisation-logo**, a QgsComposerPicture
+* **merged-report table**, a QgsComposerHTML
+If any of those elements does not exist on the report template, the tools will 
+give you the information of what element is missing on the template. 
+
+.. note:: You can arrange those elements in any position you want.
+
+Map Template Elements
+---------------------
+In terms of value replacement, there are three groups of elements on the template:
+
+1. Elements that can be changed on InaSAFE Options tool. To change the value of these elements, 
+please go to **InaSAFE Option** tools and change the value of the related field. 
+Those elements are:
+
+* **organisation-logo**. It corresponds to **Organisation logo** field on InaSAFE Option tools. If you do not fill this field, then the default one, **supporters.png** logo, will be used.
+* **disclaimer**. It corresponds to **Disclaimer text** field on InaSAFE Option tools. If you do not fill this field, then the default one will be used: "*InaSAFE has been jointly developed by BPNB, Australian Govenment and the World Bank - GFDRR*"
+
+2. Elements containing tokens. The id of these element is not significant, only the token 
+it contains. At render time, any of these tokens will be replaced. If you want to have a 
+label containing value of these elements, enclose these elements with [] on a label i.e 
+**[impact-title]** or **[hazard-title]**. Those elements are listed below:
+
+* **impact-title**. It indicates the title of two impacts. The value will be "*first_impact_title* and *second_impact_title*"
+* **hazard-title**. It indicates the hazard title used to generate the impact layer. 
+
+3. Elements that are direcly updated by the renderer. All of these elements below are 
+generated automatically by the tools.
+
+* **impact-map**. It contains the map of two impact layers.
+* **summary-report**. It contains the summary of the impact from two impact layers.
+* **aggregation-area**. It contains the name of the aggregation area.
+* **map-scale**. It indicates the scale of the map. To work with any layer projection preferences, we encourage you to use a numeric scale bar.
+* **map-legend**. It shows the legend of merged impact layers. The map legend on default template is set to have 2 columns showing each impact layer legend.
+* **merged-report-table**. It contains the detailed informations of each impact.
