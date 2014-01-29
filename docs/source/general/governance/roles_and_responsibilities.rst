@@ -25,7 +25,7 @@ The use of the |project_name| has trigged an avalanche of new feature
 request that has been prioritised by |BNPB| and |AIFDR| and is being
 developed by |Linfiniti|.
 See :ref:`road_map` for more details.  UGM is also conducting an 8 month
-scoping mission interviewing disaster mangers, scientist,
+scoping mission interviewing disaster managers, scientist,
 and other stakeholders to devise a priority list for |project_name| in
 Indonesia.
 
@@ -60,7 +60,7 @@ TWG Members
 Name                Agency        Position                     Role        Committee
 ------------------- ------------- ---------------------------- ----------- -------------------
 Agus Wibowo         |BNPB|        Data and Information Manager Steer       TWG
-Kristy Van Putten   |AIFDR|, |GA| Deputy R&V Manger            Steer,train TWG
+Kristy Van Putten   |AIFDR|, |GA| Deputy R&V Manager           Steer,train TWG
 Viven Deparday      |GFDRR|                                    Developer   TWG
 Tim Sutton          |Linfiniti|   Head of Linfiniti            Developer   Release coordinator
 =================== ============= ============================ =========== ===================
