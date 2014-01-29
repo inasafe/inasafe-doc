@@ -73,15 +73,15 @@ a single pdf report is generated. In the case of impact assessments where
 aggregation **has** been used, one pdf is generated per aggregation area.
 
 .. note:: After report generation completes, the output directory will be 
-opened automatically.
+   opened automatically.
 
 Using Customized Template
 -------------------------
-The default template report is located in 
-**/resources/qgis-composer-templates/merged-report.qpt**. If that template does 
-not satisfy your needs, you can use your own report template. Before using your
-own report template, make sure that your template contains all of these elements 
-with id:
+The default template report is located in
+:file:`/resources/qgis-composer-templates/merged-report.qpt`.
+If that template does not satisfy your needs, you can use your own report template.
+Before using your own report template, make sure that your template contains
+all of these elements with id:
 
 * **impact-map**, a QgsComposerMap
 * **safe-logo**, a QgsComposerPicture
@@ -91,6 +91,7 @@ with id:
 * **map-legend**, a QgsComposerLegend
 * **organisation-logo**, a QgsComposerPicture
 * **merged-report table**, a QgsComposerHTML
+
 If any of those elements does not exist on the report template, the tools will 
 give you the information of what element is missing on the template. 
 
