@@ -376,7 +376,7 @@ that is because we are going to download it straight from |OSM| server.
 
 52. Highlight the tsunami layer and :guilabel:`Zoom to Layer`
 
-53. guilabel:`InaSAFE OpenStreetMap Downloader`
+53. :guilabel:`InaSAFE OpenStreetMap Downloader`
 
 .. image:: /static/training/socialisation/075_osmdownloader.*
    :align: center
