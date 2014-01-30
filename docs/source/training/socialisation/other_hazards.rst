@@ -198,7 +198,7 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
    :align: center
 
 
-29. You will see that there is 4 layers in the layer panel,
+29. You will see that there are 4 layers in the layer panel,
     :guilabel:`Click` on each of them to read the keywords in the
     |project_name| window
 
@@ -206,7 +206,7 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
    :align: center
 
 .. note:: Notice the difference between the first **people** layer and the
-   other 2 people, the second one has a source of *AsiaPop rescaled 1km2*,
+   other 2 people layers, the second one has a source of *AsiaPop rescaled 1km2*,
    the third *AsiaPop rescaled 5km2*
 
 30. Make sure the only **people** checked is Source= AsiaPop
@@ -272,7 +272,7 @@ If the 1km population fails, the third **people** layer is our backup!
  ANSWER __________________________
 
 
-39. Analysis the Action list, how is this different to the action list for
+39. Analyse the Action list, how is this different to the action list for
     floods or volcanoes?
 
 ::
