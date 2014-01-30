@@ -40,7 +40,7 @@ Select Feature and Save
 -----------------------
 
 2. As you can see there are many Volcanoes in Indonesia,
-   lets zoom into one volcano to analysis. :guilabel:`Right Click`
+   lets zoom into one volcano to analyse. :guilabel:`Right Click`
    on the Volcanoes layer in the **Layer List** and :guilabel:`Select`
    *Open Attribute Table*
 3. Click :guilabel:`Show All Features` (circle 1), then hover your pointer to
@@ -63,7 +63,7 @@ the volcano as its highlighted in yellow.
 .. image:: /static/training/socialisation/063_merapi.*
    :align: center
 
-6. :guilabel:`Zoom In` by draging a small box around the highlighted point
+6. :guilabel:`Zoom In` by dragging a small box around the highlighted point
 
 .. image:: /static/training/socialisation/063a_merapi2.*
    :align: center
@@ -115,7 +115,7 @@ layer, so lets make one!
 Configure and Run |project_name|
 --------------------------------
 
-22. Conform that |project_name| has the following in the drop-down
+22. Confirm that |project_name| has the following in the drop-down
     boxes
 
 * Merapi erupting
@@ -125,7 +125,7 @@ Configure and Run |project_name|
 Before we run |project_name| again, we have to tell |project_name| what the hazard
 zone is!
 
-23. Click on :guilabel:`...` (impact function editor) next to *Need evacuation*
+23. Click on :guilabel:`...` (impact function editor) next to *Need evacuation*.
     As a default |project_name| has made 3 hazard areas:
 
 * Vent -3 km
