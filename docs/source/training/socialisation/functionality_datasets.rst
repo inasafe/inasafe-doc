@@ -17,8 +17,8 @@ Current Functionality of |project_name|
 ---------------------------------------
 
 As explained in the previous section, |project_name| needs to have a hazard
-layer and a exposure layer to create an impact layer.
-Currently |project_name| impact functions relies on the following datasets:
+layer and an exposure layer to create an impact layer.
+Currently |project_name| impact functions rely on the following datasets:
 
 **Hazard:**
 

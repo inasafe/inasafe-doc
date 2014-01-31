@@ -28,7 +28,7 @@ with textual statistical summary and action questions.
 .. image:: /static/training/socialisation/001_inasafe_concept.png
 
 |project_name| is also able to aggregate the impact results by administration
-boundary and provided breakdown information about gender and age of affected people.
+boundary and provide a breakdown of information about the gender and age of affected people.
 
 Background
 ----------
@@ -203,7 +203,7 @@ new one arises. “In the event of **<hazard>** how many **<exposure>** will be
 affected?“, is the core question that is answered by InaSAFE, but aggregation
 adds to this by providing options to divide your results by area such as
 province boundaries. Instead of just knowing the total number of people affected
-by the hazard, |project_name| is able to aggregate allowing the user to
+by the hazard, |project_name| is able to aggregate the results allowing the user to
 understand how many people are affected in a certain administration area.
 Hence the local governments will be able understand the impact to their
 specific area.
@@ -216,8 +216,8 @@ The core to |project_name| is its capability of having multiple Impact
 functions specific to the input data. An impact function generally only deals
 with the combination of 1 hazard layer with 1 exposure layer. The way it is
 combined is specific to the impact function, it could be a simple overlay of
-the 2 layer, or it could be a complicated function that calculate if a building
-would fall down in an earthquake based on building structure information
+the 2 layers, or it could be a complicated function that calculates if a building
+would fall down in an earthquake based on building structure information.
 
 The output of the impact function will typically have a spatial component (e
 .g. a GIS layer which automatically loads into the map canvas) and a
@@ -236,7 +236,7 @@ based on the number of evacuated people. This output directly informs
 contingency planners how much of each item is needed to withstand a major
 disaster.
 
-Additionally an impact functions can be configured ‘on the fly’ during the
+Additionally an impact function can be configured ‘on the fly’ during the
 analysis.  This will be touched on during the training exercise.
 :ref:`impact_functions`
 
