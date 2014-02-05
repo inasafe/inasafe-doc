@@ -34,7 +34,7 @@ majority of the allocated committee.
 
 **Definition of software release levels for the InaSAFE project**
 
-InaSAFE is built as and add-on to Quantum Geographical Information System (QGIS)
+InaSAFE is built as and add-on to QGIS
 so has adopted the conventions used in QGIS:
 
 * Major releases are versions that provide significant improvements to the software. A major release may change both the user interface and the underlying programming interface. Major releases are numbered as 1.0.0, 2.0.0, …
