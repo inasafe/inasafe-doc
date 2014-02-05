@@ -87,11 +87,11 @@ This group is responsible for approving the |project_name| roadmap.
 PSC Members
 ...........
 
-==================== ====================== =========================== ================ ============
-Name                 Agency                 Position                    Role             Committee
--------------------- ---------------------- --------------------------- ---------------- ------------
-Sutopo Purwo Nugroho |BNPB|                 Head Data, Information & PR Steer            PSC
-Wisnu Widjaja        |BNPB|, |AIFDR|        Co-Director AIFDR           Steer            PSC
-Trevor Dhu           |AIFDR|, |DFATAusAid|  Co-Director AIFDR           Steer            PSC
-Iwan Gunawan         |GFDRR|                                            Steer            PSC
-==================== ====================== =========================== ================ ============
+==================== ====================== =========================== ================
+Name                 Agency                 Position                    Role
+-------------------- ---------------------- --------------------------- ----------------
+Sutopo Purwo Nugroho |BNPB|                 Head Data, Information & PR Steer
+Wisnu Widjaja        |BNPB|, |AIFDR|        Co-Director AIFDR           Steer
+Jon Burrough         |AIFDR|, |DFATAusAid|  Co-Director AIFDR           Steer
+Iwan Gunawan         |GFDRR|                                            Steer
+==================== ====================== =========================== ================
