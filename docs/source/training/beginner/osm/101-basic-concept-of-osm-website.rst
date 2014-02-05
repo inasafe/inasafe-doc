@@ -31,7 +31,7 @@ important, and who it might be important to.
 .. figure:: /static/training/beginner/osm/image8.*
    :align: center
 
-   *A village in Indonesia (up), and an example of a handdrawn map (bellow).*
+   *A village in Indonesia (up), and an example of a handdrawn map (below).*
 
 If your town is like most, you may have drawn some lines to represent roads,
 possibly a river or stream. Perhaps you added important buildings such as
@@ -102,7 +102,7 @@ with a data file that allows us to do very impressive analysis,
 and help an entire community prepare for the next time there is a flood.  In
 this sense, the work is somehow cyclical. The community contributes data so
 that emergency managers can design highly effective contingency plans,
-and those plan may then be used to benefit the community at large. And the
+and those plans may then be used to benefit the community at large. And the
 more data that the community provides, the better the contingency planning
 can be.
 
