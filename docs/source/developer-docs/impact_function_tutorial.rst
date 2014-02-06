@@ -84,12 +84,18 @@ parameters, are defined in the doc string of the class::
         :author Allen
         :rating 1
         :param requires category=='hazard' and \
-                subcategory.startswith('earthquake') and \
-                layer_type=='raster'
+                subcategory=='earthquake' and \
+                layer_type=='raster' and \
+		unit=='MMI'
         :param requires category=='exposure' and \
-                subcategory.startswith('population') and \
+                subcategory=='population' and \
                 layer_type=='raster'
         """
+
+	title = tr('Test Simple Earthquake impact function')
+
+	parameters = OrderedDict([('a', 0.97429), ('b', 11.037)])
+
 
 This tells |project_name| that this impact function requires at a minimum
 inputs of:
@@ -99,7 +105,12 @@ inputs of:
 * category of 'exposure', with a layer subcategory of 'earthquake' and it must
   be a layerType of 'Raster'
 
-The `require` expression can be any artibary python expression that can be
+title: tag specifies the title of the impact function as displayed in the InaSAFE user interface.
+
+parameters: dictionary of parameters that can be configured from the user interface.  In this case two parameters a and b with their default values. 
+
+
+The `require` expression can be any arbitrary python expression that can be
 evaluated.
 
 .. note::
@@ -120,8 +131,8 @@ The parameters are passed in as a dictionary. It is up to the framework to
 populate the dictionary correctly in this case with keys containing relevant
 data for the exposure and hazard.::
 
-    def run(self, layers,
-            a=0.97429, b=11.037):
+    def run(self, layers)
+
         """Risk plugin for earthquake fatalities
 
         Input
@@ -138,6 +149,10 @@ data for the exposure and hazard.::
         H = intensity.get_data(nan=0)
         P = population.get_data(nan=0)
 
+	# Parameters
+	a = self.parameters['a']
+        b = self.parameters['b']
+
         # Calculate impact
         F = 10 ** (a * H - b) * P
 
@@ -145,7 +160,7 @@ data for the exposure and hazard.::
         R = Raster(F,
                    projection=population.get_projection(),
                    geotransform=population.get_geotransform(),
-                   name='Estimated fatalities')
+                   keywords={'impact_summary': ''})
         return R
 
 
@@ -160,8 +175,16 @@ Installing the impact function
 
 The whole impact function file will now read::
 
-    from impact.plugins.core import FunctionProvider
-    from impact.storage.raster import Raster
+    
+    from safe.common.utilities import OrderedDict
+    from safe.impact_functions.core import (
+        FunctionProvider,
+        get_hazard_layer,
+        get_exposure_layer)
+
+    from safe.storage.raster import Raster
+    from safe.common.utilities import (
+        ugettext as tr)
 
     class SimpleImpactEarthquakeFunction(FunctionProvider):
         """Simple plugin for earthquake damage
@@ -169,16 +192,19 @@ The whole impact function file will now read::
         :author Allen
         :rating 1
         :param requires category=='hazard' and \
-                        subcategory.startswith('earthquake') and \
-                        layer_type=='raster'
+                        subcategory=='earthquake' and \
+                        layertype=='raster
         :param requires category=='exposure' and \
-                        subcategory.startswith('population') and \
-                        layer_type=='raster'
+                        subcategory=='population' and \
+                        layertype=='raster'
         """
 
-        @staticmethod
-        def run(layers,
-                a=0.97429, b=11.037):
+        title = tr('Test Simple Earthquake impact function')
+
+        parameters = OrderedDict([('a', 0.97429), ('b', 11.037)])
+
+        def run(self, layers):
+
             """Risk plugin for earthquake fatalities
 
             Input
@@ -187,13 +213,16 @@ The whole impact function file will now read::
                   P: Raster layer of population data on the same grid as H
             """
 
-            # Identify input layers
-            intensity = layers[0]
-            population = layers[1]
+            # Extract input layers
+            intensity = get_hazard_layer(layers)
+            population = get_exposure_layer(layers)
 
             # Extract data
             H = intensity.get_data(nan=0)
-            P = population.get_data(nan=0)
+            P = population.get_data(nan=0, scaling=True)
+
+            a = self.parameters['a']
+            b = self.parameters['b']
 
             # Calculate impact
             F = 10 ** (a * H - b) * P
@@ -202,8 +231,11 @@ The whole impact function file will now read::
             R = Raster(F,
                        projection=population.get_projection(),
                        geotransform=population.get_geotransform(),
-                       name='Estimated fatalities')
+                       keywords={'impact_summary': ''})
+
             return R
+
+    
 
 Save this as SimpleImpactEarthquakeFunction.py into into the following
 directory::
@@ -219,3 +251,9 @@ Load the following data
 
 * Earthquake ground shaking
 * Glp10ag (Population for Indonesia)
+* You can also use the qgis project indonesia_earthquake_scenarios inside the insasfe data directory
+  
+Using the indonesia_earthquake_scenarios
+
+* Select an earth quake layer and the population data
+* Your new function should be available for execution.
