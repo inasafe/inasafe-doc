@@ -126,9 +126,7 @@ execution code::
 
     def run(self, input):
 
-The parameters are passed in as a dictionary. It is up to the framework to
-populate the dictionary correctly in this case with keys containing relevant
-data for the exposure and hazard.::
+The parameters are user configurable with default values defined in the Class. The keywords parameter needs to have at least the impact_summary entry. The impact_summary entry usually contains an HTML table describing the analysis results. For printing purposes, InaSAFE needs several other entries in the keywords section such as map_title, legend_notes, legend_units, legend_title, impact_table. Please refer to `Writing Impact Functions <http://inasafe.org/en/developer-docs/writing_impact_functions.html>`_ for examples on how to use the keywords:: 
 
     def run(self, layers)
 
@@ -159,7 +157,7 @@ data for the exposure and hazard.::
         R = Raster(F,
                    projection=population.get_projection(),
                    geotransform=population.get_geotransform(),
-                   keywords={'impact_summary': ''})
+                   keywords={'impact_summary': '</table>'})
         return R
 
 
@@ -230,7 +228,7 @@ The whole impact function file will now read::
             R = Raster(F,
                        projection=population.get_projection(),
                        geotransform=population.get_geotransform(),
-                       keywords={'impact_summary': ''})
+                       keywords={'impact_summary': ''</table>'})
 
             return R
 
