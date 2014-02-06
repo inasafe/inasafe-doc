@@ -85,8 +85,7 @@ parameters, are defined in the doc string of the class::
         :rating 1
         :param requires category=='hazard' and \
                 subcategory=='earthquake' and \
-                layer_type=='raster' and \
-		unit=='MMI'
+                layer_type=='raster'
         :param requires category=='exposure' and \
                 subcategory=='population' and \
                 layer_type=='raster'
