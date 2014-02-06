@@ -126,7 +126,7 @@ execution code::
 
     def run(self, input):
 
-The parameters are user configurable with default values defined in the Class. The keywords parameter needs to have at least the impact_summary entry. The impact_summary entry usually contains an HTML table describing the analysis results. For printing purposes, InaSAFE needs several other entries in the keywords section such as map_title, legend_notes, legend_units, legend_title, impact_table. Please refer to `Writing Impact Functions <http://inasafe.org/en/developer-docs/writing_impact_functions.html>`_ for examples on how to use the keywords:: 
+The parameters are user configurable with default values defined in the Class. The keywords parameter needs to have at least the impact_summary entry. The impact_summary entry usually contains an HTML table describing the analysis results. For printing purposes, InaSAFE needs several other entries in the keywords section such as map_title, legend_notes, legend_units, legend_title, impact_table. Please refer to :ref:`writing_impact_functions` for examples on how to use the keywords:: 
 
     def run(self, layers)
 
