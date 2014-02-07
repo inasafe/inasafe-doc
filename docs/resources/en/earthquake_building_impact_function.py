@@ -12,7 +12,8 @@ class EarthquakeBuildingImpactFunction1(FunctionProvider):
     """Earthquake impact on building data (tutorial)
 
     :param requires category=='hazard' and \
-                    subcategory=='earthquake'
+                    subcategory=='earthquake' and \
+                    layertype=='raster'
 
     :param requires category=='exposure' and \
                     subcategory=='structure' and \
@@ -111,14 +112,15 @@ class EarthquakeBuildingImpactFunction1(FunctionProvider):
         map_title = 'Buildings affected'
 
         # Create style
-        style_classes = [dict(label=class_1, min=1, max=1,
+        style_classes = [dict(label=class_1, value=1,
                               colour='#ffff00', transparency=1),
-                         dict(label=class_2, min=2, max=2,
+                         dict(label=class_2, value=2,
                               colour='#ffaa00', transparency=1),
-                         dict(label=class_3, min=3, max=3,
+                         dict(label=class_3, value=3,
                               colour='#ff0000', transparency=1)]
         style_info = dict(target_field=self.target_field,
-                          style_classes=style_classes)
+                          style_classes=style_classes,
+                          style_type='categorizedSymbol')
 
         # Create vector layer and return
         V = Vector(data=attributes,
