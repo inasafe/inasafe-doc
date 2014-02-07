@@ -498,7 +498,8 @@ With all calculations complete, we can now generate a report. This usually
 takes the form of a table and |project_name| provide some primitives for
 generating table rows etc. |project_name| operates with two tables,
 impact_table which is put on the printable map and impact_summary which is
-shown on the screen. They can be identical but are usually slightly different
+shown on the screen. They can be identical but are usually slightly different.
+As of 2.0 if impact_table is not defined, the print to pdf will use the impact_summary contents. If both are defined, the print to pdf will append the impact_suumary and the impact_table.
 . We also define a title for the generated map:
 ::
 
@@ -684,7 +685,83 @@ The example below is a simple impact function that identifies which
 buildings (vector data) will be affected by earthquake ground shaking
 (raster data).
 
-TBA
+What is interesting in this section is to review the impact function and the use of 
+the function assign_hazard_values_to_exposure_data. Please refer to section :ref:`_assigning_hazard_values` for addtional details.
+In this particular case, the exposure poygon data is converted to point using it's centroid and a Raster-Point algorithm is applied. 
+The result is a polygon layer that of the function is a polygon layer that has an additional attribute (mmi) that was extracted from the hazard layer.
+This attribute is used to create a three level classification that is used for the display of the map and legend.
+ 
+
+Impact function algorithm
+.........................
+
+The actual calculation of the impact function is specified as a method call
+called ``run``. This method will be called by |project_name| with a list of
+the 2 selected layers. :
+::
+
+     def run(self, layers):
+        """Earthquake impact to buildings (e.g. from Open Street Map)
+        """
+
+        # Thresholds for mmi breakdown
+        t0 = 6
+        t1 = 7
+        t2 = 8
+
+        class_1 = 'Low'
+        class_2 = 'Medium'
+        class_3 = 'High'
+
+        # Extract data
+        H = get_hazard_layer(layers)    # Depth
+        E = get_exposure_layer(layers)  # Building locations
+
+        question = get_question(H.get_name(),
+                                E.get_name(),
+                                self)
+
+        # Define attribute name for hazard levels
+        hazard_attribute = 'mmi'
+
+        # Interpolate hazard level to building locations
+        I = assign_hazard_values_to_exposure_data(H, E,
+                                             attribute_name=hazard_attribute)
+
+        # Extract relevant exposure data
+        attributes = I.get_data()
+
+        N = len(I)
+
+        # Calculate building impact
+        lo = 0
+        me = 0
+        hi = 0
+        building_values = {}
+        contents_values = {}
+        for key in range(4):
+            building_values[key] = 0
+            contents_values[key] = 0
+
+        for i in range(N):
+            # Classify building according to shake level
+
+            x = float(attributes[i][hazard_attribute])  # Interpolated MMI val
+            if t0 <= x < t1:
+                lo += 1
+                cls = 1
+            elif t1 <= x < t2:
+                me += 1
+                cls = 2
+            elif t2 <= x:
+                hi += 1
+                cls = 3
+            else:
+                # Buildings not reported for MMI levels < t0
+                cls = 0
+
+            attributes[i][self.target_field] = cls
+  
 
 This function is available in full at
 :download:`/static/earthquake_building_impact_function.py`
@@ -701,6 +778,8 @@ polygon data).
 .. This should be the volcano impact function as it uses polygons
 
 TBA
+
+.. _assigning_hazard_values:
 
 Assigning hazard values to exposure data
 ----------------------------------------
