@@ -22,7 +22,7 @@ and one exposure layer. All impact functions return
 
 * a layer that represents he result of the calculation (the impact layer).
 * style information for the impact layer.
-* a textual report typically summarising statistical information about the
+* a textual report typically summarizing statistical information about the
   impact such as estimated fatalities or number of buildings affected.
 
 Layers can be either raster or vector types. See :ref:`data_types`
@@ -62,27 +62,27 @@ The imported elements are
 .. FIXME (Ole): Create links to docstrings for each of these symbols. But how?
 .. For the moment I put in absolute urls, but that isn't robust if things change
 
-`FunctionProvider <http://inasafe.org/api-docs/safe/impact_functions/core.html#safe.impact_functions.core.FunctionProvider>`_
+`FunctionProvider <../api-docs/safe/impact_functions/core.html#safe.impact_functions.core.FunctionProvider>`_
     Base class that all impact function classes must inherit from for |project_name|
      to recognise them. Click on link or see examples below for more details.
 
-`get_hazard_layer <http://inasafe.org/api-docs/safe/impact_functions/core.html#safe.impact_functions.core.get_hazard_layer>`_
+`get_hazard_layer <../api-docs/safe/impact_functions/core.html#safe.impact_functions.core.get_hazard_layer>`_
     Helper function to extract hazard layer from input.
 
-`get_exposure_layer <http://inasafe.org/api-docs/safe/impact_functions/core.html#safe.impact_functions.core.get_exposure_layer>`_)
+`get_exposure_layer <../api-docs/safe/impact_functions/core.html#safe.impact_functions.core.get_exposure_layer>`_)
     Helper function to extract exposure layer from input.
 
-`get_question <http://inasafe.org/api-docs/safe/impact_functions/core.html#safe.impact_functions.core.get_question>`_
+`get_question <../api-docs/safe/impact_functions/core.html#safe.impact_functions.core.get_question>`_
     Function to paraphrase the selected scenario based on titles of hazard,
     exposure and impact function.
 
-`get_function_title <http://inasafe.org/api-docs/safe/impact_functions/core.html#safe.impact_functions.core.get_function_title>`_
+`get_function_title <../api-docs/safe/impact_functions/core.html#safe.impact_functions.core.get_function_title>`_
     Helper function which provides title of impact function.
 
-`Table <http://inasafe.org/api-docs/safe/common/tables.html#safe.common.tables.Table>`_
+`Table <../api-docs/safe/common/tables.html#safe.common.tables.Table>`_
     Class for representing tables for use in the |project_name| reports.
 
-`TableRow <http://inasafe.org/api-docs/safe/common/tables.html#safe.common.tables.TableRow>`_
+`TableRow <../api-docs/safe/common/tables.html#safe.common.tables.TableRow>`_
     Class for representing one table row in a table.
 
 Additionally, and depending on the type of the resulting layer,
@@ -96,8 +96,8 @@ or:
 
     from safe.storage.vector import Vector
 
-See `Raster <http://inasafe.org/api-docs/safe/storage/raster.html#module-safe.storage.raster>`_
-and `Vector <http://inasafe.org/api-docs/safe/storage/raster.html#module-safe.storage.vector>`_
+See `Raster <../api-docs/safe/storage/raster.html#module-safe.storage.raster>`_
+and `Vector <../api-docs/safe/storage/raster.html#module-safe.storage.vector>`_
 documentation for details.
 
 Define the impact function class
@@ -202,9 +202,9 @@ the full list, please consult the source documentation
 =================  =============
 Spatial data type  Documentation
 =================  =============
-Raster             http://inasafe.org/api-docs/safe/storage/raster.html
-Vector             http://inasafe.org/api-docs/safe/storage/vector.html
-Common to both     http://inasafe.org/api-docs/safe/storage/layer.html
+Raster             `<../api-docs/safe/storage/raster.html>`_
+Vector             `<../api-docs/safe/storage/vector.html>`_
+Common to both     `<../api-docs/safe/storage/layer.html>`_
 =================  =============
 
 Getting data from raster layers
@@ -215,10 +215,10 @@ The main methods for raster data are
 ================   ====================================================   ========================================================================================
 Method             Returns                                                Documentation
 ================   ====================================================   ========================================================================================
-get_data           2D numpy array representing pixel values               http://inasafe.org/api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_data
-get_geometry       Two 1D numpy arrays of corresponding coordinate axes   http://inasafe.org/api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_geometry
-get_geotransform   Needed e.g. to create new raster layers                http://inasafe.org/api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_geotransform
-get_projection     The spatial reference for the layer                    http://inasafe.org/api-docs/safe/storage/layer.html#safe.storage.layer.Layer.get_projection
+get_data           2D numpy array representing pixel values               `<../api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_data>`_
+get_geometry       Two 1D numpy arrays of corresponding coordinate axes   `<../api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_geometry>`_
+get_geotransform   Needed e.g. to create new raster layers                `<../api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_geotransform>`_
+get_projection     The spatial reference for the layer                    `<../api-docs/safe/storage/layer.html#safe.storage.layer.Layer.get_projection>`_
 ================   ====================================================   ========================================================================================
 
 .. See See :ref:/api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_data for more details on
@@ -232,9 +232,9 @@ The main methods for vector data are
 ================   ====================================================   ========================================================================================
 Method             Returns                                                Documentation
 ================   ====================================================   ========================================================================================
-get_data           List of dictionaries of vector attributes              http://inasafe.org/api-docs/safe/storage/vector.html#safe.storage.vector.Vector.get_data
-get_geometry       Return geometry for vector layer (e.g. point coords)   http://inasafe.org/api-docs/safe/storage/vector.html#safe.storage.vector.Vector.get_geometry
-get_projection     The spatial reference for the layer                    http://inasafe.org/api-docs/safe/storage/layer.html#safe.storage.layer.Layer.get_projection
+get_data           List of dictionaries of vector attributes              `<../api-docs/safe/storage/vector.html#safe.storage.vector.Vector.get_data>`_
+get_geometry       Return geometry for vector layer (e.g. point coords)   `<../api-docs/safe/storage/vector.html#safe.storage.vector.Vector.get_geometry>`_
+get_projection     The spatial reference for the layer                    `<../api-docs/safe/storage/layer.html#safe.storage.layer.Layer.get_projection>`_
 ================   ====================================================   ========================================================================================
 
 
@@ -267,7 +267,7 @@ mode              Interpolation mode: 'linear' (default) or 'constant. Only used
 
 See full documentation of the is function in section :ref:`data_types` an in
 the source code
-http://inasafe.org/api-docs/safe/engine/interpolation.html#module-safe.engine.interpolation
+`<../api-docs/safe/engine/interpolation.html#module-safe.engine.interpolation>`_
 
 See also examples of use in the impact function examples below.
 
@@ -454,7 +454,7 @@ the squared ratio between its current and native resolution.
 .. note:: # but decided to use URLs directly for the time being (see issue
    https://github.com/AIFDR/inasafe/issues/487#issuecomment-14103214)
 
-See http://inasafe.org/api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_data
+See `<../api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_data>`_
 for more details on the ``get_data()`` method.
 
 Now we are ready to implement the desired calculation. In this case it is
