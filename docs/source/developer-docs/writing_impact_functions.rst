@@ -60,7 +60,7 @@ may be imported here. A minimal import section contains:
 The imported elements are
 
 .. FIXME (Ole): Create links to docstrings for each of these symbols. But how?
-.. For the moment I put in absolute urls, but that isn't robust if things change
+.. For the moment I put in absolute urls, but that isn't robust if things change (changed to relative urls #116)
 
 `FunctionProvider <../api-docs/safe/impact_functions/core.html#safe.impact_functions.core.FunctionProvider>`_
     Base class that all impact function classes must inherit from for |project_name|
@@ -444,15 +444,15 @@ In this case we set it to True which means that if the corresponding raster
 layer was resampled by |project_name|, the values will be correctly scaled by
 the squared ratio between its current and native resolution.
 
-.. note:: # FIXME (Ole): Tim - how do we cross reference docstrings? The
-   problem is that we can't drop labels into them because they are
-   auto-generated?
+.. FIXME (Ole): Tim - how do we cross reference docstrings? The
+..   problem is that we can't drop labels into them because they are
+..   auto-generated?
 
-.. note:: # Would like something like :ref:/api-docs/safe/storage/raster
-   .html#safe.storage.raster.Raster.get_data
+.. Would like something like :ref:/api-docs/safe/storage/raster
+..   .html#safe.storage.raster.Raster.get_data
 
-.. note:: # but decided to use URLs directly for the time being (see issue
-   https://github.com/AIFDR/inasafe/issues/487#issuecomment-14103214)
+.. but decided to use URLs directly for the time being (see issue
+.. https://github.com/AIFDR/inasafe/issues/487#issuecomment-14103214)
 
 See `<../api-docs/safe/storage/raster.html#safe.storage.raster.Raster.get_data>`_
 for more details on the ``get_data()`` method.
@@ -686,7 +686,7 @@ buildings (vector data) will be affected by earthquake ground shaking
 (raster data).
 
 What is interesting in this section is to review the impact function and the use of 
-the function assign_hazard_values_to_exposure_data. Please refer to section :ref:`_assigning_hazard_values` for addtional details.
+the function assign_hazard_values_to_exposure_data. Please refer to section :ref:`assigning_hazard_values` for addtional details.
 In this particular case, the exposure poygon data is converted to point using it's centroid and a Raster-Point algorithm is applied. 
 The result is a polygon layer that of the function is a polygon layer that has an additional attribute (mmi) that was extracted from the hazard layer.
 This attribute is used to create a three level classification that is used for the display of the map and legend.
@@ -771,13 +771,16 @@ This function is available in full at
 Impact function for polygon hazard and vector point exposure data
 -----------------------------------------------------------------
 
-The example below is a simple impact function that identifies which buildings
-(vector data) will be affected by certain volcanic hazard areas (vector
-polygon data).
+Using polygon hazard data and point exposure data should be done using the  :ref:`assigning_hazard_values`. The steps are similar two the previous examples:
 
-.. This should be the volcano impact function as it uses polygons
+* define your layers: in this case both hazard and exposure are of vector type
+* use assign_hazard_function: the result of a call to assign_hazard_function is a point layer that contains all the attributes of the polygon layer that contains the point, plus an additional attribute "inapolygon" set to True for those points that are in a polygon. The "inapolygon" is the default name of the attribute and defined in InaSAFE by the variable DEFAULT_ATTRIBUTE defined in utilities.py.
+* inside your impact run function, use the attribute to make your calculations and styling
+* Although flood_OSM_building_impact.py is used on OSM polygon buildings, It will also work on point data. It can be used as a reference. 
 
-TBA
+.. This should be the volcano impact function as it uses polygons. Example to be added when we add a point data in inasafe-data.
+
+
 
 .. _assigning_hazard_values:
 
@@ -806,7 +809,7 @@ polygon data, all its attributes will be transferred to I. If H is
 raster_data and hence has only one value, that value will be assigned to a
 new attribute in I as specified by the keyword argument attribute_name - in
 this example 'depth'. See full documentation of this function in section
-:ref:`data_types`.
+:ref:`data_types`. You can also refer to the source `assign_hazard_values_to_exposure_data <../api-docs/safe/engine/interpolation.html#safe.engine.interpolation.assign_hazard_values_to_exposure_data>`_ and see the different combinations of hazard and exposure data.
 
 Deploying new impact functions
 ------------------------------
@@ -815,7 +818,7 @@ To make a new impact function visible to |project_name| it has to be placed
 in a subdirectory under safe/impact_functions relative to where it is
 installed. This will typically be something like .qgis/python/plugins/inasafe.
 
-There are a number of subdirectories with existing impact functions organised
+There are a number of subdirectories with existing impact functions organized
 by hazard. The new impact function can use either of them or be located in a
 new subdirectory with the same __init_.py file as the existing ones.
 
