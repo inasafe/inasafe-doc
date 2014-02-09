@@ -13,11 +13,8 @@ OpenStreetMap project for you.
 
    OpenStreetMap Downloader
 
-InaSAFE supports the use of building data in various impact functions. In
-particular we support building footprints sourced from the
-`OpenStreetMap <https://openstreetmap.org>`_ project (OSM). The tool
-requires internet connection as it fetches the data via a web service running
-on `Linfiniti's OSM Reporter <http://osm.linfiniti.com>`_ web site.
+The tool requires internet connection as it fetches the data via a web service
+running on `Linfiniti's OSM Reporter <http://osm.linfiniti.com>`_ web site.
 
 The data, once downloaded will be available to you as a shapefile. A style
 file is automatically created so that it symbolises nicely in QGIS. In
@@ -46,3 +43,64 @@ To use this tool effectively:
 .. note::
    Downloaded data is copyright OpenStreetMap contributors (click for more
    info).
+
+
+Building data
+-------------
+
+InaSAFE supports the use of building data in various impact functions. In
+particular we support building footprints sourced from the
+`OpenStreetMap <https://openstreetmap.org>`_ project (OSM).
+
+The following building types are derived (depending on the various tags assigned
+to them in OSM):
+
+* School
+* University/College
+* Government
+* Clinic/Doctor
+* Hospital
+* Fire Station
+* Police Station
+* Public Building
+* Place of Worship - Islam
+* Place of Worship - Unitarian
+* Place of Worship - Buddhist
+* Place of Worship - Unitarian
+* Supermarket
+* Residential
+* Sports Facility
+* Place of Worship
+* Commercial
+* Industrial
+
+These derived types will be present in a field called 'type' when downloading
+the building data.Note that depending on the area for which you have downloaded,
+only some of these categories may be present in your buildings dataset.
+
+Roads data
+----------
+
+InaSAFE supports the use of road data in various impact functions. In
+particular we support roads sourced from the
+`OpenStreetMap <https://openstreetmap.org>`_ project (OSM).
+
+The following road types are derived (depending on the various tags assigned
+to them in OSM):
+
+ALTER TABLE planet_osm_line ADD COLUMN "type" VARCHAR(255) NULL;
+
+* Motorway or highway (includes 'trunk' from OSM)
+* Motorway link
+* Primary road
+* Primary link
+* Tertiary
+* Tertiary link
+* Secondary
+* Secondary link
+* Road, residential, living street, etc. (includes all highways tagged with
+  'living_street', 'residential', 'yes', 'road', 'unclassified', 'service', ''
+  and NULL highways)
+* Track'
+* Cycleway, footpath, etc. (includes 'cycleway', 'footpath', 'pedestrian',
+  'footway' and 'path' highway tags).
