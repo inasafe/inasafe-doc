@@ -309,7 +309,7 @@ The impact function itself is embodied in a Python class with a doc string:
     class FloodPopulationEvacuationFunction(FunctionProvider):
         """Impact function for flood evacuation (tutorial)
 
-        :author |AIFDR|, |DFATAusAid|
+        :author |AIFDR|, |GoA|
         :rating 4
         :param requires category=='hazard' and \
                         subcategory in ['flood', 'tsunami'] and \
@@ -685,12 +685,12 @@ The example below is a simple impact function that identifies which
 buildings (vector data) will be affected by earthquake ground shaking
 (raster data).
 
-What is interesting in this section is to review the impact function and the use of 
+What is interesting in this section is to review the impact function and the use of
 the function assign_hazard_values_to_exposure_data. Please refer to section :ref:`assigning_hazard_values` for addtional details.
-In this particular case, the exposure poygon data is converted to point using it's centroid and a Raster-Point algorithm is applied. 
+In this particular case, the exposure poygon data is converted to point using it's centroid and a Raster-Point algorithm is applied.
 The result is a polygon layer that of the function is a polygon layer that has an additional attribute (mmi) that was extracted from the hazard layer.
 This attribute is used to create a three level classification that is used for the display of the map and legend.
- 
+
 
 Impact function algorithm
 .........................
@@ -761,7 +761,7 @@ the 2 selected layers. :
                 cls = 0
 
             attributes[i][self.target_field] = cls
-  
+
 
 This function is available in full at
 :download:`/static/earthquake_building_impact_function.py`
@@ -776,7 +776,7 @@ Using polygon hazard data and point exposure data should be done using the  :ref
 * define your layers: in this case both hazard and exposure are of vector type
 * use assign_hazard_function: the result of a call to assign_hazard_function is a point layer that contains all the attributes of the polygon layer that contains the point, plus an additional attribute "inapolygon" set to True for those points that are in a polygon. The "inapolygon" is the default name of the attribute and defined in InaSAFE by the variable DEFAULT_ATTRIBUTE defined in utilities.py.
 * inside your impact run function, use the attribute to make your calculations and styling
-* Although flood_OSM_building_impact.py is used on OSM polygon buildings, It will also work on point data. It can be used as a reference. 
+* Although flood_OSM_building_impact.py is used on OSM polygon buildings, It will also work on point data. It can be used as a reference.
 
 .. This should be the volcano impact function as it uses polygons. Example to be added when we add a point data in inasafe-data.
 

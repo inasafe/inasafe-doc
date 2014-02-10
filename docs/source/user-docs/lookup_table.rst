@@ -64,7 +64,7 @@ respective homepage) is:
   |project_name| for InaSAFE
   |AIFDR|
   |BNPB|
-  |DFATAusAid| for DFAT-Australian Aid
+  |GoA| for DFAT-Australian Aid
   |GFDRR|
   |GA| for Geoscience Australia
   |OSM|

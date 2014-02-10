@@ -11,7 +11,7 @@ Disaster Reduction and Recovery (World Bank-|GFDRR|).
 |AIFDR| in coordination with |BNPB| are driving the development of
 |project_name| through the use of |project_name| in 6 Indonesian provinces.
 After the launch of |project_name| in October 2012, |AIFDR| on behalf of
-|BNPB| and |DFATAusAid| conducted scenario development for contingency
+|BNPB| and |GoA| conducted scenario development for contingency
 planning training in 6 Indonesian provinces through the Humanitarian
 OpenStreetMap Team (HOT) and the University of Gadjah Mada (UGM). The
 training consisted of 2 sections, data collection through OpenStreetMap and
@@ -92,6 +92,6 @@ Name                 Agency                 Position                    Role    
 -------------------- ---------------------- --------------------------- ---------------- ------------
 Sutopo Purwo Nugroho |BNPB|                 Head Data, Information & PR Steer            PSC
 Wisnu Widjaja        |BNPB|, |AIFDR|        Co-Director AIFDR           Steer            PSC
-Trevor Dhu           |AIFDR|, |DFATAusAid|  Co-Director AIFDR           Steer            PSC
+Trevor Dhu           |AIFDR|, |GoA|  Co-Director AIFDR           Steer            PSC
 Iwan Gunawan         |GFDRR|                                            Steer            PSC
 ==================== ====================== =========================== ================ ============

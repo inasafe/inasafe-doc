@@ -22,7 +22,7 @@ Functionality identified by training in Feb
 * Support QGIS 2.0, the next major release of QGIS (excludes native data
   provider support in impact functions).
 * Improvements and streamlining impact function calculations according to
-  priorities identified by |DFATAusAid| staff (and in collaboration with
+  priorities identified by |GoA| staff (and in collaboration with
   stakeholders).
 
 Version 2.0
