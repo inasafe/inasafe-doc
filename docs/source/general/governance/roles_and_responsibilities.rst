@@ -92,6 +92,6 @@ Name                 Agency                 Position                    Role    
 -------------------- ---------------------- --------------------------- ---------------- ------------
 Sutopo Purwo Nugroho |BNPB|                 Head Data, Information & PR Steer            PSC
 Wisnu Widjaja        |BNPB|, |AIFDR|        Co-Director AIFDR           Steer            PSC
-Trevor Dhu           |AIFDR|, |GoA|  Co-Director AIFDR           Steer            PSC
+Trevor Dhu           |AIFDR|, |GoA|         Co-Director AIFDR           Steer            PSC
 Iwan Gunawan         |GFDRR|                                            Steer            PSC
 ==================== ====================== =========================== ================ ============

@@ -24,7 +24,7 @@ Name                 Agency                     Position                      Ro
 Sutopo Purwo Nugroho |BNPB|                     Head Data, Information & PR   Steer            PSC
 Wisnu Widjaja        |BNPB|, |AIFDR|            Co-Director AIFDR             Steer            PSC
 Agus Wibowo          |BNPB|                     Data and Information Manager  Steer            TWG
-Trevor Dhu           |AIFDR|, |GoA|      Co-Director AIFDR             Steer            PSC
+Trevor Dhu           |AIFDR|, |GoA|             Co-Director AIFDR             Steer            PSC
 David Robinson       |AIFDR|, |GA|              R&V Manager                   Steer
 Kristy Van Putten    |AIFDR|, |GA|              Deputy R&V Manger             Steer,train      TWG
 Charlotte Morgan     |AIFDR|, |GA|              Spatial Analyst/Data Manger   Test,train

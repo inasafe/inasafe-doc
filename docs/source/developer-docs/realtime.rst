@@ -10,7 +10,7 @@ though in future we envisage additional support for other disaster types being
 facilitated.
 
 .. note:: This work was funded by the Australian Government |GoA| and the
-World Bank-|GFDRR|. We thank you for your support.
+   World Bank-|GFDRR|. We thank you for your support.
 
 Historical Note
 ---------------
