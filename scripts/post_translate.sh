@@ -24,7 +24,7 @@ else
 fi
 
 export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
-export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$INASAFE_DEV_PATH:$PYTHONPATH
+export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$INASAFE_DEV_PATH:$QGIS_PREFIX_PATH/share/qgis/python/plugins:$PYTHONPATH
 export QGIS_DEBUG=0
 export QGIS_LOG_FILE=/dev/null
 export QGIS_DEBUG_FILE=/dev/null
