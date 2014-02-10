@@ -18,7 +18,7 @@ BNPB since August 2011. The replacement will address some shortcomings of the
 prototype to do with appearance of automatically generated map,
 extensibility and maintenance. The transition to |project_name| also allows
 for the inclusion of fatality estimates. The replacement was developed by
-Tim Sutton in Q3/Q4 of 2012 and is running at |AIFDR| and |DFATAusAid|. Still
+Tim Sutton in Q3/Q4 of 2012 and is running at |AIFDR| and |GoA|. Still
 outstanding is obtaining feedback from |BNPB| on the design and deployment at
 |BNPB|.
 
@@ -163,7 +163,7 @@ Skills: Communication, |project_name|, Restructured Text
 
 FTE: 2 months
 
-Resourcing: |AIFDR|, |DFATAusAid|, contract to linfiniti, contract to Software
+Resourcing: |AIFDR|, |GoA|, contract to linfiniti, contract to Software
 Engineer, contract to technical writer, Edi Dewanto
 
 Tickets: https://github.com/AIFDR/inasafe/issues?milestone=11
@@ -180,7 +180,7 @@ Skills: Communication, DRR, |project_name|
 
 FTE: 6 months
 
-Resourcing: |AIFDR|, |DFATAusAid|, contract to software engineer,
+Resourcing: |AIFDR|, |GoA|, contract to software engineer,
 contract to linfiniti
 
 Tickets:
@@ -197,6 +197,6 @@ Skills: Communication, DRR, |project_name|
 
 FTE: 1 months
 
-Resourcing: |AIFDR|, |DFATAusAid|, |BNPB|
+Resourcing: |AIFDR|, |GoA|, |BNPB|
 
 Tickets:

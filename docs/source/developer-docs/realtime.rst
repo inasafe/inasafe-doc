@@ -9,17 +9,16 @@ Currently the realtime system supports Earthquake fatality impact assessments,
 though in future we envisage additional support for other disaster types being
 facilitated.
 
-.. note:: This work was funded by the Australia-Indonesia Facility for Disaster
-   Reduction, Geoscience Australia and the World Bank-|GFDRR|. We thank you for
-   your support.
+.. note:: This work was funded by the Australian Government |GoA| and the
+World Bank-|GFDRR|. We thank you for your support.
 
 Historical Note
 ---------------
 
 The original prototype of the realtime system was implemented by Ole Nielsen
-(|DFATAusAid|). The subsequent port of the realtime system to |project_name|
+(|GoA|). The subsequent port of the realtime system to |project_name|
 was implemented by Tim Sutton (Linfiniti Consulting CC.,
-funded by The World Bank ,|AIFDR| and |DFATAusAid|).
+funded by The World Bank ,|AIFDR| and |GoA|).
 
 Supported Platforms
 -------------------

@@ -21,7 +21,7 @@ to improve the methodology that can be used for contingency planning.
 This methodology is focused on the use of realistic disaster scenario as
 starting point for this new comprehensive process.
 
-|BNPB| and |DFATAusAid| through Australia-Indonesia Facility for Disaster
+|BNPB| and |GoA| through Australia-Indonesia Facility for Disaster
 Reduction (|AIFDR|) have working together to create a methodology and
 open-source software tools related with realistic disaster scenario
 development as an input for contingency planning.
@@ -32,7 +32,7 @@ systematic workshop in order to reach all competencies needed,
 it is necessary to develop a curriculum.
 Therefore, this workshop curriculum Scenario Development for Contingency
 Planning using OSM and |QGIS|/|project_name| is developed to be used as
-reference in workshop enforcement, both for national or provincial/district 
+reference in workshop enforcement, both for national or provincial/district
 level.
 This curriculum will be enhanced through test and input from stakeholders,
 both from government agency and non-government agency.
@@ -68,7 +68,7 @@ development of workshop Modules.
 contingency planning with an emphasis on the use of realistic disaster
 scenarios as the starting point for this new comprehensive process.
 
-|BNPB| and |DFATAusAid| through the Australia-Indonesia Facility for Disaster
+|BNPB| and |GoA| through the Australia-Indonesia Facility for Disaster
 Reduction have been working together on a methodology and associated open
 source software for developing realistic disaster scenarios for contingency
 planning.
@@ -78,7 +78,7 @@ Over the last year three specific tools have been piloted in Indonesia with
 huge success:
 
 - **InaSAFE**: is free and open source software that produces realistic
-  natural hazard impact scenarios for better planning, preparedness and 
+  natural hazard impact scenarios for better planning, preparedness and
   response activities.
   It is being developed by |AIFDR| in close consultation with |BNPB|.
 
@@ -888,7 +888,7 @@ The syllabus is based on the structure of the program and allocation of a
 predetermined time.
 
 This syllabus will still be described in more detail in the toolkit/workshop
-manuals separate from this curriculum. Therefore, the user will understand this curriculum 
+manuals separate from this curriculum. Therefore, the user will understand this curriculum
 easier if he reads the prepared toolkit.
 
 **Contingency Planning Using OSM and QGIS/InaSAFE Syllabus**
