@@ -21,6 +21,12 @@ h3 {
   color: #000000;
 }
 
+/* workaround for having the headlines in anchors not hidden by 
+the title*/
+h2 { padding-top: 110px;
+     margin-top: -110px; 
+}
+
 #locales li{
   float: left;
   list-style-type: none;
