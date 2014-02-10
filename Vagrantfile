@@ -12,9 +12,9 @@ Vagrant.configure("2") do |config|
   config.vm.box = "Ubuntu precise 64"
   config.vm.hostname = "vagrant-inasafe-doc"
   config.vm.network :public_network
-  config.vm.network :forwarded_port, guest: 80, host: 8280
+  config.vm.network :forwarded_port, guest: 80, host: 8580
   # For jenkins
-  config.vm.network :forwarded_port, guest: 8080, host: 8380
+  config.vm.network :forwarded_port, guest: 8080, host: 8680
   config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-
+  config.vm.synced_folder "./", "/home/vagrant/dev/python/inasafe-doc"
 end
