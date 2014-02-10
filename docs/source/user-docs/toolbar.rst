@@ -41,21 +41,6 @@ The Keyword Editor button opens the Keyword editor which is described in
 :ref:`keywords_system`. Basically it enables you to easily edit the
 Keywords needed for |project_name| to create useful output.
 
-.. _tb_reset_dock_missst:
-
-Reset Dock
-----------
-
-.. figure:: /static/user-docs/toolbar_reset.*
-   :scale: 75 %
-   :align: center
-   :alt: Reset Dock
-
-   Reset Dock
-
-The Name is self speaking. In Case of any drawing issue inside the dock this
-button just resets/reloads the dock to its initial state.
-
 .. _tb_options:
 
 |project_name| Options
