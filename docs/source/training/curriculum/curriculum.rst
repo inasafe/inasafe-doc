@@ -11,7 +11,7 @@ FOREWORD
 
 Contingency planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
 workshop program are designed to deliver knowledge and skills for provincial
-and districal disaster management agency official and staff in order to handle
+and districal disaster management agency officials and staff in order to handle
 emergencies since the beginning of the disaster.
 These knowledge and skills will help them to be able to reduce and manage
 disaster risk.
@@ -22,7 +22,7 @@ This methodology is focused on the use of realistic disaster scenario as
 starting point for this new comprehensive process.
 
 |BNPB| and |DFATAusAid| through Australia-Indonesia Facility for Disaster
-Reduction (|AIFDR|) have working together to create a methodology and an
+Reduction (|AIFDR|) have working together to create a methodology and
 open-source software tools related with realistic disaster scenario
 development as an input for contingency planning.
 It will allow emergency disaster managers to improve their own scenario
@@ -30,11 +30,11 @@ scoring which can be used as an input for their disaster contingency planning.
 To help workshop center of |BNPB| (Pusat Diklat BNPB) for effective and
 systematic workshop in order to reach all competencies needed,
 it is necessary to develop a curriculum.
-Therefore, this workshop curriculum Scenario Development fo Contingency
+Therefore, this workshop curriculum Scenario Development for Contingency
 Planning using OSM and |QGIS|/|project_name| is developed to be used as
-reference in workshop enforcement, both for national level or
-provincial/district.
-This curriculum will be enhanced through Test and input from stakeholders,
+reference in workshop enforcement, both for national or provincial/district 
+level.
+This curriculum will be enhanced through test and input from stakeholders,
 both from government agency and non-government agency.
 
 We hope this curriculum can be useful.
@@ -50,7 +50,7 @@ Indonesia as one of their top eleven priorities in the Medium-Term
 Development Plan (2010-2014).
 In recognition of the impact of disasters on developing economies,
 AusAid’s policy on disaster risk reduction highlights the importance of
-investing in disaster reduction .
+investing in disaster reduction.
 
 |BNPB| has a mandate to increase the overall disaster management capacity of
 Indonesia including workshop for managers who handle disasters at the
@@ -66,11 +66,11 @@ workshop curriculum and Modules with specific focus on
 development of workshop Modules.
 |BNPB| has identified a priority need to improve its methodology for
 contingency planning with an emphasis on the use of realistic disaster
-scenarios as the starting point for this new, comprehensive process.
+scenarios as the starting point for this new comprehensive process.
 
 |BNPB| and |DFATAusAid| through the Australia-Indonesia Facility for Disaster
 Reduction have been working together on a methodology and associated open
-source software  for developing realistic disaster scenarios for contingency
+source software for developing realistic disaster scenarios for contingency
 planning.
 This will enable emergency managers to develop their own scenario assessments
 that can feed into their disaster contingency plans.
@@ -78,8 +78,8 @@ Over the last year three specific tools have been piloted in Indonesia with
 huge success:
 
 - **InaSAFE**: is free and open source software that produces realistic
-  natural hazard impact scenarios for better planning,
-  preparedness and response activities.
+  natural hazard impact scenarios for better planning, preparedness and 
+  response activities.
   It is being developed by |AIFDR| in close consultation with |BNPB|.
 
 - **OpenStreetMap (OSM) tools**: OSM is a free map of the world that anyone
@@ -88,32 +88,32 @@ huge success:
   collected that can be utilized for analysis in |project_name| (i.e. How
   many houses will be affected by a specific hazard).
 
-- **QGIS**: is an open source Geographical Information System
-  (GIS) software that allows users to spatially analyse their data,
-  it is also the platform on which |project_name| is built.
+- **QGIS**: is an Open Source Geographical Information System
+  (GIS) software that allows users to spatially analyse their data.
+  It is also the platform on which |project_name| is being built.
 
 In order to ensure uptake, effectiveness and sustainability of these tools
-it is necessary to develop and Test a comprehensive workshop package for
+it is necessary to develop and test a comprehensive workshop package for
 each individual tool as well as creating a pool of trainers across Indonesia.
 
 This curriculum outline describes competencies to be achieved,
 the lists of content required to achieve the competencies in the workshop
 package, and the program structure of the workshop course.
-The workshop consists of beginner, intermediate and advance levels. The
-beginner workshop is mainly aimed to introduce participants to the concept of
+The workshop consists of beginner, intermediate and advance levels.
+The beginner workshop is mainly aimed to introduce participants to the concept of
 realistic disaster scenario development and help them become socialized to the
 concepts and explore all three of the open source tools.
-In contingency planning, having realistic disaster scenarios contribute test
+In contingency planning, having realistic disaster scenarios contributes
 significantly to the reliability of the created planning results.
 As complexity and uncertainty are common in developing realistic disaster
 scenarios, advanced knowledge and skills in mapping and impact calculations
 using OSM, QGIS, and InaSAFE are required.
 For this reason, the intermediate level of the workshop on OSM,
-QGIS and InaSAFE is required to further participants’ knowledge and skills to
+QGIS and InaSAFE is required to further participants knowledge and skills to
 work with the tools in anticipating possible disaster events and impacts.
 
-The workshop is expected to be furthered with an advanced level course and
-Workshop for Trainers course of which the curriculum will be developed
+The workshop is expected to e contibued with an advanced level course and
+workshop for trainers course for which the curriculum will be developed
 separately.
 
 To gain the required competencies, the workshop course is expected to apply
@@ -124,7 +124,7 @@ from the participants.
 LEVELS OF WORKSHOP
 ==================
 
-The workshopOSM and QGIS/InaSAFE consists of three levels:
+The workshop OSM and |QGIS|/|project_name| consists of three levels:
 
 1. Beginner
 2. Intermediate
@@ -151,7 +151,7 @@ technology, and each technology workshop is composed of three levels.
 
 Both workshop courses are interrelated.
 After participating in both workshop courses, participants are expected to be
-able to develop scenario for contingency planning by using scientific hazard
+able to develop scenarios for contingency planning by using scientific hazard
 layers, OSM and QGIS/InaSAFE.
 
 3. Training of trainer workshop for contingency planing using OSM, QGIS,
@@ -164,11 +164,10 @@ After completing the training, participants will have the facilitation skills
 about OSM / QGIS / InaSAFE which is needed as facilitator,
 and training skills to help train others in developing a realistic disaster
 scenario that can be used in contingency plans.
-This will lead to better decision-making during the process of making
+This will lead to better decision making during the process of making
 contingency plans.
 Also expected TOT participants can provide technical assistance for their
 respective regions.
-
 
 B. Target
 =========
@@ -187,28 +186,28 @@ intermediate levels are:
 
 Qualifications for participation at beginner level:
 
-1. Be able to operate computer (word processing, presentations, internet,
+1. Be able to operate a computer (word processing, presentations, internet,
    spreadsheets).
-2. Bring a laptop with minimum RAM of 2 GB (recommended 4 GB)
-3. Having a GPS unit and understanding of its working is an advantage
-4. Having basic skills in Geographic Information System is an advantage
+2. Bring a laptop with minimum RAM of 2 GB (recommended 4 GB).
+3. Having a GPS unit and understanding of its working is an advantage.
+4. Having basic skills in Geographic Information System is an advantage.
 
 Qualifications for participation at intermediate level:
 
 1. MUST have attended the workshop at beginner level OR equivalent knowledge
-   OR Have a background in Geography Information System,
-   and have read through the beginner manuals
-2. Be able to operate computer (word processing, presentations, internet,
+   OR have a background in Geography Information System,
+   and have read through the beginner manuals.
+2. Be able to operate a computer (word processing, presentations, internet,
    spreadsheet).
-3. Bring a laptop with minimum RAM of 2 GB recommended 4 GB
-4. An understanding of Geographic Information Systems
-5. Having a GPS unit and understanding of its working is an advantage
+3. Bring a laptop with minimum RAM of 2 GB recommended 4 GB.
+4. An understanding of Geographic Information Systems.
+5. Having a GPS unit and understanding of its working is an advantage.
 
 Qualifications for participants at Training of Trainer (ToT) level:
 
 1. Has followed OSM and QGIS/InaSAFE  workshop both beginner and intermediate
    levels.
-2. Demonstrate the potential to be a key person of or advocate as well as a
+2. Demonstrate the potential to be a key person of, or advocate as well as a
    trainer (trainers) in the training program for the Scenario Development
    Contingency Plan in their respective region.
 3. Satisfactory completion of prerequisite tasks (as assessed by HOT).
@@ -227,7 +226,7 @@ C. Map of Competencies
 |    |             | 2. Be able to operate OpenStreetMap                                                                                 |
 |    |             | 3. Be able to operate JOSM                                                                                          |
 |    |             | 4. Be able to use GPS to add data to OSM                                                                            |
-|    |             | 5. Be able to use Field Papers to add data to OSM                                                                   |
+|    |             | 5. Be able to use field papers to add data to OSM                                                                   |
 |    |             | 6. Be able to edit a map and add information to OSM using JOSM                                                      |
 |    |             | 7. Correct imagery offset                                                                                           |
 |    |             | 8. Getting OSM data in a specific format to be analyzed further in GIS (Geographic Information System) software     |
@@ -242,7 +241,7 @@ C. Map of Competencies
 |    |             | 6. Creating and editing page in OSM Wiki                                                                            |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 
-**2. Data Analysis Using QGIS and InaSAFE Workshop**
+**2. Data analysis using QGIS and InaSAFE Workshop**
 
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 | No.| Level       | Standard Competency and Basic Competency                                                                            |
@@ -263,7 +262,7 @@ C. Map of Competencies
 |    |             | 12. Using InaSAFE                                                                                                   |
 |    |             | 13. Keeping interaction and communication to support QGIS and InaSAFE in Indonesia                                  |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
-| B. | Intermediate| **Spatial Data Analysis using QGIS and InaSAFE which is related to contingency planning**                           |
+| B. | Intermediate| **Spatial data analysis using QGIS and InaSAFE which is related to contingency planning**                           |
 |    |             |                                                                                                                     |
 |    |             | 1. Understand QGIS concepts                                                                                         |
 |    |             | 2. Preparing data and keywords for InaSAFE                                                                          |
@@ -276,13 +275,13 @@ C. Map of Competencies
 
 Standard Competency and Basic Competency
 
-**Participant can be a workshop facilitator to teach Data collection and Data
-Analysis through OSM, QGIS, and InaSAFE in their respective region.**
+**Participant can be a workshop facilitator to teach Data collection and data
+analysis through OSM, QGIS, and InaSAFE in their respective region.**
 
-1. Mastering how to implement adult learning
-2. Demonstrating basic teaching skills
-3. Practising Data Collection and Analysis through OSM, QGIS, and InaSAFE
-   workshop
+1. Mastering how to implement adult learning.
+2. Demonstrating basic teaching skills.
+3. Practising data collection and analysis through OSM, QGIS, and InaSAFE
+   workshop.
 
 D. Curriculum Development
 =========================
@@ -304,7 +303,7 @@ D. Curriculum Development
        behavior such as attitude, knowledge, and skills.
     c. Developed in accordance with the characteristics of the workshop
        participant, conditions and workshop organizer.
-    d. The formulation is using measurable operational and / or observable.
+    d. The formulation is using measurable operational and/or observable.
     e. Used as a basis to develop an assessment tool.
 
 2. Compiling all teaching and workshop materials used in the workshop.
@@ -489,7 +488,7 @@ Quality Assurance for contributing of OSM mapping
 |                                                                     | 8. View changelog                                                | 8. How to view changelog                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 
-**Data Analysis Using QGIS and InaSAFE Beginner Level Workshop**
+**Data analysis Using QGIS and InaSAFE Beginner Level Workshop**
 
 **Standard Competency:**
 Managing spatial data using QGIS and analyzing disaster impact scenario using
@@ -551,18 +550,18 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 |8. Working with raster data                                          |                                                                  |**Raster data**                                             |
 |                                                                     | 1. Creating raster data                                          |                                                            |
 |                                                                     | 2. Changing raster symbology                                     | 1. How to load raster data                                 |
-|                                                                     | 3. Doing terrain Analysis                                        | 2. Tool label                                              |
+|                                                                     | 3. Doing terrain analysis                                        | 2. Tool label                                              |
 |                                                                     |                                                                  | 3. Classification                                          |
 |                                                                     |                                                                  |                                                            |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
-|9. Creating and Editing New Vector Layer                             |                                                                  |**Creating New Vector Data**                                |
+|9. Creating and editing new vector layer                             |                                                                  |**Creating New Vector Data**                                |
 |                                                                     | 1. Adding raster layer as a data source for digitize             |                                                            |
 |                                                                     | 2. Creating new vector feature (polygon, line, point)            | 1. Adding raster layer                                     |
 |                                                                     | 3. Digitizing new vector layer by copying raster layer and       | 2. Creating new vector feature                             |
 |                                                                     |    consider the topology                                         | 3. Digitizing new vector layer                             |
 |                                                                     | 4. Doing georeference                                            | 4. Georeference                                            |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
-|10. Doing Vector Analysis to Solve Problems                          |                                                                  | **Using Vector Analysis to Solve Problems**                |
+|10. Doing vector analysis to solve problems                          |                                                                  | **Using Vector Analysis to Solve Problems**                |
 |                                                                     | 1. Explaining GIS processes                                      |                                                            |
 |                                                                     | 2. Identifying problems                                          | 1. GIS Processes                                           |
 |                                                                     | 3. Explaining data needed                                        | 2. Problems                                                |
@@ -607,7 +606,7 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 |                                                                     |                                                                  | 2. QGIS tutorial website                                   |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 
-**Data Analysis Using QGIS and InaSAFE Intermediate Level Workshop**
+**Data analysis using QGIS and InaSAFE Intermediate Level Workshop**
 
 **Standard Competency:**
 Data spatial analysis using QGIS and |project_name| which is related to
@@ -1010,10 +1009,10 @@ Collecting spatial data using OSM
 |                                                                     |                                                                  |                                                        |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
-**Data Collection Using OSM Intermediate Level Workshop**
+**Data collection using OSM Intermediate Level Workshop**
 
 **Standard Competency:**
-Quality Assurance for contributing of OSM mapping
+Quality assurance for contributing of OSM mapping
 
 +----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 | Basic competency                                               | Indicator                                                        | Core material                                          | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
@@ -1065,7 +1064,7 @@ Quality Assurance for contributing of OSM mapping
 +----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |**5. Using Private Datastore (3 Hours)**                                                                                                                                                                                                                                                                                  |
 +----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|Using the private data store  for the personal data storage     |                                                                  | **Using Private Data Store**                           | Participants are watching presentation| 120 Minutes            | Test                       | Projector                     |
+|Using the private data store for the personal data storage.     |                                                                  | **Using Private Data Store**                           | Participants are watching presentation| 120 Minutes            | Test                       | Projector                     |
 |                                                                | 1. Explain the private data store  function                      |                                                        | from facilitator about private data   |                        | Practice                   | Slide PP                      |
 |                                                                | 2. Explain the data type can be published and the data is private| 1. Private data store                                  | store function and discussing about   |                        |                            | Module 5                      |
 |                                                                | 3. Install the plug-inprivate data store  into JOSM              | 2. Install SDS plugin                                  | what kind of data that can go public  |                        |                            | Participant's computer        |
@@ -1093,7 +1092,7 @@ Quality Assurance for contributing of OSM mapping
 |                                                                | 8. View changelog                                                | 8. How to view changelog                               |                                       |                        |                            |                               |
 +----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
-**Data Analysis Using QGIS and InaSAFE Beginner Level Workshop**
+**Data analysis using QGIS and InaSAFE Beginner Level Workshop**
 
 **Standard Competency:**
 Managing spatial data using QGIS and analyzing disaster impact scenario using
@@ -1141,7 +1140,7 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
 |**5. Projection systems and Transformation (2 Hours)**                                                                                                                                                                                                                                                                       |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
-|Applying Projection Systems and Transformation in QGIS                   |                                                                  |**Projection Systems and Transformation**                   | Participants are discussing about     | 90 Minutes             | Test             | Projector                     |
+|Applying projection systems and transformation in QGIS                   |                                                                  |**Projection Systems and Transformation**                   | Participants are discussing about     | 90 Minutes             | Test             | Projector                     |
 |                                                                         | 1. Explain Coordinate Reference Systems (CRS)                    |                                                            | Coordinate Refference System (CRS)    |                        | Practice         | Slide PP                      |
 |                                                                         | 2. Identify the CRS of the vector dataset                        | 1. Coordinate Reference Systems (CRS)                      |                                       |                        |                  | Module 5                      |
 |                                                                         | 3. Doing “on the fly” reprojection                               | 2. “On the fly” reprojection                               | Participants are learning and         |                        |                  | Participant's computer        |
@@ -1159,7 +1158,7 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 |                                                                         | 4. Set the layer symbology symbols                               | 3. Add vector data                                         | Participants are practicing how to add|                        |                  | Example file contain vector   |
 |                                                                         |                                                                  | 4. Symbology                                               | vector layer and doing symbology      |                        |                  | data                          |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
-|**7. Label and Classification (3 Hours)**                                                                                                                                                                                                                                                                                    |
+|**7. Label and classification (3 Hours)**                                                                                                                                                                                                                                                                                    |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
 |Categorize and make vector data labels                                   |                                                                  |**Vector Data Label**                                       | Participants are learning about       | 135 Minutes            | Practice         | Projector                     |
 |                                                                         | 1. Explores the attribute of data in objects and explain the     |                                                            | attribute data, labeling tools, and   |                        |                  | Slide PP                      |
@@ -1168,7 +1167,7 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 |                                                                         | 3. Give a vector data label using classification                 | 3. Classification                                          |                                       |                        |                  | Example file contain vector   |
 |                                                                         |                                                                  |                                                            |                                       |                        |                  | data                          |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
-|**8. Raster Data (3 Hours)**                                                                                                                                                                                                                                                                                                 |
+|**8. Raster data (3 Hours)**                                                                                                                                                                                                                                                                                                 |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
 |Working with raster data                                                 |                                                                  |**Raster data**                                             | Participants are learning and         | 135 Minutes            | Practice         | Projector                     |
 |                                                                         | 1. Creating raster data                                          |                                                            | practicing how to add raster layer,   |                        |                  | Slide PP                      |
@@ -1177,18 +1176,18 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 |                                                                         |                                                                  | 3. Classification                                          |                                       |                        |                  | Example file contain Raster   |
 |                                                                         |                                                                  |                                                            |                                       |                        |                  |                               |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
-|**9. Creating New Vector Data (3 Hours)**                                                                                                                                                                                                                                                                                    |
+|**9. Creating new Vector data (3 Hours)**                                                                                                                                                                                                                                                                                    |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
-|Creating and Editing New Vector Layer                                    |                                                                  |**Creating New Vector Data**                                | Participants are learning and         | 135 Minutes            | Practice         | Projector                     |
+|Creating and editing new vector layer                                    |                                                                  |**Creating New Vector Data**                                | Participants are learning and         | 135 Minutes            | Practice         | Projector                     |
 |                                                                         | 1. Adding raster layer as a data source for digitize             |                                                            | practicing how to add raster layer,   |                        |                  | Slide PP                      |
 |                                                                         | 2. Creating new vector feature (polygon, line, point)            | 1. Adding raster layer                                     | change its symbol, and doing simple   |                        |                  | Module 8                      |
 |                                                                         | 3. Digitizing new vector layer by copying raster layer and       | 2. Creating new vector feature                             | terrain analysis                      |                        |                  | Participant's computer        |
 |                                                                         |    consider the topology                                         | 3. Digitizing new vector layer                             |                                       |                        |                  | Example file contain raster   |
 |                                                                         | 4. Doing georeference                                            | 4. Georeference                                            |                                       |                        |                  |                               |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
-|**10. Vector Analysis (6 Hours)**                                                                                                                                                                                                                                                                                            |
+|**10. Vector analysis (6 Hours)**                                                                                                                                                                                                                                                                                            |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
-|Doing Vector Analysis to Solve Problems                                  |                                                                  | **Using Vector Analysis to Solve Problems**                | Participants are discussing about GIS | 210 Minutes            | Test             | Projector                     |
+|Doing vector analysis to solve problems                                  |                                                                  | **Using Vector Analysis to Solve Problems**                | Participants are discussing about GIS | 210 Minutes            | Test             | Projector                     |
 |                                                                         | 1. Explaining GIS processes                                      |                                                            | process, problems, and data           |                        | Practice         | Slide PP                      |
 |                                                                         | 2. Identifying problems                                          | 1. GIS Processes                                           |                                       |                        |                  | Module 9                      |
 |                                                                         | 3. Explaining data needed                                        | 2. Problems                                                | Participants are learning and         |                        |                  | Module 10                     |
@@ -1219,7 +1218,7 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
 |**12. Working with InaSAFE (8 Hours)**                                                                                                                                                                                                                                                                                       |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
-|Using InaSAFE’s                                                          |                                                                  | **Working with InaSAFE**                                   | Participants discussing about hazard, | 4 Hours 30 Minutes     | Test             | Projector                     |
+|Using InaSAFE                                                            |                                                                  | **Working with InaSAFE**                                   | Participants discussing about hazard, | 4 Hours 30 Minutes     | Test             | Projector                     |
 |                                                                         | 1. Explaining the concept of Hazard, Exposure, and Impact data   |                                                            | exposure, impact and InaSAFE user     |                        |                  | Slide PP                      |
 |                                                                         | 2. Explaining how to get impact                                  | 1. Hazard, Exposure, Impact                                | user interface.                       |                        | Practice         | Module 12                     |
 |                                                                         | 3. Explaining InaSAFE’s interface                                | 2. InaSAFE interface                                       |                                       |                        |                  | Participant's computer        |
@@ -1231,7 +1230,7 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 |                                                                         | 9. Saving and Printing scenario result                           | 8. Using print button                                      |                                       |                        |                  |                               |
 |                                                                         |                                                                  | 9. Saving your work                                        |                                       |                        |                  |                               |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
-|**13. Social Media to Keep QGIS and InaSAFE Interaction (1 Hours)**                                                                                                                                                                                                                                                          |
+|**13. Social media to keep QGIS and InaSAFE interaction (1 Hours)**                                                                                                                                                                                                                                                          |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
 |Keeping interaction to maintain analysis data network using              |                                                                  | **Social Media to Keep QGIS and InaSAFE Interaction**      | Participants are expected to keep     | 60 Minutes             | Test             | Projector                     |
 |QGIS/InaSAFE                                                             | 1. Using social media to keep the interaction alive              |                                                            | update with social media through      |                        | Practice         | Slide PP                      |
@@ -1239,7 +1238,7 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 |                                                                         |                                                                  | 2. QGIS tutorial website                                   |                                       |                        |                  | Participant's Computer        |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
 
-**Data Analysis Using QGIS and InaSAFE Intermediate Level Workshop**
+**Data analysis using QGIS and InaSAFE Intermediate Level Workshop**
 
 **Standard Competency:**
 Data spatial analysis using QGIS and |project_name| which is related to
@@ -1268,7 +1267,7 @@ contingency planning.
 |                                                                     |                                                                  | 6. Running InaSAFE                                         | preparing hazard layer, and running   |                        |                            |                               |
 |                                                                     |                                                                  |                                                            | InaSAFE                               |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**3. Temporary IDP (Internally Displaced Persons) Camps Planning (4 Hours)**                                                                                                                                                                                                                                                       |
+|**3. Temporary IDP (Internally Displaced Persons) camps planning (4 Hours)**                                                                                                                                                                                                                                                       |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Choosing a temporary IDP camps or evacuation                         |                                                                  |**Temporary IDP Camp Planning**                             | Participants are practicing analysis  | 225 minutes            | Test                       | Projector                     |
 |                                                                     | 1. Creating the criteria for determining the location of IDP     |                                                            | to determine temporary IDP camp       |                        | Practice                   | Slide PP                      |
@@ -1282,7 +1281,7 @@ contingency planning.
 |                                                                     |                                                                  | 6. Criteria #3: The buildings should have at least 225     |                                       |                        |                            |                               |
 |                                                                     |                                                                  |    meters wide square                                      |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**4. Evacuation Route Planning (3 Hours)**                                                                                                                                                                                                                                                                                         |
+|**4. Evacuation route planning (3 Hours)**                                                                                                                                                                                                                                                                                         |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Planning evacuation route based on hazard information                |                                                                  |**Evacuation Route Planning**                               | PParticipants are discussing about    | 225 minutes            | Test                       | Projector                     |
 |                                                                     | 1. Explaining the concept of shortest path and fastest route     |                                                            | road graph plugin in QGIS.            |                        | Practice                   | Slide PP                      |
@@ -1291,9 +1290,9 @@ contingency planning.
 |                                                                     | 4. Determining the starting point and destination point          | 3. Choosing a starting point and destination point         | set up road graph plugin, choosing    |                        |                            |                               |
 |                                                                     | 5. Doing route analysis and selection                            |                                                            | start and end point                   |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**5. Damages and Losses Assessment (4 Hours)**                                                                                                                                                                                                                                                                                     |
+|**5. Damages and losses assessment (4 Hours)**                                                                                                                                                                                                                                                                                     |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|Assessing Damages and Losses                                         |                                                                  |**Damages and Losses Assessment**                           | Participants are discussing about     | 210 minutes            | Test                       | Projector                     |
+|Assessing damages and losses                                         |                                                                  |**Damages and Losses Assessment**                           | Participants are discussing about     | 210 minutes            | Test                       | Projector                     |
 |                                                                     | 1. Explaining the definition of damage, loss, and                |                                                            | BPBD's damage and losses assessment   |                        | Practice                   | Slide PP                      |
 |                                                                     |    calculations based on exposure data from the OSM / community  | 1. BPBD's damages assessment guide                         | guide.                                |                        |                            | Module 5                      |
 |                                                                     |    participation affected                                        | 2. Damages and Losses Assessment Map                       |                                       |                        |                            | Participant's computer        |
@@ -1311,11 +1310,11 @@ contingency planning.
 |                                                                     | 9. Presenting the damages and losses assessment using a diagram  |                                                            |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
-**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and InaSAFE**
+**Training of Trainer workshop for contingency planning using OSM, QGIS, and InaSAFE**
 
 **Standard Competency:**
-Participant can be a workshop facilitator to teach Data collection and Data
-Analysis through OSM, QGIS, and |project_name| in their respective region.
+Participant can be a workshop facilitator to teach data collection and data
+analysis through OSM, QGIS, and |project_name| in their respective region.
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                              | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
@@ -1331,7 +1330,7 @@ Analysis through OSM, QGIS, and |project_name| in their respective region.
 |                                                                     |                                                                  | 4. Adult learning evaluation                               |    about how to evaluate adult        |                        |                            | Music                         |
 |                                                                     |                                                                  |                                                            |    learning                           |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**2. Communication Skill (2 Hours)**                                                                                                                                                                                                                                                                                               |
+|**2. Communication skill (2 Hours)**                                                                                                                                                                                                                                                                                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Demonstrating basic teaching skills                                  |                                                                  |**Communication skills**                                    | 1. Participant asking about the       | 90 minutes             | Test                       | Projector                     |
 |                                                                     | 1. Describe the principles of effective communication            |                                                            |    principles of effective            |                        | Practice                   | Slide PP                      |
@@ -1339,9 +1338,9 @@ Analysis through OSM, QGIS, and |project_name| in their respective region.
 |                                                                     | 3. Demonstrate the basic skills component of teaching / workshop | 2. Communication models in workshop                        |    communication models in the        |                        |                            |                               |
 |                                                                     |                                                                  | 3. Basic teaching skills component                         |    training                           |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**3. Facilitator Skills for Data Collection and Analysis through OSM, QGIS, and InaSAFE workshop (2 hours)**                                                                                                                                                                                                                       |
+|**3. Facilitator skills for data collection and analysis through OSM, QGIS, and InaSAFE workshop (2 hours)**                                                                                                                                                                                                                       |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|Practising Data Collection and Analysis through OSM, QGIS, and       |                                                                  |** Facilitator Skills for Data Collection and Analysis      | Participant practicing their          | 90 minutes             | Practice                   | Projector                     |
+|Practising data collection and analysis through OSM, QGIS, and       |                                                                  |** Facilitator Skills for Data Collection and Analysis      | Participant practicing their          | 90 minutes             | Practice                   | Projector                     |
 |InaSAFE workshop                                                     |                                                                  |through OSM, QGIS, and InaSAFE workshop                     | facilitating skill for data collection|                        |                            | Slide PPT                     |
 |                                                                     |                                                                  |                                                            | and analysis using OSM, QGIS, and     |                        |                            |                               |
 |                                                                     | 1. Practicing data collection and analysis through OSM, QGIS     | 1. Implementation of adult learning in data collection and | InaSAFE Workshop                      |                        |                            |                               |
@@ -1355,8 +1354,8 @@ F. Closing
 
 After organizing this Training of Trainer for Scenario Development for
 Contingency Planning using OSM and QGIS/InaSAFE Curriculum Scheme by BNPB, we
-are hoping that workshop organizer from National level or province/district
+are hoping that workshop organizer from national level or province/district
 level can use this document as reference in order to create same output.
-This curriculum will always be improved through several Test and input from
+This curriculum will always be improved through several test and input from
 stakeholders, such as government official or non-government which included in
 working group.
