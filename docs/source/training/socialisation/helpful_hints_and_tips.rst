@@ -62,7 +62,7 @@ same license.
 
 **How is the project funded?**
 The project is being developed for the good of humanity and has been jointly
-developed by |BNPB|, AusAid & the World Bank.
+developed by |BNPB|, |DFATAusAid| & the World Bank.
 
 **I found a bug, how should I report it?**
 We manage the project issues using a GitHub issue tracker. The |project_name|
