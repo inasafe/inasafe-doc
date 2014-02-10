@@ -27,6 +27,20 @@ http://inasafe.org
 If you need help in solving some problems with |project_name| you should take
 a look at :ref:`getting_help`
 
+.. _add_to_usermap:
+
+Add yourself to the |project_name| Usermap!
+-------------------------------------------
+
+As a User/Trainer/Developer of |project_name| you are encouraged to add yourself
+to the Usermap Webpage available at:
+
+http://users.inasafe.org/
+
+Use the :guilabel:`Add me to map!` button on the left side and point the cross to the place where you live.
+Fill in your User Data and click on :guilabel:`Done!`.
+You are also able to download the coordinates of all entered |project_name| Users as a CSV file.
+
 .. _use_issue_tracker:
 
 Use our issue tracker!
