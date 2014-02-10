@@ -104,7 +104,7 @@ rst_epilog = """
 .. _AIFDR: http://www.aifdr.org/
 .. |BNPB| replace:: BNPB_
 .. _BNPB: http://www.bnpb.go.id/
-.. |DFATAusAid| replace:: `Australian Government`_
+.. |GoA| replace:: `Australian Government`_
 .. _Australian Government: http://aid.dfat.gov.au
 .. |GFDRR| replace:: GFDRR_
 .. _GFDRR: http://www.gfdrr.org/
