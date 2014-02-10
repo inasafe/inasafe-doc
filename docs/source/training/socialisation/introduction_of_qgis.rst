@@ -222,7 +222,6 @@ Installing |project_name| through the QGIS plugin repository
 -------------------------------------------------   ------------------------
 .. image:: /static/general/icon_dock.*              Toggle Dock
 .. image:: /static/general/icon_keywords.*          Keyword Editor
-.. image:: /static/general/icon_reset.*             Reset Dock
 .. image:: /static/general/icon_options.*           Options
 .. image:: /static/general/icon_impactfunctions.*   Impact Functions Browser
 .. image:: /static/general/icon_minimumneeds.*      Minimum Needs Tool
