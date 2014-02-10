@@ -762,6 +762,30 @@ the 2 selected layers. :
 
             attributes[i][self.target_field] = cls
   
+target_field output to the keywords
+...................................
+
+When dealing with a vector type exposure, you also need to output what is the name of the field that contains the result of the impact analysis. The field name will be used in InaSAFE for aggregation purposes. In this example the target_filed name is 'Shake_cls' and is written to the keyword when the resulting layer is created:
+
+
+::
+
+     def run(self, layers):
+     ....
+         V = Vector(data=attributes,
+                   projection=I.get_projection(),
+                   geometry=I.get_geometry(),
+                   name='Estimated buildings affected',
+                   keywords={'impact_summary': impact_summary,
+                             'impact_table': impact_table,
+                             'map_title': map_title,
+                             'target_field': self.target_field,
+                             'statistics_type': self.statistics_type,
+                             'statistics_classes': self.statistics_classes},
+                   style_info=style_info)
+
+         return V
+
 
 This function is available in full at
 :download:`/static/earthquake_building_impact_function.py`
