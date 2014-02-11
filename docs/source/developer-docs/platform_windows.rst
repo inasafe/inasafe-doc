@@ -212,7 +212,7 @@ Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
    set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
-   cd "%HOMEPATH%\.qgis2\python\plugins\inasafe"
+   cd "%HOMEPATH%\.qgis2\python\plugins\inasafe-dev"
    start "QGIS Shell" /B "cmd.exe" %*
 
 .. note:: The QGIS_PREFIX_PATH environment variable should be unquoted!.
