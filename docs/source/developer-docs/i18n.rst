@@ -168,8 +168,10 @@ The resource in InaSAFE are:
 * safe_qgis (Qt based .ts file for the safe_qgis package)
 
 The methodology for creation of these resources can be reviewed in
-:file:`scripts/create-transifex-resources.sh`. **Note:** you do not need to
-run this script as it is a once-off activity per project.
+:file:`scripts/create-transifex-resources.sh`.
+
+.. Note:: You do not need to run this script as it is a once-off activity per
+   project.
 
 This script basically does this:
 
@@ -198,7 +200,7 @@ like this::
     
     tx push -s -t -l id -r safe
 
-that will push the source (-s) and translation file (-t) for language (-l) de
+that will push the source (-s) and translation file (-t) for language (-l) id
 for the resource (-r) safe up to the transifex web server.
 
 
