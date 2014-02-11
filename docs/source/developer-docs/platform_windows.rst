@@ -197,7 +197,7 @@ We will create a custom shell launcher that will give you a python
 shell environment using the python that comes bundled with QGIS, and that sets
 various paths and environment variables so everything works as expected.
 Find out the PATHs by using the command 'dir /x'.
-Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
+Save the following listing in <QGIS Install Dir>/bin/qgis-python-shell.bat::
 
    @echo off
    SET OSGEO4W_ROOT=C:\PROGRA~1\QGISDU~1
@@ -223,14 +223,14 @@ Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
 .. note:: This script is for QGIS 2.0.
    You may need to do some adjustment if you are using another version of QGIS.
 
-For easy access to this shell launcher, right click on the python-shell.bat
+For easy access to this shell launcher, right click on the qgis-python-shell.bat
 script and (without releasing your initial right click) drag with the file
 onto your start / windows button in the bottom left corner of the screen.
 
 Verifying your system path
 ..........................
 
-To verify your path, launch your python shell (by clicking the python-shell
+To verify your path, launch your qgis python shell (by clicking the qgis-python-shell
 .bat) and then start a python shell.
 Don't be alarmed when it says "The system cannot find the path specified." It
 should work anyway.
@@ -296,7 +296,7 @@ ez_setup.py and save it somewhere familiar e.g. :samp:`c:\temp`.
 For both 32 and 64 bit
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Next launch the shell (python-shell.bat as described in
+Next launch the shell (qgis-python-shell.bat as described in
 :ref:`windows-commandline_setup`) **as administrator** (by right clicking the
 file and choosing run as administrator).
 Then from the command line, launch :command:`ez_setup.py` by typing this::
@@ -357,7 +357,7 @@ Running tests using nose
 ........................
 
 Once they are installed, you can run the nose tests from windows by going to
-the plugin directory/inasafe-dev folder (in your python-shell.bat shell
+the plugin directory/inasafe-dev folder (in your qgis-python-shell.bat shell
 session) and running::
 
    run-tests-win.bat
@@ -392,7 +392,7 @@ Making PyCharm 'QGIS Aware'
 
 We need to have various environment variables set in the PyCharm context in
 a similar way we do with :ref:`windows-commandline_setup`.
-Make a copy of your qgis-shell batch file and call it qgis-pycharm.bat.
+Make a copy of your qgis-python-shell batch file and call it qgis-pycharm.bat.
 
 Now alter the last line so that it launches pycharm instead of a shell as
 per this example below::
