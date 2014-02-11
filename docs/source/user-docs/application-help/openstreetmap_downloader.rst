@@ -29,9 +29,16 @@ city level and below should work well.
 To use this tool effectively:
 
 * Use QGIS to zoom in to the area for which you want building data to be
-  retrieved.
+  retrieved. For fine-grained control, you can set the bounding box manually
+  in the area provided at the bottom of the dialog.
 * Check the output directory is correct. Note that the saved datasets
   will be called buildings.shp and roads.shp (and their associated files).
+* By default simple file names will be used (e.g. roads.shp, buildings.shp).
+  If you wish you can specify a prefix to add in front of this default name.
+  For example using a prefix of 'padang-' will cause the downloaded files to be
+  saved as 'padang-roads.shp' and 'padang-buildings.shp'. Note that the only
+  allowed prefix characters are A-Z, a-z, 0-9 and the characters '-' and '_'.
+  You can leave this blank if you prefer.
 * Press the :guilabel:`OK Button` and wait for the data to be retrieved.
 
 
