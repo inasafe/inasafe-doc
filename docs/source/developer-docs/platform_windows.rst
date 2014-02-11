@@ -223,7 +223,7 @@ Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
 .. note:: This script is for QGIS 2.0.
    You may need to do some adjustment if you are using another version of QGIS.
 
-For easy access to this shell launcher, right click on the qgis-shell.bat
+For easy access to this shell launcher, right click on the python-shell.bat
 script and (without releasing your initial right click) drag with the file
 onto your start / windows button in the bottom left corner of the screen.
 
