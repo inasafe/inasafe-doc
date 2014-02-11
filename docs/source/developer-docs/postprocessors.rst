@@ -170,6 +170,36 @@ Brief Review of AggregationCategoricalPostprocessor
 TBA
 
 
+Notes on Minimum Needs
+----------------------
+
+InaSAFE provides a post processor (MinimumNeedsPostprocessor) that will use a series of parameters to quickly calculate the needs of displaced people (e.g. in terms of drinking water, food, ...). Please refer to :ref:`minimum_needs` on notes related to this functionality. Couple of interesting points to mention regarding the use of this post processor:
+
+* impact functions need to define the minimum needs as part of their parameters. For example:
+
+::
+
+    ....
+    parameters = OrderedDict([
+        ('thresholds [m]', [1.0]),
+        ('postprocessors', OrderedDict([
+            ('Gender', {'on': True}),
+            ('Age', {
+                'on': True,
+                'params': OrderedDict([
+                    ('youth_ratio', defaults['YOUTH_RATIO']),
+                    ('adult_ratio', defaults['ADULT_RATIO']),
+                    ('elder_ratio', defaults['ELDER_RATIO'])])}),
+            ('MinimumNeeds', {'on': True}),
+        ]))
+        ('minimum needs', default_minimum_needs())
+    ])
+
+
+* the parameters defined as part of minimum needs are not yet configurable by the user. If there is a need to make a change, you can either define them inside the impact functions or modify the default needs defined in core.py.
+
+
+
 Output
 ------
 Dock.postprocOutput will hold the result datastructure (shown below) of all the
