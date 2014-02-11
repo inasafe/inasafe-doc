@@ -6,94 +6,252 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
+"Project-Id-Version: InaSAFE Documentation Project 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-01 16:48\n"
+"POT-Creation-Date: 2014-02-11 11:40\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# 0164a5139e524810b948aabcea4a21e2
-# ee4e6ab429784d09b87fd7aba117557a
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:8
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:18
+# eba2a379c6904e089be704d4599eeb51
+# a8f1e11336ab4e3aa8823cd5ffa51402
 msgid "OpenStreetMap Downloader"
 msgstr ""
 
-# ff712e4016fb4b29904b5f3ca64c30eb
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:10
-msgid ""
-"This tool will fetch building ('structure') data from the OpenStreetMap "
-"project for you."
+# eeb461fd6e614a14b183c35ade22a8a5
+msgid "This tool will fetch building ('structure') and highway ('road') data from the OpenStreetMap project for you."
 msgstr ""
 
-# 8a00ab359d1f42e0a45e2bcd9b78958d
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:20
-msgid ""
-"InaSAFE supports the use of building data in various impact functions. In "
-"particular we support building footprints sourced from the `OpenStreetMap "
-"<https://openstreetmap.org>`_ project (OSM). The tool requires internet "
-"connection as it fetches the data via a web service running on `Linfiniti's "
-"OSM Reporter <http://osm.linfiniti.com>`_ web site."
+# 9a57cfb961d34c4193f390265aaf87f6
+msgid "The tool requires internet connection as it fetches the data via a web service running on `Linfiniti's OSM Reporter <http://osm.linfiniti.com>`_ web site."
 msgstr ""
 
-# 7906a068fff74d29bdeb7c262c5a20f1
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:26
-msgid ""
-"The data, once downloaded will be available to you as a shapefile. A style "
-"file is automatically created so that it symbolises nicely in QGIS. In "
-"addition, the correct keyword metadata is created for the downloaded dataset "
-"so that it can be used directly in InaSAFE impact scenario analyses."
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:23
+# 5a44d3554bfb44a283d11bec814f3e8c
+msgid "The data, once downloaded will be available to you as a shapefile. A style file is automatically created so that it symbolises nicely in QGIS. In addition, the correct keyword metadata is created for the downloaded dataset so that it can be used directly in InaSAFE impact scenario analyses."
 msgstr ""
 
-# 9452ca96a1e34212b05ae8683323c00d
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:31
-msgid ""
-"**Note:** The building downloader service has limitations as to the size of "
-"datasets that can be retrieved. As such you may experience issues trying to "
-"fetch e.g. country wide building footprint data. Generally datasets at a "
-"city level and below should work well."
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:28
+# ac58e5f82a2a4a9e8c7626484cc36359
+msgid "**Note:** The downloader service has limitations as to the size of datasets that can be retrieved. As such you may experience issues trying to fetch e.g. country wide building footprint data. Generally datasets at a city level and below should work well."
 msgstr ""
 
-# 14826019982a438e9b98642a1df441e1
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:36
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:33
+# ae9cbd959cf24e5c8bf33654bbc59600
 msgid "To use this tool effectively:"
 msgstr ""
 
-# 0ce54960727345a7a69443c063df0326
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:38
-msgid ""
-"Use QGIS to zoom in to the area for which you want building data to be "
-"retrieved."
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:35
+# b28ebd3f40304222aec02c80323f58e1
+msgid "Use QGIS to zoom in to the area for which you want building data to be retrieved."
 msgstr ""
 
-# 2f74ba22371a461d9792c45c83483f4f
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:40
-msgid ""
-"Check the output directory is correct. Note that the saved dataset will be "
-"called buildings.shp (and its associated files)."
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:37
+# 9f44162aa74e4b3eb12bb80a45fc8f8f
+msgid "Check the output directory is correct. Note that the saved datasets will be called buildings.shp and roads.shp (and their associated files)."
 msgstr ""
 
-# a5c072417a3e48acaf6a0dc4f7594e5b
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:42
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:39
+# 461a1c1c8f88415d88944c6123857c50
 msgid "Press the :guilabel:`OK Button` and wait for the data to be retrieved."
 msgstr ""
 
-# 7461cb7566a942108918fdf8030bebcd
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:46
-msgid ""
-"If a dataset already exists in the output directory it will be overwritten. "
-"This tool requires a working internet connection and fetching buildings will "
-"consume your bandwidth."
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:43
+# 8a5e9c2f5bbf4e65b243687f7cfefdb1
+msgid "If a dataset already exists in the output directory it will be overwritten. This tool requires a working internet connection and fetching buildings will consume your bandwidth."
 msgstr ""
 
-# a0215e0be926479eb474e760ffa6714a
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:51
-msgid ""
-"Downloaded data is copyright OpenStreetMap contributors (click for more "
-"info)."
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:48
+# 7c577e0d35b647d5ab85f58645b0489f
+msgid "Downloaded data is copyright OpenStreetMap contributors (click for more info)."
 msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:53
+# cae9f0c9d9ce4b20ad6240596ea81df5
+msgid "Building data"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:55
+# d2180745b240467bbde81bf9e1ede61d
+msgid "InaSAFE supports the use of building data in various impact functions. In particular we support building footprints sourced from the `OpenStreetMap <https://openstreetmap.org>`_ project (OSM)."
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:59
+# 0f86f6edc9c544f8b60217c85efd6148
+msgid "The following building types are derived (depending on the various tags assigned to them in OSM):"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:62
+# e86b612ce30441d3b40bfc13f074d98e
+msgid "School"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:63
+# adbd4842f4294b9f8f2f7e001eef4772
+msgid "University/College"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:64
+# 2da5ae13350646f4b0ebe90d9976b0e6
+msgid "Government"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:65
+# f6916bdba3d344d4be09da482278fb6c
+msgid "Clinic/Doctor"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:66
+# d1c69bfd53b34c48a4edd10ceb83b9a8
+msgid "Hospital"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:67
+# 29339308f2c546218f48bb2a67d9a0b1
+msgid "Fire Station"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:68
+# 8b00d3d756e2412290c82169ba2e9d29
+msgid "Police Station"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:69
+# 3bcd78dac8764d4dbc87b1228edbb305
+msgid "Public Building"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:70
+# ba0254bb1b4648dcb11d975f2014e87b
+msgid "Place of Worship - Islam"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:71
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:73
+# e8e1bec79ae247daa16355c2df36ba06
+# e934362f9216493f8b0094585fce284b
+msgid "Place of Worship - Unitarian"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:72
+# 7de60250f0d64f1cb559bc6c66c28f8f
+msgid "Place of Worship - Buddhist"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:74
+# 4ff345013daa430fb7a8246557473f5b
+msgid "Supermarket"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:75
+# 2b44dafefbcf48d0bfdf501014bfde51
+msgid "Residential"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:76
+# 98cc782f8dc5423eaa3950b1079d66b5
+msgid "Sports Facility"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:77
+# 6a466b7ef40f4a28a3823d2ac4de84d1
+msgid "Place of Worship"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:78
+# 1eb840598a234bfba5742ca72d303e70
+msgid "Commercial"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:79
+# 9d693958dca6469c83bf579569de0831
+msgid "Industrial"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:81
+# d7b30b8475fb44d683ffe372ae6316e7
+msgid "These derived types will be present in a field called 'type' when downloading the building data.Note that depending on the area for which you have downloaded, only some of these categories may be present in your buildings dataset."
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:86
+# 25fb37e0f34c408d8a495f9240a2698d
+msgid "Roads data"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:88
+# 5b93a563087f450d8148a5f7a50afb33
+msgid "InaSAFE supports the use of road data in various impact functions. In particular we support roads sourced from the `OpenStreetMap <https://openstreetmap.org>`_ project (OSM)."
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:92
+# a615400db0a84be98526f138c6e97cd3
+msgid "The following road types are derived (depending on the various tags assigned to them in OSM):"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:95
+# b7e66695c8e049d4a1f8521f5a50acb6
+msgid "ALTER TABLE planet_osm_line ADD COLUMN \"type\" VARCHAR(255) NULL;"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:97
+# 0b2ad4df158c4819b1a349552720637a
+msgid "Motorway or highway (includes 'trunk' from OSM)"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:98
+# da42383440cb490fa0f863700ed169b0
+msgid "Motorway link"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:99
+# a6ac4aa3326a4c158dca93973b072fd3
+msgid "Primary road"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:100
+# 7809a92aeb9444e78a208f3c98b7e44f
+msgid "Primary link"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:101
+# 55187589109c443fa3c2684b67995560
+msgid "Tertiary"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:102
+# ac5744d21831407db535cfb4dea50131
+msgid "Tertiary link"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:103
+# f32f74bc664f45cdafdde671385b19da
+msgid "Secondary"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:104
+# 849f9517dd4142839e0fce1f138a47d1
+msgid "Secondary link"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:105
+# 86fa2d53c71541a3886d98f602c927f5
+msgid "Road, residential, living street, etc. (includes all highways tagged with 'living_street', 'residential', 'yes', 'road', 'unclassified', 'service', '' and NULL highways)"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:108
+# edf388c56913416490398d79ec923b37
+msgid "Track'"
+msgstr ""
+
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:109
+# 7ea43b8c057544229bfc552999881dc6
+msgid "Cycleway, footpath, etc. (includes 'cycleway', 'footpath', 'pedestrian', 'footway' and 'path' highway tags)."
+msgstr ""
+
