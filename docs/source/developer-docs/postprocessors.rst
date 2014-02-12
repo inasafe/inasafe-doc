@@ -120,6 +120,8 @@ If your post processor runs successfully and produces a result, this result will
 For implementation examples see AgePostprocessor, GenderPostprocessor and BuildingTypePostprocessor which
 both use mandatory and optional parameters
 
+.. _types_of_aggreagation:
+
 Types of aggregation
 --------------------
 
@@ -164,24 +166,37 @@ It is interesting to review some of the code in this post processor that is used
 * key_attribute: attribute name that is used to get the type of the building. This can either be set by the impact function or the default name 'type' will be used. Note: key_attribute is for now only available for the BuildingType processor. To adjust/review this, please refer to postprocessor_manager class.
 
 
-Brief Review of AgePostprocessor
+Brief Review of AgePostProcessor
 --------------------------------
 
-This aggregator is expected to work on aggregation done on a raster impact layer. Looking at the setup method, It is important to understand that the parameter impact_total will contain the aggregated value (normally the number of people of a particular aggregation area)
+This aggregator is expected to work on aggregation done on a raster impact layer. 
+Looking at the setup method, It is important to understand that the parameter impact_total will contain the aggregated value (normally the number of people of a particular aggregation area). It also uses a series of user configurable parameters that are used for ratio calculations. Other post processors such as GenderPostProcessor and MinimumNeedsPostprocessor are based on the same logic with a total impact number and customizable parameters.
 
 ::
 
     def setup(self, params):
     ...
     self.impact_total = params['impact_total']
-
+    ...
+    #either all 3 ratio are custom set or we use defaults
+    self.youth_ratio = params['youth_ratio']
+    self.adult_ratio = params['adult_ratio']
+    self.elder_ratio = params['elder_ratio']
 
 
 Brief Review of AggregationCategoricalPostprocessor
 ---------------------------------------------------
 
+AggregationCategoricalPostprocessor is used with impact functions that are setup to do class count aggregation (see section :ref:`types_of_aggreagation`). An example of such impact function is the EarthquakeBuildingImpactFunction where four class types (levels of hazard) are defined. Looking into the setup method, It is important to understand that the impact_classes parameter contains these classes.
 
-TBA
+::
+
+    def setup(self, params):
+    ...
+    self.impact_classes = params['impact_classes']
+    ...
+
+
 
 
 Notes on Minimum Needs
