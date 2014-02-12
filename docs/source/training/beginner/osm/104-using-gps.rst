@@ -16,13 +16,13 @@ Module 4: Using GPS
 - Upload GPS track in JOSM
 - Editing based on GPS data on JOSM
 
-In this module we will learn step by step how to download and install JOSM,
-the Java OpenStreetMap editor. We will change some of the settings in JOSM
-to make it easier to use. Then we will open a sample map and learn some of
-the basic operations of the software. Remember in Module 1 when we asked you
-to draw a map of your town or village? We will conclude this module by
-drawing your map again, this time digitally. After this you should have a
-good understanding of how to draw maps in JOSM.
+
+In this module we will see what a GPS does and how it works.  You will learn how
+to operate a GPS, and how to use it to create maps. In this module we will
+explain how to operate the Garmin eTrex Vista HCx, a common GPS used for
+mapping.  There are many other models of GPS which do the same thing, so if you
+are working with a different one, don’t worry - the principles remain the same.
+
 
 **1. What is GPS?**
 
