@@ -11,7 +11,7 @@ FOREWORD
 
 Contingency planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
 workshop program are designed to deliver knowledge and skills for provincial
-and districal disaster management agency officials and staff in order to handle
+and district disaster management agency officials and staff in order to handle
 emergencies since the beginning of the disaster.
 These knowledge and skills will help them to be able to reduce and manage
 disaster risk.
