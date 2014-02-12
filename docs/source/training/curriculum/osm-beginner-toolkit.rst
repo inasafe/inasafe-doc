@@ -62,7 +62,7 @@ Workshop Materials
 
 Workshop Strategies
 ^^^^^^^^^^^^^^^^^^^
-1. Methods applied in this workshop is participatory teaching,
+1. Methods applied in this workshop are participatory teaching,
    emphasizes on full participation of the participant in every section and
    activities during the workshop, instead of lecture method.
 2. Participants oriented.
@@ -94,7 +94,7 @@ Tools
 
 Schedule
 ^^^^^^^^
-Below is *outline* of schedule for 5 days workshop that has been tested in
+Below is an *outline* of a schedule for a 5 days workshop that has been tested in
 several groups in different workshop in Indonesia.
 You may change some of them that might be more useful, applicable,
 and meet your needs depend on some factors must be considered as we have
@@ -325,20 +325,20 @@ FAQ (Frequently Asked Question)
 
 **How did the UK begin mapping? How did OpenStreetMap start?**
 
-*OpenStreetMap* start with just a handful of volunteers who had GPS devices.
-They would go out, collect data on their GPS and make sketches of maps and
+*OpenStreetMap* started with just a handful of volunteers who had GPS devices.
+They went out, collected data on their GPS and made sketches of maps and
 take notes, and then add the data into OSM database at home.
 These initial volunteers hosted "Mapping Parties" in different towns,
 in which anybody could come out with them one day and go mapping.
-These parties helped expand the network of volunteers,
+These parties helped expanding the network of volunteers,
 get more people involved, and create great maps of different towns.
 
 **How did they create maps so thoroughly? What technologies did they use?**
 
-At the beginning, mappers only have GPS to work with, and any map data that
+At the beginning, mappers only had GPS to work with, and any map data that
 was freely given to the *OpenStreetMap* community.
 Later, *OSM* made a deal with *Yahoo!* to be able to use their satellite
-imagery to draw maps with.
+imagery to digitize maps with.
 More recently, Microsoft has made its imagery available to *OSM*.
 
 **Can we use OSM with Google Maps?**
@@ -461,19 +461,19 @@ FAQ (Frequently Asked Question)
 Sometimes participants forget their password.
 In this case,you need to help them to reset or make a new password,
 if that is not possible you have to make a new email account.
-If the participants already have *OpenStreetMap* account but they forget the
+If the participants already have an *OpenStreetMap* account but they forget the
 password, you could help them to reset their password and sent it to their
 email.
 
 **Do not have email**
 
-If participants do not have email account, you need to help them make a new
+If participants do not have an email account, you need to help them make a new
 one.
 
-**The software not installed (Flash)**
+**Software is missing (Flash)**
 
 If you decided to show participants how to edit using *Potlach editor* in the
-*OSM* website, first they need to install Flash on their computer.
+*OSM* website, they will need to install Flash on their computer first.
 The guide to install flash is in the **Beginners Guide**.
 Please remember this activity would takes some hours for this session.
 
@@ -579,42 +579,43 @@ Common Problem
 
 **Setting on Mac and Ubuntu**
 
-The Step to setting on Mac and Ubuntu is quite easy.
-JOSM is a software based on Java so do with the platform independent,
-but you have to make sure your Java is already installed in your computer
+The steps to install on Mac and Ubuntu are quite easy.
+JOSM is a software based on Java so it is platform independent,
+but you have to make sure Java is already installed on your computer
 system.
-GPSBabel does not have GUI for Linux, so it would be hard to Linux users
+GPSBabel does not have a GUI for Linux, so it would be hard for Linux users
 especially for newbie users.
-This software does not include in system packet for Windows but it is easy to
-download.
+This software is not included in the system packet for Windows but it is easy to
+be downloaded for Mac or Linux.
 
 **JOSM runs out of memory**
 
-Sometimes if someone download a lot of imagery and data on JOSM,
-your computer runs out of memory and crash.
-The solution is start JOSM with a batch file that will tell JOSM to add extra
+Sometimes if someone downloads a lot of imagery and data on JOSM,
+the computer runs out of memory and crashes.
+The solution is to start JOSM with a batch file that will tell JOSM to add extra
 memory.
-A file batch example is provide in this toolkit, but you have to edit it
-using text editor to put the file-josm.jar in the right way.
+An example batch file is provide in this toolkit, but you have to edit it
+using a text editor to put the file-josm.jar in the right way.
 
 **Participants add tag on nodes not in the ways**
 
-Sometimes it is difficult to OSM new users to understand that way is consist
-from some nodes.
-Therefore any tag that you put supposed add on the ways or polygon rather
+Sometimes it is difficult to new OSM users to understand that a way consists of 
+several nodes.
+Therefore any tag is supposed to be put on the way or polygon rather
 than nodes on the ways.
-As an example, new users select all nodes on the objects by draw a box around
+As an example, new users select all nodes on the objects by drawing a box around
 the object.
-This is make all of nodes have tag whereas they supposed to do not have tag.
+This will make all of the nodes having tags whereas the nodes should not have the tags
+but rather the "object"(line,polygon) should have.
 This is important for you to know from beginning, for a good mapping.
 
 FAQ (Frequently Asked Question)
 *******************************
 
-**Is there any easy way to restart JOSM after we finish install plugins?**
+**Is there any easy way to restart JOSM after we finished installing plugins?**
 
 Yes, there is a plugin that you can add which allow you to restart JOSM by
-click a button.
+clicking a button.
 To activate it, install it in preferences.
 
 **Could we make a tag in Bahasa Indonesia?**
@@ -637,10 +638,10 @@ still possible.
 You can change the color of the objects in setting menu.
 This is very useful especially when it is hard to see nodes on ways and
 shapes on different background.
-When Participants ask about how to change the symbol or show the name of
-objects, you need to tell them that this program is for editing data
+When participants ask about how to change the symbol or show the name of
+objects, you need to tell them that this program is for editing data and
 not to see the preview or result and print a map.
-All of nodes and tag will be saved in a database, but you can use some other
+All of the nodes and tags will be saved in a database, but you can use some other
 software to make your map better.
 A good example is OpenStreetMap, but there are a lot more available.
 The difference between editing data and rendering on another software might
@@ -648,12 +649,12 @@ be quite hard to understand by participants in the beginning.
 
 **What the difference between preset and tag?**
 
-Tag is a part of information that you can put in nodes,
+A tag is a part of an information that you can put in nodes,
 ways or shapes (polygon) to describe one of the attributes.
 Preset is a simple way to give a tag to the objects without knowing how to fix
 the tag manually.
 As an example you have to give a tag to the hospital (tag amenity=hospital)
-to identify it correctly, but because there is are lots of tags it is easier
+to identify it correctly, but because there are lots of tags it is easier
 using the preset menu that will make the correct tag automatically.
 
 **Session 4**
@@ -790,17 +791,17 @@ Common Problem
 
 **Make sure you have battery and reserve cable**
 
-It is not good thing if your GPS run of your battery,
-so make sure every group have reserved battery when they go out to mapping.
-When they come back, they need to move data from GPS to computer.
-It is better if every group has their own cable, in that way it will be a lot
+It is not a good thing if your GPS runs of your battery,
+so make sure every group has reserve batteries when they go out to mapping.
+When they come back, they need to move the data from GPS to the computer.
+It is better if every group has its own cable, in that way it will be a lot
 faster copying the data to the computer.
 
 **Same format to all GPS**
 
 Before training, make sure all GPS devices are set to the same format.
 This is for not confusing the participants.
-The main point that we have is to make sure that:
+The main point that we have to make sure is:
 
 - Arrangement from page is same: Main Menu. Track Menu, Map, Satellites.
 - Save coordinate in decimal degrees.
@@ -935,9 +936,9 @@ FAQ (Frequently Asked Question)
 *******************************
 
 **How can we print big size maps?**
-**An example for poster or community mapping project?**
+**An example for a poster or community mapping project?**
 
-One of the best way to do this is using the QGIS program,
+One of the best ways to do this is using the QGIS program,
 but this is not a topic covered in this session.
 You can make some clue about QGIS after you practice and understand how to
 produce a big size map.
@@ -1084,16 +1085,16 @@ such as a building it is better to use a point.
 
 **How to map a bridge in JOSM?**
 
-To mark a bridge, you need to split the lines which mark the bridge (usually
+To mark a bridge, you need to split the lines which marks the bridge (usually
 a way) on both sides of the bridge.
 If you have a road that crosses a river, you can click on the dots on the
 side of the river and press 'P' on the keyboard to split the line at that
 point.
 Then the selected line can be tagged as bridge using the preset menu.
 
-**How to digitize a building to have perfect square shape?**
+**How to digitize a building to have perfect rectangle shape?**
 
-It is not easy to make a perfect square only using you own hand.
+It is not easy to make a perfect rectangle only using you own hand.
 Luckily there are tools that can make the proper angle at each corner of a
 polygon.
 Select the polygon (building) and press 'Q' on the keyboard to shape
