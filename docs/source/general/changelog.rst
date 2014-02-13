@@ -8,34 +8,34 @@ Changelog for version |release|
 
 * Changes from a user point of view:
 
-    * Users are able to select their own hazard and exposure attribute
-    * Develop simple wizards to walk new users through the software
-    * Power users are able to configure their own action checklist and
-      "minimum needs"
+  * Users are able to select their own hazard and exposure attribute
+  * Develop simple wizards to walk new users through the software
+  * Power users are able to configure their own action checklist and
+    "minimum needs"
 
 * New Functionality in |project_name|:
 
-    * Routing
-    * Evacuation routes
-    * Transportation from A to B
-    * Multiple Hazard Analysis
-    * Damage and Loss Assessment (DALA)
-    * Percentage of affected area by aggregation
+  * Routing
+  * Evacuation routes
+  * Transportation from A to B
+  * Multiple Hazard Analysis
+  * Damage and Loss Assessment (DALA)
+  * Percentage of affected area by aggregation
 
 * Changes in the code:
 
-    * Splitting Test Suite
-    * Reviewing Impact Functions
-    * Automatically run test on pull request
-    * Easy to write impact functions
+  * Splitting Test Suite
+  * Reviewing Impact Functions
+  * Automatically run test on pull request
+  * Easy to write impact functions
 
 * Visible changes in Documentation and Webpage:
 
-    * Update User and Developer Documentation
-    * Update Training Materials
-    * Track where InaSAFE events are occurring
-    * News Articles
-    * Translation into other languages
+  * Update User and Developer Documentation
+  * Update Training Materials
+  * Track where InaSAFE events are occurring
+  * News Articles
+  * Translation into other languages
 
 Changelog for version 1.2.0
 ---------------------------
