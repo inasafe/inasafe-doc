@@ -221,7 +221,7 @@ Brief Review of AggregationCategoricalPostprocessor
 
 AggregationCategoricalPostprocessor is used with impact functions that are
 setup to do class count aggregation (see section
-:ref:`types_of_aggreagation`).
+:ref:`types_of_aggregation`).
 An example of such impact function is the EarthquakeBuildingImpactFunction
 where four class types (levels of hazard) are defined.
 Looking into the setup method, it is important to understand that the
