@@ -119,7 +119,7 @@ locale to the bottom of the file. For example, to add South African english
 as a new locale, change this section::
 
     # LOCALES = space delimited list of iso codes to generate po files for
-    # Please dont remove en here
+    # Please do not remove en here
     LOCALES = en id
 
 By adding the local identified 'af' ::
@@ -131,7 +131,7 @@ translation stringlist for that locale. After the inital creation of your .po
 files using the above commands, you can update them anytime the strings in the
 library have been changed by doing::
 
-   make update-translation-strings`
+   make update-translation-strings
 
 to generate the gettext .po files under :file:`safe\i18n/en_ZA/LC_MESSAGES` the
 and Qt Linguist .ts files under :file:`safe_qgis.i18n`.
@@ -168,8 +168,10 @@ The resource in InaSAFE are:
 * safe_qgis (Qt based .ts file for the safe_qgis package)
 
 The methodology for creation of these resources can be reviewed in
-:file:`scripts/create-transifex-resources.sh`. **Note:** you do not need to
-run this script as it is a once-off activity per project.
+:file:`scripts/create-transifex-resources.sh`.
+
+.. Note:: You do not need to run this script as it is a once-off activity per
+   project.
 
 This script basically does this:
 
@@ -198,7 +200,7 @@ like this::
     
     tx push -s -t -l id -r safe
 
-that will push the source (-s) and translation file (-t) for language (-l) de
+that will push the source (-s) and translation file (-t) for language (-l) id
 for the resource (-r) safe up to the transifex web server.
 
 

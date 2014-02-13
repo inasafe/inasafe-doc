@@ -49,7 +49,7 @@ SPHINXBUILD=`which sphinx-build`
 TEXI2PDF=`which texi2pdf`
 
 # GENERATE PDF AND HTML FOR FOLLOWING LOCALES (EN IS ALWAYS GENERATED)
-LOCALES='id'
+LOCALES='id fr'
 
 if [ $1 ]; then
   LOCALES=$1

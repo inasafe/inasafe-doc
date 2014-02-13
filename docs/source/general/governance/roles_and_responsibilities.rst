@@ -36,7 +36,6 @@ without having to download the software.
 |GFDRR| is also helping other countries to roll out InaSAFE to disaster
 managers in the field.
 
-
 Technical Working Group
 -----------------------
 
@@ -65,7 +64,6 @@ Viven Deparday      |GFDRR|                                    Developer   TWG
 Tim Sutton          |Linfiniti|   Head of Linfiniti            Developer   Release coordinator
 =================== ============= ============================ =========== ===================
 
-
 Expectations of TWG members
 ............................
 
@@ -74,7 +72,6 @@ It is expected that the TWG members are able to coordinate the development of
 features outlined in |project_name|'s roadmap.  Additionally TWG should draw
 on experiences from |project_name| trainers and users to continually update
 |project_name|'s roadmap.
-
 
 Project Steering Committee
 --------------------------
