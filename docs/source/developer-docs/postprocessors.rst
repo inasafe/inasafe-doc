@@ -61,7 +61,7 @@ the minimal class could look like this:
             self._append_result('My Indicator', myResult)
 
 After that you need to import the new class into postprocessor_factory and
-update AVAILABLE_POSTPTOCESSORS to include the postprocessor prefix (e.g.
+update AVAILABLE_POSTPROCESSORS to include the postprocessor prefix (e.g.
 MySuper if the class is called MySuperPostprocessor and its human readable
 name)
 ::
@@ -117,22 +117,51 @@ You should see a section containing the result of your super postprocessor:
 For implementation examples see AgePostprocessor, GenderPostprocessor and
 BuildingTypePostprocessor which both use mandatory and optional parameters.
 
+.. _types_of_aggregation:
+
 Types of aggregation
 --------------------
 
 * statistics_type = 'sum'
 * statistics_type = 'class_count'
 
-TBA
+Impact layers produced by InaSAFE can either be raster or vector type
+(depending on the exposure data used as input).
+When doing an aggregation, each feature in the intermediate layer will
+contain the result of the aggregation. The way the aggregation is calculated
+depend on the type of the impact layer and on the impact function that was
+used to produce the impact layer.
+
+For vector layers, two type of aggregations are possible:
+
+* Sum aggregation: this will sum up into one field the number of exposure
+  data that is part of the aggregation polygon.
+  Impact functions are by default set to use this type of aggregation.
+* Class count aggregation: It is also possible to define the intermediate
+  aggregation layer to contain the number of items for a series of valued
+  defined in the impact function.
+  Please refer to the earth_building_impact function and see the use of
+  statistics_type = 'class_count' and statistics_classes.
+
+For raster layers, the aggregation (sum, count, mean) is done using QGIS's
+zonal statistics functionality (please refer to zonal_stats.py and
+https://github.com/qgis/Quantum-GIS/blob/master/src/analysis/vector/qgszonalstatistics.cpp
+for details.
+
+Depending of the intermediate aggregate layer produced,
+the post processor would need use the resulting aggregation values and
+attributes to do It's calculation.
 
 Brief Review of BuildingTypePostprocessor
 -----------------------------------------
 
-It is interesting to review some of the code in this post processor that is
++It is interesting to review some of the code in this post processor that is
 used to produce a report of affected buildings by type.
 The setup method is called for each aggregation polygon.
 It is called with all the necessary parameters that are needed by the
 process method to classify buildings by type.
+This aggregator is expecting to work on aggregation done as a sum on vector
+impact layer.
 ::
 
     def setup(self, params):
@@ -166,6 +195,81 @@ process method to classify buildings by type.
 .. note:: key_attribute is for now only available for the BuildingType
    processor.
    To adjust/review this, please refer to postprocessor_manager class.
+
+Brief Review of AgePostprocessor
+--------------------------------
+
+This aggregator is expected to work on aggregation done on a raster impact
+layer.
+Looking at the setup method, it is important to understand that the
+parameter impact_total will contain the aggregated value (normally the number
+of people of a particular aggregation area)
+::
+
+    def setup(self, params):
+
+    self.impact_total = params['impact_total']
+    ...
+    #either all 3 ratio are custom set or we use defaults
+    self.youth_ratio = params['youth_ratio']
+    self.adult_ratio = params['adult_ratio']
+    self.elder_ratio = params['elder_ratio']
+
+
+Brief Review of AggregationCategoricalPostprocessor
+---------------------------------------------------
+
+AggregationCategoricalPostprocessor is used with impact functions that are
+setup to do class count aggregation (see section
+:ref:`types_of_aggreagation`).
+An example of such impact function is the EarthquakeBuildingImpactFunction
+where four class types (levels of hazard) are defined.
+Looking into the setup method, it is important to understand that the
+impact_classes parameter contains these classes.
+::
+
+    def setup(self, params):
+    ...
+    self.impact_classes = params['impact_classes']
+    ...
+
+
+Notes on Minimum Needs
+----------------------
+
+InaSAFE provides a post processor (MinimumNeedsPostprocessor) that will use a
+series of parameters to quickly calculate the needs of displaced people (e.g.
+in terms of drinking water, food, ...).
+Please refer to :ref:`minimum_needs` on notes related to this functionality.
+Couple of interesting points to mention regarding the use of this post
+processor:
+
+* Impact functions need to define the minimum needs as part of their
+  parameters.
+
+For example:
+::
+
+    parameters = OrderedDict([
+        ('thresholds [m]', [1.0]),
+        ('postprocessors', OrderedDict([
+            ('Gender', {'on': True}),
+            ('Age', {
+                'on': True,
+                'params': OrderedDict([
+                    ('youth_ratio', defaults['YOUTH_RATIO']),
+                    ('adult_ratio', defaults['ADULT_RATIO']),
+                    ('elder_ratio', defaults['ELDER_RATIO'])])}),
+            ('MinimumNeeds', {'on': True}),
+        ]))
+        ('minimum needs', default_minimum_needs())
+    ])
+
+
+* The parameters defined as part of minimum needs are not yet configurable by
+  the user.
+  If there is a need to make a change, you can either define them inside the
+  impact functions or modify the default needs defined in core.py.
 
 Output
 ------
