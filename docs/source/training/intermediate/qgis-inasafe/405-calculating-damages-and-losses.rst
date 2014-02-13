@@ -209,7 +209,7 @@ data for various hamlets in Sirahan.
 Now let’s implement our losses formula in the same way.
 
 - Go back to the attribute table for Bangunan_Terdampak_perDusun and add a new
-  column named “Losses.”
+  column named "Losses."
 
 .. image:: /static/training/intermediate/qgis-inasafe/image98.*
    :align: center

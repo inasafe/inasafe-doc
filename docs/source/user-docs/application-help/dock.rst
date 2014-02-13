@@ -294,17 +294,25 @@ in the buttons area. This will open an :guilabel:`Impact report` dialog.
 Dialog has three major areas:
 
  * :guilabel:`Area to print` group: allows to customize extent of the report
-   map. There are two options available. Choose :guilabel:`Current extent` if
-   current canvas extent represents necessary area. :guilabel:`Analysis extent`
-   will set extent of the report map to impact layer extent.
+   map.
+   There are two options available.
+   Choose :guilabel:`Current extent` if current canvas extent represents
+   necessary area.
+   :guilabel:`Analysis extent` will set extent of the report map to impact
+   layer extent.
  * :guilabel:`Template to use` group: here you can select desired template for
-   your report. In combobox listed all templates bundled with plugin plus
-   templates from user-defined template directory (see :ref:`toolbar_options`
-   for information how to set templates directory). It is also possible to
-   select custom template from any location: just activate radiobutton under
-   combobox and provide path to template using :guilabel:`...` button.
- * buttons area: contains four buttons. :guilabel:`Open PDF` button used to
-   generate report and export it in PDF format. Resulting file(s) will be
-   opened in your default PDF viewer. :guilabel:`Open composer` used when you
-   need to adjust generated report before printing. In this case report will be
-   opened in QGIS composer and you can edit it as needed.
+   your report.
+   In combobox listed all templates bundled with plugin plus templates from
+   user-defined template directory (see :ref:`toolbar_options` for
+   information how to set templates directory).
+   It is also possible to select custom template from any location: just
+   activate radiobutton under combobox and provide path to template using
+   :guilabel:`...` button.
+ * buttons area: contains four buttons.
+   :guilabel:`Open PDF` button used to generate report and export it in PDF
+   format.
+   Resulting file(s) will be opened in your default PDF viewer.
+   :guilabel:`Open composer` used when you need to adjust generated report
+   before printing.
+   In this case report will be opened in QGIS composer and you can edit it as
+   needed.

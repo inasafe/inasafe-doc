@@ -203,10 +203,11 @@ editing tips for making your maps great!
 **Some Objects Should Not Connect**
 
 When you are creating polygons and lines that are not supposed to be connected,
-make sure that they are not merged together by sharing a node.  For example,
-highway nodes should not be snapped to buildings, because no one likes a road
-that leads directly into a wall!  If you want to disentangle two or more obejcts
-that share the same node, select the node and press :kbd:`G`.
+make sure that they are not merged together by sharing a node.
+For example, highway nodes should not be snapped to buildings,
+because no one likes a road that leads directly into a wall!
+If you want to disentangle two or more obejcts that share the same node,
+select the node and press :kbd:`G`.
 
 .. image:: /static/training/intermediate/osm/image52.*
    :align: center
@@ -216,27 +217,29 @@ that share the same node, select the node and press :kbd:`G`.
 
 **But, Some Objects Should Connect**
 
-However, some objects SHOULD connect!  Road intersections should always be
-snapped together.  If two roads do not share a common node, then the computer
+However, some objects SHOULD connect!
+Road intersections should always be snapped together.
+If two roads do not share a common node, then the computer
 has no way of knowing that the roads actually connect to each other.
 
 .. image:: /static/training/intermediate/osm/image54.*
    :align: center
 
-
 **Overlapping Objects**
 
 A common error is to have overlapping polygons when the objects they represent
-do not overlap in real life.  A building cannot overlap another building.  This
-mistake is commonly made with buildings and landuse polygons.  For example, a
-polygon drawn to represent a park outside a building should not overlap with the
-building.  Instead it should be drawn next to the building. There are some
-exceptions to this rule, such as schools.  Within a school yard you might
-identify individual buildings using polygons, yet you also might want to create
-a polygon around the entire school yard.  In this case it is fine for the
-polygons to overlap, but the rule to follow here is to make sure that the
-buildings are completely inside the landuse polygon.
-
+do not overlap in real life.
+A building cannot overlap another building.
+This mistake is commonly made with buildings and landuse polygons.
+For example, a polygon drawn to represent a park outside a building should
+not overlap with the building.
+Instead it should be drawn next to the building.
+There are some exceptions to this rule, such as schools.
+Within a school yard you might identify individual buildings using polygons,
+yet you also might want to create a polygon around the entire school yard.
+In this case it is fine for the polygons to overlap, but the rule to follow
+here is to make sure that the buildings are completely inside the landuse
+polygon.
 
 .. image:: /static/training/intermediate/osm/image55.*
    :align: center
@@ -244,25 +247,22 @@ buildings are completely inside the landuse polygon.
 .. image:: /static/training/intermediate/osm/image56.*
    :align: center
 
-
-We all make mistakes, and as you map more you will make less mistakes!  Just
-remember that even if you upload data that contains mistakes, it is simple to
-fix your mistakes and upload the change again.  This is what is great about OSM,
-you can always make it better!
+We all make mistakes, and as you map more you will make less mistakes!
+Just remember that even if you upload data that contains mistakes,
+it is simple to fix your mistakes and upload the change again.
+This is what is great about OSM, you can always make it better!
 
 **Tracing Correctly**
 
 OSM can do amazing things with identifying where objects end and what labels
-these objects should have; however, it needs your help in doing so.  For
-example, if you create a road that turns into another road without a distinct
-node, then JOSM will continue labeling the road as the previous one.  Therefore,
-it is necessary that you make all of your roads and objects as clearly and rigid
-as possible.
-
+these objects should have; however, it needs your help in doing so.
+For example, if you create a road that turns into another road without a
+distinct node, then JOSM will continue labeling the road as the previous one.
+Therefore, it is necessary that you make all of your roads and objects as
+clearly and rigid as possible.
 
 .. image:: /static/training/intermediate/osm/image57.*
    :align: center
-
 
 We will conclude this section with additional tips: 
 Rotate object: If you hold :kbd:`CTRL + SHIFT` and hold while sliding your 
@@ -271,14 +271,13 @@ mouse, then you can rotate the selected object.
 .. image:: /static/training/intermediate/osm/image58.*
    :align: center
 
-
 **Ways that are not closed**: usually a line that does not form a polygon.
 Common examples are buildings where the first node does not meet the last node.
 
 .. image:: /static/training/intermediate/osm/image59.*
    :align: center
 
-To fix this, select both nodes and go to :menuselection:`Tools ‣ Merge Nodes`
+To fix this, select both nodes and go to :menuselection:`Tools -> Merge Nodes`
 to connect them.
 
 **Crossing Buildings (Overlapping Buildings)**: buildings that overlap each
@@ -373,12 +372,15 @@ You can find the list of these standard presets **here**
    :align: center
 
 
-- After you find territory and find out his mistake. Certainly next step is to
-  fix the error. First step, make sure you have selected an error/lightning (by
-  left click on the lightning image). After that, determine where you would fix
-  the error, whether on the "JOSM" or "Potlatch". Note: we recommend that the
-  editing in JOSM, because its editing features are more complete.
+- After you find territory and find out his mistake.
+  Certainly next step is to fix the error.
+  First step, make sure you have selected an error/lightning (by
+  left click on the lightning image).
+  After that, determine where you would fix the error, whether on the "JOSM"
+  or "Potlatch".
 
+  .. Note:: we recommend that the editing in JOSM,
+     because its editing features are more complete.
 
 - In order to fix one of the errors, you can click on the links to edit in
   either JOSM or Potlatch.  Note that to edit in JOSM you must have the JOSM

@@ -21,7 +21,7 @@ Following are a few tips for documentation writers:
 
 1. Take a look in the `lookup table <./lookup_table.html>`_ to see which terms
    and phrases are used and which you should definitely **not** translate.
-#. There is a 'Community Edition" of
+#. There is a "Community Edition" of
    `PyCharm <http://www.jetbrains.com/pycharm/>`_ available.
    Consider using this for writing documentation.
 #. Try to not write more than **80 Characters in one line**.

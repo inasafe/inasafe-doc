@@ -105,8 +105,15 @@ In terms of value replacement, there are three groups of elements on the templat
 please go to **InaSAFE Option** tools and change the value of the related field. 
 Those elements are:
 
-* **organisation-logo**. It corresponds to **Organisation logo** field on InaSAFE Option tools. If you do not fill this field, then the default one, **supporters.png** logo, will be used.
-* **disclaimer**. It corresponds to **Disclaimer text** field on InaSAFE Option tools. If you do not fill this field, then the default one will be used: "*InaSAFE has been jointly developed by BPNB, Australian Govenment and the World Bank - GFDRR*"
+* **organisation-logo**. It corresponds to **Organisation logo** field on
+  InaSAFE Option tools.
+  If you do not fill this field, then the default one,
+  **supporters.png** logo, will be used.
+* **disclaimer**. It corresponds to **Disclaimer text** field on InaSAFE
+  Option tools.
+  If you do not fill this field, then the default one will be used: "InaSAFE
+  has been jointly developed by BPNB, Australian Govenment and the World
+  Bank - GFDRR"
 
 2. Elements containing tokens. The id of these element is not significant, only the token 
 it contains. At render time, any of these tokens will be replaced. If you want to have a 
