@@ -275,9 +275,9 @@ symbology represents.
 - Draw a box in the remaining empty space on our map layout. You will see a
   legend with all of our symbologies shown in a list.
 - In the panel on the right, click on :guilabel:`Legend items`.
-  Use the edit button to change the names on the legend.  Use the + an -
-  buttons to add or remove items from the legend.  You may choose which elements
-  are important to include.
+  Use the edit button to change the names on the legend.  Use the 
+  :guilabel:`+` and :guilabel:`-` buttons to add or remove items from the 
+  legend.  You may choose which elements are important to include.
 
 .. image:: /static/training/beginner/qgis-inasafe/image272.*
    :align: center

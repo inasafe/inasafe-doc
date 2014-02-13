@@ -31,7 +31,7 @@ important, and who it might be important to.
 .. figure:: /static/training/beginner/osm/image8.*
    :align: center
 
-   *A village in Indonesia (up), and an example of a handdrawn map (below).*
+   *A village in Indonesia (up), and an example of a hand drawn map (below).*
 
 If your town is like most, you may have drawn some lines to represent roads,
 possibly a river or stream. Perhaps you added important buildings such as
@@ -61,14 +61,14 @@ can be much more valuable.
 
 **Why digital?**
 
-Mapmaking on computers allows us to collect more useful data than on paper.
+Map making on computers allows us to collect more useful data than on paper.
 On paper we might draw a school, and even add it’s name and record some
 information about the school, but on the computer we can attach an endless
 amount of data about the school, such as the number of students,
 number of teachers, size of the building, type of structure,
 and so on. And more importantly, when we add this school to a digital map,
 we record it’s precise location (longitude and latitude) on the planet.
-This is invaluable for our future mapmaking and analysis,
+This is invaluable for our future map making and analysis,
 and we will look more closely at it later on.
 
 **What is OpenStreetMap?**

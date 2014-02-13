@@ -24,7 +24,7 @@ and then learn how we can create our own presets menus to use in JOSM.
 **1. Tags and Presets**
 
 Remember that after you draw an object on the map in JOSM, you need to attach
-tags in order to describe what it is, it’s name, and any any other attributes.
+tags in order to describe what it is, its name, and any any other attributes.
 For example when you want to create a clothing shop with the name “Some
 Clothing Shop”, you need two tags - one to describe the point as a clothing
 shop, and one to hold the name.
