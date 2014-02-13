@@ -183,7 +183,7 @@ You will need to be connected to the internet to install this plugin.
 .. image:: /static/training/intermediate/qgis-inasafe/image95.*
    :align: center
 
-- Once it is installed, you will find Group Dtat on your Toolbar. Click it.
+- Once it is installed, you will find Group Stats on your Toolbar. Click it.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image96.*
 
@@ -206,7 +206,7 @@ You will need to be connected to the internet to install this plugin.
 
 Now we’ve calculated the damaged area and we’ve created a table with damage
 data for various hamlets in Sirahan.
-Now let’s implement our losses formula in the wame way.
+Now let’s implement our losses formula in the same way.
 
 - Go back to the attribute table for Bangunan_Terdampak_perDusun and add a new
   column named “Losses.”

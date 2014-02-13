@@ -36,9 +36,9 @@ points to the map.
   and dragging your mouse around.
 - If you have a mouse with a scroll-wheel, zoom in and out on the map by
   turning the wheel.  If you don’t have a scroll-wheel,
-  use the :guilabel:`+` and :guilabel:`-`  buttons on in the upper right corner
+  use the :guilabel:`+` and :guilabel:`-` buttons on in the upper right corner
   of the map.
-- To search for a place, :guilabel:`Left Click` in the box labelled
+- To search for a place, :guilabel:`Left Click` in the box labeled
   :guilabel:`Search` on the left side of the page. Type in the name of your
   town or village and press :guilabel:`Enter`.  A window should appear to the
   left of the map with the results of your search.  Click on the location that
@@ -49,7 +49,7 @@ points to the map.
 
 - If you want to save an image from OpenStreetMap that you can easily print,
   follow these instructions.
-- Just above the map, click on the button labelled :guilabel:`Share` on the
+- Just above the map, click on the button labeled :guilabel:`Share` on the
   right side of the map.
 
 .. image:: /static/training/beginner/osm/image13.*
