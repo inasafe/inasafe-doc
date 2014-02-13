@@ -65,38 +65,12 @@ For vector data use ogr2ogr. For example from TM-3 zone 48.2
 
    ogr2ogr -s_srs EPSG:23834 -t_srs EPSG:4326 <target>.shp <source>.shp
 
-**How do I get Open Street Map building data?**
 
-For Indonesia, you can download latest collections at
-`data.kompetisiosm.org <http://data.kompetisiosm.org>`_. or you can add our
-Open Street Map building PostGIS mirror to |project_name|:
+**How do I get OpenStreetMap building data?**
 
- * Add PostGIS layer with host=203.77.224.77, database=osm, username=aifdr,
-   port 5432, SSL mode=disable
- * Select view named vw_planet_osm_polygon
- * Build query: upper(geometrytype("way")) IN ('POLYGON',
-   'MULTIPOLYGON') AND BUILDING != ''
-
-Another way, you can export osm data from HOT Exports:
- * Go to `Preset JOSM <http://josm.openstreetmap.de/wiki/Presets>`_.
- * Find and download `Building` preset created by Kate Chapman and save it
- * Go to HOT Exports website `www.hot-export.geofabrik.de
-   <http://hot-export.geofabrik.de>`_.
- * Go to `New Job` menu in the upper right of the page
- * Select region, currently only 3 regions are supported by HOT Export (Haiti,
-   Indonesia, Africa)
- * Fill `Job Name` and `Description`
- * Select area that you want to export by zooming or panning the map
- * You can choose smaller area by clicking `Select Smaller Area` and creating
-   rectangle in the map or filling min/max longitude/latitude value for it
- * Click `Save` if your map is ready
- * Upload JOSM Preset File which have been downloaded before, and click `Save`
- * Your job is created and you have to wait until it finish. It'll take some
-   minutes if your map is big one
- * When the job is finished, there will be a table contains files that can be
-   downloaded
- * Download the `ESRI Shapefile (zipped)`
- * Extract it on your computer, and the data will be ready to use
+This tool will fetch building ('structure') and highway ('road') data from the 
+OpenStreetMap project for you. For more information see 
+:ref:`openstreetmap_downloader` section
 
 **How do I take screen capture e.g. for use in a presentation?**
 
