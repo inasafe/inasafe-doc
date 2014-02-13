@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-11 16:05\n"
+"POT-Creation-Date: 2014-02-13 11:59+0700\n"
 "PO-Revision-Date: 2013-12-12 22:50+0000\n"
 "Last-Translator: macho <werner.macho@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/inasafe/language/"
@@ -66,27 +66,39 @@ msgstr ""
 msgid "To use this tool effectively:"
 msgstr ""
 
-# 0ce54960727345a7a69443c063df0326
+# 2df6fb60abf642ccafb35e4d3580ae5d
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:35
 msgid ""
 "Use QGIS to zoom in to the area for which you want building data to be "
-"retrieved."
+"retrieved. For fine-grained control, you can set the bounding box manually "
+"in the area provided at the bottom of the dialog."
 msgstr ""
 
 # 9d5bf4fcb99745a89c8179abdce2d708
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:37
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:38
 msgid ""
 "Check the output directory is correct. Note that the saved datasets will be "
 "called buildings.shp and roads.shp (and their associated files)."
 msgstr ""
 
+# 1b21ed14507d4a9c94cdb87cfcbab9f3
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:40
+msgid ""
+"By default simple file names will be used (e.g. roads.shp, buildings.shp). "
+"If you wish you can specify a prefix to add in front of this default name. "
+"For example using a prefix of 'padang-' will cause the downloaded files to "
+"be saved as 'padang-roads.shp' and 'padang-buildings.shp'. Note that the "
+"only allowed prefix characters are A-Z, a-z, 0-9 and the characters '-' and "
+"'_'. You can leave this blank if you prefer."
+msgstr ""
+
 # a5c072417a3e48acaf6a0dc4f7594e5b
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:39
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:46
 msgid "Press the :guilabel:`OK Button` and wait for the data to be retrieved."
 msgstr ""
 
 # 7461cb7566a942108918fdf8030bebcd
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:43
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:50
 msgid ""
 "If a dataset already exists in the output directory it will be overwritten. "
 "This tool requires a working internet connection and fetching buildings will "
@@ -94,19 +106,19 @@ msgid ""
 msgstr ""
 
 # a0215e0be926479eb474e760ffa6714a
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:48
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:55
 msgid ""
 "Downloaded data is copyright OpenStreetMap contributors (click for more "
 "info)."
 msgstr ""
 
 # 345b31cd05fa466d97868910d60bf64e
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:53
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:60
 msgid "Building data"
 msgstr ""
 
 # 020bd2342dbf41bf947bbbc0c3a18c55
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:55
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:62
 msgid ""
 "InaSAFE supports the use of building data in various impact functions. In "
 "particular we support building footprints sourced from the `OpenStreetMap "
@@ -114,101 +126,101 @@ msgid ""
 msgstr ""
 
 # 74fa26620d614488bd0fe65bd5941ac4
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:59
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:66
 msgid ""
 "The following building types are derived (depending on the various tags "
 "assigned to them in OSM):"
 msgstr ""
 
 # 9a55ed8442fe4f3eacec18e13dd8d101
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:62
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:69
 msgid "School"
 msgstr ""
 
 # 8c89bc556a9e4005889aa72943b61b60
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:63
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:70
 msgid "University/College"
 msgstr ""
 
 # f03ba03e92a2433099498389316071af
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:64
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:71
 msgid "Government"
 msgstr ""
 
 # bf246ddfabe44cb39a94097691b0180e
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:65
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:72
 msgid "Clinic/Doctor"
 msgstr ""
 
 # bd847016f2ee48619760e784d442f79b
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:66
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:73
 msgid "Hospital"
 msgstr ""
 
 # d3ac97302cc944ddbd3d4da258602a5b
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:67
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:74
 msgid "Fire Station"
 msgstr ""
 
 # 80511146d092440c95c231f3cfc9ccf8
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:68
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:75
 msgid "Police Station"
 msgstr ""
 
 # 64c6a0b7b4014d959006571ae390d630
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:69
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:76
 msgid "Public Building"
 msgstr ""
 
 # 7f750746d77346d48fda48fafcd9050a
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:70
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:77
 msgid "Place of Worship - Islam"
 msgstr ""
 
 # cd1bb7e8a03046138b28b69ebfe251ad
 # 1d05ff7549f54fd0987176180f38a74f
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:71
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:73
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:78
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:80
 msgid "Place of Worship - Unitarian"
 msgstr ""
 
 # bd17062273a446759ebe9036e5403290
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:72
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:79
 msgid "Place of Worship - Buddhist"
 msgstr ""
 
 # 49835c8a76b94f37b9cafe2d6451dced
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:74
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:81
 msgid "Supermarket"
 msgstr ""
 
 # 947c21aaf7e54fc9bf480c6ca5f5270c
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:75
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:82
 msgid "Residential"
 msgstr ""
 
 # 9df8eef6d2264105843a75b572624003
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:76
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:83
 msgid "Sports Facility"
 msgstr ""
 
 # bbfa669cc4b940e5b795d33c9f1d9082
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:77
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:84
 msgid "Place of Worship"
 msgstr ""
 
 # f21ab9b41da149739eec5014fb5ca9da
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:78
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:85
 msgid "Commercial"
 msgstr ""
 
 # 9cc72cc825c9471c9935cb771dbbba04
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:79
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:86
 msgid "Industrial"
 msgstr ""
 
 # be432fe60e314a60b1be11b5045d3f84
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:81
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:88
 msgid ""
 "These derived types will be present in a field called 'type' when "
 "downloading the building data.Note that depending on the area for which you "
@@ -217,12 +229,12 @@ msgid ""
 msgstr ""
 
 # dbac705af14c4a069b88a8a63f0f6a2d
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:86
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:93
 msgid "Roads data"
 msgstr ""
 
 # 8907d9658a3d459b83f517361c2bbb72
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:88
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:95
 msgid ""
 "InaSAFE supports the use of road data in various impact functions. In "
 "particular we support roads sourced from the `OpenStreetMap <https://"
@@ -230,59 +242,59 @@ msgid ""
 msgstr ""
 
 # 8221a422a874424092fc57292349f1c6
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:92
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:99
 msgid ""
 "The following road types are derived (depending on the various tags assigned "
 "to them in OSM):"
 msgstr ""
 
 # bbb6d7316a5a4dfb83584f8965a42752
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:95
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:102
 msgid "ALTER TABLE planet_osm_line ADD COLUMN \"type\" VARCHAR(255) NULL;"
 msgstr ""
 
 # 03759cb7699c4d7a9013bfbc8ea60b26
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:97
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:104
 msgid "Motorway or highway (includes 'trunk' from OSM)"
 msgstr ""
 
 # ad7cdc2f0582466599cc6554054692f9
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:98
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:105
 msgid "Motorway link"
 msgstr ""
 
 # 64e9e9c3d0c649d6bca19bbae2632357
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:99
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:106
 msgid "Primary road"
 msgstr ""
 
 # 284164f29da84ddfb104df4ea8f1955b
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:100
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:107
 msgid "Primary link"
 msgstr ""
 
 # 38539a260af14d8c92f7f452a3d37b32
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:101
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:108
 msgid "Tertiary"
 msgstr ""
 
 # edfd55b155a94f6db3ad82e864fb749a
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:102
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:109
 msgid "Tertiary link"
 msgstr ""
 
 # cc6a53672919425f8ee9046282b1cc91
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:103
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:110
 msgid "Secondary"
 msgstr ""
 
 # 28330855c99b41cc8b9df79fdabb25e4
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:104
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:111
 msgid "Secondary link"
 msgstr ""
 
 # 07a4d681ad7b4aa19e5f858790dfe6eb
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:105
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:112
 msgid ""
 "Road, residential, living street, etc. (includes all highways tagged with "
 "'living_street', 'residential', 'yes', 'road', 'unclassified', 'service', '' "
@@ -290,12 +302,12 @@ msgid ""
 msgstr ""
 
 # 011216651517488d933e2f03a105c0ec
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:108
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:115
 msgid "Track'"
 msgstr ""
 
 # b00c7da4d0bf446f85b0592e2854f862
-#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:109
+#: ../../source/user-docs/application-help/openstreetmap_downloader.rst:116
 msgid ""
 "Cycleway, footpath, etc. (includes 'cycleway', 'footpath', 'pedestrian', "
 "'footway' and 'path' highway tags)."
