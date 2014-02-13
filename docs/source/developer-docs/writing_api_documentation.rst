@@ -16,7 +16,7 @@ Each API Function needs to be documented according to the |project_name|
 
 For that each class method and function in the code base must include a
 docstring explaining its usage and purpose as per the example listed below
-(taken from the riab.py setupI18n method)::
+::
 
         """Setup internationalisation for the plugin.
 
@@ -24,7 +24,7 @@ docstring explaining its usage and purpose as per the example listed below
         and then see if we can get a valid translation file
         for whatever locale is effectively being used.
 
-        :params preferred_locale: Override any other way of determining locale.
+        :param preferred_locale: Override any other way of determining locale.
         :type preferred_local: str
         """
 
@@ -40,19 +40,21 @@ Where multiple inputs or outputs are used, a blank line should separate them.
 In order for a new module's documentation to appear in the API docs, the
 following steps are required:
 
+.. note:: The steps below are automated using the
+   :file:`scripts/create_api_docs.py` file available in the inasafe-doc repo.
+
+This manual steps are only here for historical purposes,
+everything is done by a script in the documentation repository now.
+
 * Create a new file in :file:`docs/source/api-docs/<package_name>`
-  named after the module. For example, for the gui/riab.py module we would
-  create :file:`docs/source/api-docs/gui/riab.rst` (note the .rst extension).
-  See below for an example of its contents
+  named after the module.
+  For example, for the gui/riab.py module we would create
+  :file:`docs/source/api-docs/gui/riab.rst` (note the .rst extension).
+  See below for an example of its contents.
 * Add the new file to the API docs master index
   (:file:`docs/source/api-docs/index.rst`).
   The .rst extension is not needed or desired when adding to the index list.
-* Regenerate the documentation using the :command:`make docs` command from
-  the top level directory in the source tree.
-* Add the new .rst file and generated html files to the revision control system.
-
-.. note:: The above steps are automated using the
-    :file:`scripts/gen_rst_script.py` file available in the inasafe-doc repo.
+* Add the new .rst file to the revision control system.
 
 An example of the contents of a module's API .rst if provided below::
 
@@ -73,10 +75,8 @@ A couple of things should be noted here:
 * The **members** directive instructs autodocs to enumerate all classes and
   functions in that module.
 
-
 Once the new document has been added and the documentation generated, you
 should see it appear in the API section of the |project_name| documentation.
-
 
 .. _documenting-new-features-howto-label:
 
@@ -88,8 +88,9 @@ available under the :file:`user-docs` subfolder of the sphinx sources tree.
 
 For example, when the keywords editor dialog feature was introduced, we created
 a new sphinx document :file:`docs/sources/user-docs/dock.rst` which
-documents this new feature. Additionally, the help button is set to launch
-the help dialog in the context of the new help document e.g.::
+documents this new feature.
+Additionally, the help button is set to launch the help dialog in the context
+of the new help document e.g.::
 
     from safe_qgis.utilities.help import show_context_help
 
@@ -98,7 +99,6 @@ the help dialog in the context of the new help document e.g.::
         show_context_help(context='dock')
 
 Where the 'dock' parameter indicates the user-docs/\*.rst document that
-should be opened when the help button is clicked. The general style and
-approach used in existing documentation should inform your documentation
-process so that all the documentation is consistent.
-
+should be opened when the help button is clicked.
+The general style and approach used in existing documentation should inform
+your documentation process so that all the documentation is consistent.
