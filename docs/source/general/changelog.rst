@@ -8,10 +8,25 @@ Changelog for version |release|
 
 * Changes from a user point of view:
 
-  * Users are able to select their own hazard and exposure attribute
-  * Develop simple wizards to walk new users through the software
+  * Users are able to select their own hazard and exposure attribute.
+  * Simple wizards to walk new users through the software.
   * Power users are able to configure their own action checklist and
-    "minimum needs"
+    "minimum needs".
+  * Report view in your web browser:
+    If you find the dock panel too small to show all the report details,
+    or if you want to open it in your browser to quickly print the tabular
+    report, you can now do so by right clicking on the report area of the
+    InaSAFE dock and choose Open in web browser.
+  * Custom logo selection:
+    As well as the new report template capabilities, you can now also set your
+    organisation logo in the InaSAFE options dialog.
+  * Template based reports:
+    This new feature means that you can now place your own logos in the
+    report and customise the arrangement of the various report elements on
+    the page.
+  * Options dialog overhaul:
+    We have overhauled the options dialog to make it easier to navigate and
+    hide away advanced options into their own panel.
 
 * New Functionality in |project_name|:
 
@@ -21,9 +36,22 @@ Changelog for version |release|
   * Multiple Hazard Analysis
   * Damage and Loss Assessment (DALA)
   * Percentage of affected area by aggregation
+  * Polygon flood impact on roads impact function added
+  * Impact merge tool:
+    This tool will allow you to merge the output from two impact assessments
+    covering the same geographic extent and aggregated by the same areas.
+  * OSM Roads downloader:
+    In InaSAFE 1.2 we introduced the new OSM downloader tool for buildings
+    data. Beside a lot of improvements now roads can be downloaded too and at
+    the same time the correct keywords will be assigned to the data.
 
 * Changes in the code:
 
+  * Port to QGIS 2.0: we have ported our code base to work with the new
+    version of QGIS. Please note: QGIS 1.x releases will no longer be supported
+    in this and future releases on InaSAFE (starting from 2.0).
+  * Support for PostGIS layers: You can now use PostGIS vector layers as
+    input data for running impact functions.
   * Splitting Test Suite
   * Reviewing Impact Functions
   * Automatically run test on pull request
@@ -32,10 +60,14 @@ Changelog for version |release|
 * Visible changes in Documentation and Webpage:
 
   * Update User and Developer Documentation
-  * Update Training Materials
+  * Update Training Materials: The tutorials section has been overhauled.
   * Track where InaSAFE events are occurring
   * News Articles
   * Translation into other languages
+  * New User Map:
+    We have added a community map to our web site. Please take a moment to
+    register yourself there as an InaSAFE User, Developer or Trainer!
+    See http://users.inasafe.org
 
 Changelog for version 1.2.0
 ---------------------------
