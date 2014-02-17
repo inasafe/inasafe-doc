@@ -5,6 +5,7 @@ Package::safe_qgis.utilities
    :maxdepth: 2
 
    utilities/clipper
+   utilities/defaults
    utilities/help
    utilities/custom_logging
    utilities/impact_calculator_thread

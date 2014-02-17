@@ -3,17 +3,14 @@
 {# Sphinx also brings it's own jquery, but this one is too old for bootstrap.
 TODO get rid of the one from Sphinx #}
 {# we copied the bootstrap/jquery.js to the _static directory to override the
-sphinx jquery. The native
-jquery.js from sphinx is a 1.4 version, while bootstrap uses 1.8 version
-and two versions together clash (besides the bootstrap stuff, also the
+sphinx jquery.
+The native jquery.js from sphinx is a 1.4 version, while bootstrap uses 1.8
+version and two versions together clash (besides the bootstrap stuff, also the
 sphinx search stuff)  #}
 
 {#% set script_files = script_files + ['_static/bootstrap/js/jquery.js'] %#}
 {% set script_files = script_files + ['_static/bootstrap/js/bootstrap.js'] %}
 {% set script_files = script_files + ['_static/jQuery.equalHeights.js'] %}
-
-
-
 
 {% set css_files = css_files + ['_static/bootstrap/css/bootstrap.min.css'] %}
 <!-- theme.css BEFORE bootstrap-responsive -->
@@ -72,6 +69,23 @@ TODO: remove this, or make this obsolete ?? #}
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
 {# Fav and touch icons #}
 <link rel="shortcut icon" href="{{ pathto('_static/img/favicon.ico', 1)}}">
 <link rel="apple-touch-icon-precomposed" sizes="144x144"
@@ -84,7 +98,9 @@ TODO: remove this, or make this obsolete ?? #}
       href="{{ pathto('_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png', 1)}}">
 {% endblock %}
 {# overriding relbar1: NO relbar above the content we make it manually below #}
-{% block relbar1 %}{% endblock %}
+{% block relbar1 %}
+{% endblock %}
+
 {% block content %}
     {# bootstrap stuff from fluid.html example #}
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -164,7 +180,8 @@ TODO: remove this, or make this obsolete ?? #}
             This document is licensed under a
             <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a><br>
             <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
-            Copyright 2013, BNPB/Australian Government/World Bank.
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
         </div>
     </div>
 {% endblock %}{# content block end #}
