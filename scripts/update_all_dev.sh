@@ -7,3 +7,4 @@ tx pull
 ./scripts/pre_translate.sh
 ./scripts/create_transifex_resources.sh
 ./scripts/post_translate.sh
+tx push -s 

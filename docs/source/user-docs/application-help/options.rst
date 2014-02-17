@@ -18,6 +18,12 @@ toolbar's options icon (as shown below) or by doing
 
 Then this dialog will appear:
 
+As you can see this dialog is divided into three tabs namely:
+
+* :ref:`basic_options`
+* :ref:`template_options`
+* :ref:`advanced`
+
 .. figure:: /static/user-docs/inasafe-options-dialog.*
    :scale: 75 %
    :align: center
@@ -26,12 +32,6 @@ Then this dialog will appear:
    Options dialog
 
 The following options are available on the :guilabel:`Options Dialog`:
-
-As you can see this dialog is divided into three tabs namely:
-
-* Basic Options
-* Template Options
-* Advanced
 
 .. _basic_options:
 
