@@ -4,8 +4,8 @@ Options
 =======
 
 The |project_name| plugin provides an options dialog which allows you to
-define various options relating to how |project_name| will behave. The
-options dialog can be launched by clicking on the |project_name| plugin
+define various options relating to how |project_name| will behave.
+The options dialog can be launched by clicking on the |project_name| plugin
 toolbar's options icon (as shown below) or by doing
 :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`.
 
@@ -16,7 +16,7 @@ toolbar's options icon (as shown below) or by doing
 
    Options icon
 
-Then the dialog will appear, looking something like this:
+Then this dialog will appear:
 
 .. figure:: /static/user-docs/inasafe-options-dialog.*
    :scale: 75 %
@@ -25,85 +25,117 @@ Then the dialog will appear, looking something like this:
 
    Options dialog
 
-.. note::
-
-   You can click on the :guilabel:`Help` button at any time and it
-   will open the help documentation browser to this page.
-
 The following options are available on the :guilabel:`Options Dialog`:
 
+As you can see this dialog is divided into three tabs namely:
+
+* Basic Options
+* Template Options
+* Advanced
+
+.. _basic_options:
+
+Basic Options
+-------------
 * :guilabel:`Only show visible layers in the InaSAFE dock` : This option will
-  determine whether **all** (when unchecked) hazard and impact layers should
-  be listed in the |project_name| dock's combo boxes. or (when checked) only
-  visible layers.
+  determine whether **all** hazard and impact layers should be listed in the
+  |project_name| dock's combo boxes or (when checked) only visible layers.
 * :guilabel:`Set QGIS layer name from 'title' in keywords` : This option will
-  (when enabled) cause QGIS to name layers in the :guilabel:`Layers tree`
-  using the `title` keyword in the layer's keywords file. If the layer
-  has no 'title' in its keywords, or it has no keywords at all, the normal
-  QGIS behaviour for naming layers will apply.
+  cause QGIS to name layers in the :guilabel:`Layers tree` using the `title`
+  keyword in the layer's keywords file.
+  If the layer has no 'title' in its keywords, or it has no keywords at all,
+  the normal QGIS behaviour for naming layers will apply.
 * :guilabel:`Zoom to impact layer on scenario estimate completion` : This
   option will cause the map view to zoom in/out in order to completely contain
   the |project_name| impact scenario map output when an analysis completes.
 * :guilabel:`Hide exposure layer on scenario estimate completion` : This
   option will cause QGIS to turn off the exposure layer used when
-  |project_name| completes the current analysis. You can re-enable the layer
-  visibility again by checking its checkbox in the legend.
-* :guilabel:`Clip datasets to visible extent before analysis` : This
-  option will cause QGIS to clip hazard and exposure layers to the currently
-  visible extent on the map canvas.
+  |project_name| completes the current analysis.
+  You can re-enable the layer visibility again by checking its checkbox in
+  the legend.
+* :guilabel:`Clip datasets to visible extent before analysis` : This option
+  will cause QGIS to clip hazard and exposure layers to the currently visible
+  extent on the map canvas.
 * :guilabel:`When clipping, also clip features (e.g. will clip polygon
-  smaller)`: This option will any polygons that extend beyond the analysis
-  extents to be clipped so that they are contained by the analysis extents.
+  smaller)`:
+  This option will any polygons that extend beyond the analysis extents to be
+  clipped so that they are contained by the analysis extents.
   For example if you have a flood hazard polygon layer that extends far
   beyond your area of interest, the flood polygons will be reduced so that
-  only the part inside of your area of interested is retained. This can
-  speed up processing time somewhat.
-* :guilabel:`Help to improve InaSAFE by submitting errors to a remote server` :
-  This option, when enabled, will submit diagnostic information back to an
-  |project_name| project server in the event of any error taking place that
-  we are able to trap. The information provided is useful to the
-  |project_name| team to improve the robustness of the software we produce
-  and to spot trends in issues people encounter. Please note the warning text
-  below this option which is included here in full:
-
-.. note::
-   The above setting requires a QGIS restart to disable/enable. Error
-   messages and diagnostic information will be posted to
-   http://sentry.linfiniti.com/inasafe-desktop/. Some institutions may not
-   allow you to enable this feature - check with your network administrator
-   if unsure. Although the data is submitted anonymously,
-   the information contained in tracebacks may contain file system paths
-   which reveal your identity or other information from your system.
-
+  only the part inside of your area of interested is retained.
+  This can speed up processing time somewhat.
 * :guilabel:`Show intermediate layers generated by postprocessing` : This
   option will cause QGIS to show the intermediate files generated by the
   postprocessing steps in the map canvas.
-* :guilabel:`Default female ratio` : This is the default female to total
+* :guilabel:`Female ratio default value` : This is the default female to total
   population ratio used por generating Gender breakdowns
-* :guilabel:`Keyword cache for remote datasources` : This option is used to
-  determine where keywords are stored for datasets where it is not possible
-  to write them into a .keywords file. See :ref:`keywords_system` in the
-  |project_name| User-Manual for more information on the keywords system.
+
+.. _template_options:
+
+Template Options
+----------------
 * :guilabel:`Organisation logo`: This option is used to determine
   a custom logo that will be used as organisation logo in the pdf of your
-  impact scenario project. See :ref:`toolbar_reports` in the |project_name|
-  User-Manual for more information on the reports.
-* :guilabel:`Report template`: This option is used to determine a directory
-  with custom templates. Templates from this directory will be available for
-  usage when generating report on your impact scenario project. See
-  :ref:`toolbar_reports` in the |project_name| User-Manual for more information
-  on the reports.
-* :guilabel:`Disclaimer text`: This option is used to change default disclaimer
-  text, printed in reports. Just enter your own text and it will be used
-  instead of the default one. See :ref:`toolbar_reports` in the |project_name|
-  User-Manual for more information on the reports.
-* :guilabel:`Enable developer mode`. With this option enabled,
+  impact scenario project.
+  See :ref:`toolbar_reports` in the |project_name| User-Manual for more
+  information on the reports.
+* :guilabel:`Report templates directory`: This option is used to determine a
+  directory with custom templates.
+  Templates from this directory will be available for usage when generating
+  report on your impact scenario project.
+  See :ref:`toolbar_reports` in the |project_name| User-Manual for more
+  information on the reports.
+* :guilabel:`Organisation disclaimer text`: This option is used to change
+  default disclaimer text, printed in reports.
+  Just enter your own text and it will be used instead of the default one.
+  See :ref:`toolbar_reports` in the |project_name| User-Manual for more
+  information on the reports.
+
+.. _advanced:
+
+Advanced
+--------
+
+* :guilabel:`Keyword cache for remote datasources` : This option is used to
+  determine where keywords are stored for datasets where it is not possible
+  to write them into a .keywords file.
+  See :ref:`keywords_system` in the |project_name| User-Manual for more
+  information on the keywords system.
+* :guilabel:`Help to improve InaSAFE by submitting errors to a remote server` :
+  This option, when enabled, will submit diagnostic information back to an
+  |project_name| project server in the event of any error taking place that
+  we are able to trap.
+  The information provided is useful to the |project_name| team to improve
+  the robustness of the software we produce and to spot trends in issues
+  people encounter.
+  Please note the warning text below this option which is included here in
+  full:
+
+.. note::
+   The above setting requires a QGIS restart to disable/enable.
+   Error messages and diagnostic information will be posted to
+   http://sentry.linfiniti.com/inasafe-desktop/ .
+   Some institutions may not allow you to enable this feature - check with
+   your network administrator if unsure.
+   Although the data is submitted anonymously, the information contained in
+   tracebacks may contain file system paths which reveal your identity or
+   other information from your system.
+
+* :guilabel:`Enable developer mode` :  With this option enabled,
   you can right click on the report area and use the webkit debug tools to
-  debug the output. **This option is intended for advanced users only.**
+  debug the output.
+  **This option is intended for advanced users only.**
+* :guilabel:`Use QGIS zonal statistics` : With this button you can toggle
+  between using QGIS internal zonal statistics or the one that comes with
+  |project_name|
 
+.. note::
+   You can click on the :guilabel:`Help` button at any time and it
+   will open the help documentation browser to this page.
 
-.. note:: Pressing :guilabel:`Cancel` at any time will close the options
-   dialog and any changes made will **not** be applied.
+.. note::
+   Pressing :guilabel:`Cancel` at any time will close the options dialog and
+   any changes made will **not** be applied.
    Pressing :guilabel:`OK` at any time will close the options dialog and any
    changes made **will** be applied immediately.
 
