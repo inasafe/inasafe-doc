@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-13 11:59+0700\n"
+"POT-Creation-Date: 2014-02-17 11:59+0700\n"
 "PO-Revision-Date: 2014-02-12 07:31+0000\n"
 "Last-Translator: yantisa <yantisa@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
@@ -180,156 +180,28 @@ msgstr ""
 "Untuk data vektor gunakan ogr2ogr. Sebagai contoh dari TM-3 zona 48.2 ::"
 
 # 22d1b2245b09498e9a7a21fbf555d434
-#: ../../source/general/faq.rst:72
-msgid "**How do I get Open Street Map building data?**"
+#: ../../source/general/faq.rst:73
+#, fuzzy
+msgid "**How do I get OpenStreetMap building data?**"
 msgstr "**Bagaimana saya mendapatkan data bangunan Open Street Map?**"
 
-# df4e2aee1b35447299b276dfaa7478f7
-#: ../../source/general/faq.rst:74
+# 2047e3d9044240f6b2e9671d0eba92c0
+#: ../../source/general/faq.rst:75
 msgid ""
-"For Indonesia, you can download latest collections at `data.kompetisiosm.org "
-"<http://data.kompetisiosm.org>`_. or you can add our Open Street Map "
-"building PostGIS mirror to |project_name|:"
+"This tool will fetch building ('structure') and highway ('road') data from "
+"the OpenStreetMap project for you. For more information see :ref:"
+"`openstreetmap_downloader` section"
 msgstr ""
-"Untuk Indonesia, Anda mendownload kumpulan terbaru di `data.kompetisiosm.org "
-"<http://data.kompetisiosm.org>`_. atau Anda dapat menambahkan bangunan "
-"OpenStreetMap melalui mirror PostGIS |project_name|:"
-
-# c1e65672ca08470e8d6d6715bf04b86c
-#: ../../source/general/faq.rst:78
-msgid ""
-"Add PostGIS layer with host=203.77.224.77, database=osm, username=aifdr, "
-"port 5432, SSL mode=disable"
-msgstr ""
-"Tambahkan sebuah layer PostGIS dengan host=203.77.224.77, database=osm, "
-"username=aifdr, port 5432, SSL mode=disable"
-
-# 81f123eb046e44e598aac7fd8ec6da53
-#: ../../source/general/faq.rst:80
-msgid "Select view named vw_planet_osm_polygon"
-msgstr "Pilih nama tampilan vw_planet_osm_polygon"
-
-# 7cf26a1757cb40fc8f48ecadf988926c
-#: ../../source/general/faq.rst:81
-msgid ""
-"Build query: upper(geometrytype(\"way\")) IN ('POLYGON', 'MULTIPOLYGON') AND "
-"BUILDING != ''"
-msgstr ""
-"Bangun query: upper(geometrytype(\"way\")) IN ('POLYGON', 'MULTIPOLYGON') "
-"AND BUILDING != ''"
-
-# cd5a47102d1f43b9b073d515b1ae366b
-#: ../../source/general/faq.rst:103
-msgid "Another way, you can export osm data from HOT Exports:"
-msgstr ""
-"Atau dengan cara lain, Anda dapat mengekspor data osm dari HOT Exports:"
-
-# e3aaf8c8f957464eb8db241edd47fca4
-#: ../../source/general/faq.rst:85
-msgid "Go to `Preset JOSM <http://josm.openstreetmap.de/wiki/Presets>`_."
-msgstr ""
-"Pergi menuju `Preset JOSM <http://josm.openstreetmap.de/wiki/Presets>`_."
-
-# 43bedd5725e6446a9d4ffe7d987af680
-#: ../../source/general/faq.rst:86
-msgid "Find and download `Building` preset created by Kate Chapman and save it"
-msgstr ""
-"Cari dan download preset `Building` yang dibuat oleh Kate Chapman dan simpan"
-
-# a4957b7dab3647b88b10f2aeaee5eff3
-#: ../../source/general/faq.rst:87
-msgid ""
-"Go to HOT Exports website `www.hot-export.geofabrik.de <http://hot-export."
-"geofabrik.de>`_."
-msgstr ""
-"Buka website HOT Exports `www.hot-export.geofabrik.de <http://hot-export."
-"geofabrik.de>`_."
-
-# 8be2322e2c5a40279edd9d69291c3c61
-#: ../../source/general/faq.rst:89
-msgid "Go to `New Job` menu in the upper right of the page"
-msgstr "Klik menu `New Job` pada bagian kanan atas di halaman web"
-
-# 3fefbc1f443c48a3b7a2f472ed1d7cc4
-#: ../../source/general/faq.rst:90
-msgid ""
-"Select region, currently only 3 regions are supported by HOT Export (Haiti, "
-"Indonesia, Africa)"
-msgstr ""
-"Pilih region, saat ini hanya 3 region yang didukung oleh HOT Export (Haiti, "
-"Indonesia, Africa)"
-
-# bc9497173ad84cc78f4e3174d8ff74c0
-#: ../../source/general/faq.rst:92
-msgid "Fill `Job Name` and `Description`"
-msgstr "Isi `Job Name` dan `Decription`"
-
-# 3069dd9f943d4baca5b455949342efb8
-#: ../../source/general/faq.rst:93
-msgid "Select area that you want to export by zooming or panning the map"
-msgstr ""
-"Pilih area yang ingin anda export dengan memperbesar atau menggeser peta"
-
-# 022523abb72d445a8584de24febce4ad
-#: ../../source/general/faq.rst:94
-msgid ""
-"You can choose smaller area by clicking `Select Smaller Area` and creating "
-"rectangle in the map or filling min/max longitude/latitude value for it"
-msgstr ""
-"Anda dapat memilih area yang lebih kecil dengan meng-klik `Select Smaller "
-"Area` dan membuat sebuah persegi pada peta atau mengisi nilai minimum/"
-"maksimum garis bujur/lintang "
-
-# c0cbea4db67f44c7a758c5ba8c5f27cf
-#: ../../source/general/faq.rst:96
-msgid "Click `Save` if your map is ready"
-msgstr "Klik `Save` jika peta Anda sudah siap"
-
-# 42af204ec2e349e4ad21fbf6dabe8408
-#: ../../source/general/faq.rst:97
-msgid ""
-"Upload JOSM Preset File which have been downloaded before, and click `Save`"
-msgstr ""
-"Upload file preset JOSM yang telah didownload sebelumnya, dan klik `Save`"
-
-# d84ef4885cf2483192d2cc15426eddc9
-#: ../../source/general/faq.rst:98
-msgid ""
-"Your job is created and you have to wait until it finish. It'll take some "
-"minutes if your map is big one"
-msgstr ""
-"Pekerjaan Anda telah dibuat dan Anda harus menunggu hingga selesai. Ini akan "
-"memakan waktu beberapa menit jika peta Anda berukuran besar"
-
-# 6d57a28f13e64dd2bea703cb0ae694a6
-#: ../../source/general/faq.rst:100
-msgid ""
-"When the job is finished, there will be a table contains files that can be "
-"downloaded"
-msgstr ""
-"Ketika pekerjaan selesai, akan terdapat sebuah tabel yang berisi file yang "
-"dapat didownload"
-
-# f1491b749d06442db094750bf4b8a2a3
-#: ../../source/general/faq.rst:102
-msgid "Download the `ESRI Shapefile (zipped)`"
-msgstr "Download `ESRI Shapefile (zipped)`"
-
-# e457f81c4a59453c8fad1dfba056dfba
-#: ../../source/general/faq.rst:103
-msgid "Extract it on your computer, and the data will be ready to use"
-msgstr ""
-"Ekstrak file pada komputer Anda, dan data tersebut akan siap untuk digunakan"
 
 # 81fb798c8dc84f97a47fd8bbbb4b1ae8
-#: ../../source/general/faq.rst:105
+#: ../../source/general/faq.rst:79
 msgid "**How do I take screen capture e.g. for use in a presentation?**"
 msgstr ""
 "**Bagaimana saya dapat menangkap gambar layar misalnya untuk digunakan pada "
 "sebuah presentasi?**"
 
 # 349a10503cc249c9a96d37695a0b559c
-#: ../../source/general/faq.rst:107
+#: ../../source/general/faq.rst:81
 msgid ""
 "On Ubuntu, get the packages gtk-recordmydesktop and mencoder Record using "
 "recordmydesktop (start and stop icon in the top bar) Convert to other "
@@ -340,19 +212,19 @@ msgstr ""
 "Konversikan ke format lain dengan menggunakan mencoder, contoh ::"
 
 # 47168bceb86c4f3ca9f1c31526490827
-#: ../../source/general/faq.rst:115
+#: ../../source/general/faq.rst:89
 msgid "or"
 msgstr "atau"
 
 # bb345bf1ed6948f6ac98218aa5e1b050
-#: ../../source/general/faq.rst:122
+#: ../../source/general/faq.rst:96
 msgid "**How do I convert a vector hazard layer to a raster layer?**"
 msgstr ""
 "**Bagaimana saya mengkonversikan sebuah layer vektor ancaman menjadi sebuah "
 "layer raster?**"
 
 # b2d1d7137d684d999eb7688e655647ae
-#: ../../source/general/faq.rst:124
+#: ../../source/general/faq.rst:98
 msgid ""
 "For vector to raster conversion, use gdal_rasterize utility, for example ::"
 msgstr ""
@@ -360,12 +232,12 @@ msgstr ""
 "contoh ::"
 
 # d54c53e5c5d94c9591c2c36897994aa7
-#: ../../source/general/faq.rst:130
+#: ../../source/general/faq.rst:104
 msgid "Why does the plugin not show up in my QGIS Plugin Manager?"
 msgstr "Mengapa plugin tidak muncul pada QGIS Plugin Manager saya?"
 
 # dc7e2906783c400c88cc7b7087d527cb
-#: ../../source/general/faq.rst:132
+#: ../../source/general/faq.rst:106
 msgid ""
 "One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not "
 "get the new plugin repo added to your repo list. To fix this you can do:"
@@ -375,37 +247,37 @@ msgstr ""
 "repo. Untuk memperbaikinya, Anda dapat melakukan hal berikut:"
 
 # 6bf6f906321b4212a186dcc570644801
-#: ../../source/general/faq.rst:135
+#: ../../source/general/faq.rst:109
 msgid "open QGIS"
 msgstr "buka QGIS"
 
 # d5267786da864ed18386491ee98863e5
-#: ../../source/general/faq.rst:136
+#: ../../source/general/faq.rst:110
 msgid "Go :menuselection:`Plugins --> Fetch Python Plugins`"
 msgstr "Buka :menuselection:`Plugins --> Fetch Python Plugins`"
 
 # f4233e40ccbd435dbbf6d285b78ec1e4
-#: ../../source/general/faq.rst:137
+#: ../../source/general/faq.rst:111
 msgid "Click :guilabel:`Repositories` tab"
 msgstr "Klik tab :guilabel:`Repositories`"
 
 # ef99bf83e71d4a99a66977f21c4a12a6
-#: ../../source/general/faq.rst:138
+#: ../../source/general/faq.rst:112
 msgid "Click :guilabel:`add`"
 msgstr "Klik :guilabel:`add`"
 
 # afc31d487fc14449811bd1df100d3efe
-#: ../../source/general/faq.rst:139
+#: ../../source/general/faq.rst:113
 msgid ":guilabel:`Name`: Official QGIS Repository"
 msgstr ":guilabel:`Name`: Official QGIS Repository"
 
 # 0505cdd3a46b4f69a66dbd3d1ca4ce8e
-#: ../../source/general/faq.rst:140
+#: ../../source/general/faq.rst:114
 msgid ":guilabel:`Url`: http://plugins.qgis.org/plugins/plugins.xml"
 msgstr ":guilabel:`Url`: http://plugins.qgis.org/plugins/plugins.xml"
 
 # cbab7700bd384775bbce4e6a9eab2530
-#: ../../source/general/faq.rst:141
+#: ../../source/general/faq.rst:115
 msgid ""
 "Save it and the plugin repo list should update. If it doesn't, close and "
 "open QGIS to force an update."
@@ -414,7 +286,7 @@ msgstr ""
 "buka QGIS untuk memaksa proses update."
 
 # 748f80ce62d149dc807ed2dca56a0357
-#: ../../source/general/faq.rst:143
+#: ../../source/general/faq.rst:117
 msgid ""
 "In the python plugin manager main tab now you should find |project_name| "
 "available"
@@ -423,12 +295,12 @@ msgstr ""
 "project_name| yang tersedia"
 
 # fb757036da774f3f892c177413a73ed4
-#: ../../source/general/faq.rst:146
+#: ../../source/general/faq.rst:120
 msgid "**How do I fix KeywordDbError on Windows?**"
 msgstr "**Bagaimana saya memperbaiki KeywordDbError di Windows?**"
 
 # e71dfc6969f44beba181c55d530e0d2c
-#: ../../source/general/faq.rst:148
+#: ../../source/general/faq.rst:122
 msgid ""
 "It’s an issue related to permission issue. Normally, it occurs when the "
 "keyword.db is not writable by current user. The thing that you have to do is "
@@ -440,7 +312,7 @@ msgstr ""
 "sebagai Administrator atau meng-instal ulang QGIS sebagai Administrator."
 
 # 24233f50227b4602bb139cde75221fea
-#: ../../source/general/faq.rst:153
+#: ../../source/general/faq.rst:127
 msgid ""
 "Another way to solve it is deleting the registry of InaSAFE. You can do it "
 "by opening :guilabel:`regedit` (Registry Editor). To open regedit, you need "
@@ -453,12 +325,12 @@ msgstr ""
 "Menu` (karena biasanya tidak muncul pada Menu Start)."
 
 # 6bcd297b624c402a8a60af9379c01ac3
-#: ../../source/general/faq.rst:158
+#: ../../source/general/faq.rst:132
 msgid "Open regedit."
 msgstr "Buka regedit."
 
 # d6e10c1b21ec4808aae4b8716ce6187c
-#: ../../source/general/faq.rst:160
+#: ../../source/general/faq.rst:134
 msgid ""
 "Find inasafe registry under :menuselection:`My Computer--> Software --> QGIS "
 "--> QGIS --> PythonPlugins`. After that, right click on the inasafe, and "
@@ -471,7 +343,7 @@ msgstr ""
 "melihat apakah cara ini berhasil."
 
 # 176ebced46d848c7a9ae600892070e7c
-#: ../../source/general/faq.rst:164
+#: ../../source/general/faq.rst:138
 msgid ""
 "Please see `InaSAFE issue #459 <https://github.com/AIFDR/inasafe/"
 "issues/459>`_ , `InaSAFE issue #564 <https://github.com/AIFDR/inasafe/"
@@ -482,3 +354,126 @@ msgstr ""
 "issues/459>`_ , `masalah InaSAFE #564 <https://github.com/AIFDR/inasafe/"
 "issues/564>`_, dan `masalah InaSAFE #569 <https://github.com/AIFDR/inasafe/"
 "issues/569>`_ untuk informasi lebih lanjut."
+
+# df4e2aee1b35447299b276dfaa7478f7
+#~ msgid ""
+#~ "For Indonesia, you can download latest collections at `data.kompetisiosm."
+#~ "org <http://data.kompetisiosm.org>`_. or you can add our Open Street Map "
+#~ "building PostGIS mirror to |project_name|:"
+#~ msgstr ""
+#~ "Untuk Indonesia, Anda mendownload kumpulan terbaru di `data.kompetisiosm."
+#~ "org <http://data.kompetisiosm.org>`_. atau Anda dapat menambahkan "
+#~ "bangunan OpenStreetMap melalui mirror PostGIS |project_name|:"
+
+# c1e65672ca08470e8d6d6715bf04b86c
+#~ msgid ""
+#~ "Add PostGIS layer with host=203.77.224.77, database=osm, username=aifdr, "
+#~ "port 5432, SSL mode=disable"
+#~ msgstr ""
+#~ "Tambahkan sebuah layer PostGIS dengan host=203.77.224.77, database=osm, "
+#~ "username=aifdr, port 5432, SSL mode=disable"
+
+# 81f123eb046e44e598aac7fd8ec6da53
+#~ msgid "Select view named vw_planet_osm_polygon"
+#~ msgstr "Pilih nama tampilan vw_planet_osm_polygon"
+
+# 7cf26a1757cb40fc8f48ecadf988926c
+#~ msgid ""
+#~ "Build query: upper(geometrytype(\"way\")) IN ('POLYGON', 'MULTIPOLYGON') "
+#~ "AND BUILDING != ''"
+#~ msgstr ""
+#~ "Bangun query: upper(geometrytype(\"way\")) IN ('POLYGON', 'MULTIPOLYGON') "
+#~ "AND BUILDING != ''"
+
+# cd5a47102d1f43b9b073d515b1ae366b
+#~ msgid "Another way, you can export osm data from HOT Exports:"
+#~ msgstr ""
+#~ "Atau dengan cara lain, Anda dapat mengekspor data osm dari HOT Exports:"
+
+# e3aaf8c8f957464eb8db241edd47fca4
+#~ msgid "Go to `Preset JOSM <http://josm.openstreetmap.de/wiki/Presets>`_."
+#~ msgstr ""
+#~ "Pergi menuju `Preset JOSM <http://josm.openstreetmap.de/wiki/Presets>`_."
+
+# 43bedd5725e6446a9d4ffe7d987af680
+#~ msgid ""
+#~ "Find and download `Building` preset created by Kate Chapman and save it"
+#~ msgstr ""
+#~ "Cari dan download preset `Building` yang dibuat oleh Kate Chapman dan "
+#~ "simpan"
+
+# a4957b7dab3647b88b10f2aeaee5eff3
+#~ msgid ""
+#~ "Go to HOT Exports website `www.hot-export.geofabrik.de <http://hot-export."
+#~ "geofabrik.de>`_."
+#~ msgstr ""
+#~ "Buka website HOT Exports `www.hot-export.geofabrik.de <http://hot-export."
+#~ "geofabrik.de>`_."
+
+# 8be2322e2c5a40279edd9d69291c3c61
+#~ msgid "Go to `New Job` menu in the upper right of the page"
+#~ msgstr "Klik menu `New Job` pada bagian kanan atas di halaman web"
+
+# 3fefbc1f443c48a3b7a2f472ed1d7cc4
+#~ msgid ""
+#~ "Select region, currently only 3 regions are supported by HOT Export "
+#~ "(Haiti, Indonesia, Africa)"
+#~ msgstr ""
+#~ "Pilih region, saat ini hanya 3 region yang didukung oleh HOT Export "
+#~ "(Haiti, Indonesia, Africa)"
+
+# bc9497173ad84cc78f4e3174d8ff74c0
+#~ msgid "Fill `Job Name` and `Description`"
+#~ msgstr "Isi `Job Name` dan `Decription`"
+
+# 3069dd9f943d4baca5b455949342efb8
+#~ msgid "Select area that you want to export by zooming or panning the map"
+#~ msgstr ""
+#~ "Pilih area yang ingin anda export dengan memperbesar atau menggeser peta"
+
+# 022523abb72d445a8584de24febce4ad
+#~ msgid ""
+#~ "You can choose smaller area by clicking `Select Smaller Area` and "
+#~ "creating rectangle in the map or filling min/max longitude/latitude value "
+#~ "for it"
+#~ msgstr ""
+#~ "Anda dapat memilih area yang lebih kecil dengan meng-klik `Select Smaller "
+#~ "Area` dan membuat sebuah persegi pada peta atau mengisi nilai minimum/"
+#~ "maksimum garis bujur/lintang "
+
+# c0cbea4db67f44c7a758c5ba8c5f27cf
+#~ msgid "Click `Save` if your map is ready"
+#~ msgstr "Klik `Save` jika peta Anda sudah siap"
+
+# 42af204ec2e349e4ad21fbf6dabe8408
+#~ msgid ""
+#~ "Upload JOSM Preset File which have been downloaded before, and click "
+#~ "`Save`"
+#~ msgstr ""
+#~ "Upload file preset JOSM yang telah didownload sebelumnya, dan klik `Save`"
+
+# d84ef4885cf2483192d2cc15426eddc9
+#~ msgid ""
+#~ "Your job is created and you have to wait until it finish. It'll take some "
+#~ "minutes if your map is big one"
+#~ msgstr ""
+#~ "Pekerjaan Anda telah dibuat dan Anda harus menunggu hingga selesai. Ini "
+#~ "akan memakan waktu beberapa menit jika peta Anda berukuran besar"
+
+# 6d57a28f13e64dd2bea703cb0ae694a6
+#~ msgid ""
+#~ "When the job is finished, there will be a table contains files that can "
+#~ "be downloaded"
+#~ msgstr ""
+#~ "Ketika pekerjaan selesai, akan terdapat sebuah tabel yang berisi file "
+#~ "yang dapat didownload"
+
+# f1491b749d06442db094750bf4b8a2a3
+#~ msgid "Download the `ESRI Shapefile (zipped)`"
+#~ msgstr "Download `ESRI Shapefile (zipped)`"
+
+# e457f81c4a59453c8fad1dfba056dfba
+#~ msgid "Extract it on your computer, and the data will be ready to use"
+#~ msgstr ""
+#~ "Ekstrak file pada komputer Anda, dan data tersebut akan siap untuk "
+#~ "digunakan"

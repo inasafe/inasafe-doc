@@ -5,8 +5,8 @@ Package::safe.common
    :maxdepth: 2
 
    common/interpolation
+   common/converter
    common/tables
-   common/qgis_interface
    common/interpolation1d
    common/dynamic_translations
    common/interpolation2d
@@ -17,5 +17,3 @@ Package::safe.common
    common/signals
    common/utilities
    common/numerics
-   common/shake_grid_converter
-   common/qgis_processing

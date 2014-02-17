@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-11 16:05\n"
+"POT-Creation-Date: 2014-02-17 11:59+0700\n"
 "PO-Revision-Date: 2013-10-30 09:20+0000\n"
 "Last-Translator: macho <werner.macho@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/inasafe/language/"
@@ -142,131 +142,26 @@ msgstr ""
 msgid "For vector data use ogr2ogr. For example from TM-3 zone 48.2 ::"
 msgstr ""
 
-# 3dbdc4aa52c84b178c760e73fa188eae
-#: ../../source/general/faq.rst:72
-msgid "**How do I get Open Street Map building data?**"
+# 16ae45d39d564de6a9c0c490877c5e2f
+#: ../../source/general/faq.rst:73
+msgid "**How do I get OpenStreetMap building data?**"
 msgstr ""
 
-# f955d1c0acd04091bb140c1df4712f43
-#: ../../source/general/faq.rst:74
+# 2047e3d9044240f6b2e9671d0eba92c0
+#: ../../source/general/faq.rst:75
 msgid ""
-"For Indonesia, you can download latest collections at `data.kompetisiosm.org "
-"<http://data.kompetisiosm.org>`_. or you can add our Open Street Map "
-"building PostGIS mirror to |project_name|:"
-msgstr ""
-
-# 012d4651b22843918cfa788720c9c9dc
-#: ../../source/general/faq.rst:78
-msgid ""
-"Add PostGIS layer with host=203.77.224.77, database=osm, username=aifdr, "
-"port 5432, SSL mode=disable"
-msgstr ""
-
-# 1c6c392acb054f468f427767156f25c6
-#: ../../source/general/faq.rst:80
-msgid "Select view named vw_planet_osm_polygon"
-msgstr ""
-
-# 6e67dc563a2c45e9a188ee15828e2cda
-#: ../../source/general/faq.rst:81
-msgid ""
-"Build query: upper(geometrytype(\"way\")) IN ('POLYGON', 'MULTIPOLYGON') AND "
-"BUILDING != ''"
-msgstr ""
-
-# 4b8fde610e0a4bc7a117beef69dd5be8
-#: ../../source/general/faq.rst:103
-msgid "Another way, you can export osm data from HOT Exports:"
-msgstr ""
-
-# 598d5f5d51e148c88d15d77bb9450caa
-#: ../../source/general/faq.rst:85
-msgid "Go to `Preset JOSM <http://josm.openstreetmap.de/wiki/Presets>`_."
-msgstr ""
-
-# cb998759daef433c8588606dd173ff5c
-#: ../../source/general/faq.rst:86
-msgid "Find and download `Building` preset created by Kate Chapman and save it"
-msgstr ""
-
-# cc27198e5046435a9776214da7679d80
-#: ../../source/general/faq.rst:87
-msgid ""
-"Go to HOT Exports website `www.hot-export.geofabrik.de <http://hot-export."
-"geofabrik.de>`_."
-msgstr ""
-
-# 89373e73f0224bac8641d377bc3ce4d3
-#: ../../source/general/faq.rst:89
-msgid "Go to `New Job` menu in the upper right of the page"
-msgstr ""
-
-# 904064241f404a1f95e239a9b6c04501
-#: ../../source/general/faq.rst:90
-msgid ""
-"Select region, currently only 3 regions are supported by HOT Export (Haiti, "
-"Indonesia, Africa)"
-msgstr ""
-
-# 0d3694478d9e41cb9ba7d9adb8796173
-#: ../../source/general/faq.rst:92
-msgid "Fill `Job Name` and `Description`"
-msgstr ""
-
-# edf2b6e8d6b44a2d918249b3463c0c4f
-#: ../../source/general/faq.rst:93
-msgid "Select area that you want to export by zooming or panning the map"
-msgstr ""
-
-# 83f37a1a146e427e9a89261bf0418768
-#: ../../source/general/faq.rst:94
-msgid ""
-"You can choose smaller area by clicking `Select Smaller Area` and creating "
-"rectangle in the map or filling min/max longitude/latitude value for it"
-msgstr ""
-
-# 3f5f89206d6f44e5a86e01ad7b7af5c3
-#: ../../source/general/faq.rst:96
-msgid "Click `Save` if your map is ready"
-msgstr ""
-
-# 8c48f39c3f5d4b32af914f1fedc1a6f7
-#: ../../source/general/faq.rst:97
-msgid ""
-"Upload JOSM Preset File which have been downloaded before, and click `Save`"
-msgstr ""
-
-# 22c854a874a540d0b3bbe35c9590b964
-#: ../../source/general/faq.rst:98
-msgid ""
-"Your job is created and you have to wait until it finish. It'll take some "
-"minutes if your map is big one"
-msgstr ""
-
-# 1fe5f474e46a40e38e036f58a1e15d30
-#: ../../source/general/faq.rst:100
-msgid ""
-"When the job is finished, there will be a table contains files that can be "
-"downloaded"
-msgstr ""
-
-# cc58eeafed804599b41393ccc3667084
-#: ../../source/general/faq.rst:102
-msgid "Download the `ESRI Shapefile (zipped)`"
-msgstr ""
-
-# 0993fd5a388443ca934878b8626a1a53
-#: ../../source/general/faq.rst:103
-msgid "Extract it on your computer, and the data will be ready to use"
+"This tool will fetch building ('structure') and highway ('road') data from "
+"the OpenStreetMap project for you. For more information see :ref:"
+"`openstreetmap_downloader` section"
 msgstr ""
 
 # 377ed05694e441af8a7d15579f930ce2
-#: ../../source/general/faq.rst:105
+#: ../../source/general/faq.rst:79
 msgid "**How do I take screen capture e.g. for use in a presentation?**"
 msgstr ""
 
 # 331e7c785f77476382269e38135b2387
-#: ../../source/general/faq.rst:107
+#: ../../source/general/faq.rst:81
 msgid ""
 "On Ubuntu, get the packages gtk-recordmydesktop and mencoder Record using "
 "recordmydesktop (start and stop icon in the top bar) Convert to other "
@@ -274,84 +169,84 @@ msgid ""
 msgstr ""
 
 # 8d90942d113d42d29062ca9a49184b38
-#: ../../source/general/faq.rst:115
+#: ../../source/general/faq.rst:89
 msgid "or"
 msgstr ""
 
 # b213c174df1d44dab22974177e49e747
-#: ../../source/general/faq.rst:122
+#: ../../source/general/faq.rst:96
 msgid "**How do I convert a vector hazard layer to a raster layer?**"
 msgstr ""
 
 # 42005d6ab5d741eb883581a9c289e07f
-#: ../../source/general/faq.rst:124
+#: ../../source/general/faq.rst:98
 msgid ""
 "For vector to raster conversion, use gdal_rasterize utility, for example ::"
 msgstr ""
 
 # f2704a8468ff47ceaeba9f82f0f53106
-#: ../../source/general/faq.rst:130
+#: ../../source/general/faq.rst:104
 msgid "Why does the plugin not show up in my QGIS Plugin Manager?"
 msgstr ""
 
 # 2dbf50fc8ce14bd3ad88bc177843aa83
-#: ../../source/general/faq.rst:132
+#: ../../source/general/faq.rst:106
 msgid ""
 "One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not "
 "get the new plugin repo added to your repo list. To fix this you can do:"
 msgstr ""
 
 # 38c187dc00e14d6c9808ea9298b0b84c
-#: ../../source/general/faq.rst:135
+#: ../../source/general/faq.rst:109
 msgid "open QGIS"
 msgstr ""
 
 # da47d2e64b604058b62f505164ecd500
-#: ../../source/general/faq.rst:136
+#: ../../source/general/faq.rst:110
 msgid "Go :menuselection:`Plugins --> Fetch Python Plugins`"
 msgstr ""
 
 # f0d1953c48274bf1864db11f761f45ae
-#: ../../source/general/faq.rst:137
+#: ../../source/general/faq.rst:111
 msgid "Click :guilabel:`Repositories` tab"
 msgstr ""
 
 # 80634a39f8974c48a66ff58f010f5f56
-#: ../../source/general/faq.rst:138
+#: ../../source/general/faq.rst:112
 msgid "Click :guilabel:`add`"
 msgstr ""
 
 # 51edd44b8fee4ae7b55a6049196e1651
-#: ../../source/general/faq.rst:139
+#: ../../source/general/faq.rst:113
 msgid ":guilabel:`Name`: Official QGIS Repository"
 msgstr ""
 
 # d5edcda0c0644e1dae46497c88cf2332
-#: ../../source/general/faq.rst:140
+#: ../../source/general/faq.rst:114
 msgid ":guilabel:`Url`: http://plugins.qgis.org/plugins/plugins.xml"
 msgstr ""
 
 # ffc46fe06a55498a88628cba9d52a040
-#: ../../source/general/faq.rst:141
+#: ../../source/general/faq.rst:115
 msgid ""
 "Save it and the plugin repo list should update. If it doesn't, close and "
 "open QGIS to force an update."
 msgstr ""
 
 # cb3b92b1da084536999d9d2e1ed8dd3a
-#: ../../source/general/faq.rst:143
+#: ../../source/general/faq.rst:117
 msgid ""
 "In the python plugin manager main tab now you should find |project_name| "
 "available"
 msgstr ""
 
 # 5843ca69252847c3953412fb04ade6f4
-#: ../../source/general/faq.rst:146
+#: ../../source/general/faq.rst:120
 msgid "**How do I fix KeywordDbError on Windows?**"
 msgstr ""
 
 # bfe694583c45416784569fbe0001b091
-#: ../../source/general/faq.rst:148
+#: ../../source/general/faq.rst:122
 msgid ""
 "It’s an issue related to permission issue. Normally, it occurs when the "
 "keyword.db is not writable by current user. The thing that you have to do is "
@@ -359,7 +254,7 @@ msgid ""
 msgstr ""
 
 # 9e0576a70d8a42ea9c07a63cdc3cd5ca
-#: ../../source/general/faq.rst:153
+#: ../../source/general/faq.rst:127
 msgid ""
 "Another way to solve it is deleting the registry of InaSAFE. You can do it "
 "by opening :guilabel:`regedit` (Registry Editor). To open regedit, you need "
@@ -368,12 +263,12 @@ msgid ""
 msgstr ""
 
 # 4090597924b44762b449a75d54705150
-#: ../../source/general/faq.rst:158
+#: ../../source/general/faq.rst:132
 msgid "Open regedit."
 msgstr ""
 
 # 260cdd2090cb41c0aaf859d7687c1dde
-#: ../../source/general/faq.rst:160
+#: ../../source/general/faq.rst:134
 msgid ""
 "Find inasafe registry under :menuselection:`My Computer--> Software --> QGIS "
 "--> QGIS --> PythonPlugins`. After that, right click on the inasafe, and "
@@ -382,7 +277,7 @@ msgid ""
 msgstr ""
 
 # f6daced79ed0477bac75d4564e5c76f2
-#: ../../source/general/faq.rst:164
+#: ../../source/general/faq.rst:138
 msgid ""
 "Please see `InaSAFE issue #459 <https://github.com/AIFDR/inasafe/"
 "issues/459>`_ , `InaSAFE issue #564 <https://github.com/AIFDR/inasafe/"

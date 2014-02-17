@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-11 16:05\n"
+"POT-Creation-Date: 2014-02-17 11:59+0700\n"
 "PO-Revision-Date: 2013-10-30 09:30+0000\n"
 "Last-Translator: macho <werner.macho@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/inasafe/language/"
@@ -305,73 +305,72 @@ msgstr ""
 msgid "**Some Objects Should Not Connect**"
 msgstr ""
 
-# b57ea30d31b64f70b670faf1c4dd7cd9
+# ca64cbe0c46e4562a69e6d5b4a266e74
 #: ../../source/training/intermediate/osm/302-quality-assurance.rst:209
 msgid ""
 "When you are creating polygons and lines that are not supposed to be "
-"connected, make sure that they are not merged together by sharing a node.  "
+"connected, make sure that they are not merged together by sharing a node. "
 "For example, highway nodes should not be snapped to buildings, because no "
-"one likes a road that leads directly into a wall!  If you want to "
-"disentangle two or more obejcts that share the same node, select the node "
-"and press :kbd:`G`."
+"one likes a road that leads directly into a wall! If you want to disentangle "
+"two or more obejcts that share the same node, select the node and press :kbd:"
+"`G`."
 msgstr ""
 
 # 58958d8dd55b4b729ca7e3a610f162de
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:221
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:222
 msgid "**But, Some Objects Should Connect**"
 msgstr ""
 
-# 509fb75b07454f1a9cf1242d64cf268e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:223
+# 5b52fdfe2a0f489791e47b9578d1a385
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:224
 msgid ""
-"However, some objects SHOULD connect!  Road intersections should always be "
-"snapped together.  If two roads do not share a common node, then the "
-"computer has no way of knowing that the roads actually connect to each other."
+"However, some objects SHOULD connect! Road intersections should always be "
+"snapped together. If two roads do not share a common node, then the computer "
+"has no way of knowing that the roads actually connect to each other."
 msgstr ""
 
 # 9beb6080c3c24df6bac65107e8e6c98f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:231
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:232
 msgid "**Overlapping Objects**"
 msgstr ""
 
-# ff603be6262b4af583c20ac2d380537e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:233
+# e3c2a2230c7340d9996e76705bdaf6dc
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:234
 msgid ""
 "A common error is to have overlapping polygons when the objects they "
-"represent do not overlap in real life.  A building cannot overlap another "
-"building.  This mistake is commonly made with buildings and landuse "
-"polygons.  For example, a polygon drawn to represent a park outside a "
-"building should not overlap with the building.  Instead it should be drawn "
-"next to the building. There are some exceptions to this rule, such as "
-"schools.  Within a school yard you might identify individual buildings using "
-"polygons, yet you also might want to create a polygon around the entire "
-"school yard.  In this case it is fine for the polygons to overlap, but the "
-"rule to follow here is to make sure that the buildings are completely inside "
-"the landuse polygon."
+"represent do not overlap in real life. A building cannot overlap another "
+"building. This mistake is commonly made with buildings and landuse polygons. "
+"For example, a polygon drawn to represent a park outside a building should "
+"not overlap with the building. Instead it should be drawn next to the "
+"building. There are some exceptions to this rule, such as schools. Within a "
+"school yard you might identify individual buildings using polygons, yet you "
+"also might want to create a polygon around the entire school yard. In this "
+"case it is fine for the polygons to overlap, but the rule to follow here is "
+"to make sure that the buildings are completely inside the landuse polygon."
 msgstr ""
 
-# 1b906943421640e789e02d98b2fd7a7c
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:252
+# 0d69a1267ecb4c059d41c8c770f27bbf
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:254
 msgid ""
-"We all make mistakes, and as you map more you will make less mistakes!  Just "
+"We all make mistakes, and as you map more you will make less mistakes! Just "
 "remember that even if you upload data that contains mistakes, it is simple "
-"to fix your mistakes and upload the change again.  This is what is great "
+"to fix your mistakes and upload the change again. This is what is great "
 "about OSM, you can always make it better!"
 msgstr ""
 
 # 82806dbac81143b5ac251b35181fd7a8
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:257
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:259
 msgid "**Tracing Correctly**"
 msgstr ""
 
-# 9813f94b219e4d3f9134579f836b64b8
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:259
+# bfd661a6691243c0b53f15dc373f8dce
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:261
 msgid ""
 "OSM can do amazing things with identifying where objects end and what labels "
-"these objects should have; however, it needs your help in doing so.  For "
+"these objects should have; however, it needs your help in doing so. For "
 "example, if you create a road that turns into another road without a "
 "distinct node, then JOSM will continue labeling the road as the previous "
-"one.  Therefore, it is necessary that you make all of your roads and objects "
+"one. Therefore, it is necessary that you make all of your roads and objects "
 "as clearly and rigid as possible."
 msgstr ""
 
@@ -384,64 +383,64 @@ msgid ""
 msgstr ""
 
 # c1b4e37907d74cada6418401ceac117b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:279
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:278
 msgid ""
 "**Ways that are not closed**: usually a line that does not form a polygon. "
 "Common examples are buildings where the first node does not meet the last "
 "node."
 msgstr ""
 
-# 7164d49a8e504ad99e11d4cd879a0e44
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:285
+# 23d4c12d58d94af79b794d1487790523
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:284
 msgid ""
-"To fix this, select both nodes and go to :menuselection:`Tools ‣ Merge "
+"To fix this, select both nodes and go to :menuselection:`Tools -> Merge "
 "Nodes` to connect them."
 msgstr ""
 
 # bebe1cf5820d4cc5b308e401898e31ec
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:288
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:287
 msgid ""
 "**Crossing Buildings (Overlapping Buildings)**: buildings that overlap each "
 "other."
 msgstr ""
 
 # f30bd77ab30f4c2ab48c6380d9a78051
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:294
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:293
 msgid ""
 "To fix this, move the nodes of one of the buildings outside of the other "
 "building."
 msgstr ""
 
 # 5b45329a7b554d7e8a30c2f6b323ee26
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:297
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:296
 msgid ""
 "**Untagged Nodes or Ways**: If someone draws a point or a line but forgets "
 "to give it any tags, then it is useless, because it does not mean anything."
 msgstr ""
 
 # d1fe1be2d8e74d8097414bce7a6f4030
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:303
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:302
 msgid ""
 "To fix this, apply tags to the object to identify it, or delete it if it is "
 "a mistake."
 msgstr ""
 
 # 555ca429f491458980344e6c1e318953
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:306
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:305
 msgid ""
 "**End node near another way**: If a line ends very close to another line but "
 "does not connect, this raises a warning."
 msgstr ""
 
 # d9205f719e0947faacf0c598abafae12
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:309
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:308
 msgid ""
 "Many times this warning is not important, but it helps to find road "
 "intersections that are supposed to connect but do not."
 msgstr ""
 
 # b7dec91cdeca4efb938f7c0ea78d2289
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:315
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:314
 msgid ""
 "**Crossing ways**: Lines that cross other lines without being connected will "
 "raise warnings. Many times this is not a problem, because the crossing ways "
@@ -450,7 +449,7 @@ msgid ""
 msgstr ""
 
 # 231e942ae7964e89981283c55cbc95c9
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:325
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:324
 msgid ""
 "OpenStreetMap depends on people correcting and editing mistakes. Editing and "
 "validating data is important for improving maps. If you do not have time to "
@@ -459,12 +458,12 @@ msgid ""
 msgstr ""
 
 # 5c406bc411004c92ad5dbefce4354d7b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:330
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:329
 msgid "**5. Presets Standardization**"
 msgstr ""
 
 # 5d419520067341928a5310703b160428
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:332
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:331
 msgid ""
 "OpenStreetMap allows the users to give as much informations as they can to "
 "their map. These informations can be attached to every objects that they "
@@ -474,42 +473,42 @@ msgid ""
 msgstr ""
 
 # 6bf15eed9bb940f9b9f4acfa3f9bc67f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:339
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:338
 msgid "The presets standardization purposes are:"
 msgstr ""
 
 # af6c396b1201467a9bd6d42212fdf249
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:341
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:340
 msgid "Assuring data consistency and stability"
 msgstr ""
 
 # 326043b661f942f589d5554b3eb106a3
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:342
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:341
 msgid "Easier data search and analysis"
 msgstr ""
 
 # 1aed4b5a2f244df793267d2a8628ff0e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:343
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:342
 msgid "As a standard in giving information using presets"
 msgstr ""
 
 # a7e2e87d73104fd8a9d41458feec1c49
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:344
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:343
 msgid "As a benchmark if we want to make improvements or data validation"
 msgstr ""
 
 # b6956b9ef1c54dc788172ab099aa3ec4
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:345
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:344
 msgid "Maximizing the use of Internal Presets that are available in JOSM"
 msgstr ""
 
 # 358d16352a5549b7ae031980b4433c08
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:346
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:345
 msgid "Maximizing data visualisation on OpenStreetMap website"
 msgstr ""
 
 # 441d332136064e8296e1216be850c324
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:348
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:347
 msgid ""
 "With this preset standardisation, hopefully all OSM users are willing to use "
 "this preset when they edit their maps. One of the benefit if we use the "
@@ -519,26 +518,26 @@ msgid ""
 msgstr ""
 
 # 31c26cfbe48d49fa87029dbf38c3117d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:354
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:353
 msgid "**6. KeepRight**"
 msgstr ""
 
 # 0805c8a7c1bf4efcbf50771e3d715d08
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:356
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:355
 msgid ""
 "The Keep Right website is another useful validation tool for OpenStreetMap. "
 "Open your web browser and head to http://keepright.at."
 msgstr ""
 
 # 599c28422e89469fad9b7a0eb3478eb9
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:358
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:357
 msgid ""
 "You can switch the site into Indonesian by choosing :guilabel:`id` from the "
 "dropdown box in the in the upper right."
 msgstr ""
 
 # 5b9b5e44e92b4c858790590ad3427608
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:364
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:363
 msgid ""
 "Click on “Pengecekan data untuk Asia” to check the OSM data in Asia. This "
 "will open up a slippy map with errors displayed on it. You can navigate to "
@@ -546,25 +545,30 @@ msgid ""
 msgstr ""
 
 # cf6640be04e24ed99ef8b32a178f91c7
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:372
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:371
 msgid ""
 "The types of errors are listed on the left of the map. You can get more "
 "details about each error by clicking on the icons which hover above the map."
 msgstr ""
 
-# 0edf4a61336c4ec8b862e705748aad6e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:380
+# cabb99f6e73d48c69811ca99cc97c0c0
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:379
 msgid ""
 "After you find territory and find out his mistake. Certainly next step is to "
 "fix the error. First step, make sure you have selected an error/lightning "
 "(by left click on the lightning image). After that, determine where you "
-"would fix the error, whether on the \"JOSM\" or \"Potlatch\". Note: we "
-"recommend that the editing in JOSM, because its editing features are more "
+"would fix the error, whether on the \"JOSM\" or \"Potlatch\"."
+msgstr ""
+
+# f19b38daf7d1453498af3515d1f0400f
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:386
+msgid ""
+"we recommend that the editing in JOSM, because its editing features are more "
 "complete."
 msgstr ""
 
 # 60f104c07ed345c39a37990aa6ed1c18
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:387
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:389
 msgid ""
 "In order to fix one of the errors, you can click on the links to edit in "
 "either JOSM or Potlatch.  Note that to edit in JOSM you must have the JOSM "
@@ -572,12 +576,12 @@ msgid ""
 msgstr ""
 
 # 98484171c95c417cab734e266196d0f2
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:394
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:396
 msgid "Setting “Remote Control” JOSM"
 msgstr ""
 
 # 4e92e3d1927e4a86abf629860ed94589
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:396
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:398
 msgid ""
 "Before you start working with \"Keepright\", make sure you have enabled "
 "\"Remote Control\" in JOSM. To check this, open your JOSM, then select the "
@@ -586,22 +590,22 @@ msgid ""
 msgstr ""
 
 # bb47bc9a4a0f4a848ee1da589339ccf0
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:408
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:410
 msgid "Next, you will see the window like this"
 msgstr ""
 
 # 61f37ca57c67400e9b1267af1b8e7478
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:413
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:415
 msgid "*image (a)*"
 msgstr ""
 
 # c60b54d0e45640f981c07fe2850284f3
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:418
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:420
 msgid "*image (b)*"
 msgstr ""
 
 # eb3968c059b94ffda2d85d27eed66559
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:420
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:422
 msgid ""
 "Check box in the left of :guilabel:`Enable Remote Control` is checked/"
 "enabled. In Image (a) the :guilabel:`Enable Remote Control` is not "
@@ -611,24 +615,24 @@ msgid ""
 msgstr ""
 
 # c87c8e3d7c2144b0be8ed76cb03482d4
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:425
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:427
 msgid ""
 "Now, open JOSM you will see that JOSM now been content with data that we "
 "have chosen earlier on the site \"KeepRright\"."
 msgstr ""
 
 # 628c5cb609284b6aa3c9bfc4f1992c28
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:430
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:432
 msgid "Make sure JOSM is open"
 msgstr ""
 
 # a7ae0c2b54ad489cb20af687aaa51844
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:435
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:437
 msgid "Now OSM data from “KeepRight” delivered to your JOSM"
 msgstr ""
 
 # 26b557f2901d438abbc090d67441ac3f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:437
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:439
 msgid ""
 "Immediately fix to existing errors. How do I fix and what tools are needed "
 "to fix it??? It all depends on the type of error. If you forget, go back "
@@ -636,7 +640,7 @@ msgid ""
 msgstr ""
 
 # c021d2d5d6664fefa59e9d341df4940e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:441
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:443
 msgid ""
 "After fixed the error, return to website \"www.keepright.ipax.at\" to "
 "confirm error has been fixed or not. If you've fixed the error, select (by "
