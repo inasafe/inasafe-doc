@@ -112,8 +112,9 @@ Those elements are:
 * **disclaimer**. It corresponds to **Disclaimer text** field on InaSAFE
   Option tools.
   If you do not fill this field, then the default one will be used: "InaSAFE
-  has been jointly developed by BPNB, Australian Govenment and the World
-  Bank - GFDRR"
+  has been jointly developed by Indonesian Government-BPNB, Australian Govenment-AIFDR and the World
+  Bank-GFDRR. These agencies and the individual software developers of InaSAFE take no responsibility for 
+  the correctness of outputs from InaSAFE or decisions derived as a consequence."
 
 2. Elements containing tokens. The id of these element is not significant, only the token 
 it contains. At render time, any of these tokens will be replaced. If you want to have a 
