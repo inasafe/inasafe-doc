@@ -90,7 +90,7 @@ all of these elements with id:
 * **map-scale**, a QgsComposerScaleBar
 * **map-legend**, a QgsComposerLegend
 * **organisation-logo**, a QgsComposerPicture
-* **merged-report table**, a QgsComposerHTML
+* **merged-report-table**, a QgsComposerHTML
 
 If any of those elements does not exist on the report template, the tools will 
 give you the information of what element is missing on the template. 
