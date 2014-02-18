@@ -12,7 +12,7 @@ Developer Meetings
 
 The next Developer meeting where at least some of the |project_name|
 developers will meet will be part of the QGIS Developer meeting in Vienna.
-Date: 24th to 28th March 2013
+Date: 24th to 28th March 2014
 
 Webpage: http://wiki.osgeo.org/wiki/Vienna_Code_Sprint_2014
 
