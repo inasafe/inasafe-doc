@@ -34,9 +34,9 @@ dataset that represents the level and magnitude of an event that can
 potentially cause damages.
 To be used for impact calculation in InaSAFE, level and magnitude of
 an event scenario must be mapped over the area of interest.
-This means that hazard data must be geographic - it must have location.  We
-have already looked at hazard data for the 2007 Jakarta Flood and the Lembang
-Earthquake.
+This means that hazard data must be geographic - it must have location.
+We have already looked at hazard data for the 2007 Jakarta Flood and the
+Lembang Earthquake.
 These hazard layers were produced from scientific modeling conducted by
 scientific organizations and government agencies.
 These are typical sources for such hazard data, although in cases of flood
@@ -65,10 +65,10 @@ damages or losses on the affected exposure layer.
 This output layer will be created once the impact calculation process is
 finished processing.
 InaSAFE has many impact functions available, which are listed through the
-'Impact Functions Doc' menu (see below). The impact calculation will only be
-possible when users provide the hazard and exposure layer data sets and,
-when necessary, users define the required parameters through the keyword
-editor correctly.
+'Impact Functions Doc' menu (see below).
+The impact calculation will only be possible when users provide the hazard
+and exposure layer datasets and, when necessary, users define the required
+parameters through the keyword editor correctly.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image27.*
    :align: center
@@ -103,6 +103,9 @@ from OSM.
 .. image:: /static/training/intermediate/qgis-inasafe/image28.*
   :align: center
 
+If you are a new user, create an account.
+If you already have an account with HOT, log in.
+
 The HOT Export website allows you to choose an area and create a data extract
 from that area.
 Then you can download the data in a variety of formats that are easily read
@@ -123,17 +126,17 @@ by QGIS.
    :align: center
 
 - Click the :guilabel:`Create Job` button.
-- You will be asked to define a presets file
-- this is like the presets that you added to JOSM in the previous unit,
-  except here, they define the attributes that InaSAFE will provide.  Choose
-  “preset file-INASAFE.”
+- You will be asked to define a presets file.
+- This is like the presets that you added to JOSM in the previous unit,
+  except here, they define the attributes that InaSAFE will provide.
+- Choose "preset file-INASAFE."
 
 .. image:: /static/training/intermediate/qgis-inasafe/image31.*
    :align: center
 
 - Click the :guilabel:`Save` button.
-- Take a few breaths!  It may take a few minutes for the data extraction job to
-  process.
+- Take a few breaths!
+  It may take a few minutes for the data extraction job to process.
   When it is finished, the page will change and you will see a list of files
   you can download like this:
 
@@ -238,7 +241,7 @@ layer.
 
 - You can see that this layer is already known to InaSAFE, so presumably it has
   keywords already set.
-  Select the layer and open the keywords editor.
+- Select the layer and open the keywords editor.
 - Notice that the subcategory is set to *flood [wet/dry]*
 
 .. image:: /static/training/intermediate/qgis-inasafe/image42.*
@@ -246,18 +249,18 @@ layer.
 
 - Because of the way that InaSAFE calculates this function, we need to make sure
   that this exposure layer has a column in the attribute table that InaSAFE
-  expects, named “AFFECTED”
+  expects, named "AFFECTED".
 - Click OK and then open the attribute table for the *area_terdampak_Sirahan*
   layer.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image43.*
    :align: center
 
-- We need to add some data to this layer so that QGIS can run the flood function
-  correctly.
+- We need to add some data to this layer so that QGIS can run the flood
+  function correctly.
   When QGIS runs the flood function, it checks every feature in the hazard
   layer to make sure that it is in fact a flood prone area.
-  Hence, each feature must have an attribute named AFFECTED.
+  Hence, each feature must have an attribute named "AFFECTED".
 - First, let’s add the new column to our layer.
 - Still in the attribute table, click the :guilabel:`Toggle Editing` button.
 
