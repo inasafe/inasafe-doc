@@ -33,7 +33,7 @@ downloaded from the Smithsonian website.
 You may ask "How can we use a point to figure out impact?"
 |project_name| needs your help!.
 
-#. :menuselection:`Project --> Open Projects`,
+1. :menuselection:`Project --> Open Projects`,
    browse to :file:`Indonesia_volcano.qgs` (Included in
    :file:`InaSAFEv2.0.zip` from http://data.inasafe.org)
 
@@ -43,17 +43,17 @@ You may ask "How can we use a point to figure out impact?"
 Select Feature and Save
 -----------------------
 
-#. As you can see there are many Volcanoes in Indonesia,
+2. As you can see there are many Volcanoes in Indonesia,
    lets zoom into one volcano to analyse.
    :guilabel:`Right Click` on the Volcanoes layer in the **Layer List** and
    :guilabel:`Select` *Open Attribute Table*.
-#. Click :guilabel:`Show All Features` (circle 1), then hover your pointer to
+3. Click :guilabel:`Show All Features` (circle 1), then hover your pointer to
    :guilabel:`Column Filter` (circle 2), then select *NAME* column (circle 3)
 
 .. image:: /static/training/socialisation/062_merapi_attribute.*
    :align: center
 
-#. We will try to find Mount Merapi.
+4. We will try to find Mount Merapi.
    Type in :kbd:`merapi` (1), make sure you uncheck :guilabel:`Case
    Sensitive` (2) so it will ignore whether it upper or lower case.
    Then click :guilabel:`Apply` (3).
@@ -61,7 +61,7 @@ Select Feature and Save
 .. image:: /static/training/socialisation/062_merapi_attribute2.*
    :align: center
 
-#. Click on the "merapi" row by clicking 163 this will select the point,
+5. Click on the "merapi" row by clicking 163 this will select the point,
    move the window slightly so you can see the map - you should be able to see
    the volcano as its highlighted in yellow.
 
@@ -71,33 +71,33 @@ Select Feature and Save
 .. image:: /static/training/socialisation/063_merapi.*
    :align: center
 
-#. :guilabel:`Zoom In` by dragging a small box around the highlighted point
+6. :guilabel:`Zoom In` by dragging a small box around the highlighted point
 
 .. image:: /static/training/socialisation/063a_merapi2.*
    :align: center
 
-#. Now that we know where Merapi is, and have checked that it is in fact in the
+7. Now that we know where Merapi is, and have checked that it is in fact in the
    correct location, we are going to make a hazard layer with just this point.
 
-#. :guilabel:`Right Click` on Volcano in the **Layer List** and
+8. :guilabel:`Right Click` on Volcano in the **Layer List** and
    :guilabel:`Save selection as`
-#. :guilabel:`Browse` and navigate to your data area,
+9. :guilabel:`Browse` and navigate to your data area,
    :guilabel:`save as` “Merapi” (circle 1).
-#. :guilabel:`Check` *Add saved file to map* (circle 2)
-#. :guilabel:`OK` (circle 3)
+10. :guilabel:`Check` *Add saved file to map* (circle 2)
+11. :guilabel:`OK` (circle 3)
 
 .. image:: /static/training/socialisation/064_save_volcano.*
    :align: center
 
-#. :guilabel:`Uncheck` Volcanoes in the layer window.
+12. :guilabel:`Uncheck` Volcanoes in the layer window.
 
 You should now have a point that shows the location of Merapi.
 Lets take some time to examine the ‘dot’.
 
-#. Use the :guilabel:`Identify feature` tool to find more out about the
-   Volcano.
-#. Use the :guilabel:`Measure line` tool to find out how far away is the
-   closest population hub (brown areas on the map)
+13. Use the :guilabel:`Identify feature` tool to find more out about the
+    Volcano.
+14. Use the :guilabel:`Measure line` tool to find out how far away is the
+    closest population hub (brown areas on the map)
 
 .. note:: For the Identify feature and Measure line tool to work you need to
    have the Merapi layer highlighted in the layer window.
@@ -112,13 +112,13 @@ Keywords
 We are reminded by |project_name| result window that we do not have a
 keyword for this new layer, so lets make one!
 
-#. Go to :guilabel:`InaSAFE Keyword Editor`
-#. Type :kbd:`Merapi erupting` as the title
-#. For Source you can enter where you got the information from (in our case
-   this would be :kbd:`Smithsonian Institure`)
-#. For the Category :guilabel:`Check` **Hazard**
-#. For Subcategory :guilabel:`Select` **Volcano**
-#. :guilabel:`OK`
+15. Go to :guilabel:`InaSAFE Keyword Editor`
+16. Type :kbd:`Merapi erupting` as the title
+17. For Source you can enter where you got the information from (in our case
+    this would be :kbd:`Smithsonian Institure`)
+18. For the Category :guilabel:`Check` **Hazard**
+19. For Subcategory :guilabel:`Select` **Volcano**
+20. :guilabel:`OK`
 
 .. image:: /static/training/socialisation/066_merapi_keyword.*
    :align: center
@@ -126,7 +126,7 @@ keyword for this new layer, so lets make one!
 Configure and Run |project_name|
 --------------------------------
 
-#. Confirm that |project_name| has the following in the drop-down boxes
+21. Confirm that |project_name| has the following in the drop-down boxes
 
 * Merapi erupting
 * people
@@ -135,9 +135,9 @@ Configure and Run |project_name|
 Before we run |project_name| again, we have to tell |project_name| what the
 hazard zone is!
 
-#. Click on :guilabel:`...` (impact function editor) next to
-   *Need evacuation*.
-   As a default |project_name| has made 3 hazard areas:
+22. Click on :guilabel:`...` (impact function editor) next to
+    *Need evacuation*.
+    As a default |project_name| has made 3 hazard areas:
 
 * Vent -3 km
 * 3-5 km
@@ -149,13 +149,13 @@ hazard zone is!
 .. note:: that its written 3,5,10 so if you wanted the categories to be Vent-5,
    5-10 and then 10-25 then you would type  5,10,25
 
-#. :guilabel:`OK`
+23. :guilabel:`OK`
 
-#. :guilabel:`Run` |project_name|
+24. :guilabel:`Run` |project_name|
 
-#. :guilabel:`Click` |project_name| Print, save accordingly
+25. :guilabel:`Click` |project_name| Print, save accordingly
 
-#. Analysis Results
+26. Analysis Results
 
 .. image:: /static/training/socialisation/068_merapi_results.*
    :align: center
@@ -205,15 +205,15 @@ Mercalli Intensity (MMI) Scale.
 
 This particular scenario is a modelled version of the 2009 Padang earthquake.
 
-#. :menuselection:`File --> Open Projects`, browse to *Padang_earthquake.qgs*
+27. :menuselection:`File --> Open Projects`, browse to *Padang_earthquake.qgs*
 
 .. image:: /static/training/socialisation/069_earthquake.*
    :align: center
 
 
-#. You will see that there are 4 layers in the layer panel,
-   :guilabel:`Click` on each of them to read the keywords in the
-   |project_name| window.
+28. You will see that there are 4 layers in the layer panel,
+    :guilabel:`Click` on each of them to read the keywords in the
+    |project_name| window.
 
 .. image:: /static/training/socialisation/070_people_scale.*
    :align: center
@@ -222,11 +222,11 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
    other 2 people layers, the second one has a source of
    *AsiaPop rescaled 1km2*, the third *AsiaPop rescaled 5km2*
 
-#. Make sure the only **people** checked is Source = AsiaPop
+29. Make sure the only **people** checked is Source = AsiaPop
 
-#. In the **How many** drop box pick the top **people**.
+30. In the **How many** drop box pick the top **people**.
 
-#. :guilabel:`Run` |project_name|
+31. :guilabel:`Run` |project_name|
 
 Memory usage warning
 --------------------
@@ -239,7 +239,7 @@ carry out the analysis.
 See the dock panel message for more information.
 Would you like to continue regardless?"
 
-#. :guilabel:`No`
+32. :guilabel:`No`
 
 You will see in the |project_name| panel that there is a suggestion on how
 to continue:
@@ -258,21 +258,21 @@ If the 1km population fails, the third **people** layer is our backup!
 .. image:: /static/training/socialisation/072_cellsize.*
    :align: center
 
-#. :guilabel:`Check` the second “people” in the drop down menu - check the
-   keywords to confirm its the source is *AsiaPop 1km2*
+33. :guilabel:`Check` the second “people” in the drop down menu - check the
+    keywords to confirm its the source is *AsiaPop 1km2*
 
-#. :guilabel:`Click` on the drop down menu for the “Might”,
-   this is the first |project_name| run where there are actually 2 impact
-   functions that we can choose from!
+34. :guilabel:`Click` on the drop down menu for the “Might”,
+    this is the first |project_name| run where there are actually 2 impact
+    functions that we can choose from!
 
-#. :guilabel:`Select` the “Die or be displaced according to the pager model”
+35. :guilabel:`Select` the “Die or be displaced according to the pager model”
 
 .. note:: This particular impact function was developed in Italy last
    November during a code sprint.
 
-#. :guilabel:`Run` |project_name|
+36. :guilabel:`Run` |project_name|
 
-#. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
+37. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
 
 ::
 
@@ -285,8 +285,8 @@ If the 1km population fails, the third **people** layer is our backup!
  ANSWER __________________________
 
 
-#. Analyse the Action list, how is this different to the action list for
-   floods or volcanoes?
+38. Analyse the Action list, how is this different to the action list for
+    floods or volcanoes?
 
 ::
 
@@ -307,24 +307,24 @@ totalling roughly 95,000 structures.
 
 Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
-#. :guilabel:`Uncheck` *people* in the **Layer List** and :guilabel:`Check`
-   *building*
+39. :guilabel:`Uncheck` *people* in the **Layer List** and :guilabel:`Check`
+    *building*
 
-#. Confirm that |project_name| window has the following:
+40. Confirm that |project_name| window has the following:
 
 * an earthquake in Padang like in 2009
 * buildings
 * be affected
 
-#. :guilabel:`Run` |project_name|
+41. :guilabel:`Run` |project_name|
 
 .. note:: InaSAFE is design to zoom into the extent of impact zone,
    hence in a minute or so, it will automatically zoom into Padang.
 
-#. Investigate the results, both by looking at the |project_name| results,
-   and using the information tool to select a building.
+42. Investigate the results, both by looking at the |project_name| results,
+    and using the information tool to select a building.
 
-#. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
+43. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
 
 Tsunami
 -------
@@ -336,8 +336,8 @@ in 1992.
 This particular scenario is a modelled version of a Magnitude 8.1 earthquake
 generating a Tsunami that impact Maumere.
 
-#. :menuselection:`File --> Open Projects`, browse to
-   :file:`Maumere_tsunami.qgs`
+44. :menuselection:`File --> Open Projects`, browse to
+    :file:`Maumere_tsunami.qgs`
 
 You will see that there is 2 layers in the layer panel,
 click on each of them to read the keywords in the |project_name| window.
@@ -349,26 +349,26 @@ click on each of them to read the keywords in the |project_name| window.
    however due to the force of the tsunami waves, the maximum depth of the
    water that would affect people and infrastructure is shallower.
 
-#. Confirm that |project_name| window has the following boxes.
+45. Confirm that |project_name| window has the following boxes.
 
 * A tsunami in Maumere (Mw 8.1)
 * people
 * Need evacuation
 
-#. :guilabel:`Options...` to change the water level for evacuation from 1m to
-   :kbd:`0.5m`
+46. :guilabel:`Options...` to change the water level for evacuation from 1m to
+    :kbd:`0.5m`
 
-#. :guilabel:`Run` |project_name|
+47. :guilabel:`Run` |project_name|
 
-#. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
+48. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
 
 Map Canvas Extent
 -----------------
 
-#. We are going to run again, but only on a 1/4 of the extent,
-   :guilabel:`Zoom In`
+49. We are going to run again, but only on a 1/4 of the extent,
+    :guilabel:`Zoom In`
 
-#. :guilabel:`Run` |project_name|
+50. :guilabel:`Run` |project_name|
 
 .. image:: /static/training/socialisation/074_tsunami_zoom.*
    :align: center
@@ -391,9 +391,9 @@ OpenStreetMap Downloader
 Notice that there is no building footprints in this project file,
 that is because we are going to download it straight from |OSM| server.
 
-#. Highlight the tsunami layer and :guilabel:`Zoom to Layer`
+51. Highlight the tsunami layer and :guilabel:`Zoom to Layer`
 
-#. :guilabel:`InaSAFE OpenStreetMap Downloader`
+52. :guilabel:`InaSAFE OpenStreetMap Downloader`
 
 .. image:: /static/training/socialisation/075_osmdownloader.*
    :align: center
@@ -401,7 +401,7 @@ that is because we are going to download it straight from |OSM| server.
 .. note:: The extent of the **Map Canvas** will automatically be added to the
    Bounding box.
 
-#. Confirm the location of the output directory, :guilabel:`OK`
+53. Confirm the location of the output directory, :guilabel:`OK`
 
 .. image:: /static/training/socialisation/076_building_loaded.*
    :align: center
@@ -410,15 +410,15 @@ that is because we are going to download it straight from |OSM| server.
    attributes at all, this area was digitised for this analysis,
    field surveys are still to be conducted.
 
-#. Confirm that  window has the following boxes.
+54. Confirm that  window has the following boxes.
 
   * A tsunami in Maumere (Mw 8.1)
   * buildings
   * be flooded
 
-#. :guilabel:`Run` |project_name|
+55. :guilabel:`Run` |project_name|
 
-#. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
+56. :guilabel:`Print` |project_name|, :guilabel:`Save` accordingly
 
 .. note:: For more information on the OSM loader please go to
    :ref:`openstreetmap_downloader`

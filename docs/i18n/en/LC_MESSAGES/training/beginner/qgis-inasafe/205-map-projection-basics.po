@@ -8,358 +8,454 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-17 16:11+0700\n"
+"POT-Creation-Date: 2014-02-18 16:38+0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+# 15da48ff6a03446da639aee6848ae426
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:8
-# fa65a73ab1a7495c851bc2df84f172a7
 msgid "Module 5: Map Projection Basics"
 msgstr ""
 
+# 5d70b8bc4b1a463888d762859bd06995
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:10
-# 279b4b5b103e48b4bf98436e1884e1f0
 msgid "**Learning Objectives**"
 msgstr ""
 
+# 6de72c8cc9a944cc8574856ad9db78ff
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:12
-# a9b192a31ab24842942ab8a572cd2add
 msgid "Understand Coordinate Reference Systems (CRS)"
 msgstr ""
 
+# a9b2ce0d4792429e896e59f541df4166
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:13
-# 643d6a2a5b644c4693cafadf6e0f8e99
 msgid "Identify the CRS of a vector dataset"
 msgstr ""
 
+# c34f7e892f0c44c380cad5aeb6da36e4
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:14
-# f03463af24b34f15b274df777189d78d
 msgid "Doing 'on the fly' reprojection"
 msgstr ""
 
+# af2ce6cc12874566a20187a8000040bf
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:15
-# 70505d982c3c485f901134ae78d7b3f6
 msgid "Save dataset with a different CRS"
 msgstr ""
 
+# 78620fcb6c35444192619c0fb507f414
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:16
-# 68156009b8a54377b53a0a0b65918a19
 msgid "Making its own projection"
 msgstr ""
 
+# a81933ea1998442bac56b53fd45982f3
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:18
-# 2cf1aaa8e07e4a9bb4ead258fc7dcc13
-msgid "We’ve talked a little bit about Coordinate Reference Systems (CRSs) previously, but haven’t covered it in depth. In this chapter, we’ll look more at what a CRS means practically, and how it affects our work in QGIS."
+msgid ""
+"We’ve talked a little bit about Coordinate Reference Systems (CRSs) "
+"previously, but haven’t covered it in depth. In this chapter, we’ll look "
+"more at what a CRS means practically, and how it affects our work in QGIS."
 msgstr ""
 
+# b5df78f44d314789a97802469d839edb
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:23
-# 9e041af68b4a4df2ba298115f4e05f75
 msgid "**1. Coordinate Reference System (CRS)**"
 msgstr ""
 
+# ed229b4fe72f429b9aa19bde63bfb3df
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:25
-# 03776bc2ba644215a1b67e8c4f7acc06
-msgid "The CRS that all the data as well as the map itself are in right now is called WGS84. This is a very common Geographic Coordinate System (GCS) for representing data. But there’s a problem, as we will see."
+msgid ""
+"The CRS that all the data as well as the map itself are in right now is "
+"called WGS84. This is a very common Geographic Coordinate System (GCS) for "
+"representing data. But there’s a problem, as we will see."
 msgstr ""
 
+# 08fd63cb625a4fb69b417996bce32338
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:31
-# 3ec3d36cab2d49eeaad6a91e7e14b9fd
 msgid "Open the project :file:`world.qgs`, located in the :file:`qgis/ folder`"
 msgstr ""
 
+# 7e9e7af9fbc9460e9a6d6331a7a84846
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:32
-# 076e4d73aa5a4f04910eaf650f4efede
 msgid "Zoom in to Indonesia by using the Zoom In tool."
 msgstr ""
 
+# f27c5e08dc8a4d5f8f3386bdc0455eae
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:37
-# 129b90d02e2d47218b06be6566619f42
-msgid "Setting the scale in the Scale field, which is in the Status Bar along the bottom of the screen. While over Indonesia, set this value to 1:20000000 (one to twenty million)."
+msgid ""
+"Setting the scale in the Scale field, which is in the Status Bar along the "
+"bottom of the screen. While over Indonesia, set this value to 1:20000000 "
+"(one to twenty million)."
 msgstr ""
 
+# 0ba9a0ea12c045609556e8f5e903082e
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:44
-# b9fb2cf396c647b4ad4c7b8aadb0d191
 msgid "Now pan around the map while keeping an eye on the Scale field."
 msgstr ""
 
+# baf9a80ba5654e23a782c7939a30c52d
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:46
-# 0ee921969413416da2a6dc46ada22c8f
-msgid "Notice the scale changing? That’s because you’re moving away from the one point that you zoomed into at 1:20000000, which was at the center of your screen. All around that point, the scale is different."
+msgid ""
+"Notice the scale changing? That’s because you’re moving away from the one "
+"point that you zoomed into at 1:20000000, which was at the center of your "
+"screen. All around that point, the scale is different."
 msgstr ""
 
+# 6a9bdae8afe04eb2baa7b567212bddb5
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:51
-# 95f03277ab03456685ea60a62019fa69
-msgid "To understand why, think about a globe of the Earth. It has lines running along it from North to South. These longitude lines are far apart at the equator, but they meet at the poles. In a GCS, you’re working on this sphere, but your screen is flat. When you try to represent the sphere of the earth on a flat surface, it becomes distorted, as if you took an orange peel and tried to flatten it. What this means on a map is that the longitude lines stay equally far apart from each other, even at the poles (where they are supposed to meet). This means that, as you travel away from the equator on your map, the scale of the objects that you see gets larger and larger. What this means for us, practically, is that there is no constant scale on our map!"
+msgid ""
+"To understand why, think about a globe of the Earth. It has lines running "
+"along it from North to South. These longitude lines are far apart at the "
+"equator, but they meet at the poles. In a GCS, you’re working on this "
+"sphere, but your screen is flat. When you try to represent the sphere of the "
+"earth on a flat surface, it becomes distorted, as if you took an orange peel "
+"and tried to flatten it. What this means on a map is that the longitude "
+"lines stay equally far apart from each other, even at the poles (where they "
+"are supposed to meet). This means that, as you travel away from the equator "
+"on your map, the scale of the objects that you see gets larger and larger. "
+"What this means for us, practically, is that there is no constant scale on "
+"our map!"
 msgstr ""
 
+# eefcf2103a0d410fa1b80923b5257d6c
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:65
-# ac7b24e6406244e3b6c096c82802fe96
-msgid "To solve this, we’ll use a Projected Coordinate System (PCS) instead. A PCS projects or converts the data in a way that makes allowance for the scale change and corrects it. Therefore, to keep the scale constant, we should reproject our data to use a PCS."
+msgid ""
+"To solve this, we’ll use a Projected Coordinate System (PCS) instead. A PCS "
+"projects or converts the data in a way that makes allowance for the scale "
+"change and corrects it. Therefore, to keep the scale constant, we should "
+"reproject our data to use a PCS."
 msgstr ""
 
+# d783df8ec3b7497ab215ace283eef452
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:72
-# 0ad9c10231d84ff3a5223a4698c238f4
-msgid "Projection is the act of taking coordinates on a sphere (like the earth), and manipulating them so that they can be displayed on a flat surface."
+msgid ""
+"Projection is the act of taking coordinates on a sphere (like the earth), "
+"and manipulating them so that they can be displayed on a flat surface."
 msgstr ""
 
+# 459fd9b5c94946eebbc3ff19f56c4ae5
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:75
-# eaf4fbd19fc641f48f9a8f38809e3be9
 msgid "**2. “On the Fly” Reprojection**"
 msgstr ""
 
+# 241d9a0d8a9744b29aa852cd91edf9ce
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:77
-# b988c339b1a34a2c8ec3a2353e365b09
-msgid "Every QGIS project has a CRS, and each of the data layers have a CRS too. Often these are the same. Your project may be in WGS84, and the layers too. But sometimes you will add a layer that is not in the same CRS as the project, and you need QGIS to convert it so that it can be displayed along with the rest of the data. The term that we use for this is reprojecting 'on the fly'."
+msgid ""
+"Every QGIS project has a CRS, and each of the data layers have a CRS too. "
+"Often these are the same. Your project may be in WGS84, and the layers too. "
+"But sometimes you will add a layer that is not in the same CRS as the "
+"project, and you need QGIS to convert it so that it can be displayed along "
+"with the rest of the data. The term that we use for this is reprojecting 'on "
+"the fly'."
 msgstr ""
 
+# 385b24dfb4da43ffa17b6bb462b48f5b
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:85
-# e22b3afafb7d4baebb790fd7a34b182c
-msgid "To enable 'on the fly' projection, click on the :guilabel:`CRS Status` button in the Status Bar along the bottom of the QGIS window:"
+msgid ""
+"To enable 'on the fly' projection, click on the :guilabel:`CRS Status` "
+"button in the Status Bar along the bottom of the QGIS window:"
 msgstr ""
 
+# 812b0be00d9d43c2a558e0d9576efcec
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:91
-# e5727b9d712e4fdaafa3c8c356b58cd5
-msgid "In the dialog that appears, check the box next to :guilabel:`Enable ‘on the fly’ CRS transformation`."
+msgid ""
+"In the dialog that appears, check the box next to :guilabel:`Enable ‘on the "
+"fly’ CRS transformation`."
 msgstr ""
 
+# 0bc3b90616b34766ac4c14b2f71f88a4
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:97
-# fd4e1118d4a54b8295c1ca6040b672df
-msgid "Type the word global into the Filter field. One CRS (NSIDC EASE-Grid Global) will appear in the list below."
+msgid ""
+"Type the word global into the Filter field. One CRS (NSIDC EASE-Grid Global) "
+"will appear in the list below."
 msgstr ""
 
+# 50b2438a5e944a9787a286eeef53770b
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:103
-# 7e1c4e3a6c094ef69392894aead6769a
 msgid "Click on it to select it, then click :guilabel:`OK`."
 msgstr ""
 
+# 95e728a7bd794d4b952c47686fc1e9e4
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:104
-# f80415c23cd64b6bb6b5e97e41fe0d48
-msgid "Notice how the shape of Indonesia changes. All projections work by changing the apparent shapes of objects on Earth."
+msgid ""
+"Notice how the shape of Indonesia changes. All projections work by changing "
+"the apparent shapes of objects on Earth."
 msgstr ""
 
+# 656016eb460c450793a04f289c920c8f
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:106
-# b186e3ac5ae44f7fa0768b9d4d17ef8a
 msgid "Zoom in to a scale of 1:20000000 again, as before."
 msgstr ""
 
+# 880e0023b26e401eb10c23dd03b748d3
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:107
-# 61f3c0eb6d9047469572890d9cb33ac7
 msgid "Pan around the map."
 msgstr ""
 
+# 3c082bc7f5cb45ba98b03e80750ae6e4
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:108
-# f7e716db4f134679b53818d562000f68
 msgid "Notice how the scale stays the same!"
 msgstr ""
 
+# 3fc5efb9075044e29c52fd0fc75a6f4b
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:110
-# 8d624fa81b3944ee9b4982c3b22b34fd
-msgid "'On the fly' reprojection is useful for combining datasets that are in different CRSs."
+msgid ""
+"'On the fly' reprojection is useful for combining datasets that are in "
+"different CRSs."
 msgstr ""
 
+# 62cfbaa167b84c259d547c699bf8f36a
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:113
-# 831aff4d9f4a4db299d60cefc5ba57f4
-msgid "Deactivate :guilabel:`'on the fly' reprojection` again, by unchecking the box next to Enable ‘on the fly’ CRS transformation."
+msgid ""
+"Deactivate :guilabel:`'on the fly' reprojection` again, by unchecking the "
+"box next to Enable ‘on the fly’ CRS transformation."
 msgstr ""
 
+# b0c6bd710f1c43dfb49f90327c6a56c0
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:115
-# d623d4b101da498fb37a71f61b3b5945
-msgid "Now let’s add another vector layer, located in :file:`qgis/peta_dunia/Indonesia.shp`."
+msgid ""
+"Now let’s add another vector layer, located in :file:`qgis/peta_dunia/"
+"Indonesia.shp`."
 msgstr ""
 
+# 0d8a0b6acca54988a362932b78712844
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:118
-# 855f50ca68f54098bb25e1446f4b8078
-msgid "What do you notice? The layer is not visible! But that’s easy to fix, right?"
+msgid ""
+"What do you notice? The layer is not visible! But that’s easy to fix, right?"
 msgstr ""
 
+# 126b0f070c064e52b95064d2aefa0b7b
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:122
-# c41118c3844f4971a2b68e8a8ab795fd
 msgid "Right-click on the **layer** in the Layers list."
 msgstr ""
 
+# 56a4104f65904f99a680c211fa916865
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:123
-# b90f3fcd9b59444194a4ad618b39b57e
 msgid "Select :menuselection:`Zoom to Layer Extent`."
 msgstr ""
 
+# 21c61bc57cda4cc6b11d305a9754baec
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:125
-# d0568e251958451f88b26809ba8336eb
 msgid "OK, so now we see Indonesia... but where is the rest of the world?"
 msgstr ""
 
+# a7d2a0f727284334a6d11fdc9178573f
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:127
-# c1a75c74bce740bd80c54c893e4716ac
-msgid "It turns out that we can zoom between these two layers, but we can’t ever see them at the same time. That is because their Coordinate Reference Systems are so different. The continents layer is in degrees, but the Indonesia layer is in meters. In other words, one feature in the continents layer might be 8.5 degrees away from the equator, but the same feature in the Indonesia layer might be 900000 meters away from the equator."
+msgid ""
+"It turns out that we can zoom between these two layers, but we can’t ever "
+"see them at the same time. That is because their Coordinate Reference "
+"Systems are so different. The continents layer is in degrees, but the "
+"Indonesia layer is in meters. In other words, one feature in the continents "
+"layer might be 8.5 degrees away from the equator, but the same feature in "
+"the Indonesia layer might be 900000 meters away from the equator."
 msgstr ""
 
+# 32b998cb7d8c4243998f506d382a4ab5
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:136
-# 81ff8fd96f22425782fa8f0bbb6155b5
-msgid "8.5 degrees and 900000 meters is about the same distance, but QGIS does not know that! One of our layers must be reprojected to match the other layer. To correct this:"
+msgid ""
+"8.5 degrees and 900000 meters is about the same distance, but QGIS does not "
+"know that! One of our layers must be reprojected to match the other layer. "
+"To correct this:"
 msgstr ""
 
+# 9e1e4eb7696b4d1ab6acb2db2d6a30a2
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:141
-# 72a6ef7eefa84b2ca9b781f11f36f9ae
-msgid "Switch :guilabel:`Enable ‘on the fly’ CRS transformation` on again as before."
+msgid ""
+"Switch :guilabel:`Enable ‘on the fly’ CRS transformation` on again as before."
 msgstr ""
 
+# d050a50945784897b9e6d703aada46e7
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:142
-# a4b603f32c5c40d9ae5c546b3ef2ceb1
 msgid ":guilabel:`Zoom to the layer extents` of the Indonesia dataset."
 msgstr ""
 
+# f392201fcf8746bca68e895763ec476c
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:144
-# 16a996003cfc47aa90c4d2113cd0b4b0
-msgid "Now, because they’re made to project in the same CRS, the two datasets fit perfectly:"
+msgid ""
+"Now, because they’re made to project in the same CRS, the two datasets fit "
+"perfectly:"
 msgstr ""
 
+# 73c4deb7e98f43cd93f0c82b9a8c8c24
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:150
-# 8fbe0c63536e43a898a98c043b24c249
-msgid "When combining data from different sources, it’s important to remember that they might not be in the same CRS. 'On the fly' reprojection helps you to display them together."
+msgid ""
+"When combining data from different sources, it’s important to remember that "
+"they might not be in the same CRS. 'On the fly' reprojection helps you to "
+"display them together."
 msgstr ""
 
+# 62f83e5f15d146fb9f8635e306b38ddb
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:154
-# 586fd5e9cde44b8d82b900eb1fda9120
 msgid "**3. Dataset with different CRS**"
 msgstr ""
 
+# c6c9144c9f024e09b5f3aa2f093cc71e
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:156
-# 3cfab6ccc7f7408892572c8ec32b0bc3
-msgid "It’s great that QGIS can reproject layers on the fly so that we can work with them in the same project. But this requires more time for our computer to reproject the layers, and can slow down our work. For this, or for other reasons, we might want to be able to reproject a dataset, and save it with the new projection."
+msgid ""
+"It’s great that QGIS can reproject layers on the fly so that we can work "
+"with them in the same project. But this requires more time for our computer "
+"to reproject the layers, and can slow down our work. For this, or for other "
+"reasons, we might want to be able to reproject a dataset, and save it with "
+"the new projection."
 msgstr ""
 
+# 7441cb70303d49bc86c1db67044a5ea4
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:163
-# 60e6f59f8ea344c79569c019c60006c8
-msgid "Let’s reproject the Indonesia layer so that it is in the same CRS as the project. To do this, we will need to export the data to a new file using a new projection."
+msgid ""
+"Let’s reproject the Indonesia layer so that it is in the same CRS as the "
+"project. To do this, we will need to export the data to a new file using a "
+"new projection."
 msgstr ""
 
+# 0788b52529eb48009c4d7c48c4d41466
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:168
-# d494c0f4b67347d9a214e8e51fae22b2
 msgid "Right-click on the :guilabel:`Indonesia` layer in the Layers list."
 msgstr ""
 
+# fa7700e8cd5c49658adb7b9ec9bb5659
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:169
-# 0fd6896b01ac402f855754ae9191eb31
-msgid "Select :guilabel:`Save As...` in the menu that appears. You will be shown the **Save vector layer as...** dialog."
+msgid ""
+"Select :guilabel:`Save As...` in the menu that appears. You will be shown "
+"the **Save vector layer as...** dialog."
 msgstr ""
 
+# de093528bff64f8d8aca42b947b90753
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:171
-# 1d84c74341644417b8a4a6aafa1568e2
-msgid "Click on the :guilabel:`Browse` button next to the :guilabel:`Save as field`."
+msgid ""
+"Click on the :guilabel:`Browse` button next to the :guilabel:`Save as field`."
 msgstr ""
 
+# 859f06b2555948c181465b5939b9d2bf
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:172
-# 21c3e03be7b14ba1bf4a0af1c19e2bc9
-msgid "Navigate to :file:`qgis/peta_dunia/` and specify the name of the new layer as :kbd:` Indonesia_terproyeksi.shp`."
+msgid ""
+"Navigate to :file:`qgis/peta_dunia/` and specify the name of the new layer "
+"as :kbd:` Indonesia_terproyeksi.shp`."
 msgstr ""
 
+# f5c30095ead64e9094b88398d2b33598
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:174
-# d813903401a546b5a844455471fe8ff1
 msgid "Leave the Encoding unchanged."
 msgstr ""
 
+# 711f1153e35246b7b674b32f1a560d82
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:175
-# 2ca15b160e4e41f5b9d285f6f83d119e
 msgid "Change the value of the Layer CRS dropdown to **Project CRS**."
 msgstr ""
 
+# baa44c6abfca426b9cbf5b6d39a390c2
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:176
-# 83e2ea55fc8a4bb493d8fe2ad08dfe39
 msgid "Check the box next to :guilabel:`Add saved file to map`."
 msgstr ""
 
+# 22c0a7a6ec69432895570afa863506a3
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:177
-# 8ae0c3973fd74feaabecb88b9c836473
 msgid "The **Save vector layer as...** dialog now looks like this:"
 msgstr ""
 
+# 36430a918fa041c0a419285ab0aba260
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:182
-# 5b6dd91e9f8646cca17d047c6386f108
 msgid "Click :guilabel:`OK` and after a minute, you should be presented with:"
 msgstr ""
 
+# 48d8d8a2cf1146a4a1c211387b09b40b
+# dd4f1ca446bb49418b2755e5c390b27b
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:187
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:219
-# ce168c3d072b44adb19d13c99db7c6d1
-# 34ef4795884c441e87f0d2b905208d0a
 msgid "Click :guilabel:`OK`."
 msgstr ""
 
+# fbf679066264432aa46c5e68d171d694
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:189
-# 9501cfd14b2d4e7487e28e5d0120b9e7
-msgid "Now your new layer, **Indonesia_terproyeksi**, will be shown in the layers panel. If you turn off “on the fly” reprojection, this layer will still be shown correctly, because it has been reprojected into the same CRS as the project (and the continents layer)."
+msgid ""
+"Now your new layer, **Indonesia_terproyeksi**, will be shown in the layers "
+"panel. If you turn off “on the fly” reprojection, this layer will still be "
+"shown correctly, because it has been reprojected into the same CRS as the "
+"project (and the continents layer)."
 msgstr ""
 
+# 9d6b7b3994844115a941ada503fc6128
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:195
-# abe4db225b1845e1876e9bcf630a3843
 msgid "**4. Creating Your Own Projection**"
 msgstr ""
 
+# 7a97e5f7e35d42128da1521ed4504d5f
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:197
-# a93ecdfaed624400b0f938002eb7e776
-msgid "There are many more projections than just those included in QGIS by default. You can even create your own projections. Let’s see how this works."
+msgid ""
+"There are many more projections than just those included in QGIS by default. "
+"You can even create your own projections. Let’s see how this works."
 msgstr ""
 
+# 3b39ae9816984f75b77f6cd39e490de2
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:201
-# 688497b6f5094a0593b1de4bd9dd06d0
 msgid "Start a new map."
 msgstr ""
 
+# 49479305ace048eb8941c66ac0e8683d
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:202
-# 01aeed79e63a422790d7e53530955714
-msgid "Load the vector layer :file:`oceans.shp` located in :file:`qgis/peta_dunia/`."
+msgid ""
+"Load the vector layer :file:`oceans.shp` located in :file:`qgis/peta_dunia/`."
 msgstr ""
 
+# eb6377418b534965a076d0d445799da6
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:203
-# cc7a93f3364c4b95ba99733b5f28b4da
-msgid "Go to :menuselection:`Settings ‣ Custom CRS...` and you’ll see this dialog:"
+msgid ""
+"Go to :menuselection:`Settings ‣ Custom CRS...` and you’ll see this dialog:"
 msgstr ""
 
+# df21620c873742f8a20ed62cf2c549af
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:208
-# 1077c3b00849451492b192ddf3aacf0d
-msgid "We will create a projection known as Van der Grinten I. This interesting projection represents the earth on a circular field instead of a rectangular field, as most projections do."
+msgid ""
+"We will create a projection known as Van der Grinten I. This interesting "
+"projection represents the earth on a circular field instead of a rectangular "
+"field, as most projections do."
 msgstr ""
 
+# 8a08158e85c04f6a8c075942ba1d4c51
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:211
-# 21f02aff55a440148108071388a46122
 msgid "Enter :kbd:`Van der Grinten I` in the Name field."
 msgstr ""
 
+# 3f257ce0dde145c79b47589486a34fd2
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:212
-# 6b7eb7c91a6747e1806846b7eba94130
 msgid "In the Parameters field, use the following string:"
 msgstr ""
 
+# eecef8313d4040e5aac800fe29777d06
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:214
-# da38dbe632c44f2f985ddbdc7ea543ca
-msgid "+proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +a=6371000 +b=6371000 +units=m +no_defs"
+msgid ""
+"+proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +a=6371000 +b=6371000 +units=m "
+"+no_defs"
 msgstr ""
 
+# afe19401cdd44370ab4526a3c5bf4110
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:220
-# 961c88a59a5141229f5dfbf514c1fd6f
 msgid "Go to :menuselection:`Project → Project Properties`."
 msgstr ""
 
+# e6c64089232c4e2c9605827a113c7203
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:221
-# 98164da7283046abac2341d7c5f21d70
 msgid "Enable “on the fly” reprojection."
 msgstr ""
 
+# 264e3ff0b29b4a8286fbc3f9f70ba58e
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:226
-# 99fe112872d14814b81302d3561429a8
-msgid "Search for your newly defined projection by typing it into the Filter box:"
+msgid ""
+"Search for your newly defined projection by typing it into the Filter box:"
 msgstr ""
 
+# adefe2edbf0a4b71abd237fa2ce94efe
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:231
-# 8fb02075f69c4b5484fbdf5371d7c79f
-msgid "You should see it appear in the box at the bottom. Select it, and click :guilabel:`OK`."
+msgid ""
+"You should see it appear in the box at the bottom. Select it, and click :"
+"guilabel:`OK`."
 msgstr ""
 
+# adfda96ddffa40349e99ca3a0ac5eaa8
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:233
-# 3ea35613ef4b490b9494aeeabdc56079
-msgid "Once you’ve applied the new projection, the map will be reprojected like this:"
+msgid ""
+"Once you’ve applied the new projection, the map will be reprojected like "
+"this:"
 msgstr ""
-
