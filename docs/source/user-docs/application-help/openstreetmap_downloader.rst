@@ -95,9 +95,7 @@ particular we support roads sourced from the
 The following road types are derived (depending on the various tags assigned
 to them in OSM):
 
-ALTER TABLE planet_osm_line ADD COLUMN "type" VARCHAR(255) NULL;
-
-* Motorway or highway (includes 'trunk' from OSM)
+* Motorway / highway (includes 'trunk' from OSM)
 * Motorway link
 * Primary road
 * Primary link
@@ -108,6 +106,10 @@ ALTER TABLE planet_osm_line ADD COLUMN "type" VARCHAR(255) NULL;
 * Road, residential, living street, etc. (includes all highways tagged with
   'living_street', 'residential', 'yes', 'road', 'unclassified', 'service', ''
   and NULL highways)
-* Track'
+* Track
 * Cycleway, footpath, etc. (includes 'cycleway', 'footpath', 'pedestrian',
   'footway' and 'path' highway tags).
+
+.. note:: The roads data are symbolised using a rule based renderer in QGIS. As
+you zoom out the roads will be rendered using different styles to avoid an
+overly cluttered map at small scales.
