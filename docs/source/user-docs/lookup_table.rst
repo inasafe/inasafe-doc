@@ -14,7 +14,6 @@ Indonesian Translation Index
 To coordinate translation of InaSAFE into Bahasa Indonesian we have developed
 a table of commonly used terms and translation.
 
-
 ===============================    ===========================================
  English                           Bahasa Indonesia
 ===============================    ===========================================
@@ -57,7 +56,7 @@ contingency                        kontinjensi
 
 ===============================    ===========================================
 
-The list of abbrevations to use (including the automatic link to the
+The list of abbreviations to use (including the automatic link to the
 respective homepage) is:
 ::
 
@@ -105,6 +104,3 @@ We have also made a blanket decision not to translate the following words:
 * *copy & paste*
 
 Please add to this list as required.
-
-
-

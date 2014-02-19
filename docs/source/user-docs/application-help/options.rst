@@ -25,7 +25,6 @@ As you can see this dialog is divided into three tabs namely:
 * :ref:`advanced`
 
 .. figure:: /static/user-docs/inasafe-options-dialog.*
-   :scale: 75 %
    :align: center
    :alt: Options dialog
 

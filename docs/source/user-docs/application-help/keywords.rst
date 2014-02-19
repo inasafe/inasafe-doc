@@ -327,8 +327,8 @@ toolbar's options icon (as shown below) or by doing
    Selecting the options icon
 
 When the options dialog is opened, the keywords database path can be specified
-using the :guilabel:`keyword cache for remote datasources` option as shown
-below.
+under the tab :guilabel:`Advanced` using the
+:guilabel:`keyword cache for remote datasources` option as shown below.
 
 .. figure:: /static/user-docs/options-keyword-db-path.*
    :scale: 100 %
