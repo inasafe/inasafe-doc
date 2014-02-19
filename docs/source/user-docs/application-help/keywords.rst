@@ -222,7 +222,8 @@ The graphical user interface for keyword editing is divided into two parts:
 1) **Minimal mode**: In this mode, only following options are provided:
 
    * **Title** - a 'friendly' name for the dataset which will be displayed in
-     reports, the user interface and so on.
+     reports, the user interface and so on
+   * **Source** -. a field to inform from whom/where the dataset is obtained.
    * **Category** - A mandatory choice between 'hazard' and 'exposure'.
    * **Subcategory** - An amalgamated subcategory/units picklist
      (in the case of hazard) or amalgamated subcategory/datatype (in the case
