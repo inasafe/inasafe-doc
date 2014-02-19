@@ -91,8 +91,11 @@ The following tokenized keywords are supported:
 * **time** --- time of the assessment.
 * **safe-version** --- version of the plugin used.
 * **disclaimer** --- disclaimer text.
-  By default used next text: "InaSAFE has been jointly developed by BNPB,
-  Australian Government and the World Bank - GFDRR".
+  By default used next text: "InaSAFE has been jointly developed by 
+  Indonesian Government-BPNB, Australian Govenment-AIFDR and the World
+  Bank-GFDRR. These agencies and the individual software developers of 
+  InaSAFE take no responsibility for the correctness of outputs from 
+  InaSAFE or decisions derived as a consequence."
   To use custom disclaimer text, enter desired text the plugin Options
   dialog (see :ref:`toolbar_options` for details).
 
