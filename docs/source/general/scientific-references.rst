@@ -5,6 +5,7 @@ Reference
 
 |project_name| is being referenced in following articles:
 
+* `Seven Steps to Surviving a Disaster <http://www.bloomberg.com/news/2014-02-18/seven-steps-to-surviving-a-disaster.html>`_
 * `Presentation presented at Chengdu Forum on UN-GGIM <http://ggim.un.org/docs/meetings/Chengdu%20Forum/AIFDR%20InaSAFE%20Presentation%20Oct2013.pdf>`_
 * `Wired Magazine <http://www.asmmag.com/2012-12-30-14-40-18/feature/4871-asia-s-inasafe-national-disaster-impact-tool-gets-open-source-kudos.html>`_
 * `Black Duck Award <http://www.wired.com/wiredenterprise/2013/01/open-source-rookies-of-year/>`_
