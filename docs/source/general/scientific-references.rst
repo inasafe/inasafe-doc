@@ -1,7 +1,7 @@
-.. _scientific_references:
+.. _references:
 
-Scientific-Reference
-====================
+Reference
+=========
 
 |project_name| is being referenced in following articles:
 
