@@ -53,6 +53,21 @@ password                           kata sandi
 dropdown                           daftar pilihan
 default                            pengaturan bawaan
 contingency                        kontinjensi
+digitalization                     digitalisasi
+drag                               geser
+practicing                         mempraktikkan
+IDP camp                           tempat pengungsian
+map canvas                         kanvas peta
+filter                             penyaringan
+directory                          direktori
+log                                catatan
+web browser                        browser internet
+feature                            fitur
+liquefied                          tergenang
+intersect                          perpotongan
+disclaimer                         peringatan
+extent                             jangkauan
+
 
 ===============================    ===========================================
 
