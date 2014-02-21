@@ -6,6 +6,7 @@ Package::safe.postprocessors
 
    postprocessors/building_type_postprocessor
    postprocessors/aggregation_postprocessor
+   postprocessors/road_type_postprocessor
    postprocessors/postprocessor_factory
    postprocessors/gender_postprocessor
    postprocessors/abstract_postprocessor

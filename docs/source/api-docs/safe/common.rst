@@ -13,9 +13,10 @@ Package::safe.common
    common/geodesy
    common/polygon
    common/version
+   common/qgis_vector_tools
+   common/qgis_raster_tools
    common/exceptions
    common/signals
    common/utilities
    common/numerics
    common/shake_grid_converter
-   common/qgis_processing

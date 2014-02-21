@@ -12,6 +12,7 @@ Package::safe_qgis.utilities
    utilities/utilities_for_testing
    utilities/memory_checker
    utilities/keyword_io
+   utilities/qgis_layer_wrapper
    utilities/proxy
    utilities/impact_calculator
    utilities/utilities
