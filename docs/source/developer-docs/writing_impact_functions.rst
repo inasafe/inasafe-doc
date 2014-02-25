@@ -762,7 +762,6 @@ the 2 selected layers. :
 
             attributes[i][self.target_field] = cls
 
-
 target_field output to the keywords
 ...................................
 
@@ -786,6 +785,8 @@ When dealing with a vector type exposure, you also need to output what is the na
                    style_info=style_info)
 
          return V
+
+
 
 This function is available in full at
 :download:`/static/earthquake_building_impact_function.py`
