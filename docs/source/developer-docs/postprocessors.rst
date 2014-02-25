@@ -23,7 +23,7 @@ Creating postprocessors
 -----------------------
 
 Adding a new postprocessor is as simple as adding a new class called
-Xxxxxx Postprocessor that inherits AbstractPostprocessor with 2 mandatory
+XxxxxxPostProcessor that inherits AbstractPostprocessor with 2 mandatory
 methods (process, description), 2 optional ones and as many indicators as you
 need.
 
@@ -275,7 +275,6 @@ For example:
   the user.
   If there is a need to make a change, you can either define them inside the
   impact functions or modify the default needs defined in core.py.
->>>>>>> .merge_file_3FfEjf
 
 .. _types_of_aggreagation:
 
