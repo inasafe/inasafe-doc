@@ -23,7 +23,7 @@ Creating postprocessors
 -----------------------
 
 Adding a new postprocessor is as simple as adding a new class called
-XxxxxxPostProcessor that inherits AbstractPostprocessor with 2 mandatory
+XxxxxxPostprocessor that inherits AbstractPostprocessor with 2 mandatory
 methods (process, description), 2 optional ones and as many indicators as you
 need.
 
@@ -87,7 +87,7 @@ name)
                             }
 
 As last step you have to update or add the *parameters* variable to the impact
-functions that you want to use the new postprocessor. This will need to include
+functions that you want to use in the new postprocessor. This will need to include
 a dictionary of the available postprocessors as shown below.
 
 ::
@@ -170,7 +170,7 @@ impact layer.
 ::
 
     def setup(self, params):
-        """Intialises parameters.
+        """Initialises parameters.
         """
         AbstractPostprocessor.setup(self, None)
         if (self.impact_total is not None or
@@ -193,7 +193,7 @@ impact layer.
   the attribute is INUNDATED.
   This attribute was set and written as part of the keywords by the impact
   function.
-* key_attribute: attribute name tha t is used to get the type of the building
+* key_attribute: attribute name that is used to get the type of the building
   . This can either be set by the impact function or the default name 'type'
   will be used.
 
@@ -301,7 +301,7 @@ It is interesting to review some of the code in this post processor that is used
 ::
   
     def setup(self, params):
-        """Intialises parameters.
+        """Initialises parameters.
         """
         AbstractPostprocessor.setup(self, None)
         if (self.impact_total is not None or
@@ -322,11 +322,11 @@ It is interesting to review some of the code in this post processor that is used
 * key_attribute: attribute name that is used to get the type of the building. This can either be set by the impact function or the default name 'type' will be used. Note: key_attribute is for now only available for the BuildingType processor. To adjust/review this, please refer to postprocessor_manager class.
 
 
-Brief Review of AgePostProcessor
+Brief Review of AgePostprocessor
 --------------------------------
 
 This aggregator is expected to work on aggregation done on a raster impact layer. 
-Looking at the setup method, It is important to understand that the parameter impact_total will contain the aggregated value (normally the number of people of a particular aggregation area). It also uses a series of user configurable parameters that are used for ratio calculations. Other post processors such as GenderPostProcessor and MinimumNeedsPostprocessor are based on the same logic with a total impact number and customizable parameters.
+Looking at the setup method, It is important to understand that the parameter impact_total will contain the aggregated value (normally the number of people of a particular aggregation area). It also uses a series of user configurable parameters that are used for ratio calculations. Other post processors such as GenderPostprocessor and MinimumNeedsPostprocessor are based on the same logic with a total impact number and customizable parameters.
 
 ::
 
