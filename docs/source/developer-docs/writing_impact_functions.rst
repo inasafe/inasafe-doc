@@ -786,6 +786,8 @@ When dealing with a vector type exposure, you also need to output what is the na
 
          return V
 
+
+
 This function is available in full at
 :download:`/static/earthquake_building_impact_function.py`
 
