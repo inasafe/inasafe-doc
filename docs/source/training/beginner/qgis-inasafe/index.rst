@@ -1,7 +1,7 @@
 .. _begin_qgis_inasafe:
 
-Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level
-===========================================================
+Unit 2: Data Analysis Using QGIS and |project_name| Beginner Level
+==================================================================
 
 .. toctree::
    :maxdepth: 1

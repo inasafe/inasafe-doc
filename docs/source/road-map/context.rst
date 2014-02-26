@@ -20,8 +20,7 @@ Background
 ----------
 
 The scenario development methodology has been implemented in an open-source
-software tool called |project_name| (Indonesia Scenario Assessment For
-Emergencies).
+software tool called |project_name|.
 |project_name| is designed to help understand the likely impacts of disasters
 such as floods, earthquakes or tsunami. It combines spatial data sets
 representing hazard levels (e.g. ground shaking intensity, water depth,

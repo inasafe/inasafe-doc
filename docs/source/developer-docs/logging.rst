@@ -18,19 +18,22 @@ In this section we describe best practices and procedures for logging in
 Getting and using the named Logger instance
 -------------------------------------------
 
-We use the '|project_name|' logger instance as standard. It is the responsibility
-of each client package (e.g. :samp:`safe_qgis`) to setup the logger - typically
-in the :samp:`__init__.py` for the package::
+We use the '|project_name|' logger instance as standard.
+It is the responsibility of each client package (e.g. :samp:`safe_qgis`) to
+setup the logger - typically in the :samp:`__init__.py` for the package
+::
 
     from utilities import setupLogger
     setupLogger()
 
 The utility method that sets up the logger will determine which logging
-backends are made available. In the :samp:`safe_qgis` package, a number of
-different backends are setup in the :func:`setupLogger` function. The
-logger will typically be assigned to a module variable :samp:`LOGGER`.
+backends are made available.
+In the :samp:`safe_qgis` package, a number of different backends are setup in
+the :func:`setupLogger` function.
+The logger will typically be assigned to a module variable :samp:`LOGGER`.
 
-To actually use the logger in your module you need to do something like this::
+To actually use the logger in your module you need to do something like this
+::
 
     import logging
     LOGGER = logging.getLogger('InaSAFE')
@@ -41,7 +44,8 @@ To actually use the logger in your module you need to do something like this::
 Logging exceptions
 ------------------
 
-It is recommended to log exceptions as per the following example::
+It is recommended to log exceptions as per the following example
+::
 
     try:
         1/0
@@ -49,35 +53,38 @@ It is recommended to log exceptions as per the following example::
         LOGGER.exception('Something went terribly wrong')
 
 The exception log type will cause the full traceback, the exception message
-and the message provided to the LOGGER.exception call to all be logged e.g.::
+and the message provided to the LOGGER.exception call to all be logged e.g.
+::
 
     2012-10-10 10:53:54,733 - InaSAFE - ERROR - Something went terribly wrong
     Traceback (most recent call last):
       File "<input>", line 2, in <module>
     ZeroDivisionError: integer division or modulo by zero
 
-The above example was contrived in the QGIS python console. When the exception
-originates inside a module, the traceback will include the complete call tree.
+The above example was contrived in the QGIS python console.
+When the exception originates inside a module, the traceback will include the
+complete call tree.
 
 Logging in loops
 ----------------
 
 .. warning::
    Please be considerate when logging into loops as this can slow execution a
-   lot. We had a spatial analysis loop with two logged messages and it took
-   15sec for 1000 itterations, removing logging brought it to 5sec.
-   In another case, using 2700 aggregation units resulted in inasafe blocking
-   due to one single logging call.
+   lot.
+   We had a spatial analysis loop with two logged messages and it took 15sec
+   for 1000 itterations, removing logging brought it to 5sec.
+   In another case, using 2700 aggregation units resulted in |project_name|
+   blocking due to one single logging call.
    The issue is *probably* the refreshing of class QgsMessageLogViewer
    See also :ref:`profiling`
-
 
 Remote logging
 --------------
 
-There is support for logging to a remote server. This currently intended for
-developer use only and will provide ongoing statistics about the number and
-nature of exceptions taking place in |project_name|.
+There is support for logging to a remote server.
+This currently intended for developer use only and will provide ongoing
+statistics about the number and nature of exceptions taking place in
+|project_name|.
 
 .. note:: For privacy / security reasons this is disabled by default and you
     need to jump through two hoops to make it work.
@@ -85,20 +92,24 @@ nature of exceptions taking place in |project_name|.
 The remote server is available here: http://sentry.linfiniti.com/inasafe/
 
 Remote logging is implemented using `raven <http://pypi.python.org/pypi/raven>`_
-and `sentry <http://pypi.python.org/pypi/sentry>`_. Raven needs to be installed
-on the local client. On ubuntu you can install it by doing::
+and `sentry <http://pypi.python.org/pypi/sentry>`_.
+Raven needs to be installed on the local client.
+On ubuntu you can install it by doing
+::
 
     sudo pip install raven
 
 To prevent user's unwittingly sending exception reports, it is required to
-first set an environment variable before starting QGIS / running tests::
+first set an environment variable before starting QGIS / running tests
+::
 
     export INASAFE_SENTRY=1
 
 .. note:: The sentry logger is set to only log exceptions.
 
 Here is an example session which will install raven, enable sentry and then
-launch QGIS::
+launch QGIS
+::
 
     sudo pip install raven
     export INASAFE_SENTRY=1
@@ -108,9 +119,9 @@ QGIS Log Messages
 -----------------
 
 For the :samp:`safe_qgis` package, log messages will also be written to the
-QGIS log console under a tab labelled '|project_name|'. You can view these
-messages by clicking on the small triangular icon in the bottom right corner
-of the QGIS main window.
+QGIS log console under a tab labelled '|project_name|'.
+You can view these messages by clicking on the small triangular icon in the
+bottom right corner of the QGIS main window.
 
 .. figure:: /static/log-notifications.png
    :align:   center
@@ -129,5 +140,6 @@ Logging with third party applications
 If you have written your one SAFE library client, you should set up your own
 logger instance - just be sure that it is a named logger (called
 :samp:`InaSAFE`) and any log messages from the safe library will be written
-to your logger. For inspiration on how to do this, take a look at the
-:func:`setupLogger` function in :file:`safe_qgis/utilities.py`.
+to your logger.
+For inspiration on how to do this, take a look at the :func:`setupLogger`
+function in :file:`safe_qgis/utilities.py`.

@@ -13,7 +13,8 @@ The latest version of |project_name| can be found following the
 
 **I found a bug, how should I report it?**
 
-We manage the project issues using a GitHub issue tracker. The
+We manage the project issues using a GitHub issue tracker.
+The
 `InaSAFE <https://github.com/AIFDR/inasafe/issues?direction=desc&sort=created&state=open>`_
 issue tracker is open to everyone, though you will first need to register a
 (free) account on GitHub to use it.
@@ -60,7 +61,8 @@ For raster data, use gdalwarp, for example
 
    gdalwarp -t_srs EPSG:4326 <source>.tif <target>.tif
 
-For vector data use ogr2ogr. For example from TM-3 zone 48.2
+For vector data use ogr2ogr.
+For example from TM-3 zone 48.2
 ::
 
    ogr2ogr -s_srs EPSG:23834 -t_srs EPSG:4326 <target>.shp <source>.shp
@@ -68,9 +70,9 @@ For vector data use ogr2ogr. For example from TM-3 zone 48.2
 
 **How do I get OpenStreetMap building data?**
 
-This tool will fetch building ('structure') and highway ('road') data from the 
-OpenStreetMap project for you. For more information see 
-:ref:`openstreetmap_downloader` section
+This tool will fetch building ('structure') and highway ('road') data from the
+OpenStreetMap project for you.
+For more information see :ref:`openstreetmap_downloader` section
 
 **How do I take screen capture e.g. for use in a presentation?**
 
@@ -83,7 +85,6 @@ Convert to other formats using mencoder, e.g
    vcodec=mpeg4:vpass=1 -of lavf -o yogya_analysis.avi
 
 or
-
 ::
 
    mencoder -idx yogya_analysis-6.ogv -ovc lavc -oac lavc -lavcopts \
@@ -96,11 +97,11 @@ For vector to raster conversion, use gdal_rasterize utility, for example
 
    gdal_rasterize -a <attribute_name> -l <source>.shp <destination>.tif
 
-
 * Why does the plugin not show up in my QGIS Plugin Manager?
 
 One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not
-get the new plugin repo added to your repo list. To fix this you can do:
+get the new plugin repo added to your repo list.
+To fix this you can do:
 
 * open QGIS
 * Go :menuselection:`Plugins --> Fetch Python Plugins`
@@ -108,28 +109,29 @@ get the new plugin repo added to your repo list. To fix this you can do:
 * Click :guilabel:`add`
 * :guilabel:`Name`: Official QGIS Repository
 * :guilabel:`Url`: http://plugins.qgis.org/plugins/plugins.xml
-* Save it and the plugin repo list should update. If it doesn't,
-  close and open QGIS to force an update.
+* Save it and the plugin repo list should update.
+  If it doesn't, close and open QGIS to force an update.
 * In the python plugin manager main tab now you should find |project_name|
   available
 
 **How do I fix KeywordDbError on Windows?**
 
-It’s an issue related to permission issue. Normally, it occurs when
-the keyword.db is not writable by current user.
+It’s an issue related to permission issue.
+Normally, it occurs when the keyword.db is not writable by current user.
 The thing that you have to do is re-run QGIS as Administrator or re-install
 QGIS as Administrator.
 
-Another way to solve it is deleting the registry of InaSAFE.
+Another way to solve it is deleting the registry of |project_name|.
 You can do it by opening :guilabel:`regedit` (Registry Editor).
 To open regedit, you need to search it in :guilabel:`Start Menu` (it is
 usually not shown in Start Menu).
 
 Open regedit.
 
-Find inasafe registry under :menuselection:`My Computer--> Software --> QGIS --> QGIS --> PythonPlugins`. After that,
-right click on the inasafe, and click :guilabel:`Delete`. Restart QGIS and
-try to run InaSAFE again to see if it works.
+Find inasafe registry under
+:menuselection:`My Computer--> Software --> QGIS --> QGIS --> PythonPlugins`.
+After that, right click on the inasafe, and click :guilabel:`Delete`.
+Restart QGIS and try to run |project_name| again to see if it works.
 
 Please see `InaSAFE issue #459 <https://github.com/AIFDR/inasafe/issues/459>`_
 , `InaSAFE issue #564 <https://github.com/AIFDR/inasafe/issues/564>`_, and

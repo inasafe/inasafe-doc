@@ -15,7 +15,7 @@ After the launch of |project_name| in October 2012, |AIFDR| on behalf of
 planning training in 6 Indonesian provinces through the Humanitarian
 OpenStreetMap Team (HOT) and the University of Gadjah Mada (UGM).
 The training consisted of 2 sections, data collection through OpenStreetMap and
-data analysis through QGIS and InaSAFE.
+data analysis through QGIS and |project_name|.
 The training was conducted in 3 stage beginner, intermediate and Train the
 Trainer.
 At present the training program is being revised by HOT to incorporate
@@ -30,17 +30,17 @@ managers, scientist, and other stakeholders to devise a priority list for
 |project_name| in Indonesia.
 
 The World Bank through |GFDRR| is developing an online version of
-|project_name|, using the core functionality of QGIS-InaSAFE,
+|project_name|, using the core functionality of QGIS-|project_name|,
 the online version will allow people to complete the same core analysis
 without having to download the software.
-|GFDRR| is also helping other countries to roll out InaSAFE to disaster
+|GFDRR| is also helping other countries to roll out |project_name| to disaster
 managers in the field.
 
 Technical Working Group
 -----------------------
 
 |project_name| Technical Working Group (TWG) are the day to day drivers of
-InaSAFE.
+|project_name|.
 At present we have only 4 core members of the TWG, they are the nominated
 person from each of the 3 agencies |BNPB|, |AIFDR| and |GFDRR| as well as the
 release manager.
@@ -77,8 +77,8 @@ users to continually update |project_name|'s roadmap.
 Project Steering Committee
 --------------------------
 
-The high level decisions and strategic direction for the InaSAFE project is
-governed by the Project Steering Committee (PSC).
+The high level decisions and strategic direction for the |project_name|
+project is governed by the Project Steering Committee (PSC).
 
 This group is responsible for approving the |project_name| roadmap.
 

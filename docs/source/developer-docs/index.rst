@@ -7,7 +7,7 @@ Additional useful links for developers:
 
 * GitHub site for |project_name| : https://github.com/AIFDR/inasafe/
 * Continuous Integration testbed for |project_name| :
-  http://jenkins.linfiniti.com/job/InaSAFE/
+  http://jenkins.inasafe.org/view/QGIS2-InaSAFE-master/
 * QGIS Plugin Home Page : http://plugins.qgis.org/plugins/inasafe/
 * |project_name| Ohloh Project Stats : https://www.ohloh.net/p/inasafe
 

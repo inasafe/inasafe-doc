@@ -179,16 +179,18 @@ PyCharm Setup
 -------------
 
 `PyCharm <http://www.jetbrains.com/pycharm/>`_ is our preferred and supported
-IDE for InaSAFE. Although the software is not free, as InaSAFE is an open source
-project, InaSAFE developers may use PyCharm without charge - please contact
-the project team for details on how to activate your copy.
+IDE for |project_name|.
+Although the software is not free, as |project_name| is an open source
+project, |project_name| developers may use PyCharm without charge - please
+contact the project team for details on how to activate your copy.
 
-To set up PyCharm on OSX you should first download and install your copy as per the
-instructions on the PyCharm web site as linked in the paragraph above.
+To set up PyCharm on OSX you should first download and install your copy as
+per the instructions on the PyCharm web site as linked in the paragraph above.
 
-We store the PyCharm .idea directory in the source of InaSAFE so using InaSAFE should
-simply be a question of opening the inasafe-dev directory that you checked out
-earlier and making the following small configuration changes:
+We store the PyCharm .idea directory in the source of |project_name| so using
+|project_name| should simply be a question of opening the inasafe-dev
+directory that you checked out earlier and making the following small
+configuration changes:
 
 
 1) Create a new python environment profile in
