@@ -9,8 +9,8 @@ Module 1: Review QGIS
 - Explain about data symbology
 - Explain about map layout
 
-Before we dive deeper into InaSAFE, we will spend this Module in a review of
-the QGIS techniques that we covered in Unit 2.
+Before we dive deeper into |project_name|, we will spend this Module in a
+review of the QGIS techniques that we covered in Unit 2.
 We will once more go over some of they key aspects of QGIS,
 including adding vector and raster layers, symbolizing layers,
 and using the Print Composer for layouting.
@@ -232,4 +232,4 @@ Play around a bit with the Print Composer if you like,
 and refresh your memory!
 
 We hope this was a useful refresher.
-Now it’s time to get back to InaSAFE!
+Now it’s time to get back to |project_name|!

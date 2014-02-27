@@ -318,8 +318,9 @@ Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
 41. :guilabel:`Run` |project_name|
 
-.. note:: InaSAFE is design to zoom into the extent of impact zone,
-   hence in a minute or so, it will automatically zoom into Padang.
+.. note::
+    |project_name| is design to zoom into the extent of impact zone,
+    hence in a minute or so, it will automatically zoom into Padang.
 
 42. Investigate the results, both by looking at the |project_name| results,
     and using the information tool to select a building.
@@ -345,9 +346,10 @@ click on each of them to read the keywords in the |project_name| window.
 .. image:: /static/training/socialisation/073_tsunami.*
    :align: center
 
-.. note:: The InaSAFE functionality for Tsunami and floods are very similar,
-   however due to the force of the tsunami waves, the maximum depth of the
-   water that would affect people and infrastructure is shallower.
+.. note::
+    The |project_name| functionality for Tsunami and floods are very similar,
+    however due to the force of the tsunami waves, the maximum depth of the
+    water that would affect people and infrastructure is shallower.
 
 45. Confirm that |project_name| window has the following boxes.
 
@@ -373,9 +375,9 @@ Map Canvas Extent
 .. image:: /static/training/socialisation/074_tsunami_zoom.*
    :align: center
 
-You will now see that your results are different than the original InaSAFE
-runs, this is because your extent window determines the area in which you are
-analysing the data.
+You will now see that your results are different than the original
+|project_name| runs, this is because your extent window determines the area
+in which you are analysing the data.
 The next chapter will show you how to change this if needed.
 
 .. note:: The population coverage coastline in this zoomed in area is

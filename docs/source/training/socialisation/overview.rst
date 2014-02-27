@@ -58,8 +58,8 @@ For example location of primary schools and estimated number of students
 affected by a possible tsunami in Maumere (when it happened during the school
 hours).
 |project_name| has been developed as a QGIS plugin to enable end users to not
-only complete an InaSAFE analysis, but to also analysis the result using the
-suite of QGIS tools that are available.
+only complete an |project_name| analysis, but to also analysis the result
+using the suite of QGIS tools that are available.
 The software has been designed as a simple user interface in a hope that
 disaster managers and end users can easily use |project_name| for creating
 impact maps to inform contingency planning.
@@ -168,7 +168,7 @@ The hazard must be accompanied by specific units:
 | \*Cyclone/Tornado      |                                         |                      |
 +------------------------+-----------------------------------------+----------------------+
 
-*\*To come in future version of InaSAFE*
+*\*To come in future version of* |project_name|
 
 The input Hazard layer must have:
 
@@ -198,10 +198,10 @@ a specific hazard.
 | \! Landslide             | Agriculture, industrial                   |
 +--------------------------+-------------------------------------------+
 
-\* Is available for hazard layer footprints only, the next version of InaSAFE
-   will allow for Modelled hazards.
+\* Is available for hazard layer footprints only, the next version of
+   |project_name| will allow for Modelled hazards.
 
-\! To come in future version of InaSAFE
+\! To come in future version of |project_name|
 
 The input Exposure layer must have:
 
@@ -215,9 +215,9 @@ Aggregation
 |project_name| prides itself on simplicity, but with each question answered a
 new one arises.
 "In the event of **<hazard>** how many **<exposure>** will be affected?",
-is the core question that is answered by InaSAFE, but aggregation adds to
-this by providing options to divide your results by area such as province
-boundaries.
+is the core question that is answered by |project_name|,
+but aggregation adds to this by providing options to divide your results by
+area such as province boundaries.
 Instead of just knowing the total number of people affected by the hazard,
 |project_name| is able to aggregate the results allowing the user to
 understand how many people are affected in a certain administration area.
@@ -241,7 +241,7 @@ The output of the impact function will typically have a spatial component (e
 non-spatial component (e.g. a list of estimates of disaster risk reduction
 elements such as how many kilos of rice to make available,
 or a list of actions you may want to consider carrying out) which will be
-found in the InaSAFE window panel.
+found in the |project_name| window panel.
 
 Impact functions can be written for any contingency planning purpose,
 one example is the minimum needs (minimum quantity of relief items per per
@@ -293,7 +293,8 @@ Available Impact Functions
 | Volcano           | Buildings      | be affected              | Number of buildings affected                                       |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 
-*\*This is not the complete list of Impact functions currently in InaSAFE.*
+*\*This is not the complete list of Impact functions currently in*
+|project_name|
 
 Output Data
 -----------

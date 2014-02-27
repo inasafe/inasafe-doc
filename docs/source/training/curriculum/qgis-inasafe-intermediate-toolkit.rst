@@ -226,8 +226,8 @@ Activities
 
 **Session 2**
 ^^^^^^^^^^^^^
-Preparing Data for InaSAFE
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Preparing Data for |project_name|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 185 minutes
 
 Basic Competency
@@ -249,7 +249,7 @@ Hazard Impact map based on |project_name| analysis result
 
 Core Material
 *************
-*Preparing Data and Keyword for InaSAFE*
+*Preparing Data and Keyword for* |project_name|
 
 1. Review about Input
 2. Get OSM Data from HOT Exports

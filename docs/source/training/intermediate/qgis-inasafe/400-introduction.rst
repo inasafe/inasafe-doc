@@ -106,17 +106,17 @@ Preface
 Welcome to the Intermediate Unit on Spatial Analysis.
 By now you should be adept in data collection techniques and have a solid
 foundation in analysis with QGIS.
-In this unit we will be focusing again on InaSAFE and QGIS skills that aid
-in contingency planning.
+In this unit we will be focusing again on |project_name| and QGIS skills that
+aid in contingency planning.
 
 First, we will undertake a review of unit 2, to ensure that we remember all
 the QGIS skills that we studied.
-Then we will begin working on another InaSAFE project using flood data as
-our hazard.
+Then we will begin working on another |project_name| project using flood data
+as our hazard.
 We will consider the best possible evacuation routes and locations for IDP
 camps, calculate damages and losses and learn how to display them on a map.
 
 This unit covers much of what we have been working toward.
 We will bring together the data which we now know how to collect in
-OpenStreetMap, QGIS spatial analysis skills, and the power of InaSAFE to help
-develop effective and informative contingency plans.
+OpenStreetMap, QGIS spatial analysis skills, and the power of |project_name|
+to help develop effective and informative contingency plans.

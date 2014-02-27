@@ -1,8 +1,8 @@
 Unit 2 Facilitator Guide
 ========================
 
-Beginner QGIS-InaSAFE Trainer's Toolkit - (A Guide for Facilitator)
--------------------------------------------------------------------
+Beginner QGIS-|project_name| Trainer's Toolkit - (A Guide for Facilitator)
+--------------------------------------------------------------------------
 
 BADAN NASIONAL PENANGGULANGAN BENCANA
 .....................................
@@ -12,8 +12,8 @@ BADAN NASIONAL PENANGGULANGAN BENCANA
 About Toolkit
 ^^^^^^^^^^^^^
 
-**Beginner QGIS-InaSAFE Toolkit** is designed to prepare facilitators to
-deliver training for QGIS and |project_name| new user.
+**Beginner QGIS-**|project_name|**Toolkit** is designed to prepare
+facilitators to deliver training for QGIS and |project_name| new user.
 The materials contained in it will prepare you to carry out training with a
 variety of audiences, including common problems and mistakes,
 as well as providing a variety of best methodologies for you to be able
@@ -294,8 +294,8 @@ Activities
 
 **Session 2**
 ^^^^^^^^^^^^^
-QGIS and InaSAFE for Contingency Planning
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+QGIS and |project_name| for Contingency Planning
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 45 minutes
 
 Basic Competency

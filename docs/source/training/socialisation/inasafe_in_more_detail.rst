@@ -323,7 +323,7 @@ Evacuation as a percentage
    location to be determined unsafe.
    However when you don`t know how deep the water is and you only know the
    flooded area, it is hard to determine how many people will need evacuating.
-   InaSAFE therefore needs your help!
+   |project_name| therefore needs your help!
 
 Instead of determining how many people will be evacuated by  a spatial area,
 this scenario used the affected population.
@@ -410,8 +410,8 @@ Island -as the name suggest its a huge amount of islands!)
 
 37. Use the :guilabel:`Add Vector` button
 
-38. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE
-    Projects*, :guilabel:`Select` *district_osm_jakarta.shp*,
+38. Use :guilabel:`Browse` to navigate to the *data* folder within
+    *InaSAFE Projects*, :guilabel:`Select` *district_osm_jakarta.shp*,
     :guilabel:`Open` in the **Open an OGR Support** window and
     :guilabel:`Open` again in the **Source** window.
 
