@@ -204,10 +204,13 @@ this
 Which pushes the Indonesian updated translations files to transifex at the end
 ready for further input from translators.
 
+Pushing individual files
+^^^^^^^^^^^^^^^^^^^^^^^^
+
 You can also push individual files like this
 ::
 
-    tx push -s -l id -r safe
+    tx push -s -l id -r inasafe-develop.safe_qgis
 
 that will push the source (-s) for language (-l) id for the resource (-r)
 safe up to the transifex web server.
@@ -218,10 +221,20 @@ safe up to the transifex web server.
 Or like this (pushing translation too)
 ::
 
-    tx push -s -t -l id -r safe
+    tx push -s -t -l id -r inasafe-develop.safe_qgis
 
 that will push the source (-s) and translation file (-t) for language (-l) id
 for the resource (-r) safe up to the transifex web server.
+
+Pulling individual files
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can pull individual translations from transifex to incorporate them into
+your local code tree.::
+
+    tx pull -l id -r inasafe-develop.safe_qgis
+
+Notice that there is no (-s) option for pull - you can only get the translation.
 
 QGIS Plugin
 -----------
