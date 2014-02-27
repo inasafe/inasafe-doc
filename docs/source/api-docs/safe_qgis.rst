@@ -8,8 +8,8 @@ Package::safe_qgis
    safe_qgis/safe_interface
    safe_qgis/plugin
    safe_qgis/utilities
-   safe_qgis/tools
-   safe_qgis/report
    safe_qgis/widgets
-   safe_qgis/impact_statistics
+   safe_qgis/report
+   safe_qgis/tools
    safe_qgis/batch
+   safe_qgis/impact_statistics

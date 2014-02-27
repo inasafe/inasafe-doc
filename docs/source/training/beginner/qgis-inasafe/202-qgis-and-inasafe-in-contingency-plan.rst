@@ -64,7 +64,7 @@ For ever important infrastructure data, collecting data at a community
 level is key, which is why in the previous unit we learned how to utilize the
 crowd-sourced OpenStreetMap platform.
 
-**QGIS and InaSAFE**
+**QGIS and** |project_name|
 
 QGIS is a user friendly open-source Geographic Information System (GIS).
 It runs on Windows, Mac OSX, and Linux.

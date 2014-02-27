@@ -4,6 +4,7 @@
 #
 # Translators:
 # adissadis <adz.only@gmail.com>, 2013
+# adissadis <adz.only@gmail.com>, 2014
 # dewisulistio <dewi.sulistioningrum@hotosm.org>, 2013
 # dika <mahardika.fadmastuti@gmail.com>, 2013
 # emirhartato <emir.hartato@gmail.com>, 2014
@@ -13,9 +14,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-18 16:37+0700\n"
-"PO-Revision-Date: 2014-02-18 09:25+0000\n"
-"Last-Translator: macho <werner.macho@gmail.com>\n"
+"POT-Creation-Date: 2014-02-27 15:41+0100\n"
+"PO-Revision-Date: 2014-02-20 07:10+0000\n"
+"Last-Translator: emirhartato <emir.hartato@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
 "develop/language/id/)\n"
 "Language: id\n"
@@ -29,7 +30,7 @@ msgstr ""
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:8
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:18
 msgid "OpenStreetMap Downloader"
-msgstr "Mendownload OpenStreetMap"
+msgstr "OpenStreetMap Downloader"
 
 # 98bf13e574b9439c8192ec23e874d328
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:10
@@ -72,6 +73,11 @@ msgid ""
 "wide building footprint data. Generally datasets at a city level and below "
 "should work well."
 msgstr ""
+"Layanan *download* ini memiliki keterbatasan terhadap besarnya dataset yang "
+"dapat diterima. Kemungkinan Anda akan mendapati isu ketika mencoba untuk "
+"mengambil misalnya untuk data batas tapak bangunan seluas satu negara. "
+"Umumnya pen-*download*-an dataset pada level perkotaan dan di bawahnya "
+"seharusnya mampu bekerja lebih baik."
 
 # df12b5e1edd14b11bb76992981319f19
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:34
@@ -85,6 +91,9 @@ msgid ""
 "retrieved. For fine-grained control, you can set the bounding box manually "
 "in the area provided at the bottom of the dialog."
 msgstr ""
+"Gunakan QGIS untuk memperbesar ke daerah yang Anda ingin dapatkan datanya. "
+"Untuk mendapatkan area yang Anda inginkan, anda bisa mengatur kotak secara "
+"manual di area yang disediakan pada bagian bawah dari dialog."
 
 # 293f051f6ad047d39ddb5d926ca26cfd
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:40
@@ -117,7 +126,7 @@ msgstr ""
 # ea23f849093e49dca4bdfad92fd3a474
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:50
 msgid "Press the :guilabel:`OK Button` and wait for the data to be retrieved."
-msgstr "Tekan :guilabel:`OK Button` dan tunggu data untuk diambil."
+msgstr "Tekan :guilabel:`OK` dan tunggu data untuk diambil."
 
 # 5ec1d1efefa341d19de1804ba652dbc4
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:53
@@ -259,6 +268,10 @@ msgid ""
 "have downloaded, only some of these categories may be present in your "
 "buildings dataset."
 msgstr ""
+"Jenis turunan akan hadir dalam sebuah *field* yang disebut 'type' saat men-"
+"*download* data bangunan. Perhatikan bahwa hal ini tergantung pada daerah "
+"mana yang anda *download*, kemungkinan hanya beberapa dari kategori ini yang "
+"akan muncul pada set data bangunan Anda."
 
 # 0378656337dd40caa27f22fa340b4bc8
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:96
@@ -289,6 +302,8 @@ msgstr ""
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:105
 msgid "Motorway / highway (includes 'trunk' from OSM)"
 msgstr ""
+"Jalan besar / jalan bebas hambatan (termasuk 'trunk' / jalan penting dari "
+"OSM)"
 
 # 66e176452cdd4fbdaf83262c340b99d8
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:106
@@ -339,7 +354,7 @@ msgstr ""
 # 825a6e5328cb43b4b36204bbf0e0e19d
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:116
 msgid "Track"
-msgstr ""
+msgstr "*Track*"
 
 # f582592e6d0643eeb9237b4c38d9c3bd
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:117
@@ -357,3 +372,8 @@ msgid ""
 "zoom out the roads will be rendered using different styles to avoid an "
 "overly cluttered map at small scales."
 msgstr ""
+"Data jalan telah disimbolisasi menggunakan aturan-aturan yang disesuaikan "
+"dengan yang ada di QGIS. Seperti bila Anda mencoba untuk memperkecilnya "
+"hingga terlihat jalan-jalannya akan disesuaikan dengan gaya (*style*) yang "
+"berbeda untuk menghindari peta terlalu nampak berantakan dalam skala yang "
+"lebih kecil."

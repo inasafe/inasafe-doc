@@ -4,16 +4,16 @@ Package::safe_qgis.utilities
 .. toctree::
    :maxdepth: 2
 
+   utilities/styling
    utilities/clipper
+   utilities/proxy
+   utilities/utilities_for_testing
+   utilities/qgis_layer_wrapper
    utilities/defaults
    utilities/help
-   utilities/custom_logging
-   utilities/impact_calculator_thread
-   utilities/utilities_for_testing
-   utilities/memory_checker
    utilities/keyword_io
-   utilities/qgis_layer_wrapper
-   utilities/proxy
    utilities/impact_calculator
+   utilities/custom_logging
+   utilities/memory_checker
    utilities/utilities
-   utilities/styling
+   utilities/impact_calculator_thread

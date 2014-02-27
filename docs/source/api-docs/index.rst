@@ -1,7 +1,7 @@
 API documentation
 =================
-This is the API documentation for the |project_name| project.
-You can find out more about the |project_name| project by visiting
+This is the API documentation for the InaSAFE project.
+You can find out more about the InaSAFE project by visiting
 `inasafe.org <http://www.inasafe.org/>`_.
 
 Package safe

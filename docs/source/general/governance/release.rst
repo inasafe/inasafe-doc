@@ -37,7 +37,7 @@ from the majority of the allocated committee.
   **TWG members**.
 
 
-**Definition of software release levels for the InaSAFE project**
+**Definition of software release levels for the** |project_name| **project**
 
 |project_name| is built as an add-on to QGIS so has adopted the conventions
 used in QGIS:

@@ -483,7 +483,7 @@ The script can be used with the following options:
   all known shake events on the server.
   Events are listed as their full ftp url e.g.
   :file:`ftp://118.97.83.243/20121106084105.out.zip` and both *inp* and *out*
-   files are listed.
+  files are listed.
 * **[event id]**: :samp:`scripts/make-shakemap.sh 20121106084105` - retrieve
   and process a single shake event.
   A pdf, png and thumbnail will be produced.

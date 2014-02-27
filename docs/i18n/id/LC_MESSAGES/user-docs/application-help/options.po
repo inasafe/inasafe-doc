@@ -17,9 +17,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-20 15:14+0700\n"
-"PO-Revision-Date: 2014-02-18 09:26+0000\n"
-"Last-Translator: macho <werner.macho@gmail.com>\n"
+"POT-Creation-Date: 2014-02-27 15:41+0100\n"
+"PO-Revision-Date: 2014-02-20 03:30+0000\n"
+"Last-Translator: emirhartato <emir.hartato@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
 "develop/language/id/)\n"
 "Language: id\n"
@@ -67,17 +67,17 @@ msgstr "Seperti yang dapat anda lihat, dialog ini terbagi menjadi tiga tab:"
 # 813375d72d044e898ba78e7ea1648050
 #: ../../source/user-docs/application-help/options.rst:27
 msgid ":ref:`basic_options`"
-msgstr ""
+msgstr ":ref:`basic_options`"
 
 # 7dcaf5dac3fb4b3cbf070430ccaee339
 #: ../../source/user-docs/application-help/options.rst:28
 msgid ":ref:`template_options`"
-msgstr ""
+msgstr ":ref:`template_options`"
 
 # 1b7275ccce0f44ca868e20f990b1e415
 #: ../../source/user-docs/application-help/options.rst:29
 msgid ":ref:`advanced`"
-msgstr ""
+msgstr ":ref:`advanced`"
 
 # 9a927921085a43048e2ecfa69b73839c
 #: ../../source/user-docs/application-help/options.rst:35
@@ -162,13 +162,13 @@ msgstr ""
 # f459f2fba7684e6f9dcbbbdf4e85184e
 #: ../../source/user-docs/application-help/options.rst:62
 msgid ""
-":guilabel:`When clipping, also clip features (e.g. will clip polygon smaller)"
-"`: This option will any polygons that extend beyond the analysis extents to "
-"be clipped so that they are contained by the analysis extents. For example "
-"if you have a flood hazard polygon layer that extends far beyond your area "
-"of interest, the flood polygons will be reduced so that only the part inside "
-"of your area of interested is retained. This can speed up processing time "
-"somewhat."
+":guilabel:`When clipping, also clip features (e.g. will clip polygon "
+"smaller)`: This option will any polygons that extend beyond the analysis "
+"extents to be clipped so that they are contained by the analysis extents. "
+"For example if you have a flood hazard polygon layer that extends far beyond "
+"your area of interest, the flood polygons will be reduced so that only the "
+"part inside of your area of interested is retained. This can speed up "
+"processing time somewhat."
 msgstr ""
 ":guilabel:`Potong fitur saat melakukan clipping (akan memotong poligon "
 "menjadi lebih kecil)`: Pilihan ini, setiap poligon yang melampaui luasan "
@@ -195,6 +195,9 @@ msgid ""
 ":guilabel:`Female ratio default value` : This is the default female to total "
 "population ratio used for generating Gender breakdowns"
 msgstr ""
+":guilabel:`Nilai default perbandingan wanita` : Ini adalah pengaturan bawaan "
+"nilai perbandingan wanita terhadap total populasi yang digunakan untuk "
+"menghasilkan rincian berdasarkan jenis kelamin. "
 
 # 04f7fd4b2e594693954a5c9df222cc88
 #: ../../source/user-docs/application-help/options.rst:79
@@ -214,8 +217,16 @@ msgstr ""
 "dampak anda. Lihat :ref:`toolbar_reports` pada Panduan Pengguna |"
 "project_name| untik informasi lebih lanjut mengenai laporan."
 
-# ae07c549cc924beaa09b672774cc92be
+# 1fcaab8802094937abac9e55f76c4416
 #: ../../source/user-docs/application-help/options.rst:85
+msgid ""
+":guilabel:`Show organisation logo in the main panel too`: If this is enabled "
+"then the selected organisation logo (if any) will be displayed in the bottom "
+"of the inasafe dock panel."
+msgstr ""
+
+# ae07c549cc924beaa09b672774cc92be
+#: ../../source/user-docs/application-help/options.rst:88
 msgid ""
 ":guilabel:`Report templates directory`: This option is used to determine a "
 "directory with custom templates. Templates from this directory will be "
@@ -231,7 +242,7 @@ msgstr ""
 "laporan. "
 
 # 0bfd9cd19e094c3c8316b154eb01cb88
-#: ../../source/user-docs/application-help/options.rst:91
+#: ../../source/user-docs/application-help/options.rst:94
 msgid ""
 ":guilabel:`Organisation disclaimer text`: This option is used to change "
 "default disclaimer text, printed in reports. Just enter your own text and it "
@@ -245,12 +256,12 @@ msgstr ""
 "lanjut mengenai laporan."
 
 # 82804a285d714fc1b8c67afd2d040384
-#: ../../source/user-docs/application-help/options.rst:100
+#: ../../source/user-docs/application-help/options.rst:103
 msgid "Advanced"
 msgstr "Pilihan Lanjutan"
 
 # 9dda216a452843a287640ed2b7079ac7
-#: ../../source/user-docs/application-help/options.rst:102
+#: ../../source/user-docs/application-help/options.rst:105
 msgid ""
 ":guilabel:`Keyword cache for remote datasources` : This option is used to "
 "determine where keywords are stored for datasets where it is not possible to "
@@ -264,7 +275,7 @@ msgstr ""
 "informasi mengenai sistem kata kunci."
 
 # 0672fc3251294d1ba83f8bc54bf979f1
-#: ../../source/user-docs/application-help/options.rst:107
+#: ../../source/user-docs/application-help/options.rst:110
 msgid ""
 ":guilabel:`Help to improve InaSAFE by submitting errors to a remote "
 "server` : This option, when enabled, will submit diagnostic information back "
@@ -283,7 +294,7 @@ msgstr ""
 "dibawah pilihan ini yang disertakan disini secara penuh:"
 
 # 1a2f7a8a27394d668ad41e74dce546ab
-#: ../../source/user-docs/application-help/options.rst:118
+#: ../../source/user-docs/application-help/options.rst:121
 msgid ""
 "The above setting requires a QGIS restart to disable/enable. Error messages "
 "and diagnostic information will be posted to http://sentry.linfiniti.com/"
@@ -303,7 +314,7 @@ msgstr ""
 "informasi lain dari sistem anda."
 
 # 13afcc6ea4b74422b19e1971de404c8d
-#: ../../source/user-docs/application-help/options.rst:127
+#: ../../source/user-docs/application-help/options.rst:130
 msgid ""
 ":guilabel:`Enable developer mode` :  With this option enabled, you can right "
 "click on the report area and use the webkit debug tools to debug the output. "
@@ -315,7 +326,7 @@ msgstr ""
 "hanya untuk pengguna yang mahir.** "
 
 # 5afe3f8f3a5942b0a41ecf8bc45890fe
-#: ../../source/user-docs/application-help/options.rst:131
+#: ../../source/user-docs/application-help/options.rst:134
 msgid ""
 ":guilabel:`Use QGIS zonal statistics` : With this button you can toggle "
 "between using QGIS internal zonal statistics or the one that comes with |"
@@ -326,7 +337,7 @@ msgstr ""
 "statistik yang tersedia dalam |project_name|"
 
 # be46fafde2d941648f3b05c03f3b619c
-#: ../../source/user-docs/application-help/options.rst:136
+#: ../../source/user-docs/application-help/options.rst:139
 msgid ""
 "You can click on the :guilabel:`Help` button at any time and it will open "
 "the help documentation browser to this page."
@@ -335,7 +346,7 @@ msgstr ""
 "bantuan pencarian dokumentasi untuk halaman ini"
 
 # 09c98c41c72648bab83bdefa1ad28966
-#: ../../source/user-docs/application-help/options.rst:140
+#: ../../source/user-docs/application-help/options.rst:143
 msgid ""
 "Pressing :guilabel:`Cancel` at any time will close the options dialog and "
 "any changes made will **not** be applied. Pressing :guilabel:`OK` at any "
@@ -348,7 +359,7 @@ msgstr ""
 "diterapkan."
 
 # bb9cfdf7f95649ec8cbbf0667976ab09
-#: ../../source/user-docs/application-help/options.rst:145
+#: ../../source/user-docs/application-help/options.rst:148
 msgid ""
 "The exact button order shown on this dialog may differ depending on your "
 "operating system or desktop environment."

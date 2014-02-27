@@ -1,7 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
-Module 12: Understanding InaSAFE
-================================
+Module 12: Understanding |project_name|
+=======================================
 
 **Learning Objectives**
 
@@ -72,7 +72,7 @@ and those mildly damaged.
 In other words, what goes in to |project_name| are hazards and exposure.
 What comes out is impact.
 
-**2. The InaSAFE Interface**
+**2. The** |project_name| **Interface**
 
 Before we run any scenarios, let’s take a closer look at the |project_name|
 interface.
@@ -260,7 +260,7 @@ affected.”
 .. image:: /static/training/beginner/qgis-inasafe/image291.*
    :align: center
 
-**7. Improve the InaSAFE Output Map**
+**7. Improve the** |project_name| **Output Map**
 
 We can improve our impact map by editing the symbology in QGIS.
 Styles can be changed, other relevant layers can be added,

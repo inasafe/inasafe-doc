@@ -14,7 +14,8 @@ Module 13: Getting Support
 With the development of social media today, it is great that QGIS and
 |project_name| users can exchange ideas online.
 One common platform that can be used is Facebook.
-You can join the Facebook group **Forum Pengguna QGIS dan InaSAFE Indonesia**
+You can join the Facebook group **Forum Pengguna QGIS dan** |project_name|
+**Indonesia**
 to discuss the experiences or difficulties you have using QGIS and
 |project_name|.
 
