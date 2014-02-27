@@ -203,7 +203,19 @@ this
 
 Which pushes the Indonesian updated translations files to transifex at the end
 ready for further input from translators.
+
 You can also push individual files like this
+::
+
+    tx push -s -l id -r safe
+
+that will push the source (-s) for language (-l) id for the resource (-r)
+safe up to the transifex web server.
+
+.. note:: In most cases you will want to do a source only push to avoid
+    overwriting ongoing translation work on the transifex server.
+
+Or like this (pushing translation too)
 ::
 
     tx push -s -t -l id -r safe

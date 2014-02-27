@@ -78,6 +78,9 @@ Template Options
   impact scenario project.
   See :ref:`toolbar_reports` in the |project_name| User-Manual for more
   information on the reports.
+* :guilabel:`Show organisation logo in the main panel too`: If this is enabled
+  then the selected organisation logo (if any) will be displayed in the bottom
+  of the inasafe dock panel.
 * :guilabel:`Report templates directory`: This option is used to determine a
   directory with custom templates.
   Templates from this directory will be available for usage when generating
