@@ -229,8 +229,8 @@ The graphical user interface for keyword editing is divided into two parts:
      (in the case of hazard) or amalgamated subcategory/datatype (in the case
      of exposure).
      In this case, the secondary characteristic (units or datatype) are
-     shown in square brackets after the subcategory name e.g. :samp:`flood
-     [m]` is used for subcategory 'flood', units 'm'.
+     shown in square brackets after the subcategory name e.g.
+     :samp:`flood [m]` is used for subcategory 'flood', units 'm'.
 
 An example of the keywords editor in minimal mode is shown below.
 
