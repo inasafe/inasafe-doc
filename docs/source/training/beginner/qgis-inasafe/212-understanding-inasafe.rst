@@ -15,19 +15,10 @@ Module 12: Understanding |project_name|
 - Improving |project_name| Output Map
 - Saving and Printing scenario result
 
-We have already seen |project_name| in action.
-We’ve installed the plugin and have run a disaster analysis on a Jakarta
-flood scenario.
-We learned about hazard and exposure data.
-In this chapter, we’ll review what we’ve learned and go a bit further.
-By now you should be pretty comfortable with QGIS, and your knowledge
-will continue to grow as you practice your new skills.
-We will work through a disaster scenario more slowly to better understand
-|project_name|, and in Unit 4 we will go to even deeper.
 
 **1. Hazards, Exposures and Impact**
 
-Let’s being by reviewing what we the inputs and outputs of |project_name| -
+Let’s being by reviewing the inputs and outputs of |project_name| -
 **hazard**, **exposure**, and **impact**.
 These terms are important for you to remember because the analysis process
 will always depend on these three things.
@@ -44,8 +35,7 @@ Generally, hazards that we model:
 - have a measured duration
 - have a certain time frame
 
-In our previous look at |project_name| we used a flood in Jakarta as our
-hazard.
+
 In this chapter we will use a dataset modelled from an earthquake in Lembang.
 
 **Exposure** data represents things that are at risk when faced with a potential

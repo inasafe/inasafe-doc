@@ -18,3 +18,4 @@ The course is scheduled to run for 1 day
    :maxdepth: 1
 
    501_adult_learning
+   502_communication_skills
