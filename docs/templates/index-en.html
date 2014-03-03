@@ -13,10 +13,11 @@
     <div id="myCarousel" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
-            <div class="active item"><img src="{{ pathto('_static/img/carousel/usermap.jpg', 1)}}"/>
+            <div class="active item">
+                <img src="{{ pathto('_static/img/carousel/usermap.jpg', 1)}}"/>
                 <div class="carousel-caption">
-                    <h4><a
-                            href="{{ pathto(master_doc) }}/../user-docs/getting_involved.html#add-to-usermap">How to Add</a>
+                    <h4>
+                    <a href="{{ pathto(master_doc) }}/../user-docs/getting_involved.html#add-to-usermap">How to Add</a>
                     yourself to the <a href="http://users.inasafe.org/">InaSAFE Usermap</a></h4>
                 </div>
             </div>
@@ -127,13 +128,13 @@
             </div>
             <div class="span4">
                 <div class="admonition">
-                    <h3>Install and Use <span class="inasafe">InaSAFE</span>!</h3>
+                    <h3>Install and use <span class="inasafe">InaSAFE</span>!</h3>
                     <p><img alt=""
                             src="{{ pathto('_static/img/qgis_logo.png', 1)}}"/>
                         <span class="inasafe">InaSAFE</span> is a plugin for
                         QGIS. QGIS (and <span class="inasafe">InaSAFE</span>)
                         works on OSX, Windows and Linux.
-                        You can download QGIS for free at
+                        QGIS is available for free at
                         <a href="http://download.qgis.org">download.qgis.org</a>
                     </p>
                     <p>Once you have QGIS installed, you can install and get
@@ -170,6 +171,10 @@
                             http://data.inasafe.org</a>
                         </li>
                     </ol>
+                    <p>If you have any problems getting
+                        <span class="inasafe">InaSAFE</span> installed, see our
+                        <a href="{{ pathto(master_doc) }}/../user-docs/troubleshooting.html">troubleshooting guide</a>.
+                    </p>
                 </div>
             </div>
             <div class="span4">
