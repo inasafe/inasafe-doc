@@ -118,7 +118,7 @@ Participants can be the recipient of information but also the source of
 information. So communication is a simultaneous notice or exchange. The 
 communication process as mentioned above can be seen below.
 
-.. image:: /.../.../.../.../image4....png
+.. image:: /.../.../.../.../image4.png
    :align: center
 
 Communication process above indicates that the trainee can act both as the 
