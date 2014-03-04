@@ -8,135 +8,101 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-27 15:49+0100\n"
+"POT-Creation-Date: 2014-03-04 09:19+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# e97d554bfbda453ba3cb32b9db74bc3a
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:6
+# 786cedb3532c4c9da8bb614f833fa5ff
 msgid "Flood Building Impact Function"
 msgstr ""
 
-# 79fc235111e34c07bb4639a0d4280fe3
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:9
+# f86f2d8c075e4074bcd680324dc75dcf
 msgid "Overview"
 msgstr ""
 
-# c502e551c87a4053baf3f1c7c25889d2
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:11
+# 0e823881e5ec497d8da627a873514461
 msgid "**Unique Identifier**: Flood Building Impact Function"
 msgstr ""
 
-# 15910ebcfae0441097622c1f11d11818
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:14
+# d32d8da7d18c4fa5b23885a40ff10294
 msgid "**Author**: Ole Nielsen, Kristy van Putten"
 msgstr ""
 
-# 6a35fef7d4a8425b9ab543644ad2cbb6
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:17
+# 9e2b4899dac341d6a8d3e70bd2723059
 msgid "**Rating**: 0"
 msgstr ""
 
-# a6c984d861eb47e797a3fdc6aa19271e
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:20
+# c4f0483c80fd4b3c8990da3d4f5ddb95
 msgid "**Title**: Be flooded"
 msgstr ""
 
-# fa36c91055ea4f60922b7d2843719da2
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:23
-msgid ""
-"**Synopsis**: To assess the impacts of (flood or tsunami) inundation on "
-"building footprints originating from OpenStreetMap (OSM)."
+# 4eefcef9d8e241b48ef4f873581ff025
+msgid "**Synopsis**: To assess the impacts of (flood or tsunami) inundation on building footprints originating from OpenStreetMap (OSM)."
 msgstr ""
 
-# 00aef819d2844c2093bcd690dcccbdd7
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:26
-msgid ""
-"**Actions**: Provide details about where critical infrastructure might be "
-"flooded"
+# e4ea94813c1e482e8ac20f6323003a55
+msgid "**Actions**: Provide details about where critical infrastructure might be flooded"
 msgstr ""
 
-# b1b9d53542e340fa85c3ba19941664dd
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:29
-msgid ""
-"**Hazard Input**: A hazard raster layer where each cell represents flood "
-"depth (in meters), or a vector polygon layer where each polygon represents "
-"an inundated area. In the latter case, the following attributes are "
-"recognised (in order): \"affected\" (True or False) or \"FLOODPRONE\" (Yes "
-"or No). (True may be represented as 1, False as 0"
+# 4b5d8d933b154e709bbf143f139c34ea
+msgid "**Hazard Input**: A hazard raster layer where each cell represents flood depth (in meters), or a vector polygon layer where each polygon represents an inundated area. In the latter case, the following attributes are recognised (in order): \"affected\" (True or False) or \"FLOODPRONE\" (Yes or No). (True may be represented as 1, False as 0"
 msgstr ""
 
-# 9ea4f0b4e875457a96546f601f4402ea
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:32
-msgid ""
-"**Exposure Input**: Vector polygon layer extracted from OSM where each "
-"polygon represents the footprint of a building."
+# 6dcde0e1f9934d96bd9c88ad5a2fc3c7
+msgid "**Exposure Input**: Vector polygon layer extracted from OSM where each polygon represents the footprint of a building."
 msgstr ""
 
-# 4d8aad19e9db4cf9bc8066de0d1b0de9
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:35
-msgid ""
-"**Output**: Vector layer contains building is estimated to be flooded and "
-"the breakdown of the building by type."
+# 8d576dad056f4a6da07193f2829d2a42
+msgid "**Output**: Vector layer contains building is estimated to be flooded and the breakdown of the building by type."
 msgstr ""
 
-# dc71b22a372840888ee7b1fef7f60261
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:38
-msgid ""
-"**Limitation**: This function only flags buildings as impacted or not either "
-"based on a fixed threshold in case of raster hazard or the the attributes "
-"mentioned under input in case of vector hazard."
+# afcd3f5292ba420981aa387872d461f3
+msgid "**Limitation**: This function only flags buildings as impacted or not either based on a fixed threshold in case of raster hazard or the the attributes mentioned under input in case of vector hazard."
 msgstr ""
 
-# 97c9079fe95c4148b1e210509b103aec
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:42
+# f6815211a3644dd49cf6d6ad8e5bfa93
 msgid "Details"
 msgstr ""
 
-# 4f0f981a203d4900a9ad9d81a890c87a
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:44
-msgid ""
-"The inundation status is calculated for each building (using the centroid if "
-"it is a polygon) based on the hazard levels provided. if the hazard is given "
-"as a raster a threshold of 1 meter is used. This is configurable through the "
-"InaSAFE interface. If the hazard is given as a vector polygon layer "
-"buildings are considered to be impacted depending on the value of hazard "
-"attributes (in order) \"affected\" or \"FLOODPRONE\": If a building is in a "
-"region that has attribute \"affected\" set to True (or 1) it is impacted. If "
-"attribute \"affected\" does not exist but \"FLOODPRONE\" does, then the "
-"building is considered impacted if \"FLOODPRONE\" is \"yes\". If neither "
-"\"affected\" nor \"FLOODPRONE\" is available, a building will be impacted if "
-"it belongs to any polygon. The latter behaviour is implemented through the "
-"attribute \"inapolygon\" which is automatically assigned."
+# 59c4f29dc5964bc2ad9bfabadf0f090f
+msgid "The inundation status is calculated for each building (using the centroid if it is a polygon) based on the hazard levels provided. if the hazard is given as a raster a threshold of 1 meter is used. This is configurable through the InaSAFE interface. If the hazard is given as a vector polygon layer buildings are considered to be impacted depending on the value of hazard attributes (in order) \"affected\" or \"FLOODPRONE\": If a building is in a region that has attribute \"affected\" set to True (or 1) it is impacted. If attribute \"affected\" does not exist but \"FLOODPRONE\" does, then the building is considered impacted if \"FLOODPRONE\" is \"yes\". If neither \"affected\" nor \"FLOODPRONE\" is available, a building will be impacted if it belongs to any polygon. The latter behaviour is implemented through the attribute \"inapolygon\" which is automatically assigned."
 msgstr ""
 
-# 389dea78d45348c2a48f94b2dedb7f93
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:47
+# 2d11bf6e2f7640278d26db0cb8e81869
 msgid "Docstring"
 msgstr ""
 
-# e4f683b6617b4179818ed7bb79fea5ea
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:49
+# 5961429b16404653903981092e33c842
 msgid "Inundation impact on building data"
 msgstr ""
 
-# 7c438d7373194571a19fbf83e202c0ff
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:51
-msgid ""
-":author Ole Nielsen, Kristy van Putten # this rating below is only for "
-"testing a function, not the real one :rating 0 :param requires "
-"category=='hazard' and                     subcategory in ['flood', "
-"'tsunami']"
+# d7fa3c3fd6954545a17b0a680ad1bbfb
+msgid ":author Ole Nielsen, Kristy van Putten # this rating below is only for testing a function, not the real one :rating 0 :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami']"
 msgstr ""
 
-# b97cb4f65a144b43a82eb123a059421c
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:56
-msgid ""
-":param requires category=='exposure' and                     "
-"subcategory=='structure' and                     layertype=='vector'"
+# d3d912971ab94eab951fe483b4708028
+msgid ":param requires category=='exposure' and                     subcategory=='structure' and                     layertype=='vector'"
 msgstr ""
+
