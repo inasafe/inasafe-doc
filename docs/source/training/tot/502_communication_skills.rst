@@ -118,7 +118,7 @@ Participants can be the recipient of information but also the source of
 information. So communication is a simultaneous notice or exchange. The 
 communication process as mentioned above can be seen below.
 
-.. image:: /.../.../.../.../image4.png
+.. image:: /static/training/beginner/qgis-inasafe/image4.*
    :align: center
 
 Communication process above indicates that the trainee can act both as the 
@@ -146,7 +146,7 @@ of the training to the participants with a simple but precise or accurate way.
 Here communication process is expected to pay attention to the feedback from 
 the participants, which can be described as follows.
 
-.. image:: /.../.../.../.../image4....png
+.. image:: /static/training/beginner/qgis-inasafe/image4.*
    :align: center
 
 The communication process above shows that communication is the message 
