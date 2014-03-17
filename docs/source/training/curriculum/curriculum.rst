@@ -9,12 +9,13 @@ BADAN NASIONAL PENANGGULANGAN BENCANA
 FOREWORD
 ========
 
-Contingency planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
-workshop program are designed to deliver knowledge and skills for provincial
-and districal disaster management agency officials and staff in order to handle
-emergencies since the beginning of the disaster.
-These knowledge and skills will help them to be able to reduce and manage
-disaster risk.
+The Contingency planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
+workshop program is designed to provide provincial and district disaster
+management agency officials and staff with the knowledge and skills required
+ to handle emergencies during all stages of a disaster.
+The knowledge and skills acquired through this workshop program will help
+them to reduce and manage risks from natural disasters.
+
 
 Badan Nasional Penanggulangan Bencana (|BNPB|) has identified priority needs
 to improve the methodology that can be used for contingency planning.
