@@ -1,20 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# 
+#
 # Translators:
 msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-04 09:19+0100\n"
+"POT-Creation-Date: 2014-03-19 10:44+0100\n"
 "PO-Revision-Date: 2014-03-04 10:10+0000\n"
 "Last-Translator: macho <werner.macho@gmail.com>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/language/fr/)\n"
+"Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/"
+"language/fr/)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 # ec13958e5ea245f2be32271a56a15600
@@ -90,11 +91,11 @@ msgstr ""
 # 8b81117c0a6e453b8072685f05472336
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:25
 msgid ""
-"The power of GIS is its ability to help us analyze data.  Vector data can be"
-" analyzed to reveal how different features interact with each other.  In "
-"this chapter, we’ll work through the GIS process, attempting to solve a "
-"problem, and as we proceed, we will learn about various analysis tools that "
-"QGIS provides."
+"The power of GIS is its ability to help us analyze data.  Vector data can be "
+"analyzed to reveal how different features interact with each other.  In this "
+"chapter, we’ll work through the GIS process, attempting to solve a problem, "
+"and as we proceed, we will learn about various analysis tools that QGIS "
+"provides."
 msgstr ""
 
 # 0d22b9d0c7204142ba18fb3754002151
@@ -188,11 +189,11 @@ msgstr ""
 # a8919f39dc2c457d968b5b1f35ec936a
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:67
 msgid ""
-"For this exercise the data has been provided already, but in a real scenario"
-" you may need to find providers for the datasets in question.  In Indonesia,"
-" the National Land Agency and BNPB Bappeda are good sources for the types of"
-" data you will need, and OpenStreetMap can be used as a source for roads and"
-" infrastructure."
+"For this exercise the data has been provided already, but in a real scenario "
+"you may need to find providers for the datasets in question.  In Indonesia, "
+"the National Land Agency and BNPB Bappeda are good sources for the types of "
+"data you will need, and OpenStreetMap can be used as a source for roads and "
+"infrastructure."
 msgstr ""
 
 # fc700bf448604b7d96636ea14fdcf33b
@@ -214,16 +215,16 @@ msgstr ""
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:82
 msgid ""
 "Start adding the layers we will use.  In the :file:`../Sleman/Merapi` "
-"folder, add the layers **jalan_sleman_49S**,  **tempat_penting_Sleman_49S**,"
-" **KRB3_49S** and **vegetasi_49S**.  Your Layers list should look like this:"
+"folder, add the layers **jalan_sleman_49S**,  **tempat_penting_Sleman_49S**, "
+"**KRB3_49S** and **vegetasi_49S**.  Your Layers list should look like this:"
 msgstr ""
 
 # 98ca703836ca4396b50fa27a02d4a55c
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:89
 msgid ""
-"Most of the layers are pretty self-explanatory, but what are KRB3, KRB2, and"
-" KRB1? These layers show areas of impact when Merapi erupts. KRB3 is the "
-"area of worst impact, KRB2 is medium, and KRB1 has little impact.  In this "
+"Most of the layers are pretty self-explanatory, but what are KRB3, KRB2, and "
+"KRB1? These layers show areas of impact when Merapi erupts. KRB3 is the area "
+"of worst impact, KRB2 is medium, and KRB1 has little impact.  In this "
 "scenario we want to find locations that are not within KRB3."
 msgstr ""
 
@@ -231,8 +232,8 @@ msgstr ""
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:94
 msgid ""
 "The data we are working with now is similar to that from previous chapters, "
-"but now it is in a Projected Coordinate System.  The previous data was saved"
-" in WGS84 - this meant that the coordinates of our features were stored in "
+"but now it is in a Projected Coordinate System.  The previous data was saved "
+"in WGS84 - this meant that the coordinates of our features were stored in "
 "degrees, which aren’t very good for measuring size or distance.  By using a "
 "projected system our coordinates are in meters, which is important for "
 "analysis, because we can easily measure distances between and around "
@@ -249,8 +250,8 @@ msgstr ""
 # 7e325730400d4f048eda40bdf3fef2d1
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:103
 msgid ""
-":guilabel:`Give them the new`, simpler names **jalan**, "
-"**lokasi_penting**,**KRB III** and **vegetasi**."
+":guilabel:`Give them the new`, simpler names **jalan**, **lokasi_penting**,"
+"**KRB III** and **vegetasi**."
 msgstr ""
 
 # 3f709967baf84a66853e665faf0dc459
@@ -261,8 +262,8 @@ msgstr ""
 # fe5a483814c244b2ba1d851fe872b099
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:106
 msgid ""
-"In your operating system’s file manager, create a new folder under "
-":file:`../qgis/Sleman/Merapi` and call it **evakuasi_bencana**."
+"In your operating system’s file manager, create a new folder under :file:`../"
+"qgis/Sleman/Merapi` and call it **evakuasi_bencana**."
 msgstr ""
 
 # 6b01246416244fdeba8a223ed49ead03
@@ -324,8 +325,8 @@ msgstr ""
 msgid ""
 "We are going to build a query.  A query is a statement that allows us to "
 "show only the data that we want from a layer.  In this case, we want to "
-"instruct QGIS to only show us farms and dry fields which have a sub-district"
-" value equal to Ngemplak, Turi, or Pakem."
+"instruct QGIS to only show us farms and dry fields which have a sub-district "
+"value equal to Ngemplak, Turi, or Pakem."
 msgstr ""
 
 # 6a756bf943cc4c49a16bc151c8cf9cfc
@@ -379,8 +380,8 @@ msgstr ""
 # 7b31f81b2fce4c1cac14ca0d8d473f02
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:160
 msgid ""
-"Repeat the previous step but instead of KEBUN use TEGALAN. Your query should"
-" look like this:"
+"Repeat the previous step but instead of KEBUN use TEGALAN. Your query should "
+"look like this:"
 msgstr ""
 
 # 08650396da7f4cb6b70498a1e0461c61
@@ -414,8 +415,8 @@ msgstr ""
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:186
 msgid ""
 "Our next criteria is that our chosen location should be outside of the "
-"danger zone, which is defined by the layer **KRB III**.  For this we can use"
-" the Spatial Query tool."
+"danger zone, which is defined by the layer **KRB III**.  For this we can use "
+"the Spatial Query tool."
 msgstr ""
 
 # c76a47ea0d6e4a35b70d7bb32e2479e2
@@ -434,8 +435,8 @@ msgstr ""
 # f11fcd6b6b1f47d5a05298eee4bf69dc
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:202
 msgid ""
-"Click :guilabel:`Apply`  Then click :guilabel:`Close` once the selection has"
-" been applied."
+"Click :guilabel:`Apply`  Then click :guilabel:`Close` once the selection has "
+"been applied."
 msgstr ""
 
 # 5f9a5018c8d243589bd70b7e9812a2a9
@@ -448,8 +449,8 @@ msgstr ""
 # 387d997bf67a4590aeccf47cc6591265
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:214
 msgid ""
-"The next steps of our analysis will be easier if we save this selection as a"
-" separate layer."
+"The next steps of our analysis will be easier if we save this selection as a "
+"separate layer."
 msgstr ""
 
 # 079dcb8bd7f04f2f89bd7ec026d31377
@@ -462,8 +463,8 @@ msgstr ""
 # 6d60c0e788684d9aaadc4706d7fd49d6
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:223
 msgid ""
-"Next to the Save as field in the dialog that appears, click the "
-":guilabel:`Browse` button."
+"Next to the Save as field in the dialog that appears, click the :guilabel:"
+"`Browse` button."
 msgstr ""
 
 # 5eb70cd767f14efca4f887b9dd94c145
@@ -520,8 +521,7 @@ msgstr ""
 # 1fdc5ffb47ba4a4296098c1f6845cdb4
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:248
 msgid ""
-":guilabel:`Right-click` on the **jalan** layer and click "
-":guilabel:`Query`..."
+":guilabel:`Right-click` on the **jalan** layer and click :guilabel:`Query`..."
 msgstr ""
 
 # 748e72da3cfa45a5aef9a26a6c869ed7
@@ -674,8 +674,8 @@ msgstr ""
 # f0799191a7bf4e77a2f56d3a6c7f2bc9
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:331
 msgid ""
-"Now we can see areas where a main road is 300 meters away and where there is"
-" a health facility within 2.5 km.  But we only want the areas where both of "
+"Now we can see areas where a main road is 300 meters away and where there is "
+"a health facility within 2.5 km.  But we only want the areas where both of "
 "these criteria are satisfied at once!  To do that we will use the Intersect "
 "tool."
 msgstr ""
@@ -689,8 +689,8 @@ msgstr ""
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:340
 msgid ""
 ":guilabel:`Enter` **buffer_fas_kesehatan_2.5km** and **buffer_jalan_300m** "
-"as the two input layers. Name the output shapefile "
-":kbd:`intersect_buffer_jalan_kesehatan.shp`"
+"as the two input layers. Name the output shapefile :kbd:"
+"`intersect_buffer_jalan_kesehatan.shp`"
 msgstr ""
 
 # 2c97bfb1490a4bf8a07ec0532548da05
@@ -785,15 +785,14 @@ msgstr ""
 msgid ""
 ":guilabel:`Open the attribute table` for the "
 "**kebun_tegalan_lokasi_terpilih** layer.  You’ll notice that there is a "
-"column named *luas_ha*.  This is the size of the area in hectares.  We could"
-" use this field to answer our question, but let’s add another column that "
+"column named *luas_ha*.  This is the size of the area in hectares.  We could "
+"use this field to answer our question, but let’s add another column that "
 "contains the size of the area in square meters."
 msgstr ""
 
 # 95a5b81e854447dda57dfb62e999be0f
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:404
-msgid ""
-":guilabel:`Select` the **kebun_tegalan_lokasi_terpilih** layer and open"
+msgid ":guilabel:`Select` the **kebun_tegalan_lokasi_terpilih** layer and open"
 msgstr ""
 
 # 859bde92a23e40f6bcdaa4df26c956da
@@ -823,15 +822,15 @@ msgstr ""
 # b124d3ec55314ecfb8fae4ad561ef276
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:426
 msgid ""
-"Change Output field type as Decimal number (real), then click on "
-":guilabel:`Geometry` and then double-click **$area**."
+"Change Output field type as Decimal number (real), then click on :guilabel:"
+"`Geometry` and then double-click **$area**."
 msgstr ""
 
 # b71c734baf274dbab49013b7604387fd
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:433
 msgid ""
-"You should now see a new column on your attribute table, named "
-":kbd:`luas_m2`. And QGIS has filled it in for us with square meters!"
+"You should now see a new column on your attribute table, named :kbd:"
+"`luas_m2`. And QGIS has filled it in for us with square meters!"
 msgstr ""
 
 # 7a9f83b5e9824d1ea76b9588367ebf5d

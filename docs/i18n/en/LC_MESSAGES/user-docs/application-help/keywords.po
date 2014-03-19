@@ -8,609 +8,752 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-04 09:19+0100\n"
+"POT-Creation-Date: 2014-03-19 10:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/user-docs/application-help/keywords.rst:8
 # 9290efda067848709b5e79b3d52a71b4
+#: ../../source/user-docs/application-help/keywords.rst:8
 msgid "Keywords System"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:10
 # 84adbdbe9fcd42d0a89172ae915d2990
-msgid "This document describes the purpose and usage of the |project_name| *keywords* system."
+#: ../../source/user-docs/application-help/keywords.rst:10
+msgid ""
+"This document describes the purpose and usage of the |project_name| "
+"*keywords* system."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:14
 # 24a1a4432dcd438997eba1ca75e5655c
+#: ../../source/user-docs/application-help/keywords.rst:14
 msgid "Purpose"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:16
 # a1851097ecac4969aaac935869ddeb5a
-msgid "The keywords system is used by the :ref:`Impact Functions <impact_functions>` to determine the nature of the input layers that have been passed to them."
+#: ../../source/user-docs/application-help/keywords.rst:16
+msgid ""
+"The keywords system is used by the :ref:`Impact Functions "
+"<impact_functions>` to determine the nature of the input layers that have "
+"been passed to them."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:19
 # 87d76878ebd74b2cba146665b06c6f1f
-msgid "Each input GIS dataset used by |project_name| needs to have an accompanying keywords file. The purpose of the keywords file is to provide additional metadata needed by the impact functions. For example, the keywords file will indicate whether a given dataset should be treated as a *hazard* or an *impact* layer. It is also used to indicate the context of the layer (e.g. \"it's a *flood* layer\", \"it's an *earthquake* layer\")."
+#: ../../source/user-docs/application-help/keywords.rst:19
+msgid ""
+"Each input GIS dataset used by |project_name| needs to have an accompanying "
+"keywords file. The purpose of the keywords file is to provide additional "
+"metadata needed by the impact functions. For example, the keywords file will "
+"indicate whether a given dataset should be treated as a *hazard* or an "
+"*impact* layer. It is also used to indicate the context of the layer (e.g. "
+"\"it's a *flood* layer\", \"it's an *earthquake* layer\")."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:28
 # d0b407daa09848dc9b2f71855fd3cefe
-msgid "By convention and expectation, the keywords file should be named with the same base name of the GIS datasource it accompanies. For example a flood dataset saved as"
+#: ../../source/user-docs/application-help/keywords.rst:28
+msgid ""
+"By convention and expectation, the keywords file should be named with the "
+"same base name of the GIS datasource it accompanies. For example a flood "
+"dataset saved as"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:32
 # 8b28021714f943549504ba1c7e0f4119
+#: ../../source/user-docs/application-help/keywords.rst:32
 msgid ":file:`C:\\\\gisdata\\\\flood.tif`"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:34
 # f0993ee83a12432bb46e5c4169d5689e
+#: ../../source/user-docs/application-help/keywords.rst:34
 msgid "would need to have an accompanying keywords file saved as:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:36
 # b8889cb9c2884abea09d85d5568f0c81
+#: ../../source/user-docs/application-help/keywords.rst:36
 msgid ":file:`C:\\\\gisdata\\\\flood.keywords`"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:38
 # 5a992984a9954f4bae6647eff55f4810
-msgid "We recommend to **avoid using spaces** in your file names and file paths!"
+#: ../../source/user-docs/application-help/keywords.rst:38
+msgid ""
+"We recommend to **avoid using spaces** in your file names and file paths!"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:41
 # 6ac4689692784326aba0a373be82f902
-msgid "The |project_name| QGIS plugin provides an editor for these keywords. The purpose of this document is to describe the keywords editor and to provide guidelines as to the use of keywords."
+#: ../../source/user-docs/application-help/keywords.rst:41
+msgid ""
+"The |project_name| QGIS plugin provides an editor for these keywords. The "
+"purpose of this document is to describe the keywords editor and to provide "
+"guidelines as to the use of keywords."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:45
 # e3ee29d83e4841d9b3d63640a514cf30
-msgid "Currently keywords are not validated by the library. This means if you for example misspell a keyword, use the wrong letter case (e.g. upper case instead of lower case) or provide the wrong keyword for the context (e.g. provide a subcategory of flood to an exposure category), the system will not be able to determine what to do with the file. For that reason you should follow the guidelines below carefully to ensure you have entered your keywords correctly."
+#: ../../source/user-docs/application-help/keywords.rst:45
+msgid ""
+"Currently keywords are not validated by the library. This means if you for "
+"example misspell a keyword, use the wrong letter case (e.g. upper case "
+"instead of lower case) or provide the wrong keyword for the context (e.g. "
+"provide a subcategory of flood to an exposure category), the system will not "
+"be able to determine what to do with the file. For that reason you should "
+"follow the guidelines below carefully to ensure you have entered your "
+"keywords correctly."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:55
 # 0b18b885de714e87a9f9a27c79660b9c
+#: ../../source/user-docs/application-help/keywords.rst:55
 msgid "Guidelines"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:57
 # 99197e96ec50472ea8907e6fe84202df
+#: ../../source/user-docs/application-help/keywords.rst:57
 msgid "In this section we lay out the guidelines for keyword usage."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:60
 # 2b522532b84240a9ad44ace683742cc4
+#: ../../source/user-docs/application-help/keywords.rst:60
 msgid "Category"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:62
 # bde6e7b0469a459abab869347f3e21bc
-msgid "Every dataset should have a category assigned to it. Category should be written in lower case."
+#: ../../source/user-docs/application-help/keywords.rst:62
+msgid ""
+"Every dataset should have a category assigned to it. Category should be "
+"written in lower case."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:68
-#: ../../source/user-docs/application-help/keywords.rst:89
-#: ../../source/user-docs/application-help/keywords.rst:103
-#: ../../source/user-docs/application-help/keywords.rst:139
-#: ../../source/user-docs/application-help/keywords.rst:159
-#: ../../source/user-docs/application-help/keywords.rst:181
 # 67deefcd7f5c40a0a3e5bac14b798eba
 # 2b1ba395761b4a15977a5829980c0456
 # 9c690a446bcb40a6908473848c1771e8
 # c93fb38994434cc9857002252f518ab1
 # f8d20539660c4e45b20c9b59cbda1913
 # 2f3d9b1da6084419805e2f8981c6844c
-msgid "Key"
-msgstr ""
-
 #: ../../source/user-docs/application-help/keywords.rst:68
 #: ../../source/user-docs/application-help/keywords.rst:89
 #: ../../source/user-docs/application-help/keywords.rst:103
 #: ../../source/user-docs/application-help/keywords.rst:139
 #: ../../source/user-docs/application-help/keywords.rst:159
 #: ../../source/user-docs/application-help/keywords.rst:181
+msgid "Key"
+msgstr ""
+
 # 5ee0a54fafa9493193a7224d0861df0c
 # 2b0cc53d8ffb435eb3734afed49f16e8
 # 83957c3862dd4a3887be5d0a3d3f3470
 # 939da4afb2044df1a800ce0da2fb2938
 # b57a502145ae47dfa552dca1e8c3999a
 # 6dd1a766bb494ca98c49b1a89f3e58b7
+#: ../../source/user-docs/application-help/keywords.rst:68
+#: ../../source/user-docs/application-help/keywords.rst:89
+#: ../../source/user-docs/application-help/keywords.rst:103
+#: ../../source/user-docs/application-help/keywords.rst:139
+#: ../../source/user-docs/application-help/keywords.rst:159
+#: ../../source/user-docs/application-help/keywords.rst:181
 msgid "Allowed Values"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:70
-#: ../../source/user-docs/application-help/keywords.rst:71
 # 611afc4db7b947e3b446950da2bc2703
 # e0d0252949874bbe98485a96e4633aa4
+#: ../../source/user-docs/application-help/keywords.rst:70
+#: ../../source/user-docs/application-help/keywords.rst:71
 msgid "category"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:70
 # d8474806a0aa4f018164f42b588851fb
+#: ../../source/user-docs/application-help/keywords.rst:70
 msgid "hazard"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:71
-#: ../../source/user-docs/application-help/keywords.rst:105
-#: ../../source/user-docs/application-help/keywords.rst:106
 # 3c815ea4f71e41cf8c8ce3354cb6481d
 # 60104d0307ba46b8bdfdc94fd3d58fbc
 # 2c226b55923c4ad1904ded943f649e56
+#: ../../source/user-docs/application-help/keywords.rst:71
+#: ../../source/user-docs/application-help/keywords.rst:105
+#: ../../source/user-docs/application-help/keywords.rst:106
 msgid "exposure"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:74
-#: ../../source/user-docs/application-help/keywords.rst:109
 # 768ae62fe63f4faaa432b2204616b0bc
 # 980d93d083954fa083faf046e54a313e
+#: ../../source/user-docs/application-help/keywords.rst:74
+#: ../../source/user-docs/application-help/keywords.rst:109
 msgid "Example keywords file entry ::"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:80
-#: ../../source/user-docs/application-help/keywords.rst:181
 # 8403c2a8adb54cd28986343713068720
 # 6dbf65c7891c43cdaa70cdce21a4fcca
+#: ../../source/user-docs/application-help/keywords.rst:80
+#: ../../source/user-docs/application-help/keywords.rst:181
 msgid "Subcategory"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:82
 # 5a0210e3c65a43f2bd06b06a27ee7548
+#: ../../source/user-docs/application-help/keywords.rst:82
 msgid "The selection of a subcategory value is dependent on the category:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:84
 # dd8025d7c84847e5b00916f129073152
+#: ../../source/user-docs/application-help/keywords.rst:84
 msgid "Valid subcategories for category 'hazard':"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:91
-#: ../../source/user-docs/application-help/keywords.rst:92
-#: ../../source/user-docs/application-help/keywords.rst:93
 # 41c51e5396bc43a7928587bf814b01ba
 # ea5bdbbde8a248a3a034e23e02be5985
 # ed353615e34549a0b56a9521a4b404b3
+#: ../../source/user-docs/application-help/keywords.rst:91
+#: ../../source/user-docs/application-help/keywords.rst:92
+#: ../../source/user-docs/application-help/keywords.rst:93
 msgid "subcategory"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:91
 # 76ca2586663140328b3b5f3fc283ee37
+#: ../../source/user-docs/application-help/keywords.rst:91
 msgid "tsunami"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:92
 # e24c03bb2f2e48edbbefccad3655b18c
+#: ../../source/user-docs/application-help/keywords.rst:92
 msgid "flood"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:93
 # 4564b65693884345b37f8a15c64434a2
+#: ../../source/user-docs/application-help/keywords.rst:93
 msgid "tephra"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:96
 # cf86bc9a3e894fdba353d0a5be0f28b3
+#: ../../source/user-docs/application-help/keywords.rst:96
 msgid "Where tephra is volcanic ashfall."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:98
 # ea97317da1e14ce4bda5a97a4d73f0d7
+#: ../../source/user-docs/application-help/keywords.rst:98
 msgid "Valid subcategories for category 'exposure':"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:105
-#: ../../source/user-docs/application-help/keywords.rst:183
-#: ../../source/user-docs/application-help/keywords.rst:184
 # 36792d8715fb46a88166c0a2dda0953c
 # 48c6e845113c4ea1a7ca8f7439d3d961
 # f35587468279407fa8782d5d3616d5b5
+#: ../../source/user-docs/application-help/keywords.rst:105
+#: ../../source/user-docs/application-help/keywords.rst:183
+#: ../../source/user-docs/application-help/keywords.rst:184
 msgid "population"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:106
-#: ../../source/user-docs/application-help/keywords.rst:185
-#: ../../source/user-docs/application-help/keywords.rst:186
-#: ../../source/user-docs/application-help/keywords.rst:187
 # 426b0a9bf94347d68a4ea7ac80eb3430
 # 1c0330eac9a442ba92adc32707f8ddaa
 # 7fa3d4f6bfe1473184bdbf8c3bf82723
 # f622d1ca70e843ebbb5b89a7ceb37d1e
+#: ../../source/user-docs/application-help/keywords.rst:106
+#: ../../source/user-docs/application-help/keywords.rst:185
+#: ../../source/user-docs/application-help/keywords.rst:186
+#: ../../source/user-docs/application-help/keywords.rst:187
 msgid "building"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:116
 # ef578f677ee84b62969fc758b529b4ec
+#: ../../source/user-docs/application-help/keywords.rst:116
 msgid "Units"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:118
 # da842735bbff4934be681c1879b51127
-msgid "The units keyword is only valid in the context of 'hazard' layers, and is used to indicate the metric or imperial units represented by each data entity (a grid cell or a vector feature) in the hazard layer. Example keywords file entry ::"
+#: ../../source/user-docs/application-help/keywords.rst:118
+msgid ""
+"The units keyword is only valid in the context of 'hazard' layers, and is "
+"used to indicate the metric or imperial units represented by each data "
+"entity (a grid cell or a vector feature) in the hazard layer. Example "
+"keywords file entry ::"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:128
 # e686963b78fe4d1592bcbf18b1b8c125
-msgid "In the above case there is a soft constraint to use a value for units of m, feet or wet/dry as defined by the table below because the subcategory is 'flood'. The following are the allowed units which are dependent on the subcategory defined."
+#: ../../source/user-docs/application-help/keywords.rst:128
+msgid ""
+"In the above case there is a soft constraint to use a value for units of m, "
+"feet or wet/dry as defined by the table below because the subcategory is "
+"'flood'. The following are the allowed units which are dependent on the "
+"subcategory defined."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:134
 # 4440c23375ea4faaac6b994222b7870d
+#: ../../source/user-docs/application-help/keywords.rst:134
 msgid "Valid subcategories for subcategory 'tsunami' or subcategory 'flood':"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:141
-#: ../../source/user-docs/application-help/keywords.rst:142
-#: ../../source/user-docs/application-help/keywords.rst:143
-#: ../../source/user-docs/application-help/keywords.rst:161
 # 1004483ebd20474d8cb9a35904bef84a
 # 64f4fcc602f74a828beadfe7495eb1b2
 # 4b7142f502014b169efd8c26baa4b0b0
 # 5ff883ad41e24ac9a481373effb7daec
+#: ../../source/user-docs/application-help/keywords.rst:141
+#: ../../source/user-docs/application-help/keywords.rst:142
+#: ../../source/user-docs/application-help/keywords.rst:143
+#: ../../source/user-docs/application-help/keywords.rst:161
 msgid "units"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:141
 # 7b563d8ee0414920bbe9a032aacad1b9
+#: ../../source/user-docs/application-help/keywords.rst:141
 msgid "m"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:142
 # ae6f24ce66d74737a1ff8e6aab9d50e8
+#: ../../source/user-docs/application-help/keywords.rst:142
 msgid "wet/dry"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:143
 # 9ae384e4dd6d437cb9c8b58937a8b5bc
+#: ../../source/user-docs/application-help/keywords.rst:143
 msgid "feet"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:146
 # 6bf104d0ea9842039cb28cb487edc548
-msgid "In the case where the units are m (meters) or feet, the input dataset should be a raster layer where each cell in the raster represents a depth in the units specified."
+#: ../../source/user-docs/application-help/keywords.rst:146
+msgid ""
+"In the case where the units are m (meters) or feet, the input dataset should "
+"be a raster layer where each cell in the raster represents a depth in the "
+"units specified."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:150
 # 94838915885b49a88c615b831e619ca0
-msgid "In the case of wet/dry, the input dataset needs to be a vector polygon layer. Any area that is inside a polygon is considered 'wet' and any area outside of a polygon is considered to be 'dry'."
+#: ../../source/user-docs/application-help/keywords.rst:150
+msgid ""
+"In the case of wet/dry, the input dataset needs to be a vector polygon "
+"layer. Any area that is inside a polygon is considered 'wet' and any area "
+"outside of a polygon is considered to be 'dry'."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:154
 # 95f6b8e1b7c44a8b809f2cd4557134f8
+#: ../../source/user-docs/application-help/keywords.rst:154
 msgid "Valid subcategories for subcategory 'volcano'"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:161
 # 685c5eaad3a74d04bcdca7dff390af2e
+#: ../../source/user-docs/application-help/keywords.rst:161
 msgid "kg2/m2"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:164
 # 468cce24f10943b89d34cd7cb429a5ce
-msgid "In this case the dataset should be a raster layer where each cell represents the kilograms per meters squared of ash fall on that cell."
+#: ../../source/user-docs/application-help/keywords.rst:164
+msgid ""
+"In this case the dataset should be a raster layer where each cell represents "
+"the kilograms per meters squared of ash fall on that cell."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:167
 # 0a2826ab3d4a4e28b8d4aeaedca71c43
-msgid "'units' and 'datatype' (described below) should be considered to be mutually exclusive - i.e. they should not both be present in any given keywords file."
+#: ../../source/user-docs/application-help/keywords.rst:167
+msgid ""
+"'units' and 'datatype' (described below) should be considered to be mutually "
+"exclusive - i.e. they should not both be present in any given keywords file."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:172
 # e8e98c875dc145bfa0c5dabea06fd56e
+#: ../../source/user-docs/application-help/keywords.rst:172
 msgid "Datatype"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:173
 # a7fa20e343e74f5db3e5719e23d469c0
-msgid "The datatype keyword is specific to exposure layers and represents the datatype of people, infrastructure etc. within a given area."
+#: ../../source/user-docs/application-help/keywords.rst:173
+msgid ""
+"The datatype keyword is specific to exposure layers and represents the "
+"datatype of people, infrastructure etc. within a given area."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:176
 # a7659e9eb4d448edae3fd829f72e30e2
+#: ../../source/user-docs/application-help/keywords.rst:176
 msgid "Valid densities for different subcategories"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:183
-#: ../../source/user-docs/application-help/keywords.rst:184
-#: ../../source/user-docs/application-help/keywords.rst:185
-#: ../../source/user-docs/application-help/keywords.rst:186
-#: ../../source/user-docs/application-help/keywords.rst:187
 # f469b9b1496a42c1b917a233be2d407d
 # ba81267168074dfb9b90a3f120c85cbe
 # e272c67a907540a3810d001ba495a6db
 # cfe4ece560254009a74f0ba419f2cae1
 # 4c13e738b6604469910a9d37e6b7c1de
+#: ../../source/user-docs/application-help/keywords.rst:183
+#: ../../source/user-docs/application-help/keywords.rst:184
+#: ../../source/user-docs/application-help/keywords.rst:185
+#: ../../source/user-docs/application-help/keywords.rst:186
+#: ../../source/user-docs/application-help/keywords.rst:187
 msgid "datatype"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:183
 # 08cf7638403341719bbc94bbb3c42474
+#: ../../source/user-docs/application-help/keywords.rst:183
 msgid "count"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:184
 # 66549d458b274f8abac2552522b44de4
+#: ../../source/user-docs/application-help/keywords.rst:184
 msgid "density"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:185
 # 2d3c1bd6523545f1b87c6c4ad914d91b
+#: ../../source/user-docs/application-help/keywords.rst:185
 msgid "osm"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:186
 # 80c4872b5fdd424d9739129e7fc46ccc
+#: ../../source/user-docs/application-help/keywords.rst:186
 msgid "sigab"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:187
 # 85952ab89ad84964a612c5ac1e26cd6c
+#: ../../source/user-docs/application-help/keywords.rst:187
 msgid "other"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:191
 # ba8792d78cb04dfe93d6e10fcd61a9de
+#: ../../source/user-docs/application-help/keywords.rst:191
 msgid "Assumptions"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:193
 # 9a5363102337454c98098989b100aedc
-msgid "The following assumptions are made about keywords, which may or may not be programmatically enforced by the |project_name| library and GUI:"
+#: ../../source/user-docs/application-help/keywords.rst:193
+msgid ""
+"The following assumptions are made about keywords, which may or may not be "
+"programmatically enforced by the |project_name| library and GUI:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:196
 # 222e85742fbf44249e0d27a60404464b
-msgid "There should only be **one keyword for a given key** in the keywords file."
+#: ../../source/user-docs/application-help/keywords.rst:196
+msgid ""
+"There should only be **one keyword for a given key** in the keywords file."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:197
 # 14fe7da81e5a4ed9b4ec0135054b4f61
-msgid "Switching from hazard to exposure will clear parts of the GUI since in general most keywords are category dependent. In particular, selecting **'hazard'** will remove the **'datatype'** key/value pair, and selecting **'exposure'** will remove the **'units'** key value pair."
+#: ../../source/user-docs/application-help/keywords.rst:197
+msgid ""
+"Switching from hazard to exposure will clear parts of the GUI since in "
+"general most keywords are category dependent. In particular, selecting "
+"**'hazard'** will remove the **'datatype'** key/value pair, and selecting "
+"**'exposure'** will remove the **'units'** key value pair."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:202
 # 3d73090a8a0c4540af3183afce3977bf
-msgid "Keywords for **category** are **enforced** to be one of 'hazard' or 'exposure' by the GUI."
+#: ../../source/user-docs/application-help/keywords.rst:202
+msgid ""
+"Keywords for **category** are **enforced** to be one of 'hazard' or "
+"'exposure' by the GUI."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:204
 # 4b9e1bdfa8b449b3bbcf3715034dc4b6
-msgid "All keywords should be in **lower case**, **without spaces** with the exception of 'Title' whose value may contain both spaces and mixed case letters."
+#: ../../source/user-docs/application-help/keywords.rst:204
+msgid ""
+"All keywords should be in **lower case**, **without spaces** with the "
+"exception of 'Title' whose value may contain both spaces and mixed case "
+"letters."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:207
 # 2c889d3358194042b0590484ce0f1f05
-msgid "Values for keywords should generally be lower case, with the exception of **datatype values may be in upper case** (e.g. MMI)"
+#: ../../source/user-docs/application-help/keywords.rst:207
+msgid ""
+"Values for keywords should generally be lower case, with the exception of "
+"**datatype values may be in upper case** (e.g. MMI)"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:209
 # cacd742a003240e78937a348c1a93156
-msgid "Keys and values should **not contain colons**. In the keyword editor, any colons will be replaced with a full stop character."
+#: ../../source/user-docs/application-help/keywords.rst:209
+msgid ""
+"Keys and values should **not contain colons**. In the keyword editor, any "
+"colons will be replaced with a full stop character."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:212
 # 8d929c70af2f4f99954ec39c18bb61b6
-msgid "All other Keywords and values that do not fit the above domain lists may be used but they may produce undesired results."
+#: ../../source/user-docs/application-help/keywords.rst:212
+msgid ""
+"All other Keywords and values that do not fit the above domain lists may be "
+"used but they may produce undesired results."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:216
 # d472be6f463d4187bd1d824671a323e3
+#: ../../source/user-docs/application-help/keywords.rst:216
 msgid "Translations"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:218
 # 7c4ec7a448004a1182fc7800e88fe68d
-msgid "Although |project_name| is available in different languages, the 'key' in the keywords files should always be written in english."
+#: ../../source/user-docs/application-help/keywords.rst:218
+msgid ""
+"Although |project_name| is available in different languages, the 'key' in "
+"the keywords files should always be written in english."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:222
 # f6ee8c08973f4bb7a051e1002dbe8a11
+#: ../../source/user-docs/application-help/keywords.rst:222
 msgid "The keywords editor graphical user interface"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:224
 # 13527d1b1e0d4fdca6a523d2b5b78ff9
-msgid "The graphical user interface for keyword editing is divided into two parts:"
+#: ../../source/user-docs/application-help/keywords.rst:224
+msgid ""
+"The graphical user interface for keyword editing is divided into two parts:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:226
 # 7cc98473246d409fa46cac633f945d95
+#: ../../source/user-docs/application-help/keywords.rst:226
 msgid "**Minimal mode**: In this mode, only following options are provided:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:228
 # 06bca3b80e2741f99c21b66f9a389596
-msgid "**Title** - a 'friendly' name for the dataset which will be displayed in reports, the user interface and so on"
+#: ../../source/user-docs/application-help/keywords.rst:228
+msgid ""
+"**Title** - a 'friendly' name for the dataset which will be displayed in "
+"reports, the user interface and so on"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:230
 # f864a71093e9471cbad6a3d58f02de4b
+#: ../../source/user-docs/application-help/keywords.rst:230
 msgid "**Source** - a field to inform from whom/where the dataset is obtained."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:231
 # f1be16a49ee84e5aa533096e4064f7dd
+#: ../../source/user-docs/application-help/keywords.rst:231
 msgid "**Category** - A mandatory choice between 'hazard' and 'exposure'."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:232
 # f7dda8faeeff46aaaa79afd0344450ab
-msgid "**Subcategory** - An amalgamated subcategory/units picklist (in the case of hazard) or amalgamated subcategory/datatype (in the case of exposure). In this case, the secondary characteristic (units or datatype) are shown in square brackets after the subcategory name e.g. :samp:`flood [m]` is used for subcategory 'flood', units 'm'."
+#: ../../source/user-docs/application-help/keywords.rst:232
+msgid ""
+"**Subcategory** - An amalgamated subcategory/units picklist (in the case of "
+"hazard) or amalgamated subcategory/datatype (in the case of exposure). In "
+"this case, the secondary characteristic (units or datatype) are shown in "
+"square brackets after the subcategory name e.g. :samp:`flood [m]` is used "
+"for subcategory 'flood', units 'm'."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:239
 # a41622dc07c74141b4c4f49f561769ba
+#: ../../source/user-docs/application-help/keywords.rst:239
 msgid "An example of the keywords editor in minimal mode is shown below."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:246
 # 935f3be7179345bba47acf1562053127
+#: ../../source/user-docs/application-help/keywords.rst:246
 msgid "Opened keyword editor window"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:248
 # 79168f5ae3ba465294ab2d83974f4561
-msgid "**Advanced mode**: In this mode several extra options are provided in addition to the minimal mode options. Unlike minimal mode, in advanced mode only basic validation is performed and the user is given more flexibility to manually define and remove key/value pairs. Three sections are provided for this:"
+#: ../../source/user-docs/application-help/keywords.rst:248
+msgid ""
+"**Advanced mode**: In this mode several extra options are provided in "
+"addition to the minimal mode options. Unlike minimal mode, in advanced mode "
+"only basic validation is performed and the user is given more flexibility to "
+"manually define and remove key/value pairs. Three sections are provided for "
+"this:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:255
 # 1feec4f10e64414ea3a37b37a8f8879e
-msgid "**Predefined** - In this section, the user selects from a constrained list of keywords, enters a free-form value and then adds the key/value pair to the keywords list (see below)."
+#: ../../source/user-docs/application-help/keywords.rst:255
+msgid ""
+"**Predefined** - In this section, the user selects from a constrained list "
+"of keywords, enters a free-form value and then adds the key/value pair to "
+"the keywords list (see below)."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:258
 # 447061aaedad4cae8d11f7a75ac32743
-msgid "**User defined** - In this section, there is no constraint on the keywords entered - any single lower case word will be accepted for both the key and the value components."
+#: ../../source/user-docs/application-help/keywords.rst:258
+msgid ""
+"**User defined** - In this section, there is no constraint on the keywords "
+"entered - any single lower case word will be accepted for both the key and "
+"the value components."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:261
 # 6a6ff5cd5deb4f08a6230d7c2b7a398e
-msgid "**Current keywords** - In this area a complete list of all the keywords for the dataset are displayed. The keywords list here is updated when any changes are made in both the simple and advanced mode editors. It is also possible in this area to manually remove unwanted keywords using the 'remove selected' button. Multiple keywords can be removed in a single operation by :kbd:`Control-clicking` on multiple keyword entries in the current keyword list and then clicking :guilabel:`Remove selected`"
+#: ../../source/user-docs/application-help/keywords.rst:261
+msgid ""
+"**Current keywords** - In this area a complete list of all the keywords for "
+"the dataset are displayed. The keywords list here is updated when any "
+"changes are made in both the simple and advanced mode editors. It is also "
+"possible in this area to manually remove unwanted keywords using the 'remove "
+"selected' button. Multiple keywords can be removed in a single operation by :"
+"kbd:`Control-clicking` on multiple keyword entries in the current keyword "
+"list and then clicking :guilabel:`Remove selected`"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:276
 # 82cf2e71df174813a1e5f79f156f3c4c
+#: ../../source/user-docs/application-help/keywords.rst:276
 msgid "Advanced mode of keyword editor"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:279
 # 26f5747a22db42f3b6ff57f22b292e06
+#: ../../source/user-docs/application-help/keywords.rst:279
 msgid "Invoking the keywords editor"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:280
 # 59ba03fe424a4e03bbdab1075b823b7c
-msgid "The keyword editor can easily be invoked by **selecting any layer** in the QGIS layers list, and then using the plugin menu to start the editor (:menuselection:`Plugins --> InaSAFE --> Keyword Editor`). Alternatively, you may use the keywords editor icon on the plugins toolbar as illustrated below."
+#: ../../source/user-docs/application-help/keywords.rst:280
+msgid ""
+"The keyword editor can easily be invoked by **selecting any layer** in the "
+"QGIS layers list, and then using the plugin menu to start the editor (:"
+"menuselection:`Plugins --> InaSAFE --> Keyword Editor`). Alternatively, you "
+"may use the keywords editor icon on the plugins toolbar as illustrated below."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:291
 # d43f1dc34b954b889a81d53159618c52
+#: ../../source/user-docs/application-help/keywords.rst:291
 msgid "Keyword editor icon"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:293
 # 1d44004e680f4d0d86e89cfd7660a94c
-msgid "If you have not selected a layer in the QGIS legend, the keyword editor icon in the toolbar and menus will **be disabled** and appear greyed out."
+#: ../../source/user-docs/application-help/keywords.rst:293
+msgid ""
+"If you have not selected a layer in the QGIS legend, the keyword editor icon "
+"in the toolbar and menus will **be disabled** and appear greyed out."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:298
 # b4635c7379924950836fdba7f0a3614b
+#: ../../source/user-docs/application-help/keywords.rst:298
 msgid "Saving your edits"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:300
 # 228aee01602049f1a8f4a8e73b2aef14
-msgid "To save your keyword edits, simply press the :guilabel:`OK` button and the :file:`*.keywords` file will be written to disk."
+#: ../../source/user-docs/application-help/keywords.rst:300
+msgid ""
+"To save your keyword edits, simply press the :guilabel:`OK` button and the :"
+"file:`*.keywords` file will be written to disk."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:304
 # caa2181e8a76439f835f99d70edba872
+#: ../../source/user-docs/application-help/keywords.rst:304
 msgid "Cancelling your edits"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:306
 # 11528b5fafdb4af584d9570c87ec87d0
-msgid "You can cancel your changes at any time by pressing the :guilabel:`Cancel` button. No changes will be written to disk and your :file:`*.keywords` file will remain in its original state."
+#: ../../source/user-docs/application-help/keywords.rst:306
+msgid ""
+"You can cancel your changes at any time by pressing the :guilabel:`Cancel` "
+"button. No changes will be written to disk and your :file:`*.keywords` file "
+"will remain in its original state."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:312
 # acc2d8ee67fd4f7fa4bd197c2293dfdc
+#: ../../source/user-docs/application-help/keywords.rst:312
 msgid "Keywords for remote and non-file based layers"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:314
 # ba68d27840a6426390f5775479e8ffbd
-msgid "If you are using a PostgreSQL, WFS, Spatialite or other non-file based resources, you can still create keywords. In these circumstances the keywords will be written to a sqlite database - by default this database is stored as :file:`keywords.db` within the |project_name| plugin directory root."
+#: ../../source/user-docs/application-help/keywords.rst:314
+msgid ""
+"If you are using a PostgreSQL, WFS, Spatialite or other non-file based "
+"resources, you can still create keywords. In these circumstances the "
+"keywords will be written to a sqlite database - by default this database is "
+"stored as :file:`keywords.db` within the |project_name| plugin directory "
+"root."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:320
 # 93b34789cc6649e0ad7801d6b7f97c65
-msgid "You may wish to use a different location for the :file:`keywords.db` keywords database - you can configure this by using the |project_name| options dialog. The options dialog can be launched by clicking on the |project_name| plugin toolbar's options icon (as shown below) or by doing :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
+#: ../../source/user-docs/application-help/keywords.rst:320
+msgid ""
+"You may wish to use a different location for the :file:`keywords.db` "
+"keywords database - you can configure this by using the |project_name| "
+"options dialog. The options dialog can be launched by clicking on the |"
+"project_name| plugin toolbar's options icon (as shown below) or by doing :"
+"menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:331
 # 6e862c7853774fcda26e1ecd5a4bcc3a
+#: ../../source/user-docs/application-help/keywords.rst:331
 msgid "Selecting the options icon"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:333
 # aedcfb3b81774b08bd606ff876110de5
-msgid "When the options dialog is opened, the keywords database path can be specified under the tab :guilabel:`Advanced` using the :guilabel:`keyword cache for remote datasources` option as shown below."
+#: ../../source/user-docs/application-help/keywords.rst:333
+msgid ""
+"When the options dialog is opened, the keywords database path can be "
+"specified under the tab :guilabel:`Advanced` using the :guilabel:`keyword "
+"cache for remote datasources` option as shown below."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:342
 # c474b27b204c4320b1d580ed01e0b870
+#: ../../source/user-docs/application-help/keywords.rst:342
 msgid "Path to options database"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:346
 # e06b4bfd95f54c67bfa2b928aa133d84
-msgid "Support for remote and non-file based layers was added in |project_name| version 0.3."
+#: ../../source/user-docs/application-help/keywords.rst:346
+msgid ""
+"Support for remote and non-file based layers was added in |project_name| "
+"version 0.3."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:348
 # 18cb5c75221545749fc4b80dbe34ef64
-msgid "The database can be opened using a sqlite editor such as sqliteman, but the data in the keywords table is not intended to be human readable or edited. The table columns consist of an MD5 hash based on the URI for the datasource (typically the database connection details) and a blob which contains the keywords as a pickled python dictionary."
+#: ../../source/user-docs/application-help/keywords.rst:348
+msgid ""
+"The database can be opened using a sqlite editor such as sqliteman, but the "
+"data in the keywords table is not intended to be human readable or edited. "
+"The table columns consist of an MD5 hash based on the URI for the datasource "
+"(typically the database connection details) and a blob which contains the "
+"keywords as a pickled python dictionary."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:355
 # 90d3eaa7f0184d9589c6d6bd85b88402
-msgid "See the :doc:`./options` document for more information about the |project_name| options dialog."
+#: ../../source/user-docs/application-help/keywords.rst:355
+msgid ""
+"See the :doc:`./options` document for more information about the |"
+"project_name| options dialog."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:359
 # 94c57ad3990142b896bcd399935cb401
+#: ../../source/user-docs/application-help/keywords.rst:359
 msgid "Sharing your keywords cache"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:361
 # 01ecc1f4ed3a40d89b5f2b1ada0b0ec6
-msgid "In theory you can place the keywords file on a network share and create a shared keyword repository in a multi-user environment, but you should note that the layer URI hashes need to be identical in order for a layer's keyword to be found. This means that, for (contrived), example ::"
+#: ../../source/user-docs/application-help/keywords.rst:361
+msgid ""
+"In theory you can place the keywords file on a network share and create a "
+"shared keyword repository in a multi-user environment, but you should note "
+"that the layer URI hashes need to be identical in order for a layer's "
+"keyword to be found. This means that, for (contrived), example ::"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:370
 # fc0d6ed19c4c4ba585bf33a130630e0f
+#: ../../source/user-docs/application-help/keywords.rst:370
 msgid "would not be considered the same as ::"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:375
 # ca621018d26c4d8d9ab5bdba46ffc98f
-msgid "since the user credentials differ, resulting in a different URI. To work around this you could create a common account so that every user will effectively use the same URI to load that layer e.g. ::"
+#: ../../source/user-docs/application-help/keywords.rst:375
+msgid ""
+"since the user credentials differ, resulting in a different URI. To work "
+"around this you could create a common account so that every user will "
+"effectively use the same URI to load that layer e.g. ::"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:382
 # b59c2625ca4e444d925dec5024eace93
-msgid "For certain resources (e.g. ArcInfo coverages, Spatialite databases) where the keywords cache is also used, you should take care to use a common mount point or network share to access the data if you wish to successfully hit the cache with the layer's URI. For example you could have all users mount your data to the same place. Under Unix like operating systems this could look something like this:"
+#: ../../source/user-docs/application-help/keywords.rst:382
+msgid ""
+"For certain resources (e.g. ArcInfo coverages, Spatialite databases) where "
+"the keywords cache is also used, you should take care to use a common mount "
+"point or network share to access the data if you wish to successfully hit "
+"the cache with the layer's URI. For example you could have all users mount "
+"your data to the same place. Under Unix like operating systems this could "
+"look something like this:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:389
 # 4a0b62a1f71746328bcbac5570f58396
+#: ../../source/user-docs/application-help/keywords.rst:389
 msgid ":file:`/mnt/gisdata/jk.sqlite`"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:391
 # a7d2e3daddea47b9970f227c6b284bc1
-msgid "Under Windows you could always the same drive letter and path the to share e.g.:"
+#: ../../source/user-docs/application-help/keywords.rst:391
+msgid ""
+"Under Windows you could always the same drive letter and path the to share e."
+"g.:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:394
 # 216fae567cbc42e3a69609708d37f3b8
+#: ../../source/user-docs/application-help/keywords.rst:394
 msgid ":file:`Z:\\\\gisdata\\\\jk.sqlite`"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:397
 # 3b4bedbc3aba49249e4bd92d22920688
+#: ../../source/user-docs/application-help/keywords.rst:397
 msgid "Getting help"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords.rst:399
 # 7a1d9c6048f94eb9a2a1d554fbf95a39
-msgid "If you need help using the keywords editor, you can click on the :guilabel:`Help` button at the bottom of the dialog and this page will be displayed."
+#: ../../source/user-docs/application-help/keywords.rst:399
+msgid ""
+"If you need help using the keywords editor, you can click on the :guilabel:"
+"`Help` button at the bottom of the dialog and this page will be displayed."
 msgstr ""
-

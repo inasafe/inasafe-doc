@@ -6,9 +6,9 @@ Package::safe
 
    safe/api
    safe/defaults
-   safe/common
-   safe/engine
    safe/impact_functions
-   safe/postprocessors
-   safe/messaging
    safe/storage
+   safe/postprocessors
+   safe/engine
+   safe/common
+   safe/messaging
