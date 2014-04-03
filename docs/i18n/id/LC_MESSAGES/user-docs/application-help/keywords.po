@@ -1,8 +1,9 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-#
+# 
 # Translators:
+# BiondiSima <biondi.sima@hotosm.org>, 2014
 # dewisulistio <dewi.sulistioningrum@hotosm.org>, 2013
 # dika <mahardika.fadmastuti@gmail.com>, 2013
 # emirhartato <emir.hartato@gmail.com>, 2013
@@ -19,160 +20,129 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-04 09:13+0100\n"
-"PO-Revision-Date: 2014-02-28 16:35+0000\n"
-"Last-Translator: macho <werner.macho@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
-"develop/language/id/)\n"
-"Language: id\n"
+"POT-Creation-Date: 2014-03-19 10:45+0100\n"
+"PO-Revision-Date: 2014-03-26 09:22+0000\n"
+"Last-Translator: BiondiSima <biondi.sima@hotosm.org>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-develop/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# b349d3cbcbbc414cb2f414d011b4ad51
+# 9290efda067848709b5e79b3d52a71b4
 #: ../../source/user-docs/application-help/keywords.rst:8
 msgid "Keywords System"
 msgstr "Sistem Kata kunci"
 
-# 0ab0b7f91dfd4ca3a95c62c53f57eb9b
+# 84adbdbe9fcd42d0a89172ae915d2990
 #: ../../source/user-docs/application-help/keywords.rst:10
 msgid ""
 "This document describes the purpose and usage of the |project_name| "
 "*keywords* system."
-msgstr ""
-"Dokumentasi ini menjelaskan tujuan dan penggunaan sistem *kata kunci* |"
-"project_name|"
+msgstr "Dokumentasi ini menjelaskan tujuan dan penggunaan sistem *kata kunci* |project_name|"
 
-# c014a1bd9d134862a6bf35861304550c
+# 24a1a4432dcd438997eba1ca75e5655c
 #: ../../source/user-docs/application-help/keywords.rst:14
 msgid "Purpose"
 msgstr "Tujuan"
 
-# 50b583f6202f4f6c95325dd85f2613d3
+# a1851097ecac4969aaac935869ddeb5a
 #: ../../source/user-docs/application-help/keywords.rst:16
 msgid ""
 "The keywords system is used by the :ref:`Impact Functions "
 "<impact_functions>` to determine the nature of the input layers that have "
 "been passed to them."
-msgstr ""
-"Sistem kata kunci digunakan oleh :ref:`impact_functions <impact_functions>` "
-"untuk menentukan sifat input layer yang telah diberikan untuk mereka."
+msgstr "Sistem kata kunci digunakan oleh :ref:`impact_functions <impact_functions>` untuk menentukan sifat input layer yang telah diberikan kepadanya."
 
-# 94b6d9819fee4639ac8e84bb1659394a
+# 87d76878ebd74b2cba146665b06c6f1f
 #: ../../source/user-docs/application-help/keywords.rst:19
 msgid ""
 "Each input GIS dataset used by |project_name| needs to have an accompanying "
 "keywords file. The purpose of the keywords file is to provide additional "
-"metadata needed by the impact functions. For example, the keywords file will "
-"indicate whether a given dataset should be treated as a *hazard* or an "
+"metadata needed by the impact functions. For example, the keywords file will"
+" indicate whether a given dataset should be treated as a *hazard* or an "
 "*impact* layer. It is also used to indicate the context of the layer (e.g. "
 "\"it's a *flood* layer\", \"it's an *earthquake* layer\")."
-msgstr ""
-"Setiap pemasukan set data SIG yang digunakan |project_name| memerlukan "
-"sebuah file kata kunci yang terlampir. Tujuan dari file kata kunci ini "
-"adalah untuk menyediakan metadata tambahan yang dibutuhkan oleh fungsi "
-"dampak. Sebagai contoh, file kata kunci akan mengindikasikan apakah sebuah "
-"dataset harus diperlakukan sebagai sebuah *ancaman* atau sebuah layer "
-"*dampak*. File kata kunci ini juga digunakan untuk mengindikasikan konteks "
-"dari layer (misalnya \"ini adalah layer *banjir*, ini adalah layer *gempa "
-"bumi*\")."
+msgstr "Setiap pemasukan set data SIG yang digunakan |project_name| memerlukan sebuah *file* kata kunci yang terlampir. Tujuan dari *file* kata kunci ini adalah untuk menyediakan metadata tambahan yang dibutuhkan oleh fungsi dampak. Sebagai contoh, *file* kata kunci akan mengindikasikan apakah sebuah dataset harus diperlakukan sebagai sebuah *ancaman* atau sebuah layer *dampak*. *File* kata kunci ini juga digunakan untuk mengindikasikan konteks dari layer (misalnya \"ini adalah layer *banjir*, ini adalah layer *gempa bumi*\")."
 
-# 903d2285e8c34bc5bc05a635b5068596
+# d0b407daa09848dc9b2f71855fd3cefe
 #: ../../source/user-docs/application-help/keywords.rst:28
 msgid ""
 "By convention and expectation, the keywords file should be named with the "
 "same base name of the GIS datasource it accompanies. For example a flood "
 "dataset saved as"
-msgstr ""
-"Dengan konvensi dan ekspektasi, berkas keyword harus diberi nama sama dengan "
-"nama dasar dari sumber data GIS yang menyertai. Sebagai contoh sebuah set "
-"data banjir disimpan sebagai"
+msgstr "Dengan konvensi dan ekspektasi, berkas keyword harus diberi nama sama dengan nama dasar dari sumber data GIS yang menyertai. Sebagai contoh sebuah set data banjir disimpan sebagai"
 
-# ec9bc0526dc9449083d58703d308c3a1
+# 8b28021714f943549504ba1c7e0f4119
 #: ../../source/user-docs/application-help/keywords.rst:32
 msgid ":file:`C:\\\\gisdata\\\\flood.tif`"
 msgstr ":file:`C:\\\\gisdata\\\\flood.tif`"
 
-# 38a2972b381d48f6bb4047c8e2d4dcf8
+# f0993ee83a12432bb46e5c4169d5689e
 #: ../../source/user-docs/application-help/keywords.rst:34
 msgid "would need to have an accompanying keywords file saved as:"
 msgstr "akan membutuhkan berkas keyword yang menyertai disimpan sebagai:"
 
-# 5a351d94101d41739f388df991f20c7a
+# b8889cb9c2884abea09d85d5568f0c81
 #: ../../source/user-docs/application-help/keywords.rst:36
 msgid ":file:`C:\\\\gisdata\\\\flood.keywords`"
 msgstr ":file:`C:\\\\gisdata\\\\flood.keywords`"
 
-# b5885d663f40466d91ab129de9dca381
+# 5a992984a9954f4bae6647eff55f4810
 #: ../../source/user-docs/application-help/keywords.rst:38
 msgid ""
 "We recommend to **avoid using spaces** in your file names and file paths!"
-msgstr ""
-"Kami merekomendasikan untuk **menghindari menggunakan spasi** pada nama file "
-"dan lokasi file Anda!"
+msgstr "Kami merekomendasikan untuk **menghindari menggunakan spasi** pada nama file dan lokasi file Anda!"
 
-# e76128f94bf540599c0bad8029f11bdd
+# 6ac4689692784326aba0a373be82f902
 #: ../../source/user-docs/application-help/keywords.rst:41
 msgid ""
 "The |project_name| QGIS plugin provides an editor for these keywords. The "
 "purpose of this document is to describe the keywords editor and to provide "
 "guidelines as to the use of keywords."
-msgstr ""
-"Plugin |project_name| di QGIS menyediakan sebuah editor untuk kata kunci "
-"ini. Tujuan dari dokumen ini adalah untuk mendeskripsikan editor kata kunci "
-"dan untuk menyediakan panduan penggunaan kata kunci tersebut."
+msgstr "Plugin |project_name| di QGIS menyediakan sebuah editor untuk kata kunci ini. Tujuan dari dokumen ini adalah untuk mendeskripsikan editor kata kunci dan untuk menyediakan panduan penggunaan kata kunci tersebut."
 
-# 67ff7e0b6b9343179cf36602104812fb
+# e3ee29d83e4841d9b3d63640a514cf30
 #: ../../source/user-docs/application-help/keywords.rst:45
 msgid ""
 "Currently keywords are not validated by the library. This means if you for "
 "example misspell a keyword, use the wrong letter case (e.g. upper case "
 "instead of lower case) or provide the wrong keyword for the context (e.g. "
-"provide a subcategory of flood to an exposure category), the system will not "
-"be able to determine what to do with the file. For that reason you should "
+"provide a subcategory of flood to an exposure category), the system will not"
+" be able to determine what to do with the file. For that reason you should "
 "follow the guidelines below carefully to ensure you have entered your "
 "keywords correctly."
-msgstr ""
-"Saat ini kata kunci tidak tervalidasi oleh pustaka. Ini artinya sebagai "
-"contoh jika Anda salah mengeja sebuah kata kunci, menggunakan jenis huruf "
-"yang salah (misal huruf besar daripada huruf kecil) atau memberikan kata "
-"kunci yang salah untuk konteks (misalnya memberikan sub-kategori banjir pada "
-"sebuah kategori keterpaparan), sistem tidak  dapat menerjemahkan apa yang "
-"akan dilakukan oleh file tersebut. Karena alasan inilah Anda diharuskan "
-"mengikuti panduan di bawah ini secara cermat untuk meyakinkan bahwa Anda "
-"telah memasukan kata kunci secara benar."
+msgstr "Saat ini kata kunci tidak tervalidasi oleh pustaka. Ini artinya sebagai contoh jika Anda salah mengeja sebuah kata kunci, menggunakan jenis huruf yang salah (misal huruf besar daripada huruf kecil) atau memberikan kata kunci dalam konteks yang keliru (misalnya memberikan sub-kategori banjir pada sebuah kategori keterpaparan), sistem tidak  dapat menerjemahkan apa yang akan dilakukan oleh file tersebut. Karena alasan inilah Anda diharuskan mengikuti panduan di bawah ini secara cermat untuk meyakinkan bahwa Anda telah memasukan kata kunci dengan benar."
 
-# 781531052ff648ea9f541a1d30b69000
+# 0b18b885de714e87a9f9a27c79660b9c
 #: ../../source/user-docs/application-help/keywords.rst:55
 msgid "Guidelines"
 msgstr "Pedoman"
 
-# f5f90f029f584e77a00e76691ba0e01b
+# 99197e96ec50472ea8907e6fe84202df
 #: ../../source/user-docs/application-help/keywords.rst:57
 msgid "In this section we lay out the guidelines for keyword usage."
 msgstr "Pada bagian ini kami menyusun panduan untuk penggunaan kata kunci."
 
-# b4ed750b29b143a1aad87274b44e2811
+# 2b522532b84240a9ad44ace683742cc4
 #: ../../source/user-docs/application-help/keywords.rst:60
 msgid "Category"
 msgstr "Kategori"
 
-# 75f36665a5ae4765b964b65d6ed01e32
+# bde6e7b0469a459abab869347f3e21bc
 #: ../../source/user-docs/application-help/keywords.rst:62
 msgid ""
 "Every dataset should have a category assigned to it. Category should be "
 "written in lower case."
-msgstr ""
-"Setiap dataset seharusnya memiliki sebuah kategori yang telah ditentukan. "
-"Kategori ini harus tertulis dalam huruf kecil."
+msgstr "Setiap dataset seharusnya memiliki sebuah kategori yang telah ditentukan. Kategori ini harus tertulis dalam huruf kecil."
 
-# 296b6fc4223d4997ba11ba74d922d7a5
-# c01bd7480ec743828e10e51566f67a70
-# ab1690d35c4843bfb72b425872d08a64
-# c3448d015f784df18a230c69f53908f3
-# 74f332cce03b4a81a098bb4da100ed92
-# 2106e125fbf14e0eb56113baac344f9d
+# 67deefcd7f5c40a0a3e5bac14b798eba
+# 2b1ba395761b4a15977a5829980c0456
+# 9c690a446bcb40a6908473848c1771e8
+# c93fb38994434cc9857002252f518ab1
+# f8d20539660c4e45b20c9b59cbda1913
+# 2f3d9b1da6084419805e2f8981c6844c
 #: ../../source/user-docs/application-help/keywords.rst:68
 #: ../../source/user-docs/application-help/keywords.rst:89
 #: ../../source/user-docs/application-help/keywords.rst:103
@@ -182,12 +152,12 @@ msgstr ""
 msgid "Key"
 msgstr "Kunci"
 
-# d643721a37954d988fe68e67c5df93fe
-# 25da1992b2f4484cbd92b4e261671810
-# 2637886956564d6d83959bc207efa0eb
-# ce5f2072fe784d07abfb9f1fc63409ba
-# eb25c54ace2245b399dd617c83c8935d
-# ff295d62d5a74bb39b0a93c45dfb0759
+# 5ee0a54fafa9493193a7224d0861df0c
+# 2b0cc53d8ffb435eb3734afed49f16e8
+# 83957c3862dd4a3887be5d0a3d3f3470
+# 939da4afb2044df1a800ce0da2fb2938
+# b57a502145ae47dfa552dca1e8c3999a
+# 6dd1a766bb494ca98c49b1a89f3e58b7
 #: ../../source/user-docs/application-help/keywords.rst:68
 #: ../../source/user-docs/application-help/keywords.rst:89
 #: ../../source/user-docs/application-help/keywords.rst:103
@@ -197,98 +167,98 @@ msgstr "Kunci"
 msgid "Allowed Values"
 msgstr "Nilai yang diperbolehkan"
 
-# c70b6327ffa24e6296830a10426d3558
-# 35c31389be404a4c9c850c86dc3a0af7
+# 611afc4db7b947e3b446950da2bc2703
+# e0d0252949874bbe98485a96e4633aa4
 #: ../../source/user-docs/application-help/keywords.rst:70
 #: ../../source/user-docs/application-help/keywords.rst:71
 msgid "category"
 msgstr "kategori"
 
-# f9c92b46046049eabe76474c2ba078cd
+# d8474806a0aa4f018164f42b588851fb
 #: ../../source/user-docs/application-help/keywords.rst:70
 msgid "hazard"
 msgstr "ancaman"
 
-# 38f9b2bd244f4a36b218f27c8a3c588e
-# 42e479bf0fa04ed6b3442ea17450f478
-# 7372b89e70d846babb66c073e37f837c
+# 3c815ea4f71e41cf8c8ce3354cb6481d
+# 60104d0307ba46b8bdfdc94fd3d58fbc
+# 2c226b55923c4ad1904ded943f649e56
 #: ../../source/user-docs/application-help/keywords.rst:71
 #: ../../source/user-docs/application-help/keywords.rst:105
 #: ../../source/user-docs/application-help/keywords.rst:106
 msgid "exposure"
 msgstr "keterpaparan"
 
-# 9a039e879adf4beda5c541fa5e70a2c6
-# 89992e7503ef49ffa1df3a9ff5b430e4
+# 768ae62fe63f4faaa432b2204616b0bc
+# 980d93d083954fa083faf046e54a313e
 #: ../../source/user-docs/application-help/keywords.rst:74
 #: ../../source/user-docs/application-help/keywords.rst:109
 msgid "Example keywords file entry ::"
 msgstr "Contoh pemasukan file kata kunci ::"
 
-# 850918c012c9408b8d1d5d20ac750753
-# 9362eb3397024dc8b3fe8cf6267afec7
+# 8403c2a8adb54cd28986343713068720
+# 6dbf65c7891c43cdaa70cdce21a4fcca
 #: ../../source/user-docs/application-help/keywords.rst:80
 #: ../../source/user-docs/application-help/keywords.rst:181
 msgid "Subcategory"
 msgstr "Subkategori"
 
-# e441aa71e6b743ec862d1383c9b6dded
+# 5a0210e3c65a43f2bd06b06a27ee7548
 #: ../../source/user-docs/application-help/keywords.rst:82
 msgid "The selection of a subcategory value is dependent on the category:"
 msgstr "Pemilihan dari sebuah nilai subkategori tergantung dari kategori:"
 
-# 739e10f9b9304aa4971eb9de615ee7ed
+# dd8025d7c84847e5b00916f129073152
 #: ../../source/user-docs/application-help/keywords.rst:84
 msgid "Valid subcategories for category 'hazard':"
 msgstr "Subkategori yang berlaku untuk kategori 'ancaman':"
 
-# 546ad487ab0147d8b2e8f9b693f434b6
-# c6ae6ec0186f410d878768d71aaeb71e
-# 9d3cb1971e0e499b9cd8b8ed542d5a64
+# 41c51e5396bc43a7928587bf814b01ba
+# ea5bdbbde8a248a3a034e23e02be5985
+# ed353615e34549a0b56a9521a4b404b3
 #: ../../source/user-docs/application-help/keywords.rst:91
 #: ../../source/user-docs/application-help/keywords.rst:92
 #: ../../source/user-docs/application-help/keywords.rst:93
 msgid "subcategory"
 msgstr "Subkategori"
 
-# 8f547b8e375a49a9bca261168f0e5e54
+# 76ca2586663140328b3b5f3fc283ee37
 #: ../../source/user-docs/application-help/keywords.rst:91
 msgid "tsunami"
 msgstr "tsunami"
 
-# e78b99b9276d45209328455fb65030d5
+# e24c03bb2f2e48edbbefccad3655b18c
 #: ../../source/user-docs/application-help/keywords.rst:92
 msgid "flood"
 msgstr "banjir"
 
-# d2fcf050590d4c459feb8ebbbc79848f
+# 4564b65693884345b37f8a15c64434a2
 #: ../../source/user-docs/application-help/keywords.rst:93
 msgid "tephra"
 msgstr "tephra (abu vulkanik)"
 
-# 75c376677abc4f66abd2d114d58f79bb
+# cf86bc9a3e894fdba353d0a5be0f28b3
 #: ../../source/user-docs/application-help/keywords.rst:96
 msgid "Where tephra is volcanic ashfall."
 msgstr "Dimana tephra merupakan bentuk lontaran dari abu vulkanik."
 
-# 791f6be56a2b4ecea2e61b2f055a591f
+# ea97317da1e14ce4bda5a97a4d73f0d7
 #: ../../source/user-docs/application-help/keywords.rst:98
 msgid "Valid subcategories for category 'exposure':"
 msgstr "Subkategori yang berlaku untuk kategori 'keterpaparan':"
 
-# ae0eb478509f4cbc93ae618a2030a2a7
-# 2f612cc9954c4a05bb75d84f0ec7d051
-# 85cefee19ea348f997040b18a5360dfd
+# 36792d8715fb46a88166c0a2dda0953c
+# 48c6e845113c4ea1a7ca8f7439d3d961
+# f35587468279407fa8782d5d3616d5b5
 #: ../../source/user-docs/application-help/keywords.rst:105
 #: ../../source/user-docs/application-help/keywords.rst:183
 #: ../../source/user-docs/application-help/keywords.rst:184
 msgid "population"
 msgstr "populasi"
 
-# 3fefa6734afb47b2b2a5762392148e2c
-# 29cfb01a49294fea827ba3be9f2cb1f9
-# 1693f42e67334cb49421af2c2b0d167a
-# be2b170bd51e4e3bba2f3468ebfaabc1
+# 426b0a9bf94347d68a4ea7ac80eb3430
+# 1c0330eac9a442ba92adc32707f8ddaa
+# 7fa3d4f6bfe1473184bdbf8c3bf82723
+# f622d1ca70e843ebbb5b89a7ceb37d1e
 #: ../../source/user-docs/application-help/keywords.rst:106
 #: ../../source/user-docs/application-help/keywords.rst:185
 #: ../../source/user-docs/application-help/keywords.rst:186
@@ -296,48 +266,38 @@ msgstr "populasi"
 msgid "building"
 msgstr "bangunan"
 
-# e38efc43ef1642a9b54fe7bdde7c4340
+# ef578f677ee84b62969fc758b529b4ec
 #: ../../source/user-docs/application-help/keywords.rst:116
 msgid "Units"
 msgstr "unit/ satuan"
 
-# 780beecbf4d84c23b4825d6e29731d92
+# da842735bbff4934be681c1879b51127
 #: ../../source/user-docs/application-help/keywords.rst:118
 msgid ""
 "The units keyword is only valid in the context of 'hazard' layers, and is "
 "used to indicate the metric or imperial units represented by each data "
 "entity (a grid cell or a vector feature) in the hazard layer. Example "
 "keywords file entry ::"
-msgstr ""
-"Kata kunci unit hanya berlaku pada konteks layer 'ancaman', dan digunakan "
-"untuk mengindikasikan satuan metrik atau imperial yang digambarkan oleh "
-"setiap entitas data (satu sel kotak atau satu fitur vektor) pada layer "
-"ancaman. Contoh pemasukan file kata kunci ::"
+msgstr "Kata kunci unit hanya berlaku pada konteks layer 'ancaman', dan digunakan untuk mengindikasikan satuan metrik atau imperial yang digambarkan oleh setiap entitas data (satu sel kotak atau satu fitur vektor) pada layer ancaman. Contoh pemasukan file kata kunci ::"
 
-# 9a0c7240e65448d19e1ca0441a1348b5
+# e686963b78fe4d1592bcbf18b1b8c125
 #: ../../source/user-docs/application-help/keywords.rst:128
 msgid ""
 "In the above case there is a soft constraint to use a value for units of m, "
 "feet or wet/dry as defined by the table below because the subcategory is "
 "'flood'. The following are the allowed units which are dependent on the "
 "subcategory defined."
-msgstr ""
-"Pada kasus di atas terdapat kendala halus untuk menggunakan nilai satuan m, "
-"kaki atau basah/kering sebagaimana yang didefinisikan oleh tabel di bawah "
-"ini karena subkategori 'banjir'. Berikut ini adalah satuan yang "
-"diperbolehkan tergantung pada subkategori yang telah ditetapkan."
+msgstr "Pada kasus di atas terdapat kendala halus untuk menggunakan nilai satuan m, kaki atau basah/kering sebagaimana yang didefinisikan oleh tabel di bawah ini karena subkategori 'banjir'. Berikut ini adalah satuan yang diperbolehkan tergantung pada subkategori yang telah ditetapkan."
 
-# 66bd1899f58e48d284a261b06c20637b
+# 4440c23375ea4faaac6b994222b7870d
 #: ../../source/user-docs/application-help/keywords.rst:134
 msgid "Valid subcategories for subcategory 'tsunami' or subcategory 'flood':"
-msgstr ""
-"Subkategori yang berlaku untuk subkategori 'tsunami' atau subkategori "
-"'banjir':"
+msgstr "Subkategori yang berlaku untuk subkategori 'tsunami' atau subkategori 'banjir':"
 
-# b8fca2a4187448529caf7420c671d015
-# 8b7ff31a657540ed8350885eb5d66711
-# 68ad9f13735543729f96481ec91dba1c
-# 395bf2f57272468eb8f57c2ce18787ec
+# 1004483ebd20474d8cb9a35904bef84a
+# 64f4fcc602f74a828beadfe7495eb1b2
+# 4b7142f502014b169efd8c26baa4b0b0
+# 5ff883ad41e24ac9a481373effb7daec
 #: ../../source/user-docs/application-help/keywords.rst:141
 #: ../../source/user-docs/application-help/keywords.rst:142
 #: ../../source/user-docs/application-help/keywords.rst:143
@@ -345,98 +305,84 @@ msgstr ""
 msgid "units"
 msgstr "unit/ satuan"
 
-# 3c1014d0191643dba9718b5926772774
+# 7b563d8ee0414920bbe9a032aacad1b9
 #: ../../source/user-docs/application-help/keywords.rst:141
 msgid "m"
 msgstr "m"
 
-# 4b1c82e3a4ef408f98b691963f25462c
+# ae6f24ce66d74737a1ff8e6aab9d50e8
 #: ../../source/user-docs/application-help/keywords.rst:142
 msgid "wet/dry"
 msgstr "basah/ kering"
 
-# 0e4d26a08b0044a695a16cc2780d578d
+# 9ae384e4dd6d437cb9c8b58937a8b5bc
 #: ../../source/user-docs/application-help/keywords.rst:143
 msgid "feet"
 msgstr "kaki"
 
-# c094ab8dabe44303a909607755d93607
+# 6bf104d0ea9842039cb28cb487edc548
 #: ../../source/user-docs/application-help/keywords.rst:146
 msgid ""
-"In the case where the units are m (meters) or feet, the input dataset should "
-"be a raster layer where each cell in the raster represents a depth in the "
+"In the case where the units are m (meters) or feet, the input dataset should"
+" be a raster layer where each cell in the raster represents a depth in the "
 "units specified."
-msgstr ""
-"Pada kasus dimana dalam satuan m (meter) atau kaki, pemasukan dataset "
-"diharuskan berupa sebuah layer raster dimana setiap sel menggambarkan satu "
-"nilai kedalaman berdasarkan satuan yang telah ditentukan."
+msgstr "Pada kasus dimana dalam satuan m (meter) atau kaki, pemasukan dataset diharuskan berupa sebuah layer raster dimana setiap sel menggambarkan satu nilai kedalaman berdasarkan satuan yang telah ditentukan."
 
-# a01537db67104333baa85e34168b0b01
+# 94838915885b49a88c615b831e619ca0
 #: ../../source/user-docs/application-help/keywords.rst:150
 msgid ""
 "In the case of wet/dry, the input dataset needs to be a vector polygon "
 "layer. Any area that is inside a polygon is considered 'wet' and any area "
 "outside of a polygon is considered to be 'dry'."
-msgstr ""
-"Pada kasus basah/ kering, pemasukan dataset diharuskan berupa sebuah layer "
-"vektor poligon. Area apa pun yang terdapat dalam poligon ini dianggap "
-"'basah' dan area diluar poligon dianggap 'kering'."
+msgstr "Pada kasus basah/ kering, pemasukan dataset diharuskan berupa sebuah layer vektor poligon. Area apa pun yang terdapat dalam poligon ini dianggap 'basah' dan area diluar poligon dianggap 'kering'."
 
-# dc37bfd2335a47d4a25c4b25dc1ee599
+# 95f6b8e1b7c44a8b809f2cd4557134f8
 #: ../../source/user-docs/application-help/keywords.rst:154
 msgid "Valid subcategories for subcategory 'volcano'"
 msgstr "Subkategori yang berlaku untuk subkategori 'gunung berapi'"
 
-# 3c76f40824e84a81a75dda3b7096d981
+# 685c5eaad3a74d04bcdca7dff390af2e
 #: ../../source/user-docs/application-help/keywords.rst:161
 msgid "kg2/m2"
 msgstr "kg2/m2"
 
-# 9484037740ed4026946c6cdb612310da
+# 468cce24f10943b89d34cd7cb429a5ce
 #: ../../source/user-docs/application-help/keywords.rst:164
 msgid ""
-"In this case the dataset should be a raster layer where each cell represents "
-"the kilograms per meters squared of ash fall on that cell."
-msgstr ""
-"Pada kasus ini, dataset diharuskan berupa sebuah layer raster dimana setiap "
-"sel menggambarkan sebuah nilai dalam kilogram per meter persegi dari abu "
-"yang berada pada sel tersebut."
+"In this case the dataset should be a raster layer where each cell represents"
+" the kilograms per meters squared of ash fall on that cell."
+msgstr "Pada kasus ini, dataset diharuskan berupa sebuah layer raster dimana setiap sel menggambarkan sebuah nilai dalam kilogram per meter persegi dari abu yang berada pada sel tersebut."
 
-# db3965eb4e3e44fd840ca1fdf7a2b102
+# 0a2826ab3d4a4e28b8d4aeaedca71c43
 #: ../../source/user-docs/application-help/keywords.rst:167
 msgid ""
-"'units' and 'datatype' (described below) should be considered to be mutually "
-"exclusive - i.e. they should not both be present in any given keywords file."
-msgstr ""
-"'satuan' dan 'tipe data' (dideskripsikan di bawah) harus dianggap saling "
-"eksklusif - misalnya keduanya tidak harus ada pada setiap file kata kunci "
-"yang diberikan."
+"'units' and 'datatype' (described below) should be considered to be mutually"
+" exclusive - i.e. they should not both be present in any given keywords "
+"file."
+msgstr "'satuan' dan 'tipe data' (dideskripsikan di bawah) harus dianggap saling eksklusif - misalnya keduanya tidak harus ada pada setiap file kata kunci yang diberikan."
 
-# 74edbe075d76456c8e07ffd4f4b34538
+# e8e98c875dc145bfa0c5dabea06fd56e
 #: ../../source/user-docs/application-help/keywords.rst:172
 msgid "Datatype"
-msgstr "jenis data"
+msgstr "Jenis data"
 
-# 0546ddf69132491eacab25f0d1b78349
+# a7fa20e343e74f5db3e5719e23d469c0
 #: ../../source/user-docs/application-help/keywords.rst:173
 msgid ""
 "The datatype keyword is specific to exposure layers and represents the "
 "datatype of people, infrastructure etc. within a given area."
-msgstr ""
-"Kata kunci untuk jenis data ditentukan untuk layer keterpaparan dan "
-"menggambarkan jenis data penduduk, infrastruktur, dan sebagainya dalam "
-"lingkup area yang diberikan."
+msgstr "Kata kunci untuk jenis data ditentukan untuk layer keterpaparan dan menggambarkan jenis data penduduk, infrastruktur, dan sebagainya dalam lingkup area yang diberikan."
 
-# 95520a73429e4756b1eefb60ed6c8634
+# a7659e9eb4d448edae3fd829f72e30e2
 #: ../../source/user-docs/application-help/keywords.rst:176
 msgid "Valid densities for different subcategories"
 msgstr "Kepadatan yang berlaku untuk sub-kategori yang berbeda"
 
-# 39a52fc6dab84a03ac0de25bb8892341
-# 4355188d009b414e9f05637765f8e833
-# a0d46d5bae074b0b9fcd3f4042357d54
-# 2d5c01943c764d7db138baf80f920b5c
-# e746c88812ef4c95b1fb71fbddf4a7d5
+# f469b9b1496a42c1b917a233be2d407d
+# ba81267168074dfb9b90a3f120c85cbe
+# e272c67a907540a3810d001ba495a6db
+# cfe4ece560254009a74f0ba419f2cae1
+# 4c13e738b6604469910a9d37e6b7c1de
 #: ../../source/user-docs/application-help/keywords.rst:183
 #: ../../source/user-docs/application-help/keywords.rst:184
 #: ../../source/user-docs/application-help/keywords.rst:185
@@ -445,173 +391,141 @@ msgstr "Kepadatan yang berlaku untuk sub-kategori yang berbeda"
 msgid "datatype"
 msgstr "jenis data"
 
-# 410dd3ef9be94687b168872032a30791
+# 08cf7638403341719bbc94bbb3c42474
 #: ../../source/user-docs/application-help/keywords.rst:183
 msgid "count"
 msgstr "jumlah"
 
-# 192f7d68debe4b54912b7fb9ecc12baa
+# 66549d458b274f8abac2552522b44de4
 #: ../../source/user-docs/application-help/keywords.rst:184
 msgid "density"
 msgstr "kepadatan"
 
-# 2c6bb6b0fb9a4a469b0a6e3dee7ef9c9
+# 2d3c1bd6523545f1b87c6c4ad914d91b
 #: ../../source/user-docs/application-help/keywords.rst:185
 msgid "osm"
 msgstr "osm"
 
-# 97f50e2fdccc44d2b0695fa6a76150d0
+# 80c4872b5fdd424d9739129e7fc46ccc
 #: ../../source/user-docs/application-help/keywords.rst:186
 msgid "sigab"
 msgstr "sigab"
 
-# 0a366acfd0b64cf58690c495d9fa48da
+# 85952ab89ad84964a612c5ac1e26cd6c
 #: ../../source/user-docs/application-help/keywords.rst:187
 msgid "other"
 msgstr "lainnya"
 
-# 004c7da176c247fbb983938608c617cf
+# ba8792d78cb04dfe93d6e10fcd61a9de
 #: ../../source/user-docs/application-help/keywords.rst:191
 msgid "Assumptions"
 msgstr "Anggapan"
 
-# 965d7a7d26ff43ee9236a7636ac0b3a6
+# 9a5363102337454c98098989b100aedc
 #: ../../source/user-docs/application-help/keywords.rst:193
 msgid ""
 "The following assumptions are made about keywords, which may or may not be "
 "programmatically enforced by the |project_name| library and GUI:"
-msgstr ""
-"Berikut ini asumsi yang dibuat mengenai kata kunci, yang mungkin atau tidak "
-"mungkin untuk pemrograman yang diterapkan oleh |project_name| library dan "
-"GUI:"
+msgstr "Berikut ini asumsi yang dibuat mengenai kata kunci, yang mungkin atau tidak mungkin untuk pemrograman yang diterapkan oleh |project_name| library dan GUI:"
 
-# 4c08328a0cba4c83b99992b500353f99
+# 222e85742fbf44249e0d27a60404464b
 #: ../../source/user-docs/application-help/keywords.rst:196
 msgid ""
 "There should only be **one keyword for a given key** in the keywords file."
-msgstr ""
-"Seharusnya hanya **satu keyword untuk sebuah key yang diberikan** pada "
-"berkas keyword."
+msgstr "Seharusnya hanya **satu keyword untuk sebuah key yang diberikan** pada berkas keyword."
 
-# f94a3ba14e674116a263fb6244a23cd6
+# 14fe7da81e5a4ed9b4ec0135054b4f61
 #: ../../source/user-docs/application-help/keywords.rst:197
 msgid ""
 "Switching from hazard to exposure will clear parts of the GUI since in "
 "general most keywords are category dependent. In particular, selecting "
 "**'hazard'** will remove the **'datatype'** key/value pair, and selecting "
 "**'exposure'** will remove the **'units'** key value pair."
-msgstr ""
-"Beralih dari ancaman ke keterpaparan akan menghapus bagian dari GUI karena "
-"pada umumnya sebagian besar kata kunci tergantung pada kategorinya. Secara "
-"khusus, pemilihan **'ancaman'** akan menghapus **'datatype'** pasangan "
-"kunci/ nilai, dan pemilihan **'keterpaparan'** akan menghapus **'unit'** "
-"pasangan kunci nilai."
+msgstr "Beralih dari ancaman ke keterpaparan akan menghapus bagian dari GUI karena pada umumnya sebagian besar kata kunci tergantung pada kategorinya. Secara khusus, pemilihan **'ancaman'** akan menghapus **'datatype'** pasangan kunci/ nilai, dan pemilihan **'keterpaparan'** akan menghapus **'unit'** pasangan kunci nilai."
 
-# 7221b0606b0445d5a33629dbdcb2359d
+# 3d73090a8a0c4540af3183afce3977bf
 #: ../../source/user-docs/application-help/keywords.rst:202
 msgid ""
 "Keywords for **category** are **enforced** to be one of 'hazard' or "
 "'exposure' by the GUI."
-msgstr ""
-"Kata kunci untuk **kategori** yang **ditegakkan** menjadi salah satu "
-"'hazard' atau 'exposure' oleh GUI."
+msgstr "Kata kunci untuk **kategori** yang **ditegakkan** menjadi salah satu 'hazard' atau 'exposure' oleh GUI."
 
-# 1e55097b41c24135bd0795d263bc1920
+# 4b9e1bdfa8b449b3bbcf3715034dc4b6
 #: ../../source/user-docs/application-help/keywords.rst:204
 msgid ""
 "All keywords should be in **lower case**, **without spaces** with the "
 "exception of 'Title' whose value may contain both spaces and mixed case "
 "letters."
-msgstr ""
-"Semua kata kunci harus dalam **huruf kecil**, **tanpa spasi** dengan "
-"pengecualian 'Judul' yang nilainya mungkin mengandung spasi dan huruf "
-"campuran."
+msgstr "Semua kata kunci harus dalam **huruf kecil**, **tanpa spasi** dengan pengecualian 'Judul' yang nilainya mungkin mengandung spasi dan huruf campuran."
 
-# 74dd6b63cbd94b88abd9f03865c08abc
+# 2c889d3358194042b0590484ce0f1f05
 #: ../../source/user-docs/application-help/keywords.rst:207
 msgid ""
 "Values for keywords should generally be lower case, with the exception of "
 "**datatype values may be in upper case** (e.g. MMI)"
-msgstr ""
-"Nilai-nilai untuk kata kunci harus pada umunya ditulis menggunakan huruf "
-"kecil dengan pengecualian untuk **tipe data, nilai-nilainya mungkin huruf "
-"besar** (contoh : MMI)"
+msgstr "Nilai-nilai untuk kata kunci harus pada umunya ditulis menggunakan huruf kecil dengan pengecualian untuk **tipe data, nilai-nilainya mungkin huruf besar** (contoh : MMI)"
 
-# c11eb85e95b241e3afdb3de6a793c378
+# cacd742a003240e78937a348c1a93156
 #: ../../source/user-docs/application-help/keywords.rst:209
 msgid ""
 "Keys and values should **not contain colons**. In the keyword editor, any "
 "colons will be replaced with a full stop character."
-msgstr ""
-"Kunci dan nilai harus **tidak mengandung tanda titik dua**. Di dalam editor "
-"kata kunci, setiap tanda titik dua akan diganti dengan karakter berhenti "
-"penuh."
+msgstr "Kunci dan nilai harus **tidak mengandung tanda titik dua**. Di dalam editor kata kunci, setiap tanda titik dua akan diganti dengan karakter berhenti penuh."
 
-# 04f397d7a3e8453c9971b42389c27ff8
+# 8d929c70af2f4f99954ec39c18bb61b6
 #: ../../source/user-docs/application-help/keywords.rst:212
 msgid ""
 "All other Keywords and values that do not fit the above domain lists may be "
 "used but they may produce undesired results."
-msgstr ""
-"Semua kata kunci dan nilai yang tidak sesuai dengan daftar domain di atas "
-"dapat digunakan, tetapi mereka dapat menghasilkan hasil yang tidak "
-"diinginkan."
+msgstr "Semua kata kunci dan nilai yang tidak sesuai dengan daftar domain di atas dapat digunakan, tetapi mereka dapat menghasilkan hasil yang tidak diinginkan."
 
-# ffef1517733a4a4f8d885313dc771ca5
+# d472be6f463d4187bd1d824671a323e3
 #: ../../source/user-docs/application-help/keywords.rst:216
 msgid "Translations"
 msgstr "Terjemahan"
 
-# 7a91bd0f32a74a64ae08f7ecaac6e9b1
+# 7c4ec7a448004a1182fc7800e88fe68d
 #: ../../source/user-docs/application-help/keywords.rst:218
 msgid ""
 "Although |project_name| is available in different languages, the 'key' in "
 "the keywords files should always be written in english."
-msgstr ""
-"Walaupun |project_name| kini tersedia dalam berbagai bahasa, tapi 'key' "
-"dalam file kata kunci harus selalu dituliskan dalam bahasa Inggris."
+msgstr "Walaupun |project_name| kini tersedia dalam berbagai bahasa, tapi 'key' dalam file kata kunci harus selalu dituliskan dalam bahasa Inggris."
 
-# dfc0cb1a27144d76a8d5931fb03d965b
+# f6ee8c08973f4bb7a051e1002dbe8a11
 #: ../../source/user-docs/application-help/keywords.rst:222
 msgid "The keywords editor graphical user interface"
 msgstr "Editor kata kunci (keyword) di layar pengguna"
 
-# 2c5a45c6771642629bbdf02c6027c98b
+# 13527d1b1e0d4fdca6a523d2b5b78ff9
 #: ../../source/user-docs/application-help/keywords.rst:224
 msgid ""
 "The graphical user interface for keyword editing is divided into two parts:"
-msgstr ""
-"User interface grafis untuk mengedit kata kunci (keyword) dibagi menjadi dua "
-"bagian:"
+msgstr "User interface grafis untuk mengedit kata kunci (keyword) dibagi menjadi dua bagian:"
 
-# 51f32d2a7cf7458b93836dfa74ac1f04
+# 7cc98473246d409fa46cac633f945d95
 #: ../../source/user-docs/application-help/keywords.rst:226
 msgid "**Minimal mode**: In this mode, only following options are provided:"
-msgstr ""
-"**Mode Minimum**: Pada mode ini, hanya mengikuti pengaturan yang disediakan: "
+msgstr "**Mode Minimum**: Pada mode ini, hanya pengaturan berikut ini yang tersedia: "
 
-# ed474ba26ffa410b9aea931a27d5fc0a
+# 06bca3b80e2741f99c21b66f9a389596
 #: ../../source/user-docs/application-help/keywords.rst:228
 msgid ""
 "**Title** - a 'friendly' name for the dataset which will be displayed in "
 "reports, the user interface and so on"
-msgstr ""
-"**Judul** - nama 'friendly' untuk dataset yang akan ditampilkan dalam "
-"laporan, di layar pengguna, dan sebagainya."
+msgstr "**Judul** - nama 'friendly' untuk dataset yang akan ditampilkan dalam laporan, di layar pengguna, dan sebagainya."
 
-# fe9b4a5159344eb1861890aeaf3e715c
+# f864a71093e9471cbad6a3d58f02de4b
 #: ../../source/user-docs/application-help/keywords.rst:230
-msgid "**Source** - a field to inform from whom/where the dataset is obtained."
-msgstr ""
-"**Sumber** - field untuk menginformasikan dari siapa / dari mana dataset "
-"tersebut diperoleh"
+msgid ""
+"**Source** - a field to inform from whom/where the dataset is obtained."
+msgstr "**Sumber** - field untuk menginformasikan dari siapa / dari mana dataset tersebut diperoleh"
 
-# baf20eada38c4d4388b8d5e9cfec3d84
+# f1be16a49ee84e5aa533096e4064f7dd
 #: ../../source/user-docs/application-help/keywords.rst:231
 msgid "**Category** - A mandatory choice between 'hazard' and 'exposure'."
-msgstr "**Kategori** - Pilihan wajib antara 'hazard' dan 'exposure'."
+msgstr "**Kategori** - Pilihan wajib antara 'ancaman' dan 'keterpaparan'."
 
-# 1eab7f0e779b4b8ba4af983d602e3905
+# f7dda8faeeff46aaaa79afd0344450ab
 #: ../../source/user-docs/application-help/keywords.rst:232
 msgid ""
 "**Subcategory** - An amalgamated subcategory/units picklist (in the case of "
@@ -619,157 +533,119 @@ msgid ""
 "this case, the secondary characteristic (units or datatype) are shown in "
 "square brackets after the subcategory name e.g. :samp:`flood [m]` is used "
 "for subcategory 'flood', units 'm'."
-msgstr ""
-"**Subkategori** - Sebuah daftar subkategori/unit-unit yang tercampur (jika "
-"kasusnya ancaman) atau subkategori/tipe data yang tercampur (jika kasusnya "
-"paparan). Pada kasus ini, karakteristik sekunder (unit atau tipe data) "
-"ditunjukan pada kurung persegi setelah nama subkategori contohnya  :samp:"
-"`banjir [m]` digunakan untuk subkategori 'banjir', unit 'm'"
+msgstr "**Subkategori** - Sebuah daftar subkategori/unit-unit yang tercampur (jika kasusnya ancaman) atau subkategori/tipe data yang tercampur (jika kasusnya paparan). Pada kasus ini, karakteristik sekunder (unit atau tipe data) ditunjukan pada kurung persegi setelah nama subkategori contohnya  :samp:`banjir [m]` digunakan untuk subkategori 'banjir', unit 'm'"
 
-# 1191353870cb4d64b94c22da21d12745
+# a41622dc07c74141b4c4f49f561769ba
 #: ../../source/user-docs/application-help/keywords.rst:239
 msgid "An example of the keywords editor in minimal mode is shown below."
-msgstr ""
-"Contoh mengedit kata kunci dalam mode minimal ditunjukkan di bawah ini."
+msgstr "Contoh mengedit kata kunci dalam mode minimal ditunjukkan di bawah ini."
 
-# 07ef4d67ba2e4514bd240b69bb0ac075
+# 935f3be7179345bba47acf1562053127
 #: ../../source/user-docs/application-help/keywords.rst:246
 msgid "Opened keyword editor window"
 msgstr "Jendela editor kata kunci yang dibuka"
 
-# e8e275e104b546c18eb6dcfbdda59dc6
+# 79168f5ae3ba465294ab2d83974f4561
 #: ../../source/user-docs/application-help/keywords.rst:248
 msgid ""
 "**Advanced mode**: In this mode several extra options are provided in "
 "addition to the minimal mode options. Unlike minimal mode, in advanced mode "
-"only basic validation is performed and the user is given more flexibility to "
-"manually define and remove key/value pairs. Three sections are provided for "
-"this:"
-msgstr ""
-"**Mode lanjutan**: Dalam mode ini disediakan beberapa pilihan sebagai "
-"tambahan untuk pilihan mode minimal. Tidak seperti mode minimal, pada mode "
-"lanjutan hanya validasi dasar yang dilakukan dan pengguna diberikan lebih "
-"banyak fleksibilitas untuk mendefinisikan dan menghapus pasangan kunci/ "
-"nilai secara manual. Tiga bagian yang disediakan untuk ini: "
+"only basic validation is performed and the user is given more flexibility to"
+" manually define and remove key/value pairs. Three sections are provided for"
+" this:"
+msgstr "**Mode lanjutan**: Dalam mode ini disediakan beberapa pilihan sebagai tambahan untuk pilihan mode minimal. Tidak seperti mode minimal, pada mode lanjutan hanya validasi dasar yang dilakukan dan pengguna diberikan lebih banyak fleksibilitas untuk mendefinisikan dan menghapus pasangan kunci/ nilai secara manual. Tiga bagian yang disediakan untuk ini: "
 
-# 71104593823c44aeb17a2acd4b56e2fc
+# 1feec4f10e64414ea3a37b37a8f8879e
 #: ../../source/user-docs/application-help/keywords.rst:255
 msgid ""
 "**Predefined** - In this section, the user selects from a constrained list "
 "of keywords, enters a free-form value and then adds the key/value pair to "
 "the keywords list (see below)."
-msgstr ""
-"**Predefined** - Pada bagian ini, pengguna memilih dari daftar terkendala "
-"kata kunci, memasukkan nilai bentuk bebas dan kemudian menambahkan kunci/"
-"nilai pasangan ke daftar kata kunci (lihat dibawah). "
+msgstr "**Predefined** - Pada bagian ini, pengguna memilih dari daftar terkendala kata kunci, memasukkan nilai bentuk bebas dan kemudian menambahkan kunci/nilai pasangan ke daftar kata kunci (lihat dibawah). "
 
-# 26b7e6590b4e40d4903888f7f34c8780
+# 447061aaedad4cae8d11f7a75ac32743
 #: ../../source/user-docs/application-help/keywords.rst:258
 msgid ""
 "**User defined** - In this section, there is no constraint on the keywords "
 "entered - any single lower case word will be accepted for both the key and "
 "the value components."
-msgstr ""
-"**User defined** - Pada bagian ini, tidak ada kendala pada kata kunci yang "
-"dimasukkan - setiap kata dalam huruf kecil akan diterima untuk kedua "
-"komponen baik kunci dan nilai."
+msgstr "**User defined** - Pada bagian ini, tidak ada kendala pada kata kunci yang dimasukkan - setiap kata dalam huruf kecil akan diterima untuk kedua komponen baik kunci dan nilai."
 
-# e4fcc2951a1b4dd898e20c3ad9ea4eb9
+# 6a6ff5cd5deb4f08a6230d7c2b7a398e
 #: ../../source/user-docs/application-help/keywords.rst:261
 msgid ""
 "**Current keywords** - In this area a complete list of all the keywords for "
 "the dataset are displayed. The keywords list here is updated when any "
 "changes are made in both the simple and advanced mode editors. It is also "
-"possible in this area to manually remove unwanted keywords using the 'remove "
-"selected' button. Multiple keywords can be removed in a single operation by :"
-"kbd:`Control-clicking` on multiple keyword entries in the current keyword "
+"possible in this area to manually remove unwanted keywords using the 'remove"
+" selected' button. Multiple keywords can be removed in a single operation by"
+" :kbd:`Control-clicking` on multiple keyword entries in the current keyword "
 "list and then clicking :guilabel:`Remove selected`"
-msgstr ""
-"**Current keywords** - Di tempat ini telah ditampilkan daftar semua kata "
-"kunci lengkap untuk dataset. Daftar kata kunci di sini telah diperbarui "
-"seketika setiap terjadi perubahan yang dibuat dalam mode editor sederhana "
-"dan canggih. Juga sangat memungkinkan pada tempat ini untuk menghapus kata "
-"kunci yang tidak diinginkan dengan menggunakan tombol 'remove selected'. "
-"Beberapa kata kunci dapat dihapus dalam satu operasi dengan :kbd:`Control-"
-"clicking` pada kata kunci yang telah dimasukkan dalam daftar kata kunci saat "
-"ini dan kemudian klik :guilabel:`Remove selected`"
+msgstr "**Current keywords** - Di tempat ini telah ditampilkan daftar semua kata kunci lengkap untuk dataset. Daftar kata kunci di sini telah diperbarui seketika setiap terjadi perubahan yang dibuat dalam mode editor sederhana dan canggih. Juga sangat memungkinkan pada tempat ini untuk menghapus kata kunci yang tidak diinginkan dengan menggunakan tombol 'remove selected'. Beberapa kata kunci dapat dihapus dalam satu operasi dengan :kbd:`Control-clicking` pada kata kunci yang telah dimasukkan dalam daftar kata kunci saat ini dan kemudian klik :guilabel:`Remove selected`"
 
-# c0ccfcb7f6c542cdb1fda79730963418
+# 82cf2e71df174813a1e5f79f156f3c4c
 #: ../../source/user-docs/application-help/keywords.rst:276
 msgid "Advanced mode of keyword editor"
 msgstr "Mode Editor kata kunci tingkat lanjut"
 
-# c6a2a13c21494f5093c986237960b524
+# 26f5747a22db42f3b6ff57f22b292e06
 #: ../../source/user-docs/application-help/keywords.rst:279
 msgid "Invoking the keywords editor"
 msgstr "Membuka editor kata kunci (keyword editor)"
 
-# a3f7bd6df510484baf7b853e6c7fa70d
+# 59ba03fe424a4e03bbdab1075b823b7c
 #: ../../source/user-docs/application-help/keywords.rst:280
 msgid ""
 "The keyword editor can easily be invoked by **selecting any layer** in the "
-"QGIS layers list, and then using the plugin menu to start the editor (:"
-"menuselection:`Plugins --> InaSAFE --> Keyword Editor`). Alternatively, you "
-"may use the keywords editor icon on the plugins toolbar as illustrated below."
-msgstr ""
-"Editor kata kunci (keyword) dapat dengan mudah dipanggil dengan **memilih "
-"setiap layer** di daftar layer QGIS, dan kemudian menggunakan menu plugin "
-"untuk memulai mengedit (:menuselection:`Plugins --> InaSAFE --> Keyword "
-"Editor`). Atau Anda mungkin menggunakan simbol editor kata kunci (keyword) "
-"di dalam toolbar plugin seperti diilustrasikan di bawah. "
+"QGIS layers list, and then using the plugin menu to start the editor "
+"(:menuselection:`Plugins --> InaSAFE --> Keyword Editor`). Alternatively, "
+"you may use the keywords editor icon on the plugins toolbar as illustrated "
+"below."
+msgstr "Editor kata kunci (keyword) dapat dengan mudah dipanggil dengan **memilih setiap layer** di daftar layer QGIS, dan kemudian menggunakan menu plugin untuk memulai mengedit (:menuselection:`Plugins --> InaSAFE --> Keyword Editor`). Atau Anda mungkin menggunakan simbol editor kata kunci (keyword) di dalam toolbar plugin seperti diilustrasikan di bawah. "
 
-# 72a42cbcaae6453f889d4a2795ea501f
+# d43f1dc34b954b889a81d53159618c52
 #: ../../source/user-docs/application-help/keywords.rst:291
 msgid "Keyword editor icon"
 msgstr "Ikon editor kata kunci"
 
-# 0333815b7bd64804a0d89952c27321d8
+# 1d44004e680f4d0d86e89cfd7660a94c
 #: ../../source/user-docs/application-help/keywords.rst:293
 msgid ""
-"If you have not selected a layer in the QGIS legend, the keyword editor icon "
-"in the toolbar and menus will **be disabled** and appear greyed out."
-msgstr ""
-"Jika anda belum memilih layer di legenda QGIS, ikon editor kata kunci di "
-"toolbar dan menu akan  **dimatikan** dan bewarna abu-abu."
+"If you have not selected a layer in the QGIS legend, the keyword editor icon"
+" in the toolbar and menus will **be disabled** and appear greyed out."
+msgstr "Jika anda belum memilih layer di legenda QGIS, ikon editor kata kunci di toolbar dan menu akan  **dimatikan** dan bewarna abu-abu."
 
-# a2d07e4152be4a729fbbf17c2d355f85
+# b4635c7379924950836fdba7f0a3614b
 #: ../../source/user-docs/application-help/keywords.rst:298
 msgid "Saving your edits"
 msgstr "Menyimpan hasil editan Anda"
 
-# ad7d325a45534831bd23bc3dc2af4bcf
+# 228aee01602049f1a8f4a8e73b2aef14
 #: ../../source/user-docs/application-help/keywords.rst:300
 msgid ""
-"To save your keyword edits, simply press the :guilabel:`OK` button and the :"
-"file:`*.keywords` file will be written to disk."
-msgstr ""
-"Untuk menyimpan perubahan keyword, cukup tekan tombol :guilabel:`OK` dan "
-"berkas :file:`*.keywords` akan distulis dalam disk."
+"To save your keyword edits, simply press the :guilabel:`OK` button and the "
+":file:`*.keywords` file will be written to disk."
+msgstr "Untuk menyimpan perubahan keyword, cukup tekan tombol :guilabel:`OK` dan berkas :file:`*.keywords` akan distulis dalam disk."
 
-# 3a8ac2c5c12d41bba73d1f7bc852fb91
+# caa2181e8a76439f835f99d70edba872
 #: ../../source/user-docs/application-help/keywords.rst:304
 msgid "Cancelling your edits"
 msgstr "Membatalkan hasil editan Anda"
 
-# 6d781b7fc4024cb9b084d6dba893f75f
+# 11528b5fafdb4af584d9570c87ec87d0
 #: ../../source/user-docs/application-help/keywords.rst:306
 msgid ""
 "You can cancel your changes at any time by pressing the :guilabel:`Cancel` "
 "button. No changes will be written to disk and your :file:`*.keywords` file "
 "will remain in its original state."
-msgstr ""
-"Anda dapat membatalkan perubahan Anda kapan saja dengan menekan tombol :"
-"guilabel:`Cancel` . Tidak ada perubahan yang akan ditulis ke tempat "
-"penyimpanan dan file :file:`*.keywords` kata kunci Anda akan tetap dalam "
-"keadaan semula."
+msgstr "Anda dapat membatalkan perubahan Anda kapan saja dengan menekan tombol :guilabel:`Cancel` . Tidak ada perubahan yang akan ditulis ke tempat penyimpanan dan file :file:`*.keywords` kata kunci Anda akan tetap dalam keadaan semula."
 
-# df2111ad69be4c34927cff8e65690520
+# acc2d8ee67fd4f7fa4bd197c2293dfdc
 #: ../../source/user-docs/application-help/keywords.rst:312
 msgid "Keywords for remote and non-file based layers"
-msgstr ""
-"Kata kunci (keyword) untuk mengontrol dan non-file didasarkan pada layer"
+msgstr "Kata kunci (keyword) untuk mengontrol dan non-file didasarkan pada layer"
 
-# 527fc772cb224223b5c29bd596de81e4
+# ba68d27840a6426390f5775479e8ffbd
 #: ../../source/user-docs/application-help/keywords.rst:314
 msgid ""
 "If you are using a PostgreSQL, WFS, Spatialite or other non-file based "
@@ -777,119 +653,88 @@ msgid ""
 "keywords will be written to a sqlite database - by default this database is "
 "stored as :file:`keywords.db` within the |project_name| plugin directory "
 "root."
-msgstr ""
-"Jika Anda menggunakan PostgreSQL, WFS, Spatialite atau non-file lain "
-"berbasis sumber daya, Anda tetap dapat mengisi kotak dialog kata kunci "
-"(keyword). Dalam keadaan ini kata kunci akan ditulis ke basis data sqlite - "
-"secara standar basis data ini disimpan sebagai :file:`keywords.db` di dalam |"
-"project_name| direktori utama pugin."
+msgstr "Jika Anda menggunakan PostgreSQL, WFS, Spatialite atau non-file lain berbasis sumber daya, Anda tetap dapat mengisi kotak dialog kata kunci (keyword). Dalam keadaan ini kata kunci akan ditulis ke basis data sqlite - secara standar basis data ini disimpan sebagai :file:`keywords.db` di dalam |project_name| direktori utama pugin."
 
-# 896bc84e3fe447e29296a7419556cf16
+# 93b34789cc6649e0ad7801d6b7f97c65
 #: ../../source/user-docs/application-help/keywords.rst:320
 msgid ""
 "You may wish to use a different location for the :file:`keywords.db` "
 "keywords database - you can configure this by using the |project_name| "
-"options dialog. The options dialog can be launched by clicking on the |"
-"project_name| plugin toolbar's options icon (as shown below) or by doing :"
-"menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
-msgstr ""
-"Anda mungkin berharap untuk menggunakan lokasi yang berbeda untuk :file:"
-"`keywords.db` kata kunci basis data - Anda dapat mengkonfigurasi ini dengan "
-"menggunakan |project_name| dialog pilihan. Dialog pilihan dapat dimunculkan "
-"dengan mengklik pada |project_name| simbol plugin toolbar pilihan (seperti "
-"terlihat di bawah) atau dengan melakukan :menuselection:`Plugins --> InaSAFE "
-"--> InaSAFE Options`."
+"options dialog. The options dialog can be launched by clicking on the "
+"|project_name| plugin toolbar's options icon (as shown below) or by doing "
+":menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
+msgstr "Anda mungkin berharap untuk menggunakan lokasi yang berbeda untuk :file:`keywords.db` kata kunci basis data - Anda dapat mengkonfigurasi ini dengan menggunakan |project_name| dialog pilihan. Dialog pilihan dapat dimunculkan dengan mengklik pada |project_name| simbol plugin toolbar pilihan (seperti terlihat di bawah) atau dengan melakukan :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`."
 
-# 3cac5d31929d41feae8f72ffa4af480f
+# 6e862c7853774fcda26e1ecd5a4bcc3a
 #: ../../source/user-docs/application-help/keywords.rst:331
 msgid "Selecting the options icon"
 msgstr "Memilih ikon pilihan"
 
-# 8be916dd5aa94840852feca5ab03e99e
+# aedcfb3b81774b08bd606ff876110de5
 #: ../../source/user-docs/application-help/keywords.rst:333
 msgid ""
 "When the options dialog is opened, the keywords database path can be "
 "specified under the tab :guilabel:`Advanced` using the :guilabel:`keyword "
 "cache for remote datasources` option as shown below."
-msgstr ""
-"Ketika kotak dialog Pilihan/ *Option* terbuka, path database kata kunci "
-"dapat ditentukan di bawah tab :guilabel:`Advanced` menggunakan pilihan :"
-"guilabel:`keyword cache for remote datasources` seperti yang terlihat "
-"dibawah."
+msgstr "Ketika kotak dialog Pilihan/ *Option* terbuka, path database kata kunci dapat ditentukan di bawah tab :guilabel:`Advanced` menggunakan pilihan :guilabel:`keyword cache for remote datasources` seperti yang terlihat dibawah."
 
-# f32610f6aa0f46e9ac4d3b64836aec8d
+# c474b27b204c4320b1d580ed01e0b870
 #: ../../source/user-docs/application-help/keywords.rst:342
 msgid "Path to options database"
 msgstr "Jalur ke pilihan database"
 
-# 8a0e8c488d4a49fa9bc4b161fd81e8a9
+# e06b4bfd95f54c67bfa2b928aa133d84
 #: ../../source/user-docs/application-help/keywords.rst:346
 msgid ""
 "Support for remote and non-file based layers was added in |project_name| "
 "version 0.3."
-msgstr ""
-"Layanan untuk remote dan layer berbasis non-file telah ditambahkan di |"
-"project_name| versi 0.3."
+msgstr "Layanan untuk remote dan layer berbasis non-file telah ditambahkan di |project_name| versi 0.3."
 
-# 75d678c0b4774648a2abcd8cea81266b
+# 18cb5c75221545749fc4b80dbe34ef64
 #: ../../source/user-docs/application-help/keywords.rst:348
 msgid ""
 "The database can be opened using a sqlite editor such as sqliteman, but the "
 "data in the keywords table is not intended to be human readable or edited. "
-"The table columns consist of an MD5 hash based on the URI for the datasource "
-"(typically the database connection details) and a blob which contains the "
+"The table columns consist of an MD5 hash based on the URI for the datasource"
+" (typically the database connection details) and a blob which contains the "
 "keywords as a pickled python dictionary."
-msgstr ""
-"Database dapat dibuka menggunakan editor sqlite seperti sqliteman, tapi data "
-"di tabel kata kunci tidak dapat dibaca atau diedit. Kolom tabel memiliki "
-"sebuah MD5 berdasarkan pada URI untuk sumber data (biasanya detail koneksi "
-"database) dan kumpulan yang memiliki kata kunci sebagai kamus python."
+msgstr "Database dapat dibuka menggunakan editor sqlite seperti sqliteman, tapi data di tabel kata kunci tidak dapat dibaca atau diedit. Kolom tabel memiliki sebuah MD5 berdasarkan pada URI untuk sumber data (biasanya detail koneksi database) dan kumpulan yang memiliki kata kunci sebagai kamus python."
 
-# 1763f4c8682c41a581be4bcb4d54049a
+# 90d3eaa7f0184d9589c6d6bd85b88402
 #: ../../source/user-docs/application-help/keywords.rst:355
 msgid ""
-"See the :doc:`./options` document for more information about the |"
-"project_name| options dialog."
-msgstr ""
-"Lihat dokumen :doc:`./options` untuk informasi lebih lengkap mengenai dialog "
-"pilihan|project_name| "
+"See the :doc:`./options` document for more information about the "
+"|project_name| options dialog."
+msgstr "Lihat dokumen :doc:`./options` untuk informasi lebih lengkap mengenai dialog pilihan|project_name| "
 
-# a75d250335bc4c4c9e7970a9838fe472
+# 94c57ad3990142b896bcd399935cb401
 #: ../../source/user-docs/application-help/keywords.rst:359
 msgid "Sharing your keywords cache"
 msgstr "Berbagi cache kata kunci Anda"
 
-# 66b1e394f9774e97b1ae2c91dae3a9fb
+# 01ecc1f4ed3a40d89b5f2b1ada0b0ec6
 #: ../../source/user-docs/application-help/keywords.rst:361
 msgid ""
 "In theory you can place the keywords file on a network share and create a "
 "shared keyword repository in a multi-user environment, but you should note "
 "that the layer URI hashes need to be identical in order for a layer's "
 "keyword to be found. This means that, for (contrived), example ::"
-msgstr ""
-"Secara teori anda dapat menempatkan file kata kunci pada sebuah jaringan "
-"berbagi dan membuat sebuah repositori kata kunci bersama dalam lingkungan "
-"banyak pengguna, tetapi anda harus perhatikan bahwa hash layer URI perlu "
-"untuk diidentifikasi supaya kata kunci layer dapat ditemukan.  Ini "
-"dimaksudkan untuk (dibuat sebagai), contoh ::"
+msgstr "Secara teori anda dapat menempatkan file kata kunci pada sebuah jaringan berbagi dan membuat sebuah repositori kata kunci bersama dalam lingkungan banyak pengguna, tetapi anda harus perhatikan bahwa hash layer URI perlu untuk diidentifikasi supaya kata kunci layer dapat ditemukan.  Ini dimaksudkan untuk (dibuat sebagai), contoh ::"
 
-# d8dca008f14d4581889c0c0a483d43ff
+# fc0d6ed19c4c4ba585bf33a130630e0f
 #: ../../source/user-docs/application-help/keywords.rst:370
 msgid "would not be considered the same as ::"
 msgstr "Tidak akan dianggap sama seperti ::"
 
-# 0b073055b8704f0e9318877a4facd222
+# ca621018d26c4d8d9ab5bdba46ffc98f
 #: ../../source/user-docs/application-help/keywords.rst:375
 msgid ""
 "since the user credentials differ, resulting in a different URI. To work "
 "around this you could create a common account so that every user will "
 "effectively use the same URI to load that layer e.g. ::"
-msgstr ""
-"karena kredensial pengguna berbeda, sehingga menghasilkan URI yang berbeda. "
-"Untuk mengatasi ini, Anda bisa membuat akun umum sehingga setiap pengguna "
-"secara efektif akan menggunakan URI yang sama untuk memuat layer misalnya ::"
+msgstr "karena kredensial pengguna berbeda, sehingga menghasilkan URI yang berbeda. Untuk mengatasi ini, Anda bisa membuat akun umum sehingga setiap pengguna secara efektif akan menggunakan URI yang sama untuk memuat layer misalnya ::"
 
-# 83af8018ffeb4df5a497ad62066b2f63
+# b59c2625ca4e444d925dec5024eace93
 #: ../../source/user-docs/application-help/keywords.rst:382
 msgid ""
 "For certain resources (e.g. ArcInfo coverages, Spatialite databases) where "
@@ -898,44 +743,34 @@ msgid ""
 "the cache with the layer's URI. For example you could have all users mount "
 "your data to the same place. Under Unix like operating systems this could "
 "look something like this:"
-msgstr ""
-"Untuk sumber daya tertentu (misalnya cakupan Arcinfo, basis data Spatialite) "
-"dimana cache juga digunakan, Anda harus berhati-hati menggunakan titik "
-"tingkat umum atau jaringan berbagi untuk mengakses data jika Anda berharap "
-"menekan cache dengan layer URI secara sukses. Contohnya Anda dapat memiliki "
-"semua pengguna menjaga data pada tempat yang sama. Di bawah Unix sebagai "
-"sistem pengoperasian ini dapat terlihat seperti ini:"
+msgstr "Untuk sumber daya tertentu (misalnya cakupan Arcinfo, basis data Spatialite) dimana cache juga digunakan, Anda harus berhati-hati menggunakan titik tingkat umum atau jaringan berbagi untuk mengakses data jika Anda berharap menekan cache dengan layer URI secara sukses. Contohnya Anda dapat memiliki semua pengguna menjaga data pada tempat yang sama. Di bawah Unix sebagai sistem pengoperasian ini dapat terlihat seperti ini:"
 
-# 696f42be45a44977b02507ec454e6538
+# 4a0b62a1f71746328bcbac5570f58396
 #: ../../source/user-docs/application-help/keywords.rst:389
 msgid ":file:`/mnt/gisdata/jk.sqlite`"
 msgstr ":file:`/mnt/gisdata/jk.sqlite`"
 
-# cb8e8efabcea47a3bf5b06d64199d12a
+# a7d2e3daddea47b9970f227c6b284bc1
 #: ../../source/user-docs/application-help/keywords.rst:391
 msgid ""
-"Under Windows you could always the same drive letter and path the to share e."
-"g.:"
-msgstr ""
-"Pada windows anda dapat selalu drive surat yang sama dan alur untuk "
-"berbagai, contohnya:"
+"Under Windows you could always the same drive letter and path the to share "
+"e.g.:"
+msgstr "Pada windows anda dapat selalu drive surat yang sama dan alur untuk berbagai, contohnya:"
 
-# 0d45109b3ba146dd94fffe75348f66d7
+# 216fae567cbc42e3a69609708d37f3b8
 #: ../../source/user-docs/application-help/keywords.rst:394
 msgid ":file:`Z:\\\\gisdata\\\\jk.sqlite`"
 msgstr ":file:`Z:\\\\gisdata\\\\jk.sqlite`"
 
-# 1a15cac0902e44f5bb7d59201c0f1fa5
+# 3b4bedbc3aba49249e4bd92d22920688
 #: ../../source/user-docs/application-help/keywords.rst:397
 msgid "Getting help"
 msgstr "Mendapatkan bantuan"
 
-# 5df62e82b8b0414dbed2f7385398b2c6
+# 7a1d9c6048f94eb9a2a1d554fbf95a39
 #: ../../source/user-docs/application-help/keywords.rst:399
 msgid ""
-"If you need help using the keywords editor, you can click on the :guilabel:"
-"`Help` button at the bottom of the dialog and this page will be displayed."
-msgstr ""
-"Jika Anda membutuhkan bantuan untuk menggunakan editor kata kunci, Anda "
-"dapat klik pada tombol :guilabel:`Help` di tombol dialog dan halaman ini "
-"akan ditampilkan."
+"If you need help using the keywords editor, you can click on the "
+":guilabel:`Help` button at the bottom of the dialog and this page will be "
+"displayed."
+msgstr "Jika Anda membutuhkan bantuan untuk menggunakan editor kata kunci, Anda dapat klik pada tombol :guilabel:`Help` di tombol dialog dan halaman ini akan ditampilkan."
