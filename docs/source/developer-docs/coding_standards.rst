@@ -3,37 +3,30 @@
 Coding Standards
 ================
 
-Code Style
-----------
+.. _general-approach-label:
 
-Please observe the following coding standards when working on the codebase:
+General approach
+----------------
 
-* Docstrings quoted with :samp:`"""`
-* Simple strings in source code should be quoted with :samp:`'`
-* Coding must follow a style guide. In case of Python it is
-  `pep8 <http://www.python.org/dev/peps/pep-0008>`_ and
-  using the command line tool pep8 (or :samp:`make pep8`) to enforce this.
-  The pep8 checks E121-E128 have been disabled until pep8 version 1.3 becomes
-  widely available.
-* `Python documentation guide <http://www.python.org/dev/peps/pep-0257>`_
-* Comments should be complete sentences. If a comment is a phrase or
-  sentence, its first word should be capitalized, unless it is an identifier
-  that begins with a lower case letter (never alter the case of identifiers!)
-  . Comments should start with a # and a single space.
+* Use github for revision control, issue tracking and management.
 * Adherence to regression/unit testing wherever possible (:samp:`make test`)
-* Use of github for revision control, issue tracking and management
 * Simple deployment procedure - all dependencies must be delivered with
   the plugin installer for QGIS or exist in standard QGIS installs.
 * Develop in the spirit of XP/Agile, i.e. frequent releases, continuous
   integration and iterative development. The master branch should always
   be assumed to represent a working demo with all tests passing.
-* All strings should be internationalisation enabled. Please see :doc:`i18n`
-  for details.
-* If you use a few lines of code in more than one place, refactor them into
-  their own function.
-* If you use a literal string or expression in more than one place, refactor
-  it into a function or variable.
 
+.. _standards-compliance-label:
+
+Compliance
+----------
+
+* Coding must follow a style guide. In case of Python it is
+  `PEP8 <http://www.python.org/dev/peps/pep-0008>`_ and
+  using the command line tool pep8 (or :samp:`make pep8`) to enforce this.
+  The pep8 checks E121-E128 have been disabled until pep8 version 1.3 becomes
+  widely available.
+* `Python documentation guide <http://www.python.org/dev/peps/pep-0257>`_
 * Code must pass a pylint validation
   (http://www.logilab.org/card/pylint_manual#what-is-pylint). You can test
   this using the make target ``make pylint``. In some cases you may wish to
@@ -79,55 +72,47 @@ Please observe the following coding standards when working on the codebase:
   It is of course possible to run all pylint checks on any part of the code
   if desired: E.g pylint safe/storage/raster.py
 
-* Each source file should include a standard header containing copyright,
-  authorship and version metadata as shown in the exampled below.
+.. _doc-strings-label:
 
-**Example standard header**::
+Code formatting
+---------------
 
-    # -*- coding: utf-8 -*-
-    """**One line description.**
+The guidelines above still leave substantial room for your own approach to
+code style so the following provide some more explicit guidelines.
 
-    .. tip::
-       Detailed multi-paragraph description...
+We follow a 'pull left' policy in our code. This means that instead of e.g.::
 
-    """
+    def polygonize_thresholds(raster_file_name,
+                          threshold_min=0.0,
+                          threshold_max=float('inf')):
 
-    __author__ = 'Ole Nielsen <ole.moller.nielsen@gmail.com>'
-    __revision__ = '$Format:%H$'
-    __date__ = '01/11/2010'
-    __license__ = "GPL"
-    __copyright__ = 'Copyright 2012, Australia Indonesia Facility for '
-    __copyright__ += 'Disaster Reduction'
+You should rather do this::
+
+    def polygonize_thresholds(
+        raster_file_name,
+        threshold_min=0.0,
+        threshold_max=float('inf')):
+
+The same applies in all other contexts. For example, calling a function::
+
+    clipped_exposure = clip_layer(
+        layer=exposure_layer,
+        extent=geo_extent,
+        cell_size=cell_size,
+        extra_keywords=extra_exposure_keywords,
+        hard_clip_flag=self.clip_hard)
+
+We do this because the 80 character line limit in PEP8 can cause visual clutter
+in your code as you manage line breaks as you run up to the 80 column limit. By
+always pulling code left as much as possible, we reduce the amount of line
+continuation management we have to do.
 
 
-.. note::
-   Please see :ref:`faq_developer` for details on how the revision tag
-   is replaced with the SHA1 for the file when the release packages are made.
-
-Qt Guidelines
-.............
-
-Don't use old style signal/slot connectors::
-
-    myButton = self.pbnHelp
-    QtCore.QObject.connect(
-        myButton, QtCore.SIGNAL('clicked()'), self.show_help)
-
-Use new style connectors::
-
-    self.pbnHelp.clicked.connect(self.show_help)
-
-Also in some cases using the Qt API will lead you into conflict with our PEP8
-naming conventions for methods and variables. This is unavoidable but should
-be used only in these specific instances e.g.::
-
-    def on_foo_indexChanged():
-        pass
 
 .. _doc-strings-label:
 
-Doc strings
-...........
+Doc strings and comments
+------------------------
 
 All code should be self documenting. Please take special note and follow
 these PEP guidelines and sphinx documents:
@@ -135,6 +120,15 @@ these PEP guidelines and sphinx documents:
 * http://www.python.org/dev/peps/pep-0287/
 * http://sphinx-doc.org/markup/desc.html#info-field-lists
 * http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html
+
+We follow these specific guidelines for our code:
+
+* Docstrings must triple quoted with :samp:`"""`
+* Inline comments should start with a # and a single space.
+* Comments should be complete sentences ending with a full stop / period.
+* If a comment is a phrase or sentence, its first word should be capitalized,
+  unless it is an identifier that begins with a lower case letter (never alter
+  the case of identifiers!).
 
 We use the following style for documenting functions and class methods::
 
@@ -176,15 +170,23 @@ Another example::
 
 Note the following in the above examples:
 
-* param and type are grouped together with no line break between them.
+* The first line of a docstring should be a precis of the class/method/function
+  expressed in less than 80 chars, terminated with a full stop and exclude
+  redundant phrases such as 'Class to do x' or 'This method does...'.
+* There should be an empty line following the first docstring line.
+* More detailed explanation and usage examples can follow this first line. The
+  detailed explanation should not repeat the information provided in the
+  parameters and returns sections.
+* A line break should follow the optional detailed description.
+* **param** and **type** are grouped together with no line break between them.
 * If the param description is more than one line, indent the successive lines
   with 4 spaces.
 * A newline should be placed after each type and rtype.
-* If multiple types are allowed, separate them with commas e.g. :rtype: str,
-  boolean.
-* If a function or method returns nothing, no returns section is used.
-* If a function or method raises nothing explicitly, not raises section is
-  used.
+* If multiple types are allowed, separate them with commas e.g. ``:rtype: str,
+  boolean``.
+* If a function or method returns nothing, no **returns** section is used.
+* If a function or method does not raise anything explicitly, no raises section
+  is used.
 * If a function or method is extremely obvious there is no need to have
   anything more than a single line docstring.
 * If a function or method returns a tuple it should be be documented as
@@ -193,10 +195,127 @@ Note the following in the above examples:
 Please also see the :ref:`api-documentation-howto-label` section for more
 information on how to document your code properly.
 
+Annotating API changes and additions
+------------------------------------
+
+Whenever you add or change a module, class, function or method, you should
+annotate it accordingly. The method for doing this is described on the
+`Sphinx paragraph markup page <http://sphinx-doc.org/markup/para.html>`_. Here
+are a couple of examples:
+
+Adding a new module::
+
+    """Impact function utilities.
+
+    .. versionadded:: 2.1
+    ""'
+
+Adding a new method to a class::
+
+    """Computes the number of affected people.
+
+    .. versionadded:: 2.1
+    """
+
+Changing an existing method API::
+
+    def show_static_message(self, message, foo):
+    """Send a static message to the message viewer.
+
+    .. versionchanged:: 2.1
+        Added foo parameter.
+
+    Static messages cause any previous content in the MessageViewer to be
+    replaced with new content.
+
+    :param message: An instance of our rich message class.
+    :type message: Message
+
+    :param foo: Some new parameter.
+    :type foo: str
+
+    """
+    dispatcher.send(
+        signal=STATIC_MESSAGE_SIGNAL,
+        sender=self,
+        message=message)
+
+
+
+.. _strings-and-internationalisation-label:
+
+Strings and internationalisation
+--------------------------------
+
+* Simple strings in source code should be quoted with :samp:`'`
+
+* All strings should be internationalisation enabled. Please see :doc:`i18n`
+  for details.
+* If a method or function is longer than a single screen, it is probably a
+  candidate for refactoring into smaller methods / functions. Writing smaller
+  methods makes your code easier to read and to test.
+* If you use a few lines of code in more than one place, refactor them into
+  their own function.
+* If you use a literal string or expression in more than one place, refactor
+  it into a function or variable.
+
+.. _module-header-label:
+
+Standard headers
+----------------
+
+Each source file should include a standard header containing copyright,
+authorship and version metadata as shown in the exampled below.
+
+**Example standard header**::
+
+    # -*- coding: utf-8 -*-
+    """**One line description.**
+
+    .. tip::
+       Detailed multi-paragraph description...
+
+    """
+
+    __author__ = 'Ole Nielsen <ole.moller.nielsen@gmail.com>'
+    __revision__ = '$Format:%H$'
+    __date__ = '01/11/2010'
+    __license__ = "GPL"
+    __copyright__ = 'Copyright 2012, Australia Indonesia Facility for '
+    __copyright__ += 'Disaster Reduction'
+
+
+.. note::
+   Please see :ref:`faq_developer` for details on how the revision tag
+   is replaced with the SHA1 for the file when the release packages are made.
+
+.. _qt-label:
+
+Qt Guidelines
+.............
+
+Don't use old style signal/slot connectors::
+
+    myButton = self.pbnHelp
+    QtCore.QObject.connect(
+        myButton, QtCore.SIGNAL('clicked()'), self.show_help)
+
+Use new style connectors::
+
+    self.pbnHelp.clicked.connect(self.show_help)
+
+Also in some cases using the Qt API will lead you into conflict with our PEP8
+naming conventions for methods and variables. This is unavoidable but should
+be used only in these specific instances e.g.::
+
+    def on_foo_indexChanged():
+        pass
+
+
 .. _hig-label:
 
 Human Interface Guidelines
-..........................
+---------------------------
 
 For consistency of user experience, the user interfaces created in Risk
 in a Box should adhere to the QGIS Human Interface Guidelines (HIG) which
