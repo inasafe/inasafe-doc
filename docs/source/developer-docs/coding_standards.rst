@@ -72,7 +72,7 @@ Compliance
   It is of course possible to run all pylint checks on any part of the code
   if desired: E.g pylint safe/storage/raster.py
 
-.. _doc-strings-label:
+.. _code_formatting:
 
 Code formatting
 ---------------
