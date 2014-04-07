@@ -304,6 +304,52 @@ Use new style connectors::
 
     self.pbnHelp.clicked.connect(self.show_help)
 
+
+Use multi-inheritance for designer based classes so that we can use autoconnect
+slots.::
+
+    class FooDialog(QtGui.QDialog, Ui_FooBase):
+        """Dialog to prompt for widget names."""
+
+        def __init__(self, parent=None):
+            """Constructor for the dialog.
+
+            This dialog will allow the user to select foo names from  a list.
+
+            :param parent: Optional widget to use as parent
+            :type parent: QWidget
+            """
+            QtGui.QDialog.__init__(self, parent)
+            # Set up the user interface from Designer.
+            self.setupUi(self)
+            # ... further implementation here ...
+
+Then we can do this to listen for a click on button bar.::
+
+    def on_bar_clicked(self):
+        """Auto slot to listen for button click."""
+        pass
+
+The callback above is called when the button is clicked simply by virtue of the
+fact that it uses the naming convention ``on_<object>_clicked``.
+
+Note that in some cases you need to explicitly specify which signature is being
+listened for by using the pyqtSignature decorator.::
+
+    @pyqtSignature('int')
+    def on_cboPolygonLayers_currentIndexChanged(self, theIndex=None):
+        """Automatic slot executed when the layer is changed to update fields.
+
+        :param theIndex: Passed by the signal that triggers this slot.
+        :type theIndex: int
+        """
+        layerId = self.cboPolygonLayers.itemData(
+            theIndex, QtCore.Qt.UserRole)
+        return layer_id
+
+Failure to do this may result in the slot being called multiple times per event
+which is usually undesirable.
+
 Also in some cases using the Qt API will lead you into conflict with our PEP8
 naming conventions for methods and variables. This is unavoidable but should
 be used only in these specific instances e.g.::
@@ -311,6 +357,16 @@ be used only in these specific instances e.g.::
     def on_foo_indexChanged():
         pass
 
+
+Qt's naming convention causes a bit of a clash when using with 'normal' python
+underscore names. For this reason we adopt the following strategy:
+
+* in designer use underscore based naming for objects
+* in your concrete implementations you should be able to then use mostly
+  underscore separated names except in cases where using autoconnect slots.
+* in designer you should call the form a name ending in Base e.g.
+  **FooDialogBase**. By convention the concrete implementation is called the
+  same sans the Base suffix e.g. **FooDialog**.
 
 .. _hig-label:
 
