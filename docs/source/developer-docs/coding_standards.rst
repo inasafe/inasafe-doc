@@ -15,6 +15,11 @@ General approach
 * Develop in the spirit of XP/Agile, i.e. frequent releases, continuous
   integration and iterative development. The master branch should always
   be assumed to represent a working demo with all tests passing.
+* If a method or function is longer than a single screen, it is probably a
+  candidate for refactoring into smaller methods / functions. Writing smaller
+  methods makes your code easier to read and to test.
+* If you use a few lines of code in more than one place, refactor them into
+  their own function.
 
 .. _standards-compliance-label:
 
@@ -72,6 +77,51 @@ Compliance
   It is of course possible to run all pylint checks on any part of the code
   if desired: E.g pylint safe/storage/raster.py
 
+
+.. _naming-conventions-label:
+
+Naming conventions
+------------------
+
+Variable names should as far as possible follow python naming conventions (see
+:ref:`Qt Notes <qt-label>` below for exceptions to this rule).
+
+We reject the idea the code should be obfusicated with hard to understand
+symbol names. For this reason all classes, methods, functions, variable names
+should be written in full. At the same time overly verbose names should be
+avoided. Here is an example of what we mean by this. Bad::
+
+    cur_dpth = 0  # obscure
+    currentDepth = 0  # camel case is not python standard
+    content_of_page = 'foo'  # overly verbose
+
+Good::
+
+    current_depth = 0
+    content_of_page = 'foo'  # overly verbose
+
+
+Avoid 'yoda speak' in variable names. Bad::
+
+    title_dialog = self.tr('Save Scenario')
+
+Good::
+
+    dialog_title = self.tr('Save Scenario')
+
+This is a summary of the naming conventions you should use:
+
+* **package dir name**: concise (preferably single word) lower case, underscore
+  separated e.g. ``utilities``.
+* **module file name**: concise (preferably single word) lower case, underscore
+  separated e.g. ``utilities.py``.
+* **class name**: Concise singular camel case phrase e.g. ``PrintDialog``.
+* **method and function name**: Concise lower case underscore separated name
+  .e.g. ``remove_entry``. Avoid java style *get* suffixes as it adds no
+  useful meaning to a symbol name.
+* **variable naming**: Concise, unabbreviated, lower case, underscore separated
+  e.g. ``population_count``.
+
 .. _code_formatting:
 
 Code formatting
@@ -107,8 +157,6 @@ in your code as you manage line breaks as you run up to the 80 column limit. By
 always pulling code left as much as possible, we reduce the amount of line
 continuation management we have to do.
 
-
-
 .. _doc-strings-label:
 
 Doc strings and comments
@@ -132,7 +180,7 @@ We follow these specific guidelines for our code:
 
 We use the following style for documenting functions and class methods::
 
-    def setKeywordDbPath(self, path):
+    def set_keyword_db_path(self, path):
         """Set the path for the keyword database (sqlite).
 
         The file will be used to search for keywords for non local datasets.
@@ -147,7 +195,8 @@ We use the following style for documenting functions and class methods::
 
 
         """
-        self.keywordDbPath = str(path)
+        self.keyword_db_path = str(path)
+
 
 Another example::
 
@@ -248,14 +297,36 @@ Strings and internationalisation
 --------------------------------
 
 * Simple strings in source code should be quoted with :samp:`'`
+* Favour interpolation over concatenation. For example this is bad::
+
+    world = 'World'
+    foo = 'Hello ' + world
+
+And this is good:
+
+    world = 'World'
+    food = 'Hello %s' % world
+
+* Use parenthesis for long strings. For example this is bad::
+
+    foo = 'The quick brown fox jumps over the lazy dog. ' +
+          'The slow fat rat runs around the mouldy cheese.'
+
+And this is good::
+
+    bar = (
+        'The quick brown fox jumps over the lazy dog. '
+        'The slow fat rat runs around the mouldy cheese.')
+
+.. note:: The good example above follows the 'pull left' principle.
 
 * All strings should be internationalisation enabled. Please see :doc:`i18n`
   for details.
-* If a method or function is longer than a single screen, it is probably a
-  candidate for refactoring into smaller methods / functions. Writing smaller
-  methods makes your code easier to read and to test.
-* If you use a few lines of code in more than one place, refactor them into
-  their own function.
+* When using gettext, alias the uggettext as tr, and do not use the common
+  convention of ``_('foo')`` as the underscore trips up some tools like pylint,
+  sphinx. Also using ``tr`` makes it easy to migrate code to and from Qt's
+  translation system and gettext.
+
 * If you use a literal string or expression in more than one place, refactor
   it into a function or variable.
 
