@@ -132,7 +132,7 @@ We follow these specific guidelines for our code:
 
 We use the following style for documenting functions and class methods::
 
-    def setKeywordDbPath(self, path):
+    def set_keyword_db_path(self, path):
         """Set the path for the keyword database (sqlite).
 
         The file will be used to search for keywords for non local datasets.
@@ -147,7 +147,8 @@ We use the following style for documenting functions and class methods::
 
 
         """
-        self.keywordDbPath = str(path)
+        self.keyword_db_path = str(path)
+
 
 Another example::
 
