@@ -50,10 +50,10 @@ Click on the :guilabel:`Content` to find out more
 Frequently Asked Questions
 --------------------------
 
-**Do I need to pay to use InaSAFE?**
+**Do I need to pay to use** |project_name| ?
 No, the software is completely Free and Open Source.
 
-**What license is InaSAFE published under?**
+**What license is** |project_name| **published under?**
 |project_name| is published under the GPL version 3 license,
 the full text of which is available at www.gnu.org/licenses/gpl-3.0.txt.
 Under the terms of the license of you may freely copy,

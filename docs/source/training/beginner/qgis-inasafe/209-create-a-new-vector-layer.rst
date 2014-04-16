@@ -10,16 +10,19 @@ Module 9: Create a New Vector Layer
 - Digitize a new vector layer by tracing the raster layer, considering topology
 - Georeference an image
 
-Creating a map using data that already exists is only the beginning. We have
-already learned how to edit and add features to OpenStreetMap using JOSM.
+Creating a map using data that already exists is only the beginning.
+We have already learned how to edit and add features to OpenStreetMap using
+JOSM.
 In this chapter, we will discuss how to edit existing vector layers in QGIS,
 and how to create an entirely new dataset.
 
 **1. The Layer Creation Dialog**
 
 Before you can add new vector data, you need a vector dataset (a layer) to
-add it to.  In our case, we’ll begin by creating a new data layer,
-and then we’ll add features to it.  First, we must define our dataset.
+add it to.
+In our case, we’ll begin by creating a new data layer,
+and then we’ll add features to it.
+First, we must define our dataset.
 
 - :guilabel:`Create a new project` in QGIS, by clicking on the
   :guilabel:`New Project` icon.
@@ -27,16 +30,17 @@ and then we’ll add features to it.  First, we must define our dataset.
 .. image:: /static/training/beginner/qgis-inasafe/image172.*
    :align: center
 
-- Go to :menuselection:`Layer ‣ New ‣ New Shapefile Layer`.  You’ll be presented
-  with the following dialog:
+- Go to :menuselection:`Layer -> New -> New Shapefile Layer`.
+  You’ll be presented with the following dialog:
 
 .. image:: /static/training/beginner/qgis-inasafe/image173.*
    :align: center
 
 .. note:: At this point we must decide what kind of dataset we want to create.
    Remember that a data layer can only contain features of points, lines,
-   or polygons - never a mix.  So we must define here,
-   when we create the layer, what type of data it will contain.
+   or polygons - never a mix.
+   So we must define here, when we create the layer,
+   what type of data it will contain.
 
 Since polygons are made up of points and lines, let’s jump into polygons.
 Once you’ve mastered this, creating a point or a line layer should be easy!
@@ -55,11 +59,13 @@ Once you’ve mastered this, creating a point or a line layer should be easy!
    :align: center
 
 - When we create our new layer, the attribute table will only have one
-  column by default - **id**.  This attribute contains a unique id number for
-  every feature.  We can add additional fields to the attribute table now,
-  when we create the layer.  Let’s add a name field.
-- Type :kbd:`nama` into the box next to Name.  The settings should match those
-  shown here:
+  column by default - **id**.
+  This attribute contains a unique id number for every feature.
+  We can add additional fields to the attribute table now,
+  when we create the layer.
+  Let’s add a name field.
+- Type :kbd:`nama` into the box next to Name.
+  The settings should match those shown here:
 
 .. image:: /static/training/beginner/qgis-inasafe/image176.*
    :align: center
@@ -70,7 +76,8 @@ Once you’ve mastered this, creating a point or a line layer should be easy!
 .. image:: /static/training/beginner/qgis-inasafe/image177.*
    :align: center
 
-- Click :guilabel:`OK`. A save dialog will appear.
+- Click :guilabel:`OK`.
+  A save dialog will appear.
 - Navigate to a directory of your choosing.
 - Save your new layer as :kbd:`gedung_kampus.shp`.
 
@@ -79,14 +86,17 @@ The new layer should appear in your Layers list.
 **2. Data sources**
 
 When you create new data, it should obviously represent objects that really
-exist on the ground.  We have already learned of numerous ways to collect
-data using OpenStreetMap tools.  We learned about GPS to record locations,
-Walking Papers, and of course, aerial imagery.  These are all tools that we
-can use to identify real-life locations and record them in a digital data
-layer.
+exist on the ground.
+We have already learned of numerous ways to collect data using OpenStreetMap
+tools.
+We learned about GPS to record locations, Walking Papers, and of course,
+aerial imagery.
+These are all tools that we can use to identify real-life locations and
+record them in a digital data layer.
 
 In QGIS, we can use the same types of sources to get information about the
-ground.  In this example, we will once again turn to aerial imagery,
+ground.
+In this example, we will once again turn to aerial imagery,
 but instead of using Bing, we will use a raster image provided in the
 tutorial directory.
 
@@ -97,15 +107,16 @@ tutorial directory.
 
 - Navigate to :file:`../qgis/Sleman/`.
 - Select the file **UGM.tif**.
-- Click :guilabel:`Open`. An image will load into your map.
+- Click :guilabel:`Open`.
+  An image will load into your map.
 - Find the new image in the Layers list.
-- :guilabel:`Click and drag` it to the bottom of the list so that
-  it is below the vector layer you created in the previous section.
+- :guilabel:`Click and drag` it to the bottom of the list so that it is below
+  the vector layer you created in the previous section.
 
 .. image:: /static/training/beginner/qgis-inasafe/image178.*
    :align: center
 
-- Go to :menuselection:`Project ‣ Project Properties` and :guilabel:`enable
+- Go to :menuselection:`Project -> Project Properties` and :guilabel:`enable
   “on the fly”` transformation.
 - Make sure that “WGS 84” is selected as the CRS, and click :guilabel:`OK`.
 
@@ -114,8 +125,8 @@ tutorial directory.
 
 - Right click on the :guilabel:`UGM layer`, and click
   :guilabel:`Zoom to Layer Extent`
-- Zoom in to the center of the raster image. We will be digitizing three
-  areas:
+- Zoom in to the center of the raster image.
+  We will be digitizing three areas:
 
 .. image:: /static/training/beginner/qgis-inasafe/image180.*
    :align: center
@@ -123,11 +134,11 @@ tutorial directory.
 **3. Digitizing**
 
 Digitizing, as you might have guessed, is the art (or science) of creating
-digital vector data from another source, such as a raster image.  In order
-to begin digitizing, we must first enter Edit mode.  GIS software commonly
-requires a separate mode for editing, to prevent users from accidentally
-editing or deleting important data.  Edit mode is switched on or off
-individually for each layer.
+digital vector data from another source, such as a raster image.
+In order to begin digitizing, we must first enter Edit mode.
+GIS software commonly requires a separate mode for editing,
+to prevent users from accidentally editing or deleting important data.
+Edit mode is switched on or off individually for each layer.
 
 Let’s enter edit mode for the *gedung_campus* layer:
 
@@ -140,7 +151,7 @@ Let’s enter edit mode for the *gedung_campus* layer:
 - If you can’t find this button, check that the Digitizing toolbar is
   enabled.
   There should be a check mark next to the
-  :menuselection:`View ‣ Toolbars ‣ Digitizing` menu entry.
+  :menuselection:`View -> Toolbars -> Digitizing` menu entry.
 - Once you are in edit mode, the digitizing tools will become active:
 
 .. image:: /static/training/beginner/qgis-inasafe/image181.*
@@ -169,11 +180,12 @@ We want to add a new feature.
 .. image:: /static/training/beginner/qgis-inasafe/image182.*
    :align: center
 
-- You’ll notice that your mouse cursor becomes a crosshair. This allows you
-  to more accurately place the points you’ll be digitizing. Remember that even
-  as you’re using the digitizing tool, you can zoom in and out on your map by
-  rolling the mouse wheel, and you can pan around by holding down the mouse
-  wheel and dragging around in the map.
+- You’ll notice that your mouse cursor becomes a crosshair.
+  This allows you to more accurately place the points you’ll be digitizing.
+  Remember that even as you’re using the digitizing tool,
+  you can zoom in and out on your map by rolling the mouse wheel,
+  and you can pan around by holding down the mouse wheel and dragging around
+  in the map.
 
 The first feature you’ll digitize is GPS field:
 
@@ -182,8 +194,8 @@ The first feature you’ll digitize is GPS field:
 
 - Start by clicking on a point somewhere along the edge of the field.
 - Place more points by clicking further along the edge,
-  until the shape you’re drawing completely covers the field.  This is very
-  similar to drawing a polygon in JOSM.
+  until the shape you’re drawing completely covers the field.
+  This is very similar to drawing a polygon in JOSM.
 - To place your last point, :guilabel:`right-click` where you want it to be.
   This will finalize the feature and show you the Attributes dialog.
 - Fill in the values as shown here:
@@ -194,8 +206,8 @@ The first feature you’ll digitize is GPS field:
 - Click :guilabel:`OK`. You’ve created a new feature!
 
 .. note:: Remember, if you’ve make a mistake while digitizing a feature,
-   you can always edit it later.  Simply finish digitizing the feature and then
-   follow these steps:
+   you can always edit it later.
+   Simply finish digitizing the feature and then follow these steps:
 
 - Select the feature with the Select :guilabel:`Single Feature` tool:
 
@@ -216,7 +228,8 @@ Then use one of these tools to edit the feature:
 
 Now try it on your own:
 
-- Digitize the school itself and the upper field. Use this image to assist you:
+- Digitize the school itself and the upper field.
+  Use this image to assist you:
 
 .. image:: /static/training/beginner/qgis-inasafe/image189.*
    :align: center
@@ -231,47 +244,53 @@ to that layer.
 .. image:: /static/training/beginner/qgis-inasafe/image35.*
    :align: center
 
-- You will be asked to save your edits.  Click :guilabel:`Save`
+- You will be asked to save your edits.
+  Click :guilabel:`Save`
 
 .. image:: /static/training/beginner/qgis-inasafe/image190.*
    :align: center
 
-.. note:: Now you know how to create polygon features!  Creating points and
-   line layers is just as easy - you simply need to define the type of layer
-   when you create it, and of course you can only create points in point layers
-   and lines in line layers.
+.. note:: Now you know how to create polygon features!
+   Creating points and line layers is just as easy - you simply need to
+   define the type of layer when you create it, and of course you can only
+   create points in point layers and lines in line layers.
 
 **4. Georeferencing**
 
 In the previous section we digitized a raster image, thus creating vector
-data.  This is essentially the same process as when we use Bing imagery in
-JOSM to add to OpenStreetMap.  And in both of these cases,
-the imagery that we use is already **georeferenced** - that is,
-it is correctly placed in its proper location.
+data.
+This is essentially the same process as when we use Bing imagery in JOSM to
+add to OpenStreetMap.
+And in both of these cases, the imagery that we use is already
+**georeferenced** - that is, it is correctly placed in its proper location.
 
 When an image is georeferenced, it is stretched in different ways so that
 each pixel in the image corresponds as closely as possible to the area it
-represents on the spherical Earth.  Because it is difficult to perfectly
-align a flat image on a round object, there are often small georeferencing
-errors, as we learned previously with imagery offset.
+represents on the spherical Earth.
+Because it is difficult to perfectly align a flat image on a round object,
+there are often small georeferencing errors, as we learned previously with
+imagery offset.
 
-What if you have a map that is not georeferenced?  What if you have a paper
-map given to you by a government agency?  How can you digitize it?
+What if you have a map that is not georeferenced?
+What if you have a paper map given to you by a government agency?
+How can you digitize it?
 
 The first step is to turn your paper map into a digital image that you can
-manipulate with your computer.  You can do this with a scanner (or possibly
-a digital camera), although doing so is beyond the scope of this chapter.
+manipulate with your computer.
+You can do this with a scanner (or possibly a digital camera),
+although doing so is beyond the scope of this chapter.
 
 *4.1 Georeference an Image*
 
 Now we will learn how to georeference an image in QGIS so that is correctly
-located on Earth.  We will be using a map provided in the tutorial files,
-which looks like this:
+located on Earth.
+We will be using a map provided in the tutorial files, which looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image191.*
    :align: center
 
-- Start a new QGIS project.  Save your previous work if you like.
+- Start a new QGIS project.
+  Save your previous work if you like.
 - Go to :menuselection:`Raster ‣ Georeferencer ‣ Georeferencer`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image192.*
@@ -290,11 +309,13 @@ which looks like this:
    :align: center
 
 In order to georeference this image, we need to associate points on the
-image to known points on the Earth.  Such points are called ground control
-points (GCPs).  Luckily, this map image has latitude and longitude
-coordinates written on it at every corner.  So, to georeference this image,
-we will create four GCPs, one at each corner of the map,
-and we will turn our jpeg file into a geotiff, a georeferenced image.
+image to known points on the Earth.
+Such points are called ground control points (GCPs).
+Luckily, this map image has latitude and longitude coordinates written on it
+at every corner.
+So, to georeference this image, we will create four GCPs,
+one at each corner of the map, and we will turn our jpeg file into a geotiff,
+a georeferenced image.
 
 - :guilabel:`Zoom in` to the upper-left corner of the map by using the zoom
   button.
@@ -310,9 +331,11 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
 - :guilabel:`Click on` the very top left point of the map, right where the
    top border of the map meets the left border.
 - A box will pop up requesting the x and y coordinates of the point you just
-  clicked.  Luckily, the coordinates are written in blue on the map.  The
-  longitude (x coordinate) is 110° 15’ 00” E and the latitude (y coordinate)
-  is 7° 29’ 47” S.  We can enter the coordinates in the box as follows.
+  clicked.
+  Luckily, the coordinates are written in blue on the map.
+  The longitude (x coordinate) is 110° 15’ 00” E and the latitude (y
+  coordinate) is 7° 29’ 47” S.
+  We can enter the coordinates in the box as follows.
   Remember that south and west coordinates will be negative numbers.
 
 .. image:: /static/training/beginner/qgis-inasafe/image197.*
@@ -322,9 +345,10 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
 - You will see a red point appear showing the location of your control
   point, and an entry in the table at the bottom.
 - Repeat this process, creating ground control points at each of the four
-  corners of the map.  Remember to enter the longitude and latitude that is
-  written at each corner.  When you are finished, you should have four GCPs
-  and your table will look like this:
+  corners of the map.
+  Remember to enter the longitude and latitude that is written at each corner.
+  When you are finished, you should have four GCPs and your table will look
+  like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image198.*
    :align: center
@@ -336,21 +360,23 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
    :align: center
 
 - Next to :guilabel:`Transformation type` select :guilabel:`Linear`
-- Provide a filename for the output raster.  The file type will be **.tif**
-- Check the box next to **Load in QGIS when done**. It should look like this:
+- Provide a filename for the output raster.
+  The file type will be **.tif**.
+- Check the box next to **Load in QGIS when done**.
+  It should look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image200.*
    :align: center
-  
-- Click :guilabel:`OK`.  
+
+- Click :guilabel:`OK`.
 - Then look at the table.
 
 .. image:: /static/training/beginner/qgis-inasafe/image201.*
    :align: center
 
 - Make sure the residual value is near zero to improve accuracy.
-- Now we are ready to produce the georeferenced image file.  Click on the
-  :guilabel:`Start georeferencing` button.
+- Now we are ready to produce the georeferenced image file.
+  Click on the :guilabel:`Start georeferencing` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image202.*
    :align: center
@@ -364,22 +390,23 @@ and we will turn our jpeg file into a geotiff, a georeferenced image.
    :align: center
 
 - The output **.tif** file will be created and automatically added to your
-  project.  If you hover over the image, you should see coordinates at the
-  bottom of QGIS which are close the the coordinates you entered when placing
-  the GCPs.
+  project.
+  If you hover over the image, you should see coordinates at the bottom of
+  QGIS which are close the the coordinates you entered when placing the GCPs.
 
 .. image:: /static/training/beginner/qgis-inasafe/image204.*
    :align: center
 
 - Another way to see that the image is correctly placed is by adding a layer
-  with the OpenLayers plugin.  Here we have added Bing satellite imagery,
-  and made our new geotiff transparent to see Merapi in the background.
+  with the OpenLayers plugin.
+  Here we have added Bing satellite imagery, and made our new geotiff
+  transparent to see Merapi in the background.
 
 .. image:: /static/training/beginner/qgis-inasafe/image205.*
    :align: center
 
 Knowing how to georeference is important when you want to digitize from a
-paper map or an image that is not already georeferenced.  Once you have
-georeferenced an image like this, you can apply the same digitization
-techniques that we learned previously in this chapter to create vector
-shapefiles that can be used in QGIS and InaSAFE.
+paper map or an image that is not already georeferenced.
+Once you have georeferenced an image like this, you can apply the same
+digitization techniques that we learned previously in this chapter to create
+vector shapefiles that can be used in QGIS and |project_name|.

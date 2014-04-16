@@ -4,7 +4,7 @@ The Impact Layer Merge Tool
 ===========================
 
 In some cases you may wish to create a report containing the combined output of
-two impact functions for the same area for the *same hazard, different
+two impact functions for the same area for the **same hazard, different
 exposures**. For example You may carry out an assessment of the impact of a
 flood on population and on buildings and combine the results into a single
 report. The impact layer merge tool allows you to do this.
@@ -90,7 +90,7 @@ all of these elements with id:
 * **map-scale**, a QgsComposerScaleBar
 * **map-legend**, a QgsComposerLegend
 * **organisation-logo**, a QgsComposerPicture
-* **merged-report table**, a QgsComposerHTML
+* **merged-report-table**, a QgsComposerHTML
 
 If any of those elements does not exist on the report template, the tools will 
 give you the information of what element is missing on the template. 
@@ -112,8 +112,9 @@ Those elements are:
 * **disclaimer**. It corresponds to **Disclaimer text** field on InaSAFE
   Option tools.
   If you do not fill this field, then the default one will be used: "InaSAFE
-  has been jointly developed by BPNB, Australian Govenment and the World
-  Bank - GFDRR"
+  has been jointly developed by Indonesian Government-BPNB, Australian Govenment-AIFDR and the World
+  Bank-GFDRR. These agencies and the individual software developers of InaSAFE take no responsibility for 
+  the correctness of outputs from InaSAFE or decisions derived as a consequence."
 
 2. Elements containing tokens. The id of these element is not significant, only the token 
 it contains. At render time, any of these tokens will be replaced. If you want to have a 

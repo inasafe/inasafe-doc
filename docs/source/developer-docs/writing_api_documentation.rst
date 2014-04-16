@@ -56,7 +56,8 @@ everything is done by a script in the documentation repository now.
   The .rst extension is not needed or desired when adding to the index list.
 * Add the new .rst file to the revision control system.
 
-An example of the contents of a module's API .rst if provided below::
+An example of the contents of a module's API .rst if provided below
+::
 
     Module:  safe.common.polygon
     ============================
@@ -68,9 +69,10 @@ This module forms part of the `InaSAFE <http://inasafe.org>`_ tool.
 
 A couple of things should be noted here:
 
-* Sphinx provides automodule and autoclass directives. We have opted to use
-  **automodule** for all API documentation because autoclass requires that
-  each class be enumerated and anonymous functions need to be explicitly listed.
+* Sphinx provides automodule and autoclass directives.
+  We have opted to use **automodule** for all API documentation because
+  autoclass requires that each class be enumerated and anonymous functions
+  need to be explicitly listed.
 * Automodule must point to a fully qualified python module path.
 * The **members** directive instructs autodocs to enumerate all classes and
   functions in that module.
@@ -90,7 +92,8 @@ For example, when the keywords editor dialog feature was introduced, we created
 a new sphinx document :file:`docs/sources/user-docs/dock.rst` which
 documents this new feature.
 Additionally, the help button is set to launch the help dialog in the context
-of the new help document e.g.::
+of the new help document e.g.
+::
 
     from safe_qgis.utilities.help import show_context_help
 

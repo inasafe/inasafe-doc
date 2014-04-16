@@ -9,12 +9,12 @@ BADAN NASIONAL PENANGGULANGAN BENCANA
 FOREWORD
 ========
 
-Contingency planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
-workshop program are designed to deliver knowledge and skills for provincial
-and districal disaster management agency officials and staff in order to handle
-emergencies since the beginning of the disaster.
-These knowledge and skills will help them to be able to reduce and manage
-disaster risk.
+The Contingency planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
+workshop program is designed to provide provincial and district disaster
+management agency officials and staff with the knowledge and skills required
+to handle emergencies during all stages of a disaster.
+The knowledge and skills acquired through this workshop program will help
+them to reduce and manage risks from natural disasters.
 
 Badan Nasional Penanggulangan Bencana (|BNPB|) has identified priority needs
 to improve the methodology that can be used for contingency planning.
@@ -77,7 +77,7 @@ that can feed into their disaster contingency plans.
 Over the last year three specific tools have been piloted in Indonesia with
 huge success:
 
-- **InaSAFE**: is free and open source software that produces realistic
+- |project_name|: is free and open source software that produces realistic
   natural hazard impact scenarios for better planning, preparedness and
   response activities.
   It is being developed by |AIFDR| in close consultation with |BNPB|.
@@ -100,17 +100,18 @@ This curriculum outline describes competencies to be achieved,
 the lists of content required to achieve the competencies in the workshop
 package, and the program structure of the workshop course.
 The workshop consists of beginner, intermediate and advance levels.
-The beginner workshop is mainly aimed to introduce participants to the concept of
-realistic disaster scenario development and help them become socialized to the
-concepts and explore all three of the open source tools.
+The beginner workshop is mainly aimed to introduce participants to the
+concept of realistic disaster scenario development and help them become
+socialized to the concepts and explore all three of the open source tools.
 In contingency planning, having realistic disaster scenarios contributes
 significantly to the reliability of the created planning results.
 As complexity and uncertainty are common in developing realistic disaster
 scenarios, advanced knowledge and skills in mapping and impact calculations
-using OSM, QGIS, and InaSAFE are required.
+using OSM, QGIS, and |project_name| are required.
 For this reason, the intermediate level of the workshop on OSM,
-QGIS and InaSAFE is required to further participants knowledge and skills to
-work with the tools in anticipating possible disaster events and impacts.
+QGIS and |project_name| is required to further participants knowledge and
+skills to work with the tools in anticipating possible disaster events and
+impacts.
 
 The workshop is expected to e contibued with an advanced level course and
 workshop for trainers course for which the curriculum will be developed
@@ -136,32 +137,32 @@ CURRICULUM
 A. Aims
 =======
 
-The scheme of the curriculum on Scenario Development for Contingency
-Planning by using OSM and QGIS/InaSAFE is designed to provide a reference to
+The scheme of the curriculum on Scenario Development for Contingency Planning
+by using OSM and QGIS/|project_name| is designed to provide a reference to
 workshop organizers at national, provincial and district levels.
 
 This workshop course on  Scenario Development for Contingency Planning by
-using OSM and QGIS/InaSAFE consists of two separate workshops for each
+using OSM and QGIS/|project_name| consists of two separate workshops for each
 technology, and each technology workshop is composed of three levels.
 
 1. Workshop spatial data collection OSM for beginners and intermediate levels
 
-2. Workshop spatial data analysis QGIS/InaSAFE for beginners and
+2. Workshop spatial data analysis QGIS/|project_name| for beginners and
    intermediate levels
 
 Both workshop courses are interrelated.
 After participating in both workshop courses, participants are expected to be
 able to develop scenarios for contingency planning by using scientific hazard
-layers, OSM and QGIS/InaSAFE.
+layers, OSM and QGIS/|project_name|.
 
 3. Training of trainer workshop for contingency planing using OSM, QGIS,
-   and InaSAFE
+   and |project_name|
 
 The main objective of this training is to train people to be leaders and
 trainers in Scenario Development program for Contingency Plan (SD4CP) in their
 respective regions.
 After completing the training, participants will have the facilitation skills
-about OSM / QGIS / InaSAFE which is needed as facilitator,
+about OSM / QGIS / |project_name| which is needed as facilitator,
 and training skills to help train others in developing a realistic disaster
 scenario that can be used in contingency plans.
 This will lead to better decision making during the process of making
@@ -205,7 +206,7 @@ Qualifications for participation at intermediate level:
 
 Qualifications for participants at Training of Trainer (ToT) level:
 
-1. Has followed OSM and QGIS/InaSAFE  workshop both beginner and intermediate
+1. Has followed OSM and QGIS/|project_name|  workshop both beginner and intermediate
    levels.
 2. Demonstrate the potential to be a key person of, or advocate as well as a
    trainer (trainers) in the training program for the Scenario Development
@@ -241,15 +242,15 @@ C. Map of Competencies
 |    |             | 6. Creating and editing page in OSM Wiki                                                                            |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 
-**2. Data analysis using QGIS and InaSAFE Workshop**
+**2. Data analysis using QGIS and** |project_name| **Workshop**
 
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
 | No.| Level       | Standard Competency and Basic Competency                                                                            |
 +====+=============+=====================================================================================================================+
-| A. | Beginner    | **Managing spatial data using QGIS and analyzing disaster impact scenario using InaSAFE**                           |
+| A. | Beginner    | **Managing spatial data using QGIS and analyzing disaster impact scenario using**  |project_name|                   |
 |    |             |                                                                                                                     |
 |    |             | 1. Using GIS to develop scenario for contingency planning                                                           |
-|    |             | 2. Explaining the benefit of QGIS and InaSAFE for developing realistic scenario for contingency planning            |
+|    |             | 2. Explaining the benefit of QGIS and |project_name| for developing realistic scenario for contingency planning     |
 |    |             | 3. Installing QGIS and explaining QGIS user interface                                                               |
 |    |             | 4. Using QGIS plugins                                                                                               |
 |    |             | 5. Determining projection system and transformation in QGIS                                                         |
@@ -259,14 +260,14 @@ C. Map of Competencies
 |    |             | 9. Creating and editing new vector layer                                                                            |
 |    |             | 10. Analyzing vector data to solve problem                                                                          |
 |    |             | 11. Creating maps with Map composer                                                                                 |
-|    |             | 12. Using InaSAFE                                                                                                   |
-|    |             | 13. Keeping interaction and communication to support QGIS and InaSAFE in Indonesia                                  |
+|    |             | 12. Using |project_name|                                                                                            |
+|    |             | 13. Keeping interaction and communication to support QGIS and |project_name| in Indonesia                           |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
-| B. | Intermediate| **Spatial data analysis using QGIS and InaSAFE which is related to contingency planning**                           |
+| B. | Intermediate| **Spatial data analysis using QGIS and** |project_name| **which is related to contingency planning**                |
 |    |             |                                                                                                                     |
 |    |             | 1. Understand QGIS concepts                                                                                         |
-|    |             | 2. Preparing data and keywords for InaSAFE                                                                          |
-|    |             | 3. Preparing data and keywords for InaSAFE                                                                          |
+|    |             | 2. Preparing data and keywords for |project_name|                                                                   |
+|    |             | 3. Preparing data and keywords for |project_name|                                                                   |
 |    |             | 4. Planning evacuation route based on hazard Information                                                            |
 |    |             | 5. Calculate damage and losses                                                                                      |
 +----+-------------+---------------------------------------------------------------------------------------------------------------------+
@@ -276,18 +277,18 @@ C. Map of Competencies
 Standard Competency and Basic Competency
 
 **Participant can be a workshop facilitator to teach Data collection and data
-analysis through OSM, QGIS, and InaSAFE in their respective region.**
+analysis through OSM, QGIS, and |project_name| in their respective region.**
 
 1. Mastering how to implement adult learning.
 2. Demonstrating basic teaching skills.
-3. Practising data collection and analysis through OSM, QGIS, and InaSAFE
+3. Practising data collection and analysis through OSM, QGIS, and |project_name|
    workshop.
 
 D. Curriculum Development
 =========================
 
 1. Identifying exact competencies that have to be learnt to collect spatial
-   data using OSM and analyze the data using QGIS/InaSAFE.
+   data using OSM and analyze the data using QGIS/|project_name|.
    Competencies are elaborated as Standard Competency or workshop material
    competency, basic competency, and indicator.
    Standard Competency or workshop material competency is the minimum
@@ -316,8 +317,8 @@ D. Curriculum Development
     c. Organizing materials arranged in systematic.
 
 
-E. Contingency Planning Using OSM and QGIS/InaSAFE Curriculum Scheme
-====================================================================
+E. Contingency Planning Using OSM and QGIS/|project_name| Curriculum Scheme
+===========================================================================
 
 **Data Collection Using OSM Beginner Level Workshop**
 
@@ -488,7 +489,8 @@ Quality Assurance for contributing of OSM mapping
 |                                                                     | 8. View changelog                                                | 8. How to view changelog                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 
-**Data analysis Using QGIS and InaSAFE Beginner Level Workshop**
+**Data analysis Using QGIS and** |project_name| **Beginner Level
+Workshop**
 
 **Standard Competency:**
 Managing spatial data using QGIS and analyzing disaster impact scenario using
@@ -503,11 +505,11 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 |                                                                     |                                                                  | 2. Terminology of Geographic information System (GIS)      |
 |                                                                     |                                                                  |                                                            |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
-|2. Explaining the benefit of QGIS and InaSAFE for developing         |                                                                  |**QGIS and InaSAFE for Contingency Planning**               |
+|2. Explaining the benefit of QGIS and |project_name| for developing  |                                                                  |**QGIS and InaSAFE for Contingency Planning**               |
 |   realistic scenario for contingency planning                       | 1. Explaining GIS to prepare contingency planning                |                                                            |
 |                                                                     | 2. Explaining the importance of data                             | 1. GIS for Preparing contingency Planning                  |
-|                                                                     | 3. Explaining benefit of QGIS/InaSAFE for scenario development   | 2. The Importance of Data                                  |
-|                                                                     |    for contingency planning                                      | 3. QGIS and InaSAFE                                        |
+|                                                                     | 3. Explaining benefit of QGIS/|project_name| for scenario        | 2. The Importance of Data                                  |
+|                                                                     |    development for contingency planning                          | 3. QGIS and |project_name|                                 |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 |3. Installing QGIS and explaining QGIS user interface                |                                                                  |**QGIS Installation and QGIS User Interface Layout**        |
 |                                                                     | 1. Downloading QGIS                                              |                                                            |
@@ -588,25 +590,25 @@ Managing spatial data using QGIS and analyzing disaster impact scenario using
 |                                                                     | 8. Exporting the map into several formats (pdf, jpeg, svg)       | 7. Adding legend                                           |
 |                                                                     |                                                                  | 8. Printing the map                                        |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
-|12. Using InaSAFE                                                    |                                                                  | **Working with InaSAFE**                                   |
+|12. Using |project_name|                                             |                                                                  | **Working with** |project_name|                            |
 |                                                                     | 1. Explaining the concept of Hazard, Exposure, and Impact data   |                                                            |
 |                                                                     | 2. Explaining how to get impact                                  | 1. Hazard, Exposure, Impact                                |
-|                                                                     | 3. Explaining InaSAFE’s interface                                | 2. InaSAFE interface                                       |
+|                                                                     | 3. Explaining |project_name|’s interface                         | 2. |project_name| interface                                |
 |                                                                     | 4. Adding hazard data                                            | 3. Adding hazard data                                      |
 |                                                                     | 5. Adding unprocessed exposure data (vector and raster)          | 4. Adding exposure data                                    |
 |                                                                     | 6. Using keywords editor                                         | 5. Adding keyword in metadata                              |
 |                                                                     | 7. Analysing Impact                                              | 6. Impact analysis                                         |
-|                                                                     | 8. Improving InaSAFE Output Map                                  | 7. Improving InaSAFE maps output                           |
+|                                                                     | 8. Improving |project_name| Output Map                           | 7. Improving |project_name| maps output                    |
 |                                                                     | 9. Saving and Printing scenario result                           | 8. Using print button                                      |
 |                                                                     |                                                                  | 9. Saving your work                                        |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 |13. Keeping interaction to maintain analysis data network using      |                                                                  | **Social Media to Keep QGIS and InaSAFE Interaction**      |
-|    QGIS/InaSAFE                                                     | 1. Using social media to keep the interaction alive              |                                                            |
+|    QGIS/|project_name|                                              | 1. Using social media to keep the interaction alive              |                                                            |
 |                                                                     | 2. Accessing QGIS tutorial website                               | 1. Social Media to keep interaction through Facebook       |
 |                                                                     |                                                                  | 2. QGIS tutorial website                                   |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 
-**Data analysis using QGIS and InaSAFE Intermediate Level Workshop**
+**Data analysis using QGIS and** |project_name| **Intermediate Level Workshop**
 
 **Standard Competency:**
 Data spatial analysis using QGIS and |project_name| which is related to
@@ -667,7 +669,8 @@ contingency planning.
 |                                                                     | 9. Presenting the damages and losses assessment using a diagram  |                                                            |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 
-**Training of Trainer Workshop for Contingency Planning using OSM, QGIS, and InaSAFE**
+**Training of Trainer Workshop for Contingency Planning using OSM, QGIS,**
+**and** |project_name|
 
 **Standard Competency:**
 Participant can be a workshop facilitator to teach Data collection and Data
@@ -773,7 +776,7 @@ Based on curriculum, program structure is designed as follow.
 |     | Total                                      | 30                                              |
 +-----+--------------------------------------------+-------------------------------------------------+
 
-**3.Data Analysis Using QGIS/InaSAFE Beginner Level**
+**3.Data Analysis Using QGIS/** |project_name| **Beginner Level**
 
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 | No | Workshop Material                                                                                     | Time (learning hour) @ 45 Minutes       |
@@ -819,7 +822,7 @@ Based on curriculum, program structure is designed as follow.
 |    | Total                                                                                                 | 50                                      |
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 
-**4. Data Analysis Using QGIS/InaSAFE Intermediate Level**
+**4. Data Analysis Using QGIS/** |project_name| **Intermediate Level**
 
 +----+-----------------------------------------+-----------------------------------------+
 | No | Workshop Material                       | Time (learning hour) @ 45Minutes        |
@@ -851,7 +854,8 @@ Based on curriculum, program structure is designed as follow.
 |    | Total                                   | 50                                      |
 +----+-----------------------------------------+-----------------------------------------+
 
-**5. Training of Trainer for Contingency Planning using OSM, QGIS, and InaSAFE**
+**5. Training of Trainer for Contingency Planning using OSM, QGIS, and**
+|project_name|
 
 +----+-----------------------------------------+-----------------------------------------+
 | No | Workshop Material                       | Time (learning hour) @ 45Minutes        |
@@ -888,10 +892,11 @@ The syllabus is based on the structure of the program and allocation of a
 predetermined time.
 
 This syllabus will still be described in more detail in the toolkit/workshop
-manuals separate from this curriculum. Therefore, the user will understand this curriculum
-easier if he reads the prepared toolkit.
+manuals separate from this curriculum.
+Therefore, the user will understand this curriculum easier if he reads the
+prepared toolkit.
 
-**Contingency Planning Using OSM and QGIS/InaSAFE Syllabus**
+**Contingency Planning Using OSM and QGIS/** |project_name| **Syllabus**
 
 **Data Collection Using OSM Beginner Level**
 
@@ -1084,7 +1089,7 @@ Quality assurance for contributing of OSM mapping
 |                                                                |                                                                  |                                                        | OpenStreetMap.                        |                        | Practice                   | Slide PP                      |
 |                                                                | 1. Explain the definition of wiki openstreetmap                  | 1. The definition of wiki OpenStreetMap                |                                       |                        |                            | Module 6                      |
 |                                                                | 2. Create account in OSM wiki                                    | 2. Creating account                                    | Participants are practicing how to    |                        |                            | Participant's Computer        |
-|                                                                | 3. Editing OSM wiki                                              | 3. Edit wiki                                           | create OSM wiki accoung, editing wiki,|                        |                            |                               |
+|                                                                | 3. Editing OSM wiki                                              | 3. Edit wiki                                           | create OSM wiki account, editing wiki,|                        |                            |                               |
 |                                                                | 4. Explain conventions and guides/rules in making a wiki page    | 4. The format for writing on wiki                      | learning about wiki format, creating  |                        |                            |                               |
 |                                                                | 5. Create a new page in wiki                                     | 5. Creating a new page in wiki                         | new wiki page, uploading images,      |                        |                            |                               |
 |                                                                | 6. Uploading file and photo/image                                | 6. Upload file and photo/image                         | translating pages, and view the       |                        |                            |                               |
@@ -1092,7 +1097,7 @@ Quality assurance for contributing of OSM mapping
 |                                                                | 8. View changelog                                                | 8. How to view changelog                               |                                       |                        |                            |                               |
 +----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
-**Data analysis using QGIS and InaSAFE Beginner Level Workshop**
+**Data analysis using QGIS and** |project_name| **Beginner Level Workshop**
 
 **Standard Competency:**
 Managing spatial data using QGIS and analyzing disaster impact scenario using
@@ -1338,7 +1343,7 @@ analysis through OSM, QGIS, and |project_name| in their respective region.
 |                                                                     | 3. Demonstrate the basic skills component of teaching / workshop | 2. Communication models in workshop                        |    communication models in the        |                        |                            |                               |
 |                                                                     |                                                                  | 3. Basic teaching skills component                         |    training                           |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**3. Facilitator skills for data collection and analysis through OSM, QGIS, and InaSAFE workshop (2 hours)**                                                                                                                                                                                                                       |
+|**3. Facilitator skills for data collection and analysis through OSM, QGIS,and** |project_name| **workshop (2 hours)**                                                                                                                                                                                                             |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Practising data collection and analysis through OSM, QGIS, and       |                                                                  |** Facilitator Skills for Data Collection and Analysis      | Participant practicing their          | 90 minutes             | Practice                   | Projector                     |
 |InaSAFE workshop                                                     |                                                                  |through OSM, QGIS, and InaSAFE workshop                     | facilitating skill for data collection|                        |                            | Slide PPT                     |
@@ -1353,9 +1358,10 @@ F. Closing
 ==========
 
 After organizing this Training of Trainer for Scenario Development for
-Contingency Planning using OSM and QGIS/InaSAFE Curriculum Scheme by BNPB, we
-are hoping that workshop organizer from national level or province/district
-level can use this document as reference in order to create same output.
+Contingency Planning using OSM and QGIS/|project_name| Curriculum Scheme by
+BNPB, we are hoping that workshop organizer from national level or
+province/district level can use this document as reference in order to create
+same output.
 This curriculum will always be improved through several test and input from
 stakeholders, such as government official or non-government which included in
 working group.

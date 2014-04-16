@@ -15,18 +15,21 @@ Installation procedure - Jenkins server
 If you want to have the most recent version of jenkins the install procedure
 is described at http://pkg.jenkins-ci.org/debian/.
 
-*You can skip the following part if you want to use jenkins that comes with
-your Distribution:*
+*You can skip the following part if you want to use jenkins that comes with*
+*your Distribution:*
 
-To start, do this::
+To start, do this
+::
 
    wget -q -O - http://pkg.jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
 
-Now add this to your :file:`/etc/apt/sources.list`::
+Now add this to your :file:`/etc/apt/sources.list`
+::
 
    deb http://pkg.jenkins-ci.org/debian binary/
 
-In any case you will install jenkins with::
+In any case you will install jenkins with
+::
 
    sudo apt-get update
    sudo apt-get install jenkins
@@ -53,7 +56,8 @@ In most cases (running on your own machine) hostname will be localhost.
 Create a virtual host on the server's apache installation to reverse
 proxy by creating this file:
 :file:`/etc/apache2/sites-available/jenkins.hostname.conf` which should
-contain::
+contain
+::
 
    <VirtualHost *:80>
      ServerAdmin yourname@hostname
@@ -88,7 +92,8 @@ To do so do::
    sudo a2enmod proxy
    sudo a2enmod proxy_http
 
-Now enable this vhost::
+Now enable this vhost
+::
 
    sudo a2ensite jenkins.hostname.conf
 
@@ -133,9 +138,10 @@ Lock down access
 ................
 
 We are hosting private repositories on the server so we want to make everything
-private. To do that we do:
+private.
+To do that we do:
 :menuselection:`Jenkins --> Manage Jenkins --> Configure System` or go to
-http://jenkins.linfiniti.com/configure.
+http://jenkins.inasafe.com/configure.
 
 Under :guilabel:`Access control - Security Realm`, check
 :guilabel:`Jenkins's own user database`.
@@ -149,9 +155,9 @@ users on a project by project basis.
 Other Configuration options
 ...........................
 
-* :guilabel:`Jenkins URL` set to :kbd:`http://jenkins.linfiniti.com/`
+* :guilabel:`Jenkins URL` set to :kbd:`http://jenkins.inasafe.org/`
 * :guilabel:`Sender E-mail Address` set to
-  :kbd:`Linfiniti Jenkins <jenkins@linfiniti.com>`
+  :kbd:`Inasafe Jenkins <jenkins@inasafe.org>`
 * :guilabel:`GitHub Web Hook` set to :kbd:`Manually manage hook URLs`
 
 
@@ -161,7 +167,7 @@ Creating the Jenkins |project_name| Job
 Create a new Job (project):
 
 :menuselection:`Jenkins --> New Job` or go to
-http://jenkins.linfiniti.com/view/All/newJob.
+http://jenkins.inasafe.org/view/All/newJob.
 
 Here is a log of the options we set for the Jenkins job:
 
@@ -169,7 +175,8 @@ Here is a log of the options we set for the Jenkins job:
   project name!).
 * Check :guilabel:`Enable project-based security` then add an entry for
   **Anonymous** with :kbd:`Job: Read` and :kbd:`Job Discover` permissions
-  only. This will allow anonymous read-only access to the project.
+  only.
+  This will allow anonymous read-only access to the project.
 * :guilabel:`Xvfb` set to ticked.
 * :guilabel:`GitHub project` set to :kbd:`https://github.com/AIFDR/inasafe/`
 * :guilabel:`Source Code Management` check :guilabel:`Git` and set to
@@ -178,17 +185,18 @@ Here is a log of the options we set for the Jenkins job:
 * :guilabel:`Repository browser` set to :kbd:`auto`
 * :guilabel:`Build Triggers` set to
   :kbd:`Build when a change is pushed to GitHub` - this will cause the project
-  to build every time a new commit is pushed to GitHub. We also need to setup
-  a GitHub hook to do this which is described further down.
+  to build every time a new commit is pushed to GitHub.
+  We also need to setup a GitHub hook to do this which is described further
+  down.
 
 **Build Actions**
 
 * :guilabel:`Build` add an :kbd:`Execute Shell` step and set the script as
   follows::
 
-       export PYTHONPATH=/usr/local/qgis-1.8/share/qgis/python/
-       export LD_LIBRARY_PATH=/usr/local/qgis-1.8/lib
-       export QGIS_PREFIX_PATH=/usr/local/qgis-1.8/
+       export PYTHONPATH=/usr/local/qgis-2.0/share/qgis/python/
+       export LD_LIBRARY_PATH=/usr/local/qgis-2.0/lib
+       export QGIS_PREFIX_PATH=/usr/local/qgis-2.0/
 
        # Make sure data dir is current and synced it its git clone
        scripts/update-test-data.sh
@@ -200,9 +208,9 @@ Here is a log of the options we set for the Jenkins job:
        make jenkins-sloccount
        make jenkins-test
 
-.. note:: In this server instance we are using a hand built QGIS. The initial
-   3 export lines may not be needed if you are using a package build QGIS
-   installation.
+.. note:: In this server instance we are using a hand built QGIS.
+    The initial 3 export lines may not be needed if you are using a package
+    build QGIS installation.
 
 * :guilabel:`Add build step` set to :kbd:`play a sound` and choose a sound
   which will play when the build completes (optional)
@@ -215,9 +223,9 @@ Add the following actions and settings:
   :guilabel:`Cobertura xml report pattern` to :kbd:`coverage.xml`.
   For the rest take the defaults or tweak them as you like.
 * :guilabel:`Publish JUnit test result report` set :guilabel:`Test report XMLs`
-   to :kbd:`nosetests.xml`. I also disabled
-   :guilabel:`Retain long standard output/error` (you can enable it temporarily
-   while debugging server side build issues).
+  to :kbd:`nosetests.xml`.
+  I also disabled :guilabel:`Retain long standard output/error` (you can
+  enable it temporarily while debugging server side build issues).
 * :guilabel:`Publish SLOCCount analysis reports` set
   :guilabel:`SLOCcount reports` to :kbd:`sloccount.sc`
 * :guilabel:`Report Violations` set the following:
@@ -245,8 +253,9 @@ We need to do the following on the server as the jenkins user:
 Create an ssh key for Jenkins
 .............................
 
-This key will be used to enable Jenkins access to private repos on GitHub. You
-only need to do this once on the server for each project::
+This key will be used to enable Jenkins access to private repos on GitHub.
+You only need to do this once on the server for each project
+::
 
    sudo su - jenkins
    jenkins@maps:~$ ssh-keygen
@@ -257,11 +266,11 @@ only need to do this once on the server for each project::
    Your identification has been saved in /var/lib/jenkins/.ssh/id_rsa_inasafe.
    Your public key has been saved in /var/lib/jenkins/.ssh/id_rsa_inasafe.pub.
    The key fingerprint is:
-   29:7e:b6:f5:18:5e:cb:e7:f6:b7:84:e1:f5:66:31:41 jenkins@maps.linfiniti.com
+   29:7e:b6:f5:18:5e:cb:e7:f6:b7:84:e1:f5:66:31:41 jenkins@inasafe.org
    The key's randomart image is:
    +--[ RSA 2048]----+
    |               E |
-   | .            .  |
+   | .      .      . |
    |               . |
    |         .      .|
    |      . S    . + |
@@ -283,8 +292,9 @@ Here's our key::
    jenkins@maps.linfiniti.com
 
 You need to create an ssh host alias so that when doing a git checkout, the
-correct keypair is used. Add this to the :file:`~/.ssh/config` of the jenkins
-user::
+correct keypair is used.
+Add this to the :file:`~/.ssh/config` of the jenkins user
+::
 
    Host |project_name|GitHub
         IdentityFile /home/jenkins/.ssh/id_rsa_inasafe
@@ -293,11 +303,13 @@ user::
 Now go to https://github.com/AIFDR/inasafe/admin/keys and add the above
 key as a deploy key.
 
-Next we add the github key to the Jenkins user's allowed hosts. The easiest way
-to do this is just to make a temporary clone of the repo. Again this only needs
-to be done once and then Jenkins will work for all github projects.
+Next we add the github key to the Jenkins user's allowed hosts.
+The easiest way to do this is just to make a temporary clone of the repo.
+Again this only needs to be done once and then Jenkins will work for all
+github projects.
 
-Back on the server::
+Back on the server
+::
 
    jenkins@maps:~$ cd /tmp/
    jenkins@maps:/tmp$ git clone git@InaSAFEGithub:AIFDR/inasafe.git
@@ -306,9 +318,10 @@ Back on the server::
    RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
    Are you sure you want to continue connecting (yes/no)? yes
 
-Also you should set the Jenkins git user and email::
+Also you should set the Jenkins git user and email
+::
 
-   jenkins@maps:~$ git config --global user.email "jenkins@linfiniti.com"
+   jenkins@maps:~$ git config --global user.email "jenkins@inasafe.org"
    jenkins@maps:~$ git config --global user.name "Jenkins Build Server"
 
 .. note:: The source tree will be in :file:`~/jobs/InaSAFE/workspace/`.
@@ -316,13 +329,15 @@ Also you should set the Jenkins git user and email::
 Project setup
 .............
 
-Try to do an initial build. It will fail because we have to copy the
-|project_name| test data into the job directory. Use the same procedure as
-above to add ad deploy key to the inasafe-data repo and then clone it (as
-jenkins user)::
+Try to do an initial build.
+It will fail because we have to copy the |project_name| test data into the
+job directory.
+Use the same procedure as above to add ad deploy key to the inasafe-data repo
+and then clone it (as jenkins user)
+::
 
    cd ~/jobs/InaSAFE/
-   git clone git@InaSAFEDataGitHub:timlinux/inasafe-data.git
+   git clone https://github.com/AIFDR/inasafe.git
 
 GitHub Hook Setup
 .................
@@ -334,10 +349,10 @@ In GitHub hooks, enable Jenkins (GitHub plugin) and set the url to::
 Testing on Jenkins server
 .........................
 
-Simply commit something and push it to the server. Turn the speakers on
-on your desktop with the Jenkins page (http://jenkins.linfiniti.com) open
-and you should hear a cheer or a groan depending on whether the test passes
-or fails.
+Simply commit something and push it to the server.
+Turn the speakers on on your desktop with the Jenkins page (http://jenkins
+.inasafe.org) open and you should hear a cheer or a groan depending on
+whether the test passes or fails.
 
 Further Reading
 ---------------

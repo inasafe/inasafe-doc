@@ -13,25 +13,26 @@ BADAN NASIONAL PENANGGULANGAN BENCANA
 About Toolkit
 ^^^^^^^^^^^^^
 **Toolkit  QGIS-InaSAFE For Intermediate** design as a guide for facilitator
-to train users of QGIS and InaSAFE who followed the beginner training before.
+to train users of QGIS and |project_name| who followed the beginner training
+before.
 The materials in this guide will preparing you to do training with the wide
 range participants, including common problem and also provide the best
 methodology for you to train the participants to increase their skill in data
-processing and data analysis with QGIS and InaSAFE.
+processing and data analysis with QGIS and |project_name|.
 
-When you plan for QGIS-InaSafe training for Intermediate,
+When you plan for QGIS-|project_name| training for Intermediate,
 there are some factors that you have to be considered,
 like duration of training, resources, numbers of facilitator,
 and their technical skill.
 Do not forget before follow this training the participants have been followed
-the beginner training of OSM and QGIS-InaSafe before.
+the beginner training of OSM and QGIS-|project_name| before.
 This Toolkit will help you to prepare training for wide range
 participants, however it would be focus to how to teach them to increase
 their knowledge and skill.
 
 The purpose of this toolkit is for preparing you, facilitators,
 to teach participants to process digital map on QGIS and a hazard data
-analysis and exposure with InaSAFE correctly.
+analysis and exposure with |project_name| correctly.
 
 Purpose of Workshop
 ^^^^^^^^^^^^^^^^^^^
@@ -40,13 +41,13 @@ as follows.
 
 *Standard Competency*
 *********************
-Spatial data analysis using QGIS and InaSAFE which is related to contingency
-planning.
+Spatial data analysis using QGIS and |project_name| which is related to
+contingency planning.
 
 *Basic Competency*
 ******************
 1. Understand QGIS concept
-2. Preparing data and keywords forInaSafe
+2. Preparing data and keywords for|project_name|
 3. Choosing a temporary IDP camps or evacuation
 4. Planning evacuation route based on hazard information.
 5. Calculate damage and losses
@@ -54,7 +55,7 @@ planning.
 Workshop Materials
 ^^^^^^^^^^^^^^^^^^
 1. QGIS Review
-2. Preparing data and keywords for InaSAFE
+2. Preparing data and keywords for |project_name|
 3. Planning temporary shelter
 4. Planning evacuation route
 5. Calculate damage and losses
@@ -64,21 +65,24 @@ Workshop Strategies
 1. Methods applied in this workshop is participatory teaching,
    emphasizes on full participation of the participant in every section and
    activities during the workshop, instead of lecture method.
-2. Participants oriented. Participants are encouraged to find and getting
-   knowledge and skill needed by themselves.
-3. Trainers serve as facilitators. Trainers only facilitate in order to the
-   ideas emerged during the workshop come from the participants,
-   not only from trainers. However, trainers must be ready and give the better
-   knowledge and argument when the participants need any assistance.
+2. Participants oriented.
+   Participants are encouraged to find and getting knowledge and skill needed
+   by themselves.
+3. Trainers serve as facilitators.
+   Trainers only facilitate in order to the ideas emerged during the workshop
+   come from the participants, not only from trainers.
+   However, trainers must be ready and give the better knowledge and argument
+   when the participants need any assistance.
 4. *Outcome* oriented. Workshop must produces *outcomes* mentioned before.
 
 Tools
 ^^^^^
-1. Copy of  “Guide of Data Analysis using QGIS/InaSAFE Intermediate” for
+1. Copy of  “Guide of Data Analysis using QGIS/|project_name| Intermediate” for
    participants.
 2. A indoor room with tables and chairs.
-3. Some computer units. (At least one computer for two participants,
-   better if one computer for one participants)
+3. Some computer units.
+   (At least one computer for two participants, better if one computer for
+   one participants)
 4. Two Projectors (For presentation and demonstrate all technical software)
 5. Flashdisk to copy files and software
 6. Good internet connection
@@ -222,13 +226,13 @@ Activities
 
 **Session 2**
 ^^^^^^^^^^^^^
-Preparing Data for InaSAFE
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Preparing Data for |project_name|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 185 minutes
 
 Basic Competency
 ****************
-Preparing data and keywords for InaSAFE
+Preparing data and keywords for |project_name|
 
 Indicator
 *********
@@ -237,22 +241,22 @@ Indicator
 3. Input Data
 4. AddKeywords
 5. Preparing Hazard Layer
-6. RunningInaSAFE
+6. Running |project_name|
 
 Outcome
 *******
-Hazard Impact map based on InaSAFE analysis result
+Hazard Impact map based on |project_name| analysis result
 
 Core Material
 *************
-*Preparing Data and Keyword for InaSAFE*
+*Preparing Data and Keyword for* |project_name|
 
 1. Review about Input
 2. Get OSM Data from HOT Exports
 3. Input Data
 4. Add Keywords
 5. Preparing Hazard Layer
-6. RunningInaSAFE
+6. Running |project_name|
 
 Activities
 **********
@@ -295,7 +299,7 @@ Indicator
 *********
 1. Creating the criteria for determining the location of IDP camps
 2. Using geoprocessing tools
-3. Using Spatial Query: Contains, Within, Equal, Intersect, dan Is Disjoint
+3. Using Spatial Query: Contains, Within, Equal, Intersect, Disjoint
 4. Combining Geoprocessing tools and Spatial Query for temporary IDP camps
 
 Outcome

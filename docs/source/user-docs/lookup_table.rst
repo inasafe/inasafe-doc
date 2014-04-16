@@ -14,7 +14,6 @@ Indonesian Translation Index
 To coordinate translation of InaSAFE into Bahasa Indonesian we have developed
 a table of commonly used terms and translation.
 
-
 ===============================    ===========================================
  English                           Bahasa Indonesia
 ===============================    ===========================================
@@ -54,10 +53,25 @@ password                           kata sandi
 dropdown                           daftar pilihan
 default                            pengaturan bawaan
 contingency                        kontinjensi
+digitalization                     digitalisasi
+drag                               geser
+practicing                         mempraktikkan
+IDP camp                           tempat pengungsian
+map canvas                         kanvas peta
+filter                             penyaringan
+directory                          direktori
+log                                catatan
+web browser                        browser internet
+feature                            fitur
+liquefied                          tergenang
+intersect                          perpotongan
+disclaimer                         peringatan
+extent                             jangkauan
+
 
 ===============================    ===========================================
 
-The list of abbrevations to use (including the automatic link to the
+The list of abbreviations to use (including the automatic link to the
 respective homepage) is:
 ::
 
@@ -105,6 +119,3 @@ We have also made a blanket decision not to translate the following words:
 * *copy & paste*
 
 Please add to this list as required.
-
-
-

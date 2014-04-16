@@ -599,7 +599,7 @@ using a text editor to put the file-josm.jar in the right way.
 
 **Participants add tag on nodes not in the ways**
 
-Sometimes it is difficult to new OSM users to understand that a way consists of 
+Sometimes it is difficult to new OSM users to understand that a way consists of
 several nodes.
 Therefore any tag is supposed to be put on the way or polygon rather
 than nodes on the ways.
@@ -1197,7 +1197,7 @@ Indicator
 Outcome
 *******
 Vector files were processed in the analysis of the training data using
-Beginner QGIS/InaSAFE
+Beginner QGIS/|project_name|
 
 Core Material
 *************

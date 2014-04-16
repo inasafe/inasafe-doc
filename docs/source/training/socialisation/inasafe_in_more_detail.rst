@@ -262,6 +262,7 @@ Adding Keywords
 **Quick edit**  **Variable**
 --------------  ------------------------------------------------
 Title           :kbd:`Jakarta flooding on the 18th January 2013`
+Source          BPBD DKI Jakarta
 Category        Hazard
 Subcategory     flood[wet/dry]
 ==============  ================================================
@@ -298,8 +299,8 @@ Buildings within affected subvillages
   How many estimated buildings were flooded?
   Answer  ___________________
 
-27. Read through the |project_name| results, how different is this to the previous
-    |project_name| building analysis?
+27. Read through the |project_name| results, how different is this to the
+    previous |project_name| building analysis?
 
 ::
 
@@ -319,9 +320,10 @@ Evacuation as a percentage
 
 .. note:: We were able to determine how many people needed to be evacuate in
    the last scenario by specifying how deep the water had to be for the
-   location to be determined unsafe.  However when you don`t know how deep the
-   water is and you only know the flooded area, it is hard to determine how
-   many people will need evacuating. InaSAFE therefore needs your help!
+   location to be determined unsafe.
+   However when you don`t know how deep the water is and you only know the
+   flooded area, it is hard to determine how many people will need evacuating.
+   |project_name| therefore needs your help!
 
 Instead of determining how many people will be evacuated by  a spatial area,
 this scenario used the affected population.
@@ -347,7 +349,8 @@ that may need evacuating.
 .. note:: Within the *Configure Impact Function Parameter* window you are
    able to change not only the percentage of evacuated people but also the
    ratio of youth/adult/elder and the amount of minimum needs per person per
-   week.  **Improvement:** need to add units to minimum needs
+   week.
+   **Improvement:** need to add units to minimum needs
 
 32. In the options tab you can see that default is 1, for this first analysis
     we will keep this figure. :guilabel:`OK`
@@ -363,8 +366,8 @@ that may need evacuating.
  How many people were affected?
  Answer __________________________
 
-34. Read through the |project_name| results, how different is this to the previous
-    |project_name| people analysis?
+34. Read through the |project_name| results, how different is this to the
+    previous |project_name| people analysis?
 
 35. :guilabel:`Print` |project_name|, save accordingly
 
@@ -407,8 +410,8 @@ Island -as the name suggest its a huge amount of islands!)
 
 37. Use the :guilabel:`Add Vector` button
 
-38. Use :guilabel:`Browse` to navigate to the *data* folder within *InaSAFE
-    Projects*, :guilabel:`Select` *district_osm_jakarta.shp*,
+38. Use :guilabel:`Browse` to navigate to the *data* folder within
+    *InaSAFE Projects*, :guilabel:`Select` *district_osm_jakarta.shp*,
     :guilabel:`Open` in the **Open an OGR Support** window and
     :guilabel:`Open` again in the **Source** window.
 

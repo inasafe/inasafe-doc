@@ -35,8 +35,9 @@ How to write an issue report
 ----------------------------
 
 At first please use the search function to search through the already
-existing issues. There is a possibility that someone else already found your
-issue and reported it or already had the same suggestion as you.
+existing issues.
+There is a possibility that someone else already found your issue and
+reported it or already had the same suggestion as you.
 
 The issue is related to
 .......................
@@ -62,7 +63,8 @@ corner of the screen.
 Click on it and you will be sent to a new Page.
 
 In the line with "Title" try to enter a self speaking description of your
-problem/suggestion. Try only to use a few words there.
+problem/suggestion.
+Try only to use a few words there.
 
 In the TAB :guilabel:`Write` you can enter the long description of what you
 want to tell.
@@ -83,7 +85,6 @@ Example of a good issue report
 ..............................
 
 The basic construct of a "perfect" issue report will look like this
-
 ::
 
  # Problem/Suggestion

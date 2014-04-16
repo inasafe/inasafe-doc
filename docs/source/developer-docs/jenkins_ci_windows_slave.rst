@@ -6,7 +6,8 @@ Set up of Windows 'slave' builds for Jenkins
 Outline of procedure:
 ---------------------
 
-Set up a virtual machine. In our testing regime we will be using:
+Set up a virtual machine.
+In our testing regime we will be using:
 
 * Windows 8 64bit
 * Windows 8 32bit
@@ -32,7 +33,7 @@ We will be installing the following components on each windows slave:
 With the base software installed, we will clone three GitHub repositories to
 the VM:
 
-* **InaSAFE** The application that we will be testing.
+* |project_name| The application that we will be testing.
 * **inasafe_data** Test data required for unit testing the  library.
 * **inasafe-doc** Documentation that builds the webpage and the Docs.
 
@@ -206,8 +207,9 @@ is going to look a little different - just look in in your AppData dir and you
 should find it.
 
 .. note:: The Jenkins system user will need to have read permissions on the
-    above directory. And don't forget to give the user that Jenkins is run as
-    permissions to the jobs Directory within the Jenkins installation.
+    above directory.
+    And don't forget to give the user that Jenkins is run as permissions to
+    the jobs Directory within the Jenkins installation.
 
 Job Configuration
 .................
@@ -235,13 +237,15 @@ On the job configuration page use the following options:
   minutely checks.
 
 It might be possible that the initial checkout has to be done manually by
-using the command ::
+using the command
+::
 
   git clone git://github.com/AIFDR/inasafe.git workspace
   within the specific job directory.
 
 Save your changes at this point and make a commit, you should see the job
-produce output something like this the next time a commit takes place::
+produce output something like this the next time a commit takes place
+::
 
     Started by timer
     Building in workspace C:\Jenkins\jobs\inasafe-win7-32\workspace

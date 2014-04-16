@@ -12,12 +12,12 @@ Module 4: Planning Evacuation Route Based on Hazard Information
 - Determine start and destination point
 - Conduct route analysis and selection
 
-By now you should have a pretty good understanding of how InaSAFE works and its
-operations.
+By now you should have a pretty good understanding of how |project_name|
+works and its operations.
 
 You know how to add the appropriate layers, and how to define keywords to the
-layers so that InaSAFE can recognize them appropriately.
-Now that we can use InaSAFE effectively to run scenario analyses,
+layers so that |project_name| can recognize them appropriately.
+Now that we can use |project_name| effectively to run scenario analyses,
 we will look at other QGIS functionality that will help us in preparing
 contingency plans.
 
@@ -45,7 +45,7 @@ route or the shortest path between them.
 - We will be continuing with the previous example, which you should have
   saved.
   Open the project in QGIS.
-  We won’t be using the InaSAFE plugin in this Module,
+  We won’t be using the |project_name| plugin in this Module,
   so you may close the panel if you like.
 - Also, we will be using a pre-prepared roads layer in this section, which may
   be slightly more detailed than OpenStreetMap.
@@ -107,7 +107,7 @@ routes will be different in different areas.
 
 - On the Road Graph panel, click on the plus button next to :guilabel:`Start`
   and then click somewhere on the map to indicate the first point of your
-  evacuation route. This would be the initial point for the evacuation route 
+  evacuation route. This would be the initial point for the evacuation route
   in the time of a disaster.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image78.*
@@ -118,9 +118,9 @@ routes will be different in different areas.
 - Now we need to assign the destination of our evacuation route.
   Where will people be evacuated to?
   Because this is an example, we don’t have a great idea of where an
-  appropriate place would be. We might use GIS to determine appropriate 
+  appropriate place would be. We might use GIS to determine appropriate
   locations, which would most likely be high ground in the event of a flood.
-  For this example, we will choose a destination at the SouthEast corner of the 
+  For this example, we will choose a destination at the SouthEast corner of the
   village.
 - Click the plus sign next to :guilabel:`Stop` and click somewhere on the map.
   The destination will be marked with a red point.
@@ -140,7 +140,7 @@ routes will be different in different areas.
 - In this example, the length of the fastest route between our two points is
   about 1.97 kilometers and the travel time is 0.0788 hours, which is about 5
   minutes. The time in our example is determined by the distance and our default
-  speed of 25 km/hr. The speed can be changed, and can even be set to different 
+  speed of 25 km/hr. The speed can be changed, and can even be set to different
   amount for each segment of road.
 
 - The route is also drawn on our map
@@ -161,7 +161,7 @@ routes will be different in different areas.
 - To save, right-click on the layer and click :guilabel:`Save as…`
 
 In this module we’ve learned how to calculate the shortest distance between
-two points using the Road Graph plugin. Using this you can easily determine 
-evacuation routes from various areas. Evacuation routes are important for 
-contingency plans, and those living in threatened areas can be educated with 
+two points using the Road Graph plugin. Using this you can easily determine
+evacuation routes from various areas. Evacuation routes are important for
+contingency plans, and those living in threatened areas can be educated with
 the quickest and safest routes to take in the event of an emergency.

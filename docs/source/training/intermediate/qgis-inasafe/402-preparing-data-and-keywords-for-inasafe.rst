@@ -1,7 +1,7 @@
 .. image:: /static/training/intermediate/qgis-inasafe/image7.*
 
-Module 2: Preparing Data and Keywords for InaSAFE
-=================================================
+Module 2: Preparing Data and Keywords for |project_name|
+========================================================
 
 **Learning Objectives**
 
@@ -10,11 +10,11 @@ Module 2: Preparing Data and Keywords for InaSAFE
 - Load data
 - Add keywords
 - Prepare hazard layer
-- Run InaSAFE
+- Run |project_name|
 
-Now you you know your way around QGIS and InaSAFE, let’s dive deeper.
+Now you you know your way around QGIS and |project_name|, let’s dive deeper.
 In this Module, you will see how to prepare your own data so that it can be
-processed in InaSAFE.
+processed in |project_name|.
 Much of what we cover in this Module you’ve already done, although we
 will go over some of it in more detail.
 We’ll be using the project created in this Module throughout the rest of the
@@ -22,21 +22,21 @@ unit, so be sure to save it along the way!
 
 **1. Review about Inputs**
 
-Let’s review the types of data used by InaSAFE.
+Let’s review the types of data used by |project_name|.
 
 **Hazards** are conditions, phenomenon, or human activity that potentially
 cause victims and destruction to society and environment.
 Frequently observed hazards are earthquakes, tsunamis, floods, landslides,
 and tornadoes.
 
-When we are working in InaSAFE, hazard data refers to a vector or raster
+When we are working in |project_name|, hazard data refers to a vector or raster
 dataset that represents the level and magnitude of an event that can
 potentially cause damages.
-To be used for impact calculation in InaSAFE, level and magnitude of
+To be used for impact calculation in |project_name|, level and magnitude of
 an event scenario must be mapped over the area of interest.
-This means that hazard data must be geographic - it must have location.  We
-have already looked at hazard data for the 2007 Jakarta Flood and the Lembang
-Earthquake.
+This means that hazard data must be geographic - it must have location.
+We have already looked at hazard data for the 2007 Jakarta Flood and the
+Lembang Earthquake.
 These hazard layers were produced from scientific modeling conducted by
 scientific organizations and government agencies.
 These are typical sources for such hazard data, although in cases of flood
@@ -60,15 +60,15 @@ The data is in the training folder *qgis/Sirahan/*.
 affected if a disaster scenario really happens.
 In this Module we will use building exposure data created in OpenStreetMap.
 
-The InaSAFE impact functions produce an output layer representing potential
-damages or losses on the affected exposure layer.
+The |project_name| impact functions produce an output layer representing
+potential damages or losses on the affected exposure layer.
 This output layer will be created once the impact calculation process is
 finished processing.
-InaSAFE has many impact functions available, which are listed through the
-'Impact Functions Doc' menu (see below). The impact calculation will only be
-possible when users provide the hazard and exposure layer data sets and,
-when necessary, users define the required parameters through the keyword
-editor correctly.
+|project_name| has many impact functions available, which are listed through
+the 'Impact Functions Doc' menu (see below).
+The impact calculation will only be possible when users provide the hazard
+and exposure layer datasets and, when necessary, users define the required
+parameters through the keyword editor correctly.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image27.*
    :align: center
@@ -80,7 +80,7 @@ according to a specific administrative boundary level.
 exposure.
 They are also used to define specific parameters to be considered,
 as we shall see.
-After you calculate the impact of a scenario with InaSAFE, what next?
+After you calculate the impact of a scenario with |project_name|, what next?
 Well, the impact calculation can be used to prepare a contingency plan.
 That's why relevant questions and remarks are displayed in the Result section,
 which may then be considered by disaster risk managers or planning managers.
@@ -103,6 +103,9 @@ from OSM.
 .. image:: /static/training/intermediate/qgis-inasafe/image28.*
   :align: center
 
+If you are a new user, create an account.
+If you already have an account with HOT, log in.
+
 The HOT Export website allows you to choose an area and create a data extract
 from that area.
 Then you can download the data in a variety of formats that are easily read
@@ -123,17 +126,17 @@ by QGIS.
    :align: center
 
 - Click the :guilabel:`Create Job` button.
-- You will be asked to define a presets file
-- this is like the presets that you added to JOSM in the previous unit,
-  except here, they define the attributes that InaSAFE will provide.  Choose
-  “preset file-INASAFE.”
+- You will be asked to define a presets file.
+- This is like the presets that you added to JOSM in the previous unit,
+  except here, they define the attributes that |project_name| will provide.
+- Choose "preset file-|project_name|."
 
 .. image:: /static/training/intermediate/qgis-inasafe/image31.*
    :align: center
 
 - Click the :guilabel:`Save` button.
-- Take a few breaths!  It may take a few minutes for the data extraction job to
-  process.
+- Take a few breaths!
+  It may take a few minutes for the data extraction job to process.
   When it is finished, the page will change and you will see a list of files
   you can download like this:
 
@@ -182,7 +185,7 @@ remain visible, go to :menuselection:`Settings > Project Properties` and
 **4. Adding Keywords**
 
 Since we’ll be using this buildings layer as our exposure, we need to set the
-keywords so that InaSAFE knows what the layer contains.
+keywords so that |project_name| knows what the layer contains.
 If you remember from Unit 2, this is done with the keywords editor.
 
 - Select the Bangunan_Sirahan layer in your Layers list and then click the
@@ -217,7 +220,7 @@ If you remember from Unit 2, this is done with the keywords editor.
    :align: center
 
 - Click :guilabel:`OK`.
-  You should see the layer appropriately loaded in the InaSAFE panel.
+  You should see the layer appropriately loaded in the |project_name| panel.
 
 **5. Preparing Hazard Layer**
 
@@ -236,28 +239,28 @@ layer.
 .. image:: /static/training/intermediate/qgis-inasafe/image41.*
    :align: center
 
-- You can see that this layer is already known to InaSAFE, so presumably it has
-  keywords already set.
-  Select the layer and open the keywords editor.
+- You can see that this layer is already known to |project_name|,
+  so presumably it has keywords already set.
+- Select the layer and open the keywords editor.
 - Notice that the subcategory is set to *flood [wet/dry]*
 
 .. image:: /static/training/intermediate/qgis-inasafe/image42.*
    :align: center
 
-- Because of the way that InaSAFE calculates this function, we need to make sure
-  that this exposure layer has a column in the attribute table that InaSAFE
-  expects, named “AFFECTED”
+- Because of the way that |project_name| calculates this function,
+  we need to make sure that this exposure layer has a column in the attribute
+  table that |project_name| expects, named "AFFECTED".
 - Click OK and then open the attribute table for the *area_terdampak_Sirahan*
   layer.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image43.*
    :align: center
 
-- We need to add some data to this layer so that QGIS can run the flood function
-  correctly.
+- We need to add some data to this layer so that QGIS can run the flood
+  function correctly.
   When QGIS runs the flood function, it checks every feature in the hazard
   layer to make sure that it is in fact a flood prone area.
-  Hence, each feature must have an attribute named AFFECTED.
+  Hence, each feature must have an attribute named "AFFECTED".
 - First, let’s add the new column to our layer.
 - Still in the attribute table, click the :guilabel:`Toggle Editing` button.
 
@@ -287,10 +290,10 @@ layer.
 .. image:: /static/training/intermediate/qgis-inasafe/image48.*
    :align: center
 
-**6. Run InaSAFE**
+**6. Run** |project_name|
 
 Everything is prepared now - our layers are loaded, the keywords are set, and
-we’ve ensured that they layers have the data that InaSAFE expects.
+we’ve ensured that they layers have the data that |project_name| expects.
 Time to click :guilabel:`Run`!
 
 .. image:: /static/training/intermediate/qgis-inasafe/image49.*

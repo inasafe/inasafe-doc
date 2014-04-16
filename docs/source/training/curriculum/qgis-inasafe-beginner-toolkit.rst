@@ -1,8 +1,8 @@
 Unit 2 Facilitator Guide
 ========================
 
-Beginner QGIS-InaSAFE Trainer's Toolkit - (A Guide for Facilitator)
--------------------------------------------------------------------
+Beginner QGIS-|project_name| Trainer's Toolkit - (A Guide for Facilitator)
+--------------------------------------------------------------------------
 
 BADAN NASIONAL PENANGGULANGAN BENCANA
 .....................................
@@ -12,22 +12,24 @@ BADAN NASIONAL PENANGGULANGAN BENCANA
 About Toolkit
 ^^^^^^^^^^^^^
 
-**Beginner QGIS-InaSAFE Toolkit** is designed to prepare facilitators to
-deliver training for QGIS and InaSAFE new user. The materials contained in
-it will prepare you to carry out training with a variety of audiences,
-including common problems and mistakes, as well as providing a variety of
-best methodologies for you to be able inviting new mappers.
+**Beginner QGIS-**|project_name|**Toolkit** is designed to prepare
+facilitators to deliver training for QGIS and |project_name| new user.
+The materials contained in it will prepare you to carry out training with a
+variety of audiences, including common problems and mistakes,
+as well as providing a variety of best methodologies for you to be able
+inviting new mappers.
 
-When planning a QGIS-InaSAFE training, there are some factors that need to
-be considered, including time, available resources, number of facilitators
-with their technical skills. This toolkit will help you to prepare a
-training for every type of audiences, but it will more focused on teaching
-for those who has limited capacity or experience using GIS software,
-making maps, and computer.
+When planning a QGIS-|project_name| training, there are some factors that
+need to be considered, including time, available resources,
+number of facilitators with their technical skills.
+This toolkit will help you to prepare a training for every type of audiences,
+but it will more focused on teaching for those who has limited capacity or
+experience using GIS software, making maps, and computer.
 
 The purpose of this toolkit is preparing you, as facilitators,
 to train participant in a workshop successfully in order to processing
-digital map with QGIS and analyzing hazard and exposure data with InaSAFE.
+digital map with QGIS and analyzing hazard and exposure data with
+|project_name|.
 
 Workshop Objective
 ^^^^^^^^^^^^^^^^^^
@@ -37,12 +39,12 @@ competences as follows.
 *Standard Competency*
 *********************
 Managing spatial data using QGIS and analyzing disaster impact scenario
-using InaSAFE.
+using |project_name|.
 
 *Basic Competency*
 ******************
 1. Using GIS to develop scenario for contingency planning
-2. Explaining the benefit of QGIS and InaSAFE for developing realistic
+2. Explaining the benefit of QGIS and |project_name| for developing realistic
    scenario for contingency planning
 3. Installing QGIS and explaining QGIS user interface
 4. Using QGIS plugins
@@ -53,14 +55,14 @@ using InaSAFE.
 9. Creating and editing new vector layer
 10. Analyzing vector data to solve problem
 11. Creating maps with Map Composer
-12. Using InaSAFE
-13. Keeping interaction and communication to support QGIS and InaSAFE in
+12. Using |project_name|
+13. Keeping interaction and communication to support QGIS and |project_name| in
     Indonesia
 
 Workshop Material
 ^^^^^^^^^^^^^^^^^
 1. Using GIS to Develop Scenario for Contingency Planning
-2. QGIS and InaSAFE for Contingency Planning
+2. QGIS and |project_name| for Contingency Planning
 3. QGIS Installation and QGIS User Interface Layout
 4. QGIS Plugin
 5. Projection System and Transformation
@@ -70,23 +72,27 @@ Workshop Material
 9. Creating New Vector Data
 10. Vector Analysis
 11. Layouting a Map with Map Composer
-12. Working with InaSAFE
-13. Social Media to Keep QGIS and InaSAFE User Interaction
+12. Working with |project_name|
+13. Social Media to Keep QGIS and |project_name| User Interaction
 
 Workshop Strategy
 ^^^^^^^^^^^^^^^^^
 1. The method used is participatory methods, with emphasis on the full
    participation of the participants in the training process, not a lecture.
-2. Centered on the participants. Participants are encouraged to search,
-   find and acquire knowledge / skills required independently.
-3. Presenters serves as a facilitator. Presenters only facilitate the ideas
-   come from many directions not just from the presenter. In times of need,
-   presenter should be able to provide a quality reinforcement.
-4. Outcome-oriented. Training should produce outcomes that have been mentioned.
+2. Centered on the participants.
+   Participants are encouraged to search, find and acquire knowledge / skills
+   required independently.
+3. Presenters serves as a facilitator.
+   Presenters only facilitate the ideas come from many directions not just
+   from the presenter.
+   In times of need, presenter should be able to provide a quality
+   reinforcement.
+4. Outcome-oriented.
+   Training should produce outcomes that have been mentioned.
 
 Tools
 ^^^^^
-1. Copy of Data Analysis Using QGIS and InaSAFE Beginner's Guide for
+1. Copy of Data Analysis Using QGIS and |project_name| Beginner's Guide for
    participant
 2. An indoor place or room with tables and seats
 3. Some computer unit (ideally one computer is maximumly use for two persons,
@@ -100,9 +106,9 @@ Tools
 Schedule
 ^^^^^^^^
 Below is an outline for a five-day workshop schedule which has been tested by
-several different groups in several regions in Indonesia. It is possible for
-you to give variety of changes that might be more useful depending on the
-various factors that have been discussed previously.
+several different groups in several regions in Indonesia.
+It is possible for you to give variety of changes that might be more useful
+depending on the various factors that have been discussed previously.
 
 Day I:
 ******
@@ -288,25 +294,25 @@ Activities
 
 **Session 2**
 ^^^^^^^^^^^^^
-QGIS and InaSAFE for Contingency Planning
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+QGIS and |project_name| for Contingency Planning
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 45 minutes
 
 Basic Competency
 ****************
-2. Explaining the benefit of QGIS and InaSAFE for developing realistic
+2. Explaining the benefit of QGIS and |project_name| for developing realistic
    scenario for contingency planning
 
 Indicator
 *********
 1. Explaining GIS to prepare contingency planning
 2. Explaining the importance of data
-3. Explaining benefit of QGIS/InaSAFE for scenario development for
+3. Explaining benefit of QGIS/|project_name| for scenario development for
    contingency planning
 
 Outcome
 *******
-QGIS and InaSAFE are used to support development of contingency planning
+QGIS and |project_name| are used to support development of contingency planning
 
 Core Material
 *************
@@ -314,7 +320,7 @@ Core Material
 
 1. GIS for Preparing contingency Planning
 2. The Importance of Data
-3. QGIS and InaSAFE
+3. QGIS and |project_name|
 
 Activities
 **********
@@ -423,8 +429,8 @@ Activities
 Common Problem
 **************
 In this session, it is possible that some computer/laptop can't install QGIS,
- one of the common problem is sqlite problem shows up when QGIS opened. You
- can solve this problem by copying sqlite file from another computer/laptop
+ one of the common problem is sqlite problem shows up when QGIS opened.
+ You can solve this problem by copying sqlite file from another computer/laptop
  that has QGIS successfully running.
 
 
@@ -493,15 +499,17 @@ Common Problem
 **How if the plugin is failed during installation?**
 
 This can be caused by internet connection, internet connection is needed
-during plugin installation especially if the plugin file is big like InaSAFE
-. The trouble can be tackle by preparing the plugin file in a flash drive.
+during plugin installation especially if the plugin file is big like
+|project_name|.
+The trouble can be tackle by preparing the plugin file in a flash drive.
 Then copy the plugin to C:\Users\Computer\.qgis\python\plugins folder.
 
 **How if Fetch Python Plugin - Plugin menu is not available?**
 
 This problem can be solve by opening setting from *fetch python plugin*
-option menu. You have to tick *check for updates* on startup which should
-add list of new plugin automatically.
+option menu.
+You have to tick *check for updates* on startup which should add list of new
+plugin automatically.
 
 
 **Session 5**
@@ -576,7 +584,7 @@ Activities
 Common Problem
 **************
 If during training the Internet network is inadequate,
-You should have prepared a *OpenLayer* plugin in a flash disk and shared to
+you should have prepared a *OpenLayer* plugin in a flash disk and shared to
 the participants moved to the plugin folder in the folder QGIS.
 
 
@@ -669,15 +677,17 @@ FAQ (Frequently Asked Question)
 **When adding vector data, why my vector data do not show up in the folder?**
 
 Sometimes participants are still difficult to distinguish between button to
-open the vector data and raster data (because both are adjacent). Make sure
-again whether participants have clicked the correct button.
+open the vector data and raster data (because both are adjacent).
+Make sure again whether participants have clicked the correct button.
 
-**When adding vector data, why there are some data that does not appear on the QGIS display?**
+**When adding vector data, why there are some data that does not appear on**
+**the QGIS display?**
 
 Check back order of the data layer, the polygon should be at the bottom,
 followed by the line, then the point at the top.
 
-**When identifying vector data attribute with identifier, why the attribute window does not appear after on-click?**
+**When identifying vector data attribute with identifier,**
+**why the attribute window does not appear after on-click?**
 
 Check back, before clicking on a point, line, or polygon,
 make sure vector data layer is selected in the list before.
@@ -836,19 +846,20 @@ FAQ (Frequently Asked Question)
 
 **How to get raster data?**
 
-Raster data can be obtained depending to needs. If you need raster data such
-as SRTM can be downloaded at http://dwtkns.com/srtm/ and for raster data
-associated with the data for earthquakes can be obtained from
-http://earthquake.usgs.gov/earthquakes/shakemap/list.php. Can also be
-obtained from the relevant agencies to the needs of the raster data.
+Raster data can be obtained depending to needs.
+If you need raster data such as SRTM can be downloaded at
+http://dwtkns.com/srtm/ and for raster data associated with the data for
+earthquakes can be obtained from
+http://earthquake.usgs.gov/earthquakes/shakemap/list.php.
+Can also be obtained from the relevant agencies to the needs of the raster
+data.
 
 **How to use raster data as needed?**
 
-This is related to resolution. If you want to use raster data for mapping
-building or digitizing like Bing, it will be better to use raster data that
-has a resolution of 0.5 to 1 meter. If you want land use can be mapped using
-Landsat imagery.
-
+This is related to resolution.
+If you want to use raster data for mapping building or digitizing like Bing,
+it will be better to use raster data that has a resolution of 0.5 to 1 meter.
+If you want land use can be mapped using Landsat imagery.
 
 **Session 9**
 ^^^^^^^^^^^^^
@@ -864,8 +875,9 @@ Indicator
 *********
 1. Adding raster layer as a data source for digitize
 2. Creating new vector feature (polygon, line, point)
-3. Digitizing new vector layer by copying raster layer and consider the topology
-4. Doing georeference
+3. Digitizing new vector layer by copying raster layer and consider the
+   topology
+4. Doing georeferencing
 
 Outcome
 *******
@@ -1044,17 +1056,16 @@ FAQ (Frequently Asked Question)
 
 **Why is my buffer result looks bigger than the one shown in the example?**
 
-This happens because of the projection. The projection used for the data
-that are going to be buffered is not in Projection (Universal Transverse
-Mercator) system so the buffer input (in meter) could not be applied to the
-data that are going to be analyzed and resulting to the buffer that looked
-big.
+This happens because of the projection.
+The projection used for the data that are going to be buffered is not in
+Projection (Universal Transverse Mercator) system so the buffer input (in
+meter) could not be applied to the data that are going to be analyzed and
+resulting to the buffer that looked big.
 
 **Why is the query builder result doesnt show up?**
 
-This is because missed input into the query builder. Watch carefully what you
-are inputting into the query builder.
-
+This is because missed input into the query builder.
+Watch carefully what you are inputting into the query builder.
 
 **Session 11**
 ^^^^^^^^^^^^^^
@@ -1151,13 +1162,13 @@ Activities
 FAQ (Frequently Asked Question)
 *******************************
 
-**In the x and y intervals in the grid, I put the right number as explained, but why does the grid not showing up?**
+**In the x and y intervals in the grid, I put the right number as explained,**
+**but why does the grid not showing up?**
 
 This is because the projection system is still using geographic projection
-system WGS 82) that is in decimal degree. To make the x and y intervals,
-it is better to use the mercator projection system so the intervals will be
-in meter.
-
+system WGS 82) that is in decimal degree.
+To make the x and y intervals, it is better to use the mercator projection
+system so the intervals will be in meter.
 
 **Session 12**
 ^^^^^^^^^^^^^^
@@ -1167,35 +1178,35 @@ Time : 4 hours 30 minutes
 
 Basic Competency
 ****************
-12. Using InaSAFE
+12. Using |project_name|
 
 Indicator
 *********
 1. Explaining the concept of Hazard, Exposure, and Impact data
 2. Explaining how to get Impact
-3. Explaining InaSAFE interface
+3. Explaining |project_name| interface
 4. Adding hazard data
 5. Adding unprocessed exposure data (vector and raster)
 6. Using keywords editor
 7. Analyzing Impact
-8. Improving InaSAFE Output Map
+8. Improving |project_name| Output Map
 9. Saving and Printing scenario result
 
 Outcome
 *******
-InaSAFE map is ready to print/saved.
+|project_name| map is ready to print/saved.
 
 Core Material
 *************
 **Working with InaSAFE**
 
 1. Hazard, Exposure, Impact
-2. InaSAFE Interface
+2. |project_name| Interface
 3. Adding hazard data
 4. Adding exposure data
 5. Adding keyword in Metadata
 6. Impact Analysis
-7. Improving InaSAFE maps output
+7. Improving |project_name| maps output
 8. Using Print button
 9. Saving your work
 
@@ -1279,9 +1290,10 @@ Activities
 FAQ (Frequently Asked Question)
 *******************************
 
-Sometimes the results from InaSAFE analysis are different from one to another
-. This is because of the zoom level, so InaSAFE only processing the area seen
-on the window/map.
+Sometimes the results from |project_name| analysis are different from one to
+another.
+This is because of the zoom level, so |project_name| only processing the area
+seen on the window/map.
 
 
 **Session 13**
@@ -1292,7 +1304,8 @@ Time : 60 minutes
 
 Basic Competency
 ****************
-13. Keeping interaction to maintain analysis data network using QGIS/InaSAFE
+13. Keeping interaction to maintain analysis data network using
+    QGIS/|project_name|
 
 Indicator
 *********
@@ -1301,7 +1314,8 @@ Indicator
 
 Outcome
 *******
-The participants joined into Forum Pengguna QGIS and InaSAFE in social media.
+The participants joined into Forum Pengguna QGIS and |project_name| in
+social media.
 
 Core Material
 *************
