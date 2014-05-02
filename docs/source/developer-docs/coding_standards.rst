@@ -302,7 +302,7 @@ Strings and internationalisation
     world = 'World'
     foo = 'Hello ' + world
 
-And this is good:
+And this is good::
 
     world = 'World'
     food = 'Hello %s' % world
