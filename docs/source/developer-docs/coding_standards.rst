@@ -98,7 +98,7 @@ avoided. Here is an example of what we mean by this. Bad::
 Good::
 
     current_depth = 0
-    content_of_page = 'foo'  # overly verbose
+    page_content = 'foo'
 
 
 Avoid 'yoda speak' in variable names. Bad::
