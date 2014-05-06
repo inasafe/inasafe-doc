@@ -338,7 +338,7 @@ Strings and internationalisation
     world = 'World'
     foo = 'Hello ' + world
 
-And this is good:
+And this is good::
 
     world = 'World'
     food = 'Hello %s' % world
@@ -503,8 +503,7 @@ underscore names. For this reason we adopt the following strategy:
 Human Interface Guidelines
 ---------------------------
 
-For consistency of user experience, the user interfaces created in Risk
-in a Box should adhere to the QGIS Human Interface Guidelines (HIG) which
+For consistency of user experience, the user interfaces should adhere to the QGIS Human Interface Guidelines (HIG) which
 are listed here for your convenience:
 
 + Group related elements using group boxes:
