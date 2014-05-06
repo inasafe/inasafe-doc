@@ -72,7 +72,7 @@ Logging in loops
    Please be considerate when logging into loops as this can slow execution a
    lot.
    We had a spatial analysis loop with two logged messages and it took 15sec
-   for 1000 itterations, removing logging brought it to 5sec.
+   for 1000 iterations, removing logging brought it to 5sec.
    In another case, using 2700 aggregation units resulted in |project_name|
    blocking due to one single logging call.
    The issue is *probably* the refreshing of class QgsMessageLogViewer
