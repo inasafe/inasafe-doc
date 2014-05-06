@@ -164,8 +164,8 @@ Ordering of imports
 
 When importing please adhere to the following rules:
 
-Do not do ``*`` imports e.g. ``from PyQt4.QtGui import *`` is bad. Either
-import the individual modules you need e.g.
+Do not do ``*`` imports e.g. ``from PyQt4.QtGui import *`` is bad.
+Either import the individual modules you need e.g.
 ``from PyQt4.QtGui import QProgressDialog`` or import the whole package and
 use the namespace to reference a module e.g.::
 
@@ -182,16 +182,18 @@ Imports should be made in the following order:
 InaSAFE specific notes
 .........................
 
-* We have two main packages: ``safe`` and ``safe_qgis``. The latter is a client
-of the former. For this reason you should **never**  import ``safe_qgis`` from
-``safe`` because you will create a circular import.
+* We have two main packages: ``safe`` and ``safe_qgis``.
+  The latter is a client of the former.
+  For this reason you should **never**  import ``safe_qgis`` from
+  ``safe`` because you will create a circular import.
 
 * When using ``safe`` from ``safe_qgis``, always access the API via
-``safe.api``, never import functions directly from elsewhere in the package.
-The ``api`` module provides a layer of abstraction, allowing us to move things
-around in safe without breaking any third party code that may depend on the
-API. Put another way, you can consider the ``safe.api`` to be stable in a minor
-release, but the rest of the package is subject to change.
+  ``safe.api``, never import functions directly from elsewhere in the package.
+  The ``api`` module provides a layer of abstraction, allowing us to move things
+  around in safe without breaking any third party code that may depend on the
+  API.
+  Put another way, you can consider the ``safe.api`` to be stable in a minor
+  release, but the rest of the package is subject to change.
 
 .. _doc-strings-label:
 
