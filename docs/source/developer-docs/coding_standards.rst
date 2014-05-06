@@ -157,6 +157,42 @@ in your code as you manage line breaks as you run up to the 80 column limit. By
 always pulling code left as much as possible, we reduce the amount of line
 continuation management we have to do.
 
+.. _imports_ordering-label:
+
+Ordering of imports
+-------------------
+
+When importing please adhere to the following rules:
+
+Do not do ``*`` imports e.g. ``from PyQt4.QtGui import *`` is bad. Either
+import the individual modules you need e.g.
+``from PyQt4.QtGui import QProgressDialog`` or import the whole package and
+use the namespace to reference a module e.g.::
+
+    from PyQt4 import QtGui
+
+    progress = QtGui.QProgressDialog()
+
+Imports should be made in the following order:
+
+* core python imports (e.g. ``import os``)
+* third party imports (e.g. ``from PyQt4 import QtGui``)
+* application imports (e.g. ``from foo import bar``)
+
+InaSAFE specific notes
+.........................
+
+* We have two main packages: ``safe`` and ``safe_qgis``. The latter is a client
+of the former. For this reason you should **never**  import ``safe_qgis`` from
+``safe`` because you will create a circular import.
+
+* When using ``safe`` from ``safe_qgis``, always access the API via
+``safe.api``, never import functions directly from elsewhere in the package.
+The ``api`` module provides a layer of abstraction, allowing us to move things
+around in safe without breaking any third party code that may depend on the
+API. Put another way, you can consider the ``safe.api`` to be stable in a minor
+release, but the rest of the package is subject to change.
+
 .. _doc-strings-label:
 
 Doc strings and comments
@@ -365,15 +401,38 @@ authorship and version metadata as shown in the exampled below.
 Qt Guidelines
 .............
 
+Compile UI files at run time. There is no need to precompile UI files using
+pyuic4. Rather you can dynamically compile them using this technique (see
+technical docs
+`here <http://pyqt.sourceforge.net/Docs/PyQt4/designer.html#the-uic-module>`_ ::
+
+    import os
+    from PyQt4 import QtGui, uic
+
+    BASE_CLASS = uic.loadUiType(os.path.join(
+        os.path.dirname(__file__), 'foo_dialog_base.ui'))[0]
+
+
+    class FooDialog(QtGui.QDialog, BASE_CLASS):
+        """Dialog for defining the plugin properties.
+
+        """
+        def __init__(self, parent=None):
+            """Constructor."""
+            super(FooDialog, self).__init__(parent)
+            # Set up the user interface from Designer.
+            self.setupUi(self)
+
+
 Don't use old style signal/slot connectors::
 
-    myButton = self.pbnHelp
+    button = self.help_button
     QtCore.QObject.connect(
-        myButton, QtCore.SIGNAL('clicked()'), self.show_help)
+        help_button, QtCore.SIGNAL('clicked()'), self.show_help)
 
 Use new style connectors::
 
-    self.pbnHelp.clicked.connect(self.show_help)
+    self.help_button.clicked.connect(self.show_help)
 
 
 Use multi-inheritance for designer based classes so that we can use autoconnect
@@ -408,13 +467,13 @@ Note that in some cases you need to explicitly specify which signature is being
 listened for by using the pyqtSignature decorator.::
 
     @pyqtSignature('int')
-    def on_cboPolygonLayers_currentIndexChanged(self, theIndex=None):
+    def on_polygon_layers_combo_currentIndexChanged(self, theIndex=None):
         """Automatic slot executed when the layer is changed to update fields.
 
         :param theIndex: Passed by the signal that triggers this slot.
         :type theIndex: int
         """
-        layerId = self.cboPolygonLayers.itemData(
+        layerId = self.polygon_layers_combo.itemData(
             theIndex, QtCore.Qt.UserRole)
         return layer_id
 
