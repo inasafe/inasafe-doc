@@ -3,7 +3,6 @@
 RFC Section
 ===========
 
-Add some RFC here
 Additional useful links for developers:
 
 * GitHub site for |project_name| : https://github.com/AIFDR/inasafe/
