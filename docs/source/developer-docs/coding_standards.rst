@@ -406,7 +406,7 @@ Qt Guidelines
 Compile UI files at run time. There is no need to precompile UI files using
 pyuic4. Rather you can dynamically compile them using this technique (see
 technical docs
-`here <http://pyqt.sourceforge.net/Docs/PyQt4/designer.html#the-uic-module>`_ ::
+`here <http://pyqt.sourceforge.net/Docs/PyQt4/designer.html#the-uic-module>`_) ::
 
     import os
     from PyQt4 import QtGui, uic
@@ -428,9 +428,8 @@ technical docs
 
 Don't use old style signal/slot connectors::
 
-    button = self.help_button
     QtCore.QObject.connect(
-        help_button, QtCore.SIGNAL('clicked()'), self.show_help)
+        self.help_button, QtCore.SIGNAL('clicked()'), self.show_help)
 
 Use new style connectors::
 
