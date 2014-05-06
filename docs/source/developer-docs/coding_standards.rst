@@ -37,7 +37,7 @@ Please observe the following coding standards when working on the codebase:
 * Code must pass a pylint validation
   (http://www.logilab.org/card/pylint_manual#what-is-pylint). You can test
   this using the make target ``make pylint``. In some cases you may wish to
-  override a line or group of lines so that they are not validated by lint.
+  override a line or group of lines so that they are not validated by pylint.
   You can do this by adding either::
 
      import foo  # pylint: disable=W1203
