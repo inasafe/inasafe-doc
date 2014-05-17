@@ -141,6 +141,9 @@ They are:
                  For more information about keywords please refer to
                  :ref:`keywords_system` and refer to the examples below.
 
+.. note:: The requires parameters will be deprecated soon in favour of
+   the new metadata system described below.
+
 Following the docstring is a collection of variables that define and document
 the impact function. They are
 
@@ -159,6 +162,120 @@ of documentation of this impact function.
 They are ``synopsis``, ``actions``, ``detailed_description``,
 ``hazard_input``, ``exposure_input`` and ``limitation``.
 See examples below for more possible usages.
+
+Metadata inner class
+--------------------
+
+.. versionadded:: 2.1
+
+The ``metadata`` inner class is a more comprehensive replacement for the
+``requires`` parameter described above. The ``requires`` parameter does not
+provide a rich enough representation of the requirements and constraints
+implicit in each impact function. The metadata inner class should always
+have a static method ``get_metadata`` which will return a dictionary of key
+value pairs describing the capabilities of the impact function. You should
+implement this inner class for every impact function you write and take care
+to adequately describe your impact function using this method. It is perhaps
+best to start with an example::
+
+    class Metadata(ImpactFunctionMetadata):
+        """Metadata for Earthquake Building Impact Function.
+
+        .. versionadded:: 2.1
+
+        We only need to re-implement get_metadata(), all other behaviours
+        are inherited from the abstract base class.
+        """
+
+        @staticmethod
+        def get_metadata():
+            """Return metadata as a dictionary.
+
+            This is a static method. You can use it to get the metadata in
+            dictionary format for an impact function.
+
+            :returns: A dictionary representing all the metadata for the
+                concrete impact function.
+            :rtype: dict
+            """
+            dict_meta = {
+                'id': 'EarthQuakeBuildingImpactFunction',
+                'name': tr('Earthquake Building Impact Function'),
+                'impact': tr('Be affected'),
+                'author': 'N/A',
+                'date_implemented': 'N/A',
+                'overview': tr(
+                    'This impact function will calculate the impact of an '
+                    'earthquake on buildings, reporting how many are expected '
+                    'to be damaged etc.'),
+                'categories': {
+                    'hazard': {
+                        'definition': hazard_definition,
+                        'subcategory': hazard_earthquake,
+                        'units': [unit_mmi],
+                        'layer_constraints': [
+                            layer_vector_polygon,
+                            layer_raster_numeric
+                        ]
+                    },
+                    'exposure': {
+                        'definition': exposure_definition,
+                        'subcategory': exposure_structure,
+                        'units': [
+                            unit_building_type_type,
+                            unit_building_generic],
+                        'layer_constraints': [
+                            layer_vector_polygon,
+                            layer_vector_point
+                        ]
+                    }
+                }
+            }
+            return dict_meta
+
+Note that for convenience there is a module ``metadata.py`` that has
+predefined definitions for many commonly used terms and concepts, we recommend
+perusing and augmenting this file where possible rather than hard coding
+terms in the metadata dictionary. You can incoporate the metadata terms easily
+by importing the metadata module::
+
+    from safe.impact_functions.impact_function_metadata import (
+        ImpactFunctionMetadata)
+
+
+The following concepts should be defined in the metadata inner class:
+
+:id: A unique identifier for the impact function. Typically the name of the
+    impact function with no spaces and in camel case.
+:name: A user friendly name for the impact function.
+:impact: A short phrase describing what the impact would be to individuals or
+    infrastructure exposed to the hazard. e.g. 'be flooded'.
+:author: Name of the software developer who wrote the impact function.
+:date_implemented: Date on which the impact function was implemented.
+:overview: A description of what the impact function does.
+:categories: This is a dictionary that describes the supported hazard and
+    exposure categories for this impact function.
+
+Each category (hazard or exposure) should have a set of well defined terms:
+
+:definition: A short name for the hazard or exposure type.
+:subcategory: In the case of hazard, this defined which type of hazard this
+    impact function deals with (e.g. flood). In the case of exposure
+    subcategory defines what will be affected by this hazard (e.g. buildings).
+:units: A list of the units supported for this impact function e.g. mmi, m etc.
+:layer_constraints: This is a list of the GIS datatypes that are supported for
+    the category. E.g. raster layer.
+
+.. note:: We intend to extend this metadata structure in the future to
+    support a richer set of descriptive information.
+
+Please consult the existing impact functions for further examples of the
+metadata.
+
+As of version 2.1 these metadata are only used for the keywords wizard. In
+future versions, they keywords will be used more pervasively throughout InaSAFE
+and the ``requires`` parameter described further up in this document will be
+deprecated.
 
 Impact function method
 ......................
