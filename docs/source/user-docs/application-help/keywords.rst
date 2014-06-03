@@ -6,6 +6,10 @@ Keywords System
 This document describes the purpose and usage of the |project_name| *keywords*
 system.
 
+.. seealso:: Please also refer to the documentation on
+    :ref:`the keywords Wizards <keywords_wizard>`.
+
+
 Purpose
 -------
 
@@ -65,6 +69,7 @@ Category should be written in lower case.
    ========  ==============
    category  hazard
    category  exposure
+   category  aggregation
    ========  ==============
 
 Example keywords file entry
@@ -86,7 +91,8 @@ Valid subcategories for category 'hazard':
    ===========  ==============
    subcategory  tsunami
    subcategory  flood
-   subcategory  tephra
+   subcategory  volcano
+   subcategory  earthquake
    ===========  ==============
 
 Where tephra is volcanic ashfall.
@@ -99,7 +105,8 @@ Valid subcategories for category 'exposure':
    Key       Allowed Values
    ========  ==============
    exposure  population
-   exposure  building
+   exposure  structure
+   exposure  road
    ========  ==============
 
 Example keywords file entry
@@ -111,15 +118,26 @@ Example keywords file entry
 Units
 .....
 
-The units keyword is only valid in the context of 'hazard' layers, and is
-used to indicate the metric or imperial units represented by each data entity
-(a grid cell or a vector feature) in the hazard layer.
-Example keywords file entry
-::
+The units keyword is used to indicate the metric or imperial units represented
+by each data entity (a grid cell or a vector feature) in a layer.
+
+Example keywords file entry:
+
+   ========  ================================  =======================
+   Key       Allowed Values (pre InaSAFE 2.1)  Allowed Values (>= 2.1)
+   ========  ================================  =======================
+   units     m                                 metres_depth
+   units
+   exposure  road
+   hazard
+   ========  ================================  =======================
 
   category: hazard
   subcategory: flood
   units: m
+
+
+
 
 In the above case there is a soft constraint to use a value for units of m,
 feet or wet/dry as defined by the table below because the subcategory is
@@ -166,22 +184,38 @@ the kilograms per meters squared of ash fall on that cell.
 
 Datatype
 ........
-The datatype keyword is specific to exposure layers and represents the datatype
-of people, infrastructure etc. within a given area.
 
-Valid densities for different subcategories
+The data type keyword indicate what kind of geospatial data is represented
+(Numeric, Polygon, Line, Point).
 
-.. table::
 
-   ===========  ========  ==============
-   Subcategory  Key       Allowed Values
-   ===========  ========  ==============
-   population   datatype  count
-   population   datatype  density
-   building     datatype  osm
-   building     datatype  sigab
-   building     datatype  other
-   ===========  ========  ==============
+Impact Function,Category,Sub Category,Layer Type,Data Type,Units
+-----------------------------------------------------------------
+Categorised Hazard Population Impact Function,Hazard,All,Raster,Numeric,Normalised
+Earthquake Building Impact Function,Hazard,Earthquake,"Raster, Vector","Numeric, Polygon",MMI
+ITB Fatality Function,Hazard,Earthquake,Raster,Numeric,MMI
+PAG Fatality Function,Hazard,Earthquake,Raster,Numeric,MMI
+Flood Building Impact Function,Hazard,"Flood, Tsunami","Raster, Vector","Numeric, Polygon","Metres, Wet/Dry, Feet"
+Flood Evacuation Function,Hazard,"Flood, Tsunami",Raster,Numeric,Metres
+Flood Evacuation Function Vector Hazard,Hazard,"Flood, Tsunami",Vector,Polygon,Wet/Dry
+Flood Native Polygon Experimental Function,Hazard,"Flood, Tsunami",Vector,Polygon,Wet/Dry
+Flood Raster Roads Experimental Function,Hazard,"Flood, Tsunami",Raster,Numeric,"Metres, Feet"
+Flood Vector Roads Experimental Function,Hazard,"Flood, Tsunami",Vector,Polygon,Wet/Dry
+Categorised Hazard Population Impact Function,Exposure,Population,Raster,Numeric,People per pixel
+Flood Evacuation Function,Exposure,Population,Raster,Numeric,People per pixel
+Flood Evacuation Function Vector Hazard,Exposure,Population,Raster,Numeric,People per pixel
+ITB Fatality Function,Exposure,Population,Raster,Numeric,People per pixel
+PAG Fatality Function,Exposure,Population,Raster,Numeric,People per pixel
+Volcano Polygon Hazard Population,Exposure,Population,Raster,Numeric,People per pixel
+Flood Raster Roads Experimental Function,Exposure,Road,Vector,Line,Road Type
+Flood Vector Roads Experimental Function,Exposure,Road,Vector,Line,Road Type
+Earthquake Building Impact Function,Exposure,Structure,Vector,Polygon,Building Type
+Flood Building Impact Function,Exposure,Structure,Vector,Polygon,Building Type
+Flood Native Polygon Experimental Function,Exposure,Structure,Vector,Polygon,Building Type
+Volcano Building Impact,Exposure,Structure,Vector,Polygon,Building Type
+Volcano Building Impact,Hazard,Volcano,Vector,"Polygon, Point",Low/Medium/High
+Volcano Polygon Hazard Population,Hazard,Volcano,Vector,"Polygon, Point",Low/Medium/High
+
 
 Assumptions
 -----------
@@ -214,8 +248,15 @@ Translations
 Although |project_name| is available in different languages, the 'key' in the
 keywords files should always be written in english.
 
+.. _keywords_editor:
+
 The keywords editor graphical user interface
 --------------------------------------------
+
+.. note:: If you are a new user, you should probably use the
+    :ref:`Keywords Wizard <keywords_wizard>` in preference to the keywords
+    editor as it provides more hand holding and you are less likely to
+    specify invalid keywords.
 
 The graphical user interface for keyword editing is divided into two parts:
 
