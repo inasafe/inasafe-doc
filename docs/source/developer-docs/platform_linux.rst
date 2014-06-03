@@ -46,8 +46,8 @@ dependencies and try to do a manual install.
 2. Setting up the fabric/fabgis way
 ...................................
 
-There is an much easier and more advanced way to control the setup of the
-environment. If is done with `Fabric <http://fabfile.org>`_.
+There is a much easier and more advanced way to control the setup of the
+environment. It is done with `Fabric <http://fabfile.org>`_.
 
 Obviously you need to have fabric installed. Fabric itself is Python based
 and you can install it with pip. If you don't have pip installed you should
