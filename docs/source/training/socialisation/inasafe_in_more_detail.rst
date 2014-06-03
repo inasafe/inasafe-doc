@@ -203,7 +203,9 @@ Now we are going to stylise the subvillage administration boundary to only
 see the affected = 1 areas.
 
 19. :guilabel:`Double click` on *flood_osm_bpbd18113_jakarta* layers - this
-    will open up the properties table
+    will open up the properties table. The flood_osm_bpbd18113_jakarta layer
+    is inside the
+    http://data.inasafe.org/TrainingDataPackages/InaSAFEv2.0.zip package.
 
 20. Navigate to the style tab
 

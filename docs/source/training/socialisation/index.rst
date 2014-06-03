@@ -11,8 +11,7 @@ of doing.
 The course is scheduled to only run for 1/2 day.
 
 The data used in this course is available for download in English on
-`data.inasafe.org <http://data.inasafe.org/InaSAFE_Resources/Scenario
-Package Data/InaSAFE Project.zip>`_
+`data.inasafe.org <http://data.inasafe.org/>`_
 
 .. toctree::
    :maxdepth: 1
