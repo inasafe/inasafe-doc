@@ -15,37 +15,34 @@ Branching guide
    :align:   center
 
 
-*New development* takes place in *master*. Master should always be maintained
-in a usable state with tests passing and the code functional as far as possible
-such that we can create a new release from master at short notice.
+*New development* takes place in *develop*. Master should always be maintained
+in a usable state with tests passing and the code functional so that we can
+create a new release from master at short notice.
 
-*Releases* should take place in long lived branches named after the minor
-version number (we follow the `semantic versioning scheme <http://semver.org/>`_)
-so for example the first release would be version 0.1 and would be in a
-branch from master called *release_0-1*.
+*Releases* are tags on the master branch and named according the the version
+number (we follow the `semantic versioning scheme <http://semver.org/>`_).
+So for example the first release would be version 0.1.0 and would be a tag
+called *release-0_1_0*.
 
-After the minor release branch is made, the *point releases (patch)* are
-created as tags off that branch. For example the release flow for version 0.1
-.0  would be:
+After the release, **no** development should take place in master. If a fix
+needs to be made against master, a short lived branch should be made in the
+developer's personal fork of the repository and then a GitHub Pull Request
+issued requesting to merge that fix into master. Such fixes should always also
+be applied to develop unless the development branch has diverged sufficiently
+in order to render the hot fix obselete.
 
-* branch release_0.1 from master
-* apply any final polishing the the release_0-1 branch
-* when we are ready to release, tag the branch as release_0-1-0
-* create packages from a checkout of the tag
+All development can also be carried out in independent forks of the
+|project_name| repository and then merged into develop when they are ready via
+a pull request or patch. The general workflow for working with git should be as
+follows:
 
-After the release, development should take place in master. Additional short
-lived branches can be made off master while new features are worked on,
-and then merged into master when they are ready.
+.. figure:: /static/general-workflow.png
+   :align:   center
 
-Optionally, development can also be carried out in independent forks of the
-|project_name| repository and then merged into master when they are ready via
-a pull request or patch.
-
-Commits to master that constitute bug fixes to existing features should be
-backported to the current release branch using the :samp:`git cherry-pick`
-command. Alternatively, if a fix is made in the release branch,
-the changeset should be applied to master where appropriate in order to
-ensure that master includes all bug fixes from the release branches.
+Please see the `gitflow web site <http://nvie.com/posts/a-successful-git-branching-model/>`_
+for more in-depth discussion of how gitflow works. Also see
+`RFC #821 <https://github.com/AIFDR/inasafe/issues/821>`_ where the rationale
+for using gitflow is discussed in more detail.
 
 Process for developers adding a new feature
 -------------------------------------------
@@ -65,19 +62,11 @@ Publish (if unfinished)::
 To keep branch up to date::
 
     git checkout <featurebranch>
-    git merge origin master
+    git merge origin develop
     (possibly resolve conflict and verify test suite runs)
     git push origin <featurebranch>
 
-When all tests pass, either merge into master::
-
-    git checkout master
-    git merge --no-ff <featurebranch>
-    (possibly resolve conflict and verify test suite runs)
-    git push origin master
-
-Or issue a pull request through github
-    ..
+When all tests pass, issue a pull request through github.
 
 To delete when branch is no longer needed (though it is preferable to do
 such work in a fork of the official repo).
@@ -85,7 +74,7 @@ such work in a fork of the official repo).
 
     git push origin :<featurebranch>
 
-Process for checking out the release branch and applying a fix:
+Process for checking out the develop branch and applying a fix:
 ---------------------------------------------------------------
 
 Create a local
@@ -93,20 +82,15 @@ Create a local
 ::
 
    git fetch
-   git branch --track release-0_1 origin/release-0_1
-   git checkout release-0_1
+   git branch --track develop origin/develop
+   git checkout inasafe-issue-553
 
-Now apply your fix, test and commit::
+553 being the issue number you are fixing. Now apply your fix, test and commit::
 
    git commit -m "Fix issue #22 - results do not display"
    git push
 
-To backport the fix to master do (you should test after cherry picking and
-before pushing though)::
-
-   git checkout master
-   git cherry-pick 0fh12
-   git push
+Now go to your own page in github and issue a pull request.
 
 To checkout someone else's fork:
 --------------------------------
@@ -119,6 +103,9 @@ Example::
 
 Windows Specific Notes:
 -----------------------
+
+**Note:** The notes below are not maintained - we recommend using github for
+windows which includes a command line client.
 
 To Switch branches using TortoiseGIT:
 

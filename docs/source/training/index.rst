@@ -18,3 +18,4 @@ Training of trainer is a day long.
    beginner/index
    intermediate/index
    tot/index
+   test_data

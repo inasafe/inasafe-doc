@@ -76,24 +76,6 @@ issues, available time to deadline, budget etc.
 `issues <https://github.com/AIFDR/inasafe/issues>`_
 tagged for the release should be closed.
 
-Branching
----------
-
-Branching is required for Major and Minor releases.
-The process of branching is described in :doc:`version_control` whose
-accompanying illustration is repeated below for your convenience:
-
-.. figure:: /static/release-workflow.*
-   :align:   center
-
-The purpose of creating a branch is to isolate incompatible and possibly
-unstable changes that take place in the *master branch* from stable code
-that forms the basis of a release.
-You will note from the diagram above that branches are named after the minor
-version, and are tagged with the point version at the point of release.
-
-**Outcome:** If needed, create a release branch which provides a 'known good'
-version that can be returned to at any point in time.
 
 PEP8 and PEP257 compliance
 --------------------------
@@ -234,10 +216,10 @@ relevant documentation.
 Update the changelog
 --------------------
 
-A changelog should be maintained (:file:`docs/sources/general/changelog.rst`)
-that lists the key new features and improvement made with each release.
-Use the :ref:`changelog` file to guide the style of any edits and additions
-made.
+A changelog should be maintained (:file:`docs/sources/general/changelog.rst`
+in the insafe-doc repository) that lists the key new features and improvement
+made with each release. Use the :ref:`changelog` file to guide the style of
+any edits and additions made.
 
 The changelog should not exhaustively list every commit that took place.
 Rather it should list the key features and bug fixes that were made during the
@@ -266,11 +248,11 @@ There are three components of the project that require translation:
 * The |project_name| libraries - these components provide the underlying
   functionality of the scenario assessment.
   Python gettext is used for these translations.
-* The sphinx documentation - this is translated using gettext.
+* The sphinx documentation - this is translated using gettext and uploaded to
+  transifex for collaborative translation work.
 
 The translation process for the first two items above is documented in
-detail in :doc:`i18n`.
-The sphinx translation process is not yet well documented,
+detail in :doc:`i18n`. The sphinx translation process is not yet well documented,
 although it will be similar to the gettext process.
 
 The final strings should be made available to translators before the release,
