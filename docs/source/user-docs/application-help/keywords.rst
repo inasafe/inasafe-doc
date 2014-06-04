@@ -7,8 +7,9 @@ This document describes the purpose and usage of the |project_name| *keywords*
 system.
 
 .. seealso:: Please also refer to the documentation on
-    :ref:`the keywords Wizards <keywords_wizard>`.
-
+    :ref:`the keywords Wizards <keywords_wizard>` and the
+    :ref:`keywords editor <keywords_editor>` which are tools to help you
+    to create keywords files.
 
 Purpose
 -------
@@ -189,34 +190,6 @@ The data type keyword indicate what kind of geospatial data is represented
 (Numeric, Polygon, Line, Point).
 
 
-Impact Function,Category,Sub Category,Layer Type,Data Type,Units
------------------------------------------------------------------
-Categorised Hazard Population Impact Function,Hazard,All,Raster,Numeric,Normalised
-Earthquake Building Impact Function,Hazard,Earthquake,"Raster, Vector","Numeric, Polygon",MMI
-ITB Fatality Function,Hazard,Earthquake,Raster,Numeric,MMI
-PAG Fatality Function,Hazard,Earthquake,Raster,Numeric,MMI
-Flood Building Impact Function,Hazard,"Flood, Tsunami","Raster, Vector","Numeric, Polygon","Metres, Wet/Dry, Feet"
-Flood Evacuation Function,Hazard,"Flood, Tsunami",Raster,Numeric,Metres
-Flood Evacuation Function Vector Hazard,Hazard,"Flood, Tsunami",Vector,Polygon,Wet/Dry
-Flood Native Polygon Experimental Function,Hazard,"Flood, Tsunami",Vector,Polygon,Wet/Dry
-Flood Raster Roads Experimental Function,Hazard,"Flood, Tsunami",Raster,Numeric,"Metres, Feet"
-Flood Vector Roads Experimental Function,Hazard,"Flood, Tsunami",Vector,Polygon,Wet/Dry
-Categorised Hazard Population Impact Function,Exposure,Population,Raster,Numeric,People per pixel
-Flood Evacuation Function,Exposure,Population,Raster,Numeric,People per pixel
-Flood Evacuation Function Vector Hazard,Exposure,Population,Raster,Numeric,People per pixel
-ITB Fatality Function,Exposure,Population,Raster,Numeric,People per pixel
-PAG Fatality Function,Exposure,Population,Raster,Numeric,People per pixel
-Volcano Polygon Hazard Population,Exposure,Population,Raster,Numeric,People per pixel
-Flood Raster Roads Experimental Function,Exposure,Road,Vector,Line,Road Type
-Flood Vector Roads Experimental Function,Exposure,Road,Vector,Line,Road Type
-Earthquake Building Impact Function,Exposure,Structure,Vector,Polygon,Building Type
-Flood Building Impact Function,Exposure,Structure,Vector,Polygon,Building Type
-Flood Native Polygon Experimental Function,Exposure,Structure,Vector,Polygon,Building Type
-Volcano Building Impact,Exposure,Structure,Vector,Polygon,Building Type
-Volcano Building Impact,Hazard,Volcano,Vector,"Polygon, Point",Low/Medium/High
-Volcano Polygon Hazard Population,Hazard,Volcano,Vector,"Polygon, Point",Low/Medium/High
-
-
 Assumptions
 -----------
 
@@ -224,11 +197,6 @@ The following assumptions are made about keywords, which may or may not be
 programmatically enforced by the |project_name| library and GUI:
 
 * There should only be **one keyword for a given key** in the keywords file.
-* Switching from hazard to exposure will clear parts of the GUI since in
-  general most keywords are category dependent.
-  In particular, selecting **'hazard'** will remove the **'datatype'**
-  key/value pair, and selecting **'exposure'** will remove the **'units'**
-  key value pair.
 * Keywords for **category** are **enforced** to be one of 'hazard' or
   'exposure' by the GUI.
 * All keywords should be in **lower case**, **without spaces**
@@ -247,103 +215,6 @@ Translations
 
 Although |project_name| is available in different languages, the 'key' in the
 keywords files should always be written in english.
-
-.. _keywords_editor:
-
-The keywords editor graphical user interface
---------------------------------------------
-
-.. note:: If you are a new user, you should probably use the
-    :ref:`Keywords Wizard <keywords_wizard>` in preference to the keywords
-    editor as it provides more hand holding and you are less likely to
-    specify invalid keywords.
-
-The graphical user interface for keyword editing is divided into two parts:
-
-1) **Minimal mode**: In this mode, only following options are provided:
-
-   * **Title** - a 'friendly' name for the dataset which will be displayed in
-     reports, the user interface and so on
-   * **Source** - a field to inform from whom/where the dataset is obtained.
-   * **Category** - A mandatory choice between 'hazard' and 'exposure'.
-   * **Subcategory** - An amalgamated subcategory/units picklist
-     (in the case of hazard) or amalgamated subcategory/datatype (in the case
-     of exposure).
-     In this case, the secondary characteristic (units or datatype) are
-     shown in square brackets after the subcategory name e.g.
-     :samp:`flood [m]` is used for subcategory 'flood', units 'm'.
-
-An example of the keywords editor in minimal mode is shown below.
-
-.. figure:: /static/user-docs/keyword-editor-simple.*
-   :scale: 75 %
-   :align: center
-   :alt: Opened keyword editor window
-
-   Opened keyword editor window
-
-2) **Advanced mode**: In this mode several extra options are provided in
-   addition to the minimal mode options.
-   Unlike minimal mode, in advanced mode only basic validation is performed
-   and the user is given more flexibility to manually define and remove
-   key/value pairs.
-   Three sections are provided for this:
-
-  * **Predefined** - In this section, the user selects from a constrained list
-    of keywords, enters a free-form value and then adds the key/value pair to
-    the keywords list (see below).
-  * **User defined** - In this section, there is no constraint on the keywords
-    entered - any single lower case word will be accepted for both the key and
-    the value components.
-  * **Current keywords** - In this area a complete list of all the keywords
-    for the dataset are displayed.
-    The keywords list here is updated when any changes are made in both the
-    simple and advanced mode editors.
-    It is also possible in this area to manually remove unwanted keywords
-    using the 'remove selected' button.
-    Multiple keywords can be removed in a single operation by
-    :kbd:`Control-clicking` on multiple keyword entries in the current
-    keyword list and then clicking :guilabel:`Remove selected`
-
-.. figure:: /static/user-docs/keyword-editor-advanced.*
-   :scale: 75 %
-   :align: center
-   :alt: Advanced mode of keyword editor
-
-   Advanced mode of keyword editor
-
-Invoking the keywords editor
-----------------------------
-The keyword editor can easily be invoked by **selecting any layer** in the
-QGIS layers list, and then using the plugin menu to start the editor
-(:menuselection:`Plugins --> InaSAFE --> Keyword Editor`).
-Alternatively, you may use the keywords editor icon on the plugins toolbar as
-illustrated below.
-
-.. figure:: /static/user-docs/keyword-editor-icon.*
-   :scale: 100 %
-   :align: center
-   :alt: Keyword editor icon
-
-   Keyword editor icon
-
-.. note:: If you have not selected a layer in the QGIS legend,
-   the keyword editor icon in the toolbar and menus will
-   **be disabled** and appear greyed out.
-
-Saving your edits
------------------
-
-To save your keyword edits, simply press the :guilabel:`OK` button and the
-:file:`*.keywords` file will be written to disk.
-
-Cancelling your edits
----------------------
-
-You can cancel your changes at any time by pressing the :guilabel:`Cancel`
-button.
-No changes will be written to disk and your :file:`*.keywords` file will
-remain in its original state.
 
 Keywords for remote and non-file based layers
 ---------------------------------------------

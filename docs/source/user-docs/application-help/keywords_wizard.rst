@@ -1,21 +1,11 @@
-.. _wizards:
-
-InaSAFE Wizards
-===============
-
-A wizard is a graphical user interface designed to walk the user through the
-process of carrying out a specific task, or sequence of tasks. In |project_name|
-we have implemented the **Keywords Wizard** thus far, but more are planned in
-the future.
-
 .. _keywords_wizard:
 
 Keywords Wizard
----------------
+===============
 
 This wizard will lead you through the process of defining keywords for an
 exposure, hazard or aggregation layer. Unlike the
-:ref:`keywords Wizards <keywords_editor>`, the keywords wizard 'understands'
+:ref:`keywords editor <keywords_editor>`, the keywords wizard 'understands'
 the constraints and rules that determine which keywords can be applied to any
 given layer. For example, if you have a raster layer, the keywords wizard will
 use impact function metadata to prevent you declaring that the layer contains
@@ -25,8 +15,11 @@ Each impact function includes metadata that defines what rules should apply to
 data that will be used with that impact function. At startup, the wizard scans
 these metadata and uses it to define its rules.
 
+For more general discussion on the keywords system used by InaSAFE, please
+see the :ref:`keywords system <keywords_system>` documentation.
+
 Invoking the wizard
-...................
+-------------------
 
 You can run the wizard by clicking on the icon in the InaSAFE toolbar that
 looks like this:
@@ -50,7 +43,7 @@ Once loaded the wizard will appear:
     default to existing keywords on each step (where applicable).
 
 Cancelling the wizard
-.....................
+---------------------
 
 The wizard can be cancelled at any time by pressing the :guilabel:`Cancel`
 button at the bottom of the wizard. No changes will be written to the
@@ -58,7 +51,7 @@ keywords file if the wizard is cancelled.
 
 
 Using the wizard
-................
+----------------
 
 To use the wizard, simple follow the prompts presented on each page of the
 wizard. There are three standard forms of user input expected in the wizard:
@@ -103,7 +96,7 @@ as 'YES' or 'yes' onto the 'wet' concept in the tree view on the right.
    :align: center
 
 Completing the wizard
-.....................
+---------------------
 
 On completion of the keywords wizard, a .keywords file will be written to disk
 and the keywords for the layer will be displayed in the dock area when that
@@ -115,4 +108,6 @@ layer is active in QGIS.
    :align: center
 
 
-.. note:: **A note on keyword compatibility:**
+.. note:: **A note on keyword compatibility:** The keywords wizard will
+    generate keywords that are note compatible with versions of InaSAFE older
+    than 2.1.
