@@ -266,11 +266,49 @@ made available as part of the distribution.
 indonesian and english.
 
 Compile the sphinx documentation
---------------------------------
+................................
 
-Once documentation is completed, it should be compiled using
-:command:`make docs` and the :command:`git status` command should be used to
-ensure that all generated documentation is also under version control.
+Since version 2.0, the context help is generated from the master documentation
+store in the ``inasafe-doc`` repository. See the
+`InaSAFE Documentation Repository <https://github.com/AIFDR/inasafe-doc>`_
+for more details, the specifics are not covered here.
+
+
+You should have ``inasafe-doc`` checked out at the same directory level as
+``inasafe-dev`` as the scripts used below depend on this filesystem layout.::
+
+    ├── inasafe_data
+    ├── inasafe-dev
+    ├── inasafe-doc
+
+You should write user documentation (explaining how the user interface etc.
+work be adding to and editing the content found under:
+
+:file:`docs/source/user-doc`
+
+Once you have completed your work (which should be done against the ``develop``
+branch of the ``inasafe-doc`` repo), you should commit it to your fork and then
+issue a pull request for inclusion into the main repository.
+
+To compile the documentation you need to have sphinx available on your
+system. Under linux this is done as follows::
+
+    sudo pip install sphinx
+
+.. note:: You should install sphinx from pip rather than apt since the apt
+    repo version will most likely be too old to compile the documentation
+    properly.
+
+Once documentation is checked out and updated with any specific information
+pertinent to the release, it should be compiled using
+:command:`scripts/post_translate_application_help.sh`. This will build all
+the documentation under :file:`docs/source/user-docs` and copy them into
+:file:`insafe-dev/docs` ready for deployment with the release package.
+
+In :file:`inasafe-dev` subsequent to building the context documentation,
+the :command:`git status` command should be used to
+ensure that all generated documentation is also under version control and then
+these files should be committed prior to tagging the release.
 
 **Outcome:** Sphinx documentation is compiled providing complete documentation
 to be shipped with the plugin.
@@ -279,39 +317,19 @@ Update plugin metadata and version number
 .........................................
 
 QGIS uses specific metadata to register the plugin.
-At the time of writing the mechanism for registering this metadata is in
-transition from an in-source based system to an .ini file based system.
-In the interim, both should be maintained.
 
-There are two files containing version numbers:
-
-* :file:`__init__.py`
 * :file:`metadata.txt`
 
-In the init file you would typically update the version entry like this::
-
-    def version():
-        """Version of the plugin."""
-        return 'Version 1.1.0'
-
-.. note:: Be very careful about editing metadata in __init__.py.
-   The system of storing metadata in QGIS plugins is being deprecated (from
-   QGIS 2.0) because it is extremely fragile and prone to breakage by poor text
-   formatting.
-
-In metadata you would typically update the version and status entries to::
+In this metadata you would typically update the version and status entries to::
 
     version=1.1.0
     # alpha, beta, rc or final
     status=beta
 
-Immediately after branching, and then change the status designation to final
-just prior to tagging the release.
+Immediately after tagging the previous release, and then change the status
+designation to final just prior to tagging the release.
 
-Both of these files should be updated to reflect the version number and the
-metadata.txt file should reflect the release status.
-
-**Outcome:** The plugin metadata to reflects the current version of
+**Outcome:** The plugin metadata reflects the current version of
 |project_name|.
 
 Generate a test package
@@ -348,30 +366,11 @@ For example under Linux::
 Now start QGIS and enable the plugin in the QGIS plugin manager (
 :menuselection:`Plugins --> Manage Plugins`).
 
-Branch the release
-------------------
-
-This step is only done for minor and major releases, point releases are only
-tagged.
-The branch should be named after the major and minor version numbers only -
-for example: :samp:`version-1_0`.
-The following console log illustrates how to create a local branch,
-push it to the origin repository, remove the local branch and then track the
-repository version of the branch locally::
-
-   git branch version-0_1
-   git push origin version-0_1
-   git branch -D version-0_1
-   git fetch origin
-   git branch --track version-0_1 origin/version-0_1
-   git checkout version-0_1
-
-
-**Outcome:** A branch on the remote repository named after the major and minor
-version numbers.
-
 Tag the release
 ---------------
+
+As of 2.0.0 we only tag releases, not branch them (in keeping with gitflow
+methodology).
 
 .. note:: As of version 1.1.0 we will be cryptographically signing the release
   tags using GPG (Gnu Privacy Guard), and annotating the git tag.
@@ -403,44 +402,25 @@ Tagging
 
 Tagging the release provides a 'known good' state for the software which
 represents a point in time where all of the above items in this list have
-been checked.
-The tag should be named after the major, minor and point release for example
-:samp:`version-1.2.0`.
+been checked. The tag should be named after the major, minor and point release
+for example :samp:`version-1_2_0`.
+
 If the release is a release candidate or and alpha release the letters
 :samp:`rc` or :samp:`a` respectively should be appended respectively,
 along with the related number.
+
 For example version 1.2.0 alpha 1 would be tagged as :samp:`version-1.2.0a1`.
+
 To tag the release simply do it in git as illustrated below.::
 
-   git tag -s version-1_1_0 -m "Version 1.1.0"
 
-This should generate an output similar to the example shown below::
-
-    gpg: NOTE: old default options file `/home/timlinux/.gnupg/options' ignored
-
-    You need a passphrase to unlock the secret key for
-    user: "Tim Sutton (QGIS Key) <tim@linfiniti.com>"
-    1024-bit DSA key, ID 97626237, created 2007-07-19
-
-Depending on your operating system / desktop environment, you may be prompted
-for your GPG passphrase, or it will be automatically supplied if you are using
-an agent.
-
-Now we can go ahead and push the tag to the main repository::
-
-   git push --tags origin version-1_1_0
-
-.. note:: Replace 'dot' separators with underscores for the version number.
-.. note:: You can differentiate release
-   **branches** from release
-   **tags** by the fact that branch names have only the minor version number
-   (e.g. version-0_4) whereas release tags are reserved for point releases
-   (e.g. version-0_4_1).
+.. note:: Depending on your operating system / desktop environment, you may be
+    prompted for your GPG passphrase, or it will be automatically supplied if
+    you are using an agent.
 
 **Outcome:** The release is tagged in git and can be checked out at any point
-in the future.
-The tagged source tree can easily be downloaded at any point by visiting
-https://github.com/AIFDR/inasafe/tags
+in the future. The tagged source tree can easily be downloaded at any point by
+visiting https://github.com/AIFDR/inasafe/tags
 
 Upload the package
 ------------------
