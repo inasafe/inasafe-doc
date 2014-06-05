@@ -146,13 +146,16 @@ def get_inasafe_code_path():
     # determine the path to inasafe code using default or argv as needed
     inasafe_code_path = os.path.abspath(
         os.path.join(os.path.dirname(__file__), '..', '..', 'inasafe-dev'))
-    if len(sys.argv) > 2:
+    arg_count = len(sys.argv)
+    if arg_count > 2:
         sys.exit(
             'Usage:\n%s [optional path to inasafe directory]\n'
             % (sys.argv[0]))
-    elif len(sys.argv) == 2:
+    elif arg_count == 2:
         print('Building rst files from %s' % sys.argv[1])
         inasafe_code_path = os.path.abspath(sys.argv[1])
+    else:
+        print "Building using default code path: %s" % inasafe_code_path
 
     return inasafe_code_path
 
@@ -189,6 +192,7 @@ def create_api_docs(code_path, inasafe_docs_path, max_depth=2):
     :param inasafe_docs_path: path of the folder
     :param max_depth:
     """
+    print "Generating api docs for %s" % code_path
     base_path = os.path.split(code_path)[0]
     for package, subpackages, candidate_files in os.walk(code_path):
         # Checking __init__.py file
@@ -234,6 +238,7 @@ def create_api_docs(code_path, inasafe_docs_path, max_depth=2):
 
 def main():
 
+    print "Generating API documentation"
     inasafe_code_path = get_inasafe_code_path()
     inasafe_docs_path = clean_api_docs_dirs()
     max_depth = 2

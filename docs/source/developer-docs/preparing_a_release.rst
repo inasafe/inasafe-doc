@@ -265,8 +265,8 @@ made available as part of the distribution.
 **Outcome:** The released plugin will be multilingual supporting both
 indonesian and english.
 
-Compile the sphinx documentation
-................................
+Compile the context help documentation
+.......................................
 
 Since version 2.0, the context help is generated from the master documentation
 store in the ``inasafe-doc`` repository. See the
