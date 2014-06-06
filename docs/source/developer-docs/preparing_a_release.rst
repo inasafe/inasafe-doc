@@ -216,10 +216,15 @@ relevant documentation.
 Update the changelog
 --------------------
 
-A changelog should be maintained (:file:`docs/sources/general/changelog.rst`
-in the insafe-doc repository) that lists the key new features and improvement
-made with each release. Use the :ref:`changelog` file to guide the style of
-any edits and additions made.
+A changelog is maintained in a number ok places:
+
+The rst changelog
+.................
+
+In the ``inasafe-doc`` repository the :file:`changelog.rst` should be
+maintained (:file:`inasafe-doc/docs/source/general/changelog.rst`)
+that lists the key new features and improvements made with each release.
+Use the :ref:`changelog` file to guide the style of any edits and additions made.
 
 The changelog should not exhaustively list every commit that took place.
 Rather it should list the key features and bug fixes that were made during the
@@ -229,7 +234,19 @@ release cycle.
    **at the top** so that the newest release is always listed first.
 
 **Outcome:** A succinct list of changes and improvements that were made during
-the release cycle.
+the release cycle that will be visible on the InaSAFE web site.
+
+The commit changelog
+....................
+
+This is an automatically generated changelog that enumerates every commit
+that was made during the lifecycle of the release. It is stored as CHANGELOG
+in the top level of the ``inasafe-dev`` source tree. To update the changelog
+for the release simply run this make command::
+
+    make changelog
+
+
 
 Finalise translations
 .....................
@@ -332,39 +349,14 @@ designation to final just prior to tagging the release.
 **Outcome:** The plugin metadata reflects the current version of
 |project_name|.
 
-Generate a test package
------------------------
 
-At this point a test package should be generated that can be used to test
-the plugin in a clean room environment.
-A clean room environment comprises a system that has a fresh operating system
-installation with the desired version of QGIS installed,
-and **no other software**.
-It is probably a good practice to use machine virtualisation for this
-purpose, for example with images of a windows and a linux system installed.
-Some virtualisation tools such as vmware provide the ability to create a
-system snapshot and roll back to it.
+Merge to master
+---------------
 
-To generate a test package, use the :file:`scripts/release.sh` bash script.
-
-For exampled to create a test package for version 1.2.0 of the software,
-issue the following command::
-
-   scripts/release.sh 1.2.0
-
-The generated package will be placed in the /tmp directory of your linux
-system.
-
-Once the clean system is started, extract the package contents into the user's
-personal plugin directory.
-For example under Linux::
-
-   mkdir -p ~/.qgis2/python/plugins
-   cd ~/.qgis2/python/plugins
-   unzip inasafe.1.2.0.zip
-
-Now start QGIS and enable the plugin in the QGIS plugin manager (
-:menuselection:`Plugins --> Manage Plugins`).
+When develop is in a release ready state, it should be merged to the master
+branch and all tests should pass on the master jenkins instance. The best
+way to facilitate the merge to master is to make a pull request from the
+main repository's ``develop`` branch.
 
 Tag the release
 ---------------
@@ -372,11 +364,13 @@ Tag the release
 As of 2.0.0 we only tag releases, not branch them (in keeping with gitflow
 methodology).
 
-.. note:: As of version 1.1.0 we will be cryptographically signing the release
-  tags using GPG (Gnu Privacy Guard), and annotating the git tag.
 
 Prerequisite
 ............
+
+As of version 1.1.0 we will be cryptographically signing the release
+tags using GPG (Gnu Privacy Guard), and annotating the git tag. You should
+ensure you have a GPG key set up in your user profile before tagging.
 
 You need to have a GPG key already (google GPG to see how to create one).
 
@@ -411,8 +405,16 @@ along with the related number.
 
 For example version 1.2.0 alpha 1 would be tagged as :samp:`version-1.2.0a1`.
 
-To tag the release simply do it in git as illustrated below.::
+To tag the release simply use the make target as illustrated below.::
 
+    make tag
+
+You will be prompted for the semantic versioning tag number, your local
+git checkout will be tagged and then that tag will be pushed to the upstream
+repository 'origin' (which should be linked to the main upstream repo).
+
+.. warning:: Only run ``make tag`` when you are on the ``master`` branch as
+    all tagged releases should be against ``master``.
 
 .. note:: Depending on your operating system / desktop environment, you may be
     prompted for your GPG passphrase, or it will be automatically supplied if
@@ -422,16 +424,40 @@ To tag the release simply do it in git as illustrated below.::
 in the future. The tagged source tree can easily be downloaded at any point by
 visiting https://github.com/AIFDR/inasafe/tags
 
+Generate a test package
+-----------------------
+
+At this point a package should be generated. To generate a test package, use
+the :file:`scripts/release.sh` bash script.
+
+For example to create a test package for version 1.2.0 of the software,
+issue the following command::
+
+   scripts/release.sh 1.2.0
+
+The generated package will be placed in the /tmp directory of your linux
+system.
+
+Test the package locally by extracting the package contents your user
+personal plugin directory. For example under Linux::
+
+   mkdir -p ~/.qgis2/python/plugins
+   cd ~/.qgis2/python/plugins
+   unzip inasafe.1.2.0.zip
+
+Now start QGIS and enable the plugin in the QGIS plugin manager (
+:menuselection:`Plugins --> Manage Plugins`).
+
 Upload the package
 ------------------
 
 QGIS provides an online plugin repository that centralizes the distribution
-and retrieval of plugins.
-It is the most efficient way to make your plugin available to the world at
-large.
+and retrieval of plugins. It is the most efficient way to make your plugin
+available to the world at large.
 
-* Upload the updated package zip file to old QGIS python plugin repository.
-* Upload the updated package zip file to the new QGIS python plugin repository.
+The plugin can be uploaded by going to the
+`InaSAFE plugin page <ttp://plugins.qgis.org/plugins/inasafe/>`_, logging in
+and creating a new version.
 
 Press announcements
 -------------------

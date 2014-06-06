@@ -21,7 +21,7 @@ Trainer.
 At present the training program is being revised by HOT to incorporate
 lessons learnt in the field as well as upgrades to the software.
 
-The use of the |project_name| has trigged an avalanche of new feature
+The use of the |project_name| has triggered an avalanche of new feature
 request that has been prioritised by |BNPB| and |AIFDR| and is being
 developed by |Linfiniti|.
 See :ref:`road_map` for more details.
