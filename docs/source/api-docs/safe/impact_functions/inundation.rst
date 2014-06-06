@@ -8,5 +8,6 @@ Package::safe.impact_functions.inundation
    inundation/flood_population_evacuation_polygon_hazard
    inundation/flood_building_native_impact_experimental
    inundation/flood_polygon_roads_experimental
+   inundation/flood_raster_roads_experimental_optimized
    inundation/flood_OSM_building_impact
    inundation/flood_raster_roads_experimental

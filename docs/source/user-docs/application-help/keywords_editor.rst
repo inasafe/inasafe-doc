@@ -5,7 +5,7 @@ The Keywords Editor
 
 The keywords editor provides a free form user interface for creating keywords.
 If you are a new user, you should probably use the
-   :ref:`Keywords Wizard <keywords_wizard>` in preference to the keywords
+:ref:`Keywords Wizard <keywords_wizard>` in preference to the keywords
 editor as it provides more hand holding and you are less likely to specify
 invalid keywords.
 

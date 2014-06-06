@@ -11,5 +11,4 @@ Package::safe_qgis
    safe_qgis/utilities
    safe_qgis/widgets
    safe_qgis/report
-   safe_qgis/batch
    safe_qgis/impact_statistics

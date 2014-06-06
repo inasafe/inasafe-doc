@@ -9,7 +9,6 @@ Package::safe.common
    common/interpolation1d
    common/qgis_vector_tools
    common/gdal_ogr_tools
-   common/shake_grid_converter
    common/qgis_raster_tools
    common/numerics
    common/geodesy
