@@ -63,15 +63,7 @@ Category
 Every dataset should have a category assigned to it.
 Category should be written in lower case.
 
-.. table::
-
-   ========  ==============
-   Key       Allowed Values
-   ========  ==============
-   category  hazard
-   category  exposure
-   category  aggregation
-   ========  ==============
+{{ category_table }}
 
 Example keywords file entry
 ::
@@ -85,30 +77,13 @@ The selection of a subcategory value is dependent on the category:
 
 Valid subcategories for category 'hazard':
 
-.. table::
-
-   ===========  ==============
-   Key          Allowed Values
-   ===========  ==============
-   subcategory  tsunami
-   subcategory  flood
-   subcategory  volcano
-   subcategory  earthquake
-   ===========  ==============
+{{ subcategrory_hazard_table }}
 
 Where tephra is volcanic ashfall.
 
 Valid subcategories for category 'exposure':
 
-.. table::
-
-   ========  ==============
-   Key       Allowed Values
-   ========  ==============
-   exposure  population
-   exposure  structure
-   exposure  road
-   ========  ==============
+{{ subcategrory_exposure_table }}
 
 Example keywords file entry
 ::
@@ -148,15 +123,7 @@ defined.
 
 Valid subcategories for subcategory 'tsunami' or subcategory 'flood':
 
-.. table::
-
-   =====  ==============
-   Key    Allowed Values
-   =====  ==============
-   units  m
-   units  wet/dry
-   units  feet
-   =====  ==============
+{{ units_inundation_table }}
 
 In the case where the units are m (meters) or feet, the input dataset should be
 a raster layer where each cell in the raster represents a depth in the units
