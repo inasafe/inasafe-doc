@@ -1,5 +1,5 @@
-Package::safe_qgis.batch
-========================
+Package::safe_qgis.tools.batch
+==============================
 
 .. toctree::
    :maxdepth: 2

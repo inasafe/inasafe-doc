@@ -5,20 +5,20 @@ Package::safe.messaging.item
    :maxdepth: 2
 
    item/abstract_list
-   item/message_element
-   item/text
-   item/heading
-   item/numbered_list
-   item/bulleted_list
-   item/image
-   item/paragraph
-   item/preformatted_text
-   item/cell
-   item/important_text
-   item/row
    item/emphasized_text
+   item/row
+   item/cell
    item/success_paragraph
-   item/table
-   item/exceptions
-   item/link
    item/line_break
+   item/preformatted_text
+   item/heading
+   item/important_text
+   item/link
+   item/paragraph
+   item/image
+   item/message_element
+   item/table
+   item/bulleted_list
+   item/exceptions
+   item/text
+   item/numbered_list

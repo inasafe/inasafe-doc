@@ -218,8 +218,6 @@ def create_api_docs(code_path, api_docs_path, max_depth=2):
         if package_base_name in EXCLUDED_PACKAGES:
             continue
 
-        print package, subpackages, candidate_files
-
         full_package_name = package_relative_path.replace(os.sep, '.')
         new_rst_dir = os.path.join(api_docs_path, package_relative_path)
         create_dirs(new_rst_dir)
@@ -263,7 +261,7 @@ def main():
     print 'Cleaning api docs...'
     api_docs_path = clean_api_docs_dirs()
     max_depth = 2
-    packages = ['safe', 'safe_qgis']
+    packages = ['safe', 'safe_qgis', 'realtime']
 
     # creating top level index for api-docs
     print 'Creating top level index page...'
