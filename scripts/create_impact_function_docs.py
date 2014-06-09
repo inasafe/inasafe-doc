@@ -15,7 +15,7 @@ import os
 user_home = os.environ["HOME"]
 
 import sys
-sys.path.append('%s/dev/python/inasafe' % user_home)
+sys.path.append('%s/dev/python/inasafe-dev' % user_home)
 
 from shutil import rmtree
 from safe.api import (
@@ -23,15 +23,16 @@ from safe.api import (
     get_plugins,
     is_function_enabled,
     get_doc_string)
-from create_api_docs import (create_dirs, write_rst_file,
-                            get_inasafe_documentation_path)
-from third_party.odict import OrderedDict
+from create_api_docs import (
+    create_dirs, write_rst_file, get_inasafe_documentation_path)
+# from third_party.odict import OrderedDict
+from collections import OrderedDict
 
 doc_dir = os.path.join('docs', 'source', 'user-docs')
 impact_func_doc_dir = 'impact-function-docs'
 
 
-def pretty_key(key):
+def get_pretty_key(key):
     """Pretty key for documentation - removes underscore and capitalize.
 
     :param key: Key to format.
@@ -57,7 +58,7 @@ def generate_documentation(metadata, doc_strings):
         name and the value is the docstring for that impact function.
     :type doc_strings: dict
     """
-    impact_func_doc_path = os.path.join(
+    impact_function_doc_path = os.path.join(
         get_inasafe_documentation_path(), doc_dir, impact_func_doc_dir)
 
     for name, docstring in metadata.items():
@@ -68,20 +69,20 @@ def generate_documentation(metadata, doc_strings):
         rst_content += '\n' + '-' * len('Overview') + '\n\n'
 
         if type(docstring) is dict or type(docstring) is OrderedDict:
-            for my_key, my_value in docstring.items():
-                if my_key == 'detailed_description':
+            for key, value in docstring.items():
+                if key == 'detailed_description':
                     continue
-                my_pretty_key = pretty_key(my_key)
-                rst_content += ('**%s**: \n' % my_pretty_key)
-                if my_value is None or len(my_value) == 0:
+                pretty_key = get_pretty_key(key)
+                rst_content += ('**%s**: \n' % pretty_key)
+                if value is None or len(value) == 0:
                     rst_content += 'No documentation found'
                 else:
-                    rst_content += my_value
+                    rst_content += value
                 rst_content += '\n\n'
             rst_content += 'Details'
             rst_content += '\n' + '-' * len('Details') + '\n\n'
-            if ('detailed_description' in docstring.keys()) and \
-                    (len(docstring['detailed_description']) > 0):
+            if (('detailed_description' in docstring.keys()) and (len(
+                    docstring['detailed_description']) > 0)):
                 rst_content += docstring['detailed_description']
             else:
                 rst_content += 'No documentation found'
@@ -89,15 +90,13 @@ def generate_documentation(metadata, doc_strings):
             rst_content += 'No documentation found'
 
         if name in doc_strings:
-            my_doc_str = doc_strings[name]
-            rst_content += '\n\nDocstring'
+            doc_string = doc_strings[name]
+            rst_content += '\n\nDoc String'
             rst_content += '\n' + '-' * len('Doc String') + '\n\n'
-            rst_content += my_doc_str
+            rst_content += doc_string
 
         write_rst_file(
-            impact_func_doc_path,
-            name.replace(' ', ''),
-            rst_content)
+            impact_function_doc_path, name.replace(' ', ''), rst_content)
 
 
 def create_index(function_ids=None):
@@ -110,10 +109,10 @@ def create_index(function_ids=None):
     if function_ids is None:
         function_ids = []
     content_rst = ''
-    title_page = 'Impact Functions Documentation'
-    content_rst += '=' * len(title_page) + '\n'
-    content_rst += title_page + '\n'
-    content_rst += '=' * len(title_page) + '\n\n'
+    page_title = 'Impact Functions Documentation'
+    content_rst += '=' * len(page_title) + '\n'
+    content_rst += page_title + '\n'
+    content_rst += '=' * len(page_title) + '\n\n'
 
     content_rst += (
         'This document explains the purpose of impact functions and lists the '
@@ -129,17 +128,14 @@ def create_index(function_ids=None):
             impact_func_doc_dir, os.sep, identifier.replace(' ', '')))
 
     index_path = os.path.join(get_inasafe_documentation_path(), doc_dir)
-    write_rst_file(
-        index_path,
-        'impact_functions_doc',
-        content_rst)
+    write_rst_file(index_path, 'impact_functions_doc', content_rst)
 
 
 if __name__ == "__main__":
     # remove old files, in case you disabled or remove impact function
     documentation_path = (
-        os.path.join(get_inasafe_documentation_path(), doc_dir,
-                     impact_func_doc_dir))
+        os.path.join(
+            get_inasafe_documentation_path(), doc_dir, impact_func_doc_dir))
 
     if os.path.exists(documentation_path):
         rmtree(documentation_path)
@@ -148,14 +144,16 @@ if __name__ == "__main__":
     doc_strings = {}
     # Get all impact functions
     plugins_dict = get_plugins()
-    for myKey, myFunc in plugins_dict.iteritems():
-        if not is_function_enabled(myFunc):
+    for key, impact_function in plugins_dict.iteritems():
+        if not is_function_enabled(impact_function):
             continue
-        metadata[myKey] = get_metadata(myKey)
-        doc_strings[myKey] = get_doc_string(myFunc)
-    function_ids = [x['unique_identifier']
-                    for x in metadata.values()]
+        metadata[key] = get_metadata(key)
+        doc_strings[key] = get_doc_string(impact_function)
+    function_ids = [x['unique_identifier'] for x in metadata.values()]
+    print 'Generating index page for Impact Functions Documentation'
     create_index(function_ids)
 
     create_dirs(documentation_path)
+
+    print 'Generating page for Impact Functions'
     generate_documentation(metadata, doc_strings)

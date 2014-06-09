@@ -36,10 +36,10 @@ Details
 
 No documentation found
 
-Docstring
+Doc String
 ----------
 
-Impact function for volcano hazard zones impact on population
+Impact function for volcano hazard zones impact on population.
 
     :author AIFDR
     :rating 4
