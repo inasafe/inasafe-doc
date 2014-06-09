@@ -118,20 +118,21 @@ Example keywords file entry:
 In the above case there is a soft constraint to use a value for units of m,
 feet or wet/dry as defined by the table below because the subcategory is
 'flood'.
-The following are the allowed units which are dependent on the subcategory
-defined.
+The following units are allowed units a given subcategory.
 
-Valid subcategories for subcategory 'tsunami' or subcategory 'flood':
+{% for subcategory in subcategories %}
 
-{{ units_inundation_table }}
+Valid units for {% for subcategory_name in subcategory['names'] -%}
+ subcategory '{{ subcategory_name }}'
+{%- if not loop.last %} or {% endif %}{% endfor %}:
 
-In the case where the units are m (meters) or feet, the input dataset should be
-a raster layer where each cell in the raster represents a depth in the units
-specified.
+{{ subcategory['table'] -}}
 
-In the case of wet/dry, the input dataset needs to be a vector polygon layer.
-Any area that is inside a polygon is considered 'wet' and any area outside of
-a polygon is considered to be 'dry'.
+{% for description in subcategory['description'] %}
+{{ description }}
+{% endfor %}
+{%- endfor %}
+
 
 Valid subcategories for subcategory 'volcano'
 

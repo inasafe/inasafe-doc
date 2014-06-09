@@ -15,6 +15,7 @@ __copyright__ += 'Disaster Reduction'
 
 
 from rst_generation_tools import SimpleRstTableFormatter as SRTF
+from rst_generation_tools import format_rst_paragraph
 from inasafe.safe.api import get_plugins
 from jinja2 import Template
 import os
@@ -46,6 +47,7 @@ class MetadataExtractor(object):
         categories = list(set(categories))
         categories.sort()
         return [['category', category] for category in categories]
+
     def _collect_metadata(self, category, category_detail='', constraint=None):
         """Get a specic detail from a category
 
@@ -61,7 +63,8 @@ class MetadataExtractor(object):
             if constraint:
                 value = metadata['categories'][category][constraint['field']]
                 value = value if type(value) == list else [value]
-                values_match = any([(v['id'] in constraint['value']) for v in value])
+                values_match = any(
+                    [(v['id'] in constraint['value']) for v in value])
                 if not values_match:
                     continue
             detail = metadata['categories'][category][category_detail]
@@ -70,24 +73,36 @@ class MetadataExtractor(object):
             for d in detail:
                 detail_collection.append(d)
         return detail_collection
+
+    def _make_unique(self, original):
+        unique = []
+        [unique.append(item) for item in original if item not in unique]
+        return unique
+
     def get_subcategories(self, category):
-        subcategory_data = self._collect_metadata(category, category_detail='subcategory')
-        subcategory_names = [subcategory['name'] for subcategory in subcategory_data]
+        subcategory_data = self._collect_metadata(
+            category, category_detail='subcategory')
+        subcategory_names = [
+            subcategory['name'] for subcategory in subcategory_data]
         subcategory_names = list(set(subcategory_names))
         subcategory_names.sort()
-        return [['subcategory', subcategory] for subcategory in subcategory_names]
+        return [
+            ['subcategory', subcategory] for subcategory in subcategory_names]
+
     def get_units(self, category):
         units_data = self._collect_metadata(category, category_detail='units')
         units_names = [unit['name'] for unit in units_data]
         units_names = list(set(units_names))
         units_names.sort()
         return [['units', unit] for unit in units_names]
+
     def get_units_subcategory(self, category, subcategories):
-        units_data = self._collect_metadata(category, category_detail='units', constraint={'field': 'subcategory', 'value': subcategories})
-        units_names = [unit['name'] for unit in units_data]
-        units_names = list(set(units_names))
-        units_names.sort()
-        return [['units', unit] for unit in units_names]
+        units_data = self._collect_metadata(
+            category,
+            category_detail='units',
+            constraint={'field': 'subcategory', 'value': subcategories})
+        units = [unit for unit in units_data]
+        return self._make_unique(units)
 
 
 if __name__ == "__main__":
@@ -100,18 +115,26 @@ if __name__ == "__main__":
     me = MetadataExtractor()
     category_table = SRTF(['Key', 'Allowed Values'], me.get_categories())
     subcategrory_hazard_table = SRTF(['Key', 'Allowed Values'], me.get_subcategories('hazard'))
-    units_hazard_table = SRTF(['Key', 'Allowed Values'], me.get_units('hazard'))
     subcategrory_exposure_table = SRTF(['Key', 'Allowed Values'], me.get_subcategories('exposure'))
-    units_exposure_table = SRTF(['Key', 'Allowed Values'], me.get_units('exposure'))
-    units_inundation_table = SRTF(['Key', 'Allowed Values'], me.get_units_subcategory('hazard', ['flood', 'tsunami']))
+
+    subcategories = []
+    for subcategory in [['flood', 'tsunami'], ['volcano']]:
+        units = me.get_units_subcategory('hazard', subcategory)
+        units_content = [['units', unit['name']] for unit in units]
+        units_description = [
+            format_rst_paragraph(unit['description']) for unit in units]
+        units_table = SRTF(['Key', 'Allowed Values'], units_content)
+
+        subcategories.append({
+            'names': subcategory,
+            'table': units_table(),
+            'description': units_description})
 
     context = {
         'category_table': category_table(),
         'subcategrory_hazard_table': subcategrory_hazard_table(),
-        'units_hazard_table': units_hazard_table(),
         'subcategrory_exposure_table': subcategrory_exposure_table(),
-        'units_exposure_table': units_exposure_table(),
-        'units_inundation_table': units_inundation_table(),
+        'subcategories': subcategories
     }
     inasafe_doc_root = os.path.dirname(file_path)
     destination_location = os.path.join(

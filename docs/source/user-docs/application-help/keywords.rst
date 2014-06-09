@@ -63,14 +63,6 @@ Category
 Every dataset should have a category assigned to it.
 Category should be written in lower case.
 
-.. table::
-
-   ========    ==============  
-   Key         Allowed Values  
-   ========    ==============  
-   category    exposure        
-   category    hazard          
-   ========    ==============  
 
 
 Example keywords file entry
@@ -85,33 +77,12 @@ The selection of a subcategory value is dependent on the category:
 
 Valid subcategories for category 'hazard':
 
-.. table::
-
-   ===========    ==============  
-   Key            Allowed Values  
-   ===========    ==============  
-   subcategory    earthquake      
-   subcategory    flood           
-   subcategory    generic         
-   subcategory    tephra          
-   subcategory    tsunami         
-   subcategory    volcano         
-   ===========    ==============  
 
 
 Where tephra is volcanic ashfall.
 
 Valid subcategories for category 'exposure':
 
-.. table::
-
-   ===========    ==============  
-   Key            Allowed Values  
-   ===========    ==============  
-   subcategory    population      
-   subcategory    road            
-   subcategory    structure       
-   ===========    ==============  
 
 
 Example keywords file entry
@@ -147,30 +118,24 @@ Example keywords file entry:
 In the above case there is a soft constraint to use a value for units of m,
 feet or wet/dry as defined by the table below because the subcategory is
 'flood'.
-The following are the allowed units which are dependent on the subcategory
-defined.
+The following units are allowed units a given subcategory.
 
-Valid subcategories for subcategory 'tsunami' or subcategory 'flood':
+
+
+Valid units for subcategory 'volcano':
 
 .. table::
 
    =====    ==============  
    Key      Allowed Values  
    =====    ==============  
-   units    feet            
-   units    metres          
    units    normalised      
-   units    wet / dry       
    =====    ==============  
 
+**Normalised** data can be hazard or exposure data where the values have been
+classified or coded.
 
-In the case where the units are m (meters) or feet, the input dataset should be
-a raster layer where each cell in the raster represents a depth in the units
-specified.
 
-In the case of wet/dry, the input dataset needs to be a vector polygon layer.
-Any area that is inside a polygon is considered 'wet' and any area outside of
-a polygon is considered to be 'dry'.
 
 Valid subcategories for subcategory 'volcano'
 

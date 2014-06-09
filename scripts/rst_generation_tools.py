@@ -12,18 +12,22 @@ __license__ = "GPL"
 __copyright__ = 'Copyright 2014, Australia Indonesia Facility for '
 __copyright__ += 'Disaster Reduction'
 
+from textwrap import wrap
+
 
 class HorizontalBorder(object):
     """Manage the border elements of a simple rst table those are the: ======
     """
     def __init__(self, default_length=5):
         self.length = default_length
+
     def column_width(self, column_content):
         for entry in column_content:
             if isinstance(entry, basestring):
                 self.length = max(len(entry), self.length)
             else:
                 self.length = max(len('%s' % entry), self.length)
+
     def __call__(self):
         return '%s  ' % ('=' * self.length)
 
@@ -73,5 +77,30 @@ class SimpleRstTableFormatter(object):
             row = self._left_fill(row, borders)
             table += '   %s\n' % '  '.join(row)
         return table
+
+
+def uniform_markers(text, markers, placeholder=None):
+    placeholder = placeholder or markers[0]
+    for marker in markers[1:]:
+        text = text.replace(marker, placeholder)
+    return text
+
+
+def replace_bold(text):
+    text = uniform_markers(text, ['<b>', '</b>', '<strong>', '</strong>'])
+    return text.replace('<b>', '**')
+
+
+def replace_italic(text):
+    text = uniform_markers(text, ['<i>', '</i>', '<em>', '</em>'])
+    return text.replace('<i>', '*')
+
+
+def format_rst_paragraph(paragraph, width=79):
+    paragraph = replace_bold(paragraph)
+    paragraph = replace_italic(paragraph)
+    paragraph = wrap(paragraph, width)
+    return '\n'.join(paragraph)
+
 
 
