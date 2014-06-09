@@ -87,17 +87,13 @@ def create_module_rst_file(module_name):
 
 
 def create_dirs(path):
-    """Shorter function for creating directory(s).
-    """
-
+    """Shorter function for creating directory(s).."""
     if not os.path.exists(path):
         os.makedirs(path)
 
 
 def write_rst_file(file_path, file_name, content):
-    """Shorter procedure for creating rst file
-    """
-
+    """Shorter procedure for creating rst file."""
     create_dirs(os.path.split(os.path.join(file_path, file_name))[0])
     try:
         fl = open(os.path.join(file_path, file_name + '.rst'), 'w+')
@@ -110,9 +106,7 @@ def write_rst_file(file_path, file_name, content):
 
 
 def get_python_files_from_list(files, excluded_files=None):
-    """Return list of python file from files, without excluded files.
-    """
-
+    """Return list of python file from files, without excluded files."""
     if excluded_files is None:
         excluded_files = ['__init__.py']
     python_files = []
@@ -125,35 +119,45 @@ def get_python_files_from_list(files, excluded_files=None):
     return python_files
 
 
-def create_top_level_index(inasafe_docs_path, packages, max_depth=2):
-    #assemble a list of python files in the safe_qgis Package
+def create_top_level_index(api_docs_path, packages, max_depth=2):
+    """Create the top level index page.
+
+    :param api_docs_path: Path to the api-docs of inasafe documentation.
+    :type api_docs_path: str
+
+    :param packages: List of packages which want to be extracted their api/
+    :type packages: list
+
+    :param max_depth: The maximum depth of tree in the api docs.
+    :type max_depth: int
+    """
     page_text = INDEX_HEADER
     for package in packages:
-        # Write top level index file entries for safe_qgis, safe and Unit Tests
+        # Write top level index file entries for safe_qgis, safe
         text = create_top_level_index_entry(
             title='Package %s' % package,
             max_depth=max_depth,
             subtitles=[package])
 
         page_text += '%s\n' % text
-
-    write_rst_file(
-        inasafe_docs_path, 'index',
-        page_text)
+    write_rst_file(api_docs_path, 'index', page_text)
 
 
-def get_inasafe_code_path():
-    # determine the path to inasafe code using default or argv as needed
+def get_inasafe_code_path(custom_inasafe_path=None):
+    """Determine the path to inasafe location.
+
+    :param custom_inasafe_path: Custom inasafe project location.
+    :type custom_inasafe_path: str
+
+    :returns: Path to inasafe source code.
+    :rtype: str
+    """
+
     inasafe_code_path = os.path.abspath(
         os.path.join(os.path.dirname(__file__), '..', '..', 'inasafe-dev'))
-    if len(sys.argv) > 2:
-        sys.exit(
-            'Usage:\n%s [optional path to inasafe directory]\n'
-            % (sys.argv[0]))
-    elif len(sys.argv) == 2:
-        print('Building rst files from %s' % sys.argv[1])
-        inasafe_code_path = os.path.abspath(sys.argv[1])
 
+    if custom_inasafe_path is not None:
+        inasafe_code_path = custom_inasafe_path
     return inasafe_code_path
 
 
@@ -173,7 +177,11 @@ def get_inasafe_documentation_path():
 
 
 def clean_api_docs_dirs():
-    # remove old api-docs if it exists and recreate it
+    """Empty previous api-docs directory.
+
+    :returns: Path to api-docs directory.
+    :rtype: str
+    """
     inasafe_docs_path = os.path.abspath(
         os.path.join(
             os.path.dirname(__file__), '..', 'docs', 'source', 'api-docs'))
@@ -183,11 +191,17 @@ def clean_api_docs_dirs():
     return inasafe_docs_path
 
 
-def create_api_docs(code_path, inasafe_docs_path, max_depth=2):
+def create_api_docs(code_path, api_docs_path, max_depth=2):
     """Function for generating .rst file for all .py file in dir_path folder.
-    :param code_path:
-    :param inasafe_docs_path: path of the folder
-    :param max_depth:
+
+    :param code_path: Path of the source code.
+    :type code_path: str
+
+    :param api_docs_path: Path of the api documentation directory.
+    :type api_docs_path: str
+
+    :param max_depth: Maximum depth for the index.
+    :type max_depth: int
     """
     base_path = os.path.split(code_path)[0]
     for package, subpackages, candidate_files in os.walk(code_path):
@@ -197,15 +211,17 @@ def create_api_docs(code_path, inasafe_docs_path, max_depth=2):
         # Creating directory for the package
         package_relative_path = package.replace(base_path + os.sep, '')
         index_package_path = os.path.join(
-            inasafe_docs_path, package_relative_path)
+            api_docs_path, package_relative_path)
         # calculate dir one up from package to store the index in
         index_base_path, package_base_name = os.path.split(index_package_path)
 
         if package_base_name in EXCLUDED_PACKAGES:
             continue
 
+        print package, subpackages, candidate_files
+
         full_package_name = package_relative_path.replace(os.sep, '.')
-        new_rst_dir = os.path.join(inasafe_docs_path, package_relative_path)
+        new_rst_dir = os.path.join(api_docs_path, package_relative_path)
         create_dirs(new_rst_dir)
 
         # Create index_file for the directory
@@ -233,21 +249,33 @@ def create_api_docs(code_path, inasafe_docs_path, max_depth=2):
 
 
 def main():
+    if len(sys.argv) > 2:
+        sys.exit(
+            'Usage:\n%s [optional path to inasafe directory]\n'
+            % (sys.argv[0]))
+    elif len(sys.argv) == 2:
+        print('Building rst files from %s' % sys.argv[1])
+        inasafe_code_path = os.path.abspath(sys.argv[1])
+    else:
+        inasafe_code_path = None
 
-    inasafe_code_path = get_inasafe_code_path()
-    inasafe_docs_path = clean_api_docs_dirs()
+    inasafe_code_path = get_inasafe_code_path(inasafe_code_path)
+    print 'Cleaning api docs...'
+    api_docs_path = clean_api_docs_dirs()
     max_depth = 2
     packages = ['safe', 'safe_qgis']
 
-    create_top_level_index(inasafe_docs_path, packages, max_depth)
+    # creating top level index for api-docs
+    print 'Creating top level index page...'
+    create_top_level_index(api_docs_path, packages, max_depth)
 
     for package in packages:
-        code_path = os.path.join(inasafe_code_path, package)
+        print 'Creating api docs for package %s' % package
+        package_code_path = os.path.join(inasafe_code_path, package)
         create_api_docs(
-            code_path=code_path,
-            inasafe_docs_path=inasafe_docs_path,
+            code_path=package_code_path,
+            api_docs_path=api_docs_path,
             max_depth=max_depth)
-
 
 if __name__ == '__main__':
     main()
