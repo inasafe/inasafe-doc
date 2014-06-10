@@ -22,3 +22,12 @@ Package safe_qgis
    safe_qgis
 
 
+Package realtime
+----------------
+
+.. toctree::
+   :maxdepth: 2
+
+   realtime
+
+

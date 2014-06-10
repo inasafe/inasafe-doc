@@ -39,10 +39,10 @@ Details
 
 This function will calculate how many people will be impacted per each category for all categories in the hazard layer. Currently there should be 3 categories in the hazard layer. After that it will show the result and the total amount of people that will be impacted for the hazard given.
 
-Docstring
+Doc String
 ----------
 
-Plugin for impact of population as derived by categorised hazard
+Plugin for impact of population as derived by categorised hazard.
 
     :author AIFDR
     :rating 2

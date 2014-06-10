@@ -36,10 +36,10 @@ Details
 
 The population subject to inundation is determined whether in an area which affected or not. You can also set an evacuation percentage to calculate how many percent of the total population affected to be evacuated. This number will be used to estimate needs based on BNPB Perka 7/2008 minimum bantuan.
 
-Docstring
+Doc String
 ----------
 
-Impact function for vector flood evacuation
+Impact function for vector flood evacuation.
 
     :author AIFDR
     :rating 4
