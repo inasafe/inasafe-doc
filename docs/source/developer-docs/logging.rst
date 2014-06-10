@@ -36,7 +36,7 @@ from :samp:`safe.common.custom_logging` (set in :samp:`safe/__init__.py`)
 ::
 
     from safe.common.custom_logging import setup_logger
-    setup_logger()
+    setup_logger('InaSAFE')
 
 
 For the :samp:`safe_qgis` package, we need to use :func:`setup_logger` function
