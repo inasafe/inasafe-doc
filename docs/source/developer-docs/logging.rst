@@ -18,25 +18,56 @@ In this section we describe best practices and procedures for logging in
 Getting and using the named Logger instance
 -------------------------------------------
 
-We use the '|project_name|' logger instance as standard.
-It is the responsibility of each client package (e.g. :samp:`safe_qgis`) to
-setup the logger - typically in the :samp:`__init__.py` for the package
+We use the '|project_name|' logger instance as standard for :samp:`safe` and
+:samp:`safe_qgis` package. For :samp:`realtime` package, we use a different
+logger set in :samp:`realtime/__init__.py` (see
+:samp:`realtime.utilities.setup_logger`).
+::
+
+    from realtime.utilities import setup_logger
+    setup_logger()
+
+It is the responsibility of each
+client package to setup the logger - typically in
+the :samp:`__init__.py` for the package.
+
+For the :samp:`safe` package, we need to use the :samp:`setup_logger` function
+from :samp:`safe.common.custom_logging` (set in :samp:`safe/__init__.py`)
+::
+
+    from safe.common.custom_logging import setup_logger
+    setup_logger()
+
+
+For the :samp:`safe_qgis` package, we need to use :samp:`setup_logger` function
+from :samp:`safe_qgis.utilities.custom_logging` (set in
+:samp:`safe_qgis/__init__.py`)
 ::
 
     from safe_qgis.utilities.custom_logging import setup_logger
     setup_logger()
 
-The utility method that sets up the logger will determine which logging
-backends are made available.
-In the :samp:`safe_qgis` package, a number of different backends are setup in
-the :func:`setup_logger` function.
-The logger will typically be assigned to a module variable :samp:`LOGGER`.
 
-To actually use the logger in your module you need to do something like this
+
+The logger will typically be assigned to a module variable :samp:`LOGGER`. To
+ actually use the logger in your :samp:`safe` and :samp:`safe_qgis` module you
+ need to do something like this
 ::
 
     import logging
     LOGGER = logging.getLogger('InaSAFE')
+
+    # And then in your class / method:
+    LOGGER.debug('Hello world')
+
+
+To use the logger in your :samp:`realtime` module you
+ need to do something like this
+::
+
+    import logging
+    from realtime.utilities import realtime_logger_name
+    LOGGER = logging.getLogger(realtime_logger_name())
 
     # And then in your class / method:
     LOGGER.debug('Hello world')
