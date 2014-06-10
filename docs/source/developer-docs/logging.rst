@@ -48,10 +48,9 @@ from :samp:`safe_qgis.utilities.custom_logging` (set in
     setup_logger()
 
 
-
-The logger will typically be assigned to a module variable :samp:`LOGGER`. To
- actually use the logger in your :samp:`safe` and :samp:`safe_qgis` module you
- need to do something like this
+The logger will typically be assigned to a module variable :samp:`LOGGER`.
+To actually use the logger in your :samp:`safe` and :samp:`safe_qgis` module
+you need to do something like this:
 ::
 
     import logging
@@ -61,8 +60,8 @@ The logger will typically be assigned to a module variable :samp:`LOGGER`. To
     LOGGER.debug('Hello world')
 
 
-To use the logger in your :samp:`realtime` module you
- need to do something like this
+To use the logger in your :samp:`realtime` module you need to do something
+like this:
 ::
 
     import logging
