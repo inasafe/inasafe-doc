@@ -20,3 +20,4 @@ Package::safe.common
    common/interpolation2d
    common/qgis_vector_tools
    common/exceptions
+   common/custom_logging
