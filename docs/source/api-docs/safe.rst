@@ -10,7 +10,6 @@ Package::safe
    safe/common
    safe/postprocessors
    safe/engine
-   safe/keywords
    safe/storage
    safe/impact_functions
    safe/messaging

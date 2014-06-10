@@ -9,7 +9,6 @@ Package::safe.impact_functions
    impact_functions/utilities
    impact_functions/impact_function_manager
    impact_functions/styles
-   impact_functions/impact_function_report
    impact_functions/impact_function_metadata
    impact_functions/earthquake
    impact_functions/generic

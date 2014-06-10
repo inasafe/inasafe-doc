@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""**Generating rst file for documentation**
+"""**Generating rst file for api documentation**
 
 """
 
@@ -12,7 +12,6 @@ __copyright__ += 'Disaster Reduction'
 
 import os
 from shutil import rmtree
-# import string
 import sys
 
 # Text
@@ -26,9 +25,18 @@ EXCLUDED_PACKAGES = ['i18n', 'test', 'converter_data', 'ui', 'resources']
 
 def create_top_level_index_entry(title, max_depth, subtitles):
     """Function for creating a text entry in index.rst for its content.
-        title : Title for the content
-        max_depth : max depth
-        subtitles : list of subtitles that is available.
+
+    :param title : Title for the content.
+    :type title: str
+
+    :param max_depth : Value for max_depth in the top level index content.
+    :type max_depth: int
+
+    :param subtitles : list of subtitles that is available.
+    :type subtitles: list
+
+    :return: A text for the content of top level index.
+    :rtype: str
     """
 
     return_text = title + '\n'
@@ -46,11 +54,19 @@ def create_top_level_index_entry(title, max_depth, subtitles):
 def create_package_level_rst_index_file(
         package_name, max_depth, modules, inner_packages=None):
     """Function for creating text for index for a package.
-        package_name : name of the package
-        max_depth : maxdepth
-        modules : list of module in the package.
-    """
 
+    :param package_name: name of the package
+    :type package_name: str
+
+    :param max_depth: Value for max_depth in the index file.
+    :type max_depth: int
+
+    :param modules: list of module in the package.
+    :type modules: str
+
+    :return: A text for the content of the index file.
+    :rtype: str
+    """
     excluded_modules = ['converter_data']
     if inner_packages is None:
         inner_packages = []
@@ -73,8 +89,13 @@ def create_package_level_rst_index_file(
 
 
 def create_module_rst_file(module_name):
-    """Function for creating text in each .rst file for each module.
-        module_name : name of the module.
+    """Function for creating content in each .rst file for a module.
+
+    :param module_name: name of the module.
+    :type module_name: str
+
+    :returns: A content for auto module.
+    :rtype: str
     """
 
     return_text = 'Module:  ' + module_name
@@ -87,26 +108,47 @@ def create_module_rst_file(module_name):
 
 
 def create_dirs(path):
-    """Shorter function for creating directory(s).."""
+    """Shorter function for creating directory."""
     if not os.path.exists(path):
         os.makedirs(path)
 
 
-def write_rst_file(file_path, file_name, content):
-    """Shorter procedure for creating rst file."""
-    create_dirs(os.path.split(os.path.join(file_path, file_name))[0])
+def write_rst_file(file_directory, file_name, content):
+    """Shorter procedure for creating rst file.
+
+    :param file_directory: Directory of the filename.
+    :type file_directory: str
+
+    :param file_name: Name of the file.
+    :type file_name: str
+
+    :param content: The content of the file.
+    :type content: str
+    """
+    create_dirs(os.path.split(os.path.join(file_directory, file_name))[0])
     try:
-        fl = open(os.path.join(file_path, file_name + '.rst'), 'w+')
+        fl = open(os.path.join(file_directory, file_name + '.rst'), 'w+')
         fl.write(content)
         fl.close()
 
     except Exception, e:
         print ('Creating %s failed' % os.path.join(
-            file_path, file_name + '.rst'), e)
+            file_directory, file_name + '.rst'), e)
 
 
 def get_python_files_from_list(files, excluded_files=None):
-    """Return list of python file from files, without excluded files."""
+    """Return list of python file from files, without excluded files.
+
+    :param files: List of files.
+    :type files: list
+
+    :param excluded_files: List of excluded file names.
+    :type excluded_files: list, None
+
+    :returns: List of python file without the excluded file, not started with
+        test.
+    :rtype: list
+    """
     if excluded_files is None:
         excluded_files = ['__init__.py']
     python_files = []
@@ -120,7 +162,7 @@ def get_python_files_from_list(files, excluded_files=None):
 
 
 def create_top_level_index(api_docs_path, packages, max_depth=2):
-    """Create the top level index page.
+    """Create the top level index page (writing to file)
 
     :param api_docs_path: Path to the api-docs of inasafe documentation.
     :type api_docs_path: str
@@ -158,21 +200,6 @@ def get_inasafe_code_path(custom_inasafe_path=None):
 
     if custom_inasafe_path is not None:
         inasafe_code_path = custom_inasafe_path
-    return inasafe_code_path
-
-
-def get_inasafe_documentation_path():
-    # determine the path to inasafe code using default or argv as needed
-    inasafe_code_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), '..', '..', 'inasafe-doc'))
-    if len(sys.argv) > 2:
-        sys.exit(
-            'Usage:\n%s [optional path to inasafe directory]\n'
-            % (sys.argv[0]))
-    elif len(sys.argv) == 2:
-        print('Building rst files from %s' % sys.argv[1])
-        inasafe_code_path = os.path.abspath(sys.argv[1])
-
     return inasafe_code_path
 
 
@@ -231,7 +258,7 @@ def create_api_docs(code_path, api_docs_path, max_depth=2):
             inner_packages=subpackages)
 
         write_rst_file(
-            file_path=index_base_path,
+            file_directory=index_base_path,
             file_name=package_base_name,
             content=index_file_text)
 
@@ -241,21 +268,28 @@ def create_api_docs(code_path, api_docs_path, max_depth=2):
             py_module_text = create_module_rst_file(
                 '%s.%s' % (full_package_name, module))
             write_rst_file(
-                file_path=new_rst_dir,
+                file_directory=new_rst_dir,
                 file_name=module,
                 content=py_module_text)
 
 
+def usage():
+    """Helper function for telling how to use the script."""
+    print 'Usage:'
+    print 'python %s [optional path to inasafe directory]' % sys.argv[0]
+
+
 def main():
     if len(sys.argv) > 2:
-        sys.exit(
-            'Usage:\n%s [optional path to inasafe directory]\n'
-            % (sys.argv[0]))
+        usage()
+        sys.exit()
     elif len(sys.argv) == 2:
         print('Building rst files from %s' % sys.argv[1])
         inasafe_code_path = os.path.abspath(sys.argv[1])
     else:
         inasafe_code_path = None
+
+    print 'Please make sure there is no unused source code file in inasafe-dev'
 
     inasafe_code_path = get_inasafe_code_path(inasafe_code_path)
     print 'Cleaning api docs...'
@@ -268,12 +302,14 @@ def main():
     create_top_level_index(api_docs_path, packages, max_depth)
 
     for package in packages:
-        print 'Creating api docs for package %s' % package
+        print 'Creating api docs for package %s...' % package
         package_code_path = os.path.join(inasafe_code_path, package)
         create_api_docs(
             code_path=package_code_path,
             api_docs_path=api_docs_path,
             max_depth=max_depth)
+
+    print 'Fin.'
 
 if __name__ == '__main__':
     main()
