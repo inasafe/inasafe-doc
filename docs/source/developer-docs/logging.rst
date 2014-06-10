@@ -21,7 +21,7 @@ Getting and using the named Logger instance
 We use the '|project_name|' logger instance as standard for :samp:`safe` and
 :samp:`safe_qgis` package. For :samp:`realtime` package, we use a different
 logger set in :samp:`realtime/__init__.py` (see
-:samp:`realtime.utilities.setup_logger`).
+:func:`realtime.utilities.setup_logger`).
 ::
 
     from realtime.utilities import setup_logger
@@ -31,7 +31,7 @@ It is the responsibility of each
 client package to setup the logger - typically in
 the :samp:`__init__.py` for the package.
 
-For the :samp:`safe` package, we need to use the :samp:`setup_logger` function
+For the :samp:`safe` package, we need to use the :func:`setup_logger` function
 from :samp:`safe.common.custom_logging` (set in :samp:`safe/__init__.py`)
 ::
 
@@ -39,7 +39,7 @@ from :samp:`safe.common.custom_logging` (set in :samp:`safe/__init__.py`)
     setup_logger()
 
 
-For the :samp:`safe_qgis` package, we need to use :samp:`setup_logger` function
+For the :samp:`safe_qgis` package, we need to use :func:`setup_logger` function
 from :samp:`safe_qgis.utilities.custom_logging` (set in
 :samp:`safe_qgis/__init__.py`)
 ::
