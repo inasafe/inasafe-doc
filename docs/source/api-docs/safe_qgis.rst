@@ -5,6 +5,7 @@ Package::safe_qgis
    :maxdepth: 2
 
    safe_qgis/safe_interface
+   safe_qgis/batch
    safe_qgis/plugin
    safe_qgis/exceptions
    safe_qgis/tools
