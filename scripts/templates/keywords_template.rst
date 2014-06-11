@@ -118,9 +118,11 @@ Example keywords file entry:
 In the above case there is a soft constraint to use a value for units of m,
 feet or wet/dry as defined by the table below because the subcategory is
 'flood'.
-The following units are allowed units a given subcategory.
 
-{% for subcategory in subcategories %}
+Valid Units for Hazard Subcategories
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+{%- for subcategory in hazard_subcategories %}
 
 Valid units for {% for subcategory_name in subcategory['names'] -%}
  subcategory '{{ subcategory_name }}'
@@ -133,23 +135,21 @@ Valid units for {% for subcategory_name in subcategory['names'] -%}
 {% endfor %}
 {%- endfor %}
 
+Valid Units for Exposure Subcategories
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Valid subcategories for subcategory 'volcano'
+{%- for subcategory in exposure_subcategories %}
 
-.. table::
+Valid units for {% for subcategory_name in subcategory['names'] -%}
+ subcategory '{{ subcategory_name }}'
+{%- if not loop.last %} or {% endif %}{% endfor %}:
 
-   =====  ==============
-   Key    Allowed Values
-   =====  ==============
-   units  kg2/m2
-   =====  ==============
+{{ subcategory['table'] -}}
 
-In this case the dataset should be a raster layer where each cell represents
-the kilograms per meters squared of ash fall on that cell.
-
-.. note:: 'units' and 'datatype' (described below) should be considered to
-   be mutually exclusive - i.e. they should not both be present in any given
-   keywords file.
+{% for description in subcategory['description'] %}
+{{ description }}
+{% endfor %}
+{%- endfor %}
 
 Datatype
 ........
