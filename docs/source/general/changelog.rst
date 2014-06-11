@@ -6,6 +6,18 @@ Changelog
 Changelog for version |release|
 -------------------------------
 
+1. Raster flood on roads performance optimisation.
+2. Made it possible to suppress warning messages for missing print template
+   elements globally.
+3. Updated the template options
+
+   Shakemap convertor has title and source
+   Analysis extent preview
+   Wizard
+
+Changelog for version 2.0.0
+---------------------------
+
 * Changes from a user point of view:
 
   * Users are able to select their own hazard and exposure attribute.

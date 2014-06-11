@@ -216,10 +216,15 @@ relevant documentation.
 Update the changelog
 --------------------
 
-A changelog should be maintained (:file:`docs/sources/general/changelog.rst`
-in the insafe-doc repository) that lists the key new features and improvement
-made with each release. Use the :ref:`changelog` file to guide the style of
-any edits and additions made.
+A changelog is maintained in a number ok places:
+
+The rst changelog
+.................
+
+In the ``inasafe-doc`` repository the :file:`changelog.rst` should be
+maintained (:file:`inasafe-doc/docs/source/general/changelog.rst`)
+that lists the key new features and improvements made with each release.
+Use the :ref:`changelog` file to guide the style of any edits and additions made.
 
 The changelog should not exhaustively list every commit that took place.
 Rather it should list the key features and bug fixes that were made during the
@@ -229,7 +234,19 @@ release cycle.
    **at the top** so that the newest release is always listed first.
 
 **Outcome:** A succinct list of changes and improvements that were made during
-the release cycle.
+the release cycle that will be visible on the InaSAFE web site.
+
+The commit changelog
+....................
+
+This is an automatically generated changelog that enumerates every commit
+that was made during the lifecycle of the release. It is stored as CHANGELOG
+in the top level of the ``inasafe-dev`` source tree. To update the changelog
+for the release simply run this make command::
+
+    make changelog
+
+
 
 Finalise translations
 .....................
@@ -265,12 +282,50 @@ made available as part of the distribution.
 **Outcome:** The released plugin will be multilingual supporting both
 indonesian and english.
 
-Compile the sphinx documentation
---------------------------------
+Compile the context help documentation
+.......................................
 
-Once documentation is completed, it should be compiled using
-:command:`make docs` and the :command:`git status` command should be used to
-ensure that all generated documentation is also under version control.
+Since version 2.0, the context help is generated from the master documentation
+store in the ``inasafe-doc`` repository. See the
+`InaSAFE Documentation Repository <https://github.com/AIFDR/inasafe-doc>`_
+for more details, the specifics are not covered here.
+
+
+You should have ``inasafe-doc`` checked out at the same directory level as
+``inasafe-dev`` as the scripts used below depend on this filesystem layout.::
+
+    ├── inasafe_data
+    ├── inasafe-dev
+    ├── inasafe-doc
+
+You should write user documentation (explaining how the user interface etc.
+work be adding to and editing the content found under:
+
+:file:`docs/source/user-doc`
+
+Once you have completed your work (which should be done against the ``develop``
+branch of the ``inasafe-doc`` repo), you should commit it to your fork and then
+issue a pull request for inclusion into the main repository.
+
+To compile the documentation you need to have sphinx available on your
+system. Under linux this is done as follows::
+
+    sudo pip install sphinx
+
+.. note:: You should install sphinx from pip rather than apt since the apt
+    repo version will most likely be too old to compile the documentation
+    properly.
+
+Once documentation is checked out and updated with any specific information
+pertinent to the release, it should be compiled using
+:command:`scripts/post_translate_application_help.sh`. This will build all
+the documentation under :file:`docs/source/user-docs` and copy them into
+:file:`insafe-dev/docs` ready for deployment with the release package.
+
+In :file:`inasafe-dev` subsequent to building the context documentation,
+the :command:`git status` command should be used to
+ensure that all generated documentation is also under version control and then
+these files should be committed prior to tagging the release.
 
 **Outcome:** Sphinx documentation is compiled providing complete documentation
 to be shipped with the plugin.
@@ -279,105 +334,43 @@ Update plugin metadata and version number
 .........................................
 
 QGIS uses specific metadata to register the plugin.
-At the time of writing the mechanism for registering this metadata is in
-transition from an in-source based system to an .ini file based system.
-In the interim, both should be maintained.
 
-There are two files containing version numbers:
-
-* :file:`__init__.py`
 * :file:`metadata.txt`
 
-In the init file you would typically update the version entry like this::
-
-    def version():
-        """Version of the plugin."""
-        return 'Version 1.1.0'
-
-.. note:: Be very careful about editing metadata in __init__.py.
-   The system of storing metadata in QGIS plugins is being deprecated (from
-   QGIS 2.0) because it is extremely fragile and prone to breakage by poor text
-   formatting.
-
-In metadata you would typically update the version and status entries to::
+In this metadata you would typically update the version and status entries to::
 
     version=1.1.0
     # alpha, beta, rc or final
     status=beta
 
-Immediately after branching, and then change the status designation to final
-just prior to tagging the release.
+Immediately after tagging the previous release, and then change the status
+designation to final just prior to tagging the release.
 
-Both of these files should be updated to reflect the version number and the
-metadata.txt file should reflect the release status.
-
-**Outcome:** The plugin metadata to reflects the current version of
+**Outcome:** The plugin metadata reflects the current version of
 |project_name|.
 
-Generate a test package
------------------------
 
-At this point a test package should be generated that can be used to test
-the plugin in a clean room environment.
-A clean room environment comprises a system that has a fresh operating system
-installation with the desired version of QGIS installed,
-and **no other software**.
-It is probably a good practice to use machine virtualisation for this
-purpose, for example with images of a windows and a linux system installed.
-Some virtualisation tools such as vmware provide the ability to create a
-system snapshot and roll back to it.
+Merge to master
+---------------
 
-To generate a test package, use the :file:`scripts/release.sh` bash script.
-
-For exampled to create a test package for version 1.2.0 of the software,
-issue the following command::
-
-   scripts/release.sh 1.2.0
-
-The generated package will be placed in the /tmp directory of your linux
-system.
-
-Once the clean system is started, extract the package contents into the user's
-personal plugin directory.
-For example under Linux::
-
-   mkdir -p ~/.qgis2/python/plugins
-   cd ~/.qgis2/python/plugins
-   unzip inasafe.1.2.0.zip
-
-Now start QGIS and enable the plugin in the QGIS plugin manager (
-:menuselection:`Plugins --> Manage Plugins`).
-
-Branch the release
-------------------
-
-This step is only done for minor and major releases, point releases are only
-tagged.
-The branch should be named after the major and minor version numbers only -
-for example: :samp:`version-1_0`.
-The following console log illustrates how to create a local branch,
-push it to the origin repository, remove the local branch and then track the
-repository version of the branch locally::
-
-   git branch version-0_1
-   git push origin version-0_1
-   git branch -D version-0_1
-   git fetch origin
-   git branch --track version-0_1 origin/version-0_1
-   git checkout version-0_1
-
-
-**Outcome:** A branch on the remote repository named after the major and minor
-version numbers.
+When develop is in a release ready state, it should be merged to the master
+branch and all tests should pass on the master jenkins instance. The best
+way to facilitate the merge to master is to make a pull request from the
+main repository's ``develop`` branch.
 
 Tag the release
 ---------------
 
-.. note:: As of version 1.1.0 we will be cryptographically signing the release
-  tags using GPG (Gnu Privacy Guard), and annotating the git tag.
+As of 2.0.0 we only tag releases, not branch them (in keeping with gitflow
+methodology).
+
 
 Prerequisite
 ............
+
+As of version 1.1.0 we will be cryptographically signing the release
+tags using GPG (Gnu Privacy Guard), and annotating the git tag. You should
+ensure you have a GPG key set up in your user profile before tagging.
 
 You need to have a GPG key already (google GPG to see how to create one).
 
@@ -403,55 +396,68 @@ Tagging
 
 Tagging the release provides a 'known good' state for the software which
 represents a point in time where all of the above items in this list have
-been checked.
-The tag should be named after the major, minor and point release for example
-:samp:`version-1.2.0`.
+been checked. The tag should be named after the major, minor and point release
+for example :samp:`version-1_2_0`.
+
 If the release is a release candidate or and alpha release the letters
 :samp:`rc` or :samp:`a` respectively should be appended respectively,
 along with the related number.
+
 For example version 1.2.0 alpha 1 would be tagged as :samp:`version-1.2.0a1`.
-To tag the release simply do it in git as illustrated below.::
 
-   git tag -s version-1_1_0 -m "Version 1.1.0"
+To tag the release simply use the make target as illustrated below.::
 
-This should generate an output similar to the example shown below::
+    make tag
 
-    gpg: NOTE: old default options file `/home/timlinux/.gnupg/options' ignored
+You will be prompted for the semantic versioning tag number, your local
+git checkout will be tagged and then that tag will be pushed to the upstream
+repository 'origin' (which should be linked to the main upstream repo).
 
-    You need a passphrase to unlock the secret key for
-    user: "Tim Sutton (QGIS Key) <tim@linfiniti.com>"
-    1024-bit DSA key, ID 97626237, created 2007-07-19
+.. warning:: Only run ``make tag`` when you are on the ``master`` branch as
+    all tagged releases should be against ``master``.
 
-Depending on your operating system / desktop environment, you may be prompted
-for your GPG passphrase, or it will be automatically supplied if you are using
-an agent.
-
-Now we can go ahead and push the tag to the main repository::
-
-   git push --tags origin version-1_1_0
-
-.. note:: Replace 'dot' separators with underscores for the version number.
-.. note:: You can differentiate release
-   **branches** from release
-   **tags** by the fact that branch names have only the minor version number
-   (e.g. version-0_4) whereas release tags are reserved for point releases
-   (e.g. version-0_4_1).
+.. note:: Depending on your operating system / desktop environment, you may be
+    prompted for your GPG passphrase, or it will be automatically supplied if
+    you are using an agent.
 
 **Outcome:** The release is tagged in git and can be checked out at any point
-in the future.
-The tagged source tree can easily be downloaded at any point by visiting
-https://github.com/AIFDR/inasafe/tags
+in the future. The tagged source tree can easily be downloaded at any point by
+visiting https://github.com/AIFDR/inasafe/tags
+
+Generate a test package
+-----------------------
+
+At this point a package should be generated. To generate a test package, use
+the :file:`scripts/release.sh` bash script.
+
+For example to create a test package for version 1.2.0 of the software,
+issue the following command::
+
+   scripts/release.sh 1.2.0
+
+The generated package will be placed in the /tmp directory of your linux
+system.
+
+Test the package locally by extracting the package contents your user
+personal plugin directory. For example under Linux::
+
+   mkdir -p ~/.qgis2/python/plugins
+   cd ~/.qgis2/python/plugins
+   unzip inasafe.1.2.0.zip
+
+Now start QGIS and enable the plugin in the QGIS plugin manager (
+:menuselection:`Plugins --> Manage Plugins`).
 
 Upload the package
 ------------------
 
 QGIS provides an online plugin repository that centralizes the distribution
-and retrieval of plugins.
-It is the most efficient way to make your plugin available to the world at
-large.
+and retrieval of plugins. It is the most efficient way to make your plugin
+available to the world at large.
 
-* Upload the updated package zip file to old QGIS python plugin repository.
-* Upload the updated package zip file to the new QGIS python plugin repository.
+The plugin can be uploaded by going to the
+`InaSAFE plugin page <ttp://plugins.qgis.org/plugins/inasafe/>`_, logging in
+and creating a new version.
 
 Press announcements
 -------------------
