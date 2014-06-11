@@ -73,4 +73,4 @@ attributes of the aggregator itself.
    :align: center
 
 A similar user interface is provided in the
-:ref:`keywords wizard <keywords_wizard>`_ user interface.
+:ref:`keywords wizard <keywords_wizard>` user interface.

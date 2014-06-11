@@ -23,7 +23,6 @@ Developer Documentation Contents:
    platform_osx
    key_technologies
    coding_standards
-   rfc/index
    logging
    profiling
    i18n
