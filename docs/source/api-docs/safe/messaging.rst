@@ -4,8 +4,8 @@ Package::safe.messaging
 .. toctree::
    :maxdepth: 2
 
-   messaging/styles
-   messaging/error_message
    messaging/message
+   messaging/error_message
+   messaging/styles
    messaging/item
    messaging/example
