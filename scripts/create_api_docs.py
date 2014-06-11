@@ -20,7 +20,9 @@ INDEX_HEADER += '=================\n'
 INDEX_HEADER += 'This is the API documentation for the InaSAFE project.\n'
 INDEX_HEADER += 'You can find out more about the InaSAFE project by visiting\n'
 INDEX_HEADER += '`inasafe.org <http://www.inasafe.org/>`_.\n\n'
-EXCLUDED_PACKAGES = ['i18n', 'test', 'converter_data', 'ui', 'resources']
+# known packages/directories/modules that don't have python files in it.
+EXCLUDED_PACKAGES = [
+    'i18n', 'test', 'converter_data', 'ui', 'resources', 'fixtures']
 
 
 def create_top_level_index_entry(title, max_depth, subtitles):
@@ -62,12 +64,11 @@ def create_package_level_rst_index_file(
     :type max_depth: int
 
     :param modules: list of module in the package.
-    :type modules: str
+    :type modules: list
 
     :return: A text for the content of the index file.
     :rtype: str
     """
-    excluded_modules = ['converter_data']
     if inner_packages is None:
         inner_packages = []
     return_text = 'Package::' + package_name
@@ -77,7 +78,7 @@ def create_package_level_rst_index_file(
     return_text += '   :maxdepth: ' + str(max_depth) + '\n\n'
     upper_package = package_name.split('.')[-1]
     for module in modules:
-        if module in excluded_modules:
+        if module in EXCLUDED_PACKAGES:
             continue
         return_text += '   ' + upper_package + os.sep + module[:-3] + '\n'
     for inner_package in inner_packages:

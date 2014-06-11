@@ -18,4 +18,3 @@ Package::realtime
    realtime/netcdf_utilities
    realtime/make_map
    realtime/exceptions
-   realtime/fixtures
