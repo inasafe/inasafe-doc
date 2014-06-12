@@ -35,8 +35,8 @@ If you are using Linux you can either basically do the same with the
 exception that you will have to connect to a port (mostly 8888) on your
 localhost and add the SECRET and the folder to sync to there.
 
-Or you can give `docker <http://www.docker.io>` a try and checkout the
-`inasafe-infrastructure <https://github.com/AIFDR/inasafe-infrastructure>`
+Or you can give `docker <http://www.docker.io>`_ a try and checkout the
+`inasafe-infrastructure <https://github.com/AIFDR/inasafe-infrastructure>`_
 repository with its btsync Dockerfile.
 
 If you only want to clone the data you just have to run the
@@ -55,7 +55,7 @@ The Path where to sync to is configurable by adjusting the Variable in the
 At the same place you can also change the name of the Docker Container.
 
 If you just want to start a sync container with any other secret start
-:command:`rundocker.sh` with an added SECRET afterwards
+:command:`rundocker.sh` with an added SECRET added as argument:
 ::
 
   ./rundocker.sh THISISMYSECRET
