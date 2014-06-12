@@ -191,11 +191,14 @@ def replace_italic(text):
     return text.replace('<i>', '*')
 
 
-def format_rst_paragraph(paragraph, width=79):
+def format_rst_paragraph(paragraph, prefix=None, width=79):
     """ Convert a paragraph, with html formatting to rst.
 
     :param paragraph: The paragraph to be formatted.
     :type paragraph: str
+
+    :param prefix: Text to highlight and prefix to paragraph.
+    :type prefix: str, None
 
     :param width: The width of the paragraph.
     :type width: int
@@ -205,6 +208,8 @@ def format_rst_paragraph(paragraph, width=79):
     """
     paragraph = replace_bold(paragraph)
     paragraph = replace_italic(paragraph)
+    if prefix:
+        paragraph = '**%s**: %s' % (prefix, paragraph)
     paragraph = wrap(paragraph, width)
     return '\n'.join(paragraph)
 

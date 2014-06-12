@@ -17,6 +17,7 @@ __copyright__ += 'Disaster Reduction'
 from rst_generation_tools import SimpleRstTableFormatter as SRTF
 from rst_generation_tools import format_rst_paragraph
 from inasafe.safe_qgis.safe_interface import get_plugins
+from inasafe.safe import get_version
 from jinja2 import Template
 import os
 
@@ -31,7 +32,7 @@ class UtilityMixin(object):
         return unique
 
 
-class MetadataExtractor(object, UtilityMixin):
+class MetadataExtractor(UtilityMixin):
     """Helper class to extract our requeride metadata from the IF's metadata
 
     TODO: Add a rich description of which data is to be collected.
@@ -155,7 +156,10 @@ if __name__ == "__main__":
         units = me.get_units_subcategory('hazard', subcategory)
         units_content = [['units', unit['name']] for unit in units]
         units_description = [
-            format_rst_paragraph(unit['description']) for unit in units]
+            format_rst_paragraph(
+                unit['description'],
+                prefix=unit['name']
+            ) for unit in units]
         units_table = SRTF(['Key', 'Allowed Values'], units_content)
 
         hazard_subcategories.append({
@@ -168,7 +172,10 @@ if __name__ == "__main__":
         units = me.get_units_subcategory('exposure', subcategory)
         units_content = [['units', unit['name']] for unit in units]
         units_description = [
-            format_rst_paragraph(unit['description']) for unit in units]
+            format_rst_paragraph(
+                unit['description'],
+                prefix=unit['name']
+            ) for unit in units]
         units_table = SRTF(['Key', 'Allowed Values'], units_content)
 
         exposure_subcategories.append({
@@ -181,7 +188,8 @@ if __name__ == "__main__":
         'subcategrory_hazard_table': subcategrory_hazard_table(),
         'subcategrory_exposure_table': subcategrory_exposure_table(),
         'hazard_subcategories': hazard_subcategories,
-        'exposure_subcategories': exposure_subcategories
+        'exposure_subcategories': exposure_subcategories,
+        'version': get_version()
     }
 
     file_path = os.path.dirname(os.path.realpath(__file__))
