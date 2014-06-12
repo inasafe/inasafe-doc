@@ -310,7 +310,7 @@ def main():
             api_docs_path=api_docs_path,
             max_depth=max_depth)
 
-    print 'Fin.'
+    print 'Done.'
 
 if __name__ == '__main__':
     main()
