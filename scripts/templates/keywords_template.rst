@@ -63,15 +63,7 @@ Category
 Every dataset should have a category assigned to it.
 Category should be written in lower case.
 
-.. table::
-
-   ========    ==============  
-   Key         Allowed Values  
-   ========    ==============  
-   category    exposure        
-   category    hazard          
-   ========    ==============  
-
+{{ category_table }}
 
 Example keywords file entry
 ::
@@ -85,34 +77,13 @@ The selection of a subcategory value is dependent on the category:
 
 Valid subcategories for category 'hazard':
 
-.. table::
-
-   ===========    ==============  
-   Key            Allowed Values  
-   ===========    ==============  
-   subcategory    earthquake      
-   subcategory    flood           
-   subcategory    generic         
-   subcategory    tephra          
-   subcategory    tsunami         
-   subcategory    volcano         
-   ===========    ==============  
-
+{{ subcategrory_hazard_table }}
 
 Where tephra is volcanic ashfall.
 
 Valid subcategories for category 'exposure':
 
-.. table::
-
-   ===========    ==============  
-   Key            Allowed Values  
-   ===========    ==============  
-   subcategory    population      
-   subcategory    road            
-   subcategory    structure       
-   ===========    ==============  
-
+{{ subcategrory_exposure_table }}
 
 Example keywords file entry
 ::
@@ -130,128 +101,36 @@ by each data entity (a grid cell or a vector feature) in a layer.
 Valid Units for Hazard Subcategories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Valid units for subcategory 'flood' or subcategory 'tsunami':
+{%- for subcategory in hazard_subcategories %}
+
+Valid units for {% for subcategory_name in subcategory['names'] -%}
+ subcategory '{{ subcategory_name }}'
+{%- if not loop.last %} or {% endif %}{% endfor %}:
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. table::
+{{ subcategory['table'] -}}
 
-   =====    ==============  
-   Key      Allowed Values  
-   =====    ==============  
-   units    metres          
-   units    feet            
-   units    wet / dry       
-   units    normalised      
-   =====    ==============  
-
-**metres**: **metres** are a metric unit of measure. There are 100 centimetres
-in 1 metre. In this case **metres** are used to describe the water depth.
-
-**feet**: **Feet** are an imperial unit of measure. There are 12 inches in 1
-foot and 3 feet in 1 yard. In this case **feet** are used to describe the water
-depth.
-
-**wet / dry**: This is a binary description for an area. The area is either
-**wet** (affected by flood water) or **dry** (not affected by flood water).
-This unit does not describe how **wet** or **dry** an area is.
-
-**normalised**: **Normalised** data can be hazard or exposure data where the
-values have been classified or coded.
-
-
-Valid units for subcategory 'volcano' or subcategory 'tephra':
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-
-.. table::
-
-   =====    ===================  
-   Key      Allowed Values       
-   =====    ===================  
-   units    normalised           
-   units    volcano categorical  
-   =====    ===================  
-
-**normalised**: **Normalised** data can be hazard or exposure data where the
-values have been classified or coded.
-
-**volcano categorical**: This is a ternary description for an area. The area is
-either has **low**, **medium**, or **high** impact from the volcano.
-
-
-Valid units for subcategory 'earthquake':
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-
-.. table::
-
-   =====    ==============  
-   Key      Allowed Values  
-   =====    ==============  
-   units    MMI             
-   units    normalised      
-   =====    ==============  
-
-**MMI**: The **Modified Mercalli Intensity (MMI)** scale describes the
-intensity of ground shaking from a earthquake based on the effects observed by
-people at the surface.
-
-**normalised**: **Normalised** data can be hazard or exposure data where the
-values have been classified or coded.
-
+{% for description in subcategory['description'] %}
+{{ description }}
+{% endfor %}
+{%- endfor %}
 
 Valid Units for Exposure Subcategories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Valid units for subcategory 'population':
+{%- for subcategory in exposure_subcategories %}
+
+Valid units for {% for subcategory_name in subcategory['names'] -%}
+ subcategory '{{ subcategory_name }}'
+{%- if not loop.last %} or {% endif %}{% endfor %}:
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
-.. table::
+{{ subcategory['table'] -}}
 
-   =====    ================  
-   Key      Allowed Values    
-   =====    ================  
-   units    people per pixel  
-   =====    ================  
-
-**people per pixel**: **Count** is the number of people in each cell. For
-example **population count** might be measured as the number of people per
-pixel in a raster data set. This unit is relevant for population rasters in
-geographic coordinates.
-
-
-Valid units for subcategory 'structure':
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-
-.. table::
-
-   =====    ================  
-   Key      Allowed Values    
-   =====    ================  
-   units    building type     
-   units    building generic  
-   =====    ================  
-
-**building type**: **Building type** is a unit that represent the type of the
-building. In this case, building type will be used to group the result of
-impact function.
-
-**building generic**: **Building generic** unit means that there is no building
-type attribute in the exposure data.
-
-
-Valid units for subcategory 'road':
-"""""""""""""""""""""""""""""""""""""""""""""""""""
-
-.. table::
-
-   =====    ==============  
-   Key      Allowed Values  
-   =====    ==============  
-   units    Road Type       
-   =====    ==============  
-
-**Road Type**: **Road type** is a unit that represent the type of the road. In
-this case, road type will be used to group the result of impact function.
-
+{% for description in subcategory['description'] %}
+{{ description }}
+{% endfor %}
+{%- endfor %}
 
 Datatype
 ........
@@ -381,4 +260,4 @@ displayed.
 .. note:: This document is automatically generated. It can be regenerated by
 running the python script /inasafe-doc/scripts/generate_keywords.py.
 
-This document was generated based on inasafe 2.1.0b0.
+This document was generated based on inasafe {{ version }}.
