@@ -1,7 +1,7 @@
 .. _references:
 
-Reference
-=========
+References
+==========
 
 |project_name| is being referenced in following articles:
 
@@ -13,4 +13,5 @@ Reference
 * `GFDRR - Preparing nations to be a step ahead <https://www.gfdrr.org/node/1416>`_
 * `AIFDR - InaSAFE launch <http://www.aifdr.org/index.php/indonesia-scenario-assessment-for-emergencies-inasafe/>`_
 * `Presentation presented by Ole Nielsen <http://www.gfdrr.org/sites/gfdrr.org/files/Session%202_P1_Ole%20Nielsen_AIFDR_inaSAFE.pdf>`_
-* `FutureGov - How can government open data and open source enable disaster risk management <http://www.futuregov.asia/articles/2014/may/30/how-can-government-open-data-and-open-source-enabl/>`_
+* `30 May 2014 - FutureGov - How can government open data and open source enable disaster risk management <http://www.futuregov.asia/articles/2014/may/30/how-can-government-open-data-and-open-source-enabl/>`_
+* `7 April 2014 - Deteksi Bencana, BNPB dan Australia Rilis InaSAFE 2.0 <http://industri.bisnis.com/read/20140407/84/217678/deteksi-bencana-bnpb-dan-australia-rilis-inasafe-2.0/>`_

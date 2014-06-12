@@ -21,7 +21,7 @@ If you cannot find these issues happening anymore, please report back.
    activities
    sponsors
    governance/index
-   scientific-references
+   references
    faq
    screenshots
    known_issues
