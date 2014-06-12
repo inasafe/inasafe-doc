@@ -1,25 +1,26 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# 
+#
 # Translators:
-# adissadis <adz.only@gmail.com>, 2013
-# dewisulistio <dewi.sulistioningrum@hotosm.org>, 2013
-# dika <mahardika.fadmastuti@gmail.com>, 2013
-# emirhartato <emir.hartato@gmail.com>, 2013
-# raniedwianugrah <raniedwianugrah@gmail.com>, 2013
+# adityo dwijananto <adz.only@gmail.com>, 2013
+# Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2013
+# mahardika fadmastuti <mahardika.fadmastuti@gmail.com>, 2013
+# Emir Hartato <emir.hartato@gmail.com>, 2013
+# Ranie Dwi Anugrah <raniedwianugrah@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-19 10:45+0100\n"
-"PO-Revision-Date: 2014-05-09 08:20+0000\n"
-"Last-Translator: emirhartato <emir.hartato@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-develop/language/id/)\n"
+"POT-Creation-Date: 2014-06-12 08:53+0100\n"
+"PO-Revision-Date: 2014-06-12 07:37+0000\n"
+"Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
+"develop/language/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 # 786cedb3532c4c9da8bb614f833fa5ff
@@ -57,14 +58,18 @@ msgstr "**Judul**: Terdampak Banjir"
 msgid ""
 "**Synopsis**: To assess the impacts of (flood or tsunami) inundation on "
 "building footprints originating from OpenStreetMap (OSM)."
-msgstr "**Sinopsis**: Untuk menilai dampak genangan (banjir atau tsunami) terhadap gambaran bangunan yang berasal dari OpenStreetMap (OSM)."
+msgstr ""
+"**Sinopsis**: Untuk menilai dampak genangan (banjir atau tsunami) terhadap "
+"gambaran bangunan yang berasal dari OpenStreetMap (OSM)."
 
 # e4ea94813c1e482e8ac20f6323003a55
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:26
 msgid ""
 "**Actions**: Provide details about where critical infrastructure might be "
 "flooded"
-msgstr "**Actions**: Menyediakan rincian mengenai dimana infrastruktur kritis yang mungkin tergenang banjir"
+msgstr ""
+"**Actions**: Menyediakan rincian mengenai dimana infrastruktur kritis yang "
+"mungkin tergenang banjir"
 
 # 4b5d8d933b154e709bbf143f139c34ea
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:29
@@ -74,29 +79,42 @@ msgid ""
 "an inundated area. In the latter case, the following attributes are "
 "recognised (in order): \"affected\" (True or False) or \"FLOODPRONE\" (Yes "
 "or No). (True may be represented as 1, False as 0"
-msgstr "**Input Ancaman**: Layer raster ancaman dimana setiap sel mewakili kedalaman banjir (dalam meter), atau layer vektor poligon dimana setiap poligon mewakili area yang tergenang. Dalam kasus terakhir, atribut berikut dikenal (dalam urutan): \"affected\" (True atau False) atau  \"FLOODPRONE\" (Yes atau No). (True bisa diwakilkan sebagai 1, False sebagai 0"
+msgstr ""
+"**Input Ancaman**: Layer raster ancaman dimana setiap sel mewakili kedalaman "
+"banjir (dalam meter), atau layer vektor poligon dimana setiap poligon "
+"mewakili area yang tergenang. Dalam kasus terakhir, atribut berikut dikenal "
+"(dalam urutan): \"affected\" (True atau False) atau  \"FLOODPRONE\" (Yes "
+"atau No). (True bisa diwakilkan sebagai 1, False sebagai 0"
 
 # 6dcde0e1f9934d96bd9c88ad5a2fc3c7
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:32
 msgid ""
 "**Exposure Input**: Vector polygon layer extracted from OSM where each "
 "polygon represents the footprint of a building."
-msgstr "**Input Paparan**: Layer vektor poligon yang diekstrak dari OSM dimana setiap poligon mewakili gambaran dari sebuah bangunan."
+msgstr ""
+"**Input Paparan**: Layer vektor poligon yang diekstrak dari OSM dimana "
+"setiap poligon mewakili gambaran dari sebuah bangunan."
 
 # 8d576dad056f4a6da07193f2829d2a42
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:35
 msgid ""
 "**Output**: Vector layer contains building is estimated to be flooded and "
 "the breakdown of the building by type."
-msgstr "**Output**: Layer vektor berisi bangunan yang diperkirakan akan terkena banjir dan kerusakan bangunan menurut jenis bangunannya. "
+msgstr ""
+"**Output**: Layer vektor berisi bangunan yang diperkirakan akan terkena "
+"banjir dan kerusakan bangunan menurut jenis bangunannya. "
 
 # afcd3f5292ba420981aa387872d461f3
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:38
 msgid ""
-"**Limitation**: This function only flags buildings as impacted or not either"
-" based on a fixed threshold in case of raster hazard or the the attributes "
+"**Limitation**: This function only flags buildings as impacted or not either "
+"based on a fixed threshold in case of raster hazard or the the attributes "
 "mentioned under input in case of vector hazard."
-msgstr "**Batasan**: Fungsi ini hanya memberi tanda bangunan sebagai terdampak atau tidak berdasarkan ambang batas yang ditetapkan untuk kasus ancaman (raster data) atau data atribut yang telah dilengkapi saat input data untuk kasus ancaman (vektor data)."
+msgstr ""
+"**Batasan**: Fungsi ini hanya memberi tanda bangunan sebagai terdampak atau "
+"tidak berdasarkan ambang batas yang ditetapkan untuk kasus ancaman (raster "
+"data) atau data atribut yang telah dilengkapi saat input data untuk kasus "
+"ancaman (vektor data)."
 
 # f6815211a3644dd49cf6d6ad8e5bfa93
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:42
@@ -106,29 +124,42 @@ msgstr "Detail"
 # 59c4f29dc5964bc2ad9bfabadf0f090f
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:44
 msgid ""
-"The inundation status is calculated for each building (using the centroid if"
-" it is a polygon) based on the hazard levels provided. if the hazard is "
-"given as a raster a threshold of 1 meter is used. This is configurable "
-"through the InaSAFE interface. If the hazard is given as a vector polygon "
-"layer buildings are considered to be impacted depending on the value of "
-"hazard attributes (in order) \"affected\" or \"FLOODPRONE\": If a building "
-"is in a region that has attribute \"affected\" set to True (or 1) it is "
-"impacted. If attribute \"affected\" does not exist but \"FLOODPRONE\" does, "
-"then the building is considered impacted if \"FLOODPRONE\" is \"yes\". If "
-"neither \"affected\" nor \"FLOODPRONE\" is available, a building will be "
-"impacted if it belongs to any polygon. The latter behaviour is implemented "
-"through the attribute \"inapolygon\" which is automatically assigned."
-msgstr "Status genangan dihitung untuk setiap bangunan (menggunakan sentroid jika berupa  poligon) berdasarkan tingkat bahaya disediakan. Apabila bahaya tersebut diberikan sebagai raster maka ambang batas 1 meter digunakan. Hal ini dapat dikonfigurasi melalui antarmuka InaSAFE. Jika bahaya diberikan sebagai bangunan poligon vektor lapisan dianggap terpengaruh tergantung pada nilai atribut bahaya (dalam urutan) \"affected\" atau \"FLOODPRONE\": Jika sebuah bangunan di wilayah yang memiliki atribut \"affected\" bernilai True (atau 1) maka bangunan itu terkena dampak. Jika atribut \"terkena\" tidak ada tapi \"FLOODPRONE\" ada, maka bangunan dianggap berdampak jika \"FLOODPRONE\" bernila \"yes\". Jika tidak ada \"affected\" atau \"FLOODPRONE\" yang tersedia, bangunan akan terkena dampak jika dimiliki oleh poligon manapun. Perilaku yang terakhir diimplementasikan melalui \"\" atribut inapolygon yang secara otomatis ditetapkan."
+"The inundation status is calculated for each building (using the centroid if "
+"it is a polygon) based on the hazard levels provided. if the hazard is given "
+"as a raster a threshold of 1 meter is used. This is configurable through the "
+"InaSAFE interface. If the hazard is given as a vector polygon layer "
+"buildings are considered to be impacted depending on the value of hazard "
+"attributes (in order) \"affected\" or \"FLOODPRONE\": If a building is in a "
+"region that has attribute \"affected\" set to True (or 1) it is impacted. If "
+"attribute \"affected\" does not exist but \"FLOODPRONE\" does, then the "
+"building is considered impacted if \"FLOODPRONE\" is \"yes\". If neither "
+"\"affected\" nor \"FLOODPRONE\" is available, a building will be impacted if "
+"it belongs to any polygon. The latter behaviour is implemented through the "
+"attribute \"inapolygon\" which is automatically assigned."
+msgstr ""
+"Status genangan dihitung untuk setiap bangunan (menggunakan sentroid jika "
+"berupa  poligon) berdasarkan tingkat bahaya disediakan. Apabila bahaya "
+"tersebut diberikan sebagai raster maka ambang batas 1 meter digunakan. Hal "
+"ini dapat dikonfigurasi melalui antarmuka InaSAFE. Jika bahaya diberikan "
+"sebagai bangunan poligon vektor lapisan dianggap terpengaruh tergantung pada "
+"nilai atribut bahaya (dalam urutan) \"affected\" atau \"FLOODPRONE\": Jika "
+"sebuah bangunan di wilayah yang memiliki atribut \"affected\" bernilai True "
+"(atau 1) maka bangunan itu terkena dampak. Jika atribut \"terkena\" tidak "
+"ada tapi \"FLOODPRONE\" ada, maka bangunan dianggap berdampak jika "
+"\"FLOODPRONE\" bernila \"yes\". Jika tidak ada \"affected\" atau \"FLOODPRONE"
+"\" yang tersedia, bangunan akan terkena dampak jika dimiliki oleh poligon "
+"manapun. Perilaku yang terakhir diimplementasikan melalui \"\" atribut "
+"inapolygon yang secara otomatis ditetapkan."
 
-# 2d11bf6e2f7640278d26db0cb8e81869
+# 4a6a3a2c7f0b405499f13ffe1840cf41
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:47
-msgid "Docstring"
-msgstr "Docstring"
+msgid "Doc String"
+msgstr ""
 
-# 5961429b16404653903981092e33c842
+# 9f784ba6c6744f59ba0e17207d01d581
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:49
-msgid "Inundation impact on building data"
-msgstr "Dampak genangan pada data bangunan"
+msgid "Inundation impact on building data."
+msgstr ""
 
 # d7fa3c3fd6954545a17b0a680ad1bbfb
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:51
@@ -137,11 +168,16 @@ msgid ""
 "testing a function, not the real one :rating 0 :param requires "
 "category=='hazard' and                     subcategory in ['flood', "
 "'tsunami']"
-msgstr ":author Ole Nielsen, Kristy van Putten # penilaian di bawah ini hanya untuk menguji fungsi, bukan yang sebenarnya  :rating 0 :param membutuhkan category=='hazard' dan subcategory dalam ['flood', 'tsunami']"
+msgstr ""
+":author Ole Nielsen, Kristy van Putten # penilaian di bawah ini hanya untuk "
+"menguji fungsi, bukan yang sebenarnya  :rating 0 :param membutuhkan "
+"category=='hazard' dan subcategory dalam ['flood', 'tsunami']"
 
 # d3d912971ab94eab951fe483b4708028
 #: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:56
 msgid ""
 ":param requires category=='exposure' and                     "
 "subcategory=='structure' and                     layertype=='vector'"
-msgstr ":param membutuhkan category=='exposure' dan subcategory=='structure' dan layertype=='vector'"
+msgstr ""
+":param membutuhkan category=='exposure' dan subcategory=='structure' dan "
+"layertype=='vector'"

@@ -1,0 +1,123 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-06-12 08:54+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 5522333a43f44bc4a9a10c02f8fd926d
+#: ../../source/training/test_data.rst:8
+msgid "Test Data"
+msgstr ""
+
+# fceea219bc70401eac7f48bbe6b12ef3
+#: ../../source/training/test_data.rst:11
+msgid "Availability"
+msgstr ""
+
+# 801048968f84489eaec65b88b1fc746a
+#: ../../source/training/test_data.rst:13
+msgid ""
+"|project_name| provides a huge bunch of Test Data available on the net. If "
+"you want to select only a specific training dataset you can easily go to "
+"http://data.inasafe.org and download the package you need."
+msgstr ""
+
+# 8a0b548936424449b168d504b8955622
+#: ../../source/training/test_data.rst:17
+msgid ""
+"For areas with bad internet connection (and for people who want to download "
+"everything in one go) we make the whole data available with :ref:`Bittorrent "
+"Sync <btsync>`."
+msgstr ""
+
+# eb355ccb128741399560b6333b2cc135
+#: ../../source/training/test_data.rst:24
+msgid "Bittorrent Sync"
+msgstr ""
+
+# af1a92637e834c8d9665f8dd03e1b1f2
+#: ../../source/training/test_data.rst:26
+msgid ""
+"To download everything in one go you need to install BT Sync from their "
+"homepage at http://www.bittorrent.com/sync"
+msgstr ""
+
+# 22c6ea432b0345778eb95bff0da7499e
+#: ../../source/training/test_data.rst:29
+msgid ""
+"If you are using Windows or MacOS just download the package, follow their "
+"install instructions and use"
+msgstr ""
+
+# d18c65df5a8d446783478edd32b10dc0
+#: ../../source/training/test_data.rst:32
+msgid "SECRET: BSU2UCAVRV7P4CHRYOZGIRQ2VN6CH4JP3"
+msgstr ""
+
+# 0fe3823f96e243cbae3d4ddbe33215e1
+#: ../../source/training/test_data.rst:34
+msgid ""
+"as the SECRET to enter. Select the folder where you wish to sync the data "
+"and press :guilabel:`OK` to start downloading."
+msgstr ""
+
+# 35c339b7e5d8463a98312a5f372d71e6
+#: ../../source/training/test_data.rst:38
+msgid ""
+"If you are using Linux you can either basically do the same with the "
+"exception that you will have to connect to a port (mostly 8888) on your "
+"localhost and add the SECRET and the folder to sync to there."
+msgstr ""
+
+# 2e1946e26ef147f49a236ed31c26a893
+#: ../../source/training/test_data.rst:42
+msgid ""
+"Or you can give `docker <http://www.docker.io>` a try and checkout the "
+"`inasafe-infrastructure <https://github.com/AIFDR/inasafe-infrastructure>` "
+"repository with its btsync Dockerfile."
+msgstr ""
+
+# e755f1617b80484e961f03b2e5fed384
+#: ../../source/training/test_data.rst:46
+msgid "If you only want to clone the data you just have to run the ::"
+msgstr ""
+
+# e752ddfe49874ba284c60cb29797b286
+#: ../../source/training/test_data.rst:51
+msgid ""
+"command in a shell. This will automatically start a docker container, "
+"download and run Bittorrent Sync with the Read Only Secret and Sync all data "
+"to :file:`/var/docker/volumes/btsync` directory."
+msgstr ""
+
+# 803860c26c11461f8a7799999cdb5308
+#: ../../source/training/test_data.rst:56
+msgid ""
+"The Path where to sync to is configurable by adjusting the Variable in the :"
+"command:`rundocker.sh` script which is called DATADIR."
+msgstr ""
+
+# 888eeac19f1b41d3939fb0db6203d6d6
+#: ../../source/training/test_data.rst:59
+msgid "At the same place you can also change the name of the Docker Container."
+msgstr ""
+
+# c201e21d1c4b42b6a49be18ad0477ba8
+#: ../../source/training/test_data.rst:61
+msgid ""
+"If you just want to start a sync container with any other secret start :"
+"command:`rundocker.sh` with an added SECRET afterwards ::"
+msgstr ""
