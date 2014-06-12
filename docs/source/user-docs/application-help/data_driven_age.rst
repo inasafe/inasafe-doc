@@ -58,14 +58,26 @@ The keywords editor graphical user interface for Age Postprocessing.
 There are two ways to specifying age postprocessing options:
 
 1. Ratio Attributes: In this mode, data used for postprocessing is from the
-attributes of the aggregator itself.
+attributes of the aggregation layer itself. Consider the example below where
+each aggregation area has an attribute indicating the rations of age or gender.
+
+.. figure:: /static/user-docs/example_age_ratio_map.*
+   :scale: 75 %
+   :alt: Example age ration map for Jakarta
+   :align: center
+
+In the keywords editor you can refer to these attributes and the age and
+gender rations will be extrapolated based on the defined values.
 
 .. figure:: /static/user-docs/datadriven_postprocessing_config_by_attribute.*
    :scale: 75 %
    :alt: Age Post-processor configuration from layer attributes
    :align: center
 
-2. Ratio Defaults: In this mode, the default values will be used.
+2. Ratio Defaults: In this mode, the default values will be used. in this
+case you may not know per-area what the age and gender breakdowns are and wish
+to rather apply the rations globally (to all aggregation areas).
+
 
 .. figure:: /static/user-docs/datadriven_postprocessing_config_by_default.*
    :scale: 75 %
