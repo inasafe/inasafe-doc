@@ -14,10 +14,17 @@ __copyright__ = 'Copyright 2014, Australia Indonesia Facility for '
 __copyright__ += 'Disaster Reduction'
 
 
+import os
+user_home = os.environ["HOME"]
+
+import sys
+sys.path.append('%s/dev/python/inasafe' % user_home)
+
+from safe_qgis.safe_interface import get_plugins
+from safe import get_version
+
 from rst_generation_tools import SimpleRstTableFormatter as SRTF
 from rst_generation_tools import format_rst_paragraph
-from inasafe.safe_qgis.safe_interface import get_plugins
-from inasafe.safe import get_version
 from jinja2 import Template
 import os
 
