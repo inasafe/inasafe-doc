@@ -116,6 +116,10 @@ part of the |project_name| system:
     class SomeImpactFunction(FunctionProvider):
         """Example impact function
 
+
+The impact function class name `SomeImpactFunction` must be unique. If it is
+the same as that of an existing impact function, an exception will be raised.
+
 The impact function class must have some special tags in its docstring which
 are used to identify it and decide which layer types it is valid for.
 They are:
