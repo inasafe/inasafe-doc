@@ -1,7 +1,7 @@
 .. _converter:
 
-Converter
-=========
+Shakemap Converter
+==================
 
 Shakemaps are useful for carrying out contingency planning for the event of an
 earthquake. Normally these are distributed as grid.xml files which are not
@@ -23,6 +23,8 @@ it can be used immediately for analysis.
 To use this tool effectively:
 
  * Select a grid.xml for the input layer.
+ * Add the title of the shakemap that will be used for the keywords.
+ * Add the source of the shakemap that will also be used for the keywords.
  * Choose where to write the output layer to.
  * Choose the interpolation algorithm that should be used when converting the
    xml grid to a raster. If unsure keep the default.
