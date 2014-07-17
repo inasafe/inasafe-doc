@@ -27,7 +27,8 @@ by Tim Sutton (Linfiniti Consulting CC., funded by The World Bank ,
 Supported Platforms
 -------------------
 
-Currently only Ubuntu 12.04 is supported.
+Currently only Ubuntu 14.04 is supported.
+
 The software may work or can easily be made to work on other platforms but it
 is untested.
 
@@ -59,12 +60,12 @@ Architecture
 
 |project_name| Realtime is implemented by four main python modules:
 
-* **ftp_client** - A generic tool to fetch directory listings and
-  files from a remote server.
+* **sftp_client** - A generic tool to fetch directory listings and
+  files from a remote server. There is also an ftp_client module for
+  deployments where the shake maps are on an ftp server.
 
 * **shake_data** - A mostly generic tool to fetch shake files from an ftp
-  server.
-  There is an expectation that the server layout follows a simple flat
+  server. There is an expectation that the server layout follows a simple flat
   structure where files are named after the shake event and are in the format
   of shake data as provided by the USGS (XXXXXX TODO fact check XXXX).
   :samp:`ftp://118.97.83.243/20110413170148.inp.zip`
@@ -76,8 +77,8 @@ Architecture
     fetch, unpack, process and generate a report for a quake event.
     The module logic is based on the standard shake data packaging
     format supplied by the USGS.
-    We have restricted out implementation to require only the :file:`grid
-    .xml` file contained in the inp.zip file in the downloaded zip file.
+    We have restricted our implementation to require only the :file:`grid
+    .xml` file.
 * **make_map** - A simple python tool for running one or multiple shake
     analyses.
 
@@ -87,79 +88,35 @@ used for much of the data processing and reporting functionality.
 .. note:: Currently version 779e16603ee3fb8781c85a0e95913a1f6bbd2d6a is
     the 'known good' SHA1.
 
-Two of these dependencies is a template QGIS project and a map composition
+Two of these dependencies are a template QGIS project and a map composition
 template.
+
 We have designed the realtime reporting engine to allow end users to
 customise the map report to their needs with little or no programming.
 The primary way to achieve this is by opening the custom template
 :file:`realtime/fixtures/realtime-template.qpt` in QGIS and modifying
 its contents.
+
 You could also build a new template from scratch provided the item IDs listed
 in the section that follows are used.
 
 Installation
 ------------
 
-The supported platform is currently Ubuntu 12.04 LTS.
-The instructions provided below are for that OS.
-First we are going to hand build QGIS.
-This may not be needed in future once 2.0 packages are available,
-but for now it is recommended.
-::
+The realtime system is deployed as a collection of http://docker.com
+containers. The supported platform in the docker images is currently Ubuntu
+14.04 LTS. The instructions provided below assume the host OS is Ubuntu 14.04,
+although it should work on any platform where docker is supported (albeit with
+some adaptions to fit your OS).
 
-  sudo apt-get install python-software-properties
-  sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-  sudo apt-get update
-  sudo apt-get build-dep qgis
-  cd ~
-  mkdir -p dev/cpp
-  sudo mkdir /home/web
-  sudo chown <youruser>.<youruser> /home/web
-  cd ~/dev/cpp
-  sudo apt-get install git cmake-curses-gui
-  git clone git://github.com/qgis/QGIS.git
+There are 3 docker images used for deployment
 
-At this point you should enter ‘yes’ when prompted
-::
+* An image containing the actual realtime software
+* An image containing a simple ssh service for uploading shakemaps to
+* An image for apache to host the realtime front end
 
-  cd QGIS
-  mkdir build
-  cd build
-  cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local/qgis-realtime \
-  -DCMAKE_BUILD_TYPE=Debug
-  make -j4
-  sudo mkdir /usr/local/qgis-realtime
-  sudo chown <youruser>.<youruser> /usr/local/qgis-realtime
-  make install
-
-At this point you can test if your hand build QGIS is working by doing
-::
-
-  export LD_LIBRARY_PATH=/usr/local/qgis-realtime/lib
-  export QGIS_PREFIX_PATH=/usr/local/qgis-realtime
-  export PYTHONPATH=/usr/local/qgis-realtime/share/qgis/python
-  python
-  from qgis.core import *
-  ctrl-d
-
-You should see something like the listing below
-::
-
-  timlinux@waterfall:~/dev/python/inasafe-realtime$ python
-  Python 2.7.3 (default, Sep 26 2012, 21:51:14)
-  [GCC 4.7.2] on linux2
-  Type "help", "copyright", "credits" or "license" for more information.
-  >>> from qgis.core import *
-  >>>
-
-Get |project_name| ::
-
-  cd ~
-  mkdir -p dev/python
-  cd dev/python
-  git clone git://github.com/AIFDR/inasafe.git inasafe-realtime
-  cd inasafe-realtime
-  sudo apt-get install python-tz python-paramiko
+We have tried in the design to keep as much of the logic in docker and
+require as little configuration of the host system as possible. To begin you
 
 Setup Apache
 ::
