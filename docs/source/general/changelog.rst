@@ -7,13 +7,13 @@ Changelog for version |release|
 -------------------------------
 
 1. Raster flood on roads performance optimisation.
-2. Made it possible to suppress warning messages for missing print template
-   elements globally.
-3. Updated the template options
+2. Added data driven age postprocessing support
+3. New keywords wizard
+4. Analysis extents pre-and-postview tool
+5. Updated keywords editor user interface
 
-   Shakemap convertor has title and source
-   Analysis extent preview
-   Wizard
+This release also included many many bug fixes and 'under the hood'
+optimisations and improvements.
 
 Changelog for version 2.0.0
 ---------------------------
