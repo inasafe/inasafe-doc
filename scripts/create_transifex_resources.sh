@@ -60,4 +60,4 @@ done
 tx status
 
 # Push all the resources to the tx server
-tx push -s
+#tx push -s
