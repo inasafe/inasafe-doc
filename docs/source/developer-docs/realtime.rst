@@ -149,13 +149,18 @@ We have tried to build the system so that it can be generally installed and
 maintained without having root access to the host on which it runs. The reason
 for this is that it will be very likely installed on partner organisation's
 hardware / software and we would prefer to limit the invasiveness and potential
-for damaging other services. There is one installation task will need root /
-sudo access for, and that is to set up an apache reverse proxy into the
-realtime apache container. We will explain this step further below.
+for damaging other services. There are two installation tasks that you will need
+root / sudo access for:
+
+    * to set up an apache reverse proxy into the realtime apache container.
+        We will explain this step further below.
+    * to ensure that port 9222 is open on the host's firewall and is publicly
+        accessible (it will provide access for pushing shakemap data to the
+        host from a remote site).
 
 
-Checkout and run the orchestration script
------------------------------------------
+Checkout and run the orchestration build script
+-----------------------------------------------
 
 You should first checkout the docker orchestration script. This is a small
 repository that contains logic to build and deploy the full realtime
@@ -173,12 +178,137 @@ Now run the build script.::
 .. note:: You can also run the script with an optional argument which is a
     github username / organisation name. Use this argument when you wish
     to do testing by building against your own clones of each of the above
-    mentioned repositories.
+    mentioned repositories. One potential motivation for doing this is to
+    use :kdb:`apt-cacher-ng` to cache installation packages and make them
+    available to the build process.
 
 The build script will take some time to run as it checks out a copy of
 each docker repository and builds an image from it. In the case of the
 docker-realtime-inasafe image a pruned clone of the entire inasafe-dev repo
 is also made (which can take some time to checkout).
+
+At the end of the build script, you should have a collection of docker images
+something like this::
+
+    REPOSITORY                      TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+    aifdr/docker-realtime-inasafe   latest              eeddc5ad569a        11 minutes ago      1.188 GB
+    aifdr/docker-realtime-btsync    latest              9a4cdd32c449        49 minutes ago      234.8 MB
+    aifdr/docker-realtime-sftp      latest              800a8d7a7d0e        52 minutes ago      245.2 MB
+    aifdr/docker-realtime-apache    latest              25caae296541        55 minutes ago      259.4 MB
+
+You can generate a list similar to above by running the :kbd:`docker images` command.
+
+
+Deploy the docker containers as images
+--------------------------------------
+
+The above images need to be deployed into production - we do this by using
+the :file:`deploy.sh` script provided in the orchestration repository::
+
+    timlinux@overhang:~/dev/docker/docker-realtime-orchestration$ ./deploy.sh
+
+    ----------------------------------------
+    This script will deploy InaSAFE realtime
+    images as a series of docker containers
+    ----------------------------------------
+
+
+    Running apache container
+    =====================================
+    docker-realtime-apache is not running
+    5ac47064bf5d9d5d3a699c17373a971465e7da239e1ab0fb617c4d4e7e9af236
+
+    Running SFTP Server container
+    =====================================
+    docker-realtime-sftp is not running
+    86f3b480a5777267abe52ee7877161463f043ca6b82f646272663a48d2ad3714
+
+    Running btsync container
+    =====================================
+    docker-realtime-btsync is not running
+    41bc53a168252f0617ae3f8009beb2ecc3bea4cd34e7f3f2529ec1d6c2e86eda
+
+    Login details for SFTP container:
+    =====================================
+    User: realtime Password: aHoo7eigu6Me
+
+
+.. note:: You should make a careful note of the password provided under
+    **Login details for SFTP container**
+
+
+The deploy script runs a long running instance (container) of each of the
+following images:
+
+* btsync
+* sftp
+* apache
+
+The ``docker-realtime-inasafe`` image will be run as a short running instance by
+means of a cron job which we will explain below.
+
+
+Reverse proxy and firewall access for 9222
+------------------------------------------
+
+Proxy
+.....
+
+For end user visbility of the apache container (which hosts the final shakemap
+outputs), you should use apache or nginx on the host to act as a reverse proxy.
+It is also possible to publish the apache service directly from the docker
+apache using port forwarding from the docker container to the host's port 80
+but we do not recommend it. We provide an example configuration below based
+on nginx::
+
+    upstream realtime.inasafe.org { server localhost:8080;}
+
+    server {
+        listen      80;
+        server_name realtime.inasafe.org;
+        location    / {
+            proxy_pass  http://qgis-plugins;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+            proxy_set_header Host $http_host;
+            proxy_set_header X-Forwarded-For $remote_addr;
+        }
+    }
+
+This will present incoming traffic to the host on port 80 for domain
+`realtime.inasafe.org` as if it were a direct connection into the apache
+container.
+
+SFTP
+....
+
+For the sftp container you will need to ask the system administrator to open
+port 9222 on the host. For example if they are using "uncomplicated firewall"
+they could perform the following command to allow it::
+
+    sudo ufw allow 9222
+
+.. note:: The sysadmin may need to apply similar rules on other routing
+    equipment such as routers, switches etc. within the organisational network
+    where the host is running.
+
+
+Run the orchestrated docker group
+---------------------------------
+
+We can run the ``docker-realtime-inasafe`` image as if it was an application
+that will perform the complex of tasks needed to generate a new quake map should
+any shakemap files be pending processing. This can be initiated by using the
+:file:`run.sh` script provided in the orchestration repository - for example::
+
+    ./run.sh
+
+Which by default will produce no output since there are no shakemaps available::
+
+
+
+
 
 
 
