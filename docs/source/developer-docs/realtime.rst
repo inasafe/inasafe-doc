@@ -100,8 +100,8 @@ its contents.
 You could also build a new template from scratch provided the item IDs listed
 in the section that follows are used.
 
-Installation
-------------
+Installation Overview
+---------------------
 
 The realtime system is deployed as a collection of http://docker.com
 containers. The supported platform in the docker images is currently Ubuntu
@@ -109,14 +109,89 @@ containers. The supported platform in the docker images is currently Ubuntu
 although it should work on any platform where docker is supported (albeit with
 some adaptions to fit your OS).
 
-There are 3 docker images used for deployment
+There are 4 docker images used for deployment
 
-* An image containing the actual realtime software
-* An image containing a simple ssh service for uploading shakemaps to
-* An image for apache to host the realtime front end
+* **docker-realtime-inasafe:** An image containing the actual realtime software.
+* **docker-realtime-sftp:** An image containing a simple ssh service for
+  uploading shakemaps to.
+* **docker-realtime-apache:** An image for apache to host the realtime front end.
+* **docker-realtime-btsync:** An image containing the synchronised based data.
+  sets needed for the realtime map products.
+
+
+An additional git repository **docker-realtime-orchestration** contains helper
+scripts that will orchestrate the deployment of the above.
 
 We have tried in the design to keep as much of the logic in docker and
 require as little configuration of the host system as possible. To begin you
+need to have docker installed and we recommend to use the upstream docker
+packages and not the ubuntu provided images::
+
+    # Setup latest docker.io
+    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A
+    echo "deb https://get.docker.io/ubuntu docker main " > /etc/apt/sources.list.d/docker.list
+    apt-get update
+    apt-get install lxc-docker
+
+
+We also recommend adding the user administering the realtime deployment to the
+docker group::
+
+    sudo usermod -a -G docker <username>
+
+Where ``username`` should be substituted with the user who will administer
+the realtime system.
+
+.. note:: You should log out and in again for the above command to take effect.
+
+
+We have tried to build the system so that it can be generally installed and
+maintained without having root access to the host on which it runs. The reason
+for this is that it will be very likely installed on partner organisation's
+hardware / software and we would prefer to limit the invasiveness and potential
+for damaging other services. There is one installation task will need root /
+sudo access for, and that is to set up an apache reverse proxy into the
+realtime apache container. We will explain this step further below.
+
+
+Checkout and run the orchestration script
+-----------------------------------------
+
+You should first checkout the docker orchestration script. This is a small
+repository that contains logic to build and deploy the full realtime
+architecture.::
+
+    mkdir -p ~/dev/docker
+    cd ~/dev/docker
+    git clone git@github.com:AIFDR/docker-realtime-orchestration.git
+    cd docker-realtime-orchestration
+
+Now run the build script.::
+
+    ./build.sh
+
+.. note:: You can also run the script with an optional argument which is a
+    github username / organisation name. Use this argument when you wish
+    to do testing by building against your own clones of each of the above
+    mentioned repositories.
+
+The build script will take some time to run as it checks out a copy of
+each docker repository and builds an image from it. In the case of the
+docker-realtime-inasafe image a pruned clone of the entire inasafe-dev repo
+is also made (which can take some time to checkout).
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Setup Apache
 ::
