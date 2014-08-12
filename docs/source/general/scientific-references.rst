@@ -14,3 +14,6 @@ Reference
 * `AIFDR - InaSAFE launch <http://www.aifdr.org/index.php/indonesia-scenario-assessment-for-emergencies-inasafe/>`_
 * `Presentation presented by Ole Nielsen <http://www.gfdrr.org/sites/gfdrr.org/files/Session%202_P1_Ole%20Nielsen_AIFDR_inaSAFE.pdf>`_
 * `FutureGov - How can government open data and open source enable disaster risk management <http://www.futuregov.asia/articles/2014/may/30/how-can-government-open-data-and-open-source-enabl/>`_
+* `BloombergView - Seven Steps to Surviving a disaster <http://www.bloombergview.com/articles/2014-02-18/seven-steps-to-surviving-a-disaster>`_
+* `GISTimes - Disaster management with InaSAFE 2.0 <http://www.gistimes.com/2014/announcements/disaster-management-with-inasafe-2-0/>`_
+* `Development Seed - OpenStreetMap, Disaster Preparedness, and Growing Cities <http://developmentseed.org/blog/2014/07/01/osm-in-five-fastest-cities/>`_
