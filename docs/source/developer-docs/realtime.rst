@@ -309,76 +309,27 @@ Which by default will produce no output since there are no shakemaps available::
 
 
 
+Typically you will want to run this task every minute and process any new
+shakemaps that have arrived by the sftp services::
+
+    # m h  dom mon dow   command
+    * * * * * /home/<user>/dev/docker/docker-realtime-orchestration/run.sh
+    * * * * * date > /tmp/test.log
+
+.. note:: You should substitute <user> in the snippet above with your own user
+    name / the user name that runs the realtime services.
 
 
 
+Additional realtime utilities
+-----------------------------
+
+The utilities listed below can all be used to perform various administrative
+tasks within the realtime system::
 
 
 
-
-
-
-
-
-
-
-
-Setup Apache
-::
-
-  sudo apt-get install apache2-mpm-worker
-  cd /etc/apache2/sites-available
-  sudo cp ~/dev/python/inasafe-realtime/realtime/fixtures/web/quake-apache.conf .
-  sudo apt-get install rpl
-  sudo chown <yourname>.<yourname> quake-apache.conf
-  rpl “quake.linfiniti.com” “quake.<yourhost>” quake-apache.conf
-
-For local testing only you can use quake.localhost for your host then add
-this to your /etc/hosts
-::
-
-  127.0.0.1 localhost quake.localhost
-
-Now deploy your site
-::
-
-  sudo a2dissite default
-  sudo a2ensite quake-apache.conf
-  cd /home
-  chmod a+X web
-  mkdir web/quake
-  chmod a+X web/quake
-  cd /home/web/quake
-
-Just for testing do
-::
-
-  mkdir public
-  echo 'Hello' > public/foo.txt
-  sudo service apache2 restart
-
-Open your web browser and point it to: http://quake.localhost
-
-You should see a basic directory listing containing file foo.
-
-Now copy over some required datasets
-::
-
-  cd ~/dev/python/inasafe-realtime/realtime/fixtures/
-  wget http://quake.linfiniti.com/indonesia.sqlite
-
-  mkdir ~/dev/python/inasafe-realtime/realtime/fixtures/exposure
-  cd ~/dev/python/inasafe-realtime/realtime/fixtures/exposure
-  wget http://quake.linfiniti.com/population.tif
-  wget http://quake.linfiniti.com/population.keywords
-
-  cd /home/web/quake/public
-  wget http://quake.linfiniti.com/web.tar.gz
-  tar xfz web.tar.gz
-  rm web.tar.gz
-
-Running your first report
-::
+Run the latest report::
 
   cd ~/dev/python/inasafe-realtime
   scripts/make-latest-shakemap.sh
@@ -389,48 +340,13 @@ Running all back reports
   cd ~/dev/python/inasafe-realtime
   scripts/make-all-shakemaps.sh
 
-Listing shake files on ftp server
+Listing shake files on s/ftp server
 ::
 
   cd ~/dev/python/inasafe-realtime
   scripts/make-list-shakes.sh
 
 
-Cron Jobs
-::
-
-  There are two cron jobs - one to run the latest shake event regularly,
-  and one to synchronise all the shake outputs:
-
-    crontab -e
-
-Now add these lines (replacing <yourname>)
-::
-
-  * * * * * /home/<yourname>/dev/python/inasafe-realtime/realtime/fixtures/web/make-public.sh
-  * * * * * /home/<yourname>/bin/realtime.sh
-
-
-Finally make a small script to run the analysis every minute
-::
-
-  cd ~
-  mkdir bin
-  cd bin
-  touch realtime.sh
-  chmod +x realtime.sh
-
-Now edit the file and set its content to this
-::
-
-  #!/bin/bash
-  cd /home/<yourname>/dev/python/inasafe-realtime
-  scripts/make-latest-shakemap.sh
-
-You also need to have the standard datasets needed for the cartography:
-
-* population
-* indonesia.sqlite (can be changed by adjusting the QGIS project).
 
 QGIS Map Template Elements
 --------------------------
@@ -577,6 +493,7 @@ Customising the template
 You have a few options to customise the template - we have gone to great
 lengths to ensure that you can flexibly adjust the report composition
 **without doing any programming**.
+
 There are three primary ways you can achieve this:
 
 * Moving replacement tags into different elements, or removing them completely.
@@ -689,9 +606,9 @@ Batch validation & running
 The :file:`scripts/make-all-shakemaps.sh` provided in the |project_name|
 source tree will automate the production of one shakemap report per event
 found on the shake ftp server.
+
 It contains a number of environment variable settings which can be used to
-control batch execution.
-First a complete script listing
+control batch execution. First a complete script listing
 ::
 
     #!/bin/bash
@@ -715,89 +632,7 @@ First a complete script listing
 
 An example of the output produced from such a batch run is provided at:
 
-http://quake.linfiniti.com/
-
-Hosting the shakemaps
----------------------
-
-In this section we describe how to easily host the shakemaps on a public web
-site.
-
-An apache configuration file and a set of resources are provided to make it
-easy to host the shakemap outputs.
-The resources provided can easily be modified to provide a pleasing,
-user friendly directory listing of shakemap reports.
-
-.. note:: You should adapt the paths used below to match the configuration of
-    your system.
-
-First create a file (as root / sudo) with this content in your
-:file:`/etc/apache2/sites-available/quake-apache.conf.` for example
-::
-
-    <VirtualHost *:80>
-      ServerAdmin tim@linfiniti.com
-      ServerName quake.linfiniti.com
-
-      DocumentRoot /home/web/quake/public/
-      <Directory /home/web/quake/public/>
-        Options Indexes FollowSymLinks
-        IndexOptions +FancyIndexing
-        IndexOptions +FoldersFirst
-        IndexOptions +XHTML
-        IndexOptions +HTMLTable
-        IndexOptions +SuppressRules
-        HeaderName resource/header.html
-        ReadmeName resource/footer.html
-        IndexStyleSheet "resource/bootstrap.css"
-        IndexIgnore .htaccess /resource
-        AllowOverride None
-        Order allow,deny
-        allow from all
-      </Directory>
-
-      ErrorLog /var/log/apache2/quake.linfiniti.error.log
-      CustomLog /var/log/apache2/quake.linfiniti.access.log combined
-      ServerSignature Off
-
-    </VirtualHost>
-
-Now make the :file:`/home/web/quake/public` directory in which the outputs will
-be hosted
-::
-
-    mkdir -p /home/web/quake/public
-
-Unpack the :file:`realtime/fixtures/web/resource` directory into the above
-mentioned public directory.
-For example
-::
-
-    cd /home/web/quake/public
-    cp -r ~/dev/python/inasafe/realtime/fixtures/web/resource .
-
-Next ensure that apache has read access to your hosting directory
-::
-
-    chmod +X /home/web/quake/public
-    chmod +X /home/web/quake/public/resource
-
-You can customise the look and feel of the hosted site by editing the files in
-:file:`/home/web/quake/public/resource` (assumes basic knowledge of HTML).
-
-Lastly, you should regularly run a script to move generated pdf and png
-outputs into the public directory.
-An example of such a script is provided as
-:file:`realtime/fixtures/web/make-public.sh`.
-To run this script regularly, you could add it to a cron job e.g.
-::
-
-    crontab -e
-
-And then add a line like this to the cron file
-::
-
-    * * * * * /home/timlinux/dev/python/inasafe-realtime/realtime/fixtures/web/make-public.sh
+http://realtime.inasafe.org/
 
 .. note:: The resources used in the above examples are all available in the
     source code under :file:`realtime/fixtures/web`.
