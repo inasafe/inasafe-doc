@@ -3,7 +3,7 @@
 Training Materials
 ==================
 
-This section of the documentation contains step-by-step tutorials on using OpenStreetMap and |project_name| with QuantumGIS. It includes curricula and materials to be used in a set of trainings covering these topics.
+This section of the documentation contains step-by-step tutorials on using OpenStreetMap and |project_name| with QGIS. It includes curricula and materials to be used in a set of trainings covering these topics.
 
 +-------------------------+-----------------------+
 | Training                | Intended Length       |
