@@ -1,0 +1,347 @@
+{% extends "inasafe-base.html" %}
+{% set title = 'Home' %}
+
+{% block hero %}
+    <div style="float: left; margin-right: -30px">
+        <div class="hero-unit">
+        <a href="../en/index.html"><img src="_static/img/flags/gb.png"></a>
+        <a href="../id/index.html"><img src="_static/img/flags/id.png"></a>
+        <a href="../fr/index.html"><img src="_static/img/flags/fr.png"></a>
+        </div>
+    </div>
+    <h2>Welcome to the <span class="inasafe">InaSAFE</span> project!</h2>
+    <div id="myCarousel" class="carousel slide">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+            <div class="active item">
+                <img src="{{ pathto('_static/img/carousel/usermap.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4>
+                    <a href="{{ pathto(master_doc) }}/../user-docs/getting_involved.html#add-to-usermap">How to Add</a>
+                    yourself to the <a href="http://users.inasafe.org/">InaSAFE Usermap</a></h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/team.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> developer 'code sprint'.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/codesprint1.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> 'code sprint'.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/jakarta.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4>Densely populated areas are vulnerable to disasters.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/codesprint2.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> 'code sprint'.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/hot-training2.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> HOT-Training.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/codesprint3.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> 'code sprint'.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/screenshot.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> earthquake on buildings scenario.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/translators.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> developer training session.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/codesprint4.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> 'code sprint'.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/hot-training.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> 'Train the Trainer' session.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/inasafelaunch.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> roll out in Indonesia.</h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/hot-training1.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4><span class="inasafe">InaSAFE</span> HOT-Training.</h4>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+    <script type="text/javascript">$('.carousel').carousel();</script>
+{% endblock %}
+{% block body %}
+        <div class="row" id="blocks-row">
+            <div class="span4">
+                {# We put the admonition inside the span because adding border #}
+                {# to the span will mess up the layout #}
+                <div class="admonition">
+                    <h3>What is <span class="inasafe">InaSAFE</span>?</h3>
+                    <p><img src="{{ pathto('_static/img/logo.png', 1)}}"/>
+                        <span class="inasafe">InaSAFE</span> is free software
+                        that produces realistic natural hazard impact
+                        scenarios for better planning, preparedness and
+                        response activities. It provides a simple but
+                        rigorous way to combine data from scientists, local
+                        governments and communities to provide insights into
+                        the likely impacts of future disaster events.
+                    </p>
+                    <p>
+                    <span class="inasafe">InaSAFE</span> was conceived and
+                        initially developed by the Indonesia's National
+                        Disaster Management Agency
+                        (<a href="http://www.bnpb.go.id">BNPB</a>) and the
+                        Australian Government, through the
+                        Australia-Indonesia Facility for Disaster Reduction
+                        (<a href="http://www.aifdr.org">AIFDR</a>) and the
+                        World Bank - Global Facility for Disaster Reduction
+                        and Recovery
+                        (World Bank-<a href="http://www.gfdrr.org">GFDRR</a>).
+                    </p>
+                    <p>
+                        <span class="inasafe">InaSAFE</span> is a Free and
+                        Open Source Software (FOSS) project, published under
+                        the <a href="http://www.gnu.org/licenses/gpl-3.0.txt"
+                        > GPL V3 license</a>.
+                        As such you may freely download, share and (if you
+                        like) modify the software.
+                    </p>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="admonition">
+                    <h3>Install and use <span class="inasafe">InaSAFE</span>!</h3>
+                    <p><img alt=""
+                            src="{{ pathto('_static/img/qgis_logo.png', 1)}}"/>
+                        <span class="inasafe">InaSAFE</span> is a plugin for
+                        QGIS. QGIS (and <span class="inasafe">InaSAFE</span>)
+                        works on OSX, Windows and Linux.
+                        QGIS is available for free at
+                        <a href="http://download.qgis.org">download.qgis.org</a>
+                    </p>
+                    <p>Once you have QGIS installed, you can install and get
+                        used to <span class="inasafe">InaSAFE</span> in 8
+                        easy steps! Open a recent version of
+                        <a href="http://qgis.org">QGIS</a> and do:
+                    </p>
+                    <ol>
+                        <li><span class='menuselection'>Plugins -> Fetch Python Plugins
+                        </span>
+                        </li>
+                        <li>Type <span class='kbd'>InaSAFE</span> in the
+                            <span class='guilabel'>Filter</span> box.
+                        </li>
+                        <li>Tick the box next to the
+                            <span class="inasafe">InaSAFE</span> plugin.</li>
+                        <li>Click the <span class='guilabel'>Install/upgrade plugin
+                            </span> button.
+                        </li>
+                        <li>Close the plugin manager and <span class="inasafe">
+                            InaSAFE</span> should be installed and ready to use.
+                        </li>
+                        <li>Watch the introduction movie to learn your first
+                            steps into
+                            <a href="http://www.youtube.com/embed/YGyd3YC1hy4">
+                            InaSAFE here.</a>
+                        </li>
+                        <li>Follow the training courses provided in the
+                            <a href="{{ pathto(master_doc) }}/../training/socialisation/index.html">
+                            Socialisation</a> section.
+                        </li>
+                        <li>Download any testdata you need from
+                            <a href="http://data.inasafe.org">
+                            http://data.inasafe.org</a>
+                        </li>
+                    </ol>
+                    <p>If you have any problems getting
+                        <span class="inasafe">InaSAFE</span> installed, see our
+                        <a href="{{ pathto(master_doc) }}/../user-docs/troubleshooting.html">troubleshooting guide</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="admonition">
+                    <h3>Help using <span class="inasafe">InaSAFE</span></h3>
+                    <p>
+                    <img alt=""
+                         src="{{ pathto('_static/img/documentation57.png', 1)}}"/>
+                        We are actively building up documentation for
+                        <span class="inasafe">InaSAFE</span> that includes
+                        tutorials, general help and developer documentation:
+                    </p>
+                    <div class="alert alert-block">
+                    <ul>
+                        <li>
+                            <a href="../en/contents.html">
+                                <i class="icon-file icon-black"></i>
+                                Online (HTML) manual.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pdf/InaSAFE-2.0-Documentation-en.pdf">
+                                <i class="icon-file icon-black"></i>
+                                Offline (PDF) manual.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pdf/">
+                                <i class="icon-file icon-black"></i>
+                                Offline archive of manuals.
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                    <p>
+                    <p>Join our mailing list by sending an email to
+                        <a href="mailto:inasafe-users+subscribe@googlegroups.com">
+                        inasafe-users+subscribe@googlegroups.com</a>
+                        or read the groups messages on our
+                        <a href="https://groups.google.com/forum/?fromgroups#!forum/inasafe-users">
+                        InaSAFE-users group</a> page.
+                        Please <a href="https://github.com/AIFDR/inasafe/issues">
+                        <b>file a ticket</b></a> if you have discovered an issue.
+                    </p>
+                    <p>
+                        We regularly run training courses. <br> <br>
+                        Please
+                        <a href="mailto:info@inasafe.org?Subject=InaSAFE" target="_top">
+                        contact</a> us if you would like help running your
+                        own courses or to see if there is a local course that
+                        you can attend (currently this is mainly Indonesia
+                        focused).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-danger centered">
+            Disclaimer: InaSAFE has been jointly developed by Indonesian
+            Government-BNPB, Australian Government-AIFDR and the World
+            Bank-GFDRR. These agencies and the Individual software developers
+            of InaSAFE take no responsibility for the correctness of outputs
+            from InaSAFE or decisions derived as a consequence.
+        </div>
+
+        <div class="alert alert-info centered">
+            <span class="inasafe">InaSAFE</span> Video Wall
+        </div>
+
+        <ul class="thumbnails">
+            <li class="span4">
+                <div class="thumbnail">
+                    <div class="centered">
+                        <iframe width="300" height="225"
+                            src="http://www.youtube.com/embed/YGyd3YC1hy4"
+                            frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="caption">
+                        <h3>Introduction</h3>
+                        <p>The video above provides a short introduction
+                            to <span class="inasafe">InaSAFE</span>.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="span4">
+                <div class="thumbnail">
+                    <div class="centered">
+                        <iframe width="300" height="169"
+                            src="http://www.youtube.com/embed/_-k8xiHV4Fs"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="caption">
+                        <h3>AMCDRR</h3>
+                        <p>Dr. Trevor Dhu demonstrating
+                           <span class="inasafe">InaSAFE</span> to
+                           Indonesian President Susilo Bambang Yudhoyono
+                           at the 5th Asian Ministerial Conference on
+                           Disaster Risk Reduction held in Yogyakarta,
+                           Indonesia, October 2012.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="span4">
+                <div class="thumbnail">
+                    <div class="centered">
+                        <iframe width="300" height="225"
+                            src="http://www.youtube.com/embed/GaaXFFMWy3Y"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="caption">
+                        <h3>Partnerships</h3>
+                        <p>Dr. Trevor Dhu explains the partnership approach
+                            to impact assessment being taken by the Australian
+                            Government.</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="thumbnails">
+            <li class="span4">
+                <div class="thumbnail">
+                    <div class="centered">
+                        <iframe width="300" height="225"
+                            src="http://www.youtube.com/embed/fWamg9WNWdI"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="caption">
+                        <h3>InaSAFE 2.0</h3>
+                        <p>We are proud to present the immediate release
+                           of <span class="inasafe">InaSAFE 2.0</span>.</p>
+                    </div>
+                </div>
+            </li>
+            <li class="span4">
+
+            </li>
+            <li class="span4">
+
+            </li>
+        </ul>
+
+        <div class="alert alert-info centered">
+            <span class="inasafe">InaSAFE</span> Supporters and Partners
+        </div>
+
+        <ul class="thumbnails">
+            <li class="span4">
+                <a href="http://bnpb.go.id" class="thumbnail">
+                    <img alt="" src="{{ pathto('_static/img/bnpb_logo.png', 1)}}"/>
+                </a>
+                <p></p>
+            </li>
+            <li class="span4">
+                <a href="http://www.ausaid.gov.au" class="thumbnail">
+                    <img alt="" src="{{ pathto('_static/img/ausaid.png', 1)}}"/>
+                </a>
+                <p></p>
+            </li>
+            <li class="span4">
+                <a href="http://www.gfdrr.org/" class="thumbnail">
+                    <img alt="" src="{{ pathto('_static/img/gfdrr_wb_logo.png', 1)}}"/>
+                </a>
+                <p></p>
+            </li>
+        </ul>
+
+        <script type="text/javascript">$('#blocks-row').equalHeights();</script>
+{% endblock %}

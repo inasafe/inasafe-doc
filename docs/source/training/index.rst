@@ -17,6 +17,8 @@ This section of the documentation contains step-by-step tutorials on using OpenS
 | Training of Trainer     | 1 Day                 |
 +-------------------------+-----------------------+
 
+|
+
 
 .. toctree::
    :maxdepth: 2
