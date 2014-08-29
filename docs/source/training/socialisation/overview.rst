@@ -5,20 +5,19 @@ Overview
 
 Concept
 -------
-To effectively prepare for future floods, earthquakes or tsunami you must
+To effectively prepare for future floods, earthquakes or tsunamis you must
 first understand the likely impacts that need to be managed.
 For example, to prepare a contingency plan for a severe flood in Jakarta,
 emergency managers need to answer questions like:
 
-- what are the areas likely to be affected;
-- how many people will need to be evacuated and sheltered;
-- which schools will be closed;
-- which hospitals can still take patients; and
+- what are the areas likely to be affected?
+- how many people will need to be evacuated and sheltered?
+- which schools will be closed?
+- which hospitals can still take patients?
 - which roads will be closed?
 
-Conceptually |project_name| combines one exposure layer (e.g. location of
-buildings) with one hazard scenario (e.g. flooding footprint) and returns a
-spatial impact layer along with textual statistical summary and action
+Conceptually |project_name| combines one exposure data layer (e.g. location of
+buildings) with one hazard scenario (e.g. the footprint of a flood) and returns a spatial impact layer along with a statistical summary and action
 questions.
 
 |project_name| is framed around questions such as:
@@ -40,10 +39,10 @@ Indonesia faces significant risk of loss of lives and challenges to
 development progress as a result of natural disasters.
 The development of contingency plans is seen as an important step to
 strengthen disaster risk reduction programs.
-However this can only be effective when contingency plans utilises realistic
-hazard scenario.
+However this can only be effective when contingency plans utilize realistic
+hazard scenarios.
 Realistic hazard scenarios require scientific, sound and up-to-date data
-hazard information as well as up-to-date, scale appropriate exposure.
+hazard information as well as up-to-date, scale appropriate exposure data.
 Such map-based contingency plans offer accurate and comprehensive results in
 calculating minimum relief items, identifying safe places,
 and sectorial planning.
@@ -52,17 +51,14 @@ and sectorial planning.
 rigorous way to combine the data from scientists, local governments and
 communities to provide insights into the likely impacts of future disaster
 events.
-The software is focused on examining, in detail, the impacts by a single
+The software is focused on examining, in detail, the impacts that a single
 hazard would have on specific sectors.
-For example location of primary schools and estimated number of students
-affected by a possible tsunami in Maumere (when it happened during the school
+For example, |project_name| can help users examine the location of primary schools and estimated number of students who would be affected by a possible tsunami in Maumere, Indonesia (when it happened during school
 hours).
 |project_name| has been developed as a QGIS plugin to enable end users to not
-only complete an |project_name| analysis, but to also analysis the result
-using the suite of QGIS tools that are available.
-The software has been designed as a simple user interface in a hope that
-disaster managers and end users can easily use |project_name| for creating
-impact maps to inform contingency planning.
+only complete a disaster impact analysis, but to also conduct further geographic analysis using the suite of QGIS tools that are available.
+The software has been designed as a simple user interface in the hope that
+disaster managers and other end users can easily create impact maps to inform contingency planning.
 
 |project_name| was preliminarily launched by Dr. Agus Wibowo, Head of the Data
 Center at the Indonesia’s Disaster Management Agency (|BNPB|),
@@ -86,7 +82,7 @@ the 3 open source software tools used to enable development of realistic
 disaster scenarios for contingency planning.
 The other 2 tools are:
 
-#. OpenStreetMap (|OSM|): is a free map of the world that anyone can add to
+#. OpenStreetMap (|OSM|): a free map of the world that anyone can add to
    and edit.
    Utilizing community mapping allows for more detailed information that can
    be fed into |project_name| (i.e. How many houses will be affected by a
