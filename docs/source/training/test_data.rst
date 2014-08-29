@@ -15,14 +15,14 @@ http://data.inasafe.org and download the package you need.
 
 .. _btsync:
 
-Bittorrent Sync
+BitTorrent Sync
 ---------------
 
-The training data can be quite large in size, so if you have a bad internet connection (or want to download everything at once), all of the materials are also available with Bittorrent Sync.
+The training data can be quite large in size, so if you have a bad internet connection (or want to download everything at once), all of the materials are also available with BitTorrent Sync.
 
-To obtain the training data using Bittorrent Sync, first visit http://www.bittorrent.com/sync and download and install the software. Note that it is not necessary to provide your email address.
+To obtain the training data using BitTorrent Sync, first visit http://www.bittorrent.com/sync and download and install the software. Note that it is not necessary to provide your email address.
 
-When installation is complete, open Bittorrent Sync. To download the training data to your computer, click on the :guilabel:`Options` button and then click :guilabel:`Enter a key...`
+When installation is complete, open BitTorrent Sync. To download the training data to your computer, click on the :guilabel:`Options` button and then click :guilabel:`Enter a key...`
 
 .. image:: /static/training/training-data/001_enter-a-key.png
    :align: center
@@ -33,9 +33,7 @@ After you enter the key you must choose a folder on your computer where you woul
 
 The files will begin to synchronize with the folder on your computer. It may take awhile to download, depending on the speed of your connection.
 
-**If you are using Linux you can either basically do the same with the
-exception that you will have to connect to a port (mostly 8888) on your
-localhost and add the SECRET and the folder to sync to there.**
+.. note:: If you are using Linux the BitTorrent Sync interface will be available in your web browser at http://localhost:8888 after you start the application.
 
 .. _usingdocker:
 
