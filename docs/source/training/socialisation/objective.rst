@@ -1,26 +1,28 @@
 .. _objective:
 
-Objective
-=========
+Objectives
+==========
+
+By the end of this training course, participants should be able to:
 
 * Understand the concept of |project_name|
 * Understand the components of |project_name|
-* Able to run |project_name| and understand results
+* Operate |project_name| and understand results
 
 Target Audience
 ---------------
 
-* Personals responsible in developing contingency plans at provincial and
+* Persons responsible for developing contingency plans at provincial and
   district levels.
 * Lecturers and students from relevant departments such as Geography,
-  Geodesy, Geomathics, Information Technology and other earth-related science.
+  Geodesy, Geomathics, Information Technology and other earth-related sciences.
 * Representatives from NGOs working in disaster risk reduction
 * Other relevant organizations and agencies
 
 Prerequisites
 -------------
 
-* Be able to operate a computer (word processing, presentations, internet,
+* Be able to operate a computer (word processors, presentations, internet,
   spreadsheets).
 * Basic skills in Geographic Information System is an advantage.
 * Laptop with:
@@ -29,14 +31,13 @@ Prerequisites
   * WIFI - connected to the internet
   * Windows (XP, 7, 8), Linux (Training Ubuntu later than 12.04) or similar
     (e.g. Mint or Debian), Mac OSX (Lion - 10.7,  Snow Leopard -10.6)
-  * |QGIS| 1.8 installed http://www.qgis.org or ability to install software
-    on computer i.e. have administration password
+  * |QGIS| at least version 2.0 installed http://www.qgis.org or ability to install software on computer (i.e. have administration password)
 
 Credits
 -------
 |project_name| Socialisation Training Manual was developed by
 Australia-Indonesia Facility for Disaster Reduction (|AIFDR|),
-The National Agency for Disaster Management, Indonesia and World Bank ‘s
+The National Agency for Disaster Management, Indonesia and World Bank‘s
 Global Facility for Disaster Reduction and Recovery Labs (World Bank-|GFDRR|).
 
 Manual based on:
@@ -50,7 +51,7 @@ Produced:
 
 August 2013
 
-For inquiries, contact:
+For enquiries, contact:
 .......................
 
 General information on |project_name| appears online at
@@ -78,7 +79,7 @@ Resources obtained by:
 
 Linfiniti Sphinx Theme
 
-Manual licenced under:
+Manual licensed under:
 ......................
 
 Creative Commons by Attribution by |BNPB|/|GoA|/World Bank-|GFDRR|.
@@ -87,4 +88,4 @@ Author:
 .......
 
 `Kristy Van Putten <kristy.vanputten@gmail.com>`_, Deputy Risk and Vulnerability
-manager |AIFDR| |GA|
+Manager |AIFDR| |GA|
