@@ -24,7 +24,7 @@ Prerequisites
 
 * Be able to operate a computer (word processors, presentations, internet,
   spreadsheets).
-* Basic skills in Geographic Information System is an advantage.
+* Basic skills in Geographic Information Systems (GIS) is an advantage.
 * Laptop with:
 
   * Minimum RAM of 2 GB (recommended 4 GB)
