@@ -57,7 +57,7 @@ The beauty of |project_name| being open source is that anyone who has a
 background in programming is able to make their own impact functions.
 For more information visit :ref:`impact_function_tutorial`
 
-Exposure Layers Used in this Course
+Exposure Layers Used in Practical
 -----------------------------------
 
 ============  ================  =================  ==================  =======================
@@ -142,7 +142,7 @@ Below the data collection methodologies used in Jakarta and Padang are explained
     The tool is now being used across world to coordinate OSM mapping efforts. 
     It is available at `tasks.hotosm.org <http://tasks.hotosm.org/>`_
 
-Hazard Layers used in this Course
+Hazard Layers used in Practical
 ---------------------------------
 
 ===========  ================  ===============  ==================  ======================  ===============
