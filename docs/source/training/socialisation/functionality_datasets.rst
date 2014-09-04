@@ -195,7 +195,7 @@ Volcano
 :License: `United States Copyright <http://www.copyright.gov/title17/>`_
 :Coverage: World
 :About: The Smithsonian's Global Volcanism Program seeks better understanding
-    of all volcanoes through documenting their eruptions-small as well as
+    of all volcanoes through documenting their eruptions - small as well as
     large-during the past 10,000 years. Through their website you are able to
     download a spreadsheet of all the recorded volcanoes.  This spreadsheet
     also has the volcano location, which has been converted into a point file.
@@ -216,10 +216,8 @@ Earthquake
     earthquake.  This particular scenario was modelled based on the 30
     September 2009 Mw 7.9 earthquake in Padang. ShakeMaps are generated
     automatically following moderate and large earthquakes by USGS. For more
-    information go to http://earthquake.usgs.gov/earthquakes/map/
-
-Pre-event / scenario based shakemaps must be modelled by earthquake
-specialists.
+    information go to http://earthquake.usgs.gov/earthquakes/map/. Pre-event / 
+    scenario based shakemaps must be modelled by earthquake specialists.
 
 .. image:: /static/training/socialisation/008_earthquake.png
    :align: center
