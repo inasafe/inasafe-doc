@@ -23,28 +23,29 @@ Participants are able to:
   building
 
 **Data for Practical**
+
 You can download the InaSAFEv2.0.zip from `InaSAFE Training Data Packages
-<https://data.inasafe.org/TrainingDataPackages/>`_
+<http://data.inasafe.org/TrainingDataPackages/>`_
 or it will be provided to you during the training.
 
 Introduction
 ------------
 
-In this chapter you will run |project_name| in Jakarta to determine the
-impact of a flood model on both Jakarta's population and buildings.
+In this chapter we will run |project_name| using a scenario in Jakarta, Indonesia 
+to determine the impact of a flood model on both Jakarta's population and buildings.
 
-1. :menuselection:`File --> Open Projects`
+1. Go to :menuselection:`File --> Open Projects`.
 
-2. A message box appears: *Do you want to save the current project?*
-   :guilabel:`Don't Save`
+2. If you have been following along in the previous sections a message box will appear 
+   asking if you want to save the current project. Click :guilabel:`Discard`.
 
 .. image:: /static/training/socialisation/028_saveproject.*
    :align: center
 
-3. :guilabel:`Navigate` to the *InaSAFE_project* folder and :guilabel:`Select`
-	 *Jakarta_floods.qgs*, :guilabel:`Open`
+3. Navigate to the :file:`InaSAFE_project` folder and select
+	 :file:`Jakarta_floods.qgs`, Click :guilabel:`Open`.
 
-The result of opening the project:
+The project looks something like this:
 
 .. image:: /static/training/socialisation/029_jakartafloods.*
    :align: center
@@ -60,45 +61,45 @@ filled in already:
 * buildings
 * Be Flooded
 
-4. In the |project_name| panel :guilabel:`Click` on buildings,
-:guilabel:`Select` people, it now should have:
+4. In the |project_name| panel click on :guilabel:`buildings` and
+select :guilabel:`people` instead. It should now have:
 
 * a flood similar to the 2007 Jakarta event
 * people
-* Need evacuating
+* Need evacuation
 
 .. image:: /static/training/socialisation/030_showpeople.*
    :align: center
 
-.. note:: You can see that the Impact function below **Might** automatically
-   changed from *Be Flooded* to *Need evacuation* this is dependant on the
-   combination of the hazard and exposure layers
+.. note:: Notice that the impact function below :guilabel:`Might` automatically
+   changed from :guilabel:`Be flooded` to :guilabel:`Need evacuation`. This is changed
+   because of the new combination of the hazard and exposure layers.
 
-5. Lets run this scenario first - :guilabel:`Run` at the bottom right
+5. Lets run this scenario first. Click :guilabel:`Run` in the bottom right
    hand corner of the |project_name| panel.
 
 .. image:: /static/training/socialisation/031_run.png
    :align: center
 
 A new layer should appear in the layer panel called *Population which needs
-evacuating*
+evacuating*.
 
 .. image:: /static/training/socialisation/032_results.*
    :align: center
 
-In the |project_name| Panel, inside the main window you will see text and
-statistics, lets explore this further.
+In the |project_name| panel we now see text and
+statistics, which we will explore further.
 
 .. image:: /static/training/socialisation/033_peoplefloodresult.*
    :align: center
 
 **Evacuation:** There are 1,109,000 people that are located in water deeper than
-1 meter. It is assumed that all of these people will need to evacuate their
-homes.  The threshold of 1 meter can be changed (see Changing Threshold below).
+one metre. It is assumed that all of these people will need to evacuate their
+homes.  The threshold of one metre can be changed (see Changing Threshold below).
 
 **Minimum needs:** is calculated using the above number of evacuated people to
 estimate the amount of food, water and other products that the refugees will
-need to survive.  The figures are based on an Indonesian policy.
+need to survive. The figures are based on an Indonesian policy.
 
 **Action checklist:** designed to make disaster managers think about what
 they need to do to prepare for the event.
@@ -107,100 +108,102 @@ they need to do to prepare for the event.
 depth that requires evacuation and the source of the minimum needs assessment.
 
 **Detailed gender and age report:** Statistical breakdown of the number of
-females, and added minimum needs for women hygiene and pregnant women. As
-well as statistical breakdown of Youth, Adults and Elderly.
+females, minimum needs for womens' hygiene and pregnant women, as
+well as a statistical breakdown of Youth, Adults and Elderly.
 
 **Source:** where the exposure and hazard data originally came from.
 
 Print Results
 .............
 
-.. note:: You can choose whether you want print the whole analysis or current
-   extent. You also can pick print template or you can navigate to your own
+.. note:: You can choose whether you want print the whole analysis or the current
+   map extent. You also can pick an existing print template or you can navigate to your own
    QGIS template (.qpt). For more information about printing Click
    :guilabel:`Help` in the print window.
 
-6. :guilabel:`Print` at the bottom the |project_name| panel
+6. Click :guilabel:`Print` at the bottom the |project_name| panel.
 
 .. image:: /static/training/socialisation/034_print.*
    :align: center
 
-7. A window will pop up, ensure **Area of print** = Analysis extent and
-   **Template to use** = inasafe. :guilabel:`Open PDF`
+7. A window will pop up as shown below. Ensure that :guilabel:`Analysis extent`
+   is selected under :guilabel:`Area to print` and :guilabel:`inasafe...` is chosen
+   under :guilabel:`Template to use`. Click :guilabel:`Open PDF`.
 
 .. image:: /static/training/socialisation/034a_impact_report.*
    :align: center
 
-8. Navigate to where you would like to save the pdf,
-   and type :kbd:`Jakartaflood_evacuation_1m` :guilabel:`Save`
+8. Navigate to where you would like to save the PDF
+   and type :file:`Jakartaflood_evacuation_1m`. Click :guilabel:`Save`.
 
 .. image:: /static/training/socialisation/034b_save_report.*
    :align: center
 
-Two PDFs will be generated
-
-.. note:: The result provides a map and a table of information about the impact.
+Two PDFs will be generated, which contain a map and a table of information about the impact.
 
 .. image:: /static/training/socialisation/035_People_in_need_of_evacuation_1m.*
    :align: center
 
-.. note:: In the new version of |project_name| the developers will look more
-   into the layout of these pdfs. *If you get time during this course please
+.. note:: In the future version of |project_name| the developers will make improvements
+   to the layout of these PDF files. *If you have time during this course please
    proved us with your ideas on how the print map and table should look!*
 
 Changing threshold
 ..................
 
-What if the disaster manager has decided that people should be evacuated if they
-are in 80cm or more of water?
+What if the disaster manager decides that people should be evacuated if they
+are in 80cm or more of water? In this case we will need to change the water threshold
+at which level people should be evacuated.
 
-9. :guilabel:`Show question form` found at the top of the |project_name| panel.
+9. Click :guilabel:`Show question form` found at the top of the |project_name| panel.
 
 .. image:: /static/training/socialisation/036_showquestion.*
    :align: center
 
-10. To change the impact function select :guilabel:`...` *Configure Impact
-Function Parameter* which is found beside the *Need evacuation*
+10. To change the impact function click the :guilabel:`Options...` button next to
+    the :guilabel:`Need evacuation`.
 
 .. image:: /static/training/socialisation/037_functionchange.*
    :align: center
 
-11. Type :kbd:`0.8` in the window
+11. Type :kbd:`0.8` in the :guilabel:`Thresholds` field.
 
 .. image:: /static/training/socialisation/038_configure.*
    :align: center
 
-12. :guilabel:`OK`
+12. Click :guilabel:`OK`.
 
-
-13. :guilabel:`Run` |project_name|
+13. Click :guilabel:`Run` to process the scenario with the new water threshold.
 
 .. image:: /static/training/socialisation/031_run.*
    :align: center
 
-How have the numbers changed?
+When the function completes, take a look at the new numbers
+in the |project_name| panel. How have they changed?
 
 .. todo:: How many people need to be evacuated?
    **Answer:** ______________________
    Is this the answer you were expecting?
    **Answer:** _____________________
 
-14. :guilabel:`Print` at the bottom the |project_name| panel
+14. Click :guilabel:`Print` at the bottom the |project_name| panel.
 
 .. image:: /static/training/socialisation/034_print.*
    :align: center
 
-15. A window will pop up, ensure **Area of print** = Analysis extent and
-**Template to use** = inasafe. :guilabel:`Open PDF`
+15. A window will pop up as shown below. Ensure that :guilabel:`Analysis extent`
+   is selected under :guilabel:`Area to print` and :guilabel:`inasafe...` is chosen
+   under :guilabel:`Template to use`. Click :guilabel:`Open PDF`.
 
 .. image:: /static/training/socialisation/034a_impact_report.*
    :align: center
 
-16. Navigate to where you would like to save the pdf,
-and type :kbd:`Jakartaflood_evacuation_80cm` :guilabel:`Save`
+16. Navigate to where you would like to save the pdf
+   and type :file:`Jakartaflood_evacuation_80cm`. Click :guilabel:`Save`.
 
-17. Before moving onto buildings, lets turn some layers off. In your Layer
-panel you will now have 5 layers, we are going to uncheck everything but:
+17. Next we will run the |project_name| analysis on buildings, but first let's turn 
+    some layers off. In the Layers panel there should now be five layers. Uncheck 
+    everything except:
 
 * a flood similar to the 2007 Jakarta event
 * buildings
@@ -216,25 +219,27 @@ Buildings Affected
 .. image:: /static/training/socialisation/040_inasafebuidlingflood.png
    :align: center
 
-19. Notice that if you click on the *building* the people option is not
-available, this is because *people* is not checked in the **Layer List**.
+19. Notice that if you click on the dropdown box with :guilabel:`Buildings`,
+    the people option is not available. This is because :guilabel:`people` 
+    is not checked in the Layers panel.
 
 .. note:: If you want to be able to select layers within the
    |project_name| panel that are not checked in the **Layer List** you can
    modify the |project_name| options.
-   For more information :doc:`../../user-docs/application-help/options`.
-   We will also go through the option menu in :doc:`helpful_hints_and_tips`
+   For more information on |project_name| options, see the user documentation here: 
+   :doc:`../../user-docs/application-help/options`.
+   The option menu is also discussed later in this tutorial in :doc:`helpful_hints_and_tips`.
 
-20. :guilabel:`Run` the new combination.
+20. Click :guilabel:`Run` to process the new scenario.
 
 .. image:: /static/training/socialisation/041_buildingfloodresults.png
    :align: center
 
-In this scenario approximately 1,434 buildings could be effected out of 31,515
+In this scenario approximately 1,434 buildings could be affected out of 31,515
 buildings.
 
 Due to the provincial BPBD work in OpenStreetMap they have mapped all
-important building (and then sum!).
+important buildings (and then some!).
 
 Important buildings are defined as:
 
@@ -249,11 +254,11 @@ Important buildings are defined as:
 * Sports Facilities
 * Univeristy/college
 
-**Action Checklist:** A different set of Actions have been identified to
+**Action Checklist:** A different set of actions have been identified to
 relate to structures.
 
 **Note:** Similar to the last |project_name| analysis, this analysis also
-assumes impact is in water above 1 meter.
+assumes impact is in water above one metre.
 
 **Detailed building type report:** This is a breakdown of important
 infrastructure, when you choose to aggregate (we will do this later) this
@@ -262,37 +267,39 @@ table will show the number of buildings by aggregation boundary.
 **Source:** of the Hazard and Population Datasets
 
 
-21. :guilabel:`Print` at the bottom the |project_name| panel
+21. Click :guilabel:`Print` at the bottom the |project_name| panel.
 
 .. image:: /static/training/socialisation/034_print.png
    :align: center
 
-22. A window will pop up, ensure **Area of print** = Analysis extent and
-**Template to use** = inasafe. :guilabel:`Open PDF`
+22. A window will pop up as shown below. Ensure that :guilabel:`Analysis extent`
+   is selected under :guilabel:`Area to print` and :guilabel:`inasafe...` is chosen
+   under :guilabel:`Template to use`. Click :guilabel:`Open PDF`.
 
 .. image:: /static/training/socialisation/034a_impact_report.*
    :align: center
 
-23. Navigate to where you would like to save the pdf,
-and type :kbd:`Jakartaflood_inundated_1m` :guilabel:`Save`
+23. Navigate to where you would like to save the PDF
+   and type :file:`Jakartaflood_inundated_1m`. Click :guilabel:`Save`.
 
 
-
-Optional - Change the threshold to 0.8
+(Optional) Change the threshold to 0.8
 ......................................
 
-24. Check that |project_name| has the following in the drop-down boxes
+You may try running this scenario again with a water threshold of 0.8 metres.
+
+24. Check that |project_name| has the following in the drop-down boxes:
 
 * a flood similar to the 2007 Jakarta event
-* buildings
-* Be Flooded
+* Buildings
+* Be flooded
 
-25. To configures the impact function select :guilabel: `...` *Configure Impact
-Function Parameter* which is found beside the *Be flooded*
+25. To change the impact function click the :guilabel:`Options...` button next to
+    the :guilabel:`Be flooded`.
 
-26. Type :kbd:`0.8` in the window
+26. Type :kbd:`0.8` in the :guilabel:`Thresholds` field.
 
-27. |project_name| :guilabel:`Run`
+27. Click :guilabel:`Run` to process the scenario with the new water threshold.
 
-28. |project_name| :guilabel:`Print` and save accordingly
+28. Click :guilabel:`Print` and save PDFs the same way as before.
 
