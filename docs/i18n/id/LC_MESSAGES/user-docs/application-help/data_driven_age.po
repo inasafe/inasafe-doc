@@ -3,14 +3,15 @@
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
 #
 # Translators:
+# adityo dwijananto <adz.only@gmail.com>, 2014
 # Imron Fauzi <imronfauzi@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-29 18:45+0200\n"
-"PO-Revision-Date: 2014-08-28 07:01+0000\n"
-"Last-Translator: Imron Fauzi <imronfauzi@gmail.com>\n"
+"POT-Creation-Date: 2014-09-24 11:57+0200\n"
+"PO-Revision-Date: 2014-09-18 04:21+0000\n"
+"Last-Translator: adityo dwijananto <adz.only@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
 "develop/language/id/)\n"
 "Language: id\n"
@@ -22,7 +23,7 @@ msgstr ""
 # e95c71e2c7bf40058e25a1584f5f27af
 #: ../../source/user-docs/application-help/data_driven_age.rst:8
 msgid "Data Driven Age Post-processor"
-msgstr ""
+msgstr "Data Berbasis Umur Pasca-pemrosesan"
 
 # 1229d03fb35246c5a7d7c86710506739
 #: ../../source/user-docs/application-help/data_driven_age.rst:11
@@ -40,6 +41,13 @@ msgid ""
 "a global ratio for the whole aggregator vector layer using the keywords "
 "editor or keywords wizard."
 msgstr ""
+"Data usia digunakan selama agregasi untuk menentukan berapa banyak orang "
+"yang terkena dampak bahaya sesuai dengan distribusi usia mereka (pemuda, "
+"dewasa, lansia). Fitur ini mirip dengan jenis kelamin pasca-pemrosesan. "
+"Dengan didorong data usia, rasio distribusi usia digunakan. Hal ini "
+"ditentukan baik dalam atribut data poligon agregasi, atau dengan menetapkan "
+"rasio global untuk seluruh lapisan vektor aggregator menggunakan penyunting "
+"kata kunci atau kata kunci wizard."
 
 # 5f6ab1aa17414d58877a010c3cbab8e4
 #: ../../source/user-docs/application-help/data_driven_age.rst:20
@@ -50,6 +58,11 @@ msgid ""
 "during rescue operations and to give more attention on the vulnerable "
 "population ( e.g. elderly) and their needs."
 msgstr ""
+"Fitur ini digunakan untuk menentukan dan memberikan informasi lebih lanjut "
+"tentang sejumlah pemuda, dewasa dan lanjut usia yang terkena dampak di "
+"daerah misalnya, batas-batas desa. Untuk mengidentifikasi di mana daerah "
+"menjadi prioritas selama operasi penyelamatan dan untuk memberikan perhatian "
+"lebih pada populasi rentan (misalnya orang tua) dan kebutuhan mereka."
 
 # 6692b81b04174127b2d9f398dcc7510b
 #: ../../source/user-docs/application-help/data_driven_age.rst:27
@@ -165,11 +178,13 @@ msgstr "lansia"
 #: ../../source/user-docs/application-help/data_driven_age.rst:60
 msgid "The keywords editor graphical user interface for Age Postprocessing."
 msgstr ""
+"Penyunting kata kunci di grafis antar muka pengguna untuk usia pasca "
+"pemrosesan."
 
 # a4e570d482424c59acbd9107c5c368f2
 #: ../../source/user-docs/application-help/data_driven_age.rst:62
 msgid "There are two ways to specifying age postprocessing options:"
-msgstr ""
+msgstr "Ada dua cara untuk menetapkan opsi usia pasca pemrosesan:"
 
 # 0a01da7d75cc4371b56676275a8a4be0
 #: ../../source/user-docs/application-help/data_driven_age.rst:64
@@ -179,6 +194,10 @@ msgid ""
 "each aggregation area has an attribute indicating the rations of age or "
 "gender."
 msgstr ""
+"1. Rasio Atribut: Dalam mode ini, data yang digunakan untuk pasca pemrosesan "
+"adalah dari atribut layer agregasi itu sendiri. Perhatikan contoh di bawah "
+"ini di mana setiap daerah agregasi memiliki atribut yang menunjukkan usia "
+"atau jenis kelamin."
 
 # 6bf1f13636c244d4a2f7c3779cdafbb8
 #: ../../source/user-docs/application-help/data_driven_age.rst:73
@@ -186,6 +205,8 @@ msgid ""
 "In the keywords editor you can refer to these attributes and the age and "
 "gender rations will be extrapolated based on the defined values."
 msgstr ""
+"Dalam penyunting kata kunci, Anda dapat merujuk ke atribut ini dan usia dan "
+"jenis kelamin akan diekstrapolasi berdasarkan nilai-nilai yang ditetapkan."
 
 # 39c8e4fd65244081a137b828b07df80f
 #: ../../source/user-docs/application-help/data_driven_age.rst:81
@@ -194,6 +215,10 @@ msgid ""
 "case you may not know per-area what the age and gender breakdowns are and "
 "wish to rather apply the rations globally (to all aggregation areas)."
 msgstr ""
+"2. Default Rasio: Dalam mode ini, nilai default akan digunakan. dalam hal "
+"ini Anda mungkin tidak tahu untuk setiap area mengenai berapa pembagian usia "
+"dan jenis kelamin dan ingin lebih menerapkan global (untuk semua daerah "
+"agregasi)."
 
 # d62899a58fb3451890e7b46487db190e
 #: ../../source/user-docs/application-help/data_driven_age.rst:91
@@ -201,3 +226,5 @@ msgid ""
 "A similar user interface is provided in the :ref:`keywords wizard "
 "<keywords_wizard>` user interface."
 msgstr ""
+"Sebuah antarmuka pengguna yang sama disediakan di :ref:`panduan kata kunci  "
+"<keywords_wizard>` antar muka pengguna."
