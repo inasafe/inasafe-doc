@@ -236,14 +236,14 @@ exposure data.
 
    * Clinic/doctors
    * Fire stations
-   * Government
+   * Government buildings
    * Hospitals
-   * Place of Worship
+   * Places of worship
    * Police stations
-   * Residential
+   * Residential buildings
    * Schools
-   * Sports Facilities
-   * Univeristy/college
+   * Sports facilities
+   * Universities/colleges
 
 In the |project_name| panel we now see text and statistics. The
 details of this report are explained here:
