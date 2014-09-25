@@ -3,7 +3,7 @@
 Introduction to QGIS
 ====================
 
-.. image:: /static/training/socialisation/010_qgis_logo.png
+.. image:: /static/training/socialisation/010_qgis_logo.*
    :align: right
    :scale: 30 %
 
