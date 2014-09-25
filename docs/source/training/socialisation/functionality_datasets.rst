@@ -108,7 +108,6 @@ Structures
 
 .. image:: /static/training/socialisation/004_openstreetmap.png
    :align: center
-|
 
 |GoA| has been working with the Humanitarian OpenStreetMap Team (HOT) since 2011 
 in piloting and training OpenStreetMap in Indonesia.

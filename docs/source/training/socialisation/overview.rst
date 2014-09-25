@@ -256,7 +256,7 @@ treated as a hazard or an exposure layer.
 It is also used to indicate the context of the layer (e.g. flood,
 earthquake). This is discussed in more detail in :ref:`keywords_system`.
 
-Available Impact Functions*
+Available Impact Functions
 ..........................
 
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+

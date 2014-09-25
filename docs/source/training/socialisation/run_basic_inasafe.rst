@@ -31,7 +31,7 @@ or it will be provided to you during the training.
 Introduction
 ------------
 
-In this chapter we will run |project_name| using a scenario in Jakarta, Indonesia 
+In this section we will run |project_name| using a scenario in Jakarta, Indonesia 
 to determine the impact of a flood model on both Jakarta's population and buildings.
 
 1. Go to :menuselection:`File --> Open Projects`.
