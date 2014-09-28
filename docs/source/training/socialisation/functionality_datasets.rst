@@ -55,10 +55,10 @@ Structures     Point             Structure type      type                text
 hazard and exposure layers.
 The beauty of |project_name| being open source is that anyone who has a
 background in programming is able to make their own impact functions.
-For more information visit :ref:`impact_function_tutorial`
+For more information visit :ref:`impact_function_tutorial`.
 
 Exposure Layers Used in Practical
------------------------------------
+---------------------------------
 
 ============  ================  =================  ==================  =======================
 **Exposure**  **Spatial Type**  **Exposure Type**  **Attribute Name**  **Hazard Units/Fields**
@@ -101,7 +101,7 @@ Structures
 :Coverage: World - incomplete
 :About:  OpenStreetMap is a collaborative project to create a free
     editable map of the world.
-    Two major driving forces behind the establishment and growth of |OSM|
+    Two major driving forces behind the establishment and growth of OSM
     have been restrictions on use or availability of map information across
     much of the world and the advent of inexpensive portable satellite
     navigation devices.
@@ -130,13 +130,13 @@ Below the data collection methodologies used in Jakarta and Padang are explained
     For more information go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
 
 :Padang: After the Haiti earthquake in 2010, there was a large effort to map Haiti
-    through |OSM|. Coordinating this effort was difficult,
+    through OSM. Coordinating this effort was difficult,
     and so |GoA| funded the creation of the OSM Tasking Manager.
     The OSM Tasking Manager is a web-based tool in which a designated area is
     easily divided into a grid, and individual users can select one piece at a time
     to quickly work together and digitally map the target area. The tool was
     first piloted in Padang, where contributors from around the world helped
-    digitize over 95,000 buildings. However, the buildings are only footprints - 
+    digitise over 95,000 buildings. However, the buildings are only footprints - 
     an on the ground mapping effort is needed to record attributes about each building. 
     The tool is now being used across world to coordinate OSM mapping efforts. 
     It is available at `tasks.hotosm.org <http://tasks.hotosm.org/>`_
