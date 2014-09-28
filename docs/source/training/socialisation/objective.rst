@@ -17,12 +17,12 @@ Target Audience
 * Lecturers and students from relevant departments such as Geography,
   Geodesy, Geomathics, Information Technology and other earth-related sciences.
 * Representatives from NGOs working in disaster risk reduction
-* Other relevant organizations and agencies
+* Other relevant organisations and agencies
 
 Prerequisites
 -------------
 
-* Be able to operate a computer (word processors, presentations, internet,
+* Able to operate a computer (word processors, presentations, internet,
   spreadsheets).
 * Basic skills in Geographic Information Systems (GIS) is an advantage.
 * Laptop with:
@@ -43,16 +43,17 @@ Global Facility for Disaster Reduction and Recovery Labs (World Bank-|GFDRR|).
 Manual based on:
 ................
 
-* Version 2.0 of |project_name|
-* Version 2.0 of |QGIS|
+* Version 2.1.0 of |project_name|
+* Version 2.4 of |QGIS|
 
 Produced:
 .........
 
-August 2013
+August 2013 (original)
+September 2014 (update)
 
-For enquiries, contact:
-.......................
+More information:
+.................
 
 General information on |project_name| appears online at
 the |project_name| website: http://www.inasafe.org
