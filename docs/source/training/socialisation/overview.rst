@@ -27,7 +27,7 @@ questions.
 
 .. image:: /static/training/socialisation/001_inasafe_concept.png
 
-|project_name| is also able to aggregate the impact results by administration
+|project_name| is also able to aggregate the impact results by administrative
 boundary and provide a breakdown of information about the gender and age of
 affected people.
 
@@ -39,7 +39,7 @@ Indonesia faces significant risk of loss of lives and challenges to
 development progress as a result of natural disasters.
 The development of contingency plans is seen as an important step to
 strengthen disaster risk reduction programs.
-However, this can only be effective when contingency plans utilize realistic
+However, this can only be effective when contingency plans utilise realistic
 hazard scenarios.
 Realistic hazard scenarios require scientific, sound and up-to-date data
 hazard information as well as up-to-date, scale appropriate exposure data.
@@ -62,29 +62,29 @@ disaster managers and other end users can easily create impact maps to inform co
 
 |project_name| was preliminarily launched by Dr. Agus Wibowo, Head of the Data
 Center at the Indonesia’s Disaster Management Agency (|BNPB|),
-at the Understanding Risk Forum in Cape Town on 3 July,2012.
+at the Understanding Risk Forum in Cape Town on 3 July, 2012.
 There were over 300 downloads of the software within the first three weeks of
 its preliminary launch.
 
 |project_name| (Version 1.0) was officially launched at the 5th Asian
 Ministerial Conference for Disaster Risk Reduction in Yogyakarta,
-23–25 October 2012, by Mr. Dodi Ruswandi, the Deputy for disaster reduction
-and preparedness, |BNPB|, Mr. Abhas Jha,  Disaster risk management coordinator
+23–25 October 2012, by Mr. Dodi Ruswandi, the Deputy for Disaster Reduction
+and Preparedness, |BNPB|, Mr. Abhas Jha,  Disaster Risk Management Coordinator
 for East Asia and the Pacific from the World Bank,
-and Dr. Matt Hayne co-director of Australia-Indonesia Facility for Disaster
+and Dr. Matt Hayne, Co-director of Australia-Indonesia Facility for Disaster
 Reduction (|AIFDR|).
 
 |project_name| (Version 2.0) was officially launched at the opening of
 the InaDRTG center in Jakarta in March 2014 by |BNPB|.
 
 |project_name| is being taught across 6 provinces in Indonesia as one of
-the 3 open source software tools used to enable development of realistic
+the three open source software tools used to enable development of realistic
 disaster scenarios for contingency planning.
-The other 2 tools are:
+The other two tools are:
 
 #. OpenStreetMap (|OSM|): a free map of the world that anyone can add to
    and edit.
-   Utilizing community mapping allows for more detailed information that can
+   Utilising community mapping allows for more detailed information that can
    be fed into |project_name| (e.g. how many houses will be affected by a
    specific hazard).
 #. |QGIS|: an open source Geographical Information System software that
@@ -126,7 +126,7 @@ their assets that are important to them.
 
 The more communities, scientists and governments share data and knowledge,
 the more realistic and useful the |project_name| scenario will be.
-|project_name| accepts three types of Input data: Hazard, Exposure and
+|project_name| accepts three types of input data: Hazard, Exposure and
 Aggregation.
 
 Hazard
@@ -242,7 +242,8 @@ needed to respond to a major disaster.
 Additionally, an impact function can be configured ‘on the fly’ during the
 analysis.
 This will be touched on during the training exercise.
-:ref:`impact_functions`
+
+For more information visit :ref:`impact_functions`.
 
 Keywords
 ........
@@ -288,7 +289,7 @@ Impact calculation produces an output layer representing potential damages or
 losses of affected exposure.
 The output layer will come out once the impact calculation process is
 finished successfully.
-If the aggregation feature is used, this output layer could be organized by
+If the aggregation feature is used, this output layer could be organised by
 administrative boundaries.
 
 In a typical impact analysis, the output data will include both a spatial layer (e.g., 
