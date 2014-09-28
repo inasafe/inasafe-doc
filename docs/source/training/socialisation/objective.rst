@@ -44,7 +44,7 @@ Manual based on:
 ................
 
 * Version 2.1.0 of |project_name|
-* Version 2.4 of |QGIS|
+* Version 2.x of |QGIS|
 
 Produced:
 .........

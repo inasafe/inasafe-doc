@@ -11,24 +11,16 @@ In this section we introduce |QGIS| and set it up for this
 |project_name| practical. If you are already familiar with
 QGIS, feel free to skip below to QGIS setup and and plugin installation.
 
-**Objectives:**
+**Learning Objectives:**
 
-* Basic understanding of QGIS and its layout
+* Understand QGIS and its layout
 * Set up QGIS
-* Installation of |project_name| Plugins
-* Installation of OpenLayers plugin
-* Navigation of QGIS using Microsoft Bing imagery
-
-**Expected Results:**
-
-Participants are able to:
-
-* Identify basic elements of QGIS layout
-* Customize toolbar
-* Enable "on the fly reprojection by default"
+* Customise toolbar
 * Change QGIS to a different language
-* Install plugin
-* Use the navigational toolset
+* Install |project_name| plugin
+* Install OpenLayers plugin
+* Navigate QGIS using Microsoft Bing imagery
+
 
 Introduction to QGIS
 --------------------
@@ -40,9 +32,9 @@ vector, raster, and database formats and functionality.
 
 QGIS provides a continuously growing number of capabilities provided
 by core functions and plugins.
-You can visualize, manage, edit, analyse data, and compose printable maps.
+You can visualise, manage, edit, analyse data and compose printable maps.
 QGIS is also the platform which |project_name| is built on, and so the basics of QGIS
-will be taught in this workshop.
+will be taught in this practical.
 
 Why QGIS?
 ...........
@@ -207,7 +199,7 @@ OpenLayers, using the QGIS plugin repository.
 |project_name| also comes with a toolbar of its own!
 
 16. To retrieve the |project_name| toolbar, right-click on the
-    top toolbar and check :guilabel:`|project_name|`.
+    top toolbar and check :guilabel:`InaSAFE`.
 
 .. image:: /static/training/socialisation/022_inasafetoolbar.*
    :align: left
