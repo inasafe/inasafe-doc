@@ -42,7 +42,7 @@ repository with its btsync Dockerfile.
 If you only want to clone the data you just have to run the
 ::
 
-  rundocker.sh
+    rundocker.sh
 
 command in a shell.
 This will automatically start a docker container, download and run Bittorrent
@@ -58,5 +58,5 @@ If you just want to start a sync container with any other secret start
 :command:`rundocker.sh` with an added SECRET added as argument:
 ::
 
-  ./rundocker.sh THISISMYSECRET
+    ./rundocker.sh THISISMYSECRET
 
