@@ -8,111 +8,153 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-20 15:44+0200\n"
+"POT-Creation-Date: 2014-08-29 18:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:8
 # 4bc7f6506fc74fd99b200f2fc6309edf
+#: ../../source/user-docs/application-help/keywords_wizard.rst:8
 msgid "Keywords Wizard"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:10
 # 07fcdf8feb27413a903725aadadf3f5c
-msgid "This wizard will lead you through the process of defining keywords for an exposure, hazard or aggregation layer. Unlike the :ref:`keywords editor <keywords_editor>`, the keywords wizard 'understands' the constraints and rules that determine which keywords can be applied to any given layer. For example, if you have a raster layer, the keywords wizard will use impact function metadata to prevent you declaring that the layer contains road exposure data since by definition, such data must be vector line data."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:10
+msgid ""
+"This wizard will lead you through the process of defining keywords for an "
+"exposure, hazard or aggregation layer. Unlike the :ref:`keywords editor "
+"<keywords_editor>`, the keywords wizard 'understands' the constraints and "
+"rules that determine which keywords can be applied to any given layer. For "
+"example, if you have a raster layer, the keywords wizard will use impact "
+"function metadata to prevent you declaring that the layer contains road "
+"exposure data since by definition, such data must be vector line data."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:18
 # f16e4cf71f114bfaa49a206fd6607a18
-msgid "Each impact function includes metadata that defines what rules should apply to data that will be used with that impact function. At startup, the wizard scans these metadata and uses it to define its rules."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:18
+msgid ""
+"Each impact function includes metadata that defines what rules should apply "
+"to data that will be used with that impact function. At startup, the wizard "
+"scans these metadata and uses it to define its rules."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:22
 # b2a46425068f4c25aca054d7299a44bd
-msgid "For more general discussion on the keywords system used by InaSAFE, please see the :ref:`keywords system <keywords_system>` documentation."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:22
+msgid ""
+"For more general discussion on the keywords system used by InaSAFE, please "
+"see the :ref:`keywords system <keywords_system>` documentation."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:26
 # 5736caa6ae3344bfaac0e44c09b674ef
+#: ../../source/user-docs/application-help/keywords_wizard.rst:26
 msgid "Invoking the wizard"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:28
 # f8a41e351fd54809a2d8a2975c68b8da
-msgid "You can run the wizard by clicking on the icon in the InaSAFE toolbar that looks like this:"
+#: ../../source/user-docs/application-help/keywords_wizard.rst:28
+msgid ""
+"You can run the wizard by clicking on the icon in the InaSAFE toolbar that "
+"looks like this:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:36
 # 731675a5064940b4b25388d718222287
-msgid "You should have at least one layer loaded and active in QGIS before attempting to launch the keywords wizard."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:36
+msgid ""
+"You should have at least one layer loaded and active in QGIS before "
+"attempting to launch the keywords wizard."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:39
 # c40452e9c77c4b5e821b53019aac129b
+#: ../../source/user-docs/application-help/keywords_wizard.rst:39
 msgid "Once loaded the wizard will appear:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:46
 # 3cd1892dbb114bd89b00abb4b7cf343f
-msgid "If the layer already has keywords assigned to it, the wizard will default to existing keywords on each step (where applicable)."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:46
+msgid ""
+"If the layer already has keywords assigned to it, the wizard will default to "
+"existing keywords on each step (where applicable)."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:50
 # a58ee8ff9a284485934edf869ddc8f7b
+#: ../../source/user-docs/application-help/keywords_wizard.rst:50
 msgid "Cancelling the wizard"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:52
 # 2c8f60454f3c4fb0b1bf0211901c9fda
-msgid "The wizard can be cancelled at any time by pressing the :guilabel:`Cancel` button at the bottom of the wizard. No changes will be written to the keywords file if the wizard is cancelled."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:52
+msgid ""
+"The wizard can be cancelled at any time by pressing the :guilabel:`Cancel` "
+"button at the bottom of the wizard. No changes will be written to the "
+"keywords file if the wizard is cancelled."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:58
 # cff96b5037814899874c5246166306a6
+#: ../../source/user-docs/application-help/keywords_wizard.rst:58
 msgid "Using the wizard"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:60
 # ee773e484b4c4e23805b5e3bf3aadc49
-msgid "To use the wizard, simple follow the prompts presented on each page of the wizard. There are three standard forms of user input expected in the wizard:"
+#: ../../source/user-docs/application-help/keywords_wizard.rst:60
+msgid ""
+"To use the wizard, simple follow the prompts presented on each page of the "
+"wizard. There are three standard forms of user input expected in the wizard:"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:63
 # 8b6de33606a04f0f83c377df180a6c94
-msgid "1.) List selection. In this case options are provided in a list. Clicking on an item will usually display additional helpful text in the information area of the dialog."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:63
+msgid ""
+"1.) List selection. In this case options are provided in a list. Clicking on "
+"an item will usually display additional helpful text in the information area "
+"of the dialog."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:73
 # 647e40d94d3c4247b4641a9329bb9653
-msgid "2) Field selection. Whilst it appears to look like the list selection above, in this case the list is automatically generated from the available attributes of the layer."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:73
+msgid ""
+"2) Field selection. Whilst it appears to look like the list selection above, "
+"in this case the list is automatically generated from the available "
+"attributes of the layer."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:82
 # 2744ae52ff494878b97806d9582acf84
-msgid "3) Free form text. In some cases you may be prompted to enter free form text in order to define some additional metadata."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:82
+msgid ""
+"3) Free form text. In some cases you may be prompted to enter free form text "
+"in order to define some additional metadata."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:90
 # caf47acf18894c5dbbcfa42d1df2090e
-msgid "4) Drag and drop list. In this context the user should make concept mappings by dragging items from the left list (represented by unique field values from the attributes table) onto concepts in the right hand tree. For example below we see the user mapping all polygons that have their 'floodprone' field value as 'YES' or 'yes' onto the 'wet' concept in the tree view on the right."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:90
+msgid ""
+"4) Drag and drop list. In this context the user should make concept mappings "
+"by dragging items from the left list (represented by unique field values "
+"from the attributes table) onto concepts in the right hand tree. For example "
+"below we see the user mapping all polygons that have their 'floodprone' "
+"field value as 'YES' or 'yes' onto the 'wet' concept in the tree view on the "
+"right."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:103
 # ccde0305dc7a49f9a26148065c5c3457
+#: ../../source/user-docs/application-help/keywords_wizard.rst:103
 msgid "Completing the wizard"
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:105
 # 04008bd9f1ba446491ecdb81696ed17e
-msgid "On completion of the keywords wizard, a .keywords file will be written to disk and the keywords for the layer will be displayed in the dock area when that layer is active in QGIS."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:105
+msgid ""
+"On completion of the keywords wizard, a .keywords file will be written to "
+"disk and the keywords for the layer will be displayed in the dock area when "
+"that layer is active in QGIS."
 msgstr ""
 
-#: ../../source/user-docs/application-help/keywords_wizard.rst:115
 # 12f0f88269f5409e9f8ee2816163c590
-msgid "**A note on keyword compatibility:** The keywords wizard will generate keywords that are note compatible with versions of InaSAFE older than 2.1."
+#: ../../source/user-docs/application-help/keywords_wizard.rst:115
+msgid ""
+"**A note on keyword compatibility:** The keywords wizard will generate "
+"keywords that are note compatible with versions of InaSAFE older than 2.1."
 msgstr ""
-

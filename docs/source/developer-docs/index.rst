@@ -3,6 +3,15 @@
 Developer documentation
 =======================
 
+.. image:: /static/pycharm_logo.*
+   :align: right
+   :scale: 50 %
+
+As the |project_name| project is fully opensource we'd like to thank
+`JetBrains <http://www.jetbrains.com/>`_ for giving a licence for
+their great IDE `PyCharm <http://www.jetbrains.com/pycharm/>`_ for
+free to support the opensource community.
+
 Additional useful links for developers:
 
 * GitHub site for |project_name| : https://github.com/AIFDR/inasafe/
