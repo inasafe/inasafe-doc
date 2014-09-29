@@ -3,15 +3,16 @@
 Functionality and Datasets
 ==========================
 
-Before we dive into using QGIS and |project_name|, this chapter will explain
-|project_name|  current functionality, the functionality we will touch on
-during this short |project_name| course as well as the spatial datasets we
-will be using.
+Before we begin using QGIS and |project_name|, this chapter will explain
+|project_name| current functionality, the functionality that will be covered in
+this short course and the spatial datasets we will be using.
 
 The data used in this course is available for download on
-`data.inasafe.org <http://data.inasafe.org/>`_.
-Ask your trainer which data you will need to download or your trainer will
-give you the data on a USB-Stick anyway.
+`data.inasafe.org  <http://data.inasafe.org/>`_. Ask your trainer which data you 
+will need to download for the course if they do not provide it to you directly.
+
+If you are working through the training independently, use the following data package: `data.inasafe.org -
+InaSAFEv2.0.zip <http://data.inasafe.org/TrainingDataPackages/InaSAFEv2.0.zip>`_.
 
 Current Functionality of |project_name|
 ---------------------------------------
@@ -46,15 +47,15 @@ Structures     Polygon           Structure type      type                text
 Structures     Point             Structure type      type                text
 =============  ================  ==================  ==================  =======================
 
-.. note:: For information on what is a Raster or a Vector,
-   as well as the difference between Vector objects please go to
+.. note:: For information on what is a raster or a vector,
+   as well as the differences between vector objects please go to
    :doc:`rastervsvector`
 
 |project_name| is a dynamic tool that can easily be adapted to other types of
 hazard and exposure layers.
-The beauty of |project_name| being open source, is that anyone that has a
-background in programming would be able to make their own Impact function.
-For more information see take a look at :ref:`impact_function_tutorial`
+The beauty of |project_name| being open source is that anyone who has a
+background in programming is able to make their own impact functions.
+For more information visit :ref:`impact_function_tutorial`.
 
 Exposure Layers Used in Practical
 ---------------------------------
@@ -100,7 +101,7 @@ Structures
 :Coverage: World - incomplete
 :About:  OpenStreetMap is a collaborative project to create a free
     editable map of the world.
-    Two major driving forces behind the establishment and growth of |OSM|
+    Two major driving forces behind the establishment and growth of OSM
     have been restrictions on use or availability of map information across
     much of the world and the advent of inexpensive portable satellite
     navigation devices.
@@ -108,39 +109,40 @@ Structures
 .. image:: /static/training/socialisation/004_openstreetmap.png
    :align: center
 
-|GoA| has been working with the Humanitarian OpenStreetMap Team over the
-last 2 years in piloting and training OpenStreetMap in Indonesia.
-The result so far is over 1,300,000 buildings have been mapped.
+|GoA| has been working with the Humanitarian OpenStreetMap Team (HOT) since 2011 
+in piloting and training OpenStreetMap in Indonesia.
+Thus far over 1,300,000 buildings have been mapped.
 The scenarios we will look at within this workshop are situated in Jakarta,
 Merapi (Central Java and Yogyakarta), Sumatra (specifically Padang) and
 Maumere, Flores.
 Each one of these areas has a different OpenStreetMap data collection
 methodology.
-Below will explain the methodologies used in Jakarta and Padang.
+Below the data collection methodologies used in Jakarta and Padang are explained:
 
-:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (Nationals
+:Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (National
     Disaster Managers) with assistance from |GoA|, the World Bank,
-    UNOCHA, Humanitarian OpenStreetMap Team and University of Indonesia held
+    UNOCHA, HOT and University of Indonesia held
     workshops in each of Jakarta's 6 Districts in order to help Village Heads
     map their community boundaries and major infrastructure.
     Over 500 representatives from Jakarta's 267 Villages participated in these
     workshops and have mapped an impressive 6,000 buildings and all 2,668
     sub-village boundaries (Rukun Warga-RW).
-    Go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
+    For more information go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
 
-:Padang: Post Haiti's earthquake in 2010, there was a huge effort to map Haiti
-    through |OSM|, coordinating this effort was very hard,
-    and hence |GoA| subsequently funded the creation of OSM tasking Server.
-    The OSM tasking server is a web-base tool where you are able to select
-    your own square to map.  The first pilot of the web-tool was in Padang,
-    the specified area is now 100% finished with over 95,
-    000 buildings mapped. However the buildings are purely footprints,
-    an on the ground mapping effort is needed to record what type of building
-    it is. The tool is now being used across world to coordinate OSM
-    mapping efforts. Go to `OSM Tasking Manager <http://tasks.hotosm.org/>`_
+:Padang: After the Haiti earthquake in 2010, there was a large effort to map Haiti
+    through OSM. Coordinating this effort was difficult,
+    and so |GoA| funded the creation of the OSM Tasking Manager.
+    The OSM Tasking Manager is a web-based tool in which a designated area is
+    easily divided into a grid, and individual users can select one piece at a time
+    to quickly work together and digitally map the target area. The tool was
+    first piloted in Padang, where contributors from around the world helped
+    digitise over 95,000 buildings. However, the buildings are only footprints - 
+    an on the ground mapping effort is needed to record attributes about each building. 
+    The tool is now being used across world to coordinate OSM mapping efforts. 
+    It is available at `tasks.hotosm.org <http://tasks.hotosm.org/>`_
 
 Hazard Layers used in Practical
--------------------------------
+---------------------------------
 
 ===========  ================  ===============  ==================  ======================  ===============
 **Hazard**   **Spatial Type**  **Hazard Type**  **Attribute Name**  **Hazard Units/field**  **Parameters**
@@ -171,15 +173,14 @@ Flood Model
 Flood Footprint
 ...............
 
-:Name:  Jakarta flood areas on the 18/1/2013 by sub village boundaries
+:Name:  Jakarta flood areas on 18/1/2013 by sub village boundaries
 :InaSAFE:  Jakarta flooding on the 18th January 2013
 :Source: |OSM| and BPBD DKI Jakarta
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Jakarta
-:About: Based on the sub-village boundaries that were map during the DKI
-    mapping project, we were able to use this dataset during the recent
-    floods to identify the areas that had been flooded based on information
-    provided by the villages.
+:About: Along with sub-village boundaries that were mapped during the DKI
+    mapping project, this dataset was used to identify flood areas 
+    based on information provided by the villages.
 
 .. image:: /static/training/socialisation/006_floodfootprint.png
    :align: center
@@ -193,10 +194,10 @@ Volcano
 :License: `United States Copyright <http://www.copyright.gov/title17/>`_
 :Coverage: World
 :About: The Smithsonian's Global Volcanism Program seeks better understanding
-    of all volcanoes through documenting their eruptions-small as well as
+    of all volcanoes through documenting their eruptions - small as well as
     large-during the past 10,000 years. Through their website you are able to
     download a spreadsheet of all the recorded volcanoes.  This spreadsheet
-    also has the volcano location, which has been turned into a point file.
+    also has the volcano location, which has been converted into a point file.
 
 .. image:: /static/training/socialisation/007_volcano.png
    :align: center
@@ -205,7 +206,7 @@ Volcano
 Earthquake
 ..........
 
-:Name:  Shakemap of Pandang 2009 earthquake
+:Name:  Shakemap of Padang 2009 earthquake
 :InaSAFE: an earthquake in Padang like 2009
 :Source: Badan Geologi and |AIFDR|, |GoA|
 :License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
@@ -213,11 +214,9 @@ Earthquake
 :About: A shakemap is a representation of ground shaking produced by an
     earthquake.  This particular scenario was modelled based on the 30
     September 2009 Mw 7.9 earthquake in Padang. ShakeMaps are generated
-    automatically following moderate and large earthquakes by USGS. Go to
-    http://earthquake.usgs.gov/earthquakes/map/
-
-Pre-event / scenario based shakemaps need to be modelled by earthquake
-specialists.
+    automatically following moderate and large earthquakes by USGS. For more
+    information go to http://earthquake.usgs.gov/earthquakes/map/. Pre-event / 
+    scenario based shakemaps must be modelled by earthquake specialists.
 
 .. image:: /static/training/socialisation/008_earthquake.png
    :align: center
@@ -233,9 +232,9 @@ Tsunami
 :About: In September 2011 the Indonesian government held a national exercise
     in Maumere, Flores. |AIFDR| and |GoA| assisted Badan Geology in developing a
     tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was
-    modelled using the an open source software called ANUGA and elevation
+    modelled using open source software called ANUGA and elevation data
     from NEXTMap. The water depth is the maximum depth occurring across the
-    entire tsunami event. Go to http://anuga.anu.edu.au/
+    entire tsunami event. For more information visit http://anuga.anu.edu.au/
     and http://intermap.com/
 
 .. image:: /static/training/socialisation/009_tsunami.png

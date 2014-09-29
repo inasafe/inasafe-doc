@@ -1,62 +1,65 @@
 .. _test_data:
 
-Test Data
-==========
+Training Data
+=============
 
-Availability
-------------
+Example data for use with |project_name| trainings is available for download via :ref:`direct download <directdownload>`, :ref:`Bittorrent Sync <btsync>`, or :ref:`Docker <usingdocker>`.
 
-|project_name| provides a huge bunch of Test Data available on the net.
-If you want to select only a specific training dataset you can easily go to
+.. _directdownload:
+
+Direct Download
+---------------
+
+To obtain a specific training dataset go to
 http://data.inasafe.org and download the package you need.
-
-For areas with bad internet connection (and for people who want to download
-everything in one go) we make the whole data available with
-:ref:`Bittorrent Sync <btsync>`.
 
 .. _btsync:
 
-Bittorrent Sync
+BitTorrent Sync
 ---------------
 
-To download everything in one go you need to install BT Sync from their
-homepage at http://www.bittorrent.com/sync
+The training data can be quite large in size, so if you have a bad internet connection (or want to download everything at once), all of the materials are also available with BitTorrent Sync.
 
-If you are using Windows or MacOS just download the package,
-follow their install instructions and use
+To obtain the training data using BitTorrent Sync, first visit http://www.bittorrent.com/sync and download and install the software. Note that it is not necessary to provide your email address.
 
-SECRET: BSU2UCAVRV7P4CHRYOZGIRQ2VN6CH4JP3
+When installation is complete, open BitTorrent Sync. To download the training data to your computer, click on the :guilabel:`Options` button and then click :guilabel:`Enter a key...`
 
-as the SECRET to enter.
-Select the folder where you wish to sync the data and press :guilabel:`OK` to
-start downloading.
+.. image:: /static/training/training-data/001_enter-a-key.png
+   :align: center
 
-If you are using Linux you can either basically do the same with the
-exception that you will have to connect to a port (mostly 8888) on your
-localhost and add the SECRET and the folder to sync to there.
+Enter the following key: BSU2UCAVRV7P4CHRYOZGIRQ2VN6CH4JP3
 
-Or you can give `docker <http://www.docker.io>`_ a try and checkout the
+After you enter the key you must choose a folder on your computer where you would like to synchronize the files. Create a new folder and select it.
+
+The files will begin to synchronize with the folder on your computer. It may take awhile to download, depending on the speed of your connection.
+
+.. note:: If you are using Linux the BitTorrent Sync interface will be available in your web browser at http://localhost:8888 after you start the application.
+
+.. _usingdocker:
+
+Using Docker
+------------
+If you are comfortable using `docker <http://www.docker.io>`_, you may clone the training data by using the btsync Dockerfile.
+
+Copy the
 `inasafe-infrastructure <https://github.com/AIFDR/inasafe-infrastructure>`_
-repository with its btsync Dockerfile.
+git repository.
 
-If you only want to clone the data you just have to run the
+To clone the data files, run
 ::
 
   rundocker.sh
 
-command in a shell.
+in a shell.
+
 This will automatically start a docker container, download and run Bittorrent
-Sync with the Read Only Secret and Sync all data to
+Sync with the correct key and synchronize all data to the
 :file:`/var/docker/volumes/btsync` directory.
 
-The Path where to sync to is configurable by adjusting the Variable in the
-:command:`rundocker.sh` script which is called DATADIR.
+The directory that docker will synchronize with is configurable by adjusting the DATADIR variable in the :file:`rundocker.sh` script.
 
-At the same place you can also change the name of the Docker Container.
-
-If you just want to start a sync container with any other secret start
-:command:`rundocker.sh` with an added SECRET added as argument:
+To start a sync container with any other secret run :command:`rundocker.sh` with a KEY added as argument:
 ::
 
-  ./rundocker.sh THISISMYSECRET
+  ./rundocker.sh THISISMYKEY
 

@@ -5,20 +5,19 @@ Overview
 
 Concept
 -------
-To effectively prepare for future floods, earthquakes or tsunami you must
+To effectively prepare for future floods, earthquakes or tsunamis one must
 first understand the likely impacts that need to be managed.
 For example, to prepare a contingency plan for a severe flood in Jakarta,
 emergency managers need to answer questions like:
 
-- what are the areas likely to be affected;
-- how many people will need to be evacuated and sheltered;
-- which schools will be closed;
-- which hospitals can still take patients; and
+- what are the areas likely to be affected?
+- how many people will need to be evacuated and sheltered?
+- which schools will be closed?
+- which hospitals can still take patients?
 - which roads will be closed?
 
-Conceptually |project_name| combines one exposure layer (e.g. location of
-buildings) with one hazard scenario (e.g. flooding footprint) and returns a
-spatial impact layer along with textual statistical summary and action
+|project_name| combines one exposure data layer (e.g. location of
+buildings) with one hazard scenario (e.g. the footprint of a flood) and returns a spatial impact layer along with a statistical summary and action
 questions.
 
 |project_name| is framed around questions such as:
@@ -28,7 +27,7 @@ questions.
 
 .. image:: /static/training/socialisation/001_inasafe_concept.png
 
-|project_name| is also able to aggregate the impact results by administration
+|project_name| is also able to aggregate the impact results by administrative
 boundary and provide a breakdown of information about the gender and age of
 affected people.
 
@@ -40,10 +39,10 @@ Indonesia faces significant risk of loss of lives and challenges to
 development progress as a result of natural disasters.
 The development of contingency plans is seen as an important step to
 strengthen disaster risk reduction programs.
-However this can only be effective when contingency plans utilises realistic
-hazard scenario.
+However, this can only be effective when contingency plans utilise realistic
+hazard scenarios.
 Realistic hazard scenarios require scientific, sound and up-to-date data
-hazard information as well as up-to-date, scale appropriate exposure.
+hazard information as well as up-to-date, scale appropriate exposure data.
 Such map-based contingency plans offer accurate and comprehensive results in
 calculating minimum relief items, identifying safe places,
 and sectorial planning.
@@ -52,44 +51,41 @@ and sectorial planning.
 rigorous way to combine the data from scientists, local governments and
 communities to provide insights into the likely impacts of future disaster
 events.
-The software is focused on examining, in detail, the impacts by a single
+The software is focused on examining, in detail, the impacts that a single
 hazard would have on specific sectors.
-For example location of primary schools and estimated number of students
-affected by a possible tsunami in Maumere (when it happened during the school
+For example, |project_name| can help users examine the location of primary schools and estimated number of students who would be affected by a possible tsunami in Maumere, Indonesia (when it happened during school
 hours).
 |project_name| has been developed as a QGIS plugin to enable end users to not
-only complete an |project_name| analysis, but to also analysis the result
-using the suite of QGIS tools that are available.
-The software has been designed as a simple user interface in a hope that
-disaster managers and end users can easily use |project_name| for creating
-impact maps to inform contingency planning.
+only complete a disaster impact analysis, but to also conduct further geographic analysis using the suite of QGIS tools that are available.
+The software includes a simple-to-use interface in the hope that
+disaster managers and other end users can easily create impact maps to inform contingency planning.
 
 |project_name| was preliminarily launched by Dr. Agus Wibowo, Head of the Data
 Center at the Indonesia’s Disaster Management Agency (|BNPB|),
-at the Understanding Risk Forum in Cape Town on 3 July,2012.
+at the Understanding Risk Forum in Cape Town on 3 July, 2012.
 There were over 300 downloads of the software within the first three weeks of
 its preliminary launch.
 
 |project_name| (Version 1.0) was officially launched at the 5th Asian
 Ministerial Conference for Disaster Risk Reduction in Yogyakarta,
-23–25 October 2012, by Mr. Dodi Ruswandi, the Deputy for disaster reduction
-and preparedness, |BNPB|, Mr. Abhas Jha,  Disaster risk management coordinator
+23–25 October 2012, by Mr. Dodi Ruswandi, the Deputy for Disaster Reduction
+and Preparedness, |BNPB|, Mr. Abhas Jha,  Disaster Risk Management Coordinator
 for East Asia and the Pacific from the World Bank,
-and Dr. Matt Hayne co-director of Australia-Indonesia Facility for Disaster
+and Dr. Matt Hayne, Co-director of Australia-Indonesia Facility for Disaster
 Reduction (|AIFDR|).
 
 |project_name| (Version 2.0) was officially launched at the opening of
 the InaDRTG center in Jakarta in March 2014 by |BNPB|.
 
 |project_name| is being taught across 6 provinces in Indonesia as one of
-the 3 open source software tools used to enable development of realistic
+the three open source software tools used to enable development of realistic
 disaster scenarios for contingency planning.
-The other 2 tools are:
+The other two tools are:
 
-#. OpenStreetMap (|OSM|): is a free map of the world that anyone can add to
+#. OpenStreetMap (|OSM|): a free map of the world that anyone can add to
    and edit.
-   Utilizing community mapping allows for more detailed information that can
-   be fed into |project_name| (i.e. How many houses will be affected by a
+   Utilising community mapping allows for more detailed information that can
+   be fed into |project_name| (e.g. how many houses will be affected by a
    specific hazard).
 #. |QGIS|: an open source Geographical Information System software that
    allows users to spatially analyse their data.
@@ -125,12 +121,12 @@ their assets that are important to them.
 .. note:: It is important to note that |project_name| is not a hazard
    modelling tool.
    Information on hazards needs to be provided either by technical experts,
-   often from Government agencies, universities or technical consultants,
+   often from government agencies, universities or technical consultants,
    or from communities themselves based on their previous experiences.
 
 The more communities, scientists and governments share data and knowledge,
 the more realistic and useful the |project_name| scenario will be.
-|project_name| accepts three types of Input data, Hazard, Exposure and
+|project_name| accepts three types of input data: Hazard, Exposure and
 Aggregation.
 
 Hazard
@@ -139,14 +135,9 @@ Hazard
 Hazard can be seen as a condition, phenomenon, or human activity that
 potentially cause victims, losses or destruction to social structure and
 environment.
-Events or phenomena that frequently are seen as hazard potentials include
-earthquakes, tsunamis, floods, landslides, tornadoes etc.
+Events or phenomena that are seen as hazard potentials include disasters such as earthquakes, tsunamis, floods, landslides and tornadoes.
 
-For |project_name|, hazard data refers to a singular disaster scenario (i.e.
-a Mw 7.8 earthquake or a volcanic eruption) that has been developed through
-scientific modelled software for infrequent events, for more frequent events
-such as floods it can either be modelled by scientist or mapped by the
-community.
+For |project_name|, hazard data refers to a singular disaster scenario, such as a Mw 7.8 earthquake or volcanic eruption. Data for such infrequent events is created with scientific modeling software. For more frequently occurring disaster scenarios such as floods, the hazard data can be either modeled by scientists or directly mapped by the local community.
 
 The hazard must be accompanied by specific units:
 
@@ -168,9 +159,9 @@ The hazard must be accompanied by specific units:
 | \*Cyclone/Tornado      |                                         |                      |
 +------------------------+-----------------------------------------+----------------------+
 
-*\*To come in future version of* |project_name|
+\* *To come in a future version of |project_name|*
 
-The input Hazard layer must have:
+The input hazard layer must have:
 
 - a coordinates/location identifier
 - specific hazard intensity (e.g. flood depth, earthquake’s MMI)
@@ -179,9 +170,9 @@ The input Hazard layer must have:
 Exposure
 ........
 
-For |project_name|, exposure data is referred to as population density (number
+For |project_name|, exposure data may represent population density (number
 of people found in a certain area) or important infrastructure (buildings,
-bridges etc) that becomes a focus of interest when calculating the impact of
+bridges) that becomes a focus of interest when calculating the impact of
 a specific hazard.
 
 +--------------------------+-------------------------------------------+
@@ -191,22 +182,21 @@ a specific hazard.
 +--------------------------+-------------------------------------------+
 | Buildings                | Schools, Hospitals                        |
 +--------------------------+-------------------------------------------+
-| Other Man-made structure | Bridges, telecommunications               |
+| Other man-made structures| Bridges, telecommunications               |
 +--------------------------+-------------------------------------------+
 | \* Roads                 | major, minor                              |
 +--------------------------+-------------------------------------------+
-| \! Landslide             | Agriculture, industrial                   |
+| \† Landslide             | Agriculture, industrial                   |
 +--------------------------+-------------------------------------------+
 
-\* Is available for hazard layer footprints only, the next version of
-   |project_name| will allow for Modelled hazards.
+\* *Is available for hazard layer footprints only; the next version of |project_name| will allow for modelled hazards.*
 
-\! To come in future version of |project_name|
+\† *To come in a future version of |project_name|.*
 
-The input Exposure layer must have:
+The input exposure layer must have:
 
 - a coordinate/location identifier
-- temporal information when the data was collected
+- temporal information about when the data was collected
 - type, if available
 
 Aggregation
@@ -215,60 +205,57 @@ Aggregation
 |project_name| prides itself on simplicity, but with each question answered a
 new one arises.
 "In the event of **<hazard>** how many **<exposure>** will be affected?",
-is the core question that is answered by |project_name|,
-but aggregation adds to this by providing options to divide your results by
-area such as province boundaries.
-Instead of just knowing the total number of people affected by the hazard,
+is the core question that is answered by |project_name|. Aggregation data adds to this by providing options to divide your results by area, such as by province boundaries.
+Instead of knowing only the total number of people affected by the hazard,
 |project_name| is able to aggregate the results allowing the user to
-understand how many people are affected in a certain administration area.
-Hence the local governments will be able understand the impact to their
-specific area.
+understand how many people are affected in a certain administrative area.
+This can aid local governments in understanding the impact specific to their district.
 
 Impact Function
 ---------------
 
-The core to |project_name| is its capability of having multiple Impact
-functions specific to the input data.
-An impact function generally only deals with the combination of 1 hazard
-layer with 1 exposure layer.
-The way it is combined is specific to the impact function,
-it could be a simple overlay of the 2 layers, or it could be a complicated
+|project_name| is capable of having multiple impact functions specific to the input data.
+Typically an impact function deals with the combination of one hazard
+layer and one exposure layer.
+The way the data is combined is specific to the impact function.
+It could be a simple overlay of the two layers, or it could be a complicated
 function that calculates if a building would fall down in an earthquake based
 on building structure information.
 
-The output of the impact function will typically have a spatial component (e
-.g. a GIS layer which automatically loads into the map canvas) and a
-non-spatial component (e.g. a list of estimates of disaster risk reduction
+The output of the impact function will usually have a spatial component (i
+.e. a GIS layer which automatically loads into the map canvas) and a
+non-spatial component (i.e. a list of estimates of disaster risk reduction
 elements such as how many kilos of rice to make available,
 or a list of actions you may want to consider carrying out) which will be
-found in the |project_name| window panel.
+found in the |project_name| pane.
 
-Impact functions can be written for any contingency planning purpose,
-one example is the minimum needs (minimum quantity of relief items per per
+Impact functions can be written for any contingency planning purpose. One 
+example is the minimum needs (minimum quantity of relief items per
 person) that need to be supplied to refugees during/after a disaster.
 The Indonesian Disaster Management Agency (|BNPB|) have identified these needs
-per day, and |project_name| has used these numbers to calculate how much
-food, water, toilets, family kits etc are need during/after the disaster
+per day, and |project_name| uses these numbers to calculate how much
+food, water, toilets, family kits, and other resources are need during/after the disaster
 based on the number of evacuated people.
 This output directly informs contingency planners how much of each item is
-needed to withstand a major disaster.
+needed to respond to a major disaster.
 
-Additionally an impact function can be configured ‘on the fly’ during the
+Additionally, an impact function can be configured ‘on the fly’ during the
 analysis.
 This will be touched on during the training exercise.
-:ref:`impact_functions`
+
+For more information visit :ref:`impact_functions`.
 
 Keywords
 ........
 
-An Impact function will automatically be chosen depending on the keywords
-that has been allocated to the input layers.
+An impact function is automatically chosen depending on the keywords
+that have been allocated to the input layers.
 The purpose of the keywords file is to provide additional metadata needed by
 the impact functions.
 For example, the keywords file will indicate whether a given dataset should be
 treated as a hazard or an exposure layer.
 It is also used to indicate the context of the layer (e.g. flood,
-earthquake). :ref:`keywords_system`
+earthquake). This is discussed in more detail in :ref:`keywords_system`.
 
 Available Impact Functions
 ..........................
@@ -293,7 +280,7 @@ Available Impact Functions
 | Volcano           | Buildings      | be affected              | Number of buildings affected                                       |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 
-*\*This is not the complete list of Impact functions currently in*
+*\*This is not the complete list of impact functions currently in*
 |project_name|
 
 Output Data
@@ -302,12 +289,11 @@ Impact calculation produces an output layer representing potential damages or
 losses of affected exposure.
 The output layer will come out once the impact calculation process is
 finished successfully.
-As previously indicated this output layer could potentially be aggregated by
-administration boundaries.
+If the aggregation feature is used, this output layer could be organised by
+administrative boundaries.
 
-Using the example explained in Impact functions about the minimum needs,
-the output data will be both a spatial layer indicating where people are (by
-density) and the non-spatial layer will have statistics on the minimum needs
-based on the number of people that ‘need evacuating’.
+In a typical impact analysis, the output data will include both a spatial layer (e.g., 
+indicating where people are by density) and a non-spatial layer which will contain
+statistics on the minimum needs of the number of people that ‘need evacuating’.
 
 .. image:: /static/training/socialisation/002_output_data.png
