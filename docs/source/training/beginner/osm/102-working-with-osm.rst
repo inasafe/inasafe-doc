@@ -6,11 +6,11 @@ Module 2: Working with OSM
 **Learning Objectives**
 
 - Visit OpenStreetMap website
-- Navigate map in OpenStreetMap website
-- Saving image from OpenStreetMap
-- Register an OpenStreetMap account
-- Editing a map
-- Save Edits
+- Navigate map on OSM website
+- Save an image from OSM 
+- Register an OSM account
+- Edit the OSM map       
+- Save edits             
 
 In this module we will learn step by step how to navigate the OpenStreetMap
 website, view and print maps, and sign up for a user account.  After you
@@ -38,9 +38,9 @@ points to the map.
   turning the wheel.  If you don’t have a scroll-wheel,
   use the :guilabel:`+` and :guilabel:`-` buttons on in the upper right corner
   of the map.
-- To search for a place, :guilabel:`Left Click` in the box labeled
+- To search for a place, left-click in the box labeled
   :guilabel:`Search` on the left side of the page. Type in the name of your
-  town or village and press :guilabel:`Enter`.  A window should appear to the
+  town or village and press Enter.  A window should appear to the
   left of the map with the results of your search.  Click on the location that
   looks like the one you want.  The map will automatically move to the location
   you chose.
@@ -55,29 +55,29 @@ points to the map.
 .. image:: /static/training/beginner/osm/image13.*
    :align: center
 
-- Then will appears option like this:
+- Options will appear which look like this:
 
 .. image:: /static/training/beginner/osm/image14.*
    :align: center
 
 - In the Image section, check :guilabel:`Set custom dimensions` if you want
   to manually specify which area you want to download. If you do not select
-  the option, then the area that will be downloaded to adjust the map you're
-  currently on.
-- You can download the image in PNG, JPEG, SVG or PDF format according to your
+  the option, then the downloaded area will adjust to the current extent
+  of the map.
+- You may download the image in PNG, JPEG, SVG or PDF format according to your
   needs.
 - You can also determine the scale of the map that will be downloaded by
   entering the scale rate.
 - Then click :guilabel:`Download`. The download process will start. It will be
   stored in your computer.
-- Open the file that you have downloaded. If you want to print, you can select
+- Open the file that you have downloaded. If you want to print, select
   :guilabel:`Print` from the :menuselection:`File` menu, after you connect your computer to a printer.
 
 **4. Create an OpenStreetMap Account**
 
 - Now that you have seen what the main website looks like, you can register
   for a username and password and make your first additions to the map.
-- Go back to the OpenStreetMap website.  Click :guilabel:`sign up` in the
+- Go back to the OpenStreetMap website.  Click :guilabel:`Sign Up` in the
   top right corner of the page.
 - You should see a new page that looks like this:
 
@@ -109,7 +109,7 @@ points to the map.
 - Open a separate window or tab in your internet browser,
   and navigate to your email.  Common email sites are
   `mail.yahoo.com <http://mail.yahoo.com>`_ and
-  `gmail.com <http://gmail.com>`_
+  `gmail.com <http://gmail.com>`_.
 
 - Enter your email address and your email password to open your email.  Note
   that this is not the same as your OpenStreetMap username and password.
@@ -123,7 +123,7 @@ points to the map.
 
 - A new tab or window will open.  If everything went well,
   you should have an OSM account!
-- On the OpenStreetMap page, click “log in” in the top right corner.  Enter
+- On the OpenStreetMap page, click “Log In” in the top right corner.  Enter
   your OpenStreetMap username and password and press Enter.  You should now be
   logged in.  You should see your username in the upper right corner of the
   page.
@@ -131,20 +131,19 @@ points to the map.
 **5. Adding Your First Points**
 
 - Now that you are logged in with your username on the OpenStreetMap website,
-  you can use the Potlatch editor to add your first point to the map.
+  you can add your first point to the map.
 - Move the map to a place that you know very well, such as your town or village.
 - Zoom in to a place where you would like to add a point to the map.
-- Just above the map on the left, there is a tab marked :guilabel:`Edit`. Hover
-  your mouse over this button, but don’t click.  You should see a menu drop
-  down.
-- Click :guilabel:`Edit with Potlatch 2 (in-browser editor)`
-- The online editor for OpenStreetMap should open.  If a window pops up, press
-  :guilabel:`OK`
-- You can add a point to the map by clicking on an icon on the left, and
-  dragging it to its location on the map.  After you add the point and are
-  satisfied that it is correct, click :guilabel:`Save` in the upper right
-  corner.
+- Just above the map on the left, there is a tab marked :guilabel:`Edit`. Click
+  on the arrow next to it to open a drop-down menu.
+- Click :guilabel:`Edit with iD (in-browser editor)`
+- The online editor for OpenStreetMap should open. For a tour of the editor, click
+  :guilabel:`Start the Walkthrough`. To begin editing, click :guilabel:`Edit Now`.
+- Add a point to the map by clicking :guilabel:`Point` at the top, and then clicking
+  a location on the map. Select the type of location from the menu on the left
+  and add any other information that you know. If you are
+  satisfied that the information is correct, click :guilabel:`Save` at the top.
 
 .. Note::  If you are not sure about the accuracy of the point(s) you add,
-           don’t click :guilabel:`Save` ! Play around with the Potlatch editor,
+           don’t click :guilabel:`Save`! Play around with the iD editor,
            but don’t save your changes.
