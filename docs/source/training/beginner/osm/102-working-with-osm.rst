@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/osm/image6.*
 
+..  _working-with-osm:
+
 Module 2: Working with OSM
 ==========================
 
@@ -17,7 +19,8 @@ website, view and print maps, and sign up for a user account.  After you
 have your own username and password, you will be able to add your first
 points to the map.
 
-**1. Visit the OpenStreetMap Website**
+1. Visit the OpenStreetMap Website
+----------------------------------
 
 - Be sure that your computer is on and you are connected to the internet.
 - To visit the OpenStreetMap website, you need to open your web browser.
@@ -29,7 +32,8 @@ points to the map.
 .. image:: /static/training/beginner/osm/image12.*
    :align: center
 
-**2. Navigate the Map**
+2. Navigate the Map
+-------------------
 
 - The main thing you should see is the map.  Move the map by clicking on it
   with your left mouse button, holding the button down,
@@ -45,7 +49,8 @@ points to the map.
   looks like the one you want.  The map will automatically move to the location
   you chose.
 
-**3. Save an Image of the OSM Map**
+3. Save an Image of the OSM Map
+-------------------------------
 
 - If you want to save an image from OpenStreetMap that you can easily print,
   follow these instructions.
@@ -73,7 +78,8 @@ points to the map.
 - Open the file that you have downloaded. If you want to print, select
   :guilabel:`Print` from the :menuselection:`File` menu, after you connect your computer to a printer.
 
-**4. Create an OpenStreetMap Account**
+4. Create an OpenStreetMap Account
+----------------------------------
 
 - Now that you have seen what the main website looks like, you can register
   for a username and password and make your first additions to the map.
@@ -128,7 +134,8 @@ points to the map.
   logged in.  You should see your username in the upper right corner of the
   page.
 
-**5. Adding Your First Points**
+5. Adding Your First Points
+---------------------------
 
 - Now that you are logged in with your username on the OpenStreetMap website,
   you can add your first point to the map.
@@ -147,3 +154,5 @@ points to the map.
 .. Note::  If you are not sure about the accuracy of the point(s) you add,
            don’t click :guilabel:`Save`! Play around with the iD editor,
            but don’t save your changes.
+
+:ref:`Go to next module --> <working-with-josm>`

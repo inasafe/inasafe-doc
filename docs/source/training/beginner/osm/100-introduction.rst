@@ -129,3 +129,5 @@ and surfing the web, don't worry – this guide is for you too. No matter your
 proficiency, we'll take you step by step through OSM and you'll be mapping
 in no time!
 
+:ref:`Go to next module --> <basic-concept-of-osm-website>`
+

@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/osm/image6.*
 
+..  _basic-concept-of-osm-website:
+
 Module 1: Basic Concept of OpenStreetMap Website
 ================================================
 
@@ -17,7 +19,8 @@ or hospital?  Who has the least access to these facilities?  Where is
 poverty the most problematic? Questions like these can often best be
 expressed with maps, and maps can help find solutions to these questions.
 
-**Draw a Map**
+Draw a Map
+----------
 
 As an exercise, get a pen and paper and draw a map of your town or village.
 What are the most important things to include on the map?  What is the most
@@ -59,7 +62,8 @@ it is difficult to get that information to others. This is why making your
 map on a computer, in such a way that anyone can access it,
 can be much more valuable.
 
-**Why digital?**
+Why digital?
+------------
 
 Map making on computers allows us to collect more useful data than on paper.
 On paper we might draw a school, and even add it’s name and record some
@@ -109,3 +113,5 @@ can be.
 In this unit, you will learn how to make a digital map. You will learn how
 to use the OpenStreetMap platform, and you will make your first edits and
 additions to the worldwide map.
+
+:ref:`Go to next module --> <working-with-osm>`

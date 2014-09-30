@@ -319,4 +319,6 @@ You may wish to redraw the map that you drew on paper in Module 1.
 - Use the Draw tool to create points, lines, and shapes. Describe what your
   objects are by selecting from the Presets menu.
 - When you are finished, you should have your own map,
-  similar to the sample map that we opened in sample.osm.
+  similar to the sample map that we opened in :file:`sample.osm`.
+
+:ref:`Go to next module --> <using-gps>`
