@@ -1,18 +1,19 @@
 .. image:: /static/training/beginner/osm/image6.*
 
+..  _working-with-josm:
+
 Module 3: Working with JOSM
 ===========================
 
 **Learning Objectives**
 
-- Download JOSM
-- JOSM Installation
-- JOSM Preferences
-- Using Basic Tools
-- Drawing nodes, way, and shape in JOSM based on map that you made in the
-  previous session
-- Change Objects
-- Add information to the objects using ‘presets’ menu
+- Download JOSM                           
+- Install JOSM                            
+- Set JOSM preferences                    
+- Use basic tools                         
+- Draw nodes and ways in JOSM             
+- Change objects                          
+- Add tags to objects using presets menu
 
 In this module we will learn step by step how to download and install JOSM,
 the Java OpenStreetMap editor. We will change some of the settings in JOSM
@@ -22,17 +23,18 @@ to draw a map of your town or village? We will conclude this module by
 drawing your map again, this time digitally. After this you should have a
 good understanding of how to draw maps in JOSM.
 
-**1. Download JOSM**
+1. Download JOSM
+----------------
 
-- There is a copy of JOSM in the software/ folder that of the package that
+- There is a copy of JOSM in the :file:`software` folder that of the package that
   accompanies this guide.  If you don’t have this or would like the most
-  up-to-date version, follow the instructions here.  Otherwise skip to
-  section 2. Install JOSM.
+  up-to-date version, follow the instructions here.  Otherwise skip 
+  to :ref:`install-josm`.
 - Open your web browser - this may be Firefox, Chrome, Opera,
   or Internet Explorer.
 - In the address bar at the top of the window, enter the following text and
   press Enter: `josm.openstreetmap.de <http://josm.openstreetmap.de>`_
-- You can also find this website by searching for JOSM
+- You can also find this website by searching for JOSM.
 
 - The website should look something like this:
 
@@ -45,18 +47,21 @@ good understanding of how to draw maps in JOSM.
   begin. In this module we will assume that you are using Windows, but the
   instructions are similar for other operating systems.
 
-**2. Install JOSM**
+..  _install-josm:
+
+2. Install JOSM
+---------------
 
 - You may have problems installing JOSM if Java is not already installed on
-  your computer.  You can install Java by running **jre-7u21-windows-i586**
-  in the software/ folder.  You can also download it here:
+  your computer.  You can install Java by running :file:`jre-7u21-windows-i586`
+  in the :file:`software` folder.  You can also download it here:
   `http://www.java.com/en/download/ <http://www.java.com/en/download/>`_
 - Find the JOSM install file on your computer.  It should be named
-  **josm-setup.exe**. Double-click it to begin setup.
+  :file:`josm-setup.exe`. Double-click it to begin setup.
 - Click :guilabel:`OK`, :guilabel:`Next`, :guilabel:`I Agree`, and
   :guilabel:`Install`. When the installation is complete, click
   :guilabel:`Finish` to launch JOSM for the first time. Later, when you want
-  to start JOSM, you can do so by clicking on the :menuselection:`Start Menu` in
+  to start JOSM, you can do so by clicking on the :guilabel:`Start Menu` in
   the lower left corner of your computer, and clicking the program JOSM.
 - You may see a window pop up that asks if you want to update the software.
   You don’t need to update it since it is new.  Press the button that says
@@ -67,16 +72,21 @@ good understanding of how to draw maps in JOSM.
 .. image:: /static/training/beginner/osm/image18.*
    :align: center
 
-**3. Change JOSM Settings**
+3. Change JOSM Settings
+-----------------------
 
 Before we begin using JOSM, it’s a good idea to change some of the settings
-so that is will be easier to use. To change the settings,
-click :guilabel:`Edit` on the top menu, and then click :guilabel:`Preferences`
+so that it will be easier to use. To change the settings,
+go to :menuselection:`Edit -> Preferences`.
 
 .. image:: /static/training/beginner/osm/image19.*
    :align: center
 
-*3.1. Add Bing Imagery*
+3.1. Add Bing Imagery
+.....................
+
+.. note:: This may be unnecessary if Bing Imagery is already activated in your
+   copy of JOSM.
 
 - We want to be able to use satellite imagery when we are making our maps,
   so let’s add that from the Preferences window. On the left side of the
@@ -98,7 +108,8 @@ click :guilabel:`Edit` on the top menu, and then click :guilabel:`Preferences`
 - You should now see :guilabel:`Bing Sat` in the list below the
   :guilabel:`Activate` button.
 
-*3.2. Add Presets*
+3.2. Add Presets
+................
 
 - We will be using presets so that we can add special data to OpenStreetMap.
   Don’t worry if this is unclear right now - we will learn more about it as
@@ -119,70 +130,75 @@ click :guilabel:`Edit` on the top menu, and then click :guilabel:`Preferences`
 
 - Click :guilabel:`OK`.
 
-*3.3. Add Plugins*
+3.3. Add Plugins
+................
 
-- We can use a plugins for certain purpose. At JOSM there are several
+- Plugins provide extra functionality for specific purposes. JOSM has many 
   plugins that can be downloaded.
 - To download the plugins that we need, we must first open the Preferences
   window.
-- In the :guilabel:`Preferences` window, click the :guilabel:`Plugin` icon to
+- In the Preferences window, click the :guilabel:`Plugin` icon to
   the left:
 
 .. image:: /static/training/beginner/osm/image25.*
    :align: center
 
-- In the plugin window, first you need to download the plugin list by
-  clicking :guilabel:`Download list`. It will takes a few minutes.
+- On the plugin tab, first you need to download the plugin list by
+  clicking :guilabel:`Download list`. It may take a few minutes.
 - After the plugin list appears, type the name of the plugin you want to
-  download in the :guilabel:`Search`
+  download in the :guilabel:`Search` box.
 
 .. image:: /static/training/beginner/osm/image26.*
    :align: center
 
-- After found the plugin will be downloaded, give a 'check' on the left of
-  the plugin name.
-- Click :guilabel:`OK`.
+- When the plugin is found, check the box to the left of the plugin name.
+- Click :guilabel:`OK` to download and install the plugins.
 
-*3.4. Change Language*
+.. note:: Skim through the list to see what sort of additional
+   features are available through plugins.
+
+3.4. Change Language
+....................
 
 - JOSM has been translated into many languages. If it has been translated
-  into your language, you can change it in the :guilabel:`Preferences`.
+  into your language, you can change it in the Preferences.
 - If you don’t have the Preferences window open, click
   :menuselection:`Edit ‣ Preferences`.
 - On the left side, click the icon that looks like a paint can and paintbrush.
 - At the top of the window, click the tab that says :guilabel:`Look and Feel`.
-- Choose your language in the dropdown box next to the word :guilabel:`Language`
+- Choose your language in the dropdown box next to the word :guilabel:`Language`.
 - Click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/osm/image27.*
    :align: center
 
-- You need to restart JOSM to save your settings. Click :menuselection:`File`
-  in the upper left corner, and Click :menuselection:`Exit` at the bottom of
-  the menu.
-- Start JOSM again by going to the Windows :menuselection:`Start Menu` in the
+- You need to restart JOSM to save your settings. Go 
+  to :menuselection:`File -> Exit`.
+- Start JOSM again by going to the Windows :guilabel:`Start Menu` in the
   bottom left corner. Find JOSM and click on it to start.
 
-*4. Learn Basic Drawing with JOSM*
+4. Learn Basic Drawing with JOSM
+--------------------------------
 
 - Now let’s open up a sample OSM file which we will use to learn the basic
   ways to draw maps with JOSM. Note that this map is not real,
   in that it is not a real map of a real place, so we will not save it on
   OpenStreetMap.
-- The file is located in osm/ and is named sample.osm
-- Let’s open the sample map file in JOSM. Open JOSM. Click the :guilabel:`Open`
-  button in the upper left.
+- The file is located in :file:`osm` and is named :file:`sample.osm`.
+- Let’s open the sample map file in JOSM. Open JOSM. Go 
+  to :menuselection:`Open`.
 
  .. image:: /static/training/beginner/osm/image28.*
     :align: center
 
-- Find the file sample.osm. Click on it, and then click :guilabel:`Open`.
+- Find the file :file:`sample.osm`. Click on it, and then click :guilabel:`Open`.
 - You should now see a sample map, similar to this:
 
 .. image:: /static/training/beginner/osm/image29.*
    :align: center
 
-*4.1. Basic Operations*
+4.1. Basic Operations
+.....................
 
 - To move the map left or right, up or down, hold your right mouse button
   down, and move your mouse.
@@ -195,16 +211,16 @@ click :guilabel:`Edit` on the top menu, and then click :guilabel:`Preferences`
 .. image:: /static/training/beginner/osm/image30.*
    :align: center
 
-- Look at the sample map. There a few different types of objects here. There
+- Look at the sample map. There are a few different types of objects here. There
   is a river, a forest, some buildings, several roads, and a couple of shops.
   To select an object, click on it with your left mouse button.
 
-*4.2. Points, Lines, and Shapes (polygon)*
+4.2. Points, Lines, and Shapes (polygon)
+........................................
 
 - As you click different objects on the sample map, notice that there are
   three different types of objects on the map. There are points, lines,
-  and shapes (polygon). For 'shapes' word, in mapping it is usually called as
-  a 'polygon'.
+  and shapes. In mapping, shapes are usually called *polygons*.
 - Points are a single location, represented by symbols. On this sample map,
   there are two points, a clothing shop and a market. The clothing shop is
   represented by a shirt symbol, and the market is represented by a shopping
@@ -230,9 +246,9 @@ click :guilabel:`Edit` on the top menu, and then click :guilabel:`Preferences`
 
 Now, let’s try to practice drawing an object (point, line and shape).
 
-- On the left side of a JOSM is a column of buttons. Many of these buttons
-  open new windows on the right side that provide more information about the
-  map. The most important buttons, however, are at the top of these column.
+- On the left side of JOSM is a column of buttons. Many of these buttons
+  open new panels on the right side that provide more information about the
+  map. The most important buttons are at the top of the column.
   These buttons change what you can do with your mouse.
 - The top four buttons in this column are the most important. They allow you
   to: :guilabel:`Select`, :guilabel:`Draw`, :guilabel:`Zoom in`,
@@ -259,7 +275,8 @@ Now, let’s try to practice drawing an object (point, line and shape).
 - Draw a shape the same way that you draw a line, but finish the shape by
   double-clicking on the point where you started the line.
 
-*4.3. Changing Objects*
+4.3. Changing Objects
+.....................
 
 - Select the forest on the left side of the map. Be sure to click on the
   line around the forest, not one of the points on the line. Now hold your
@@ -269,7 +286,8 @@ Now, let’s try to practice drawing an object (point, line and shape).
   mouse button down and drag your mouse. You should be able to move the point.
   This is how you can change the shape of an object, or move a point.
 
-*4.4. Add Presets*
+4.4. Add Presets
+................
 
 - Now we know how to draw points, lines and shapes,
   but we still haven’t defined what they represent. We want to be able to say
@@ -290,12 +308,14 @@ Now, let’s try to practice drawing an object (point, line and shape).
   . If everything went well, your point, line, or shape should change colors or
   show a symbol. This is because you have defined what it is.
 
-**Exercise:**
+Exercise:
+.........
 
-- Now let’s draw a map in order to practice the techniques you have learned.
-  You may wish to redraw the map that you drew on paper in Module 1.
-- Drag the map away from the sample map. Hold the right mouse button and
-  drag your mouse, until you have a nice empty area to draw on.
+Now let’s draw a map in order to practice the techniques you have learned.
+You may wish to redraw the map that you drew on paper in Module 1.
+
+- Drag the window away from the sample map by holding the right mouse button and
+  dragging your mouse, until you have a nice empty area to draw on.
 - Use the Draw tool to create points, lines, and shapes. Describe what your
   objects are by selecting from the Presets menu.
 - When you are finished, you should have your own map,
