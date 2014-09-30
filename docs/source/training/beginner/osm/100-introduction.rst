@@ -1,7 +1,10 @@
 .. image:: /static/training/beginner/osm/image1.*
 
+Introduction
+============
+
 Disclaimer
-==========
+----------
 
 This document is initial draft and still in reviewing phase by these parties:
 
@@ -13,7 +16,7 @@ All contents and materials on this document may be changed without public
 notice.
 
 Licence
-=======
+-------
 
 .. image:: /static/training/beginner/osm/image2.*
 
@@ -32,9 +35,9 @@ More information about CCbyA License:
 http://creativecommons.org/licenses/by/3.0/au/deed.en_GB
 
 About Us
-========
+--------
 Badan Nasional Penanggulangan Bencana (BNPB)
---------------------------------------------
+............................................
 
 .. image:: /static/training/beginner/osm/image3.*
 
@@ -51,7 +54,7 @@ planned, integrated, and comprehensive way.
 http://bnpb.go.id
 
 Australia-Indonesia Facility for Disaster Reduction (AIFDR)
------------------------------------------------------------
+...........................................................
 
 .. image:: /static/training/beginner/osm/image4.*
 
@@ -67,7 +70,7 @@ Indonesia.
 http://aifdr.org
 
 Humanitarian OpenStreetMap Team (HOT)
--------------------------------------
+.....................................
 
 .. image:: /static/training/beginner/osm/image5.*
 
@@ -83,7 +86,7 @@ open data sharing towards humanitarian response and economic development.
 http://hot.openstreetmap.org
 
 Universitas Gadjah Mada
------------------------
+.......................
 
 .. image:: /static/training/beginner/osm/ugm.*
 
@@ -98,7 +101,7 @@ open source geospatial software for disaster management.
 http://ugm.ac.id
 
 Preface
-=======
+-------
 Every day thousands of people contribute to OpenStreetMap,
 a project with the lofty goal of mapping the world. Most OSM software is
 free and open source, and the data is open for anyone to use. The idea is
