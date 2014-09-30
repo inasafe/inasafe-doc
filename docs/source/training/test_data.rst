@@ -61,5 +61,5 @@ The directory that docker will synchronize with is configurable by adjusting the
 To start a sync container with any other secret run :command:`rundocker.sh` with a KEY added as argument:
 ::
 
-  ./rundocker.sh THISISMYKEY
+  ./rundocker.sh THISISMYSECRET
 

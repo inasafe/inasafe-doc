@@ -17,3 +17,4 @@ Reference
 * `BloombergView - Seven Steps to Surviving a disaster <http://www.bloombergview.com/articles/2014-02-18/seven-steps-to-surviving-a-disaster>`_
 * `GISTimes - Disaster management with InaSAFE 2.0 <http://www.gistimes.com/2014/announcements/disaster-management-with-inasafe-2-0/>`_
 * `Development Seed - OpenStreetMap, Disaster Preparedness, and Growing Cities <http://developmentseed.org/blog/2014/07/01/osm-in-five-fastest-cities/>`_
+* `Space Systems for Disaster Warning, Response, and Recovery <http://www.springer.com/engineering/mechanical+engineering/book/978-1-4939-1512-5>`_
