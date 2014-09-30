@@ -5,10 +5,10 @@ Module 1: Basic Concept of OpenStreetMap Website
 
 **Learning Objectives**
 
-- Understanding the concept and definition of OpenStreetMap
-- Understanding the definition and objectives of data collection
-- Understanding the composition of a map
-- Make a handwriting sketch of an area
+- Understand the concept and definition of OpenStreetMap
+- Understand the definition and objectives of data collection
+- Understand the composition of a map
+- Make a handwritten sketch of an area
 
 Maps are a good way to convey information. Maps are visual representations of
 our world. They can often demonstrate an idea better than words.  This in
@@ -31,7 +31,7 @@ important, and who it might be important to.
 .. figure:: /static/training/beginner/osm/image8.*
    :align: center
 
-   *A village in Indonesia (up), and an example of a hand drawn map (below).*
+   *A village in Indonesia (top), and an example of a hand drawn map (bottom)*
 
 If your town is like most, you may have drawn some lines to represent roads,
 possibly a river or stream. Perhaps you added important buildings such as
@@ -46,7 +46,7 @@ of what is on the ground.
 .. figure:: /static/training/beginner/osm/image10.*
    :align: center
 
-   *Examples of Symbols.*
+   *Examples of Symbols*
 
 
 Your map is informative.  You might use a map like this to explain to
@@ -100,7 +100,7 @@ OpenStreetMap. While no single person could have mapped 13,000 buildings,
 many different people contributing just a little bit at a time provided us
 with a data file that allows us to do very impressive analysis,
 and help an entire community prepare for the next time there is a flood.  In
-this sense, the work is somehow cyclical. The community contributes data so
+this sense, the work is cyclical. The community contributes data so
 that emergency managers can design highly effective contingency plans,
 and those plans may then be used to benefit the community at large. And the
 more data that the community provides, the better the contingency planning
