@@ -201,7 +201,7 @@ see the flood affected (affected = 1) areas.
 25. Select the row with the coloured box with no text next to it
     and click the Delete button.
 
-26. Confirm there is only one row left. Click :guilabel:`OK to close the
+26. Confirm there is only one row left. Click :guilabel:`OK` to close the
     layer properties window.
 
 .. image:: /static/training/socialisation/050_layerproperties.*
