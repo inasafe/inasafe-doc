@@ -60,18 +60,18 @@ only complete a disaster impact analysis, but to also conduct further geographic
 The software includes a simple-to-use interface in the hope that
 disaster managers and other end users can easily create impact maps to inform contingency planning.
 
-|project_name| was preliminarily launched by Dr. Agus Wibowo, Head of the Data
-Center at the Indonesia’s Disaster Management Agency (|BNPB|),
+|project_name| was preliminarily launched by Dr. Agus Wibowo, head of the data
+centre at Indonesia’s disaster management agency (|BNPB|),
 at the Understanding Risk Forum in Cape Town on 3 July, 2012.
 There were over 300 downloads of the software within the first three weeks of
 its preliminary launch.
 
 |project_name| (Version 1.0) was officially launched at the 5th Asian
 Ministerial Conference for Disaster Risk Reduction in Yogyakarta,
-23–25 October 2012, by Mr. Dodi Ruswandi, the Deputy for Disaster Reduction
-and Preparedness, |BNPB|, Mr. Abhas Jha,  Disaster Risk Management Coordinator
+23–25 October 2012, by Mr. Dodi Ruswandi, the deputy for disaster reduction
+and preparedness, |BNPB|, Mr. Abhas Jha,  disaster risk management coordinator
 for East Asia and the Pacific from the World Bank,
-and Dr. Matt Hayne, Co-director of Australia-Indonesia Facility for Disaster
+and Dr. Matt Hayne, co-director of Australia-Indonesia Facility for Disaster
 Reduction (|AIFDR|).
 
 |project_name| (Version 2.0) was officially launched at the opening of
