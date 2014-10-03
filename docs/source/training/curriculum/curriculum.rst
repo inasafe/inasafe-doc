@@ -23,8 +23,8 @@ a starting point for the new comprehensive process.
 
 |BNPB| and |GoA| through Australia-Indonesia Facility for Disaster
 Reduction (|AIFDR|) have worked together to create 
-open-source software tools for realistic disaster scenario
-development as an input for contingency planning. It is designed
+open source software tools for realistic disaster scenario
+development as an input for contingency planning. They are designed
 to help disaster managers improve their own scenario analysis
 which can be used as an input for their disaster contingency planning.
 
@@ -125,17 +125,17 @@ LEVELS OF WORKSHOP
 
 The workshop consists of three levels:
 
-1. Beginner
+1. Beginner Workshop
 
   * Collecting Data Using OSM (Beginner)
   * Data analysis using QGIS and |project_name| (Beginner)
 
-2. Intermediate
+2. Intermediate Workshop
 
   * Collecting Data Using OSM (Intermediate)
   * Data analysis using QGIS and |project_name| (Intermediate)
 
-3. Training of Trainer (ToT)
+3. Training of Trainer (ToT) Workshop
 
 CURRICULUM
 ==========
@@ -215,72 +215,74 @@ C. Map of Competencies
 Note that the competencies map (and curriculum scheme below) are organised by topic,
 rather than by workshop level.
 
-**1. Collecting Data Using OSM**
+**1. Beginner Workshop**
 
-+----+-------------+---------------------------------------------------------------------------------------------------------------------+
-| No.| Level       | Standard and Basic Competencies                                                                                     |
-+====+=============+=====================================================================================================================+
-| A. | Beginner    | **Collecting Spatial Data with OSM**                                                                                |
-|    |             |                                                                                                                     |
-|    |             | 1. Draw paper maps to gain a basic understanding of OpenStreetMap                                                   |
-|    |             | 2. Navigate OpenStreetMap website                                                                                   |
-|    |             | 3. Operate JOSM                                                                                                     |
-|    |             | 4. Use GPS to add data to OSM                                                                                       |
-|    |             | 5. Use Field Papers to add data to OSM                                                                              |
-|    |             | 6. Edit a map and add information to OSM using JOSM                                                                 |
-|    |             | 7. Correct imagery offset                                                                                           |
-|    |             | 8. Get OSM data in a specific format to be analysed further in Geographic Information System (GIS)) software        |
-+----+-------------+---------------------------------------------------------------------------------------------------------------------+
-| B. | Intermediate| **Quality Assurance in OSM mapping**                                                                                |
-|    |             |                                                                                                                     |
-|    |             | 1. Apply better digitising techniques for improving quality of collected data                                       |
-|    |             | 2. Use JOSM validation tools to ensure the quality of map contributions                                             |
-|    |             | 3. Resolve conflicts when uploading OSM data                                                                        |
-|    |             | 4. Create presets files in JOSM                                                                                     |
-|    |             | 5. Use private data store feature to keep private data                                                              |
-|    |             | 6. Create and edit pages in OSM Wiki                                                                                |
-+----+-------------+---------------------------------------------------------------------------------------------------------------------+
++----+----------------+---------------------------------------------------------------------------------------------------------------------+
+| No.| Level          | Standard and Basic Competencies                                                                                     |
++====+================+=====================================================================================================================+
+| A. | Collecting     | **Collecting Spatial Data with OSM**                                                                                |
+|    | Data Using     |                                                                                                                     |
+|    | OSM            | 1. Draw paper maps to gain a basic understanding of OpenStreetMap                                                   |
+|    | (Beginner)     | 2. Navigate OpenStreetMap website                                                                                   |
+|    |                | 3. Operate JOSM                                                                                                     |
+|    |                | 4. Use GPS to add data to OSM                                                                                       |
+|    |                | 5. Use Field Papers to add data to OSM                                                                              |
+|    |                | 6. Edit a map and add information to OSM using JOSM                                                                 |
+|    |                | 7. Correct imagery offset                                                                                           |
+|    |                | 8. Get OSM data in a specific format to be analysed further in Geographic Information System (GIS)) software        |
++----+----------------+---------------------------------------------------------------------------------------------------------------------+
+| B. | Data analysis  | **Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios with** |project_name|                    |
+|    | using QGIS     |                                                                                                                     |
+|    | and            | 1. Use GIS to develop scenarios for contingency planning                                                            |
+|    | |project_name| | 2. Understand the benefit of QGIS and |project_name| for developing realistic scenarios for contingency planning    |
+|    | (Beginner)     | 3. Install QGIS and understand QGIS user interface                                                                  |
+|    |                | 4. Use QGIS plugins                                                                                                 |
+|    |                | 5. Understand projection systems and transformation in QGIS                                                         |
+|    |                | 6. Use and understand vector data                                                                                   |
+|    |                | 7. Categorise and create labels from vector data                                                                    |
+|    |                | 8. Use and understand raster data                                                                                   |
+|    |                | 9. Create and edit new vector layers                                                                                |
+|    |                | 10. Analyse vector data to solve problems                                                                           |
+|    |                | 11. Create maps with the Map Composer                                                                               |
+|    |                | 12. Use |project_name|                                                                                              |
+|    |                | 13. Understand how to get support for QGIS and |project_name| in Indonesia                                          |
++----+----------------+---------------------------------------------------------------------------------------------------------------------+
 
-**2. Data analysis using QGIS and InaSAFE**
+**2. Intermediate Workshop**
 
-+----+-------------+---------------------------------------------------------------------------------------------------------------------+
-| No.| Level       | Standard and Basic Competencies                                                                                     |
-+====+=============+=====================================================================================================================+
-| A. | Beginner    | **Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios with** |project_name|                    |
-|    |             |                                                                                                                     |
-|    |             | 1. Use GIS to develop scenarios for contingency planning                                                            |
-|    |             | 2. Understand the benefit of QGIS and |project_name| for developing realistic scenarios for contingency planning    |
-|    |             | 3. Install QGIS and understand QGIS user interface                                                                  |
-|    |             | 4. Use QGIS plugins                                                                                                 |
-|    |             | 5. Understand projection systems and transformation in QGIS                                                         |
-|    |             | 6. Use and understand vector data                                                                                   |
-|    |             | 7. Categorise and create labels from vector data                                                                    |
-|    |             | 8. Use and understand raster data                                                                                   |
-|    |             | 9. Create and edit new vector layers                                                                                |
-|    |             | 10. Analyse vector data to solve problems                                                                           |
-|    |             | 11. Create maps with the Map Composer                                                                               |
-|    |             | 12. Use |project_name|                                                                                              |
-|    |             | 13. Understand how to get support for QGIS and |project_name| in Indonesia                                          |
-+----+-------------+---------------------------------------------------------------------------------------------------------------------+
-| B. | Intermediate| **Spatial Data Analysis using QGIS and** |project_name| **for Contingency Planning**                                |
-|    |             |                                                                                                                     |
-|    |             | 1. Understand QGIS concepts                                                                                         |
-|    |             | 2. Prepare data and keywords for |project_name|                                                                     |
-|    |             | 3. Determine temporary IDP camp or evacuation locations                                                             |
-|    |             | 4. Plan evacuation routes based on hazard information                                                               |
-|    |             | 5. Calculate damage and losses                                                                                      |
-+----+-------------+---------------------------------------------------------------------------------------------------------------------+
++----+----------------+---------------------------------------------------------------------------------------------------------------------+
+| No.| Level          | Standard and Basic Competencies                                                                                     |
++====+================+=====================================================================================================================+
+| A. | Collecting     | **Quality Assurance in OSM mapping**                                                                                |
+|    | Data Using     |                                                                                                                     |
+|    | OSM            | 1. Apply better digitising techniques for improving quality of collected data                                       |
+|    | (Intermediate) | 2. Use JOSM validation tools to ensure the quality of map contributions                                             |
+|    |                | 3. Resolve conflicts when uploading OSM data                                                                        |
+|    |                | 4. Create presets files in JOSM                                                                                     |
+|    |                | 5. Use private data store feature to keep private data                                                              |
+|    |                | 6. Create and edit pages in OSM Wiki                                                                                |
++----+----------------+---------------------------------------------------------------------------------------------------------------------+
+| B. | Data analysis  | **Spatial Data Analysis using QGIS and** |project_name| **for Contingency Planning**                                |
+|    | using QGIS     |                                                                                                                     |
+|    | and            | 1. Understand QGIS concepts                                                                                         |
+|    | |project_name| | 2. Prepare data and keywords for |project_name|                                                                     |
+|    | (Intermediate) | 3. Determine temporary IDP camp or evacuation locations                                                             |
+|    |                | 4. Plan evacuation routes based on hazard information                                                               |
+|    |                | 5. Calculate damage and losses                                                                                      |
++----+----------------+---------------------------------------------------------------------------------------------------------------------+
 
 **3. Training of Trainers**
 
-**Standard Competency:** Teaching data collection and analysis with OSM, QGIS and |project_name| 
-in their respective region
++----+----------------+---------------------------------------------------------------------------------------------------------------------+
+| No.| Level          | Standard and Basic Competencies                                                                                     |
++====+================+=====================================================================================================================+
+| A. | Advanced       | **Teaching data collection and analysis with OSM, QGIS and** |project_name| **in their respective region**          |
+|    |                |                                                                                                                     |
+|    |                | 1. Master how to implement adult learning                                                                           |
+|    |                | 2. Demonstrate basic teaching skills                                                                                |
+|    |                | 3. Practise data collection and analysis through OSM, QGIS, and |project_name|                                      |
++----+----------------+---------------------------------------------------------------------------------------------------------------------+
 
-**Basic Competencies:**
-
-1. Master how to implement adult learning
-2. Demonstrate basic teaching skills
-3. Practise data collection and analysis through OSM, QGIS, and |project_name|
 
 D. Curriculum Development Process
 .................................
@@ -293,7 +295,7 @@ components:
    described as standard and basic.
 
    A standard competency, or workshop material competency, is the minimum 
-   requirement of participants which encapsulatestheir knowledge, attitude, 
+   requirement of participants which encapsulates their knowledge, attitude, 
    and skill that need to be achieved.
 
    A basic competency is an individual skill that needs to be mastered by the 
@@ -417,76 +419,6 @@ Collecting Spatial Data with OSM
 |                                                                     |                                                                  |                                                        |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 
-**Data Collection Using OSM Intermediate Level**
-
-**Standard Competency:**
-Quality Assurance in OSM mapping
-
-+---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
-| Basic competency                                                    | Indicator                                                        | Core material                                          |
-+=====================================================================+==================================================================+========================================================+
-|1. Apply better digitising technique for improving quality           |                                                                  | **Advanced Editing**                                   |
-|   of collected data.                                                | 1. Use editing tools in JOSM                                     |                                                        |
-|                                                                     | 2. Create relations between objects                              | 1. Editing tools in JOSM                               |
-|                                                                     |                                                                  |                                                        |
-|                                                                     |                                                                  |   a. Adding more features for drawing                  |
-|                                                                     |                                                                  |   b. Adding more plugins                               |
-|                                                                     |                                                                  |                                                        |
-|                                                                     |                                                                  | 2. Relations                                           |
-|                                                                     |                                                                  |                                                        |
-|                                                                     |                                                                  |   a. Creating relations between spatial objects        |
-|                                                                     |                                                                  |   b. Relations for bus routes                          |
-+---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
-|2. Use JOSM validation tools to ensure the quality of                |                                                                  | **Quality Assurance**                                  |
-|   map contributions                                                 | 1. Apply editing tips and standardised presets to                |                                                        |
-|                                                                     |    ensure the quality of resulting data                          | 1. Error and warnings                                  |
-|                                                                     | 2. Use validation tools in JOSM                                  | 2. Validation tools                                    |
-|                                                                     | 3. Use online validation tools (keepright)                       | 3. Editing tips                                        |
-|                                                                     |                                                                  | 4. Standardised presets                                |
-|                                                                     |                                                                  | 5. Tasking Manager                                     |
-|                                                                     |                                                                  | 6. KeepRight                                           |
-+---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
-|3. Resolve conflicts when uploading OSM data                         |                                                                  | **Resolving conflicts when uploading OSM data**        |
-|                                                                     | 1. Explain reason conflicts occur when uploading OSM data        |                                                        |
-|                                                                     | 2. Resolve conflicts when uploading OSM data                     | 1. Cause of conflict when upload OSM data              |
-|                                                                     | 3. Explain how to avoid conflicts when upload OSM data           | 2. Resolve conflict when upload OSM data               |
-|                                                                     |                                                                  | 3. How to avoid conflict when upload OSM data          |
-+---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
-|4. Create presets files in JOSM                                      |                                                                  | **XML and Presets in JOSM**                            |
-|                                                                     | 1. Explain tags and presets                                      |                                                        |
-|                                                                     | 2. Explain purpose of presets XML                                | 1. Tags and presets                                    |
-|                                                                     | 3. Explain keys and values                                       | 2. Introduction to XML                                 |
-|                                                                     | 4. Create presets                                                | 3. JOSM presets file                                   |
-|                                                                     | 5. Enter a presets file into JOSM                                |                                                        |
-|                                                                     | 6. Apply new presets to an object                                |                                                        |
-|                                                                     |                                                                  |                                                        |
-+---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
-|5. Use private data store feature to keep private data               |                                                                  | **Using Private Data Store**                           |
-|                                                                     | 1. Explain the private data store functionality                  |                                                        |
-|                                                                     | 2. Explain the data types used in the private data store         | 1. Private data store                                  |
-|                                                                     | 3. Install the private data store plugin                         | 2. SDS plugin installation                             |
-|                                                                     | 4. Use the plugin in the storing of public and private data      | 3. Using plugin                                        |
-|                                                                     | 5. Access the online datastore                                   | 4. How SDS plugin works                                |
-|                                                                     |                                                                  | 5. Accessing the online datastore                      |
-|                                                                     |                                                                  |                                                        |
-|                                                                     |                                                                  |  a. User private datastore                             |
-|                                                                     |                                                                  |  b. A diagram for using private datastore and JOSM     |
-|                                                                     |                                                                  |  c. Edit the online datastore                          |
-|                                                                     |                                                                  |  d. How to add online datastore                        |
-|                                                                     |                                                                  |  e. How to add and edit user in private datastore      |
-+---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
-|6. Create and edit pages in OSM wiki                                 |                                                                  | **OpenStreetMap Wiki**                                 |
-|                                                                     |                                                                  |                                                        |
-|                                                                     | 1. Explain the OSM wiki                                          | 1. OpenStreetMap wiki                                  |
-|                                                                     | 2. Create an account on the OSM wiki                             | 2. Creating account                                    |
-|                                                                     | 3. Edit OSM wiki                                                 | 3. Editing wiki                                        |
-|                                                                     | 4. Explain conventions and guides/rules in making a wiki page    | 4. How to write for the wiki                           |
-|                                                                     | 5. Create a new page in the wiki                                 | 5. Creating a new page in wiki                         |
-|                                                                     | 6. Upload files and images                                       | 6. Uploading files                                     |
-|                                                                     | 7. Translate and revise the wiki                                 | 7. Translating pages                                   |
-|                                                                     | 8. View changelog                                                | 8. How to view changelog                               |
-+---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
-
 **Data analysis Using QGIS and** |project_name| **Beginner Level**
 
 **Standard Competency:**
@@ -603,6 +535,76 @@ Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios with |p
 |                                                                     | 2. Access the QGIS tutorial website                              | 1. Social Media to keep interaction through Facebook       |
 |                                                                     |                                                                  | 2. QGIS tutorial website                                   |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
+
+**Data Collection Using OSM Intermediate Level**
+
+**Standard Competency:**
+Quality Assurance in OSM mapping
+
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+| Basic competency                                                    | Indicator                                                        | Core material                                          |
++=====================================================================+==================================================================+========================================================+
+|1. Apply better digitising technique for improving quality           |                                                                  | **Advanced Editing**                                   |
+|   of collected data.                                                | 1. Use editing tools in JOSM                                     |                                                        |
+|                                                                     | 2. Create relations between objects                              | 1. Editing tools in JOSM                               |
+|                                                                     |                                                                  |                                                        |
+|                                                                     |                                                                  |   a. Adding more features for drawing                  |
+|                                                                     |                                                                  |   b. Adding more plugins                               |
+|                                                                     |                                                                  |                                                        |
+|                                                                     |                                                                  | 2. Relations                                           |
+|                                                                     |                                                                  |                                                        |
+|                                                                     |                                                                  |   a. Creating relations between spatial objects        |
+|                                                                     |                                                                  |   b. Relations for bus routes                          |
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+|2. Use JOSM validation tools to ensure the quality of                |                                                                  | **Quality Assurance**                                  |
+|   map contributions                                                 | 1. Apply editing tips and standardised presets to                |                                                        |
+|                                                                     |    ensure the quality of resulting data                          | 1. Error and warnings                                  |
+|                                                                     | 2. Use validation tools in JOSM                                  | 2. Validation tools                                    |
+|                                                                     | 3. Use online validation tools (keepright)                       | 3. Editing tips                                        |
+|                                                                     |                                                                  | 4. Standardised presets                                |
+|                                                                     |                                                                  | 5. Tasking Manager                                     |
+|                                                                     |                                                                  | 6. KeepRight                                           |
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+|3. Resolve conflicts when uploading OSM data                         |                                                                  | **Resolving conflicts when uploading OSM data**        |
+|                                                                     | 1. Explain reason conflicts occur when uploading OSM data        |                                                        |
+|                                                                     | 2. Resolve conflicts when uploading OSM data                     | 1. Cause of conflict when upload OSM data              |
+|                                                                     | 3. Explain how to avoid conflicts when upload OSM data           | 2. Resolve conflict when upload OSM data               |
+|                                                                     |                                                                  | 3. How to avoid conflict when upload OSM data          |
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+|4. Create presets files in JOSM                                      |                                                                  | **XML and Presets in JOSM**                            |
+|                                                                     | 1. Explain tags and presets                                      |                                                        |
+|                                                                     | 2. Explain purpose of presets XML                                | 1. Tags and presets                                    |
+|                                                                     | 3. Explain keys and values                                       | 2. Introduction to XML                                 |
+|                                                                     | 4. Create presets                                                | 3. JOSM presets file                                   |
+|                                                                     | 5. Enter a presets file into JOSM                                |                                                        |
+|                                                                     | 6. Apply new presets to an object                                |                                                        |
+|                                                                     |                                                                  |                                                        |
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+|5. Use private data store feature to keep private data               |                                                                  | **Using Private Data Store**                           |
+|                                                                     | 1. Explain the private data store functionality                  |                                                        |
+|                                                                     | 2. Explain the data types used in the private data store         | 1. Private data store                                  |
+|                                                                     | 3. Install the private data store plugin                         | 2. SDS plugin installation                             |
+|                                                                     | 4. Use the plugin in the storing of public and private data      | 3. Using plugin                                        |
+|                                                                     | 5. Access the online datastore                                   | 4. How SDS plugin works                                |
+|                                                                     |                                                                  | 5. Accessing the online datastore                      |
+|                                                                     |                                                                  |                                                        |
+|                                                                     |                                                                  |  a. User private datastore                             |
+|                                                                     |                                                                  |  b. A diagram for using private datastore and JOSM     |
+|                                                                     |                                                                  |  c. Edit the online datastore                          |
+|                                                                     |                                                                  |  d. How to add online datastore                        |
+|                                                                     |                                                                  |  e. How to add and edit user in private datastore      |
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
+|6. Create and edit pages in OSM wiki                                 |                                                                  | **OpenStreetMap Wiki**                                 |
+|                                                                     |                                                                  |                                                        |
+|                                                                     | 1. Explain the OSM wiki                                          | 1. OpenStreetMap wiki                                  |
+|                                                                     | 2. Create an account on the OSM wiki                             | 2. Creating account                                    |
+|                                                                     | 3. Edit OSM wiki                                                 | 3. Editing wiki                                        |
+|                                                                     | 4. Explain conventions and guides/rules in making a wiki page    | 4. How to write for the wiki                           |
+|                                                                     | 5. Create a new page in the wiki                                 | 5. Creating a new page in wiki                         |
+|                                                                     | 6. Upload files and images                                       | 6. Uploading files                                     |
+|                                                                     | 7. Translate and revise the wiki                                 | 7. Translating pages                                   |
+|                                                                     | 8. View changelog                                                | 8. How to view changelog                               |
++---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 
 **Data analysis using QGIS and** |project_name| **Intermediate Level**
 
@@ -739,39 +741,7 @@ Based on the curriculum, program structure is designed as follows.
 |     | Total                                  | 50                                      |
 +-----+----------------------------------------+-----------------------------------------+
 
-**2. Data Collection Using OSM Intermediate Level**
-
-+-----+--------------------------------------------+-------------------------------------------------+
-| No  | Workshop Material                          | Time (learning hour) @ 45 Minutes               |
-+=====+============================================+=================================================+
-|     | **General Program**                        | **1**                                           |
-+-----+--------------------------------------------+-------------------------------------------------+
-| 1.  | BNPB Policy                                | 1                                               |
-+-----+--------------------------------------------+-------------------------------------------------+
-|     | **Main Program**                           | **26**                                          |
-+-----+--------------------------------------------+-------------------------------------------------+
-| 2.  | Advanced Editing                           | 6                                               |
-+-----+--------------------------------------------+-------------------------------------------------+
-| 3.  | Quality Assurance                          | 6                                               |
-+-----+--------------------------------------------+-------------------------------------------------+
-| 4.  | Resolving conflicts when uploading OSM Data| 3                                               |
-+-----+--------------------------------------------+-------------------------------------------------+
-| 5.  | XML and Presets in JOSM                    | 5                                               |
-+-----+--------------------------------------------+-------------------------------------------------+
-| 6.  | Using Private Data Store                   | 3                                               |
-+-----+--------------------------------------------+-------------------------------------------------+
-| 8.  | OpenStreetMap Wiki                         | 3                                               |
-+-----+--------------------------------------------+-------------------------------------------------+
-|     | **Supporting Program**                     | **3**                                           |
-+-----+--------------------------------------------+-------------------------------------------------+
-| 9.  | Opening and Closing                        | 2                                               |
-+-----+--------------------------------------------+-------------------------------------------------+
-| 10. | Workshop Evaluation                        | 1                                               |
-+-----+--------------------------------------------+-------------------------------------------------+
-|     | Total                                      | 30                                              |
-+-----+--------------------------------------------+-------------------------------------------------+
-
-**3.Data Analysis Using QGIS/** |project_name| **Beginner Level**
+**2. Data Analysis Using QGIS/** |project_name| **Beginner Level**
 
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 | No | Workshop Material                                                                                     | Time (learning hour) @ 45 Minutes       |
@@ -816,6 +786,38 @@ Based on the curriculum, program structure is designed as follows.
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 |    | Total                                                                                                 | 50                                      |
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
+
+**3. Data Collection Using OSM Intermediate Level**
+
++-----+--------------------------------------------+-------------------------------------------------+
+| No  | Workshop Material                          | Time (learning hour) @ 45 Minutes               |
++=====+============================================+=================================================+
+|     | **General Program**                        | **1**                                           |
++-----+--------------------------------------------+-------------------------------------------------+
+| 1.  | BNPB Policy                                | 1                                               |
++-----+--------------------------------------------+-------------------------------------------------+
+|     | **Main Program**                           | **26**                                          |
++-----+--------------------------------------------+-------------------------------------------------+
+| 2.  | Advanced Editing                           | 6                                               |
++-----+--------------------------------------------+-------------------------------------------------+
+| 3.  | Quality Assurance                          | 6                                               |
++-----+--------------------------------------------+-------------------------------------------------+
+| 4.  | Resolving conflicts when uploading OSM Data| 3                                               |
++-----+--------------------------------------------+-------------------------------------------------+
+| 5.  | XML and Presets in JOSM                    | 5                                               |
++-----+--------------------------------------------+-------------------------------------------------+
+| 6.  | Using Private Data Store                   | 3                                               |
++-----+--------------------------------------------+-------------------------------------------------+
+| 8.  | OpenStreetMap Wiki                         | 3                                               |
++-----+--------------------------------------------+-------------------------------------------------+
+|     | **Supporting Program**                     | **3**                                           |
++-----+--------------------------------------------+-------------------------------------------------+
+| 9.  | Opening and Closing                        | 2                                               |
++-----+--------------------------------------------+-------------------------------------------------+
+| 10. | Workshop Evaluation                        | 1                                               |
++-----+--------------------------------------------+-------------------------------------------------+
+|     | Total                                      | 30                                              |
++-----+--------------------------------------------+-------------------------------------------------+
 
 **4. Data Analysis Using QGIS/** |project_name| **Intermediate Level**
 
@@ -1008,89 +1010,6 @@ Collecting Spatial Data with OSM
 |                                                                     |                                                                  |                                                        |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
-**Data collection using OSM Intermediate Level Workshop**
-
-**Standard Competency:**
-Quality Assurance in OSM mapping
-
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-| Basic competency                                               | Indicator                                                        | Core material                                          | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
-+================================================================+==================================================================+========================================================+=======================================+========================+============================+===============================+
-|**1. Advanced Editing (6 Hours)**                                                                                                                                                                                                                                                                                         |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|Apply better digitising technique for improving quality         |                                                                  | **Advanced Editing**                                   | Participants practise using           | 4 Hours                | Practice                   | Projector                     |
-|of collected data.                                              | 1. Use editing tools in JOSM                                     |                                                        | more editing tools in JOSM and create |                        |                            | Slide PP                      |
-|                                                                | 2. Create relations between objects                              | 1. Editing tools in JOSM                               | relations between objects             |                        |                            | Module 1                      |
-|                                                                |                                                                  |                                                        |                                       |                        |                            |                               |
-|                                                                |                                                                  |   a. Adding more features for drawing                  |                                       |                        |                            | Participant's computer        |
-|                                                                |                                                                  |   b. Adding more plugins                               |                                       |                        |                            |                               |
-|                                                                |                                                                  |                                                        |                                       |                        |                            |                               |
-|                                                                |                                                                  | 2. Relations                                           |                                       |                        |                            | Exercise file in USB stick    |
-|                                                                |                                                                  |                                                        |                                       |                        |                            |                               |
-|                                                                |                                                                  |   a. Creating relations between spatial objects        |                                       |                        |                            | (tools_menu_sample.osm and    |
-|                                                                |                                                                  |   b. Relations for bus routes                          |                                       |                        |                            | utilsplugin2_sample.osm)      |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**2. Quality Assurance (6 Hours)**                                                                                                                                                                                                                                                                                        |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|Use JOSM validation tools to ensure the quality of              |                                                                  | **Quality Assurance**                                  | Participants practise editing         | 4 Hours 15 Minutes     | Practice                   | Projector                     |
-|map contributions                                               | 1. Apply editing tips and standardised presets to                |                                                        | tips and giving presets based on      |                        |                            | Slide PP                      |
-|                                                                |    ensure the quality of resulting data                          | 1. Error and warnings                                  | standard to improve the quality       |                        |                            | Module 2                      |
-|                                                                | 2. Use validation tools in JOSM                                  | 2. Validation tools                                    | assurance of OSM data by using        |                        |                            | Participant's computer        |
-|                                                                | 3. Use online validation tools (keepright)                       | 3. Editing tips                                        | validation tools in JOSM, and online  |                        |                            |                               |
-|                                                                |                                                                  | 4. Standardised presets                                | validation tools (KeepRight)          |                        |                            |                               |
-|                                                                |                                                                  | 5. Tasking Manager                                     |                                       |                        |                            |                               |
-|                                                                |                                                                  | 6. KeepRight                                           |                                       |                        |                            |                               |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**3. Resolving conflicts when uploading OSM data (3 Hours)**                                                                                                                                                                                                                                                              |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|Resolve conflicts when uploading OSM data                       |                                                                  | **Resolving conflicts when uploading OSM data**        | Participants discuss how conflicts    | 2 Hours                | Test                       | Projector                     |
-|                                                                | 1. Explain reason conflicts occur when uploading OSM data        |                                                        | can happen when uploading OSM data    |                        | Practice                   | Slide PP                      |
-|                                                                | 2. Resolve conflicts when uploading OSM data                     | 1. Cause of conflict when upload OSM data              |                                       |                        |                            | Module 3                      |
-|                                                                | 3. Explain how to avoid conflicts when upload OSM data           | 2. Resolve conflict when upload OSM data               | Participants practise conflict        |                        |                            | Participant's computer        |
-|                                                                |                                                                  | 3. How to avoid conflict when upload OSM data          | resolution and how to avoid conflicts |                        |                            |                               |
-|                                                                |                                                                  |                                                        | when uploading OSM data               |                        |                            |                               |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**4. XML and presets in JOSM (5 hours)**                                                                                                                                                                                                                                                                                  |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|Create presets files in JOSM                                    |                                                                  | **XML and Presets in JOSM**                            | Participants learn from               | 150 Minutes            | Test                       | Projector                     |
-|                                                                | 1. Explain tags and presets                                      |                                                        | facilitator about tags, XML, keys and |                        | Practice                   | Slide PP                      |
-|                                                                | 2. Explain purpose of presets XML                                | 1. Tag and presets                                     | values.                               |                        |                            | Module 4                      |
-|                                                                | 3. Explain keys and values                                       | 2. Introduction to XML                                 |                                       |                        |                            | Participant's computer        |
-|                                                                | 4. Create presets                                                | 3. JOSM presets file                                   | Participants practise making their    |                        |                            |                               |
-|                                                                | 5. Enter a presets file into JOSM                                |                                                        | own preset file, setting up preset    |                        |                            |                               |
-|                                                                | 6. Apply new presets to an object                                |                                                        | files in JOSM, and applying a new     |                        |                            |                               |
-|                                                                |                                                                  |                                                        | preset to some objects.               |                        |                            |                               |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**5. Using Private Datastore (3 Hours)**                                                                                                                                                                                                                                                                                  |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|Use private data store feature to keep private data             |                                                                  | **Using Private Data Store**                           | Participants watch presentation       | 120 Minutes            | Test                       | Projector                     |
-|                                                                | 1. Explain the private data store functionality                  |                                                        | from facilitator about private data   |                        | Practice                   | Slide PP                      |
-|                                                                | 2. Explain the data types used in the private data store         | 1. Private data store                                  | store function and discuss about      |                        |                            | Module 5                      |
-|                                                                | 3. Install the private data store plugin                         | 2. Install SDS plugin                                  | the kind of data that can go public   |                        |                            | Participant's computer        |
-|                                                                | 4. Use the plugin in the storing of public and private data      | 3. Using plugin                                        | and should go private.                |                        |                            |                               |
-|                                                                | 5. Access the online datastore                                   | 4. How SDS plugin works                                |                                       |                        |                            |                               |
-|                                                                |                                                                  | 5. Access the online datastore                         | Participants practise installing      |                        |                            |                               |
-|                                                                |                                                                  |                                                        |                                       |                        |                            |                               |
-|                                                                |                                                                  |  a. User private datastore                             | private data store plugin in JOSM and |                        |                            |                               |
-|                                                                |                                                                  |  b. A diagram for using private datastore and JOSM     | how to use the plugin also how the    |                        |                            |                               |
-|                                                                |                                                                  |  c. Edit the online datastore                          | plugin works, and accessing the data  |                        |                            |                               |
-|                                                                |                                                                  |  d. How to add online datastore                        | store via web.                        |                        |                            |                               |
-|                                                                |                                                                  |  e. How to add and edit user in private datastore      |                                       |                        |                            |                               |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|**6. OpenStreetMap Wiki (3 Hours)**                                                                                                                                                                                                                                                                                       |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-|Create and edit pages in OSM wiki                               |                                                                  | **OpenStreetMap Wiki**                                 | Participants do a FGD about           | 2 hours                | Test                       | Projector                     |
-|                                                                |                                                                  |                                                        | OpenStreetMap Wiki.                   |                        | Practice                   | Slide PP                      |
-|                                                                | 1. Explain the OSM wiki                                          | 1. OpenStreetMap wiki                                  |                                       |                        |                            | Module 6                      |
-|                                                                | 2. Create an account on the OSM wiki                             | 2. Creating account                                    | Participants practise how to          |                        |                            | Participant's Computer        |
-|                                                                | 3. Edit OSM wiki                                                 | 3. Editing wiki                                        | create OSM wiki account, edit wiki,   |                        |                            |                               |
-|                                                                | 4. Explain conventions and guides/rules in making a wiki page    | 4. How to write for the wiki                           | learning about wiki format, create    |                        |                            |                               |
-|                                                                | 5. Create a new page in the wiki                                 | 5. Creating a new page in wiki                         | new wiki page, upload images,         |                        |                            |                               |
-|                                                                | 6. Upload files and images                                       | 6. Uploading files                                     | translate pages, and view the         |                        |                            |                               |
-|                                                                | 7. Translate and revise the wiki                                 | 7. Translating pages                                   | changelog.                            |                        |                            |                               |
-|                                                                | 8. View changelog                                                | 8. How to view changelog                               |                                       |                        |                            |                               |
-+----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-
 **Data analysis using QGIS and** |project_name| **Beginner Level Workshop**
 
 **Standard Competency:**
@@ -1236,6 +1155,89 @@ with |project_name|
 |                                                                         | 2. Access the QGIS tutorial website                              | 1. Social Media to keep interaction through Facebook       | Facebook or QGS forum.                |                        |                  | Module 13                     |
 |                                                                         |                                                                  | 2. QGIS tutorial website                                   |                                       |                        |                  | Participant's Computer        |
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
+
+**Data collection using OSM Intermediate Level Workshop**
+
+**Standard Competency:**
+Quality Assurance in OSM mapping
+
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+| Basic competency                                               | Indicator                                                        | Core material                                          | Learning Activity                     | Time Allocation        | Assessment                 | Learning Sources              |
++================================================================+==================================================================+========================================================+=======================================+========================+============================+===============================+
+|**1. Advanced Editing (6 Hours)**                                                                                                                                                                                                                                                                                         |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|Apply better digitising technique for improving quality         |                                                                  | **Advanced Editing**                                   | Participants practise using           | 4 Hours                | Practice                   | Projector                     |
+|of collected data.                                              | 1. Use editing tools in JOSM                                     |                                                        | more editing tools in JOSM and create |                        |                            | Slide PP                      |
+|                                                                | 2. Create relations between objects                              | 1. Editing tools in JOSM                               | relations between objects             |                        |                            | Module 1                      |
+|                                                                |                                                                  |                                                        |                                       |                        |                            |                               |
+|                                                                |                                                                  |   a. Adding more features for drawing                  |                                       |                        |                            | Participant's computer        |
+|                                                                |                                                                  |   b. Adding more plugins                               |                                       |                        |                            |                               |
+|                                                                |                                                                  |                                                        |                                       |                        |                            |                               |
+|                                                                |                                                                  | 2. Relations                                           |                                       |                        |                            | Exercise file in USB stick    |
+|                                                                |                                                                  |                                                        |                                       |                        |                            |                               |
+|                                                                |                                                                  |   a. Creating relations between spatial objects        |                                       |                        |                            | (tools_menu_sample.osm and    |
+|                                                                |                                                                  |   b. Relations for bus routes                          |                                       |                        |                            | utilsplugin2_sample.osm)      |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|**2. Quality Assurance (6 Hours)**                                                                                                                                                                                                                                                                                        |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|Use JOSM validation tools to ensure the quality of              |                                                                  | **Quality Assurance**                                  | Participants practise editing         | 4 Hours 15 Minutes     | Practice                   | Projector                     |
+|map contributions                                               | 1. Apply editing tips and standardised presets to                |                                                        | tips and giving presets based on      |                        |                            | Slide PP                      |
+|                                                                |    ensure the quality of resulting data                          | 1. Error and warnings                                  | standard to improve the quality       |                        |                            | Module 2                      |
+|                                                                | 2. Use validation tools in JOSM                                  | 2. Validation tools                                    | assurance of OSM data by using        |                        |                            | Participant's computer        |
+|                                                                | 3. Use online validation tools (keepright)                       | 3. Editing tips                                        | validation tools in JOSM, and online  |                        |                            |                               |
+|                                                                |                                                                  | 4. Standardised presets                                | validation tools (KeepRight)          |                        |                            |                               |
+|                                                                |                                                                  | 5. Tasking Manager                                     |                                       |                        |                            |                               |
+|                                                                |                                                                  | 6. KeepRight                                           |                                       |                        |                            |                               |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|**3. Resolving conflicts when uploading OSM data (3 Hours)**                                                                                                                                                                                                                                                              |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|Resolve conflicts when uploading OSM data                       |                                                                  | **Resolving conflicts when uploading OSM data**        | Participants discuss how conflicts    | 2 Hours                | Test                       | Projector                     |
+|                                                                | 1. Explain reason conflicts occur when uploading OSM data        |                                                        | can happen when uploading OSM data    |                        | Practice                   | Slide PP                      |
+|                                                                | 2. Resolve conflicts when uploading OSM data                     | 1. Cause of conflict when upload OSM data              |                                       |                        |                            | Module 3                      |
+|                                                                | 3. Explain how to avoid conflicts when upload OSM data           | 2. Resolve conflict when upload OSM data               | Participants practise conflict        |                        |                            | Participant's computer        |
+|                                                                |                                                                  | 3. How to avoid conflict when upload OSM data          | resolution and how to avoid conflicts |                        |                            |                               |
+|                                                                |                                                                  |                                                        | when uploading OSM data               |                        |                            |                               |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|**4. XML and presets in JOSM (5 hours)**                                                                                                                                                                                                                                                                                  |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|Create presets files in JOSM                                    |                                                                  | **XML and Presets in JOSM**                            | Participants learn from               | 150 Minutes            | Test                       | Projector                     |
+|                                                                | 1. Explain tags and presets                                      |                                                        | facilitator about tags, XML, keys and |                        | Practice                   | Slide PP                      |
+|                                                                | 2. Explain purpose of presets XML                                | 1. Tag and presets                                     | values.                               |                        |                            | Module 4                      |
+|                                                                | 3. Explain keys and values                                       | 2. Introduction to XML                                 |                                       |                        |                            | Participant's computer        |
+|                                                                | 4. Create presets                                                | 3. JOSM presets file                                   | Participants practise making their    |                        |                            |                               |
+|                                                                | 5. Enter a presets file into JOSM                                |                                                        | own preset file, setting up preset    |                        |                            |                               |
+|                                                                | 6. Apply new presets to an object                                |                                                        | files in JOSM, and applying a new     |                        |                            |                               |
+|                                                                |                                                                  |                                                        | preset to some objects.               |                        |                            |                               |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|**5. Using Private Datastore (3 Hours)**                                                                                                                                                                                                                                                                                  |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|Use private data store feature to keep private data             |                                                                  | **Using Private Data Store**                           | Participants watch presentation       | 120 Minutes            | Test                       | Projector                     |
+|                                                                | 1. Explain the private data store functionality                  |                                                        | from facilitator about private data   |                        | Practice                   | Slide PP                      |
+|                                                                | 2. Explain the data types used in the private data store         | 1. Private data store                                  | store function and discuss about      |                        |                            | Module 5                      |
+|                                                                | 3. Install the private data store plugin                         | 2. Install SDS plugin                                  | the kind of data that can go public   |                        |                            | Participant's computer        |
+|                                                                | 4. Use the plugin in the storing of public and private data      | 3. Using plugin                                        | and should go private.                |                        |                            |                               |
+|                                                                | 5. Access the online datastore                                   | 4. How SDS plugin works                                |                                       |                        |                            |                               |
+|                                                                |                                                                  | 5. Access the online datastore                         | Participants practise installing      |                        |                            |                               |
+|                                                                |                                                                  |                                                        |                                       |                        |                            |                               |
+|                                                                |                                                                  |  a. User private datastore                             | private data store plugin in JOSM and |                        |                            |                               |
+|                                                                |                                                                  |  b. A diagram for using private datastore and JOSM     | how to use the plugin also how the    |                        |                            |                               |
+|                                                                |                                                                  |  c. Edit the online datastore                          | plugin works, and accessing the data  |                        |                            |                               |
+|                                                                |                                                                  |  d. How to add online datastore                        | store via web.                        |                        |                            |                               |
+|                                                                |                                                                  |  e. How to add and edit user in private datastore      |                                       |                        |                            |                               |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|**6. OpenStreetMap Wiki (3 Hours)**                                                                                                                                                                                                                                                                                       |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
+|Create and edit pages in OSM wiki                               |                                                                  | **OpenStreetMap Wiki**                                 | Participants do a FGD about           | 2 hours                | Test                       | Projector                     |
+|                                                                |                                                                  |                                                        | OpenStreetMap Wiki.                   |                        | Practice                   | Slide PP                      |
+|                                                                | 1. Explain the OSM wiki                                          | 1. OpenStreetMap wiki                                  |                                       |                        |                            | Module 6                      |
+|                                                                | 2. Create an account on the OSM wiki                             | 2. Creating account                                    | Participants practise how to          |                        |                            | Participant's Computer        |
+|                                                                | 3. Edit OSM wiki                                                 | 3. Editing wiki                                        | create OSM wiki account, edit wiki,   |                        |                            |                               |
+|                                                                | 4. Explain conventions and guides/rules in making a wiki page    | 4. How to write for the wiki                           | learning about wiki format, create    |                        |                            |                               |
+|                                                                | 5. Create a new page in the wiki                                 | 5. Creating a new page in wiki                         | new wiki page, upload images,         |                        |                            |                               |
+|                                                                | 6. Upload files and images                                       | 6. Uploading files                                     | translate pages, and view the         |                        |                            |                               |
+|                                                                | 7. Translate and revise the wiki                                 | 7. Translating pages                                   | changelog.                            |                        |                            |                               |
+|                                                                | 8. View changelog                                                | 8. How to view changelog                               |                                       |                        |                            |                               |
++----------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
 **Data analysis using QGIS and InaSAFE Intermediate Level Workshop**
 
