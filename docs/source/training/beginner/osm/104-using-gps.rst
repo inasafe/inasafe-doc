@@ -529,31 +529,6 @@ The easiest way to upload GPS tracks is to download the JOSM plugin
     enter the credentials of your OSM account and click
     :guilabel:`Authenticate`.
 
-10. Editing GPS Data using JOSM
--------------------------------
-
-After you successfully open and upload the GPS data, you must enter the GPS
-data as the field result into OSM server. The following way:
-
-- Open a file gpx results of your field data back using JOSM.
-- Click :menuselection:`File > Download from OSM`, You don’t have to re-draw
-- the box to download because JOSM been reading your region according to the GPS
-  layer automatically. Click :guilabel:`Download`.
-
-.. image:: /static/training/beginner/osm/image65.*
-   :align: center
-
-- After downloading the data successfully and appears in JOSM layer,
-  you can edit the OSM Data (Data Layer) is based on the GPS field data. To
-  make it easier to add data, you can add Bing Satellite imagery. You can
-  draw an uncharted street (a line) with the following results of the
-  existing record GPS tracks.
-
-.. image:: /static/training/beginner/osm/image66.*
-   :align: center
-
-- After you have finished editing OSM data, don’t forget to upload the data
-  to the OSM, click :menuselection:`File > Upload Data`.
 
 
 :ref:`Go to next module --> <field-papers>`
