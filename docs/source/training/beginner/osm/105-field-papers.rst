@@ -1,23 +1,26 @@
 .. image:: /static/training/beginner/osm/image67.*
 
+..  _field-papers:
+
 Module 5: Field Papers
 ======================
 
 **Learning Objectives**
 
-- How to use Field Papers
-- Make and print  Field Papers
-- Add data to print using Field Papers
-- Scan and upload Field Papers to Field Papers website
-- Open Field Papers into JOSM
+- Understand how to use Field Papers
+- Make and print Field Papers
+- Add information to Field Papers
+- Scan and upload Field Papers to fieldpapers.org
+- Open Field Papers in JOSM
 
-In this module we will see how we can record the coordinates of places
-without a GPS.  We will use a tool called Field Papers,
+In this module we will see how it is possible to record the coordinates of 
+places without a GPS.  We will use a tool called Field Papers,
 which allows you to print a map of an area, draw on it and add notes,
 and load the paper back into JOSM, where you can add your locations to
 OpenStreetMap.
 
-**1. Overview of Field Papers**
+1. Overview
+-----------
 
 Before going into detail about Field Papers, let’s look at an overview of
 how the process works:
@@ -48,7 +51,8 @@ reference to add them digitally into OpenStreetMap.
 .. image:: /static/training/beginner/osm/image69.*
    :align: center
 
-**2. How does Field Papers work?**
+2. How does Field Papers work?
+------------------------------
 
 If you follow the Field Papers process described above,
 you will be collecting accurate geographic coordinates of places with
@@ -66,7 +70,8 @@ which is good enough for us.
 
 Now let’s learn how to create and use Field Papers.
 
-**3. Create and Print**
+3. Create and Print
+-------------------
 
 - Open your web browser - this may be Firefox, Chrome, Opera,
   or Internet Explorer.
@@ -145,7 +150,8 @@ Now let’s learn how to create and use Field Papers.
   to a printer and print the page.  If everything goes well,
   you should now have your map printed on paper.
 
-**4. Map with Field Papers**
+4. Map with Field Papers
+------------------------
 
 - Take your Field Papers outside, and use it as a guide to walk and identify
   new places that are not on the map.
@@ -156,7 +162,8 @@ Now let’s learn how to create and use Field Papers.
 - When you are satisfied with your additions on the paper map,
   then you can add them digitally into OpenStreetMap.
 
-**5. Scan and Upload**
+5. Scan and Upload
+------------------
 
 - Field Papers are very useful for mapping with nothing more than paper,
   but they are not 100% magic.  We will still need to add our paper into JOSM,
@@ -195,7 +202,8 @@ Now let’s learn how to create and use Field Papers.
 .. image:: /static/training/beginner/osm/image82.*
    :align: center
 
-**6. Open in JOSM**
+6. Open in JOSM
+---------------
 
 - When your scan have been processed, now you can add the results of your
   scan in JOSM and add your information to OpenStreetMap. To display Field
@@ -267,3 +275,5 @@ put checks on the fieldpapers box - Click :guilabel:`OK` then Restart your JOSM.
 
 - Now you have finished adding OSM data according to field result (survey)
   that has been done.
+
+:ref:`Go to next module --> <editing-osm-with-josm>`

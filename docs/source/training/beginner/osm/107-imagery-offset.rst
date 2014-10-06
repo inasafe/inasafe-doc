@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/osm/image6.*
 
+..  _imagery-offset:
+
 Module 7: Imagery Offset
 ========================
 
@@ -17,7 +19,8 @@ seen this in action.  In this module we will learn a little bit more about
 aerial imagery, and we will learn how to solve the one important problem of
 using aerial photographs - imagery offset.
 
-**1. Imagery Offset Definition**
+1. Imagery Offset Definition
+----------------------------
 
 At first, the satellite image is a combination of photographs and satellite
 coordinates. Special software is used to calculate each side of the
@@ -31,7 +34,8 @@ mountainous or hilly areas, satellite imagery often has a non-linear
 distortion. Shift or distortion is called imagery offset / shift satellite
 imagery.
 
-**2. Part of Imagery**
+2. Part of Imagery
+------------------
 
 Aerial imagery is the term that we use to describe photographs that are
 taken from the sky.  These can be taken from airplanes, helicopters,
@@ -45,7 +49,8 @@ photos of the earth.  These photos are then manipulated so that they can be
 used in GIS (mapping) software.  Bing Aerial Imagery is made up of satellite
 photos.
 
-*2.1. Resolution*
+2.1. Resolution
+...............
 
 All digital photographs are made up of pixels.  If you zoom in very close on
 a photograph, you will notice the the image starts to get blurry,
@@ -81,7 +86,8 @@ difficult to identify objects in the image.
 The higher the resolution of an aerial image, the easier it is to use in
 making maps.
 
-*2.2. Georeferencing*
+2.2. Georeferencing
+...................
 
 Every aerial image is georeferenced, meaning that it is manipulated so that
 it can be shown in its correct location on the Earth. Georeferencing is a
@@ -96,7 +102,9 @@ imagery we are using, and so long as we are aware of one common pitfall -
 imagery offset.
 
 
-**3. Imagery Offset**
+3. Imagery Offset
+-----------------
+
 Imagery providers usually do a pretty good job of georeferencing their
 imagery, but occasionally the images can be out of position.  This is
 particularly true in hilly or mountainous areas, where it can be difficult
@@ -134,7 +142,8 @@ accurate, and the image beneath it is out of place.
 So now we must ask, “if the imagery may be out of place,
 how can we still use it and make accurate maps?”
 
-**4. Correcting Imagery Offset**
+4. Correcting Imagery Offset
+----------------------------
 
 The answer to the preceding question is that we can move the imagery so that
 it aligns with things that we know are in the correct location,
@@ -219,7 +228,8 @@ locations.  In this case, you can align the imagery to the OSM map,
 but beware!  Other mappers may not be aware of imagery offset,
 and they may have made mistakes when they mapped.
 
-*4.1. The Imagery Offset Database*
+4.1. The Imagery Offset Database
+................................
 
 Now you know how to watch out for and correct imagery offset,
 but there is one major problem with this approach that we have overlooked
@@ -264,7 +274,8 @@ When using aerial imagery layers, you should ALWAYS check for existing
 offsets, and when you create your own offset, you should ALWAYS save it to
 this database.
 
-*4.2. Add Imagery Offset from the Database*
+4.2. Add Imagery Offset from the Database
+.........................................
 
 - When you add an imagery layer, the new plugin will alert you that you
   should check the imagery database for an existing offset.  You will see an
@@ -309,7 +320,8 @@ this database.
 .. image:: /static/training/beginner/osm/image126.*
    :align: center
 
-*4.3. Add Imagery Offset to the Database*
+4.3. Add Imagery Offset to the Database
+.......................................
 
 Now that we have marked this user’s offset as "deprecated", we should add an
 improved offset to the database.
@@ -336,7 +348,8 @@ improved offset to the database.
 Oh No!  Somebody mapped this area with misaligned imagery,
 so the area is not correctly mapped.  This will take some time to fix.
 
-*4.4. Imagery Offset Database Website*
+4.4. Imagery Offset Database Website
+....................................
 
 Lastly, for more information on the offset database,
 you can visit the website at http://offsets.textual.ru/.  This lists all the
@@ -350,3 +363,6 @@ One last thing to remember is that the imagery may not be offset the same
 distance everywhere!  This is especially true in regions where there are
 lots of hills and mountains.  So if the imagery seems to be offset
 differently in different areas, you’ll need to move it again.
+
+
+:ref:`Go to next module --> <getting-osm-data>`

@@ -691,11 +691,11 @@ Core Material
 
 1. What is GPS
 2. Turn on GPS
-3. GPS Setting
-4. Navigate GPS
-5. Understand *Track* and *Waypoints*
-6. Save Location (*Waypoints*)
-7. Open *Track Log*
+3. Navigate GPS
+4. Understand *Track* and *Waypoints*
+5. Save Location (*Waypoints*)
+6. Open *Track Log*
+7. GPS Settings
 8. Copy *Waypoint* and *Track* to computer
 
   - Connecting GPS to computer
@@ -756,7 +756,7 @@ Activities
 |   - Turn on track log and explain how the track log works.        |               |               |
 |   - Look to the map page, try to walk so the                      |               |               |
 |     participants can see the track.                               |               |               |
-|   - Make some another waypoint.                                   |               |               |
+|   - Make another waypoint.                                        |               |               |
 |                                                                   |               |               |
 | 3. As a group participants will be asked to practice the          |               |               |
 |    material using GPS.                                            |               |               |

@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/osm/image6.*
 
+..  _getting-osm-data:
+
 Module 8: Getting OSM Data
 ==========================
 
@@ -15,7 +17,8 @@ now maybe you want the data obtained as a back up or if you want the
 Geography Information System software that Open Source is |QGIS|
 (http://qgis.org).
 
-**1. Getting OSM Data on Geofabrik Website**
+1. Getting OSM Data on Geofabrik Website
+----------------------------------------
 
 - The OSM data can be obtained easily by downloading it at the following
   website:
@@ -51,7 +54,8 @@ so if you just upload data to OSM, the data does not appear automatically
 when you download it but you have to wait for the latest updates from the
 server.
 
-**2. Getting OSM Data on HOT-Export Website**
+2. Getting OSM Data on HOT-Export Website
+-----------------------------------------
 
 If you just want to download a particular specific area with a particular
 attribute, you can use the Hot-Exports data download service.

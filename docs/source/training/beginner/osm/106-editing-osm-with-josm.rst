@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/osm/image6.*
 
+..  _editing-osm-with-josm:
+
 Module 6: Editing OpenStreetMap with JOSM
 =========================================
 
@@ -54,7 +56,8 @@ our improvements. We’ll learn the basic cycle of mapping on OSM:
 By the end of this module, we will be able to see our additions on the OSM
 map.
 
-**1. Explore JOSM**
+1. Explore JOSM
+---------------
 
 - First, to start JOSM click on the Start Menu in the lower left corner of
   your computer, and find the program “JOSM”.
@@ -88,7 +91,8 @@ map.
   the boxes on the right, such as :guilabel:`Properties`, :guilabel:`Selection`,
   and :guilabel:`Author`.
 
-*1.1. Download OSM Data*
+1.1. Download OSM Data
+......................
 
 - Remember the cycle of editing OpenStreetMap described in the introduction
   of this module? Download, edit, save. Before we can edit the map,
@@ -129,7 +133,8 @@ map.
   click :guilabel:`Download` at the bottom of the window. JOSM will get the data
   for this area from OpenStreetMap and open it in your map window for editing.
 
-*2. JOSM Layers*
+2. JOSM Layers
+--------------
 
 - Open your GPS file and downloaded data from OpenStreetMap,
   if you haven’t already. You may notice that when you open a file,
@@ -173,7 +178,8 @@ map.
 .. image:: /static/training/beginner/osm/image98.*
    :align: center
 
-**3. Edit**
+3. Edit
+-------
 
 - The next step is to edit the map and add new items. This is not always
   easy at first, but with practice you will get better and better.  Note that
@@ -205,7 +211,8 @@ map.
 .. image:: /static/training/beginner/osm/image100.*
    :align: center
 
-**4. Tags**
+4. Tags
+-------
 
 - When you draw a point, line, or shape, it has a location,
   but no information about what it is. In other words, we know where it is,
@@ -227,7 +234,8 @@ map.
 .. image:: /static/training/beginner/osm/image101.*
    :align: center
 
-*4.1. Editing Tags*
+4.1. Editing Tags
+.................
 
 - You can add, edit, and delete these tags from this panel. The tags are
   traditionally in English however, so it is often better to use the
@@ -246,7 +254,8 @@ map.
 .. image:: /static/training/beginner/osm/image102.*
    :align: center
 
-*4.2. Common Mistake*
+4.2. Common Mistakes
+....................
 
 *Tagging Nodes When You Want to Tag Lines or Polygons.*
 
@@ -265,7 +274,8 @@ map.
 - For more information about tags and presets can be found on the
   Intermediate OpenStreetMap Guide Module 4: XML and Preset in JOSM.
 
-**5. Upload Changes**
+5. Upload Changes
+-----------------
 
 - After you have made a couple of changes to improve the map,
   let’s save those changes to OpenStreetMap. To save the changes,
@@ -315,7 +325,8 @@ the OpenStreetMap Map with the following steps:
   good general rule is, if your point has an icon in JOSM,
   then it should be seen on the main map at the OpenStreetMap website.
 
-**6. Saving OSM files**
+6. Saving OSM files
+-------------------
 
 - Sometimes after you download some OSM data, you may wish to save it so
   that you can edit it offline, and then upload it later when you have
@@ -332,18 +343,19 @@ the OpenStreetMap Map with the following steps:
   the file again, simply open JOSM, go to the :menuselection:`File` menu, and
   click :menuselection:`Open...`
 
-**7. Choosing a variety of options and menu by using the keyboard**
+7. Using keyboard shortcuts
+---------------------------
 
-Sometimes you become dizzy to click again and again to select the various
-options and different menu in JOSM. Fortunately, there is a shortcut in JOSM
-on the keyboard that allows you to do common things. This is the list of
-keyboard shortcuts and their functions are generally used:
+It can be dizzying to click over and over again between the various tools and
+menus in JOSM. Fortunately, there are shortcuts for most actions in JOSM with
+a simple press of the keyboard. Here is a list of commonly used keyboard
+shortcuts and their associated functions:
 
 - :kbd:`S`: Select tool (select objects)
 - :kbd:`A`: Draw tool (draw objects)
 - :kbd:`Z`: Zoom tool
-- :kbd:`Ctrl + >` : Zoom out
-- :kbd:`Ctrl + <` : Zoom in
+- :kbd:`Minus`(or :kbd:`Ctrl + >`): Zoom out
+- :kbd:`Plus`(or :kbd:`Ctrl + <`): Zoom in
 - :kbd:`P`: Split Way
 - :kbd:`C`: Combine Way
 - :kbd:`O`: Align in Circle (set the points into a circle)
@@ -351,4 +363,4 @@ keyboard shortcuts and their functions are generally used:
 - :kbd:`Q`: Orthogonalize (make into a square shape)
 
 
- 
+:ref:`Go to next module --> <imagery-offset>`

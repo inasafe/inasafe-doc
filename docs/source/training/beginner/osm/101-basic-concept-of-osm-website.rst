@@ -2,8 +2,8 @@
 
 ..  _basic-concept-of-osm-website:
 
-Module 1: Basic Concept of OpenStreetMap Website
-================================================
+Module 1: The OpenStreetMap Website
+===================================
 
 **Learning Objectives**
 
@@ -19,8 +19,8 @@ or hospital?  Who has the least access to these facilities?  Where is
 poverty the most problematic? Questions like these can often best be
 expressed with maps, and maps can help find solutions to these questions.
 
-Draw a Map
-----------
+Hand-drawn maps
+---------------
 
 As an exercise, get a pen and paper and draw a map of your town or village.
 What are the most important things to include on the map?  What is the most
@@ -34,7 +34,7 @@ important, and who it might be important to.
 .. figure:: /static/training/beginner/osm/image8.*
    :align: center
 
-   *A village in Indonesia (top), and an example of a hand drawn map (bottom)*
+   *A village in Indonesia (top), and an example of a hand-drawn map (bottom)*
 
 If your town is like most, you may have drawn some lines to represent roads,
 possibly a river or stream. Perhaps you added important buildings such as
@@ -45,9 +45,11 @@ of what is on the ground.
 
 .. image:: /static/training/beginner/osm/image9.*
    :align: center
+   :width: 350px
 
 .. figure:: /static/training/beginner/osm/image10.*
    :align: center
+   :width: 350px
 
    *Examples of Symbols*
 
@@ -75,7 +77,8 @@ we record it’s precise location (longitude and latitude) on the planet.
 This is invaluable for our future map making and analysis,
 and we will look more closely at it later on.
 
-**What is OpenStreetMap?**
+What is OpenStreetMap?
+......................
 
 OpenStreetMap is a tool for creating and sharing map information. Anyone
 can contribute to OSM, and thousands of people add to the project every day.
@@ -89,26 +92,11 @@ at any time, totally free.
 .. figure:: /static/training/beginner/osm/image11.*
    :align: center
 
-   *Digital Maps with OpenStreetMap.*
+   *Digital Maps with OpenStreetMap*
 
 OpenStreetMap is digital, which makes it extremely useful for us,
 and it is shared, which means that everybody benefits from the work of
-everybody else. The basic idea is this: if you make a map of your street
-and I make a map of my street, and then more people make maps of their
-streets, we all can share these maps and this data on a common platform,
-and use the data for our own projects.
-
-In the optional module at the start of this training,
-we used a file that contained buildings in Jakarta.  This data came from
-OpenStreetMap. While no single person could have mapped 13,000 buildings,
-many different people contributing just a little bit at a time provided us
-with a data file that allows us to do very impressive analysis,
-and help an entire community prepare for the next time there is a flood.  In
-this sense, the work is cyclical. The community contributes data so
-that emergency managers can design highly effective contingency plans,
-and those plans may then be used to benefit the community at large. And the
-more data that the community provides, the better the contingency planning
-can be.
+everybody else.
 
 In this unit, you will learn how to make a digital map. You will learn how
 to use the OpenStreetMap platform, and you will make your first edits and

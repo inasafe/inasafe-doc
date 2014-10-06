@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/osm/image1.*
 
+..  _beg-osm-introduction:
+
 Introduction
 ============
 
@@ -105,18 +107,17 @@ Preface
 Every day thousands of people contribute to OpenStreetMap,
 a project with the lofty goal of mapping the world. Most OSM software is
 free and open source, and the data is open for anyone to use. The idea is
-simple: if you make a map of your town and I make a map of mine,
+simple: if you make a map of your town and we make a map of ours,
 we can share those maps on a common platform. With enough people
-contributing, we can make maps and collect data throughout the world.
+contributing, we can collect data throughout the world.
 
-Collecting Spatial Data using OSM Beginner Level is a step by step guide
-designed to help anyone get started with OSM, no matter what skill level you
-are starting from. While it might seem daunting at first,
-OSM is simple enough that anyone can get started creating maps,
+Collecting Spatial Data using OSM Beginner Level is a step-by-step course
+designed to help anyone get started with OSM. While it might seem daunting 
+at first, OSM is simple enough that anyone can get started creating maps,
 and as your understanding grows you'll find that you can do more and more
 interesting things.
 
-This guide makes few assumptions. It assumes you have used a computer
+This tutorial makes few assumptions. It assumes you have used a computer
 before, and that you have an email address. If you don't have an email
 address, we suggest you have a friend help you sign up for one. There are
 many websites where you can get a free email address, such as www.gmail.com
@@ -129,5 +130,5 @@ and surfing the web, don't worry – this guide is for you too. No matter your
 proficiency, we'll take you step by step through OSM and you'll be mapping
 in no time!
 
-:ref:`Go to next module --> <basic-concept-of-osm-website>`
+:ref:`Go to first module --> <basic-concept-of-osm-website>`
 
