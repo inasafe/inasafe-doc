@@ -144,7 +144,8 @@ Colors are assigned using the following rules:
 - Greens are used for issues handled in the current sprint
 - Petrol is used for Features requests
 - Blue is used for tagging the area of the problem (Optimization, System Architecture, Postprocessing, ...)
-- Navy is used for Governance and Rollout
+- Navy is not used yet
+- Purple is used for Governance and Rollout
 - Gray is for issue sizes
 
 When the same hue is used with more saturations, as a rule of thumb, the darker saturations mean more important.
