@@ -131,3 +131,20 @@ For example if you request a new feature and you describe your requested
 feature in the issue report, it is very likely that you want to mark it as
 :guilabel:`\* Request for Comments` to be commented and probably extended by
 others as well before being implemented as a well prepared feature.
+
+
+Labels' color and naming scheme
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+All labels start with a capital letter. Acronyms are all capitals.
+Colors are assigned using the following rules:
+
+- Reds are used for issues severity
+- Orange is used for issues that need attention from the Documentation and Translation team.
+- Yellows are used for issues that need external input
+- Greens are used for issues handled in the current sprint
+- Petrol is used for Features requests
+- Blue is used for tagging the area of the problem (Optimization, System Architecture, Postprocessing, ...)
+- Navy is used for Governance and Rollout
+- Gray is for issue sizes
+
+When the same hue is used with more saturations, as a rule of thumb, the darker saturations mean more important.
