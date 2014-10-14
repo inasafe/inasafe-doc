@@ -378,7 +378,7 @@ shortcuts and their associated functions:
 - :kbd:`C`: Combine Way
 - :kbd:`O`: Align in Circle (set the points into a circle)
 - :kbd:`L`: Align in line (set the points into a straight line)
-- :kbd:`Q`: Orthogonalize (make into a square shape)
+- :kbd:`Q`: Orthogonalise (make into a square shape)
 
 
 :ref:`Go to next module --> <imagery-offset>`
