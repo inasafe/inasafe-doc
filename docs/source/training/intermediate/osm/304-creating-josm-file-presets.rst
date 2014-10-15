@@ -1,3 +1,5 @@
+.. _creating-josm-file-presets:
+
 .. image:: /static/training/intermediate/osm/image6.*
 
 Module 4: Creating JOSM File Presets
