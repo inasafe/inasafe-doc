@@ -90,7 +90,7 @@ need to evacuate their homes.  The threshold of one metre can be changed
 
 **Needs per week** is calculated using the above number of evacuated people to
 estimate the amount of food, water and other products that the refugees will
-need to survive. The defaultfigures are based on Indonesian policy.
+need to survive. The default figures are based on Indonesian policy.
 
 **Action checklist** is designed to make disaster managers think about what
 they need to do to prepare for the event.
