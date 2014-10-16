@@ -175,19 +175,19 @@ of people found in a certain area) or important infrastructure (buildings,
 bridges) that becomes a focus of interest when calculating the impact of
 a specific hazard.
 
-+--------------------------+-------------------------------------------+
-|       Exposure           |                  Type                     |
-+==========================+===========================================+
-| Population               | Density (people/units\ :sup:`2` \)        |
-+--------------------------+-------------------------------------------+
-| Buildings                | Schools, Hospitals                        |
-+--------------------------+-------------------------------------------+
-| Other man-made structures| Bridges, telecommunications               |
-+--------------------------+-------------------------------------------+
-| \* Roads                 | major, minor                              |
-+--------------------------+-------------------------------------------+
-| \† Landslide             | Agriculture, industrial                   |
-+--------------------------+-------------------------------------------+
++--------------------------+--------------------------------------------------+
+|       Exposure           |                  Type                            |
++==========================+==================================================+
+| Population               | Population count (number of people per pixel)    |
++--------------------------+--------------------------------------------------+
+| Buildings                | Schools, Hospitals, government building          |
++--------------------------+--------------------------------------------------+
+| Other man-made structures| Bridges, telecommunications                      |
++--------------------------+--------------------------------------------------+
+| \* Roads                 | major, minor                                     |
++--------------------------+--------------------------------------------------+
+| \† Landslide             | Agriculture, industrial                          |
++--------------------------+--------------------------------------------------+
 
 \* *Is available for hazard layer footprints only; the next version of |project_name| will allow for modelled hazards.*
 

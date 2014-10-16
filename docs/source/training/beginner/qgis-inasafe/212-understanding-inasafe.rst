@@ -11,7 +11,7 @@ Module 12: Understanding |project_name|
 - Adding hazard data
 - Adding unprocessed exposure data (vector and raster)
 - Using keywords editor
-- Analyzing Impact
+- Analysing Impact
 - Improving |project_name| Output Map
 - Saving and Printing scenario result
 
