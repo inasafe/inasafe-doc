@@ -42,7 +42,7 @@ KRB = Kawansan Rawan Bencana (Volcano Hazard level)
 =============  ================  ==================  ==================  =======================
 **Exposure**   **Spatial Type**  **Exposure Type**   **Attribute Name**  **Exposure Units/Fields**
 -------------  ----------------  ------------------  ------------------  -----------------------
-Population     Raster            Density             N/A                 People per pixel
+Population     Raster            Population count    N/A                 People per pixel
 Structures     Polygon           Structure type      type                text
 Structures     Point             Structure type      type                text
 =============  ================  ==================  ==================  =======================
@@ -61,9 +61,9 @@ Exposure Layers Used in Practical
 ---------------------------------
 
 ============  ================  =================  ==================  =======================
-**Exposure**  **Spatial Type**  **Exposure Type**  **Attribute Name**  **Hazard Units/Fields**
+**Exposure**  **Spatial Type**  **Exposure Type**  **Attribute Name**  **Exposure Units/Fields**
 ------------  ----------------  -----------------  ------------------  -----------------------
-Population    Raster            Density            N/A                 People per Pixel
+Population    Raster            Population count   N/A                 People per Pixel
 Structures    Polygon           Structure type     type                text
 ============  ================  =================  ==================  =======================
 
