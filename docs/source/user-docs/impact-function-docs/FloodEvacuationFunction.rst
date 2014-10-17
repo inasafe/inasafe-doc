@@ -17,7 +17,7 @@ AIFDR
 Need evacuation
 
 **Synopsis**: 
-To assess the impacts of (flood or tsunami) inundation in raster format on population.
+To assess the impacts of flood inundation in raster format on population.
 
 **Actions**: 
 Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them.
@@ -29,7 +29,7 @@ A hazard raster layer where each cell represents flood depth (in meters).
 An exposure raster layer where each cell represent population count.
 
 **Output**: 
-Raster layer contains population affected and the minimum needs based on the population affected.
+Raster layer contains people affected and the minimum needs based on the people affected.
 
 **Limitation**: 
 The default threshold of 1 meter was selected based on consensus, not hard evidence.
@@ -46,7 +46,7 @@ Impact function for flood evacuation.
 
     :author AIFDR
     :rating 4
-    :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami'] and                     layertype=='raster' and                     unit=='m'
+    :param requires category=='hazard' and                     subcategory=='flood' and                     layertype=='raster' and                     unit=='m'
 
     :param requires category=='exposure' and                     subcategory=='population' and                     layertype=='raster'
     

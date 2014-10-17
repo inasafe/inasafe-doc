@@ -5,6 +5,7 @@ Package::safe.impact_functions.inundation
    :maxdepth: 2
 
    inundation/flood_raster_roads_qgis_gdal
+   inundation/tsunami_population_evacuation_raster_hazard
    inundation/flood_population_evacuation_polygon_hazard
    inundation/flood_raster_roads_qgis
    inundation/flood_building_impact_qgis
