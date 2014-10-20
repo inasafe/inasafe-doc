@@ -1,13 +1,13 @@
 Contingency Planning with OpenStreetMap (OSM) and QGIS/|project_name|
------------------------------------------------------------------------
+=====================================================================
 
 **BADAN NASIONAL PENANGGULANGAN BENCANA**
 
-***2013***
+**2013**
 
 
 FOREWORD
-========
+--------
 
 The Contingency Planning with OpenStreetMap (OSM) and |QGIS|/|project_name|
 workshop program is designed to provide provincial and district disaster
@@ -39,7 +39,7 @@ both from government and non-government agencies.
 
 
 INTRODUCTION
-============
+------------
 
 As one of the most hazard-prone and densely populated countries in the
 world, Indonesia faces significant risk of loss of life and challenges to
@@ -121,7 +121,7 @@ real tasks in the field and various methods in engaging active participation
 from the participants.
 
 LEVELS OF WORKSHOP
-==================
+------------------
 
 The workshop consists of three levels:
 
@@ -138,7 +138,7 @@ The workshop consists of three levels:
 3. Training of Trainer (ToT) Workshop
 
 CURRICULUM
-==========
+----------
 
 A. Aims
 .......
@@ -229,7 +229,7 @@ rather than by workshop level.
 |    |                | 5. Use Field Papers to add data to OSM                                                                              |
 |    |                | 6. Edit a map and add information to OSM using JOSM                                                                 |
 |    |                | 7. Correct imagery offset                                                                                           |
-|    |                | 8. Get OSM data in a specific format to be analysed further in Geographic Information System (GIS)) software        |
+|    |                | 8. Get OSM data in a specific format to be analysed further in Geographic Information System (GIS) software         |
 +----+----------------+---------------------------------------------------------------------------------------------------------------------+
 | B. | Data analysis  | **Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios with** |project_name|                    |
 |    | using QGIS     |                                                                                                                     |
@@ -369,11 +369,11 @@ Collecting Spatial Data with OSM
 |                                                                     | 1. Understand what is GPS and types of GPS                       |                                                        |
 |                                                                     | 2. Turn on GPS                                                   | 1. What is GPS                                         |
 |                                                                     | 3. Set up GPS                                                    | 2. Turning on GPS                                      |
-|                                                                     | 4. Understand factors that affect GPS accuracy                   | 3. GPS settings                                        |
-|                                                                     | 5. Understand tracks and waypoints                               | 4. Navigating the GPS                                  |
-|                                                                     | 6. Collect data using GPS                                        | 5. Tracks and waypoints                                |
-|                                                                     | 7. Copy GPS data (tracks and waypoints) to computer              | 6. Saving location (waypoint)                          |
-|                                                                     | 8. Open waypoints and tracks in JOSM                             | 7. Track Log                                           |
+|                                                                     | 4. Understand factors that affect GPS accuracy                   | 3. Navigating the GPS                                  |
+|                                                                     | 5. Understand tracks and waypoints                               | 4. Tracks and waypoints                                |
+|                                                                     | 6. Collect data using GPS                                        | 5. Saving location (waypoint)                          |
+|                                                                     | 7. Copy GPS data (tracks and waypoints) to computer              | 6. Turning on the Track Log                            |
+|                                                                     | 8. Open waypoints and tracks in JOSM                             | 7. GPS settings                                        |
 |                                                                     | 9. Upload GPS tracks using JOSM                                  | 8. How to copy waypoints and tracks to computer        |
 |                                                                     | 10. Edit OSM based on GPS data in JOSM                           |                                                        |
 |                                                                     |                                                                  |   a. Connecting GPS to computer                        |
@@ -387,34 +387,34 @@ Collecting Spatial Data with OSM
 |                                                                     |                                                                  | 10. Editing GPS data using JOSM                        |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 |5. Use Field Papers to add data to OSM                               |                                                                  | **Field Papers**                                       |
-|                                                                     | 1. Use Field Papers                                              |                                                        |
+|                                                                     | 1. Understand how to use Field Papers                            |                                                        |
 |                                                                     | 2. Make and print Field Papers                                   | 1. What is Field Papers                                |
-|                                                                     | 3. Add data to print using Field Papers                          | 2. Using Field Papers                                  |
-|                                                                     | 4. Scan and upload Field Papers to Field Papers website          | 3. Making and printing Field Papers                    |
+|                                                                     | 3. Add information to Field Papers                               | 2. Using Field Papers                                  |
+|                                                                     | 4. Scan and upload Field Papers to fieldpapers.org               | 3. Making and printing Field Papers                    |
 |                                                                     | 5. Open Field Papers in JOSM                                     | 4. Mapping with Field Papers                           |
 |                                                                     |                                                                  | 5. Scanning and uploading                              |
 |                                                                     |                                                                  | 6. Field Papers in JOSM                                |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 |6. Edit a map and add information to OSM using JOSM                  |                                                                  | **Editing OpenStreetMap with JOSM**                    |
-|                                                                     | 1. Download current OSM data in the area you want to edit        |                                                        |
-|                                                                     | 2. Set JOSM layers                                               | 1. Exploring JOSM                                      |
+|                                                                     | 1. Download OSM data in the area you want to edit                |                                                        |
+|                                                                     | 2. Select layers                                                 | 1. Exploring JOSM                                      |
 |                                                                     | 3. Edit OSM data                                                 | 2. JOSM layers                                         |
-|                                                                     | 4. Edit tags                                                     | 3. Editing OSM data                                    |
+|                                                                     | 4. Edit and understand tags                                      | 3. Editing OSM data                                    |
 |                                                                     | 5. Upload OSM data                                               | 4. Tags                                                |
 |                                                                     | 6. Save OSM files                                                | 5. Uploading changes                                   |
 |                                                                     |                                                                  | 6. Saving OSM files                                    |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 |7. Correct imagery offset                                            |                                                                  | **Imagery Offset**                                     |
-|                                                                     | 1. Explain definition of imagery offset                          |                                                        |
-|                                                                     | 2. Explain how imagery works (resolution and georeference)       | 1. Definition of imagery offset                        |
+|                                                                     | 1. Understand the definition of imagery offset                   |                                                        |
+|                                                                     | 2. Understand components of imagery (resolution and georeference)| 1. Definition of imagery offset                        |
 |                                                                     | 3. Explain how imagery offsets occur                             | 2. Imagery resolution and georeferencing               |
 |                                                                     | 4. Fix imagery offset                                            | 3. Imagery offset                                      |
 |                                                                     |                                                                  | 4. Fixing imagery offset                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 |8. Get OSM data in a specific format to be analysed further in       |                                                                  | **Getting OSM Data**                                   |
 |   Geographic Information System (GIS) software                      | 1. Download OpenStreetMap data from Geofabrik website            |                                                        |
-|                                                                     | 2. Download OpenStreetMap data according to region and           | 1. OpenStreetMap data from Geofabrik Website           |
-|                                                                     |    selecting attributes with HOT export tool                     | 2. OpenStreetMap data according to region and          |
+|                                                                     | 2. Download customised OpenStreetMap data using HOT Exports      | 1. OpenStreetMap data from Geofabrik Website           |
+|                                                                     |                                                                  | 2. OpenStreetMap data according to region and          |
 |                                                                     |                                                                  |    selecting attributes with HOT export tool           |
 |                                                                     |                                                                  |                                                        |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
@@ -700,8 +700,8 @@ Analysis through OSM, QGIS, and |project_name| in their respective region.
 |                                                                     |    analysis through OSM, QGIS, and InaSAFE workshop              |    and analysis through OSM, QGIS, and InaSAFE workshop    |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 
-Curriculum Structure
-....................
+F. Curriculum Structure
+.......................
 
 Based on the curriculum, program structure is designed as follows.
 
@@ -880,7 +880,7 @@ Based on the curriculum, program structure is designed as follows.
 +----+-----------------------------------------+-----------------------------------------+
 
 Syllabus
-========
+--------
 
 The syllabus is a learning plan for the workshop material that includes 
 basic competencies, indicators, core material, learning activity, assessment, 
@@ -947,11 +947,11 @@ Collecting Spatial Data with OSM
 |                                                                     | 1. Understand what is GPS and types of GPS                       |                                                        | discuss GPS.                          |                        |                            | Slide PP                      |
 |                                                                     | 2. Turn on GPS                                                   | 1. What is GPS                                         |                                       |                        |                            | Module 4                      |
 |                                                                     | 3. Set up GPS                                                    | 2. Turning on GPS                                      | Participants practise how to          |                        |                            | Participant's Computer        |
-|                                                                     | 4. Understand factors that affect GPS accuracy                   | 3. GPS settings                                        | turn on GPS, set up GPS for           |                        |                            |                               |
-|                                                                     | 5. Understand tracks and waypoints                               | 4. Navigating the GPS                                  | the first time, navigate with GPS,    |                        |                            | GPS Device (ideally minimum   |
-|                                                                     | 6. Collect data using GPS                                        | 5. Tracks and waypoints                                | save tracks and waypoints, turn       |                        |                            | one GPS for two or three      |
-|                                                                     | 7. Copy GPS data (tracks and waypoints) to computer              | 6. Saving location (waypoint)                          | on track log, and transferr           |                        |                            | participants)                 |
-|                                                                     | 8. Open waypoints and tracks in JOSM                             | 7. Track Log                                           | waypoints and tracks to computer      |                        |                            | Pen and Paper                 |
+|                                                                     | 4. Understand factors that affect GPS accuracy                   | 3. Navigating the GPS                                  | turn on GPS, set up GPS for           |                        |                            |                               |
+|                                                                     | 5. Understand tracks and waypoints                               | 4. Tracks and waypoints                                | the first time, navigate with GPS,    |                        |                            | GPS Device (ideally minimum   |
+|                                                                     | 6. Collect data using GPS                                        | 5. Saving location (waypoint)                          | save tracks and waypoints, turn       |                        |                            | one GPS for two or three      |
+|                                                                     | 7. Copy GPS data (tracks and waypoints) to computer              | 6. Turning on the Track Log                            | on track log, and transferr           |                        |                            | participants)                 |
+|                                                                     | 8. Open waypoints and tracks in JOSM                             | 7. GPS settings                                        | waypoints and tracks to computer      |                        |                            | Pen and Paper                 |
 |                                                                     | 9. Upload GPS tracks in JOSM                                     | 8. How to copy waypoints and tracks to computer        | after demonstrated by facilitator     |                        |                            |                               |
 |                                                                     | 10. Edit OSM based on GPS data in JOSM                           |                                                        |                                       |                        |                            |                               |
 |                                                                     |                                                                  |   a. Connecting GPS to computer                        |                                       |                        |                            |                               |
@@ -967,10 +967,10 @@ Collecting Spatial Data with OSM
 |**5. Field Papers (10 Hours)**                                                                                                                                                                                                                                                                                                 |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Use Field Papers to add data to OSM                                  |                                                                  | **Field Papers**                                       | Participants are asked about and      | 5 hours and 30 Minutes | Test                       | Projector                     |
-|                                                                     | 1. Use Field Papers                                              |                                                        | discuss Field Papers.                 |                        | Practice                   | Slide PP                      |
+|                                                                     | 1. Understand how to use Field Papers                            |                                                        | discuss Field Papers.                 |                        | Practice                   | Slide PP                      |
 |                                                                     | 2. Make and print Field Papers                                   | 1. What is Field Papers                                |                                       |                        |                            | Module 5                      |
-|                                                                     | 3. Add data to print using Field Papers                          | 2. Using Field Papers                                  | Participants practise how Field       |                        |                            | Participant's computer        |
-|                                                                     | 4. Scan and upload Field Papers to Field Papers website          | 3. Making and printing Field Papers                    | Papers works, how to create and print |                        |                            | Example of Field Papers       |
+|                                                                     | 3. Add information to Field Papers                               | 2. Using Field Papers                                  | Participants practise how Field       |                        |                            | Participant's computer        |
+|                                                                     | 4. Scan and upload Field Papers to fieldpapers.org               | 3. Making and printing Field Papers                    | Papers works, how to create and print |                        |                            | Example of Field Papers       |
 |                                                                     | 5. Open Field Papers in JOSM                                     | 4. Mapping with Field Papers                           | Field Papers, how to map with Field   |                        |                            |                               |
 |                                                                     |                                                                  | 5. Scanning and uploading                              | Papers, scan and upload, and how to   |                        |                            |                               |
 |                                                                     |                                                                  | 6. Field Papers in JOSM                                | to open scanned Field Papers in JOSM  |                        |                            |                               |
@@ -979,10 +979,10 @@ Collecting Spatial Data with OSM
 |**6. Editing OpenStreetMap with JOSM (12 Hours)**                                                                                                                                                                                                                                                                              |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Edit a map and add information to OSM using JOSM                     |                                                                  | **Editing OpenStreetMap with JOSM**                    | Participants learn JOSM user          | 7 Hours                | Practice                   | Projector                     |
-|                                                                     | 1. Download current OSM data in the area you want to edit        |                                                        | interface, JOSM layers, and practise  |                        |                            | Slide PP                      |
-|                                                                     | 2. Set JOSM layers                                               | 1. Exploring JOSM                                      | how to edit OSM data, tags, upload    |                        |                            | Module 6                      |
+|                                                                     | 1. Download OSM data in the area you want to edit                |                                                        | interface, JOSM layers, and practise  |                        |                            | Slide PP                      |
+|                                                                     | 2. Select layers                                                 | 1. Exploring JOSM                                      | how to edit OSM data, tags, upload    |                        |                            | Module 6                      |
 |                                                                     | 3. Edit OSM data                                                 | 2. JOSM layers                                         | changes, and saving OSM files, and    |                        |                            | Participant's computer        |
-|                                                                     | 4. Edit tags                                                     | 3. Editing OSM data                                    | using keyboard                        |                        |                            |                               |
+|                                                                     | 4. Edit and understand tags                                      | 3. Editing OSM data                                    | using keyboard                        |                        |                            |                               |
 |                                                                     | 5. Upload OSM data                                               | 4. Tags                                                | shortcuts after demonstrated by       |                        |                            |                               |
 |                                                                     | 6. Save OSM files                                                | 5. Uploading changes                                   | Facilitator                           |                        |                            |                               |
 |                                                                     |                                                                  | 6. Saving OSM files                                    |                                       |                        |                            |                               |
@@ -994,8 +994,8 @@ Collecting Spatial Data with OSM
 |**7. Imagery Offset (2 Hours)**                                                                                                                                                                                                                                                                                                |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Correct imagery offset                                               |                                                                  | **Imagery Offset**                                     | Participants watch demo from          | 90 Minutes             | Test                       | Projector                     |
-|                                                                     | 1. Explain definition of imagery offset                          |                                                        | facilitator and learn about           |                        | Practice                   | Slide PP                      |
-|                                                                     | 2. Explain how imagery works (resolution and georeference)       | 1. Definition of imagery offset                        | imagery offset, imagery components    |                        |                            | Module 7                      |
+|                                                                     | 1. Understand the definition of imagery offset                   |                                                        | facilitator and learn about           |                        | Practice                   | Slide PP                      |
+|                                                                     | 2. Understand components of imagery (resolution and georeference)| 1. Definition of imagery offset                        | imagery offset, imagery components    |                        |                            | Module 7                      |
 |                                                                     | 3. Explain how imagery offsets occur                             | 2. Imagery resolution and georeferencing               | (resolution and georeference), then   |                        |                            | Participant's computer        |
 |                                                                     | 4. Fix imagery offset                                            | 3. Imagery offset                                      | practise how to fix imagery offset    |                        |                            |                               |
 |                                                                     |                                                                  | 4. Fixing imagery offset                               |                                       |                        |                            |                               |
@@ -1004,8 +1004,8 @@ Collecting Spatial Data with OSM
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Get OSM data in a specific format to be analysed further in          |                                                                  | **Getting OSM Data**                                   | Participants practise how to          | 90 Minutes             | Test                       | Projector                     |
 |Geographic Information System (GIS) software                         | 1. Download OpenStreetMap data from Geofabrik Website            |                                                        | download OSM data from Geofabrik      |                        | Practice                   | Slide PP                      |
-|                                                                     | 2. Download OpenStreetMap data according to region and           | 1. OpenStreetMap data from Geofabrik Website           | website, and download OSM data        |                        |                            | Module 9                      |
-|                                                                     |    selecting attributes with HOT export tool                     | 2. OpenStreetMap data according to region and          | based on area and tags needed using   |                        |                            | Participant's computer        |
+|                                                                     | 2. Download customised OpenStreetMap data using HOT Exports      | 1. OpenStreetMap data from Geofabrik Website           | website, and download OSM data        |                        |                            | Module 9                      |
+|                                                                     |                                                                  | 2. OpenStreetMap data according to region and          | based on area and tags needed using   |                        |                            | Participant's computer        |
 |                                                                     |                                                                  |    selecting attributes with HOT export tool           | Hot export tool                       |                        |                            |                               |
 |                                                                     |                                                                  |                                                        |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
@@ -1350,7 +1350,7 @@ in their respective region
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 
 Summary
-=======
+-------
 
 After completing the three trainings, including the Training of Trainers for 
 Scenario Development for Contingency Planning using OSM and QGIS/|project_name|,
