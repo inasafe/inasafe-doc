@@ -1,7 +1,12 @@
 .. image:: /static/training/beginner/qgis-inasafe/image1.*
 
+..  _beg-qgis-introduction:
+
+Introduction
+============
+
 Disclaimer
-**********
+----------
 
 This document is initial draft and still in reviewing phase by these parties:
 
@@ -9,15 +14,15 @@ This document is initial draft and still in reviewing phase by these parties:
 • Australia-Indonesia Facility for Disaster Reduction (|AIFDR|-|GoA|)
 • Humanitarian OpenStreetMap Team (|HOT|)
 
-All contents and materials on this document possibly changed without public
+All contents and materials on this document may be changed without public
 notice.
 
-License
-*******
+Licence
+-------
 
 .. image:: /static/training/beginner/osm/image2.*
 
-All contents and materials on this document is licensed as Creative Commons
+All contents and materials in this document is licensed as Creative Commons
 Attribution Australia (CCbyA).
 
 You are free:
@@ -32,74 +37,73 @@ More information about CCbyA License:
 http://creativecommons.org/licenses/by/3.0/au/deed.en_GB
 
 About Us
-********
+--------
 Badan Nasional Penanggulangan Bencana (BNPB)
-============================================
+............................................
 
-.. image:: /static/training/beginner/qgis-inasafe/image3.*
-   :align: center
+.. image:: /static/training/beginner/osm/image3.*
 
-|BNPB| is Indonesia’s National Disaster Management Agency. |BNPB| is a non-
-departmental ministerial-level government agency, tasked with providing guidance
-and direction to the efforts of disaster management that includes disaster
-prevention, emergency response, rehabilitation, and reconstruction in a fair and
-equal. National Disaster Management Agency has the function as a policy maker
-and formulator and Refugee (IDP) management to act quickly and appropriately and
-effectively and efficiently; and coordinating the implementation of disaster
-management activities in a planned, integrated, and comprehensive.
+BNPB is Indonesia’s National Disaster Management Agency. |BNPB| is a
+non-departmental ministerial-level government agency, tasked with providing
+guidance and direction to the efforts of disaster management that includes
+disaster prevention, emergency response, rehabilitation,
+and reconstruction in a fair and equal way. National Disaster Management Agency
+functions as a policy maker and formulator and Refugee (IDP)
+management to act quickly and appropriately and effectively and efficiently.
+It coordinates the implementation of disaster management activities in a
+planned, integrated, and comprehensive way.
 
 http://bnpb.go.id
 
-Australia-Indonesia Facility for Disaster Reduction (|AIFDR|)
-=============================================================
+Australia-Indonesia Facility for Disaster Reduction (AIFDR)
+...........................................................
 
-.. image:: /static/training/beginner/qgis-inasafe/image4.*
-   :align: center
+.. image:: /static/training/beginner/osm/image4.*
 
 The Australia-Indonesia Facility for Disaster Reduction (|AIFDR|) is a joint
-initiative between the governments of Australia and Indonesia. We work to
-strengthen Indonesia's ability to reduce the impact of disasters. The Australian
-and Indonesian governments at a special ceremony on 15 July 2010 launched the
-Australia-Indonesia facility. The launch marks an important event in the strong
-relationship now shared by both countries and their united commitment to better
-prepare for and respond to natural disasters in Indonesia.
+initiative between the governments of Australia and Indonesia. They work to
+strengthen Indonesia's ability to reduce the impact of disasters. The
+Australian and Indonesian governments at a special ceremony on 15 July 2010
+launched the Australia-Indonesia facility. The launch marks an important
+event in the strong relationship now shared by both countries and their
+united commitment to better prepare for and respond to natural disasters in
+Indonesia.
 
 http://aifdr.org
 
 Humanitarian OpenStreetMap Team (HOT)
-=====================================
+.....................................
 
-.. image:: /static/training/beginner/qgis-inasafe/image5.*
-   :align: center
+.. image:: /static/training/beginner/osm/image5.*
 
-Free, collaborative maps are uniquely valuable to humanitarian work, especially
-in places where base map data is often scarce, out of date, or rapidly changing.
-OpenStreetMap is a web project to create a free and open map of the entire
-world, built entirely by volunteers surveying with GPS, digitizing aerial
-imagery, and collecting and liberating existing public sources of geographic
-data. The Humanitarian OpenStreetMap Team (|HOT|) is an initiative to apply the
-principles and activities of open source and open data sharing towards
-humanitarian response and economic development.
+Free, collaborative maps are uniquely valuable to humanitarian work,
+especially in places where base map data is often scarce, out-of-date,
+or rapidly changing. OpenStreetMap is a web project to create a free and
+open map of the entire world, built entirely by volunteers surveying with
+GPS, digitising aerial imagery, and collecting and liberating existing
+public sources of geographic data. The Humanitarian OpenStreetMap Team (|HOT|)
+is an initiative to apply the principles and activities of open source and
+open data sharing towards humanitarian response and economic development.
 
 http://hot.openstreetmap.org
 
 Universitas Gadjah Mada
-=======================
+.......................
 
-.. image:: /static/training/beginner/osm/image6.*
+.. image:: /static/training/beginner/osm/ugm.*
 
-Universitas Gadjah Mada (internationally known as Gadjah Mada University ;
-Abbreviation : UGM) is an Indonesian public ivy league research university
-located in Yogyakarta, Indonesia. Department of Geodetic Engineering, Faculty of
-Engineering focuses on education, research, and community services related to
-geodesy and geomatics engineering, including acquisition, analysis, and uses of
-detailed and accurate geospatial data and large-scale maps using open source
-geospatial software for disaster management.
+Universitas Gadjah Mada (internationally known as Gadjah Mada University, or
+UGM) is a top research university
+located in Yogyakarta, Indonesia. The Department of Geodetic Engineering and 
+Faculty of Engineering focuses on education, research, and commmunity services 
+related to geodesy and geomatics engineering, including acquisition, analysis, 
+and uses of detailed and accurate geospatial data and large-scale maps using 
+open source geospatial software for disaster management.
 
 http://ugm.ac.id
 
 Preface
-*******
+-------
 A Geographic Information System (GIS) is a system designed to
 enable people to work with data related to places on the Earth.
 A GIS allows the creation, storage, manipulation, and analysis of geographic
@@ -108,20 +112,21 @@ GIS is a very broad concept and can involve complex hardware and software.
 But for most people’s purposes, a simple GIS software application is all that
 is required.
 
-GIS in general can be used for a variety of fields, including in disaster
-management. Unfortunately, the GIS software currently on the market are very
-expensive. Therefore we make a guide how to analyze the data with GIS software,
-which is free and open for the purposes of disaster management, particularly in
-the preparation of contingency plans.
+GIS can be used in a variety of fields, including in disaster
+management. In this training we use GIS software that is 
+free and open, and which includes special functionality for the 
+preparation of contingency plans.
 
-The software used is |QGIS| is a Geographic Information System (GIS) that is
-user-friendly and open-source. |project_name| is a free software and
-open-source, that can create realistic scenario of natural disasters impact
+The software, called |QGIS|, is a Geographic Information System (GIS) that is
+user-friendly and open-source. |project_name| is a QGIS plugin which is also
+free and open-source, can create realistic scenarios of natural disaster impact
 for planning, preparation, and better response.
 |project_name| is developed by |AIFDR| through consultation with |BNPB|.
 
-Analyzing Data with |QGIS| and |project_name| is designed to complement the
-previous unit to collect spatial data with OpenStreetMap for scenario
-development for contingency plan.
+Data Analysis Using QGIS and |project_name| covers different material from the
+previous unit, complementing and building on top of it. Unit One was
+about the collection of relevant data using OpenStreetMap. In this unit we will
+explore how to use geographic data to better understand disaster impact and to
+help develop contingency plans.
 
-We hope it can be useful.
+:ref:`Go to first module --> <gis-for-developing-contingency-plans>`

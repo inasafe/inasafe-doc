@@ -1,7 +1,12 @@
 .. image:: /static/training/intermediate/osm/image1.*
 
+..  _int-osm-introduction:
+
+Introduction
+============
+
 Disclaimer
-**********
+----------
 
 This document is initial draft and still in reviewing phase by these parties:
 
@@ -9,15 +14,15 @@ This document is initial draft and still in reviewing phase by these parties:
 • Australia-Indonesia Facility for Disaster Reduction (|AIFDR|-|GoA|)
 • Humanitarian OpenStreetMap Team (|HOT|)
 
-All contents and materials on this document possibly changed without public
+All contents and materials on this document may be changed without public
 notice.
 
-License
-*******
+Licence
+-------
 
 .. image:: /static/training/beginner/osm/image2.*
 
-All contents and materials on this document is licensed as Creative Commons
+All contents and materials in this document is licensed as Creative Commons
 Attribution Australia (CCbyA).
 
 You are free:
@@ -32,84 +37,80 @@ More information about CCbyA License:
 http://creativecommons.org/licenses/by/3.0/au/deed.en_GB
 
 About Us
-********
+--------
 Badan Nasional Penanggulangan Bencana (BNPB)
-============================================
+............................................
 
-.. image:: /static/training/intermediate/osm/image3.*
+.. image:: /static/training/beginner/osm/image3.*
 
-BNPB is Indonesia’s National Disaster Management Agency.
-BNPB is a non-departmental ministerial-level government agency,
-tasked with providing guidance and direction to the efforts of disaster
-management that includes disaster prevention, emergency response,
-rehabilitation, and reconstruction in a fair and equal.
-National Disaster Management Agency has the function as a policy maker and
-formulator and Refugee (IDP) management to act quickly and appropriately and
-effectively and efficiently; and coordinating the implementation of disaster
-management activities in a planned, integrated, and comprehensive.
+BNPB is Indonesia’s National Disaster Management Agency. |BNPB| is a
+non-departmental ministerial-level government agency, tasked with providing
+guidance and direction to the efforts of disaster management that includes
+disaster prevention, emergency response, rehabilitation,
+and reconstruction in a fair and equal way. National Disaster Management Agency
+functions as a policy maker and formulator and Refugee (IDP)
+management to act quickly and appropriately and effectively and efficiently.
+It coordinates the implementation of disaster management activities in a
+planned, integrated, and comprehensive way.
 
 http://bnpb.go.id
 
 Australia-Indonesia Facility for Disaster Reduction (AIFDR)
-===========================================================
+...........................................................
 
-.. image:: /static/training/intermediate/osm/image4.*
+.. image:: /static/training/beginner/osm/image4.*
 
-The Australia-Indonesia Facility for Disaster Reduction (AIFDR) is a joint
-initiative between the governments of Australia and Indonesia.
-We work to strengthen Indonesia's ability to reduce the impact of disasters.
-The Australian and Indonesian governments at a special ceremony on 15 July
-2010 launched the Australia-Indonesia facility.
-The launch marks an important event in the strong relationship now shared by
-both countries and their united commitment to better prepare for and respond
-to natural disasters in Indonesia.
+The Australia-Indonesia Facility for Disaster Reduction (|AIFDR|) is a joint
+initiative between the governments of Australia and Indonesia. They work to
+strengthen Indonesia's ability to reduce the impact of disasters. The
+Australian and Indonesian governments at a special ceremony on 15 July 2010
+launched the Australia-Indonesia facility. The launch marks an important
+event in the strong relationship now shared by both countries and their
+united commitment to better prepare for and respond to natural disasters in
+Indonesia.
 
 http://aifdr.org
 
 Humanitarian OpenStreetMap Team (HOT)
-=====================================
+.....................................
 
-.. image:: /static/training/intermediate/osm/image5.*
+.. image:: /static/training/beginner/osm/image5.*
 
 Free, collaborative maps are uniquely valuable to humanitarian work,
-especially in places where base map data is often scarce, out of date,
+especially in places where base map data is often scarce, out-of-date,
 or rapidly changing. OpenStreetMap is a web project to create a free and
 open map of the entire world, built entirely by volunteers surveying with
-GPS, digitizing aerial imagery, and collecting and liberating existing
-public sources of geographic data.
-The Humanitarian OpenStreetMap Team (HOT) is an initiative to apply the
-principles and activities of open source and open data sharing towards
-humanitarian response and economic development.
+GPS, digitising aerial imagery, and collecting and liberating existing
+public sources of geographic data. The Humanitarian OpenStreetMap Team (|HOT|)
+is an initiative to apply the principles and activities of open source and
+open data sharing towards humanitarian response and economic development.
 
 http://hot.openstreetmap.org
 
 Universitas Gadjah Mada
-=======================
+.......................
 
 .. image:: /static/training/beginner/osm/ugm.*
 
-Universitas Gadjah Mada (internationally known as Gadjah Mada University ;
-Abbreviation : UGM) is an Indonesian public ivy league research university
-located in Yogyakarta, Indonesia. Department of Geodetic Engineering, Faculty of
-Engineering focuses on education, research, and commmunity services related to
-geodesy and geomatics engineering, including acquisition, analysis, and uses of
-detailed and accurate geospatial data and large-scale maps using open source
-geospatial software for disaster management.
+Universitas Gadjah Mada (internationally known as Gadjah Mada University, or
+UGM) is a top research university
+located in Yogyakarta, Indonesia. The Department of Geodetic Engineering and 
+Faculty of Engineering focuses on education, research, and commmunity services 
+related to geodesy and geomatics engineering, including acquisition, analysis, 
+and uses of detailed and accurate geospatial data and large-scale maps using 
+open source geospatial software for disaster management.
 
 http://ugm.ac.id
 
 
-
 Preface
-*******
+-------
 Every day thousands of people contribute to OpenStreetMap,
-a project with the lofty goal of mapping the world.
-Most OSM software is free and open source, and the data is open for anyone to
-use.
-The idea is simple: if you make a map of your town and I make a map of mine,
-we can share those maps on a common platform.
-With enough people contributing, we can make maps and collect data
-throughout the world.
+a project with the lofty goal of mapping the world. Most OSM software is
+free and open source, and the data is open for anyone to use. The idea is
+simple: if you make a map of your town and we make a map of ours,
+we can share those maps on a common platform. With enough people
+contributing, we can collect data throughout the world.
 
 Collecting Spatial Data with OSM Intermediate Level Module is step-by-step
 guide designed to help anyone who wants to increase their skill for editing

@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _gis-for-developing-contingency-plans:
+
 Module 1: GIS for Developing Contingency Plan
 =============================================
 
