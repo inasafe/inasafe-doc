@@ -12,6 +12,7 @@ This document explains the purpose of impact functions and lists the different a
    impact-function-docs/PAGFatalityFunction
    impact-function-docs/FloodEvacuationFunction
    impact-function-docs/FloodBuildingImpactFunction
+   impact-function-docs/TsunamiEvacuationFunction
    impact-function-docs/CategorisedHazardPopulationImpactFunction
    impact-function-docs/ITBFatalityFunction
    impact-function-docs/VolcanoBuildingImpact
