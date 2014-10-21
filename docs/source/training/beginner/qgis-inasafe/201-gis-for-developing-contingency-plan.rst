@@ -52,3 +52,5 @@ questions, such as:
 
 GIS helps us to answer these sorts of questions.  In the previous unit we
 learned how to collect data, and in this unit we will see how to analyse it.
+
+:ref:`Go to next module --> <qgis-and-inasafe-in-contingency-plan>`
