@@ -1,7 +1,9 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
-Module 4: QGIS Plugin
-=====================
+..  _qgis-plugins:
+
+Module 4: QGIS Plugins
+======================
 
 **Learning Objectives**
 
