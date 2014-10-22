@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _map-projection-basics:
+
 Module 5: Map Projection Basics
 ===============================
 
