@@ -1,21 +1,24 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _working-with-vector-data:
+
 Module 6: Working with Vector Data
 ==================================
 
 **Learning Objectives**
 
 - Understand vector data
-- Identify attribute of vector data
+- Identify attribute ofs vector data
 - Add vector layers
-- Symbolize vector layers
+- Symbolise vector layers
 
-In this chapter, we will learn what is meant by vector data.
+In this module, we will learn what is meant by vector data.
 We will practice adding it to our QGIS projects, and we will learn how to
 style the data in different ways.
 
 
-**1. Vector Data**
+1. Vector data
+--------------
 
 Vector data is the most common type of data found in GIS.
 A vector is essentially something in the form of a dots,
@@ -44,7 +47,8 @@ Almost always, polygon layers will be at the bottom of your layer list, line
 layers in the middle, and point layers at the top.
 You don’t generally want your polygons overlapping your lines and points.
 
-**2. Attribute Data**
+2. Attribute data
+-----------------
 
 It’s important to know that the data you will be working with does not only
 represent where objects are in space, but also tells you what those objects are.
@@ -84,9 +88,11 @@ represent where objects are in space, but also tells you what those objects are.
   Table` button, you’ll see different tables.
 - Close the attribute table.
 
-**3. Adding Vector Data**
+3. Adding vector data
+---------------------
 
-**Shapefiles**
+Shapefiles
+..........
 
 You’ve already added vector data to a project once, in the form of a shapefile.
 As we mentioned previously, a shapefile is a commonly used geographic file
@@ -110,7 +116,8 @@ ends in **.shp**, but the rest of the files are important too!
 .. image:: /static/training/beginner/qgis-inasafe/image74.*
    :align: center
 
-**Databases**
+Databases
+.........
 
 Shapefiles (and other types of files) are one way to store geographic data.
 You can also load a vector layer into QGIS from a database.
@@ -170,7 +177,8 @@ or could be shared between users over a network or even the internet.
 .. image:: /static/training/beginner/qgis-inasafe/image78.*
    :align: center
 
-**4. Symbology**
+4. Symbology
+------------
 
 The symbology of a layer is its visual appearance on the map.
 One of the basic strengths of GIS is that you have a dynamic visual
@@ -186,7 +194,8 @@ In other words, having proper symbology is not a luxury or just nice to have.
 In fact, it’s essential for you to use a GIS properly and produce maps and
 information that people will understand and be able to use.
 
-*4.1  Changing colors*
+4.1 Changing colors
+...................
 
 To change a layer’s symbology, we will open its :guilabel:`Layer Properties`.
 Let’s begin by changing the color of the *pemukiman* layer.
@@ -219,7 +228,8 @@ Let’s begin by changing the color of the *pemukiman* layer.
 .. image:: /static/training/beginner/qgis-inasafe/image82.*
    :align: center
 
-*4.2  Changing Symbol Structure*
+4.2 Changing symbol structure
+.............................
 
 This is good stuff so far, but there’s more to a layer’s symbology than just its
 color.
@@ -266,7 +276,8 @@ vegetation so as to make the map less visually cluttered.
 - Try changing the symbology of the pemukiman layer so that it also does not
   have outlines.
 
-*4.3 Scale-based Visibility*
+4.3 Scale-based visibility
+..........................
 
 Sometimes you will find that one of your layers is not suitable for a given
 scale.
@@ -315,7 +326,8 @@ Let’s enable scale-based rendering:
 .. image:: /static/training/beginner/qgis-inasafe/image89.*
    :align: center
 
-*4.4 Adding Symbol Layers*
+4.4 Adding symbol layers
+........................
 
 Now that you know how to change simple symbology for layers,
 the next step is to create more complex symbology.
@@ -420,7 +432,8 @@ but a symbol layer will always be called a symbol layer, to prevent confusion.
 .. image:: /static/training/beginner/qgis-inasafe/image100.*
    :align: center
 
-*4.5 Classified Symbology*
+4.5 Classified symbology
+........................
 
 Symbol levels also work for classified layers (i.e., layers having multiple
 symbols).
@@ -433,7 +446,8 @@ into each other.
 .. image:: /static/training/beginner/qgis-inasafe/image101.*
    :align: center
 
-*4.6 Symbol layer types*
+4.6 Symbol layer types
+......................
 
 In addition to setting fill colors and using predefined patterns, you can use
 different symbol layer types entirely.
@@ -445,7 +459,8 @@ Each type of vector (point, line and polygon) has its own set of symbol layer
 types.
 First we will look at the types available for points.
 
-**Vector Points**
+Vector points
+^^^^^^^^^^^^^
 
 - Change the symbol properties for the POI_Sleman_OSM layer:
 
@@ -470,7 +485,8 @@ First we will look at the types available for points.
 .. image:: /static/training/beginner/qgis-inasafe/image105.*
    :align: center
 
-**Vector Lines**
+Vector lines
+^^^^^^^^^^^^
 
 - To see the various symbology options for vector lines, open the **streets**
   :guilabel:`layer properties` and click on the dropdown box:
@@ -515,7 +531,8 @@ This is useful for some purposes, but not for others.
 If you prefer, you can change the symbol layer in question back to the way it
 was before.
 
-**Vector Polygons**
+Vector polygons
+^^^^^^^^^^^^^^^
 
 - Now let’s change the symbol layer type for the **pemukiman** layer.
   Take a look at the dropdown menu as you’ve done for the point and line
