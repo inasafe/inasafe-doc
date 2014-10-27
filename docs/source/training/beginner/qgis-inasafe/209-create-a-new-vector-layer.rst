@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _create-a-new-vector-layer:
+
 Module 9: Create a New Vector Layer
 ===================================
 

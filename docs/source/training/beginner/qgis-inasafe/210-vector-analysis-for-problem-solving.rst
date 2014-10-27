@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _vector-analysis-for-problem-solving:
+
 Module 10: Vector Analysis for Problem Solving
 ==============================================
 
