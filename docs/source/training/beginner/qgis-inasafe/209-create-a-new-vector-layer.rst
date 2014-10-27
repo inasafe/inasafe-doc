@@ -2,14 +2,14 @@
 
 ..  _create-a-new-vector-layer:
 
-Module 9: Create a New Vector Layer
-===================================
+Module 9: Creating Vector Layers
+================================
 
 **Learning Objectives**
 
-- Add a raster layer for digitizing
+- Add a raster layer for digitising
 - Create new vector features (polygons, lines and points)
-- Digitize a new vector layer by tracing the raster layer, considering topology
+- Digitise new vectors  by tracing a raster layer, considering topology
 - Georeference an image
 
 Creating a map using data that already exists is only the beginning.
@@ -18,7 +18,8 @@ JOSM.
 In this chapter, we will discuss how to edit existing vector layers in QGIS,
 and how to create an entirely new dataset.
 
-**1. The Layer Creation Dialog**
+1. The layer creation dialog
+----------------------------
 
 Before you can add new vector data, you need a vector dataset (a layer) to
 add it to.
@@ -26,68 +27,73 @@ In our case, we’ll begin by creating a new data layer,
 and then we’ll add features to it.
 First, we must define our dataset.
 
-- :guilabel:`Create a new project` in QGIS, by clicking on the
-  :guilabel:`New Project` icon.
+1. Create a new project in QGIS by clicking on the
+   :guilabel:`New Project` icon.
 
 .. image:: /static/training/beginner/qgis-inasafe/image172.*
    :align: center
 
-- Go to :menuselection:`Layer -> New -> New Shapefile Layer`.
-  You’ll be presented with the following dialog:
+2. Go to :menuselection:`Layer ‣ New ‣ New Shapefile Layer`.
+   You’ll be presented with the following dialog:
 
 .. image:: /static/training/beginner/qgis-inasafe/image173.*
    :align: center
 
-.. note:: At this point we must decide what kind of dataset we want to create.
-   Remember that a data layer can only contain features of points, lines,
-   or polygons - never a mix.
-   So we must define here, when we create the layer,
-   what type of data it will contain.
+At this point we must decide what kind of dataset we want to create.
+Remember that a data layer can only contain features of points, lines,
+or polygons - never a mix.
+When we create the layer, we must define
+what type of data it will contain.
 
 Since polygons are made up of points and lines, let’s jump into polygons.
 Once you’ve mastered this, creating a point or a line layer should be easy!
 
-- Click on the :guilabel:`Polygon` button :
+3. Check the box next to:guilabel:`Polygon`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image174.*
    :align: center
 
-- We’ll specify the Coordinate Reference System (CRS) in the next box.
-  By default the box will contain the CRS of the project, which for us will
-  be WGS84.
-  This is a widely used and very useful CRS, so let’s stick with it!
+4. We’ll specify the Coordinate Reference System (CRS) in the next box.
+   By default the box will contain the CRS of the project, which for us will
+   be WGS84.
+   This is a widely used and very useful CRS, so let’s stick with it!
 
 .. image:: /static/training/beginner/qgis-inasafe/image175.*
    :align: center
 
-- When we create our new layer, the attribute table will only have one
-  column by default - **id**.
-  This attribute contains a unique id number for every feature.
-  We can add additional fields to the attribute table now,
-  when we create the layer.
-  Let’s add a name field.
-- Type :kbd:`nama` into the box next to Name.
-  The settings should match those shown here:
+5. When we create our new layer, the attribute table will only have one
+   column by default - **id**.
+   This attribute contains a unique id number for every feature.
+   We can add additional fields to the attribute table now,
+   when we create the layer.
+   Let’s add a name field.
+
+6. Type :kbd:`nama` into the box next to Name.
+   The settings should match those shown here:
 
 .. image:: /static/training/beginner/qgis-inasafe/image176.*
    :align: center
 
-- Click the :guilabel:`Add` to attributes list button.
-- Your attributes list should now look like this.
+7. Click the :guilabel:`Add to attributes list` button.
+
+Your attributes list should now look like this.
 
 .. image:: /static/training/beginner/qgis-inasafe/image177.*
    :align: center
 
-- Click :guilabel:`OK`.
-  A save dialog will appear.
-- Navigate to a directory of your choosing.
-- Save your new layer as :kbd:`gedung_kampus.shp`.
+8. Click :guilabel:`OK`.
+   A save dialog will appear.
 
-The new layer should appear in your Layers list.
+9. Navigate to a directory of your choosing.
 
-**2. Data sources**
+10. Save the new layer as :kbd:`gedung_kampus.shp`.
 
-When you create new data, it should obviously represent objects that really
+The new layer should appear in your Layers panel.
+
+2. Data sources
+---------------
+
+When you create new data, it should represent objects that really
 exist on the ground.
 We have already learned of numerous ways to collect data using OpenStreetMap
 tools.
@@ -102,59 +108,68 @@ In this example, we will once again turn to aerial imagery,
 but instead of using Bing, we will use a raster image provided in the
 tutorial directory.
 
-- Click on the :guilabel:`Add Raster Layer` button:
+11. Click on the :guilabel:`Add Raster Layer` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image147.*
    :align: center
 
-- Navigate to :file:`../qgis/Sleman/`.
-- Select the file **UGM.tif**.
-- Click :guilabel:`Open`.
-  An image will load into your map.
-- Find the new image in the Layers list.
-- :guilabel:`Click and drag` it to the bottom of the list so that it is below
-  the vector layer you created in the previous section.
+12. Navigate to :file:`/qgis/Sleman/`.
+
+13. Select the file **UGM.tif**.
+
+14. Click :guilabel:`Open`.
+    An image will load into your map.
+
+15. Find the new entry in the Layers panel.
+
+16. Drag it to the bottom of the list so that it is below
+    the vector layer you created in the previous section.
 
 .. image:: /static/training/beginner/qgis-inasafe/image178.*
    :align: center
 
-- Go to :menuselection:`Project -> Project Properties` and :guilabel:`enable
-  “on the fly”` transformation.
-- Make sure that “WGS 84” is selected as the CRS, and click :guilabel:`OK`.
+17. Go to :menuselection:`Project ‣ Project Properties` and enable
+    “on the fly”` transformation.
+
+18. Make sure that “WGS 84” is selected as the CRS, and click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image179.*
    :align: center
 
-- Right click on the :guilabel:`UGM layer`, and click
-  :guilabel:`Zoom to Layer Extent`
-- Zoom in to the center of the raster image.
-  We will be digitizing three areas:
+19. Right-click on the :guilabel:`UGM` layer and click
+    :guilabel:`Zoom to Layer Extent`
+
+20. Zoom in to the center of the raster image.
+    We will be digitising three areas:
 
 .. image:: /static/training/beginner/qgis-inasafe/image180.*
    :align: center
 
-**3. Digitizing**
+3. Digitising
+-------------
 
-Digitizing, as you might have guessed, is the art (or science) of creating
+Digitising, as you might have guessed, is the art (or science) of creating
 digital vector data from another source, such as a raster image.
-In order to begin digitizing, we must first enter Edit mode.
+In order to begin digitising, we must first enter edit mode.
 GIS software commonly requires a separate mode for editing,
 to prevent users from accidentally editing or deleting important data.
 Edit mode is switched on or off individually for each layer.
 
-Let’s enter edit mode for the *gedung_campus* layer:
+Let’s enter edit mode for the :guilabel:`gedung_campus` layer:
 
-- :guilabel:`Select` **gedung_campus** in the Layer list.
-- Click on the :guilabel:`Toggle Editing` button:
+21. Select :guilabel:`gedung_campus` in the Layers panel.
+
+22. Click on the :guilabel:`Toggle Editing` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image35.*
    :align: center
 
-- If you can’t find this button, check that the Digitizing toolbar is
-  enabled.
-  There should be a check mark next to the
-  :menuselection:`View -> Toolbars -> Digitizing` menu entry.
-- Once you are in edit mode, the digitizing tools will become active:
+23. If you can’t find this button, ensure that the Digitising toolbar is
+    enabled.
+    There should be a check mark next to the
+    :menuselection:`View ‣ Toolbars ‣ Digitizing` menu entry.
+
+24. Once you are in edit mode, the digitising tools will become active:
 
 .. image:: /static/training/beginner/qgis-inasafe/image181.*
    :align: center
@@ -163,7 +178,7 @@ From left to right on the image above, they are:
 
 - **Toggle Edit**: activates / deactivates edit mode.
 - **Save Edits**: saves changes made to the layer.
-- **Add Feature**: start digitizing a new feature.
+- **Add Feature**: start digitising a new feature.
 - **Move Feature(s)**: move an entire feature around.
 - **Node Tool**: move only one part of a feature.
 - **Delete Selected**: delete the selected feature (only active if a feature is
@@ -177,46 +192,49 @@ From left to right on the image above, they are:
 
 We want to add a new feature.
 
-- Click on the :guilabel:`Add Feature` button to start digitizing:
+25. Click on the :guilabel:`Add Feature` button to start digitising:
 
 .. image:: /static/training/beginner/qgis-inasafe/image182.*
    :align: center
 
-- You’ll notice that your mouse cursor becomes a crosshair.
-  This allows you to more accurately place the points you’ll be digitizing.
-  Remember that even as you’re using the digitizing tool,
-  you can zoom in and out on your map by rolling the mouse wheel,
-  and you can pan around by holding down the mouse wheel and dragging around
-  in the map.
+You’ll notice that your mouse cursor becomes a crosshair.
+This allows you to more accurately place the points you’ll be digitising.
+Remember that even as you’re using the digitising tool,
+you can zoom in and out on your map by rolling the mouse wheel,
+and you can pan around by holding down the mouse wheel and dragging around
+in the map.
 
-The first feature you’ll digitize is GPS field:
+The first feature you’ll digitise is a field (called "GSP Field"):
 
 .. image:: /static/training/beginner/qgis-inasafe/image183.*
    :align: center
 
-- Start by clicking on a point somewhere along the edge of the field.
-- Place more points by clicking further along the edge,
-  until the shape you’re drawing completely covers the field.
-  This is very similar to drawing a polygon in JOSM.
-- To place your last point, :guilabel:`right-click` where you want it to be.
-  This will finalize the feature and show you the Attributes dialog.
-- Fill in the values as shown here:
+26. Start by clicking on a point somewhere along the edge of the field.
+
+27. Place more points by clicking further along the edge,
+    until the shape you’re drawing completely covers the field.
+    This is very similar to drawing a polygon in JOSM.
+
+28. To place the last point, right-click where you want it to be.
+    This will finalise the feature and bring up the Attributes dialog.
+
+29. Fill in the values as shown here:
 
 .. image:: /static/training/beginner/qgis-inasafe/image184.*
    :align: center
 
-- Click :guilabel:`OK`. You’ve created a new feature!
+30. Click :guilabel:`OK`. You’ve created a new feature!
 
-.. note:: Remember, if you’ve make a mistake while digitizing a feature,
-   you can always edit it later.
-   Simply finish digitizing the feature and then follow these steps:
+If you make a mistake while digitising a feature,
+you can always edit it later.
+Simply finish digitising the feature and then follow these steps:
 
-- Select the feature with the Select :guilabel:`Single Feature` tool:
+- Select the feature with the :guilabel:`Select Single Feature` tool:
 
 .. image:: /static/training/beginner/qgis-inasafe/image185.*
    :align: center
 
-Then use one of these tools to edit the feature:
+- Then use one of these tools to edit the feature:
 
 +----------------------------------------------------------------+--------------------------------------+-------------------------------------------------------+
 |.. image:: /static/training/beginner/qgis-inasafe/image186.*    | Move feature(s) tools                | Move the entire feature(s)                            |
@@ -225,45 +243,46 @@ Then use one of these tools to edit the feature:
 +----------------------------------------------------------------+--------------------------------------+-------------------------------------------------------+
 |.. image:: /static/training/beginner/qgis-inasafe/image188.*    | Delete selected                      | get rid of the feature entirely so you can try again  |
 +----------------------------------------------------------------+--------------------------------------+-------------------------------------------------------+
-| Edit > Undo or Ctrl + Z on keyboard                            | Undo mistakes                        |                                                       |
+| Go to Edit ‣ Undo or press :kbd:`Ctrl+Z` on keyboard           | Undo mistakes                        |                                                       |
 +----------------------------------------------------------------+--------------------------------------+-------------------------------------------------------+
 
 Now try it on your own:
 
-- Digitize the school itself and the upper field.
-  Use this image to assist you:
+31. Digitise the school itself and the upper field.
+    Use this image to assist you:
 
 .. image:: /static/training/beginner/qgis-inasafe/image189.*
    :align: center
 
-- Remember that each new feature needs to have a unique id value!
+32. Remember that each new feature needs to have a unique id value!
 
 When you are finished adding features to a layer, you must save the changes
 to that layer.
 
-- Click on the :guilabel:`Toggle Editing` button.
+33. Click on the :guilabel:`Toggle Editing` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image35.*
    :align: center
 
-- You will be asked to save your edits.
-  Click :guilabel:`Save`
+34. You will be asked to save your edits.
+    Click :guilabel:`Save`
 
 .. image:: /static/training/beginner/qgis-inasafe/image190.*
    :align: center
 
-.. note:: Now you know how to create polygon features!
-   Creating points and line layers is just as easy - you simply need to
-   define the type of layer when you create it, and of course you can only
-   create points in point layers and lines in line layers.
+Now you know how to create polygon features!
+Creating points and line layers is just as easy - you simply need to
+define the type of layer when you create it, and of course you can only
+create points in point layers and lines in line layers.
 
-**4. Georeferencing**
+4. Georeferencing
+-----------------
 
-In the previous section we digitized a raster image, thus creating vector
+In the previous section we digitised a raster image, thus creating vector
 data.
 This is essentially the same process as when we use Bing imagery in JOSM to
 add to OpenStreetMap.
-And in both of these cases, the imagery that we use is already
+In both of these cases, the imagery that we use is already
 **georeferenced** - that is, it is correctly placed in its proper location.
 
 When an image is georeferenced, it is stretched in different ways so that
@@ -275,14 +294,15 @@ imagery offset.
 
 What if you have a map that is not georeferenced?
 What if you have a paper map given to you by a government agency?
-How can you digitize it?
+How can you digitise it?
 
 The first step is to turn your paper map into a digital image that you can
 manipulate with your computer.
 You can do this with a scanner (or possibly a digital camera),
 although doing so is beyond the scope of this chapter.
 
-*4.1 Georeference an Image*
+4.1 Georeferencing an image
+...........................
 
 Now we will learn how to georeference an image in QGIS so that is correctly
 located on Earth.
@@ -291,21 +311,23 @@ We will be using a map provided in the tutorial files, which looks like this:
 .. image:: /static/training/beginner/qgis-inasafe/image191.*
    :align: center
 
-- Start a new QGIS project.
-  Save your previous work if you like.
-- Go to :menuselection:`Raster ‣ Georeferencer ‣ Georeferencer`.
+35. Start a new QGIS project.
+    Save your previous work if you like.
+
+36. Go to :menuselection:`Raster ‣ Georeferencer ‣ Georeferencer`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image192.*
    :align: center
 
-- Click the :guilabel:`Open raster` button.
+37. Click the :guilabel:`Open raster` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image193.*
    :align: center
 
-- Find the *file peta_krb_merapi_2002.jpg*, which is located in the the folder
-  :file:`../qgis/Sleman/Merapi`.  Click :guilabel:`Open`
-- Select :guilabel:`WGS 84` when prompted and click :guilabel:`OK`.
+38. Find the file :file:`peta_krb_merapi_2002.jpg`, which is located in the the folder
+    :file:`qgis/Sleman/Merapi`. Click :guilabel:`Open`.
+
+39. Select :guilabel:`WGS 84` when prompted and click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image194.*
    :align: center
@@ -319,96 +341,104 @@ So, to georeference this image, we will create four GCPs,
 one at each corner of the map, and we will turn our jpeg file into a geotiff,
 a georeferenced image.
 
-- :guilabel:`Zoom in` to the upper-left corner of the map by using the zoom
-  button.
+40. Zoom in to the upper-left corner of the map.
 
 .. image:: /static/training/beginner/qgis-inasafe/image195.*
    :align: center
 
-- Click the :guilabel:`Add point` button.
+41. Click the :guilabel:`Add point` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image196.*
    :align: center
 
-- :guilabel:`Click on` the very top left point of the map, right where the
-   top border of the map meets the left border.
-- A box will pop up requesting the x and y coordinates of the point you just
-  clicked.
-  Luckily, the coordinates are written in blue on the map.
-  The longitude (x coordinate) is 110° 15’ 00” E and the latitude (y
-  coordinate) is 7° 29’ 47” S.
-  We can enter the coordinates in the box as follows.
-  Remember that south and west coordinates will be negative numbers.
+42. Click on the very top left point of the map, right where the
+    top border of the map meets the left border.
+
+43. A box will pop up requesting the x and y coordinates of the point you just
+    clicked.
+    The coordinates are written in blue on the map.
+    The longitude (x coordinate) is 110° 15’ 00” E and the latitude (y
+    coordinate) is 7° 29’ 47” S.
+    We can enter the coordinates in the box as follows.
+    Remember that south and west coordinates will be negative numbers.
 
 .. image:: /static/training/beginner/qgis-inasafe/image197.*
    :align: center
 
-- Click :guilabel:`OK`
-- You will see a red point appear showing the location of your control
-  point, and an entry in the table at the bottom.
-- Repeat this process, creating ground control points at each of the four
-  corners of the map.
-  Remember to enter the longitude and latitude that is written at each corner.
-  When you are finished, you should have four GCPs and your table will look
-  like this:
+44. Click :guilabel:`OK`.
+
+45. You will see a red point appear showing the location of your control
+    point, and an entry in the table at the bottom.
+
+46. Repeat this process, creating ground control points at each of the four
+    corners of the map.
+    Remember to enter the longitude and latitude that is written at each corner.
+    When you are finished, you should have four GCPs and your table will look
+    like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image198.*
    :align: center
 
-- Lastly we will adjust the settings and then create our output file.
-- Click on the :guilabel:`Transformation settings` button.
+Lastly we will adjust the settings and then create our output file.
+
+47. Click on the :guilabel:`Transformation settings` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image199.*
    :align: center
 
-- Next to :guilabel:`Transformation type` select :guilabel:`Linear`
-- Provide a filename for the output raster.
-  The file type will be **.tif**.
-- Check the box next to **Load in QGIS when done**.
-  It should look like this:
+48. Next to :guilabel:`Transformation type` select :guilabel:`Linear`.
+
+49. Provide a filename for the output raster.
+    The file type will be :file:`.tif`.
+
+50. Check the box next to :guilabel:`Load in QGIS when done`.
+    It should look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image200.*
    :align: center
 
-- Click :guilabel:`OK`.
-- Then look at the table.
+51. Click :guilabel:`OK` and look at the table.
 
 .. image:: /static/training/beginner/qgis-inasafe/image201.*
    :align: center
 
-- Make sure the residual value is near zero to improve accuracy.
-- Now we are ready to produce the georeferenced image file.
-  Click on the :guilabel:`Start georeferencing` button.
+52. Make sure the residual value is near zero to improve accuracy.
+
+53. Now we are ready to produce the georeferenced image file.
+    Click on the :guilabel:`Start georeferencing` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image202.*
    :align: center
 
-- If you are asked to select the layer’s coordinate system,
-  :guilabel:`choose` **WGS 84**.
-- Go to :menuselection:`Project ‣ Project Properties` and make sure
-  that on the fly transformation is enabled.
+54. If you are asked to select the layer’s coordinate system,
+    choose :guilabel:`WGS 84`.
+
+55. Go to :menuselection:`Project ‣ Project Properties` and make sure
+    that on the fly transformation is enabled.
 
 .. image:: /static/training/beginner/qgis-inasafe/image203.*
    :align: center
 
-- The output **.tif** file will be created and automatically added to your
-  project.
-  If you hover over the image, you should see coordinates at the bottom of
-  QGIS which are close the the coordinates you entered when placing the GCPs.
+56. The output file will be created and automatically added to 
+    your project.
+    If you hover over the image, you should see coordinates at the bottom of
+    QGIS which are close the the coordinates you entered when placing the GCPs.
 
 .. image:: /static/training/beginner/qgis-inasafe/image204.*
    :align: center
 
-- Another way to see that the image is correctly placed is by adding a layer
-  with the OpenLayers plugin.
-  Here we have added Bing satellite imagery, and made our new geotiff
-  transparent to see Merapi in the background.
+Another way to see that the image is correctly placed is by adding a layer
+with the OpenLayers plugin.
+Here we have added Bing satellite imagery, and made our new geotiff
+transparent to see Merapi in the background.
 
 .. image:: /static/training/beginner/qgis-inasafe/image205.*
    :align: center
 
-Knowing how to georeference is important when you want to digitize from a
+Knowing how to georeference is important when you want to digitise from a
 paper map or an image that is not already georeferenced.
 Once you have georeferenced an image like this, you can apply the same
-digitization techniques that we learned previously in this chapter to create
+digitisation techniques that we learned previously in this chapter to create
 vector shapefiles that can be used in QGIS and |project_name|.
+
+:ref:`Go to next module --> <vector-analysis-for-problem-solving>`

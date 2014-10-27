@@ -94,7 +94,7 @@ The term that we use for this is reprojecting 'on the fly'.
 .. image:: /static/training/beginner/qgis-inasafe/image62.*
    :align: center
 
-6. Type :kbd:`NSIDC`the word global into the Filter field. One CRS 
+6. Type :kbd:`NSIDC` into the Filter field. One CRS 
    ("NSIDC EASE-Grid Global") will appear in the list below.
 
 .. image:: /static/training/beginner/qgis-inasafe/image63.*
