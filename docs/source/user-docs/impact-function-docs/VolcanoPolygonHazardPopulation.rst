@@ -29,7 +29,7 @@ A hazard vector layer can be polygon or point. If polygon, it must have "KRB" at
 An exposure raster layer where each cell represent population count.
 
 **Output**: 
-Vector layer contains population affected and the minimum needs based on the population affected.
+Vector layer contains people affected and the minimum needs based on the number of people affected.
 
 Details
 -------
