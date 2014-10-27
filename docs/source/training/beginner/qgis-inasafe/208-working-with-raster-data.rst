@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _working-with-raster-data:
+
 Module 8: Working with Raster Data
 ==================================
 
