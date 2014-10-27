@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _labels-and-classifications:
+
 Module 7: Labels and Classification
 ===================================
 
@@ -315,3 +317,6 @@ positive numbers, sych as land area, is known as ratio classification.
 
 .. image:: /static/training/beginner/qgis-inasafe/image146.*
    :align: center
+
+
+:ref:`Go to next module --> <working-with-raster-data>`

@@ -264,8 +264,10 @@ The status bar show shows the longitude and latitude of your mouse cursor.
 This may not all be clear right now, but as you progress in your knowledge
 of GIS is will make more and more sense.
 
-4. Add vector layer
--------------------
+..  _adding-vector-layer:
+
+4. Adding a vector layer
+------------------------
 Now we will add an additional layer containing roads to our project.
 
 23. Click on the :guilabel:`Add Vector Layer` button on the toolbar.
@@ -321,8 +323,8 @@ The important thing for now is to start getting familiar with QGIS.
 |                                                             |                                      | layer                            |
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
 
-6. Navigate the map
--------------------
+6. Navigating the map
+---------------------
 Before we examine the attributes of individual features,
 let’s take a quick look at how to navigate the map.
 The main controls for moving the map around and zooming in and out are by
