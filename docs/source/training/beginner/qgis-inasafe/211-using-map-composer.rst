@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _using-map-composer:
+
 Module 11: Using Map Composer
 =============================
 
@@ -310,3 +312,6 @@ symbology represents.
 
 .. image:: /static/training/beginner/qgis-inasafe/image277.*
    :align: center
+
+
+:ref:`Go to next module --> <understanding-inasafe>` 
