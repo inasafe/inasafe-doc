@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _getting-support:
+
 Module 13: Getting Support
 ==========================
 

@@ -1,5 +1,7 @@
 .. image:: /static/training/beginner/qgis-inasafe/image7.*
 
+..  _understanding-inasafe:
+
 Module 12: Understanding |project_name|
 =======================================
 
@@ -327,3 +329,6 @@ To save the project:
 
 .. image:: /static/training/beginner/qgis-inasafe/image298.*
    :align: center
+
+
+:ref:`Go to next module --> <getting-support>` 
