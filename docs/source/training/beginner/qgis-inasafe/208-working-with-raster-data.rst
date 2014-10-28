@@ -68,6 +68,8 @@ The raster should display nicely underneath your vector data layers.
 .. image:: /static/training/beginner/qgis-inasafe/image150.*
    :align: center
 
+..  _changing-raster-symbology:
+
 2. Changing raster symbology
 ----------------------------
 

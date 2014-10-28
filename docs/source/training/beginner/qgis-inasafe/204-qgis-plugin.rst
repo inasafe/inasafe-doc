@@ -43,6 +43,8 @@ Some plugins are already downloaded and available.
 .. image:: /static/training/beginner/qgis-inasafe/image44.*
    :align: center
 
+..  _installing-plugins:
+
 2. Installing plugins
 ---------------------
 4. There are many more plugins, but they must first be downloaded.  To download 
