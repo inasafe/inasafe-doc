@@ -112,15 +112,10 @@ simple: if you make a map of your town and we make a map of ours,
 we can share those maps on a common platform. With enough people
 contributing, we can collect data throughout the world.
 
-Collecting Spatial Data with OSM Intermediate Level Module is step-by-step
-guide designed to help anyone who wants to increase their skill for editing
-OSM data.
-This module might look difficult, especially for those who start knowing OSM.
-So, we recommend that for those people to start reading Collecting Spatial
-Data with OSM Beginner Level Module first before you read this module.
+Collecting Spatial Data using OSM Intermediate Level is a step-by-step course
+designed to help those who wish to carry on from the beginner tutorial and
+explore OSM in more detail. We recommend reviewing Collecting Spatial Data
+using OSM Beginner Level prior to this unit.
 
-This guide is made for those who want to increase their technical skill
-during editing OSM data, it also shows how to do geometry validation to
-reduce common mistakes that might happen during editing process.
 
-We hope it can be useful.
+:ref:`Go to first module --> <advanced-editing>`
