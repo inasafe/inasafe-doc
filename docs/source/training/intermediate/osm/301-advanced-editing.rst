@@ -328,8 +328,8 @@ the object is.
 .. image:: /static/training/intermediate/osm/image32b.*
    :align: center
 
-5. Click :guilabel:`OK`. The object will change colors and will now appear as a
-   building, but with a courtyard.
+5. Click :guilabel:`OK`. The object will change colours and will now appear as 
+   a building, but with a courtyard.
 
 The data behind the relation in our example is visible on OpenStreetMap: You
 can see this multipologyon on OSM by going to
