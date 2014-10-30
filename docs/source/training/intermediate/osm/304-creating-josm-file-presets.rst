@@ -1,6 +1,6 @@
-.. _creating-josm-file-presets:
-
 .. image:: /static/training/intermediate/osm/image6.*
+
+.. _creating-josm-file-presets:
 
 Module 4: Creating JOSM File Presets
 ====================================
@@ -476,3 +476,6 @@ Now let’s open our presets file in JOSM and see how it looks!
 
 .. image:: /static/training/intermediate/osm/image103.*
    :align: center
+
+
+:ref:`Go to next module --> <using-private-data-store>`

@@ -1,5 +1,7 @@
 .. image:: /static/training/intermediate/osm/image6.*
 
+..  _dealing-with-conflicts:
+
 Module 3: Dealing With Conflicts
 ================================
 
@@ -174,3 +176,6 @@ background is made up of diagonal lines instead of being solid black.
 
 .. image:: /static/training/intermediate/osm/image87.*
    :align: center 
+
+
+:ref:`Go to next module --> <creating-josm-file-presets>`

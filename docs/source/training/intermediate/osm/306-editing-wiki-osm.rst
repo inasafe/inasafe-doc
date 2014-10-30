@@ -1,5 +1,7 @@
 .. image:: /static/training/intermediate/osm/image6.*
 
+..  _editing-wiki-osm:
+
 Module 6: Editing Wiki OpenStreetMap
 ====================================
 

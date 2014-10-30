@@ -1,5 +1,6 @@
 .. image:: /static/training/intermediate/osm/image6.*
 
+..  _using-private-data-store:
 
 Module 5: Using Private Data Store
 ==================================
@@ -341,3 +342,6 @@ A lot of Data
 When you login to the datastore.hotosm.org you will have a choice to do some
 tag search.
 This is possible to you to search certain tag.
+
+
+:ref:`Go to next module --> <editing-wiki-osm>`
