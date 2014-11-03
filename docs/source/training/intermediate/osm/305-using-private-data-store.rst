@@ -2,30 +2,32 @@
 
 ..  _using-private-data-store:
 
-Module 5: Using Private Data Store
-==================================
+Module 5: Using the Separate Data Store
+=======================================
 
 **Learning Objectives**
 
-- Understand the functions of the SDS
-- Understand what data should be kept publicly and what needs to be private
+- Understand the functions of the Separate Data Store (SDS)
+- Understand what data should be kept publicly and what should be private
 - Install SDS plugin in JOSM
 - Use SDS presets
 - Use SDS plugin for selecting public and private data
 - Access online datastore
 
 OpenStreetMap data is open and available to anyone who would like to access it.
-However, there may be times when you want to use OpenStreetMap to collect data,
+However, there may be times when you want to use OSM to collect data,
 but you would like to keep some attributes stored in a private database.
-For this, HOT has developed an additional tool for JOSM known as the SDS
-(Separate Data Store).
+For this purpose, HOT has developed an tool for JOSM known as the
+Separate Data Store.
 The SDS allows you to create maps and add data into JOSM the same as always,
 but when you upload your edits, public data will be saved to the
-OpenStreetMap database, and private data will be saved separately to the HOT
-Datastore.
+OpenStreetMap database, and private data will be saved separately to your 
+private data server.
 
 .. image:: /static/training/intermediate/osm/image104.*
    :align: center
+
+--------------
 
 *How the SDS Plugin works with JOSM*
 
@@ -39,60 +41,43 @@ personal health care data, or the location of gold mines.
          your own private datastore server please contact us
          (team.id[at]hotosm.org).
 
-**1. Installing the SDS plugin**
+--------------
 
-This plug-in allows private data to be streamlined into the private data
-store.
-The newest version of JOSM is required for the SDS plugin to run.
+1. Installing the SDS plugin
+----------------------------
+
+This plug-in allows private data to be diverted into the private data
+store, rather than being saved in the OSM database.
+A recent version of JOSM is required for the SDS plugin to run.
 (If you do not have a recent version of JOSM, download and install it from
-http://josm.openstreetmap.de/.
-If you cannot install the latest version, go to the Appendix to see how you
-can install this plug-in by source).
+http://josm.openstreetmap.de/.).
 
-- Open the preferences menu in JOSM and go to the plugins tab.
+1. Open the preferences menu in JOSM and go to the plugins tab.
 
 .. image:: /static/training/intermediate/osm/image105.*
    :align: center
 
-- Click :guilabel:`Download List` to ensure that all available plugins are
-  listed.
-- In the search box, type *sds*
+2. Click :guilabel:`Download List` to ensure that all available plugins are
+   listed.
+
+3. In the search box, type :kbd:`sds`.
 
 .. image:: /static/training/intermediate/osm/image106.*
    :align: center
 
-- Check the box next to the plugin to activate it. You will need to restart
-  JOSM.
-- If JOSM is open, restart it.
+4. Check the box next to the plugin to activate it. Click :guilabel:`OK`
+   to download and install. You will need to restart JOSM.
 
-**Installing SDS Plugin by Source**
-
-If you are unable to find the “sds” plugin on the Preferences menu,
-you may need to install it manually as described here:
-
-- Download the sds plugin by going to
-  http://kunden.geofabrik.de/03df698c95134f04949eb67ac7ba2195/ and clicking on
-  *sds.jar*
-- Click on the Start Menu and type *%APPDATA%* into the search box.
-  Click on the folder named *Roaming*
-
-.. image:: /static/training/intermediate/osm/image107.*
-   :align: center
-
-- In the window that opens, double-click on “JOSM” to open the JOSM program
-  files.
-- Double-click on the *plugins* folder to open it. Move the *sds.jar* file into
-  this folder.
-
-**2. Using the Plugin**
+2. Using the plugin
+-------------------
 
 Editing the map works just the same as before.
 The only difference is that when you upload changes,
 some tags will be automatically saved on the private datastore,
 and the rest will be saved directly onto OpenStreetMap.
 
-- After installing the plugin, the first time you download data you will be
-  asked for your HOT datastore username and password.
+5. After installing the plugin, the first time you download data you will be
+   asked for your HOT datastore username and password.
 
 .. image:: /static/training/intermediate/osm/image108.*
    :align: center
