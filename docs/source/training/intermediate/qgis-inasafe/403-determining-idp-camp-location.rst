@@ -1,5 +1,7 @@
 .. image:: /static/training/intermediate/qgis-inasafe/image7.*
 
+..  _determining-idp-camp-location:
+
 Module 3: Determining IDP Camp Location
 =======================================
 

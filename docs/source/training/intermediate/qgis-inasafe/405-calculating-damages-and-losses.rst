@@ -1,5 +1,7 @@
 .. image:: /static/training/intermediate/qgis-inasafe/image7.*
 
+..  _calculating-damages-and-losses:
+
 Module 5: Calculating Damages and Losses
 ========================================
 

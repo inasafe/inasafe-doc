@@ -1,5 +1,7 @@
 .. image:: /static/training/intermediate/qgis-inasafe/image7.*
 
+..  _preparing-data-and-keywords-for-inasafe:
+
 Module 2: Preparing Data and Keywords for |project_name|
 ========================================================
 
@@ -311,3 +313,6 @@ We’ve run a few scenarios, but what is next?
 In the next Modules we will use our QGIS skills to find the best evacuation
 routes for people to use in the case of the flood disaster,
 as well as examining appropriate places for IDP camps.
+
+
+:ref:`Go to next module --> <determining-idp-camp-location>`

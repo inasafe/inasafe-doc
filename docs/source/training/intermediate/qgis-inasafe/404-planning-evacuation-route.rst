@@ -1,5 +1,6 @@
 .. image:: /static/training/intermediate/qgis-inasafe/image7.*
 
+..  _planning-evacuation-route:
 
 Module 4: Planning Evacuation Route Based on Hazard Information
 ===============================================================
@@ -165,3 +166,6 @@ two points using the Road Graph plugin. Using this you can easily determine
 evacuation routes from various areas. Evacuation routes are important for
 contingency plans, and those living in threatened areas can be educated with
 the quickest and safest routes to take in the event of an emergency.
+
+
+:ref:`Go to next module --> <calculating-damages-and-losses>`
