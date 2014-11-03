@@ -81,7 +81,7 @@ Great! You’ve added some vector data to your map.
 
 
 1.2  Adding Raster Data
------------------------
+.......................
 
 Raster data has different characteristics than vector data.
 Raster data is composed by rows and columns which form small boxes (known as
