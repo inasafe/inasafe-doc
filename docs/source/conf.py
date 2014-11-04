@@ -100,6 +100,7 @@ rst_prolog = """
 
 rst_epilog = """
 .. |project_name| replace:: InaSAFE
+.. |osm| replace:: OpenStreetMap
 .. |AIFDR| replace:: AIFDR_
 .. _AIFDR: http://www.aifdr.org/
 .. |BNPB| replace:: BNPB_
