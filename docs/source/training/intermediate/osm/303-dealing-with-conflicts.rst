@@ -78,7 +78,7 @@ version on the server should remain.
 
 You might think, “of course my version is going to be better!”.
 And maybe you’re right.
-But think back to our example at the start of this chapter.
+But think back to our example at the start of this module.
 Perhaps while you were busy editing, another mapper added a lot of
 information to one of the nodes in your data set.
 If you choose your version over their version, you will lose all of that

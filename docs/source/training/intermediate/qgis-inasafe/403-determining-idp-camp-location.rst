@@ -21,7 +21,7 @@ land areas appropriate for IDP camps near Merapi.
 
 In this module we will take a closer look at the tools we use to perform this
 GIS analysis, but the process will remain the same.
-As with any proper GIS inquiry, we will follow these steps:
+As with any proper GIS enquiry, we will follow these steps:
 
 1. Define the problem
 2. Obtain data

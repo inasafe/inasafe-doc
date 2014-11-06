@@ -295,7 +295,7 @@ table and then use them to add new columns to the file.
 
 37. Now we will perform an operation to join the layer 
     :guilabel:`Batas_Desa_Sirahan` with
-    :guilabel:`BNG_Damage`. Right click on the :guilabel:`Batas_Desa_Sirahan` 
+    :guilabel:`BNG_Damage`. Right-click on the :guilabel:`Batas_Desa_Sirahan` 
     layer and open the Properties window.
 
 38. Go to the Joins tab:

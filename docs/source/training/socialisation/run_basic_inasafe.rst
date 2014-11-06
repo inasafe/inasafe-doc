@@ -85,7 +85,7 @@ details of this report are explained below.
 
 **People:** |project_name| shows approximately how many people are located
 in water deeper than one metre. It is assumed that all of these people will
-need to evacuate their homes.  The threshold of one metre can be changed
+need to evacuate their homes. The threshold of one metre can be changed
 (see Changing threshold section below).
 
 **Needs per week** is calculated using the above number of evacuated people to
@@ -297,3 +297,5 @@ You may try running this scenario again with a water threshold of 0.8 metres.
 
 27. Click :guilabel:`Print` and save PDFs the same way as before.
 
+
+:ref:`Go to next module --> <inasafe-in-more-detail>`

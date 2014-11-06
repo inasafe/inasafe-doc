@@ -21,7 +21,7 @@ For this purpose, HOT has developed an tool for JOSM known as the
 Separate Data Store.
 The SDS allows you to create maps and add data into JOSM the same as always,
 but when you upload your edits, public data will be saved to the
-OpenStreetMap database, and private data will be saved separately to your 
+OSM database, and private data will be saved separately to your 
 private data server.
 
 .. image:: /static/training/intermediate/osm/image104.*
@@ -33,7 +33,7 @@ private data server.
 
 Data uploaded to the private HOT Datastore is only accessible to people who
 have an account at datastore.hotosm.org.
-This chapter is designed for people who already have an account and desire to
+This module is designed for people who already have an account and desire to
 store private geospatial information, such as household income,
 personal health care data, or the location of gold mines.
 
@@ -74,7 +74,7 @@ http://josm.openstreetmap.de/.).
 Editing the map works just the same as before.
 The only difference is that when you upload changes,
 some tags will be automatically saved on the private datastore,
-and the rest will be saved directly onto OpenStreetMap.
+and the rest will be saved directly onto OSM.
 
 5. After installing the plugin, the first time you download data you will be
    asked for your HOT datastore username and password.
@@ -90,10 +90,10 @@ and the rest will be saved directly onto OpenStreetMap.
 
 **3. How It Works**
 
-How does the plugin know which data you want to store on OpenStreetMap and
+How does the plugin know which data you want to store on OSM and
 which data you want to store publicly?
 Quite simply, it knows because of the tags.
-Normal tags go to OpenStreetMap, as always, but you can use new tags with a
+Normal tags go to OSM, as always, but you can use new tags with a
 special prefix that will be sent to the private datastore.
 By default, any tag that begins with the prefix **“hot:”** will go to the
 private datastore.
@@ -315,7 +315,7 @@ not be published.
 
 *How much users can use the same account? How if I would like to add users?*
 
-There is no limit for users account. At the moment users access organized by
+There is no limit for users account. At the moment users access organised by
 HOT.
 
 *How much data that I can save in my private server?*

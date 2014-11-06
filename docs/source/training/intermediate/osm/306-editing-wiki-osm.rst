@@ -18,7 +18,7 @@ Because of this it is necessary to have a way to communicate with each
 other, whether it be to organise social mapping events,
 to discuss different projects related to OSM and/or to create standards for
 mapping processes.
-The main avenue for mappers to do this is through the OpenStreetMap wiki,
+The main avenue for mappers to do this is through the OSM wiki,
 a website where users can create different web pages about different topics
 and in different languages.
 To see the OSM wiki, visit http://wiki.openstreetmap.org
@@ -111,7 +111,7 @@ This is a great place to start learning the basics of editing a wiki page.
 .. image:: /static/training/intermediate/osm/image139.*
    :align: center
 
-6. Right now the page is empty.  Click on :guilabel:`edit this page` to add
+6. Right now the page is empty. Click on :guilabel:`edit this page` to add
    something to it.
 
 7. We can type anything into the editor to add information to the page.
@@ -138,7 +138,7 @@ This is a great place to start learning the basics of editing a wiki page.
 .. image:: /static/training/intermediate/osm/image142.*
    :align: center
 
-If you understood the previous chapter on XML, you will remember that we used
+If you understood the previous module on XML, you will remember that we used
 **elements** which have opening tags and closing tags.
 We will do something similar on the wiki, using special characters to
 surround the text we want to appear a certain way.
@@ -188,11 +188,11 @@ different elements.
 
 It’s a good idea to practise before trying to create an official wiki page
 that you want others to see, so first let’s create a sub-page under your user
-page where you can play around and practice editing.
+page where you can play around and practise editing.
 
 13. Create a new wiki page by typing in the link to the page that you
     want and then creating a new page.
-    For now, let’s create a new subpage that we can use to practice our wiki
+    For now, let’s create a new subpage that we can use to practise our wiki
     editing.
     In your web browser go to the following address, replacing “MapJeff” with
     your own username:
@@ -468,7 +468,7 @@ Uploading files
    :align: center
 
 18. Optionally, you may enter a new filename for the file, a summary,
-    and a license.
+    and a licence.
 
 19. After selecting the file, click :guilabel:`Upload file` at the bottom of the page.
     A page like this will appear, with your file shown:
@@ -512,7 +512,7 @@ switch languages.
 However, this is only available for pages that have been translated,
 and that include a special tag at the top - {{Languages|page_name}}
 
-When developing the OpenStreetMap community in your country, it is very useful
+When developing the OSM community in your country, it is very useful
 for key wiki pages to be translated into your language.
 Adding translated pages is easy, as we will see here.
 

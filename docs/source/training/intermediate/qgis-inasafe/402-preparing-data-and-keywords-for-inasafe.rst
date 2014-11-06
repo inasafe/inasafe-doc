@@ -40,7 +40,7 @@ an event scenario must be mapped over the area of interest.
 This means that hazard data must be geographic - it must have location.
 We have already looked at hazard data for the 2007 Jakarta flood and the
 Lembang earthquake.
-These hazard layers were produced from scientific modeling conducted by
+These hazard layers were produced from scientific modelling conducted by
 scientific organisations and government agencies.
 These are typical sources for such hazard data, although in cases of flood
 hazards such data may also be gathered from affected communities.
@@ -93,11 +93,11 @@ which may then be considered by disaster risk managers or planning managers.
 
 In previous scenarios, we used example data provided in the training directory,
 but to set up our scenario in the village of Sirahan, let’s access the
-OpenStreetMap data ourselves to use as our exposure layer.
+OSM data ourselves to use as our exposure layer.
 We will use the OSM buildings to calculate how many buildings (and which)
 will be inundated when a flood occurs similar to our hazard model.
 
-We’ve worked with OpenStreetMap data a lot already.
+We’ve worked with OSM data a lot already.
 Now we will utilise a website where we can quickly and easily access the data
 from OSM.
 
@@ -119,7 +119,7 @@ by QGIS.
 4. Give the job a name, such as :kbd:`Desa Sirahan`.
 
 5. Zoom in on the map until you can see the village Sirahan, which is just
-   northwest of Yogyakarta.
+   north-west of Yogyakarta.
 
 6. Click :guilabel:`Select Area` and then draw a box around Sirahan village.
 
@@ -193,7 +193,7 @@ The :guilabel:`Save vector layer as...` dialog will look like this:
    :align: center
 
 This is the layer that we will be using as our exposure data.
-You can remove the other OpenStreetMap layers, or if you would like them to
+You can remove the other OSM layers, or if you would like them to
 remain visible, go to :menuselection:`Settings ‣ Project Properties` and
 enable “on the fly” transformation.
 

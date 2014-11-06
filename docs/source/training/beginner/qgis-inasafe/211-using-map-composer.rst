@@ -67,7 +67,7 @@ change paper size, number of pages, and quality of output.
 .. figure:: /static/training/beginner/qgis-inasafe/image248.*
    :align: center
 
-Take a look at the icons across the top of the window.  We will use some
+Take a look at the icons across the top of the window. We will use some
 of these as we lay our map out, so here’s an overview of what they do:
 
 
@@ -75,13 +75,13 @@ of these as we lay our map out, so here’s an overview of what they do:
 +----------------------------------------------------------------+--------------------------------------------------------------------------+
 | Display Icon                                                   | Function                                                                 |
 +================================================================+==========================================================================+
-| .. image:: /static/training/beginner/qgis-inasafe/image249.*   | **Add New Map** will add a map element.  This is what we will use to add |
-|                                                                | the map from our project into our print layout.  It should be noted,     |
+| .. image:: /static/training/beginner/qgis-inasafe/image249.*   | **Add New Map** will add a map element. This is what we will use to add  |
+|                                                                | the map from our project into our print layout. It should be noted,      |
 |                                                                | however, that if we change the map in our QGIS project,                  |
 |                                                                | it will not update the same map that we have added to our print composer,|
 |                                                                | as we shall see later.                                                   |
 +----------------------------------------------------------------+--------------------------------------------------------------------------+
-| .. image:: /static/training/beginner/qgis-inasafe/image250.*   | **Add Image** allows us to add a picture.  You can add a company or      |
+| .. image:: /static/training/beginner/qgis-inasafe/image250.*   | **Add Image** allows us to add a picture. You can add a company or       |
 |                                                                | organisational logo, or simply display images from a particular location.|
 |                                                                | You can also add an image of a compass (to point North).                 |
 +----------------------------------------------------------------+--------------------------------------------------------------------------+
@@ -94,13 +94,13 @@ of these as we lay our map out, so here’s an overview of what they do:
 | .. image:: /static/training/beginner/qgis-inasafe/image253.*   | **Add New Scalebar** is used to add a scale to the layout.               |
 +----------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/beginner/qgis-inasafe/image254.*   | **Add Ellipse/Triangle/Rectangle** is used to add one of these geometric |
-|                                                                | shapes.  For example, this might be used to indicate special areas or    |
+|                                                                | shapes. For example, this might be used to indicate special areas or     |
 |                                                                | highlight things on the map.                                             |
 +----------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/beginner/qgis-inasafe/image255.*   | **Add Arrow** is used to draw an arrow on the map layout.                |
 +----------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/beginner/qgis-inasafe/image256.*   | **Select / Move Item** allows us to move choose and move the elements    |
-|                                                                | that you add to the map layout.  With this tool selected,                |
+|                                                                | that you add to the map layout. With this tool selected,                 |
 |                                                                | you can right -click on an element to lock its position.                 |
 +----------------------------------------------------------------+--------------------------------------------------------------------------+
 
@@ -134,7 +134,7 @@ of these as we lay our map out, so here’s an overview of what they do:
    be good for this project.
 
 8. Add a frame by clicking the box next to :guilabel:`Frame`.
-   Configure the frame color and border thickness.
+   Configure the frame colour and border thickness.
 
 .. image:: /static/training/beginner/qgis-inasafe/image259.*
    :align: center
@@ -161,8 +161,8 @@ But let’s add some additional elements to make it more informative.
     properties in the panel on the right.
 
 11. Click the :guilabel:`Font` button. Change the text size to 18 and make it
-    bold. Change the alignment to center. Lastly, add the following text,
-    or create your own:
+    bold. Change the alignment to :guilabel:`Center`. Lastly, add the following 
+    text, or create your own:
 
 .. image:: /static/training/beginner/qgis-inasafe/image261.*
    :align: center
@@ -190,7 +190,7 @@ idea what size area this map shows.
     it is in the lower left corner of your map layout.
 
 14. Next we need adjust the scalebar options. Since our project is in a PCS
-    (Projected Coordinate System), our measurements are in metres.  Enter the
+    (Projected Coordinate System), our measurements are in metres. Enter the
     following values in the scalebar options:
 
 .. image:: /static/training/beginner/qgis-inasafe/image264.*

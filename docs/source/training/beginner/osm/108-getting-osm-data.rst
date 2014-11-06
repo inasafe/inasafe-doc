@@ -11,7 +11,7 @@ Module 8: Getting OSM Data
   `Geofabrik website <http://download.geofabrik.de/openstreetmap/>`_ 
 - Download customised OpenStreetMap data using HOT Exports
 
-Now that we have learned how to contribute data to the OSM database,
+Now that we have learned how to contribute data to the OpenStreetMap database,
 let's see how we can access data for download in different formats.
 You may want to download OSM data as a backup or for use in Geographic
 Information System software such as |QGIS|.

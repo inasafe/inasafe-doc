@@ -18,7 +18,7 @@ Module 4: Using GPS
 - Upload GPS tracks using JOSM                        
 - Edit OSM based on GPS data in JOSM                 
 
-In this module we see what a GPS does and how it works.  We explore 
+In this module we see what a GPS does and how it works. We explore 
 how to operate a GPS and how to use it to create maps. We will
 explain how to operate the Garmin eTrex Vista HCx, a common GPS used for
 mapping. There are many other models of GPS which do the same thing, so if you
@@ -32,8 +32,8 @@ A GPS is like a mobile phone, except that instead of receiving radio signals
 from telephone companies, it receives signals from satellites that are going
 around the Earth. By receiving these signals from the satellites,
 a GPS is able to calculate its exact location on the planet. It records
-this location in coordinates, which are two long numbers.  One number tells
-you how far east or west you are - this is called **longitude**.  The second
+this location in coordinates, which are two long numbers. One number tells
+you how far east or west you are - this is called **longitude**. The second
 number tells you how far north or south you are - this is called **latitude**.
 Every place on Earth has unique geographic coordinates.
 
@@ -59,7 +59,7 @@ Lombok, Indonesia.
    satellites, **it won’t work indoors**.
 
 2. On the right side of the GPS, press and hold the :guilabel:`Power` button.
-   The GPS will start, and it will show you the Satellites page.  You 
+   The GPS will start, and it will show you the Satellites page. You 
    should see something like the image below. The GPS is looking for satellite signals.
    When it has connected to three or more satellites, it will have your location.
 
@@ -78,9 +78,9 @@ Lombok, Indonesia.
 ---------------------
 
 4. The GPS has different pages and menus that allow you to do different
-   things.  To switch between pages, press the button marked :kbd:`X`,
-   just above the power button on the right side of the device.  This button
-   also serves to go back.  If you press something by mistake and would like
+   things. To switch between pages, press the button marked :kbd:`X`,
+   just above the power button on the right side of the device. This button
+   also serves to go back. If you press something by mistake and would like
    to cancel or go back, press the :kbd:`X` button.
 
 5. By pressing the :kbd:`X` button, you should be able to flip through different
@@ -106,20 +106,20 @@ Lombok, Indonesia.
    connected to three or more satellites. In the upper-left corner are your
    coordinates, your latitude and longitude.
 
-7. Flip to the Map page, and you can see a map of where you are.  If you have
-   added OSM maps to your GPS, you may see roads and places.  Otherwise,
-   the map may look quite blank. Zoom in and out by pressing the up and down
-   arrow buttons on the left side of the GPS.
+7. Flip to the Map page, and you can see a map of where you are. If you have
+   added OpenStreetMap maps to your GPS, you may see roads and places. 
+   Otherwise, the map may look quite blank. Zoom in and out by pressing the 
+   up and down arrow buttons on the left side of the GPS.
 
 4. Tracks and waypoints
 -----------------------
 
 A GPS records two kinds of information that are useful for creating maps
-or saving the coordinates of a place.  First, it allows you to save your
-location in the memory of the GPS.  When you save a location,
-the coordinates will be saved with a name.  For example,
+or saving the coordinates of a place. First, it allows you to save your
+location in the memory of the GPS. When you save a location,
+the coordinates will be saved with a name. For example,
 your first saved point will be named 001, the second 002,
-and so on.  When you save a point, you can write down the number on a piece
+and so on. When you save a point, you can write down the number on a piece
 of paper, along with a note about what it is, and any attributes or
 indicators you would like to collect. Saved locations on your GPS are called
 waypoints.
@@ -128,7 +128,7 @@ Second, a GPS can save what are called tracks. While a waypoint only
 saves a single location, a track will save a series of locations wherever
 you move. For example, a track will record your location every one
 second, or every one metre, and the result will be a series of dots that
-show the path of where you have been.  Tracks are useful for mapping objects
+show the path of where you have been. Tracks are useful for mapping objects
 that are represented by lines or shapes, such as the course of a road,
 or the shape of a field.
 
@@ -146,7 +146,7 @@ or the shape of a field.
 
 8. To save your current location as a waypoint, click the :kbd:`X` button until
    your reach the Main Menu. Using the joystick, move it so that :guilabel:`Mark`
-   is highlighted on the screen.  Push the joystick button down to open the
+   is highlighted on the screen. Push the joystick button down to open the
    Save Waypoint page.
 
 .. image:: /static/training/beginner/osm/image56.*
@@ -158,14 +158,14 @@ or the shape of a field.
    :width: 225 pt
 
 You can see on this page some information about the waypoint that you are
-saving.  First is the name.  If this is your first waypoint,
-it probably reads “001”.  This is the number you should record on paper
-along with the information you want to collect with this object.  Next you
-will see the time and date when the point is recorded.  Below that are the
+saving. First is the name. If this is your first waypoint,
+it probably reads “001”. This is the number you should record on paper
+along with the information you want to collect with this object. Next you
+will see the time and date when the point is recorded. Below that are the
 coordinates, followed by the altitude.
 
 9. Use the joystick to move to the :guilabel:`OK` button at the bottom of the
-   screen. Press the joystick button down to save this point.  Be sure to write
+   screen. Press the joystick button down to save this point. Be sure to write
    down the number of the point, along with what the place is and any other
    information you want to record about the place in your notebook.
 
@@ -178,11 +178,11 @@ coordinates, followed by the altitude.
 ---------------------------
 
 Now that we have learned how to save points, let’s learn how to turn the
-track log on and off.  When the track log is turned on,
-it will automatically record your path.  It’s good practice to turn on the
-log when you begin mapping, and turn it off when you are finished.  You
+track log on and off. When the track log is turned on,
+it will automatically record your path. It’s good practice to turn on the
+log when you begin mapping, and turn it off when you are finished. You
 will then be able to look at the track on a computer and see the path that
-you mapped.  If you would like to map the course of a road,
+you mapped. If you would like to map the course of a road,
 it is a good idea to save a waypoint at the beginning and end of the road,
 writing in your notebook the name and type of the road,
 and any other important information about the road.
@@ -199,19 +199,19 @@ and any other important information about the road.
     The bar at the top should read “0%”.
 
 13. To turn on the log, move the joystick to highlight :guilabel:`On`,
-    and press the joystick down.  The track log is now recording your path.
+    and press the joystick down. The track log is now recording your path.
 
 .. note:: Under :guilabel:`Setup`, you also can set time or distance
-   intervals to track.  Time intervals instruct your GPS to record your location
-   at given intervals.  If you have a memory card in your GPS, it is good
+   intervals to track. Time intervals instruct your GPS to record your location
+   at given intervals. If you have a memory card in your GPS, it is good
    practice to set this to one second, meaning that every second your location 
-   will be added to the track log.  This may be useful when detailed surveys are
+   will be added to the track log. This may be useful when detailed surveys are
    needed.
 
    See :ref:`GPS Settings <gps-settings-tracks>` for more information on setting 
    up the track log.
 
-14. Press the :kbd:`X` button to go to the Map page.  As you move you will see
+14. Press the :kbd:`X` button to go to the Map page. As you move you will see
     your track shown as a series of dots.
 
 7. GPS settings
@@ -254,8 +254,8 @@ are as follows:
 .. image:: /static/training/beginner/osm/image40.*
    :align: center
 
-- **Battery Type**: To optimize power usage, this should match the type of battery
-  in the device. The default is Alkalaine.
+- **Battery Type**: To optimise power usage, this should match the type of battery
+  in the device. The default is Alkaline.
 
 - **Text Language**: Choose the language for the device.
 
@@ -366,7 +366,7 @@ The settings are as follows:
 If **Record Method** is set to *Distance* or *Time*, the options will allow
 you to set a matching unit of measurement.
 
-- **Color**: This setting is for defining the color of the track line as 
+- **Color**: This setting is for defining the colour of the track line as 
   shown on the GPS map page.
 
 .. image:: /static/training/beginner/osm/image50.*
@@ -388,17 +388,17 @@ points and tracks to your computer so that you can open them in JOSM.
 
 23. Attach the GPS to your computer with the cable. One end should plug into
     your computer’s USB port, and the other goes into the back of the GPS,
-    beneath the rubber flap at the top.  The GPS should be turned on to copy
+    beneath the rubber flap at the top. The GPS should be turned on to copy
     the points and tracks.
 
 
 8.2. Installing GPS drivers
 ...........................
 
-24. You may need to install GPS drivers on your computer.  Open your training
-    folder and find software/USBDrivers_23.exe.  Double-click it and install.
+24. You may need to install GPS drivers on your computer. Open your training
+    folder and find software/USBDrivers_23.exe. Double-click it and install.
 
-25. If you don’t have this file, you can download it.  Open your internet
+25. If you don’t have this file, you can download it. Open your internet
     browser and go to: `http://www8.garmin.com/support/download_details
     .jsp?id=591 <http://www8.garmin.com/support/download_details.jsp?id=591>`_
 
@@ -409,17 +409,18 @@ points and tracks to your computer so that you can open them in JOSM.
 8.3. Getting the GPSBabel setup program
 .......................................
 
-27. GPSBabel is a program that allows us to copy data from the GPS.  It is
-    saved as :file:`GPSBabel-1.4.2-Setup` in the :file:`software` folder.
+27. GPSBabel is a program that allows us to copy data from the GPS. It is
+    saved as :file:`GPSBabel-1.5.1-Setup` in the :file:`software` folder (the
+    exact version number may be different).
 
 28. If you don’t have GPSbabel already, open your web browser and go to
     `www.gpsbabel.org <http://www.gpsbabel.org>`_
 
 29. Click :guilabel:`Downloads` at the top of the page.
 
-30. Scroll down the page.  If your computer uses Windows,
-    you want to download the installation file for Windows.  Click
-    :file:`GPSBabel-1.4.2-Setup.exe`.  The file will be downloaded to 
+30. Scroll down the page. If your computer uses Windows,
+    you want to download the installation file for Windows. Click
+    :file:`GPSBabel-1.5.1-Setup.exe`. The file will be downloaded to 
     your computer.
 
 
@@ -451,15 +452,15 @@ points and tracks to your computer so that you can open them in JOSM.
 37. In the dropdown menu labelled :guilabel:`Format`, select
     :guilabel:`Garmin serial/USB protocol`
 
-38. Go down to the middle of the window, under :guilabel:`Output`.  In the 
+38. Go down to the middle of the window, under :guilabel:`Output`. In the 
     dropdown menu labelled :guilabel:`Format`, select :guilabel:`GPX XML`:
 
 .. image:: /static/training/beginner/osm/image60.*
    :align: center
    :width: 300 pt
 
-39. Click :guilabel:`File Name` and type a name for your saved file.  It should be
-    something that describes the data, such as the date and the location.  For
+39. Click :guilabel:`File Name` and type a name for your saved file. It should be
+    something that describes the data, such as the date and the location. For
     example: :file:`jakarta-07-07-2011`.
 
 40. Make sure your GPS is connected to the computer and turned on.
@@ -467,16 +468,16 @@ points and tracks to your computer so that you can open them in JOSM.
 41. Click :guilabel:`Apply` in the bottom right corner of the window.
 
 42. If all goes well you should see a bar move across the screen,
-    indicating that the data is being retrieved from the GPS.  When it is
+    indicating that the data is being retrieved from the GPS. When it is
     finished, your points and track will be saved in the file that you selected.
 
 
 8.6. Opening in JOSM
 ....................
 
-43. Now open JOSM.  Go to :menuselection:`File ‣ Open...`
+43. Now open JOSM. Go to :menuselection:`File ‣ Open...`
 
-44. Find and select the file that you created with GPSBabel.  Click
+44. Find and select the file that you created with GPSBabel. Click
     :guilabel:`Open`.
 
 You should now see your points and tracks loaded into JOSM.
@@ -488,8 +489,8 @@ You should now see your points and tracks loaded into JOSM.
 9. Uploading GPS data in JOSM
 -----------------------------
 
-.. note:: If you arenot interested in sharing your tracks publicly on OSM, feel 
-   free to skip this section.
+.. note:: If you are not interested in sharing your tracks publicly on OSM, 
+   feel free to skip this section.
 
 Adding GPS tracks to the OSM server is useful because it enables other users
 to see and use your tracks. For those who do not have a GPS or who can't

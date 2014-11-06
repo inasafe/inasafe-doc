@@ -139,7 +139,7 @@ around the volcano.
 21. Click on :guilabel:`Options...` to open the impact function editor.
 
 By default |project_name| has set three hazard areas - the first is within
-a three kilometer radius around the volcano, then between three and five km,
+a three kilometre radius around the volcano, then between three and five km,
 and lastly between five and 10 km.
 
 These hazard zones can be altered by editing the comma separated values in
@@ -304,7 +304,7 @@ and how they may behave under certain shaking is crucial in understanding
 the impact of an earthquake. Earthquakes cover a large area, so mapping every 
 structure in that area is extensive work.
 
-In Padang the international OpenStreetMap community assisted mapping,
+In Padang the international OSM community assisted mapping,
 totalling roughly 95,000 structures.
 
 Lets find out how they are affected by the modelled Padang 2009 earthquake.
@@ -394,7 +394,7 @@ OpenStreetMap Downloader
 ........................
 
 Notice that there is no building layer in this project file. Let's see
-how we can download OpenStreetMap buildings directly from the OSM server.
+how we can download OSM buildings directly from the OSM server.
 
 51. Select the tsunami layer in the Layers panel and 
     click :guilabel:`Zoom to Layer`.
@@ -432,3 +432,6 @@ how we can download OpenStreetMap buildings directly from the OSM server.
 
 .. note:: For more information on this tool please
    visit :ref:`openstreetmap_downloader`.
+
+
+:ref:`Go to next module --> <helpful-hints-and-tips>`

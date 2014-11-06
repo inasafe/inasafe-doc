@@ -16,14 +16,14 @@ but it also allows the use of plugins, which add
 functionality to the software.
 Again, these plugins are free. To use them, we simply need to connect to the
 internet and install.
-In this chapter we will learn how to install QGIS plugins,
+In this module we will learn how to install QGIS plugins,
 using one plugin to add a satellite imagery layer to our QGIS project.
 
 1. If you have closed QGIS since completing the previous module, start QGIS and
    open the project :file:`named sleman_2_3.qgs` in the :file:`qgis/` folder.
 
 Note that you must be connected to the internet to follow the exercises in this
-chapter.
+module.
 
 1. Managing plugins
 -------------------
@@ -47,7 +47,7 @@ Some plugins are already downloaded and available.
 
 2. Installing plugins
 ---------------------
-4. There are many more plugins, but they must first be downloaded.  To download 
+4. There are many more plugins, but they must first be downloaded. To download 
    a plugin, click the :guilabel:`New` tab. This will load available plugin 
    repositories, and you will see a list of all available plugins for download.
 
@@ -55,7 +55,7 @@ Some plugins are already downloaded and available.
    :align: center
 
 Note that plugins which have already been downloaded can be activated or
-deactivated from the :guilabel:`Installed` tab.  If it has not yet
+deactivated from the :guilabel:`Installed` tab. If it has not yet
 been downloaded, downloading a plugin from the
 :guilabel:`New` tab will automatically activate it.
 
@@ -144,7 +144,7 @@ shouldn’t affect you right now, but it will make sense later when we cover
 CRSes.
 
 14. If the map data does not appear to match up correctly with the aerial 
-    imagery, it may be due to different CRSes.  You can fix this problem by 
+    imagery, it may be due to different CRSes. You can fix this problem by 
     going to :menuselection:`Project ‣ Project Properties` and checking the 
     box next to :guilabel:`Enable ‘on the fly’ CRS transformation`.
 

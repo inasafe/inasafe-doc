@@ -77,7 +77,7 @@ The QGIS website will look something like this:
 
 8. Click :guilabel:`Next`.
 
-9. Click :guilabel:`I Agree` to agree with the conditions in the license
+9. Click :guilabel:`I Agree` to agree with the conditions in the licence
    agreement.
 
 .. image:: /static/training/beginner/qgis-inasafe/image16.*

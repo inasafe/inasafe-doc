@@ -1,4 +1,4 @@
-.. _socialisation_overview:
+.. _socialisation-overview:
 
 Overview
 ========
@@ -75,7 +75,7 @@ and Dr. Matt Hayne, co-director of Australia-Indonesia Facility for Disaster
 Reduction (|AIFDR|).
 
 |project_name| (Version 2.0) was officially launched at the opening of
-the InaDRTG center in Jakarta in March 2014 by |BNPB|.
+the InaDRTG centre in Jakarta in March 2014 by |BNPB|.
 
 |project_name| is being taught across 6 provinces in Indonesia as one of
 the three open source software tools used to enable development of realistic
@@ -135,9 +135,14 @@ Hazard
 Hazard can be seen as a condition, phenomenon, or human activity that
 potentially cause victims, losses or destruction to social structure and
 environment.
-Events or phenomena that are seen as hazard potentials include disasters such as earthquakes, tsunamis, floods, landslides and tornadoes.
+Events or phenomena that are seen as hazard potentials include disasters 
+such as earthquakes, tsunamis, floods, landslides and tornadoes.
 
-For |project_name|, hazard data refers to a singular disaster scenario, such as a Mw 7.8 earthquake or volcanic eruption. Data for such infrequent events is created with scientific modeling software. For more frequently occurring disaster scenarios such as floods, the hazard data can be either modeled by scientists or directly mapped by the local community.
+For |project_name|, hazard data refers to a singular disaster scenario, 
+such as a Mw 7.8 earthquake or volcanic eruption. Data for such infrequent 
+events is created with scientific modelling software. For more frequently 
+occurring disaster scenarios such as floods, the hazard data can be either 
+modelled by scientists or directly mapped by the local community.
 
 The hazard must be accompanied by specific units:
 
@@ -170,7 +175,7 @@ The input hazard layer must have:
 Exposure
 ........
 
-For |project_name|, exposure data may represent population density (number
+For |project_name|, exposure data may represent population count (number
 of people found in a certain area) or important infrastructure (buildings,
 bridges) that becomes a focus of interest when calculating the impact of
 a specific hazard.
@@ -297,3 +302,6 @@ indicating where people are by density) and a non-spatial layer which will conta
 statistics on the minimum needs of the number of people that ‘need evacuating’.
 
 .. image:: /static/training/socialisation/002_output_data.png
+
+
+:ref:`Go to next module --> <functionality-datasets>`

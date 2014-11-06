@@ -12,7 +12,7 @@ Module 8: Working with Raster Data
 - Perform terrain analysis
 
 Thus far we’ve worked mostly with vector data, which consists of features, and
-these features are themselves made up of points and lines. In this chapter we
+these features are themselves made up of points and lines. In this module we
 will learn about raster data. Remember when you were editing OpenStreetMap in
 JOSM? The points, lines and shapes that you drew were vector data. But when you
 loaded Bing aerial imagery in the background, that was raster data. So what’s
@@ -22,7 +22,7 @@ Raster data essentially comes in the form of an image. It is made up of pixels,
 like a photograph, and a raster image will always be some number of pixels wide
 and some number of pixels high. If you zoom in far enough on a raster image, it
 will start to become blurry, just as if you opened a photo on your computer and
-zoomed in very close. As we’ll see in this chapter, however, a raster image can
+zoomed in very close. As we’ll see in this module, however, a raster image can
 mean more than just a photograph from the sky. Follow along and we’ll learn all
 about rasters!
 
@@ -40,12 +40,12 @@ about rasters!
 .. image:: /static/training/beginner/qgis-inasafe/image147.*
    :align: center
 
-3. The Load Raster Layer dialog will open.  Find the file in the directory
-   :file:`Sleman/` named :file:`Sleman.tif`.  Open it.
+3. The Load Raster Layer dialog will open. Find the file in the directory
+   :file:`Sleman/` named :file:`Sleman.tif`. Open it.
 
 4. QGIS will open a dialog which explains that the new layers does not have a
-   CRS assigned.  In the box at the bottom, scroll down until you find
-   **WGS 84 / UTM zone 49S**.  Select it and click :guilabel:`OK`.
+   CRS assigned. In the box at the bottom, scroll down until you find
+   **WGS 84 / UTM zone 49S**. Select it and click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image148.*
    :align: center
@@ -102,23 +102,23 @@ how to change it’s symbology.
    In  a DEM, each pixel has a different value instead of colour. The value of
    each pixel represents elevation.
 
-When it loads, you’ll notice that the new raster image appears as a gray
+When it loads, you’ll notice that the new raster image appears as a grey
 rectangle. It’s seen here with the roads layers on top:
 
 .. image:: /static/training/beginner/qgis-inasafe/image151.*
    :align: center
 
-The layer appears gray (and doesn’t give us any information) because its
+The layer appears grey (and doesn’t give us any information) because its
 symbology hasn’t been customised yet. In the colour aerial photograph we
 loaded previously, everything is already defined. But if you load a raster
-image and it’s just a gray rectangle, then you know there’s no symbology for
+image and it’s just a grey rectangle, then you know there’s no symbology for
 it yet. It still needs to be defined. That’s what we will do next.
 
 11. Open the Layer Properties dialog for the SRTM layer,
     which is now named :guilabel:`DEM`.
 
-12. Switch to the Style tab.  This shows the current symbology settings,
-    and as we’ve seen, they don’t give us much information on the layer.  Let’s
+12. Switch to the Style tab. This shows the current symbology settings,
+    and as we’ve seen, they don’t give us much information on the layer. Let’s
     make sure the layer has data in it.
 
 13. Change the :guilabel:`Render type` to :guilabel:`Singleband pseudocolor`.
@@ -137,33 +137,33 @@ can see the location of Mount Merapi.
 
 Let’s stop for a minute and understand what is happening here. Remember
 that an image is made up of pixels, individual cells that contain a value,
-which is usually a colour value.  For example, if you zoom in very closely on
+which is usually a colour value. For example, if you zoom in very closely on
 a photograph you can see those individual pixels, like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image154.*
   :align: center
 
-The value of each cell is saved in the file.  Imagine the file being saved
+The value of each cell is saved in the file. Imagine the file being saved
 something like this, where each square is a pixel:
 
 .. image:: /static/training/beginner/qgis-inasafe/image155.*
    :align: center
 
-Of course the computer doesn’t understand words for colours.  In fact the
+Of course the computer doesn’t understand words for colours. In fact the
 value of each cell would be a number, which the computer then associates
-with a certain colour.  For our aerial image, this is already defined.  Since
+with a certain colour. For our aerial image, this is already defined. Since
 it is a normal image, it knows to associate the numbers for each pixel in
-the file with the common colours that we see every day.  But this new raster
+the file with the common colours that we see every day. But this new raster
 image is different, because the values of each pixel don’t represent colours,
 but rather altitude, and QGIS doesn’t know automatically how to display it.
-Hence it shows every pixel in the image as gray, even if the values in each
-pixel are different.  When we change the symbology to Psuedocolor,
+Hence it shows every pixel in the image as grey, even if the values in each
+pixel are different. When we change the symbology to Psuedocolor,
 we can see all the different pixel values shown with various colours.
 
-It would be nice to represent our DEM layer as a grayscale spectrum,
+It would be nice to represent our DEM layer as a greyscale spectrum,
 rather than a variety of bright colours.. Next we will tell QGIS to
 symbolise the layer with colours in a spectrum, beginning at the lowest pixel
-value in the file and ending at the highest pixel value.  In other words,
+value in the file and ending at the highest pixel value. In other words,
 if the pixel values looked like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image156.*
@@ -193,8 +193,8 @@ And render the image like this:
 
 But what are the minimum and maximum values that should be used?  The ones
 that are currently under Custom min / max values are the same values that
-just gave us a gray rectangle before. Instead, we should be using the
-minimum and maximum pixel values that are actually in the image.  You can
+just gave us a grey rectangle before. Instead, we should be using the
+minimum and maximum pixel values that are actually in the image. You can
 determine those values easily by loading the minimum and maximum values of
 the raster.
 
@@ -206,13 +206,13 @@ the raster.
 .. image:: /static/training/beginner/qgis-inasafe/image160.*
    :align: center
 
-Notice how the Custom min / max values have changed.  The lowest pixel value
+Notice how the Custom min / max values have changed. The lowest pixel value
 in this image file is 0 and the highest is about 195.
 
 .. image:: /static/training/beginner/qgis-inasafe/image161.*
    :align: center
 
-21. Click :guilabel:`OK`.  You should see the values of the raster properly
+21. Click :guilabel:`OK`. You should see the values of the raster properly
     displayed, with the darker colours representing valleys and the lighter 
     ones, mountains:
 
@@ -227,7 +227,7 @@ you’ll be glad to know that there’s a tool for doing all of this more easily
     clicking :menuselection:`Remove`.
 
 23. Load the raster image again, renaming it to :guilabel:`DEM` as before. It will be a
-    gray rectangle again.
+    grey rectangle again.
 
 24. Enable the tool you’ll need by enabling
     :menuselection:`View ‣ Toolbars ‣ Raster`. These icons will appear in the
@@ -300,8 +300,8 @@ this:
    :align: center
 
 This looks more Three-Dimensional, but can we improve on this?  On its own,
-the hillshade looks like a plaster cast.  It will look better if we can
-combine it with our more colourful DEM.  We can do this by making the
+the hillshade looks like a plaster cast. It will look better if we can
+combine it with our more colourful DEM. We can do this by making the
 hillshade layer an overlay.
 
 3.2  Using a hillshade as an overlay

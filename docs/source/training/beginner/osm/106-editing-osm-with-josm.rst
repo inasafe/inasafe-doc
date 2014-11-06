@@ -36,7 +36,7 @@ our improvements. We’ll learn the basic cycle of mapping on OSM:
 
   1. Download data
   2. Edit and add objects on the map
-  3. Upload changes to OpenStreetMap
+  3. Upload changes to OSM
   4. See the changes on the map!
 
 1. Exploring JOSM
@@ -53,7 +53,7 @@ Let's begin by exploring a little more in JOSM.
 
 JOSM has many different buttons and panels. We are already familiar with the
 main window - this is the map window, and it is where most of the action 
-takes place. Here you view, edit, and add to the OpenStreetMap data.
+takes place. Here you view, edit, and add to the OSM data.
 
 To the right of the map window are a series of panels,
 which each do something different. When you first install JOSM
@@ -82,7 +82,7 @@ and :guilabel:`Author`.
 1.1. Downloading OSM Data
 .........................
 
-Remember the cycle of editing OpenStreetMap described in the introduction
+Remember the cycle of editing OSM described in the introduction
 of this module? Download, edit, save. Before we can edit the map,
 we must download the existing OSM data in our area.
 
@@ -95,7 +95,7 @@ we must download the existing OSM data in our area.
    :align: center
 
 4. Because our map window is already showing the area that we want to edit,
-   it is easy to download the OpenStreetMap data for this area. Go to
+   it is easy to download the OSM data for this area. Go to
    :menuselection:`File ‣ Download from OSM`. This opens the 
    :guilabel:`Download` window. This can be accessed more simply by clicking
    the :guilabel:`Download` button, shown here:
@@ -120,14 +120,14 @@ we must download the existing OSM data in our area.
 
 7. When you are satisfied with the size and location of the box,
    click :guilabel:`Download` at the bottom of the window. JOSM will get the data
-   for this area from OpenStreetMap and open it in your map window for editing.
+   for this area from OSM and open it in your map window for editing.
 
 2. JOSM Layers
 --------------
 
-8. Open your GPS file and downloaded data from OpenStreetMap,
+8. Open your GPS file and downloaded data from OSM,
    if you haven’t already. Notice that when you open a file,
-   add Field Papers or download from OpenStreetMap, another item is added
+   add Field Papers or download from OSM, another item is added
    to the :guilabel:`Layers` panel on the right side of JOSM. Your
    :guilabel:`Layers` panel may look something like this:
 
@@ -136,7 +136,7 @@ we must download the existing OSM data in our area.
 
 Each item in this list represents a different source of data that is
 open in the map window. In the example above, “Data Layer 2” is the
-OpenStreetMap data that we want to edit. “Markers” are the waypoints from
+OSM data that we want to edit. “Markers” are the waypoints from
 the GPS, and “30 Juni 2011.gpx” is the track from the GPS. Finally,
 “Field Papers” is the layer created when we added our Field Paper into JOSM.
 
@@ -162,7 +162,7 @@ considered "Active” by JOSM. If you are unable to edit the map in your map
 window, it’s probably because you don’t have the correct layer set as active. 
 Most layers, such as GPS points, Field Papers, and satellite imagery,
 can’t be edited. The only layers that can be edited are data from
-OpenStreetMap, which are usually called “Data Layer 1”.
+OSM, which are usually called “Data Layer 1”.
 
 13. To make a layer active, select it in the :guilabel:`Layers` panel,
     and click on the :guilabel:`Activate` button:
@@ -174,9 +174,9 @@ OpenStreetMap, which are usually called “Data Layer 1”.
 ----------
 
 The next step is to edit the map and add new items. This is not always
-easy at first, but with practice you will get better and better.  Note that
+easy at first, but with practice you will get better and better. Note that
 you can select tools in JOSM by clicking on their buttons in the toolbar,
-or you can use keys on the keyboard as shortcuts.  The shortcut keys
+or you can use keys on the keyboard as shortcuts. The shortcut keys
 are indicated in parentheses below.
 
 14. To move a point, line, or shape, use the :guilabel:`Select` tool
@@ -191,13 +191,13 @@ are indicated in parentheses below.
    :align: center
 
 Remember that your GPS points and Field Papers don’t automatically go
-into OpenStreetMap. You need to add them to the OSM map digitally
+into OSM. You need to add them to the OSM map digitally
 using the :guilabel:`Draw` tool. But your points, tracks, and Field Papers
 can be seen in the background as a guide.
 
 16. Let’s assume that you saved a waypoint on your GPS named "030"
     and wrote in your notebook that 030 is a school. To add this point into
-    OpenStreetMap, select the :menuselection:`Draw` tool, and
+    OSM, select the :menuselection:`Draw` tool, and
     double-click on top of point 030 in your map window. This will create a point.
     Then go to the :menuselection:`Presets` menu, and find the preset for school.
     Enter the name of the school and click :guilabel:`Apply Preset`.
@@ -212,7 +212,7 @@ can be seen in the background as a guide.
 When you draw a point, line, or shape, it has a location,
 but no information about what it is. In other words, we know where it is,
 but not what it is. Before now, we have been using items from the
-:menuselection:`Presets` menu to define what it is.  The way OpenStreetMap
+:menuselection:`Presets` menu to define what it is. The way OSM
 knows what an object is is by using tags.
 
 A tag is like a label that you can put on something. For example,
@@ -221,15 +221,15 @@ that describe what it is:
 
   - this square is a building
   - the name of the building is “Menara Thamrin”
-  - the building is 16 levels high
+  - the building is 32 levels high
 
 We can add as many tags as we want to an object. Tags are saved as pairs
-of text, called the keys and the values. In OpenStreetMap,
+of text, called the keys and the values. In OSM,
 the tags written above would be:
 
   - building = yes
   - name = Menara Thamrin
-  - building:levels = 16
+  - building:levels = 32
 
 When you select an object in JOSM, you can see all the tags that are attached
 to it in the :guilabel:`Properties` panel on the right.
@@ -242,7 +242,7 @@ to it in the :guilabel:`Properties` panel on the right.
 
 You can add, edit, and delete these tags from the :guilabel:`Properties` panel.
 The tags are traditionally in English, so if you prefer you can always use
-the :menuselection:`Presets` menu to simplify tagging objects.  When you add 
+the :menuselection:`Presets` menu to simplify tagging objects. When you add 
 or change tags, such as primary highway versus footpath, the style will change 
 according to the tag.
 
@@ -285,7 +285,7 @@ only select lines when you want to add tags to them.
 --------------------
 
 After we have made a couple of changes to improve the map,
-we need to upload those changes to OpenStreetMap. To save changes,
+we need to upload those changes to OSM. To save changes,
 we must be connected to the internet.
 
 18. Go to :menuselection:`File ‣ Upload Data`. This opens the :guilabel:`Upload` 
@@ -305,7 +305,7 @@ we must be connected to the internet.
 
 20. Click :guilabel:`Upload Changes`.
 
-21. If this is your first time saving changes to OpenStreetMap,
+21. If this is your first time saving changes to OSM,
     you will be asked for the username and password that you created in Module 
     2. Enter them in the window that appears. If you check the box in this
     window, your username and password will be saved and you won’t need to
@@ -315,7 +315,7 @@ we must be connected to the internet.
    :align: center
 
 22. Wait a few seconds for your changes to be uploaded,
-    and then you are done! You have made your first edits to OpenStreetMap. You
+    and then you are done! You have made your first edits to OSM. You
     may continue editing to add all your points if you wish. Always be sure to
     upload your changes before closing JOSM.
 
@@ -334,7 +334,7 @@ After you have uploaded all your changes, you can see the updated map.
     minutes for the changes to be shown on the map. Also,
     check your additions in JOSM to make sure that you added them correctly. A
     good general rule is, if your point has an icon in JOSM,
-    then it should be seen on the main map on the OpenStreetMap website.
+    then it should be seen on the main map on the OSM website.
 
 6. Saving OSM files
 -------------------

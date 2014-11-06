@@ -15,7 +15,7 @@ Module 5: Map Projection Basics
 
 We’ve talked a little bit about Coordinate Reference Systems (CRSs) previously,
 but haven’t covered it in depth.
-In this chapter, we’ll look more at what a CRS means practically,
+In this module, we’ll look more at what a CRS means practically,
 and how it affects our work in QGIS.
 
 1. Coordinate Reference Systems (CRS)
@@ -44,7 +44,7 @@ But there’s a problem, as we will see.
 
 Do you notice the scale changing?
 This is because you’re moving away from the one point that you zoomed into at
-1:20000000, which was at the center of your screen.
+1:20000000, which was at the centre of your screen.
 All around that point, the scale is different.
 
 To understand why, think about a globe of the Earth.
@@ -134,12 +134,12 @@ It turns out that we can zoom between these two layers, but we can’t ever see
 them at the same time.
 That is because their Coordinate Reference Systems are so different.
 The continents layer is in degrees, but the Indonesia layer is in
-meters.
+metres.
 In other words, one feature in the continents layer might be 8.5 degrees away
 from the equator, but the same feature in the Indonesia layer might be 900000
-meters away from the equator.
+metres away from the equator.
 
-8.5 degrees and 900000 meters is about the same distance,
+8.5 degrees and 900000 metres is about the same distance,
 but QGIS does not know that!
 One of our layers must be reprojected to match the other layer.
 To correct this, again enable tranformation:

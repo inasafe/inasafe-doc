@@ -13,20 +13,20 @@ Module 1: Advanced Editing
 Welcome to the intermediate guide for spatial data collection with
 OpenStreetMap. In the previous unit you learned how to draw points, lines,
 and shapes in JOSM; how to open your GPS waypoints and tracks in JOSM; and how
-to download, edit, and upload your changes on OpenStreetMap. In this chapter,
+to download, edit, and upload your changes on OSM. In this module,
 we will describe relations, JOSM editing tools and editing techniques in
 greater detail.
 
 .. note:: While this module is not extremely advanced, it is a step higher than
    the previous unit. If you don’t feel like you fully understand the
-   lessons leading up to this, you may wish to practice a little bit more
+   lessons leading up to this, you may wish to practise a little bit more
    before continuing.
 
 
 1. Advanced editing tools
 -------------------------
 
-There are a few ways you can access more editing tools in JOSM.  We will look
+There are a few ways you can access more editing tools in JOSM. We will look
 more at the default tools, as well as additional tools available through 
 plugins. 
 
@@ -170,7 +170,7 @@ default tags) by going to :menuselection:`Data ‣ Set building size`.
 .. image:: /static/training/intermediate/osm/image21.*
    :align: center
 
-This useful if you are drawing many buildings of a known dimension (such as
+This is useful if you are drawing many buildings of a known dimension (such as
 five by six metres). If you are mapping infrastructure which requires tags
 other than **building=yes**, you can set the desired default tags by going to
 :guilabel:`Advanced...`.
@@ -264,19 +264,19 @@ nodes that you most recently changed.
 ------------
 
 In the first unit we learned that there are three types of objects that can be
-drawn in OpenStreetMap - points (nodes), lines (ways), and polygons. Lines
+drawn in OSM - points (nodes), lines (ways), and polygons. Lines
 contain numerous points, and the line itself carries the attributes that define
 what it represents. Polygons are the same as lines, except that the the line
 must finish where it begins in order to form a shape.
 
-In fact, there is one other type of object in OpenStreetMap, and these are
+In fact, there is one other type of object in OSM, and these are
 called relations. In the same way that a line consists of other points, a
 relation contains a group of other objects, be they points, lines, or polygons.
 If you are looking to obtain advanced editing skills, then understanding and
 knowing how to properly edit relations is important.
 
 For example, imagine that you want to map a building that has courtyards in the
-center. You would need to draw a polygon around the outside of the building,
+centre. You would need to draw a polygon around the outside of the building,
 and you would need other polygons around the courtyards to indicate that they
 are not part of the building. This is an example of a relation. The relation
 would contain several polygons - and the attributes of the building would be
@@ -331,7 +331,7 @@ the object is.
 5. Click :guilabel:`OK`. The object will change colours and will now appear as 
    a building, but with a courtyard.
 
-The data behind the relation in our example is visible on OpenStreetMap: You
+The data behind the relation in our example is visible on OSM: You
 can see this multipologyon on OSM by going to
 http://www.openstreetmap.org/browse/relation/2435797.
 It will appear on OSM like this:
@@ -345,7 +345,7 @@ It will appear on OSM like this:
 The river below is another example of a multiploygon.
 Effectively it is the same as the building example, but with a greater number
 of members and covering a much larger area.
-It can be viewed on OpenStreetMap here:
+It can be viewed on OSM here:
 http://www.openstreetmap.org/browse/relation/1046961.
 
 .. image:: /static/training/intermediate/osm/image34.*

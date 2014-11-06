@@ -13,7 +13,7 @@ Module 6: Working with Vector Data
 - Symbolise vector layers
 
 In this module, we will learn what is meant by vector data.
-We will practice adding it to our QGIS projects, and we will learn how to
+We will practise adding it to our QGIS projects, and we will learn how to
 style the data in different ways.
 
 
@@ -299,7 +299,7 @@ are zoomed in very far.
 .. note::  Scale is a reference to how your map references what is actually on
    the ground in terms of size.
    Scale is usually given in terms like 1:10000, which means that one
-   centimeter of length on your map is equal to 10000 centimeters in the real
+   centimetre of length on your map is equal to 10000 centimetres in the real
    world.
    When you zoom in or out on a map, the scale changes,
    as you can see in the status bar at the bottom of QGIS.
@@ -442,7 +442,7 @@ Your map will now look like this:
     replacing will be lost.
 
 49. Try to change the appearance of the streets layer again, so that the roads 
-    are dark gray or black, with a thin yellow outline, and a dashed white line
+    are dark grey or black, with a thin yellow outline, and a dashed white line
     running in the middle.
 
 .. image:: /static/training/beginner/qgis-inasafe/image100.*
@@ -453,7 +453,7 @@ Your map will now look like this:
 
 Symbol levels also work for classified layers (i.e., layers having multiple
 symbols).
-We will cover classification in the next chapter, but you can see how it
+We will cover classification in the next module, but you can see how it
 works here with roads.
 By classifying various streets according to their type,
 we can give them different symbologies and they will still appear to flow
@@ -554,7 +554,7 @@ was before.
 
 62. Add a new symbol layer with a normal Simple fill.
 
-63. Make it gray with no outlines.
+63. Make it grey with no outlines.
 
 64. Move it underneath the point pattern symbol layer with the
     :guilabel:`Move down` button:

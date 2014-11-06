@@ -1,4 +1,4 @@
-.. _insafe-in-more-detail:
+.. _inasafe-in-more-detail:
 
 |project_name| in More Detail
 =============================
@@ -68,7 +68,7 @@ of the building to be shown in a new window or panel.
    :align: center
 .. note:: The data collected for each building in this tutorial was gathered by 
    provincial disaster managers through an OpenStreetMap data collection
-   program.  They collect important structures and essential information
+   program. They collect important structures and essential information
    about each building, such as its name, address, type and structural
    information.
 
@@ -179,7 +179,7 @@ Symbolising vector
 Now let's stylise the subvillage administration boundary to only
 see the flood affected (affected = 1) areas.
 
-19. Double click on the :guilabel:`flood_osm_bpbd18113_jakarta` layer - this
+19. Double-click on the :guilabel:`flood_osm_bpbd18113_jakarta` layer - this
     will open up the layer properties window.
 
 20. Navigate to the style tab.
@@ -422,3 +422,6 @@ statistics are also divided by administrative boundaries.
 
 .. image:: /static/training/socialisation/060_buildingaggregationresult.*
    :align: center
+
+
+:ref:`Go to next module --> <other-hazards>`

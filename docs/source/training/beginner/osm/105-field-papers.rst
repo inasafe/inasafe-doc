@@ -14,7 +14,7 @@ Module 5: Field Papers
 - Open Field Papers in JOSM
 
 In this module we will see how it is possible to record the coordinates of 
-places without a GPS.  We will use a tool called Field Papers,
+places without a GPS. We will use a tool called Field Papers,
 which allows you to print a map of an area, draw on it and add notes,
 and load the paper back into JOSM, where you can add your locations to
 OpenStreetMap.
@@ -27,7 +27,7 @@ how the process works:
 
 **Step 1:**  Locate the area you want to map on the Field Papers website.
 Print out a map of this area. You can choose to print the current map of
-the area with OpenStreetMap, or you can choose to print aerial imagery,
+the area with OSM, or you can choose to print aerial imagery,
 if it is available in your area.
 
 **Step 2:**  Use your printed map to survey the area. Add more places by
@@ -39,13 +39,13 @@ where you can record more detailed information about each object.
 .. image:: /static/training/beginner/osm/image68.*
    :align: center
 
-**Step 3:**  Scan your paper into the computer.  If you do not have a
+**Step 3:**  Scan your paper into the computer. If you do not have a
 scanner, you can take a photograph of the paper, if your camera is able to
-take high quality pictures.  Upload the image to the Field Papers website
+take high quality pictures. Upload the image to the Field Papers website
 (`http://fieldpapers.org/upload.php <http://fieldpapers.org/upload.php>`_).
 
 **Step 4:** In JOSM, load the Field Paper. Use the objects you drew as a
-reference to add them digitally into OpenStreetMap.
+reference to add them digitally into OSM.
 
 .. image:: /static/training/beginner/osm/image69.*
    :align: center
@@ -62,7 +62,7 @@ nothing more than paper. How is this possible?
 
 When you print a Field Paper, it comes with a square barcode on the
 bottom of the page. This bar code allows Field Papers to determine the
-exact location of the map that you are using to survey.  Later,
+exact location of the map that you are using to survey. Later,
 when you load the paper back into JOSM, all the objects that you drew will
 be in shown in their actual locations, or at least quite close,
 which is good enough for us.
@@ -100,8 +100,8 @@ zoom in and out, and drag the papers to cover specific boundaries on the map.
 .. image:: /static/training/beginner/osm/image73.*
    :align: center
 
-5. Click on the various buttons to see what each does.  Notice that in our
-   example we are presented with a two page set of Field Papers.  To add or
+5. Click on the various buttons to see what each does. Notice that in our
+   example we are presented with a two page set of Field Papers. To add or
    subtract a page, click on the :guilabel:`+` and :guilabel:`-` buttons
    on the map. It may be easiest to create only one page the first time
    that you use Field Papers.
@@ -129,10 +129,10 @@ zoom in and out, and drag the papers to cover specific boundaries on the map.
 
 10. Give your map a name, and if you want, you can add notes to be
     printed on the map, such as questions you want to remember to answer or
-    specific places you want to identify.  Then click :guilabel:`Next`.
+    specific places you want to identify. Then click :guilabel:`Next`.
 
-11. Finally choose your layout.  Indicate whether you want pages only
-    for your maps, or if you want notes on the same page.  If you choose the
+11. Finally choose your layout. Indicate whether you want pages only
+    for your maps, or if you want notes on the same page. If you choose the
     notes option, then half of the page will be left for taking notes,
     and the other half will contain the map.
 
@@ -149,8 +149,8 @@ zoom in and out, and drag the papers to cover specific boundaries on the map.
     If it loads in your browser, you may need to save it by going 
     to :menuselection:`File ‣ Save`.
 
-14. When the download is finished, open the PDF file.  Connect your computer
-    to a printer and print the page.  If everything goes well,
+14. When the download is finished, open the PDF file. Connect your computer
+    to a printer and print the page. If everything goes well,
     you should now have your map printed on paper.
 
 4. Map with Field Papers
@@ -159,28 +159,28 @@ zoom in and out, and drag the papers to cover specific boundaries on the map.
 15. Take your Field Paper outside, and use it as a guide to walk and identify
     new places that are not on the map.
 
-16. Draw lines for roads, shapes for buildings, and so forth.  Write notes
+16. Draw lines for roads, shapes for buildings, and so forth. Write notes
     about each location directly on the map, or write numbers on the map that
     relate to numbers in your notebook, where you can write more detailed
     information about each object.
 
 When you are satisfied with your additions on the paper map,
-then you are ready to add them digitally into OpenStreetMap.
+then you are ready to add them digitally into OSM.
 
 5. Scan and upload
 ------------------
 
 17. Field Papers are useful for mapping with nothing more than paper,
-    but they are not 100% magic.  We will still need to add our paper into JOSM,
-    add our information digitally, and save the changes on OpenStreetMap.
+    but they are not 100% magic. We will still need to add our paper into JOSM,
+    add our information digitally, and save the changes on OSM.
 
 18. The first step is to scan your Field Paper. Do this by
     attaching a scanner to your computer, scanning the paper,
     and saving it as an image file. If you don’t have a scanner,
     take a photograph of the paper, but be careful to take
-    a good  quality photo.  Make sure that the paper is flat and the camera
-    is directly in front of it.  Be sure to include the barcode in the image,
-    as Field Papers will not work without it.  Here is an example of a
+    a good  quality photo. Make sure that the paper is flat and the camera
+    is directly in front of it. Be sure to include the barcode in the image,
+    as Field Papers will not work without it. Here is an example of a
     scanned/photographed image:
 
 .. image:: /static/training/beginner/osm/image68.*

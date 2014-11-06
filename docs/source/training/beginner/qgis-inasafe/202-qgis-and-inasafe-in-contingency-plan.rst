@@ -18,7 +18,7 @@ GIS has an important role in contingency planning.
 A contingency plan is intended to support community preparedness to
 anticipate the arrival of a potentially hazardous event,
 such as an earthquake or tsunami.
-The purpose of such a plan is to minimize casualties and losses in case of
+The purpose of such a plan is to minimise casualties and losses in case of
 such an event.
 
 Before contemplating a contingency plan, one must first consider potential
@@ -57,9 +57,9 @@ Hence the more detailed and accurate your data is, the better your analysis
 and action may be during a disaster.
 
 As we shall see in this unit, some data may be obtained from various agencies
-that specialize in certain kinds of data.
+that specialise in certain kinds of data.
 For example, we will obtain our hazard models (hazard data) from various
-organizations that specialise in this.
+organisations that specialise in this.
 As for exposure data, some data we may find through agencies,
 such as population data.
 For infrastructure data, collecting data at a community
@@ -72,10 +72,10 @@ QGIS is a user-friendly open-source Geographic Information System (GIS).
 It runs on Windows, Mac OSX, and Linux.
 QGIS provides a continually growing number of capabilities provided by core
 functions and plugins.
-You can visualize, manage, edit, analyse data, and compose printable maps.
+You can visualise, manage, edit, analyse data, and compose printable maps.
 QGIS is great because:
 
-- It’s completely free.  It doesn’t cost anything.
+- It’s completely free. It doesn’t cost anything.
 - It’s free, as in liberty.
   If you think a feature is missing, you can sponsor the development of a
   feature, or add it yourself if you are familiar with programming.

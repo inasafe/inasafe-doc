@@ -24,7 +24,7 @@ only objects in locations, but also information about those objects. In this
 lesson we will explore the attribute data of an object and understand what the
 various data can be useful for.
 
-If you would like to start with the examples used in this chapter, begin by
+If you would like to start with the examples used in this module, begin by
 opening the QGIS project :file:`sleman_2_6.qgs`.
 
 1. Attribute data
@@ -51,14 +51,14 @@ you’re able to use a given dataset, or if you need to look for another one tha
 has the required attribute data.
 
 Different attributes are useful for different purposes. Some of them can be
-represented directly as text for the map user to see.  Next we’ll see how to use
+represented directly as text for the map user to see. Next we’ll see how to use
 attributes as labels, so that users can see the text on your map.
 
 2. Label tool
 -------------
 
 Labels can be added to a map to show any information about an object. Any 
-vector layer can have labels associated with it.  Labels rely on the attribute 
+vector layer can have labels associated with it. Labels rely on the attribute 
 data of a layer for their content.
 
 There are several ways to add labels in QGIS, but some are better than others.
@@ -70,7 +70,7 @@ ensure that it has been activated.
 
 3. Go to the menu item :menuselection:`View ‣ Toolbars`.
 4. Ensure that the Label item has a checkmark next to it. If it doesn’t, click on
-   the Label item, and it will be activated.  The Label toolbar looks like this:
+   the Label item, and it will be activated. The Label toolbar looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image118.*
    :align: center
@@ -213,7 +213,7 @@ for the next section!
 
 Labels are a good way to communicate information such as the names of individual
 places, but they can’t be used for everything. For example, let’s say that we
-want to show which district each feature in our vegetation layer is in.  Using
+want to show which district each feature in our vegetation layer is in. Using
 labels, it would look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image132.*
@@ -228,7 +228,7 @@ effectively.
 
 26. Open Layer Properties for the :guilabel:`vegetasi` layer.
 
-27.  Go to the :guilabel:`Style` tab.
+27. Go to the :guilabel:`Style` tab.
 
 28. Click on the dropdown that says :guilabel:`Single Symbol`.
 
@@ -284,14 +284,14 @@ can do about that.
 38. Now click :guilabel:`Classify` again, and new symbols will appear.
 
 39. Change the colour for each type of vegetation by double-clicking on the 
-    coloured block next to its name.  You can change the colour for each type 
+    coloured block next to its name. You can change the colour for each type 
     of vegetation to something that you think is more applicable, as we’ve 
     done here:
 
 .. image:: /static/training/beginner/qgis-inasafe/image141.*
    :align: center
 
-40. Notice that the category on the bottom is empty.  Select it, and click the
+40. Notice that the category on the bottom is empty. Select it, and click the
     :guilabel:`Delete` button.
 
 41. When we click :guilabel:`OK` our map looks like this:
@@ -300,7 +300,7 @@ can do about that.
    :align: center
 
 If you feel confident in your new classification skills, try to classify the
-residential layer yourself.  Use darker colours to distinguish it from
+residential layer yourself. Use darker colours to distinguish it from
 vegetation.
 
 3.2 Ratio classification

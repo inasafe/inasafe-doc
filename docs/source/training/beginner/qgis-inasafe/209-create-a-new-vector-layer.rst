@@ -15,7 +15,7 @@ Module 9: Creating Vector Layers
 Creating a map using data that already exists is only the beginning.
 We have already learned how to edit and add features to OpenStreetMap using
 JOSM.
-In this chapter, we will discuss how to edit existing vector layers in QGIS,
+In this module, we will discuss how to edit existing vector layers in QGIS,
 and how to create an entirely new dataset.
 
 1. The layer creation dialog
@@ -95,7 +95,7 @@ The new layer should appear in your Layers panel.
 
 When you create new data, it should represent objects that really
 exist on the ground.
-We have already learned of numerous ways to collect data using OpenStreetMap
+We have already learned of numerous ways to collect data using OSM
 tools.
 We learned about GPS to record locations, Walking Papers, and of course,
 aerial imagery.
@@ -139,7 +139,7 @@ tutorial directory.
 19. Right-click on the :guilabel:`UGM` layer and click
     :guilabel:`Zoom to Layer Extent`
 
-20. Zoom in to the center of the raster image.
+20. Zoom in to the centre of the raster image.
     We will be digitising three areas:
 
 .. image:: /static/training/beginner/qgis-inasafe/image180.*
@@ -281,7 +281,7 @@ create points in point layers and lines in line layers.
 In the previous section we digitised a raster image, thus creating vector
 data.
 This is essentially the same process as when we use Bing imagery in JOSM to
-add to OpenStreetMap.
+add to OSM.
 In both of these cases, the imagery that we use is already
 **georeferenced** - that is, it is correctly placed in its proper location.
 
@@ -299,7 +299,7 @@ How can you digitise it?
 The first step is to turn your paper map into a digital image that you can
 manipulate with your computer.
 You can do this with a scanner (or possibly a digital camera),
-although doing so is beyond the scope of this chapter.
+although doing so is beyond the scope of this module.
 
 4.1 Georeferencing an image
 ...........................
@@ -438,7 +438,7 @@ transparent to see Merapi in the background.
 Knowing how to georeference is important when you want to digitise from a
 paper map or an image that is not already georeferenced.
 Once you have georeferenced an image like this, you can apply the same
-digitisation techniques that we learned previously in this chapter to create
+digitisation techniques that we learned previously in this module to create
 vector shapefiles that can be used in QGIS and |project_name|.
 
 :ref:`Go to next module --> <vector-analysis-for-problem-solving>`

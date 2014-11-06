@@ -29,7 +29,7 @@ good understanding of how to draw maps in JOSM.
 
 There is a copy of JOSM in the :file:`software` folder of the package that
 accompanies this course. If you don’t have this or would like the most
-up-to-date version, follow the instructions here.  Otherwise skip ahead 
+up-to-date version, follow the instructions here. Otherwise skip ahead 
 to :ref:`install-josm`.
 
 1. Open your web browser - this may be Firefox, Chrome, Opera,
@@ -56,8 +56,9 @@ The website should look something like this:
 ------------------
 
 4. You may have problems installing JOSM if Java is not already installed on
-   your computer. Install Java by running :file:`jre-7u21-windows-i586`
-   in the :file:`software` folder.  It can also be downloaded here:
+   your computer. Install Java by running :file:`jre-8u25-windows-i586`
+   in the :file:`software` folder. The exact version may be different. The most
+   up-to-date version can also be downloaded here:
    `http://www.java.com/en/download/ <http://www.java.com/en/download/>`_
 
 5. Find the JOSM install file on your computer. It should be named
@@ -119,7 +120,7 @@ it is enabled in the JOSM settings.
 3.2. Adding presets
 ...................
 
-We will be using presets so that we can add special data to OpenStreetMap.
+We will be using presets so that we can add special data to OSM.
 Don’t worry if this is unclear right now - we will learn more about presets 
 as we go along.
 
@@ -201,7 +202,7 @@ into your language, you can change it in the Preferences.
 Now let’s open up a sample OSM file which we will use to learn the basic
 ways to draw maps with JOSM. Note that this map is not real,
 in that it is not a real map of a real place, so we will not save it on
-OpenStreetMap.
+OSM.
 
 29. The file is located in :file:`osm` and is named :file:`sample.osm`.
 
@@ -340,7 +341,7 @@ and whether our shapes are fields, buildings, or something else.
     some important fields, such as the name of the object.
 
 47. When you are finished entering the information, click :guilabel:`Apply Preset`.
-    If everything went well, your point, line or shape should change colors or
+    If everything went well, your point, line or shape should change colours or
     show a symbol. This is because it has now been defined.
 
 Exercise:

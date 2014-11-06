@@ -20,7 +20,7 @@ You add attributes to a point, line, or shape by attaching tags to it.
 By using the JOSM presets menu, you can easily attach the correct tags to an
 object by finding the type of object you want to create through a menu,
 and then filling in information in a form.
-In this chapter we will review tags and presets once more,
+In this module we will review tags and presets once more,
 and then learn how we can create our own presets menus to use in JOSM.
 
 1. Tags and presets
@@ -62,7 +62,7 @@ website, the object looks like this:
 
 The reason this works is because we’ve applied the appropriate **tags**.
 
-Because OpenStreetMap is so open, anybody can add any tags they want to
+Because OSM is so open, anybody can add any tags they want to
 anything.
 But what happens when mappers in England disagree with mappers in Japan about
 the best way to tag something?
@@ -72,7 +72,7 @@ If some people tag schools as **amenity=school** but others tag them as
 **education=school**, it is a problem.
 Hence, people must agree on how to tag places.
 
-OpenStreetMap has been around for many years now, so there is an accepted
+OSM has been around for many years now, so there is an accepted
 standard for how to identify most types of locations, and those are listed on
 the Map Features page on the OSM Wiki.
 
@@ -110,7 +110,7 @@ similar to HTML.
 The key difference is that XML is designed to carry data,
 not display it.
 Many applications on the internet use XML to transmit data,
-including OpenStreetMap.
+including OSM.
 XML uses **elements**, and each element can contain child elements inside it.
 For example, let’s imagine that we want to create an XML file that contains
 data about a restaurant menu.
@@ -151,7 +151,7 @@ XML Terminology
   what is contained
 - **element:**  any XML object, contained by opening and closing tags, such as
   **<item>...data...</item>**
-- **tag:**  something contained in brackets, such as **<item>**.  **<item>** is
+- **tag:**  something contained in brackets, such as **<item>**. **<item>** is
   the opening tag of an element, and **</item>** is the closing tag.
 - **attribute:**  a piece of information contained inside a tag, such as
   **name=“Hamburger”**
@@ -169,9 +169,9 @@ point we created in JOSM previously.
      </node>
   </osm>
 
-This XML has a root element **<osm>** which indicates that OpenStreetMap data is
+This XML has a root element **<osm>** which indicates that OSM data is
 contained inside.
-Then it has one **<node>** element which is the OpenStreetMap way of
+Then it has one **<node>** element which is the OSM way of
 describing a **point**.
 The node has numerous attributes, including a unique id number,
 the coordinates of the point, the user who created the point,
@@ -180,10 +180,10 @@ Between the opening **<node>** tag and the closing **</node>** tag there are
 two more elements of type **<tag>**.
 Each **<tag>** has an attribute k and an attribute v.
 These are the keys and values that we added in JOSM.
-Notice that the **<tag>** elements don’t have a closing **</tag>**.  This is
+Notice that the **<tag>** elements don’t have a closing **</tag>**. This is
 because they don’t have any other elements contained within them,
 but instead have a forward slash indicating that it does not require a
-closing tag.  **<tag ...attributes />**
+closing tag. **<tag ...attributes />**
 
 3. JOSM presets files
 ---------------------
@@ -274,15 +274,15 @@ There are several attributes describing the element.
 | icon="presets/church.*"        | The icon of the object. \*s are the most effective in OSM since they    |
 |                                | are compressed low-colour graphics with transparent backgrounds.        |
 +--------------------------------+-------------------------------------------------------------------------+
-| type="node,closedway,relation" | The types of object that this preset can be applied to.  Node means it  |
+| type="node,closedway,relation" | The types of object that this preset can be applied to. Node means it   |
 |                                | can be applied on a point, way means it can be applied to a line,       |
 |                                | closedway means it can be applied to a shape, and relation means it can |
 |                                | be applied to a relation, which is a type of OSM object we have not     |
-|                                | discussed.  Notice that way is not an option here, because a place of   |
+|                                | discussed. Notice that way is not an option here, because a place of    |
 |                                | worship cannot be a line - it must be a point or a shape.               |
 +--------------------------------+-------------------------------------------------------------------------+
 
-The second line provides a link to the OpenStreetMap wiki page for this type of
+The second line provides a link to the OSM wiki page for this type of
 location.
 
 **<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=place_of_worship" />**
@@ -341,8 +341,8 @@ For this, let’s invent some new tags:
 +---------------------+---------------------------+---------------------------------------------------+
 | utility:phone       | landline, mobile, yes, no | Does the household have phone access? landline    |
 |                     |                           | indicates that there is a hard phone line in the  |
-|                     |                           | house.  mobile indicates that the household has a |
-|                     |                           | mobile phone.  If we want to be less descriptive, |
+|                     |                           | house. mobile indicates that the household has a  |
+|                     |                           | mobile phone. If we want to be less descriptive,  |
 |                     |                           | we can use yes or no                              |
 +---------------------+---------------------------+---------------------------------------------------+
 | utility:internet    | landline, mobile, yes, no | Same values as for phone, this will indicate if   |
@@ -495,7 +495,7 @@ Now let’s open our presets file in JOSM and see how it looks!
 
 26. Create a new layer and add a point.
 
-27. Go to the presets menu.  You should see the menu that you just created!
+27. Go to the Presets menu. You should see the menu that you just created!
 
 .. image:: /static/training/intermediate/osm/image103.*
    :align: center

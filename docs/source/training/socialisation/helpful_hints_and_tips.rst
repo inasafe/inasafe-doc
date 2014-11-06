@@ -10,7 +10,7 @@ Helpful Hints And Tips
 * Review frequently asked questions
 
 You have now gone through |project_name| using four different natural hazards,
-changing a variety of parameters and analysing the results. This chapter has
+changing a variety of parameters and analysing the results. This module has
 been designed to help you understand a little more about |project_name| as
 well as where you can go for help.
 
@@ -28,9 +28,9 @@ It is recommended to check (in addition to the defaults) the boxes next to:
 |project_name| Website
 ----------------------
 
-This tutorial is not the only documentation on |project_name|.  Within
+This tutorial is not the only documentation on |project_name|. Within
 the |project_name| website you can find not only more training documentation,
-but all user and developer documentation.  This website is
+but all user and developer documentation. This website is
 updated with each new release.
 
 .. image:: /static/training/socialisation/077_website.*
@@ -47,12 +47,12 @@ Frequently Asked Questions
 **Do I need to pay to use** |project_name| ?
 No, the software is completely Free and Open Source.
 
-**What license is** |project_name| **published under?**
-|project_name| is published under the GPL version 3 license,
+**What licence is** |project_name| **published under?**
+|project_name| is published under the GPL version 3 licence,
 the full text of which is available at www.gnu.org/licenses/gpl-3.0.txt.
-Under the terms of the license of you may freely copy,
+Under the terms of the licence of you may freely copy,
 share and modify the software, as long as you make it available under the
-same license.
+same licence.
 
 **How is the project funded?**
 The project is being developed for the good of humanity and has been jointly
@@ -72,7 +72,7 @@ Otherwise email inasafe-users@googlegroups.com
 
 **Where do I get Hazard and Exposure data from?**
 Some data sources are described in the section on Functionality and Datasets.
-You can get open exposure data from  www.asiapop.org for population
+You can get open exposure data from  http://www.asiapop.org for population
 and from OpenStreetMap for building structures (however you may need to still
 digitise the structures) To download OSM data use the |project_name| 
 OSM Download tool as described in :ref:`other-hazards`.
@@ -96,3 +96,4 @@ the following:
    close and re-open QGIS to force an update.
 #. In the Python Plugin Manager main tab now you should find
    |project_name| available.
+

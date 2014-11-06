@@ -20,7 +20,7 @@ Module 10: Vector Analysis for Problem Solving
 
 The power of GIS is its ability to help us analyse data. Vector data can be
 analysed to reveal how different features interact with each other. In this
-chapter, we’ll work through the GIS process, attempting to solve a problem, and
+module, we’ll work through the GIS process, attempting to solve a problem, and
 as we proceed, we will learn about various analysis tools that QGIS provides.
 
 1. The GIS process
@@ -46,7 +46,7 @@ the following criteria for these locations:
        Pakem.
     2) The area must be outside of Merapi Eruption Disaster Prone Region III.
     3) Access to the site should be easy, so it will not be more than 300
-       metres from a main roads.
+       metres from a main road.
     4) The site should be close to health facilities.
     5) The land area should be between 50000-150000 m².
 
@@ -59,7 +59,7 @@ To answer these questions, we’re going to need the following data:
     2) Streets in Sleman
     3) Location of health facilities
     4) KRB Merapi (Merapi Eruption Disaster Prone Region - this is the
-       same data that we learned how to georeference in the previous chapter)
+       same data that we learned how to georeference in the previous module)
 
 .. note:: For this exercise the data has been provided already, but in a real
    scenario you may need to find providers for the datasets in question. In
@@ -77,7 +77,7 @@ Now that we know what we want to do, let’s start doing it!
 .. image:: /static/training/beginner/qgis-inasafe/image206.*
    :align: center
 
-2. Start adding the layers we will use.  In the :file:`Sleman/Merapi` folder,
+2. Start adding the layers we will use. In the :file:`Sleman/Merapi` folder,
    add the layers :file:`jalan_sleman_49S`, :file:`tempat_penting_Sleman_49S`,
    :file:`KRB3_49S` and :file:`vegetasi_49S`. Your Layers panel should look 
    like this:
@@ -87,13 +87,13 @@ Now that we know what we want to do, let’s start doing it!
 
 .. note::  Most of the layers are pretty self-explanatory, but what are KRB3,
    KRB2, and KRB1? These layers show areas of impact when Merapi erupts. KRB3 is
-   the area of worst impact, KRB2 is medium, and KRB1 has little impact.  In
+   the area of worst impact, KRB2 is medium, and KRB1 has little impact. In
    this scenario we want to find locations that are not within KRB3.
 
-The data we are working with now is similar to that from previous chapters, but
+The data we are working with now is similar to that from previous modules, but
 now it is in a Projected Coordinate System. The previous data was saved in
 WGS84 - this meant that the coordinates of our features were stored in degrees,
-which aren’t very good for measuring size or distance.  By using a projected
+which aren’t very good for measuring size or distance. By using a projected
 system our coordinates are in metres, which is important for analysis, because
 we can easily measure distances between and around features.
 
@@ -134,7 +134,7 @@ farms and dry fields that are, in fact, in these sub-districts!
 .. image:: /static/training/beginner/qgis-inasafe/image209.*
    :align: center
 
-Next we are going to build a query.  A query is a statement that allows us to 
+Next we are going to build a query. A query is a statement that allows us to 
 show only the data that we want from a layer. In this case, we want to instruct 
 QGIS to only show us farms and dry fields which have a sub-district value equal to
 Ngemplak, Turi, or Pakem.
@@ -277,7 +277,7 @@ metres of a major road. Once again, we will use the Query Builder.
 .. image:: /static/training/beginner/qgis-inasafe/image222.*
    :align: center
 
-8.  Looking for health facilities
+8. Looking for health facilities
 ---------------------------------
 
 36. Using the same approach, build a query for the :guilabel:`lokasi_penting` 
@@ -360,7 +360,7 @@ functionality to help us reach a solution.
 ---------------------
 
 Now we can see areas where a main road is 300 metres away and where there is a
-health facility within 2.5 km.  But we only want the areas where both of these
+health facility within 2.5 km. But we only want the areas where both of these
 criteria are satisfied at once!  To do that we will use the Intersect tool.
 
 48. Go to :menuselection:`Vector ‣ Geoprocessing Tools ‣ Intersect`.
@@ -378,7 +378,7 @@ criteria are satisfied at once!  To do that we will use the Intersect tool.
 50. Click :guilabel:`OK` and add the layer to the project when prompted.
 
 If we hide the original layers, we can see that our new layers shows us
-the areas where they intersect.  These are the areas where both of
+the areas where they intersect. These are the areas where both of
 these criteria are satisfied.
 
 .. image:: /static/training/beginner/qgis-inasafe/image231.*
@@ -428,8 +428,8 @@ If we hide all the other layers, we can see the resulting layer:
 13. Select land areas of the appropriate size
 ---------------------------------------------
 
-Hooray!  We have now found land areas that meet four of our five criteria.  The
-only remaining criteria is the size of the land.  We need to make sure that our
+Hooray!  We have now found land areas that meet four of our five criteria. The
+only remaining criteria is the size of the land. We need to make sure that our
 possible locations are between 50000-150000 m².
 
 57. Open the attribute table for the :guilabel:`kebun_tegalan_lokasi_terpilih`

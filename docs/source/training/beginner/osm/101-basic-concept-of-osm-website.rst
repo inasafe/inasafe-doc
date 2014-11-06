@@ -7,14 +7,14 @@ Module 1: The OpenStreetMap Website
 
 **Learning Objectives**
 
-- Understand the concept and definition of OpenStreetMap
+- Understand the concept of OpenStreetMap
 - Understand the definition and objectives of data collection
 - Understand the composition of a map
-- Make a handwritten sketch of an area
+- Make a hand-drawn sketch of an area
 
 Maps are a good way to convey information. Maps are visual representations of
-our world. They can often demonstrate an idea better than words.  This in
-turn can also help answer important questions.  Where is the closest school
+our world. They can often demonstrate an idea better than words. This in
+turn can also help answer important questions. Where is the closest school
 or hospital?  Who has the least access to these facilities?  Where is
 poverty the most problematic? Questions like these can often best be
 expressed with maps, and maps can help find solutions to these questions.
@@ -38,9 +38,9 @@ important, and who it might be important to.
 
 If your town is like most, you may have drawn some lines to represent roads,
 possibly a river or stream. Perhaps you added important buildings such as
-schools and offices, fields, or boundaries.  Whatever you drew,
-you probably used symbols - a line to symbolize a road,
-a square to symbolize a building, and so on. Your map is a representation
+schools and offices, fields, or boundaries. Whatever you drew,
+you probably used symbols - a line to symbolise a road,
+a square to symbolise a building, and so on. Your map is a representation
 of what is on the ground.
 
 .. image:: /static/training/beginner/osm/image9.*
@@ -54,7 +54,7 @@ of what is on the ground.
    *Examples of Symbols*
 
 
-Your map is informative.  You might use a map like this to explain to
+Your map is informative. You might use a map like this to explain to
 someone where different places are, where problems are in your community,
 or merely to help someone find their way around. The uses of your map is
 limited though. There is only one copy of the map and the way you drew it
@@ -94,12 +94,12 @@ at any time, totally free.
 
    *Digital Maps with OpenStreetMap*
 
-OpenStreetMap is digital, which makes it extremely useful for us,
+OSM is digital, which makes it extremely useful for us,
 and it is shared, which means that everybody benefits from the work of
 everybody else.
 
 In this unit, you will learn how to make a digital map. You will learn how
-to use the OpenStreetMap platform, and you will make your first edits and
+to use the OSM platform, and you will make your first edits and
 additions to the worldwide map.
 
 :ref:`Go to next module --> <working-with-osm>`

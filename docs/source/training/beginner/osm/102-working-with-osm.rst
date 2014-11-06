@@ -15,7 +15,7 @@ Module 2: Working with OSM
 - Save edits             
 
 In this module we will learn step-by-step how to navigate the OpenStreetMap
-website, view and print maps, and sign up for a user account.  After you
+website, view and print maps, and sign up for a user account. After you
 have your own username and password, you will be able to add your first
 points to the map.
 
@@ -37,26 +37,26 @@ When the page has finished loading, it should look something like this:
 2. Navigating the map
 ---------------------
 
-4. The main thing we see is the map.  Move the map by clicking on it
+4. The main thing we see is the map. Move the map by clicking on it
    with your left mouse button, holding the button down,
    and dragging your mouse around.
 
 5. If you have a mouse with a scroll-wheel, zoom in and out on the map by
-   turning the wheel.  If you don’t have a scroll-wheel,
+   turning the wheel. If you don’t have a scroll-wheel,
    click the :guilabel:`+` and :guilabel:`-` buttons on in the upper right 
    corner of the map.
 
 6. To search for a place, left-click in the box labeled
    :guilabel:`Search` on the left side of the page. Type in the name of your
-   town or village and press Enter.  A window should appear to the
-   left of the map with the results of your search.  Click on the location that
-   looks closest to the one you want.  The map will automatically move to the 
+   town or village and press Enter. A window should appear to the
+   left of the map with the results of your search. Click on the location that
+   looks closest to the one you want. The map will automatically move to the 
    location you chose.
 
 3. Saving an image of the map
 -----------------------------
 
-To save an image from OpenStreetMap that you can easily print,
+To save an image from OSM that you can easily print,
 follow these instructions:
 
 7. Click the :guilabel:`Share` button on the right side of the map.
@@ -92,10 +92,10 @@ Options appear which look like this:
 4. Creating an OpenStreetMap account
 ------------------------------------
 
-Now that we have seen the website, we must create an OpenStreetMap account so
+Now that we have seen the website, we must create an OSM account so
 we can start mapping.
 
-13. Return to the OSM website.  Click :guilabel:`Sign Up` in the
+13. Return to the OSM website. Click :guilabel:`Sign Up` in the
     top right corner of the page.
 
 You should see a new page that looks like this:
@@ -107,17 +107,17 @@ There are five boxes on this page that you need to fill in to register an
 account with OSM.
 
 14. Enter your email address in the first two boxes. You should enter the same
-    email address in both boxes.  Later, you will need to open your email to
-    confirm your account with OpenStreetMap.
+    email address in both boxes. Later, you will need to open your email to
+    confirm your account with OSM.
 
-15. In the third box, enter the username that you would like to have.  You
+15. In the third box, enter the username that you would like to have. You
     will not be able to choose a username that someone else has chosen before,
     so it should be creative. If you try to enter something simple,
     like your first name, it is likely that someone has already claimed that
     name.
 
-16. Enter a new password in the fourth and fifth boxes.  Enter the
-    same password in both boxes.  It does not need to be the same as the
+16. Enter a new password in the fourth and fifth boxes. Enter the
+    same password in both boxes. It does not need to be the same as the
     password for your email.
 
 17. You will need to remember your user name and your password so that you can
@@ -126,41 +126,41 @@ account with OSM.
 18. After completing all the boxes, click :guilabel:`Continue` at the
     bottom of the page.
 
-19. If there are any problems, an error message may pop up.  Check to make
+19. If there are any problems, an error message may pop up. Check to make
     sure that your email is the same in the first to boxes,
-    and your password is the same in the bottom two boxes.  If the third box is
+    and your password is the same in the bottom two boxes. If the third box is
     highlighted red, it means that someone else has already chosen your
     username, and you should try a different name.
 
 19. Open a separate window or tab in your internet browser,
-    and navigate to your email.  Common email sites are
+    and navigate to your email. Common email sites are
     `mail.yahoo.com <http://mail.yahoo.com>`_ and
     `gmail.com <http://gmail.com>`_.
 
-20. Enter your email address and your email password to open your email.  Note
-    that this is not the same as your OpenStreetMap username and password.
+20. Enter your email address and your email password to open your email. Note
+    that this is not the same as your OSM username and password.
 
 21. If everything was successful with your registration,
-    you should see an email from OpenStreetMap in your inbox. Open the email.
-    It should look like the image below.  Click on the link that is identified
+    you should see an email from OSM in your inbox. Open the email.
+    It should look like the image below. Click on the link that is identified
     below:
 
 .. image:: /static/training/beginner/osm/image16.*
    :align: center
    :width: 500pt
  
-22. A new tab or window will open.  If everything went well,
+22. A new tab or window will open. If everything went well,
     you should have an OSM account!
 
-23. On the OpenStreetMap page, click “Log In” in the top right corner.  Enter
-    your OpenStreetMap username and password and press Enter.  You should now be
-    logged in.  You will see your username in the upper right corner of the
+23. On the OSM page, click “Log In” in the top right corner. Enter
+    your OSM username and password and press Enter. You should now be
+    logged in. You will see your username in the upper right corner of the
     page.
 
 5. Adding your first points
 ---------------------------
 
-Now that you are logged in with your username on the OpenStreetMap website,
+Now that you are logged in with your username on the OSM website,
 you can add your first point to the map.
 
 24. Move the map to a place that you know very well, such as your town or village.
@@ -172,7 +172,7 @@ you can add your first point to the map.
 
 27. Click :guilabel:`Edit with iD (in-browser editor)`
 
-28. The online editor for OpenStreetMap should open. For a tour of the editor, click
+28. The online editor for OSM should open. For a tour of the editor, click
     :guilabel:`Start the Walkthrough`. To begin editing, click :guilabel:`Edit Now`.
 
 29. Add a point to the map by clicking :guilabel:`Point` at the top, and then clicking

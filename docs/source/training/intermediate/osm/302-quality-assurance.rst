@@ -16,10 +16,10 @@ does something the “wrong” way, there are always other mappers ready to help
 and fix errors.
 As you map more and more, it will continue to get easier, and you will
 learn the “proper” way to do things.
-In this chapter we will take a look at the JOSM validation tool,
+In this module we will take a look at the JOSM validation tool,
 which is an automated tool to search for errors and warnings in your data.
 We will also take a look at one of the online validation tools,
-which can aid us further in identifying mistakes on OpenStreetMap.
+which can aid us further in identifying mistakes on OSM.
 
 1. Errors and warnings
 ----------------------
@@ -81,7 +81,7 @@ and errors, if there are any.
    :align: center
 
 3. Errors should almost always be fixed.
-   Zoom to an error by right clicking on it in the window and
+   Zoom to an error by right-clicking on it in the window and
    selecting :guilabel:`Zoom to Problem`.
    Then fix the mistake manually.
    
@@ -167,7 +167,7 @@ However, it is sometimes helpful to find errors.
 .. image:: /static/training/intermediate/osm/image63.*
    :align: center
 
-OpenStreetMap depends on people correcting and editing mistakes.
+OSM depends on people correcting and editing mistakes.
 Editing and validating data is important for improving maps.
 If you do not have time to get in the field with a GPS or trace imagery,
 validating objects and attribute data is a good way to contribute.
@@ -206,7 +206,7 @@ To see how the tasking manager works, let’s take a closer look.
 8. Click :guilabel:`login to OpenStreetMap`.
 
 9. Here you must agree to allow this application some access to your 
-   OpenStreetMap account. To do so, click :guilabel:`Save Changes`.
+   OSM account. To do so, click :guilabel:`Save Changes`.
 
 .. image:: /static/training/intermediate/osm/image46.*
    :align: center
@@ -350,7 +350,7 @@ This is what is great about OSM, you can always make it better!
 6. Presets standardisation
 --------------------------
 
-OpenStreetMap is used around the world by speakers of many different languages.
+OSM is used around the world by speakers of many different languages.
 Any feature in OSM can have whatever tags users choose. While this provides
 a lot of flexibility, it is important that users worldwide agree on the same
 tags to identify the same objects no matter what country they are located in.
@@ -370,13 +370,13 @@ Using standardised tags aids in:
 - Easier data search and analysis
 - Setting benchmarks for improvement 
 - Data validation
-- Map rendering on OpenStreetMap website
+- Map rendering on OSM website
 
 
 7. KeepRight
 ------------
 
-19. The Keep Right website is another useful validation tool for OpenStreetMap.
+19. The Keep Right website is another useful validation tool for OSM.
     Open your web browser and head to http://keepright.at.
 
 20. If needed, switch the site into Indonesian by choosing :guilabel:`id` from 

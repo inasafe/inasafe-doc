@@ -22,7 +22,7 @@ Licence
 
 .. image:: /static/training/beginner/osm/image2.*
 
-All contents and materials in this document is licensed as Creative Commons
+All contents and materials in this document are licensed as Creative Commons
 Attribution Australia (CCbyA).
 
 You are free:
@@ -46,7 +46,7 @@ Badan Nasional Penanggulangan Bencana (BNPB)
 BNPB is Indonesia’s National Disaster Management Agency. |BNPB| is a
 non-departmental ministerial-level government agency, tasked with providing
 guidance and direction to the efforts of disaster management that includes
-disaster prevention, emergency response, rehabilitation,
+disaster prevention, emergency response, rehabilitation
 and reconstruction in a fair and equal way. National Disaster Management Agency
 functions as a policy maker and formulator and Refugee (IDP)
 management to act quickly and appropriately and effectively and efficiently.
@@ -78,7 +78,7 @@ Humanitarian OpenStreetMap Team (HOT)
 
 Free, collaborative maps are uniquely valuable to humanitarian work,
 especially in places where base map data is often scarce, out-of-date,
-or rapidly changing. OpenStreetMap is a web project to create a free and
+or rapidly changing. OpenStreetMap (OSM) is a web project to create a free and
 open map of the entire world, built entirely by volunteers surveying with
 GPS, digitising aerial imagery, and collecting and liberating existing
 public sources of geographic data. The Humanitarian OpenStreetMap Team (|HOT|)
@@ -104,7 +104,7 @@ http://ugm.ac.id
 
 Preface
 -------
-Every day thousands of people contribute to OpenStreetMap,
+Every day thousands of people contribute to OSM,
 a project with the lofty goal of mapping the world. Most OSM software is
 free and open source, and the data is open for anyone to use. The idea is
 simple: if you make a map of your town and we make a map of ours,
@@ -125,9 +125,9 @@ or mail.yahoo.com.
 
 The only other assumption is that you've used the internet before. Perhaps
 you're familiar with Facebook or email, and that's certainly enough to get
-started with OpenStreetMap. If you're already comfortable using a computer
+started with OSM. If you're already comfortable using a computer
 and surfing the web, don't worry – this guide is for you too. No matter your
-proficiency, we'll take you step by step through OSM and you'll be mapping
+proficiency, we'll take you step-by-step through OSM and you'll be mapping
 in no time!
 
 :ref:`Go to first module --> <basic-concept-of-osm-website>`

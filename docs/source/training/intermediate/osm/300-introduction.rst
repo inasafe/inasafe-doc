@@ -22,7 +22,7 @@ Licence
 
 .. image:: /static/training/beginner/osm/image2.*
 
-All contents and materials in this document is licensed as Creative Commons
+All contents and materials in this document are licensed as Creative Commons
 Attribution Australia (CCbyA).
 
 You are free:
@@ -46,7 +46,7 @@ Badan Nasional Penanggulangan Bencana (BNPB)
 BNPB is Indonesia’s National Disaster Management Agency. |BNPB| is a
 non-departmental ministerial-level government agency, tasked with providing
 guidance and direction to the efforts of disaster management that includes
-disaster prevention, emergency response, rehabilitation,
+disaster prevention, emergency response, rehabilitation
 and reconstruction in a fair and equal way. National Disaster Management Agency
 functions as a policy maker and formulator and Refugee (IDP)
 management to act quickly and appropriately and effectively and efficiently.
@@ -105,7 +105,7 @@ http://ugm.ac.id
 
 Preface
 -------
-Every day thousands of people contribute to OpenStreetMap,
+Every day thousands of people contribute to OSM,
 a project with the lofty goal of mapping the world. Most OSM software is
 free and open source, and the data is open for anyone to use. The idea is
 simple: if you make a map of your town and we make a map of ours,

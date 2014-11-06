@@ -31,14 +31,18 @@ that describe the extent and magnitude of natural events (such as earthquakes,
 tsunamis and volcanic eruptions) that could potentially cause an event or series
 of events that threaten and disrupt the lives and livelihoods of people.
 
-In general, hazards that we model:
+In general, the hazard data we use in |project-name| represents a single 
+hazard scenario. A scenario means that the hazard:
 
-- are at a particular location
-- have a measured intensity
-- have a measured duration
-- have a certain time frame
+- is at a particular location
+- has a measured intensity
+- has a measured duration
+- has a certain time frame
 
-In this chapter we will use a dataset modelled from an earthquake in Lembang.
+In this module we will use a dataset modelled from an earthquake in Lembang.
+
+.. note:: The earthquake modelling was done by experts. |project_name| is not 
+   a hazard modelling tool.
 
 **Exposure** data represents things that are at risk when faced with a potential
 hazard.
@@ -114,7 +118,7 @@ The Results section is filled in with information after |project_name| is run,
 as we shall see. The buttons at the bottom allow us to run a scenario, print
 and access help.
 
-3.  Adding hazard data
+3. Adding hazard data
 ----------------------
 
 **Hazards** can be represented by vector layers or by raster layers.

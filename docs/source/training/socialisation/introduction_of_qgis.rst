@@ -222,7 +222,7 @@ OpenLayers, using the QGIS plugin repository.
 .. image:: /static/general/icon_merge.*             Impact Layer Merge
 =================================================   ========================
 
-.. Note:: Later we will explore and use these tools.  For more information on the 
+.. Note:: Later we will explore and use these tools. For more information on the 
   |project_name| toolbar see :doc:`../../user-docs/toolbar`.
 
 OpenLayers Plugin
@@ -296,3 +296,6 @@ Using the navigation tools below, zoom to your home.
 
 .. image:: /static/training/socialisation/027_mt.*
    :align: center
+
+
+:ref:`Go to next module --> <raster-vs-vector>`

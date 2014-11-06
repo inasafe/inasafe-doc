@@ -127,7 +127,7 @@ information.
 Let’s symbolise the district layer that we’ve added:
 
 8. Right-click on the :guilabel:`Kecamatan_Sleman` layer,
-   and click :guilabel:`Properties`, or double click the layer name.
+   and click :guilabel:`Properties`, or double-click the layer name.
 
 9. Click on the :guilabel:`Style` tab.
 
