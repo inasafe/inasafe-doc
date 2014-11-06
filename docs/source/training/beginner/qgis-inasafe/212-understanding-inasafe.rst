@@ -31,7 +31,7 @@ that describe the extent and magnitude of natural events (such as earthquakes,
 tsunamis and volcanic eruptions) that could potentially cause an event or series
 of events that threaten and disrupt the lives and livelihoods of people.
 
-In general, the hazard data we use in |project-name| represents a single 
+In general, the hazard data we use in |project_name| represents a single 
 hazard scenario. A scenario means that the hazard:
 
 - is at a particular location
