@@ -8,101 +8,129 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-17 20:04+0200\n"
+"POT-Creation-Date: 2014-11-10 16:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:6
 # 41b7f36676fc421e95dc150d7e327070
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:6
 msgid "Tsunami Evacuation Function"
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:9
 # f53cc0f69cd24b64bd4c599acb7ffe75
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:9
 msgid "Overview"
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:11
 # 8d2f6dbb451e488eba3614632ff97230
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:11
 msgid "**Unique Identifier**: Tsunami Evacuation Function"
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:14
 # e95217ca7d894c3498989fa7a5043fab
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:14
 msgid "**Author**: AIFDR"
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:17
 # 7e6c2e14521f4f52be6f0aaebe436f2d
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:17
 msgid "**Rating**: 4"
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:20
 # 77e438065dd34e65ac0449b5d82c77ce
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:20
 msgid "**Title**: Need evacuation"
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:23
 # e5b9f57e35494866adce45dd7acbccaa
-msgid "**Synopsis**: To assess the impacts of tsunami inundation in raster format on population."
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:23
+msgid ""
+"**Synopsis**: To assess the impacts of tsunami inundation in raster format "
+"on population."
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:26
 # cc8a84f912cb41c6be00755b8df7aa16
-msgid "**Actions**: Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them."
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:26
+msgid ""
+"**Actions**: Provide details about how many people would likely need to be "
+"evacuated, where they are located and what resources would be required to "
+"support them."
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:29
 # 69352e83e582475185eccf8fc4b3f37b
-msgid "**Hazard Input**: A hazard raster layer where each cell represents tsunami depth (in meters)."
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:29
+msgid ""
+"**Hazard Input**: A hazard raster layer where each cell represents tsunami "
+"depth (in meters)."
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:32
 # 011ee322c99b42648a63eeee000d3771
-msgid "**Exposure Input**: An exposure raster layer where each cell represent population count."
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:32
+msgid ""
+"**Exposure Input**: An exposure raster layer where each cell represent "
+"population count."
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:35
 # 23ff94a2186546d4b2614bb5cff107a2
-msgid "**Output**: Raster layer contains population affected and the minimum needs based on the population affected."
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:35
+msgid ""
+"**Output**: Raster layer contains population affected and the minimum needs "
+"based on the population affected."
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:38
 # ce68de88618e4dec83c685470d19ccc2
-msgid "**Limitation**: The default threshold of 0.7 meter was selected based on consensus, not hard evidence."
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:38
+msgid ""
+"**Limitation**: The default threshold of 0.7 meter was selected based on "
+"consensus, not hard evidence."
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:42
 # 96be2e8619dc427abc38cfad1ea1851b
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:42
 msgid "Details"
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:44
 # 7c9aa0a13ded4b32ae1193f1b89017d3
-msgid "The population subject to inundation exceeding a threshold (default 0.7m) is calculated and returned as a raster layer. In addition the total number and the required needs in terms of the BNPB (Perka 7) are reported. The threshold can be changed and even contain multiple numbers in which case evacuation and needs are calculated using the largest number with population breakdowns provided for the smaller numbers. The population raster is resampled to the resolution of the hazard raster and is rescaled so that the resampled population counts reflect estimates of population count per resampled cell. The resulting impact layer has the same resolution and reflects population count per cell which are affected by inundation."
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:44
+msgid ""
+"The population subject to inundation exceeding a threshold (default 0.7m) is "
+"calculated and returned as a raster layer. In addition the total number and "
+"the required needs in terms of the BNPB (Perka 7) are reported. The "
+"threshold can be changed and even contain multiple numbers in which case "
+"evacuation and needs are calculated using the largest number with population "
+"breakdowns provided for the smaller numbers. The population raster is "
+"resampled to the resolution of the hazard raster and is rescaled so that the "
+"resampled population counts reflect estimates of population count per "
+"resampled cell. The resulting impact layer has the same resolution and "
+"reflects population count per cell which are affected by inundation."
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:47
 # e2a978b2fcb3427393ec4f30ed9f69b6
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:47
 msgid "Doc String"
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:49
 # 983b183fa7ab4e9b9fecb80bedbb3688
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:49
 msgid "Impact function for tsunami evacuation."
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:51
 # 7dd1ea9389bf49ee99400aa81d48fdbb
-msgid ":author AIFDR :rating 4 :param requires category=='hazard' and                     subcategory=='tsunami' and                     layertype=='raster' and                     unit=='m'"
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:51
+msgid ""
+":author AIFDR :rating 4 :param requires category=='hazard' "
+"and                     subcategory=='tsunami' and                     "
+"layertype=='raster' and                     unit=='m'"
 msgstr ""
 
-#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:55
 # 91bd6153d99349e48090e428ffcde9f1
-msgid ":param requires category=='exposure' and                     subcategory=='population' and                     layertype=='raster'"
+#: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:55
+msgid ""
+":param requires category=='exposure' and                     "
+"subcategory=='population' and                     layertype=='raster'"
 msgstr ""
-

@@ -26,7 +26,7 @@ Provide details about where critical infrastructure might be flooded
 A hazard raster layer where each cell represents flood depth (in meters), or a vector polygon layer where each polygon represents an inundated area. In the latter case, the following attributes are recognised (in order): "affected" (True or False) or "FLOODPRONE" (Yes or No). (True may be represented as 1, False as 0
 
 **Exposure Input**: 
-Vector polygon layer extracted from OSM where each polygon represents the footprint of a building.
+Vector polygon or point layer extracted from OSM where each feature represents the footprint of a building.
 
 **Output**: 
 Vector layer contains building is estimated to be flooded and the breakdown of the building by type.

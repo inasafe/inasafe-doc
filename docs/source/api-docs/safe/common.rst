@@ -21,3 +21,4 @@ Package::safe.common
    common/exceptions
    common/interpolation2d
    common/dynamic_translations
+   common/minimum_needs
