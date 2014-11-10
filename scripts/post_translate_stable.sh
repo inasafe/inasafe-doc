@@ -9,7 +9,7 @@ then
 else
     INASAFE_DEV_PATH=`cd "../inasafe"; pwd`
 fi
-export QGIS_PREFIX_PATH=/usr/local/qgis-1.8
+export QGIS_PREFIX_PATH=/usr/local/qgis-2.6
 
 if [ -d $INASAFE_DEV_PATH ]
 then
