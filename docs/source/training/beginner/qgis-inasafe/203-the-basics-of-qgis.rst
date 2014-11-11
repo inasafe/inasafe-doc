@@ -14,10 +14,10 @@ Module 3: The Basics of QGIS
 - Access basic tools through the toolbar
 - Clean up the toolbar
 - Show a map in the map window
-- Get information on an active map through status bar
+- Get information on an active map through the status bar
 
 In this module we begin using QGIS.
-We’ll see how to install the software, and
+We’ll see how to install the software and
 understand the layout, interface and core functions of the software.
 By the end of this module, you’ll be on your way to becoming a competent GIS
 user!
@@ -187,14 +187,14 @@ so go ahead and move the layers back.
 .. image:: /static/training/beginner/qgis-inasafe/image26.*
    :align: center
 
-19. Right-click on a layer to view a menu with menu extra options.
+19. Right-click on a layer to view a menu with extra options.
     You’ll be using some of them before long, so take a look around!
 
 Toolbars
 ........
 At the top of QGIS are a large number of tools, which are contained within
 various “toolbars”.
-For example, the :guilabel:`File` toolbar allows you to save, load, print,
+For example, the :guilabel:`File` toolbar allows you to save, load, print
 and start a new project.
 We already used one of these tools when we opened this project.
 
@@ -206,7 +206,7 @@ help you identify each tool.
 The number of tools (buttons) can seem a bit overwhelming at first,
 but you will gradually get to know them.
 The tools are grouped into related functions on toolbars.
-If you look closed you can see a vertical array of ten dots to the left of
+If you look closely you can see a vertical array of ten dots to the left of
 each toolbar.
 By grabbing these with your mouse, you can move the toolbar to a more
 convenient location, or separate it so that it sits on its own.
@@ -257,8 +257,8 @@ on the map.
 .. image:: /static/training/beginner/qgis-inasafe/image31.*
    :align: center
 
-The coordinates of this map are the same type of coordinates that you
-learned about when learning about GPS devices.
+The coordinates of this map are the same type of coordinates that are
+recorded by GPS devices.
 The status bar show shows the longitude and latitude of your mouse cursor.
 
 This may not all be clear right now, but as you progress in your knowledge
@@ -310,16 +310,16 @@ The important thing for now is to start getting familiar with QGIS.
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
 |.. image:: /static/training/beginner/qgis-inasafe/image36.*  | Pan Map                              | Drag the map into new location   |
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
-|.. image:: /static/training/beginner/qgis-inasafe/image37.*  | Zoom In                              | Zoom in on the Map               |
+|.. image:: /static/training/beginner/qgis-inasafe/image37.*  | Zoom In                              | Zoom in on the map               |
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
-|.. image:: /static/training/beginner/qgis-inasafe/image38.*  | Zoom out                             | Zoom out on the Map              |
+|.. image:: /static/training/beginner/qgis-inasafe/image38.*  | Zoom Out                             | Zoom out on the map              |
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
 |.. image:: /static/training/beginner/qgis-inasafe/image39.*  | Zoom Full                            | Zoom so that all layers fit in   |
-|                                                             |                                      | the map Window                   |
+|                                                             |                                      | the map window                   |
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
 |.. image:: /static/training/beginner/qgis-inasafe/image40.*  | Open Attribute Table                 | Open a layer's attribute table   |
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
-|.. image:: /static/training/beginner/qgis-inasafe/image41.*  | Select single feature                | Select a feature in selected     |
+|.. image:: /static/training/beginner/qgis-inasafe/image41.*  | Select Single Feature                | Select a feature in selected     |
 |                                                             |                                      | layer                            |
 +-------------------------------------------------------------+--------------------------------------+----------------------------------+
 
@@ -337,13 +337,13 @@ When you click on one of these buttons, it changes what you can do with
 your mouse in the main map window.
 
 27. Select the first button that looks like a hand.
-    Now hold your left mouse button down and drag your mouse in the map window.
+    Now hold the left mouse button down and drag the mouse in the map window.
     This allows you to pan the map, or move it around.
 
 28. The button which has a plus sign below a magnifying glass
     allows you to zoom in on the map.
     Select this button.
-    Using your mouse, draw a box around an area that you want to zoom in on,
+    Using your mouse, draw a box around an area where you want to zoom in,
     and release your mouse.
 
 29. The button which has a minus sign below a magnifying glass

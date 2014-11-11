@@ -47,11 +47,11 @@ BNPB is Indonesia’s National Disaster Management Agency. |BNPB| is a
 non-departmental ministerial-level government agency, tasked with providing
 guidance and direction to the efforts of disaster management that includes
 disaster prevention, emergency response, rehabilitation
-and reconstruction in a fair and equal way. National Disaster Management Agency
-functions as a policy maker and formulator and Refugee (IDP)
-management to act quickly and appropriately and effectively and efficiently.
+and reconstruction in a fair and equal way. |BNPB|
+functions as a policy maker regarding refugee/IDP
+management for effective and efficient response.
 It coordinates the implementation of disaster management activities in a
-planned, integrated, and comprehensive way.
+planned, integrated and comprehensive way.
 
 http://bnpb.go.id
 
@@ -106,21 +106,21 @@ Preface
 -------
 A Geographic Information System (GIS) is a system designed to
 enable people to work with data related to places on the Earth.
-A GIS allows the creation, storage, manipulation, and analysis of geographic
+A GIS allows the creation, storage, manipulation and analysis of geographic
 data.
 GIS is a very broad concept and can involve complex hardware and software.
 But for most people’s purposes, a simple GIS software application is all that
 is required.
 
-GIS can be used in a variety of fields, including in disaster
+GIS can be used in a variety of fields, including disaster
 management. In this training we use GIS software that is 
 free and open, and which includes special functionality for the 
 preparation of contingency plans.
 
 The software, called |QGIS|, is a Geographic Information System (GIS) that is
 user-friendly and open-source. |project_name| is a QGIS plugin which is also
-free and open-source, can create realistic scenarios of natural disaster impact
-for planning, preparation, and better response.
+free and open-source. It can create realistic scenarios of natural disaster 
+impact for planning, preparation and better response.
 |project_name| is developed by |AIFDR| through consultation with |BNPB|.
 
 Data Analysis Using QGIS and |project_name| covers different material from the

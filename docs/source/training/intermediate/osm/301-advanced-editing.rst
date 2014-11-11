@@ -7,13 +7,13 @@ Module 1: Advanced Editing
 
 **Learning Objectives**
 
-- Use Advanced Editing Tools in JOSM
+- Use advanced editing tools in JOSM
 - Make relations among objects
 
 Welcome to the intermediate guide for spatial data collection with
-OpenStreetMap. In the previous unit you learned how to draw points, lines,
-and shapes in JOSM; how to open your GPS waypoints and tracks in JOSM; and how
-to download, edit, and upload your changes on OSM. In this module,
+OpenStreetMap. In the previous unit you learned how to draw points, lines
+and shapes in JOSM, how to open your GPS waypoints and tracks in JOSM and how
+to download, edit and upload your changes on OSM. In this module,
 we will describe relations, JOSM editing tools and editing techniques in
 greater detail.
 
@@ -72,7 +72,7 @@ you might get this warning:
 .. image:: /static/training/intermediate/osm/image10.*
    :align: center
 
-If the roads are connected and go in the same direction, then click
+If the roads are connected and go in the same direction, click
 :guilabel:`Reverse and Combine`.
 
 Reverse Way
@@ -118,7 +118,7 @@ Orthogonalize Shape
 This function is very useful for drawing regular
 shapes such as buildings. After you draw an area, this function will reshape
 it to have square corners. This feature is most useful for other regularly
-shaped features, such as tennis courts, or landuse areas (Using the
+shaped features, such as tennis courts or landuse areas (Using the
 Building Plugin, which is explained below, might be easier
 for buildings).
 
@@ -246,7 +246,7 @@ These tools are some of the most useful:
 
 Unselect Nodes
 ##############
-This tool allows you deselect nodes, which makes it useful for tagging 
+This tool allows you to deselect nodes, which makes it useful for tagging 
 the objects selected. This tool is necessary if you have mapped several 
 polygon objects with similar attributes and would like to tag the objects 
 without tagging the nodes. To do so, select all of the objects - polygons, 
@@ -264,14 +264,14 @@ nodes that you most recently changed.
 ------------
 
 In the first unit we learned that there are three types of objects that can be
-drawn in OSM - points (nodes), lines (ways), and polygons. Lines
+drawn in OSM - points (nodes), lines (ways) and polygons. Lines
 contain numerous points, and the line itself carries the attributes that define
 what it represents. Polygons are the same as lines, except that the the line
 must finish where it begins in order to form a shape.
 
 In fact, there is one other type of object in OSM, and these are
 called relations. In the same way that a line consists of other points, a
-relation contains a group of other objects, be they points, lines, or polygons.
+relation contains a group of other objects, be they points, lines or polygons.
 If you are looking to obtain advanced editing skills, then understanding and
 knowing how to properly edit relations is important.
 
@@ -332,7 +332,7 @@ the object is.
    a building, but with a courtyard.
 
 The data behind the relation in our example is visible on OSM: You
-can see this multipologyon on OSM by going to
+can see this multipolygon on OSM by going to
 http://www.openstreetmap.org/browse/relation/2435797.
 It will appear on OSM like this:
 
@@ -342,7 +342,7 @@ It will appear on OSM like this:
 2.2  Another multipolygon
 .........................
 
-The river below is another example of a multiploygon.
+The river below is another example of a multipolygon.
 Effectively it is the same as the building example, but with a greater number
 of members and covering a much larger area.
 It can be viewed on OSM here:
@@ -395,7 +395,7 @@ To create a linestring relation:
 
 Relations are difficult to understand and do not have to be used often,
 but they are necessary to know about. As you get more developed with your
-OSM skills and want to create more complex building, river and routes,
+OSM skills and want to create more complex buildings, rivers and routes,
 relations will be useful.
 
 

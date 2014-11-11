@@ -27,7 +27,7 @@ module.
 
 1. Managing plugins
 -------------------
-To install new plugins, they first need to be downloaded, and then activated.
+To install new plugins, they first need to be downloaded and activated.
 Some plugins are already downloaded and available.
 
 2. Go to :menuselection:`Plugins ‣ Manage and Install Plugins...` to view them.
@@ -37,7 +37,7 @@ Some plugins are already downloaded and available.
 
 3. This displays a list of plugins that have already been downloaded and can be
    activated. To enable a plugin, check the box next to it in this menu and 
-   press :guilabel:`OK`. For now, let’s leave all the plugins as they are. 
+   click :guilabel:`OK`. For now, let’s leave all the plugins as they are. 
    We’re going to download and activate a new plugin in the next section.
 
 .. image:: /static/training/beginner/qgis-inasafe/image44.*
@@ -102,7 +102,7 @@ It may take a few minutes to download.
    :align: center
 
 10. Click :menuselection:`Bing Aerial layer`. A new layer called “Bing Aerial”
-    will be added to the layers list, and the imagery will load in the map
+    will be added to the Layers panel, and the imagery will load in the map
     canvas. If the layer is above your other layers, drag it to the bottom of the
     layers list.
 
@@ -125,7 +125,7 @@ map.
    :align: center
 
 12. The Layer order panel will appear next to the Layers panel (1). Click it
-    and uncheck :guilabel:`Control Rendering Order`.
+    and uncheck :guilabel:`Control Rendering Order` (2).
 
 .. image:: /static/training/beginner/qgis-inasafe/image55.*
    :align: center

@@ -25,7 +25,7 @@ included location. In the past two modules we have examined two tools,
 GPS and Field Papers, which allow us to collect actual locations of places. 
 These locations are represented by coordinates.
 
-Drawing a real map, that is, a map where all the points, lines,
+Drawing a real map, that is, a map where all the points, lines
 and shapes are in their proper location, is no different than drawing the
 maps we drew previously. But now, we will utilise our GPS points and tracks,
 and our Field Papers, to draw similar maps at their correct locations on the
@@ -58,8 +58,8 @@ takes place. Here you view, edit, and add to the OSM data.
 To the right of the map window are a series of panels,
 which each do something different. When you first install JOSM
 several panels are shown by default, such as :guilabel:`Layers`,
-:guilabel:`Properties`, and :guilabel:`Selection`. When you select a point,
-line, or shape in the map window, it is shown in the :guilabel:`Selection`
+:guilabel:`Properties` and :guilabel:`Selection`. When you select a point,
+line or shape in the map window, it is shown in the :guilabel:`Selection`
 panel. Information about the object is shown in the :guilabel:`Properties`
 panel, and the username of the author of that object is shown in the
 :guilabel:`Authors` panel.
@@ -71,12 +71,12 @@ On the left side of JOSM, there are several toolbars
 which consist of many buttons. On the uppermost toolbar are different buttons
 which change what you can do with your mouse. You are already familiar with
 the first two, the :guilabel:`Select` tool and the :guilabel:`Draw` tool.
-The other tools make it easier to zoom in, delete an object, draw a shape,
+The other tools make it easier to zoom in, delete an object, draw a shape
 or create a line that is parallel to another line.
 
 Below these tools are many more buttons. These buttons control what you
 see on the right side of JOSM. Using these buttons you can open and close
-the boxes on the right, such as :guilabel:`Properties`, :guilabel:`Selection`,
+the boxes on the right, such as :guilabel:`Properties`, :guilabel:`Selection`
 and :guilabel:`Author`.
 
 1.1. Downloading OSM Data
@@ -114,7 +114,7 @@ we must download the existing OSM data in our area.
    for editing. Unless you have moved the map window since you opened your GPS
    file or Field Papers, the box should be drawn around the correct area.
    However if you would like to download a larger area, draw a new box.
-   To do so, click on the map, hold your left mouse button down,
+   To do so, click on the map, hold your left mouse button down
    and drag the mouse to create a box. Release the mouse button to finish
    drawing the box.
 
@@ -175,11 +175,11 @@ OSM, which are usually called “Data Layer 1”.
 
 The next step is to edit the map and add new items. This is not always
 easy at first, but with practice you will get better and better. Note that
-you can select tools in JOSM by clicking on their buttons in the toolbar,
+you can select tools in JOSM by clicking their buttons in the toolbar,
 or you can use keys on the keyboard as shortcuts. The shortcut keys
 are indicated in parentheses below.
 
-14. To move a point, line, or shape, use the :guilabel:`Select` tool
+14. To move a point, line or shape, use the :guilabel:`Select` tool
     (:kbd:`S`). Click on an object and drag it where it should be. This can be
     used to correct the location of items that have been put in the wrong place.
 
@@ -209,7 +209,7 @@ can be seen in the background as a guide.
 4. Tags
 -------
 
-When you draw a point, line, or shape, it has a location,
+When you draw a point, line or shape, it has a location,
 but no information about what it is. In other words, we know where it is,
 but not what it is. Before now, we have been using items from the
 :menuselection:`Presets` menu to define what it is. The way OSM
@@ -240,7 +240,7 @@ to it in the :guilabel:`Properties` panel on the right.
 4.1. Editing Tags
 .................
 
-You can add, edit, and delete these tags from the :guilabel:`Properties` panel.
+You can add, edit and delete these tags from the :guilabel:`Properties` panel.
 The tags are traditionally in English, so if you prefer you can always use
 the :menuselection:`Presets` menu to simplify tagging objects. When you add 
 or change tags, such as primary highway versus footpath, the style will change 

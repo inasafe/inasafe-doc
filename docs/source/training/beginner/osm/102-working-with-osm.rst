@@ -43,7 +43,7 @@ When the page has finished loading, it should look something like this:
 
 5. If you have a mouse with a scroll-wheel, zoom in and out on the map by
    turning the wheel. If you don’t have a scroll-wheel,
-   click the :guilabel:`+` and :guilabel:`-` buttons on in the upper right 
+   click the :guilabel:`+` and :guilabel:`-` buttons in the upper right 
    corner of the map.
 
 6. To search for a place, left-click in the box labeled
@@ -51,7 +51,7 @@ When the page has finished loading, it should look something like this:
    town or village and press Enter. A window should appear to the
    left of the map with the results of your search. Click on the location that
    looks closest to the one you want. The map will automatically move to the 
-   location you chose.
+   location you choose.
 
 3. Saving an image of the map
 -----------------------------
@@ -82,7 +82,7 @@ Options appear which look like this:
     example, entering 5000 here means that objects on the map will be 1/5000th
     the size that they are in real life.
 
-11. Click the :guilabel:`Download` button. The image will be created, download, 
+11. Click the :guilabel:`Download` button. The image will be created, downloaded 
     and saved to your computer.
 
 12. Open the downloaded file. It can be printed by going 
@@ -152,7 +152,7 @@ account with OSM.
 22. A new tab or window will open. If everything went well,
     you should have an OSM account!
 
-23. On the OSM page, click “Log In” in the top right corner. Enter
+23. On the OSM page, click :guilabel:`Log In` in the top right corner. Enter
     your OSM username and password and press Enter. You should now be
     logged in. You will see your username in the upper right corner of the
     page.

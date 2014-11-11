@@ -157,7 +157,7 @@ minutes. The time in our example is determined by the distance and our default
 speed of 25 km/hr. The speed can be changed, and can even be set to different
 amounts for each segment of road.
 
-The route is appears: on our map:
+The route appears on our map:
 
 .. image:: /static/training/intermediate/qgis-inasafe/image81.*
    :align: center

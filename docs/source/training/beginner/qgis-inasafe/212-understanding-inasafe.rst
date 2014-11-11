@@ -24,7 +24,7 @@ Module 12: Understanding |project_name|
 Let’s begin by reviewing the inputs and outputs of |project_name| -
 **hazard**, **exposure**, and **impact**.
 These terms are important for you to remember because the analysis process
-will always depend on these three things.
+depends on these three things.
 
 **Hazards** (also called disasters) are what we call the data layers
 that describe the extent and magnitude of natural events (such as earthquakes,
@@ -93,7 +93,7 @@ interface.
    |project_name| dock panel to change its position in the QGIS interface.
    You can pull it away as a separate window, or place it below the Layers
    panel.
-   It’s quite convenient in its location on the right side of QGIS,
+   It’s convenient in its location on the right side of QGIS,
    so we will leave it there.
 
 .. image:: /static/training/beginner/qgis-inasafe/image280.*
@@ -101,7 +101,7 @@ interface.
 
 The |project_name| panel consists of three parts: Questions,
 Results and Buttons.
-The questions are mixed in with dropdown boxes - this is where we establish our
+The questions are mixed in with drop-down boxes - this is where we establish our
 input data and define the scenario that we want |project_name| to process.
 The purpose of |project_name| is to make your impact analysis very simple and
 easy to do.
@@ -132,8 +132,8 @@ raster.
 
 An earthquake can also be modelled with vector data, although the detail of the
 data will most likely be lower.
-In this case vector polygons will represent the area where the earthquake
-occurred, and possibly various polygons will show areas of differing
+In this case vector polygons represent the area where the earthquake
+occurred, and various polygons may show areas of differing
 magnitudes.
 
 Let’s begin by adding our hazard layer to QGIS.
@@ -144,7 +144,7 @@ It’s a raster model of an earthquake in Lembang.
 .. image:: /static/training/beginner/qgis-inasafe/image281.*
    :align: center
 
-6. Navigate to the :file:`qgis/Bandung` folder and add
+6. Navigate to the :file:`qgis/Bandung/` folder and add
    :file:`Lembang_Earthquake_Scenario.asc`.
    This data is raster data (in ASCII format) which represents the magnitude
    of the earthquake.
@@ -160,7 +160,7 @@ It’s a raster model of an earthquake in Lembang.
 .. image:: /static/training/beginner/qgis-inasafe/image283.*
    :align: center
 
-You will notice that the hazard dropdown box has been automatically filled in
+You will notice that the hazard drop-down box has been automatically filled in
 the |project_name| panel.
 This is because the data file has already been prepared for us with keyword
 metadata (fancy words for settings) that tells |project_name| whether it’s a
@@ -182,7 +182,7 @@ obtained from OpenStreetMap.
    :align: center
 
 9. Add the file :file:`Bangunan_Bandung.shp`, which is located in the 
-   :file:`qgis/Bandung` folder.
+   :file:`qgis/Bandung/` folder.
 
 .. image:: /static/training/beginner/qgis-inasafe/image285.*
    :align: center
@@ -235,10 +235,10 @@ Now our hazard and exposure data are set in the |project_name| panel,
 because the appropriate keywords have been added to our layers.
 Note that if we were to add a second exposure layer to our project,
 we would be able to choose which exposure layer we wanted from the
-|project_name| dropdown menu.
+|project_name| drop-down menu.
 The same applies to hazard layers.
 
-The third dropdown box is the impact function (“Might”).
+The third drop-down box is the impact function (“Might”).
 This concludes our question, and defines the function that |project_name|
 will run behind the scenes.
 |project_name| developers have written many of these functions to analyse all
@@ -266,7 +266,7 @@ and the layout can be changed using the Print Composer.
 
 Let’s add Bing aerial imagery as a background for our map.
 
-19. Go to :menuselection:`Plugins -> OpenLayers plugin -> Add Bing Aerial layer`.
+19. Go to :menuselection:`Plugins ‣ OpenLayers plugin ‣ Add Bing Aerial layer`.
 
 20. Drag the layer below your new impact layer.
     If the buildings don’t show correctly above the imagery,
@@ -279,8 +279,8 @@ Let’s add Bing aerial imagery as a background for our map.
 8. Using the print button
 -------------------------
 
-The data displayed on the screen can be saved to a PDF file by clicking Print
-at the bottom of the |project_name| panel.
+The data displayed on the screen can be saved to a PDF file by clicking 
+:guilabel:`Print` at the bottom of the |project_name| panel.
 
 21. Click on the |project_name| result layer and then click :guilabel:`Print`.
 

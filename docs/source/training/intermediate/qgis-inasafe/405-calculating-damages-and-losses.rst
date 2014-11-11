@@ -20,7 +20,7 @@ Module 5: Calculating Damages and Losses
   subdistrict)
 - Join attribute data for administrative areas (hamlet, village,
   subdistrict)
-- Present damage and losse value using charts
+- Present damage and loss values using charts
 
 A **Damage and Loss Assessment (DaLA)** is usually created after a
 disaster.
@@ -76,11 +76,12 @@ We will create a damage and loss assessment map using our data from Sirahan
 village that we have been working with throughout this unit.
 
 1. Open QGIS and make sure that the following layers are loaded into your project:
-     - area_terdampak_Sirahan
-     - Jalan_Sirahan
-     - Sungai_Sirahan
-     - Batas_Desa_Sirahan
-     - Bangunan_Sirahan
+
+  - area_terdampak_Sirahan
+  - Jalan_Sirahan
+  - Sungai_Sirahan
+  - Batas_Desa_Sirahan
+  - Bangunan_Sirahan
 
 .. image:: /static/training/intermediate/qgis-inasafe/image84.*
    :align: center
@@ -97,7 +98,7 @@ Let’s create a spatial query to filter out these buildings.
 
 We now have a group of buildings selected which we are assuming will suffer
 heavy damages. According to the BNPB Guide, we can assess the loss of heavily 
-damaged buildings at a rate of 1.8million Rp. per square metre, and the 
+damaged buildings at a rate of 1.8 million Rp. per square metre, and the 
 multiplier factor is 70%. Our formula for calculating losses is:
 
   *Total Building area x Loss Value per m² x Multiplier factor*
@@ -160,7 +161,7 @@ just made.
    :align: center
 
 11. Check the box next to :guilabel:`Update existing field` and select
-    :guilabel:`Damage_Area` in the dropdown box.
+    :guilabel:`Damage_Area` in the drop-down box.
 
 12. Find :guilabel:`$area` under :guilabel:`Geometry` in the function list
     and double-click on it, so that it appears in the Expression box at the
@@ -184,7 +185,7 @@ We will be using a QGIS plugin called Group Stats in order to calculate damages
 by each hamlet within Sirahan.
 You must be connected to the internet to install this plugin.
 
-15. Go to :menuselection:`Plugins ‣ Manage and InstallPlugins`.
+15. Go to :menuselection:`Plugins ‣ Manage and Install Plugins`.
 
 16. Go to the :guilabel:`Get more` tab. Type :kbd:`group stats`. When you find the 
     plugin, select it and click :guilabel:`Install`.
@@ -201,13 +202,13 @@ The Group Stats window will appear.
 
 18. To calculate building damages per hamlet, select 
     :guilabel:`bangunan_terdampak_perdusun`
-    in the dropdown box under :guilabel:`layers`.
+    in the drop-down box under :guilabel:`layers`.
 
 19. Find :guilabel:`Dusun` in the list of fields. Drag and drop it 
     to :guilabel:`Rows`.
 
-20. Find :guilabel:`Damage" and "sum" in the list of fields. Drag and drop them
-    to :guilabel:`Value`.
+20. Find :guilabel:`Damage` and :guilabel:`sum` in the list of fields. Drag and
+    drop them to :guilabel:`Value`.
 
 21. Click :guilabel:`Calculate`. The results should look like this:
 
@@ -250,20 +251,20 @@ which assesses the value of losses in Rp for each individual building.
 6. Calculating losses using the Group Stats plugin
 --------------------------------------------------
 
-Now let’s calculate losses per hamlet using Group Stats again.
+Now let’s calculate losses per hamlet using the Group Stats again.
 
 28. Open the Group Stats window.
 
 29. Select :guilabel:`bangunan_terdampak_perdusun`
-    in the dropdown box under :guilabel:`layers`.
+    in the drop-down box under :guilabel:`layers`.
 
 30. Click :guilabel:`Clear` to start a new analysis.
 
 31. Find :guilabel:`Dusun` in the list of fields. Drag and drop it 
     to :guilabel:`Rows`.
 
-32. Find :guilabel:`Losses" and "sum" in the list of fields. Drag and drop them
-    to :guilabel:`Value`.
+32. Find :guilabel:`Losses` and :guilabel:`sum` in the list of fields. Drag and
+    drop them to :guilabel:`Value`.
 
 33. Click :guilabel:`Calculate`. The new table shows the losses in each hamlet:
 
@@ -304,9 +305,10 @@ table and then use them to add new columns to the file.
    :align: center
 
 39. Click the plus sign and fill in the following fields:
-      - Join layer: BNG_Damages
-      - Join field: DUSUN
-      - Target field: DUSUN
+
+  - Join layer: BNG_Damages
+  - Join field: DUSUN
+  - Target field: DUSUN
 
 .. image:: /static/training/intermediate/qgis-inasafe/image104.*
    :align: center
@@ -314,9 +316,10 @@ table and then use them to add new columns to the file.
 40. Click :guilabel:`OK`.
 
 41. Click the plus sign again and fill in the following fields:
-      - Join layer : BNG_Losses
-      - Join field: DUSUN
-      - Target field : DUSUN
+
+  - Join layer : BNG_Losses
+  - Join field: DUSUN
+  - Target field : DUSUN
 
 42. Click :guilabel:`OK`.
 
@@ -372,7 +375,7 @@ We will conclude by representing these damage and loss values as a chart in QGIS
 
 51. Check the box next to :guilabel:`Display diagrams`
 
-52. Make sure :guilabel:`Pie chart` is selected in the dropdown box.
+52. Make sure :guilabel:`Pie chart` is selected in the drop-down box.
 
 53. Under :guilabel:`Available attributes`, select :guilabel:`Damages` 
     and click the plus(+) button.
@@ -385,7 +388,7 @@ We will conclude by representing these damage and loss values as a chart in QGIS
 
 55. Go to the :guilabel:`Size` tab.
 
-56. Disabled the fixed value, and then click :guilabel:`Find Maximum Value`.
+56. Disable the fixed value, and then click :guilabel:`Find Maximum Value`.
     Change the scale value to :guilabel:`Area`.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image108.*
@@ -401,6 +404,6 @@ The resulting map will look like this:
 
 The size of each bubble represents the loss values in each hamlet. The bigger 
 the size, the heavier the losses. Creating a map with this sort of chart can 
-be an effective way to communicate the impact of a disaster. Now you can layout 
-your map, and then create another map with diagram showing Losses.
+be an effective way to communicate the impact of a disaster. Now you can lay 
+out your map, and then create another map showing Losses.
 

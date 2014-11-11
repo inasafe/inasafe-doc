@@ -112,13 +112,14 @@ All projections work by changing the apparent shapes of objects on Earth.
 Notice that the scale stays the same! 'On the fly' reprojection is useful 
 for combining datasets that are in different CRSes.
 
-10. Deactivate :guilabel:`'on the fly' reprojection` again, by unchecking the box
-    next to Enable ‘on the fly’ CRS transformation.
+10. Deactivate 'on the fly' reprojection again, by unchecking the box
+    next to :guilabel:`Enable ‘on the fly’ CRS transformation`.
 
-11. Add another vector layer, located in
-    :file:`qgis/peta_dunia/Indonesia.shp`.
+11. Load the vector layer :file:`Indonesia.shp` located in
+    :file:`qgis/peta_dunia/`.
 
-.. note:: You may need to unzip :file:`peta_dunia.zip` first.
+.. note:: You may need to unzip :file:`peta_dunia.zip` first in order
+   to open the shapefile.
 
 What do you notice?
 The layer is not visible!
@@ -173,7 +174,7 @@ project.
 To do this, we will need to export the data to a new file using a new
 projection.
 
-16. Right-click on the :guilabel:`Indonesia` layer in the Layers list.
+16. Right-click on the :guilabel:`Indonesia` layer in the Layers panel.
 
 17. Select :guilabel:`Save As...` in the menu that appears.
     You will be shown the :guilabel:`Save vector layer as...` dialog.
@@ -181,11 +182,11 @@ projection.
 18. Click the :guilabel:`Browse` button next to the :guilabel:`Save as` field.
 
 19. Navigate to :file:`qgis/peta_dunia/` and specify the name of the new layer as
-    :kbd:` Indonesia_terproyeksi.shp`.
+    :kbd:`Indonesia_terproyeksi.shp`.
 
 20. Leave the encoding unchanged.
 
-21. Change the value of the CRS in dropdown box to :guilabel:`Project CRS`.
+21. Change the value of the CRS in drop-down box to :guilabel:`Project CRS`.
 
 22. Check the box next to :guilabel:`Add saved file to map`.
 
@@ -203,7 +204,7 @@ projection.
 25. Click :guilabel:`OK`.
 
 Now your new layer, :guilabel:`Indonesia_terproyeksi`, will be shown in the 
-layers panel. If you turn off “on the fly” reprojection, this layer will still 
+layers panel. If you turn off 'on the fly' reprojection, this layer will still 
 be shown correctly, because it has been reprojected into the same CRS as the 
 project (and the continents layer).
 
@@ -228,7 +229,7 @@ We will create a projection known as Van der Grinten I.
 This interesting projection represents the earth on a circular field
 instead of a rectangular field, as most projections do.
 
-29. Enter :kbd:`Van der Grinten I` in the Name field.
+29. Enter :kbd:`Van der Grinten I` in the :guilabel:`Name` field.
 
 30. In the Parameters field, enter the following string:
 
@@ -238,7 +239,7 @@ instead of a rectangular field, as most projections do.
 
 32. Go to :menuselection:`Project ‣ Project Properties`.
 
-33. Enable “on the fly” reprojection.
+33. Enable 'on the fly' reprojection.
 
 .. image:: /static/training/beginner/qgis-inasafe/image69.*
    :align: center

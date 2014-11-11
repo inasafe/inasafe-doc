@@ -10,7 +10,7 @@ Module 5: Field Papers
 - Understand how to use Field Papers
 - Make and print Field Papers
 - Add information to Field Papers
-- Scan and upload Field Papers to fieldpapers.org
+- Scan and upload Field Papers to `fieldpapers.org <http://fieldpapers.org>`_
 - Open Field Papers in JOSM
 
 In this module we will see how it is possible to record the coordinates of 
@@ -115,7 +115,7 @@ zoom in and out, and drag the papers to cover specific boundaries on the map.
 .. image:: /static/training/beginner/osm/image75.*
    :align: center
 
-7. Move the paper by clicking and dragging the button in the upper-left corner.
+7. Move the paper by clicking and dragging the button in the upper left corner.
 
 .. image:: /static/training/beginner/osm/image76.*
    :align: center
@@ -172,10 +172,10 @@ then you are ready to add them digitally into OSM.
 
 17. Field Papers are useful for mapping with nothing more than paper,
     but they are not 100% magic. We will still need to add our paper into JOSM,
-    add our information digitally, and save the changes on OSM.
+    add our information digitally and save the changes on OSM.
 
 18. The first step is to scan your Field Paper. Do this by
-    attaching a scanner to your computer, scanning the paper,
+    attaching a scanner to your computer, scanning the paper
     and saving it as an image file. If you don’t have a scanner,
     take a photograph of the paper, but be careful to take
     a good  quality photo. Make sure that the paper is flat and the camera
@@ -188,7 +188,7 @@ then you are ready to add them digitally into OSM.
 
 19. Once your Field Paper is scanned and saved on the computer,
     open your web browser and return to the
-    `Field Papers website <http://fieldpapers.org/>`_ just as before.
+    http://fieldpapers.org/ just as before.
 
 20. Click the :guilabel:`Upload` tab at the top of the page.
 
@@ -230,7 +230,7 @@ be installed.
 .. image:: /static/training/beginner/osm/image84.*
    :align: center
 
-27. Open your browser and go to the `Field Papers website <http://fieldpapers.org/>`.
+27. Open your browser and go to the `Field Papers website <http://fieldpapers.org>`_.
 
 28. Click :guilabel:`Watch`. Then move your mouse to the bottom and click
     :guilabel:`Snapshots`.

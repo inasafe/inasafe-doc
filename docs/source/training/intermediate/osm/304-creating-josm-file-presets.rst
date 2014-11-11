@@ -16,7 +16,7 @@ Module 4: Creating JOSM File Presets
 
 By now you probably have a good understanding of how objects are drawn in JOSM,
 and how to add information to these objects to describe what they are.
-You add attributes to a point, line, or shape by attaching tags to it.
+You add attributes to a point, line or shape by attaching tags to it.
 By using the JOSM presets menu, you can easily attach the correct tags to an
 object by finding the type of object you want to create through a menu,
 and then filling in information in a form.
@@ -27,7 +27,7 @@ and then learn how we can create our own presets menus to use in JOSM.
 -------------------
 
 Remember that after you draw an object on the map in JOSM, you need to attach
-tags in order to describe what it is, its name, and any any other attributes.
+tags in order to describe what it is, its name and any other attributes.
 For example when you want to create a clothing shop with the name “Some
 Clothing Shop”, you need two tags - one to describe the point as a clothing
 shop, and one to hold the name.
@@ -40,7 +40,7 @@ selected.
 Tags consist of two parts, the **key** and the **value**.
 The key typically defines the type of information you are attaching,
 and the value defines the specific object.
-Here, we have two tags, and hence two pairs of keys and values.
+Here we have two tags, and hence two pairs of keys and values.
 
 **KEY = VALUE**
 
@@ -85,7 +85,7 @@ them up every time you need them.
 Hence, JOSM has a Presets menu which makes it much easier to apply the
 correct tags to an object.
 With the Presets menu, we can easily find the entry for school,
-enter information into a form, and not have to worry about whether the
+enter information into a form and not have to worry about whether the
 correct tag is **amenity=school** or **education=school** or something else
 entirely.
 
@@ -137,8 +137,8 @@ can be more elements.
      </item>
   </menu>
 
-In this example we have placed two **<item>** elements within our <menu> element
-to describe two different items that are contained in the menu.
+In this example we have placed two **<item>** elements within our **<menu>**
+element to describe two different items that are contained in the menu.
 Each item contains two more elements in them, **<cost>** and **<description>**.
 Notice also how we have written name=”Hamburger” inside the opening
 **<item>** tag.
@@ -197,7 +197,7 @@ and then loading it in JOSM.
 First, let’s look at how we can load additional presets menus into JOSM.
 
 1. Open JOSM and open the Preferences menu by going to
-   :menuselection:`Edit ‣ Preferences`
+   :menuselection:`Edit ‣ Preferences`.
 
 2. Click on the third icon from the top which looks like this:
 
@@ -206,8 +206,8 @@ First, let’s look at how we can load additional presets menus into JOSM.
 
 3. Click on the third tab labelled :guilabel:`Tagging Presets`.
 
-4. Select *"Buildings by Kate Chapman”* and click on the right arrow button to
-   add it to Active presets.
+4. Select :guilabel:`Buildings by Kate Chapman` and click on the right arrow 
+   button to add it to Active presets.
 
 .. image:: /static/training/intermediate/osm/image93.*
    :align: center
@@ -271,7 +271,7 @@ There are several attributes describing the element.
 +--------------------------------+-------------------------------------------------------------------------+
 | name="Place of Worship"        | The name of what you are creating.                                      |
 +--------------------------------+-------------------------------------------------------------------------+
-| icon="presets/church.*"        | The icon of the object. \*s are the most effective in OSM since they    |
+| icon="presets/church.*"        | The icon of the object. PNGs are the most effective in OSM since they   |
 |                                | are compressed low-colour graphics with transparent backgrounds.        |
 +--------------------------------+-------------------------------------------------------------------------+
 | type="node,closedway,relation" | The types of object that this preset can be applied to. Node means it   |
@@ -313,7 +313,7 @@ is left empty.
 
 **<text key="name" text="Name" default="" delete_if_empty="true" />**
 
-The lines after this are similar, but instead of text boxes, dropdown boxes are
+The lines after this are similar, but instead of text boxes, drop-down boxes are
 created where the user can select from different options.
 The tag used for this is **<combo>**
 
@@ -361,10 +361,10 @@ that they want for this tag.
 For **utility:water**, **utility:phone**, and **utility:internet**, there are
 four possible values that the user can select from on our form,
 so the best way to add this is with a combo box - that is,
-a dropdown menu where the user can select one of the options.
+a drop-down menu where the user can select one of the options.
 The tag **utility:electrical** only has two possible values, yes or no,
 so the best way to show this on our form is with a checkbox,
-although we could use a dropdown box if we wanted as well.
+although we could use a drop-down box if we wanted as well.
 When we are finished our form should look like this:
 
 .. image:: /static/training/intermediate/osm/image97.*
@@ -403,7 +403,7 @@ When we are finished our form should look like this:
 
   </item>
 
-15. Inside the **<item>** element we will add the text box, combo boxes, and check
+15. Inside the **<item>** element we will add the text box, combo boxes and check
     box that we want on our form.
     Add the following inside your **<item>** element:
 
@@ -437,20 +437,20 @@ Can you guess what each of these elements do?
 They create different items on our presets form in JOSM.
 The first line, **<key key="building" value="yes"/>**,
 does not display anything on our form, but tells JOSM to automatically apply
-the tag **building=yes** to our object when this preset is selected.
+the tag **building=yes** to an object when this preset is selected.
 
 The second line, **<text key="name" text="Name" default=""delete_if_empty="true" />**,
 creates a text field with the key name, as we saw when we looked at the
 presets XML in the previous section.
 
-We have three **<combo>** elements and each elements has several attributes.
+We have three **<combo>** elements and each element has several attributes.
 key indicates what key should be created for the tag.
 Text indicates what text should be displayed on our form.
-Values are the possible values that the user can select in the dropdown box.
+Values are the possible values that the user can select in the drop-down box.
 And we’ve added something new - the attribute **display_values**,
-which let’s us show different text in the dropdown boxes than the values that
+which let’s us show different text in the drop-down boxes than the values that
 will be created.
-This is useful if we want the form to be more descriptive about the the
+This is useful if we want the form to be more descriptive about the
 options a user can select, or if we want the display values to be in a
 different language from English.
 

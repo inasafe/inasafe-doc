@@ -14,7 +14,7 @@ Module 2: Preparing Data and Keywords for |project_name|
 - Prepare the hazard layer
 - Run |project_name|
 
-Now you you know your way around QGIS and |project_name|, let’s go further.
+Now that you know your way around QGIS and |project_name|, let’s go further.
 In this module, we will see how to prepare our own data so that it can be
 processed in |project_name|.
 Much of what we cover in this module you’ve already done, though we
@@ -195,7 +195,7 @@ The :guilabel:`Save vector layer as...` dialog will look like this:
 This is the layer that we will be using as our exposure data.
 You can remove the other OSM layers, or if you would like them to
 remain visible, go to :menuselection:`Settings ‣ Project Properties` and
-enable “on the fly” transformation.
+enable 'on the fly' transformation.
 
 4. Adding keywords
 ------------------
@@ -248,7 +248,7 @@ layer.
 
 23. Click :guilabel:`Add Vector Layer...` and add 
     :file:`area_terdampak_Sirahan.shp` in
-    the :file:`qgis/Sirahan` directory.
+    the :file:`qgis/Sirahan/` directory.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image41.*
    :align: center
@@ -313,7 +313,7 @@ First, let’s add the new column to our layer.
 --------------
 
 Everything is prepared now - our layers are loaded, the keywords are set, and
-we’ve ensured that they layers have the data that |project_name| expects.
+we’ve ensured that the layers have the data that |project_name| expects.
 Time to click :guilabel:`Run`!
 
 .. image:: /static/training/intermediate/qgis-inasafe/image49.*

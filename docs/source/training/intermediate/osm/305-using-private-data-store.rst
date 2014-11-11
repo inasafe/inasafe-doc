@@ -17,31 +17,27 @@ Module 5: Using the Separate Data Store
 OpenStreetMap data is open and available to anyone who would like to access it.
 However, there may be times when you want to use OSM to collect data,
 but you would like to keep some attributes stored in a private database.
-For this purpose, HOT has developed an tool for JOSM known as the
+For this purpose, HOT has developed a tool for JOSM known as the
 Separate Data Store.
 The SDS allows you to create maps and add data into JOSM the same as always,
-but when you upload your edits, public data will be saved to the
-OSM database, and private data will be saved separately to your 
+but when you upload your edits, public data is saved to the
+OSM database and private data is saved separately to your 
 private data server.
 
 .. image:: /static/training/intermediate/osm/image104.*
    :align: center
 
---------------
-
-*How the SDS Plugin works with JOSM*
-
-Data uploaded to the private HOT Datastore is only accessible to people who
-have an account at datastore.hotosm.org.
-This module is designed for people who already have an account and desire to
+This module is designed for people who desire to
 store private geospatial information, such as household income,
-personal health care data, or the location of gold mines.
+personal health care data or the location of gold mines.
 
-..Note:: If you do not have a HOT Datastore account or if you want to set up
-         your own private datastore server please contact us
-         (team.id[at]hotosm.org).
+For liability reasons, HOT does not provide the SDS service itself, but the
+software is available for installation on a private server. In this module
+we will utilise the SDS development server to demonstrate its functionality.
 
---------------
+If you are interested to set up your own SDS server, please contact us
+(team.id[at]hotosm.org).
+
 
 1. Installing the SDS plugin
 ----------------------------
@@ -76,39 +72,43 @@ The only difference is that when you upload changes,
 some tags will be automatically saved on the private datastore,
 and the rest will be saved directly onto OSM.
 
-5. After installing the plugin, the first time you download data you will be
-   asked for your HOT datastore username and password.
+After installing the plugin, you need to edit the settings so that private
+data is directed to the correct SDS server. In this module we will use
+a demo version of the SDS, but you may also configure the plugin to
+save private data on your custom SDS server.
+
+5. Go to :menuselection:`SDS ‣ Preferences...`.
+
+6. Edit the :guilabel:`SDS server URL` so that it points to
+   :kbd:`http://sds.dev.hotosm.org/`.
+
+7. We will use a sample account to try out the SDS. Enter the following for
+   the username and password:
+
+  - SDS username: test_sds@hotosm.org
+  - SDS password: CyYi3VeuHk
 
 .. image:: /static/training/intermediate/osm/image108.*
    :align: center
 
-- In order to use the plugin, you need to enter your username and password.
-  To save them, check the box next to :guilabel:`Save user and password`.
-- The private datastore is now working.
-  When you upload changes, the usual tags will be saved to OSM,
-  and special private tags will be saved to the datastore.
+8. Click :guilabel:`Test credentials now`. If it is set up correctly, you
+   should receive a message which tells you the connection is successful.
+  
 
-**3. How It Works**
+3. How it works
+---------------
 
 How does the plugin know which data you want to store on OSM and
 which data you want to store publicly?
 Quite simply, it knows because of the tags.
-Normal tags go to OSM, as always, but you can use new tags with a
+Normal tags go to OSM as always, but you can use tags with a
 special prefix that will be sent to the private datastore.
-By default, any tag that begins with the prefix **“hot:”** will go to the
-private datastore.
-If you open the Preferences menu you will see a new tab on the bottom for SDS
-plugin options:
+
+By default, any tag that has the prefix **hot:** will go to the
+private datastore. This can be changed in the SDS preferences menu:
 
 .. image:: /static/training/intermediate/osm/image109.*
    :align: center
-
-There are some basic settings here.
-By default the server URL is set to the HOT datastore, and your username and
-password can be saved here as well.
-The line labelled **“SDS tag prefix” **contains the prefix that will cause
-tags to be saved on the private datastore.
-By default it is **“hot:”**
 
 When you create or edit an object on the map, you can apply tags like this:
 
@@ -116,217 +116,83 @@ When you create or edit an object on the map, you can apply tags like this:
    :align: center
 
 In this case, the first two tags will be saved on OSM.
-The third tag, because it has the prefix **hot:** will be saved on the
+The third tag, because it has the prefix **hot:**, will be saved on the
 private datastore.
 
-You will most likely collaborate with others when using the private datastore,
-so you will have a standard list of tags to use for the specific data your are
+You will most likely collaborate with others when using a private datastore,
+so you will have a standard list of tags to use for the specific data you are
 collecting.
 These tags can then be made into a presets menu, which will provide an
 easy-to-use form for adding both public and private data.
 
-**4. Access the Datastore Online**
 
-Just like `openstreetmap.org <http://openstreetmap.org>`_ , you can access the
-online datastore directly, by visiting http://sds.openstreetmap.or.id and
-logging in with your username and password.
+4. Access the Datastore Online
+------------------------------
+
+You can access the SDS online with your username and password. To visit
+the example SDS, open your browser and go to http://sds.dev.hotosm.org/.
 
 .. image:: /static/training/intermediate/osm/image111.*
    :align: center
 
-*4.1 Private Data Store Users*
-
-There is 2 types of Data Store users.
-They are Admin who can add new projects or users onto SDS and Personal are
-regular users who joined on some project that using SDS.
-
-This is the screenshot :
+There are two types of SDS users.
+Admin users can add new projects or users onto the SDS. Personal users are
+regular users who are part of a project team which is using the SDS.
 
 .. image:: /static/training/intermediate/osm/image112.*
    :align: center
 
-*4.2 Figure of Using Private Data Store and JOSM*
+Our sample account is a personal account, not an admin, but we can see the
+online platform where our private data is kept.
 
-.. image:: /static/training/intermediate/osm/image113.*
+Let's see what the private data looks like online.
+
+9. Click on :guilabel:`Tag search`.
+
+10. In the text box, type :kbd:`hot` and click :guilabel:`search`.
+
+11. You should see at least one search result. Click on the eyeball button
+    next to it to see complete information.
+
+.. image:: /static/training/intermediate/osm/image112b.*
    :align: center
 
-*4.3 Editing Data Store Online*
+We can see all the information about this object, both the public attributes
+from OSM and the private attributes kept in the SDS.
 
-You can edit your data in SDS online. These are the steps :
-
-- Open this site http://sds.openstreetmap.or.id
-- Username : team.id.personal@hotosm.org   (Personal)
-- Password : osmidpersonal
-- Click :guilabel:`tag search`
-
-.. image:: /static/training/intermediate/osm/image114.*
+.. image:: /static/training/intermediate/osm/image112c.*
    :align: center
 
-- Add 'String' which is a name when we saved the sds tag and click search
+12. Click on :guilabel:`Expert View` to see the actual tags that are used with
+    this object. Look at :guilabel:`OSM Properties` to see the tags that
+    are saved publicly on OSM.
 
-.. image:: /static/training/intermediate/osm/image115.*
-   :align: center
+5. Common questions
+-------------------
 
-- You only can edit the objects attribute that has saved in JOSM but if you
-  want to delete objects you must to use JOSM.
+How do we save our data?
+........................
 
-.. image:: /static/training/intermediate/osm/image116.*
-   :align: center
+The steps are exactly the same as uploading changes to OSM. The only difference
+is that tags with the prefix you select (such as **hot:**) will be diverted to
+a private datastore.
 
-- Click :guilabel:`Save Tags`
+How many users can use the same account? How can we add users?
+..............................................................
 
-*4.4 Add data on Data Store Online*
+There is no limit for user accounts. When you set up your own SDS, you will
+have an Admin account and can add as many users as you need.
 
-You can directly add your data on Data Store. These are the steps :
+How much data can we save in our private server? 
+................................................
 
-- Click Map Search and Load OSM Geometries
+A lot! Basically this depends on the size of your server.
 
-.. image:: /static/training/intermediate/osm/image117.*
-   :align: center
+Is there an easy way to search the private data?
+................................................
 
-.. image:: /static/training/intermediate/osm/image118.*
-   :align: center
-
-- After that add/edit information about object that chosen by you
-
-.. image:: /static/training/intermediate/osm/image119.*
-   :align: center
-
-- After you finish click Save tags
-
-.. image:: /static/training/intermediate/osm/image120.*
-   :align: center
-
-.. image:: /static/training/intermediate/osm/image121.*
-   :align: center
-
-*4.5 Add and Edit User on Private Data Store*
-
-- Open this site : http://sds.openstreetmap.or.id
-- Username : team.id@hotosm.org  (admin)
-- Password : osmidceria
-- Click :guilabel:`user administration`
-
-.. image:: /static/training/intermediate/osm/image122.*
-   :align: center
-
-- Click :guilabel:`Add New User`
-
-.. image:: /static/training/intermediate/osm/image123.*
-   :align: center
-
-.. image:: /static/training/intermediate/osm/image124.*
-   :align: center
-
-- Click :guilabel:`Save` if you finished
-
-*Edit Users*
-
-- Click :guilabel:`user administration`
-
-.. image:: /static/training/intermediate/osm/image125.*
-   :align: center
-
-- Click "Eye Symbol" in the left box
-
-.. image:: /static/training/intermediate/osm/image126.*
-
-- Click :guilabel:`Edit User`
-
-.. image:: /static/training/intermediate/osm/image127.*
-   :align: center
-
-*4.6 Add Project on Private Data Store*
-
-- Click :guilabel:`Project`
-- Click :guilabel:`Create New Project`
-
-.. image:: /static/training/intermediate/osm/image128.*
-   :align: center
-
-- Next you have to write Tag Fields Definition in JavaScript Object Notation
-  (JSON) language.
-  You have to translate Extensible Mark-up Language (XML) language at Preset
-  that you want to use into JSON language.
-- Let's see the difference between XML Preset and JSON
-
-XML
-
-.. image:: /static/training/intermediate/osm/image129.*
-   :align: center
-
-JSON
-
-.. image:: /static/training/intermediate/osm/image130.*
-   :align: center
-
-1. If your preset use ELEMENT COMBO, MULTISELECT or CHECK KEY it must
-   converted with format:
-
-::
-
- {"type":"select","tag":"YOUR KEY","en":"YOUR COLUMN TABLE NAME","option":["VALUES 1","VALUES 2", "SO ON.."]},
-
-Example (first is XML, second is JSON)
-
-.. image:: /static/training/intermediate/osm/image131.*
-   :align: center
-
-2. If your preset use ELEMENT TEXT, it must converted with format:
-
-::
-
- {"type":"text","tag":"YOUR KEY","en":" YOUR COLUMN TABLE NAME"},
-
-Example (first is XML, second is JSON)
-
-.. image:: /static/training/intermediate/osm/image132.*
-   :align: center
-
-- Write your tag definition into JSON language at the available row of Tag
-  Field Definition (JSON)
-
-.. image:: /static/training/intermediate/osm/image33.*
-   :align: center
-
-- Click :guilabel:`Create Project` if your finish
-- You can upload your presets in your project to the row of
-  :guilabel:`Preset File`
-- If you click :guilabel:`Project` on right corner, you can see your Project.
-  Click :guilabel:`View Table` to see the data.
-  If there is any ERROR, it possibly there is mistake at your JSON tag
-  definition!
-  If it doesn't you will see a table like this :
-
-.. image:: /static/training/intermediate/osm/image134.*
-   :align: center
-
-- You also can download the table in the CSV format or Excel format.
-
-**5.General Questions**
-
-*How to save our data?*
-
-To save your private data the steps are similar like upload your changes to
-OSM.
-Remember to always use right prefix (in this case is :hot) with your private
-tag to make sure that they will be saved on your private database and would
-not be published.
-
-*How much users can use the same account? How if I would like to add users?*
-
-There is no limit for users account. At the moment users access organised by
-HOT.
-
-*How much data that I can save in my private server?*
-
-A lot of Data
-
-*Is there any easy way to search certain private data?*
-
-When you login to the datastore.hotosm.org you will have a choice to do some
-tag search.
-This is possible to you to search certain tag.
+After you sign in to the SDS website you are able to perform a
+tag search, as we have done in this module.
 
 
 :ref:`Go to next module --> <editing-wiki-osm>`

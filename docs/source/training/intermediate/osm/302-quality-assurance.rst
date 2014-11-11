@@ -14,7 +14,7 @@ Contributing to OpenStreetMap is easy to learn, but difficult to master.
 Everybody makes mistakes, but the system works because even when one person
 does something the “wrong” way, there are always other mappers ready to help
 and fix errors.
-As you map more and more, it will continue to get easier, and you will
+As you map more and more it will continue to get easier, and you will
 learn the “proper” way to do things.
 In this module we will take a look at the JOSM validation tool,
 which is an automated tool to search for errors and warnings in your data.
@@ -35,7 +35,7 @@ might want to review the errors and warnings before uploading to OSM.
 
 JOSM comes with a tool that does an automated analysis of possible mistakes.
 This is useful for finding errors that you may have overlooked.
-When you run the validation tool, it will return two lists of problems:
+When you run the validation tool, it returns two lists of problems:
 
 - **Errors:** These are important to fix, and therefore usually you should not
   ignore these.
@@ -127,7 +127,7 @@ This means that buildings are overlapping each other.
    :align: center
 
 To fix this, move the nodes of one of the buildings outside of the other
-building. It is possible for two buildings to share nodes, if the building
+building. It is possible for two buildings to share nodes, if the buildings
 share a common wall. But two buildings cannot overlap with one another.
 
 Untagged nodes or ways
@@ -243,7 +243,7 @@ mapped or are being worked on.
 
 13. Next you see a view of the square that you have chosen to map.
     Click the button on the left to open the area up for editing with JOSM, 
-    iD, Potlatch 2, or create a Field Paper.
+    iD, Potlatch 2 or create a Field Paper.
 
 .. image:: /static/training/intermediate/osm/image49b.*
    :align: center   
@@ -269,7 +269,7 @@ mapped or are being worked on.
     such as buildings and roads. Alternatively, tasks might be set to map in
     more detail on the ground.
 
-17. When you are finished, you will upload your edits, and then return to the
+17. When you are finished you will upload your edits and then return to the
     Tasking Manager to add a comment about your work. If you finish the grid
     square, click :guilabel:`Mark task as done`.
   
@@ -280,7 +280,7 @@ mapped or are being worked on.
    :align: center
 
 When you finish an area, the grid square
-will turn yellow on the map to indicate that is done.
+will turn yellow on the map to indicate that it is done.
 Someone else will then look at your work to make sure it is good,
 and if they agree that you’ve completed the square well,
 the grid square will turn green, meaning it is complete!
@@ -359,7 +359,7 @@ For such purposes of standardisation, most tags in OSM are in British English.
 An extensive list of standardised OSM tags is available on the OSM Wiki
 `Map Features page <http://wiki.openstreetmap.org/wiki/Map_Features>`_.
 
-When users enter tags in manually in JOSM or another editor, it is common to
+When users enter tags manually in JOSM or another editor, it is common to
 make spelling or other mistakes, particularly for beginners. For this reason,
 it is a good idea to use the presets menu, which uses forms that prevent 
 incorrect tags from being entered.
@@ -376,11 +376,11 @@ Using standardised tags aids in:
 7. KeepRight
 ------------
 
-19. The Keep Right website is another useful validation tool for OSM.
+19. The KeepRight website is another useful validation tool for OSM.
     Open your web browser and head to http://keepright.at.
 
 20. If needed, switch the site into Indonesian by choosing :guilabel:`id` from 
-    the dropdown box in the in the upper right.
+    the drop-down box in the in the upper right.
 
 .. image:: /static/training/intermediate/osm/image64.*
    :align: center
@@ -403,7 +403,7 @@ Using standardised tags aids in:
 
 24. When you see an error in your area of interest, the next step is to fix
     it. Click on the links to one of the editors (JOSM, Potlatch, or iD)
-    to open this data in the editor. Not that to edit in JOSM you must
+    to open this data in the editor. Note that to edit in JOSM you must
     have the JOSM Remote Control Enabled (as described in the 
     :ref:`Tasking Manager section <quality-assurance-step-14>`
     above).
@@ -411,13 +411,13 @@ Using standardised tags aids in:
 .. note:: We recommend that the editing is done in JOSM,
    because its editing features are more complete. Note that JOSM
    must be open (with remote control enabled) in order to connect with
-   the Keep Right website.
+   the KeepRight website.
 
 .. image:: /static/training/intermediate/osm/image67.*
    :align: center
 
 25. Use JOSM (or another editor) to fix the errors that you find on the
-    Keep Right website. After fixing them, return to the site and select
+    KeepRight website. After fixing them, return to the site and select
     :guilabel:`ignore temporarily`. Add a comment and click :guilabel:`save`.
 
 

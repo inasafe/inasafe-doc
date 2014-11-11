@@ -44,7 +44,7 @@ http://download.geofabrik.de/openstreetmap/
    format, click on :guilabel:`indonesia-latest.shp.zip` and the
    file will be downloaded. Several file formats are available - shapefiles
    are a popular GIS format which contain several different files with
-   point, line, and polygon data.
+   point, line and polygon data.
 
 The website indicates the most recent time that the data was updated. Note that
 the server usually updates the data once every 24 hours,
@@ -79,7 +79,7 @@ HOT Exports is a more convenient tool for downloading data.
 7. When you are successfully logged in, click :guilabel:`New Job` in the upper
    right corner. 
 
-8. Enter a name for the job (such as the name of the area you are downloading.
+8. Enter a name for the job (such as the name of the area you are downloading).
    Enter a description as well.
 
 9. Zoom in on the map to the area that you want to download. 
@@ -96,7 +96,7 @@ HOT Exports to extract specific data attributes in your custom download.
 This is useful if the data you are accessing contains non-standard tags
 that are not typically included in data extracts.
 
-10. To add a presets file, click the dropdown menu next 
+10. To add a presets file, click the drop-down menu next 
     to :guilabel:`Select Preset File` and choose one of the available
     options. Check the box next to :guilabel:`Add Default Tags?` to
     include the default attributes in the data extract.

@@ -62,8 +62,8 @@ Attributes from both layer features will be combined in the new layer.
 Clip
 ....
 Clip is used to cut an input feature with another feature (clip feature).
-The attributes from input feature are left intact, only the shape of the input
-feature will follow the shape of the clipping feature.
+The attributes from the input feature are left intact, only the shape of the 
+input feature will follow the shape of the clipping feature.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image53.*
    :align: center
@@ -139,7 +139,7 @@ Because this function is the opposite of Intersect, it would return FALSE if run
 on the example above.
 
 Implementation of these functions is important in supporting analysis for
-scenario development, specifically to obtain answers of typical questions such
+scenario development, specifically to obtain answers of questions such
 as:
 
 - Which schools are safe from an earthquake?

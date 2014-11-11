@@ -16,7 +16,7 @@ Module 6: Editing the OpenStreetMap Wiki
 OpenStreetMap is based around a community of mappers working together.
 Because of this it is necessary to have a way to communicate with each
 other, whether it be to organise social mapping events,
-to discuss different projects related to OSM and/or to create standards for
+to discuss different projects related to OSM or to create standards for
 mapping processes.
 The main avenue for mappers to do this is through the OSM wiki,
 a website where users can create different web pages about different topics
@@ -106,7 +106,8 @@ drafts.
 This is a great place to start learning the basics of editing a wiki page.
 
 5. Go to your user page by clicking on your username in the upper right corner.
-   The user in our example is “MapJeff”, so we will click on this.
+   The user in our example is “MapJeff”. Yours will be the username you signed 
+   up with.
 
 .. image:: /static/training/intermediate/osm/image139.*
    :align: center
@@ -116,7 +117,7 @@ This is a great place to start learning the basics of editing a wiki page.
 
 7. We can type anything into the editor to add information to the page.
    For example, let’s add some basic information and a description.
-   You should add information about yourself. Here is an example:
+   Add information about yourself. Here is an example:
 
 .. image:: /static/training/intermediate/osm/image140.*
    :align: center
@@ -215,11 +216,11 @@ Simple formatting
 +--------------------------------+--------------------------------+---------------+
 | Surrounding text with three    | '''bold text''                 | **bold text** |
 | apostrophes (') will display   |                                |               |
-| this text in bold              |                                |               |
+| the text in bold               |                                |               |
 +--------------------------------+--------------------------------+---------------+
 | Surrounding text with five     | '''''bold and italic text''''' |               |
-| apostrophes (') will           |                                |               |
-| this text in                   |                                |               |
+| apostrophes (') will display   |                                |               |
+| the text in                    |                                |               |
 | bold italic                    |                                |               |
 +--------------------------------+--------------------------------+---------------+
 | Four dashes in a row will      | _ _ _ _                        |               |
@@ -300,7 +301,7 @@ When nesting lists you may mix bullet lists and numbered lists on each level.
 Links
 .....
 
-Links within the OSM wiki are quite simple.
+Links within the OSM wiki are simple.
 Simply surround the name of the wiki page you want to link to with double
 brackets [[wiki-link]].
 You could add different text for the link by adding a pipe symbol (|) and the
@@ -332,9 +333,9 @@ change the text which links to your URL [external-link link-text].
 |                                                         |                                                                                         |
 | [[wikipedia:OpenStreetMap | different text]]            | `different text  <http://wiki.openstreetmap.org/wiki/Map_Features>`_                    |
 +---------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| http://walking-papers.org                               | http://walking-papers.org                                                               |
+| http://fieldpapers.org                                  | http://fieldpapers.org                                                                  |
 |                                                         |                                                                                         |
-| [http://walking-papers.org | different text]            | `different text  <http://wiki.openstreetmap.org/wiki/Map_Features>`_                    |
+| [http://fieldpapers.org | other text]                   | `other text  <http://fieldpapers.org>`_                                                 |
 +---------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
 Tables
@@ -358,8 +359,8 @@ A basic table needs the following parts:
   reserved for caption and table row respectively.
 - A line with the first two characters '\|}' indicating the end of a table.
 
-It is good practise and increases readability to use a space as second/third
-character, thus avoiding any ambiguity.
+It is good practise and increases readability to use a space as the 
+second/third character, thus avoiding any ambiguity.
 
 **Example wiki source**
 ::
@@ -424,7 +425,7 @@ Before creating a page
 - If a page that you want to create already exists, but you think it could be
   better, you should improve it, instead of creating an entirely new page.
 
-- Choose a descriptive name, capitalise new words, and don’t use spaces or
+- Choose a descriptive name, capitalise new words and don’t use spaces or
   dashes.
   The Map Features page for example, is named Map_Features,
   making the link: http://wiki.openstreetmap.org/wiki/Map_Features.
@@ -541,7 +542,7 @@ correctly, but translate the English text into your own language.
 8. Watching pages
 -----------------
 
-You may want keep an eye on pages that you have edited yourself, or that you
+You may want to keep an eye on pages that you have edited yourself, or that you
 have an interest in.
 To do this, you can add specific pages to your :guilabel:`Watchlist` which
 keeps a record of recent changes to pages, so that you will know when others
@@ -560,4 +561,4 @@ the page:
    :align: center
 
 On the Watchlist page you choose to show changes to your watched
-pages within the past hours, or days, or since you started watching the page.
+pages within the past hours, days or since you started watching the page.

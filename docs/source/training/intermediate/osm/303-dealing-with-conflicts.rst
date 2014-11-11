@@ -117,7 +117,7 @@ Types of conflict are:
 - **Members**: There is a difference in the list of members in a relation
 
 Conflicts only appear with two different edits at a time.
-If there are three or more conflicts, then a chain of conflicts will pop-up.
+If there are three or more conflicts, then a chain of conflicts will pop up.
 Therefore you have to choose or merge with only two conflicts at a time.
 You can choose your version, the other version or, at times, merge the two.
 

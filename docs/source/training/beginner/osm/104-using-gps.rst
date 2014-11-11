@@ -7,12 +7,12 @@ Module 4: Using GPS
 
 **Learning Objectives**
 
-- Understand what is GPS and types of GPS                
+- Understand GPS and the types of GPS                
 - Turn on GPS                                                                                  
 - Understand factors that affect GPS accuracy            
 - Understand tracks and waypoints                        
 - Collect data using GPS
-- GPS Settings
+- GPS settings
 - Copy GPS data (tracks and waypoints) to computer    
 - Open waypoints and tracks in JOSM                   
 - Upload GPS tracks using JOSM                        
@@ -103,7 +103,7 @@ Lombok, Indonesia.
    :width: 225 pt
 
 6. Return to the Satellites page and see that you are
-   connected to three or more satellites. In the upper-left corner are your
+   connected to three or more satellites. In the upper left corner are your
    coordinates, your latitude and longitude.
 
 7. Flip to the Map page, and you can see a map of where you are. If you have
@@ -129,7 +129,7 @@ saves a single location, a track will save a series of locations wherever
 you move. For example, a track will record your location every one
 second, or every one metre, and the result will be a series of dots that
 show the path of where you have been. Tracks are useful for mapping objects
-that are represented by lines or shapes, such as the course of a road,
+that are represented by lines or shapes, such as the course of a road
 or the shape of a field.
 
 .. image:: /static/training/beginner/osm/image55.*
@@ -138,8 +138,8 @@ or the shape of a field.
 
 .. note:: A GPS can record a single point as well as a path of where you
           travel. Here the points are numbered in the order they are recorded.
-          The path or “track” is shown in green line and the “waypoint” is
-          shown in red.
+          The path or **track** is shown with a green line and the 
+          **waypoints** are shown in red.
 
 5. Saving Your location
 -----------------------
@@ -267,7 +267,7 @@ are as follows:
 ..................
 
 16. From the Main Menu, go to :menuselection:`Setup ‣ Units`. Here the 
-    type of measurement units can be set, such as metres, feet, and more.
+    type of measurement units can be set, such as metres, feet and more.
     The location unit format is also set here (decimal degrees, decimal 
     minutes degrees, second minutes degrees), datum (standard WGS 84) and 
     projection (standard WGS 84).
@@ -307,8 +307,8 @@ settings, the pages, as well as their order, may be customised.
 
 19. Add a new page to the list by selecting :guilabel:`Add Page`. Then select
     a page such as: :guilabel:`Tracks` (to see details of your trip),
-    :guilabel:`Map` (to view maps), or :guilabel:`Satellite` (to view the status
-    satellite, position, and accuracy).
+    :guilabel:`Map` (to view maps), or :guilabel:`Satellite` (to view the
+    satellite status, position, and accuracy).
 
 20. Click on one of the pages to move it around the list and change
     the order in which the pages flip.
@@ -348,8 +348,8 @@ The settings are as follows:
 - **Record Method**: There are several ways the GPS can record track points:
 
   - *Distance*: tracks a new point each time a certain distance has been covered
-  - *Time* – tracks a new point when an amount of time has elapsed
-  - *Auto* – automatically choose method (typically this should be selected)
+  - *Time*: tracks a new point when an amount of time has elapsed
+  - *Auto*: automatically choose method (typically this should be selected)
 
 - **Interval**: This setting indicates how often the GPS will record the track, 
   depending on the method selected in **Record Method**. Using a high setting 
@@ -374,7 +374,7 @@ you to set a matching unit of measurement.
    :width: 175 pt
 
 
-8. Copying Waypoints and Tracks to the Computer
+8. Copying waypoints and tracks to the computer
 -----------------------------------------------
 
 8.1. Attaching GPS to the computer
@@ -383,7 +383,7 @@ you to set a matching unit of measurement.
 When you are finished mapping with the GPS you will want to copy the
 points and tracks to your computer so that you can open them in JOSM.
   
-22. First, turn off the track log on your GPS, by going to the Track page and
+22. First, turn off the track log on your GPS by going to the Track page and
     selecting :guilabel:`Off`.
 
 23. Attach the GPS to your computer with the cable. One end should plug into
@@ -396,7 +396,8 @@ points and tracks to your computer so that you can open them in JOSM.
 ...........................
 
 24. You may need to install GPS drivers on your computer. Open your training
-    folder and find software/USBDrivers_23.exe. Double-click it and install.
+    folder and find :file:`software/USBDrivers_23.exe`. Double-click it and 
+    install.
 
 25. If you don’t have this file, you can download it. Open your internet
     browser and go to: `http://www8.garmin.com/support/download_details
@@ -414,7 +415,7 @@ points and tracks to your computer so that you can open them in JOSM.
     exact version number may be different).
 
 28. If you don’t have GPSbabel already, open your web browser and go to
-    `www.gpsbabel.org <http://www.gpsbabel.org>`_
+    `www.gpsbabel.org <http://www.gpsbabel.org>`_.
 
 29. Click :guilabel:`Downloads` at the top of the page.
 
@@ -449,11 +450,11 @@ points and tracks to your computer so that you can open them in JOSM.
    :align: center
    :width: 400 pt
 
-37. In the dropdown menu labelled :guilabel:`Format`, select
+37. In the drop-down menu labelled :guilabel:`Format`, select
     :guilabel:`Garmin serial/USB protocol`
 
 38. Go down to the middle of the window, under :guilabel:`Output`. In the 
-    dropdown menu labelled :guilabel:`Format`, select :guilabel:`GPX XML`:
+    drop-down menu labelled :guilabel:`Format`, select :guilabel:`GPX XML`:
 
 .. image:: /static/training/beginner/osm/image60.*
    :align: center

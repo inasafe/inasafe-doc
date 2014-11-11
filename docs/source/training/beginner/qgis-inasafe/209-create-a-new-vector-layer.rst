@@ -40,7 +40,7 @@ First, we must define our dataset.
    :align: center
 
 At this point we must decide what kind of dataset we want to create.
-Remember that a data layer can only contain features of points, lines,
+Remember that a data layer can only contain features of points, lines
 or polygons - never a mix.
 When we create the layer, we must define
 what type of data it will contain.
@@ -48,7 +48,7 @@ what type of data it will contain.
 Since polygons are made up of points and lines, let’s jump into polygons.
 Once you’ve mastered this, creating a point or a line layer should be easy!
 
-3. Check the box next to:guilabel:`Polygon`.
+3. Check the box next to :guilabel:`Polygon`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image174.*
    :align: center
@@ -97,7 +97,7 @@ When you create new data, it should represent objects that really
 exist on the ground.
 We have already learned of numerous ways to collect data using OSM
 tools.
-We learned about GPS to record locations, Walking Papers, and of course,
+We learned about GPS to record locations, Field Papers and of course,
 aerial imagery.
 These are all tools that we can use to identify real-life locations and
 record them in a digital data layer.
@@ -115,7 +115,7 @@ tutorial directory.
 
 12. Navigate to :file:`/qgis/Sleman/`.
 
-13. Select the file **UGM.tif**.
+13. Select the file :file:`UGM.tif`.
 
 14. Click :guilabel:`Open`.
     An image will load into your map.
@@ -129,7 +129,7 @@ tutorial directory.
    :align: center
 
 17. Go to :menuselection:`Project ‣ Project Properties` and enable
-    “on the fly”` transformation.
+    'on the fly' transformation.
 
 18. Make sure that “WGS 84” is selected as the CRS, and click :guilabel:`OK`.
 
@@ -137,7 +137,7 @@ tutorial directory.
    :align: center
 
 19. Right-click on the :guilabel:`UGM` layer and click
-    :guilabel:`Zoom to Layer Extent`
+    :guilabel:`Zoom to Layer Extent`.
 
 20. Zoom in to the centre of the raster image.
     We will be digitising three areas:
@@ -265,7 +265,7 @@ to that layer.
    :align: center
 
 34. You will be asked to save your edits.
-    Click :guilabel:`Save`
+    Click :guilabel:`Save`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image190.*
    :align: center
@@ -324,8 +324,8 @@ We will be using a map provided in the tutorial files, which looks like this:
 .. image:: /static/training/beginner/qgis-inasafe/image193.*
    :align: center
 
-38. Find the file :file:`peta_krb_merapi_2002.jpg`, which is located in the the folder
-    :file:`qgis/Sleman/Merapi`. Click :guilabel:`Open`.
+38. Find the file :file:`peta_krb_merapi_2002.jpg`, which is located in the the 
+    :file:`qgis/Sleman/Merapi/` folder. Click :guilabel:`Open`.
 
 39. Select :guilabel:`WGS 84` when prompted and click :guilabel:`OK`.
 
@@ -341,7 +341,7 @@ So, to georeference this image, we will create four GCPs,
 one at each corner of the map, and we will turn our jpeg file into a geotiff,
 a georeferenced image.
 
-40. Zoom in to the upper-left corner of the map.
+40. Zoom in to the upper left corner of the map.
 
 .. image:: /static/training/beginner/qgis-inasafe/image195.*
    :align: center

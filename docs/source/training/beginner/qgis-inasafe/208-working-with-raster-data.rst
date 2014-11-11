@@ -43,7 +43,7 @@ about rasters!
 3. The Load Raster Layer dialog will open. Find the file in the directory
    :file:`Sleman/` named :file:`Sleman.tif`. Open it.
 
-4. QGIS will open a dialog which explains that the new layers does not have a
+4. QGIS will open a dialog which explains that the new layer does not have a
    CRS assigned. In the box at the bottom, scroll down until you find
    **WGS 84 / UTM zone 49S**. Select it and click :guilabel:`OK`.
 
@@ -53,11 +53,11 @@ about rasters!
 5. When the raster layer loads, be sure to drag it to the bottom of the
    list in the Layers panel.
 
-6. If you can’t see the raster layer, you may need to enable “on the fly”
+6. If you can’t see the raster layer, you may need to enable 'on the fly'
    transformations. To do so:
 
    - Go to :menuselection:`Project ‣ Project Properties...`
-   - Check the box next to :guilabel:`Enable “on the fly” CRS transformation`.
+   - Check the box next to :guilabel:`Enable 'on the fly' CRS transformation`.
    - Click :guilabel:`OK`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image149.*
@@ -89,9 +89,9 @@ how to change it’s symbology.
    :align: center
 
 9. Open the file named :file:`SRTM_Sleman.tif`, which is located in
-   :file:`Sleman/SRTM`.
+   :file:`Sleman/SRTM/`.
 
-10. When it appears in the Layers list, right-click on it and click
+10. When it appears in the Layers panel, right-click on it and click
     :guilabel:`Rename`. Give it the name :kbd:`DEM`.
 
 .. note:: This dataset is a Digital Elevation Model (DEM). It’s a map of the
@@ -117,9 +117,9 @@ it yet. It still needs to be defined. That’s what we will do next.
 11. Open the Layer Properties dialog for the SRTM layer,
     which is now named :guilabel:`DEM`.
 
-12. Switch to the Style tab. This shows the current symbology settings,
-    and as we’ve seen, they don’t give us much information on the layer. Let’s
-    make sure the layer has data in it.
+12. Switch to the :guilabel:`Style` tab. This shows the current symbology 
+    settings, and as we’ve seen, they don’t give us much information on the 
+    layer. Let’s make sure the layer has data in it.
 
 13. Change the :guilabel:`Render type` to :guilabel:`Singleband pseudocolor`.
 
@@ -191,14 +191,14 @@ And render the image like this:
 .. image:: /static/training/beginner/qgis-inasafe/image159.*
    :align: center
 
-But what are the minimum and maximum values that should be used?  The ones
-that are currently under Custom min / max values are the same values that
-just gave us a grey rectangle before. Instead, we should be using the
+But what are the minimum and maximum values that should be used?  The
+current values are those that
+just gave us a grey rectangle. Instead, we should be using the
 minimum and maximum pixel values that are actually in the image. You can
 determine those values easily by loading the minimum and maximum values of
 the raster.
 
-19. Under Load min / max values from band, select 
+19. Under :guilabel:`Load min / max values`, select 
     :guilabel:`Estimate (faster)`.
 
 20. Click the :guilabel:`Load` button:
@@ -206,8 +206,8 @@ the raster.
 .. image:: /static/training/beginner/qgis-inasafe/image160.*
    :align: center
 
-Notice how the Custom min / max values have changed. The lowest pixel value
-in this image file is 0 and the highest is about 195.
+Notice how the custom :guilabel:`Min` and :guilabel:`Max` values have changed. 
+The lowest pixel value in this image file is 0 and the highest is about 195.
 
 .. image:: /static/training/beginner/qgis-inasafe/image161.*
    :align: center
@@ -251,7 +251,7 @@ maximum values to constant values across the whole image.
 Certain types of rasters allow you to gain more insight into the terrain
 that they represent. Digital Elevation Models (DEMs) are particularly useful
 in this regard. In this section we’ll do a little bit more with our DEM
-raster, in order to try to extract even more information from it.
+raster, in order to try to extract more information from it.
 
 3.1  Calculating a hillshade
 ............................
@@ -263,7 +263,7 @@ but it doesn’t really look 3-Dimensional. To get a better look at the
 terrain, it is possible to calculate a hillshade, which is a raster that
 maps the terrain using light and shadow to create a 3D-looking image.
 
-To work with DEMs, we will use QGIS’ all-in-one DEM (Terrain models)
+To work with DEMs, we will use the all-in-one DEM (Terrain models)
 analysis tool.
 
 26. Go to :menuselection:`Raster ‣ Analysis ‣ DEM (Terrain models)`.

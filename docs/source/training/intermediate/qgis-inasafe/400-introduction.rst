@@ -47,11 +47,11 @@ BNPB is Indonesia’s National Disaster Management Agency. |BNPB| is a
 non-departmental ministerial-level government agency, tasked with providing
 guidance and direction to the efforts of disaster management that includes
 disaster prevention, emergency response, rehabilitation
-and reconstruction in a fair and equal way. National Disaster Management Agency
-functions as a policy maker and formulator and Refugee (IDP)
-management to act quickly and appropriately and effectively and efficiently.
+and reconstruction in a fair and equal way. |BNPB|
+functions as a policy maker regarding refugee/IDP
+management for effective and efficient response.
 It coordinates the implementation of disaster management activities in a
-planned, integrated, and comprehensive way.
+planned, integrated and comprehensive way.
 
 http://bnpb.go.id
 

@@ -122,9 +122,9 @@ Below the data collection methodologies used in Jakarta and Padang are explained
 :Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (National
     Disaster Managers) with assistance from |GoA|, the World Bank,
     UNOCHA, HOT and University of Indonesia held
-    workshops in each of Jakarta's 6 Districts in order to help Village Heads
+    workshops in each of Jakarta's six districts in order to help village heads
     map their community boundaries and major infrastructure.
-    Over 500 representatives from Jakarta's 267 Villages participated in these
+    Over 500 representatives from Jakarta's 267 villages participated in these
     workshops and have mapped an impressive 6,000 buildings and all 2,668
     sub-village boundaries (Rukun Warga-RW).
     For more information go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
@@ -162,7 +162,7 @@ Flood Model
 :Source: `HKV <http://deltares.nl>`_
 :Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Jakarta
-:About: The Flood model was created by scientist/engineers in coordination
+:About: The flood model was created by scientists/engineers in coordination
     with DKI Jakarta Public Works based on the 2007 flood conditions. The
     water depth is the maximum depth occurring across the entire flooding
     period.

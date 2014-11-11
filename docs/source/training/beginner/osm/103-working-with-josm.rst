@@ -27,7 +27,7 @@ good understanding of how to draw maps in JOSM.
 1. Downloading JOSM
 -------------------
 
-There is a copy of JOSM in the :file:`software` folder of the package that
+There is a copy of JOSM in the :file:`software/` folder of the package that
 accompanies this course. If you don’t have this or would like the most
 up-to-date version, follow the instructions here. Otherwise skip ahead 
 to :ref:`install-josm`.
@@ -57,14 +57,14 @@ The website should look something like this:
 
 4. You may have problems installing JOSM if Java is not already installed on
    your computer. Install Java by running :file:`jre-8u25-windows-i586`
-   in the :file:`software` folder. The exact version may be different. The most
+   in the :file:`software/` folder. The exact version may be different. The most
    up-to-date version can also be downloaded here:
    `http://www.java.com/en/download/ <http://www.java.com/en/download/>`_
 
 5. Find the JOSM install file on your computer. It should be named
    :file:`josm-setup.exe`. Double-click it to begin setup.
 
-6. Click :guilabel:`OK`, :guilabel:`Next`, :guilabel:`I Agree`, and
+6. Click :guilabel:`OK`, :guilabel:`Next`, :guilabel:`I Agree` and
    :guilabel:`Install`. When the installation is complete, click
    :guilabel:`Finish` to launch JOSM for the first time. Later when you want
    to start JOSM, you can do so by clicking on the :guilabel:`Start Menu` in
@@ -183,7 +183,7 @@ into your language, you can change it in the Preferences.
 
 24. At the top of the window, click the tab that says :guilabel:`Look and Feel`.
 
-25. Choose your language in the dropdown box next to the word :guilabel:`Language`.
+25. Choose your language in the drop-down box next to the word :guilabel:`Language`.
 
 26. Click :guilabel:`OK`.
 
@@ -204,7 +204,7 @@ ways to draw maps with JOSM. Note that this map is not real,
 in that it is not a real map of a real place, so we will not save it on
 OSM.
 
-29. The file is located in :file:`osm` and is named :file:`sample.osm`.
+29. The file is located in :file:`osm/` and is named :file:`sample.osm`.
 
 30. Open JOSM. Go to :menuselection:`Open`.
 
@@ -226,7 +226,7 @@ OSM.
     down, and move the mouse.
 
 34. There are several ways to zoom in and out of the map. With a mouse,
-    scroll wheel is used to zoom in and out. If you are using a laptop
+    the scroll wheel is used to zoom in and out. If you are using a laptop
     and don’t have a mouse, zoom in and out using the scale bar in the
     upper-left of the map window. Drag the bar left and right by holding your
     left mouse down and moving the bar left or right with your mouse.
@@ -265,11 +265,11 @@ Notice that when you select an object, a list appears to the right
 of the map in a window called :guilabel:`Properties`. These are known as tags.
 **Tags** are information that is tied to a point, line or shape that describes
 what it is. For now all you need to know is that this information helps
-describe whether our object is a forest, a river, a building, or something
+describe whether our object is a forest, a river, a building or something
 else.
 
 36. Think about drawing a map by hand, and how you are also drawing points,
-    lines, and shapes. What other places are best represented by points? Lines?
+    lines and shapes. What other places are best represented by points? Lines?
     Shapes?
 
 Now, let’s practise drawing an object (point, line and shape).
@@ -324,8 +324,8 @@ this:
 
 Now we know how to draw points, lines and shapes,
 but we still haven’t defined what they represent. We want to be able to say
-that our points are shops, schools, or something else,
-and whether our shapes are fields, buildings, or something else.
+that our points are shops, schools or something else,
+and whether our shapes are fields, buildings or something else.
 
 44. Click the :guilabel:`Select` tool, in the column of buttons on the left.
 
@@ -353,7 +353,7 @@ You may wish to redraw the map that you drew on paper in Module 1.
 48. Drag the window away from the sample map by holding the right mouse button and
     dragging your mouse, until you have a nice empty area to draw on.
 
-49. Use the Draw tool to create points, lines, and shapes. Describe what your
+49. Use the Draw tool to create points, lines and shapes. Describe what your
     objects are by selecting from the Presets menu.
 
 50. When you are finished, you should have your own map,

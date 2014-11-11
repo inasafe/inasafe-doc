@@ -14,7 +14,7 @@ Module 1: Review QGIS
 Before we dive deeper into |project_name|, we will review
 review the QGIS techniques that we covered in Unit 2.
 We will once more go over some of they key aspects of QGIS,
-including adding vector and raster layers, symbolising layers,
+including adding vector and raster layers, symbolising layers
 and using the Print Composer.
 If you feel competent in all of these areas, feel free to jump ahead to the
 :ref:`next module <preparing-data-and-keywords-for-inasafe>`, 
@@ -73,9 +73,9 @@ Great! You’ve added some vector data to your map.
 
 .. note:: Remember that there are three kinds of vectors:
      
-     - points,
-     - lines,
-     - and polygons
+     - points
+     - lines
+     - polygons
 
    We have just added one layer of each type.
 
@@ -84,7 +84,7 @@ Great! You’ve added some vector data to your map.
 .......................
 
 Raster data has different characteristics than vector data.
-Raster data is composed by rows and columns which form small boxes (known as
+Raster data is composed of rows and columns which form small boxes (known as
 pixels).
 The pixels contain information, which is usually expressed as greyscale or
 colour.
@@ -143,7 +143,7 @@ detailed variations by clicking on :guilabel:`Change`.
 
 We can also base the symbology on the data contained in the layer itself.
 
-10. Click on the box that says :guilabel:`Single Symbol`, and change it to
+10. Click on the box that says :guilabel:`Single Symbol` and change it to
     :guilabel:`Categorized`.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image16.*
@@ -164,7 +164,7 @@ We can also base the symbology on the data contained in the layer itself.
 Next, let’s symbolise our roads layer.
 
 13. Double-click :guilabel:`Jalan_Sleman_OSM` in the Layers panel to open the 
-    Poperties window.
+    Properties window.
 
 14. Click on the :guilabel:`Style` tab.
 

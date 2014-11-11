@@ -77,7 +77,7 @@ Reduction (|AIFDR|).
 |project_name| (Version 2.0) was officially launched at the opening of
 the InaDRTG centre in Jakarta in March 2014 by |BNPB|.
 
-|project_name| is being taught across 6 provinces in Indonesia as one of
+|project_name| is being taught across six provinces in Indonesia as one of
 the three open source software tools used to enable development of realistic
 disaster scenarios for contingency planning.
 The other two tools are:
@@ -95,7 +95,7 @@ The other two tools are:
 Duck, the trusted partner for open source software adoption,
 management and governance.
 |project_name|, along with projects from groups such as Yahoo! and Twitter,
-was selected for this prestigious award from amongst 1000’s of open source
+was selected for this prestigious award from among thousands of open source
 programs that were started in 2012.
 
 Input Data
@@ -164,7 +164,7 @@ The hazard must be accompanied by specific units:
 | \*Cyclone/Tornado      |                                         |                      |
 +------------------------+-----------------------------------------+----------------------+
 
-\* *To come in a future version of |project_name|*
+\* *To come in a future version of* |project_name|
 
 The input hazard layer must have:
 
@@ -194,9 +194,9 @@ a specific hazard.
 | \† Landslide             | Agriculture, industrial                   |
 +--------------------------+-------------------------------------------+
 
-\* *Is available for hazard layer footprints only; the next version of |project_name| will allow for modelled hazards.*
+\* *Is available for hazard layer footprints only; the next version of* |project_name| *will allow for modelled hazards.*
 
-\† *To come in a future version of |project_name|.*
+\† *To come in a future version of* |project_name|.
 
 The input exposure layer must have:
 

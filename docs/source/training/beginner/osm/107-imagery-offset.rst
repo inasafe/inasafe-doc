@@ -45,7 +45,7 @@ All digital photographs are made up of pixels. If you zoom in very close on
 a photograph, you will notice the the image starts to get blurry,
 and eventually you’ll see that an image is made up of thousands of little
 squares that are each a different colour. This is true whether the
-photograph is taken with a handheld camera, a mobile phone,
+photograph is taken with a handheld camera, a mobile phone
 or a satellite orbiting Earth.
 
 .. image:: /static/training/beginner/osm/image108.*
@@ -122,7 +122,7 @@ aerial imagery to identify features on the ground, and another is by using
 GPS to record tracks and waypoints and then add them to OSM. The
 advantage of aerial imagery is obvious. It enables you, the mapper,
 to see the whole picture, to observe various details from the image,
-consider your knowledge of the area, and easily trace roads, buildings,
+consider your knowledge of the area, and easily trace roads, buildings
 and areas. One key advantage of GPS however, is that it doesn’t suffer from
 offset like imagery. A GPS will always provide you with a correct latitude
 and longitude. The only exception is when the satellite signals are
@@ -152,7 +152,7 @@ will be able to align your imagery. Since OSM users often upload
 their GPS tracks to the OSM database, we can download them and use them to
 align our imagery.
 
-1. In JOSM, Click on the :guilabel:`Download` button.
+1. In JOSM, click on the :guilabel:`Download` button.
 
 2. Check the box next to :guilabel:`Raw GPS Data` near the top of the
    :guilabel:`Download` window. Select your area and click

@@ -23,17 +23,17 @@ style the data in different ways.
 Vector data is the most common type of data found in GIS.
 A vector is essentially something made up of single points, or
 lines connecting those points.
-In other words, points, lines, and polygons are all vectors (curved
+In other words, points, lines and polygons are all vectors (curved
 lines are vectors too, but we won’t worry about that for now).
 We are already quite familiar with vector data because in the previous unit,
 we used JOSM to create it!
 
 Each object in a vector dataset is referred to as a feature.
-When we are using JOSM we often refer to them as objects,
+In JOSM we often refer to them as objects,
 but in traditional GIS terminology they are features.
 A polygon that represents a building is a feature, as is a
 line that represents a river.
-Each feature has a geographic location, and is attached to other data that
+Each feature has a geographic location and is attached to other data that
 describe the feature.
 
 One important thing to note is that QGIS layers can only contain one type of
@@ -43,8 +43,8 @@ because they are different types of data.
 Hence if you have a file that contains school polygons and another file that
 contains school points, you would add them as two separate layers.
 
-Almost always, polygon layers will be at the bottom of your layer list, line
-layers in the middle, and point layers at the top.
+Almost always, polygon layers will be at the bottom of your layers list, line
+layers in the middle and point layers at the top.
 You don’t generally want your polygons overlapping your lines and points.
 
 2. Attribute data
@@ -59,7 +59,7 @@ represent where objects are in space, but also tells you what those objects are.
 In the project we see the position of Sleman districts, the railway,
 and some roads, but we can’t see all of the data contained in those layers.
 
-2. Select :guilabel:`Jalan_Sleman_OSM` in the layers list.
+2. Select :guilabel:`Jalan_Sleman_OSM` in the Layers panel.
 
 .. image:: /static/training/beginner/qgis-inasafe/image72.*
    :align: center
@@ -74,7 +74,7 @@ This extra data is called **attribute data**.
 The lines that you can see on your map which represent the location of the 
 streets is called **spatial data**.
 Remember in JOSM there was the same division.
-The points, lines, and shapes we draw tell us **where**, but the tags,
+The points, lines and shapes we draw tell us **where**, but the tags,
 or attributes, tell us **what**.
 These definitions are commonly used in GIS, so it’s essential to remember
 them!
@@ -96,7 +96,7 @@ them!
 3.1 Shapefiles
 ..............
 
-You’ve already added vector data to a project once, in the form of a shapefile.
+You’ve already added vector data to a project in the form of a shapefile.
 As we mentioned previously, a shapefile is a commonly used geographic file
 format.
 It can easily be converted into other formats, and most GIS software can read
@@ -144,11 +144,11 @@ or could be shared between users over a network or the internet.
 .. image:: /static/training/beginner/qgis-inasafe/image76.*
    :align: center
 
-9. Navigate to the :file:`qgis_data/Sleman` folder and find
-   :file:`file guna_lahan.db`.
+9. Navigate to the :file:`qgis_data/Sleman/` folder and find
+   :file:`guna_lahan.db`.
    Select the file and click :guilabel:`Open`.
 
-10. Now in the original dialog box, notice that the dropdown button now
+10. Now in the original dialog box, notice that the drop-down button
     contains *“guna_lahan.db @ ...”*, followed by the path of the database file
     on your computer.
 
@@ -169,7 +169,7 @@ or could be shared between users over a network or the internet.
 .. note:: Remember frequently to save your map!
    Your QGIS project file does not save the data (data is saved in a
    shapefile or a database), but it does remember the layers that you have
-   added to the project, their order, and any settings that you adjust.
+   added to the project, their order and any settings that you adjust.
 
 14. The layers you have just added are all polygon layers, so you will want 
     to drag them down below the line and point layers.
@@ -189,7 +189,7 @@ or could be shared between users over a network or the internet.
 
 The symbology of a layer is its visual appearance on the map.
 One of the basic strengths of GIS is that you have a dynamic visual
-representation of the data you’re working with.
+representation of the data you are working with.
 Therefore, the visual appearance of the map (which depends on the symbology
 of the individual layers) is very important.
 The end user of the maps you produce will need to be able to easily see what
@@ -204,7 +204,7 @@ information that people will understand and be able to use.
 4.1 Changing colours
 ....................
 
-To change a layer’s symbology, we will open its layer properties.
+To change a layer’s symbology, we will open its properties.
 Let’s begin by changing the colour of the :guilabel:`pemukiman` layer.
 
 16. Right-click on the :guilabel:`pemukiman` layer in the Layers panel.
@@ -251,24 +251,25 @@ vegetation so as to make the map less visually cluttered.
     This time, however, we will do more than just change the colour.
 
 23. Click on :guilabel:`Simple Fill` under :guilabel:`Symbol layers`.
-    The Symbol layer dialog will appear next to the symbol layer column panel.
+    The Symbol layer dialog will appear on the right side of the panel.
 
 .. image:: /static/training/beginner/qgis-inasafe/image83.*
    :align: center
 
-24. Change the colour inside the polygons in the layer by clicking the button next
-    to the :guilabel:`Fill` label:
+24. Change the colour inside the polygons in the layer by clicking the button 
+    next to the :guilabel:`Fill` label:
 
 .. image:: /static/training/beginner/qgis-inasafe/image84.*
    :align: center
 
-25. In the dialog that appears, choose a new colour (that suits vegetation).
+25. In the dialog that appears, choose a new colour (one that suits 
+    vegetation).
 
 26. Click :guilabel:`OK`.
 
 Next, we want to get rid of the lines between all the farms.
 
-27. Click on the :guilabel:`Border style` dropdown box.
+27. Click on the :guilabel:`Border style` drop-down box.
     At the moment, it should be showing a short line and the words
     :guilabel:`Solid Line`.
 
@@ -363,13 +364,13 @@ QGIS allows us to do this using symbol layers.
 .. image:: /static/training/beginner/qgis-inasafe/image92.*
    :align: center
 
-.. note:: Note that it may appear different in colour, but don't worry, we’re 
-   going to customise it anyway.
+.. note:: The symbol layers may appear different in colour, but don't worry, 
+   we’re going to customise it anyway.
 
 Now this layer has two different symbologies.
-In other words, both the green colour AND the blue colour will be drawn.
-However, the blue colour will be drawn above the green,
-and since it is a solid colour, it will completely hide the green colour.
+In other words, both the blue colour AND the green colour will be drawn.
+However, the green colour will be drawn above the blue,
+and since it is a solid colour, it will completely hide the blue colour.
 Let’s change it.
 
 .. note:: It’s important not to get confused between a map layer and a symbol 
@@ -378,7 +379,7 @@ Let’s change it.
    This course will usually refer to a map layer as just a layer, but a symbol 
    layer will always be called a symbol layer, to prevent confusion.
 
-40. Set the :guilabel:`Border style` to :guilabel:`No Pen`, as before.
+40. Set the :guilabel:`Border style` to :guilabel:`No Pen` as before.
 
 41. Change the fill style to something other than :guilabel:`Solid` or 
     :guilabel:`No brush`. For example, :guilabel:`Dense 7`:
@@ -386,8 +387,8 @@ Let’s change it.
 .. image:: /static/training/beginner/qgis-inasafe/image93.*
    :align: center
 
-42. Click :guilabel:`OK` and then :guilabel:`OK` and take a look at your layers
-    new symbology.
+42. Click :guilabel:`OK` and then :guilabel:`OK` and take a look at your 
+    layer's new symbology.
 
 .. image:: /static/training/beginner/qgis-inasafe/image94.*
    :align: center
@@ -427,7 +428,7 @@ Your map will now look like this:
    :align: center
 
 47. When you’re done, you can save the symbol itself in QGIS so that you won’t
-    have to do all this work again if you want to use the symbol again in the
+    have to do all this work again if you want to use the symbol in the
     future. Save your current symbol style by clicking the 
     :guilabel:`Save Style...` button under the Style tab of the Layer 
     Properties dialog.
@@ -442,7 +443,7 @@ Your map will now look like this:
     replacing will be lost.
 
 49. Try to change the appearance of the streets layer again, so that the roads 
-    are dark grey or black, with a thin yellow outline, and a dashed white line
+    are dark grey or black, with a thin yellow outline and a dashed white line
     running in the middle.
 
 .. image:: /static/training/beginner/qgis-inasafe/image100.*
@@ -483,7 +484,7 @@ types.
    :align: center
 
 51. Access the various symbol layer types by clicking a symbol layer (1)
-    then clicking the dropdown box in the upper right corner (2)
+    then clicking the drop-down box in the upper right corner (2)
 
 .. image:: /static/training/beginner/qgis-inasafe/image103.*
    :align: center
@@ -503,7 +504,7 @@ types.
 ^^^^^^^^^^^^^^^^^^
 
 55. To see the various symbology options for vector lines, open the Layer
-    Properties for the streets layer, and click on the dropdown box:
+    Properties for the streets layer, and click on the drop-down box:
 
 .. image:: /static/training/beginner/qgis-inasafe/image106.*
    :align: center
@@ -540,7 +541,7 @@ was before.
 ^^^^^^^^^^^^^^^^^^^^^
 
 60. Now let’s change the symbol layer type for the :guilabel:`pemukiman` layer.
-    Take a look at the dropdown menu as you’ve done for the point and line
+    Take a look at the drop-down menu as you’ve done for the point and line
     layers, and see what the various options can do.
 
 .. image:: /static/training/beginner/qgis-inasafe/image113.*

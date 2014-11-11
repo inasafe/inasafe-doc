@@ -10,7 +10,7 @@ Module 2: QGIS and |project_name| in Contingency Planning
 - Understand the role of GIS in contingency plan preparation
 - Understand the importance of data
 - Understand the benefits of QGIS/|project_name| in the development of 
-  scenario development for contingency planning
+  scenarios for contingency planning
 
 GIS for preparing contingency plans
 -----------------------------------
@@ -25,10 +25,10 @@ Before contemplating a contingency plan, one must first consider potential
 disaster scenarios.
 A good plan will likely answer questions such as:
 
-- what sort of disaster would be likely to happen?
-- how widespread will the impact be?
+- what sort of disaster is likely to happen?
+- how widespread might the impact be?
 - who is responsible for helping?
-- what can be given as aid?
+- what should be given as aid?
 - where are the priority areas?
 
 In other words, a contingency plan answers the question, who does what, where
@@ -37,7 +37,7 @@ and when?
 A Geographic Information System is able to help planners answer these questions,
 especially the important spatial elements of contingency planning.
 GIS may be used to model hazardous events so that they can be better
-predicted and reduce risk.
+predicted.
 It may be used to plan evacuation routes prior to a disaster.
 When a disaster occurs, GIS may also play a role in the emergency response
 phase.
@@ -72,7 +72,7 @@ QGIS is a user-friendly open-source Geographic Information System (GIS).
 It runs on Windows, Mac OSX, and Linux.
 QGIS provides a continually growing number of capabilities provided by core
 functions and plugins.
-You can visualise, manage, edit, analyse data, and compose printable maps.
+You can visualise, manage, edit, analyse data and compose printable maps.
 QGIS is great because:
 
 - It’s completely free. It doesn’t cost anything.
@@ -90,7 +90,7 @@ One of these plugins is |project_name|, which can be used to analyse the
 impact of a disaster and create a list of actions needed to be taken when a
 disaster occurs.
 QGIS and |project_name| can also help to determine the location of ideal
-places of refuge, evacuation routes, areas likely to be damaged, and more.
+places of refuge, evacuation routes, areas likely to be damaged and more.
 
 .. image:: /static/training/beginner/qgis-inasafe/image8.*
    :align: center

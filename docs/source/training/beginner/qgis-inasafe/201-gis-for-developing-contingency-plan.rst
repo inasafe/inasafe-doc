@@ -30,14 +30,14 @@ informative, and useful for us to see where places are in relation to us.
 
 In this unit we will take this even further. We will learn how to perform
 geographic data analysis, and thereby learn how to make our data more useful,
-informative, and effective.
+informative and effective.
 
 Terminology of Geographic Information Systems (GIS)
 ---------------------------------------------------
 
 A Geographic Information System (GIS) is a system designed to enable people to
 work with data related to places on the Earth. A GIS allows the creation,
-storage, manipulation, and analysis of geographic data. GIS is a very broad
+storage, manipulation and analysis of geographic data. GIS is a very broad
 concept and can involve complex hardware and software. But for most people’s
 purposes, a simple GIS software application is all that is required, and in this
 unit we will learn how to use the excellent open-source application, QGIS.

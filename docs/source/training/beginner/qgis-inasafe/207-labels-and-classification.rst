@@ -31,7 +31,7 @@ opening the QGIS project :file:`sleman_2_6.qgs`.
 -----------------
 
 1. Open the attribute table for the :guilabel:`POI_Sleman_OSM` layer by
-   selecting it in the layers list and clicking the 
+   selecting it in the Layers panel and clicking the 
    :guilabel:`Open Attribute Table` button
    (or right-click on the layer and select 
    :menuselection:`Open Attribute Table`).
@@ -75,7 +75,7 @@ ensure that it has been activated.
 .. image:: /static/training/beginner/qgis-inasafe/image118.*
    :align: center
 
-5. Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers list, so that it
+5. Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers panel, so that it
    is highlighted.
 
 6. Click on the :guilabel:`Layer Labeling Options` button:
@@ -92,7 +92,7 @@ This gives you the Layer labeling settings dialog.
 
 8. We must indicate which of the attribute fields we want to use for the labels.
    The **NAME** field is the mostly likely candidate for a label, so select
-   NAME from the dropdown box:
+   NAME from the drop-down box:
 
 .. image:: /static/training/beginner/qgis-inasafe/image121.*
    :align: center
@@ -147,13 +147,10 @@ Labeling lines
 ..............
 
 Now that you know how labeling works, there’s an additional problem. Points and
-polygons are easy to label, but what about lines? If you label them the same way
-as the points, your results would look like this:
-
-.. image:: /static/training/beginner/qgis-inasafe/image128.*
-   :align: center
-
-This is not very useful! To make lines behave, we’ll need to edit some options.
+polygons are easy to label, but what about lines? If you label them the same 
+way as the points, they will look funny. Street name labels, for example, 
+should be parallel to the street lines, not hovering horizontally above them. 
+To make lines behave, we’ll need to edit some options.
 
 17. Hide the :guilabel:`POI_Sleman_OSM` layer so that it doesn’t distract you.
 
@@ -176,7 +173,7 @@ The map will look somewhat like this, depending on scale:
 .. image:: /static/training/beginner/qgis-inasafe/image130.*
    :align: center
 
-It’s better than before, but still not ideal. For starters, some of the names
+It’s good but still not ideal. For starters, some of the names
 appear more than once, and that’s not always necessary. To prevent that from
 happening:
 
@@ -191,7 +188,7 @@ to be of notice.
     :kbd:`5.0 mm`. Observe the results after you click :guilabel:`Apply`.
 
 24. Try out different settings on the :guilabel:`Placement` tab as well.
-    As we’ve seen before, the horizontal option is not a good idea for roads
+    As we mentioned before, the horizontal option is not a good idea for roads
     in this case, so let’s try the curved option instead!
 
 25. Select :guilabel:`Curved` under :guilabel:`Placement`. Here’s the result:
@@ -230,7 +227,7 @@ effectively.
 
 27. Go to the :guilabel:`Style` tab.
 
-28. Click on the dropdown that says :guilabel:`Single Symbol`.
+28. Click on the drop-down box that says :guilabel:`Single Symbol`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image133.*
    :align: center
@@ -285,8 +282,7 @@ can do about that.
 
 39. Change the colour for each type of vegetation by double-clicking on the 
     coloured block next to its name. You can change the colour for each type 
-    of vegetation to something that you think is more applicable, as we’ve 
-    done here:
+    of vegetation to something that you think is more applicable.
 
 .. image:: /static/training/beginner/qgis-inasafe/image141.*
    :align: center

@@ -7,7 +7,7 @@ Module 10: Vector Analysis for Problem Solving
 
 **Learning Objectives**
 
-- Understand GIS process
+- Understand the GIS process
 - Identify addressable problems
 - Understand data needs
 - Start a QGIS project
@@ -15,7 +15,7 @@ Module 10: Vector Analysis for Problem Solving
 - Identify hazard zones
 - Look for important roads
 - Look for medical facilities
-- Buffer roads & medical facilities
+- Buffer roads and medical facilities
 - Analyse overlapped areas
 
 The power of GIS is its ability to help us analyse data. Vector data can be
@@ -77,7 +77,7 @@ Now that we know what we want to do, let’s start doing it!
 .. image:: /static/training/beginner/qgis-inasafe/image206.*
    :align: center
 
-2. Start adding the layers we will use. In the :file:`Sleman/Merapi` folder,
+2. Start adding the layers we will use. In the :file:`Sleman/Merapi/` folder,
    add the layers :file:`jalan_sleman_49S`, :file:`tempat_penting_Sleman_49S`,
    :file:`KRB3_49S` and :file:`vegetasi_49S`. Your Layers panel should look 
    like this:
@@ -105,7 +105,7 @@ we can easily measure distances between and around features.
 5. Save your project as :kbd:`merapi_analisis.qgs`.
 
 6. In your operating system’s file manager, create a
-   new folder under :file:`qgis/Sleman/Merapi` and call it
+   new folder under :file:`qgis/Sleman/Merapi/` and call it
    :file:`evakuasi_bencana`.
 
 This is where you’ll save the datasets that we will create during our anaysis.
@@ -173,8 +173,8 @@ Ngemplak, Turi, or Pakem.
 .. image:: /static/training/beginner/qgis-inasafe/image212.*
    :align: center
 
-The idea is that query will filter the data layer so that it will only show us
-features that we want that is, farms and dry fields in Pakem, Turi, and
+The idea is that the query will filter the data layer so that it will only show
+us the features we want - that is, farms and dry fields in Pakem, Turis and
 Ngemplak.
 
 21. We need to add one more thing to our query: parentheses.
@@ -235,7 +235,7 @@ separate layer.
 27. Next to the :guilabel:`Save as` field in the dialog that appears,
     click the :guilabel:`Browse` button.
 
-28. Save the layer under :guilabel:`evakuasi_bencana` as :file:`kebun_tegalan.shp`.
+28. Save the layer under :file:`evakuasi_bencana/` as :kbd:`kebun_tegalan.shp`.
 
 29. Check the box labelled :guilabel:`Add saved file to map` in the
     :guilabel:`Save vector layer as...` dialog.
@@ -306,7 +306,7 @@ functionality to help us reach a solution.
 .. image:: /static/training/beginner/qgis-inasafe/image224.*
    :align: center
 
-39. In the first dropdown box select :guilabel:`jalan`.
+39. In the first drop-down box select :guilabel:`jalan`.
 
 40. Enter :kbd:`300` next to :guilabel:`Buffer distance`.
 
@@ -326,7 +326,7 @@ functionality to help us reach a solution.
 
 44. When you are asked to add the new layer to the TOC, click :guilabel:`Yes`
     (“TOC” stands for “Table of Contents”, by which it means the list of 
-    Layers).
+    layers).
 
 .. image:: /static/training/beginner/qgis-inasafe/image226.*
    :align: center
@@ -377,7 +377,7 @@ criteria are satisfied at once!  To do that we will use the Intersect tool.
 
 50. Click :guilabel:`OK` and add the layer to the project when prompted.
 
-If we hide the original layers, we can see that our new layers shows us
+If we hide the original layers, we can see that our new layer shows us
 the areas where they intersect. These are the areas where both of
 these criteria are satisfied.
 
@@ -412,7 +412,7 @@ Let’s save this selection as a new layer.
 
 54. Right-click on the :guilabel:`kebun_tegalan` layer in the Layers panel.
 
-55. Click :guilabel:`Save Selection As`....
+55. Click :guilabel:`Save Selection As...`.
 
 56. Name the new file :kbd:`kebun_tegalan_lokasi_terpilih.shp` and
     check the box next to :guilabel:`Add saved file to map`.

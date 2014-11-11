@@ -5,7 +5,7 @@ Other Hazards in |project_name|
 
 **Learning Objectives:**
 
-* Run |project_name| with other hazards, specifically volcanoes, earthquakes,
+* Run |project_name| with other hazards, specifically volcanoes, earthquakes
   and tsunamis
 * Run a volcano scenario in |project_name| using a vent location
 * Run an earthquake scenario in |project_name| using a shakemap
@@ -65,13 +65,13 @@ Select Feature and Save
 .. image:: /static/training/socialisation/063_merapi.*
    :align: center
 
-6. Zoom in to the highlighted point. This can be done with the Zoom In tool, by 
-   dragging a small box around the point.
+6. Zoom in to the highlighted point. This can be done with the 
+   :guilabel:`Zoom In` tool, by dragging a small box around the point.
 
 .. image:: /static/training/socialisation/063a_merapi2.*
    :align: center
 
-Now that we know where Merapi is, and have checked that it is in fact in the
+Now that we know where Merapi is and have checked that it is in fact in the
 correct location, we are going to make a hazard layer using just this point.
 
 7. Right-click on :guilabel:`Volcanoes` in the Layers panel and 
@@ -128,9 +128,9 @@ Configure and Run |project_name|
 
 20. Confirm that |project_name| has the following in the drop-down menus:
 
-* Merapi eruption
-* people
-* Need evacuation
+  * Merapi eruption
+  * people
+  * Need evacuation
 
 Before we run |project_name|, we must define what the hazard zone is. Since
 our hazard layer is simply a point, we will define a series of impact zones
