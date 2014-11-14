@@ -11,7 +11,7 @@ Run Basic |project_name|
 * Modify the threshold (parameters) of an impact function
 * Run |project_name| using flood and building models and examine the results
 
-**Data for this Module**
+**Data for this module**
 
 Download the InaSAFEv2.0.zip from `InaSAFE Training Data Packages
 <http://data.inasafe.org/TrainingDataPackages/>`_
@@ -85,7 +85,7 @@ details of this report are explained below.
 
 **People:** |project_name| shows approximately how many people are located
 in water deeper than one metre. It is assumed that all of these people will
-need to evacuate their homes.  The threshold of one metre can be changed
+need to evacuate their homes. The threshold of one metre can be changed
 (see Changing threshold section below).
 
 **Needs per week** is calculated using the above number of evacuated people to
@@ -105,7 +105,7 @@ well as a statistical breakdown of Youth, Adults and Elderly.
 Print Results
 .............
 
-5. Click :guilabel:`Print...` at the bottom the |project_name| panel.
+5. Click :guilabel:`Print...` at the bottom of the |project_name| panel.
 
 .. image:: /static/training/socialisation/034_print.*
    :align: center
@@ -175,7 +175,7 @@ in the |project_name| panel. How have they changed?
    Is this the answer you were expecting?
    **Answer:** _____________________
 
-13. Click :guilabel:`Print` at the bottom the |project_name| panel.
+13. Click :guilabel:`Print...` at the bottom the |project_name| panel.
 
 .. image:: /static/training/socialisation/034_print.*
    :align: center
@@ -261,7 +261,7 @@ table will show the number of buildings by aggregation boundary.
 **Source** shows the source of the hazard and exposure datasets.
 
 
-20. Click :guilabel:`Print` at the bottom the |project_name| panel.
+20. Click :guilabel:`Print...` at the bottom the |project_name| panel.
 
 .. image:: /static/training/socialisation/034_print.png
    :align: center
@@ -297,3 +297,5 @@ You may try running this scenario again with a water threshold of 0.8 metres.
 
 27. Click :guilabel:`Print` and save PDFs the same way as before.
 
+
+:ref:`Go to next module --> <inasafe-in-more-detail>`

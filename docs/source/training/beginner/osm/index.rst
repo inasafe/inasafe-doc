@@ -1,4 +1,4 @@
-.. _begin_osm:
+.. _begin-osm:
 
 Unit 1: Data Collection Using OpenStreetMap Beginner Level
 ==========================================================

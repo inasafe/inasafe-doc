@@ -1,4 +1,4 @@
-.. _insafe-in-more-detail:
+.. _inasafe-in-more-detail:
 
 |project_name| in More Detail
 =============================
@@ -6,8 +6,8 @@
 **Learning Objectives:**
 
 * Learn to interrogate |project_name| results using simple GIS tools, such
-  as zooming, information, and measurement tools
-* Add a new hazard layer, read its attribute table, and symbolise it based on
+  as zooming, information and measurement tools
+* Add a new hazard layer, read its attribute table and symbolise it based on
   its attributes
 * Create |project_name| keywords for the new hazard layer
 * Understand the difference between a model hazard and a footprint hazard
@@ -42,9 +42,11 @@ Next let's use basic QGIS tools to examine the datasets.
 Estimated buildings affected
 .............................
 
-1. Click the Zoom In tool to and click in the map area. Zoom in to a cluster of buildings.
+1. Click the :guilabel:`Zoom In` tool to and click in the map area. Zoom in to 
+   a cluster of buildings.
 
-Here we have zoomed to a location showing two rivers going through the middle of Jakarta.
+Here we have zoomed to a location showing two rivers going through the 
+middle of Jakarta.
 
 .. image:: /static/training/socialisation/042_buildings_zoom.*
    :align: center
@@ -59,7 +61,7 @@ Here we have zoomed to a location showing two rivers going through the middle of
 .. image:: /static/training/socialisation/043_highlight.*
    :align: center
 
-3. Click the Identify Features tool and then click on a building.
+3. Click the :guilabel:`Identify Features` tool and then click on a building.
 
 Here we selected the building circled above, which causes the attributes
 of the building to be shown in a new window or panel.
@@ -68,11 +70,12 @@ of the building to be shown in a new window or panel.
    :align: center
 .. note:: The data collected for each building in this tutorial was gathered by 
    provincial disaster managers through an OpenStreetMap data collection
-   program.  They collect important structures and essential information
+   program. They collect important structures and essential information
    about each building, such as its name, address, type and structural
    information.
 
-4. Click the Zoom to Layer tool. This will return the map view to the extent of the
+4. Click the :guilabel:`Zoom to Layer` tool. This will return the map view 
+   to the extent of the
    :guilabel:`Estimated buildings affected` layer.
 
 
@@ -88,7 +91,7 @@ Population which needs evacuation
 
 7. Zoom in to an area of your choice.
 
-8. Use the Identify Features tool to select a pixel (square) of
+8. Use the :guilabel:`Identify Features` tool to select a pixel (square) of
    the selected layer, :guilabel:`Population which need evacuation`.
 
 Here we clicked on one of the light green pixels and find that there is a
@@ -98,26 +101,27 @@ pixel (square). In this dataset one pixel represents a hectare, or 100 x 100 met
 .. image:: /static/training/socialisation/045_examineraster.*
    :align: center
 
-9. Use the Identify Features tool to select other pixels to find
+9. Use the :guilabel:`Identify Features` tool to select other pixels to find
    out their value.
 
 10. Close the Identify Results window.
 
 11. Is each pixel really 100m by 100m? We can check by using the 
-    Measure Line tool. It may be easier to measure one pixel by zooming in close.
+    :guilabel:`Measure Line` tool. It may be easier to measure one pixel by 
+    zooming in close.
     After selecting the tool, click on two corners of a single pixel. The result
     should be approximately 100 metres.
 
 .. image:: /static/training/socialisation/046_measuretest.*
    :align: center
 
-As you can see above we measured 102 metres, but this is only because its hard to
-click precisely on the corners of a single pixel.
+As you can see above we measured 102 metres, but this is only because its hard 
+to click precisely on the corners of a single pixel.
 
 12. Close the Measure window.
 
-13. Click the Zoom to Layer button to return to the full extent of the
-    selected layer.
+13. Click the :guilabel:`Zoom to Layer` button to return to the full extent of 
+    the selected layer.
 
 14. Uncheck all layers except:
 
@@ -131,7 +135,7 @@ Flood footprint in |project_name|
 Adding a vector layer
 .....................
 
-15. Click the Add Vector Layer button.
+15. Click the :guilabel:`Add Vector Layer` button.
 
 16. Click :guilabel:`Browse` and navigate to the :file:`data` folder within
 the InaSAFE tutorial data folder. Select :file:`flood_osm_bpbd18113_jakarta.shp`
@@ -168,8 +172,8 @@ Let's examine the data by opening its attribute table.
              0 = not affected
 
 .. note:: The information in the attribute table is the same as that shown
-   with the Identify Feature tool, but instead of viewing only one object's
-   attributes, we can see all of the objects at once.
+   with the :guilabel:`Identify Feature` tool, but instead of viewing only 
+   one object's attributes, we can see all of the objects at once.
 
 18. Close the attribute table.
 
@@ -179,7 +183,7 @@ Symbolising vector
 Now let's stylise the subvillage administration boundary to only
 see the flood affected (affected = 1) areas.
 
-19. Double click on the :guilabel:`flood_osm_bpbd18113_jakarta` layer - this
+19. Double-click on the :guilabel:`flood_osm_bpbd18113_jakarta` layer - this
     will open up the layer properties window.
 
 20. Navigate to the style tab.
@@ -192,8 +196,8 @@ see the flood affected (affected = 1) areas.
 
 22. In the drop-down menu next to :guilabel:`Column`, select :guilabel:`affected`.
 
-23. Click the Classify button. Three rows will appear with coloured boxes and
-    numbers next to them.
+23. Click the :guilabel:`Classify` button. Three rows will appear with coloured 
+    boxes and numbers next to them.
 
 24. Select the first row with the coloured box that reads "0 0"
     and click the Delete button.
@@ -422,3 +426,6 @@ statistics are also divided by administrative boundaries.
 
 .. image:: /static/training/socialisation/060_buildingaggregationresult.*
    :align: center
+
+
+:ref:`Go to next module --> <other-hazards>`

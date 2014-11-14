@@ -13,9 +13,9 @@ Target Audience
 ---------------
 
 * Persons responsible for developing contingency plans at provincial and
-  district levels.
+  district levels
 * Lecturers and students from relevant departments such as Geography,
-  Geodesy, Geomathics, Information Technology and other earth-related sciences.
+  Geodesy, Geomathics, Information Technology and other earth-related sciences
 * Representatives from NGOs working in disaster risk reduction
 * Other relevant organisations and agencies
 
@@ -90,3 +90,6 @@ Author:
 
 `Kristy Van Putten <kristy.vanputten@gmail.com>`_, Deputy Risk and Vulnerability
 Manager |AIFDR| |GA|
+
+
+:ref:`Go to next module --> <socialisation-overview>`

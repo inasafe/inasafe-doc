@@ -25,7 +25,7 @@ QGIS, feel free to skip below to QGIS setup and and plugin installation.
 Introduction to QGIS
 --------------------
 
-QGIS is a user friendly Open Source Geographic Information System (GIS).
+QGIS is a user-friendly open source Geographic Information System (GIS).
 It runs on Linux, OS X, Windows and Android and supports numerous
 vector, raster, and database formats and functionality.
 `<http://www.qgis.org>`_
@@ -62,7 +62,7 @@ An overview of the interface
 
 The elements identified in the figure below are:
 
-1. Layers list
+1. Layers panel
 2. Toolbars
 3. Map canvas
 4. Status bar
@@ -96,15 +96,15 @@ needed for this tutorial.
 
 3. Right-click the toolbar and uncheck the following:
 
-* Advance Digitizing
-* Database
-* Digitizing
-* File
-* Grass
-* OpenStreetMap
-* Raster
-* Vector
-* Web
+  * Advance Digitizing
+  * Database
+  * Digitizing
+  * File
+  * Grass
+  * OpenStreetMap
+  * Raster
+  * Vector
+  * Web
 
 4. Rearrange the toolbar so that it's on one line. Left-click and
    hold the vertical dots on the left hand side of the tool. Drag
@@ -148,7 +148,7 @@ Next change the project's projection settings and QGIS language settings:
    :align: center
 
 9. Check :guilabel:`Override system locale`. You may choose any language 
-   that QGIS have been translated into. We will stay with English
+   that QGIS has been translated into. We will stay with English
    for this tutorial, so no action is needed.
    Uncheck :guilabel:`Override system locale`.
 
@@ -158,7 +158,7 @@ Next change the project's projection settings and QGIS language settings:
 .. note::
    |project_name| is dependent on the locale, but it has only been translated
    into Bahasa Indonesian so far.
-   World Bank is currently funding for the translation of |project_name| into
+   World Bank is currently funding the translation of |project_name| into
    French and Portuguese.
 
 10. Click :guilabel:`OK` in the bottom right corner of the Options window.
@@ -198,14 +198,11 @@ OpenLayers, using the QGIS plugin repository.
 
 |project_name| also comes with a toolbar of its own!
 
-16. To retrieve the |project_name| toolbar, right-click on the
-    top toolbar and check :guilabel:`InaSAFE`.
-
 .. image:: /static/training/socialisation/022_inasafetoolbar.*
    :align: left
 
-|
-|
+16. To retrieve the |project_name| toolbar, right-click on the
+    top toolbar and check :guilabel:`InaSAFE`.
 
 =================================================   ========================
 **Symbol**                                          **Name**
@@ -222,13 +219,13 @@ OpenLayers, using the QGIS plugin repository.
 .. image:: /static/general/icon_merge.*             Impact Layer Merge
 =================================================   ========================
 
-.. Note:: Later we will explore and use these tools.  For more information on the 
+.. Note:: Later we will explore and use these tools. For more information on the 
   |project_name| toolbar see :doc:`../../user-docs/toolbar`.
 
 OpenLayers Plugin
 .................
 
-.. note:: To use the OpenLayers plugin you must have connection to the Internet at all
+.. note:: To use the OpenLayers plugin you must have connection to the internet at all
    times.
 
 17. Go to :menuselection:`Plugins --> Manage and Install Plugin`.
@@ -273,12 +270,14 @@ Using the navigation tools below, zoom to your home.
 .. image:: /static/general/icon_zoomnext.*  Zoom Next
 ==========================================  ============
 
-23. Click the Zoom In button and draw a box (click and drag the mouse) over your country.
+23. Click the Zoom In button and draw a box (click and drag the mouse) over your 
+    country.
 
 24. Click the Pan Map button and drag the map so that your country is in the
     centre of the screen.
 
-.. Note:: If you make a mistake in your zooming, click the Zoom Last button to go back.
+.. note:: If you make a mistake in your zooming, click the :guilabel:`Zoom Last` 
+   button to go back.
 
 25. Navigate to your own house or workplace.
 
@@ -296,3 +295,6 @@ Using the navigation tools below, zoom to your home.
 
 .. image:: /static/training/socialisation/027_mt.*
    :align: center
+
+
+:ref:`Go to next module --> <raster-vs-vector>`
