@@ -1,4 +1,4 @@
-.. _rastervsvector:
+.. _raster-vs-vector:
 
 Raster vs. Vector
 -----------------
@@ -34,5 +34,7 @@ represented using pixels of various different colour values.
 Both vector and raster data can be used in InaSAFE and will be used in this tutorial.
 The footprint (area) of a hazard may be represented using vectors, as well as the shapes
 and locations of buildings. A hazard model may also be represented by raster data. Population
-density is also represented using rasters. We will see all of these in this tutorial.
+count is also represented using rasters. We will see all of these in this tutorial.
 
+
+:ref:`Go to next module --> <run-basic-inasafe>`

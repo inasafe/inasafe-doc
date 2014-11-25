@@ -1,4 +1,4 @@
-.. _socialisation_overview:
+.. _socialisation-overview:
 
 Overview
 ========
@@ -60,24 +60,24 @@ only complete a disaster impact analysis, but to also conduct further geographic
 The software includes a simple-to-use interface in the hope that
 disaster managers and other end users can easily create impact maps to inform contingency planning.
 
-|project_name| was preliminarily launched by Dr. Agus Wibowo, Head of the Data
-Center at the Indonesia’s Disaster Management Agency (|BNPB|),
+|project_name| was preliminarily launched by Dr. Agus Wibowo, head of the data
+centre at Indonesia’s disaster management agency (|BNPB|),
 at the Understanding Risk Forum in Cape Town on 3 July, 2012.
 There were over 300 downloads of the software within the first three weeks of
 its preliminary launch.
 
 |project_name| (Version 1.0) was officially launched at the 5th Asian
 Ministerial Conference for Disaster Risk Reduction in Yogyakarta,
-23–25 October 2012, by Mr. Dodi Ruswandi, the Deputy for Disaster Reduction
-and Preparedness, |BNPB|, Mr. Abhas Jha,  Disaster Risk Management Coordinator
+23–25 October 2012, by Mr. Dodi Ruswandi, the deputy for disaster reduction
+and preparedness, |BNPB|, Mr. Abhas Jha,  disaster risk management coordinator
 for East Asia and the Pacific from the World Bank,
-and Dr. Matt Hayne, Co-director of Australia-Indonesia Facility for Disaster
+and Dr. Matt Hayne, co-director of Australia-Indonesia Facility for Disaster
 Reduction (|AIFDR|).
 
 |project_name| (Version 2.0) was officially launched at the opening of
-the InaDRTG center in Jakarta in March 2014 by |BNPB|.
+the InaDRTG centre in Jakarta in March 2014 by |BNPB|.
 
-|project_name| is being taught across 6 provinces in Indonesia as one of
+|project_name| is being taught across six provinces in Indonesia as one of
 the three open source software tools used to enable development of realistic
 disaster scenarios for contingency planning.
 The other two tools are:
@@ -95,7 +95,7 @@ The other two tools are:
 Duck, the trusted partner for open source software adoption,
 management and governance.
 |project_name|, along with projects from groups such as Yahoo! and Twitter,
-was selected for this prestigious award from amongst 1000’s of open source
+was selected for this prestigious award from among thousands of open source
 programs that were started in 2012.
 
 Input Data
@@ -135,9 +135,14 @@ Hazard
 Hazard can be seen as a condition, phenomenon, or human activity that
 potentially cause victims, losses or destruction to social structure and
 environment.
-Events or phenomena that are seen as hazard potentials include disasters such as earthquakes, tsunamis, floods, landslides and tornadoes.
+Events or phenomena that are seen as hazard potentials include disasters 
+such as earthquakes, tsunamis, floods, landslides and tornadoes.
 
-For |project_name|, hazard data refers to a singular disaster scenario, such as a Mw 7.8 earthquake or volcanic eruption. Data for such infrequent events is created with scientific modeling software. For more frequently occurring disaster scenarios such as floods, the hazard data can be either modeled by scientists or directly mapped by the local community.
+For |project_name|, hazard data refers to a singular disaster scenario, 
+such as a Mw 7.8 earthquake or volcanic eruption. Data for such infrequent 
+events is created with scientific modelling software. For more frequently 
+occurring disaster scenarios such as floods, the hazard data can be either 
+modelled by scientists or directly mapped by the local community.
 
 The hazard must be accompanied by specific units:
 
@@ -159,7 +164,7 @@ The hazard must be accompanied by specific units:
 | \*Cyclone/Tornado      |                                         |                      |
 +------------------------+-----------------------------------------+----------------------+
 
-\* *To come in a future version of |project_name|*
+\* *To come in a future version of* |project_name|
 
 The input hazard layer must have:
 
@@ -170,7 +175,7 @@ The input hazard layer must have:
 Exposure
 ........
 
-For |project_name|, exposure data may represent population density (number
+For |project_name|, exposure data may represent population count (number
 of people found in a certain area) or important infrastructure (buildings,
 bridges) that becomes a focus of interest when calculating the impact of
 a specific hazard.
@@ -189,9 +194,9 @@ a specific hazard.
 | \† Landslide             | Agriculture, industrial                          |
 +--------------------------+--------------------------------------------------+
 
-\* *Is available for hazard layer footprints only; the next version of |project_name| will allow for modelled hazards.*
+\* *Is available for hazard layer footprints only; the next version of* |project_name| *will allow for modelled hazards.*
 
-\† *To come in a future version of |project_name|.*
+\† *To come in a future version of* |project_name|.
 
 The input exposure layer must have:
 
@@ -297,3 +302,6 @@ indicating where people are by density) and a non-spatial layer which will conta
 statistics on the minimum needs of the number of people that ‘need evacuating’.
 
 .. image:: /static/training/socialisation/002_output_data.png
+
+
+:ref:`Go to next module --> <functionality-datasets>`

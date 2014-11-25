@@ -3,7 +3,7 @@
 Functionality and Datasets
 ==========================
 
-Before we begin using QGIS and |project_name|, this chapter will explain
+Before we begin using QGIS and |project_name|, this module will explain
 |project_name| current functionality, the functionality that will be covered in
 this short course and the spatial datasets we will be using.
 
@@ -42,7 +42,11 @@ KRB = Kawansan Rawan Bencana (Volcano Hazard level)
 =============  ================  ==================  ==================  =======================
 **Exposure**   **Spatial Type**  **Exposure Type**   **Attribute Name**  **Exposure Units/Fields**
 -------------  ----------------  ------------------  ------------------  -----------------------
+<<<<<<< HEAD
 Population     Raster            Population count    N/A                 People per pixel
+=======
+Population     Raster            Count               N/A                 People per pixel
+>>>>>>> upstream/develop
 Structures     Polygon           Structure type      type                text
 Structures     Point             Structure type      type                text
 =============  ================  ==================  ==================  =======================
@@ -63,7 +67,11 @@ Exposure Layers Used in Practical
 ============  ================  =================  ==================  =======================
 **Exposure**  **Spatial Type**  **Exposure Type**  **Attribute Name**  **Exposure Units/Fields**
 ------------  ----------------  -----------------  ------------------  -----------------------
+<<<<<<< HEAD
 Population    Raster            Population count   N/A                 People per Pixel
+=======
+Population    Raster            Count              N/A                 People per Pixel
+>>>>>>> upstream/develop
 Structures    Polygon           Structure type     type                text
 ============  ================  =================  ==================  =======================
 
@@ -73,7 +81,7 @@ Population
 :Name: AsiaPop
 :InaSAFE: people
 :Source: http://worldpop.org.uk
-:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Download: `Indonesia Population Download <http://www.worldpop.org
     .uk/data/summary/?contselect=Asia&countselect=Indonesia&typeselect
     =Population>`_
@@ -97,7 +105,7 @@ Structures
 :Name: |OSM|
 :InaSAFE: buildings
 :Source: http://openstreetmap.org
-:License: `Open Data Commons Open Database License (ODbL) <http://opendatacommons.org/licenses/odbl/>`_
+:Licence: `Open Data Commons Open Database License (ODbL) <http://opendatacommons.org/licenses/odbl/>`_
 :Coverage: World - incomplete
 :About:  OpenStreetMap is a collaborative project to create a free
     editable map of the world.
@@ -122,9 +130,9 @@ Below the data collection methodologies used in Jakarta and Padang are explained
 :Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (National
     Disaster Managers) with assistance from |GoA|, the World Bank,
     UNOCHA, HOT and University of Indonesia held
-    workshops in each of Jakarta's 6 Districts in order to help Village Heads
+    workshops in each of Jakarta's six districts in order to help village heads
     map their community boundaries and major infrastructure.
-    Over 500 representatives from Jakarta's 267 Villages participated in these
+    Over 500 representatives from Jakarta's 267 villages participated in these
     workshops and have mapped an impressive 6,000 buildings and all 2,668
     sub-village boundaries (Rukun Warga-RW).
     For more information go to `AIFDR Website <http://www.aifdr.org/?p=619>`_
@@ -160,9 +168,9 @@ Flood Model
 :Name:  HKV Flood Model
 :InaSAFE:  a flood similar to the 2007 Jakarta event
 :Source: `HKV <http://deltares.nl>`_
-:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Jakarta
-:About: The Flood model was created by scientist/engineers in coordination
+:About: The flood model was created by scientists/engineers in coordination
     with DKI Jakarta Public Works based on the 2007 flood conditions. The
     water depth is the maximum depth occurring across the entire flooding
     period.
@@ -176,7 +184,7 @@ Flood Footprint
 :Name:  Jakarta flood areas on 18/1/2013 by sub village boundaries
 :InaSAFE:  Jakarta flooding on the 18th January 2013
 :Source: |OSM| and BPBD DKI Jakarta
-:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Jakarta
 :About: Along with sub-village boundaries that were mapped during the DKI
     mapping project, this dataset was used to identify flood areas 
@@ -191,12 +199,12 @@ Volcano
 :Name:  Global Volcanism Program
 :InaSAFE:  volcano
 :Source: Smithsonian from http://volcano.si.edu
-:License: `United States Copyright <http://www.copyright.gov/title17/>`_
+:Licence: `United States Copyright <http://www.copyright.gov/title17/>`_
 :Coverage: World
 :About: The Smithsonian's Global Volcanism Program seeks better understanding
     of all volcanoes through documenting their eruptions - small as well as
     large-during the past 10,000 years. Through their website you are able to
-    download a spreadsheet of all the recorded volcanoes.  This spreadsheet
+    download a spreadsheet of all the recorded volcanoes. This spreadsheet
     also has the volcano location, which has been converted into a point file.
 
 .. image:: /static/training/socialisation/007_volcano.png
@@ -209,10 +217,10 @@ Earthquake
 :Name:  Shakemap of Padang 2009 earthquake
 :InaSAFE: an earthquake in Padang like 2009
 :Source: Badan Geologi and |AIFDR|, |GoA|
-:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Padang
 :About: A shakemap is a representation of ground shaking produced by an
-    earthquake.  This particular scenario was modelled based on the 30
+    earthquake. This particular scenario was modelled based on the 30
     September 2009 Mw 7.9 earthquake in Padang. ShakeMaps are generated
     automatically following moderate and large earthquakes by USGS. For more
     information go to http://earthquake.usgs.gov/earthquakes/map/. Pre-event / 
@@ -227,11 +235,11 @@ Tsunami
 :Name:  Maumere Tsunami
 :InaSAFE:  A tsunami in maumere (Mw 8.1)
 :Source: |AIFDR|, |GoA| and Badan Geologi
-:License: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Maumere, Flores
 :About: In September 2011 the Indonesian government held a national exercise
     in Maumere, Flores. |AIFDR| and |GoA| assisted Badan Geology in developing a
-    tsunami model for Maumere based on an Mw 8.1 earthquake.  The Tsunami was
+    tsunami model for Maumere based on an Mw 8.1 earthquake. The Tsunami was
     modelled using open source software called ANUGA and elevation data
     from NEXTMap. The water depth is the maximum depth occurring across the
     entire tsunami event. For more information visit http://anuga.anu.edu.au/
@@ -239,3 +247,6 @@ Tsunami
 
 .. image:: /static/training/socialisation/009_tsunami.png
    :align: center
+
+
+:ref:`Go to next module --> <introduction-to-qgis>`

@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-11-10 16:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 2c7d32f0224f4462a77987ad05b22553
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:6
+msgid "Flood Evacuation Function"
+msgstr ""
+
+# 8e74f212433d4e35b7144e2d422da95c
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:9
+msgid "Overview"
+msgstr ""
+
+# 7b949f1b5b1e4ce79560b865110e7f15
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:11
+msgid "**Unique Identifier**: Flood Evacuation Function"
+msgstr ""
+
+# a3a7311d9f0d486e93b8bd3fdce6d7b1
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:14
+msgid "**Author**: AIFDR"
+msgstr ""
+
+# b7660790d5564d48a9e78a820bbbdacb
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:17
+msgid "**Rating**: 4"
+msgstr ""
+
+# 357dac94f4774ecfbfe0fef666434c0a
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:20
+msgid "**Title**: Need evacuation"
+msgstr ""
+
+# b7ba0cf1b96a47dbb03b33a610957cb6
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:23
+msgid ""
+"**Synopsis**: To assess the impacts of flood inundation in raster format on "
+"population."
+msgstr ""
+
+# 9d8a6268b6dc49b08190961486167c65
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:26
+msgid ""
+"**Actions**: Provide details about how many people would likely need to be "
+"evacuated, where they are located and what resources would be required to "
+"support them."
+msgstr ""
+
+# 174909d93c5b4224b785521c983b4d63
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:29
+msgid ""
+"**Hazard Input**: A hazard raster layer where each cell represents flood "
+"depth (in meters)."
+msgstr ""
+
+# 1f16ba6d0ac24904966afb62e66800e2
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:32
+msgid ""
+"**Exposure Input**: An exposure raster layer where each cell represent "
+"population count."
+msgstr ""
+
+# 93b51afc3681469d8aaaddef23519ef6
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:35
+msgid ""
+"**Output**: Raster layer contains people affected and the minimum needs "
+"based on the people affected."
+msgstr ""
+
+# cdcf415de93444e7954d8d39e527c54f
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:38
+msgid ""
+"**Limitation**: The default threshold of 1 meter was selected based on "
+"consensus, not hard evidence."
+msgstr ""
+
+# 65dd6ed2d9ef47398e31f63291fe9383
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:42
+msgid "Details"
+msgstr ""
+
+# 710a4654b812413cb2cbb6f217d95d78
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:44
+msgid ""
+"The population subject to inundation exceeding a threshold (default 1m) is "
+"calculated and returned as a raster layer. In addition the total number and "
+"the required needs in terms of the BNPB (Perka 7) are reported. The "
+"threshold can be changed and even contain multiple numbers in which case "
+"evacuation and needs are calculated using the largest number with population "
+"breakdowns provided for the smaller numbers. The population raster is "
+"resampled to the resolution of the hazard raster and is rescaled so that the "
+"resampled population counts reflect estimates of population count per "
+"resampled cell. The resulting impact layer has the same resolution and "
+"reflects population count per cell which are affected by inundation."
+msgstr ""
+
+# a27537a4621846018082531cb4bc4f11
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:47
+msgid "Doc String"
+msgstr ""
+
+# db97163d9574412fab00c6edfe3ae1dc
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:49
+msgid "Impact function for flood evacuation."
+msgstr ""
+
+# 35782d5e394240afbef684d6c3044cc8
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:51
+msgid ""
+":author AIFDR :rating 4 :param requires category=='hazard' "
+"and                     subcategory=='flood' and                     "
+"layertype=='raster' and                     unit=='m'"
+msgstr ""
+
+# 482e4b5483e745579e699f48bd05a72c
+#: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:55
+msgid ""
+":param requires category=='exposure' and                     "
+"subcategory=='population' and                     layertype=='raster'"
+msgstr ""
