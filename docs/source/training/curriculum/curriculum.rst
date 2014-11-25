@@ -57,8 +57,8 @@ sub-national level.
 To date, BNPB’s Education and Workshop Centre has been developing a range of
 workshop curriculum and modules with specific focus on
 
-  a) Basic Disaster Management,
-  b) Rapid Assessment and Coordination, and
+  a) Basic Disaster Management
+  b) Rapid Assessment and Coordination
   c) Contingency Planning
 
 |BNPB| works with various actors and stakeholders on the
@@ -97,7 +97,7 @@ each individual tool as well as create a pool of trainers across Indonesia.
 
 This curriculum outline describes competencies to be achieved,
 the lists of content required to achieve the competencies in the workshop
-package, and the program structure of the workshop course.
+package and the program structure of the workshop course.
 The workshop consists of beginner, intermediate and training of trainer levels.
 The beginner workshop is mainly aimed to introduce participants to the
 concept of realistic disaster scenario development and help them become
@@ -106,7 +106,7 @@ In contingency planning, having realistic disaster scenarios contributes
 significantly to the reliability of the created planning results.
 As complexity and uncertainty are common in developing realistic disaster
 scenarios, advanced knowledge and skills in mapping and impact calculations
-using OSM, QGIS, and |project_name| are required.
+using OSM, QGIS and |project_name| are required.
 For this reason, the intermediate level of the workshop on OSM,
 QGIS and |project_name| is required to further participants' knowledge and
 skills to work with the tools in anticipating possible disaster events and
@@ -128,12 +128,12 @@ The workshop consists of three levels:
 1. Beginner Workshop
 
   * Collecting Data Using OSM (Beginner)
-  * Data analysis using QGIS and |project_name| (Beginner)
+  * Data Analysis using QGIS and |project_name| (Beginner)
 
 2. Intermediate Workshop
 
   * Collecting Data Using OSM (Intermediate)
-  * Data analysis using QGIS and |project_name| (Intermediate)
+  * Data Analysis using QGIS and |project_name| (Intermediate)
 
 3. Training of Trainer (ToT) Workshop
 
@@ -193,10 +193,10 @@ Qualifications for participants at beginner level:
 Qualifications for participants at intermediate level:
 
 1. MUST have attended the workshop at beginner level OR equivalent knowledge
-   OR have a background in Geographic Information Systems,
+   OR have a background in Geographic Information Systems
    and have read through the beginner manuals
 2. Able to operate a computer (word processing, presentations, internet,
-   spreadsheet)
+   spreadsheets)
 3. Have a laptop with minimum RAM of 2 GB (recommended 4 GB)
 4. Have an understanding of Geographic Information Systems
 5. Having a GPS unit and understanding of how it works is an advantage
@@ -306,7 +306,7 @@ components:
     a. Behavioral characteristics (measurable evidence) that indicate
        that workshop participants have achieved basic competency
     b. Basic competency achievement marks derived from measurable
-       behavior such as attitude, knowledge, and skills
+       behavior such as attitude, knowledge and skills
     c. Developed in accordance with the characteristics of the workshop
        participant, conditions and workshop organiser
     d. Measurable and/or observable
@@ -332,12 +332,12 @@ Collecting Spatial Data with OSM
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                          |
 +=====================================================================+==================================================================+========================================================+
-|1. Draw paper maps to gain a basic understanding of OpenStreetMap    |                                                                  | **Basic Concept of OpenStreetMap Website**             |
-|                                                                     | 1. Understand the concept and definition of OpenStreetMap        |                                                        |
-|                                                                     | 2. Understand the definition and objectives of data collection   | 1. Concept and definition of OpenStreetMap             |
+|1. Draw paper maps to gain a basic understanding of OpenStreetMap    |                                                                  | **The OpenStreetMap Website**                          |
+|                                                                     | 1. Understand the concept of OpenStreetMap                       |                                                        |
+|                                                                     | 2. Understand the definition and objectives of data collection   | 1. Concept of OpenStreetMap                            |
 |                                                                     | 3. Understand the composition of a map                           | 2. Definition and objectives of data collection        |
-|                                                                     | 4. Make a handwritten sketch of an area                          | 3. Component of a map                                  |
-|                                                                     |                                                                  | 4. Handwritten sketch of an area                       |
+|                                                                     | 4. Make a hand-drawn sketch of an area                           | 3. Components of a map                                 |
+|                                                                     |                                                                  | 4. Hand-drawn sketch of an area                        |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 |2. Navigate OpenStreetMap website                                    |                                                                  | **Working with OSM**                                   |
 |                                                                     | 1. Visit OSM website                                             |                                                        |
@@ -366,7 +366,7 @@ Collecting Spatial Data with OSM
 |                                                                     |                                                                  |   d. Adding presets                                    |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
 |4. Use GPS to add data to OSM                                        |                                                                  | **Using GPS**                                          |
-|                                                                     | 1. Understand what is GPS and types of GPS                       |                                                        |
+|                                                                     | 1. Understand GPS and the types of GPS                           |                                                        |
 |                                                                     | 2. Turn on GPS                                                   | 1. What is GPS                                         |
 |                                                                     | 3. Set up GPS                                                    | 2. Turning on GPS                                      |
 |                                                                     | 4. Understand factors that affect GPS accuracy                   | 3. Navigating the GPS                                  |
@@ -716,7 +716,7 @@ Based on the curriculum, program structure is designed as follows.
 +-----+----------------------------------------+-----------------------------------------+
 |     | **Main Program**                       | **46**                                  |
 +-----+----------------------------------------+-----------------------------------------+
-| 2.  | Basic concept of OpenStreetMap website | 2                                       |
+| 2.  | The OpenStreetMap website              | 2                                       |
 +-----+----------------------------------------+-----------------------------------------+
 | 3.  | Working with OSM                       | 4                                       |
 +-----+----------------------------------------+-----------------------------------------+
@@ -884,7 +884,7 @@ Syllabus
 
 The syllabus is a learning plan for the workshop material that includes 
 basic competencies, indicators, core material, learning activity, assessment, 
-allocation of time, and learning resources.
+allocation of time and learning resources.
 The syllabus is based on the structure of the program and allocation of a
 predetermined time.
 
@@ -904,12 +904,12 @@ Collecting Spatial Data with OSM
 +=====================================================================+==================================================================+========================================================+=======================================+========================+============================+===============================+
 |**1. Basic Concept of OpenStreetMap Website (2 Hours)**                                                                                                                                                                                                                                                                        |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
-| Draw paper maps to gain a basic understanding of OpenStreetMap      |                                                                  | **Basic Concept of OpenStreetMap Website**             | Quiz about OSM, data, and map         | 90 Minutes             | Test/Practice              | Projector                     |
-|                                                                     | 1. Understand the concept and definition of OpenStreetMap        |                                                        |                                       |                        |                            | Slide PPT                     |
-|                                                                     | 2. Understand the definition and objectives of data collection   | 1. Concept and definition of OpenStreetMap             | Make a handwritten sketch of an area  |                        |                            | Module 1                      |
+| Draw paper maps to gain a basic understanding of OpenStreetMap      |                                                                  | **The OpenStreetMap Website**                          | Quiz about OSM, data, and map         | 90 Minutes             | Test/Practice              | Projector                     |
+|                                                                     | 1. Understand the concept of OpenStreetMap                       |                                                        |                                       |                        |                            | Slide PPT                     |
+|                                                                     | 2. Understand the definition and objectives of data collection   | 1. Concept of OpenStreetMap                            | Make a hand-drawn sketch of an area   |                        |                            | Module 1                      |
 |                                                                     | 3. Understand the composition of a map                           | 2. Definition and objectives of data collection        | (individually)                        |                        |                            | Paper and pen                 |
-|                                                                     | 4. Make a handwritten sketch of an area                          | 3. Component of a map                                  |                                       |                        |                            |                               |
-|                                                                     |                                                                  | 4. Handwritten sketch of an area                       |                                       |                        |                            |                               |
+|                                                                     | 4. Make a hand-drawn sketch of an area                           | 3. Components of a map                                 |                                       |                        |                            |                               |
+|                                                                     |                                                                  | 4. Hand-drawn sketch of an area                        |                                       |                        |                            |                               |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |**2. Working with OSM (4 Hours)**                                                                                                                                                                                                                                                                                              |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
@@ -944,7 +944,7 @@ Collecting Spatial Data with OSM
 |**4. Using GPS (10 Hours)**                                                                                                                                                                                                                                                                                                    |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+---------------------------------------+------------------------+----------------------------+-------------------------------+
 |Use GPS to add data to OSM                                           |                                                                  | **Using GPS**                                          | Participants are asked about and      | 5 hours and 30 minutes | Practice                   | Projector                     |
-|                                                                     | 1. Understand what is GPS and types of GPS                       |                                                        | discuss GPS.                          |                        |                            | Slide PP                      |
+|                                                                     | 1. Understand GPS and the types of GPS                           |                                                        | discuss GPS.                          |                        |                            | Slide PP                      |
 |                                                                     | 2. Turn on GPS                                                   | 1. What is GPS                                         |                                       |                        |                            | Module 4                      |
 |                                                                     | 3. Set up GPS                                                    | 2. Turning on GPS                                      | Participants practise how to          |                        |                            | Participant's Computer        |
 |                                                                     | 4. Understand factors that affect GPS accuracy                   | 3. Navigating the GPS                                  | turn on GPS, set up GPS for           |                        |                            |                               |
