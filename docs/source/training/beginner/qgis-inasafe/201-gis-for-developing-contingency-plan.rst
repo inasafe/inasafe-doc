@@ -7,7 +7,7 @@ Module 1: GIS for Developing Contingency Plan
 
 **Learning Objectives**
 
-- Distinguish data and information
+- Distinguish between data and information
 - Understand the concept of GIS
 
 Difference between data and information

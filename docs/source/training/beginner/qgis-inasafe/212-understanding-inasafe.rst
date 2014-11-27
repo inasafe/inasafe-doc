@@ -7,7 +7,7 @@ Module 12: Understanding |project_name|
 
 **Learning Objectives**
 
-- Understand the concept of hazard, exposure, and impact data
+- Understand the concept of hazard, exposure and impact data
 - Understand how to determine impact
 - Understand the |project_name| interface
 - Add hazard data
