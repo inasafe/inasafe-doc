@@ -15,6 +15,7 @@ This document explains the purpose of the different functions available in
    options
    impact_functions
    minimum_needs
+   needs_manager
    converter
    batch_runner
    save_scenario
@@ -23,3 +24,4 @@ This document explains the purpose of the different functions available in
    keywords_editor
    keywords_wizard
    data_driven_age
+   user_extents
