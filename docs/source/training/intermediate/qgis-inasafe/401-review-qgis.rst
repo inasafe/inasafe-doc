@@ -138,8 +138,7 @@ Notice all the options that we have to change the appearance of this layer.
 We can change the layer’s transparency or its colour, or make even more
 detailed variations by clicking on :guilabel:`Change`.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image16.*
-   :align: center
+
 
 We can also base the symbology on the data contained in the layer itself.
 
