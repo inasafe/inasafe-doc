@@ -1,6 +1,9 @@
-Module:  safe_qgis.tools.minimum_needs
+Package::safe_qgis.tools.minimum_needs
 ======================================
 
-.. automodule:: safe_qgis.tools.minimum_needs
-   :members:
+.. toctree::
+   :maxdepth: 2
 
+   minimum_needs/needs_manager_dialog
+   minimum_needs/needs_calculator_dialog
+   minimum_needs/needs_profile
