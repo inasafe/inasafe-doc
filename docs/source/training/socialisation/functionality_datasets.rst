@@ -39,21 +39,17 @@ KRB = Kawansan Rawan Bencana (Volcano Hazard level)
 
 **Exposure:**
 
-=============  ================  ==================  ==================  =======================
+=============  ================  ==================  ==================  =========================
 **Exposure**   **Spatial Type**  **Exposure Type**   **Attribute Name**  **Exposure Units/Fields**
--------------  ----------------  ------------------  ------------------  -----------------------
-<<<<<<< HEAD
+-------------  ----------------  ------------------  ------------------  -------------------------
 Population     Raster            Population count    N/A                 People per pixel
-=======
-Population     Raster            Count               N/A                 People per pixel
->>>>>>> upstream/develop
 Structures     Polygon           Structure type      type                text
 Structures     Point             Structure type      type                text
-=============  ================  ==================  ==================  =======================
+=============  ================  ==================  ==================  =========================
 
 .. note:: For information on what is a raster or a vector,
-   as well as the differences between vector objects please go to
-   :doc:`rastervsvector`
+     as well as the differences between vector objects please go to
+     :doc:`rastervsvector`
 
 |project_name| is a dynamic tool that can easily be adapted to other types of
 hazard and exposure layers.
@@ -64,16 +60,12 @@ For more information visit :ref:`impact_function_tutorial`.
 Exposure Layers Used in Practical
 ---------------------------------
 
-============  ================  =================  ==================  =======================
+============  ================  =================  ==================  =========================
 **Exposure**  **Spatial Type**  **Exposure Type**  **Attribute Name**  **Exposure Units/Fields**
-------------  ----------------  -----------------  ------------------  -----------------------
-<<<<<<< HEAD
+------------  ----------------  -----------------  ------------------  -------------------------
 Population    Raster            Population count   N/A                 People per Pixel
-=======
-Population    Raster            Count              N/A                 People per Pixel
->>>>>>> upstream/develop
 Structures    Polygon           Structure type     type                text
-============  ================  =================  ==================  =======================
+============  ================  =================  ==================  =========================
 
 Population
 ..........
@@ -82,9 +74,7 @@ Population
 :InaSAFE: people
 :Source: http://worldpop.org.uk
 :Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
-:Download: `Indonesia Population Download <http://www.worldpop.org
-    .uk/data/summary/?contselect=Asia&countselect=Indonesia&typeselect
-    =Population>`_
+:Download: `Indonesia Population Download <http://www.worldpop.org.uk/data/summary/?contselect=Asia&countselect=Indonesia&typeselect=Population>`_
 :Coverage: ASEAN +
 :About: High resolution, contemporary data on human population distributions
     are a prerequisite for the accurate measurement of the impacts of
