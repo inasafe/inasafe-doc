@@ -41,8 +41,8 @@ The project looks something like this:
    :align: center
 
 
-Number of people which need evacuation
---------------------------------------
+Number of population which need evacuation
+------------------------------------------
 
 The |project_name| panel has the first three drop-down menus
 filled in already:
@@ -99,7 +99,7 @@ they need to do to prepare for the event.
 depth that requires evacuation and the source of the minimum needs assessment.
 
 **Detailed gender and age report:** Statistical breakdown of the number of
-females, minimum needs for feminine hygiene and pregnant women, as
+females, minimum needs for women's hygiene and pregnant women, as
 well as a statistical breakdown of Youth, Adults and Elderly.
 
 Print Results

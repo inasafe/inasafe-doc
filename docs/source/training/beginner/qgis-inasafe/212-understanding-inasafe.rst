@@ -7,6 +7,17 @@ Module 12: Understanding |project_name|
 
 **Learning Objectives**
 
+<<<<<<< HEAD
+- Explaining the concept of Hazard, Exposure, and Impact data
+- Explaining how to get Impact
+- Explaining the |project_name| interface
+- Adding hazard data
+- Adding unprocessed exposure data (vector and raster)
+- Using keywords editor
+- Analysing Impact
+- Improving |project_name| Output Map
+- Saving and Printing scenario result
+=======
 - Understand the concept of hazard, exposure, and impact data
 - Understand how to determine impact
 - Understand the |project_name| interface
@@ -16,6 +27,7 @@ Module 12: Understanding |project_name|
 - Analyse impact
 - Improve |project_name| output map
 - Save and print scenario results
+>>>>>>> upstream/develop
 
 
 1. Hazards, exposure and impact
