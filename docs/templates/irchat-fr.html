@@ -1,0 +1,73 @@
+{% extends "inasafe-base.html" %}
+{% set title = 'Live Chat' %}
+
+{% block hero %}
+    <div style="float: left; margin-right: -30px">
+        <div class="hero-unit">
+        <a href="../en/irchat.html"><img src="_static/img/flags/gb.png"></a>
+        <a href="../id/irchat.html"><img src="_static/img/flags/id.png"></a>
+        <a href="../fr/irchat.html"><img src="_static/img/flags/fr.png"></a>
+        </div>
+    </div>
+    <iframe src="http://webchat.freenode.net?channels=inasafe&uio=MTE9MzE28"
+    width="700" height="400"></iframe>
+{% endblock %}
+{% block body %}
+        <div class="row" id="blocks-row">
+            <div class="span4">
+                {# We put the admonition inside the span because adding border #}
+                {# to the span will mess up the layout #}
+                <div class="admonition">
+                <h3>Login</h3>
+                    <ul>
+                        <li>Enter a Nickname in the Nickname Field.
+                        </li>
+                        <li>Read the CAPTCHA and enter it in the Field below.
+                        </li>
+                        <li>Click on Connect.
+                        </li>
+                        <li>The Chat-window will open.
+                        </li>
+                        <li>If you cannot read the CAPTCHA click the Reload
+                            button. Another CAPTCHA will appear which you
+                            might be able to read.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="admonition">
+                <h3>Rules</h3>
+                    <ul>
+                        <li>There is no need to ask if it is ok to ask
+                            your question, we encourage any and all questions.
+                        </li>
+                        <li>Be patient. Other members of the chat room may
+                            be busy with other work or have stepped away
+                            from the computer. Just log in to the channel
+                            and say hello and wait for some activity.
+                        </li>
+                        <li>Keep the chat window open - even if someone
+                            replies to you they may be busy with other work
+                            so the replies may not always be instantaneous.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="admonition">
+                <h3>Logout</h3>
+                    Just click on a menu item to go to another page or close
+                    the browser window. No need to logout.
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-danger centered">
+            DDisclaimer: InaSAFE has been jointly developed by Indonesian
+            Government-BNPB, Australian Government-AIFDR and the World
+            Bank-GFDRR. These agencies and the Individual software developers
+            of InaSAFE take no responsibility for the correctness of outputs
+            from InaSAFE or decisions derived as a consequence.
+        </div>
+{% endblock %}

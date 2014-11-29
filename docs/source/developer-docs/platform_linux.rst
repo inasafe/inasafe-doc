@@ -39,19 +39,34 @@ To run the plugin start QGIS and enable it from the
 If this doesn't work see section towards the end of this document about
 dependencies and try to do a manual install.
 
+.. note:: This way is not recommended as it makes sweeping changes to your
+    system and the script will not run equally well on all debian based OS's.
+
+
 2. Setting up the fabric/fabgis way
 ...................................
 
-There is an much easier and more advanced way to control the setup of the
-environment. If is done with `Fabric <http://fabfile.org>`_.
+There is a much easier and more advanced way to control the setup of the
+environment. It is done with `Fabric <http://fabfile.org>`_.
 
 Obviously you need to have fabric installed. Fabric itself is Python based
-and you need to install two more modules with python with pip.
-If you don't have pip installed you should install it too.
+and you can install it with pip. If you don't have pip installed you should
+install it too. We assume you have sudo rights on your own machine.::
 
-sudo apt-get install python-pip
-pip install fabtools
-pip install fabgis
+    mkdir -p ~/dev/python
+    cd ~/dev/python
+    sudo apt-get install python-pip openssh-server
+    pip install fabgis
+    wget -O fabfile.py https://raw2.github.com/AIFDR/inasafe/master/fabfile.py
+    fab -H localhost setup_inasafe
+
+.. note:: This is optimised for Ubuntu based distros (please let us know if
+    it works well on your distro. We recommend this approach.
+
+.. warning:: The setup procedure described above will cause a considerable
+    amount of bandwidth to be used since it checks out the inasafe-doc,
+    inasafe_data and inasafe directories. If you are on a capped bandwidth
+    system be warned.
 
 3. Manual Installation Guide - Linux (Debian based)
 ...................................................
@@ -83,9 +98,8 @@ on your machine in order to work effectively with the code base:
 On an ubuntu system you can install these requirements using apt::
 
    sudo apt-get install git rsync pep8 python-nose python-coverage \
-   python-gdal python-numpy python-sphinx pyqt4-dev-tools pyflakes
-
-   sudo pip install cloud-sptheme python-nosexcover
+   python-gdal python-numpy python-sphinx pyqt4-dev-tools pyflakes \
+   python-nosexcover
 
 In some cases these dependencies may already be on your system via installation
 process you followed for QGIS.
@@ -95,11 +109,18 @@ Cloning the source code from git
 
 To develop on the plugin, you first need to copy it to your local system. If
 you are a developer, the simplest way to do that is go to
-:file:`~/.qgis/python/plugins` and clone |project_name| from our GitHub
+:file:`~/.qgis2/python/plugins` and clone |project_name| from our GitHub
 repository page like this::
 
-   git clone git://github.com/AIFDR/inasafe.git         (for read only)
-   git clone git@github.com:AIFDR/inasafe.git    (to commit changes)
+   git clone git://github.com/AIFDR/inasafe.git inasafe-dev        (for read only)
+   git clone git@github.com:AIFDR/inasafe.git inasafe-dev   (to commit changes)
+
+
+.. note:: If you followed the fabgis approach above, the git checkout is done
+    for you.  you fetch the plugin from the QGIS plugin manager
+    it will overwrite your git copy if you don't alias it as inasafe-dev.
+    For this reason we suggest to rather do your checkout to a directory called
+    inasafe-dev.
 
 QGIS installed in a non-standard location
 .........................................
@@ -114,7 +135,11 @@ option disabled), you could run these commands (or add them to your ~/
    export PYTHONPATH=$PYTHONPATH:/usr/local/share/qgis/python/
 
 .. note:: The above can be set within Eclipse's project properties if you are
-    running your tests using the PyDev IDE environment.
+    running your tests using the PyDev IDE environment. We also provide an
+    example helper script ``run-env-linux.sh`` that you can use to set up your
+    environment (it will work with the fabgis install described above). To
+    use it do ``source run-env-linux.sh`` after which make targets etc. should
+    work.
 
 Adding |project_name| to your python path:
 ..........................................
@@ -122,7 +147,7 @@ Adding |project_name| to your python path:
 Lastly, you should add the |project_name| plugin folder to your PYTHONPATH so
 that package and module paths can be resolved correctly. E.g::
 
-   export PYTHONPATH=$PYTHONPATH:${HOME}/.qgis/python/plugins/inasafe
+   export PYTHONPATH=$PYTHONPATH:${HOME}/.qgis2/python/plugins/inasafe-dev
 
 Once again you could add this to your .bashrc or set it in Eclipse for
 convenience if needed.
@@ -135,12 +160,22 @@ Running tests
 You can run all tests (which includes code coverage reports and other
 diagnostics) by doing this within the |project_name| plugin folder::
 
+   source run-env-linux.sh     (optional, depends on your setup)
    make test
 
 You can also run individual tests using nose. For example to run the
-riabclipper test you would do::
+safe_qgis tools tests you would do::
 
-   nosetests -v gui.test_riabclipper
+   nosetests -v safe_qgis.tools.test
+
+
+If you wish to run tests under xvfb (a virtual framebuffer), you can do::
+
+    sudo apt-get install xvfb
+
+To run tests under xvfb you can now do::
+
+    xvfb-run --server-args="-screen 0, 1024x768x24" make guitest
 
 Achievements
 ............
@@ -168,6 +203,10 @@ Developing using Eclipse (Linux)
 .. note:: This is optional - you can use any environment you like for editing
    python, or even a simple text editor.
 
+.. warning:: This section of the documentation is no longer maintained -
+    we recommend using PyCharm Professional rather. We have a project wide
+    license for PyCharm Professional so please contact us if you need it.
+
 If you wish to use an IDE for development, please refer to
 `this article <http://linfiniti.com/2011/12/remote-debugging-qgis-python-plugins-with-pydev/>`_
 for detailed information on how to get the basic Eclipse with PyDev setup.
@@ -184,9 +223,9 @@ In the resulting project dialog, set the following details:
 * :guilabel:`Project name:` : :kbd:`inasafe`
 * :guilabel:`Use default` : :kbd:`uncheck`
 * :guilabel:`(linux) Directory` :
-  :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
+  :kbd:`/home/<your user name>/.qgis2/python/plugins/inasafe/`
 * :guilabel:`(windows) Directory` :
-  :kbd:`/home/<your user name/.qgis/python/plugins/inasafe/`
+  :kbd:`/home/<your user name>/.qgis2/python/plugins/inasafe/`
 * :guilabel:`Choose project type` : :kbd:`Python`
 * :guilabel:`Grammar Version` : :kbd:`2.7`
 * :guilabel:`Add project directory to PYTHONPATH?` : :kbd:`check`

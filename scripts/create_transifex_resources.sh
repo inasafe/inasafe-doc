@@ -13,6 +13,9 @@
 
 LOCALES=`ls docs/i18n`
 
+# We do not translate developer docs as development is mostly done in english
+# We do not translate api-docs
+
 for ITEM in general user-docs training road-map 
 do
   for POFILE in `find docs/i18n/en/LC_MESSAGES/${ITEM}/ -type f -name '*.po'`
@@ -24,7 +27,7 @@ do
     # name when registering the resource
     BASE=`basename $GENERICFILE .po`
     BASE=`echo $BASE | sed 's/_/-/g' | sed 's/ /-/g'`
-    RESOURCE=inasafe.${ITEM}-$BASE
+    RESOURCE=inasafe-develop.${ITEM}-$BASE
     # Register each po file as a transifex resource (an individual translatable file)
     #set -x
     tx set -t PO --auto-local -r $RESOURCE \
@@ -43,7 +46,7 @@ do
     # .tx/config file that looks like this:
     #
     #
-    #	[inasafe.user-docs-faq]
+    #	[inasafe-develop.user-docs-faq]
     #	file_filter = docs/i18n/<lang>/LC_MESSAGES/user-docs/faq.po
     #	source_file = docs/i18n/en/LC_MESSAGES/user-docs/faq.po
     #	source_lang = en
@@ -57,4 +60,4 @@ done
 tx status
 
 # Push all the resources to the tx server
-#tx push -s
+tx push -s

@@ -6,18 +6,25 @@
         <div class="hero-unit">
         <a href="../en/index.html"><img src="_static/img/flags/gb.png"></a>
         <a href="../id/index.html"><img src="_static/img/flags/id.png"></a>
+        <a href="../fr/index.html"><img src="_static/img/flags/fr.png"></a>
         </div>
     </div>
     <h2>Selamat Datang di Proyek <span class="inasafe">InaSAFE</span>!</h2>
     <div id="myCarousel" class="carousel slide">
         <!-- Carousel items -->
         <div class="carousel-inner">
-            <div class="item centered"><img src="{{ pathto('_static/img/carousel/team.jpg', 1)}}"/>
+            <div class="active item"><img src="{{ pathto('_static/img/carousel/usermap.jpg', 1)}}"/>
                 <div class="carousel-caption">
-                    <h4>'Code sprint' pengembang InaSAFE</h4>
+                    <h4><a href="{{ pathto(master_doc) }}/../user-docs/getting_involved.html#add-to-usermap">Bagaimana cara menambahkan</a>
+                    diri Anda ke dalam<a href="http://users.inasafe.org/">peta pengguna InaSAFE</a></h4>
                 </div>
             </div>
-            <div class="active item"><img src="{{ pathto('_static/img/carousel/codesprint1.jpg', 1)}}"/>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/team.jpg', 1)}}"/>
+                <div class="carousel-caption">
+                    <h4>'Code sprint' pengembang <span class="inasafe">InaSAFE</span></h4>
+                </div>
+            </div>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/codesprint1.jpg', 1)}}"/>
                 <div class="carousel-caption">
                     <h4><span class="inasafe">InaSAFE</span> 'code sprint'.</h4>
                 </div>
@@ -32,10 +39,9 @@
                     <h4><span class="inasafe">InaSAFE</span> 'code sprint'.</h4>
                 </div>
             </div>
-            <div class="item"><img
-                    src="{{ pathto('_static/img/carousel/hot-training2.jpg', 1)}}"/>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/hot-training2.jpg', 1)}}"/>
                 <div class="carousel-caption">
-                    <h4><span class="inasafe">InaSAFE</span> HOT-Taining</h4>
+                    <h4><span class="inasafe">InaSAFE</span> HOT-Training</h4>
                 </div>
             </div>
             <div class="item"><img src="{{ pathto('_static/img/carousel/codesprint3.jpg', 1)}}"/>
@@ -43,7 +49,7 @@
                     <h4><span class="inasafe">InaSAFE</span> 'code sprint'.</h4>
                 </div>
             </div>
-            <div class="active item"><img src="{{ pathto('_static/img/carousel/screenshot.jpg', 1)}}"/>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/screenshot.jpg', 1)}}"/>
                 <div class="carousel-caption">
                     <h4>Skenario <span class="inasafe">InaSAFE</span> untuk gempa bumi pada bangunan.</h4>
                 </div>
@@ -63,14 +69,12 @@
                     <h4>Sesi pelatihan untuk pelatih <span class="inasafe">InaSAFE</span>.</h4>
                 </div>
             </div>
-            <div class="item"><img
-                    src="{{ pathto('_static/img/carousel/inasafelaunch.jpg', 1)}}"/>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/inasafelaunch.jpg', 1)}}"/>
                 <div class="carousel-caption">
                     <h4>Peran <span class="inasafe">InaSAFE</span> di Indonesia.</h4>
                 </div>
             </div>
-            <div class="item"><img
-                    src="{{ pathto('_static/img/carousel/hot-training1.jpg', 1)}}"/>
+            <div class="item"><img src="{{ pathto('_static/img/carousel/hot-training1.jpg', 1)}}"/>
                 <div class="carousel-caption">
                     <h4><span class="inasafe">InaSAFE</span> HOT-Training.</h4>
                 </div>
@@ -103,15 +107,18 @@
                     <p>
                     <span class="inasafe">InaSAFE</span> mula-mula
                         dipikirkan dan dikembangkan oleh Badan Nasional
-                        Penanggulangan Bencana (BNPB) Indonesia dan
+                        Penanggulangan Bencana
+                        (<a href="http://www.bnpb.go.id">BNPB</a>) Indonesia
+                        dan
                         Australian Agency for International Development,
-                        melalui Australia-Indonesia Facility for
-                        Disaster Reduction, World Bank - Global Facility
-                        for Disaster Reduction and Recovery (World Bank-GFDRR).
+                        melalui Australia-Indonesia Facility for Disaster
+                        Reduction (<a href="http://www.aifdr.org">AIFDR</a>),
+                        World Bank - Global Facility for Disaster Reduction
+                        and Recovery (World Bank-
+                        <a href="http://www.gfdrr.org">GFDRR</a>).
                     </p>
                     <p>
-                        Indonesian Scenario Assessment for Emergencies
-                        (<span class="inasafe">InaSAFE</span>) adalah sebuah
+                        <span class="inasafe">InaSAFE</span> adalah sebuah
                         proyek Free and Open Source Software
                         (FOSS), diterbitkan di bawah
                         <a href="http://www.gnu.org/licenses/gpl-3.0.txt">
@@ -135,9 +142,8 @@
                     </p>
                     <p>Setelah Anda menginstal QGIS, Anda dapat menginstal
                         <span class="inasafe">InaSAFE</span> dalam 8 langkah
-                        yang mudah!. buka versi terakhir dari
-                        <a href="http://qgis.org">QGIS</a> (1.7 atau lebih
-                        baru) dan lakukan:
+                        yang mudah! Buka versi terakhir dari
+                        <a href="http://qgis.org">QGIS</a> dan lakukan:
                     </p>
                     <ol>
                         <li><span class='menuselection'>Plugins ->
@@ -155,21 +161,23 @@
                         <li>Tutup plugin manager dan <span class="inasafe">
                             InaSAFE</span> sudah terinstal dan siap digunakan.
                         </li>
-                        <li>Watch the introduction movie to learn your first
-                            steps into <span class="inasafe">
-                            InaSAFE</span>
+                        <li>Tonton film pengantar untuk memahami langkah awal anda kedalam
                             <a href="http://www.youtube.com/embed/YGyd3YC1hy4">
-                            here.</a>
+                            InaSAFE disini.</a>
                         </li>
-                        <li>Follow the training courses provided in the
+                        <li>Ikuti kursus pelatihan yang telah disediakan didalam bagian
                             <a href="{{ pathto(master_doc) }}/../training/socialisation/index.html">
-                            Socialisation</a> section.
+                            Sosialisasi</a>.
                         </li>
-                        <li>Download any testdata you need from
+                        <li>Unduh berbagai macam sampel data yang anda butuhkan di
                             <a href="http://data.inasafe.org">
                             http://data.inasafe.org</a>
                         </li>
                     </ol>
+                    <p>If you have any problems getting
+                        <span class="inasafe">InaSAFE</span> installed, see our
+                        <a href="{{ pathto(master_doc) }}/../user-docs/troubleshooting.html">troubleshooting guide</a>.
+                    </p>
                 </div>
             </div>
             <div class="span4">
@@ -192,7 +200,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="../pdf/InaSAFE-1.2-Documentation-id.pdf">
+                            <a href="../pdf/InaSAFE-2.0-Documentation-id.pdf">
                                 <i class="icon-file icon-black"></i>
                                 Manual offline (PDF).
                             </a>
@@ -206,7 +214,7 @@
                     </ul>
                     </div>
                     <p>
-                    <p>Bergabunglah dengan mailing kita dengan mengirim
+                    <p>Bergabunglah dengan milis kita dengan mengirim
                        email ke
                     <a href="mailto:inasafe-users+subscribe@googlegroups.com">
                        inasafe-users+subscribe@googlegroups.com</a>
@@ -228,9 +236,11 @@
         </div>
 
         <div class="alert alert-danger centered">
-            Peringatan: Tidak ada dari AIFDR-AusAid, World Bank, atau
-            World Bank-GFDRR bertanggung jawab atas kebenaran hasil
-            dari InaSAFE atau keputusan yang mengikutinya sebagai konsekuensi.
+            Peringatan: InaSAFE telah dikembangkan bersama sama oleh Pemerintah
+            Indonesia-BNPB, Pemerintah Australia-AIFDR dan Bank Dunia-GFDRR.
+            Badan-badan tersebut dan individu pengembang perangkat lunak InaSAFE
+            tidak bertanggung jawab atas kebenaran yang dihasilkan dari InaSAFEE
+            atau keputusan yang mengikutinya sebagai konsekuensi.
         </div>
 
         <div class="alert alert-info centered">
@@ -294,13 +304,13 @@
                 <div class="thumbnail">
                     <div class="centered">
                         <iframe width="300" height="225"
-                            src="http://www.youtube.com/embed/fWamg9WNWdI"
+                            src="http://www.youtube.com/embed/DVj0-sycaYM"
                             frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="caption">
-                        <h3>InaSAFE 1.2</h3>
+                        <h3>InaSAFE 2.0</h3>
                         <p>Kami dengan bangga mempersembahkan versi terbaru
-                           dari <span class="inasafe">InaSAFE 1.2</span>.</p>
+                           dari <span class="inasafe">InaSAFE 2.0</span>.</p>
                     </div>
                 </div>
             </li>

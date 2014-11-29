@@ -1,4 +1,3 @@
-********
 Module 1
 ********
 
@@ -13,7 +12,7 @@ Mastering how to implement adult learning
 
 1. Explain the principles of adult learning
 2. Analyzing the characteristics of adult learning
-3. Determening strategies, teaching methods or techniques that apply adult
+3. Determining strategies, teaching methods or techniques that apply adult
    learning
 4. Evaluating adult learning
 
@@ -26,7 +25,6 @@ Mastering how to implement adult learning
 3. Strategies, teaching methods or techniques that apply adult learning
 4. Adult learning evaluation
 
-
 **Learning Activity**
 
 **1. Opening and workshop information**
@@ -35,9 +33,9 @@ Time: 10 minutes
 Material: Slide PPT
 Activity:
 
-1. Facilitator greets the participant
-2.  Facilitator give information about workshop rules
-3.  Faciitator explains topic and purpose of the session
+1. Facilitator welcomes participants to the training; opening invocation
+2. Information on code of conduct during training
+3. Facilitator explains the topics and goals of session one
 
 **2. QA Session about Adult Learning Characteristic**
 
@@ -45,9 +43,11 @@ Time: 25 minutes
 Material: Slide PPT
 Activity:
 
-1. Facilitator asking about adult learning terminology
-2. Facilitator explains about adult learning terminology
-3.  Facilitator asking about characteristic and principle of adult learning
+1. Facilitator puts a question about the definition and characteristics of an
+   adult
+2. Facilitator explains the definition of adult learning
+3. Facilitator puts a question about adult learning characteristics and
+   principles.
 
 **3. Group Discussion: Adult Learning Strategy**
 
@@ -55,10 +55,12 @@ Time: 25 minutes
 Material: Plano Paper
 Activity:
 
-1. Facilitator divide participant into groups
-2. Each group has a group leader and a secretary
-3. Group leader lead the discussion about adult learning strategy and  the
-   result of discussion is written on plano paper by the secretary
+1. Facilitator asks participants to each count 1 to 4 one after another and
+   divides them into 4 groups.
+   Those mentioning same number form one group.
+2. Each group elects its chief and secretary
+3. The chief presides at discussion on adult learning strategies, the outcome of
+   which is written down on flipchart paper by the secretary.
 
 **4. Group Presentation**
 
@@ -66,9 +68,11 @@ Time: 20 minutes
 Material: Slide PPT/Plano Paper
 Activity:
 
-1. Each group leader present their group discussion result
-2. Each group has to ask question to the presentation group
-3. Facilitator improved the discussion from the discussion between group
+1. Facilitator asks the chief of each group to move forward and take part in a
+   draw to decide which group is responsible as presenter.
+2. Facilitator asks other groups to put questions or give comments to the
+   presenter group; Facilitator leads the Q&A session
+3. Facilitator mentions adult learning strategies not yet mentioned.
 
 **5. Pair Discussion**
 
@@ -76,11 +80,18 @@ Time: 20 minutes
 Material: HVS Paper
 Activity:
 
-1. Facilitator throw a small ball toa group, and group that received the ball
-   must throw the ball to the other group until the music stop. The group that
-   received the ball when the music stop has to present their discussion result.
-2. Facilitator asking other group to give comment or question to the other group
-3. Facilitator completed group explanation about how to evaluate adult learning.
+1. Facilitator asks participants to find a partner
+2. Each group of two is asked to discuss how to evaluate adults (adult earning
+   evaluation)
+3. Result of discussion is displayed before the class
+4. With the sound of music as the background, facilitator randomly throws a
+   small ball at a participant who will then throw it to another group.
+   The group who is in possession of the ball when the music stops will become
+   presenter.
+5. Facilitator asks other groups to put questions or give comments to the
+   presenter.
+   Facilitator leads the Q&A session.
+6. Facilitator further explains adult learning evaluation
 
 **6. Reflection and Closing**
 
@@ -88,403 +99,482 @@ Time:  5 minutes
 Material: -
 Activity:
 
-Facilitator asking a participant or more to give reflection about what he/she
-achieved in this session
+Facilitator asks one of the participants to reflect on the proceeding of the
+first session
 
 Reading Material
 ================
 
 **Introduction**
 
-Scenario Development for Contingency Planning using OpenStreetMap (OSM) and
-QGIS/InaSAFE workshop participant is adult. They have special learning
-characteristic which is different than young people. For that case, trainer need
-to learn adult learning characteristic. This undertstanding needed to choose
-training strategy which is appropriate and effective for the workshop
-participant.  Learning or Adult Education known as: andragogy, which is the
-opposite of pedagogy (young education). Andragogy comes from latin: Agro, which
-is mean adult and agogos which is mean leading or guiding. So andragogy is a
-knowledge to leading or guiding adult people or adult learning.  Basically,
-education is a process to facilitate person to search and find knowledge that
-they need for their life through learning process, so every human activity has
-potential to be used for study. Andragogy stimulate adult so they care capable
-to search and find knowledge that they needed for their life. Adult learning is
-continuously done by life experience.
+The participants of the training in Scenario Development for Contingency Plan
+using OpenStreetMap (OSM) and QGIS/ |project_name| softwares are adults.
+Their learning characteristics are unique and different from those of
+children.
+As such, it is crucial that trainers learn about adult learning characteristics.
+The understanding of adult learning characteristics is needed to determine
+compatible and effective training strategies for training participants.
+
+Adult Learning or Education is known as Andragogy, the antonym of Pedagogy
+(children education).
+The term andragogy is derived from latin words Andro (Adult) and agogos which
+means to lead or guide, hence the term andragogy can be defined as the
+science of how to lead or guide adults, in other words:
+the science of teaching adults.
+
+Basically education is a process of facilitating a person to search and find the
+knowledge needed in life through learning, rendering all human activities
+potential to be used as part of learning process.
+Andragogy strategy stimulates adults to engage in the process of searching
+and finding the knowledge they need in life.
+Adults learn in a continuous way from their experience.
 
 **1. Adult Learning Characteristic**
 
-Adult education is an effort which is purposed for self-improving and it is done
-by an individual without any legal enforcement, without making it as major areas
-of business activity (Reeves, Fansler, and Houle in Supriyanto, 2007). According
-to UNESCO (Townsend Coles 1977 in Lanundi (1982)), adult learning is a whole
-process which is organized based on content, level, and method, it can be formal
-or informal, and it is continously or replacing basic education in school,
-academy, and univeristy and work practice, so people that considered as an adult
-by the society can improve their skill, enrich their knowledges, improving their
-technical qualification or profesionalism, and changing their attitude and
-behavior in dual perspective of their development and free and balanced
-participation in social development, economy, and culture. According to Bryson
-in Supriyanto (2007), adult learning is educational activity which is only using
-part of time and energy to get additional intelectual.  Based on the terminology
-above: (1) Adult people usually can guide by themselves, (2) Adult people has
-different experience, (3) Adult people ready to learn as an effcet of their
-position in development transition, (4) Adult people likely more problem-
-centered learning or performance-centered learning. Below is fully
-charachteristic of adult person:
+Adult education is an endeavor aimed at self development made by individuals
+without legal forces, without making this endeavor their main activity (Reeves,
+Fansler, and Houle in Supriyanto, 2007).
+According to UNESCO (Townsend Coles 1977 in Lanundi (1982),
+adult education is defined as the entire body of organized educational
+processes, whatever the content, level and method,
+whether formal or otherwise, whether they prolong or replace initial
+education in schools, colleges and universities as well as in apprenticeship,
+whereby persons regarded as adult by the society to which they belong develop
+their abilities, enrich their knowledge, improve their technical or
+professional qualifications and bring about changes in their attitudes or
+behavior in the twofold perspective of full personal development and
+participation in balanced and independent social, economic and cultural
+development.
+Meanwhile, according to Bryson in Supriyanto (2007) Adult education comprises
+all educational activities in which adults engage in their daily life using
+only  a part of their time and energy in order to gain additional
+intellectual knowledge.
 
-a. Adult person has ability to guide themselves
-b. Adult person has a lot of experience and they make their experience as
-   learning source.
-c. Adult person ready to learn something they needed and experience build up
-   from problem solving or solving daily task.
-d. Learning orientation: education is a process to improve own-abilities, skill
-   and knowledge will be used for better life, learning orientation is based on
-   center of activity.
+The definition above shows that:
+  * Adults are normally capable of self-directing,
+  * Adults have varied experiences,
+  * Adults are prepared to learn as a consequence of their position in
+    transition of development,
+  * Adults prefer problem-centerd or performance-centered learning.
+  * The following are complete characteristics of adults:
 
-Accodrding to Soedomo (1989) in Supriyadi (2007), characteristics of adult
-learning are:
+a. Adults have the ability to self-direct.
+b. Adults have a lot of experience which functions as learning process for them.
+c. Adults  are prepared to learn everything they need to learn; their experience
+   is built from problem solving or finding solutions to daily tasks.
+d. Orientation of learning: Education is a development process of self ability;
+   knowledge and skills are applied for a better life. Learning orientation is
+   focused on activities.
 
-a.	Possibility to exchange in idea, assertion, and values
-b.	Possibility for reciprocal communication
-c.	Learning environment should be fun and challenging
-d.	Prioritizing the role of learners
-e.	Adults will learn if his opinion is respected
-f.	Adult learning is unique
-g.	There needs to be mutual trust between mentors and learners
-h.	Adults generally have a different opinion
-i.	Adults have a variety of intelligence
-j.	The possibility of different ways of learning
-k.	Adults learn to know the advantages and disadvantages
-l.	Adult learning orientation is centered on real life
-m.	Motivation from themselves
+The characteristics of adult learning according to Soedomo (1989) in Supriyadi
+(2007):
 
-Adult learning characteristic can be specified:
+a. Adult learning facilitates exchanges of opinions, demands and values
+b. It facilitates a two-way communication
+c. Learning atmosphere expected is one that is fun and challenging
+d. It prioritizes the roles of learning participants
+e. Adults learn when their opinion is respected
+f. Adults learn in a unique way
+g. There needs to be a trust between mentor and learners
+h. Opinions are generally varied among adults
+i. Adults have varied intelligence
+j. Various learning methods may emerge
+k. Adults learn to know their strong points and shortcomings
+l. Learning orientation for adults is focused on real life
+m. Adults self--motivate
 
-a. Adult learn because there is a task demand, development demand or desire to
-   improve their role. Different with young, they receive learning materials
-   from teacher, adult will learn if the material can fulfill their task demand,
-   development demand, or improving their role. In that case, there should be an
-   explanation the connection between their task, role, and development with the
-   learning materials.
-b. Adult like to learn something that practicable, useful, and has benefit for
-   their life. Most adult has a lot of theoretical knowledge. In that case,
-   learning materials for adult should be practicable and can be useful for
-   their life.
-c. Adult during learning process want to be treated or appreciated as an adult.
-d. Adult is rich of knowledge and insight, learning something new based on
-   their experience. Adults generally have wide experience based on their
-   occupation. In that case, the way to learn something new should be started
-   from their experiences.
-e. Adult is learning by exchange their idea with other people. Because ther are
-   rich of experiences, an exchange idea is the effective way for them to learn.
-f. Adult person can ask why they have to learn something before they learn
-   something. If young people generally receiving learning topics, adult needs
-   to know that things that they are learning are beneficial for them.
-g. Adult is learning by problem-solving, not oriented based on materials. If
-   things that they learned during workshop can solve their problem, then, they
-   will learn better.
-h. Adult is more likely learning environment that can increase their
-   self-confident. This is related with their needs to be respected. Start
-   learning with easy things so they can increase their self-confident.
-i. Adult needs more time to learn because they need to validate new
-   information. Adult not just receiving the information, but they need to
-   validate the information based on their experience.
-j. Adult will continuing their learning process if they satisfied with their
-   learning experience.
+The characteristics of adult learning can be elaborated as follows:
+
+a. Adults learn because of demands in their work, for self-development or the
+   desire to enhance their role.
+   In contrast with children who tend to receive learning material conveyed
+   by their teacher, adults learn something when it meets their work demands,
+   is crucial for self-development and  their role enhancement.
+   To this end, in adult learning, it is important to explain to adults
+   taking part in learning process the relations between material presented
+   and the demands in their work, roles and their needs of self development.
+b. Adults prefer to learn things that are practical, can immediately be applied
+   and bring benefits in their life.
+   Adults generally have rich theoretical knowledge, hence the needs to have
+   learning materials for adults that are practical and applicable.
+c. In the process of learning, adults want to be treated as a mature person/ to
+   be respected.
+d. Adults have rich experience and insight and learn new things based on their
+   experience.
+   Every adult person generally has a lot of experience especially in the
+   field s/he has been focusing on.
+   When engaging adults in learning new things, it is better to build on
+   their experience.
+e. Adults learn by sharing their opinion with others.
+   As they are rich in experience, sharing opinion is one of effective ways
+   for them to learn.
+f. Adults question why they have to learn something before they start to learn
+   it.
+   If children tend to receive certain topics without questioning,
+   adults need to know whether something they are about to learn will bring
+   them direct benefits.
+g. Adults focus on problem solving when learning; their orientation is not in
+   the learning material.
+   When they find what they learn suitable for solving problems they face,
+   they learn well.
+h. Adults like an atmosphere of learning that promotes self-confidence.
+   This is related to their desire to be respected.
+   Start with simple things to increase their confidence.
+i. Adults need longer time to learn as they need to validate new information.
+   When they receive information, they will validate it based on their
+   experience.
+j. Adults will continue learning process when their learning experience is
+   satisfactory.
 
 *The difference between Pedagogy and Andragogy*
 
-+=====================+=============================+==========================+
++---------------------+-----------------------------+--------------------------+
 | Aspect              | Pedagogy                    | Andragogy                |
 +=====================+=============================+==========================+
-| Concept about       | Dependent                   | Has ability to guide     |
-| learning participant|                             | themselves               |
+| Trainee’s self      | Dependent                   | Ability in self-directing|
+| concept             |                             |                          |
 +---------------------+-----------------------------+--------------------------+
-| Experience function | 1. Less experienced         | 1. More experienced      |
-| for learning        | 2. Experience as a starting | 2. Experience as learning|
-| participant         |    point to build their     |    source                |
+| Function of         | 1. Little experience        | 1. A lot of experience   |
+| trainee's experience| 2. Experience as point of   | 2. Experience as learning|
+|                     |    departure in building    |    source                |
 |                     |    experience               |                          |
 +---------------------+-----------------------------+--------------------------+
-| Readiness to learn  | 1. Matched based on age     | 1. Ready to learn things |
-|                     | 2. Organized based on       |    they needed           |
-|                     |    curriculum               | 2. Built from problem    |
-|                     |                             |    solving or solving    |
-|                     |                             |    daily task            |
+| Learning            | 1. Uniformity based on age  | 1. Prepared to learn what|
+| preparedness        | 2. Organized in a           |    is needed             |
+|                     |    curriculum               | 2. Based on problem      |
+|                     |                             |    solving or finding    |
+|                     |                             |    solution to daily task|
 +---------------------+-----------------------------+--------------------------+
-| Learning orientation| 1. Education is a process   | 1. Education is a process|
-|                     |    to transfer knowledge    |    to improve self-skill |
-|                     | 2. The knowledge will       | 2. Knowledge and skill   |
-|                     |    beneficial in the future |    will be useful for    |
-|                     | 3. Learning orientation is  |    better life           |
-|                     |    material centered        | 3. Learning orientatuin  |
-|                     |                             |    activity centered     |
+| Learning orientation| 1. Education as a process   | 1. Education as a process|
+|                     |    of conveying knowledge   |    to develop selfability|
+|                     | 2. The knowledge will bring | 2. Knowledge and skills  |
+|                     |    benefit in the future    |    are applied for a     |
+|                     | 3. Orientation to learning  |    better life           |
+|                     |    subjects                 | 3. Orientation is focused|
+|                     |                             |    on activities         |
 +---------------------+-----------------------------+--------------------------+
 
 **2. Principle of Adult Learning**
 
-Education for adult has principle that can make it different from other
-education.
-This principle can make learning environment become effective and efficient.
-This principle can be explain as below.
+In adult learning, there are principles that differentiate it from other types
+of education.
+These principles can create an effective and efficient learning atmosphere.
+The principles can be explained as follows:
 
-a. Partnership Principle: Partnership principle guaranteed a partnership between
-   facilitator and participant.
-   In that case, participant is not treated as student instead as learning
-   partner so the connection that they built is not imperial based,
-   but a connection that help the participant learning.
-b. Real experience principle: This principle will guarantee that adult learning
-   activity is happening during real life situation.
-   Adult learning activity not happen in a class or simulation,
-   but in real situation.
-c. Togetherness Principle: This principle asserting group usability for adult
-   learning activity to guarantee the maximal interaction between participant
-   facilitated by facilitator.
-d. Participative Principle: This principle is to push participant participative
-   become maximal in adult learning, with facilitation from participant. During
-   adult learning activity, each participant has to participate or take some
-   part actively from the whole learning process from planning, doing, and
-   evaluation.
-e. Independent Principle: This principle is pushing independence of participant
-   to reach learning objective. Adult learning is purposed to generate
-   independent human that able to do their role as a subject or character.
-   That is why, independent principle is needed.
-f. Sustainable Principle: This principle is guarantee for sustainability with
-   the learning material from the past to present and in the future. With this
-   principle, there will be concept life long education in adult learning.
-g. Benefit Principle: This principle is guarantee that whatever the adult has
-   learnt, they realize the benefit. Adult person has to aware that there are
-   needs that need to be fulfilled. This awareness give rise to an interest in
-   learning, and a sense of responsibility as an adult then arises their
-   readiness to learn.
-h. Local Principle: This principle is guarantee that there will be learning
-   material with specific with local. The generalization from adult learning
-   result is hard to do. The result of adult learning usually comes with specific
-   ability which is used by participant to solve the problem in their local area
-   at the moment. This ability cannot become general like a theory, proposition,
-   or principle which is can be used in anywhere, anytime. Also, this result
-   cannot be applied anywhere, but it need to be applied specifically in their
-   area because the result of adult learning is processed from participant’s
-   experiences.
-i. Integration Principle: This principle guarantee that there will be an
-   integration in adult learning material. During the making of adult learning
-   plan, it should be covered part of materials that can be integrated as a whole
-   material, not partial of separated differently.
+a. Principle of partnership:
+   The principle of partnership guarantees a forged partnership between
+   facilitator and participants.
+   The participants are not treated as students but as learning partners.
+   The relationship created is not one of giving orders but of assistance in
+   that trainers will put their best effort to assist training participants.
+b. Principle of real experience:
+   This principle guarantees that adult learning and education is conducted
+   in real life situation.
+   Adult learning and education activities are not conducted in a class or
+   simulated situation, but in a real situation.
+c. Principle of togetherness:
+   This principle requires the use of group activities in adult learning and
+   education to guarantee maximum interaction between participants
+   facilitated by the facilitator.
+d. Principle of participation:
+   This principle seeks to encourage maximum participants’ involvement in
+   learning process, facilitated by the participants themselves.
+   In adult learning and education activities all participants are to take
+   active part in the whole process of learning from planning,
+   implementation and evaluation of learning activities.
+e. Principle of self-reliance:
+   This principle encourages participants independence in seeking learning
+   goals.
+   Adult learning seeks to produce independent human being able to play the
+   role of subject or actor, hence the need for self-reliance principle.
+f. Principle of sustainability:
+   This principle guarantees continuity between the material that is being
+   learned at present, that has been learned and that will be learned in the
+   future.
+   With this principle, the concept of life long education in adult learning
+   will materialize.
+g. Principle of benefit:
+   This principle guarantees that what is learned in adult education is
+   compatible with the needs felt by participants.
+   Adults are prepared to learn when they realize there are needs to be
+   addressed.
+   This awareness will stimulate the emergence of motivation to learn among
+   adults and a sense of preparedness will emerge as they feel they are
+   responsible for this as an adult.
+h. Principle of preparedness:
+   This principle guarantees participants’ mental and physical preparedness
+   to be able to take part in learning activities.
+   Adults will never be able to participate in learning process if they are
+   not yet prepared (either physically and metally) to do it.
+i. Principle of locality:
+   This principle guarantees the learned material is locally specific.
+   Generalisation of learning outcome in adult learning will be dificult to
+   do.
+   The outcome in adult learning  generally comprises specific abilities to
+   solve participants’ current problem in their respective locality.
+   Such skill can not be generalized as a theory or principle that can be
+   applied anywhere, anytime.
+   The present learning outcome might not be useful to solve similar problems
+   in two or three years’ time.
+   This outcome will also not be applicable anywhere and is only suitable for
+   participants respective locality as it is processed from participants
+   experience.
+j. Principle of integration:
+   This principle guarantees integration of adult learning material.
+   Learning plan in adult education must cover materials that are non-partial
+   and integrated in nature, forming a unity.
 
 **3. Adult Learning Strategy**
 
-Choosing learning strategy should be based on objective that needed to reach.
-Based on objective, there are two learning strategy:
+Identification of learning strategies is based on the objective to achieve.
+Based on this, there are two types  of learning strategies i.e. :
+(a) the strategy that is designed to assist people in addressing their past
+experience in a new way, and
+(b) the strategy that is designed to bring about new knowledge and skills
+(enrichment of experience).
 
-(a) learning strategy that designed to help people to arrange past experience
-with the new way (re-arranging experience process), and
+a. The process of addressing past experience:
+   This strategy is employed for training participants who already possess
+   the knowledge and skills relating to training material to be conveyed.
+   The role of facilitators here is to assist participants in making
+   generalization by exploring participants experience and giving feedbacks.
+   Participants are expected to have a big role in terms of expressing their
+   experience and opinion, analyzing their experience, exploring alternatives
+   and benefits.
+   The goals will be reached when the atmosphere is free of threats and when
+   participants feel the need to find new approaches in addressing their past
+   problems.
+b. The process of enriching experience:
+   This strategy is employed for participants who have yet the knowledge and
+   skills that are presented in the training.
+   Here, facilitators role is to provide new data and concept for the
+   participants to absorb and practice.
+   In this case, it is necessary to have clarity in terms of how to best
+   present the training and motivate participants to identify the relevance
+   of the new material in their life.
 
-(b) learning strategy that designed to give new knowledge and skill
-(expanding experience process):
+Based on the aims elaborated above, we now know that there are two types of
+adults in adult learning i.e. adults with prior knowledge and adults without
+prior knowledge.
+But it is necessary to remember that adults already possess several
+characteristics that play a role in determining the best strategies for them.
+In general, adult learning is expected to involve participatory method i.e.
+active participation of training participants as well as other arrangements
+such as training material, date and time of training, etc.
+Principally, in participatory method facilitators don’t act as teacher and
+lecture all the time, and involve participants in every activity.
+This strategy can be further explained as follows:
 
-a. Re-arranging experience process: this strategy needed for participant that
-   already has knowledge and skill about the training/workshop.
-   So, facilitator has a role to help participant to generalize by finding
-   out experience they have and give some feedback.
-   In the other hand, participant must have role to give their data about
-   their experience and their opinion, analyzing experience,
-   and trying to find alternative and benefit.
-   This will happen if there is no threat during the process,
-   and awareness from participant to find new approach for solving their
-   problem is built.
-b. Expanding experience process: this strategy is needed for participant that
-   does not has knowledge or skill about the workshop/training.
-   Facilitator has role to give new data dan new concept,
-   and practicing it.
-   In this case, it is necessary to have clarity for delivering the new
-   content and motivating participant to know it relevance in daily life.
+**a. Practical, problem-centered learning**
 
-Based on purposes above, we understand that there are two objective for
-learning, for those who already has knowledge and those who don’t. But, it need
-to be remind, adult person has several characteristic that need to note to
-specify its learning strategy. Based on adult characteristic, generally, adult
-learning is expected to use participative learning, their participative or role
-and other assignment related to learning content, time allocation, and etc. is
-needed. The principle of participative learning is, facilitator not patronizing
-and always giving speech, but always involve participant in activity. Strategy
-are as follow:
+One of the characteristics of adults is that they learn through problem solving
+and are not lesson-oriented.
+They learn well when they find what they learn during a training can be used
+to solve their problems.
+To this end, strategies to be used are as follows: before the start of the
+learning process, facilitators must identify trainees’ needs and problems.
+It is better to start with identifying authentic problems of training
+participants in their daily life.
+Should the facilitators feel the need to introduce new theories or
+information, they need to ensure that these  theories  and information are
+related to problems faced by trainees and real life examples.
+In problem solving oriented training, methods that can be employed are e.g.
+Q&A session and discussion.
+The latter can be divided into several steps:
 
+1) Group members are aware of the existence of problems
+2) Individually, members find ideas on how best to solve the problems
+3) Group members search for facts or reflect on their experience to support
+   their ideas.
+4) Discussion among group members on how to solve the problems
+5) Group members conclude their discussion.
 
-**Practical Learning and Problem-Based Centered:**
-One of the adult characteristic is they learn by solving problem and not
-oriented from learning material.
-If things that they learnt during the training/workshop can solve
-their problem, then they will learn better.
-In this case, the strategy that will be used is as follow: before the
-learning activity started, facilitator should identify participant needs and
-problems.
-Then, it should be started with identifying authentic problem from their
-daily life.
-If we want to deliver new theory or information, make sure that they will be
-connected with real life problem.
-In this case, some method that can be use are: QA session and
-discussion.
-Discussion for problem solving is divided into several phases:
+With regards to practical learning, adults also need practical activities.
+Material presented must be practiced to be instilled properly, the appropriate
+methods being inter alia demonstration, simulation and practicing.
+For example, to reach competency in how to use GPS and input additional data
+in OSM, it would render a training meaningless when participants only know
+and understand how to use GPS and add OSM data without demonstration by
+facilitators, simulation by some of participants and practical session
+involving all participants.
+What is necessary with regards to this competency is how to turn on GPS and
+the  initial GPS setting.
 
-1) Member of a group aware of there are problems
-2) Member of group individually searching for argument or opinion to solve
-   their problem
-3) Member of group trying to find facts or experiences to support their argument
-   or opinion
-4) Discussing with other member of group for solutions
-5) Making a conclusion to solve the problems
+**b. Adults prefer a learning process that integrates new information into**
+**their experience**
 
+There are two aspects of adult  learning i.e. the process of addressing their
+past experience and the process of enriching experience.
+Therefore, learning process for adults must assist them in exploring their
+experience in order to learn new things.
+A cooperative group learning can also help them to share opinion with others.
+Furthermore, we need to help them understand  new information,
+the proper methods of which would be inter alia Q&A session and discussion.
+For example, in presenting the lesson on “How to Operate OSM”,
+it is better for the facilitators to not lecture on:
 
-Related with practicable, during adult learning, there should be field practice.
-All materials should be practiced for practicable needs that will be used.
-Several appropriate methods are demonstration, simulation, and practice. For
-example to reach the competency using GPS for add data in OSM, it will not
-useful if participant just know and understand about GPS for add data in OSM, it
-need to be demonstrated by facilitator and simulated and practiced by the
-participant. Some material that needs to be practiced for example how to turn on
-the GPS and set up the GPS.  Adult person like to learn if the material
-integrating new information with their experiences: In adult learning there are
-two things, process to re-arrange and expand experiences, in this case, adult
-learning should help them to reveal their experience for learning new things.
-Cooperative group learning also can help them to sharing their opinion with
-other participant. Next, we should help them to understand the new information.
-Some of appropriate methods are QA session and discussion. For example, if you
-want to teach about OSM, facilitator not just give lecture about (1) how to
-visit OSM website (2) how to navigate the map (3) how to save picture from OSM
-map (4) how to create OSM account (5) how to edit OSM map. Facilitator need to
-find out how far or how well the participant know about those materials by
-asking questions. Next facilitator can deliver additional material which is new
-for participant and always connect them with their knowledge and experience.
+1. How to visit OpenStreetMap site,
+2. How to navigate maps,
+3. How to save Images from OSMan map,
+4. How to create OpenStreetMap account,
+5. OSM Map Editing.
 
-b. **Adult people like to learn something that can improve their self-esteem**:
-To improve their self-esteem, we can start from simple things with small failure
-rate.  Further study increased along with their confidence. For example, when
-teaching the operation of JOSM, the participants that not well-known with the
-internet can start with practices such soft skills in a way to download JOSM in
-pairs, participant who already well-known with the internet can teach those who
-not, and then they can continue to work individually. It is intended to provide
-a heavy burden in the initial training. So the next step to learn other than the
-operation of JOSM. What is important here, participants should not be
-embarrassed by their lack of skill for operating Internet.
+Rather, the facilitators need to explore the degree of participants
+experience or knowledge on the subject through Q&A session,
+after which a discussion follows focusing on difficulties encountered on the
+subject.
+The facilitators then can provide additional material that they feel needed
+by the participants taking into account their prior experience and knowledge.
 
-c. **Adult likes learning with individual attention:** Find out their needs, try
-to fulfill their needs such as break, eat, drink, etc. Ask them to make a target
-plan and help them to reach their target. Do not hesitate to ask some input from
-them, written or within the training session or informal. They are really like
-if their individual needs get attention.
+**c. Adults prefer a learning process that enhances their self-esteem**
 
-The success of adult learning strategy need to be supported with conducive
-learning environment. According to Suprijanto (2007), conducive learning
-environment are:
+In order to make adults confident, we can start with simple things with low
+possibility of failure.
+The degree of difficulty of material presented may escalate as their
+confidence rises.
+For example, when conducting training on how to operate JOSM,
+in the event some participants are not yet familiar with internet,
+facilitators can start with light skills such as how to download JOSM.
+The method employed for this task may be in dividing participants in groups
+of two.
+Participants who are already capable of doing the task show their partner how
+to do it, after which the faciliators may proceed to individual task.
+This method is meant to not encumber participants at the beginning of training.
+Other aspects on how to operate JOSM may follow the same template.
+The point is that participants must not be humiliated for their lack of
+internet skills.
 
-a. Encourage participant to be active and improving their talent
-b. Mutual respect and appreciation environment
-c. Mutual trust and open environment
-d. Self-discovery environment
-e. Not threatened envrionment
-f. Recognize uniqueness of individual environment
-g. Environment that allow difference, making mistake, and doubtful
-h. Allowing participant to learn based on interest, concern, and environmental
-   resources
-i. Allowing participant to admit and assessing individual, group, and public
-   weakness and strength
-j. Allowing participant to grow based on norm and value in public
+**d. Adults prefer individual attention when learning**
+
+Know their needs, fulfill their individual needs such as break, food, drink etc.
+Engage them in discussion about planning targets, and assist them in achieving
+them.
+Never hesitate to ask for their opinion in writing,
+during sessions or informally outside training sessions.
+They appreciate having their personal interests listened to.
+
+The success of adult learning strategies also hinges on an agreeable learning
+atmosphere conducive to learning.
+A conducive atmosphere to learning according to Suprijanto (2007) constitutes
+the following:
+
+a. An atmosphere that encourages participants to be active and develop their
+   skills
+b. An atmosphere of mutual respect and appreciation
+c. An atmosphere of mutual trust and openness
+d. An atmosphere of self-discovery
+e. An atmosphere that is non-threatening
+f. An atmosphere of acknowledging self-distinctness
+g. An atmosphere that allows room for difference, mistakes and doubts
+h. An atmosphere that enables participants to learn according to their interest,
+   attention, and resources in their locality
+i. An atmosphere that enables participants to acknowledge and explore weaknesses
+   and strengths of themselves as individuals, their groups and society
+j. An atmosphere that enables participants to grow with values and norms in
+   their community
 
 
 **4. Adult Learning Evaluation**
 
-Evaluation or assessment is activity to determine how far learning process can
-be implemented based on expectation. So, assessment or evaluation is focused in
-activity to measure how success a program is (micro: facilitator, macro:
-organization). According to Fajar, A., (2002), assessment can be determine as an
-effort to get any information routine, sustainable, and comprehensive about
-learning process and result, growth also attitude and behavior that reached by
-participant.
+Evaluation is an activity to determine how far a learning program is implemented
+according to expectations.
+Therefore, evaluation is focused on activities to determine how far a
+program is successful (micro: facilitator, macro: institution).
+According to Fajar, A., (2002), evaluation can be defined as an effort to
+gain various kinds of information periodically,
+continuously and comprehensively about learning process and outcome,
+as well as the growth and development of participants’ attitudes and
+behaviors.
+The above definition shows that evaluation is also carried out during
+training program and not only at the end of training.
+Evaluation constitutes a process to paint a picture of changes among
+participants after training.
+The word process means that evaluation is a continuous endeavor,
+using certain methods to reach expected outcome.
+This process also sees that evaluation is conducted by gathering facts in a
+systematic way.
+This definition shows that an evaluation requires data gathering or
+measurement.
 
-Based on terminology above, evaluation process should be done
-along with learning process, not just in the ned of learning process. Evaluation
-is a process to describe transformation from the participant after the
-training/workshop. Process means evaluation is done continuosly and
-comprehensive, with methods so it will shows the expected result. It also
-explained that assessment is done by collecting facts sistematically. This thing
-shows that in an evaluation process, we need to collect data or measure.
+The techniques, methods or tools of evaluation comprise all
+methods or procedures taken to gather information or data needed as material to
+evaluate.
+The techniques used in evaluation play an important role in the outcome.
+Basically, evaluation techniques or methods can be divided into two types i.e
+. test technique or method and non-test technique or method.
+In cognitive aspects, a test in the form of questions (both in writing or
+verbally) can be used.
+It is expected that this aspect can enhance the affective aspect of training
+participants.
+Affective aspect can be identified through observation and questionnaire,
+while psycho-motor aspect can be evaluated through activities conducted and
+results achieved.
 
-Technique, method or evaluation tool is the way or process that used for
-collectiong informations or data which used for assessment material. This
-technique will affect the result. Basically, technique, or assessment method can
-be divided into two, they are, test technique or method and non-test technique
-or method. In cognitive aspect, we can use exam test, oral or written. It
-expected that this aspect can improve affective aspect for participant.
-Affective aspect can be done by observation and questioner, and psychomotor
-aspect can be assessed through the activity and result.
+The theory of evaluation above is actually similar in both pedagogy and
+andragogy, with the difference being only in ways of evaluating.
+In adult learning, the evaluation method must reflect freedom in that the
+evaluation must come from the person learning, not forced from outside.
+This implies that adults must be able to evaluate themselves.
+Therefore, the term ‘test’ for adults should be referred to more
+appropriately as self-examination.
+An example of evaluation method suitable for adults is as follows:
 
-Evaluation theory above basically similar between pedagogy and andragogy, but,
-the way to evaluate is different. In adult learning, evaluation method should be
-reflected to freedom, it means the evaluation should come from participant, not
-from outside coercion. Also it explain that adult learning has to be able assesst
-themzelves. Terminology for “exam” or text for adult is self-examination. Some
-example for evaluation method for adult are:
+a. Feedback:
+   each participant is given an opportunity to express their thoughts and
+   feeling regarding the lesson presented.
+b. Reflection:
+   participants are given the opportunity to reflect.
+   Reflection is subjective and personal so facilitators need not to respond.
+c. Group discussion:
+   participants are given the opportunity to discuss their respective
+   evaluation result and put it in a report.
+d. Questionnaire:
+   a form with list of questions prepared for participants to answer.
+e. Management team:
+   a team is formed consisting a number of participants as moderator,
+   note taker and evaluator.
+   This team is in charge of writing a brief and concise report and writing
+   evaluation for the day’s activities.
 
-a. Feedback: Every participant is given chance to give opinion and feeling about
-   the new learning process.
-b. Reflection: Participant is given chance to give their reflection. Reflection
-   is subjective and unique, so facilitator should not give any feedback.
-c. Group DiscussionL Every participant is given chance to discuss their self
-   evaluation and put it on a report.
-d. Questionnaire: Assessment with question form that prepared by facilitator and
-   filled by participant.
-e. Management team: Between participant there is a team consist of a moderator,
-   secretary, and evaluator. This team has a task to create a short report and
-   creating evaluation for each day of training.
+The above methods can be completed with Performance Evaluation, an assessment
+which constitutes a non-test evaluation conducted by observing participants’
+activities.
+This evaluation is suitable to evaluate how far participants achieve certain
+competencies in carrying out certain tasks: practice and simulation.
+In performance evaluation, the following points need consideration:
 
-The way above can help with Performance Assessment. It is a non-test assessment
-that can be done with observing participant activity during the learning
-process. This assessment is appropriate to assess competency that reached which
-is require participant to do some task such as practice and simulation.
-Performance Assessment need to consider these things:
-
-a. Feedback: Every participant is given chance to give opinion and feeling about
-   the new learning process.
-b. Reflection: Participant is given chance to give their reflection. Reflection
-   is subjective and unique, so facilitator should not give any feedback.
-c. Group DiscussionL Every participant is given chance to discuss their self
-   evaluation and put it on a report.
-d. Questionnaire: Assessment with question form that prepared by facilitator and
-   filled by participant.
-e. Management team: Between participant there is a team consist of a moderator,
-   secretary, and evaluator. This team has a task to create a short report and
-   creating evaluation for each day of training.
-
-The way above can help with Performance Assessment. It is a non-test assessment
-that can be done with observing participant activity during the learning
-process. This assessment is appropriate to assess competency that reached which
-is require participant to do some task such as practice and simulation.
-
-Performance Assessment need to consider these things:
-
-• Performance measures that are expected to be undertaken by participants to
-  demonstrate the performance of a competence.
-• Completeness and accuracy aspects that will be assessed in the performance.
-• Special abilities are required to complete the task.
-• Strive skills that will be assessed are not too much, so that all can be
+* Performance steps expected from participants to be carried out to show their
+  level of competency.
+* The completeness and precision of aspects to be evaluated in the performance.
+* Specific abilities needed to carry out tasks.
+* When possible, skills to be evaluated are not too many to provide enough time
+  for a thorough observation.
+* Skills to be evaluated is listed based on the first to the last aspects
   observed.
-• Ability to be assessed sorted by the order of the observations.
 
-*Performance Assessment Technique*
+*Performance Evaluation Techniques*
 
-Performance observation need to be done in every context to determine the level
-of skill that reached. To observe this performance, participant can use tools or
-instrument such as:
+Performance observation needs to be carried out in various contexts to determine
+the level of competence of certain skills.
+The following tools or instruments may be used to observe participants
+performance:
 
 1) Check list
 
-Performance assessment can be done by using checklist (yes-no). With performance
-assessment using checklist, participant will get score if evaluator can observe
-the criteria of mastering a competency. The disadvantages of using this method,
-evaluator only has two choices, for example correct-wrong, observable-
-unobservable. In that case, there is not middle score, therefore, checklist is
-more practicable to observe large number of subjects. Example of checklist:
+Performance evaluation can be conducted using a check list (yes-no questions).
+With this check list, participants will get points when certain criteria of
+mastering certain competency are observed by evaluators.
+In the event no competency is observed, participants will not get any point.
+The weakness of this method is that evaluators only have two absolute
+options, right or wrong; observed and not observed.
+There is no middle ground.
+Nevertheless, check list is more practical to be used to observe subjects in
+great number.
+The following is an example of a check list.
 
-+=======+========================+=================+===============+
+**Example of checklist**
+
++-------+------------------------+-----------------+---------------+
 | No.   | Scoring Aspect         | Good            | Not Good      |
 +=======+========================+=================+===============+
 | 1.    |                        |                 |               |
@@ -501,13 +591,17 @@ more practicable to observe large number of subjects. Example of checklist:
 
 2) Rating scale
 
-Performance Assessment whish is using scaling for scoring so it is possible for
-evalutor to give middle score for each competence, because of the score is given
-continuosly (there more than two scoring options). The scale is ranged from not
-perfect to perfect. For example: 1 = not competent, 2 = enough competent, 3 =
-competent, 4 = very competent. This is the example:
+Performance evaluation using rating scale enables evaluators to give median
+scores for mastery of certain competencies, as scores are given in a continuum
+where there are more than two options of scoring category.
+Evaluation scale is spread from not perfect to very perfect.
+For example, 1 = not competent,  2 = sufficiently competent,
+3 = competent and 4 = very competent.
+The following is an example of rating scale.
 
-+=======+========================+========+=======+=======+=======+
+**Example of rating scale**
+
++-------+------------------------+--------+-------+-------+-------+
 | No.   | Scoring Aspect         | Score                          |
 +=======+========================+========+=======+=======+=======+
 |       |                        |  1     | 2     | 3     | 4     |
@@ -523,15 +617,18 @@ competent, 4 = very competent. This is the example:
 | Maximum Score                  | 9                              |
 +-------+------------------------+-----------------+--------------+
 
-Note:
+Remarks:
 
-1 = not competent, 2 = enough competent, 3 = competent, 4 = very competent
+1 = Not competent 2 = Sufficiently Competent 3 = Competent 4 = Very competent
 
-If there is one participant getting score 16, he/she will be considered as very
-competent participant. And so on depend on total score.  If at school, teacher
-can fill in this performance assessment, but, for adult learning, facilitator
-and participant can fill in together. And the result can be part of discussion
-material or noted by management team.
+In the event a participant gains a score of 16, s/he can be qualified as "very
+competent".
+Other qualification is also determined according to scores obtained.
+In school settings, this performance evaluation can be carried out by teachers.
+For adults, it is the responsibility of facilitators together with training
+participants.
+The forms that have been filled out can serve as a matter of discussion or
+records for management team.
 
 **Bibliography**
 
@@ -557,7 +654,3 @@ Zainudin. 1986. Andragogi. Bandung: Penerbit Angkasa
 Padmowihardjo, S. (2006). Pendidikan Orang Dewasa. Jakarta: Universitas Terbuka.
 
 http://ippamaradhi.multiply.com/journal/item/102/10-Prinsip-Pendidikan-Orang-Dewasa
-
-
-
-

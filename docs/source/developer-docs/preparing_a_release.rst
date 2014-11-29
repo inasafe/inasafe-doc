@@ -3,8 +3,8 @@
 Preparing a release
 ===================
 
-This document outlines the steps that need to be carried out in order
-to issue a new release of the |project_name| plugin.
+This document outlines the steps that need to be carried out in order to
+issue a new release of the |project_name| plugin.
 The steps can be outlined as follows and are described in detail below:
 
 * Identify what version number the new release will be assigned.
@@ -39,13 +39,15 @@ Release numbering
 `semantic versioning system <http://semver.org/>`_.
 Simply put, the following scheme should be applied to version numbers::
 
-  Version Increment  Intention
-
-  Major e.g. 1.0.0   API incompatibility with the previous major release.
-  Minor e.g. 1.1.0   API compatibility and extension over previous minor release.
-  Point e.g. 1.1.1   API compatibility, bug fixes for previous point release.
-  Alpha e.g. 1.0.0a  Feature incomplete preview of a minor or major release.
-  RC e.g. 1.1.0rc1   Feature complete preview of a minor or major release.
+   ===================  ============================================================
+   Version Increment    Intention
+   ===================  ============================================================
+   Major e.g 1.0.0      API incompatibility with the previous major release.
+   Minor e.g. 1.1.0     API compatibility and extension over previous minor release.
+   Point e.g. 1.1.1     API compatibility, bug fixes for previous point release.
+   Alpha e.g. 1.0.0a    Feature incomplete preview of a minor or major release
+   RC e.g. 1.1.0rc1     Feature complete preview of a minor or major release
+   ===================  ============================================================
 
 To identify the next release number, the table above can simply be applied.
 Here are a couple of examples.
@@ -74,37 +76,21 @@ issues, available time to deadline, budget etc.
 `issues <https://github.com/AIFDR/inasafe/issues>`_
 tagged for the release should be closed.
 
-Branching
----------
-
-Branching is requred for Major and Minor releases. The process of branching
-is described in :doc:`version_control` whose accompanying illustration is
-repeated below for your convenience:
-
-.. figure:: /static/release-workflow.*
-   :align:   center
-
-The purpose of creating a branch is to isolate incompatible and possibly
-unstable changes that take place in the *master branch* from stable code
-that forms the basis of a release. You will note from the diagram above
-that branches are named after the minor version, and are tagged with the point
-version at the point of release.
-
-**Outcome:** If needed, create a release branch which provides a 'known good'
-version that can be returned to at any point in time.
 
 PEP8 and PEP257 compliance
 --------------------------
 
 These **Python Enhancement Proposals** (PEP) relate to the formatting
-of python source code. In particular they mandate spacing, layout, line lengths
-and so on. The outcome of PEP8 and PEP257 compliance is code that is
-consistently formatted across the whole code base, regardless of authorship.
+of python source code.
+In particular they mandate spacing, layout, line lengths and so on.
+The outcome of PEP8 and PEP257 compliance is code that is consistently
+formatted across the whole code base, regardless of authorship.
 
 This consistency makes it easier to incorporate new members into the project
-team and to collaborate effectively within the team. A number of tools are
-available to help you to identify PEP8 and PEP257 transgressions, and there
-is a Makefile target (:command:`make pep8` which will do a PEP8 test for you).
+team and to collaborate effectively within the team.
+A number of tools are available to help you to identify PEP8 and PEP257
+transgressions, and there is a Makefile target (:command:`make pep8` which
+will do a PEP8 test for you).
 Under the Eclipse/PyDev IDE, there is also on the fly checking support which
 can be enabled and that will notify you of any compliance issues as illustrated
 in the screenshot below.
@@ -135,20 +121,24 @@ Compile Qt resources and user interface files
 .............................................
 
 The Qt4 resource and user interface definition files supplied with
-|project_name| need to be compiled before they can be deployed. There are two
-utility functions provided by Qt4 for this purpose:
+|project_name| need to be compiled before they can be deployed.
+There are two utility functions provided by Qt4 for this purpose:
 
 * :command:`pyuic4` - A tool to compile Qt4 user interface definition files
-  (.ui) into python source code. The .ui files contain xml which describes the
-  placement of widgets within a user interface file.
+  (.ui) into python source code.
+  The .ui files contain xml which describes the placement of widgets within a
+  user interface file.
 * :command:`pyrcc4` - A tool to compile Qt4 resource files into python source
-  code. Qt4 resources are 'in-code' representations of application resources
-  needed at run time. These include images, icons, html, css etc. - whatever
-  the application may need to use at runtime without resorting to retrieving
-  assets from the filesystem.
+  code.
+  Qt4 resources are 'in-code' representations of application resources needed
+  at run time.
+  These include images, icons, html, css etc. - whatever the application may
+  need to use at runtime without resorting to retrieving assets from the
+  filesystem.
 
 The compilation of these resources if the default make target in the root and
-*gui* python package. To compile them simply do::
+*gui* python package.
+To compile them simply do::
 
    cd <inasafe source>
    make
@@ -159,13 +149,15 @@ HIG Compliance
 ..............
 
 The |project_name| human interface guidelines (HIG) are described in the
-:ref:`hig-label` document. User interface should strive to comply with these
-guidelines. As an over-arching principle, before any release,
-the user interface elements that comprise that release should be tested both
-for usability and to ensure that they are functional.
+:ref:`hig-label` document.
+User interface should strive to comply with these guidelines.
+As an over-arching principle, before any release, the user interface elements
+that comprise that release should be tested both for usability and to ensure
+that they are functional.
 
-There is no automated test system for HIG. Before making a release of HIG
-compliance, each dialog should be manually tested and inspected.
+There is no automated test system for HIG.
+Before making a release of HIG compliance, each dialog should be manually
+tested and inspected.
 
 **Outcome:** A consistent, user friendly and functional graphical user interface
 environment for the software that comprises the releases.
@@ -174,13 +166,16 @@ Unit Testing
 ............
 
 During the development process, unit tests should be written (following the
-principles of test driven development). A good test suite allows the code to
-be shipped with confidence knowing it will behave as expected. At the time of
-release, all the tests in the test suite should either pass or have documented
-reasons as to why they fail, and that they are expected to fail.
+principles of test driven development).
+A good test suite allows the code to be shipped with confidence knowing it
+will behave as expected.
+At the time of release, all the tests in the test suite should either pass or
+have documented reasons as to why they fail, and that they are expected to
+fail.
 
 In addition, tests should provide a code coverage of 80% or better of the
-shipped code base. More information on running unit tests is included in
+shipped code base.
+More information on running unit tests is included in
 :ref:`running-tests-label`.
 
 **Outcome:** All unit tests complete successfully, or when expected
@@ -190,10 +185,11 @@ User Acceptance Testing
 -----------------------
 
 While unit testing provides a quantitative measure of the code's robustness,
-user acceptance testing provides a qualitative measure. The plugin should
-be made available to 'invested' users to test with real world data and in
-real world usage scenarios. Any issues with workflow, ease of use, quality of
-model outputs and reports etc. should be identified at this point and remedied.
+user acceptance testing provides a qualitative measure.
+The plugin should be made available to 'invested' users to test with real
+world data and in real world usage scenarios.
+Any issues with workflow, ease of use, quality of model outputs and reports
+etc. should be identified at this point and remedied.
 
 **Outcome:** Software that works in real world usage.
 
@@ -210,7 +206,8 @@ API Documentation
 
 In addition to documenting new features, any new python modules introduced
 during the development work leading up to the release need to be included
-in the API documentation. This process is described in detail in the
+in the API documentation.
+This process is described in detail in the
 :ref:`api-documentation-howto-label` document.
 
 **Outcome:** The API is completely documented with rich,
@@ -219,19 +216,37 @@ relevant documentation.
 Update the changelog
 --------------------
 
-A changelog should be maintained (:file:`docs/sources/general/changelog.rst`)
-that lists the key new features and improvement made with each release. Use
-the :ref:`changelog` file to guide the style of any edits and additions made.
+A changelog is maintained in a number ok places:
 
-The changelog should not exhaustively list every commit that took place. Rather
-it should list the key features and bug fixes that were made during the
+The rst changelog
+.................
+
+In the ``inasafe-doc`` repository the :file:`changelog.rst` should be
+maintained (:file:`inasafe-doc/docs/source/general/changelog.rst`)
+that lists the key new features and improvements made with each release.
+Use the :ref:`changelog` file to guide the style of any edits and additions made.
+
+The changelog should not exhaustively list every commit that took place.
+Rather it should list the key features and bug fixes that were made during the
 release cycle.
 
 .. note:: New release changesets should be introduced to this file
    **at the top** so that the newest release is always listed first.
 
 **Outcome:** A succinct list of changes and improvements that were made during
-the release cycle.
+the release cycle that will be visible on the InaSAFE web site.
+
+The commit changelog
+....................
+
+This is an automatically generated changelog that enumerates every commit
+that was made during the lifecycle of the release. It is stored as CHANGELOG
+in the top level of the ``inasafe-dev`` source tree. To update the changelog
+for the release simply run this make command::
+
+    make changelog
+
+
 
 Finalise translations
 .....................
@@ -248,13 +263,14 @@ There are three components of the project that require translation:
 * The Graphical User Interface - primarily the :file:`gui` python package.
   Qt4 .ts files are used for these translations.
 * The |project_name| libraries - these components provide the underlying
-  functionality of the scenario assessment. Python gettext is used for these
-  translations.
-* The sphinx documentation - this is translated using gettext.
+  functionality of the scenario assessment.
+  Python gettext is used for these translations.
+* The sphinx documentation - this is translated using gettext and uploaded to
+  transifex for collaborative translation work.
 
 The translation process for the first two items above is documented in
-detail in :doc:`i18n`. The sphinx translation process is not yet well
-documented, although it will be similar to the gettext process.
+detail in :doc:`i18n`. The sphinx translation process is not yet well documented,
+although it will be similar to the gettext process.
 
 The final strings should be made available to translators before the release,
 during which time a string freeze should be in effect on the release code tree.
@@ -266,12 +282,50 @@ made available as part of the distribution.
 **Outcome:** The released plugin will be multilingual supporting both
 indonesian and english.
 
-Compile the sphinx documentation
---------------------------------
+Compile the context help documentation
+.......................................
 
-Once documentation is completed, it should be compiled using
-:command:`make docs` and the :command:`git status` command should be used to
-ensure that all generated documentation is also under version control.
+Since version 2.0, the context help is generated from the master documentation
+store in the ``inasafe-doc`` repository. See the
+`InaSAFE Documentation Repository <https://github.com/AIFDR/inasafe-doc>`_
+for more details, the specifics are not covered here.
+
+
+You should have ``inasafe-doc`` checked out at the same directory level as
+``inasafe-dev`` as the scripts used below depend on this filesystem layout.::
+
+    ├── inasafe_data
+    ├── inasafe-dev
+    ├── inasafe-doc
+
+You should write user documentation (explaining how the user interface etc.
+work be adding to and editing the content found under:
+
+:file:`docs/source/user-doc`
+
+Once you have completed your work (which should be done against the ``develop``
+branch of the ``inasafe-doc`` repo), you should commit it to your fork and then
+issue a pull request for inclusion into the main repository.
+
+To compile the documentation you need to have sphinx available on your
+system. Under linux this is done as follows::
+
+    sudo pip install sphinx
+
+.. note:: You should install sphinx from pip rather than apt since the apt
+    repo version will most likely be too old to compile the documentation
+    properly.
+
+Once documentation is checked out and updated with any specific information
+pertinent to the release, it should be compiled using
+:command:`scripts/post_translate_application_help.sh`. This will build all
+the documentation under :file:`docs/source/user-docs` and copy them into
+:file:`insafe-dev/docs` ready for deployment with the release package.
+
+In :file:`inasafe-dev` subsequent to building the context documentation,
+the :command:`git status` command should be used to
+ensure that all generated documentation is also under version control and then
+these files should be committed prior to tagging the release.
 
 **Outcome:** Sphinx documentation is compiled providing complete documentation
 to be shipped with the plugin.
@@ -279,105 +333,49 @@ to be shipped with the plugin.
 Update plugin metadata and version number
 .........................................
 
-QGIS uses specific metadata to register the plugin. At the time of writing
-the mechanism for registering this metadata is in transition from an in-source
-based system to an .ini file based system. In the interim, both should be
-maintained.
+QGIS uses specific metadata to register the plugin.
 
-There are two files containing version numbers:
-
-* :file:`__init__.py`
 * :file:`metadata.txt`
 
-In the init file you would typically update the version entry like this::
-
-    def version():
-        """Version of the plugin."""
-        return 'Version 1.1.0'
-
-.. note:: Be very careful about editing metadata in __init__.py. The system
-    of storing metadata in QGIS plugins is being deprecated (from QGIS 2.0)
-    because it is extremely fragile and prone to breakage by poor text
-    formatting.
-
-In metadata you would typically update the version and status entries to::
+In this metadata you would typically update the version and status entries to::
 
     version=1.1.0
     # alpha, beta, rc or final
     status=beta
 
-Immediately after branching, and then change the status designation to final
-just prior to tagging the release.
+Immediately after tagging the previous release, and then change the status
+designation to final just prior to tagging the release.
 
-Both of these files should be updated to reflect the version number and the
-metadata.txt file should reflect the release status.
-
-**Outcome:** The plugin metadata to reflects the current version of
+**Outcome:** The plugin metadata reflects the current version of
 |project_name|.
 
-Generate a test package
------------------------
 
-At this point a test package should be generated that can be used to test
-the plugin in a clean room environment. A clean room environment comprises a
-system that has a fresh operating system installation with the desired version
-of QGIS installed, and **no other software**. It is probably a good practice
-to use machine virtualisation for this purpose, for example with images
-of a windows and a linux system installed. Some virtualisation tools such as
-vmware provide the ability to create a system snapshot and roll back to it.
+Merge to master
+---------------
 
-To generate a test package, use the :file:`scripts/release.sh` bash script.
-
-For exampled to create a test package for version 0.1.0 of the software,
-issue the following command::
-
-   scripts/release.sh 0.1.0
-
-The generated package will be placed in the /tmp directory of your linux system.
-
-Once the clean system is started, extract the package contents into the user's
-personal plugin directory. For example under Linux::
-
-   mkdir -p ~/.qgis/python/plugins
-   cd ~/.qgis/python/plugins
-   unzip inasafe.0.1.0.zip
-
-Now start QGIS and enable the plugin in the QGIS plugin manager (
-:menuselection:`Plugins --> Manage Plugins`).
-
-Branch the release
-------------------
-
-This step is only done for minor and major releases, point releases are only
-tagged. The branch should be named after the major and minor version numbers
-only - for example: :samp:`version-1_0`. The following console log illustrates
-how to create a local branch, push it to the origin repository, remove the local
-branch and then track the repository version of the branch locally::
-
-   git branch version-0_1
-   git push origin version-0_1
-   git branch -D version-0_1
-   git fetch origin
-   git branch --track version-0_1 origin/version-0_1
-   git checkout version-0_1
-
-
-**Outcome:** A branch on the remote repository named after the major and minor
-version numbers.
+When develop is in a release ready state, it should be merged to the master
+branch and all tests should pass on the master jenkins instance. The best
+way to facilitate the merge to master is to make a pull request from the
+main repository's ``develop`` branch.
 
 Tag the release
 ---------------
 
-.. note:: As of version 1.1.0 we will be cryptographically signing the release
-  tags using GPG (Gnu Privacy Guard), and annotating the git tag.
+As of 2.0.0 we only tag releases, not branch them (in keeping with gitflow
+methodology).
+
 
 Prerequisite
 ............
 
+As of version 1.1.0 we will be cryptographically signing the release
+tags using GPG (Gnu Privacy Guard), and annotating the git tag. You should
+ensure you have a GPG key set up in your user profile before tagging.
+
 You need to have a GPG key already (google GPG to see how to create one).
 
-You should register your key with GIT. To do this, first identify what your
-key id is::
+You should register your key with git.
+To do this, first identify what your key id is::
 
     gpg --list-sigs | grep tim
 
@@ -386,7 +384,7 @@ Which should produce something like this::
     uid                  Tim Sutton (QGIS Key) <tim@linfiniti.com>
     sig 3        97626237 2007-07-19  Tim Sutton (QGIS Key) <tim@linfiniti.com>
 
-So in my case my GPG id is :samp:`97626237`. Now register that key with GIT::
+So in my case my GPG id is :samp:`97626237`. Now register that key with git::
 
     git config --global user.signingkey 97626237
 
@@ -399,40 +397,56 @@ Tagging
 Tagging the release provides a 'known good' state for the software which
 represents a point in time where all of the above items in this list have
 been checked. The tag should be named after the major, minor and point release
-for example :samp:`version-0_1_0`. If the release is a release candidate or
-and alpha release the letters :samp:`rc` or :samp:`a` respectively should
-be appended respectively, along with the related number. For example version
-0.1.0 alpha 1 would be tagged as :samp:`version-0_1_0a1`. To tag the release
-simply do it in git as illustrated below.::
+for example :samp:`version-1_2_0`.
 
-   git tag -s version-1_1_0 -m "Version 1.1.0"
+If the release is a release candidate or and alpha release the letters
+:samp:`rc` or :samp:`a` respectively should be appended respectively,
+along with the related number.
 
-This should generate an output similar to the example shown below::
+For example version 1.2.0 alpha 1 would be tagged as :samp:`version-1.2.0a1`.
 
-    gpg: NOTE: old default options file `/home/timlinux/.gnupg/options' ignored
+To tag the release simply use the make target as illustrated below.::
 
-    You need a passphrase to unlock the secret key for
-    user: "Tim Sutton (QGIS Key) <tim@linfiniti.com>"
-    1024-bit DSA key, ID 97626237, created 2007-07-19
+    make tag
 
-Depending on your operating system / desktop environment, you may be prompted
-for your GPG passphrase, or it will be automatically supplied if you are using
-an agent.
+You will be prompted for the semantic versioning tag number, your local
+git checkout will be tagged and then that tag will be pushed to the upstream
+repository 'origin' (which should be linked to the main upstream repo).
 
-Now we can go ahead and push the tag to the main repository::
+.. warning:: Only run ``make tag`` when you are on the ``master`` branch as
+    all tagged releases should be against ``master``.
 
-   git push --tags origin version-1_1_0
+.. note:: Depending on your operating system / desktop environment, you may be
+    prompted for your GPG passphrase, or it will be automatically supplied if
+    you are using an agent.
 
-.. note:: Replace 'dot' separators with underscores for the version number.
-.. note:: You can differentiate release
-   **branches** from release
-   **tags** by the fact that branch names have only the minor version number
-   (e.g. version-0_4) whereas release tags are reserved for point releases
-   (e.g. version-0_4_1).
-
-**Outcome:** The release is tagged in GIT and can be checked out at any point
+**Outcome:** The release is tagged in git and can be checked out at any point
 in the future. The tagged source tree can easily be downloaded at any point by
 visiting https://github.com/AIFDR/inasafe/tags
+
+Generate a test package
+-----------------------
+
+At this point a package should be generated. To generate a test package, use
+the :file:`scripts/release.sh` bash script.
+
+For example to create a test package for version 1.2.0 of the software,
+issue the following command::
+
+   scripts/release.sh 1.2.0
+
+The generated package will be placed in the /tmp directory of your linux
+system.
+
+Test the package locally by extracting the package contents your user
+personal plugin directory. For example under Linux::
+
+   mkdir -p ~/.qgis2/python/plugins
+   cd ~/.qgis2/python/plugins
+   unzip inasafe.1.2.0.zip
+
+Now start QGIS and enable the plugin in the QGIS plugin manager (
+:menuselection:`Plugins --> Manage Plugins`).
 
 Upload the package
 ------------------
@@ -441,15 +455,16 @@ QGIS provides an online plugin repository that centralizes the distribution
 and retrieval of plugins. It is the most efficient way to make your plugin
 available to the world at large.
 
-* Upload the updated package zip file to old QGIS python plugin repository.
-* Upload the updated package zip file to the new QGIS python plugin repository.
+The plugin can be uploaded by going to the
+`InaSAFE plugin page <ttp://plugins.qgis.org/plugins/inasafe/>`_, logging in
+and creating a new version.
 
 Press announcements
 -------------------
 
 Once the release has been made, an announcement should be made to inform
-interested parties about the availability of the new software. A proforma
-announcement is provided below::
+interested parties about the availability of the new software.
+A proforma announcement is provided below::
 
    Dear |project_name| Users
 

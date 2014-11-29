@@ -6,7 +6,8 @@ Set up of Windows 'slave' builds for Jenkins
 Outline of procedure:
 ---------------------
 
-Set up a virtual machine. In our testing regime we will be using:
+Set up a virtual machine.
+In our testing regime we will be using:
 
 * Windows 8 64bit
 * Windows 8 32bit
@@ -32,7 +33,7 @@ We will be installing the following components on each windows slave:
 With the base software installed, we will clone three GitHub repositories to
 the VM:
 
-* **InaSAFE** The application that we will be testing.
+* |project_name| The application that we will be testing.
 * **inasafe_data** Test data required for unit testing the  library.
 * **inasafe-doc** Documentation that builds the webpage and the Docs.
 
@@ -100,6 +101,7 @@ Do that by opening the Git Shell and assigning the command::
 
 We also need the test data available in this freshly cloned directory.
 So clone the test data inside this inasafe clone.
+
 To do this enter the commands::
 
   git clone https://github.com/AIFDR/inasafe_data.git inasafe_data
@@ -108,11 +110,9 @@ If you take the former route of just copying them over, after copying them in
 to the plugins directory use the GitHub Windows apps options dialog to find
 them by clicking the 'scan for repositories' button.
 
-Python Install
-..............
+Python
+......
 
-* Download and install Python **32Bit** (even if you are running a 64 bit
-  windows!!!) to match the version of python shipped with QGIS.
 * Follow the process described in :ref:`windows_shell_launcher-label` so that
   you can use the QGIS libraries from a python shell.
   Note that you probably need to change the second last line of that script to
@@ -122,31 +122,37 @@ Python Install
   a working pip, nose etc.
 
 Now run the tests and ensure that they can be run from the command line
-*before* attempting to run them via Jenkins. Again, this is just to make sure
-that everything is setup nicely to avoid any problems on Jenkins.
+*before* attempting to run them via Jenkins.
+Again, this is just to make sure that everything is setup nicely to avoid any
+problems on Jenkins.
 ::
 
     C:\Users\inasafe\.qgis\python\plugins\inasafe>runtests.bat
 
 
-.net 3.5 Install
+.NET 3.5 Install
 ................
 
-To install Jenkins, you first need to ensure you have .net 3.5 on your system.
-Windows 8 ships with .net 4+ so you need to manually install the older version
-too. First visit http://www.microsoft.com/en-us/download/details.aspx?id=21
-and either choose the .NET Framework Full Package (around 200mb, the option
-I took) or get the online installer. Note that the full package link is near
-the bottom of the page.
+To install Jenkins, you first need to ensure you have .NET 3.5 on your system.
+With Windows 7 you are safe. You already have .NET 3.5 installed.
 
-Run the installer and accept all the defaults to install the .net 3.5
+Windows 8 ships with .NET 4+ so you need to manually install the older version
+too.
+First visit http://www.microsoft.com/en-us/download/details.aspx?id=21 and
+either choose the .NET Framework Full Package or get the online installer.
+Note that the full package link is near the bottom of the page.
+
+Run the installer and accept all the defaults to install the .NET 3.5
 framework.
 
 Jenkins Install
 ...............
 
 Simply go to http://jenkins-ci.org/ and download the windows native package
-and then install it, taking all the defaults.
+and then install it.
+If it is a dedicated machine only for Jenkins it is a very good idea to not
+install it to C://Program Files// or C://Program Files (x86) though the
+hassle in the file paths but rather install it to C://Jenkins.
 
 Once Jenkins is set up, open your browser at http://localhost:8080 to access
 the Jenkins page.
@@ -163,6 +169,7 @@ do :menuselection:`Manage Jenkins --> Manage Plugins --> Available tab`.
 Now install at least these plugins:
 
 * Jenkins GIT plugin
+* Git Plugin
 * GitHub API plugin
 * GitHub plugin
 
@@ -190,10 +197,10 @@ We need to provide the path to git so that Jenkins can automatically make
 checkouts of each version.
 
 :menuselection:`Jenkins --> Manage Jenkins --> Configuration --> Git
-Installations --> Path to Git executable` needs to be set. On my system I used
-the following path::
+Installations --> Path to Git executable` needs to be set.
+On my system I used the following path::
 
-    C:\Users\inasafe\AppData\Local\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\bin\git.exe
+    C:\Users\inasafe\AppData\Local\GitHub\PortableGit_XXXXXXXXXXXX\bin\git.exe
 
 The GitHub application's git installer is a portable app and the path for you
 is going to look a little different - just look in in your AppData dir and you
@@ -201,30 +208,23 @@ should find it.
 
 .. note:: The Jenkins system user will need to have read permissions on the
     above directory.
-
-Next populate the options in:
-
-* :menuselection:`Jenkins --> Manage Jenkins --> Configuration --> Git Plugins`:
-
-* :menuselection:`Global Config user.name Value` : :kbd:`<your name>`
-* :menuselection:`Global Config user.email Value` : :kbd:`<your@email.com>`
-* :menuselection:`Create new accounts base on author/committer's email` : no
-
-Now click the :guilabel:`SaveButton` to save your global configuration changes.
+    And don't forget to give the user that Jenkins is run as permissions to
+    the jobs Directory within the Jenkins installation.
 
 Job Configuration
 .................
 
 Next we create our build job with the following options:
 
-* :menuselection:`Project name` : :kbd:`inasafe-win8-64` (adjust the name as
+* :menuselection:`New Job`
+* :menuselection:`Job name` : :kbd:`inasafe-win7-32` (adjust the name as
   appropriate)
 * :menuselection:`Build a free-style software project` : select
 
 On the job configuration page use the following options:
 
 * :menuselection:`Description` : :kbd:`Windows 8 64 bit build of InaSAFE`
-* :menuselection:`GitHub project` : :kbd:`http://github.com/AIFDR/inasafe/`
+* :menuselection:`GitHub project` : :kbd:`https://github.com/AIFDR/inasafe/`
 * :menuselection:`Source Code Management` section
 * :menuselection:`Git` : Check
 * :menuselection:`Repository URL` : :kbd:`git://github.com/AIFDR/inasafe.git`
@@ -233,22 +233,29 @@ On the job configuration page use the following options:
 * :menuselection:`Url` : :kbd:`http://github.com/AIFDR/inasafe/`
 
 * :menuselection:`Build triggers` section
-* :menuselection:`Poll SCM` : check and set to :kbd:`* * * * *` for
+* :menuselection:`Poll SCM` : check and set to :kbd:`H * * * *` for
   minutely checks.
 
+It might be possible that the initial checkout has to be done manually by
+using the command
+::
+
+  git clone git://github.com/AIFDR/inasafe.git workspace
+  within the specific job directory.
+
 Save your changes at this point and make a commit, you should see the job
-produce output something like this the next time a commit takes place::
+produce output something like this the next time a commit takes place
+::
 
     Started by timer
-    Building in workspace C:\Jenkins\jobs\inasafe-win8-64\workspace
-    Checkout:workspace / C:\Jenkins\jobs\inasafe-win8-64\workspace - hudson
-    .remoting.LocalChannel@1fd5730
+    Building in workspace C:\Jenkins\jobs\inasafe-win7-32\workspace
+    Checkout:workspace / C:\Jenkins\jobs\inasafe-win7-32\workspace - hudson.remoting.LocalChannel@1fd5730
     Using strategy: Default
-    Last Built Revision: Revision 5403e3ba45129b42edaa2bc0ebd12e8c9ead868e (origin/version-1_1)
+    Last Built Revision: Revision 5403e3ba45129b42edaa2bc0ebd12e8c9ead868e (origin/master)
     Fetching changes from 1 remote Git repository
     Fetching upstream changes from git://github.com/AIFDR/inasafe.git
-    Commencing build of Revision 5403e3ba45129b42edaa2bc0ebd12e8c9ead868e (origin/version-1_1)
-    Checking out Revision 5403e3ba45129b42edaa2bc0ebd12e8c9ead868e (origin/version-1_1)
+    Commencing build of Revision 5403e3ba45129b42edaa2bc0ebd12e8c9ead868e (origin/master)
+    Checking out Revision 5403e3ba45129b42edaa2bc0ebd12e8c9ead868e (origin/master)
     Finished: SUCCESS
 
 That validates that at least your git checkout is working as expected.

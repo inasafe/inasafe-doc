@@ -94,3 +94,7 @@ rm -rf static
 rm -rf ${BUILDDIR}
 
 popd
+
+echo "Now copy $HTMLDIR to the inasafe-dev docs tree."
+echo "e.g."
+echo "rm -rf ../inasafe-dev/docs/id; rm -rf ../inasafe-dev/docs/en; cp -r docs/output-app-docs/html/* ../inasafe-dev/docs/"

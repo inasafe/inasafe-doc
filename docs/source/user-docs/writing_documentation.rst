@@ -21,21 +21,22 @@ Following are a few tips for documentation writers:
 
 1. Take a look in the `lookup table <./lookup_table.html>`_ to see which terms
    and phrases are used and which you should definitely **not** translate.
-#. There is a 'Community Edition" of
-   `PyCharm <http://www.jetbrains.com/pycharm/>`_ available. Consider using
-   this for writing documentation.
-#. Try to not write more than **80 Characters in one line**. That makes the
-   Documentation much easier to maintain.
+#. There is a "Community Edition" of
+   `PyCharm <http://www.jetbrains.com/pycharm/>`_ available.
+   Consider using this for writing documentation.
+#. Try to not write more than **80 Characters in one line**.
+   That makes the Documentation much easier to maintain.
 #. Try to give an anchor to reference to for at least every new Heading (Page).
    If it is useful and important you might also want to put anchors on
    SubHeadings.
-#. Try to avoid duplicate target names (anchors). Always use unique
-   identifiers. If you are not sure - the longer the name the unlikely it is
-   already used.
+#. Try to avoid duplicate target names (anchors).
+   Always use unique identifiers.
+   If you are not sure - the longer the name the unlikely it is already used.
 #. Try to use underscores (_) in filenames and links (anchors) as a separator.
 #. Try to use dashes (-) in directory names as a separator.
-#. Try to avoid using tables wherever possible. Only use tables if there is.
-   really no other way to display the documentation.
+#. Try to avoid using tables wherever possible.
+   Only use tables if there is really no other way to display the
+   documentation.
 #. If you have to use tables try to avoid using TABS in favour of SPACES.
    TABS only confuse the Computer while building documentation and leads to
    unnecessary errors.
@@ -74,6 +75,7 @@ Here are some common useful tags
 
    Subsubsubsection (if needed)
    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
    **bold**
 
    *italics*
@@ -113,6 +115,16 @@ Here are some common useful tags
    .. todo:: Todo item in a call out box
 
    .. warning:: Much like Note but clearly visible
+
+   There are more markers available:
+
+   .. attention::
+   .. caution::
+   .. danger::
+   .. error::
+   .. hint::
+   .. important::
+   .. tip::
 
    .. table:: table title
 
@@ -161,8 +173,8 @@ Help writing/fixing documentation
 ---------------------------------
 
 Helping writing the documentation is an easy task.
-The only thing you need to have is a local copy of the documentation branch
-of |project_name|.
+The only thing you need to have is a local copy of the |project_name|
+documentation branch.
 
 Clone |project_name| documentation
 ..................................
@@ -185,18 +197,18 @@ button on https://github.com/ and fill out the necessary fields.
 This Documentation assumes that you have the whole |project_name| source
 available under :file:`$HOME/dev/python/...`
 
-Cloning your forked github |project_name| Documentation by entering following
-commands:
+Clone your forked github |project_name| Documentation by entering following
+command:
 
 :command:`git clone https://github.com/<your username>/inasafe-doc.git`
 
-then search for the .rst file you'd like to extend/fix and work on it.
+Search for the .rst file you'd like to extend/fix and work on it.
 
-Afterwards commit your local changes to your local clone with the command
+Afterwards commit your local changes to your local clone with the command:
 
 :command:`git commit -a -m"fixed a typo"`
 
-After that you have to push your local changes to your github fork with
+After that you have to push your local changes to your github fork with:
 
 :command:`git push`
 

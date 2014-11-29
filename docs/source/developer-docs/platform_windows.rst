@@ -20,8 +20,8 @@ usable development environment for |project_name| under Windows:
 * Create a custom shell launcher with a python prompt.
 * Setup your IDE (Eclipse PyDev or PyCharm).
 
-.. note:: If you only want to run the jenkins test suite there is no need
-   to checkout the project code. This is a task to be done by Jenkins.
+.. note:: If you only want to run only the jenkins test suite there is no need
+   to checkout the project code. This is task to be done by Jenkins than.
    You may also wish to read :doc:`jenkins_ci_windows_slave` if you wish to
    set up automated test suite running using Jenkins.
 
@@ -101,8 +101,8 @@ Windows 7 or newer::
 
 All windows versions::
 
-   mkdir -p .qgis/python/plugins
-   cd .qgis/python/plugins/
+   mkdir -p .qgis2/python/plugins
+   cd .qgis2/python/plugins/
    git clone https://<your username>@github.com/AIFDR/inasafe.git inasafe-dev
 
 .. note:: The items in angle brackets above should be replaced with your
@@ -134,11 +134,11 @@ The repository can now be cloned by issuing the commands listed below.
 
 Users on windows < Windows 7::
 
-   cd  C:/Documents and Settings/<your username>/.qgis/python/plugins/
+   cd  C:/Documents and Settings/<your username>/.qgis2/python/plugins/
 
 Windows 7 or newer::
 
-   cd  C:/Users/<your username>/.qgis/python/plugins/
+   cd  C:/Users/<your username>/.qgis2/python/plugins/
 
 All windows versions::
 
@@ -197,7 +197,7 @@ We will create a custom shell launcher that will give you a python
 shell environment using the python that comes bundled with QGIS, and that sets
 various paths and environment variables so everything works as expected.
 Find out the PATHs by using the command 'dir /x'.
-Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
+Save the following listing in <QGIS Install Dir>/bin/qgis-python-shell.bat::
 
    @echo off
    SET OSGEO4W_ROOT=C:\PROGRA~1\QGISDU~1
@@ -210,9 +210,10 @@ Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
    path %PATH%;"%OSGEO4W_ROOT%\apps\Python27\Scripts\"
 
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
+   set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python\plugins;
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
    set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
-   cd "%HOMEPATH%\.qgis\python\plugins\inasafe"
+   cd "%HOMEPATH%\.qgis2\python\plugins\inasafe-dev"
    start "QGIS Shell" /B "cmd.exe" %*
 
 .. note:: The QGIS_PREFIX_PATH environment variable should be unquoted!.
@@ -223,14 +224,14 @@ Save the following listing in <QGIS Install Dir>/bin/python-shell.bat::
 .. note:: This script is for QGIS 2.0.
    You may need to do some adjustment if you are using another version of QGIS.
 
-For easy access to this shell launcher, right click on the qgis-shell.bat
+For easy access to this shell launcher, right click on the qgis-python-shell.bat
 script and (without releasing your initial right click) drag with the file
 onto your start / windows button in the bottom left corner of the screen.
 
 Verifying your system path
 ..........................
 
-To verify your path, launch your python shell (by clicking the python-shell
+To verify your path, launch your qgis python shell (by clicking the qgis-python-shell
 .bat) and then start a python shell.
 Don't be alarmed when it says "The system cannot find the path specified." It
 should work anyway.
@@ -243,7 +244,7 @@ Now enter the follow simple script::
 
 Which should produce output like this::
 
-   C:\Users\inasafe\.qgis\python\plugins\inasafe-dev
+   C:\Users\inasafe\.qgis2\python\plugins\inasafe-dev
    C:\PROGRA~1\QGISDU~1\apps\qgis\python
    C:\PROGRA~1\QGISDU~1\apps\Python27\Lib\site-packages
    C:\PROGRA~1\QGISDU~1\bin\python27.zip
@@ -293,46 +294,10 @@ ez_setup.py and save it somewhere familiar e.g. :samp:`c:\temp`.
    on `this page <http://pypi.python.org/pypi/setuptools#windows>`_, rather
    just download the ez_setup.py
 
-Continue on :ref:`run_pip_install`
-
-Special note for Win64 bit users
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If your Windows is 64bit, you need to do a little trick to install pip.
-There are two options for doing this:
-
-* Add the following line near the end of your command shell launcher (as
-  described in :ref:`windows_shell_launcher-label`):
-
-  :samp:`set PATH=c:\python27;%PATH%`
-
-* First you have to install python 32bit and add its path to PATH variable in
-  environment variable (on Windows 7: :menuselection:`System Properties -->
-  Advanced --> Environment Variables`).
-
-To verify that you have the correct version of python in your path launch a
-python shell and execute the command :command:`print sys.executable` - is
-should show :samp:`c:\python27\python.exe` as per
-the demo session below::
-
-    C:\Users\inasafe\.qgis\python\plugins\inasafe>python
-    Python 2.7.3 (default, Apr 10 2012, 23:31:26) [MSC v.1500 32 bit (Intel)]
-    on win32
-    Type "help", "copyright", "credits" or "license" for more information.
-    >>> import sys
-    >>> print sys.executable
-    C:\Python27\python.exe
-    >>>
-
-.. note:: QGIS 2.0 should ship as a 64bit binary (including python), so the
-   above step should no longer be needed in future versions.
-
-.. _run_pip_install:
-
 For both 32 and 64 bit
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Next launch the shell (python-shell.bat as described in
+Next launch the shell (qgis-python-shell.bat as described in
 :ref:`windows-commandline_setup`) **as administrator** (by right clicking the
 file and choosing run as administrator).
 Then from the command line, launch :command:`ez_setup.py` by typing this::
@@ -363,14 +328,15 @@ If the installation goes successfully, you should see output like this::
    warning: no previously-included files matching '*.txt' found under directory 'docs\_build'
    no previously-included directories found matching 'docs\_build\_sources'
    Adding pip 1.1 to easy-install.pth file
-   Installing pip-script.py script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip.exe script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip.exe.manifest script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip-2.5-script.py script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip-2.5.exe script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
-   Installing pip-2.5.exe.manifest script to C:\PROGRA~2\QUANTU~1\apps\Python25\Scripts
+   Installing pip-script.py script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip.exe script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip.exe.manifest script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip-2.5-script.py script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip-2.5.exe script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
+   Installing pip-2.5.exe.manifest script to C:\PROGRA~2\QGISDU~1\apps\Python25\Scripts
 
-   Installed c:\progra~2\quantu~1\apps\python25\lib\site-packages\pip-1.1-py2.5.egg
+   Installed C:\PROGRA~2\QGISDU~1\apps\python25\lib\site-packages\pip-1.1-py2.5
+   .egg
    Processing dependencies for pip
    Finished processing dependencies for pip
 
@@ -392,7 +358,7 @@ Running tests using nose
 ........................
 
 Once they are installed, you can run the nose tests from windows by going to
-the plugin directory/inasafe-dev folder (in your python-shell.bat shell
+the plugin directory/inasafe-dev folder (in your qgis-python-shell.bat shell
 session) and running::
 
    run-tests-win.bat
@@ -427,25 +393,26 @@ Making PyCharm 'QGIS Aware'
 
 We need to have various environment variables set in the PyCharm context in
 a similar way we do with :ref:`windows-commandline_setup`.
-Make a copy of your qgis-shell batch file and call it qgis-pycharm.bat.
+Make a copy of your qgis-python-shell batch file and call it qgis-pycharm.bat.
 
 Now alter the last line so that it launches pycharm instead of a shell as
 per this example below::
 
   @echo off
-  SET OSGEO4W_ROOT=C:\PROGRA~2\QUANTU~1
+  SET OSGEO4W_ROOT=C:\PROGRA~1\QGISDU~1
   call "%OSGEO4W_ROOT%"\bin\o4w_env.bat
-  call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.2\etc\env.bat
+  call "%OSGEO4W_ROOT%"\apps\grass\grass-6.4.3\etc\env.bat
   @echo off
-  SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins\1.9
+  SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins
   path %PATH%;%OSGEO4W_ROOT%\apps\qgis\bin
-  path %PATH%;%OSGEO4W_ROOT%\apps\grass\grass-6.4.2\lib
+  path %PATH%;%OSGEO4W_ROOT%\apps\grass\grass-6.4.3\lib
   path %PATH%;"%OSGEO4W_ROOT%\apps\Python27\Scripts\"
 
   set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
+  set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python\plugins;
   set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
   set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
-  cd "%HOMEPATH%\.qgis\python\plugins\inasafe-dev"
+  cd "%HOMEPATH%\.qgis2\python\plugins\inasafe-dev"
   set PATH=c:\python27;%PATH%
   start "PyCharm aware of Quantum GIS" /B "C:\Program Files (x86)\JetBrains\PyCharm 2.7.3\bin\pycharm.exe" %*
 
@@ -461,7 +428,7 @@ Setup |project_name| project
 On the PyCharm welcome screen, choose :guilabel:`Open Directory` and open the
 git checkout you made i.e.::
 
-   c:\Users\<username>\.qgis\python\plugins\inasafe-dev"
+   c:\Users\<username>\.qgis2\python\plugins\inasafe-dev"
 
 Again, note that you should replace **<username>** with the appropriate name
 for your user account.
@@ -533,7 +500,9 @@ Here are the typical contexts of the file::
    @echo off
    SET GDAL_DRIVER_PATH=%OSGEO4W_ROOT%\bin\gdalplugins
    path %PATH%;%OSGEO4W_ROOT%\apps\qgis\bin;%OSGEO4W_ROOT%\apps\grass\grass-6.4.3\lib
+   path %PATH%;"%OSGEO4W_ROOT%\apps\Python27\Scripts\"
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python;
+   set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\qgis\python\plugins;
    set PYTHONPATH=%PYTHONPATH%;%OSGEO4W_ROOT%\apps\Python27\Lib\site-packages
    set QGIS_PREFIX_PATH=%OSGEO4W_ROOT%\apps\qgis
    "C:\Progra~2\eclipse\eclipse.exe"
@@ -556,8 +525,8 @@ In the resulting project dialog, set the following details:
 
 * :guilabel:`Project name:` : :kbd:`inasafe`
 * :guilabel:`Use default` : :kbd:`uncheck`
-* :guilabel (windows):`Directory` :
-  :kbd:`C:\\Users\\<user>\\.qgis\\python\\plugins\\inasafe\\`
+* :guilabel:`(windows): Directory` :
+  :kbd:`C:\\Users\\<user>\\.qgis2\\python\\plugins\\inasafe\\`
 * :guilabel:`Choose project type` : :kbd:`Python`
 * :guilabel:`Grammar Version` : :kbd:`2.7`
 * :guilabel:`Add project directory to PYTHONPATH?` : :kbd:`check`

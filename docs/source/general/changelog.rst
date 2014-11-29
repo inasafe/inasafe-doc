@@ -6,6 +6,85 @@ Changelog
 Changelog for version |release|
 -------------------------------
 
+1. Raster flood on roads performance optimisation.
+2. Added data driven age postprocessing support
+3. New keywords wizard
+4. Analysis extents pre-and-postview tool
+5. Updated keywords editor user interface
+
+This release also included many many bug fixes and 'under the hood'
+optimisations and improvements.
+
+Changelog for version 2.0.0
+---------------------------
+
+* Changes from a user point of view:
+
+  * Users are able to select their own hazard and exposure attribute.
+  * Simple wizards to walk new users through the software.
+  * Power users are able to configure their own action checklist and
+    "minimum needs".
+  * Report view in your web browser:
+    If you find the dock panel too small to show all the report details,
+    or if you want to open it in your browser to quickly print the tabular
+    report, you can now do so by right clicking on the report area of the
+    |project_name| dock and choose Open in web browser.
+  * Custom logo selection:
+    As well as the new report template capabilities, you can now also set your
+    organisation logo in the |project_name| options dialog.
+  * Template based reports:
+    This new feature means that you can now place your own logos in the
+    report and customise the arrangement of the various report elements on
+    the page.
+  * Options dialog overhaul:
+    We have overhauled the options dialog to make it easier to navigate and
+    hide away advanced options into their own panel.
+
+* New Functionality in |project_name|:
+
+  * Routing
+  * Evacuation routes
+  * Transportation from A to B
+  * Multiple Hazard Analysis
+  * Damage and Loss Assessment (DALA)
+  * Percentage of affected area by aggregation
+  * Polygon flood impact on roads impact function added
+  * Impact merge tool:
+    This tool will allow you to merge the output from two impact assessments
+    covering the same geographic extent and aggregated by the same areas.
+  * OSM Roads downloader:
+    In |project_name| 1.2 we introduced the new OSM downloader tool for
+    buildings data.
+    Beside a lot of improvements now roads can be downloaded too and at
+    the same time the correct keywords will be assigned to the data.
+
+* Changes in the code:
+
+  * Port to QGIS 2.0: we have ported our code base to work with the new
+    version of QGIS. Please note: QGIS 1.x releases will no longer be supported
+    in this and future releases on |project_name| (starting from 2.0).
+  * Support for PostGIS layers: You can now use PostGIS vector layers as
+    input data for running impact functions.
+  * Splitting Test Suite
+  * Reviewing Impact Functions
+  * Automatically run test on pull request
+  * Easy to write impact functions
+
+* Visible changes in Documentation and Webpage:
+
+  * Update User and Developer Documentation
+  * Update Training Materials: The tutorials section has been overhauled.
+  * Track where |project_name| events are occurring
+  * News Articles
+  * Translation into other languages
+  * New User Map:
+    We have added a community map to our web site. Please take a moment to
+    register yourself there as an |project_name| User, Developer or Trainer!
+    See http://users.inasafe.org
+
+Changelog for version 1.2.0
+---------------------------
+
 * User Interface
 
   * Improvements to |project_name| :ref:`panel <tb_dock>`: overhauled
@@ -93,9 +172,9 @@ Changelog for version 0.5.1
 Changelog for version 0.5.0
 ---------------------------
 
-* Better documentation. See http://|project_name|.org/contents.html
+* Better documentation.
 * Time stamp and other metadata added to generated map PDF.
-* Initial support for parameterisation of impact functions.
+* Initial support for parametrisation of impact functions.
 * Updated logging infrastructure including support for logging to the
   QGIS log panel.
 * Fixed missing |project_name| icon in QGIS plugin manager.

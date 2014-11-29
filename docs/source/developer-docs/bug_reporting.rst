@@ -35,8 +35,9 @@ How to write an issue report
 ----------------------------
 
 At first please use the search function to search through the already
-existing issues. There is a possibility that someone else already found your
-issue and reported it or already had the same suggestion as you.
+existing issues.
+There is a possibility that someone else already found your issue and
+reported it or already had the same suggestion as you.
 
 The issue is related to
 .......................
@@ -62,7 +63,8 @@ corner of the screen.
 Click on it and you will be sent to a new Page.
 
 In the line with "Title" try to enter a self speaking description of your
-problem/suggestion. Try only to use a few words there.
+problem/suggestion.
+Try only to use a few words there.
 
 In the TAB :guilabel:`Write` you can enter the long description of what you
 want to tell.
@@ -83,7 +85,6 @@ Example of a good issue report
 ..............................
 
 The basic construct of a "perfect" issue report will look like this
-
 ::
 
  # Problem/Suggestion
@@ -130,3 +131,22 @@ For example if you request a new feature and you describe your requested
 feature in the issue report, it is very likely that you want to mark it as
 :guilabel:`\* Request for Comments` to be commented and probably extended by
 others as well before being implemented as a well prepared feature.
+
+Labels' color and naming scheme
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+All labels start with a capital letter. Acronyms are all capitals.
+Colors are assigned using the following rules:
+
+.. image::  /static/dev-docs/labels_palette.*
+
+0. Gray is for issue sizes
+1. Reds are used for issues severity
+2. Orange is used for issues that need attention from the Documentation and Translation team.
+3. Yellows are used for issues that need external input
+4. Greens are used for issues handled in the current sprint
+5. Petrol is used for Features requests
+6. Blue is used for tagging the area of the problem (Optimization, System Architecture, Postprocessing, ...)
+7. Navy is not used yet
+8. Purple is used for Governance and Rollout
+
+When the same hue is used with more saturations, as a rule of thumb, the darker saturations mean more important.

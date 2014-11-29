@@ -18,9 +18,10 @@ Toggle |project_name| Dock
 
    Toggle Dock
 
-This button enables and hides the |project_name| dock. After enabling the
-dock you are able to move it around your screen. Dock and undock it wherever
-you want to have it and keep it even as a separated window.
+This button enables and hides the |project_name| dock.
+After enabling the dock you are able to move it around your screen.
+Dock and undock it wherever you want to have it and keep it even as a
+separated window.
 
 You can find more Information about the dock itself in the
 :ref:`toolbar_dock` section.
@@ -38,23 +39,9 @@ You can find more Information about the dock itself in the
    Keyword Editor
 
 The Keyword Editor button opens the Keyword editor which is described in
-:ref:`keywords_system`. Basically it enables you to easily edit the
-Keywords needed for |project_name| to create useful output.
-
-.. _tb_reset_dock_missst:
-
-Reset Dock
-----------
-
-.. figure:: /static/user-docs/toolbar_reset.*
-   :scale: 75 %
-   :align: center
-   :alt: Reset Dock
-
-   Reset Dock
-
-The Name is self speaking. In Case of any drawing issue inside the dock this
-button just resets/reloads the dock to its initial state.
+:ref:`keywords_system`.
+Basically it enables you to easily edit the Keywords needed for
+|project_name| to create useful output.
 
 .. _tb_options:
 
@@ -86,8 +73,8 @@ This button opens the Options window which is described in
 This button opens the Impact Function Browser.
 
 It basically enables you to filter and browse impact functions that are
-available in |project_name|. More information about that topic can be found
-in :ref:`impact_functions`.
+available in |project_name|.
+More information about that topic can be found in :ref:`impact_functions`.
 
 .. _tb_minimum_needs:
 
@@ -150,9 +137,9 @@ Save current scenario
    |project_name| Save Current Scenario
 
 This is the tool you need to prepare/save scenarios for the
-:ref:`tb_batch_runner` Tool. It lets you save the current visible scenario
-in QGIS to a :file:`.txt` file. This file you can open as a scenario again in
-Batch runner and recalculate it.
+:ref:`tb_batch_runner` Tool.
+It lets you save the current visible scenario in QGIS to a :file:`.txt` file.
+This file you can open as a scenario again in Batch runner and recalculate it.
 A more detailed description is available in :ref:`batch_runner`
 
 .. _tb_openstreetmap_downloader:

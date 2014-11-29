@@ -3,12 +3,22 @@
 Training Materials
 ==================
 
-This section of the documentation describes how to use the |project_name|
-system.
-Socialisation training is designed as a 1/2 day training, the Beginner
-training is 10 days long.
-Intermediate training is 6 days long.
-Training of trainer is a day long.
+This section of the documentation contains step-by-step tutorials on using OpenStreetMap and |project_name| with QGIS. It includes curricula and materials to be used in a set of trainings covering these topics.
+
++-------------------------+-----------------------+
+| Training                | Intended Length       |
++=========================+=======================+
+| Socialisation           | 1/2 Day               |
++-------------------------+-----------------------+
+| Beginner                | 10 Days               |
++-------------------------+-----------------------+
+| Intermediate            | 6 Days                |
++-------------------------+-----------------------+
+| Training of Trainer     | 1 Day                 |
++-------------------------+-----------------------+
+
+|
+
 
 .. toctree::
    :maxdepth: 2
@@ -18,3 +28,4 @@ Training of trainer is a day long.
    beginner/index
    intermediate/index
    tot/index
+   test_data

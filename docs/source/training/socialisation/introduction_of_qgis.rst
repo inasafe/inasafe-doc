@@ -1,56 +1,50 @@
 .. _introduction-to-qgis:
 
-Introduction to QGIS
-====================
+Getting Started
+===============
 
-.. image:: /static/training/socialisation/010_qgis_logo.png
+.. image:: /static/training/socialisation/010_qgis_logo.*
    :align: right
    :scale: 30 %
 
-**Objectives:**
+In this section we introduce |QGIS| and set it up for this
+|project_name| practical. If you are already familiar with
+QGIS, feel free to skip below to QGIS setup and and plugin installation.
 
-* Basic understanding of QGIS and its layout
-* Basic setup of QGIS
-* Installation of |project_name| Plugins
-* Installation of OpenLayers Plugin
-* Navigation of QGIS using Microsoft bing imagery
+**Learning Objectives:**
 
-**Expected Results:**
-
-Participants are able to:
-
-* Identify basic elements of QGIS layout
+* Understand QGIS and its layout
+* Set up QGIS
 * Customise toolbar
-* Enable "on the fly reprojection by default"
 * Change QGIS to a different language
-* Install plugin
-* Use the navigational toolset
+* Install |project_name| plugin
+* Install OpenLayers plugin
+* Navigate QGIS using Microsoft Bing imagery
 
-Introduction
-------------
 
-|QGIS| is a user friendly Open Source Geographic Information System (GIS).
-It runs on Linux, Unix, Mac OSX, Windows and Android and supports numerous
+Introduction to QGIS
+--------------------
+
+QGIS is a user-friendly open source Geographic Information System (GIS).
+It runs on Linux, OS X, Windows and Android and supports numerous
 vector, raster, and database formats and functionality.
 `<http://www.qgis.org>`_
 
-|QGIS| provides a continuously growing number of capabilities provided
+QGIS provides a continuously growing number of capabilities provided
 by core functions and plugins.
-You can visualize, manage, edit, analyse data, and compose printable maps.
-|QGIS| is also the platform of |project_name|, and hence the basic of |QGIS|
-will be taught in the workshop.
+You can visualise, manage, edit, analyse data and compose printable maps.
+QGIS is also the platform which |project_name| is built on, and so the basics of QGIS
+will be taught in this practical.
 
-Why |QGIS|?
------------
+Why QGIS?
+...........
 
-As information becomes increasingly spatially aware, there is no shortage of
-tools able to full fill some or all commonly used GIS functions. Why should
-anyone be using |QGIS| over some other GIS software package?
+As information becomes increasingly spatially linked, many tools have been developed
+to complete commonly used GIS functions. Why use
+QGIS over some other GIS software package?
 
-Here are only some of the reasons:
-
-* It's free, as in lunch. Installing and using the QGIS program costs you a
-  grand total of zero money. No initial fee, no recurring fee, nothing.
+* It's free, as in lunch. Installing and using the QGIS program costs you
+  zero money. No initial fee, no recurring fee, nothing.
 * It's free, as in liberty. If you need extra functionality in QGIS,
   you can do more than just hope it will be included in the next release. You
   can sponsor the development of a feature, or add it yourself if you are
@@ -61,145 +55,139 @@ Here are only some of the reasons:
 * Extensive help and documentation is available. If you're stuck with
   anything, you can turn to the extensive documentation,
   your fellow QGIS users, or even the developers.
-* Cross-platform. QGIS can be installed on MacOS, Windows and Linux.
+* Cross-platform. QGIS can be installed on OS X, Windows, Linux and Android.
 
-An overview of the Interface
-----------------------------
+An overview of the interface
+............................
 
 The elements identified in the figure below are:
 
-**1. Layers list**
-**2. Toolbars**
-**3. Map canvas**
-**4. Status bar**
+1. Layers panel
+2. Toolbars
+3. Map canvas
+4. Status bar
 
 .. image:: /static/training/socialisation/011_interface.*
    :align: center
 
 
+Set up QGIS
+-----------
 
-Start of Practical
-===================
-
-Setup QGIS
-----------
-
-1. :guilabel:`Open QGIS Desktop (1.8.0)` - This should be located on
+1. Open :guilabel:`QGIS Desktop (2.0.1)` - This should be located on
 your desktop, or you can find it in your start menu.
 
 .. image:: /static/training/socialisation/012_qgis_desktop.*
    :align: center
 
+.. Note:: Your exact version number of QGIS may be different. This tutorial has
+   been designed with QGIS 2.0 or above.
 
-2. A hint window will come up, close the window by clicking :guilabel:`OK`.
+2. A hint window will appear. Close the window by clicking :guilabel:`OK`.
 
 .. image:: /static/training/socialisation/013_tips.*
    :align: center
 
-.. Note:: At a later date I recommend you read through these hints by
-   clicking on *Next*
-
-Clean up tool bar
+Clean up toolbar
 .................
 
-To provide more space for your map canvas we will uncheck the tools we will not be
-using today.
+To provide more space for your map canvas uncheck the tools which are not
+needed for this tutorial.
 
-3. :guilabel:`Right Click` the toolbar and :guilabel:`Uncheck`,
+3. Right-click the toolbar and uncheck the following:
 
-* Advance Digitising
-* Database
-* Digitising
-* File
-* Grass
-* OpenStreetMap
-* Raster
-* Vector
-* Web
+  * Advance Digitizing
+  * Database
+  * Digitizing
+  * File
+  * Grass
+  * OpenStreetMap
+  * Raster
+  * Vector
+  * Web
 
-4. Rearrange toolbar so its just one line, :guilabel:`Left Click` and
-   :guilabel:`Hold` the vertical dots on the left hand side of the tool. Drag
+4. Rearrange the toolbar so that it's on one line. Left-click and
+   hold the vertical dots on the left hand side of the tool. Drag
    to the first line of the toolbar.
 
 .. image:: /static/training/socialisation/014_verticaldots.*
    :align: center
 
-.. Note:: For future work you may want to add these tool back into your
-   toolbar, this is as simple as :guilabel:`Right Clicking` on the toolbar and turning it
+.. Note:: For future work you may want to add these tools back into your
+   toolbar - this is as simple as right-clicking on the toolbar and turning them
    back on.
 
-Your QGIS toolbar should go from 3 lines to 1 line:
+Your QGIS toolbar should go from three lines to one line:
 
 .. image:: /static/training/socialisation/015_toolbar_clean.*
    :align: center
 
 
-Option Window
-.............
+Set up QGIS options
+...................
 
-To change the projection settings and acknowledge that QGIS is multilingual
+Next change the project's projection settings and QGIS language settings:
 
-5. Go to Options window: :menuselection:`Settings --> Options`
+5. Open the settings window by clicking on :menuselection:`Settings --> Options`.
 
-6. :guilabel:`Select` the **CRS** tab of the options menu
+6. Select the :guilabel:`CRS` tab of the options menu.
 
 .. image:: /static/training/socialisation/016_crs.*
    :align: center
 
-7. :guilabel:`Check` *Enable on the fly reprojection by default*.
-   This will enable that all spatial layers irrespective of their projection
-   will follow the CRS allocated above
+7. Check :guilabel:`Enable on the fly reprojection by default`.
+   This will ensure that all spatial layers irrespective of their projection
+   will follow the CRS displayed above.
 
 .. image:: /static/training/socialisation/017_onthefly.*
    :align: center
 
-.. Note:: This  will become default in the new version of QGIS 2.0
-
-8. :guilabel:`Select` on the **Locale** tab of the options menu
+8. Select the :guilabel:`Locale` tab.
 
 .. image:: /static/training/socialisation/018_locale.*
    :align: center
 
-9. :guilabel:`Check` *Override system locale*, scroll through all the
-   languages that QGIS have been translated into! We will stick with english
-   for this training, so no action is needed -
-   :guilabel:`Uncheck` *Override system locale*.
+9. Check :guilabel:`Override system locale`. You may choose any language 
+   that QGIS has been translated into. We will stay with English
+   for this tutorial, so no action is needed.
+   Uncheck :guilabel:`Override system locale`.
 
 .. image:: /static/training/socialisation/019_locale_select.*
    :align: center
 
 .. note::
-   |project_name| is dependent on Locale, but it has only been translated
-   into bahasa Indonesian so far.
-   World Bank is currently funding for the translation of |project_name| into
-   French and Portugal
+   |project_name| is dependent on the locale, but it has only been translated
+   into Bahasa Indonesian so far.
+   World Bank is currently funding the translation of |project_name| into
+   French and Portuguese.
 
-10. :guilabel:`Ok` in the bottom right corner of the Options window
+10. Click :guilabel:`OK` in the bottom right corner of the Options window.
 
 Installing Plugins
 ------------------
 
+Next we will install the two plugins used in this tutorial, |project_name| and
+OpenLayers, using the QGIS plugin repository.
+
 |project_name|
 ..............
 
-Installing |project_name| through the QGIS plugin repository
+.. note:: You must be connected to the internet for this section.
 
-.. note:: You must be connected to the internet for this section
+11. Go to :menuselection:`Plugins --> Manage and Install Plugins`. It may
+    take a couple of minutes for QGIS to contact its repository and show the
+    list of available plugins.
 
-11. Go to :menuselection:`Plugins --> Fetch Python Plugins...` This will take
-    a couple of minutes for QGIS to contact its repository and show the list of
-    plugins available
-
-12. Type :kbd:`inasafe` into the filter box
+12. Go to the :guilabel:`New` tab. Type :kbd:`inasafe` into the filter box
 
 .. image:: /static/training/socialisation/020_inasafe_plugin.*
    :align: center
 
-13. :guilabel:`Select` |project_name| and :guilabel:`Install plugin` - this
-    will take a couple of minutes for the plugin to download and install.
+13. Select |project_name| and click :guilabel:`Install plugin` - it
+    may take a couple of minutes for the plugin to download and install.
 
 14. A window should pop up saying: "Plugin installed successfully"
-    :guilabel:`Ok` and :guilabel:`Close` the *QGIS Python Plugin Installer*
+    Click :guilabel:`Ok` and click :guilabel:`Close` to exit the *QGIS Plugin Manager*
     window.
 
 15. You should now have an |project_name| panel on the right hand side of
@@ -210,18 +198,17 @@ Installing |project_name| through the QGIS plugin repository
 
 |project_name| also comes with a toolbar of its own!
 
-16. To retrieve the |project_name| toolbar, :guilabel:`Right Click` on the
-    top tool bar and :guilabel:`Recheck` **plugin**
-
 .. image:: /static/training/socialisation/022_inasafetoolbar.*
    :align: left
+
+16. To retrieve the |project_name| toolbar, right-click on the
+    top toolbar and check :guilabel:`InaSAFE`.
 
 =================================================   ========================
 **Symbol**                                          **Name**
 -------------------------------------------------   ------------------------
 .. image:: /static/general/icon_dock.*              Toggle Dock
 .. image:: /static/general/icon_keywords.*          Keyword Editor
-.. image:: /static/general/icon_reset.*             Reset Dock
 .. image:: /static/general/icon_options.*           Options
 .. image:: /static/general/icon_impactfunctions.*   Impact Functions Browser
 .. image:: /static/general/icon_minimumneeds.*      Minimum Needs Tool
@@ -229,50 +216,48 @@ Installing |project_name| through the QGIS plugin repository
 .. image:: /static/general/icon_batch.*             Batch Runner
 .. image:: /static/general/icon_save.*              Save Current Scenario
 .. image:: /static/general/icon_osm.*               OpenStreetMap downloader
+.. image:: /static/general/icon_merge.*             Impact Layer Merge
 =================================================   ========================
 
-.. Note:: Later we will explore and use these tools.  For more information
-  :doc:`../../user-docs/toolbar`
+.. Note:: Later we will explore and use these tools. For more information on the 
+  |project_name| toolbar see :doc:`../../user-docs/toolbar`.
 
 OpenLayers Plugin
 .................
 
-Installing OpenLayers through the QGIS plugin repository
+.. note:: To use the OpenLayers plugin you must have connection to the internet at all
+   times.
 
-.. note:: To use openlayers you must have connection to the Internet at all
-   times!
-
-
-17. Go to :menuselection:`Plugins --> Fetch Python Plugins`.
-    This will take a couple of minutes for QGIS to contact its repository and
+17. Go to :menuselection:`Plugins --> Manage and Install Plugin`.
+    It may take a couple of minutes for QGIS to contact its repository and
     show the list of plugins available.
 
 18. Type :kbd:`openlayers` into the filter box.
 
-19. :guilabel:`Select` *OpenLayer Plugin* then :guilabel:`Install plugin` -
-    this will take a couple of minutes for the plugin to download and install.
+19. Select OpenLayers Plugin and click :guilabel:`Install plugin` 
+    - it may take a couple of minutes for the plugin to download and install.
 
 20. A window should pop up saying: "Plugin installed successfully"
-    :guilabel:`Ok` and :guilabel:`Close` the *QGIS Python Plugin Installer*
+    Click :guilabel:`Ok` and click :guilabel:`Close` to exit the *QGIS Plugin Manager*
     window.
 
-21. Hover mouse over :menuselection:`Plugins --> OpenLayer Plugin`
+21. Go to :menuselection:`Plugins --> OpenLayers plugin`
 
 .. image:: /static/training/socialisation/023_openlayers.*
    :align: center
 
-22. :guilabel:`Select` *Add Bing Aerial layer*
+22. Select :guilabel:`Add Bing Aerial layer`.
 
 .. image:: /static/training/socialisation/024_aerial_bing.*
    :align: center
 
-.. note:: If you are familiar with Goggle Earth, navigating this imagery
+.. note:: If you are familiar with Google Earth, navigating this imagery
    should be very similar.
 
 **Activity:** Navigate to your home or office
 .............................................
 
-Using the navigation tools below, zoom into your home.
+Using the navigation tools below, zoom to your home.
 
 ==========================================  ============
 **Symbol**                                  **Name**
@@ -285,14 +270,16 @@ Using the navigation tools below, zoom into your home.
 .. image:: /static/general/icon_zoomnext.*  Zoom Next
 ==========================================  ============
 
-23. :guilabel:`Click` *zoom In*, draw a box (click and drag) over your country.
+23. Click the Zoom In button and draw a box (click and drag the mouse) over your 
+    country.
 
-24. :guilabel:`Click` *Pan Map*, shift the map so your country is in the
+24. Click the Pan Map button and drag the map so that your country is in the
     centre of the screen.
 
-.. Note:: If you make a mistake in your zooming, use *Zoom Last* tool.
+.. note:: If you make a mistake in your zooming, click the :guilabel:`Zoom Last` 
+   button to go back.
 
-25. Navigate to your own house or work
+25. Navigate to your own house or workplace.
 
 **Indonesia**
 
@@ -304,7 +291,10 @@ Using the navigation tools below, zoom into your home.
 .. image:: /static/training/socialisation/026_jakarta.*
    :align: center
 
-**Menara Thamrin**
+**Menara Thamrin**, a building in Jakarta
 
 .. image:: /static/training/socialisation/027_mt.*
    :align: center
+
+
+:ref:`Go to next module --> <raster-vs-vector>`

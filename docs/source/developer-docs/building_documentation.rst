@@ -5,7 +5,7 @@ Building the Documentation
 
 Building the documentation means that you must have inasafe-doc AND inasafe
 (-dev) cloned to your local computer because inasafe-doc takes some API
-Information out of inasafe-dev to Produce the API Documentation.
+Information out of inasafe-dev to produce the API Documentation.
 
 To do that you only have to enter this on the command line of a terminal::
 
@@ -24,9 +24,9 @@ All of the Documentation is written in reStructuredText (.rst) files.
 You can find an overview about rst at their webpage:
 http://docutils.sourceforge.net/rst.html
 
-Obviously you have to install docutils and as we heavily rely on `Sphinx
-<http://sphinx-doc.org/>`_ for compiling our Documentation you will also need
-Sphinx.
+Obviously you have to install docutils and as we heavily rely on
+`Sphinx <http://sphinx-doc.org/>`_ for compiling our Documentation you will
+also need Sphinx.
 
 By the time of writing the minimum version numbers that you have to use are:
 
@@ -45,12 +45,16 @@ at the command line.
 pip itself should be available as a package in linux (depending on the
 distribution you use).
 
-pre_translate.sh
-git commit new translation files
-scripts/create-transifex-resources.sh
-tx pull
-post_translate.sh
-git commit
+There are several other files that will help you to update and build the
+documentation.
+They are all located in the :file:`scripts` directory.
+::
+
+  pre_translate.sh will create and prepare the translations
+  create-transifex-resources.sh to create translation files for other
+     languages out of the source files
+
+A closer look in how to use this tools can be read in the next chapter.
 
 Building documentation locally
 ..............................
@@ -62,7 +66,8 @@ you should basically follow this workflow:
 Inside the inasafe-doc directory do::
 
   tx pull           (for pulling new translations)
-  git commit        to update the local translations with that from transifex
+                    to update the local translations with that from transifex
+  git commit        to commit your local changes into your local branch
   git push          (not necessary to push it up to the repository esp. if
                      you do not have write access to master)
   ./scripts/post-translate.sh (actually creates the documentation in the

@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: inasafe-develop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"PO-Revision-Date: 2014-03-04 10:10+0000\n"
+"Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/"
+"language/fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# 22704584cbb144b4aa8d18f75b46f0a9
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:9
+msgid "Module 4: Planning Evacuation Route Based on Hazard Information"
+msgstr ""
+
+# 91b405c79e7b4837bd1997f9892c45e8
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:11
+msgid "**Learning Objectives**"
+msgstr "**Objectifs d'apprentissage**"
+
+# fd5cfab3c153447c9cadcb52da1cd7cf
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:13
+msgid "Explain the concept of shortest path and fastest route"
+msgstr ""
+
+# 6c3348b8ccba4ddbbe09a60c9899ad95
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:14
+msgid "Using  Road Graph plugin"
+msgstr ""
+
+# dbc3d7243c224e31a4fcf81c2c7aa6d2
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:15
+msgid "Set up speed and road direction"
+msgstr ""
+
+# 6f61b6ad32cd488999897fae7f9254b7
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:16
+msgid "Determine start and destination point"
+msgstr ""
+
+# b5ec2698e228422bb16754e94f2c1958
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:17
+msgid "Conduct route analysis and selection"
+msgstr ""
+
+# d37553faeb0a400fa137f1e7785b8274
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:19
+msgid ""
+"By now you should have a pretty good understanding of how |project_name| "
+"works and its operations."
+msgstr ""
+
+# 461642b748df4a4c8c6049516f489647
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:22
+msgid ""
+"You know how to add the appropriate layers, and how to define keywords to "
+"the layers so that |project_name| can recognize them appropriately. Now that "
+"we can use |project_name| effectively to run scenario analyses, we will look "
+"at other QGIS functionality that will help us in preparing contingency plans."
+msgstr ""
+
+# 2eff21af75574530934780b11b9cc883
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:28
+msgid ""
+"In this Module, we will learn how to perform a GIS analysis in order to "
+"determine an appropriate evacuation route in the event of a disaster."
+msgstr ""
+
+# 2eddd67b84704f329114ed8f95a40c6e
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:31
+msgid ""
+"The term **fastest route** indicates the route a person can take between "
+"point A and point B that will allow them to cover the distance in the least "
+"amount of time."
+msgstr ""
+
+# 9b921ea1af974af2a1c80aec6c43927f
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:35
+msgid ""
+"Similarly, shortest path indicates the route that will allow a person to get "
+"from point A to point B with the least distance traveled. In theory, this "
+"would be a straight line between point A and point B, but in reality this is "
+"impractical, because traveling in a straight lines means climbing hills and "
+"going around buildings and fences.  Of course this is why we use roads, and "
+"why we calculate fastest and shortest routes using roads."
+msgstr ""
+
+# bde6f4ae0ba640abaec39d9b9d21de34
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:43
+msgid ""
+"We will use the Road Graph plugin in this Module, which does just that. If "
+"we provide two points, the plugin is able to calculate either the fastest "
+"route or the shortest path between them."
+msgstr ""
+
+# 2302446edb1d4b09a9827b9212280c03
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:47
+msgid "**1. Road Graph Plugin**"
+msgstr ""
+
+# c522247081b14c1d8d958337fb5b6f0e
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:49
+msgid ""
+"We will be continuing with the previous example, which you should have "
+"saved. Open the project in QGIS. We won’t be using the |project_name| plugin "
+"in this Module, so you may close the panel if you like."
+msgstr ""
+
+# b5144291500e4b2c91fcb94e3bfda172
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:54
+msgid ""
+"Also, we will be using a pre-prepared roads layer in this section, which may "
+"be slightly more detailed than OpenStreetMap. Remove the planet_osm_roads "
+"layer and add Jalan_Sirahan, which is located in the qgis/Sirahan/ "
+"directory. You should have the following layers:"
+msgstr ""
+
+# 5df3fe4a29a64c85b4e1773534628963
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:63
+msgid ""
+"We will be using a plugin that has already come installed with QGIS. Right-"
+"click on the toolbars to see which toolbars are activated, and select :"
+"guilabel:`Shortest path`."
+msgstr ""
+
+# 29496267ef664203afcaa34afd938598
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:70
+msgid ""
+"A new plugin window will appear in your project window that looks like this:"
+msgstr ""
+
+# abf5849abe0a476e8330fef16b5d4b64
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:75
+msgid "**2. Edit Plugin Settings**"
+msgstr ""
+
+# 9fa691ea5d1d409b8e0b382032fb5dce
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:77
+msgid ""
+"We must edit some settings in order for the :guilabel:`Shortest path` plugin "
+"to work. Go to :menuselection:`Vector > Road graph > Settings`."
+msgstr ""
+
+# 1cdc00583dfc4e899dd710ea4e74397d
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:84
+msgid "Make sure that “hour” and “kilometer” are selected as the units."
+msgstr ""
+
+# 8296c50f9c9c4edfb66ec8b4d4bcf410
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:85
+msgid ":guilabel:`Topology tolerance` should be set to 4."
+msgstr ""
+
+# bb29ebca0c294756a59a9c56869f74d9
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:86
+msgid ""
+"On the :guilabel:`Transportation layer` tab, select Jalan_Sirahan as the "
+"layer. This layer contains the streets that the plugin will use to calculate "
+"routes. The rest will remain the same. It should look like this:"
+msgstr ""
+
+# 22628e3402f74e86a22fd214e02c02f4
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:93
+msgid ""
+"On the :guilabel:`Default settings` tab, we must fill in the direction and "
+"speed. Choose “two-way direction” and 25 for the speed (meaning 25 km/hr). "
+"This assumes that traffic can go in both directions and a maximum speed of "
+"25 km/hr."
+msgstr ""
+
+# ed6c4c3c00314c3bbdeb68dff6412027
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:100
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+# 8bc58836f3e54622bf7266b4cf5e94a5
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:102
+msgid "**3. Choose Start and Destination Points**"
+msgstr ""
+
+# 77a9728ebc0242949f046715aa505afa
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:104
+msgid ""
+"The Road Graph plugin calculates either the shortest or fastest route "
+"between two points, so we need to provide a start point and an end point for "
+"an evacuation route."
+msgstr ""
+
+# 4c5e6de120a949c09900b6ba2c69207a
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:108
+msgid ""
+"Of course an evacuation route should be for all people in an area, but we "
+"can experiment with different start points and see if evacuation routes will "
+"be different in different areas."
+msgstr ""
+
+# 2c829c7c307241d188ab8dc53c623501
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:112
+msgid ""
+"On the Road Graph panel, click on the plus button next to :guilabel:`Start` "
+"and then click somewhere on the map to indicate the first point of your "
+"evacuation route. This would be the initial point for the evacuation route "
+"in the time of a disaster."
+msgstr ""
+
+# b421ee81f2cd41cb8c25d6f8cb6e110d
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:120
+msgid ""
+"Your starting point will be marked as a green point and the coordinates of "
+"the point will be recorded in the :guilabel:`Start` input box."
+msgstr ""
+
+# db3bfcab9fc1420ea9b730bd8740a11d
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:122
+msgid ""
+"Now we need to assign the destination of our evacuation route. Where will "
+"people be evacuated to? Because this is an example, we don’t have a great "
+"idea of where an appropriate place would be. We might use GIS to determine "
+"appropriate locations, which would most likely be high ground in the event "
+"of a flood. For this example, we will choose a destination at the SouthEast "
+"corner of the village."
+msgstr ""
+
+# fc81a532bec54a1788227477b66bbb13
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:129
+msgid ""
+"Click the plus sign next to :guilabel:`Stop` and click somewhere on the map. "
+"The destination will be marked with a red point."
+msgstr ""
+
+# f9948b72990f4de288480431c10f3f69
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:135
+msgid ""
+"You can choose “Length” or “Time” next to Criterion. This determines whether "
+"Road Graph will look for shortest distance or shortest amount of time."
+msgstr ""
+
+# a3224b0ffbc147d691ce470aac657e4d
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:138
+msgid "Click :guilabel:`Calculate`"
+msgstr ""
+
+# 3c21d55f568a491f95146dfd5dd76933
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:139
+msgid ""
+"The time and distance required for the evacuation route will be displayed."
+msgstr ""
+
+# 6df0d84c2d8942b59c14b4273c9d33a9
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:144
+msgid ""
+"In this example, the length of the fastest route between our two points is "
+"about 1.97 kilometers and the travel time is 0.0788 hours, which is about 5 "
+"minutes. The time in our example is determined by the distance and our "
+"default speed of 25 km/hr. The speed can be changed, and can even be set to "
+"different amount for each segment of road."
+msgstr ""
+
+# 39db7e9e04f94b84bc28302c94f61109
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:150
+msgid "The route is also drawn on our map"
+msgstr ""
+
+# 6d7c2465766149449de993f99d44d76e
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:155
+msgid ""
+"To save the evacuation route as a separate layer, click on :menuselection:"
+"`Export > New temporary layer`, and click :guilabel:`OK`."
+msgstr ""
+
+# 2ccbf19620074eee95991498a5e5d142
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:161
+msgid ""
+"You may need to choose a CRS for the new layer. UTM zone 49S should work "
+"fine."
+msgstr ""
+
+# b7376003d12e4b0f926314c6e1d8aeed
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:163
+msgid ""
+"The layer will be added to your Layers list as shortest_path, but you still "
+"need to save the layer."
+msgstr ""
+
+# 2b85ddb04b494f3a8ea09002e8120a88
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:165
+msgid "To save, right-click on the layer and click :guilabel:`Save as…`"
+msgstr ""
+
+# bfe8a050caf84880a18f70a9c8b3143c
+#: ../../source/training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:167
+msgid ""
+"In this module we’ve learned how to calculate the shortest distance between "
+"two points using the Road Graph plugin. Using this you can easily determine "
+"evacuation routes from various areas. Evacuation routes are important for "
+"contingency plans, and those living in threatened areas can be educated with "
+"the quickest and safest routes to take in the event of an emergency."
+msgstr ""

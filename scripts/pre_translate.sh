@@ -1,7 +1,7 @@
 #!/bin/bash
 
 INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
-export QGIS_PREFIX_PATH=/usr/local/qgis-2.0/
+export QGIS_PREFIX_PATH=/usr/local/qgis-2.6/
 
 if [ -d $INASAFE_DEV_PATH ]
 then
@@ -13,7 +13,7 @@ else
 fi
 
 export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
-export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$INASAFE_DEV_PATH:$PYTHONPATH
+export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$QGIS_PREFIX_PATH/share/qgis/python/plugins:$INASAFE_DEV_PATH:$PYTHONPATH
 export QGIS_DEBUG=0
 export QGIS_LOG_FILE=/dev/null
 export QGIS_DEBUG_FILE=/dev/null
@@ -26,7 +26,7 @@ SOURCE=source
 # Name of the dir containing static files
 STATIC=static
 
-LOCALES='id'
+LOCALES='id fr'
 
 if [ $1 ]; then
   LOCALES=$1

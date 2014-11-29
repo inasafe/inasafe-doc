@@ -36,10 +36,10 @@ Details
 
 No documentation found
 
-Docstring
+Doc String
 ----------
 
-Risk plugin for volcano building impact
+Risk plugin for volcano building impact.
 
     :author AIFDR
     :rating 4

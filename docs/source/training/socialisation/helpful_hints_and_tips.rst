@@ -2,47 +2,41 @@
 
 Helpful Hints And Tips
 ======================
-**Objectives:**
 
-* To read through the |project_name| option menu
-* To know where to go for help
-* To go through some frequently asked questions
+**Learning Objectives:**
 
-**Expected Results:**
+* Customise the |project_name| option menu
+* Know where to go for help
+* Review frequently asked questions
 
-Participants are able to:
-
-* customise the |project_name| option menu
-* know where to go for help
-
-You have now gone through |project_name| using 4 different natural hazards,
-changing a variety of parameters and analysing the results. This chapter has
+You have now gone through |project_name| using four different natural hazards,
+changing a variety of parameters and analysing the results. This module has
 been designed to help you understand a little more about |project_name| as
 well as where you can go for help.
 
 |project_name| option menu
 --------------------------
 
-The detailed description of the |project_name| Options can be found in the
-:ref:`tb_options` Section of the User Manual.
+A detailed description of the |project_name| Options can be found in the
+:ref:`toolbar_options` section of the User Manual.
 
-We encourage you to check (in addition to the default ones):
+It is recommended to check (in addition to the defaults) the boxes next to:
 
-* When clipping, also clip features (e.g. will clip polygon smaller)
-* Help to improve |project_name| by submitting errors to a remote server
+    * *When clipping, also clip features (i.e. will clip polygon smaller)*
+    * *Help to improve InaSAFE by submitting errors to a remote server*
 
 |project_name| Website
 ----------------------
 
-This manual is by no far the only documentation on |project_name|.  Within
-the |project_name| website you can find not only documentation on training,
-but all user documentation and developer documentation.  This website is also
-updated with every new release.
+This tutorial is not the only documentation on |project_name|. Within
+the |project_name| website you can find not only more training documentation,
+but all user and developer documentation. This website is
+updated with each new release.
 
 .. image:: /static/training/socialisation/077_website.*
    :align: center
 
-Click on the :guilabel:`Content` to find out more
+Click on the :guilabel:`Table of Contents` to see all materials.
 
 .. image:: /static/training/socialisation/078_websitedoc.*
    :align: center
@@ -50,19 +44,19 @@ Click on the :guilabel:`Content` to find out more
 Frequently Asked Questions
 --------------------------
 
-**Do I need to pay to use InaSAFE?**
+**Do I need to pay to use** |project_name| ?
 No, the software is completely Free and Open Source.
 
-**What license is InaSAFE published under?**
-|project_name| is published under the GPL version 3 license,
+**What licence is** |project_name| **published under?**
+|project_name| is published under the GPL version 3 licence,
 the full text of which is available at www.gnu.org/licenses/gpl-3.0.txt.
-Under the terms of the license of you may freely copy,
+Under the terms of the licence of you may freely copy,
 share and modify the software, as long as you make it available under the
-same license.
+same licence.
 
 **How is the project funded?**
 The project is being developed for the good of humanity and has been jointly
-developed by |BNPB|, AusAid & the World Bank.
+developed by |BNPB|, |GoA| & the World Bank.
 
 **I found a bug, how should I report it?**
 We manage the project issues using a GitHub issue tracker. The |project_name|
@@ -77,27 +71,29 @@ about it, using the same procedure as for bug reporting.
 Otherwise email inasafe-users@googlegroups.com
 
 **Where do I get Hazard and Exposure data from?**
-As explained in |project_name| functionality chapter (page 13),
-you are able to get open exposure data from  www.asiapop.org for population
-and  from OpenStreetMap for structures (however you may need to still
-digitise the structures go to www.learnosm.org for more details). To download
-OSM data see Appendix :guilabel:`Getting OpenStreetMap Data` (page 56).
+Some data sources are described in the section on Functionality and Datasets.
+You can get open exposure data from  http://www.asiapop.org for population
+and from OpenStreetMap for building structures (however you may need to still
+digitise the structures) To download OSM data use the |project_name| 
+OSM Download tool as described in :ref:`other-hazards`.
 For hazard information it is best to approach your government science
-agencies or local universities to model earthquake,
-tsunami or floods. However if it floods regularly in your region you could
+agencies or local universities to model earthquakes,
+tsunamis or floods. If it floods regularly in your region you could
 also develop a community flood-prone footprint.
 
 **Why does the plugin not show up in my QGIS Plugin Manager?**
 One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not
-get the new plugin repo added to your repo list. To fix this you can do:
+get the new plugin repo added to your repo list. To fix this you can do 
+the following:
 
-#. open :guilabel:`QGIS`
-#. Go :guilabel:`Plugins` -> Fetch Python Plugins
-#. click :guilabel:`Repositories` tab
-#. click :guilabel:`add`
-#. Name: Official QGIS Repository
-#. Url: http://plugins.qgis.org/plugins/plugins.xml
-#. :guilabel:`Save` it and the plugin repo list should update. If it does not,
-   close and open QGIS to force an update.
-#. In the :guilabel:`python plugin manager` main tab now you should find
-   |project_name| available
+#. Open :guilabel:`QGIS`.
+#. Go to :menuselection:`Plugins -> Fetch Python Plugins`.
+#. Click the :guilabel:`Repositories` tab.
+#. Click :guilabel:`Add`.
+#. Enter next to Name: :kbd:`Official QGIS Repository`.
+#. Enter next to Url: :kbd:`http://plugins.qgis.org/plugins/plugins.xml`.
+#. Click :guilabel:`Save` and the plugin repo list should update. If it does not,
+   close and re-open QGIS to force an update.
+#. In the Python Plugin Manager main tab now you should find
+   |project_name| available.
+

@@ -13,11 +13,13 @@ The latest version of |project_name| can be found following the
 
 **I found a bug, how should I report it?**
 
-We manage the project issues using a GitHub issue tracker. The
+We manage the project issues using a GitHub issue tracker.
+The
 `InaSAFE <https://github.com/AIFDR/inasafe/issues?direction=desc&sort=created&state=open>`_
 issue tracker is open to everyone, though you will first need to register a
-(free) account on GitHub to use it. You can find the GitHub self-registration
-page `here <https://github.com/signup/free>`_.
+(free) account on GitHub to use it.
+You can find the GitHub self-registration page
+`here <https://github.com/signup/free>`_.
 
 **Do I need to pay?**
 
@@ -35,7 +37,7 @@ software, as long as you make it available under the same license.
 **How is the project funded?**
 
 The project is being developed 'for the good of humanity' and has been
-jointly developed by |BNPB|, |DFATAusAid| & the
+jointly developed by |BNPB|, |GoA| & the
 `World Bank <http://www.worldbank.org/>`_.
 
 **Could we request a new feature?**
@@ -59,43 +61,18 @@ For raster data, use gdalwarp, for example
 
    gdalwarp -t_srs EPSG:4326 <source>.tif <target>.tif
 
-For vector data use ogr2ogr. For example from TM-3 zone 48.2
+For vector data use ogr2ogr.
+For example from TM-3 zone 48.2
 ::
 
    ogr2ogr -s_srs EPSG:23834 -t_srs EPSG:4326 <target>.shp <source>.shp
 
-**How do I get Open Street Map building data?**
 
-For Indonesia, you can download latest collections at
-`data.kompetisiosm.org <http://data.kompetisiosm.org>`_. or you can add our
-Open Street Map building PostGIS mirror to |project_name|:
+**How do I get OpenStreetMap building data?**
 
- * Add PostGIS layer with host=203.77.224.77, database=osm, username=aifdr,
-   port 5432, SSL mode=disable
- * Select view named vw_planet_osm_polygon
- * Build query: upper(geometrytype("way")) IN ('POLYGON',
-   'MULTIPOLYGON') AND BUILDING != ''
-
-Another way, you can export osm data from HOT Exports:
- * Go to `Preset JOSM <http://josm.openstreetmap.de/wiki/Presets>`_.
- * Find and download `Building` preset created by Kate Chapman and save it
- * Go to HOT Exports website `www.hot-export.geofabrik.de
-   <http://hot-export.geofabrik.de>`_.
- * Go to `New Job` menu in the upper right of the page
- * Select region, currently only 3 regions are supported by HOT Export (Haiti,
-   Indonesia, Africa)
- * Fill `Job Name` and `Description`
- * Select area that you want to export by zooming or panning the map
- * You can choose smaller area by clicking `Select Smaller Area` and creating
-   rectangle in the map or filling min/max longitude/latitude value for it
- * Click `Save` if your map is ready
- * Upload JOSM Preset File which have been downloaded before, and click `Save`
- * Your job is created and you have to wait until it finish. It'll take some
-   minutes if your map is big one
- * When the job is finished, there will be a table contains files that can be
-   downloaded
- * Download the `ESRI Shapefile (zipped)`
- * Extract it on your computer, and the data will be ready to use
+This tool will fetch building ('structure') and highway ('road') data from the
+OpenStreetMap project for you.
+For more information see :ref:`openstreetmap_downloader` section
 
 **How do I take screen capture e.g. for use in a presentation?**
 
@@ -108,7 +85,6 @@ Convert to other formats using mencoder, e.g
    vcodec=mpeg4:vpass=1 -of lavf -o yogya_analysis.avi
 
 or
-
 ::
 
    mencoder -idx yogya_analysis-6.ogv -ovc lavc -oac lavc -lavcopts \
@@ -121,11 +97,11 @@ For vector to raster conversion, use gdal_rasterize utility, for example
 
    gdal_rasterize -a <attribute_name> -l <source>.shp <destination>.tif
 
-
 * Why does the plugin not show up in my QGIS Plugin Manager?
 
 One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not
-get the new plugin repo added to your repo list. To fix this you can do:
+get the new plugin repo added to your repo list.
+To fix this you can do:
 
 * open QGIS
 * Go :menuselection:`Plugins --> Fetch Python Plugins`
@@ -133,24 +109,29 @@ get the new plugin repo added to your repo list. To fix this you can do:
 * Click :guilabel:`add`
 * :guilabel:`Name`: Official QGIS Repository
 * :guilabel:`Url`: http://plugins.qgis.org/plugins/plugins.xml
-* Save it and the plugin repo list should update. If it doesn't,
-  close and open QGIS to force an update.
+* Save it and the plugin repo list should update.
+  If it doesn't, close and open QGIS to force an update.
 * In the python plugin manager main tab now you should find |project_name|
   available
 
 **How do I fix KeywordDbError on Windows?**
 
-It’s an issue related to permission issue. Normally, it occurs when
-the keyword.db is not writable by current user. The thing that you have to do
-is re-run QGIS as administrator or re-install QGIS as administrator.
+It’s an issue related to permission issue.
+Normally, it occurs when the keyword.db is not writable by current user.
+The thing that you have to do is re-run QGIS as Administrator or re-install
+QGIS as Administrator.
 
-Another way to solve it is deleting the registry of InaSAFE. You can do it
-by opening :guilabel:`regedit` (Registry Editor). To open regedit, you need
-to search it in :guilabel:`Start Menu` (it is usually not shown in Start
-Menu). Open regedit. Find inasafe registry under :menuselection:`My Computer
---> Software --> QuantumGIS --> QGIS --> PythonPlugins`. After that,
-right click on the inasafe, and click :guilabel:`Delete`. Restart QGIS and
-try to run InaSAFE again to see if it works.
+Another way to solve it is deleting the registry of |project_name|.
+You can do it by opening :guilabel:`regedit` (Registry Editor).
+To open regedit, you need to search it in :guilabel:`Start Menu` (it is
+usually not shown in Start Menu).
+
+Open regedit.
+
+Find inasafe registry under
+:menuselection:`My Computer--> Software --> QGIS --> QGIS --> PythonPlugins`.
+After that, right click on the inasafe, and click :guilabel:`Delete`.
+Restart QGIS and try to run |project_name| again to see if it works.
 
 Please see `InaSAFE issue #459 <https://github.com/AIFDR/inasafe/issues/459>`_
 , `InaSAFE issue #564 <https://github.com/AIFDR/inasafe/issues/564>`_, and

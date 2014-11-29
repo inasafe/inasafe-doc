@@ -1,7 +1,7 @@
 .. _interm_qgis_inasafe:
 
-Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level
-===============================================================
+Unit 4: Data Analysis Using QGIS and |project_name| Intermediate Level
+======================================================================
 
 .. toctree::
    :maxdepth: 1

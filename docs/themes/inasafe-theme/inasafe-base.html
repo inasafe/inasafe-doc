@@ -3,9 +3,9 @@
 {# Sphinx also brings it's own jquery, but this one is too old for bootstrap.
 TODO get rid of the one from Sphinx #}
 {# we copied the bootstrap/jquery.js to the _static directory to override the
-sphinx jquery. The native
-jquery.js from sphinx is a 1.4 version, while bootstrap uses 1.8 version
-and two versions together clash (besides the bootstrap stuff, also the
+sphinx jquery.
+The native jquery.js from sphinx is a 1.4 version, while bootstrap uses 1.8
+version and two versions together clash (besides the bootstrap stuff, also the
 sphinx search stuff)  #}
 
 {#% set script_files = script_files + ['_static/bootstrap/js/jquery.js'] %#}
@@ -100,8 +100,6 @@ TODO: remove this, or make this obsolete ?? #}
 {# overriding relbar1: NO relbar above the content we make it manually below #}
 {% block relbar1 %}
 {% endblock %}
-
-
 
 {% block content %}
     {# bootstrap stuff from fluid.html example #}
@@ -199,7 +197,8 @@ TODO: remove this, or make this obsolete ?? #}
             This document is licensed under a
             <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a><br>
             <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
-            Copyright 2013, BNPB/Australian Government/World Bank.
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
         </div>
     </div>
 {% endblock %}{# content block end #}

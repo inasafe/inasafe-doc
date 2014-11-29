@@ -14,26 +14,30 @@ About Toolkit
 
 **Intermediate level OpenStreetMapWorkshop Guide** is designed to prepare
 facilitator to be able to organize intermediate training in terms of editing
-OSM data. The material which is included will prepare you to organize
-training for participant who already has experience with mapping and
-editing map. The material was compiled for this training assume that all
-the participants already attended **Beginner OpenStreetMap Training** and
-already understand and familiar with basic editing techniques at JOSM.
+OSM data.
+The material which is included will prepare you to organize training for
+participant who already has experience with mapping and editing map.
+The material was compiled for this training assume that all the participants
+already attended **Beginner OpenStreetMap Training** and already understand
+and familiar with basic editing techniques at JOSM.
 
 When conducting a workshop of OpenStreetMap, many factors must be
 considered, including how much time and resources owned,
 number of participants, and the technical capabilities of the participants
-themselves. This guide will help you to prepare workshop with different
-types of participants. However, this all assumes that participants for
-Intermediate workshop has had experience working with the OSM. Some
-participants may be more adept than the others, and at this intermediate
-level workshop, You will likely see a bigger gap on this training in terms
-of ability and experience of the participants. Remember,
-it is important to keep the participant who has been adept at OpenStreetMap
-materials, but also not to leave participants who have not been too adept.
+themselves.
+This guide will help you to prepare workshop with different types of
+participants.
+However, this all assumes that participants for Intermediate workshop has had
+experience working with the OSM.
+Some participants may be more adept than the others, and at this intermediate
+level workshop, you will likely see a bigger gap on this training in terms
+of ability and experience of the participants.
+Remember, it is important to keep the participant who has been adept at
+OpenStreetMap materials, but also not to leave participants who have not been
+too adept.
 Placing participants in pairs sometimes can be a good idea,
-that where one participant has been more proficient and her partner are
-still not proficient.
+that where one participant has been more proficient and her partner are still
+not proficient.
 
 Purpose for this guide is to preparing you, the facilitator,
 to be able to teach participants successfully according to
@@ -44,12 +48,13 @@ Workshop Purpose
 The purpose of this training is to enhance the capabilities and skills of
 the participants in performing editing OSM data on JOSM,
 include intermediate editing techniques and emphasize on the quality of the
-data. Intermediate level topics are also included in this workshop that is
-working with **the private datastore** to create and make use of the
-information on the Wiki OpenStreetMap.
+data.
+Intermediate level topics are also included in this workshop that is working
+with **the private datastore** to create and make use of the information on
+the Wiki OpenStreetMap.
 
-The purpose of that already explained above can be elaborated into
-competency standards and  basic competencies  as follows.
+The purpose of that already explained above can be elaborated into competency
+standards and  basic competencies  as follows.
 
 *Standard Competency*
 *********************
@@ -102,9 +107,9 @@ Tools
 Schedules
 ^^^^^^^^^
 Below is the outline for a five-day training schedule that has been tested
-to several different groups in several areas in Indonesia. You could just
-provide a variety of changes that might be more useful depending on the
-various factors that have been discussed before.
+to several different groups in several areas in Indonesia.
+You could just provide a variety of changes that might be more useful
+depending on the various factors that have been discussed before.
 
 Day I:
 ******
@@ -172,6 +177,7 @@ Day III:
 
 **Session 1**
 ^^^^^^^^^^^^^
+
 Advances Editing
 ^^^^^^^^^^^^^^^^
 Time : 4 hours
@@ -296,16 +302,20 @@ FAQ (Frequently Asked Question)
 *******************************
 
 **I have set the building size, but why it only shows as a line not a polygon?**
-It's because the zoom level problem. Try to zoom in into that line. It will
-show the building after the proper zoom.
+
+It's because the zoom level problem.
+Try to zoom in into that line.
+It will show the building after the proper zoom.
 
 **I want create a circle, but why I got a very huge circle with 'create a circle' tool from utilsplugins2 tool?**
+
 It's because when we want to create a circle we must add a way with 2 nodes.
 If that way have more than 2 nodes, the result of the circle will be very big.
 
 
 **Session 2**
 ^^^^^^^^^^^^^
+
 Quality Assurance
 ^^^^^^^^^^^^^^^^^
 Time    :   4 Hours 15 minutes
@@ -318,20 +328,20 @@ Basic Competency
 Indicator
 *********
 1. Applying editing tips and standardization presets to ensure the quality of
-   the resulting data
-2. Using validation tools in JOSM
-3. Using online validation tool (keepright)
+   the resulting data.
+2. Using validation tools in JOSM.
+3. Using online validation tool (keepright).
 
 Outcome
 *******
-OpenStreetMap data quality became better weather the use of preset or
-building that already mapped
+OpenStreetMap data quality becomes better weather the use of preset or
+buildings that are already mapped.
 
 Core Material
 *************
 **Quality Assurance**
 
-1. Error dan warnings
+1. Errors and warnings
 2. Validation Tools
 3. Tasking Manager
 4. Editing Tips
@@ -392,6 +402,7 @@ Activities
 
 **Session 3**
 ^^^^^^^^^^^^^
+
 Conflict Resolution when uploading OSM Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time    :   2 Hours
@@ -402,9 +413,10 @@ Basic Competency
 
 Indicator
 *********
-1. Explain the reason why conflict occurs when uploading OSM data
-2. Resolving conflict when uploading OSM data
-3. Explain how to avoid conflict when uploading OSM data
+
+1. Explain the reason why conflict occurs when uploading OSM data.
+2. Resolving conflict when uploading OSM data.
+3. Explain how to avoid conflict when uploading OSM data.
 
 Outcome
 *******
@@ -414,10 +426,9 @@ Core Material
 *************
 **Resolving conflict when uploading OSM data**
 
-1. Cause of conflict when uploading OSM data
-2. Resolve conflict when uploading OSM data
-3. How to avoid conflict when uploading OSM data
-
+1. Cause of conflict when uploading OSM data.
+2. Resolve conflict when uploading OSM data.
+3. How to avoid conflict when uploading OSM data.
 
 Activities
 **********
@@ -465,14 +476,18 @@ Frequently Asked Question
 *************************
 
 **How to avoid conflict?**
+
 You can try to divide your work area if in the one time there were two or
 more user digitizing in the same area.
 
 **What is the meaning of the green, yellow, and red colors from the node type conflicts?**
+
 The green color means that the nodes are also in the OSM server and in the
-same order. The yellow color means that the nodes are also in the OSM server
-but not the same order. While the red color means that the nodes just in one
-version, whether it is the version will be uploaded or the OSM server.
+same order.
+The yellow color means that the nodes are also in the OSM server but not the
+same order.
+While the red color means that the nodes just in one version,
+whether it is the version will be uploaded or the OSM server.
 
 **Session 4**
 ^^^^^^^^^^^^^
@@ -487,24 +502,25 @@ Basic Competency
 
 Indicator
 *********
-1. Explain definition and a tag function
-2. Explain definition and a xml function
-3. Explain definition and a key and value function
-4. Create presets
-5. Enter a preset file to JOSM
-6. Apply new presets to object
+1. Explain definition and a tag function.
+2. Explain definition and a xml function.
+3. Explain definition and a key and value function.
+4. Create presets.
+5. Enter a preset file to JOSM.
+6. Apply new presets to an object.
 
 Outcome
 *******
-Presets can be used for the interest of mapping
+
+Presets can be used for the interest of mapping.
 
 Core Material
 *************
 **XML and presets in JOSM**
 
-1. Tag and Presets
-2. Introduction XML
-3. JOSM presets file
+1. Tag and Presets.
+2. Introduction XML.
+3. JOSM presets file.
 
 Activities
 **********
@@ -580,6 +596,7 @@ Activities
 
 **Session 5**
 ^^^^^^^^^^^^^
+
 Using Private Datastore
 ^^^^^^^^^^^^^^^^^^^^^^^
 Time    : 2 Hours
@@ -590,20 +607,21 @@ Basic Competency
 
 Indicator
 *********
-1. Explain the private data store  function
-2. Explain the data type can be published and the data is private
-3. Install the plug-in private data store  into JOSM
+1. Explain the private data store function.
+2. Explain the data type can be published and the data is private.
+3. Install the plug-in private data store  into JOSM.
 4. Using the plug-in private data store in the shorting of public data
-   and private
-5. Access the online datastore
+   and private.
+5. Access the online datastore.
 
 Outcome
 *******
-1. The result of mapping by using the private datastore
-2. Additional project in HOT Datastore website
+1. The result of mapping by using the private datastore.
+2. Additional project in HOT Datastore website.
 
 Core Material
 *************
+
 **Using Private Datastore**
 
 1. Private data store
@@ -682,17 +700,18 @@ Activities
 | team and prepare a server if possible.                            |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-Common Problem :
-****************
+Common Problems
+***************
 
-- Problem with internet connection if connection slow make the practice
-  session become longer
-- The online private datastore server cant be used together cause of limited
-  bandwidth, so the participants are usually asked to not practice and just
-  see the facilitator to practice.
+- Problem with internet connection, if the connection is slow it will make the
+  practice session become longer
+- The online private datastore server cant be used together because of
+  the limited bandwidth, so the participants are usually asked to not
+  practice and just see the facilitator to practice.
 
 **Session 6**
 ^^^^^^^^^^^^^
+
 Wiki OpenStreetMap
 ^^^^^^^^^^^^^^^^^^
 Time    :  2 Hours
@@ -714,7 +733,8 @@ Indicator
 
 Outcome
 *******
-The Wiki page about the mapping project or the area contingency planning profile
+The Wiki page about the mapping project or the area contingency planning
+profile.
 
 Core Material
 *************

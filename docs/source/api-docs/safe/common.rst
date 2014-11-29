@@ -4,16 +4,21 @@ Package::safe.common
 .. toctree::
    :maxdepth: 2
 
-   common/polygon
-   common/version
-   common/converter
-   common/exceptions
-   common/tables
-   common/signals
-   common/interpolation1d
+   common/qgis_interface
    common/utilities
-   common/interpolation
-   common/geodesy
-   common/dynamic_translations
+   common/interpolation1d
+   common/qgis_vector_tools
+   common/gdal_ogr_tools
+   common/qgis_raster_tools
    common/numerics
+   common/geodesy
+   common/polygon
+   common/custom_logging
+   common/interpolation
+   common/version
+   common/signals
+   common/tables
+   common/exceptions
    common/interpolation2d
+   common/dynamic_translations
+   common/minimum_needs

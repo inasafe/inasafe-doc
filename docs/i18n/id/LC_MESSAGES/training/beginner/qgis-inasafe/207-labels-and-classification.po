@@ -1,54 +1,58 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# 
+#
 # Translators:
-# adissadis <adz.only@gmail.com>, 2014
-# dewisulistio <dewi.sulistio@gmail.com>, 2013
-# wulankhairunisa <wulan.khairunisa@gmail.com>, 2013
-# yantisa <yantisa@gmail.com>, 2014
+# adityo dwijananto <adz.only@gmail.com>, 2014
+# Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2013
+# elida nurrohmah <uswatunkh21@yahoo.com>, 2014
+# Wulansari Khairunisa <wulan.khairunisa@gmail.com>, 2013
+# Yantisa Akhadi <yantisa@gmail.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe\n"
+"Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-01 16:48\n"
-"PO-Revision-Date: 2014-01-07 04:51+0000\n"
-"Last-Translator: adissadis <adz.only@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/language/id/)\n"
+"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"PO-Revision-Date: 2014-03-19 09:16+0000\n"
+"Last-Translator: Emir Hartato <emir.hartato@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
+"develop/language/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# 5ae0f4f97060481aa6120c820509558c
+# 2ce4946727f64cdba35ddcfb7183021d
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:8
 msgid "Module 7: Labels and Classification"
 msgstr "Modul 7: Label dan Klasifikasi"
 
-# 4c4577f318cf41938c081724d26d5757
+# 37d6028864774f9c9262b631e6319b96
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:10
 msgid "**Learning Objectives**"
 msgstr "**Tujuan Pembelajaran**"
 
-# 99d45dbaffad48cfb3be3ddf3559e181
+# 1f195a1583124bb4abe09134712df1b8
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:12
 msgid ""
 "Explore attribute data of an object and to understand the uses of different "
 "types of data"
-msgstr "Eksplorasi data atribut dari sebuah objek dan memahami penggunaan berbagai tipe data yang berbeda"
+msgstr ""
+"Eksplorasi data atribut dari sebuah objek dan memahami penggunaan berbagai "
+"tipe data yang berbeda"
 
-# 4e394d9e7ac14c8f83479e5601e4fe8d
+# 7c495435d06d4162a698176db4ce7ee7
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:14
 msgid "Add labels to vector layers"
 msgstr "Menambahkan label ke *layer* vektor"
 
-# f5d05c30b3f84a7082115f20018f4b9e
+# b11ed3cb023d4fa9976127528f1b3d4d
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:15
 msgid "Symbolize vector data using categories"
 msgstr "Simbolisasi data vektor menggunakan kategori"
 
-# 71a41a3e1a844411a163e2e047512aaf
+# 3bf9b83de14247fe9dea960479f3db11
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:17
 msgid ""
 "Up to now, none of the changes we have made to the map have been influenced "
@@ -56,44 +60,60 @@ msgid ""
 "vegetation looks alike, and all the roads look alike. When looking at the "
 "map, the viewers don’t know anything about the roads they are seeing; only "
 "that there is a road of a certain shape in a certain area."
-msgstr "Hingga saat ini, belum ada perubahan yang kita buat pada peta yang dipengaruhi oleh objek yang ditunjukkan. Dengan kata lain, setiap tipe vegetasi tampilannya sama, setiap jenis jalan tampilannya sama. Ketika melihat peta tersebut, orang tidak mengetahui jalan apa yang mereka lihat; mereka hanya tahu bahwa ada jalan dengan bentuk tertentu di lokasi tertentu."
+msgstr ""
+"Hingga saat ini, belum ada perubahan yang kita buat pada peta yang "
+"dipengaruhi oleh objek yang ditunjukkan. Dengan kata lain, setiap tipe "
+"vegetasi tampilannya sama, setiap jenis jalan tampilannya sama. Ketika "
+"melihat peta tersebut, orang tidak mengetahui jalan apa yang mereka lihat; "
+"mereka hanya tahu bahwa ada jalan dengan bentuk tertentu di lokasi tertentu."
 
-# 6cccaad8c48e46a6b53c8b06e19461f9
+# 68c56e478299493e976c5a26bd394c19
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:23
 msgid ""
 "But the whole strength of GIS is that all the objects that are visible on "
 "the map also have attributes. Maps in a GIS aren’t just pictures. They "
 "represent not only objects in locations, but also information about those "
-"objects.  In this lesson we will explore the attribute data of an object and"
-" understand what the various data can be useful for."
-msgstr "Namun kelebihan dari SIG adalah seluruh objek yang tampak pada peta juga memiliki atribut. Peta pada SIG bukan hanya sekedar gambar. Mereka tidak hanya merepresentasikan lokasi objek, tetapi juga informasi yang terdapat dalam objek tersebut. Pada pelajaran ini kita akan mempelajari mengenai data atribut dari sebuah objek dan memahami kegunaan dari data tersebut."
+"objects.  In this lesson we will explore the attribute data of an object and "
+"understand what the various data can be useful for."
+msgstr ""
+"Namun kelebihan dari SIG adalah seluruh objek yang tampak pada peta juga "
+"memiliki atribut. Peta pada SIG bukan hanya sekedar gambar. Mereka tidak "
+"hanya merepresentasikan lokasi objek, tetapi juga informasi yang terdapat "
+"dalam objek tersebut. Pada pelajaran ini kita akan mempelajari mengenai data "
+"atribut dari sebuah objek dan memahami kegunaan dari data tersebut."
 
-# d0b384ddb96f4f8aa315327c87b3d4a6
+# 98fae791b9ba4517b9750e8bbf48d5b6
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:29
 msgid ""
 "If you would like to start with the examples used in this chapter, begin by "
 "opening the QGIS project :file:`sleman_2_6.qgs`."
-msgstr "Jika Anda ingin memulai dengan menggunakan contoh data yang digunakan pada modul ini, mulailah dengan membuka proyek QGIS :file:`sleman_2_6.qgs`."
+msgstr ""
+"Jika Anda ingin memulai dengan menggunakan contoh data yang digunakan pada "
+"modul ini, mulailah dengan membuka proyek QGIS :file:`sleman_2_6.qgs`."
 
-# 76d36522ab624af1928a4bcbaefb8538
+# f2cf8be0987445a88df0796b488a8c7a
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:32
 msgid "**1. Attribute Data**"
 msgstr "**1. Data Atribut**"
 
-# 6146a86c91254497ae7836db32e02958
+# d005ceb042644b69ad5d0a6d7515b85b
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:34
 msgid ""
-"Open the attribute table for the **POI_Sleman_OSM** layer by selecting it in"
-" the layers list and clicking on the :guilabel:`Open Attribute Table` button"
-" (you can also right-click on the layer and select Open Attribute Table)."
-msgstr "Buka tabel atribut dari *layer* **POI_Sleman_OSM** dengan memilihnya dari daftar *layer* lalu klik tombol :guilabel:`Open Attribute Table` (Anda juga dapat melakukan klik kanan pada layer tersebut dan pilih Open Attribute Table)."
+"Open the attribute table for the **POI_Sleman_OSM** layer by selecting it in "
+"the layers list and clicking on the :guilabel:`Open Attribute Table` button "
+"(you can also right-click on the layer and select Open Attribute Table)."
+msgstr ""
+"Buka tabel atribut dari *layer* **POI_Sleman_OSM** dengan memilihnya dari "
+"daftar *layer* lalu klik tombol :guilabel:`Open Attribute Table` (Anda juga "
+"dapat melakukan klik kanan pada layer tersebut dan pilih Open Attribute "
+"Table)."
 
-# 4be0ef3cbed84b38882f6c7c6c22fb10
+# da322211fd9547e99e502a13a3627aba
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:41
 msgid "Which field would be the most useful to use as a label?"
 msgstr "*Field* manakah yang paling berguna untuk dijadikan label?"
 
-# be447feae2854c91a3a9e22fa8dbcd4f
+# aaca8488503c45eca0c437e36a4be3aa
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:46
 msgid ""
 "You now know how to use the attribute table to see what is actually in the "
@@ -101,447 +121,531 @@ msgid ""
 "attributes that you care about. If you know which attributes you need, you "
 "can quickly decide if you’re able to use a given dataset, or if you need to "
 "look for another one that has the required attribute data."
-msgstr "Anda sekarang tahu bagaimana menggunakan tabel atribut untuk melihat apa yang sebenarnya ada di dalam data yang Anda gunakan. Sebuah dataset hanya akan berguna bagi Anda bila didalamnya terdapat atribut yang Anda inginkan atau butuhkan, Jika Anda tahu atribut yang anda butuhkan, Anda dapat dengan cepat memutuskan apakah Anda dapat menggunakan dataset tersebut, atau Anda perlu melihat dataset lainnya yang memiliki data atribut yang dibutuhkan."
+msgstr ""
+"Anda sekarang tahu bagaimana menggunakan tabel atribut untuk melihat apa "
+"yang sebenarnya ada di dalam data yang Anda gunakan. Sebuah dataset hanya "
+"akan berguna bagi Anda bila didalamnya terdapat atribut yang Anda inginkan "
+"atau butuhkan, Jika Anda tahu atribut yang anda butuhkan, Anda dapat dengan "
+"cepat memutuskan apakah Anda dapat menggunakan dataset tersebut, atau Anda "
+"perlu melihat dataset lainnya yang memiliki data atribut yang dibutuhkan."
 
-# c4df0cfc0288480da0afaaf6942de9f4
+# 9f7be86eda064217a39bc1a7cffc6b62
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:52
 msgid ""
 "Different attributes are useful for different purposes. Some of them can be "
-"represented directly as text for the map user to see.  Next we’ll see how to"
-" use attributes as labels, so that users can see the text on your map."
-msgstr "Atribut yang berbeda akan berguna untuk tujuan berbeda pula. Beberapa diantaranya dapat direpresentasikan langsung sebagai teks agar dapat dilihat oleh pengguna peta. Berikutnya kita akan melihat bagaimana menggunakan atribut sebagai label, sehingga pengguna dapat melihat teks pada peta Anda."
+"represented directly as text for the map user to see.  Next we’ll see how to "
+"use attributes as labels, so that users can see the text on your map."
+msgstr ""
+"Atribut yang berbeda akan berguna untuk tujuan berbeda pula. Beberapa "
+"diantaranya dapat direpresentasikan langsung sebagai teks agar dapat dilihat "
+"oleh pengguna peta. Berikutnya kita akan melihat bagaimana menggunakan "
+"atribut sebagai label, sehingga pengguna dapat melihat teks pada peta Anda."
 
-# fbef8b38a692423a936123a2b4d43d68
+# eb4a71a0830e4e6e9f87712b3d76f1fd
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:56
 msgid "**2. The Label Tool**"
 msgstr "**2. *Tool* Label**"
 
-# bac7c225c28f47e2a61c21d58d4912c6
+# fbe08f3191974c6a8740cfad8febb327
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:58
 msgid ""
 "Labels can be added to a map to show any information about an object. Any "
 "vector layer can have labels associated with it.  Labels rely on the "
 "attribute data of a layer for their content."
-msgstr "Label bisa ditambahkan di dalam peta untuk menunjukkan informasi mengenai sebuah objek. *Layer* vektor dapat memiliki label yang berkaitan. Label bergantung pada data atribut dari sebuah *layer* untuk kontennya."
+msgstr ""
+"Label bisa ditambahkan di dalam peta untuk menunjukkan informasi mengenai "
+"sebuah objek. *Layer* vektor dapat memiliki label yang berkaitan. Label "
+"bergantung pada data atribut dari sebuah *layer* untuk kontennya."
 
-# fab7a29738a64ec8aae77172c682b957
+# dca5ab6584c74a5fa408287e10f4dc91
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:62
 msgid ""
 "There are several ways to add labels in QGIS, but some are better than "
 "others. You may notice that when you open the Layer Properties window for a "
 "layer, there is a tab called “Labels.”  While this tab is designed to put "
 "labels on your map, it is not nearly as good as the so-called “Label Tool,” "
-"which we will learn in this section. Before being able to access the **Label"
-" tool**, you will need to ensure that it has been activated."
-msgstr "Ada beberapa cara untuk menambahkan label pada QGIS, tetapi ada beberapa cara yang lebih baik. Anda mungkin memperhatikan bahwa ketika Anda membuka jendela Layer Properties dari sebuah layer, ada tab yang bertuliskan “Labels.” Walaupun tab ini didesain untuk menaruh label dalam peta Anda, namun fungsinya tidak sebaik “Tool Label,” yang mana akan kita pelajari pada bagian ini. Sebelum kita mengakses **Tool Label**, Anda harus memastikan bahwa fitur ini telah Anda aktifkan."
+"which we will learn in this section. Before being able to access the **Label "
+"tool**, you will need to ensure that it has been activated."
+msgstr ""
+"Ada beberapa cara untuk menambahkan label pada QGIS, tetapi ada beberapa "
+"cara yang lebih baik. Anda mungkin memperhatikan bahwa ketika Anda membuka "
+"jendela Layer Properties dari sebuah layer, ada tab yang bertuliskan "
+"“Labels.” Walaupun tab ini didesain untuk menaruh label dalam peta Anda, "
+"namun fungsinya tidak sebaik “Tool Label,” yang mana akan kita pelajari pada "
+"bagian ini. Sebelum kita mengakses **Tool Label**, Anda harus memastikan "
+"bahwa fitur ini telah Anda aktifkan."
 
-# 3e4561ee8f354e76b4bbbee313fb4fb7
+# 2793449585a0498aac94e5f06600abbf
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:69
 msgid "Go to the menu item :menuselection:`View ‣ Toolbars`."
 msgstr "Pergi ke menu item :menuselection:`View ‣ Toolbars`."
 
-# a92db7d01ee249c0a53ca85dc43eefb9
+# 17acb69807bc4247a2b3c1145d4cda05
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:70
 msgid ""
 "Ensure that the Label item has a checkmark next to it. If it doesn’t, click "
 "on the Label item, and it will be activated.  The Label toolbar looks like "
 "this:"
-msgstr "Pastikan bahwa Label telah memiliki tanda centang di sebelahnya. Jika belum, klik pada Label, dan fitur tersebut akan segera aktif. Toolbar Label akan tampak seperti ini:"
+msgstr ""
+"Pastikan bahwa Label telah memiliki tanda centang di sebelahnya. Jika belum, "
+"klik pada Label, dan fitur tersebut akan segera aktif. Toolbar Label akan "
+"tampak seperti ini:"
 
-# 796b43628d944e22999b781f1354f0aa
+# a0050c5b925540a494f780f54fe511cf
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:76
 msgid ""
-"Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers list, so that it"
-" is highlighted."
-msgstr "Klik pada layer :guilabel:`POI_Sleman_OSM` yang terdapat di daftar layer, hingga layer tersebut tersorot."
+"Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers list, so that it "
+"is highlighted."
+msgstr ""
+"Klik pada layer :guilabel:`POI_Sleman_OSM` yang terdapat di daftar layer, "
+"hingga layer tersebut tersorot."
 
-# 2d560c28f38f416b9fb3cd78c6924e04
+# a0d31db861ef4ab98bcc382ffc75d7d6
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:78
 msgid "Click on the :guilabel:`Labelling` button:"
 msgstr "Klik pada tombol :guilabel:`Labelling` :"
 
-# 30a9f3fc6092414db58c0fe715bcd74f
+# 5925446d76aa45c98ac9c00a4b663d6d
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:83
 msgid "This gives you the Layer labeling settings dialog."
-msgstr "Ketika Anda klik tombol tersebut, maka akan muncul halaman pengaturan Layer Labelling."
+msgstr ""
+"Ketika Anda klik tombol tersebut, maka akan muncul halaman pengaturan Layer "
+"Labelling."
 
-# 087ca8ee464a4c9e9b6fb7ee252490ec
+# 3f62c786ca2d44c3885efca1000b194b
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:85
 msgid "Check the box next to :guilabel:`Label this layer with...`"
 msgstr "Centang kotak dengan tulisan :guilabel:`Label this layer with...`"
 
-# 8354da123dc148d39023b00b2ef14f5a
+# 7785f1048287438598257d8eb4e18a0a
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:90
 msgid ""
 "We must indicate which of the attribute fields we want to use for the "
 "labels. The **NAME** field is the mostly likely candidate for a label, so "
 "let’s select NAME from the list:"
-msgstr "Kita harus menentukan atribut dari field mana atau informasi mana yang ingin kita tampilkan sebagai label. Field **NAME** tampaknya merupakan field yang paling tepat untuk mewakili objek dan dijadikan label, jadi mari kita pilih NAME dari daftar tersebut:"
+msgstr ""
+"Kita harus menentukan atribut dari field mana atau informasi mana yang ingin "
+"kita tampilkan sebagai label. Field **NAME** tampaknya merupakan field yang "
+"paling tepat untuk mewakili objek dan dijadikan label, jadi mari kita pilih "
+"NAME dari daftar tersebut:"
 
-# c8da1da73391434b93c7382777839aea
+# 7d1c0a7d69b14e5ebf211a779fc43791
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:97
 msgid "Click :guilabel:`OK`.  The map should now have labels like this:"
-msgstr "Klik :guilabel:`OK`. Sekarang peta tersebut sudah muncul dengan label di dalamnya seperti ini:"
+msgstr ""
+"Klik :guilabel:`OK`. Sekarang peta tersebut sudah muncul dengan label di "
+"dalamnya seperti ini:"
 
-# ffecb2cbb7fc44b09344a439056688b6
+# d006d6e1418f44a6bf5007e05c7f5aac
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:102
 msgid ""
 "What we have so far is good, but as you can see, the labels are overlapping "
 "the points that they are associated with. That doesn’t look very nice. The "
 "text is also a bit larger than it needs to be. Let’s fix these problems!"
-msgstr "Apa yang ada saat ini tampak cukup baik, namun seperti yang dapat Anda lihat, labelnya masih tumpang tindih dengan titiknya. Hal tersebut tidak tampak baik. Teks nya pun agak tampak terlalu besar dari yang seharusnya. Mari kita perbaiki kekurangan-kekurangan tersebut!"
+msgstr ""
+"Apa yang ada saat ini tampak cukup baik, namun seperti yang dapat Anda "
+"lihat, labelnya masih tumpang tindih dengan titiknya. Hal tersebut tidak "
+"tampak baik. Teks nya pun agak tampak terlalu besar dari yang seharusnya. "
+"Mari kita perbaiki kekurangan-kekurangan tersebut!"
 
-# 14b9500dab6c42cca3d38a86abf93036
+# d4c8ca8c8071425798589a78f690cb41
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:106
 msgid ""
 "Open the :guilabel:`Label tool` again by clicking on its button as before."
 msgstr "Buka :guilabel:`Label tool` lagi dengan melakukan klik pada tombolnya."
 
-# 112bbe114a6b491095b3f06d910db598
+# b1aa21da82b14ed482337881d8d2ea75
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:107
-msgid ""
-"Click on the :guilabel:`ellipsis (...)` button to change the text "
-"properties:"
-msgstr "Klik pada :guilabel:`ellipsis (...)` untuk mengubah pengaturan teks nya: "
+msgid "Click on the :guilabel:`Text` tab button to change the text properties:"
+msgstr "Klik pada tab :guilabel:`Teks` untuk mengubah pengaturan teks: "
 
-# 823318e68fc44c5dae288481df80a82d
+# 0f1b0ae6daac4d2e8669abbd0d99d177
 #: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:112
 msgid ""
 "A standard text change dialog appears, similar to those in many other "
-"programs. Change the font to *Arial size 9*. Your labels will now look like "
-"this:"
-msgstr "Sebuah kotak dialog untuk mengubah teks akan muncul, sesuai dengan yang tampil di berbagai program lainnya. Ubah huruf menjadi *Arial dengan ukuran 9*. Label Anda akan tampak seperti ini:  "
+"programs. Change the font to *Arial size 9*."
+msgstr ""
+"Sebuah kotak dialog untuk mengubah teks akan muncul, serupa dengan yang "
+"tampil di berbagai program lainnya. Ubah ukuran huruf menjadi *Arial dengan "
+"ukuran 9*.  "
 
-# 71135e8f876d4305890023aa88390935
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:118
+# 38fe788736c0421e9f9c68e7d44d5019
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:114
 msgid ""
-"That’s the font problem solved! Now let’s look at the problem of the labels "
-"overlapping the points, but before we do that, let’s take a look at the "
-"Buffer option."
-msgstr "Begitulah caranya mengatur tampilan huruf! Sekarang coba lihat label nya saling overlay dengan titik, namun sebelum kita melakukannya, mari kita lihat terlebih dahulu pilihan Buffer. "
+"Now click on :guilabel:`Buffer` tab to add buffer on the text. Check box "
+"labelled :guilabel:`Draw text buffer`"
+msgstr ""
+"Sekarang klik pada tab :guilabel: `Penyangga`untuk menambah efek penyangga "
+"pada teks. Centanglah boks yang bertulisakan :guilabel:`Gambar penyangga "
+"teks`"
 
-# 52e93ec5f5a94238847b3edd0898c27d
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:122
-msgid "Open the :guilabel:`Label tool` dialog."
-msgstr "Buka :guilabel:`Label tool`"
+# ba2a8bccf0a14f8099aa0cda24372ec6
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:120
+msgid "Your labels will look like this:"
+msgstr "Label Anda akan tampak seperti ini:"
 
-# e5173179f7c248f3a8855906f174be3c
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:123
-msgid ""
-"Deactivate the label buffer by clicking on the checkbox next to the text "
-"that says :guilabel:`Buffer`."
-msgstr "Nonaktifkan buffer label dengan cara klik pada kotak centang di sebelah tulisan Buffer. "
-
-# daa6e85ba7414831bbe3a5e363d6e4b6
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:129
-msgid "Click :guilabel:`Apply`."
-msgstr "Klik :guilabel:`Apply`."
-
-# 88d764b237fe429581b5889f69686b58
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:131
-msgid "Note the effects in the map:"
-msgstr "Perhatikan perubahan yang terjadi pada peta:"
-
-# 841f785a4db6430d99d4b991bfc85950
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:136
+# a6089d289f824b4b9f333d1c9ef87c50
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:125
 msgid "Now you can see why we usually need label buffers!"
 msgstr "Sekarang Anda dapat melihat mengapa kita membutuhkan label buffer!"
 
-# 6d776a27414041239edc03a677a9b2b9
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:138
+# d8cc3051591744a589825b9fa89cfaf6
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:127
 msgid ""
-"Reactivate the buffers by clicking in the same checkbox as before, and then "
-"clicking Apply."
-msgstr "Aktifkan kembali buffer nya dengan melakukan klik pada kotak centang yang sama seperti sebelumnya, lalu klik Apply."
+"That’s the font problem solved! Now let’s look at the problem of the labels "
+"overlapping the points."
+msgstr ""
+"Begitulah caranya mengatur tampilan huruf! Sekarang mari kita lihat "
+"permasalahan label yang tumpang tindih dengan titik."
 
-# c52c460234a2439f9909685453490863
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:141
-msgid "Back to the problem of the labels that overlap points."
-msgstr "Kembali ke masalah label yang overlay dengan  titik. "
+# 4b5e7430df504ddfb6d9dd6c37990a12
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:130
+msgid "In the Label tool dialog, go to the :guilabel:`Distance` tab."
+msgstr "Pada kotak dialog Label, buka tab :guilabel:`Jarak`."
 
-# 2187b066ec694815afdec82f846f19fc
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:143
-msgid "In the Label tool dialog, go to the :guilabel:`Advanced` tab."
-msgstr "Pada kotak dialog Label tool, buka bagian tab :guilabel:`Advanced`."
-
-# acf97f17ce9b45bb967522696815a3a8
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:148
+# acb0e6c4370b4890b4df59bac2a80a78
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:132
 msgid "Change the value of *Label distance to 2*."
-msgstr "Ubah nilai dari *Label distance atau jarak label menjadi 2*."
+msgstr "Ubah nilai *Label distance atau jarak label menjadi 2*."
 
-# 877f7af4c6f84b63bee626e5070a66ac
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:153
+# 5e7afaa149434cd5ba384d7bda87a3ad
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:137
 msgid ""
-"Click :guilabel:`Apply`. The labels no longer hover over the icons, but are "
+"Click :guilabel:`OK`. The labels no longer hover over the icons, but are "
 "“buffered” a short distance away:"
-msgstr "Klik :guilabel:`Apply`. Dapat kita lihat, labelnya tidak lagi berada diatas ikon nya, namun sudah di \"buffer\" atau diberi sedikit jarak:"
+msgstr ""
+"Klik :guilabel:`OK`. Dapat kita lihat, label tidak lagi berada di atas ikon "
+"nya, namun sudah diberi sedikit jarak:"
 
-# 3123f783387e4a22b0c4d26746fa718d
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:159
+# be2078d0b48944cd92378a2f7789a545
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:143
 msgid "**Labeling lines**"
 msgstr "**Garis Label**"
 
-# 0d616adf81b9445692531e234fe2d269
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:161
+# 2e6e31af93fd4dbaa864ae260725bd29
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:145
 msgid ""
 "Now that you know how labeling works, there’s an additional problem. Points "
 "and polygons are easy to label, but what about lines? If you label them the "
 "same way as the points, your results would look like this:"
-msgstr "Sekarang Anda tahu bagaimana cara kerja label, namun ada masalah lainnya. Titik dan poligon mudah untuk diberi label, bagaimana dengan garis? Jika Anda memberikan label pada garis dengan cara yang sama seperti Anda melabeli titik, maka hasilnya akan tampak seperti ini::"
+msgstr ""
+"Sekarang Anda tahu bagaimana cara kerja label, namun ada masalah lainnya. "
+"Titik dan poligon mudah untuk diberi label, bagaimana dengan garis? Jika "
+"Anda memberikan label pada garis dengan cara yang sama seperti Anda melabeli "
+"titik, maka hasilnya akan tampak seperti ini::"
 
-# 875b2c633cb34534a7ab984f2398fc8c
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:168
+# 0f8f5a76e7464747be487cbc1cf94ac3
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:152
 msgid ""
 "This is not very useful! To make lines behave, we’ll need to edit some "
 "options."
-msgstr "Ternyata tampilan tersebut kurang membantu! Untuk mengaturnya, kita membutuhkan beberapa pilihan."
+msgstr ""
+"Ternyata tampilan tersebut kurang membantu! Untuk mengaturnya, kita "
+"membutuhkan beberapa pilihan."
 
-# 55277a5fc35d4ac795dd6a73dff15943
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:170
+# 5b79f1b2935541ee908a484be412f95c
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:154
 msgid "Hide the **POI_Sleman_OSM** layer so that it doesn’t distract you."
-msgstr "Sembunyikan layer **POI_Sleman_OSM** sehingga tidak mengganggu perhatian Anda. "
+msgstr ""
+"Sembunyikan layer **POI_Sleman_OSM** sehingga tidak mengganggu perhatian "
+"Anda. "
 
-# d227f59774904532ac3ff2c2b819c355
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:171
+# 5acc12b01081422aa71030644ac0e1c0
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:155
 msgid ""
 "Activate labels for the **Jalan_Sleman_OSM** layer as before. (Remember to "
 "use the Label tool on the toolbar, not the one in Label Properties!)"
-msgstr "Aktifkan label dari layer **Jalan_Sleman_OSM** seperti sebelumnya. (Ingatlah untuk menggunakan tool Label pada toolbar, bukan yang ada pada Label Properties!)"
+msgstr ""
+"Aktifkan label dari layer **Jalan_Sleman_OSM** seperti sebelumnya. (Ingatlah "
+"untuk menggunakan tool Label pada toolbar, bukan yang ada pada Label "
+"Properties!)"
 
-# c912d229844543f7bffb45755aaec3c9
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:173
+# 7e0fd7b692dc4e17886fdf688af8748a
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:157
 msgid "Set the font *Size to 9* so that you can see more labels."
-msgstr "Aturlah ukuran huruf menjadi ukuran 9 sehingga Anda dapat melihat lebih banyak label. "
+msgstr ""
+"Aturlah ukuran huruf menjadi ukuran 9 sehingga Anda dapat melihat lebih "
+"banyak label. "
 
-# ad77d635551b4a0e95a4a8d2e5deb4a2
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:174
+# def74a23320f4270810ae1d1e6ed9a42
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:158
 msgid "Zoom in so that the scale is *around 1:10000*."
 msgstr "Perbesar sehingga skalanya akan menjadi *sekitar 1: 10000*."
 
-# e4a104c9bed94e4bbc52191f6fc4e43f
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:175
-msgid ""
-"In the Label tool dialog’s Advanced tab, choose the following settings:"
-msgstr "Pada Advance tab pada dialog Label tool, pilihlah pengaturan seperti ini: "
+# 991c132c0b55498b8fccde764f1a98c8
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:159
+msgid "In the Label tool dialog’s Advanced tab, choose the following settings:"
+msgstr ""
+"Pada Advance tab pada dialog Label tool, pilihlah pengaturan seperti ini: "
 
-# 8c4dcdcc03354ebfa005ac5b9588bf36
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:180
+# 0621b4fe667c429cb616f5364540c7a4
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:164
 msgid "The map will look somewhat like this, depending on scale:"
 msgstr "Peta akan tampak seperti ini, tergantung pada skala:"
 
-# 6603abb5cd76432a9ee43457eda0ca83
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:185
+# 8d2e1d5b1b054a24a462e1fa8f25576a
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:169
 msgid ""
 "It’s better than before, but still not ideal. For starters, some of the "
 "names appear more than once, and that’s not always necessary. To prevent "
 "that from happening:"
-msgstr "Ini sudah tampak lebih baik daripada sebelumnya, namun tetap belum  ideal. Beberapa nama jalan muncul lebih dari sekali, dan hal tersebut tidak diperlukan. Untuk mencegah hal tersebut terjadi:"
+msgstr ""
+"Ini sudah tampak lebih baik daripada sebelumnya, namun tetap belum  ideal. "
+"Beberapa nama jalan muncul lebih dari sekali, dan hal tersebut tidak "
+"diperlukan. Untuk mencegah hal tersebut terjadi:"
 
-# 90f710959ce34b17aa05e87826ad7267
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:189
+# 11f9300d749d46b0998c91e1e22bbec1
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:173
 msgid ""
 "Enable the option :guilabel:`Merge connected lines` to avoid duplicate "
 "labels (also under the Advanced tab you may need to scroll down to see it)."
-msgstr "Aktifkan pilihan :guilabel:`Merge connected lines` untuk menghindari label yang terduplikasi (juga terletak di bawah tab Advanced – Anda mungkin harus menggeser ke bawah untuk melihatnya). "
+msgstr ""
+"Aktifkan pilihan :guilabel:`Merge connected lines` untuk menghindari label "
+"yang terduplikasi (juga terletak di bawah tab Advanced – Anda mungkin harus "
+"menggeser ke bawah untuk melihatnya). "
 
-# 3e04f3b314ac48b88f30a5284f012139
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:192
+# ce11263a43a74f9082e6187c31d685dd
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:176
 msgid ""
 "Another useful function is to prevent labels being drawn for features too "
 "short to be of notice."
-msgstr "Fungsi lainnya yang berguna untuk mencegah label digambar untuk fitur-fitur yang terlalu pendek untuk digambarkan."
+msgstr ""
+"Fungsi lainnya yang berguna untuk mencegah label digambar untuk fitur-fitur "
+"yang terlalu pendek untuk digambarkan."
 
-# a5720ff9352c47f2bd9682e7df62cbcd
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:195
+# a50e59bb624a474a8a3b4c3bf44c0d8f
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:179
 msgid ""
 "Set the value of :guilabel:`Suppress labeling of features smaller than ...` "
 "to *5 mm* and note the results when you click :guilabel:`Apply`."
-msgstr "Atur nilai dari :guilabel:`Suppress labeling of features smaller than ...` menjadi *5 mm* dan perhatikan hasilnya ketika Anda klik :guilabel:`Apply`."
+msgstr ""
+"Atur nilai dari :guilabel:`Suppress labeling of features smaller than ...` "
+"menjadi *5 mm* dan perhatikan hasilnya ketika Anda klik :guilabel:`Apply`."
 
-# c2aac8eef7614d83aaff5b14221ab3e2
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:197
+# 98f915ccc1f54bd7b52e08db5924fda2
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:181
 msgid ""
 "Try out different :guilabel:`Placement settings` as well (also under the "
 "Advanced tab). As we’ve seen before, the horizontal option is not a good "
 "idea in this case, so let’s try the curved option instead!"
-msgstr "Cobalah berbagai perbedaan :guilabel:`Placement settings` (berada di bawah tab Advanced). Seperti yang kita lihat sebelumnya, opsi horizontal bukanlah ide yang baik untuk kasus ini, mari kita coba opsi curved! "
+msgstr ""
+"Cobalah berbagai perbedaan :guilabel:`Placement settings` (berada di bawah "
+"tab Advanced). Seperti yang kita lihat sebelumnya, opsi horizontal bukanlah "
+"ide yang baik untuk kasus ini, mari kita coba opsi curved! "
 
-# 22a1f08718a34c428dcf347d323d4020
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:200
+# 4894ff91e8e64a8199240669e0a863f1
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:184
 msgid ""
 "Select the *curved* option under the Advanced tab of the Layer labeling "
 "settings dialog."
-msgstr "Pilihlah *curved* di bawah tab Adavanced dari kotak dialog Pengaturan Layer Labeling. "
+msgstr ""
+"Pilihlah *curved* di bawah tab Adavanced dari kotak dialog Pengaturan Layer "
+"Labeling. "
 
-# 799a2e5a158b4b36b21607a1d687acc5
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:203
+# 54c2a2776c9843e29b70cc9c46a2b075
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:187
 msgid "Here’s the result:"
 msgstr "Ini lah hasilnya:"
 
-# 4f2412086eb647f78ab2901859d63af0
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:208
+# 3d124d75845c4366aaa49fa01a3c1250
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:192
 msgid ""
-"As you can see, this hides a lot of the labels that were previously visible,"
-" because of the difficulty of making some of them follow twisting street "
+"As you can see, this hides a lot of the labels that were previously visible, "
+"because of the difficulty of making some of them follow twisting street "
 "lines and still be legible. You can decide which of these options to use, "
 "depending on what you think seems more useful or what looks better."
-msgstr "Seperti yang Anda lihat, ada banyak label yang sebelumnya tampak namun kini tersembunyi, karena karena kesulitan membuat beberapa dari mereka mengikuti garis jalan memutar dan masih dapat dibaca. Anda dapat memutuskan mana dari pilihan ini yang akan Anda gunakan, tergantung dari mana yang menurut Anda berguna."
+msgstr ""
+"Seperti yang Anda lihat, ada banyak label yang sebelumnya tampak namun kini "
+"tersembunyi, karena karena kesulitan membuat beberapa dari mereka mengikuti "
+"garis jalan memutar dan masih dapat dibaca. Anda dapat memutuskan mana dari "
+"pilihan ini yang akan Anda gunakan, tergantung dari mana yang menurut Anda "
+"berguna."
 
-# e9b5473e02794be0b3166c44e045055c
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:213
+# aba3c8aa49ee40acbb5495f1979a6603
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:197
 msgid ""
 "Now that you know how attributes can make a visual difference for your map, "
 "how about using them to change the symbology of objects themselves? That’s "
 "the topic for the next section!"
-msgstr "Sekarang Anda tahu bagaimana atribut dapat membuat perbedaan tampilan visual pada peta Anda, bagaimana menggunakannya untuk mengubah simbologi dari objek-objek itu sendiri? Itulah topik yang akan kita bahas pada bagian berikutnya!"
+msgstr ""
+"Sekarang Anda tahu bagaimana atribut dapat membuat perbedaan tampilan visual "
+"pada peta Anda, bagaimana menggunakannya untuk mengubah simbologi dari objek-"
+"objek itu sendiri? Itulah topik yang akan kita bahas pada bagian berikutnya!"
 
-# 33d284c763064231b97c04c05e06983b
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:217
+# d897aba1cfbe49a7ae17740e3b81b43a
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:201
 msgid "**3. Classification**"
 msgstr "**3. Klasifikasi** "
 
-# 154313e18f5347848db72e4ebe2fe7fd
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:219
+# c96e475fd4dc432caae701d2a0c9fb97
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:203
 msgid ""
 "Labels are a good way to communicate information such as the names of "
-"individual places, but they can’t be used for everything. For example, let’s"
-" say that we want to show which district each feature in our vegetation "
-"layer is in.  Using labels, it would look like this:"
-msgstr "Menggunakan label adalah cara yang baik untuk mengkomunikasikan informasi seperti nama dari tempat, namun label tidak dapat digunakan untuk semua hal. Sebagai contoh, misalnya kita ingin menunjukkan tiap jenis vegetasi tersebut berada di kecamatan mana. Dengan menggunakan label, akan tampak seperti ini:  "
+"individual places, but they can’t be used for everything. For example, let’s "
+"say that we want to show which district each feature in our vegetation layer "
+"is in.  Using labels, it would look like this:"
+msgstr ""
+"Menggunakan label adalah cara yang baik untuk mengkomunikasikan informasi "
+"seperti nama dari tempat, namun label tidak dapat digunakan untuk semua hal. "
+"Sebagai contoh, misalnya kita ingin menunjukkan tiap jenis vegetasi tersebut "
+"berada di kecamatan mana. Dengan menggunakan label, akan tampak seperti "
+"ini:  "
 
-# a18fd817506940deb29aa2b2eb3a4886
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:227
+# d6f52b8d10c34c2ea113d477e3f20550
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:211
 msgid ""
 "Obviously this is not ideal, so we need another solution. That’s what this "
-"lesson is about!  In this section, we will learn how to classify vector data"
-" effectively."
-msgstr "Bisa kita lihat, hal tersebut tampak tidak ideal, jadi kita butuh solusi lainnya. Pada bagian ini, Anda akan mempelajari bagaimana melakukan klasifikasi pada data vektor dengan efektif."
+"lesson is about!  In this section, we will learn how to classify vector data "
+"effectively."
+msgstr ""
+"Bisa kita lihat, hal tersebut tampak tidak ideal, jadi kita butuh solusi "
+"lainnya. Pada bagian ini, Anda akan mempelajari bagaimana melakukan "
+"klasifikasi pada data vektor dengan efektif."
 
-# 03f874fcab2641789e0164e24aaa0215
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:231
+# 2efd4b65c24b4f579cbf6a800c1fcdfd
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:215
 msgid "**Classifying nominal data**"
 msgstr "**Menklasifikasikan data nominal**"
 
-# fea2081a56a3408fadc4dc4304217150
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:233
+# fb613e2ee48d4a0b94ddce347d66f947
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:217
 msgid "Open :guilabel:`Layer Properties` for the **vegetasi** layer."
 msgstr "Buka :guilabel:`Layer Properties` untuk layer **vegetasi**."
 
-# e3d1e3df0719474c932c7cb7d269760a
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:234
+# 1bd96746c46f430b9a89a7ac1b65e564
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:218
 msgid "Go to the :guilabel:`Style` tab."
 msgstr "Pilih tab :guilabel:`Style`."
 
-# e6186c2a91894298a22287e350056b73
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:235
+# 92fb8441465445bfb6f49f4a52f94a48
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:219
 msgid "Click on the dropdown that says :guilabel:`Single Symbol`:"
 msgstr "Klik pada kotak pilihan yang bertuliskan :guilabel:`Single Symbol`:"
 
-# c6f2218eb86449a7a0ff8db3712a6754
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:240
+# 1e0e9e636b6b42c4b24308f47c0b9a42
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:224
 msgid "Change it to *Categorized* and the interface will change:"
 msgstr "Ubah menjadi **Categorized** dan tampilannya pun akan berubah: "
 
-# a9afcac6014d44faa46194327eb20d57
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:245
+# 154511f346a246efb3a86a86383e3344
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:229
 msgid "Change the Column to **guna_lahan** and the Color ramp to *Spectral*:"
 msgstr "Ubah Column menjadi **guna_lahan** dan Color ramp menjadi *Spectral*: "
 
-# 72fbe73ddf744c8d973b95184fdb39ee
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:250
+# d9fd1c4e5a334e0d8010a45df60938f3
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:234
 msgid "Click the button labeled :guilabel:`Classify`:"
 msgstr "Klik pada tombol berlabel :guilabel:`Classify`:"
 
-# da07cad0a09f485aaa5cd6e5142da00b
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:255
+# 614e239fb8d8461db1e7aa1ca19bedc9
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:239
 msgid "Click :guilabel:`OK`.  You’ll see something like this:"
 msgstr "Klik :guilabel:`OK`. Anda akan melihat seperti ini:"
 
-# 922ffaac5a8f47f2bf0d7020ed76ebda
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:260
+# 952ff98a99ae4819828086c8eb75dc65
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:244
 msgid ""
 "Click the :guilabel:`arrow` (or :guilabel:`plus` sign) next to rural in the "
 "Layer list, you’ll see the categories explained:"
-msgstr "Klik pada tanda panah (atau tanda tambah) di samping  vegetasi pada Daftar Layer, Anda akan melihat kategorinya seperti di bawah ini: "
+msgstr ""
+"Klik pada tanda panah (atau tanda tambah) di samping  vegetasi pada Daftar "
+"Layer, Anda akan melihat kategorinya seperti di bawah ini: "
 
-# 622b863237b7464eae8944c125bb7dce
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:266
+# b1d34242fc644466981137e3b9703eb1
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:250
 msgid ""
 "So, this is useful! But it hurts your eyes to look at it, so let’s see what "
 "we can do about that."
-msgstr "Lihatlah, ini sangat berguna! Namun agak mengganggu bagi mata untuk dilihat, jadi mari kita lihat apa yang dapat kita lakukan. "
+msgstr ""
+"Lihatlah, ini sangat berguna! Namun agak mengganggu bagi mata untuk dilihat, "
+"jadi mari kita lihat apa yang dapat kita lakukan. "
 
-# 99f89542aff24761821a8d5b4fe39e0f
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:269
+# e6e92660f8db40f8ab0eaf9e81aae72d
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:253
 msgid ""
 "Open :guilabel:`Layer Properties` and go to the :guilabel:`Style` tab again."
-msgstr "Buka :guilabel:`Layer Properties`dan pergi ke tab :guilabel:`Style` lagi. "
+msgstr ""
+"Buka :guilabel:`Layer Properties`dan pergi ke tab :guilabel:`Style` lagi. "
 
-# 4141aec337d44721a01d1d028236d2c2
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:270
+# 661b143716f14331a2be1de19dc2abee
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:254
 msgid "Click the :guilabel:`Change` button next to Symbol."
 msgstr "Klik tombol :guilabel:`Change` di sebelah Symbol. "
 
-# 4b238aaf968045028db92d3e8d8f5c85
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:275
+# b21cd193c7f24af086c878e7b3aa43c8
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:259
 msgid ""
 "Remove the outline as you did in the previous chapter.  (change the border "
 "style to “No Pen”)"
-msgstr "Hilangkan outline seperti yang Anda lakukan pada modul sebelumnya. (Ubah style border menjadi “No Pen”) "
+msgstr ""
+"Hilangkan outline seperti yang Anda lakukan pada modul sebelumnya. (Ubah "
+"style border menjadi “No Pen”) "
 
-# 80f18b3a27f54141bf197a8760e74899
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:277
+# cbc1e06b3eb74605900a4d34aadf65d2
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:261
 msgid "Click the :guilabel:`Delete all` button:"
 msgstr "Klik tombol :guilabel:`Delete all`:"
 
-# 041b0af1ab5f4ca89efcdfe2bf6dba11
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:282
+# 38d6e93a0d43418ea59081621e6d72ea
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:266
 msgid "Now click :guilabel:`Classify` again, and the new symbols will appear."
-msgstr "Sekarang klik lagi :guilabel:`Classify`, lalu simbol baru pun akan muncul. "
+msgstr ""
+"Sekarang klik lagi :guilabel:`Classify`, lalu simbol baru pun akan muncul. "
 
-# 2f76ffa2b55f4393b6f00783e0c51f1d
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:284
+# 5e3971467f034c3e982f5f812b69cad1
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:268
 msgid ""
 "You’ll notice they don’t have outlines. This is because because you just "
 "removed the outlines!"
-msgstr "Anda akan melihat bahwa sudah tidak ada outlines disitu, hal tersebut dikarenakan Anda baru saja menghapus outline tersebut! "
+msgstr ""
+"Anda akan melihat bahwa sudah tidak ada outlines disitu, hal tersebut "
+"dikarenakan Anda baru saja menghapus outline tersebut! "
 
-# 0abbcc4e82cf443cb52829723cd1a523
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:287
+# 40999e3d4c584bcda4d3a037a8dc039d
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:271
 msgid ""
 "Change the color for each type of vegetation by double-clicking on the "
 "colored block next to its name.  You can change the color for each type of "
 "vegetation to something that you think is more applicable, as we’ve done "
 "here:"
-msgstr "Ubahlah warna untuk tiap jenis vegetasi dengan melakukan klik dua kali pada kotak warna yang terletak di sebelah namanya. Anda dapat mengganti warna untuk tiap jenis vegetasi sesuai dengan yang Anda inginkan, seperti yang kita lakukan di bawah ini: "
+msgstr ""
+"Ubahlah warna untuk tiap jenis vegetasi dengan melakukan klik dua kali pada "
+"kotak warna yang terletak di sebelah namanya. Anda dapat mengganti warna "
+"untuk tiap jenis vegetasi sesuai dengan yang Anda inginkan, seperti yang "
+"kita lakukan di bawah ini: "
 
-# 1c1c2729686a41c3ac6966c26b52a4f8
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:294
+# fe4be748e75f4354899424aa9615dae6
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:278
 msgid ""
-"Notice that the category on the bottom is empty.  Select it, and click the "
-":guilabel:`Delete` button."
-msgstr "Perhatikan bahwa kategori yang paling bawah kosong, tidak memiliki value. Pilihlah, dan klik tombol :guilabel:`Delete`."
+"Notice that the category on the bottom is empty.  Select it, and click the :"
+"guilabel:`Delete` button."
+msgstr ""
+"Perhatikan bahwa kategori yang paling bawah kosong, tidak memiliki value. "
+"Pilihlah, dan klik tombol :guilabel:`Delete`."
 
-# 0b98861cd52b48ac8a6ffa01ff61d4d9
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:296
+# 3b56e747e84746d498e3012b65312a3f
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:280
 msgid "When we click :guilabel:`OK` our map looks like this:"
 msgstr "Ketika kita klik :guilabel:`OK`, peta kita akan tampak seperti ini: "
 
-# 31c29a8e3be9464f973cbf3087b019fd
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:301
+# 75a20083ba7740deac3932949cdd857c
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:285
 msgid ""
-"If you feel confident in your new classification skills, try to classify the"
-" residential layer yourself.  Use darker colors to distinguish it from "
+"If you feel confident in your new classification skills, try to classify the "
+"residential layer yourself.  Use darker colors to distinguish it from "
 "vegetation."
-msgstr "Jika Anda sudah percaya diri dengan kemampuan klasifikasi ini, cobalah untuk melakukan klasifikasi layer permukiman. Gunakan warna yang lebih gelap untuk membedakannya dengan layer vegetasi. "
+msgstr ""
+"Jika Anda sudah percaya diri dengan kemampuan klasifikasi ini, cobalah untuk "
+"melakukan klasifikasi layer permukiman. Gunakan warna yang lebih gelap untuk "
+"membedakannya dengan layer vegetasi. "
 
-# 6d45e08b3aba45449827d0604b88801b
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:305
+# debe73fb10c341e8a073075148fa6f77
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:289
 msgid "**Ratio classification**"
 msgstr "**Klasifikasi Rasio**"
 
-# f80daaaf11f34d86a2646cd0db71e12e
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:307
+# 13a8ca5848e34b3fa4da3bc14da378fb
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:291
 msgid ""
 "In the previous example, we classified the **vegetasi** layer by what is "
 "known as nominal classification.  This type of classification is when "
@@ -549,37 +653,51 @@ msgid ""
 "**pemukiman** layer based on the size of each feature.  Classifiying with "
 "attributes that contain only positive numbers, sych as land area, is known "
 "as ratio classification."
-msgstr "Pada contoh sebelumnya, kita mengklasifikasikan layer vegetasi dengan cara yang dikenal dengan Kliasifikasi nominal. Tipe klasifikasi ini adalah ketika kategori disusun berdasarkan nama. Berikutnya kita akan melakukan klasifikasi terhadap layer pemukiman berdasarkan tiap fiturnya. Melakukan klasifikasi atribut yang hanya berisi nomor positif, seperti area lahan, diketahui sebahai Klasifikasi Rasio. "
+msgstr ""
+"Pada contoh sebelumnya, kita mengklasifikasikan layer vegetasi dengan cara "
+"yang dikenal dengan Kliasifikasi nominal. Tipe klasifikasi ini adalah ketika "
+"kategori disusun berdasarkan nama. Berikutnya kita akan melakukan "
+"klasifikasi terhadap layer pemukiman berdasarkan tiap fiturnya. Melakukan "
+"klasifikasi atribut yang hanya berisi nomor positif, seperti area lahan, "
+"diketahui sebahai Klasifikasi Rasio. "
 
-# d59b8caced8a40c5aa271e90b7a30199
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:313
+# ad947e3177444e5dad78f4637c7fad13
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:297
 msgid ""
 "Open the :guilabel:`attribute table` for the **pemukiman** layer.  Notice "
 "the final column, *luas_ha*.  This attribute contains the size of the land "
 "area contained within that feature polygon."
-msgstr "Buka :guilabel:`attribute table` dari layer **pemukiman**. Anda dapat melihat pada kolom terakhir, *luas_ha*.  Atribut ini berisi ukuran dari luas lahan yang terdapat pada fitur poligon tersebut. "
+msgstr ""
+"Buka :guilabel:`attribute table` dari layer **pemukiman**. Anda dapat "
+"melihat pada kolom terakhir, *luas_ha*.  Atribut ini berisi ukuran dari luas "
+"lahan yang terdapat pada fitur poligon tersebut. "
 
-# 67a87a94589d4774bfd7203e92f93f37
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:320
+# 30cd51441a794148b5951c46e8caa057
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:304
 msgid "Open the :guilabel:`layer properties` for **pemukiman**."
 msgstr "Buka :guilabel:`layer properties` dari **pemukiman**."
 
-# de185c17ea984637a7bf7e8d3bd4bb30
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:321
+# 3935eae6f8334e538cb01c9fcb5de548
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:305
 msgid ""
 "Change the :guilabel:`Style type` to *\"Graduated\"*, and use *luas_ha* as "
 "the column."
-msgstr "Ubah tipe :guilabel:`Style` menjadi **Graduated**, dan gunakan *luas_ha* sebagai kolomnya."
+msgstr ""
+"Ubah tipe :guilabel:`Style` menjadi **Graduated**, dan gunakan *luas_ha* "
+"sebagai kolomnya."
 
-# d246e3a2285342768b8e24fe84de4ae3
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:327
+# b1e3b3d7b2c34189a7661f6ab34249f7
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:311
 msgid ""
-"Because we are categorizing with numbers this time, a color gradient will be"
-" useful for representing our categories.  Click on :guilabel:`Oranges` in "
-"the color ramp, and then click :guilabel:`Classify`."
-msgstr "Karena kita melakukan kategorisasi berdasarkan angka kali ini, gradasi warna akan lebih berguna merepresentasikan kategorinya. Klik pada :guilabel:`Oranges` pada color ramp, lalu klik :guilabel:`Classify`. "
+"Because we are categorizing with numbers this time, a color gradient will be "
+"useful for representing our categories.  Click on :guilabel:`Oranges` in the "
+"color ramp, and then click :guilabel:`Classify`."
+msgstr ""
+"Karena kita melakukan kategorisasi berdasarkan angka kali ini, gradasi warna "
+"akan lebih berguna merepresentasikan kategorinya. Klik pada :guilabel:"
+"`Oranges` pada color ramp, lalu klik :guilabel:`Classify`. "
 
-# 127d3f8253494f688115c02282bae8b9
-#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:334
+# 2b38111909c34a77bf4ba750039242c2
+#: ../../source/training/beginner/qgis-inasafe/207-labels-and-classification.rst:318
 msgid "Now you’ll have something like this:"
 msgstr "Sekarang Anda akan melihat seperti ini: "

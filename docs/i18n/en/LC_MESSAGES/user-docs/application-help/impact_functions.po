@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: InaSAFE Documentation Project 1.2\n"
+"Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-24 11:52+0100\n"
+"POT-Creation-Date: 2014-11-10 16:15+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,93 +16,126 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+# 4fd1705e66cf47eeb70b711581e06153
 #: ../../source/user-docs/application-help/impact_functions.rst:8
 # 622a3135010f4b07add5844a9da1c787
 msgid "Understand Impact Functions"
 msgstr ""
 
+# 7d8d2c0eb63646e881995b76ad84565e
 #: ../../source/user-docs/application-help/impact_functions.rst:10
 # d65b8bd1a45d453f983b06b4a56c25e3
 msgid "This document explains the purpose of impact functions and lists the different available impact function and the requirements each has to be used effectively. See :ref:`writing_impact_functions` for more information about writing new impact functions."
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:17
-# 711789cb857f474dbe0b51dbe9a433a7
+# b76f25e952c84f359fcb93b69144981e
+#: ../../source/user-docs/application-help/impact_functions.rst:18
 msgid "What is an impact function?"
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:19
-# 257b274935684aa5b4ac77260f452fbf
-msgid "An impact function is a software program that computes a risk assessment given a number of inputs. The risk assessment will typically have a *spatial* component (e.g. a GIS layer which can be incorporated into a map) and a *non-spatial* component (e.g. a list of actions you may want to consider carrying out, or a list of estimates of disaster risk reduction elements such as how many bags of rice to make available)."
+# 1199d2f42916481fabf3e0790df3d6a7
+#: ../../source/user-docs/application-help/impact_functions.rst:20
+msgid ""
+"An impact function is a software program that computes a impact assessment "
+"given a number of inputs. The impact assessment will typically have a "
+"*spatial* component (e.g. a GIS layer which can be incorporated into a map) "
+"and a *non-spatial* component (e .g. a list of actions you may want to "
+"consider carrying out, or a list of estimates of disaster risk reduction "
+"elements such as how many bags of rice to make available)."
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:27
-# 29d9127b61bb48d8a0908d0d7bf471cb
+# fd7ea4ba93564badbe3b54274af4c88d
+#: ../../source/user-docs/application-help/impact_functions.rst:29
 msgid "Selecting an impact function"
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:29
-# 9293ad91f15644a5bf3bc30633f7da59
-msgid "Impact functions are bundled with the |project_name| software. The graphical user interface (provided as a plugin for QGIS will offer a list of impact functions that can be used based on the layers you have loaded and their :doc:`keywords <keywords>`."
+# 9c522215bcba42be9e10424206a8951c
+#: ../../source/user-docs/application-help/impact_functions.rst:31
+msgid ""
+"Impact functions are bundled with the |project_name| software. The graphical "
+"user interface (provided as a plugin for QGIS will offer a list of impact "
+"functions that can be used based on the layers you have loaded and their :"
+"doc:`keywords <keywords>`."
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:35
-# 1ebde4b76f3e4dd0b9d63ef528c9f8b6
+# d06d96c7311c4f05a7e10ca33e1f252f
+#: ../../source/user-docs/application-help/impact_functions.rst:37
 msgid "Exploring impact functions"
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:37
-# 5b726a85ed9f4702bead338d87e2aeb9
-msgid "You can use the impact function table to explore all of the possible impact functions that can be used. They are listed in a table with a series of pick-lists (combo boxes) above which can be used to filter the functions based on different criteria as illustrated below."
+# 0928baee3b234e8a974af0ebd1d31090
+#: ../../source/user-docs/application-help/impact_functions.rst:39
+msgid ""
+"You can use the impact function table to explore all of the possible impact "
+"functions that can be used. They are listed in a table with a series of pick-"
+"lists (combo boxes) above which can be used to filter the functions based on "
+"different criteria as illustrated below."
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:47
-# 9e1a81b230d644bbb57393de46f062fd
+# d624745f238e44148eba41aa15926e80
+#: ../../source/user-docs/application-help/impact_functions.rst:50
 msgid "Unfiltered impact function table"
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:49
-# 86ec198f4fe741c5ba40738d1e2b7410
-msgid "When applying a filter set, the list of available functions that meet those criteria is updated as shown below."
+# a0e1774096cb4d518d0bcf005cce6333
+#: ../../source/user-docs/application-help/impact_functions.rst:52
+msgid ""
+"When applying a filter set, the list of available functions that meet those "
+"criteria is updated as shown below."
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:57
-# 45a16398d47d41ae8c7921d2b67050e8
+# 512c9247962c47288f554c4a1d995033
+#: ../../source/user-docs/application-help/impact_functions.rst:60
 msgid "Filtered impact function table"
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:59
-# 29adee7b378d4c34bd85a97f4b61ee71
-msgid "The impact function table is simply a browser to help you to familiarise yourself with the functions available. For the actual usage of the functions you need to have layers available (i.e. loaded in QGIS) with the appropriate keywords for your target function."
+# fafd1bda38ed467b984ea3d3f5d56ade
+#: ../../source/user-docs/application-help/impact_functions.rst:62
+msgid ""
+"The impact function table is simply a browser to help you to familiarise "
+"yourself with the functions available. For the actual usage of the functions "
+"you need to have layers available (i.e. loaded in QGIS) with the appropriate "
+"keywords for your target function."
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:65
-# 2362c053cfa54929925963fcd38ca2b7
+# 8a2709ca6974450595a77ed920ecad73
+#: ../../source/user-docs/application-help/impact_functions.rst:68
 msgid "Configurable Impact Functions"
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:67
-# 66efdeb861d149dd916eff71e89a7fd7
-msgid "Some impact functions can be configured before use. For example if you have a raster flood hazard layer where each pixel represents flood depth, you can set depth thresholds (low / medium / high)"
+# 1bb99b13bf484bf3be563e4ab9929c18
+#: ../../source/user-docs/application-help/impact_functions.rst:70
+msgid ""
+"Some impact functions can be configured before use. For example if you have "
+"a raster flood hazard layer where each pixel represents flood depth, you can "
+"set depth thresholds (low / medium / high)"
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:72
-# a166aeeb3c6d44b782aa91cf3f5a1d89
+# c6920973e5704e2b8c68d027af9c9084
+#: ../../source/user-docs/application-help/impact_functions.rst:75
 msgid "Creating Impact Functions"
 msgstr ""
 
-#: ../../source/user-docs/application-help/impact_functions.rst:74
-# 5f25a8de8f724930a6affa357dc0a97a
-msgid "If you feel there is an important impact function which is missing, there are two avenues you can follow:"
-msgstr ""
-
+# 5c85f4b5546c47aebd115e3e0d4135bf
 #: ../../source/user-docs/application-help/impact_functions.rst:77
-# 5d6001ddcbd247569ff8419fa92027f8
-msgid "If you have basic python programming skills, you could implement a new impact function yourself. See :ref:`writing_impact_functions` for general guidelines on writing impact functions."
+msgid ""
+"If you feel there is an important impact function which is missing, there "
+"are two avenues you can follow:"
 msgstr ""
 
+# ddc4ee4ddbd34ca0b61cec302377074f
 #: ../../source/user-docs/application-help/impact_functions.rst:80
-# f3c40507e892444ca4d68934ce93a386
-msgid "You can file a ticket on our `issue tracking system <https://github.com/AIFDR/inasafe/issues>`_, and if time and resources allow we will implement it for you."
+msgid ""
+"If you have basic python programming skills, you could implement a new "
+"impact function yourself. See :ref:`writing_impact_functions` for general "
+"guidelines on writing impact functions."
+msgstr ""
+
+# 68b8784132c4428da85efa2ddb8ac1c4
+#: ../../source/user-docs/application-help/impact_functions.rst:84
+msgid ""
+"You can file a ticket on our `issue tracking system <https://github.com/"
+"AIFDR/inasafe/issues>`_, and if time and resources allow we will implement "
+"it for you."
 msgstr ""
 

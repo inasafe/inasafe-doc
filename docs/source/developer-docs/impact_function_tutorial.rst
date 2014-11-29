@@ -14,23 +14,25 @@ Introduction
 |project_name| contains a plugin system that allows complex impact functions
 to be implemented in Python (http://www.python.org) whilst (ideally)
 minimizing the need to understand all the complexity of the handling the
-hazard and exposure layers. Features of the impact function system are:
+hazard and exposure layers.
+Features of the impact function system are:
 
-* Auto registration of new impact functions after restart
-* Derivation of more complex impact functions from simpler ones
+* Auto registration of new impact functions after restart.
+* Derivation of more complex impact functions from simpler ones.
 * Auto hiding for impact functions that aren't appropriate (depending on the
-  requirements)
-* Allow for additional functionality to be added easily
-* Provide up-to-date documentation on impact functions functionality
+  requirements).
+* Allow for additional functionality to be added easily.
+* Provide up-to-date documentation on impact functions functionality.
 
 Writing a Simple Raster impact function:
 ----------------------------------------
 
 This section provides a beginners tutorial on writing a simple earthquake
-impact function from scratch. You will need to be familiar with the basics of
-Python to be able to write and debug impact functions - if you are new to
-Python the standard Python tutorial is a great place to start
-see http://docs.python.org/tutorial/.
+impact function from scratch.
+You will need to be familiar with the basics of Python to be able to write
+and debug impact functions.
+If you are new to Python the standard Python tutorial is a great place to
+start see http://docs.python.org/tutorial/.
 
 For this impact function we want to calculate a simple impact by using the
 following function of the severity of hazard (i.e. the amount of ground shaking
@@ -50,17 +52,19 @@ As the first step we need to define the impact function class.::
 
     class SimpleImpactEarthquakeFunction(FunctionProvider)
 
-Every impact function must be subclassed from FunctionProvider. This is the
-method of registration for the impact function and allows the |project_name|
-Plugin Manager to know what impact functions are available.
+Every impact function must be subclassed from FunctionProvider.
+This is the method of registration for the impact function and allows the
+|project_name| Plugin Manager to know what impact functions are available.
 
 Impact Parameters
 .................
 
-Each impact function needs to be used in the correct context. Using a flood
-impact function for earthquakes will likely yield misleading results at best!
+Each impact function needs to be used in the correct context.
+Using a flood impact function for earthquakes will likely yield misleading
+results at best!
 As such plugins may have a variety of conditions that need to be met before
-they can be run. Such conditions may include:
+they can be run.
+Such conditions may include:
 
 * The type of hazard
 * The type of exposure
@@ -84,12 +88,17 @@ parameters, are defined in the doc string of the class::
         :author Allen
         :rating 1
         :param requires category=='hazard' and \
-                subcategory.startswith('earthquake') and \
+                subcategory=='earthquake' and \
                 layer_type=='raster'
         :param requires category=='exposure' and \
-                subcategory.startswith('population') and \
+                subcategory=='population' and \
                 layer_type=='raster'
         """
+
+     title = tr('Test Simple Earthquake impact function')
+
+     parameters = OrderedDict([('a', 0.97429), ('b', 11.037)])
+
 
 This tells |project_name| that this impact function requires at a minimum
 inputs of:
@@ -99,7 +108,14 @@ inputs of:
 * category of 'exposure', with a layer subcategory of 'earthquake' and it must
   be a layerType of 'Raster'
 
-The `require` expression can be any artibary python expression that can be
+title: tag specifies the title of the impact function as displayed in the
+|project_name| user interface.
+
+parameters: dictionary of parameters that can be configured from the user
+interface.
+In this case two parameters a and b with their default values.
+
+The `require` expression can be any arbitrary python expression that can be
 evaluated.
 
 .. note::
@@ -116,12 +132,19 @@ execution code::
 
     def run(self, input):
 
-The parameters are passed in as a dictionary. It is up to the framework to
-populate the dictionary correctly in this case with keys containing relevant
-data for the exposure and hazard.::
+The parameters are user configurable with default values defined in the Class.
+The keywords parameter needs to have at least the impact_summary entry.
+The impact_summary entry usually contains an HTML table describing the
+analysis results.
+For printing purposes, |project_name| needs several other entries in the
+keywords section such as map_title, legend_notes, legend_units, legend_title,
+impact_table.
+Please refer to :ref:`writing_impact_functions` for examples on how to use
+the keywords:
+::
 
-    def run(self, layers,
-            a=0.97429, b=11.037):
+    def run(self, layers)
+
         """Risk plugin for earthquake fatalities
 
         Input
@@ -138,6 +161,10 @@ data for the exposure and hazard.::
         H = intensity.get_data(nan=0)
         P = population.get_data(nan=0)
 
+    # Parameters
+    a = self.parameters['a']
+        b = self.parameters['b']
+
         # Calculate impact
         F = 10 ** (a * H - b) * P
 
@@ -145,23 +172,29 @@ data for the exposure and hazard.::
         R = Raster(F,
                    projection=population.get_projection(),
                    geotransform=population.get_geotransform(),
-                   name='Estimated fatalities')
+                   keywords={'impact_summary': '</table>'})
         return R
 
 
-
-At the end of the function the calculated impact layer R is returned. This
-return layer in our example is a Raster layer. The correct projection for this
-layer is ensured by passing the input layer projections.
-
+At the end of the function the calculated impact layer R is returned.
+This return layer in our example is a Raster layer.
+The correct projection for this layer is ensured by passing the input layer
+projections.
 
 Installing the impact function
 ..............................
 
 The whole impact function file will now read::
 
-    from impact.plugins.core import FunctionProvider
-    from impact.storage.raster import Raster
+    from safe.common.utilities import OrderedDict
+    from safe.impact_functions.core import (
+        FunctionProvider,
+        get_hazard_layer,
+        get_exposure_layer)
+
+    from safe.storage.raster import Raster
+    from safe.common.utilities import (
+        ugettext as tr)
 
     class SimpleImpactEarthquakeFunction(FunctionProvider):
         """Simple plugin for earthquake damage
@@ -169,16 +202,19 @@ The whole impact function file will now read::
         :author Allen
         :rating 1
         :param requires category=='hazard' and \
-                        subcategory.startswith('earthquake') and \
-                        layer_type=='raster'
+                        subcategory=='earthquake' and \
+                        layertype=='raster
         :param requires category=='exposure' and \
-                        subcategory.startswith('population') and \
-                        layer_type=='raster'
+                        subcategory=='population' and \
+                        layertype=='raster'
         """
 
-        @staticmethod
-        def run(layers,
-                a=0.97429, b=11.037):
+        title = tr('Test Simple Earthquake impact function')
+
+        parameters = OrderedDict([('a', 0.97429), ('b', 11.037)])
+
+        def run(self, layers):
+
             """Risk plugin for earthquake fatalities
 
             Input
@@ -187,13 +223,16 @@ The whole impact function file will now read::
                   P: Raster layer of population data on the same grid as H
             """
 
-            # Identify input layers
-            intensity = layers[0]
-            population = layers[1]
+            # Extract input layers
+            intensity = get_hazard_layer(layers)
+            population = get_exposure_layer(layers)
 
             # Extract data
             H = intensity.get_data(nan=0)
-            P = population.get_data(nan=0)
+            P = population.get_data(nan=0, scaling=True)
+
+            a = self.parameters['a']
+            b = self.parameters['b']
 
             # Calculate impact
             F = 10 ** (a * H - b) * P
@@ -202,8 +241,11 @@ The whole impact function file will now read::
             R = Raster(F,
                        projection=population.get_projection(),
                        geotransform=population.get_geotransform(),
-                       name='Estimated fatalities')
+                       keywords={'impact_summary': ''</table>'})
+
             return R
+
+
 
 Save this as SimpleImpactEarthquakeFunction.py into into the following
 directory::
@@ -219,3 +261,10 @@ Load the following data
 
 * Earthquake ground shaking
 * Glp10ag (Population for Indonesia)
+* You can also use the qgis project indonesia_earthquake_scenarios inside the
+  |project_name| data directory
+
+Using the indonesia_earthquake_scenarios
+
+* Select an earth quake layer and the population data
+* Your new function should be available for execution.

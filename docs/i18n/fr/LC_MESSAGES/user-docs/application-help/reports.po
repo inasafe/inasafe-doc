@@ -1,0 +1,284 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: inasafe-develop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"PO-Revision-Date: 2014-02-20 08:18+0000\n"
+"Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/"
+"language/fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# d7c3315b0c3e43ae8662377f87bc7839
+#: ../../source/user-docs/application-help/reports.rst:8
+msgid "Reports"
+msgstr ""
+
+# 0f9621e5fa7444cba914b0b67124b001
+#: ../../source/user-docs/application-help/reports.rst:10
+msgid ""
+"Reports about the impact scenario project are generated using QGIS composer "
+"templates. The default template is being shipped with the plugin, but you "
+"can easily create your own templates in QGIS and use them as basis for your "
+"reports."
+msgstr ""
+
+# 4ff5279db429439186fec52badb1eaa3
+#: ../../source/user-docs/application-help/reports.rst:16
+msgid "Localized templates are supported via the following simple schema:"
+msgstr ""
+
+# e91b3a7a0df2484aa10bb4bdb8821500
+#: ../../source/user-docs/application-help/reports.rst:18
+msgid ""
+"if there is a specified template called :file:`/path/to/template/foo.qpt` "
+"then the plugin looks in the template directory :file:`/path/to/template/` "
+"for a file called file :file:`foo-LANG.qpt`, where \"LANG\" is the language "
+"code of the system locale."
+msgstr ""
+
+# 38dcb074b2844bcc820964d3cefb9e57
+#: ../../source/user-docs/application-help/reports.rst:23
+msgid ""
+"If such a file exists it will be used for report creation, otherwise the "
+"original template :file:`/path/to/template/foo.qpt` will be used."
+msgstr ""
+
+# 74d87c9ae3f144c7aa0be92e98c06896
+#: ../../source/user-docs/application-help/reports.rst:28
+msgid "Report Template Elements"
+msgstr ""
+
+# 4dcf91ec52ce49278dfb7568e9bb851a
+#: ../../source/user-docs/application-help/reports.rst:30
+msgid "A Template contains the next three groups of elements:"
+msgstr ""
+
+# 4208addea4904208b075f1cf1c723acc
+#: ../../source/user-docs/application-help/reports.rst:32
+msgid "**Static elements**."
+msgstr ""
+
+# aab72b9e8f6b477881233da2be8c793c
+#: ../../source/user-docs/application-help/reports.rst:33
+msgid "**Elements containing tokens for replacement**."
+msgstr ""
+
+# 358920ebb8e84992a6ef48e927a2297a
+#: ../../source/user-docs/application-help/reports.rst:34
+msgid "**Elements that are directly updated by the renderer**."
+msgstr ""
+
+# 5b1534a6fa344befa2a992b8af42121e
+#: ../../source/user-docs/application-help/reports.rst:37
+msgid "Static Elements"
+msgstr ""
+
+# 80688d60c41549a5af6b8f3fb63891e7
+#: ../../source/user-docs/application-help/reports.rst:39
+msgid ""
+"These are elements which are not changed during report generation, e.g. some "
+"logos/images, additional texts, etc. You can safely remove such elements or "
+"replace them with your own as needed."
+msgstr ""
+
+# b6a4597059b847abb9861439143ab882
+#: ../../source/user-docs/application-help/reports.rst:44
+msgid "Elements containing tokens for replacement"
+msgstr ""
+
+# 6f42586b0f0e46e28e4283a1f555da73
+#: ../../source/user-docs/application-help/reports.rst:46
+msgid ""
+"In this case the element name is not significant, only the token(s) it "
+"contains. At render time any of the tokens in these elements will be "
+"replaced with translated content (if an alternative locale is in effect) "
+"from the plugin according to the keywords listed below in this document."
+msgstr ""
+
+# 7ae5c3f7519f4204a3e1cbbb0e3e5c83
+#: ../../source/user-docs/application-help/reports.rst:53
+msgid "Elements that are directly updated by the renderer"
+msgstr ""
+
+# 06be1872d5324cd6b4888d9b761e5fa1
+#: ../../source/user-docs/application-help/reports.rst:55
+msgid ""
+"In this case any content that may be present in the element is completely "
+"replaced by the realtime map renderer, although certain styling options (e."
+"g. graticule settings on the map) will remain in effect."
+msgstr ""
+
+# dcec2ed686804d3d8ee91e9636fc4fad
+#: ../../source/user-docs/application-help/reports.rst:59
+msgid ""
+"This elements are recognized by their ID's and currently the plugin supports "
+"the following elements:"
+msgstr ""
+
+# 5909095caceb4da6ab4bfeade5cbc92f
+#: ../../source/user-docs/application-help/reports.rst:62
+msgid ""
+"**safe-logo** --- QGIS composer image, which will be used for displaying "
+"InaSAFE logo with web-site url."
+msgstr ""
+
+# 4e27d792c7da4b00a3b0f445c8bb220f
+#: ../../source/user-docs/application-help/reports.rst:64
+msgid ""
+"**organisation-logo** --- QGIS composer image, which will be used for "
+"displaying organisation logo. By default a combined supporters logo is used. "
+"To use custom logo image, set the path to your PNG file in the plugin "
+"Options dialog (see :ref:`toolbar_options` for details)."
+msgstr ""
+
+# 49dfeddee57d4cccaa4a43341308dfb0
+#: ../../source/user-docs/application-help/reports.rst:69
+msgid ""
+"**impact-map** --- QGIS composer map, which will be used for displaying the "
+"impact scenario."
+msgstr ""
+
+# 000d1fc105da426dac522e1f8898cece
+#: ../../source/user-docs/application-help/reports.rst:71
+msgid ""
+"**impact-legend** --- QGIS composer legend, which will be used for "
+"displaying the legend of the impact scenario."
+msgstr ""
+
+# 4d3ae9eb2e4b44df8e175304eadb580b
+#: ../../source/user-docs/application-help/reports.rst:73
+msgid ""
+"**impact-report** --- QGIS composer label, which will be used for displaying "
+"the impact report table."
+msgstr ""
+
+# 2f0596aaff534e67adab765fcca062cc
+#: ../../source/user-docs/application-help/reports.rst:76
+msgid ""
+"As QGIS composer doesn't support automatic resizing elements, based on their "
+"contents, make sure that label have dimensions large enough to show full "
+"table."
+msgstr ""
+
+# bc02742c82a24a53967bf5955c4f0503
+#: ../../source/user-docs/application-help/reports.rst:81
+msgid "Replaceable Keywords"
+msgstr ""
+
+# 52a4ed2489244d3bac128a8c6e211529
+#: ../../source/user-docs/application-help/reports.rst:83
+msgid ""
+"This section describes tokenised keywords that are passed to the map "
+"template. To insert any of these keywords into the map template, simply "
+"enclose the key in [] (e.g. [place-name]) and it will be replaced by the "
+"text value (e.g. Tondano). The list includes static phrases which have been "
+"internationalised (and so they will be displayed in the language of the "
+"selected map local, defaulting to English where no translation is available)."
+msgstr ""
+
+# f9be0ef3bd6147f0a7722c57709ac5e6
+#: ../../source/user-docs/application-help/reports.rst:91
+msgid "The following tokenized keywords are supported:"
+msgstr ""
+
+# c9424d81789840fb9ac25860c5618e3b
+#: ../../source/user-docs/application-help/reports.rst:93
+msgid "**impact-title** --- title of the impact scenario map."
+msgstr ""
+
+# 920611b740a0465e9918323932c585b6
+#: ../../source/user-docs/application-help/reports.rst:94
+msgid "**date** --- date of the assessment."
+msgstr ""
+
+# 29b4a5d2f80a4b4abe0a3ac103da95aa
+#: ../../source/user-docs/application-help/reports.rst:95
+msgid "**time** --- time of the assessment."
+msgstr ""
+
+# 64f1f7d87f054cffaa36d696190905c7
+#: ../../source/user-docs/application-help/reports.rst:96
+msgid "**safe-version** --- version of the plugin used."
+msgstr ""
+
+# eb2a43bee0f544f7a89d28f882299a64
+#: ../../source/user-docs/application-help/reports.rst:97
+msgid ""
+"**disclaimer** --- disclaimer text. By default used next text: \"InaSAFE has "
+"been jointly developed by Indonesian Government-BPNB, Australian Govenment-"
+"AIFDR and the World Bank-GFDRR. These agencies and the individual software "
+"developers of InaSAFE take no responsibility for the correctness of outputs "
+"from InaSAFE or decisions derived as a consequence.\" To use custom "
+"disclaimer text, enter desired text the plugin Options dialog (see :ref:"
+"`toolbar_options` for details)."
+msgstr ""
+
+# 35f6b26908914a4f9bcf2e78249a9076
+#: ../../source/user-docs/application-help/reports.rst:107
+msgid "Custom templates"
+msgstr ""
+
+# 115bbb7125b549d3bf7cb9d0393c7485
+#: ../../source/user-docs/application-help/reports.rst:109
+msgid ""
+"You have a few options to customise the template **without doing any "
+"programming**. There are three primary ways you can achieve this:"
+msgstr ""
+
+# 97de6486c8264515b05b453b197cfdfb
+#: ../../source/user-docs/application-help/reports.rst:113
+msgid ""
+"Moving replaceable keywords into different elements, or removing them "
+"completely."
+msgstr ""
+
+# 2dfea7253ae84d34a666108691601d33
+#: ../../source/user-docs/application-help/reports.rst:115
+msgid ""
+"Changing template elements look and feel (e.g. setting up fonts, colors, "
+"borders, etc), moving the template elements themselves around or adding / "
+"removing them completely."
+msgstr ""
+
+# 038e276b7bcc41eab7cc9169fe8d5503
+#: ../../source/user-docs/application-help/reports.rst:118
+msgid ""
+"Creating your own template from scratch and using it instead of default one."
+msgstr ""
+
+# 88a9e72b8d294ce5bbe6c01a7f17192b
+#: ../../source/user-docs/application-help/reports.rst:120
+msgid ""
+"The default template is provided as :file:`inasafe/safe_qgis/resources/qgis-"
+"composer-templates/inasafe.qpt` and can be modified by opening the template "
+"using the QGIS map composer, making your changes and then overwriting the "
+"template or saving it in any directory."
+msgstr ""
+
+# f557fa8a570f4be78478491bb8a4ec56
+#: ../../source/user-docs/application-help/reports.rst:126
+msgid ""
+"You should take care to test your template changes before using it in a "
+"production environment."
+msgstr ""
+
+# d3bf5d304d6f4a43ac222b65854599a7
+#: ../../source/user-docs/application-help/reports.rst:129
+msgid ""
+"Also in addition to default template you can have as many custom templates "
+"as you want. Just create templates, put them in some folder somewhere in "
+"filesystem and go to :menuselection:`Plugins --> InaSAFE --> InaSAFE "
+"Options` or click on the |project_name| plugin toolbar's options icon. In "
+"Options dialog specify :guilabel:`Report template` setting. It should "
+"contain full path to the folder with your custom templates."
+msgstr ""

@@ -1,14 +1,16 @@
-.. image:: /static/training/beginner/qgis-inasafe/image6.*
+.. image:: /static/training/beginner/qgis-inasafe/image7.*
+
+..  _labels-and-classifications:
 
 Module 7: Labels and Classification
 ===================================
 
 **Learning Objectives**
 
-- Explore attribute data of an object and to understand the uses of different
+- Explore attribute data of an object and understand the uses of different
   types of data
 - Add labels to vector layers
-- Symbolize vector data using categories
+- Symbolise vector data using categories
 
 Up to now, none of the changes we have made to the map have been influenced by
 the objects that are being shown. In other words, every type of vegetation looks
@@ -18,25 +20,28 @@ certain shape in a certain area.
 
 But the whole strength of GIS is that all the objects that are visible on the
 map also have attributes. Maps in a GIS aren’t just pictures. They represent not
-only objects in locations, but also information about those objects.  In this
+only objects in locations, but also information about those objects. In this
 lesson we will explore the attribute data of an object and understand what the
 various data can be useful for.
 
-If you would like to start with the examples used in this chapter, begin by
+If you would like to start with the examples used in this module, begin by
 opening the QGIS project :file:`sleman_2_6.qgs`.
 
-**1. Attribute Data**
+1. Attribute data
+-----------------
 
-- Open the attribute table for the **POI_Sleman_OSM** layer by selecting it in
-  the layers list and clicking on the :guilabel:`Open Attribute Table` button
-  (you can also right-click on the layer and select Open Attribute Table).
+1. Open the attribute table for the :guilabel:`POI_Sleman_OSM` layer by
+   selecting it in the Layers panel and clicking the 
+   :guilabel:`Open Attribute Table` button
+   (or right-click on the layer and select 
+   :menuselection:`Open Attribute Table`).
 
-.. image:: /static/training/beginner/qgis-inasafe/image114.*
+.. image:: /static/training/beginner/qgis-inasafe/image40.*
    :align: center
 
-- Which field would be the most useful to use as a label?
+2. Which field would be the most useful to use as a label?
 
-.. image:: /static/training/beginner/qgis-inasafe/image115.*
+.. image:: /static/training/beginner/qgis-inasafe/image117.*
    :align: center
 
 You now know how to use the attribute table to see what is actually in the data
@@ -46,129 +51,119 @@ you’re able to use a given dataset, or if you need to look for another one tha
 has the required attribute data.
 
 Different attributes are useful for different purposes. Some of them can be
-represented directly as text for the map user to see.  Next we’ll see how to use
+represented directly as text for the map user to see. Next we’ll see how to use
 attributes as labels, so that users can see the text on your map.
 
-**2. The Label Tool**
+2. Label tool
+-------------
 
-Labels can be added to a map to show any information about an object. Any vector
-layer can have labels associated with it.  Labels rely on the attribute data of
-a layer for their content.
+Labels can be added to a map to show any information about an object. Any 
+vector layer can have labels associated with it. Labels rely on the attribute 
+data of a layer for their content.
 
 There are several ways to add labels in QGIS, but some are better than others.
 You may notice that when you open the Layer Properties window for a layer, there
 is a tab called “Labels.”  While this tab is designed to put labels on your map,
 it is not nearly as good as the so-called “Label Tool,” which we will learn in
-this section. Before being able to access the **Label tool**, you will need to
+this section. Before being able to access the Label tool, you will need to
 ensure that it has been activated.
 
-- Go to the menu item :menuselection:`View ‣ Toolbars`.
-- Ensure that the Label item has a checkmark next to it. If it doesn’t, click on
-  the Label item, and it will be activated.  The Label toolbar looks like this:
-
-.. image:: /static/training/beginner/qgis-inasafe/image116.*
-   :align: center
-
-- Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers list, so that it
-  is highlighted.
-- Click on the :guilabel:`Labelling` button:
-
-.. image:: /static/training/beginner/qgis-inasafe/image117.*
-   :align: center
-
-This gives you the Layer labeling settings dialog.
-
-- Check the box next to :guilabel:`Label this layer with...`
+3. Go to the menu item :menuselection:`View ‣ Toolbars`.
+4. Ensure that the Label item has a checkmark next to it. If it doesn’t, click on
+   the Label item, and it will be activated. The Label toolbar looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image118.*
    :align: center
 
-- We must indicate which of the attribute fields we want to use for the labels.
-  The **NAME** field is the mostly likely candidate for a label, so let’s select
-  NAME from the list:
+5. Click on the :guilabel:`POI_Sleman_OSM` layer in the Layers panel, so that it
+   is highlighted.
+
+6. Click on the :guilabel:`Layer Labeling Options` button:
 
 .. image:: /static/training/beginner/qgis-inasafe/image119.*
    :align: center
 
-- Click :guilabel:`OK`.  The map should now have labels like this:
+This gives you the Layer labeling settings dialog.
+
+7. Check the box next to :guilabel:`Label this layer with...`
 
 .. image:: /static/training/beginner/qgis-inasafe/image120.*
    :align: center
 
-What we have so far is good, but as you can see, the labels are overlapping the
-points that they are associated with. That doesn’t look very nice. The text is
-also a bit larger than it needs to be. Let’s fix these problems!
-
-- Open the :guilabel:`Label tool` again by clicking on its button as before.
-- Click on the :guilabel:`ellipsis (...)` button to change the text properties:
+8. We must indicate which of the attribute fields we want to use for the labels.
+   The **NAME** field is the mostly likely candidate for a label, so select
+   NAME from the drop-down box:
 
 .. image:: /static/training/beginner/qgis-inasafe/image121.*
    :align: center
 
-A standard text change dialog appears, similar to those in many other programs.
-Change the font to *Arial size 9*. Your labels will now look like this:
+9. Click :guilabel:`OK`. The map should now have labels like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image122.*
    :align: center
 
-That’s the font problem solved! Now let’s look at the problem of the labels
-overlapping the points, but before we do that, let’s take a look at the Buffer
-option.
+This is good, but as you can see, the labels are overlapping the
+points that they are associated with. That doesn’t look very nice. The text is
+also a bit larger than it needs to be. Let’s fix these problems!
 
-- Open the :guilabel:`Label tool` dialog.
-- Deactivate the label buffer by clicking on the checkbox next to the text that
-  says :guilabel:`Buffer`.
+10. Open the :guilabel:`Layer Labeling Options` again by clicking on its button.
+
+11. Click on the :guilabel:`Text` tab to change the text properties:
 
 .. image:: /static/training/beginner/qgis-inasafe/image123.*
    :align: center
 
-- Click :guilabel:`Apply`.
+12. A standard text change dialog appears, similar to those in many other
+    programs. Change the font to :kbd:`Arial` and size to :kbd:`9`. 
 
-Note the effects in the map:
+13. Now click on the :guilabel:`Buffer` tab to add a buffer space around the 
+    text. Check the box labelled :guilabel:`Draw text buffer`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image124.*
    :align: center
 
-Now you can see why we usually need label buffers!
-
-- Reactivate the buffers by clicking in the same checkbox as before,
-  and then clicking Apply.
-
-Back to the problem of the labels that overlap points.
-
-- In the Label tool dialog, go to the :guilabel:`Advanced` tab.
+Your labels will look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image125.*
    :align: center
 
-- Change the value of *Label distance to 2*.
+That’s the font problem solved! Now let’s look at the problem of the labels
+overlapping the points.
+
+14. In the Label window dialog, go to the :guilabel:`Placement` tab.
+
+15. Change the value of :guilabel:`Distance` to :kbd:`2`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image126.*
    :align: center
 
-- Click :guilabel:`Apply`. The labels no longer hover over the icons,
-  but are “buffered” a short distance away:
+16. Click :guilabel:`OK`. The labels no longer hover over the icons,
+    but are “buffered” a short distance away:
 
 .. image:: /static/training/beginner/qgis-inasafe/image127.*
    :align: center
 
-**Labeling lines**
+Labeling lines
+..............
 
 Now that you know how labeling works, there’s an additional problem. Points and
-polygons are easy to label, but what about lines? If you label them the same way
-as the points, your results would look like this:
+polygons are easy to label, but what about lines? If you label them the same 
+way as the points, they will look funny. Street name labels, for example, 
+should be parallel to the street lines, not hovering horizontally above them. 
+To make lines behave, we’ll need to edit some options.
 
-.. image:: /static/training/beginner/qgis-inasafe/image128.*
-   :align: center
+17. Hide the :guilabel:`POI_Sleman_OSM` layer so that it doesn’t distract you.
 
-This is not very useful! To make lines behave, we’ll need to edit some options.
+18. Activate labels for the :guilabel:`Jalan_Sleman_OSM` layer as before. 
+    (Remember to use the Label tool on the toolbar, not the one in Label 
+    Properties!)
 
-- Hide the **POI_Sleman_OSM** layer so that it doesn’t distract you.
-- Activate labels for the **Jalan_Sleman_OSM** layer as before. (Remember to
-  use the Label tool on the toolbar, not the one in Label Properties!)
-- Set the font *Size to 9* so that you can see more labels.
-- Zoom in so that the scale is *around 1:10000*.
-- In the Label tool dialog’s Advanced tab, choose the following settings:
+19. Set the font size to :kbd:`9` so that you can see more labels.
+
+20. Zoom in so that the scale is near 1:10000.
+
+21. On the Label window’s :guilabel:`Placement` tab, choose the following 
+    settings:
 
 .. image:: /static/training/beginner/qgis-inasafe/image129.*
    :align: center
@@ -178,25 +173,25 @@ The map will look somewhat like this, depending on scale:
 .. image:: /static/training/beginner/qgis-inasafe/image130.*
    :align: center
 
-It’s better than before, but still not ideal. For starters, some of the names
+It’s good but still not ideal. For starters, some of the names
 appear more than once, and that’s not always necessary. To prevent that from
 happening:
 
-- Enable the option :guilabel:`Merge connected lines` to avoid duplicate labels
-  (also under the Advanced tab you may need to scroll down to see it).
+22. Enable the option :guilabel:`Merge connected lines to avoid duplicate labels`
+    which is located on the :guilabel:`Rendering` tab.
 
 Another useful function is to prevent labels being drawn for features too short
 to be of notice.
 
-- Set the value of :guilabel:`Suppress labeling of features smaller than ...` to
-  *5 mm* and note the results when you click :guilabel:`Apply`.
-- Try out different :guilabel:`Placement settings` as well (also under the
-  Advanced tab). As we’ve seen before, the horizontal option is not a good idea
-  in this case, so let’s try the curved option instead!
-- Select the *curved* option under the Advanced tab of the Layer labeling
-  settings dialog.
+23. Also on the :guilabel:`Rendering` tab, set the value of 
+    :guilabel:`Suppress labeling of features smaller than ...` to
+    :kbd:`5.0 mm`. Observe the results after you click :guilabel:`Apply`.
 
-Here’s the result:
+24. Try out different settings on the :guilabel:`Placement` tab as well.
+    As we mentioned before, the horizontal option is not a good idea for roads
+    in this case, so let’s try the curved option instead!
+
+25. Select :guilabel:`Curved` under :guilabel:`Placement`. Here’s the result:
 
 .. image:: /static/training/beginner/qgis-inasafe/image131.*
    :align: center
@@ -210,51 +205,57 @@ Now that you know how attributes can make a visual difference for your map, how
 about using them to change the symbology of objects themselves? That’s the topic
 for the next section!
 
-**3. Classification**
+3. Classification
+-----------------
 
 Labels are a good way to communicate information such as the names of individual
 places, but they can’t be used for everything. For example, let’s say that we
-want to show which district each feature in our vegetation layer is in.  Using
+want to show which district each feature in our vegetation layer is in. Using
 labels, it would look like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image132.*
    :align: center
 
 Obviously this is not ideal, so we need another solution. That’s what this
-lesson is about!  In this section, we will learn how to classify vector data
+lesson is about! In this section, we will learn how to classify vector data
 effectively.
 
-**Classifying nominal data**
+3.1 Classifying nominal data
+............................
 
-- Open :guilabel:`Layer Properties` for the **vegetasi** layer.
-- Go to the :guilabel:`Style` tab.
-- Click on the dropdown that says :guilabel:`Single Symbol`:
+26. Open Layer Properties for the :guilabel:`vegetasi` layer.
+
+27. Go to the :guilabel:`Style` tab.
+
+28. Click on the drop-down box that says :guilabel:`Single Symbol`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image133.*
    :align: center
 
-- Change it to *Categorized* and the interface will change:
+29. Change it to :guilabel:`Categorized`. The interface will change:
 
 .. image:: /static/training/beginner/qgis-inasafe/image134.*
    :align: center
 
-- Change the Column to **guna_lahan** and the Color ramp to *Spectral*:
+30. Change the :guilabel:`Column` field to :guilabel:`guna_lahan` and the 
+    :guilabel:`Color ramp` to :guilabel:`Spectral`:
 
 .. image:: /static/training/beginner/qgis-inasafe/image135.*
    :align: center
 
-- Click the button labeled :guilabel:`Classify`:
+31. Click the button labelled :guilabel:`Classify`:
 
 .. image:: /static/training/beginner/qgis-inasafe/image136.*
    :align: center
 
-- Click :guilabel:`OK`.  You’ll see something like this:
+32. Click :guilabel:`OK`. You’ll see something like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image137.*
    :align: center
 
-- Click the :guilabel:`arrow` (or :guilabel:`plus` sign) next to rural in the
-  Layer list, you’ll see the categories explained:
+33. In the Layers panel, click the plus sign next to the :guilabel:`vegetasi`
+    layer. This will show more information about the layer classification
+    and styles.
 
 .. image:: /static/training/beginner/qgis-inasafe/image138.*
    :align: center
@@ -262,72 +263,78 @@ effectively.
 So, this is useful! But it hurts your eyes to look at it, so let’s see what we
 can do about that.
 
-- Open :guilabel:`Layer Properties` and go to the :guilabel:`Style` tab again.
-- Click the :guilabel:`Change` button next to Symbol.
+34. Open :guilabel:`Layer Properties` and go to the :guilabel:`Style` tab again.
+
+35. Click the :guilabel:`Change` button next to :guilabel:`Symbol`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image139.*
    :align: center
 
-- Remove the outline as you did in the previous chapter.  (change the border
-  style to “No Pen”)
-- Click the :guilabel:`Delete all` button:
+36. Remove the outline as you did in the previous module (change the border
+    style to “No Pen”).
+
+37. Click the :guilabel:`Delete all` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image140.*
    :align: center
 
-- Now click :guilabel:`Classify` again, and the new symbols will appear.
+38. Now click :guilabel:`Classify` again, and new symbols will appear.
 
-You’ll notice they don’t have outlines. This is because because you just removed
-the outlines!
-
-- Change the color for each type of vegetation by double-clicking on the colored
-  block next to its name.  You can change the color for each type of vegetation
-  to something that you think is more applicable, as we’ve done here:
+39. Change the colour for each type of vegetation by double-clicking on the 
+    coloured block next to its name. You can change the colour for each type 
+    of vegetation to something that you think is more applicable.
 
 .. image:: /static/training/beginner/qgis-inasafe/image141.*
    :align: center
 
-- Notice that the category on the bottom is empty.  Select it, and click the
-  :guilabel:`Delete` button.
-- When we click :guilabel:`OK` our map looks like this:
+40. Notice that the category on the bottom is empty. Select it, and click the
+    :guilabel:`Delete` button.
+
+41. When we click :guilabel:`OK` our map looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image142.*
    :align: center
 
 If you feel confident in your new classification skills, try to classify the
-residential layer yourself.  Use darker colors to distinguish it from
+residential layer yourself. Use darker colours to distinguish it from
 vegetation.
 
-**Ratio classification**
+3.2 Ratio classification
+........................
 
-In the previous example, we classified the **vegetasi** layer by what is known
-as nominal classification.  This type of classification is when categories are
-defined based on names.  Next we will classify the **pemukiman** layer based on
-the size of each feature.  Classifiying with attributes that contain only
-positive numbers, sych as land area, is known as ratio classification.
+In the previous example, we classified the :guilabel:`vegetasi` layer by what 
+is known as nominal classification. This type of classification is when 
+categories are defined based on names. Next we will classify the 
+:guilabel:`pemukiman` layer based on the size of each feature. Classifiying 
+with attributes that contain only positive numbers, such as land area, is 
+known as ratio classification.
 
-- Open the :guilabel:`attribute table` for the **pemukiman** layer.  Notice the
-  final column, *luas_ha*.  This attribute contains the size of the land area
-  contained within that feature polygon.
+42. Open the Attribute Table for the :guilabel:`pemukiman` layer. Notice the
+    final column, :guilabel:`luas_ha`. This attribute contains the size of the 
+    land area contained within that feature polygon.
 
 .. image:: /static/training/beginner/qgis-inasafe/image143.*
    :align: center
 
-- Open the :guilabel:`layer properties` for **pemukiman**.
-- Change the :guilabel:`Style type` to *"Graduated"*, and use *luas_ha* as the
-  column.
+43. Open the Layer Properties for :guilabel:`pemukiman`.
+
+44. Change the style type to :guilabel:`Graduated` and use :guilabel:`luas_ha` 
+    as the :guilabel:`Column`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image144.*
    :align: center
 
-- Because we are categorizing with numbers this time, a color gradient will be
-  useful for representing our categories.  Click on :guilabel:`Oranges` in the
-  color ramp, and then click :guilabel:`Classify`.
+45. Because we are categorising with numbers this time, a colour gradient will be
+    useful for representing our categories. Click on :guilabel:`Oranges` next
+    to :guilabel:`Color ramp` and then click :guilabel:`Classify`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image145.*
    :align: center
 
-- Now you’ll have something like this:
+Now you’ll have something like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image146.*
    :align: center
+
+
+:ref:`Go to next module --> <working-with-raster-data>`

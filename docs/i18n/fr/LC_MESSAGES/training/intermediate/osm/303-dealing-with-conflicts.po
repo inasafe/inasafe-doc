@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: inasafe-develop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"PO-Revision-Date: 2014-03-04 10:10+0000\n"
+"Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/"
+"language/fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# 93e313effd354dd0a1c2f9c5f5b28fb3
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:8
+msgid "Module 3: Dealing With Conflicts"
+msgstr ""
+
+# ea065e9dea934216949dd30637104444
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:10
+msgid "**Learning Objectives**"
+msgstr "**Objectifs d'apprentissage**"
+
+# 3a2a1d9138174c7ba494aeef9a81fbb4
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:12
+msgid "Identify Conflicts"
+msgstr ""
+
+# 27c4a51b48f4422d90f33e40416b5c05
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:13
+msgid "Understand Why Conflicts Happen"
+msgstr ""
+
+# be75e80b07bf49fbb4260ad72a371cfb
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:14
+msgid "Solve Conflicts"
+msgstr ""
+
+# 7acd24ccd5574545a95ba4cb6206c1e7
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:16
+msgid "**Introduction**"
+msgstr ""
+
+# 511236f4a449474182759412f63fa280
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:18
+msgid ""
+"Sometimes you are working in JOSM and when you upload all of your beautiful "
+"edits you get a nasty message complaining about a conflict."
+msgstr ""
+
+# 2ed5ccee7f4b42d0bd1518b36fb1a06b
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:24
+msgid ""
+"What happened is that you downloaded a bunch of data, which included a point "
+"which we will call Node A. Then while you were editing, somebody else also "
+"downloaded Node A, changed it, and saved the changes back on OpenStreetMap. "
+"Now when you try to upload your version of Node A, it is different from the "
+"one saved on OSM. Therefore JOSM doesn’t know which version of Node A should "
+"be saved."
+msgstr ""
+
+# ee7b0c37dcf043bd84ec29af77b53dd0
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:32
+msgid "**1. Conflicts**"
+msgstr ""
+
+# 734d5f8e76d641aeb6055e8e9c9ad675
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:34
+msgid ""
+"Sometimes, JOSM is able to figure out what to do with conflicts on its own, "
+"and it will give you a message like this:"
+msgstr ""
+
+# 003760bf2c16483fb6694354621e09f3
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:40
+msgid ""
+"This means that JOSM has automatically decided that items in your local "
+"dataset will not be uploaded to main server because they have already been "
+"deleted by another user."
+msgstr ""
+
+# f0aaa3cc9bf94fe8a5a21f7359bc0c4a
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:44
+msgid ""
+"In some conflicts, however, there is no easy action for JOSM to take and so "
+"it leaves the decision up to the user to determine what the best course of "
+"action is. This means it is up to you to resolve the conflicts."
+msgstr ""
+
+# 2d75215a1d884f07bfa68316a70a1588
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:52
+msgid ""
+"*This tells you to look at all of your conflicts in Layer 1 in the Dialog "
+"List box.*"
+msgstr ""
+
+# 2553037d00e442c7895a7dbbaff32c12
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:58
+msgid ""
+"*This window provides you with a warning as to whether you are likely to "
+"experience a conflict with your edits. If you check on the server you will "
+"be able to fix the editing issues that would arise.*"
+msgstr ""
+
+# 97ce3eadb17a4c9ebea1e016aa64865c
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:66
+msgid ""
+"*This warning tells you that JOSM failed to delete a node due to it still "
+"being referenced in a way. In order to remedy this, the user has to go back "
+"into JOSM and resolve the conflict before uploading the data.*"
+msgstr ""
+
+# 1d844fdc34d64168b9261a09d9b1ce8f
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:71
+msgid "**2. Conflict Resolution**"
+msgstr ""
+
+# ff653f2695cb4c8586ae79ca52a2e93b
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:73
+msgid ""
+"The process of resolving a conflict is quite simple, although it can appear "
+"quite confusing at first in JOSM. Basically, for every conflict JOSM will "
+"present you with two choices - your version of an object and the one that is "
+"on the server. You need to choose whether to keep your version, or whether "
+"the new version on the server should remain."
+msgstr ""
+
+# 1911c06af18d45618e3dfb3fd8ab0fd4
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:80
+msgid ""
+"You might think, “of course my version is going to be better!”. And maybe "
+"you’re right. But think back to our example at the start of this chapter. "
+"Perhaps while you were busy editing, another mapper added a lot of "
+"information to one of the nodes in your data set. If you choose your version "
+"over their version, you will lose all of that valuable information that they "
+"added. Hence you should consider keeping their version, or merging it with "
+"your own."
+msgstr ""
+
+# ca9193418e5443cd813d015f249dea39
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:89
+msgid ""
+"When you get a conflict window pop-up, it is best to choose the button :"
+"guilabel:`Synchronize ... only`. You may need to do this for more than one "
+"object, but it is best to resolve conflicts one at a time."
+msgstr ""
+
+# 29dd906b8994499f90a3edda1ca12074
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:97
+msgid ""
+"Once you click this button, you will get a pop-up window that details your "
+"conflict. The error message may look complicated, but it is rather simple. "
+"You will know what type of conflict you have by the following symbol in the "
+"top tab."
+msgstr ""
+
+# 2228d08416a8422a9293c8d7348f559f
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:106
+msgid ""
+"The conflict in this example refers to the properties, such as the location "
+"and existence of the object. This is why the coordinates and deleted state "
+"are listed."
+msgstr ""
+
+# a8379e542bd04f6dbf673859e64a9310
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:110
+msgid "Types of Conflict:"
+msgstr ""
+
+# 9bb6a47cb58f4b4a85440badda359ca3
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:112
+msgid "Properties: Object has been moved (coordinates) or deleted"
+msgstr ""
+
+# 06a6b227e92243359398ed1754a3d5a9
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:113
+msgid "Tags: Tags do not match"
+msgstr ""
+
+# 211db6453c3d477f8f05b1d8e1b716c9
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:114
+msgid "Nodes: There is a differences in the list of nodes in two ways"
+msgstr ""
+
+# 6c6fbaf3f8e5423884adaee8e5f27c57
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:115
+msgid "Members: There is a difference in the list of members in a relation"
+msgstr ""
+
+# 83cd15ec32ac42689edae557051f7a2e
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:120
+msgid ""
+"Conflicts only appear with two different edits at a time. If there are three "
+"or more conflicts, then a chain of conflicts will pop-up. Therefore you have "
+"to choose or merge with only two conflicts at a time. You can choose your "
+"version, the other version or, at times, merge the two."
+msgstr ""
+
+# a458c48fce7040689697c643a1c956fd
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:125
+msgid ""
+"In this example you do not have the option of merging. Click on the first "
+"column, or \"My version\" if you believe that your edits are correct. Click "
+"on \"Their version\" if you think that the other edits are better."
+msgstr ""
+
+# f7230c564d98477c8b9d068b527d566f
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:133
+msgid ""
+"Once you have selected which version you think is best, then click :guilabel:"
+"`Apply Resolution`. A few more windows will pop up and you will be on your "
+"way toward being able to upload your edits. Do some more editing. Then "
+"click :guilabel:`Upload`. You will get a pop-up that says:"
+msgstr ""
+
+# 8388b084e99e44f9a079bc2910ea2fab
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:144
+msgid "On your Windows menu you have a :guilabel:`Conflict List Dialog`"
+msgstr ""
+
+# 9bf7bb7d3efb474c926de1ced341c6fa
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:149
+msgid ""
+"This window displays a list of conflicts. The total number of unresolved "
+"conflicts is shown in the header. You can select or resolve a conflict by "
+"clicking on it. This is useful when you have many conflicts to deal with."
+msgstr ""
+
+# 4d0b2c4939af438e90589baa70810fb4
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:157
+msgid "You cannot upload your changes until this list is empty."
+msgstr ""
+
+# 3596215929ff4eb8b971164fcaa5c675
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:159
+msgid "**3. Ways to Avoid Conflicts**"
+msgstr ""
+
+# 12ccb10d91844920b966a5e36131ec67
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:161
+msgid "**Upload Frequently**"
+msgstr ""
+
+# bf716c04d715438b9b4599cbf884653b
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:163
+msgid ""
+"To minimize the chance and number of conflicts it is important to upload "
+"your edits regularly. Conflicts appear more frequently for those who tend to "
+"save the area they are working on in their local server and wait a while to "
+"upload it. It is best to download the area you are working on, edit it and "
+"then immediately upload it. The longer the time between downloading data and "
+"uploading changes to that data, the more likely it is that someone has "
+"edited something in the meantime."
+msgstr ""
+
+# 1c531a09e17245b48535a7db6590a25e
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:172
+msgid "**Edit in the Area You Download**"
+msgstr ""
+
+# 38b1bda86bcd4a7a8cf91db5009558da
+#: ../../source/training/intermediate/osm/303-dealing-with-conflicts.rst:174
+msgid ""
+"Editing in the specific area you have downloaded minimizes conflict risk. "
+"Make sure you do not edit outside of the area that you have downloaded. You "
+"can easily see which areas outside your download area in JOSM, because the "
+"background is made up of diagonal lines instead of being solid black."
+msgstr ""

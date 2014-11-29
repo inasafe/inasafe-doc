@@ -1,245 +1,364 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# 
+#
 # Translators:
-# harrymahar <harry.mahardhika17@gmail.com>, 2013
-# dika <mahardika.fadmastuti@gmail.com>, 2013
+# adityo dwijananto <adz.only@gmail.com>, 2014
+# mahardika fadmastuti <mahardika.fadmastuti@gmail.com>, 2013
+# Emir Hartato <emir.hartato@gmail.com>, 2014
+# harry mahardhika <harry.mahardhika17@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe\n"
+"Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-01 16:48\n"
-"PO-Revision-Date: 2013-12-27 04:16+0000\n"
-"Last-Translator: adissadis <adz.only@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/language/id/)\n"
+"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"PO-Revision-Date: 2014-02-21 08:55+0000\n"
+"Last-Translator: Emir Hartato <emir.hartato@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
+"develop/language/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# 3a8150174c5b4113aabfd46d93d5a322
+# d7c3315b0c3e43ae8662377f87bc7839
 #: ../../source/user-docs/application-help/reports.rst:8
 msgid "Reports"
 msgstr "Laporan"
 
-# 6691d09d37174bed8cf961bb58729e3c
+# 0f9621e5fa7444cba914b0b67124b001
 #: ../../source/user-docs/application-help/reports.rst:10
 msgid ""
 "Reports about the impact scenario project are generated using QGIS composer "
 "templates. The default template is being shipped with the plugin, but you "
 "can easily create your own templates in QGIS and use them as basis for your "
 "reports."
-msgstr "Laporkan tentang proyek skenario dampak yang dibuat menggunakan QGIS template komposer. Pengaturan bawaan template sudah menjadi bagian dari plugin, tapi anda dapat dengan mudah membuat template anda sendiri di QGIS dan menggunakannya sebagai dasar dalam laporan anda."
+msgstr ""
+"Laporan tentang proyek skenario dampak dibuat menggunakan QGIS template "
+"komposer. Pengaturan bawaan template sudah menjadi bagian dari plugin, tapi "
+"anda dapat dengan mudah membuat template anda sendiri di QGIS dan "
+"menggunakannya sebagai dasar dalam laporan anda."
 
-# 392716ab231146c1b5423b7922703fe5
+# 4ff5279db429439186fec52badb1eaa3
 #: ../../source/user-docs/application-help/reports.rst:16
 msgid "Localized templates are supported via the following simple schema:"
 msgstr "Template lokal didukung melalui skema sederhana berikut ini:"
 
-# 3de426ecc44148a6bf640559fd755403
+# e91b3a7a0df2484aa10bb4bdb8821500
 #: ../../source/user-docs/application-help/reports.rst:18
 msgid ""
 "if there is a specified template called :file:`/path/to/template/foo.qpt` "
 "then the plugin looks in the template directory :file:`/path/to/template/` "
 "for a file called file :file:`foo-LANG.qpt`, where \"LANG\" is the language "
 "code of the system locale."
-msgstr "Jika ada sebuah template tertentu yang disebut :file:`/path/to/template/foo.qpt` lalu plugin terlihat di direktori template :file:`/path/to/template/` untuk sebuah file memanggil file :file:`foo-LANG.qpt`, dimana \"LANG\" adalah kode bahasa untuk sistem lokal."
+msgstr ""
+"Jika ada sebuah template tertentu yang disebut :file:`/path/to/template/foo."
+"qpt` lalu plugin terlihat di direktori template :file:`/path/to/template/` "
+"untuk sebuah file memanggil file :file:`foo-LANG.qpt`, dimana \"LANG\" "
+"adalah kode bahasa untuk sistem lokal."
 
-# f97b2645799748b49cf6ff537db7fd59
+# 38dcb074b2844bcc820964d3cefb9e57
 #: ../../source/user-docs/application-help/reports.rst:23
 msgid ""
 "If such a file exists it will be used for report creation, otherwise the "
 "original template :file:`/path/to/template/foo.qpt` will be used."
-msgstr "Jika sebuah file ada maka akan digunakan untuk membuat laporan sebaliknya template asli :file:`/path/to/template/foo.qpt` akan digunakan"
+msgstr ""
+"Jika sebuah file ada maka akan digunakan untuk membuat laporan sebaliknya "
+"template asli :file:`/path/to/template/foo.qpt` akan digunakan"
 
-# 92b6db1e51fd4011872605bd5388ec45
+# 74d87c9ae3f144c7aa0be92e98c06896
 #: ../../source/user-docs/application-help/reports.rst:28
 msgid "Report Template Elements"
 msgstr "Laporan Elemen Template"
 
-# 02eb303805f9441690cfb8abefcae5ab
+# 4dcf91ec52ce49278dfb7568e9bb851a
 #: ../../source/user-docs/application-help/reports.rst:30
 msgid "A Template contains the next three groups of elements:"
 msgstr "Template ini mencakup 3 kelompok elemen selanjutnya :"
 
-# de64c58b57cd420091a4a3514ebb610d
+# 4208addea4904208b075f1cf1c723acc
 #: ../../source/user-docs/application-help/reports.rst:32
 msgid "**Static elements**."
 msgstr "**Elemen statis**."
 
-# c54bd435b0e7472585c6703a5bb0acd0
+# aab72b9e8f6b477881233da2be8c793c
 #: ../../source/user-docs/application-help/reports.rst:33
 msgid "**Elements containing tokens for replacement**."
 msgstr "**Elemen yang mencakup token-token untuk penggantian**."
 
-# a13731cf194042dca8bc016fae1d4be2
+# 358920ebb8e84992a6ef48e927a2297a
 #: ../../source/user-docs/application-help/reports.rst:34
 msgid "**Elements that are directly updated by the renderer**."
 msgstr "**Elemen yang mana ter-update secara langsung oleh para penyaji**."
 
-# 53905495bdf64177a7936457ecbdb9d8
+# 5b1534a6fa344befa2a992b8af42121e
 #: ../../source/user-docs/application-help/reports.rst:37
 msgid "Static Elements"
 msgstr "Elemen Statis"
 
-# 2da838aeef8544f7b987dce1182c2e5f
+# 80688d60c41549a5af6b8f3fb63891e7
 #: ../../source/user-docs/application-help/reports.rst:39
 msgid ""
-"These are elements which are not changed during report generation, e.g. some"
-" logos/images, additional texts, etc. You can safely remove such elements or"
-" replace them with your own as needed."
-msgstr "Ini adalah elemen-elemen yang tidak diubah selama pembuatan laporan. seperti beberapa logo/gambar. teks tambahan, dll. Anda dapat menghapus beberapa elemen atau menggantinya dengan yang anda inginkan jika itu diperlukan."
+"These are elements which are not changed during report generation, e.g. some "
+"logos/images, additional texts, etc. You can safely remove such elements or "
+"replace them with your own as needed."
+msgstr ""
+"Ini adalah elemen-elemen yang tidak diubah selama pembuatan laporan. seperti "
+"beberapa logo/gambar. teks tambahan, dll. Anda dapat menghapus beberapa "
+"elemen atau menggantinya dengan yang anda inginkan jika itu diperlukan."
 
-# a2a511db18084185abae8868fa061911
+# b6a4597059b847abb9861439143ab882
 #: ../../source/user-docs/application-help/reports.rst:44
 msgid "Elements containing tokens for replacement"
 msgstr "Elemen yang mencakup token-token untuk penggantian"
 
-# 3a1bb1966ecb4cc4a35f6a064e29487c
+# 6f42586b0f0e46e28e4283a1f555da73
 #: ../../source/user-docs/application-help/reports.rst:46
 msgid ""
 "In this case the element name is not significant, only the token(s) it "
 "contains. At render time any of the tokens in these elements will be "
 "replaced with translated content (if an alternative locale is in effect) "
 "from the plugin according to the keywords listed below in this document."
-msgstr "Dalam kasus ini elemen nama tidak signifikan, hanya sebuah (beberapa) tanda yang ada. Saat ini tanda-tanda yang ada di elemen akan diganti dengan konten yang telah diterjemahkan (jika alternatif lokal berlaku) dari plugin sesuai dengan kata kunci yang tertulis pada dokumen di bawah ini."
+msgstr ""
+"Dalam kasus ini elemen nama tidak signifikan, hanya sebuah (beberapa) tanda "
+"yang ada. Saat ini tanda-tanda yang ada di elemen akan diganti dengan konten "
+"yang telah diterjemahkan (jika alternatif lokal berlaku) dari plugin sesuai "
+"dengan kata kunci yang tertulis pada dokumen di bawah ini."
 
-# 2bbb2b9f1ed14fe29c9e2c3e0eeaed40
-#: ../../source/user-docs/application-help/reports.rst:52
+# 7ae5c3f7519f4204a3e1cbbb0e3e5c83
+#: ../../source/user-docs/application-help/reports.rst:53
 msgid "Elements that are directly updated by the renderer"
 msgstr "Elemen yang mana ter-update secara langsung oleh para penyaji"
 
-# 03ee7f46379f4915b139d7ae6d1bd7e9
-#: ../../source/user-docs/application-help/reports.rst:54
+# 06be1872d5324cd6b4888d9b761e5fa1
+#: ../../source/user-docs/application-help/reports.rst:55
 msgid ""
 "In this case any content that may be present in the element is completely "
-"replaced by the realtime map renderer, although certain styling options "
-"(e.g. graticule settings on the map) will remain in effect."
-msgstr "Dalam kasus ini semua konten yang mungkin hadir di elemen seluruhnya telah diganti oleh peta realtime, walaupun pilihan gaya tampilan ini (contoh pengaturan graticule pada peta) akan menyisakan efek tertentu"
+"replaced by the realtime map renderer, although certain styling options (e."
+"g. graticule settings on the map) will remain in effect."
+msgstr ""
+"Dalam kasus ini semua konten yang mungkin hadir di elemen seluruhnya telah "
+"diganti oleh peta realtime, walaupun pilihan gaya tampilan ini (contoh "
+"pengaturan graticule pada peta) akan menyisakan efek tertentu"
 
-# b5fe14579a094a5bb839fc27ccfc5a5f
-#: ../../source/user-docs/application-help/reports.rst:58
+# dcec2ed686804d3d8ee91e9636fc4fad
+#: ../../source/user-docs/application-help/reports.rst:59
 msgid ""
-"This elements are recognized by their ID's and currently the plugin supports"
-" the following elements:"
-msgstr "Elemen ini dikenali dengan ID-nya dan plugin saat ini mendukung elemen-elemen berikut:"
+"This elements are recognized by their ID's and currently the plugin supports "
+"the following elements:"
+msgstr ""
+"Elemen ini dikenali dengan ID-nya dan plugin saat ini mendukung elemen-"
+"elemen berikut:"
 
-# 7798030610614489932757b6f09c31c1
-#: ../../source/user-docs/application-help/reports.rst:61
+# 5909095caceb4da6ab4bfeade5cbc92f
+#: ../../source/user-docs/application-help/reports.rst:62
 msgid ""
 "**safe-logo** --- QGIS composer image, which will be used for displaying "
-"organization logo. By default BNPB logo is used. To use custom logo image, "
-"set the path to your PNG file in the plugin Options dialog (see "
-":ref:`toolbar_options` for details)."
-msgstr "**logo-safe** --- Komposer gambar, yang akan digunakan untuk menampilkan logo organisasi. Logo BNPB sudah digunakan. Untuk menggunakan gambar logo, atur arah ke file PNG anda di dialog Pilihan plugin (lihat :ref:`toolbar_options` untuk keterangan lebih lanjut)"
+"InaSAFE logo with web-site url."
+msgstr ""
+"**safe-logo** --- gambar komposer QGIS, dimana akan digunakan untuk "
+"menampilkan logo InaSAFE beserta alamat situsnya."
 
-# 7756c50df35944c0a14afa99163d2345
-#: ../../source/user-docs/application-help/reports.rst:65
+# 4e27d792c7da4b00a3b0f445c8bb220f
+#: ../../source/user-docs/application-help/reports.rst:64
+msgid ""
+"**organisation-logo** --- QGIS composer image, which will be used for "
+"displaying organisation logo. By default a combined supporters logo is used. "
+"To use custom logo image, set the path to your PNG file in the plugin "
+"Options dialog (see :ref:`toolbar_options` for details)."
+msgstr ""
+"**organisation-logo** --- gambar komposer QGIS, dimana akan digunakan untuk "
+"menampilkan logo organisasi. Kombinasi logo organisasi pendukung akan "
+"digunakan menurut pengaturan bawaan. Untuk menggunakan gambar logo anda "
+"sendiri, aturlah lokasi berkas PNG anda dialog Pilihan pada menu Plugin "
+"(lihat :ref:`toolbar_options` untuk lebih jelasnya)."
+
+# 49dfeddee57d4cccaa4a43341308dfb0
+#: ../../source/user-docs/application-help/reports.rst:69
 msgid ""
 "**impact-map** --- QGIS composer map, which will be used for displaying the "
 "impact scenario."
-msgstr "**peta-dampak** --- Komposer peta QGIS, yang akan digunakan untuk menampilkan skenario dampak."
+msgstr ""
+"**peta-dampak** --- Komposer peta QGIS, yang akan digunakan untuk "
+"menampilkan skenario dampak."
 
-# 9d5798a1571944538fda07cf3d481a4e
-#: ../../source/user-docs/application-help/reports.rst:67
+# 000d1fc105da426dac522e1f8898cece
+#: ../../source/user-docs/application-help/reports.rst:71
 msgid ""
 "**impact-legend** --- QGIS composer legend, which will be used for "
 "displaying the legend of the impact scenario."
-msgstr "**keterangan-dampak** --- Komposer Keterangan QGIS, yang akan digunakan untuk menampilkan keterangan dari skenario dampak."
+msgstr ""
+"**keterangan-dampak** --- Komposer Keterangan QGIS, yang akan digunakan "
+"untuk menampilkan keterangan dari skenario dampak."
 
-# a6c4da2975a44264b3fe8c419207890c
-#: ../../source/user-docs/application-help/reports.rst:71
+# 4d3ae9eb2e4b44df8e175304eadb580b
+#: ../../source/user-docs/application-help/reports.rst:73
+msgid ""
+"**impact-report** --- QGIS composer label, which will be used for displaying "
+"the impact report table."
+msgstr ""
+"**laporan-dampak** --- label komposer QGIS, yang akan digunakan untuk "
+"menampilkan tabel laporan dampak."
+
+# 2f0596aaff534e67adab765fcca062cc
+#: ../../source/user-docs/application-help/reports.rst:76
+msgid ""
+"As QGIS composer doesn't support automatic resizing elements, based on their "
+"contents, make sure that label have dimensions large enough to show full "
+"table."
+msgstr ""
+"Karena komposer QGIS tidak mendukung pembesaran elemen secara otomatis "
+"berdasarkan konten, maka pastikan label telah memiliki dimensi yang cukup "
+"besar agar tabel dapat ditampilkan secara keseluruhan."
+
+# bc02742c82a24a53967bf5955c4f0503
+#: ../../source/user-docs/application-help/reports.rst:81
 msgid "Replaceable Keywords"
 msgstr "Kata kunci yang dapat diganti"
 
-# 9e78532cf6644b5cbd80eaec67870cde
-#: ../../source/user-docs/application-help/reports.rst:73
+# 52a4ed2489244d3bac128a8c6e211529
+#: ../../source/user-docs/application-help/reports.rst:83
 msgid ""
 "This section describes tokenised keywords that are passed to the map "
 "template. To insert any of these keywords into the map template, simply "
 "enclose the key in [] (e.g. [place-name]) and it will be replaced by the "
 "text value (e.g. Tondano). The list includes static phrases which have been "
 "internationalised (and so they will be displayed in the language of the "
-"selected map local, defaulting to English where no translation if "
-"available)."
-msgstr "Sesi ini menjelaskan kata kunci tokenised yang dilewatkan di template peta. Untuk menyisipkan kata kunci apapun ke dalam template peta, sertakan kunci di [] (contoh [nama-tempat]) dan dia akan terganti dengan nilai teks (contoh Tondano). Daftar tersebut termasuk frasa statis yang telah diinternasionalisasi (dan karenanya akan ditampilkan dalam bahasa lokal peta tersebut, atur ke dalam bahasa inggris jika tidak ada terjemahan yang tersedia)."
+"selected map local, defaulting to English where no translation is available)."
+msgstr ""
+"Bagian ini mendeskripsikan *tokenised keyword* yang akan diturunkan pada "
+"template peta. Untuk memasukan keyword apapun pada template peta, cukup "
+"lampirkan key pada [] (misal [nama-tempat]) dan key ini akan tergantikan "
+"dengan nilai teks (misal Tondano). Daftar termasuk frasa statis yang telah "
+"di-internasionalisasikan (sehingga mereka akan ditampilkan sesuai dengan "
+"bahasa yang dipilih secara lokal pada peta, jika tidak ada terjemahan yang "
+"tersedia maka akan ditampilkan ke dalam bahasa Inggris sesuai dengan "
+"pengaturan bawaan)."
 
-# 1cd5d51e9da24da8b0778d6fb4ffdd54
-#: ../../source/user-docs/application-help/reports.rst:80
+# f9be0ef3bd6147f0a7722c57709ac5e6
+#: ../../source/user-docs/application-help/reports.rst:91
 msgid "The following tokenized keywords are supported:"
 msgstr "Kata kunci tokenized berikut ini didukung:"
 
-# 67efc76ae6ba4b28908b7c2cddbc7958
-#: ../../source/user-docs/application-help/reports.rst:82
+# c9424d81789840fb9ac25860c5618e3b
+#: ../../source/user-docs/application-help/reports.rst:93
 msgid "**impact-title** --- title of the impact scenario map."
 msgstr "**judul-dampak** --- judul dari peta skenario dampak."
 
-# 69e584f3680e4617971f91e757cbacd1
-#: ../../source/user-docs/application-help/reports.rst:83
+# 920611b740a0465e9918323932c585b6
+#: ../../source/user-docs/application-help/reports.rst:94
 msgid "**date** --- date of the assessment."
 msgstr "**tanggal** --- tanggal pengukuran."
 
-# ca3ebacdecfd484890cf247a8c1855df
-#: ../../source/user-docs/application-help/reports.rst:84
+# 29b4a5d2f80a4b4abe0a3ac103da95aa
+#: ../../source/user-docs/application-help/reports.rst:95
 msgid "**time** --- time of the assessment."
 msgstr "**waktu** --- waktu pengukuran."
 
-# 2ab76b50a77e41039c0f0ebd1357b690
-#: ../../source/user-docs/application-help/reports.rst:85
+# 64f1f7d87f054cffaa36d696190905c7
+#: ../../source/user-docs/application-help/reports.rst:96
 msgid "**safe-version** --- version of the plugin used."
 msgstr "**versi-safe** --- versi plugin yang digunakan."
 
-# cd6785754a3a4c2c972a787d61c8c7ca
-#: ../../source/user-docs/application-help/reports.rst:88
+# eb2a43bee0f544f7a89d28f882299a64
+#: ../../source/user-docs/application-help/reports.rst:97
+msgid ""
+"**disclaimer** --- disclaimer text. By default used next text: \"InaSAFE has "
+"been jointly developed by Indonesian Government-BPNB, Australian Govenment-"
+"AIFDR and the World Bank-GFDRR. These agencies and the individual software "
+"developers of InaSAFE take no responsibility for the correctness of outputs "
+"from InaSAFE or decisions derived as a consequence.\" To use custom "
+"disclaimer text, enter desired text the plugin Options dialog (see :ref:"
+"`toolbar_options` for details)."
+msgstr ""
+"**disclaimer** --- disclaimer text. Pengaturan awal menggunakan teks: "
+"\"InaSAFE telah dikembangkan bersama sama oleh Pemerintah Indonesia-BNPB, "
+"Pemerintah Australia-AIFDR dan Bank Dunia-GFDRR. Badan-badan tersebut dan "
+"individu pengembang perangkat lunak InaSAFE tidak bertanggung jawab atas "
+"kebenaran yang dihasilkan dari InaSAFEE atau keputusan yang mengikutinya "
+"sebagai konsekuensi.\" Untuk menggunakan teks peringatan terkostumisasi, "
+"masukkan teks yang diinginkan pada dialog Pengaturan plugin (lihat :ref:"
+"`toolbar_options` untuk lebih detail)."
+
+# 35f6b26908914a4f9bcf2e78249a9076
+#: ../../source/user-docs/application-help/reports.rst:107
 msgid "Custom templates"
 msgstr "Template yang lazim digunakan"
 
-# 3e499759ca7d4901ba195ade377da500
-#: ../../source/user-docs/application-help/reports.rst:90
+# 115bbb7125b549d3bf7cb9d0393c7485
+#: ../../source/user-docs/application-help/reports.rst:109
 msgid ""
 "You have a few options to customise the template **without doing any "
 "programming**. There are three primary ways you can achieve this:"
-msgstr "Anda memiliki beberapa pilihan untuk mengatur template **tanpa melakukan proses pemprograman apapun**. Ada 3 cara utama untuk melakukan ini:"
+msgstr ""
+"Anda memiliki beberapa pilihan untuk mengatur template **tanpa melakukan "
+"proses pemprograman apapun**. Ada 3 cara utama untuk melakukan ini:"
 
-# 942c4cc559df46ca9fe09d0f09881750
-#: ../../source/user-docs/application-help/reports.rst:93
+# 97de6486c8264515b05b453b197cfdfb
+#: ../../source/user-docs/application-help/reports.rst:113
 msgid ""
 "Moving replaceable keywords into different elements, or removing them "
 "completely."
-msgstr "Pindahkan kata kunci yang dapat diganti ke dalam elemen yang berbeda atau pindahkan seluruhnya."
+msgstr ""
+"Pindahkan kata kunci yang dapat diganti ke dalam elemen yang berbeda atau "
+"pindahkan seluruhnya."
 
-# 9eb7875e5a7d480f8a90ff1ae84d1ec7
-#: ../../source/user-docs/application-help/reports.rst:95
+# 2dfea7253ae84d34a666108691601d33
+#: ../../source/user-docs/application-help/reports.rst:115
 msgid ""
 "Changing template elements look and feel (e.g. setting up fonts, colors, "
 "borders, etc), moving the template elements themselves around or adding / "
 "removing them completely."
-msgstr "Ubah tampilan elemen template (contoh mengatur huruf, warna, garis, dll). pindahkan elemen template itu sendiri di sekitarnya atau tambahkan/hapus seluruhnya."
+msgstr ""
+"Ubah tampilan elemen template (contoh mengatur huruf, warna, garis, dll). "
+"pindahkan elemen template itu sendiri di sekitarnya atau tambahkan/hapus "
+"seluruhnya."
 
-# 89db6521b4654192920f612b2d08d69f
-#: ../../source/user-docs/application-help/reports.rst:98
+# 038e276b7bcc41eab7cc9169fe8d5503
+#: ../../source/user-docs/application-help/reports.rst:118
 msgid ""
 "Creating your own template from scratch and using it instead of default one."
-msgstr "Buat template anda sendiri dan gunakan template itu daripada template bawaan."
+msgstr ""
+"Buat template anda sendiri dan gunakan template itu daripada template bawaan."
 
-# 04a555dabed94304a1b30ac723281a84
-#: ../../source/user-docs/application-help/reports.rst:100
+# 88a9e72b8d294ce5bbe6c01a7f17192b
+#: ../../source/user-docs/application-help/reports.rst:120
 msgid ""
-"The template is provided as :file:`inasafe/safe_qgis/resources/qgis-"
+"The default template is provided as :file:`inasafe/safe_qgis/resources/qgis-"
 "composer-templates/inasafe.qpt` and can be modified by opening the template "
 "using the QGIS map composer, making your changes and then overwriting the "
-"template or saving it in any directory. You should take care to test your "
-"template changes before using it in a production environment."
-msgstr "Template ini disediakan sebagai :file:`inasafe/safe_qgis/resources/qgis-composer-templates/inasafe.qpt` dan dapat dimodifikasi dengan membuka template menggunakan komposer peta QGIS, buat perubahan anda dan timpa template tersebut atau simpan di direktori yang anda inginkan. Anda sebaiknya harus menguji perubahan yang anda lakukan pada template anda terlebih dahulu sebelum digunakan sebagai produk yang sebenarnya."
+"template or saving it in any directory."
+msgstr ""
+"Template pengaturan bawaan yang disediakan seperti :file:`inasafe/safe_qgis/"
+"resources/qgis-composer-templates/inasafe.qpt` dapat anda modifikasi dengan "
+"membuka template tersebut menggunakan komposer peta QGIS, membuat perubahan "
+"anda dan menimpa ulang template atau menyimpannya kembali pada direktori "
+"manapun."
 
-# 9ad7a3569e73473aa2dbf36c9b269bfb
-#: ../../source/user-docs/application-help/reports.rst:108
+# f557fa8a570f4be78478491bb8a4ec56
+#: ../../source/user-docs/application-help/reports.rst:126
 msgid ""
-"To use a custom template instead of the default one, go to "
-":menuselection:`Plugins --> InaSAFE --> InaSAFE Options` or click on the "
-"|project_name| plugin toolbar's options icon. In Options dialog specify "
-":guilabel:`Report template` setting. It should contain full path to your "
-"custom template."
-msgstr "Untuk menggunakan template yang sudah anda buat daripada template bawaan, pergi ke :menuselection:`Plugins --> InaSAFE --> Pilihan InaSAFE` atau klik pada ikon plugin pilihan toolbar |project_name|. Pada dialog pilihan lihat pengaturan :guilabel:`Laporan Template`. Di situ seharusnya terdapat segala sesuatu tentang template yang anda buat."
+"You should take care to test your template changes before using it in a "
+"production environment."
+msgstr ""
+"Anda harus mencoba melakukan tes pada perubahan template anda sebelum "
+"menggunakannya pada lingkungan produksi."
+
+# d3bf5d304d6f4a43ac222b65854599a7
+#: ../../source/user-docs/application-help/reports.rst:129
+msgid ""
+"Also in addition to default template you can have as many custom templates "
+"as you want. Just create templates, put them in some folder somewhere in "
+"filesystem and go to :menuselection:`Plugins --> InaSAFE --> InaSAFE "
+"Options` or click on the |project_name| plugin toolbar's options icon. In "
+"Options dialog specify :guilabel:`Report template` setting. It should "
+"contain full path to the folder with your custom templates."
+msgstr ""
+"Juga sebagai tambahan untuk template bawaan standar, anda dapat memiliki "
+"template anda sendiri sebanayak yang anda inginkan. Anda tinggal membuat "
+"template, letakan pada suatu folder di sistem berkas dan kemudian pergi ke :"
+"menuselection:`Plugins --> InaSAFE --> InaSAFE Options` atau klik pada ikon "
+"Pilihan pada toolbar plugin |project_name|. Pada dialog pilihan, tentukan "
+"pengaturan  :guilabel:`Report template` . Seharusnya berisi letak folder "
+"dengan template anda sendiri."

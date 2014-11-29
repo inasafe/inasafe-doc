@@ -5,11 +5,11 @@ if [ "$USER" == "jenkins" ]
 then
     # Next line is a trick to get absolute path from relative path
     # http://stackoverflow.com/questions/4045253/converting-relative-path-into-absolute-path
-    INASAFE_DEV_PATH=`cd "../../InaSAFE-Release-Branch-QGIS1/workspace"; pwd`
+    INASAFE_DEV_PATH=`cd "../../inasafe-qgis2/workspace"; pwd`
 else
     INASAFE_DEV_PATH=`cd "../inasafe-dev"; pwd`
 fi
-export QGIS_PREFIX_PATH=/usr/local/qgis-2.0
+export QGIS_PREFIX_PATH=/usr/local/qgis-2.6
 
 if [ -d $INASAFE_DEV_PATH ]
 then
@@ -24,7 +24,7 @@ else
 fi
 
 export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
-export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$INASAFE_DEV_PATH:$PYTHONPATH
+export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$INASAFE_DEV_PATH:$QGIS_PREFIX_PATH/share/qgis/python/plugins:$PYTHONPATH
 export QGIS_DEBUG=0
 export QGIS_LOG_FILE=/dev/null
 export QGIS_DEBUG_FILE=/dev/null
@@ -49,7 +49,7 @@ SPHINXBUILD=`which sphinx-build`
 TEXI2PDF=`which texi2pdf`
 
 # GENERATE PDF AND HTML FOR FOLLOWING LOCALES (EN IS ALWAYS GENERATED)
-LOCALES='id'
+LOCALES='id fr'
 
 if [ $1 ]; then
   LOCALES=$1

@@ -1,5 +1,7 @@
 .. image:: /static/training/intermediate/osm/image6.*
 
+.. _creating-josm-file-presets:
+
 Module 4: Creating JOSM File Presets
 ====================================
 
@@ -10,25 +12,26 @@ Module 4: Creating JOSM File Presets
 - Understand keys and values
 - Make presets
 - Put preset files into JOSM
-- Apply new presets on an object
+- Apply new presets to an object
 
 By now you probably have a good understanding of how objects are drawn in JOSM,
-and how you add information to these objects to describe what they are.
-You add attributes to a point, line, or shape by attaching tags to it.
+and how to add information to these objects to describe what they are.
+You add attributes to a point, line or shape by attaching tags to it.
 By using the JOSM presets menu, you can easily attach the correct tags to an
 object by finding the type of object you want to create through a menu,
 and then filling in information in a form.
-In this chapter we will review tags and presets once more,
+In this module we will review tags and presets once more,
 and then learn how we can create our own presets menus to use in JOSM.
 
-**1. Tags and Presets**
+1. Tags and presets
+-------------------
 
 Remember that after you draw an object on the map in JOSM, you need to attach
-tags in order to describe what it is, it’s name, and any any other attributes.
+tags in order to describe what it is, its name and any other attributes.
 For example when you want to create a clothing shop with the name “Some
 Clothing Shop”, you need two tags - one to describe the point as a clothing
 shop, and one to hold the name.
-In JOSM, the tags are shown in the *Properties* window when an object is
+In JOSM, the tags are shown in the Properties panel when an object is
 selected.
 
 .. image:: /static/training/intermediate/osm/image88.*
@@ -37,7 +40,7 @@ selected.
 Tags consist of two parts, the **key** and the **value**.
 The key typically defines the type of information you are attaching,
 and the value defines the specific object.
-Here, we have two tags, and hence two pairs of keys and values.
+Here we have two tags, and hence two pairs of keys and values.
 
 **KEY = VALUE**
 
@@ -51,7 +54,7 @@ this:
 .. image:: /static/training/intermediate/osm/image89.*
    :align: center
 
-And when we look at this on the `openstreetmap.org <http://openstreetmap.org>`_
+And when we look at this on the `OpenStreetMap <http://openstreetmap.org>`_
 website, the object looks like this:
 
 .. image:: /static/training/intermediate/osm/image90.*
@@ -59,7 +62,7 @@ website, the object looks like this:
 
 The reason this works is because we’ve applied the appropriate **tags**.
 
-Because OpenStreetMap is so open, anybody can add any tags they want to
+Because OSM is so open, anybody can add any tags they want to
 anything.
 But what happens when mappers in England disagree with mappers in Japan about
 the best way to tag something?
@@ -69,7 +72,7 @@ If some people tag schools as **amenity=school** but others tag them as
 **education=school**, it is a problem.
 Hence, people must agree on how to tag places.
 
-OpenStreetMap has been around for many years now, so there is an accepted
+OSM has been around for many years now, so there is an accepted
 standard for how to identify most types of locations, and those are listed on
 the Map Features page on the OSM Wiki.
 
@@ -82,7 +85,7 @@ them up every time you need them.
 Hence, JOSM has a Presets menu which makes it much easier to apply the
 correct tags to an object.
 With the Presets menu, we can easily find the entry for school,
-enter information into a form, and not have to worry about whether the
+enter information into a form and not have to worry about whether the
 correct tag is **amenity=school** or **education=school** or something else
 entirely.
 
@@ -97,16 +100,17 @@ sometimes you may want to add your own presets to create tags for the specific
 type of data you are collecting.
 The remainder of this module will explain how to create a custom Presets menu.
 
-**2. Introduction to XML**
+2. Introduction to XML
+----------------------
 
 In order to create our own Presets menu, we first need to understand a
 language called XML.
-XML, which stands for *“Extensible Mark-up Language”*, is a language
+XML, which stands for *Extensible Mark-up Language*, is a language
 similar to HTML.
-The key difference is that XML is designed to carry **data**,
+The key difference is that XML is designed to carry data,
 not display it.
 Many applications on the internet use XML to transmit data,
-including OpenStreetMap.
+including OSM.
 XML uses **elements**, and each element can contain child elements inside it.
 For example, let’s imagine that we want to create an XML file that contains
 data about a restaurant menu.
@@ -133,20 +137,21 @@ can be more elements.
      </item>
   </menu>
 
-In this example we have placed two **<item>** elements within our <menu> element
-to describe two different items that are contained in the menu.
+In this example we have placed two **<item>** elements within our **<menu>**
+element to describe two different items that are contained in the menu.
 Each item contains two more elements in them, **<cost>** and **<description>**.
 Notice also how we have written name=”Hamburger” inside the opening
 **<item>** tag.
 This is called an attribute, and adds information about the element.
 
-**XML Terminology**
+XML Terminology
+^^^^^^^^^^^^^^^
 
 - **root element:**  the outermost element of an XML document, which describes
   what is contained
 - **element:**  any XML object, contained by opening and closing tags, such as
   **<item>...data...</item>**
-- **tag:**  something contained in brackets, such as **<item>**.  **<item>** is
+- **tag:**  something contained in brackets, such as **<item>**. **<item>** is
   the opening tag of an element, and **</item>** is the closing tag.
 - **attribute:**  a piece of information contained inside a tag, such as
   **name=“Hamburger”**
@@ -164,9 +169,9 @@ point we created in JOSM previously.
      </node>
   </osm>
 
-This XML has a root element **<osm>** which indicates that OpenStreetMap data is
+This XML has a root element **<osm>** which indicates that OSM data is
 contained inside.
-Then it has one **<node>** element which is the OpenStreetMap way of
+Then it has one **<node>** element which is the OSM way of
 describing a **point**.
 The node has numerous attributes, including a unique id number,
 the coordinates of the point, the user who created the point,
@@ -175,12 +180,13 @@ Between the opening **<node>** tag and the closing **</node>** tag there are
 two more elements of type **<tag>**.
 Each **<tag>** has an attribute k and an attribute v.
 These are the keys and values that we added in JOSM.
-Notice that the **<tag>** elements don’t have a closing **</tag>**.  This is
+Notice that the **<tag>** elements don’t have a closing **</tag>**. This is
 because they don’t have any other elements contained within them,
 but instead have a forward slash indicating that it does not require a
-closing tag.  **<tag ...attributes />**
+closing tag. **<tag ...attributes />**
 
-**3. JOSM Presets Files**
+3. JOSM presets files
+---------------------
 
 As you’ve already discovered, JOSM comes pre-loaded with a presets menu that
 includes most common types of geographic options.
@@ -190,32 +196,39 @@ You can create your own presets menu by writing it in XML,
 and then loading it in JOSM.
 First, let’s look at how we can load additional presets menus into JOSM.
 
-- Open JOSM and open the Preferences menu by going to
-  :menuselection:`Edit ‣ Preferences`
-- Click on the third icon from the top which looks like this:
+1. Open JOSM and open the Preferences menu by going to
+   :menuselection:`Edit ‣ Preferences`.
+
+2. Click on the third icon from the top which looks like this:
 
 .. image:: /static/training/intermediate/osm/image92.*
    :align: center
 
-- Click on the third tab labelled :guilabel:`Tagging Presets`.
-- Select *"Buildings by Kate Chapman”* and click on the right arrow button to
-  add it to Active presets.
+3. Click on the third tab labelled :guilabel:`Tagging Presets`.
+
+4. Select :guilabel:`Buildings by Kate Chapman` and click on the right arrow 
+   button to add it to Active presets.
 
 .. image:: /static/training/intermediate/osm/image93.*
    :align: center
 
-- Click :guilabel:`OK`.
-- Restart JOSM.
-- Create a new layer by going to :menuselection:`File ‣ New Layer`.
-- Create a point and make sure it is selected.
-- Go to the Presets menu.
-  You should now see the presets that you added at the bottom.
-  Click on *“Building”* to see the the building presets form.
+5. Click :guilabel:`OK`.
 
-.. image:: /static/training/intermediate/osm/image94.*
-   :align: center
+6. Restart JOSM.
+
+7. Create a new layer by going to :menuselection:`File ‣ New Layer`.
+
+8. Create a point and make sure it is selected.
+
+9. Go to the Presets menu.
+   You should now see the presets that you added at the bottom.
 
 .. image:: /static/training/intermediate/osm/image95.*
+   :align: center
+
+10. Click on :menuselection:`Building` to see the the building presets form.
+
+.. image:: /static/training/intermediate/osm/image94.*
    :align: center
 
 When we added these new presets through the preferences menu, what we were doing
@@ -223,7 +236,8 @@ is adding an XML file that describes how the new menu should behave.
 In the next sections, we will learn how to create our own XML presets file
 that we can load into JOSM.
 
-**4. A Sample Presets File**
+4. A sample presets file
+------------------------
 
 To understand how a presets file is written, let’s first look at the XML for
 one of the pre-loaded presets in JOSM.
@@ -257,18 +271,18 @@ There are several attributes describing the element.
 +--------------------------------+-------------------------------------------------------------------------+
 | name="Place of Worship"        | The name of what you are creating.                                      |
 +--------------------------------+-------------------------------------------------------------------------+
-| icon="presets/church.*"        | The icon of the object. \*s are the most effective in OSM since they    |
-|                                | are compressed low-color graphics with transparent backgrounds.         |
+| icon="presets/church.*"        | The icon of the object. PNGs are the most effective in OSM since they   |
+|                                | are compressed low-colour graphics with transparent backgrounds.        |
 +--------------------------------+-------------------------------------------------------------------------+
-| type="node,closedway,relation" | The types of object that this preset can be applied to.  Node means it  |
+| type="node,closedway,relation" | The types of object that this preset can be applied to. Node means it   |
 |                                | can be applied on a point, way means it can be applied to a line,       |
 |                                | closedway means it can be applied to a shape, and relation means it can |
 |                                | be applied to a relation, which is a type of OSM object we have not     |
-|                                | discussed.  Notice that way is not an option here, because a place of   |
+|                                | discussed. Notice that way is not an option here, because a place of    |
 |                                | worship cannot be a line - it must be a point or a shape.               |
 +--------------------------------+-------------------------------------------------------------------------+
 
-The second line provides a link to the OpenStreetMap wiki page for this type of
+The second line provides a link to the OSM wiki page for this type of
 location.
 
 **<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=place_of_worship" />**
@@ -281,7 +295,6 @@ the top of the form.
 The fourth line describes a tag that will automatically be applied to the
 object when the preset is selected.
 In this case, we want the object to have the tag
-
 **amenity=place_of_worship**.
 
 **<key key="amenity" value="place_of_worship" />**
@@ -300,13 +313,14 @@ is left empty.
 
 **<text key="name" text="Name" default="" delete_if_empty="true" />**
 
-The lines after this are similar, but instead of text boxes, dropdown boxes are
+The lines after this are similar, but instead of text boxes, drop-down boxes are
 created where the user can select from different options.
 The tag used for this is **<combo>**
 
 The final line of the XML is the closing tag **</item>**
 
-**5. Creating Your Own Presets File**
+5. Creating your own presets file
+---------------------------------
 
 Now follow along as we create our own presets file.
 We will create an example presets menu which will allow us to tag buildings
@@ -327,8 +341,8 @@ For this, let’s invent some new tags:
 +---------------------+---------------------------+---------------------------------------------------+
 | utility:phone       | landline, mobile, yes, no | Does the household have phone access? landline    |
 |                     |                           | indicates that there is a hard phone line in the  |
-|                     |                           | house.  mobile indicates that the household has a |
-|                     |                           | mobile phone.  If we want to be less descriptive, |
+|                     |                           | house. mobile indicates that the household has a  |
+|                     |                           | mobile phone. If we want to be less descriptive,  |
 |                     |                           | we can use yes or no                              |
 +---------------------+---------------------------+---------------------------------------------------+
 | utility:internet    | landline, mobile, yes, no | Same values as for phone, this will indicate if   |
@@ -347,52 +361,53 @@ that they want for this tag.
 For **utility:water**, **utility:phone**, and **utility:internet**, there are
 four possible values that the user can select from on our form,
 so the best way to add this is with a combo box - that is,
-a dropdown menu where the user can select one of the options.
+a drop-down menu where the user can select one of the options.
 The tag **utility:electrical** only has two possible values, yes or no,
 so the best way to show this on our form is with a checkbox,
-although we could use a dropdown box if we wanted as well.
+although we could use a drop-down box if we wanted as well.
 When we are finished our form should look like this:
 
 .. image:: /static/training/intermediate/osm/image97.*
    :align: center
 
-- Open a text editor and follow along as we create the XML for this preset.
-  A simple and common editor to use on Windows is called Notepad.
-  DO NOT use a word processing program like Microsoft Word.
+11. Open a text editor and follow along as we create the XML for this preset.
+    A simple and common editor to use on Windows is called Notepad.
+    DO NOT use a word processing program like Microsoft Word.
 
 .. image:: /static/training/intermediate/osm/image98.*
    :align: center
 
-- First, we need to create a root element in our XML so that JOSM knows it
-  is a presets file.
+12. First, we need to create a root element in our XML so that JOSM knows it
+    is a presets file.
 
 .. image:: /static/training/intermediate/osm/image99.*
    :align: center
 
-- Next let’s create an element called <group>.
-  This is not actually necessary because we are only creating one preset,
-  but it will demonstrate how we can create submenus with many different
-  options on our presets menu.
-  Don’t forget to add the closing tags **</group>** and **</presets>** to
-  your elements.
+13. Next let’s create an element called <group>.
+    This is not actually necessary because we are only creating one preset,
+    but it will demonstrate how we can create submenus with many different
+    options on our presets menu.
+    Don’t forget to add the closing tags **</group>** and **</presets>** to
+    your elements.
 
 .. image:: /static/training/intermediate/osm/image100.*
    :align: center
 
-- Now we can create an item on our menu.
-  We want to create an <item> element inside of the group element.
-  Add the following text:
-
-**<item name="Household">**
-
-**</item>**
-
-- Inside the **<item>** element we will add the text box, combo boxes, and check
-  box that we want on our form.
-  Add the following inside your **<item>** element:
+14. Now we can create an item on our menu.
+    We want to create an <item> element inside of the group element.
+    Add the following text:
 
 ::
 
+  <item name="Household">
+
+  </item>
+
+15. Inside the **<item>** element we will add the text box, combo boxes and check
+    box that we want on our form.
+    Add the following inside your **<item>** element:
+
+::
 
   <item name="Household">
           <key key="building" value="yes"/>
@@ -403,12 +418,12 @@ When we are finished our form should look like this:
           <combo key="utility:internet" text="Internet Access" values="landline, mobile, yes, no" display_values="Landline Access, Mobile Internet Access, Yes, No" />
   </item>
 
-- When you are finished your file will look like this:
+When you are finished your file will look like this:
 
 .. image:: /static/training/intermediate/osm/image101.*
 
 Much of this is similar to what you saw previously.
-Let’s analyze it.
+Let’s analyse it.
 Inside the **<item>** element we have created six more elements:
 
 1. <key>
@@ -422,55 +437,68 @@ Can you guess what each of these elements do?
 They create different items on our presets form in JOSM.
 The first line, **<key key="building" value="yes"/>**,
 does not display anything on our form, but tells JOSM to automatically apply
-the tag **building=yes** to our object when this preset is selected.
+the tag **building=yes** to an object when this preset is selected.
 
 The second line, **<text key="name" text="Name" default=""delete_if_empty="true" />**,
 creates a text field with the key name, as we saw when we looked at the
 presets XML in the previous section.
 
-We have three **<combo>** elements and each elements has several attributes.
+We have three **<combo>** elements and each element has several attributes.
 key indicates what key should be created for the tag.
 Text indicates what text should be displayed on our form.
-Values are the possible values that the user can select in the dropdown box.
+Values are the possible values that the user can select in the drop-down box.
 And we’ve added something new - the attribute **display_values**,
-which let’s us show different text in the dropdown boxes than the values that
+which let’s us show different text in the drop-down boxes than the values that
 will be created.
-This is useful if we want the form to be more descriptive about the the
+This is useful if we want the form to be more descriptive about the
 options a user can select, or if we want the display values to be in a
 different language from English.
 
 Lastly, we’ve added one new element, a **checkbox**.
 The code for this is simple, **<check key="utility:electrical"text="Electricity Access" />**.
-This simple creates a check box on our form.
+This creates a check box on our form.
 When it is selected, JOSM will add a tag to our object that says
 **utility:electrical=yes**.
 
-- Finally, let’s save the XML file so that we can load it into JOSM.
-  In Notepad, go to :menuselection:`File ‣ Save`
-- Type in household_access.xml as the filename.
+16. Finally, let’s save the XML file so that we can load it into JOSM.
+    In Notepad, go to :menuselection:`File ‣ Save`.
 
-- In the box that says :guilabel:`Save as type:` be sure to select
-  :guilabel:`All Files`, because we don’t want to save the file as a text
-  document, but rather as an XML document.
-- Click :guilabel:`Save`
+17. Type in :kbd:`household_access.xml` as the filename.
 
-**6. Try It!**
+18. In the box that says :guilabel:`Save as type:` be sure to select
+    :guilabel:`All Files`, because we don’t want to save the file as a text
+    document, but rather as an XML document.
+
+19. Click :guilabel:`Save`.
+
+
+6. Try It!
+----------
 
 Now let’s open our presets file in JOSM and see how it looks!
 
-- Open the Preferences in JOSM and go to :guilabel:`Tagging Presets`, as you did
-  previously.
-- On the right side next to Active presets click on the :guilabel:`+` button.
+20. Open the Preferences in JOSM and go to :guilabel:`Tagging Presets`, as you 
+    did previously.
+
+21. On the right side next to Active presets click on the :guilabel:`+` button.
 
 .. image:: /static/training/intermediate/osm/image102.*
    :align: center
 
-- Type *“Household Presets”* into the Name field.
-- Next to URL / File, open the xml file that you just created.
-- Click :guilabel:`OK`, and :guilabel:`OK` again to save your preferences.
-- Restart JOSM.
-- Create a new layer and add a point.
-- Go to the presets menu.  You should see the menu that you just created!
+22. Type :kbd:`Household Presets` into the :guilabel:`Name` field.
+
+23. Next to URL / File, open the xml file that you just created.
+
+24. Click :guilabel:`OK`, and :guilabel:`OK` again to save your preferences.
+
+25. Restart JOSM.
+
+26. Create a new layer and add a point.
+
+27. Go to the Presets menu. You should see the menu that you just created!
 
 .. image:: /static/training/intermediate/osm/image103.*
    :align: center
+
+
+:ref:`Go to next module --> <using-private-data-store>`

@@ -1,863 +1,1116 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# 
+#
 # Translators:
-# adissadis <adz.only@gmail.com>, 2014
-# dewisulistio <dewi.sulistio@gmail.com>, 2013
-# dika <mahardika.fadmastuti@gmail.com>, 2014
-# raniedwianugrah <raniedwianugrah@gmail.com>, 2013
-# macho <werner.macho@gmail.com>, 2014
-# wulankhairunisa <wulan.khairunisa@gmail.com>, 2013
+# adityo dwijananto <adz.only@gmail.com>, 2014
+# adityo dwijananto <adz.only@gmail.com>, 2014
+# Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2013
+# mahardika fadmastuti <mahardika.fadmastuti@gmail.com>, 2014
+# elida nurrohmah <uswatunkh21@yahoo.com>, 2014
+# Werner Macho <werner.macho@gmail.com>, 2014
+# mahardika fadmastuti <mahardika.fadmastuti@gmail.com>, 2014
+# Ranie Dwi Anugrah <raniedwianugrah@gmail.com>, 2013
+# Wulansari Khairunisa <wulan.khairunisa@gmail.com>, 2013
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe\n"
+"Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-01 16:48\n"
-"PO-Revision-Date: 2014-01-17 22:10+0000\n"
-"Last-Translator: macho <werner.macho@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe/language/id/)\n"
+"POT-Creation-Date: 2014-10-10 09:48+0200\n"
+"PO-Revision-Date: 2014-09-30 07:50+0000\n"
+"Last-Translator: Emir Hartato <emir.hartato@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
+"develop/language/id/)\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# cc3b811d864348528c62705cdec7ecb2
+# c043a9b1cef541dd8794d1e807822cc4
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:8
 msgid "Module 6: Working with Vector Data"
 msgstr "Modul 6: Bekerja dengan Data Vektor"
 
-# d822ad402746407ba2d76d2db14865c2
+# b1110282ceba44eab4db350ed5e373cd
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:10
 msgid "**Learning Objectives**"
 msgstr "**Tujuan Pembelajaran**"
 
-# 133871dcc326401981f423d26ecb36a1
+# 7402a6e2e20f4772acb27e812000edc2
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:12
 msgid "Understand vector data"
 msgstr "Memahami data vektor"
 
-# 5f2ed99b0a66441ba9cd517176256d21
+# 7e8f251a26ef4ecda96213e010d39858
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:13
 msgid "Identify attribute of vector data"
 msgstr "Mengidentifikasi atribut data vektor"
 
-# 52888736c5924454bbc7e6711962b393
+# cdb37b40a19e4f658fe5a3b00525578f
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:14
 msgid "Add vector layers"
 msgstr "Menambah layer vektor"
 
-# 4754870a032342a4b43a17121e1c6bd0
+# f3ddb7c6bc5f47158db5252a109071f3
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:15
 msgid "Symbolize vector layers"
 msgstr "Mengatur simbol layer simbologi"
 
-# 8e8aac6625ec4fafa90bd23a65b61035
+# 370fbd0070e04a1d921d2c32f7fe796c
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:17
 msgid ""
-"In this chapter, we will learn what is meant by vector data.  We will "
+"In this chapter, we will learn what is meant by vector data. We will "
 "practice adding it to our QGIS projects, and we will learn how to style the "
 "data in different ways."
-msgstr "Pada modul ini, kita akan mempelajari apa itu data vektor. Kita akan melakukan praktek untuk menambahkan data vektor pada proyek QGIS kita, dan kita akan mempelajari bagaimana melakukan perancangan data dengan berbagai cara."
+msgstr ""
+"Pada modul ini, kita akan mempelajari apa itu data vector. Kita akan "
+"melakukan praktek untuk menambahkan data vektor pada proyek QGIS, dan kita "
+"akan mempelajari bagaimana untuk melakukan perancangan data dengan berbagai "
+"cara."
 
-# 04e7da1ab7c24414857f7b903a085840
+# 69aa3d4fd2d6444881bf3becdd6b61d6
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:22
 msgid "**1. Vector Data**"
 msgstr "**1. Data Vektor**"
 
-# 087b2230eaa84102aaeb2023e0096c94
+# 88474fceb6af46c4b1279d40283b243f
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:24
 msgid ""
-"Vector data is the most common type of data found in GIS.  A vector is "
-"essentially something in the form of a dots, or lines connecting those dots."
-"  In other words, points, lines, and polygons are all **vectors**.  (curved "
-"lines are vectors too, but we won’t worry about that for now)  We are "
+"Vector data is the most common type of data found in GIS. A vector is "
+"essentially something in the form of a dots, or lines connecting those dots. "
+"In other words, points, lines, and polygons are all **vectors** (curved "
+"lines are vectors too, but we won’t worry about that for now). We are "
 "already quite familiar with vector data because in the previous unit, we "
 "used JOSM to create it!"
-msgstr "Data vektor merupakan tipe data yang umum ditemukan dalam SIG. Sebuah vektor pada intinya merupakan sesuatu yang berbentuk sebuah titik, atau garis yang menghubungkan titik-titik tersebut. Dengan kata lain, titik, garis, dan poligon merupakan **vektor**. (garis lengkung merupakan vektor juga, tetapi sekarang kita abaikan dahulu hal tersebut). Kita sudah paham dengan data vektor karena di unit sebelumnya, kita sudah menggunakan JOSM untuk membuatnya!"
+msgstr ""
+"Data vektor merupakan tipe data yang umum ditemukan dalam SIG. Sebuah vektor "
+"pada intinya merupakan sesuatu yang berbentuk sebuah titik, atau garis yang "
+"menghubungkan titik-titik tersebut. Dengan kata lain, titik, garis, dan "
+"poligon merupakan **vektor** (garis lengkung merupakan vektor juga, tetapi "
+"kita tidak akan mengkhawatirkan hal tersebut sekarang). Kita sudah paham "
+"dengan data vektor karena di unit sebelumnya, kita sudah menggunakan JOSM "
+"untuk membuatnya!"
 
-# 80e6dfb9945548fba06975abea5a763f
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:31
+# 4a9bb223dc084bac9df8914d91493e26
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:32
 msgid ""
-"Each object in a vector dataset is referred to as a ‘feature.’  When we are "
+"Each object in a vector dataset is referred to as a ‘feature.’ When we are "
 "using JOSM we often refer to them as objects, but in traditional GIS "
-"terminology they are features.  A polygon that represents a building is a "
-"feature, as is a line that represents a river.  Each feature has a "
-"geographic location, and is attached to other data that describe the "
-"feature."
-msgstr "Setiap objek dalam sebuah set data vektor direferensikan sebagai sebuah ‘fitur’. Ketika kita menggunakan JOSM kita seringkali mereferensikannya sebagai sebuah objek, tetapi pada terminologi SIG tradisional, mereka direferensikan sebagai fitur. Sebuah poligon yang merepresentasikan sebuah bangunan adalah sebuah fitur, sebagaimana garis yang merepresentasikan sungai. Setiap fitur memiliki lokasi geografi, dan terlampirkan pada data lain yang mendeskripsikan fitur."
+"terminology they are features. A polygon that represents a building is a "
+"feature, as is a line that represents a river. Each feature has a geographic "
+"location, and is attached to other data that describe the feature."
+msgstr ""
+"Setiap objek dalam sebuah set data vektor direferensikan sebagai sebuah "
+"‘fitur.’ Ketika kita menggunakan JOSM kita seringkali mereferensikannya "
+"sebagai sebuah objek, tetapi pada terminologi SIG tradisional, mereka "
+"direferensikan sebagai fitur. Sebuah poligon yang merepresentasikan sebuah "
+"bangunan adalah sebuah fitur, sebagaimana garis yang merepresentasikan "
+"sungai. Setiap fitur memiliki lokasi geografis, dan terlampirkan pada data "
+"lain yang mendeskripsikan fitur."
 
-# 28662ed3fde54fe4a9defe77d1932af6
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:37
+# f3c4f3247a6743cea5f4f32706e75f36
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:40
 msgid ""
-"One important thing to note is that QGIS layers can only contain one type of"
-" feature.  That is, one layer can’t contain both point features and line "
-"features, because they are different types of data.  Hence if you have a "
-"file that contains school polygons and another file that contains school "
-"points, you would add them as two separate layers."
-msgstr "Salah satu hal yang penting untuk dicatat adalah layer QGIS hanya mengandung satu tipe fitur. Artinya, satu layer tidak dapat mengandung fitur titik dan fitur graris, karena mereka merupakan tipe data yang berbeda. Namun apabila Anda ingin memiliki sebuah file yang memiliki poligon sekolah dan file lain yang memiliki titik-titik sekolah, Anda dapat menambahkan mereka sebagai dua layer yang terpisah."
+"One important thing to note is that QGIS layers can only contain one type of "
+"feature. That is, one layer can’t contain both point features and line "
+"features, because they are different types of data. Hence if you have a file "
+"that contains school polygons and another file that contains school points, "
+"you would add them as two separate layers."
+msgstr ""
+"Salah satu hal yang penting untuk dicatat adalah *layer* QGIS hanya "
+"mengandung satu tipe fitur. Artinya, satu layer tidak dapat mengandung fitur "
+"titik dan fitur graris, karena mereka merupakan tipe data yang berbeda. "
+"Namun apabila anda ingin memiliki sebuah file yang memiliki poligon sekolah "
+"dan file lain yang memiliki titik-titik sekolah, anda dapat menambahkan "
+"mereka sebagai dua layer yang terpisah."
 
-# a954715029bc439ebd9fe109f4759074
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:43
-msgid ""
-"Almost always, polygon layers will be at the bottom of your layer list, line"
-" layers in the middle, and point layers at the top.  You don’t generally "
-"want your polygons overlapping your lines and points."
-msgstr "Perhatikan selalu, layer poligon sebaiknya ada di daftar layer paling bawah, layer garis di tengah, dan layer titik di atas. Anda pastinya tidak ingin poligon Anda menimpa garis dan titik."
-
-# 29f82e67ca13493ba9b4061d7ecfc1f8
+# bc26b58d414645b4a24cd419f58d0a3d
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:47
+msgid ""
+"Almost always, polygon layers will be at the bottom of your layer list, line "
+"layers in the middle, and point layers at the top. You don’t generally want "
+"your polygons overlapping your lines and points."
+msgstr ""
+"Perhatikan selalu, layer poligon sebaiknya ada di daftar layer paling bawah, "
+"layer garis di tengah, dan layer titik di atas. Pada umumnya anda tidak "
+"ingin poligon anda menimpa garis dan titik."
+
+# 9a42ccd0e48447b8a7a1a847f065a066
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:51
 msgid "**2. Attribute Data**"
 msgstr "**2. Data Atribut**"
 
-# 5c70fcdc2b6d470091b509e660f2aeb8
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:49
+# 8301f103367441c4b052403b72777744
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:53
 msgid ""
 "It’s important to know that the data you will be working with does not only "
 "represent where objects are in space, but also tells you what those objects "
 "are."
-msgstr "Sangat penting bahwa data yang akan Anda kerjakan tidak hanya merepresentasikan obyek yang ada di lapangan, tetapi juga memberi tahu objek apakah itu."
+msgstr ""
+"Sangat penting bahwa data yang akan Anda kerjakan tidak hanya "
+"merepresentasikan obyek yang ada di lapangan, tetapi juga memberi tahu objek "
+"apakah itu."
 
-# 063ecb0f3fc64b2eb758d299977629fa
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:52
+# eeef4328138447dca61e9d9f1e54cf95
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:56
 msgid ""
 "Open the project :file:`sleman_2_5.qgs`.  This is the same project that you "
 "worked with in Module 3."
-msgstr "Buka proyek :file:`sleman_2_5.qgs`. Ini merupakan proyek yang sama yang telah Anda kerjakan di Modul 3."
+msgstr ""
+"Buka proyek :file:`sleman_2_5.qgs`. Ini merupakan proyek yang sama yang "
+"telah Anda kerjakan di Modul 3."
 
-# d7c83db3937141158fe9a4f936db992a
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:54
-msgid "Close the InaSAFE panel if you still have it open."
-msgstr "Tutup panel InaSAFE jika masih terbuka."
+# 07aee111ebff479d8c080474ae72ad84
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:58
+msgid "Close the |project_name| panel if you still have it open."
+msgstr "Tutup panel |project_name| jika masih terbuka."
 
-# c5dd1e0f763640518fd1625c65f84f19
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:55
+# 83c1f229a5424367936bd4f4fdb1aa86
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:59
 msgid ""
 "You can see in your project the position of Sleman districts, the railway, "
 "and some roads, but you can’t see all of the data contained in those layers."
-msgstr "Anda dapat lihat di proyek Anda posisi dari Kecamatan Sleman, jalur rel, dan jalan, tetapi Anda tidak dapat melihat seluruh data yang terkandung dalam layer-layer tersebut."
+msgstr ""
+"Anda dapat lihat di proyek Anda posisi dari Kecamatan Sleman, jalur rel, dan "
+"jalan, tetapi Anda tidak dapat melihat seluruh data yang terkandung dalam "
+"layer-layer tersebut."
 
-# 2a20e840ca0040029aa4d0a4c6de0d40
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:57
+# 04d8268ddc5944b199b55a80765a23a5
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:61
 msgid "Select **Jalan_Sleman_OSM** in the layers list."
 msgstr "Pilih **Jalan_Sleman_OSM** pada daftar layer."
 
-# 0bc73de5c1e34b20813015424d1fd2f5
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:62
+# 3128f0bffcae47848317f93d6ec98bc9
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:66
 msgid "Click the :guilabel:`Open Attribute Table` button:"
 msgstr "Klik kanan, dan klik tombol :guilabel:`Open Attribute Table` :"
 
-# 34f99657f61446d68c4346176bca96e9
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:67
+# beeea368359a4e64a716d3607414d44b
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:71
 msgid ""
-"You will see a table with more data about the streets layer. This extra data"
-" is called *attribute data*. The lines that you can see on your map "
-"represent where the streets go this is the *spatial data*. You will remember"
-" in JOSM that there was the same division. The points, lines, and shapes you"
-" drew tell us **where**, but the tags, or attributes, tell us **what**.  "
-"These definitions are commonly used in GIS, so it’s essential to remember "
-"them!"
-msgstr "Anda akan melihat tabel dengan data yang lebih banyak tentang layer jalan. Data ekstra tersebut disebut *data atribut*. Garis-garis yang Anda lihat pada peta Anda menggambarkan kemana garis tersebut menuju – ini merupakan *data spatial*. Anda akan mengingat pada JOSM dimana terdapat bagian yang sama. Titik, garis, dan bentuk yang anda gambar memberitahu kita **dimana**, tetapi tags, atau atribut, memberitahukan kita **apa**. Definisi tersebut sangat umum digunakan di SIG, jadi sangat penting untuk diingat!"
+"You will see a table with more data about the streets layer. This extra data "
+"is called *attribute data*. The lines that you can see on your map represent "
+"where the streets go this is the *spatial data*. You will remember in JOSM "
+"that there was the same division. The points, lines, and shapes you drew "
+"tell us **where**, but the tags, or attributes, tell us **what**. These "
+"definitions are commonly used in GIS, so it’s essential to remember them!"
+msgstr ""
+"Anda akan melihat tabel dengan data yang lebih banyak tentang layer jalan. "
+"Data ekstra tersebut disebut *data atribut*.  Garis-garis yang anda dapat "
+"lihat pada peta anda menggambarkan kemana garis tersebut menuju – ini "
+"merupakan *data spatial*. Anda akan mengingat pada JOSM dimana terdapat "
+"bagian yang sama. Titik, garis, dan bentuk yang anda gambar memberitahu kita "
+"**dimana**, tetapi tags, atau atribut, memberitahukan kita **apa**. Definisi "
+"tersebut sangat umum digunakan di SIG, jadi sangat penting untuk diingat!"
 
-# efcd02cce4124e1c94dceddac1abd460
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:77
+# c721ecd4fb7b447ba095ade5d2a226c8
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:84
 msgid ""
-"Take a look at the attribute table. Each row in the table is associated with"
-" one feature in the streets layer. Each column contains one of the "
+"Take a look at the attribute table. Each row in the table is associated with "
+"one feature in the streets layer. Each column contains one of the "
 "attributes. If you select other layers and click on the :guilabel:`Open "
 "Attribute Table` button, you’ll see different tables."
-msgstr "Lihatlah pada tabel atribut. Setiap baris tabel menghubungkan satu fitur pada layer jalan. Setiap kolom mengandung satu atribut. Jika Anda memilih layer lain dan mengklik tombol :guilabel:`Open Attribute Table`, maka Anda akan melihat tabel yang berbeda."
+msgstr ""
+"Lihatlah pada tabel atribut. Setiap baris tabel menghubungkan satu fitur "
+"pada layer jalan. Setiap kolom mengandung satu atribut. Jika Anda memilih "
+"layer lain dan mengklik tombol :guilabel:`Open Attribute Table`, maka Anda "
+"akan melihat tabel yang berbeda."
 
-# bb03b7d164c44449bd6f873d9cdcc9e4
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:81
+# b96f1c13ac544265a913f1101cfca8b5
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:89
 msgid "Close the attribute table."
 msgstr "Tutup tabel atribut."
 
-# bf3ee9a9fa2148cd91fc90088a56c9a3
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:83
+# e0a06f9228fe4116841caa1bb24fb0ae
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:91
 msgid "**3. Adding Vector Data**"
 msgstr "**3. Menambahkan Data Vektor**"
 
-# 1b084235d1df43adaec6d72d04253726
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:85
+# 6a9d537a9f16415c801d59728de49b51
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:93
 msgid "**Shapefiles**"
 msgstr "**Shapefiles**"
 
-# d6fb3269bc2c4e7e843911d22f326bb7
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:87
+# 28dcfff4cc394b1d88f4b360b85c8d17
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:95
 msgid ""
 "You’ve already added vector data to a project once, in the form of a "
 "shapefile. As we mentioned previously, a shapefile is a commonly used "
-"geographic file format.  It can easily be converted into other formats, and "
-"most GIS software can read this type of file.  You may notice when adding a "
-"shapefile that there are numerous files in your shapefile directory with the"
-" same name.  This is because a shapefile actually relies on a collection of "
-"several other files to store the data and keep various settings.  When you "
+"geographic file format. It can easily be converted into other formats, and "
+"most GIS software can read this type of file. You may notice when adding a "
+"shapefile that there are numerous files in your shapefile directory with the "
+"same name. This is because a shapefile actually relies on a collection of "
+"several other files to store the data and keep various settings. When you "
 "add a shapefile to your project, you should always add the one that ends in "
 "**.shp**, but the rest of the files are important too!"
-msgstr "Anda sudah menambahkan data vektor pada sebuah proyek, dalam format sebuah shapefile. Sebagaimana yang kami jelaskan sebelumnya, sebuah shapefile merupakan format yang umum digunakan untuk format file geografi. Shapefile dapat dengan mudah dikonversikan ke dalam berbagai macam format lain, dan kebanyakan perangkat lunak SIG dapat membaca jenis file ini. Anda mungkin akan menyadari bahwa ketika menambahkan sebuah shapefile, terdapat sejumlah file pada folder shapefile Anda dengan nama yang sama. Ini karena sebuah shapefile sebenarnya bergantung pada sekumpulan beberapa file untuk menyimpan data dan menetapkan berbagai pengaturan. Ketika Anda menambahkan sebuah shapefile ke proyek Anda, Anda harus menambahkan satu yang berakhiran **.shp**, tetapi file yang lain juga sangat penting!"
+msgstr ""
+"Anda sudah menambahkan data vektor pada sebuah proyek, dalam format sebuah "
+"shapefile. Sebagaimana yang kami jelaskan sebelumnya, sebuah shapefile "
+"merupakan format yang umum digunakan untuk format file geografi. Shapefile "
+"dapat dengan mudah dikonversikan ke dalam berbagai macam format lain, dan "
+"kebanyakan perangkat lunak SIG dapat membaca jenis file ini. Anda mungkin "
+"akan menyadari bahwa ketika menambahkan sebuah shapefile, terdapat sejumlah "
+"file pada folder shapefile anda dengan nama yang sama. Ini karena sebuah "
+"shapefile sebenarnya bergantung pada sekumpulan beberapa file untuk "
+"menyimpan data dan menetapkan berbagai pengaturan. Ketika anda menambahkan "
+"sebuah shapefile ke proyek anda, anda harus menambahkan satu yang "
+"berakhiran .shp, tetapi file yang lain juga sangat penting!"
 
-# 5ab78505657843129862a1ff8ec26edb
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:97
+# 2dd89430e9a941cc906ad6667a0e90cf
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:107
 msgid ""
-"Do you remember how to add a shapefile?  Try adding the layer "
-":file:`POI_Sleman_OSM`, from the shapefile located in the tutorial "
-"directory. If you don’t remember how to add a new vector layer, refer to the"
-" instructions in chapter 2."
-msgstr "Apakah anda ingat cara menambahkan shapefile? Cobalah untuk menambahkan layer :file:`POI_Sleman_OSM`, dari shapefile yang terletak di folder tutorial. Jika Anda tidak ingat bagaimana menambahkan layer vektor, buka kembali petunjuknya di Modul 2."
+"Do you remember how to add a shapefile? Try adding the layer :file:"
+"`POI_Sleman_OSM`, from the shapefile located in the tutorial directory. If "
+"you don’t remember how to add a new vector layer, refer to the instructions "
+"in chapter 2."
+msgstr ""
+"Apakah Anda ingat cara menambahkan shapefile? Cobalah untuk menambahkan "
+"layer :file:`POI_Sleman_OSM`, dari shapefile yang terletak di folder "
+"tutorial. Jika Anda tidak ingat bagaimana menambahkan layer vektor, bukalah "
+"kembali petunjuknya di Modul 2."
 
-# bdaddb3b6a6f4312a42ad88d2a002b5f
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:101
+# 3fa44ddda0d44a9fbce9766af521c3de
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:112
 msgid "Your project should look like this after the new layer has been added:"
-msgstr "Proyek Anda seharusnya akan terlihat seperti ini setelah Anda menambahkan layer yang baru:"
+msgstr ""
+"Proyek Anda seharusnya akan terlihat seperti ini setelah Anda menambahkan "
+"layer yang baru:"
 
-# 1cae894c29c546238e0648479b6e2386
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:106
+# 7611767b50bf4313b71f55c6c35423ab
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:117
 msgid "**Databases**"
 msgstr "**Database**"
 
-# 9746e4f88f8c497ba9e4cf9267afa815
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:108
+# 985455c8843f4eb5a95bf989110bb278
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:119
 msgid ""
-"Shapefiles (and other types of files) are one way to store geographic data."
-"  You can also load a vector layer into QGIS from a database.  You may "
-"already be familiar with Database Management Systems (DBMS) such as "
-"Microsoft Access.  GIS applications also make use of databases to store "
-"geographic data.  Databases can be hosted and used locally on your computer,"
-" or could be shared between users over a network or even the internet."
-msgstr "Shapefiles (dan tipe file lainnya) merupakan sebuah cara untuk menyimpan data geografis.Anda juga dapat memuat layer vektor pada QGIS dari sebuah database.Anda mungkin paham dengan Sistem Manajemen Database (Database Management System/DBMS) seperti Microsoft Access.Aplikasi SIG juga dapat memanfaatkan database untuk menyimpan data geografi. Database dapat disimpan dan digunakan secara lokal pada komputer anda, atau dapat dibagikan kepada pengguna lain di sebuah jaringan atau bahkan internet. "
+"Shapefiles (and other types of files) are one way to store geographic data. "
+"You can also load a vector layer into QGIS from a database. You may already "
+"be familiar with Database Management Systems (DBMS) such as Microsoft "
+"Access. GIS applications also make use of databases to store geographic "
+"data. Databases can be hosted and used locally on your computer, or could be "
+"shared between users over a network or even the internet."
+msgstr ""
+"Shapefiles (dan tipe file lainnya) merupakan sebuah cara untuk menyimpan "
+"data geografis. Anda juga dapat memuat layer vektor pada QGIS dari sebuah "
+"database. Anda mungkin paham dengan Sistem Manajemen Database (Database "
+"Management System/DBMS) seperti Microsoft Access. Aplikasi SIG juga dapat "
+"memanfaatkan database untuk menyimpan data geografi. Database dapat disimpan "
+"dan digunakan secara lokal pada komputer anda, atau dapat dibagikan kepada "
+"pengguna lain di sebuah jaringan atau bahkan internet."
 
-# 7cbfd5ae20ef4bd29329727a413ea64e
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:115
-msgid ""
-"Let’s try adding a layer from a database. Click :guilabel:`Add SpatiaLite "
-"Layer` icon.  If you can’t find it, right-click on the toolbar and make sure"
-" that the “Manage Layers” toolbar is enabled."
-msgstr "Mari mencoba menambahkan sebuah layer dari sebuah database. Klik pada ikon  :guilabel:`Add SpatiaLite Layer`. Jika anda tidak dapat menemukannya, klik kanan pada toolbar dan pastikan toolbar “Manage Layers” diaktifkan."
-
-# 19474f95a7bf4c0ab61c344f6f11fef4
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:122
-msgid "You will see a dialog box.  Click :guilabel:`New`."
-msgstr "Anda akan melihat sebuah kotak dialog. Klik :guilabel:`New`."
-
-# e4f81ca817144a629c4a926b1448e243
+# 03198318da714ba7b246715f1735743a
 #: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:127
 msgid ""
-"Navigate to the :file:`qgis_data/Sleman` folder and find the :file:`file "
-"guna_lahan.db`.  Select the file and click :guilabel:`Open`."
-msgstr "Arahkan ke folder :file:`qgis_data/Sleman` dan carilah :file:`file guna_lahan.db`.  Pilih file tersebut dan klik :guilabel:`Open`."
+"Let’s try adding a layer from a database. Click :guilabel:`Add SpatiaLite "
+"Layer` icon. If you can’t find it, right-click on the toolbar and make sure "
+"that the “Manage Layers” toolbar is enabled."
+msgstr ""
+"Mari mencoba menambahkan sebuah layer dari sebuah database. Klik pada ikon :"
+"guilabel:`Add SpatiaLite Layer`. Jika Anda tidak dapat menemukannya, klik "
+"kanan pada toolbar dan pastikan toolbar “Manage Layers” diaktifkan."
 
-# b4c3cf406a114123a38c7cf2a611af92
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:129
+# bcd3349984314f5a814638d5ada99e49
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:135
+msgid "You will see a dialog box. Click :guilabel:`New`."
+msgstr "Anda akan melihat sebuah kotak dialog. Klik :guilabel:`New`."
+
+# 3eac5f3e51a9446280e1a91388734af1
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:141
+msgid ""
+"Navigate to the :file:`qgis_data/Sleman` folder and find the :file:`file "
+"guna_lahan.db`. Select the file and click :guilabel:`Open`."
+msgstr ""
+"Arahkan ke folder :file:`qgis_data/Sleman` dan carilah :file:`file "
+"guna_lahan.db`.  Pilih file tersebut dan klik :guilabel:`Open`."
+
+# b47134d6607a44219b6f9fcbfdd62000
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:144
 msgid ""
 "Now in the original dialog box, you will see that the dropdown button now "
 "contains *“guna_lahan.db @ ...”*, followed by the path of the database file "
 "on your computer."
-msgstr "Sekarang di kotak dialog sebelumnya, anda dapat melihat sebuah tombol klik bawah yang mengandung *“guna_lahan.db @ ...”*, diikuti dengan lokasi file database pada komputer anda."
+msgstr ""
+"Sekarang di kotak dialog sebelumnya, anda dapat melihat sebuah tombol klik "
+"bawah yang mengandung *“guna_lahan.db @ ...”*, diikuti dengan lokasi file "
+"database pada komputer anda."
 
-# 5d2d9e911ef945e9a5e263f9ebd88e5e
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:132
-msgid "Click :guilabel:`Connect`.  You will see the following in the box:"
-msgstr "Klik :guilabel:`Connect`.  Anda akan melihat kotak seperti pada gambar berikut:"
+# 823591767cfa470693689a35c8810b75
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:147
+msgid "Click :guilabel:`Connect`. You will see the following in the box:"
+msgstr ""
+"Klik :guilabel:`Connect`.  Anda akan melihat kotak seperti pada gambar "
+"berikut:"
 
-# a07442065a784817b8406e491dd1bfdb
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:137
+# e105153724a5402eb3b4e98134e2aee2
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:153
 msgid ""
 "This database actually has three different layers available, all saved in "
-"the database.  Click on the first layer to select it, then hold :kbd:`SHIFT`"
-" and click the last layer to select them all."
-msgstr "Database ini sebenarnya memiliki tiga layer berbeda, semua tersimpan pada database. Klik pada layer pertama untuk memilihnya, kemudian tahan :kbd:`SHIFT` dan klik layer terakhir untuk memilih seluruh layer. "
+"the database. Click on the first layer to select it, then hold :kbd:`SHIFT` "
+"and click the last layer to select them all."
+msgstr ""
+"Database ini sebenarnya memiliki tiga layer berbeda, semua tersimpan pada "
+"database. Klik pada layer pertama untuk memilihnya, kemudian tahan :kbd:"
+"`SHIFT` dan klik layer terakhir untu memilih seluruh layer. "
 
-# a33f2d8df27b4ddb8408d4f5338984e6
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:140
-msgid "Click :guilabel:`Add`.  This will add all three layers to our project."
-msgstr "Klik  :guilabel:`Add`.  Ini akan memuat tiga layer kedalam proyek kita. "
+# 551716538b984d6a9a09e90d66580dee
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:157
+msgid "Click :guilabel:`Add`. This will add all three layers to our project."
+msgstr ""
+"Klik  :guilabel:`Add`.  Nantinya semua layer akan termuat pada proyek kita. "
 
-# f975a1e72e1141a9b90c7158eaa33c28
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:142
+# b03902e4a69d4eb18e7db9beacd0c42e
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:160
 msgid ""
 "Remember frequently to save your map! Your QGIS project file does not save "
 "the data (data is saved in a shapefile or a database), but it does remember "
-"the layers that you have added to the project, their order, and any settings"
-" that you adjust."
-msgstr "Ingatlah untuk menyimpan peta anda secara rutin! File proyek QGIS anda tidak menyimpan data (data disimpan ke dalam sebuah shapefile atau sebuah database), tetapi hanya mengingat layer-layer yang anda tambahkan ke proyek, urutannya, dan pengaturan yang telah anda lakukan. "
+"the layers that you have added to the project, their order, and any settings "
+"that you adjust."
+msgstr ""
+"Ingatlah untuk menyimpan peta Anda secara rutin! File proyek QGIS Anda tidak "
+"menyimpan data (data disimpan ke dalam sebuah shapefile atau sebuah "
+"database), tetapi hanya mengingat layer-layer yang Anda tambahkan ke proyek, "
+"urutannya, dan pengaturan yang telah Anda lakukan. "
 
-# 4366399b9abb4b7b969b6a988a09fc4c
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:147
+# 27159702d8134a7aaeeb4e6873cb6a7a
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:165
 msgid ""
 "The layers you have just added are all polygon layers, so you will want to "
-"drag them down below the line and point layers.  If you have a checkbox "
+"drag them down below the line and point layers. If you have a checkbox "
 "beneath your layers list that reads :guilabel:`Control rendering order`, go "
 "ahead and check it."
-msgstr "Layer-layer yang baru anda tambahkan adalah layer poligon, jadi anda akan menggesernya di bawah layer garis dan titik. Jika anda mempunyai sebuah kotak centang di bawah daftar lain yang terbaca :guilabel:`Control rendering order`, silahkan berikan tanda centang pada kotak tersebut."
+msgstr ""
+"*Layer-layer* yang telah anda tambahkan adalah layer poligon, jadi anda akan "
+"menggesernya di bawah *layer* garis dan titik. Jika anda mempunyai sebuah "
+"kotak centang di bawah daftar lain yang terbaca :guilabel:`Control rendering "
+"order` silahkan berikan tanda centang pada kotak tersebut."
 
-# 9767134425b74179908f4b3df4d127e9
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:151
+# cfc61850cb314ca0afd467ae1619261c
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:169
 msgid ""
 "Let’s remove a couple of layers to make it easier to deal with our data. "
-"Right-click on the **railway** and **district** layers and click "
-":guilabel:`Remove`.  Then order your layers like this:"
-msgstr "Mari kita hilangkan beberapa layer untuk membuatnya semakin mudah dalam mengatur data kita. Klik kanan pada layer **jalur rel** dan layer **kecamatan** kemudian klik :guilabel:`Remove`. Kemudian urutkan layer anda seperti ini:"
+"Right-click on the **railway** and **district** layers and click :guilabel:"
+"`Remove`. Then order your layers like this:"
+msgstr ""
+"Mari kita hilangkan beberapa layer untuk membuatnya semakin mudah dalam "
+"mengatur data kita. Klik kanan pada layer **jalur rel** dan layer "
+"**kecamatan** kemudian klik :guilabel:`Remove`. Kemudian urutkan layer Anda "
+"seperti ini:"
 
-# 937e5423b0a649459fc578a26eb5affd
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:158
+# 9e2c4686b3204838849468db796768c8
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:177
 msgid "**4. Symbology**"
 msgstr " **4. Simbologi**"
 
-# 6269b3fe42a1400d9c104aff5785e244
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:160
+# 56c4731e9704451a9b788b7bdb9c0a6d
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:179
 msgid ""
 "The symbology of a layer is its visual appearance on the map. One of the "
 "basic strengths of GIS is that you have a dynamic visual representation of "
-"the data you’re working with.  Therefore, the visual appearance of the map "
-"(which depends on the symbology of the individual layers) is very important."
-" The end user of the maps you produce will need to be able to easily see "
-"what the map represents. Equally as important, you need to be able to "
-"explore the data as you’re working with it, and good symbology helps a lot."
-msgstr "Simbologi merupakan visualisasi tampilan pada peta. Salah satu kekuatan dasar SIG adalah anda dapa memiliki suatu representasi visual yang dinamis terhadap data yang anda kerjakan.Kemudian, penampilan visual dari suatu peta (dimana bergantung dari simbologi di setiap layernya) sangat penting. Pengguna peta dari peta yang anda hasilkan akan membutuhkan kemudahan dalam melihat apa yang direpresentasikan dalam peta. Keseimbangan sangat penting, anda perlu mendalami data anda saat anda bekerja dengannya, dan simbologi yang bagus akan sangat membantu. "
+"the data you’re working with. Therefore, the visual appearance of the map "
+"(which depends on the symbology of the individual layers) is very important. "
+"The end user of the maps you produce will need to be able to easily see what "
+"the map represents. Equally as important, you need to be able to explore the "
+"data as you’re working with it, and good symbology helps a lot."
+msgstr ""
+"Simbologi *layer* merupakan visualisasi tampilan pada peta. Salah satu "
+"kekuatan dasar SIG adalah anda dapat memiliki suatu representasi visual yang "
+"dinamis terhadap data yang anda kerjakan. Kemudian, penampilan visual dari "
+"suatu peta (dimana bergantung dari simbologi di setiap layernya) sangat "
+"penting. Pengguna peta dari peta yang anda hasilkan akan membutuhkan "
+"kemudahan dalam melihat apa yang direpresentasikan dalam peta. Keseimbangan "
+"sangat penting, anda perlu mendalami data anda saat anda bekerja dengannya, "
+"dan simbologi yang bagus akan sangat membantu."
 
-# 2bcb5f30a7da4caca5a172f5d93e323a
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:168
+# ea81337627d6410fbcb26d44544cbd76
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:189
 msgid ""
 "In other words, having proper symbology is not a luxury or just nice to "
-"have. In fact, it’s essential for you to use a GIS properly and produce maps"
-" and information that people will understand and be able to use."
-msgstr "Dengan kata lain, memiliki simbologi yang sesuai bukan merupakan suatu kemewahan atau hanya sekedar polesan semata. Faktanya, sangat penting bagi anda untuk menggunakan SIG dengan baik serta menghasilkan peta dan informasi yang mudah dimengerti dan digunakan oleh orang lain. "
+"have. In fact, it’s essential for you to use a GIS properly and produce maps "
+"and information that people will understand and be able to use."
+msgstr ""
+"Dengan kata lain, memiliki simbologi yang sesuai bukan merupakan suatu "
+"kemewahan atau hanya sekedar polesan semata. Faktanya, sangat penting bagi "
+"anda untuk menggunakan SIG dengan baik serta menghasilkan peta dan informasi "
+"yang mudah dimengerti dan digunakan oleh orang lain. "
 
-# da4bf12efba74e438be7692e6c25d7b2
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:172
+# 5cf336381bd2407d9def0ad68ed24d18
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:193
 msgid "*4.1  Changing colors*"
 msgstr "*4.1  Merubah warna*"
 
-# 69ff87eedee24c2bbfd94f4166f78772
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:174
+# 9167221f35a5465e93d7b0349d369816
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:195
 msgid ""
 "To change a layer’s symbology, we will open its :guilabel:`Layer "
 "Properties`. Let’s begin by changing the color of the *pemukiman* layer."
-msgstr "Untuk merubah simbologi pada sebuah layer, kita perlu membuka :guilabel:`Layer Properties`. Mari kita mulai dengan merubah warna pada layer *pemukiman*."
+msgstr ""
+"Untuk merubah simbologi pada sebuah layer, kita perlu membuka :guilabel:"
+"`Layer Properties`. Mari kita mulai dengan merubah warna pada layer "
+"*pemukiman*."
 
-# cc15b6990e734856ae1cb42ed753f360
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:177
+# 2dc8e4cd439e4ebda8f7e9f96d7ed039
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:198
 msgid "Right-click on the **pemukiman** layer in the Layers list."
 msgstr "Klik kanan pada layer **pemukiman** di daftar Layer."
 
-# f083155529db496d8dec41408664d863
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:178
+# 217e32460c684ed08fccfdc3e893b31c
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:199
 msgid "Select the menu item :guilabel:`Properties` in the menu that appears."
 msgstr "Pilih  :guilabel:`Properties` di menu yang muncul."
 
-# 724ac9ecb2444f929019b2f82093ee11
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:180
+# b648c804bc4042e1a0e940c1e487e4da
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:201
 msgid ""
-"By default you can also access the Properties menu by double-clicking on the"
-" name of the layer."
-msgstr "Secara standar, anda juga dapat mengakses menu Properties dengan mengklik dua kali pada nama layer."
+"By default you can also access the Properties menu by double-clicking on the "
+"name of the layer."
+msgstr ""
+"Secara standar, anda juga dapat mengakses menu Properties dengan mengklik "
+"dua kali pada nama layer."
 
-# 54738da47891495bb7b7332d1fbe0ab0
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:183
+# 1c0fe3651cb3425fa80dfff38aa6c99e
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:204
+msgid "In the Properties window select the :guilabel:`Style` tab."
+msgstr "Pada jendela Properti, pilih tab :guilabel:`Style`."
+
+# 24b1709ac0db4c0ab3de0a93c229e3ae
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:209
+msgid "Click the color button to change the color."
+msgstr "Klik pada tombol warna untuk mengubah warna."
+
+# 65d7750b0d2e4616baf297b08146084a
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:214
 msgid ""
-"In the Properties window select the :guilabel:`Style` tab on the far left."
-msgstr "Pada jendela properties, pilih tab  :guilabel:`Style` di paling kiri."
+"A standard color dialog will appear. Choose a **grey color** and click :"
+"guilabel:`OK`."
+msgstr ""
+"Sebuah dialog pewarnaan standar akan muncul. Pilih **warna abu-abu** dan "
+"klik  :guilabel:`OK`."
 
-# 64f9597d1fa14e098cee2a22a4b5fb0d
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:188
-msgid "Click the :guilabel:`Change` button."
-msgstr "Klik tombol :guilabel:`Change`."
-
-# 6585e4affdee4c60a448519a45e201ed
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:193
-msgid ""
-"A standard color dialog will appear.  Choose a **grey color** and click "
-":guilabel:`OK`."
-msgstr "Sebuah dialog pewarnaan standar akan muncul. Pilih **warna abu-abu** dan klik  :guilabel:`OK`."
-
-# 559c55ea98bd4b24928dc17ef938b421
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:199
+# 3607e3ee4a0148f08ecbd154ab0809f8
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:220
 msgid ""
 "Click :guilabel:`OK` again in the **Layer Properties** window, and you will "
 "see the color change being applied to the layer."
-msgstr "Klik  :guilabel:`OK` lagi pada jendela **Layer Properties**, dan anda akan dapat melihat perubahan warna yang telah diaplikasikan pada layer. "
+msgstr ""
+"Klik  :guilabel:`OK` lagi pada jendela **Layer Properties**, dan anda akan "
+"dapat melihat perubahan warna yang telah diaplikasikan pada layer. "
 
-# c40b6cd3a422441bb418e028f944fa00
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:205
+# 6020afc034b64462ac2010885965a11b
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:226
 msgid "*4.2  Changing Symbol Structure*"
 msgstr "*4.2  Merubah Struktur Simbol*"
 
-# 11618c8f860c4c6e8197db5c501b822d
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:207
+# c2ddb2842f3d4143990da38844e9cc7c
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:228
 msgid ""
-"This is good stuff so far, but there’s more to a layer’s symbology than just"
-" its color. Next we want to change the color of the vegetation, but we also "
+"This is good stuff so far, but there’s more to a layer’s symbology than just "
+"its color. Next we want to change the color of the vegetation, but we also "
 "want to eliminate the lines between the different types of vegetation so as "
 "to make the map less visually cluttered."
-msgstr "Ini merupakan hal yang menarik sejauh ini, tetapi terdapat hal lebih menarik dari simbologi layer daripada hanya merubah warnanya saja. Selanjutnya kita akan merubah warna vegetasi, tetapi kita juga akan menghilangkan garis diantara tipe vegetasi yang berbeda sehingga peta kita tidak tergambarkan secara mengelompok."
+msgstr ""
+"Ini merupakan hal yang menarik sejauh ini, tetapi terdapat hal lebih menarik "
+"dari simbologi layer daripada hanya merubah warnanya saja. Selanjutnya kita "
+"akan merubah warna vegetasi, tetapi kita juga akan menghilangkan garis "
+"diantara tipe vegetasi yang berbeda sehingga peta kita tidak tergambarkan "
+"secara mengelompok."
 
-# 11875c1b9911463a8fa7894b59870465
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:212
+# 6fe554bf45ea4fbf9a53d58ba1ce151d
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:234
 msgid ""
 "Open the :guilabel:`Layer Properties` window for the **vegetasi** layer. "
-"Under the Style   tab, you will see the same kind of dialog as before. This "
-"time, however, we   will do more than just change the color."
-msgstr "Buka jendela :guilabel:`Layer Properties` untuk layer **vegetasi**. Di bawah tab Style, anda akan dapat melihat dialog yang sama seperti sebelumnya. Kali ini bagaimanapun, kita akan melakukan lebih daripada hanya mengubah warnanya saja."
+"Under the Style tab, you will see the same kind of dialog as before. This "
+"time, however, we will do more than just change the color."
+msgstr ""
+"Buka jendela :guilabel:`Layer Properties` untuk layer **vegetasi**. Di bawah "
+"tab Style, Anda akan dapat melihat dialog yang sama seperti sebelumnya. Kali "
+"ini bagaimana pun, kita akan melakukan lebih daripada hanya mengubah "
+"warnanya saja."
 
-# 0eaea125fdfb48aaa642cedc50c80f7c
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:215
-msgid "Click on the :guilabel:`Change...` button below the color display:"
-msgstr "Klik pada tombol :guilabel:`Change`… di bawah tampilan warna:"
+# 65f5a4d10b5141a5ab28dd3db6ca1448
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:237
+msgid ""
+"Click on the Simple Fill under the symbol layer column panel. Then Symbol "
+"layer dialog will appear next to the symbol layer column panel."
+msgstr ""
+"Klik pada Pengisian Sederhana di bawah panel kolom Lapisan Simbol. Kemudian "
+"kotak dialog Tipe Lapisan Simbol akan muncul disamping panel  kolom Lapisan "
+"Simbol."
 
-# 65eccd4bad474340bc2205a6bed43458
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:220
-msgid "The Symbol properties dialog will appear."
-msgstr "Dialog Symbol properties akan muncul. "
-
-# 6350818feac146d79b1ad9b6385e815f
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:225
+# adb80bd0f4e943d69dca8e8f615cf2ff
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:243
 msgid ""
 "Change the color inside the polygons in the layer by clicking the button "
-"next to the Color label:"
-msgstr "Ubahlah warna di dalam poligon pada layer dengan mengklik tombol di sebelah Color label: "
+"next to the :guilabel:`Fill` label:"
+msgstr ""
+"Ubahlah warna di dalam poligon pada layer dengan mengklik tombol di sebelah "
+"label :guilabel:`Fill`: "
 
-# 92b3cf953b7b4a4cb287ba963b363fba
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:231
+# 774c53635d5742a0a646bc2464622583
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:249
 msgid ""
 "In the dialog that appears, choose a new color (that seems to suit "
 "vegetation)."
-msgstr "Pada dialog yang muncul, pilihlah sebuah warna yang baru (yang terlihat sesuai untuk vegetasi)."
+msgstr ""
+"Pada dialog yang muncul, pilihlah sebuah warna yang baru (yang terlihat "
+"sesuai untuk vegetasi)."
 
-# ce5ab7301a5b4b9293293312d1a25a4d
-# c50942863a10439ca6d168bedc8b7b0d
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:233
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:289
+# e040d5fcca384a629db2dcb2de3b6d6b
+# cbc9d7edd6fb41cc82c337fe77979386
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:251
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:311
 msgid "Click :guilabel:`OK`."
 msgstr "Klik :guilabel:`OK`."
 
-# 047cb4462a6142d195cc0f31bf01c401
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:234
+# 00d3ee4e0dde41e98d7fd5556f3eda82
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:252
 msgid "Next, we want to get rid of the lines between all the farms."
 msgstr "Selanjutnya, kita akan menghapus garis diantara seluruh ladang."
 
-# f115424478d64e44a0776e1ffd806b68
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:236
+# 04a51694fec344948b33ce95ff127770
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:254
 msgid ""
 "Click on the :guilabel:`Border style` dropdown. At the moment, it should be "
 "showing a short line and the words :guilabel:`Solid Line`."
-msgstr "Klik pada tombol bawah  :guilabel:`Border style`. Saat ini, seharusnya menunjukan sebuah gambar garis pendek dan tertulis :guilabel:`Solid Line`."
+msgstr ""
+"Klik pada tombol bawah  :guilabel:`Border style`. Saat ini, seharusnya "
+"menunjukan sebuah gambar garis pendek dan tertulis :guilabel:`Solid Line`."
 
-# 6c8ffca9cb6449d282504626de123faf
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:242
+# a0e9a5bc78e14322b4ee6302b3c0373d
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:261
 msgid "Change this to :guilabel:`No Pen`."
 msgstr "Ubah ini ke :guilabel:`No Pen`."
 
-# c877a202ad084d21ab68148f164aab88
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:244
+# 30363274b7f0405791ff827c9690a2c7
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:263
 msgid ""
-"Click :guilabel:`OK`, and then :guilabel:`OK` again.  Now when we look at "
-"our map, the vegetasi layer will have a new color and no lines between "
-"polygons."
-msgstr "Klik :guilabel:`OK`, kemudian  :guilabel:`OK` lagi. Sekarang ketika kita melihat pada peta kita, layer vegetasi akan memiliki sebuah warna yang baru dan tidak ada garis diantara poligon."
+"Click :guilabel:`OK`, and then :guilabel:`OK` again. Now when we look at our "
+"map, the vegetasi layer will have a new color and no lines between polygons."
+msgstr ""
+"Klik :guilabel:`OK`, kemudian :guilabel:`OK` lagi. Sekarang ketika kita "
+"melihat pada peta kita, layer vegetasi akan memiliki sebuah warna yang baru "
+"dan tidak ada garis diantara poligon."
 
-# 77b9f464d4b44d599cd9882f73eb9d04
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:250
+# 74eb6033f7534fbfb9b87cf94860511b
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:270
 msgid ""
 "Try changing the symbology of the pemukiman layer so that it also does not "
 "have outlines."
-msgstr "Cobalah untuk merubah warna pada layer pemukiman sehingga layer tersebut tidak memiliki garis luar. "
+msgstr ""
+"Cobalah untuk merubah warna pada layer pemukiman sehingga layer tersebut "
+"tidak memiliki garis luar. "
 
-# 5b2821f80bac43ca97a8338595d09101
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:253
+# d03650a535364024b16b554d0b26d6d6
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:273
 msgid "*4.3 Scale-based Visibility*"
 msgstr "*4.3  Penampakan Berdasarkan Skala*"
 
-# 43fa7fb4272948a08fc7f01240fa6f95
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:255
+# 158b1810e1db4d38a968dae883f0d7be
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:275
 msgid ""
 "Sometimes you will find that one of your layers is not suitable for a given "
-"scale.  For example, if you have a layer which shows the earth’s continents "
+"scale. For example, if you have a layer which shows the earth’s continents "
 "but not with very much detail, the continent lines may not be very accurate "
 "when you are zoomed in very far to see streets."
-msgstr "Terkadang anda akan menemukan bahwa salah satu layer anda tidak sesuai untuk sebuah ukuran skala tertentu. Sebagai contoh, jika anda memiliki sebuah layer yang menunjukan benua di permukaan bumi tetapi tidak menunjukan banyak detail, garis benua mungkin tidak akan akurat ketika anda melakukan perbesaran sangat jauh untuk melihat jalan. "
+msgstr ""
+"Terkadang anda akan menemukan bahwa salah satu layer anda tidak sesuai untuk "
+"sebuah ukuran skala tertentu. Sebagai contoh, jika anda memiliki sebuah "
+"layer yang menunjukan benua di permukaan bumi tetapi tidak menunjukan banyak "
+"detail, garis benua mungkin tidak akan akurat ketika anda melakukan "
+"perbesaran sangat jauh untuk melihat jalan."
 
-# 95d8f224fbb642a8b37bd145faed9434
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:260
+# c309b961461e41b78e77515ca11f34ae
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:281
 msgid ""
 "Scale is a reference to how your map references what is actually on the "
-"ground in terms of size.  Scale is usually given in terms like 1:10000, "
-"which means that one centimeter of length on your map is equal to 10000 "
-"centimeters in the real world.  When you zoom in or out on a map, the scale "
+"ground in terms of size. Scale is usually given in terms like 1:10000, which "
+"means that one centimeter of length on your map is equal to 10000 "
+"centimeters in the real world. When you zoom in or out on a map, the scale "
 "changes, as you can see in the status bar at the bottom of QGIS."
-msgstr "Skala adalah referensi bagaimana peta anda terlihat sebenarnya di permukaan bumi dalam suatu besaran. Skala biasanya diberikan misalnya 1:10000 artinya satu sentimeter di peta anda sama dengan 10000 sentimeter di dunia nyata. Ketika anda melakukan perbesaran atau pengecilan tampilan, skalanya berubah, dan anda dapat meilhat perubahannya pada status bar di bawah QGIS."
+msgstr ""
+"Skala adalah referensi bagaimana peta anda terlihat sebenarnya di permukaan "
+"bumi dalam suatu besaran. Skala biasanya diberikan misalnya 1:10000 artinya "
+"satu sentimeter di peta anda sama dengan 10000 sentimeter di dunia nyata. "
+"Ketika anda melakukan perbesaran atau pengecilan tampilan, skalanya berubah, "
+"dan anda dapat meilhat perubahannya pada status bar di bawah QGIS."
 
-# 6f0316967dc142569cd13d9b71d33172
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:266
+# 2b03a82f842e4d4ea1a4f8989e72d234
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:289
 msgid ""
 "In our case, we may decide to hide our streets layer when we are zoomed out "
-"very far (a small scale).  For example, the streets layer is not very useful"
-" when we are zoomed out far and it looks like a blob."
-msgstr "Pada kasus kita, kita mungkin ingin menyembunyikan layer jalan ketika kita melakukan pengecilan sangat jauh (untuk skala kecil). Sebagai contoh, layer jalan tidak akan sangat berguna ketika kita memperkecil tampilan peta sangat jauh dan akan terlihat aneh. "
+"very far (a small scale). For example, the streets layer is not very useful "
+"when we are zoomed out far and it looks like a blob."
+msgstr ""
+"Pada kasus kita, kita mungkin ingin menyembunyikan layer jalan ketika kita "
+"melakukan pengecilan sangat jauh (untuk skala kecil). Sebagai contoh, layer "
+"jalan tidak akan sangat berguna ketika kita memperkecil tampilan peta sangat "
+"jauh dan akan terlihat aneh. "
 
-# 8d770ff599774ab4b7dd9340e8c7b631
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:273
+# c69edab24a59481e9f7d3acf493894ff
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:295
 msgid "Let’s enable scale-based rendering:"
 msgstr "Mari kita atur penggambaran berdasarkan skala: "
 
-# 75d067301b7243bdaa97cf1646b9dfff
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:275
+# aa9cf39f9482475594cb39127ea2af11
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:297
 msgid ""
 "Open the :guilabel:`Layer Properties` dialog for the **Jalan_Sleman_OSM** "
 "layer."
-msgstr "Buka dialog :guilabel:`Layer Properties` untuk layer **Jalan_Sleman_OSM**."
+msgstr ""
+"Buka dialog :guilabel:`Layer Properties` untuk layer **Jalan_Sleman_OSM**."
 
-# 5ff15b8a8d5246788567fb8b7e52832b
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:277
+# 7085924dd09b46ad8c157be077006602
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:299
 msgid "Activate the :guilabel:`General` tab."
 msgstr "Aktifkan tab  :guilabel:`General`."
 
-# 69b99e5f8ea54817b4b832864cc52f0b
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:282
+# 63dea4aa5801428ebc81391bd6b4f1ae
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:304
 msgid ""
-"Enable scale-based rendering by clicking on the checkbox labeled "
-":guilabel:`Use scale dependent rendering`.  Then change the value in "
-"*“Maximum”* to *100000*."
-msgstr "Aktifkan penggambaran berdasarkan skala dengan mengklik pada boks centang yang bertuliskan  :guilabel:`Use scale dependent rendering`. Kemudian ubah nilai *“Maximum”* menjadi *100000*. "
+"Enable scale-based rendering by clicking on the checkbox :guilabel:`Scale "
+"dependent visibility` then change the value in “Maximum” to 1:10 and "
+"“Minimum” to 1:100000"
+msgstr ""
+"Aktifkan rendering berdasarkan skala dengan mengklik pada boks centang yang "
+"bertuliskan  :guilabel:`Visibilitas berdasarkan skala` kemudian ubah nilai "
+"“Maximum” menjadi 1:10 dan “Minimum” menjadi 1:100000 "
 
-# 976827445497458f862da5c9dc27331b
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:290
+# c4b511f627d447c982158fded3a68561
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:312
 msgid ""
-"Now look at your map and see what happens when you zoom in and out.  The "
+"Now look at your map and see what happens when you zoom in and out. The "
 "streets layer should appear when you are at a large scale and disappear at "
 "small scales."
-msgstr "Sekarang lihat pada peta anda dan lihat apa yang terjadi ketika anda melakukan perbesaran dan pengecilan tampilan. Layer jalan seharusnya muncul ketika anda berada pada skala besar dan menghilang pada skala kecil. "
+msgstr ""
+"Sekarang lihat pada peta Anda dan lihat apa yang terjadi ketika Anda "
+"melakukan perbesaran dan pengecilan tampilan. Layer jalan seharusnya muncul "
+"ketika Anda berada pada skala besar dan menghilang pada skala kecil. "
 
-# 3fe8097ddc2d4334b16ea94f1fb55eb5
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:294
+# b2f8ab88874a4ef3858338ce75677e3d
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:316
 msgid ""
 "You can use your mouse wheel to zoom in increments. Alternatively, use the "
 "zoom tools to draw a box and zoom to it:"
-msgstr "Anda dapat menggunakan roda gulir pada mouse anda untuk melakukan perbesaran. Alternatifnya, anda dapat menggunakan tool perbesaran untuk menggambar sebuah kotak dan memperbesar pada tampilan kotak tersebut:"
+msgstr ""
+"Anda dapat menggunakan roda gulir pada mouse anda untuk melakukan "
+"perbesaran. Alternatifnya, anda dapat menggunakan tool perbesaran untuk "
+"menggambar sebuah kotak dan memperbesar pada tampilan kotak tersebut:"
 
-# 26f36d7e4d744046b83acc87dbe54a4b
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:300
+# 78f373afdc934646af8c709b60dc5088
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:322
 msgid "*4.4 Adding Symbol Layers*"
 msgstr "*4.4 Menambahkan Layer Simbol*"
 
-# edd44759b26c4f28a85199aa1c5eaab6
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:302
+# f6eca3d0b95c460597bb08dd42d0f8b9
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:324
 msgid ""
 "Now that you know how to change simple symbology for layers, the next step "
-"is to create more complex symbology. QGIS allows you to do this using symbol"
-" layers."
-msgstr "Sekarang anda telah mengetahui bagaimana untuk mengubah simbol secara sederhana pada layer, langkah selanjutnya adalah membuat simbologi yang lebih kompleks. QGIS memperbolehkan anda untuk melakukan ini dengan menggunakan layer simbol."
+"is to create more complex symbology. QGIS allows you to do this using symbol "
+"layers."
+msgstr ""
+"Sekarang anda telah mengetahui bagaimana untuk mengubah simbol secara "
+"sederhana pada layer, langkah selanjutnya adalah membuat simbologi yang "
+"lebih kompleks. QGIS memperbolehkan anda untuk melakukan ini dengan "
+"menggunakan layer simbol."
 
-# a62fe02bf1444aaca1d71d2d55617363
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:305
+# da86bb55b2094e83b948e8ba380b2f0d
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:328
+msgid "Go back to the **vegetasi** layer’s Symbol properties dialog as before."
+msgstr ""
+"Pergilah menuju dialog Symbol properties seperti sebelumnya pada layer "
+"**vegetasi**."
+
+# a16d0cbb5bd04f30a6a726d32a20f887
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:329
 msgid ""
-"Go back to the **vegetasi** layer’s Symbol properties dialog as before."
-msgstr "Pergilah menuju dialog Symbol properties seperti sebelumnya pada layer **vegetasi**."
+"In this example, the current symbol has no outline (i.e., it uses the No Pen "
+"border style)."
+msgstr ""
+"Pada contoh ini, simbol saat ini tidak memiliki garis luar (dikarenakan ia "
+"menggunakan batas garis No Pen)."
 
-# b318180c13da453b8c3dbbe81ed21f9c
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:306
-msgid ""
-"In this example, the current symbol has no outline (i.e., it uses the No Pen"
-" border style)."
-msgstr "Pada contoh ini, simbol saat ini tidak memiliki garis luar (dikarenakan ia menggunakan batas garis No Pen)."
-
-# 86629fd61e2a43068f857c09733284e6
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:312
+# a1657737db4f4143afe981b24640b586
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:335
 msgid "Click on the :kbd:`+` button on the left."
 msgstr "Klik pada tombol  :kbd:`+` di sebelah kiri."
 
-# 574a30264bcc4159897fbdcaa7685379
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:317
+# c3dec02c6d974af7b956ddf1ac1c0ec9
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:340
 msgid "Click on it and another symbol layer will be added to the list:"
-msgstr "Klik pada tombol tersebut dan tambahkan layer simbol lain yang akan ditambahkan pada daftar: "
+msgstr ""
+"Klik pada tombol tersebut dan tambahkan layer simbol lain yang akan "
+"ditambahkan pada daftar: "
 
-# ee4af7e2ed5c4681a889bb3223311943
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:322
+# 791c2befbfa4423887ed1386f2d4f3b1
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:345
 msgid ""
 "Note that it may appear different in color, but we’re going to change that "
 "anyway."
-msgstr "Catatan, mungkin simbol akan muncul dengan warna yang berbeda, tetapi kita akan mencoba untuk merubahnya. "
+msgstr ""
+"Catatan, mungkin simbol akan muncul dengan warna yang berbeda, tetapi kita "
+"akan mencoba untuk merubahnya. "
 
-# 3de937ef03ea4ba0bfa7b13cd4ac9988
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:325
+# 143ab1d988e74d2585344499b0559af4
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:348
 msgid ""
-"Now this layer has two different symbologies.  In other words, both the "
-"green color AND the blue color will be drawn.  However, the blue color will "
-"be drawn above the green, and since it is a solid color, it will completely "
-"hide the green color.  Let’s change it."
-msgstr "Sekarang layer ini memiliki dua simbologi yang berbeda. Dengan kata lain, warna hijau dan warna biru keduanya akan digambarkan. Bagaimanapun, warna biru akan tergambarkan di atas warna hijau, dan karena warna biru merupakan warna yang solid, maka ia akan menutupi warna hijau. Mari kita ubah."
+"Now this layer has two different symbologies. In other words, both the green "
+"color AND the blue color will be drawn. However, the blue color will be "
+"drawn above the green, and since it is a solid color, it will completely "
+"hide the green color. Let’s change it."
+msgstr ""
+"Sekarang layer ini memiliki dua simbologi yang berbeda. Dengan kata lain, "
+"warna hijau dan warna biru keduanya akan digambarkan. Bagaimana pun, warna "
+"biru akan tergambarkan di atas warna hijau, dan karena warna biru merupakan "
+"warna yang solid, maka ia akan menutupi warna hijau. Mari kita ubah."
 
-# 655e9b3295ab496c8f6ddfa4024c2045
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:330
+# d9bb198174754b0a97d71e6c908edbe3
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:354
 msgid ""
-"It’s important not to get confused between a map layer and a symbol layer. A"
-" map layer is a vector (or raster) that has been loaded into the map. A "
+"It’s important not to get confused between a map layer and a symbol layer. A "
+"map layer is a vector (or raster) that has been loaded into the map. A "
 "symbol layer is part of the symbol used to represent a map layer. This "
-"course will usually refer to a map layer as just a layer, but a symbol layer"
-" will always be called a symbol layer, to prevent confusion."
-msgstr "Sangat penting untuk tidak bingung dalam membedakan antara layer peta dan layer simbol. Sebuah layer peta merupakan vektor (atau raster) yang telah dimuat dalam peta.Sebuah layer simbol merupakan bagian dari simbol yang digunakan untuk menggambarkan sebuah layer peta. Latihan ini biasanya akan menggambarkan sebuah layer peta sebagai sebuah layer, tetapi sebuah layer simbol akan selalu disebut layer simbol, untuk menghindari kebingungan. "
+"course will usually refer to a map layer as just a layer, but a symbol layer "
+"will always be called a symbol layer, to prevent confusion."
+msgstr ""
+"Sangat penting untuk tidak bingung dalam membedakan antara layer peta dan "
+"layer simbol. Sebuah layer peta merupakan vektor (atau raster) yang telah "
+"dimuat dalam peta.Sebuah layer simbol merupakan bagian dari simbol yang "
+"digunakan untuk menggambarkan sebuah layer peta. Latihan ini biasanya akan "
+"menggambarkan sebuah layer peta sebagai sebuah layer, tetapi sebuah layer "
+"simbol akan selalu disebut layer simbol, untuk menghindari kebingungan. "
 
-# e1765d61de7343eeb960a89c12c9e7f1
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:336
+# 338865e0a82843ae9f3cb04764a741ef
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:360
 msgid "Set the :guilabel:`Border style` to *No Pen*, as before."
 msgstr "Pilih :guilabel:`Border style` ke  *No Pen*, seperti sebelumnya. "
 
-# a28762991cd54a84845d848f8c40e482
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:337
+# 28b9c39cb99b459bbc0bef6545f416f1
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:361
 msgid ""
-"Change the fill style to something other than Solid or No brush. For "
-"example:"
-msgstr "Ubah fill style menjadi sesuatu yang lain dari Solid atau No brush. Sebagai contoh: "
+"Change the fill style to something other than Solid or No brush. For example:"
+msgstr ""
+"Ubah fill style menjadi sesuatu yang lain dari Solid atau No brush. Sebagai "
+"contoh: "
 
-# bfd6336390484b0ca15d757424d2af92
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:342
+# f951f2f029e34d24bb770ba4773bd328
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:367
 msgid ""
 "Click :guilabel:`OK` and then :guilabel:`OK` and take a look at your layers "
 "new symbology."
-msgstr "Klik :guilabel:`OK` dan kemudian :guilabel:`OK` dan lihatlah hasilnya pada layer simbologi anda yang baru."
+msgstr ""
+"Klik :guilabel:`OK` dan kemudian :guilabel:`OK` dan lihatlah hasilnya pada "
+"layer simbologi anda yang baru."
 
-# 615e355aa28a4ab1aa775854354b0a68
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:348
+# df317e36f72b4b1b8328298ba6b5c6ff
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:373
 msgid ""
-"Now try it yourself.  Add an additional symbology layer to the "
+"Now try it yourself. Add an additional symbology layer to the "
 "**Jalan_Sleman_OSM** layer."
-msgstr "Sekarang cobalah . Tambahkan sebuah layer simbol pada layer **Jalan_Sleman_OSM**"
+msgstr ""
+"Sekarang cobalah. Tambahkan sebuah layer simbol pada layer "
+"**Jalan_Sleman_OSM**"
 
-# 21d832fc519a49f6a361139837f75e77
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:351
+# d3d629da76da4f91bb27d4f912a8bd6b
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:376
 msgid "Give the thickness of the original layer a value of 2.0"
 msgstr "Berikan ketebalan layer simbologi asli menjadi 2.0 "
 
-# ae593a1baf7a4f3fabe39db8fded0f0c
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:352
+# 28058980d4884ad7a43fa4f7b67f1f70
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:377
 msgid "Give the thickness of the new symbology layer a value of 1.0"
 msgstr "Berikan ketebalan dari layer simbologi yang baru menjadi 1.0"
 
-# 1461f28f47c547cfb6a1a0b41f83de46
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:354
+# a7cbdf40c42b44feb49e660b30ea3d3f
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:379
 msgid "This will result in your roads looking something like this:"
 msgstr "Hasilnya, jalan raya anda akan terlihat seperti ini: "
 
-# 97c12900ea0a4741b76e8782dbb0e6a2
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:359
+# a0d002f625964220a90170c1a6c29f89
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:384
 msgid ""
 "Our streets now appear to have an outline, but they seem disjointed, as if "
-"they don’t connect with each other.  To prevent this from happening, you can"
-" enable symbol levels, which will control the order in which the different "
+"they don’t connect with each other. To prevent this from happening, you can "
+"enable symbol levels, which will control the order in which the different "
 "symbol layers are rendered."
-msgstr "Layer jalan kita sekarang sudah muncul dan memiliki garis luar, tetapi mereka terlihat tidak tersambung, seolah-olah mereka terlihat tidak menyambung satu sama lain. Untuk mencegah hal ini terjadi, anda dapat mengaktifkan symbol level, dimana kita akan mengontrol urutan dari layer simbol berbeda yang akan diproses. "
+msgstr ""
+"Layer jalan kita sekarang sudah muncul dan memiliki garis luar, tetapi "
+"mereka terlihat tidak tersambung, seolah-olah mereka terlihat tidak "
+"menyambung satu sama lain. Untuk mencegah hal ini terjadi, Anda dapat "
+"mengaktifkan simbol level, dimana kita akan mengontrol urutan dari layer "
+"simbol berbeda yang akan diproses. "
 
-# 2cc903b6031746828d5be0f4c8b9449d
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:363
+# 3b53e9f758b547218555bc44a355d9bc
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:389
 msgid ""
 "In the **Layer Properties** dialog, click on :menuselection:`Advanced ‣ "
 "Symbol levels...`:"
-msgstr "Pada dialog **Layer Properties**, klik pada :menuselection:`Advanced ‣ Symbol levels...`:I"
+msgstr ""
+"Pada dialog **Layer Properties**, klik pada :menuselection:`Advanced ‣ "
+"Symbol levels...`:I"
 
-# 2e3b0ebd17e34da99b83afabd4ddc6c9
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:369
+# 2a436719977244b09ed3b6b305a50045
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:395
 msgid ""
-"The Symbol Levels dialog will appear.  Check the box next to "
-":guilabel:`Enable symbol levels`."
-msgstr "Dialog Symbol Level akan muncul. Beri tanda centang pada kotak bertuliskan :guilabel:`Enable symbol levels`."
+"The Symbol Levels dialog will appear. Check the box next to :guilabel:"
+"`Enable symbol levels`."
+msgstr ""
+"Dialog Symbol Level akan muncul. Beri tanda centang pada kotak bertuliskan :"
+"guilabel:`Enable symbol levels`."
 
-# d5578bf0f78546299e7a89f37c5cb91d
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:375
+# ae81f1c079fe4055aead26b2384d10bb
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:401
 msgid "Your map will now look like this:"
 msgstr "Peta anda sekarang akan terlihat seperti ini: "
 
-# f80905c0b18746029595e0bf781afa24
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:380
+# 456be3afe2404697af8dc3e5c478f61f
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:406
 msgid ""
 "When you’re done, you can save the symbol itself in QGIS so that you won’t "
 "have to do all this work again if you want to use the symbol again in the "
-"future.  Save your current symbol style by clicking the :guilabel:`Save "
+"future. Save your current symbol style by clicking the :guilabel:`Save "
 "Style...` button under the Style tab of the Layer Properties dialog."
-msgstr "Jika anda sudah selesai, Anda dapat menyimpan simbol anda sendiri pada QGIS sehingga anda tidak harus mengatur ulang seperti ini lagi jika anda ingin menggunakan kembali simbol yang sama ke depannya. Simpan simbol anda dengan mengklik tombol :guilabel:`Save Style...` di bawah tab Style dari dialog Layer Properties. "
+msgstr ""
+"Jika anda sudah selesai, anda dapat menyimpan simbol anda sendiri pada QGIS "
+"sehingga anda tidak harus mengatur ulang seperti ini lagi jika anda ingin "
+"menggunakan kembali simbol yang sama ke depannya. Simpan simbol anda dengan "
+"mengklik tombol :guilabel:`Save Style...` di bawah tab Style dari dialog "
+"Layer Properties."
 
-# 0917a3dcd2774d999d5dbc52350aebc9
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:389
+# d1423155d8bb4f5c9d8bdddc5f29b0bb
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:415
 msgid ""
 "Give your style file a name and save. You can load a previously saved style "
 "at any time by clicking the :guilabel:`Load Style ...` button. Before you "
 "change a style, keep in mind that any unsaved style you are replacing will "
 "be lost."
-msgstr "Berikan style anda sebuah nama dan simpan. Anda dapat memuat ulang style yang disimpan sebelumnya dengan mengklik tombol:guilabel:`Load Style ...` Sebelum anda merubah sebuah style, perhatikan bahwa semua style yang anda ganti akan hilang. "
+msgstr ""
+"Berikan style anda sebuah nama dan simpan. Anda dapat memuat ulang style "
+"yang disimpan sebelumnya dengan mengklik tombol:guilabel:`Load Style ...` "
+"Sebelum anda merubah sebuah style, perhatikan bahwa semua style yang anda "
+"ganti akan hilang. "
 
-# 8e528510cd7446a7b65a7b6034eb8d18
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:392
+# 865b3493c4b946b299fc0e8f7f212936
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:420
 msgid ""
 "Try to change the appearance of the streets layer again, so that the roads "
 "are dark gray or black, with a thin yellow outline, and a dashed white line "
 "running in the middle."
-msgstr "Cobalah untuk mengubah tampilan dari layer jalan kembali sehingga jalan berwarna abu-abu atau hitam, dengan sebuah garis luar tipis berwarna kuning, dan sebuah garis putih putus-putus di tengahnya. "
+msgstr ""
+"Cobalah untuk mengubah tampilan dari layer jalan kembali sehingga jalan "
+"berwarna abu-abu atau hitam, dengan sebuah garis luar tipis berwarna kuning, "
+"dan sebuah garis putih putus-putus di tengahnya. "
 
-# 85b5737bfa7a4647a27fe0c955e1ff9b
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:399
+# cdb0fb4b5a3c442a969a7f6b122cadc6
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:427
 msgid "*4.5 Classified Symbology*"
 msgstr "*4.5 Klasifikasi Pengaturan Simbol*"
 
-# 89989d3345564c6995c33509619355b1
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:401
+# 700f0548a0ed4740ae05e499e7f25220
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:429
 msgid ""
 "Symbol levels also work for classified layers (i.e., layers having multiple "
-"symbols).  We will cover classification in the next chapter, but you can see"
-" how it works here with roads.  By classifying various streets according to "
+"symbols). We will cover classification in the next chapter, but you can see "
+"how it works here with roads. By classifying various streets according to "
 "their type, we can give them different symbologies and they will still "
 "appear to flow into each other."
-msgstr "Simbol level juga berguna untuk layer yang memiliki kelas (misalnya, layer yang memiliki berbagai macam simbol). Kita akan membahas klasifikasi ini di modul selanjutnya, tetapi Anda dapat melihat bagaimana caranya bekerja dengan jalan. Dengan mengkelaskan berbagai macam jalan sesuai dengan tipe mereka masing-masing, kita dapat memberikan mereka simbol yang berbeda-beda dan mereka akan muncul satu sama lain."
+msgstr ""
+"Simbol level juga berguna untuk *layer* yang memiliki kelas (misalnya, "
+"*layer* yang memiliki berbagai macam simbol). Kita akan membahas klasifikasi "
+"ini di bab selanjutnya, tetapi anda dapat melihat bagaimana caranya "
+"klasifikasi simbol bekerja dengan objek jalan. Dengan mengkelaskan berbagai "
+"macam jalan sesuai dengan tipe mereka masing-masing, kita dapat memberikan "
+"mereka simbol yang berbeda-beda dan mereka akan muncul satu sama lain."
 
-# 8b2832e35a3249adbe25ceb9e752ed01
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:410
+# 863bc66630cb4daf830ea993efef32c7
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:440
 msgid "*4.6 Symbol layer types*"
 msgstr "*4.6 Tipe layer simbol*"
 
-# 205ef4e59722494685238c92d9e9f38d
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:412
+# 6710b3829cb745e884e41106fca5f202
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:442
 msgid ""
 "In addition to setting fill colors and using predefined patterns, you can "
-"use different symbol layer types entirely. The only type we’ve been using up"
-" to now was the Simple Fill type. The more advanced symbol layer types allow"
-" you to customize your symbols even further."
-msgstr "Sebagai tambahan untuk mengatur isi warna dan menggunakan pola yang sudah tersedia, Anda dapat menggunakan tipe simbol layer yang berbeda. Tipe yang hanya kita gunakan hingga saat ini adalah tipe Simple Fill. Semakin mahir tentang tipe layer simbol maka Anda dapat mengatur simbol-simbol anda lebih jauh lagi."
+"use different symbol layer types entirely. The only type we’ve been using up "
+"to now was the Simple Fill type. The more advanced symbol layer types allow "
+"you to customize your symbols even further."
+msgstr ""
+"Sebagai tambahan untuk mengatur isi warna dan menggunakan pola yang sudah "
+"tersedia, Anda dapat menggunakan tipe simbol layer yang berbeda. Tipe yang "
+"hanya kita gunakan hingga saat ini adalah tipe Simple Fill. Semakin mahir "
+"tentang tipe layer simbol maka Anda dapat mengatur simbol-simbol anda lebih "
+"jauh lagi."
 
-# b21ea6f3fe684f15a734a2ad81671037
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:417
+# bda819ac43844084b77781f38bedb7cb
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:448
 msgid ""
 "Each type of vector (point, line and polygon) has its own set of symbol "
 "layer types. First we will look at the types available for points."
-msgstr "Setiap tipe vektor (titik, garis, dan poligon) memiliki beberapa pengaturan dari tipe layer simbol. Pertama kita akan melihat tipe yang tersedia untuk titik. "
+msgstr ""
+"Setiap tipe vektor (titik, garis, dan poligon) memiliki beberapa pengaturan "
+"dari tipe layer simbol. Pertama kita akan melihat tipe yang tersedia untuk "
+"titik. "
 
-# 8d60e02e4cad43fa80f5f2bce8a7a2ea
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:420
+# 290685b575b44b86b168f3474b3d4916
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:452
 msgid "**Vector Points**"
 msgstr "**Vektor Titik**"
 
-# 22b0ff1a087b4c28b30ee3a75999a34d
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:422
+# fa3ac5696ad64ceabf30ab8504f42f0f
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:454
 msgid "Change the symbol properties for the POI_Sleman_OSM layer:"
 msgstr "Ubahlah simbol properties untuk layer POI_Sleman_OSM:"
 
-# 2ec9e38017c444339a369f4d0a880c92
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:427
+# 2fbd873e425d4f57ab8d90a705b3d87a
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:459
 msgid ""
-"You can access the various symbol layer types by clicking the dropdown box "
-"in the upper right corner."
-msgstr "Anda dapat mengakses berbagai macam tipe simbol layer dengan mengklik tombol daftar pilihan pada pojok kanan atas. "
+"You can access the various symbol layer types by clicking a symbol layer (1) "
+"then clicking the dropdown box in the upper right corner (2)"
+msgstr ""
+"Anda dapat mengakses berbagai macam tipe simbol layer dengan mengklik sebuah "
+"simbol lapisan (1) kemudian mengklik daftar pilihan pada pojok kanan atas (2)"
 
-# ba9559b6aaea4f4fa68d9b632d745528
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:433
+# cfb627ee05874b6a8f503814cc0bdbda
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:465
 msgid ""
 "Investigate the various options available to you, and choose a symbol layer "
 "type other than the default Simple Marker."
-msgstr "Periksalah berbagai macam pilihan yang tersedia untuk anda, dan pilihlah sebuah tipe simbol selain Simple Marker. "
+msgstr ""
+"Periksalah berbagai macam pilihan yang tersedia untuk anda, dan pilihlah "
+"sebuah tipe simbol selain Simple Marker. "
 
-# 30f44a08891c41ba8a2d637d67ab3bbe
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:435
+# 184a118073e64b90b8207b0e5070bb5d
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:467
 msgid "If in doubt, use an *Ellipse Marker*."
 msgstr "Jika anda ragu, gunakan *Ellipse Marker*."
 
-# e8a035d25c4148f387e2c4f1b1b09b19
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:436
+# 047b9ce5242b4c669710d1d258e85e8d
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:468
 msgid ""
 "Choose a *white outline* and *dark fill*, with a *symbol width of 2.00* and "
 "symbol *height of 4.00*."
-msgstr "Pilihlah sebuah garis luar berwarna putih *white outline* dan fill warna gelap *dark fill*, dengan menggunakan lebar simbol 2.00 symbol width of 2.00*  dan panjang simbol 4.00 *height of 4.00*."
+msgstr ""
+"Pilihlah sebuah garis luar berwarna putih *white outline* dan fill warna "
+"gelap *dark fill*, dengan menggunakan lebar simbol 2.00 symbol width of "
+"2.00*  dan panjang simbol 4.00 *height of 4.00*."
 
-# 6410f034622d437cb7e783e604564666
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:442
+# 36018527d121497b99b7d6e0e4683b1e
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:477
 msgid "**Vector Lines**"
 msgstr "**Vektor Garis**"
 
-# b461d80dc40f45de8ad7651c37e6b80a
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:444
+# 6dd3528ea75348cf940e4390611b00fa
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:479
 msgid ""
-"To see the various symbology options for vector lines, open the **streets** "
-":guilabel:`layer properties` and click on the dropdown box:"
-msgstr "Untuk melihat berbagai macam pilihan simbologi pada vektor garis, buka  :guilabel:`layer properties` **jalan** dan klik pada kotak daftar pilihan: "
+"To see the various symbology options for vector lines, open the **streets** :"
+"guilabel:`layer properties` and click on the dropdown box:"
+msgstr ""
+"Untuk melihat berbagai macam pilihan simbologi pada vektor garis, buka  :"
+"guilabel:`layer properties` **jalan** dan klik pada kotak daftar pilihan: "
 
-# 14f22eafa8634c97b9d6597fd2e27ee0
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:450
+# 55c6811882e2495f9821ef6828a34ba9
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:485
 msgid "Click on :guilabel:`Marker line`."
 msgstr "Klik pada :guilabel:`Marker line`."
 
-# d45298d7396f40edbe20d8e6e12ed55c
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:455
-msgid "Click on the :guilabel:`Change` button next to the Marker label."
-msgstr "Klik pada tombol :guilabel:`Change` di sebelah Marker label. "
+# 2b2e6fe8a9494d1c96c7618761baf76f
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:490
+msgid "Click :guilabel:`Simple Marker` on symbol layers (1)"
+msgstr "Klik :guilabel:`Penanda Sederhana` pada Lapisan Simbol (1)"
 
-# 799c4ca05c734c44bb1faaa0662ab46d
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:460
+# 78b90eb682274ab2b4056e1237149753
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:495
 msgid "Change the symbol properties to match this dialog:"
 msgstr "Ubahlah simbol properti dengan menyamakan dialog ini: "
 
-# 5e734e60f66948a5abd87570fc27aab4
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:465
-msgid "Change the *interval* to 2.00:"
-msgstr "Ubah *interval* menjadi 2.00:"
+# 1a93b3f5a5f944c18fb26ed07adbbbe5
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:500
+msgid ""
+"Now, click on :guilabel:`Marker line` on symbol layers panel, then change "
+"the interval to 2.00:"
+msgstr ""
+"Sekarang, klik pada :guilabel:`Penanda Garis` pada panel Lapisan Simbol, "
+"kemudian ubah interval menjadi 2.00:"
 
-# 2a6852d2847a4883a6527821ddcd6f14
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:470
+# 9fa6c06e7b67461a801e371cab2e4079
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:506
 msgid "Your road should now look something like this:"
 msgstr "Jalan anda seharusnya akan terlihat seperti ini: "
 
-# 53d93d78999c49d698dafa380a2e4c23
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:475
+# 5a1f5476566f424f94c7d09ab6c7bd3c
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:511
 msgid ""
-"Once you have applied the style, take a look at its results on the map. As "
-"you can see, these symbols change direction along with the road but don’t "
-"always bend along with it. This is useful for some purposes, but not for "
-"others. If you prefer, you can change the symbol layer in question back to "
-"the way it was before."
-msgstr "Setelah anda mengaplikasikan style, lihat kembali bagaimana hasilnya pada peta. Sebagaimana yang dapat anda lihat, simbol-simbol ini berubah arahnya sesuai dengan jalan tetapi tidak selalu menikung. Ini sangat berguna untuk beberapa tujuan, tetapi tidak untuk tujuan lain. Sekarang anda yang memilih, anda dapat merubah layer simbol anda kembali seperti sedia kala."
+"Once you have applied the style, take a look at its results on the map. If "
+"the dots not shown up, check the advanced setting and go back to Symbol "
+"level. Change the upper symbol layer to “2”. Then click OK. As you can see, "
+"these symbols change direction along with the road but don’t always bend "
+"along with it. This is useful for some purposes, but not for others. If you "
+"prefer, you can change the symbol layer in question back to the way it was "
+"before."
+msgstr ""
+"Setelah anda mengaplikasikan style, lihat kembali bagaimana hasilnya pada "
+"peta. Jika titik-titiknya tidak terlihat, cek pada pengaturan lanjutan dan "
+"kembali ke Simbol Level. Ubah Simbol Lapisan yang berada di atas menjadi "
+"“2”. Sebagaimana yang dapat Anda lihat, simbol-simbol ini berubah arahnya "
+"sesuai dengan jalan tetapi tidak selalu menikung. Ini sangat berguna untuk "
+"beberapa tujuan, tetapi tidak untuk tujuan lain. Jika Anda menghendaki, Anda "
+"dapat mengubah kembali Simbol Lapisan Anda  seperti sedia kala."
 
-# eb49867d3c204fd9a751159029725798
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:481
+# ef5411c569c94b449d72ddb22add2434
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:522
 msgid "**Vector Polygons**"
 msgstr "**Vektor Poligon**"
 
-# cf494b135b6b4d958acef63167cca30e
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:483
+# 880a4cbbb50b4a41b3761897be9da4f4
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:524
 msgid ""
-"Now let’s change the symbol layer type for the **pemukiman** layer.  Take a "
+"Now let’s change the symbol layer type for the **pemukiman** layer. Take a "
 "look at the dropdown menu as you’ve done for the point and line layers, and "
 "see what the various options can do."
-msgstr "Sekarang mari kita ubah layer simbol untuk layer **pemukiman**. Lihat pada menu daftar pilihan sebagaimana yang telah anda lakukan pada layer titik dan layer garis, dan lihat berbagai macam pilihan yang dapat anda lakukan. "
+msgstr ""
+"Sekarang mari kita ubah layer simbol untuk layer **pemukiman**. Lihat pada "
+"menu daftar pilihan sebagaimana yang telah Anda lakukan pada layer titik dan "
+"layer garis, dan lihat berbagai macam pilihan yang dapat Anda lakukan. "
 
-# 650b98746050457bb410485273a490bd
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:490
+# 2d45181a40074c2f8203645fcc140983
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:531
 msgid ""
-"Feel free to play around with the various options.  We will use the Point "
+"Feel free to play around with the various options. We will use the Point "
 "pattern fill with the following settings:"
-msgstr "Cobalah untuk menggunakan berbagai pilihan berbeda. Kita akan mencoba mengisi pola titik dengan pengaturan sebagai berikut: "
+msgstr ""
+"Cobalah untuk menggunakan berbagai pilihan berbeda. Kita akan mencoba "
+"mengisi pola titik dengan pengaturan sebagai berikut: "
 
-# 8dc8228d3d434e4db5609877ad6b9922
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:496
+# 03cbb2bad07b4f69a6d232680b105125
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:537
 msgid "Add a new symbol layer with a *normal Simple fill*."
 msgstr "Tambahkan sebuah layer simbol baru dengan *normal Simple fill*"
 
-# 246a86152233484aba0dd9349cbb354c
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:497
+# 6ff77538aef844259f05a4345d41f92b
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:538
 msgid "Make it *gray with no outlines*."
-msgstr "Ubah warnanya menjadi abu-abu tanpa garis luar *gray with no outlines*.. "
+msgstr ""
+"Ubah warnanya menjadi abu-abu tanpa garis luar *gray with no outlines*.. "
 
-# 67d10f5a6ded4da28577d0fa10f32bec
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:498
+# 1cea5904a71d456aa7c59cf779205339
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:539
 msgid ""
 "Move it underneath the point pattern symbol layer with the :guilabel:`Move "
 "down` button:"
 msgstr "Ubah posisinya ke bawah dengan tombol :guilabel:`Move down`:"
 
-# 341e446753f84916a9b403918bba4ff0
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:504
+# 3cb54cc841fb4474b0aafc14523746b9
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:545
 msgid "The symbol properties should look like this:"
 msgstr "Properti simbol seharusnya terlihat seperti ini:"
 
-# fd540ad177274d459aaecdfe9f7aa791
-#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:509
+# ec5ad0e167fd401d871ad7d67cebc6fd
+#: ../../source/training/beginner/qgis-inasafe/206-working-with-vector-data.rst:550
 msgid ""
 "As a result, you have a textured symbol for the urban layer, with the added "
 "benefit that you can change the size, shape and distance of the individual "
 "dots that make up the texture."
-msgstr "Hasilnya, Anda memiliki sebuah simbol tekstur untuk layer pemukiman, dengan tambahan tertentu, Anda dapat merubah besar, bentuk, dan jarak dari setiap titik individu yang membentuk tekstur tersebut."
+msgstr ""
+"Hasilnya, Anda memiliki sebuah simbol tekstur untuk layer pemukiman, dengan "
+"tambahan tertentu, Anda dapat merubah besar, bentuk, dan jarak dari setiap "
+"titik individu yang membentuk tekstur tersebut."
