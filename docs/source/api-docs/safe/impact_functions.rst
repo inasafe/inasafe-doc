@@ -11,8 +11,7 @@ Package::safe.impact_functions
    impact_functions/impact_function_metadata
    impact_functions/impact_function_manager
    impact_functions/generic
-   impact_functions/earthquake
    impact_functions/tephra
-   impact_functions/inundation
+   impact_functions/earthquake
    impact_functions/volcanic
    impact_functions/inundation

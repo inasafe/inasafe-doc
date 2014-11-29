@@ -8,6 +8,7 @@ Package::safe.storage
    storage/core
    storage/iso_19115_template
    storage/utilities_test
+   storage/layer
    storage/geometry
    storage/vector
    storage/raster

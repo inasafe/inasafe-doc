@@ -18,7 +18,3 @@ Package::safe_qgis.tools
    tools/shake_grid
    tools/batch
    tools/minimum_needs
-   tools/keywords_dialog
-   tools/shakemap_importer
-   tools/options_dialog
-   tools/osm_downloader
