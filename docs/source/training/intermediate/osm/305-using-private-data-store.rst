@@ -126,7 +126,7 @@ These tags can then be made into a presets menu, which will provide an
 easy-to-use form for adding both public and private data.
 
 
-4. Access the Datastore Online
+4. Access the datastore online
 ------------------------------
 
 You can access the SDS online with your username and password. To visit

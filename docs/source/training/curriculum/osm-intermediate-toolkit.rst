@@ -1,122 +1,101 @@
 Unit 3 Facilitator Guide
 ========================
 
-Intermediate OpenStreetMap Trainer's Toolkit - (A Guide for Facilitator)
-------------------------------------------------------------------------
+Intermediate OpenStreetMap Trainer's Toolkit - (A Guide for Facilitators)
+-------------------------------------------------------------------------
 
-BADAN NASIONAL PENANGGULANGAN BENCANA
-.....................................
-2013
-....
+**BADAN NASIONAL PENANGGULANGAN BENCANA**
+
+**2013**
 
 About Toolkit
-^^^^^^^^^^^^^
+-------------
 
-**Intermediate level OpenStreetMapWorkshop Guide** is designed to prepare
-facilitator to be able to organize intermediate training in terms of editing
-OSM data.
-The material which is included will prepare you to organize training for
-participant who already has experience with mapping and editing map.
-The material was compiled for this training assume that all the participants
-already attended **Beginner OpenStreetMap Training** and already understand
-and familiar with basic editing techniques at JOSM.
+**The Intermediate OpenStreetMap Trainer Toolkit** is designed to prepare
+trainers to deliver an intermediate training course to users of OSM.
+The materials included are designed to continue from the 
+**Beginner OpenStreetMap Training**.
 
-When conducting a workshop of OpenStreetMap, many factors must be
-considered, including how much time and resources owned,
-number of participants, and the technical capabilities of the participants
-themselves.
-This guide will help you to prepare workshop with different types of
-participants.
-However, this all assumes that participants for Intermediate workshop has had
-experience working with the OSM.
-Some participants may be more adept than the others, and at this intermediate
-level workshop, you will likely see a bigger gap on this training in terms
-of ability and experience of the participants.
-Remember, it is important to keep the participant who has been adept at
-OpenStreetMap materials, but also not to leave participants who have not been
-too adept.
-Placing participants in pairs sometimes can be a good idea,
-that where one participant has been more proficient and her partner are still
-not proficient.
+When organising an OpenStreetMap workshop, numerous factors must be
+considered, including the length of time you have to train,
+available resources, number of trainees and their technical skills.
+This toolkit will help trainers prepare trainings for different types of
+participants, but it will primarily focus on educating those with little or
+no experience with GPS, map-making and computers. Participants of this
+training should have experience already working with OSM.
 
-Purpose for this guide is to preparing you, the facilitator,
-to be able to teach participants successfully according to
-**Intermediate OpenStreetMap Guide**.
+The purpose of this toolkit is to prepare the trainer to successfully train
+workshop participants in adding spatial data to OpenStreetMap.
 
-Workshop Purpose
-^^^^^^^^^^^^^^^^
-The purpose of this training is to enhance the capabilities and skills of
-the participants in performing editing OSM data on JOSM,
-include intermediate editing techniques and emphasize on the quality of the
-data.
-Intermediate level topics are also included in this workshop that is working
-with **the private datastore** to create and make use of the information on
-the Wiki OpenStreetMap.
+Purpose of Workshop
+...................
+This workshop is intended to achieve the following standard and basic 
+competencies:
 
-The purpose of that already explained above can be elaborated into competency
-standards and  basic competencies  as follows.
+Standard Competency
+^^^^^^^^^^^^^^^^^^^
+Quality Assurance in OSM mapping
 
-*Standard Competency*
-*********************
-Quality Assurance for contributing of OSM mapping
-
-*Basic Competency*
-******************
-1. Applying better digitizing technique for improving quality of the
-   resulting data.
-2. Use JOSM Validation tools to ensure the quality of contribution of
-   mapping given.
-3. Resolving conflict when uploading OSM data
-4. Creating preset file in JOSM
-5. Using private data store feature for keep private data
-6. Creating and editing page in OSM Wiki
+Basic Competencies
+^^^^^^^^^^^^^^^^^^
+1. Apply better digitising techniques for improving quality of collected data  
+2. Use JOSM validation tools to ensure the quality of map contributions        
+3. Resolve conflicts when uploading OSM data                                   
+4. Create presets files in JOSM                                                
+5. Use private data store feature to keep private data                         
+6. Create and edit pages in OSM Wiki                                           
 
 Workshop Materials
 ^^^^^^^^^^^^^^^^^^
 1. Advanced Editing
 2. Quality Assurance
-3. Resolving Conflict when uploading OSM data
-4. XML and presets in JOSM
-5. Using Private Datastore
-6. Wiki OpenStreetMap
+3. Dealing with Conflicts
+4. Creating JOSM File Presets
+5. Using the Separate Data Store
+6. Editing the OpenStreetMap Wiki
 
 Workshop Strategies
 ^^^^^^^^^^^^^^^^^^^
-1. The methods used are participatory methods, with emphasis on the full
-   participation of the participants in the training process,
-   rather than a method of speaking engagements.
-2. Based on participants. Participants are encouraged to seek,
-   find and acquire knowledge/skills that they needed independently.
-3. Presenter act as facilitator. Presenter only facilitates ideas that come
-   from any direction not only from presenter. In times of needed presenter
-   should be able to provide reinforcement quality.
-4. Oriented at outcome. Training of should produce outcome that has been
-   mentioned.
+1. Methods emphasised in this workshop are participatory teaching
+   and active participation in all sections and
+   activities, rather than lecture method.
+2. **Participant oriented.**
+   Participants are encouraged to find and gain knowledge and skills
+   by themselves.
+3. **Trainers serve as facilitators.**
+   Trainers facilitate to help ideas in the workshop emerge
+   from the participants, not only from trainers.
+   However, trainers must be ready to provide necessary information
+   when the participants need any assistance.
+4. **Outcome oriented.** Workshop must produce the outcomes mentioned 
+   previously.
 
 Tools
 ^^^^^
-1. Copy of Data Collection using OSM Intermediate Guide for participants
-2. Indoor room with tables and chairs
-3. Computer ( 1 computer used by maximum 2 peoples ideally)
-4. Two projectors ( for present/deliver materials and demonstrate techniques
-   in the use of application)
-5. Flashdisk (for transfer files and software installers)
-6. Stable internet connection
-7. Snacks and drinks
+1. Copy of :ref:`Data Collection Using OSM Intermediate Guide <interm-osm>` 
+   for participants
+2. A workshop space with tables and seats
+3. Computers (one computer may be used by two participants,
+   but it is better if one computer is used by one participant)
+4. A Projector (to present slide and demonstrate technical instructions and
+   software)
+5. USB Flash drive(s) to transfer files and software
+6. Good internet connection
+7. Snacks and coffee for breaks
 
-Schedules
-^^^^^^^^^
-Below is the outline for a five-day training schedule that has been tested
-to several different groups in several areas in Indonesia.
-You could just provide a variety of changes that might be more useful
-depending on the various factors that have been discussed before.
+Schedule
+--------
+
+Below is an outline of a schedule for a three day workshop that has been tested with
+several groups in Indonesia. You may choose to adapt and change this
+workshop schedule to meet your needs.
 
 Day I:
-******
+......
 +---------------+------------------------------------------------------+--------------------------------+
 | **Time**      | **Materials**                                        | **Activities**                 |
 +===============+======================================================+================================+
-| 09.00 - 10.00 | Opening and creating agreements                      | Plenary Session                |
+| 09.00 - 10.00 | Opening and Introductions                            | Plenary Session                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 10.00 - 10.15 | Break 1                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
@@ -132,7 +111,7 @@ Day I:
 +---------------+------------------------------------------------------+--------------------------------+
 
 Day II:
-*******
+.......
 +---------------+------------------------------------------------------+--------------------------------+
 | **Time**      | **Materials**                                        | **Activities**                 |
 +===============+======================================================+================================+
@@ -144,27 +123,27 @@ Day II:
 +---------------+------------------------------------------------------+--------------------------------+
 | 12.00 - 13.00 | Lunch break                                          |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 13.00 - 15.15 |  3. Resolving conflict when uploading OSM data       | FGD and Plenary Session        |
+| 13.00 - 15.15 |  3. Dealing with Conflicts                           | FGD and Plenary Session        |
 +---------------+------------------------------------------------------+--------------------------------+
 | 15.15 - 15.30 | Break 2                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 15.30 - 17.00 |  4. XML and presets in JOSM                          | FGD and Plenary Session        |
+| 15.30 - 17.00 |  4. Creating JOSM File Presets                       | FGD and Plenary Session        |
 +---------------+------------------------------------------------------+--------------------------------+
 
 Day III:
-********
+........
 +---------------+------------------------------------------------------+--------------------------------+
 | **Time**      | **Materials**                                        | **Activities**                 |
 +===============+======================================================+================================+
-| 09.00 - 10.00 | XML and presets in JOSM                              | Plenary Session                |
+| 09.00 - 10.00 | 4. Creating JOSM File Presets                        | Plenary Session                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 10.00 - 10.15 | Break 1                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 10.15 - 12.15 |  5. Using Private Datastore                          | FGD and Plenary Session        |
+| 10.15 - 12.15 | 5. Using the Separate Data Store                     | FGD and Plenary Session        |
 +---------------+------------------------------------------------------+--------------------------------+
 | 12.15 - 13.15 | Lunch break                                          |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 13.15 - 15.15 |  6. Wiki OpenStreetMap                               | FGD and Plenary Session        |
+| 13.15 - 15.15 | 6. Editing the OpenStreetMap Wiki                    | FGD and Plenary Session        |
 +---------------+------------------------------------------------------+--------------------------------+
 | 15.15 - 15.30 | Break 2                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
@@ -172,43 +151,44 @@ Day III:
 +---------------+------------------------------------------------------+--------------------------------+
 
 
-**Workshop Plan**
-.................
+Workshop Plan
+-------------
 
-**Session 1**
-^^^^^^^^^^^^^
+Session 1
+.........
 
-Advances Editing
+Advanced Editing
 ^^^^^^^^^^^^^^^^
 Time : 4 hours
 
 Basic Competency
 ****************
-1. Apply a better digitizing techniques for improving the quality of the
-   resulting data
+Apply a better digitising technique for improving quality of
+collected data
 
-Indicator
-*********
-1. Using edit tools in JOSM
-2. Creating relations between objects
+Indicators
+**********
+1. Use advanced editing tools in JOSM 
+2. Make relations among objects       
 
-Outcome
-*******
-Data in OpenStreetMap become better than before
+Outcomes
+********
+1. Make data in OpenStreetMap better
+2. Understand relations
 
 Core Material
 *************
-**Advanced Editing**
-
-1. Tools Editing in JOSM
-
-  a.  Adding more features for drawing
-  b.  Adding more plugins
-
-2. Relations
-
-  a.  Creating relations between spatial objects
-  b.  Relations for bus routes
+**Advanced Editing**               
+                                   
+1. Advanced editing tools          
+                                   
+  a. Default drawing tools         
+  b. Plugins                       
+                                   
+2. Relations                       
+                                   
+  a. Editing relations             
+  b. Multipolygons and linestrings 
 
 Activities
 **********
@@ -217,136 +197,127 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | Powerpoint    |
 |                                                                   |               |               |
-| Facilitators tell how important this session, purpose, outcome    |               | Slide         |
-| and activities                                                    |               |               |
+| Explain the importance of the session, objectives,                |               | Slide         |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Review OSM Materials for beginner 30'**                         | Discussion    | Schedules     |
+| **Review OSM Materials for Beginners 30'**                        | Discussion    | Schedules     |
 |                                                                   |               |               |
-| 1. The participants requested in turn pass on what they have      | Q & A Session | Microphone    |
-|    done in the context of mapping and OpenStreetMap (OSM) since   | Lecture       | Speakers      |
+| 1. Request participants to discuss what they have                 | Q & A Session | Microphone    |
+|    done with OpenStreetMap (OSM) since                            | Lecture       | Speakers      |
 |    the first workshop (beginner training)                         |               | Projector     |
-| 2. Facilitator creating question list that participants asked,    |               |               |
-|    so facilitator can answer and explain in detail in the next    |               |               |
-|    session in intermediate workshop.                              |               |               |
-| 3. Facilitator create list of participants questions in laptop    |               |               |
-|    and showing them with projector so the participants can        |               |               |
-|    follow and monitoring that session (create question list).     |               |               |
-| 4. If the questions are simple, facilitator can answer directly.  |               |               |
-|    But, if the questions are outside workshop material,           |               |               |
-|    facilitator can give the other reference to participant,       |               |               |
-|    or do an individual session outside workshop,                  |               |               |
+| 2. Create a questions list from participants, showing them all    |               |               |
+|    on the projector.                                              |               |               |
+| 3. If the questions are simple, answer them directly.             |               |               |
+|    But if the questions are outside workshop material,            |               |               |
+|    give the other references                                      |               |               |
+|    or do an individual session outside the workshop,              |               |               |
 |    for example at lunch break.                                    |               |               |
-| 5. Explain what can participant get/hope in this workshop         |               |               |
+| 4. Explain what participants will get from this workshop          |               |               |
 |    (intermediate workshop). Separate participants into two sides, |               |               |
-|    asking more detail to them about their experiences for using   |               |               |
-|    a computer. This is done to pair the participants between      |               |               |
-|    participants who were proficient and yet too skilled           |               |               |
-|    in the use of computers                                        |               |               |
+|    asking more details about their experience using               |               |               |
+|    computers and OSM. Pair the participants so that there is      |               |               |
+|    a good balance of skill in each pair. Less experienced         |               |               |
+|    participants should be paired with more advanced users.        |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Shortcut in JOSM 20'**                                          | Discussion    | Powerpoint    |
+| **Shortcuts in JOSM 20'**                                         | Discussion    | Powerpoint    |
 |                                                                   |               |               |
-| 1. Participants are asked to discuss in brief about the           | Q & A Session | Presentation  |
-|    shortcut (shortcut keys on your keyboard) to activate          | Lecture       | Projector     |
-|    some tools on JOSM.                                            |               | Computer      |
-| 2. Facilitator explains and demonstrates how the shortcut         |               | Laptop        |
-|    (shortcut keys) can make the job of editing made easier        |               | Sample files  |
+| 1. Ask participants to discuss in brief about the                 | Q & A Session | Presentation  |
+|    shortcuts (shortcut keys on your keyboard) to activate         | Lecture       | Projector     |
+|    tools in JOSM.                                                 |               | Computer      |
+| 2. Demonstrate how shortcut keys                                  |               | Laptop        |
+|    can make the job of editing easier                             |               | Sample files  |
 |    by saving a lot of time.                                       |               | in USB drive  |
-| 3. Participants are asked to practise by following the            |               | (tools_menu   |
-|    facilitator demonstration in the use of shortcut-shortcut      |               | _sample.osm   |
-|    (shortcut keys) are on their each computers/laptops.           |               | utilplugin2   |
+| 3. Ask participants to practise by following the                  |               | (tools_menu   |
+|    demonstration in the use of shortcuts.                         |               | _sample.osm   |
+|                                                                   |               | utilplugin2   |
 |                                                                   |               | _sample.osm)  |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Building tools plugin 30'**                                     | Discussion    | Powerpoint    |
 |                                                                   |               |               |
-| 1. Make sure that all the participants have install               | Demonstration | Presentation  |
-|    **"building_tools"** and **"utilsplugin2"** plugin. Make sure  | Practice      | Projector     |
-|    that participants already remove the previous file training    |               | Computer/     |
+| 1. Make sure all the participants have installed the              | Demonstration | Presentation  |
+|    **"building_tools"** and **"utilsplugin2"** plugins. Make sure | Practice      | Projector     |
+|    that participants remove the previous training files           |               | Computer/     |
 |    and ask them to create new layer. Use that layer to practice   |               | Laptop        |
-|    with plugin **"buildings_tool"**. Some of the things that      |               |               |
-|    facilitator should note are:                                   |               |               |
+|    with the **"buildings_tool"** plugin. Demonstrate:             |               |               |
 |                                                                   |               |               |
-|    a. Way building tools work.                                    |               |               |
-|    b. Make sure that they didn't select any object when they want |               |               |
-|       use building tools.                                         |               |               |
-|    c. Teach them to set the building tools according to building  |               |               |
-|       size what they want (for example 10 m x 10 m)               |               |               |
-|    d. How to give tag other than building=yes                     |               |               |
+|    a. How building tools works                                    |               |               |
+|    b. Make sure that they don't select any object when            |               |               |
+|       using building tools.                                       |               |               |
+|    c. Teach how to set the building                               |               |               |
+|       size (for example 10 m x 10 m)                              |               |               |
+|    d. How to automatically add tags other than building=yes       |               |               |
 |                                                                   |               |               |
-| 2. Explain each usability of existing option on the menu set      |               |               |
-|    building size                                                  |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Utilplugin2 60'**                                               | Discussion    | Powerpoint    |
 |                                                                   |               |               |
-| 1. After practice with **"building_tool"** plugin end, ask        | Demonstration | Presentation  |
-|    participans to close the layer and open second training file   | Practice      | Projector     |
-|    **"utilsplugin2_sample.osm"**. With this file,participants can |               | Computer/     |
-|    practice some important tools in **"utilplugin2_sample.osm"**. |               | Laptop        |
-|    With this file, participants can practice some important tools |               |               |
-|    in **"util2plugin"** plugin.                                   |               |               |
-| 2. Facilitator explains some important tools in utilplugin2       |               |               |
-|    plugin such as *add source tag, select way nodes, overplace    |               |               |
-|    geometry*. Give an example that corresponds to daily digitizing|               |               |
-| 3. Participants directly practice use of the tools with explain   |               |               |
-|    from facilitator.                                              |               |               |
+| 1. After the **"building_tool"** plugin, ask                      | Demonstration | Presentation  |
+|    participans to close the layer and open the training file      | Practice      | Projector     |
+|    **"utilsplugin2_sample.osm"**. With this file, participants    |               | Computer/     |
+|    practise using new tools.                                      |               | Laptop        |
+| 2. Explain new tools in utilplugin2                               |               |               |
+|    plugin such as *add source tag, select way nodes, replace      |               |               |
+|    geometry*. Give examples of situations when these will be used.|               |               |
+| 3. Participants should practice the tools as                      |               |               |
+|    they are explained.                                            |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Create relation between object 35'**                            | Discussion    | Powerpoint    |
+| **Create relations between objects 35'**                          | Discussion    | Powerpoint    |
 |                                                                   |               |               |
-| 1. Facilitator explain about relation and an example in JOSM also | Demonstration | Presentation  |
-|    OpenStreetMap.                                                 | Practice      | Projector     |
-| 2. Participants create buildings with 2 polygon overlapping each  |               | Computer      |
-|    other (for example a building with gazebo inside that building)|               | Laptop        |
-| 3. Explain about relation's attribute, "inner" and "outer" role.  |               |               |
+| 1. Explain relations and show an example in JOSM and on the OSM   | Demonstration | Presentation  |
+|    website.                                                       | Practice      | Projector     |
+| 2. Have participants create two polygons with one inside the      |               | Computer      |
+|    other (to demonstrate making a building with a courtyard)      |               | Laptop        |
+| 3. Explain relation attributes, and the "inner" and "outer" roles.|               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-FAQ (Frequently Asked Question)
-*******************************
+FAQ (Frequently Asked Questions)
+********************************
 
-**I have set the building size, but why it only shows as a line not a polygon?**
+**I have set the building size in the building tools plugin. Why do buildings
+show as a line, not as a polygon?**
 
-It's because the zoom level problem.
-Try to zoom in into that line.
-It will show the building after the proper zoom.
+It may look this way if you are not zoomed in far enough. Zoom in further
+to see the building properly.
 
-**I want create a circle, but why I got a very huge circle with 'create a circle' tool from utilsplugins2 tool?**
+**I want to create a circle. Why do I get a very large circle with the
+'create a circle' tool in utilsplugins2?**
 
-It's because when we want to create a circle we must add a way with 2 nodes.
-If that way have more than 2 nodes, the result of the circle will be very big.
+Before using this tool, first create a way with exactly two nodes. If you
+create a way with more than two nodes, the resulting circle made from this
+tool can end up very large.
 
 
-**Session 2**
-^^^^^^^^^^^^^
+Session 2
+.........
 
 Quality Assurance
 ^^^^^^^^^^^^^^^^^
-Time    :   4 Hours 15 minutes
+Time : 4 Hours 15 minutes
 
 Basic Competency
 ****************
-2. Using the validation tool to ensure the quality of the contribution JOSM
-   mapping.
+Use JOSM validation tools to ensure the quality of
+map contributions                                 
 
-Indicator
-*********
-1. Applying editing tips and standardization presets to ensure the quality of
-   the resulting data.
-2. Using validation tools in JOSM.
-3. Using online validation tool (keepright).
+Indicators
+**********
+1. Use validation tools in JOSM   
+2. Use online validation tools    
 
-Outcome
-*******
-OpenStreetMap data quality becomes better weather the use of preset or
-buildings that are already mapped.
+Outcomes
+********
+1. Use validation tools to make OSM data better
 
 Core Material
 *************
-**Quality Assurance**
-
-1. Errors and warnings
-2. Validation Tools
-3. Tasking Manager
-4. Editing Tips
-5. Standardization Presets
-6. KeepRight
+**Quality Assurance**        
+                             
+1. Error and warnings        
+2. Using the validation tool 
+3. Common validation warnings
+4. Using the tasking manager 
+5. Editing tips              
+6. Presets standardisation   
+7. KeepRight                 
 
 Activities
 **********
@@ -356,79 +327,72 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | Powerpoint    |
 |                                                                   |               |               |
-| 1. Facilitator explain the importance of the session, the         | Q & A         | Presentation  |
-|    objective, activities and outcomes measures                    | Session       | Projector     |
-| 2. Consolidation by answering participants question about editing |               |               |
+| 1. Explain the importance of the session, objectives,             | Q & A         | Presentation  |
+|    outcomes and activities of the session.                        | Session       | Projector     |
+| 2. Answer any participant questions about editing                 |               |               |
 |    OSM data                                                       |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Input 45'**                                                     | Practice      | Powerpoint    |
 |                                                                   |               |               |
-| Facilitator explain about quality assurance, show few errors      |               | Presentation  |
-| often / usually occurring in digitizing  map osm and using        |               | Projector     |
-| the presets.                                                      |               | Computer/     |
+| Explain quality assurance. Show a few common errors               |               | Presentation  |
+| that occur when editing in OSM.                                   |               | Projector     |
+|                                                                   |               | Computer/     |
 |                                                                   |               | Laptop        |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Practice 150'**                                                 | Practice      | Powerpoint    |
 |                                                                   |               |               |
-| 1. Facilitator show proper way to digitizing with JOSM.           |               | Presentation  |
-| 2. Show them how to fix the error or warning, if already mapped.  |               | Projector     |
-| 3. Fix error in JOSM can use two validation tools, i.e.           |               | Computer/     |
-|    validation tools in JOSM and validation site (Keep Right) so   |               | Laptop        |
-|    all the participants can understand different about warning    |               |               |
-|    and error.                                                     |               |               |
-| 4. Remind the tools/tool that have been studied in the previous   |               |               |
-|    session on editing in details such as on the tools menu and    |               |               |
+| 1. Show the proper way to digitise with JOSM.                     |               | Presentation  |
+| 2. Show how to fix errors or warnings.                            |               | Projector     |
+| 3. Find and fix errors in JOSM using two validation tools, JOSM   |               | Computer/     |
+|    validator and KeepRight.                                       |               | Laptop        |
+| 4. Remind participants of the tools from the previous             |               |               |
+|    session such as those on the tools menu and                    |               |               |
 |    more tools.                                                    |               |               |
 | 5. Use the tools to correct existing mistakes, according to the   |               |               |
-|    function of each tool/tools like split, merge nodes, add the   |               |               |
-|    intersections, etc.                                            |               |               |
-| 6. at the time of the naming of the object using a preset,        |               |               |
-|    the preset again it should be noted that whether or not is in  |               |               |
-|    conformity with its object                                     |               |               |
-| 7. If the participants already understand this material,          |               |               |
-|    participants can practice using the validation tool on the     |               |               |
-|    site or via JOSM Keep Right                                    |               |               |
-| 8. Participants are expected to choose a practice area that will  |               |               |
-|    be validated based on tasking manager that already made by     |               |               |
-|    the facilitator so that at the time of the upload conflict     |               |               |
-|    does not occur                                                 |               |               |
+|    functions of each tool (like split, merge nodes, add           |               |               |
+|    intersection, etc.)                                            |               |               |
+| 6. Participants should practise using the JOSM                    |               |               |
+|    validation tool and KeepRight.                                 |               |               |
+| 7. Let participants practise validation in an area, using         |               |               |
+|    the tasking manager to arrange tasks so that upload conflicts  |               |               |
+|    do not occur.                                                  |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 30'**                                                   | Q & A         |               |
 |                                                                   |               |               |
-| Q & A Session about problem that happen when practice validation  | Session       |               |
-| validation tools in JOSM or online                                |               |               |
+| Q & A about problems that may happen when using validation        | Session       |               |
+| tools in JOSM or online                                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
 
-**Session 3**
-^^^^^^^^^^^^^
+Session 3
+.........
 
 Conflict Resolution when uploading OSM Data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Time    :   2 Hours
+Time : 2 Hours
 
 Basic Competency
 ****************
-3. Resolving conflict when uploading OSM Data
+Resolve conflicts when uploading OSM data 
 
-Indicator
-*********
-
-1. Explain the reason why conflict occurs when uploading OSM data.
-2. Resolving conflict when uploading OSM data.
-3. Explain how to avoid conflict when uploading OSM data.
+Indicators
+**********
+1. Identify conflicts             
+2. Understand why conflicts occur 
+3. Solve conflicts                
 
 Outcome
 *******
-Conflict occur more less
+1. Conflicts occur less
+2. Able to resolve conflicts in JOSM
 
 Core Material
 *************
-**Resolving conflict when uploading OSM data**
-
-1. Cause of conflict when uploading OSM data.
-2. Resolve conflict when uploading OSM data.
-3. How to avoid conflict when uploading OSM data.
+**Dealing with Conflicts**  
+                            
+1. Conflicts                
+2. Conflict resolution      
+3. Ways to avoid conflicts  
 
 Activities
 **********
@@ -438,89 +402,84 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | Powerpoint    |
 |                                                                   |               |               |
-| The facilitator presenting the importance of session, objective   |               | Presentations |
-| outcome and activities                                            |               | Projector (get|
+| Explain the importance of the session, objectives,                |               | Presentations |
+| outcomes and activities of the session.                           |               | Projector (get|
 |                                                                   |               | there are two |
 |                                                                   |               | projector)    |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Group Discussion 15'**                                          | Discussion    | Powerpoint    |
 |                                                                   |               |               |
-| 1. The participants are asked to discuss the causes of conflicts  | Lecture       | Presentations |
-|    and how to solve it in groups.                                 |               | Projector     |
-| 2. One of group presenting the discussion result and the other    |               |               |
-|    participants respond.                                          |               |               |
-| 3. The facilitator gives reinforcement with a show at the         |               |               |
-|    projector screen how a conflict can occurs, by downloading     |               |               |
-|    some area around the training location                         |               |               |
+| 1. Ask participants to form groups and discuss the causes of      | Lecture       | Presentations |
+|    conflicts and how to solve them.                               |               | Projector     |
+| 2. One group can present their discussion results and others      |               |               |
+|    respond.                                                       |               |               |
+| 3. Reinforce the discussion by showing on the                     |               |               |
+|    projector how a conflict occurs, by downloading                |               |               |
+|    some area around the training location.                        |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Demonstrations and practices 100'**                             | Lecture       | Computer/     |
+| **Demonstration and practice 100'**                               | Lecture       | Computer/     |
 |                                                                   |               |               |
-| 1. Before displayed with a conflict, facilitator must first be    | Demonstration | Laptop        |
-|    already has data that will be used as a conflict simple,       | Practice      |               |
-|    namely data was in OpenStreetMap server and have OSM ID        |               |               |
-|    from each points.                                              |               |               |
-| 2. The facilitator explain the three type of conflicts that       |               |               |
-|    arises when uploading a JOSM data. Each conflict described     |               |               |
-|    the causes of conflicts, example and how to handle it.         |               |               |
-| 3. The facilitator can call other facilitators or one of the      |               |               |
-|    participants to practice together in front of how the          |               |               |
-|    conflict can occur and how to solve it.                        |               |               |
-| 4. For the nodes type conflicts, the facilitator explain the      |               |               |
-|    existing button function and also meaning each color that      |               |               |
-|    appear in conflict one of these. Before that, to make it       |               |               |
-|    easier the facilitator could makes notes on OSM ID of the line |               |               |
-|    that will become the nodes type conflict sample.               |               |               |
+| 1. Before demonstrating a conflict, first create                  | Demonstration | Laptop        |
+|    a sample conflict.                                             | Practice      |               |
+| 2. Explain the three type of conflict that                        |               |               |
+|    arise when uploading JOSM data. Describe the cause of          |               |               |
+|    each, show an example and how to handle it.                    |               |               |
+| 3. Ask participants to demonstrate to the others on the projector |               |               |
+|    how to solve a given conflict.                                 |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-Frequently Asked Question
-*************************
+FAQ (Frequently Asked Questions)
+********************************
 
-**How to avoid conflict?**
+**How do we avoid conflicts?**
 
-You can try to divide your work area if in the one time there were two or
-more user digitizing in the same area.
+If you are working with other mappers, divide the work area so that your
+efforts do not overlap.
 
-**What is the meaning of the green, yellow, and red colors from the node type conflicts?**
+It is also wise to upload your edits regularly. Fewer conflicts will occur
+if you upload changes soon after downloading data.
 
-The green color means that the nodes are also in the OSM server and in the
+**What is the meaning of the green, yellow and red colours in the conflict 
+dialog?**
+
+The green colour means that the nodes are also in the OSM server and in the
 same order.
-The yellow color means that the nodes are also in the OSM server but not the
+The yellow colour means that the nodes are also in the OSM server but not the
 same order.
-While the red color means that the nodes just in one version,
-whether it is the version will be uploaded or the OSM server.
+The red colour means that the nodes exist just in one version,
+whether it is the working version or on the OSM server.
 
-**Session 4**
-^^^^^^^^^^^^^
+Session 4
+.........
 
 XML and presets in JOSM
 ^^^^^^^^^^^^^^^^^^^^^^^
-Time    : 150 minutes
+Time : 150 minutes
 
 Basic Competency
 ****************
-4. Create a preset file in JOSM
+Create presets files in JOSM   
 
-Indicator
-*********
-1. Explain definition and a tag function.
-2. Explain definition and a xml function.
-3. Explain definition and a key and value function.
-4. Create presets.
-5. Enter a preset file to JOSM.
-6. Apply new presets to an object.
+Indicators
+**********
+1. Understand tags                 
+2. Understand XML                  
+3. Understand keys and values      
+4. Make presets                    
+5. Put preset files into JOSM      
+6. Apply new presets to an object  
 
-Outcome
-*******
-
-Presets can be used for the interest of mapping.
+Outcomes
+********
+1. Presets can be used to ease and standardise editing process
 
 Core Material
 *************
-**XML and presets in JOSM**
-
-1. Tag and Presets.
-2. Introduction XML.
-3. JOSM presets file.
+**Creating JOSM File Presets**  
+                                
+1. Tags and presets             
+2. Introduction to XML          
+3. JOSM presets files           
 
 Activities
 **********
@@ -530,112 +489,104 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 10'**                                              | Lecture       | Powerpoint    |
 |                                                                   |               |               |
-| 1. The facilitator presenting the importance of sessions,         | Q & A         | Presentations |
-|    objectives, outcome and activities.                            | Discussion    | Projector     |
-| 2. The facilitator gives some question to make sure that the      |               |               |
-|    participants still remember what is preset and tag             |               |               |
-| 3. Make sure that the participants understands that is the simple |               |               |
-|    way to implement tag which have previously have been           |               |               |
-|    determined, to objects in JOSM.                                |               |               |
+| 1. Explain the importance of the session, objectives,             | Q & A         | Presentations |
+|    outcomes and activities of the session.                        | Discussion    | Projector     |
+| 2. Give questions to make sure that the                           |               |               |
+|    participants still remember what are presets and tags.         |               |               |
+| 3. Make sure that the participants understand                     |               |               |
+|    commonly accepted tags in OSM                                  |               |               |
+|    (remind about Map Features page on OSM wiki).                  |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Input 45'**                                                     | Lecture       | Powerpoint    |
 |                                                                   |               |               |
-| 1. The facilitators explain what that presets, the difference     |               | Presentations |
-|    tags, key and value and usefulness.                            |               | Projector     |
-| 2. The participants will be introduced to xml language which      |               |               |
-|    crafted a preset file.                                         |               |               |
-| 3. The facilitators proceeding explain about the various of       |               |               |
-|    elements that can be added to a preset menu through the XML    |               |               |
-|    code row. The facilitator is expected to explain each element  |               |               |
-|    gradually, so the part participants can understand the         |               |               |
-|    relationship between their code and how result are             |               |               |
+| 1. Explain presets, different                                     |               | Presentations |
+|    tags, keys and values.                                         |               | Projector     |
+| 2. Introduce the XML language which is used                       |               |               |
+|    to create a presets file.                                      |               |               |
+| 3. Explain the various                                            |               |               |
+|    elements that can be added to a presets menu through the XML   |               |               |
+|    code. Explain each element                                     |               |               |
+|    carefully, so that participants understand the                 |               |               |
+|    relationship between their code and how results appear         |               |               |
 |    in the preset menu.                                            |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Making Your Own Preset File 30'**                               | Discussion    | Computer/     |
 |                                                                   |               |               |
-| 1. The facilitator invite participants to discuss about preset    | Demonstration | Laptop        |
-|    what you want to made together later. Make sure the information| Practice      | Module 4      |
-|    would be converted into a preset file later to cover the whole |               |               |
-|    type can be created using xml is text box, check box, and      |               |               |
+| 1. Invite participants to discuss presets                         | Demonstration | Laptop        |
+|    that you want to make together. Make sure the ideas            | Practice      | Module 4      |
+|    include all types of preset menu items, such as                |               |               |
+|    text box, check box and                                        |               |               |
 |    multiselect.                                                   |               |               |
-| 2. The participants asked to visit the Map Features pages on the  |               |               |
-|    Wiki OpenStreetMap website and the taginfo.openstreetmap.org   |               |               |
-|    website to see the key and value are already available in      |               |               |
-|    OpenStreetMap. They will try to use key and value has existed  |               |               |
-|    or once used in the website. But if nothing, they may make key |               |               |
-|    and value own.                                                 |               |               |
+| 2. Ask participants to visit the Map Features page on the         |               |               |
+|    OSM wiki and the taginfo.openstreetmap.org                     |               |               |
+|    website to see what keys and value are already available in    |               |               |
+|    OpenStreetMap. They should try to use keys and values that     |               |               |
+|    exist or once existed. If they have not been created before,   |               |               |
+|    they may invent keys and values of their own.                  |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 |**Making Your Own Preset File 45'**                                | Practise      | Powerpoint    |
 |                                                                   |               |               |
-| 1. The facilitator helps the participants to install Notepad++    |               | Presentations |
-|    because in this session the participants need this software    |               | Projector     |
-| 2. The participants were asked to open the *presets_sample.xml*   |               | Computer/     |
-|    file has been provided by trainer and given on USB flash disk. |               | Laptop        |
-|    This file is empty preset file provided as the starting point  |               | USB Flash     |
-|    to write their XML.                                            |               | disk Installer|
-| 3. The facilitator will guide all participants to make together   |               | Notepad ++    |
-|    a preset file has been previously discuss. The facilitator     |               | a XML file    |
-|    around the class and check how participants make a xml code.   |               | example       |
-|    Fix the mistakes found on the participants. When participants  |               | Module 4      |
-|    finished writing their XML file, show how to save the preset   |               | XML and       |
-|    file and add the preset file to JOSM.                          |               | Presets in    |
+| 1. Help participants install Notepad++ for use in this            |               | Presentations |
+|    session.                                                       |               | Projector     |
+| 2. Ask participants to open the *presets_sample.xml*              |               | Computer/     |
+|    file that has been provided on USB flash disk.                 |               | Laptop        |
+|    This file is an empty preset file provided as the starting     |               | USB Flash     |
+|    point for writing custom XML.                                  |               | disk Installer|
+| 3. Guide participants to make together the                        |               | Notepad ++    |
+|    presets file that was previously discussed. Go around          |               | a XML file    |
+|    and check how the participants write XML code.                 |               | example       |
+|    Fix mistakes and explain them to participants. When they       |               | Module 4      |
+|    finish writing their XML file, show how to save it and         |               | XML and       |
+|    add into JOSM.                                                 |               | Presets in    |
 |                                                                   |               | JOSM          |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Entering new preset file to JOSM 15'**                          | Q & A         |               |
+| **Adding new presets file to JOSM 15'**                           | Q & A         |               |
 |                                                                   |               |               |
-| 1. Asked about how to add preset through the "Preferences" menu.  | Practice      |               |
-| 2. After they successfully entered the preset file to JOSM,       |               |               |
-|    the alternative would be some participants found an error.     |               |               |
-|    Usually error it happens because participants careless in      |               |               |
-|    inserting a string or xml code are complicated. Help           |               |               |
-|    participants who encounter errors. After all participants      |               |               |
-|    managed to run the preset file in JOSM. Try together using the |               |               |
-|    tags in the map objects on JOSM.                               |               |               |
+| 1. Add presets through the "Preferences" menu.                    | Practice      |               |
+| 2. If participants get an error after adding their presets file   |               |               |
+|    into JOSM, help them correct it.                               |               |               |
+|    Usually errors happen when participants make mistakes          |               |               |
+|    with their XML.                                                |               |               |
+|    Make sure participants are able to succesfully correct and     |               |               |
+|    add into JOSM. Then practise tagging objects with the new      |               |               |
+|    menu.                                                          |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
 
-**Session 5**
-^^^^^^^^^^^^^
+Session 5
+.........
 
 Using Private Datastore
 ^^^^^^^^^^^^^^^^^^^^^^^
-Time    : 2 Hours
+Time : 2 Hours
 
 Basic Competency
 ****************
-5. Using the private data store feature for the personal data storage
+Use private data store feature to keep private data    
 
-Indicator
-*********
-1. Explain the private data store function.
-2. Explain the data type can be published and the data is private.
-3. Install the plug-in private data store  into JOSM.
-4. Using the plug-in private data store in the shorting of public data
-   and private.
-5. Access the online datastore.
+Indicators
+**********
+1. Understand the functions of the Separate Data Store (SDS)    
+2. Understand what data should be kept publicly and what should 
+   be private                                                   
+3. Install SDS plugin in JOSM                                   
+4. Use SDS presets                                              
+5. Use SDS plugin for selecting public and private data         
+6. Access online datastore                                      
 
-Outcome
-*******
-1. The result of mapping by using the private datastore.
-2. Additional project in HOT Datastore website.
+Outcomes
+********
+1. Understand how to use the SDS
 
 Core Material
 *************
 
-**Using Private Datastore**
-
-1. Private data store
-2. Install SDS Plugin
-3. Using Plugin
-4. How SDS plugin works
-5. Access the online datastore
-
-  a. User Private Datastore
-  b. A diagram for the using of private datastore and JOSM
-  c. Edit the online data store
-  d. How to add the online datastore
-  e. How to add and to edit user in private datastore
-  f. How to add project in private datastore
+**Using the Separate Data Store**  
+                                   
+1. Installing the SDS plugin       
+2. Using the plugin                
+3. How it works                    
+4. Access the datastore online     
 
 Activities
 **********
@@ -645,108 +596,88 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 15'**                                              | Lecture       | Powerpoint    |
 |                                                                   |               |               |
-| 1. The facilitator presenting the importance of sessions,         |               | Presentations |
-|    objectives, outcome and activities.                            |               | Projector     |
-| 2. Through games, participants requested to mention what kind of  |               |               |
-|    data can be mapped use private datastore                       |               |               |
-| 3. Give explanation related to the reasons they entering the data |               |               |
-|    into private or public data                                    |               |               |
+| 1. Explain the importance of the session, objectives,             |               | Presentations |
+|    outcomes and activities of the session.                        |               | Projector     |
+| 2. Through games, participants should list what kind of           |               |               |
+|    data can be mapped using a private datastore.                  |               |               |
+| 3. Explain reasons why data might be better as                    |               |               |
+|    private or public data.                                        |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Input 30'**                                                     | Lecture       | Powerpoint    |
 |                                                                   |               |               |
-| The facilitator explain about:                                    | Q & A         | Presentations |
+| Explain:                                                          | Q & A         | Presentations |
 |                                                                   |               |               |
-| - How Private Datastore (SDS) works                               |               | Projector     |
-| - The purpose of using Private Datastore by HOT                   |               | Computer/     |
-| - The application/the other utilization that can be used by       |               | Laptop        |
-|   this plugin                                                     |               |               |
+| - How Separate Data Store (SDS) works                             |               | Projector     |
+| - The purpose of using the SDS                                    |               | Computer/     |
+| - Applications of the tool                                        |               | Laptop        |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Practice 60'**                                                  | Practice      |               |
 |                                                                   |               |               |
-| 1. Show how to install this plugin and ask to the participants    |               |               |
-|    to install the plugin in their computer/laptop. Then the       |               |               |
-|    participants requested use the specific presets to provide     |               |               |
-|    private data tag.                                              |               |               |
-| 2. Download area that will be mapped using JOSM, ask the          |               |               |
-|    participants to edit one of object (must be a building), point |               |               |
-|    the participants to see properties/description of the object   |               |               |
-|    has been given presets, and then upload.                       |               |               |
-| 3. Ask the participants to login (sign up) to **HOT Datastore**   |               |               |
-|    website.                                                       |               |               |
-|                                                                   |               |               |
-|    - The private datastore account is different from the OSM      |               |               |
-|      account.                                                     |               |               |
-|    - The private datastore account can be admin and personal      |               |               |
-|    - The private datastore account used in SDS Plugin should be   |               |               |
-|      the same that used in HOT Datastore website.                 |               |               |
-|                                                                   |               |               |
-| 4. Show how to access the **HOT Datastore** website               |               |               |
-|                                                                   |               |               |
-|    - If as admin aim to add user and added project in the HOT     |               |               |
-|      Datastore website, then using the Tag Search menu to find    |               |               |
-|      the object have been saved and Map Search to add the object  |               |               |
-|      directly with using HOT Datastore website.                   |               |               |
-|    - If as personal user to navigate using the Tag Search and     |               |               |
-|      Map Search menu.                                             |               |               |
-|                                                                   |               |               |
-| 5. Find some private data has been added and try to edit          |               |               |
-|    some data.                                                     |               |               |
+| 1. Show how to install the plugin and ask participants            |               |               |
+|    to install on their computer/laptop. Edit the settings         |               |               |
+|    so that the SDS points to HOT's demo server                    |               |               |
+|    (sds.dev.hotosm.org).                                          |               |               |
+| 2. Demonstrate how to add tags to objects which will be           |               |               |
+|    redirected to the private demo server. Participants should     |               |               |
+|    download a small area and practise adding custom tags.         |               |               |
+|    Upload the edits.                                              |               |               |
+| 3. Use the sample account to access the demo data store.          |               |               |
+|    Allow participants to explore the SDS and see the private data |               |               |
+|    which they uploaded in JOSM.                                   |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 |**Closing 15'**                                                    | Q & A         |               |
 |                                                                   |               |               |
-| Discuss about the private datastore session, usually participants |               |               |
-| will ask how if you want to have own private datastore account    |               |               |
-| if participants are serious with that can give proposal to HOT    |               |               |
-| team and prepare a server if possible.                            |               |               |
+| Discuss the session. Explain how the SDS can be set up privately  |               |               |
+| for organisations and users that want to maintain their own       |               |               |
+| private data store.                                               |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
 Common Problems
 ***************
 
-- Problem with internet connection, if the connection is slow it will make the
-  practice session become longer
-- The online private datastore server cant be used together because of
-  the limited bandwidth, so the participants are usually asked to not
-  practice and just see the facilitator to practice.
+**Internet connection**
 
-**Session 6**
-^^^^^^^^^^^^^
+Sometimes the demo SDS has problems when many people are using it
+because of limited bandwidth. You may need to ask participants to
+watch demonstration rather than practising all on their own.
+
+
+Session 6
+.........
 
 Wiki OpenStreetMap
 ^^^^^^^^^^^^^^^^^^
-Time    :  2 Hours
+Time : 2 Hours
 
 Basic Competency
 ****************
-6. Create and edit page in OSM wiki
+Create and edit pages in OSM wiki  
 
-Indicator
-*********
-1. Explain the definition of wiki openstreetmap
-2. Create account in OSM wiki
-3. Editing OSM wiki
-4. Explain conventions and guides/rules in making a wiki page
-5. Create a new page in wiki
-6. Uploading file and photo/image
-7. Translate and revise wiki
-8. View changelog
+Indicators
+**********
+1. Make an account on the OpenStreetMap wiki                  
+2. Understand conventions and rules in developing a wiki page 
+3. Edit the wiki                                              
+4. Upload files and images                                    
+5. Translate and revise wiki                                  
 
-Outcome
-*******
-The Wiki page about the mapping project or the area contingency planning
-profile.
+Outcomes
+********
+1. Edit the OpenStreetMap wiki
+2. Understand how to contribute to OSM wiki
 
 Core Material
 *************
-**Wiki OpenStreetMap**
-1. The definition of wiki openstreetmap
-2. Creating account
-3. Edit wiki
-4. The format of writing wiki
-5. Creating a new page in wiki
-6. Upload file and photo/image
-7. Translating pages
-8. How to view changelog
+**Editing the OpenStreetMap Wiki**  
+                                    
+1. OSM wiki                         
+2. Signing up                       
+3. Editing                          
+4. Wiki formatting                  
+5. Creating a new page              
+6. Uploading files and images       
+7. Translating pages                
+8. Watching pages                   
 
 Activities
 **********
@@ -756,50 +687,48 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 15'**                                              | Lecture       | Powerpoint    |
 |                                                                   |               |               |
-| The facilitator presenting the importance of session, objectives, |               | Presentations |
-| outcome and activities                                            |               | Projector     |
+| Explain the importance of the session, objectives,                |               | Presentations |
+| outcomes and activities of the session.                           |               | Projector     |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Explain Wiki OpenStreetMap 25'**                                | Lecture       | Powerpoint    |
+| **Explain OpenStreetMap Wiki 25'**                                | Lecture       | Powerpoint    |
 |                                                                   |               |               |
-| 1. The facilitator explain about :                                | FGD           | Presentations |
+| 1. Explain:                                                       | FGD           | Presentations |
 |                                                                   |               |               |
-|    - What is Wiki OpenStreetMap and how this website can be used  |               | Projector     |
-|    - The importance of this Wiki OpenStreetMap website as the     |               | Module 6      |
-|      main information source about anything related with          |               |               |
-|      OpenStreetMap.                                               |               |               |
-|    - How Wiki OSM works similar with OSM< where all user (members)|               |               |
-|      can add and edit the Wiki page.                              |               |               |
-|    - The importance posting projects related with/using OSM and   |               |               |
-|      also various kinds of tag in OSM.                            |               |               |
+|    - What is the OSM wiki and how it can be used                  |               | Projector     |
+|    - The importance of the wiki as the                            |               | Module 6      |
+|      main information source about anything related to            |               |               |
+|      OSM                                                          |               |               |
+|    - How the wiki works similar to OSM, where all users           |               |               |
+|      can add and edit the wiki pages                              |               |               |
+|    - The importance of posting projects related to OSM and        |               |               |
+|      also various kinds of OSM tags                               |               |               |
 |                                                                   |               |               |
-| 2. The facilitator shows some pages in a Wiki are important and   |               |               |
-|    very useful, example the *"Map Feature"* and *"Basics of JOSM"*|               |               |
-|    page (JOSM Basic). Show how to help translate the page to      |               |               |
-|    improve the use of OSM                                         |               |               |
+| 2. Show some important wiki pages, such as                        |               |               |
+|    *Map Features* and *Basics of JOSM*                            |               |               |
+|    (JOSM Basic). Show how to translate pages to                   |               |               |
+|    improve the accessibility of OSM                               |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Create account Wiki OSM 30'**                                   | Practice      | Powerpoint    |
+| **Create Wiki Accounts 30'**                                      | Practice      | Powerpoint    |
 |                                                                   |               |               |
-| 1. The facilitator help the participants to register              |               | Presentations |
-|    as member in Wiki OSM website, so they can **log in** and      |               | Projector     |
-|    contribute in Wiki OpenStreetMap.                              |               | Computer      |
-| 2. Tell the participants that they should sign up with the same   |               | connected     |
-|    name (account), because it will allow the participants them    |               | internet      |
-|    in order not remember many names and keywords (which often     |               | Module 6      |
-|    confuse user themselves and in the end can't log in), as well  |               |               |
-|    as the other user to find them both on OSM and Wiki OSM.       |               |               |
+| 1. Help participants to register                                  |               | Presentations |
+|    on OSM wiki, so they can log in and                            |               | Projector     |
+|    contribute.                                                    |               | Computer      |
+| 2. Tell participants that they should sign up with the same       |               | connected     |
+|    name (account), because it will help them remember their       |               | internet      |
+|    login info (which often confuses users and prevents            |               | Module 6      |
+|    them from logging in) and it makes it easier for               |               |               |
+|    other users to find them both on OSM and the wiki.             |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-|**Create and Edit Wiki OSM Page 60'**                              | Practice      | Powerpoint    |
+|**Create and Edit OSM Wiki Page 60'**                              | Practice      | Powerpoint    |
 |                                                                   |               |               |
-| 1. The facilitator asks the participants to access a user page    |               | Presentations |
-|    they are each to practice adding some articles on the page.    |               | Projector     |
-| 2. Show how editor works, and ask the participants to add some    |               | Computer      |
-|    basic information about themselves to *user page* each one of  |               | connected     |
-|    them.                                                          |               | internet      |
-| 3. Show how to add some basic information to make their pages     |               | Module 6      |
-|    look more nice and varied, using tag and the button at the top |               |               |
-|    editor.                                                        |               |               |
-| 4. Teach only basic formatting, the important thing is the        |               |               |
-|    participants understand the basic concepts. In the next session|               |               |
-|    the participants will learn the other format more detail and   |               |               |
-|    will start editing and create the real new page.               |               |               |
+| 1. Ask participants to access their user page                     |               | Presentations |
+|    to practise adding to the wiki.                                |               | Projector     |
+| 2. Show how the editor works, and ask the participants to add     |               | Computer      |
+|    basic information about themselves to their user page.         |               | connected     |
+| 3. Demonstrate how to use the buttons at the top of the editor    |               | internet      |
+|    to make the formatting look better.                            |               | Module 6      |
+| 4. Teach basic formatting. It does not need to be commplex. The   |               |               |
+|    important thing is for participants to understand the basic    |               |               |
+|    concepts.                                                      |               |               |
+| 5. Have participants create a new page entirely on their own.     |               |               |
 +-------------------------------------------------------------------+---------------+---------------+

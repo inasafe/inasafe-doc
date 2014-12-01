@@ -95,8 +95,8 @@ other links will appear in the upper right corner of the website.
 .. image:: /static/training/intermediate/osm/image138.*
    :align: center
 
-3. Edit
--------
+3. Editing
+----------
 
 Let’s start out by editing our user page. Every user has a page on the wiki.
 These pages are commonly used to provide information about yourself, your
@@ -404,7 +404,7 @@ Compare the wiki text to the way it is formatted when you are viewing it.
 Find more information on editing at
 http://wiki.openstreetmap.org/wiki/Help:Wiki-Editing.
 
-5. Creating A new page
+5. Creating a new page
 ----------------------
 
 You can create any wiki page the same way that you have created your user

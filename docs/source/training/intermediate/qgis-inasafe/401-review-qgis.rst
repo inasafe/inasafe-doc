@@ -2,7 +2,7 @@
 
 ..  _review-qgis:
 
-Module 1: Review QGIS
+Module 1: QGIS Review
 =====================
 
 **Learning Objectives**

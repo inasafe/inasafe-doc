@@ -7,7 +7,7 @@ Module 5: Calculating Damages and Losses
 
 **Learning Objectives**
 
-- Understand the definition of damages, losses and and their calculation based 
+- Understand the definition of damages, losses and their calculation based 
   on community exposure data
 - Understand damage and losses assessment values based on BNPB and BPBD
 - Make a damage and losses map
@@ -274,8 +274,8 @@ Now let’s calculate losses per hamlet using the Group Stats again.
 34. Go to :menuselection:`Data ‣ Save all to CSV files` and save it as 
     :kbd:`BNG_Losses`.
 
-7. Join data
-------------
+7. Joining data
+---------------
 
 Now we will join the tables that we created to our 
 :guilabel:`Batas_Desa_Sirahan` attribute
@@ -365,8 +365,8 @@ table and then use them to add new columns to the file.
 49. Exit editing mode and save your changes.
 
 
-8. Create a chart
------------------
+8. Creating a chart
+-------------------
 
 We will conclude by representing these damage and loss values as a chart in QGIS.
 

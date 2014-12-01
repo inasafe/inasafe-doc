@@ -12,22 +12,20 @@ About Toolkit
 -------------
 
 **The Beginning QGIS-**|project_name|**Toolkit** is designed to prepare
-facilitators to deliver training for QGIS and |project_name| new user.
-The materials contained in it will prepare you to carry out training with a
-variety of audiences, including common problems and mistakes,
-as well as providing a variety of best methodologies for you to be able
-inviting new mappers.
+trainers to deliver training for new QGIS users.
+The materials included will prepare trainers to conduct trainings with a
+variety of audiences and to cover common problems and pitfalls,
+and also provide trainers with the best methodologies.
 
-When planning a QGIS-|project_name| training, there are some factors that
-need to be considered, including time, available resources,
-number of facilitators with their technical skills.
-This toolkit will help you to prepare a training for every type of audiences,
-but it will more focused on teaching for those who has limited capacity or
-experience using GIS software, making maps, and computer.
+When organising a QGIS-|project_name| training, numerous factors must be
+considered, including the length of time you have to train,
+available resources, number of trainees and their technical skills.
+This toolkit will help trainers prepare trainings for different types of
+participants, but it will primarily focus on educating those with little or
+no experience with GPS, map-making and computers.
 
-The purpose of this toolkit is preparing you, as facilitators,
-to train participant in a workshop successfully in order to processing
-digital map with QGIS and analyzing hazard and exposure data with
+The purpose of this toolkit is to prepare the trainer to successfully train
+workshop participants in using QGIS and analyzing hazard and exposure data with
 |project_name|.
 
 Purpose of Workshop
@@ -96,12 +94,11 @@ Tools
 2. A workshop space with tables and seats
 3. Computers (one computer may be used by two participants,
    but it is better if one computer is used by one participant)
-4. A Printer (to print out Field Papers)
-5. A Projector (to present slide and demonstrate technical instructions and
+4. A Projector (to present slide and demonstrate technical instructions and
    software)
-6. USB Flash drive(s) to transfer files and software
-7. Good internet connection
-8. Snacks and coffee for breaks
+5. USB Flash drive(s) to transfer files and software
+6. Good internet connection
+7. Snacks and coffee for breaks
 
 Schedule
 --------
