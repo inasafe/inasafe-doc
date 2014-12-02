@@ -128,12 +128,12 @@ The workshop consists of three levels:
 1. Beginner Workshop
 
   * Collecting Data Using OSM (Beginner)
-  * Data Analysis using QGIS and |project_name| (Beginner)
+  * Data Analysis Using QGIS and |project_name| (Beginner)
 
 2. Intermediate Workshop
 
   * Collecting Data Using OSM (Intermediate)
-  * Data Analysis using QGIS and |project_name| (Intermediate)
+  * Data Analysis Using QGIS and |project_name| (Intermediate)
 
 3. Training of Trainer (ToT) Workshop
 
@@ -179,7 +179,7 @@ intermediate levels are:
 2. Lecturers and students from relevant departments such as Geography,
    Geodesy, Geomatics, Information Technology and other earth-related sciences
 3. Representatives from NGOs working in disaster risk reduction
-4. Other relevant organisations such as Army, Police, Red Cross, and Scouts
+4. Other relevant organisations such as Army, Police, Red Cross and Scouts
 5. Other relevant agencies
 
 Qualifications for participants at beginner level:
@@ -280,7 +280,7 @@ rather than by workshop level.
 |    |                |                                                                                                                     |
 |    |                | 1. Master how to implement adult learning                                                                           |
 |    |                | 2. Demonstrate basic teaching skills                                                                                |
-|    |                | 3. Practise data collection and analysis through OSM, QGIS, and |project_name|                                      |
+|    |                | 3. Practise data collection and analysis through OSM, QGIS and |project_name|                                       |
 +----+----------------+---------------------------------------------------------------------------------------------------------------------+
 
 
@@ -586,7 +586,7 @@ Quality Assurance in OSM mapping
 |                                                                     | 2. Understand what data should be kept publicly and what should  | 1. Installing the SDS plugin                           |
 |                                                                     |    be private                                                    | 2. Using the plugin                                    |
 |                                                                     | 3. Install SDS plugin in JOSM                                    | 3. How it works                                        |
-|                                                                     | 4. Use SDS presets                                               | 4. Access the datastore online                         |
+|                                                                     | 4. Use SDS presets                                               | 4. Accessing the datastore online                      |
 |                                                                     | 5. Use SDS plugin for selecting public and private data          |                                                        |
 |                                                                     | 6. Access online datastore                                       |                                                        |
 +---------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------------------+
@@ -667,7 +667,7 @@ Spatial Data Analysis using QGIS and |project_name| for Contingency Planning
 
 **Standard Competency:**
 Participant can be a workshop facilitator to teach Data collection and Data
-Analysis through OSM, QGIS, and |project_name| in their respective region.
+Analysis through OSM, QGIS and |project_name| in their respective region.
 
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 | Basic competency                                                    | Indicator                                                        | Core material                                              |
@@ -676,12 +676,12 @@ Analysis through OSM, QGIS, and |project_name| in their respective region.
 |                                                                     | 1. Explain the principles of adult learning                      |                                                            |
 |                                                                     | 2. Analyse the characteristics of adult learning                 | 1. Principles of adult learning                            |
 |                                                                     | 3. Determine strategies, teaching methods or techniques that     | 2. Characteristics of adult learning                       |
-|                                                                     |    apply adult learning                                          | 3. Strategies, teaching methods or techniques that apply   |
+|                                                                     |    apply in adult learning                                       | 3. Strategies, teaching methods or techniques that apply   |
 |                                                                     | 4. Evaluate adult learning                                       |    adult learning                                          |
 |                                                                     |                                                                  | 4. Adult learning evaluation                               |
 |                                                                     |                                                                  |                                                            |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
-|2. Demonstratw basic teaching skills                                 |                                                                  |**Communication skills**                                    |
+|2. Demonstrate basic teaching skills                                 |                                                                  |**Communication skills**                                    |
 |                                                                     | 1. Describe the principles of effective communication            |                                                            |
 |                                                                     | 2. Describe the communication models in workshops                | 1. Principles of effective communication                   |
 |                                                                     | 3. Demonstrate the basic skills component of teaching workshops  | 2. Communication models in workshop                        |
@@ -693,7 +693,7 @@ Analysis through OSM, QGIS, and |project_name| in their respective region.
 |                                                                     | 1. Practise data collection and analysis through OSM, QGIS       | 1. Implementation of adult learning in data collection and |
 |                                                                     |    and InaSAFE workshop using adult learning                     |    analysis through OSM, QGIS, and InaSAFE workshop        |
 |                                                                     | 2. Practise communication skills in data collection and          | 2. Implementation of communication skills data collection  |
-|                                                                     |    analysis through OSM, QGIS, and InaSAFE workshop              |    and analysis through OSM, QGIS, and InaSAFE workshop    |
+|                                                                     |    analysis through OSM, QGIS and InaSAFE workshop               |    and analysis through OSM, QGIS, and InaSAFE workshop    |
 +---------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+
 
 F. Curriculum Structure
@@ -737,7 +737,7 @@ Based on the curriculum, program structure is designed as follows.
 |     | Total                                  | 50                                      |
 +-----+----------------------------------------+-----------------------------------------+
 
-**2. Data Analysis using QGIS/** |project_name| **Beginner Level**
+**2. Data Analysis Using QGIS/** |project_name| **Beginner Level**
 
 +----+-------------------------------------------------------------------------------------------------------+-----------------------------------------+
 | No | Workshop Material                                                                                     | Time (learning hour) @ 45 Minutes       |
@@ -815,7 +815,7 @@ Based on the curriculum, program structure is designed as follows.
 |     | Total                                      | 30                                              |
 +-----+--------------------------------------------+-------------------------------------------------+
 
-**4. Data Analysis using QGIS/** |project_name| **Intermediate Level**
+**4. Data Analysis Using QGIS/** |project_name| **Intermediate Level**
 
 +----+-----------------------------------------+-----------------------------------------+
 | No | Workshop Material                       | Time (learning hour) @ 45Minutes        |
@@ -847,7 +847,7 @@ Based on the curriculum, program structure is designed as follows.
 |    | Total                                   | 50                                      |
 +----+-----------------------------------------+-----------------------------------------+
 
-**5. Training of Trainer for Contingency Planning using OSM, QGIS, and**
+**5. Training of Trainer for Contingency Planning Using OSM, QGIS, and**
 |project_name|
 
 +----+-----------------------------------------+-----------------------------------------+
@@ -1009,7 +1009,7 @@ Collecting Spatial Data with OSM
 **Data Analysis using QGIS and** |project_name| **Beginner Level Workshop**
 
 **Standard Competency:**
-Managing Spatial Data using QGIS and Analyzing Disaster Impact Scenarios 
+Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios 
 with |project_name|
 
 +-------------------------------------------------------------------------+------------------------------------------------------------------+------------------------------------------------------------+---------------------------------------+------------------------+------------------+-------------------------------+
@@ -1213,7 +1213,7 @@ Quality Assurance in OSM mapping
 |                                                                | 2. Understand what data should be kept publicly and what should  | 1. Installing the SDS plugin                           | store function and discuss about      |                        |                            | Module 5                      |
 |                                                                |    be private                                                    | 2. Using the plugin                                    | the kind of data that can go public   |                        |                            | Participant's computer        |
 |                                                                | 3. Install SDS plugin in JOSM                                    | 3. How it works                                        | and should go private.                |                        |                            |                               |
-|                                                                | 4. Use SDS presets                                               | 4. Access the datastore online                         |                                       |                        |                            |                               |
+|                                                                | 4. Use SDS presets                                               | 4. Accessing the datastore online                      |                                       |                        |                            |                               |
 |                                                                | 5. Use SDS plugin for selecting public and private data          |                                                        | Participants practise installing      |                        |                            |                               |
 |                                                                | 6. Access online datastore                                       |                                                        |                                       |                        |                            |                               |
 |                                                                |                                                                  |                                                        | private data store plugin in JOSM and |                        |                            |                               |

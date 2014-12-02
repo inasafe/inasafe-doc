@@ -11,7 +11,7 @@ Intermediate QGIS-InaSAFE Trainer's Toolkit - (A Guide to Facilitators)
 About Toolkit
 -------------
 
-**The Intermediate QGIS-**|project_name|**Toolkit** is designed to prepare
+**The Intermediate QGIS-** |project_name| **Toolkit** is designed to prepare
 trainers to deliver training for QGIS users who previously followed
 the beginner training.  
 The materials included will prepare trainers to conduct trainings with a
@@ -41,32 +41,33 @@ Basic Competencies
 ^^^^^^^^^^^^^^^^^^
 1. Understand QGIS concepts                            
 2. Prepare data and keywords for |project_name|        
-3. Determining IDP camp location
-4. Planning an evacuation route 
+3. Determine temporary IDP camp or evacuation locations 
+4. Plan evacuation routes based on hazard information  
 5. Calculate damage and losses                         
 
 Workshop Materials
 ^^^^^^^^^^^^^^^^^^
 1. QGIS Review
 2. Preparing data and keywords for |project_name|
-3. Planning temporary shelter
-4. Planning evacuation route
-5. Calculating damage and losses
+3. Determining IDP Camp Location
+4. Planning an Evacuation Route
+5. Calculating Damage and Losses
 
 Workshop Strategies
 ^^^^^^^^^^^^^^^^^^^
-1. Methods applied in this workshop is participatory teaching,
-   emphasizes on full participation of the participant in every section and
-   activities during the workshop, instead of lecture method.
-2. Participants oriented.
-   Participants are encouraged to find and getting knowledge and skill needed
+1. Methods emphasised in this workshop are participatory teaching
+   and active participation in all sections and
+   activities, rather than lecture method.
+2. **Participant oriented.**
+   Participants are encouraged to find and gain knowledge and skills
    by themselves.
-3. Trainers serve as facilitators.
-   Trainers only facilitate in order to the ideas emerged during the workshop
-   come from the participants, not only from trainers.
-   However, trainers must be ready and give the better knowledge and argument
+3. **Trainers serve as facilitators.**
+   Trainers facilitate to help ideas in the workshop emerge
+   from the participants, not only from trainers.
+   However, trainers must be ready to provide necessary information
    when the participants need any assistance.
-4. *Outcome* oriented. Workshop must produces *outcomes* mentioned before.
+4. **Outcome oriented.** Workshop must produce the outcomes mentioned 
+   previously.
 
 Tools
 ^^^^^
@@ -220,8 +221,8 @@ Activities
 
 Session 2
 .........
-Preparing Data for |project_name|
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Preparing data and keywords for |project_name|
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 185 minutes
 
 Basic Competency
@@ -262,7 +263,7 @@ Activities
 | Explain the importance of the session, objectives,                |               |               |
 | outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Review |project_name| input data 65'**                          | Lecture       | *Slide PP*    |
+| **Review** |project_name| **input data 65'**                      | Lecture       | *Slide PP*    |
 |                                                                   | Q & A         | Projector     |
 | 1. Explain about preparing data and keywords                      |               | Microphone    |
 |    for |project_name|.                                            |               |               |
@@ -280,8 +281,8 @@ Activities
 
 Session 3
 .........
-Temporary IDP (Internally Displaced Persons) Camps Planning
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Determining IDP Camp Location
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 225 minutes
 
 Basic Competency
@@ -303,7 +304,7 @@ Outcomes
 
 Core Material
 *************
-**Determining IDP Camp Location**                       
+**Determining IDP Camp Location**
                                                         
 1. Geoprocessing tools                                 
 2. Spatial queries                                     
@@ -344,8 +345,8 @@ Activities
 
 Session 4
 .........
-Evacuation Route Planning
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Planning an Evacuation Route
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 180 minutes
 
 Basic Competency
@@ -417,8 +418,8 @@ the plugin.
 
 Session 5
 .........
-Damages and Losses Assessment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Calculating Damages and Losses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 210 minutes
 
 Basic Competency

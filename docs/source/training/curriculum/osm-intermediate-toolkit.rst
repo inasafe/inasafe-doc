@@ -235,10 +235,10 @@ Activities
 | **Building tools plugin 30'**                                     | Discussion    | Powerpoint    |
 |                                                                   |               |               |
 | 1. Make sure all the participants have installed the              | Demonstration | Presentation  |
-|    **"building_tools"** and **"utilsplugin2"** plugins. Make sure | Practice      | Projector     |
+|    **building_tools** and **utilsplugin2** plugins. Make sure     | Practice      | Projector     |
 |    that participants remove the previous training files           |               | Computer/     |
 |    and ask them to create new layer. Use that layer to practice   |               | Laptop        |
-|    with the **"buildings_tool"** plugin. Demonstrate:             |               |               |
+|    with the **buildings_tool** plugin. Demonstrate:               |               |               |
 |                                                                   |               |               |
 |    a. How building tools works                                    |               |               |
 |    b. Make sure that they don't select any object when            |               |               |
@@ -250,14 +250,14 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Utilplugin2 60'**                                               | Discussion    | Powerpoint    |
 |                                                                   |               |               |
-| 1. After the **"building_tool"** plugin, ask                      | Demonstration | Presentation  |
-|    participans to close the layer and open the training file      | Practice      | Projector     |
-|    **"utilsplugin2_sample.osm"**. With this file, participants    |               | Computer/     |
+| 1. After the **building_tool** plugin, ask                        | Demonstration | Presentation  |
+|    participants to close the layer and open the training file     | Practice      | Projector     |
+|    **utilsplugin2_sample.osm**. With this file, participants      |               | Computer/     |
 |    practise using new tools.                                      |               | Laptop        |
 | 2. Explain new tools in utilplugin2                               |               |               |
 |    plugin such as *add source tag, select way nodes, replace      |               |               |
 |    geometry*. Give examples of situations when these will be used.|               |               |
-| 3. Participants should practice the tools as                      |               |               |
+| 3. Participants should practise the tools as                      |               |               |
 |    they are explained.                                            |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Create relations between objects 35'**                          | Discussion    | Powerpoint    |
@@ -367,8 +367,8 @@ Activities
 Session 3
 .........
 
-Conflict Resolution when uploading OSM Data
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Dealing with Conflicts
+^^^^^^^^^^^^^^^^^^^^^^
 Time : 2 Hours
 
 Basic Competency
@@ -452,8 +452,8 @@ whether it is the working version or on the OSM server.
 Session 4
 .........
 
-XML and presets in JOSM
-^^^^^^^^^^^^^^^^^^^^^^^
+Creating JOSM File Presets
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 150 minutes
 
 Basic Competency
@@ -524,7 +524,7 @@ Activities
 |    exist or once existed. If they have not been created before,   |               |               |
 |    they may invent keys and values of their own.                  |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-|**Making Your Own Preset File 45'**                                | Practise      | Powerpoint    |
+| **Making Your Own Preset File 45'**                               | Practice      | Powerpoint    |
 |                                                                   |               |               |
 | 1. Help participants install Notepad++ for use in this            |               | Presentations |
 |    session.                                                       |               | Projector     |
@@ -556,8 +556,8 @@ Activities
 Session 5
 .........
 
-Using Private Datastore
-^^^^^^^^^^^^^^^^^^^^^^^
+Using the Separate Data Store
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 2 Hours
 
 Basic Competency
@@ -586,7 +586,7 @@ Core Material
 1. Installing the SDS plugin       
 2. Using the plugin                
 3. How it works                    
-4. Access the datastore online     
+4. Accessing the datastore online     
 
 Activities
 **********
@@ -645,8 +645,8 @@ watch demonstration rather than practising all on their own.
 Session 6
 .........
 
-Wiki OpenStreetMap
-^^^^^^^^^^^^^^^^^^
+Editing the OpenStreetMap Wiki
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 2 Hours
 
 Basic Competency
@@ -719,7 +719,7 @@ Activities
 |    them from logging in) and it makes it easier for               |               |               |
 |    other users to find them both on OSM and the wiki.             |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-|**Create and Edit OSM Wiki Page 60'**                              | Practice      | Powerpoint    |
+| **Create and Edit OSM Wiki Page 60'**                             | Practice      | Powerpoint    |
 |                                                                   |               |               |
 | 1. Ask participants to access their user page                     |               | Presentations |
 |    to practise adding to the wiki.                                |               | Projector     |

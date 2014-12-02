@@ -126,8 +126,8 @@ These tags can then be made into a presets menu, which will provide an
 easy-to-use form for adding both public and private data.
 
 
-4. Access the datastore online
-------------------------------
+4. Accessing the datastore online
+---------------------------------
 
 You can access the SDS online with your username and password. To visit
 the example SDS, open your browser and go to http://sds.dev.hotosm.org/.

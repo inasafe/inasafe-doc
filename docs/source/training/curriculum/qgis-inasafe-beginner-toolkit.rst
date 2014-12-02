@@ -11,7 +11,7 @@ Beginning QGIS-|project_name| Trainer's Toolkit - (A Guide for Facilitators)
 About Toolkit
 -------------
 
-**The Beginning QGIS-**|project_name|**Toolkit** is designed to prepare
+**The Beginning QGIS-** |project_name| **Toolkit** is designed to prepare
 trainers to deliver training for new QGIS users.
 The materials included will prepare trainers to conduct trainings with a
 variety of audiences and to cover common problems and pitfalls,
@@ -25,7 +25,7 @@ participants, but it will primarily focus on educating those with little or
 no experience with GPS, map-making and computers.
 
 The purpose of this toolkit is to prepare the trainer to successfully train
-workshop participants in using QGIS and analyzing hazard and exposure data with
+workshop participants in using QGIS and analysing hazard and exposure data with
 |project_name|.
 
 Purpose of Workshop
@@ -868,8 +868,8 @@ Activities
 |    QGIS can also be used to digitise data. However,               |               | Computer      |
 |    explain that the weakness of digitising through                |               |               |
 |    QGIS is that data is more difficult to share, unlike OSM.      |               | Module 9      |
-| 2. Explain also that things that can not be digitized in          |               |               |
-|    OSM can be digitized in QGIS, such as flood-                   |               |               |
+| 2. Explain also that things that can not be digitised in          |               |               |
+|    OSM can be digitised in QGIS, such as flood-                   |               |               |
 |    prone areas or KRB areas. Vector data like this                |               |               |
 |    will be used for analysis in InaSAFE.                          |               |               |
 | 3. Show how to digitise and the differences                       |               |               |
