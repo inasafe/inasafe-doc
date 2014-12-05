@@ -11,7 +11,7 @@ and Recovery (World Bank-|GFDRR|).
 |AIFDR| in coordination with |BNPB| are driving the development of
 |project_name| through the use of |project_name| in 6 Indonesian provinces.
 After the launch of |project_name| in October 2012, |AIFDR| on behalf of |BNPB|
-and |GoA|conducted scenario development for contingency planning training in 6
+and |GoA| conducted scenario development for contingency planning training in 6
 Indonesian provinces through the Humanitarian OpenStreetMap Team (HOT) and the
 University of Gadjah Mada (UGM). The training consisted of 2 sections, data
 collection through OpenStreetMap and data analysis through QGIS and
