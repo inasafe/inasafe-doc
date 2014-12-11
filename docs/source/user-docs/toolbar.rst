@@ -3,8 +3,8 @@
 Toolbar
 =======
 
-This Section contains the explanation of the different icons in the Toolbar
-and the function behind the icons.
+Here the different icons (buttons) in the toolbar 
+and the function of each are explained.
 
 .. _tb_dock:
 
@@ -16,14 +16,14 @@ Toggle |project_name| Dock
    :align: center
    :alt: Toggle the Dock
 
-   Toggle Dock
+   *Toggle Dock*
 
-This button enables and hides the |project_name| dock.
+This button shows and hides the |project_name| dock.
 After enabling the dock you are able to move it around your screen.
-Dock and undock it wherever you want to have it and keep it even as a
-separated window.
+Dock it as a panel within the QGIS interface, or undock it so that
+it floats as a separate window.
 
-You can find more Information about the dock itself in the
+Find more information about the dock in the
 :ref:`toolbar_dock` section.
 
 .. _tb_keyword_editor:
@@ -36,12 +36,12 @@ You can find more Information about the dock itself in the
    :align: center
    :alt: Keyword Editor
 
-   Keyword Editor
+   *Keyword Editor*
 
-The Keyword Editor button opens the Keyword editor which is described in
+The :guilabel:`Keyword Editor` button opens the editor which is 
+is used to edit the keywords needed for |project_name| to create useful output. 
+Keywords are explained in more detail in
 :ref:`keywords_system`.
-Basically it enables you to easily edit the Keywords needed for
-|project_name| to create useful output.
 
 .. _tb_options:
 
@@ -53,10 +53,10 @@ Basically it enables you to easily edit the Keywords needed for
    :align: center
    :alt: Options
 
-   |project_name| Options
+   *Options*
 
-This button opens the Options window which is described in
-:ref:`toolbar_options`
+This button opens the |project_name| Options window which is described in
+detail in :ref:`toolbar_options`.
 
 .. _tb_impact_functions_browser:
 
@@ -68,13 +68,11 @@ This button opens the Options window which is described in
    :align: center
    :alt: Impact Functions Browser
 
-   |project_name| Impact Functions Browser
+   *Impact Functions Browser*
 
-This button opens the Impact Function Browser.
-
-It basically enables you to filter and browse impact functions that are
-available in |project_name|.
-More information about that topic can be found in :ref:`impact_functions`.
+This button opens the Impact Function Browser, which allows you to filter and 
+browse impact functions that are available in |project_name|.
+More information can be found in :ref:`impact_functions`.
 
 .. _tb_minimum_needs:
 
@@ -86,11 +84,10 @@ More information about that topic can be found in :ref:`impact_functions`.
    :align: center
    :alt: Minimum needs tool
 
-   |project_name| Minimum Needs Tool
+   *Minimum Needs Tool*
 
-This tool will calculated minimum needs for evacuated people.
-
-For a guidance how to use this tool take a look in :ref:`minimum_needs`.
+This tool calculates minimum needs for evacuated people.
+For guidance on how to use this tool visit :ref:`minimum_needs`.
 
 .. _tb_converter:
 
@@ -102,11 +99,11 @@ For a guidance how to use this tool take a look in :ref:`minimum_needs`.
    :align: center
    :alt: Converter
 
-   |project_name| Converter
+   *Converter*
 
-This tool will convert an earthquake 'shakemap' that is in grid xml format
+This tool converts an earthquake 'shakemap' that is in grid xml format
 to a GeoTIFF file.
-For more detailed information look at :ref:`converter`.
+For more detailed information visit :ref:`converter`.
 
 .. _tb_batch_runner:
 
@@ -118,11 +115,11 @@ For more detailed information look at :ref:`converter`.
    :align: center
    :alt: Batch_Runner
 
-   |project_name| Batch Runner
+   *Batch Runner*
 
-The Batch Runner lets you load saved scenarios (:ref:`save_scenario`) and
+The Batch Runner is used to load saved scenarios (:ref:`save_scenario`) and
 batch run them in one go.
-You can find more information about using this tool at :ref:`batch_runner`
+Find more information about this tool in :ref:`batch_runner`.
 
 .. _tb_save_scenario:
 
@@ -134,13 +131,14 @@ Save current scenario
    :align: center
    :alt: Save Current Scenario
 
-   |project_name| Save Current Scenario
+   *Save Current Scenario*
 
-This is the tool you need to prepare/save scenarios for the
-:ref:`tb_batch_runner` Tool.
+This is the tool to prepare/save scenarios for the
+:ref:`tb_batch_runner` tool.
 It lets you save the current visible scenario in QGIS to a :file:`.txt` file.
-This file you can open as a scenario again in Batch runner and recalculate it.
-A more detailed description is available in :ref:`batch_runner`
+Then this file can be opened as a scenario again in Batch runner and 
+recalculated.
+A more detailed description is available in :ref:`batch_runner`.
 
 .. _tb_openstreetmap_downloader:
 
@@ -152,7 +150,6 @@ A more detailed description is available in :ref:`batch_runner`
    :align: center
    :alt: OpenStreetMap downloader
 
-   |project_name| OpenStreetMap downloader
+   *OpenStreetMap downloader*
 
-This tool will fetch building ('structure') data from the OpenStreetMap
-project for you.
+This tool fetches building (structure) data from |OSM|.

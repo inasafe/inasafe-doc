@@ -1,29 +1,29 @@
 .. _toolbar_dock:
 
-Using |project_name|
+|project_name| Panel
 ====================
 
-This document describes the usage of the |project_name| 'dock panel' - which
-is the main interface for running risk scenarios within the QGIS environment.
+This document describes the usage of the |project_name| 'dock panel' - 
+the primary interface for running risk scenarios within the QGIS environment.
 
-.. note:: In order to use the |project_name| tool effectively,
-   you should probably also read the :doc:`keywords` and
-   :doc:`impact_functions` documentation before you get started.
+.. note:: In order to use |project_name| effectively,
+   you should also read the :doc:`keywords` and
+   :doc:`impact_functions` documentation before getting started.
 
-The |project_name| Dock panel is the main way to interact with the tools that
+The |project_name| dock panel is the main way to interact with the tools that
 are provided in |project_name|. After you have installed the |project_name|
 plugin, the dock panel will automatically load in QGIS and appear somewhere
-on your screen. It will look like this:
+on your screen. It looks like this:
 
 .. figure:: /static/user-docs/dock-panel.*
    :scale: 75 %
    :alt: Docking Panel
    :align: center
 
-   Docking Panel
+   *Docking Panel*
 
 
-You can drag and drop the dock panel to reposition it in the user interface.
+Drag and drop the dock panel to reposition it in the user interface.
 For example, dragging the panel towards the right margin of the QGIS
 application will dock it to the right side of the screen.
 
@@ -32,23 +32,23 @@ application will dock it to the right side of the screen.
    :alt: Dock on the right
    :align: center
 
-   Dock on the right with loaded Project
+   *Dock positioned on the right with a project loaded*
 
-There are 3 main areas to the panel:
+There are three components within the panel:
 
 * the :guilabel:`Questions` area
 * the :guilabel:`Results` area
 * the :guilabel:`Buttons` area
 
 At any time you can obtain help in |project_name| by clicking on the
-:guilabel:`help` buttons provided on each dock and dialog.
+:guilabel:`Help` buttons provided on each dock and dialog.
 
-The Questions Area
+The questions area
 ------------------
 
-The intention of InaSAFE is to make it really simple and easy to perform
-your impact analysis. The question area provides a simple way for you to
-formulate what it is you want to find out? All questions are formulated in
+The objective of |project_name| is to make it easy to perform
+an impact analysis. The questions area provides a simple way to
+formulate the scenario question. All questions are formulated in
 the form:
 
    If [**hazard**] how many [**exposure**] might [**impact**].
@@ -59,12 +59,11 @@ For example:
 
 In order to answer such questions, the |project_name| developers have built
 a number of **impact functions** that cover scenarios such as flood,
-tsunami, volcanic ash fall, earthquake and so on. You can read our impact
-function documentation to find out more information about the various
-:ref:`impact_functions` implemented.
+tsunami, volcanic ash fall, earthquake and more. Visit :ref:`impact_functions`
+for detailed information on each impact function.
 
-The formulation of these questions if carried out by loading layers into QGIS
-that represent either **hazard** or **exposure** scenarious.
+To formulate these questions, various layers must be loaded into QGIS that
+represent either **hazard** or **exposure** information.
 
 * A **hazard** (:guilabel:`In the event of`) may be represented as,
   for example, a raster layer in QGIS where each pixel in the raster represents
@@ -82,47 +81,47 @@ By selecting a combination from the :guilabel:`In the event of` and
 :guilabel:`How many` combo boxes, an appropriate set of impact functions will
 be listed in the :guilabel:`Might` combo box.
 
-You may be wondering how the |project_name| plugin determines whether a layer
+How does the |project_name| plugin determine whether a layer
 should be listed in the :guilabel:`In the event of` or :guilabel:`How many`
-combo boxes? The plugin relies on simple keyword metadata to be associated
+combo boxes? The plugin relies on simple keyword metadata associated
 with each layer.
 
 The keyword system is described in detail in :doc:`keywords`.
-Each layer that has a keyword allocating it's **category** to **hazard** will
-be listed in the :guilabel:`In the event of` combo.
-Similarly, a **category** of **exposure** in the keywords for a layer will
-result in it being listed under the :guilabel:`How many` combo.
+Each layer that has a keyword defining its **category** as **hazard** will
+be listed in the :guilabel:`In the event of` combo box.
+Similarly, a **category** of **exposure** in the keywords will
+result in a layer being listed under the :guilabel:`How many` combo box.
 
 |project_name| uses the combination of **category**, **subcategory**, **units**
 and **datatype** keywords to determine which **impact functions** will be
-listed in the :guilabel:`Might` combo.
+listed in the :guilabel:`Might` combo box.
 
-The chosen impact function can be configured (if applicable) by pressing the
-small ellipses (...) button next to the chosen impact function.
+The impact function can be configured (if applicable) by pressing the
+:guilabel:`...` button next to the chosen impact function.
 
-This is explained in more detail below under :ref:`analysis_parameters`
+This is explained in more detail below under :ref:`analysis_parameters`.
 
-As of InaSAFE 1.2, you can now also choose an aggregation layer for both
+As of InaSAFE 1.2, you can also choose an aggregation layer for both
 raster and vector layers.
 
 Aggregation allows you to specify an additional layer when defining the
-analysis criteria. This layer will be used to provide a by-area breakdown of
-the results of the analysis. For example if you are carrying out an analysis
+analysis criteria. This layer is used to provide a by-area breakdown of
+the results of the analysis. For example, if you are carrying out an analysis
 for a city, you can use district areas within the city to provide per-area
 results. In the absence of an aggregation layer, the analysis extent is used
-as the aggregation unit. To use this option you need to load a polygon based
+as the aggregation unit. To use this option you must load a polygon
 layer into QGIS that represents the areas you wish to summarise by.
 
-.. note:: After running an analysis, the question area is hidden to maximise
-    the amount of space allocated to the results area (see below). You can
-    re-open the question area at any time by pressing the :guilabel:`Show
-    question form` button.
+.. note:: After running an analysis, the questions area is hidden to maximise
+   the amount of space allocated to the results area (see below). You can
+   re-open the question area at any time by pressing the :guilabel:`Show
+   question form` button.
 
-The Results Area
+The results area
 ----------------
 
-The :guilabel:`Results` area is used to display various useful feedback items
-to the user. Once an impact scenario has been run (see next section below),
+The results area is used to display feedback
+to the user. Once an impact scenario has been run (see next section),
 a summary table will be shown.
 
 .. figure:: /static/user-docs/scenario-results.*
@@ -130,13 +129,13 @@ a summary table will be shown.
    :alt: Scenario results
    :align: center
 
-   Processed scenario with loaded and shown results
+   *Results shown after processing of scenario*
 
 If you select an **impact layer** (i.e. a layer that was produced using an
-|project_name| impact function), in the QGIS layers list, this summary will
+|project_name| impact function), in the QGIS Layers panel, this summary will
 also be displayed in the results area.
 
-When you select a **hazard** or **exposure** layer in the QGIS layers list,
+When you select a **hazard** or **exposure** layer in the QGIS Layers panel,
 the keywords for that layer will be shown in the :guilabel:`Results` area,
 making it easy to understand what metadata exists for that layer.
 
@@ -145,61 +144,62 @@ making it easy to understand what metadata exists for that layer.
    :alt: Dock on the right
    :align: center
 
-   Showing keywords for active Layer
+   *Showing keywords for active layer*
 
 The :guilabel:`Results` area is also used to display status information. For
 example, when a suitable combination of **hazard**
 (:guilabel:`In the event of`), **exposure** (:guilabel:`How many`) and
 **impact function** (:guilabel:`In the event of`) are selected, the results
 area will be updated to indicate that you can proceed to run the impact
-scenario calculation. The :menuselection:`Run` Button will be activated.
+scenario calculation. The :guilabel:`Run` button will be activated.
 
 .. figure:: /static/user-docs/status-ready.*
    :scale: 75 %
    :alt: Ready to run
    :align: center
 
-   Activated Run button
+   *Run button activated*
 
-Finally, the :guilabel:`Results` area is also used to display any error
+Finally, the results area is also used to display error
 messages so that the user is informed as to what went wrong and why. You
-might want to scroll down a bit in the messaging window.
+may need to scroll down a bit in the window.
 
 .. figure:: /static/user-docs/error-display.*
    :scale: 75 %
    :alt: Displaying Problems
    :align: center
 
-   Showing error messages
+   *Showing error messages*
 
-To have more space for the results available your Question is automatically
-hidden to make the results area as large as possible to display the results.
+To allow more space for the results your question is automatically hidden
+to make the results area as large as possible for displaying the results.
 If you want to have a look again what the question was that you formulated
-click on the :guilabel:`Show question form` button on top of the result area.
+click on the :guilabel:`Show question form` button at the top of the results 
+area.
 
 .. figure:: /static/user-docs/show_question_form.*
    :scale: 75 %
    :alt: Show question form
    :align: center
 
-   Show question form
+   *Show question form*
 
-If you want to hide the question again to have more space to display the
-results again, just make the Layer you just calculated with |project_name|
-active again in the :guilabel:`Layers` list of QGIS.
+To hide the question again to have more space for the
+results, simply make active the layer which |project_name|
+created during the calculation in the Layers panel.
 
-.. note:: At the bottom of error display you may see button like the following.
-   If you click on this button, it will display a box which will contain
-   useful diagnostic information which can be submitted as part of a bug
+.. note:: At the bottom of the error display you may see a button like the 
+   following. Click on this button to display a box which contains
+   diagnostic information that can be submitted as part of a bug
    report if you think the error was incorrect.
 
    .. image:: /static/user-docs/toggle-traceback.*
       :scale: 75 %
 
-The Buttons Area
+The buttons area
 ----------------
 
-The buttons area contains three buttons:
+The buttons area contains four buttons:
 
 .. figure:: /static/user-docs/buttons.*
    :scale: 75 %
@@ -210,12 +210,13 @@ The buttons area contains three buttons:
 
 * :guilabel:`Help` - click on this if you need context help, such as the
   document you are reading right now!
+* :guilabel:`About` - click on this to get information about |project_name|.
 * :guilabel:`Print...` - click on this if you wish to create a pdf of your
-  impact scenarion project or just generate report and open it in composer for
-  further tuning. An **impact layer** must be active before the
-  :guilabel:`Print...` button will be enabled.
-* :guilabel:`Run` - if the combination of options in the :guilabel:`Questions`
-  area's combo boxes will allow you to run a scenario, this button is enabled.
+  impact scenario project or to generate a report and open it in composer for
+  further tuning. An **impact layer** must be active before this
+  button will be enabled.
+* :guilabel:`Run` - when the combination of options in the questions
+  area is suitable to be run, this button is enabled.
 
 Data conversions when running a scenario
 ----------------------------------------
@@ -224,47 +225,46 @@ When running a scenario, the data being used needs to be processed into a state
 where it is acceptable for use by the impact function. In particular it should
 be noted that:
 
-* Remote datasets will be copied locally before processing.
+* Remote datasets will be copied locally before processing
 * All datasets will be clipped to the intersection of the **hazard** layer,
-  the **exposure** layer and the current view extents.
+  the **exposure** layer and the current view extents
 * All clipped datasets will be converted (reprojected) to Geographic
-  (EPSG:4326) coordinate reference system before analysis.
+  (EPSG:4326) coordinate reference system before analysis
 
 .. _analysis_parameters:
 
-Setting Analysis Parameters
+Setting analysis parameters
 ---------------------------
 
-Depending on what Impact Function you have chosen you have different options
-to adjust the parameters of the your question you are asking. Some Impact
-Functions have more configurable Options and some have less. Always depending
-on the Impact Function itself and the question you are going to ask.
+Depending on the impact function you choose there will be different options
+to adjust the parameters of the the question you are asking. Some impact
+functions have more configurable options and some have less. This depends
+on the impact function itself and the question you are asking.
 
-To open the Impact Function Configuration Dialog you need to click on the
-:guilabel:`...` Button next to the :guilabel:`Might` paragraph in the
-|project_name| dock.
+To open the impact function configuration dialog click on the
+:guilabel:`...` Button next to the :guilabel:`Might` combo box.
 
 .. figure:: /static/user-docs/imp_func_conf1.*
    :scale: 75 %
    :align: center
    :alt: Impact Function Configurator
 
-   Open the Impact Function Configurator
+   *Open the impact function configurator*
 
-You might have up to 3 tabs visible.
+There will be up to three tabs available:
 
- * :guilabel:`Options`: Depending in the Impact function you selected,
-   you can influence the result of your question here (the Impact Function)
+ * :guilabel:`Options`: Depending in the impact function you select,
+   you can influence the result of your question here (the impact function)
    by setting different initial values which are presented depending on the
-   function you choose (Some Impact functions might now be able to be
-   influenced).
- * :guilabel:`Postprocessors`: Takes the results from the impact function and
-   calculates derivative indicators, for example if you have an affected
-   population total, the Gender postprocessor will calculate gender specific
-   indicators such as additional nutritional requirements for pregnant women
- * :guilabel:`Minimum Needs`: If it is something that effects for eg people it
-   works out the minimum needs of the people affected by the impact scenario.
-   To use that function you should have the necessary data available and
+   function you choose (not all impact functions may be customised).
+ * :guilabel:`Postprocessors`: This takes the results from the impact function 
+   and calculates derivative indicators. For example, if you have an affected
+   population total, the gender postprocessor will calculate gender specific
+   indicators such as additional nutritional requirements for pregnant women.
+ * :guilabel:`Minimum Needs`: If the impact function calculates effects on 
+   people, this calculates the minimum needs of the people affected by the 
+   impact scenario.
+   To use this you should have the necessary data available and
    calculate this by using the :ref:`minimum_needs`.
 
 .. figure:: /static/user-docs/imp_func_conf2.*
@@ -277,11 +277,11 @@ You might have up to 3 tabs visible.
 Generating impact report
 ------------------------
 
-When scenario analysis completed you may want to generate a report. Usually
-:guilabel:`Print...`  button will be enabled immediatelly after analysis. If it
-still inactive, select impact layer in QGIS ToC.
+When scenario analysis is complete you may want to generate a report. Usually the
+:guilabel:`Print...`  button will be enabled immediately after analysis. If it is
+still inactive, select the impact layer in the Layers panel.
 
-To start report generation you need to click on the :guilabel:`Print...` button
+To generate a report click on the :guilabel:`Print...` button
 in the buttons area. This will open an :guilabel:`Impact report` dialog.
 
 .. figure:: /static/user-docs/impact_report_dlg.*
@@ -289,30 +289,26 @@ in the buttons area. This will open an :guilabel:`Impact report` dialog.
    :align: center
    :alt: Impact Report configuration
 
-   Impact report configuration
+   *Impact report configuration*
 
-Dialog has three major areas:
+The dialog has three components:
 
- * :guilabel:`Area to print` group: allows to customize extent of the report
-   map.
-   There are two options available.
+ * :guilabel:`Area to print` allows you to customise the extent of the report 
+   map. There are two options available.
    Choose :guilabel:`Current extent` if current canvas extent represents
-   necessary area.
-   :guilabel:`Analysis extent` will set extent of the report map to impact
-   layer extent.
- * :guilabel:`Template to use` group: here you can select desired template for
-   your report.
-   In combobox listed all templates bundled with plugin plus templates from
-   user-defined template directory (see :ref:`toolbar_options` for
-   information how to set templates directory).
-   It is also possible to select custom template from any location: just
-   activate radiobutton under combobox and provide path to template using
-   :guilabel:`...` button.
- * buttons area: contains four buttons.
-   :guilabel:`Open PDF` button used to generate report and export it in PDF
-   format.
-   Resulting file(s) will be opened in your default PDF viewer.
-   :guilabel:`Open composer` used when you need to adjust generated report
-   before printing.
-   In this case report will be opened in QGIS composer and you can edit it as
-   needed.
+   necessary area. Choose
+   :guilabel:`Analysis extent` to set the extent of the report map to the 
+   impact layer extent.
+ * :guilabel:`Template to use` allows you to select a template for the report.
+   The combo box lists all templates bundled with the plugin as well as 
+   templates from the user-defined template directory (see 
+   :ref:`toolbar_options` for information on how to set templates directory).
+   It is also possible to select a custom template from any location - 
+   activate the radio button under the combo box and provide a path to the 
+   template using the :guilabel:`...` button.
+ * At the bottom are four buttons: 
+   :guilabel:`Open PDF` will generate the report and export it in PDF
+   format. The resulting file(s) will be opened in your default PDF viewer.
+   :guilabel:`Open composer` is used when you need to adjust the generated 
+   report before printing. Click this button and the report will be opened
+   in the QGIS composer, where you can edit it as needed.

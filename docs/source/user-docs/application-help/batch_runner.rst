@@ -8,19 +8,19 @@ Batch Runner
    :alt: Batch Runner
    :align: center
 
-   Batch Runner
+   *Batch Runner*
 
 With this tool you can setup numerous scenarios and run them all in one go.
-A typical use case may be where you define a number of e.g. flood impact
-scenarios all using a standard dataset e.g. ``flood.shp``. As new flood data
-becomes available you replace ``flood.shp`` and rerun the scenarios using the
-batch runner. Using this approach you can quickly produce regional contingency
-plans as your understanding of hazards changes. When you run the batch of
-scenarios, pdf reports are generated automatically and all placed in a single
-common directory making it easy for you to browse and disseminate the reports
-produced.
+For example, in a typical use case you might define a number of flood impact
+scenarios all using a standard dataset, such as :file:`flood.shp`. As new flood 
+data becomes available you replace :file:`flood.shp` and rerun the scenarios 
+using the batch runner. Using this approach you can quickly produce regional 
+contingency plans as your understanding of hazards changes. When you run the 
+batch of scenarios, PDF reports are generated automatically and all placed in 
+a single common directory making it easy for you to browse and disseminate the 
+reports produced.
 
-When the batch process completes, it will also produce a summary report like
+When the batch process completes, it will produce a summary report like
 this::
 
     InaSAFE Batch Report File
@@ -39,10 +39,9 @@ this::
 
 
 For advanced users there is also the ability to batch run python scripts using
-this tool, but this should be considered an **experimental** feature still at
-this stage.
+this tool, but this should be considered an **experimental** feature currently.
 
 Before running the Batch Runner you might want to use the
 :ref:`tb_save_scenario` tool to first save some scenarios on which you
 can let the batch runner do its work. This tool lets you run saved scenarios
-in one go. It lets you select scenarios or let run all scenarios in one go.
+in one go. It lets you select scenarios or run all scenarios in one go.

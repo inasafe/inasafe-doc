@@ -17,29 +17,29 @@ AIFDR
 Need evacuation
 
 **Synopsis**: 
-To assess the impacts of flood inundation in vector format on population.
+To assess the impacts of flood inundation in vector format on population
 
 **Actions**: 
-Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them.
+Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them
 
 **Hazard Input**: 
-A hazard vector layer which has attribute affected the value is either 1 or 0
+A hazard vector layer which has affected attribute, in which the value is either 1 or 0
 
 **Exposure Input**: 
-An exposure raster layer where each cell represent population count.
+An exposure raster layer where each cell represents population count
 
 **Output**: 
-Vector layer contains people affected and the minimum needs based on evacuation percentage.
+Vector layer contains people affected and the minimum needs based on evacuation percentage
 
 Details
 -------
 
-The population subject to inundation is determined whether in an area which affected or not. You can also set an evacuation percentage to calculate how many percent of the total population affected to be evacuated. This number will be used to estimate needs based on BNPB Perka 7/2008 minimum bantuan.
+The population subject to inundation is determined by whether it is in an affected area or not. You can also set an evacuation percentage to calculate how many percent of the total population affected to be evacuated. This number will be used to estimate needs based on BNPB Perka 7/2008 minimum bantuan.
 
 Doc String
 ----------
 
-Impact function for vector flood evacuation.
+Impact function for vector flood evacuation
 
     :author AIFDR
     :rating 4
