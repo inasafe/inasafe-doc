@@ -23,7 +23,7 @@ You can unsubscribe from the list at any time by sending an email to:
 
 inasafe-users+unsubscribe@googlegroups.com
 
-You can view the archive of messages in this form on the 
+You can view the message archive of this forum on the 
 |project_name| users group page at:
 
 https://groups.google.com/forum/?fromgroups#!forum/inasafe-users

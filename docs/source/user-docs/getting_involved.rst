@@ -76,7 +76,7 @@ link below:
 
 http://webchat.freenode.net/
 
-On the form that appears, choose a user name, enter #inasafe in the
+On the form that appears, choose a user name, enter :kbd:`#inasafe` in the
 :guilabel:`Channels:` box and complete the rest of the details in the form.
 After logging in wait a few moments and you will be taken to the #inasafe
 channel.

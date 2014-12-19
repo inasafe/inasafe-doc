@@ -25,9 +25,9 @@ Report template elements
 
 A template contains the following types of elements:
 
-* **Static elements**
-* **Elements containing tokens for replacement**
-* **Elements that are directly updated by the renderer**
+* Static elements
+* Elements containing tokens for replacement
+* Elements that are directly updated by the renderer
 
 Static Elements
 ...............
@@ -58,9 +58,9 @@ the following elements:
 * **safe-logo** --- QGIS composer image, which is used for displaying the
   |project_name| logo with website url
 * **organisation-logo** --- QGIS composer image, which is used for
-  displaying organisation logo
+  displaying an organisational logo;
   By default a combined supporters logo is used;
-  To use a custom logo image, set the path to your PNG file in the plugin Options
+  To use a custom logo image, set the path to your PNG file in the Options
   dialog (see :ref:`toolbar_options` for details).
 * **impact-map** --- QGIS composer map, which is used for displaying the
   impact scenario

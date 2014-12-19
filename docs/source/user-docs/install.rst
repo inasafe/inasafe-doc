@@ -9,10 +9,11 @@ Installation
 To install |project_name|, use the plugin manager in QGIS.
 
 Go to :menuselection:`Plugins ‣ Fetch Python Plugins`
-and search for '|project_name|'. Select it and click the :guilabel:`Install` 
+and search for :kbd:`inasafe`. Select it and click the :guilabel:`Install` 
 button. |project_name| will now be added to the plugins menu.
 
-For more information see :doc:`../training/socialisation/introduction_of_qgis`.
+For more information on |QGIS| and |project_name| 
+see :doc:`../training/socialisation/introduction_of_qgis`.
 
 From |project_name| test repository
 -----------------------------------
@@ -79,14 +80,14 @@ Extract the zip file into the QGIS plugins directory.
 
 .. note::
    Depending on your version of QGIS the plugin directory is either
-   under a subdirectory of .qgis (QGIS versions < 2.0) or .qgis2 (QGIS version
-   >= 2.0).
+   under a subdirectory of :file:`.qgis` (QGIS versions < 2.0) or 
+   :file:`.qgis2` (QGIS version >= 2.0).
 
 Depending on your Operating System (Windows, Linux,
 OS X) and the version of QGIS, the directory containing the
 plugins will be in:
 
-- Windows: :file:`C:\\Users\\<your username>\\.qgis(2)\\python\\plugins\\`.
+- Windows: :file:`C:\\Users\\<your username>\\.qgis(2)\\python\\plugins\\`
 - Linux: :file:`~/.qgis(2)/python/plugins/` (where "~" means
   :file:`/home/<your username>/`
 - OS X: :file:`~/.qgis(2)/python/plugins/` (where "~" means
@@ -101,7 +102,8 @@ If you are running Windows with QGIS 2.0, do the following:
 1. Locate the directory
    :file:`C:\\Users\\<your username>\\.qgis2\\python\\plugins`.
 
-2. Extract the plugin which you downloaded here. It should be available as
+2. Extract the plugin which you downloaded in this directory. It should be 
+   available as
    :file:`C:\\Users\\<your username>\\.qgis2\\python\\plugins\\inasafe\\`.
 
 OS X and Linux users must follow the same procedure but with the appropriate

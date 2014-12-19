@@ -339,7 +339,7 @@ In theory you can place the keywords file on a network share and create
 a shared keyword repository in a multi-user environment, but you should note
 that the layer URI hashes need to be identical in order for a layer's keyword
 to be found.
-This means that, for (contrived), example
+This means that, for (contrived) example:
 ::
 
    connection=postgresql,user=joe,password=secret,resource=osm_buildings
@@ -365,8 +365,8 @@ Under Unix-like operating systems this could look something like this:
 
 :file:`/mnt/gisdata/jk.sqlite`
 
-Under Windows you could always the same drive letter and path to the share,
-e.g.:
+Under Windows you could always use the same drive letter and path to the 
+share, e.g.:
 
 :file:`Z:\\gisdata\\jk.sqlite`
 

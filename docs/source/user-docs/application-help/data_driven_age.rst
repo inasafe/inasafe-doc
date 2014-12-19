@@ -66,7 +66,7 @@ each aggregation area has an attribute indicating the ratios of age or gender.
    :align: center
 
 In the keywords editor you can refer to these attributes and the age and
-gender rations will be extrapolated based on the defined values.
+gender ratios will be extrapolated based on the defined values.
 
 .. figure:: /static/user-docs/datadriven_postprocessing_config_by_attribute.*
    :scale: 75 %
@@ -74,7 +74,7 @@ gender rations will be extrapolated based on the defined values.
    :align: center
 
 2. **Ratio Defaults:** In this mode, the default values will be used. In this
-case you may not know per-area what the age and gender breakdowns but
+case you may not know per-area what the age and gender breakdowns are but
 rather apply the ratios globally (to all aggregation areas).
 
 

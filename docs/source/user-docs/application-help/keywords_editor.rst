@@ -15,9 +15,9 @@ see the :ref:`keywords system <keywords_system>` documentation.
 The keywords editor graphical user interface
 --------------------------------------------
 
-The graphical user interface for keyword may appear in one of two modes:
+The graphical user interface for keywords may appear in one of two modes:
 
-1) **Minimal mode**: In this mode, only following options are provided:
+1) **Minimal mode**: In this mode, only the following options are provided:
 
    * **Title** - a friendly name for the dataset which will be displayed in
      reports, the user interface and so on.
@@ -57,10 +57,10 @@ This is an example of the keywords editor in minimal mode:
     The keywords list here is updated when any changes are made in both the
     simple and advanced mode editors.
     It is also possible in this area to manually remove unwanted keywords
-    using the 'remove selected' button.
+    using the :guilabel:`Remove selected` button.
     Multiple keywords can be removed in a single operation by holding
     :kbd:`CTRL` and clicking on multiple keyword entries in the current
-    keyword list and then clicking :guilabel:`Remove selected`.
+    keywords list and then clicking :guilabel:`Remove selected`.
 
 .. figure:: /static/user-docs/keyword-editor-advanced.*
    :scale: 75 %

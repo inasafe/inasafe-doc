@@ -206,12 +206,12 @@ The buttons area contains four buttons:
    :align: center
    :alt: Buttons area
 
-   Buttons Area
+   *Buttons Area*
 
 * :guilabel:`Help` - click on this if you need context help, such as the
   document you are reading right now!
 * :guilabel:`About` - click on this to get information about |project_name|.
-* :guilabel:`Print...` - click on this if you wish to create a pdf of your
+* :guilabel:`Print...` - click on this if you wish to create a PDF of your
   impact scenario project or to generate a report and open it in composer for
   further tuning. An **impact layer** must be active before this
   button will be enabled.
@@ -295,14 +295,14 @@ The dialog has three components:
 
  * :guilabel:`Area to print` allows you to customise the extent of the report 
    map. There are two options available.
-   Choose :guilabel:`Current extent` if current canvas extent represents
-   necessary area. Choose
+   Choose :guilabel:`Current extent` if the current canvas extent represents
+   the necessary area. Choose
    :guilabel:`Analysis extent` to set the extent of the report map to the 
    impact layer extent.
  * :guilabel:`Template to use` allows you to select a template for the report.
    The combo box lists all templates bundled with the plugin as well as 
    templates from the user-defined template directory (see 
-   :ref:`toolbar_options` for information on how to set templates directory).
+   :ref:`toolbar_options` for information on how to set the templates directory).
    It is also possible to select a custom template from any location - 
    activate the radio button under the combo box and provide a path to the 
    template using the :guilabel:`...` button.

@@ -38,7 +38,7 @@ In the dialog that appears, choose the QGIS layer that contains the
 administrative boundaries and then select the attribute in that layer that
 represents the number of displaced people.
 
-When you are ready, press the :guilabel:`OK` button on the dialog.
+When you are ready, click the :guilabel:`OK` button in the dialog.
 
 After the analysis is completed, new keywords will be associated with the
 layer that indicate the needs according to the formulas defined above.

@@ -53,7 +53,7 @@ keywords file if the wizard is cancelled.
 Using the wizard
 ----------------
 
-To use the wizard, simple follow the prompts presented on each page of the
+To use the wizard, simply follow the prompts presented on each page of the
 wizard. There are three standard forms of user input expected:
 
 1.) **List selection** - In this case options are provided in a list. Clicking 

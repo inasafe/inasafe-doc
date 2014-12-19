@@ -75,7 +75,7 @@ Template Options
   template has a missing element if the user tries to print the report or open 
   it in the composer.
 * :guilabel:`Use custom organisation logo`: This option is used to determine
-  a custom logo that will be used as organisation logo in the pdf of your
+  the custom logo that will be used as an organisational logo in the PDF of your
   impact scenario project. If this option is disabled, |project_name| will use 
   the default organisation logo.
   See :ref:`toolbar_reports` in the |project_name| User's Manual for more
@@ -104,7 +104,7 @@ Advanced
 
 * :guilabel:`Keyword cache for remote datasources`: This option is used to
   determine where keywords are stored for datasets when it is not possible
-  to write them into a .keywords file.
+  to write them into a :file:`.keywords` file.
   See :ref:`keywords_system` in the |project_name| User's Manual for more
   information on the keywords system.
 * :guilabel:`Help to improve InaSAFE by submitting errors to a remote server`:
@@ -112,7 +112,7 @@ Advanced
   |project_name| project server in the event of any error taking place that
   we are able to trap.
   The information provided is useful to the |project_name| team to improve
-  the robustness of the software we produce and to spot trends in issues
+  the robustness of the software and to spot trends in issues
   people encounter.
   Please note the warning text below this option which is included here in
   full:

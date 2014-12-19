@@ -15,7 +15,7 @@ tool (:ref:`batch_runner`) in one go:
    *Save current scenario*
 
 This is the tool you need to prepare/save scenarios for the
-:ref:`tb_batch_runner` Tool. It lets you save the current visible scenario
+:ref:`tb_batch_runner`. It lets you save the current visible scenario
 in QGIS to a :file:`.txt` file. Once saved you can reopen this file as a
 scenario again in Batch runner and recalculate it.
 

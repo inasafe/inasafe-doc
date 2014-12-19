@@ -10,7 +10,7 @@ Batch Runner
 
    *Batch Runner*
 
-With this tool you can setup numerous scenarios and run them all in one go.
+With this tool you can set up numerous scenarios and run them all in one go.
 For example, in a typical use case you might define a number of flood impact
 scenarios all using a standard dataset, such as :file:`flood.shp`. As new flood 
 data becomes available you replace :file:`flood.shp` and rerun the scenarios 

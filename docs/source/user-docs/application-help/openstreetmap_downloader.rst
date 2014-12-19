@@ -23,8 +23,8 @@ so that it can be used directly in |project_name| impact scenario analyses.
 
 .. note:: The downloader service has limitations as to the size of
    datasets that can be retrieved.
-   As such you may experience issues trying to fetch e.g. country wide
-   building footprint data.
+   As such you may experience issues trying to fetch large amounts of data,
+   such as country-wide building footprint data.
    Generally datasets at a city level and below should work well.
 
 To use this tool effectively:
@@ -33,7 +33,7 @@ To use this tool effectively:
   retrieved.
   For fine-grained control, you can set the bounding box manually in the area
   provided at the bottom of the dialog.
-* Check the output directory is correct.
+* Check that the output directory is correct.
   Note that the saved datasets will be called :file:`buildings.shp` and 
   :file:`roads.shp` (and their associated files).
 * By default simple file names will be used (e.g. :file:`roads.shp`, 
@@ -44,7 +44,7 @@ To use this tool effectively:
   Note that the only allowed prefix characters are A-Z, a-z,
   0-9 and the characters '-' and '_'.
   You can leave this blank if you prefer.
-* Click the :guilabel:`OK` button to retrieve the data.
+* Click :guilabel:`OK` to retrieve the data.
 
 .. warning::
    If a dataset already exists in the output directory it will be overwritten.
