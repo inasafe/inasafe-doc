@@ -1,42 +1,45 @@
 .. _getting_help:
 
-Getting help
+Getting Help
 ============
 
-Here you can find the places to go first looking for help.
+If you need help using |project_name|, join the |project_name| mailing
+list or connect with other local users.
 
 .. _google_group:
 
-|project_name| Google Group:
-----------------------------
-First of all: You do not need a google account to use this forum/mailinglist!
+|project_name| Google Group mailing list
+----------------------------------------
 
-Join our mailing list!
-......................
+.. note:: You do not need a google account to use this forum/mailing list!
 
-If you experience problems in using
-|project_name| or have suggestions on improving the software or you would
-just get in contact with other persons using |project_name| you can join our
-google group by sending an email to:
+If you experience problems using |project_name|, have suggestions on improving 
+the software or simply would like to get in contact with other |project_name| 
+users, join our google group by sending an email to:
 
 inasafe-users+subscribe@googlegroups.com
 
-You can unsubscribe again at any time by simply sending an email to:
+You can unsubscribe from the list at any time by sending an email to:
 
 inasafe-users+unsubscribe@googlegroups.com
 
-You can read and browse the archive of asked Questions on the
-|project_name|-users group page at:
+You can view the message archive of this forum on the 
+|project_name| users group page at:
 
 https://groups.google.com/forum/?fromgroups#!forum/inasafe-users
+
 
 Localised help
 --------------
 
-There is a Facebook group in Indonesian language where you can ask for help
-if you are searching for help in that language:
+For users in Indonesia, there is a Facebook group where you can request help
+in Indonesian language.
 
 https://www.facebook.com/groups/forumQGISindo/
 
-If you want to help in **development** or found a **bug** that you would like
-to report, take a look at the :ref:`getting_involved` section.
+
+Getting involved
+----------------
+
+To help in the development of |project_name| or report a bug, visit
+:ref:`getting_involved`.

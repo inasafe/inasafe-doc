@@ -1,31 +1,32 @@
-Module 1
-********
+Module 1: Adult Learning
+========================
 
-Adult Learning
-==============
+Overview
+--------
 
-**Basic Competency**
+Basic Competency
+................
+Master how to implement adult learning
 
-Mastering how to implement adult learning
-
-**Indicator**
-
-1. Explain the principles of adult learning
+Indicators
+..........
+1. Understand the principles of adult learning
 2. Analyzing the characteristics of adult learning
 3. Determining strategies, teaching methods or techniques that apply adult
    learning
 4. Evaluating adult learning
 
-**Material**
-
+Materials
+.........
 **Adult Learning**
 
 1. Principles of adult learning
 2. Characteristics of adult learning
-3. Strategies, teaching methods or techniques that apply adult learning
+3. Strategies, teaching methods or techniques that apply in adult learning
 4. Adult learning evaluation
 
-**Learning Activity**
+Learning Activities
+...................
 
 **1. Opening and workshop information**
 
@@ -100,15 +101,16 @@ Material: -
 Activity:
 
 Facilitator asks one of the participants to reflect on the proceeding of the
-first session
+first session.
 
 Reading Material
-================
+----------------
 
-**Introduction**
+Introduction
+............
 
-The participants of the training in Scenario Development for Contingency Plan
-using OpenStreetMap (OSM) and QGIS/ |project_name| softwares are adults.
+The participants of the training in Scenario Development for Contingency Planning
+using OpenStreetMap (OSM) and QGIS/ |project_name| software are adults.
 Their learning characteristics are unique and different from those of
 children.
 As such, it is crucial that trainers learn about adult learning characteristics.
@@ -129,7 +131,8 @@ Andragogy strategy stimulates adults to engage in the process of searching
 and finding the knowledge they need in life.
 Adults learn in a continuous way from their experience.
 
-**1. Adult Learning Characteristic**
+1. Adult Learning Characteristics
+.................................
 
 Adult education is an endeavor aimed at self development made by individuals
 without legal forces, without making this endeavor their main activity (Reeves,
@@ -254,7 +257,8 @@ j. Adults will continue learning process when their learning experience is
 |                     |                             |    on activities         |
 +---------------------+-----------------------------+--------------------------+
 
-**2. Principle of Adult Learning**
+2. Principle of Adult Learning
+..............................
 
 In adult learning, there are principles that differentiate it from other types
 of education.
@@ -324,7 +328,8 @@ j. Principle of integration:
    Learning plan in adult education must cover materials that are non-partial
    and integrated in nature, forming a unity.
 
-**3. Adult Learning Strategy**
+3. Adult Learning Strategy
+..........................
 
 Identification of learning strategies is based on the objective to achieve.
 Based on this, there are two types  of learning strategies i.e. :
@@ -474,7 +479,8 @@ j. An atmosphere that enables participants to grow with values and norms in
    their community
 
 
-**4. Adult Learning Evaluation**
+4. Adult Learning Evaluation
+............................
 
 Evaluation is an activity to determine how far a learning program is implemented
 according to expectations.

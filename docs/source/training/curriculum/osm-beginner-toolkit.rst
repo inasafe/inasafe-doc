@@ -22,15 +22,15 @@ considered, including the length of time you have to train,
 available resources, number of trainees and their technical skills.
 This toolkit will help trainers prepare trainings for different types of
 participants, but it will primarily focus on educating those with little or
-no experience with GPS, map making, and computers.
+no experience with GPS, map-making and computers.
 
 The purpose of this toolkit is to prepare the trainer to successfully train
 workshop participants in adding spatial data to OpenStreetMap.
 
 Purpose of Workshop
 ...................
-This workshop is purposed to achieve competency standard and basic competency
-as follows:
+This workshop is intended to achieve the following standard and basic 
+competencies:
 
 Standard Competency
 ^^^^^^^^^^^^^^^^^^^
@@ -49,7 +49,7 @@ Basic Competencies
 
 Workshop Materials
 ^^^^^^^^^^^^^^^^^^
-1. Basic concept of OpenStreetMap website
+1. The OpenStreetMap website
 2. Working with OSM
 3. Working with JOSM
 4. Using GPS
@@ -60,7 +60,7 @@ Workshop Materials
 
 Workshop Strategies
 ^^^^^^^^^^^^^^^^^^^
-1. Methods emphasised in this workshop are participatory teaching,
+1. Methods emphasised in this workshop are participatory teaching
    and active participation in all sections and
    activities, rather than lecture method.
 2. **Participant oriented.**
@@ -109,7 +109,7 @@ Day I:
 +---------------+------------------------------------------------------+--------------------------------+
 | 10.00 - 10.15 | Break 1                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 10.15 - 11.45 | 1. Basic concept of OpenStreetMap website            | FGD and Plenary Session        |
+| 10.15 - 11.45 | 1. The OpenStreetMap website                         | FGD and Plenary Session        |
 +---------------+------------------------------------------------------+--------------------------------+
 | 11.45 - 12.45 | Lunch break                                          |                                |
 +---------------+------------------------------------------------------+--------------------------------+
@@ -219,8 +219,8 @@ Workshop Plan
 Session 1
 .........
 
-Basic Concept of OpenStreetMap Website
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The OpenStreetMap Website
+^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 90 minutes
 
 Basic Competency
@@ -229,24 +229,24 @@ Draw paper maps to gain a basic understanding of OpenStreetMap
 
 Indicators
 **********
-1. Understand the concept and definition of OpenStreetMap 
+1. Understand the concept of OpenStreetMap 
 2. Understand the definition and objectives of data collection 
 3. Understand the composition of a map                         
-4. Make a handwritten sketch of an area                        
+4. Make a hand-drawn sketch of an area                        
 
 Outcomes
 ********
 1. Questions and comments about OSM, data and maps
-2. Handwritten sketch of an area
+2. Hand-drawn sketch of an area
 
 Core Material
 *************
-**Basic Concept of OpenStreetMap Website**
+**The OpenStreetMap Website**
 
-1. Concept and definition of *OpenStreetMap*
+1. Concept of *OpenStreetMap*
 2. Definition and objectives of data collection
 3. Components of a map
-4. Handwritten sketch of an area
+4. Hand-drawn sketch of an area
 
 Activities
 **********
@@ -255,19 +255,17 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Powerpoint*  |
 |                                                                   | *Slide*       |               |
-| Facilitators explain the importance of the session, objectives,   |               |               |
+| Explain the importance of the session, objectives,                |               |               |
 | outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Quiz 15'**                                                      | Quiz          | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitators ask questions to be answered by participants, such   |               |               |
+| Ask questions to be answered by participants, such                |               |               |
 | as:                                                               |               | Module 1      |
 |                                                                   |               |               |
-| What is OpenStreetMap?                                            |               |               |
-|                                                                   |               |               |
-| What is data?                                                     |               |               |
-|                                                                   |               |               |
-| What are the components of a map?                                 |               |               |
+| - What is OpenStreetMap?                                          |               |               |
+| - What is data?                                                   |               |               |
+| - What are the components of a map?                               |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Explanation 30'**                                               | Lecture       | *Powerpoint*  |
 |                                                                   |               | *Slide*       |
@@ -282,7 +280,7 @@ Activities
 |                                                                   |               |               |
 | Map:                                                              |               |               |
 |                                                                   |               |               |
-| - Definition of map                                               |               |               |
+| - Definition of a map                                             |               |               |
 | - Components of a map                                             |               |               |
 | - How can a map show us information?                              |               |               |
 | - How to connect attributes to a map?                             |               |               |
@@ -295,24 +293,24 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Presentation 15'**                                              | Presentation  |               |
 |                                                                   |               |               |
-| Facilitators ask the participants to show their maps and          |               |               |
+| Ask the participants to show their maps and                       |               |               |
 | explain what they have drawn                                      |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Emphasis 10'**                                                  | Lecture       | *Powerpoint*  |
 |                                                                   |               | *Slide*       |
-| Facilitators emphasise some points:                               | Q & A         |               |
+| Emphasise some points:                                            | Q & A         |               |
 |                                                                   |               |               |
-| - A map represents places/objects with different types of         |               |               |
-|    symbol                                                         |               |               |
-| - There are three ways to represent an object: as point, line,    |               |               |
-|    and polygon (area).                                            |               |               |
-| - Objects in a map represent objects from the real world          |               |               |
+| - A map represents places/objects with different                  |               |               |
+|   symbols                                                         |               |               |
+| - There are three ways to represent an object: as point, line     |               |               |
+|   and polygon (area).                                             |               |               |
+| - Objects on a map represent objects from the real world          |               |               |
 | - Digital maps are composed of shapes similar to real             |               |               |
-|    objects and this shape is composed from point, line, and       |               |               |
-|    polygon (area).                                                |               |               |
+|   objects and the shape is composed from points, lines and        |               |               |
+|   polygons (area).                                                |               |               |
 |                                                                   |               |               |
-| Facilitators ask the participants to give examples about objects  |               |               |
-| that can be represented as point, line, and polygon (area).       |               |               |
+| Ask the participants to give examples about objects               |               |               |
+| that can be represented as point, line and polygon (area).        |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 5'**                                                    | Q & A         |               |
 |                                                                   |               |               |
@@ -390,13 +388,13 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitators explain the importance of the session, objectives,   |               |               |
+| Explain the importance of the session, objectives,                |               |               |
 | outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration 20'**                                             | Demo          | Computer      |
 |                                                                   |               |               |
-| Facilitators ask participants to pay attention to the demo        |               | Projector     |
-| will be done by the facilitators about:                           |               |               |
+| Ask participants to pay attention to a                            |               | Projector     |
+| demonstration about:                                              |               |               |
 |                                                                   |               | *Powerpoint*  |
 | - Main functions of OpenStreetMap website                         |               | *presentation*|
 | - Zoom in and zoom out the map                                    |               |               |
@@ -407,7 +405,7 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Practice 40'**                                                  | Practice      | Computer      |
 |                                                                   |               |               |
-| On the projector, facilitators show participants                  |               | Projector     |
+| On the projector, show participants                               |               | Projector     |
 | openstreetmap.org and ask participants to                         |               |               |
 | follow these activities:                                          |               | *Powerpoint*  |
 |                                                                   |               | *presentation*|
@@ -419,9 +417,9 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Input 20'**                                                     | Lecture       | Projector     |
 |                                                                   |               |               |
-| Facilitators explain about:                                       | Q & A         | *Powerpoint*  |
+| Explain:                                                          | Q & A         | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| - Basic concept of OpenStreetMap licence. ODbL is a               |               |               |
+| - The OpenStreetMap licence. ODbL is a                            |               |               |
 |   licence in which all of the data in OpenStreetMap can be used   |               | Module 2      |
 |   by everyone freely, but the user must add OpenStreetMap         |               |               |
 |   attribution and contribute back to OpenStreetMap                |               |               |
@@ -431,20 +429,20 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demo and Practice 45'**                                         | Demo          | Computer      |
 |                                                                   |               |               |
-| - Facilitators show the participants how to sign up or            | Practice      | Projector     |
+| - Show the participants how to sign up or                         | Practice      | Projector     |
 |   register an OpenStreetMap account (problems: some               |               |               |
 |   participants might not have email accounts, some                |               | *Powerpoint*  |
 |   participants might forget their email passwords)                |               | *presentation*|
-| - When everyone is signed up, facilitators show the               |               |               |
+| - When everyone is signed up, show                                |               |               |
 |   participants how to log in to their OSM account                 |               | Module 2      |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demo and Practice 45'**                                         | Demo          | Computer      |
 |                                                                   |               |               |
-| Facilitators show participants how to edit the map on the         | Practice      | Projector     |
-| OpenStreetMap website and save their edits                        |               |               |
+| Show participants how to edit the map on the                      | Practice      | Projector     |
+| OpenStreetMap website and save their edits.                       |               |               |
 |                                                                   |               | *Powerpoint*  |
-| - How to add and remove object in *Potlach*                       |               | *presentation*|
-| - How to save our edits in *Potlach 2*                            |               |               |
+| - How to add and remove objects in the iD editor                  |               | *presentation*|
+| - How to save edits in the iD editor                              |               |               |
 |                                                                   |               | Module 2      |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 5'**                                                    | Q & A         | Projector     |
@@ -523,45 +521,45 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 15'**                                              | Talk          | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitators explain the importance of the session, objectives,   |               |               |
+| Explain the importance of the session, objectives,                |               |               |
 | outcomes and activities of the session.                           |               |               |
 |                                                                   |               |               |
-| Facilitators ensure that JOSM, GPSBabel, and GPS                  |               |               |
+| Ensure that JOSM, GPSBabel and GPS                                |               |               |
 | drivers are installed on the computers of participants            |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration and Practice 1: 45'**                             | Demo          | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| - Facilitator demonstrates how to install software using          | Practice      |               |
+| - Demonstrate how to install software using                       | Practice      |               |
 |   projector                                                       |               | Participants  |
-| - Participants are asked to follow the steps                      |               |               |
-|   demonstrated by facilitator                                     |               | Computer      |
-| - Facilitator helps participants if they have problems with       |               | software on   |
+| - Ask participants to follow                                      |               |               |
+|   along                                                           |               | Computer      |
+| - Help participants if they have problems with                    |               | software on   |
 |   the steps like installing software or computer                  |               | USB           |
 |   system configuration                                            |               | Projector     |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration and Practice 2: 90'**                             | Demo          | Computer      |
 |                                                                   |               | with installed|
-| - If software is already installed, facilitator asks              | Practice      | software      |
+| - If software is already installed, ask                           | Practice      | software      |
 |   participants to open JOSM                                       |               |               |
-| - Facilitator demonstrates basic features of drawing a map        |               | Paper Map     |
-| - Facilitator asks participants to follow the steps               |               |               |
+| - Demonstrate the basic features of drawing a map                 |               | Paper Map     |
+| - Ask participants to follow the steps                            |               |               |
 |   shown about:                                                    |               |               |
 |                                                                   |               |               |
 |     - Setting language to Bahasa Indonesia                        |               |               |
-|     - Drawing nodes, ways, and shapes                             |               |               |
+|     - Drawing nodes, ways and shapes                              |               |               |
 |     - Selecting nodes and ways                                    |               |               |
-|     - Understanding how a way consists of some nodes and a        |               |               |
-|       shape is a way that is finished where it begins             |               |               |
+|     - Understanding that a way consists of nodes, and a           |               |               |
+|       shape is a way that is finishes where it begins             |               |               |
 |     - Adding custom presets to the menu                           |               |               |
 |                                                                   |               |               |
-| - Facilitator explains how the data is added to objects in        |               |               |
+| - Explain how the data is added to objects in                     |               |               |
 |   tag format. A good way to explain a tag is to describe it       |               |               |
 |   as a label which is put on the objects and each label           |               |               |
 |   describes different attributes about that object                |               |               |
-| - Facilitator shows that there are many types of tag with         |               |               |
-|   different attributes, but the easiest way to add it to the      |               |               |
-|   objects is using the presets menu                               |               |               |
-| - Facilitator asks participants to draw their paper maps          |               |               |
+| - Show that there are many types of tags for                      |               |               |
+|   different attributes, and the easiest way to add them to        |               |               |
+|   objects is by using the presets menu                            |               |               |
+| - Ask participants to draw their paper maps                       |               |               |
 |   using JOSM to create nodes, ways and shapes                     |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 30'**                                                   | Q & A         |               |
@@ -603,11 +601,11 @@ train good mappers.
 FAQ (Frequently Asked Questions)
 ********************************
 
-**Is there any easy way to restart JOSM after we finished installing plugins?**
+**Is there an easy way to restart JOSM after we finish installing plugins?**
 
 Yes, there is a plugin that you can add which allow you to restart JOSM by
 clicking a button.
-To activate it, install it in preferences.
+To activate it, install it in the Preferences menu.
 
 **Could we make tags in Bahasa Indonesia?**
 
@@ -618,17 +616,18 @@ As an example, a hospital is still a hospital in England, France and
 even in Indonesia.
 If every country gives a tag with their own language it will be difficult and
 confusing to show the icon or symbol for different locations.
-Because OSM originated in England, and English is a very common language
+Because OSM originated in England and English is a very common language
 all over the world, the English language is the language which is accepted for
 tagging in OpenStreetMap.
 However if you want to alter the presets menu to use your own language it is
 still possible.
 
-**Can we change the color of nodes and ways and can we change the icons? How can we print?**
+**Can we change the colour of nodes and ways and can we change the icons? How 
+can we print?**
 
-You can change the color of the objects in the Preferences menu.
+You can change the colour of the objects in the Preferences menu.
 This is very useful especially when it is hard to see nodes on ways and
-shapes on different background.
+shapes against a background.
 When participants ask about how to change the symbol or show the name of
 objects, you need to tell them that this program is for editing data and
 not to see the preview or result and print a map.
@@ -658,7 +657,7 @@ Use GPS to add data to OSM
 
 Indicators
 **********
-1. Understand what is GPS and types of GPS          
+1. Understand GPS and the types of GPS        
 2. Turn on GPS                                      
 3. Set up GPS                                       
 4. Understand factors that affect GPS accuracy      
@@ -703,35 +702,35 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 10'**                                              | Talk          | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitators explain the importance of the session, objectives,   |               |               |
+| Explain the importance of the session, objectives,                |               |               |
 | outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Sharing 15'**                                                   | Discussion    | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| 1. Some participants who have experiences using                   |               |               |
-|    smartphone, may share with others                              |               | Module 4      |
-|    experiences of using about GPS on their smartphone.            |               |               |
+| 1. Any participants who have experience using                     |               |               |
+|    smartphones may share with others their                        |               | Module 4      |
+|    experience using GPS on their smartphone.                      |               |               |
 | 2. Other participants respond and ask about                       |               |               |
 |    experiences using GPS in smartphone.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Advice 20'**                                                    | Talk          | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitator presents:                                             | Q & A         |               |
-| What GPS does and how it works on the smartphone.                 |               | Module 4      |
+| Present                                                           | Q & A         |               |
+| what GPS does and how it works on the smartphone.                 |               | Module 4      |
 | For example:                                                      |               |               |
 |                                                                   |               |               |
 | - Phone receives signals from radio towers, GPS                   |               |               |
 |   receives signals from satellites orbiting in space.             |               |               |
 | - When receiving a signal, GPS can track absolute                 |               |               |
-|   locations in earth.                                             |               |               |
+|   locations on earth.                                             |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration and Practice 180'**                               | Demo          | GPS (ideally  |
 |                                                                   |               | one GPS for   |
-| 1. Facilitator gives a GPS to each pair of participants (if       | Practice      | every two or  |
+| 1. Give a GPS to each pair of participants (if                    | Practice      | every two or  |
 |    there are enough GPS). Go outside away from buildings          |               | three         |
 |    to make sure the satellite signal is good.                     |               | participants) |
-| 2. Make sure the participants follow your                         |               |               |
-|    instructions. Demonstrate the following:                       |               | Paper and     |
+| 2. Participants should follow the following                       |               |               |
+|    demonstrations:                                                |               | Paper and     |
 |                                                                   |               | Pen           |
 |   - How to turn on the GPS                                        |               |               |
 |   - Satellite page. Give brief explanation that when GPS is       |               |               |
@@ -739,33 +738,33 @@ Activities
 |     your current location. It is usually takes 30 seconds.        |               |               |
 |   - Go to other pages on GPS. Use :kbd:`X` button to move         |               |               |
 |     to other pages.                                               |               |               |
-|   - Create a waypoint and explain what it is                      |               |               |
+|   - Create a waypoint and explain what it is.                     |               |               |
 |   - Look to the map page, try to zoom in and zoom out.            |               |               |
 |   - Turn on track log and explain how the track log works.        |               |               |
 |   - Look at the map page and walk so the                          |               |               |
 |     participants can see the track.                               |               |               |
 |   - Make another waypoint.                                        |               |               |
 |                                                                   |               |               |
-| 3. As a group participants will be asked to practice              |               |               |
-|    using GPS.                                                     |               |               |
+| 3. Ask participants to practice using GPS in                      |               |               |
+|    groups.                                                        |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Second Practice 120'**                                          | Practice      | GPS (ideally  |
 |                                                                   |               | one GPS for   |
-| 1. Participants are asked to walk to some roads around the        |               | every two or  |
-|    training place in groups.                                      |               | three         |
-| 2. Participants collect waypoints and                             |               | participants) |
-|    tracks correctly, and make notes for                           |               |               |
-|    waypoints in diaries or survey forms and make                  |               | Paper and     |
-|    sketches of the area.                                          |               | Pen           |
-| 3. Instructed every group of participants to follow the steps.    |               |               |
-| 4. After every group understand how to save the                   |               |               |
-|    information, separated each group to different direction       |               |               |
-| 5. Ask to every group to collect at least ten waypoint            |               |               |
-|    before back to the training place.                             |               |               |
+| Ask participants to walk to some roads around the                 |               | every two or  |
+| training location in groups.                                      |               | three         |
+| Participants should collect waypoints and                         |               | participants) |
+| tracks correctly, make notes for waypoints                        |               |               |
+| in diaries or survey forms and make sketches of the area.         |               | Paper and     |
+|                                                                   |               | Pen           |
+| 1. Instruct every group of participants to follow the steps.      |               |               |
+| 2. After each group understands how to save the                   |               |               |
+|    information, send each group to a different direction          |               |               |
+| 3. Ask every group to collect at least ten waypoints              |               |               |
+|    before returning to the training location.                     |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Presentation 60'**                                              | Presentation  |               |
 |                                                                   |               |               |
-| Participants are asked to tell their experiences when doing       |               |               |
+| Participants are asked to share their experience doing            |               |               |
 | field practice.                                                   |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 15'**                                                   | Q & A         |               |
@@ -780,8 +779,8 @@ Common Problems
 **Make sure you have batteries and extra USB cables**
 
 GPS devices burn through batteries relatively quickly, so it is a good idea to
-make sure every group has extra batteries when they go out to mapping.
-The when they return, they will need to move the data from GPS to the computer.
+make sure every group has extra batteries when they go out mapping.
+Then when they return, they will need to move the data from GPS to the computer.
 It is best if every group has its own USB cable, which will enable
 faster copying of data to the computers.
 
@@ -857,33 +856,34 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 15'**                                              | Talk          | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitators explain the importance of the session, objectives,   |               |               |
+| Explain the importance of the session, objectives,                |               |               |
 | outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Q & A 15'**                                                     | Q & A         | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| 1. Facilitator ask if participants have any experience            |               |               |
+| 1. Ask if participants have any experience                        |               |               |
 |    using Field Papers and how they work                           |               | *Field Papers*|
 | 2. Participants ask about how Field Papers works                  |               | examples      |
-| 3. Facilitator shows participants about Field Papers              |               |               |
+| 3. Show participants Field Papers                                 |               |               |
 |    website                                                        |               | Module 5      |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Explanation 15'**                                               | Talk          | Projector     |
 |                                                                   |               |               |
-| Facilitator explains about Field Papers, why it is useful         |               | *Powerpoint*  |
+| Explains Field Papers, why it is useful                           |               | *Powerpoint*  |
 | and how it works.                                                 |               | *presentation*|
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstrate and Practice 105'**                                 | Demo          | Projector     |
 |                                                                   |               |               |
-| Facilitator demonstrates and participants practice:               | Practice      | Participants  |
+| Demonstrate: (and participants practice)                          | Practice      | Participants  |
+|                                                                   |               |               |
 |  - Mapping using Field Papers                                     |               |               |
 |  - Scanning and Uploading                                         |               |               |
 |  - Opening Field Papers in JOSM                                   |               |               |
 |                                                                   |               | Computer      |
 +-------------------------------------------------------------------+---------------+---------------+
-| Facilitator guides teams to make their own Field Papers,          | Practice      | Participants  |
-| and then collects Field Papers from each team as PDF              |               | Computers     |
-| and prints them.                                                  |               | Projector     |
+| Guide teams to make their own Field Papers,                       | Practice      | Participants  |
+| and then collect Field Papers from each team as PDF               |               | Computers     |
+| and print them.                                                   |               | Projector     |
 |                                                                   |               | Printer       |
 |                                                                   |               | Papers        |
 +-------------------------------------------------------------------+---------------+---------------+
@@ -920,8 +920,8 @@ Activities
 | - Benefits and weaknesses of their strategy                       |               |               |
 | - Problems or challenges that come from doing field surveys       |               |               |
 |                                                                   |               |               |
-| After identifying common problems, facilitator shall discuss      |               |               |
-| solutions for them to minimise participant problems               |               |               |
+| After identifying common problems, discuss                        |               |               |
+| solutions for them to minimise participant problems.              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
 FAQ (Frequently Asked Questions)
@@ -989,28 +989,28 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitators explain the importance of the session, objectives,   |               |               |
+| Explain the importance of the session, objectives,                |               |               |
 | outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Review 20'**                                                    | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitator reminds participants of the basic                     | Q & A         |               |
-| operations in JOSM                                                |               | Module 6      |
+| Remind participants of the basic                                  | Q & A         |               |
+| operations in JOSM.                                               |               | Module 6      |
 |                                                                   |               |               |
-| Faciltator asks participants about basic operations               |               |               |
+| Ask participants about basic operations                           |               |               |
 | such as how to zoom in and out on the map and                     |               |               |
-| how to draw points, lines and polygons                            |               |               |
+| how to draw points, lines and polygons.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Download current OSM data on the area you want to edit 20'**    | Practice      | Computer      |
+| **Download current OSM data of the area you want to edit 20'**    | Practice      | Computer      |
 |                                                                   |               | Participant   |
-| The facilitator instructs the participants to download            |               |               |
+| Instruct the participants to download                             |               |               |
 | OpenStreetMap data according to the region to be edited.          |               | *Powerpoint*  |
 |                                                                   |               | *presentation*|
 |                                                                   |               | and projector |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Setting layer JOSM 20'**                                        | Demonstration | Computer      |
 |                                                                   |               |               |
-| The facilitator demonstrates:                                     |               | Participant   |
+| Demonstrate:                                                      |               | Participant   |
 |                                                                   | Practice      |               |
 | - Moving JOSM layers above and below one another                  |               | Projector     |
 | - Hiding and showing layers                                       |               |               |
@@ -1022,32 +1022,32 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Editing OSM data 180'**                                         | Practice      | Computer      |
 |                                                                   |               |               |
-| 1. The facilitator asks participants to edit their respective     |               | Participant   |
+| 1. Ask participants to edit their respective                      |               | Participant   |
 |    regions, according to the information they collected.          |               |               |
-| 2. The facilitator must continually walk around to each group to  |               | Projector     |
-|    observe participants' work and help answer questions and catch |               |               |
+| 2. Continually walk around to each group to observe               |               | Projector     |
+|    participants' work, help answer questions and catch            |               |               |
 |    mistakes.                                                      |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Tags 150'**                                                     | Demonstration | Computer      |
 |                                                                   |               |               |
-| 1. The facilitator shows participants how to enter                |               | Participant   |
+| 1. Show participants how to enter                                 |               | Participant   |
 |    information (tags) to the objects instead of                   | Practice      |               |
 |    through presets in JOSM.                                       |               | Projector     |
-| 2. Facilitator asks participants to practice the difference       |               |               |
-|    between adding tags directly and using presets                 |               |               |
+| 2. Ask participants to practice                                   |               |               |
+|    adding tags directly                                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Upload OSM Data 45'**                                           | Demonstration | Computer      |
 |                                                                   |               |               |
-| 1. The facilitator shows participants how to upload the           |               | Participant   |
+| 1. Show participants how to upload the                            |               | Participant   |
 |    data that they have added to OSM.                              | Practice      |               |
-| 2. The facilitator asks participants to upload their data in      |               | Projector     |
+| 2. Ask participants to upload their data in                       |               | Projector     |
 |    accordance with their respective working areas. Each           |               |               |
 |    group is allowed one person only to upload to avoid            |               |               |
 |    conflicts that otherwise might occur.                          |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Save OSM file 25'**                                             | Demonstration | Computer      |
 |                                                                   |               |               |
-| Facilitator shows participants how to save                        |               | Participant   |
+| Show participants how to save                                     |               | Participant   |
 | OpenStreetMap files on their laptops. Participants should be      | Practice      |               |
 | reminded not to let too much time pass between downloading        |               | Projector     |
 | and uploading OSM data.                                           |               |               |
@@ -1088,7 +1088,7 @@ If you can not see the changes on OpenStreetmap after that time it may be
 because your browser is still caching the old map.
 In this case you should reload the page in your browser.
 If this is not successful you may need to delete the cache in your browser.
-For example, in Google Chrome go to :menuselection:`Tools -> Clear Browsing Data`.
+For example, in Google Chrome go to :menuselection:`Tools ‣ Clear Browsing Data`.
 Click :guilabel:`Empty the cache` and click :guilabel:`Clear browsing data`.
 Then refresh the page again and your edits should appear.
 Sometimes it still can take a while until changes to OpenStreetMap appear on
@@ -1132,19 +1132,19 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitators explain the importance of the session, objectives,   |               |               |
+| Explain the importance of the session, objectives,                |               |               |
 | outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Explain Imagery 60'**                                           | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| The facilitator explains about imagery, including resolution,     |               |               |
-| georeference, why imagery offset occurs and how to fix it         |               | Module 7      |
+| Explains about imagery, including resolution,                     |               |               |
+| georeference, why imagery offset occurs and how to fix it.        |               | Module 7      |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Add plugin imagery_offset_db in JOSM 20'**                      | Practice      | Computer      |
 |                                                                   |               |               |
-| 1. Facilitator asks participants to add imagery_offset_db         |               | Participant   |
-|    plugin from the Plugins list in Preferences menu.              |               |               |
-| 2. Participants are guided step-by-step to utilise the            |               | Projector     |
+| 1. Ask participants to add imagery_offset_db                      |               | Participant   |
+|    plugin from the Plugins list in the Preferences menu.          |               |               |
+| 2. Guide the participants step-by-step on how to utilise the      |               | Projector     |
 |    plugin.                                                        |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 5'**                                                    | Q & A         |               |
@@ -1189,40 +1189,40 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitators explain the importance of the session, objectives,   |               |               |
+| Explain the importance of the session, objectives,                |               |               |
 | outcomes and activities of the session.                           |               | Module 9      |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Download OSM vector files from Geofabrik website 20'**          | Lecture       | Computer      |
 |                                                                   |               | Participants  |
-| 1. Facilitator shows how participants can get OSM                 | Practice      |               |
-|    data in shapefile format through Geofabrik                     |               | Projector     |
+| 1. Shows how participants can get OSM                             | Practice      |               |
+|    data in shapefile format through the Geofabrik                 |               | Projector     |
 |    website that can be processed by QGIS                          |               |               |
 |    and InaSAFE.                                                   |               |               |
-| 2. Participants are asked to download vector files via            |               |               |
-|    Geofabrik website.                                             |               |               |
+| 2. Ask participants to download vector files themselves via       |               |               |
+|    the Geofabrik website.                                         |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Download OSM vector files via HOT Export website 30'**          | Lecture       | Computer      |
 |                                                                   |               |               |
-| 1. Facilitator shows:                                             |               | Participants  |
+| 1. Demonstrate                                                    |               | Participants  |
 |                                                                   | Practice      |               |
 |   - How participants can get OSM data in shapefile                |               | Projector     |
 |     format through the HOT Export website that                    |               |               |
 |     can be processed by QGIS and InaSAFE software                 |               |               |
 |   - The difference between Geofabrik and HOT Export websites      |               |               |
 |                                                                   |               |               |
-| 2. Participants are asked to download vector files via            |               |               |
-|    HOT Export website                                             |               |               |
+| 2. Ask participants to download vector files themselves via       |               |               |
+|    the HOT Export website.                                        |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **FGD 20'**                                                       | Lecture       | Projector     |
 |                                                                   |               |               |
 | Topics for discussion are:                                        | FGD           | Microphone    |
 |                                                                   |               |               |
-| - How will OSM will be useful for participant activities.         |               | Speaker       |
+| - How will OSM will be useful for participant activities?         |               | Speaker       |
 | - Difficulties in using OSM for participants. For example, some   |               |               |
 |   common difficulties are the unavailability                      |               |               |
 |   of GPS devices and satellite imagery or slow internet.          |               |               |
 |                                                                   |               |               |
-| Facilitators should not provide solutions directly to the         |               |               |
+| Do not provide solutions directly to the                          |               |               |
 | participants. Note the comments and needs of the participants     |               |               |
 | so that it can be submitted to the training organiser             |               |               |
 | or relevant partner to be followed up on (for example, set        |               |               |
@@ -1230,10 +1230,10 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing and Follow-up 15'**                                     | Demonstration |               |
 |                                                                   |               |               |
-| Facilitator shows:                                                |               |               |
+| Demonstrate:                                                      |               |               |
 |                                                                   |               |               |
 | - How participants can discuss through social                     |               |               |
-|   media such as Facebook or Twitter.                              |               |               |
+|   media such as Facebook or Twitter                               |               |               |
 | - How participants can join the talk-id mailing list              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 

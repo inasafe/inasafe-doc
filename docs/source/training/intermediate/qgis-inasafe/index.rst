@@ -1,4 +1,4 @@
-.. _interm_qgis_inasafe:
+.. _interm-qgis-inasafe:
 
 Unit 4: Data Analysis Using QGIS and |project_name| Intermediate Level
 ======================================================================

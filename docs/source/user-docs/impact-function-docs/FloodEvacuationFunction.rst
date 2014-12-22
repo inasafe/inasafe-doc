@@ -17,22 +17,22 @@ AIFDR
 Need evacuation
 
 **Synopsis**: 
-To assess the impacts of flood inundation in raster format on population.
+To assess the impacts of flood inundation in raster format on population
 
 **Actions**: 
-Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them.
+Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them
 
 **Hazard Input**: 
-A hazard raster layer where each cell represents flood depth (in meters).
+A hazard raster layer where each cell represents flood depth (in metres)
 
 **Exposure Input**: 
-An exposure raster layer where each cell represent population count.
+An exposure raster layer where each cell represents population count
 
 **Output**: 
-Raster layer contains people affected and the minimum needs based on the people affected.
+Raster layer contains people affected and the minimum needs based on the people affected
 
 **Limitation**: 
-The default threshold of 1 meter was selected based on consensus, not hard evidence.
+The default threshold of one metre was selected based on consensus, not hard evidence
 
 Details
 -------
@@ -42,7 +42,7 @@ The population subject to inundation exceeding a threshold (default 1m) is calcu
 Doc String
 ----------
 
-Impact function for flood evacuation.
+Impact function for flood evacuation
 
     :author AIFDR
     :rating 4

@@ -1,29 +1,29 @@
-********
-Module 2
-********
+Module 2: Communication Skills
+==============================
 
-Communication Skills
-====================
+Overview
+--------
 
 Basic Competency
-----------------
+................
 Demonstrate communication skills in training 
 
-Indicator
----------
+Indicators
+..........
 1. Describe the principles of effective communication
 2. Describe the communication models in training
-3. Demonstrate 9 basic skills components in teaching/ training 
+3. Demonstrate nine basic skills components in teaching/ training 
 
-Material
---------
+Materials
+.........
 **Communication Skills**
+
 1. The principles of effective communication 
 2. Communication models in training 
 3. Components of teaching / training basic skills
 
-Activity Steps
---------------
+Activities
+----------
 +-------------+--------------------------------------------------------+------------------------+--------------+
 | **TIME**    | **ACTIVITY**                                           | **SUMMARY**            | **MATERIAL** |
 +=============+========================================================+========================+==============+
@@ -75,7 +75,7 @@ Activity Steps
 Reading Material
 ----------------
 Foreword
-''''''''
+........
 Communication is the main skill for someone to become a trainer. There are 
 several things that need to be understood including the meaning and purpose of 
 communication and Principles of Proper or Effective Communication. So is the 
@@ -98,7 +98,7 @@ or training because training is basically teaching the participants to be able
 to do something.
 
 1. The principles of effective communication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+............................................
 Communication is generally defined as the process of creating the meaning of 
 ideas or ideas presented. In this case communication requires at least 4 
 components or elements, i.e. (1) The sender or messenger/ communicator, 
@@ -115,13 +115,9 @@ the communicant, but also pays attention to the feedback from the communicant,
 making the model a full circle process. This means that the trainer can be the 
 source of information at one time and the recipient at another time, vice versa.
 Participants can be the recipient of information but also the source of 
-information. So communication is a simultaneous notice or exchange. The 
-communication process as mentioned above can be seen below.
+information. So communication is a simultaneous notice or exchange.
 
-.. image:: /static/training/beginner/qgis-inasafe/image4.*
-   :align: center
-
-Communication process above indicates that the trainee can act both as the 
+The communication process indicates that the trainee can act both as the 
 recipient of information/ message and the source of information/ message. But 
 the trainer as the actor in the process of communication still has to control 
 the training process. Therefore the trainer remains as the communicator, as 
@@ -144,12 +140,9 @@ recipient to understand and comprehend the message conveyed by the messenger.
 Trainers are expected to explain the wish or the idea according to the purpose 
 of the training to the participants with a simple but precise or accurate way. 
 Here communication process is expected to pay attention to the feedback from 
-the participants, which can be described as follows.
+the participants.
 
-.. image:: /static/training/beginner/qgis-inasafe/image4.*
-   :align: center
-
-The communication process above shows that communication is the message 
+Communication is the message 
 conveyed to the communicant (recipient) by the communicator (source) through 
 certain channels either directly/ indirectly for the purpose of giving impact/ 
 effect to the communicant as desired by the communicator. It goes through 5 
@@ -204,7 +197,7 @@ e. **Humble**.
 
 
 2. Communication models in training
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+...................................
 Communication in training is a process of delivering communication conditioned 
 for training purposes. The training process is essentially a communication 
 process delivering messages containing training materials. In this regard the 
@@ -451,7 +444,7 @@ studied**
    problem solving can be solved with project method. 
 
 3. Components of basic skills in teaching / training
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+....................................................
 In interaction or face-to-face meeting with the trainees, trainer requires some
 basic teaching skills. It is absolutely necessary to help the trainer in playing
 the role in educational interaction. The trainer’s teaching basic skills are not

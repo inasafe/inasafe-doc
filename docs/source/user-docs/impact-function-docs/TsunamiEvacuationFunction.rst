@@ -17,22 +17,22 @@ AIFDR
 Need evacuation
 
 **Synopsis**: 
-To assess the impacts of tsunami inundation in raster format on population.
+To assess the impacts of tsunami inundation in raster format on population
 
 **Actions**: 
-Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them.
+Provide details about how many people would likely need to be evacuated, where they are located and what resources would be required to support them
 
 **Hazard Input**: 
-A hazard raster layer where each cell represents tsunami depth (in meters).
+A hazard raster layer where each cell represents tsunami depth (in metres)
 
 **Exposure Input**: 
-An exposure raster layer where each cell represent population count.
+An exposure raster layer where each cell represents population count
 
 **Output**: 
-Raster layer contains population affected and the minimum needs based on the population affected.
+Raster layer contains population affected and the minimum needs based on the population affected
 
 **Limitation**: 
-The default threshold of 0.7 meter was selected based on consensus, not hard evidence.
+The default threshold of 0.7 metres was selected based on consensus, not hard evidence
 
 Details
 -------
