@@ -16,7 +16,6 @@ Module 12: Understanding |project_name|
 - Analyse impact
 - Improve |project_name| output map
 - Save and print scenario results
->>>>>>> upstream/develop
 
 
 1. Hazards, exposure and impact

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"POT-Creation-Date: 2014-12-22 12:27\n"
 "PO-Revision-Date: 2014-09-18 04:21+0000\n"
 "Last-Translator: adityo dwijananto <adz.only@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
@@ -32,14 +32,15 @@ msgstr "Tujuan"
 
 # 9af8431ccbcf436bbc181e69e590bfa7
 #: ../../source/user-docs/application-help/data_driven_age.rst:12
+#, fuzzy
 msgid ""
-"Data driven age is used carried out during aggregation to determine how many "
-"people are affected by a hazard according to their age distribution (youth, "
-"adult, elderly). This feature is similar to the gender post-processor.  With "
-"data driven age, a custom age distribution ratio is used. This is specified "
-"either by in the data attributes of the aggregation polygons, or by setting "
-"a global ratio for the whole aggregator vector layer using the keywords "
-"editor or keywords wizard."
+"Data driven age processing is carried out during aggregation to determine "
+"how many people are affected by a hazard according to their age distribution "
+"(youth, adult, elderly). This feature is similar to the gender post-"
+"processor.  With data driven age, a custom age distribution ratio is used. "
+"This is specified either in the data attributes of the aggregation polygons, "
+"or by setting a global ratio for the whole aggregator vector layer using the "
+"keywords editor or keywords wizard."
 msgstr ""
 "Data usia digunakan selama agregasi untuk menentukan berapa banyak orang "
 "yang terkena dampak bahaya sesuai dengan distribusi usia mereka (pemuda, "
@@ -51,12 +52,13 @@ msgstr ""
 
 # ad22a4b63c6a4643a073769d62d5ca8b
 #: ../../source/user-docs/application-help/data_driven_age.rst:20
+#, fuzzy
 msgid ""
-"This feature is used to specify and to give more information by giving "
-"number of affected youth, adult and elderly in an area for example, the "
-"boundaries of a village. To identify more where area should be priorities "
-"during rescue operations and to give more attention on the vulnerable "
-"population ( e.g. elderly) and their needs."
+"This feature is used to give more specific information by giving the number "
+"of affected youth, adult and elderly in an area such as within the "
+"boundaries of a village. This can help better identify what areas should be "
+"priorities during rescue operations and to give more attention to the "
+"vulnerable population (e.g. elderly) and their needs."
 msgstr ""
 "Fitur ini digunakan untuk menentukan dan memberikan informasi lebih lanjut "
 "tentang sejumlah pemuda, dewasa dan lanjut usia yang terkena dampak di "
@@ -71,7 +73,8 @@ msgstr "Pedoman"
 
 # ab80d5635ba74f61af1cb9d5cda2e470
 #: ../../source/user-docs/application-help/data_driven_age.rst:30
-msgid "Data Needed"
+#, fuzzy
+msgid "Data needed"
 msgstr "Data yang Dibutuhkan"
 
 # 9bd670927a944d4eb410acdb68988706
@@ -174,24 +177,20 @@ msgstr "atribut rasio lansia / default rasio lansia"
 msgid "elderly/elder"
 msgstr "lansia"
 
-# dbdb62aa07bc48b1aa4d8623ac1118ea
+# 8479a5710fd7428cab188c4f2a7f9ded
 #: ../../source/user-docs/application-help/data_driven_age.rst:60
-msgid "The keywords editor graphical user interface for Age Postprocessing."
+msgid ""
+"Age postprocessing options can be specified either using ratio attributes or "
+"ratio defaults."
 msgstr ""
-"Penyunting kata kunci di grafis antar muka pengguna untuk usia pasca "
-"pemrosesan."
-
-# 97a1f1603c634155bea86d52c3029723
-#: ../../source/user-docs/application-help/data_driven_age.rst:62
-msgid "There are two ways to specifying age postprocessing options:"
-msgstr "Ada dua cara untuk menetapkan opsi usia pasca pemrosesan:"
 
 # c1dbc716ba2344c9b9921bf404e47b30
-#: ../../source/user-docs/application-help/data_driven_age.rst:64
+#: ../../source/user-docs/application-help/data_driven_age.rst:63
+#, fuzzy
 msgid ""
-"1. Ratio Attributes: In this mode, data used for postprocessing is from the "
-"attributes of the aggregation layer itself. Consider the example below where "
-"each aggregation area has an attribute indicating the rations of age or "
+"1. **Ratio Attributes:** In this mode, data used for postprocessing is from "
+"the attributes of the aggregation layer itself. Consider the example below "
+"where each aggregation area has an attribute indicating the ratios of age or "
 "gender."
 msgstr ""
 "1. Rasio Atribut: Dalam mode ini, data yang digunakan untuk pasca pemrosesan "
@@ -200,20 +199,22 @@ msgstr ""
 "atau jenis kelamin."
 
 # d8dc1583567d49d2b8267b52007b6cd9
-#: ../../source/user-docs/application-help/data_driven_age.rst:73
+#: ../../source/user-docs/application-help/data_driven_age.rst:72
+#, fuzzy
 msgid ""
 "In the keywords editor you can refer to these attributes and the age and "
-"gender rations will be extrapolated based on the defined values."
+"gender ratios will be extrapolated based on the defined values."
 msgstr ""
 "Dalam penyunting kata kunci, Anda dapat merujuk ke atribut ini dan usia dan "
 "jenis kelamin akan diekstrapolasi berdasarkan nilai-nilai yang ditetapkan."
 
 # 7fc892d748094856bc9401664c19dbc8
-#: ../../source/user-docs/application-help/data_driven_age.rst:81
+#: ../../source/user-docs/application-help/data_driven_age.rst:80
+#, fuzzy
 msgid ""
-"2. Ratio Defaults: In this mode, the default values will be used. in this "
-"case you may not know per-area what the age and gender breakdowns are and "
-"wish to rather apply the rations globally (to all aggregation areas)."
+"2. **Ratio Defaults:** In this mode, the default values will be used. In "
+"this case you may not know per-area what the age and gender breakdowns are "
+"but rather apply the ratios globally (to all aggregation areas)."
 msgstr ""
 "2. Default Rasio: Dalam mode ini, nilai default akan digunakan. dalam hal "
 "ini Anda mungkin tidak tahu untuk setiap area mengenai berapa pembagian usia "
@@ -221,10 +222,20 @@ msgstr ""
 "agregasi)."
 
 # c10bb39eadd54c6a8b7cdd943ff75ebd
-#: ../../source/user-docs/application-help/data_driven_age.rst:91
+#: ../../source/user-docs/application-help/data_driven_age.rst:90
 msgid ""
 "A similar user interface is provided in the :ref:`keywords wizard "
 "<keywords_wizard>` user interface."
 msgstr ""
 "Sebuah antarmuka pengguna yang sama disediakan di :ref:`panduan kata kunci  "
 "<keywords_wizard>` antar muka pengguna."
+
+# dbdb62aa07bc48b1aa4d8623ac1118ea
+#~ msgid "The keywords editor graphical user interface for Age Postprocessing."
+#~ msgstr ""
+#~ "Penyunting kata kunci di grafis antar muka pengguna untuk usia pasca "
+#~ "pemrosesan."
+
+# 97a1f1603c634155bea86d52c3029723
+#~ msgid "There are two ways to specifying age postprocessing options:"
+#~ msgstr "Ada dua cara untuk menetapkan opsi usia pasca pemrosesan:"

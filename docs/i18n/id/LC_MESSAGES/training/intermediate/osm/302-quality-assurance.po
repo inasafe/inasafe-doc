@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"POT-Creation-Date: 2014-12-22 12:27\n"
 "PO-Revision-Date: 2014-03-24 10:22+0000\n"
 "Last-Translator: Emir Hartato <emir.hartato@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
@@ -26,37 +26,38 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 # feace5fb41bb4663a467bf781d5994e4
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:8
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:10
 msgid "Module 2: Quality Assurance"
 msgstr "Modul 2: Penjaminan Kualitas"
 
 # e30230f67cef4a599938846d17b927dd
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:10
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:12
 msgid "**Learning Objectives**"
 msgstr "**Tujuan Pembelajaran**"
 
 # 6d6d1c7af2804a43a7b71f77b4d59730
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:12
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:14
 msgid "Use validation tools in JOSM"
 msgstr "Menggunakan tool validasi pada JOSM"
 
 # 39a263d321124594ab39b1b9b4f81f08
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:13
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:15
 msgid "Use online validation tools"
 msgstr "Menggunakan tool validasi secara online"
 
 # e393c7845750491892fbd934db2ffc96
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:15
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:17
+#, fuzzy
 msgid ""
 "Contributing to OpenStreetMap is easy to learn, but difficult to master. "
 "Everybody makes mistakes, but the system works because even when one person "
 "does something the “wrong” way, there are always other mappers ready to help "
-"and fix errors. As you map more and more, it will continue to get easier, "
-"and you will learn the “proper” way to do things. In this chapter we will "
-"take a look at the JOSM validation tool, which is an automated tool to "
-"search for errors and warnings in your data. We will also take a look at one "
-"of the online validation tools, which can aid us further in identifying "
-"mistakes on OpenStreetMap."
+"and fix errors. As you map more and more it will continue to get easier, and "
+"you will learn the “proper” way to do things. In this module we will take a "
+"look at the JOSM validation tool, which is an automated tool to search for "
+"errors and warnings in your data. We will also take a look at one of the "
+"online validation tools, which can aid us further in identifying mistakes on "
+"OSM."
 msgstr ""
 "Berkontribusi di Openstreetmap merupakan hal yang mudah untuk dipelajari, "
 "namun sulit untuk dikuasai. Setiap orang dapat melakukan kesalahan, akan "
@@ -72,20 +73,23 @@ msgstr ""
 "mengecek kesalahan pada data OpenStreetMap."
 
 # eea74857485d448c95d1afacdaa8fb8b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:26
-msgid "**1. Errors and Warnings**"
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:29
+#, fuzzy
+msgid "1. Errors and warnings"
 msgstr "**1. Kesalahan dan Peringatan**"
 
 # da21dcaa7c8f46c086485e281d701e7d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:28
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:31
+#, fuzzy
 msgid ""
-"Sometimes when you go to upload your edits you get a pop-up window like this:"
+"Sometimes when you go to upload your edits in JOSM you get a pop-up window "
+"like this:"
 msgstr ""
 "Ada kalanya ketika Anda ingin upload hasil data OpenStreetMap yang sudah "
 "dimodifikasi akan mendapatkan jendela seperti dibawah ini:"
 
 # f9b00ac1ea17416b8e27cf9b4addd1d2
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:33
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:37
 msgid ""
 "This is JOSM’s way of telling you that there is suspicious data and that you "
 "might want to review the errors and warnings before uploading to OSM."
@@ -94,11 +98,12 @@ msgstr ""
 "diperbaiki atau ditinjau sebelum mengupload ke server OSM."
 
 # 2ca93a49efad4367bbd25d8547d0a1d7
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:36
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:40
+#, fuzzy
 msgid ""
 "JOSM comes with a tool that does an automated analysis of possible mistakes. "
 "This is useful for finding errors that you may have overlooked. When you run "
-"the validation tool, it will return two lists of problems:"
+"the validation tool, it returns two lists of problems:"
 msgstr ""
 "JOSM hadir dengan tool yang berfungsi untuk menganalisis secara otomatis "
 "kesalahan yang ada. Hal ini sangat membantu untuk menemukan kesalahan yang "
@@ -106,7 +111,7 @@ msgstr ""
 "ini akan menghasilkan 2 jenis masalah:"
 
 # e1a21f99b58245aea4de20c23a3b8739
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:40
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:44
 msgid ""
 "**Errors:** These are important to fix, and therefore usually you should not "
 "ignore these. Examples of errors include duplicated objects or overlapping "
@@ -117,7 +122,7 @@ msgstr ""
 "yang terduplikasi atau garis dan poligon yang saling overlay."
 
 # 16084c5862f04f8b80b4cbd1bdf7964c
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:44
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:48
 msgid ""
 "**Warnings:** These are problems that are important to fix, but in some "
 "cases, they are tolerable."
@@ -126,14 +131,15 @@ msgstr ""
 "diperbaiki namun pada beberapa kasus hal tersebut bisa ditoleransi."
 
 # 15fe6abce6d54bfca5c7cda8216e17bb
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:47
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:51
+#, fuzzy
 msgid ""
 "One thing to note is that if you download a large area of the map and run "
 "the validation tool, you may get a very long list of errors and warnings. "
 "This is because the validation tool works on the whole map, not only the "
-"changes that you have made. So you may see mistakes that other mappers have "
-"made, and you can fix them, or ignore them. But the validation tool gives "
-"you the opportunity to look at the mistakes one by one."
+"changes that you have made. You may see mistakes that other mappers have "
+"made, and you can fix them, or ignore them. The validation tool gives you "
+"the opportunity to look at the mistakes one by one."
 msgstr ""
 "Satu hal yang perlu diperhatikan jika Anda mendownload area yang besar dan "
 "menjalankan tool validasi, Anda mungkin akan mendapatkan daftar kesalahan "
@@ -144,17 +150,18 @@ msgstr ""
 "memberikan Anda kesempatan untuk melihat kesalahan satu persatu."
 
 # 7560aacd32ec487ea25d205df5f3f8b4
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:56
-msgid "**2. Using the Validation Tool**"
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:61
+#, fuzzy
+msgid "2. Using the validation tool"
 msgstr "**2. Gunakan Tool Validasi**"
 
 # 504998d89bf4430583d8eaf561e03079
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:58
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:63
 msgid "Let’s see how to use the validation tool:"
 msgstr "Mari kita lihat bagaimana cara menggunakan tool validasi:"
 
 # 4f3f03c580c64e1cb3afacdf24f2fb4f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:60
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:65
 msgid ""
 "In JOSM, download a section of the map. If you don’t see the :guilabel:"
 "`Validation Results` window in the right panel, click on the blue checkmark "
@@ -165,7 +172,7 @@ msgstr ""
 "centang berwarna biru pada bagian kiri untuk memunculkannya."
 
 # 5a931f0f1bf942cca92459cc8b6ab6fc
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:67
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:72
 msgid ""
 "Ensure that nothing on the map is selected. If you run the validation tool "
 "with anything selected, it will only validate what you have selected, and "
@@ -178,7 +185,7 @@ msgstr ""
 "mouse anda pada jendela validasi dan klik :guilabel:`Validasi`."
 
 # 002aa3c185b84fb6b35592fbb962209d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:75
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:80
 msgid ""
 "The map will change and any warnings will be circled in yellow, errors in "
 "red. In the :guilabel:`Validation Results` window you will see a list of "
@@ -188,15 +195,21 @@ msgstr ""
 "berwarna kuning dan untuk kesalahan berwarna merah. Pada jendela :guilabel:"
 "`Hasil Validasi` Anda akan melihat daftar peringatan dan kesalahan, jika ada."
 
-# d45b38f5d06d4740bdfba3b48ffaf712
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:82
+# 57d36ca014e8461cb5b0559a2d5d1daf
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:87
 msgid ""
-"Errors should almost always be fixed. You can zoom to an error, by right "
-"clicking on it in the window and selecting :guilabel:`Zoom to Problem`. Then "
-"you can fix the mistake manually. Some errors can be automatically fixed, "
-"such as \"Duplicated nodes” errors. You can click on the folder for these "
-"types of errors and click the :guilabel:`Fix` button in the window. Many "
-"errors, however, need to be corrected manually."
+"Errors should almost always be fixed. Zoom to an error by right-clicking on "
+"it in the window and selecting :guilabel:`Zoom to Problem`. Then fix the "
+"mistake manually."
+msgstr ""
+
+# d45b38f5d06d4740bdfba3b48ffaf712
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:92
+#, fuzzy
+msgid ""
+"Some errors can be automatically fixed, such as \"Duplicated nodes” errors. "
+"Click on the folder for these types of errors and click the :guilabel:`Fix` "
+"button in the window. Many errors, however, need to be corrected manually."
 msgstr ""
 "Kesalahan harus seluruhnya diperbaiki. Anda dapat memperbesar di daerah yang "
 "terdapat kesalahan dengan cara klik kanan pada kesalahan pada jendela "
@@ -208,11 +221,12 @@ msgstr ""
 "secara manual."
 
 # 127e63e770af434a947c081101472a9b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:94
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:100
+#, fuzzy
 msgid ""
 "Usually there are many more warnings than errors. By giving you a warning, "
-"JOSM is telling you that it is probably a mistake, but not always. So you "
-"will need to use your judgement to see if it is an error or not."
+"JOSM is telling you that it is probably a mistake, but not always. Use your "
+"judgement to see if it is an important error or not."
 msgstr ""
 "Biasanya terdapat lebih banyak Peringatan daripada Kesalahan.  Dengan "
 "memberikan peringatan, JOSM memberitahukan Anda bahwa hal tersebut "
@@ -221,7 +235,7 @@ msgstr ""
 "atau tidak."
 
 # 4479f4b663b14ae8b7d168f12d0fa73b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:99
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:105
 msgid ""
 "If you select a warning from the list and decide that it is not a problem, "
 "click :guilabel:`Ignore` and it will be removed from the list."
@@ -231,26 +245,171 @@ msgstr ""
 "akan di hapus dari daftar."
 
 # f5ac8c4bcb1643edb765fab505a1928d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:101
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:108
+#, fuzzy
 msgid ""
-"You can re-run the validation tool at any time by clicking :guilabel:"
-"`Validation`"
+"Re-run the validation tool at any time by clicking the :guilabel:"
+"`Validation` button."
 msgstr ""
 "Anda dapat menjalankan ulang tool validasi sewaktu-waktu dengan mengklik :"
 "guilabel:`Validation`"
 
+# fdb5823b807442528c39618f5809ce1d
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:112
+msgid "3. Common validation warnings"
+msgstr ""
+
+# 03d65ac3a0614c1cbe722bff9b583162
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:115
+msgid "Ways that are not closed"
+msgstr ""
+
+# 6999f0a7fed94bfb8a71885438a98582
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:116
+#, fuzzy
+msgid ""
+"This is usually a line that does not form a polygon. Common examples are "
+"buildings where the first node does not meet the last node."
+msgstr ""
+"**Way/Jalan yang tidak tertutup**. Merupakan peringatan dikarenakan jalur "
+"tidak tertutup, biasanya terbentuk dari garis yang tidak membentuk sebuah "
+"poligon. Contoh umumnya adalah gedung dimana titik pertama tidak bertemu "
+"dengan titik akhir."
+
+# ebe1413a11a246188638ec69a2e96d9a
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:122
+#, fuzzy
+msgid ""
+"To fix this, select both nodes and go to :menuselection:`Tools ‣ Merge "
+"Nodes` to connect them."
+msgstr ""
+"Untuk menyelesaikan masalah ini, pilih kedua titik dan pilih :menuselection:"
+"`Tools -> Merge Nodes` untuk menyambung kedua titik tersebut."
+
+# 413e404e653c48a4aa54d927c5fe1878
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:126
+#, fuzzy
+msgid "Crossing buildings (overlapping buildings)"
+msgstr ""
+"**Bangunan yang bertampalan (Overlapping Buildings)**: gedung yang saling "
+"overlay satu sama lain."
+
+# 5d08b6e9b9a54004aefa4b110d2e9f17
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:128
+msgid "This means that buildings are overlapping each other."
+msgstr ""
+
+# ef2fd81a34ec4c48aefdbb9ad06757cf
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:133
+msgid ""
+"To fix this, move the nodes of one of the buildings outside of the other "
+"building. It is possible for two buildings to share nodes, if the buildings "
+"share a common wall. But two buildings cannot overlap with one another."
+msgstr ""
+
+# c06a48ed80e94f069367b96b191fd09c
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:138
+msgid "Untagged nodes or ways"
+msgstr ""
+
+# 5205fdad83f84ea0bf80b3197169b836
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:140
+#, fuzzy
+msgid ""
+"If someone draws a point or a line but forgets to give it any tags, then it "
+"is useless, because it does not mean anything."
+msgstr ""
+"**Node/titik atau way/jalan yang belum memiliki tag** - Jika seseorang "
+"menggambar titik atau garis tetapi lupa untuk memberikan beberapa tag, "
+"kemudian titik atau garis yang digambar menjadi tidak berguna, karena itu "
+"tidak memiliki arti."
+
+# 9824e6f3381f4d3ea7ef14bdf664744e
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:146
+msgid ""
+"To fix this, apply tags to the object to identify it, or delete it if it is "
+"a mistake."
+msgstr ""
+"Untuk menyelesaikan ini, pilih objek yang tidak mempunyai tag dan masukkan "
+"presets yang sesuai, atau hapus itu jika merupakan kesalahan."
+
+# f992dbed3d3f41b59dc6e4f3344eb584
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:150
+msgid "End node near another way"
+msgstr ""
+
+# c95d4c6e4d854cf192e70b56e4b85360
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:152
+#, fuzzy
+msgid ""
+"If a line ends very close to another line but does not connect, this raises "
+"a warning."
+msgstr ""
+"**Ujung *node* terletak dekat dengan garis lain**: Jika sebuah garis "
+"berujung sangat dekat dengan garis lainnya namun tidak terhubung satu sama "
+"lain, maka akan menimbulkan peringatan."
+
+# df71d2b9e8cb4703b449dcb16ad1c639
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:155
+msgid ""
+"Many times this warning is not important, but it helps to find road "
+"intersections that are supposed to connect but do not."
+msgstr ""
+"Seringkali peringatan ini tidak terlalu penting, namun cukup membantu bila "
+"kita ingin mencari persimpangan jalan yang seharusnya terhubung namun tidak "
+"terhubung."
+
+# 9c251399178b4f3f965e3a84688d5e6f
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:162
+msgid "Crossing ways"
+msgstr ""
+
+# 0a9ce849e5ed4829b62c4e75eefc9c41
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:164
+#, fuzzy
+msgid ""
+"Lines that cross other lines without being connected will raise warnings. "
+"Many times this is not a problem, because the crossing ways are intentional "
+"- such as in the case of bridges, or streets and rivers that cross landuse "
+"polygons. However, it is sometimes helpful to find errors."
+msgstr ""
+"**Garis yang bersimpangan/berpotongan**: Merupakan peringatan yang muncul "
+"akibat jalur berpotongan. Sebuah garis yang berpotongan dengan garis lain "
+"tanpa tersambung dapat memunculkan warnings. Hal ini juga bisa saja tidak "
+"menjadi masalah, karena jalur yang berpotongan bisa saja disengaja, seperti "
+"pada kasus jembatan, atau jalan dan sungai yang berpotongan dengan poligon "
+"landuse. Hal ini terkadang membantu, untuk menemukan error."
+
+# e0d936f7df544e068cef045056dc87e0
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:174
+#, fuzzy
+msgid ""
+"OSM depends on people correcting and editing mistakes. Editing and "
+"validating data is important for improving maps. If you do not have time to "
+"get in the field with a GPS or trace imagery, validating objects and "
+"attribute data is a good way to contribute."
+msgstr ""
+"OpenStreetMap bergantung pada orang yang memperbaiki dan mengedit kesalahan. "
+"Editing dan validasi data penting untuk meningkatkan peta. Jika Anda tidak "
+"mendapatkan cukup waktu untuk survei ke lapangan dengan GPS atau mendigitasi "
+"citra, validasi objek dan atribut data merupakan cara terbaik untuk "
+"berkontribusi."
+
 # 8093e061741545aa8d34c5caa6b137ed
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:104
-msgid "**3. Using The Tasking Manager**"
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:181
+#, fuzzy
+msgid "4. Using the tasking manager"
 msgstr "**3.\tMenggunakan Tasking Manager**"
 
 # 4069c27e5e37473d9998a8a8d55005d8
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:106
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:183
+#, fuzzy
 msgid ""
-"HOT Tasking Manager, a tool that mappers can use to sort an area into a "
-"grid, and work together to map an area in an organized way. Aside from being "
-"more organized, the tasking manager is also one way to avoid conflicts, "
-"because it is impossible for more than one person editing the same area."
+"The OSM Tasking Manager is a tool that mappers can use to sort an area into "
+"a grid, and work together to map in an organised way. Apart from being more "
+"organised, the tasking manager is also one way to avoid editing conflicts, "
+"because it helps prevent more than one person from editing the same area at "
+"the same time."
 msgstr ""
 "HOT Tasking Manager, sebuah tool atau media dimana pembuat peta dapat "
 "membagi sebuah daerah menjadi banyak grid, lalu dapat bekerja bersama "
@@ -260,18 +419,19 @@ msgstr ""
 "dari satu orang memetakan satu area yang sama."
 
 # b08f0d50d27e4144bbc04b33c31c86c5
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:112
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:189
+#, fuzzy
 msgid ""
 "One consistent challenge is coordinating field and/or remote workers to map "
-"an area together. To help address this, HOT has developed an OpenStreetMap "
-"Tasking Tool to make it easier for administrators to define the areas of "
-"mapping interest and to delegate workers. The idea behind this tool is that "
-"if there is an area, let’s say a city, that we want to map, and we have some "
-"people mapping on the ground, and some people mapping remotely using "
-"satellite imagery, this tool will allow us to create a grid of the entire "
-"area. Collaborators can select blocks in the grid that they plan to map, and "
-"when they finish, they can mark that area as complete. In this way a team of "
-"many people can coordinate to map the entire grid."
+"an area together. To help address this, HOT has developed the Tasking "
+"Manager to make it easier for administrators to define the areas of mapping "
+"interest and to delegate workers. The idea behind this tool is that if there "
+"is an area, let’s say a city, that we want to map, we can coordinate between "
+"people mapping on the ground and others mapping remotely with satellite "
+"imagery, This tool allows us to create a grid of the entire area. "
+"Collaborators select blocks in the grid that they plan to map, and when they "
+"finish, they mark the area as complete. In this way a team of many people "
+"can coordinate to map the entire grid."
 msgstr ""
 "Satu tantangan utama adalah ketika harus mengkoordinasikan para pembuat peta "
 "dari berbagai area untuk bekerja membuat peta bersama-sama untuk satu "
@@ -290,59 +450,65 @@ msgstr ""
 "menyelesaikan pemetaan pada grid tersebut."
 
 # 22fec1c56ffd404a887f24bdd2254049
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:125
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:202
 msgid "To see how the tasking manager works, let’s take a closer look."
 msgstr ""
 "Untuk melihat bagaimana tasking manager bekerja, marilah kita lihat lebih "
 "dekat."
 
 # 4cd2df9c44444ebba9ba986645765a88
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:127
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:204
+#, fuzzy
 msgid ""
-"Open your Internet browser and go to tasks.hotosm.org. You will see a page "
-"like this:"
+"Open your internet browser and go `here <http://tasks.hotosm.org>`_. You "
+"will see a page like this:"
 msgstr ""
 "Buka lah browser internet Anda dan buka situs tasks.hotosm.org. Anda akan "
 "melihat sebuah halaman seperti ini: "
 
+# 1a7ad4d7c9824b45a1db103c044a9d4b
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:210
+msgid "Click :guilabel:`login to OpenStreetMap`."
+msgstr ""
+
 # 4e0bb779f835491bb75f68a6ed787160
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:133
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:212
+#, fuzzy
 msgid ""
-"Click :guilabel:`Log in using your OpenStreetMap account` Here you are "
-"agreeing to allow this application some access to your OpenStreetMap "
-"account. Click :guilabel:`Save Changes`."
+"Here you must agree to allow this application some access to your OSM "
+"account. To do so, click :guilabel:`Save Changes`."
 msgstr ""
 "Klik :guilabel:`Log in using your OpenStreetMap account`. Dengan melakukan "
 "klik pada tombol tersebut, berarti Anda setuju aplikasi ini mengakses akun "
 "OpenStreetMap Anda. Klik :guilabel:`Save Changes`."
 
 # 58b3c683660143578cc870091d3ba4f4
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:141
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:218
+#, fuzzy
 msgid ""
-"Now you will see the current list of projects. These are different places "
-"that people are coordinating to map."
+"On the left is a list of current mapping tasks. These are different places "
+"in the world that people are coordinating to map."
 msgstr ""
 "Sekarang Anda akan melihat sebuah daftar berisi proyek-proyek yang sedang "
 "ada saat ini. Pada daftar tersebut berisi proyek-proyek dari negara-negara "
 "berbeda dimana mereka melakukan koordinasi untuk melakukan pemetaan. "
 
 # 151b091ac0b946b3aa68f4aef1927fa2
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:147
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:224
 msgid "Click on one of the projects to see more information about it."
 msgstr "Klik pada salah satu proyek untuk melihat informasi lebih lanjut. "
 
 # e085a6e887a741c6993da105f30b2eaa
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:152
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:229
+#, fuzzy
 msgid ""
 "This page shows you everything you need to know about the project. On the "
 "left side of the page is a description of the mapping project and how it is "
-"being organized. You can click on the different tabs to get more "
+"being organised. You can click on the different tabs to get more "
 "information. On the right side is a grid showing the area to be mapped. Red "
 "grid squares have been completed, green squares have been completed and "
 "checked by another person, and the remaining squares still need to be mapped "
-"or are being worked on. By clicking on the “Workflow” tab, you can get "
-"information about how collaborators are meant to help map. By clicking on :"
-"guilabel:`Task` you can take a grid square to work on yourself."
+"or are being worked on."
 msgstr ""
 "Halaman ini menunjukkan semua hal yang Anda perlu ketahui mengenai proyek "
 "tersebut. Pada sebelah sisi kiri halaman adalah sebuah deskripsi dari proyek "
@@ -359,16 +525,38 @@ msgstr ""
 "melakukan klik pada  :guilabel:`Task` Anda dapat mengambil sebuah kotak "
 "untuk Anda kerjakan. "
 
-# 3cc0853e5bbf44079b027e12d7d5a69d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:168
+# 5df6630b0cff4b7183ae335935ceeb39
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:238
 msgid ""
-"Here you see a view of the square that you have offered to map. You can "
-"automatically open the area up for editing with JOSM, Potlatch 2, or create "
-"a Walking Paper. If you plan to edit with JOSM, you need to enable a JOSM "
-"plugin before you will be able to launch the application from the Tasking "
-"Manager. To do this, open JOSM and go the :menuselection:`Preferences` menu. "
-"Click on the  :guilabel:`Remote Settings` tab and check the box next to :"
-"guilabel:`Enable remote control`. Restart JOSM."
+"Click on the :guilabel:`Activity` tab to see activity for this task. The :"
+"guilabel:`Stats` tab shows various users and their contributions."
+msgstr ""
+
+# db7bb4a772a147b5b079a34e016bb45d
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:241
+msgid ""
+"To claim a grid square to work on yourself, click :guilabel:`Start "
+"contributing` on the :guilabel:`Instructions` tab, or simply click an "
+"unclaimed square on the map and then click :guilabel:`Start mapping`."
+msgstr ""
+
+# 5927352a77c743d19354312c8d928cbd
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:248
+msgid ""
+"Next you see a view of the square that you have chosen to map. Click the "
+"button on the left to open the area up for editing with JOSM, iD, Potlatch 2 "
+"or create a Field Paper."
+msgstr ""
+
+# 3cc0853e5bbf44079b027e12d7d5a69d
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:257
+#, fuzzy
+msgid ""
+"If you plan to edit with JOSM, you need to enable the JOSM remote control "
+"before you are able to launch the application from the Tasking Manager. To "
+"do this, open JOSM and go the :menuselection:`Preferences` menu. Click on "
+"the  :guilabel:`Remote Settings` tab and check the box next to :guilabel:"
+"`Enable remote control`. Restart JOSM."
 msgstr ""
 "Disini Anda dapat melihat sebuah kotak yang Anda inginkan untuk dipetakan. "
 "Anda dapat membuka area tersebut secara otomatis untuk diedit menggunakan "
@@ -381,43 +569,49 @@ msgstr ""
 "control`. Restart JOSM. Lalu tutuplah JOSM dan buka kembali.  "
 
 # 49347d750f6d470fb56be598a31e7364
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:181
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:267
+#, fuzzy
 msgid ""
-"Go back to the Tasking Manager and choose JOSM. If you have JOSM open and "
-"you correctly enabled the remote control, the grid area of the map you "
-"selected will automatically be loaded into JOSM."
+"Return to the Tasking Manager and choose :guilabel:`Edit with JOSM`. If you "
+"have JOSM open and you correctly enabled the remote control, the grid area "
+"of the map you selected will automatically be loaded into JOSM."
 msgstr ""
 "Kembali ke Tasking Manager dan pilih JOSM. Jika Anda telah membuka JOSM dan "
 "Anda telah mengaktifkan remote control dengan benar, area pada grid yang "
 "Anda ingin edit akan muncul dengan otomatis pada JOSM. "
 
-# fd29cba65c89409fb29e3454c45aacd5
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:184
+# 3be54789254b48d99c15b38c7e9299b2
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:271
 msgid ""
-"You may now edit the area using the instructions provided in the project "
-"information. When you are finished, you can return to the tasking manager "
-"website and add comments about your changes. Click :guilabel:`Mark task as "
-"done` to let other collaborators know that you have finished this grid "
-"square. If you were unable to complete the task, click :guilabel:`Unlock it` "
-"to make it available again for other mappers."
+"Next you may edit the area using the instructions provided in the project "
+"information. Usually tasks will be to trace certain features using imagery, "
+"such as buildings and roads. Alternatively, tasks might be set to map in "
+"more detail on the ground."
 msgstr ""
-"Sekarang Anda dapat mengedit area tersebut menggunakan instruksi yang "
-"tersedia pada informasi proyek. Ketika Anda selesai melakukan editing dan "
-"menguploadnya, Anda dapat kembali ke tasking manager dan menambahkan "
-"komentar mengenai perubahan yang Anda buat. Klik :guilabel:`Mark task as "
-"done` agar pembuat peta lainnya tahu bahwa Anda telah menyelesaikan kotak "
-"grid tersebut. Jika Anda tidak dapat menyelesaikan kotak tersebut, klik :"
-"guilabel:`Unlock it` sehingga kotak tersebut dapat dikerjakan oleh pembuat "
-"peta lainnya."
+
+# f50028dbb087403499f9bb3bd3ea3ab8
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:276
+msgid ""
+"When you are finished you will upload your edits and then return to the "
+"Tasking Manager to add a comment about your work. If you finish the grid "
+"square, click :guilabel:`Mark task as done`."
+msgstr ""
+
+# 27bb457586864969852156b4ddf356b9
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:280
+msgid ""
+"If you are unable to complete the task, click :guilabel:`Unlock` to make the "
+"task available again for other mappers."
+msgstr ""
 
 # 67d25a00679c4e40b5cc818767221d92
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:196
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:286
+#, fuzzy
 msgid ""
-"If you are wondering what happens when you finish an area, the grid square "
-"will turn red on the map to indicate that is done. Someone else will then "
-"look at your work to make sure it is good, and if they agree that you’ve "
-"completed the square well, the grid square will turn green, meaning it is "
-"complete!"
+"When you finish an area, the grid square will turn yellow on the map to "
+"indicate that it is done. Someone else will then look at your work to make "
+"sure it is good, and if they agree that you’ve completed the square well, "
+"the grid square will turn green, meaning it is complete!"
 msgstr ""
 "Jika Anda bertanya-tanya apa yang terjadi bila Anda telah menyelesaikan "
 "suatu area, grid tersebut akan berubah menjadi warna merah yang menandakan "
@@ -427,12 +621,13 @@ msgstr ""
 "telah benar-benar selesai!"
 
 # 8b438cde23db4116bd3078dba3ab968b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:202
-msgid "**4. Editing Tips**"
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:293
+#, fuzzy
+msgid "5. Editing tips"
 msgstr "**4. Tips Editing**"
 
 # 13f8a928291945858c571b19c0530b23
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:204
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:295
 msgid ""
 "In this section we will go over some common mistakes in JOSM and provide "
 "some editing tips for making your maps great!"
@@ -442,12 +637,13 @@ msgstr ""
 "baik! "
 
 # ce072bc1a46645348016bc2867238c84
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:207
-msgid "**Some Objects Should Not Connect**"
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:299
+#, fuzzy
+msgid "Some objects should not connect"
 msgstr "**Beberapa Objek Sebaiknya Tidak Saling Terhubung**"
 
 # 51a1c0d061fe41ccbebc006aa7c95595
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:209
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:301
 msgid ""
 "When you are creating polygons and lines that are not supposed to be "
 "connected, make sure that they are not merged together by sharing a node. "
@@ -463,12 +659,13 @@ msgstr ""
 "lebih objek yang saling berbagi node yang sama, pilih node dan klik :kbd:`G`."
 
 # 684683d1d8a940128185e79958576ffd
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:222
-msgid "**But, Some Objects Should Connect**"
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:315
+#, fuzzy
+msgid "But, some objects should connect"
 msgstr "**Tetapi, Beberapa Objek Harus Terhubung**"
 
 # 6d7aeb2e30db4d5294a30f3706acb96f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:224
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:317
 msgid ""
 "However, some objects SHOULD connect! Road intersections should always be "
 "snapped together. If two roads do not share a common node, then the computer "
@@ -480,12 +677,13 @@ msgstr ""
 "terhubung satu sama lain."
 
 # 53be2bfad7014d0fa1d78dfa1b0ab5b7
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:232
-msgid "**Overlapping Objects**"
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:326
+#, fuzzy
+msgid "Overlapping objects"
 msgstr "**Objek-Objek yang Saling Overlay**"
 
 # 21016d1ba30749ec8a1033daef232a5c
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:234
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:328
 msgid ""
 "A common error is to have overlapping polygons when the objects they "
 "represent do not overlap in real life. A building cannot overlap another "
@@ -513,7 +711,7 @@ msgstr ""
 "bangunan-bangunan secara menyeluruh berada dalam poligon penggunaan lahan. "
 
 # d15002bab3754a9d9ef3b6123ca51347
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:254
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:348
 msgid ""
 "We all make mistakes, and as you map more you will make less mistakes! Just "
 "remember that even if you upload data that contains mistakes, it is simple "
@@ -526,229 +724,80 @@ msgstr ""
 "kesalahan tersebut dan mengupload kembali perubahannya. Di sinilah hebatnya "
 "OSM, Anda dapat selalu membuatnya lebih baik! "
 
-# 56837a3a9e564d27a97f0d585d7c281b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:259
-msgid "**Tracing Correctly**"
-msgstr "**Mendigitasi dengan Benar**"
-
-# f051bcd927e9468d94e44d078b1221b1
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:261
-msgid ""
-"OSM can do amazing things with identifying where objects end and what labels "
-"these objects should have; however, it needs your help in doing so. For "
-"example, if you create a road that turns into another road without a "
-"distinct node, then JOSM will continue labeling the road as the previous "
-"one. Therefore, it is necessary that you make all of your roads and objects "
-"as clearly and rigid as possible."
-msgstr ""
-"OSM dapat melakukan hal yang luar biasa dengan mengidentifikasi dimana objek "
-"berakhir dan bagaimana tulisan akan muncul pada objek tersebut; "
-"bagaimanapun, OSM membutuhkan bantuan Anda. Sebagai contoh, jika Anda "
-"membuat sebuah jalan yang berbelok ke jalan lain tanpa sebuah node/titik, "
-"maka JOSM akan melanjutkan pemberian nama jalan sebagaimana jalan "
-"sebelumnya. Oleh karena itu, sangat penting untuk membuat jalan dan objek "
-"Anda digambar sejelas mungkin. "
-
-# 53b328bce96d4bb3bf18e69ed02f4d0a
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:271
-msgid ""
-"We will conclude this section with additional tips: Rotate object: If you "
-"hold :kbd:`CTRL + SHIFT` and hold while sliding your mouse, then you can "
-"rotate the selected object."
-msgstr ""
-"Kami akan mengakhiri bagian ini dengan tambahan tips: Memutar objek: Jika "
-"Anda menahan :kbd:`CTRL + SHIFT` dan menahan sambil menggeser mouse Anda, "
-"maka Anda dapat memutar objek yang dipilih."
-
-# 6999f0a7fed94bfb8a71885438a98582
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:278
-msgid ""
-"**Ways that are not closed**: usually a line that does not form a polygon. "
-"Common examples are buildings where the first node does not meet the last "
-"node."
-msgstr ""
-"**Way/Jalan yang tidak tertutup**. Merupakan peringatan dikarenakan jalur "
-"tidak tertutup, biasanya terbentuk dari garis yang tidak membentuk sebuah "
-"poligon. Contoh umumnya adalah gedung dimana titik pertama tidak bertemu "
-"dengan titik akhir."
-
-# ebe1413a11a246188638ec69a2e96d9a
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:284
-msgid ""
-"To fix this, select both nodes and go to :menuselection:`Tools -> Merge "
-"Nodes` to connect them."
-msgstr ""
-"Untuk menyelesaikan masalah ini, pilih kedua titik dan pilih :menuselection:"
-"`Tools -> Merge Nodes` untuk menyambung kedua titik tersebut."
-
-# 413e404e653c48a4aa54d927c5fe1878
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:287
-msgid ""
-"**Crossing Buildings (Overlapping Buildings)**: buildings that overlap each "
-"other."
-msgstr ""
-"**Bangunan yang bertampalan (Overlapping Buildings)**: gedung yang saling "
-"overlay satu sama lain."
-
-# 86365f12a6454eb79f760ddda85b8cb7
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:293
-msgid ""
-"To fix this, move the nodes of one of the buildings outside of the other "
-"building."
-msgstr ""
-"Untuk menyelesaikan masalah ini, gerakkan titik dari salah satu gedung ke "
-"arah luar dari gedung lain."
-
-# 5205fdad83f84ea0bf80b3197169b836
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:296
-msgid ""
-"**Untagged Nodes or Ways**: If someone draws a point or a line but forgets "
-"to give it any tags, then it is useless, because it does not mean anything."
-msgstr ""
-"**Node/titik atau way/jalan yang belum memiliki tag** - Jika seseorang "
-"menggambar titik atau garis tetapi lupa untuk memberikan beberapa tag, "
-"kemudian titik atau garis yang digambar menjadi tidak berguna, karena itu "
-"tidak memiliki arti."
-
-# 9824e6f3381f4d3ea7ef14bdf664744e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:302
-msgid ""
-"To fix this, apply tags to the object to identify it, or delete it if it is "
-"a mistake."
-msgstr ""
-"Untuk menyelesaikan ini, pilih objek yang tidak mempunyai tag dan masukkan "
-"presets yang sesuai, atau hapus itu jika merupakan kesalahan."
-
-# c95d4c6e4d854cf192e70b56e4b85360
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:305
-msgid ""
-"**End node near another way**: If a line ends very close to another line but "
-"does not connect, this raises a warning."
-msgstr ""
-"**Ujung *node* terletak dekat dengan garis lain**: Jika sebuah garis "
-"berujung sangat dekat dengan garis lainnya namun tidak terhubung satu sama "
-"lain, maka akan menimbulkan peringatan."
-
-# df71d2b9e8cb4703b449dcb16ad1c639
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:308
-msgid ""
-"Many times this warning is not important, but it helps to find road "
-"intersections that are supposed to connect but do not."
-msgstr ""
-"Seringkali peringatan ini tidak terlalu penting, namun cukup membantu bila "
-"kita ingin mencari persimpangan jalan yang seharusnya terhubung namun tidak "
-"terhubung."
-
-# 0a9ce849e5ed4829b62c4e75eefc9c41
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:314
-msgid ""
-"**Crossing ways**: Lines that cross other lines without being connected will "
-"raise warnings. Many times this is not a problem, because the crossing ways "
-"are intentional - such as in the case of bridges, or streets and rivers that "
-"cross landuse polygons. It is sometimes helpful, however to find errors."
-msgstr ""
-"**Garis yang bersimpangan/berpotongan**: Merupakan peringatan yang muncul "
-"akibat jalur berpotongan. Sebuah garis yang berpotongan dengan garis lain "
-"tanpa tersambung dapat memunculkan warnings. Hal ini juga bisa saja tidak "
-"menjadi masalah, karena jalur yang berpotongan bisa saja disengaja, seperti "
-"pada kasus jembatan, atau jalan dan sungai yang berpotongan dengan poligon "
-"landuse. Hal ini terkadang membantu, untuk menemukan error."
-
-# e0d936f7df544e068cef045056dc87e0
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:324
-msgid ""
-"OpenStreetMap depends on people correcting and editing mistakes. Editing and "
-"validating data is important for improving maps. If you do not have time to "
-"get in the field with a GPS or trace imagery, validating objects and "
-"attribute data is a good way to contribute."
-msgstr ""
-"OpenStreetMap bergantung pada orang yang memperbaiki dan mengedit kesalahan. "
-"Editing dan validasi data penting untuk meningkatkan peta. Jika Anda tidak "
-"mendapatkan cukup waktu untuk survei ke lapangan dengan GPS atau mendigitasi "
-"citra, validasi objek dan atribut data merupakan cara terbaik untuk "
-"berkontribusi."
-
 # f5e2f3dfb7e34bf8962b5573ecf963a6
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:329
-msgid "**5. Presets Standardization**"
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:355
+#, fuzzy
+msgid "6. Presets standardisation"
 msgstr "**5.\tStandardisasi Preset**"
 
-# bf58afaf8ab84799946830fa9131085b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:331
+# 47bf50c78dcb49ffb275bc5a6c2689f3
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:357
 msgid ""
-"OpenStreetMap allows the users to give as much informations as they can to "
-"their map. These informations can be attached to every objects that they "
-"mapped using presets menu that is available in OSM editor. Many times we "
-"found inconsistency in some objects information. That’s why we should make a "
-"presets standardisation."
+"OSM is used around the world by speakers of many different languages. Any "
+"feature in OSM can have whatever tags users choose. While this provides a "
+"lot of flexibility, it is important that users worldwide agree on the same "
+"tags to identify the same objects no matter what country they are located in."
 msgstr ""
-"OpenStreetMap memperbolehkan seluruh penggunanya untuk memberikan informasi "
-"sebanyak-banyaknya mengenai peta mereka. Informasi ini dapat dicantumkan "
-"pada tiap objek yang dipetakan menggunakan menu presets yang tersedia pada "
-"editor OSM. Kita seringkali menemukan ketidakkonsistenan dalam pemberian "
-"informasi pada berbagai objek. Oleh karena itulah dibuat standardisasi "
-"presets."
 
-# 95fadd640ae34a30a284ad49b251d848
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:338
-msgid "The presets standardization purposes are:"
-msgstr "Standardisasi presets ini dibuat dengan tujuan:"
+# f48b55bc9f4e41e7850c9892b4a3e77c
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:362
+msgid ""
+"For such purposes of standardisation, most tags in OSM are in British "
+"English. An extensive list of standardised OSM tags is available on the OSM "
+"Wiki `Map Features page <http://wiki.openstreetmap.org/wiki/Map_Features>`_."
+msgstr ""
+
+# 6166558fef98494fb0eca4dc27eca4b9
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:366
+msgid ""
+"When users enter tags manually in JOSM or another editor, it is common to "
+"make spelling or other mistakes, particularly for beginners. For this "
+"reason, it is a good idea to use the presets menu, which uses forms that "
+"prevent incorrect tags from being entered."
+msgstr ""
+
+# e69497d7a1c8499b93c6387acc1af32e
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:371
+msgid "Using standardised tags aids in:"
+msgstr ""
 
 # 2431ea390a0f4f01be3a0114dcbe9b7c
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:340
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:373
 msgid "Assuring data consistency and stability"
 msgstr "Menjamin stabilitas konsistensi data"
 
 # 4ad5351da9f94e07848a0e89ebf4190a
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:341
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:374
 msgid "Easier data search and analysis"
 msgstr "Memudahkan pencarian dan pengolahan data"
 
-# f9e971e326dc4c6182282788a29f43de
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:342
-msgid "As a standard in giving information using presets"
-msgstr "Sebagai patokan dalam pemberian informasi melalui preset"
-
-# 9744bf1cc838441a80beb3dafb40406e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:343
-msgid "As a benchmark if we want to make improvements or data validation"
-msgstr "Sebagai acuan apabila ingin melakukan perbaikan atau validasi data"
-
-# 54ccdb4005904c1790cdfcd840f3eefa
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:344
-msgid "Maximizing the use of Internal Presets that are available in JOSM"
-msgstr "Memaksimalkan penggunaan Internal Presets yang sudah ada di JOSM"
-
-# b41c5bf7d5bd4c75a8943ac4486f839f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:345
-msgid "Maximizing data visualisation on OpenStreetMap website"
-msgstr "Memaksimalkan visualisasi data pada situs OpenStreetMap"
-
-# 1ba0ee02d27e499f996225e469a7a1bc
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:347
-msgid ""
-"With this preset standardisation, hopefully all OSM users are willing to use "
-"this preset when they edit their maps. One of the benefit if we use the "
-"internal preset that is available in JOSM is the visualisation will show up "
-"on OpenStreetMap website. You can find the list of these standard presets "
-"**here**"
+# ccbdc7d914134f9c8cae122664ef5148
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:375
+msgid "Setting benchmarks for improvement"
 msgstr ""
-"Dengan adanya standardisasi preset ini, diharapkan seluruh pengguna OSM mau "
-"menggunakan standar ini ketika melakukan editing. Salah satu keuntungan "
-"menggunakan internal preset yang sudah tersedia pada JOSM adalah nantinya "
-"visualisasi objek tersebut akan muncul pada situs OpenStreetMap. Anda dapat "
-"menemukan daftar standar presets **disini**"
+
+# 0db444b975514a7fa00910c0ad78661f
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:376
+msgid "Data validation"
+msgstr ""
+
+# 2c365e1c4223416185224967b56b11ab
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:377
+msgid "Map rendering on OSM website"
+msgstr ""
 
 # 3539ba1806ee49b483a92c5d23511d0b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:353
-msgid "**6. KeepRight**"
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:381
+#, fuzzy
+msgid "7. KeepRight"
 msgstr "**6.\tKeepRight**"
 
 # 295fe666d892412ab7b91cb0c53ff6ff
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:355
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:383
+#, fuzzy
 msgid ""
-"The Keep Right website is another useful validation tool for OpenStreetMap. "
-"Open your web browser and head to http://keepright.at."
+"The KeepRight website is another useful validation tool for OSM. Open your "
+"web browser and head to http://keepright.at."
 msgstr ""
 "KeepRight merupakan situs yang melakukan pengecekan/pemeriksaan kesalahan-"
 "kesalahan penggambaran pada peta OpenStreetMap. Kesalahan-kesalahan ini "
@@ -757,158 +806,289 @@ msgstr ""
 "Bekerja dengan “ www.keepright.ipax.at ”"
 
 # 04f901feae424dac8c13e2ee8c8c910c
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:357
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:386
+#, fuzzy
 msgid ""
-"You can switch the site into Indonesian by choosing :guilabel:`id` from the "
-"dropdown box in the in the upper right."
+"If needed, switch the site into Indonesian by choosing :guilabel:`id` from "
+"the drop-down box in the in the upper right."
 msgstr ""
 "Jika Anda baru pertama kali membuka situs ini, maka situs ini akan berbahasa "
 "Indonesia. Jika Anda ingin agar situs ini berbahasa Indonesia, klik pada "
 "pojok kanan atas, dan pilihlah :guilabel:`id`."
 
 # 697987fd6dfb4723b19613e519e52c53
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:363
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:392
+#, fuzzy
 msgid ""
-"Click on “Pengecekan data untuk Asia” to check the OSM data in Asia. This "
-"will open up a slippy map with errors displayed on it. You can navigate to "
-"your area of interest by using the zoom and pan functions."
+"Click :guilabel:`Data Checks for Asia` to check OSM data in Asia. This will "
+"open up a slippy map with errors displayed on it."
 msgstr ""
 "Klik pada \"Pengecekan data untuk Asia\" untuk pengecekan data Asia. Ini "
 "akan terbuka pada tampilan peta dengan gambaran kesalahan diatasnya. Anda "
 "dapat menavigasikan ke area yang Anda inginkan dengan menggunakan perbesaran "
 "dan fungsi tanda panah. "
 
+# c8f56670637b4ed6bf58bfc2f89749bc
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:395
+msgid "Navigate to your area of interest by using the zoom and pan functions."
+msgstr ""
+
 # d7827af5331643bfa814f0b0bd2efabd
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:371
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:401
+#, fuzzy
 msgid ""
-"The types of errors are listed on the left of the map. You can get more "
-"details about each error by clicking on the icons which hover above the map."
+"The types of errors are listed to the left of the map. Get more details "
+"about each error by clicking on the icons which hover above the map."
 msgstr ""
 "Jenis dari kesalahan terdiri dari daftar yang terletak disebelah kiri dari "
 "peta. Anda akan mendapatkan lebih detail setiap kesalahan dengan klik pada "
 "ikon yang terdapat di peta."
 
-# 856233279c034d3f8f07645d7443fead
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:379
+# b2a5bbb2e68c487aa048263c942ffc38
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:408
 msgid ""
-"After you find territory and find out his mistake. Certainly next step is to "
-"fix the error. First step, make sure you have selected an error/lightning "
-"(by left click on the lightning image). After that, determine where you "
-"would fix the error, whether on the \"JOSM\" or \"Potlatch\"."
+"When you see an error in your area of interest, the next step is to fix it. "
+"Click on the links to one of the editors (JOSM, Potlatch, or iD) to open "
+"this data in the editor. Note that to edit in JOSM you must have the JOSM "
+"Remote Control Enabled (as described in the :ref:`Tasking Manager section "
+"<quality-assurance-step-14>` above)."
 msgstr ""
-"Setelah Anda menemukan wilayah Anda dan mengetahui kesalahannya, tentu "
-"langkah selanjutnya adalah memperbaiki kesalahan tersebut. Pertama-tama, "
-"pastikan Anda telah memilih satu kesalahan/petir (dengan cara klik kiri pada "
-"gambar petir tersebut). Setelah itu, tentukan di mana Anda akan memperbaiki "
-"kesalahan tersebut, apakah pada “JOSM” atau “Potlatch”. "
+
+# b47f4ed7fee6469d9ed2346d54d01ed6
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:415
+msgid ""
+"We recommend that the editing is done in JOSM, because its editing features "
+"are more complete. Note that JOSM must be open (with remote control enabled) "
+"in order to connect with the KeepRight website."
+msgstr ""
+
+# 261073f944c04edc8c214fd1930fdec2
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:423
+msgid ""
+"Use JOSM (or another editor) to fix the errors that you find on the "
+"KeepRight website. After fixing them, return to the site and select :"
+"guilabel:`ignore temporarily`. Add a comment and click :guilabel:`save`."
+msgstr ""
+
+# ae6750b9690a4e57b24424a2690f1cc0
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:428
+msgid ":ref:`Go to next module --> <dealing-with-conflicts>`"
+msgstr ""
+
+# fd29cba65c89409fb29e3454c45aacd5
+#~ msgid ""
+#~ "You may now edit the area using the instructions provided in the project "
+#~ "information. When you are finished, you can return to the tasking manager "
+#~ "website and add comments about your changes. Click :guilabel:`Mark task "
+#~ "as done` to let other collaborators know that you have finished this grid "
+#~ "square. If you were unable to complete the task, click :guilabel:`Unlock "
+#~ "it` to make it available again for other mappers."
+#~ msgstr ""
+#~ "Sekarang Anda dapat mengedit area tersebut menggunakan instruksi yang "
+#~ "tersedia pada informasi proyek. Ketika Anda selesai melakukan editing dan "
+#~ "menguploadnya, Anda dapat kembali ke tasking manager dan menambahkan "
+#~ "komentar mengenai perubahan yang Anda buat. Klik :guilabel:`Mark task as "
+#~ "done` agar pembuat peta lainnya tahu bahwa Anda telah menyelesaikan kotak "
+#~ "grid tersebut. Jika Anda tidak dapat menyelesaikan kotak tersebut, klik :"
+#~ "guilabel:`Unlock it` sehingga kotak tersebut dapat dikerjakan oleh "
+#~ "pembuat peta lainnya."
+
+# 56837a3a9e564d27a97f0d585d7c281b
+#~ msgid "**Tracing Correctly**"
+#~ msgstr "**Mendigitasi dengan Benar**"
+
+# f051bcd927e9468d94e44d078b1221b1
+#~ msgid ""
+#~ "OSM can do amazing things with identifying where objects end and what "
+#~ "labels these objects should have; however, it needs your help in doing "
+#~ "so. For example, if you create a road that turns into another road "
+#~ "without a distinct node, then JOSM will continue labeling the road as the "
+#~ "previous one. Therefore, it is necessary that you make all of your roads "
+#~ "and objects as clearly and rigid as possible."
+#~ msgstr ""
+#~ "OSM dapat melakukan hal yang luar biasa dengan mengidentifikasi dimana "
+#~ "objek berakhir dan bagaimana tulisan akan muncul pada objek tersebut; "
+#~ "bagaimanapun, OSM membutuhkan bantuan Anda. Sebagai contoh, jika Anda "
+#~ "membuat sebuah jalan yang berbelok ke jalan lain tanpa sebuah node/titik, "
+#~ "maka JOSM akan melanjutkan pemberian nama jalan sebagaimana jalan "
+#~ "sebelumnya. Oleh karena itu, sangat penting untuk membuat jalan dan objek "
+#~ "Anda digambar sejelas mungkin. "
+
+# 53b328bce96d4bb3bf18e69ed02f4d0a
+#~ msgid ""
+#~ "We will conclude this section with additional tips: Rotate object: If you "
+#~ "hold :kbd:`CTRL + SHIFT` and hold while sliding your mouse, then you can "
+#~ "rotate the selected object."
+#~ msgstr ""
+#~ "Kami akan mengakhiri bagian ini dengan tambahan tips: Memutar objek: Jika "
+#~ "Anda menahan :kbd:`CTRL + SHIFT` dan menahan sambil menggeser mouse Anda, "
+#~ "maka Anda dapat memutar objek yang dipilih."
+
+# 86365f12a6454eb79f760ddda85b8cb7
+#~ msgid ""
+#~ "To fix this, move the nodes of one of the buildings outside of the other "
+#~ "building."
+#~ msgstr ""
+#~ "Untuk menyelesaikan masalah ini, gerakkan titik dari salah satu gedung ke "
+#~ "arah luar dari gedung lain."
+
+# bf58afaf8ab84799946830fa9131085b
+#~ msgid ""
+#~ "OpenStreetMap allows the users to give as much informations as they can "
+#~ "to their map. These informations can be attached to every objects that "
+#~ "they mapped using presets menu that is available in OSM editor. Many "
+#~ "times we found inconsistency in some objects information. That’s why we "
+#~ "should make a presets standardisation."
+#~ msgstr ""
+#~ "OpenStreetMap memperbolehkan seluruh penggunanya untuk memberikan "
+#~ "informasi sebanyak-banyaknya mengenai peta mereka. Informasi ini dapat "
+#~ "dicantumkan pada tiap objek yang dipetakan menggunakan menu presets yang "
+#~ "tersedia pada editor OSM. Kita seringkali menemukan ketidakkonsistenan "
+#~ "dalam pemberian informasi pada berbagai objek. Oleh karena itulah dibuat "
+#~ "standardisasi presets."
+
+# 95fadd640ae34a30a284ad49b251d848
+#~ msgid "The presets standardization purposes are:"
+#~ msgstr "Standardisasi presets ini dibuat dengan tujuan:"
+
+# f9e971e326dc4c6182282788a29f43de
+#~ msgid "As a standard in giving information using presets"
+#~ msgstr "Sebagai patokan dalam pemberian informasi melalui preset"
+
+# 9744bf1cc838441a80beb3dafb40406e
+#~ msgid "As a benchmark if we want to make improvements or data validation"
+#~ msgstr "Sebagai acuan apabila ingin melakukan perbaikan atau validasi data"
+
+# 54ccdb4005904c1790cdfcd840f3eefa
+#~ msgid "Maximizing the use of Internal Presets that are available in JOSM"
+#~ msgstr "Memaksimalkan penggunaan Internal Presets yang sudah ada di JOSM"
+
+# b41c5bf7d5bd4c75a8943ac4486f839f
+#~ msgid "Maximizing data visualisation on OpenStreetMap website"
+#~ msgstr "Memaksimalkan visualisasi data pada situs OpenStreetMap"
+
+# 1ba0ee02d27e499f996225e469a7a1bc
+#~ msgid ""
+#~ "With this preset standardisation, hopefully all OSM users are willing to "
+#~ "use this preset when they edit their maps. One of the benefit if we use "
+#~ "the internal preset that is available in JOSM is the visualisation will "
+#~ "show up on OpenStreetMap website. You can find the list of these standard "
+#~ "presets **here**"
+#~ msgstr ""
+#~ "Dengan adanya standardisasi preset ini, diharapkan seluruh pengguna OSM "
+#~ "mau menggunakan standar ini ketika melakukan editing. Salah satu "
+#~ "keuntungan menggunakan internal preset yang sudah tersedia pada JOSM "
+#~ "adalah nantinya visualisasi objek tersebut akan muncul pada situs "
+#~ "OpenStreetMap. Anda dapat menemukan daftar standar presets **disini**"
+
+# 856233279c034d3f8f07645d7443fead
+#~ msgid ""
+#~ "After you find territory and find out his mistake. Certainly next step is "
+#~ "to fix the error. First step, make sure you have selected an error/"
+#~ "lightning (by left click on the lightning image). After that, determine "
+#~ "where you would fix the error, whether on the \"JOSM\" or \"Potlatch\"."
+#~ msgstr ""
+#~ "Setelah Anda menemukan wilayah Anda dan mengetahui kesalahannya, tentu "
+#~ "langkah selanjutnya adalah memperbaiki kesalahan tersebut. Pertama-tama, "
+#~ "pastikan Anda telah memilih satu kesalahan/petir (dengan cara klik kiri "
+#~ "pada gambar petir tersebut). Setelah itu, tentukan di mana Anda akan "
+#~ "memperbaiki kesalahan tersebut, apakah pada “JOSM” atau “Potlatch”. "
 
 # ef7ffa64bf4b49b39928bfc086b37e78
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:386
-msgid ""
-"we recommend that the editing in JOSM, because its editing features are more "
-"complete."
-msgstr ""
-"kami menyarankan agar editing dilakukan pada JOSM, karena fitur editing nya "
-"lebih lengkap."
+#~ msgid ""
+#~ "we recommend that the editing in JOSM, because its editing features are "
+#~ "more complete."
+#~ msgstr ""
+#~ "kami menyarankan agar editing dilakukan pada JOSM, karena fitur editing "
+#~ "nya lebih lengkap."
 
 # 9ff2302292f24a11ac1c229ed0b1faf0
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:389
-msgid ""
-"In order to fix one of the errors, you can click on the links to edit in "
-"either JOSM or Potlatch.  Note that to edit in JOSM you must have the JOSM "
-"Remote Control enabled."
-msgstr ""
-"Untuk memperbaiki salah satu dari kesalahan tersebut, Anda dapat klik pada "
-"link untuk mengedit baik pada JOSM atau Potlatch. Harap dicatat bahwa "
-"pastikan JOSM Anda telah terbuka dan aktifkan Remote Control JOSM."
+#~ msgid ""
+#~ "In order to fix one of the errors, you can click on the links to edit in "
+#~ "either JOSM or Potlatch.  Note that to edit in JOSM you must have the "
+#~ "JOSM Remote Control enabled."
+#~ msgstr ""
+#~ "Untuk memperbaiki salah satu dari kesalahan tersebut, Anda dapat klik "
+#~ "pada link untuk mengedit baik pada JOSM atau Potlatch. Harap dicatat "
+#~ "bahwa pastikan JOSM Anda telah terbuka dan aktifkan Remote Control JOSM."
 
 # 44cbd36cec9b44da958812a9657d1f0e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:396
-msgid "Setting “Remote Control” JOSM"
-msgstr "Pengaturan \"Remote Control\" JOSM"
+#~ msgid "Setting “Remote Control” JOSM"
+#~ msgstr "Pengaturan \"Remote Control\" JOSM"
 
 # a77ed88a2b6c4160a7ecc89e26bceffc
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:398
-msgid ""
-"Before you start working with \"Keepright\", make sure you have enabled "
-"\"Remote Control\" in JOSM. To check this, open your JOSM, then select the "
-"menu :menuselection:`Edit > Preferences`. Once the window :guilabel:"
-"`Preferences` appears, select the tab :guilabel:`Remote Control`"
-msgstr ""
-"Sebelum Anda mulai bekerja dengan \"Keepright\", pastikan Anda mengaktifkan "
-"\"Remote Control\" pada JOSM. Untuk memeriksa ini, buka JOSM Anda, kemudian "
-"pilih menu :menuselection:`Edit > Preferences. Setelah jendela :guilabel:"
-"`Preferences` muncul, pilih tab :guilabel:`Remote Control`"
+#~ msgid ""
+#~ "Before you start working with \"Keepright\", make sure you have enabled "
+#~ "\"Remote Control\" in JOSM. To check this, open your JOSM, then select "
+#~ "the menu :menuselection:`Edit > Preferences`. Once the window :guilabel:"
+#~ "`Preferences` appears, select the tab :guilabel:`Remote Control`"
+#~ msgstr ""
+#~ "Sebelum Anda mulai bekerja dengan \"Keepright\", pastikan Anda "
+#~ "mengaktifkan \"Remote Control\" pada JOSM. Untuk memeriksa ini, buka JOSM "
+#~ "Anda, kemudian pilih menu :menuselection:`Edit > Preferences. Setelah "
+#~ "jendela :guilabel:`Preferences` muncul, pilih tab :guilabel:`Remote "
+#~ "Control`"
 
 # ef473e6887d6480bbc9514d17f98ff9f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:410
-msgid "Next, you will see the window like this"
-msgstr "Selanjutnya, Anda akan melihat jendela seperti ini"
+#~ msgid "Next, you will see the window like this"
+#~ msgstr "Selanjutnya, Anda akan melihat jendela seperti ini"
 
 # 217332057d994656b37b4f9ebab51288
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:415
-msgid "*image (a)*"
-msgstr "*gambar (a)*"
+#~ msgid "*image (a)*"
+#~ msgstr "*gambar (a)*"
 
 # 21a684d35df245d3b8b2fd4e9f9181ef
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:420
-msgid "*image (b)*"
-msgstr "*gambar (b)*"
+#~ msgid "*image (b)*"
+#~ msgstr "*gambar (b)*"
 
 # 5b8cb2f710cf4cc0a4edab4c082aea4d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:422
-msgid ""
-"Check box in the left of :guilabel:`Enable Remote Control` is checked/"
-"enabled. In Image (a) the :guilabel:`Enable Remote Control` is not "
-"activated. If not, please checklist the box, such as Image (b). Click :"
-"guilabel:`OK` and Restart JOSM. Furthermore, you can work with \"www."
-"keepright.ipax.at\"."
-msgstr ""
-"Kotak centang di sebelah kiri :guilabel:`Enable Remote Control` telah "
-"dicentang/diaktifkan. Pada gambar (a) :guilabel:`Enable Remote Control` "
-"belum diaktifkan. Jika belum, silakan centang kotak, seperti gambar (b). "
-"Klik :guilabel:`OK` dan Restart JOSM. Selanjutnya Anda dapat bekerja dengan "
-"\"www.keepright.ipax.at\"."
+#~ msgid ""
+#~ "Check box in the left of :guilabel:`Enable Remote Control` is checked/"
+#~ "enabled. In Image (a) the :guilabel:`Enable Remote Control` is not "
+#~ "activated. If not, please checklist the box, such as Image (b). Click :"
+#~ "guilabel:`OK` and Restart JOSM. Furthermore, you can work with \"www."
+#~ "keepright.ipax.at\"."
+#~ msgstr ""
+#~ "Kotak centang di sebelah kiri :guilabel:`Enable Remote Control` telah "
+#~ "dicentang/diaktifkan. Pada gambar (a) :guilabel:`Enable Remote Control` "
+#~ "belum diaktifkan. Jika belum, silakan centang kotak, seperti gambar (b). "
+#~ "Klik :guilabel:`OK` dan Restart JOSM. Selanjutnya Anda dapat bekerja "
+#~ "dengan \"www.keepright.ipax.at\"."
 
 # 84ffdb873d6e4cf99f7b73c95558eb49
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:427
-msgid ""
-"Now, open JOSM you will see that JOSM now been content with data that we "
-"have chosen earlier on the site \"KeepRright\"."
-msgstr ""
-"Sekarang, buka JOSM dan Anda akan melihat bahwa pada JOSM telah ada tampilan "
-"data yang kita pilih sebelumnya di situs \"KeepRight\"."
+#~ msgid ""
+#~ "Now, open JOSM you will see that JOSM now been content with data that we "
+#~ "have chosen earlier on the site \"KeepRright\"."
+#~ msgstr ""
+#~ "Sekarang, buka JOSM dan Anda akan melihat bahwa pada JOSM telah ada "
+#~ "tampilan data yang kita pilih sebelumnya di situs \"KeepRight\"."
 
 # d52e522d2e6744b281746387dc127fdc
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:432
-msgid "Make sure JOSM is open"
-msgstr "Pastikan JOSM terbuka"
+#~ msgid "Make sure JOSM is open"
+#~ msgstr "Pastikan JOSM terbuka"
 
 # b455fe98079244dab9fb71fe433547de
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:437
-msgid "Now OSM data from “KeepRight” delivered to your JOSM"
-msgstr "Sekarang data OSM dari \"KeepRight\" telah dikirim ke JOSM Anda"
+#~ msgid "Now OSM data from “KeepRight” delivered to your JOSM"
+#~ msgstr "Sekarang data OSM dari \"KeepRight\" telah dikirim ke JOSM Anda"
 
 # 3b00f871870f4121992de46f37be5918
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:439
-msgid ""
-"Immediately fix to existing errors. How do I fix and what tools are needed "
-"to fix it??? It all depends on the type of error. If you forget, go back "
-"material on \"Advanced Editing\" and \"Quality Assurance\""
-msgstr ""
-"Segera perbaiki kesalahan yang ada. Bagaimana cara memperbaiki dan alat apa "
-"yang dibutuhkan untuk memperbaikinya??? Itu semua tergantung pada jenis "
-"kesalahan. Jika Anda lupa, kembali ke materi \"Advanced Editing\" dan "
-"\"Quality Assurance\""
+#~ msgid ""
+#~ "Immediately fix to existing errors. How do I fix and what tools are "
+#~ "needed to fix it??? It all depends on the type of error. If you forget, "
+#~ "go back material on \"Advanced Editing\" and \"Quality Assurance\""
+#~ msgstr ""
+#~ "Segera perbaiki kesalahan yang ada. Bagaimana cara memperbaiki dan alat "
+#~ "apa yang dibutuhkan untuk memperbaikinya??? Itu semua tergantung pada "
+#~ "jenis kesalahan. Jika Anda lupa, kembali ke materi \"Advanced Editing\" "
+#~ "dan \"Quality Assurance\""
 
 # 23e80251b592441a9d9f435aed3c0b44
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:443
-msgid ""
-"After fixed the error, return to website \"www.keepright.ipax.at\" to "
-"confirm error has been fixed or not. If you've fixed the error, select (by "
-"left- clicking) on the top radio button option."
-msgstr ""
-"Setelah kesalahan diperbaiki, kembali ke situs “www.keepright.ipax.at” untuk "
-"mengkonfirmasi apakah kesalahan telah diperbaiki atau belum. Jika kesalahan "
-"telah Anda perbaiki, pilih (dengan cara klik kiri) pada pilihan radio button "
-"paling atas."
+#~ msgid ""
+#~ "After fixed the error, return to website \"www.keepright.ipax.at\" to "
+#~ "confirm error has been fixed or not. If you've fixed the error, select "
+#~ "(by left- clicking) on the top radio button option."
+#~ msgstr ""
+#~ "Setelah kesalahan diperbaiki, kembali ke situs “www.keepright.ipax.at” "
+#~ "untuk mengkonfirmasi apakah kesalahan telah diperbaiki atau belum. Jika "
+#~ "kesalahan telah Anda perbaiki, pilih (dengan cara klik kiri) pada pilihan "
+#~ "radio button paling atas."

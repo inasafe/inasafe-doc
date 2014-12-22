@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-10 16:15+0100\n"
+"POT-Creation-Date: 2014-12-22 12:28\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,26 +27,26 @@ msgstr ""
 msgid "Purpose"
 msgstr ""
 
-# fbf4db5376ed43dda371e05e196b6f5b
+# 237d9062eaea473da4aee5f815eb5391
 #: ../../source/user-docs/application-help/data_driven_age.rst:12
 msgid ""
-"Data driven age is used carried out during aggregation to determine how many "
-"people are affected by a hazard according to their age distribution (youth, "
-"adult, elderly). This feature is similar to the gender post-processor.  With "
-"data driven age, a custom age distribution ratio is used. This is specified "
-"either by in the data attributes of the aggregation polygons, or by setting "
-"a global ratio for the whole aggregator vector layer using the keywords "
-"editor or keywords wizard."
+"Data driven age processing is carried out during aggregation to determine "
+"how many people are affected by a hazard according to their age distribution "
+"(youth, adult, elderly). This feature is similar to the gender post-"
+"processor.  With data driven age, a custom age distribution ratio is used. "
+"This is specified either in the data attributes of the aggregation polygons, "
+"or by setting a global ratio for the whole aggregator vector layer using the "
+"keywords editor or keywords wizard."
 msgstr ""
 
-# 7b72a3bd2806414e930cd8661bfb9e1a
+# e2510608b38d45c3827156b90eabec07
 #: ../../source/user-docs/application-help/data_driven_age.rst:20
 msgid ""
-"This feature is used to specify and to give more information by giving "
-"number of affected youth, adult and elderly in an area for example, the "
-"boundaries of a village. To identify more where area should be priorities "
-"during rescue operations and to give more attention on the vulnerable "
-"population ( e.g. elderly) and their needs."
+"This feature is used to give more specific information by giving the number "
+"of affected youth, adult and elderly in an area such as within the "
+"boundaries of a village. This can help better identify what areas should be "
+"priorities during rescue operations and to give more attention to the "
+"vulnerable population (e.g. elderly) and their needs."
 msgstr ""
 
 # a64d80344e9744eca3ef035e82994eac
@@ -54,9 +54,9 @@ msgstr ""
 msgid "Guidelines"
 msgstr ""
 
-# 2b2c843c4d844d3c983b51b1e611d3ab
+# 66a7aff31a644ecb89224e6f0ca9110a
 #: ../../source/user-docs/application-help/data_driven_age.rst:30
-msgid "Data Needed"
+msgid "Data needed"
 msgstr ""
 
 # 77fe3110226f47fba9b45bee984637e1
@@ -157,42 +157,39 @@ msgstr ""
 msgid "elderly/elder"
 msgstr ""
 
-# 9ee37cef784740be9330c03bd581b8cb
+# 2191334430684b9baa438955c0b9c73f
 #: ../../source/user-docs/application-help/data_driven_age.rst:60
-msgid "The keywords editor graphical user interface for Age Postprocessing."
-msgstr ""
-
-# af1e0e8804e8429983a01fafa7a92ac0
-#: ../../source/user-docs/application-help/data_driven_age.rst:62
-msgid "There are two ways to specifying age postprocessing options:"
-msgstr ""
-
-# 924791d32b54463998095f87258b195b
-#: ../../source/user-docs/application-help/data_driven_age.rst:64
 msgid ""
-"1. Ratio Attributes: In this mode, data used for postprocessing is from the "
-"attributes of the aggregation layer itself. Consider the example below where "
-"each aggregation area has an attribute indicating the rations of age or "
+"Age postprocessing options can be specified either using ratio attributes or "
+"ratio defaults."
+msgstr ""
+
+# 43739be3f4694eaf89441a9db8e8b135
+#: ../../source/user-docs/application-help/data_driven_age.rst:63
+msgid ""
+"1. **Ratio Attributes:** In this mode, data used for postprocessing is from "
+"the attributes of the aggregation layer itself. Consider the example below "
+"where each aggregation area has an attribute indicating the ratios of age or "
 "gender."
 msgstr ""
 
-# ca2904d926674203933500726f054266
-#: ../../source/user-docs/application-help/data_driven_age.rst:73
+# 88ff3d12434e4730a0e43e5c0c42ed63
+#: ../../source/user-docs/application-help/data_driven_age.rst:72
 msgid ""
 "In the keywords editor you can refer to these attributes and the age and "
-"gender rations will be extrapolated based on the defined values."
+"gender ratios will be extrapolated based on the defined values."
 msgstr ""
 
-# 845f9fe1a7f04be9b3a29d68bf06bdd5
-#: ../../source/user-docs/application-help/data_driven_age.rst:81
+# 5989e3cf71564c8094dc91d793857ee9
+#: ../../source/user-docs/application-help/data_driven_age.rst:80
 msgid ""
-"2. Ratio Defaults: In this mode, the default values will be used. in this "
-"case you may not know per-area what the age and gender breakdowns are and "
-"wish to rather apply the rations globally (to all aggregation areas)."
+"2. **Ratio Defaults:** In this mode, the default values will be used. In "
+"this case you may not know per-area what the age and gender breakdowns are "
+"but rather apply the ratios globally (to all aggregation areas)."
 msgstr ""
 
 # 07a63df1f23b418e88a0716f4fb122d5
-#: ../../source/user-docs/application-help/data_driven_age.rst:91
+#: ../../source/user-docs/application-help/data_driven_age.rst:90
 msgid ""
 "A similar user interface is provided in the :ref:`keywords wizard "
 "<keywords_wizard>` user interface."

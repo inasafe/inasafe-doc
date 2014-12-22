@@ -20,7 +20,7 @@ Die or be displaced according Pager model
 To assess the impact of earthquake on population based on Population Vulnerability Model Pager
 
 **Actions**: 
-Provide details about the population who will be die or displaced
+Provide details about the population will be die or displaced
 
 **Citations**: 
  * Jaiswal, K. S., Wald, D. J., and Hearne, M. (2009a).    Estimating casualties for large worldwide earthquakes using    an empirical approach. U.S. Geological Survey Open-File    Report 2009-1136.
@@ -36,7 +36,7 @@ No documentation found
 Doc String
 ----------
 
-Population Vulnerability Model Pager
+Population Vulnerability Model Pager.
 
     Loss ratio(MMI) = standard normal distrib( 1 / BETA * ln(MMI/THETA)).
     Reference:

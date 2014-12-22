@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-10 09:48+0200\n"
+"POT-Creation-Date: 2014-12-22 12:27\n"
 "PO-Revision-Date: 2014-09-30 07:50+0000\n"
 "Last-Translator: Emir Hartato <emir.hartato@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
@@ -24,54 +24,56 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 # f3f28bb253d44bf6b97116b5f57f526d
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:8
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:10
 msgid "Module 4: Creating JOSM File Presets"
 msgstr "Modul 4: Membuat File Preset Pada JOSM"
 
 # 30d49b7ca5e140b4a04f6f6788a40da6
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:10
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:12
 msgid "**Learning Objectives**"
 msgstr "**Tujuan Pembelajaran**"
 
 # 0e36f3821bf148758ad71eedda672abe
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:12
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:14
 msgid "Understand tags"
 msgstr "Memahami tags"
 
 # a81cfa04fd834df39fb675d2e0bc8ebe
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:13
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:15
 msgid "Understand XML"
 msgstr "Memahami XML"
 
 # ca26abd1224e4cda9bcec11719e063bc
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:14
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:16
 msgid "Understand keys and values"
 msgstr "Memahami *keys* dan *values*"
 
 # d24dbfd241ec446f865220916418361f
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:15
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:17
 msgid "Make presets"
 msgstr "Membuat preset"
 
 # 8e3e58afec754e1ebfa8f51c8580fe7c
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:16
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:18
 msgid "Put preset files into JOSM"
 msgstr "Memasukkan file preset ke dalam JOSM"
 
 # 1f7ad05307b24e69b45d87d2edbe6a5a
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:17
-msgid "Apply new presets on an object"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:19
+#, fuzzy
+msgid "Apply new presets to an object"
 msgstr "Menerapkan preset baru pada sebuah objek"
 
 # 8d632b39af774f74b59caeb15b8434a8
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:19
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:21
+#, fuzzy
 msgid ""
 "By now you probably have a good understanding of how objects are drawn in "
-"JOSM, and how you add information to these objects to describe what they "
-"are. You add attributes to a point, line, or shape by attaching tags to it. "
-"By using the JOSM presets menu, you can easily attach the correct tags to an "
+"JOSM, and how to add information to these objects to describe what they are. "
+"You add attributes to a point, line or shape by attaching tags to it. By "
+"using the JOSM presets menu, you can easily attach the correct tags to an "
 "object by finding the type of object you want to create through a menu, and "
-"then filling in information in a form. In this chapter we will review tags "
+"then filling in information in a form. In this module we will review tags "
 "and presets once more, and then learn how we can create our own presets "
 "menus to use in JOSM."
 msgstr ""
@@ -86,19 +88,21 @@ msgstr ""
 "dan mempelajari bagaimana kita membuat menu preset kita sendiri pada JOSM."
 
 # c36b633732674df481220b5bfec2635d
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:28
-msgid "**1. Tags and Presets**"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:31
+#, fuzzy
+msgid "1. Tags and presets"
 msgstr "**1. Tag dan Preset**"
 
 # c6b799fefa054b719acf4b1ff85722d2
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:30
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:33
+#, fuzzy
 msgid ""
 "Remember that after you draw an object on the map in JOSM, you need to "
-"attach tags in order to describe what it is, its name, and any any other "
+"attach tags in order to describe what it is, its name and any other "
 "attributes. For example when you want to create a clothing shop with the "
 "name “Some Clothing Shop”, you need two tags - one to describe the point as "
 "a clothing shop, and one to hold the name. In JOSM, the tags are shown in "
-"the *Properties* window when an object is selected."
+"the Properties panel when an object is selected."
 msgstr ""
 "Anda tentunya ingat bahwa setiap kali Anda selesai menggambar sebuah objek "
 "ke dalam peta di JOSM, Anda perlu menambahkan atau melakukan tag kepada "
@@ -111,11 +115,12 @@ msgstr ""
 "dimaksud dipilih."
 
 # c6fa297121d1450091c06e3d85046da4
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:41
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:44
+#, fuzzy
 msgid ""
 "Tags consist of two parts, the **key** and the **value**. The key typically "
 "defines the type of information you are attaching, and the value defines the "
-"specific object. Here, we have two tags, and hence two pairs of keys and "
+"specific object. Here we have two tags, and hence two pairs of keys and "
 "values."
 msgstr ""
 "Tag terdiri dari dua bagian, yaitu **key** dan **value**.  Key biasanya "
@@ -124,22 +129,22 @@ msgstr ""
 "terdiri dari dua pasang taitu keys dan value. "
 
 # 72f39ad6c51549dbadd5dc778aa90327
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:46
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:49
 msgid "**KEY = VALUE**"
 msgstr "**KEY = VALUE**"
 
 # d1ab8fef779f45819e3890c38e4c5087
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:48
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:51
 msgid "**name = Some Clothing Shop**"
 msgstr "**name = Some Clothing Shop**"
 
 # 7a2b40c941f24212a4801294a86c0bf4
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:50
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:53
 msgid "**shop = clothes**"
 msgstr "**shop = clothes**"
 
 # 40195d32833d40cd9c3a9f00b2514c34
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:52
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:55
 msgid ""
 "When we create a point with these tags, JOSM knows to display the icon like "
 "this:"
@@ -148,16 +153,17 @@ msgstr ""
 "dengan menampilkan ikon atau simbol seperti ini: "
 
 # 9d23c0a7ceb64bc5b15ceec3a3303d64
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:58
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:61
+#, fuzzy
 msgid ""
-"And when we look at this on the `openstreetmap.org <http://openstreetmap."
-"org>`_ website, the object looks like this:"
+"And when we look at this on the `OpenStreetMap <http://openstreetmap.org>`_ "
+"website, the object looks like this:"
 msgstr ""
 "Dan ketika kita melihat ini pada website `openstreetmap.org <http://"
 "openstreetmap.org>`_ , objek tersebut akan tampak seperti ini: "
 
 # 31ec628d0f65463eb5b6eaafced95f4e
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:64
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:67
 msgid ""
 "The reason this works is because we’ve applied the appropriate **tags**."
 msgstr ""
@@ -165,14 +171,15 @@ msgstr ""
 "sesuai."
 
 # 8bad85748a9f49cbb18fc55f05e5e68c
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:66
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:69
+#, fuzzy
 msgid ""
-"Because OpenStreetMap is so open, anybody can add any tags they want to "
-"anything. But what happens when mappers in England disagree with mappers in "
-"Japan about the best way to tag something? For example, it is important that "
-"all schools have the same tag describing it as a school. If some people tag "
-"schools as **amenity=school** but others tag them as **education=school**, "
-"it is a problem. Hence, people must agree on how to tag places."
+"Because OSM is so open, anybody can add any tags they want to anything. But "
+"what happens when mappers in England disagree with mappers in Japan about "
+"the best way to tag something? For example, it is important that all schools "
+"have the same tag describing it as a school. If some people tag schools as "
+"**amenity=school** but others tag them as **education=school**, it is a "
+"problem. Hence, people must agree on how to tag places."
 msgstr ""
 "Karena OpenStreetMap sangat terbuka bagi umum, siapapun dapan menambahkan "
 "tag yang mereka inginkan pada objek manapun. Namun bagaimana jika ada orang "
@@ -185,31 +192,33 @@ msgstr ""
 "harus setuju mengenai bagaimana memberikan tag pada sebuah tempat."
 
 # f87bd08bcdfa48988da3f75df7cd7e85
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:76
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:79
+#, fuzzy
 msgid ""
-"OpenStreetMap has been around for many years now, so there is an accepted "
-"standard for how to identify most types of locations, and those are listed "
-"on the Map Features page on the OSM Wiki."
+"OSM has been around for many years now, so there is an accepted standard for "
+"how to identify most types of locations, and those are listed on the Map "
+"Features page on the OSM Wiki."
 msgstr ""
 "OpenStreetMap telah digunakan selama beberapa tahun terakhir, maka tentunya "
 "sudah ada standar mengenai bagaimana mengidentifikasi sebagian besar jenis "
 "lokasi, dan yang telah terdaftar dalam halaman Map Features pada OSM Wiki. "
 
 # 90897e1cef0f4290b76027d6be75d55a
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:80
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:83
 msgid "http://wiki.openstreetmap.org/wiki/Map_Features"
 msgstr "http://wiki.openstreetmap.org/wiki/Map_Features"
 
 # 4604b17915cf4220a2eb1eaca352576d
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:82
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:85
+#, fuzzy
 msgid ""
 "This web page has grown longer and longer over the years as people have "
 "sought to map more and more things and have needed more tags to do so. It is "
 "impossible to remember all of these tags, and quite a hassle to look them up "
 "every time you need them. Hence, JOSM has a Presets menu which makes it much "
 "easier to apply the correct tags to an object. With the Presets menu, we can "
-"easily find the entry for school, enter information into a form, and not "
-"have to worry about whether the correct tag is **amenity=school** or "
+"easily find the entry for school, enter information into a form and not have "
+"to worry about whether the correct tag is **amenity=school** or "
 "**education=school** or something else entirely."
 msgstr ""
 "Halaman website ini telah berkembang selama beberapa tahun ini seiring "
@@ -225,7 +234,7 @@ msgstr ""
 "lainnya lagi."
 
 # 41bcc4090b2744af862d99c3ff197705
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:96
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:99
 msgid ""
 "Notice that when you add attributes using the presets menu, the correct tags "
 "are automatically added in the Properties menu on the right."
@@ -235,7 +244,7 @@ msgstr ""
 "sebelah kanan layar. "
 
 # e7d2e7cc49144c5ab7dff962130949bc
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:99
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:102
 msgid ""
 "JOSM comes with most of the presets that you will need already loaded, but "
 "sometimes you may want to add your own presets to create tags for the "
@@ -248,22 +257,24 @@ msgstr ""
 "dijelaskan mengenai bagaimana membuat sebuah menu Preset sendiri. "
 
 # 3dbb68eb47fd4ecd9820b21aedbdb09e
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:104
-msgid "**2. Introduction to XML**"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:108
+#, fuzzy
+msgid "2. Introduction to XML"
 msgstr "**2.  Pengenalan XML** "
 
 # 527b962fc7b34eabbdf515d72defbc0c
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:106
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:110
+#, fuzzy
 msgid ""
 "In order to create our own Presets menu, we first need to understand a "
-"language called XML. XML, which stands for *“Extensible Mark-up Language”*, "
-"is a language similar to HTML. The key difference is that XML is designed to "
-"carry **data**, not display it. Many applications on the internet use XML to "
-"transmit data, including OpenStreetMap. XML uses **elements**, and each "
-"element can contain child elements inside it. For example, let’s imagine "
-"that we want to create an XML file that contains data about a restaurant "
-"menu. We must create a **root element** to contain all the data about our "
-"menu. Our root element will have an opening and a closing tag, like this: ::"
+"language called XML. XML, which stands for *Extensible Mark-up Language*, is "
+"a language similar to HTML. The key difference is that XML is designed to "
+"carry data, not display it. Many applications on the internet use XML to "
+"transmit data, including OSM. XML uses **elements**, and each element can "
+"contain child elements inside it. For example, let’s imagine that we want to "
+"create an XML file that contains data about a restaurant menu. We must "
+"create a **root element** to contain all the data about our menu. Our root "
+"element will have an opening and a closing tag, like this: ::"
 msgstr ""
 "Dalam rangka membuat menu Preset Anda sendiri, pertama-tama kita perlu "
 "mengerti bahasa XML. XML, yang merupakan kependekan dari *“Extensible Mark-"
@@ -278,7 +289,7 @@ msgstr ""
 "penutup seperti ini: ::  "
 
 # 66fdbdffbd0d40ff9abf903dcc41e3f1
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:125
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:129
 msgid ""
 "Information is contained inside an element, and within each element there "
 "can be more elements. ::"
@@ -287,9 +298,10 @@ msgstr ""
 "terdapat elemen-elemen lainnya. ::"
 
 # 26f3278d1b3d4cd7babfdb9cda0770a6
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:140
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:144
+#, fuzzy
 msgid ""
-"In this example we have placed two **<item>** elements within our <menu> "
+"In this example we have placed two **<item>** elements within our **<menu>** "
 "element to describe two different items that are contained in the menu. Each "
 "item contains two more elements in them, **<cost>** and **<description>**. "
 "Notice also how we have written name=”Hamburger” inside the opening "
@@ -304,12 +316,13 @@ msgstr ""
 "atribut, dan memberi informasi mengenai elemen."
 
 # 97eb982f4c824827926267213500e987
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:147
-msgid "**XML Terminology**"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:152
+#, fuzzy
+msgid "XML Terminology"
 msgstr "**Terminologi XML**"
 
 # 90a236d5b0fc4b9fb2d25ecd94d914dc
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:149
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:154
 msgid ""
 "**root element:**  the outermost element of an XML document, which describes "
 "what is contained"
@@ -318,7 +331,7 @@ msgstr ""
 "mendeskripsikan apa yang ada didalamnya"
 
 # 53eaeb3704194f03993f9b230cd52d2a
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:151
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:156
 msgid ""
 "**element:**  any XML object, contained by opening and closing tags, such as "
 "**<item>...data...</item>**"
@@ -327,17 +340,18 @@ msgstr ""
 "seperti **<item>...data...</item>**"
 
 # 6e60d58bc27c4dd18339bbdbe42990f7
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:153
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:158
+#, fuzzy
 msgid ""
-"**tag:**  something contained in brackets, such as **<item>**.  **<item>** "
-"is the opening tag of an element, and **</item>** is the closing tag."
+"**tag:**  something contained in brackets, such as **<item>**. **<item>** is "
+"the opening tag of an element, and **</item>** is the closing tag."
 msgstr ""
 "tag\t:  sesuatu yang terdapat di dalam tanda < >, seperti **<item>**. **< "
 "item>** adalah tag pembuka pada sebuah elemen, dan **</item>** adalah tag "
 "penutup."
 
 # 84c0c879316847faa75886229bdf8241
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:155
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:160
 msgid ""
 "**attribute:**  a piece of information contained inside a tag, such as "
 "**name=“Hamburger”**"
@@ -346,7 +360,7 @@ msgstr ""
 "**name=“Hamburger”**"
 
 # bae368c5be0a4074a7a9f1d57d66a299
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:158
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:163
 msgid ""
 "Using XML to hold and transmit data is great because it is easy to "
 "understand for computers. To provide one more example, this is what the XML "
@@ -358,20 +372,21 @@ msgstr ""
 "XML untuk titik yang telah kita buat sebelumnya di JOSM:"
 
 # 03dc4852bced4834bf2b3b0e33e4dffc
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:171
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:176
+#, fuzzy
 msgid ""
-"This XML has a root element **<osm>** which indicates that OpenStreetMap "
-"data is contained inside. Then it has one **<node>** element which is the "
-"OpenStreetMap way of describing a **point**. The node has numerous "
-"attributes, including a unique id number, the coordinates of the point, the "
-"user who created the point, and some additional information which we will "
-"not discuss right now. Between the opening **<node>** tag and the closing "
-"**</node>** tag there are two more elements of type **<tag>**. Each "
-"**<tag>** has an attribute k and an attribute v. These are the keys and "
-"values that we added in JOSM. Notice that the **<tag>** elements don’t have "
-"a closing **</tag>**.  This is because they don’t have any other elements "
-"contained within them, but instead have a forward slash indicating that it "
-"does not require a closing tag.  **<tag ...attributes />**"
+"This XML has a root element **<osm>** which indicates that OSM data is "
+"contained inside. Then it has one **<node>** element which is the OSM way of "
+"describing a **point**. The node has numerous attributes, including a unique "
+"id number, the coordinates of the point, the user who created the point, and "
+"some additional information which we will not discuss right now. Between the "
+"opening **<node>** tag and the closing **</node>** tag there are two more "
+"elements of type **<tag>**. Each **<tag>** has an attribute k and an "
+"attribute v. These are the keys and values that we added in JOSM. Notice "
+"that the **<tag>** elements don’t have a closing **</tag>**. This is because "
+"they don’t have any other elements contained within them, but instead have a "
+"forward slash indicating that it does not require a closing tag. **<tag ..."
+"attributes />**"
 msgstr ""
 "XML ini memiliki elemen utama **<osm>** yang menunjukkan bahwa data "
 "OpenStreetMap terkandung di dalamnya. Lalu XML ini juga memiliki suatu "
@@ -389,12 +404,13 @@ msgstr ""
 "**<tag...attributes/>**"
 
 # 7793a59a87234c29927607e1abac9e09
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:187
-msgid "**3. JOSM Presets Files**"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:193
+#, fuzzy
+msgid "3. JOSM presets files"
 msgstr "**3.  File Preset JOSM**"
 
 # 9df577b9650e4c53929eec9a6cfe0bf3
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:189
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:195
 msgid ""
 "As you’ve already discovered, JOSM comes pre-loaded with a presets menu that "
 "includes most common types of geographic options. But sometimes you want to "
@@ -412,67 +428,74 @@ msgstr ""
 "JOSM."
 
 # 51c09957c45d4ef89c4e33372d47d17f
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:197
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:203
+#, fuzzy
 msgid ""
 "Open JOSM and open the Preferences menu by going to :menuselection:`Edit ‣ "
-"Preferences`"
+"Preferences`."
 msgstr ""
 "Buka JOSM dan buka menu preferensi dengan cara klik  :menuselection:`Edit ‣ "
 "Preferensi`."
 
 # 6637db2be5174de18103d72f13acdf99
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:199
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:206
 msgid "Click on the third icon from the top which looks like this:"
 msgstr "Klik pada ikon ketiga dari atas yang tampilannya seperti ini:"
 
 # 9c7f1949094b460284b820a1e2888819
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:204
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:211
 msgid "Click on the third tab labelled :guilabel:`Tagging Presets`."
 msgstr "Klik pada tab ketiga yang bertuliskan :guilabel:`Tagging Presets`."
 
 # d2509d6fceb34b0cb787f05e6866ff8d
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:205
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:213
+#, fuzzy
 msgid ""
-"Select *\"Buildings by Kate Chapman”* and click on the right arrow button to "
-"add it to Active presets."
+"Select :guilabel:`Buildings by Kate Chapman` and click on the right arrow "
+"button to add it to Active presets."
 msgstr ""
 "Pilih *“Buildings Indonesia by Kate Chapman”* dan klik pada anak panah kanan "
 "untuk menambahkannya pada Aktif Preset."
 
 # 7ac28b9b58044e8b8099dc6b4291cd6f
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:211
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:219
 msgid "Click :guilabel:`OK`."
 msgstr "Klik :guilabel:`OK`."
 
 # dfb3cb7e69214ff2a23bbd1615d69a8c
 # ea825fa409e94c74a1f904b89830553f
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:212
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:475
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:221
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:498
 msgid "Restart JOSM."
 msgstr "Restart JOSM."
 
 # 1b21fe72bcbe48dbb70f79921d4afe71
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:213
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:223
 msgid "Create a new layer by going to :menuselection:`File ‣ New Layer`."
 msgstr "Buat Layer baru dengan memilih :menuselection:`Berkas ‣ Layer Baru`."
 
 # 87bb7d341c4f46a2b45ad42054f9586c
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:214
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:225
 msgid "Create a point and make sure it is selected."
 msgstr "Buat suatu titik dan pastikan titik tersebut terpilih"
 
-# 5689f06d5f174efe9b0402664ff62724
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:215
+# cfd030de945b4dc0949bae3a9d9a9a08
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:227
+#, fuzzy
 msgid ""
 "Go to the Presets menu. You should now see the presets that you added at the "
-"bottom. Click on *“Building”* to see the the building presets form."
+"bottom."
 msgstr ""
-"Masuk ke Menu Presets. Anda akan melihat menu yang telah anda tambahkan pada "
-"bagian bawah. Klik pada *“Buildings”* untuk melihat bentuk dari menu preset "
-"building."
+"Pilih menu Presets. Anda sudah dapat melihat menu yang baru saja Anda buat!"
+
+# df731dff5c2e4f1c9fe4e4829524cb14
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:233
+msgid ""
+"Click on :menuselection:`Building` to see the the building presets form."
+msgstr ""
 
 # a4c482ac661845ebb50b0560f4a1ef3c
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:225
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:238
 msgid ""
 "When we added these new presets through the preferences menu, what we were "
 "doing is adding an XML file that describes how the new menu should behave. "
@@ -486,12 +509,13 @@ msgstr ""
 "JOSM."
 
 # ba597bdbbac04c1e9b24b3d610f09e89
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:230
-msgid "**4. A Sample Presets File**"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:244
+#, fuzzy
+msgid "4. A sample presets file"
 msgstr "**4.  Sebuah Contoh File Preset**"
 
 # b432f16b15a542ca865f534295cb515a
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:232
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:246
 msgid ""
 "To understand how a presets file is written, let’s first look at the XML for "
 "one of the pre-loaded presets in JOSM. When you go to the presets menu and "
@@ -504,12 +528,12 @@ msgstr ""
 "anda akan melihat form isian seperti berikut:"
 
 # ff7242bdfd5a49b095cf84db30f0dfd4
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:241
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:255
 msgid "The XML for this form looks like this: ::"
 msgstr "XML untuk form isian tersebut berbentuk seperti ini: ::"
 
 # 64f102b84f7f4ae184ae9b98827d6f74
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:255
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:269
 msgid ""
 "This may look complex, but it is not as difficult as it may seem. Let’s walk "
 "through it line by line."
@@ -518,7 +542,7 @@ msgstr ""
 "Mari kita telusuri baris demi baris."
 
 # 1422767bf43e45248d8d1917da14d38e
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:258
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:272
 msgid ""
 "The first line is the opening tag of our root element **<item>**. There are "
 "several attributes describing the element."
@@ -527,44 +551,46 @@ msgstr ""
 "beberapa atribut yang mendeskripsikan elemen tersebut."
 
 # ba29240af5784be79fa814d9f3c51206
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:262
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:276
 msgid "name=\"Place of Worship\""
 msgstr "name=\"Place of Worship\""
 
 # a10231a9e68d4504a52500ed6454094d
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:262
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:276
 msgid "The name of what you are creating."
 msgstr "Nama dari benda yang Anda buat."
 
 # 46c5314de1074e6da8915d7db163203c
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:264
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:278
 msgid "icon=\"presets/church.*\""
 msgstr "icon=\"presets/church.*\""
 
 # f41a579c038c4b0c914767fc83f413d3
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:264
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:278
+#, fuzzy
 msgid ""
-"The icon of the object. \\*s are the most effective in OSM since they are "
-"compressed low-color graphics with transparent backgrounds."
+"The icon of the object. PNGs are the most effective in OSM since they are "
+"compressed low-colour graphics with transparent backgrounds."
 msgstr ""
 "Ikon dari objek tersebut. \\*s File PNG merupakan file yang paling efektif "
 "dalam OSM karena file tersebut dikompres menjadi grafik berwarna rendah "
 "dengan latar tembus pandang.  "
 
 # fee32197e0ea4550abde7940f0bfc50f
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:267
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:281
 msgid "type=\"node,closedway,relation\""
 msgstr "type=\"node,closedway,relation\""
 
 # 591e33574eea47be9baf4f053dd13797
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:267
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:281
+#, fuzzy
 msgid ""
-"The types of object that this preset can be applied to.  Node means it can "
-"be applied on a point, way means it can be applied to a line, closedway "
-"means it can be applied to a shape, and relation means it can be applied to "
-"a relation, which is a type of OSM object we have not discussed.  Notice "
-"that way is not an option here, because a place of worship cannot be a line "
-"- it must be a point or a shape."
+"The types of object that this preset can be applied to. Node means it can be "
+"applied on a point, way means it can be applied to a line, closedway means "
+"it can be applied to a shape, and relation means it can be applied to a "
+"relation, which is a type of OSM object we have not discussed. Notice that "
+"way is not an option here, because a place of worship cannot be a line - it "
+"must be a point or a shape."
 msgstr ""
 "Tipe dari objek yang dapat diberikan oleh menu preset ini. Node artinya "
 "objek ini dapat dinyatakan sebagai titik, way artinya dapat dinyatakan "
@@ -576,16 +602,17 @@ msgstr ""
 "bentukan."
 
 # efa8087d216a44ed95a79a9bc5384b5e
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:275
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:289
+#, fuzzy
 msgid ""
-"The second line provides a link to the OpenStreetMap wiki page for this type "
-"of location."
+"The second line provides a link to the OSM wiki page for this type of "
+"location."
 msgstr ""
 "Baris kedua menyediakan link ke halaman web OpenStreetMap wiki untuk tipe "
 "lokasi seperti ini."
 
 # 9174c5dd505e424c897384d807bd65dc
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:278
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:292
 msgid ""
 "**<link href=\"http://wiki.openstreetmap.org/wiki/Tag:"
 "amenity=place_of_worship\" />**"
@@ -594,7 +621,7 @@ msgstr ""
 "amenity=place_of_worship\" />**"
 
 # 54517a94a1b34d90babd8dd63533770a
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:280
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:294
 msgid ""
 "The third line has the tag <label> and describes what text should be shown "
 "at the top of the form."
@@ -603,33 +630,29 @@ msgstr ""
 "ditampilkan pada bagian atas dari form isian."
 
 # 1805ef2b1b644e8ca7eb41fb25332798
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:283
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:297
 msgid "**<label text=\"Edit Place of Worship\" />**"
 msgstr "**<label text=\"Edit Tempat Beribadah\" />**"
 
 # 5372d9d13bcf4bd9be817637717dc650
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:285
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:299
+#, fuzzy
 msgid ""
 "The fourth line describes a tag that will automatically be applied to the "
 "object when the preset is selected. In this case, we want the object to have "
-"the tag"
+"the tag **amenity=place_of_worship**."
 msgstr ""
 "Baris keempat mendeskripsikan suatu tag yang akan secara otomatis "
 "diberlakukan pada objek ketika menu preset dipilih. Dalam kasus ini, kita "
 "ingin objek tersebut memiliki tag"
 
-# 9989a180df114be493b356bcde960294
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:289
-msgid "**amenity=place_of_worship**."
-msgstr "**amenity=place_of_worship**."
-
 # becdf8fdabc7454ab95aa381d6f0133e
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:291
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:304
 msgid "**<key key=\"amenity\" value=\"place_of_worship\" />**"
 msgstr "**<key key=\"amenity\" value=\"place_of_worship\" />**"
 
 # ddafa5be658542f09436ef0475b6f1c1
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:293
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:306
 msgid ""
 "The fifth line describes the first thing that will be shown on our form, and "
 "how to create a tag when it is filled in. The tag is **<text>** which "
@@ -651,16 +674,17 @@ msgstr ""
 "tidak ada tag yang harus dibuat jika kotak teks tidak diisi."
 
 # b0b189c24889427e801719f422e72d74
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:305
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:318
 msgid ""
 "**<text key=\"name\" text=\"Name\" default=\"\" delete_if_empty=\"true\" />**"
 msgstr ""
 "**<text key=\"name\" text=\"Name\" default=\"\" delete_if_empty=\"true\" />**"
 
 # 30988a285fd44e9caa388c5c7f9692f7
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:307
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:320
+#, fuzzy
 msgid ""
-"The lines after this are similar, but instead of text boxes, dropdown boxes "
+"The lines after this are similar, but instead of text boxes, drop-down boxes "
 "are created where the user can select from different options. The tag used "
 "for this is **<combo>**"
 msgstr ""
@@ -669,17 +693,18 @@ msgstr ""
 "yang digunakan untuk ini adalah **<combo>**"
 
 # f702f8b1d870404f9837b486e8182e66
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:311
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:324
 msgid "The final line of the XML is the closing tag **</item>**"
 msgstr "Baris terakhir dari XML ini adalah tag penutup **</item>**"
 
 # b55758a7c2964538b31da8ca69ec65c2
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:313
-msgid "**5. Creating Your Own Presets File**"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:327
+#, fuzzy
+msgid "5. Creating your own presets file"
 msgstr "**5. Membuat File Preset Anda Sendiri**"
 
 # 920fe6a09ef142e88569b084140d8f3b
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:315
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:329
 msgid ""
 "Now follow along as we create our own presets file. We will create an "
 "example presets menu which will allow us to tag buildings or points "
@@ -692,27 +717,27 @@ msgstr ""
 "dimiliki. Untuk itu, mari kita menciptakan beberapa tag baru: "
 
 # ad9c7867f50f424da3c96ab8cfaba3db
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:321
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:335
 msgid "Key"
 msgstr "Kunci"
 
 # 6ff645aa28ab49c1a82da8b10b7ab14a
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:321
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:335
 msgid "Possible Value"
 msgstr "Nilai yang memungkinkan"
 
 # 4e5d535fa1874fe3affec13ca431456e
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:323
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:337
 msgid "utility:water"
 msgstr "utility:water"
 
 # 3ed140f9c3754b60b3675eef650f8d8c
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:323
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:337
 msgid "well, municipal, yes, no"
 msgstr "well, municipal, yes, no"
 
 # 84a6ec1bb2744f01a72c2e60d7b12c35
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:323
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:337
 msgid ""
 "Does the household have access to water? well indicates it has access to "
 "well water. municipal indicates it has pipes running to it. If we want to be "
@@ -727,38 +752,39 @@ msgstr ""
 "terhadap air."
 
 # 037dc034bfcf42a0a1c5431efdb30e26
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:330
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:344
 msgid "utility:electricity"
 msgstr "utility:electricity"
 
 # 001daf9c710a43cba16836627fece4c5
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:330
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:344
 msgid "yes, no"
 msgstr "yes, no"
 
 # ce32c800e84942fbbabada055d1a5c9f
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:330
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:344
 msgid "Does the household have electrical access?"
 msgstr "Apakah rumah tangga tersebut memiliki akses terhadap listrik? "
 
 # d98a8756178e45d589c734c1766ee60e
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:332
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:346
 msgid "utility:phone"
 msgstr "utility:phone"
 
 # d2adf549cdfc4dbbb4dc7548222b1134
 # 14e58685c27b46979369c1594871bef0
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:332
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:338
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:346
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:352
 msgid "landline, mobile, yes, no"
 msgstr "landline, mobile, yes, no"
 
 # 4fbfa95669e841c88e6633421a62d3c8
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:332
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:346
+#, fuzzy
 msgid ""
 "Does the household have phone access? landline indicates that there is a "
-"hard phone line in the house.  mobile indicates that the household has a "
-"mobile phone.  If we want to be less descriptive, we can use yes or no"
+"hard phone line in the house. mobile indicates that the household has a "
+"mobile phone. If we want to be less descriptive, we can use yes or no"
 msgstr ""
 "Apakah rumah tangga tersebut memiliki akses komunikasi berupa telpon? "
 "Landline mengindikasikan bahwa ada jaringan telepon yang yang masuk ke "
@@ -767,12 +793,12 @@ msgstr ""
 "bisa menggunakan yes atau no saja. "
 
 # 5512db48ad11479aa85c98f669902368
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:338
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:352
 msgid "utility:internet"
 msgstr "utility:internet"
 
 # a87f46f35316480f895eb78ade1171db
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:338
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:352
 msgid ""
 "Same values as for phone, this will indicate if the household has internet "
 "access"
@@ -781,7 +807,7 @@ msgstr ""
 "tangga tersebut memiliki akses internet. "
 
 # ce421540d3454af097a35118077c82b8
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:342
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:356
 msgid ""
 "When the preset we create is selected, we will also automatically add the "
 "tag **building=yes**, and we will create a tag with the key name that the "
@@ -793,7 +819,7 @@ msgstr ""
 "gambar di bawah. "
 
 # 2f5341cf18ab422ea54493d5c0d402e5
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:346
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:360
 msgid ""
 "Now look at the possible tags we have described in the table above. What is "
 "the best way to represent each of these on the form? For name, we want to "
@@ -806,14 +832,15 @@ msgstr ""
 "dengan nama apapun yang kita inginkan untuk tag ini. "
 
 # dc93791cf43d447f99d09156327dc426
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:351
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:365
+#, fuzzy
 msgid ""
 "For **utility:water**, **utility:phone**, and **utility:internet**, there "
 "are four possible values that the user can select from on our form, so the "
-"best way to add this is with a combo box - that is, a dropdown menu where "
+"best way to add this is with a combo box - that is, a drop-down menu where "
 "the user can select one of the options. The tag **utility:electrical** only "
 "has two possible values, yes or no, so the best way to show this on our form "
-"is with a checkbox, although we could use a dropdown box if we wanted as "
+"is with a checkbox, although we could use a drop-down box if we wanted as "
 "well. When we are finished our form should look like this:"
 msgstr ""
 "Untuk **utility:water**, **utility:phone**, dan **utility:internet**, "
@@ -828,7 +855,7 @@ msgstr ""
 "seperti ini: "
 
 # 4fa1c72b474043e786c2c3504438ae41
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:363
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:377
 msgid ""
 "Open a text editor and follow along as we create the XML for this preset. A "
 "simple and common editor to use on Windows is called Notepad. DO NOT use a "
@@ -840,7 +867,7 @@ msgstr ""
 "seperti Microsoft Word."
 
 # 9153d7fd636d4992a2c1e5b611300ba7
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:370
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:384
 msgid ""
 "First, we need to create a root element in our XML so that JOSM knows it is "
 "a presets file."
@@ -849,7 +876,7 @@ msgstr ""
 "XML kita sehingga JOSM mengenali nya sebagai sebuah file preset."
 
 # f1a0769f8ea6410bba1a20682095f699
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:376
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:390
 msgid ""
 "Next let’s create an element called <group>. This is not actually necessary "
 "because we are only creating one preset, but it will demonstrate how we can "
@@ -865,7 +892,7 @@ msgstr ""
 "elemen Anda. "
 
 # 5c7d49fffd4449738678334ea836c9f2
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:386
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:400
 msgid ""
 "Now we can create an item on our menu. We want to create an <item> element "
 "inside of the group element. Add the following text:"
@@ -874,20 +901,11 @@ msgstr ""
 "sebuah elemen <item> di dalam group elemen tersebut. Tambahkan text seperti "
 "berikut: "
 
-# c12f99f2abc04eda9854d1a905651bf6
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:390
-msgid "**<item name=\"Household\">**"
-msgstr "**<item name=\"Rumah Tangga\">**"
-
-# 319de3eb86884543acb6cb87b1080c53
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:392
-msgid "**</item>**"
-msgstr "**</item>**"
-
 # eebec90952a54d748a93b4cdd54a475a
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:394
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:410
+#, fuzzy
 msgid ""
-"Inside the **<item>** element we will add the text box, combo boxes, and "
+"Inside the **<item>** element we will add the text box, combo boxes and "
 "check box that we want on our form. Add the following inside your **<item>** "
 "element:"
 msgstr ""
@@ -896,14 +914,15 @@ msgstr ""
 "elemen **<item>** Anda:"
 
 # 88a28916cb364e0480e63ba71b9c76f3
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:410
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:425
 msgid "When you are finished your file will look like this:"
 msgstr "Ketika Anda selesai, file Anda akan terlihat seperti ini: "
 
 # ea98c94e202c40d0853f86af7793bc14
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:414
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:429
+#, fuzzy
 msgid ""
-"Much of this is similar to what you saw previously. Let’s analyze it. Inside "
+"Much of this is similar to what you saw previously. Let’s analyse it. Inside "
 "the **<item>** element we have created six more elements:"
 msgstr ""
 "Banyak dari hal-hal berikut ini yang telah Anda lihat sebelumnya. Mari kita "
@@ -911,36 +930,37 @@ msgstr ""
 "baru: "
 
 # 92219281e48e402685f524b524b5e7ad
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:418
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:433
 msgid "<key>"
 msgstr "<key>"
 
 # e134c029476c4592ba249ed37ac447b4
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:419
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:434
 msgid "<text>"
 msgstr "<text>"
 
 # ee5ad857972749b48544e326038107dc
 # 0c7e4e872aa44d9ca4592bc84dcdcc6a
 # 8de5c1c21d6048e4b4f6ce9711ac7744
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:420
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:422
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:423
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:435
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:437
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:438
 msgid "<combo>"
 msgstr "<combo>"
 
 # a282fc4e52e2489fa6cec4fbbebbba4c
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:421
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:436
 msgid "<check>"
 msgstr "<check>"
 
 # d2f1502eb78b4c8b8b924890f4c71e29
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:425
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:440
+#, fuzzy
 msgid ""
 "Can you guess what each of these elements do? They create different items on "
 "our presets form in JOSM. The first line, **<key key=\"building\" value=\"yes"
 "\"/>**, does not display anything on our form, but tells JOSM to "
-"automatically apply the tag **building=yes** to our object when this preset "
+"automatically apply the tag **building=yes** to an object when this preset "
 "is selected."
 msgstr ""
 "Bisakah Anda menyebutkan apa yang dapat dilakukan setiap elemen tersebut? "
@@ -950,7 +970,7 @@ msgstr ""
 "**building=yes** pada objek ketika preset ini dipilih. "
 
 # 471ca60669e84e84851a0e2f8be0742a
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:431
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:446
 msgid ""
 "The second line, **<text key=\"name\" text=\"Name\" default="
 "\"\"delete_if_empty=\"true\" />**, creates a text field with the key name, "
@@ -962,17 +982,17 @@ msgstr ""
 "sebelumnya."
 
 # 8212a6c625554de5ba799c052e5ecaa4
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:435
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:450
+#, fuzzy
 msgid ""
-"We have three **<combo>** elements and each elements has several attributes. "
+"We have three **<combo>** elements and each element has several attributes. "
 "key indicates what key should be created for the tag. Text indicates what "
 "text should be displayed on our form. Values are the possible values that "
-"the user can select in the dropdown box. And we’ve added something new - the "
-"attribute **display_values**, which let’s us show different text in the "
-"dropdown boxes than the values that will be created. This is useful if we "
-"want the form to be more descriptive about the the options a user can "
-"select, or if we want the display values to be in a different language from "
-"English."
+"the user can select in the drop-down box. And we’ve added something new - "
+"the attribute **display_values**, which let’s us show different text in the "
+"drop-down boxes than the values that will be created. This is useful if we "
+"want the form to be more descriptive about the options a user can select, or "
+"if we want the display values to be in a different language from English."
 msgstr ""
 "Kita memiliki tiga elemen **<combo>** dan tiap elemen memiliki beberapa "
 "atribut. key mengindikasikan bahwa key seharusnya dibuat untuk tag. text "
@@ -986,12 +1006,13 @@ msgstr ""
 "Bahasa Inggris. "
 
 # d9cac1cc2e874361a33123eb2da72e11
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:446
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:461
+#, fuzzy
 msgid ""
 "Lastly, we’ve added one new element, a **checkbox**. The code for this is "
 "simple, **<check key=\"utility:electrical\"text=\"Electricity Access\" />**. "
-"This simple creates a check box on our form. When it is selected, JOSM will "
-"add a tag to our object that says **utility:electrical=yes**."
+"This creates a check box on our form. When it is selected, JOSM will add a "
+"tag to our object that says **utility:electrical=yes**."
 msgstr ""
 "Terakhir, kita telah menambahkan satu elemen, sebuah **checkbox**. Kode yang "
 "digunakan cukup sederhana, **<check key=\"utility:electrical\" text=\"Akses "
@@ -1000,21 +1021,23 @@ msgstr ""
 "menambahkan tag pada objek yang menandakan **utility:electrical=yes**."
 
 # 514bc9161f574f509e6e8f20e4cd7305
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:452
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:467
+#, fuzzy
 msgid ""
 "Finally, let’s save the XML file so that we can load it into JOSM. In "
-"Notepad, go to :menuselection:`File ‣ Save`"
+"Notepad, go to :menuselection:`File ‣ Save`."
 msgstr ""
 "Akhirnya, mari kita simpan file XML sehingga kita dapat memasukkannya ke "
 "dalam JOSM. Pada Notepad, pilih :menuselection:`File ‣ Save` "
 
 # 6ff493f8b8e94432a50ba8023685d575
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:454
-msgid "Type in household_access.xml as the filename."
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:470
+#, fuzzy
+msgid "Type in :kbd:`household_access.xml` as the filename."
 msgstr "Ketik Akses_Rumah_Tangga_Preset.xml sebagai nama file."
 
 # c3bce420ad6a4dd29a2c791dcc027f1b
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:456
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:472
 msgid ""
 "In the box that says :guilabel:`Save as type:` be sure to select :guilabel:"
 "`All Files`, because we don’t want to save the file as a text document, but "
@@ -1025,24 +1048,26 @@ msgstr ""
 "teks, melainkan sebuah dokumen XML."
 
 # 1b5b2b0653b04debb225785c877f94eb
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:459
-msgid "Click :guilabel:`Save`"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:476
+#, fuzzy
+msgid "Click :guilabel:`Save`."
 msgstr "Klik :guilabel:`Save`"
 
 # bf244941a73840aca0a03c12d0a05082
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:461
-msgid "**6. Try It!**"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:480
+#, fuzzy
+msgid "6. Try It!"
 msgstr "**6. Cobalah!**"
 
 # dbb615a974e64557a6220a100e146884
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:463
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:482
 msgid "Now let’s open our presets file in JOSM and see how it looks!"
 msgstr ""
 "Sekarang coba buka file preset tadi menggunakan JOSM dan lihat bagaimana "
 "tampilannya! "
 
 # c4384d3b5d094c0a97c9ec8efc5eed47
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:465
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:484
 msgid ""
 "Open the Preferences in JOSM and go to :guilabel:`Tagging Presets`, as you "
 "did previously."
@@ -1051,36 +1076,64 @@ msgstr ""
 "yang telah Anda lakukan sebelumnya. "
 
 # c7aada42f2cd49b8bda45d927c4e2141
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:467
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:487
 msgid ""
 "On the right side next to Active presets click on the :guilabel:`+` button."
 msgstr ""
 "Pada bagian kanan di sebelah Preset yang aktif, klik tombol :guilabel:`+`. "
 
 # 442f424904f84cf7bba7da55d6872fc2
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:472
-msgid "Type *“Household Presets”* into the Name field."
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:492
+#, fuzzy
+msgid "Type :kbd:`Household Presets` into the :guilabel:`Name` field."
 msgstr "Ketik *“Preset Rumah Tangga”* pada kolom Nama."
 
 # ce7a580c794a4fb786f26ed8da35e200
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:473
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:494
 msgid "Next to URL / File, open the xml file that you just created."
 msgstr "Di sebelah URL/File, buka file XML yang baru saja kita buat."
 
 # 3ce3edf8cf3b4807b24134a92612a67a
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:474
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:496
 msgid ""
 "Click :guilabel:`OK`, and :guilabel:`OK` again to save your preferences."
 msgstr ""
 "Klik :guilabel:`OK`, dan :guilabel:`OK` lagi untuk menyimpan preferensi."
 
 # f5162c9346784a8c98f95adcfbae2b4b
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:476
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:500
 msgid "Create a new layer and add a point."
 msgstr "Buat sebuah layer baru dan tambahkan sebuah titik."
 
 # cfd030de945b4dc0949bae3a9d9a9a08
-#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:477
-msgid "Go to the presets menu.  You should see the menu that you just created!"
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:502
+#, fuzzy
+msgid "Go to the Presets menu. You should see the menu that you just created!"
 msgstr ""
 "Pilih menu Presets. Anda sudah dapat melihat menu yang baru saja Anda buat!"
+
+# 7a5aaa4e3c784edf8ccfcfa8ecc31c8c
+#: ../../source/training/intermediate/osm/304-creating-josm-file-presets.rst:508
+msgid ":ref:`Go to next module --> <using-private-data-store>`"
+msgstr ""
+
+# 5689f06d5f174efe9b0402664ff62724
+#~ msgid ""
+#~ "Go to the Presets menu. You should now see the presets that you added at "
+#~ "the bottom. Click on *“Building”* to see the the building presets form."
+#~ msgstr ""
+#~ "Masuk ke Menu Presets. Anda akan melihat menu yang telah anda tambahkan "
+#~ "pada bagian bawah. Klik pada *“Buildings”* untuk melihat bentuk dari menu "
+#~ "preset building."
+
+# 9989a180df114be493b356bcde960294
+#~ msgid "**amenity=place_of_worship**."
+#~ msgstr "**amenity=place_of_worship**."
+
+# c12f99f2abc04eda9854d1a905651bf6
+#~ msgid "**<item name=\"Household\">**"
+#~ msgstr "**<item name=\"Rumah Tangga\">**"
+
+# 319de3eb86884543acb6cb87b1080c53
+#~ msgid "**</item>**"
+#~ msgstr "**</item>**"

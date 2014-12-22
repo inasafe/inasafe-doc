@@ -20,7 +20,7 @@ Die or be displaced
 To assess the impact of earthquake on population based on earthquake model developed by ITB
 
 **Actions**: 
-Provide details about the population which will die or be displaced
+Provide details about the population will be die or displaced
 
 **Citations**: 
  * Indonesian Earthquake Building-Damage and Fatality Models and    Post Disaster Survey Guidelines Development Bali, 27-28    February 2012, 54pp.
@@ -29,18 +29,14 @@ Provide details about the population which will die or be displaced
 
 
 **Limitation**: 
- - The model is based on limited number of observed fatality rates during 
-   four past fatal events. 
- - The model clearly over-predicts the fatality rates at intensities higher 
-   than VIII.
- - The model only estimates the expected fatality rate for a given intensity
-   level; however the associated uncertainty for the proposed model is not 
-   addressed.
- - There are a few known mistakes in developing the current model:
+ - The model is based on limited number of observed fatality    rates during 4 past fatal events. 
+ - The model clearly over-predicts the fatality rates at    intensities higher than VIII.
+ - The model only estimates the expected fatality rate    for a given intensity level; however the associated    uncertainty for the proposed model is not addressed.
+ - There are few known mistakes in developing the current    model:
 
-   * rounding MMI values to the nearest 0.5
-   * Implementing Finite-Fault models of candidate events
-   * consistency between selected GMPEs with those in use by BMKG.
+   * rounding MMI values to the nearest 0.5,
+   * Implementing Finite-Fault models of candidate events, and
+   * consistency between selected GMPEs with those in use by      BMKG.
 
 
 Details
@@ -48,8 +44,8 @@ Details
 
 This model was developed by Institut Teknologi Bandung (ITB) and implemented by Dr. Hadi Ghasemi, Geoscience Australia
 Algorithm:
-In this study, the same functional form as Allen (2009) is adopted to express fatality rate as a function of intensity (see Eq. 10 in the report). The Matlab built-in function (fminsearch) for the Nelder-Mead algorithm was used to estimate the model parameters. The objective function (L2G norm) that is minimised during the optimisation is the same as the one used by Jaiswal et al. (2010).
-The coefficients used in the Indonesian model are x=0.62275231, y=8.03314466, zeta=2.15
+In this study, the same functional form as Allen (2009) is adopted o express fatality rate as a function of intensity (see Eq. 10 in the report). The Matlab built-in function (fminsearch) for  Nelder-Mead algorithm was used to estimate the model parameters. The objective function (L2G norm) that is minimized during the optimisation is the same as the one used by Jaiswal et al. (2010).
+The coefficients used in the indonesian model are x=0.62275231, y=8.03314466, zeta=2.15
 
 Doc String
 ----------
@@ -96,7 +92,7 @@ Indonesian Earthquake Fatality Model.
     over time.
 
     1 - The model is based on limited number of observed fatality
-        rates during four past fatal events.
+        rates during 4 past fatal events.
     2 - The model clearly over-predicts the fatality rates at
         intensities higher than VIII.
     3 - The model only estimates the expected fatality rate for a given

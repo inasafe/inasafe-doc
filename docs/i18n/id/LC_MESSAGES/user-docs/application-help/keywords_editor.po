@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"POT-Creation-Date: 2014-12-22 12:27\n"
 "PO-Revision-Date: 2014-09-18 05:00+0000\n"
 "Last-Translator: adityo dwijananto <adz.only@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
@@ -22,17 +22,18 @@ msgstr ""
 
 # 304caca1fa75473d9caf1aaf2106ca68
 #: ../../source/user-docs/application-help/keywords_editor.rst:8
-msgid "The Keywords Editor"
+#, fuzzy
+msgid "Keywords Editor"
 msgstr "Editor Kata Kunci"
 
 # 1ed87f6339a149abaa4bc00f8efbf524
 #: ../../source/user-docs/application-help/keywords_editor.rst:10
+#, fuzzy
 msgid ""
-"The keywords editor provides a free form user interface for creating "
+"The keywords editor provides an interface for creating |project_name| "
 "keywords. If you are a new user, you should probably use the :ref:`Keywords "
-"Wizard <keywords_wizard>` in preference to the keywords editor as it "
-"provides more hand holding and you are less likely to specify invalid "
-"keywords."
+"Wizard <keywords_wizard>` rather than the keywords editor as it makes it "
+"easy to specify correct keywords if you are not familiar with the system."
 msgstr ""
 "Editor kata kunci menyediakan bentuk antarmuka yang gratis untuk pengguna "
 "dalam membuat kata kunci. Jika Anda adalah pengguna baru, Anda mungkin harus "
@@ -42,8 +43,9 @@ msgstr ""
 
 # 4db13b1313f64d4b9e0db8364fc98b18
 #: ../../source/user-docs/application-help/keywords_editor.rst:16
+#, fuzzy
 msgid ""
-"For more general discussion on the keywords system used by InaSAFE, please "
+"For more general discussion on the keywords system used by |project_name|, "
 "see the :ref:`keywords system <keywords_system>` documentation."
 msgstr ""
 "Untuk diskusi yang lebih umum pada sistem kata kunci yang digunakan oleh "
@@ -57,23 +59,27 @@ msgstr "Editor kata kunci (keyword) di layar pengguna"
 
 # a7159435c9764647a27052a8617bd538
 #: ../../source/user-docs/application-help/keywords_editor.rst:22
+#, fuzzy
 msgid ""
-"The graphical user interface for keyword editing is divided into two parts:"
+"The graphical user interface for keywords may appear in one of two modes:"
 msgstr ""
 "User interface grafis untuk mengedit kata kunci (keyword) dibagi menjadi dua "
 "bagian:"
 
 # 237470bdd5474feab0f946d4508a1923
 #: ../../source/user-docs/application-help/keywords_editor.rst:24
-msgid "**Minimal mode**: In this mode, only following options are provided:"
+#, fuzzy
+msgid ""
+"**Minimal mode**: In this mode, only the following options are provided:"
 msgstr ""
 "**Mode Minimum**: Pada mode ini, hanya pengaturan berikut ini yang tersedia: "
 
 # 91f9743514b4421bbcabc3945d18ff11
 #: ../../source/user-docs/application-help/keywords_editor.rst:26
+#, fuzzy
 msgid ""
-"**Title** - a 'friendly' name for the dataset which will be displayed in "
-"reports, the user interface and so on"
+"**Title** - a friendly name for the dataset which will be displayed in "
+"reports, the user interface and so on."
 msgstr ""
 "**Judul** - nama yang mudah diingat untuk dataset yang akan ditampilkan "
 "dalam laporan, di layar pengguna, dan sebagainya."
@@ -107,23 +113,26 @@ msgstr ""
 
 # 5057e0349ceb451f83e9115781a01040
 #: ../../source/user-docs/application-help/keywords_editor.rst:37
-msgid "An example of the keywords editor in minimal mode is shown below."
+#, fuzzy
+msgid "This is an example of the keywords editor in minimal mode:"
 msgstr ""
 "Contoh mengedit kata kunci dalam mode minimal ditunjukkan di bawah ini."
 
 # 4d1102b35c1447658677cbed0386b669
 #: ../../source/user-docs/application-help/keywords_editor.rst:44
-msgid "Opened keyword editor window"
+#, fuzzy
+msgid "*Opened keyword editor window*"
 msgstr "Jendela editor kata kunci yang dibuka"
 
 # 3417c3a29ad74966943899ae878ea6fe
 #: ../../source/user-docs/application-help/keywords_editor.rst:46
+#, fuzzy
 msgid ""
 "**Advanced mode**: In this mode several extra options are provided in "
 "addition to the minimal mode options. Unlike minimal mode, in advanced mode "
 "only basic validation is performed and the user is given more flexibility to "
-"manually define and remove key/value pairs. Three sections are provided for "
-"this:"
+"manually define and remove key/value pairs. Three additional sections are "
+"available:"
 msgstr ""
 "**Mode lanjutan**: Dalam mode ini disediakan beberapa pilihan sebagai "
 "tambahan untuk pilihan mode minimal. Tidak seperti mode minimal, pada mode "
@@ -133,10 +142,11 @@ msgstr ""
 
 # ccdb3edc96c5493a86021cec813b8676
 #: ../../source/user-docs/application-help/keywords_editor.rst:53
+#, fuzzy
 msgid ""
 "**Predefined** - In this section, the user selects from a constrained list "
-"of keywords, enters a free-form value and then adds the key/value pair to "
-"the keywords list (see below)."
+"of keywords, enters any value and then adds the key/value pair to the "
+"keywords list (see below)."
 msgstr ""
 "**Predefined** - Pada bagian ini, pengguna memilih dari daftar terkendala "
 "kata kunci, memasukkan nilai bentuk bebas dan kemudian menambahkan kunci/"
@@ -155,14 +165,15 @@ msgstr ""
 
 # e6ece232ae994593a9bb388fd2fd5480
 #: ../../source/user-docs/application-help/keywords_editor.rst:59
+#, fuzzy
 msgid ""
 "**Current keywords** - In this area a complete list of all the keywords for "
-"the dataset are displayed. The keywords list here is updated when any "
-"changes are made in both the simple and advanced mode editors. It is also "
-"possible in this area to manually remove unwanted keywords using the 'remove "
-"selected' button. Multiple keywords can be removed in a single operation by :"
-"kbd:`Control-clicking` on multiple keyword entries in the current keyword "
-"list and then clicking :guilabel:`Remove selected`"
+"the dataset is displayed. The keywords list here is updated when any changes "
+"are made in both the simple and advanced mode editors. It is also possible "
+"in this area to manually remove unwanted keywords using the :guilabel:"
+"`Remove selected` button. Multiple keywords can be removed in a single "
+"operation by holding :kbd:`CTRL` and clicking on multiple keyword entries in "
+"the current keywords list and then clicking :guilabel:`Remove selected`."
 msgstr ""
 "**Current keywords** - Di tempat ini telah ditampilkan daftar semua kata "
 "kunci lengkap untuk dataset. Daftar kata kunci di sini telah diperbarui "
@@ -175,16 +186,18 @@ msgstr ""
 
 # 329980523e6647fbbea6ed2941a8b547
 #: ../../source/user-docs/application-help/keywords_editor.rst:74
-msgid "Advanced mode of keyword editor"
+#, fuzzy
+msgid "*Advanced mode of keyword editor*"
 msgstr "Mode Editor kata kunci tingkat lanjut"
 
 # 8a4f61b0767c4c19b863d8bd50336621
 #: ../../source/user-docs/application-help/keywords_editor.rst:77
+#, fuzzy
 msgid ""
-"Switching from hazard to exposure will clear parts of the GUI since in "
-"general most keywords are category dependent. In particular, selecting "
-"**'hazard'** will remove the **'datatype'** key/value pair, and selecting "
-"**'exposure'** will remove the **'units'** key value pair."
+"Switching from hazard to exposure will clear parts of the GUI since most "
+"keywords are category dependent. In particular, selecting **'hazard'** will "
+"remove the **'datatype'** key/value pair, and selecting **'exposure'** will "
+"remove the **'units'** key value pair."
 msgstr ""
 "Beralih dari ancaman ke keterpaparan akan menghapus bagian dari GUI karena "
 "pada umumnya sebagian besar kata kunci tergantung pada kategorinya. Secara "
@@ -199,11 +212,12 @@ msgstr "Membuka editor kata kunci (keyword editor)"
 
 # 05385ebd43aa499ba6cfbe17b14aee76
 #: ../../source/user-docs/application-help/keywords_editor.rst:85
+#, fuzzy
 msgid ""
-"The keyword editor can easily be invoked by **selecting any layer** in the "
-"QGIS layers list, and then using the plugin menu to start the editor (:"
-"menuselection:`Plugins --> InaSAFE --> Keyword Editor`). Alternatively, you "
-"may use the keywords editor icon on the plugins toolbar as illustrated below."
+"The keywords editor can be invoked by selecting any layer in the QGIS Layers "
+"panel and then going to :menuselection:`Plugins ‣ InaSAFE ‣ Keyword Editor`. "
+"Alternatively, you may click the :guilabel:`Keywords Editor` button on the "
+"toolbar:"
 msgstr ""
 "Editor kata kunci (keyword) dapat dengan mudah dipanggil dengan **memilih "
 "setiap layer** di daftar layer QGIS, dan kemudian menggunakan menu plugin "
@@ -211,16 +225,17 @@ msgstr ""
 "Editor`). Atau Anda mungkin BSIA menggunakan simbol editor kata kunci "
 "(keyword) di dalam toolbar plugin seperti diilustrasikan di bawah. "
 
-# 6e1bd9110b9d4b78b24271dc3f161743
+# cae37756073742339bba089ee070625e
 #: ../../source/user-docs/application-help/keywords_editor.rst:96
-msgid "Keyword editor icon"
-msgstr "Ikon editor kata kunci"
+msgid "*InaSAFE toolbar*"
+msgstr ""
 
 # bed4b1d6224a4a68a5900777c40590e6
 #: ../../source/user-docs/application-help/keywords_editor.rst:98
+#, fuzzy
 msgid ""
-"If you have not selected a layer in the QGIS legend, the keyword editor icon "
-"in the toolbar and menus will **be disabled** and appear greyed out."
+"If you have not selected a layer, the keyword editor icon in the toolbar and "
+"menus will be disabled and appear greyed out."
 msgstr ""
 "Jika anda belum memilih layer di legenda QGIS, ikon editor kata kunci di "
 "toolbar dan menu akan  **dimatikan** dan bewarna abu-abu."
@@ -232,9 +247,10 @@ msgstr "Menyimpan hasil editan Anda"
 
 # 27dbf99365e040b68ecae7abdbf2fca6
 #: ../../source/user-docs/application-help/keywords_editor.rst:105
+#, fuzzy
 msgid ""
-"To save your keyword edits, simply press the :guilabel:`OK` button and the :"
-"file:`*.keywords` file will be written to disk."
+"To save your keyword edits, click the :guilabel:`OK` button and the :file:`*."
+"keywords` file will be written to disk."
 msgstr ""
 "Untuk menyimpan perubahan keyword, cukup tekan tombol :guilabel:`OK` dan "
 "berkas :file:`*.keywords` akan ditulis dalam disk."
@@ -246,12 +262,17 @@ msgstr "Membatalkan hasil editan Anda"
 
 # 0470662b2f934a22b3481285843a2ae4
 #: ../../source/user-docs/application-help/keywords_editor.rst:111
+#, fuzzy
 msgid ""
-"You can cancel your changes at any time by pressing the :guilabel:`Cancel` "
-"button. No changes will be written to disk and your :file:`*.keywords` file "
-"will remain in its original state."
+"Cancel your changes at any time by clicking the :guilabel:`Cancel` button. "
+"No changes will be written to disk and the :file:`*.keywords` file will "
+"remain in its original state."
 msgstr ""
 "Anda dapat membatalkan perubahan Anda kapan saja dengan menekan tombol :"
 "guilabel:`Cancel` . Tidak ada perubahan yang akan ditulis ke tempat "
 "penyimpanan dan file :file:`*.keywords` kata kunci Anda akan tetap dalam "
 "keadaan semula."
+
+# 6e1bd9110b9d4b78b24271dc3f161743
+#~ msgid "Keyword editor icon"
+#~ msgstr "Ikon editor kata kunci"

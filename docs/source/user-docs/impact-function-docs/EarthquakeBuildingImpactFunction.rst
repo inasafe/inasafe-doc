@@ -18,7 +18,7 @@ No documentation found
 Doc String
 ----------
 
-Earthquake impact on building data
+Earthquake impact on building data.
 
     :param requires category=='hazard' and                     subcategory=='earthquake'
 

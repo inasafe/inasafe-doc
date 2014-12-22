@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"POT-Creation-Date: 2014-12-22 12:27\n"
 "PO-Revision-Date: 2014-02-21 08:55+0000\n"
 "Last-Translator: Emir Hartato <emir.hartato@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
@@ -29,10 +29,11 @@ msgstr "Laporan"
 
 # 0f9621e5fa7444cba914b0b67124b001
 #: ../../source/user-docs/application-help/reports.rst:10
+#, fuzzy
 msgid ""
 "Reports about the impact scenario project are generated using QGIS composer "
-"templates. The default template is being shipped with the plugin, but you "
-"can easily create your own templates in QGIS and use them as basis for your "
+"templates. The default template is shipped with the plugin, but you can "
+"easily create your own templates in QGIS and use them as a basis for your "
 "reports."
 msgstr ""
 "Laporan tentang proyek skenario dampak dibuat menggunakan QGIS template "
@@ -42,13 +43,15 @@ msgstr ""
 
 # 4ff5279db429439186fec52badb1eaa3
 #: ../../source/user-docs/application-help/reports.rst:16
-msgid "Localized templates are supported via the following simple schema:"
+#, fuzzy
+msgid "Localised templates are supported via the following simple schema:"
 msgstr "Template lokal didukung melalui skema sederhana berikut ini:"
 
 # e91b3a7a0df2484aa10bb4bdb8821500
 #: ../../source/user-docs/application-help/reports.rst:18
+#, fuzzy
 msgid ""
-"if there is a specified template called :file:`/path/to/template/foo.qpt` "
+"If there is a specified template called :file:`/path/to/template/foo.qpt` "
 "then the plugin looks in the template directory :file:`/path/to/template/` "
 "for a file called file :file:`foo-LANG.qpt`, where \"LANG\" is the language "
 "code of the system locale."
@@ -69,28 +72,33 @@ msgstr ""
 
 # 74d87c9ae3f144c7aa0be92e98c06896
 #: ../../source/user-docs/application-help/reports.rst:28
-msgid "Report Template Elements"
+#, fuzzy
+msgid "Report template elements"
 msgstr "Laporan Elemen Template"
 
 # 4dcf91ec52ce49278dfb7568e9bb851a
 #: ../../source/user-docs/application-help/reports.rst:30
-msgid "A Template contains the next three groups of elements:"
+#, fuzzy
+msgid "A template contains the following types of elements:"
 msgstr "Template ini mencakup 3 kelompok elemen selanjutnya :"
 
-# 4208addea4904208b075f1cf1c723acc
+# 5b1534a6fa344befa2a992b8af42121e
 #: ../../source/user-docs/application-help/reports.rst:32
-msgid "**Static elements**."
-msgstr "**Elemen statis**."
+#, fuzzy
+msgid "Static elements"
+msgstr "Elemen Statis"
 
-# aab72b9e8f6b477881233da2be8c793c
+# b6a4597059b847abb9861439143ab882
 #: ../../source/user-docs/application-help/reports.rst:33
-msgid "**Elements containing tokens for replacement**."
-msgstr "**Elemen yang mencakup token-token untuk penggantian**."
+#: ../../source/user-docs/application-help/reports.rst:44
+msgid "Elements containing tokens for replacement"
+msgstr "Elemen yang mencakup token-token untuk penggantian"
 
-# 358920ebb8e84992a6ef48e927a2297a
+# 7ae5c3f7519f4204a3e1cbbb0e3e5c83
 #: ../../source/user-docs/application-help/reports.rst:34
-msgid "**Elements that are directly updated by the renderer**."
-msgstr "**Elemen yang mana ter-update secara langsung oleh para penyaji**."
+#: ../../source/user-docs/application-help/reports.rst:53
+msgid "Elements that are directly updated by the renderer"
+msgstr "Elemen yang mana ter-update secara langsung oleh para penyaji"
 
 # 5b1534a6fa344befa2a992b8af42121e
 #: ../../source/user-docs/application-help/reports.rst:37
@@ -108,11 +116,6 @@ msgstr ""
 "beberapa logo/gambar. teks tambahan, dll. Anda dapat menghapus beberapa "
 "elemen atau menggantinya dengan yang anda inginkan jika itu diperlukan."
 
-# b6a4597059b847abb9861439143ab882
-#: ../../source/user-docs/application-help/reports.rst:44
-msgid "Elements containing tokens for replacement"
-msgstr "Elemen yang mencakup token-token untuk penggantian"
-
 # 6f42586b0f0e46e28e4283a1f555da73
 #: ../../source/user-docs/application-help/reports.rst:46
 msgid ""
@@ -125,11 +128,6 @@ msgstr ""
 "yang ada. Saat ini tanda-tanda yang ada di elemen akan diganti dengan konten "
 "yang telah diterjemahkan (jika alternatif lokal berlaku) dari plugin sesuai "
 "dengan kata kunci yang tertulis pada dokumen di bawah ini."
-
-# 7ae5c3f7519f4204a3e1cbbb0e3e5c83
-#: ../../source/user-docs/application-help/reports.rst:53
-msgid "Elements that are directly updated by the renderer"
-msgstr "Elemen yang mana ter-update secara langsung oleh para penyaji"
 
 # 06be1872d5324cd6b4888d9b761e5fa1
 #: ../../source/user-docs/application-help/reports.rst:55
@@ -144,8 +142,9 @@ msgstr ""
 
 # dcec2ed686804d3d8ee91e9636fc4fad
 #: ../../source/user-docs/application-help/reports.rst:59
+#, fuzzy
 msgid ""
-"This elements are recognized by their ID's and currently the plugin supports "
+"These elements are recognised by their IDs and currently the plugin supports "
 "the following elements:"
 msgstr ""
 "Elemen ini dikenali dengan ID-nya dan plugin saat ini mendukung elemen-"
@@ -153,20 +152,22 @@ msgstr ""
 
 # 5909095caceb4da6ab4bfeade5cbc92f
 #: ../../source/user-docs/application-help/reports.rst:62
+#, fuzzy
 msgid ""
-"**safe-logo** --- QGIS composer image, which will be used for displaying "
-"InaSAFE logo with web-site url."
+"**safe-logo** --- QGIS composer image, which is used for displaying the |"
+"project_name| logo with website url"
 msgstr ""
 "**safe-logo** --- gambar komposer QGIS, dimana akan digunakan untuk "
 "menampilkan logo InaSAFE beserta alamat situsnya."
 
 # 4e27d792c7da4b00a3b0f445c8bb220f
 #: ../../source/user-docs/application-help/reports.rst:64
+#, fuzzy
 msgid ""
-"**organisation-logo** --- QGIS composer image, which will be used for "
-"displaying organisation logo. By default a combined supporters logo is used. "
-"To use custom logo image, set the path to your PNG file in the plugin "
-"Options dialog (see :ref:`toolbar_options` for details)."
+"**organisation-logo** --- QGIS composer image, which is used for displaying "
+"an organisational logo; By default a combined supporters logo is used; To "
+"use a custom logo image, set the path to your PNG file in the Options dialog "
+"(see :ref:`toolbar_options` for details)."
 msgstr ""
 "**organisation-logo** --- gambar komposer QGIS, dimana akan digunakan untuk "
 "menampilkan logo organisasi. Kombinasi logo organisasi pendukung akan "
@@ -176,37 +177,41 @@ msgstr ""
 
 # 49dfeddee57d4cccaa4a43341308dfb0
 #: ../../source/user-docs/application-help/reports.rst:69
+#, fuzzy
 msgid ""
-"**impact-map** --- QGIS composer map, which will be used for displaying the "
-"impact scenario."
+"**impact-map** --- QGIS composer map, which is used for displaying the "
+"impact scenario"
 msgstr ""
 "**peta-dampak** --- Komposer peta QGIS, yang akan digunakan untuk "
 "menampilkan skenario dampak."
 
 # 000d1fc105da426dac522e1f8898cece
 #: ../../source/user-docs/application-help/reports.rst:71
+#, fuzzy
 msgid ""
-"**impact-legend** --- QGIS composer legend, which will be used for "
-"displaying the legend of the impact scenario."
+"**impact-legend** --- QGIS composer legend, which is used for displaying the "
+"legend of the impact scenario"
 msgstr ""
 "**keterangan-dampak** --- Komposer Keterangan QGIS, yang akan digunakan "
 "untuk menampilkan keterangan dari skenario dampak."
 
 # 4d3ae9eb2e4b44df8e175304eadb580b
 #: ../../source/user-docs/application-help/reports.rst:73
+#, fuzzy
 msgid ""
-"**impact-report** --- QGIS composer label, which will be used for displaying "
-"the impact report table."
+"**impact-report** --- QGIS composer label, which is used for displaying the "
+"impact report table"
 msgstr ""
 "**laporan-dampak** --- label komposer QGIS, yang akan digunakan untuk "
 "menampilkan tabel laporan dampak."
 
 # 2f0596aaff534e67adab765fcca062cc
 #: ../../source/user-docs/application-help/reports.rst:76
+#, fuzzy
 msgid ""
-"As QGIS composer doesn't support automatic resizing elements, based on their "
-"contents, make sure that label have dimensions large enough to show full "
-"table."
+"As QGIS composer doesn't support automatic resizing of elements based on "
+"their contents, make sure that labels have dimensions large enough to show "
+"the full table."
 msgstr ""
 "Karena komposer QGIS tidak mendukung pembesaran elemen secara otomatis "
 "berdasarkan konten, maka pastikan label telah memiliki dimensi yang cukup "
@@ -214,7 +219,8 @@ msgstr ""
 
 # bc02742c82a24a53967bf5955c4f0503
 #: ../../source/user-docs/application-help/reports.rst:81
-msgid "Replaceable Keywords"
+#, fuzzy
+msgid "Replaceable keywords"
 msgstr "Kata kunci yang dapat diganti"
 
 # 52a4ed2489244d3bac128a8c6e211529
@@ -238,38 +244,44 @@ msgstr ""
 
 # f9be0ef3bd6147f0a7722c57709ac5e6
 #: ../../source/user-docs/application-help/reports.rst:91
-msgid "The following tokenized keywords are supported:"
+#, fuzzy
+msgid "The following tokenised keywords are supported:"
 msgstr "Kata kunci tokenized berikut ini didukung:"
 
 # c9424d81789840fb9ac25860c5618e3b
 #: ../../source/user-docs/application-help/reports.rst:93
-msgid "**impact-title** --- title of the impact scenario map."
+#, fuzzy
+msgid "**impact-title** --- title of the impact scenario map"
 msgstr "**judul-dampak** --- judul dari peta skenario dampak."
 
 # 920611b740a0465e9918323932c585b6
 #: ../../source/user-docs/application-help/reports.rst:94
-msgid "**date** --- date of the assessment."
+#, fuzzy
+msgid "**date** --- date of the assessment"
 msgstr "**tanggal** --- tanggal pengukuran."
 
 # 29b4a5d2f80a4b4abe0a3ac103da95aa
 #: ../../source/user-docs/application-help/reports.rst:95
-msgid "**time** --- time of the assessment."
+#, fuzzy
+msgid "**time** --- time of the assessment"
 msgstr "**waktu** --- waktu pengukuran."
 
 # 64f1f7d87f054cffaa36d696190905c7
 #: ../../source/user-docs/application-help/reports.rst:96
-msgid "**safe-version** --- version of the plugin used."
+#, fuzzy
+msgid "**safe-version** --- version of the plugin used"
 msgstr "**versi-safe** --- versi plugin yang digunakan."
 
 # eb2a43bee0f544f7a89d28f882299a64
 #: ../../source/user-docs/application-help/reports.rst:97
+#, fuzzy
 msgid ""
-"**disclaimer** --- disclaimer text. By default used next text: \"InaSAFE has "
-"been jointly developed by Indonesian Government-BPNB, Australian Govenment-"
-"AIFDR and the World Bank-GFDRR. These agencies and the individual software "
-"developers of InaSAFE take no responsibility for the correctness of outputs "
-"from InaSAFE or decisions derived as a consequence.\" To use custom "
-"disclaimer text, enter desired text the plugin Options dialog (see :ref:"
+"**disclaimer** --- disclaimer text; By default this text is used: \"InaSAFE "
+"has been jointly developed by Indonesian Government-BPNB, Australian "
+"Govenment-AIFDR and the World Bank-GFDRR. These agencies and the individual "
+"software developers of InaSAFE take no responsibility for the correctness of "
+"outputs from InaSAFE or decisions derived as a consequence.\" To use custom "
+"disclaimer text, enter desired text in the Options dialog (see :ref:"
 "`toolbar_options` for details)."
 msgstr ""
 "**disclaimer** --- disclaimer text. Pengaturan awal menggunakan teks: "
@@ -297,19 +309,21 @@ msgstr ""
 
 # 97de6486c8264515b05b453b197cfdfb
 #: ../../source/user-docs/application-help/reports.rst:113
+#, fuzzy
 msgid ""
 "Moving replaceable keywords into different elements, or removing them "
-"completely."
+"completely"
 msgstr ""
 "Pindahkan kata kunci yang dapat diganti ke dalam elemen yang berbeda atau "
 "pindahkan seluruhnya."
 
 # 2dfea7253ae84d34a666108691601d33
 #: ../../source/user-docs/application-help/reports.rst:115
+#, fuzzy
 msgid ""
 "Changing template elements look and feel (e.g. setting up fonts, colors, "
-"borders, etc), moving the template elements themselves around or adding / "
-"removing them completely."
+"borders, etc.), moving the template elements themselves around or adding / "
+"removing them completely"
 msgstr ""
 "Ubah tampilan elemen template (contoh mengatur huruf, warna, garis, dll). "
 "pindahkan elemen template itu sendiri di sekitarnya atau tambahkan/hapus "
@@ -317,8 +331,9 @@ msgstr ""
 
 # 038e276b7bcc41eab7cc9169fe8d5503
 #: ../../source/user-docs/application-help/reports.rst:118
+#, fuzzy
 msgid ""
-"Creating your own template from scratch and using it instead of default one."
+"Creating your own template from scratch and using it instead of default one"
 msgstr ""
 "Buat template anda sendiri dan gunakan template itu daripada template bawaan."
 
@@ -347,13 +362,14 @@ msgstr ""
 
 # d3bf5d304d6f4a43ac222b65854599a7
 #: ../../source/user-docs/application-help/reports.rst:129
+#, fuzzy
 msgid ""
-"Also in addition to default template you can have as many custom templates "
-"as you want. Just create templates, put them in some folder somewhere in "
-"filesystem and go to :menuselection:`Plugins --> InaSAFE --> InaSAFE "
-"Options` or click on the |project_name| plugin toolbar's options icon. In "
-"Options dialog specify :guilabel:`Report template` setting. It should "
-"contain full path to the folder with your custom templates."
+"In addition to the default template you can have as many custom templates as "
+"you want. Just create templates, put them in a folder and go to :"
+"menuselection:`Plugins ‣ InaSAFE ‣ InaSAFE Options` or click on the |"
+"project_name| plugin toolbar's :guilabel:`Options` button. In the Options "
+"dialog specify the :guilabel:`Report template` setting. It should contain "
+"the full path to the folder with your custom templates."
 msgstr ""
 "Juga sebagai tambahan untuk template bawaan standar, anda dapat memiliki "
 "template anda sendiri sebanayak yang anda inginkan. Anda tinggal membuat "
@@ -362,3 +378,15 @@ msgstr ""
 "Pilihan pada toolbar plugin |project_name|. Pada dialog pilihan, tentukan "
 "pengaturan  :guilabel:`Report template` . Seharusnya berisi letak folder "
 "dengan template anda sendiri."
+
+# 4208addea4904208b075f1cf1c723acc
+#~ msgid "**Static elements**."
+#~ msgstr "**Elemen statis**."
+
+# aab72b9e8f6b477881233da2be8c793c
+#~ msgid "**Elements containing tokens for replacement**."
+#~ msgstr "**Elemen yang mencakup token-token untuk penggantian**."
+
+# 358920ebb8e84992a6ef48e927a2297a
+#~ msgid "**Elements that are directly updated by the renderer**."
+#~ msgstr "**Elemen yang mana ter-update secara langsung oleh para penyaji**."
