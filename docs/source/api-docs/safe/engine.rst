@@ -7,4 +7,3 @@ Package::safe.engine
    engine/utilities
    engine/core
    engine/interpolation
-   engine/impact_functions_for_testing

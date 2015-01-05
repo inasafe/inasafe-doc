@@ -6,10 +6,14 @@ Package::safe
 
    safe/defaults
    safe/metadata
-   safe/api
+   safe/utilities
    safe/common
    safe/engine
+   safe/gis
+   safe/report
    safe/postprocessors
+   safe/gui
    safe/storage
+   safe/impact_statistics
    safe/messaging
    safe/impact_functions

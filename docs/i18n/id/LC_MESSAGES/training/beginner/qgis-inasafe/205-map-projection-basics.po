@@ -5,17 +5,19 @@
 # Translators:
 # adityo dwijananto <adz.only@gmail.com>, 2014
 # adityo dwijananto <adz.only@gmail.com>, 2014
+# elida nurrohmah <uswatunkh21@yahoo.com>, 2014
 # Emir Hartato <emir.hartato@gmail.com>, 2014
 # Ranie Dwi Anugrah <raniedwianugrah@gmail.com>, 2013
 # Ranie Dwi Anugrah <raniedwianugrah@gmail.com>, 2014
+# Vasanthi Hargyono <va.santhi@yahoo.com>, 2014
 # Werner Macho <werner.macho@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-22 12:27\n"
-"PO-Revision-Date: 2014-09-30 07:50+0000\n"
-"Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
+"POT-Creation-Date: 2015-01-05 22:23+0100\n"
+"PO-Revision-Date: 2014-12-28 17:51+0000\n"
+"Last-Translator: adityo dwijananto <adz.only@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
 "develop/language/id/)\n"
 "Language: id\n"
@@ -24,63 +26,60 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# da7e2c2b15bf427e912f8a028df9cb9c
+# c08e8789d9794402a1c64e2e9653f401
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:10
 msgid "Module 5: Map Projection Basics"
 msgstr "Modul 5 : Dasar Proyeksi Peta"
 
-# bf3d42387f3f402fa8ae95f31a7fd7f3
+# 2a09d08b902c48cd9c2c15708329f630
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:12
 msgid "**Learning Objectives**"
 msgstr "**Tujuan Pembelajaran**"
 
-# 05fa9ad9a8f646c2bd8006b1deba169e
+# 30a6de50761a49baae620782d2fdc8e6
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:14
 msgid "Understand Coordinate Reference Systems (CRS)"
 msgstr ""
 "Pemahaman Sistem Referensi Koordinat (Coordinate Reference System - CRS)"
 
-# 807cfedfdb57436aa31e9eef38bac039
+# d9354a884c0740d5ac55f717247e50fa
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:15
 msgid "Identify the CRS of a vector dataset"
 msgstr "Identifikasi CRS pada dataset vektor"
 
-# 4a8a045a62f4470d82f87209ca79404d
+# 4f26fde5c3254177986a4c0c9ce20942
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:16
-#, fuzzy
 msgid "Do 'on the fly' reprojection"
-msgstr "Melakukan proyeksi ulang 'on the fly' "
+msgstr "Melakukan proyeksi ulang 'on the fly'"
 
-# 19e5edb0d6074bafb3a98bfc7f2d9d29
+# dfe73283309b4a1da9ca6e1e28b86b25
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:17
 msgid "Save dataset with a different CRS"
 msgstr "Simpan dataset dalam CRS yang berbeda"
 
-# 27ac1f92952c4200ac4fe7549aea80f8
+# 2fbce9abed554a3dad0e2a12da365d7e
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:18
 msgid "Create a custom projection"
-msgstr ""
+msgstr "Membuat proyeksi sendiri"
 
-# 4bcc61a9241d41e89116a11bf12dbb4a
+# ed1520f92db246e2b1144072b638c826
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:20
-#, fuzzy
 msgid ""
 "We’ve talked a little bit about Coordinate Reference Systems (CRSs) "
 "previously, but haven’t covered it in depth. In this module, we’ll look more "
 "at what a CRS means practically, and how it affects our work in QGIS."
 msgstr ""
-"Kita telah berbicara sedikit tentang sistem referensi koordinat (CRS) "
-"sebelumnya, tetapi belum mendalaminya lebih jauh. Pada bab ini, kita akan "
-"melihat lebih jauh pada apa yang dimaksud CRS secara praktis, dan bagaimana "
-"pengaruhnya terhadap pekerjaan kita di QGIS."
+"Kita telah berbicara sedikit tentang Sistem Referensi Koordinat (CRS) "
+"sebelumnya, tetapi belum mendalaminya lebih jauh. Pada modul ini, kita akan "
+"melihat lebih jauh pada apa yang dimaksud dengan CRS secara praktis, dan "
+"bagaimana pengaruhnya terhadap pekerjaan kita di QGIS."
 
-# 66ee29b9ed3e43a4b3e8955b2262d510
+# a48e9ab59344486f87a16a0a5560c775
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:26
-#, fuzzy
 msgid "1. Coordinate Reference Systems (CRS)"
-msgstr "**1. Sistem Referensi Koordinat (Coordinate Reference System - CRS)**"
+msgstr "1. Sistem Referensi Koordinat (Coordinate Reference System - CRS)"
 
-# f3b127c507ea47a083142c2b62752060
+# af7f0d5f12864152b720b2a012ec9639
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:28
 msgid ""
 "The CRS that all the data as well as the map itself are in right now is "
@@ -91,47 +90,45 @@ msgstr ""
 "Koordinat Geografis (GCS)  ini sangat umum untuk mempresentasikan data. "
 "Tetapi ada masalah, seperti yang akan kita lihat."
 
-# 0cb92f031b0d4ff6a76f00b208b42838
+# 33d8cb39874a4190b5b5137e9f832257
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:34
-#, fuzzy
 msgid ""
 "Open the project :file:`world.qgs`, located in the :file:`qgis/` folder. "
 "Zoom in to Indonesia by using the :guilabel:`Zoom In` tool."
-msgstr "Buka proyek :file:`world.qgis`, yang berlokasi di :file:`qgis/folder`"
+msgstr ""
+"Buka proyek :file:`world.qgs`, yang berlokasi pada folder :file:`qgis/`. "
+"Perbesar ke Indonesia dengan menggunakan alat :guilabel:`Perbesar`."
 
-# 661ab88bb7ce4b05b63e6ef1c45f2780
+# 3d5aedee6d3047e48381223618f48ec6
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:40
-#, fuzzy
 msgid ""
 "Set the scale in the :guilabel:`Scale` field, which is in the status bar "
 "along the bottom of the screen. While over Indonesia, set this value to "
 "1:20000000 (one to twenty million)."
 msgstr ""
-"Atur skala di field Scale, yang di Status Bar di bagian bawah layar. "
-"Sementara di Indonesia, menetapkan nilai ini untuk 1: 20000000 (satu banding "
-"dua puluh juta)."
+"Atur skala di field :guilabel:`Skala`, yang berada di Status Bar di bagian "
+"bawah layar. Untuk skala yang akan digunakan di Indonesia, tetapkan nilai 1: "
+"20000000 (satu banding dua puluh juta)."
 
-# 69a0991feabd40d2955172a796844d9c
+# 2328e755090d47df9299d9b756698aec
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:47
 msgid "Now pan around the map while keeping an eye on the Scale field."
 msgstr "Sekarang arahkan ke sekitar peta sembari tetap memperhatikan skalanya."
 
-# 67556d9bcb6944389a7b266f6821336b
+# b4c56d271e4b401790d013dfe787fa57
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:49
-#, fuzzy
 msgid ""
 "Do you notice the scale changing? This is because you’re moving away from "
 "the one point that you zoomed into at 1:20000000, which was at the centre of "
 "your screen. All around that point, the scale is different."
 msgstr ""
 "Sadarkah bahwa skalanya berubah? Itu karena Anda beralih terlalu jauh dari "
-"poin yang telah Anda zoom hingga 1:20000000 sebelumnya, yang mana telah "
+"poin yang telah Anda perbesar hingga 1:20000000 sebelumnya, yang mana telah "
 "menjadi pusat dari tampilan layar komputer Anda. Pada intinya, skalanya "
 "telah berubah."
 
-# de3fbc3d919c49a9bfebf1e6c26756fd
+# 4cb10c4fb1e74380ae1458dc4e1cbd8e
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:54
-#, fuzzy
 msgid ""
 "To understand why, think about a globe of the Earth. It has lines running "
 "vertically along it from North to South. These longitude lines are far apart "
@@ -159,7 +156,7 @@ msgstr ""
 "lebih besar dan lebih besar. Apa artinya ini untuk kita, secara praktis, "
 "bahwa tidak ada skala konstan di dalam peta kita!"
 
-# 0b9835efaa5843dd8cfca7530712d09a
+# 3f42074393b1453f9125dfb08b72f787
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:68
 msgid ""
 "To solve this, we’ll use a Projected Coordinate System (PCS) instead. A PCS "
@@ -172,7 +169,7 @@ msgstr ""
 "dapat membuat perubahan skala dan harus dikoreksi. Oleh karena itu, untuk "
 "mempertahankan skalanya, kita harus proyeksi ulang data kita menggunakan PCS."
 
-# c581fd36d52e4c0d8a46f1bba6581b2e
+# 2e58eeb142de45fb948291f93e4fec6c
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:74
 msgid ""
 "Projection is the act of taking coordinates on a sphere (like the earth), "
@@ -182,15 +179,13 @@ msgstr ""
 "(misalnya bumi), dan memanipulasinya juga sehingga dapat ditampilkan dalam "
 "sebuah bidang datar."
 
-# aaa4b727b6bd4464aba6d65441f74e22
+# b0651dc7bfef4c3cb1e9ff4210010c19
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:79
-#, fuzzy
 msgid "2. “On the fly” reprojection"
-msgstr "**2. Proyeksi ulang \"On The Fly\"**"
+msgstr "2. Proyeksi ulang \"On the Fly\""
 
-# c9064ba8327b4b059e87e2e05e8ea7f8
+# d4ad2e8d371548a28f7aa8d8ef69cd86
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:81
-#, fuzzy
 msgid ""
 "Every QGIS project has a CRS, and each of the data layers has a CRS too. "
 "Often these are the same. Your project may be in WGS84, and the layers too. "
@@ -204,19 +199,18 @@ msgstr ""
 "dan layernya juga. Tetapi kadang Anda akan menambah layer tersebut tidak "
 "pada CRS yang sama dengan proyek ini, dan Anda butuh QGIS untuk mengubahnya "
 "sehingga dapat ditampilkan bersama dengan data lainnya. Istilah yang kita "
-"gunakan untuk hal ini adalah proyeksi ulang 'on the fly'."
+"gunakan untuk hal ini adalah proyeksi ulang ‘on the fly’."
 
-# c2c6ad726075412eaba423babca50b3b
+# 68039e27a8c346dd87ceedea664ffa42
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:89
-#, fuzzy
 msgid ""
 "To enable 'on the fly' projection, click on the :guilabel:`CRS Status` "
 "button in the status bar along the bottom of the QGIS window:"
 msgstr ""
-"Untuk mengaktifkan proyeksi 'on the fly', klik pada tombol :guilabel:`CRS "
-"Status` di bawah Status Bar jendela QGIS:"
+"Untuk mengaktifkan proyeksi ‘on the fly’, klik pada tombol :guilabel:`Status "
+"CRS` di bawah Status Bar pada jendela QGIS:"
 
-# a3bb7759d99e4f939aea1b5517bf72e3
+# 5f4351c83d2846fc82b496fc0751bcee
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:95
 msgid ""
 "In the dialog that appears, check the box next to :guilabel:`Enable ‘on the "
@@ -225,23 +219,21 @@ msgstr ""
 "Pada kotak dialog yang muncul, centang kotak di sebelah  :guilabel:`Enable "
 "‘on the fly’ CRS transformation`."
 
-# 92a95671bb2b4eaaa73978332671eb8e
+# ebcb51d6546b4a3b88347abf1a9a1606
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:101
-#, fuzzy
 msgid ""
 "Type :kbd:`NSIDC` into the Filter field. One CRS (\"NSIDC EASE-Grid Global"
 "\") will appear in the list below."
 msgstr ""
-"Ketiklah kata “global” di dalam field filter. Satu CRS (NSIDC EASE-Grid "
-"Global) akan muncul di daftar bagian bawah."
+"Ketikan :kbd:`NSIDC` di dalam filed Saring. Satu CRS (\"NSIDC EASE-Grid "
+"Global\") akan muncul di daftar bagian bawah."
 
-# 8a51f1bdc7b44cd2abb9308bae81c2ec
+# 5ecf6cc2432840bca68ba87d0cf8e621
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:107
-#, fuzzy
 msgid "Click on it to select it, and then click :guilabel:`OK`."
 msgstr "Klik pada CRS tersebut untuk memilihnya, kemudian klik :guilabel:`OK`."
 
-# 702ca7545960477cb5cb6cfa6b1d7292
+# e829b436fd7b4a098ada3daa9c57806b
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:109
 msgid ""
 "Notice how the shape of Indonesia changes. All projections work by changing "
@@ -250,54 +242,53 @@ msgstr ""
 "Perhatikan bagaimana bentuk Indonesia berubah. Semua proyeksi bekerja dengan "
 "mengubah bentuk nyata objek di permukaan Bumi."
 
-# 2210f112d1ed4b5885d79ef80a4db147
+# f6b827b860094cc78eb52917d05365c1
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:112
 msgid "Zoom in to a scale of 1:20000000 again, as before."
 msgstr "Perbesar ke skala 1: 20000000 lagi seperti sebelumnya."
 
-# 6fb5d4301e674f9eb57167dcddbc60c6
+# 2dfb72f66bea4607905be10f8763a05e
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:114
 msgid "Pan around the map."
 msgstr "Geser sekitar  peta."
 
-# 93535e0fa638406ab07ca570399db53e
+# 066c3eb2b58644d4aebe3737a30bc499
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:116
-#, fuzzy
 msgid ""
 "Notice that the scale stays the same! 'On the fly' reprojection is useful "
 "for combining datasets that are in different CRSes."
 msgstr ""
-"Proyeksi ulang 'On the fly' berguna untuk menggabungkan dataset yang ada "
-"dengan CRS yang berbeda."
+"Perhatikan bahwa skalanya tetap sama! Proyeksi ulang 'On the fly' berguna "
+"untuk menggabungkan dataset yang memiliki CRS yang berbeda."
 
-# ca9a57b8656f4d57b82757ba02efc876
+# 8b2db788c305449798a82a628d17e15d
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:119
-#, fuzzy
 msgid ""
 "Deactivate 'on the fly' reprojection again, by unchecking the box next to :"
 "guilabel:`Enable ‘on the fly’ CRS transformation`."
 msgstr ""
-"Non aktifkan :guilabel:`'on the fly' reprojection` kembali, dengan "
-"menonaktifkan centang kotak di sebelah transformasi CRS  ‘on the fly’"
+"Non aktifkan transformasi 'on the fly' kembali, dengan menonaktifkan centang "
+"pada kotak di sebelah :guilabel:`Aktifkan transformasi CRS ‘on the fly’`. "
 
-# 64d8cabe9db04519aa3dd7a0cfa5ece0
+# 0bd7cd3fca9443c2968d6c6c5524c2ae
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:122
-#, fuzzy
 msgid ""
 "Load the vector layer :file:`Indonesia.shp` located in :file:`qgis/"
 "peta_dunia/`."
 msgstr ""
-"Masukkan layer vektor :file:`oceans.shp` yang terletak di :file:`qgis/"
-"peta_dunia/`."
+"Tambahkan layer vektor lain yaitu :file:`Indonesia.shp` yang berada di :file:"
+"`qgis/peta_dunia/`."
 
-# 293f59b2a4604b30ba917472714b3b54
+# bc01dbbda4de4f07b8a0dba5b021ee47
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:125
 msgid ""
 "You may need to unzip :file:`peta_dunia.zip` first in order to open the "
 "shapefile."
 msgstr ""
+"Anda mungkin butuh mengekstrak :file:`peta_dunia.zip` terlebih dahulu agar "
+"dapat memasukkan shapefile tersebut."
 
-# 5e775c591f364dff9c94c4dda607055a
+# 3d0dd83738f24fa6a1faaadb1afb8e32
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:128
 msgid ""
 "What do you notice? The layer is not visible! But that’s easy to fix, right?"
@@ -305,28 +296,25 @@ msgstr ""
 "Apa yang Anda lihat? Layer tidak terlihat! Tetapi itu mudah untuk "
 "diperbaikinya"
 
-# b93d7c6ff34d45359effeb9a81373a0b
+# a8c429a458f7460f892c33e2cb741b10
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:132
-#, fuzzy
 msgid "Right-click on the new layer in the Layers panel."
-msgstr "Klik kanan pada **layer** di daftar Layer."
+msgstr "Klik kanan pada layer baru di daftar layer."
 
-# 5e12aedecd30400eb6297973686d715e
+# bf1d132874ff47f7a9e2e6383b6225c8
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:134
-#, fuzzy
 msgid "Click :guilabel:`Zoom to Layer Extent`."
-msgstr "Pilih :menuselection:`Zoom to Layer Extent`."
+msgstr "Klik :guilabel:`Perbesar ke Layer`."
 
-# b16ad348a98145c487277ab354ddac18
+# eccc24985c474afbaa363bbfabcaa7b3
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:136
 msgid "OK, so now we see Indonesia... but where is the rest of the world?"
 msgstr ""
 "OK, jadi sekarang kita melihat wilayah Indonesia... Tapi dimana area lainnya "
 "di muka bumi?"
 
-# 74bac6962ce04f02a801fe4d1991412a
+# 286aa840652a4523af7e64cccc963c98
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:138
-#, fuzzy
 msgid ""
 "It turns out that we can zoom between these two layers, but we can’t ever "
 "see them at the same time. That is because their Coordinate Reference "
@@ -342,9 +330,8 @@ msgstr ""
 "mungkin 8,5 derajat dari khatulistiwa, tetapi fitur yang sama di layer "
 "Indonesia mungkin 900000 meter dari khatulistiwa."
 
-# 9e45fdcb01d44d2f80011fdbd7a8d18b
+# ab94fbfa53b44c038d16568ccbd871e8
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:147
-#, fuzzy
 msgid ""
 "8.5 degrees and 900000 metres is about the same distance, but QGIS does not "
 "know that! One of our layers must be reprojected to match the other layer. "
@@ -352,23 +339,24 @@ msgid ""
 msgstr ""
 "8,5 derajat dan 900000 meter adalah jarak yang sama, tetapi QGIS tidak "
 "mengetahui itu! Salah satu dari layer harus diproyeksi ulang untuk "
-"menyesuaikan dengan layer lainnya. Untuk memeriksa ini:"
+"menyesuaikan dengan layer lainnya. Untuk memperbaiki ini, aktifkan kembali "
+"transformasi:"
 
-# e3c52293594b4e49b82c7feeb9ebb86a
+# 639923a84f3145f188767a3fc973ecbe
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:152
-#, fuzzy
 msgid "Activate :guilabel:`Enable ‘on the fly’ CRS transformation` as before."
 msgstr ""
-"Ganti :guilabel: `Enable` ‘on the fly’ CRS transformation lagi seperti "
+"Aktifkan :guilabel:`Aktifkan transformasi CRS 'on the fly'` sama seperti "
 "sebelumnya."
 
-# 899725cac2f14d3da41306fa48d43aa4
+# 5992e62f2a8642cb8d137216b0c0cd95
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:154
-#, fuzzy
 msgid "Again click :guilabel:`Zoom to Layer extent` on the Indonesia dataset."
-msgstr ":guilabel: `Zoom to the layer extents` dataset Indonesia."
+msgstr ""
+"Kemudian sekali lagi, klik :guilabel:`Perbesar ke layer` pada dataset "
+"Indonesia."
 
-# 54c6a1497f874b69b7667e66ad8edb58
+# 1d7a2ea56c2947fa9b31b63c424a8a43
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:156
 msgid ""
 "Now, because they’re made to project in the same CRS, the two datasets fit "
@@ -377,7 +365,7 @@ msgstr ""
 "Sekarang, karena mereka membuat proyek dengan CRS yang sama, kedua dataset "
 "akan saling bertampalan dengan sempurna:"
 
-# dccda6c896484d73a8c4eaedd5cce1f8
+# 9f286c9cc5634f2ca89454bcecc00db9
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:162
 msgid ""
 "When combining data from different sources, it’s important to remember that "
@@ -388,15 +376,13 @@ msgstr ""
 "diingat bahwa mereka mungkin tidak memiliki CRS yang sama. Proyeksi ulang "
 "'on the fly' membantu Anda untuk menampilkan mereka secara bersamaan."
 
-# a730fb349e1743ca898ed3c0a531b14b
+# 132fc3aa147741b08d855c7421cbfb63
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:167
-#, fuzzy
 msgid "3. Datasets with different CRSes"
-msgstr "**3. Dataset dengan perbedaan CRS**"
+msgstr "3. Dataset dengan CRS yang berbeda"
 
-# 20fadd71704049f1a130e890eaf38403
+# 3c06f8b4318049dd9a96c57c97c2f3bd
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:169
-#, fuzzy
 msgid ""
 "It’s great that QGIS can reproject layers on the fly so that we can work "
 "with them in the same project. But this requires more time for our computer "
@@ -410,7 +396,7 @@ msgstr ""
 "pekerjaan kita. Untuk ini, atau untuk alasan lain, kita mungkin ingin "
 "memproyeksi ulang dataset, dan menyimpannya dengan proyeksi baru."
 
-# 250afcfd62784797a8b4bbed83802871
+# 3e127374f9cf448099755cbff8f982c3
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:176
 msgid ""
 "Let’s reproject the Indonesia layer so that it is in the same CRS as the "
@@ -421,102 +407,93 @@ msgstr ""
 "sama seperti proyeknya. Untuk melakukan ini, kita akan mengeksport data ke "
 "file baru menggunakan proyeksi baru."
 
-# a97a023c99c54afa801b1d316807d095
+# 2701e22014514452b3edb12ee6193747
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:181
-#, fuzzy
 msgid "Right-click on the :guilabel:`Indonesia` layer in the Layers panel."
-msgstr ""
-"Klik kanan pada layer :guilabel:`Indonesia` yang terdapat dalam daftar layer."
+msgstr "Klik kanan pada layer :guilabel:`Indonesia` di panel Daftar Layer. "
 
-# 5c111b8b83094cd285c3d705716d9f54
+# 44b1ccf30edb421aa301902bed04d1e4
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:183
-#, fuzzy
 msgid ""
 "Select :guilabel:`Save As...` in the menu that appears. You will be shown "
 "the :guilabel:`Save vector layer as...` dialog."
 msgstr ""
-"Pilih :guilabel:`Save As...` di menu yang muncul. Anda akan melihat kotak "
-"dialog **Save vector layer as...**"
+"Pilih :guilabel:`Simpan sebagai...` pada menu yang muncul. Anda akan melihat "
+"kotak dialog :guilabel:`Simpan layer vektor sebagai...`"
 
-# 9b57aab76b10419c8e290a7ff16e9b4c
+# 5964bcc5608c4bf598a6c30d8d50cbf9
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:186
-#, fuzzy
 msgid ""
 "Click the :guilabel:`Browse` button next to the :guilabel:`Save as` field."
-msgstr "Klik tombol :guilabel:`Browse` kemudian :guilabel:`Save as field`."
+msgstr ""
+"Klik tombol  :guilabel:`Navigasi` di sebelah field :guilabel:`Simpan "
+"sebagai`."
 
-# 5a98f43bad8d4ead8d273d88dbbc1487
+# e1badd587e73411f9aa274228f05466a
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:188
-#, fuzzy
 msgid ""
 "Navigate to :file:`qgis/peta_dunia/` and specify the name of the new layer "
 "as :kbd:`Indonesia_terproyeksi.shp`."
 msgstr ""
 "Navigasikan ke :file:`qgis/peta_dunia/` dan tentukan nama layer baru "
-"seperti  :kbd:`Indonesia_terproyeksi.shp`."
+"sebagai :kbd:`Indonesia_terproyeksi.shp`. "
 
-# 6695565ecc3248ada78f85e56ad78b1d
+# 9f0bc25e0bf54b159383c1ad4e9c98e6
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:191
-#, fuzzy
 msgid "Leave the encoding unchanged."
 msgstr "Encoding tidak perlu diubah."
 
-# 0a88145efd3a4d43936844e2502b8ab4
+# 57ef659c09844bcb8e4dae82d9fb47a2
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:193
-#, fuzzy
 msgid ""
 "Change the value of the CRS in drop-down box to :guilabel:`Project CRS`."
-msgstr "Ubah nilai Layer CRS tombol ke bawah **Project CRS**."
+msgstr "Ubah nilai CRS pada kotak pilihan di :guilabel:`Project CRS`. "
 
-# 3e2d59e9d41542ed90c7cf8a3cad5a5b
+# cdc0b309c89f436693c1656b6ffe4841
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:195
 msgid "Check the box next to :guilabel:`Add saved file to map`."
 msgstr "Centang kotak disebelah  :guilabel:`Add saved file to map`."
 
-# f2e1f0df45fe4791a70f3f3b420b36c1
+# baae35e81839447088408f9b5abe448c
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:197
-#, fuzzy
 msgid "The :guilabel:`Save vector layer as...` dialog now looks like this:"
 msgstr ""
-"Kotak dialog **Save vector layer as...** sekarang terlihat seperti ini:"
+"Kotak dialog :guilabel:`Simpan lapisan vektor sebagai...` sekarang terlihat "
+"seperti ini:"
 
-# a17f2a9b916e4c90be6aac9dda6ae5a4
+# f28710f5fc8747649254924a4abe2dec
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:202
-#, fuzzy
 msgid ""
 "Click :guilabel:`OK` and after a minute, you should be presented with the "
 "following:"
-msgstr ""
-"Klik  :guilabel:`OK` dan setelah beberapa menit, Anda akan melihat ini:"
+msgstr "Klik :guilabel:`OK` dan setelah beberapa menit, Anda akan melihat ini:"
 
-# 65c6cf248d4a427b9c885a67da550842
-# 4118eac6579b44dfb2bfdf42a4e1ed27
+# 9c85c93f14da4100a0010376db344943
+# 4d4495036a3c403b9b821a514d575f02
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:208
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:242
 msgid "Click :guilabel:`OK`."
 msgstr "Klik :guilabel:`OK`."
 
-# 0c558b88bf664911b8e697da8f4a83eb
+# 3eeed53aebf342e0bf9afc1ee8509e76
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:210
-#, fuzzy
 msgid ""
 "Now your new layer, :guilabel:`Indonesia_terproyeksi`, will be shown in the "
 "layers panel. If you turn off 'on the fly' reprojection, this layer will "
 "still be shown correctly, because it has been reprojected into the same CRS "
 "as the project (and the continents layer)."
 msgstr ""
-"Sekarang layer baru Anda, **Indonesia_terproyeksi**, akan terlihat di panel "
-"layer. Jika Anda mematikan proyeksi ulang \"on the fly\", layer ini akan "
-"tetap muncul, karena hal ini telah diproyeksi ulang ke dalam CRS yang sama "
-"sebagai proyek (dan layer continent)."
+"Sekarang layer baru Anda, :guilabel:`Indonesia_terproyeksi`, akan terlihat "
+"di panel layer. Jika Anda mematikan proyeksi ulang “on the fly”, layer ini "
+"akan tetap muncul, karena hal ini telah diproyeksi ulang ke dalam CRS yang "
+"sama sebagai proyek (dan layer continent)."
 
-# 8ea048414010463c8c5c24eabf911b1b
+# 30acf8b1a2c840658df910cf6d635659
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:216
-#, fuzzy
 msgid "4. Creating a custom projection"
-msgstr "**4. Membuat Proyeksi Anda Sendiri**"
+msgstr "4. Membuat proyeksi Anda sendiri"
 
-# 0bf1668c83544cfdb436c697916d7ebe
+# c9614c6a17ca4ab7898263574db4ae6c
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:218
 msgid ""
 "There are many more projections than just those included in QGIS by default. "
@@ -525,13 +502,12 @@ msgstr ""
 "QGIS memiliki banyak proyeksi yang tersedia di dalamnya sesuai standar. Anda "
 "dapat membuat proyeksi Anda sendiri. Kita lihat bagaimana hal itu bekerja."
 
-# 5ab0b2376054453ea74d652b9ccd6c18
+# 2b5dc1752e76495190444d49f6ed0488
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:222
-#, fuzzy
 msgid "Start a new project."
-msgstr "Memulai peta baru."
+msgstr "Memulai proyek baru."
 
-# 64d8cabe9db04519aa3dd7a0cfa5ece0
+# 86f135fafcbf4b03b7423d70df08e147
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:224
 msgid ""
 "Load the vector layer :file:`oceans.shp` located in :file:`qgis/peta_dunia/`."
@@ -539,7 +515,7 @@ msgstr ""
 "Masukkan layer vektor :file:`oceans.shp` yang terletak di :file:`qgis/"
 "peta_dunia/`."
 
-# 80f4b407ef214b6eb57695db966d8c0a
+# 9cfbf32288f442df861991546708caca
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:227
 msgid ""
 "Go to :menuselection:`Settings ‣ Custom CRS...` and you’ll see this dialog:"
@@ -547,7 +523,7 @@ msgstr ""
 "Klik  :menuselection:`Settings  ‣ Custom CRS...` dan Anda akan melihat kotak "
 "dialog ini:"
 
-# 54f96471db8e4c36a026f876656d5e87
+# 84856fd8d3dd422e9bef7f04120ffc8f
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:232
 msgid ""
 "We will create a projection known as Van der Grinten I. This interesting "
@@ -558,51 +534,45 @@ msgstr ""
 "ini menarik untuk menampilkan Bumi ke dalam bidang lingkaran bukan bidang "
 "persegi panjang, seperti proyeksi yang biasanya."
 
-# 20e9d84f55f14c53a52cddf212d78510
+# 705fae6eb3324dd692c523ae5f64c684
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:236
-#, fuzzy
 msgid "Enter :kbd:`Van der Grinten I` in the :guilabel:`Name` field."
-msgstr "Masukkan :kbd:`Van der Grinten I` ke dalam kolom Nama."
+msgstr "Masukan :kbd:`Van der Grinten I` ke dalam kolom :guilabel:`Nama`."
 
-# 01566f83ecc54a7fb7f188cbf6f3c97d
+# 0b3420e53b3e4420ae26c3d7ca2f3c01
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:238
-#, fuzzy
 msgid "In the Parameters field, enter the following string:"
-msgstr "Di kolom Parameters, gunakan string sperti berikut ini:"
+msgstr "Di kolom Parameter, masukan string berikut ini:"
 
-# 48675d7e24464ff39da9fb6d2d48adae
+# 4018dbcd81ad4f89a7ca895f71c86192
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:240
-#, fuzzy
 msgid ""
 ":kbd:`+proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +a=6371000 +b=6371000 +units=m "
 "+no_defs`"
 msgstr ""
-"+proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +a=6371000 +b=6371000 +units=m "
-"+no_defs"
+":kbd:`+proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +a=6371000 +b=6371000 +units=m "
+"+no_defs`"
 
-# 1eaeed7e0eb24114b3a06087c2d3bb52
+# 215cfacb7abb4a24b2bec0f1ac53e1f8
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:244
-#, fuzzy
 msgid "Go to :menuselection:`Project ‣ Project Properties`."
-msgstr "Pergilah ke :menuselection:`Project → Project Properties`. "
+msgstr "Pergilah ke :menuselection:`Project ‣ Project Properties`."
 
-# 14b3fc68cc2f4a7889b64382dad1e486
+# 72120ddc9ee449fdb7bd007b39b9adeb
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:246
-#, fuzzy
 msgid "Enable 'on the fly' reprojection."
-msgstr "Aktifkan proyeksi   “on the fly”."
+msgstr "Aktifkan proyeksi 'on the fly'."
 
-# c8850a0189714e1885097a192a9f7193
+# 0fd02bfcada14024833ef595058225a7
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:251
-#, fuzzy
 msgid ""
 "Search for your newly defined projection by typing it into the :guilabel:"
 "`Filter` box:"
 msgstr ""
 "Cari proyeksi yang baru Anda buat dengan mengetikkan nama proyeksinya di "
-"kotak Filter:"
+"kotak :guilabel:`Saring`:"
 
-# 0409cb34745a44e7810cf8b160f1cba7
+# 0f3666c561f446eea61bcbdf137abfbd
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:257
 msgid ""
 "You should see it appear in the box at the bottom. Select it, and click :"
@@ -610,7 +580,7 @@ msgid ""
 msgstr ""
 "Anda akan melihatnya muncul di kotak bawah. Pilih dan klik :guilabel:`OK`."
 
-# ce70be23b859417cb99d3d3536e89484
+# f6274110e7304e038d074f17f6bb86b3
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:260
 msgid ""
 "Once you’ve applied the new projection, the map will be reprojected like "
@@ -619,27 +589,7 @@ msgstr ""
 "Setelah Anda menerapkan proyeksi baru, peta akan memproyeksi ulang seperti "
 "ini: "
 
-# 6aeedff7ec2344a3aa766ef96dc84929
+# 260b93a7055c46ecaf7a13a9dac167df
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:266
 msgid ":ref:`Go to next module --> <working-with-vector-data>`"
-msgstr ""
-
-# 4ba270e167bc42b78a05b9450956d048
-#~ msgid "Making its own projection"
-#~ msgstr "Membuat proyeksi sendiri"
-
-# 637d813334434a5dbae4c9f0831e06f6
-#~ msgid "Zoom in to Indonesia by using the Zoom In tool."
-#~ msgstr "Perbesar ke wilayah Indonesia menggunakan tool perbesar (zoom in)."
-
-# 9cf938f51e1e4e688e6fe761118beb72
-#~ msgid "Notice how the scale stays the same!"
-#~ msgstr "Perhatikan bagaimana skala tetap sama!"
-
-# 5e773cf2a6e543c0a9f5496f2c3ef73f
-#~ msgid ""
-#~ "Now let’s add another vector layer, located in :file:`qgis/peta_dunia/"
-#~ "Indonesia.shp`."
-#~ msgstr ""
-#~ "Sekarang tambahkan layer vector lainnya, yang terletak di :file:`qgis/"
-#~ "peta_dunia/Indonesia.shp`."
+msgstr ":ref:`Pergi ke modul selanjutnya --> <working-with-vector-data>`"
