@@ -6,6 +6,27 @@ Changelog
 Changelog for version |release|
 -------------------------------
 
+This is a feature release, adding a number of new features and tools to make
+the process of contingency planning more efficient and configurable.
+
+* Code internals
+    * Preliminary support for ISO19115 metadata
+    * Improvements to the clipping logic for rasters
+* New impact functions:
+    * New volcano OpenStreetMap buildings impact function
+    * Raster flood on OSM buildings
+    * Generic / categorical impact function
+* New tools:
+    * Extent selector tool
+    * New minimum needs manager
+
+A brief description of the changes with some screenshots can be found at the
+`visual changelog <http://changelog.linfiniti.com/inasafe/version/Version-2.2
+.0/>`_ page.
+
+Changelog for version 2.1.0
+---------------------------
+
 1. Raster flood on roads performance optimisation.
 2. Added data driven age postprocessing support
 3. New keywords wizard
