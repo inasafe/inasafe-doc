@@ -7,30 +7,29 @@ Changelog for version |release|
 -------------------------------
 
 * New features:
- * New extent selector tool to let you specify precise analysis areas
- * New minimum needs manager with support for regional minimum needs profiles
- * Keywords data is now written / read as ISO19115 metadata instead of our own keywords format
- * New generic categories impact function for hazards that uses classes e.g. low / medium / high
- * New volcano OpenStreetMap buildings impact function
- * New flood on OpenStreetMap buildings impact function
- * More precise clipping to raster pixel boundaries to prevent pixel shifts
-
+  * New extent selector tool to let you specify precise analysis areas
+  * New minimum needs manager with support for regional minimum needs profiles
+  * Keywords data is now written / read as ISO19115 metadata instead of our own keywords format
+  * New generic categories impact function for hazards that uses classes e.g. low / medium / high
+  * New volcano OpenStreetMap buildings impact function
+  * New flood on OpenStreetMap buildings impact function
+  * More precise clipping to raster pixel boundaries to prevent pixel shifts
 * Key Bug fixes:
- * Fix issue with ordered Dicts in keywords #1324
- * Python error when running any IF with population data on Mac #1287
- * Fix population rounding issues #1239
- * Read the minimum needs from a configuration file #1230
- * Failing Unittests against QGIS 2.4 #1223
- * BMKG and BNPB logo does not appear on the realtime report #1182
- * Top of InaSAFE dialog cut out #1161
- * Building Category for volcano impact function #1110
- * Check that the output raster is the same cell size and location as exposure input #710
- * Running assessment at very large scales can result in unclippable rasters #349
- * Make update-translations is unreliable at detecting new strings #348
- * Clipped raster data has different resolution to original raster data #344
- * Ordered dictionary is part of python 2.7 we ship our own (untested) #341
- * Need test for presence of polygon_id in points clipped by polygon #333
- * CANVAS.layers() doesn't include the impact layer and other generated layers #306
+  * Fix issue with ordered Dicts in keywords #1324
+  * Python error when running any IF with population data on Mac #1287
+  * Fix population rounding issues #1239
+  * Read the minimum needs from a configuration file #1230
+  * Failing Unittests against QGIS 2.4 #1223
+  * BMKG and BNPB logo does not appear on the realtime report #1182
+  * Top of InaSAFE dialog cut out #1161
+  * Building Category for volcano impact function #1110
+  * Check that the output raster is the same cell size and location as exposure input #710
+  * Running assessment at very large scales can result in unclippable rasters #349
+  * Make update-translations is unreliable at detecting new strings #348
+  * Clipped raster data has different resolution to original raster data #344
+  * Ordered dictionary is part of python 2.7 we ship our own (untested) #341
+  * Need test for presence of polygon_id in points clipped by polygon #333
+  * CANVAS.layers() doesn't include the impact layer and other generated layers #306
 
 Changelog for version 2.1.0
 ---------------------------

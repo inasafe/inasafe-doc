@@ -183,7 +183,6 @@ html_sidebars = {
     'training/**': ['globaltoc.html'],
     'user-docs/**': ['globaltoc.html'],
     'developer-docs/**': ['globaltoc.html'],
-    'api-docs/**': ['globaltoc.html'],
     'road-map/**': ['globaltoc.html']}
 
 # Additional templates that should be rendered to pages, maps page names to
