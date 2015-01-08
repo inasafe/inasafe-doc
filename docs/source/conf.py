@@ -115,6 +115,8 @@ rst_epilog = """
 .. _OSM: http://www.openstreetmap.org/
 .. |Linfiniti| replace:: Linfiniti_
 .. _Linfiniti: http://linfiniti.com
+.. |Kartoza| replace:: Kartoza_
+.. _Kartoza: http://kartoza.com/
 .. |HOT| replace:: HOT_
 .. _HOT: http://hot.openstreetmap.org/
 .. |QGIS| replace:: QGIS_
