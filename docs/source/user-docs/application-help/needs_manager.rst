@@ -119,7 +119,7 @@ new ones, either from scratch, or based on an existing one (which you can
 then modify).
 
 Use the :guilabel:`New` button to create new profile. When prompted, give your
-profile a name e.g. :kdb:`JakartaProfile`.
+profile a name e.g. :kbd:`JakartaProfile`.
 
 **Note:** The profile must be saved in your home directory under :file:`.qgis2/minimum_needs`
 in order for |project_name| to successfully detect it.
