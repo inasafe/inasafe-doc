@@ -182,7 +182,7 @@ Changelog for version 0.5.0
 * Multi-page support for generated report PDF (which is now created as a
   separate document).
 * Ability to combine polygon hazard  (such as flood prone areas) with
-  population density.
+  population density grid.
 * Option to use entire intersection of hazard and exposure instead of clipping
   to the somewhat arbitrary viewport (the training revealed that this was a bit
   confusing)

@@ -24,7 +24,7 @@ suggestions and contributions.
 As such, |project_name| currently has some limitations, including
 
 * Polygon area analysis (such as land use) is not supported.
-* Population density data must be provided in WGS84 geographic coordinates
+* Population grid data must be provided in WGS84 geographic coordinates
 * Neither |AIFDR|, the World Bank, nor |GFDRR| take any responsibility for the
   correctness of outputs from |project_name| or decisions derived as a
   consequence
