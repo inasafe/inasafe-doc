@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"POT-Creation-Date: 2015-01-08 22:30+0100\n"
 "PO-Revision-Date: 2014-08-12 08:50+0000\n"
 "Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/"
@@ -28,67 +28,104 @@ msgstr ""
 msgid "Changelog for version |release|"
 msgstr ""
 
-# a06930a944a34978a3b525fd57280de4
+# 7777ea8451ec444ca58d2a35ac6528da
 #: ../../source/general/changelog.rst:13
+msgid ""
+"New features: * New extent selector tool to let you specify precise analysis "
+"areas * New minimum needs manager with support for regional minimum needs "
+"profiles * Keywords data is now written / read as ISO19115 metadata instead "
+"of our own keywords format * New generic categories impact function for "
+"hazards that uses classes e.g. low / medium / high * New volcano "
+"OpenStreetMap buildings impact function * New flood on OpenStreetMap "
+"buildings impact function * More precise clipping to raster pixel boundaries "
+"to prevent pixel shifts"
+msgstr ""
+
+# 336825369dbb4f3faae188decad449ac
+#: ../../source/general/changelog.rst:21
+msgid ""
+"Key Bug fixes: * Fix issue with ordered Dicts in keywords #1324 * Python "
+"error when running any IF with population data on Mac #1287 * Fix population "
+"rounding issues #1239 * Read the minimum needs from a configuration file "
+"#1230 * Failing Unittests against QGIS 2.4 #1223 * BMKG and BNPB logo does "
+"not appear on the realtime report #1182 * Top of InaSAFE dialog cut out "
+"#1161 * Building Category for volcano impact function #1110 * Check that the "
+"output raster is the same cell size and location as exposure input #710 * "
+"Running assessment at very large scales can result in unclippable rasters "
+"#349 * Make update-translations is unreliable at detecting new strings #348 "
+"* Clipped raster data has different resolution to original raster data #344 "
+"* Ordered dictionary is part of python 2.7 we ship our own (untested) #341 * "
+"Need test for presence of polygon_id in points clipped by polygon #333 * "
+"CANVAS.layers() doesn't include the impact layer and other generated layers "
+"#306"
+msgstr ""
+
+# a3510c20743a468389c3ad095266d14d
+#: ../../source/general/changelog.rst:39
+msgid "Changelog for version 2.1.0"
+msgstr ""
+
+# a06930a944a34978a3b525fd57280de4
+#: ../../source/general/changelog.rst:41
 msgid "Raster flood on roads performance optimisation."
 msgstr ""
 
 # 18b9d1f06788480898b8e5beda5108c5
-#: ../../source/general/changelog.rst:14
+#: ../../source/general/changelog.rst:42
 msgid "Added data driven age postprocessing support"
 msgstr ""
 
 # 697ca3deb0aa4abf99be4990a06ea906
-#: ../../source/general/changelog.rst:15
+#: ../../source/general/changelog.rst:43
 msgid "New keywords wizard"
 msgstr ""
 
 # 1822c10667bd4af8887e98cc9fa2f88c
-#: ../../source/general/changelog.rst:16
+#: ../../source/general/changelog.rst:44
 msgid "Analysis extents pre-and-postview tool"
 msgstr ""
 
 # 2c1ea375a3064d68adaeda784f3b70e7
-#: ../../source/general/changelog.rst:17
+#: ../../source/general/changelog.rst:45
 msgid "Updated keywords editor user interface"
 msgstr ""
 
 # 724659e91fac46469d733854bf52423a
-#: ../../source/general/changelog.rst:19
+#: ../../source/general/changelog.rst:47
 msgid ""
 "This release also included many many bug fixes and 'under the hood' "
 "optimisations and improvements."
 msgstr ""
 
 # a923c77596a94051a840b4f870b86411
-#: ../../source/general/changelog.rst:23
+#: ../../source/general/changelog.rst:51
 msgid "Changelog for version 2.0.0"
 msgstr ""
 
 # affc1775fb6b4c2d8d6f467decf27420
-#: ../../source/general/changelog.rst:25
+#: ../../source/general/changelog.rst:53
 msgid "Changes from a user point of view:"
 msgstr ""
 
 # b17cef413d4242ab8ea1454023419e6d
-#: ../../source/general/changelog.rst:27
+#: ../../source/general/changelog.rst:55
 msgid "Users are able to select their own hazard and exposure attribute."
 msgstr ""
 
 # baf5aa50dfa245e7b1a2d24ce71f39b1
-#: ../../source/general/changelog.rst:28
+#: ../../source/general/changelog.rst:56
 msgid "Simple wizards to walk new users through the software."
 msgstr ""
 
 # 27bc75a7e9974993a9802fe71e6bfa22
-#: ../../source/general/changelog.rst:29
+#: ../../source/general/changelog.rst:57
 msgid ""
 "Power users are able to configure their own action checklist and \"minimum "
 "needs\"."
 msgstr ""
 
 # 0630fc31833b44f690348800fa978ac0
-#: ../../source/general/changelog.rst:31
+#: ../../source/general/changelog.rst:59
 msgid ""
 "Report view in your web browser: If you find the dock panel too small to "
 "show all the report details, or if you want to open it in your browser to "
@@ -97,14 +134,14 @@ msgid ""
 msgstr ""
 
 # c83261e3d32949968488ab736fae1740
-#: ../../source/general/changelog.rst:36
+#: ../../source/general/changelog.rst:64
 msgid ""
 "Custom logo selection: As well as the new report template capabilities, you "
 "can now also set your organisation logo in the |project_name| options dialog."
 msgstr ""
 
 # f5dbac14dd5940aea70c30c948eca481
-#: ../../source/general/changelog.rst:39
+#: ../../source/general/changelog.rst:67
 msgid ""
 "Template based reports: This new feature means that you can now place your "
 "own logos in the report and customise the arrangement of the various report "
@@ -112,54 +149,54 @@ msgid ""
 msgstr ""
 
 # 25552df84441414999412e2f82040b46
-#: ../../source/general/changelog.rst:43
+#: ../../source/general/changelog.rst:71
 msgid ""
 "Options dialog overhaul: We have overhauled the options dialog to make it "
 "easier to navigate and hide away advanced options into their own panel."
 msgstr ""
 
 # 4079e87236804db88b6bc678d9a2f4dd
-#: ../../source/general/changelog.rst:47
+#: ../../source/general/changelog.rst:75
 msgid "New Functionality in |project_name|:"
 msgstr ""
 
 # aa692573842148b2a671fc35809af5ac
-#: ../../source/general/changelog.rst:49
+#: ../../source/general/changelog.rst:77
 msgid "Routing"
 msgstr ""
 
 # 49c4c9f77b0247bd88f3e58d80d1dc0a
-#: ../../source/general/changelog.rst:50
+#: ../../source/general/changelog.rst:78
 msgid "Evacuation routes"
 msgstr ""
 
 # e90e9f3132b34787933ba9f26e2bcb99
-#: ../../source/general/changelog.rst:51
+#: ../../source/general/changelog.rst:79
 msgid "Transportation from A to B"
 msgstr ""
 
 # 35e6f32179cd461fb17bbe421c0b60f9
-#: ../../source/general/changelog.rst:52
+#: ../../source/general/changelog.rst:80
 msgid "Multiple Hazard Analysis"
 msgstr ""
 
 # f2822d88f146414db2e1649542402a31
-#: ../../source/general/changelog.rst:53
+#: ../../source/general/changelog.rst:81
 msgid "Damage and Loss Assessment (DALA)"
 msgstr ""
 
 # f60a2f4f67b74f42b18b62df0944a3ae
-#: ../../source/general/changelog.rst:54
+#: ../../source/general/changelog.rst:82
 msgid "Percentage of affected area by aggregation"
 msgstr ""
 
 # 6ac177f0aca94d5280bf2599c8337c3d
-#: ../../source/general/changelog.rst:55
+#: ../../source/general/changelog.rst:83
 msgid "Polygon flood impact on roads impact function added"
 msgstr ""
 
 # 8812b43fe0a64309b5f67961fc5e17dc
-#: ../../source/general/changelog.rst:56
+#: ../../source/general/changelog.rst:84
 msgid ""
 "Impact merge tool: This tool will allow you to merge the output from two "
 "impact assessments covering the same geographic extent and aggregated by the "
@@ -167,7 +204,7 @@ msgid ""
 msgstr ""
 
 # 63254fa1bd9440ab9875ae2e1405d984
-#: ../../source/general/changelog.rst:59
+#: ../../source/general/changelog.rst:87
 msgid ""
 "OSM Roads downloader: In |project_name| 1.2 we introduced the new OSM "
 "downloader tool for buildings data. Beside a lot of improvements now roads "
@@ -176,12 +213,12 @@ msgid ""
 msgstr ""
 
 # ea8f4a1ac19a4f39a84d679ec9e365b2
-#: ../../source/general/changelog.rst:65
+#: ../../source/general/changelog.rst:93
 msgid "Changes in the code:"
 msgstr ""
 
 # ba47796e67bb48478502d260c4567f33
-#: ../../source/general/changelog.rst:67
+#: ../../source/general/changelog.rst:95
 msgid ""
 "Port to QGIS 2.0: we have ported our code base to work with the new version "
 "of QGIS. Please note: QGIS 1.x releases will no longer be supported in this "
@@ -189,64 +226,64 @@ msgid ""
 msgstr ""
 
 # 567f4fa545c84572a349dfbaba4af01d
-#: ../../source/general/changelog.rst:70
+#: ../../source/general/changelog.rst:98
 msgid ""
 "Support for PostGIS layers: You can now use PostGIS vector layers as input "
 "data for running impact functions."
 msgstr ""
 
 # 4393159788bb427a9dcaf7ec713d6946
-#: ../../source/general/changelog.rst:72
+#: ../../source/general/changelog.rst:100
 msgid "Splitting Test Suite"
 msgstr ""
 
 # edf3c9b518b1428885aca5d26ea8767e
-#: ../../source/general/changelog.rst:73
+#: ../../source/general/changelog.rst:101
 msgid "Reviewing Impact Functions"
 msgstr ""
 
 # a84d680ed1d348d7a5aea7d94fade31b
-#: ../../source/general/changelog.rst:74
+#: ../../source/general/changelog.rst:102
 msgid "Automatically run test on pull request"
 msgstr ""
 
 # 95d321709d974709b0fb8e37243953e0
-#: ../../source/general/changelog.rst:75
+#: ../../source/general/changelog.rst:103
 msgid "Easy to write impact functions"
 msgstr ""
 
 # 66ded406d1ed4ba69c286aedc1806431
-#: ../../source/general/changelog.rst:77
+#: ../../source/general/changelog.rst:105
 msgid "Visible changes in Documentation and Webpage:"
 msgstr ""
 
 # e5f971ab0dd64852ba4ffb2a9cf6a46d
-#: ../../source/general/changelog.rst:79
+#: ../../source/general/changelog.rst:107
 msgid "Update User and Developer Documentation"
 msgstr ""
 
 # 7dbcad4db9cc45a2b3d4d3ac180db04a
-#: ../../source/general/changelog.rst:80
+#: ../../source/general/changelog.rst:108
 msgid "Update Training Materials: The tutorials section has been overhauled."
 msgstr ""
 
 # 0590ef0fd62340e8875b085799502a72
-#: ../../source/general/changelog.rst:81
+#: ../../source/general/changelog.rst:109
 msgid "Track where |project_name| events are occurring"
 msgstr ""
 
 # 08d2fb1bec104ab3996e43a9282f4641
-#: ../../source/general/changelog.rst:82
+#: ../../source/general/changelog.rst:110
 msgid "News Articles"
 msgstr ""
 
 # 273ae5c1e0794cd3810c0036a7d2f003
-#: ../../source/general/changelog.rst:83
+#: ../../source/general/changelog.rst:111
 msgid "Translation into other languages"
 msgstr ""
 
 # cfa1458f8a1b46879743c85bfa3f9761
-#: ../../source/general/changelog.rst:84
+#: ../../source/general/changelog.rst:112
 msgid ""
 "New User Map: We have added a community map to our web site. Please take a "
 "moment to register yourself there as an |project_name| User, Developer or "
@@ -254,174 +291,174 @@ msgid ""
 msgstr ""
 
 # 123bda2000f44440becc3c39d92a87e6
-#: ../../source/general/changelog.rst:90
+#: ../../source/general/changelog.rst:118
 msgid "Changelog for version 1.2.0"
 msgstr ""
 
 # 8f14bbc5a7044ee2b474d0cc2a4e5a8a
-#: ../../source/general/changelog.rst:92
+#: ../../source/general/changelog.rst:120
 msgid "User Interface"
 msgstr ""
 
 # 1cc19a3f9ccc409192fcc9de399d42de
-#: ../../source/general/changelog.rst:94
+#: ../../source/general/changelog.rst:122
 msgid ""
 "Improvements to |project_name| :ref:`panel <tb_dock>`: overhauled panel with "
 "improved messaging system."
 msgstr ""
 
 # 446176e20986474ab757889d9c25b047
-#: ../../source/general/changelog.rst:96
+#: ../../source/general/changelog.rst:124
 msgid "Icon and branding overhaul: updated branding with a new Icon."
 msgstr ""
 
 # 8d1f3713922c4c2c98a9f8259e52c829
-#: ../../source/general/changelog.rst:98
+#: ../../source/general/changelog.rst:126
 msgid "Impact Functions"
 msgstr ""
 
 # c1ee75485786434f88301aca98299b94
-#: ../../source/general/changelog.rst:100
+#: ../../source/general/changelog.rst:128
 msgid ""
 "Aggregation and post-processing: added support for aggregation, that allows "
 "you to break down the results."
 msgstr ""
 
 # 2314189d49c34a1191e1d5ba0a31a72f
-#: ../../source/general/changelog.rst:102
+#: ../../source/general/changelog.rst:130
 msgid ""
 ":ref:`Minimum needs <minimum_needs>`: population was calculated in Perka 7 "
 "standard. Now it is configurable."
 msgstr ""
 
 # 39527a596e0b4aa2aa067aa115da2a7b
-#: ../../source/general/changelog.rst:105
+#: ../../source/general/changelog.rst:133
 msgid "Tools"
 msgstr ""
 
 # 0cbcc61b7bc7434c88ef66a3f2b74fb1
-#: ../../source/general/changelog.rst:107
+#: ../../source/general/changelog.rst:135
 msgid ""
 "New configuration options: selectable backend for zonal stats, developer "
 "mode to view source output."
 msgstr ""
 
 # 053772351f544b518fedfa09ab342233
-#: ../../source/general/changelog.rst:109
+#: ../../source/general/changelog.rst:137
 msgid ""
 ":ref:`Minimum needs tool <minimum_needs>`: new tool for computing minimum "
 "needs for persons."
 msgstr ""
 
 # bc6c7a46442e4d91ab2ab126552a24a9
-#: ../../source/general/changelog.rst:111
+#: ../../source/general/changelog.rst:139
 msgid ""
 "Shakemap importer: will import a :file:`grid.xml` as GEOTIFF in earthquake "
 "scenarios."
 msgstr ""
 
 # e6628c09b38a4dbab79ddc3bce23528c
-#: ../../source/general/changelog.rst:113
+#: ../../source/general/changelog.rst:141
 msgid ""
 ":ref:`Save scenario <save_scenario>`: new tool to save a scenario as a "
 "recallable text file."
 msgstr ""
 
 # b692e5c467d34cfa8b53077e7c80e8e9
-#: ../../source/general/changelog.rst:115
+#: ../../source/general/changelog.rst:143
 msgid ""
 ":ref:`OSM Buildings Downloader <openstreetmap_downloader>`: will fetch OSM "
 "data from the web."
 msgstr ""
 
 # c31c8057f27a40949ed3f22f638ecc1f
-#: ../../source/general/changelog.rst:117
+#: ../../source/general/changelog.rst:145
 msgid ""
 ":ref:`Batch runner <batch_runner>`: ability to setup and run numerous saved "
 "scenarios in one go."
 msgstr ""
 
 # 4ef0b5d856644100913b2d8a879d044d
-#: ../../source/general/changelog.rst:119
+#: ../../source/general/changelog.rst:147
 msgid "Website"
 msgstr ""
 
 # e2bf1e39bab841d78197f213a7e38c87
-#: ../../source/general/changelog.rst:121
+#: ../../source/general/changelog.rst:149
 msgid "New website launched"
 msgstr ""
 
 # 7908cf7cdf584d06af905de1bed2d8af
-#: ../../source/general/changelog.rst:124
+#: ../../source/general/changelog.rst:152
 msgid "Changelog for version 1.1.0"
 msgstr ""
 
 # 67cb877bd1cb4d76a235af2705a07e5a
-#: ../../source/general/changelog.rst:126
+#: ../../source/general/changelog.rst:154
 msgid ""
 "Flood assessment using polygons now generates evacuation totals based on "
 "percent of affected people (defaults to 1%)."
 msgstr ""
 
 # 18dd88ac59aa4000acfbc9eaf34aa1ea
-#: ../../source/general/changelog.rst:128
+#: ../../source/general/changelog.rst:156
 msgid "Improvements to error handling with more informative messages to user."
 msgstr ""
 
 # 7d49a058794c4004aef6958bcca75265
-#: ../../source/general/changelog.rst:129
+#: ../../source/general/changelog.rst:157
 msgid ""
 "Memory requirements prediction to try to warn a user when they might not "
 "have enough RAM. See https://github.com/AIFDR/|project_name|/issues/476."
 msgstr ""
 
 # 141ca315aa154510bc46bc4076100e28
-#: ../../source/general/changelog.rst:131
+#: ../../source/general/changelog.rst:159
 msgid ""
 "Remote logging support. This **opt in** feature lets you submit useful "
 "diagnostic information to our fault logger at http://sentry.linfiniti.com."
 msgstr ""
 
 # cac8f158bd444cd2a96767fc013dabc7
-#: ../../source/general/changelog.rst:133
+#: ../../source/general/changelog.rst:161
 msgid ""
 "Support for automatic creation of packages in a test repository for early "
 "adopters to test with."
 msgstr ""
 
 # 426b1d38d2a44845bb125bef59313027
-#: ../../source/general/changelog.rst:135
+#: ../../source/general/changelog.rst:163
 msgid ""
 "Fix for 2D geometries - closes https://github.com/AIFDR/|project_name|/"
 "issues/471"
 msgstr ""
 
 # 0160680560d344de8373eb881f209d7a
-#: ../../source/general/changelog.rst:136
+#: ../../source/general/changelog.rst:164
 msgid ""
 "Default dock panel to right of QGIS. Closes https://github.com/AIFDR/|"
 "project_name|/issues/326"
 msgstr ""
 
 # 3228df32aac340d7930a2273b117b4f7
-#: ../../source/general/changelog.rst:138
+#: ../../source/general/changelog.rst:166
 msgid "Fix https://github.com/AIFDR/|project_name|/issues/358"
 msgstr ""
 
 # b6896f6c13174716bf032912d0cac185
-#: ../../source/general/changelog.rst:139
+#: ../../source/general/changelog.rst:167
 msgid "Many small 'under the hood' improvements."
 msgstr ""
 
 # ebafb3a9e2b14ec287294fd31ea4301c
-#: ../../source/general/changelog.rst:140
+#: ../../source/general/changelog.rst:168
 msgid ""
 "Realtime quake mapping support. This is available in source tree only and is "
 "a server side installable application. Indonesia specific."
 msgstr ""
 
 # 415b576fffd640e380cdf207ac1155f2
-#: ../../source/general/changelog.rst:142
+#: ../../source/general/changelog.rst:170
 msgid ""
 "Realtime flood mapping support. This is available in source tree only and "
 "provides an experimental implementation for production of floodmaps. Jakarta "
@@ -429,143 +466,143 @@ msgid ""
 msgstr ""
 
 # 45e11523fac34ab9aadf8bad46f7ec84
-#: ../../source/general/changelog.rst:147
+#: ../../source/general/changelog.rst:175
 msgid "Changelog for version 1.0.1"
 msgstr ""
 
 # 2e43ffa4e8e14bbdb60d98cb77e1cb8c
-#: ../../source/general/changelog.rst:149
+#: ../../source/general/changelog.rst:177
 msgid "Fix https://github.com/AIFDR/|project_name|/issues/374"
 msgstr ""
 
 # f2a61cd325c5495daa31bba89eb7f45e
-#: ../../source/general/changelog.rst:150
+#: ../../source/general/changelog.rst:178
 msgid "Fix https://github.com/AIFDR/|project_name|/issues/375"
 msgstr ""
 
 # f18bb4a660794998991fb87de47bc9c9
-#: ../../source/general/changelog.rst:153
+#: ../../source/general/changelog.rst:181
 msgid "Changelog for version 1.0.0"
 msgstr ""
 
 # 0fbad4de4e614706b436406298c1228a
-#: ../../source/general/changelog.rst:155
+#: ../../source/general/changelog.rst:183
 msgid ""
 "Added post processor infrastructure including gender and age specific "
 "indicators"
 msgstr ""
 
 # 51fef96fd6774210b30c4b4e92115435
-#: ../../source/general/changelog.rst:157
+#: ../../source/general/changelog.rst:185
 msgid "Added data source attribution"
 msgstr ""
 
 # 39a6b3ff442e467f917b8f9c04fa155b
-#: ../../source/general/changelog.rst:158
+#: ../../source/general/changelog.rst:186
 msgid "Various GUI updates"
 msgstr ""
 
 # 2e7d236fd6954a4fa73baa0f0f0e8ea3
-#: ../../source/general/changelog.rst:159
+#: ../../source/general/changelog.rst:187
 msgid "Added use of transparency in generated maps"
 msgstr ""
 
 # d7fcdff9ea1743ca818706b9ca72a3fa
-#: ../../source/general/changelog.rst:160
+#: ../../source/general/changelog.rst:188
 msgid "Added an earthquake impact function"
 msgstr ""
 
 # e1126bdfdf404e57b7fb277d73bc26e3
-#: ../../source/general/changelog.rst:161
+#: ../../source/general/changelog.rst:189
 msgid "Documentation updates"
 msgstr ""
 
 # 459800807ad14fa5b2def57afc3fc8e4
-#: ../../source/general/changelog.rst:162
+#: ../../source/general/changelog.rst:190
 msgid "Many bugfixes and architectural improvements"
 msgstr ""
 
 # eaa737e092e74d9089f2c477ff9be54f
-#: ../../source/general/changelog.rst:163
+#: ../../source/general/changelog.rst:191
 msgid "Better internationalisation support"
 msgstr ""
 
 # 22cde20f5f204c339cd1fefe143db1ce
-#: ../../source/general/changelog.rst:166
+#: ../../source/general/changelog.rst:194
 msgid "Changelog for version 0.5.2"
 msgstr ""
 
 # 4ce4ead94e68461ebc5827cef383b5e4
-#: ../../source/general/changelog.rst:168
+#: ../../source/general/changelog.rst:196
 msgid ""
 "This is a bugfix update to address some minor translation issues in the |"
 "project_name| package."
 msgstr ""
 
 # e2927d2b21224dbb87f829f9b156052a
-#: ../../source/general/changelog.rst:172
+#: ../../source/general/changelog.rst:200
 msgid "Changelog for version 0.5.1"
 msgstr ""
 
 # c32ff74b5dec443284a36200dcc4a739
-#: ../../source/general/changelog.rst:174
+#: ../../source/general/changelog.rst:202
 msgid ""
 "This is a bugfix update to reduce the size of the |project_name| package."
 msgstr ""
 
 # bc3d0f6d98d243e7b7e34f6b7692deee
-#: ../../source/general/changelog.rst:177
+#: ../../source/general/changelog.rst:205
 msgid "Changelog for version 0.5.0"
 msgstr ""
 
 # 650ba10e243340319f032fe19c033b4d
-#: ../../source/general/changelog.rst:179
+#: ../../source/general/changelog.rst:207
 msgid "Better documentation."
 msgstr ""
 
 # 3e2233e9d8514dee92dc1d191be5b759
-#: ../../source/general/changelog.rst:180
+#: ../../source/general/changelog.rst:208
 msgid "Time stamp and other metadata added to generated map PDF."
 msgstr ""
 
 # da82737c0e034bb09e82f9ba4e8895ec
-#: ../../source/general/changelog.rst:181
+#: ../../source/general/changelog.rst:209
 msgid "Initial support for parametrisation of impact functions."
 msgstr ""
 
 # aa58dc0dfa9f43c8b2855341d3c7e71f
-#: ../../source/general/changelog.rst:182
+#: ../../source/general/changelog.rst:210
 msgid ""
 "Updated logging infrastructure including support for logging to the QGIS log "
 "panel."
 msgstr ""
 
 # fa25981fbf4c4b25a498dce969181a76
-#: ../../source/general/changelog.rst:184
+#: ../../source/general/changelog.rst:212
 msgid "Fixed missing |project_name| icon in QGIS plugin manager."
 msgstr ""
 
 # efa34c35a8b04432953b17b2d968fd29
-#: ../../source/general/changelog.rst:185
+#: ../../source/general/changelog.rst:213
 msgid "Fixes for help system under windows."
 msgstr ""
 
 # df74cc0032c2471a97ba8feaaacb27c5
-#: ../../source/general/changelog.rst:186
+#: ../../source/general/changelog.rst:214
 msgid ""
 "Multi-page support for generated report PDF (which is now created as a "
 "separate document)."
 msgstr ""
 
 # 0ddc9742431e4aaf83108fc105edf874
-#: ../../source/general/changelog.rst:188
+#: ../../source/general/changelog.rst:216
 msgid ""
 "Ability to combine polygon hazard  (such as flood prone areas) with "
 "population density."
 msgstr ""
 
 # 9c066b673ded491f82fc63c9803c1a84
-#: ../../source/general/changelog.rst:190
+#: ../../source/general/changelog.rst:218
 msgid ""
 "Option to use entire intersection of hazard and exposure instead of clipping "
 "to the somewhat arbitrary viewport (the training revealed that this was a "
@@ -573,14 +610,14 @@ msgid ""
 msgstr ""
 
 # 36bd3c776f044e469f7a3b6c64a93b4f
-#: ../../source/general/changelog.rst:193
+#: ../../source/general/changelog.rst:221
 msgid ""
 "Aggregation of raster impact layers by arbitrary polygon layers (such as "
 "kelurahan boundaries)"
 msgstr ""
 
 # f8fe9ef407c940c4b56610028fc6d37d
-#: ../../source/general/changelog.rst:195
+#: ../../source/general/changelog.rst:223
 msgid ""
 "Limited support for runtime configuration of impact functions (e.g. by "
 "changing thresholds). This is an interim measure while the team is working "
@@ -588,38 +625,38 @@ msgid ""
 msgstr ""
 
 # 68c067330c254061b113fae3f1d56afe
-#: ../../source/general/changelog.rst:198
+#: ../../source/general/changelog.rst:226
 msgid ""
 "More DRR actions added to impact function reports (such as how will warnings "
 "be disseminated, how will we reach stranded people etc.)"
 msgstr ""
 
 # 0505fd68f4e640e6b15192a42f889702
-#: ../../source/general/changelog.rst:200
+#: ../../source/general/changelog.rst:228
 msgid "Volcanic (zonal hazard) impact assessments on building and population"
 msgstr ""
 
 # 2931039c2122440faf24c72a99c9aed8
-#: ../../source/general/changelog.rst:201
+#: ../../source/general/changelog.rst:229
 msgid ""
 "New function table view that lists all the available impact functions and "
 "allows them to be filtered by different criteria."
 msgstr ""
 
 # 55abf45015bc4241897cfbcea1c53970
-#: ../../source/general/changelog.rst:203
+#: ../../source/general/changelog.rst:231
 msgid ""
 "Lots of small improvements to error reporting, GUI, translations and code "
 "quality."
 msgstr ""
 
 # 40b59fb613784c4988abaa226e9aa244
-#: ../../source/general/changelog.rst:207
+#: ../../source/general/changelog.rst:235
 msgid "Changelog for version 0.4.1"
 msgstr ""
 
 # fbc8ae7158c34a1ca46201605e1678df
-#: ../../source/general/changelog.rst:209
+#: ../../source/general/changelog.rst:237
 msgid ""
 "This is a minor bugfix release with packaging and documentation related "
 "changes only so that |project_name| can be deployed via the official QGIS "
@@ -627,236 +664,236 @@ msgid ""
 msgstr ""
 
 # 1b18710cb4bc4d00a64c0981d7fdb07e
-#: ../../source/general/changelog.rst:212
+#: ../../source/general/changelog.rst:240
 msgid "Added |project_name| tutorial to sphinx documentation"
 msgstr ""
 
 # 91b0c4dbbc444012bd19b80c9200329b
-#: ../../source/general/changelog.rst:215
+#: ../../source/general/changelog.rst:243
 msgid "Changelog for version 0.4.0"
 msgstr ""
 
 # c1c12f51707a4694ad176850fb94c7c9
-#: ../../source/general/changelog.rst:216
+#: ../../source/general/changelog.rst:244
 msgid ""
 "Ability to automatically handle multipart vector data: https://github.com/"
 "AIFDR/|project_name|/issues/160"
 msgstr ""
 
 # 8ad76ec477314187ab62a938c35ce809
-#: ../../source/general/changelog.rst:218
+#: ../../source/general/changelog.rst:246
 msgid "Better error reporting:"
 msgstr ""
 
 # 8a992b8dd24a44439fa97bb2bfd4101a
-#: ../../source/general/changelog.rst:220
+#: ../../source/general/changelog.rst:248
 msgid "https://github.com/AIFDR/|project_name|/issues/170"
 msgstr ""
 
 # 509fbe01827f45778a8fe78e651e05d2
-#: ../../source/general/changelog.rst:221
+#: ../../source/general/changelog.rst:249
 msgid "https://github.com/AIFDR/|project_name|/issues/161"
 msgstr ""
 
 # d7484be4a5384caaa132508c26c88a69
-#: ../../source/general/changelog.rst:222
+#: ../../source/general/changelog.rst:250
 msgid "https://github.com/AIFDR/|project_name|/issues/157"
 msgstr ""
 
 # 9dd3899c2441453d888235df40bd04ab
-#: ../../source/general/changelog.rst:224
+#: ../../source/general/changelog.rst:252
 msgid "Bug fixing:"
 msgstr ""
 
 # f30b4b4d085848efbaebe39efc6277c2
-#: ../../source/general/changelog.rst:226
+#: ../../source/general/changelog.rst:254
 msgid "https://github.com/AIFDR/|project_name|/issues/159"
 msgstr ""
 
 # a40a482bb2924675ba34a2496a003633
-#: ../../source/general/changelog.rst:227
+#: ../../source/general/changelog.rst:255
 msgid "https://github.com/AIFDR/|project_name|/issues/156"
 msgstr ""
 
 # be3bc17f6c85424b86f835ada7b0c6f2
-#: ../../source/general/changelog.rst:228
+#: ../../source/general/changelog.rst:256
 msgid "https://github.com/AIFDR/|project_name|/issues/173"
 msgstr ""
 
 # 0abfea2dde9245729ffa2dced84b0537
-#: ../../source/general/changelog.rst:229
+#: ../../source/general/changelog.rst:257
 msgid "https://github.com/AIFDR/|project_name|/issues/166"
 msgstr ""
 
 # 6102bc15b2634480b68bd96fcf7cb85e
-#: ../../source/general/changelog.rst:230
+#: ../../source/general/changelog.rst:258
 msgid "https://github.com/AIFDR/|project_name|/issues/162"
 msgstr ""
 
 # 7f856c1064e5451780d7e24a4c75a74a
-#: ../../source/general/changelog.rst:232
+#: ../../source/general/changelog.rst:260
 msgid ""
 "|project_name| APIs better defined: https://github.com/AIFDR/|project_name|/"
 "issues/134"
 msgstr ""
 
 # d82266f7c8254a0b961fc19e5764b4dd
-#: ../../source/general/changelog.rst:233
+#: ../../source/general/changelog.rst:261
 msgid ""
 "Release procedure developed: https://github.com/AIFDR/|project_name|/"
 "issues/109"
 msgstr ""
 
 # 3e4ba0d3b62f4738b3d97cb158cf5dbc
-#: ../../source/general/changelog.rst:234
+#: ../../source/general/changelog.rst:262
 msgid ""
 "Added estimate of displaced people to earthquake fatality model: https://"
 "github.com/AIFDR/|project_name|/commit/04f0e1d"
 msgstr ""
 
 # d22d5ab80f3c46e89950de0dc81e3c28
-#: ../../source/general/changelog.rst:236
+#: ../../source/general/changelog.rst:264
 msgid "Achieved 100% translation for Bahasa Indonesia"
 msgstr ""
 
 # f2d2a4a9c2e344ab9859f76708a212d5
-#: ../../source/general/changelog.rst:237
+#: ../../source/general/changelog.rst:265
 msgid ""
 "Made bundled test and demo data public with associated license information"
 msgstr ""
 
 # bfdaebd833424563b0052f6256ac6029
-#: ../../source/general/changelog.rst:238
+#: ../../source/general/changelog.rst:266
 msgid "Added AusAid and World Bank logos to dock"
 msgstr ""
 
 # 341ded10756e48918234760219ee5ff4
-#: ../../source/general/changelog.rst:239
+#: ../../source/general/changelog.rst:267
 msgid "Fixed bug with flood population evacuation reporting units"
 msgstr ""
 
 # 4742674472c9424eafea4841d9808c26
-#: ../../source/general/changelog.rst:244
+#: ../../source/general/changelog.rst:272
 msgid "Changelog for version 0.3.0"
 msgstr ""
 
 # 1a2bdf2e9f0d4d87bd5ae4a1fb75a7a6
-#: ../../source/general/changelog.rst:245
+#: ../../source/general/changelog.rst:273
 msgid ""
 "Documentation updates - extended guides for using the |project_name| dock "
 "and keyword editors."
 msgstr ""
 
 # d155b83f583e48f8b7e74bd0c32bbab9
-#: ../../source/general/changelog.rst:247
+#: ../../source/general/changelog.rst:275
 msgid "Support for remote layers in keywords editor and scenario modelling"
 msgstr ""
 
 # 6b8a0c037f5a44089c5bdb9ea7a7405d
-#: ../../source/general/changelog.rst:248
+#: ../../source/general/changelog.rst:276
 msgid "Added options dialog"
 msgstr ""
 
 # 60250e380a254f3b8e0624d5d856da2b
-#: ../../source/general/changelog.rst:249
+#: ../../source/general/changelog.rst:277
 msgid ""
 "Support for using all layers in hazard and exposure combos, not just visible "
 "ones (configurable in options dialog)"
 msgstr ""
 
 # ec2ed9209f5b43fca8faafb89bd6eac5
-#: ../../source/general/changelog.rst:251
+#: ../../source/general/changelog.rst:279
 msgid ""
 "Support for displaying keywords title in QGIS layer list (configurable in "
 "options dialog)"
 msgstr ""
 
 # 03c9100290d74365bb5d2a08cf519dcd
-#: ../../source/general/changelog.rst:253
+#: ../../source/general/changelog.rst:281
 msgid ""
 "When selecting a hazard or exposure layer, its keywords are now displayed in "
 "the results area."
 msgstr ""
 
 # 86d6a9bea7d14cb78c7818cb3fa85d9a
-#: ../../source/general/changelog.rst:255
+#: ../../source/general/changelog.rst:283
 msgid ""
 "Performance improvements when toggling layer visibility and adding and "
 "removing layers."
 msgstr ""
 
 # bb29a5e4525641799bcd3afe44fcfbcf
-#: ../../source/general/changelog.rst:257
+#: ../../source/general/changelog.rst:285
 msgid "Support for QGIS 1.8 when it is released"
 msgstr ""
 
 # 340ae7845a144c8f9bfaa0b5194c9b56
-#: ../../source/general/changelog.rst:258
+#: ../../source/general/changelog.rst:286
 msgid "Numerous other 'under the hood' bug fixes and improvements"
 msgstr ""
 
 # 3e34ccaf6df34f2c8c24f4e5fabdb841
-#: ../../source/general/changelog.rst:259
+#: ../../source/general/changelog.rst:287
 msgid ""
 "Migrated code base from RIAB to |project_name| and restructured the code base"
 msgstr ""
 
 # 7fcbee0c65564c25927b32a6797aea9c
-#: ../../source/general/changelog.rst:260
+#: ../../source/general/changelog.rst:288
 msgid "Added additional tests"
 msgstr ""
 
 # 3b108a6ed15e411db4f7ba6193a265a6
 # 7ff7fc6693f0450f884260168b94fa1a
-#: ../../source/general/changelog.rst:263
-#: ../../source/general/changelog.rst:278
+#: ../../source/general/changelog.rst:291
+#: ../../source/general/changelog.rst:306
 msgid "Changelog for version 0.2.1:"
 msgstr ""
 
 # 94163504c24a4450927fc1cf531d9373
-#: ../../source/general/changelog.rst:264
+#: ../../source/general/changelog.rst:292
 msgid "Correct translation of 'run' in indonesian. Closes #128"
 msgstr ""
 
 # d246eb4111cd42bd848ab488ba657d6d
-#: ../../source/general/changelog.rst:265
+#: ../../source/general/changelog.rst:293
 msgid "Updated so that version number is shown in dock"
 msgstr ""
 
 # 41136fa813b6487191b4fc7ba87090c7
-#: ../../source/general/changelog.rst:266
+#: ../../source/general/changelog.rst:294
 msgid "Removed generated file from polygon test"
 msgstr ""
 
 # 29d6c0a4529c40db9ef6a4f887a24196
-#: ../../source/general/changelog.rst:267
+#: ../../source/general/changelog.rst:295
 msgid "Removed the -dev designation from branch releases"
 msgstr ""
 
 # 5f9f0ca264a441878d307c871848713d
-#: ../../source/general/changelog.rst:268
+#: ../../source/general/changelog.rst:296
 msgid "Fix indent error causing noise to show in qgis plugin manager"
 msgstr ""
 
 # 8da880dc0c74497ea5e3a0a428392fe2
-#: ../../source/general/changelog.rst:269
+#: ../../source/general/changelog.rst:297
 msgid "Fixed typo - BNPD to |BNPB|"
 msgstr ""
 
 # a7e9304e9ce74d79bbde187e90855151
-#: ../../source/general/changelog.rst:270
+#: ../../source/general/changelog.rst:298
 msgid "Fixed bug where close button does not dispose of the help dialog"
 msgstr ""
 
 # aa9be914f23c42319c527400985607dc
-#: ../../source/general/changelog.rst:271
+#: ../../source/general/changelog.rst:299
 msgid ""
 "Fixed an issue that prevented the use of earthquake functions when using "
 "keywords with lowercase mmi. Closes #142"
 msgstr ""
 
 # 56bc12c2723f4152bcd0ab8941050ab6
-#: ../../source/general/changelog.rst:273
+#: ../../source/general/changelog.rst:301
 msgid ""
 "Fix for mac clipping issues - the plugin should work on OSX now. Closes "
 "#141. Note that OSX users should upgrade to GDAL 1.9 available here: http://"
@@ -864,91 +901,91 @@ msgid ""
 msgstr ""
 
 # aa2e60e1f2f64f4c94d40aeb35cdc6f3
-#: ../../source/general/changelog.rst:280
+#: ../../source/general/changelog.rst:308
 msgid "Map printing support"
 msgstr ""
 
 # b97ba49823c94a8a8e983065ab4e1fcf
-#: ../../source/general/changelog.rst:281
+#: ../../source/general/changelog.rst:309
 msgid "Improved translation support and Indonesian translation updates"
 msgstr ""
 
 # 79cb60aa225c4e589886b36d0e89d838
-#: ../../source/general/changelog.rst:282
+#: ../../source/general/changelog.rst:310
 msgid "Rebranded from Risk in a Box to |project_name|"
 msgstr ""
 
 # cda04a2dd8534c2db41f967cf384fd1b
-#: ../../source/general/changelog.rst:283
+#: ../../source/general/changelog.rst:311
 msgid "Documentation updates and documented windows developer procedures"
 msgstr ""
 
 # 785635211bce4704b6488eb71acca15c
-#: ../../source/general/changelog.rst:284
+#: ../../source/general/changelog.rst:312
 msgid "Support for generating documentation and running tests under Windows"
 msgstr ""
 
 # 68e41be995394091a3fd58f242a1386b
-#: ../../source/general/changelog.rst:285
+#: ../../source/general/changelog.rst:313
 msgid "Scripts for semi-automatic packaging of a release"
 msgstr ""
 
 # 925afb1badca4fecbc52ba0c9277b50d
-#: ../../source/general/changelog.rst:286
+#: ../../source/general/changelog.rst:314
 msgid "Improvements to Impact calculator algorithms"
 msgstr ""
 
 # 18c2a20956f4481c9cf26c7c7b7e696a
-#: ../../source/general/changelog.rst:289
+#: ../../source/general/changelog.rst:317
 msgid "Changelog for version 0.1.0:"
 msgstr ""
 
 # d33912eede424a85a82f509f33538e3b
-#: ../../source/general/changelog.rst:291
+#: ../../source/general/changelog.rst:319
 msgid "First QGIS plugin implementation of |project_name|."
 msgstr ""
 
 # 6a6f9a5db81b45f5bcbefc1d61260286
-#: ../../source/general/changelog.rst:292
+#: ../../source/general/changelog.rst:320
 msgid "Migrated calculation engine from Risiko project."
 msgstr ""
 
 # 02d8e9e2f8534ad2b51ed4fbd570a8e4
-#: ../../source/general/changelog.rst:293
+#: ../../source/general/changelog.rst:321
 msgid "Implemented support for polygon hazard layers."
 msgstr ""
 
 # 77c4b05902a74c3eb19beb27d1f6a05a
-#: ../../source/general/changelog.rst:294
+#: ../../source/general/changelog.rst:322
 msgid "Added dock widget for designing and executing a scenario model."
 msgstr ""
 
 # 5e583ffdba4a4d058b9035e4eec1296a
-#: ../../source/general/changelog.rst:295
+#: ../../source/general/changelog.rst:323
 msgid "Added the keyword editor for assigning metadata to input files."
 msgstr ""
 
 # 01a3b2260a4541c3b874485630c99e61
-#: ../../source/general/changelog.rst:296
+#: ../../source/general/changelog.rst:324
 msgid "Added integrated context help tool."
 msgstr ""
 
 # 3c5288f3899d49cfaac1642f6e501272
-#: ../../source/general/changelog.rst:297
+#: ../../source/general/changelog.rst:325
 msgid "Removed django specific dependencies from the |project_name| libs."
 msgstr ""
 
 # d740efd8664f4443becd4c9116694edc
-#: ../../source/general/changelog.rst:298
+#: ../../source/general/changelog.rst:326
 msgid "removed dependency on SciPy"
 msgstr ""
 
 # 2d7a435bbde344f5be8dd07c633219b0
-#: ../../source/general/changelog.rst:299
+#: ../../source/general/changelog.rst:327
 msgid "Support for internationalisation."
 msgstr ""
 
 # af3e9a2d560a4acc8e71d004e22543fc
-#: ../../source/general/changelog.rst:300
+#: ../../source/general/changelog.rst:328
 msgid "Comprehensive documentation system."
 msgstr ""
