@@ -24,7 +24,7 @@ The use of the |project_name| has triggered a lot of new feature requests that
 have been prioritised by |BNPB| and|AIFDR| and are being developed by |Kartoza|.
 See :ref:`road_map` for more details. In 2014, UGM conducted a scoping mission
 interviewing disaster managers, scientist, and other stakeholders to devise a
-priority list for|project_name| in Indonesia.
+priority list for |project_name| in Indonesia.
 
 In September 2014, a technical workshop was held in Jakarta bringing together
 disaster managers, software developers, trainers and users. This workshop
@@ -86,10 +86,9 @@ PSC Members
 ...........
 
 ==================== ====================== ======================================== ================ ============
-Name                 Agency                 Position                                 Role             Committee
+Name                  Agency                 Position                                 Role             Committee
 -------------------- ---------------------- ---------------------------------------- ---------------- ------------
-Sutopo Purwo Nugroho |BNPB|                 Head Data, Information & PR              Steer            PSC
-Wisnu Widjaja        |BNPB|, |AIFDR|        Co-Director AIFDR                        Steer            PSC
+Dodi Ruswandi        |BNPB|                 Prime Secretary                          Steer            PSC
 Jon Burrough         |AIFDR|, |GoA|         Co-Director AIFDR                        Steer            PSC
 Iwan Gunawan         |GFDRR|                Sr. Disaster Risk Management Specialist  Steer            PSC
 ==================== ====================== ======================================== ================ ============
