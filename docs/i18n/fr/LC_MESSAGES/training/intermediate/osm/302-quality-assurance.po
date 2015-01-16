@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"POT-Creation-Date: 2014-12-22 12:27\n"
 "PO-Revision-Date: 2014-03-04 10:10+0000\n"
 "Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/"
@@ -19,67 +19,68 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 # feace5fb41bb4663a467bf781d5994e4
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:8
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:10
 msgid "Module 2: Quality Assurance"
 msgstr ""
 
 # e30230f67cef4a599938846d17b927dd
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:10
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:12
 msgid "**Learning Objectives**"
 msgstr "**Objectifs d'apprentissage**"
 
 # 6d6d1c7af2804a43a7b71f77b4d59730
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:12
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:14
 msgid "Use validation tools in JOSM"
 msgstr ""
 
 # 39a263d321124594ab39b1b9b4f81f08
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:13
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:15
 msgid "Use online validation tools"
 msgstr ""
 
-# e393c7845750491892fbd934db2ffc96
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:15
+# 03fcb3e8ce3d47c686d9b96d4149adb3
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:17
 msgid ""
 "Contributing to OpenStreetMap is easy to learn, but difficult to master. "
 "Everybody makes mistakes, but the system works because even when one person "
 "does something the “wrong” way, there are always other mappers ready to help "
-"and fix errors. As you map more and more, it will continue to get easier, "
-"and you will learn the “proper” way to do things. In this chapter we will "
-"take a look at the JOSM validation tool, which is an automated tool to "
-"search for errors and warnings in your data. We will also take a look at one "
-"of the online validation tools, which can aid us further in identifying "
-"mistakes on OpenStreetMap."
+"and fix errors. As you map more and more it will continue to get easier, and "
+"you will learn the “proper” way to do things. In this module we will take a "
+"look at the JOSM validation tool, which is an automated tool to search for "
+"errors and warnings in your data. We will also take a look at one of the "
+"online validation tools, which can aid us further in identifying mistakes on "
+"OSM."
 msgstr ""
 
-# eea74857485d448c95d1afacdaa8fb8b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:26
-msgid "**1. Errors and Warnings**"
+# 384d4330207a4603b26dffbd847aea5b
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:29
+msgid "1. Errors and warnings"
 msgstr ""
 
-# da21dcaa7c8f46c086485e281d701e7d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:28
+# 0c83b3631fea446a95200d1616ba0982
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:31
 msgid ""
-"Sometimes when you go to upload your edits you get a pop-up window like this:"
+"Sometimes when you go to upload your edits in JOSM you get a pop-up window "
+"like this:"
 msgstr ""
 
 # f9b00ac1ea17416b8e27cf9b4addd1d2
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:33
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:37
 msgid ""
 "This is JOSM’s way of telling you that there is suspicious data and that you "
 "might want to review the errors and warnings before uploading to OSM."
 msgstr ""
 
-# 2ca93a49efad4367bbd25d8547d0a1d7
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:36
+# ab99360bc67c419c830eb1ed8827a93a
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:40
 msgid ""
 "JOSM comes with a tool that does an automated analysis of possible mistakes. "
 "This is useful for finding errors that you may have overlooked. When you run "
-"the validation tool, it will return two lists of problems:"
+"the validation tool, it returns two lists of problems:"
 msgstr ""
 
 # e1a21f99b58245aea4de20c23a3b8739
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:40
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:44
 msgid ""
 "**Errors:** These are important to fix, and therefore usually you should not "
 "ignore these. Examples of errors include duplicated objects or overlapping "
@@ -87,35 +88,35 @@ msgid ""
 msgstr ""
 
 # 16084c5862f04f8b80b4cbd1bdf7964c
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:44
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:48
 msgid ""
 "**Warnings:** These are problems that are important to fix, but in some "
 "cases, they are tolerable."
 msgstr ""
 
-# 15fe6abce6d54bfca5c7cda8216e17bb
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:47
+# 06961b0990c64b72bede90d79a873cc1
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:51
 msgid ""
 "One thing to note is that if you download a large area of the map and run "
 "the validation tool, you may get a very long list of errors and warnings. "
 "This is because the validation tool works on the whole map, not only the "
-"changes that you have made. So you may see mistakes that other mappers have "
-"made, and you can fix them, or ignore them. But the validation tool gives "
-"you the opportunity to look at the mistakes one by one."
+"changes that you have made. You may see mistakes that other mappers have "
+"made, and you can fix them, or ignore them. The validation tool gives you "
+"the opportunity to look at the mistakes one by one."
 msgstr ""
 
-# 7560aacd32ec487ea25d205df5f3f8b4
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:56
-msgid "**2. Using the Validation Tool**"
+# 3cda28928a2b474aaccceb5e14c67749
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:61
+msgid "2. Using the validation tool"
 msgstr ""
 
 # 504998d89bf4430583d8eaf561e03079
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:58
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:63
 msgid "Let’s see how to use the validation tool:"
 msgstr ""
 
 # 4f3f03c580c64e1cb3afacdf24f2fb4f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:60
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:65
 msgid ""
 "In JOSM, download a section of the map. If you don’t see the :guilabel:"
 "`Validation Results` window in the right panel, click on the blue checkmark "
@@ -123,7 +124,7 @@ msgid ""
 msgstr ""
 
 # 5a931f0f1bf942cca92459cc8b6ab6fc
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:67
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:72
 msgid ""
 "Ensure that nothing on the map is selected. If you run the validation tool "
 "with anything selected, it will only validate what you have selected, and "
@@ -132,181 +133,325 @@ msgid ""
 msgstr ""
 
 # 002aa3c185b84fb6b35592fbb962209d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:75
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:80
 msgid ""
 "The map will change and any warnings will be circled in yellow, errors in "
 "red. In the :guilabel:`Validation Results` window you will see a list of "
 "warnings and errors, if there are any."
 msgstr ""
 
-# d45b38f5d06d4740bdfba3b48ffaf712
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:82
+# 57d36ca014e8461cb5b0559a2d5d1daf
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:87
 msgid ""
-"Errors should almost always be fixed. You can zoom to an error, by right "
-"clicking on it in the window and selecting :guilabel:`Zoom to Problem`. Then "
-"you can fix the mistake manually. Some errors can be automatically fixed, "
-"such as \"Duplicated nodes” errors. You can click on the folder for these "
-"types of errors and click the :guilabel:`Fix` button in the window. Many "
-"errors, however, need to be corrected manually."
+"Errors should almost always be fixed. Zoom to an error by right-clicking on "
+"it in the window and selecting :guilabel:`Zoom to Problem`. Then fix the "
+"mistake manually."
 msgstr ""
 
-# 127e63e770af434a947c081101472a9b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:94
+# 3c8eb31254904ab99f8cd2b0b8959ab8
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:92
+msgid ""
+"Some errors can be automatically fixed, such as \"Duplicated nodes” errors. "
+"Click on the folder for these types of errors and click the :guilabel:`Fix` "
+"button in the window. Many errors, however, need to be corrected manually."
+msgstr ""
+
+# 55ef7b91bad747c8af542cd49e0a7a07
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:100
 msgid ""
 "Usually there are many more warnings than errors. By giving you a warning, "
-"JOSM is telling you that it is probably a mistake, but not always. So you "
-"will need to use your judgement to see if it is an error or not."
+"JOSM is telling you that it is probably a mistake, but not always. Use your "
+"judgement to see if it is an important error or not."
 msgstr ""
 
 # 4479f4b663b14ae8b7d168f12d0fa73b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:99
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:105
 msgid ""
 "If you select a warning from the list and decide that it is not a problem, "
 "click :guilabel:`Ignore` and it will be removed from the list."
 msgstr ""
 
-# f5ac8c4bcb1643edb765fab505a1928d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:101
+# efd5255ba58947b695e50947675555b2
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:108
 msgid ""
-"You can re-run the validation tool at any time by clicking :guilabel:"
-"`Validation`"
+"Re-run the validation tool at any time by clicking the :guilabel:"
+"`Validation` button."
 msgstr ""
 
-# 8093e061741545aa8d34c5caa6b137ed
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:104
-msgid "**3. Using The Tasking Manager**"
-msgstr ""
-
-# 4069c27e5e37473d9998a8a8d55005d8
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:106
-msgid ""
-"HOT Tasking Manager, a tool that mappers can use to sort an area into a "
-"grid, and work together to map an area in an organized way. Aside from being "
-"more organized, the tasking manager is also one way to avoid conflicts, "
-"because it is impossible for more than one person editing the same area."
-msgstr ""
-
-# b08f0d50d27e4144bbc04b33c31c86c5
+# fdb5823b807442528c39618f5809ce1d
 #: ../../source/training/intermediate/osm/302-quality-assurance.rst:112
+msgid "3. Common validation warnings"
+msgstr ""
+
+# 03d65ac3a0614c1cbe722bff9b583162
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:115
+msgid "Ways that are not closed"
+msgstr ""
+
+# 7f7759b1190a4ac4af7f3233f69c9d3f
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:116
+msgid ""
+"This is usually a line that does not form a polygon. Common examples are "
+"buildings where the first node does not meet the last node."
+msgstr ""
+
+# 04210d7a98a24df4bc6eaf514cd19440
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:122
+msgid ""
+"To fix this, select both nodes and go to :menuselection:`Tools ‣ Merge "
+"Nodes` to connect them."
+msgstr ""
+
+# 5d8f8f01bdfd4fd8976f6ea18fa380a1
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:126
+msgid "Crossing buildings (overlapping buildings)"
+msgstr ""
+
+# 5d08b6e9b9a54004aefa4b110d2e9f17
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:128
+msgid "This means that buildings are overlapping each other."
+msgstr ""
+
+# ef2fd81a34ec4c48aefdbb9ad06757cf
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:133
+msgid ""
+"To fix this, move the nodes of one of the buildings outside of the other "
+"building. It is possible for two buildings to share nodes, if the buildings "
+"share a common wall. But two buildings cannot overlap with one another."
+msgstr ""
+
+# c06a48ed80e94f069367b96b191fd09c
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:138
+msgid "Untagged nodes or ways"
+msgstr ""
+
+# c1ccbfb230d847b098b17d721c7a6d46
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:140
+msgid ""
+"If someone draws a point or a line but forgets to give it any tags, then it "
+"is useless, because it does not mean anything."
+msgstr ""
+
+# 9824e6f3381f4d3ea7ef14bdf664744e
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:146
+msgid ""
+"To fix this, apply tags to the object to identify it, or delete it if it is "
+"a mistake."
+msgstr ""
+
+# f992dbed3d3f41b59dc6e4f3344eb584
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:150
+msgid "End node near another way"
+msgstr ""
+
+# eade5966f5824ad9ae5c14574f9a466a
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:152
+msgid ""
+"If a line ends very close to another line but does not connect, this raises "
+"a warning."
+msgstr ""
+
+# df71d2b9e8cb4703b449dcb16ad1c639
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:155
+msgid ""
+"Many times this warning is not important, but it helps to find road "
+"intersections that are supposed to connect but do not."
+msgstr ""
+
+# 9c251399178b4f3f965e3a84688d5e6f
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:162
+msgid "Crossing ways"
+msgstr ""
+
+# 775da5c5e347453eac69fe09bfde95ee
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:164
+msgid ""
+"Lines that cross other lines without being connected will raise warnings. "
+"Many times this is not a problem, because the crossing ways are intentional "
+"- such as in the case of bridges, or streets and rivers that cross landuse "
+"polygons. However, it is sometimes helpful to find errors."
+msgstr ""
+
+# e282978ab6754cd6a7a034e6561bbc99
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:174
+msgid ""
+"OSM depends on people correcting and editing mistakes. Editing and "
+"validating data is important for improving maps. If you do not have time to "
+"get in the field with a GPS or trace imagery, validating objects and "
+"attribute data is a good way to contribute."
+msgstr ""
+
+# 6fd6aed4f41a4a398853a78758cac514
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:181
+msgid "4. Using the tasking manager"
+msgstr ""
+
+# b424c594175543f8adc9f0acfb62ac2b
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:183
+msgid ""
+"The OSM Tasking Manager is a tool that mappers can use to sort an area into "
+"a grid, and work together to map in an organised way. Apart from being more "
+"organised, the tasking manager is also one way to avoid editing conflicts, "
+"because it helps prevent more than one person from editing the same area at "
+"the same time."
+msgstr ""
+
+# 88b7dd3dcdfe4acd9854e5543fd357bb
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:189
 msgid ""
 "One consistent challenge is coordinating field and/or remote workers to map "
-"an area together. To help address this, HOT has developed an OpenStreetMap "
-"Tasking Tool to make it easier for administrators to define the areas of "
-"mapping interest and to delegate workers. The idea behind this tool is that "
-"if there is an area, let’s say a city, that we want to map, and we have some "
-"people mapping on the ground, and some people mapping remotely using "
-"satellite imagery, this tool will allow us to create a grid of the entire "
-"area. Collaborators can select blocks in the grid that they plan to map, and "
-"when they finish, they can mark that area as complete. In this way a team of "
-"many people can coordinate to map the entire grid."
+"an area together. To help address this, HOT has developed the Tasking "
+"Manager to make it easier for administrators to define the areas of mapping "
+"interest and to delegate workers. The idea behind this tool is that if there "
+"is an area, let’s say a city, that we want to map, we can coordinate between "
+"people mapping on the ground and others mapping remotely with satellite "
+"imagery, This tool allows us to create a grid of the entire area. "
+"Collaborators select blocks in the grid that they plan to map, and when they "
+"finish, they mark the area as complete. In this way a team of many people "
+"can coordinate to map the entire grid."
 msgstr ""
 
 # 22fec1c56ffd404a887f24bdd2254049
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:125
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:202
 msgid "To see how the tasking manager works, let’s take a closer look."
 msgstr ""
 
-# 4cd2df9c44444ebba9ba986645765a88
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:127
+# 266129d31d954910b56b2139e1fb9944
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:204
 msgid ""
-"Open your Internet browser and go to tasks.hotosm.org. You will see a page "
-"like this:"
+"Open your internet browser and go `here <http://tasks.hotosm.org>`_. You "
+"will see a page like this:"
 msgstr ""
 
-# 4e0bb779f835491bb75f68a6ed787160
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:133
-msgid ""
-"Click :guilabel:`Log in using your OpenStreetMap account` Here you are "
-"agreeing to allow this application some access to your OpenStreetMap "
-"account. Click :guilabel:`Save Changes`."
+# 1a7ad4d7c9824b45a1db103c044a9d4b
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:210
+msgid "Click :guilabel:`login to OpenStreetMap`."
 msgstr ""
 
-# 58b3c683660143578cc870091d3ba4f4
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:141
+# d97a39cfe3e4434d882606b81154d6b5
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:212
 msgid ""
-"Now you will see the current list of projects. These are different places "
-"that people are coordinating to map."
+"Here you must agree to allow this application some access to your OSM "
+"account. To do so, click :guilabel:`Save Changes`."
+msgstr ""
+
+# 58893edb0a544c0ba2300e6ce4d0eaa0
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:218
+msgid ""
+"On the left is a list of current mapping tasks. These are different places "
+"in the world that people are coordinating to map."
 msgstr ""
 
 # 151b091ac0b946b3aa68f4aef1927fa2
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:147
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:224
 msgid "Click on one of the projects to see more information about it."
 msgstr ""
 
-# e085a6e887a741c6993da105f30b2eaa
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:152
+# 0cd9a6e666b64617be322169c0768b43
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:229
 msgid ""
 "This page shows you everything you need to know about the project. On the "
 "left side of the page is a description of the mapping project and how it is "
-"being organized. You can click on the different tabs to get more "
+"being organised. You can click on the different tabs to get more "
 "information. On the right side is a grid showing the area to be mapped. Red "
 "grid squares have been completed, green squares have been completed and "
 "checked by another person, and the remaining squares still need to be mapped "
-"or are being worked on. By clicking on the “Workflow” tab, you can get "
-"information about how collaborators are meant to help map. By clicking on :"
-"guilabel:`Task` you can take a grid square to work on yourself."
+"or are being worked on."
 msgstr ""
 
-# 3cc0853e5bbf44079b027e12d7d5a69d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:168
+# 5df6630b0cff4b7183ae335935ceeb39
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:238
 msgid ""
-"Here you see a view of the square that you have offered to map. You can "
-"automatically open the area up for editing with JOSM, Potlatch 2, or create "
-"a Walking Paper. If you plan to edit with JOSM, you need to enable a JOSM "
-"plugin before you will be able to launch the application from the Tasking "
-"Manager. To do this, open JOSM and go the :menuselection:`Preferences` menu. "
-"Click on the  :guilabel:`Remote Settings` tab and check the box next to :"
-"guilabel:`Enable remote control`. Restart JOSM."
+"Click on the :guilabel:`Activity` tab to see activity for this task. The :"
+"guilabel:`Stats` tab shows various users and their contributions."
 msgstr ""
 
-# 49347d750f6d470fb56be598a31e7364
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:181
+# db7bb4a772a147b5b079a34e016bb45d
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:241
 msgid ""
-"Go back to the Tasking Manager and choose JOSM. If you have JOSM open and "
-"you correctly enabled the remote control, the grid area of the map you "
-"selected will automatically be loaded into JOSM."
+"To claim a grid square to work on yourself, click :guilabel:`Start "
+"contributing` on the :guilabel:`Instructions` tab, or simply click an "
+"unclaimed square on the map and then click :guilabel:`Start mapping`."
 msgstr ""
 
-# fd29cba65c89409fb29e3454c45aacd5
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:184
+# 5927352a77c743d19354312c8d928cbd
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:248
 msgid ""
-"You may now edit the area using the instructions provided in the project "
-"information. When you are finished, you can return to the tasking manager "
-"website and add comments about your changes. Click :guilabel:`Mark task as "
-"done` to let other collaborators know that you have finished this grid "
-"square. If you were unable to complete the task, click :guilabel:`Unlock it` "
-"to make it available again for other mappers."
+"Next you see a view of the square that you have chosen to map. Click the "
+"button on the left to open the area up for editing with JOSM, iD, Potlatch 2 "
+"or create a Field Paper."
 msgstr ""
 
-# 67d25a00679c4e40b5cc818767221d92
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:196
+# 16ad9f11a88a4fa1ace0752b5878002c
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:257
 msgid ""
-"If you are wondering what happens when you finish an area, the grid square "
-"will turn red on the map to indicate that is done. Someone else will then "
-"look at your work to make sure it is good, and if they agree that you’ve "
-"completed the square well, the grid square will turn green, meaning it is "
-"complete!"
+"If you plan to edit with JOSM, you need to enable the JOSM remote control "
+"before you are able to launch the application from the Tasking Manager. To "
+"do this, open JOSM and go the :menuselection:`Preferences` menu. Click on "
+"the  :guilabel:`Remote Settings` tab and check the box next to :guilabel:"
+"`Enable remote control`. Restart JOSM."
 msgstr ""
 
-# 8b438cde23db4116bd3078dba3ab968b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:202
-msgid "**4. Editing Tips**"
+# 3d00ca976a0446a98d5c1f9d31125bf0
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:267
+msgid ""
+"Return to the Tasking Manager and choose :guilabel:`Edit with JOSM`. If you "
+"have JOSM open and you correctly enabled the remote control, the grid area "
+"of the map you selected will automatically be loaded into JOSM."
+msgstr ""
+
+# 3be54789254b48d99c15b38c7e9299b2
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:271
+msgid ""
+"Next you may edit the area using the instructions provided in the project "
+"information. Usually tasks will be to trace certain features using imagery, "
+"such as buildings and roads. Alternatively, tasks might be set to map in "
+"more detail on the ground."
+msgstr ""
+
+# f50028dbb087403499f9bb3bd3ea3ab8
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:276
+msgid ""
+"When you are finished you will upload your edits and then return to the "
+"Tasking Manager to add a comment about your work. If you finish the grid "
+"square, click :guilabel:`Mark task as done`."
+msgstr ""
+
+# 27bb457586864969852156b4ddf356b9
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:280
+msgid ""
+"If you are unable to complete the task, click :guilabel:`Unlock` to make the "
+"task available again for other mappers."
+msgstr ""
+
+# a89145570576422abf20aa08cbdb749e
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:286
+msgid ""
+"When you finish an area, the grid square will turn yellow on the map to "
+"indicate that it is done. Someone else will then look at your work to make "
+"sure it is good, and if they agree that you’ve completed the square well, "
+"the grid square will turn green, meaning it is complete!"
+msgstr ""
+
+# 5150553495bc412ebfa62320ff25d5bf
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:293
+msgid "5. Editing tips"
 msgstr ""
 
 # 13f8a928291945858c571b19c0530b23
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:204
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:295
 msgid ""
 "In this section we will go over some common mistakes in JOSM and provide "
 "some editing tips for making your maps great!"
 msgstr ""
 
-# ce072bc1a46645348016bc2867238c84
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:207
-msgid "**Some Objects Should Not Connect**"
+# d094253f03f34ee997eca7d8d4e60bd8
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:299
+msgid "Some objects should not connect"
 msgstr ""
 
 # 51a1c0d061fe41ccbebc006aa7c95595
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:209
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:301
 msgid ""
 "When you are creating polygons and lines that are not supposed to be "
 "connected, make sure that they are not merged together by sharing a node. "
@@ -316,26 +461,26 @@ msgid ""
 "`G`."
 msgstr ""
 
-# 684683d1d8a940128185e79958576ffd
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:222
-msgid "**But, Some Objects Should Connect**"
+# abea178fbedc4288a12292a398b3ed70
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:315
+msgid "But, some objects should connect"
 msgstr ""
 
 # 6d7aeb2e30db4d5294a30f3706acb96f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:224
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:317
 msgid ""
 "However, some objects SHOULD connect! Road intersections should always be "
 "snapped together. If two roads do not share a common node, then the computer "
 "has no way of knowing that the roads actually connect to each other."
 msgstr ""
 
-# 53be2bfad7014d0fa1d78dfa1b0ab5b7
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:232
-msgid "**Overlapping Objects**"
+# cb576a2402204931bc6fe57f5cc3083e
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:326
+msgid "Overlapping objects"
 msgstr ""
 
 # 21016d1ba30749ec8a1033daef232a5c
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:234
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:328
 msgid ""
 "A common error is to have overlapping polygons when the objects they "
 "represent do not overlap in real life. A building cannot overlap another "
@@ -350,7 +495,7 @@ msgid ""
 msgstr ""
 
 # d15002bab3754a9d9ef3b6123ca51347
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:254
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:348
 msgid ""
 "We all make mistakes, and as you map more you will make less mistakes! Just "
 "remember that even if you upload data that contains mistakes, it is simple "
@@ -358,291 +503,132 @@ msgid ""
 "about OSM, you can always make it better!"
 msgstr ""
 
-# 56837a3a9e564d27a97f0d585d7c281b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:259
-msgid "**Tracing Correctly**"
+# 7f40e1a763e54bb884b68a873a2ed651
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:355
+msgid "6. Presets standardisation"
 msgstr ""
 
-# f051bcd927e9468d94e44d078b1221b1
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:261
+# 47bf50c78dcb49ffb275bc5a6c2689f3
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:357
 msgid ""
-"OSM can do amazing things with identifying where objects end and what labels "
-"these objects should have; however, it needs your help in doing so. For "
-"example, if you create a road that turns into another road without a "
-"distinct node, then JOSM will continue labeling the road as the previous "
-"one. Therefore, it is necessary that you make all of your roads and objects "
-"as clearly and rigid as possible."
+"OSM is used around the world by speakers of many different languages. Any "
+"feature in OSM can have whatever tags users choose. While this provides a "
+"lot of flexibility, it is important that users worldwide agree on the same "
+"tags to identify the same objects no matter what country they are located in."
 msgstr ""
 
-# 53b328bce96d4bb3bf18e69ed02f4d0a
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:271
+# f48b55bc9f4e41e7850c9892b4a3e77c
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:362
 msgid ""
-"We will conclude this section with additional tips: Rotate object: If you "
-"hold :kbd:`CTRL + SHIFT` and hold while sliding your mouse, then you can "
-"rotate the selected object."
+"For such purposes of standardisation, most tags in OSM are in British "
+"English. An extensive list of standardised OSM tags is available on the OSM "
+"Wiki `Map Features page <http://wiki.openstreetmap.org/wiki/Map_Features>`_."
 msgstr ""
 
-# 6999f0a7fed94bfb8a71885438a98582
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:278
+# 6166558fef98494fb0eca4dc27eca4b9
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:366
 msgid ""
-"**Ways that are not closed**: usually a line that does not form a polygon. "
-"Common examples are buildings where the first node does not meet the last "
-"node."
+"When users enter tags manually in JOSM or another editor, it is common to "
+"make spelling or other mistakes, particularly for beginners. For this "
+"reason, it is a good idea to use the presets menu, which uses forms that "
+"prevent incorrect tags from being entered."
 msgstr ""
 
-# ebe1413a11a246188638ec69a2e96d9a
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:284
-msgid ""
-"To fix this, select both nodes and go to :menuselection:`Tools -> Merge "
-"Nodes` to connect them."
-msgstr ""
-
-# 413e404e653c48a4aa54d927c5fe1878
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:287
-msgid ""
-"**Crossing Buildings (Overlapping Buildings)**: buildings that overlap each "
-"other."
-msgstr ""
-
-# 86365f12a6454eb79f760ddda85b8cb7
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:293
-msgid ""
-"To fix this, move the nodes of one of the buildings outside of the other "
-"building."
-msgstr ""
-
-# 5205fdad83f84ea0bf80b3197169b836
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:296
-msgid ""
-"**Untagged Nodes or Ways**: If someone draws a point or a line but forgets "
-"to give it any tags, then it is useless, because it does not mean anything."
-msgstr ""
-
-# 9824e6f3381f4d3ea7ef14bdf664744e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:302
-msgid ""
-"To fix this, apply tags to the object to identify it, or delete it if it is "
-"a mistake."
-msgstr ""
-
-# c95d4c6e4d854cf192e70b56e4b85360
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:305
-msgid ""
-"**End node near another way**: If a line ends very close to another line but "
-"does not connect, this raises a warning."
-msgstr ""
-
-# df71d2b9e8cb4703b449dcb16ad1c639
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:308
-msgid ""
-"Many times this warning is not important, but it helps to find road "
-"intersections that are supposed to connect but do not."
-msgstr ""
-
-# 0a9ce849e5ed4829b62c4e75eefc9c41
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:314
-msgid ""
-"**Crossing ways**: Lines that cross other lines without being connected will "
-"raise warnings. Many times this is not a problem, because the crossing ways "
-"are intentional - such as in the case of bridges, or streets and rivers that "
-"cross landuse polygons. It is sometimes helpful, however to find errors."
-msgstr ""
-
-# e0d936f7df544e068cef045056dc87e0
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:324
-msgid ""
-"OpenStreetMap depends on people correcting and editing mistakes. Editing and "
-"validating data is important for improving maps. If you do not have time to "
-"get in the field with a GPS or trace imagery, validating objects and "
-"attribute data is a good way to contribute."
-msgstr ""
-
-# f5e2f3dfb7e34bf8962b5573ecf963a6
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:329
-msgid "**5. Presets Standardization**"
-msgstr ""
-
-# bf58afaf8ab84799946830fa9131085b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:331
-msgid ""
-"OpenStreetMap allows the users to give as much informations as they can to "
-"their map. These informations can be attached to every objects that they "
-"mapped using presets menu that is available in OSM editor. Many times we "
-"found inconsistency in some objects information. That’s why we should make a "
-"presets standardisation."
-msgstr ""
-
-# 95fadd640ae34a30a284ad49b251d848
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:338
-msgid "The presets standardization purposes are:"
+# e69497d7a1c8499b93c6387acc1af32e
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:371
+msgid "Using standardised tags aids in:"
 msgstr ""
 
 # 2431ea390a0f4f01be3a0114dcbe9b7c
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:340
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:373
 msgid "Assuring data consistency and stability"
 msgstr ""
 
 # 4ad5351da9f94e07848a0e89ebf4190a
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:341
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:374
 msgid "Easier data search and analysis"
 msgstr ""
 
-# f9e971e326dc4c6182282788a29f43de
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:342
-msgid "As a standard in giving information using presets"
+# ccbdc7d914134f9c8cae122664ef5148
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:375
+msgid "Setting benchmarks for improvement"
 msgstr ""
 
-# 9744bf1cc838441a80beb3dafb40406e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:343
-msgid "As a benchmark if we want to make improvements or data validation"
+# 0db444b975514a7fa00910c0ad78661f
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:376
+msgid "Data validation"
 msgstr ""
 
-# 54ccdb4005904c1790cdfcd840f3eefa
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:344
-msgid "Maximizing the use of Internal Presets that are available in JOSM"
+# 2c365e1c4223416185224967b56b11ab
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:377
+msgid "Map rendering on OSM website"
 msgstr ""
 
-# b41c5bf7d5bd4c75a8943ac4486f839f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:345
-msgid "Maximizing data visualisation on OpenStreetMap website"
+# 962994147f2241b4ba3c1fd10666ce76
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:381
+msgid "7. KeepRight"
 msgstr ""
 
-# 1ba0ee02d27e499f996225e469a7a1bc
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:347
+# 328e77cab2964783a62ccde84b9cfa55
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:383
 msgid ""
-"With this preset standardisation, hopefully all OSM users are willing to use "
-"this preset when they edit their maps. One of the benefit if we use the "
-"internal preset that is available in JOSM is the visualisation will show up "
-"on OpenStreetMap website. You can find the list of these standard presets "
-"**here**"
+"The KeepRight website is another useful validation tool for OSM. Open your "
+"web browser and head to http://keepright.at."
 msgstr ""
 
-# 3539ba1806ee49b483a92c5d23511d0b
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:353
-msgid "**6. KeepRight**"
-msgstr ""
-
-# 295fe666d892412ab7b91cb0c53ff6ff
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:355
-msgid ""
-"The Keep Right website is another useful validation tool for OpenStreetMap. "
-"Open your web browser and head to http://keepright.at."
-msgstr ""
-
-# 04f901feae424dac8c13e2ee8c8c910c
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:357
-msgid ""
-"You can switch the site into Indonesian by choosing :guilabel:`id` from the "
-"dropdown box in the in the upper right."
-msgstr ""
-
-# 697987fd6dfb4723b19613e519e52c53
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:363
-msgid ""
-"Click on “Pengecekan data untuk Asia” to check the OSM data in Asia. This "
-"will open up a slippy map with errors displayed on it. You can navigate to "
-"your area of interest by using the zoom and pan functions."
-msgstr ""
-
-# d7827af5331643bfa814f0b0bd2efabd
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:371
-msgid ""
-"The types of errors are listed on the left of the map. You can get more "
-"details about each error by clicking on the icons which hover above the map."
-msgstr ""
-
-# 856233279c034d3f8f07645d7443fead
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:379
-msgid ""
-"After you find territory and find out his mistake. Certainly next step is to "
-"fix the error. First step, make sure you have selected an error/lightning "
-"(by left click on the lightning image). After that, determine where you "
-"would fix the error, whether on the \"JOSM\" or \"Potlatch\"."
-msgstr ""
-
-# ef7ffa64bf4b49b39928bfc086b37e78
+# b10a50aff3f14469b6eb75049dc8557f
 #: ../../source/training/intermediate/osm/302-quality-assurance.rst:386
 msgid ""
-"we recommend that the editing in JOSM, because its editing features are more "
-"complete."
+"If needed, switch the site into Indonesian by choosing :guilabel:`id` from "
+"the drop-down box in the in the upper right."
 msgstr ""
 
-# 9ff2302292f24a11ac1c229ed0b1faf0
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:389
+# d3b04c0f255e4378827228b8628834e5
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:392
 msgid ""
-"In order to fix one of the errors, you can click on the links to edit in "
-"either JOSM or Potlatch.  Note that to edit in JOSM you must have the JOSM "
-"Remote Control enabled."
+"Click :guilabel:`Data Checks for Asia` to check OSM data in Asia. This will "
+"open up a slippy map with errors displayed on it."
 msgstr ""
 
-# 44cbd36cec9b44da958812a9657d1f0e
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:396
-msgid "Setting “Remote Control” JOSM"
+# c8f56670637b4ed6bf58bfc2f89749bc
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:395
+msgid "Navigate to your area of interest by using the zoom and pan functions."
 msgstr ""
 
-# a77ed88a2b6c4160a7ecc89e26bceffc
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:398
+# 27a66ac78bd5460fae9058012155de3b
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:401
 msgid ""
-"Before you start working with \"Keepright\", make sure you have enabled "
-"\"Remote Control\" in JOSM. To check this, open your JOSM, then select the "
-"menu :menuselection:`Edit > Preferences`. Once the window :guilabel:"
-"`Preferences` appears, select the tab :guilabel:`Remote Control`"
+"The types of errors are listed to the left of the map. Get more details "
+"about each error by clicking on the icons which hover above the map."
 msgstr ""
 
-# ef473e6887d6480bbc9514d17f98ff9f
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:410
-msgid "Next, you will see the window like this"
+# b2a5bbb2e68c487aa048263c942ffc38
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:408
+msgid ""
+"When you see an error in your area of interest, the next step is to fix it. "
+"Click on the links to one of the editors (JOSM, Potlatch, or iD) to open "
+"this data in the editor. Note that to edit in JOSM you must have the JOSM "
+"Remote Control Enabled (as described in the :ref:`Tasking Manager section "
+"<quality-assurance-step-14>` above)."
 msgstr ""
 
-# 217332057d994656b37b4f9ebab51288
+# b47f4ed7fee6469d9ed2346d54d01ed6
 #: ../../source/training/intermediate/osm/302-quality-assurance.rst:415
-msgid "*image (a)*"
-msgstr ""
-
-# 21a684d35df245d3b8b2fd4e9f9181ef
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:420
-msgid "*image (b)*"
-msgstr ""
-
-# 5b8cb2f710cf4cc0a4edab4c082aea4d
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:422
 msgid ""
-"Check box in the left of :guilabel:`Enable Remote Control` is checked/"
-"enabled. In Image (a) the :guilabel:`Enable Remote Control` is not "
-"activated. If not, please checklist the box, such as Image (b). Click :"
-"guilabel:`OK` and Restart JOSM. Furthermore, you can work with \"www."
-"keepright.ipax.at\"."
+"We recommend that the editing is done in JOSM, because its editing features "
+"are more complete. Note that JOSM must be open (with remote control enabled) "
+"in order to connect with the KeepRight website."
 msgstr ""
 
-# 84ffdb873d6e4cf99f7b73c95558eb49
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:427
+# 261073f944c04edc8c214fd1930fdec2
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:423
 msgid ""
-"Now, open JOSM you will see that JOSM now been content with data that we "
-"have chosen earlier on the site \"KeepRright\"."
+"Use JOSM (or another editor) to fix the errors that you find on the "
+"KeepRight website. After fixing them, return to the site and select :"
+"guilabel:`ignore temporarily`. Add a comment and click :guilabel:`save`."
 msgstr ""
 
-# d52e522d2e6744b281746387dc127fdc
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:432
-msgid "Make sure JOSM is open"
-msgstr ""
-
-# b455fe98079244dab9fb71fe433547de
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:437
-msgid "Now OSM data from “KeepRight” delivered to your JOSM"
-msgstr ""
-
-# 3b00f871870f4121992de46f37be5918
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:439
-msgid ""
-"Immediately fix to existing errors. How do I fix and what tools are needed "
-"to fix it??? It all depends on the type of error. If you forget, go back "
-"material on \"Advanced Editing\" and \"Quality Assurance\""
-msgstr ""
-
-# 23e80251b592441a9d9f435aed3c0b44
-#: ../../source/training/intermediate/osm/302-quality-assurance.rst:443
-msgid ""
-"After fixed the error, return to website \"www.keepright.ipax.at\" to "
-"confirm error has been fixed or not. If you've fixed the error, select (by "
-"left- clicking) on the top radio button option."
+# ae6750b9690a4e57b24424a2690f1cc0
+#: ../../source/training/intermediate/osm/302-quality-assurance.rst:428
+msgid ":ref:`Go to next module --> <dealing-with-conflicts>`"
 msgstr ""

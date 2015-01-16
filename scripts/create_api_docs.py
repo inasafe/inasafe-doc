@@ -296,7 +296,7 @@ def main():
     print 'Cleaning api docs...'
     api_docs_path = clean_api_docs_dirs()
     max_depth = 2
-    packages = ['safe', 'safe_qgis', 'realtime']
+    packages = ['safe', 'realtime']
 
     # creating top level index for api-docs
     print 'Creating top level index page...'

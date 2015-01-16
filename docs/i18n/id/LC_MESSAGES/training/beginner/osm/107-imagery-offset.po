@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-30 09:28+0200\n"
+"POT-Creation-Date: 2014-12-22 12:27\n"
 "PO-Revision-Date: 2014-03-19 07:41+0000\n"
 "Last-Translator: Emir Hartato <emir.hartato@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
@@ -24,44 +24,49 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 # 391ba6a71561456dbe193bfcfd982190
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:8
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:10
 msgid "Module 7: Imagery Offset"
 msgstr "Modul 7: Pergeseran Citra Satelit "
 
 # ece6febcbef749739af6c909b71dd384
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:10
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:12
 msgid "**Learning Objectives**"
 msgstr "**Tujuan Pembelajaran**"
 
 # 40a2042844a94b53a2e605ba57f75461
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:12
-msgid "Understanding definition of Imagery Offset"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:14
+#, fuzzy
+msgid "Understand the definition of imagery offset"
 msgstr "Memahami pengertian imagery offset"
 
 # 9e343db8e44e40f7ae60b2b758e01083
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:13
-msgid "Understanding part of imagery (resolution and georeference)"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:15
+#, fuzzy
+msgid "Understand components of imagery (resolution and georeference)"
 msgstr "Memahami komponen citra (Resolusi dan Georeferensi)"
 
 # c68639514c904886afe12ee181b492ba
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:14
-msgid "Understanding how to imagery offset occur"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:16
+#, fuzzy
+msgid "Understand how imagery offset occurs"
 msgstr "Memahami bagaimana pergeseran citra satelit bisa terjadi"
 
 # a47400b3413046ecb96943ba4dea16c1
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:15
-msgid "Fixing imagery offset"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:17
+#, fuzzy
+msgid "Fix imagery offset"
 msgstr "Memperbaiki pergeseran citra satelit"
 
 # 9514d1388d6042ddaaf0fe6bd6a30aca
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:17
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:19
+#, fuzzy
 msgid ""
 "Using aerial imagery is the most widely used approach in making maps with "
-"OpenStreetMap.  Mappers typically use Bing satellite as a background layer "
-"while making their maps, or imagery from another provider.  We have already "
-"seen this in action.  In this module we will learn a little bit more about "
-"aerial imagery, and we will learn how to solve the one important problem of "
-"using aerial photographs - imagery offset."
+"OpenStreetMap. Mappers typically use Bing or Mapbox satellite imagery as a "
+"background layer, or imagery from another provider. We have already seen "
+"this in action. In this module we will learn a little bit more about aerial "
+"imagery, and we will learn how to solve the one important problem of using "
+"aerial photographs - imagery offset."
 msgstr ""
 "Penggunaan citra satelit merupakan salah satu pendekatan yang umum digunakan "
 "dalam membuat peta dengan OpenStreetMap. Pembuat peta biasanya menggunakan "
@@ -71,47 +76,17 @@ msgstr ""
 "satelit dan kita akan mempelajari bagaimana caranya untuk memperbaiki salah "
 "satu masalah utama dalam menggunakan citra satelit, yaitu imagery offset."
 
-# ad7d8bda913c466190dc1a8cbada3109
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:24
-msgid "**1. Imagery Offset Definition**"
-msgstr "**1. Pengertian Imagery Offset**"
-
-# 821a3ea51a1647cf881b41cdca20cabb
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:26
-msgid ""
-"At first, the satellite image is a combination of photographs and satellite "
-"coordinates. Special software is used to calculate each side of the "
-"photographs. In general, satellite images have high resolution enables more "
-"accurate calculation. But there are thousands of photographs and the surface "
-"of the earth is not a perfect circle ellipsoid. Satellite imagery provider "
-"can not verify the accuracy of each photo, so the coordinates can be shifted "
-"from the actual position. That is why satellite imagery can be shifted 1-2 "
-"meters and sometimes up to hundreds of meters. In the mountainous or hilly "
-"areas, satellite imagery often has a non-linear distortion. Shift or "
-"distortion is called imagery offset / shift satellite imagery."
+# ff1d536e1ea24d5484e954b85554d285
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:28
+msgid "1. Components of imagery"
 msgstr ""
-"Pada mulanya, citra satelit merupakan gabungan dari foto-foto dan koordinat "
-"satelit. Perangkat lunak khusus digunakan untuk memperhitungkan setiap sisi "
-"foto-foto tersebut. Secara umum, citra satelit yang memiliki resolusi tinggi "
-"memungkinkan perhitungan yang lebih akurat. Namun terdapat ribuan foto-foto "
-"dan permukaan bumi bukanlah sebuah lingkaran elipsoid yang sempurna. "
-"Penyedia citra satelit tidak dapat memeriksa akurasi dari setiap foto, "
-"sehingga koordinat dapat bergeser dari posisi yang sebenarnya. Oleh karena "
-"itulah mengapa citra satelit dapat bergeser 1-2 meter bahkan terkadang "
-"hingga ratusan meter. Pada wilayah pegunungan atau perbukitan, citra satelit "
-"seringkali memiliki distorsi yang tidak linear. Pergeseran atau distorsi "
-"inilah yang disebut imagery offset/pergeseran citra satelit."
-
-# 360ea98022154e3e999a130c2480c41a
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:38
-msgid "**2. Part of Imagery**"
-msgstr "**2. Komponen Citra Satelit**"
 
 # 0ab97239541345d9a476db9cb364c70a
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:40
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:30
+#, fuzzy
 msgid ""
 "Aerial imagery is the term that we use to describe photographs that are "
-"taken from the sky.  These can be taken from airplanes, helicopters, or even "
+"taken from the sky. These can be taken from airplanes, helicopters, or even "
 "kites and balloons, but the most common source of imagery comes from "
 "satellites orbiting the Earth."
 msgstr ""
@@ -122,14 +97,15 @@ msgstr ""
 "mengelilingi bumi."
 
 # 22209f1a0fb64074a29bcf65e106f158
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:45
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:35
+#, fuzzy
 msgid ""
-"In the module on GPS we learned about the dozens of satellites orbiting "
-"Earth which allow our GPS receivers to identify our latitude and longitude. "
-"In addition to these GPS satellites, there are also satellites which take "
-"photos of the earth.  These photos are then manipulated so that they can be "
-"used in GIS (mapping) software.  Bing Aerial Imagery is made up of satellite "
-"photos."
+"In the :ref:`module on GPS<using-gps>` we learned about the dozens of "
+"satellites orbiting Earth which allow our GPS receivers to identify latitude "
+"and longitude. In addition to these GPS satellites, there are also "
+"satellites which take photos of the earth. These photos are then manipulated "
+"so that they can be used in GIS (mapping) software. Bing Aerial Imagery is "
+"made up of satellite photos."
 msgstr ""
 "Pada Modul GPS kita telah mempelajari sejumlah satelit yang mengorbit "
 "mengelilingi bumi yang membantu GPS kita mengidentifikasi posisi kita dalam "
@@ -139,19 +115,29 @@ msgstr ""
 "(mapping) melalui software GIS. Citra satelit Bing merupakan salah satu "
 "contoh dari citra satelit ini."
 
+# 9e343db8e44e40f7ae60b2b758e01083
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:42
+#, fuzzy
+msgid ""
+"Let's look at a couple of the components of aerial imagery - resolution and "
+"georeferencing."
+msgstr "Memahami komponen citra (Resolusi dan Georeferensi)"
+
 # 9ee3f981a94044b5886e99ec3015fff1
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:52
-msgid "*2.1. Resolution*"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:46
+#, fuzzy
+msgid "1.1. Resolution"
 msgstr "*2.1. Resolusi*"
 
 # de022c2f171c430d86955f71457b4f07
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:54
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:48
+#, fuzzy
 msgid ""
-"All digital photographs are made up of pixels.  If you zoom in very close on "
+"All digital photographs are made up of pixels. If you zoom in very close on "
 "a photograph, you will notice the the image starts to get blurry, and "
 "eventually you’ll see that an image is made up of thousands of little "
-"squares that are each a different color.  This is true whether the "
-"photograph is taken with a handheld camera, a mobile phone, or a satellite "
+"squares that are each a different colour. This is true whether the "
+"photograph is taken with a handheld camera, a mobile phone or a satellite "
 "orbiting Earth."
 msgstr ""
 "Semua fotografi digital terdiri dari piksel. Jika Anda memperbesar lebih "
@@ -163,12 +149,13 @@ msgstr ""
 "mengelilingi bumi."
 
 # d6929ed023464b22b055312b5d928d98
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:64
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:58
+#, fuzzy
 msgid ""
 "Resolution refers to the number of pixels wide by the number of pixels high "
-"that an image is.  More pixels means higher resolution, which means that you "
+"that an image is. More pixels means higher resolution, which means that you "
 "are able to see greater detail in the photograph. Resolution in handheld "
-"cameras is often measured in megapixels.  The more megapixels your camera is "
+"cameras is often measured in megapixels. The more megapixels your camera is "
 "able to record, the higher the resolution of your photos."
 msgstr ""
 "Resolusi merepresentasikan jumlah piksel yang berada dalam panjang dikali "
@@ -181,18 +168,19 @@ msgstr ""
 "foto tersebut."
 
 # 6c9353ed87dc4c669cd484202055536e
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:71
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:65
+#, fuzzy
 msgid ""
-"Aerial imagery is the same, except that we usually talk about resolution "
-"differently.  Measurement is important with aerial photographs - hence, a "
-"pixel represents a certain distance on the ground.  We usually describe "
-"imagery as something like \"two meter resolution imagery\", which means that "
-"one pixel is equivalent to two meters on the ground.  One meter resolution "
-"imagery would have a higher resolution than this, and 50cm resolution would "
-"be higher still. This is generally the range of imagery that is provided by "
-"Bing, though it varies between locations, and in many places it is worse "
-"than two meters, at which point it becomes difficult to identify objects in "
-"the image."
+"Aerial imagery works the same, except that we talk about resolution "
+"differently. Measurement is important with aerial photographs - hence, a "
+"pixel represents a certain measurable area on the surface of the Earth. We "
+"usually describe imagery as something like \"two metre resolution imagery\", "
+"which means that one pixel in the image is equivalent to two metres on the "
+"ground. One metre resolution imagery would have a higher resolution than "
+"this, and 50cm resolution would be higher still. This is generally the range "
+"of imagery that is provided by Bing, though it varies between locations, and "
+"in many places it is worse than two metres, at which point it becomes "
+"difficult to identify objects in the image."
 msgstr ""
 "Sama halnya dengan Citra Satelit, kecuali biasanya kita berbicara mengenai "
 "resolusi secara berbeda. Pengukuran dengan foto udara adalah penting. Oleh "
@@ -206,7 +194,7 @@ msgstr ""
 "menjadi sulit untuk mengidentifikasi objek dalam gambar."
 
 # cc89998c4dca451088cabc4069a8b564
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:85
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:79
 msgid ""
 "The higher the resolution of an aerial image, the easier it is to use in "
 "making maps."
@@ -215,12 +203,13 @@ msgstr ""
 "dalam membuat peta."
 
 # 589f092c41f94e98a41dbc65edff7092
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:88
-msgid "*2.2. Georeferencing*"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:83
+#, fuzzy
+msgid "1.2. Georeferencing"
 msgstr "*2.2. Georeferensi*"
 
 # ced033cfd33d4a30bff302078d187341
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:90
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:85
 msgid ""
 "Every aerial image is georeferenced, meaning that it is manipulated so that "
 "it can be shown in its correct location on the Earth. Georeferencing is a "
@@ -236,13 +225,14 @@ msgstr ""
 "tersebut sesuai dengan posisi di permukaan bumi."
 
 # 1d596d90fa944af79d694f554146d7d7
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:96
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:91
+#, fuzzy
 msgid ""
-"In unit four we will learn how to georeference an image ourselves, but for "
-"now that’s not necessary.  We can happily use Bing imagery to help add to "
-"OpenStreetMap, so long as we understand a little bit about the imagery we "
-"are using, and so long as we are aware of one common pitfall - imagery "
-"offset."
+"The imagery available to us is already georeferenced, so it is not something "
+"that we need to concern ourselves with too deeply. We can happily use "
+"imagery to help add to OSM, so long as we understand a little bit about the "
+"imagery we are using, and so long as we are aware of one common pitfall - "
+"imagery offset."
 msgstr ""
 "Dalam modul 4 kita akan mempelajari bagaimana georeferensi sebagai gambar "
 "kita sendiri, tetapi untuk sekarang tidak diperlukan. Kita bisa menggunakan "
@@ -251,15 +241,22 @@ msgstr ""
 "mengerti bahwa setiap citra satelit bisa saja mengalami pergeseran citra "
 "satelit."
 
+# a47400b3413046ecb96943ba4dea16c1
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:99
+#, fuzzy
+msgid "2. Imagery offset"
+msgstr "Memperbaiki pergeseran citra satelit"
+
 # 89e281bf1d654de995aaa5245d5d8e40
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:103
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:101
+#, fuzzy
 msgid ""
-"**3. Imagery Offset** Imagery providers usually do a pretty good job of "
-"georeferencing their imagery, but occasionally the images can be out of "
-"position.  This is particularly true in hilly or mountainous areas, where it "
-"can be difficult to stretch a flat image over an area of the Earth with many "
-"contours.  When you load imagery in JOSM, it can sometimes be ten meters or "
-"more from its true position.  This is called imagery offset."
+"Imagery providers usually do a pretty good job of georeferencing their "
+"imagery, but occasionally the images can be a little bit out of position. "
+"This is particularly true in hilly or mountainous areas, where it can be "
+"difficult to stretch a flat image over an area of the Earth with many "
+"contours. When you load imagery in JOSM, it can sometimes be ten metres or "
+"more from its true position. This is called imagery offset."
 msgstr ""
 "**3. Pergeseran Citra Satelit** Penyedia layanan citra satelit biasanya "
 "telah melakukan georeferensi citra satelit mereka, tetapi beberapa citra "
@@ -269,12 +266,25 @@ msgstr ""
 "di JOSM, terkadang mengalami pergeseran sejauh sepuluh meter atau lebih dari "
 "posisi sesungguhnya. Ini yang disebut dengan pergeseran citra satelit."
 
+# af20aa3d6d71482b94237a65dbff2152
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:108
+msgid ""
+"Aerial imagery layers are composed of many photographs of the Earth's "
+"surface that have been georeferenced and then stitched together. Imagery "
+"providers cannot verify the accuracy of every photo, so some images may be "
+"shifted from their actual positions. This might be a shift of a couple "
+"metres, or in rare instances up to hundreds of metres. In mountainous areas, "
+"imagery may be distorted non-linearly, which means that nearby parts of the "
+"same image may be shifted in many different directions."
+msgstr ""
+
 # f4c07b69626a4943911b55fb00faa2da
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:111
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:116
+#, fuzzy
 msgid ""
 "Notice in the following image that two separate aerial photographs have been "
-"georeferenced and merged together.  Because georeferencing is not a perfect "
-"process, the images do not line up perfectly with each other.  Hence one, or "
+"georeferenced and merged together. Because georeferencing is not a perfect "
+"process, the images do not line up perfectly with each other. Hence one, or "
 "both, must be inaccurate."
 msgstr ""
 "Perhatikan pada gambar dibawah ini terdiri dari dua gambar yang telah di "
@@ -283,20 +293,21 @@ msgstr ""
 "satu, atau mungkin kedua-duanya bisa saja tidak akurat."
 
 # 7e84c6c9627d4dd3938ff96fac6a9bc8
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:119
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:124
+#, fuzzy
 msgid ""
-"We’ve learned about two major ways of making maps - one is by utilizing "
+"We’ve learned about two major ways of making maps - one is by utilising "
 "aerial imagery to identify features on the ground, and another is by using "
-"GPS to record tracks and waypoints and then add them to OpenStreetMap.  The "
-"advantage of aerial imagery is obvious.  It enables you, the mapper, to see "
-"the whole picture, to observe various details from the image, consider your "
-"knowledge of the area, and easily trace roads, buildings, and areas.  One "
-"key advantage of GPS however, is that it doesn’t suffer from offset like "
-"imagery.  A GPS will always provide you with a correct latitude and "
-"longitude.  The only exception is when the satellite signals are interrupted "
-"by tall buildings or mountains, but in this case it is easy to recognize the "
-"error.  Observe the GPS trace in this image, compared with the Bing aerial "
-"imagery layer beneath it:"
+"GPS to record tracks and waypoints and then add them to OSM. The advantage "
+"of aerial imagery is obvious. It enables you, the mapper, to see the whole "
+"picture, to observe various details from the image, consider your knowledge "
+"of the area, and easily trace roads, buildings and areas. One key advantage "
+"of GPS however, is that it doesn’t suffer from offset like imagery. A GPS "
+"will always provide you with a correct latitude and longitude. The only "
+"exception is when the satellite signals are interrupted by tall buildings or "
+"mountains, but in this case it is easy to recognise the error. Observe the "
+"GPS trace in this image, compared with the Bing aerial imagery layer beneath "
+"it:"
 msgstr ""
 "Kita telah mempelajari bahwa terdapat dua cara untuk membuat peta, pertama "
 "dengan menggunakan citra satelit untuk mengidentifikasi sebuah kenampakan di "
@@ -314,7 +325,7 @@ msgstr ""
 "dan bandingkan dengan citra Bing dibawahnya:"
 
 # 2ff6928950bf4191a7e63acef50e61d8
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:135
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:140
 msgid ""
 "Because of what we now know, it is clear that the GPS trace is likely to be "
 "accurate, and the image beneath it is out of place."
@@ -323,7 +334,7 @@ msgstr ""
 "dibawahnya mengalami pergeseran."
 
 # eb0ad18156254947b1a80b9987094f1b
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:138
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:143
 msgid ""
 "So now we must ask, “if the imagery may be out of place, how can we still "
 "use it and make accurate maps?”"
@@ -332,16 +343,18 @@ msgstr ""
 "bagaimana kita dapat menggunakan dan membuat peta yang akurat?”"
 
 # fe535ee7539e4501b4677ed7d97338f6
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:141
-msgid "**4. Correcting Imagery Offset**"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:147
+#, fuzzy
+msgid "3. Correcting imagery offset"
 msgstr "**4. Cara memperbaiki pergeseran citra satelit**"
 
 # c85f0098ea8942fca3b2fd16f27f7ab6
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:143
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:149
+#, fuzzy
 msgid ""
 "The answer to the preceding question is that we can move the imagery so that "
 "it aligns with things that we know are in the correct location, such as GPS "
-"tracks.  It is easy to correct imagery offset in JOSM."
+"tracks. It is easy to correct imagery offset in JOSM."
 msgstr ""
 "Jawaban untuk pertanyaan sebelumnya adalah kita dapat menggeser citra "
 "satelit agar sesuai dengan posisi yang kita ketahui adalah posisi yang "
@@ -349,13 +362,14 @@ msgstr ""
 "citra satelit di JOSM."
 
 # b843277a95bd4523a3e7e2de8566f22a
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:147
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:153
+#, fuzzy
 msgid ""
 "The best references for adjusting imagery are GPS tracks that follow roads. "
 "And the more GPS tracks that you have to reference, the more accurate you "
-"will be able to align your imagery.  Since OpenStreetMap users often upload "
-"their GPS tracks to the OSM database, we can download them and use them to "
-"align our imagery."
+"will be able to align your imagery. Since OSM users often upload their GPS "
+"tracks to the OSM database, we can download them and use them to align our "
+"imagery."
 msgstr ""
 "Salah satu referensi terbaik untuk mengatur citra satelit adalah menggunakan "
 "track GPS yang mengikuti jalan. Semakin banyak track GPS yang Anda miliki, "
@@ -365,12 +379,13 @@ msgstr ""
 "satelit kita."
 
 # 8ec8426d2dec413e8254afeb682a168c
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:153
-msgid "Click on the :guilabel:`Download` button."
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:159
+#, fuzzy
+msgid "In JOSM, click on the :guilabel:`Download` button."
 msgstr "Klik tombol :guilabel:`Download`"
 
 # 388bdb2883d84e8186b38f864ed4af08
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:154
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:161
 msgid ""
 "Check the box next to :guilabel:`Raw GPS Data` near the top of the :guilabel:"
 "`Download` window. Select your area and click :guilabel:`Download`."
@@ -380,7 +395,7 @@ msgstr ""
 "guilabel:`Download`."
 
 # 0415ec918eae4f3f832a73a94439cf8c
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:161
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:168
 msgid ""
 "This will download an additional layer to JOSM containing GPS tracks. "
 "Depending on how many tracks have been uploaded by OSM users, you may see "
@@ -392,25 +407,32 @@ msgstr ""
 "sekali):"
 
 # f757c77b736d4ef2ab36a94c789d5542
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:168
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:175
 msgid "Or, you may see many tracks:"
 msgstr "Atau, Anda dapat melihat jumlah track yang banyak:"
 
+# 85275ce86ae84032abf7d45629602fb3
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:180
+msgid "Add an imagery layer (such as Bing Sat) to JOSM."
+msgstr ""
+
 # 9d23ff61ac674e9c9b5fa7f6552ef84d
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:173
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:182
+#, fuzzy
 msgid ""
 "To adjust an imagery layer, click on the :guilabel:`Adjust imagery offset` "
-"button at the top of JOSM."
+"button at the top of JOSM, and then click :guilabel:`New Offset`."
 msgstr ""
 "Untuk mengatur citra satelit, klik pada tombol :guilabel:`Atur Offset Citra` "
 "di bagian atas JOSM."
 
 # 1fcb4db826294d16bf8e318b0725e43d
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:179
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:188
+#, fuzzy
 msgid ""
 "Ignoring the box that pops up, use your mouse to drag the imagery layer so "
-"that it aligns correctly with the GPS tracks.  The GPS tracks should line up "
-"with the roads on the imagery as closely as possible.  You will see the "
+"that it aligns correctly with the GPS tracks. The GPS tracks should line up "
+"with the roads on the imagery as closely as possible. You will see the "
 "offset numbers in the box change."
 msgstr ""
 "Abaikan kotak yang muncul, gunakan mouse Anda untuk menggeser citra sehingga "
@@ -419,10 +441,11 @@ msgstr ""
 "di kotak tersebut."
 
 # 25c2d02462c244fcbe8bdee84e95d3f6
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:187
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:196
+#, fuzzy
 msgid ""
 "If you like, you can save these offset settings by entering a bookmark name "
-"and then clicking :guilabel:`OK`.  You can then automatically apply the same "
+"and then clicking :guilabel:`OK`. You can then automatically apply the same "
 "settings later by going to :menuselection:`Imagery ‣ Imagery offset` and "
 "clicking on your bookmark."
 msgstr ""
@@ -432,7 +455,7 @@ msgstr ""
 "menuselection:`Imagery ‣ Imagery offset` dan klik penanda yang Anda simpan."
 
 # a6327793d78d4a01ad887b4749be09f5
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:191
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:201
 msgid ""
 "If you do not want to save the offset, simply click :guilabel:`OK` without "
 "entering a bookmark name."
@@ -441,13 +464,14 @@ msgstr ""
 "harus memasukkan nama penanda."
 
 # 5eb1b4cee46d4f68873bf2a1b1adeca1
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:194
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:204
+#, fuzzy
 msgid ""
-"What if there are no GPS tracks on OpenStreetMap, and you don’t have a GPS? "
-"Without GPS tracks, it is difficult to align imagery.  If it is a relatively "
-"empty area (not much mapping done), you might choose to simply use the "
-"imagery as it is and correct the data later.  It’s better to have map an "
-"area 20 or 30 meters offset than to not map at all."
+"What if there are no GPS tracks on OSM, and you don’t have a GPS? Without "
+"GPS tracks, it is difficult to align imagery. If it is a relatively empty "
+"area (not much mapping done), you might choose to simply use the imagery as "
+"it is and correct the data later. It’s better to map an area 20 or 30 metres "
+"offset than to not map it at all."
 msgstr ""
 "Bagaimana jika tidak ada track GPS di OpenStreetMap, dan Anda tidak "
 "mempunyai GPS? Tanpa track GPS, akan sulit sekali mengatur citra. Jika itu "
@@ -457,7 +481,7 @@ msgstr ""
 "daripada tidak memetakan sama sekali."
 
 # 131801063193455a8086719c1f74f09f
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:200
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:210
 msgid ""
 "If you can positively identify the latitude and longitude of one object on "
 "the ground, you can ensure the imagery is correctly placed by following "
@@ -468,42 +492,45 @@ msgstr ""
 "melakukan tahap ini:"
 
 # fc769af0db9e4ba8af57bc6e65c5d116
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:204
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:214
 msgid "First, identify the object whose position you know on the imagery."
 msgstr "Pertama, identifikasikan posisi objek yang Anda ketahui di citra."
 
 # 2e1002a7a4e64953a4c4e9ab8b28092b
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:205
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:216
 msgid "Click on the latitude and longitude in the bottom left corner of JOSM."
 msgstr "Klik pada garis lintang dan bujur pada bagian kiri bawah JOSM."
 
 # 276744f546fd4f138d92612ac67e3aa7
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:210
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:221
+#, fuzzy
 msgid ""
 "In the dialog that opens, enter the latitude and longitude of the place that "
-"you know, and enter a small number for Zoom, about five or ten."
+"you know, and enter a small number for :guilabel:`Zoom`, about five or 10."
 msgstr ""
 "Akan muncul kotak dialog, masukkan koordinat lintang dan bujur dari sebuah "
 "tempat yang Anda ketahui dan masukkan angka perbesaran, sekitar lima atau "
 "sepuluh."
 
 # 53208c99d14d4430942d2f6d8a1bd41f
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:216
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:228
+#, fuzzy
 msgid ""
-"This will zoom and center the map to your longitude and latitude.  Now you "
+"This will zoom and centre the map to your longitude and latitude. Now you "
 "can move the imagery as you did previously so that the feature you know is "
-"centered at the correct position."
+"centred at the correct position."
 msgstr ""
 "Ini akan memperbesar dan menuju pusat peta dimana Anda memasukkan koordinat "
 "lintang dan bujurnya. Sekarang Anda dapat memposisikan citra ke tempat yang "
 "Anda ketahui sebagai posisi yang tepat."
 
 # 9c6981a93bac407ea2445d46b56ce53f
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:220
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:232
+#, fuzzy
 msgid ""
 "If, on the other hand, the area has already been extensively mapped, then "
 "hopefully the previous mappers have drawn objects in their correct "
-"locations.  In this case, you can align the imagery to the OSM map, but "
+"locations. In this case, you can align the imagery to the OSM map, but "
 "beware!  Other mappers may not be aware of imagery offset, and they may have "
 "made mistakes when they mapped."
 msgstr ""
@@ -514,17 +541,19 @@ msgstr ""
 "dan mereka mungkin telah membuat kesalahan ketika mereka memetakannya. "
 
 # 95b4c337a45c493f8715ed130e821a0e
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:226
-msgid "*4.1. The Imagery Offset Database*"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:239
+#, fuzzy
+msgid "3.1. The imagery offset database"
 msgstr "*4.1. Database Pergeseran Citra Satelit**"
 
 # 227f719fbb334cc2a9195e588ff21dd2
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:228
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:241
+#, fuzzy
 msgid ""
 "Now you know how to watch out for and correct imagery offset, but there is "
-"one major problem with this approach that we have overlooked thus far.  If "
-"every OpenStreetMap user adjusts the imagery differently, everybody will be "
-"mapping with slightly different backgrounds."
+"one major problem with this approach that we have overlooked thus far. If "
+"every OSM user adjusts the imagery differently, everybody will be mapping "
+"with slightly different backgrounds."
 msgstr ""
 "Sekarang Anda mengetahui bagaimana cara untuk melihat dan memperbaiki citra "
 "satelit, tetapi disini ada sedikit masalah dengan pendekatan yang telah kita "
@@ -532,15 +561,16 @@ msgstr ""
 "berbeda, setiap orang akan memetakan dengan background yang berbeda."
 
 # 878d13909723464aa909d912f2f9fb60
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:233
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:246
+#, fuzzy
 msgid ""
-"Imagine that you are mapping a small town, and you realize that Bing imagery "
-"is offset by 15 meters to the north.  So you adjust the imagery and then use "
-"it to map the whole town accurately.  But then somebody else wants to add "
+"Imagine that you are mapping a small town, and you realise that Bing imagery "
+"is offset by 15 metres to the north. So you adjust the imagery and then use "
+"it to map the whole town accurately. But then somebody else wants to add "
 "something to the map, so they download the data and load Bing imagery, but "
 "they don’t know about the imagery offset you discovered!  They will think "
 "that something is wrong and all of the objects in town are misplaced by 15 "
-"meters, and they will start to move them, which is not correct!  This can be "
+"metres, and they will start to move them, which is not correct!  This can be "
 "disastrous for the town’s map data."
 msgstr ""
 "Bayangkan jika Anda memetakan kota kecil dan Anda menyadari bahwa terjadi "
@@ -554,13 +584,13 @@ msgstr ""
 "data yang ada."
 
 # d676b30a3bef4491bbd036a09a8e43b1
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:242
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:255
+#, fuzzy
 msgid ""
 "For this reason it is important that all users are aware of imagery offset, "
-"and should always check for it before mapping an area.  To help with this "
+"and should always check for it before mapping an area. To help with this "
 "problem, some smart people created a plugin that allows users to save offset "
-"information in a database and share it with others.  Let’s see how this "
-"works:"
+"information in a database and share it with others. Let’s see how this works:"
 msgstr ""
 "Untuk masalah ini, sangat penting agar semua pengguna sadar akan pergeseran "
 "citra satelit dan selalu memeriksa terkait hal itu sebelum memetakan area. "
@@ -569,7 +599,7 @@ msgstr ""
 "database dan menyimpannya dengan yang lain. Mari lihat bagaimana kerjanya: "
 
 # 996b50586ef64ec48f4ee13e6c8bcfa8
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:247
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:260
 msgid ""
 "Open the :guilabel:`Preferences` menu in JOSM, and click on the :guilabel:"
 "`Plugins` tab."
@@ -577,28 +607,30 @@ msgstr ""
 "Buka :guilabel:`Preferences` menu di JOSM, dan klik pada :guilabel:`Plugins`"
 
 # aa28f9dac93a4e1b87ef179ba77bc68d
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:253
-msgid ""
-"Find the plugin named *“imagery_offset_db”* and check the box next to it."
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:266
+#, fuzzy
+msgid "Find the plugin named *imagery_offset_db* and check the box next to it."
 msgstr ""
 "Cari plugin bernama *“imagery_offset_db”* dan centang kotak disamping plugin "
 "tersebut."
 
 # 91b4d9876b614ba5bc01c293e8595335
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:258
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:271
+#, fuzzy
 msgid ""
-"Click :guilabel:`OK`.  You will need to restart JOSM to finish the plugin "
+"Click :guilabel:`OK`. You will need to restart JOSM to finish the plugin "
 "installation."
 msgstr ""
 "Klik :guilabel:`OK`. Anda harus merestart JOSM agar bisa menggunakan plugin "
 "ini."
 
 # baf342c4eb7847f2af6fce73c4f241df
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:261
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:274
+#, fuzzy
 msgid ""
 "In the same way that you are able to save offsets as bookmarks, this plugin "
 "allows you to save offsets to a central database, and to access the offsets "
-"that other users have created.  Hence, if one mapper creates an imagery "
+"that other users have created. Hence, if one mapper creates an imagery "
 "offset in an area, other users can use the exact same offset to map with."
 msgstr ""
 "Sama seperti Anda menyimpan bookmark pergeseran citra satelit Anda, plugin "
@@ -608,7 +640,7 @@ msgstr ""
 "di suatu area, pengguna lain juga bisa menggunakannya."
 
 # 25260776cfec47dcad92268bb3b66188
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:267
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:280
 msgid ""
 "When using aerial imagery layers, you should ALWAYS check for existing "
 "offsets, and when you create your own offset, you should ALWAYS save it to "
@@ -619,16 +651,18 @@ msgstr ""
 "HARUS SELALU menyimpannya di database yang ada."
 
 # 876634e104444e06897040198429cee1
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:271
-msgid "*4.2. Add Imagery Offset from the Database*"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:285
+#, fuzzy
+msgid "3.2. Add imagery offset from the database"
 msgstr "*4.2. Cara memasukkan nilai pergeseran citra satelit melalui database*"
 
 # ee1b0db2ac86451094d9b3f47e84004d
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:273
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:287
+#, fuzzy
 msgid ""
 "When you add an imagery layer, the new plugin will alert you that you should "
-"check the imagery database for an existing offset.  You will see an icon "
-"with a red exclamation point on it at the top of JOSM, like this:"
+"check the imagery database for an existing offset. You will see an icon with "
+"a red exclamation point on it at the top of JOSM, like this:"
 msgstr ""
 "Ketika Anda memasukkan layer citra satelit, plugin baru akan memberi tahu "
 "Anda bahwa Anda harus mengecek database untuk melihat pergeseran citra "
@@ -636,7 +670,7 @@ msgstr ""
 "atas JOSM seperti ini:"
 
 # 849a10a1abd842b296af44a6cbc29c26
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:280
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:294
 msgid ""
 "Click on the button and the plugin will communicate with the database to see "
 "if there are existing offsets in this area."
@@ -646,33 +680,36 @@ msgstr ""
 "area tersebut."
 
 # cb9199c4bf8445ae997db21c035b6b05
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:282
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:297
+#, fuzzy
 msgid ""
-"Here we have downloaded OSM data and GPS tracks in Kuta, Bali, Indonesia.  "
-"In this case, we have found one existing offset.  Click on it to apply to "
-"the map."
+"Here we have downloaded OSM data and GPS tracks in Kuta, Bali, Indonesia. In "
+"this case, we have found one existing offset. Click on it to apply to the "
+"map."
 msgstr ""
 "Disini kita sudah mengunduh data OSM dan trek GPS di Kuta, Bali, Indonesia. "
 "Pada kasus ini kita menemukan salah satu nilai pergeseran citra satelit. "
 "Klik pada nilai tersebut untuk memakainya."
 
 # 82cafd74e3cd4771836eb7179d2bd2de
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:289
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:304
+#, fuzzy
 msgid ""
-"This causes the imagery layer to shift.  However, when we add someone else’s "
-"offset like this, we should check that it is valid by comparing to GPS "
+"This causes the imagery layer to shift. However, when we add someone else’s "
+"offset like this, we should check that it is valid by comparing it to GPS "
 "tracks."
 msgstr ""
 "Ini akan membuat citra bergeser. Akan tetapi, ketika kita menambahkan nilai "
 "offset dari pengguna lain, kita harus mengecek melalui track GPS."
 
 # d1674665f95e457dbf53e6d44657eb8d
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:296
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:311
+#, fuzzy
 msgid ""
-"We can see that the imagery layer is in fact misaligned.  We don’t want "
-"other users to use this offset, so we should mark it as incorrect in the "
-"database.  Click on the :guilabel:`Offsets` button again (it won’t have a "
-"red exclamation mark anymore)."
+"We can see that the imagery layer is in fact misaligned. We don’t want other "
+"users to use this offset, so we should mark it as incorrect in the database. "
+"Click on the :guilabel:`Offsets` button again (it won’t have a red "
+"exclamation mark anymore)."
 msgstr ""
 "Kita bisa melihat bahwa citra satelit masih belum bergeser dengan benar. "
 "Kita tidak menginginkan untuk menggunakan data ini, sehingga kita harus "
@@ -680,7 +717,7 @@ msgstr ""
 "tidak ada tanda seru di tombolnya)."
 
 # 846e18257f1f496b8ba7d8b84770188b
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:304
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:319
 msgid ""
 "This time when the dialog opens, right-click on the offset and click :"
 "guilabel:`Deprecate Offset`."
@@ -689,24 +726,26 @@ msgstr ""
 "`Pergeseran yang sudah tidak digunakan`."
 
 # 0183312f71b84b7eb1a5a3f4d0427269
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:310
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:325
 msgid "Click :guilabel:`Yes` to confirm."
 msgstr "Klik :guilabel:`Ya` untuk konfirmasi."
 
 # e4346d854c114b539d432ccaf0229802
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:311
-msgid "You will need to enter a reason for deprecating this offset."
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:327
+#, fuzzy
+msgid "Enter a reason for deprecating this offset."
 msgstr ""
 "Anda akan harus memberikan alasan untuk menandakan bahwa nilai offset ini "
 "sudah tidak bisa digunakan lagi."
 
 # ec14cf8e09fc454fa746c9bc5594d04e
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:316
-msgid "*4.3. Add Imagery Offset to the Database*"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:333
+#, fuzzy
+msgid "3.3. Add imagery offset to the database"
 msgstr "*4.3. Cara menambahkan data pergeseran citra satelit ke database*"
 
 # b3c1c94b92514aba9342e5ee9f8c933c
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:318
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:335
 msgid ""
 "Now that we have marked this user’s offset as \"deprecated\", we should add "
 "an improved offset to the database."
@@ -715,34 +754,37 @@ msgstr ""
 "yang lama, kita harus menambahkan data offset ke dalam database."
 
 # fa7f1071ab1642c7b86c6758d0950bbf
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:321
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:338
 msgid "Click on the :guilabel:`Adjust imagery offset` button."
 msgstr "Klik tombol :guilabel:`Atur offset citra`."
 
 # fff9a7fa6ed742528700e63c12fb9d53
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:322
-msgid "Adjust the imagery to match the GPS tracks.  Click OK in the box."
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:339
+#, fuzzy
+msgid ""
+"Adjust the imagery to match the GPS tracks. Click :guilabel:`OK` in the box."
 msgstr "Atur citra satelit agar sesuai dengan track GPS. Klik OK di kotak."
 
 # e1daf25ee08846a6ade098a321dee541
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:323
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:340
 msgid "Now go to :menuselection:`Offset ‣ Store Imagery Offset...`"
 msgstr ""
 "Pergi ke :menuselection:`Citra Satelit ‣ Menyimpan Pergeseran Citra "
 "Satelit...`"
 
 # e8b7fdb6389b4c98a69ade6aefe462a5
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:328
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:345
 msgid "Enter a description of the offset in the box that opens."
 msgstr "Beri deskripsi dari data offset yang akan Anda masukkan."
 
 # 82ee83b6d4c14e618366a9a51a1695c1
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:333
-msgid "Click :guilabel:`OK`.  Your offset will be saved to the database."
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:350
+#, fuzzy
+msgid "Click :guilabel:`OK`. Your offset will be saved to the database."
 msgstr "Klik :guilabel:`OK`. Data offset Anda akan tersimpan di database."
 
 # ff34711765b54c27b4443c3a48dd3495
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:334
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:352
 msgid ""
 "Now let’s hide the GPS layer and look at the OSM data against the correctly "
 "placed imagery."
@@ -751,26 +793,29 @@ msgstr ""
 "dengan citra satelit."
 
 # 82d8146b44434348ab701f907176c00a
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:340
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:358
+#, fuzzy
 msgid ""
 "Oh No!  Somebody mapped this area with misaligned imagery, so the area is "
-"not correctly mapped.  This will take some time to fix."
+"not correctly mapped. This will take some time to fix."
 msgstr ""
 "Tidak! Seseorang telah memetakan area ini dengan data yang salah. Ini akan "
 "membutuhkan waktu untuk memperbaikinya."
 
 # 1dc52d85ade947b48c40b10227bf8cf5
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:343
-msgid "*4.4. Imagery Offset Database Website*"
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:362
+#, fuzzy
+msgid "3.4. Imagery offset database website"
 msgstr "*4.4. Situs Database Pergeseran Satelit*"
 
 # 3bf53d5bfeb343bb82bb0d9d05ce6cef
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:345
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:364
+#, fuzzy
 msgid ""
-"Lastly, for more information on the offset database, you can visit the "
-"website at http://offsets.textual.ru/.  This lists all the offsets that have "
-"been uploaded to the database, and it also has a cool map feature that "
-"visualizes where the offsets are located, as you can see here:"
+"For more information on the offset database, you can visit the website at "
+"http://offsets.textual.ru/. This lists all the offsets that have been "
+"uploaded to the database, and it also has a map feature that visualises "
+"where the offsets are located, as you can see here:"
 msgstr ""
 "Terakhir, untuk informasi di database pergeseran satelit, Anda bisa pergi ke "
 "situs http://offsets.textual.ru/. Ini akan menunjukkan daftar pergeseran "
@@ -778,14 +823,55 @@ msgstr ""
 "menunjukkan dimana pergeseran satelit ada, seperti yang Anda lihat disini:"
 
 # 5f766d4367ef42caa171755373680df2
-#: ../../source/training/beginner/osm/107-imagery-offset.rst:353
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:372
+#, fuzzy
 msgid ""
 "One last thing to remember is that the imagery may not be offset the same "
-"distance everywhere!  This is especially true in regions where there are "
-"lots of hills and mountains.  So if the imagery seems to be offset "
-"differently in different areas, you’ll need to move it again."
+"distance everywhere! This is especially true in regions where there are lots "
+"of hills and mountains. So if the imagery seems to be offset differently in "
+"different areas, you’ll need to move it again."
 msgstr ""
 "Satu hal yang perlu diingat adalah jarak pergeseran satelit tidak sama "
 "dengan daerah lain! Hal ini terutama di daerah yang memiliki banyak gunung "
 "dan bukit. Jadi, jika citra satelit bergeser berbeda di area yang lain, Anda "
 "harus menggesernya kembali."
+
+# d58e19eca5f24a5ebfe7a99ce56da762
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:378
+msgid ":ref:`Go to next module --> <getting-osm-data>`"
+msgstr ""
+
+# ad7d8bda913c466190dc1a8cbada3109
+#~ msgid "**1. Imagery Offset Definition**"
+#~ msgstr "**1. Pengertian Imagery Offset**"
+
+# 821a3ea51a1647cf881b41cdca20cabb
+#~ msgid ""
+#~ "At first, the satellite image is a combination of photographs and "
+#~ "satellite coordinates. Special software is used to calculate each side of "
+#~ "the photographs. In general, satellite images have high resolution "
+#~ "enables more accurate calculation. But there are thousands of photographs "
+#~ "and the surface of the earth is not a perfect circle ellipsoid. Satellite "
+#~ "imagery provider can not verify the accuracy of each photo, so the "
+#~ "coordinates can be shifted from the actual position. That is why "
+#~ "satellite imagery can be shifted 1-2 meters and sometimes up to hundreds "
+#~ "of meters. In the mountainous or hilly areas, satellite imagery often has "
+#~ "a non-linear distortion. Shift or distortion is called imagery offset / "
+#~ "shift satellite imagery."
+#~ msgstr ""
+#~ "Pada mulanya, citra satelit merupakan gabungan dari foto-foto dan "
+#~ "koordinat satelit. Perangkat lunak khusus digunakan untuk memperhitungkan "
+#~ "setiap sisi foto-foto tersebut. Secara umum, citra satelit yang memiliki "
+#~ "resolusi tinggi memungkinkan perhitungan yang lebih akurat. Namun "
+#~ "terdapat ribuan foto-foto dan permukaan bumi bukanlah sebuah lingkaran "
+#~ "elipsoid yang sempurna. Penyedia citra satelit tidak dapat memeriksa "
+#~ "akurasi dari setiap foto, sehingga koordinat dapat bergeser dari posisi "
+#~ "yang sebenarnya. Oleh karena itulah mengapa citra satelit dapat bergeser "
+#~ "1-2 meter bahkan terkadang hingga ratusan meter. Pada wilayah pegunungan "
+#~ "atau perbukitan, citra satelit seringkali memiliki distorsi yang tidak "
+#~ "linear. Pergeseran atau distorsi inilah yang disebut imagery offset/"
+#~ "pergeseran citra satelit."
+
+# 360ea98022154e3e999a130c2480c41a
+#~ msgid "**2. Part of Imagery**"
+#~ msgstr "**2. Komponen Citra Satelit**"

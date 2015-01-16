@@ -1,4 +1,4 @@
-.. _begin_qgis_inasafe:
+.. _begin-qgis-inasafe:
 
 Unit 2: Data Analysis Using QGIS and |project_name| Beginner Level
 ==================================================================

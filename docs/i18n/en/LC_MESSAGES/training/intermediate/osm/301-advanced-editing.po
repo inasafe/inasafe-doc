@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-10 16:15+0100\n"
+"POT-Creation-Date: 2014-12-22 12:28\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,355 +17,416 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # da7be12766d545fc853349e567d6cb9f
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:9
-# bddd790955424c3c85bd8f2d77039078
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:10
 msgid "Module 1: Advanced Editing"
 msgstr ""
 
 # afbf325a150e4f4b926b22e5d160a49e
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:11
-# 4ca02528f5a24990bb21fc225105fb91
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:12
 msgid "**Learning Objectives**"
 msgstr ""
 
-# b030776ebcab4a7f8541863e866afb17
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:13
-# 81d749343cb94ce8aab6b93356bd4485
-msgid "Use Advanced Editing Tools in JOSM"
+# a77f7b24be9d45419455d7a80f4e823d
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:14
+msgid "Use advanced editing tools in JOSM"
 msgstr ""
 
 # 065149e54cd7459abd1a8ea885f3c34c
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:14
-# c8582a1ce0b1491599cdad1ebe056be7
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:15
 msgid "Make relations among objects"
 msgstr ""
 
-# fdfe030f9d6a44f6a5109027c2cc7672
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:16
-# 3b357c3110e7448289977b950a4253ad
-msgid "Welcome to the intermediate guide for spatial data collection with OpenStreetMap.  In the previous unit you learned how to draw points, lines, and shapes in JOSM; how to open your GPS waypoints and tracks in JOSM; and how to download, edit, and upload your changes on OpenStreetMap. In this chapter, we will describe relations, JOSM editing tools and editing techniques in greater detail."
+# 306ad0a291f0412eb15edd29b0d15075
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:17
+msgid ""
+"Welcome to the intermediate guide for spatial data collection with "
+"OpenStreetMap. In the previous unit you learned how to draw points, lines "
+"and shapes in JOSM, how to open your GPS waypoints and tracks in JOSM and "
+"how to download, edit and upload your changes on OSM. In this module, we "
+"will describe relations, JOSM editing tools and editing techniques in "
+"greater detail."
 msgstr ""
 
-# 86e60391626e40949a745211af787097
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:23
-# 26fca96b655f4e48bdb06fb73cc9d94b
-msgid "While this chapter is not extremely advanced, it is a step higher than the previous chapters. If you don’t feel like you fully understand the lessons leading up to this, you may wish to practice a little bit more before continuing."
+# af6bb61ce6344fd1b008928c962833d9
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:24
+msgid ""
+"While this module is not extremely advanced, it is a step higher than the "
+"previous unit. If you don’t feel like you fully understand the lessons "
+"leading up to this, you may wish to practise a little bit more before "
+"continuing."
 msgstr ""
 
-# 83f294d46dc74363a5c22f12f123818b
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:28
-# 07bad190fcc74665a9ebaa688addc7a2
-msgid "Topics covered in this chapter:"
-msgstr ""
-
-# fe2d656f7d7d43398cad3b687a57579b
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:30
-# a38abf7a1ca24e01a1404013a03a86d4
-msgid "Advanced Editing Tools"
-msgstr ""
-
-# 4e109fe6446249e2903b97512eb684b5
+# 562c5c86df5a4d2bbfab2cbc76c345bd
 #: ../../source/training/intermediate/osm/301-advanced-editing.rst:31
-# f253d91248c64532b803f29195b999b0
-msgid "Relations"
+msgid "1. Advanced editing tools"
 msgstr ""
 
-# b4e5b0526ee54b9d81f55f5275046b59
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:32
-# 6778d1ff8cf5464a82ae26f39c2e47de
-msgid "Editing Techniques:  The Dos and Don’ts"
-msgstr ""
-
-# 839241263b4e4b8091e8067931fb4fdb
+# 72aa93a0ca3d42e59f8c3231513cbd89
 #: ../../source/training/intermediate/osm/301-advanced-editing.rst:33
-# 85e52b3905bb44589cd884b66ad75120
-msgid "Keyboard Shortcuts"
+msgid ""
+"There are a few ways you can access more editing tools in JOSM. We will look "
+"more at the default tools, as well as additional tools available through "
+"plugins."
 msgstr ""
 
-# 7b9793702a1541359cee7521c3436ac5
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:35
-# 146477061a43423ea2232695ed45f58b
-msgid "**1. Advanced Editing Tools**"
-msgstr ""
-
-# 96ad287baee14896b2953af9e3bef1d4
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:37
-# 5ce87f08b31f454b833ed3f0e90d2ecf
-msgid "There are a few ways you can access more editing tools in JOSM.  We will look more at the default tools, some plug-ins and then keyboard editing shortcuts."
-msgstr ""
-
-# f6f1771f6c494ae685f3ee25c81aad49
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:40
-# 239f13f9b5e549f89e85cf72031eb910
-msgid "*1.1 Default Drawing tools*"
+# e1741c9858514f85bd3ffb2648df9527
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:38
+msgid "1.1 Default drawing tools"
 msgstr ""
 
 # 7a3a5c12b00244f9afe6d548510b6595
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:42
-# 6995efe15bfa4c168e637546c21b1eb4
-msgid "JOSM has some additional tools to make it easier to draw lines and shapes. These tools are found in the :menuselection:`Tools` menu at the top of JOSM."
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:40
+msgid ""
+"JOSM has some additional tools to make it easier to draw lines and shapes. "
+"These tools are found in the :menuselection:`Tools` menu at the top of JOSM."
 msgstr ""
 
 # b68ad549910d497bb1539dcc760417c0
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:48
-# c9c4f2e528914da887bf52a380bcfee6
-msgid "In order to apply the functions in this menu, you must first select a point, line or shape in the map window. Some of the most useful functions are described here:"
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:46
+msgid ""
+"In order to apply the functions in this menu, you must first select a point, "
+"line or shape in the map window. Some of the most useful functions are "
+"described here:"
 msgstr ""
 
-# a87715cc938b449eb369c17bb60ca32c
+# 2f7ccf8169c84053ae9c15e97925a211
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:51
+msgid "Split Way"
+msgstr ""
+
+# 697f820eeba84d92b8d315fccb42a9c6
 #: ../../source/training/intermediate/osm/301-advanced-editing.rst:52
-# b957c88bec0646ab972e2da15eea5f6b
-msgid "**Split Way:** This allows you to divide a line into two separate lines. This is useful if you want to add different attributes to different parts of a road, such as a bridge. To use this function, select a point in the middle of the line that you want to split, Select :menuselection:`Split Way` from the :menuselection:`Tools` menu, and your line should be split in two."
+msgid ""
+"This allows you to divide a line into two separate lines. This is useful if "
+"you want to add different attributes to different parts of a road, such as a "
+"bridge. To use this function, select a point in the middle of the line that "
+"you want to split, go to :menuselection:`Tools ‣ Split Way` and your line "
+"should be split in two."
 msgstr ""
 
-# ec8d2726f1c54f60a0dc14e6f0276afe
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:61
-# e3bb9dff34184eb79fe306fdda53e399
-msgid "**Combine Way:** This does the opposite of :guilabel:`Split Way`. To combine two lines into a single line, they must share a single point. To use this function, select both lines that you want to combine. You can select more than one object by holding the :kbd:`SHIFT` key on your keyboard and clicking on each line. When you have selected both lines, select :menuselection:`Combine Way` from the :menuselection:`Tools` menu."
+# 25309973b89944bd8291f259005698bd
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:62
+msgid "Combine Way"
 msgstr ""
 
-# d08e22c27d1c4f23bc9542af5e85c583
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:71
-# 63934491a44e4eb68bca1083add75bcd
-msgid "Note that you are combining roads that have different directions, you might get this warning:"
+# 087aebc9c30149dda64499bd472acc4e
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:63
+msgid ""
+"This does the opposite of :guilabel:`Split Way`. To combine two lines into a "
+"single line, they must share a single point. To use this function, select "
+"both lines that you want to combine. You can select more than one object by "
+"holding the :kbd:`SHIFT` key on your keyboard and clicking on each line. "
+"When you have selected both lines, go to :menuselection:`Tools ‣ Combine "
+"Way`."
 msgstr ""
 
-# 1f8f729c403b422b92db8df20eb16322
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:77
-# 50edcc73aed64c0f833153cb69025eb7
-msgid "If the roads are connected and go in the same direction, then choose :guilabel:`Reverse and Continue`"
+# c0a316236e914aa19de7fb49ee450cf3
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:73
+msgid ""
+"Note that you if are combining roads that have different directions, you "
+"might get this warning:"
 msgstr ""
 
-# 24a32f9168e644138b65164636135e18
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:80
-# f4e39295ca064912b30a64c0ca1a06da
-msgid "**Reverse Way:** This will change the direction of the line. If the line incorrectly represents a road or river that is one way, you may want to change its direction. Unless someone has intentionally created a way to be one way you do not usually have to worry about altering the direction because ways in OSM default to both ways."
+# 35776016f3ba47ae8e003531844ec197
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:79
+msgid ""
+"If the roads are connected and go in the same direction, click :guilabel:"
+"`Reverse and Combine`."
 msgstr ""
 
-# 9e92220e99274472aaa03ff58c9b9221
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:89
-# 627708854e67417eb1e9d37af19eba3b
-msgid "**Simplify Way:** If your line has too many points in it and you’d like to make it simpler, this will remove some of the points from a line."
+# f0cd38c906ed47fc94bfb47c56744086
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:83
+msgid "Reverse Way"
 msgstr ""
 
-# 3771334b6801474fb14c48c4dc6c7272
+# a7dc6030429e4c7c9a3f07d5884fb844
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:84
+msgid ""
+"This will change the direction of the line. If the line incorrectly "
+"represents a road or river that is one-way, you may want to change its "
+"direction. Unless someone has intentionally created a way to be one way you "
+"do not usually have to worry about altering the direction because ways in "
+"OSM default to represent both directions."
+msgstr ""
+
+# 9d51dbd0bdd44ba79ae5272b6fe74b9b
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:94
+msgid "Simplify Way"
+msgstr ""
+
+# 619e46de8d8c443f99c67554ea397b03
 #: ../../source/training/intermediate/osm/301-advanced-editing.rst:95
-# 28a68de8c83f402cbe687d3922b382bb
-msgid "**Create Circle OR Align Nodes in Circle:** If you are trying to make a circular shape, draw the circle as best you can and then select three nodes and the function. It will help arrange your points in a circle."
+msgid ""
+"If your line has too many nodes in it and you’d like to make it simpler, "
+"this will remove some of the points from a line."
 msgstr ""
 
-# b511b0f111734f4099d701b0646f2046
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:105
-# 154751a14cb34571ad5ae1c68539bd4b
-msgid "**Align Nodes in Line:** This function will align a series of points into a"
+# de5f09ecb55c4979971d9537c27b317e
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:102
+msgid "Create Circle OR Align Nodes in Circle"
 msgstr ""
 
-# fd742f55a9aa432cbbffa3d133a9f94f
+# 6432bdb597af43999a5d2f9cc133465c
 #: ../../source/training/intermediate/osm/301-advanced-editing.rst:103
-# d017c5b164be4d39aeda2806a4e1fba0
-msgid "straight line. With long lines it is best to select sections of the line to straighten. Be careful as this does have the tendency to shift the line a little."
+msgid ""
+"If you are trying to make a circular shape, draw the circle as best you can "
+"and then select three nodes and the function. It will help arrange your "
+"points in a circle."
 msgstr ""
 
-# 0b669ac6e5164593a7313cbeab0237a4
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:110
-# 755440d799e44a4489ed2e36033b78b4
-msgid "**Orthogonalize Shape:** This function is very useful for drawing regular shapes such as buildings. After you draw an area, this function will reshape it to have square corners. This feature is most useful for other regularly shaped features, such as tennis courts, or landuse areas. (Using the :guilabel:`Building Plugin`, which will be explained below, might be easier)."
+# ec87ac0832fa4f72848440763c4721b6
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:111
+msgid "Align Nodes in Line"
 msgstr ""
 
-# 613b6a8e43754f25ad07c16baba2b24a
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:119
-# b3c545b0ac834cf69a18bce1d70e5267
-msgid "**Unglue way:** This tools allows you to detach nodes that are connected."
+# 03d01d7506de4a38a915b65b8a4ac782
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:112
+msgid ""
+"This function will align a series of points into a straight line. With long "
+"lines it is best to select sections of the line to straighten. Be careful as "
+"this does have the tendency to shift the line a little."
 msgstr ""
 
-# 70d0c42b9e0a4f1d8acdbf9fbeab9f2a
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:124
-# da4be34dc69a419793a64da1ad98d09d
-msgid "The line and node will not actually appear separate as the last screen shot implies."
+# ccf832627f9a434e8a05091721b8ecac
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:121
+msgid "Orthogonalize Shape"
 msgstr ""
 
-# 0ef299d8941443b994cf89b45f4a32c5
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:127
-# a7bacff82b584564a5617042b790ed40
-msgid "*1.2 Plug-ins*"
+# 41be30a94bb2499d872efafeca47acfb
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:122
+msgid ""
+"This function is very useful for drawing regular shapes such as buildings. "
+"After you draw an area, this function will reshape it to have square "
+"corners. This feature is most useful for other regularly shaped features, "
+"such as tennis courts or landuse areas (Using the Building Plugin, which is "
+"explained below, might be easier for buildings)."
 msgstr ""
 
-# 146b9425f4a441c8882628ad8adc7316
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:129
-# 7831d715aa4848dbbcca2e6c3bd78398
-msgid "**Building Plug-in**"
-msgstr ""
-
-# 29452309032c43949b4e5f1da36600ee
+# 92d5517454d44a51be43d8c2f455a58c
 #: ../../source/training/intermediate/osm/301-advanced-editing.rst:133
-# 14dc59ce64034febb47349ae51c2b6a4
-msgid "This plug-in is by far one of the most useful tools for editing (digitizing). Install it as with any other plugin. It will appear as an icon on the left hand toolbar. The functionality of this tool is explained here:"
+msgid "Unglue Ways"
 msgstr ""
 
-# f7e54485ba1b4f5194dad220da2155f8
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:137
-# ba08bfaabd15407dbfca1707996e2f31
-msgid "The :guilabel:`Building Tool` allows you to create shapes with 90 degree corners with just three clicks.  First, you trace the edge of your building and then you drag out the line to make it a polygon."
+# af528a77dda74d6d849e6c6b38d201f2
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:134
+msgid "This tool allows you to detach nodes that are connected."
 msgstr ""
 
-# 328efd3f36204bc18e143472a8c0cc94
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:147
-# 06391489fb984aae8176ff00e0eddfa2
-msgid "You can also create more complicated buildings by using the merge option. Create your building outline, select all of the polygons (press :kbd:`SHIFT` to highlight them all) and then hit :kbd:`SHIFT + J` to merge the objects."
+# 0ce1bdba9d684f88bebd3c1ab67849bb
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:139
+msgid ""
+"The line and node will not actually appear separate as the last screenshot "
+"implies."
 msgstr ""
 
-# b5651ec86c43466291c4aebf769d9d4a
+# 250da187fe504532a794296b0a2c6606
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:143
+msgid "1.2 Plugins"
+msgstr ""
+
+# a670179b51fc4a669f6a1468798e2c89
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:146
+msgid "Building Plugin"
+msgstr ""
+
+# 4ac17321ad3f4341a6d5f6d0f0a07d03
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:150
+msgid ""
+"This plugin is by far one of the most useful tools for editing (digitising). "
+"Install it as with any other plugin. It will appear as an icon on the left "
+"hand toolbar. The functionality of this tool is explained here:"
+msgstr ""
+
+# c5e238b21eaa4b66995a6a6800cd2fb5
 #: ../../source/training/intermediate/osm/301-advanced-editing.rst:154
 msgid ""
-"Furthermore, you can also change the default settings (size and tagging) on :"
-"menuselection:`Data > Set building size`"
+"The Building tool allows you to create shapes with 90 degree corners with "
+"just three clicks. First, trace the edge of the building and then drag out "
+"the line to make it a polygon."
 msgstr ""
 
-# 067170c65dee48c3adca8297243b5743
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:160
+# 78f2ee8ffb1540f78b55189ba3323811
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:164
 msgid ""
-"If you are dealing with a similar size of building, you can change building "
-"in certain dimensions, such as 5 x 6 meter (unit in meter). Furthermore, if "
-"you mapping same infrastructure, such as townhouses in same area, you can "
-"edit tags on :guilabel:`Advanced` tab that all objects are mapped into same "
-"building tools."
+"You can also create more complicated buildings by using the merge option. "
+"Create your building outline, select all of the polygons (press :kbd:`SHIFT` "
+"to highlight them all) and then press :kbd:`SHIFT + J` to merge the objects."
 msgstr ""
 
-# fd06188e5ad34f8b8766a7a2cffdcbda
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:169
-msgid "**Utilsplugin2 (More Tools)**"
+# 60dacf90f59442e690ee3808e2f6bd0d
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:171
+msgid ""
+"Furthermore, you can also change the default settings (size of building and "
+"default tags) by going to :menuselection:`Data ‣ Set building size`."
+msgstr ""
+
+# 6c7dbdff5d064618bf5f776c0339bbed
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:177
+msgid ""
+"This is useful if you are drawing many buildings of a known dimension (such "
+"as five by six metres). If you are mapping infrastructure which requires "
+"tags other than **building=yes**, you can set the desired default tags by "
+"going to :guilabel:`Advanced...`."
+msgstr ""
+
+# 1173a2edff4a46cf9ecd081eb74e3b1d
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:187
+msgid "Utilsplugin2 (More Tools)"
 msgstr ""
 
 # 19ec76d3522649558b2f08a40bc4db99
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:171
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:189
 msgid ""
 "The plugin utilsplugin2 has several features that are also useful for "
 "editing."
 msgstr ""
 
-# 6c74f89b91574db8b0e4108aedaba493
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:176
+# ffd91d78f1354e8ca865d388b6e848b6
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:194
 msgid ""
 "After you install this plugin, a new menu will appear called :menuselection:"
-"`More Tools`"
+"`More Tools`."
 msgstr ""
 
-# cb55eb0d7e7648d0aba077b9d20ff1e9
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:182
-msgid "The following tools are generally the most useful:"
+# 1d6573aa65c344c8b219f66988c0cd7f
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:200
+msgid "The following tools are some of the most useful:"
 msgstr ""
 
-# 8fb0c89d44c444e4a9e178d8a848e831
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:184
-msgid ""
-"**Add Nodes at Intersections:**  This tool is very helpful for adding "
-"missing nodes in intersections of selected ways.  It is good practice that "
-"roads and rivers should always have common nodes where they intersect."
-msgstr ""
-
-# 66111486926442a7ae9425e44b12ca4f
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:191
-msgid ""
-"**Copy Tags from Previous Selection:**  This function makes copying tags "
-"easier. If you want to create many objects with the same tags, first draw "
-"the objects. Then add the tags to one object. Click on another object and "
-"press :kbd:`Shift + R` to copy the tags from the previously selected object. "
-"You can do this for all objects that you want to tag. Remember that the tags "
-"will be copied from the previously selected object, so if you click on an "
-"untagged object and then another untagged object, you will not be able to "
-"copy any tags."
-msgstr ""
-
-# b4dfa62573884d6dbc73ea6146a19391
+# be036959f3fd4232a4f9bd747093210d
 #: ../../source/training/intermediate/osm/301-advanced-editing.rst:203
-msgid ""
-"**Add Source Tag:** This tool simplifies adding a source tag. It remembers "
-"the source that was specified last and adds it as remembered source tag to "
-"your objects. You can insert the source with just one click."
+msgid "Add Nodes at Intersections"
 msgstr ""
 
-# 277f676cfc054d17a94d11b4f87f8a4c
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:207
+# 313f8df74c464631a0a9606362f22723
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:204
 msgid ""
-"**Replace Geometry:** This tool is great if you want to redraw a poorly "
-"shaped object, but want to keep the history, attributes and ID number of "
-"that object. For example, if you come across a building that is complicated "
-"and drawn in a poor fashion, then instead of painfully changing each node, "
-"you can (2) just draw the object again (3) select the old and new object (4) "
-"press :guilabel:`Replace Geometry` to transfer all the information over."
+"This tool is helpful for adding missing nodes in intersections of selected "
+"ways. It is good practice that roads and rivers should always have common "
+"nodes where they intersect."
+msgstr ""
+
+# 7b8ca1b76d1b43c38058148895726b78
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:212
+msgid "Copy Tags from Previous Selection"
+msgstr ""
+
+# b4ff66f894ee4a5c9aecbbf381effcc6
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:213
+msgid ""
+"This function makes copying tags easier. If you want to create many objects "
+"with the same tags, first draw the objects. Then add the tags to one object. "
+"Click on another object and press :kbd:`Shift + R` to copy the tags from the "
+"previously selected object. You can do this for all objects that you want to "
+"tag. Remember that the tags will be copied from the previously selected "
+"object, so if you click on an untagged object and then another untagged "
+"object, you will not be able to copy any tags."
+msgstr ""
+
+# cf48cdf8716541dfa034f628054de4b4
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:226
+msgid "Add Source Tag"
+msgstr ""
+
+# bb559790aad3421f804685de8ec4aa29
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:227
+msgid ""
+"This tool simplifies adding a source tag. It remembers the source that was "
+"specified last and adds it as remembered source tag to your objects. You can "
+"insert the source with just one click."
+msgstr ""
+
+# e876b627e7a9428aaded7d7c6922806b
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:232
+msgid "Replace Geometry"
+msgstr ""
+
+# 6951879250c840378b409f3b50d745cb
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:233
+msgid ""
+"This tool is great if you want to redraw a poorly shaped object, but want to "
+"keep the history, attributes and ID number of that object. For example, if "
+"you come across a building that is complicated and drawn in a poor fashion, "
+"then instead of painfully changing each node, you can (2) just draw the "
+"object again (3) select the old and new object (4) press :guilabel:`Replace "
+"Geometry` to transfer all the information over."
 msgstr ""
 
 # 0447041a55694329b9b31df0f2c46349
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:217
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:244
 msgid ""
 "Utilsplugin2 also provides a new selection menu that provides more tools:"
 msgstr ""
 
-# 63805cc41a4c436bbdfb29076083d784
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:222
-msgid "These tools have proved to be the most useful:"
+# 7fb2146251a947e888a0089ccd862f0c
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:249
+msgid "These tools are some of the most useful:"
 msgstr ""
 
-# 4f6cce72022049d18dfd6486a6bf76e8
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:224
-msgid ""
-"**Unselect Nodes:**  This tool allows you deselect nodes, which makes it "
-"useful for tagging the objects selected.  This tool is necessary if you have "
-"mapped several polygon objects with similar attributes and would like to tag "
-"the objects without tagging the nodes. To do so, select all of the objects"
+# fbabbcf580aa42e89d541ea110e4929a
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:252
+msgid "Unselect Nodes"
 msgstr ""
 
-# f7fc9e7561124c26b35c91e9bec84e12
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:230
-msgid ""
-"-- polygons, ways and relations -- unselect the nodes and tag appropriately."
-msgstr ""
-
-# 74045192db6a4336ba3b2680cab56ff5
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:236
-msgid ""
-"**Select Last Modified Nodes:**  This tool permits you to go back to the "
-"nodes that you most recently changed. It is like undo: node style."
-msgstr ""
-
-# f2bcec3bbad24536b7b840ff4023ee4d
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:239
-msgid "**2. Relations**"
-msgstr ""
-
-# dda32007f3bc485f923c66234adb798d
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:241
-msgid ""
-"In the first unit we learned that there are three types of objects that can "
-"be drawn in OpenStreetMap - points (nodes), lines (ways), and polygons. "
-"Lines contain numerous points, and the line itself carries the attributes "
-"that define what it represents.  Polygons are the same as lines, except that "
-"the the line must finish where it begins in order to form a shape."
-msgstr ""
-
-# b282a1910a0b4885a6a2175da37b2bb8
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:247
-msgid ""
-"In fact, there is one other type of object in OpenStreetMap, and these are "
-"called relations. In the same way that a line consists of other points, a "
-"relation contains a group of other objects, be they points, lines, or "
-"polygons. If you are looking to obtain advanced editing skills, then "
-"understanding and knowing how to properly edit relations is important."
-msgstr ""
-
-# bba3335466f343049a568b920633c75f
+# a1334887e60a46cd84f56fa92aa674e6
 #: ../../source/training/intermediate/osm/301-advanced-editing.rst:253
 msgid ""
+"This tool allows you to deselect nodes, which makes it useful for tagging "
+"the objects selected. This tool is necessary if you have mapped several "
+"polygon objects with similar attributes and would like to tag the objects "
+"without tagging the nodes. To do so, select all of the objects - polygons, "
+"ways and relations. Then unselect the nodes and tag appropriately."
+msgstr ""
+
+# b1bcf205f48b4051bbfb549236879b7b
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:263
+msgid "Select Last Modified Nodes"
+msgstr ""
+
+# afca470da8394caca6f7b8d765dddad1
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:264
+msgid ""
+"This tool permits you to go back to the nodes that you most recently changed."
+msgstr ""
+
+# 5cb06c79a3264b63b6932cdeab110ff5
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:268
+msgid "2. Relations"
+msgstr ""
+
+# 02db15af372a436b9fe78081a61f4195
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:270
+msgid ""
+"In the first unit we learned that there are three types of objects that can "
+"be drawn in OSM - points (nodes), lines (ways) and polygons. Lines contain "
+"numerous points, and the line itself carries the attributes that define what "
+"it represents. Polygons are the same as lines, except that the the line must "
+"finish where it begins in order to form a shape."
+msgstr ""
+
+# 36566b333a82454cac796a3d238b9ee4
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:276
+msgid ""
+"In fact, there is one other type of object in OSM, and these are called "
+"relations. In the same way that a line consists of other points, a relation "
+"contains a group of other objects, be they points, lines or polygons. If you "
+"are looking to obtain advanced editing skills, then understanding and "
+"knowing how to properly edit relations is important."
+msgstr ""
+
+# 7bebb4662e61450ea3b0246b233507d4
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:282
+msgid ""
 "For example, imagine that you want to map a building that has courtyards in "
-"the center. You would need to draw a polygon around the outside of the "
-"building, and you would want a other polygons around the courtyards to "
+"the centre. You would need to draw a polygon around the outside of the "
+"building, and you would need other polygons around the courtyards to "
 "indicate that they are not part of the building. This is an example of a "
 "relation. The relation would contain several polygons - and the attributes "
 "of the building would be attached to the relation, not the polygons."
 msgstr ""
 
 # 73541f27cfd24043adca5efbf85ba78c
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:263
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:292
 msgid ""
 "Relations are used to represent anything that requires a collection of "
 "objects to define. Other examples are bus routes (a collections of lines), "
@@ -373,125 +434,163 @@ msgid ""
 "all part of one location (like buildings in a university)."
 msgstr ""
 
-# 7bcb22b80395486aa4bdcac1ff534c2b
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:268
+# c5bbcc1a04484dbf875421d1ac049c35
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:297
 msgid ""
 "There are mainly four types of relations you will encounter in OSM: "
-"**Multipolygons, Routes, Boundaries and Restrictions** (such as, no left "
-"turns). In this section we will go over Multipolygons and Routes."
+"**Multipolygons, Routes, Boundaries and Restrictions**. In this section we "
+"will go over Multipolygons and Routes."
 msgstr ""
 
-# b81917059980475d8c9e95fae5415b2e
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:272
-msgid "*2.1 Editing Relations*"
+# b9e441cb76e34a71af86fde1d3c7a0a3
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:302
+msgid "2.1 Editing relations"
 msgstr ""
 
-# 7d9def5462284d9593905504119e77e1
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:274
+# dba36f514a854e79be8d6200ee176fde
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:304
 msgid ""
 "The multipolygon above contains a polygon for the outer limits of the "
 "building and two more to mark the inner courtyards. To create a relation "
-"from these three polygons you need to:"
+"from these three polygons we need to:"
 msgstr ""
 
 # 13f56f0734934dd8ae79cff08b40861b
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:278
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:308
 msgid "Select all of the polygons."
 msgstr ""
 
 # 5a096b435a3a4bbeae35e168c8b5f763
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:279
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:310
 msgid "Go to :menuselection:`Tools ‣ Create multipolygon`"
 msgstr ""
 
 # fe71d31d55d446588dfb0a074016b997
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:284
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:315
 msgid "The polygons should automatically be created as a multi-polygon."
 msgstr ""
 
-# 4ad800459aa8433e9aa36133d1ca1765
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:289
+# a5031255b2754a7c94d8671f338c8e80
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:320
+msgid "Click the :guilabel:`Edit` button in the :guilabel:`Tags` tab."
+msgstr ""
+
+# eaa357ac7c824d0dbae7bac69b74bf35
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:322
 msgid ""
-"You will then see your building as a a solid shape with the inner polygons "
-"represented with gaps. The data behind the relation in this example is "
-"visible on OpenStreetMap: You can see this multipologyon on OSM by going to "
-"http://www.openstreetmap.org/browse/relation/2435797. It will appear on "
-"OpenStreetMap like this:"
+"This opens the relation editor. Notice that in the lower-left corner is a "
+"list of the members of the relation. One has been automatically defined with "
+"the role of \"outer\" (the outer polygon), and the other carries the role of "
+"\"inner.\""
 msgstr ""
 
-# 597cd1946f414e88b7d0728e5b7cf080
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:299
-msgid "*2.2  Another MultiPolygon*"
-msgstr ""
-
-# 056eb0e74d144ff681287c093b01fc3e
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:301
+# a372e9a9679d43b38dc5e740f622f18c
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:326
 msgid ""
-"This river is another example of a multiploygon. Effectively it is the same "
-"as the building example, but with a greater number of members and covering a "
-"much larger area. It can be viewed on the OpenStreetMap site here: http://"
-"www.openstreetmap.org/browse/relation/1046961."
+"At the top are a list of the tags applied to this relation. Right now only "
+"one tag exists, **type=multipolygon**. This tag indicates what type of "
+"relation the object is."
 msgstr ""
 
-# c36f4ad29e634b6eb7b416f1eabc6323
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:313
-msgid "*This river contains ten ways that are connected like a long polygon.*"
+# f27f456557134ca383fb620566d91798
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:330
+msgid "Click beneath it and add one more tag: **building=yes**."
 msgstr ""
 
-# 27b1441b896940b891112eb1c9b05f79
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:315
-msgid "*2.3  Linestring Relations*"
+# 2f68c124cdd645348e996e26922a89ee
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:335
+msgid ""
+"Click :guilabel:`OK`. The object will change colours and will now appear as "
+"a building, but with a courtyard."
 msgstr ""
 
-# 4fc4586a561b4f4688e314759fa8de64
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:317
+# db8d6bba08224517b0cf1b7a0731dfcb
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:338
+msgid ""
+"The data behind the relation in our example is visible on OSM: You can see "
+"this multipolygon on OSM by going to http://www.openstreetmap.org/browse/"
+"relation/2435797. It will appear on OSM like this:"
+msgstr ""
+
+# de55dea50da44d1db1561ef135591b42
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:347
+msgid "2.2  Another multipolygon"
+msgstr ""
+
+# be9d33c7fa634450936737d5303c3254
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:349
+msgid ""
+"The river below is another example of a multipolygon. Effectively it is the "
+"same as the building example, but with a greater number of members and "
+"covering a much larger area. It can be viewed on OSM here: http://www."
+"openstreetmap.org/browse/relation/1046961."
+msgstr ""
+
+# 36678d891a694c38aa72cce187044003
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:361
+msgid "This river contains ten ways that are connected like a long polygon."
+msgstr ""
+
+# 0f7b0ef85fd846ddba6f32c60aa51e77
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:364
+msgid "2.3  Linestring relations"
+msgstr ""
+
+# b8ea0133afdd4146a9b60efc69e719e6
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:366
 msgid ""
 "Relations are also very useful for creating, labeling and editing large "
 "linestrings; for example, bus routes, hiking trails, bicycle paths, etc. "
 "These differ from multipolygons because they are relations with members, as "
 "supposed to complex areas. A linestring could simply be one line with "
-"multiple members, these can be tagged as such. Additional features, such as "
-"bus stops represented by separate nodes can also be tagged as relation "
-"members."
+"multiple members. Additional features, such as bus stops represented by "
+"separate nodes can also be tagged as relation members."
 msgstr ""
 
-# 96f8ac5d93714e9aa266285f6b0ca90d
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:330
+# fff890b068c94d34831a37909675acaf
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:378
+msgid "To create a linestring relation:"
+msgstr ""
+
+# 03f6159f39f641c1abedb620004fe226
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:380
 msgid ""
 "Make sure that all of the ways in which the route runs along are "
-"appropriately tagged. For example, **highway = footway**."
+"appropriately tagged. For example, **highway=footway**."
 msgstr ""
 
-# 8927b3d6e178465bbcf7cefcaab5ab42
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:332
+# 0878a4d1f7e54aedb91f16f61171f612
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:383
 msgid ""
-"Select all of the highways or ways that the bus takes. If you would only "
-"like to select certain parts of the way, then, sadly, you must divide the "
-"way into the section you would like to select. This creates more work, but "
-"you can easily do it with the :guilabel:`Split Way`tool. Once some or all of "
-"the ways are selected, click :guilabel:`Edit` in the :guilabel:`Relation` "
-"panel. The relation editing dialog will pop up."
+"Select all of the highways or ways that are part of the bus route. If you "
+"would only like to select certain parts of a way, then you must divide the "
+"way into sections. This creates more work, but you can easily do it with "
+"the :guilabel:`Split Way` tool."
 msgstr ""
 
-# d3a8d7e461474226ab5075763b83da4a
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:340
+# d7422a994b8b4a8f935379ae1fe6c03f
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:389
 msgid ""
-"Go to the :menuselection:`Presets` Menu and down at the bottom click :"
-"menuselection:`Public Transport` and then :menuselection:`Route` or :"
-"menuselection:`Route Master`. :menuselection:`Route master` is the main "
-"route that a bus takes, while route is a variant path of the bus."
+"Go to :menuselection:`Presets ‣ Transport Public Transport ‣ Route master`."
 msgstr ""
 
-# eb09e089372d43d9ad50184925b4110b
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:349
-msgid "Fill in the corresponding information about the bus route."
+# c81669013b8e49d5bfc01f470a316386
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:394
+msgid ""
+"Fill in the information about the bus route and click :guilabel:`New "
+"relation`."
 msgstr ""
 
-# 1c7412d54cf44b12bc3d5adf8411775a
-#: ../../source/training/intermediate/osm/301-advanced-editing.rst:354
+# 5aec5fbc19f14d91ba45288fedf54e49
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:400
 msgid ""
 "Relations are difficult to understand and do not have to be used often, but "
-"they are necessary to know about.  As you get more developed with your OSM "
-"skills and want to create more complex building, river and routes, relations "
-"will be useful."
+"they are necessary to know about. As you get more developed with your OSM "
+"skills and want to create more complex buildings, rivers and routes, "
+"relations will be useful."
+msgstr ""
+
+# 68680a8b28614b92bdab307a94019aaa
+#: ../../source/training/intermediate/osm/301-advanced-editing.rst:406
+msgid ":ref:`Go to next module --> <quality-assurance>`"
 msgstr ""

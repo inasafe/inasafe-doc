@@ -44,9 +44,9 @@ Doc String
 
 Plugin for impact of population as derived by categorised hazard.
 
-    :author ESSC
-    :rating 3
-    :param requires category=='hazard' and                     unit=='categorised' and                     layertype=='raster'
+        :author ESSC
+        :rating 3
+        :param requires category=='hazard' and                         unit=='categorised' and                         layertype=='raster'
 
-    :param requires category=='exposure' and                     subcategory=='population' and                     layertype=='raster'
-    
+        :param requires category=='exposure' and                         subcategory=='population' and                         layertype=='raster'
+        

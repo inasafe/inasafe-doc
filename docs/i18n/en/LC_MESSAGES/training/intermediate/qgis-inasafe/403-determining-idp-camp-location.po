@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-10 16:15+0100\n"
+"POT-Creation-Date: 2014-12-22 12:28\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,97 +17,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 # c061360248444635ab337f3c3bd35819
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:8
-# d4358a3ce62349a4a8f7eb81c72733ae
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:10
 msgid "Module 3: Determining IDP Camp Location"
 msgstr ""
 
 # c5a1d3e6b0c64e43921390cc6dae8769
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:10
-# 40b264a59a8c4e9bbb64bd10f627ae7c
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:12
 msgid "**Learning Objectives**"
 msgstr ""
 
 # 34b3681f87bc4c508ca41e7a139c953d
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:12
-# e56728aca348441ebf7b006f0cb983ba
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:14
 msgid "Develop criteria for determining an ideal IDP camp location"
 msgstr ""
 
-# 03fd36683f1740e8ae043639906b9850
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:13
-# b8abb7bdc11d4a5ba9aca94d9ce69c4b
-msgid "Using geoprocessing tools"
-msgstr ""
-
-# 9bab2e8dac2f40bb8be0fe9fc5ad5ce9
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:14
-# 5b451a5d05e442d68c9d94897266a064
-msgid "Using Spatial Query: Contains, Within, Equal, Intersect, and Is Disjoint"
-msgstr ""
-
-# 5a808929093e4ab89cc227a58eadb7af
+# 54d4e7d8144a4ba8af91d7352d64ad25
 #: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:15
-# 2ac381bb78f44cdaaf9ed9b7e15a53d6
-msgid "Combine Geoprocessing Tools and Spatial Query to select building(s) for temporary IDP camps"
+msgid "Use geoprocessing tools"
 msgstr ""
 
-# 05e9c8cdabde4c638f4d95256cd144fd
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:18
-# 478914d873184ab8b523fad44d5226dd
-msgid "Another important part of disaster planning is determining potential locations for IDP camps. To do this we need to be able to take various criteria into account in finding an appropriate location. In Unit 2 we did exactly this. We analyzed various layers and performed a GIS analysis to determine several land areas appropriate for IDP camps near Merapi."
-msgstr ""
-
-# 12040f9bd5b74ed796ce195920ce3c2b
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:24
+# 88e94ced825f4fbba42de9e56c0bfea0
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:16
 msgid ""
-"In this Module we will take a closer look at the tools we use to perform "
+"Use various spatial queries: contains, within, equal, intersect and is "
+"disjoint"
+msgstr ""
+
+# 1f1c323c37d144089af2e7a49ec63a21
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:17
+msgid ""
+"Combine geoprocessing tools and spatial queries to select building(s) for "
+"temporary IDP camps"
+msgstr ""
+
+# f341c9b6f1e44282bfad88acc59e0eec
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:20
+msgid ""
+"Another important part of disaster planning is determining potential "
+"locations for IDP camps. To do this we need to be able to take various "
+"criteria into account in finding an appropriate location. In Unit 2 we did "
+"exactly this. We analysed various layers and performed a GIS analysis to "
+"determine several land areas appropriate for IDP camps near Merapi."
+msgstr ""
+
+# 466d6b9903b342d59c18adb39dbbd4db
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:26
+msgid ""
+"In this module we will take a closer look at the tools we use to perform "
 "this GIS analysis, but the process will remain the same. As with any proper "
-"GIS inquiry, we will follow these steps:"
+"GIS enquiry, we will follow these steps:"
 msgstr ""
 
-# c37388da2fd441db9a8430c5184c82ce
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:28
-msgid "Define the Problem"
-msgstr ""
-
-# 49357dcac5314682841a05f8f6e07f79
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:29
-msgid "Obtain Data"
-msgstr ""
-
-# 5ac304fbbbda4441a0f7edaa2d1adb4a
+# 1376c2a7e0644aff96a0567f878c95ea
 #: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:30
-msgid "Analyze Problem"
+msgid "Define the problem"
 msgstr ""
 
-# 11529bddf65b4972a0c1c47214b010e7
+# e8ea39ffe82243429e69f149edfd1019
 #: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:31
-msgid "Visualize Result"
+msgid "Obtain data"
 msgstr ""
 
-# fd40efa3e8e34c94997275de5d04c4aa
+# 66160479e98f49a596125ca0f05318e3
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:32
+msgid "Analyse the problem"
+msgstr ""
+
+# e3e226ca2e2542f9a7346db6bc0a4f0d
 #: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:33
-msgid "**1. Geoprocessing Tools**"
+msgid "Visualise the result"
 msgstr ""
 
-# e3192d96bdb9470b994df38554d7cd1a
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:35
+# d9839db878f0462fa5cdfb63a139cb7c
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:36
+msgid "1. Geoprocessing tools"
+msgstr ""
+
+# af2927a804f843caa2304fb68fd078a1
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:38
 msgid ""
-"When we performed our first analysis, we utilized several spatial functions "
+"When we performed our first analysis, we utilised several spatial functions "
 "in order to answer questions such as “what locations match conditions in "
 "layer A and different conditions in layer B?”. Before we begin our GIS "
 "analysis, let’s examine the some of the spatial functions that are available "
 "to us."
 msgstr ""
 
-# 7e2cb7b0fe5648c3b8fbf70d6f718f56
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:41
-msgid "**Buffer**"
+# fb01f8d705634a369fea5219a1e24c20
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:45
+msgid "Buffer"
 msgstr ""
 
 # 3b05bc844c734ea0be82540a65e2d3ac
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:43
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:46
 msgid ""
 "The buffer function is used to make a new feature based on a given distance. "
 "We saw this in Unit 2, when we defined a buffer around roads and health "
@@ -116,15 +118,15 @@ msgid ""
 "criteria – that camp locations should be close by."
 msgstr ""
 
-# 3764407947634f5a958023ae981fb4c5
-# bcca7db201df4e01bde9680bc6a199cf
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:53
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:123
-msgid "**Intersect**"
+# 5d360cfa7808407da8c7ac769c79b8a7
+# ad8d625788b342b39efb68c56a1692a3
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:57
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:128
+msgid "Intersect"
 msgstr ""
 
 # fdb4d43d1bfd4179a6ad69b429c57c82
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:55
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:58
 msgid ""
 "The intersect function is used to combine two overlapping layers, with the "
 "result that only the intersecting features from both layers will be "
@@ -132,50 +134,50 @@ msgid ""
 "combined in the new layer."
 msgstr ""
 
-# f8a19e5e7c7742fbbab01798cb447c6f
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:63
-msgid "**Clip**"
+# cb0a1201c8314cdbbf75533bdec155e2
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:67
+msgid "Clip"
 msgstr ""
 
-# 8adf58fcf2b94e14b9d933696d5ecc88
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:65
+# 66b9240e57634df9b3bc6b8c1daf9b0c
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:68
 msgid ""
 "Clip is used to cut an input feature with another feature (clip feature). "
-"The attributes from input feature are left intact, only the shape of the "
+"The attributes from the input feature are left intact, only the shape of the "
 "input feature will follow the shape of the clipping feature."
 msgstr ""
 
-# 83fc3f1cd29d4f08ace40155b3dbb446
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:72
-msgid "**Union**"
+# 38a33a7121014df7ad3066d0a7a84d66
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:76
+msgid "Union"
 msgstr ""
 
-# caf5544ee76c4a2cb00030733941af76
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:74
+# 8d574d8e3dba433fa927fcad3efa3e22
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:77
 msgid ""
 "Union is used to make a new feature by combining two features. The feature "
-"produced contains features and attributes from the two sources features."
+"produced contains features and attributes from the two source features."
 msgstr ""
 
-# ecd9dd18ff5b407fb99a51e13aabfe27
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:81
-msgid "**Dissolve**"
+# 6908576d7f09434998d6a4183994d248
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:85
+msgid "Dissolve"
 msgstr ""
 
 # 5f0acb48d4474a7382ba1558a6ce190c
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:83
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:86
 msgid ""
 "Dissolve is used to combine features inside layers that have the same value "
 "in one of their fields."
 msgstr ""
 
-# 9833db6fd195496a8ac965ecf1e21043
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:89
-msgid "**2. Spatial Queries**"
+# a80ee045065944818e8013c6f3fc5544
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:93
+msgid "2. Spatial queries"
 msgstr ""
 
 # 9b0f64812d8144aebd89176dcd4abed3
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:91
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:95
 msgid ""
 "Spatial Query is used to find the relationship between two features. The "
 "resulting value is either TRUE or FALSE, unlike the geoprocessing functions "
@@ -184,41 +186,41 @@ msgid ""
 "functions are covered here:"
 msgstr ""
 
-# f69c5d0155da45378c2cace428276bb9
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:97
-msgid "**Within**"
+# e5de776a1c204fd6a75e3d06e7c2d332
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:102
+msgid "Within"
 msgstr ""
 
-# 44522186018c49849fe68b0c80093fc4
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:99
+# 3d3f7d7221c74a079548fe71ef60f2ba
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:103
 msgid ""
-"Within is used to ask the question: ‘is feature A are fully located inside "
-"feature B?’ In the image below, let’s assume the dark-colored circle is "
-"feature A and the light-colored circle is feature B. We can use the Within "
+"Within is used to ask the question: ‘is feature A fully located inside "
+"feature B?’ In the image below, let’s assume the dark-coloured circle is "
+"feature A and the light-coloured circle is feature B. We can use the Within "
 "function to ask the question, “Is feature A fully within feature B?” The "
 "result would be TRUE. On the other hand, if we asked “Is feature B fully "
 "within feature A?” the answer would of course be FALSE."
 msgstr ""
 
-# 743572d4757d41029a8fdac3c6d80b67
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:112
-msgid "**Contains**"
+# 907e6244fc2e41039e307e2d4713a364
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:117
+msgid "Contains"
 msgstr ""
 
 # bf4913518283466985beb2980efb6c04
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:114
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:118
 msgid ""
 "Contains is the opposite of Within. This function allows us to ask “Does "
 "feature A contain feature B?”"
 msgstr ""
 
-# f4270d0e7e4748369ed8c67e4499ca02
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:117
-msgid "**Equal**"
+# 50412b81a7704d4dbc9dafa6410d936d
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:122
+msgid "Equal"
 msgstr ""
 
 # 4dd950dd40c34d57b9748668c1cb36f4
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:119
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:123
 msgid ""
 "Equal results in TRUE if two features have the same position and size. In "
 "the above example, the result would be FALSE, because feature A and feature "
@@ -226,20 +228,20 @@ msgid ""
 msgstr ""
 
 # e6a60efc81e5424997446c65c40024e0
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:125
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:129
 msgid ""
 "Like the geoprocessing intersect tool we mentioned in the previous section, "
 "this spatial query function evaluates whether two features are intersecting. "
 "If the features intersect, this query will return TRUE."
 msgstr ""
 
-# 1057f3819f79423ead8b19fcb0819d2d
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:132
-msgid "**Is Disjoint**"
+# 4d836e9a41524259a70584aaa21d2c0c
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:137
+msgid "Is Disjoint"
 msgstr ""
 
 # 87c05a8fd2034cd3b3820b84a54340da
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:134
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:138
 msgid ""
 "This function is the opposite of Intersect, meaning that it will return TRUE "
 "if two features are not touching one another. We might use this query if we "
@@ -248,319 +250,306 @@ msgid ""
 "return FALSE if run on the example above."
 msgstr ""
 
-# db18bbd9c39449afb486d703d29b6642
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:141
+# 602abd3bb6274b418688d3ae2a9a95b2
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:145
 msgid ""
 "Implementation of these functions is important in supporting analysis for "
-"scenario development, specifically to obtain answers of typical questions "
-"such as:"
+"scenario development, specifically to obtain answers of questions such as:"
 msgstr ""
 
 # 23bc2f6f017042e695889d31d42af720
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:145
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:149
 msgid "Which schools are safe from an earthquake?"
 msgstr ""
 
 # c6f94f53606d402f8e81ac26a7e7e829
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:146
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:150
 msgid "Which buildings can be used as temporary IDP camps?"
 msgstr ""
 
-# 29ef26f0ee604c338e427a1d8390190f
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:147
-msgid "How many kilometers of national road will be lost in case of tsunami?"
+# c683aac6748148289f500f0d3ff9d915
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:151
+msgid "How many kilometres of national road will be lost in case of tsunami?"
 msgstr ""
 
-# 88bf4708eb93408690e9a5b06ea90cf5
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:150
-msgid "**3. IDP Camp Criteria and Data**"
+# ef8948a977d14b40a0f4f4dc1dd6cc47
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:155
+msgid "3. IDP camp criteria and data"
 msgstr ""
 
-# 418e1f1843f8442a814578d6abc9e93b
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:152
+# e9a61a09542b45719af1b2f0842c338f
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:157
 msgid ""
 "Now let’s get back to our Sirahan project. Throughout the rest of this "
-"Module, we will once again apply our knowledge of geoprocessing tools and "
-"spatial queries in order to identify an appropriate IDP camp location during "
-"a flood that is similar to the one in our model. First, let’s list some "
-"criteria that we can use to determine the best location. Try to think of "
-"your own list, and then see how it compares to ours below:"
+"module, we will apply our knowledge of geoprocessing tools and spatial "
+"queries in order to identify an appropriate IDP camp location during a flood "
+"that is similar to the one in our model. First, let’s list some criteria "
+"that we can use to determine the best location. Try to think of your own "
+"list, and then see how it compares to ours below:"
 msgstr ""
 
 # 5b4058b9e82e4a41861318bdf2444b94
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:160
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:165
 msgid ""
 "Buildings/Houses that will be used as an evacuation site should be situated "
 "outside the affected area (outside the flood zone)"
 msgstr ""
 
-# 5a206965e86242a5a8eca8418db857c4
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:162
+# 25142f8545dd4a86b411a4ba4abaf15b
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:167
 msgid ""
 "Location should have direct access to a primary road (jalan kabupaten) or "
-"secondary road (Jalan Desa) with a maximum distance of 20 meters"
+"secondary road (jalan desa) with a maximum distance of 20 metres"
 msgstr ""
 
-# 2963b08e23dc410aaeebbdb8da45e7ba
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:164
-msgid "Building should have an area of at least 225 square meters"
+# f6a34f58815f4efab966c44ca754647f
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:169
+msgid "Building should have an area of at least 225 square metres"
 msgstr ""
 
-# c7bd6ab76b5d4f7fa023d642da4538af
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:166
+# 402d20b7894547488e0424dbcf1f7f10
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:171
 msgid ""
 "We’ve defined our problem, so the next step in the GIS process is to prepare "
-"our data. We should have all the data ready from the previous Modules, but "
+"our data. We should have all the data ready from the previous module, but "
 "let’s make a quick list of what data we must have in order to work with our "
 "criteria."
 msgstr ""
 
-# 51b8bca64f314015b2c8480f52182b8a
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:172
-msgid "Buildings/Houses"
+# d4d54cfce103479684addf2c8ffdddd0
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:177
+msgid "Buildings/houses"
 msgstr ""
 
 # f561250237aa464183cc4ad8333b6dac
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:173
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:178
 msgid "Impacted area of flood"
 msgstr ""
 
 # c8375314ce114c30a13d07e29922b518
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:174
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:179
 msgid "Road network with road class attribute"
 msgstr ""
 
 # 2a096a358aeb4fa4989c01ddff8c352c
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:176
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:181
 msgid ""
 "Luckily, we have this data already prepared. The data you use might be "
 "different if you have different criteria, or you have different needs and "
 "problems."
 msgstr ""
 
-# c13dd551efbd404f82a171b468a9117b
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:180
+# 4ff5460e146b464a974087389b229079
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:185
 msgid ""
 "Create a new project or edit your existing project so that it contains the "
-"following layers: (the new layers are located in qgis/Sirahan/)"
+"following layers: (the new layers are located in :file:`qgis/Sirahan/`)"
 msgstr ""
 
 # 0cd76f340a554ed28740667684ed8194
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:186
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:191
 msgid "Your map will look similar to this:"
 msgstr ""
 
-# b36812405dd54cffb9888523477a598c
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:191
-msgid ""
-"Save your project as analisis_vektor.qgs and create a new folder with the "
-"name analisis_vektor. As we run various geoprocessing tasks and output new "
-"layers, we will save the new files in this directory."
-msgstr ""
-
-# 929e4b0f34e3490b9de412da41ed9da4
+# f8dbbe75c2b24a39a47b26cc62653125
 #: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:196
-msgid "**4. Criteria #1:  Building Must be Outside Affected Area**"
+msgid ""
+"Save the project as :file:`analisis_vektor.qgs` and create a new folder with "
+"the name :file:`analisis_vektor`. As we run various geoprocessing tasks and "
+"output new layers, we will save the new files in this directory."
 msgstr ""
 
-# 43558380c0674404aa796ddf2abc2504
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:198
+# cfc7a3e07f7f451383a301dda52f05ca
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:202
+msgid "4. Criteria #1: building must be outside affected area"
+msgstr ""
+
+# 3c51543835c945859ee683b91874a850
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:204
 msgid ""
 "Okay, let’s work on our first criteria, that the building we choose as an "
 "IDP refuge should be outside the affected area. Can you guess which type of "
 "spatial query we will perform? Refer to the list of operations covered "
-"previously in this Module and guess which one fits. If you guessed Is "
+"previously in this module and guess which one fits. If you guessed Is "
 "Disjoint, you are right! Is Disjoint let’s us search for features in one "
 "layer that DO NOT touch features in another layer."
 msgstr ""
 
-# 8e5e374c56d64ed78a9e2a8913329f32
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:207
-msgid "Click on :menuselection:`Vector > Spatial Query > Spatial Query`"
+# 7a71603e5d754adda2bcb10bd494ba3d
+# 7b8b2186db72408fa1fb726295fcf106
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:213
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:299
+msgid "Go to :menuselection:`Vector ‣ Spatial Query ‣ Spatial Query`."
 msgstr ""
 
-# f337a7e5cd534cfdb27d251b6d83bf1e
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:208
+# 3798114523934f82904c2b008eda8b37
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:215
 msgid ""
-"Choose Bangunan_Sirahan as the input layer in :guilabel:`Select source "
-"features from`"
+"Choose :guilabel:`Bangunan_Sirahan` as the input layer under :guilabel:"
+"`Select source features from`."
 msgstr ""
 
-# 45e83fead75e4fba84f3085c20317e06
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:210
+# 1f98f83b9af747d1a2bae92c08c77c5c
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:218
 msgid ""
-"Use the Is Disjoint operator and choose area_terdampak_Sirahan as the "
-"reference feature."
+"Use the Is Disjoint operator and choose :guilabel:`area_terdampak_Sirahan` "
+"as the reference feature."
 msgstr ""
 
-# c590d705579247aeba0055efd52b2062
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:216
-msgid "Click :guilabel:`Apply`"
+# 7c19d33e17844fd1b58d6c31f5576fe5
+# 3a1f800d5b214568ae58a417a119b030
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:224
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:306
+msgid "Click :guilabel:`Apply`."
 msgstr ""
 
-# c0a6b62c325a4d37800d1d25aafb4b17
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:217
-msgid "A window like image below will show, click :guilabel:`Close`"
+# 62268fcd72584424bead4c40606cba5b
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:226
+msgid ""
+"A window will appear which looks like the image below. Click :guilabel:"
+"`Close`."
 msgstr ""
 
 # cd049f1fb5c74d0197adb3e6d3387de3
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:222
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:232
 msgid "The buildings outside of the affected flood areas will become selected:"
 msgstr ""
 
-# d66fa8927a95470e9345fc9d79ddd0b8
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:227
+# 53950acdfccd4bbebcfb34f0338f1503
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:237
 msgid ""
-"Save the selection as a new layer named Bangunan_Sirahan_terpilih.shp and "
-"add it to the map."
+"Save the selection as a new layer named :file:`Bangunan_Sirahan_terpilih."
+"shp` and add it to the map."
 msgstr ""
 
 # c7485399e2834019bebb486ba97e47da
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:229
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:240
 msgid "Remove the old buildings layer."
 msgstr ""
 
-# 14a7c389717f46cd8d70e7b2cd8d4c0e
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:231
+# b2654f2fd69c4bddb931c71877dc6a5f
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:243
 msgid ""
-"**5. Criteria #2:  Location Must Have Direct Access to a Primary/Secondary "
-"Road within 20 meters**"
+"5. Criteria #2: location must have direct access to a primary/secondary road "
+"within 20 metres"
 msgstr ""
 
-# 0318cf204e3a4008aa5c071de39d1849
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:233
+# 6e8e2443615c4cd39917557a018fa91c
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:245
 msgid ""
 "Now, we need to consider our second criteria, that the building chosen as an "
 "IDP refuge is close to a main road. We used the same consideration with our "
 "example in Unit 2. Do you remember how we can do this? First, we must use "
 "the :guilabel:`Query Builder` so that we are only using the primary and "
-"secondary rules. Then we will use one of the Geoprocessing Tools – Buffer!"
+"secondary roads. Then we will use one of the Geoprocessing tools – Buffer!"
 msgstr ""
 
-# cecf3257a43e45ae8330e0f1b64a1680
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:241
-msgid "Right-click on the Jalan_Sirahan layer and click :guilabel:`Query`."
+# a8abc7cb66474c7b8e28a38475cf2462
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:253
+msgid ""
+"Right-click on the :guilabel:`Jalan_Sirahan` layer and click :guilabel:"
+"`Query`."
 msgstr ""
 
 # f94c0a07d65a438ea904bbcff2efd9c5
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:242
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:256
 msgid "Create a query like this:"
 msgstr ""
 
-# c3598b9558c64478a541d3ff4019c718
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:244
-msgid "*\"tipe_jln\" = 'Jalan Desa' OR \"tipe_jln\" = 'Jalan Kabupaten'*"
-msgstr ""
-
 # 708262c8b49045ee8e6823aa763c0c4f
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:246
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:262
 msgid ""
 "Click :guilabel:`Test`. This will run the query and tell you how many "
 "features meet the conditions in your query."
 msgstr ""
 
 # 43eac0935e6f412181b9add920d102cd
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:252
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:268
 msgid ""
 "You should see that our map shows fewer roads now, because we have filtered "
 "out those that are not primary or secondary. Now that we have the roads, we "
 "will create a buffer around them."
 msgstr ""
 
-# edc0c0e6b6bb4a40a5009f8985338ec1
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:259
+# 2ab1a8235e6a4bed8f104681b28cd803
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:275
 msgid ""
-"Select the Jalan_Sirahan layer and go to :menuselection:`Vector > "
-"Geoprocessing tools > Buffer(s)`:"
+"Select the :guilabel:`Jalan_Sirahan` layer and go to :menuselection:`Vector "
+"‣ Geoprocessing tools ‣ Buffer(s)`:"
 msgstr ""
 
 # af28bcbc990a470b90821eb065aa045e
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:265
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:281
 msgid "Set it up like this:"
 msgstr ""
 
-# 458430f280df4651a073ad80caa79572
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:270
+# e91dae6d628e4b5097a0012c739d503f
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:286
 msgid ""
-"Save the layer as Jalan_Sirahan_buffer_20m.shp. Click :guilabel:`OK` and "
-"QGIS will create the buffer, which will look like this:"
+"Save the layer as :file:`Jalan_Sirahan_buffer_20m.shp`. Click :guilabel:`OK` "
+"and QGIS will create the buffer, which will look like this:"
 msgstr ""
 
-# 03a153057a294a09a22c8c07309a594e
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:277
+# 4354931e27ca4be6b42fcd11b0ce4051
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:293
 msgid ""
-"Now we have a layer which shows the areas that are within 20 meters of the "
+"Now we have a layer which shows the areas that are within 20 metres of the "
 "primary and secondary roads. The last thing to do in order to apply our "
-"criteria is determine which buildings are situated withing the buffer. Hence "
+"criteria is determine which buildings are situated within the buffer. Hence "
 "we need to do another spatial query, this time of type Within."
 msgstr ""
 
-# 0d4c6a967a67436ca83b77509f0c9382
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:283
-msgid "Go to :menuselection:`Vector > Spatial Query > Spatial Query`."
-msgstr ""
-
 # e423277b6569450da24f092ee90c6b22
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:284
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:301
 msgid "Fill in the fields to look like this:"
 msgstr ""
 
-# dd933644bf3946eb928e6c981bd73fe8
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:289
-msgid "Click :menuselection:`Apply`."
-msgstr ""
-
-# 34e9a3b5f68b4d31be6412bcea683633
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:290
+# 4afa5f4f77af45a4bbc7b167295a306a
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:308
 msgid ""
 "The buildings that are within the roads buffer will be selected. Right-click "
-"on the Bangunan_Sirahan_Terpilih layer and click :guilabel:`Save Selection "
-"As…`. Save the selection with the name Bangunan_Sirahan_buffer_20m."
+"on the :guilabel:`Bangunan_Sirahan_Terpilih` layer and click :guilabel:`Save "
+"Selection As…`. Save the selection with the name :file:"
+"`Bangunan_Sirahan_buffer_20m`."
 msgstr ""
 
-# 78814529d32144948f3ccb39f16a45c5
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:295
+# 73a36a9bbdcb4c4391dbc12702eb1ce7
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:314
 msgid ""
-"**6. Criteria #3:  The building must have an area of at least 225 square "
-"meters.**"
+"6. Criteria #3: building must have an area of at least 225 square metres"
 msgstr ""
 
-# 643a77aa72174888a16aaee76269e116
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:297
+# 20ecbdc4126446348b57dc3138df7ba3
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:316
 msgid ""
 "Our final criteria is that the building we choose should have an area of at "
-"least 225 square meters. With an area this size, the building will be able "
+"least 225 square metres. With an area this size, the building will be able "
 "to serve as an IDP camp for the residents of Sirahan whose homes are "
 "affected by the flood."
 msgstr ""
 
-# 82dddc3d143d4e03b525266ed17f184c
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:302
+# a645664c5c244c79b3caa13f43454764
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:321
 msgid ""
-"Right-click on the Bangunan_Sirahan_buffer_20m layer and choose :guilabel:"
-"`Query.` Enter the following query for the layer:"
+"Right-click on the :guilabel:`Bangunan_Sirahan_buffer_20m` layer and click :"
+"guilabel:`Query`. Enter the following query for the layer:"
 msgstr ""
 
-# 2093f21a3c3c4b799d2c59b256874074
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:305
-msgid "*\"way_area\" >= 225*"
-msgstr ""
-
-# fac438e6b666462f804fcb9517af69f6
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:307
+# 69a091751e85461583fe179540789738
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:328
 msgid ""
-"Click :guilabel:`Test`.  The query should return only a handful of features."
+"Click :guilabel:`Test`. The query should return only a handful of features."
 msgstr ""
 
 # be4c8003317c4fe69a8aad7fd62e4d80
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:312
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:333
 msgid ""
 "Take a closer look at the remaining buildings. You can inspect the features "
 "of each individually by using the :guilabel:`Identify Features` tool."
 msgstr ""
 
 # 1a5023c3c4c24dbfa5f97766ce39b421
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:319
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:340
 msgid ""
 "In the very south tip of Sirahan you should find a building that is "
 "identified as a hospital. This building is, in fact, a real world hospital, "
@@ -569,18 +558,28 @@ msgid ""
 "you consider that it is also a hospital, it clearly makes a good location."
 msgstr ""
 
-# de09a1fe2aa9448cb9a22c654a7eb3f5
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:331
-msgid ""
-"In this Module we reviewed the various Geoprocessing tools and the spatial "
-"queries, and we used some of them to analyze our problem – where should we "
-"put an IDP camp."
+# 43b20fc7a3ff4ff28c979fb1335df2a3
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:353
+msgid "Summary"
 msgstr ""
 
-# 7af84df482d44f2aa9946b85a35a07aa
-#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:335
+# fa63ebe223ab45a0af6208b340a02885
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:355
+msgid ""
+"In this module we reviewed the various Geoprocessing tools and spatial "
+"queries, and we used some of them to analyse our problem – where to put an "
+"IDP camp."
+msgstr ""
+
+# b3c5c63046c24ab9a64e04a4d6111c1f
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:359
 msgid ""
 "This is yet another key component of contingency planning, and luckily it’s "
-"not too difficult to perform with the right knowledge of GIS."
+"not difficult to perform with GIS."
+msgstr ""
+
+# 291bf096178b44adbdae74972401533f
+#: ../../source/training/intermediate/qgis-inasafe/403-determining-idp-camp-location.rst:363
+msgid ":ref:`Go to next module --> <planning-evacuation-route>`"
 msgstr ""
 

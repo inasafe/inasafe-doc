@@ -1,117 +1,113 @@
 Unit 2 Facilitator Guide
 ========================
 
-Beginner QGIS-|project_name| Trainer's Toolkit - (A Guide for Facilitator)
---------------------------------------------------------------------------
+Beginning QGIS-|project_name| Trainer's Toolkit - (A Guide for Facilitators)
+----------------------------------------------------------------------------
 
-BADAN NASIONAL PENANGGULANGAN BENCANA
-.....................................
-2013
-....
+**BADAN NASIONAL PENANGGULANGAN BENCANA**
+
+**2013**
 
 About Toolkit
-^^^^^^^^^^^^^
+-------------
 
-**Beginner QGIS-**|project_name|**Toolkit** is designed to prepare
-facilitators to deliver training for QGIS and |project_name| new user.
-The materials contained in it will prepare you to carry out training with a
-variety of audiences, including common problems and mistakes,
-as well as providing a variety of best methodologies for you to be able
-inviting new mappers.
+**The Beginning QGIS-** |project_name| **Toolkit** is designed to prepare
+trainers to deliver training for new QGIS users.
+The materials included will prepare trainers to conduct trainings with a
+variety of audiences and to cover common problems and pitfalls,
+and also provide trainers with the best methodologies.
 
-When planning a QGIS-|project_name| training, there are some factors that
-need to be considered, including time, available resources,
-number of facilitators with their technical skills.
-This toolkit will help you to prepare a training for every type of audiences,
-but it will more focused on teaching for those who has limited capacity or
-experience using GIS software, making maps, and computer.
+When organising a QGIS-|project_name| training, numerous factors must be
+considered, including the length of time you have to train,
+available resources, number of trainees and their technical skills.
+This toolkit will help trainers prepare trainings for different types of
+participants, but it will primarily focus on educating those with little or
+no experience with GPS, map-making and computers.
 
-The purpose of this toolkit is preparing you, as facilitators,
-to train participant in a workshop successfully in order to processing
-digital map with QGIS and analyzing hazard and exposure data with
+The purpose of this toolkit is to prepare the trainer to successfully train
+workshop participants in using QGIS and analysing hazard and exposure data with
 |project_name|.
 
-Workshop Objective
+Purpose of Workshop
+...................
+This workshop is intended to achieve the following standard and basic 
+competencies:
+
+Standard Competency
+^^^^^^^^^^^^^^^^^^^
+Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios 
+with |project_name| 
+
+Basic Competencies
 ^^^^^^^^^^^^^^^^^^
-This training aims to achieve the standards of competence and basic
-competences as follows.
+1. Use GIS to develop scenarios for contingency planning                                                          
+2. Understand the benefit of QGIS and |project_name| for developing realistic 
+   scenarios for contingency planning  
+3. Install QGIS and understand QGIS user interface                                                                
+4. Use QGIS plugins                                                                                               
+5. Understand projection systems and transformation in QGIS                                                       
+6. Use and understand vector data                                                                                 
+7. Categorise and create labels from vector data                                                                  
+8. Use and understand raster data                                                                                 
+9. Create and edit new vector layers                                                                              
+10. Analyse vector data to solve problems                                                                         
+11. Create maps with the Map Composer                                                                             
+12. Use |project_name|                                                                                            
+13. Understand how to get support for QGIS and |project_name| in Indonesia                                        
 
-*Standard Competency*
-*********************
-Managing spatial data using QGIS and analyzing disaster impact scenario
-using |project_name|.
+Workshop Materials
+^^^^^^^^^^^^^^^^^^
+1. GIS for Developing Contingency Plan
+2. QGIS and InaSAFE in Contingency Planning
+3. The Basics of QGIS
+4. QGIS Plugins
+5. Map Projection Basics
+6. Working with Vector Data
+7. Labels and Classification
+8. Working with Raster Data
+9. Creating Vector Layers
+10. Vector Analysis for Problem Solving
+11. Using Map Composer
+12. Understanding |project_name|
+13. Getting Support
 
-*Basic Competency*
-******************
-1. Using GIS to develop scenario for contingency planning
-2. Explaining the benefit of QGIS and |project_name| for developing realistic
-   scenario for contingency planning
-3. Installing QGIS and explaining QGIS user interface
-4. Using QGIS plugins
-5. Determining projection system and transformation in QGIS
-6. Working with vector data
-7. Categorizing and creating label from vector data
-8. Working with raster data
-9. Creating and editing new vector layer
-10. Analyzing vector data to solve problem
-11. Creating maps with Map Composer
-12. Using |project_name|
-13. Keeping interaction and communication to support QGIS and |project_name| in
-    Indonesia
-
-Workshop Material
-^^^^^^^^^^^^^^^^^
-1. Using GIS to Develop Scenario for Contingency Planning
-2. QGIS and |project_name| for Contingency Planning
-3. QGIS Installation and QGIS User Interface Layout
-4. QGIS Plugin
-5. Projection System and Transformation
-6. Vector Data
-7. Labeling on Vector Data
-8. Raster Data
-9. Creating New Vector Data
-10. Vector Analysis
-11. Layouting a Map with Map Composer
-12. Working with |project_name|
-13. Social Media to Keep QGIS and |project_name| User Interaction
-
-Workshop Strategy
-^^^^^^^^^^^^^^^^^
-1. The method used is participatory methods, with emphasis on the full
-   participation of the participants in the training process, not a lecture.
-2. Centered on the participants.
-   Participants are encouraged to search, find and acquire knowledge / skills
-   required independently.
-3. Presenters serves as a facilitator.
-   Presenters only facilitate the ideas come from many directions not just
-   from the presenter.
-   In times of need, presenter should be able to provide a quality
-   reinforcement.
-4. Outcome-oriented.
-   Training should produce outcomes that have been mentioned.
+Workshop Strategies
+^^^^^^^^^^^^^^^^^^^
+1. Methods emphasised in this workshop are participatory teaching
+   and active participation in all sections and
+   activities, rather than lecture method.
+2. **Participant oriented.**
+   Participants are encouraged to find and gain knowledge and skills
+   by themselves.
+3. **Trainers serve as facilitators.**
+   Trainers facilitate to help ideas in the workshop emerge
+   from the participants, not only from trainers.
+   However, trainers must be ready to provide necessary information
+   when the participants need any assistance.
+4. **Outcome oriented.** Workshop must produce the outcomes mentioned 
+   previously.
 
 Tools
 ^^^^^
-1. Copy of Data Analysis Using QGIS and |project_name| Beginner's Guide for
-   participant
-2. An indoor place or room with tables and seats
-3. Some computer unit (ideally one computer per two persons maximum,
-   but, it is better for each person has their own computer)
-4. A printer (for printing *Walking Papers*)
-5. A projector (for presenting and demonstrating software usage)
-6. *Flashdisk* to copy files and software
-7. Good internet connection
-8. Snacks and Coffee Break
+1. Copy of :ref:`Data Analysis using QGIS and InaSAFE Beginner 
+   Level <begin-qgis-inasafe>` for participants
+2. A workshop space with tables and seats
+3. Computers (one computer may be used by two participants,
+   but it is better if one computer is used by one participant)
+4. A Projector (to present slide and demonstrate technical instructions and
+   software)
+5. USB Flash drive(s) to transfer files and software
+6. Good internet connection
+7. Snacks and coffee for breaks
 
 Schedule
-^^^^^^^^
-Below is an outline for a five-day workshop schedule which has been tested by
-several different groups in several regions in Indonesia.
-It is possible for you to give variety of changes that might be more useful
-depending on the various factors that have been discussed previously.
+--------
+Below is an outline of a schedule for a five day workshop that has been tested with
+several groups in Indonesia. You may choose to adapt and change this
+workshop schedule to meet your needs.
 
 Day I:
-******
+......
 +---------------+------------------------------------------------------+--------------------------------+
 | **Time**      | **Materials**                                        | **Activities**                 |
 +===============+======================================================+================================+
@@ -119,140 +115,139 @@ Day I:
 +---------------+------------------------------------------------------+--------------------------------+
 | 10.00 - 10.15 | Break 1                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 10.15 - 11.00 | Using GIS to Develop Scenario for Contingency        | FGD and Plenary                |
-|               | Planning                                             |                                |
+| 10.15 - 11.00 | 1. GIS for Developing Contingency Plan               | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 11.00 - 11.45 | QGIS and InaSAFE for Contingency Planning            | FGD and Plenary                |
+| 11.00 - 11.45 | 2. QGIS and InaSAFE in Contingency Planning          | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 11.45 - 12.45 | Lunch break                                          |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 12.45 - 15.00 | QGIS Installation and QGIS User Interface Layout     | FGD and Plenary                |
+| 12.45 - 15.00 | 3. The Basics of QGIS                                | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 15.00 - 15.15 | Break 2                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 15.15 - 16.00 | QGIS Installation and QGIS User Interface Layout     | FGD and Plenary                |
+| 15.15 - 16.00 | 3. The Basics of QGIS                                | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 16.00 - 17.00 | QGIS Plugin                                          | FGD and Plenary                |
+| 16.00 - 17.00 | 4. QGIS Plugins                                      | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 
 Day II:
-*******
+.......
 +---------------+------------------------------------------------------+--------------------------------+
 | **Time**      | **Materials**                                        | **Activities**                 |
 +===============+======================================================+================================+
-| 09.00 - 10.00 | QGIS Plugin                                          | Plenary                        |
+| 09.00 - 10.00 | 4. QGIS Plugins                                      | Plenary                        |
 +---------------+------------------------------------------------------+--------------------------------+
 | 10.00 - 10.15 | Break 1                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 10.15 - 11.45 | Projection System and Transformation                 | FGD and Plenary                |
+| 10.15 - 11.45 | 5. Map Projection Basics                             | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 11.45 - 12.45 | Lunch break                                          |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 12.45 - 15.00 | Vector Data                                          | FGD and Plenary                |
+| 12.45 - 15.00 | 6. Working with Vector Data                          | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 15.00 - 15.15 | Break 2                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 15.15 - 17.30 | Labelling and Classification                         | FGD and Plenary                |
+| 15.15 - 17.30 | 7. Labels and Classification                         | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 
 Day III:
-********
+........
 +---------------+------------------------------------------------------+--------------------------------+
 | **Time**      | **Materials**                                        | **Activities**                 |
 +===============+======================================================+================================+
-| 09.00 - 10.00 | Raster Data                                          | Plenary                        |
+| 09.00 - 10.00 | 8. Working with Raster Data                          | Plenary                        |
 +---------------+------------------------------------------------------+--------------------------------+
 | 10.00 - 10.15 | Break 1                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 10.15 - 11.30 | Working with Raster Data                             | FGD and Plenary                |
+| 10.15 - 11.30 | 8. Working with Raster Data                          | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 11.30 - 12.00 | Creating New Vector Data                             | FGD and Plenary                |
+| 11.30 - 12.00 | 9. Creating Vector Layers                            | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 12.00 - 13.00 | Lunch break                                          |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 13.00 - 14.30 | Creating New Vector Data                             | FGD and Plenary                |
+| 13.00 - 14.30 | 9. Creating Vector Layers                            | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 14.30 - 15.00 | Problem Solving with Vector Analysis                 | FGD and Plenary                |
+| 14.30 - 15.00 | 10. Vector Analysis for Problem Solving              | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 15.00 - 15.15 | Break 2                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 15.15 - 17.15 | Problem Solving with Vector Analysis                 | FGD and Plenary                |
+| 15.15 - 17.15 | 10. Vector Analysis for Problem Solving              | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 
 Day IV:
-*******
+.......
 +---------------+------------------------------------------------------+--------------------------------+
 | **Time**      | **Materials**                                        | **Activities**                 |
 +===============+======================================================+================================+
-| 09.00 - 10.00 | Problem Solving with Vector Analysis                 | Plenary                        |
+| 09.00 - 10.00 | 10. Vector Analysis for Problem Solving              | Plenary                        |
 +---------------+------------------------------------------------------+--------------------------------+
 | 10.00 - 10.15 | Break 1                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 10.15 - 12.15 | Layouting a Map with Map Composer                    | FGD and Plenary                |
+| 10.15 - 12.15 | 11. Using Map Composer                               | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 12.15 - 13.15 | Lunch break                                          |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 13.15 - 15.15 | Layouting a Map with Map Composer                    | FGD and Plenary                |
+| 13.15 - 15.15 | 11. Using Map Composer                               | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 15.15 - 15.30 | Break 2                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 15.30 - 16.00 | Layouting a Map with Map Composer                    | FGD and Plenary                |
+| 15.30 - 16.00 | 11. Using Map Composer                               | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 16.00 - 17.15 | Working with InaSAFE                                 | FGD and Plenary                |
+| 16.00 - 17.15 | 12. Understanding InaSAFE                            | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 
 Day V:
-******
+......
 +---------------+------------------------------------------------------+--------------------------------+
 | **Time**      | **Materials**                                        | **Activities**                 |
 +===============+======================================================+================================+
-| 09.00 - 10.00 | Working with InaSAFE                                 |Plenary                         |
+| 09.00 - 10.00 | 12. Understanding InaSAFE                            |Plenary                         |
 +---------------+------------------------------------------------------+--------------------------------+
 | 10.00 - 10.15 | Break 1                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 10.15 - 12.00 | Working with InaSAFE                                 | FGD and Plenary                |
+| 10.15 - 12.00 | 12. Understanding InaSAFE                            | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 12.00 - 13.00 | Lunch break                                          |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 13.00 - 14.00 | Working with InaSAFE                                 | FGD and Plenary                |
+| 13.00 - 14.00 | 12. Understanding InaSAFE                            | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 14.00 - 15.00 | Social Media to Keep QGIS and InaSAFE User           | FGD and Plenary                |
-|               | Interaction                                          |                                |
+| 14.00 - 15.00 | 13. Getting Support                                  | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 | 15.00 - 15.15 | Break 2                                              |                                |
 +---------------+------------------------------------------------------+--------------------------------+
-| 15.15 - 17.00 | Evaluation and Closing                               | FGD and Plenary                |
+| 15.15 - 17.00 | Workshop Evaluation and Closing                      | FGD and Plenary                |
 +---------------+------------------------------------------------------+--------------------------------+
 
 
-**Workshop Planning**
-.....................
+Workshop Plan
+-------------
 
-**Session 1**
-^^^^^^^^^^^^^
-Using GIS to Develop Scenario for Contingency Planning
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Session 1
+.........
+
+GIS for Developing Contingency Plan
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 45 minutes
 
 Basic Competency
 ****************
-1. Using GIS to develop scenario for contingency planning
+Use GIS to develop scenarios for contingency planning 
 
 Indicator
 *********
-1. Distinguish between data and information
-2. Explaining terminology of GIS
+1. Distinguish between data and information  
+2. Understand the concept of GIS             
 
-Outcome
-*******
-GIS as beneficial tools to solve daily problems
+Outcomes
+********
+1. Questions and comments about GIS and problem solving
 
 Core Material
 *************
-**Using GIS to develop scenario for contingency planning**
-
-1. The difference between data and information
-2. Terminology of Geographic information System (GIS)
+**GIS for Developing Contingency Plan**                
+                                                       
+1. The difference between data and information        
+2. Terminology of Geographic Information System (GIS) 
 
 Activities
 **********
@@ -261,62 +256,62 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 10'**                                              | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| 1. Facilitator explains the importance of this session, objective,|               |               |
-|    outcome, and activities                                        |               |               |
-| 2. Facilitator gives some question about OpenStreetMap            |               |               |
-|    beginner workshop to participant, and participant asked to     |               |               |
-|    answer the question in turns and other participant asked to    |               |               |
+| 1. Explain the importance of the session, objectives,             |               |               |
+|    outcomes and activities of the session.                        |               |               |
+| 2. Give some questions about the OpenStreetMap                    |               |               |
+|    beginner workshop to participants. Ask participants to         |               |               |
+|    answer the questions in turns and other participants to        |               |               |
 |    give input or corrections from the answer given, so a          |               |               |
-|    discussion will develop and more interesting.                  |               |               |
-| 3. Facilitator need to bridge OpenStreetMap beginner workshop     |               |               |
+|    discussion will develop.                                       |               |               |
+| 3. Bridge the OpenStreetMap beginner workshop                     |               |               |
 |    that has been given before with QGIS/InaSAFE beginner          |               |               |
-|    workshop. Give an understanding that OpenStreetMap is one      |               |               |
-|    of spatial data resources and available free and open source   |               |               |
-|    and we can analyze it with GIS software to solve daily         |               |               |
+|    workshop. Explain that OpenStreetMap is a resource             |               |               |
+|    for spatial data which is free and open source                 |               |               |
+|    and we can analyse it using GIS software                       |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Using GIS to Develop Scenario for Contingency Planning 30'**    | Lecture       | *Powerpoint*  |
+| **GIS for Developing Contingency Plan 30'**                       | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| Facilitator explains:                                             |               |               |
+| Explain:                                                          |               |               |
 |                                                                   |               | Projector     |
 | - The differences between data and information                    |               |               |
-| - Basic concept of GIS as the terminology of GIS and function     |               | Module 1      |
-|   analysis in GIS with example of the software                    |               |               |
-| - Benefit of GIS to add information for contingency planning      |               |               |
-| - The importance of having accurate data to develop               |               |               |
-|   contingency planning.                                           |               |               |
+| - Basic concept of GIS, GIS terminology and functions             |               | Module 1      |
+|   in GIS, along with examples of the software                     |               |               |
+| - Benefit of GIS to in contingency planning                       |               |               |
+| - Importance of having accurate data to develop                   |               |               |
+|   contingency planning                                            |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **CLosing 5'**                                                    | Q & A         |               |
+| **Closing 5'**                                                    | Q & A         |               |
 |                                                                   |               |               |
-| Participant is asked to give reflection about their               |               |               |
-| achievement for this first session.                               |               |               |
+| Ask participants to give reflections on                           |               |               |
+| this first session.                                               |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
 
-**Session 2**
-^^^^^^^^^^^^^
-QGIS and |project_name| for Contingency Planning
+Session 2
+.........
+QGIS and |project_name| in Contingency Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 45 minutes
 
 Basic Competency
 ****************
-2. Explaining the benefit of QGIS and |project_name| for developing realistic
-   scenario for contingency planning
+Understand the benefit of QGIS and InaSAFE for developing  
+realistic scenario for contingency planning                
 
-Indicator
-*********
-1. Explaining GIS to prepare contingency planning
-2. Explaining the importance of data
-3. Explaining benefit of QGIS/|project_name| for scenario development for
-   contingency planning
+Indicators
+**********
+1. Understand the role of GIS for preparing contingency planning 
+2. Understand the importance of data                             
+3. Understand the benefits of QGIS/|project_name| in the         
+   development of scenarios for contingency planning             
 
-Outcome
-*******
-QGIS and |project_name| are used to support development of contingency planning
+Outcomes
+********
+1. QGIS and |project_name| are used to support development of contingency planning
 
 Core Material
 *************
-**QGIS and InaSAFE for Contingency Planning**
+**QGIS and InaSAFE in Contingency Planning**   
 
 1. GIS for Preparing contingency Planning
 2. The Importance of Data
@@ -329,69 +324,70 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       |               |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Understanding contingency planning 15'**                        | Q & A         | *Powerpoint*  |
 |                                                                   |               | *presentation*|
 | Before going into GIS to support contingency planning, it is      | Lecture       |               |
-| better for facilitator to ask participant for their understanding |               | Projector     |
-| about contingency planning. Give some review based on             |               |               |
+| better to ask participants about their understanding              |               | Projector     |
+| of contingency planning. Provide some review based on             |               |               |
 | contingency planning terminology from BNPB.                       |               | Module 2      |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Using QGIS/InaSAFE software to support development of**         | Lecture       | Projector     |
 | **contingency planning 20'**                                      |               |               |
 |                                                                   | Q & A         | *Slide PP*    |
-| Facilitator explains:                                             |               |               |
+| Explain:                                                          |               |               |
 |                                                                   |               | Module 2      |
 | - Terminology of QGIS and InaSAFE                                 |               |               |
 | - Why QGIS and InaSAFE is important for developing                |               |               |
 |   contingency planning                                            |               |               |
-| - The benefit using QGIS rather than other GIS software           |               |               |
+| - The benefit of using QGIS rather than other GIS software        |               |               |
 | - Mapping disaster impact using InaSAFE                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **CLosing 5'**                                                    | Q & A         |               |
+| **Closing 5'**                                                    | Q & A         |               |
 |                                                                   |               |               |
-| Participant is asked to give reflection about their               |               |               |
-| achievement for this session.                                     |               |               |
+| Ask participants to give reflections on                           |               |               |
+| this session.                                                     |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
 
-**Session 3**
-^^^^^^^^^^^^^
-QGIS Installation and QGIS User Interface Layout
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Session 3
+.........
+The Basics of QGIS
+^^^^^^^^^^^^^^^^^^
 Time : 180 minutes
 
 Basic Competency
 ****************
-3. Installing QGIS and explaining QGIS user interface
+Install QGIS and understand QGIS user interface
 
-Indicator
-*********
-1. Downloading QGIS
-2. Installing QGIS
-3. Opening QGIS project that has been saved before
-4. Looking at available layer list
-5. Accessing basic tool from toolbar
-6. Cleaning the toolbar
-7. Displaying a map from window map
-8. Getting information from map through status bar
+Indicators
+**********
+1. Download QGIS                                             
+2. Install QGIS                                              
+3. Open a previously created QGIS project                    
+4. Understand the layers panel                               
+5. Access basic tools through the toolbar                    
+6. Clean up the toolbar                                      
+7. Show a map in the map window                              
+8. Get information on an active map through the status bar   
 
-Outcome
-*******
-QGIS is successfully installed in each participant's computer/laptop
+Outcomes
+********
+1. QGIS is successfully installed in each participant's computer/laptop
+2. Participants understand basic QGIS navigation and layout
 
 Core Material
 *************
-**QGIS Installation and QGIS User Interface Layout**
-
-1. Getting QGIS
-2. Installing QGIS
-3. QGIS user interface layout
-4. Adding vector layer
-5. QGIS basic tool
-6. Panning maps
+**The Basics of QGIS**          
+                                
+1. Getting QGIS                
+2. Installing QGIS             
+3. QGIS user interface layout  
+4. Adding vector layer         
+5. QGIS basic tool             
+6. Panning maps                
 
 Activities
 **********
@@ -400,67 +396,66 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Practice 170'**                                                 | Practice      | QGIS          |
 |                                                                   |               | Installation  |
-| 1. Facilitator asked participant to install QGIS which has been   |               | file          |
-|    downloaded before workshop in a flash drive or if internet     |               |               |
+| 1. Ask participants to install QGIS which has been                |               | file          |
+|    downloaded before workshop on a flash drive. If internet       |               |               |
 |    connection is reliable they can download it directly           |               |               |
 |    from http://download.qgis.org.                                 |               | *Powerpoint*  |
-| 2. Make sure every participant can install QGIS, guide them to    |               | *presentation*|
-|    do the installation.                                           |               |               |
-| 3. After each participant installed QGIS successfully, explain    |               |               |
-|    the QGIS user interface layout such as toolbar menu, layer     |               | Projector     |
-|    list, map window, and status bar.                              |               |               |
-| 4. Guide each participant for adding shapefile (already           |               |               |
+| 2. Make sure every participant installs QGIS. Guide them          |               | *presentation*|
+|    through the installation.                                      |               |               |
+| 3. After each participant installs QGIS successfully, explain     |               |               |
+|    the QGIS user interface such as the toolbar menu, layers       |               | Projector     |
+|    panel, map window and status bar.                              |               |               |
+| 4. Guide each participant to add a shapefile (already             |               |               |
 |    prepared) into QGIS and explain the status bar under the       |               | Module 3      |
 |    user interface layout.                                         |               |               |
-| 5. Do step by step in QGIS slowly until every participant         |               |               |
-|    understand.                                                    |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **CLosing 5'**                                                    | Q & A         |               |
+| **Closing 5'**                                                    | Q & A         |               |
 |                                                                   |               |               |
-| Participant is asked to give reflection about their               |               |               |
-| achievement for this session.                                     |               |               |
+| Ask participants to give reflections on                           |               |               |
+| this session.                                                     |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-Common Problem
-**************
-In this session, it is possible that some computer/laptop can't install QGIS,
- one of the common problem is sqlite problem shows up when QGIS opened.
- You can solve this problem by copying sqlite file from another computer/laptop
- that has QGIS successfully running.
+Common Problems
+***************
+In this session, it is possible that QGIS will not install on some computers/laptops.
+One common problem is that a problem with sqlite shows up when QGIS opened.
+You can solve this problem by copying sqlite file from another computer/laptop
+that has QGIS successfully running.
 
 
-**Session 4**
-^^^^^^^^^^^^^
-QGIS Plugin
-^^^^^^^^^^^
+Session 4
+.........
+QGIS Plugins
+^^^^^^^^^^^^
 Time : 105 minutes
 
 Basic Competency
 ****************
-4. Using QGIS plugin
+Use QGIS plugins 
 
-Indicator
-*********
-1. Plugin concept
-2. Installing QGIS plugin
-3. Adding satellite imagery through *OpenLayers*
+Indicators
+**********
+1. Understand the concept of plugins     
+2. Install QGIS plugins                  
+3. Add satellite imagery via OpenLayers  
 
-Outcome
-*******
-Adding QGIS plugin based on user needs
+Outcomes
+********
+1. Participants can add QGIS plugins based on their needs
+2. Participants install and use the OpenLayers plugin
 
 Core Material
 *************
-**QGIS Plugin**
+**QGIS Plugins**
 
-1. Plugin setup
-2. Installing Plugin
-3. *OpenLayers* plugin
+1. Plugin setup       
+2. Installing plugin  
+3. OpenLayers plugin  
 
 Activities
 **********
@@ -469,82 +464,80 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demo and Practice 80'**                                         | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| 1. Facilitator explains about plugin concept such as              | Demo          |               |
-|    terminology and examples of some plugins. Also                 |               | Projector     |
-|    how plugin works in QGIS.                                      | Practice      |               |
-| 2. Show how to install QGIS plugin, explain QGIS                  |               | Module 4      |
-|    plugin menu, and make sure every participant                   |               |               |
-|    practice it.                                                   |               |               |
-| 3. Ask to the participant to download a plugin, for               |               |               |
-|    example OpenLayer Plugin. After installed, asked               |               |               |
-|    participant to use the plugin. One thing that need             |               |               |
-|    to remember for the participant is do not use                  |               |               |
-|    OpenLayer for Google Earth because the license is              |               |               |
+| 1. Explains the idea behind plugins. Show some                    | Demo          |               |
+|    examples of plugins. Explain                                   |               | Projector     |
+|    how plugins work in QGIS.                                      | Practice      |               |
+| 2. Show how to install a QGIS plugin, explain the QGIS            |               | Module 4      |
+|    plugin menu and make sure every participant                    |               |               |
+|    practices it.                                                  |               |               |
+| 3. Ask the participants to download the                           |               |               |
+|    OpenLayers Plugin. After installing, ask                       |               |               |
+|    participants to use the plugin. One thing to remind            |               |               |
+|    participants is to not use                                     |               |               |
+|    Google imagery with OpenStreetMap because the license is       |               |               |
 |    commercial.                                                    |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **CLosing 20'**                                                   | Q & A         |               |
+| **Closing 5'**                                                    | Q & A         |               |
 |                                                                   |               |               |
-| Participant is asked to give reflection about their               |               |               |
-| achievement for this session.                                     |               |               |
+| Ask participants to give reflections on                           |               |               |
+| this session.                                                     |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-Common Problem
-**************
+FAQ (Frequently Asked Questions)
+********************************
 
-**How if the plugin is failed during installation?**
+**What should we do if the plugin installation fails?**
 
-This can be caused by internet connection, internet connection is needed
-during plugin installation especially if the plugin file is big like
+This can be caused by a poor internet connection. An internet connection is 
+needed during plugin installation, especially if the plugin file is big like
 |project_name|.
-The trouble can be tackle by preparing the plugin file in a flash drive.
-Then copy the plugin to C:\Users\Computer\.qgis\python\plugins folder.
+If this is a major problem, it can be addressed by preparing the plugin file 
+on a flash drive.
+Then copy the plugin to :file:`C:\Users\Computer\.qgis\python\plugins`.
 
-**How if Fetch Python Plugin - Plugin menu is not available?**
+**What if the Fetch Python Plugin menu is not available?**
 
-This problem can be solve by opening setting from *fetch python plugin*
-option menu.
-You have to tick *check for updates* on startup which should add list of new
-plugin automatically.
+Open the settings from the *fetch python plugin*
+options menu.
+Tick the box next to *check for updates* on startup which should add a list of new
+plugins automatically.
 
 
-**Session 5**
-^^^^^^^^^^^^^
-
-Projection Systems and Transformation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Session 5
+.........
+Map Projection Basics
+^^^^^^^^^^^^^^^^^^^^^
 Time : 90 minutes
 
 Basic Competency
 ****************
+Understand projection systems and transformation in QGIS
 
-5. Applying Projection Systems and Transformation in QGIS
+Indicators
+**********
+1. Understand Coordinate Reference Systems (CRS)  
+2. Identify the CRS of a vector dataset           
+3. Do 'on the fly' reprojection                   
+4. Save dataset with a different CRS              
+5. Create a custom projection                     
 
-Indicator
-*********
-
-1. Explain Coordinate Reference Systems (CRS)
-2. Identify the CRS of the vector dataset
-3. Doing *on the fly* reprojection
-4. Saving the datasets with different CRS
-5. Making its own projection
-
-Outcome
-*******
-Create vector data with different projection systems
+Outcomes
+********
+1. Participants can change and create different projection systems
 
 Core Material
 *************
-**Projection Systems and Transformation**
-
-1. Coordinate Reference Systems (CRS)
-2. *On the fly* reprojection
-3. Dataset with different CRS
-4. Making its own projection
+**Map Projection Basics**               
+                                        
+1. Coordinate Reference Systems (CRS)  
+2. “On the fly” reprojection           
+3. Dataset with different CRS          
+4. Defining a custom projection        
 
 Activities
 **********
@@ -553,74 +546,68 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Lecture and Discussion 15'**                                    | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| The facilitator explains the meaning of the projection            | Discussion    | Module 5      |
-| system, and the difference between the use of UTM                 |               |               |
+| Explain projection                                                | Discussion    | Module 5      |
+| systems and the difference between the use of UTM                 |               |               |
 | and WGS 84 in Indonesia. If the participants are not              |               |               |
-| familiar with the projection system before, you                   |               |               |
+| familiar with projection systems, you                             |               |               |
 | should slowly explain and give examples of its use in             |               |               |
 | the real world.                                                   |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demo and Practice 35'**                                         | Lecture       | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| 1. The facilitator explains how to change CRS of a                | Demo          |               |
-|    map and activate the "On the Fly" system                       |               | Projector     |
-| 2. Then the facilitator explained to the participants             | Practice      |               |
-|    how to save a vector data into another projection system.      |               | Module 5      |
-| 3. In the end, gave a challenge to the participants to            | Q & A         |               |
+| 1. Explain how to change the CRS of a                             | Demo          |               |
+|    map and activate the "On the fly" reprojection                 |               | Projector     |
+| 2. Explain                                                        | Practice      |               |
+|    how to save vector data into another projection system.        |               | Module 5      |
+| 3. Challenge the participants to                                  | Q & A         |               |
 |    make a projection system in QGIS, and                          |               |               |
 |    ask them to explain why they chose that                        |               |               |
 |    projection system.                                             |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration and Practice 35'**                                | Demo          | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| The facilitator explains how to make the projection               | Practice      |               |
-| system itself followed by the participants.                       |               | Projector     |
+| Explain how to make a custom projection                           | Practice      |               |
+| system. Participants should follow along.                         |               | Projector     |
 |                                                                   |               |               |
 |                                                                   |               | Module 5      |
 +-------------------------------------------------------------------+---------------+---------------+
 
-Common Problem
-**************
-If during training the Internet network is inadequate,
-you should have prepared a *OpenLayer* plugin in a flash disk and shared to
-the participants moved to the plugin folder in the folder QGIS.
 
-
-**Session 6**
-^^^^^^^^^^^^^
-Vector Data
-^^^^^^^^^^^
+Session 6
+.........
+Working with Vector Data
+^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 135 minutes
 
 Basic Competency
 ****************
-6. Working with Vector Data
+Use and understand vector data   
 
-Indicator
-*********
-1. Explain about vector data
-2. Identify attribute of vector data
-3. Add vector data
-4. Set the layer symbology
+Indicators
+**********
+1. Understand vector data               
+2. Identify attributes of vector data   
+3. Add vector layers                    
+4. Symbolise vector layers              
 
-Outcome
-*******
-Vector data in QGIS that has been symbolized and ready to be processed to
-the next stage
+Outcomes
+********
+1. Understand how vector data works
+2. Add and symbolise vector layers
 
 Core Material
 *************
-**Vector Data**
-
-1. Vector data
-2. Data Attribute
-3. Add vector data
-4. Symbology
+**Working with Vector Data**     
+                                 
+1. Vector data                  
+2. Data attribute               
+3. Add vector data              
+4. Symbology                    
 
 Activities
 **********
@@ -629,102 +616,159 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | Projector     |
 |                                                                   |               | Computer      |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               | Participant   |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               | Participant   |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Vector Data 75'**                                               | Lecture       | Projector     |
 |                                                                   |               |               |
-| 1. Facilitators explain first what is the vector data             | Demo          | Participant's |
-|    followed with examples of format. After the                    |               | Computer      |
-|    facilitator explains the theory of vector data,                | Practice      |               |
-|    prepare sample file containing vector data to be               |               | File          |
-|    opened in QGIS such as the data points, lines, and             |               | containing    |
+| 1. Explain what is vector data                                    | Demo          | Participant's |
+|    and examples of file formats. After                            |               | Computer      |
+|    explaining the theory of vector data,                          | Practice      |               |
+|    open sample file containing vector data                        |               | File          |
+|    in QGIS and show data points, lines and                        |               | containing    |
 |    polygons.                                                      |               | vector data   |
-| 2. First, demonstrate to the participants how to open             |               |               |
-|    vector data in QGIS, after that guided the                     |               | Module 6      |
+| 2. Demonstrate how to open                                        |               |               |
+|    vector data in QGIS. Guide the                                 |               | Module 6      |
 |    participants to open a sample file that contains               |               |               |
 |    vector data on each computer.                                  |               |               |
-| 3. Also demonstrate how we can identify the                       |               |               |
+| 3. Demonstrate how we can identify the                            |               |               |
 |    attributes in the vector data and then let participants        |               |               |
 |    explore the contents of data attribute vector points,          |               |               |
-|    lines, and polygon for approximately 5-10 minutes.             |               |               |
-| 4. Then, explain how the vector data work in QGIS,                |               |               |
-|    then teach how to change the symbols into symbols              |               |               |
+|    lines and polygon for approximately 5-10 minutes.              |               |               |
+| 4. Explain how vector data works in QGIS.                         |               |               |
+|    Show how to change the symbols into symbols                    |               |               |
 |    or shapes we want.                                             |               |               |
-| 5. After that, the appearance of symbols                          |               |               |
-|    corresponding magnification level is very                      |               |               |
-|    important, explain that it is important because we             |               |               |
-|    do not want to see our map symbols are messy                   |               |               |
-|    because too many objects that appear especially if             |               |               |
-|    we have a map with small scale.                                |               |               |
+| 5. Show that the appearance of symbols may differ                 |               |               |
+|    at different magnification levels.                             |               |               |
+|    Explain that it is important because we                        |               |               |
+|    do not want to see messy map symbols when                      |               |               |
+|    too many objects appear, especially if                         |               |               |
+|    we have a map with a small scale.                              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Test 40'**                                                      | Practice      |               |
 |                                                                   |               |               |
 | Allow about 30 minutes for the participants so that               |               |               |
 | they can practice independently in setting symbology              |               |               |
-| of vector data. Give a motivation to them so they can             |               |               |
-| set symbology better than before. After that, do the              |               |               |
-| valuation by asking the participants to evaluate his              |               |               |
-| partner work.                                                     |               |               |
+| of vector data. Ask participants to evaluate their                |               |               |
+| partners' work.                                                   |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Closing 15'**                                                   | Q & A         |               |
+| **Closing 5'**                                                    | Q & A         |               |
 |                                                                   |               |               |
-| The facilitator invites participants to reflect on what           |               |               |
-| they have learned in this session then helps them to              |               |               |
-| make a conclusions.                                               |               |               |
+| Ask participants to give reflections on                           |               |               |
+| this session.                                                     |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-FAQ (Frequently Asked Question)
-*******************************
+FAQ (Frequently Asked Questions)
+********************************
 
-**When adding vector data, why my vector data do not show up in the folder?**
+**When adding vector data, why doesn't my vector data show up in the Open dialog?**
 
-Sometimes participants are still difficult to distinguish between button to
-open the vector data and raster data (because both are adjacent).
-Make sure again whether participants have clicked the correct button.
+Sometimes participants find it difficult to distinguish between the buttons to
+open vector data and raster data (because they are next to one another).
+Make sure participants click the correct button.
 
-**When adding vector data, why there are some data that does not appear on**
+**When adding vector data, why is there some data that does not appear on**
 **the QGIS display?**
 
-Check back order of the data layer, the polygon should be at the bottom,
-followed by the line, then the point at the top.
+Check the order of the data layers in the Layers panel. Polygons should be 
+at the bottom, followed by the lines, then the points at the top. Often one 
+layer may overlap another layer.
 
-**When identifying vector data attribute with identifier,**
-**why the attribute window does not appear after on-click?**
+**Sometimes when using the Identify tool, the attribute window does not appear
+when we click on an object. Why?**
 
-Check back, before clicking on a point, line, or polygon,
-make sure vector data layer is selected in the list before.
+Check that the vector data layer is selected in the Layers panel before clicking
+on objects to identify.
 
 
-**Session 7**
-^^^^^^^^^^^^^
-Label and Classification
+Session 7
+.........
+Labels and Classification
+^^^^^^^^^^^^^^^^^^^^^^^^^
+Time : 135 minutes
+
+Basic Competency
+****************
+Categorise and create labels from vector data 
+
+Indicators
+**********
+1. Explore attribute data of an object attributes and understand
+   the uses of different types of data                          
+2. Add labels to vector layers                                  
+3. Symbolise vector data using categories                       
+
+Outcomes
+********
+1. Add labels to vector features
+2. Symbolise data using categories
+
+Core Material
+*************
+**Labels and Classification**   
+                                
+1. Data attributes             
+2. Tool label                  
+3. Classification              
+
+Activities
+**********
++-------------------------------------------------------------------+---------------+---------------+
+| **Activities**                                                    | **Methods**   | **Tools**     |
++===================================================================+===============+===============+
+| **Introduction 5'**                                               | Lecture       | *Slide PP*    |
+|                                                                   |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
++-------------------------------------------------------------------+---------------+---------------+
+| **Demo and Practice  100'**                                       | Demo          | Projector     |
+|                                                                   |               |               |
+| 1. Demonstrate how to add labels to vector layers.                | Demo          | Participant's |
+|    Participants should follow along.                              |               | Computer      |
+| 2. Demonstrate how to symbolise features                          | Practice      |               |
+|    by categorising them.                                          |               | File          |
+|                                                                   |               | containing    |
+|                                                                   |               | vector data   |
+|                                                                   |               |               |
+|                                                                   |               | Module 7      |
++-------------------------------------------------------------------+---------------+---------------+
+| **Closing 30'**                                                   | Discussion    | Participant's |
+|                                                                   |               | Computer      |
+| Give a conclusion of this session. Ask                            |               |               |
+| participants to ask questions about the material                  |               | Projector     |
+| provided, so that the discussion can go well.                     |               | Microphone    |
+|                                                                   |               | Module 7      |
++-------------------------------------------------------------------+---------------+---------------+
+
+
+Session 8
+.........
+Working with Raster Data
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 135 minutes
 
 Basic Competency
 ****************
-7. Categorize and make vector data labels
+Use and understand raster data 
 
-Indicator
-*********
-1. Explores the attributes of data in objects and explain the use of varying
-   data types
-2. Add label in vector layer
-3. Give a vector data label using classification
+Indicators
+**********
+1. Create raster data         
+2. Change raster symbology    
+3. Perform terrain analysis   
 
-Outcome
-*******
-The vector data has label and classification according to the data attribute
-on objects.
+Outcomes
+********
+1. Understand how to change raster symbology
+2. Perform terrain analysis
 
 Core Material
 *************
-**Vector Data Label**
-
-1.      Data Attribute
-2.      Tool Label
-3.      Classification
+**Working with Raster Data**   
+                               
+1. How to load raster data    
+2. Tool label                 
+3. Classification             
 
 Activities
 **********
@@ -733,167 +777,80 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demo and Practice  100'**                                       | Demo          | Projector     |
 |                                                                   |               |               |
-| 1. Facilitators explain first what is the vector data             | Practice      | Participant's |
-|    followed with examples of format. After the                    |               | Computer      |
-|    facilitator explains the theory of vector data,                |               |               |
-|    prepare sample file containing vector data to be               |               | File          |
-|    opened in QGIS such as the data points, lines, and             |               | containing    |
-|    polygons.                                                      |               | vector data   |
-| 2. First, demonstrate to the participants how to open             |               |               |
-|    vector data in QGIS, after that guided the                     |               | Module 6      |
-|    participants to open a sample file that contains               |               |               |
-|    vector data on each computer.                                  |               |               |
-| 3. Also demonstrate how we can identify the                       |               |               |
-|    attributes in the vector data and then let participants        |               |               |
-|    explore the contents of data attribute vector points,          |               |               |
-|    lines, and polygon for approximately 5-10 minutes.             |               |               |
-| 4. Then, explain how the vector data work in QGIS,                |               |               |
-|    then teach how to change the symbols into symbols              |               |               |
-|    or shapes we want.                                             |               |               |
-| 5. After that, the appearance of symbols                          |               |               |
-|    corresponding magnification level is very                      |               |               |
-|    important, explain that it is important because we             |               |               |
-|    do not want to see our map symbols are messy                   |               |               |
-|    because too many objects that appear especially if             |               |               |
-|    we have a map with small scale.                                |               |               |
-+-------------------------------------------------------------------+---------------+---------------+
-| **Closing 30'**                                                   | Discussion    | Participant's |
-|                                                                   |               | Computer      |
-| Give a conclusion of this session. Then ask                       |               |               |
-| participants to ask questions about the material                  |               | Projector     |
-| provided, so that the discussion can go well.                     |               | Microphone    |
-|                                                                   |               | Module 6      |
-+-------------------------------------------------------------------+---------------+---------------+
-
-
-**Session 8**
-^^^^^^^^^^^^^
-Raster Data
-^^^^^^^^^^^
-Time : 135 minutes
-
-Basic Competency
-****************
-8. Working with Raster Data
-
-Indicator
-*********
-1. Creating Raster Data
-2. Changing Raster Symbology
-3. Doing Terrain Analysis
-
-Outcome
-*******
-Raster Data can be identified as other raster data that can be used for
-analysis.
-
-Core Material
-*************
-**Raster Data**
-
-1. How to Load Raster Data
-2. How to Change Raster Symbology
-3. Terrain Analysis
-
-Activities
-**********
-+-------------------------------------------------------------------+---------------+---------------+
-| **Activities**                                                    | **Methods**   | **Tools**     |
-+===================================================================+===============+===============+
-| **Introduction 5'**                                               | Lecture       | *Slide PP*    |
-|                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
-+-------------------------------------------------------------------+---------------+---------------+
-| **Demo and Practice  100'**                                       | Demo          | Projector     |
-|                                                                   |               |               |
-| 1. Use the raster example file that given to                      | Practice      | Participant's |
-|    participants. Try for a moment to reiterate what               |               | Computer      |
-|    is the difference with raster data and vector data.            |               |               |
-| 2. Then show how to open and identify raster data                 |               | File          |
-|    in QGIS. Remember again, when show the                         |               | containing    |
-|    raster and vector data at the same layers should               |               | vector data   |
-|    be above the raster data to be visible.                        |               |               |
-| 3. Change raster symbology that has been opened                   |               | Module 7      |
-|    to make it more easily understood and visible                  |               |               |
-|    form of the raster morphology. Do some                         |               |               |
-|    resistance symbology as on the module. If you                  |               |               |
-|    want to change symbology of a raster data it                   |               |               |
-|    will be better if the raster data have been given              |               |               |
-|    the symbology before, You have to open raster                  |               |               |
-|    data again then did symbology.                                 |               |               |
-| 4. Furthermore you do terrain analysis related to                 |               |               |
-|    changing the shape of raster to be some raster                 |               |               |
-|    other form such as slope / slope, hillshade.                   |               |               |
-| 5. Give explanation of each step taken, especially                |               |               |
-|    if the participants had never worked with raster               |               |               |
+| 1. Use the raster example file that is given to                   | Practice      | Participant's |
+|    participants. Reiterate what                                   |               | Computer      |
+|    is the difference between raster data and vector data.         |               |               |
+| 2. Show how to open and identify raster data                      |               | File          |
+|    in QGIS. Remember when showing                                 |               | containing    |
+|    raster and vector data at the same time the vector layers      |               | vector data   |
+|    should be above the raster data to be visible.                 |               |               |
+| 3. Change the raster symbology                                    |               | Module 8      |
+|    to make it more easily understood.                             |               |               |
+|    Make the symbology as in the module text. If you               |               |               |
+|    want to change the symbology of raster data it                 |               |               |
+|    will be better if the raster data has been given               |               |               |
+|    symbology before.                                              |               |               |
+| 4. Do terrain analysis and create a hillshade.                    |               |               |
+| 5. Explain each step, especially                                  |               |               |
+|    if the participants have never worked with raster              |               |               |
 |    data. Ask the participants to pay attention and                |               |               |
 |    practice by themself.                                          |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 30'**                                                   | Discussion    |               |
 |                                                                   |               |               |
 | Give a conclusion of the session working with                     |               |               |
-| raster data. Then discussion during the session of                |               |               |
-| the participants. If possible give the question to the            |               |               |
-| participants in order to see the understanding of the             |               |               |
-| participants.                                                     |               |               |
+| raster data. Discuss the outcomes with participants.              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-FAQ (Frequently Asked Question)
-*******************************
+FAQ (Frequently Asked Questions)
+********************************
 
-**How to get raster data?**
+**How do we get raster data?**
 
-Raster data can be obtained depending to needs.
-If you need raster data such as SRTM can be downloaded at
-http://dwtkns.com/srtm/ and for raster data associated with the data for
+Raster data can be obtained from a variety of sources.
+SRTM can be downloaded at
+http://dwtkns.com/srtm/. Raster data associated with
 earthquakes can be obtained from
 http://earthquake.usgs.gov/earthquakes/shakemap/list.php.
-Can also be obtained from the relevant agencies to the needs of the raster
-data.
 
-**How to use raster data as needed?**
 
-This is related to resolution.
-If you want to use raster data for mapping building or digitizing like Bing,
-it will be better to use raster data that has a resolution of 0.5 to 1 meter.
-If you want land use can be mapped using Landsat imagery.
-
-**Session 9**
-^^^^^^^^^^^^^
-Creating New Vector Data
-^^^^^^^^^^^^^^^^^^^^^^^^
+Session 9
+.........
+Creating Vector Layers
+^^^^^^^^^^^^^^^^^^^^^^
 Time : 180 minutes
 
 Basic Competency
 ****************
-9. Creating and Editing New Vector Layer
+Create and edit new vector layers 
 
-Indicator
-*********
-1. Adding raster layer as a data source for digitize
-2. Creating new vector feature (polygon, line, point)
-3. Digitizing new vector layer by copying raster layer and consider the
-   topology
-4. Doing georeferencing
+Indicators
+**********
+1. Add a raster layer for digitising                      
+2. Create new vector features (polygon, lines and points) 
+3. Digitise new vector layers by tracing a raster layer,  
+   considering topology                                   
+4. Georeference an image                                  
 
-Outcome
-*******
-New vector file with shapefile format, digitized by the participants.
+Outcomes
+********
+1. Add raster layers
+2. Trace raster layers
+3. Georeference an image
 
 Core Material
 *************
-**Creating New Vector Data**
-
-1. Adding raster layer
-2. Creating new vector feature
-3. Digitizing new vector layer
-4. Georeference
+**Creating Vector Layers**         
+                                   
+1. Adding raster layer            
+2. Creating new vector feature    
+3. Digitising new vector layer    
+4. Georeference                   
 
 Activities
 **********
@@ -902,100 +859,99 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Creating New Vector Data Practice 80'**                         | Lecture       | Projector     |
 |                                                                   |               |               |
-| 1. In this session, facilitator have to explain that              | Practice      | Participant's |
-|    QGIS can also use to digitize data. However,                   |               | Computer      |
-|    explain the weakness if you digitizing through                 |               |               |
-|    QGIS, such data is difficult to be shared, not like the OSM.   |               | Module 9      |
-| 2. Explain also that things that can not be digitized in          |               |               |
-|    OSM, can be digitized in QGIS, such as flood-                  |               |               |
-|    prone areas, or KRB areas. Vector data like this               |               |               |
-|    will be used for analysis InaSAFE.                             |               |               |
-| 3. Show how to digitizing and the differences                     |               |               |
-|    between digitizing on QGIS and JOSM. Use raster                |               |               |
+| 1. Explain that                                                   | Practice      | Participant's |
+|    QGIS can also be used to digitise data. However,               |               | Computer      |
+|    explain that the weakness of digitising through                |               |               |
+|    QGIS is that data is more difficult to share, unlike OSM.      |               | Module 9      |
+| 2. Explain also that things that can not be digitised in          |               |               |
+|    OSM can be digitised in QGIS, such as flood-                   |               |               |
+|    prone areas or KRB areas. Vector data like this                |               |               |
+|    will be used for analysis in InaSAFE.                          |               |               |
+| 3. Show how to digitise and the differences                       |               |               |
+|    between digitising in QGIS and JOSM. Use the raster            |               |               |
 |    GeoTIFF file that has previously been given to the             |               |               |
-|    participants to do the digitization process with QGIS.         |               |               |
+|    participants to do the digitisation process with QGIS.         |               |               |
 | 4. After that, participants may be asked whether they             |               |               |
-|    can digitize a map with image formats such as                  |               |               |
-|    JPEG or PNG. For example in disaster prone areas               |               |               |
-|    map from BNPB. If no one asks, the facilitator                 |               |               |
-|    should explain if the participants want to do the              |               |               |
-|    digitization from other maps source with JPEG or               |               |               |
-|    PNG format, the map coordinate should be                       |               |               |
-|    determined first through georeference process.                 |               |               |
+|    can digitise a map with image formats such as                  |               |               |
+|    JPEG or PNG, for example in disaster prone areas               |               |               |
+|    map from BNPB. If no one asks, explain                         |               |               |
+|    that if participants want to digitise from JPEG or             |               |               |
+|    PNG maps, the                                                  |               |               |
+|    map coordinates should be                                      |               |               |
+|    determined first through the georeferencing process.           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Georeference Practice 80'**                                     | Lecture       | Projector     |
 |                                                                   |               |               |
-| Give an example of a JPEG formatted maps to                       | Practice      | Participant's |
-| participants and guided them to do georeference.                  |               | Computer      |
+| Give an example of a JPEG formatted map to                        | Practice      | Participant's |
+| participants and guide them to do georeferencing.                 |               | Computer      |
 |                                                                   |               |               |
-| It is important to be attention, the facilitator should be        |               | JPEG          |
-| confirmed to the participants that before digitizing              |               | formatted     |
+| It is important to note that                                      |               | JPEG          |
+| before digitising                                                 |               | formatted     |
 | over another map, make sure the participants know the             |               | maps          |
-| data source and the map lisence! Do not let the                   |               |               |
-| participants digitize from comercial map without map              |               | Module 9      |
-| maker permission in the future!                                   |               |               |
+| data source and the map licence! Do not let the                   |               |               |
+| participants digitise from commercial maps without                |               | Module 9      |
+| permission in the future!                                         |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 15'**                                                   | Lecture       | Projector     |
 |                                                                   |               |               |
-| The facilitator guides the participants to reflect on             | Discussion    |               |
-| what they have learned in this session then can be held           |               |               |
-| Q & A session / discussions before the facilitator gives          | Q & A         |               |
-| the final conclusion to this session.                             |               |               |
+| Guide the participants to reflect on                              | Discussion    |               |
+| what they have learned in this session and hold a                 |               |               |
+| Q & A session / discussions before the giving                     | Q & A         |               |
+| the final conclusion for this session.                            |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
 
-**Session 10**
-^^^^^^^^^^^^^^
-Doing Vector Analysis to Solve Problem
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Session 10
+..........
+Vector Analysis for Problem Solving
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Time : 210 minutes
 
 Basic Competency
 ****************
-10. Doing Vector Analysis to Solve Problems
+Analyse vector data to solve problems
 
-Indicator
-*********
-1. Explaining GIS processes
-2. Identifying problems
-3. Explaining data needed
-4. Starting a project
-5. Analyzing problems
-6. Identifying hazard zone
-7. Looking for Important Roads
-8. Looking for Medical Facilities
-9. Buffering Roads
-10. Buffering Medical Facilities
-11. Analyzing Overlapped Areas
-12. Choosing Farms and Moors
-13. Choosing Land with the right size
+Indicators
+**********
+1. Understand the GIS process        
+2. Identify addressable problems     
+3. Understand data needs             
+4. Start a QGIS project              
+5. Analyse problems                  
+6. Identify hazard zones             
+7. Look for important roads          
+8. Look for medical facilities       
+9. Buffer roads                      
+10. Buffer medical facilities        
+11. Analyse overlapped areas         
+12. Choose features by landuse type  
 
-Outcome
-*******
-Spatial problems could be done with GIS analysis.
+Outcomes
+********
+1. Conduct GIS analysis of a spatial problem
 
 Core Material
 *************
-**Using Vector Analysis to Solve Problems**
-
-1. GIS Processes
-2. Problems
-3. Data
-4. Starting a project
-5. Analyzing Problems: Farms and Moors
-6. Hazard Zone
-7. Searching for essential roads
-8. Searching for Health Facilities
-9. Road Buffer
-10. Health Facilities Buffer
-11. Overlapped Area
-12. Choosing Farms and Moors
-13. Choosing Land Area with the right size
+**Vector Analysis for Problem Solving**     
+                                            
+1. GIS Processes                            
+2. Problems                                 
+3. Data                                     
+4. Starting a project                       
+5. Analysing problems: farms and moors      
+6. Hazard zone                              
+7. Searching for important roads            
+8. Searching for health facilities          
+9. Road Buffer                              
+10. Health Facilities Buffer                
+11. Overlapped area                         
+12. Choosing farms and moors                
+13. Choosing land area with right size      
 
 Activities
 **********
@@ -1004,32 +960,32 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Review 10'**                                                    | Lecture       | *Previous*    |
 |                                                                   |               | *materials*   |
 | In this session you will do a review regarding the                | Q & A         |               |
 | materials from the previous day. You can ask a                    |               |               |
-| view questions to the participants about some                     |               |               |
+| few questions to the participants about some                      |               |               |
 | subjects or you can also ask the participants about               |               |               |
-| which subjects that was not clear yet for them.                   |               |               |
+| which subjects that were not clear yet for them.                  |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration and Practice 150'**                               | Demonstration | *Powerpoint*  |
 |                                                                   |               | *presentation*|
 | 1. This session should start with reviewing some                  | Practice      |               |
 |    types of GIS analysis that are provided in QGIS.               |               | Projector     |
-|    Ask the participants to finish 1 analysis, for                 |               |               |
+|    Ask the participants to finish one analysis, for               |               |               |
 |    example buffer analysis, or any other analysis.                |               | Module 10     |
-| 2. The session continue with doing a simulation                   |               |               |
-|    if there is a natural hazard happening in an                   |               |               |
-|    area and they need IDP camps, areas affected,                  |               |               |
-|    and the requirements to get a safe place from hazard.          |               |               |
-| 3. Give the participants information that to solve                |               |               |
+| 2. The session continues with a simulation                        |               |               |
+|    of a natural hazard happening in an                            |               |               |
+|    area where they need IDP camps, areas affected,                |               |               |
+|    and the requirements to find a safe place.                     |               |               |
+| 3. Explain that to solve                                          |               |               |
 |    the problems, they can use vector analysis in                  |               |               |
-|    QGIS. The first thing to do is to practice                     |               |               |
-|    about how to determine the evacuation site,                    |               |               |
-|    main roads, and hospitals location. To                         |               |               |
+|    QGIS. The first thing to do is to practise                     |               |               |
+|    how to determine the evacuation site,                          |               |               |
+|    main roads, and hospital location. To                          |               |               |
 |    determine them you can use the query builder                   |               |               |
 |    feature in module 10. After that you can                       |               |               |
 |    determine the distance from schools to roads                   |               |               |
@@ -1038,14 +994,14 @@ Activities
 +-------------------------------------------------------------------+---------------+---------------+
 | **Vector Analysis Practice 25'**                                  | Practice      | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| 1. This session is almost the same with previous                  |               |               |
-|    session. In the previous session you haven't                   |               | Projector     |
-|    explain further about vector analysis, but in                  |               |               |
-|    this session you'll explain more about it.                     | Module 10     |               |
-| 2. Asks the participants to practice along with                   |               |               |
-|    you. If there is any participants already                      |               |               |
+| 1. This session is almost the same as the previous                |               |               |
+|    session. In this session you'll explain more                   |               | Projector     |
+|    about vector                                                   |               |               |
+|    analysis.                                                      | Module 10     |               |
+| 2. Ask the participants to practice along with                    |               |               |
+|    you. If any participants have already                          |               |               |
 |    determined the evacuation sites, you can ask                   |               |               |
-|    them to do another analysis such as practicing                 |               |               |
+|    them to do another analysis such as practising                 |               |               |
 |    how to determine which location is suitable                    |               |               |
 |    for farming, etc.                                              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
@@ -1054,59 +1010,58 @@ Activities
 | Q & A and discussion                                              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-FAQ (Frequently Asked Question)
-*******************************
+FAQ (Frequently Asked Questions)
+********************************
 
-**Why is my buffer result looks bigger than the one shown in the example?**
+**Why does my buffer result look bigger than the one shown in the example?**
 
 This happens because of the projection.
-The projection used for the data that are going to be buffered is not in
-Projection (Universal Transverse Mercator) system so the buffer input (in
-meter) could not be applied to the data that are going to be analyzed and
-resulting to the buffer that looked big.
+It just looks different because of the projection, but it is the same size 
+in reality.
 
-**Why is the query builder result doesnt show up?**
+**Why doesn't the query builder result show up?**
 
-This is because missed input into the query builder.
-Watch carefully what you are inputting into the query builder.
+This is usually because of incorrect input into the query builder.
+Watch carefully what you input into the query builder.
 
-**Session 11**
-^^^^^^^^^^^^^^
-Map Layout with Map Composer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Session 11
+..........
+Using Map Composer
+^^^^^^^^^^^^^^^^^^
 Time : 4 hours 30 minutes
 
 Basic Competency
 ****************
-11. Making better maps with Map Composer
+Create maps with the Map Composer 
 
-Indicator
-*********
-1. Layouting the atlas
-2. Adding new map
-3. Adding Title
-4. Adding graphical and numerical scale
-5. Adding grid to the map
-6. Adding inset
-7. Adding and organizing legend content
-8. Exporting the map into several formats (pdf, jpeg, svg)
+Indicators
+**********
+1. Arrange map layout                                  
+2. Add a new map                                       
+3. Add title to a map                                  
+4. Add graphic and numeric scales                      
+5. Add grid to a map                                   
+6. Add an inset                                        
+7. Customise the content of the legend                 
+8. Export a map to different formats (pdf, jpeg, svg)  
 
-Outcome
-*******
-Maps that are already layouted and ready to print.
+Outcomes
+********
+1. Maps that are well laid out and ready to print.
 
 Core Material
 *************
-**Map Layout with Map Composer**
-
-1. Map Composer
-2. Adding New Maps
-3. Adding a Title to the Map
-4. Adding Scale
-5. Adding Grids
-6. Adding Inset
-7. Adding Legend
-8. Printing the map
+**Using Map Composer**         
+                               
+1. Map Composer                
+2. Adding new maps             
+3. Adding a title to the map   
+4. Adding scale                
+5. Adding grids                
+6. Adding inset                
+7. Adding legend               
+8. Printing the map            
 
 Activities
 **********
@@ -1115,103 +1070,106 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
-| **Making Map Layout 250'**                                        | Demonstration | *Powerpoint*  |
+| **Making a Map Layout 250'**                                      | Demonstration | *Powerpoint*  |
 |                                                                   |               | *presentation*|
-| 1. In this session you will be explaining how to make             | Practice      |               |
+| 1. In this session you will be explain how to make                | Practice      |               |
 |    maps that are ready to be printed using                        |               | Projector     |
 |    QGIS. First, you need to explain that it is                    |               |               |
 |    important to change the projection system into                 |               | Module 11     |
 |    mercator projection system (Universal Transverse               |               |               |
-|    Mercator/UTM) and ask the participant to change                |               |               |
-|    all of the data projection into the same projection system.    |               |               |
-| 2. Ask the basic elements that must be put into the               |               |               |
-|    map to the participants and show them some                     |               |               |
+|    Mercator/UTM) and ask participants to change                   |               |               |
+|    all of the data projections into the same projection system.   |               |               |
+| 2. Ask what are the basic elements that should be put into a      |               |               |
+|    map and show some                                              |               |               |
 |    examples of good maps and bad maps. You should                 |               |               |
-|    emphasize the basic elements of maps to the participants.      |               |               |
-| 3. After that you should explain the interface of the             |               |               |
-|    Map Composer in QGIS. Explain about the                        |               |               |
-|    functions of the toolbars and then do practice and             |               |               |
-|    input the data into the print composer page, adjust            |               |               |
-|    the scale so all of the data that needed to be shown           |               |               |
-|    can be seen. The next part is adding map title.                |               |               |
-| 4. The next step is adding the north sign and scale               |               |               |
-|    into the map. Give the participant understanding               |               |               |
-|    that there are 2 types of scale, numerical and                 |               |               |
-|    graphical. The numeric scale is using number to                |               |               |
-|    compare real distance and graphic scale. The                   |               |               |
-|    graphical scale is using scale bar as the distance comparison. |               |               |
-| 5. The next element that needs to be added to the map             |               |               |
-|    is legend, inset, and grid. Explains why those                 |               |               |
+|    emphasise the basic elements of maps to the participants.      |               |               |
+| 3. Explain the interface of the                                   |               |               |
+|    Map Composer in QGIS. Explain the                              |               |               |
+|    functions of the toolbars and then practice                    |               |               |
+|    inputting the data into the composer page, and adjust          |               |               |
+|    the scale so all of the data that needs to be shown            |               |               |
+|    can be seen. Then add a map title.                             |               |               |
+| 4. Add the compass rose and scale bar                             |               |               |
+|    into the map. Explain                                          |               |               |
+|    that there are two types of scale, numerical and               |               |               |
+|    graphical. The numeric scale uses numbers to                   |               |               |
+|    symbolise real distances. The                                  |               |               |
+|    graphical scale uses a scale bar to compare distance.          |               |               |
+| 5. The next elements that need to be added to the map             |               |               |
+|    are a legend, inset and grid. Explain why those                |               |               |
 |    elements are important. The legend needs to be                 |               |               |
-|    shown because it help the map user to understand               |               |               |
+|    shown because it help the map user understand                  |               |               |
 |    the symbols contained in the map. Inset needs to be            |               |               |
 |    shown to show the location of the map from the                 |               |               |
 |    smaller scale (for example 1:500.000 or                        |               |               |
-|    1:5000.000). Grid will make it easier for us to                |               |               |
-|    determine the location through the coordinates.                |               |               |
-| 6. After finishing the map, tell the participant to save          |               |               |
-|    the print composer and tell the participant about the          |               |               |
-|    final format that they can use in the print composer,          |               |               |
-|    such as .pdf, .jpeg, and .svg, using the export feature.       |               |               |
+|    1:5000.000). A grid makes it easier for us to                  |               |               |
+|    determine the location through coordinates.                    |               |               |
+| 6. After finishing the map, tell participants to save             |               |               |
+|    the print composer and about the                               |               |               |
+|    formats that they can use in the print composer,               |               |               |
+|    such as .pdf, .jpeg and .svg, using the export feature.        |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 20'**                                                   | Discussion    |               |
 |                                                                   |               |               |
 | Q & A and discussion                                              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-FAQ (Frequently Asked Question)
-*******************************
+FAQ (Frequently Asked Questions)
+********************************
 
-**In the x and y intervals in the grid, I put the right number as explained,**
-**but why does the grid not showing up?**
+**I put the correct numbers in the x and y intervals in the grid dialog,**
+**but why does the grid not show up?**
 
-This is because the projection system is still using geographic projection
-system WGS 82) that is in decimal degree.
-To make the x and y intervals, it is better to use the mercator projection
-system so the intervals will be in meter.
+This can occur because the map may still be using geographic projection 
+(WGS 84), which is in decimal degrees. To make the x and y intervals, it
+is better to use the mercator projection system so that they intervals
+are in metres.
 
-**Session 12**
-^^^^^^^^^^^^^^
-Working with InaSAFE
-^^^^^^^^^^^^^^^^^^^^
+
+Session 12
+..........
+Understanding InaSAFE
+^^^^^^^^^^^^^^^^^^^^^
 Time : 4 hours 30 minutes
 
 Basic Competency
 ****************
-12. Using |project_name|
+Use |project_name|   
 
-Indicator
-*********
-1. Explaining the concept of Hazard, Exposure, and Impact data
-2. Explaining how to get Impact
-3. Explaining |project_name| interface
-4. Adding hazard data
-5. Adding unprocessed exposure data (vector and raster)
-6. Using keywords editor
-7. Analyzing Impact
-8. Improving |project_name| Output Map
-9. Saving and Printing scenario result
+Indicators
+**********
+1. Understand the concept of hazard, exposure and impact data 
+2. Understand how to determine impact                          
+3. Understand the |project_name| interface                     
+4. Add hazard data                                             
+5. Add unprocessed exposure data (vector and raster)           
+6. Use the keywords editor                                     
+7. Analyse impact                                              
+8. Improve |project_name| output map                           
+9. Save and print scenario results                             
 
-Outcome
-*******
-|project_name| map is ready to print/saved.
+Outcomes
+********
+1. Understand |project_name| and what it does
+2. Assemble an |project_name| scenario
+3. Save and print scenario results
 
 Core Material
 *************
-**Working with InaSAFE**
-
-1. Hazard, Exposure, Impact
-2. |project_name| Interface
-3. Adding hazard data
-4. Adding exposure data
-5. Adding keyword in Metadata
-6. Impact Analysis
-7. Improving |project_name| maps output
-8. Using Print button
-9. Saving your work
+**Understanding InaSAFE**                  
+                                           
+1. Hazard, Exposure, Impact                
+2. |project_name| interface                
+3. Adding hazard data                      
+4. Adding exposure data                    
+5. Adding keyword in metadata              
+6. Impact analysis                         
+7. Improving |project_name| maps output    
+8. Using print button                      
+9. Saving your work                        
 
 Activities
 **********
@@ -1220,112 +1178,103 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 5'**                                               | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Lecture, Q & A 30'**                                            | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| The facilitator asks the participants what is hazard,             | Q & A         | Module 12     |
-| exposure and impact. After that facilitator concludes             |               |               |
-| the answers. Give them some examples for each                     |               |               |
-| definitions and tell them how to get the data.                    |               |               |
+| Ask the participants what is hazard,                              | Q & A         | Module 12     |
+| exposure and impact. Discuss and explain each in more             |               |               |
+| detail. Give examples for each                                    |               |               |
+| definition and explain how to get the relevant data.              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration 30'**                                             | Demonstration | *Slide PP*    |
 |                                                                   |               |               |
-| The facilitator explaining to the participants about              |               | Module 12     |
-| InaSAFEs interface. Things that should be explained:              |               |               |
+| Explain the |project_name| interface.                             |               | Module 12     |
+| Explain the following:                                            |               |               |
 |                                                                   |               |               |
-| - Activating InaSAFE plugin toolbar                               |               |               |
-| - How to change InaSAFE position in QGIS interface                |               |               |
-| - InaSAFE formula concept for every panels, starting              |               |               |
-|   with Question panel, How many and Might. These                  |               |               |
-|   three panels should be explained by the facilitators            |               |               |
+| - Activating |project_name| plugin toolbar                        |               |               |
+| - How to change |project_name| panel position in QGIS interface   |               |               |
+| - The question format in the |project_name| panel                 |               |               |
+|   The                                                             |               |               |
+|   panels should be explained by the facilitators                  |               |               |
 |   so that a question can be formed: *In the event of*             |               |               |
 |   **[hazard]** *how many* **[exposure]** *might* **[impact]** ?   |               |               |
-| - Explaining Option setting in InaSAFE plugin toolbar.            |               |               |
+| - Explain the options in the |project_name| plugin toolbar.       |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration and Practice 45'**                                | Demonstration | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitator explains how to add Hazard and Exposure               | Practice      | Module 12     |
-| data, so that it can later be analyzed in InaSAFE.                |               |               |
-| Asks the participant to put hazard and exposure layer             |               | Participants' |
-| together into QGIS. After that, asks the participant to           |               | computers     |
-| open the attribute table from each hazard or exposure             |               |               |
-| layer and check if the data has the right column with             |               |               |
-| InaSAFE analysis. If not, add new column to each data             |               |               |
+| Explain how to add hazard and exposure                            | Practice      | Module 12     |
+| data so that it can later be analysed in InaSAFE.                 |               |               |
+| Ask the participants to put hazard and exposure layer             |               | Participants' |
+| into QGIS. After that, ask the participants to                    |               | computers     |
+| open the attribute table for each hazard or exposure              |               |               |
+| layer and check if the data has the right columns for             |               |               |
+| |project_name| analysis. If not, add the necessary columns.       |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration and Practice 60'**                                | Demonstration | *Slide PP*    |
 |                                                                   |               |               |
-| The facilitator explains how to use keyword editor in             | Practice      | Module 12     |
-| InaSAFE so that the data can be read in InaSAFE and               |               |               |
-| then asks the participants to follow along what have been done.   |               | Participants' |
-| Try to use Show Advanced Editor to add the source of the data.    |               | computers     |
+| Explain how to use the keyword editor in                          | Practice      | Module 12     |
+| |project_name| so that data can be read and then                  |               |               |
+| ask the participants to follow along with what has been done.     |               | Participants' |
+| Use the Advanced Editor to add the source of the data.            |               | computers     |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration, Lecture, and Practice 60'**                      | Demonstration | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators asks the participants to run an analysis             | Lecture       | Module 12     |
-| using InaSAFE. The analysis result from InaSAFE                   |               |               |
-| then described by the facilitator to participants,                | Practice      | Participants' |
-| especially about how many objects or buildings impacted.          |               | computers     |
+| Ask participants to run an analysis                               | Lecture       | Module 12     |
+| using |project_name|. Describe the analysis results               |               |               |
+| to participants,                                                  | Practice      | Participants' |
+| especially about how many objects or buildings are impacted.      |               | computers     |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration and Practice 30'**                                | Demonstration | *Slide PP*    |
 |                                                                   |               |               |
-| 1. Facilitators asks the participants to improve their            |               | Module 12     |
-|    InaSAFE analysis to be more informative by doing these:        | Practice      |               |
+| 1. Ask participants to improve their |project_name|               |               | Module 12     |
+|    analysis to be more informative by:                            | Practice      |               |
 |                                                                   |               | Participants' |
 |    a. Activating OpenLayers plugin with Bing                      |               | computers     |
 |       Sat as the background                                       |               |               |
-|    b. Symbology or labeling the data                              |               |               |
+|    b. Symbolising and labeling the data                           |               |               |
 |                                                                   |               |               |
-| 2. After that, asks the participants to print their               |               |               |
-|    InaSAFE result and explain the output from it that             |               |               |
-|    consists of 2 files, one is the map and the other one          |               |               |
-|    is the explanation from the InaSAFE analysis.                  |               |               |
-| 3. Lastly, the facilitators demonstrating how to save             |               |               |
-|    InaSAFE analysis result, then asks the participants            |               |               |
-|    to follow along.                                               |               |               |
+| 2. Ask participants to print their |project_name|                 |               |               |
+|    results and explain the output from it. Output                 |               |               |
+|    consists of two files, the map and the                         |               |               |
+|    details of the analysis.                                       |               |               |
+| 3. Lastly, demonstrate how to save                                |               |               |
+|    results, having the participants                               |               |               |
+|    follow along.                                                  |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 10'**                                                   | Discussion    |               |
 |                                                                   |               |               |
 | Q & A and discussion                                              |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 
-FAQ (Frequently Asked Question)
-*******************************
 
-Sometimes the results from |project_name| analysis are different from one to
-another.
-This is because of the zoom level, so |project_name| only processing the area
-seen on the window/map.
-
-
-**Session 13**
-^^^^^^^^^^^^^^
-Social Media to Keep QGIS and InaSAFE Interaction
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Session 13
+..........
+Getting Support
+^^^^^^^^^^^^^^^
 Time : 60 minutes
 
 Basic Competency
 ****************
-13. Keeping interaction to maintain analysis data network using
-    QGIS/|project_name|
+Understand how to get support for QGIS and |project_name| in Indonesia
 
-Indicator
-*********
-1. Using social media to keep the interaction alive
-2. Accessing QGIS tutorial website
+Indicators
+**********
+1. Use social media to connect with |project_name| community    
+2. Access QGIS tutorial website                                 
 
-Outcome
-*******
-The participants joined into Forum Pengguna QGIS and |project_name| in
-social media.
+Outcomes
+********
+1. Participants join the Forum Pengguna QGIS and |project_name|
+2. Find the QGIS tutorial website
 
 Core Material
 *************
-**Social Media to Keep QGIS and InaSAFE Interaction**
-
-1. Social Media to keep interaction through Facebook
-2. QGIS Tutorial Website
+**Getting Support**   
+                      
+1. Facebook           
+2. QGIS tutorials     
 
 Activities
 **********
@@ -1334,22 +1283,22 @@ Activities
 +===================================================================+===============+===============+
 | **Introduction 10'**                                              | Lecture       | *Slide PP*    |
 |                                                                   |               |               |
-| Facilitators explain the  importance of the session, objectives,  |               |               |
-| *outcome* and detail activities.                                  |               |               |
+| Explain the importance of the session, objectives,                |               |               |
+| outcomes and activities of the session.                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Demonstration and Practice 40'**                                | Demonstration | *Slide PP*    |
 |                                                                   |               |               |
-| 1. The facilitator shows how the participants can seek            | Practice      | Module 13     |
-|    and get help from remote by using social media in              |               |               |
+| 1. Show how participants can seek                                 | Practice      | Module 13     |
+|    and get help remotely by using social media in                 |               |               |
 |    the internet. Invite all of the participants into a            |               |               |
 |    QGIS and InaSAFE forum or group in Facebook.                   |               |               |
 |    (Forum Pengguna QGIS dan InaSAFE)                              |               |               |
-| 2. Show them some websites that can be useful about               |               |               |
-|    QGIS (http://manual.linfiniti.com) and inaSAFE                 |               |               |
+| 2. Show them some websites that can be useful for learning        |               |               |
+|    QGIS (http://manual.linfiniti.com) and |project_name|          |               |               |
 |    (http://inasafe.org)                                           |               |               |
 +-------------------------------------------------------------------+---------------+---------------+
 | **Closing 10'**                                                   | Lecture       |               |
 |                                                                   |               |               |
-| The facilitators give a conclusion about the whole                | Q & A         |               |
-| training implemented.                                             |               |               |
+| Give a conclusion of the whole                                    | Q & A         |               |
+| training.                                                         |               |               |
 +-------------------------------------------------------------------+---------------+---------------+

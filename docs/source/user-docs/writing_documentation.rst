@@ -25,20 +25,20 @@ Following are a few tips for documentation writers:
    `PyCharm <http://www.jetbrains.com/pycharm/>`_ available.
    Consider using this for writing documentation.
 #. Try to not write more than **80 Characters in one line**.
-   That makes the Documentation much easier to maintain.
-#. Try to give an anchor to reference to for at least every new Heading (Page).
+   That makes the documentation much easier to maintain.
+#. Try to create a reference anchor for at least every new heading (page).
    If it is useful and important you might also want to put anchors on
-   SubHeadings.
+   subheadings.
 #. Try to avoid duplicate target names (anchors).
    Always use unique identifiers.
-   If you are not sure - the longer the name the unlikely it is already used.
+   If you are not sure - the longer the name the more unlikely it is already used.
 #. Try to use underscores (_) in filenames and links (anchors) as a separator.
 #. Try to use dashes (-) in directory names as a separator.
 #. Try to avoid using tables wherever possible.
    Only use tables if there is really no other way to display the
    documentation.
 #. If you have to use tables try to avoid using TABS in favour of SPACES.
-   TABS only confuse the Computer while building documentation and leads to
+   TABS only confuse the computer while building documentation and leads to
    unnecessary errors.
 
 .. _common_tags:
@@ -182,22 +182,22 @@ Clone |project_name| documentation
 In order to clone the documentation of |project_name| you only have to follow
 this procedure:
 
-.. note:: This is a once-off process you do not need to repeat it, it is
+.. note:: This is a one-time process. You do not need to repeat it - it is
    here for reference purposes only.
 
 Things you have to have to be able to help with documentation:
 
-* A github account.
+* A GitHub account
 * A fork of the inasafe-doc branch (only if you do not have commit access to
-  the main repository).
+  the main repository)
 
-Creating a github Account is done by clicking on the "Sign up for free"
-button on https://github.com/ and fill out the necessary fields.
+Creating a GitHub account is done by clicking on the :guilabel:`Sign up for free`
+button on https://github.com/ and filling out the necessary fields.
 
-This Documentation assumes that you have the whole |project_name| source
+This documentation assumes that you have the whole |project_name| source
 available under :file:`$HOME/dev/python/...`
 
-Clone your forked github |project_name| Documentation by entering following
+Clone your forked github |project_name| documentation by entering following
 command:
 
 :command:`git clone https://github.com/<your username>/inasafe-doc.git`
@@ -215,5 +215,5 @@ After that you have to push your local changes to your github fork with:
 You can than do a pull request on github to request your changes to be
 reviewed and taken into the official documentation.
 
-If you want to build the documentation locally on your Computer you should
+If you want to build the documentation locally on your computer you should
 read :ref:`building_documentation` inside the Developer Documentation.

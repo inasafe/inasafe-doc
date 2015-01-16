@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-10 16:15+0100\n"
+"POT-Creation-Date: 2014-12-22 12:28\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,378 +16,373 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-# babd0709282e4a9594c338635f683c19
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:8
-# 060fc22c15b34aceaf6aa3bc9d0470c6
-msgid "Module 1: Review QGIS"
+# 2367ea0200c7438ea164ea8a6a2e857a
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:10
+msgid "Module 1: QGIS Review"
 msgstr ""
 
 # da1c007767634e2c8672970dffbb704c
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:10
-# 34faccb3992e4ec19e2777e36ddf3e89
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:12
 msgid "**Learning Objectives**"
 msgstr ""
 
 # fb34dc07cb2e48bbbedb688d995d6a3a
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:12
-# aad3a849846245c8871b37c31cdcd55f
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:14
 msgid "Identify data types in QGIS"
 msgstr ""
 
-# b32425a8a1cb4602b0630e0f5ef6dc33
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:13
-# 24f5af871fe04e4a9088adc497e1b999
-msgid "Explain about data symbology"
+# 38eea5973b5c495dba60fec6b34fbed4
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:15
+msgid "Understand symbology"
 msgstr ""
 
-# 428ffe676c86417282f944964c99a5d8
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:14
-# a2d954dfc09740e28313c713f522d4b2
-msgid "Explain about map layout"
-msgstr ""
-
-# 6c24489a6216423f95cfc255ed66898e
+# 6a5153b1ab04402086fcc845a82ea8f7
 #: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:16
+msgid "Understand map layout"
+msgstr ""
+
+# 5ad76c319a18444b9b3fb4240c03188d
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:18
 msgid ""
-"Before we dive deeper into |project_name|, we will spend this Module in a "
-"review of the QGIS techniques that we covered in Unit 2. We will once more "
-"go over some of they key aspects of QGIS, including adding vector and raster "
-"layers, symbolizing layers, and using the Print Composer for layouting. If "
-"you feel competent in all of these areas, feel free to jump ahead to the "
-"next Module, but if you’d like a brief review, follow along!"
+"Before we dive deeper into |project_name|, we will review review the QGIS "
+"techniques that we covered in Unit 2. We will once more go over some of they "
+"key aspects of QGIS, including adding vector and raster layers, symbolising "
+"layers and using the Print Composer. If you feel competent in all of these "
+"areas, feel free to jump ahead to the :ref:`next module <preparing-data-and-"
+"keywords-for-inasafe>`, but otherwise follow along for a brief review!"
 msgstr ""
 
-# d2daba8a23554262a900c5c97ecb2a4d
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:24
-# 7492e6093fe04b0bbb387c30f89c4813
-msgid "**1. Data Types in QGIS**"
+# 000e70fb9e224c78bdb4a98fd7a67615
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:28
+msgid "1. Data types in QGIS"
 msgstr ""
 
-# 9911a8dbcd5b48faa5c97edb83184d59
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:26
-# f912d4c8cd5647c0b8ac62df4cea6cc3
-msgid "As you may recall, there are two types of data that we often use in QGIS: raster data and vector data. Raster data is characterized as an array of data which consists of rows and columns, like the pixels in an image. Vector data, on the other hand, consists of discrete features made of points and lines, and their position is defined by coordinates."
+# 1f737f18b315465091e4e1b73a34f545
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:30
+msgid ""
+"As you may recall, there are two types of data that we often use in QGIS: "
+"raster and vector data. Raster data is characterised as an array of data "
+"which consists of rows and columns, like the pixels in an image. Vector "
+"data, on the other hand, consists of discrete features made of points and "
+"lines, and their position is defined by coordinates."
 msgstr ""
 
-# 351d4f5981df4f8d9920ac433b3dcebe
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:33
-# f6ac5915f9a64bfc92458dd55a933032
-msgid "*1.1  Adding Vector Data*"
+# 751793817ac34f7e88f1da104c56f1cf
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:38
+msgid "1.1 Adding vector data"
 msgstr ""
 
 # 5baf5128b6774cd29641849d40d8d5e2
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:35
-# bf69c24b418148508c3408b5b32390ea
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:40
 msgid "Let’s add vector data to a new project."
 msgstr ""
 
-# 51b0b44bb8ec4a53be7f04ab72ab1c71
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:37
-# 56da7b06dcb2480d959f78e0d8f05171
-msgid "Open a new QGIS project. Your map and Layers list should be empty."
-msgstr ""
-
-# 90c512419f2045d0b8c8da513e885df8
+# 4fbfb3e1509e4e1b8fe25ae0c7c19abf
 #: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:42
-# ed3382fdefa8427b914d5daa69a0f143
-msgid "There are two ways to add a new vector layer to your project. You can navigate to :menuselection:`Layer > Add Vector Layer...` on the menu or you can click on the :guilabel:`Add Vector Layer` button on the toolbar:"
+msgid "Open a new QGIS project. Your map and Layers panel should be empty."
 msgstr ""
 
-# 50d97b31eb4d41d499a81c3714ee1ba3
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:50
-# a4857c527be94047b7fc7196b8be5ef6
-msgid "If you can’t find the toolbar button, right-click the toolbars and make sure that the box is checked next to :guilabel:`File`"
+# d31fd629f1a24c968f1ba34e2f1f44bf
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:47
+msgid ""
+"There are two ways to add a new vector layer to your project. Navigate to :"
+"menuselection:`Layer ‣ Add Vector Layer...` on the menu or click on the :"
+"guilabel:`Add Vector Layer` button on the toolbar:"
+msgstr ""
+
+# 06e717142f864ca29397a70efb7e2856
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:55
+msgid ""
+"If you can’t find the toolbar button, right-click the toolbars and make sure "
+"that the box is checked next to :guilabel:`File`."
 msgstr ""
 
 # 7dd6c9cfedc04346b220442fab53eba0
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:52
-# 78e3cb3a7e864930bfe9065faf2b96a4
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:58
 msgid "The :guilabel:`Add vector layer` dialog looks like this:"
 msgstr ""
 
-# bc12794a278b4b8789bbefc760015b1f
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:57
-# df148fc65d8c4f9d8b8c757da276224e
-msgid "Click on the :guilabel:`Browse` button and navigate to your exercise data. Go into the *qgis/Sleman/* directory and select *Jalan_Sleman_OSM, POI_Sleman* and *Kecamatan_Sleman*. You can select multiple files by holding the :kbd:`CTRL` key on your keyboard as you click each file. Click :guilabel:`Open` and then :guilabel:`Open` again."
-msgstr ""
-
-# 5940fc8146694be0ab710b36fc21d347
+# 7574eba3502e458fb60a7ebda53c4483
 #: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:63
-# 99ddcaf07b70402597af59c0b90bb825
-msgid "Your map canvas now will looks like this:"
+msgid ""
+"Click on the :guilabel:`Browse` button and navigate to your exercise data. "
+"Go into the :file:`qgis/Sleman/` directory and select :file:"
+"`Jalan_Sleman_OSM`, :file:`POI_Sleman` and :file:`Kecamatan_Sleman`. Select "
+"multiple files by holding the :kbd:`CTRL` key on your keyboard as you click "
+"each file. Click :guilabel:`Open` and then :guilabel:`Open` again."
 msgstr ""
 
-# 64d1b4090565469fbbc3084f3b537209
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:68
-# 32b6b706dc6a417687afad80afdbf24d
-msgid "Great! You’ve added some vector data to your map. Don’t forget there are three kinds of vectors"
-msgstr ""
-
-# 117196826a53432abcadc87e099c452b
+# e7895ee080b84f8eb8ece1c3a06e425d
 #: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:71
-# 9d0d0b7481ec4adfa1eb4968aeb3bd43
-msgid "points,"
+msgid "Your map canvas will now look like this:"
 msgstr ""
 
-# 82132b9ef0d349d595064fd51b9aa6bf
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:72
-# 4c6cdcdcefdf4648bee23bb12304a9cd
-msgid "lines,"
+# 456c009b0ff44e4991fbc971c50f495e
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:76
+msgid "Great! You’ve added some vector data to your map."
 msgstr ""
 
-# 3cc8e7a08c0341a69d5f90b09fc6bbda
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:73
-# 7a6c3df8cb8f405fb259d0e6fcb31d33
-msgid "and polygons."
+# 5c85f0cfd3d64dedad37a47ac6e76bc9
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:78
+msgid "Remember that there are three kinds of vectors:"
+msgstr ""
+
+# 3c60130c38c04e8b91938b3215ed2d2d
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:80
+msgid "points"
+msgstr ""
+
+# a668a210574b4ab2b393efd5ac878faa
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:81
+msgid "lines"
+msgstr ""
+
+# aa1962efb71b4b288d317dd605004496
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:82
+msgid "polygons"
 msgstr ""
 
 # 07cfa1b8d909475f85c7d76e76fe256e
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:75
-# a9667a3929ff43fba452a1f1983b7e57
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:84
 msgid "We have just added one layer of each type."
 msgstr ""
 
-# 39e29fbeeb144b97817c0ccfa0b3f1f4
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:77
-# a5fdb46334d44edcbacb904ee279f6cd
-msgid "*1.2  Adding Raster Data*"
+# 5ac49ec4b9324e4485e68acc539fc689
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:88
+msgid "1.2  Adding Raster Data"
 msgstr ""
 
-# 3815474396cb4b2b8d36a442d6cc1253
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:79
-# 22cd2c694ff24ad8aebaae976ab83108
-msgid "Raster data has different characteristics compared to vector data. Raster data is composed by rows and columns which form small boxes (known as pixels). The ‘box’es contains information, which is usually expressed as grayscale or color. The information in each pixel could be the altitude of a point, the size of the population, the area’s color, and so forth."
+# ff793fa3b1384f499ac6e5bcdd912eb1
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:90
+msgid ""
+"Raster data has different characteristics than vector data. Raster data is "
+"composed of rows and columns which form small boxes (known as pixels). The "
+"pixels contain information, which is usually expressed as greyscale or "
+"colour. The information in each pixel could be the altitude of a point, the "
+"size of the population, the area’s colour or another value."
 msgstr ""
 
-# 87d278053e974ead88a0b8886c619af4
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:87
-# 531ed0ccbb3244a99e4c662bffe955d5
-msgid "There are two ways to add a new raster layer to your project. You can navigate to :menuselection:`Layer > Add Raster Layer...` on the menu or you can click on the :menuselection:`Add Vector Layer` button on the toolbar:"
+# 5a9412249178451c97c70c9a56cb3ebf
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:98
+msgid ""
+"There are two ways to add a new raster layer to your project. Navigate to :"
+"menuselection:`Layer ‣ Add Raster Layer...` on the menu or click on the :"
+"guilabel:`Add Raster Layer` button on the toolbar:"
 msgstr ""
 
-# 108c1f0b20334d73a707533cdaeb7c94
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:95
-# a055b7b203f04b73be10b24c8e92a660
-msgid "Navigate to qgis/Sleman/SRTM/ and select *SRTM_Sleman.tif*, which depicts the topography of the area."
+# ece7f0985e7f4323a575cb99538da1c3
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:106
+msgid ""
+"Navigate to :file:`qgis/Sleman/SRTM/` and select :file:`SRTM_Sleman.tif`, "
+"which depicts the topography of the area."
 msgstr ""
 
-# 02e77ccc51f84a1c94ecf6c3a00ac3ad
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:101
-# a3fb233d26de4d139d15e3590facf44f
-msgid "Click :guilabel:`Open`. The raster will be added to our project as a grey-colored square."
+# 6aefae2357b948fe8f82cdfc33dfb05b
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:112
+msgid "Click :guilabel:`Open`. The raster will be added to our project."
 msgstr ""
 
-# 5ec91a005faf41e2a54e882c93c4fd40
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:107
-# 9072e77f568b4146b8583850561a69ba
-msgid "Next we will symbolize the data to make it easier to understand."
+# 775b01e381004540a4a6b1eb80523486
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:118
+msgid "Next we will symbolise the data to make it easier to understand."
 msgstr ""
 
-# bdb353c66a4d4ab9b31be429ef729647
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:109
-# d642ff0f11b54b6592d6ef70bb32fa8f
-msgid "**2. Symbolizing Data**"
+# e9384e610abd45848c24126e3916279a
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:121
+msgid "2. Symbolising data"
 msgstr ""
 
 # 93e082a778494b7f975fa83d06affa16
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:111
-# 16c209d57c4145ae8631abf06148a052
-msgid "Layer symbology is useful so that users can easily understand our maps. It is also important to make our maps more attractive. Your choice of a layer’s symbology is very important to deliver the right information."
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:123
+msgid ""
+"Layer symbology is useful so that users can easily understand our maps. It "
+"is also important to make our maps more attractive. Your choice of a layer’s "
+"symbology is very important to deliver the right information."
 msgstr ""
 
-# 320ed28e3b594ad8be3a1595aeba4426
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:116
-# f4924f510f9b4e8b8103a1dd87e0a514
-msgid "*2.1  Symbolize the Districts*"
+# 7ba927d8d0af42679672b611c9924092
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:129
+msgid "2.1  Symbolise the districts"
 msgstr ""
 
-# c63051bc4e6f4dad8c9f97233e73ea0c
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:118
-# 6b6a6058a3194d6aada7dc792d55d1c2
-msgid "Let’s symbolize the district layer that we’ve added:"
+# 3e6fc00a3e144ac6a4df3effe147494c
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:131
+msgid "Let’s symbolise the district layer that we’ve added:"
 msgstr ""
 
-# f73b18c61ca24e2d9aacb6dc70ee0388
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:120
-# caa6010323aa48ee9fcce227a7525567
-msgid "Right click on the *Kecamatan_Sleman* layer, and choose :guilabel:`Properties`, or double click the layer name."
+# 29556ff7d3834efbaefc3eed84c9ae37
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:133
+msgid ""
+"Right-click on the :guilabel:`Kecamatan_Sleman` layer, and click :guilabel:"
+"`Properties`, or double-click the layer name."
 msgstr ""
 
 # fc403863d1f8485b8cf758e5ed79b12e
 # 06048902dcfb4882a860d20311672ea0
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:122
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:156
-# bcc229b804104af08a0a26b2d33ff916
-# beaf192e5b5142e78ca478454b00a34c
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:136
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:172
 msgid "Click on the :guilabel:`Style` tab."
 msgstr ""
 
-# ef2edd727fbd49a794942ef32f05124b
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:127
-# 972a5b91f6ef4b15ab3fb7f57d801789
-msgid "Notice all the options that we have to change the appearance of this layer. We can change the layer’s transparency or its color, or make even more detailed variations by clicking on :guilabel:`Change`"
+# 12c776fcecb944868d6a8eea1689bc16
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:141
+msgid ""
+"Notice all the options that we have to change the appearance of this layer. "
+"We can change the layer’s transparency or its colour, or make even more "
+"detailed variations by clicking on :guilabel:`Change`."
 msgstr ""
 
 # 3da7acd03b7c49d88d30e67356889b5f
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:134
-# 2d1b660db85449e0b75c4f1266772886
-msgid "We can also base the symbology on the data contained in the layer itself."
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:147
+msgid ""
+"We can also base the symbology on the data contained in the layer itself."
 msgstr ""
 
-# 92c46f8023a646258b277b5cc047da4f
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:135
-# 0cae12b54694408e9baafe4a29a5e2e6
-msgid "Click on the box that says :guilabel:`Single Symbol`, and change it to :guilabel:`Categorized`."
+# 333dde76f81847d3a14956339539b7a9
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:149
+msgid ""
+"Click on the box that says :guilabel:`Single Symbol` and change it to :"
+"guilabel:`Categorized`."
 msgstr ""
 
-# 8b10a5b55cdc42a082d06ae7223248da
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:141
-# 9f33dfb9ae5c4adb98a80cc78f92f1b3
-msgid "Change the Color Ramp to a set of colors that you like, and then click :guilabel:`Classify`. It may look something like this (although your colors will be different):"
+# 6daab2f7832547a395c13490266682ca
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:155
+msgid ""
+"Change the Color Ramp to a set of colours that you like, and then click :"
+"guilabel:`Classify`. It may look something like this (although your colours "
+"will be different):"
 msgstr ""
 
 # fe64fd2441b7483aa922c4cc8bd3aa9f
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:148
-# 50bfacc8a0c9481d9960aa2a46bf38db
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:162
 msgid "Click :guilabel:`OK` to apply the style changes."
 msgstr ""
 
-# b3efeb0c89364957a4360c72fb445d6e
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:150
-# e544dd1212f84f2396b8e414ff16f92d
-msgid "*2.2  Symbolize the Roads*"
+# 35a19a644a4546c69cbd6646343c88fb
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:165
+msgid "2.2  Symbolise the roads"
 msgstr ""
 
-# 2e9898af72674eeab1bc4faabdfbf092
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:152
-# cbeb3fe6936b45e7a51ad2de509cca82
-msgid "Next, let’s symbolize our roads layer."
+# aa06de66ab5945b1ab419252b9007acd
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:167
+msgid "Next, let’s symbolise our roads layer."
 msgstr ""
 
-# d29477b378cc4443a4b321a8adc9fd34
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:154
-# 2d019f97c93041379c11d7861417f4f3
-msgid "Double-click *Jalan_Sleman_OSM* in the Layers list to open the properties dialog."
+# 92ad0b48ac9b4aaba2af407ad81bce34
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:169
+msgid ""
+"Double-click :guilabel:`Jalan_Sleman_OSM` in the Layers panel to open the "
+"Properties window."
 msgstr ""
 
-# 7f01e1fb2ada4759b00c06b414910aab
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:157
-# c48bb29fc9514c1499fb04874891e269
-msgid "Adjust the color as you like, or choose one of the style presets that are displayed at the bottom."
+# f41eeeb7603242859f27ede530f37e2a
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:174
+msgid ""
+"Adjust the colour as you like, or choose one of the style presets that are "
+"displayed at the bottom."
 msgstr ""
 
-# 09ba505d15d4442f84b6e0080cfb92ca
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:159
-# e6893281b11043c695ece5d85394ef8a
-msgid "Feel free to experiment, you can make changes, click :guilabel:`Apply` and view your changes on the map until you are satisfied."
+# b9ae1440e7294600b15f1b169ab2b99e
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:177
+msgid ""
+"Feel free to experiment. As you make changes, click :guilabel:`Apply` to "
+"view your changes on the map."
 msgstr ""
 
 # bd5660c7715c496f84c0a871ec6c317b
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:161
-# 5acb17b84fbe4fe6af4640df133b3a7e
-msgid "If you use multiple symbologies (as we covered in Unit 2), your roads may end up looking like this:"
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:180
+msgid ""
+"If you use multiple symbologies (as we covered in Unit 2), your roads may "
+"end up looking like this:"
 msgstr ""
 
-# 3c350320d8204ab290f6bb4f378349d3
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:167
-# f714ac73b91349c2981d7ab5404c6a77
-msgid "This isn’t ideal. To fix this, open the :guilabel:`Properties` dialog and on the :guilabel:`Style` tab click on the :guilabel:`Advanced` button and choose :guilabel:`Symbol Levels`. Check to box next to :guilabel:`Enable symbol levels`."
+# f3a83174f94244c1a2ac9cbb79555b4c
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:186
+msgid ""
+"This isn’t ideal. To fix this, open the Properties window and on the :"
+"guilabel:`Style` tab click on the :guilabel:`Advanced` button and choose :"
+"guilabel:`Symbol Levels`. Check to box next to :guilabel:`Enable symbol "
+"levels`."
 msgstr ""
 
 # a330cbc04e99499f875476a9bb0e2269
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:175
-# 0c787fad18374210b33509b6e63f3af0
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:194
 msgid "The roads will then look correct:"
 msgstr ""
 
-# 80b83a9983e44f2da871a9a359332017
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:180
-# e40b0abad2b545cab1ec6be665c065ce
-msgid "Try editing the symbology of the *POI_Sleman_OSM* layer on your own."
-msgstr ""
-
-# 3679a024cf2441658299661aacb1970f
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:182
-# 9c0ff243f70742edbb07f6f9b4986f75
-msgid "*2.3  Editing Raster Symbology*"
-msgstr ""
-
-# 91b7cf680de84fd996e4e74bcdf7991a
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:184
-# 29d52f211d83405a81c54a1de8b409cc
-msgid "Lastly, let’s fix our raster layer so that it doesn’t look just like a grey rectangle."
-msgstr ""
-
-# 36eea6c04ac84ed3971c0b0a10e50233
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:187
-# f681b0b9e90f4dc5a54d290cce34347a
-msgid "Make sure that the raster toolbar is activated. It should look like this:"
-msgstr ""
-
-# 37ee02c2cac341f48d9052fb1beea08e
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:193
-# 3e7c4df4ec3d4dc3a59aca02a04630d2
-msgid "Select the *SRTM_Sleman* layer and click the :guilabel:`Stretch Histogram` button."
+# 6879031274194792a3de9c7c41afe0f5
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:199
+msgid ""
+"Try editing the symbology of the :guilabel:`POI_Sleman_OSM` layer on your "
+"own."
 msgstr ""
 
 # 52d791a4120f41b6a745cdcbc05b04c3
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:199
-# 92ae34954c1f4d6b8418833f47488552
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:201
 msgid "Your map should end up looking something like this:"
 msgstr ""
 
-# 20dd9a1bae814e678161884439db5368
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:204
-# 43d0b9c4100f4366808d2f99198987da
-msgid "**3. Map Layout**"
+# 0f43dd8b44c74f76b161c8c6b503cb7e
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:207
+msgid "3. Map layout"
 msgstr ""
 
-# fe76a5065fc74c658c24db4434517970
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:206
-# 4c09cddd4cea4be18c3a67c06914efff
-msgid "Your map is a medium to communicate information (as well as your ideas) to your map’s reader. You use layer symbology to convey the content of your data so that it can be easily understood by the user. By creating a map layout, you are going a step further in using your map as a way to convey information."
+# 02300795bb554a44912bfb14caed1129
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:209
+msgid ""
+"Your map is a medium to communicate information (as well as your ideas). "
+"Layer symbology is used to convey the content of your data so that it can be "
+"easily understood by the user. By creating a map layout, you are going a "
+"step further in using your map as a way to convey information."
 msgstr ""
 
-# 3cd3e166ab1741678904b2bd319d6a9b
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:213
-# d798d9d3d16f4d339c19dba5499c2093
-msgid "For a full review of Map Composer, refer back to Unit 2. For now, let’s create a basic layout with a legend."
+# ebd1c9ddf0db4847b6e31397a9e72b43
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:215
+msgid ""
+"For a full review of Map Composer, refer back to :ref:`Unit 2 <using-map-"
+"composer>`. For now, let’s create a basic layout with a legend."
 msgstr ""
 
-# 636d418ae27f465682fcf009ed1edf5b
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:216
-# 56e8f2505e4646079a09018720733231
-msgid "Start a new :guilabel:`Map Composer` window by going to :menuselection:`File > New Print Composer`"
+# 071cecc7b3c3416588b0ed76f3f29f7e
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:219
+msgid ""
+"Start a new :guilabel:`Map Composer` window by going to :menuselection:`File "
+"‣ New Print Composer`."
 msgstr ""
 
 # ff7a749c42cc495bb6e98c5ff13e183e
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:218
-# 0e9deec54942455abdac2ca2ab46c96b
-msgid "Click the :guilabel:`Add new map` button and draw a box on the left side of the canvas."
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:222
+msgid ""
+"Click the :guilabel:`Add new map` button and draw a box on the left side of "
+"the canvas."
 msgstr ""
 
 # 4546df4bd32242cea88ca406943a99e5
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:224
-# dc2bf467833749fd8b70f85fb1764cce
-msgid "Now click on the :guilabel:`Add new legend` button and draw a box on the right side of the canvas."
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:228
+msgid ""
+"Now click on the :guilabel:`Add new legend` button and draw a box on the "
+"right side of the canvas."
 msgstr ""
 
 # c6aa54521b114dfda506ee4bb08bd55f
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:230
-# c22ffe29a70842699e125fb462058720
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:234
 msgid "Your map will look similar to this:"
 msgstr ""
 
 # f50be749c00c408a974e46c02444239f
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:235
-# 9945c5f5a43c4210afee6995a93c353e
-msgid "Play around a bit with the Print Composer if you like, and refresh your memory!"
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:239
+msgid ""
+"Play around a bit with the Print Composer if you like, and refresh your "
+"memory!"
 msgstr ""
 
-# 5ec26dc5da4c4b2c9996e461da42bad3
-#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:238
-msgid ""
-"We hope this was a useful refresher. Now it’s time to get back to |"
-"project_name|!"
+# 26bd8bf8c3cc45409ba279bb39986497
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:242
+msgid "Now it’s time to get back to |project_name|!"
+msgstr ""
+
+# 10c657a14f06420cac8f7e7b6f852465
+#: ../../source/training/intermediate/qgis-inasafe/401-review-qgis.rst:245
+msgid ":ref:`Go to next module --> <preparing-data-and-keywords-for-inasafe>`"
 msgstr ""
 

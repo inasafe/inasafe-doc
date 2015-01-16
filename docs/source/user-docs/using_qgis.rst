@@ -3,7 +3,7 @@
 Using QGIS
 ==========
 
-|project_name| uses |QGIS| - as the platform on which to provide its
+|project_name| uses |QGIS| as the platform on which to provide its
 functionality.
 |QGIS| itself has good documentation and a very helpful user community.
 In this section we focus on those aspects of |QGIS| functionality that will be

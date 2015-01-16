@@ -22,8 +22,8 @@ will go over some of it in greater detail.
 We’ll be using the project created in this module throughout the rest of the
 unit, so be sure to save it along the way!
 
-1. InaSAFE inputs
------------------
+1. |project_name| inputs
+------------------------
 
 Let’s review the types of data used by |project_name|.
 
@@ -156,8 +156,8 @@ you can download like this:
     it, extract (unzip) the archive on your computer.
     It should create a directory named :file:`extract.shp`.
 
-3. Load data
-------------
+3. Loading data
+---------------
 
 11. We will use this OSM data as our exposure data.
     Open a new QGIS project and add all of the shapefiles that you downloaded
@@ -309,8 +309,8 @@ First, let’s add the new column to our layer.
 .. image:: /static/training/intermediate/qgis-inasafe/image48.*
    :align: center
 
-6. Run InaSAFE
---------------
+6. Running |project_name|
+-------------------------
 
 Everything is prepared now - our layers are loaded, the keywords are set, and
 we’ve ensured that the layers have the data that |project_name| expects.

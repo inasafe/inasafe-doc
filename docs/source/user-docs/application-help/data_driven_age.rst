@@ -5,24 +5,24 @@ Data Driven Age Post-processor
 
 Purpose
 -------
-Data driven age is used carried out during aggregation to determine how many
-people are affected by a hazard according to their age distribution (youth,
+Data driven age processing is carried out during aggregation to determine how 
+many people are affected by a hazard according to their age distribution (youth,
 adult, elderly). This feature is similar to the gender post-processor.  With
 data driven age, a custom age distribution ratio is used. This is specified
-either by in the data attributes of the aggregation polygons, or by setting a
+either in the data attributes of the aggregation polygons, or by setting a
 global ratio for the whole aggregator vector layer using the keywords editor or
 keywords wizard.
 
-This feature is used to specify and to give more information by giving number
-of affected youth, adult and elderly in an area for example, the boundaries of
-a village. To identify more where area should be priorities during rescue
-operations and to give more attention on the vulnerable population (
-e.g. elderly) and their needs.
+This feature is used to give more specific information by giving the number
+of affected youth, adult and elderly in an area such as within the boundaries
+of a village. This can help better identify what areas should be priorities 
+during rescue operations and to give more attention to the vulnerable 
+population (e.g. elderly) and their needs.
 
 Guidelines
 ----------
 
-Data Needed
+Data needed
 ...........
 
 The aggregator vector layer should contain percentage of age distribution
@@ -53,30 +53,29 @@ Ratio attributes or Ratio defaults should be populated up.
 
 .. note: Allowed Values should be in percent value (e.g., 0.30, 0.70).
 
-The keywords editor graphical user interface for Age Postprocessing.
+Age postprocessing options can be specified either using ratio
+attributes or ratio defaults.
 
-There are two ways to specifying age postprocessing options:
-
-1. Ratio Attributes: In this mode, data used for postprocessing is from the
+1. **Ratio Attributes:** In this mode, data used for postprocessing is from the
 attributes of the aggregation layer itself. Consider the example below where
-each aggregation area has an attribute indicating the rations of age or gender.
+each aggregation area has an attribute indicating the ratios of age or gender.
 
 .. figure:: /static/user-docs/example_age_ratio_map.*
-   :scale: 75 %
+   :width: 650px
    :alt: Example age ration map for Jakarta
    :align: center
 
 In the keywords editor you can refer to these attributes and the age and
-gender rations will be extrapolated based on the defined values.
+gender ratios will be extrapolated based on the defined values.
 
 .. figure:: /static/user-docs/datadriven_postprocessing_config_by_attribute.*
    :scale: 75 %
    :alt: Age Post-processor configuration from layer attributes
    :align: center
 
-2. Ratio Defaults: In this mode, the default values will be used. in this
-case you may not know per-area what the age and gender breakdowns are and wish
-to rather apply the rations globally (to all aggregation areas).
+2. **Ratio Defaults:** In this mode, the default values will be used. In this
+case you may not know per-area what the age and gender breakdowns are but
+rather apply the ratios globally (to all aggregation areas).
 
 
 .. figure:: /static/user-docs/datadriven_postprocessing_config_by_default.*

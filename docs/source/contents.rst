@@ -10,5 +10,4 @@
     training/index
     user-docs/index
     developer-docs/index
-    api-docs/index
     road-map/index

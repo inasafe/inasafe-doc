@@ -8,7 +8,7 @@ Module 4: Planning an Evacuation Route Based on Hazard Information
 **Learning Objectives**
 
 - Understand the concept of shortest path and fastest route
-- Using the Road Graph plugin
+- Use the Road Graph plugin
 - Set up speed and road direction
 - Determine start and destination points
 - Conduct route analysis and selection
@@ -72,8 +72,8 @@ so you may close the panel if you like.
 .. image:: /static/training/intermediate/qgis-inasafe/image74.*
    :align: center
 
-2. Edit plugin settings
------------------------
+2. Editing plugin settings
+--------------------------
 
 5. We must edit some settings in order for the :guilabel:`Shortest path` plugin
    to work.
@@ -104,8 +104,8 @@ so you may close the panel if you like.
 
 10. Click :guilabel:`OK`.
 
-3. Choose start and destination points
---------------------------------------
+3. Choosing start and destination points
+----------------------------------------
 
 The Road Graph plugin calculates either the shortest or fastest route between
 two points, so we need to provide a start point and an end point for an

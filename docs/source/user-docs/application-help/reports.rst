@@ -5,13 +5,13 @@ Reports
 
 Reports about the impact scenario project are generated using QGIS composer
 templates.
-The default template is being shipped with the plugin,
-but you can easily create your own templates in QGIS and use them as basis for
-your reports.
+The default template is shipped with the plugin,
+but you can easily create your own templates in QGIS and use them as a 
+basis for your reports.
 
-Localized templates are supported via the following simple schema:
+Localised templates are supported via the following simple schema:
 
-if there is a specified template called
+If there is a specified template called
 :file:`/path/to/template/foo.qpt` then the plugin looks in the template
 directory :file:`/path/to/template/` for a file called file
 :file:`foo-LANG.qpt`, where "LANG" is the language code of the system locale.
@@ -20,14 +20,14 @@ If such a file exists it will be used for report creation,
 otherwise the original template
 :file:`/path/to/template/foo.qpt` will be used.
 
-Report Template Elements
+Report template elements
 ------------------------
 
-A Template contains the next three groups of elements:
+A template contains the following types of elements:
 
-* **Static elements**.
-* **Elements containing tokens for replacement**.
-* **Elements that are directly updated by the renderer**.
+* Static elements
+* Elements containing tokens for replacement
+* Elements that are directly updated by the renderer
 
 Static Elements
 ...............
@@ -52,28 +52,28 @@ In this case any content that may be present in the element is completely
 replaced by the realtime map renderer, although certain styling options
 (e.g. graticule settings on the map) will remain in effect.
 
-This elements are recognized by their ID's and currently the plugin supports
+These elements are recognised by their IDs and currently the plugin supports
 the following elements:
 
-* **safe-logo** --- QGIS composer image, which will be used for displaying
-  InaSAFE logo with web-site url.
-* **organisation-logo** --- QGIS composer image, which will be used for
-  displaying organisation logo.
-  By default a combined supporters logo is used.
-  To use custom logo image, set the path to your PNG file in the plugin Options
+* **safe-logo** --- QGIS composer image, which is used for displaying the
+  |project_name| logo with website url
+* **organisation-logo** --- QGIS composer image, which is used for
+  displaying an organisational logo;
+  By default a combined supporters logo is used;
+  To use a custom logo image, set the path to your PNG file in the Options
   dialog (see :ref:`toolbar_options` for details).
-* **impact-map** --- QGIS composer map, which will be used for displaying the
-  impact scenario.
-* **impact-legend** --- QGIS composer legend, which will be used for displaying
-  the legend of the impact scenario.
-* **impact-report** --- QGIS composer label, which will be used for displaying
-  the impact report table.
+* **impact-map** --- QGIS composer map, which is used for displaying the
+  impact scenario
+* **impact-legend** --- QGIS composer legend, which is used for displaying
+  the legend of the impact scenario
+* **impact-report** --- QGIS composer label, which is used for displaying
+  the impact report table
 
-  .. note:: As QGIS composer doesn't support automatic resizing elements,
-     based on their contents, make sure that label have dimensions large enough
-     to show full table.
+  .. note:: As QGIS composer doesn't support automatic resizing of elements
+     based on their contents, make sure that labels have dimensions large enough
+     to show the full table.
 
-Replaceable Keywords
+Replaceable keywords
 --------------------
 
 This section describes tokenised keywords that are passed to the map template.
@@ -84,19 +84,19 @@ The list includes static phrases which have been internationalised (and so
 they will be displayed in the language of the selected map local,
 defaulting to English where no translation is available).
 
-The following tokenized keywords are supported:
+The following tokenised keywords are supported:
 
-* **impact-title** --- title of the impact scenario map.
-* **date** --- date of the assessment.
-* **time** --- time of the assessment.
-* **safe-version** --- version of the plugin used.
-* **disclaimer** --- disclaimer text.
-  By default used next text: "InaSAFE has been jointly developed by 
+* **impact-title** --- title of the impact scenario map
+* **date** --- date of the assessment
+* **time** --- time of the assessment
+* **safe-version** --- version of the plugin used
+* **disclaimer** --- disclaimer text;
+  By default this text is used: "InaSAFE has been jointly developed by 
   Indonesian Government-BPNB, Australian Govenment-AIFDR and the World
   Bank-GFDRR. These agencies and the individual software developers of 
   InaSAFE take no responsibility for the correctness of outputs from 
   InaSAFE or decisions derived as a consequence."
-  To use custom disclaimer text, enter desired text the plugin Options
+  To use custom disclaimer text, enter desired text in the Options
   dialog (see :ref:`toolbar_options` for details).
 
 Custom templates
@@ -107,11 +107,11 @@ programming**.
 There are three primary ways you can achieve this:
 
 * Moving replaceable keywords into different elements, or removing them
-  completely.
+  completely
 * Changing template elements look and feel (e.g. setting up fonts, colors,
-  borders, etc), moving the template elements themselves around or
-  adding / removing them completely.
-* Creating your own template from scratch and using it instead of default one.
+  borders, etc.), moving the template elements themselves around or
+  adding / removing them completely
+* Creating your own template from scratch and using it instead of default one
 
 The default template is provided as
 :file:`inasafe/safe_qgis/resources/qgis-composer-templates/inasafe.qpt`
@@ -122,10 +122,10 @@ directory.
 You should take care to test your template changes before using it in
 a production environment.
 
-Also in addition to default template you can have as many custom templates as
+In addition to the default template you can have as many custom templates as
 you want.
-Just create templates, put them in some folder somewhere in filesystem and go
-to :menuselection:`Plugins --> InaSAFE --> InaSAFE Options`
-or click on the |project_name| plugin toolbar's options icon.
-In Options dialog specify :guilabel:`Report template` setting.
-It should contain full path to the folder with your custom templates.
+Just create templates, put them in a folder and go
+to :menuselection:`Plugins ‣ InaSAFE ‣ InaSAFE Options`
+or click on the |project_name| plugin toolbar's :guilabel:`Options` button.
+In the Options dialog specify the :guilabel:`Report template` setting.
+It should contain the full path to the folder with your custom templates.
