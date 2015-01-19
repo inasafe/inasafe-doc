@@ -70,12 +70,6 @@ Changelog for version 2.0.0
 
 * New Functionality in |project_name|:
 
-  * Routing
-  * Evacuation routes
-  * Transportation from A to B
-  * Multiple Hazard Analysis
-  * Damage and Loss Assessment (DALA)
-  * Percentage of affected area by aggregation
   * Polygon flood impact on roads impact function added
   * Impact merge tool:
     This tool will allow you to merge the output from two impact assessments
