@@ -27,7 +27,8 @@ by Tim Sutton (Linfiniti Consulting CC., funded by The World Bank ,
 Supported Platforms
 -------------------
 
-Currently only Ubuntu 12.04 is supported.
+Currently only Ubuntu 14.04 is supported.
+
 The software may work or can easily be made to work on other platforms but it
 is untested.
 
@@ -59,12 +60,12 @@ Architecture
 
 |project_name| Realtime is implemented by four main python modules:
 
-* **ftp_client** - A generic tool to fetch directory listings and
-  files from a remote server.
+* **sftp_client** - A generic tool to fetch directory listings and
+  files from a remote server. There is also an ftp_client module for
+  deployments where the shake maps are on an ftp server.
 
 * **shake_data** - A mostly generic tool to fetch shake files from an ftp
-  server.
-  There is an expectation that the server layout follows a simple flat
+  server. There is an expectation that the server layout follows a simple flat
   structure where files are named after the shake event and are in the format
   of shake data as provided by the USGS (XXXXXX TODO fact check XXXX).
   :samp:`ftp://118.97.83.243/20110413170148.inp.zip`
@@ -76,8 +77,8 @@ Architecture
     fetch, unpack, process and generate a report for a quake event.
     The module logic is based on the standard shake data packaging
     format supplied by the USGS.
-    We have restricted out implementation to require only the :file:`grid
-    .xml` file contained in the inp.zip file in the downloaded zip file.
+    We have restricted our implementation to require only the :file:`grid
+    .xml` file.
 * **make_map** - A simple python tool for running one or multiple shake
     analyses.
 
@@ -87,136 +88,248 @@ used for much of the data processing and reporting functionality.
 .. note:: Currently version 779e16603ee3fb8781c85a0e95913a1f6bbd2d6a is
     the 'known good' SHA1.
 
-Two of these dependencies is a template QGIS project and a map composition
+Two of these dependencies are a template QGIS project and a map composition
 template.
+
 We have designed the realtime reporting engine to allow end users to
 customise the map report to their needs with little or no programming.
 The primary way to achieve this is by opening the custom template
 :file:`realtime/fixtures/realtime-template.qpt` in QGIS and modifying
 its contents.
+
 You could also build a new template from scratch provided the item IDs listed
 in the section that follows are used.
 
-Installation
-------------
+Installation Overview
+---------------------
 
-The supported platform is currently Ubuntu 12.04 LTS.
-The instructions provided below are for that OS.
-First we are going to hand build QGIS.
-This may not be needed in future once 2.0 packages are available,
-but for now it is recommended.
-::
+The realtime system is deployed as a collection of http://docker.com
+containers. The supported platform in the docker images is currently Ubuntu
+14.04 LTS. The instructions provided below assume the host OS is Ubuntu 14.04,
+although it should work on any platform where docker is supported (albeit with
+some adaptions to fit your OS).
 
-  sudo apt-get install python-software-properties
-  sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-  sudo apt-get update
-  sudo apt-get build-dep qgis
-  cd ~
-  mkdir -p dev/cpp
-  sudo mkdir /home/web
-  sudo chown <youruser>.<youruser> /home/web
-  cd ~/dev/cpp
-  sudo apt-get install git cmake-curses-gui
-  git clone git://github.com/qgis/QGIS.git
+There are 4 docker images used for deployment
 
-At this point you should enter ‘yes’ when prompted
-::
+* **docker-realtime-inasafe:** An image containing the actual realtime software.
+* **docker-realtime-sftp:** An image containing a simple ssh service for
+  uploading shakemaps to.
+* **docker-realtime-apache:** An image for apache to host the realtime front end.
+* **docker-realtime-btsync:** An image containing the synchronised based data.
+  sets needed for the realtime map products.
 
-  cd QGIS
-  mkdir build
-  cd build
-  cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local/qgis-realtime \
-  -DCMAKE_BUILD_TYPE=Debug
-  make -j4
-  sudo mkdir /usr/local/qgis-realtime
-  sudo chown <youruser>.<youruser> /usr/local/qgis-realtime
-  make install
 
-At this point you can test if your hand build QGIS is working by doing
-::
+An additional git repository **docker-realtime-orchestration** contains helper
+scripts that will orchestrate the deployment of the above.
 
-  export LD_LIBRARY_PATH=/usr/local/qgis-realtime/lib
-  export QGIS_PREFIX_PATH=/usr/local/qgis-realtime
-  export PYTHONPATH=/usr/local/qgis-realtime/share/qgis/python
-  python
-  from qgis.core import *
-  ctrl-d
+We have tried in the design to keep as much of the logic in docker and
+require as little configuration of the host system as possible. To begin you
+need to have docker installed and we recommend to use the upstream docker
+packages and not the ubuntu provided images::
 
-You should see something like the listing below
-::
+    # Setup latest docker.io
+    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A
+    echo "deb https://get.docker.io/ubuntu docker main " > /etc/apt/sources.list.d/docker.list
+    apt-get update
+    apt-get install lxc-docker
 
-  timlinux@waterfall:~/dev/python/inasafe-realtime$ python
-  Python 2.7.3 (default, Sep 26 2012, 21:51:14)
-  [GCC 4.7.2] on linux2
-  Type "help", "copyright", "credits" or "license" for more information.
-  >>> from qgis.core import *
-  >>>
 
-Get |project_name| ::
+We also recommend adding the user administering the realtime deployment to the
+docker group::
 
-  cd ~
-  mkdir -p dev/python
-  cd dev/python
-  git clone git://github.com/AIFDR/inasafe.git inasafe-realtime
-  cd inasafe-realtime
-  sudo apt-get install python-tz python-paramiko
+    sudo usermod -a -G docker <username>
 
-Setup Apache
-::
+Where ``username`` should be substituted with the user who will administer
+the realtime system.
 
-  sudo apt-get install apache2-mpm-worker
-  cd /etc/apache2/sites-available
-  sudo cp ~/dev/python/inasafe-realtime/realtime/fixtures/web/quake-apache.conf .
-  sudo apt-get install rpl
-  sudo chown <yourname>.<yourname> quake-apache.conf
-  rpl “quake.linfiniti.com” “quake.<yourhost>” quake-apache.conf
+.. note:: You should log out and in again for the above command to take effect.
 
-For local testing only you can use quake.localhost for your host then add
-this to your /etc/hosts
-::
 
-  127.0.0.1 localhost quake.localhost
+We have tried to build the system so that it can be generally installed and
+maintained without having root access to the host on which it runs. The reason
+for this is that it will be very likely installed on partner organisation's
+hardware / software and we would prefer to limit the invasiveness and potential
+for damaging other services. There are two installation tasks that you will need
+root / sudo access for:
 
-Now deploy your site
-::
+    * to set up an apache reverse proxy into the realtime apache container.
+        We will explain this step further below.
+    * to ensure that port 9222 is open on the host's firewall and is publicly
+        accessible (it will provide access for pushing shakemap data to the
+        host from a remote site).
 
-  sudo a2dissite default
-  sudo a2ensite quake-apache.conf
-  cd /home
-  chmod a+X web
-  mkdir web/quake
-  chmod a+X web/quake
-  cd /home/web/quake
 
-Just for testing do
-::
+Checkout and run the orchestration build script
+-----------------------------------------------
 
-  mkdir public
-  echo 'Hello' > public/foo.txt
-  sudo service apache2 restart
+You should first checkout the docker orchestration script. This is a small
+repository that contains logic to build and deploy the full realtime
+architecture.::
 
-Open your web browser and point it to: http://quake.localhost
+    mkdir -p ~/dev/docker
+    cd ~/dev/docker
+    git clone git@github.com:AIFDR/docker-realtime-orchestration.git
+    cd docker-realtime-orchestration
 
-You should see a basic directory listing containing file foo.
+Now run the build script.::
 
-Now copy over some required datasets
-::
+    ./build.sh
 
-  cd ~/dev/python/inasafe-realtime/realtime/fixtures/
-  wget http://quake.linfiniti.com/indonesia.sqlite
+.. note:: You can also run the script with an optional argument which is a
+    github username / organisation name. Use this argument when you wish
+    to do testing by building against your own clones of each of the above
+    mentioned repositories. One potential motivation for doing this is to
+    use :kdb:`apt-cacher-ng` to cache installation packages and make them
+    available to the build process.
 
-  mkdir ~/dev/python/inasafe-realtime/realtime/fixtures/exposure
-  cd ~/dev/python/inasafe-realtime/realtime/fixtures/exposure
-  wget http://quake.linfiniti.com/population.tif
-  wget http://quake.linfiniti.com/population.keywords
+The build script will take some time to run as it checks out a copy of
+each docker repository and builds an image from it. In the case of the
+docker-realtime-inasafe image a pruned clone of the entire inasafe-dev repo
+is also made (which can take some time to checkout).
 
-  cd /home/web/quake/public
-  wget http://quake.linfiniti.com/web.tar.gz
-  tar xfz web.tar.gz
-  rm web.tar.gz
+At the end of the build script, you should have a collection of docker images
+something like this::
 
-Running your first report
-::
+    REPOSITORY                      TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
+    aifdr/docker-realtime-inasafe   latest              eeddc5ad569a        11 minutes ago      1.188 GB
+    aifdr/docker-realtime-btsync    latest              9a4cdd32c449        49 minutes ago      234.8 MB
+    aifdr/docker-realtime-sftp      latest              800a8d7a7d0e        52 minutes ago      245.2 MB
+    aifdr/docker-realtime-apache    latest              25caae296541        55 minutes ago      259.4 MB
+
+You can generate a list similar to above by running the :kbd:`docker images` command.
+
+
+Deploy the docker containers as images
+--------------------------------------
+
+The above images need to be deployed into production - we do this by using
+the :file:`deploy.sh` script provided in the orchestration repository::
+
+    timlinux@overhang:~/dev/docker/docker-realtime-orchestration$ ./deploy.sh
+
+    ----------------------------------------
+    This script will deploy InaSAFE realtime
+    images as a series of docker containers
+    ----------------------------------------
+
+
+    Running apache container
+    =====================================
+    docker-realtime-apache is not running
+    5ac47064bf5d9d5d3a699c17373a971465e7da239e1ab0fb617c4d4e7e9af236
+
+    Running SFTP Server container
+    =====================================
+    docker-realtime-sftp is not running
+    86f3b480a5777267abe52ee7877161463f043ca6b82f646272663a48d2ad3714
+
+    Running btsync container
+    =====================================
+    docker-realtime-btsync is not running
+    41bc53a168252f0617ae3f8009beb2ecc3bea4cd34e7f3f2529ec1d6c2e86eda
+
+    Login details for SFTP container:
+    =====================================
+    User: realtime Password: aHoo7eigu6Me
+
+
+.. note:: You should make a careful note of the password provided under
+    **Login details for SFTP container**
+
+
+The deploy script runs a long running instance (container) of each of the
+following images:
+
+* btsync
+* sftp
+* apache
+
+The ``docker-realtime-inasafe`` image will be run as a short running instance by
+means of a cron job which we will explain below.
+
+
+Reverse proxy and firewall access for 9222
+------------------------------------------
+
+Proxy
+.....
+
+For end user visbility of the apache container (which hosts the final shakemap
+outputs), you should use apache or nginx on the host to act as a reverse proxy.
+It is also possible to publish the apache service directly from the docker
+apache using port forwarding from the docker container to the host's port 80
+but we do not recommend it. We provide an example configuration below based
+on nginx::
+
+    upstream realtime.inasafe.org { server localhost:8080;}
+
+    server {
+        listen      80;
+        server_name realtime.inasafe.org;
+        location    / {
+            proxy_pass  http://qgis-plugins;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection "upgrade";
+            proxy_set_header Host $http_host;
+            proxy_set_header X-Forwarded-For $remote_addr;
+        }
+    }
+
+This will present incoming traffic to the host on port 80 for domain
+`realtime.inasafe.org` as if it were a direct connection into the apache
+container.
+
+SFTP
+....
+
+For the sftp container you will need to ask the system administrator to open
+port 9222 on the host. For example if they are using "uncomplicated firewall"
+they could perform the following command to allow it::
+
+    sudo ufw allow 9222
+
+.. note:: The sysadmin may need to apply similar rules on other routing
+    equipment such as routers, switches etc. within the organisational network
+    where the host is running.
+
+
+Run the orchestrated docker group
+---------------------------------
+
+We can run the ``docker-realtime-inasafe`` image as if it was an application
+that will perform the complex of tasks needed to generate a new quake map should
+any shakemap files be pending processing. This can be initiated by using the
+:file:`run.sh` script provided in the orchestration repository - for example::
+
+    ./run.sh
+
+Which by default will produce no output since there are no shakemaps available::
+
+
+
+
+Typically you will want to run this task every minute and process any new
+shakemaps that have arrived by the sftp services::
+
+    # m h  dom mon dow   command
+    * * * * * /home/<user>/dev/docker/docker-realtime-orchestration/run.sh
+    * * * * * date > /tmp/test.log
+
+.. note:: You should substitute <user> in the snippet above with your own user
+    name / the user name that runs the realtime services.
+
+
+
+Additional realtime utilities
+-----------------------------
+
+The utilities listed below can all be used to perform various administrative
+tasks within the realtime system::
+
+
+
+Run the latest report::
 
   cd ~/dev/python/inasafe-realtime
   scripts/make-latest-shakemap.sh
@@ -227,48 +340,13 @@ Running all back reports
   cd ~/dev/python/inasafe-realtime
   scripts/make-all-shakemaps.sh
 
-Listing shake files on ftp server
+Listing shake files on s/ftp server
 ::
 
   cd ~/dev/python/inasafe-realtime
   scripts/make-list-shakes.sh
 
 
-Cron Jobs
-::
-
-  There are two cron jobs - one to run the latest shake event regularly,
-  and one to synchronise all the shake outputs:
-
-    crontab -e
-
-Now add these lines (replacing <yourname>)
-::
-
-  * * * * * /home/<yourname>/dev/python/inasafe-realtime/realtime/fixtures/web/make-public.sh
-  * * * * * /home/<yourname>/bin/realtime.sh
-
-
-Finally make a small script to run the analysis every minute
-::
-
-  cd ~
-  mkdir bin
-  cd bin
-  touch realtime.sh
-  chmod +x realtime.sh
-
-Now edit the file and set its content to this
-::
-
-  #!/bin/bash
-  cd /home/<yourname>/dev/python/inasafe-realtime
-  scripts/make-latest-shakemap.sh
-
-You also need to have the standard datasets needed for the cartography:
-
-* population
-* indonesia.sqlite (can be changed by adjusting the QGIS project).
 
 QGIS Map Template Elements
 --------------------------
@@ -415,6 +493,7 @@ Customising the template
 You have a few options to customise the template - we have gone to great
 lengths to ensure that you can flexibly adjust the report composition
 **without doing any programming**.
+
 There are three primary ways you can achieve this:
 
 * Moving replacement tags into different elements, or removing them completely.
@@ -527,9 +606,9 @@ Batch validation & running
 The :file:`scripts/make-all-shakemaps.sh` provided in the |project_name|
 source tree will automate the production of one shakemap report per event
 found on the shake ftp server.
+
 It contains a number of environment variable settings which can be used to
-control batch execution.
-First a complete script listing
+control batch execution. First a complete script listing
 ::
 
     #!/bin/bash
@@ -553,89 +632,7 @@ First a complete script listing
 
 An example of the output produced from such a batch run is provided at:
 
-http://quake.linfiniti.com/
-
-Hosting the shakemaps
----------------------
-
-In this section we describe how to easily host the shakemaps on a public web
-site.
-
-An apache configuration file and a set of resources are provided to make it
-easy to host the shakemap outputs.
-The resources provided can easily be modified to provide a pleasing,
-user friendly directory listing of shakemap reports.
-
-.. note:: You should adapt the paths used below to match the configuration of
-    your system.
-
-First create a file (as root / sudo) with this content in your
-:file:`/etc/apache2/sites-available/quake-apache.conf.` for example
-::
-
-    <VirtualHost *:80>
-      ServerAdmin tim@linfiniti.com
-      ServerName quake.linfiniti.com
-
-      DocumentRoot /home/web/quake/public/
-      <Directory /home/web/quake/public/>
-        Options Indexes FollowSymLinks
-        IndexOptions +FancyIndexing
-        IndexOptions +FoldersFirst
-        IndexOptions +XHTML
-        IndexOptions +HTMLTable
-        IndexOptions +SuppressRules
-        HeaderName resource/header.html
-        ReadmeName resource/footer.html
-        IndexStyleSheet "resource/bootstrap.css"
-        IndexIgnore .htaccess /resource
-        AllowOverride None
-        Order allow,deny
-        allow from all
-      </Directory>
-
-      ErrorLog /var/log/apache2/quake.linfiniti.error.log
-      CustomLog /var/log/apache2/quake.linfiniti.access.log combined
-      ServerSignature Off
-
-    </VirtualHost>
-
-Now make the :file:`/home/web/quake/public` directory in which the outputs will
-be hosted
-::
-
-    mkdir -p /home/web/quake/public
-
-Unpack the :file:`realtime/fixtures/web/resource` directory into the above
-mentioned public directory.
-For example
-::
-
-    cd /home/web/quake/public
-    cp -r ~/dev/python/inasafe/realtime/fixtures/web/resource .
-
-Next ensure that apache has read access to your hosting directory
-::
-
-    chmod +X /home/web/quake/public
-    chmod +X /home/web/quake/public/resource
-
-You can customise the look and feel of the hosted site by editing the files in
-:file:`/home/web/quake/public/resource` (assumes basic knowledge of HTML).
-
-Lastly, you should regularly run a script to move generated pdf and png
-outputs into the public directory.
-An example of such a script is provided as
-:file:`realtime/fixtures/web/make-public.sh`.
-To run this script regularly, you could add it to a cron job e.g.
-::
-
-    crontab -e
-
-And then add a line like this to the cron file
-::
-
-    * * * * * /home/timlinux/dev/python/inasafe-realtime/realtime/fixtures/web/make-public.sh
+http://realtime.inasafe.org/
 
 .. note:: The resources used in the above examples are all available in the
     source code under :file:`realtime/fixtures/web`.
