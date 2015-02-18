@@ -55,7 +55,6 @@ Structures     Point             Structure type      type                text
 hazard and exposure layers.
 The beauty of |project_name| being open source is that anyone who has a
 background in programming is able to make their own impact functions.
-For more information visit :ref:`impact_function_tutorial`.
 
 Exposure Layers Used in Practical
 ---------------------------------

@@ -105,7 +105,7 @@ management system mentioned above.
 
 .. note:: We have strict requirements that all code submitted to
    |project_name| is compliant with high
-   :doc:`/developer-docs/coding_standards` and is continually tested by a
+   coding_standards and is continually tested by a
    comprehensive regression testing system.
    We have this requirement in place to ensure a good experience for our
    users and to ensure that users can have confidence in the results produced

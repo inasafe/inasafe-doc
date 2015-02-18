@@ -214,6 +214,3 @@ After that you have to push your local changes to your github fork with:
 
 You can than do a pull request on github to request your changes to be
 reviewed and taken into the official documentation.
-
-If you want to build the documentation locally on your computer you should
-read :ref:`building_documentation` inside the Developer Documentation.
