@@ -8,66 +8,76 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-10 16:15+0100\n"
+"POT-Creation-Date: 2015-03-01 23:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 # 9ea4ebf55b464665b85b5777cd4b043d
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:6
 # a75eb449db3841beb1287c6797e57c3d
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:6
 msgid "Flood Building Impact Function"
 msgstr ""
 
 # 7c2ec896698145898cdf0cbb4d4ba58b
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:9
 # 8f6c0abc16ab4cb09e110ad64366ad96
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:9
 msgid "Overview"
 msgstr ""
 
 # 5a333aaa6f8b45f0bf3c573a2fd0255e
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:11
 # 0553ed2cba2c4f10a2f1c7147f0e9145
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:11
 msgid "**Unique Identifier**: Flood Building Impact Function"
 msgstr ""
 
 # 51bee1e209524e3fbacb9de5dfc24da2
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:14
 # b5efb182593d47fe9e2d36f4a6ba00c8
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:14
 msgid "**Author**: Ole Nielsen, Kristy van Putten"
 msgstr ""
 
 # 63ce160203bd424a9ca2650e040f49b7
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:17
 # a98153a247b948f7b68dd87ffea44aa2
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:17
 msgid "**Rating**: 0"
 msgstr ""
 
 # 781afad2c3594d8db8a8c538277966bb
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:20
 # e4d3d56cfa8a4e57a4126facd0c5eac6
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:20
 msgid "**Title**: Be flooded"
 msgstr ""
 
 # b5d1ba3d3746423085ab4e1ad0934c43
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:23
 # d685d51665f447428aaf8db639efc7b3
-msgid "**Synopsis**: To assess the impacts of (flood or tsunami) inundation on building footprints originating from OpenStreetMap (OSM)."
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:23
+msgid ""
+"**Synopsis**: To assess the impacts of (flood or tsunami) inundation on "
+"building footprints originating from OpenStreetMap (OSM)."
 msgstr ""
 
 # 0eb038b8e8f745db93d443f8fad19dda
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:26
 # c7bf059ece4f413e878fb6b71f677f6b
-msgid "**Actions**: Provide details about where critical infrastructure might be flooded"
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:26
+msgid ""
+"**Actions**: Provide details about where critical infrastructure might be "
+"flooded"
 msgstr ""
 
 # 105117d124fc4e4ba5dccca495dc957e
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:29
 # cd1b0e2cb21f4941b4d1a99b6b463957
-msgid "**Hazard Input**: A hazard raster layer where each cell represents flood depth (in meters), or a vector polygon layer where each polygon represents an inundated area. In the latter case, the following attributes are recognised (in order): \"affected\" (True or False) or \"FLOODPRONE\" (Yes or No). (True may be represented as 1, False as 0"
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:29
+msgid ""
+"**Hazard Input**: A hazard raster layer where each cell represents flood "
+"depth (in meters), or a vector polygon layer where each polygon represents "
+"an inundated area. In the latter case, the following attributes are "
+"recognised (in order): \"affected\" (True or False) or \"FLOODPRONE\" (Yes "
+"or No). (True may be represented as 1, False as 0"
 msgstr ""
 
 # f8c9c6f7b07e4c50a79c4d0f6b7f037c
@@ -78,20 +88,25 @@ msgid ""
 msgstr ""
 
 # 13450e065ee840329d4a4cc5e324abbd
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:35
 # 97b2ad1921e04c42b82976dbbfef726c
-msgid "**Output**: Vector layer contains building is estimated to be flooded and the breakdown of the building by type."
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:35
+msgid ""
+"**Output**: Vector layer contains building is estimated to be flooded and "
+"the breakdown of the building by type."
 msgstr ""
 
 # 9ef28e1c3b5f4b73b4f23b89b78a244a
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:38
 # cc42da7a00f246f48fa23bcfa36dd049
-msgid "**Limitation**: This function only flags buildings as impacted or not either based on a fixed threshold in case of raster hazard or the the attributes mentioned under input in case of vector hazard."
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:38
+msgid ""
+"**Limitation**: This function only flags buildings as impacted or not either "
+"based on a fixed threshold in case of raster hazard or the the attributes "
+"mentioned under input in case of vector hazard."
 msgstr ""
 
 # 6e4e68ac4d024916859ea4269e40377f
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:42
 # 5e699d5012604f679028429f7b73b887
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:42
 msgid "Details"
 msgstr ""
 
@@ -123,14 +138,19 @@ msgid "Inundation impact on building data."
 msgstr ""
 
 # 513c6183036e4037a4919a65c4986ca4
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:51
 # 8d6728e6010e46479bfbc1abf2d0c9db
-msgid ":author Ole Nielsen, Kristy van Putten # this rating below is only for testing a function, not the real one :rating 0 :param requires category=='hazard' and                     subcategory in ['flood', 'tsunami']"
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:51
+msgid ""
+":author Ole Nielsen, Kristy van Putten # this rating below is only for "
+"testing a function, not the real one :rating 0 :param requires "
+"category=='hazard' and                     subcategory in ['flood', "
+"'tsunami']"
 msgstr ""
 
 # 7816f35b9db348b697f8c5873cc4e761
-#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:56
 # af59702ec4c0411d9523d2e992937bbd
-msgid ":param requires category=='exposure' and                     subcategory=='structure' and                     layertype=='vector'"
+#: ../../source/user-docs/impact-function-docs/FloodBuildingImpactFunction.rst:56
+msgid ""
+":param requires category=='exposure' and                     "
+"subcategory=='structure' and                     layertype=='vector'"
 msgstr ""
-

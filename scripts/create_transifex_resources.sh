@@ -27,7 +27,7 @@ do
     # name when registering the resource
     BASE=`basename $GENERICFILE .po`
     BASE=`echo $BASE | sed 's/_/-/g' | sed 's/ /-/g'`
-    RESOURCE=inasafe-develop.${ITEM}-$BASE
+    RESOURCE=inasafe.${ITEM}-$BASE
     # Register each po file as a transifex resource (an individual translatable file)
     #set -x
     tx set -t PO --auto-local -r $RESOURCE \
@@ -46,7 +46,7 @@ do
     # .tx/config file that looks like this:
     #
     #
-    #	[inasafe-develop.user-docs-faq]
+    #	[inasafe.user-docs-faq]
     #	file_filter = docs/i18n/<lang>/LC_MESSAGES/user-docs/faq.po
     #	source_file = docs/i18n/en/LC_MESSAGES/user-docs/faq.po
     #	source_lang = en
