@@ -51,9 +51,10 @@ middle of Jakarta.
 .. image:: /static/training/socialisation/042_buildings_zoom.*
    :align: center
 
-.. note:: The red buildings are situated in water greater than one metre
-   while the green buildings are determined to be unaffected since they are in
-   water less than the threshold of one metre.
+.. note:: The red buildings are situated in water greater than one metre and the
+  orange buildings are situated water from zero metre until one metre while the green
+  buildings are determined to be unaffected since they are in water less than
+  the threshold of one metre.
 
 2. Click :guilabel:`Estimated buildings affected` in the Layers panel to select it.
    The layer name will be highlighted in blue.
@@ -94,8 +95,8 @@ Population which needs evacuation
 8. Use the :guilabel:`Identify Features` tool to select a pixel (square) of
    the selected layer, :guilabel:`Population which need evacuation`.
 
-Here we clicked on one of the light green pixels and find that there is a
-value of 80.6411, which means there are approximately 80 people in one
+Here we clicked on one of the light orange pixels and find that there is a
+value of 80.7439, which means there are approximately 80 people in one
 pixel (square). In this dataset one pixel represents a hectare, or 100 x 100 metres.
 
 .. image:: /static/training/socialisation/045_examineraster.*
@@ -115,7 +116,7 @@ pixel (square). In this dataset one pixel represents a hectare, or 100 x 100 met
 .. image:: /static/training/socialisation/046_measuretest.*
    :align: center
 
-As you can see above we measured 102 metres, but this is only because its hard 
+As you can see above we measured 108 metres, but this is only because its hard 
 to click precisely on the corners of a single pixel.
 
 12. Close the Measure window.
@@ -226,10 +227,11 @@ Adding Keywords
 27. Be sure that the :guilabel:`flood_osm_bpbd18113_jakarta` layer is selected.
     As we mentioned previously the |project_name| panel shows a warning.
     |project_name| is telling us that the layer has no keywords. Click on 
-    the Keyword button on the |project_name| toolbar.
+    the InaSAFE Keywords Creation Wizard button on the |project_name| toolbar.
 
-28. In the Keywords Editor window we can change several keyword
-    fields. Enter the following into the form:
+28. In the InaSAFE Keywords Creation Wizard window we can follow the instructions
+    step by step and change several keyword fields. Enter the following into the
+    form:
 
 ==============  ================================================
 **Field**       **Input**
@@ -243,7 +245,7 @@ Source          :kbd:`BPBD DKI Jakarta`
 .. image:: /static/training/socialisation/053_keywordedited.*
    :align: center
 
-29. Click :guilabel:`OK` to close the keyword editor.
+29. Click :guilabel:`Finish` to close the InaSAFE Keywords Creation Wizard.
 
 Next we will run |project_name| again with this new flood hazard footprint.
 

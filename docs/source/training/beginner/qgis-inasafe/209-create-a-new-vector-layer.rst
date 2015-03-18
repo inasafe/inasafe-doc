@@ -33,7 +33,7 @@ First, we must define our dataset.
 .. image:: /static/training/beginner/qgis-inasafe/image172.*
    :align: center
 
-2. Go to :menuselection:`Layer ‣ New ‣ New Shapefile Layer`.
+2. Go to :menuselection:`Layer ‣ Create Layer ‣ New Shapefile Layer`.
    You’ll be presented with the following dialog:
 
 .. image:: /static/training/beginner/qgis-inasafe/image173.*
@@ -137,7 +137,7 @@ tutorial directory.
    :align: center
 
 19. Right-click on the :guilabel:`UGM` layer and click
-    :guilabel:`Zoom to Layer Extent`.
+    :guilabel:`Zoom to Layer`.
 
 20. Zoom in to the centre of the raster image.
     We will be digitising three areas:
@@ -155,9 +155,9 @@ GIS software commonly requires a separate mode for editing,
 to prevent users from accidentally editing or deleting important data.
 Edit mode is switched on or off individually for each layer.
 
-Let’s enter edit mode for the :guilabel:`gedung_campus` layer:
+Let’s enter edit mode for the :guilabel:`gedung_kampus` layer:
 
-21. Select :guilabel:`gedung_campus` in the Layers panel.
+21. Select :guilabel:`gedung_kampus` in the Layers panel.
 
 22. Click on the :guilabel:`Toggle Editing` button:
 
@@ -176,8 +176,8 @@ Let’s enter edit mode for the :guilabel:`gedung_campus` layer:
 
 From left to right on the image above, they are:
 
-- **Toggle Edit**: activates / deactivates edit mode.
-- **Save Edits**: saves changes made to the layer.
+- **Toggle Editing**: activates / deactivates edit mode.
+- **Save Layer Edits**: saves changes made to the layer.
 - **Add Feature**: start digitising a new feature.
 - **Move Feature(s)**: move an entire feature around.
 - **Node Tool**: move only one part of a feature.
@@ -229,7 +229,7 @@ If you make a mistake while digitising a feature,
 you can always edit it later.
 Simply finish digitising the feature and then follow these steps:
 
-- Select the feature with the :guilabel:`Select Single Feature` tool:
+- Select the feature with the :guilabel:`Select Feature` tool:
 
 .. image:: /static/training/beginner/qgis-inasafe/image185.*
    :align: center

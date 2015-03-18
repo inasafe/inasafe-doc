@@ -46,7 +46,7 @@ The QGIS website will look something like this:
    :align: center
 
 3. If you are using Windows click
-   :guilabel:`QGIS Standalone Installer Version 2.4 (32 bit)`.
+   :guilabel:`QGIS Standalone Installer Version 2.8 (32 bit)`.
    Your exact version number may be different.
 
 .. image:: /static/training/beginner/qgis-inasafe/image12.*
@@ -130,7 +130,7 @@ If it isn’t open or you haven’t installed it yet, carry on.
 We will come back to this later.
 
 14. Click on the folder icon on the upper toolbar or go to
-    :menuselection:`File ‣ Open Project...`
+    :menuselection:`Project ‣ Open...`
 
 .. image:: /static/training/beginner/qgis-inasafe/image23.*
    :align: center
@@ -246,7 +246,7 @@ Even if they are not visible in a toolbar, all of your tools will remain
 accessible via the menus.
 For example, if you remove the :guilabel:`File` toolbar (which contains the 
 :guilabel:`Save` button), you can still save your map by going to 
-:menuselection:`File ‣ Save`.
+:menuselection:`Project ‣ Save`.
 
 Status Bar
 ..........

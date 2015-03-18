@@ -204,20 +204,16 @@ OpenLayers, using the QGIS plugin repository.
 16. To retrieve the |project_name| toolbar, right-click on the
     top toolbar and check :guilabel:`InaSAFE`.
 
-=================================================   ========================
+=================================================   ===============================
 **Symbol**                                          **Name**
--------------------------------------------------   ------------------------
+-------------------------------------------------   -------------------------------
 .. image:: /static/general/icon_dock.*              Toggle Dock
-.. image:: /static/general/icon_keywords.*          Keyword Editor
-.. image:: /static/general/icon_options.*           Options
-.. image:: /static/general/icon_impactfunctions.*   Impact Functions Browser
-.. image:: /static/general/icon_minimumneeds.*      Minimum Needs Tool
-.. image:: /static/general/icon_converter.*         Converter
-.. image:: /static/general/icon_batch.*             Batch Runner
-.. image:: /static/general/icon_save.*              Save Current Scenario
+.. image:: /static/general/icon_keywords_wiz.*      Keyword Creation Wizard
+.. image:: /static/general/icon_func_centric.*      Impact Function Centric Wizard
 .. image:: /static/general/icon_osm.*               OpenStreetMap downloader
-.. image:: /static/general/icon_merge.*             Impact Layer Merge
-=================================================   ========================
+.. image:: /static/general/icon_toggle_outline.*    Toggle Scenario Outline
+.. image:: /static/general/icon_set_area.*          Set Analysis Area
+=================================================   ===============================
 
 .. Note:: Later we will explore and use these tools. For more information on the 
   |project_name| toolbar see :doc:`../../user-docs/toolbar`.
