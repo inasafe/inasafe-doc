@@ -195,13 +195,12 @@ projection.
 .. image:: /static/training/beginner/qgis-inasafe/image65.*
    :align: center
 
-24. Click :guilabel:`OK` and after a minute, you should be presented with
-    the following:
+24. Click :guilabel:`OK` and after a minute, in above your map extent you should be presented with:
 
-.. image:: /static/training/beginner/qgis-inasafe/image66.*
+.. image:: /static/training/beginner/qgis-inasafe/image65a.*
    :align: center
 
-25. Click :guilabel:`OK`.
+25. Wait until the notification disappear.
 
 Now your new layer, :guilabel:`Indonesia_terproyeksi`, will be shown in the 
 layers panel. If you turn off 'on the fly' reprojection, this layer will still 
@@ -222,7 +221,7 @@ Let’s see how this works.
 
 28. Go to :menuselection:`Settings ‣ Custom CRS...` and you’ll see this dialog:
 
-.. image:: /static/training/beginner/qgis-inasafe/image67.*
+.. image:: /static/training/beginner/qgis-inasafe/image66.*
    :align: center
 
 We will create a projection known as Van der Grinten I.

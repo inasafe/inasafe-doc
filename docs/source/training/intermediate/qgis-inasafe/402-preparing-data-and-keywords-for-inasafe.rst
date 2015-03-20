@@ -178,7 +178,10 @@ In other words, we need a CRS that uses metres, not degrees.
     put the new shapefile.
     Name the file :kbd:`Bangunan_Sirahan` and click :guilabel:`Save`.
 
-14. Next to CRS, click :guilabel:`Browse`.
+14. Next to CRS, click :guilabel:`CRS icon`.
+
+.. image:: /static/training/intermediate/qgis-inasafe/image33a.*
+   :align: center
 
 15. In the filter box, type :kbd:`UTM zone 49S`, as shown below:
 
@@ -210,29 +213,24 @@ If you remember from Unit 2, this is done with the keywords editor.
 .. image:: /static/training/intermediate/qgis-inasafe/image36.*
    :align: center
 
-18. Adjust the settings so that the keyword editor looks similar to the
-    following:
-    Most likely you will only need to change the subcategory field to
-    :guilabel:`structure`.
+18. You will see a dialog box and select :guilabel:`exposure` and after that you
+    can follow the steps in the dialog box.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image37.*
    :align: center
 
-19. Now we will do something new by adding advanced keywords.
-    Click on the :guilabel:`Advanced` tab.
+19. Select unit information that you want to calculate in InaSAFE. For building
+    data you can choose :guilabel:`building type` to group the result of  impact
+    function.(You need to make sure there is building type attribute in your
+    exposure data) or if you have not building type attribute in your exposure
+    data you can select :guilabel:`building generic`.
 
-20. You can add keywords manually using the advanced editor.
-    Manually add a keyword so that the value of :guilabel:`datatype` 
-    is :kbd:`osm`.
-    It should look like this:
+20. You also need to select which attribute that has building type values.  In
+    this data please select :guilabel:`amenity` and in the last step you can
+    give title for your exposure data and click :guilabel:`Finish`
 
-.. image:: /static/training/intermediate/qgis-inasafe/image40.*
+.. image:: /static/training/intermediate/qgis-inasafe/image38.*
    :align: center
-
-21. Click :guilabel:`Add to list`.
-
-22. Click :guilabel:`OK`.
-    You should see the layer appropriately loaded in the |project_name| panel.
 
 5. Preparing a hazard layer
 ---------------------------
@@ -246,7 +244,7 @@ format.
 The data has already been prepared, so we simply need to add it as our hazard
 layer.
 
-23. Click :guilabel:`Add Vector Layer...` and add 
+21. Click :guilabel:`Add Vector Layer...` and add 
     :file:`area_terdampak_Sirahan.shp` in
     the :file:`qgis/Sirahan/` directory.
 
@@ -256,18 +254,12 @@ layer.
 You can see that this layer is already known to |project_name|,
 so presumably it has keywords already set.
 
-24. Select the layer and open the keywords editor.
-    Notice that the subcategory is set to :guilabel:`flood [wet/dry]`.
+22. Before define keyword of this data and because of the way that
+    |project_name| calculates this function, we need to make sure that this
+    exposure layer has a column in the attribute table that |project_name|
+    expects, named "AFFECTED". first we need to make sure about it.
 
-.. image:: /static/training/intermediate/qgis-inasafe/image42.*
-   :align: center
-
-25. Because of the way that |project_name| calculates this function,
-    we need to make sure that this exposure layer has a column in the attribute
-    table that |project_name| expects, named "AFFECTED".
-
-26. Click OK and then open the attribute table for the 
-    :guilabel:`area_terdampak_Sirahan` layer.
+23. Open the attribute table for the :guilabel:`area_terdampak_Sirahan` layer.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image43.*
    :align: center
@@ -279,42 +271,61 @@ layer to make sure that it is in fact a flood prone area.
 Hence, each feature must have an attribute named "AFFECTED".
 First, let’s add the new column to our layer.
 
-27. In the attribute table, click the :guilabel:`Toggle Editing` button.
+24. In the attribute table, click the :guilabel:`Toggle Editing` button.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image44.*
    :align: center
 
-28. Click the :guilabel:`New Column` button.
+25. Click the :guilabel:`New Column` button.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image45.*
    :align: center
 
-29. Type :kbd:`affected` as the name and select :guilabel:`Text(string)` for 
-    :guilabel:`Type`.
-    Give :kbd:`10` for the width.
+26. Type :kbd:`affected` as the name and select :guilabel:`Text(string)` for
+    :guilabel:`Type`. Give :kbd:`10` for the width.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image46.*
    :align: center
 
-30. Click :guilabel:`OK`.
+27. Click :guilabel:`OK`.
 
-31. Now select each value in the column “affected” and type “1”, instead of NULL.
+28. Now select each value in the column “affected” and type “1”, instead of NULL
 
 .. image:: /static/training/intermediate/qgis-inasafe/image47.*
    :align: center
 
-32. Click :guilabel:`Save Edits` and then :guilabel:`Toggle Editing` to stop the
+29. Click :guilabel:`Save Edits` and then :guilabel:`Toggle Editing` to stop the
     editing process.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image48.*
    :align: center
 
+30. Select the layer and open the :guilabel:`Keyword Creation Wizard` and select
+    :guilabel:`Hazard` and follow the steps in the dialog box
+
+.. image:: /static/training/intermediate/qgis-inasafe/image42.*
+   :align: center
+
+31. In this hazard data we select :guilabel:`flood` as hazard type because  we
+    assume that this was lava flood hazard.
+
+32. Select :guilabel:`wet/dry` as subcategory for flood and after that select
+    :guilabel:`wet/dry` attribute that represent flood extent as wet/dry.
+
+33. The last step you can give title for your hazard data and click
+    :guilabel:`Finish`
+
 6. Running |project_name|
 -------------------------
 
 Everything is prepared now - our layers are loaded, the keywords are set, and
-we’ve ensured that the layers have the data that |project_name| expects.
-Time to click :guilabel:`Run`!
+we’ve ensured that the layers have the data that |project_name| expects. Make
+sure the question form in InaSAFE looks like this
+
+.. image:: /static/training/intermediate/qgis-inasafe/image49a.*
+   :align: center
+
+and then click :guilabel:`Run`!
 
 .. image:: /static/training/intermediate/qgis-inasafe/image49.*
    :align: center

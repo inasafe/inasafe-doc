@@ -227,7 +227,7 @@ The next steps of our analysis will be easier if we save this selection as a
 separate layer.
 
 26. Right-click on the :guilabel:`vegetasi` layer and
-    click :guilabel:`Save Selection As...`
+    click :guilabel:`Save As...`
 
 .. image:: /static/training/beginner/qgis-inasafe/image219.*
    :align: center
@@ -237,16 +237,17 @@ separate layer.
 
 28. Save the layer under :file:`evakuasi_bencana/` as :kbd:`kebun_tegalan.shp`.
 
-29. Check the box labelled :guilabel:`Add saved file to map` in the
-    :guilabel:`Save vector layer as...` dialog.
+29. Check the box labelled :guilabel:`Save only selected features` and
+    :guilabel:`Add saved file to map` in the :guilabel:`Save vector layer as...`
+    dialog.
 
-.. image:: /static/training/beginner/qgis-inasafe/image220.*
-   :align: center
+.. image:: /static/training/beginner/qgis-inasafe/image220.*    
+  :align: center
 
-30. Click :guilabel:`OK`. QGIS will tell you that the export has been
-    completed.
+30. Click :guilabel:`OK`.
 
-31. Click :guilabel:`OK`.
+31. Rename the layers by right-clicking on new vegetasi layer and selecting
+    :guilabel:`Rename`. Rename with :kbd:`kebun_tegalan`.
 
 32. :guilabel:`Right-click` on the old vegetation layer and remove it.
     You should have these layers remaining:
@@ -262,7 +263,7 @@ Our roads layer has too many roads! We only want to use main roads for our
 analysis, so that we can meet the criteria that our location is within 300
 metres of a major road. Once again, we will use the Query Builder.
 
-33. Right-click on the :guilabel:`jalan` layer and click :guilabel:`Query...`
+33. Right-click on the :guilabel:`jalan` layer and click :guilabel:`Filter...`
 
 34. Build a query for the roads layer, like you did above for the vegetation layer
     You want only primary and secondary roads,
@@ -295,8 +296,7 @@ allows us to calculate distances from any vector object, and we will use this
 functionality to help us reach a solution.
 
 37. Make sure that only the :guilabel:`jalan` and :guilabel:`kebun_tegalan` 
-    layers are visible,
-    to simplify the map while you’re working.
+    layers are visible, to simplify the map while you’re working.
 
 .. image:: /static/training/beginner/qgis-inasafe/image223.*
    :align: center
@@ -324,9 +324,8 @@ functionality to help us reach a solution.
 43. Click :guilabel:`OK`. QGIS will create a buffer around the streets that
     extends 300 metres.
 
-44. When you are asked to add the new layer to the TOC, click :guilabel:`Yes`
-    (“TOC” stands for “Table of Contents”, by which it means the list of 
-    layers).
+44. When the process finish and buffer_jalan_300m.shp appear in the Layers, you
+    can click :guilabel:`Close` the Buffer dialog.
 
 .. image:: /static/training/beginner/qgis-inasafe/image226.*
    :align: center
@@ -412,14 +411,17 @@ Let’s save this selection as a new layer.
 
 54. Right-click on the :guilabel:`kebun_tegalan` layer in the Layers panel.
 
-55. Click :guilabel:`Save Selection As...`.
+55. Click :guilabel:`Save As...`.
 
-56. Name the new file :kbd:`kebun_tegalan_lokasi_terpilih.shp` and
-    check the box next to :guilabel:`Add saved file to map`.
+56. Name the new file :kbd:`kebun_tegalan_lokasi_terpilih.shp`. Then check
+    the box next to :guilabel:`Save only selected features` and :guilabel:`Add saved
+    file to map`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image235.*
    :align: center
 
+After the process finish, Rename the layers by right-clicking on new kebun_tegalan
+layer and selecting :guilabel:`Rename`. Rename with :kbd:`kebun_tegalan_lokasi_terpilih`.
 If we hide all the other layers, we can see the resulting layer:
 
 .. image:: /static/training/beginner/qgis-inasafe/image236.*
@@ -483,7 +485,7 @@ And QGIS has filled it in for us with square metres!
 65. Close the attribute table. Now we can just do a simple query.
 
 66. Right-click on the :guilabel:`kebun_tegalan_lokasi_terpilih` layer and
-    click :guilabel:`Query...`
+    click :guilabel:`Filter...`
 
 67. Enter the following:
 

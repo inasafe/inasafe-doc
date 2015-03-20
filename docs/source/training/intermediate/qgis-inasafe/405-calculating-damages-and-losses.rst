@@ -187,13 +187,14 @@ You must be connected to the internet to install this plugin.
 
 15. Go to :menuselection:`Plugins ‣ Manage and Install Plugins`.
 
-16. Go to the :guilabel:`Get more` tab. Type :kbd:`group stats`. When you find the 
+16. Go to the :guilabel:`All` tab. Type :kbd:`group stats`. When you find the 
     plugin, select it and click :guilabel:`Install`.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image95.*
    :align: center
 
-17. Once it is installed, you will find Group Stats on your Toolbar. Click it.
+17. Once it is installed, you will find Group Stats on :menuselection:`Vektor ‣
+    Group Stats ‣ Group Stats` or your Toolbar. Click it.
     
 .. image:: /static/training/intermediate/qgis-inasafe/image96.*
    :align: center
@@ -204,7 +205,7 @@ The Group Stats window will appear.
     :guilabel:`bangunan_terdampak_perdusun`
     in the drop-down box under :guilabel:`layers`.
 
-19. Find :guilabel:`Dusun` in the list of fields. Drag and drop it 
+19. Find :guilabel:`Nama_Dusun` in the list of fields. Drag and drop it 
     to :guilabel:`Rows`.
 
 20. Find :guilabel:`Damage` and :guilabel:`sum` in the list of fields. Drag and
@@ -260,7 +261,7 @@ Now let’s calculate losses per hamlet using the Group Stats again.
 
 30. Click :guilabel:`Clear` to start a new analysis.
 
-31. Find :guilabel:`Dusun` in the list of fields. Drag and drop it 
+31. Find :guilabel:`Nama_Dusun` in the list of fields. Drag and drop it 
     to :guilabel:`Rows`.
 
 32. Find :guilabel:`Losses` and :guilabel:`sum` in the list of fields. Drag and
@@ -307,8 +308,8 @@ table and then use them to add new columns to the file.
 39. Click the plus sign and fill in the following fields:
 
   - Join layer: BNG_Damages
-  - Join field: DUSUN
-  - Target field: DUSUN
+  - Join field: Nama_Dusun
+  - Target field: Nama_Dusun
 
 .. image:: /static/training/intermediate/qgis-inasafe/image104.*
    :align: center
@@ -318,8 +319,8 @@ table and then use them to add new columns to the file.
 41. Click the plus sign again and fill in the following fields:
 
   - Join layer : BNG_Losses
-  - Join field: DUSUN
-  - Target field : DUSUN
+  - Join field: Nama_Dusun
+  - Target field : Nama_Dusun
 
 42. Click :guilabel:`OK`.
 
@@ -345,7 +346,7 @@ table and then use them to add new columns to the file.
 
 46. This time, we will create a new field. 
     Enter as the new field name :kbd:`Damages`, with the output field type
-    as :guilabel:`Decimal number (real)`. 
+    as :guilabel:`Decimal number (real)`.
     Enter :kbd:`20` as the field width and the precision as :kbd:`10`. Under 
     the function list double-click :guilabel:`BNG_Damage`.
     The window should look like this:

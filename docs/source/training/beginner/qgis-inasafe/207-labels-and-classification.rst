@@ -69,6 +69,7 @@ this section. Before being able to access the Label tool, you will need to
 ensure that it has been activated.
 
 3. Go to the menu item :menuselection:`View ‣ Toolbars`.
+
 4. Ensure that the Label item has a checkmark next to it. If it doesn’t, click on
    the Label item, and it will be activated. The Label toolbar looks like this:
 
@@ -187,9 +188,15 @@ to be of notice.
     :guilabel:`Suppress labeling of features smaller than ...` to
     :kbd:`5.0 mm`. Observe the results after you click :guilabel:`Apply`.
 
+.. image:: /static/training/beginner/qgis-inasafe/image130a.*
+   :align: center
+
 24. Try out different settings on the :guilabel:`Placement` tab as well.
     As we mentioned before, the horizontal option is not a good idea for roads
     in this case, so let’s try the curved option instead!
+
+.. image:: /static/training/beginner/qgis-inasafe/image130b.*
+   :align: center
 
 25. Select :guilabel:`Curved` under :guilabel:`Placement`. Here’s the result:
 

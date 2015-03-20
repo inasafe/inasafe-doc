@@ -135,8 +135,7 @@ Hazard
 Hazard can be seen as a condition, phenomenon, or human activity that
 potentially cause victims, losses or destruction to social structure and
 environment.
-Events or phenomena that are seen as hazard potentials include disasters 
-such as earthquakes, tsunamis, floods, landslides and tornadoes.
+Events or phenomena that are seen as hazard potentials include earthquakes, tsunamis, floods, landslides and tornadoes.
 
 For |project_name|, hazard data refers to a singular disaster scenario, 
 such as a Mw 7.8 earthquake or volcanic eruption. Data for such infrequent 
@@ -168,7 +167,7 @@ The hazard must be accompanied by specific units:
 
 The input hazard layer must have:
 
-- a coordinates/location identifier
+- a coordinate/location identifier
 - specific hazard intensity (e.g. flood depth, earthquake’s MMI)
 - temporal information when the event occurred or is expected to occur
 
@@ -219,6 +218,7 @@ This can aid local governments in understanding the impact specific to their dis
 Impact Function
 ---------------
 
+An impact function is a software program that computes an impact assessment given a number of inputs. 
 |project_name| is capable of having multiple impact functions specific to the input data.
 Typically an impact function deals with the combination of one hazard
 layer and one exposure layer.
@@ -276,7 +276,7 @@ Available Impact Functions
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 | Flood             | Buildings      | be affected              | Number of buildings affected                                       |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
-| Tsunami           | People         | need evacuating          | Hazard Zone                                                        |
+| Tsunami           | People         | need evacuating          | Number of people affected and Number of people needing evacuation  |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 | Tsunami           | Buildings      | be affected              | Number of buildings affected                                       |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+

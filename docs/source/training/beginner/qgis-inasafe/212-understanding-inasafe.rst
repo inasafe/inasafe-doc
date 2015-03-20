@@ -77,7 +77,7 @@ interface.
 2. Open a new project in QGIS.
 
 3. If the |project_name| toolbar is not visible, right-click on the
-   toolbars and make sure that :guilabel:`Plugins` is checked.
+   toolbars and make sure that :guilabel:`InaSAFE` plugin is checked.
    The toolbar looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image278.*
@@ -200,14 +200,14 @@ Let’s take a look at the keywords that have already been created on the
 hazard layer.
 
 11. Select the earthquake layer in the Layers panel, and click on
-    the :guilabel:`InaSAFE Keyword Editor` button. 
+    the :guilabel:`InaSAFE Keywords Creation Wizard` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image286.*
    :align: center
 
-12. You can see that this layer has already been assigned some keyword 
-    information for |project_name|, including its title, a category 
-    and a subcategory.
+12. In the InaSAFE Keywords Creation Wizard window, we can follow the 
+    existing instructions step by step and change several keyword 
+    fields.
 
 .. image:: /static/training/beginner/qgis-inasafe/image287.*
    :align: center
@@ -266,7 +266,7 @@ and the layout can be changed using the Print Composer.
 
 Let’s add Bing aerial imagery as a background for our map.
 
-19. Go to :menuselection:`Plugins ‣ OpenLayers plugin ‣ Add Bing Aerial layer`.
+19. Go to :menuselection:`Web ‣ OpenLayers plugin ‣ Bing Maps ‣ Bing Aerial`.
 
 20. Drag the layer below your new impact layer.
     If the buildings don’t show correctly above the imagery,
@@ -289,8 +289,8 @@ The data displayed on the screen can be saved to a PDF file by clicking
     extent, or choose :guilabel:`Current extent` to print the analysis 
     based on the current view of the map.
 
-23. You may also choose a custom print template (basic or |project_name|).
-    For now, choose :guilabel:`basic`.
+23. You may also choose a custom print template 
+    :guilabel:`inasafe-potrait-a4`.
 
 .. image:: /static/training/beginner/qgis-inasafe/image293.*
    :align: center

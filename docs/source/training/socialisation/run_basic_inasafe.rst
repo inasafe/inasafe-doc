@@ -225,9 +225,9 @@ Buildings Affected
 .. image:: /static/training/socialisation/041_buildingfloodresults.png
    :align: center
 
-In this scenario approximately 1,434 buildings could be affected out of 31,515
+In this scenario approximately 2,914 buildings could be affected out of 13,353
 buildings. Your results may very depending on updates that have been made to the
-exposure data.
+exposure data and the analysis extent.
 
 .. note:: Due to the provincial BPBD work in OpenStreetMap all important buildings 
    in this area have been mapped (and then some!).
