@@ -7,9 +7,9 @@ Before we begin using QGIS and |project_name|, this module will explain
 |project_name| current functionality, the functionality that will be covered in
 this short course and the spatial datasets we will be using.
 
-The data used in this course is available for download on
-`data.inasafe.org  <http://data.inasafe.org/>`_. Ask your trainer which data you 
-will need to download for the course if they do not provide it to you directly.
+The data used in this course is available for download at
+`data.inasafe.org  <http://data.inasafe.org/>`_. Ask your trainer what data you 
+will need to download for the course, if they do not provide it for you directly.
 
 If you are working through the training independently, use the following data package: `data.inasafe.org -
 InaSAFEv2.0.zip <http://data.inasafe.org/TrainingDataPackages/InaSAFEv2.0.zip>`_.
@@ -53,7 +53,7 @@ Structures     Point             Structure type      type                text
 
 |project_name| is a dynamic tool that can easily be adapted to other types of
 hazard and exposure layers.
-The beauty of |project_name| being open source is that anyone who has a
+The beauty of |project_name| being open source, is that anyone who has a
 background in programming is able to make their own impact functions.
 
 Exposure Layers Used in Practical
@@ -110,15 +110,15 @@ Structures
 in piloting and training OpenStreetMap in Indonesia.
 Thus far over 1,300,000 buildings have been mapped.
 The scenarios we will look at within this workshop are situated in Jakarta,
-Merapi (Central Java and Yogyakarta), Sumatra (specifically Padang) and
-Maumere, Flores.
+Central Java and Yogyakarta (Merapi), Sumatra (Padang) and
+Flores (Maumere).
 Each one of these areas has a different OpenStreetMap data collection
 methodology.
 Below the data collection methodologies used in Jakarta and Padang are explained:
 
 :Jakarta: BPBD DKI Jakarta (Regional Disaster Managers) and |BNPB| (National
     Disaster Managers) with assistance from |GoA|, the World Bank,
-    UNOCHA, HOT and University of Indonesia held
+    UNOCHA, HOT and University of Indonesia, held
     workshops in each of Jakarta's six districts in order to help village heads
     map their community boundaries and major infrastructure.
     Over 500 representatives from Jakarta's 267 villages participated in these
@@ -135,7 +135,7 @@ Below the data collection methodologies used in Jakarta and Padang are explained
     first piloted in Padang, where contributors from around the world helped
     digitise over 95,000 buildings. However, the buildings are only footprints - 
     an on the ground mapping effort is needed to record attributes about each building. 
-    The tool is now being used across world to coordinate OSM mapping efforts. 
+    The tool is now being used across the world to coordinate OSM mapping efforts. 
     It is available at `tasks.hotosm.org <http://tasks.hotosm.org/>`_
 
 Hazard Layers used in Practical
@@ -209,7 +209,7 @@ Earthquake
 :Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Padang
 :About: A shakemap is a representation of ground shaking produced by an
-    earthquake. This particular scenario was modelled based on the 30
+    earthquake. This particular scenario was modelled based on the 30th
     September 2009 Mw 7.9 earthquake in Padang. ShakeMaps are generated
     automatically following moderate and large earthquakes by USGS. For more
     information go to http://earthquake.usgs.gov/earthquakes/map/. Pre-event / 
@@ -222,11 +222,11 @@ Tsunami
 .......
 
 :Name:  Maumere Tsunami
-:InaSAFE:  A tsunami in maumere (Mw 8.1)
+:InaSAFE:  A tsunami in Maumere (Mw 8.1)
 :Source: |AIFDR|, |GoA| and Badan Geologi
 :Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
 :Coverage: Maumere, Flores
-:About: In September 2011 the Indonesian government held a national exercise
+:About: In September 2011, the Indonesian government held a national exercise
     in Maumere, Flores. |AIFDR| and |GoA| assisted Badan Geology in developing a
     tsunami model for Maumere based on an Mw 8.1 earthquake. The Tsunami was
     modelled using open source software called ANUGA and elevation data

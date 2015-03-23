@@ -9,7 +9,7 @@ Getting Started
 
 In this section we introduce |QGIS| and set it up for this
 |project_name| practical. If you are already familiar with
-QGIS, feel free to skip below to QGIS setup and and plugin installation.
+QGIS, feel free to skip below to the QGIS setup and plugin installation.
 
 **Learning Objectives:**
 
@@ -26,7 +26,7 @@ Introduction to QGIS
 --------------------
 
 QGIS is a user-friendly open source Geographic Information System (GIS).
-It runs on Linux, OS X, Windows and Android and supports numerous
+It runs on Linux, OS X, Windows and Android, and supports numerous
 vector, raster, and database formats and functionality.
 `<http://www.qgis.org>`_
 
@@ -74,14 +74,14 @@ The elements identified in the figure below are:
 Set up QGIS
 -----------
 
-1. Open :guilabel:`QGIS Desktop (2.0.1)` - This should be located on
+1. Open :guilabel:`QGIS Desktop (2.8.1)` - This should be located on
 your desktop, or you can find it in your start menu.
 
 .. image:: /static/training/socialisation/012_qgis_desktop.*
    :align: center
 
 .. Note:: Your exact version number of QGIS may be different. This tutorial has
-   been designed with QGIS 2.0 or above.
+   been designed with QGIS 2.8.1 or above.
 
 2. A hint window will appear. Close the window by clicking :guilabel:`OK`.
 
@@ -130,7 +130,7 @@ Next change the project's projection settings and QGIS language settings:
 
 5. Open the settings window by clicking on :menuselection:`Settings --> Options`.
 
-6. Select the :guilabel:`CRS` tab of the options menu.
+6. Select the :guilabel:`CRS` tab from the options menu.
 
 .. image:: /static/training/socialisation/016_crs.*
    :align: center
