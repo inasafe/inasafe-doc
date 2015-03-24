@@ -47,8 +47,8 @@ Number of population which need evacuation
 The |project_name| panel has the first three drop-down menus
 filled in already:
 
-* a flood similar to the 2007 Jakarta event
-* people
+* A flood similar to the 2007 Jakarta event
+* People
 * Need evacuation
 
 .. image:: /static/training/socialisation/030_showpeople.*
@@ -56,8 +56,8 @@ filled in already:
 
 .. note:: The |project_name| panel may instead read as follows:
    
-   * a flood similar to the 2007 Jakarta event
-   * buildings
+   * A flood similar to the 2007 Jakarta event
+   * Buildings
    * Be flooded
    
    If so, click on buildings and change it to people. When you change this field,
@@ -110,9 +110,9 @@ Print Results
 .. image:: /static/training/socialisation/034_print.*
    :align: center
 
-.. note:: You can choose whether you want print the whole analysis or the current
-   map extent. You also can pick an existing print template or you can navigate to your own
-   QGIS template (.qpt). For more information about printing click
+.. note:: You can choose whether you want to print the whole analysis or just the current
+   map extent. You can also pick an existing print template or you can navigate to your own
+   QGIS template (.qpt). For more information about printing, click
    :guilabel:`Help` in the print window.
 
 6. A window will pop up as shown below. Ensure that :guilabel:`Analysis extent`
@@ -133,7 +133,7 @@ Two PDFs will be generated, which contain a map and a table of information about
 .. image:: /static/training/socialisation/035_People_in_need_of_evacuation_1m.*
    :align: center
 
-.. note:: In a future version of |project_name| the developers will make improvements
+.. note:: In future versions of |project_name|, the developers will make improvements
    to the layout of these PDF files. *If you have time during this course please
    provide us with your ideas on how the print map and table should look!*
 
@@ -194,8 +194,8 @@ in the |project_name| panel. How have they changed?
     some layers off. In the Layers panel there should now be five layers. Uncheck 
     everything except:
 
-    * a flood similar to the 2007 Jakarta event
-    * buildings
+    * A flood similar to the 2007 Jakarta event
+    * Buildings
 
 .. image:: /static/training/socialisation/039_buildingflood.*
    :align: center
@@ -226,10 +226,10 @@ Buildings Affected
    :align: center
 
 In this scenario approximately 2,914 buildings could be affected out of 13,353
-buildings. Your results may very depending on updates that have been made to the
+buildings. Your results may vary depending on updates that have been made to the
 exposure data and the analysis extent.
 
-.. note:: Due to the provincial BPBD work in OpenStreetMap all important buildings 
+.. note:: Due to the provincial BPBD work in OpenStreetMap, all important buildings 
    in this area have been mapped (and then some!).
 
    Important buildings are defined as:
@@ -284,7 +284,7 @@ You may try running this scenario again with a water threshold of 0.8 metres.
 
 23. Check that |project_name| has the following in the drop-down boxes:
 
-* a flood similar to the 2007 Jakarta event
+* A flood similar to the 2007 Jakarta event
 * Buildings
 * Be flooded
 
