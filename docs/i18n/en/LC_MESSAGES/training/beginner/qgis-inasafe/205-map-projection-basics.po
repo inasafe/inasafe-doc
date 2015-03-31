@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-22 12:28\n"
+"POT-Creation-Date: 2015-03-24 19:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -354,22 +354,20 @@ msgstr ""
 msgid "The :guilabel:`Save vector layer as...` dialog now looks like this:"
 msgstr ""
 
-# f28710f5fc8747649254924a4abe2dec
+# f709aeafc6b5466b953edb695490176d
 #: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:202
 msgid ""
-"Click :guilabel:`OK` and after a minute, you should be presented with the "
-"following:"
+"Click :guilabel:`OK` and after a minute, in above your map extent you should "
+"be presented with:"
 msgstr ""
 
-# 9c85c93f14da4100a0010376db344943
-# 4d4495036a3c403b9b821a514d575f02
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:208
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:242
-msgid "Click :guilabel:`OK`."
+# 22de74582cf34d08ab13db17abfeb759
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:207
+msgid "Wait until the notification disappear."
 msgstr ""
 
 # 3eeed53aebf342e0bf9afc1ee8509e76
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:210
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:209
 msgid ""
 "Now your new layer, :guilabel:`Indonesia_terproyeksi`, will be shown in the "
 "layers panel. If you turn off 'on the fly' reprojection, this layer will "
@@ -378,36 +376,36 @@ msgid ""
 msgstr ""
 
 # 30acf8b1a2c840658df910cf6d635659
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:216
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:215
 msgid "4. Creating a custom projection"
 msgstr ""
 
 # c9614c6a17ca4ab7898263574db4ae6c
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:218
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:217
 msgid ""
 "There are many more projections than just those included in QGIS by default. "
 "You can even create your own projections. Let’s see how this works."
 msgstr ""
 
 # 2b5dc1752e76495190444d49f6ed0488
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:222
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:221
 msgid "Start a new project."
 msgstr ""
 
 # 86f135fafcbf4b03b7423d70df08e147
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:224
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:223
 msgid ""
 "Load the vector layer :file:`oceans.shp` located in :file:`qgis/peta_dunia/`."
 msgstr ""
 
 # 9cfbf32288f442df861991546708caca
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:227
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:226
 msgid ""
 "Go to :menuselection:`Settings ‣ Custom CRS...` and you’ll see this dialog:"
 msgstr ""
 
 # 84856fd8d3dd422e9bef7f04120ffc8f
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:232
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:231
 msgid ""
 "We will create a projection known as Van der Grinten I. This interesting "
 "projection represents the earth on a circular field instead of a rectangular "
@@ -415,54 +413,60 @@ msgid ""
 msgstr ""
 
 # 705fae6eb3324dd692c523ae5f64c684
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:236
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:235
 msgid "Enter :kbd:`Van der Grinten I` in the :guilabel:`Name` field."
 msgstr ""
 
 # 0b3420e53b3e4420ae26c3d7ca2f3c01
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:238
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:237
 msgid "In the Parameters field, enter the following string:"
 msgstr ""
 
 # 4018dbcd81ad4f89a7ca895f71c86192
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:240
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:239
 msgid ""
 ":kbd:`+proj=vandg +lon_0=0 +x_0=0 +y_0=0 +R_A +a=6371000 +b=6371000 +units=m "
 "+no_defs`"
 msgstr ""
 
+# 9c85c93f14da4100a0010376db344943
+# 4d4495036a3c403b9b821a514d575f02
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:241
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
 # 215cfacb7abb4a24b2bec0f1ac53e1f8
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:244
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:243
 msgid "Go to :menuselection:`Project ‣ Project Properties`."
 msgstr ""
 
 # 72120ddc9ee449fdb7bd007b39b9adeb
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:246
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:245
 msgid "Enable 'on the fly' reprojection."
 msgstr ""
 
 # 0fd02bfcada14024833ef595058225a7
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:251
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:250
 msgid ""
 "Search for your newly defined projection by typing it into the :guilabel:"
 "`Filter` box:"
 msgstr ""
 
 # 0f3666c561f446eea61bcbdf137abfbd
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:257
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:256
 msgid ""
 "You should see it appear in the box at the bottom. Select it, and click :"
 "guilabel:`OK`."
 msgstr ""
 
 # f6274110e7304e038d074f17f6bb86b3
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:260
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:259
 msgid ""
 "Once you’ve applied the new projection, the map will be reprojected like "
 "this:"
 msgstr ""
 
 # 260b93a7055c46ecaf7a13a9dac167df
-#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:266
+#: ../../source/training/beginner/qgis-inasafe/205-map-projection-basics.rst:265
 msgid ":ref:`Go to next module --> <working-with-vector-data>`"
 msgstr ""
