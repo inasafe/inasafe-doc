@@ -144,10 +144,10 @@ overlapping the points.
 .. image:: /static/training/beginner/qgis-inasafe/image127.*
    :align: center
 
-Labeling lines
+Labelling lines
 ..............
 
-Now that you know how labeling works, there’s an additional problem. Points and
+Now that you know how labelling works, there’s an additional problem. Points and
 polygons are easy to label, but what about lines? If you label them the same 
 way as the points, they will look funny. Street name labels, for example, 
 should be parallel to the street lines, not hovering horizontally above them. 
@@ -312,7 +312,7 @@ vegetation.
 In the previous example, we classified the :guilabel:`vegetasi` layer by what 
 is known as nominal classification. This type of classification is when 
 categories are defined based on names. Next we will classify the 
-:guilabel:`pemukiman` layer based on the size of each feature. Classifiying 
+:guilabel:`pemukiman` layer based on the size of each feature. Classifying 
 with attributes that contain only positive numbers, such as land area, is 
 known as ratio classification.
 

@@ -38,6 +38,6 @@ On this page you will also find contact information for the QGIS Indonesia
 forum, if you need assistance at any time regarding the use of QGIS or
 |project_name|.
 
-Please stop by anytime!
+Please stop by any time!
 
 

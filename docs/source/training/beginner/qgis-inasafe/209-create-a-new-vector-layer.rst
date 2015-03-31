@@ -333,7 +333,7 @@ We will be using a map provided in the tutorial files, which looks like this:
    :align: center
 
 In order to georeference this image, we need to associate points on the
-image to known points on the Earth.
+image, to known points on the Earth.
 Such points are called ground control points (GCPs).
 Luckily, this map image has latitude and longitude coordinates written on it
 at every corner.
@@ -422,12 +422,12 @@ Lastly we will adjust the settings and then create our output file.
 56. The output file will be created and automatically added to 
     your project.
     If you hover over the image, you should see coordinates at the bottom of
-    QGIS which are close the the coordinates you entered when placing the GCPs.
+    QGIS, which are close to the coordinates you entered when placing the GCPs.
 
 .. image:: /static/training/beginner/qgis-inasafe/image204.*
    :align: center
 
-Another way to see that the image is correctly placed is by adding a layer
+Another way to see that the image is correctly placed, is by adding a layer
 with the OpenLayers plugin.
 Here we have added Bing satellite imagery, and made our new geotiff
 transparent to see Merapi in the background.

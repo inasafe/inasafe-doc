@@ -55,7 +55,7 @@ Some plugins are already downloaded and available.
 .. image:: /static/training/beginner/qgis-inasafe/image45.*
    :align: center
 
-Note that plugins which have already been downloaded can be activated or
+Note that plugins, which have already been downloaded can be activated or
 deactivated from the :guilabel:`Installed` tab. If it has not yet
 been downloaded, downloading a plugin from the
 :guilabel:`Not installed` tab will automatically activate it.

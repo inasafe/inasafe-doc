@@ -165,7 +165,7 @@ the |project_name| panel.
 This is because the data file has already been prepared for us with keyword
 metadata (fancy words for settings) that tells |project_name| whether it’s a
 hazard or exposure layer.
-When we add the exposure data, we will learn how to do add these |project_name|
+When we add the exposure data, we will learn how to add these |project_name|
 keywords ourselves.
 
 4. Exposure
@@ -195,17 +195,17 @@ obtained from OpenStreetMap.
 
 In order for |project_name| to know that our layers are hazard or exposure
 datasets, we need to assign keywords to the layers using the |project_name|
-keyword tool.
+Wizard tool.
 Let’s take a look at the keywords that have already been created on the
 hazard layer.
 
 11. Select the earthquake layer in the Layers panel, and click on
-    the :guilabel:`InaSAFE Keywords Creation Wizard` button.
+    the :guilabel:`InaSAFE Wizard` button.
 
 .. image:: /static/training/beginner/qgis-inasafe/image286.*
    :align: center
 
-12. In the InaSAFE Keywords Creation Wizard window, we can follow the 
+12. In the InaSAFE Wizard window, we can follow the 
     existing instructions step by step and change several keyword 
     fields.
 
@@ -214,7 +214,7 @@ hazard layer.
 
 13. Click :guilabel:`OK`.
 
-14. Select the :guilabel:`Bangunan_Bandung` layer and open the keyword editor.
+14. Select the :guilabel:`Bangunan_Bandung` layer and open the Wizard.
 
 .. image:: /static/training/beginner/qgis-inasafe/image288.*
    :align: center
@@ -284,7 +284,7 @@ The data displayed on the screen can be saved to a PDF file by clicking
 
 21. Click on the |project_name| result layer and then click :guilabel:`Print`.
 
-22. A window will appear in which you can choose the extent to be printed.
+22. A window will appear, in which you can choose the extent to be printed.
     Choose :guilabel:`Analysis extent` if you want to print the entire map 
     extent, or choose :guilabel:`Current extent` to print the analysis 
     based on the current view of the map.

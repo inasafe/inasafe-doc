@@ -30,9 +30,9 @@ point A and point B that will allow them to cover the distance in the least
 amount of time.
 
 Similarly, **shortest path** indicates the route that will allow a person to
-get from point A to point B with the least distance traveled.
+get from point A to point B with the least distance travelled.
 In theory, this would be a straight line between point A and point B,
-but in reality this is impractical, because traveling in a straight lines
+but in reality this is impractical, because travelling in a straight line
 means climbing hills and going around buildings and fences. Of course this
 is why we use roads, and why we calculate fastest and shortest routes using
 roads.

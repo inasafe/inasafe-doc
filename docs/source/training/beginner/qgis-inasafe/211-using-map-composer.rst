@@ -222,7 +222,7 @@ Now let’s create a grid for our map.
 .. note:: We used coordinate reference systems with UTM (metre) on the project
    QGIS and all map layers.
 
-18. Scroll down item properties dialog and Check the box next to :guilabel:`Draw
+18. Scroll down item properties dialog and check the box next to :guilabel:`Draw
     Coordinates` and enter the following values:
 
 .. image:: /static/training/beginner/qgis-inasafe/image267.*
@@ -276,7 +276,7 @@ The new layer will load.
 23. Draw a small box on the right side of your map layout.
 
 24. The current view of your QGIS project will appear in the new map element
-    (but notice that the old map element doesn’t change!) Add a frame
+    (but notice that the old map element doesn’t change!). Add a frame
     for the inset, so that it looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image271.*
@@ -317,9 +317,9 @@ symbology represents.
 Tips
 ....
 
-For save your map composer that you created, you can click on the
+To save your map composer that you created, you can click on the
 :menuselection:`Composer ‣ Save Project`. So if you open the project QGIS and
-you want use map composer that you saved, click on :menuselection:`Project ‣
+want to use the map composer that you saved, click on :menuselection:`Project ‣
 Print Composer ‣ My Layout 1`
 
 8. Printing the map

@@ -82,6 +82,7 @@ your desktop, or you can find it in your start menu.
 
 .. Note:: Your exact version number of QGIS may be different. This tutorial has
    been designed with QGIS 2.8.1 or above.
+   If you don't find QGIS 2.8.1 icon, you can go to :file:`Progam Files -> QGIS Wien`.
 
 2. A hint window will appear. Close the window by clicking :guilabel:`OK`.
 
@@ -186,6 +187,10 @@ OpenLayers, using the QGIS plugin repository.
 13. Select |project_name| and click :guilabel:`Install plugin` - it
     may take a couple of minutes for the plugin to download and install.
 
+.. note::
+   If your internet using a proxy, you need to setting the proxy from 
+   :menuselection:`Settings --> Options --> Network`
+
 14. A window should pop up saying: "Plugin installed successfully"
     Click :guilabel:`Ok` and click :guilabel:`Close` to exit the *QGIS Plugin Manager*
     window.
@@ -237,7 +242,7 @@ OpenLayers Plugin
     Click :guilabel:`Ok` and click :guilabel:`Close` to exit the *QGIS Plugin Manager*
     window.
 
-21. Go to :menuselection:`Plugins --> OpenLayers plugin`
+21. Go to :menuselection:`Web --> OpenLayers plugin`
 
 .. image:: /static/training/socialisation/023_openlayers.*
    :align: center
