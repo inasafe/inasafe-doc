@@ -109,7 +109,7 @@ Therefore we want to calculate:
 
 in order to get a calculation of the value of total losses.
 
-We will use the Intersect Geoprocessing tool so that we can combine
+We will use the Intersect Geoprocessing tool, so that we can combine
 attributes from our district layer with the selection of buildings we have
 just made.
 

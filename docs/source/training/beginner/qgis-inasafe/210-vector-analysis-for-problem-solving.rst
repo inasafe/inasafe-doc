@@ -115,7 +115,7 @@ Now that we’ve got the data, let’s analyse the problem!
 5. Analysing the problem: farms and dry fields
 ----------------------------------------------
 
-The first criterion we’re facing is that the land must be a farm or dry field,
+The first criteria we’re facing is that the land must be a farm or dry field,
 and it must be in one of three areas. So let’s tell QGIS to only show us the
 farms and dry fields that are, in fact, in these sub-districts!
 
@@ -136,7 +136,7 @@ farms and dry fields that are, in fact, in these sub-districts!
 
 Next we are going to build a query. A query is a statement that allows us to 
 show only the data that we want from a layer. In this case, we want to instruct 
-QGIS to only show us farms and dry fields which have a sub-district value equal to
+QGIS to only show us farms and dry fields, that have a sub-district value equal to
 Ngemplak, Turi, or Pakem.
 
 11. Double-click :guilabel:`kec` in the Fields list.
@@ -353,7 +353,7 @@ functionality to help us reach a solution.
    :align: center
 
 .. note:: Remember that the buffer distance is in metres. Keep this in mind
-   when you want to create a 2,5 km buffer!
+   when you want to create a 2.5 km buffer!
 
 11. Overlapping areas
 ---------------------
@@ -420,7 +420,7 @@ Let’s save this selection as a new layer.
 .. image:: /static/training/beginner/qgis-inasafe/image235.*
    :align: center
 
-After the process finish, Rename the layers by right-clicking on new kebun_tegalan
+After the process is finish, rename the layers by right-clicking the new kebun_tegalan
 layer and selecting :guilabel:`Rename`. Rename with :kbd:`kebun_tegalan_lokasi_terpilih`.
 If we hide all the other layers, we can see the resulting layer:
 

@@ -71,7 +71,7 @@ and some roads, but we can’t see all of the data contained in those layers.
 
 You will see a table with more data about the streets layer.
 This extra data is called **attribute data**.
-The lines that you can see on your map which represent the location of the 
+The lines that you can see on your map, which represent the location of the 
 streets is called **spatial data**.
 Remember in JOSM there was the same division.
 The points, lines and shapes we draw tell us **where**, but the tags,
@@ -192,7 +192,7 @@ One of the basic strengths of GIS is that you have a dynamic visual
 representation of the data you are working with.
 Therefore, the visual appearance of the map (which depends on the symbology
 of the individual layers) is very important.
-The end user of the maps you produce will need to be able to easily see what
+The end user of the maps you produce, will need to be able to easily see what
 the map represents.
 Equally as important, you need to be able to explore the data as you’re
 working with it, and good symbology helps a lot.
@@ -230,10 +230,10 @@ Let’s begin by changing the colour of the :guilabel:`pemukiman` layer.
 .. image:: /static/training/beginner/qgis-inasafe/image81.*
    :align: center
 
-21. If you success to change the colour of :guilabel:`pemukiman`layer then you
-    can try to   change colour of :guilabel:`vegetasi` layer and
-    :guilabel:`tubuh_air` layer too.   You can use green colour for
-    :guilabel:`vegetasi` layer and blue colour for :guilabel:`tubuh_air` layer
+21. If you succeed at changing the colour of the :guilabel:`pemukiman`layer then you
+    can try to change the colour of the :guilabel:`vegetasi` layer and
+    the :guilabel:`tubuh_air` layer too. You can use a green colour for
+    the :guilabel:`vegetasi` layer and a blue colour for the :guilabel:`tubuh_air` layer.
 
 22. Click :guilabel:`OK` again in the Layer Properties window, and you will see
     the colour change being applied to the layer.
@@ -248,7 +248,7 @@ There’s more to a layer’s symbology than just its
 colour.
 Next we want to change the colour of the vegetation,
 but we also want to eliminate the lines between the different types of
-vegetation so as to make the map less visually cluttered.
+vegetation, so as to make the map less visually cluttered.
 
 23. Open the :guilabel:`Layer Properties` window for the :guilabel:`vegetasi`
     layer. Under the :guilabel:`Style` tab, you will see the same kind of 
@@ -552,7 +552,7 @@ was before.
 ^^^^^^^^^^^^^^^^^^^^^
 
 61. Now let’s change the symbol layer type for the :guilabel:`pemukiman` layer.
-    Take a look at the drop-down menu as you’ve done for the point and line
+    Take a look at the drop-down menu as you have done for the point and line
     layers, and see what the various options can do.
 
 .. image:: /static/training/beginner/qgis-inasafe/image113.*

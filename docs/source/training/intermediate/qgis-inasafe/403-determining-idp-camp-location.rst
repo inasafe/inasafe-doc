@@ -34,7 +34,7 @@ As with any proper GIS enquiry, we will follow these steps:
 When we performed our first analysis, we utilised several spatial functions in
 order to answer questions such as “what locations match conditions in layer A
 and different conditions in layer B?”.
-Before we begin our GIS analysis, let’s examine the some of the spatial
+Before we begin our GIS analysis, let’s examine some of the spatial
 functions that are available to us.
 
 Buffer
@@ -139,7 +139,7 @@ Because this function is the opposite of Intersect, it would return FALSE if run
 on the example above.
 
 Implementation of these functions is important in supporting analysis for
-scenario development, specifically to obtain answers of questions such
+scenario development, specifically to obtain answers to questions such
 as:
 
 - Which schools are safe from an earthquake?

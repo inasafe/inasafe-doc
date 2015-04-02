@@ -8,13 +8,13 @@ Introduction
 Disclaimer
 ----------
 
-This document is initial draft and still in reviewing phase by these parties:
+This document is an initial draft and is still in the reviewing phase by these parties:
 
 • Badan Nasional Penanggulangan Bencana (|BNPB|)
 • Australia-Indonesia Facility for Disaster Reduction (|AIFDR|-|GoA|)
 • Humanitarian OpenStreetMap Team (|HOT|)
 
-All contents and materials on this document may be changed without public
+All contents and materials in this document may be changed without public
 notice.
 
 Licence
@@ -95,7 +95,7 @@ Universitas Gadjah Mada
 Universitas Gadjah Mada (internationally known as Gadjah Mada University, or
 UGM) is a top research university
 located in Yogyakarta, Indonesia. The Department of Geodetic Engineering and 
-Faculty of Engineering focuses on education, research, and commmunity services 
+Faculty of Engineering focuses on education, research, and community services 
 related to geodesy and geomatics engineering, including acquisition, analysis, 
 and uses of detailed and accurate geospatial data and large-scale maps using 
 open source geospatial software for disaster management.

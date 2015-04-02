@@ -297,5 +297,17 @@ You may try running this scenario again with a water threshold of 0.8 metres.
 
 27. Click :guilabel:`Print` and save PDFs the same way as before.
 
+(Optional) Save your work
+.........................
+
+28. Click :menuselection:`Project --> Save` to save your current project
+
+Because the InaSAFE output by default saved in temporary folder, you need to
+manually save your InaSAFE output as new layer in same directiory as your project.
+
+29. Right click on :guilabel:`Population which need evacuation` and click :guilabel:`Save As...`
+
+30. A new window will appear. Click :guilabel:`Browse...` and name your new layer with
+    :kbd:`Population which need evacuation`. Click :guilabel:`Save` and then click :guilabel:`OK`
 
 :ref:`Go to next module --> <inasafe-in-more-detail>`

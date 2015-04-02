@@ -71,7 +71,7 @@ finished processing.
 the 'Impact Functions Doc' menu (see below).
 The impact calculation will only be possible when users provide the hazard
 and exposure layer datasets and, when necessary, users define the required
-parameters through the keyword editor correctly.
+parameters through the keyword Wizard correctly.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image27.*
    :align: center
@@ -107,7 +107,7 @@ from OSM.
   :align: center
 
 2. If you are a new user, create an account.
-   If you already have an account already, sign in.
+   If you have an account already, sign in.
 
 The HOT Export website allows you to choose an area and create a data extract
 from that area.
@@ -126,7 +126,7 @@ by QGIS.
 .. image:: /static/training/intermediate/qgis-inasafe/image29.*
    :align: center
 
-The page should look somethings like this:
+The page should look something like this:
 
 .. image:: /static/training/intermediate/qgis-inasafe/image30.*
    :align: center
@@ -205,10 +205,10 @@ enable 'on the fly' transformation.
 
 Since we’ll be using this buildings layer as our exposure, we need to set the
 keywords so that |project_name| knows what the layer contains.
-If you remember from Unit 2, this is done with the keywords editor.
+If you remember from Unit 2, this is done with the keywords Wizard.
 
 17. Select the :guilabel:`Bangunan_Sirahan` layer and click the
-    :guilabel:`Keyword Editor` button on the |project_name| toolbar.
+    :guilabel:`Wizard` button on the |project_name| toolbar.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image36.*
    :align: center
@@ -220,14 +220,14 @@ If you remember from Unit 2, this is done with the keywords editor.
    :align: center
 
 19. Select unit information that you want to calculate in InaSAFE. For building
-    data you can choose :guilabel:`building type` to group the result of  impact
-    function.(You need to make sure there is building type attribute in your
-    exposure data) or if you have not building type attribute in your exposure
-    data you can select :guilabel:`building generic`.
+    data you can choose :guilabel:`building type` to group the result of the impact
+    function. You need to make sure there is the building type attribute in your
+    exposure data. Or if you do not have the building type attribute in your exposure
+    data, you can select :guilabel:`building generic`.
 
-20. You also need to select which attribute that has building type values.  In
+20. You also need to select which attribute has building type values.  In
     this data please select :guilabel:`amenity` and in the last step you can
-    give title for your exposure data and click :guilabel:`Finish`
+    give a title for your exposure data and click :guilabel:`Finish`
 
 .. image:: /static/training/intermediate/qgis-inasafe/image38.*
    :align: center
@@ -254,10 +254,10 @@ layer.
 You can see that this layer is already known to |project_name|,
 so presumably it has keywords already set.
 
-22. Before define keyword of this data and because of the way that
+22. Before we define the keywords of this data and because of the way that
     |project_name| calculates this function, we need to make sure that this
     exposure layer has a column in the attribute table that |project_name|
-    expects, named "AFFECTED". first we need to make sure about it.
+    expects, named "AFFECTED".
 
 23. Open the attribute table for the :guilabel:`area_terdampak_Sirahan` layer.
 
@@ -300,19 +300,19 @@ First, let’s add the new column to our layer.
 .. image:: /static/training/intermediate/qgis-inasafe/image48.*
    :align: center
 
-30. Select the layer and open the :guilabel:`Keyword Creation Wizard` and select
+30. Select the layer and open the :guilabel:`Keyword Wizard` and select
     :guilabel:`Hazard` and follow the steps in the dialog box
 
 .. image:: /static/training/intermediate/qgis-inasafe/image42.*
    :align: center
 
-31. In this hazard data we select :guilabel:`flood` as hazard type because  we
-    assume that this was lava flood hazard.
+31. In this hazard data we select :guilabel:`flood` as the hazard type because we
+    assume that this is a flood hazard.
 
-32. Select :guilabel:`wet/dry` as subcategory for flood and after that select
-    :guilabel:`wet/dry` attribute that represent flood extent as wet/dry.
+32. Select :guilabel:`wet/dry` as the subcategory for flood, and after that select the
+    :guilabel:`wet/dry` attribute that represents the flood extent as wet/dry.
 
-33. The last step you can give title for your hazard data and click
+33. As the last step, you can give a title for your hazard data and click
     :guilabel:`Finish`
 
 6. Running |project_name|
