@@ -145,7 +145,7 @@ overlapping the points.
    :align: center
 
 Labelling lines
-..............
+...............
 
 Now that you know how labelling works, there’s an additional problem. Points and
 polygons are easy to label, but what about lines? If you label them the same 
