@@ -14,14 +14,15 @@
 # Ranie Dwi Anugrah <raniedwianugrah@gmail.com>, 2013
 # Ranie Dwi Anugrah <raniedwianugrah@gmail.com>, 2014
 # Werner Macho <werner.macho@gmail.com>, 2014
+# Wulansari Khairunisa <wulan.khairunisa@gmail.com>, 2015
 # Yantisa Akhadi <yantisa@gmail.com>, 2014
 # Yantisa Akhadi <yantisa@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-24 20:01+0100\n"
-"PO-Revision-Date: 2015-03-24 18:26+0000\n"
+"POT-Creation-Date: 2015-04-02 19:18+0200\n"
+"PO-Revision-Date: 2015-04-02 17:15+0000\n"
 "Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
 "develop/language/id/)\n"
@@ -238,6 +239,9 @@ msgid ""
 "and make sure that :guilabel:`InaSAFE` plugin is checked. The toolbar looks "
 "like this:"
 msgstr ""
+"Jika toolbar |project_name| tidak terlihat, klik kanan pada toolbar dan "
+"pastikan :guilabel:`InaSAFE` telah tercentang. Tampilan toolbar akan "
+"terlihat seperti ini:"
 
 # 7dda9f318efb49749db24fbd891e77c5
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:90
@@ -384,22 +388,16 @@ msgstr ""
 "(silahkan merujuk ke :ref:`Modul 8 <changing-raster-symbology>`, apabila "
 "Anda lupa bagaimana melakukannya!):"
 
-# 898cac95e98c436dac1e4f4a88b66097
+# e6b5d0b9ea9c4a77b77f6dde6c6206ea
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:167
 msgid ""
 "You will notice that the hazard drop-down box has been automatically filled "
 "in the |project_name| panel. This is because the data file has already been "
 "prepared for us with keyword metadata (fancy words for settings) that tells |"
 "project_name| whether it’s a hazard or exposure layer. When we add the "
-"exposure data, we will learn how to do add these |project_name| keywords "
+"exposure data, we will learn how to add these |project_name| keywords "
 "ourselves."
 msgstr ""
-"Anda akan melihat bahwa kotak daftar isian ancaman telah otomatis terisi di "
-"panel |project_name|. Hal ini karena file data sudah disiapkan dengan "
-"metadata kata kunci (kata lain untuk pengaturan) yang memberitahu |"
-"project_name| apakah itu layer ancaman atau layer keterpaparan. Ketika kita "
-"menambahkan data keterpaparan, kita akan belajar bagaimana kita bisa "
-"memberikan informasi ke |project_name|."
 
 # 4f66f30356794a88aff2581c2845972f
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:176
@@ -449,31 +447,27 @@ msgstr ""
 msgid "5. Adding keyword metadata"
 msgstr "5. Menambahkan kata kunci di Metadata"
 
-# b16d6518deb04623ae80fed6b75d9960
+# 34ed56b672ea4c78a6e05105cda15f56
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:200
 msgid ""
 "In order for |project_name| to know that our layers are hazard or exposure "
 "datasets, we need to assign keywords to the layers using the |project_name| "
-"keyword tool. Let’s take a look at the keywords that have already been "
+"Wizard tool. Let’s take a look at the keywords that have already been "
 "created on the hazard layer."
 msgstr ""
-"Untuk mengatur agar |project_name| mengetahui layer kita merupakan data "
-"bencana atau paparan, kita harus menambahkan kata kunci di dalam layer "
-"tersebut menggunakan |project_name| *keyword tool*. Mari kita lihat kata "
-"kunci yang telah kita buat pada layer bencana."
 
-# 21400f405adf4c938845c3b285eb65e7
+# 2afada70a2c34e6ebeabb9309a930972
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:206
 msgid ""
 "Select the earthquake layer in the Layers panel, and click on the :guilabel:"
-"`InaSAFE Keywords Creation Wizard` button."
+"`InaSAFE Wizard` button."
 msgstr ""
 
-# 522024bf02e749c2845109d3a447d799
+# 1cdff6bf5aa1498ea46f2c02f9a72175
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:212
 msgid ""
-"In the InaSAFE Keywords Creation Wizard window, we can follow the existing "
-"instructions step by step and change several keyword fields."
+"In the InaSAFE Wizard window, we can follow the existing instructions step "
+"by step and change several keyword fields."
 msgstr ""
 
 # 24bc79d569fd44d296e7be6b3ba50611
@@ -481,11 +475,10 @@ msgstr ""
 msgid "Click :guilabel:`OK`."
 msgstr "Klik :guilabel:`OK`."
 
-# f00369d5120e43fe8458edb5d302e06a
+# f698c60965bf46bd984c14a40dcad3b2
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:221
-msgid ""
-"Select the :guilabel:`Bangunan_Bandung` layer and open the keyword editor."
-msgstr "Pilih layer :guilabel:`Bangunan_Bandung` dan buka editor kata kunci."
+msgid "Select the :guilabel:`Bangunan_Bandung` layer and open the Wizard."
+msgstr ""
 
 # a7eb3c876ed949228128232264c8bb8b
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:226
@@ -590,6 +583,7 @@ msgstr ""
 msgid ""
 "Go to :menuselection:`Web ‣ OpenLayers plugin ‣ Bing Maps ‣ Bing Aerial`."
 msgstr ""
+"Pergi ke :menuselection:`Web ‣ OpenLayers plugin ‣ Bing Maps ‣ Bing Aerial`."
 
 # fd907b51a5884a6ea1f7410be85b5aa2
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:275
@@ -624,25 +618,22 @@ msgstr ""
 "Klik pada layer hail analisis |project_name| dan kemudian klik :guilabel:"
 "`Cetak`."
 
-# 9d641203924742488df4531ecb934e7f
+# 8a2dc223fd794db592711e1d61647539
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:291
 msgid ""
-"A window will appear in which you can choose the extent to be printed. "
+"A window will appear, in which you can choose the extent to be printed. "
 "Choose :guilabel:`Analysis extent` if you want to print the entire map "
 "extent, or choose :guilabel:`Current extent` to print the analysis based on "
 "the current view of the map."
 msgstr ""
-"Sebuah jendela akan muncul dimana Anda dapat memilih cakupan wilayah yang "
-"akan dicetak. Pilih  :guilabel:`Analysis extent` jika Anda ingin mencetak "
-"keseluruhan data yang dianalisis, atau pilih :guilabel:`Current extent` "
-"untuk mencetak berdasarkan hasil data yang tampak pada tampilan peta yang "
-"ada pada kanvas QGIS."
 
 # 7f6aa6d150bf4b51a969006ce6950538
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:296
 msgid ""
 "You may also choose a custom print template :guilabel:`inasafe-potrait-a4`."
 msgstr ""
+"Anda juga dapat memilih template pencetakan yang ada: :guilabel:`inasafe-"
+"potrait-a4`."
 
 # 9e5f278bdbf24e9181c00138d19496eb
 #: ../../source/training/beginner/qgis-inasafe/212-understanding-inasafe.rst:302

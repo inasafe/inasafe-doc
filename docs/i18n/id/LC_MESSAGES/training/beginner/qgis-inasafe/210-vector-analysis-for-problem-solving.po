@@ -6,7 +6,7 @@
 # adityo dwijananto <adz.only@gmail.com>, 2014
 # Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2013
 # Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2014
-# Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2014
+# Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2014-2015
 # elida nurrohmah <uswatunkh21@yahoo.com>, 2014
 # Emir Hartato <emir.hartato@gmail.com>, 2014
 # Werner Macho <werner.macho@gmail.com>, 2014
@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inasafe-develop\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-24 20:01+0100\n"
-"PO-Revision-Date: 2015-03-24 18:26+0000\n"
+"POT-Creation-Date: 2015-04-02 19:18+0200\n"
+"PO-Revision-Date: 2015-04-02 17:15+0000\n"
 "Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
 "Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
 "develop/language/id/)\n"
@@ -353,17 +353,13 @@ msgstr ""
 msgid "5. Analysing the problem: farms and dry fields"
 msgstr "5. Analisis masalah: kebun dan tegalan"
 
-# c987a6d8792a495bace30856ca5744f2
+# 38c3d52970424de882f311ea37775750
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:122
 msgid ""
-"The first criterion we’re facing is that the land must be a farm or dry "
+"The first criteria we’re facing is that the land must be a farm or dry "
 "field, and it must be in one of three areas. So let’s tell QGIS to only show "
 "us the farms and dry fields that are, in fact, in these sub-districts!"
 msgstr ""
-"Kriteria pertama yang kita hadapi adalah bahwa lahan tersebut haruslah "
-"berupa kebun atau tegalan, dan harus berada di salah satu dari tiga "
-"kecamatan. Jadi mari kita tunjukkan di QGIS, kebun dan tegalan di dalam "
-"Kecamatan tersebut!"
 
 # 290f96bc924d40e99990338b6002cc15
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:126
@@ -390,19 +386,14 @@ msgstr ""
 msgid "Click the :guilabel:`All` button underneath the Values list:"
 msgstr "Klik tombol :guilabel:`All` dibawah daftar Values: "
 
-# ee72e64c8d4e489ebb73b62c84fe7348
+# 70cc31ceee1940e4bf86e60cab761c24
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:141
 msgid ""
 "Next we are going to build a query. A query is a statement that allows us to "
 "show only the data that we want from a layer. In this case, we want to "
-"instruct QGIS to only show us farms and dry fields which have a sub-district "
+"instruct QGIS to only show us farms and dry fields, that have a sub-district "
 "value equal to Ngemplak, Turi, or Pakem."
 msgstr ""
-"Selanjutnya kita akan membangun sebuah *query*. *Query* adalah suatu "
-"pernyataan yang memungkinkan kita untuk hanya menampilkan data yang kita "
-"inginkan dari suatu *layer*. Dalam kasus ini, kita ingin menginstruksikan "
-"QGIS untuk hanya menunjukkan kebun dan tegalan yang juga memiliki nilai "
-"kecamatan berupa Ngemplak, Turi, atau Pakem."
 
 # 43ac288c42e54e1f9597bb8e7597de24
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:146
@@ -574,6 +565,8 @@ msgid ""
 "Right-click on the :guilabel:`vegetasi` layer and click :guilabel:`Save As..."
 "`"
 msgstr ""
+"Klik kanan pada *layer* :guilabel:`vegetasi` dan klik :guilabel:`Simpan "
+"sebagai...`"
 
 # ed16e26c0fd249d6a9b599c27237da10
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:239
@@ -598,6 +591,9 @@ msgid ""
 "Check the box labelled :guilabel:`Save only selected features` and :guilabel:"
 "`Add saved file to map` in the :guilabel:`Save vector layer as...` dialog."
 msgstr ""
+"Beri tanda centang pada kotak bertuliskan :guilabel:`Simpan hanya fitur yang "
+"dipilih` dan :guilabel:`Tambah berkas tersimpan ke dalam peta` pada kotak "
+"dialog Simpan layer vektor sebagai..."
 
 # 775bc32dd50046b9baff94c6078cd818
 # 8de2183d4437468697e5acc9bcd9b09c
@@ -614,6 +610,8 @@ msgid ""
 "Rename the layers by right-clicking on new vegetasi layer and selecting :"
 "guilabel:`Rename`. Rename with :kbd:`kebun_tegalan`."
 msgstr ""
+"Ganti nama layer dengan klik kanan pada layer vegetasi yang baru dan pilih :"
+"guilabel:`Ubah nama`. Tuliskan nama dengan :kbd:`kebun_tegalan`."
 
 # a8be0fb4a4e941c58b3d9466e970a0ab
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:256
@@ -648,6 +646,7 @@ msgstr ""
 msgid ""
 "Right-click on the :guilabel:`jalan` layer and click :guilabel:`Filter...`"
 msgstr ""
+"Klik kanan pada layer :guilabel:`jalan` dan klik :guilabel:`Saring...`."
 
 # 19799eb78e1a4291ace31f8dc45fc58e
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:272
@@ -778,6 +777,9 @@ msgid ""
 "When the process finish and buffer_jalan_300m.shp appear in the Layers, you "
 "can click :guilabel:`Close` the Buffer dialog."
 msgstr ""
+"Ketika proses selesai dan buffer_jalan_300m.shp telah muncul di Daftar "
+"Lapisan, Anda dapat menutup kotak dialog Buffer dengan klik :guilabel:"
+"`Close`."
 
 # 51597a85523c4f348bc7f71afe5536a2
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:337
@@ -820,14 +822,12 @@ msgstr ""
 "Kemudian simpan layer baru di direktori yang sama sebagai :file:"
 "`buffer_fas_kesehatan_2.5km.shp`. Peta hasil Anda akan terlihat seperti ini:"
 
-# 87e76e79eb384c11bc28b29c9703628c
+# 37cc62442e7844a29c984ef4f4e4a8c1
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:359
 msgid ""
 "Remember that the buffer distance is in metres. Keep this in mind when you "
-"want to create a 2,5 km buffer!"
+"want to create a 2.5 km buffer!"
 msgstr ""
-"Ingat bahwa jarak buffer dalam satuan meter. Ingatlah ini ketika Anda ingin "
-"membuat buffer 2,5 km!"
 
 # a0d063c177474c03931a6f2b992b6802
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:363
@@ -933,7 +933,7 @@ msgstr ""
 # 20b66418671e4101801d05223f726def
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:418
 msgid "Click :guilabel:`Save As...`."
-msgstr ""
+msgstr "Klik :guilabel:`Simpan sebagai...`."
 
 # 12bd3e81dfa84681a4f07bbf9824c6cc
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:420
@@ -942,11 +942,14 @@ msgid ""
 "box next to :guilabel:`Save only selected features` and :guilabel:`Add saved "
 "file to map`."
 msgstr ""
+"Beri nama file yang baru dengan :kbd:`kebun_tegalan_lokasi_terpilih.shp`. "
+"Kemudian berikan tanda centang pada :guilabel:`Simpan hanya fitur yang "
+"dipilih` dan :guilabel:`Tambah berkas tersimpan ke dalam peta`."
 
-# 0f582702af6a4f43b889d80b348a5ef3
+# b85c9ce6edc34d449628511fb4b06cfc
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:427
 msgid ""
-"After the process finish, Rename the layers by right-clicking on new "
+"After the process is finish, rename the layers by right-clicking the new "
 "kebun_tegalan layer and selecting :guilabel:`Rename`. Rename with :kbd:"
 "`kebun_tegalan_lokasi_terpilih`. If we hide all the other layers, we can see "
 "the resulting layer:"
@@ -1048,6 +1051,8 @@ msgid ""
 "Right-click on the :guilabel:`kebun_tegalan_lokasi_terpilih` layer and "
 "click :guilabel:`Filter...`"
 msgstr ""
+"Klik kanan pada layer :guilabel:`kebun_tegalan_lokasi_terpilih` dan klik :"
+"guilabel:`Saring...`"
 
 # d66e95d16991450584a6f0bebda4883f
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:494
