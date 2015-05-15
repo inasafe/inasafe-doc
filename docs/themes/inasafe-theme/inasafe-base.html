@@ -315,7 +315,7 @@ TODO: remove this, or make this obsolete ?? #}
            <ul id="top-nav" class="breadcrumb right">
            		{% for rellink in rellinks %}
                 <li
-                {% if loop.first %}style="margin-right: 10px"{% endif %} >
+                {% if loop.first %}style="margin-right: 16px"{% endif %} >
                 <a href="{{ pathto(rellink[0]) }}"
                    title="{{ rellink[1]|striptags }}"
                    style="z-index:{{ loop.counter }};"
