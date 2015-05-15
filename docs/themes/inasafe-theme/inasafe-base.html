@@ -45,6 +45,9 @@ TODO: remove this, or make this obsolete ?? #}
     }
 </style>
 
+{# Link to Ubuntu Google font #}
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
 <script>
     // detects current language and hides/shows up the links
     $(document).ready(function () {
@@ -60,7 +63,7 @@ TODO: remove this, or make this obsolete ?? #}
         $(':submit').addClass('btn btn-warning btn-small');
     })
 
-    {#  load current page in a different language #}
+    // load current page in a different language 
     function gotoLang(lang) {
         var currentPage = '{{current_page_name}}.html';
         var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
@@ -325,7 +328,22 @@ TODO: remove this, or make this obsolete ?? #}
 
 
 
- {# These are the prev | next | index links in the bottom #} 
+
+    
+    
+  {# Default layout is a simple 12 spanned block with no sidebars #}
+    {# See layout.html template for sidebar implementation #}
+    {% block user_content %}
+        <div class="container">
+            <div class="hero-unit">
+                    {% block hero %} {% endblock %}
+            </div> {# span 12 ends #}
+            {% block body %} {% endblock %}
+        </div>{# fluid-container ends #}
+  {% endblock %}{# user-content block end #}  
+ 
+ 
+  {# These are the prev | next | index links in the bottom #} 
  <div class="related container">            
            <ul class="breadcrumb center">
            		{% for rellink in rellinks %}
@@ -341,18 +359,6 @@ TODO: remove this, or make this obsolete ?? #}
 
         </div>
     </div>  
-    
-    
-  {# Default layout is a simple 12 spanned block with no sidebars #}
-    {# See layout.html template for sidebar implementation #}
-    {% block user_content %}
-        <div class="container">
-            <div class="hero-unit">
-                    {% block hero %} {% endblock %}
-            </div> {# span 12 ends #}
-            {% block body %} {% endblock %}
-        </div>{# fluid-container ends #}
-  {% endblock %}{# user-content block end #}  
  
  
  {# Now our standard footer #} 
