@@ -349,8 +349,7 @@ TODO: remove this, or make this obsolete ?? #}
  <div class="related container">            
            <ul class="breadcrumb center">
            		{% for rellink in rellinks %}
-                <li
-                {% if loop.first %}style="margin-right: 10px"{% endif %} >
+                <li>
                 <a href="{{ pathto(rellink[0]) }}"
                    title="{{ rellink[1]|striptags }}"
                    style="z-index:{{ loop.counter }};"
