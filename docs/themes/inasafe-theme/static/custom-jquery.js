@@ -35,6 +35,7 @@ jQuery(document).ready(function() {
 		 }
 	  });	
 	  
+	  //verify the current folder to show the sub-menu 
 	  if (window.location.href.indexOf("developer-docs") >= 0) {
 		  jQuery("body").addClass("developer");
 		  jQuery("span.dropdown").show();
@@ -52,6 +53,6 @@ jQuery(document).ready(function() {
 		  jQuery("body").addClass("orange");
 		  jQuery("#menu-about").show();
 		  jQuery(".menu-about").addClass("active");
-	  }
+	  } 
 
 });	
