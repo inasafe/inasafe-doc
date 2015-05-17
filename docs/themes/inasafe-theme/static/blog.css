@@ -192,8 +192,16 @@ select {
 }
 }
 @font-face {
+    font-family: "Elusive-Icons";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Elusive-Icons.eot?#iefix&ver=2") format("embedded-opentype"), 
+	     url("fonts/Elusive-Icons.svg#Elusive-Icons?ver=2") format("svg"), 
+		 url("fonts/Elusive-Icons.woff?ver=2") format("woff"), 
+		 url("fonts/Elusive-Icons.ttf?ver=2") format("truetype");
+}
+@font-face {
     font-family: "Glyphicons Halflings";
-    src: url("//blogtest.inasafe.org/wp-content/themes/shoestrap-3/assets/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("//blogtest.inasafe.org/wp-content/themes/shoestrap-3/assets/fonts/glyphicons-halflings-regular.woff") format("woff"), url("//blogtest.inasafe.org/wp-content/themes/shoestrap-3/assets/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("//blogtest.inasafe.org/wp-content/themes/shoestrap-3/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
     display: inline-block;
@@ -6368,15 +6376,7 @@ input[type="submit"] .badge {
     background-color: #fff;
     color: #f86a27;
 }
-@font-face {
-    font-family: "Elusive-Icons";
-    font-style: normal;
-    font-weight: normal;
-    src: url("fonts/Elusive-Icons.eot?#iefix&ver=2") format("embedded-opentype"), 
-	     url("fonts/Elusive-Icons.svg#Elusive-Icons?ver=2") format("svg"), 
-		 url("fonts/Elusive-Icons.woff?ver=2") format("woff"), 
-		 url("fonts/Elusive-Icons.ttf?ver=2") format("truetype");
-}
+
 [class*="el-icon-"] {
     font-family: "Elusive-Icons";
     font-style: normal;
