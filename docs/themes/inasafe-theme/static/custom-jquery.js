@@ -43,10 +43,15 @@ jQuery(document).ready(function() {
 	  }
 	  
 	  
-	  if (window.location.href.indexOf("user-docs") >= 0) {
+	  else if (window.location.href.indexOf("user-docs") >= 0) {
     	  jQuery("body").addClass("user");
 		  jQuery("#menu-for-users").show();
 		  jQuery(".menu-for-users").addClass("active");
       }
+	  else {
+		  jQuery("body").addClass("orange");
+		  jQuery("#menu-about").show();
+		  jQuery(".menu-about").addClass("active");
+	  }
 
 });	
