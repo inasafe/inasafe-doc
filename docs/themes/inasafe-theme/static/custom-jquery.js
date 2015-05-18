@@ -44,7 +44,7 @@ jQuery(document).ready(function() {
 	  }
 	  
 	  
-	  else if (window.location.href.indexOf("user-docs") >= 0) {
+	  else if (window.location.href.indexOf("user-docs") >= 0 || window.location.href.indexOf("training") >= 0) {
     	  jQuery("body").addClass("user");
 		  jQuery("#menu-for-users").show();
 		  jQuery(".menu-for-users").addClass("active");

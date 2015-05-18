@@ -52,9 +52,9 @@ TODO: remove this, or make this obsolete ?? #}
     // detects current language and hides/shows up the links
     $(document).ready(function () {
         var currentPage = '{{current_page_name}}.html';
-        var currentLang = window.location.href.slice(
-                window.location.href.indexOf(currentPage) - 3,
-                window.location.href.indexOf(currentPage) - 1);
+       // var currentLang = window.location.href.slice(
+             //   window.location.href.indexOf(currentPage) - 3,
+             //   window.location.href.indexOf(currentPage) - 1);
 		//this is temporary - set current language english
 		currentLang = 'en';		
         $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
@@ -187,25 +187,25 @@ TODO: remove this, or make this obsolete ?? #}
             <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
                  <ul id="menu-about" class="menu" style="display:none;">{# About submenu #}	
                  		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241 menu-supporters">
-                        	<a title="Supporters" href="http://blogtest.inasafe.org/en/about-inasafe/supporters/" class="icl-en">Supporters</a>
-                            <a title="Supporters" href="http://blogtest.inasafe.org/en/about-inasafe/supporters/" class="icl-fr">Supporters</a>
-                            <a title="Supporters" href="http://blogtest.inasafe.org/en/about-inasafe/supporters/" class="icl-id">Supporters</a></li>
+                        	<a title="Supporters" href="http://blogtest.inasafe.org/en/about-inasafe/supporters/" class="icl-en" style="display:none;">Supporters</a>
+                            <a title="Supporters" href="http://blogtest.inasafe.org/fr/about-inasafe/supporters/" class="icl-fr" style="display:none;">Supporters</a>
+                            <a title="Supporters" href="http://blogtest.inasafe.org/id/about-inasafe/supporters/" class="icl-id" style="display:none;">Supporters</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-240 menu-partners">
-                        	<a title="Partners" href="http://blogtest.inasafe.org/en/about-inasafe/partners/" class="icl-en">Partners</a>
-                            <a title="Partners" href="http://blogtest.inasafe.org/en/about-inasafe/partners/" class="icl-fr">Partners</a>
-                            <a title="Partners" href="http://blogtest.inasafe.org/en/about-inasafe/partners/" class="icl-id">Partners</a></li>
+                        	<a title="Partners" href="http://blogtest.inasafe.org/en/about-inasafe/partners/" class="icl-en" style="display:none;">Partners</a>
+                            <a title="Partners" href="http://blogtest.inasafe.org/fr/about-inasafe/partners/" class="icl-fr" style="display:none;">Partners</a>
+                            <a title="Partners" href="http://blogtest.inasafe.org/id/about-inasafe/partners/" class="icl-id" style="display:none;">Partners</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-239 menu-projects">
-                        	<a title="Projects" href="http://blogtest.inasafe.org/en/about-inasafe/projects/" class="icl-en">Projects</a>
-                            <a title="Projects" href="http://blogtest.inasafe.org/en/about-inasafe/projects/" class="icl-fr">Projects</a>
-                            <a title="Projects" href="http://blogtest.inasafe.org/en/about-inasafe/projects/" class="icl-id">Projects</a></li>
+                        	<a title="Projects" href="http://blogtest.inasafe.org/en/about-inasafe/projects/" class="icl-en" style="display:none;">Projects</a>
+                            <a title="Projects" href="http://blogtest.inasafe.org/fr/about-inasafe/projects/" class="icl-fr" style="display:none;">Projects</a>
+                            <a title="Projects" href="http://blogtest.inasafe.org/id/about-inasafe/projects/" class="icl-id" style="display:none;">Projects</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-238 menu-people">
-                        	<a title="People" href="http://blogtest.inasafe.org/en/about-inasafe/people/" class="icl-en">People</a>
-                            <a title="People" href="http://blogtest.inasafe.org/en/about-inasafe/people/" class="icl-fr">People</a>
-                            <a title="People" href="http://blogtest.inasafe.org/en/about-inasafe/people/" class="icl-id">People</a></li>
+                        	<a title="People" href="http://blogtest.inasafe.org/en/about-inasafe/people/" class="icl-en" style="display:none;">People</a>
+                            <a title="People" href="http://blogtest.inasafe.org/fr/about-inasafe/people/" class="icl-fr" style="display:none;">People</a>
+                            <a title="People" href="http://blogtest.inasafe.org/id/about-inasafe/people/" class="icl-id" style="display:none;">People</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1238 menu-use-cases">
-                        	<a title="Use Cases" href="http://blogtest.inasafe.org/en/about-inasafe/cases/" class="icl-en">Use Cases</a>
-                            <a title="Use Cases" href="http://blogtest.inasafe.org/en/about-inasafe/cases/" class="icl-fr">Use Cases</a>
-                            <a title="Use Cases" href="http://blogtest.inasafe.org/en/about-inasafe/cases/" class="icl-id">Use Cases</a></li>                 
+                        	<a title="Use Cases" href="http://blogtest.inasafe.org/en/about-inasafe/cases/" class="icl-en" style="display:none;">Use Cases</a>
+                            <a title="Use Cases" href="http://blogtest.inasafe.org/fr/about-inasafe/cases/" class="icl-fr" style="display:none;">Use Cases</a>
+                            <a title="Use Cases" href="http://blogtest.inasafe.org/id/about-inasafe/cases/" class="icl-id" style="display:none;">Use Cases</a></li>                 
                  </ul>
                  <ul id="menu-for-users" class="menu" style="display:none;">{# For Users submenu #}
                       <li class="menu-quick-start">
