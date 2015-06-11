@@ -29,7 +29,7 @@ It is recommended to check (in addition to the defaults) the boxes next to:
 ----------------------
 
 This tutorial is not the only documentation on |project_name|. Within
-the |project_name| website you can find not only more training documentation,
+the |project_name| website you can find, not only more training documentation,
 but all user and developer documentation. This website is
 updated with each new release.
 
@@ -73,8 +73,8 @@ Otherwise email inasafe-users@googlegroups.com
 **Where do I get Hazard and Exposure data from?**
 Some data sources are described in the section on Functionality and Datasets.
 You can get open exposure data from  http://www.asiapop.org for population
-and from OpenStreetMap for building structures (however you may need to still
-digitise the structures) To download OSM data use the |project_name| 
+and from OpenStreetMap, for building structures (however you still may need to
+digitise the structures). To download OSM data use the |project_name| 
 OSM Download tool as described in :ref:`other-hazards`.
 For hazard information it is best to approach your government science
 agencies or local universities to model earthquakes,
@@ -82,7 +82,7 @@ tsunamis or floods. If it floods regularly in your region you could
 also develop a community flood-prone footprint.
 
 **Why does the plugin not show up in my QGIS Plugin Manager?**
-One common issue is that if you upgraded from QGIS 1.7.x to 1.8 you may not
+One common issue is that if you upgraded from QGIS 2.2.x to 2.8.x you may not
 get the new plugin repo added to your repo list. To fix this you can do 
 the following:
 

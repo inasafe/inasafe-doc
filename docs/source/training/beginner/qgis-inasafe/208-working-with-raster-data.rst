@@ -186,7 +186,7 @@ And render the image like this:
 17. Check the box next to :guilabel:`Min / max` (2).
 
 18. Next to :guilabel:`Contrast enhancement`, select
-    :guilabel:`Stretch and clip to MinMax` (3).
+    :guilabel:`Stretch to MinMax` (3).
 
 .. image:: /static/training/beginner/qgis-inasafe/image159.*
    :align: center
@@ -207,7 +207,7 @@ the raster.
    :align: center
 
 Notice how the custom :guilabel:`Min` and :guilabel:`Max` values have changed. 
-The lowest pixel value in this image file is 0 and the highest is about 195.
+The lowest pixel value in this image file is 0 and the highest is about 3294.
 
 .. image:: /static/training/beginner/qgis-inasafe/image161.*
    :align: center

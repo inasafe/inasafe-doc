@@ -11,7 +11,7 @@ Module 1: QGIS Review
 - Understand symbology
 - Understand map layout
 
-Before we dive deeper into |project_name|, we will review
+Before we dive deeper into |project_name|, we will
 review the QGIS techniques that we covered in Unit 2.
 We will once more go over some of they key aspects of QGIS,
 including adding vector and raster layers, symbolising layers
@@ -182,7 +182,7 @@ end up looking like this:
 18. This isn’t ideal. To fix this, open the Properties window and on
     the :guilabel:`Style` tab click on the :guilabel:`Advanced` button and choose
     :guilabel:`Symbol Levels`.
-    Check to box next to :guilabel:`Enable symbol levels`.
+    Check the box next to :guilabel:`Enable symbol levels`.
 
 .. image:: /static/training/intermediate/qgis-inasafe/image19.*
    :align: center

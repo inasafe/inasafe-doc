@@ -21,7 +21,7 @@ and how it affects our work in QGIS.
 1. Coordinate Reference Systems (CRS)
 -------------------------------------
 
-The CRS that all the data as well as the map itself are in right now is called
+The CRS that all the data, as well as the map itself are in right now is called
 WGS84.
 This is a very common Geographic Coordinate System (GCS) for representing
 data.
@@ -64,7 +64,7 @@ our map!
 To solve this, we’ll use a Projected Coordinate System (PCS) instead.
 A PCS projects or converts the data in a way that makes allowance for the
 scale change and corrects it.
-Therefore, to keep the scale constant, we should reproject our data to use a
+Therefore, to keep the scale constant, we should re-project our data to use a
 PCS.
 
 .. note:: Projection is the act of taking coordinates on a sphere (like the 
@@ -195,13 +195,12 @@ projection.
 .. image:: /static/training/beginner/qgis-inasafe/image65.*
    :align: center
 
-24. Click :guilabel:`OK` and after a minute, you should be presented with
-    the following:
+24. Click :guilabel:`OK` and after a minute, above your map extent you should be presented with:
 
-.. image:: /static/training/beginner/qgis-inasafe/image66.*
+.. image:: /static/training/beginner/qgis-inasafe/image65a.*
    :align: center
 
-25. Click :guilabel:`OK`.
+25. Wait until the notification disappear.
 
 Now your new layer, :guilabel:`Indonesia_terproyeksi`, will be shown in the 
 layers panel. If you turn off 'on the fly' reprojection, this layer will still 
@@ -222,7 +221,7 @@ Let’s see how this works.
 
 28. Go to :menuselection:`Settings ‣ Custom CRS...` and you’ll see this dialog:
 
-.. image:: /static/training/beginner/qgis-inasafe/image67.*
+.. image:: /static/training/beginner/qgis-inasafe/image66.*
    :align: center
 
 We will create a projection known as Van der Grinten I.

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-01 23:02+0100\n"
+"POT-Creation-Date: 2015-04-02 19:11\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -291,10 +291,10 @@ msgstr ""
 msgid "5. Analysing the problem: farms and dry fields"
 msgstr ""
 
-# c987a6d8792a495bace30856ca5744f2
+# 38c3d52970424de882f311ea37775750
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:122
 msgid ""
-"The first criterion we’re facing is that the land must be a farm or dry "
+"The first criteria we’re facing is that the land must be a farm or dry "
 "field, and it must be in one of three areas. So let’s tell QGIS to only show "
 "us the farms and dry fields that are, in fact, in these sub-districts!"
 msgstr ""
@@ -321,12 +321,12 @@ msgstr ""
 msgid "Click the :guilabel:`All` button underneath the Values list:"
 msgstr ""
 
-# ee72e64c8d4e489ebb73b62c84fe7348
+# 70cc31ceee1940e4bf86e60cab761c24
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:141
 msgid ""
 "Next we are going to build a query. A query is a statement that allows us to "
 "show only the data that we want from a layer. In this case, we want to "
-"instruct QGIS to only show us farms and dry fields which have a sub-district "
+"instruct QGIS to only show us farms and dry fields, that have a sub-district "
 "value equal to Ngemplak, Turi, or Pakem."
 msgstr ""
 
@@ -462,11 +462,11 @@ msgid ""
 "separate layer."
 msgstr ""
 
-# 60fc6fce6b7c49d298ca72dda00fc59b
+# 399a7ee3d2064be9bc487f926582fa01
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:233
 msgid ""
-"Right-click on the :guilabel:`vegetasi` layer and click :guilabel:`Save "
-"Selection As...`"
+"Right-click on the :guilabel:`vegetasi` layer and click :guilabel:`Save As..."
+"`"
 msgstr ""
 
 # ed16e26c0fd249d6a9b599c27237da10
@@ -482,42 +482,43 @@ msgid ""
 "Save the layer under :file:`evakuasi_bencana/` as :kbd:`kebun_tegalan.shp`."
 msgstr ""
 
-# 1a09fd20ffdb48eca4f49ec533fcaedf
+# c41fe90063dc4e8c88f8281c14adf5e3
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:244
 msgid ""
-"Check the box labelled :guilabel:`Add saved file to map` in the :guilabel:"
-"`Save vector layer as...` dialog."
-msgstr ""
-
-# 6c9a026dad3f4f0bb5d607e2fb4f6b75
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:250
-msgid ""
-"Click :guilabel:`OK`. QGIS will tell you that the export has been completed."
+"Check the box labelled :guilabel:`Save only selected features` and :guilabel:"
+"`Add saved file to map` in the :guilabel:`Save vector layer as...` dialog."
 msgstr ""
 
 # 775bc32dd50046b9baff94c6078cd818
 # 8de2183d4437468697e5acc9bcd9b09c
 # d437edc0a0b042028359b4814537515c
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:253
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:474
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:499
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:251
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:476
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:501
 msgid "Click :guilabel:`OK`."
 msgstr ""
 
+# 9cf457deb50f4ea28cfe001394f49c0c
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:253
+msgid ""
+"Rename the layers by right-clicking on new vegetasi layer and selecting :"
+"guilabel:`Rename`. Rename with :kbd:`kebun_tegalan`."
+msgstr ""
+
 # a8be0fb4a4e941c58b3d9466e970a0ab
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:255
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:256
 msgid ""
 ":guilabel:`Right-click` on the old vegetation layer and remove it. You "
 "should have these layers remaining:"
 msgstr ""
 
 # 7c96c19edb074fbcb388221bd9a0f1d9
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:262
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:263
 msgid "7. Finding important roads"
 msgstr ""
 
 # a9f34d41317241d6892e4510236bd008
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:264
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:265
 msgid ""
 "We have a problem with our roads layer, similar to that of our vegetation "
 "layer. Our roads layer has too many roads! We only want to use main roads "
@@ -525,14 +526,14 @@ msgid ""
 "within 300 metres of a major road. Once again, we will use the Query Builder."
 msgstr ""
 
-# bcab4ea6210a4dad860a30755d998676
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:269
+# 047ac2d42bdd4a0890f76f5b85e9a701
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:270
 msgid ""
-"Right-click on the :guilabel:`jalan` layer and click :guilabel:`Query...`"
+"Right-click on the :guilabel:`jalan` layer and click :guilabel:`Filter...`"
 msgstr ""
 
 # 19799eb78e1a4291ace31f8dc45fc58e
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:271
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:272
 msgid ""
 "Build a query for the roads layer, like you did above for the vegetation "
 "layer You want only primary and secondary roads, so you need to build this "
@@ -540,41 +541,41 @@ msgid ""
 msgstr ""
 
 # 8ccafe5059694cff8caaaaaa323e9b36
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:275
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:276
 msgid "*\"TYPE\" = 'primary' OR \"TYPE\" = 'secondary'*"
 msgstr ""
 
 # 9c9da9ffc56c44b0bf48322c208105cc
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:277
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:278
 msgid ""
 "You can use the approach that we learned above, or you can simply type this "
 "command into the query box. But be careful that you type it correctly!"
 msgstr ""
 
 # 42088c89a774402790449d89d5e0ecef
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:285
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:286
 msgid "8. Looking for health facilities"
 msgstr ""
 
 # 7b49bdd4567547e99d4d87a71c672c90
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:287
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:288
 msgid ""
 "Using the same approach, build a query for the :guilabel:`lokasi_penting` "
 "layer as shown:"
 msgstr ""
 
 # 90f3798b7d9747f890cd9e25886f5ebd
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:290
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:291
 msgid "*\"Fungsi\" = 'Kesehatan'*"
 msgstr ""
 
 # 84f6e960f73f49f3adb652971fe6f58a
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:293
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:294
 msgid "9. Buffering Roads"
 msgstr ""
 
 # 8f846c2d8b4a4da7901f598dd95928ed
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:295
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:296
 msgid ""
 "Okay, we’ve refined our data a bit so that it shows us the features we are "
 "interested in analysing. Remember that according to our criteria our land "
@@ -584,7 +585,7 @@ msgid ""
 msgstr ""
 
 # 40833e47277e4cc89da7ba89eb308d4b
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:301
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:302
 msgid ""
 "Make sure that only the :guilabel:`jalan` and :guilabel:`kebun_tegalan` "
 "layers are visible, to simplify the map while you’re working."
@@ -630,39 +631,39 @@ msgid ""
 "extends 300 metres."
 msgstr ""
 
-# 929dbb7282924b9d8678578dfb828143
+# bc0e47cb3ebc4cdeac95eab179607683
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:331
 msgid ""
-"When you are asked to add the new layer to the TOC, click :guilabel:`Yes` "
-"(“TOC” stands for “Table of Contents”, by which it means the list of layers)."
+"When the process finish and buffer_jalan_300m.shp appear in the Layers, you "
+"can click :guilabel:`Close` the Buffer dialog."
 msgstr ""
 
 # 51597a85523c4f348bc7f71afe5536a2
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:338
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:337
 msgid "Close the Buffer dialog and see your new layer:"
 msgstr ""
 
 # 6b89a5396aaa444885dda993dd2b63ba
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:343
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:342
 msgid ""
 "Those big fat lines are actually areas that are within 300 metres of primary "
 "and secondary roads."
 msgstr ""
 
 # 984387a94df044b797a33039b0ff06ae
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:347
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:346
 msgid "10. Buffering health facilities"
 msgstr ""
 
 # 119ff278bd6d4e9893fde0eb57fe5a8b
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:349
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:348
 msgid ""
 "Now try it yourself! Using the same approach, create a new buffer layer "
 "around your health facilities. The buffer should be 2.5 km in radius."
 msgstr ""
 
 # 18f4f173c4544c8390e70298648272e4
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:352
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:351
 msgid ""
 "Don’t forget to check the box :guilabel:`Dissolve buffer results` so every "
 "overlapping buffer will become one feature. Then save the new layer in the "
@@ -670,20 +671,20 @@ msgid ""
 "will look something like this:"
 msgstr ""
 
-# 87e76e79eb384c11bc28b29c9703628c
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:360
+# 37cc62442e7844a29c984ef4f4e4a8c1
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:359
 msgid ""
 "Remember that the buffer distance is in metres. Keep this in mind when you "
-"want to create a 2,5 km buffer!"
+"want to create a 2.5 km buffer!"
 msgstr ""
 
 # a0d063c177474c03931a6f2b992b6802
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:364
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:363
 msgid "11. Overlapping areas"
 msgstr ""
 
 # 58a65f5647364978869deba5211a3c4f
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:366
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:365
 msgid ""
 "Now we can see areas where a main road is 300 metres away and where there is "
 "a health facility within 2.5 km. But we only want the areas where both of "
@@ -692,12 +693,12 @@ msgid ""
 msgstr ""
 
 # 4a1cd8ba6e2243189f5ad3cce782999e
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:370
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:369
 msgid "Go to :menuselection:`Vector ‣ Geoprocessing Tools ‣ Intersect`."
 msgstr ""
 
 # 052f0c82d2ae4cc481dead7b416be558
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:375
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:374
 msgid ""
 "Enter :guilabel:`buffer_fas_kesehatan_2.5km` and :guilabel:"
 "`buffer_jalan_300m` as the two input layers. Name the output shapefile :kbd:"
@@ -705,12 +706,12 @@ msgid ""
 msgstr ""
 
 # 44b640eec8ee4aa8ac95335ef7d33e21
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:382
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:381
 msgid "Click :guilabel:`OK` and add the layer to the project when prompted."
 msgstr ""
 
 # bb7d616477c540d7b49c2157dc7684b3
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:384
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:383
 msgid ""
 "If we hide the original layers, we can see that our new layer shows us the "
 "areas where they intersect. These are the areas where both of these criteria "
@@ -718,12 +719,12 @@ msgid ""
 msgstr ""
 
 # 179cbdb3a6064384b3c3ae5e96f675cf
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:392
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:391
 msgid "12. Select farms and dry fields"
 msgstr ""
 
 # bfdc8af5f8b54e3c9eec281e531dc6d9
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:394
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:393
 msgid ""
 "Now we have the layer :guilabel:`kebun_tegalan`, which satisfies two of our "
 "criteria, and the layer :guilabel:`intersect_buffer_jalan_kesehatan.shp`, "
@@ -731,58 +732,63 @@ msgid ""
 msgstr ""
 
 # 6abcd7edcc634637b15e2fa0d07f7894
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:398
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:397
 msgid ""
 "Go to :menuselection:`Vector ‣ Research Tools ‣ Select by location`. A "
 "dialog will appear."
 msgstr ""
 
 # ca01c825905d477e8f63f60379bba8f9
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:404
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:403
 msgid "Set it up like this:"
 msgstr ""
 
 # 6c6be0ae85b6467f92c4b9657d0b29bb
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:409
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:408
 msgid ""
 "Click :guilabel:`OK` and you’ll see the results are selected (they are "
 "yellow)."
 msgstr ""
 
 # 99af5bc5cdec4d43a145e6c10a522ebb
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:415
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:414
 msgid "Let’s save this selection as a new layer."
 msgstr ""
 
 # 30dc33e5fbdb4f7290e0ec158137e414
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:417
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:416
 msgid "Right-click on the :guilabel:`kebun_tegalan` layer in the Layers panel."
 msgstr ""
 
-# aa4b25e7187c46e5ae9656ba2481f9c7
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:419
-msgid "Click :guilabel:`Save Selection As...`."
+# 20b66418671e4101801d05223f726def
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:418
+msgid "Click :guilabel:`Save As...`."
 msgstr ""
 
-# fcc8394723ea4c0bb73e793b499adc07
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:421
+# 12bd3e81dfa84681a4f07bbf9824c6cc
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:420
 msgid ""
-"Name the new file :kbd:`kebun_tegalan_lokasi_terpilih.shp` and check the box "
-"next to :guilabel:`Add saved file to map`."
+"Name the new file :kbd:`kebun_tegalan_lokasi_terpilih.shp`. Then check the "
+"box next to :guilabel:`Save only selected features` and :guilabel:`Add saved "
+"file to map`."
 msgstr ""
 
-# 6525cc8c14cd4d79a1aa1f269b895d2f
+# b85c9ce6edc34d449628511fb4b06cfc
 #: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:427
-msgid "If we hide all the other layers, we can see the resulting layer:"
+msgid ""
+"After the process is finish, rename the layers by right-clicking the new "
+"kebun_tegalan layer and selecting :guilabel:`Rename`. Rename with :kbd:"
+"`kebun_tegalan_lokasi_terpilih`. If we hide all the other layers, we can see "
+"the resulting layer:"
 msgstr ""
 
 # 3ab74de24be04305b6ce6657c7496491
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:433
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:435
 msgid "13. Select land areas of the appropriate size"
 msgstr ""
 
 # 7c6d4d5c87ae41fab9650bf3bf6f6611
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:435
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:437
 msgid ""
 "Hooray!  We have now found land areas that meet four of our five criteria. "
 "The only remaining criteria is the size of the land. We need to make sure "
@@ -790,7 +796,7 @@ msgid ""
 msgstr ""
 
 # 4b90ae0f4f9f4ea6865ab2fbd64d5c6a
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:439
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:441
 msgid ""
 "Open the attribute table for the :guilabel:`kebun_tegalan_lokasi_terpilih` "
 "layer. Notice that there is a column named :guilabel:`luas_ha`. This is the "
@@ -800,87 +806,87 @@ msgid ""
 msgstr ""
 
 # cf20acb394cf4964a06c1090b6d23f13
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:445
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:447
 msgid ""
 "Select the :guilabel:`kebun_tegalan_lokasi_terpilih` layer and open its "
 "attribute table:"
 msgstr ""
 
 # 87f09a16fccc4811b1463e26f7387b7f
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:451
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:453
 msgid "Enter editing mode by clicking this button:"
 msgstr ""
 
 # c50b2a6d92d14591bd92cfa8f20214ee
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:456
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:458
 msgid ""
 "Click the :guilabel:`Start the field calculator` button (located in the "
 "Attribute Table window)."
 msgstr ""
 
 # 22befdf0ce8a4800a2d9fb3421f6889f
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:462
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:464
 msgid ""
 "Check the box next to :guilabel:`Create a new field`. In the box type :kbd:"
 "`luas_m2`."
 msgstr ""
 
 # 78ebe5b386c149bfabb7bdef850945aa
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:468
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:470
 msgid ""
 "Change :guilabel:`Output field type` to :guilabel:`Decimal number (real)`. "
 "Then click on :guilabel:`Geometry` and double-click :guilabel:`$area`."
 msgstr ""
 
 # c6f87453325142da9a074e624b52617e
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:476
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:478
 msgid ""
 "You should now see a new column on your attribute table, named :kbd:"
 "`luas_m2`. And QGIS has filled it in for us with square metres!"
 msgstr ""
 
 # 4a860c168cbf4801b689320529fa83cc
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:482
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:484
 msgid "Click the edit mode button again, and save your edits."
 msgstr ""
 
 # e52ef6305e9a4a699d49380b6361adf6
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:487
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:489
 msgid "Close the attribute table. Now we can just do a simple query."
 msgstr ""
 
-# b90699f3c7014feea5888c579a743535
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:489
+# ce780d5cdfac4cac8eef1ef46dadbed9
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:491
 msgid ""
 "Right-click on the :guilabel:`kebun_tegalan_lokasi_terpilih` layer and "
-"click :guilabel:`Query...`"
+"click :guilabel:`Filter...`"
 msgstr ""
 
 # d66e95d16991450584a6f0bebda4883f
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:492
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:494
 msgid "Enter the following:"
 msgstr ""
 
 # cfb45ebb69804f5ead6d0845267410f7
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:494
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:496
 msgid "*\"luas_m2\" >= 50000 AND \"luas_m2\" <= 150000*"
 msgstr ""
 
 # a7cfb7226fd8447e8d5835009105ce15
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:504
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:506
 msgid ""
 "That’s it!  We have eight pieces of land that meet ALL of our criteria. Any "
 "of these pieces of land might be suitable for a location to place refugees."
 msgstr ""
 
 # e189fca4c96a4976abb031274131451b
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:507
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:509
 msgid ""
 "Right-click the :guilabel:`kebun_tegalan_terpilih` layer and click :guilabel:"
 "`Save As`. Name the file :file:`refugees_location.shp`."
 msgstr ""
 
 # c8b183c489cc4c6d96b61c11e780798b
-#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:511
+#: ../../source/training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.rst:513
 msgid ":ref:`Go to next module --> <using-map-composer>`"
 msgstr ""

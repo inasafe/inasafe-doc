@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-01 23:02+0100\n"
+"POT-Creation-Date: 2015-04-02 19:11\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,10 +75,10 @@ msgid ""
 "Create a new project in QGIS by clicking on the :guilabel:`New Project` icon."
 msgstr ""
 
-# b5025a8fc09a425f90320a00e9f7360e
+# 64357a78f3d84cd38adbb85cb40269ba
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:40
 msgid ""
-"Go to :menuselection:`Layer ‣ New ‣ New Shapefile Layer`. You’ll be "
+"Go to :menuselection:`Layer ‣ Create Layer ‣ New Shapefile Layer`. You’ll be "
 "presented with the following dialog:"
 msgstr ""
 
@@ -226,11 +226,10 @@ msgid ""
 "Make sure that “WGS 84” is selected as the CRS, and click :guilabel:`OK`."
 msgstr ""
 
-# 6dc1f15ba5ec4b93832d823df96117d3
+# 61aae4decc1c49a298a05477f4872e44
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:143
 msgid ""
-"Right-click on the :guilabel:`UGM` layer and click :guilabel:`Zoom to Layer "
-"Extent`."
+"Right-click on the :guilabel:`UGM` layer and click :guilabel:`Zoom to Layer`."
 msgstr ""
 
 # a30004542c534c73b32cfa64baa4244f
@@ -255,14 +254,14 @@ msgid ""
 "individually for each layer."
 msgstr ""
 
-# c44a6ed0293943a499ac6cd8b02022d9
+# 45fd9cff15be4a16aced6ee0af944bb3
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:162
-msgid "Let’s enter edit mode for the :guilabel:`gedung_campus` layer:"
+msgid "Let’s enter edit mode for the :guilabel:`gedung_kampus` layer:"
 msgstr ""
 
-# 9d637ec3fb1a4a149eb2d17bac1aab09
+# 81aba11da7ce4e439bbae5ef4c53dbe9
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:164
-msgid "Select :guilabel:`gedung_campus` in the Layers panel."
+msgid "Select :guilabel:`gedung_kampus` in the Layers panel."
 msgstr ""
 
 # 76f9bbd93d2944948bb83fbdce0de69c
@@ -288,14 +287,14 @@ msgstr ""
 msgid "From left to right on the image above, they are:"
 msgstr ""
 
-# 9aa16bb97c4e4657be3d6f6cd76c3d41
+# e4ba7b1678aa4161846d0d395af2b51f
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:183
-msgid "**Toggle Edit**: activates / deactivates edit mode."
+msgid "**Toggle Editing**: activates / deactivates edit mode."
 msgstr ""
 
-# 80539fa876584aa1a901d18797123e64
+# c6be532034e24247a882e9ca65a3b5fc
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:184
-msgid "**Save Edits**: saves changes made to the layer."
+msgid "**Save Layer Edits**: saves changes made to the layer."
 msgstr ""
 
 # c07bb6f0c6a54aabb8e3b3d11c28ac8b
@@ -403,9 +402,9 @@ msgid ""
 "later. Simply finish digitising the feature and then follow these steps:"
 msgstr ""
 
-# 3ed6156aceb64b778ab7f71b61a3abc8
+# 3d484057b46647b9ae52fdf51ddc8507
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:236
-msgid "Select the feature with the :guilabel:`Select Single Feature` tool:"
+msgid "Select the feature with the :guilabel:`Select Feature` tool:"
 msgstr ""
 
 # 1a24aeb70db045778879252d497fb4a2
@@ -575,11 +574,11 @@ msgstr ""
 msgid "Select :guilabel:`WGS 84` when prompted and click :guilabel:`OK`."
 msgstr ""
 
-# b49673bf01e34779b94755a277da0b26
+# 9c5b02ccf53a48dd8c0d9ef752eb49e5
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:339
 msgid ""
 "In order to georeference this image, we need to associate points on the "
-"image to known points on the Earth. Such points are called ground control "
+"image, to known points on the Earth. Such points are called ground control "
 "points (GCPs). Luckily, this map image has latitude and longitude "
 "coordinates written on it at every corner. So, to georeference this image, "
 "we will create four GCPs, one at each corner of the map, and we will turn "
@@ -693,18 +692,18 @@ msgid ""
 "the fly transformation is enabled."
 msgstr ""
 
-# 3b1130603cef49c3b3810b9cacb03cf4
+# a4d289290cd24de3b9090c92652d7d45
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:426
 msgid ""
 "The output file will be created and automatically added to your project. If "
-"you hover over the image, you should see coordinates at the bottom of QGIS "
-"which are close the the coordinates you entered when placing the GCPs."
+"you hover over the image, you should see coordinates at the bottom of QGIS, "
+"which are close to the coordinates you entered when placing the GCPs."
 msgstr ""
 
-# 7a556115c23e4f3ba4ed5312a225800c
+# c0c395d210d249258507f636ee8f7844
 #: ../../source/training/beginner/qgis-inasafe/209-create-a-new-vector-layer.rst:434
 msgid ""
-"Another way to see that the image is correctly placed is by adding a layer "
+"Another way to see that the image is correctly placed, is by adding a layer "
 "with the OpenLayers plugin. Here we have added Bing satellite imagery, and "
 "made our new geotiff transparent to see Merapi in the background."
 msgstr ""

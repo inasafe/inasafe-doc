@@ -46,7 +46,7 @@ The QGIS website will look something like this:
    :align: center
 
 3. If you are using Windows click
-   :guilabel:`QGIS Standalone Installer Version 2.4 (32 bit)`.
+   :guilabel:`QGIS Standalone Installer Version 2.8 (32 bit)`.
    Your exact version number may be different.
 
 .. image:: /static/training/beginner/qgis-inasafe/image12.*
@@ -130,7 +130,7 @@ If it isn’t open or you haven’t installed it yet, carry on.
 We will come back to this later.
 
 14. Click on the folder icon on the upper toolbar or go to
-    :menuselection:`File ‣ Open Project...`
+    :menuselection:`Project ‣ Open...`
 
 .. image:: /static/training/beginner/qgis-inasafe/image23.*
    :align: center
@@ -246,7 +246,7 @@ Even if they are not visible in a toolbar, all of your tools will remain
 accessible via the menus.
 For example, if you remove the :guilabel:`File` toolbar (which contains the 
 :guilabel:`Save` button), you can still save your map by going to 
-:menuselection:`File ‣ Save`.
+:menuselection:`Project ‣ Save`.
 
 Status Bar
 ..........
@@ -259,10 +259,10 @@ on the map.
 
 The coordinates of this map are the same type of coordinates that are
 recorded by GPS devices.
-The status bar show shows the longitude and latitude of your mouse cursor.
+The status bar shows the longitude and latitude of your mouse cursor.
 
 This may not all be clear right now, but as you progress in your knowledge
-of GIS is will make more and more sense.
+of GIS, this will make more and more sense.
 
 ..  _adding-vector-layer:
 
@@ -340,13 +340,13 @@ your mouse in the main map window.
     Now hold the left mouse button down and drag the mouse in the map window.
     This allows you to pan the map, or move it around.
 
-28. The button which has a plus sign below a magnifying glass
+28. The button that has a plus sign below a magnifying glass
     allows you to zoom in on the map.
     Select this button.
     Using your mouse, draw a box around an area where you want to zoom in,
     and release your mouse.
 
-29. The button which has a minus sign below a magnifying glass
+29. The button that has a minus sign below a magnifying glass
     allows you to zoom out on the map.
     Select this button and click on the map.
 

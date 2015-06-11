@@ -9,7 +9,7 @@ Getting Started
 
 In this section we introduce |QGIS| and set it up for this
 |project_name| practical. If you are already familiar with
-QGIS, feel free to skip below to QGIS setup and and plugin installation.
+QGIS, feel free to skip below to the QGIS setup and plugin installation.
 
 **Learning Objectives:**
 
@@ -26,7 +26,7 @@ Introduction to QGIS
 --------------------
 
 QGIS is a user-friendly open source Geographic Information System (GIS).
-It runs on Linux, OS X, Windows and Android and supports numerous
+It runs on Linux, OS X, Windows and Android, and supports numerous
 vector, raster, and database formats and functionality.
 `<http://www.qgis.org>`_
 
@@ -74,14 +74,15 @@ The elements identified in the figure below are:
 Set up QGIS
 -----------
 
-1. Open :guilabel:`QGIS Desktop (2.0.1)` - This should be located on
+1. Open :guilabel:`QGIS Desktop (2.8.1)` - This should be located on
 your desktop, or you can find it in your start menu.
 
 .. image:: /static/training/socialisation/012_qgis_desktop.*
    :align: center
 
 .. Note:: Your exact version number of QGIS may be different. This tutorial has
-   been designed with QGIS 2.0 or above.
+   been designed with QGIS 2.8.1 or above.
+   If you don't find QGIS 2.8.1 icon, you can go to :file:`Progam Files -> QGIS Wien`.
 
 2. A hint window will appear. Close the window by clicking :guilabel:`OK`.
 
@@ -130,7 +131,7 @@ Next change the project's projection settings and QGIS language settings:
 
 5. Open the settings window by clicking on :menuselection:`Settings --> Options`.
 
-6. Select the :guilabel:`CRS` tab of the options menu.
+6. Select the :guilabel:`CRS` tab from the options menu.
 
 .. image:: /static/training/socialisation/016_crs.*
    :align: center
@@ -186,6 +187,10 @@ OpenLayers, using the QGIS plugin repository.
 13. Select |project_name| and click :guilabel:`Install plugin` - it
     may take a couple of minutes for the plugin to download and install.
 
+.. note::
+   If your internet using a proxy, you need to setting the proxy from 
+   :menuselection:`Settings --> Options --> Network`
+
 14. A window should pop up saying: "Plugin installed successfully"
     Click :guilabel:`Ok` and click :guilabel:`Close` to exit the *QGIS Plugin Manager*
     window.
@@ -204,20 +209,16 @@ OpenLayers, using the QGIS plugin repository.
 16. To retrieve the |project_name| toolbar, right-click on the
     top toolbar and check :guilabel:`InaSAFE`.
 
-=================================================   ========================
+=================================================   ===============================
 **Symbol**                                          **Name**
--------------------------------------------------   ------------------------
+-------------------------------------------------   -------------------------------
 .. image:: /static/general/icon_dock.*              Toggle Dock
-.. image:: /static/general/icon_keywords.*          Keyword Editor
-.. image:: /static/general/icon_options.*           Options
-.. image:: /static/general/icon_impactfunctions.*   Impact Functions Browser
-.. image:: /static/general/icon_minimumneeds.*      Minimum Needs Tool
-.. image:: /static/general/icon_converter.*         Converter
-.. image:: /static/general/icon_batch.*             Batch Runner
-.. image:: /static/general/icon_save.*              Save Current Scenario
+.. image:: /static/general/icon_keywords_wiz.*      Keyword Creation Wizard
+.. image:: /static/general/icon_func_centric.*      Impact Function Centric Wizard
 .. image:: /static/general/icon_osm.*               OpenStreetMap downloader
-.. image:: /static/general/icon_merge.*             Impact Layer Merge
-=================================================   ========================
+.. image:: /static/general/icon_toggle_outline.*    Toggle Scenario Outline
+.. image:: /static/general/icon_set_area.*          Set Analysis Area
+=================================================   ===============================
 
 .. Note:: Later we will explore and use these tools. For more information on the 
   |project_name| toolbar see :doc:`../../user-docs/toolbar`.
@@ -241,7 +242,7 @@ OpenLayers Plugin
     Click :guilabel:`Ok` and click :guilabel:`Close` to exit the *QGIS Plugin Manager*
     window.
 
-21. Go to :menuselection:`Plugins --> OpenLayers plugin`
+21. Go to :menuselection:`Web --> OpenLayers plugin`
 
 .. image:: /static/training/socialisation/023_openlayers.*
    :align: center

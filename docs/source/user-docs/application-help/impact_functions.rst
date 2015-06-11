@@ -6,9 +6,6 @@ Understand Impact Functions
 This document explains the purpose of impact functions and lists the
 different available impact function and the requirements each has to be
 used effectively.
-See :ref:`writing_impact_functions` for more information about writing new
-impact functions.
-
 
 What is an impact function?
 ---------------------------
@@ -75,8 +72,6 @@ there are two avenues you can follow:
 
 * If you have basic python programming skills, you could implement a new
   impact function yourself.
-  See :ref:`writing_impact_functions` for general guidelines on writing
-  impact functions.
 * You can file a ticket on our
   `issue tracking system <https://github.com/AIFDR/inasafe/issues>`_,
   and if time and resources allow we will implement it for you.

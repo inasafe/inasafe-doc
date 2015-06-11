@@ -36,9 +36,9 @@ Some plugins are already downloaded and available.
    :align: center
 
 3. This displays a list of plugins that have already been downloaded and can be
-   activated. To enable a plugin, check the box next to it in this menu and 
-   click :guilabel:`OK`. For now, let’s leave all the plugins as they are. 
-   We’re going to download and activate a new plugin in the next section.
+   activated. To enable a plugin, check the box next to it in this menu. 
+   For now, let’s leave all the plugins as they are. We’re going to download and 
+   activate a new plugin in the next section.
 
 .. image:: /static/training/beginner/qgis-inasafe/image44.*
    :align: center
@@ -48,16 +48,17 @@ Some plugins are already downloaded and available.
 2. Installing plugins
 ---------------------
 4. There are many more plugins, but they must first be downloaded. To download 
-   a plugin, click the :guilabel:`New` tab. This will load available plugin 
-   repositories, and you will see a list of all available plugins for download.
+   a plugin, click the :guilabel:`Not installed` tab. This will load available 
+   plugin repositories, and you will see a list of all available plugins for 
+   download.
 
 .. image:: /static/training/beginner/qgis-inasafe/image45.*
    :align: center
 
-Note that plugins which have already been downloaded can be activated or
+Note that plugins, which have already been downloaded can be activated or
 deactivated from the :guilabel:`Installed` tab. If it has not yet
 been downloaded, downloading a plugin from the
-:guilabel:`New` tab will automatically activate it.
+:guilabel:`Not installed` tab will automatically activate it.
 
 3. The OpenLayers plugin
 ------------------------
@@ -66,7 +67,7 @@ This means that you can access the OSM slippy map, Google Maps and Bing Maps
 from within QGIS. Follow along and we’ll see how this works.
 
 5. Go to :menuselection:`Plugins ‣ Manage and Install Plugins` and click on the
-   :guilabel:`New` tab. Type :kbd:`openlayers` into the Search box.
+   :guilabel:`Not installed` tab. Type :kbd:`openlayers` into the Search box.
 
 .. image:: /static/training/beginner/qgis-inasafe/image46.*
    :align: center
@@ -95,16 +96,16 @@ It may take a few minutes to download.
    :align: center
 
 9. The new plugin provides a menu which offers extra functionality. Go to 
-   :menuselection:`Plugins ‣ OpenLayers plugin` to see various
+   :menuselection:`Web ‣ OpenLayers plugin` to see various
    map layers that can be loaded.
 
 .. image:: /static/training/beginner/qgis-inasafe/image51.*
    :align: center
 
-10. Click :menuselection:`Bing Aerial layer`. A new layer called “Bing Aerial”
-    will be added to the Layers panel, and the imagery will load in the map
-    canvas. If the layer is above your other layers, drag it to the bottom of the
-    layers list.
+10. Go to :menuselection:`Web ‣ OpenLayers plugin ‣ Bing Maps ‣ Bing Aerial`. 
+    A new layer called “Bing Aerial” will be added to the Layers panel, and the 
+    imagery will load in the map canvas. If the layer is above your other 
+    layers, drag it to the bottom of the layers list.
 
 .. image:: /static/training/beginner/qgis-inasafe/image52.*
    :align: center
@@ -168,7 +169,7 @@ CRSes.
     clicking :guilabel:`Remove`.
 
 17. Try out other layers that are available from the
-    :menuselection:`Plugins ‣ OpenLayers plugin` menu.
+    :menuselection:`Web ‣ OpenLayers plugin` menu.
 
 
 :ref:`Go to next module --> <map-projection-basics>`

@@ -214,13 +214,16 @@ Now let’s create a grid for our map.
 16. In the panel on the right you should see the word :guilabel:`Grid`.
     Click on it.
 
-17. Check the box next to :guilabel:`Show grid` and enter the following values:
+17. Check the box :guilabel:`+` and enter the following values:
 
 .. image:: /static/training/beginner/qgis-inasafe/image266.*
    :align: center
 
-18. Check the box next to :guilabel:`Draw Coordinates` and enter the following
-    values:
+.. note:: We used coordinate reference systems with UTM (metre) on the project
+   QGIS and all map layers.
+
+18. Scroll down item properties dialog and check the box next to :guilabel:`Draw
+    Coordinates` and enter the following values:
 
 .. image:: /static/training/beginner/qgis-inasafe/image267.*
    :align: center
@@ -235,7 +238,7 @@ Tips
 ....
 
 Play around a little bit with the coordinate format.
-You can use decimal degrees as the coordinate format or change it
+You can change decimal degrees as the coordinate format or change it
 into Degree Minute format (DD MM) or Degree
 Minute Second (DD MM SS).
 
@@ -243,8 +246,7 @@ You can also adjust the coordinate placement.
 You can place the text inside or outside the frame, and make the
 orientation either vertical or horizontal.
 
-Change the font type and font size by clicking :guilabel:`Font` in the panel.
-
+Change the font type and font size by clicking :guilabel:`Font` in the panel. 
 
 6. Overview inset
 -----------------
@@ -274,7 +276,7 @@ The new layer will load.
 23. Draw a small box on the right side of your map layout.
 
 24. The current view of your QGIS project will appear in the new map element
-    (but notice that the old map element doesn’t change!) Add a frame
+    (but notice that the old map element doesn’t change!). Add a frame
     for the inset, so that it looks like this:
 
 .. image:: /static/training/beginner/qgis-inasafe/image271.*
@@ -294,10 +296,10 @@ symbology represents.
 26. Draw a box in the remaining empty space on your map layout. You will see a
     legend with symbologies shown in a list.
 
-27. In the panel on the right, click on :guilabel:`Legend items`.
-    Use the edit button to change the names on the legend. Use the 
-    :guilabel:`+` and :guilabel:`-` buttons to add or remove items from the 
-    legend. Choose which elements are important to include.
+27. In the panel on the right, click on :guilabel:`Legend items`. Uncheck
+    :guilabel:`Auto update` and use the edit button to change the names on the
+    legend. Use the :guilabel:`+` and :guilabel:`-` buttons to add or remove 
+    items from the legend. Choose which elements are important to include.
 
 .. image:: /static/training/beginner/qgis-inasafe/image272.*
    :align: center
@@ -311,6 +313,14 @@ symbology represents.
 
 .. image:: /static/training/beginner/qgis-inasafe/image274.*
    :align: center
+
+Tips
+....
+
+To save your map composer that you created, you can click on the
+:menuselection:`Composer ‣ Save Project`. So if you open the project QGIS and
+want to use the map composer that you saved, click on :menuselection:`Project ‣
+Print Composer ‣ My Layout 1`
 
 8. Printing the map
 -------------------

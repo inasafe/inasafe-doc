@@ -5,7 +5,7 @@ Overview
 
 Concept
 -------
-To effectively prepare for future floods, earthquakes or tsunamis one must
+To effectively prepare for future floods, earthquakes or tsunamis, one must
 first understand the likely impacts that need to be managed.
 For example, to prepare a contingency plan for a severe flood in Jakarta,
 emergency managers need to answer questions like:
@@ -27,7 +27,7 @@ questions.
 
 .. image:: /static/training/socialisation/001_inasafe_concept.png
 
-|project_name| is also able to aggregate the impact results by administrative
+|project_name| is also able to aggregate the impact results by an administrative
 boundary and provide a breakdown of information about the gender and age of
 affected people.
 
@@ -135,8 +135,8 @@ Hazard
 Hazard can be seen as a condition, phenomenon, or human activity that
 potentially cause victims, losses or destruction to social structure and
 environment.
-Events or phenomena that are seen as hazard potentials include disasters 
-such as earthquakes, tsunamis, floods, landslides and tornadoes.
+Events or phenomena that are seen as hazard potentials include 
+earthquakes, tsunamis, floods, landslides and tornadoes.
 
 For |project_name|, hazard data refers to a singular disaster scenario, 
 such as a Mw 7.8 earthquake or volcanic eruption. Data for such infrequent 
@@ -168,7 +168,7 @@ The hazard must be accompanied by specific units:
 
 The input hazard layer must have:
 
-- a coordinates/location identifier
+- a coordinate/location identifier
 - specific hazard intensity (e.g. flood depth, earthquake’s MMI)
 - temporal information when the event occurred or is expected to occur
 
@@ -219,6 +219,7 @@ This can aid local governments in understanding the impact specific to their dis
 Impact Function
 ---------------
 
+An impact function is a software program that computes an impact assessment given a number of inputs.
 |project_name| is capable of having multiple impact functions specific to the input data.
 Typically an impact function deals with the combination of one hazard
 layer and one exposure layer.
@@ -239,7 +240,7 @@ example is the minimum needs (minimum quantity of relief items per
 person) that need to be supplied to refugees during/after a disaster.
 The Indonesian Disaster Management Agency (|BNPB|) have identified these needs
 per day, and |project_name| uses these numbers to calculate how much
-food, water, toilets, family kits, and other resources are need during/after the disaster
+food, water, toilets, family kits, and other resources are needed during/after the disaster
 based on the number of evacuated people.
 This output directly informs contingency planners how much of each item is
 needed to respond to a major disaster.
@@ -276,7 +277,7 @@ Available Impact Functions
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 | Flood             | Buildings      | be affected              | Number of buildings affected                                       |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
-| Tsunami           | People         | need evacuating          | Hazard Zone                                                        |
+| Tsunami           | People         | need evacuating          | Number of people affected and Number of people needing evcuation   |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+
 | Tsunami           | Buildings      | be affected              | Number of buildings affected                                       |
 +-------------------+----------------+--------------------------+--------------------------------------------------------------------+

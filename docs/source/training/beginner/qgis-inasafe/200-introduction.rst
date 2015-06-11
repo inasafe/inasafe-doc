@@ -14,7 +14,7 @@ This document is initial draft and still in reviewing phase by these parties:
 • Australia-Indonesia Facility for Disaster Reduction (|AIFDR|-|GoA|)
 • Humanitarian OpenStreetMap Team (|HOT|)
 
-All contents and materials on this document may be changed without public
+All contents and materials in this document may be changed without public
 notice.
 
 Licence
@@ -95,7 +95,7 @@ Universitas Gadjah Mada
 Universitas Gadjah Mada (internationally known as Gadjah Mada University, or
 UGM) is a top research university
 located in Yogyakarta, Indonesia. The Department of Geodetic Engineering and 
-Faculty of Engineering focuses on education, research, and commmunity services 
+Faculty of Engineering focuses on education, research, and community services 
 related to geodesy and geomatics engineering, including acquisition, analysis, 
 and uses of detailed and accurate geospatial data and large-scale maps using 
 open source geospatial software for disaster management.
@@ -105,7 +105,7 @@ http://ugm.ac.id
 Preface
 -------
 A Geographic Information System (GIS) is a system designed to
-enable people to work with data related to places on the Earth.
+enable people to work with data related to places on Earth.
 A GIS allows the creation, storage, manipulation and analysis of geographic
 data.
 GIS is a very broad concept and can involve complex hardware and software.
@@ -114,16 +114,16 @@ is required.
 
 GIS can be used in a variety of fields, including disaster
 management. In this training we use GIS software that is 
-free and open, and which includes special functionality for the 
+free and open, which includes special functionality for the 
 preparation of contingency plans.
 
 The software, called |QGIS|, is a Geographic Information System (GIS) that is
-user-friendly and open-source. |project_name| is a QGIS plugin which is also
+user-friendly and open-source. |project_name| is a QGIS plugin, which is also
 free and open-source. It can create realistic scenarios of natural disaster 
 impact for planning, preparation and better response.
 |project_name| is developed by |AIFDR| through consultation with |BNPB|.
 
-Data Analysis Using QGIS and |project_name| covers different material from the
+Data Analysis using QGIS and |project_name| covers different material from the
 previous unit, complementing and building on top of it. Unit One was
 about the collection of relevant data using OSM. In this unit we will
 explore how to use geographic data to better understand disaster impact and to

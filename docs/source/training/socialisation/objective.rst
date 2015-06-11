@@ -31,7 +31,7 @@ Prerequisites
   * WIFI - connected to the internet
   * Windows (XP, 7, 8), Linux (Training Ubuntu later than 12.04) or similar
     (e.g. Mint or Debian), Mac OSX (Lion - 10.7,  Snow Leopard -10.6)
-  * |QGIS| at least version 2.0 installed http://www.qgis.org or ability to install software on computer (i.e. have administration password)
+  * |QGIS| at least version 2.6 installed http://www.qgis.org or ability to install software on computer (i.e. have administration password)
 
 Credits
 -------
@@ -43,8 +43,8 @@ Global Facility for Disaster Reduction and Recovery Labs (World Bank-|GFDRR|).
 Manual based on:
 ................
 
-* Version 2.1.0 of |project_name|
-* Version 2.x of |QGIS|
+* Version 3.0.0 of |project_name|
+* Version 2.8 of |QGIS|
 
 Produced:
 .........

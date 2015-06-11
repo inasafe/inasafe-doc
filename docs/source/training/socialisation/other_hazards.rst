@@ -54,6 +54,11 @@ Select Feature and Save
 .. image:: /static/training/socialisation/062_merapi_attribute2.*
    :align: center
 
+After you click :guilabel:`Apply`, it will appear like this:
+
+.. image:: /static/training/socialisation/062_merapi_attribute2a.*
+   :align: center   
+
 5. A single result will remain from the search. Select it by clicking
    the number "163" on the left side of the row. The row will be highlighted
    in blue. Move or close the attribute table so you can see the map. You should 
@@ -92,8 +97,8 @@ contains only Merapi. Let's examine the point.
 
 12. Use the :guilabel:`Identify feature` tool to find more out about the
     data point.
-13. Use the :guilabel:`Measure line` tool to find out how far away is the
-    closest population hub (brown areas in the people layer).
+13. Use the :guilabel:`Measure line` tool to find out how far away the
+    closest population hub is (brown areas in the people layer).
 
 .. note:: For the tools to work you must have the Merapi layer selected
    in the Layers panel.
@@ -107,7 +112,7 @@ Keywords
 With the Merapi layer selected we are reminded in the |project_name| panel
 that we have not set any keywords for this new layer, so let's make some!
 
-14. Open the :guilabel:`InaSAFE Keyword Editor`.
+14. Go to :menuselection:`Plugins --> InaSAFE --> InaSAFE Keyword Editor`.
 15. Type :kbd:`Merapi eruption` as the title.
 16. As the source, enter where the data came from (in our case
     this should be :kbd:`Smithsonian Institute`).
@@ -129,7 +134,7 @@ Configure and Run |project_name|
 20. Confirm that |project_name| has the following in the drop-down menus:
 
   * Merapi eruption
-  * people
+  * People
   * Need evacuation
 
 Before we run |project_name|, we must define what the hazard zone is. Since
@@ -172,17 +177,17 @@ with no instructions. Make sure to print each result!
 Take 10 minutes to run the following scenarios:
 ::
 
- In the event of Merapi erupting how many buildings will
+ In the event of Merapi erupting, how many buildings will
  be affected within 3,5,10 km of the vent?
 
  ANSWER __________________________
 
- In the event of Merapi erupting how many people will
+ In the event of Merapi erupting, how many people will
  be affected within 5,10,25 km of the vent?
 
  ANSWER __________________________
 
- In the event of Merapi erupting how many buildings will
+ In the event of Merapi erupting, how many buildings will
  be affected within 5,10,25 km of the vent?
 
  ANSWER __________________________
@@ -198,10 +203,10 @@ Earthquake
 ----------
 
 Indonesia’s location on the edges of the Pacific, Eurasian,
-and Australian tectonic plates makes it not only a site of numerous volcanoes
+and Australian tectonic plates makes it not only a site of numerous volcanoes,
 but also frequent earthquakes.
 The hazard layer we are going to use for this example has been provided by
-Badan Geologi and |AIFDR|, |GoA| and describes the shaking or Modified
+Badan Geologi, |AIFDR| and |GoA|, and describes the shaking or Modified
 Mercalli Intensity (MMI) Scale.
 
 This particular scenario is a modelled version of the 2009 Padang earthquake.
@@ -219,8 +224,8 @@ This particular scenario is a modelled version of the 2009 Padang earthquake.
    :align: center
 
 .. note:: Notice the difference between the first people layer and the
-   other two people layers, the second one has a source of
-   **AsiaPop rescaled 1km2**, the third **AsiaPop rescaled 5km2**.
+   other two people layers. The second one has a source of
+   **AsiaPop rescaled 1km2** and the third **AsiaPop rescaled 5km2**.
 
 28. Make sure the only **people** checked is the one where Source = AsiaPop
     (it should be checked by default).
@@ -314,15 +319,15 @@ Lets find out how they are affected by the modelled Padang 2009 earthquake.
 
 40. Confirm that |project_name| has the following in the drop-down menus:
 
-* an earthquake in Padang like in 2009
+* An earthquake in Padang like in 2009
 * Buildings
 * Be affected
 
 41. Run |project_name|.
 
 .. note::
-    |project_name| is designed to zoom into the extent of the impact zone,
-    so when the processing completes it will automatically zoom to Padang.
+    |project_name| is designed to zoom in to the extent of the impact zone,
+    so when the processing completes, it will automatically zoom to Padang.
 
 42. Investigate the results, both by looking at the |project_name| results,
     and using the information tool to select a building.
@@ -332,12 +337,12 @@ Lets find out how they are affected by the modelled Padang 2009 earthquake.
 Tsunami
 -------
 
-The 1992 Flores earthquake occurred on December 12, 1992 on the island of
+The 1992 Flores earthquake occurred on December 12th, 1992 on the island of
 Flores in Indonesia. With a magnitude of 7.8, it was the largest and also 
 the deadliest earthquake in 1992.
 
 The next scenario is a modelled version of a Magnitude 8.1 earthquake
-generating a tsunami which impacts Maumere.
+generating a tsunami, which impacts Maumere.
 
 44. Go to :menuselection:`Project --> Open`. Open :file:`Maumere_tsunami.qgs`.
 
@@ -355,7 +360,7 @@ Click on each of them to see the keywords in the |project_name| panel.
 45. Confirm that |project_name| has the following in the drop-down menus:
 
 * A tsunami in Maumere (Mw 8.1)
-* people
+* People
 * Need evacuation
 
 46. Click :guilabel:`Options...` to change the water level for evacuation.
@@ -383,9 +388,9 @@ You can see that the results are confined to the extent in which you
 have zoomed the map.
 
 .. note:: You may notice that in this example, the two layers are not perfectly
-   aligned, which results in potentially inaccurate results. It can be a 
+   aligned, which can lead to potentially inaccurate results. It can be a 
    significant problem when your population dataset does not reflect reality.
-   Remember that your results are only as good as the data you use to get
+   Remember that your results are only as good as the data you use to produce
    them. It is important to always quality assure your data, and avoid 
    accepting |project_name| results without analysing them critically.
 
