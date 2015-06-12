@@ -244,9 +244,14 @@ text-shadow: none;
 /** Adapted from http://www.hongkiat.com/blog/breadcrumb-menu-css3/ **/
 
 
-.breadcrumb {height: 30px;}
+.breadcrumb {overflow: visible;}
 .breadcrumb.right {float: right;}
 .breadcrumb.left {float: left;}
+
+.breadcrumb li {
+	height: 35px;
+	line-height: 35px;
+}
 
 .breadcrumb li.first { padding-left: 8px; }
 .breadcrumb li a, .crumbs li a:link, .crumbs li a:visited {
@@ -837,11 +842,12 @@ a:focus {
 	.container, .navbar .container {
 		padding: 0 20px;
 	}
-}
-@media (max-width: 650px) {
 	.breadcrumb.right { 
 	   display: none;
 	}
+}
+@media (max-width: 650px) {
+	
 	body {
 		padding: 0 0 180px 0 !important;
 	}
