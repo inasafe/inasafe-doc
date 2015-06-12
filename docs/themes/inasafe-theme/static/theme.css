@@ -463,14 +463,20 @@ footer.content-info a:hover {
     font-size: 16px;
     line-height: 41px;
     color: #888;
+	background: url(img/search.svg) no-repeat center;
+	opacity: 0.45;
 }
 button:focus {
 	outline: none;
 }
 .navbar .navbar-brand.logo {
-    height: 53px !important;
+    height: 39px !important;
+	width: 100px !important;
     padding-top: 8px !important;
-	background: url(img/logo.png) no-repeat center;
+	background-image: url(img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100px 39px;
 }
 
 .navbar-nav > li > a {
@@ -514,7 +520,7 @@ button:focus {
 .navbar-header .search {
     color: #fff;
     width: 42px;
-	background: url(img/search.svg) no-repeat center;
+	
 }
 .second-menu .search {
     float: right;
@@ -529,7 +535,6 @@ button:focus {
 	box-shadow: none;
 	text-shadow: none;
 	background: url(img/search.svg) no-repeat center;
-	opacity: 0.45;
 }
 .second-menu .search img {
     padding-bottom: 0;
