@@ -50,11 +50,10 @@ TODO: remove this, or make this obsolete ?? #}
     // detects current language and hides/shows up the links
     $(document).ready(function () {
         var currentPage = '{{current_page_name}}.html';
-       // var currentLang = window.location.href.slice(
-             //   window.location.href.indexOf(currentPage) - 3,
-             //   window.location.href.indexOf(currentPage) - 1);
-		//this is temporary - set current language english
-		var currentLang = 'en';		
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
         $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
 		$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
 		$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
