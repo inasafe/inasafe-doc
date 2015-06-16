@@ -13,6 +13,7 @@ jQuery(document).ready(function() {
 		  jQuery('#header-searchbox').toggle();
 		  jQuery('#header-searchbox').addClass('mobile');
 	  });
+	  
 	  jQuery(document).mouseup(function (e)
 	  {
 		  var container = jQuery("#header-searchbox");
@@ -23,6 +24,7 @@ jQuery(document).ready(function() {
 			  container.hide();
 		  }
 	  });
+	  
 	  jQuery('.lang_sel_sel').append( " <span class='caret'></span>" );
 	  jQuery('html').click(function(e) {
 	   if(jQuery(e.target).parents().index(jQuery('#menu-contributors')) == -1 ) {
@@ -33,16 +35,24 @@ jQuery(document).ready(function() {
 		 }
 	  });	
 	  
-	  if (jQuery("li.parent a").text()=="Developer documentation") {
+	  //verify the current folder to show the sub-menu 
+	  if (window.location.href.indexOf("developer-docs") >= 0) {
 		  jQuery("body").addClass("developer");
 		  jQuery("span.dropdown").show();
 		  jQuery("#menu-coders").show();
 		  jQuery("li.menu-for-contributors").addClass("active");
 	  }
 	  
-      if (jQuery("li.parent a").text()=="User documentation") {
-		  jQuery("body").addClass("user");
+	  
+	  else if (window.location.href.indexOf("user-docs") >= 0 || window.location.href.indexOf("training") >= 0) {
+    	  jQuery("body").addClass("user");
 		  jQuery("#menu-for-users").show();
 		  jQuery(".menu-for-users").addClass("active");
-	  }
+      }
+	  else {
+		  jQuery("body").addClass("orange");
+		  jQuery("#menu-about").show();
+		  jQuery(".menu-about").addClass("active");
+	  } 
+
 });	
