@@ -142,9 +142,9 @@ do
   rm templates/irchat.html
 
   # hack to avoid error when using Search in contents.html
-  rpl -q '#/../search.html' 'search.html' ./output/html/${LOCALE}/contents.html
+  rpl -q '#/../search.html' 'search.html' ./output/html/${LOCALE}/index.html
   # same applies for having the IRC-Chat Navigation Link
-  rpl -q '#/../irchat.html' 'irchat.html' ./output/html/${LOCALE}/contents.html
+  rpl -q '#/../irchat.html' 'irchat.html' ./output/html/${LOCALE}/index.html
 
   #################################
   #

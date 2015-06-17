@@ -209,16 +209,16 @@ OpenLayers, using the QGIS plugin repository.
 16. To retrieve the |project_name| toolbar, right-click on the
     top toolbar and check :guilabel:`InaSAFE`.
 
-=================================================   ===============================
-**Symbol**                                          **Name**
--------------------------------------------------   -------------------------------
-.. image:: /static/general/icon_dock.*              Toggle Dock
-.. image:: /static/general/icon_keywords_wiz.*      Keyword Creation Wizard
-.. image:: /static/general/icon_func_centric.*      Impact Function Centric Wizard
-.. image:: /static/general/icon_osm.*               OpenStreetMap downloader
-.. image:: /static/general/icon_toggle_outline.*    Toggle Scenario Outline
-.. image:: /static/general/icon_set_area.*          Set Analysis Area
-=================================================   ===============================
+================================================================   ===============================
+**Symbol**                                                         **Name**
+----------------------------------------------------------------   -------------------------------
+.. image:: /static/training/socialisation/icon_dock.*              Toggle Dock
+.. image:: /static/training/socialisation/icon_keywords_wiz.*      Keyword Creation Wizard
+.. image:: /static/training/socialisation/icon_func_centric.*      Impact Function Centric Wizard
+.. image:: /static/training/socialisation/icon_osm.*               OpenStreetMap downloader
+.. image:: /static/training/socialisation/icon_toggle_outline.*    Toggle Scenario Outline
+.. image:: /static/training/socialisation/icon_set_area.*          Set Analysis Area
+================================================================   ===============================
 
 .. Note:: Later we will explore and use these tools. For more information on the 
   |project_name| toolbar see :doc:`../../user-docs/toolbar`.
@@ -260,16 +260,16 @@ OpenLayers Plugin
 
 Using the navigation tools below, zoom to your home.
 
-==========================================  ============
-**Symbol**                                  **Name**
-------------------------------------------  ------------
-.. image:: /static/general/icon_pan.*       Pan Map
-.. image:: /static/general/icon_zoomin.*    Zoom In
-.. image:: /static/general/icon_zoomout.*   Zoom Out
-.. image:: /static/general/icon_zoomfull.*  Zoom to Full
-.. image:: /static/general/icon_zoomlast.*  Zoom Last
-.. image:: /static/general/icon_zoomnext.*  Zoom Next
-==========================================  ============
+=========================================================  ============
+**Symbol**                                                 **Name**
+---------------------------------------------------------  ------------
+.. image:: /static/training/socialisation/icon_pan.*       Pan Map
+.. image:: /static/training/socialisation/icon_zoomin.*    Zoom In
+.. image:: /static/training/socialisation/icon_zoomout.*   Zoom Out
+.. image:: /static/training/socialisation/icon_zoomfull.*  Zoom to Full
+.. image:: /static/training/socialisation/icon_zoomlast.*  Zoom Last
+.. image:: /static/training/socialisation/icon_zoomnext.*  Zoom Next
+=========================================================  ============
 
 23. Click the Zoom In button and draw a box (click and drag the mouse) over your 
     country.
