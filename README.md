@@ -8,14 +8,14 @@ InaSAFE Documentation
 PDF versions of the Documentation are available here: http://inasafe.org/pdf/
 
 Tools you need to install, if you want to work on the documentation
------------------------------------------------------------------
+-------------------------------------------------------------------
 
 If you plan to update or translate the manual locally, you will need to 'build'
 the docs like we do on the servers. You build it using 'Sphinx', and 
 there are two options:
 
 - building using a Docker image on your machine (easiest, on Linux and Windows)
-- have al the tools on your local machine (Windows only)
+- have al the tools on your local machine (Linux only)
 
 You always start with having or creating a github account
 
