@@ -1213,32 +1213,38 @@ pre code {
 }
 .container {
     margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
-@media (min-width: 768px) {
-.container {
-    width: 753px;
+@media (min-width: 768px) and (max-width: 991px) {
+body .container {
+    width: 750px;
 }
-.span9 {
+body .span9 {
 	width: 500px;
 }
 body {
 	padding-top: 95px !important;
 }
 }
-@media (min-width: 992px) {
-.container {
+@media (min-width: 992px)  and (max-width: 1199px) {
+body .container {
     width: 940px;
 }
-.span9 {
-	width: 700px;
+body .span9 {
+	width: 660px;
 }
 }
 @media (min-width: 1200px) {
-.container {
+body .container {
     width: 1170px;
 }
+body .span9 {
+	width: 840px;
 }
+}
+
 .container-fluid {
     margin-left: auto;
     margin-right: auto;
@@ -4450,19 +4456,11 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     min-height: 20px;
     padding: 19px;
 }
-.developer .well a,
-.user .well a,
-.orange .well a {
+.well a {
 	color: #2f3338;
 }
-.developer .well a:hover {
-	color: #3d9d45;
-}
-.user .well a:hover {
+.well a:hover {
 	color: #2f87a6;
-}
-.orange .well a:hover {
-	color: #f76926;
 }
 .well li {
 	margin-bottom: 5px;
