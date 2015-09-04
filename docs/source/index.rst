@@ -4,7 +4,7 @@
 ============================
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 5
 
     training/index
     user-docs/index
