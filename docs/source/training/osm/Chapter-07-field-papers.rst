@@ -24,8 +24,7 @@ Before going into detail about Field Papers, let’s look at a general overview 
 
 1. Locate the area of interest you want to map on the Field Papers website. Create a map for the area of interest. 
    Print out a map of this area. You can choose to print the area of interest using the default OpenStreetMap backdrop, 
-   or you may choose to print aerial imagery, if it is a available in your area. 
-   This process is depicted in the figure below.
+   or you may choose to print aerial imagery, if it is a available in your area.
 
 .. figure:: /static/training/osm/7_001.*    
    :align: center
@@ -91,7 +90,7 @@ Now let’s learn how to create and use Field Papers.
    *Make Field Papers*
 
 4. You will be directed to a page where you can enter a place where you would like to print out a map, 
-   and click on :guilabel:`Start there` as shown in the figure below.
+   and click on :guilabel:`Search` as shown in the figure below.
 
 .. figure:: /static/training/osm/7_007.*    
    :align: center
@@ -108,16 +107,23 @@ Now let’s learn how to create and use Field Papers.
 
    *Setting the area in Field Papers*
 
-6. At the top of the map are some settings for printing out Field Papers. The first is used to adjust the paper orientation 
-   that you want use for print out Field Paper. You can choose between :guilabel:`portrait` or :guilabel:`landscape` 
-   as shown in the figure below.
+6. At the top your maps are some setting for print out Field Papers. The first is used to adjust the paper size that you want use for print out Field Paper. 
+   You can choose :guilabel:`letter`, :guilabel:`A3`, or :guilabel:`A4`.
+
+.. figure:: /static/training/osm/7_028.*    
+   :align: center
+
+   *Setting the paper size in Field Papers*
+
+7. The second is used to adjust the paper orientation that you want use for print out Field Paper. You can choose between :guilabel:`portrait` 
+   or :guilabel:`landscape` as shown in the figure below.
 
 .. figure:: /static/training/osm/7_009.*    
    :align: center
 
    *Setting Paper Orientation in Field Papers*
 
-7. Next you can select the type data for your Field Papers. You can select different background for change map background. 
+8. Next you can select the type data for your Field Papers. You can select different background for change map background. 
    In this example shown in the figure below, we will select :guilabel:`Satellite Only`.
 
 .. figure:: /static/training/osm/7_010.*    
@@ -125,27 +131,27 @@ Now let’s learn how to create and use Field Papers.
 
    *Setting Map Background on Field Papers*
 
-8. You want to make sure that the window displays the area of interest that you intend to map. 
+9. You want to make sure that the window displays the area of interest that you intend to map. 
    You can use the control map window to change size page your Field paper, or add more page or less page. 
    Make sure that your map can display building and road for field survey.
 
-9. When you’re finished, click :guilabel:`Next`
+10. When you’re finished, click :guilabel:`Next`
 
 .. figure:: /static/training/osm/7_011.*
    :align: center
 
    *Next step to create Field Papers*
 
-10. Next :guilabel:`give a name to your map` in Field Papers as shown in the figure below. If you want, 
+11. Next :guilabel:`give a name to your map` in Field Papers as shown in the figure below. If you want, 
     you can add notes to be printed on the map, such as questions you want to remember to answer 
     or specific places you want to identity.
 
-.. figure:: /static/training/osm/7_012.*
+.. figure:: /static/training/osm/7_029.*
    :align: center
 
    *Fill Name Field Papers*
 
-11. Finally choose your layout. You can indicate whether you want pages only for your maps, 
+12. Finally choose your layout. You can indicate whether you want pages only for your maps, 
     or if you want notes on the same page. If you choose the notes option half of your page will be left blank 
     for taking notes, and the other half will contain your map. You can select :guilabel:`Maps Only` for default.
 
@@ -154,9 +160,9 @@ Now let’s learn how to create and use Field Papers.
 
    *Change Layout Field Papers*
 
-12. Click on :guilabel:`Finished!`
+13. Click on :guilabel:`Finished!`
 
-13. It may take a few minutes to prepare your final Field Papers map. When finished, you will see your Field Paper on this page, 
+14. It may take a few minutes to prepare your final Field Papers map. When finished, you will see your Field Paper on this page, 
     shown in the figure below.
 
 .. figure:: /static/training/osm/7_014.*    
@@ -164,7 +170,7 @@ Now let’s learn how to create and use Field Papers.
 
    *The process preparing Field Papers*
 
-14. When your print is ready, Click :guilabel:`Download PDF`. The Field Paper should begin downloading. 
+15. When your print is ready, Click :guilabel:`Download PDF`. The Field Paper should begin downloading. 
     If it loads in your browser, you may need to save it by going to :menuselection:`File ‣ Save`.
 
 .. figure:: /static/training/osm/7_015.*    
@@ -172,7 +178,7 @@ Now let’s learn how to create and use Field Papers.
 
    *Download Field Papers*
 
-15. When the download is finished, open the PDF file. Connect your computer to a printer and print the page. 
+16. When the download is finished, open the PDF file. Connect your computer to a printer and print the page. 
     If everything goes well, you should now have map printed on paper.
 
 7.4 Mapping with Field Papers
