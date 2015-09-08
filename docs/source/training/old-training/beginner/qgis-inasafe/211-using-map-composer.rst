@@ -72,37 +72,37 @@ of these as we lay our map out, so here’s an overview of what they do:
 
 
 
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
-| Display Icon                                                   | Function                                                                 |
-+================================================================+==========================================================================+
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------+
+| Display Icon                                                                | Function                                                                 |
++=============================================================================+==========================================================================+
 | .. image:: /static/training/old-training/beginner/qgis-inasafe/image249.*   | **Add New Map** will add a map element. This is what we will use to add  |
-|                                                                | the map from our project into our print layout. It should be noted,      |
-|                                                                | however, that if we change the map in our QGIS project,                  |
-|                                                                | it will not update the same map that we have added to our print composer,|
-|                                                                | as we shall see later.                                                   |
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
+|                                                                             | the map from our project into our print layout. It should be noted,      |
+|                                                                             | however, that if we change the map in our QGIS project,                  |
+|                                                                             | it will not update the same map that we have added to our print composer,|
+|                                                                             | as we shall see later.                                                   |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/old-training/beginner/qgis-inasafe/image250.*   | **Add Image** allows us to add a picture. You can add a company or       |
-|                                                                | organisational logo, or simply display images from a particular location.|
-|                                                                | You can also add an image of a compass (to point North).                 |
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
+|                                                                             | organisational logo, or simply display images from a particular location.|
+|                                                                             | You can also add an image of a compass (to point North).                 |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/old-training/beginner/qgis-inasafe/image251.*   | **Add New Label** is used for adding text to the layout,                 |
-|                                                                | such as titles or other information.                                     |
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
+|                                                                             | such as titles or other information.                                     |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/old-training/beginner/qgis-inasafe/image252.*   | **Add New Legend** is for adding a legend, which will conform to the     |
-|                                                                | active layer in the QGIS window.                                         |
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
+|                                                                             | active layer in the QGIS window.                                         |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/old-training/beginner/qgis-inasafe/image253.*   | **Add New Scalebar** is used to add a scale to the layout.               |
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/old-training/beginner/qgis-inasafe/image254.*   | **Add Ellipse/Triangle/Rectangle** is used to add one of these geometric |
-|                                                                | shapes. For example, this might be used to indicate special areas or     |
-|                                                                | highlight things on the map.                                             |
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
+|                                                                             | shapes. For example, this might be used to indicate special areas or     |
+|                                                                             | highlight things on the map.                                             |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/old-training/beginner/qgis-inasafe/image255.*   | **Add Arrow** is used to draw an arrow on the map layout.                |
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------+
 | .. image:: /static/training/old-training/beginner/qgis-inasafe/image256.*   | **Select / Move Item** allows us to choose and move the elements         |
-|                                                                | that are in the map layout. With this tool selected,                     |
-|                                                                | you can right-click on an element to lock its position.                  |
-+----------------------------------------------------------------+--------------------------------------------------------------------------+
+|                                                                             | that are in the map layout. With this tool selected,                     |
+|                                                                             | you can right-click on an element to lock its position.                  |
++-----------------------------------------------------------------------------+--------------------------------------------------------------------------+
 
 
 2. Adding a new map
