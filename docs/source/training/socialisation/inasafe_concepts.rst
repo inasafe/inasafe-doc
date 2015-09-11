@@ -299,3 +299,26 @@ in the globe produced in a standardised and rigorous way.
 +--------------+---------------------------------------------------------------+
 |Source        | WorldPop or from a  national census agency                    |
 +--------------+---------------------------------------------------------------+
+
+What is aggregation?
+--------------------
+Aggregation is the process whereby we group the results of the analysis by
+district so that you can see how many people, roads or buildings were
+affected in each area. This will help you to understand where the most
+critical needs are, and to generate reports as shown in the image below.
+Aggregation is optional in |project_name| - if you do not use aggregation,
+the entire analysis area will be used for the data summaries.
+Typically aggregation layers in |project_name| have as attributes the name
+of the district or reporting area. It is also possible to use extended
+attributes to indicate the ratio of men and women, children, adults and
+elderly living in each area. Where these are provided and the exposure layer
+is population, |project_name| will provide a demographic breakdown per
+aggregation area indicating how many men, women etc were probably affected
+in that area.
+
+.. image:: /static/training/socialisation/004_BengawanSolo.png
+   :align: left
+
+What is contextual data?
+------------------------
+
