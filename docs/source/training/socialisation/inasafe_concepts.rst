@@ -231,3 +231,4 @@ is freely available, generally well maintained and a vital resource for
 disaster management planners. There are numerous ways to download
 OpenStreetMap roads data, but our recommended way is to download the data
 using the OSM download tool provided with |project_name|.
+
