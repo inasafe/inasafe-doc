@@ -1,4 +1,4 @@
-.. _socialisation-overview:
+.. _overview:
 
 Overview
 ========
@@ -305,4 +305,5 @@ statistics on the minimum needs of the number of people that â€˜need evacuatingâ
 .. image:: /static/training/socialisation/002_output_data.png
 
 
-:ref:`Go to next module --> <functionality-datasets>`
+:ref:`Go to next module --> <introduction>`
+

@@ -1,4 +1,4 @@
-.. _socialisation-overview:
+.. _introduction:
 
 Introducing |project_name|
 ==========================
@@ -69,7 +69,7 @@ of their citizens.
 Watch the |project_name| promotional movie
 ..........................................
 If you want to know more you can watch the promotional movie.
-http://data.inasafe.org/Movies/InaSAFE_Promo_EN.mp4
+`<http://data.inasafe.org/Movies/InaSAFE_Promo_EN.mp4>`_
 
 How does |project_name| work?
 -----------------------------
@@ -87,4 +87,4 @@ might need evacuating.”*
 boundary and provide a breakdown of information about the gender and age of
 affected people.
 
-:ref:`Go to next module --> <inasafe_concepts>`
+:ref:`Go to next module --> <inasafe_concepts>`_

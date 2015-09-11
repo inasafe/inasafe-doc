@@ -6,7 +6,7 @@ A short course intended to ‘socialise’ the attendees with the basic workflows
 typically carried out when performing a natural disaster scenario analysis with
 QGIS and |project_name|.
 
-|project_name|is funded by:
+ |project_name|is funded by:
 ---------------------------
 # insert logos here
 

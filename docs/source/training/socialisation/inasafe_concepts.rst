@@ -1,4 +1,4 @@
-.. _introduction:
+.. _inasafe_concepts:
 
 Key concepts in disaster management planning with |project_name|
 ================================================================
@@ -125,14 +125,14 @@ take another approach and map each flood event, using the same boundaries
 (village / sub-village). During the event community officials can use online
 systems to update the status of the flood waters in their area.
 
- A key requirement for any local knowledge based process is that there are
- suitable mapping units available to use for deciding if an area is flood
- prone or not. In some cases participants may need to capture these, in other
- cases village or sub-village boundaries can be used. Using administrative
- boundaries may not always be ideal since the flood extents are unlikely to
- align well with the boundaries, but it may be sufficient for broad
- planning purposes; especially when response activities are managed at the
- same administrative level.
+A key requirement for any local knowledge based process is that there are
+suitable mapping units available to use for deciding if an area is flood
+prone or not. In some cases participants may need to capture these, in other
+cases village or sub-village boundaries can be used. Using administrative
+boundaries may not always be ideal since the flood extents are unlikely to
+align well with the boundaries, but it may be sufficient for broad
+planning purposes; especially when response activities are managed at the
+same administrative level.
 
 Modelling
 .........
