@@ -232,3 +232,70 @@ disaster management planners. There are numerous ways to download
 OpenStreetMap roads data, but our recommended way is to download the data
 using the OSM download tool provided with |project_name|.
 
+
++--------+---------------------------------------------------------------------+
+|        |   **Key notes for road data**                                       |
++========+=====================================================================+
+|Format  |  Vector line data                                                   |
++--------+---------------------------------------------------------------------+
+|Field   | A field representing road type                                      |
++--------+---------------------------------------------------------------------+
+|Notes   | Topologically correct data are best but not essential               |
++--------+---------------------------------------------------------------------+
+|Source  | Can be obtained from community mapping or a national mapping agency |
++--------+---------------------------------------------------------------------+
+
+
+Buildings (structure) data
+..........................
+
+.. image:: /static/training/socialisation/icon_building.png
+   :align: left
+
+Like roads, buildings footprints can be a useful dataset to have for
+understanding the impacts of a flood. For example you may wish to know
+‘how many buildings might be flooded, and what types of buildings are they?’.
+In |project_name|  you do not need to use engineering quality data.
+We are more concerned with the numbers and types of structures affected by a
+disaster and do not work at engineering tolerances needed when, for example,
+planning a new water mains system.
+
++--------+---------------------------------------------------------------------+
+|        |   **Key notes for building data**                                   |
++========+=====================================================================+
+|Format  |  Vector polygon data                                                |
++--------+---------------------------------------------------------------------+
+|Field   | A field representing building type                                  |
++--------+---------------------------------------------------------------------+
+|Notes   | |project_name| does not need 'engineering quality' data             |
++--------+---------------------------------------------------------------------+
+|Source  | Can be obtained from community mapping or a national mapping agency |
++--------+---------------------------------------------------------------------+
+
+Population data
+...............
+.. image:: /static/training/socialisation/icon_people.png
+   :align: left
+
+Population data can often be obtained from your census bureau or through
+various online data sources. One problem with population data is that it is
+often quite coarse (represented using a raster with a large pixel size) and
+so analysis at large scales (e.g. a small neighbourhood) using population
+data may not always be the best idea. Currently |project_name|  only supports
+raster based census data, but in the near future we will be releasing a
+version that supports assigning population estimates to buildings using
+census data. One of the nicest online resources for population data is
+‘WorldPop’ - a project that aims to provide population data for anywhere
+in the globe produced in a standardised and rigorous way.
+
++--------------+---------------------------------------------------------------+
+|              |   **Key notes for population data**                           |
++==============+===============================================================+
+|Format        |  Raster 'cell' data                                           |
++--------------+---------------------------------------------------------------+
+|Requirements  | Currently the data should be in EPSG:4326 CRS                 |
++--------------+---------------------------------------------------------------+
+|Notes         | Make sure you know if your data represent density or count    |
++--------------+---------------------------------------------------------------+
+|Source        | WorldPop or from a  national census agency                    |
++--------------+---------------------------------------------------------------+
