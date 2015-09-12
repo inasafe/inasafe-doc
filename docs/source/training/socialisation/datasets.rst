@@ -221,7 +221,7 @@ Population
 The raster pixel size is approximately 100m by 100m.
 
 Buildings
-..........
+.........
 
 :Name: OSM Buildings
 :Training data name: Buildings
