@@ -566,4 +566,4 @@ contingencies they should have in place.
 .. image:: /static/training/socialisation/004_impact_summary_actions.*
    :align: centre
 
-:ref:`Go to next module --> <run_basic_inasafe>`_
+:ref:`Go to next module --> <datasets>`_

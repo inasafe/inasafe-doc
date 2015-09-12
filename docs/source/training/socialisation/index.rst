@@ -50,6 +50,7 @@ package: `data.inasafe.org - InaSAFEv3.2.zip
    objective
    introduction
    inasafe_concepts
+   datasets
    run_basic_inasafe
 
 
