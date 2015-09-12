@@ -2,13 +2,18 @@
 
 Socialisation Training Manual
 =============================
-A short course intended to ‘socialise’ the attendees with the basic workflows
+A short course intended to "socialise" the attendees with the basic workflows
 typically carried out when performing a natural disaster scenario analysis with
 QGIS and |project_name|.
 
  |project_name|is funded by:
 ---------------------------
-# insert logos here
+.. image:: /static/training/socialisation/00_BNPB.*
+   :align: left
+.. image:: /static/training/socialisation/00_Skippy.*
+   :align: centre
+.. image:: /static/training/socialisation/00_WB_GFDRR.*
+   :align: right
 
 Preface
 -------
@@ -43,12 +48,9 @@ package: `data.inasafe.org - InaSAFEv3.2.zip
    :maxdepth: 1
 
    objective
-   overview
    introduction
    inasafe_concepts
-   functionality_datasets
-   introduction_of_qgis
-   run_basic_inasafe
+
 
 
 

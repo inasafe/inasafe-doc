@@ -9,28 +9,28 @@ Definitions:
 ------------
 Before we start, here are some definitions you may find useful.
 
-**Risk assessment:**  *“A methodology to determine the nature and extent of risk
+**Risk assessment:**  *"A methodology to determine the nature and extent of risk
 by analysing potential hazards and evaluating existing conditions of
 vulnerability that together could potentially harm exposed people, property,
-services, livelihoods and the environment on which they depend. ”*
+services, livelihoods and the environment on which they depend. "*
 Source `<http://www.unisdr.org/we/inform/terminology>`_
 
 
-**Contingency planning:**  *“A management process that analyses specific
+**Contingency planning:**  *"A management process that analyses specific
 potential events or emerging situations that might threaten society or the
 environment and establishes arrangements in advance to enable timely,
-effective and appropriate responses to such events and situations.”*
+effective and appropriate responses to such events and situations."*
 Source: `<http://www.unisdr.org/we/inform/terminology>`_
 
-**Response:** *“The provision of emergency services and public assistance during
+**Response:** *"The provision of emergency services and public assistance during
 or immediately after a disaster in order to save lives, reduce health impacts,
 ensure public safety and meet the basic subsistence needs of the people
-affected.”*
+affected."*
 Source: `<http://www.unisdr.org/we/inform/terminology>`_
 
-In the context of disaster management, the expected ‘normal’ situation is that
+In the context of disaster management, the expected 'normal' situation is that
 there is no disaster in progress, and people are going about their normal
-daily lives. Disaster managers need to plan for the occasions when the ‘normal’
+daily lives. Disaster managers need to plan for the occasions when the 'normal'
 situation has been replaced by a disaster and people can no longer go about
 their normal daily lives. In order to prepare for such situations, disaster
 managers need to have a basic understanding of questions like:
@@ -252,16 +252,16 @@ Buildings (structure) data
 .. image:: /static/training/socialisation/icon_building.png
    :align: left
 
-Like roads, buildings footprints can be a useful dataset to have for
+Like roads, building footprints can be a useful dataset to have for
 understanding the impacts of a flood. For example you may wish to know
-‘how many buildings might be flooded, and what types of buildings are they?’.
+'how many buildings might be flooded, and what types of buildings are they?'.
 In |project_name|  you do not need to use engineering quality data.
 We are more concerned with the numbers and types of structures affected by a
 disaster and do not work at engineering tolerances needed when, for example,
 planning a new water mains system.
 
 +--------+---------------------------------------------------------------------+
-|        |   **Key notes for building data**                                   |
+|        |   **Key notes for buildings data**                                   |
 +========+=====================================================================+
 |Format  |  Vector polygon data                                                |
 +--------+---------------------------------------------------------------------+
