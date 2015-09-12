@@ -67,7 +67,7 @@ should all the local roads be flooded.
 
 What is a hazard?
 -----------------
-.. image:: /static/training/socialisation/004_hazard.png
+.. image:: /static/training/socialisation/004_hazard.*
    :align: center
 
 In the context of |project_name| a hazard is any natural or human caused event
@@ -100,7 +100,7 @@ it along ready to use in |project_name|. In this training course we will
 focus on natural hazards, so we will take a moment here to explain how
 hazard datasets might be made.
 
-.. image:: /static/training/socialisation/004_jakarta_flood.png
+.. image:: /static/training/socialisation/004_jakarta_flood.*
    :align: center
 
 There are three main ways that can be used to generate hazard datasets:
@@ -200,7 +200,7 @@ Requirements for using flood data in |project_name|
 
 What is exposure?
 -----------------
-.. image:: /static/training/socialisation/004_exposure.png
+.. image:: /static/training/socialisation/004_exposure.*
    :align: center
 
 In the context of |project_name|, exposure refers to people, infrastructure
@@ -216,7 +216,7 @@ supports three kinds of exposure data:
 Roads data
 ..........
 
-.. image:: /static/training/socialisation/icon_road.png
+.. image:: /static/training/socialisation/icon_road.*
    :align: left
 
 Road datasets are a useful data source when you want to understand the impact
@@ -249,7 +249,7 @@ using the OSM download tool provided with |project_name|.
 Buildings (structure) data
 ..........................
 
-.. image:: /static/training/socialisation/icon_building.png
+.. image:: /static/training/socialisation/icon_building.*
    :align: left
 
 Like roads, building footprints can be a useful dataset to have for
@@ -274,7 +274,7 @@ planning a new water mains system.
 
 Population data
 ...............
-.. image:: /static/training/socialisation/icon_people.png
+.. image:: /static/training/socialisation/icon_people.*
    :align: left
 
 Population data can often be obtained from your census bureau or through
@@ -316,9 +316,254 @@ is population, |project_name| will provide a demographic breakdown per
 aggregation area indicating how many men, women etc were probably affected
 in that area.
 
-.. image:: /static/training/socialisation/004_BengawanSolo.png
-   :align: left
+.. image:: /static/training/socialisation/004_bengawan-solo.*
+   :align: center
 
 What is contextual data?
 ------------------------
 
+Contextual data are data that provide a sense of place and scale when
+preparing or viewing the results of analysis, while not actually being used
+for the analysis. For example you may include online maps to show the
+underlying relief of the study area, or an aerial image to show what
+buildings and infrastructure exist in the area.
+
+.. image:: /static/training/socialisation/004_jakarta_bing.*
+   :align: center
+Bing Aerial imagery for Jakarta, courtesy Bing Maps Open Layers
+
+What is raster vs. vector data?
+-------------------------------
+Vector data is arguably the most common kind of data you will find in the
+daily use of GIS. It describes geographic data in terms of points that may be
+connected into lines and polygons. Every object in a vector dataset is called
+a feature, and is associated with data that describes that feature. The basic
+shape of objects stored in the vector data is defined with a two-dimensional
+coordinate system / Cartesian (x, y).
+
+.. image:: /static/training/socialisation/004_vector.*
+   :align: center
+
+Raster data is different from vector data. While vector data has discrete
+features constructed out of vertices, and perhaps connected with lines
+and/or areas; raster data, is like an image. Although it may portray various
+properties of objects in the real world, these objects don’t exist as separate
+objects; rather, they are represented using pixels or cells of various
+different numerical values. These values can be real and represent different
+characteristics of the geography, such as water depth or amount of volcanic
+ash; or they can be a code than is related to the type of land use or the
+hazard class.
+
+.. image:: /static/training/socialisation/004_raster.*
+   :align: center
+
+**NOTE**
+Creating vector data is like using a pen, where you can draw a point, a line
+or a polygon, Raster data is like taking a picture with a camera, where each
+square has one value, and all the squares (pixels) combine to make a picture.
+
+Both vector and raster data can be used in |project_name|. For example, we use
+vector data for the extent of a flood hazard and as well as roads and
+building footprint; but we use raster data for modelled hazards such as
+flood depth, tsunami inundation and for population exposure.
+
+What is continuous vs.classified data?
+--------------------------------------
+
+In |project_name| we differentiate between data which is continuous and data
+which is classified. The terms can be applied equally to both hazard and
+exposure data. **Continuous** data represent a **continuously varying
+phenomenon** such as depth in meters, population counts and so on.
+
+.. image:: /static/training/socialisation/004_raster_continuous.*
+   :align: center
+
+Continuous population data - courtesy WorldPop
+
+**Classified** data represent **named groups of values**, for example, high,
+medium and low hazard. Grouping values works well when you wish to reduce data
+preparation complexity or deal with local variances in the interpretation of
+data. For example, a flood depth of 50cm may represent a high hazard zone
+in an area where people commonly have basements in their houses, and a low
+hazard zone in areas where people commonly build their houses on raised
+platforms.
+
+.. image:: /static/training/socialisation/004_raster_classified.*
+   :align: center
+
+Classified raster flood data - courtesy BNPB/Australian Government
+
+What is the analysis extent?
+----------------------------
+
+In |project_name|  you need to explicitly state what the intended analysis
+extent should be. In other words, you need to tell InaSAFE where the analysis
+should be carried out. There is a tool in InaSAFE that will allow you to drag
+a box around the intended analysis area - you should always check that you
+have done this before starting your analysis.
+Analysis extent in InaSAFE
+
+.. image:: /static/training/socialisation/004_analysis_extent.*
+   :align: center
+
+Analysis extent in |project_name|
+
+|project_name| will show you what your current desired analysis extent is
+(blue box), what the extent of your last analysis was
+(red box in the image above) and what your effective extent is
+(green box in the image above). The effective extent may not correspond
+exactly to your desired analysis extent because |project_name| always aligns
+the extent to the edge of raster pixels.
+
+What is an Impact Function?
+---------------------------
+
+.. image:: /static/training/socialisation/004_impact_function.*
+   :align: center
+
+An Impact Function (often abbreviated to IF) is software code in
+|project_name| that implements a particular algorithm to determine the
+impact of a hazard on the selected exposure. Running an impact function
+is done when you have prepared all your input data, defined your analysis
+extent and wish to now see the impact outputs.
+
+Again, we should emphasise here that Impact Functions **do not model hazards**
+- they **model the effects** of one or more hazard events on an exposure layer.
+|project_name| groups it’s impact functions according to the kind of hazard
+they work on:
+
+Supported data types for each hazard type in  |project_name|
+............................................................
+
+.. image:: /static/training/socialisation/icon_earthquake.*
+   :align: left
+
+Earthquake Impact Functions
+...........................
+
+**Earthquake hazard**:  continuous raster
+
+**Population exposure**: continuous raster with counts
+
+**Building exposure**: classified polygon or point with a type attribute
+
+
+
+.. image:: /static/training/socialisation/icon_flood.*
+   :align: left
+
+Flood Impact Functions
+......................
+
+**Flood hazard**:  continuous raster or classified polygon
+
+**Population exposure**: continuous raster with counts
+
+**Building exposure**: classified polygon or point with a type attribute
+
+
+.. image:: /static/training/socialisation/icon_volcano.*
+   :align: left
+
+
+Volcano Impact Functions
+........................
+
+**Volcano hazard**:  continuous polygon or point
+
+**Population exposure**: continuous raster with counts
+
+**Building exposure**: classified polygon with a type attribute
+
+
+
+Generic Impact Functions
+........................
+
+**Volcano hazard**:  classified polygon, classified raster or continuous raster
+
+**Population exposure**: continuous raster with counts
+
+**Building exposure**: classified polygon with a type attribute
+
+A note about generic impact functions: Generic IF’s are useful when your
+data does not conform to the a priori expectations of |project_name|.
+For example, you may wish to produce a report on buildings that might be
+affected by a landslide, drought, smoke haze or any other hazard that does not
+have an explicit Impact Function in |project_name|.
+
+Each Impact Function will generate outputs that may include:
+- an impact map layer
+- an impact summary
+- minimum needs
+- action checklists
+
+.. image:: /static/training/socialisation/004_inasafe_outputs.*
+   :align: centre
+
+
+What is an impact layer?
+------------------------
+An impact layer is a new GIS dataset that is produced as the result of
+running an impact function. It will usually represent the exposure layer.
+For example, if you do a flood  analysis on buildings, the impact layer
+produced will be a buildings layer but each building will be classified
+according to whether it is dry, wet or flooded. |project_name| will typically
+apply its own symbology to the output impact layer to make it clear which
+are the impacted buildings. This is illustrated in the image below.
+
+It should also be noted that the impact layer will only include features /
+cells that occur within the analysis extent. All others will be ‘clipped away’.
+It is very important to remember this when interpreting the map legend and the
+impact summary (see section below) because they are only relevant to the
+analysis area.  The impact layer is not saved by default. If you want to
+save this spatial data you need to do this yourself.
+
+.. image:: /static/training/socialisation/004_building_outputs.*
+   :align: centre
+
+What is the impact summary?
+---------------------------
+Whereas the impact layer represents spatial data, the impact summary is
+tabular and textual data. The impact summary provides a table (or series of
+tables) and other textual information with the numbers of buildings, roads or
+people affected, and includes other useful information such as minimum needs
+breakdowns, action checklists and summaries. The impact summary presents the
+results of the impact function in an easy to digest form. Our expectation that
+the numbers show here would form part of the input to your emergency
+management planning process - typically as a launch point for discussion and
+planning on how to have sufficient resources in order to cater for the
+impacted people, buildings or roads should a similar event to the one on
+which the scenario is based occur.
+An example of an impact summary is shown below.
+
+.. image:: /static/training/socialisation/004_impact_summary_buildings.*
+   :align: centre
+
+Example impact summary table showing breakdown of buildings flooded.
+
+What are minimum needs?
+-----------------------
+Minimum needs are a population specific reporting component for the
+impact summary. They are based on generic or regional preferences and define
+the daily food and well-being requirements for each individual who may be
+displaced during a disaster. For example you could specify that each person
+should receive 20l of fresh drinking water per day, 50l of bathing water and
+so on. |project_name| will calculate these numbers to provide an estimate of
+the total needs for the displaced population.
+
+.. image:: /static/training/socialisation/004_impact_summary_min_needs.*
+   :align: centre
+
+What are action checklists?
+---------------------------
+Action checklists are generated lists of things disaster managers should
+consider when implementing their disaster management plan. Currently the
+action checklists are fairly simplistic - they are intended to prompt
+discussion and stimulate disaster managers to think about the important
+contingencies they should have in place.
+
+.. image:: /static/training/socialisation/004_impact_summary_actions.*
+   :align: centre
+
+:ref:`Go to next module --> <run_basic_inasafe>`_

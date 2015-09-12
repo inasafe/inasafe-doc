@@ -18,22 +18,22 @@ disasters such as landslides, wildfire and so on. InaSAFE has since been
 adopted for use in many other countries - it is not ‘Indonesia specific’.
 
 The underlying goal of InaSAFE is to encourage and facilitate better planning
-for disasters - our slogan is **"better planning saves lives”**.
+for disasters - our slogan is **"better planning saves lives"**.
 
-.. image:: /static/training/socialisation/001_inasafe_slogan.png
+.. image:: /static/training/socialisation/001_inasafe_slogan.*
    :align: center
 
 Each country in the world faces its own unique challenges. According to the
 Global Assessment Report GAR for Indonesia the chief concerns are Volcanoes
 and Floods - other countries will face different challenges.
 
-.. image:: /static/training/socialisation/002_disaster_risk.png
+.. image:: /static/training/socialisation/002_disaster_risk.*
    :align: center
 
 Key disaster risks for Indonesia - Image courtesy
 `<http://www.preventionweb.net/english/hyogo/gar/2015/en/profiles/GAR_Profile_IDN.pdf>`_
 
-.. image:: /static/training/socialisation/003_disaster_loss.png
+.. image:: /static/training/socialisation/003_disaster_loss.*
    :align: center
 
 Losses resulting from disasters in Indonesia - Image courtesy
@@ -80,7 +80,7 @@ spatial impact layer along with a statistical summary and action questions.
 *“In the event of a flood similar to the 2013 Jakarta event how many people
 might need evacuating.”*
 
-.. image:: /static/training/socialisation/004_inasafe_concept.png
+.. image:: /static/training/socialisation/004_inasafe_concept.*
    :align: center
 
 |project_name| is also able to divide the impact results by administrative
