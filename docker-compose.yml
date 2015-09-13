@@ -1,0 +1,39 @@
+
+# command line on which this file is based:
+# docker run -t -i -v /home/data/staging.docs.inasafe.org:/inasafe-doc/ -w=/inasafe-doc --rm=true qgis/sphinx_html ./scripts/post_translate.sh
+
+# sphinx_pdf image can build both html and pdf
+# if you only need html, use qgis/sphinx_html
+# which is MUCH MUCH smaller!
+
+# build html, will actually stop after 1 language because script will exit 1
+#
+# docker-compose run --rm html
+# to build all
+# OR
+# docker-compose run --rm html en
+# to build english only
+#
+html:
+  image: qgis/sphinx_html
+  volumes:
+   - .:/inasafe-doc/
+  working_dir: /inasafe-doc
+  entrypoint: ./scripts/post_translate.sh
+  tty: true
+
+# build pdf AND html
+#
+# docker-compose run --rm pdf
+# to build all
+# OR
+# docker-compose run --rm pdf en
+# to build english only
+#
+pdf:
+  image: qgis/sphinx_pdf
+  volumes:
+   - .:/inasafe-doc/
+  working_dir: /inasafe-doc
+  entrypoint: ./scripts/post_translate.sh
+  tty: true
