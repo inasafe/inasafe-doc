@@ -387,6 +387,9 @@ you can change in the Impact Function Configuration in Minimum Needs Tab
 or if you want to create your own minimum needs,
 you can use minimum needs configuration (see more at Minimum Needs Configuration manuals).
 
+.. image:: /static/training/socialisation/run_basic_14.*
+   :align: center
+
 4. Print and Save your |project_name| Results
 .............................................
 
