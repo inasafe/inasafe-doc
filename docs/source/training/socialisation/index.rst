@@ -53,8 +53,6 @@ version 3.2 data packages:
    datasets
    introduction_of_qgis
    run_basic_inasafe
-   inasafe_in_more_detail
-   other_hazards
    helpful_hints_and_tips
 
 
