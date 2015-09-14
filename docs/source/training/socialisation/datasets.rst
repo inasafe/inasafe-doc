@@ -113,7 +113,7 @@ Volcano
 :Attribute field: KRB
 :Attribute value: Kawasan rawan bencana III - High; Kawasan rawan bencana II - Medium; Kawasan rawan bencana I - Low
 :Source: PVMG
-:URL: http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G_-Sinabung (publish map)
+:URL: http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (publish map)
 :Date: 2015
 :Licence:
 :Coverage: Sinabung
@@ -124,7 +124,7 @@ Volcano
    :align: center
 
 Volcano Point
-............
+.............
 
 :File name:  Sinabung_Mount_WGS84.shp
 :Training data name:  Sinabung Mt
@@ -134,7 +134,7 @@ Volcano Point
 :Attribute field: Name
 :Attribute value: Sinabung
 :Source: PVMG
-:URL: http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G_-Sinabung (publish map)
+:URL: http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (publish map)
 :Date: 2015
 :Licence:
 :Coverage: Sinabung
@@ -165,7 +165,7 @@ Volcanic Ash
    :align: center
 
 Landslide
-............
+.........
 
 :File name:  NGK_Landslide_Vulnerability_WGS84.shp
 :Training data name:  Landslide Hazard Zone

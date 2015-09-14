@@ -499,7 +499,7 @@ Each Impact Function will generate outputs that may include:
 - action checklists
 
 .. image:: /static/training/socialisation/004_inasafe_outputs.*
-   :align: centre
+   :align: center
 
 
 What is an impact layer?
@@ -520,7 +520,7 @@ analysis area.  The impact layer is not saved by default. If you want to
 save this spatial data you need to do this yourself.
 
 .. image:: /static/training/socialisation/004_building_outputs.*
-   :align: centre
+   :align: center
 
 What is the impact summary?
 ---------------------------
@@ -538,7 +538,7 @@ which the scenario is based occur.
 An example of an impact summary is shown below.
 
 .. image:: /static/training/socialisation/004_impact_summary_buildings.*
-   :align: centre
+   :align: center
 
 Example impact summary table showing breakdown of buildings flooded.
 
@@ -553,7 +553,7 @@ so on. |project_name| will calculate these numbers to provide an estimate of
 the total needs for the displaced population.
 
 .. image:: /static/training/socialisation/004_impact_summary_min_needs.*
-   :align: centre
+   :align: center
 
 What are action checklists?
 ---------------------------
@@ -564,6 +564,6 @@ discussion and stimulate disaster managers to think about the important
 contingencies they should have in place.
 
 .. image:: /static/training/socialisation/004_impact_summary_actions.*
-   :align: centre
+   :align: center
 
 :ref:`Go to next module --> <datasets>`_

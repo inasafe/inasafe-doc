@@ -11,7 +11,7 @@ QGIS and |project_name|.
 .. image:: /static/training/socialisation/00_BNPB.*
    :align: left
 .. image:: /static/training/socialisation/00_Skippy.*
-   :align: centre
+   :align: center
 .. image:: /static/training/socialisation/00_WB_GFDRR.*
    :align: right
 
@@ -51,7 +51,11 @@ version 3.2 data packages:
    introduction
    inasafe_concepts
    datasets
+   introduction_of_qgis
    run_basic_inasafe
+   inasafe_in_more_detail
+   other_hazards
+   helpful_hints_and_tips
 
 
 
