@@ -170,7 +170,7 @@ Single-event versus multiple-event hazards
 ------------------------------------------
 Hazard data used in |project_name| can be either single-event or
 multiple-event. Single event hazards are useful when you want to estimate
-scenarios like *‘how many people would be affected if we had another flood
+scenarios like *'how many people would be affected if we had another flood
 like in 2013'.* A single event hazard covers a short span of time - like a
 single flood or earthquake event. Single event data is also the most suitable
 to use for events which are stochastic e.g. earthquakes which seldom occur
@@ -285,7 +285,7 @@ data may not always be the best idea. Currently |project_name|  only supports
 raster based census data, but in the near future we will be releasing a
 version that supports assigning population estimates to buildings using
 census data. One of the nicest online resources for population data is
-‘WorldPop' - a project that aims to provide population data for anywhere
+'WorldPop' - a project that aims to provide population data for anywhere
 in the globe produced in a standardised and rigorous way.
 
 +--------------+---------------------------------------------------------------+
@@ -330,6 +330,7 @@ buildings and infrastructure exist in the area.
 
 .. image:: /static/training/socialisation/004_jakarta_bing.*
    :align: center
+
 Bing Aerial imagery for Jakarta, courtesy Bing Maps Open Layers
 
 What is raster vs. vector data?
@@ -513,7 +514,7 @@ apply its own symbology to the output impact layer to make it clear which
 are the impacted buildings. This is illustrated in the image below.
 
 It should also be noted that the impact layer will only include features /
-cells that occur within the analysis extent. All others will be ‘clipped away'.
+cells that occur within the analysis extent. All others will be 'clipped away'.
 It is very important to remember this when interpreting the map legend and the
 impact summary (see section below) because they are only relevant to the
 analysis area.  The impact layer is not saved by default. If you want to

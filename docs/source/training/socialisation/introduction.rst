@@ -15,7 +15,7 @@ impacts of a disaster will be. Initially the focus of activity was in
 Indonesia - a country that is highly vulnerable to different disasters
 including flood, tsunami, volcano, earthquakes, as well as other localised
 disasters such as landslides, wildfire and so on. InaSAFE has since been
-adopted for use in many other countries - it is not ‘Indonesia specific'.
+adopted for use in many other countries - it is not 'Indonesia specific'.
 
 The underlying goal of InaSAFE is to encourage and facilitate better planning
 for disasters - our slogan is **"better planning saves lives"**.
@@ -51,7 +51,7 @@ shared with anyone, and the source codes used to create the software are
 freely available which means that anyone with a little technical knowledge
 can contribute to the project. Being an Open Source project is important for
 us because we want as many people as possible to be able to use and improve
-the software. If “better planning saves lives”, having a tool that can be used
+the software. If 'better planning saves lives', having a tool that can be used
 by everyone to do better planning makes sense right?
 
 Open Data
@@ -77,8 +77,8 @@ How does |project_name| work?
 with one hazard scenario (e.g. the footprint of a flood) and returns a
 spatial impact layer along with a statistical summary and action questions.
 |project_name| is framed around answering questions such as:
-*“In the event of a flood similar to the 2013 Jakarta event how many people
-might need evacuating.”*
+*'In the event of a flood similar to the 2013 Jakarta event how many people
+might need evacuating.'*
 
 .. image:: /static/training/socialisation/004_inasafe_concept.*
    :align: center
