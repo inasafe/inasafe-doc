@@ -15,7 +15,7 @@ impacts of a disaster will be. Initially the focus of activity was in
 Indonesia - a country that is highly vulnerable to different disasters
 including flood, tsunami, volcano, earthquakes, as well as other localised
 disasters such as landslides, wildfire and so on. InaSAFE has since been
-adopted for use in many other countries - it is not ‘Indonesia specific’.
+adopted for use in many other countries - it is not ‘Indonesia specific'.
 
 The underlying goal of InaSAFE is to encourage and facilitate better planning
 for disasters - our slogan is **"better planning saves lives"**.

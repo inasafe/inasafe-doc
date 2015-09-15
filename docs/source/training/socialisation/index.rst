@@ -6,14 +6,17 @@ A short course intended to "socialise" the attendees with the basic workflows
 typically carried out when performing a natural disaster scenario analysis with
 QGIS and |project_name|.
 
- |project_name|is funded by:
+ |project_name| is funded by:
 ---------------------------
 .. image:: /static/training/socialisation/00_BNPB.*
    :align: left
+
 .. image:: /static/training/socialisation/00_Skippy.*
    :align: center
+
 .. image:: /static/training/socialisation/00_WB_GFDRR.*
    :align: right
+
 
 Preface
 -------
@@ -36,7 +39,7 @@ shared and redistributed under the Creative Commons Attribution 4.0
 International license.
 
 The data used in this course are available for download on
-`data.inasafe.org  <http://data.inasafe.org/>`_.
+`data.inasafe.org <http://data.inasafe.org/>`_.
 Ask your trainer which data you will need to download for the course if it is
 not provided.
 

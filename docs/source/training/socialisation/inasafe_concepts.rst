@@ -137,7 +137,7 @@ same administrative level.
 Modelling
 .........
 
-Modelling floods is an entire discipline in it’s own right. Flood modelling
+Modelling floods is an entire discipline in it's own right. Flood modelling
 can be carried out by combining factors such as precipitation, geology and
 runoff characteristics, terrain etc. to derive a model of impending or
 current flood. Modelling can use data interpolation techniques - e.g. by
@@ -171,7 +171,7 @@ Single-event versus multiple-event hazards
 Hazard data used in |project_name| can be either single-event or
 multiple-event. Single event hazards are useful when you want to estimate
 scenarios like *‘how many people would be affected if we had another flood
-like in 2013’.* A single event hazard covers a short span of time - like a
+like in 2013'.* A single event hazard covers a short span of time - like a
 single flood or earthquake event. Single event data is also the most suitable
 to use for events which are stochastic e.g. earthquakes which seldom occur
 at the same place and with the same intensity more than once.
@@ -261,7 +261,7 @@ disaster and do not work at engineering tolerances needed when, for example,
 planning a new water mains system.
 
 +--------+---------------------------------------------------------------------+
-|        |   **Key notes for buildings data**                                   |
+|        |   **Key notes for buildings data**                                  |
 +========+=====================================================================+
 |Format  |  Vector polygon data                                                |
 +--------+---------------------------------------------------------------------+
@@ -285,7 +285,7 @@ data may not always be the best idea. Currently |project_name|  only supports
 raster based census data, but in the near future we will be releasing a
 version that supports assigning population estimates to buildings using
 census data. One of the nicest online resources for population data is
-‘WorldPop’ - a project that aims to provide population data for anywhere
+‘WorldPop' - a project that aims to provide population data for anywhere
 in the globe produced in a standardised and rigorous way.
 
 +--------------+---------------------------------------------------------------+
@@ -347,7 +347,7 @@ coordinate system / Cartesian (x, y).
 Raster data is different from vector data. While vector data has discrete
 features constructed out of vertices, and perhaps connected with lines
 and/or areas; raster data, is like an image. Although it may portray various
-properties of objects in the real world, these objects don’t exist as separate
+properties of objects in the real world, these objects don't exist as separate
 objects; rather, they are represented using pixels or cells of various
 different numerical values. These values can be real and represent different
 characteristics of the geography, such as water depth or amount of volcanic
@@ -429,7 +429,7 @@ extent and wish to now see the impact outputs.
 
 Again, we should emphasise here that Impact Functions **do not model hazards**
 - they **model the effects** of one or more hazard events on an exposure layer.
-|project_name| groups it’s impact functions according to the kind of hazard
+|project_name| groups it's impact functions according to the kind of hazard
 they work on:
 
 Supported data types for each hazard type in  |project_name|
@@ -486,7 +486,7 @@ Generic Impact Functions
 
 **Building exposure**: classified polygon with a type attribute
 
-A note about generic impact functions: Generic IF’s are useful when your
+A note about generic impact functions: Generic IF's are useful when your
 data does not conform to the a priori expectations of |project_name|.
 For example, you may wish to produce a report on buildings that might be
 affected by a landslide, drought, smoke haze or any other hazard that does not
@@ -513,7 +513,7 @@ apply its own symbology to the output impact layer to make it clear which
 are the impacted buildings. This is illustrated in the image below.
 
 It should also be noted that the impact layer will only include features /
-cells that occur within the analysis extent. All others will be ‘clipped away’.
+cells that occur within the analysis extent. All others will be ‘clipped away'.
 It is very important to remember this when interpreting the map legend and the
 impact summary (see section below) because they are only relevant to the
 analysis area.  The impact layer is not saved by default. If you want to
