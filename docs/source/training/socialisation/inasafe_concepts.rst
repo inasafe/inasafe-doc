@@ -316,7 +316,7 @@ is population, |project_name| will provide a demographic breakdown per
 aggregation area indicating how many men, women etc were probably affected
 in that area.
 
-.. image:: /static/training/socialisation/004_bengawan-solo.*
+.. image:: /static/training/socialisation/004_bengawan_solo.*
    :align: center
 
 What is contextual data?
@@ -520,7 +520,7 @@ impact summary (see section below) because they are only relevant to the
 analysis area.  The impact layer is not saved by default. If you want to
 save this spatial data you need to do this yourself.
 
-.. image:: /static/training/socialisation/004_building_outputs.*
+.. image:: /static/training/socialisation/004_building_output.*
    :align: center
 
 What is the impact summary?
