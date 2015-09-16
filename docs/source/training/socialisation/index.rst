@@ -7,7 +7,7 @@ typically carried out when performing a natural disaster scenario analysis with
 QGIS and |project_name|.
 
  |project_name| is funded by:
----------------------------
+-----------------------------
 .. image:: /static/training/socialisation/00_BNPB.*
    :align: left
 
