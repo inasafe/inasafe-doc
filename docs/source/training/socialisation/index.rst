@@ -6,8 +6,9 @@ A short course intended to "socialise" the attendees with the basic workflows
 typically carried out when performing a natural disaster scenario analysis with
 QGIS and |project_name|.
 
- |project_name| is funded by:
------------------------------
+|project_name| is funded by:
+----------------------------
+
 .. image:: /static/training/socialisation/00_BNPB.*
    :align: left
 
@@ -45,7 +46,7 @@ not provided.
 
 If you are working through the training independently, please use the
 version 3.2 data packages:
-`data.inasafe.org <http://data.inasafe.org/TrainingDataPackages/>`_.
+`data.inasafe.org/TrainingDataPackages <http://data.inasafe.org/TrainingDataPackages/>`_.
 
 .. toctree::
    :maxdepth: 1
