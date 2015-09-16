@@ -55,6 +55,8 @@ version 3.2 data packages:
    introduction
    inasafe_concepts
    datasets
+   introduction_of_qgis
+   run_basic_inasafe
 
 
 
