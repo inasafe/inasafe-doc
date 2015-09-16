@@ -1,4 +1,4 @@
-.. _run-basic-inasafe:
+.. _run_basic_inasafe:
 
 .. image:: /static/training/socialisation/inasafe_logo.*
 
