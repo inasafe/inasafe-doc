@@ -87,4 +87,4 @@ might need evacuating.'*
 boundary and provide a breakdown of information about the gender and age of
 affected people.
 
-:ref:`Go to next module --> <inasafe_concepts>`_
+:ref:`Go to next module --> <inasafe_concepts>`
