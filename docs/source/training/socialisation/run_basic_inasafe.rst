@@ -68,6 +68,7 @@ this:
 
 .. image:: /static/training/socialisation/run_basic_00.*
    :align: center
+   :width: 500 pt
 
 
 As you can see from the picture above, you will presented with several
@@ -127,6 +128,7 @@ a. Run |project_name| Analysis
 
 .. image:: /static/training/socialisation/run_basic_01.*
    :align: center
+   :width: 300 pt
 
 Click :guilabel:`Run` in the lower right corner of the |project_name| panel to start
 the analysis process. If everything was set up correctly, you should get
@@ -135,6 +137,7 @@ should be added to the map.
 
 .. image:: /static/training/socialisation/run_basic_02.*
    :align: center
+   :width: 200 pt
 
 b. Interpret The Result
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -151,6 +154,7 @@ generated from |project_name|.
 
 .. image:: /static/training/socialisation/run_basic_03.*
    :align: center
+   :width: 300 pt
 
 .. note:: If you didn't see these colours, you might need to turn off the data layer above the *Estimated building affected* layer.
 
@@ -165,12 +169,14 @@ generated from |project_name|.
 
 .. image:: /static/training/socialisation/run_basic_04.*
    :align: center
+   :width: 300 pt
 
 In the |project_name| panel we now see the impact summary. The details of are
 explained below.
 
 .. image:: /static/training/socialisation/run_basic_05.*
    :align: center
+   :width: 200 pt
 
 -  **Hazard Category**: divides the results into several categories
    based on the threshold set in the hazard analysis. In this impact
@@ -232,11 +238,13 @@ next to :guilabel:`be flooded`.
 
 .. image:: /static/training/socialisation/run_basic_06.*
    :align: center
+   :width: 300 pt
 
 It will open the |project_name| impact function configuration.
 
 .. image:: /static/training/socialisation/run_basic_07.*
    :align: center
+   :width: 400 pt
 
 Here you can change the threshold of the flood according to your need,
 in this example we change it to 0.8m. After you change the threshold to 0.8,
@@ -278,6 +286,7 @@ Confirm that the |project_name| panel on the right side is set to query how many
 
 .. image:: /static/training/socialisation/run_basic_08.*
    :align: center
+   :width: 250 pt
 
 a. Run |project_name| Analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -318,12 +327,14 @@ Let’s explore the result again to make you understand more about the |project_
 
 .. image:: /static/training/socialisation/run_basic_09.*
    :align: center
+   :width: 300 pt
 
 In the |project_name| panel we now see the impact summary. The details of are
 explained below.
 
 .. image:: /static/training/socialisation/run_basic_10.*
    :align: center
+   :width: 200 pt
 
 - **Population needing evacuation:** |project_name| estimates the number of
   affected people in the analysis area. It is assumed that all of these
@@ -352,6 +363,7 @@ explained below.
 
 .. image:: /static/training/socialisation/run_basic_11.*
    :align: center
+   :width: 300 pt
 
 c. Understand defaults minimum needs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -389,6 +401,7 @@ you can use minimum needs configuration (see more at Minimum Needs Configuration
 
 .. image:: /static/training/socialisation/run_basic_14.*
    :align: center
+   :width: 400 pt
 
 4. Print and Save your |project_name| Results
 .............................................
@@ -402,6 +415,7 @@ as two separate pdf files. To print |project_name| result:
 
 .. image:: /static/training/socialisation/run_basic_12.*
    :align: center
+   :width: 300 pt
 
 - **Area to print**: leave this set to the default **analysis extent**.
 
@@ -425,6 +439,7 @@ the other has tables from the impact summary. Take a look at the result.
 
 .. image:: /static/training/socialisation/run_basic_13.*
    :align: center
+   :width: 500 pt
 
 We are now already have the impact result in pdf files, but what if we
 want to keep the impact result in shapefile? Is the impact result

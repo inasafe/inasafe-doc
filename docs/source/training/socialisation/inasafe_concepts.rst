@@ -69,6 +69,7 @@ What is a hazard?
 -----------------
 .. image:: /static/training/socialisation/004_hazard.*
    :align: center
+   :width: 200 pt
 
 In the context of |project_name| a hazard is any natural or human caused event
 or series of events that may negatively impact the population, infrastructure
@@ -102,6 +103,7 @@ hazard datasets might be made.
 
 .. image:: /static/training/socialisation/004_jakarta_flood.*
    :align: center
+   :width: 400 pt
 
 There are three main ways that can be used to generate hazard datasets:
 
@@ -202,6 +204,7 @@ What is exposure?
 -----------------
 .. image:: /static/training/socialisation/004_exposure.*
    :align: center
+   :width: 200 pt
 
 In the context of |project_name|, exposure refers to people, infrastructure
 or land areas that may be affected by a disaster. Currently |project_name|
@@ -218,6 +221,7 @@ Roads data
 
 .. image:: /static/training/socialisation/icon_road.*
    :align: left
+   :width: 150 pt
 
 Road datasets are a useful data source when you want to understand the impact
 of a flood on roads infrastructure. With the |project_name| flood on roads
@@ -251,6 +255,7 @@ Buildings (structure) data
 
 .. image:: /static/training/socialisation/icon_building.*
    :align: left
+   :width: 150 pt
 
 Like roads, building footprints can be a useful dataset to have for
 understanding the impacts of a flood. For example you may wish to know
@@ -276,6 +281,7 @@ Population data
 ...............
 .. image:: /static/training/socialisation/icon_people.*
    :align: left
+   :width: 150 pt
 
 Population data can often be obtained from your census bureau or through
 various online data sources. One problem with population data is that it is
@@ -318,6 +324,7 @@ in that area.
 
 .. image:: /static/training/socialisation/004_bengawan_solo.*
    :align: center
+   :width: 400 pt
 
 What is contextual data?
 ------------------------
@@ -330,6 +337,7 @@ buildings and infrastructure exist in the area.
 
 .. image:: /static/training/socialisation/004_jakarta_bing.*
    :align: center
+   :width: 400 pt
 
 Bing Aerial imagery for Jakarta, courtesy Bing Maps Open Layers
 
@@ -344,6 +352,7 @@ coordinate system / Cartesian (x, y).
 
 .. image:: /static/training/socialisation/004_vector.*
    :align: center
+   :width: 300 pt
 
 Raster data is different from vector data. While vector data has discrete
 features constructed out of vertices, and perhaps connected with lines
@@ -357,6 +366,7 @@ hazard class.
 
 .. image:: /static/training/socialisation/004_raster.*
    :align: center
+   :width: 200 pt
 
 **NOTE**
 Creating vector data is like using a pen, where you can draw a point, a line
@@ -378,6 +388,7 @@ phenomenon** such as depth in meters, population counts and so on.
 
 .. image:: /static/training/socialisation/004_raster_continuous.*
    :align: center
+   :width: 500 pt
 
 Continuous population data - courtesy WorldPop
 
@@ -391,6 +402,7 @@ platforms.
 
 .. image:: /static/training/socialisation/004_raster_classified.*
    :align: center
+   :width: 500 pt
 
 Classified raster flood data - courtesy BNPB/Australian Government
 
@@ -406,6 +418,7 @@ Analysis extent in InaSAFE
 
 .. image:: /static/training/socialisation/004_analysis_extent.*
    :align: center
+   :width: 350 pt
 
 Analysis extent in |project_name|
 
@@ -421,6 +434,7 @@ What is an Impact Function?
 
 .. image:: /static/training/socialisation/004_impact_function.*
    :align: center
+   :width: 300 pt
 
 An Impact Function (often abbreviated to IF) is software code in
 |project_name| that implements a particular algorithm to determine the
@@ -438,6 +452,7 @@ Supported data types for each hazard type in  |project_name|
 
 .. image:: /static/training/socialisation/icon_earthquake.*
    :align: left
+   :width: 80 pt
 
 Earthquake Impact Functions
 ...........................
@@ -452,6 +467,7 @@ Earthquake Impact Functions
 
 .. image:: /static/training/socialisation/icon_flood.*
    :align: left
+   :width: 80 pt
 
 Flood Impact Functions
 ......................
@@ -465,6 +481,7 @@ Flood Impact Functions
 
 .. image:: /static/training/socialisation/icon_volcano.*
    :align: left
+   :width: 80 pt
 
 
 Volcano Impact Functions
@@ -501,6 +518,7 @@ Each Impact Function will generate outputs that may include:
 
 .. image:: /static/training/socialisation/004_inasafe_outputs.*
    :align: center
+   :width: 300 pt
 
 
 What is an impact layer?
@@ -522,6 +540,7 @@ save this spatial data you need to do this yourself.
 
 .. image:: /static/training/socialisation/004_building_output.*
    :align: center
+   :width: 300 pt
 
 What is the impact summary?
 ---------------------------
@@ -540,6 +559,7 @@ An example of an impact summary is shown below.
 
 .. image:: /static/training/socialisation/004_impact_summary_buildings.*
    :align: center
+   :width: 500 pt
 
 Example impact summary table showing breakdown of buildings flooded.
 
@@ -555,6 +575,7 @@ the total needs for the displaced population.
 
 .. image:: /static/training/socialisation/004_impact_summary_min_needs.*
    :align: center
+   :width: 500 pt
 
 What are action checklists?
 ---------------------------
@@ -566,5 +587,6 @@ contingencies they should have in place.
 
 .. image:: /static/training/socialisation/004_impact_summary_actions.*
    :align: center
+   :width: 300 pt
 
 :ref:`Go to next module --> <datasets>`

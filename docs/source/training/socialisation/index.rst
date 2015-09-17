@@ -9,14 +9,9 @@ QGIS and |project_name|.
 |project_name| is funded by:
 ----------------------------
 
-.. image:: /static/training/socialisation/00_BNPB.*
-   :align: left
-
-.. image:: /static/training/socialisation/00_Skippy.*
+.. image:: /static/training/socialisation/00_Logo.*
    :align: center
-
-.. image:: /static/training/socialisation/00_WB_GFDRR.*
-   :align: right
+   :width: 400 pt
 
 
 Preface

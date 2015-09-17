@@ -34,6 +34,7 @@ Flood Model
 
 .. image:: /static/training/socialisation/005_data_flood_model.png
    :align: center
+   :width: 350 pt
 
 Flood Footprint
 ...............
@@ -55,6 +56,7 @@ Flood Footprint
 
 .. image:: /static/training/socialisation/005_data_flood_footprint.png
    :align: center
+   :width: 350 pt
 
 Earthquake
 ..........
@@ -78,6 +80,7 @@ Earthquake
 
 .. image:: /static/training/socialisation/005_data_earthquake.png
    :align: center
+   :width: 400 pt
 
 Tsunami
 .......
@@ -101,6 +104,7 @@ Tsunami
 
 .. image:: /static/training/socialisation/005_data_tsunami.png
    :align: center
+   :width: 400 pt
 
 Volcano
 .......
@@ -122,6 +126,7 @@ Volcano
 
 .. image:: /static/training/socialisation/005_data_volcano_hazard.*
    :align: center
+   :width: 400 pt
 
 Volcano Point
 .............
@@ -142,6 +147,7 @@ Volcano Point
 
 .. image:: /static/training/socialisation/005_data_volcano_sinabung.*
    :align: center
+   :width: 400 pt
 
 Volcanic Ash
 ............
@@ -163,6 +169,7 @@ Volcanic Ash
 
 .. image:: /static/training/socialisation/005_data_volcanic_ash.*
    :align: center
+   :width: 400 pt
 
 Landslide
 .........
@@ -189,6 +196,7 @@ Landslide
 
 .. image:: /static/training/socialisation/005_data_landslide_zones.*
    :align: center
+   :width: 350 pt
 
 
 Exposure data
@@ -215,8 +223,8 @@ Population
     freely-available population distribution maps for the whole of Asia.
 
 .. image:: /static/training/socialisation/005_data_asiapop.png
-   :height: 500pt
    :align: center
+   :width: 500 pt
 
 The raster pixel size is approximately 100m by 100m.
 
@@ -242,6 +250,7 @@ Buildings
 
 .. image:: /static/training/socialisation/005_data_osm_building.png
    :align: center
+   :width: 400 pt
 
 |GoA| has been working with the Humanitarian OpenStreetMap Team (HOT) since 2011 
 in piloting and training OpenStreetMap in Indonesia.
@@ -296,6 +305,7 @@ Roads
 
 .. image:: /static/training/socialisation/005_data_osm_road.png
    :align: center
+   :width: 400 pt
 
 Aggregation Data
 ================
