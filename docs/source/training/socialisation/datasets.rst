@@ -44,7 +44,7 @@ Flood Footprint
 :Data Type: Classied
 :Scenario: Single event
 :Attribute field: FLOODPRONE
-:Attribute value: Wet (Yes), Dry (No)
+:Attribute value map: Wet (Yes), Dry (No)
 :Source: |OSM| and BPBD DKI Jakarta
 :Date: 18 January 2013
 :Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
@@ -111,7 +111,7 @@ Volcano
 :Data type: Classified
 :Scenario: Multiple event
 :Attribute field: KRB
-:Attribute value: Kawasan rawan bencana III - High; Kawasan rawan bencana II - Medium; Kawasan rawan bencana I - Low
+:Attribute value map: Kawasan rawan bencana III - High; Kawasan rawan bencana II - Medium; Kawasan rawan bencana I - Low
 :Source: PVMG
 :URL: http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (publish map)
 :Date: 2015
@@ -152,7 +152,7 @@ Volcanic Ash
 :Data type: Classified
 :Scenario: Single event
 :Attribute field: KRB
-:Attribute value: High, Medium, Low
+:Attribute value map: High, Medium, Low
 :Source: PVMG - BNPB
 :URL:
 :Date: 2014
@@ -173,7 +173,7 @@ Landslide
 :Data type: Classified
 :Scenario: Single event
 :Attribute field: KRB
-:Attribute value: High Landslide Vulnerability Zone - High; Moderate Landslide Vulnerability Zone - Medium; Low Landslide Vulnerability Zone - Low
+:Attribute value map: High Landslide Vulnerability Zone - High; Moderate Landslide Vulnerability Zone - Medium; Low Landslide Vulnerability Zone - Low
 :Source: PVMBG
 :URL: http://vsi.esdm.go.id/galeri/index.php/Peta-Zona-Kerentanan-Gerakan-Tanah-01/Peta-Zona-Kerentanan-Gerakan-Tanah/Prov-NTT (publish map)
 :Date: 2009
@@ -228,7 +228,7 @@ Buildings
 :Geometry: Polygon and point
 :Data type: Classified
 :Attribute field: Type
-:Attribute value: types of buildings; hospital, school etc
+:Attribute value map: types of buildings; hospital, school etc
 :Source: OpenStreetMap
 :URL: http://openstreetmap.org
 :Date: July 2015
@@ -282,7 +282,7 @@ Roads
 :Geometry: Line
 :Data type: Classified
 :Attribute field: Type
-:Attribute value: types of roads
+:Attribute value map: types of roads
 :Source: OpenStreetMap
 :URL: http://openstreetmap.org
 :Date: July 2015
@@ -308,7 +308,7 @@ Administrative Boundary
 :Geometry: Polygon
 :Data type: Classified
 :Attribute field: Kabupaten / Kecamatan / Desa
-:Attribute value: toponymy of the area
+:Attribute value map: toponymy of the area
 :Source: BPS
 :URL:
 :Date: 2010
