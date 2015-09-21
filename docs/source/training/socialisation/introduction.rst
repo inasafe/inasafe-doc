@@ -22,6 +22,7 @@ for disasters - our slogan is **"better planning saves lives"**.
 
 .. image:: /static/training/socialisation/001_inasafe_slogan.*
    :align: center
+   :width: 400 pt
 
 Each country in the world faces its own unique challenges. According to the
 Global Assessment Report GAR for Indonesia the chief concerns are Volcanoes
@@ -29,12 +30,14 @@ and Floods - other countries will face different challenges.
 
 .. image:: /static/training/socialisation/002_disaster_risk.*
    :align: center
+   :width: 500 pt
 
 Key disaster risks for Indonesia - Image courtesy
 `<http://www.preventionweb.net/english/hyogo/gar/2015/en/profiles/GAR_Profile_IDN.pdf>`_
 
 .. image:: /static/training/socialisation/003_disaster_loss.*
    :align: center
+   :width: 500 pt
 
 Losses resulting from disasters in Indonesia - Image courtesy
 `<http://www.preventionweb.net/english/hyogo/gar/2015/en/profiles/GAR_Profile_IDN.pdf>`_
@@ -82,6 +85,7 @@ might need evacuating.'*
 
 .. image:: /static/training/socialisation/004_inasafe_concept.*
    :align: center
+   :width: 400 pt
 
 |project_name| is also able to divide the impact results by administrative
 boundary and provide a breakdown of information about the gender and age of
