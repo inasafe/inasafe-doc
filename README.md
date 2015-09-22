@@ -5,6 +5,8 @@
 InaSAFE Documentation
 =====================
 
+[![Join the chat at https://gitter.im/AIFDR/inasafe-doc](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/AIFDR/inasafe-doc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 PDF versions of the Documentation are available here: http://inasafe.org/pdf/
 
 Tools you need to install, if you want to work on the documentation
