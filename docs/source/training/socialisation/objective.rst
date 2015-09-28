@@ -18,7 +18,8 @@ skills related to using |project_name|:
     * Understand the concept of hazard data
     * Understand the concept of exposure data
     * Understand the concept of aggregation data
-    * Understand the concept of impact layer and reports
+    * Understand the concept of an impact layer
+    * Understand teh concept of an impact summary
 
 
 * Data preparation
@@ -29,7 +30,6 @@ skills related to using |project_name|:
 * Analysis – Basic InaSAFE
     * Be able to run a flood analysis using |project_name| - on buildings
     * Be able to run a flood analysis using |project_name| - on population
-    * Be able to run a flood analysis using |project_name| with aggregation.
     * Be able to generate a PDF map from the results of an analysis
 
 * Practical application
@@ -63,8 +63,8 @@ Credits
 -------
 
 |project_name| was originally developed by the Australian Government in
-partnership with The National Agency for Disaster Management, Indonesia, and
-the World Bank-|GFDRR|).
+partnership with The National Agency for Disaster Management (BNPB), Indonesia,
+and the World Bank-|GFDRR|).
 
 This |project_name| Socialisation Training Manual was developed by
 Kartoza in collaboration with the Australian Government and the Humanitarian
@@ -123,6 +123,3 @@ Geoscience Australia
 
 Adityo Dwijananto, Harry Mahardika and Wulansari Khairunisa - Humanitarian OpenStreetmap Team Indonesia
 
-
-
-:ref:`Go to next module --> <introduction>`

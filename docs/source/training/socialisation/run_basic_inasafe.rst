@@ -25,19 +25,19 @@ To develop the participant’s basic understanding of the |project_name| workflo
 and application of |project_name| in the Disaster Management sector. By the end
 of this exercise; participants will:
 
--  Be able to run a flood analysis using |project_name| - on buildings
+-  Be able to run a flood analysis using |project_name| - on buildings;
 
--  Be able to run a flood analysis using |project_name| - on population
+-  Be able to run a flood analysis using |project_name| - on population;
 
--  understand the flood impact default settings;
+-  Understand the flood impact default settings;
 
--  understand the impact summary report;
+-  Understand the impact summary report;
 
--  be able to change the analysis threshold and run a new scenario; and
+-  Be able to change the analysis threshold and run a new scenario;
 
--  Be able to generate a PDF map from the results of an analysis
+-  Be able to generate a PDF map from the results of an analysis;
 
--  be able to save their work to share with others.
+-  Be able to save their work to share results with others.
 
 Data for this exercise
 ----------------------

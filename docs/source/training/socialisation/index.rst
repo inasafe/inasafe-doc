@@ -24,8 +24,8 @@ reduction programs. However, this can only be effective when risk assessments
 and contingency planning utilise realistic hazard scenarios.
 Realistic hazard scenarios require scientific, sound and up-to-date data hazard
 information as well as up-to-date, scale appropriate exposure data.
-Such map-based risk assessments and contingency plans offer accurate and
-comprehensive results for better disaster management and sectorial planning.
+Such map-based risk assessments and contingency plans contribute to better
+disaster management planning and response.
 
 
 Course media

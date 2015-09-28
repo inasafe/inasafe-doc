@@ -1,6 +1,7 @@
 .. _datasets:
 
-
+Datasets
+========
 The data used in this course is available for download at
 `data.inasafe.org  <http://data.inasafe.org/>`_. Ask your trainer what data you 
 will need to download for the course, if it is not provided.
@@ -12,7 +13,7 @@ packages:
 `data.inasafe.org - Other Hazards v3.2.zip <http://data.inasafe.org/TrainingDataPackages/OtherHazardsv3.2.zip>`_
 
 Hazard data
-===========
+-----------
 Flood Model
 ...........
 
@@ -200,7 +201,7 @@ Landslide
 
 
 Exposure data
-=============
+-------------
 
 Population
 ..........
@@ -308,7 +309,7 @@ Roads
    :width: 400 pt
 
 Aggregation Data
-================
+----------------
 
 Administrative Boundary
 .......................
@@ -330,4 +331,4 @@ Administrative Boundary
 
 
 
-:ref:`Go to next module --> <run_basic_inasafe>`
+:ref:`Go to next module --> <introduction_to_qgis>`

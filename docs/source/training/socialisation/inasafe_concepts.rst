@@ -1,9 +1,26 @@
 .. _inasafe_concepts:
 
-Key concepts in disaster management planning with |project_name|
-================================================================
-In this section we explain the basic concepts of |project_name| and the merits
-of disaster management planning.
+|project_name|Concepts
+======================
+In this section we explain the key concepts of |project_name| and explore the
+merits of disaster management planning.
+
+How does |project_name| work?
+-----------------------------
+|project_name| combines one exposure data layer (e.g. location of buildings)
+with one hazard scenario (e.g. the footprint of a flood) and returns a
+spatial impact layer along with a statistical summary and action questions.
+|project_name| is framed around answering questions such as:
+*'In the event of a flood similar to the 2013 Jakarta event how many people
+might need evacuating.'*
+
+.. image:: /static/training/socialisation/004_inasafe_concept.*
+   :align: center
+   :width: 400 pt
+
+|project_name| is also able to divide the impact results by administrative
+boundary and provide a breakdown of information about the gender and age of
+affected people.
 
 Definitions:
 ------------
@@ -13,21 +30,25 @@ Before we start, here are some definitions you may find useful.
 by analysing potential hazards and evaluating existing conditions of
 vulnerability that together could potentially harm exposed people, property,
 services, livelihoods and the environment on which they depend. "*
-Source `<http://www.unisdr.org/we/inform/terminology>`_
 
+Source `<http://www.unisdr.org/we/inform/terminology>`_
 
 **Contingency planning:**  *"A management process that analyses specific
 potential events or emerging situations that might threaten society or the
 environment and establishes arrangements in advance to enable timely,
 effective and appropriate responses to such events and situations."*
+
 Source: `<http://www.unisdr.org/we/inform/terminology>`_
 
 **Response:** *"The provision of emergency services and public assistance during
 or immediately after a disaster in order to save lives, reduce health impacts,
 ensure public safety and meet the basic subsistence needs of the people
 affected."*
+
 Source: `<http://www.unisdr.org/we/inform/terminology>`_
 
+What is disaster management?
+----------------------------
 In the context of disaster management, the expected 'normal' situation is that
 there is no disaster in progress, and people are going about their normal
 daily lives. Disaster managers need to plan for the occasions when the 'normal'
