@@ -8,9 +8,9 @@ will need to download for the course, if it is not provided.
 
 If you are working through the training independently, use the following data
 packages:
-`data.inasafe.org - Run Basic InaSAFEv3.2.zip <http://data.inasafe.org/TrainingDataPackages/RunBasicInaSAFEv3.2.zip>`_
-`data.inasafe.org - Run Intermediate InaSAFEv3.2.zip <http://data.inasafe.org/TrainingDataPackages/RunIntermediateInaSAFEv3.2.zip>`_
-`data.inasafe.org - Other Hazards v3.2.zip <http://data.inasafe.org/TrainingDataPackages/OtherHazardsv3.2.zip>`_
+", `data.inasafe.org - Run Basic InaSAFEv3.2.zip <http://data.inasafe.org/TrainingDataPackages/RunBasicInaSAFEv3.2.zip>`_
+", `data.inasafe.org - Run Intermediate InaSAFEv3.2.zip <http://data.inasafe.org/TrainingDataPackages/RunIntermediateInaSAFEv3.2.zip>`_
+", `data.inasafe.org - Other Hazards v3.2.zip <http://data.inasafe.org/TrainingDataPackages/OtherHazardsv3.2.zip>`_
 
 Hazard data
 -----------
@@ -328,7 +328,3 @@ Administrative Boundary
 :Data description:  The data represent administrative boundaries in Indonesia
 
 
-
-
-
-:ref:`Go to next module --> <introduction_to_qgis>`
