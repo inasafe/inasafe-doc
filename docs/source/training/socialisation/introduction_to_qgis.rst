@@ -53,7 +53,7 @@ Learning objectives:
 Data for this exercise:
 -----------------------
 
-The data for this exercise is available in Introduction of QGIS zip which can be downloaded
+The data for this exercise is available in Introduction to QGIS.zip which can be downloaded
 in `InaSAFE Training Data Packages <http://data.inasafe.org/TrainingDataPackages/>`__.
 For QGIS download you can download at `QGIS Website <http://qgis.org/en/site/>`__
 (we will explain how to download and install QGIS later in this exercise).
@@ -413,4 +413,3 @@ and learning how to symbolize the data layer.
 We also learned how to install InaSAFE through QGIS plugin.
 Later on we will learn to operate InaSAFE with DKI Jakarta flood scenario.
 
-:ref:`Go to next module --> <run_basic_inasafe>`
