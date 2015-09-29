@@ -213,7 +213,7 @@ Landslide
                           after mapping can change the landslide zone in the map.
                           The high vulnerability zone is to be avoided for
                           settlement areas or strategic infrastructure. If it
-                          can't avoided, build on the moderate zone, but
+                          can't be avoided, build on the moderate zone, but
                           detailed research is needed to avoid landslide happen.
                           In moderate zone, detailed research is also needed
                           when planning to cut the slope.
