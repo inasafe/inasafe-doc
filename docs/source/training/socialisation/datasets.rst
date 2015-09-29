@@ -180,7 +180,7 @@ Volcanic Ash
 :Date:                    2014
 :Licence:
 :Coverage:                Sinabung region
-:Description:        The data show the spread of volcanic ash from Mount
+:Description:             The data show the spread of volcanic ash from Mount
                           Sinabung during the 2014 eruption.
 ========================  ======================================================
 
@@ -227,64 +227,85 @@ Exposure data
 
 Population
 ..........
-========================  ==============================================================================
-:File name:               Java_Population
-
-:Training data:           population
-:Geometry:                Raster
-:Data type:               Continuous
-:Unit:                    Count
-:Source:                  World Pop
-:URL:                     http://worldpop.org.uk
-:Date:                    2010
-:Licence:                 `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
-:Coverage:                ASEAN +
-:Description:             High resolution (1 pixel represents 100m x 100m,
-                          contemporary data on human population distributions
-                          are a prerequisite for the accurate measurement of
-                          the impacts of population growth, for monitoring
-                          changes and for planning interventions. The AsiaPop
-                          project was initiated in July 2011 with the aim of
-                          producing detailed and freely-available population
-                          distribution maps for the whole of Asia. This project
-                          has expanded as the World Pop project to include
-                          other continents.
-========================  ==============================================================================
+=====================  ==============================================================================
+:File name:            Java_Population
+:Training data:        population
+:Geometry:             Raster
+:Data type:            Continuous
+:Unit:                 Count
+:Source:               World Pop
+:URL:                  http://worldpop.org.uk
+:Date:                 2010
+:Licence:              `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Coverage:             ASEAN +
+:Description:          High resolution (1 pixel represents 100m x 100m,
+                       contemporary data on human population distributions
+                       are a prerequisite for the accurate measurement of
+                       the impacts of population growth, for monitoring
+                       changes and for planning interventions. The AsiaPop
+                       project was initiated in July 2011 with the aim of
+                       producing detailed and freely-available population
+                       distribution maps for the whole of Asia. This project
+                       has expanded as the World Pop project to include
+                       other continents.
+=====================  ==============================================================================
 .. image:: /static/training/socialisation/005_data_asiapop.png
    :align: center
    :width: 500 pt
 
-The raster pixel size is approximately 100m by 100m.
+====================   ==========================    =============
+**Training Package**   **Name**                      **Coverage**
+Run Basic InaSAFE      Jakarta_Population_WGS84      Jakarta
+Other Hazards          Padang_Population_WGS84       Padang
+Other Hazards          Maumere_Population_WGS84      Maumere
+Other Hazards          NGK_Population_WGS84          Nagekeo
+Other Hazards          Sinabung_Population_WGS84      Sinabung
+====================   ==========================    =============
 
 Buildings
 .........
-
-:Name: OSM Buildings
-:Training data name: Buildings
-:Geometry: Polygon and point
-:Data type: Classified
-:Attribute field: Type
-:Attribute value map: types of buildings; hospital, school etc
-:Source: OpenStreetMap
-:URL: http://openstreetmap.org
-:Date: July 2015
-:Licence: `Open Data Commons Open Database License (ODbL) <http://opendatacommons.org/licenses/odbl/>`_
-:Coverage: World - incomplete
-:Data description:  OpenStreetMap is a collaborative project to create a free
-    editable map of the world. Two major driving forces behind the
-    establishment and growth of OSM have been restrictions on use or
-    availability of map information across much of the world and the advent
-    of inexpensive portable satellite navigation devices.
+========================  ==============================================================================================
+:Name:                     OSM Buildings
+:Training data:            see table below
+:Geometry:                 Polygon or point
+:Data type:                Classified
+:Attribute field:          Type
+:Attribute value map:      hospital,
+                           school,
+                           clinic,  etc
+:Source:                   OpenStreetMap
+:URL:                      http://openstreetmap.org
+:Date:                     July 2015
+:Licence:                  `Open Data Commons Open Database License (ODbL) <http://opendatacommons.org/licenses/odbl/>`_
+:Coverage:                 World - incomplete
+:Description:              OpenStreetMap is a collaborative project to create a
+                           free editable map of the world. Two major driving forces
+                           behind the establishment and growth of OSM have been
+                           restrictions on the use or availability of map
+                           information across much of the world and the advent
+                           of inexpensive portable satellite navigation devices.
+========================  ==============================================================================================
 
 .. image:: /static/training/socialisation/005_data_osm_building.png
    :align: center
    :width: 400 pt
 
 |GoA| has been working with the Humanitarian OpenStreetMap Team (HOT) since 2011 
-in piloting and training OpenStreetMap in Indonesia.
+to pilot and train OpenStreetMap data capture in Indonesia.
 So far over 4 million buildings have been mapped.
-Some of the scenarios we use in this training are situated in Jakarta, Yogyakarta
-(Merapi), Sumatra (Padang) and Flores (Maumere).
+Some of the scenarios we use in the training materials are situated in Jakarta,
+Yogyakarta (Merapi), Sumatra (Padang) and Flores (Maumere).
+
+====================   ==========================    =============
+**Training Package**   **Name**                      **Coverage**
+Run Basic InaSAFE      Jakarta_Buildings_WGS84       Jakarta
+Other Hazards          Padang_Buildings_WGS84        Padang
+Other Hazards          Maumere_Buildings_WGS84       Maumere
+Other Hazards          NGK_Buildings_WGS84           Nagekeo
+Other Hazards          Sinabung_Buildings_WGS84      Sinabung
+====================   ==========================    =============
+
+
 Each one of these areas has a different OpenStreetMap data collection
 methodology.
 Below the data collection methodologies used in Jakarta and Padang are explained:
@@ -313,45 +334,61 @@ Below the data collection methodologies used in Jakarta and Padang are explained
 
 Roads
 .....
-
-:Name: OSM Roads
-:Training data name: Roads
-:Geometry: Line
-:Data type: Classified
-:Attribute field: Type
-:Attribute value map: types of roads
-:Source: OpenStreetMap
-:URL: http://openstreetmap.org
-:Date: July 2015
-:Licence: `Open Data Commons Open Database License (ODbL) <http://opendatacommons.org/licenses/odbl/>`_
-:Coverage: World - incomplete
-:Data description:  OpenStreetMap is a collaborative project to create a free
-    editable map of the world. Two major driving forces behind the
-    establishment and growth of OSM have been restrictions on use or
-    availability of map information across much of the world and the advent
-    of inexpensive portable satellite navigation devices.
+========================  ==============================================================================================
+:Name:                    OSM Roads
+:Training data:           Roads
+:Geometry:                Line
+:Data type:               Classified
+:Attribute field:         Type
+:Attribute value map:     types of roads
+:Source:                  OpenStreetMap
+:URL:                     http://openstreetmap.org
+:Date:                    July 2015
+:Licence:                 `Open Data Commons Open Database License (ODbL) <http://opendatacommons.org/licenses/odbl/>`_
+:Coverage:                World - incomplete
+:Description:             OpenStreetMap is a collaborative project to create a
+                          free editable map of the world. Two major driving
+                          forces behind the establishment and growth of OSM
+                          have been restrictions on use or availability of
+                          map information across much of the world and the
+                          advent of inexpensive portable satellite navigation
+                          devices.
+========================  ==============================================================================================
 
 .. image:: /static/training/socialisation/005_data_osm_road.png
    :align: center
    :width: 400 pt
+
+====================   ==========================    =============
+**Training Package**   **Name**                      **Coverage**
+QGIS Introduction      Jakarta_Roads_WGS84           Jakarta
+====================   ==========================    =============
 
 Aggregation Data
 ----------------
 
 Administrative Boundary
 .......................
-
-:Name: Administrative Boundary
-:Training data name: District / Subdistrict / village
-:Geometry: Polygon
-:Data type: Classified
-:Attribute field: Kabupaten / Kecamatan / Desa
-:Attribute value map: toponymy of the area
-:Source: BPS
+========================  ======================================================
+:Name:                    Administrative Boundary
+:Training data:           see table below
+:Geometry:                Polygon
+:Data type:               Classified
+:Attribute field:         Kabupaten / Kecamatan / Desa
+:Attribute value map:     toponymy of the area
+:Source:                  BPS
 :URL:
-:Date: 2010
+:Date:                    2010
 :Licence:
 :Coverage:
-:Data description:  The data represent administrative boundaries in Indonesia
+:Description:             Administrative boundaries in Indonesia
+========================  ======================================================
 
-
+========================   ==================================   =============
+**Training Package**       **Name**                             **Coverage**
+Run Intermediate InaSAFE   Jakarta_District_Boundary_WGS84       Jakarta
+Run Intermediate InaSAFE   Jakarta_Subdistrict_Boundary_WGS84    Jakarta
+Run Intermediate InaSAFE   Sikka_Village_Boundary_WGS84          Maumere
+Run Intermediate InaSAFE   NGk_Villages_BPS_WGS84                Nagakeo
+Run Intermediate InaSAFE   Padang_Village_Boundary_WGS84         Padang
+========================   ==================================   =============
