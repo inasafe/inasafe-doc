@@ -99,7 +99,7 @@ the source of the data.
 |                              |               | the Australian Government. `See more at...                                      |
 |                              |               | <http://inasafe.org/en/training/socialisation/datasets.html>`__   |
 +------------------------------+---------------+---------------------------------------------------------------------------------+
-| Java_population_WGS84        | WorldPop       | High resolution, modelled data for human population distributions.              |
+| Java_population_WGS84        | WorldPop      | High resolution, modelled data for human population distributions.              |
 |                              |               | `See more at...                                                                 |
 |                              |               | <http://inasafe.org/en/training/socialisation/datasets.html>`__   |
 +------------------------------+---------------+---------------------------------------------------------------------------------+

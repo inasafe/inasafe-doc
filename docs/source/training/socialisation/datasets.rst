@@ -83,7 +83,9 @@ Earthquake
                        For more     information go to http://earthquake.usgs.gov/earthquakes/map/.
                        Pre-event / scenario based shakemaps must be modelled by
                        earthquake specialists.
+
 =====================  ===========================================================================
+
 .. image:: /static/training/socialisation/005_data_earthquake.png
    :align: center
    :width: 400 pt
@@ -109,6 +111,7 @@ Tsunami
                       maximum depth occurring across the entire tsunami event.
                       For more information visit http://anuga.anu.edu.au/
                       and http://intermap.com/
+
 ====================  ===========================================================================
 
 .. image:: /static/training/socialisation/005_data_tsunami.png
@@ -134,7 +137,9 @@ Volcano
 :Coverage:             Sinabung
 :Description:          This map contains information about the hazard level for
                        each zone. It can be used to identify the potential impact.
+
 =====================  ==================================================================================================================================
+
 
 .. image:: /static/training/socialisation/005_data_volcano_hazard.*
    :align: center
@@ -156,6 +161,7 @@ Volcano Point
 :Licence:
 :Coverage:                Sinabung
 :Description:             The data shows the location of Mount Sinabung peak.
+
 ========================  ==================================================================================================================================
 
 
@@ -182,6 +188,7 @@ Volcanic Ash
 :Coverage:                Sinabung region
 :Description:             The data show the spread of volcanic ash from Mount
                           Sinabung during the 2014 eruption.
+
 ========================  ======================================================
 
 .. image:: /static/training/socialisation/005_data_volcanic_ash.*
@@ -214,6 +221,7 @@ Landslide
                           detailed research is needed to avoid landslide happen.
                           In moderate zone, detailed research is also needed
                           when planning to cut the slope.
+
 ========================  =========================================================================================================================================
 
 
