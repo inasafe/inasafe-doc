@@ -16,22 +16,23 @@ Hazard data
 -----------
 Flood Model
 ...........
-
-:File name:  Jakarta_Flood_HKV_WGS84.tif
-:Training data name:  A flood similar to the 2007 Jakarta event
-:Geometry: Raster
-:Data Type: Continuous
-:Scenario: Single event
-:Unit: metres
-:Source: HKV
-:URL: http://deltares.nl
-:Date: 2012
-:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
-:Coverage: Jakarta
-:Data description: The flood model was created by scientists/engineers in coordination
-    with DKI Jakarta Public Works based on the 2007 flood conditions. The
-    water depth is the maximum depth occurring across the entire flooding
-    period.
+====================  =========================================================================
+:File name:           Jakarta_Flood_HKV_WGS84.tif
+:Training data:       A flood similar to the 2007 Jakarta event
+:Geometry:            Raster
+:Data Type:           Continuous
+:Scenario:            Single event
+:Unit:                metres
+:Source:              HKV
+:URL:                 http://deltares.nl
+:Date:                2012
+:Licence:             `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Coverage:            Jakarta
+:Description:         The flood model was created by scientists/engineers in
+                      coordination with DKI Jakarta Public Works based on the
+                      2007 flood conditions. The water depth is the maximum
+                      depth occurring across the entire flooding period.
+====================  =========================================================================
 
 .. image:: /static/training/socialisation/005_data_flood_model.png
    :align: center
@@ -39,21 +40,23 @@ Flood Model
 
 Flood Footprint
 ...............
-
-:File name:  Jakarta_Flood_WGS84.shp
-:Training data name:  A flood in Jakarta like 2013
-:Geometry: Polygon
-:Data Type: Classied
-:Scenario: Single event
-:Attribute field: FLOODPRONE
-:Attribute value map: Wet (Yes), Dry (No)
-:Source: |OSM| and BPBD DKI Jakarta
-:Date: 18 January 2013
-:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
-:Coverage: Jakarta
-:Data description: Along with sub-village boundaries that were mapped during the DKI
-    mapping project, this dataset was used to identify flood areas
-    based on information provided by the villages.
+=====================  =========================================================================
+:File name:            Jakarta_Flood_WGS84.shp
+:Training data:        A flood in Jakarta like 2013
+:Geometry:             Polygon
+:Data Type:            Classified
+:Scenario:             Single event
+:Attribute field:      FLOODPRONE
+:Attribute value map:  Wet (Yes), Dry (No)
+:Source:               |OSM| and BPBD DKI Jakarta
+:Date:                 18 January 2013
+:Licence:              `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Coverage:             Jakarta
+:Description:          Along with sub-village boundaries that were mapped during
+                       the DKI mapping project, this dataset was used to
+                       identify flood areas based on information provided by the
+                       villages.
+=====================  =========================================================================
 
 .. image:: /static/training/socialisation/005_data_flood_footprint.png
    :align: center
@@ -61,47 +64,52 @@ Flood Footprint
 
 Earthquake
 ..........
-
-:File name:  Padang_EQ_2009_WGS84.tif
-:Training data name: Earthquake in Padang 2009
-:Geometry: Raster
-:Data type: Continuous
-:Scenario: Single event
-:Unit: MMI
-:Source: Badan Geologi and |GoA|
-:Date: 2012
-:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
-:Coverage: Padang
-:About: A shakemap is a representation of ground shaking produced by an
-    earthquake. This particular scenario was modelled based on the 30th
-    September 2009 Mw 7.9 earthquake in Padang. ShakeMaps are generated
-    automatically following moderate and large earthquakes by USGS. For more
-    information go to http://earthquake.usgs.gov/earthquakes/map/. Pre-event /
-    scenario based shakemaps must be modelled by earthquake specialists.
-
+=====================  ===========================================================================
+:File name:            Padang_EQ_2009_WGS84.tif
+:Training data:        Earthquake in Padang 2009
+:Geometry:             Raster
+:Data type:            Continuous
+:Scenario:             Single event
+:Unit:                 MMI
+:Source:               Badan Geologi and |GoA|
+:Date:                 2012
+:Licence:              `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Coverage:             Padang
+:Description:          A shakemap is a representation of ground shaking
+                       produced by an earthquake. This particular scenario was
+                       modelled on the 30th September 2009 Mw 7.9 earthquake
+                       in Padang. ShakeMaps are generated automatically
+                       following moderate and large earthquakes by USGS.
+                       For more     information go to http://earthquake.usgs.gov/earthquakes/map/.
+                       Pre-event / scenario based shakemaps must be modelled by
+                       earthquake specialists.
+=====================  ===========================================================================
 .. image:: /static/training/socialisation/005_data_earthquake.png
    :align: center
    :width: 400 pt
 
 Tsunami
 .......
-
-:File name:  Maumere_Tsunami_WGS84.tif
-:Training data name:  Tsunami in Maumere (Mw 8.1)
-:Geometry: Raster
-:Data type: Continuous
-:Scenario: Single event
-:Source: |GoA| and Badan Geologi
-:Date: 2012
-:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
-:Coverage: Maumere, Flores
-:About: In September 2011, the Indonesian government held a national exercise
-    in Maumere, Flores. |AIFDR| and |GoA| assisted Badan Geology in developing a
-    tsunami model for Maumere based on an Mw 8.1 earthquake. The Tsunami was
-    modelled using open source software called ANUGA and elevation data
-    from NEXTMap. The water depth is the maximum depth occurring across the
-    entire tsunami event. For more information visit http://anuga.anu.edu.au/
-    and http://intermap.com/
+====================  ===========================================================================
+:File name:           Maumere_Tsunami_WGS84.tif
+:Training data:       Tsunami in Maumere (Mw 8.1)
+:Geometry:            Raster
+:Data type:           Continuous
+:Scenario:            Single event
+:Source:              |GoA| and Badan Geologi
+:Date:                2012
+:Licence:             `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Coverage:            Maumere, Flores
+:Description:         In September 2011, the Indonesian government held a
+                      national exercise in Maumere, Flores. |AIFDR| and |GoA|
+                      assisted Badan Geology to develop a tsunami model for
+                      Maumere based on an Mw 8.1 earthquake. The Tsunami was
+                      modelled using open source software called ANUGA and
+                      elevation data from NEXTMap. The water depth is the
+                      maximum depth occurring across the entire tsunami event.
+                      For more information visit http://anuga.anu.edu.au/
+                      and http://intermap.com/
+====================  ===========================================================================
 
 .. image:: /static/training/socialisation/005_data_tsunami.png
    :align: center
@@ -109,21 +117,24 @@ Tsunami
 
 Volcano
 .......
-
-:File name:  Sinabung_Hazard_Map_2015_WGS84.shp
-:Training data name:  Sinabung Hazard Map
-:Geometry: Polygon
-:Data type: Classified
-:Scenario: Multiple event
-:Attribute field: KRB
-:Attribute value map: Kawasan rawan bencana III - High; Kawasan rawan bencana II - Medium; Kawasan rawan bencana I - Low
-:Source: PVMG
-:URL: http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (publish map)
-:Date: 2015
+=====================  ==================================================================================================================================
+:File name:            Sinabung_Hazard_Map_2015_WGS84.shp
+:Training data:        Sinabung Hazard Map
+:Geometry:             Polygon
+:Data type:            Classified
+:Scenario:             Multiple event
+:Attribute field:      KRB
+:Attribute value map:  Kawasan rawan bencana III - High;
+                       Kawasan rawan bencana II - Medium;
+                       Kawasan rawan bencana I - Low
+:Source:               PVMG
+:URL:                  http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (published map)
+:Date:                 2015
 :Licence:
-:Coverage: Sinabung
-:Data description: This map contains information about the hazard level for
-    each zone, so that can be used to identify the potential impacted.
+:Coverage:             Sinabung
+:Description:          This map contains information about the hazard level for
+                       each zone. It can be used to identify the potential impact.
+=====================  ==================================================================================================================================
 
 .. image:: /static/training/socialisation/005_data_volcano_hazard.*
    :align: center
@@ -131,20 +142,22 @@ Volcano
 
 Volcano Point
 .............
-
-:File name:  Sinabung_Mount_WGS84.shp
-:Training data name:  Sinabung Mt
-:Geometry: Point
-:Data type: Classified
-:Scenario: Multiple event
-:Attribute field: Name
-:Attribute value: Sinabung
-:Source: PVMG
-:URL: http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (publish map)
-:Date: 2015
+========================  ==================================================================================================================================
+:File name:               Sinabung_Mount_WGS84.shp
+:Training data:           Sinabung Mt
+:Geometry:                Point
+:Data type:               Classified
+:Scenario:                Multiple event
+:Attribute field:         Name
+:Attribute value:         Sinabung
+:Source:                  PVMG
+:URL:                     http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (publish map)
+:Date:                    2015
 :Licence:
-:Coverage: Sinabung
-:Data description: The data locate the peak of Mount Sinabung.
+:Coverage:                Sinabung
+:Description:             The data shows the location of Mount Sinabung peak.
+========================  ==================================================================================================================================
+
 
 .. image:: /static/training/socialisation/005_data_volcano_sinabung.*
    :align: center
@@ -152,21 +165,24 @@ Volcano Point
 
 Volcanic Ash
 ............
-
-:File name:  Sinabung_Volcanic_Ash_WGS84.shp
-:Training data name:  Sinabung Volcanic Ash
-:Geometry: Polygon
-:Data type: Classified
-:Scenario: Single event
-:Attribute field: KRB
-:Attribute value map: High, Medium, Low
-:Source: PVMG - BNPB
+========================  ======================================================
+:File name:               Sinabung_Volcanic_Ash_WGS84.shp
+:Training data:           Sinabung Volcanic Ash
+:Geometry:                Polygon
+:Data type:               Classified
+:Scenario:                Single event
+:Attribute field:         KRB
+:Attribute value map:     High
+                          Medium
+                          Low
+:Source:                  PVMG - BNPB
 :URL:
-:Date: 2014
+:Date:                    2014
 :Licence:
-:Coverage: Sinabung region
-:Data description: The data show the spread of volcanic ash from Mount
-    Sinabung during the 2014 eruption.
+:Coverage:                Sinabung region
+:Description:        The data show the spread of volcanic ash from Mount
+                          Sinabung during the 2014 eruption.
+========================  ======================================================
 
 .. image:: /static/training/socialisation/005_data_volcanic_ash.*
    :align: center
@@ -174,26 +190,32 @@ Volcanic Ash
 
 Landslide
 .........
-
-:File name:  NGK_Landslide_Vulnerability_WGS84.shp
-:Training data name:  Landslide Hazard Zone
-:Geometry: Polygon
-:Data type: Classified
-:Scenario: Single event
-:Attribute field: KRB
-:Attribute value map: High Landslide Vulnerability Zone - High; Moderate Landslide Vulnerability Zone - Medium; Low Landslide Vulnerability Zone - Low
-:Source: PVMBG
-:URL: http://vsi.esdm.go.id/galeri/index.php/Peta-Zona-Kerentanan-Gerakan-Tanah-01/Peta-Zona-Kerentanan-Gerakan-Tanah/Prov-NTT (publish map)
-:Date: 2009
+========================  =========================================================================================================================================
+:File name:               NGK_Landslide_Vulnerability_WGS84.shp
+:Training data:           Landslide Hazard Zone
+:Geometry:                Polygon
+:Data type:               Classified
+:Scenario:                Single event
+:Attribute field:         KRB
+:Attribute value map:     High Landslide Vulnerability Zone - High;
+                          Moderate Landslide Vulnerability Zone - Medium;
+                          Low Landslide Vulnerability Zone - Low
+:Source:                  PVMBG
+:URL:                     http://vsi.esdm.go.id/galeri/index.php/Peta-Zona-Kerentanan-Gerakan-Tanah-01/Peta-Zona-Kerentanan-Gerakan-Tanah/Prov-NTT (published map)
+:Date:                    2009
 :Licence:
 :Coverage:
-:Data description: Landslide vulnerability maps show the regions where
-    landslides may occur. Topographic and landuse changes after mapping can
-    change the landslide zone in the map.
-    The high vulnerability zone is to be avoided for settlement area or
-    strategic infrastructure. If it can't avoided, build on the moderate zone,
-    but detailed research is needed to avoid landslide happen. In moderate
-    zone, detailed research is also needed when planning to cut the slope.
+:Description:             Landslide vulnerability maps show the regions where
+                          landslides may occur. Topographic and landuse changes
+                          after mapping can change the landslide zone in the map.
+                          The high vulnerability zone is to be avoided for
+                          settlement areas or strategic infrastructure. If it
+                          can't avoided, build on the moderate zone, but
+                          detailed research is needed to avoid landslide happen.
+                          In moderate zone, detailed research is also needed
+                          when planning to cut the slope.
+========================  =========================================================================================================================================
+
 
 .. image:: /static/training/socialisation/005_data_landslide_zones.*
    :align: center
@@ -205,24 +227,29 @@ Exposure data
 
 Population
 ..........
+========================  ==============================================================================
+:File name:               Java_Population
 
-:Name: AsiaPop
-:Training data name: population
-:Geometry: Raster
-:Data type: Continuous
-:Unit: Count
-:Source: World Pop
-:URL: http://worldpop.org.uk
-:Date: 2010
-:Licence: `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
-:Coverage: ASEAN +
-:Data description: High resolution (1 pixel represents 100m x 100m),
-    contemporary data on human population distributions are a prerequisite
-    for the accurate measurement of the impacts of population growth, for
-    monitoring changes and for planning interventions. The AsiaPop project
-    was initiated in July 2011 with an aim of producing detailed and
-    freely-available population distribution maps for the whole of Asia.
-
+:Training data:           population
+:Geometry:                Raster
+:Data type:               Continuous
+:Unit:                    Count
+:Source:                  World Pop
+:URL:                     http://worldpop.org.uk
+:Date:                    2010
+:Licence:                 `Creative Commons by Attribution (CCbyA) <http://creativecommons.org/>`_
+:Coverage:                ASEAN +
+:Description:             High resolution (1 pixel represents 100m x 100m,
+                          contemporary data on human population distributions
+                          are a prerequisite for the accurate measurement of
+                          the impacts of population growth, for monitoring
+                          changes and for planning interventions. The AsiaPop
+                          project was initiated in July 2011 with the aim of
+                          producing detailed and freely-available population
+                          distribution maps for the whole of Asia. This project
+                          has expanded as the World Pop project to include
+                          other continents.
+========================  ==============================================================================
 .. image:: /static/training/socialisation/005_data_asiapop.png
    :align: center
    :width: 500 pt

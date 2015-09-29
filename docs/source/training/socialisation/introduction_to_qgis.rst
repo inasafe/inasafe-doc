@@ -351,9 +351,9 @@ Symbology help me understand better about the data that we will work on.
 9. InaSAFE Installation and Set up
 ..................................
 
-As we know it, InaSAFE made only for QGIS. It is one of plugin
-which available in QGIS Repository. Make sure before you follow steps below,
-you have connected to internet connection. To get InaSAFE please look steps as follow:
+As we know, InaSAFE plugin has been built for QGIS. It is one of the plugins
+which are available in QGIS Repository. Make sure before you follow steps below,
+you have a working internet connection. To get InaSAFE please follow these steps:
 
 - Go to :menuselection:`Plugins -> Manage and install plugins` menu.
 
@@ -364,17 +364,17 @@ you have connected to internet connection. To get InaSAFE please look steps as f
 .. image:: /static/training/socialisation/Intro_QGIS_33.*
 
 - Select InaSAFE and click :guilabel:`Install plugin` and 
-   wait for a moment until InaSAFE dock appear
+   wait for a moment until the InaSAFE dock appears
    in the right side of QGIS main window.
 
 - Close the plugin manager window.
 
-Congratulations! Now you already have InaSAFE in your QGIS.
+Congratulations! Now you have InaSAFE installed in QGIS.
 
 10. InaSAFE Toolbars
 ....................
 
-After successfully Install InaSAFE, You should now have an **InaSAFE dock**
+After successfully installing InaSAFE, You should now have an **InaSAFE dock**
 on the right hand side of your screen. It should look like this:
 
 .. image:: /static/training/socialisation/Intro_QGIS_34.*
@@ -389,7 +389,7 @@ toolbar, you can right-click on the top toolbar and check InaSAFE.
 +--------------------------------------------------------------+----------------------------------+
 | .. image:: /static/training/socialisation/Intro_QGIS_37.*    | Set Analysis Area                |
 +--------------------------------------------------------------+----------------------------------+
-| .. image:: /static/training/socialisation/Intro_QGIS_38.*    | Toogle Scenario Outline          |
+| .. image:: /static/training/socialisation/Intro_QGIS_38.*    | Toggle Scenario Outline          |
 +--------------------------------------------------------------+----------------------------------+
 | .. image:: /static/training/socialisation/Intro_QGIS_39.*    | Keyword Editor                   |
 +--------------------------------------------------------------+----------------------------------+
@@ -404,12 +404,12 @@ Summary
 -------
 
 In this exercise you have learned about QGIS, the free and
-open source software for process spatial data.
+open source software for processing spatial data.
 You have learned where to get QGIS, how to install QGIS,
-understand the QGIS layout and useful toolbar,
-learning how to turn ON/OFF qgis layer,
-and learning how to symbolize the data layer.
+understand the QGIS layout and looked at some useful toolbars,
+learning how to turn ON/OFF qgis layers,
+and learned how to symbolize the data layers.
 
-We also learned how to install InaSAFE through QGIS plugin.
-Later on we will learn to operate InaSAFE with DKI Jakarta flood scenario.
+We also learned how to install InaSAFE through the QGIS plugin manager.
+Later on we will learn how to operate InaSAFE with DKI Jakarta flood scenario.
 

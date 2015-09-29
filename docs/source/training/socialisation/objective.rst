@@ -64,7 +64,7 @@ Credits
 
 |project_name| was originally developed by the Australian Government in
 partnership with The National Agency for Disaster Management (BNPB), Indonesia,
-and the World Bank-|GFDRR|).
+and the World Bank-(|GFDRR|).
 
 This |project_name| Socialisation Training Manual was developed by
 Kartoza in collaboration with the Australian Government and the Humanitarian
