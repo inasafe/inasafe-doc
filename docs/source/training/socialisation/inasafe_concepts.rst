@@ -34,7 +34,6 @@ Before we start, here are some definitions you may find useful.
                            could potentially harm exposed people, property,
                            services, livelihoods and the environment on which
                            they depend. "*
-
 -------------------------  ------------------------------------------------------
 **Contingency planning:**  *"A management process that analyses specific
                            potential events or emerging situations that might
