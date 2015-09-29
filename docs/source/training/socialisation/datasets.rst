@@ -8,9 +8,11 @@ will need to download for the course, if it is not provided.
 
 If you are working through the training independently, use the following data
 packages:
-", `data.inasafe.org - Run Basic InaSAFEv3.2.zip <http://data.inasafe.org/TrainingDataPackages/RunBasicInaSAFEv3.2.zip>`_
-", `data.inasafe.org - Run Intermediate InaSAFEv3.2.zip <http://data.inasafe.org/TrainingDataPackages/RunIntermediateInaSAFEv3.2.zip>`_
-", `data.inasafe.org - Other Hazards v3.2.zip <http://data.inasafe.org/TrainingDataPackages/OtherHazardsv3.2.zip>`_
+
+- `Introduction to QGIS.zip <http://data.inasafe.org/TrainingDataPackages/Indroduction To QGIS.zip>`_
+- `Run Basic InaSAFE v3.2.zip <http://data.inasafe.org/TrainingDataPackages/Run Basic InaSAFE v3.2.zip>`_
+- `Run Intermediate InaSAFE v3.2.zip <http://data.inasafe.org/TrainingDataPackages/Run Intermediate InaSAFE v3.2.zip>`_
+- `Other Hazards v3.2.zip <http://data.inasafe.org/TrainingDataPackages/Other Hazards v3.2.zip>`_
 
 Hazard data
 -----------
@@ -120,25 +122,22 @@ Tsunami
 
 Volcano
 .......
-=====================  ==================================================================================================================================
-:File name:            Sinabung_Hazard_Map_2015_WGS84.shp
-:Training data:        Sinabung Hazard Map
-:Geometry:             Polygon
-:Data type:            Classified
-:Scenario:             Multiple event
-:Attribute field:      KRB
-:Attribute value map:  Kawasan rawan bencana III - High;
-                       Kawasan rawan bencana II - Medium;
-                       Kawasan rawan bencana I - Low
-:Source:               PVMG
-:URL:                  http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (published map)
-:Date:                 2015
+========================  ==================================================================================================================================
+:File name:               Sinabung_Hazard_Map_2015_WGS84.shp
+:Training data:           Sinabung Hazard Map
+:Geometry:                Polygon
+:Data type:               Classified
+:Scenario:                Multiple event
+:Attribute field:         KRB
+:Attribute value map:     Kawasan rawan bencana III - High; Kawasan rawan bencana II - Medium; Kawasan rawan bencana I - Low
+:Source:                  PVMG
+:URL:                     http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (published map)
+:Date:                    2015
 :Licence:
-:Coverage:             Sinabung
-:Description:          This map contains information about the hazard level for
-                       each zone. It can be used to identify the potential impact.
-
-=====================  ==================================================================================================================================
+:Coverage:                Sinabung
+:Description:             This map contains information about the hazard level for
+                          each zone. It can be used to identify the potential impact.
+========================  ==================================================================================================================================
 
 
 .. image:: /static/training/socialisation/005_data_volcano_hazard.*
@@ -178,9 +177,7 @@ Volcanic Ash
 :Data type:               Classified
 :Scenario:                Single event
 :Attribute field:         KRB
-:Attribute value map:     High
-                          Medium
-                          Low
+:Attribute value map:     High; Medium; Low
 :Source:                  PVMG - BNPB
 :URL:
 :Date:                    2014
@@ -188,7 +185,6 @@ Volcanic Ash
 :Coverage:                Sinabung region
 :Description:             The data show the spread of volcanic ash from Mount
                           Sinabung during the 2014 eruption.
-
 ========================  ======================================================
 
 .. image:: /static/training/socialisation/005_data_volcanic_ash.*
@@ -221,7 +217,6 @@ Landslide
                           detailed research is needed to avoid landslide happen.
                           In moderate zone, detailed research is also needed
                           when planning to cut the slope.
-
 ========================  =========================================================================================================================================
 
 
@@ -235,6 +230,7 @@ Exposure data
 
 Population
 ..........
+
 =====================  ==============================================================================
 :File name:            Java_Population
 :Training data:        population
@@ -257,6 +253,7 @@ Population
                        has expanded as the World Pop project to include
                        other continents.
 =====================  ==============================================================================
+
 .. image:: /static/training/socialisation/005_data_asiapop.png
    :align: center
    :width: 500 pt
@@ -267,7 +264,7 @@ Run Basic InaSAFE      Jakarta_Population_WGS84      Jakarta
 Other Hazards          Padang_Population_WGS84       Padang
 Other Hazards          Maumere_Population_WGS84      Maumere
 Other Hazards          NGK_Population_WGS84          Nagekeo
-Other Hazards          Sinabung_Population_WGS84      Sinabung
+Other Hazards          Sinabung_Population_WGS84     Sinabung
 ====================   ==========================    =============
 
 Buildings
@@ -303,6 +300,8 @@ to pilot and train OpenStreetMap data capture in Indonesia.
 So far over 4 million buildings have been mapped.
 Some of the scenarios we use in the training materials are situated in Jakarta,
 Yogyakarta (Merapi), Sumatra (Padang) and Flores (Maumere).
+
+Building data provided for training include:
 
 ====================   ==========================    =============
 **Training Package**   **Name**                      **Coverage**
@@ -367,6 +366,8 @@ Roads
    :align: center
    :width: 400 pt
 
+Road data provided for training include:
+
 ====================   ==========================    =============
 **Training Package**   **Name**                      **Coverage**
 QGIS Introduction      Jakarta_Roads_WGS84           Jakarta
@@ -392,11 +393,13 @@ Administrative Boundary
 :Description:             Administrative boundaries in Indonesia
 ========================  ======================================================
 
+Aggregation data provided for training include:
+
 ========================   ==================================   =============
 **Training Package**       **Name**                             **Coverage**
 Run Intermediate InaSAFE   Jakarta_District_Boundary_WGS84       Jakarta
 Run Intermediate InaSAFE   Jakarta_Subdistrict_Boundary_WGS84    Jakarta
-Run Intermediate InaSAFE   Sikka_Village_Boundary_WGS84          Maumere
-Run Intermediate InaSAFE   NGk_Villages_BPS_WGS84                Nagakeo
-Run Intermediate InaSAFE   Padang_Village_Boundary_WGS84         Padang
+Other Hazards              Sikka_Village_Boundary_WGS84          Maumere
+Other Hazards              NGK_Villages_BPS_WGS84                Nagakeo
+Other Hazards              Padang_Village_Boundary_WGS84         Padang
 ========================   ==================================   =============

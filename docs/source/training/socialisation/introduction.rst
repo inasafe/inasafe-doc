@@ -46,7 +46,7 @@ In the |project_name| project we strive to provide a tool that will enhance the
 abilities of disaster managers to prepare for disasters and to reduce the
 impact of those disasters on the local population and infrastructure.
 
-Open Source
+Open source
 ...........
 From the beginning, |project_name| has been an Open Source project (GPL license).
 This means there are no licensing fees, the software can be freely copied and
@@ -57,7 +57,7 @@ us because we want as many people as possible to be able to use and improve
 the software. If 'better planning saves lives', having a tool that can be used
 by everyone to do better planning makes sense right?
 
-Open Data
+Open data
 .........
 A key driving force in the ability to use tools such as |project_name| is
 open access to relevant, up-to-date and well maintained geospatial data.

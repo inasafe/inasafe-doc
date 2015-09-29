@@ -19,7 +19,7 @@ skills related to using |project_name|:
     * Understand the concept of exposure data
     * Understand the concept of aggregation data
     * Understand the concept of an impact layer
-    * Understand teh concept of an impact summary
+    * Understand the concept of an impact summary
 
 
 * Data preparation
@@ -36,7 +36,7 @@ skills related to using |project_name|:
     * Be able to explain the purpose of |project_name|
     * Be able to interpret |project_name| analysis results and use them in disaster management.
 
-Target Audience
+Target audience
 ---------------
 
 * Persons responsible for developing disaster management plans
