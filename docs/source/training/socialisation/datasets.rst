@@ -301,7 +301,7 @@ So far over 4 million buildings have been mapped.
 Some of the scenarios we use in the training materials are situated in Jakarta,
 Yogyakarta (Merapi), Sumatra (Padang) and Flores (Maumere).
 
-Building data provided for training include:
+Training data provided:
 
 ====================   ==========================    =============
 **Training Package**   **Name**                      **Coverage**
@@ -366,7 +366,7 @@ Roads
    :align: center
    :width: 400 pt
 
-Road data provided for training include:
+Training data provided:
 
 ====================   ==========================    =============
 **Training Package**   **Name**                      **Coverage**
@@ -393,7 +393,7 @@ Administrative Boundary
 :Description:             Administrative boundaries in Indonesia
 ========================  ======================================================
 
-Aggregation data provided for training include:
+Training data provided:
 
 ========================   ==================================   =============
 **Training Package**       **Name**                             **Coverage**
