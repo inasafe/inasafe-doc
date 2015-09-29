@@ -34,6 +34,7 @@ Before we start, here are some definitions you may find useful.
                       potentially harm exposed people, property, services,
                       livelihoods and the environment on which they depend. "*
 ====================  ==========================================================
+
 Source `<http://www.unisdr.org/we/inform/terminology>`_
 
 =========================  =====================================================
@@ -44,6 +45,7 @@ Source `<http://www.unisdr.org/we/inform/terminology>`_
                            and appropriate responses to such events and
                            situations."*
 =========================  =====================================================
+
 Source: `<http://www.unisdr.org/we/inform/terminology>`_
 
 =============  =================================================================
@@ -52,6 +54,7 @@ Source: `<http://www.unisdr.org/we/inform/terminology>`_
                health impacts,ensure public safety and meet the basic
                subsistence needs of the people affected."*
 =============  =================================================================
+
 Source: `<http://www.unisdr.org/we/inform/terminology>`_
 
 What is disaster management?

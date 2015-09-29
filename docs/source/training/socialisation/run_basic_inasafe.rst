@@ -96,17 +96,15 @@ the source of the data.
 | Buildings                    | OpenStreetMap | Most of the important buildings in Jakarta                                      |
 |                              |               | have been mapped through the collaboration                                      |
 |                              |               | of BPBD DKI Jakarta, OpenStreetMap and                                          |
-|                              |               | the Australian Government. `See more at...                                      |
-|                              |               | <http://inasafe.org/en/training/socialisation/datasets.html>`__                 |
+|                              |               | the Australian Government.                                                      |
+|                              |               | `See more at... <http://inasafe.org/en/training/socialisation/datasets.html>`__ |
 +------------------------------+---------------+---------------------------------------------------------------------------------+
 | Java_population_WGS84        | WorldPop      | High resolution, modelled data for human population distributions.              |
-|                              |               | `See more at...                                                                 |
-|                              |               | <http://inasafe.org/en/training/socialisation/datasets.html>`__                 |
+|                              |               | `See more at... <http://inasafe.org/en/training/socialisation/datasets.html>`__ |
 +------------------------------+---------------+---------------------------------------------------------------------------------+
-| a Flood similiar to 2007     | HKV           |                                                                                 |
-| Jakarta Event                |               | The flood model was created by scientists/engineers in coordination with        |
-|                              |               | DKI Jakarta Public Works based on the 2007 flood conditions. `See more at...    |
-|                              |               | <http://inasafe.org/en/training/socialisation/datasets.html>`__                 |
+| a Flood similiar to 2007     | HKV           | The flood model was created by scientists/engineers in coordination with        |
+|  Jakarta Event               |               | DKI Jakarta Public Works based on the 2007 flood conditions.                    |
+|                              |               | `See more at... <http://inasafe.org/en/training/socialisation/datasets.html>`__ |
 +------------------------------+---------------+---------------------------------------------------------------------------------+
 
 Let's move into the next section where we will run our first |project_name|
