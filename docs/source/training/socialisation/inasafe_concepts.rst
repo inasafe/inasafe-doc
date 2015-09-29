@@ -27,33 +27,28 @@ Definitions:
 ------------
 Before we start, here are some definitions you may find useful.
 
-====================  ==========================================================
-**Risk assessment:**  *"A methodology to determine the nature and extent of risk
-                      by analysing potential hazards and evaluating existing
-                      conditions of vulnerability that together could
-                      potentially harm exposed people, property, services,
-                      livelihoods and the environment on which they depend. "*
-====================  ==========================================================
+=========================  ======================================================
+**Risk assessment:**       *"A methodology to determine the nature and extent of
+                           risk by analysing potential hazards and evaluating
+                           existing conditions of vulnerability that together
+                           could potentially harm exposed people, property,
+                           services, livelihoods and the environment on which
+                           they depend. "*
 
-Source `<http://www.unisdr.org/we/inform/terminology>`_
-
-=========================  =====================================================
+-------------------------  ------------------------------------------------------
 **Contingency planning:**  *"A management process that analyses specific
                            potential events or emerging situations that might
                            threaten society or the environment and establishes
                            arrangements in advance to enable timely, effective
                            and appropriate responses to such events and
                            situations."*
-=========================  =====================================================
-
-Source: `<http://www.unisdr.org/we/inform/terminology>`_
-
-=============  =================================================================
-**Response:**  *"The provision of emergency services and public assistance during
-               or immediately after a disaster in order to save lives, reduce
-               health impacts,ensure public safety and meet the basic
-               subsistence needs of the people affected."*
-=============  =================================================================
+-------------------------  ------------------------------------------------------
+**Response:**              *"The provision of emergency services and public
+                           assistance during or immediately after a disaster in
+                           order to save lives, reduce health impacts, ensure
+                           public safety and meet the basic subsistence needs
+                           of the people affected."*
+=========================  ======================================================
 
 Source: `<http://www.unisdr.org/we/inform/terminology>`_
 
