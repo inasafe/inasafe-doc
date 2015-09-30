@@ -1,6 +1,6 @@
 .. _inasafe_concepts:
 
- |project_name| Concepts
+|project_name| concepts
 ========================
 
 In this section we explain the key concepts of |project_name| and explore the
