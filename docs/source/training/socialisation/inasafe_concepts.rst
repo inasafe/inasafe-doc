@@ -1,33 +1,58 @@
 .. _inasafe_concepts:
 
-Key concepts in disaster management planning with |project_name|
-================================================================
-In this section we explain the basic concepts of |project_name| and the merits
-of disaster management planning.
+|project_name| concepts
+========================
+
+In this section we explain the key concepts of |project_name| and explore the
+merits of disaster management planning.
+
+How does |project_name| work?
+-----------------------------
+|project_name| combines one exposure data layer (e.g. location of buildings)
+with one hazard scenario (e.g. the footprint of a flood) and returns a
+spatial impact layer along with a statistical summary and action questions.
+|project_name| is framed around answering questions such as:
+*'In the event of a flood similar to the 2013 Jakarta event how many people
+might need evacuating.'*
+
+.. image:: /static/training/socialisation/004_inasafe_concept.*
+   :align: center
+   :width: 400 pt
+
+|project_name| is also able to divide the impact results by administrative
+boundary and provide a breakdown of information about the gender and age of
+affected people.
 
 Definitions:
 ------------
 Before we start, here are some definitions you may find useful.
 
-**Risk assessment:**  *"A methodology to determine the nature and extent of risk
-by analysing potential hazards and evaluating existing conditions of
-vulnerability that together could potentially harm exposed people, property,
-services, livelihoods and the environment on which they depend. "*
-Source `<http://www.unisdr.org/we/inform/terminology>`_
-
-
+=========================  ======================================================
+**Risk assessment:**       *"A methodology to determine the nature and extent of
+                           risk by analysing potential hazards and evaluating
+                           existing conditions of vulnerability that together
+                           could potentially harm exposed people, property,
+                           services, livelihoods and the environment on which
+                           they depend. "*
+-------------------------  ------------------------------------------------------
 **Contingency planning:**  *"A management process that analyses specific
-potential events or emerging situations that might threaten society or the
-environment and establishes arrangements in advance to enable timely,
-effective and appropriate responses to such events and situations."*
+                           potential events or emerging situations that might
+                           threaten society or the environment and establishes
+                           arrangements in advance to enable timely, effective
+                           and appropriate responses to such events and
+                           situations."*
+-------------------------  ------------------------------------------------------
+**Response:**              *"The provision of emergency services and public
+                           assistance during or immediately after a disaster in
+                           order to save lives, reduce health impacts, ensure
+                           public safety and meet the basic subsistence needs
+                           of the people affected."*
+=========================  ======================================================
+
 Source: `<http://www.unisdr.org/we/inform/terminology>`_
 
-**Response:** *"The provision of emergency services and public assistance during
-or immediately after a disaster in order to save lives, reduce health impacts,
-ensure public safety and meet the basic subsistence needs of the people
-affected."*
-Source: `<http://www.unisdr.org/we/inform/terminology>`_
-
+What is disaster management?
+----------------------------
 In the context of disaster management, the expected 'normal' situation is that
 there is no disaster in progress, and people are going about their normal
 daily lives. Disaster managers need to plan for the occasions when the 'normal'
@@ -69,7 +94,7 @@ What is a hazard?
 -----------------
 .. image:: /static/training/socialisation/004_hazard.*
    :align: center
-   :width: 200 pt
+   :width: 150 pt
 
 In the context of |project_name| a hazard is any natural or human caused event
 or series of events that may negatively impact the population, infrastructure
@@ -170,10 +195,10 @@ can be estimated using modelling techniques.
 
 Single-event versus multiple-event hazards
 ------------------------------------------
-Hazard data used in |project_name| can be either single-event or
+Hazard data used in |project_name| can represent either single-event or
 multiple-event. Single event hazards are useful when you want to estimate
 scenarios like *'how many people would be affected if we had another flood
-like in 2013'.* A single event hazard covers a short span of time - like a
+like in 2013'.*  A single event hazard covers a short span of time - like a
 single flood or earthquake event. Single event data is also the most suitable
 to use for events which are stochastic e.g. earthquakes which seldom occur
 at the same place and with the same intensity more than once.
@@ -199,6 +224,7 @@ Requirements for using flood data in |project_name|
 +--------+---------------------------------------------------------------------+
 |Source  | Can be obtained from community mapping or a national mapping agency |
 +--------+---------------------------------------------------------------------+
+
 
 What is exposure?
 -----------------
@@ -316,13 +342,13 @@ Aggregation is optional in |project_name| - if you do not use aggregation,
 the entire analysis area will be used for the data summaries.
 Typically aggregation layers in |project_name| have as attributes the name
 of the district or reporting area. It is also possible to use extended
-attributes to indicate the ratio of men and women, children, adults and
+attributes to indicate the ratio of men and women; youth, adults and
 elderly living in each area. Where these are provided and the exposure layer
 is population, |project_name| will provide a demographic breakdown per
 aggregation area indicating how many men, women etc were probably affected
 in that area.
 
-.. image:: /static/training/socialisation/004_bengawan_solo.*
+.. image:: /static/training/socialisation/004_aggregation.*
    :align: center
    :width: 400 pt
 
@@ -341,8 +367,8 @@ buildings and infrastructure exist in the area.
 
 Bing Aerial imagery for Jakarta, courtesy Bing Maps Open Layers
 
-What is raster vs. vector data?
--------------------------------
+What is the difference between raster and vector data?
+------------------------------------------------------
 Vector data is arguably the most common kind of data you will find in the
 daily use of GIS. It describes geographic data in terms of points that may be
 connected into lines and polygons. Every object in a vector dataset is called
@@ -352,7 +378,7 @@ coordinate system / Cartesian (x, y).
 
 .. image:: /static/training/socialisation/004_vector.*
    :align: center
-   :width: 300 pt
+   :width: 250 pt
 
 Raster data is different from vector data. While vector data has discrete
 features constructed out of vertices, and perhaps connected with lines
@@ -366,20 +392,20 @@ hazard class.
 
 .. image:: /static/training/socialisation/004_raster.*
    :align: center
-   :width: 200 pt
+   :width: 150 pt
 
-**NOTE**
-Creating vector data is like using a pen, where you can draw a point, a line
-or a polygon, Raster data is like taking a picture with a camera, where each
-square has one value, and all the squares (pixels) combine to make a picture.
+.. note:: Creating vector data is like using a pen, where you can draw a point,
+          a line or a polygon, Raster data is like taking a picture with a
+          camera, where each square has one value, and all the squares (pixels)
+          combine to make a picture.
 
 Both vector and raster data can be used in |project_name|. For example, we use
 vector data for the extent of a flood hazard and as well as roads and
 building footprint; but we use raster data for modelled hazards such as
 flood depth, tsunami inundation and for population exposure.
 
-What is continuous vs.classified data?
---------------------------------------
+What is the difference between continuous and classified data?
+--------------------------------------------------------------
 
 In |project_name| we differentiate between data which is continuous and data
 which is classified. The terms can be applied equally to both hazard and
@@ -494,6 +520,9 @@ Volcano Impact Functions
 **Building exposure**: classified polygon with a type attribute
 
 
+.. image:: /static/training/socialisation/icon_generic.*
+   :align: left
+   :width: 80 pt
 
 Generic Impact Functions
 ........................
@@ -559,7 +588,7 @@ An example of an impact summary is shown below.
 
 .. image:: /static/training/socialisation/004_impact_summary_buildings.*
    :align: center
-   :width: 500 pt
+   :width: 600 pt
 
 Example impact summary table showing breakdown of buildings flooded.
 
@@ -575,7 +604,7 @@ the total needs for the displaced population.
 
 .. image:: /static/training/socialisation/004_impact_summary_min_needs.*
    :align: center
-   :width: 500 pt
+   :width: 600 pt
 
 What are action checklists?
 ---------------------------
@@ -589,4 +618,4 @@ contingencies they should have in place.
    :align: center
    :width: 300 pt
 
-:ref:`Go to next module --> <datasets>`
+

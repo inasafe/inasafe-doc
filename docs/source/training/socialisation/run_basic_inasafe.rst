@@ -25,19 +25,19 @@ To develop the participant’s basic understanding of the |project_name| workflo
 and application of |project_name| in the Disaster Management sector. By the end
 of this exercise; participants will:
 
--  Be able to run a flood analysis using |project_name| - on buildings
+-  Be able to run a flood analysis using |project_name| - on buildings;
 
--  Be able to run a flood analysis using |project_name| - on population
+-  Be able to run a flood analysis using |project_name| - on population;
 
--  understand the flood impact default settings;
+-  Understand the flood impact default settings;
 
--  understand the impact summary report;
+-  Understand the impact summary report;
 
--  be able to change the analysis threshold and run a new scenario; and
+-  Be able to change the analysis threshold and run a new scenario;
 
--  Be able to generate a PDF map from the results of an analysis
+-  Be able to generate a PDF map from the results of an analysis;
 
--  be able to save their work to share with others.
+-  Be able to save their work to share results with others.
 
 Data for this exercise
 ----------------------
@@ -61,8 +61,8 @@ Exercise
 1. Open QGIS Project
 .....................
 
-Before we started to run |project_name| analysis, we must open QGIS project.
-Please open QGIS project file :file:`DKI_Jakarta.qgs` from the :file:`InSAFE
+Before we can run an |project_name| analysis, we must open a QGIS project.
+Please open the QGIS project file :file:`DKI_Jakarta.qgs` from the :file:`InSAFE
 Training Data > DKI Jakarta` folder. The project looks something like
 this:
 
@@ -96,17 +96,15 @@ the source of the data.
 | Buildings                    | OpenStreetMap | Most of the important buildings in Jakarta                                      |
 |                              |               | have been mapped through the collaboration                                      |
 |                              |               | of BPBD DKI Jakarta, OpenStreetMap and                                          |
-|                              |               | the Australian Government. `See more at...                                      |
-|                              |               | <http://inasafe.org/en/training/socialisation/functionality_datasets.html>`__   |
+|                              |               | the Australian Government.                                                      |
+|                              |               | `See more at... <http://inasafe.org/en/training/socialisation/datasets.html>`__ |
 +------------------------------+---------------+---------------------------------------------------------------------------------+
-| Java_population_WGS84        | AsiaPop       | High resolution, modelled data for human population distributions.              |
-|                              |               | `See more at...                                                                 |
-|                              |               | <http://inasafe.org/en/training/socialisation/functionality_datasets.html>`__   |
+| Java_population_WGS84        | WorldPop      | High resolution, modelled data for human population distributions.              |
+|                              |               | `See more at... <http://inasafe.org/en/training/socialisation/datasets.html>`__ |
 +------------------------------+---------------+---------------------------------------------------------------------------------+
-| a Flood similiar to 2007     | HKV           |                                                                                 |
-| Jakarta Event                |               | The flood model was created by scientists/engineers in coordination with        |
-|                              |               | DKI Jakarta Public Works based on the 2007 flood conditions. `See more at...    |
-|                              |               | <http://inasafe.org/en/training/socialisation/functionality_datasets.html>`__   |
+| a Flood similiar to 2007     | HKV           | The flood model was created by scientists/engineers in coordination with        |
+|  Jakarta Event               |               | DKI Jakarta Public Works based on the 2007 flood conditions.                    |
+|                              |               | `See more at... <http://inasafe.org/en/training/socialisation/datasets.html>`__ |
 +------------------------------+---------------+---------------------------------------------------------------------------------+
 
 Let's move into the next section where we will run our first |project_name|
@@ -139,12 +137,12 @@ should be added to the map.
    :align: center
    :width: 200 pt
 
-b. Interpret The Result
-^^^^^^^^^^^^^^^^^^^^^^^
+b. Interpret the results
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 The new impact layer will be generated and called **Estimated buildings
-affected**. Let’s take a look for a while for the new data layer
-generated from |project_name|.
+affected**. Let’s take a look for a while at the new impact layer
+generated by |project_name|.
 
 -  Zoom in to some area in Map Canvas
 
@@ -209,9 +207,9 @@ explained below.
    your analysis (we will do this later) this table will show the
    number of buildings by aggregation boundary.
 
--  **Hazard details:** explanation where the hazard data come from
+-  **Hazard details:** explains where the hazard data come from
 
--  **Exposure detail:** explanation where the exposure come from
+-  **Exposure detail:** explains where the exposure come from
 
 The results show the buildings that will be affected by flood water 1m deep.
 But what if the disaster manager decides that buildings in 80cm of water are also flooded?
@@ -389,7 +387,7 @@ formula:
 
 As described above, the impact summary and minimum needs calculation is
 based on the default world population demographics (which assumes a
-ratio of x:y female to male and x% youth, y% adult and z% elderly).
+ratio of 26.3% youth, 65.9% adult and 7.9% elderly).
 
 You may like to refer to local population statics (for example -
 `Population of DKI Jakarta <http://sp2010.bps.go.id/index.php/site/tabel?tid=336&wid=3100000000>`__)

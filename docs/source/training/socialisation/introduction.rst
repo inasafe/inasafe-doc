@@ -3,7 +3,7 @@
 Introducing |project_name|
 ==========================
 
-In this section we will introduce the basic concepts behind |project_name| and
+In this section we will introduce |project_name| and provide some background on
 the |project_name| project.
 
 About the |project_name| project
@@ -46,7 +46,7 @@ In the |project_name| project we strive to provide a tool that will enhance the
 abilities of disaster managers to prepare for disasters and to reduce the
 impact of those disasters on the local population and infrastructure.
 
-Open Source
+Open source
 ...........
 From the beginning, |project_name| has been an Open Source project (GPL license).
 This means there are no licensing fees, the software can be freely copied and
@@ -57,7 +57,7 @@ us because we want as many people as possible to be able to use and improve
 the software. If 'better planning saves lives', having a tool that can be used
 by everyone to do better planning makes sense right?
 
-Open Data
+Open data
 .........
 A key driving force in the ability to use tools such as |project_name| is
 open access to relevant, up-to-date and well maintained geospatial data.
@@ -73,22 +73,3 @@ Watch the |project_name| promotional movie
 ..........................................
 If you want to know more you can watch the promotional movie.
 `<http://data.inasafe.org/Movies/InaSAFE_Promo_EN.mp4>`_
-
-How does |project_name| work?
------------------------------
-|project_name| combines one exposure data layer (e.g. location of buildings)
-with one hazard scenario (e.g. the footprint of a flood) and returns a
-spatial impact layer along with a statistical summary and action questions.
-|project_name| is framed around answering questions such as:
-*'In the event of a flood similar to the 2013 Jakarta event how many people
-might need evacuating.'*
-
-.. image:: /static/training/socialisation/004_inasafe_concept.*
-   :align: center
-   :width: 400 pt
-
-|project_name| is also able to divide the impact results by administrative
-boundary and provide a breakdown of information about the gender and age of
-affected people.
-
-:ref:`Go to next module --> <inasafe_concepts>`
