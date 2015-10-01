@@ -2,7 +2,7 @@
 
 Socialisation Training Manual
 =============================
-A short course intended to "socialise" the attendees with the basic workflows
+A short course intended to "socialise" the participants with the basic workflows
 typically carried out when performing a natural disaster scenario analysis with
 QGIS and |project_name|.
 
@@ -54,6 +54,8 @@ version 3.2 data packages:
    run_basic_inasafe
    run_intermediate_inasafe
    run_other_hazards
+   faq.rst
+
 
 
 
