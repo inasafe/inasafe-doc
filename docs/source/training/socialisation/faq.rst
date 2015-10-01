@@ -29,10 +29,10 @@ QGIS and |project_name|.
    - Check that the layer appears in the map and is turned on.
 
 
-4. *The data has a keywords and is showing in the dock, but there is no option in the "might" list?*
+4. *The data has keywords and is showing up in the dock, but there is no option in the "might" list?*
 
-   - The impact function for that data is not available yet.
-   - `See the list of available impact functions for |project_name| in |project_name| concepts .. <http://inasafe.org/en/training/socialisation/inasafe_concepts.html>`__
+   - The impact function for that data might not be available yet.
+   - `See the list of available impact functions in |project_name| concepts .. <http://inasafe.org/en/training/socialisation/inasafe_concepts.html>`__
 
 5. *Can InaSAFE summarise the impact summary results for different areas?*
 
