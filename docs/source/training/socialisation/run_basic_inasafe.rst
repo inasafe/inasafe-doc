@@ -35,7 +35,7 @@ of this exercise; participants will:
 
 -  Be able to change the analysis threshold and run a new scenario;
 
--  Be able to generate a PDF map from the results of an analysis;
+-  Be able to generate a PDF map from the results of an analysis; and
 
 -  Be able to save their work to share results with others.
 

@@ -27,10 +27,23 @@ skills related to using |project_name|:
     * Be able to import an exposure layer and assign it appropriate keywords
     * Be able to import an aggregation layer and assign it appropriate keywords
 
-* Analysis – Basic InaSAFE
+* Analysis – Run Basic InaSAFE
     * Be able to run a flood analysis using |project_name| - on buildings
     * Be able to run a flood analysis using |project_name| - on population
     * Be able to generate a PDF map from the results of an analysis
+
+* Analysis – Run Intermediate InaSAFE
+    * Be able to define keywords using the |project_name| keywords wizard
+    * Be able to run |project_name| with aggregation data
+    * Be able to use the |OSM| downloader
+    * Be able to set the analysis area using the |project_name| analysis area tool
+
+* Analysis – Run Other Hazards
+    * Be able to run InaSAFE with other hazards, such as  Earthquake, Tsunami and Volcano
+    * Be able to read metadata and assign keywords to hazard data;
+    * Be able to use the |project_name| dock and the |project_name| Function Centric Wizard; and
+    * Be able to use the Generic Impact Function and understand how to use it to work with their own data.
+
 
 * Practical application
     * Be able to explain the purpose of |project_name|
