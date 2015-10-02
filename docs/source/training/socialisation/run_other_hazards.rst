@@ -131,7 +131,7 @@ In the |project_name| panel we now see the impact summary. The details of are ex
 - **Exposure detail:** explanation where the exposure come from
 
 1.2 Run |project_name| for Population
-...............................
+.....................................
 
 We are now ready to run our second |project_name| analysis using earthquake data in Padang. We will be working with same earthquake data again, but this time to look at the number of impacted people in specific area.
 If you finished define keywords, these data should already have keywords assigned so you will be ready to run the |project_name|.
@@ -308,7 +308,7 @@ You new QGIS project should look like this :
    :align: center
 
 3.2 Run |project_name|
-...............
+......................
 
 To use Impact Function Centric Wizard, please click at |project_name| Impact Fuction Centric Wizard icon
 
@@ -430,10 +430,10 @@ and follow the further instruction. You can refer back to `Run Intermediate |pro
 If you finished define keywords for each layer, your |project_name| form should look like this :
 
 4.2 Run |project_name| for Building
-............................
+...................................
 
 a. Run |project_name|
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^
 
 Your |project_name| Dock should poses the question “In the event of Landslide Hazard Zone,
 how many buildings might be affected. Click Run on the bottom right corner in your |project_name| Dock.
@@ -494,7 +494,7 @@ In the |project_name| panel we now see the impact summary. The details of are ex
 -  Exposure detail: explanation where the exposure come from
 
 4.3 Run |project_name| for Population
-..............................
+.....................................
 
 a. Run |project_name|
 ^^^^^^^^^^^^^^^^^^^^^
@@ -558,7 +558,7 @@ In the |project_name| panel we now see the impact summary. The details of are ex
 .. image:: /static/training/socialisation/other_hazard_34*
    :align: center
 
-SUMMARY
+Summary
 -------
 
 .. note:: In the result of |project_name|, Action Checklist and Notes might be unrelated with hazard that we runned.
