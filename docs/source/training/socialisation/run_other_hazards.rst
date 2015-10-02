@@ -558,13 +558,12 @@ In the |project_name| panel we now see the impact summary. The details of are ex
 .. image:: /static/training/socialisation/other_hazard_34.*
    :align: center
 
-Summary
--------
-
 .. note:: In the result of |project_name|, Action Checklist and Notes might be unrelated with hazard that we runned.
    For instance, if we run drought hazard the action checklist might be has some topics such as 
    how many building closed, or people die or displaced. Those topics not really related with drought. 
-   Therefore, this generic impact function tool action result still should be careful to use it especially for its action checklist and notes.
+
+Summary
+-------
 
 Congratulation! You have learn most of |project_name| use. You can run specific hazard using specific tools such as
 Impact Function Centric Wizard (IFCW) and Generic Impact Function which will help us as a user to using |project_name| easily.
