@@ -15,6 +15,7 @@ QGIS and |project_name|.
    - There must be an overlap between the hazard and exposure layers.
    - `See more in |project_name| concepts .. <http://inasafe.org/en/training/socialisation/inasafe_concepts.html>`__
 
+
 2. *Why are there is no active layers available in the |project_name| dock?*
 
    - Check that your data layers are turned on
@@ -34,10 +35,12 @@ QGIS and |project_name|.
    - The impact function for that data might not be available yet.
    - `See the list of available impact functions in |project_name| concepts .. <http://inasafe.org/en/training/socialisation/inasafe_concepts.html>`__
 
+
 5. *Can InaSAFE summarise the impact summary results for different areas?*
 
    - Yes, you can use the aggregation feature in |project_name| to summarise the
      impact summary results for smaller areas such as administration districts.
+
 
 6. *Why are there no options for population in the keyword for my vector population data?*
 
@@ -45,11 +48,13 @@ QGIS and |project_name|.
    - The current version of |project_name| only supports raster population data.
    - `See more in |project_name| concepts .. <http://inasafe.org/en/training/socialisation/inasafe_concepts.html>`__
 
+
 7. *Can |project_name| be used to analyse hazard data besides flood, tsunami, earthquake and volcanic hazard?*
 
    - Yes it can. |project_name| has a Generic Hazard Impact Function that can
      be used to analyse other hazards as long as the data are classified.
    - Classified data will have values such as Low, Medium and High.
+
 
 8. *Why is there some data that is not relevant showing on my pdf map when I print?*
 
@@ -57,11 +62,13 @@ QGIS and |project_name|.
      want to see on the map.
    - Rearrange the order of layers to make sure the important things are on top.
 
+
 9. *Why are the impact results different in different parts of the impact report?*
 
    - In the general report the results are rounded.
    - In the detailed report the results may not be rounded as much.
    - |project_name| provides an estimate of the impact. Rounded numbers are good estimates.
+
 
 10. *My hazard and exposure data have different projections, can I still run an |project_name| analysis on these data?*
 
@@ -70,8 +77,10 @@ QGIS and |project_name|.
        - Project ? Project Properties ? CRS ?
        - checkbox in the Enable ‘on the fly’ CRS transformation.
 
+
 11. *My flood polygon hazard data includes a flood depth. Why can't I run an analysis in |project_name| and set the threshold with these data?*
 
     - At this moment, users can only set a flood depth threshold for raster data.
     - If you would like to build a new impact function to work with different
       types of hazard data, please contact the developer team.
+
