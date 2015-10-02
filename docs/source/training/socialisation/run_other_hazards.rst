@@ -73,7 +73,7 @@ You will see in |project_name| dock, |project_name| form still empty. It means t
 Therefore, you have to define keyword first for each data in this project.
 
 To define keyword, please click on :guilabel:`Keywords Creation Wizard` icon and follow the further instruction. 
-You can refer back to `Run Intermediate |project_name| <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__.
+You can refer back to `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__.
 If you finished define keywords for each layer, your |project_name| form should look like this :
 
 .. image:: /static/training/socialisation/other_hazard_03.*
@@ -139,7 +139,7 @@ If you finished define keywords, these data should already have keywords assigne
 In the QGIS, turn off the **Buildings** and **estimated building affected** (the layers generated from |project_name| analysis and turn ON population layer).
 Because we want to look number people who might be die or displaced in specific area, we also need to turn ON **Village** layer in QGIS. 
 This layer will be used as an aggregation layer that can show us the result by administrative boundary. 
-If you forget the steps how to define a layer as an aggregation, you can see in `Run Intermediate |project_name| <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__
+If you forget the steps how to define a layer as an aggregation, you can see in `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__
 
 Confirm that the |project_name| panel on the right side is set to query how many people might die or displaced :
 
@@ -165,7 +165,7 @@ If everything is setup correctly, the |project_name| dock should show that you a
 It poses the question “In the event of **Earthquake in Padang 2009**, how many **people** might **die or be displaced according Pager Model**?” 
 In this analysis we still use Shakemap data which has values from 6 – 8 MMI. If you want to see minimum needs that should be provided based on the result, you can click :guilabel:`Options` and select :guilabel:`Minimum Needs`.
 
-You can see `Run Basic |project_name| <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ to know basis of default minimum needs in |project_name|
+You can see `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ to know basis of default minimum needs in |project_name|
 or If you want edit item or add new minimum needs , you can refer to `Minimum Needs Configuration manuals <http://docs.inasafe.org/en/user-docs/application-help/minimum_needs.html#minimum-needs>`__.
 After everything is setup accordingly click :guilabel:`Run` to process the new scenario.
 
@@ -222,7 +222,7 @@ Please open QGIS project file :file:`Maumere.qgs` from the :file:`InaSAFE Traini
 .. image:: /static/training/socialisation/other_hazard_11.*
    :align: center
 
-You will see in |project_name| dock the keywords for each layers does not define yet. As we did it before, we using :guilabel:`Impact Function Centric Wizard` icon to define keyword. You can see detail steps in `Run Intermediate |project_name| <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__
+You will see in |project_name| dock the keywords for each layers does not define yet. As we did it before, we using :guilabel:`Impact Function Centric Wizard` icon to define keyword. You can see detail steps in `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__
 
 2.2 Run |project_name|
 ......................
@@ -281,7 +281,7 @@ In the |project_name| panel we now see the impact summary. The details of are ex
 - **Exposure detail**: explanation where the exposure come from
 
 The results show the buildings that will be affected by flood water 1 m deep. But what if the disaster manager decides that buildings in 80 cm of water are also flooded? You can change the water depth threshold. 
-To see the steps to change water depth threshold, you can refer back to `Run Basic |project_name| <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__
+To see the steps to change water depth threshold, you can refer back to `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__
 
 3. Run |project_name| for Volcano
 ---------------------------------
@@ -426,7 +426,7 @@ To define keyword, please click on Keywords Creation Wizard icon
 .. image:: /static/training/socialisation/other_hazard_02.*
    :align: center
 
-and follow the further instruction. You can refer back to `Run Intermediate |project_name| <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__.
+and follow the further instruction. You can refer back to `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__.
 If you finished define keywords for each layer, your |project_name| form should look like this :
 
 4.2 Run |project_name| for Building
@@ -504,10 +504,10 @@ turn ON :file:`PopulationSP_2010` layer. Because we want to look number people w
 specific area, we also need to turn ON Village layer in QGIS. This layer will be used as an aggregation layer that
 can show us the result by administrative boundary.
 
-If you forget the steps how to define a layer as an aggregation, you can see in `Run Intermediate |project_name| <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__.
+If you forget the steps how to define a layer as an aggregation, you can see in `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__.
 You can edit the question form in |project_name| Dock, so it should looks like this :
 
-.. image:: /static/training/socialisation/other_hazard_30*
+.. image:: /static/training/socialisation/other_hazard_30.*
    :align: center
 
 After that you can click Run to start the analysis.
@@ -527,15 +527,15 @@ Each Hazard Zone. Let’s explore the result again to make you understand more a
 Here we clicked on one of the red maroon pixels and find that there is a value of 220.283, which means
 there are approximately 220 people in this one pixel (square) whom might be impacted.
 
-.. image:: /static/training/socialisation/other_hazard_31*
+.. image:: /static/training/socialisation/other_hazard_31.*
    :align: center
 
-.. image:: /static/training/socialisation/other_hazard_32*
+.. image:: /static/training/socialisation/other_hazard_32.*
    :align: center   
 
 In the |project_name| panel we now see the impact summary. The details of are explained below.
 
-.. image:: /static/training/socialisation/other_hazard_33*
+.. image:: /static/training/socialisation/other_hazard_33.*
    :align: center
 
 -  Population needing evacuation: |project_name| estimates the number of affected people in the analysis area.
@@ -555,7 +555,7 @@ In the |project_name| panel we now see the impact summary. The details of are ex
    calculates the minimum needs for women’s hygiene and pregnant women. If you using aggregation layer,
    the result will break down the number of result based on administrative boundary.
 
-.. image:: /static/training/socialisation/other_hazard_34*
+.. image:: /static/training/socialisation/other_hazard_34.*
    :align: center
 
 Summary

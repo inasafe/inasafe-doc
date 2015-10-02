@@ -8,7 +8,7 @@ Run Intermediate |project_name|
 Introduction
 ------------
 
-In `Run Basic |project_name| <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ we learned how to run flood analysis on
+In `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ we learned how to run flood analysis on
 population and buildings, understand flood impact default settings and
 impact summary report, and how to change analysis threshold. We also
 learned how to save our work and generate a pdf of the analysis results.
@@ -71,7 +71,7 @@ including the location of flooded areas by sub-village boundary
 (`see more about this data at… <http://docs.inasafe.org/en/training/socialisation/datasets.html>`__).
 
 Let us symbolize this layer so that it shows only affected areas (if you
-forget how to symbolize, you can go to :doc:`../training/socialisation/introduction_to_qgis`).
+forget how to symbolize, you can go to `Introduction to QGIS <http://docs.inasafe.org/en/training/socialisation/introduction_to_qgis.html/>`__).
 The layer should look like this:
 
 .. image:: /static/training/socialisation/intermediate_inasafe_02.*
@@ -295,15 +295,14 @@ click :guilabel:`Toggle Scenario Outlines`. A green box will appear around your 
    :align: center
    :width: 300 pt
 
-.. note:: Using Toggle Scenario Outlines help you understand which area for
-		  |project_name| to analyze. It is also an important step before run |project_name|
-          analysis because not all of the data you put in the Layer List will be
-          automatically defined by |project_name|.
+.. note:: Using Toggle Scenario Outlines help you understand which area for |project_name|
+        to analyze. It is also an important step before run |project_name|
+        analysis because not all of the data you put in the Layer List will be
+        automatically defined by |project_name|.
 
 Take a look at the |project_name| panel dock to make sure building polygons and
-roads already have keyword, if not, you can define it using :guilabel:`InaSAFE
-Keyword Wizard`. After the keyword already set, we are ready to run
-|project_name| for building polygons and roads.
+roads already have keyword, if not, you can define it using :guilabel:`InaSAFE Keyword Wizard`.
+After the keyword already set, we are ready to run |project_name| for building polygons and roads.
 
 C. Run |project_name| analysis for building polygons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -329,7 +328,7 @@ different with your result since it depends on the analysis area and
 also aggregation layer that you use for analysis.
 
 |project_name| did not separate the impact result into three categories as in
-the :doc:`../training/socialisation/run_basic_inasafe` because in the
+the `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ because in the
 previous exercise we have raster data contains flood depth in each pixel
 yet in this exercise, the hazard data that we use only shows affected
 area. So |project_name| will calculate how many buildings inside the affected
