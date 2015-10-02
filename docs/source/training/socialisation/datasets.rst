@@ -258,14 +258,13 @@ Population
    :align: center
    :width: 500 pt
 
-====================   ==========================    =============
-**Training Package**   **Name**                      **Coverage**
-Run Basic InaSAFE      Jakarta_Population_WGS84      Jakarta
-Other Hazards          Padang_Population_WGS84       Padang
-Other Hazards          Maumere_Population_WGS84      Maumere
-Other Hazards          NGK_Population_WGS84          Nagekeo
-Other Hazards          Sinabung_Population_WGS84     Sinabung
-====================   ==========================    =============
+========================   ==============================   =============
+**Training Package**       **Name**                         **Coverage**
+Basic InaSAFE              Jakarta_Population_WGS84         Jakarta
+Intermediate InaSAFE       Jakarta_Population_WGS84         Jakarta
+Other Hazards              West_Sumatera_Population_WGS84   Padang
+Other Hazards              NGK_Population_WGS84             Nagekeo
+========================   ==============================   =============
 
 Buildings
 .........
@@ -303,14 +302,15 @@ Yogyakarta (Merapi), Sumatra (Padang) and Flores (Maumere).
 
 Training data provided:
 
-====================   ==========================    =============
-**Training Package**   **Name**                      **Coverage**
-Run Basic InaSAFE      Jakarta_Buildings_WGS84       Jakarta
-Other Hazards          Padang_Buildings_WGS84        Padang
-Other Hazards          Maumere_Buildings_WGS84       Maumere
-Other Hazards          NGK_Buildings_WGS84           Nagekeo
-Other Hazards          Sinabung_Buildings_WGS84      Sinabung
-====================   ==========================    =============
+====================   ===============================    =============
+**Training Package**   **Name**                           **Coverage**
+Basic InaSAFE          Jakarta_Buildings_WGS84            Jakarta
+Other Hazards          Padang_Buildings_WGS84             Padang
+Other Hazards          Maumere_Buildings_WGS84            Maumere
+Other Hazards          NGK_Buildings_WGS84                Nagekeo
+Other Hazards          Sinabung_Buildings_WGS84           Sinabung
+Other Hazards          Sinabung_Building-points_WGS84     Sinabung
+====================   ===============================   =============
 
 
 Each one of these areas has a different OpenStreetMap data collection
