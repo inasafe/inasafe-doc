@@ -67,10 +67,10 @@ Next, add :file:`Jakarta Flood 18113 WGS84` data from :file:`Run Intermediate In
 for Jakarta from an actual flood event. During Jakarta floods in January
 2013, the provincial disaster manager collected information about the flood,
 including the location of flooded areas by sub-village boundary
-(see more about this data at :ref:`datasets`.
+(see more about this data at :ref:`datasets`.)
 
 Let us symbolize this layer so that it shows only affected areas (if you
-forget how to symbolize, you can go to :ref:`introduction_to_qgis`.
+forget how to symbolize, you can go to :ref:`introduction_to_qgis`.)
 The layer should look like this:
 
 .. image:: /static/training/socialisation/intermediate_inasafe_02.*
