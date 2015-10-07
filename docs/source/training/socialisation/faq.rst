@@ -74,8 +74,8 @@ QGIS and |project_name|.
 
     - Yes you can, but you need to enable on the fly projection.
     - In QGIS, activate OTF CRS Transformation
-       - Project > Project Properties > CRS
-       - checkbox in the Enable 'on the fly' CRS transformation.
+       - :menuselection:`Project > Project Properties > CRS`
+       - checkbox in the :guilabel:`Enable 'on the fly' CRS transformation`.
 
 
 11. *My flood polygon hazard data includes a flood depth. Why can't I run an analysis in |project_name| and set the threshold with these data?*
