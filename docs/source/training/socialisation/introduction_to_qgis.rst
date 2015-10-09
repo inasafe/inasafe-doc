@@ -1,6 +1,6 @@
-.. _introduction_to_qgis:
-
 .. image:: /static/training/socialisation/inasafe_logo.*
+
+.. _introduction_to_qgis:
 
 Introduction to QGIS
 ====================

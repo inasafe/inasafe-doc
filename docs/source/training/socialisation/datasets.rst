@@ -258,6 +258,8 @@ Population
    :align: center
    :width: 500 pt
 
+Training data provided:
+
 ========================   ==============================   =============
 **Training Package**       **Name**                         **Coverage**
 Basic InaSAFE              Jakarta_Population_WGS84         Jakarta
@@ -310,7 +312,7 @@ Other Hazards          Maumere_Buildings_WGS84            Maumere
 Other Hazards          NGK_Buildings_WGS84                Nagekeo
 Other Hazards          Sinabung_Buildings_WGS84           Sinabung
 Other Hazards          Sinabung_Building-points_WGS84     Sinabung
-====================   ===============================   =============
+====================   ===============================    =============
 
 
 Each one of these areas has a different OpenStreetMap data collection

@@ -1,6 +1,6 @@
-.. _run_basic_inasafe:
-
 .. image:: /static/training/socialisation/inasafe_logo.*
+
+.. _run_basic_inasafe:
 
 Run Basic |project_name|
 ========================
@@ -395,7 +395,7 @@ to change these defaults for your analysis area,
 similarly if you have other regulation for minimum needs,
 you can change in the Impact Function Configuration in Minimum Needs Tab
 or if you want to create your own minimum needs,
-you can use minimum needs configuration (see more at Minimum Needs Configuration manuals).
+you can use minimum needs configuration (see more at `Minimum Needs Configuration manuals <http://docs.inasafe.org/en/user-docs/application-help/minimum_needs.html#minimum-needs>`__).
 
 .. image:: /static/training/socialisation/run_basic_14.*
    :align: center
