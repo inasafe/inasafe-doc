@@ -1,6 +1,6 @@
-.. _run_other_hazards:
-
 .. image:: /static/training/socialisation/inasafe_logo.*
+
+.. _run_other_hazards:
 
 Other Hazards
 =============

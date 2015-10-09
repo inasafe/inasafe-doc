@@ -1,6 +1,6 @@
-.. _run_intermediate_inasafe:
-
 .. image:: /static/training/socialisation/inasafe_logo.*
+
+.. _run_intermediate_inasafe:
 
 Run Intermediate |project_name|
 ===============================

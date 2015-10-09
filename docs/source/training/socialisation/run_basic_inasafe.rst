@@ -1,6 +1,6 @@
-.. _run_basic_inasafe:
-
 .. image:: /static/training/socialisation/inasafe_logo.*
+
+.. _run_basic_inasafe:
 
 Run Basic |project_name|
 ========================
