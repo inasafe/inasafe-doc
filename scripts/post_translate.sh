@@ -1,37 +1,4 @@
 #!/bin/bash
-# Next line is a trick to get absolute path from relative path
-# http://stackoverflow.com/questions/4045253/converting-relative-path-into-absolute-path
-if [ "$USER" == "jenkins" ]
-then
-    # Next line is a trick to get absolute path from relative path
-    # http://stackoverflow.com/questions/4045253/converting-relative-path-into-absolute-path
-    INASAFE_DEV_PATH=`cd "../../inasafe-qgis2/workspace"; pwd`
-else
-    INASAFE_DEV_PATH=`cd "../inasafe-dev"; pwd`
-fi
-export QGIS_PREFIX_PATH=/usr/local/qgis-2.8
-
-if [ -d $INASAFE_DEV_PATH ]
-then
-  echo 'Using InaSAFE-dev in' $INASAFE_DEV_PATH
-else
-    # check the repo out since it does not exist
-    pushd .
-    mkdir -p $INASAFE_DEV_PATH
-    cd $INASAFE_DEV_PATH
-    git clone --depth 1 git://github.com/AIFDR/inasafe.git inasafe-dev
-    popd
-fi
-
-export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
-export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$INASAFE_DEV_PATH:$QGIS_PREFIX_PATH/share/qgis/python/plugins:$PYTHONPATH
-export QGIS_DEBUG=0
-export QGIS_LOG_FILE=/dev/null
-export QGIS_DEBUG_FILE=/dev/null
-
-echo "LIBRARY_PATH="$LD_LIBRARY_PATH
-echo "PYTHONPATH="$PYTHONPATH
-
 # Based off the script from QGIS by Tim Sutton and Richard Duivenvoorde
 
 # Name of the dir containing static files
@@ -142,9 +109,9 @@ do
   rm templates/irchat.html
 
   # hack to avoid error when using Search in contents.html
-  rpl -q '#/../search.html' 'search.html' ./output/html/${LOCALE}/contents.html
+  rpl -q '#/../search.html' 'search.html' ./output/html/${LOCALE}/index.html
   # same applies for having the IRC-Chat Navigation Link
-  rpl -q '#/../irchat.html' 'irchat.html' ./output/html/${LOCALE}/contents.html
+  rpl -q '#/../irchat.html' 'irchat.html' ./output/html/${LOCALE}/index.html
 
   #################################
   #

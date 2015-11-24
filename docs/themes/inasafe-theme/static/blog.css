@@ -192,8 +192,22 @@ select {
 }
 }
 @font-face {
+    font-family: "Elusive-Icons";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/Elusive-Icons.eot") format("embedded-opentype"), 
+	     url("fonts/Elusive-Icons.svg") format("svg"), 
+		 url("fonts/Elusive-Icons.woff") format("woff"), 
+		 url("fonts/Elusive-Icons.ttf") format("truetype");
+}
+@font-face {
     font-family: "Glyphicons Halflings";
-    src: url("//blogtest.inasafe.org/wp-content/themes/shoestrap-3/assets/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("//blogtest.inasafe.org/wp-content/themes/shoestrap-3/assets/fonts/glyphicons-halflings-regular.woff") format("woff"), url("//blogtest.inasafe.org/wp-content/themes/shoestrap-3/assets/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("//blogtest.inasafe.org/wp-content/themes/shoestrap-3/assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+	font-style: normal;
+    font-weight: normal;
+    src: url("fonts/glyphicons-halflings-regular.eot") format("embedded-opentype"), 
+	     url("fonts/glyphicons-halflings-regular.woff") format("woff"), 
+		 url("fonts/glyphicons-halflings-regular.ttf") format("truetype"), 
+		 url("fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 .glyphicon {
     display: inline-block;
@@ -1199,32 +1213,38 @@ pre code {
 }
 .container {
     margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
-@media (min-width: 768px) {
-.container {
-    width: 753px;
+@media (min-width: 768px) and (max-width: 991px) {
+body .container {
+    width: 750px;
 }
-.span9 {
+body .span9 {
 	width: 500px;
 }
 body {
 	padding-top: 95px !important;
 }
 }
-@media (min-width: 992px) {
-.container {
+@media (min-width: 992px)  and (max-width: 1199px) {
+body .container {
     width: 940px;
 }
-.span9 {
-	width: 700px;
+body .span9 {
+	width: 660px;
 }
 }
 @media (min-width: 1200px) {
-.container {
+body .container {
     width: 1170px;
 }
+body .span9 {
+	width: 840px;
 }
+}
+
 .container-fluid {
     margin-left: auto;
     margin-right: auto;
@@ -4436,14 +4456,10 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     min-height: 20px;
     padding: 19px;
 }
-.developer .well a,
-.user .well a {
+.well a {
 	color: #2f3338;
 }
-.developer .well a:hover {
-	color: #3d9d45;
-}
-.user .well a:hover {
+.well a:hover {
 	color: #2f87a6;
 }
 .well li {
@@ -6368,15 +6384,7 @@ input[type="submit"] .badge {
     background-color: #fff;
     color: #f86a27;
 }
-@font-face {
-    font-family: "Elusive-Icons";
-    font-style: normal;
-    font-weight: normal;
-    src: url("fonts/Elusive-Icons.eot?#iefix&ver=2") format("embedded-opentype"), 
-	     url("fonts/Elusive-Icons.svg#Elusive-Icons?ver=2") format("svg"), 
-		 url("fonts/Elusive-Icons.woff?ver=2") format("woff"), 
-		 url("fonts/Elusive-Icons.ttf?ver=2") format("truetype");
-}
+
 [class*="el-icon-"] {
     font-family: "Elusive-Icons";
     font-style: normal;

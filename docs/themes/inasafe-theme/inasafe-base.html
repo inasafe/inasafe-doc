@@ -34,8 +34,6 @@ TODO: remove this, or make this obsolete ?? #}
     }
     .navbar .brand
     {
-        background-image  : url("static/img/logo.png");
-        background-repeat : no-repeat;
         height            : 42px;
         padding-left      : 30px;
     }
@@ -45,6 +43,9 @@ TODO: remove this, or make this obsolete ?? #}
     }
 </style>
 
+{# Link to Ubuntu Google font #}
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
 <script>
     // detects current language and hides/shows up the links
     $(document).ready(function () {
@@ -52,15 +53,16 @@ TODO: remove this, or make this obsolete ?? #}
         var currentLang = window.location.href.slice(
                 window.location.href.indexOf(currentPage) - 3,
                 window.location.href.indexOf(currentPage) - 1);
+	
         $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
-		$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
-		$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
-		$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
         // Make the search button pretty - issue 36
         $(':submit').addClass('btn btn-warning btn-small');
     })
 
-    {#  load current page in a different language #}
+    // load current page in a different language 
     function gotoLang(lang) {
         var currentPage = '{{current_page_name}}.html';
         var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
@@ -115,42 +117,42 @@ TODO: remove this, or make this obsolete ?? #}
 <div class="container">
   <div class="navbar-header">
       {# this is used to provide a menu toggle button on small screens #}
-      <button class="search navbar-toggle"><i class="el-icon-search"></i></button>
+      <button class="search navbar-toggle"></button>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
       <span class="sr-only">Toggle navigation</span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand logo" href="http://blogtest.inasafe.org/en/"><img id="site-logo" src="http://blogtest.inasafe.org/wp-content/uploads/2015/02/logo.png" alt="InaSAFE Blog"></a>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
   </div>
   
-  <nav class="nav-main navbar-collapse collapse" role="navigation">{# This is the main menu list, there are the static links to the blogtest.inasafe.org now, should change them when the site is on. Each li will contain 3 links, each for it's language. Again jQuery script frim the top will show up the one of the current language. For the moment I just duplicate them, awaiting for the translations #}
+  <nav class="nav-main navbar-collapse collapse" role="navigation">{# This is the main menu list. Each li will contain 3 links, each for it's language. Again jQuery script frim the top will show up the one of the current language. For the moment I just duplicate them, awaiting for the translations #}
       <ul id="menu-default" class="navbar-nav nav">{# Links to edit #}
-          <li class="menu-for-users"><a title="For Users" href="http://blogtest.inasafe.org/en/for-users/" class="icl-en" style="display:none;">For Users</a>
-                                     <a title="Pour les utilisateurs" href="http://blogtest.inasafe.org/fr/for-users/" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
-                                     <a title="For Users" href="http://blogtest.inasafe.org/in/for-users/" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
           <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
                                                      <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
                                                      <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
               <ul role="menu" class=" dropdown-menu">
-                  <li class="menu-coders"><a title="Coders" href="http://blogtest.inasafe.org/en/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
-                                          <a title="Coders" href="http://blogtest.inasafe.org/en/for-contributors/for-coders/" class="icl-fr" style="display:none;">Coders</a>
-                                          <a title="Coders" href="http://blogtest.inasafe.org/en/for-contributors/for-coders/" class="icl-id" style="display:none;">Coders</a></li>
-                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://blogtest.inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
-                                                                <a title="Writers and Designers" href="http://blogtest.inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
-                                                                <a title="Writers and Designers" href="http://blogtest.inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
-                  <li class="menu-translators"><a title="Translators" href="http://blogtest.inasafe.org/en/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
-                                               <a title="Translators" href="http://blogtest.inasafe.org/en/for-contributors/for-translators/" class="icl-fr" style="display:none;">Translators</a>
-                                               <a title="Translators" href="http://blogtest.inasafe.org/en/for-contributors/for-translators/" class="icl-id" style="display:none;">Translators</a></li>
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
               </ul>
           </li>
-          <li class="menu-blog"><a title="Blog" href="http://blogtest.inasafe.org/en/blog/" class="icl-en" style="display:none;">Blog</a>
-                                <a title="Blog" href="http://blogtest.inasafe.org/en/blog/" class="icl-fr" style="display:none;">Blog</a>
-                                <a title="Blog" href="http://blogtest.inasafe.org/en/blog/" class="icl-id" style="display:none;">Blog</a></li>
-          <li class="menu-chat-live"><a title="Chat Live!" href="http://blogtest.inasafe.org/en/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
-                                     <a title="Chat Live!" href="http://blogtest.inasafe.org/en/chat-live/" class="icl-fr" style="display:none;">Chat Live!</a>
-                                     <a title="Chat Live!" href="http://blogtest.inasafe.org/en/chat-live/" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
           <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
                                            <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
                                            <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
@@ -168,7 +170,7 @@ TODO: remove this, or make this obsolete ?? #}
                           <a href="#" onclick="gotoLang('fr');">Français</a>
                       </li>
                       <li class="icl-id">
-                          <a href="#" onclick="gotoLang('in');">Indonesia</a>
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
                       </li>
                   </ul>
               </li>
@@ -180,95 +182,43 @@ TODO: remove this, or make this obsolete ?? #}
     <div class="container">
         <nav class="nav-second navbar-collapse collapse">
             <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
-                 <ul id="menu-for-users" class="menu" style="display:none;">
+                <ul id="menu-for-users" class="menu">{# For Users submenu #}
                       <li class="menu-quick-start">
-                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/en/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
-                            <a title="Quick Start" target="_blank" href="http://inasafe.org/fr/user-docs/install.html" class="icl-fr" style="display:none;">Quick Start</a>
-                            <a title="Quick Start" target="_blank" href="http://inasafe.org/in/user-docs/install.html" class="icl-id" style="display:none;">Quick Start</a></li>
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
                       <li class="menu-documentation">
-                      		<a title="Documentation" target="_blank" href="http://inasafe.org/en/user-docs/index.html" class="icl-en" style="display:none;">Documentation</a>
-                            <a title="Documentation" target="_blank" href="http://inasafe.org/fr/user-docs/index.html" class="icl-fr" style="display:none;">Documentation</a>
-                            <a title="Documentation" target="_blank" href="http://inasafe.org/in/user-docs/index.html" class="icl-id" style="display:none;">Documentation</a></li>
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
                       <li class="menu-training-materials">
-                      		<a title="Training Materials" target="_blank" href="http://inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
-                            <a title="Training Materials" target="_blank" href="http://inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
-                            <a title="Training Materials" target="_blank" href="http://inasafe.org/in/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
                       <li class="menu-get-help">
-                      		<a title="Get Help" href="http://blogtest.inasafe.org/en/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
-                            <a title="Get Help" href="http://blogtest.inasafe.org/fr/for-users/get-help/" class="icl-fr" style="display:none;">Get Help</a>
-                            <a title="Get Help" href="http://blogtest.inasafe.org/in/for-users/get-help/" class="icl-id" style="display:none;">Get Help</a></li>
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
                       <li class="menu-data">
                       		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
                             <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
                             <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
                       <li class="menu-releases">
-                      		<a title="Releases" href="http://blogtest.inasafe.org/en/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
-                            <a title="Releases" href="http://blogtest.inasafe.org/fr/for-users/releases/" class="icl-fr" style="display:none;">Releases</a>
-                            <a title="Releases" href="http://blogtest.inasafe.org/in/for-users/releases/" class="icl-id" style="display:none;">Releases</a></li>
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
                       <li class="menu-user-map">
                       		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
                             <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
                             <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
-                      <li class="menu-press">
-                      		<a title="Press" href="http://blogtest.inasafe.org/en/for-users/press/" class="icl-en" style="display:none;">Press</a>
-                            <a title="Press" href="http://blogtest.inasafe.org/fr/for-users/press/" class="icl-fr" style="display:none;">Press</a>
-                            <a title="Press" href="http://blogtest.inasafe.org/in/for-users/press/" class="icl-id" style="display:none;">Press</a></li>
-                      <li class="menu-videos">
-                      		<a title="Videos" href="http://blogtest.inasafe.org/en/for-users/videos/" class="icl-en" style="display:none;">Videos</a>
-                            <a title="Videos" href="http://blogtest.inasafe.org/fr/for-users/videos/" class="icl-fr" style="display:none;">Videos</a>
-                            <a title="Videos" href="http://blogtest.inasafe.org/in/for-users/videos/" class="icl-id" style="display:none;">Videos</a></li>
-                      <li class="menu-flyers-and-media">
-                      		<a title="Flyers and Media" href="http://blogtest.inasafe.org/en/for-users/flyers-and-media/" class="icl-en" style="display:none;">Flyers and Media</a>
-                            <a title="Flyers and Media" href="http://blogtest.inasafe.org/fr/for-users/flyers-and-media/" class="icl-fr" style="display:none;">Flyers and Media</a>
-                            <a title="Flyers and Media" href="http://blogtest.inasafe.org/in/for-users/flyers-and-media/" class="icl-id" style="display:none;">Flyers and Media</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
                   </ul>
-                <ul id="menu-contributors" class="menu" style="display:none;">
-                    <li class="menu-coders"><a title="Coders" href="http://blogtest.inasafe.org/en/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
-                    						<a title="Coders" href="http://blogtest.inasafe.org/fr/for-contributors/for-coders/" class="icl-fr" style="display:none;">Coders</a>
-                                            <a title="Coders" href="http://blogtest.inasafe.org/in/for-contributors/for-coders/" class="icl-id" style="display:none;">Coders</a></li>
-                    <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://blogtest.inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
-                                                                  <a title="Writers and Designers" href="http://blogtest.inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
-                                                                  <a title="Writers and Designers" href="http://blogtest.inasafe.org/in/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
-                    <li class="menu-translators"><a title="Translators" href="http://blogtest.inasafe.org/en/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
-                                                 <a title="Translators" href="http://blogtest.inasafe.org/fr/for-contributors/for-translators/" class="icl-fr" style="display:none;">Translators</a>
-                                                 <a title="Translators" href="http://blogtest.inasafe.org/in/for-contributors/for-translators/" class="icl-id" style="display:none;">Translators</a></li>
-                </ul>
-                <ul id="menu-for-documentation-writers-and-designers" class="menu"  style="display:none;">
-                        <li class="menu-inasafe-documentation-sources"><a title="InaSAFE documentation sources" target="_blank" href="https://github.com/AIFDR/inasafe-doc" class="icl-en" style="display:none;">InaSAFE documentation sources</a>
-                                                                       <a title="InaSAFE documentation sources" target="_blank" href="https://github.com/AIFDR/inasafe-doc" class="icl-fr" style="display:none;">InaSAFE documentation sources</a>
-                                                                       <a title="InaSAFE documentation sources" target="_blank" href="https://github.com/AIFDR/inasafe-doc" class="icl-id" style="display:none;">InaSAFE documentation sources</a></li>
-                        <li class="menu-design-and-media"><a title="Design and Media" href="http://blogtest.inasafe.org/en/for-contributors/for-documentation-writers-and-designers/design-and-media/" class="icl-en" style="display:none;">Design and Media</a>
-                                                          <a title="Design and Media" href="http://blogtest.inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/design-and-media/" class="icl-fr" style="display:none;">Design and Media</a>
-                                                          <a title="Design and Media" href="http://blogtest.inasafe.org/in/for-contributors/for-documentation-writers-and-designers/design-and-media/" class="icl-id" style="display:none;">Design and Media</a></li>
-                </ul>
-                <ul id="menu-coders" class="menu" style="display:none;">
-                    <li class="menu-get-the-source">
-                    	<a href="http://blogtest.inasafe.org/en/for-contributors/for-coders/get-the-source/" title="Get the Source" class="icl-en" style="display:none;">Get the Source</a>
-                        <a href="http://blogtest.inasafe.org/fr/for-contributors/for-coders/get-the-source/" title="Get the Source" class="icl-fr" style="display:none;">Get the Source</a>
-                        <a href="http://blogtest.inasafe.org/in/for-contributors/for-coders/get-the-source/" title="Get the Source" class="icl-id" style="display:none;">Get the Source</a>
-                    </li>
-                    <li class="menu-documentation">
-                    	<a href="http://inasafe.org/en/developer-docs/index.html" target="_blank" title="Documentation" class="icl-en" style="display:none;">Documentation</a>
-                        <a href="http://inasafe.org/en/developer-docs/index.html" target="_blank" title="Documentation" class="icl-fr" style="display:none;">Documentation</a>
-                        <a href="http://inasafe.org/en/developer-docs/index.html" target="_blank" title="Documentation" class="icl-id" style="display:none;">Documentation</a>
-                    </li>
-                    <li class="menu-api">
-                    	<a href="http://inasafe.org/en/api-docs/index.html" target="_blank" title="API" class="icl-en" style="display:none;">API</a>
-                        <a href="http://inasafe.org/fr/api-docs/index.html" target="_blank" title="API" class="icl-fr" style="display:none;">API</a>
-                        <a href="http://inasafe.org/in/api-docs/index.html" target="_blank" title="API" class="icl-id" style="display:none;">API</a>
-                    </li>
-                    <li class="menu-road-map">
-                    	<a href="https://github.com/AIFDR/inasafe/milestones" target="_blank" title="Road Map" class="icl-en" style="display:none;">Road Map</a>
-                        <a href="https://github.com/AIFDR/inasafe/milestones" target="_blank" title="Road Map" class="icl-fr" style="display:none;">Road Map</a>
-                        <a href="https://github.com/AIFDR/inasafe/milestones" target="_blank" title="Road Map" class="icl-id" style="display:none;">Road Map</a>
-                    </li>
-                    <li class="menu-scrum-board">
-                    	<a href="https://waffle.io/aifdr/inasafe" target="_blank" title="SCRUM Board" class="icl-en" style="display:none;">SCRUM Board</a>
-                        <a href="https://waffle.io/aifdr/inasafe" target="_blank" title="SCRUM Board" class="icl-fr" style="display:none;">SCRUM Board</a>
-                        <a href="https://waffle.io/aifdr/inasafe" target="_blank" title="SCRUM Board" class="icl-id" style="display:none;">SCRUM Board</a>
-                    </li>
-                </ul>
-            <button class="search"><i class="el-icon-search"></i></button>
+             
+            <button class="search"></button>
         </nav>
     </div>
 </div> 
@@ -276,7 +226,7 @@ TODO: remove this, or make this obsolete ?? #}
 <div id="header-searchbox" style="display: none;" class="container">{# The searchbox will show up after clicking on the search button #}
 <form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
 <input type="text" placeholder="Search the documentation" name="q">
-<button class="submit" type="submit" value=""><i class="el-icon-search"></i></button>
+<button class="submit" type="submit" value=""></button>
 <input type="hidden" value="yes" name="check_keywords">
 <input type="hidden" value="default" name="area">
 </form>
@@ -310,7 +260,7 @@ TODO: remove this, or make this obsolete ?? #}
            <ul id="top-nav" class="breadcrumb right">
            		{% for rellink in rellinks %}
                 <li
-                {% if loop.first %}style="margin-right: 10px"{% endif %} >
+                {% if loop.first %}style="margin-right: 16px"{% endif %} >
                 <a href="{{ pathto(rellink[0]) }}"
                    title="{{ rellink[1]|striptags }}"
                    style="z-index:{{ loop.counter }};"
@@ -325,22 +275,7 @@ TODO: remove this, or make this obsolete ?? #}
 
 
 
- {# These are the prev | next | index links in the bottom #} 
- <div class="related container">            
-           <ul class="breadcrumb center">
-           		{% for rellink in rellinks %}
-                <li
-                {% if loop.first %}style="margin-right: 10px"{% endif %} >
-                <a href="{{ pathto(rellink[0]) }}"
-                   title="{{ rellink[1]|striptags }}"
-                   style="z-index:{{ loop.counter }};"
-                {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a>
-                </li>
-                {% endfor %}                  
-           </ul>
 
-        </div>
-    </div>  
     
     
   {# Default layout is a simple 12 spanned block with no sidebars #}
@@ -355,6 +290,23 @@ TODO: remove this, or make this obsolete ?? #}
   {% endblock %}{# user-content block end #}  
  
  
+  {# These are the prev | next | index links in the bottom #} 
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		{% for rellink in rellinks %}
+                <li>
+                <a href="{{ pathto(rellink[0]) }}"
+                   title="{{ rellink[1]|striptags }}"
+                   style="z-index:{{ loop.counter }};"
+                {{ accesskey(rellink[2]) }}>{{ rellink[3] }}</a>
+                </li>
+                {% endfor %}                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
  {# Now our standard footer #} 
   <footer id="page-footer" class="content-info"> 
     <div class="container">
@@ -367,7 +319,7 @@ TODO: remove this, or make this obsolete ?? #}
             Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
             file a ticket</b></a> if you have discovered an issue.<br>
             This document is licensed under a
-            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a><br>
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: {{ last_updated|e }}<br>
             <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
             Copyright 2014, Indonesian Government-BNPB, Australian
             Government-AIFDR and the World Bank-GFDRR.

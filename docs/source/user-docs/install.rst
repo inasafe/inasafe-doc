@@ -13,7 +13,7 @@ and search for :kbd:`inasafe`. Select it and click the :guilabel:`Install`
 button. |project_name| will now be added to the plugins menu.
 
 For more information on |QGIS| and |project_name| 
-see :doc:`../training/socialisation/introduction_of_qgis`.
+see :doc:`../training/socialisation/introduction_to_qgis`.
 
 From |project_name| test repository
 -----------------------------------
