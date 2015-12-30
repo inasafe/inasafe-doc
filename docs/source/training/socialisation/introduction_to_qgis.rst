@@ -397,6 +397,8 @@ toolbar, you can right-click on the top toolbar and check InaSAFE.
 +--------------------------------------------------------------+----------------------------------+
 | .. image:: /static/training/socialisation/Intro_QGIS_41.*    | OpenStreetMap Downloader         |
 +--------------------------------------------------------------+----------------------------------+
+| .. image:: /static/training/socialisation/Intro_QGIS_42.*    | Add OpenStreetMap Tile Layer     |
++--------------------------------------------------------------+----------------------------------+
 
 Later we will explore and use these tools in **Run Basic InaSAFE** and **Intermediate Modules**.
 

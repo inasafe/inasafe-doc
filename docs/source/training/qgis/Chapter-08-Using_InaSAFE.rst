@@ -462,7 +462,7 @@ other relevant layers can be added, and the layout can be changed using the Prin
    Choose :guilabel:`Analysis extent` if you want to print the entire map extent, or choose 
    :guilabel:`Current extent` to print the analysis based on the current view of the map.
 
-3. You may also choose a custom print template *inasafe-potrait-a4, landscape-a3, and portrait-a3*.
+3. You may also choose a custom print template *a3-landscape-blue, a3-landscape-orange, a3-portrait-blue, a3-portrait-orange, a4-landscape-blue, a4-landscape-orange, a4-portrait-blue, and a4-portrait-orange*.
 
 .. image:: /static/training/qgis/8_033.*
    :align: center
