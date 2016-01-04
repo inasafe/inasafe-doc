@@ -1,0 +1,691 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-04 11:28+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 0760b5c330184e049ef9ef0234a0b323
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:10
+msgid "Module 6: Editing OpenStreetMap with JOSM"
+msgstr ""
+
+# 396a41fe40f448f49a709081db8c0707
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:12
+msgid "**Learning Objectives**"
+msgstr ""
+
+# d3e34ad92849498f8042f58c30cdd174
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:14
+msgid "Download OSM data in the area you want to edit"
+msgstr ""
+
+# 2647d020cf3d489bb2603fd5aa4d25d7
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:15
+msgid "Select layers"
+msgstr ""
+
+# 45649ceca4844150a7f91374c03b270e
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:16
+msgid "Edit OSM data"
+msgstr ""
+
+# 14f8a161d3f94b5da40596916acbe099
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:17
+msgid "Edit and understand tags"
+msgstr ""
+
+# d81165d59a8342b5abedf501235a7d1f
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:18
+msgid "Upload OSM data"
+msgstr ""
+
+# 2df107ff172d446b838bfb533f8fd99a
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:19
+msgid "Save OSM files"
+msgstr ""
+
+# 350785fd5d0b4f2e9085cf4b36e775a2
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:21
+msgid ""
+"In :ref:`Module 3 <working-with-josm>` we installed JOSM and began drawing "
+"our first points, lines, and shapes. We added presets to these objects to "
+"attach information about them. At the end, you were able to draw your own "
+"map in JOSM."
+msgstr ""
+
+# d556e4c9785641fe9cf5c634922bfbbe
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:26
+msgid ""
+"Drawing maps was an exercise to learn JOSM and learn how to draw places on "
+"the map. But our maps were not accurate, because we had not yet included "
+"location. In the past two modules we have examined two tools, GPS and Field "
+"Papers, which allow us to collect actual locations of places. These "
+"locations are represented by coordinates."
+msgstr ""
+
+# cf5aceebe5fd4a0cb528c7cb6d3535fd
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:32
+msgid ""
+"Drawing a real map, that is, a map where all the points, lines and shapes "
+"are in their proper location, is no different than drawing the maps we drew "
+"previously. But now, we will utilise our GPS points and tracks, and our "
+"Field Papers, to draw similar maps at their correct locations on the planet."
+msgstr ""
+
+# 55048a0b388f4ef09ff5f4d9321a9843
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:38
+msgid ""
+"In this module we will learn how to edit the map on OpenStreetMap and add "
+"our improvements. We’ll learn the basic cycle of mapping on OSM:"
+msgstr ""
+
+# 68a25ea707824b80a20c407e1dca68fc
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:41
+msgid "Download data"
+msgstr ""
+
+# 55a1f91237fb48f2a7c3911342e5c12f
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:42
+msgid "Edit and add objects on the map"
+msgstr ""
+
+# 0bf193504d6140c38f03f9465b7fcb02
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:43
+msgid "Upload changes to OSM"
+msgstr ""
+
+# e779a490e51645dcb9e75704613c3727
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:44
+msgid "See the changes on the map!"
+msgstr ""
+
+# 78c9105effc748b38d6a49f20b60eb07
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:47
+msgid "1. Exploring JOSM"
+msgstr ""
+
+# c62834972fa3417e9a18b9556e05cb30
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:49
+msgid "Let's begin by exploring a little more in JOSM."
+msgstr ""
+
+# f0589c9f395743ca98018d8b29a613eb
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:51
+msgid "Open JOSM."
+msgstr ""
+
+# 23dc3928eb77474a99d47b395ae41e3f
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:53
+msgid ""
+"Load your gpx file (tracks and/or waypoints) and your Field Paper in JOSM, "
+"as in the previous modules. It is not necessary to open both, but you can if "
+"you want. Refer to the previous two modules if you don’t remember how to "
+"open these in JOSM."
+msgstr ""
+
+# eab138fcfbab40d8b1a5e12f037b6aae
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:58
+msgid ""
+"JOSM has many different buttons and panels. We are already familiar with the "
+"main window - this is the map window, and it is where most of the action "
+"takes place. Here you view, edit, and add to the OSM data."
+msgstr ""
+
+# 2ed512cef2a541449c108070a6a96537
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:62
+msgid ""
+"To the right of the map window are a series of panels, which each do "
+"something different. When you first install JOSM several panels are shown by "
+"default, such as :guilabel:`Layers`, :guilabel:`Properties` and :guilabel:"
+"`Selection`. When you select a point, line or shape in the map window, it is "
+"shown in the :guilabel:`Selection` panel. Information about the object is "
+"shown in the :guilabel:`Properties` panel, and the username of the author of "
+"that object is shown in the :guilabel:`Authors` panel."
+msgstr ""
+
+# d803222ef8d041dc919cbde3077dd900
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:74
+msgid ""
+"On the left side of JOSM, there are several toolbars which consist of many "
+"buttons. On the uppermost toolbar are different buttons which change what "
+"you can do with your mouse. You are already familiar with the first two, "
+"the :guilabel:`Select` tool and the :guilabel:`Draw` tool. The other tools "
+"make it easier to zoom in, delete an object, draw a shape or create a line "
+"that is parallel to another line."
+msgstr ""
+
+# ccfaa9e9c34e4710bf9dad73b15f327b
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:81
+msgid ""
+"Below these tools are many more buttons. These buttons control what you see "
+"on the right side of JOSM. Using these buttons you can open and close the "
+"boxes on the right, such as :guilabel:`Properties`, :guilabel:`Selection` "
+"and :guilabel:`Author`."
+msgstr ""
+
+# ff47e98e38eb4fff8ed3e722b1109d2b
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:87
+msgid "1.1. Downloading OSM Data"
+msgstr ""
+
+# 3042aa7d35434dbeab90536fd7d57852
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:89
+msgid ""
+"Remember the cycle of editing OSM described in the introduction of this "
+"module? Download, edit, save. Before we can edit the map, we must download "
+"the existing OSM data in our area."
+msgstr ""
+
+# 43409b295f094473acef138ff783bfbd
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:93
+msgid ""
+"When you open a gpx track or Field Paper, the map window will show what you "
+"have opened, and will automatically move to the correct coordinates. Look in "
+"the bottom left corner of JOSM. Notice the two numbers, which are the "
+"latitude and longitude (coordinates) of your mouse cursor."
+msgstr ""
+
+# 0546362a61a147848fd07cfa3e36ac3a
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:101
+msgid ""
+"Because our map window is already showing the area that we want to edit, it "
+"is easy to download the OSM data for this area. Go to :menuselection:`File ‣ "
+"Download from OSM`. This opens the :guilabel:`Download` window. This can be "
+"accessed more simply by clicking the :guilabel:`Download` button, shown here:"
+msgstr ""
+
+# ff725f3dc8d14985b078b026529c84f0
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:110
+msgid ""
+"When the download window opens, you should see a map with a pink box drawn "
+"on it. If you don’t see the map, click on the tab marked :guilabel:`Slippy "
+"map`."
+msgstr ""
+
+# 3409bbd0b10c45b5b666104527c2c5ec
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:117
+msgid ""
+"The pink box represents the area of the map that you would like to download "
+"for editing. Unless you have moved the map window since you opened your GPS "
+"file or Field Papers, the box should be drawn around the correct area. "
+"However if you would like to download a larger area, draw a new box. To do "
+"so, click on the map, hold your left mouse button down and drag the mouse to "
+"create a box. Release the mouse button to finish drawing the box."
+msgstr ""
+
+# 5e66c6a6cb7e4d13b56b6a1529756973
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:125
+msgid ""
+"When you are satisfied with the size and location of the box, click :"
+"guilabel:`Download` at the bottom of the window. JOSM will get the data for "
+"this area from OSM and open it in your map window for editing."
+msgstr ""
+
+# bb3b022a2dd3470296bce4880d532de7
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:130
+msgid "2. JOSM Layers"
+msgstr ""
+
+# 09b50209f90843adb2e2912944e27c5d
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:132
+msgid ""
+"Open your GPS file and downloaded data from OSM, if you haven’t already. "
+"Notice that when you open a file, add Field Papers or download from OSM, "
+"another item is added to the :guilabel:`Layers` panel on the right side of "
+"JOSM. Your :guilabel:`Layers` panel may look something like this:"
+msgstr ""
+
+# f8abb424549f4657a37c0447578f89e2
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:141
+msgid ""
+"Each item in this list represents a different source of data that is open in "
+"the map window. In the example above, “Data Layer 2” is the OSM data that we "
+"want to edit. “Markers” are the waypoints from the GPS, and “30 Juni 2011."
+"gpx” is the track from the GPS. Finally, “Field Papers” is the layer created "
+"when we added our Field Paper into JOSM."
+msgstr ""
+
+# 887b9f21385d4e29ba713f5c34faed1c
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:147
+msgid ""
+"Add the Bing imagery layer, which shows satellite imagery, by going to :"
+"menuselection:`Imagery ‣ Bing Sat`."
+msgstr ""
+
+# 7ad7b10d38174edab61eb8797b5fca02
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:150
+msgid ""
+"To hide one of the layers, select it with your mouse and click the :guilabel:"
+"`Show/Hide` button, which looks like this:"
+msgstr ""
+
+# 155468f83b554d66b986e1961069c2a4
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:156
+msgid ""
+"The layer will disappear in the map window. Click :guilabel:`Show/Hide` "
+"again, and it will reappear."
+msgstr ""
+
+# 55511987f9a4470799fdf41b9ae88e9c
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:159
+msgid ""
+"Remove a layer by selecting it and clicking the :guilabel:`Delete` button:"
+msgstr ""
+
+# 3fed00b712914f1ea9c353a3790f87a3
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:164
+msgid ""
+"Lastly, it’s important to know that you can only edit the layer that is "
+"considered \"Active” by JOSM. If you are unable to edit the map in your map "
+"window, it’s probably because you don’t have the correct layer set as "
+"active. Most layers, such as GPS points, Field Papers, and satellite "
+"imagery, can’t be edited. The only layers that can be edited are data from "
+"OSM, which are usually called “Data Layer 1”."
+msgstr ""
+
+# 204ddc94858b4b78881606124fdc443e
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:171
+msgid ""
+"To make a layer active, select it in the :guilabel:`Layers` panel, and click "
+"on the :guilabel:`Activate` button:"
+msgstr ""
+
+# 1c2e3c9b60934c4b9ed263f2bc2b99cd
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:178
+msgid "3. Editing"
+msgstr ""
+
+# a09e3ad0568541eeb5f1d43e8f689a68
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:180
+msgid ""
+"The next step is to edit the map and add new items. This is not always easy "
+"at first, but with practice you will get better and better. Note that you "
+"can select tools in JOSM by clicking their buttons in the toolbar, or you "
+"can use keys on the keyboard as shortcuts. The shortcut keys are indicated "
+"in parentheses below."
+msgstr ""
+
+# db9eaa86421e4235afc8209e5f37a93e
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:186
+msgid ""
+"To move a point, line or shape, use the :guilabel:`Select` tool (:kbd:`S`). "
+"Click on an object and drag it where it should be. This can be used to "
+"correct the location of items that have been put in the wrong place."
+msgstr ""
+
+# 2d48cea079c8423a9df6c043849d5fce
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:190
+msgid ""
+"Use the :guilabel:`Draw` tool (:kbd:`A`) to draw new points, lines, and "
+"shapes. Attach attributes to these objects by selecting from the :"
+"menuselection:`Presets` menu, as we did in Module 3."
+msgstr ""
+
+# 763c8e02e0284666a8f4aa2e0a646c95
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:197
+msgid ""
+"Remember that your GPS points and Field Papers don’t automatically go into "
+"OSM. You need to add them to the OSM map digitally using the :guilabel:"
+"`Draw` tool. But your points, tracks, and Field Papers can be seen in the "
+"background as a guide."
+msgstr ""
+
+# e05e461f83224f78aa344eb1e7bd1b4c
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:202
+msgid ""
+"Let’s assume that you saved a waypoint on your GPS named \"030\" and wrote "
+"in your notebook that 030 is a school. To add this point into OSM, select "
+"the :menuselection:`Draw` tool, and double-click on top of point 030 in your "
+"map window. This will create a point. Then go to the :menuselection:"
+"`Presets` menu, and find the preset for school. Enter the name of the school "
+"and click :guilabel:`Apply Preset`. Do the same to add lines and shapes."
+msgstr ""
+
+# c94ab487495b4de98a90f489b89fd7fb
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:214
+msgid "4. Tags"
+msgstr ""
+
+# 2e7bd550cba44b97bb10624a36e40d8a
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:216
+msgid ""
+"When you draw a point, line or shape, it has a location, but no information "
+"about what it is. In other words, we know where it is, but not what it is. "
+"Before now, we have been using items from the :menuselection:`Presets` menu "
+"to define what it is. The way OSM knows what an object is is by using tags."
+msgstr ""
+
+# 6499fec311a8419ea81638dea2c36244
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:222
+msgid ""
+"A tag is like a label that you can put on something. For example, if we draw "
+"a square, it’s only a square. But then we add multiple tags to it that "
+"describe what it is:"
+msgstr ""
+
+# 5f995c804d0243e09fe61abd379f9956
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:226
+msgid "this square is a building"
+msgstr ""
+
+# a14ab627e1da4eb9a994f61266d93ce4
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:227
+msgid "the name of the building is “Menara Thamrin”"
+msgstr ""
+
+# fbb367c552194035b46f41ccd780b536
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:228
+msgid "the building is 32 levels high"
+msgstr ""
+
+# 4685b9729c26444a8720abcfdbd73ca9
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:230
+msgid ""
+"We can add as many tags as we want to an object. Tags are saved as pairs of "
+"text, called the keys and the values. In OSM, the tags written above would "
+"be:"
+msgstr ""
+
+# a649c07d3ed44504881f5f4af3202d2c
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:234
+msgid "building = yes"
+msgstr ""
+
+# 1d67ea03fea340a19d557cd2195a8545
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:235
+msgid "name = Menara Thamrin"
+msgstr ""
+
+# 9d8eed2f258c49b5bf213dbd52ff0017
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:236
+msgid "building:levels = 32"
+msgstr ""
+
+# 114d1e540b3d4e9492f424688edad968
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:238
+msgid ""
+"When you select an object in JOSM, you can see all the tags that are "
+"attached to it in the :guilabel:`Properties` panel on the right."
+msgstr ""
+
+# 02c0b0706d7646a392c02bf1cd8e9399
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:245
+msgid "4.1. Editing Tags"
+msgstr ""
+
+# 6887f938b06f4548bfec0223dd5ab2d2
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:247
+msgid ""
+"You can add, edit and delete these tags from the :guilabel:`Properties` "
+"panel. The tags are traditionally in English, so if you prefer you can "
+"always use the :menuselection:`Presets` menu to simplify tagging objects. "
+"When you add or change tags, such as primary highway versus footpath, the "
+"style will change according to the tag."
+msgstr ""
+
+# dfc7441d57394634bd4fc52abb1fb747
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:253
+msgid ""
+"To edit an existing object, first select it. Then edit the tags in one of "
+"two ways:"
+msgstr ""
+
+# a34d8a6f260a4dc88fed3b4989ceda2f
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:256
+msgid ""
+"Use the :menuselection:`Presets` menu to open up a form and edit the "
+"information,  or"
+msgstr ""
+
+# dbbe5a30f9664f15a12c258fc98cabf8
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:258
+msgid ""
+"Edit the tags directly in the :guilabel:`Properties` window on the right."
+msgstr ""
+
+# 50c652dfd78d438686532292ce9f0e41
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:265
+msgid "4.2. Common Mistake"
+msgstr ""
+
+# af2479acce914eaa83a34adfe16f423b
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:267
+msgid ""
+"A common mistake is to tag nodes when you want to apply tags to lines or "
+"polygons."
+msgstr ""
+
+# 6c9b745d6455436699644919c6e33152
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:270
+msgid ""
+"When adding tags to a node, select the node and then add the relevant tags "
+"(or use the :menuselection:`Presets` menu). However, when tagging a line or "
+"polygon, it is important to select the line, and NOT the nodes that make up "
+"the line."
+msgstr ""
+
+# 1ab0000555ef44488d63225181bec77f
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:275
+msgid ""
+"New users frequently use the JOSM :guilabel:`Select` tool to draw a box "
+"around an object, which causes everything (both the line or shape as well as "
+"its nodes) to be selected. Then when tags are applied to the selected "
+"objects, they are applied to the nodes as well. To avoid this, be sure to "
+"only select lines when you want to add tags to them."
+msgstr ""
+
+# d1f742768b9c49c0bb826c3de1c41a29
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:284
+msgid ""
+"More information about tags and presets can be found in the :ref:"
+"`Intermediate OpenStreetMap Guide Module 4 <creating-josm-file-presets>`."
+msgstr ""
+
+# 4c2fcd1e3f3b46b79fefab9cf280e252
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:289
+msgid "5. Uploading Changes"
+msgstr ""
+
+# 0c096dde132a417fbaeb401cec5b5f8f
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:291
+msgid ""
+"After we have made a couple of changes to improve the map, we need to upload "
+"those changes to OSM. To save changes, we must be connected to the internet."
+msgstr ""
+
+# cfc0a40a4af3406aa50c1b412b1e4983
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:295
+msgid ""
+"Go to :menuselection:`File ‣ Upload Data`. This opens the :guilabel:`Upload` "
+"window. This can be accessed more simply by clicking the :guilabel:`Upload` "
+"button, shown here:"
+msgstr ""
+
+# 3d38f3db2a0446ae98bf5c9fef354b05
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:302
+msgid ""
+"The window that appears shows a list of the objects that you are adding and "
+"the objects you are modifying or deleting. In the box at the bottom you are "
+"asked to provide a comment about the changes that you are making. Type in "
+"here a description of your edits."
+msgstr ""
+
+# 999f96d375c441c789a5f6275a67e403
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:310
+msgid "Click :guilabel:`Upload Changes`."
+msgstr ""
+
+# 39696f38115242c4b09f8b9c7363a416
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:312
+msgid ""
+"If this is your first time saving changes to OSM, you will be asked for the "
+"username and password that you created in Module 2. Enter them in the window "
+"that appears. If you check the box in this window, your username and "
+"password will be saved and you won’t need to enter them again in the future. "
+"Click :guilabel:`Authenticate`."
+msgstr ""
+
+# f92849f1d2184d32b81eb2152820c0cc
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:321
+msgid ""
+"Wait a few seconds for your changes to be uploaded, and then you are done! "
+"You have made your first edits to OSM. You may continue editing to add all "
+"your points if you wish. Always be sure to upload your changes before "
+"closing JOSM."
+msgstr ""
+
+# 2e0bb027676c4693827735d45c9c4909
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:326
+msgid "After you have uploaded all your changes, you can see the updated map."
+msgstr ""
+
+# a656e36b11d547d1bbe00b59045e851d
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:328
+msgid ""
+"Open your internet browser and go to `openstreetmap.org <http://"
+"openstreetmap.org>`_"
+msgstr ""
+
+# 1a52a0fcc1ad481ebece75861643e5aa
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:331
+msgid "Move the map to the area that you edited."
+msgstr ""
+
+# 366a5ab48b384e0bbfe1a8d8609f40bb
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:333
+msgid ""
+"You should see your changes now on the map! If you don’t, try pressing :kbd:"
+"`CTRL+R` to refresh the web page. Sometimes the map doesn’t update properly "
+"and needs to be reloaded."
+msgstr ""
+
+# d7a076c557cc4246b6d115b4e8df7ce0
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:337
+msgid ""
+"What if you don’t see your changes? Don’t worry - it may take a few minutes "
+"for the changes to be shown on the map. Also, check your additions in JOSM "
+"to make sure that you added them correctly. A good general rule is, if your "
+"point has an icon in JOSM, then it should be seen on the main map on the OSM "
+"website."
+msgstr ""
+
+# 1314096ed4aa42cd8db65e8943da1285
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:344
+msgid "6. Saving OSM files"
+msgstr ""
+
+# 61077e26302b49619d52887508652682
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:346
+msgid ""
+"Sometimes after you download some OSM data, you may wish to save it so that "
+"you can edit it offline, and then upload it later when you have internet "
+"access again."
+msgstr ""
+
+# ec28facc0c9746dfa26aa60ac3e2a507
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:350
+msgid ""
+"To save an OSM file, make sure that it is the active layer in the the Layers "
+"panel. Go to :menuselection:`File ‣ Save`. Choose a location for the file "
+"and give it a name. It can also be saved by clicking this button:"
+msgstr ""
+
+# 4198a33355a04565b16378de6470b496
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:358
+msgid ""
+"You can now close JOSM and your data will be saved. When you want to open "
+"the file again, simply open JOSM and go to :menuselection:`File ‣ Open...`."
+msgstr ""
+
+# 1caaffe72c0447bebf5fb60cd1100de4
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:361
+msgid ""
+"While it is possible to download OSM data, save it, and then upload later "
+"when you are connected to the internet, this may cause problems, especially "
+"if a lot of time passes between the time you download and the time you "
+"upload the changes. If another OSM user edits the same area and the same "
+"objects during this time, it may cause conflicts to occur. Try not to let "
+"too much time pass between downloading and uploading data."
+msgstr ""
+
+# 0655fab1f36d491ba9a00338d563afec
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:369
+msgid "7. Using keyboard shortcuts"
+msgstr ""
+
+# 36126519849b4d9cab26bc59a6c3e6a7
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:371
+msgid ""
+"It can be dizzying to click over and over again between the various tools "
+"and menus in JOSM. Fortunately, there are shortcuts for most actions in JOSM "
+"with a simple press of the keyboard. Here is a list of commonly used "
+"keyboard shortcuts and their associated functions:"
+msgstr ""
+
+# 851f5cf42189410b8920bf098ebd656f
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:376
+msgid ":kbd:`S`: Select tool (select objects)"
+msgstr ""
+
+# 61674c0fd5f6483999cb3e09f7d7123b
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:377
+msgid ":kbd:`A`: Draw tool (draw objects)"
+msgstr ""
+
+# c6dce707003e4faa8a31cd38f48f95c4
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:378
+msgid ":kbd:`Z`: Zoom tool"
+msgstr ""
+
+# 0265826c5a8847079406b98d106211ba
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:379
+msgid ":kbd:`Minus` (or :kbd:`Ctrl + >`): Zoom out"
+msgstr ""
+
+# 971ef637487f474f8e39d1a7dea3207f
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:380
+msgid ":kbd:`Plus` (or :kbd:`Ctrl + <`): Zoom in"
+msgstr ""
+
+# 4f5c79528df44eaa823d98485b08f7e0
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:381
+msgid ":kbd:`P`: Split Way"
+msgstr ""
+
+# 59793a4868ba4303bd3d8dc57d320161
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:382
+msgid ":kbd:`C`: Combine Way"
+msgstr ""
+
+# cf4fdf60d6154c05b1a586bf4003ec6e
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:383
+msgid ":kbd:`O`: Align in Circle (set the points into a circle)"
+msgstr ""
+
+# abf99b30b3cb46aa95ae6601203d9b03
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:384
+msgid ":kbd:`L`: Align in line (set the points into a straight line)"
+msgstr ""
+
+# c418400c649e4b5bb7ceadbabb9cb203
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:385
+msgid ":kbd:`Q`: Orthogonalise (make into a square shape)"
+msgstr ""
+
+# afe682e1bc7d45108fc953d2abb1d92e
+#: ../../source/training/old-training/beginner/osm/106-editing-osm-with-josm.rst:388
+msgid ":ref:`Go to next module --> <imagery-offset>`"
+msgstr ""

@@ -1,0 +1,1037 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-04 11:28+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# adccda7c0dba48b3aa2957384a382019
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:10
+msgid "Chapter 8 Using InaSAFE"
+msgstr ""
+
+# 2138ab12e8fa4cc5b56f0d5ff8bfa258
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:12
+msgid "**Learning Objectives**"
+msgstr ""
+
+# efc47508400740c197f796a84f5f0342
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:14
+msgid "Understand Hazard, Exposure and Impact"
+msgstr ""
+
+# fcc89bac7c2440b9a50191cce30cc561
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:15
+msgid "Learn InaSAFE interface"
+msgstr ""
+
+# 63d949b036df4833a8c743f2ffa6d587
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:16
+msgid "Run InaSAFE for Infrastructure"
+msgstr ""
+
+# 08790b867b3d4a77bc9ed5bd5680c49d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:17
+msgid "Use InaSAFE OpenStreetMap downloader"
+msgstr ""
+
+# f093d7a9cd8f441fa8a5c1d83efa1f3f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:18
+msgid "Add keyword metadata"
+msgstr ""
+
+# c43eb23a6eb54b77aa4b81ae1a9b258c
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:19
+msgid "Set outline impact analysis"
+msgstr ""
+
+# 3723785e2c87468483d25e2b31b7bb98
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:20
+msgid "Run InaSAFE for Population"
+msgstr ""
+
+# 89730c9cc24e4bdbb9acc15fd7426356
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:21
+msgid "Use aggregation layer"
+msgstr ""
+
+# 9f4b88e8c4954c4e88c313d0563af130
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:22
+msgid "Customize minimum needs"
+msgstr ""
+
+# 92ba0f93eb984782ac56d0d2aa31960e
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:23
+msgid "Print InaSAFE Result"
+msgstr ""
+
+# c11c95474a7c406d8d3b7283926fd052
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:24
+msgid "Save Impact Result data into new layer"
+msgstr ""
+
+# 74411b481a5b4aa4b10cd951d7d5dd57
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:26
+msgid ""
+"InaSAFE provides overviews of potential disaster scenarios, of their "
+"outcomes, as well as map which can aid decision makers when disaster "
+"strikes. In this chapter we will learn about how to use InaSAFE along with "
+"other usefull features in InaSAFE for flood hazard scenario. If you interest "
+"to learn more about InaSAFE with other hazard beside flood, you go and learn "
+"in `InaSAFE website <http://www.inasafe.org>`_."
+msgstr ""
+
+# 96ec497759324fdfa7de9104ae9eeadb
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:33
+msgid "8.1 Hazards, Exposure and Impact"
+msgstr ""
+
+# eff1bbaf272a43a6bae78599e83fa7c2
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:35
+msgid ""
+"Let’s begin by reviewing he inputs and outputs of InaSAFE – **hazard**; "
+"**exposure**; and **impact**. These terms are important for you to remember "
+"because the analysis process depend on these three things."
+msgstr ""
+
+# 4ddee9146ef743c283e1ca1018f3c37b
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:39
+msgid ""
+"**Hazards** (also called disasters) are what we call the data layers that "
+"describe the extent and magnitude of natural events (such as earthquakes, "
+"tsunamis, volcanic eruptions) that could potentially cause an event or "
+"series of events that threaten and disrupt the lives and livelihoods of "
+"people."
+msgstr ""
+
+# f9e4221666364fe0ac88f6622119abc7
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:44
+msgid ""
+"In general, the hazards data we use in InaSAFE represents a single hazard "
+"scenario. A scenario means that the hazard:"
+msgstr ""
+
+# 7b18af4f67a24f61a2f59db7c9672dc3
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:47
+msgid "is at a particular location"
+msgstr ""
+
+# e678d5c265554595a185cecbe6274460
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:48
+msgid "has a measured intensity"
+msgstr ""
+
+# cc764406c90a4fd98f8d4c2753f888d6
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:49
+msgid "has a measured duration"
+msgstr ""
+
+# 2c619036d91544d9aaeb79cae0178f4d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:50
+msgid "has a certain time frame"
+msgstr ""
+
+# bd8340251ee543ad8e66e29bd800d869
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:52
+msgid ""
+"**Exposure** data represents things that are at risk when faced with a "
+"potential hazard. This can be man-made features such as public buildings, "
+"houses, roads and bridges, or it can be so-called natural features, such as "
+"population, rice paddies and lakes. These exposed elements can be divided "
+"into various categories, including physical elements (houses, power lines), "
+"economic elements (agricultural land, access to employment), social elements "
+"(vulnerable groups, population count), and environmental elements (air, "
+"water, plants and animals)."
+msgstr ""
+
+# a97f9f03b4a048a0a8a6962027ac6e56
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:60
+msgid ""
+"**Impact** is the result we get after InaSAFE processes the effect of the "
+"hazard data upon the exposure data. For example, if there is an earthquake "
+"model in Lembang, and we process it against building data in Bandung, our "
+"impact layer may show those houses that would be severely damaged, those "
+"somewhat damaged, and those mildly damaged. In other words, what goes in to "
+"InaSAFE are hazards and exposure. What comes out is impact."
+msgstr ""
+
+# d54716df893c4943ad4436b57cfd932d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:67
+msgid "8.2 The InaSAFE Interface"
+msgstr ""
+
+# a385cb2bd6094a7faaabeb09ce688cf8
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:69
+msgid ""
+"Before we run any scenarios, let’s take a closer look at the InaSAFE "
+"interface."
+msgstr ""
+
+# 6902c6ea5d0f44489de4c85c9c65e360
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:71
+msgid ""
+"First, make sure you’ve installed the InaSAFE plugins. Follow the plugin "
+"instructions in :ref:`chapter 3 <ch3-basic-of-qgis>`. Find and install the "
+"plugin called InaSAFE."
+msgstr ""
+
+# 11f1415a374f4995bb1c7999ba777264
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:74
+msgid "Open a new project in QGIS."
+msgstr ""
+
+# 7cbf39ec321c4bd38a57b7fd2e4c44b9
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:76
+msgid ""
+"If the InaSAFE toolbar is not visible, right-click on the toolbars and make "
+"sure that :guilabel:`InaSAFE` plugin is checked. The toolbar looks like this:"
+msgstr ""
+
+# 4564772fd4ca4d81a8d58d01c95bd241
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:82
+msgid ""
+"To show the InaSAFE panel, click on the :guilabel:`Toggle InaSAFE dock` "
+"button."
+msgstr ""
+
+# 5698faef6da04137a8c8a15de9a822fa
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:87
+msgid ""
+"Just like QGIS toolbars, you can drag and drop the InaSAFE dock panel to "
+"change its position on the QGIS interface. You can pull it away as a "
+"separate window, or place it below the Layers panel. It’s convenient in its "
+"location on the right side of QGIS, so we will leave it there."
+msgstr ""
+
+# aa63b52f37f943a096da373e5c7d7239
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:95
+msgid ""
+"The InaSAFE panel consists of three parts: Questions, Results and Buttons. "
+"The questions are mixed in with dropdown boxes - this is where we establish "
+"our input data and define the scenario that we want InaSAFE to process. The "
+"purpose of InaSAFE is to make your impact analysis very simple and easy to "
+"do. The Questions section provides a simple way for you to formulate what "
+"you want to know. All questions are created in the following format:"
+msgstr ""
+
+# d988ef8fecaa42519bc9869be3e26b91
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:101
+msgid ""
+"In the event of [**hazard**] how many [**exposure**] might [**impact**]?"
+msgstr ""
+
+# 2b53f01eecfd4a1bbb611dc39842ab62
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:103
+msgid ""
+"For example: \"In the event of an earthquake how many buildings might be "
+"destroyed?\""
+msgstr ""
+
+# db7262dbb5424f23ad752392d0e30d00
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:105
+msgid ""
+"The Results section is filled in with information after InaSAFE is run, as "
+"we shall see. The buttons at the bottom allow us to run a scenario, print "
+"and access help."
+msgstr ""
+
+# 85419a6d949049a1bf62e769570d1dce
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:109
+msgid "8.3 Run InaSAFE for Infrastructure"
+msgstr ""
+
+# 92871e57b5e243d6b603929b7c62eb17
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:112
+msgid "8.3.1 Adding Hazard Data"
+msgstr ""
+
+# 991f2300c9c3486a942980611ff58aa7
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:114
+msgid ""
+"We will learn about how to using InaSAFE to run impact scenario based on "
+"Infrastructure data. Before we started let start how to add hazard data. "
+"Hazards can be represented by vector layers or by raster layers. Remember "
+"that raster layers are like images with many pixels, and each pixel "
+"represents some data about an area on the ground. A raster that shows "
+"elevation, for example, will contain pixels with different values based on "
+"the altitude of the location. Similarly, a raster that represents a flood "
+"will contain the depth of the flood in every pixel in the raster."
+msgstr ""
+
+# b07e75e1b4be466ebe544c1b83b7bae8
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:122
+msgid ""
+"Let’s begin by adding our hazard layer to QGIS. It’s a raster model of flood "
+"in Jakarta."
+msgstr ""
+
+# d692b75dc5b643239b0cf0e98c4c5c4b
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:124
+msgid "Click the :guilabel:`Add Raster Layer` button."
+msgstr ""
+
+# 4b4d5a541f974b2abbcd69b5c8bff3cb
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:129
+msgid ""
+"Open :file:`flood_hkv_current.tif`. This data is raster data (in .tif "
+"format) which represents the flood prone area. The layer will look like this:"
+msgstr ""
+
+# 3b01de3c5c2d440498d43a830ead3d9f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:135
+msgid ""
+"You will notice that the hazard drop-down box has been automatically filled "
+"in the InaSAFE panel. This is because the data file has already been "
+"prepared for us with keyword metadata (fancy words for settings) that tells "
+"InaSAFE whether it’s a hazard or exposure layer. When we add the exposure "
+"data, we will learn how to add these InaSAFE keywords ourselves."
+msgstr ""
+
+# 742263de2e6f48dd9dcf18722cae0aeb
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:141
+msgid "8.3.2 Adding Exposure Data"
+msgstr ""
+
+# 964d763a97f648b59f5fc2f5750b19c4
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:143
+msgid ""
+"We can get the data from OpenStreetMap using OpenStreetMap Downloader. We "
+"will get any OpenStreetMap data based on the current map extent in QGIS. If "
+"your map extent displaying Indonesia, it will take a whole day according of "
+"our internet connection. It better to zoom in in specific location to "
+"minimize the bandwidth. Let’s learn how to use OpenStreetMap Downloader in "
+"QGIS to get OpenStreetMap data."
+msgstr ""
+
+# 059d97860e86461c9d4dbd592722b23e
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:149
+msgid "Click on :guilabel:`OpenStreetMap Downloader` button."
+msgstr ""
+
+# 0dc680637786410c944284e4bf84b889
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:154
+msgid ""
+"In the *Feature Types* you can choose all the OpenStreetMap data or specific "
+"data that you want download such as :guilabel:`building polygons` and :"
+"guilabel:`Roads`. Also you can download :guilabel:`political boundaries` and "
+"select level administration in your area such as RW Jakarta is level 8."
+msgstr ""
+
+# e26691d639514b549400679ef5af7159
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:159
+msgid ""
+"Set you *output directory* to the destination you want by clicking “…” "
+"button on the right side."
+msgstr ""
+
+# cc6822922696458885104087a66d4c24
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:164
+msgid ""
+"If you want to use some prefix, for example :kbd:`jakarta` you can type in :"
+"guilabel:`File name prefix` area."
+msgstr ""
+
+# 699fd364915e49e4b0fecb1af76b6921
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:167
+msgid ""
+"We can download all the map canvas extent but it takes a long time. "
+"Otherwise if you want to download specific area, click on :guilabel:`Drag on "
+"Map` button and create a bounding box by dragging it to set download area"
+msgstr ""
+
+# 10c8de61cc9e400eb48c6893d4a0b8c6
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:171
+msgid "Click on :guilabel:`OK` and wait until download finish."
+msgstr ""
+
+# d785aed44909455f8dfd6e9a8bd0718d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:176
+msgid ""
+"You can hide the **Roads** by clicking the box next to :guilabel:`Roads` "
+"layer list."
+msgstr ""
+
+# 43ed18d31bc34d1cbf33e7de48563292
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:179
+msgid "8.3.3 Adding Keyword Metadata"
+msgstr ""
+
+# e1e20345beb44f44b633e55afaf5ae37
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:181
+msgid ""
+"In order for InaSAFE to know that our layers are hazard or exposure "
+"datasets, we need to assign keywords to the layers using the InaSAFE keyword "
+"tool. Let’s take a look at the keywords that have already been created on "
+"the hazard layer."
+msgstr ""
+
+# 33647fe9b01a4106a58a0dd91dc0c316
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:185
+msgid ""
+"Select the :guilabel:`buildings` layer in the Layers panel, and click on "
+"the :guilabel:`Keywords Creation Wizard` button."
+msgstr ""
+
+# 7683ce280e9f4945860d2ce76636b2ce
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:191
+msgid ""
+"In the *InaSAFE Keywords Creation Wizard* window, we can follow the existing "
+"instructions step by step and change several keyword fields."
+msgstr ""
+
+# e3690f882d5c476c847f106e8840b7cd
+# 6ea3bd1e9bd844c68328fad64d734505
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:197
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:301
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+# 2309641adac546669d29154eaf0d1a46
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:199
+msgid "Select the :guilabel:`Roads` layer and open again the keyword editor."
+msgstr ""
+
+# bdd3c431080b4388b67b549326daa68c
+# 10db9d7295754254976e436709c24436
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:201
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:303
+msgid "Notice that the layer now appears in the InaSAFE panel."
+msgstr ""
+
+# 52fb72a5855e470ea368f452544cdf24
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:207
+msgid "8.3.4 Set Outline Impact Analysis"
+msgstr ""
+
+# 5546051bc15a401e9e8926dfa67722d2
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:209
+msgid ""
+"If you have a laptop with small ram, run InaSAFE for large area with so many "
+"data will takes a long time to finish. To solve that, we can set the "
+"analysis area to smaller area to make the analysis quicker."
+msgstr ""
+
+# eea4ee75c01d46df87fa67d397de52e1
+# deab537b2a544b60ae8fedac78a8a763
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:213
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:340
+msgid ""
+"Select :guilabel:`Toggle Scenario Outlines` to showing analysis outline area."
+msgstr ""
+
+# 508a102a55d349c58ebaa4d8521ae469
+# c3df5bcd2fcd4cb983e980a3b5ebf892
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:218
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:345
+msgid "It will showing green box around in the map canvas."
+msgstr ""
+
+# f2ef779890464fe6bc34a8566974e897
+# 9e95480d524d4ae4bb34a7e66b7329fe
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:223
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:350
+msgid ""
+"This green box is the analysis area that InaSAFE will calculate all the data "
+"inside the green box."
+msgstr ""
+
+# 2ea9400524e04037a5eb9f96027c67ce
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:225
+msgid ""
+"To change the analysis area, click :guilabel:`Set analysis area` button."
+msgstr ""
+
+# 9e4696821e5f48f19f4ae92b7a4a05df
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:230
+msgid ""
+"Click :guilabel:`Use intersections of hazard, exposure and this bounding "
+"box` and click on :guilabel:`Drag on map` button and create a box to set "
+"analysis area. This will create blue box around map canvas."
+msgstr ""
+
+# 84bd95229d51424b9e1eac07f711646d
+# 009533588fd1467c9311ce6963cc8066
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:237
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:363
+msgid "After that click :guilabel:`OK`."
+msgstr ""
+
+# 87ff7d14ce1e4e13b4be7df7f45f7626
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:240
+msgid "8.3.5 Impact Analysis"
+msgstr ""
+
+# 30e6616d2a6c49dc97a083f480e914f4
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:242
+msgid ""
+"Now our hazard and exposure data are set in the InaSAFE panel, because the "
+"appropriate keywords have been added to our layers. Note that if we were to "
+"add a second exposure layer to our project, we would be able to choose which "
+"exposure layer we wanted from the InaSAFE drop-down menu. The same applies "
+"to hazard layers."
+msgstr ""
+
+# b81e46333c4349c89120d4a1f0b8f92d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:248
+msgid ""
+"The third drop-down box is the impact function (“Might”). This concludes our "
+"question, and defines the function that InaSAFE will run behind the scenes. "
+"InaSAFE developers have written many of these functions to analyse all sorts "
+"of hazard and exposure layers. The function that is selected for us here "
+"will process the hazard and exposure layers spatially to determine how the "
+"exposure layer will “be flooded.”"
+msgstr ""
+
+# 2b9ca402033b4ae1b2d6f99af80874ec
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:254
+msgid ""
+"Click the :guilabel:`Run` button at the bottom to start the impact analysis. "
+"At the end of the process, the statistics will be displayed in the Results "
+"section, and a new layer will be added to the Layers panel that describes "
+"the result of the analysis. The map will distinguish between buildings that "
+"are affected and those that are not."
+msgstr ""
+
+# a33c180056fa43a3ad1b0b628a69e29e
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:263
+msgid "8.4 Run InaSAFE for Population"
+msgstr ""
+
+# 5a05c596cf3149ec99a97be25ff9bc27
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:265
+msgid ""
+"In this section we will learn how to run impact analysis for population data "
+"with InaSAFE. We still use raster hazard data for flood in Jakarta but we "
+"will add another exposure data which is population from AsiaPop."
+msgstr ""
+
+# 3eba09ed6c1f4a119037cb6c1d2f019e
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:270
+msgid "8.4.1 Adding Exposure Data"
+msgstr ""
+
+# 286636f8455b4718ab72b5c9c289bcb1
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:272
+msgid ""
+"We already learn about how to symbolise this data in previous chapter "
+"(chapter 6), so if you think the colour of this AsiaPop’s data different "
+"than yours, you may need to symbolise it."
+msgstr ""
+
+# c1410e46bb0041c6a376e63f1975f9ad
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:276
+msgid "Click :guilabel:`Add Raster Layer` button and add :file:`popmap10_all`."
+msgstr ""
+
+# 650688c92bfc4cbb92656a1d9e16b75e
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:278
+msgid "Change the layer order like this:"
+msgstr ""
+
+# a948c31fc9334cf78301b46ad13633d4
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:283
+msgid ""
+"You can hide the vector data such as roads and building to create more clear "
+"view in map canvas."
+msgstr ""
+
+# aa95c7db7f664014af4a895abf03cbf0
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:286
+msgid "8.4.2 Adding Keyword Data for Population"
+msgstr ""
+
+# dda0c895ba41484a889c153355740e26
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:288
+msgid ""
+"Select the **popmap10\\_all** layer in the Layers panel, and click on the :"
+"guilabel:`Keywords Creation Wizard` button."
+msgstr ""
+
+# 27174b1dd1d5441aa23a46d519701f76
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:294
+msgid ""
+"In the *Keywords Creation Wizard* window choose exposure as category layer, "
+"we can follow the existing instructions step by step and change several "
+"keyword fields. The last step, you can fill the :guilabel:`Title` with :kbd:"
+"`people`."
+msgstr ""
+
+# 6ad342a28ed240f2ad732c2e9eba5b14
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:309
+msgid "8.4.3 Using boundary as aggregation layer"
+msgstr ""
+
+# a0722711dead44d9a65c6593a55d6db3
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:311
+msgid ""
+"We can let InaSAFE to give impact result to us according whole area or "
+"divide it by administration boundary. It mean that the InaSAFE will provide "
+"impact analyst result into each administration area that we provide. This "
+"method will help us to know more specific result for each area, so we can "
+"know how many people that might be affected and how many logistic we should "
+"prepare for each administration area. To do this, we need to define "
+"aggregation layer first using :guilabel:`Keyword Creation Wizard`."
+msgstr ""
+
+# c7cb683cc64442e2b49160aece5ac75b
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:318
+msgid ""
+"Click :guilabel:`Add Vector Layer` button and add :file:"
+"`district_osm_jakarta.shp`."
+msgstr ""
+
+# 2c2532af6f13493dbf1fa7ee99a644e5
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:320
+msgid ""
+"Select the **district_osm_jakarta.shp** layer in the Layers panel, and click "
+"on the :guilabel:`Keywords Creation Wizard` button."
+msgstr ""
+
+# d1005421228a4c7e96c48e5c8808cc5d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:323
+msgid ""
+"In the *Keywords Creation Wizard* window choose aggregation as category "
+"layer."
+msgstr ""
+
+# 7a18f2fe22c44172a9bd2a5e05aef1ca
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:325
+msgid ""
+"After that, you can follow the existing instructions step by step and change "
+"several keyword fields. The last step, you can give the Title with :kbd:"
+"`District Jakarta`."
+msgstr ""
+
+# 62629d63a2a34f11b0cdc68ed0fbd67e
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:333
+msgid "8.4.4 Set Outline Analysis"
+msgstr ""
+
+# 8e84beb97fec4830b44456eda42f08c8
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:335
+msgid ""
+"We already set the analysis area for calculating impact for building. This "
+"time we will set the analysis area for population data."
+msgstr ""
+
+# f978350404614b14801f9b8094b18a64
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:338
+msgid ""
+"Right click on :guilabel:`flood_hkv_current_jakarta` layer and click :"
+"guilabel:`Zoom to Layer`"
+msgstr ""
+
+# 6e628dc0b30a4f209db8781320d42ce1
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:352
+msgid "To change the analysis area, click *Set analysis area* button."
+msgstr ""
+
+# 801e3159f8814edb843edeac5265f9cd
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:357
+msgid ""
+"Click :guilabel:`Drag on map` button and create a box to set around the "
+"**flood\\_hkv\\_current\\_jakarta** area. This will create blue box around "
+"map canvas."
+msgstr ""
+
+# 06974a89c87847b994a970c2c5740382
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:365
+msgid ""
+"We will run InaSAFE with Jakarta boundary as aggregation layer. To do this, "
+"simply change :guilabel:`aggregate result by` in InaSAFE panel into district "
+"boundary."
+msgstr ""
+
+# 535a80f508e345c19f6ee3af8970323d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:371
+msgid ""
+"Now click, :guilabel:`Run` to calculate impact analysis and wait for a "
+"moment."
+msgstr ""
+
+# 75d4bd3dacb8429b8628a3e1a40db583
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:376
+msgid ""
+"You will get impact result in the InaSAFE panel in the right side divided by "
+"5 municipal in Jakarta."
+msgstr ""
+
+# da5b7572311142de982ea7d4e5777e5d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:383
+msgid "8.4.5 Configure Minimum Needs"
+msgstr ""
+
+# cb864b96e5174628939154ebc005748f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:385
+msgid ""
+"When you scroll impact result from running InaSAFE scenario, you will notice "
+"that there are some statistic that show how many rice, drinking water, clean "
+"water, family kits and toilet for each municipals in Jakarta. It called "
+"minimum needs per week for each people evacuated. The purpose of this "
+"minimum needs is to provide quick method calculating support requirements "
+"(in terms of food, water, etc) for displaced persons."
+msgstr ""
+
+# 8a8115ced50f418fad76ba64350b030c
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:391
+msgid ""
+"The minimum needs (by default) are based on ‘Perka 7/2008’ BNPB according to "
+"the following default formulas:"
+msgstr ""
+
+# 16917e399d2d4fbea6bc4afadd33b628
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:394
+msgid "400g rice per person per day (2.8 kg per week)"
+msgstr ""
+
+# 941d9c7fdefb4f68a11a6150dd7f5af0
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:395
+msgid "2.5l drinking water per person per day (17.51 L per week)"
+msgstr ""
+
+# 6bc20124867649379458ffc8d64d8a67
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:396
+msgid "15l clean water per person per day (105 L per week)"
+msgstr ""
+
+# d23efdf4b2804a67a09ae869e083214b
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:397
+msgid ""
+"One family kits per family per week (assumes five people per families which "
+"not specified in perka)"
+msgstr ""
+
+# 80525967bc744974909ad62d7be0ee3f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:399
+msgid "20 people per toilet"
+msgstr ""
+
+# 10b9f6aad9ff42debd350a9b5f365c79
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:401
+msgid ""
+"If you feel not satisfied with these configuration, you can define your "
+"custom minimum needs for your own area using *Minimum Needs Configuration*"
+msgstr ""
+
+# d59a1f25c8f849998a85c944abf05908
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:404
+msgid ""
+"Click in :menuselection:`Plugin → InaSAFE → Minimum Needs Configuration`"
+msgstr ""
+
+# 7bf5117eaadf4565a06fd76cc2b03add
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:409
+msgid ""
+"*Minimum Needs Manager* Window will appear. You can see in the :guilabel:"
+"`Profile` selection there are 3 profile that already defined, **BNPB_en**, "
+"**Philippine Minimum Needs_en**, **BNPB_id**, and **Tanzania**."
+msgstr ""
+
+# ef68a67e563e45e5ab24220ff41f683a
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:416
+msgid ""
+"If you want to change the default minimum needs for each item in each "
+"profile, simply select an item that you want to change and click"
+msgstr ""
+
+# 03a32742b7ee46bea4a4de7cbe12fe3f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:422
+msgid "button in the right upper side of the window."
+msgstr ""
+
+# 1a1240372aad488b9b19f114d8a14a79
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:424
+msgid ""
+"You will enter *Resource editor* and from these editor, you can add or "
+"modify resource by fill each field that you think it’s important"
+msgstr ""
+
+# 2a17989ef6d841738bad9e5d9f4f35f7
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:427
+msgid ""
+"Click :guilabel:`Save Resource` if you already change the value from an item "
+"or click :guilabel:`Discard Changes` if you didn’t change anything."
+msgstr ""
+
+# 4b56b418532f47ddaf4653da0218ffbe
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:430
+msgid ""
+"If you want to create your own custom minimum needs, click :guilabel:`New` "
+"in the bottom side of the window and you can start adding new item by click :"
+"guilabel:`+` button in the right upper side of the window to open *Resource "
+"editor.*"
+msgstr ""
+
+# b0622198f5ce4b4da54a50a2d445938a
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:434
+msgid ""
+"Click :guilabel:`Save` after you add several item to your custom minimum "
+"needs."
+msgstr ""
+
+# d661fa2c6953420196b055a78d52dcf0
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:437
+msgid "8.4.6 Run Impact Analyst with Modified Minimum Needs"
+msgstr ""
+
+# 34a82e51929a4a4ba87c44ecbad41ad1
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:439
+msgid ""
+"After you create your custom minimum needs you can run InaSAFE with your own "
+"minimum needs:"
+msgstr ""
+
+# 6534101c8e66420ab51f3036624ca06c
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:441
+msgid "Go to :menuselection:`Plugins ‣ InaSAFE ‣ Minimum Needs Configuration`"
+msgstr ""
+
+# 8aa608285b5544e38c65d566fb1002a7
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:443
+msgid ""
+"In *Minimum Needs Manager* Window, select your custom profile in Profile "
+"selector. After that close the *Minimum Needs Manager* Window."
+msgstr ""
+
+# 061a0121b10c4c329ddff84dbf96ba17
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:446
+msgid ""
+"Click :guilabel:`Options…` in InaSAFE Panel to open *InaSAFE impact function "
+"configuration*"
+msgstr ""
+
+# 2371ed86e2b945b389baec94338185a3
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:451
+msgid ""
+"Click :guilabel:`Minimum Needs` tab to see if your own Custom Minimum Needs "
+"already set."
+msgstr ""
+
+# 6fd1a7287e454c5f86158327fc8ac45e
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:453
+msgid ""
+"Click :guilabel:`Run` to see the InaSAFE result with your custom minimum "
+"needs."
+msgstr ""
+
+# ae72c71037b7465f84e7589f8f2dd67e
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:456
+msgid "8.5 Print InaSAFE Result"
+msgstr ""
+
+# 5b4e568212a7462db89d0eb8d83e498d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:458
+msgid ""
+"The data displayed on the screen can be saved to a PDF file by clicking :"
+"guilabel:`Print` at the bottom of the InaSAFE panel. Before we print the "
+"InaSAFE result, we can improve our impact map by editing the symbology in "
+"QGIS. Styles can be changed, other relevant layers can be added, and the "
+"layout can be changed using the Print Composer."
+msgstr ""
+
+# 9369da6e7d154933a623a3387145c80d
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:463
+msgid "Click on the InaSAFE result layer and click :guilabel:`Print`."
+msgstr ""
+
+# 43f26cf4fdea4c338569563855935c12
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:465
+msgid ""
+"A window will appear in which you can choose the extent to be printed. "
+"Choose :guilabel:`Analysis extent` if you want to print the entire map "
+"extent, or choose :guilabel:`Current extent` to print the analysis based on "
+"the current view of the map."
+msgstr ""
+
+# 6d6079d9f0c94428a86d505ca06c23f3
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:469
+msgid ""
+"You may also choose a custom print template *a3-landscape-blue, a3-landscape-"
+"orange, a3-portrait-blue, a3-portrait-orange, a4-landscape-blue, a4-"
+"landscape-orange, a4-portrait-blue, and a4-portrait-orange*."
+msgstr ""
+
+# 72e0aff02fe345b0bc9a0c72a2953009
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:474
+msgid ""
+"If you want to add additional information before printing, click :guilabel:"
+"`Open Composer`."
+msgstr ""
+
+# 4799bc2975d84176935ebd65cdd6fbc0
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:476
+msgid "To save it in PDF format for printing, click :guilabel:`Open PDF`."
+msgstr ""
+
+# 8e2c4fd4f0034bb582d7a2831646d98f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:478
+msgid "Choose your save location and click :guilabel:`Save`."
+msgstr ""
+
+# 09de81961d394d199182955704907625
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:483
+msgid ""
+"After you wait for a while, InaSAFE will create 2 pdf output, first one is "
+"the **map based** on your extent view and the second one is the **statistics "
+"data**."
+msgstr ""
+
+# e3122dd94efc4a8cb11dafa549f45ebd
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:490
+msgid "8.6 Save Your Results"
+msgstr ""
+
+# 4ec79600feff41148d59205acc8d899f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:492
+msgid ""
+"You can save the impact layer that InaSAFE created, and you can save the "
+"QGIS project to come back to it later, but note that the InaSAFE’s symbology "
+"style cannot be saved. It will show you only black and white layer and you "
+"need to symbolise again."
+msgstr ""
+
+# 57c69e70177a4edc8e167f9f22aae41f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:497
+msgid "8.6.1 Save your InaSAFE result style"
+msgstr ""
+
+# 347eb360d72145bca22396088f65a4e5
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:499
+msgid ""
+"To get the style from your InaSAFE result, you need to save the InaSAFE "
+"result’s style first."
+msgstr ""
+
+# 81e840909014417281d46efca04313bb
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:501
+msgid ""
+"Right click on :guilabel:`Population which need evacuation`, and go to :"
+"guilabel:`Properties`."
+msgstr ""
+
+# 56a1a3b75177413da16dd00685da7f3e
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:504
+msgid ""
+"Go to :guilabel:`Style` button on the bottom side the properties window and "
+"click :guilabel:`Save Style …`."
+msgstr ""
+
+# d712c4b89a2940f3b90d5b30f2789c13
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:510
+msgid ""
+"Save your symbology style as :kbd:`population_result_style` and click :"
+"guilabel:`Save button`."
+msgstr ""
+
+# bead614582ae4b1cb46bd2fb687fe74f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:515
+msgid ""
+"To save the newly generated layer, right-click on it in the Layers panel. "
+"Click :guilabel:`Save As …`"
+msgstr ""
+
+# 31e8621b778b4e6b917ae3fd1be070ab
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:519
+msgid "8.6.2 Save InaSAFE Result layer"
+msgstr ""
+
+# 21ad1d4f8e2a48d9bf5ed8c7fdaf85a8
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:521
+msgid ""
+"After you saved your InaSAFE result style now you can save your InaSAFE "
+"result layer and get the same style like the InaSAFE Result."
+msgstr ""
+
+# bac906860a7c4e31b63554d002dd6269
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:524
+msgid ""
+"Right click on :guilabel:`Population which need evacuation`, and go to :"
+"guilabel:`Save As…`"
+msgstr ""
+
+# e48b58903f0a4801b86d73e133403292
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:527
+msgid ""
+"Click on :guilabel:`Browse` button and select a name and location for the "
+"file. Click :guilabel:`OK`."
+msgstr ""
+
+# 8907112db13a46de8f6783a2a3bd263f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:530
+msgid "Load your saved layer using :guilabel:`Add Raster Layer` button."
+msgstr ""
+
+# 54e1164b2d2541e0abb5ac90d1d87994
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:532
+msgid ""
+"You will see black and white layer in map extent. Open the properties of "
+"your saved layer to resolve this."
+msgstr ""
+
+# 1592a25c758e4b21bf979479c8c0c008
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:535
+msgid ""
+"Go to :guilabel:`Style` button on the bottom side the properties window and "
+"click :guilabel:`Load Style…`"
+msgstr ""
+
+# db7b9763b3d344bd85ad4a72e56d406b
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:541
+msgid ""
+"Select your :file:`population_result_style` and click :guilabel:`Open` "
+"button."
+msgstr ""
+
+# ba57c54b731048418e6b264c48ac65ca
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:543
+msgid ""
+"Now your saved layer will have the same style with your temporary InaSAFE "
+"result layer."
+msgstr ""
+
+# 060ec46e5f9645e4a91d00c7a4863f28
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:545
+msgid ""
+"To use this style as default style you can click :guilabel:`Save as Default` "
+"under :guilabel:`Style` button."
+msgstr ""
+
+# bb8348e8de5a4b7ab8fe57d5c8b3403f
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:552
+msgid "8.6.3 Save Project"
+msgstr ""
+
+# 1864c480050a4cb3b6883282ec9e133a
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:554
+msgid "Click :guilabel:`Save As` button in toolbar."
+msgstr ""
+
+# 1e0a2a5fb982471c975e63fa10751e72
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:559
+msgid ""
+"Give a name to the project and put it in the directory where you want to "
+"save your work. Then click :guilabel:`Save`."
+msgstr ""
+
+# 5fc5c2faa8a3412f98e9d64e21053b61
+#: ../../source/training/qgis/Chapter-08-Using_InaSAFE.rst:565
+msgid ""
+"Now you already learn about how to use InaSAFE from using InaSAFE Keyword "
+"Wizard to define keyword attribute, how to run InaSAFE with InaSAFE dock and "
+"Impact Function Wizard, how to modify minimum needs, and how to use OSM "
+"Downloader to download OpenStreetMap data directly. InaSAFE it’s really help "
+"use to know the impact of disaster and how we can create some plan if the "
+"disaster happen in real life."
+msgstr ""

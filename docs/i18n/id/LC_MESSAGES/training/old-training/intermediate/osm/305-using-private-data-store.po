@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-04 11:57+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 72b75f5c451b4e5682c1b0d999519232
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:10
+msgid "Module 5: Using the Separate Data Store"
+msgstr ""
+
+# 191a350ce450469881dc7f38000592da
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:12
+msgid "**Learning Objectives**"
+msgstr ""
+
+# 6d7c2c0693ca41b6b5ba0c18532bc58c
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:14
+msgid "Understand the functions of the Separate Data Store (SDS)"
+msgstr ""
+
+# 082bc7a225a740a8839b2f7ca6272171
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:15
+msgid "Understand what data should be kept publicly and what should be private"
+msgstr ""
+
+# 8ee19e71739840599bc1e6c0c8df4680
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:16
+msgid "Install SDS plugin in JOSM"
+msgstr ""
+
+# 2fd98257ae2c4d978c7d2cd38d48a845
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:17
+msgid "Use SDS presets"
+msgstr ""
+
+# 413e1dec71dd490d95e90a3dc6b11202
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:18
+msgid "Use SDS plugin for selecting public and private data"
+msgstr ""
+
+# 7ea196dc2bf34aee804bfe9fb553fa46
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:19
+msgid "Access online datastore"
+msgstr ""
+
+# 4924e0bcd5ea456ea70d44a23caf99d9
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:21
+msgid ""
+"OpenStreetMap data is open and available to anyone who would like to access "
+"it. However, there may be times when you want to use OSM to collect data, "
+"but you would like to keep some attributes stored in a private database. For "
+"this purpose, HOT has developed a tool for JOSM known as the Separate Data "
+"Store. The SDS allows you to create maps and add data into JOSM the same as "
+"always, but when you upload your edits, public data is saved to the OSM "
+"database and private data is saved separately to your private data server."
+msgstr ""
+
+# ed79854be5fa4a7aa17efeadce48ba7e
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:34
+msgid ""
+"This module is designed for people who desire to store private geospatial "
+"information, such as household income, personal health care data or the "
+"location of gold mines."
+msgstr ""
+
+# 8eee474a7a294d83ba5cfd49fffff136
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:38
+msgid ""
+"For liability reasons, HOT does not provide the SDS service itself, but the "
+"software is available for installation on a private server. In this module "
+"we will utilise the SDS development server to demonstrate its functionality."
+msgstr ""
+
+# 21de5c2bdfb64ae58128ccfa62dfe858
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:42
+msgid ""
+"If you are interested to set up your own SDS server, please contact us (team."
+"id[at]hotosm.org)."
+msgstr ""
+
+# c44faaa8dbd5438ab37060a87f7c08cd
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:47
+msgid "1. Installing the SDS plugin"
+msgstr ""
+
+# 3cdb90d398cb44f4a8a8db7ac049f007
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:49
+msgid ""
+"This plug-in allows private data to be diverted into the private data store, "
+"rather than being saved in the OSM database. A recent version of JOSM is "
+"required for the SDS plugin to run. (If you do not have a recent version of "
+"JOSM, download and install it from http://josm.openstreetmap.de/.)."
+msgstr ""
+
+# 58c532a7532a49b9a8c26bae44873fde
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:55
+msgid "Open the preferences menu in JOSM and go to the plugins tab."
+msgstr ""
+
+# 26e8a434a33a4144a2f871eca7c712cf
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:60
+msgid ""
+"Click :guilabel:`Download List` to ensure that all available plugins are "
+"listed."
+msgstr ""
+
+# b61cf4d164954cc08e4cf2b5f6359bb0
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:63
+msgid "In the search box, type :kbd:`sds`."
+msgstr ""
+
+# 725e9a08a8ec4c66b789374fa329f88f
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:68
+msgid ""
+"Check the box next to the plugin to activate it. Click :guilabel:`OK` to "
+"download and install. You will need to restart JOSM."
+msgstr ""
+
+# 87e63fc871a64cb592fbcef9ac681beb
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:72
+msgid "2. Using the plugin"
+msgstr ""
+
+# 7017b0b94aa742a0a8d5744bdac51261
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:74
+msgid ""
+"Editing the map works just the same as before. The only difference is that "
+"when you upload changes, some tags will be automatically saved on the "
+"private datastore, and the rest will be saved directly onto OSM."
+msgstr ""
+
+# e5dd20212dd14195b40802a1a99df538
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:79
+msgid ""
+"After installing the plugin, you need to edit the settings so that private "
+"data is directed to the correct SDS server. In this module we will use a "
+"demo version of the SDS, but you may also configure the plugin to save "
+"private data on your custom SDS server."
+msgstr ""
+
+# fd01619f114d4d02844acdb8163f07f1
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:84
+msgid "Go to :menuselection:`SDS ‣ Preferences...`."
+msgstr ""
+
+# f640c45e95b545f3b5a5085aeca8987d
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:86
+msgid ""
+"Edit the :guilabel:`SDS server URL` so that it points to :kbd:`http://sds."
+"dev.hotosm.org/`."
+msgstr ""
+
+# 9f76ada13d384de3947bedb8015c35e1
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:89
+msgid ""
+"We will use a sample account to try out the SDS. Enter the following for the "
+"username and password:"
+msgstr ""
+
+# 2ce510d62cf940fdb249c6fb6d5f283c
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:92
+msgid "SDS username: test_sds@hotosm.org"
+msgstr ""
+
+# 61e49282fdee470f87b8bfd2942ac0e0
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:93
+msgid "SDS password: CyYi3VeuHk"
+msgstr ""
+
+# 13ecdf91673b45caa23242d35b3c5190
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:98
+msgid ""
+"Click :guilabel:`Test credentials now`. If it is set up correctly, you "
+"should receive a message which tells you the connection is successful."
+msgstr ""
+
+# 15b2628a39d540ea99d69750bff0b9cb
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:103
+msgid "3. How it works"
+msgstr ""
+
+# 5a8ffae953dc4214b0b4e7c203ec338d
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:105
+msgid ""
+"How does the plugin know which data you want to store on OSM and which data "
+"you want to store publicly? Quite simply, it knows because of the tags. "
+"Normal tags go to OSM as always, but you can use tags with a special prefix "
+"that will be sent to the private datastore."
+msgstr ""
+
+# b600627dbb7b42e396638e3a0d159ae7
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:111
+msgid ""
+"By default, any tag that has the prefix **hot:** will go to the private "
+"datastore. This can be changed in the SDS preferences menu:"
+msgstr ""
+
+# 03b7bbfb3ca1490d8ae6fe83196c7158
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:117
+msgid ""
+"When you create or edit an object on the map, you can apply tags like this:"
+msgstr ""
+
+# e0322fa4998345a79a51ead16873550c
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:122
+msgid ""
+"In this case, the first two tags will be saved on OSM. The third tag, "
+"because it has the prefix **hot:**, will be saved on the private datastore."
+msgstr ""
+
+# a8c63adfb08c4642a38161218a0eae6f
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:126
+msgid ""
+"You will most likely collaborate with others when using a private datastore, "
+"so you will have a standard list of tags to use for the specific data you "
+"are collecting. These tags can then be made into a presets menu, which will "
+"provide an easy-to-use form for adding both public and private data."
+msgstr ""
+
+# 3b06a446419748969f83d46ac0ce9955
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:134
+msgid "4. Accessing the datastore online"
+msgstr ""
+
+# 0de7e6a1c2634f15a907f5e5fb885d40
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:136
+msgid ""
+"You can access the SDS online with your username and password. To visit the "
+"example SDS, open your browser and go to http://sds.dev.hotosm.org/."
+msgstr ""
+
+# 965950536d0249b694d0807565541c19
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:142
+msgid ""
+"There are two types of SDS users. Admin users can add new projects or users "
+"onto the SDS. Personal users are regular users who are part of a project "
+"team which is using the SDS."
+msgstr ""
+
+# 20df3040697f4b8d86f2571656d75d30
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:149
+msgid ""
+"Our sample account is a personal account, not an admin, but we can see the "
+"online platform where our private data is kept."
+msgstr ""
+
+# 638e27f430cf49059778cc218ec27a74
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:152
+msgid "Let's see what the private data looks like online."
+msgstr ""
+
+# 4215ba5792e84a25a74b20acb30b495e
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:154
+msgid "Click on :guilabel:`Tag search`."
+msgstr ""
+
+# 22441a824841499db33df8564ecbbf57
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:156
+msgid "In the text box, type :kbd:`hot` and click :guilabel:`search`."
+msgstr ""
+
+# e657e966f6af40c796bf6b722984c06f
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:158
+msgid ""
+"You should see at least one search result. Click on the eyeball button next "
+"to it to see complete information."
+msgstr ""
+
+# 90791dc6149845b09510751f1ca9bc66
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:164
+msgid ""
+"We can see all the information about this object, both the public attributes "
+"from OSM and the private attributes kept in the SDS."
+msgstr ""
+
+# b3600064e6e54c39833e68ea3d49e3b5
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:170
+msgid ""
+"Click on :guilabel:`Expert View` to see the actual tags that are used with "
+"this object. Look at :guilabel:`OSM Properties` to see the tags that are "
+"saved publicly on OSM."
+msgstr ""
+
+# 4d5f24bfd9d546afaa38854cc6e613dd
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:175
+msgid "5. Common questions"
+msgstr ""
+
+# 00c239414d4540b88874c3683586ca47
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:178
+msgid "How do we save our data?"
+msgstr ""
+
+# 0f296d69d18744478c7faf0759f3185d
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:180
+msgid ""
+"The steps are exactly the same as uploading changes to OSM. The only "
+"difference is that tags with the prefix you select (such as **hot:**) will "
+"be diverted to a private datastore."
+msgstr ""
+
+# 2f30dab043b9438e837fc0a93f9b506c
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:185
+msgid "How many users can use the same account? How can we add users?"
+msgstr ""
+
+# 90a413d08ab149b6b897fc48e333666d
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:187
+msgid ""
+"There is no limit for user accounts. When you set up your own SDS, you will "
+"have an Admin account and can add as many users as you need."
+msgstr ""
+
+# 5bd8c81ad1c94996b0e48b501570501c
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:191
+msgid "How much data can we save in our private server?"
+msgstr ""
+
+# ba20700d5b474278989765899fae2be1
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:193
+msgid "A lot! Basically this depends on the size of your server."
+msgstr ""
+
+# 1988a7df3ae549e4a63d7aa13fcd4ad5
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:196
+msgid "Is there an easy way to search the private data?"
+msgstr ""
+
+# 4992eed506bf484d930e84af74fa48cf
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:198
+msgid ""
+"After you sign in to the SDS website you are able to perform a tag search, "
+"as we have done in this module."
+msgstr ""
+
+# 918f77199c1848de838b22e24db0841a
+#: ../../source/training/old-training/intermediate/osm/305-using-private-data-store.rst:202
+msgid ":ref:`Go to next module --> <editing-wiki-osm>`"
+msgstr ""
