@@ -84,7 +84,9 @@ do
 
   echo "Building HTML for locale '${LOCALE}'..."
   LOG=/tmp/sphinx$$.log
-  ${SPHINXBUILD} -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html source ${HTMLDIR}/${LOCALE} > $LOG
+  #  -n   Run in nit-picky mode. Currently, this generates warnings for all missing references.
+  #  -W   Turn warnings into errors. This means that the build stops at the first warning and sphinx-build exits with exit status 1.
+  ${SPHINXBUILD} -nW -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html source ${HTMLDIR}/${LOCALE} > $LOG
   WARNINGS=`cat $LOG | grep warning`
   ERRORS=`cat $LOG | grep ERROR`
   if [[  $WARNINGS ]]
@@ -132,7 +134,9 @@ if $CREATE_PDF; then
 
       # Traditional using texi2pdf....
       # Compile the latex docs for that locale
-      ${SPHINXBUILD} -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b latex source ${BUILDDIR}/latex/${LOCALE}  > /dev/null 2>&1
+      #  -n   Run in nit-picky mode. Currently, this generates warnings for all missing references.
+      #  -W   Turn warnings into errors. This means that the build stops at the first warning and sphinx-build exits with exit status 1.
+      ${SPHINXBUILD} -nW -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b latex source ${BUILDDIR}/latex/${LOCALE}  > /dev/null 2>&1
       # Compile the pdf docs for that locale
       # we use texi2pdf since latexpdf target is not available via
       # sphinx-build which we need to use since we need to pass language flag
