@@ -1,6 +1,6 @@
 [![][InaSAFEImage]][website]
 
-[![Build Status](http://jenkins.inasafe.org/buildStatus/icon?job=InaSAFE-Website-Test-develop)](http://jenkins.inasafe.org/job/InaSAFE-Website-Test-develop/)
+[![Build Status](https://travis-ci.org/inasafe/inasafe-doc.svg?branch=master)](https://travis-ci.org/inasafe/inasafe-doc)
 
 InaSAFE Documentation
 =====================
