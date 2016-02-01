@@ -53,7 +53,7 @@ QGIS project file and spatial data:
 
 3. Jakarta_Buildings_WGS84
 
-4. Java_Population
+4. Jakarta_Population_WGS84
 
 Exercise
 --------
@@ -72,7 +72,7 @@ this:
 
 
 As you can see from the picture above, you will presented with several
-data in Jakarta from building, java population, raster and vector flood
+   data in Jakarta from building, Java population, raster and vector flood
 hazard.
 
 You will see that the project has three layers loaded:
@@ -179,7 +179,7 @@ explained below.
 -  **Hazard Category**: divides the results into several categories
    based on the threshold set in the hazard analysis. In this impact
    summary, |project_name| divides the impact buildings into three
-   category: number of building inundated (building affected by
+   categories: number of building inundated (building affected by
    water deeper than the analysis threshold), number of wet building
    (building affected by flood water but not as deep as the analysis
    threshold), and number of dry building (building that are not

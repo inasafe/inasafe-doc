@@ -55,7 +55,7 @@ Data for this exercise:
 
 The data for this exercise is available in Introduction to QGIS.zip which can be downloaded
 in `InaSAFE Training Data Packages <http://data.inasafe.org/TrainingDataPackages/>`__.
-For QGIS download you can download at `QGIS Website <http://qgis.org/en/site/>`__
+To download QGIS, go to the `QGIS Website <http://qgis.org/en/site/>`__
 (we will explain how to download and install QGIS later in this exercise).
 We will use the following QGIS project and data:
 
