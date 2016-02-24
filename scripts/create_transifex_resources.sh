@@ -16,7 +16,7 @@ LOCALES=`ls docs/i18n`
 # We do not translate developer docs as development is mostly done in english
 # We do not translate api-docs
 
-for ITEM in general user-docs training road-map 
+for ITEM in user-docs training
 do
   for POFILE in `find docs/i18n/en/LC_MESSAGES/${ITEM}/ -type f -name '*.po'`
   do
