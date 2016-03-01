@@ -1,0 +1,522 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-04 11:57+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# b33f9296ab6e42189cb090c0de0d07b8
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:10
+msgid "Chapter 6: Working with Raster Data"
+msgstr ""
+
+# 7d1a77dc3013460784e85d889c29ce39
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:12
+msgid "**Learning Objectives**"
+msgstr ""
+
+# b81b1518b8074c7b99c39ae6fec2575b
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:14
+msgid "Load Raster Data"
+msgstr ""
+
+# 3b48a9e5fcb144b7867895bfec5f2f35
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:15
+msgid "Change Raster Symbology"
+msgstr ""
+
+# bb5ad03bfd084e8f8c740e77850d8761
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:16
+msgid "Terrain Analysis"
+msgstr ""
+
+# 48538245017c4465859b386bb5aa534a
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:18
+msgid ""
+"Thus far we’ve worked mostly with vector data, which consists of features, "
+"and these features are themselves made up of points and lines. In this "
+"chapter we will learn about raster data. Remember when you were editing "
+"OpenStreetMap in JOSM? The points, lines and shapes that you drew were "
+"vector data. But when you loaded Bing aerial imagery in the background, that "
+"was raster data. So what’s the difference?"
+msgstr ""
+
+# 02e3e8952b5749f29fc136cb1750bcc3
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:21
+msgid ""
+"Raster data essentially comes in the form of an image. It is made up of "
+"pixels, like a photograph, and a raster image will always be some number of "
+"pixels wide and some number of pixels high. If you zoom in far enough on a "
+"raster image, it will start to become blurry, just as if you opened a photo "
+"on your computer and zoomed in very close. As we’ll see in this chapter, "
+"however, a raster image can mean more than just a photograph from the sky. "
+"Follow along and we’ll learn all about rasters!"
+msgstr ""
+
+# 270c1b32992d4f97b90d8fb235c31e63
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:25
+msgid "6.1 Loading Raster Data"
+msgstr ""
+
+# 4e5b1342139c4360b96ac1ee22ed570f
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:27
+msgid ""
+"Not all raster data consist of aerial photographs. There are many other "
+"forms of raster data, and in many of those cases, it’s essential to "
+"symbolise the data so that it becomes properly visible and useful. In this "
+"section we’ll add a new kind of raster and see how to change its symbology."
+msgstr ""
+
+# 5227e84bd19b40a7a4bb9241fdfa12b2
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:30
+msgid "Click on the :guilabel:`Load Raster Layer` button:"
+msgstr ""
+
+# 3e47218c9691449cae0210f1af03ec36
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:35
+msgid ""
+"The Load Raster Layer dialog will open. Find the file named **popmap10\\_all."
+"tif**. Open it."
+msgstr ""
+
+# eca1e95e28c14624b3e4c9591c3a0efd
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:37
+msgid ""
+"When it appears in the Layers Panel, right-click on it and click :guilabel:"
+"`Rename`. Give it the name *Indonesian Population*."
+msgstr ""
+
+# aace7ee4ca9d4138add46353d3b2155f
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:39
+msgid ""
+"High resolution, contemporary data on human population distributions are a "
+"prerequisite for the accurate measurement of the impacts of population "
+"growth, for monitoring changes and for planning Interventions. The AsiaPop "
+"project was initiated in July 2011 with an aim of producing detailed and "
+"Freely-available population distribution maps for the whole of Asia.*"
+msgstr ""
+
+# 1ccd60e2aac940849e84aafb8d4748cf
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:41
+msgid ""
+"When it loads, you’ll notice that the new raster image appears as whole "
+"Indonesia’s Islands in grey colour."
+msgstr ""
+
+# 4c974eb8d471475bbc30e28d8971e74c
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:46
+msgid ""
+"The layer appears grey (and doesn’t give us any information) because its "
+"symbology hasn’t been customised yet. In the colour aerial photograph we "
+"loaded via *OpenLayer* Plugin, everything is already deﬁned. But if you load "
+"a raster image and it’s just a grey rectangle, then you know there’s no "
+"symbology for it yet. It still needs to be deﬁned. That’s what we will do "
+"next."
+msgstr ""
+
+# 7a44911ebfc247d39e3b27ffe53c7b91
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:51
+msgid "6.2 Symbolise Raster Data"
+msgstr ""
+
+# c36b4b9658cf498fb9e38f23cb7b7850
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:53
+msgid ""
+"Open the :guilabel:`Layer Properties dialog` for the Population layer, which "
+"is now named *Indonesian Population*."
+msgstr ""
+
+# 969b766283ab484cb2bf25fa7dd1a88a
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:55
+msgid ""
+"Switch to the :guilabel:`Style` tab. This shows the current symbology "
+"settings, and as we’ve seen, they don’t give us much information on the "
+"layer. Let’s make sure the layer has data in it."
+msgstr ""
+
+# 1b583cb39bfe4781b06147c50690828f
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:57
+msgid ""
+"Change the :guilabel:`Render type` to :guilabel:`Singleband pseudocolor`. "
+"Set colour to :guilabel:`YlOrBr` and change mode to :guilabel:`Equal "
+"Interval` with :guilabel:`6 Classes`. Click :guilabel:`Classify` to show 6 "
+"classes. As shown below:"
+msgstr ""
+
+# 4420228828ec4abfb6a60af3b93c5827
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:62
+msgid "Click *OK*. The raster should look like this:"
+msgstr ""
+
+# 01b48c347d014b7b9979627af8cd5555
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:67
+msgid ""
+"Good! This tell us that there is data in this layer. And by looking at it we "
+"can get an idea in Java Island, population number higher than other island "
+"in Indonesia."
+msgstr ""
+
+# 216148fd84144e8cb445a0bd0aebfe86
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:69
+msgid ""
+"Let’s stop for a minute and understand what is happening here. Remember that "
+"an image is made up of pixels, individual cells that contain a value, which "
+"is usually a colour value. For example, if you zoom in very closely on a "
+"photograph you can see those individual pixels, like this:"
+msgstr ""
+
+# 064b23a5a3f9451b86b8be33a1d00698
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:74
+msgid ""
+"The value of each cell is saved in the ﬁle. Imagine the ﬁle being saved "
+"something like this, where each square is a pixel:"
+msgstr ""
+
+# 795e1ce860284f608aef2c44abd1ea78
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:79
+msgid ""
+"Of course the computer doesn’t understand words for colours. In fact the "
+"value of each cell would be a number, which the computer then associates "
+"with a certain colour. For our aerial image, this is already deﬁned. Since "
+"it is a normal image, it knows to associate the numbers for each pixel in "
+"the ﬁle with the common colours that we see every day. But this new raster "
+"image is different, because the values of each pixel don’t represent "
+"colours, but rather altitude, and QGIS doesn’t know automatically how to "
+"display it. Hence it shows every pixel in the image as grey, even if the "
+"values in each pixel are different. When we change the symbology to "
+"Psuedocolor, we can see all the different pixel values shown with various "
+"colours."
+msgstr ""
+
+# 5888543a8dfd47989cb6f2bfb27a0415
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:83
+msgid ""
+"It would be nice to represent our Indonesian Population layer as a greyscale "
+"spectrum, rather than a variety of bright colours. Next we will tell QGIS to "
+"symbolise the layer with colours in a spectrum, beginning at the lowest "
+"pixel value in the ﬁle and ending at the highest pixel value. In other "
+"words, if the pixel values looked like this:"
+msgstr ""
+
+# 75f1612cbd5c415c967b6880a28f146b
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:88
+msgid "QGIS would create a spectrum equating numbers to colours like this:"
+msgstr ""
+
+# 28b1adf1d3324335aa969b94201ad3ce
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:93
+msgid "And render the image like this:"
+msgstr ""
+
+# 4507484efb5144fab7445a1a0a245092
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:98
+msgid "To do that, let’s start to symbolise Indonesia Population:"
+msgstr ""
+
+# 65ea8d12e8c441299619c7e0281b8abc
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:100
+msgid "Open the :guilabel:`Layer Properties` Again."
+msgstr ""
+
+# ddffbbc6d5aa4b88833f69a58b17c0e9
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:102
+msgid "Switch the render type back to :guilabel:`Singleband gray` (1)."
+msgstr ""
+
+# d57e5510e3a04f9580feb045c12e7282
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:104
+msgid "Check the box next to :guilabel:`Min / max` (2)."
+msgstr ""
+
+# 7f884b8c918941c58db41c0671772e0a
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:106
+msgid ""
+"Next to :guilabel:`Contrast enhancement` select :guilabel:`Stretch to "
+"MinMax` (3)."
+msgstr ""
+
+# cfab2f3cae8840b28be218fc16f06c43
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:108
+msgid ""
+"Under :guilabel:`Load min / max values`, select :guilabel:`Estimate "
+"(faster)`."
+msgstr ""
+
+# 128c1260c6f14b7f9d1b61e32d851ef8
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:110
+msgid "Click the :guilabel:`Load` button:"
+msgstr ""
+
+# 2508a04c964744e08629f0902914439e
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:115
+msgid ""
+"Notice how the custom Min and Max values have changed. The lowest pixel "
+"value in this image ﬁle is 0 and the highest is about 3024.93. But what are "
+"the minimum and maximum values that should be used? The current values are "
+"those that just gave us a grey rectangle. Instead, we should be using the "
+"minimum and maximum pixel values that are actually in the image. You can "
+"determine those values easily by loading the minimum and maximum values of "
+"the raster."
+msgstr ""
+
+# a97e4b152ef045aa9df0caf9aad0c17b
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:120
+msgid ""
+"Click *OK.* You should see the values of the raster properly displayed, with "
+"the darker colour representing small number of population in each pixel and "
+"the lighter one, high number of population in each pixel:"
+msgstr ""
+
+# 38967a5d54c1415d81d9a8d52170eb0a
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:125
+msgid ""
+"We’ve learned to do this the tricky way, but can we do it faster? Of course! "
+"Now that you understand what needs to be done, you’ll be glad to know that "
+"there’s a tool for doing all of this more easily."
+msgstr ""
+
+# 7bfb519791db40aa81d708b6a166a21a
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:127
+msgid ""
+"Remove :guilabel:`Indonesian Population` from the Layers panel, by right-"
+"clicking it and clicking :guilabel:`Remove`"
+msgstr ""
+
+# 6ddd0ddbea184597bb041a6519e385af
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:129
+msgid ""
+"Load the raster image again, renaming it to *Indonesian Population* as "
+"before. It will be a grey rectangle again."
+msgstr ""
+
+# c4ecdb5ecda94280a15f922030b769d1
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:131
+msgid ""
+"Enable the tool you’ll need by enabling :guilabel:`View → Toolbars → Raster` "
+"These icons will appear in the interface:"
+msgstr ""
+
+# 82d0bce31b9e4539bd67ec45569a880f
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:136
+msgid ""
+"The button on the right will stretch the minimum and maximum values to give "
+"you the best contrast in the local area that you’re zoomed into. It’s useful "
+"for large datasets. The button on the left will stretch the minimum and "
+"maximum values to constant values across the whole image."
+msgstr ""
+
+# 4298f0faceec4bc1b6be2925b91455d9
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:138
+msgid ""
+"Click the right button labelled :guilabel:`(Stretch Histogram to Full "
+"Dataset)`. You’ll see the data is now correctly represented as before!"
+msgstr ""
+
+# afdb0b9b607b41169ca965bd9f4f3971
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:141
+msgid "6.3 Terrain Analysis"
+msgstr ""
+
+# bbdf47989e944c9aa7714c4b68c964b0
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:143
+msgid ""
+"Certain types of rasters allow you to gain more insight into the terrain "
+"that they represent. Digital Elevation Models (DEMs) are particularly useful "
+"in this regard. In this section we’ll do a little bit more with our DEM "
+"raster, in order to try to extract more information from it."
+msgstr ""
+
+# b262c4d2a7554ba593535ac7557006e8
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:146
+msgid "6.3.1 Calculating a hillshade"
+msgstr ""
+
+# a46f876d67b7475492e3c2ec275d3f31
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:148
+msgid ""
+"The DEM you have on your map right now does show you the elevation of the "
+"terrain, but it can sometimes seem a little abstract. It contains all the 3D "
+"elevation information about the terrain that you need, but it doesn’t really "
+"look 3-Dimensional. To get a better look at the terrain, it is possible to "
+"calculate a hillshade, which is a raster that maps the terrain using light "
+"and shadow to create a 3D-looking image."
+msgstr ""
+
+# a27294ec72414237a1c32408ae9184e4
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:151
+msgid ""
+"To work with DEMs, we will use the all-in-one DEM (Terrain models) analysis "
+"tool."
+msgstr ""
+
+# 5ea9ccd056294ba3adfeca87a363fc56
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:153
+msgid ""
+"Open the file named :guilabel:`SRTM\\_Merapi.tif`, which is located in "
+"**Merapi/SRTM**/."
+msgstr ""
+
+# f379c55e758d448289b0c6ddacd1f79e
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:155
+msgid "When it appears in the :guilabel:`Layer` panel, rename it to **DEM**."
+msgstr ""
+
+# ca3104f9c4d8409c97f751e103734b0b
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:157
+msgid "Click :guilabel:`Stretch Histogram to Full Dataset` button."
+msgstr ""
+
+# 68d842326e394895b759af0e7a5483ae
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:159
+msgid "Go to :guilabel:`Raster → Analysis → DEM (Terrain Models)…`"
+msgstr ""
+
+# dfa3c450e60846eb980b8c1d23428ad8
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:164
+msgid ""
+"In the dialog that appears, ensure that the input file is the **DEM** layer."
+msgstr ""
+
+# 9857d79a8e4545f194756f1c6568bd80
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:167
+msgid ""
+"Set the output file to :guilabel:`hillshade.tif` in the directory :guilabel:"
+"`Merapi/SRTM/`."
+msgstr ""
+
+# 1ef6718c46f04ffcad5236b21ebd0047
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:172
+msgid "Check the box next to :guilabel:`Load into canvas` when finished."
+msgstr ""
+
+# b2cc3acfafa244d7b42b8371252bffa4
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:177
+msgid "Leave all the other option unchanged."
+msgstr ""
+
+# 027640ac0efc4440b39fc84ecb461adc
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:179
+msgid "Click :guilabel:`OK` to generate the hillshade."
+msgstr ""
+
+# 8a9e7e29e5f54c27a236bc70c8d0a549
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:181
+msgid ""
+"When the processing is complete. Click :guilabel:`OK` on the notification."
+msgstr ""
+
+# 25e1dd04a205411e828336564927781e
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:183
+msgid "Click :guilabel:`Close` in the dialog."
+msgstr ""
+
+# bfb6a7cf94f44f38b80c270fe482ba58
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:185
+msgid ""
+"There should now be a new layer called *hillshade* that looks like this:"
+msgstr ""
+
+# 6a528601b5b74874b5580b01bbc7b521
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:190
+msgid ""
+"This looks more Three-Dimensional, but can we improve on this? When you "
+"open :guilabel:`DEM (Terrain Models)` tools, you will notice in the Mode "
+"Options for hillshade there’re *Azimuth of the light* and *Altitude of the "
+"light*."
+msgstr ""
+
+# 8b604d6a18ee49a69af6c01c794609fc
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:192
+msgid ""
+":guilabel:`Azimuth of the light` defines in which direction the sun is, "
+"whereas 0° represent north, east is 90°, south is 180° and west is 270°. "
+"While :guilabel:`Altitude of the light` is the angle between the horizon and "
+"the centre of the sun’s disc."
+msgstr ""
+
+# fa0b5280044a4cb08f5727400fea401b
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:195
+msgid ""
+"On its own, the hillshade looks like a plaster cast. It will look better if "
+"we can combine it with our more colourful DEM. We can do this by making the "
+"hillshade layer an overlay."
+msgstr ""
+
+# bae130c35c26407082c55a56aaf39a24
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:198
+msgid "6.3.2 Using a hillshade as an overlay"
+msgstr ""
+
+# a5409690cc9744cea87dffb56add1990
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:200
+msgid ""
+"Hillshade can provide very useful information about the sunlight at a given "
+"time of day. But it can also be used for aesthetic purposes, to make the map "
+"look better. The key to this is setting the hillshade to being mostly "
+"transparent."
+msgstr ""
+
+# 6a86892061cc46f0b2ef0ba1cd39ccab
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:202
+msgid ""
+"Change the symbology of the original :guilabel:`DEM` layer to use the :"
+"guilabel:`Pseudocolor` scheme."
+msgstr ""
+
+# df4992e5922c4ffab7809b17bd83705d
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:204
+msgid ""
+"Click and drag the :guilabel:`DEM` layer beneath the :guilabel:`hillshade` "
+"layer in the Layers panel."
+msgstr ""
+
+# 0057066d4f7f4373ba6cd53a7364a167
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:209
+msgid "Ensure that :guilabel:`Control rendering order` is checked."
+msgstr ""
+
+# a811a0ad49344ec48f8f34dccab7dac7
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:214
+msgid ""
+"Now we will make the hillshade layer somewhat transparent. Open its :"
+"guilabel:`Layer Properties` and go to the :guilabel:`Transparency` tab."
+msgstr ""
+
+# a948762734f94ba2a95ab988dc9bbf60
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:216
+msgid "Set the :guilabel:`Global transparency` to 50%:"
+msgstr ""
+
+# e4a2194ac4794da99cb779aab610885a
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:221
+msgid ""
+"Click :guilabel:`OK` in the Layer Properties dialog. You should get a result "
+"similar to this:"
+msgstr ""
+
+# 607784c075ab475ab4595bf753959fed
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:226
+msgid ""
+"Using a hillshade in this way, it’s possible to enhance the topography of "
+"the landscape. If the effect doesn’t seem strong enough to you, you can "
+"change the transparency of the hillshade layer; but of course, the brighter "
+"the hillshade becomes, the dimmer the colours behind it will be. You will "
+"need to ﬁnd a balance that works for you."
+msgstr ""
+
+# 8cff1af4a4a14eaabfe54f0bef354811
+#: ../../source/training/qgis/Chapter-06-Working_with_Raster_Data.rst:228
+msgid ":ref:`Go to next chapter --> <ch7-using-map-composer>`"
+msgstr ""
