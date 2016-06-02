@@ -336,7 +336,7 @@ in the globe produced in a standardised and rigorous way.
 
 Landcover data
 ...............
-.. image:: /static/training/socialisation/icon_landcover.png*
+.. image:: /static/training/socialisation/icon_landcover.*
    :align: left
    :width: 150 pt
 
