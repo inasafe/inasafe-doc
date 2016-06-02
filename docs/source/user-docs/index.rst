@@ -18,7 +18,5 @@ system.
    using_qgis
    getting_involved
    issue_tracker
-   troubleshooting
    writing_documentation
-   lookup_table
 
