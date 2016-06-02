@@ -76,7 +76,7 @@ Credits
 -------
 
 |project_name| was originally developed by the Australian Government in
-partnership with The National Agency for Disaster Management (BNPB), Indonesia,
+partnership with The National Disaster Management Authority (BNPB), Indonesia,
 and the World Bank-(|GFDRR|).
 
 This |project_name| Socialisation Training Manual was developed by
@@ -86,8 +86,8 @@ OpenStreetMap Team (HOT).
 Manual based on:
 ................
 
-* Version 3.2 of |project_name|
-* Version 2.8.3 of |QGIS|
+* Version 3.4 of |project_name|
+* Version 2.14.x of |QGIS|
 
 Produced:
 .........
@@ -95,6 +95,7 @@ Produced:
 August 2013 (original)
 September 2014 (update)
 September 2015 (major revision)
+June 2016 (update)
 
 More information:
 .................

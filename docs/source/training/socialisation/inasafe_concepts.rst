@@ -59,6 +59,7 @@ daily lives. Disaster managers need to plan for the occasions when the 'normal'
 situation has been replaced by a disaster and people can no longer go about
 their normal daily lives. In order to prepare for such situations, disaster
 managers need to have a basic understanding of questions like:
+
 - how many people might be in the affected area?
 
 - how might those people be impacted?
@@ -106,9 +107,7 @@ Some examples of natural hazards:
 
 - an earthquake and the resulting ground shaking that is produced by it
 
-- a volcano and the resulting lava flow from a volcano
-
-- ash fall from a volcano
+- a volcano eruption and its associated hazards (lava flow, ash fall, lahar, pyroclastic flow)
 
 - a tsunami
 
@@ -138,7 +137,7 @@ There are three main ways that can be used to generate hazard datasets:
 
 - Mapping
 
-Local Knowledge
+Local knowledge
 ...............
 
 This is probably the most practical way to gather hazard data quickly.
@@ -164,7 +163,7 @@ same administrative level.
 Modelling
 .........
 
-Modelling floods is an entire discipline in it's own right. Flood modelling
+Modelling floods is an entire discipline in its own right. Flood modelling
 can be carried out by combining factors such as precipitation, geology and
 runoff characteristics, terrain etc. to derive a model of impending or
 current flood. Modelling can use data interpolation techniques - e.g. by
@@ -188,10 +187,10 @@ so as to ensure that only contiguous areas in the DEM are flagged as inundated.
 There are various other approaches that can be used to model flood potential
 that involve using a DEM.
 
-One advantage of using a modelling approach is that it allows us to do
-forecasting for abnormal events. For example, there may not be localised
-knowledge about 50 or 100 year flood events and their impacts, but these
-can be estimated using modelling techniques.
+One advantage of using a modelling approach is that it allows us to forecast
+less frequent events. For example, there may not be localised knowledge about
+1 in 50 or 100 year flood events and their impacts, but these can be estimated
+using modelling techniques.
 
 Single-event versus multiple-event hazards
 ------------------------------------------
@@ -234,13 +233,16 @@ What is exposure?
 
 In the context of |project_name|, exposure refers to people, infrastructure
 or land areas that may be affected by a disaster. Currently |project_name|
-supports three kinds of exposure data:
+supports four kinds of exposure data:
 
 - roads
 
 - buildings
 
 - population / people
+
+- landcover
+
 
 Roads data
 ..........
@@ -316,7 +318,7 @@ so analysis at large scales (e.g. a small neighbourhood) using population
 data may not always be the best idea. Currently |project_name|  only supports
 raster based census data, but in the near future we will be releasing a
 version that supports assigning population estimates to buildings using
-census data. One of the nicest online resources for population data is
+census data. One of the best online resources for population data is
 'WorldPop' - a project that aims to provide population data for anywhere
 in the globe produced in a standardised and rigorous way.
 
@@ -329,7 +331,29 @@ in the globe produced in a standardised and rigorous way.
 +--------------+---------------------------------------------------------------+
 |Notes         | Make sure you know if your data represent density or count    |
 +--------------+---------------------------------------------------------------+
-|Source        | WorldPop or from a  national census agency                    |
+|Source        |Can be obtained from a national mapping agency                 |
++--------------+---------------------------------------------------------------+
+
+Landcover data
+...............
+.. image:: /static/training/socialisation/icon_landcover.*
+   :align: left
+   :width: 150 pt
+
+Landcover data can often be obtained from national mapping agencies or through
+various online data sources. Landcover data are useful if you want to assess
+the impact of a hazard event such as a volcanic eruption on crops.
+
++--------------+---------------------------------------------------------------+
+|              |   **Key notes for population data**                           |
++==============+===============================================================+
+|Format        |  Vector polygon data                                          |
++--------------+---------------------------------------------------------------+
+|Field         | A field representing landcover type                           |
++--------------+---------------------------------------------------------------+
+|Notes         | Topologically correct data are best but not essential         |
++--------------+---------------------------------------------------------------+
+|Source        | National mapping agency                                       |
 +--------------+---------------------------------------------------------------+
 
 What is aggregation?
@@ -440,7 +464,6 @@ extent should be. In other words, you need to tell InaSAFE where the analysis
 should be carried out. There is a tool in InaSAFE that will allow you to drag
 a box around the intended analysis area - you should always check that you
 have done this before starting your analysis.
-Analysis extent in InaSAFE
 
 .. image:: /static/training/socialisation/004_analysis_extent.*
    :align: center
@@ -470,7 +493,7 @@ extent and wish to now see the impact outputs.
 
 Again, we should emphasise here that Impact Functions **do not model hazards**
 - they **model the effects** of one or more hazard events on an exposure layer.
-|project_name| groups it's impact functions according to the kind of hazard
+|project_name| groups its impact functions according to the kind of hazard
 they work on:
 
 Supported data types for each hazard type in  |project_name|
