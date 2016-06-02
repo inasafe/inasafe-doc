@@ -233,13 +233,16 @@ What is exposure?
 
 In the context of |project_name|, exposure refers to people, infrastructure
 or land areas that may be affected by a disaster. Currently |project_name|
-supports three kinds of exposure data:
+supports four kinds of exposure data:
 
 - roads
 
 - buildings
 
 - population / people
+
+- landcover
+
 
 Roads data
 ..........
@@ -333,9 +336,9 @@ in the globe produced in a standardised and rigorous way.
 
 Landcover data
 ...............
-.. image:: /static/training/socialisation/icon_landcover.*
-   :align: left
-   :width: 150 pt
+#.. image:: /static/training/socialisation/icon_landcover.*
+#   :align: left
+#   :width: 150 pt
 
 Landcover data can often be obtained from national mapping agencies or through
 various online data sources. Landcover data are useful if you want to assess
