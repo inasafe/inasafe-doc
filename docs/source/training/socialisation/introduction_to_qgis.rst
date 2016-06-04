@@ -31,7 +31,7 @@ QGIS is great because:
 QGIS provides a continuously growing number of capabilities provided by core functions and plugins.
 You can visualise, manage, edit, analyse data and compose printable maps.
 QGIS is also the platform which InaSAFE is built on,
-and so the this document focuses on building foundational skills using QGIS.
+and so this document focuses on building foundational skills using QGIS.
 
 Learning objectives:
 --------------------
@@ -61,11 +61,11 @@ We will use the following QGIS project and data:
 
 1. DKI_Jakarta_Introduction.qgs
 
-2. Jakarta_roads_WGS84
+2. Jakarta_roads_WGS84.shp
 
-3. A flood in Jakarta like 2013
+3. Jakarta_Flood_18113_WGS84.shp
 
-4. A flood similar to the 2007 Jakarta event
+4. Jakarta_Flood_HKV_WGS84.tif
 
 Exercises
 ---------
@@ -81,15 +81,17 @@ You can download QGIS software by accessing the main QGIS website:
 -  The QGIS website will look something like this:
 
 .. image:: /static/training/socialisation/Intro_QGIS_01.*
+   :align: center
 
 -  Click :guilabel:`Download Now`.
 
 -  If you are using Windows, there are 2 versions of QGIS (version 2.14 and version 2.8).
-   Choose :kbd:`Long term release (eg. for corporate user)` and click 
+   Choose :kbd:`Latest release (eg. for new users)` and click 
    :guilabel:`QGIS Standalone Installer Version 2.14 (32 bit or 64 bit depend your computer operating system)`.
    Your exact version number may be different.
 
 .. image:: /static/training/socialisation/Intro_QGIS_02.*
+   :align: center
 
 -  If you are not using Windows, select your operating system from the menu.
    Follow the installation instructions.
@@ -102,20 +104,24 @@ After you download the QGIS software installer, the next step is to install QGIS
 * Open the folder where you have the QGIS installation file.
 
 .. image:: /static/training/socialisation/Intro_QGIS_03.*
+   :align: center
 
 * Run the installation file. If you are installing QGIS version 2.x, it should look something like this:
 
 .. image:: /static/training/socialisation/Intro_QGIS_04.*
+   :align: center
 
 * Click :guilabel:`Next` and follow the instructions.
 
 * Once the installation is finished, you can open your QGIS in Start Menu.
 
 .. image:: /static/training/socialisation/Intro_QGIS_05.*
+   :align: center
 
 * QGIS will look something like this:
 
 .. image:: /static/training/socialisation/Intro_QGIS_06.*
+   :align: center
 
 3. Understanding QGIS interface
 ...............................
@@ -124,6 +130,7 @@ Next, we will introduce the main QGIS interface. In general, there are
 four elements in QGIS:
 
 .. image:: /static/training/socialisation/Intro_QGIS_07.*
+   :align: center
 
 1. **Layers Panel**: On the left side of QGIS is the layers panel.
    This panel lists the layers, or files, that are loaded into our QGIS project.
@@ -139,6 +146,7 @@ four elements in QGIS:
    We already used one of these tools when we opened this project.
 
 .. image:: /static/training/socialisation/Intro_QGIS_08.*
+   :align: center
 
 By hovering your mouse over an icon, the name of the tool will
 appear to help you identify each tool. The number of tools (buttons)
@@ -150,6 +158,7 @@ move the toolbar to a more convenient location, or separate it so
 that it sits on its own.
 
 .. image:: /static/training/socialisation/Intro_QGIS_09.*
+   :align: center
 
 3. **Map Canvas**: All of the map data that we load into QGIS
    will be displayed here, both vector data and raster data.
@@ -159,6 +168,7 @@ that it sits on its own.
    on the map.
 
 .. image:: /static/training/socialisation/Intro_QGIS_10.*
+   :align: center
 
 The coordinates of this map are the same type of coordinates that are recorded by GPS devices.
 The status bar shows the longitude and latitude of your mouse cursor.
@@ -171,6 +181,7 @@ For example, the File toolbar allows you to save, load, print, and start a new p
 We already used one of these tools when we opened this project.
 
 .. image:: /static/training/socialisation/Intro_QGIS_11.*
+   :align: center
 
 By hovering your mouse over an icon, the name of the tool will appear to
 help you identify each tool.
@@ -183,6 +194,7 @@ mouse, you can move the toolbar to a more convenient location, or
 separate it so that it sits on its own.
 
 .. image:: /static/training/socialisation/Intro_QGIS_12.*
+   :align: center
 
 If you feel overwhelmed by the number of toolbars, you can customize the
 interface to see only the tools you use most often, adding or removing
@@ -196,8 +208,9 @@ vertical dots on the left hand side of the tool. Drag to the first line
 of the toolbar.
 
 .. image:: /static/training/socialisation/Intro_QGIS_13.*
+   :align: center
 
-5. QGIS Basic Tools
+5. QGIS basic tools
 ...................
 
 We’ve already taken a look at the QGIS toolbar and have seen the tools
@@ -238,6 +251,7 @@ Before we examine the attributes of individual features, let’s take a quick lo
 The main controls for moving the map around and zooming in-and-out are on the panels at the top of QGIS by default.
 
 .. image:: /static/training/socialisation/Intro_QGIS_26.*
+   :align: center
 
 When you click on one of these buttons, it changes the action of your mouse in the main map window.
 
@@ -272,10 +286,11 @@ Once all the data are displayed on your map canvas, try toggling the layer,
 in the Layers Panel on the left side of your screen.
 
 .. image:: /static/training/socialisation/Intro_QGIS_27.*
+   :align: center
 
-After you uncheck the check box, the layer will disappear from map canvas.
+After you uncheck the check box, the layer will disappear from the map canvas.
 This operation won’t remove your layer from the layers list but only hide it
-temporarily until you check again the check box.
+temporarily until you recheck again the check box.
 Try to turn ON the layer again to unhide the layer.
 
 What if your layer does not appear in the map canvas even though you
@@ -291,6 +306,7 @@ you can change the order they are drawn in.
 For example in this layer order...
 
 .. image:: /static/training/socialisation/Intro_QGIS_28.*
+   :align: center
 
 … would result in **Jakarta_roads_WGS84** being hidden as they
 position *underneath* **A Flood in Jakarta like 2013**.
@@ -298,6 +314,7 @@ To solve this problem, simply click the **Jakarta_roads_WGS84** layer
 and drag to the top of the Layer List or reorder them to the correct order.
 
 .. image:: /static/training/socialisation/Intro_QGIS_29.*
+   :align: center
 
 What do you see after you move the **Jakarta_roads_WGS84** layer?
 
@@ -311,9 +328,9 @@ The symbology of a layer is its visual appearance on the map.
 One of the basic strengths of GIS is that you have a dynamic visual representation
 of the data you’re working with. Therefore, the visual appearance of the map
 (which depends on the symbology of the individual layers) is very important.
-For example in the project that you currently have open :file:`DKI_Jakarta_Introduction.qgs`,
+For example in the project that you currently have open, :file:`DKI_Jakarta_Introduction.qgs`,
 you will see the **A Flood in Jakarta like 2013** layer covering the area of DKI Jakarta.
-Did the flood really covr the whole of DKI Jakarta?
+Did the flood really cover the whole of DKI Jakarta?
 
 To answer this, let’s turn OFF the **Jakarta_roads_WGS84** and **A Flood Similar to the Jakarta 2007 event**
 layers and open the attribute table of **A Flood in Jakarta like 2013** by right clicking the layer and
@@ -324,11 +341,12 @@ an area that has not been flooded. Let’s select a feature in this layer and se
 the highlighted feature in the attribute table.
 
 .. image:: /static/training/socialisation/Intro_QGIS_30.*
+   :align: center
 
 What is the value of the selected feature in the attribute table?
 
-Not all of the features in this dataset have value 1 (or flooded).
-You need to see which features have value of 1 to make it easier to interpret the hazard area.
+Not all of the features in this dataset have a value of 1 (or flooded).
+You need to see which features have a value of 1 to make it easier to interpret the hazard area.
 To solve this problem, we will symbolize the data so it will only shows the flooded area.
 
 1. Right click on the **A flood in Jakarta like 2013** layer and select :guilabel:`Properties`.
@@ -337,14 +355,14 @@ To solve this problem, we will symbolize the data so it will only shows the floo
 
 3. Select :guilabel:`affected` in Column as the column that we will use to categorize the data.
 
-4. Click :guilabel:`classify` and turn off the values that have value 0 or no value.
+4. Click :guilabel:`classify` and turn off the values that have a value of 0 or no value.
 
 5. Click OK
 
 .. image:: /static/training/socialisation/Intro_QGIS_31.*
 
-After you click :guilabel:`OK`, only features that have value 1
-(flooded) will be displayed in map canvas, the other values won’t be shown
+After you click :guilabel:`OK`, only features that have a value of 1
+(flooded) will be displayed on the map canvas, the other values won’t be shown
 on the map canvas because you turned OFF the symbol that represents a value of 0.
 Symbology helps us better understand the data that we will work on.
 
@@ -352,7 +370,7 @@ Symbology helps us better understand the data that we will work on.
 ..................................
 
 As we know, the InaSAFE plugin has been built for QGIS. It is one of the plugins
-which are available in QGIS Repository. Make sure that you have a working
+which are available in the QGIS Repository. Make sure that you have a working
 internet connection before you follow the steps below.
 To get InaSAFE please follow these steps:
 
@@ -379,11 +397,13 @@ After successfully installing InaSAFE, you should now have an **InaSAFE dock**
 on the right hand side of your screen. It should look like this:
 
 .. image:: /static/training/socialisation/Intro_QGIS_34.*
+   :align: center
 
 InaSAFE also comes with a toolbar of its own! To retrieve the InaSAFE
 toolbar, you can right-click on the top toolbar and check InaSAFE.
 
 .. image:: /static/training/socialisation/Intro_QGIS_35.*
+   :align: center
 
 +--------------------------------------------------------------+----------------------------------+
 | .. image:: /static/training/socialisation/Intro_QGIS_36.*    | InaSAFE Dock                     |

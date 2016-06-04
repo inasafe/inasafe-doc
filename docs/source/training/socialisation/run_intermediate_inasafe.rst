@@ -374,7 +374,7 @@ First, you learned how to define a keyword for your data so it can be
 analyzed with |project_name|. Without a keyword, |project_name| will not recognize
 your data, so you need to define it whether the data is hazard, exposure
 or aggregation data. You can set the keyword
-using the :guilabel:`Keyword Creatuib Wizard` feature.
+using the :guilabel:`Keyword Creation Wizard` feature.
 
 Second, it is important to review the analysis area using *Toggle Scenario
 Outline* before you run |project_name| analysis. This is because, |project_name| sometimes does

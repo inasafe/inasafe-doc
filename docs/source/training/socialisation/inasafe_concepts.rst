@@ -468,8 +468,7 @@ have done this before starting your analysis.
 .. image:: /static/training/socialisation/004_analysis_extent.*
    :align: center
    :width: 350 pt
-
-Analysis extent in |project_name|
+   :alt: Analysis extent in |project_name|
 
 |project_name| will show you what your current desired analysis extent is
 (blue box), what the extent of your last analysis was

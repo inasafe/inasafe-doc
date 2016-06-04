@@ -75,13 +75,13 @@ Prerequisites
 Credits
 -------
 
-|project_name| was originally developed by the Australian Government in
-partnership with The National Disaster Management Authority (BNPB), Indonesia,
+|project_name| was originally developed by the |GoA| in
+partnership with The National Disaster Management Authority (|BNPB|) Indonesia,
 and the World Bank-(|GFDRR|).
 
 This |project_name| Socialisation Training Manual was developed by
-Kartoza in collaboration with the Australian Government and the Humanitarian
-OpenStreetMap Team (HOT).
+`Kartoza <http://kartoza.com/>`_ in collaboration with the |GoA| and the Humanitarian
+OpenStreetMap Team (|hot|).
 
 Manual based on:
 ................

@@ -35,7 +35,7 @@ By the end of this exercise, participants will be able to:
 Data for This Exercise:
 -----------------------
 
-The data used for this exercise is the same as that used in previous exercises. The data can be downloaded from |project_name| `Training Data Packages <http://http://data.inasafe.org/TrainingDataPackages.html/>`__
+The data used for this exercise is the same as that used in previous exercises. The data can be downloaded from |project_name| `Training Data Packages <http://data.inasafe.org/TrainingDataPackages/>`__
 Once the data has been downloaded, we will use the following QGIS project file and spatial data:
 
 - Padang.qgs
@@ -73,7 +73,7 @@ In the |project_name| dock, note that the |project_name| form is still empty. It
 Therefore, you must first define keywords for each dataset in the project.
 
 To define keywords, please click on the :guilabel:`Keywords Creation Wizard` icon and follow the instructions provided. 
-You can refer back to the `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__ module for step-by-step instructions.
+You can refer back to the :ref:`Run Intermediate InaSAFE <run_intermediate_inasafe>` module for step-by-step instructions.
 Once you have finished defining keywords for each layer, your |project_name| form should look like this :
 
 .. image:: /static/training/socialisation/other_hazard_03.*
@@ -139,7 +139,7 @@ If you finished defining keywords, these data should have keywords assigned so y
 In QGIS, turn off the **Buildings** and **estimated buildings affected** (the layers generated from |project_name| analysis and turn ON the population layer).
 Because we want to look at the number people who might be killed or displaced in a specific area, we also need to turn ON **the Village** layer in QGIS. 
 This layer will be used as an aggregation layer that can show us the result for each administrative area. 
-If you forget the steps needed to define a layer as an aggregation, please refer to the `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__
+If you forget the steps needed to define a layer as an aggregation, please refer to the :ref:`Run Intermediate InaSAFE. <run_intermediate_inasafe>`
 
 Confirm that the |project_name| panel on the right side is set to query how many people might die or be displaced :
 
@@ -222,7 +222,7 @@ Please open the QGIS project file :file:`Maumere.qgs` from the :file:`InaSAFE Tr
 .. image:: /static/training/socialisation/other_hazard_11.*
    :align: center
 
-You will see in the |project_name| dock that keywords for each layer have not yet been defined. As before, we use the :guilabel:`Impact Function Centric Wizard` icon to define keyword. For detailed steps, please reference the `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__ module
+You will see in the |project_name| dock that keywords for each layer have not yet been defined. As before, we use the :guilabel:`Keyword Creation Wizard` icon to define keyword. For detailed steps, please reference the :ref:`Run Intermediate InaSAFE. <run_intermediate_inasafe>` module
 
 2.2 Run |project_name|
 ......................
@@ -410,7 +410,7 @@ To define a keyword, please click on the :guilabel:`Keywords Creation Wizard` ic
 .. image:: /static/training/socialisation/other_hazard_02.*
    :align: center
 
-and follow the instructions. You can refer to the `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__ if you need additional assistance.
+and follow the instructions. You can refer to the :ref:`Run Intermediate InaSAFE. <run_intermediate_inasafe>` if you need additional assistance.
 Once you finish defining keyword for each layer, your |project_name| form should appear like the below screenshot:
 
 .. image:: /static/training/socialisation/other_hazard_35.*
@@ -488,7 +488,7 @@ turn ON the **PopulationSP_2010** layer. Because we want to look at the number o
 a specific area, we also need to turn ON the **Village** layer in QGIS. This layer will be used as an aggregation layer that
 can show us results grouped by administrative boundary.
 
-If you forget the steps to define and aggregation layer, refer to the `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe.html/>`__ section.
+If you forget the steps to define and aggregation layer, refer to the :ref:`Run Intermediate InaSAFE. <run_intermediate_inasafe>` section.
 Edit the question form in the |project_name| Dock so that it appears similar to the below screenshot:
 
 .. image:: /static/training/socialisation/other_hazard_30.*
