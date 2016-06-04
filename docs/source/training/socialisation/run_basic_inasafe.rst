@@ -72,8 +72,7 @@ this:
 
 
 As you can see from the picture above, you will be presented with several
-   data sets for Jakarta such as buildings, population, and raster and vector
-   flood hazard.
+data sets for Jakarta such as buildings, population, and raster hazard.
 
 You will see that the project has three layers loaded:
 
@@ -196,7 +195,7 @@ explained below.
    what they need to do/discuss when planning for a similar event in
    the future.
 
--  **Note:** provides details about the input data and any limitations
+-  **Notes & assumptions:** provides details about the input data and any limitations
    or assumptions in the analysis or report summary. In this
    example, it explains why buildings are said to be inundated, wet
    and dry.
@@ -271,7 +270,7 @@ data already have keywords assigned so we will be ready to run the
 analysis as soon as we have turned on the relevant data layers.
 
 In the QGIS, turn OFF the **Buildings** and **estimated building affected**
-(the layers generated from |project_name| analysis and turn ON **Java_Population_WGS84** layer.
+(the layers generated from |project_name| analysis and turn ON **Jakarta_Population_WGS84** layer.
 
 Confirm that the |project_name| panel on the right side is set to query how many people might need evacuation:
 
@@ -334,22 +333,22 @@ explained below.
    :width: 200 pt
 
 - **Population needing evacuation:** |project_name| estimates the number of
-  affected people in the analysis area. It is assumed that all of these
-  people will need to be evacuated.
+  affected and unaffected people from the total number of people in the analysis area.
+  It is assumed that all of these affected people will need to be evacuated.
 
-- **Needs per week:** these are the calculated amounts of food, water and other
+- **Evacuated population minimum needs:** these are the calculated amounts of food, water and other
   products that are needed by evacuated people. These needs should be provided
   weekly.
 
 - **Action checklist:** designed to make disaster managers think about
   what they need to do/discuss when planning for a similar event in the future.
 
-- **Notes:** provides details about the input data and any limitations or
+- **Notes and assumptions:** provides details about the input data and any limitations or
   assumptions in the analysis or report summary. In this example, it
   shows the total number of population in the analysis area and the source of
   minimum needs.
 
-- **Detailed gender and age report:** provides a breakdown of the number
+- **Detailed gender report (affected people):** provides a breakdown of the number
   of affected people by age (youth, adults and elderly) and gender based
   on the default world population demographics and calculates the minimum
   needs for women’s hygiene and pregnant women.
