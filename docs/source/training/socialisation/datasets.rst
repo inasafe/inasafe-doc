@@ -9,10 +9,10 @@ will need to download for the course, if it is not provided.
 If you are working through the training independently, use the following data
 packages:
 
-- `Introduction to QGIS.zip <http://data.inasafe.org/TrainingDataPackages/Indroduction To QGIS.zip>`_
-- `Run Basic InaSAFE v3.2.zip <http://data.inasafe.org/TrainingDataPackages/Run Basic InaSAFE v3.2.zip>`_
-- `Run Intermediate InaSAFE v3.2.zip <http://data.inasafe.org/TrainingDataPackages/Run Intermediate InaSAFE v3.2.zip>`_
-- `Other Hazards v3.2.zip <http://data.inasafe.org/TrainingDataPackages/Other Hazards v3.2.zip>`_
+- `Introduction to QGIS.zip <http://data.inasafe.org/TrainingDataPackages/Indroduction%20To%20QGIS.zip>`_
+- `Run Basic InaSAFE.zip <http://data.inasafe.org/TrainingDataPackages/Run%20Basic%20InaSAFE%20v3.2.zip>`_
+- `Run Intermediate InaSAFE.zip <http://data.inasafe.org/TrainingDataPackages/Run%20Intermediate%20InaSAFE.zip>`_
+- `Other Hazards.zip <http://data.inasafe.org/TrainingDataPackages/Other%20Hazards%20.zip>`_
 
 Hazard data
 -----------

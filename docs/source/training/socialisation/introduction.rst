@@ -25,7 +25,7 @@ for disasters - our slogan is **"better planning saves lives"**.
    :width: 400 pt
 
 Each country in the world faces its own unique challenges. According to the
-"Global Assessment Report for Disaster Risk Reduction (GAR" for Indonesia the
+"Global Assessment Report for Disaster Risk Reduction (GAR)" for Indonesia the
 chief concerns are volcanoes and floods - other countries will face
 different challenges.
 
