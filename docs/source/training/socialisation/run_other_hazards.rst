@@ -90,8 +90,6 @@ The new layer is named **Estimated Buildings Affected**.
 .. image:: /static/training/socialisation/other_hazard_04.*
    :align: center
 
-.. image:: /static/training/socialisation/other_hazard_05.*
-   :align: center
 
 c. Interpret the Results
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -122,7 +120,7 @@ In the |project_name| panel we now see the impact summary. Details are explained
 
 - **Action checklist:** designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.
 
-- **Note:** provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains why buildings are said to be inundated, wet and dry.
+- **Notes and assumptions:** provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains why buildings are said to be inundated, wet and dry.
 
 - **Detailed aggregation categorical report:** statistical breakdown of the number of results. This example shows the count of important infrastructure. When you choose to use an aggregation layer with your analysis (we will do this later) this table will show the number of buildings by aggregation boundary.
 
@@ -145,7 +143,7 @@ Confirm that the |project_name| panel on the right side is set to query how many
 
 - Earthquake in Padang 2009
 
-- Population
+- People
 
 - Die or be displaced according Pager mode
 
@@ -197,7 +195,7 @@ In the |project_name| panel we now see the impact summary. The details are expla
 
 - **Action checklist:** designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.
 
-- **Notes:** provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains the total number of people in the analysis area and the source of minimum needs.
+- **Notes and assumptions:** provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains the total number of people in the analysis area and the source of minimum needs.
 
 - **Detailed gender and age report:** provides a breakdown of the number of affected people by age (youth, adults and elderly) and gender based on the default world population demographics and calculates the minimum needs for women’s hygiene and pregnant women. If you using aggregation layer, the result will be broken down based on administrative area.
 
@@ -244,9 +242,9 @@ Let’s explore the result again to help you understand more.
 
 - Zoom in to any area you choose
 
-- Here we have zoomed in to a location in Maumere. There will be three new different colours generated from |project_name| (green, orange, and red).
+- Here we have zoomed in to a location in Maumere. There will be five new different colours generated from |project_name| (green, yellow, orange, blood orange, and red).
 
-- The red buildings are situated in water greater than one metre; the orange buildings are situated in water between zero and one metre; and the green buildings are considered unaffected as they are situated in water less than the threshold of one metre.
+- The red buildings are situated in area where the depth of tsunami inundation is more than 8 metres; the blood orange buildings are situated in area where the depth of tsunami inundation is between 3.1 and 8 metres; the orange buildings are situated in area where the depth of tsunami inundation is 1.3 and 3.0 metres; the yellow buildings are situated in area where the depth of tsunami inundation is between 0.1 and 1 metres; and the green building considered unaffected as they are situated in water less than the threshold of 0.1 metre.
 
 .. image:: /static/training/socialisation/other_hazard_13.*
    :align: center
@@ -269,7 +267,7 @@ In the |project_name| panel we now see the impact summary. Detalils are explaine
 
 - **Action checklist**: designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.
 
-- **Note**: provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains why building are predicted to be inundated, wet and dry.
+- **Notes and assumptions**: provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains why building are predicted to be inundated, wet and dry.
 
 - **Detailed building type report**: statistical breakdown of the results. This example shows the count of important infrastructure. When you choose to use an aggregation layer with your analysis (we will do this later) this table will show the number of buildings by aggregation boundary.
 
@@ -280,9 +278,9 @@ In the |project_name| panel we now see the impact summary. Detalils are explaine
 
 - **Exposure detail**: explanation of where the exposure come from
 
-The results show the buildings that will be affected by flood water 1 m deep. What if the disaster manager decides that buildings in 80 cm of water are also considered flooded? You can change the water depth threshold to see the steps, refer to the `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ module.
+The results show the buildings that will be affected by tsunami starting from 1 metre. What if the disaster manager decides that buildings in 80 cm of water are also considered inundated? You can change the water depth threshold to see the result, refer to the `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ module.
 
-.. note::InaSAFE Tsunami Impact Function is very similar with Flood, but due to the force of tsunami waves, the maximum depth of water that would affect people and infrastructure is shallower.
+..note:: InaSAFE Tsunami Impact Function is very similar with Flood, but due to the force of tsunami waves, the maximum depth of water that would affect people and infrastructure is shallower.
 
 3. Run |project_name| for Volcano
 ---------------------------------
@@ -357,7 +355,7 @@ Once you have finished running the analysis, you will see the result has new lay
 “Buildings Affected by each Hazard Zone” . This layer will show you which buildings are affected for each hazard zone.
 There will be three new colours of building generated from |project_name| (green, orange, and red).
 
-The red buildings mean these buildings are located in a Low Risk Zone (Risk Zone 1), the green buildings mean these buildings are located in an Intermediate Risk Zone (Risk Zone 2) and blue buildings are considered situated in a High Risk Zone (Risk Zone 3) of Sinabung Volcano.
+The blood orange buildings mean these buildings are located in a Low Risk Zone (Risk Zone 1), the red buildings mean these buildings are located in an Intermediate Risk Zone (Risk Zone 2) and dark red buildings are considered situated in a High Risk Zone (Risk Zone 3) of Sinabung Volcano.
 
 .. image:: /static/training/socialisation/other_hazard_23.*
    :align: center
@@ -367,19 +365,16 @@ In the |project_name| result box, we now see the impact summary. It is very simi
 .. image:: /static/training/socialisation/other_hazard_24.*
    :align: center
 
-- **Hazard Category**: divides the results into several categories based on the threshold set in the hazard analysis.
-   In this impact summary, |project_name| divides the impacted buildings into three categories for each hazard zone of Sinabung Volcano.
+
+- **Hazard Category**: divides the results into several categories based on the threshold set in the hazard analysis. In this impact summary, |project_name| divides the impacted buildings into three categories for each hazard zone of Sinabung Volcano.
 
 - **Building type**: divides the exposed buildings into several categories based on the building type attribute for each building.
 
 - **Action checklist**: designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.
 
-- **Note**: provides details about the input data and any limitations or assumptions in the analysis or report summary.
-   In this example, it explains why buildings are predicted to be inundated, wet, or dry.
+- **Notes and assumptions**: provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains why buildings are predicted to be inundated, wet, or dry.
 
-- **Detailed building type report**: statistical breakdown of the number of results. 
-   This example shows the count of important infrastructure. When you choose to use an aggregation layer
-   with your analysis (we will do this later) this table will show the number of buildings by aggregation boundary.
+- **Detailed building type report**: statistical breakdown of the number of results. This example shows the count of important infrastructure. When you choose to use an aggregation layer with your analysis (we will do this later) this table will show the number of buildings by aggregation boundary.
 
 You have now run |project_name| for a volcano scenario using the Impact Function Centric Wizard (IFCW).
 Quite different than the |project_name| Dock, this tool is designed to help a user run |project_name| more easily without needing to open all the required data one by one in QGIS. IFCW provides precise guidance and detail about
@@ -441,8 +436,7 @@ Let’s take a look at the new data layer generated from |project_name|:
 
 - There will be three new colours generated from |project_name| (red, green, blue and purple).
 
-- The red buildings are located in a high vulnerability zone, the blue buildings are located in
-   moderate vulnerability zone, green buildings are located in a Low Landslide Vulnerability Zone and the purple buildings are not affected by landslide.
+- The red buildings are located in a high vulnerability zone, the orange buildings are located in moderate vulnerability zone, green buildings are located in a Low Landslide Vulnerability Zone.
 
 - Click building affected in the layer list to select it. Next, click the :guilabel:`Identify Feature` tool and then click on a building to view attributes of the building.
 
@@ -454,24 +448,15 @@ In the |project_name| panel we now see the impact summary. Details are explained
 .. image:: /static/training/socialisation/other_hazard_29.*
    :align: center
 
-- **Hazard Category**: divides the results into three categories based on the hazard data classification area.
-   In this impact summary, |project_name| divides the impacted buildings into High, Moderate, and
-   Low Landslide vulnerability zone.
+- **Hazard Category**: divides the results into three categories based on the hazard data classification area. In this impact summary, |project_name| divides the impacted buildings into High, Moderate, and Low Landslide vulnerability zone.
 
-- **Building type**: divides the exposed buildings into several categories based on the building type attribute
-   for each building. In this impact summary, |project_name| breaks down the results into a more detailed report by
-   looking at each type of the building.
+- **Building type**: divides the exposed buildings into several categories based on the building type attribute for each building. In this impact summary, |project_name| breaks down the results into a more detailed report by looking at each type of the building.
 
-- **Action checklist**: designed to make disaster managers think about what they need to do/discuss when planning for
-   a similar event in the future.
+- **Action checklist**: designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.
 
-- **Note**: provides details about the input data and any limitations or assumptions in the analysis or report summary.
-   In this example, it explains why building are said to be inundated, wet, or dry.
+- **Notes and assumptions**: provides details about the input data and any limitations or assumptions in the analysis or report summary.
 
-- **Detailed aggregation categorical report**: statistical breakdown of the number of results. 
-   This example shows a count of important infrastructure. When you choose to use an aggregation layer
-   with your analysis (we will do this on population) this table will show the number of buildings grouped by
-   aggregation boundary.
+- **Detailed aggregation categorical report**: statistical breakdown of the number of results. This example shows a count of important infrastructure. When you choose to use an aggregation layer with your analysis (we will do this on population) this table will show the number of buildings grouped by aggregation boundary.
 
 - **Hazard details**: explanation of where the hazard data come from
 
@@ -484,7 +469,7 @@ a. Run |project_name|
 ^^^^^^^^^^^^^^^^^^^^^
 
 Turn off the Buildings Affected by each hazard zone (the layers generated from |project_name| analysis and
-turn ON the **PopulationSP_2010** layer. Because we want to look at the number of people who might die or be displaced in
+turn ON the **People** layer. Because we want to look at the number of people who might die or be displaced in
 a specific area, we also need to turn ON the **Village** layer in QGIS. This layer will be used as an aggregation layer that
 can show us results grouped by administrative boundary.
 
@@ -505,8 +490,7 @@ Let’s explore the result again to help you understand more.
 
 - Zoom in to any area.
 
-- Select People Impacted by Each Hazard Zone in the layer list and use the :guilabel:`Identify Feature` tool again to select a pixel
-   (square) in the map canvas.
+- Select People Impacted by Each Hazard Zone in the layer list and use the :guilabel:`Identify Feature` tool again to select a pixel (square) in the map canvas.
 
 Here we clicked on one of the yellow pixels and see a value of 220.283, which means
 there are approximately 220 people in this one pixel (square) who might be impacted.
@@ -522,21 +506,15 @@ In the |project_name| panel we now see the impact summary. The details are expla
 .. image:: /static/training/socialisation/other_hazard_33.*
    :align: center
 
-- **Population needing evacuation**: |project_name| estimates the number of affected people in the analysis area.
-   It is assumed that all of these people will need to be evacuated.
+- **Population needing evacuation**: |project_name| estimates the number of affected people in the analysis area. It is assumed that all of these people will need to be evacuated.
 
 - **Needs per week**: are calculated numbers of food, water and other products that are needed by evacuated people on a weekly basis.
 
-- **Action checklist**: designed to make disaster managers think about what they need to do/discuss when planning for
-   a similar event in the future.
+- **Action checklist**: designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.
 
-- **Notes**: provides details about the input data and any limitations or assumptions in the analysis or report summary.
-   In this example, it explains the total number of people in the analysis area and the source of minimum needs.
+- **Notes and assumptions**: provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains the total number of people in the analysis area and the source of minimum needs.
 
-- **Detailed gender and age report**: provides a breakdown of the number of affected people by age
-   (youth, adults and elderly) and gender based on the default world population demographics and
-   calculates the minimum needs for women’s hygiene and pregnant women. If you using aggregation layer,
-   the result will break down the result based on administrative boundaries.
+- **Detailed gender and age report**: provides a breakdown of the number of affected people by age (youth, adults and elderly) and gender based on the default world population demographics and calculates the minimum needs for women’s hygiene and pregnant women. If you using aggregation layer, the result will break down the result based on administrative boundaries.
 
 .. image:: /static/training/socialisation/other_hazard_34.*
    :align: center
