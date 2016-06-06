@@ -43,7 +43,7 @@ Flood Model
 Flood Footprint
 ...............
 =====================  =========================================================================
-:File name:            Jakarta_Flood_WGS84.shp
+:File name:            Jakarta_Flood_18113_WGS84.shp
 :Training data:        A flood in Jakarta like 2013
 :Geometry:             Polygon
 :Data Type:            Classified
@@ -171,7 +171,7 @@ Volcano Point
 Volcanic Ash
 ............
 ========================  ======================================================
-:File name:               Sinabung_Volcanic_Ash_WGS84.shp
+:File name:               Sinabung_Volcanic_Ash_1Feb14_WGS84.shp
 :Training data:           Sinabung Volcanic Ash
 :Geometry:                Polygon
 :Data type:               Classified
@@ -232,8 +232,8 @@ Population
 ..........
 
 =====================  ==============================================================================
-:File name:            Java_Population
-:Training data:        population
+:File name:            World_Population
+:Training data:        see table below
 :Geometry:             Raster
 :Data type:            Continuous
 :Unit:                 Count
@@ -345,7 +345,7 @@ Roads
 .....
 ========================  ==============================================================================================
 :Name:                    OSM Roads
-:Training data:           Roads
+:Training data:           see table below
 :Geometry:                Line
 :Data type:               Classified
 :Attribute field:         Type

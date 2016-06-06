@@ -41,7 +41,7 @@ skills related to using |project_name|:
 * Analysis – Run Other Hazards
     * Be able to run InaSAFE with other hazards, such as  Earthquake, Tsunami and Volcano
     * Be able to read metadata and assign keywords to hazard data;
-    * Be able to use the |project_name| dock and the |project_name| Function Centric Wizard; and
+    * Be able to use the |project_name| dock and the |project_name| Impact Function Centric Wizard; and
     * Be able to use the Generic Impact Function and understand how to use it to work with their own data.
 
 
@@ -70,7 +70,7 @@ Prerequisites
   * WIFI - connected to the internet
   * Windows (XP, 7, 8), Linux (Training Ubuntu later than 12.04) or similar
     (e.g. Mint or Debian), Mac OSX (Lion - 10.7,  Snow Leopard -10.6)
-  * |QGIS| at least version 2.6 installed http://www.qgis.org or ability to install software on computer (i.e. have administration password)
+  * |QGIS| long term release installed http://www.qgis.org or the ability to install software on computer (i.e. have administration password)
 
 Credits
 -------
@@ -86,7 +86,7 @@ OpenStreetMap Team (|hot|).
 Manual based on:
 ................
 
-* Version 3.4 of |project_name|
+* Version 3.4.x of |project_name|
 * Version 2.14.x of |QGIS|
 
 Produced:
