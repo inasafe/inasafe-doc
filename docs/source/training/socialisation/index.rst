@@ -40,7 +40,7 @@ Ask your trainer which data you will need to download for the course if it is
 not provided.
 
 If you are working through the training independently, please use the
-version 3.2 data packages:
+version 3.4 data packages:
 `data.inasafe.org/TrainingDataPackages <http://data.inasafe.org/TrainingDataPackages/>`_.
 
 .. toctree::

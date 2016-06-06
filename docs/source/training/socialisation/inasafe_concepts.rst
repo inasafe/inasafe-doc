@@ -527,15 +527,45 @@ Flood Impact Functions
 **Building exposure**: classified polygon or point with a type attribute
 
 
-.. image:: /static/training/socialisation/icon_volcano.*
+
+.. image:: /static/training/socialisation/icon_tsunami.*
    :align: left
    :width: 80 pt
 
+Tsunami Impact Functions
+........................
+
+**Tsunami hazard**: continuous raster or classified polygon
+
+**Population exposure**: continuous raster with counts
+
+**Building exposure**: classified polygon with a type attribute
+
+
+
+.. image:: /static/training/socialisation/icon_volcano.*
+   :align: left
+   :width: 80 pt
 
 Volcano Impact Functions
 ........................
 
 **Volcano hazard**:  continuous polygon or point
+
+**Population exposure**: continuous raster with counts
+
+**Building exposure**: classified polygon with a type attribute
+
+
+
+.. image:: /static/training/socialisation/icon_volcanic_ash.*
+   :align: left
+   :width: 80 pt
+
+Volcanic Ash Impact Functions
+.............................
+
+**Volcano hazard**:  clasified polygon or continuous raster
 
 **Population exposure**: continuous raster with counts
 
