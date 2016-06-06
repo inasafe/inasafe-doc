@@ -41,7 +41,7 @@ skills related to using |project_name|:
 * Analysis – Run Other Hazards
     * Be able to run InaSAFE with other hazards, such as  Earthquake, Tsunami and Volcano
     * Be able to read metadata and assign keywords to hazard data;
-    * Be able to use the |project_name| dock and the |project_name| Function Centric Wizard; and
+    * Be able to use the |project_name| dock and the |project_name| Impact Function Centric Wizard; and
     * Be able to use the Generic Impact Function and understand how to use it to work with their own data.
 
 
@@ -70,24 +70,24 @@ Prerequisites
   * WIFI - connected to the internet
   * Windows (XP, 7, 8), Linux (Training Ubuntu later than 12.04) or similar
     (e.g. Mint or Debian), Mac OSX (Lion - 10.7,  Snow Leopard -10.6)
-  * |QGIS| at least version 2.6 installed http://www.qgis.org or ability to install software on computer (i.e. have administration password)
+  * |QGIS| long term release installed http://www.qgis.org or the ability to install software on computer (i.e. have administration password)
 
 Credits
 -------
 
-|project_name| was originally developed by the Australian Government in
-partnership with The National Agency for Disaster Management (BNPB), Indonesia,
+|project_name| was originally developed by the |GoA| in
+partnership with The National Disaster Management Authority (|BNPB|) Indonesia,
 and the World Bank-(|GFDRR|).
 
 This |project_name| Socialisation Training Manual was developed by
-Kartoza in collaboration with the Australian Government and the Humanitarian
-OpenStreetMap Team (HOT).
+`Kartoza <http://kartoza.com/>`_ in collaboration with the |GoA| and the Humanitarian
+OpenStreetMap Team (|hot|).
 
 Manual based on:
 ................
 
-* Version 3.2 of |project_name|
-* Version 2.8.3 of |QGIS|
+* Version 3.4.x of |project_name|
+* Version 2.14.x of |QGIS|
 
 Produced:
 .........
@@ -95,6 +95,7 @@ Produced:
 August 2013 (original)
 September 2014 (update)
 September 2015 (major revision)
+June 2016 (update)
 
 More information:
 .................

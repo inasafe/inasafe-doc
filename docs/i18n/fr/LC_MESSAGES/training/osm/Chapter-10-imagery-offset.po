@@ -1,0 +1,192 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-04 11:28+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# dbf5f04860f84fe786c9b3dbc921023a
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:10
+msgid "Chapter 10: Imagery Offset"
+msgstr ""
+
+# 109127294ca04faebe949b8ecd077d04
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:12
+msgid "**Learning Objectives**"
+msgstr ""
+
+# 6bce1befa12d496ab768d201a8563804
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:14
+msgid "Understanding definition of Imagery Offset"
+msgstr ""
+
+# 4d58a49ae9294f85a0d08d2d8c5aa712
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:15
+msgid "How to adjust the Imagery Offset"
+msgstr ""
+
+# eb3d4b93a7e54f059f5cf0f0cc7178fd
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:18
+msgid "10.1 Overview of Imagery Offset"
+msgstr ""
+
+# 063f81408d9f4402816f8ccd585ee320
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:20
+msgid ""
+"Using aerial imagery is the most widely used approach to mapping in "
+"OpenStreetMap. Mappers typically use Bing Satellite, or imagery from another "
+"provider as a background layer while mapping. We have already seen this in "
+"previous sections."
+msgstr ""
+
+# e79b9ae5f24d4644a8fda4eb01c4f8be
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:24
+msgid ""
+"Imagery providers usually do a pretty good job of georeferencing their "
+"imagery, but occasionally the images can be out of position. This is "
+"particularly true in hilly or mountainous areas, where it can be difficult "
+"to stretch a flat image over an area of the Earth with many contours. When "
+"you load imagery in JOSM, it can sometimes be ten meters or more from its "
+"true position. This is called imagery offset."
+msgstr ""
+
+# 729124f9d1f1435b868e1ae844fcf3a1
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:29
+msgid ""
+"We’ve learned about two major ways of making maps – one is by utilizing "
+"aerial imagery to identify features on the ground, and another is by using "
+"GPS to record tracks and waypoints and then add them to OpenStreetMap. The "
+"advantages of aerial imagery is obvious. It is easier for you to see the "
+"whole picture, to observe various details from the image, consider your "
+"knowledge of the area, and easily trace roads, buildings, and areas."
+msgstr ""
+
+# f76e30ff774448bd8eb8f33c4f03e2c2
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:33
+msgid ""
+"One key advantage of GPS, is that it doesn’t suffer from offset like "
+"imagery. A GPS will always provide you with a correct latitude and "
+"longitude. The only exception is when the satellite signals are interrupted "
+"by high buildings and mountains, but in this case it is easy to recognize "
+"the error. Showing the GPS track in this image, compared with Bing aerial "
+"imagery layer in the below figure:"
+msgstr ""
+
+# 7fd57dc20162477f8454512ea72c520f
+# d9d309ef92af46cb863104d65493113b
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:40
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:70
+msgid "*Imagery Offset*"
+msgstr ""
+
+# 1b9fa8597d6d40edb3810b9837780891
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:42
+msgid ""
+"It is clear that the GPS track is likely to be accurate and the satellite "
+"imagery beneath it is out of place."
+msgstr ""
+
+# c81c8132a1d14ebd88677f64f7230766
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:44
+msgid ""
+"So now we must ask, “if the imagery may be out the place, how can we still "
+"use it and make accurate maps?”"
+msgstr ""
+
+# 711226af979549218f126c6210c14175
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:47
+msgid "10.2 CORRECTING IMAGERY OFFSET"
+msgstr ""
+
+# 06715000ba6d4979bcd68c5f036c75cc
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:49
+msgid ""
+"The best references for adjusting imagery are GPS tracks that follow roads. "
+"And the more GPS tracks that you have to reference, the more accurate you "
+"will be able to align your imagery. Since OpenStreetMap users often upload "
+"their GPS tracks to the OSM database, we can download them and use them to "
+"align our imagery."
+msgstr ""
+
+# 50bed8d3296b4a02ac55aca6ba1f0670
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:53
+msgid "Click on the :guilabel:`Download` button."
+msgstr ""
+
+# 69223e5e3a7043bcb1c2bc0c5700fc6a
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:58
+msgid ""
+"Check the box next to :guilabel:`Raw GPS Data` near the top of the Download "
+"window. Select your area and click :guilabel:`Download`."
+msgstr ""
+
+# feba22a802914e13b3b23e94cbebd61d
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:64
+msgid ""
+"This will download an additional layer to JOSM containing GPS tracks. "
+"Depending on how many tracks have been uploaded by OSM users, you may see "
+"few tracks (or even no tracks):"
+msgstr ""
+
+# e963d452389d4b409caa353120e01edc
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:72
+msgid ""
+"To adjust an imagery layer, click on the :guilabel:`Adjust imagery offset` "
+"button at the top of JOSM."
+msgstr ""
+
+# 9ca3ae21b1b9471bb71c67d92cca708f
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:77
+msgid ""
+"Ignoring the box that pops up, use your mouse to drag the imagery layer so "
+"that it aligns correctly with the GPS tracks. The GPS tracks should line up "
+"with the roads on the imagery as closely as possible. You will see the "
+"offset numbers in the box change."
+msgstr ""
+
+# f6e9ff14520f41b4a6a2aa13dea55b46
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:84
+msgid "*Setting Imagery Offset*"
+msgstr ""
+
+# 1f007baffeb6401f8a05a334a3d3cf1a
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:86
+msgid ""
+"If you like, you can save these offset settings by entering a bookmark name "
+"and then clicking :guilabel:`OK`. You can then automatically apply the same "
+"settings later by going to :menuselection:`Imagery ‣ Imagery Offset` and "
+"clicking on your bookmark."
+msgstr ""
+
+# 9c2ab833fbea4cf595174a9ea25ebd02
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:90
+msgid ""
+"If you do not want to save the offset, simply click :guilabel:`OK` without "
+"entering a bookmark name."
+msgstr ""
+
+# 67d821f2101847be89946eb24fb28ac6
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:92
+msgid ""
+"What if there are no GPS tracks on OpenStreetMap, and you don’t have a GPS? "
+"Without GPS tracks, it is difficult to align imagery. If it is a relatively "
+"empty area (not much mapped), you might choose to simply use the imagery as "
+"it is and correct the data later."
+msgstr ""
+
+# a69e59fb3fcc4126ac50a2b536010c77
+#: ../../source/training/osm/Chapter-10-imagery-offset.rst:96
+msgid ":ref:`Go to next chapter --> <ch11-export-osm-data>`"
+msgstr ""

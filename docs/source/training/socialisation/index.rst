@@ -39,8 +39,7 @@ The data used in this course are available for download on
 Ask your trainer which data you will need to download for the course if it is
 not provided.
 
-If you are working through the training independently, please use the
-version 3.2 data packages:
+If you are working through the training independently, please use the relevant data package:
 `data.inasafe.org/TrainingDataPackages <http://data.inasafe.org/TrainingDataPackages/>`_.
 
 .. toctree::

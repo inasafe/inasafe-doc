@@ -25,8 +25,9 @@ for disasters - our slogan is **"better planning saves lives"**.
    :width: 400 pt
 
 Each country in the world faces its own unique challenges. According to the
-Global Assessment Report GAR for Indonesia the chief concerns are Volcanoes
-and Floods - other countries will face different challenges.
+"Global Assessment Report for Disaster Risk Reduction (GAR)" for Indonesia the
+chief concerns are volcanoes and floods - other countries will face
+different challenges.
 
 .. image:: /static/training/socialisation/002_disaster_risk.*
    :align: center
@@ -48,7 +49,7 @@ impact of those disasters on the local population and infrastructure.
 
 Open source
 ...........
-From the beginning, |project_name| has been an Open Source project (GPL license).
+From the beginning, |project_name| has been an open source project (GPL license).
 This means there are no licensing fees, the software can be freely copied and
 shared with anyone, and the source codes used to create the software are
 freely available which means that anyone with a little technical knowledge

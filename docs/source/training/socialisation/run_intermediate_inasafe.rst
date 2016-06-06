@@ -326,7 +326,7 @@ since it depend on the analysis area selected and
 also the aggregation layer that you used for analysis.
 
 |project_name| did not separate the impact result into three categories as in
-the `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ because in the
+the :ref:`Run Basic InaSAFE <run_basic_inasafe>` because in the
 previous exercise we used raster data containing flood depth in each pixel
 yet in this exercise, the hazard data that we use only depicts affected
 areas. Therefore, |project_name| will calculate how many buildings are inside the affected
@@ -374,7 +374,7 @@ First, you learned how to define a keyword for your data so it can be
 analyzed with |project_name|. Without a keyword, |project_name| will not recognize
 your data, so you need to define it whether the data is hazard, exposure
 or aggregation data. You can set the keyword
-using the :guilabel:`Keyword Creatuib Wizard` feature.
+using the :guilabel:`Keyword Creation Wizard` feature.
 
 Second, it is important to review the analysis area using *Toggle Scenario
 Outline* before you run |project_name| analysis. This is because, |project_name| sometimes does

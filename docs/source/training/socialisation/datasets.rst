@@ -9,10 +9,10 @@ will need to download for the course, if it is not provided.
 If you are working through the training independently, use the following data
 packages:
 
-- `Introduction to QGIS.zip <http://data.inasafe.org/TrainingDataPackages/Indroduction To QGIS.zip>`_
-- `Run Basic InaSAFE v3.2.zip <http://data.inasafe.org/TrainingDataPackages/Run Basic InaSAFE v3.2.zip>`_
-- `Run Intermediate InaSAFE v3.2.zip <http://data.inasafe.org/TrainingDataPackages/Run Intermediate InaSAFE v3.2.zip>`_
-- `Other Hazards v3.2.zip <http://data.inasafe.org/TrainingDataPackages/Other Hazards v3.2.zip>`_
+- `Introduction to QGIS.zip <http://data.inasafe.org/TrainingDataPackages/Indroduction%20To%20QGIS.zip>`_
+- `Run Basic InaSAFE.zip <http://data.inasafe.org/TrainingDataPackages/Run%20Basic%20InaSAFE%20v3.2.zip>`_
+- `Run Intermediate InaSAFE.zip <http://data.inasafe.org/TrainingDataPackages/Run%20Intermediate%20InaSAFE.zip>`_
+- `Other Hazards.zip <http://data.inasafe.org/TrainingDataPackages/Other%20Hazards%20.zip>`_
 
 Hazard data
 -----------
@@ -43,7 +43,7 @@ Flood Model
 Flood Footprint
 ...............
 =====================  =========================================================================
-:File name:            Jakarta_Flood_WGS84.shp
+:File name:            Jakarta_Flood_18113_WGS84.shp
 :Training data:        A flood in Jakarta like 2013
 :Geometry:             Polygon
 :Data Type:            Classified
@@ -171,7 +171,7 @@ Volcano Point
 Volcanic Ash
 ............
 ========================  ======================================================
-:File name:               Sinabung_Volcanic_Ash_WGS84.shp
+:File name:               Sinabung_Volcanic_Ash_1Feb14_WGS84.shp
 :Training data:           Sinabung Volcanic Ash
 :Geometry:                Polygon
 :Data type:               Classified
@@ -232,8 +232,8 @@ Population
 ..........
 
 =====================  ==============================================================================
-:File name:            Java_Population
-:Training data:        population
+:File name:            World_Population
+:Training data:        see table below
 :Geometry:             Raster
 :Data type:            Continuous
 :Unit:                 Count
@@ -345,7 +345,7 @@ Roads
 .....
 ========================  ==============================================================================================
 :Name:                    OSM Roads
-:Training data:           Roads
+:Training data:           see table below
 :Geometry:                Line
 :Data type:               Classified
 :Attribute field:         Type
