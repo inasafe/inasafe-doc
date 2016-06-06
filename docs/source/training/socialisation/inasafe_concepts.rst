@@ -505,7 +505,7 @@ Supported data types for each hazard type in  |project_name|
 Earthquake Impact Functions
 ...........................
 
-**Earthquake hazard**:  continuous raster
+**Earthquake hazard**:  continuous raster, classified raster, and classified polygon
 
 **Population exposure**: continuous raster with counts
 
@@ -526,6 +526,8 @@ Flood Impact Functions
 
 **Building exposure**: classified polygon or point with a type attribute
 
+**Road exposure**: classified line with a type attribute
+
 
 
 .. image:: /static/training/socialisation/icon_tsunami.*
@@ -541,6 +543,8 @@ Tsunami Impact Functions
 
 **Building exposure**: classified polygon with a type attribute
 
+**Road exposure**: classified line with a type attribute
+
 
 
 .. image:: /static/training/socialisation/icon_volcano.*
@@ -550,7 +554,7 @@ Tsunami Impact Functions
 Volcano Impact Functions
 ........................
 
-**Volcano hazard**:  continuous polygon or point
+**Volcano hazard**:  continuous polygon, classified polygon, and point
 
 **Population exposure**: continuous raster with counts
 
@@ -584,6 +588,8 @@ Generic Impact Functions
 **Population exposure**: continuous raster with counts
 
 **Building exposure**: classified polygon with a type attribute
+
+**Landcover exposure**: classified polygon with a type attribute
 
 A note about generic impact functions: Generic IF's are useful when your
 data does not conform to the a priori expectations of |project_name|.
