@@ -500,7 +500,7 @@ Supported data types for each hazard type in  |project_name|
 
 .. image:: /static/training/socialisation/icon_earthquake.*
    :align: left
-   :width: 80 pt
+   :width: 120 pt
 
 Earthquake Impact Functions
 ...........................
@@ -515,7 +515,7 @@ Earthquake Impact Functions
 
 .. image:: /static/training/socialisation/icon_flood.*
    :align: left
-   :width: 80 pt
+   :width: 120 pt
 
 Flood Impact Functions
 ......................
@@ -532,7 +532,7 @@ Flood Impact Functions
 
 .. image:: /static/training/socialisation/icon_tsunami.*
    :align: left
-   :width: 80 pt
+   :width: 120 pt
 
 Tsunami Impact Functions
 ........................
@@ -549,7 +549,7 @@ Tsunami Impact Functions
 
 .. image:: /static/training/socialisation/icon_volcano.*
    :align: left
-   :width: 80 pt
+   :width: 120 pt
 
 Volcano Impact Functions
 ........................
@@ -564,7 +564,7 @@ Volcano Impact Functions
 
 .. image:: /static/training/socialisation/icon_volcanic_ash.*
    :align: left
-   :width: 80 pt
+   :width: 120 pt
 
 Volcanic Ash Impact Functions
 .............................
@@ -578,7 +578,7 @@ Volcanic Ash Impact Functions
 
 .. image:: /static/training/socialisation/icon_generic.*
    :align: left
-   :width: 80 pt
+   :width: 120 pt
 
 Generic Impact Functions
 ........................
