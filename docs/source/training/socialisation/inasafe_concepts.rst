@@ -345,7 +345,7 @@ various online data sources. Landcover data are useful if you want to assess
 the impact of a hazard event such as a volcanic eruption on crops.
 
 +--------------+---------------------------------------------------------------+
-|              |   **Key notes for population data**                           |
+|              |   **Key notes for landcover data**                            |
 +==============+===============================================================+
 |Format        |  Vector polygon data                                          |
 +--------------+---------------------------------------------------------------+
