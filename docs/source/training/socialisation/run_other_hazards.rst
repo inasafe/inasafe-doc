@@ -42,6 +42,20 @@ Once the data has been downloaded, we will use the following QGIS project file a
 
 - Maumere.qgs
 
+- Nagekeo.qgs
+
+- Padang_village_boundary_WGS84.shp
+
+- West_Sumatera_Population_WGS84.shp
+
+- Padang_EQ_2009_WGS84.tif
+
+- Maumere_Tsunami_WGS84.tif
+
+- Maumere_Buildings_WGS84.shp
+
+- Sikka_Village_Boundary_WGS84.shp
+
 - Sinabung_Hazard_Map_2015_WGS84.shp
 
 - Sinabung_buildings_WGS84.shp
@@ -50,7 +64,9 @@ Once the data has been downloaded, we will use the following QGIS project file a
 
 - NGK_Buildings_WGS84.shp
 
-- NT_Population_WGS84.tiff
+- NGK_Population_WGS84.tif
+
+- NGK_Villages_BPS_WGS84.shp
 
 1. Run |project_name| for Earthquake
 ------------------------------------
@@ -163,7 +179,7 @@ If everything is setup correctly, the |project_name| dock should show that you a
 It poses the question “In the event of an **Earthquake in Padang (2009)**, how many **people** might **die or be displaced according to the Pager Model**?” 
 In this analysis we still use Shakemap data which has values from 6 – 8 MMI. If you want to see the minimum relief needs that should be provided based on the result, you can click :guilabel:`Options` and select :guilabel:`Minimum Needs`.
 
-You can refer to the `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ to learn more about the basis of default minimum needs in |project_name|
+You can refer to the :ref:`Run Basic InaSAFE <run_basic_inasafe>` to learn more about the basis of default minimum needs in |project_name|
 or if you want edit an item or add new minimum needs, you can refer to the `Minimum Needs Configuration manuals <http://docs.inasafe.org/en/user-docs/application-help/minimum_needs.html#minimum-needs>`__.
 After everything is setup accordingly, click :guilabel:`Run` to process the new scenario.
 
@@ -289,12 +305,12 @@ Indonesia has many volcanoes, and most of them are still active today. In fact, 
 and it is valuable to know how many people and how much infrastructure is within a certain perimeter of the vent.
 
 |project_name| also has an impact function for volcano eruption scenarios. This function can run some type of
-hazard data. For detail information about the |project_name| volcano hazard function, please look at the `Hazard Data Section <http://docs.inasafe.org/en/training/socialisation/datasets.html/>`__ 
+hazard data. For detail information about the |project_name| volcano hazard function, please look at the :ref:`Hazard Data Section. <datasets>` 
 
 In this section we will be using the Sinabung volcano hazard from the National Disaster Management Agency (BNPB) as
 hazard data and building from OpenStreetMap as exposure data. For this run, we will using
 Impact Function Centric Wizard (IFCW). For more information about IFCW you can refer to 
-`Key concepts in disaster management planning with InaSAFE <http://docs.inasafe.org/en/training/socialisation/inasafe_concepts.html>`__ 
+:ref:`Key concepts in disaster management planning with InaSAFE. <inasafe_concepts>` 
 
 3.1 Open Project
 ................
@@ -328,15 +344,11 @@ Because we want to run Volcano with building in this session, please click :guil
 
 You can click :guilabel:`Next` and follow the instructions in the IFCW box.
 
-Hazard Data that we want to use for this scenario can be found in
-:file:`InaSAFE Training Data > Sinabung > Hazard Data` folder.
-Please select :file:`Sinabung_Hazard_Map_2015_WGS84.shp` . Building Exposure data can be found in :file:`InSAFE Training Data > Sinabung > Exposure Data` folder.
-Please select :file:`Sinabung_buildings_WGS84.shp` .
+Hazard Data that we want to use for this scenario can be found in :file:`InaSAFE Training Data > Sinabung > Hazard Data` folder and please select :file:`Sinabung_Hazard_Map_2015_WGS84.shp`.
 
-..note:: The differences between Volcano and Volcanic Ash can be seen in
-  `Hazard Data Section <http://docs.inasafe.org/en/training/socialisation/datasets.html/>`_ and for detail explanation
-  about type of data you can be found in
-  `Key concepts in disaster management planning with |project_name| <http://docs.inasafe.org/en/training/socialisation/inasafe_concepts.html/>`_.
+Building Exposure data can be found in :file:`InSAFE Training Data > Sinabung > Exposure Data` folder and please select :file:`Sinabung_buildings_WGS84.shp` .
+
+..note:: The differences between Volcano and Volcanic Ash can be seen in :ref:`Hazard Data Section <datasets>`, and for detail explanation about type of data you can be found in :ref:`Key concepts in disaster management planning with InaSAFE. <inasafe_concepts>`.
 
 If you have followed the instruction in IFCW box, before running |project_name| you should see the final form below:
 
