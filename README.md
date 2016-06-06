@@ -1,6 +1,6 @@
 [![][InaSAFEImage]][website]
 
-[![Build Status](https://travis-ci.org/inasafe/inasafe-doc.svg?branch=develop)](https://travis-ci.org/inasafe/inasafe-doc)
+[![Build Status](http://jenkins.inasafe.org/buildStatus/icon?job=InaSAFE-Website-Test-develop)](http://jenkins.inasafe.org/job/InaSAFE-Website-Test-develop/)
 
 InaSAFE Documentation
 =====================
@@ -10,93 +10,8 @@ PDF versions of the Documentation are available here: http://inasafe.org/pdf/
 Tools you need to install, if you want to work on the documentation
 -------------------------------------------------------------------
 
-If you plan to update or translate the manual locally, you will need to 'build'
-the docs like we do on the servers. You build it using 'Sphinx', and 
-there are two options:
-
-- building using a Docker image on your machine (easiest, on Linux and Windows)
-- have al the tools on your local machine (Linux only)
-
-You always start with having or creating a github account
-
-Docker build on your machine
-============================
-
-First: install Docker. 
-
-On Linux: use your package-manager.
-
-On Windows: install boot2docker from: http://boot2docker.io/
-Some notes: you need admin rights to do this: the install script will generate some keys, just accept all defaults.
-If it does not work the first time, check if you need to 'enable virtualisation' in your BIOS (eg Lenovo disables it  by default).
-
-Start a command box (on Windows: double click the boot2docker icon on desktop, you will get a terminal):
-
-Verify that Docker/Boot2docker is working by typing:
-
-    docker run hello-world
-  
-If all goes ok, it will download a small Docker image and you will have output like this:
-
-    richard@kwik~$ docker run hello-world
-    Unable to find image 'hello-world:latest' locally
-    latest: Pulling from hello-world
-    ....
-    Hello from Docker.
-    This message shows that your installation appears to be working correctly.
-
-Now we are going to create a working directory and pull the Inasafe-doc sources from github:
-
-    # cd to your home dir
-    cd
-    # create a dev dir and move into it
-    mkdir dev
-    cd dev
-    # clone/copy the sources into it and go into the dir
-    git clone https://github.com/AIFDR/inasafe-doc
-    cd inasafe-doc
-    # check your current path
-    pwd
-    # ^^^ that shows your current path, with me on Linux it is:
-    /home/richard/dev/qgis/git/inasafe-doc
-    # on Win7 and Win8 I had:
-    /c/Users/richard/dev/inasafe-doc
- 
-We are now going to use that inasafe-doc directory as source and output directory for the 
-Docker 'virtual machine' that will build the docs.
-We will start this Docker container with a command line like below:
-
-    docker run -t -i -v /home/richard/dev/qgis/git/inasafe-doc:/inasafe-doc -w=/inasafe-doc --rm=true qgis/sphinx_html ./scripts/post_translate.sh en
- 
-Where "docker run -t -i qgis/sphinx_html ./scripts/post_translate.sh en" means: "run a Docker container/proces based on the qgis/sphinx_html image available online, call the scripts/post_translate.sh in the working directory of the container, with parameter 'en', meaning: only build english"
-
-"-v /home/richard/dev/qgis/git/inasafe-doc:/inasafe-doc" means: use the directory "/home/richard/dev/qgis/git/inasafe-doc" as a virtual directory in the container and name it '/inasafe-doc'
-  
-"-w=/inasafe-doc" means that it is to be used as thee working dir of Docker
-
-"--rm=true" means remove the container after the build
-
-Now the actual command lines:
-
-On linux (use your own inasafe-doc path here!):
-
-    # only html
-    docker run -t -i -v /home/richard/dev/qgis/git/inasafe-doc:/inasafe-doc -w=/inasafe-doc --rm=true qgis/sphinx_html ./scripts/post_translate.sh en
-    # pdf plus html
-    docker run -t -i -v /home/richard/dev/qgis/git/inasafe-doc:/inasafe-doc -w=/inasafe-doc --rm=true qgis/sphinx_pdf ./scripts/post_translate.sh en
-
-On windows (tested on Win7 and Win8), use your own inasafe-doc path here!
-
-IMPORTANT you need 2x a double // in the command !!!   Without it you will get an error message about a wrong working directory:
-
-    docker run -t -i -v //c/Users/richard/dev/inasafe-doc:/inasafe-doc -w=//inasafe-doc --rm=true qgis/sphinx_html ./scripts/post_translate.sh en
-
-Note: only the first time it will pull the qgis/sphinx_html image (>300Mb) from the online repository https://hub.docker.com/u/qgis/
-
-Local build
-===========
-
-install the following tools:
+If you plan to update or translate the manual locally, you will need to create a
+github account and install the following tools:
 
 * git (from packagemanager) to clone/download the source from Github.com
 * gettext (from packagemanager) for translation tools
@@ -107,50 +22,8 @@ install the following tools:
 * python-pip python installation (via sudo apt-get install python-pip)
 * sphinx (via 'sudo pip install sphinx'; on Arch install python-sphinx)
 * texi2pdf (from packagemanager: in Ubuntu it is in package 'texinfo')
-* dvi2png (from packagemanager: in Ubuntu it is in package 'dvipng')
+* dvi2png (from packagemanager: in Ubuntu it is in package 'dvi2png')
 
-Building the website using Make
-===============================
-
-Building is only tested on Linux systems using make, on windows we now started a Paver setup (see below)
-
-To be able to run localisation targets you will need Sphinx 1.2 which comes with pip. 
-Sphinx coming with most distro's is just 1.1.3. You will get an gettext error with those.
-
-Best to run the make file in a virtual env ( http://www.virtualenv.org/ ):
-
-Move to a directory (~/myvirtualenvs/) and create a virtualenv enabled dir:
-
-    virtualenv sphinx  # one time action, only to create the environment
-    cd sphinx
-
-And activate this virtualenv
-
-    source bin/activate 
-    # now you will see sphinx before your prompt:
-    (sphinx)richard@mymachine
-
-Now always activate your environment before building. To deactivate, you can do:
-
-    deactivate
-
-You can install all tools in on go via the REQUIREMENTS.txt here in root of this repo:
-
-    pip install -r REQUIREMENTS.txt
-
-Alternatively do it one by one:
-
-Install sphinx 1.2 now in your virtual env:
-
-    pip install sphinx==1.2
-
-Sphinx intl extention ( https://pypi.python.org/pypi/sphinx-intl ):
-
-    pip install sphinx-intl
-
-After successfully install REQUIREMENT.txt, all you need is go to inasafe-doc\scripts. And then run:
-
-    ./scripts/post_translate.sh en
 
 Working on the english Documentation
 ====================================

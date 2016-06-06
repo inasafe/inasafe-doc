@@ -1,0 +1,584 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 2.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-22 12:28\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 9b2d47630b9d41ba82d355c589b33ba6
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:10
+msgid "Module 7: Imagery Offset"
+msgstr ""
+
+# 2237932e598040798a11ae6db60ef01c
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:12
+msgid "**Learning Objectives**"
+msgstr ""
+
+# f9e0c73f4c064b22bcfdcbfee6d831ff
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:14
+msgid "Understand the definition of imagery offset"
+msgstr ""
+
+# 097342f8823041a9b2396901a82c23de
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:15
+msgid "Understand components of imagery (resolution and georeference)"
+msgstr ""
+
+# e2616d0c335c43e5ad9c9f1ec3bd8a44
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:16
+msgid "Understand how imagery offset occurs"
+msgstr ""
+
+# 7621197b003743f6972439f49ba356e2
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:17
+msgid "Fix imagery offset"
+msgstr ""
+
+# 69cb101bd019407ebb4209a031de81ac
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:19
+msgid ""
+"Using aerial imagery is the most widely used approach in making maps with "
+"OpenStreetMap. Mappers typically use Bing or Mapbox satellite imagery as a "
+"background layer, or imagery from another provider. We have already seen "
+"this in action. In this module we will learn a little bit more about aerial "
+"imagery, and we will learn how to solve the one important problem of using "
+"aerial photographs - imagery offset."
+msgstr ""
+
+# 9a85bea9d957452e9b9f9a6b82f109bd
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:28
+msgid "1. Components of imagery"
+msgstr ""
+
+# c677958f1ade4d549b570aac3bcb2ae5
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:30
+msgid ""
+"Aerial imagery is the term that we use to describe photographs that are "
+"taken from the sky. These can be taken from airplanes, helicopters, or even "
+"kites and balloons, but the most common source of imagery comes from "
+"satellites orbiting the Earth."
+msgstr ""
+
+# 1a95f9c132f7414aabd5ffd9f43aef85
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:35
+msgid ""
+"In the :ref:`module on GPS<using-gps>` we learned about the dozens of "
+"satellites orbiting Earth which allow our GPS receivers to identify latitude "
+"and longitude. In addition to these GPS satellites, there are also "
+"satellites which take photos of the earth. These photos are then manipulated "
+"so that they can be used in GIS (mapping) software. Bing Aerial Imagery is "
+"made up of satellite photos."
+msgstr ""
+
+# d7611b89168045e6b1b58354c06c2fe3
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:42
+msgid ""
+"Let's look at a couple of the components of aerial imagery - resolution and "
+"georeferencing."
+msgstr ""
+
+# 564b834045564d8f834fec42240e3729
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:46
+msgid "1.1. Resolution"
+msgstr ""
+
+# 34ad856dee3c4e2f8cab529926516d43
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:48
+msgid ""
+"All digital photographs are made up of pixels. If you zoom in very close on "
+"a photograph, you will notice the the image starts to get blurry, and "
+"eventually you’ll see that an image is made up of thousands of little "
+"squares that are each a different colour. This is true whether the "
+"photograph is taken with a handheld camera, a mobile phone or a satellite "
+"orbiting Earth."
+msgstr ""
+
+# 90abc95f1a184a61bbd8e1b35a5d3609
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:58
+msgid ""
+"Resolution refers to the number of pixels wide by the number of pixels high "
+"that an image is. More pixels means higher resolution, which means that you "
+"are able to see greater detail in the photograph. Resolution in handheld "
+"cameras is often measured in megapixels. The more megapixels your camera is "
+"able to record, the higher the resolution of your photos."
+msgstr ""
+
+# 12972c8adaa8478193ab5ca9b65fa5c4
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:65
+msgid ""
+"Aerial imagery works the same, except that we talk about resolution "
+"differently. Measurement is important with aerial photographs - hence, a "
+"pixel represents a certain measurable area on the surface of the Earth. We "
+"usually describe imagery as something like \"two metre resolution imagery\", "
+"which means that one pixel in the image is equivalent to two metres on the "
+"ground. One metre resolution imagery would have a higher resolution than "
+"this, and 50cm resolution would be higher still. This is generally the range "
+"of imagery that is provided by Bing, though it varies between locations, and "
+"in many places it is worse than two metres, at which point it becomes "
+"difficult to identify objects in the image."
+msgstr ""
+
+# 2c468d01f9f743a7be2c7190231dd01d
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:79
+msgid ""
+"The higher the resolution of an aerial image, the easier it is to use in "
+"making maps."
+msgstr ""
+
+# b17150a9f73f4cc88f72f2a9c61f10e0
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:83
+msgid "1.2. Georeferencing"
+msgstr ""
+
+# 82e18b7af110426dbfb0c8af1dff9dd9
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:85
+msgid ""
+"Every aerial image is georeferenced, meaning that it is manipulated so that "
+"it can be shown in its correct location on the Earth. Georeferencing is a "
+"relatively complex process, because images are flat and the Earth is round, "
+"and the images need to be positioned and stretched so that the pixels are "
+"accurately positioned on the planet."
+msgstr ""
+
+# a538d1fbe0d24984b80875b36fe05caf
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:91
+msgid ""
+"The imagery available to us is already georeferenced, so it is not something "
+"that we need to concern ourselves with too deeply. We can happily use "
+"imagery to help add to OSM, so long as we understand a little bit about the "
+"imagery we are using, and so long as we are aware of one common pitfall - "
+"imagery offset."
+msgstr ""
+
+# 9244adc3416d49f3896b68f0dbc769ab
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:99
+msgid "2. Imagery offset"
+msgstr ""
+
+# cbed54f01d8648bb9936efd53c5a1001
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:101
+msgid ""
+"Imagery providers usually do a pretty good job of georeferencing their "
+"imagery, but occasionally the images can be a little bit out of position. "
+"This is particularly true in hilly or mountainous areas, where it can be "
+"difficult to stretch a flat image over an area of the Earth with many "
+"contours. When you load imagery in JOSM, it can sometimes be ten metres or "
+"more from its true position. This is called imagery offset."
+msgstr ""
+
+# 86c4cceaf48e47f79ba242076d7e4b5e
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:108
+msgid ""
+"Aerial imagery layers are composed of many photographs of the Earth's "
+"surface that have been georeferenced and then stitched together. Imagery "
+"providers cannot verify the accuracy of every photo, so some images may be "
+"shifted from their actual positions. This might be a shift of a couple "
+"metres, or in rare instances up to hundreds of metres. In mountainous areas, "
+"imagery may be distorted non-linearly, which means that nearby parts of the "
+"same image may be shifted in many different directions."
+msgstr ""
+
+# 6caff443d1f74088849cbcdbaec63d78
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:116
+msgid ""
+"Notice in the following image that two separate aerial photographs have been "
+"georeferenced and merged together. Because georeferencing is not a perfect "
+"process, the images do not line up perfectly with each other. Hence one, or "
+"both, must be inaccurate."
+msgstr ""
+
+# 72b57d3137344d438afc922782ff31f3
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:124
+msgid ""
+"We’ve learned about two major ways of making maps - one is by utilising "
+"aerial imagery to identify features on the ground, and another is by using "
+"GPS to record tracks and waypoints and then add them to OSM. The advantage "
+"of aerial imagery is obvious. It enables you, the mapper, to see the whole "
+"picture, to observe various details from the image, consider your knowledge "
+"of the area, and easily trace roads, buildings and areas. One key advantage "
+"of GPS however, is that it doesn’t suffer from offset like imagery. A GPS "
+"will always provide you with a correct latitude and longitude. The only "
+"exception is when the satellite signals are interrupted by tall buildings or "
+"mountains, but in this case it is easy to recognise the error. Observe the "
+"GPS trace in this image, compared with the Bing aerial imagery layer beneath "
+"it:"
+msgstr ""
+
+# 6be469dc370a4d738207f09b332a73ce
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:140
+msgid ""
+"Because of what we now know, it is clear that the GPS trace is likely to be "
+"accurate, and the image beneath it is out of place."
+msgstr ""
+
+# 78c44f6c1b5444c3b792964cbf7ebfde
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:143
+msgid ""
+"So now we must ask, “if the imagery may be out of place, how can we still "
+"use it and make accurate maps?”"
+msgstr ""
+
+# 8e5496d3dd10436a91fd0107bb38d4e3
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:147
+msgid "3. Correcting imagery offset"
+msgstr ""
+
+# 2ee047cba69b4f64b01f12351eaac32b
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:149
+msgid ""
+"The answer to the preceding question is that we can move the imagery so that "
+"it aligns with things that we know are in the correct location, such as GPS "
+"tracks. It is easy to correct imagery offset in JOSM."
+msgstr ""
+
+# 0065293f68f94f9ea44e2d95b59de0f4
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:153
+msgid ""
+"The best references for adjusting imagery are GPS tracks that follow roads. "
+"And the more GPS tracks that you have to reference, the more accurate you "
+"will be able to align your imagery. Since OSM users often upload their GPS "
+"tracks to the OSM database, we can download them and use them to align our "
+"imagery."
+msgstr ""
+
+# 4761863d87af4befba658e49d831094e
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:159
+msgid "In JOSM, click on the :guilabel:`Download` button."
+msgstr ""
+
+# db2f0fa9a9584375803c4b7f436826d7
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:161
+msgid ""
+"Check the box next to :guilabel:`Raw GPS Data` near the top of the :guilabel:"
+"`Download` window. Select your area and click :guilabel:`Download`."
+msgstr ""
+
+# df118c1238994fd691ce3dc145e1feca
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:168
+msgid ""
+"This will download an additional layer to JOSM containing GPS tracks. "
+"Depending on how many tracks have been uploaded by OSM users, you may see "
+"few tracks (or even no tracks):"
+msgstr ""
+
+# 4cd0bd5316f142418e19a322dce9e9b3
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:175
+msgid "Or, you may see many tracks:"
+msgstr ""
+
+# ffdb72dc1d9b49198353a16c404041ab
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:180
+msgid "Add an imagery layer (such as Bing Sat) to JOSM."
+msgstr ""
+
+# 05ec951a2bae4cf4b996a9dbc0db9d3e
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:182
+msgid ""
+"To adjust an imagery layer, click on the :guilabel:`Adjust imagery offset` "
+"button at the top of JOSM, and then click :guilabel:`New Offset`."
+msgstr ""
+
+# da7a74daf5ce4dfa83998b6d6d945365
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:188
+msgid ""
+"Ignoring the box that pops up, use your mouse to drag the imagery layer so "
+"that it aligns correctly with the GPS tracks. The GPS tracks should line up "
+"with the roads on the imagery as closely as possible. You will see the "
+"offset numbers in the box change."
+msgstr ""
+
+# 8394fe8a67194fa5a57e7e59b8561fa9
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:196
+msgid ""
+"If you like, you can save these offset settings by entering a bookmark name "
+"and then clicking :guilabel:`OK`. You can then automatically apply the same "
+"settings later by going to :menuselection:`Imagery ‣ Imagery offset` and "
+"clicking on your bookmark."
+msgstr ""
+
+# 6088874252fc4669b6bfe7b56294da3f
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:201
+msgid ""
+"If you do not want to save the offset, simply click :guilabel:`OK` without "
+"entering a bookmark name."
+msgstr ""
+
+# 881be379daf44aea8877a74a815e2094
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:204
+msgid ""
+"What if there are no GPS tracks on OSM, and you don’t have a GPS? Without "
+"GPS tracks, it is difficult to align imagery. If it is a relatively empty "
+"area (not much mapping done), you might choose to simply use the imagery as "
+"it is and correct the data later. It’s better to map an area 20 or 30 metres "
+"offset than to not map it at all."
+msgstr ""
+
+# f5ccd1448cb042ed8fcfe77601b9bbab
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:210
+msgid ""
+"If you can positively identify the latitude and longitude of one object on "
+"the ground, you can ensure the imagery is correctly placed by following "
+"these steps:"
+msgstr ""
+
+# f7160c87f8ce4375854780cc7a6d7802
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:214
+msgid "First, identify the object whose position you know on the imagery."
+msgstr ""
+
+# 34515c9568f3446eb6261719b48f226d
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:216
+msgid "Click on the latitude and longitude in the bottom left corner of JOSM."
+msgstr ""
+
+# 8eafe1ebbb2d41e3b888bb4cac8fea66
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:221
+msgid ""
+"In the dialog that opens, enter the latitude and longitude of the place that "
+"you know, and enter a small number for :guilabel:`Zoom`, about five or 10."
+msgstr ""
+
+# 504c79313c594173b3ea2663037ddb0e
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:228
+msgid ""
+"This will zoom and centre the map to your longitude and latitude. Now you "
+"can move the imagery as you did previously so that the feature you know is "
+"centred at the correct position."
+msgstr ""
+
+# 4b6a5cd7bc95404ea309bb1ea400df4c
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:232
+msgid ""
+"If, on the other hand, the area has already been extensively mapped, then "
+"hopefully the previous mappers have drawn objects in their correct "
+"locations. In this case, you can align the imagery to the OSM map, but "
+"beware!  Other mappers may not be aware of imagery offset, and they may have "
+"made mistakes when they mapped."
+msgstr ""
+
+# 6000ddecac1a40108935ae97eeb36a6c
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:239
+msgid "3.1. The imagery offset database"
+msgstr ""
+
+# 187b0c4cd8be4c279b2999b0db3d0d6c
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:241
+msgid ""
+"Now you know how to watch out for and correct imagery offset, but there is "
+"one major problem with this approach that we have overlooked thus far. If "
+"every OSM user adjusts the imagery differently, everybody will be mapping "
+"with slightly different backgrounds."
+msgstr ""
+
+# 072240a2749f4f1a81aa13ec5de67027
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:246
+msgid ""
+"Imagine that you are mapping a small town, and you realise that Bing imagery "
+"is offset by 15 metres to the north. So you adjust the imagery and then use "
+"it to map the whole town accurately. But then somebody else wants to add "
+"something to the map, so they download the data and load Bing imagery, but "
+"they don’t know about the imagery offset you discovered!  They will think "
+"that something is wrong and all of the objects in town are misplaced by 15 "
+"metres, and they will start to move them, which is not correct!  This can be "
+"disastrous for the town’s map data."
+msgstr ""
+
+# a8f6b9e4d58f456e865c29d45f4f91c1
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:255
+msgid ""
+"For this reason it is important that all users are aware of imagery offset, "
+"and should always check for it before mapping an area. To help with this "
+"problem, some smart people created a plugin that allows users to save offset "
+"information in a database and share it with others. Let’s see how this works:"
+msgstr ""
+
+# 1a0d8c4a6ea341099cb7c9daee7d25ed
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:260
+msgid ""
+"Open the :guilabel:`Preferences` menu in JOSM, and click on the :guilabel:"
+"`Plugins` tab."
+msgstr ""
+
+# 59151727bca14f0fb93c4ac1430b544f
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:266
+msgid "Find the plugin named *imagery_offset_db* and check the box next to it."
+msgstr ""
+
+# e5fafae1f1d5488b8f22b74713bd1c77
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:271
+msgid ""
+"Click :guilabel:`OK`. You will need to restart JOSM to finish the plugin "
+"installation."
+msgstr ""
+
+# 5aff447f30774a5191f2929caebfee9b
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:274
+msgid ""
+"In the same way that you are able to save offsets as bookmarks, this plugin "
+"allows you to save offsets to a central database, and to access the offsets "
+"that other users have created. Hence, if one mapper creates an imagery "
+"offset in an area, other users can use the exact same offset to map with."
+msgstr ""
+
+# e6442585bd38455791d0fa8278cb6912
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:280
+msgid ""
+"When using aerial imagery layers, you should ALWAYS check for existing "
+"offsets, and when you create your own offset, you should ALWAYS save it to "
+"this database."
+msgstr ""
+
+# 2c32f789fdfe49db87c843068383d628
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:285
+msgid "3.2. Add imagery offset from the database"
+msgstr ""
+
+# 45a07c44fd964d76b4ebe1c530241b49
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:287
+msgid ""
+"When you add an imagery layer, the new plugin will alert you that you should "
+"check the imagery database for an existing offset. You will see an icon with "
+"a red exclamation point on it at the top of JOSM, like this:"
+msgstr ""
+
+# 618256bb7a7d4edfb95c2663604090ca
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:294
+msgid ""
+"Click on the button and the plugin will communicate with the database to see "
+"if there are existing offsets in this area."
+msgstr ""
+
+# c9483404a31345539455a9a2cf1ddac0
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:297
+msgid ""
+"Here we have downloaded OSM data and GPS tracks in Kuta, Bali, Indonesia. In "
+"this case, we have found one existing offset. Click on it to apply to the "
+"map."
+msgstr ""
+
+# b9d3c560ae464f3c8b59cadc2ac9765d
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:304
+msgid ""
+"This causes the imagery layer to shift. However, when we add someone else’s "
+"offset like this, we should check that it is valid by comparing it to GPS "
+"tracks."
+msgstr ""
+
+# 16d0319446734a1fb47e2f2c79a0c789
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:311
+msgid ""
+"We can see that the imagery layer is in fact misaligned. We don’t want other "
+"users to use this offset, so we should mark it as incorrect in the database. "
+"Click on the :guilabel:`Offsets` button again (it won’t have a red "
+"exclamation mark anymore)."
+msgstr ""
+
+# 51662591d6bc4b96a1dcc470d0f0412d
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:319
+msgid ""
+"This time when the dialog opens, right-click on the offset and click :"
+"guilabel:`Deprecate Offset`."
+msgstr ""
+
+# 2917e66576d54c138b666f7ad0973157
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:325
+msgid "Click :guilabel:`Yes` to confirm."
+msgstr ""
+
+# 27fd2d4e64da4ea0887845723d07b3cd
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:327
+msgid "Enter a reason for deprecating this offset."
+msgstr ""
+
+# 31b39823ab9a4a1b8b89d233bb80e2a2
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:333
+msgid "3.3. Add imagery offset to the database"
+msgstr ""
+
+# d68edb44955544a59462cf2a99b68691
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:335
+msgid ""
+"Now that we have marked this user’s offset as \"deprecated\", we should add "
+"an improved offset to the database."
+msgstr ""
+
+# 16d17c9659194c0f99c4a1e952611215
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:338
+msgid "Click on the :guilabel:`Adjust imagery offset` button."
+msgstr ""
+
+# 09dd2a29fa2347ce9db7777bbb12ccdf
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:339
+msgid ""
+"Adjust the imagery to match the GPS tracks. Click :guilabel:`OK` in the box."
+msgstr ""
+
+# 0225d73ad6a94b058f9c8e2c11e00d7a
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:340
+msgid "Now go to :menuselection:`Offset ‣ Store Imagery Offset...`"
+msgstr ""
+
+# 33c029daafea4625a1e3ff5432f9d517
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:345
+msgid "Enter a description of the offset in the box that opens."
+msgstr ""
+
+# 3649e9c427ad45b7aa0d529e2427aa9f
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:350
+msgid "Click :guilabel:`OK`. Your offset will be saved to the database."
+msgstr ""
+
+# 3ec7956df5314dd981d272ef0257bdd4
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:352
+msgid ""
+"Now let’s hide the GPS layer and look at the OSM data against the correctly "
+"placed imagery."
+msgstr ""
+
+# 341d7fb460d6450491653f9082f86034
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:358
+msgid ""
+"Oh No!  Somebody mapped this area with misaligned imagery, so the area is "
+"not correctly mapped. This will take some time to fix."
+msgstr ""
+
+# 9d73f07b9aef4f5ab2151133959fbea5
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:362
+msgid "3.4. Imagery offset database website"
+msgstr ""
+
+# ada349c114bd4f70ad32669c730fbf6b
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:364
+msgid ""
+"For more information on the offset database, you can visit the website at "
+"http://offsets.textual.ru/. This lists all the offsets that have been "
+"uploaded to the database, and it also has a map feature that visualises "
+"where the offsets are located, as you can see here:"
+msgstr ""
+
+# 8b6d7f84f40e4f26befb7c2cc2155f42
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:372
+msgid ""
+"One last thing to remember is that the imagery may not be offset the same "
+"distance everywhere! This is especially true in regions where there are lots "
+"of hills and mountains. So if the imagery seems to be offset differently in "
+"different areas, you’ll need to move it again."
+msgstr ""
+
+# 81b9f38f16894bbe81bc7949951c7ccb
+#: ../../source/training/beginner/osm/107-imagery-offset.rst:378
+msgid ":ref:`Go to next module --> <getting-osm-data>`"
+msgstr ""

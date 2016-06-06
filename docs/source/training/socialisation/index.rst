@@ -1,66 +1,34 @@
 .. _socialisation:
 
-Socialisation Training Manual
-=============================
-A short course intended to "socialise" the participants with the basic workflows
-typically carried out when performing a natural disaster scenario analysis with
-QGIS and |project_name|.
+Socialisation
+=============
 
-|project_name| is funded by:
-----------------------------
+This training course is designed to provide hands-on experience with
+|project_name|.
+It is not designed as a comprehensive course, but to give participants 
+an idea of what |project_name| is capable of doing.
+The training is scheduled to be completed in 1/2 day.
 
-.. image:: /static/training/socialisation/00_Logo.*
-   :align: center
-   :width: 400 pt
+The data used in this course is available for download on
+`data.inasafe.org  <http://data.inasafe.org/>`_.
+Ask your trainer which data you will need to download for the course if 
+they do not provide it to you directly.
 
-
-Preface
--------
-As one of the most hazard-prone and densely populated countries in the world,
-Indonesia faces significant risk of loss of lives and challenges to development
-progress as a result of natural disasters. The development of disaster
-management plans is seen as an important step to strengthen disaster risk
-reduction programs. However, this can only be effective when risk assessments
-and contingency planning utilise realistic hazard scenarios.
-Realistic hazard scenarios require scientific, sound and up-to-date data hazard
-information as well as up-to-date, scale appropriate exposure data.
-Such map-based risk assessments and contingency plans contribute to better
-disaster management planning and response.
-
-
-Course media
-------------
-All of the content for this course are available for free and can be freely
-shared and redistributed under the Creative Commons Attribution 4.0
-International license.
-
-The data used in this course are available for download on
-`data.inasafe.org <http://data.inasafe.org/>`_.
-Ask your trainer which data you will need to download for the course if it is
-not provided.
-
-If you are working through the training independently, please use the relevant data package:
-`data.inasafe.org/TrainingDataPackages <http://data.inasafe.org/TrainingDataPackages/>`_.
+If you are working through the training independently, use the following data package: `data.inasafe.org -
+InaSAFEv2.0.zip <http://data.inasafe.org/TrainingDataPackages/InaSAFEv2.0.zip>`_.
 
 .. toctree::
    :maxdepth: 1
 
    objective
-   introduction
-   inasafe_concepts
-   datasets
-   introduction_to_qgis
+   overview
+   functionality_datasets
+   introduction_of_qgis
+   rastervsvector
    run_basic_inasafe
-   run_intermediate_inasafe
-   run_other_hazards
-   faq
-
-
-
-
-
-
-
+   inasafe_in_more_detail
+   other_hazards
+   helpful_hints_and_tips
 
 
 

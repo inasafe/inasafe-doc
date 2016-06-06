@@ -1,482 +1,301 @@
-.. image:: /static/training/socialisation/inasafe_logo.*
-
-.. _run_basic_inasafe:
+.. _run-basic-inasafe:
 
 Run Basic |project_name|
 ========================
 
+**Learning Objectives:**
+
+* Run |project_name| using flood and population models and examine the
+  results
+* Create an impact map
+* Modify the threshold (parameters) of an impact function
+* Run |project_name| using flood and building models and examine the results
+
+**Data for this module**
+
+Download the InaSAFEv2.0.zip from `InaSAFE Training Data Packages
+<http://data.inasafe.org/TrainingDataPackages/>`_
+or it will be provided to you during the training.
+
 Introduction
--------------
+------------
 
-In this exercise we will work through an example scenario where we show
-how the different data elements used by |project_name| are combined in order to
-analyse the potential impact of a flood in Jakarta on both the buildings
-and the population.
+In this section we will run |project_name| using a scenario in Jakarta, Indonesia 
+to determine the impact of a flood model on both Jakarta's population and buildings.
 
-After we have run the |project_name| analysis we will print the map and
-analysis report as pdf and review the results. We will also learn how to
-change the flood threshold and take a look at the default settings for
-minimum needs. We will also learn how to save our work.
+1. Go to :menuselection:`Project --> Open`.
 
-Learning objective
--------------------
+2. If you have been working in QGIS previously a message box will appear 
+   asking if you want to save the current project. Click :guilabel:`Discard`
+   to exit your current work without saving.
 
-To develop the participant’s basic understanding of the |project_name| workflow
-and application of |project_name| in the Disaster Management sector. By the end
-of this exercise, participants will:
-
--  Be able to run a flood analysis using |project_name| - on buildings;
-
--  Be able to run a flood analysis using |project_name| - on population;
-
--  Understand the flood impact default settings;
-
--  Understand the impact summary report;
-
--  Be able to change the analysis threshold and run a new scenario;
-
--  Be able to generate a PDF map from the results of an analysis; and
-
--  Be able to save their work to share results with others.
-
-Data for this exercise
-----------------------
-
-The data for this exercise are available in **Run Basic InaSAFE zip**
-which can be downloaded from `InaSAFE Training
-Data <http://data.inasafe.org/TrainingDataPackages/>`__ Packages . We will use the following
-QGIS project file and spatial data:
-
-1. DKI_Jakarta_Basic.qgs
-
-2. Jakarta_Flood_HKV_WGS84
-
-3. Jakarta_Buildings_WGS84
-
-4. Jakarta_Population_WGS84
-
-Exercise
---------
-
-1. Open QGIS Project
-.....................
-
-Before we can run an |project_name| analysis, we must open a QGIS project.
-Please open the QGIS project file :file:`DKI_Jakarta_Basic.qgs` from the :file:`InSAFE
-Training Data > DKI Jakarta` folder. The project looks something like
-this:
-
-.. image:: /static/training/socialisation/run_basic_00.*
+.. image:: /static/training/socialisation/028_saveproject.*
    :align: center
-   :width: 500 pt
 
+3. Navigate to the :file:`InaSAFE_project` folder and 
+   select :file:`Jakarta_floods.qgs`. Click :guilabel:`Open`.
 
-As you can see from the picture above, you will be presented with several
-data sets for Jakarta such as buildings, population, and raster hazard.
+The project looks something like this:
 
-You will see that the project has three layers loaded:
-
--  Buildings: this is exposure data. We will use these to assess the
-   flood impact on buildings.
-
--  Flood: this is the hazard model. We will use this to determine the
-   depth of water.
-
--  Population: this is a population raster. We will use it to determine
-   the number of people exposed to the flood.
-
-More detailed information about the data used in this exercise can be
-found in :ref:`dataset section <datasets>`. The table below provides a brief summary about
-the source of the data.
-
-+------------------------------+---------------+---------------------------------------------------------------------------------+
-| **Data**                     | **Source**    | **Description**                                                                 |
-+==============================+===============+=================================================================================+
-| Buildings                    | OpenStreetMap | Most of the important buildings in Jakarta                                      |
-|                              |               | have been mapped through the collaboration                                      |
-|                              |               | of BPBD DKI Jakarta, OpenStreetMap and                                          |
-|                              |               | the Australian Government.                                                      |
-|                              |               | :ref:`See more at.. <datasets>`                                                 |
-+------------------------------+---------------+---------------------------------------------------------------------------------+
-| Jakarta_population_WGS84     | WorldPop      | High resolution, modelled data for human population distributions.              |
-|                              |               | :ref:`See more at.. <datasets>`                                                 |
-+------------------------------+---------------+---------------------------------------------------------------------------------+
-| a Flood similiar to 2007     | HKV           | The flood model was created by scientists/engineers in coordination with        |
-|  Jakarta Event               |               | DKI Jakarta Public Works based on the 2007 flood conditions.                    |
-|                              |               | :ref:`See more at.. <datasets>`                                                 |
-+------------------------------+---------------+---------------------------------------------------------------------------------+
-
-Let's move into the next section where we will run our first |project_name|
-analysis using these data. We will be working with the flood hazard
-model to look at the number of affected buildings. These data already
-have keywords assigned so we are ready to run the analysis.
-
-2. Run |project_name| Analysis for Building
-............................................
-
-Take a look at the |project_name| dock on the right side of QGIS. The |project_name|
-dock should show that you are ready to run a flood analysis on
-buildings. It poses the question “In the event of **a flood similar to the 2007 Jakarta event**, how many **buildings** might **be flooded**?”
-In this analysis we will use the default flood depth threshold of 1.0
-metre. Later on we will learn how to change the threshold.
-
-a. Run |project_name| Analysis
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. image:: /static/training/socialisation/run_basic_01.*
+.. image:: /static/training/socialisation/029_jakartafloods.*
    :align: center
-   :width: 300 pt
 
-Click :guilabel:`Run` in the lower right corner of the |project_name| panel to start
-the analysis process. If everything was set up correctly, you should get
-a result in the dock area after a few seconds, and a new map layer
-should be added to the map.
 
-.. image:: /static/training/socialisation/run_basic_02.*
+Number of population which need evacuation
+------------------------------------------
+
+The |project_name| panel has the first three drop-down menus
+filled in already:
+
+* a flood similar to the 2007 Jakarta event
+* people
+* Need evacuation
+
+.. image:: /static/training/socialisation/030_showpeople.*
    :align: center
-   :width: 200 pt
 
-b. Interpret the results
-^^^^^^^^^^^^^^^^^^^^^^^^
+.. note:: The |project_name| panel may instead read as follows:
+   
+   * a flood similar to the 2007 Jakarta event
+   * buildings
+   * Be flooded
+   
+   If so, click on buildings and change it to people. When you change this field,
+   the impact function is automatically changed between :guilabel:`Be flooded`
+   and :guilabel:`Need evacuation`, based on the combination of hazard and
+   exposure layers.
 
-The new impact layer will be generated and called **Estimated buildings
-affected**. Let’s take a look at the new impact layer
-generated by |project_name|.
+4. Let's run this scenario first. Click :guilabel:`Run` in the lower 
+   right corner of the |project_name| panel.
 
--  Zoom in to some area on the map canvas
-
--  Here we have zoomed in to a location showing two rivers going through
-   the middle of Jakarta. There will be three new different colours
-   generated from |project_name| (green, orange, and red).
-
-.. image:: /static/training/socialisation/run_basic_03.*
+.. image:: /static/training/socialisation/031_run.png
    :align: center
-   :width: 300 pt
 
-.. note:: If you don't see these colours, you might need to turn off the data layer above the *Estimated buildings affected* layer.
+A new layer should appear in the layer panel called :guilabel:`Population which
+need evacuation`.
 
--  The red buildings are situated in water greater than one metre, the
-   orange buildings are situated in water between zero and one
-   metre, while the green buildings are considered as unaffected as they are situated in
-   dry areas according to the flood hazard model.
-
--  Click :guilabel:`Estimated buildings affected` in the layer list to select
-   it and click :guilabel:`Identify Feature` tool and then click on a building
-   to view the attributes of that building.
-
-.. image:: /static/training/socialisation/run_basic_04.*
+.. image:: /static/training/socialisation/032_results.*
    :align: center
-   :width: 300 pt
 
-In the |project_name| panel we now see the impact summary. The details of are
-explained below.
+In the |project_name| panel we now see text and statistics. The
+details of this report are explained below.
 
-.. image:: /static/training/socialisation/run_basic_05.*
+.. image:: /static/training/socialisation/033_peoplefloodresult.*
    :align: center
-   :width: 200 pt
 
--  **Hazard Category**: divides the results into several categories
-   based on the threshold set in the hazard analysis. In this impact
-   summary, |project_name| divides the impact buildings into three
-   categories: number of buildings inundated (buildings affected by
-   water deeper than the analysis threshold), number of wet buildings
-   (buildings affected by flood water but not as deep as the analysis
-   threshold), and number of dry buildings (buildings that are not
-   affected by any flood water)
+**People:** |project_name| shows approximately how many people are located
+in water deeper than one metre. It is assumed that all of these people will
+need to evacuate their homes. The threshold of one metre can be changed
+(see Changing threshold section below).
 
--  **Building type:** divides the exposed buildings into several
-   categories based on the building type attribute for each
-   building. In this impact summary, |project_name| breaks down the results
-   into a more detailed report by looking at each type of the
-   building, for example the number of inundated hospitals and the
-   total number of hospitals in analysis area.
+**Needs per week** is calculated using the above number of evacuated people to
+estimate the amount of food, water and other products that the refugees will
+need to survive. The default figures are based on Indonesian policy.
 
--  **Action checklist:** designed to make disaster managers think about
-   what they need to do/discuss when planning for a similar event in
-   the future.
+**Action checklist** is designed to make disaster managers think about what
+they need to do to prepare for the event.
 
--  **Notes & assumptions:** provides details about the input data and any limitations
-   or assumptions in the analysis or report summary. In this
-   example, it explains why buildings are said to be inundated, wet
-   and dry.
+**Notes** explains the total people in the map canvas, the threshold of water
+depth that requires evacuation and the source of the minimum needs assessment.
 
--  **Detailed building type report:** statistical breakdown of the building
-   types affected by the simulated event. When you choose to use an aggregation
-   layer with your analysis (we will do this later) this table will show the
-   number of buildings by aggregation boundary.
+**Detailed gender and age report:** Statistical breakdown of the number of
+females, minimum needs for women's hygiene and pregnant women, as
+well as a statistical breakdown of Youth, Adults and Elderly.
 
--  **Hazard details:** explains where the hazard data come from
+Print Results
+.............
 
--  **Exposure detail:** explains where the exposure come from
+5. Click :guilabel:`Print...` at the bottom of the |project_name| panel.
 
-The results show the buildings that will be affected by flood water 1m deep.
-But what if the disaster manager decides that buildings in 80cm of water are also flooded?
-In order to assess this new scenario, we need to change the water depth threshold
-at which buildings are considered to be inundated.
-With |project_name| it is easy to run a new scenario, all you need to do is
-change the **Thresholds [m]** in the Options tab to 0.8 and run the scenario again.
-We will do this next.
-
-c. Changing threshold
-^^^^^^^^^^^^^^^^^^^^^
-
-In the Jakarta flood scenario we are running; the threshold refers to
-the depth of water that a disaster manager decides is the boundary
-between buildings being flooded (affected) and buildings not being
-affected.
-
-.. note:: You can only change the threshold for raster hazard data.The default threshold for this hazard is 1m or 100cm.
-
-If you want to open the |project_name| question panel again,
-click on :guilabel:`Show question form` at the top of the |project_name| panel.
-You will see the |project_name| question panel again and you can click the :guilabel:`Options` button
-next to :guilabel:`be flooded`.
-
-.. image:: /static/training/socialisation/run_basic_06.*
+.. image:: /static/training/socialisation/034_print.*
    :align: center
-   :width: 300 pt
 
-It will open the |project_name| impact function configuration.
+.. note:: You can choose whether you want print the whole analysis or the current
+   map extent. You also can pick an existing print template or you can navigate to your own
+   QGIS template (.qpt). For more information about printing click
+   :guilabel:`Help` in the print window.
 
-.. image:: /static/training/socialisation/run_basic_07.*
+6. A window will pop up as shown below. Ensure that :guilabel:`Analysis extent`
+   is selected under :guilabel:`Area to print` and :guilabel:`inasafe...` is chosen
+   under :guilabel:`Template to use`. Click :guilabel:`Open PDF`.
+
+.. image:: /static/training/socialisation/034a_impact_report.*
    :align: center
-   :width: 400 pt
 
-Here you can change the threshold of the flood according to your needs. In
-this example we change it to 0.8m. After you change the threshold to 0.8,
-click :guilabel:`OK` to close the dialog and then run the analysis again to see
-the change in the results.
+7. Navigate to where you would like to save the PDF
+   and type :file:`Jakartaflood_evacuation_1m`. Click :guilabel:`Save`.
 
-When the function completes, take a look at the impact summary in the
-|project_name| panel. How do the results compare to the first analysis results?
-The result should be different to the first analysis because
-in the first analysis |project_name| buildings are said to be inundated if the **flood level exceeds 1.0m**
-and now we have changed the flood level to **0.8m**.
-This means that buildings are said to be inundated when the **flood level exceeds 0.8m**.
-By reducing the flood threshold value from 1.0 to 0.8, more buildings will be
-considered inundated because a greater area of Jakarta is flooded at this depth.
-
-.. note:: ask your tutor to explain if you do not understand this.
-
-This completes our first |project_name| analysis using the flood hazard model to look at the number of affected buildings. 
-
-3. Run |project_name| for population
-....................................
-
-We are now ready to run our second |project_name| analysis using the flood
-hazard data for Jakarta. We will be working with the flood hazard model
-again, but this time to look at the number of impacted people. These
-data already have keywords assigned so we will be ready to run the
-analysis as soon as we have turned on the relevant data layers.
-
-In the QGIS, turn OFF the **Buildings** and **estimated building affected**
-(the layers generated from |project_name| analysis and turn ON **Jakarta_Population_WGS84** layer.
-
-Confirm that the |project_name| panel on the right side is set to query how many people might need evacuation:
-
-- A flood similar to the 2007 Jakarta event
-
-- People
-
-- Need evacuation
-
-.. image:: /static/training/socialisation/run_basic_08.*
+.. image:: /static/training/socialisation/034b_save_report.*
    :align: center
-   :width: 250 pt
 
-a. Run |project_name| Analysis
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Two PDFs will be generated, which contain a map and a table of information about the impact.
 
-If everything is setup correctly, the |project_name| dock should show that you
-are ready to run a flood analysis on population. It poses the question
-“In the event of **a flood similar to the 2007 Jakarta event**, how many
-**people** might **need evacuation**?” In this analysis we will use the
-default flood depth threshold of 1.0 metre to find out how many people
-are in 1 metre of water. After everything is setup accordingly click
-:guilabel:`Run` to process the new scenario.
-
-.. note:: Notice that if you click on the drop-down list on "How Many **People**,
-          the **building** option is not available. This is because **building**
-          is not checked in the Layers panel.
-
-b. Interpret the results
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-If everything was set up correctly, you should get a result in the dock
-area after a few seconds, and a new map layer should be added to the
-map. The new impact layer will be called **population which need evacuation**.
-Let’s explore the result again to make you understand more about the |project_name| result.
-
-1. Turn off **Estimated buildings affected** layer and drag the
-   **population which need evacuation** above **a flood similar to 2007 Jakarta event**
-
-2. Zoom in to an the area you choose
-
-3. Select **population which need evacuation** in the layer list and
-   use :guilabel:`Identify Feature` tool again to select a pixel (square) in
-   the map canvas.
-
-4. Here we clicked on one of the light green pixels and find that there
-   is a value of 80.75106, which means there are approximately 80
-   people in this one pixel (square) who need to evacuate because of
-   the flood.
-
-.. image:: /static/training/socialisation/run_basic_09.*
+.. image:: /static/training/socialisation/035_People_in_need_of_evacuation_1m.*
    :align: center
-   :width: 300 pt
 
-In the |project_name| panel we now see the impact summary. The details of this summary are
-explained below.
+.. note:: In a future version of |project_name| the developers will make improvements
+   to the layout of these PDF files. *If you have time during this course please
+   provide us with your ideas on how the print map and table should look!*
 
-.. image:: /static/training/socialisation/run_basic_10.*
+Changing threshold
+..................
+
+What if the disaster manager decides that people should be evacuated if they
+are in 80cm or more of water? In this case we will need to change the water threshold
+at which level people should be evacuated.
+
+8. Click :guilabel:`Show question form` found at the top of the |project_name| panel.
+
+.. image:: /static/training/socialisation/036_showquestion.*
    :align: center
-   :width: 200 pt
 
-- **Population needing evacuation:** |project_name| estimates the number of
-  affected and unaffected people from the total number of people in the analysis area.
-  It is assumed that all of these affected people will need to be evacuated.
+9. To change the impact function click the :guilabel:`Options...` button next 
+   to :guilabel:`Need evacuation`.
 
-- **Evacuated population minimum needs:** these are the calculated amounts of food, water and other
-  products that are needed by evacuated people. These needs should be provided
-  weekly.
-
-- **Action checklist:** designed to make disaster managers think about
-  what they need to do/discuss when planning for a similar event in the future.
-
-- **Notes and assumptions:** provides details about the input data and any limitations or
-  assumptions in the analysis or report summary. In this example, it
-  shows the total number of population in the analysis area and the source of
-  minimum needs.
-
-- **Detailed gender report (affected people):** provides a breakdown of the number
-  of affected people by age (youth, adults and elderly) and gender based
-  on the default world population demographics and calculates the minimum
-  needs for women’s hygiene and pregnant women.
-
-- **Detailed minimum needs report:** provides a breakdown of the
-  minimum needs for evacuated people based on **PERKA No 7/2008**.
-  These minimum needs consist of rice, drinking water, clean water, family
-  kits and toilets to be provided weekly.
-
-.. image:: /static/training/socialisation/run_basic_11.*
+.. image:: /static/training/socialisation/037_functionchange.*
    :align: center
-   :width: 300 pt
 
-c. Understand defaults minimum needs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+10. Type :kbd:`0.8` in the :guilabel:`Thresholds` field.
 
-The |project_name| impact summary for flood impact on people includes details
-for the amount of drinking water, rice, clean water, and family kits and
-for the number of toilets that should be provided for displaced persons each
-week. The minimum needs in the Jakarta flood impact assessment are based
-on the **Head of Indonesia National Disaster Management Authority, BNPB,
-regulation, PERKA No 7/2008 guideline procedure for fulfillment of basic
-needs in Disaster Response.** The default minimum needs formula is:
-
-- 400g rice per person per day (2.8kg per week)
-
-- 2.5l drinking water per person per day (17.5l per week)
-
-- 15l clean water per person per day (105l per week)
-
-- one family kit per family per week (assumes five people per family which is not specified in perka)
-
-- 20 people per toilet
-
-As described above, the impact summary and minimum needs calculation is
-based on the default world population demographics (which assumes a
-ratio of 26.3% youth, 65.9% adult and 7.9% elderly).
-
-You may like to refer to local population statics (for example -
-`Population of DKI Jakarta <http://sp2010.bps.go.id/index.php/site/tabel?tid=336&wid=3100000000>`__)
-to change these defaults for your analysis area,
-similarly if you have other regulation for minimum needs,
-you can change in the Impact Function Configuration in Minimum Needs Tab
-or if you want to create your own minimum needs,
-you can use minimum needs configuration (see more at `Minimum Needs Configuration manuals <http://docs.inasafe.org/en/user-docs/application-help/minimum_needs.html#minimum-needs>`__).
-
-.. image:: /static/training/socialisation/run_basic_14.*
+.. image:: /static/training/socialisation/038_configure.*
    :align: center
-   :width: 400 pt
 
-4. Print and Save your |project_name| Results
-.............................................
+11. Click :guilabel:`OK`.
 
-We can also print the analysis results; the impact map and the impact summary,
-as two separate pdf files. To print |project_name| result:
+12. Click :guilabel:`Run` to process the scenario with the new water threshold.
 
-1. Click :guilabel:`Print` at the bottom of the |project_name| panel.
-
-2. A window will pop up as shown below.
-
-.. image:: /static/training/socialisation/run_basic_12.*
+.. image:: /static/training/socialisation/031_run.*
    :align: center
-   :width: 300 pt
 
-- **Area to print**: leave this set to the default **analysis extent**.
+When the function completes, take a look at the new numbers
+in the |project_name| panel. How have they changed?
 
-- **Template to use**: leave this set to the **default portrait - a3**.
+.. todo:: How many people need to be evacuated?
+   **Answer:** ______________________
+   Is this the answer you were expecting?
+   **Answer:** _____________________
 
-For more information about printing, click :guilabel:`Help` in the print window.
+13. Click :guilabel:`Print...` at the bottom the |project_name| panel.
 
-3. Click :guilabel:`Open PDF`.
-
-4. Navigate to where you would like to save the PDF. By default,
-   the filename is related to the scenario
-   (in this case it will say Buildings_inundated)
-   but you can name the file name by yourself,
-   for example :file:`Jakartaflood_building_1m`.
-   In this case adding 1m to the file name reminds us that
-   in this flood impact scenario our threshold flood depth was 1 metre.
-   Click :guilabel:`Save`.
-
-Two PDFs will be generated, one shows a map with the impact layer and
-the other has tables from the impact summary. Take a look at the result.
-
-.. image:: /static/training/socialisation/run_basic_13.*
+.. image:: /static/training/socialisation/034_print.*
    :align: center
-   :width: 500 pt
 
-We are now already have the impact result in pdf files, but what if we
-want to keep the impact result in shapefile? Is the impact result
-shapefile automatically stored?
+14. A window will pop up as shown below. Ensure that :guilabel:`Analysis extent` is
+    selected under :guilabel:`Area to print` and :guilabel:`inasafe...` is chosen
+    under :guilabel:`Template to use`. Click :guilabel:`Open PDF`.
 
-The |project_name| impact result layer is saved in a temporary folder, this means
-that it will be automatically deleted if you restart your computer, unless
-you save your QGIS project. If you want to keep your |project_name| results (so
-you can refer to them again or share them with others), you need to
-manually save the |project_name| impact layer |project_name| as new layer in same
-directory as your project.
+.. image:: /static/training/socialisation/034a_impact_report.*
+   :align: center
 
-1. Right click on your |project_name| analysis result, for example **estimated buildings affected** or **population which need evacuation**
-   and click :guilabel:`Save As...`
+15. Navigate to where you would like to save the PDF and type 
+    :file:`Jakartaflood_evacuation_80cm`. Click :guilabel:`Save`.
 
-2. A new window will appear. Click :guilabel:`Browse…` and name your new layer
-   and click :guilabel:`Save` and then click :guilabel:`OK`.
+16. Next we will run the |project_name| analysis on buildings, but first let's turn 
+    some layers off. In the Layers panel there should now be five layers. Uncheck 
+    everything except:
 
-If you want to save your current project you can save it by clicking on
-:menuselection:`Project > Save As...` to save your current project. It’s better to
-not overwrite the training project so you can do the exercise again later.
+    * a flood similar to the 2007 Jakarta event
+    * buildings
 
-Summary
--------
+.. image:: /static/training/socialisation/039_buildingflood.*
+   :align: center
 
-In this exercise you have learned how to run a basic |project_name| analysis
-using an existing QGIS project file and what the minimums component that
-must be there to run |project_name| properly are. Those components are hazard and
-exposure data. In this exercise, you have run an |project_name| impact
-assessment for a flood scenario in Jakarta using two types of exposure
-data. The hazard data you used was a modelled flood raster and the
-exposure data were buildings and population. These analyses produced
-impact layers and impact summaries for affected buildings and impacted
-people.
+Buildings Affected
+------------------
 
-You have also learned how to modify the analysis options through the
-Impact Function configuration, how to print |project_name| results in PDF
-format, understand what minimum needs is and how to save both your
-impact layers and your QGIS project file.
+17. Confirm that the |project_name| panel is set to query how many buildings
+    might be flooded.
 
-In the next section you will learn more about how to run |project_name| in more
-detail. In that module you will learn how to use more |project_name| tools such
-as Agreggation options, OSM Downloader, Minimum Needs Configuration,
-etc.
+.. image:: /static/training/socialisation/040_inasafebuidlingflood.png
+   :align: center
+
+18. Notice that if you click on the drop-down list with :guilabel:`Buildings`,
+    the people option is not available. This is because :guilabel:`people` 
+    is not checked in the Layers panel.
+
+.. note:: If you want to be able to select layers within the
+   |project_name| panel that are not checked in the Layers panel you can
+   modify the |project_name| options.
+   For more information on |project_name| options, see the user documentation here: 
+   :doc:`../../user-docs/application-help/options`.
+   The options menu is also discussed later in this tutorial in :doc:`helpful_hints_and_tips`.
+
+19. Click :guilabel:`Run` to process the new scenario.
+
+.. image:: /static/training/socialisation/041_buildingfloodresults.png
+   :align: center
+
+In this scenario approximately 1,434 buildings could be affected out of 31,515
+buildings. Your results may very depending on updates that have been made to the
+exposure data.
+
+.. note:: Due to the provincial BPBD work in OpenStreetMap all important buildings 
+   in this area have been mapped (and then some!).
+
+   Important buildings are defined as:
+
+   * Clinic/doctors
+   * Fire stations
+   * Government buildings
+   * Hospitals
+   * Places of worship
+   * Police stations
+   * Residential buildings
+   * Schools
+   * Sports facilities
+   * Universities/colleges
+
+In the |project_name| panel we now see text and statistics. The
+details of this report are explained here:
+
+**Action Checklist:** A different set of actions have been identified to
+relate to structures.
+
+**Note:** Similar to the last |project_name| analysis, this analysis also
+assumes impact is in water above one metre.
+
+**Detailed building type report:** This is a breakdown of important
+infrastructure. When you choose to aggregate (we will do this later) this
+table will show the number of buildings by aggregation boundary.
+
+**Source** shows the source of the hazard and exposure datasets.
+
+
+20. Click :guilabel:`Print...` at the bottom the |project_name| panel.
+
+.. image:: /static/training/socialisation/034_print.png
+   :align: center
+
+21. A window will pop up as shown below. Ensure that :guilabel:`Analysis extent`
+    is selected under :guilabel:`Area to print` and :guilabel:`inasafe...` is chosen
+    under :guilabel:`Template to use`. Click :guilabel:`Open PDF`.
+
+.. image:: /static/training/socialisation/034a_impact_report.*
+   :align: center
+
+22. Navigate to where you would like to save the PDF
+    and type :file:`Jakartaflood_inundated_1m`. Click :guilabel:`Save`.
+
+
+(Optional) Change the threshold to 0.8
+......................................
+
+You may try running this scenario again with a water threshold of 0.8 metres.
+
+23. Check that |project_name| has the following in the drop-down boxes:
+
+* a flood similar to the 2007 Jakarta event
+* Buildings
+* Be flooded
+
+24. To change the impact function click the :guilabel:`Options...` button on 
+    the |project_name| panel.
+
+25. Type :kbd:`0.8` in the :guilabel:`Thresholds` field.
+
+26. Click :guilabel:`Run` to process the scenario with the new water threshold.
+
+27. Click :guilabel:`Print` and save PDFs the same way as before.
+
+
+:ref:`Go to next module --> <inasafe-in-more-detail>`

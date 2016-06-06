@@ -8,26 +8,24 @@ This section of the documentation contains step-by-step tutorials on using OpenS
 +-------------------------+-----------------------+
 | Training                | Intended Length       |
 +=========================+=======================+
-| Socialisation           | 1 Day                 |
+| Socialisation           | 1/2 Day               |
 +-------------------------+-----------------------+
-| OpenStreetMap           | 3 Days                |
+| Beginner                | 10 Days               |
 +-------------------------+-----------------------+
-| QGIS                    | 3 Days                |
+| Intermediate            | 6 Days                |
 +-------------------------+-----------------------+
 | Training of Trainer     | 1 Day                 |
 +-------------------------+-----------------------+
 
 |
 
-Testing if staging updates will show up automatically (TODO: richard remove this line)
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
 
    socialisation/index
    curriculum/index
-   osm/index
-   qgis/index
+   beginner/index
+   intermediate/index
    tot/index
-   old-training/index
    test_data
