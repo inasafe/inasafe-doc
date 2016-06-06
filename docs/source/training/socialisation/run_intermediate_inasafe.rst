@@ -326,7 +326,7 @@ since it depend on the analysis area selected and
 also the aggregation layer that you used for analysis.
 
 |project_name| did not separate the impact result into three categories as in
-the `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ because in the
+the :ref:`Run Basic InaSAFE <run_basic_inasafe>` because in the
 previous exercise we used raster data containing flood depth in each pixel
 yet in this exercise, the hazard data that we use only depicts affected
 areas. Therefore, |project_name| will calculate how many buildings are inside the affected
