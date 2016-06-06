@@ -5,11 +5,11 @@ if [ "$USER" == "jenkins" ]
 then
     # Next line is a trick to get absolute path from relative path
     # http://stackoverflow.com/questions/4045253/converting-relative-path-into-absolute-path
-    INASAFE_DEV_PATH=`cd "../../inasafe-release-qgis1/workspace"; pwd`
+    INASAFE_DEV_PATH=`cd "../../inasafe"; pwd`
 else
     INASAFE_DEV_PATH=`cd "../inasafe"; pwd`
 fi
-export QGIS_PREFIX_PATH=/usr/local/qgis-2.6
+export QGIS_PREFIX_PATH=/usr/local/qgis-2.8
 
 if [ -d $INASAFE_DEV_PATH ]
 then

@@ -1,0 +1,574 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-04 11:57+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 35c1a247f5de471496e50a6301d4b837
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:10
+msgid "Chapter 4: Map Projection Basics"
+msgstr ""
+
+# 61c7b59b294b403092c042322af652d5
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:12
+msgid "**Learning Objectives**"
+msgstr ""
+
+# 0a41acff43dd46b4adfb0ff859748b69
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:14
+msgid "Understand Coordinate Reference Systems (CRS)"
+msgstr ""
+
+# 21c010cf13654dd9a8b69fc8eb7ab5bf
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:16
+msgid "Identify the CRS of a vector dataset"
+msgstr ""
+
+# 01988b8b1abd4c0b98a138d7f236b079
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:18
+msgid "Doing “on the fly” reprojection"
+msgstr ""
+
+# 9f67af83b32f4a7ca410b5070a8b3dd4
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:20
+msgid "Save dataset with a different CRS"
+msgstr ""
+
+# 85db506ad28d490e849b603a37e00353
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:22
+msgid "Georeference Digital Image"
+msgstr ""
+
+# ceca321601ab409fbe9344a5fa096f4b
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:24
+msgid ""
+"We’ve talked a little bit about Coordinate Reference Systems (CRSs) "
+"previously, but haven’t covered it in depth. In this chapter, we’ll look "
+"more at what a CRS means practically, and how it affects our work in QGIS."
+msgstr ""
+
+# f460a307df5f400cba234ca59460cff0
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:29
+msgid "4.1 Coordinate Reference System (CRS)"
+msgstr ""
+
+# 6cee9b70bd5d460aa40a8931d864c721
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:31
+msgid ""
+"The CRS that all the data as well as the map itself are in right now is "
+"called WGS84. This is a very common Geographic Coordinate System (GCS) for "
+"representing data. But there’s a problem, as we will see."
+msgstr ""
+
+# 94c5e629c1ba46c9b980c758a400ecad
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:35
+msgid "Open the project :file:`world.qgs`, located in the :file:`qgis/` folder"
+msgstr ""
+
+# 934bd25bdbed43c3a46884a78d32050d
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:37
+msgid "Zoom in to Indonesia by using the :guilabel:`Zoom In tool`."
+msgstr ""
+
+# 7230c4fbb1744bfd8c06502a77bf8930
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:42
+msgid ""
+"Setting the scale in the Scale field, which is in the Status Bar along the "
+"bottom of the screen. While over Indonesia, set this value to 1:20000000 "
+"(one to twenty million)."
+msgstr ""
+
+# 2938ce8a0dd7410a83ac3c18d470c7ee
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:48
+msgid "Now pan around the map while keeping an eye on the Scale field."
+msgstr ""
+
+# aeaf2ad41ef34252a657d37fe787b0eb
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:50
+msgid ""
+"Notice the scale changing? That’s because you’re moving away from the one "
+"point that you zoomed into at 1:20000000, which was at the center of your "
+"screen. All around that point, the scale is different."
+msgstr ""
+
+# 1e59ba40b2c9407a94bbe4e767cd107f
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:53
+msgid ""
+"To understand why, think about a globe of the Earth. It has lines running "
+"along it from North to South. These longitude lines are far apart at the "
+"equator, but they meet at the poles. In a GCS, you’re working on this "
+"sphere, but your screen is flat. When you try to represent the sphere of the "
+"earth on a flat surface, it becomes distorted, as if you took an orange peel "
+"and tried to flatten it. What this means on a map is that the longitude "
+"lines stay equally far apart from each other, even at the poles (where they "
+"are supposed to meet). This means that, as you travel away from the equator "
+"on your map, the scale of the objects that you see gets larger and larger. "
+"What this means for us, practically, is that there is no constant scale on "
+"our map!"
+msgstr ""
+
+# c3ea6f3fe0fa46eb9bde3875f6c37cf5
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:64
+msgid ""
+"To solve this, we’ll use a Projected Coordinate System (PCS) instead. A PCS "
+"“projects” or converts the data in a way that makes allowance for the scale "
+"change and corrects it. Therefore, to keep the scale constant, we should "
+"reproject our data to use a PCS."
+msgstr ""
+
+# 65c2d12f9d784787861088d19fb133ab
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:68
+msgid ""
+"**Projection** is the act of taking coordinates on a sphere (like the "
+"earth), and manipulating them so that they can be displayed on a flat "
+"surface."
+msgstr ""
+
+# 7d84614837d640f3b3809502f8d5406d
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:72
+msgid "4.2 “On the Fly” Reprojection"
+msgstr ""
+
+# 009a061f2d3d43a181ea957d3309ee52
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:74
+msgid ""
+"Every QGIS project has a CRS, and each of the data layers have a CRS too. "
+"Often these are the same. Your project may be in WGS84, and the layers too. "
+"But sometimes you will add a layer that is not in the same CRS as the "
+"project, and you need QGIS to convert it so that it can be displayed along "
+"with the rest of the data. The term that we use for this is reprojecting *on "
+"the fly*."
+msgstr ""
+
+# 810138ef405046598d345ae5da21809e
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:80
+msgid ""
+"To enable “on the fly” projection, click on the :guilabel:`CRS` Status "
+"button in the Status Bar along the bottom of the QGIS window:"
+msgstr ""
+
+# e1540efc183d4c07bcf3099d16c56ac3
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:86
+msgid ""
+"In the dialog that appears, check the box next to :guilabel:`Enable ‘on the "
+"fly’` CRS transformation."
+msgstr ""
+
+# bf8116ca8f434abd8580cce0f735b7b3
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:91
+msgid ""
+"Type the :kbd:`NSIDC` into the Filter field. One CRS :guilabel:`NSIDC EASE-"
+"Grid Global` will appear in the list below."
+msgstr ""
+
+# cefaadec1dd24ed3be73c463d2953786
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:96
+msgid "Click on it to select it, then click :guilabel:`OK`."
+msgstr ""
+
+# 45c30b488fc9429cad2b69ac41b3a011
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:98
+msgid ""
+"Notice how the shape of Indonesia changes. All projections work by changing "
+"the apparent shapes of objects on Earth."
+msgstr ""
+
+# 6fee88ebd57a4c3b9bc704bd770430bd
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:100
+msgid ":guilabel:`Zoom in` to a scale of 1:20000000 again, as before."
+msgstr ""
+
+# 5c7c359525ee4a1797d1c5b0431b566a
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:102
+msgid ":guilabel:`Pan` around the map."
+msgstr ""
+
+# 242fdc738e504b73a607b9be3370c69d
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:104
+msgid "Notice how the scale stays the same!"
+msgstr ""
+
+# 7402ab0eb8124a5f8a999790322a21d1
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:106
+msgid ""
+"'On the fly' reprojection is useful for combining datasets that are in "
+"different CRSes."
+msgstr ""
+
+# e7d93a2d84a64dd6a3bf5a165cc14978
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:108
+msgid ""
+"Deactivate “on the fly” reprojection again, by unchecking the box next to :"
+"guilabel:`Enable ‘on the fly’` CRS transformation."
+msgstr ""
+
+# 41184c964a9a4260b336d41157583845
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:110
+msgid ""
+"Now let’s add another vector layer, located in :file:`qgis/peta\\_dunia/"
+"Indonesia.shp`. What do you notice? The layer isn’t visible! But that’s easy "
+"to fix,right?"
+msgstr ""
+
+# 341bdac9317e45b5b234bfe5045b432e
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:112
+msgid "Right-click on the layer in the Layers list."
+msgstr ""
+
+# 408d69ec7ad0472b80f36c928a616ba1
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:114
+msgid "Select :guilabel:`Zoom to Layer Extent`."
+msgstr ""
+
+# ed53097c31cd4e728dee88cfcb931d52
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:116
+msgid "OK, so now we see Indonesia... but where is the rest of the world?"
+msgstr ""
+
+# 0413b9c0fb0d4ec59f44129c6ec9c8a7
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:118
+msgid ""
+"It turns out that we can zoom between these two layers, but we can’t ever "
+"see them at the same time. That’s because their Coordinate Reference Systems "
+"are so different. The **continents** layer is in degrees, but the "
+"**Indonesia** layer is in meters. In other words, one feature in the "
+"continents layer might be 8.5 degrees away from the equator, but the same "
+"feature in the Indonesia layer might be 900000 meters away from the equator."
+msgstr ""
+
+# 6a0c43371c6244908b433c428554407c
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:124
+msgid ""
+"8.5 degrees and 900000 meters is about the same distance, but QGIS doesn’t "
+"know that! One of our layers must be reprojected to match the other layer."
+msgstr ""
+
+# 9b060666660a493f97bd9eb3400ded74
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:127
+msgid "To correct this:"
+msgstr ""
+
+# b299d653fad8463081dcefde59469efd
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:129
+msgid ""
+"Switch :guilabel:`Enable ‘on the fly’` CRS transformation on again as before."
+msgstr ""
+
+# 3b84b982e6174e768811fcd8853f10b3
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:131
+msgid "Zoom to the extents of the Indonesia dataset."
+msgstr ""
+
+# c254b63ff9e54fc2afc822ca0508251c
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:133
+msgid ""
+"Now, because they’re made to project in the same CRS, the two dataset fit "
+"perfectly:"
+msgstr ""
+
+# 9f860315e81d4264a513e70343a3ec38
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:138
+msgid ""
+"When combining data from different sources, it’s important to remember that "
+"they might not be in the same CRS. 'On the fly' reprojection helps you to "
+"display them together."
+msgstr ""
+
+# 4571bc63be2048c990515ce560548ccc
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:142
+msgid "4.3 Dataset with different CRS"
+msgstr ""
+
+# 82a186992e424357b92dfe7334047bd4
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:144
+msgid ""
+"It’s great that QGIS can reproject layers on the fly so that we can work "
+"with them in the same project. But this requires more time for our computer "
+"to reproject the layers, and can slow down our work. For this, or for other "
+"reasons, we might want to be able to reproject a dataset, and save it with "
+"the new projection."
+msgstr ""
+
+# b6811062ae9147b0b4889493068004a3
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:149
+msgid ""
+"Let’s reproject the :guilabel:`Indonesia` layer so that it is in the same "
+"CRS as the project. To do this, we will need to export the data to a new "
+"file using a new projection."
+msgstr ""
+
+# ac275a48bc9c44ee8bf7d3ec280c3041
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:152
+msgid "Right-click on the :guilabel:`Indonesia` layer in the Layers list."
+msgstr ""
+
+# 6545437e4d5044af95a3cafe11ecd1df
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:154
+msgid ""
+"Select :guilabel:`Save As...` in the menu that appears. You will be shown "
+"the :guilabel:`Save vector layer as...` dialog."
+msgstr ""
+
+# f97c67c289514a13a7b2b9c53c44ec59
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:156
+msgid "Click on the :guilabel:`Browse` button next to the Save as field."
+msgstr ""
+
+# b7f09380a59d42f2be4d07c86b085c25
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:158
+msgid ""
+"Navigate to :file:`qgis/peta_dunia/` and specify the name of the new layer "
+"as :kbd:`Indonesia_terproyeksi.shp`."
+msgstr ""
+
+# 21ef5f1daf1940b1aaa06b9bacce3848
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:160
+msgid "Leave the :guilabel:`Encoding` unchanged."
+msgstr ""
+
+# 06fe5f09c5184583b38663122d002231
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:162
+msgid ""
+"Change the value of the Layer CRS dropdown by click on :guilabel:`Select "
+"CRS` icon in the right panel."
+msgstr ""
+
+# aab76aeda6b24b0faf0785191ac22e15
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:168
+msgid ""
+"A :guilabel:`Coordinate Reference System Selector` window will appear. Type :"
+"kbd:`4326` in :guilabel:`Filter Box`"
+msgstr ""
+
+# 532b060250b04d7bb6f8848cd9c023ed
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:168
+msgid "and select :guilabel:`WGS 84` in the bottom side of the window."
+msgstr ""
+
+# e48c27d9e9ef4f919daab581613e9798
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:173
+msgid "Click :guilabel:`OK`. You will back to :guilabel:`Save As…` window."
+msgstr ""
+
+# a0bc15150c744217abbe1f5045370503
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:175
+msgid "Check the box next to :guilabel:`Add saved file to map`."
+msgstr ""
+
+# 9655f36392e7471397aea76f1604adef
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:177
+msgid "The :guilabel:`Save vector layer as...` window now looks like this:"
+msgstr ""
+
+# 3559702238c943ddb6809088fa5c9632
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:182
+msgid ""
+"Click :guilabel:`OK` and after a minute, you should be presented with a "
+"notification above map canvas telling that the process is finished."
+msgstr ""
+
+# e6ee47bdd5104439864488497feeabee
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:184
+msgid ""
+"Now your new layer, :guilabel:`Indonesia\\_terproyeksi`, will be shown in "
+"the layers panel. If you turn off :guilabel:`on the fly` reprojection, this "
+"layer will still be shown correctly, because it has been reprojected into "
+"the same CRS as the project (and the :guilabel:`continents` layer)."
+msgstr ""
+
+# 90e45df4078c437e85045e9abe679b01
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:189
+msgid "4.4 Georeferencing Scanned Image"
+msgstr ""
+
+# 4f39d4d09700428d889ab9f0cb0941d6
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:191
+msgid ""
+"Georeference is the process of associating a physical map or raster image of "
+"a map with spatial locations and may be applied to any kind of object or "
+"structure that can be related to a geographic location, such as point of "
+"interest, roads, places, bridges, or buildings. Georeferencing is crucial to "
+"making aerial or satellite imagery and also raster images to be able to "
+"overlay with other spatial data, like vector data and raster data."
+msgstr ""
+
+# 8529518ca70847d88b22b817c7e950aa
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:197
+msgid ""
+"To georeference an image, we need to establish point with geographic "
+"coordinates in these point, known as control points. This control point "
+"refer to actual position of objects in earth. These coordinates are obtained "
+"by doing field survey. For example, we need to georeference an aerial image "
+"and we know location an object in aerial image with exact location in earth. "
+"To georeference this, simply input the control points with coordinates that "
+"we know from field survey. We need 4 control points or more to georeference "
+"the image."
+msgstr ""
+
+# 56dfce7877124393b1ed9a26313b568b
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:204
+msgid ""
+"Let’s start to georeference an image that we got from `Geospasial BNPB "
+"<http://geospasial.bnpb.go.id>`_."
+msgstr ""
+
+# bb01ebc0dc354113b07fb7d94e462c4d
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:206
+msgid "Go to :menuselection:`Raster --> Georeferencer --> Georeferencer…`."
+msgstr ""
+
+# bdb56242a47d432eb5d5e3278a7855bf
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:208
+msgid ""
+"A new window will appear. Click :guilabel:`Open Raster` icon in upper left "
+"side of the window."
+msgstr ""
+
+# 506721e47d994d2581434d33e0402b9a
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:213
+msgid ""
+"Select :file:`peta\\_krb\\_merapi\\_2002.jpg` and click :guilabel:`Open`."
+msgstr ""
+
+# c61da66801a140be9591e541068551e1
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:215
+msgid ""
+"In Coordinate Reference System Selector type :kbd:`4326` in filter box and "
+"select :guilabel:`WGS 84` as CRS."
+msgstr ""
+
+# 09d5589580c7458eb338423414e7b948
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:217
+msgid "An image will be appear in Georeferencer Window."
+msgstr ""
+
+# db44ac70b34c40c7ad6838583e86e43d
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:219
+msgid ""
+"You can use the :guilabel:`zoom/pan` controls in the toolbar to learn more "
+"about the map."
+msgstr ""
+
+# f44562c3bdce48ed80b871b26a4d1fb9
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:224
+msgid ""
+"If you look closely, you will see coordinate grid with markings. Using this "
+"grid, you can determine the X and Y coordinates of the points where the grid "
+"intersect. Click on :guilabel:`Add Point` in the toolbar."
+msgstr ""
+
+# f92eb1b764da41419cd1febf1b859f35
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:234
+msgid "A new pop-up window will appear, enter the coordinates."
+msgstr ""
+
+# bd9e26626e014d8e954aeefdcf27c0f0
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:232
+msgid ""
+"For Indonesia enter X for Bujur (BT) and Y for Lintang (LS). Click :guilabel:"
+"`OK`. It can use decimal degree (dd,dd), projected coordinates/UTM (mmmm,"
+"mmm) and degree minutes seconds (dd mm ss,ss) format. **Don’t forget to put "
+"Negative ( - ) in Y/North value for area in South part of equator**."
+msgstr ""
+
+# e4306bdac67b47b4968c65018ecbf552
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:239
+msgid ""
+"Notice that GCP table in bottom window has a row with detail of your first "
+"GCP."
+msgstr ""
+
+# 64af877bd43242a8b95a1c5712c18f0f
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:241
+msgid ""
+"Now, let’s add at least 4 GCPs that cover entire image. More GCP’s points "
+"will result more accurate image."
+msgstr ""
+
+# 4594364be1a542b2a8a5c75eb340d0a3
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:246
+msgid ""
+"After input 4 or more points, click :guilabel:`Transformation Setting` in "
+"toolbar."
+msgstr ""
+
+# 88b70b3accba494a961dc469dccd1239
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:248
+msgid ""
+"Right click the entry in :guilabel:`GCP Table` to delete the GCP Point or "
+"select :guilabel:`Delete Control Point` tool in toolbar above the image, "
+"then use it to click on the Control Point in either the GCP table or "
+"Workspace Window"
+msgstr ""
+
+# bb6077d26c9c4333b9049b17ab522b00
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:255
+msgid ""
+"The Transformation Setting Window is displayed. Follow all setting like this:"
+msgstr ""
+
+# e7ff4d0e6d464e0c9d15c3fadfe888da
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:260
+msgid ""
+"In QGIS there are several method s for transforming the image, these are "
+"linear, Helmert, the 1\\ :sup:`st`, 2\\ :sup:`nd` and 3\\ :sup:`rd` order "
+"polynomials, and the thin plate spline. These different Transformation "
+"Methods interpret your Control Point in different ways, and control how the "
+"map is fitted and warped to your georeferenced base map."
+msgstr ""
+
+# f5426455ba634c6b9961756ea641a5e4
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:265
+msgid ""
+"For best fit, the thin-plate spline or higher-number polynomial "
+"transformations are often best. Its look like a true rubber sheeting method, "
+"transforms the source Control Point exactly to the target Control Points, "
+"and optimize for local accuracy opposed to global accuracy."
+msgstr ""
+
+# 3d2bb5cfc2e04df1af4d3092e03e1aed
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:270
+msgid ""
+"To finish and export your georeferenced map, click the :guilabel:`Start "
+"Georeferencing` button"
+msgstr ""
+
+# d799576a6fe949ed9bae334bba54e4d2
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:270
+msgid "in the :guilabel:`Main Toolbar` at the top of the QGIS Workspace."
+msgstr ""
+
+# c09f68236f4d4938bd9dadcf8a0c4041
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:275
+msgid ""
+"The Georeferencing is now complete. The georeferenced layer will loaded in "
+"QGIS Map Canvas."
+msgstr ""
+
+# 12d98fb65200452fa98b112148be3f03
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:280
+msgid ""
+"Knowing how to georeference is important when we want to digitize from a "
+"paper map or an image that is not already georeferenced. Once the image "
+"already georeferenced like this, it can apply the same digitization "
+"techniques that we will learn in the next chapter to create vector "
+"shapefiles that can be used in QGIS and InaSAFE."
+msgstr ""
+
+# 82ed01272ccb42a4a47a050e2fff11ae
+#: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:284
+msgid ":ref:`Go to next chapter --> <ch5-working-with-vector-data>`"
+msgstr ""

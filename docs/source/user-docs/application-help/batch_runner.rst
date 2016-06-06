@@ -20,28 +20,39 @@ batch of scenarios, PDF reports are generated automatically and all placed in
 a single common directory making it easy for you to browse and disseminate the 
 reports produced.
 
-When the batch process completes, it will produce a summary report like
-this::
 
-    InaSAFE Batch Report File
-    -----------------------------
-    P: gempa bumi Sumatran fault (Mw7.8)
-    P: gempa di Yogya tahun 2006
-    P: banjir jakarta 2007
-    P: Tsunami di Maumere (Mw 8.1)
-    P: gempa Mw6.5 Palu-Koro Fault
-    P: gunung merapi meletus
-    -----------------------------
-    Total passed: 6
-    Total failed: 0
-    Total tasks: 6
-    -----------------------------
+Steps for using the Batch Runner
+================================
+
+1. Create a normal scenario.  Run the scenario to make sure it is valid.
+2. Save the scenario :ref:`tb_save_scenario` use an easily accessible folder.
+3. Repeat the previous step until a few scenarios have been saved.
+4. Go to the Window menu --> Plugins --> InaSAFE --> Batch Runner you should see a dialog box like below
+
+.. figure:: /static/user-docs/batch_runner_dir.*
+   :scale: 75 %
+   :alt: Batch Runner Dir
+   :align: center
+
+   *Batch Runner Directory*
+
+5. Set the scenario directory to the one used in step 2.  If this is done correctly the results table will list your saved scenarios.
+6. Set output destination to an easily accessible directory, this is where all your reports will go.
+7. Run all your scenarios it should look like below
+
+ .. figure:: /static/user-docs/batch_runner_running.*
+   :scale: 75 %
+   :alt: Batch Runner Busy
+   :align: center
+
+   *Batch Runner Busy*
+
+ look in the output destination.  You should see all the reports and a batch report confirmation.
 
 
-For advanced users there is also the ability to batch run python scripts using
-this tool, but this should be considered an **experimental** feature currently.
+.. figure:: /static/user-docs/batch_runner_results.*
+   :scale: 75 %
+   :alt: Batch Runner Results
+   :align: center
 
-Before running the Batch Runner you might want to use the
-:ref:`tb_save_scenario` tool to first save some scenarios on which you
-can let the batch runner do its work. This tool lets you run saved scenarios
-in one go. It lets you select scenarios or run all scenarios in one go.
+   *Batch Runner Results*

@@ -1,0 +1,820 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+#
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: inasafe-develop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-12-22 12:27\n"
+"PO-Revision-Date: 2014-03-04 10:10+0000\n"
+"Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/"
+"language/fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# bb363db3dd6c44ca95f5cba4f652693f
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:10
+msgid "Module 4: Creating JOSM File Presets"
+msgstr ""
+
+# 7ead86fca0224e56b30e5a405631c06a
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:12
+msgid "**Learning Objectives**"
+msgstr "**Objectifs d'apprentissage**"
+
+# ce3ec388b96947e39b99ff4b696ba55a
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:14
+msgid "Understand tags"
+msgstr ""
+
+# 66944cf278c54154b882d36693fdd9ff
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:15
+msgid "Understand XML"
+msgstr ""
+
+# 81bdb0a81acd43fcbbc123c81979ac36
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:16
+msgid "Understand keys and values"
+msgstr ""
+
+# d57f7f5c5d744f04a3a0e4f622d6ac6d
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:17
+msgid "Make presets"
+msgstr ""
+
+# 46fee0f88f8d4cf19aa294195bc4c9e3
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:18
+msgid "Put preset files into JOSM"
+msgstr ""
+
+# b838602ab83042c1a05be60492ccc1b3
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:19
+msgid "Apply new presets to an object"
+msgstr ""
+
+# 0f48ffcbc52041fdba214548909e41d0
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:21
+msgid ""
+"By now you probably have a good understanding of how objects are drawn in "
+"JOSM, and how to add information to these objects to describe what they are. "
+"You add attributes to a point, line or shape by attaching tags to it. By "
+"using the JOSM presets menu, you can easily attach the correct tags to an "
+"object by finding the type of object you want to create through a menu, and "
+"then filling in information in a form. In this module we will review tags "
+"and presets once more, and then learn how we can create our own presets "
+"menus to use in JOSM."
+msgstr ""
+
+# c1a86827ed964e5facb5e4f54b47244b
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:31
+msgid "1. Tags and presets"
+msgstr ""
+
+# d0ec318796604f7190a5665441a7663b
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:33
+msgid ""
+"Remember that after you draw an object on the map in JOSM, you need to "
+"attach tags in order to describe what it is, its name and any other "
+"attributes. For example when you want to create a clothing shop with the "
+"name “Some Clothing Shop”, you need two tags - one to describe the point as "
+"a clothing shop, and one to hold the name. In JOSM, the tags are shown in "
+"the Properties panel when an object is selected."
+msgstr ""
+
+# 23afc99df7404d738c8c58c956c2c651
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:44
+msgid ""
+"Tags consist of two parts, the **key** and the **value**. The key typically "
+"defines the type of information you are attaching, and the value defines the "
+"specific object. Here we have two tags, and hence two pairs of keys and "
+"values."
+msgstr ""
+
+# 7670a3b313d8475b9ff2d8b57b880c1a
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:49
+msgid "**KEY = VALUE**"
+msgstr ""
+
+# dcb90769e4474298a0c4735d70720592
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:51
+msgid "**name = Some Clothing Shop**"
+msgstr ""
+
+# 79378b66abb54b62ac759b0e95bb9f32
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:53
+msgid "**shop = clothes**"
+msgstr ""
+
+# ada7f8f7003b416fa92a2fea7fcc1064
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:55
+msgid ""
+"When we create a point with these tags, JOSM knows to display the icon like "
+"this:"
+msgstr ""
+
+# ce61ad5423954e7996fe5973f76c9e3e
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:61
+msgid ""
+"And when we look at this on the `OpenStreetMap <http://openstreetmap.org>`_ "
+"website, the object looks like this:"
+msgstr ""
+
+# 03405f47d3a64fbab94eccaaacd74686
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:67
+msgid ""
+"The reason this works is because we’ve applied the appropriate **tags**."
+msgstr ""
+
+# de32331efd03480496fb0b00f6a03c42
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:69
+msgid ""
+"Because OSM is so open, anybody can add any tags they want to anything. But "
+"what happens when mappers in England disagree with mappers in Japan about "
+"the best way to tag something? For example, it is important that all schools "
+"have the same tag describing it as a school. If some people tag schools as "
+"**amenity=school** but others tag them as **education=school**, it is a "
+"problem. Hence, people must agree on how to tag places."
+msgstr ""
+
+# 55fbc5756a4043af92f7f3e7459faa6e
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:79
+msgid ""
+"OSM has been around for many years now, so there is an accepted standard for "
+"how to identify most types of locations, and those are listed on the Map "
+"Features page on the OSM Wiki."
+msgstr ""
+
+# 81a901a68d584335a6f149ccc7adf3d9
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:83
+msgid "http://wiki.openstreetmap.org/wiki/Map_Features"
+msgstr ""
+
+# 14656256dc6b456d9d50347ea1282dea
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:85
+msgid ""
+"This web page has grown longer and longer over the years as people have "
+"sought to map more and more things and have needed more tags to do so. It is "
+"impossible to remember all of these tags, and quite a hassle to look them up "
+"every time you need them. Hence, JOSM has a Presets menu which makes it much "
+"easier to apply the correct tags to an object. With the Presets menu, we can "
+"easily find the entry for school, enter information into a form and not have "
+"to worry about whether the correct tag is **amenity=school** or "
+"**education=school** or something else entirely."
+msgstr ""
+
+# 5cda48dee73d403c8b24a916e43543c2
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:99
+msgid ""
+"Notice that when you add attributes using the presets menu, the correct tags "
+"are automatically added in the Properties menu on the right."
+msgstr ""
+
+# cbcf140cc6eb4904811719e7ad66ccac
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:102
+msgid ""
+"JOSM comes with most of the presets that you will need already loaded, but "
+"sometimes you may want to add your own presets to create tags for the "
+"specific type of data you are collecting. The remainder of this module will "
+"explain how to create a custom Presets menu."
+msgstr ""
+
+# 7a5c9dd82a3c446cad71fee6bdc7b013
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:108
+msgid "2. Introduction to XML"
+msgstr ""
+
+# 617db18d518d419b964600be174d44aa
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:110
+msgid ""
+"In order to create our own Presets menu, we first need to understand a "
+"language called XML. XML, which stands for *Extensible Mark-up Language*, is "
+"a language similar to HTML. The key difference is that XML is designed to "
+"carry data, not display it. Many applications on the internet use XML to "
+"transmit data, including OSM. XML uses **elements**, and each element can "
+"contain child elements inside it. For example, let’s imagine that we want to "
+"create an XML file that contains data about a restaurant menu. We must "
+"create a **root element** to contain all the data about our menu. Our root "
+"element will have an opening and a closing tag, like this: ::"
+msgstr ""
+
+# 8da91dfd8c3640d39c0b5fe56c00c50f
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:129
+msgid ""
+"Information is contained inside an element, and within each element there "
+"can be more elements. ::"
+msgstr ""
+
+# a214314c8676472e9545e87015742edd
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:144
+msgid ""
+"In this example we have placed two **<item>** elements within our **<menu>** "
+"element to describe two different items that are contained in the menu. Each "
+"item contains two more elements in them, **<cost>** and **<description>**. "
+"Notice also how we have written name=”Hamburger” inside the opening "
+"**<item>** tag. This is called an attribute, and adds information about the "
+"element."
+msgstr ""
+
+# 8b5a2272fc2a423eab2b85aaae134364
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:152
+msgid "XML Terminology"
+msgstr ""
+
+# baea0ec9da974d4ea87f4d5707a21378
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:154
+msgid ""
+"**root element:**  the outermost element of an XML document, which describes "
+"what is contained"
+msgstr ""
+
+# 7a81ce48eba04ca2bb0821d8b54a4884
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:156
+msgid ""
+"**element:**  any XML object, contained by opening and closing tags, such as "
+"**<item>...data...</item>**"
+msgstr ""
+
+# 96be426fe5494bcc935e9fe116fd5471
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:158
+msgid ""
+"**tag:**  something contained in brackets, such as **<item>**. **<item>** is "
+"the opening tag of an element, and **</item>** is the closing tag."
+msgstr ""
+
+# 67a6ef2a07b34defb7a60f3710a40f51
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:160
+msgid ""
+"**attribute:**  a piece of information contained inside a tag, such as "
+"**name=“Hamburger”**"
+msgstr ""
+
+# 3a88f6ea49514468900dbc8b33fac9a1
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:163
+msgid ""
+"Using XML to hold and transmit data is great because it is easy to "
+"understand for computers. To provide one more example, this is what the XML "
+"might look like for the point we created in JOSM previously. ::"
+msgstr ""
+
+# 9d83d4fe2de1460e81e49e935b229ad0
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:176
+msgid ""
+"This XML has a root element **<osm>** which indicates that OSM data is "
+"contained inside. Then it has one **<node>** element which is the OSM way of "
+"describing a **point**. The node has numerous attributes, including a unique "
+"id number, the coordinates of the point, the user who created the point, and "
+"some additional information which we will not discuss right now. Between the "
+"opening **<node>** tag and the closing **</node>** tag there are two more "
+"elements of type **<tag>**. Each **<tag>** has an attribute k and an "
+"attribute v. These are the keys and values that we added in JOSM. Notice "
+"that the **<tag>** elements don’t have a closing **</tag>**. This is because "
+"they don’t have any other elements contained within them, but instead have a "
+"forward slash indicating that it does not require a closing tag. **<tag ..."
+"attributes />**"
+msgstr ""
+
+# 323d7a534bf14c12a18891c9c1c0d920
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:193
+msgid "3. JOSM presets files"
+msgstr ""
+
+# e0de08183db34a30aa90e0bda1ad8b6c
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:195
+msgid ""
+"As you’ve already discovered, JOSM comes pre-loaded with a presets menu that "
+"includes most common types of geographic options. But sometimes you want to "
+"add additional presets for specific information that you want to collect. "
+"You can create your own presets menu by writing it in XML, and then loading "
+"it in JOSM. First, let’s look at how we can load additional presets menus "
+"into JOSM."
+msgstr ""
+
+# 843ab36c473b452f9d330cc0c4e60bad
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:203
+msgid ""
+"Open JOSM and open the Preferences menu by going to :menuselection:`Edit ‣ "
+"Preferences`."
+msgstr ""
+
+# 7e99511be000484b9b69e72366b2d790
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:206
+msgid "Click on the third icon from the top which looks like this:"
+msgstr ""
+
+# d65985797462424babd6c1196b31d1da
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:211
+msgid "Click on the third tab labelled :guilabel:`Tagging Presets`."
+msgstr ""
+
+# 9a2c6c2816a042399a4913c28c1b84db
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:213
+msgid ""
+"Select :guilabel:`Buildings by Kate Chapman` and click on the right arrow "
+"button to add it to Active presets."
+msgstr ""
+
+# b41b66d7762b4c46a945bd27b45cb8c5
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:219
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+# ca8a39fa6a564707836d58a0b8d8e003
+# 8884186ed8994695b2a5c80ba3e60a81
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:221
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:498
+msgid "Restart JOSM."
+msgstr ""
+
+# 4335e1509d3b4409a1cdebae7ebc2275
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:223
+msgid "Create a new layer by going to :menuselection:`File ‣ New Layer`."
+msgstr ""
+
+# e0beae7651414c2ba61bc216faf34b5b
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:225
+msgid "Create a point and make sure it is selected."
+msgstr ""
+
+# d36e9e1300df4e069231bdd4b93a74c4
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:227
+msgid ""
+"Go to the Presets menu. You should now see the presets that you added at the "
+"bottom."
+msgstr ""
+
+# df731dff5c2e4f1c9fe4e4829524cb14
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:233
+msgid ""
+"Click on :menuselection:`Building` to see the the building presets form."
+msgstr ""
+
+# 307cec4774f844f2ad8b0e79822585ef
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:238
+msgid ""
+"When we added these new presets through the preferences menu, what we were "
+"doing is adding an XML file that describes how the new menu should behave. "
+"In the next sections, we will learn how to create our own XML presets file "
+"that we can load into JOSM."
+msgstr ""
+
+# 097933a9b0814d1b89cb6fd82e82e1ca
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:244
+msgid "4. A sample presets file"
+msgstr ""
+
+# 4a4a6b4bd2a943b2bc3e302eac79873f
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:246
+msgid ""
+"To understand how a presets file is written, let’s first look at the XML for "
+"one of the pre-loaded presets in JOSM. When you go to the presets menu and "
+"select :menuselection:`Facilities ‣ Culture ‣ Place of Worship` you will see "
+"a form like this:"
+msgstr ""
+
+# 60ae0771a11145d486f62a3cf7ede6ba
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:255
+msgid "The XML for this form looks like this: ::"
+msgstr ""
+
+# 5dfd0f8448aa47be8a30c0dc66830538
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:269
+msgid ""
+"This may look complex, but it is not as difficult as it may seem. Let’s walk "
+"through it line by line."
+msgstr ""
+
+# badb881f340347539aa82de1ccbea163
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:272
+msgid ""
+"The first line is the opening tag of our root element **<item>**. There are "
+"several attributes describing the element."
+msgstr ""
+
+# 34bac341d723422d82eb992ae2ed62d1
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:276
+msgid "name=\"Place of Worship\""
+msgstr ""
+
+# 2dd7283d4f81482084b9ea9247abd6d2
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:276
+msgid "The name of what you are creating."
+msgstr ""
+
+# 5eebfda720fe4e7e88511ee7eaea1ea6
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:278
+msgid "icon=\"presets/church.*\""
+msgstr ""
+
+# 58baa03020fb45e69b54cfb06570bead
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:278
+msgid ""
+"The icon of the object. PNGs are the most effective in OSM since they are "
+"compressed low-colour graphics with transparent backgrounds."
+msgstr ""
+
+# 599d665b9237421cbc7b3cdb54af7461
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:281
+msgid "type=\"node,closedway,relation\""
+msgstr ""
+
+# ad2b24ae4b394e109378cfea66b4956f
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:281
+msgid ""
+"The types of object that this preset can be applied to. Node means it can be "
+"applied on a point, way means it can be applied to a line, closedway means "
+"it can be applied to a shape, and relation means it can be applied to a "
+"relation, which is a type of OSM object we have not discussed. Notice that "
+"way is not an option here, because a place of worship cannot be a line - it "
+"must be a point or a shape."
+msgstr ""
+
+# de8e52727aaa402582f9da2cdf30d93b
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:289
+msgid ""
+"The second line provides a link to the OSM wiki page for this type of "
+"location."
+msgstr ""
+
+# f822124b4a5f47dea0db5e92d46f3b74
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:292
+msgid ""
+"**<link href=\"http://wiki.openstreetmap.org/wiki/Tag:"
+"amenity=place_of_worship\" />**"
+msgstr ""
+
+# 3c874a923c0d4fa19494e826f3fca84f
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:294
+msgid ""
+"The third line has the tag <label> and describes what text should be shown "
+"at the top of the form."
+msgstr ""
+
+# 95c760c583df4c02b99848399e834269
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:297
+msgid "**<label text=\"Edit Place of Worship\" />**"
+msgstr ""
+
+# 67add33a77bf4b4f9f576fdded2f9bad
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:299
+msgid ""
+"The fourth line describes a tag that will automatically be applied to the "
+"object when the preset is selected. In this case, we want the object to have "
+"the tag **amenity=place_of_worship**."
+msgstr ""
+
+# f9d21c5e2c684a62985abf74a443cec5
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:304
+msgid "**<key key=\"amenity\" value=\"place_of_worship\" />**"
+msgstr ""
+
+# de30bf1fae5f4cc8a7d52fc198aa4b89
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:306
+msgid ""
+"The fifth line describes the first thing that will be shown on our form, and "
+"how to create a tag when it is filled in. The tag is **<text>** which "
+"indicates that the form should have a text box for the user to fill in. The "
+"attribute key=“name” describes what key should be used when the tag is "
+"created. The value will be whatever the user enters in the text box. The "
+"attribute **text=“Name”** describes what should be written on the form next "
+"to the text box. The final attribute indicates that no tag should be created "
+"if the text box is left empty."
+msgstr ""
+
+# 519481f181ec459c966e01a42d92378a
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:318
+msgid ""
+"**<text key=\"name\" text=\"Name\" default=\"\" delete_if_empty=\"true\" />**"
+msgstr ""
+
+# 0ef01e988b8a4ddd8d1d507127833e9c
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:320
+msgid ""
+"The lines after this are similar, but instead of text boxes, drop-down boxes "
+"are created where the user can select from different options. The tag used "
+"for this is **<combo>**"
+msgstr ""
+
+# 8dbfa6cd5094472fb00b50a24402966e
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:324
+msgid "The final line of the XML is the closing tag **</item>**"
+msgstr ""
+
+# c1064c1a051a46dc956d873dcb499edb
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:327
+msgid "5. Creating your own presets file"
+msgstr ""
+
+# f77ec3d8565e411281208a3424bb230f
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:329
+msgid ""
+"Now follow along as we create our own presets file. We will create an "
+"example presets menu which will allow us to tag buildings or points "
+"according to the type of utilities access that they have available. For "
+"this, let’s invent some new tags:"
+msgstr ""
+
+# ff246a8545ee45a095b8a86cc844caff
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:335
+msgid "Key"
+msgstr ""
+
+# 696c89f42c394c9e90897d9fc0db4ffb
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:335
+msgid "Possible Value"
+msgstr ""
+
+# 336d011eec474188ab2e4c67dba48c80
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:337
+msgid "utility:water"
+msgstr ""
+
+# b9574ef4cea04a108f1d56b4b940ad59
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:337
+msgid "well, municipal, yes, no"
+msgstr ""
+
+# d577cbb38eae4e19a1df1498c792c6d9
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:337
+msgid ""
+"Does the household have access to water? well indicates it has access to "
+"well water. municipal indicates it has pipes running to it. If we want to be "
+"less descriptive, we can select yes or no to indicate if the building has "
+"water access"
+msgstr ""
+
+# 0a10e58a0c8a4d6589aa38b784f3ac50
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:344
+msgid "utility:electricity"
+msgstr ""
+
+# eef226f489094c0b89100b5b4c336f4e
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:344
+msgid "yes, no"
+msgstr ""
+
+# dc1d5dbcc472432dbbc06a7f0a7e19dc
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:344
+msgid "Does the household have electrical access?"
+msgstr ""
+
+# 2350d1ec496540f08f027496aedf2b33
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:346
+msgid "utility:phone"
+msgstr ""
+
+# 8cac5e9cd8494f7f8453531604a2692b
+# 964d4f24327c46ffbe4624e0220ce432
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:346
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:352
+msgid "landline, mobile, yes, no"
+msgstr ""
+
+# 0d5fd7f888b346efa9fea4624aa53fab
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:346
+msgid ""
+"Does the household have phone access? landline indicates that there is a "
+"hard phone line in the house. mobile indicates that the household has a "
+"mobile phone. If we want to be less descriptive, we can use yes or no"
+msgstr ""
+
+# 1b1b5e56f55942aa99449dd44cbc7236
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:352
+msgid "utility:internet"
+msgstr ""
+
+# eeb90a1b2f8847369a3f717c1eea7572
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:352
+msgid ""
+"Same values as for phone, this will indicate if the household has internet "
+"access"
+msgstr ""
+
+# cc997dcd2d6745b4a75cd5a145189df6
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:356
+msgid ""
+"When the preset we create is selected, we will also automatically add the "
+"tag **building=yes**, and we will create a tag with the key name that the "
+"user can fill in with using a text box."
+msgstr ""
+
+# 6c29c9f5bd27414aa4b286395314debf
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:360
+msgid ""
+"Now look at the possible tags we have described in the table above. What is "
+"the best way to represent each of these on the form? For name, we want to "
+"create a text box, because the user can fill in any name that they want for "
+"this tag."
+msgstr ""
+
+# 9f066fbd6932427e9ff9b2cd54de9fe5
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:365
+msgid ""
+"For **utility:water**, **utility:phone**, and **utility:internet**, there "
+"are four possible values that the user can select from on our form, so the "
+"best way to add this is with a combo box - that is, a drop-down menu where "
+"the user can select one of the options. The tag **utility:electrical** only "
+"has two possible values, yes or no, so the best way to show this on our form "
+"is with a checkbox, although we could use a drop-down box if we wanted as "
+"well. When we are finished our form should look like this:"
+msgstr ""
+
+# 37674e9600d8494db8d9c667c0ca35d2
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:377
+msgid ""
+"Open a text editor and follow along as we create the XML for this preset. A "
+"simple and common editor to use on Windows is called Notepad. DO NOT use a "
+"word processing program like Microsoft Word."
+msgstr ""
+
+# d0450f5795654bb9825a8b5af33e84ac
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:384
+msgid ""
+"First, we need to create a root element in our XML so that JOSM knows it is "
+"a presets file."
+msgstr ""
+
+# 9cbf89b8a0ee4ac49c515787f74fe522
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:390
+msgid ""
+"Next let’s create an element called <group>. This is not actually necessary "
+"because we are only creating one preset, but it will demonstrate how we can "
+"create submenus with many different options on our presets menu. Don’t "
+"forget to add the closing tags **</group>** and **</presets>** to your "
+"elements."
+msgstr ""
+
+# be5072b5b2b844068d54dc9276090e3d
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:400
+msgid ""
+"Now we can create an item on our menu. We want to create an <item> element "
+"inside of the group element. Add the following text:"
+msgstr ""
+
+# ddd815e6cf684c4aa96f3e30f4311cd3
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:410
+msgid ""
+"Inside the **<item>** element we will add the text box, combo boxes and "
+"check box that we want on our form. Add the following inside your **<item>** "
+"element:"
+msgstr ""
+
+# f11c6ca513c645d68a8965aa599534c3
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:425
+msgid "When you are finished your file will look like this:"
+msgstr ""
+
+# 14a0e4527f6142858514f774200d3f47
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:429
+msgid ""
+"Much of this is similar to what you saw previously. Let’s analyse it. Inside "
+"the **<item>** element we have created six more elements:"
+msgstr ""
+
+# 57ef95d0ffd54d6991f4f3ca40fe1070
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:433
+msgid "<key>"
+msgstr ""
+
+# c2c5e6c331a64e96934e9631f1bd0981
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:434
+msgid "<text>"
+msgstr ""
+
+# 01c05e64c5ac4a5c9d19f373330a450e
+# 1b0555e4437941f483825479a0fa6096
+# 0774842a2ca84a569bf2c3143e0bcbfd
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:435
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:437
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:438
+msgid "<combo>"
+msgstr ""
+
+# e7bd70cc83c1490ca52dbc7a210997b7
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:436
+msgid "<check>"
+msgstr ""
+
+# f4944c7bde3348c192c3c783fd73ec5d
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:440
+msgid ""
+"Can you guess what each of these elements do? They create different items on "
+"our presets form in JOSM. The first line, **<key key=\"building\" value=\"yes"
+"\"/>**, does not display anything on our form, but tells JOSM to "
+"automatically apply the tag **building=yes** to an object when this preset "
+"is selected."
+msgstr ""
+
+# 0d3d65aa0407449cb3f36d1ce5c114bb
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:446
+msgid ""
+"The second line, **<text key=\"name\" text=\"Name\" default="
+"\"\"delete_if_empty=\"true\" />**, creates a text field with the key name, "
+"as we saw when we looked at the presets XML in the previous section."
+msgstr ""
+
+# 374cf2cda79f4062aac5ab13a7bb084b
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:450
+msgid ""
+"We have three **<combo>** elements and each element has several attributes. "
+"key indicates what key should be created for the tag. Text indicates what "
+"text should be displayed on our form. Values are the possible values that "
+"the user can select in the drop-down box. And we’ve added something new - "
+"the attribute **display_values**, which let’s us show different text in the "
+"drop-down boxes than the values that will be created. This is useful if we "
+"want the form to be more descriptive about the options a user can select, or "
+"if we want the display values to be in a different language from English."
+msgstr ""
+
+# ddae35725ecf4061a8e4970911ea91ce
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:461
+msgid ""
+"Lastly, we’ve added one new element, a **checkbox**. The code for this is "
+"simple, **<check key=\"utility:electrical\"text=\"Electricity Access\" />**. "
+"This creates a check box on our form. When it is selected, JOSM will add a "
+"tag to our object that says **utility:electrical=yes**."
+msgstr ""
+
+# 6dae6137c4c9412b930063ad9d4dc268
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:467
+msgid ""
+"Finally, let’s save the XML file so that we can load it into JOSM. In "
+"Notepad, go to :menuselection:`File ‣ Save`."
+msgstr ""
+
+# 669e927243604378b0173653213ee14b
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:470
+msgid "Type in :kbd:`household_access.xml` as the filename."
+msgstr ""
+
+# b03a04b14b434ed18d00d2c70b51bd25
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:472
+msgid ""
+"In the box that says :guilabel:`Save as type:` be sure to select :guilabel:"
+"`All Files`, because we don’t want to save the file as a text document, but "
+"rather as an XML document."
+msgstr ""
+
+# 0e66e903466c408cba0d6f3fc6ba55b4
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:476
+msgid "Click :guilabel:`Save`."
+msgstr ""
+
+# 258244a4425b4b309f9dee6358aa7d2b
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:480
+msgid "6. Try It!"
+msgstr ""
+
+# 335658ef406749f5923db90b38832732
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:482
+msgid "Now let’s open our presets file in JOSM and see how it looks!"
+msgstr ""
+
+# 90ed054327cb4441ad61fb6c955ae4b0
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:484
+msgid ""
+"Open the Preferences in JOSM and go to :guilabel:`Tagging Presets`, as you "
+"did previously."
+msgstr ""
+
+# f42047d8dd1541e19505b1ad9c33b8da
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:487
+msgid ""
+"On the right side next to Active presets click on the :guilabel:`+` button."
+msgstr ""
+
+# a4d576a5960640ba8df00fa1c030d596
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:492
+msgid "Type :kbd:`Household Presets` into the :guilabel:`Name` field."
+msgstr ""
+
+# 812169c92fb6498aae78e65ea562de61
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:494
+msgid "Next to URL / File, open the xml file that you just created."
+msgstr ""
+
+# 805ad5b28c114b5c9887a25abc68b0b9
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:496
+msgid ""
+"Click :guilabel:`OK`, and :guilabel:`OK` again to save your preferences."
+msgstr ""
+
+# 2a6ac26153204109b38c31fde8d2f5cc
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:500
+msgid "Create a new layer and add a point."
+msgstr ""
+
+# 01157bb312b84289beac13da85be711e
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:502
+msgid "Go to the Presets menu. You should see the menu that you just created!"
+msgstr ""
+
+# 7a5aaa4e3c784edf8ccfcfa8ecc31c8c
+#: ../../source/training/old-training/intermediate/osm/304-creating-josm-file-presets.rst:508
+msgid ":ref:`Go to next module --> <using-private-data-store>`"
+msgstr ""

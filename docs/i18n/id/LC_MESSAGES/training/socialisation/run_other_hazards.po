@@ -1,0 +1,1246 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-04 11:57+0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+# 46095b620cd44f07a3972e701a10bb7a
+#: ../../source/training/socialisation/run_other_hazards.rst:10
+msgid "Other Hazards"
+msgstr ""
+
+# bb87fbed1f5148ab974fed36f3120d48
+#: ../../source/training/socialisation/run_other_hazards.rst:13
+msgid "Introduction"
+msgstr ""
+
+# 48158d33ff31480d835d4fea7d65c144
+#: ../../source/training/socialisation/run_other_hazards.rst:15
+msgid ""
+"|project_name| was designed to predict the result of a disaster by giving us "
+"the potential impact on buildings, populations and roads based on specific "
+"scenarios. From previous exercises, we have learned how to use Basic and "
+"Intermediate |project_name| functionality. We also learned about using tools "
+"in |project_name| such as define keywords, configure minimum needs and area "
+"analysis, using aggregation as well as many others."
+msgstr ""
+
+# 23b60dd71e214e5593e3e77daf1b5c99
+#: ../../source/training/socialisation/run_other_hazards.rst:20
+msgid ""
+"In previous exercises, we used the \"flooding in Jakarta\" scenario and "
+"related data to learn |project_name| functionality. In addition to floods, |"
+"project_name| impact analyses can be run for many hazard types including "
+"earthquakes, tsunamis and volcanos. In this exercise, we will explore and "
+"learn to run other hazard scenarios in |project_name| using |project_name| "
+"dock and |project_name| Function Centric Wizard. Last but not least, we will "
+"also use the Generic Impact Function."
+msgstr ""
+
+# 942e332179c344ac8be9e5f0978c0ce1
+#: ../../source/training/socialisation/run_other_hazards.rst:26
+msgid "Learning objectives:"
+msgstr ""
+
+# 537e0c8f0eec471d90f85e407946ef0e
+#: ../../source/training/socialisation/run_other_hazards.rst:28
+msgid ""
+"To improve the participant’s understanding of how to use |project_name| to "
+"run impact analyses for hazards other than floods. By the end of this "
+"exercise, participants will be able to:"
+msgstr ""
+
+# 657d041d29d642b19c0c17e50508d90f
+#: ../../source/training/socialisation/run_other_hazards.rst:31
+msgid ""
+"Run |project_name| with other hazards such as Earthquakes, Tsunamis and "
+"Volcanos;"
+msgstr ""
+
+# 5c2226aa87514bd5adfedbe0ffe3232c
+#: ../../source/training/socialisation/run_other_hazards.rst:33
+msgid "Be able to read metadata and assign keywords to hazard data;"
+msgstr ""
+
+# 6ac442cea76e49d280c4ca607036fd6b
+#: ../../source/training/socialisation/run_other_hazards.rst:35
+msgid ""
+"Be able to use the |project_name| dock and the |project_name| Function "
+"Centric Wizard; and"
+msgstr ""
+
+# 5994e75cb2144fafa2d40989f6b56a80
+#: ../../source/training/socialisation/run_other_hazards.rst:37
+msgid ""
+"Be able to use the Generic Impact Function and understand how to use it to "
+"work with their own data."
+msgstr ""
+
+# a274d3630ae84d7e847c1d60c0ad9380
+#: ../../source/training/socialisation/run_other_hazards.rst:40
+msgid "Data for This Exercise:"
+msgstr ""
+
+# e5662c3196e24717891eb5460618c7fd
+#: ../../source/training/socialisation/run_other_hazards.rst:42
+msgid ""
+"The data used for this exercise is the same as that used in previous "
+"exercises. The data can be downloaded from |project_name| `Training Data "
+"Packages <http://http://data.inasafe.org/TrainingDataPackages.html/>`__ Once "
+"the data has been downloaded, we will use the following QGIS project file "
+"and spatial data:"
+msgstr ""
+
+# 4b24b359bff94f0b8aadcc93920dc264
+#: ../../source/training/socialisation/run_other_hazards.rst:45
+msgid "Padang.qgs"
+msgstr ""
+
+# b2bc2f224eed4e3eb70f8553acc03a45
+#: ../../source/training/socialisation/run_other_hazards.rst:47
+msgid "Maumere.qgs"
+msgstr ""
+
+# 9726171b30a547ee81a9c97d7ab9eabc
+#: ../../source/training/socialisation/run_other_hazards.rst:49
+msgid "Sinabung_Hazard_Map_2015_WGS84.shp"
+msgstr ""
+
+# 161bf063ffe7460a9e036ad502f7afb6
+#: ../../source/training/socialisation/run_other_hazards.rst:51
+msgid "Sinabung_buildings_WGS84.shp"
+msgstr ""
+
+# 444dee56c6e641f7b66c58ca862b7e1f
+#: ../../source/training/socialisation/run_other_hazards.rst:53
+msgid "NGK_Landslide_Vulnerability_WGS84.shp"
+msgstr ""
+
+# 291c4e2d454d4696ba6b88efe93c7723
+#: ../../source/training/socialisation/run_other_hazards.rst:55
+msgid "NGK_Buildings_WGS84.shp"
+msgstr ""
+
+# e83460bb5060434b9c701e7d61d0a50d
+#: ../../source/training/socialisation/run_other_hazards.rst:57
+msgid "NT_Population_WGS84.tiff"
+msgstr ""
+
+# 015079dd84ac4521afd13409e83b89ae
+#: ../../source/training/socialisation/run_other_hazards.rst:60
+msgid "1. Run |project_name| for Earthquake"
+msgstr ""
+
+# f6b321ce5a7a49ac81406a46aa511ff6
+#: ../../source/training/socialisation/run_other_hazards.rst:63
+msgid "1.1 Run |project_name| for Building"
+msgstr ""
+
+# a85b70ae8321473283b12cfd63deff6a
+#: ../../source/training/socialisation/run_other_hazards.rst:66
+msgid "a. Open Project"
+msgstr ""
+
+# de6d7b9f04684e84b7695d80fc7580f3
+#: ../../source/training/socialisation/run_other_hazards.rst:68
+msgid ""
+"Indonesia’s location on the edges of the Pacific, Eurasian, and Australian "
+"tectonic plates makes it not only a site of numerous volcanoes but also "
+"frequent earthquakes. The hazard layer we are going to use for this example "
+"has been provided by Badan Geologi and AIFDR, Australian Government and "
+"describes the shaking or Modified Mercalli Intensity (MMI) Scale."
+msgstr ""
+
+# babeed45cc01475bb6a21a1aacd1b151
+#: ../../source/training/socialisation/run_other_hazards.rst:71
+msgid ""
+"This particular scenario is a modelled version of the 2009 Padang "
+"earthquake. Please open QGIS project file :file:`Padang.qgs` from the :file:"
+"`InSAFE Training Data > West Sumatera` folder. Once opened, you will see the "
+"below :"
+msgstr ""
+
+# 60ad32fcc161434e91e8f7490fd4b490
+#: ../../source/training/socialisation/run_other_hazards.rst:76
+msgid ""
+"In the |project_name| dock, note that the |project_name| form is still "
+"empty. It means that your hazard and exposure data does not yet have "
+"keywords assigned. Therefore, you must first define keywords for each "
+"dataset in the project."
+msgstr ""
+
+# ed2439fd3dc246a4a6949ddb6a532631
+#: ../../source/training/socialisation/run_other_hazards.rst:79
+msgid ""
+"To define keywords, please click on the :guilabel:`Keywords Creation Wizard` "
+"icon and follow the instructions provided. You can refer back to the `Run "
+"Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/"
+"run_intermediate_inasafe.html/>`__ module for step-by-step instructions. "
+"Once you have finished defining keywords for each layer, your |project_name| "
+"form should look like this :"
+msgstr ""
+
+# f0a646f248ed485eaff523adf8cea91a
+#: ../../source/training/socialisation/run_other_hazards.rst:87
+msgid "b. Run |project_name|"
+msgstr ""
+
+# 7d70f186f7254bb19930fedb1c24e110
+#: ../../source/training/socialisation/run_other_hazards.rst:89
+msgid ""
+"Once your |project_name| dock appears the same as the above image, you are "
+"ready to run an earthquake analysis on buildings. It poses the question “In "
+"the event of an **Earthquake in Padang 2009**\", how many **buildings** "
+"might **be affected?**. Click :guilabel:`Run` on the bottom right corner in "
+"your |project_name| Dock. If everything was set up correctly, you should get "
+"a result in the dock area after a few seconds, and a new map layer should be "
+"added to the map. The new layer is named **Estimated Buildings Affected**."
+msgstr ""
+
+# f81d1674e25b4ed9b526d00107f627a3
+#: ../../source/training/socialisation/run_other_hazards.rst:101
+msgid "c. Interpret the Results"
+msgstr ""
+
+# d1d78226a3634acfb571e7a63625848b
+#: ../../source/training/socialisation/run_other_hazards.rst:103
+msgid "Let’s take a look at the new data layer generated from |project_name|."
+msgstr ""
+
+# 407fcaa9e40a491fa160735951335b17
+#: ../../source/training/socialisation/run_other_hazards.rst:105
+msgid "Zoom in to any area in the Map Canvas"
+msgstr ""
+
+# 16300ee204564a5fabdf30174a6d900d
+#: ../../source/training/socialisation/run_other_hazards.rst:107
+msgid ""
+"There will be three new different colours generated from |project_name| "
+"(yellow, orange, and red)."
+msgstr ""
+
+# a5d2a6b673e747f8bee0bcf6c4704fe0
+#: ../../source/training/socialisation/run_other_hazards.rst:109
+msgid ""
+"The red buildings are located in highly affected areas which have MMI Values "
+"greater than 8 MMI. The orange buildings are located in medium affected "
+"areas which have MMI between 6 to 8 MMI while the yellow buildings are "
+"considered located in areas with low impact which have MMI Values of less "
+"than 6 MMI."
+msgstr ""
+
+# 7442478dc4b1460b8a0c085e9abd03ef
+#: ../../source/training/socialisation/run_other_hazards.rst:111
+msgid ""
+"Click :guilabel:`Estimated buildings affected` in the layer list to select "
+"it, click the :guilabel:`Identify Feature` tool, and then click on building "
+"to view attributes of the building."
+msgstr ""
+
+# 6af77d1a3398445789a7e7301ec374cb
+#: ../../source/training/socialisation/run_other_hazards.rst:113
+msgid ""
+"Default Threshold  for Earthquake are 6 MMI for Low Threshold, 7 MMI for "
+"Medium and 8 MMI for high threshold. You can change the threshold of MMI "
+"Value for each affected area before run |project_name|. Please click Options "
+"In your |project_name| Dock. This configuration will make your result "
+"different with Run |project_name| using default threshold."
+msgstr ""
+
+# 93f80cf9eed24a4cb798d95f0226ada2
+# e8efc97ba18047b9b367ca626232aa6d
+#: ../../source/training/socialisation/run_other_hazards.rst:118
+#: ../../source/training/socialisation/run_other_hazards.rst:456
+msgid ""
+"In the |project_name| panel we now see the impact summary. Details are "
+"explained below."
+msgstr ""
+
+# 47e6331799884cc396b9139a3f1fc516
+#: ../../source/training/socialisation/run_other_hazards.rst:123
+msgid ""
+"**Hazard Category:** divides the results into several categories based on "
+"the threshold set in the hazard analysis. In this impact summary, |"
+"project_name| divides the impact buildings into three categories based on "
+"MMI."
+msgstr ""
+
+# d54613bc4a8f442893701e1d5d3fcd0f
+#: ../../source/training/socialisation/run_other_hazards.rst:125
+msgid ""
+"**Building type:** divides the exposed buildings into several categories "
+"based on the building type attribute for each building. In this impact "
+"summary, |project_name| breaks down the results into a more detailed report "
+"by looking at each type of the building."
+msgstr ""
+
+# faef8e3fc5914019a15ab222bdba79bd
+# 41fdc13ab3cd4d65997bbfc63a3cce72
+#: ../../source/training/socialisation/run_other_hazards.rst:127
+#: ../../source/training/socialisation/run_other_hazards.rst:202
+msgid ""
+"**Action checklist:** designed to make disaster managers think about what "
+"they need to do/discuss when planning for a similar event in the future."
+msgstr ""
+
+# ae2e519fe8094285b4287065003f3d44
+#: ../../source/training/socialisation/run_other_hazards.rst:129
+msgid ""
+"**Note:** provides details about the input data and any limitations or "
+"assumptions in the analysis or report summary. In this example, it explains "
+"why buildings are said to be inundated, wet and dry."
+msgstr ""
+
+# 6350e2831c22431ebb052a0084933a14
+#: ../../source/training/socialisation/run_other_hazards.rst:131
+msgid ""
+"**Detailed aggregation categorical report:** statistical breakdown of the "
+"number of results. This example shows the count of important infrastructure. "
+"When you choose to use an aggregation layer with your analysis (we will do "
+"this later) this table will show the number of buildings by aggregation "
+"boundary."
+msgstr ""
+
+# 281ea6a3ea904642b2eb3fb1fd7c8135
+#: ../../source/training/socialisation/run_other_hazards.rst:133
+msgid "**Hazard details:** explanation of where the hazard data come from"
+msgstr ""
+
+# 1269a103c06747878dfc8ff61069fa35
+#: ../../source/training/socialisation/run_other_hazards.rst:135
+msgid "**Exposure detail:** explanation of where the exposure come from"
+msgstr ""
+
+# 59453e95d05e49899ddbe77dca379d14
+#: ../../source/training/socialisation/run_other_hazards.rst:138
+msgid "1.2 Run |project_name| for Population"
+msgstr ""
+
+# 299dbaaea8564fe584ecb7ad3a8e47e0
+#: ../../source/training/socialisation/run_other_hazards.rst:140
+msgid ""
+"We are now ready to run our second |project_name| analysis using earthquake "
+"data in Padang. We will be working with the same earthquake data again, but "
+"this time looking at the number of impacted people in a specific area. If "
+"you finished defining keywords, these data should have keywords assigned so "
+"you will be ready to run |project_name|."
+msgstr ""
+
+# 76f3f4517eae46759914a2598f90ecd6
+#: ../../source/training/socialisation/run_other_hazards.rst:143
+msgid ""
+"In QGIS, turn off the **Buildings** and **estimated buildings affected** "
+"(the layers generated from |project_name| analysis and turn ON the "
+"population layer). Because we want to look at the number people who might be "
+"killed or displaced in a specific area, we also need to turn ON **the "
+"Village** layer in QGIS. This layer will be used as an aggregation layer "
+"that can show us the result for each administrative area. If you forget the "
+"steps needed to define a layer as an aggregation, please refer to the `Run "
+"Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/"
+"run_intermediate_inasafe.html/>`__"
+msgstr ""
+
+# 499960fd0da14daaaca8c1952dad3741
+#: ../../source/training/socialisation/run_other_hazards.rst:148
+msgid ""
+"Confirm that the |project_name| panel on the right side is set to query how "
+"many people might die or be displaced :"
+msgstr ""
+
+# da0ea32e90514f6a9587b036fc27b294
+#: ../../source/training/socialisation/run_other_hazards.rst:150
+msgid "Earthquake in Padang 2009"
+msgstr ""
+
+# b1882f6af044465ba5de78cb614ec2fe
+#: ../../source/training/socialisation/run_other_hazards.rst:152
+msgid "Population"
+msgstr ""
+
+# 8e8877ae0d8747f2a3659d3b34084668
+#: ../../source/training/socialisation/run_other_hazards.rst:154
+msgid "Die or be displaced according Pager mode"
+msgstr ""
+
+# ab4b14d6996b4218bc95ec5a0368daff
+#: ../../source/training/socialisation/run_other_hazards.rst:156
+msgid "Village"
+msgstr ""
+
+# f9204903c8614363afaec3fdf3fe37a4
+#: ../../source/training/socialisation/run_other_hazards.rst:160
+msgid "Your |project_name| form should appear like the below screenshoot:"
+msgstr ""
+
+# 96da6a038d91428bbcec2bac17f27cb6
+# c2b0fed60962464cbe31d393c3a63a6d
+# 1b5600e1bb6d45c48bb0857e35879733
+#: ../../source/training/socialisation/run_other_hazards.rst:166
+#: ../../source/training/socialisation/run_other_hazards.rst:427
+#: ../../source/training/socialisation/run_other_hazards.rst:488
+msgid "a. Run |project_name|"
+msgstr ""
+
+# 2f6ade16e13e4b90a32be7cdf7992407
+#: ../../source/training/socialisation/run_other_hazards.rst:168
+msgid ""
+"If everything is setup correctly, the |project_name| dock should show that "
+"you are ready to run a flood analysis on population. It poses the question "
+"“In the event of an **Earthquake in Padang (2009)**, how many **people** "
+"might **die or be displaced according to the Pager Model**?” In this "
+"analysis we still use Shakemap data which has values from 6 – 8 MMI. If you "
+"want to see the minimum relief needs that should be provided based on the "
+"result, you can click :guilabel:`Options` and select :guilabel:`Minimum "
+"Needs`."
+msgstr ""
+
+# 93b9e126ab2b49bda448e9a86bfdfb94
+#: ../../source/training/socialisation/run_other_hazards.rst:172
+msgid ""
+"You can refer to the `Run Basic InaSAFE <http://docs.inasafe.org/en/training/"
+"socialisation/run_basic_inasafe.html/>`__ to learn more about the basis of "
+"default minimum needs in |project_name| or if you want edit an item or add "
+"new minimum needs, you can refer to the `Minimum Needs Configuration manuals "
+"<http://docs.inasafe.org/en/user-docs/application-help/minimum_needs."
+"html#minimum-needs>`__. After everything is setup accordingly, click :"
+"guilabel:`Run` to process the new scenario."
+msgstr ""
+
+# 3cd090bc25fa454bbe049bb32258dae1
+# 3d8123c518634f31ac0afa484f83bd59
+#: ../../source/training/socialisation/run_other_hazards.rst:177
+#: ../../source/training/socialisation/run_other_hazards.rst:440
+msgid "b. Interpret The Result"
+msgstr ""
+
+# fb986219318b43599e19cbe81509837e
+#: ../../source/training/socialisation/run_other_hazards.rst:179
+msgid ""
+"If everything was set up correctly, you should get a result in the dock area "
+"after a few  seconds, and a new map layer should be added to the map. The "
+"new impact layer will be called Estimated displaced population per cell. "
+"Let’s explore the result again to help you better understand its meaning :"
+msgstr ""
+
+# 1b77c31b8503419fab45aab59f20adc1
+#: ../../source/training/socialisation/run_other_hazards.rst:182
+msgid ""
+"Turn off the **Estimated building affected** layer and drag the Estimated "
+"displaced population per cell above Earthquake in Padang 2009."
+msgstr ""
+
+# e1482f486c594a28bbbaf64b5ff360fd
+#: ../../source/training/socialisation/run_other_hazards.rst:184
+msgid "Zoom in to the area you choose."
+msgstr ""
+
+# 5a653522742548279df99f47e40d7be5
+#: ../../source/training/socialisation/run_other_hazards.rst:186
+msgid ""
+"Select Estimated displaced population per cell in the layer list and use "
+"the :guilabel:`Identify Feature` tool again to select a pixel (square) in "
+"the map canvas."
+msgstr ""
+
+# 264cf615a31443479c91b5e5c2807658
+#: ../../source/training/socialisation/run_other_hazards.rst:188
+msgid ""
+"In the screenshot below, clicking on one of the brown pixels displays a "
+"value of 98.94451, which means there are approximately 98 people in this one "
+"pixel (square) whom might die or be displaced."
+msgstr ""
+
+# bc614931fc9d4034a006798410de93d9
+# 90d44dd457ec4d999561e2ed7ad6e492
+#: ../../source/training/socialisation/run_other_hazards.rst:193
+#: ../../source/training/socialisation/run_other_hazards.rst:524
+msgid ""
+"In the |project_name| panel we now see the impact summary. The details are "
+"explained below."
+msgstr ""
+
+# fafaab984851492192200be55da140ab
+#: ../../source/training/socialisation/run_other_hazards.rst:198
+msgid ""
+"**Population needing evacuation:** |project_name| estimates the number of "
+"affected people in the analysis area. It is assumed that all of these people "
+"will need to be evacuated."
+msgstr ""
+
+# 547c1fcb0865436ebed123a6aa58e51a
+#: ../../source/training/socialisation/run_other_hazards.rst:200
+msgid ""
+"**Needs per week:** are calculated numbers of food, water and other products "
+"needed by evacuated people on a weekly basis."
+msgstr ""
+
+# e07ec9279069410db06a7bd516d9147c
+#: ../../source/training/socialisation/run_other_hazards.rst:204
+msgid ""
+"**Notes:** provides details about the input data and any limitations or "
+"assumptions in the analysis or report summary. In this example, it explains "
+"the total number of people in the analysis area and the source of minimum "
+"needs."
+msgstr ""
+
+# 6400fde940f44a4db3a5cf96e094152c
+#: ../../source/training/socialisation/run_other_hazards.rst:206
+msgid ""
+"**Detailed gender and age report:** provides a breakdown of the number of "
+"affected people by age (youth, adults and elderly) and gender based on the "
+"default world population demographics and calculates the minimum needs for "
+"women’s hygiene and pregnant women. If you using aggregation layer, the "
+"result will be broken down based on administrative area."
+msgstr ""
+
+# 8e75fd365aef41df899ba8db1ae75d7a
+#: ../../source/training/socialisation/run_other_hazards.rst:212
+msgid "2. Run |project_name| for Tsunami"
+msgstr ""
+
+# ca9c431b0306436a993abe186a89487f
+#: ../../source/training/socialisation/run_other_hazards.rst:214
+msgid ""
+"The 1992 Flores earthquake occurred on December 12, 1992 on the island of "
+"Flores in Indonesia. With a magnitude of 7.8, it was the largest and also "
+"the deadliest earthquake in 1992. This earthquake triggered another hazard "
+"in that area a tsunami in Maumere, Flores."
+msgstr ""
+
+# 937a2a6acebb4e5698a3e5fd4e877f22
+#: ../../source/training/socialisation/run_other_hazards.rst:217
+msgid ""
+"Next, we will run another scenario in |project_name| using Tsunami Hazard "
+"Model. It is a modelled version of a Magnitude 8.1 earthquake generating a "
+"tsunami which impacts Maumere."
+msgstr ""
+
+# 4e4c5f020da041678fd0b66a679a7853
+#: ../../source/training/socialisation/run_other_hazards.rst:221
+msgid "2.1 Open Project"
+msgstr ""
+
+# 6e2265433b774468befb319f56050a46
+#: ../../source/training/socialisation/run_other_hazards.rst:223
+msgid ""
+"Please open the QGIS project file :file:`Maumere.qgs` from the :file:"
+"`InaSAFE Training Data > Maumere` folder. Once opened, the project should "
+"appear similar to the screenshot below:"
+msgstr ""
+
+# 2ecfb435914b4ac299573bb0f12ea280
+#: ../../source/training/socialisation/run_other_hazards.rst:229
+msgid ""
+"You will see in the |project_name| dock that keywords for each layer have "
+"not yet been defined. As before, we use the :guilabel:`Impact Function "
+"Centric Wizard` icon to define keyword. For detailed steps, please reference "
+"the `Run Intermediate InaSAFE <http://docs.inasafe.org/en/training/"
+"socialisation/run_intermediate_inasafe.html/>`__ module"
+msgstr ""
+
+# 8105ac5b36b54e73938fa4c7534baecb
+#: ../../source/training/socialisation/run_other_hazards.rst:232
+msgid "2.2 Run |project_name|"
+msgstr ""
+
+# aa286b23a5684b628f475ed99a0dcae0
+#: ../../source/training/socialisation/run_other_hazards.rst:234
+msgid ""
+"Once you have finished defining keywords for each layer, your |project_name| "
+"form should look like this :"
+msgstr ""
+
+# 271b30b3353849e3a22444e00a57d84d
+#: ../../source/training/socialisation/run_other_hazards.rst:239
+msgid ""
+"In this scenario we will use Buildings as an exposure and Village Boundary "
+"as an aggregation layer. Once your |project_name| form appears the same as "
+"the above screenshoot, click :guilabel:`Run` at the bottom right corner in "
+"your |project_name| dock."
+msgstr ""
+
+# f9e4c6d9379c4d0c93cb8416e54ae481
+#: ../../source/training/socialisation/run_other_hazards.rst:243
+msgid "2.3 Interpret the Result"
+msgstr ""
+
+# 6f9010fbbe5144438c4d53f45adf51e2
+#: ../../source/training/socialisation/run_other_hazards.rst:245
+msgid ""
+"If everything was set up correctly, you should get a result in the dock area "
+"after a few  seconds, and a new map layer should be added to the map. The "
+"new impact layer will be called Estimated buildings affected. Let’s explore "
+"the result again to help you understand more."
+msgstr ""
+
+# fb160cf5db9e4a63b04ad54fd3f331ef
+#: ../../source/training/socialisation/run_other_hazards.rst:249
+msgid "Zoom in to any area you choose"
+msgstr ""
+
+# 335fa641dff64651a8af748865819ce3
+#: ../../source/training/socialisation/run_other_hazards.rst:251
+msgid ""
+"Here we have zoomed in to a location in Maumere. There will be three new "
+"different colours generated from |project_name| (green, orange, and red)."
+msgstr ""
+
+# cdfc45c7c3e74007a0c48b2b68ced5d8
+#: ../../source/training/socialisation/run_other_hazards.rst:253
+msgid ""
+"The red buildings are situated in water greater than one metre; the orange "
+"buildings are situated in water between zero and one metre; and the green "
+"buildings are considered unaffected as they are situated in water less than "
+"the threshold of one metre."
+msgstr ""
+
+# 8af5e3acdc994844a70a154c28b312fd
+#: ../../source/training/socialisation/run_other_hazards.rst:258
+msgid ""
+"Click **Estimated building affected** in the layer list to select it and "
+"click :guilabel:`Identify Feature` tool and then click on building to know "
+"what attribute of the building."
+msgstr ""
+
+# 241de77c19324fc689079f015500ac10
+#: ../../source/training/socialisation/run_other_hazards.rst:263
+msgid ""
+"Here we clicked on one of the brown pixels and find that there is a value of "
+"depth 0.929329631. This means that the building is located in an affected "
+"area which is predicted to be flooded with 92 cm of water."
+msgstr ""
+
+# f31cbbe19c85474c9118d1e772d867bc
+#: ../../source/training/socialisation/run_other_hazards.rst:265
+msgid ""
+"In the |project_name| panel we now see the impact summary. Detalils are "
+"explained below."
+msgstr ""
+
+# 94d7f5cf6b0d4b1facc6d80cbd0de2b8
+#: ../../source/training/socialisation/run_other_hazards.rst:270
+msgid ""
+"**Hazard Category**: divides the results into several categories based on "
+"the threshold set in the hazard analysis. In this impact summary, |"
+"project_name| divides the impact buildings into three categories: number of "
+"building inundated (affected by water deeper than the analysis threshold), "
+"number of wet building (affected by tsunami's impact but not flooded as deep "
+"as the analysis threshold), and number of dry buildings (not affected by any "
+"tsunami impact)"
+msgstr ""
+
+# 502e761bd0904f27ab0d74c2fa9ce664
+# 6a79f0aba05d46f9b2a9fbffff30987d
+#: ../../source/training/socialisation/run_other_hazards.rst:272
+#: ../../source/training/socialisation/run_other_hazards.rst:377
+msgid ""
+"**Building type**: divides the exposed buildings into several categories "
+"based on the building type attribute for each building."
+msgstr ""
+
+# 0ce290fb38f64162bcf6e7f9dc3b0fec
+# a4f3c780052f47eea25c3c32006b97e6
+#: ../../source/training/socialisation/run_other_hazards.rst:274
+#: ../../source/training/socialisation/run_other_hazards.rst:379
+msgid ""
+"**Action checklist**: designed to make disaster managers think about what "
+"they need to do/discuss when planning for a similar event in the future."
+msgstr ""
+
+# e65861cf13884288b2e08436286aaf0b
+#: ../../source/training/socialisation/run_other_hazards.rst:276
+msgid ""
+"**Note**: provides details about the input data and any limitations or "
+"assumptions in the analysis or report summary. In this example, it explains "
+"why building are predicted to be inundated, wet and dry."
+msgstr ""
+
+# 6acb4f2e1e7a48399effb04577b841f0
+#: ../../source/training/socialisation/run_other_hazards.rst:278
+msgid ""
+"**Detailed building type report**: statistical breakdown of the results. "
+"This example shows the count of important infrastructure. When you choose to "
+"use an aggregation layer with your analysis (we will do this later) this "
+"table will show the number of buildings by aggregation boundary."
+msgstr ""
+
+# a679e79bfd164da5a4d79504a0362f36
+# 96611785c13247dea0aa724474a06d75
+#: ../../source/training/socialisation/run_other_hazards.rst:283
+#: ../../source/training/socialisation/run_other_hazards.rst:480
+msgid "**Hazard details**: explanation of where the hazard data come from"
+msgstr ""
+
+# 2f96d2ca60d54f2a890bae75081a4f12
+# 32b72cc388b443209cd4c636b74ab07b
+#: ../../source/training/socialisation/run_other_hazards.rst:285
+#: ../../source/training/socialisation/run_other_hazards.rst:482
+msgid "**Exposure detail**: explanation of where the exposure come from"
+msgstr ""
+
+# 4b9dfb9f2e1e4b058750ed99547bb0ab
+#: ../../source/training/socialisation/run_other_hazards.rst:287
+msgid ""
+"The results show the buildings that will be affected by flood water 1 m "
+"deep. What if the disaster manager decides that buildings in 80 cm of water "
+"are also considered flooded? You can change the water depth threshold to see "
+"the steps, refer to the `Run Basic InaSAFE <http://docs.inasafe.org/en/"
+"training/socialisation/run_basic_inasafe.html/>`__ module."
+msgstr ""
+
+# 1ce3f5da566842e39de2eff389326860
+#: ../../source/training/socialisation/run_other_hazards.rst:292
+msgid "3. Run |project_name| for Volcano"
+msgstr ""
+
+# bcc3c79ed0024045887971f93756333b
+#: ../../source/training/socialisation/run_other_hazards.rst:294
+msgid ""
+"Indonesia has many volcanoes, and most of them are still active today. In "
+"fact, one of the most frequent disasters in Indonesia is volcano eruptions. "
+"There are 129 active volcanoes across the country, and it is valuable to "
+"know how many people and how much infrastructure is within a certain "
+"perimeter of the vent."
+msgstr ""
+
+# 4c3291c77a794009befa40f47e788602
+#: ../../source/training/socialisation/run_other_hazards.rst:297
+msgid ""
+"|project_name| also has an impact function for volcano eruption scenarios. "
+"This function can run some type of hazard data. For detail information about "
+"the |project_name| volcano hazard function, please look at the `Hazard Data "
+"Section <http://docs.inasafe.org/en/training/socialisation/datasets.html/>`__"
+msgstr ""
+
+# be0e665f119740988cffccbfa79d228f
+#: ../../source/training/socialisation/run_other_hazards.rst:300
+msgid ""
+"In this section we will be using the Sinabung volcano hazard from the "
+"National Disaster Management Agency (BNPB) as hazard data and building from "
+"OpenStreetMap as exposure data. For this run, we will using Impact Function "
+"Centric Wizard (IFCW). For more information about IFCW you can refer to `Key "
+"concepts in disaster management planning with InaSAFE <http://docs.inasafe."
+"org/en/training/socialisation/inasafe_concepts.html>`__"
+msgstr ""
+
+# 91e39b3b1d86476ebd9171a851e3195b
+#: ../../source/training/socialisation/run_other_hazards.rst:306
+msgid "3.1 Open Project"
+msgstr ""
+
+# ddec304f03f745f1b205e3e435972a35
+#: ../../source/training/socialisation/run_other_hazards.rst:308
+msgid ""
+"Please open a new QGIS project in order to use IFCW to run this project. You "
+"new QGIS project should look like this:"
+msgstr ""
+
+# 76a2be9d4922463ba8603f7be459fbc5
+#: ../../source/training/socialisation/run_other_hazards.rst:315
+msgid "3.2 Run |project_name|"
+msgstr ""
+
+# 0ba44669ff70467f937c27b90d2fe029
+#: ../../source/training/socialisation/run_other_hazards.rst:317
+msgid ""
+"To use the **Impact Function Centric Wizard**, please click :guilabel:"
+"`Impact Fuction Centric Wizard` icon."
+msgstr ""
+
+# 50ff8b6eb64f4d01ae8cb3ab34b22904
+#: ../../source/training/socialisation/run_other_hazards.rst:322
+msgid ""
+"After clicking that icon, you will see the following dialogue box appear:"
+msgstr ""
+
+# 942585f440734c0a97a74f471bf89d29
+#: ../../source/training/socialisation/run_other_hazards.rst:327
+msgid ""
+"In the box above, there are some fields that help us select the scenario to "
+"use. Green fields mean those scenarios are available and ready to run in |"
+"project_name|. Grey fields means those scenarios are not available in |"
+"project_name| at the moment."
+msgstr ""
+
+# 8857c7bf395249f29f12b0f24259e8ee
+#: ../../source/training/socialisation/run_other_hazards.rst:330
+msgid ""
+"Because we want to run Volcano with building in this session, please click :"
+"guilabel:`Field Volcano and Structure`. The resulting dialogue box appears "
+"like this:"
+msgstr ""
+
+# 9664cdcfde4441a58c704c79deb1c265
+#: ../../source/training/socialisation/run_other_hazards.rst:335
+msgid ""
+"You can click :guilabel:`Next` and follow the instructions in the IFCW box."
+msgstr ""
+
+# f4d64f7882cd4edb951070d4524750c5
+#: ../../source/training/socialisation/run_other_hazards.rst:337
+msgid ""
+"Hazard Data that we want to use for this scenario can be found in :file:"
+"`InaSAFE Training Data > Sinabung > Hazard Data` folder. Please select :file:"
+"`Sinabung_Hazard_Map_2015_WGS84.shp` . Building Exposure data can be found "
+"in :file:`InSAFE Training Data > Sinabung > Exposure Data` folder. Please "
+"select :file:`Sinabung_buildings_WGS84.shp` ."
+msgstr ""
+
+# 9155a83b13ed4a92829b8274dd74dbce
+#: ../../source/training/socialisation/run_other_hazards.rst:345
+msgid ""
+"..note:: The differences between Volcano and Volcanic Ash can be seen in"
+msgstr ""
+
+# 3b7a55720daf40b5b020f9ef512a8601
+#: ../../source/training/socialisation/run_other_hazards.rst:343
+msgid ""
+"`Hazard Data Section <http://docs.inasafe.org/en/training/socialisation/"
+"datasets.html/>`_ and for detail explanation about type of data you can be "
+"found in `Key concepts in disaster management planning with |project_name| "
+"<http://docs.inasafe.org/en/training/socialisation/inasafe_concepts.html/>`_."
+msgstr ""
+
+# ed5ada2da58d444ebb49fd22215ffcf5
+#: ../../source/training/socialisation/run_other_hazards.rst:347
+msgid ""
+"If you have followed the instruction in IFCW box, before running |"
+"project_name| you should see the final form below:"
+msgstr ""
+
+# 8eb16a77de314a709878d337ad24d5ef
+#: ../../source/training/socialisation/run_other_hazards.rst:352
+msgid ""
+"If your IFCW box looks like the screenshot above, click :guilabel:`Run` and "
+"wait for analysis processing until a result box appears."
+msgstr ""
+
+# 7ce348b4c17248eda95ebbd51efa17db
+#: ../../source/training/socialisation/run_other_hazards.rst:358
+msgid "3.3 Interpret the Result"
+msgstr ""
+
+# 40265fb0e1ee430f82c2fcd54fc10245
+#: ../../source/training/socialisation/run_other_hazards.rst:360
+msgid ""
+"Once you have finished running the analysis, you will see the result has new "
+"layer named “Buildings Affected by each Hazard Zone” . This layer will show "
+"you which buildings are affected for each hazard zone. There will be three "
+"new colours of building generated from |project_name| (green, orange, and "
+"red)."
+msgstr ""
+
+# d8cb2c434bfc47a3b7b341750210e3c6
+#: ../../source/training/socialisation/run_other_hazards.rst:364
+msgid ""
+"The red buildings mean these buildings are located in a Low Risk Zone (Risk "
+"Zone 1), the green buildings mean these buildings are located in an "
+"Intermediate Risk Zone (Risk Zone 2) and blue buildings are considered "
+"situated in a High Risk Zone (Risk Zone 3) of Sinabung Volcano."
+msgstr ""
+
+# 98f7e1002db6407893c6dbb2745c2bc4
+#: ../../source/training/socialisation/run_other_hazards.rst:369
+msgid ""
+"In the |project_name| result box, we now see the impact summary. It is very "
+"similar to the |project_name| Dock. Details are explained below."
+msgstr ""
+
+# 7c9fa7e408c04ace851189e71be5e5a7
+#: ../../source/training/socialisation/run_other_hazards.rst:375
+msgid ""
+"**Hazard Category**: divides the results into several categories based on "
+"the threshold set in the hazard analysis."
+msgstr ""
+
+# 8e27170f5f5b4b6bad0a9a3df13ab7e9
+#: ../../source/training/socialisation/run_other_hazards.rst:375
+msgid ""
+"In this impact summary, |project_name| divides the impacted buildings into "
+"three categories for each hazard zone of Sinabung Volcano."
+msgstr ""
+
+# c141cfedf9874cf3b391f29d28d53249
+# ae947a2e5e5845a79b6cf985c7a6d54b
+#: ../../source/training/socialisation/run_other_hazards.rst:382
+#: ../../source/training/socialisation/run_other_hazards.rst:473
+msgid ""
+"**Note**: provides details about the input data and any limitations or "
+"assumptions in the analysis or report summary."
+msgstr ""
+
+# 5b6774f291a549b0a7b7323a5205395a
+#: ../../source/training/socialisation/run_other_hazards.rst:382
+msgid ""
+"In this example, it explains why buildings are predicted to be inundated, "
+"wet, or dry."
+msgstr ""
+
+# 525be46818c24e5096ce24544527cba9
+#: ../../source/training/socialisation/run_other_hazards.rst:386
+msgid ""
+"**Detailed building type report**: statistical breakdown of the number of "
+"results."
+msgstr ""
+
+# 685f9abf7d004a8da5274f404da3c4cd
+#: ../../source/training/socialisation/run_other_hazards.rst:385
+msgid ""
+"This example shows the count of important infrastructure. When you choose to "
+"use an aggregation layer with your analysis (we will do this later) this "
+"table will show the number of buildings by aggregation boundary."
+msgstr ""
+
+# 08782d6344734111845a56192d114ae8
+#: ../../source/training/socialisation/run_other_hazards.rst:388
+msgid ""
+"You have now run |project_name| for a volcano scenario using the Impact "
+"Function Centric Wizard (IFCW). Quite different than the |project_name| "
+"Dock, this tool is designed to help a user run |project_name| more easily "
+"without needing to open all the required data one by one in QGIS. IFCW "
+"provides precise guidance and detail about what actions should be taken step "
+"by step until the scenario is ready to run. This tool is very useful, "
+"especially for |project_name| user who are less familiar with QGIS and "
+"Spatial Data."
+msgstr ""
+
+# 9bb4164fe7d145e6b825353d7b94735b
+#: ../../source/training/socialisation/run_other_hazards.rst:393
+msgid "4. Generic Impact Function in |project_name|"
+msgstr ""
+
+# 4f1e4d57a05744b69786edd32aaa92d5
+#: ../../source/training/socialisation/run_other_hazards.rst:395
+msgid ""
+"|project_name| can run analyses for multiple hazards, using scenarios that "
+"we set up based on data availability. These scenarios include five types of "
+"hazards : floods, earthquakes, volcanos, volcanic ash and tsunamis. What if "
+"our hazard scenario is not included in this list (for example, a land slide "
+"or drought). To solve this problem, |project_name| provides a tool called "
+"the **Generic Impact Function** that can run analyses for any hazard not "
+"available via a specific Scenario Impact Function."
+msgstr ""
+
+# f8c67da813b145c7817a66f228001356
+#: ../../source/training/socialisation/run_other_hazards.rst:400
+msgid "4.1 Open Project"
+msgstr ""
+
+# 504406c8015d43bfa72a55319ad97a72
+#: ../../source/training/socialisation/run_other_hazards.rst:402
+msgid ""
+"Next, we will explore this tool using a landslide hazard in Nagekeo, East "
+"Nusa Tenggara with building and population data for each scenario. Please "
+"open the QGIS project file :file:`Nagekeo.qgs` from the :file:`InSAFE "
+"Training Data > Nagekeo` folder. Once opened, the project should look like "
+"the screenshot below:"
+msgstr ""
+
+# 2dfcb250b75e480398173cb4ce9187a1
+#: ../../source/training/socialisation/run_other_hazards.rst:409
+msgid ""
+"In the |project_name| dock, the |project_name| form still appears empty. "
+"This means that your hazard and exposure data lacks keywords. Before "
+"proceeding, you should define keywords for each dataset in this project."
+msgstr ""
+
+# bb9c541692044eb4b2737e7d7d120cfc
+#: ../../source/training/socialisation/run_other_hazards.rst:412
+msgid ""
+"To define a keyword, please click on the :guilabel:`Keywords Creation "
+"Wizard` icon"
+msgstr ""
+
+# 4c736b5703b54c659b276c9b57290153
+#: ../../source/training/socialisation/run_other_hazards.rst:417
+msgid ""
+"and follow the instructions. You can refer to the `Run Intermediate InaSAFE "
+"<http://docs.inasafe.org/en/training/socialisation/run_intermediate_inasafe."
+"html/>`__ if you need additional assistance. Once you finish defining "
+"keyword for each layer, your |project_name| form should appear like the "
+"below screenshot:"
+msgstr ""
+
+# aa7e5a966f7447eab348758ef45ea057
+#: ../../source/training/socialisation/run_other_hazards.rst:424
+msgid "4.2 Run |project_name| for Building"
+msgstr ""
+
+# 70e066a3b52f40e983656d7c14506f2d
+#: ../../source/training/socialisation/run_other_hazards.rst:429
+msgid ""
+"Your |project_name| Dock now poses the question “In the event of **Landslide "
+"Hazard Zone**,how many **buildings** might **be affected**?\" Click :"
+"guilabel:`Run` on the bottom right corner in your |project_name| Dock. If "
+"everything was set up correctly, you should get a result in the dock area "
+"after a few seconds, and a new map layer should be added to the map. The new "
+"layer will be named “Buildings Affected by each hazard zone”."
+msgstr ""
+
+# 6c5984f30eeb4733b3e23ae91e9a1d0d
+#: ../../source/training/socialisation/run_other_hazards.rst:442
+msgid "Let’s take a look at the new data layer generated from |project_name|:"
+msgstr ""
+
+# 49d32ea482514a4eb40608854f0ba43c
+#: ../../source/training/socialisation/run_other_hazards.rst:444
+msgid "Zoom in to an area in the Map Canvas"
+msgstr ""
+
+# cde2e45ac10240da8af0fe21d5a55d1e
+#: ../../source/training/socialisation/run_other_hazards.rst:446
+msgid ""
+"There will be three new colours generated from |project_name| (red, green, "
+"blue and purple)."
+msgstr ""
+
+# 127f10632df442f0ac11c09cdfe47ece
+#: ../../source/training/socialisation/run_other_hazards.rst:449
+msgid ""
+"The red buildings are located in a high vulnerability zone, the blue "
+"buildings are located in"
+msgstr ""
+
+# 110e674edae547e8b0ea4764d3440512
+#: ../../source/training/socialisation/run_other_hazards.rst:449
+msgid ""
+"moderate vulnerability zone, green buildings are located in a Low Landslide "
+"Vulnerability Zone and the purple buildings are not affected by landslide."
+msgstr ""
+
+# 5c4c145fe129401b9c4d12e9c69ce16a
+#: ../../source/training/socialisation/run_other_hazards.rst:451
+msgid ""
+"Click building affected in the layer list to select it. Next, click the :"
+"guilabel:`Identify Feature` tool and then click on a building to view "
+"attributes of the building."
+msgstr ""
+
+# 9fb3200660254a43980c9a95f0a23144
+#: ../../source/training/socialisation/run_other_hazards.rst:463
+msgid ""
+"**Hazard Category**: divides the results into three categories based on the "
+"hazard data classification area."
+msgstr ""
+
+# a408f5924d954638a14ad02ab0efaaa7
+#: ../../source/training/socialisation/run_other_hazards.rst:462
+msgid ""
+"In this impact summary, |project_name| divides the impacted buildings into "
+"High, Moderate, and Low Landslide vulnerability zone."
+msgstr ""
+
+# 4f0b5a4709784d449972c32b6f06f4ae
+#: ../../source/training/socialisation/run_other_hazards.rst:467
+msgid ""
+"**Building type**: divides the exposed buildings into several categories "
+"based on the building type attribute"
+msgstr ""
+
+# 349193eaa6ee4cceb93b0936ccb89f18
+#: ../../source/training/socialisation/run_other_hazards.rst:466
+msgid ""
+"for each building. In this impact summary, |project_name| breaks down the "
+"results into a more detailed report by looking at each type of the building."
+msgstr ""
+
+# 9f371a3961ee4148af8f6f7c66dfbb43
+# 1f555134961749599b994d9086959dbb
+#: ../../source/training/socialisation/run_other_hazards.rst:470
+#: ../../source/training/socialisation/run_other_hazards.rst:535
+msgid ""
+"**Action checklist**: designed to make disaster managers think about what "
+"they need to do/discuss when planning for"
+msgstr ""
+
+# 35b177f3d7fb49b9be823bbbc89a69b7
+# f816b23d4854453a9f9c9d73b380a60b
+#: ../../source/training/socialisation/run_other_hazards.rst:470
+#: ../../source/training/socialisation/run_other_hazards.rst:535
+msgid "a similar event in the future."
+msgstr ""
+
+# 2be71fc68b0f4f758941a21b09c83225
+#: ../../source/training/socialisation/run_other_hazards.rst:473
+msgid ""
+"In this example, it explains why building are said to be inundated, wet, or "
+"dry."
+msgstr ""
+
+# 470c73bf153b4bd0bf29d8af9a96b92b
+#: ../../source/training/socialisation/run_other_hazards.rst:478
+msgid ""
+"**Detailed aggregation categorical report**: statistical breakdown of the "
+"number of results."
+msgstr ""
+
+# 5173c90b694f49fda8d9761aaaee2c7c
+#: ../../source/training/socialisation/run_other_hazards.rst:476
+msgid ""
+"This example shows a count of important infrastructure. When you choose to "
+"use an aggregation layer with your analysis (we will do this on population) "
+"this table will show the number of buildings grouped by aggregation boundary."
+msgstr ""
+
+# 57adefac6c5848c4863f2290d6be9ecc
+#: ../../source/training/socialisation/run_other_hazards.rst:485
+msgid "4.3 Run |project_name| for Population"
+msgstr ""
+
+# 7d2cbde5aa604be4a07d7d2f43c26385
+#: ../../source/training/socialisation/run_other_hazards.rst:490
+msgid ""
+"Turn off the Buildings Affected by each hazard zone (the layers generated "
+"from |project_name| analysis and turn ON the **PopulationSP_2010** layer. "
+"Because we want to look at the number of people who might die or be "
+"displaced in a specific area, we also need to turn ON the **Village** layer "
+"in QGIS. This layer will be used as an aggregation layer that can show us "
+"results grouped by administrative boundary."
+msgstr ""
+
+# 88b2f61c82324c00b37cd991e1e876b4
+#: ../../source/training/socialisation/run_other_hazards.rst:495
+msgid ""
+"If you forget the steps to define and aggregation layer, refer to the `Run "
+"Intermediate InaSAFE <http://docs.inasafe.org/en/training/socialisation/"
+"run_intermediate_inasafe.html/>`__ section. Edit the question form in the |"
+"project_name| Dock so that it appears similar to the below screenshot:"
+msgstr ""
+
+# bb9524036a084a718c85f48df75fb66c
+#: ../../source/training/socialisation/run_other_hazards.rst:501
+msgid "Next, click :guilabel:`Run` to start the analysis."
+msgstr ""
+
+# 64b5d0f5245c4890ab898c02297862ce
+#: ../../source/training/socialisation/run_other_hazards.rst:504
+msgid "b. Interpret the Result"
+msgstr ""
+
+# b2555c7d9a5940bba67488346242374e
+#: ../../source/training/socialisation/run_other_hazards.rst:506
+msgid ""
+"If everything was set up correctly, you should get a result in the dock area "
+"after a few  seconds, and a new map layer should be added to the map. The "
+"new impact layer will be called **People Impacted by Each Hazard Zone**. "
+"Let’s explore the result again to help you understand more."
+msgstr ""
+
+# 90baca11d6c44186950bf4254bcde4ff
+#: ../../source/training/socialisation/run_other_hazards.rst:510
+msgid "Zoom in to any area."
+msgstr ""
+
+# b38434fd3f124b4694b03300baf4c341
+#: ../../source/training/socialisation/run_other_hazards.rst:513
+msgid ""
+"Select People Impacted by Each Hazard Zone in the layer list and use the :"
+"guilabel:`Identify Feature` tool again to select a pixel"
+msgstr ""
+
+# f5fa6d5b108148099cdf122bb030a211
+#: ../../source/training/socialisation/run_other_hazards.rst:513
+msgid "(square) in the map canvas."
+msgstr ""
+
+# fac2c08ba7e74490a78487af200ea11b
+#: ../../source/training/socialisation/run_other_hazards.rst:515
+msgid ""
+"Here we clicked on one of the yellow pixels and see a value of 220.283, "
+"which means there are approximately 220 people in this one pixel (square) "
+"who might be impacted."
+msgstr ""
+
+# 96cbf334a2904e999c73054552163c5d
+#: ../../source/training/socialisation/run_other_hazards.rst:530
+msgid ""
+"**Population needing evacuation**: |project_name| estimates the number of "
+"affected people in the analysis area."
+msgstr ""
+
+# 4c8b1aa30c404fce8a8e2248602008d1
+#: ../../source/training/socialisation/run_other_hazards.rst:530
+msgid "It is assumed that all of these people will need to be evacuated."
+msgstr ""
+
+# 12df7286c5bb48e1a806afec6332aaf7
+#: ../../source/training/socialisation/run_other_hazards.rst:532
+msgid ""
+"**Needs per week**: are calculated numbers of food, water and other products "
+"that are needed by evacuated people on a weekly basis."
+msgstr ""
+
+# 7063fca8e90640a581bc3c3d1a80d138
+#: ../../source/training/socialisation/run_other_hazards.rst:538
+msgid ""
+"**Notes**: provides details about the input data and any limitations or "
+"assumptions in the analysis or report summary."
+msgstr ""
+
+# 6135e64b28c148ecb675f1250f624968
+#: ../../source/training/socialisation/run_other_hazards.rst:538
+msgid ""
+"In this example, it explains the total number of people in the analysis area "
+"and the source of minimum needs."
+msgstr ""
+
+# 431917f5f8c54137bc53c9d986c18abd
+#: ../../source/training/socialisation/run_other_hazards.rst:543
+msgid ""
+"**Detailed gender and age report**: provides a breakdown of the number of "
+"affected people by age"
+msgstr ""
+
+# f004def3df5a472b8e50c49a56bf3a8b
+#: ../../source/training/socialisation/run_other_hazards.rst:541
+msgid ""
+"(youth, adults and elderly) and gender based on the default world population "
+"demographics and calculates the minimum needs for women’s hygiene and "
+"pregnant women. If you using aggregation layer, the result will break down "
+"the result based on administrative boundaries."
+msgstr ""
+
+# 25220dc482f142cfb440c9bc5a22bcfe
+#: ../../source/training/socialisation/run_other_hazards.rst:548
+msgid ""
+"In the result of |project_name|, Action Checklist and Notes might be "
+"unrelated with hazard that we runned. For instance, if we run drought hazard "
+"the action checklist might be has some topics such as how many building "
+"closed, or people die or displaced. Those topics not really related with "
+"drought."
+msgstr ""
+
+# 4b9e2070028743059bee103f0c484db5
+#: ../../source/training/socialisation/run_other_hazards.rst:552
+msgid "Summary"
+msgstr ""
+
+# 122cfb2e57724897b162430b598ddfee
+#: ../../source/training/socialisation/run_other_hazards.rst:554
+msgid ""
+"Congratulation! You have now learned to use most of |project_name|'s "
+"functionality. You can run analyses for specific hazard using tools such as "
+"the Impact Function Centric Wizard (IFCW) and the Generic Impact Function "
+"which will make using |project_name| easier."
+msgstr ""
+
+# 012f6552aaf549f785117885df917811
+#: ../../source/training/socialisation/run_other_hazards.rst:557
+msgid ""
+"Now, to become an expert user of |project_name|, try utilizing all those "
+"tools that you explored in this module using your own scenarios and data, "
+"and practice interpreting the results."
+msgstr ""

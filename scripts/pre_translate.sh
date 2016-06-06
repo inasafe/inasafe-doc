@@ -1,7 +1,7 @@
 #!/bin/bash
 
 INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
-export QGIS_PREFIX_PATH=/usr/local/qgis-2.6/
+export QGIS_PREFIX_PATH=/usr/local/qgis-2.8/
 
 if [ -d $INASAFE_DEV_PATH ]
 then
@@ -19,7 +19,7 @@ export QGIS_LOG_FILE=/dev/null
 export QGIS_DEBUG_FILE=/dev/null
 
 # Path to the documentation root relative to script execution dir
-DOCROOT=docs
+DOCROOT=../docs
 # Path from execution dir of this script to docs sources (could be just
 # '' depending on how your sphinx project is set up).
 SOURCE=source

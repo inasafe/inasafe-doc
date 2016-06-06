@@ -11,14 +11,14 @@
 # Sphinx documentation first
 #
 
-LOCALES=`ls docs/i18n`
+LOCALES=`ls ../docs/i18n`
 
 # We do not translate developer docs as development is mostly done in english
 # We do not translate api-docs
 
-for ITEM in general user-docs training road-map 
+for ITEM in user-docs training
 do
-  for POFILE in `find docs/i18n/en/LC_MESSAGES/${ITEM}/ -type f -name '*.po'`
+  for POFILE in `find ../docs/i18n/en/LC_MESSAGES/${ITEM}/ -type f -name '*.po'`
   do
     # get the po file replacing 'en' with '<lang>'
     GENERICFILE=`echo $POFILE | sed 's/\/en\//\/<lang>\//g' | sed 's/\/\//\//g'`
@@ -27,7 +27,7 @@ do
     # name when registering the resource
     BASE=`basename $GENERICFILE .po`
     BASE=`echo $BASE | sed 's/_/-/g' | sed 's/ /-/g'`
-    RESOURCE=inasafe-develop.${ITEM}-$BASE
+    RESOURCE=inasafe.${ITEM}-$BASE
     # Register each po file as a transifex resource (an individual translatable file)
     #set -x
     tx set -t PO --auto-local -r $RESOURCE \
@@ -46,7 +46,7 @@ do
     # .tx/config file that looks like this:
     #
     #
-    #	[inasafe-develop.user-docs-faq]
+    #	[inasafe.user-docs-faq]
     #	file_filter = docs/i18n/<lang>/LC_MESSAGES/user-docs/faq.po
     #	source_file = docs/i18n/en/LC_MESSAGES/user-docs/faq.po
     #	source_lang = en

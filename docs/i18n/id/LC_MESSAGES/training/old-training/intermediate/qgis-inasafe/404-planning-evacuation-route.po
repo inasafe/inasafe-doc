@@ -1,0 +1,420 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+#
+# Translators:
+# adityo dwijananto <adz.only@gmail.com>, 2014
+# adityo dwijananto <adz.only@gmail.com>, 2014-2015
+# BiondiSima <biondi.sima@hotosm.org>, 2014
+# Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2013
+# Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2014
+# Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2014
+# mahardika fadmastuti <mahardika.fadmastuti@gmail.com>, 2014
+# elida nurrohmah <uswatunkh21@yahoo.com>, 2014
+# Vasanthi Hargyono <va.santhi@yahoo.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: inasafe-develop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-04-02 19:18+0200\n"
+"PO-Revision-Date: 2015-04-02 17:14+0000\n"
+"Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
+"develop/language/id/)\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 7d117055644841c0b8ac81673f8eda76
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:10
+msgid "Module 4: Planning an Evacuation Route Based on Hazard Information"
+msgstr ""
+"Modul 4: Merencanakan Jalur Evakuasi Berdasarkan Informasi Ancaman Bencana"
+
+# f4c1a70b149a4510853660fa8077db2b
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:12
+msgid "**Learning Objectives**"
+msgstr "**Tujuan Pembelajaran**"
+
+# 540a65afbedb4e6a9a969d8cb4d556f7
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:14
+msgid "Understand the concept of shortest path and fastest route"
+msgstr "Memahami konsep jalur terpendek dan rute tercepat"
+
+# 0fbc3ac956764280ac82a9855438b335
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:15
+msgid "Use the Road Graph plugin"
+msgstr "Menggunakan plugin Road Graph"
+
+# 501b2e017a974c8e920ed71210ad99e7
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:16
+msgid "Set up speed and road direction"
+msgstr "Mengatur kecepatan dan arah jalan "
+
+# 72bc182d76744a298ff2fda3eaa0b51f
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:17
+msgid "Determine start and destination points"
+msgstr "Menentukan titik awal dan titik tujuan "
+
+# b5ed71d411f744708234545e2b9f0cd5
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:18
+msgid "Conduct route analysis and selection"
+msgstr "Melakukan analisis dan seleksi rute"
+
+# 6ffbe9956c314596a19594285ac12c90
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:20
+msgid ""
+"By now you should have a pretty good understanding of how |project_name| "
+"works and its operations."
+msgstr ""
+"Sekarang Anda memiliki pemahaman yang baik mengenai bagaimana |project_name| "
+"bekerja dan mengoperasikannya."
+
+# a333bd2d08a54f25b426dbf109fe4010
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:23
+msgid ""
+"You know how to add layers, and how to define keywords so that |"
+"project_name| can recognise layers appropriately. Now that we can use |"
+"project_name| effectively to run scenario analyses, we will look at other "
+"QGIS functionality that will help us in preparing contingency plans."
+msgstr ""
+"Anda mengetahui bagaimana cara menambahkan *layer*, dan bagaimana "
+"mendefinisikan kata kunci sehingga |project_name| dapat dikenali dengan "
+"tepat. Sekarang kita dapat menggunakan |project_name| secara efektif untuk "
+"menjalankan analisis skenario, kita akan melihat fungsi QGIS lainnya yang "
+"akan membantu kita dalam menyiapkan rencana kontinjensi."
+
+# c820fc9fb58f42bcb38fcfa13cf08c37
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:29
+msgid ""
+"In this module, we will learn how to perform a GIS analysis in order to "
+"determine an appropriate evacuation route in the event of a disaster."
+msgstr ""
+"Pada modul ini, kita akan belajar bagaimana melakukan analisis SIG untuk "
+"menentukan jalur evakuasi bencana dengan tepat. "
+
+# 5379241619a640c288082f75b6afbf8c
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:32
+msgid ""
+"The term **fastest route** indicates the route a person can take between "
+"point A and point B that will allow them to cover the distance in the least "
+"amount of time."
+msgstr ""
+"Istilah **jalur tercepat** menunjukkan jalur seseorang antara titik A dengan "
+"titik B yang dapat ditempuh dalam waktu sesingkat mungkin.  "
+
+# df8b043e0e25434fb55bdfca79843a97
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:36
+msgid ""
+"Similarly, **shortest path** indicates the route that will allow a person to "
+"get from point A to point B with the least distance travelled. In theory, "
+"this would be a straight line between point A and point B, but in reality "
+"this is impractical, because travelling in a straight line means climbing "
+"hills and going around buildings and fences. Of course this is why we use "
+"roads, and why we calculate fastest and shortest routes using roads."
+msgstr ""
+
+# e16d9ef789df4905805b16827235ba22
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:44
+msgid ""
+"We will use the Road Graph plugin in this module, which does just that. If "
+"we provide two points, the plugin is able to calculate either the fastest "
+"route or the shortest path between them."
+msgstr ""
+"Kita akan menggunakan plugin Road Graph/Grafik Jalan pada Modul ini, tetapi "
+"tidak hanya itu saja. Jika kita menyediakan dua titik, plugin ini dapat "
+"menghitung jalur tercepat ataupun jalur terpendek antara kedua titik "
+"tersebut. "
+
+# ef3d515472e542e3875d592d9c8d58f3
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:49
+msgid "1. Road Graph plugin"
+msgstr "1. Plugin Road Graph/Grafik Jalan"
+
+# 5cb69e3b1e2f4541811838ac455d1164
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:51
+msgid ""
+"We will be continuing with the previous example, which you should have "
+"saved. We won’t be using the |project_name| plugin in this module, so you "
+"may close the panel if you like."
+msgstr ""
+"Kita akan melanjutkan dengan contoh sebelumnya, yang Anda telah "
+"menyimpannya. Kita tidak akan menggunakan plugin |project_name| pada modul "
+"ini, sehingga Anda dapat menutup panel ini jika Anda suka. "
+
+# ccc71d6e45e44be8b1707a4e46d52759
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:55
+msgid "Open the project in QGIS."
+msgstr "Buka proyek di QGIS."
+
+# c4a0f513a9a0469b94ccb18c5ce791e5
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:57
+msgid ""
+"We will use a pre-prepared roads layer in this module, which may be slightly "
+"more detailed than OpenStreetMap. Remove the :guilabel:`planet_osm_roads` "
+"layer and add :guilabel:`Jalan_Sirahan`, which is located in the :file:`qgis/"
+"Sirahan/` directory. You should have the following layers:"
+msgstr ""
+"Kita akan menggunakan *layer* jalan yang telah disiapkan pada modul ini, "
+"yang mungkin sedikit lebih rinci dari OpenStreetMap. Hapus *layer* :guilabel:"
+"`planet_osm_roads` dan tambahkan :guilabel:`Jalan_Sirahan`, yang terletak di "
+"direktori :file:`qgis/Sirahan/`. Anda harus memiliki *layer* seperti berikut "
+"ini:"
+
+# ed869039521f436a80ff3ab329dcf465
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:67
+msgid ""
+"We will be using a plugin that comes installed with QGIS. Right-click on the "
+"toolbars to see which toolbars are activated, and select :guilabel:`Shortest "
+"path`."
+msgstr ""
+"Kita akan menggunakan plugin yang sudah diinstal dengan QGIS. Klik kanan "
+"pada toolbar untuk melihat toolbar yang diaktifkan, dan pilih :guilabel:"
+"`Jalur terpendek`."
+
+# 10ab0156d1e7412f972ea154eea7ffe0
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:74
+msgid ""
+"A new plugin window will appear in your project window that looks like this:"
+msgstr ""
+"Jendela plugin baru akan muncul pada jendela proyek Anda yang terlihat "
+"seperti ini:"
+
+# 7a33c6d7c2af424d9b0c7c3a4a89dbcc
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:80
+msgid "2. Editing plugin settings"
+msgstr "2. Mengubah Pengaturan Plugin"
+
+# 07f9efa5172a4c11bb17ad1a9933389f
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:82
+msgid ""
+"We must edit some settings in order for the :guilabel:`Shortest path` plugin "
+"to work. Go to :menuselection:`Vector ‣ Road graph ‣ Settings`."
+msgstr ""
+"Kita harus mengedit beberapa pengaturan pada plugin :guilabel:`Jalur "
+"terpendek` agar bekerja. Klik menu :menuselection:`Vector ‣ Grafik Jalan ‣ "
+"Pengaturan`."
+
+# 49a8da58c9304683b7fb3ca4b59ec104
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:89
+msgid ""
+"Make sure that :guilabel:`hour` and :guilabel:`kilometer` are selected as "
+"the units."
+msgstr ""
+"Pastikan bahwa :guilabel:`Jam` dan :guilabel:`kilometer` telah dipilih "
+"sebagai unit."
+
+# a0a480df279b4a05a99d3fa3118540ee
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:92
+msgid "Set :guilabel:`Topology tolerance` to :kbd:`4`."
+msgstr ":guilabel:`Toleransi topologi` diatur menjadi :kbd:`4`."
+
+# 408a281886a14d5f9a453c84de7dc8e6
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:94
+msgid ""
+"On the :guilabel:`Transportation layer` tab, select :guilabel:"
+"`Jalan_Sirahan` as the layer. This layer contains the streets that the "
+"plugin will use to calculate routes. The rest will remain the same. It "
+"should look like this:"
+msgstr ""
+"Pada tab :guilabel:`Layer transportasi`, pilih :guilabel:`Jalan_Sirahan` "
+"sebagai *layer*. *Layer* ini berisi jalan-jalan dimana plugin akan digunakan "
+"untuk menghitung jalur. Sisanya akan tetap sama. Ini akan terlihat seperti "
+"ini:"
+
+# 17a4dee9c9f846be8e45c031d3731fc5
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:101
+msgid ""
+"On the :guilabel:`Default settings` tab, we must fill in the direction and "
+"speed. Choose :guilabel:`two-way direction` and :kbd:`25` for the speed "
+"(meaning 25 km/hr). This assumes that traffic can go in both directions at a "
+"maximum speed of 25 km/hr."
+msgstr ""
+"Pada tab :guilabel:`Pengaturan standar`, kita harus mengisi arah dan "
+"kecepatan. Pilih :guilabel:`Dua arah` dan :kbd:`25` untuk kecepatannya "
+"(berarti 25 km/jam).  Asumsi ini bahwa lalu lintas dapat dilalui dua arah "
+"pada kecepatan maksimal 25 km/jam."
+
+# 75ba9fa7ae1a4adebd6c91ff03969d0b
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:109
+msgid "Click :guilabel:`OK`."
+msgstr "Klik :guilabel:`OK`."
+
+# ac0ed67dec6944a9be6190cb15d6b26e
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:112
+msgid "3. Choosing start and destination points"
+msgstr "3. Memilih Titik Awal dan Akhir"
+
+# bb9f8c59114c4bcd9817acca3b71ec96
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:114
+msgid ""
+"The Road Graph plugin calculates either the shortest or fastest route "
+"between two points, so we need to provide a start point and an end point for "
+"an evacuation route."
+msgstr ""
+"Plugin Road Graph/Grafik Jalan menghitung jalur terpendek atau tercepat "
+"antara dua titik, jadi kita perlu menyediakan titik awal dan titik akhir "
+"untuk jalur evakuasi."
+
+# 5901eeeb4dd0491195953a3d07e4a0a1
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:118
+msgid ""
+"Of course an evacuation route should be for all people in an area, but we "
+"can experiment with different start points and see if evacuation routes will "
+"be different in different areas."
+msgstr ""
+"Tentu saja jalur evakuasi untuk semua orang yang ada di area, tetapi kita "
+"dapat bereksperimen dengan titik awal yang berbeda dan melihatnya apakah "
+"jalur evakuasi akan berbeda pada area yang berbeda. "
+
+# c1b64cb5501a4da48f042e6cf52dec07
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:122
+msgid ""
+"On the Road Graph panel, click on the plus button next to :guilabel:`Start` "
+"and then click somewhere on the map to indicate the first point of your "
+"evacuation route. This would be the initial point for the evacuation route "
+"in the time of a disaster."
+msgstr ""
+"Pada panel Grafik Jalan, klik pada tombol plus di sebelah :guilabel:`Mulai` "
+"dan kemudian klik dimana saja pada peta untuk menunjukkan titik pertama "
+"jalur evakuasi Anda. Ini akan menjadi titik awal untuk jalur evakuasi pada "
+"saat bencana. "
+
+# 0cc24d3a79854ba1b1fc11af6304ca9e
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:130
+msgid ""
+"Your starting point will be marked as a green point and the coordinates of "
+"the point will be recorded in the :guilabel:`Start` input box."
+msgstr ""
+"Titik awal Anda akan ditandai dengan titik berwarna hijau dan koordinat "
+"titik akan terekam di kotak masukan :guilabel:`Mulai`."
+
+# af285bf92cae4060b051d87009486651
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:133
+msgid ""
+"Now we need to assign the destination of our evacuation route. Where will "
+"people be evacuated to? Because this is an example, we don’t have a great "
+"idea of where an appropriate place would be. We might use GIS to determine "
+"appropriate locations, which would most likely be high ground in the event "
+"of a flood. For this example, we will choose a destination at the south-east "
+"corner of the village."
+msgstr ""
+"Sekarang kita perlu menentukan tujuan dari jalur evakuasi kita. Dimana "
+"penduduk akan dievakuasi? Karena ini adalah contoh, kita tidak memiliki ide "
+"yang besar dimana tempat yang tepat dijadikan daerah tujuan. Kita mungkin "
+"menggunakan SIG untuk menentukan lokasi yang tepat, kemungkinan berada pada "
+"dataran tinggi untuk kejadian banjir. Contohnya, kita akan memilih daerah "
+"tujuan di sebelah tenggara desa. "
+
+# bba5430a78b24c9b8ff1c9d009788c5c
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:141
+msgid ""
+"Click the plus sign next to :guilabel:`Stop` and click somewhere on the map. "
+"The destination will be marked with a red point."
+msgstr ""
+"Klik tanda plus di sebelah :guilabel:`Berhenti` dan klik dimana saja pada "
+"peta. Titik tujuan akhir akan diberi tanda dengan titik berwarna merah. "
+
+# 9ea8acf6154c4c6b9199c0cf9267ba89
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:147
+msgid ""
+"Choose :guilabel:`Length` or :guilabel:`Time` next to :guilabel:`Criterion`. "
+"This determines whether Road Graph will look for the shortest distance or "
+"the shortest amount of time."
+msgstr ""
+"Pilih :guilabel:`Jarak` atau :guilabel:`Waktu` pada :guilabel:`Kriteria`. "
+"Ini menentukan apakah Grafik Jalan akan mencari jarak terpendek atau waktu "
+"tempuh terpendek. "
+
+# 2a8f79b1801e4091b2f7c3560b99e8ac
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:151
+msgid "Click :guilabel:`Calculate`."
+msgstr "Klik tombol :guilabel:`Hitung`."
+
+# ef54ae4bdb5a49babcd375b244b5e507
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:153
+msgid ""
+"The time and distance required for the evacuation route will be displayed."
+msgstr ""
+"Waktu dan jarak yang dibutuhkan untuk jalur evakuasi akan ditampilkan. "
+
+# 50b4bb66d22345ad90bc6ecb5c223c40
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:158
+msgid ""
+"In this example, the length of the fastest route between our two points is "
+"about 1.97 kilometres and the travel time is 0.0788 hours, which is about 5 "
+"minutes. The time in our example is determined by the distance and our "
+"default speed of 25 km/hr. The speed can be changed, and can even be set to "
+"different amounts for each segment of road."
+msgstr ""
+"Pada contoh ini, panjang jalur tercepat antara dua titik kita sekitar 1.97 "
+"kilometer dan waktu tempuh 0.0788 jam, yaitu sekitar 5 menit. Waktu pada "
+"contoh ini ditentukan oleh jarak dan kecepatan standar 25 km/jam. Kecepatan "
+"ini dapat diubah, dan dapat diatur untuk jumlah yang berbeda pada setiap "
+"segmen jalan."
+
+# 2cbaa56c8a614e9fb6ce88ca1afd91ac
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:164
+msgid "The route appears on our map:"
+msgstr "Jalur juga terlihat pada peta Anda:"
+
+# 3074b3ec78944531b5750cb78d9bc6e1
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:169
+msgid ""
+"To save the evacuation route as a separate layer, go to :menuselection:"
+"`Export ‣ New temporary layer`, and click :guilabel:`OK`."
+msgstr ""
+"Untuk menyimpan jalur evakuasi sebagai layer terpisah, klik pada :"
+"menuselection:`Ekspor ‣ Layer sementara baru`, dan klik :guilabel:`OK`."
+
+# dcfe86286f6946d9931b97f044b1d0e5
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:175
+msgid ""
+"You may need to choose a CRS for the new layer. UTM zone 49S should work "
+"fine."
+msgstr ""
+"Anda mungkin perlu memilih CRS untuk layer baru. UTM zona 49S seharusnya "
+"bekerja dengan baik."
+
+# 00a08359db6d4cf3b75f5a990b120d3f
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:178
+msgid ""
+"The layer will be added to your Layers panel as :guilabel:`shortest_path`, "
+"but you still need to save the layer."
+msgstr ""
+"*Layer* akan ditambahkan pada daftar Layer Anda sebagai :guilabel:`jalur "
+"terpendek`, tetapi Anda tetap perlu menyimpan *layer* ini."
+
+# fa2aceb02c1b43ce9611ac47b6b05c7e
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:181
+msgid "To save, right-click on the layer and click :guilabel:`Save as…`"
+msgstr ""
+"Untuk menyimpan, klik kanan pada layer dan klik :guilabel:`Simpan sebagai…`"
+
+# 8e2c91cbf7b84a56a12ebebae7f6fcf2
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:184
+msgid "Summary"
+msgstr "Ringkasan"
+
+# 1fb521bcb3f142ac9bf2f328ef07f675
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:186
+msgid ""
+"In this module we’ve learned how to calculate the shortest distance between "
+"two points using the Road Graph plugin. Using this you can easily determine "
+"evacuation routes from various areas. Evacuation routes are important for "
+"contingency plans, and those living in threatened areas can be educated with "
+"the quickest and safest routes to take in the event of an emergency."
+msgstr ""
+"Pada Modul ini, kita telah belajar bagaimana cara menghitung jarak terpendek "
+"antara dua titik menggunakan plugin Road Graph/Grafik Jalan. Menggunakan ini "
+"Anda dapat dengan mudah menentukan jalur evakuasi dari berbagai area. Jalur "
+"evakuasi penting untuk rencana kontijensi, dan mereka yang tinggal di daerah "
+"terancam dapat diajari dengan jalur tercepat dan teraman dalam keadaan "
+"darurat. "
+
+# dc784f9f3a77499caa99c1bf2b029815
+#: ../../source/training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.rst:193
+msgid ":ref:`Go to next module --> <calculating-damages-and-losses>`"
+msgstr ":ref:`Modul selanjutnya --> <calculating-damages-and-losses>`"
