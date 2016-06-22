@@ -32,7 +32,7 @@ Otherwise, let’s start here and get QGIS installed.
 
 The QGIS website will look something like this:
 
-.. image:: /static/training/osm/3_002.*
+.. image:: /static/training/qgis/3_002.*
    :align: center
 
 2.  Click :guilabel:`Download Now`
