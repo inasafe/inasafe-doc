@@ -41,7 +41,7 @@ The QGIS website will look something like this:
    :align: center
 
 3.  If you are using Windows, scroll down to the :menuselection:`Long Term Release`
-    version and click on :guilabel:`QGIS Standalone Installer Version 2.8 (32 bit).` 
+    version and click on :guilabel:`QGIS Standalone Installer Version 2.14 (32 bit).` 
     Your exact version number may be different.
 
 .. image:: /static/training/qgis/3_004.*
@@ -394,7 +394,7 @@ If you pay attention, there is something wrong with the maps.
 Can you guess what it is? 
 All three layers above Bing Aerial layers should be shown on the map.
 
-7.  To fix this, go to :menuselection:`View --> Panels` and check the box next to :guilabel:`Layer order`.
+7.  To fix this, go to :menuselection:`View --> Panels` and check the box next to :guilabel:`Layer Order Panel`.
 
 .. image:: /static/training/qgis/3_046.*
    :align: center
