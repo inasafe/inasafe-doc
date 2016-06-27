@@ -311,9 +311,9 @@ to know more specific result for each area, so we can know how many people
 that might be affected and how many logistic we should prepare for each administration area. 
 To do this, we need to define aggregation layer first using :guilabel:`Keyword Creation Wizard`.
 
-1. Click :guilabel:`Add Vector Layer` button and add :file:`district_osm_jakarta.shp`.
+1. Click :guilabel:`Add Vector Layer` button and add :file:`Jakarta_District_Boundary_WGS84.shp`.
 
-2. Select the **district_osm_jakarta.shp** layer in the Layers panel, and click on the 
+2. Select the :file:`district_osm_jakarta.shp` layer in the Layers panel, and click on the 
    :guilabel:`Keywords Creation Wizard` button.
 
 3. In the *Keywords Creation Wizard* window choose aggregation as category layer.

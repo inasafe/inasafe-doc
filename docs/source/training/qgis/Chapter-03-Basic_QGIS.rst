@@ -118,7 +118,7 @@ We will come back to this later.
 .. image:: /static/training/qgis/3_015.*
    :align: center
 
-2.  Navigate to the tutorial files and go into the **qgis/ directory**. Open the file named **sleman_2_2.qgs**.
+2.  Navigate to the tutorial files and go into the **QGIS for Disaster Management/ directory**. Open the file named **Chapter_3_Basic QGIS.qgs**.
     QGIS should now look something like the following image. 
     Let’s pause for a moment and go over the various components of the QGIS interface.
 
@@ -241,7 +241,7 @@ Now we will add an additional layer containing roads to our project.
 .. image:: /static/training/qgis/3_025.*
    :align: center
 
-3.  Navigate to the file :file:`qgis/Sleman/Jalan\_Sleman\_OSM.shp` (you may need to unzip the file :file:`Sleman.zip`). 
+3.  Navigate to the file :file:`QGIS for Disaster Management/Sleman/Jalan_Sleman_OSM.shp`. 
     Select the file and click :guilabel:`Open`.
 
 .. note:: One of the most common file formats are **shapefiles**, which end with the extension **.shp**. 

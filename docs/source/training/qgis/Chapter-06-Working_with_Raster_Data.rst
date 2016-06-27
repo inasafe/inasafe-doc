@@ -28,7 +28,7 @@ In this section we’ll add a new kind of raster and see how to change its symbo
 .. image:: /static/training/qgis/6_001.*
    :align: center
 
-2. The Load Raster Layer dialog will open. Find the file named **popmap10\_all.tif**. Open it.
+2. The Load Raster Layer dialog will open. Find the file named :file:`popmap10_all.tif` in :file:`QGSI for Disaster Management/Working with Raster` folder. Open it.
 
 3. When it appears in the Layers Panel, right-click on it and click :guilabel:`Rename`. Give it the name *Indonesian Population*.
 
@@ -146,7 +146,7 @@ To get a better look at the terrain, it is possible to calculate a hillshade, wh
 
 To work with DEMs, we will use the all-in-one DEM (Terrain models) analysis tool.
 
-1. Open the file named :guilabel:`SRTM\_Merapi.tif`, which is located in **Merapi/SRTM**/.
+1. Open the file named :file:`SRTM_Merapi.tif`, which is located in :file:`QGIS for Disaster Management/Working with Raster` folder.
 
 2. When it appears in the :guilabel:`Layer` panel, rename it to **DEM**.
 

@@ -46,7 +46,7 @@ at the top. You don’t generally want your polygons overlapping your lines and 
 It’s important to know that the data you will be working with does not only represent where objects are in space, 
 but also tells you what those objects are.
 
-1. Open the project :file:`sleman_2_5.qgs`. This is the same project that you worked with previously.
+1. Open the project :file:`Chapter_5_Working with vector.qgs`. This is the same project that you worked with previously.
 
 2. Close the InaSAFE panel if you still have it open.
 
@@ -304,7 +304,7 @@ computer, or could be shared between users over a network or even the internet.
 .. image:: /static/training/qgis/5_027.*
     :align: center
 
--  Navigate to the :file:`qgis_data/Sleman` folder and find the file :file:`guna_lahan.db`. 
+-  Navigate to the :file:`QGSI for Disaster Management/Sleman` folder and find the file :file:`guna_lahan.db`. 
    Select the file and click :guilabel:`Open`.
 
 -  Now in the original dialog box, you will see that the dropdown button now contains **guna_lahan.db @...**, 
