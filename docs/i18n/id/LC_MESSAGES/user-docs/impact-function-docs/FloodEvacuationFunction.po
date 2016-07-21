@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-#
+# 
 # Translators:
 # adityo dwijananto <adz.only@gmail.com>, 2013
 # adityo dwijananto <adz.only@gmail.com>, 2014
@@ -16,17 +16,16 @@
 # Vasanthi Hargyono <va.santhi@yahoo.com>, 2014
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe-develop\n"
+"Project-Id-Version: staging.docs.inasafe.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-05 22:23+0100\n"
+"POT-Creation-Date: 2014-11-10 16:15+0100\n"
 "PO-Revision-Date: 2014-12-28 17:50+0000\n"
 "Last-Translator: adityo dwijananto <adz.only@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
-"develop/language/id/)\n"
-"Language: id\n"
+"Language-Team: Indonesian (http://www.transifex.com/inasafe/inasafe-develop/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 # 2c7d32f0224f4462a77987ad05b22553
@@ -64,9 +63,7 @@ msgstr "**Judul**: Butuh Evakuasi"
 msgid ""
 "**Synopsis**: To assess the impacts of flood inundation in raster format on "
 "population."
-msgstr ""
-"**Sinopsis**: Untuk menilai dampak genangan banjir dalam format raster pada "
-"penduduk."
+msgstr "**Sinopsis**: Untuk menilai dampak genangan banjir dalam format raster pada penduduk."
 
 # 9d8a6268b6dc49b08190961486167c65
 #: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:26
@@ -74,46 +71,35 @@ msgid ""
 "**Actions**: Provide details about how many people would likely need to be "
 "evacuated, where they are located and what resources would be required to "
 "support them."
-msgstr ""
-"**Tindakan**: Menyediakan rincian mengenai berapa banyak orang yang perlu "
-"dievakuasi, dimana lokasi keberadaan mereka dan sumber daya apa yang "
-"dibutuhkan untuk mendukung keselamatan mereka."
+msgstr "**Tindakan**: Menyediakan rincian mengenai berapa banyak orang yang perlu dievakuasi, dimana lokasi keberadaan mereka dan sumber daya apa yang dibutuhkan untuk mendukung keselamatan mereka."
 
 # 174909d93c5b4224b785521c983b4d63
 #: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:29
 msgid ""
 "**Hazard Input**: A hazard raster layer where each cell represents flood "
 "depth (in meters)."
-msgstr ""
-"**Input Ancaman**: *Layer* raster ancaman dimana setiap sel mewakili "
-"kedalaman banjir (dalam meter)."
+msgstr "**Input Ancaman**: *Layer* raster ancaman dimana setiap sel mewakili kedalaman banjir (dalam meter)."
 
 # 1f16ba6d0ac24904966afb62e66800e2
 #: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:32
 msgid ""
 "**Exposure Input**: An exposure raster layer where each cell represent "
 "population count."
-msgstr ""
-"**Input Keterpaparan**: Layer data keterpaparan berjenis data raster dimana "
-"setiap sel mewakili sejumlah populasi penduduk."
+msgstr "**Input Keterpaparan**: Layer data keterpaparan berjenis data raster dimana setiap sel mewakili sejumlah populasi penduduk."
 
 # 93b51afc3681469d8aaaddef23519ef6
 #: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:35
 msgid ""
 "**Output**: Raster layer contains people affected and the minimum needs "
 "based on the people affected."
-msgstr ""
-"**Hasil**: Layer raster berisi penduduk terdampak dan kebutuhan minimum "
-"berdasarkan jumlah penduduk terdampak."
+msgstr "**Hasil**: Layer raster berisi penduduk terdampak dan kebutuhan minimum berdasarkan jumlah penduduk terdampak."
 
 # cdcf415de93444e7954d8d39e527c54f
 #: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:38
 msgid ""
 "**Limitation**: The default threshold of 1 meter was selected based on "
 "consensus, not hard evidence."
-msgstr ""
-"**Batasan**: Ambang batas standar 1 meter telah dipilih berdasarkan pada "
-"kesepakatan, bukan bukti yang nyata."
+msgstr "**Batasan**: Ambang batas standar 1 meter telah dipilih berdasarkan pada kesepakatan, bukan bukti yang nyata."
 
 # 65dd6ed2d9ef47398e31f63291fe9383
 #: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:42
@@ -127,24 +113,13 @@ msgid ""
 "calculated and returned as a raster layer. In addition the total number and "
 "the required needs in terms of the BNPB (Perka 7) are reported. The "
 "threshold can be changed and even contain multiple numbers in which case "
-"evacuation and needs are calculated using the largest number with population "
-"breakdowns provided for the smaller numbers. The population raster is "
-"resampled to the resolution of the hazard raster and is rescaled so that the "
-"resampled population counts reflect estimates of population count per "
+"evacuation and needs are calculated using the largest number with population"
+" breakdowns provided for the smaller numbers. The population raster is "
+"resampled to the resolution of the hazard raster and is rescaled so that the"
+" resampled population counts reflect estimates of population count per "
 "resampled cell. The resulting impact layer has the same resolution and "
 "reflects population count per cell which are affected by inundation."
-msgstr ""
-"Subyek populasi yang terkena genangan yang melebihi ambang batas (pengaturan "
-"awal adalah 1m) dihitung dan dikembalikan sebagai layer data raster. Selain "
-"itu, jumlah dan kebutuhan yang diperlukan sesuai aturan BNPB (Perka 7) "
-"dilaporkan. Ambang batas dapat diubah dan bahkan mengandung beberapa nilai "
-"dalam hal evakuasi dan kebutuhan dihitung menggunakan jumlah terbesar dengan "
-"populasi diperinci untuk jumlah yang lebih kecil. Layer data raster populasi "
-"diresampling dengan resolusi raster data ancaman dan direscaling sehingga "
-"jumlah populasi hasil resampling mencerminkan perkiraan jumlah populasi per "
-"sel dapat diresampling. Layer data dampak yang dihasilkan memiliki resolusi "
-"yang sama dan mencerminkan jumlah penduduk per sel yang dipengaruhi oleh "
-"adanya genangan."
+msgstr "Subyek populasi yang terkena genangan yang melebihi ambang batas (pengaturan awal adalah 1m) dihitung dan dikembalikan sebagai layer data raster. Selain itu, jumlah dan kebutuhan yang diperlukan sesuai aturan BNPB (Perka 7) dilaporkan. Ambang batas dapat diubah dan bahkan mengandung beberapa nilai dalam hal evakuasi dan kebutuhan dihitung menggunakan jumlah terbesar dengan populasi diperinci untuk jumlah yang lebih kecil. Layer data raster populasi diresampling dengan resolusi raster data ancaman dan direscaling sehingga jumlah populasi hasil resampling mencerminkan perkiraan jumlah populasi per sel dapat diresampling. Layer data dampak yang dihasilkan memiliki resolusi yang sama dan mencerminkan jumlah penduduk per sel yang dipengaruhi oleh adanya genangan."
 
 # a27537a4621846018082531cb4bc4f11
 #: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:47
@@ -159,18 +134,14 @@ msgstr "Fungsi dampak untuk evakuasi banjir."
 # 35782d5e394240afbef684d6c3044cc8
 #: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:51
 msgid ""
-":author AIFDR :rating 4 :param requires category=='hazard' "
-"and                     subcategory=='flood' and                     "
+":author AIFDR :rating 4 :param requires category=='hazard' and"
+"                     subcategory=='flood' and                     "
 "layertype=='raster' and                     unit=='m'"
-msgstr ""
-":*author* AIFDR :rating 4 :param membutuhkan kategori=='hazard' dan "
-"subkategori=='banjir' dan jenislayer=='raster' dan unit=='m'"
+msgstr ":*author* AIFDR :rating 4 :param membutuhkan kategori=='hazard' dan subkategori=='banjir' dan jenislayer=='raster' dan unit=='m'"
 
 # 482e4b5483e745579e699f48bd05a72c
 #: ../../source/user-docs/impact-function-docs/FloodEvacuationFunction.rst:55
 msgid ""
 ":param requires category=='exposure' and                     "
 "subcategory=='population' and                     layertype=='raster'"
-msgstr ""
-":param membutuhkan category=='exposure' dan subcategory=='population' dan "
-"layertype=='raster'"
+msgstr ":param membutuhkan category=='exposure' dan subcategory=='population' dan layertype=='raster'"
