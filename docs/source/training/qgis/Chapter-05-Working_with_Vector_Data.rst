@@ -46,7 +46,7 @@ at the top. You don’t generally want your polygons overlapping your lines and 
 It’s important to know that the data you will be working with does not only represent where objects are in space, 
 but also tells you what those objects are.
 
-1. Open the project :file:`sleman_2_5.qgs`. This is the same project that you worked with previously.
+1. Open the project :file:`Chapter_5_Working with vector.qgs`. This is the same project that you worked with previously.
 
 2. Close the InaSAFE panel if you still have it open.
 
@@ -304,7 +304,7 @@ computer, or could be shared between users over a network or even the internet.
 .. image:: /static/training/qgis/5_027.*
     :align: center
 
--  Navigate to the :file:`qgis_data/Sleman` folder and find the file :file:`guna_lahan.db`. 
+-  Navigate to the :file:`QGSI for Disaster Management/Sleman` folder and find the file :file:`guna_lahan.db`. 
    Select the file and click :guilabel:`Open`.
 
 -  Now in the original dialog box, you will see that the dropdown button now contains **guna_lahan.db @...**, 
@@ -812,14 +812,14 @@ Before being able to access the Label tool, you will need to ensure that it has 
 
 3. Click on the **POI_Sleman_OSM** layer in the :guilabel:`Layers` list, so that it is highlighted.
 
-4.  Click on the :guilabel:`Labelling` button:
+4.  Click on the :guilabel:`Labeling` button:
 
 .. image:: /static/training/qgis/5_083.*
    :align: center
 
 This gives you the :guilabel:`Layer labeling settings` dialog.
 
-5. Check the box next to :guilabel:`Label this layer with`....
+5. Click drop down box in :guilabel:`no label` box and select :guilabel:`Show labels for this layer` in drop down box.
 
 .. image:: /static/training/qgis/5_084.*
    :align: center
@@ -861,7 +861,7 @@ Now you can see why we usually need label buffers!
 
 That’s the font problem solved! Now let’s look at the problem of the labels overlapping the points.
 
-12. In the Label tool dialog, click on :guilabel:`Distance` tab.
+12. In the Label tool dialog, click on :guilabel:`Placement` tab.
 
 13. Change the value of Label distance to 2.
 
@@ -886,8 +886,7 @@ This is not very useful! To make lines behave, we’ll need to edit some options
 
 1. Hide the **POI_Sleman_OSM** layer so that it doesn’t distract you.
 
-2. Activate labels for the **Jalan_Sleman_OSM** layer as before. (Remember to use the Label tool on the toolbar, 
-   not the one in Label Properties!)
+2. Activate labels for the **Jalan_Sleman_OSM** layer as before. 
 
 3. Set the font Size to 9 and activate the buffer so that you can see more labels.
 
