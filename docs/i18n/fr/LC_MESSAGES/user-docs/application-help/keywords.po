@@ -1,21 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-#
+# 
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe-develop\n"
+"Project-Id-Version: staging.docs.inasafe.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-02 19:36+0200\n"
+"POT-Creation-Date: 2015-04-02 19:18+0200\n"
 "PO-Revision-Date: 2015-04-02 17:21+0000\n"
 "Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/"
-"language/fr/)\n"
-"Language: fr\n"
+"Language-Team: French (http://www.transifex.com/inasafe/inasafe-develop/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 # e71a75dd0b1040e3b3eb032a66715f1c
@@ -26,8 +25,8 @@ msgstr ""
 # 058e5595c46b4594a99ffc622904b4cf
 #: ../../source/user-docs/application-help/keywords.rst:10
 msgid ""
-"This document describes the purpose and usage of the |project_name| keywords "
-"system."
+"This document describes the purpose and usage of the |project_name| keywords"
+" system."
 msgstr ""
 
 # 34f09385ea3743cf8df98d4378b1a28b
@@ -46,8 +45,8 @@ msgstr ""
 # e9d4e2d7b8894ce58358613a619bdece
 #: ../../source/user-docs/application-help/keywords.rst:21
 msgid ""
-"The keywords system is used by :ref:`impact functions <impact_functions>` to "
-"determine the nature of the input layers that have been passed to them."
+"The keywords system is used by :ref:`impact functions <impact_functions>` to"
+" determine the nature of the input layers that have been passed to them."
 msgstr ""
 
 # a257ec94579f454ebd6244f4261b61e7
@@ -55,8 +54,8 @@ msgstr ""
 msgid ""
 "Each input dataset used by |project_name| needs to have an accompanying "
 "keywords file. The purpose of the keywords file is to provide additional "
-"metadata needed by the impact functions. For example, the keywords file will "
-"indicate whether a given dataset should be treated as a *hazard* or an "
+"metadata needed by the impact functions. For example, the keywords file will"
+" indicate whether a given dataset should be treated as a *hazard* or an "
 "*impact* layer. It is also used to indicate the context of the layer (e.g. "
 "\"it's a *flood* layer\", \"it's an *earthquake* layer\")."
 msgstr ""
@@ -94,8 +93,8 @@ msgstr ""
 # b83b569429544207a2de997802f239f1
 #: ../../source/user-docs/application-help/keywords.rst:46
 msgid ""
-"The |project_name| plugin provides an editor for these keywords. The purpose "
-"of this document is to describe the keywords editor and to provide "
+"The |project_name| plugin provides an editor for these keywords. The purpose"
+" of this document is to describe the keywords editor and to provide "
 "guidelines as to the use of keywords."
 msgstr ""
 
@@ -106,8 +105,8 @@ msgid ""
 "misspell a keyword, use the wrong letter case (e.g. upper case instead of "
 "lower case) or provide the wrong keyword for the context (e.g. provide a "
 "subcategory of flood to an exposure category), the system will not be able "
-"to determine what to do with the file. For that reason you should follow the "
-"guidelines below carefully to ensure you have entered your keywords "
+"to determine what to do with the file. For that reason you should follow the"
+" guidelines below carefully to ensure you have entered your keywords "
 "correctly."
 msgstr ""
 
@@ -299,7 +298,8 @@ msgstr ""
 #: ../../source/user-docs/application-help/keywords.rst:129
 msgid ""
 "The units keyword is used to indicate the metric or imperial units "
-"represented by each data entity (a grid cell or a vector feature) in a layer."
+"represented by each data entity (a grid cell or a vector feature) in a "
+"layer."
 msgstr ""
 
 # 5d038d787755465a82f04e1a1f587d1c
@@ -410,8 +410,8 @@ msgstr ""
 # 8f5d52da5db54da28d32d967d8f018a9
 #: ../../source/user-docs/application-help/keywords.rst:180
 msgid ""
-"**volcano categorical**: This is a ternary description for an area. The area "
-"is either has **low**, **medium**, or **high** impact from the volcano."
+"**volcano categorical**: This is a ternary description for an area. The area"
+" is either has **low**, **medium**, or **high** impact from the volcano."
 msgstr ""
 
 # 6d0f98b399bd4157ba45292534de2507
@@ -427,9 +427,9 @@ msgstr ""
 # 98484af722fd45c29efd29fb921d7255
 #: ../../source/user-docs/application-help/keywords.rst:196
 msgid ""
-"**MMI**: The Modified Mercalli Intensity (MMI) scale describes the intensity "
-"of ground shaking from a earthquake based on the effects observed by people "
-"at the surface."
+"**MMI**: The Modified Mercalli Intensity (MMI) scale describes the intensity"
+" of ground shaking from a earthquake based on the effects observed by people"
+" at the surface."
 msgstr ""
 
 # 4d4e89a15fe7468d9a321106128c68c5
@@ -590,8 +590,8 @@ msgstr ""
 #: ../../source/user-docs/application-help/keywords.rst:295
 msgid ""
 "If you are using a PostgreSQL, WFS, Spatialite or other non-file based "
-"resource, you can still create keywords. In these circumstances the keywords "
-"will be written to a sqlite database - by default this database is stored "
+"resource, you can still create keywords. In these circumstances the keywords"
+" will be written to a sqlite database - by default this database is stored "
 "as :file:`keywords.db` within the |project_name| root directory."
 msgstr ""
 
@@ -600,9 +600,9 @@ msgstr ""
 msgid ""
 "You may wish to use a different location for the :file:`keywords.db` "
 "keywords database - you can configure this by using the |project_name| "
-"options dialog. The options dialog can be launched by clicking on the |"
-"project_name| plugin toolbar's options icon (as shown below) or by going to :"
-"menuselection:`Plugins ‣ InaSAFE ‣ InaSAFE Options`."
+"options dialog. The options dialog can be launched by clicking on the "
+"|project_name| plugin toolbar's options icon (as shown below) or by going to"
+" :menuselection:`Plugins ‣ InaSAFE ‣ InaSAFE Options`."
 msgstr ""
 
 # 6c170d31ede645a5830d3c99c80d5b19
@@ -635,8 +635,8 @@ msgstr ""
 msgid ""
 "The database can be opened using a sqlite editor such as sqliteman, but the "
 "data in the keywords table is not intended to be human readable or edited. "
-"The table columns consist of an MD5 hash based on the URI for the datasource "
-"(typically the database connection details) and a blob which contains the "
+"The table columns consist of an MD5 hash based on the URI for the datasource"
+" (typically the database connection details) and a blob which contains the "
 "keywords as a pickled python dictionary."
 msgstr ""
 
