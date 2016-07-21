@@ -1,298 +1,301 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# 
+# Translators:
+# Wulansari Khairunisa <wulan.khairunisa@gmail.com>, 2016
 msgid ""
 msgstr ""
-"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Project-Id-Version: staging.docs.inasafe.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-04 11:57+0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2016-01-04 11:56+0700\n"
+"PO-Revision-Date: 2016-07-20 03:39+0000\n"
+"Last-Translator: Wulansari Khairunisa <wulan.khairunisa@gmail.com>\n"
+"Language-Team: Indonesian (http://www.transifex.com/inasafe/inasafe-develop/language/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
-# 35c1a247f5de471496e50a6301d4b837
+# 650c8d038b024dd689c0421908f46302
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:10
 msgid "Chapter 4: Map Projection Basics"
-msgstr ""
+msgstr "Bab 4 : Dasar Proyeksi Peta"
 
-# 61c7b59b294b403092c042322af652d5
+# e8940f9abaf442cda52e6de487cb0e98
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:12
 msgid "**Learning Objectives**"
-msgstr ""
+msgstr "**Tujuan Pembelajaran**"
 
-# 0a41acff43dd46b4adfb0ff859748b69
+# 34fc289c9907414d95e7f4d096ee1059
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:14
 msgid "Understand Coordinate Reference Systems (CRS)"
-msgstr ""
+msgstr "Pemahaman Sistem Referensi Koordinat (Coordinate Reference System - CRS)"
 
-# 21c010cf13654dd9a8b69fc8eb7ab5bf
+# 9657973d4b1b4c3fa183885e2ec57011
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:16
 msgid "Identify the CRS of a vector dataset"
-msgstr ""
+msgstr "Identifikasi CRS pada dataset vektor"
 
-# 01988b8b1abd4c0b98a138d7f236b079
+# a50d718657f249fdbaaacdc2982fd8cb
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:18
 msgid "Doing “on the fly” reprojection"
-msgstr ""
+msgstr "Melakukan proyeksi ulang “on the fly”"
 
-# 9f67af83b32f4a7ca410b5070a8b3dd4
+# a6064ab708824b7ab39408ab0106f3f6
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:20
 msgid "Save dataset with a different CRS"
-msgstr ""
+msgstr "Simpan dataset dalam CRS yang berbeda"
 
-# 85db506ad28d490e849b603a37e00353
+# 8cde9447b4714be4b13b1ef10e1b8cfc
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:22
 msgid "Georeference Digital Image"
-msgstr ""
+msgstr "Melakukan Georeferensi pada Gambar Digital"
 
-# ceca321601ab409fbe9344a5fa096f4b
+# a1f90422924f4b17affcee6e01c177ad
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:24
 msgid ""
 "We’ve talked a little bit about Coordinate Reference Systems (CRSs) "
 "previously, but haven’t covered it in depth. In this chapter, we’ll look "
 "more at what a CRS means practically, and how it affects our work in QGIS."
-msgstr ""
+msgstr "Kita telah berbicara sedikit tentang sistem referensi koordinat (CRS) sebelumnya, tetapi belum mendalaminya lebih jauh. Pada bab ini, kita akan melihat lebih jauh pada apa yang dimaksud CRS secara praktis, dan bagaimana pengaruhnya terhadap pekerjaan kita di QGIS."
 
-# f460a307df5f400cba234ca59460cff0
+# 9de4f55848fe4c2a88a8ba57d4b126c6
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:29
 msgid "4.1 Coordinate Reference System (CRS)"
-msgstr ""
+msgstr "4.1 Sistem Referensi Koordinat (CRS)"
 
-# 6cee9b70bd5d460aa40a8931d864c721
+# 5efb75376026417faa06133cb7ef7464
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:31
 msgid ""
 "The CRS that all the data as well as the map itself are in right now is "
 "called WGS84. This is a very common Geographic Coordinate System (GCS) for "
 "representing data. But there’s a problem, as we will see."
-msgstr ""
+msgstr "CRS yang semua data maupun peta itu sendiri berada sekarang WGS84. Sistem Koordinat Geografis (GCS)  ini sangat umum untuk mempresentasikan data. Tetapi ada sebuah masalah, seperti yang akan kita lihat."
 
-# 94c5e629c1ba46c9b980c758a400ecad
+# c5500a1cb4584685859f2677ebd48ae4
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:35
-msgid "Open the project :file:`world.qgs`, located in the :file:`qgis/` folder"
-msgstr ""
+msgid ""
+"Open the project :file:`world.qgs`, located in the :file:`qgis/` folder"
+msgstr "Buka proyek :file:`world.qgis`, yang berlokasi di folder :file:`qgis/`"
 
-# 934bd25bdbed43c3a46884a78d32050d
+# 4549bd672dc74eebba41eda611793cf6
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:37
 msgid "Zoom in to Indonesia by using the :guilabel:`Zoom In tool`."
-msgstr ""
+msgstr "Perbesar ke wilayah Indonesia menggunakan tool :guilabel:`Perbesar` / zoom in."
 
-# 7230c4fbb1744bfd8c06502a77bf8930
+# 19269dd9681f4b91bab767503120c6cc
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:42
 msgid ""
 "Setting the scale in the Scale field, which is in the Status Bar along the "
 "bottom of the screen. While over Indonesia, set this value to 1:20000000 "
 "(one to twenty million)."
-msgstr ""
+msgstr "Atur skala di kotak Skala yang berada di Status Bar bagian bawah. Untuk di Indonesia, tetapkan nilai skala menjadi 1:20000000 (satu banding dua puluh juta)."
 
-# 2938ce8a0dd7410a83ac3c18d470c7ee
+# 6dfab1444f4d4a52a25c7ad4b3ff9c64
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:48
 msgid "Now pan around the map while keeping an eye on the Scale field."
-msgstr ""
+msgstr "Sekarang arahkan ke sekitar peta sembari tetap memperhatikan kotak Skala."
 
-# aeaf2ad41ef34252a657d37fe787b0eb
+# f5a76cf4b4b34881baca402d0dc6dac3
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:50
 msgid ""
 "Notice the scale changing? That’s because you’re moving away from the one "
 "point that you zoomed into at 1:20000000, which was at the center of your "
 "screen. All around that point, the scale is different."
-msgstr ""
+msgstr "Sadarkah bahwa skalanya berubah? Itu karena Anda bergeser jauh dari poin yang telah Anda perbesar hingga 1:20000000 sebelumnya, yang mana telah menjadi pusat dari tampilan layar komputer Anda. Pada intinya, skala dari sebelum dan sesudahnya adalah berbeda."
 
-# 1e59ba40b2c9407a94bbe4e767cd107f
+# d34225e296d749e48019331bd4426ebe
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:53
 msgid ""
 "To understand why, think about a globe of the Earth. It has lines running "
 "along it from North to South. These longitude lines are far apart at the "
 "equator, but they meet at the poles. In a GCS, you’re working on this "
-"sphere, but your screen is flat. When you try to represent the sphere of the "
-"earth on a flat surface, it becomes distorted, as if you took an orange peel "
-"and tried to flatten it. What this means on a map is that the longitude "
-"lines stay equally far apart from each other, even at the poles (where they "
-"are supposed to meet). This means that, as you travel away from the equator "
-"on your map, the scale of the objects that you see gets larger and larger. "
+"sphere, but your screen is flat. When you try to represent the sphere of the"
+" earth on a flat surface, it becomes distorted, as if you took an orange "
+"peel and tried to flatten it. What this means on a map is that the longitude"
+" lines stay equally far apart from each other, even at the poles (where they"
+" are supposed to meet). This means that, as you travel away from the equator"
+" on your map, the scale of the objects that you see gets larger and larger. "
 "What this means for us, practically, is that there is no constant scale on "
 "our map!"
-msgstr ""
+msgstr "Untuk memahami alasannya, pikirkanlah sebuah globe Bumi. Disana terdapat garis-garis yang melintang dari utara hingga selatan. Garis-garis melintang tersebut saling berjauhan dari garis khatulistiwa, tetapi mereka akan bertemu di kedua kutub. Dalam sebuah GCS, Anda bekerja dalam bentuk bidang ini, tetapi layar Anda datar. Ketika Anda mencoba untuk merepresentasikan bentuk bidang dari bumi dalam suatu bidang datar, itu akan terdistorsi, sama seperti bila Anda mengupas kulit jeruk dan meratakannya. Apa artinya ini, alam sebuah peta ialah bahwa garis lintang tetap saling berjauhan satu sama lain, bahkan di kutub sekali pun (dimana mereka seharusnya saling berimpitan). Hal ini diartikan bahwa saat Anda melakukan perjalanan jauh dari garis khatulistiwa di dalam peta Anda, skala objek yang Anda lihat akan lebih besar dan lebih besar. Apa artinya ini untuk kita, secara praktis, bahwa tidak ada skala konstan di dalam peta kita!"
 
-# c3ea6f3fe0fa46eb9bde3875f6c37cf5
+# 9a28b05aba984dd5af8792af65baffab
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:64
 msgid ""
 "To solve this, we’ll use a Projected Coordinate System (PCS) instead. A PCS "
 "“projects” or converts the data in a way that makes allowance for the scale "
 "change and corrects it. Therefore, to keep the scale constant, we should "
 "reproject our data to use a PCS."
-msgstr ""
+msgstr "Untuk menyelesaikan ini, kita akan menggunakan Sistem Koordinat yang telah Terproyeksi (PCS). Sebuah PCS memproyeksi atau mengubah data dengan cara membuatnya memungkinkan untuk perubahan skala dan mengoreksinya. Oleh karena itu, untuk mempertahankan skalanya, kita harus memproyeksi ulang data kita menggunakan PCS."
 
-# 65c2d12f9d784787861088d19fb133ab
+# d1aceabec50b4d2395641a323182ae1f
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:68
 msgid ""
 "**Projection** is the act of taking coordinates on a sphere (like the "
 "earth), and manipulating them so that they can be displayed on a flat "
 "surface."
-msgstr ""
+msgstr "**Proyeksi** adalah tindakan untuk mengambil koordinat dari sebuah bidang bulat (misalnya bumi), dan memanipulasinya sehingga dapat ditampilkan dalam sebuah bidang datar."
 
-# 7d84614837d640f3b3809502f8d5406d
+# ebb3f650b4a64174830a41760c7371aa
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:72
 msgid "4.2 “On the Fly” Reprojection"
-msgstr ""
+msgstr "4.2 Proyeksi ulang \"On the Fly\""
 
-# 009a061f2d3d43a181ea957d3309ee52
+# c252803819ec4ab9a71996a4f5dc133f
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:74
 msgid ""
 "Every QGIS project has a CRS, and each of the data layers have a CRS too. "
 "Often these are the same. Your project may be in WGS84, and the layers too. "
 "But sometimes you will add a layer that is not in the same CRS as the "
 "project, and you need QGIS to convert it so that it can be displayed along "
-"with the rest of the data. The term that we use for this is reprojecting *on "
-"the fly*."
-msgstr ""
+"with the rest of the data. The term that we use for this is reprojecting *on"
+" the fly*."
+msgstr "Setiap proyek QGIS memiliki sebuah CRS dan setiap layer data juga memiliki CRS. Sering kali memiliki CRS yang sama. Proyek Anda mungkin dalam WGS84, dan layernya juga. Tetapi kadang Anda akan menambah layer yang dengan CRS berbeda pada proyek yang sama, dan Anda butuh QGIS untuk mengubahnya sehingga dapat ditampilkan bersama dengan data lainnya. Istilah yang kita gunakan untuk hal ini adalah proyeksi ulang *on the fly*."
 
-# 810138ef405046598d345ae5da21809e
+# 314b68b49e4c41f8be1a1ffef2a8b4d4
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:80
 msgid ""
 "To enable “on the fly” projection, click on the :guilabel:`CRS` Status "
 "button in the Status Bar along the bottom of the QGIS window:"
-msgstr ""
+msgstr "Untuk mengaktifkan proyeksi \"on the fly\", klik pada tombol :guilabel:`CRS Status` di Status Bar pada bagian bawah jendela QGIS:"
 
-# e1540efc183d4c07bcf3099d16c56ac3
+# 93a0129bb9974f4da7c80831abe53247
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:86
 msgid ""
 "In the dialog that appears, check the box next to :guilabel:`Enable ‘on the "
 "fly’` CRS transformation."
-msgstr ""
+msgstr "Pada kotak dialog yang muncul, centang kotak di sebelah  :guilabel:`Aktifkan transformasi CRS ‘on the fly’`."
 
-# bf8116ca8f434abd8580cce0f735b7b3
+# f7cfd9835957403489db5cdaff42cea6
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:91
 msgid ""
 "Type the :kbd:`NSIDC` into the Filter field. One CRS :guilabel:`NSIDC EASE-"
 "Grid Global` will appear in the list below."
-msgstr ""
+msgstr "Ketikan :kbd:`NSIDC` di dalam kolom Saring. Satu CRS :guilabel:`NSIDC EASE-Grid Global` akan muncul pada daftar di bawah."
 
-# cefaadec1dd24ed3be73c463d2953786
+# b97a531336bf459eb749a197730a6ab2
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:96
 msgid "Click on it to select it, then click :guilabel:`OK`."
-msgstr ""
+msgstr "Klik pada CRS tersebut untuk memilihnya, kemudian klik :guilabel:`OK`."
 
-# 45c30b488fc9429cad2b69ac41b3a011
+# eafc74cbad824c538215f098179061ad
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:98
 msgid ""
 "Notice how the shape of Indonesia changes. All projections work by changing "
 "the apparent shapes of objects on Earth."
-msgstr ""
+msgstr "Perhatikan bagaimana bentuk Indonesia berubah. Semua proyeksi bekerja dengan mengubah bentuk nyata objek di permukaan Bumi."
 
-# 6fee88ebd57a4c3b9bc704bd770430bd
+# 3e64fcb76ab448b6a9afc226ead01676
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:100
 msgid ":guilabel:`Zoom in` to a scale of 1:20000000 again, as before."
-msgstr ""
+msgstr ":guilabel:`Perbesar` ke skala 1:20000000 lagi seperti sebelumnya."
 
-# 5c7c359525ee4a1797d1c5b0431b566a
+# 56917aa1525041119b3ea6830950c55a
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:102
 msgid ":guilabel:`Pan` around the map."
-msgstr ""
+msgstr ":guilabel:`Geser` sekitar peta."
 
-# 242fdc738e504b73a607b9be3370c69d
+# 56c871df3d3c47fcabbffe57e084318f
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:104
 msgid "Notice how the scale stays the same!"
-msgstr ""
+msgstr "Perhatikan bagaimana skala tetap sama!"
 
-# 7402ab0eb8124a5f8a999790322a21d1
+# 315fa2e4218f4dd6a8ed6a9f73dd48a7
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:106
 msgid ""
 "'On the fly' reprojection is useful for combining datasets that are in "
 "different CRSes."
-msgstr ""
+msgstr "Proyeksi ulang 'On the fly' berguna untuk menggabungkan dataset yang berada pada CRS yang berbeda."
 
-# e7d93a2d84a64dd6a3bf5a165cc14978
+# aba1801d8c59445ebac2ff9ff8eda1aa
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:108
 msgid ""
-"Deactivate “on the fly” reprojection again, by unchecking the box next to :"
-"guilabel:`Enable ‘on the fly’` CRS transformation."
-msgstr ""
+"Deactivate “on the fly” reprojection again, by unchecking the box next to "
+":guilabel:`Enable ‘on the fly’` CRS transformation."
+msgstr "Me-non-aktifkan proyeksi ulang 'on the fly' kembali, dengan menghilangkan centang pada kotak di sebelah :guilabel:`Aktifkan transformasi CRS ‘on the fly’`. "
 
-# 41184c964a9a4260b336d41157583845
+# dcd8d041d3b541598107d66943314594
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:110
 msgid ""
-"Now let’s add another vector layer, located in :file:`qgis/peta\\_dunia/"
-"Indonesia.shp`. What do you notice? The layer isn’t visible! But that’s easy "
-"to fix,right?"
-msgstr ""
+"Now let’s add another vector layer, located in "
+":file:`qgis/peta\\_dunia/Indonesia.shp`. What do you notice? The layer isn’t"
+" visible! But that’s easy to fix,right?"
+msgstr "Sekarang tambahkan layer vektor lainnya, yang terletak di :file:`qgis/peta_dunia/Indonesia.shp`. Apa yang Anda sadari? Layer tersebut tidak terlihat. Namun ini bukan sebuah masalah yang besar."
 
-# 341bdac9317e45b5b234bfe5045b432e
+# 95ae0ee7f8374961acf41ba4e96a6ec5
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:112
 msgid "Right-click on the layer in the Layers list."
-msgstr ""
+msgstr "Klik kanan pada layer di daftar Layer."
 
-# 408d69ec7ad0472b80f36c928a616ba1
+# 5aaf1bc28b9841969ae6eaa6e0e4d055
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:114
 msgid "Select :guilabel:`Zoom to Layer Extent`."
-msgstr ""
+msgstr "Pilih :guilabel:`Perbesar ke Layer`."
 
-# ed53097c31cd4e728dee88cfcb931d52
+# 9572f950834a40648a556b765bb0d8ce
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:116
 msgid "OK, so now we see Indonesia... but where is the rest of the world?"
-msgstr ""
+msgstr "Oke, sekarang kita melihat wilayah Indonesia... Tapi dimanakah wilayah muka bumi yang lainnya?"
 
-# 0413b9c0fb0d4ec59f44129c6ec9c8a7
+# 34babd0159c54211be8ab2ac57a921a4
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:118
 msgid ""
 "It turns out that we can zoom between these two layers, but we can’t ever "
-"see them at the same time. That’s because their Coordinate Reference Systems "
-"are so different. The **continents** layer is in degrees, but the "
+"see them at the same time. That’s because their Coordinate Reference Systems"
+" are so different. The **continents** layer is in degrees, but the "
 "**Indonesia** layer is in meters. In other words, one feature in the "
 "continents layer might be 8.5 degrees away from the equator, but the same "
 "feature in the Indonesia layer might be 900000 meters away from the equator."
-msgstr ""
+msgstr "Ternyata kita dapat perbesar antara dua layer ini, tetapi kita tidak dapat melihat mereka pada posisi yang sama. Hal ini karena Sistem Referensi Koordinat mereka berbeda. Layer **continents** dalam derajat, tetapi layer **Indonesia** dalam meter. Dengan demikian, satu fitur di layer continent mungkin 8,5 derajat dari khatulistiwa, tetapi fitur yang sama di layer Indonesia mungkin 900000 meter dari khatulistiwa."
 
-# 6a0c43371c6244908b433c428554407c
+# abfe11900b254bb49eaeaffaebd9325d
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:124
 msgid ""
 "8.5 degrees and 900000 meters is about the same distance, but QGIS doesn’t "
 "know that! One of our layers must be reprojected to match the other layer."
-msgstr ""
+msgstr "8,5 derajat dan 900000 meter adalah jarak yang sama, tetapi QGIS tidak mengetahui itu! Salah satu dari layer harus diproyeksi ulang untuk menyesuaikan dengan layer lainnya."
 
-# 9b060666660a493f97bd9eb3400ded74
+# 2df4a6b070734ef9b1a258575a3b95ab
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:127
 msgid "To correct this:"
-msgstr ""
+msgstr "Untuk memperbaiki ini:"
 
-# b299d653fad8463081dcefde59469efd
+# f58e9abbbb0143ebb18cc4e567958aed
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:129
 msgid ""
-"Switch :guilabel:`Enable ‘on the fly’` CRS transformation on again as before."
-msgstr ""
+"Switch :guilabel:`Enable ‘on the fly’` CRS transformation on again as "
+"before."
+msgstr "Ganti :guilabel: `Aktifkan transformasi CRS ‘on the fly’` kembali seperti sebelumnya."
 
-# 3b84b982e6174e768811fcd8853f10b3
+# 7e8986e0da8f4461a09e90ef78c23a6c
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:131
 msgid "Zoom to the extents of the Indonesia dataset."
-msgstr ""
+msgstr "Perbesar ke wilayah dataset Indonesia"
 
-# c254b63ff9e54fc2afc822ca0508251c
+# a4a931b9f5754c069047e0444579a602
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:133
 msgid ""
 "Now, because they’re made to project in the same CRS, the two dataset fit "
 "perfectly:"
-msgstr ""
+msgstr "Sekarang, karena mereka membuat proyek dengan CRS yang sama, kedua dataset akan saling bertampalan dengan sempurna:"
 
-# 9f860315e81d4264a513e70343a3ec38
+# 45fc5f31e34e49f7903ddc7e7d8fe3f2
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:138
 msgid ""
 "When combining data from different sources, it’s important to remember that "
 "they might not be in the same CRS. 'On the fly' reprojection helps you to "
 "display them together."
-msgstr ""
+msgstr "Ketika menggabungkan data dari sumber yang berbeda, ini sangat penting untuk diingat bahwa mereka mungkin tidak memiliki CRS yang sama. Proyeksi ulang 'on the fly' membantu Anda untuk menampilkan mereka secara bersamaan."
 
-# 4571bc63be2048c990515ce560548ccc
+# 70e6005558be4aa585cb98ec93e22ac6
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:142
 msgid "4.3 Dataset with different CRS"
-msgstr ""
+msgstr "4.3 Dataset dengan CRS berbeda"
 
-# 82a186992e424357b92dfe7334047bd4
+# 5f63505751824cf287e5613e49adb82f
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:144
 msgid ""
 "It’s great that QGIS can reproject layers on the fly so that we can work "
@@ -300,227 +303,227 @@ msgid ""
 "to reproject the layers, and can slow down our work. For this, or for other "
 "reasons, we might want to be able to reproject a dataset, and save it with "
 "the new projection."
-msgstr ""
+msgstr "QGIS dapat memproyeksi ulang layer sehingga kita dapat bekerja dengan layer tersebut dalam satu proyek yang sama. Tetapi ini membutuhkan banyak waktu untuk komputer kita dalam memproyeksi ulang layer, dan dapat memperlamban pekerjaan kita. Untuk ini, atau untuk alasan lain, kita mungkin ingin memproyeksi ulang dataset, dan menyimpannya dengan proyeksi baru."
 
-# b6811062ae9147b0b4889493068004a3
+# b162d5d1d7c44cd2bdcee6d96960de63
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:149
 msgid ""
 "Let’s reproject the :guilabel:`Indonesia` layer so that it is in the same "
 "CRS as the project. To do this, we will need to export the data to a new "
 "file using a new projection."
-msgstr ""
+msgstr "Mari memproyeksi ulang layer :guilabel:`Indonesia` sehingga layer ini memiliki CRS yang sama seperti proyeknya. Untuk melakukan ini, kita akan butuh mengekspor data ke file baru menggunakan proyeksi baru."
 
-# ac275a48bc9c44ee8bf7d3ec280c3041
+# 0963b0e1d71349aaa52cf4526520b8d2
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:152
 msgid "Right-click on the :guilabel:`Indonesia` layer in the Layers list."
-msgstr ""
+msgstr "Klik kanan pada layer :guilabel:`Indonesia` yang terdapat dalam daftar layer."
 
-# 6545437e4d5044af95a3cafe11ecd1df
+# 1f3053a324d245ebaea4684741ecd36e
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:154
 msgid ""
 "Select :guilabel:`Save As...` in the menu that appears. You will be shown "
 "the :guilabel:`Save vector layer as...` dialog."
-msgstr ""
+msgstr "Pilih :guilabel:`Simpan sebagai...` pada menu yang muncul. Anda akan melihat kotak dialog :guilabel:`Simpan layer vektor sebagai...`"
 
-# f97c67c289514a13a7b2b9c53c44ec59
+# 0c7fcdddd2aa4c73a873505f0a2096df
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:156
 msgid "Click on the :guilabel:`Browse` button next to the Save as field."
-msgstr ""
+msgstr "Klik tombol :guilabel:`Navigasi` di samping kolom *Simpan sebagai*."
 
-# b7f09380a59d42f2be4d07c86b085c25
+# f03347600cc5401495328947a431ceb6
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:158
 msgid ""
 "Navigate to :file:`qgis/peta_dunia/` and specify the name of the new layer "
 "as :kbd:`Indonesia_terproyeksi.shp`."
-msgstr ""
+msgstr "Navigasikan ke :file:`qgis/peta_dunia/` dan tentukan nama layer baru sebagai :kbd:`Indonesia_terproyeksi.shp`. "
 
-# 21ef5f1daf1940b1aaa06b9bacce3848
+# 773633dea2f94f5fa9efa765a35c063e
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:160
 msgid "Leave the :guilabel:`Encoding` unchanged."
-msgstr ""
+msgstr "Biarkan :guilabel:`Encoding` tidak berubah."
 
-# 06fe5f09c5184583b38663122d002231
+# d8fd093d69514c06920b2f582fec7b00
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:162
 msgid ""
 "Change the value of the Layer CRS dropdown by click on :guilabel:`Select "
 "CRS` icon in the right panel."
-msgstr ""
+msgstr "Ubah nilai Layer CRS pada menu pilihan di bawah dengan meng-klik ikon :guilabel:`Select CRS` pada panel di sebelah kanan."
 
-# aab76aeda6b24b0faf0785191ac22e15
+# 5e849479f22e44369d43bc0ededf23bd
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:168
 msgid ""
-"A :guilabel:`Coordinate Reference System Selector` window will appear. Type :"
-"kbd:`4326` in :guilabel:`Filter Box`"
-msgstr ""
+"A :guilabel:`Coordinate Reference System Selector` window will appear. Type "
+":kbd:`4326` in :guilabel:`Filter Box`"
+msgstr "Sebuah jendela :guilabel:`Pemilihan Sistem Referensi Koordinat` akan muncul. Ketik :kbd:`4326` pada kotak :guilabel:`Saring`"
 
-# 532b060250b04d7bb6f8848cd9c023ed
+# a541d4c269aa43c18796959c26539205
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:168
 msgid "and select :guilabel:`WGS 84` in the bottom side of the window."
-msgstr ""
+msgstr "dan pilih :guilabel:`WGS 84` pada bagian bawah dari jendela tersebut."
 
-# e48c27d9e9ef4f919daab581613e9798
+# b93aa44043bc47eda51d4a04b34c0704
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:173
 msgid "Click :guilabel:`OK`. You will back to :guilabel:`Save As…` window."
-msgstr ""
+msgstr "Klik :guilabel:`OK`. Anda akan kembali ke jendela :guilabel:`Simpan sebagai…`"
 
-# a0bc15150c744217abbe1f5045370503
+# c4468f602b20474ca4a41f91c797d571
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:175
 msgid "Check the box next to :guilabel:`Add saved file to map`."
-msgstr ""
+msgstr "Centang kotak di sebelah :guilabel:`Tambahkan berkas tersimpan ke dalam peta`."
 
-# 9655f36392e7471397aea76f1604adef
+# 464a4addf0b148f2a1e4069511ef1ec7
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:177
 msgid "The :guilabel:`Save vector layer as...` window now looks like this:"
-msgstr ""
+msgstr "Jendela :guilabel:`Simpan layer vektor sebagai...` sekarang terlihat seperti ini:"
 
-# 3559702238c943ddb6809088fa5c9632
+# 0e3152719f4141c9baeaf5f6e887321b
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:182
 msgid ""
 "Click :guilabel:`OK` and after a minute, you should be presented with a "
 "notification above map canvas telling that the process is finished."
-msgstr ""
+msgstr "Klik :guilabel:`OK` dan setelah beberapa menit, Anda akan melihat sebuah notifikasi di atas kanvas peta yang memberitahukan bahwa prosesnya sudah selesai."
 
-# e6ee47bdd5104439864488497feeabee
+# a70c6d216e264e278c87d0cde742fc49
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:184
 msgid ""
 "Now your new layer, :guilabel:`Indonesia\\_terproyeksi`, will be shown in "
 "the layers panel. If you turn off :guilabel:`on the fly` reprojection, this "
 "layer will still be shown correctly, because it has been reprojected into "
 "the same CRS as the project (and the :guilabel:`continents` layer)."
-msgstr ""
+msgstr "Sekarang layer baru Anda, :guilabel:`Indonesia_terproyeksi`, akan terlihat di panel layer. Jika Anda mematikan :guilabel:`proyeksi ulang “on the fly”`, layer ini akan tetap muncul dengan benar, karena telah diproyeksi ulang ke dalam CRS yang sama sebagai proyek (dan layer :guilabel:`continents`)."
 
-# 90e45df4078c437e85045e9abe679b01
+# fd4270a37aa6426989aebec5322a86d7
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:189
 msgid "4.4 Georeferencing Scanned Image"
-msgstr ""
+msgstr "4.4 Melakukan Georeferensi pada Gambar yang di-scan"
 
-# 4f39d4d09700428d889ab9f0cb0941d6
+# e57e434f242140f2a7d50f0d956026fa
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:191
 msgid ""
-"Georeference is the process of associating a physical map or raster image of "
-"a map with spatial locations and may be applied to any kind of object or "
+"Georeference is the process of associating a physical map or raster image of"
+" a map with spatial locations and may be applied to any kind of object or "
 "structure that can be related to a geographic location, such as point of "
-"interest, roads, places, bridges, or buildings. Georeferencing is crucial to "
-"making aerial or satellite imagery and also raster images to be able to "
+"interest, roads, places, bridges, or buildings. Georeferencing is crucial to"
+" making aerial or satellite imagery and also raster images to be able to "
 "overlay with other spatial data, like vector data and raster data."
-msgstr ""
+msgstr "Georeferensi adalah proses menghubungkan peta fisik atau gambar raster dengan lokasi spasial dan dapat dipakai untuk berbagai objek atau struktur yang terkait dengan lokasi geografis, seperti *point of interest* / titik penting, jalan, tempat, jembatan, atau bangunan. Melakukan georeferensi merupakan hal yang penting untuk membuat citra satelit dan juga gambar raster dapat dioverlay dengan data spasial lainnya, seperti data vektor dan data raster."
 
-# 8529518ca70847d88b22b817c7e950aa
+# 6670ab475d6f4ee88f7114aed62c4432
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:197
 msgid ""
 "To georeference an image, we need to establish point with geographic "
 "coordinates in these point, known as control points. This control point "
-"refer to actual position of objects in earth. These coordinates are obtained "
-"by doing field survey. For example, we need to georeference an aerial image "
-"and we know location an object in aerial image with exact location in earth. "
-"To georeference this, simply input the control points with coordinates that "
-"we know from field survey. We need 4 control points or more to georeference "
-"the image."
-msgstr ""
+"refer to actual position of objects in earth. These coordinates are obtained"
+" by doing field survey. For example, we need to georeference an aerial image"
+" and we know location an object in aerial image with exact location in "
+"earth. To georeference this, simply input the control points with "
+"coordinates that we know from field survey. We need 4 control points or more"
+" to georeference the image."
+msgstr "Untuk melakukan georeferensi sebuah gambar, kita perlu membuat titik dengan koordinat geografis di dalamnya, yang dikenal sebagai titik kontrol. Titik kontrol ini merujuk pada posisi aktual objek tersebut terhadap bumi. Koordinat-koordinat ini diperoleh dengan melakukan survei lapangan. Sebagai contoh, kita butuh melakukan georeferensi sebuah citra satelit dan kita mengetahui lokasi aktual dari sebuah objek di dalamnya. Untuk melakukan georeferensi, buat titik kontrol dengan koordinat yang kita ketahui dari survei lapangan. Kita membutuhkan paling tidak 4 titik kontrol atau lebih untuk melakukan georeferensi pada gambar tersebut."
 
-# 56dfce7877124393b1ed9a26313b568b
+# 4386da2f1ab94c36a563883469e1df04
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:204
 msgid ""
 "Let’s start to georeference an image that we got from `Geospasial BNPB "
 "<http://geospasial.bnpb.go.id>`_."
-msgstr ""
+msgstr "Mari mulai lakukan georeferensi sebuah gambar yang kita dapat dari `Geospasial BNPB <http://geospasial.bnpb.go.id>`_."
 
-# bb01ebc0dc354113b07fb7d94e462c4d
+# 2f59826534ae44acb8d5485cafe1db56
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:206
 msgid "Go to :menuselection:`Raster --> Georeferencer --> Georeferencer…`."
-msgstr ""
+msgstr "Pergi ke :menuselection:`Raster ‣ Georeferencer ‣ Georeferencer...`."
 
-# bdb56242a47d432eb5d5e3278a7855bf
+# 17b049c26ba04d6a965768aa92e9f3d3
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:208
 msgid ""
 "A new window will appear. Click :guilabel:`Open Raster` icon in upper left "
 "side of the window."
-msgstr ""
+msgstr "Sebuah jendela baru akan muncul. Klik ikon :guilabel:`Tambahkan layer raster` di bagian kiri atas dari jendela."
 
-# 506721e47d994d2581434d33e0402b9a
+# b1af2b5e8e23458b9e340e85e3a238d6
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:213
-msgid ""
-"Select :file:`peta\\_krb\\_merapi\\_2002.jpg` and click :guilabel:`Open`."
-msgstr ""
+msgid "Select :file:`peta\\_krb\\_merapi\\_2002.jpg` and click :guilabel:`Open`."
+msgstr "Pilih :file:`peta_krb_merapi_2002.jpg` dan klik :guilabel:`Open`."
 
-# c61da66801a140be9591e541068551e1
+# f84e77cbaa6a4a0395196a72f5ca6cc0
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:215
 msgid ""
 "In Coordinate Reference System Selector type :kbd:`4326` in filter box and "
 "select :guilabel:`WGS 84` as CRS."
-msgstr ""
+msgstr "Pada jendela Pemilihan Sistem Referensi Koordinat, ketik :kbd:`4326` di kolom Saring dan pilih :guilabel:`WGS 84` sebagai CRS-nya."
 
-# 09d5589580c7458eb338423414e7b948
+# 08faa9c88a99421ab0cc23cc4ea28d78
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:217
 msgid "An image will be appear in Georeferencer Window."
-msgstr ""
+msgstr "Sebuah gambar akan muncul pada jendela Georeferencer"
 
-# db44ac70b34c40c7ad6838583e86e43d
+# 583d4e2f98104c32970dcdeb4a2cac8f
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:219
 msgid ""
 "You can use the :guilabel:`zoom/pan` controls in the toolbar to learn more "
 "about the map."
-msgstr ""
+msgstr "Anda dapat gunakan kontrol :guilabel:`Perbesar/Geser` pada toolbar untuk lebih memahami petanya."
 
-# f44562c3bdce48ed80b871b26a4d1fb9
+# 486b0be878454eb8a0d2ad63ae716c50
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:224
 msgid ""
 "If you look closely, you will see coordinate grid with markings. Using this "
-"grid, you can determine the X and Y coordinates of the points where the grid "
-"intersect. Click on :guilabel:`Add Point` in the toolbar."
-msgstr ""
+"grid, you can determine the X and Y coordinates of the points where the grid"
+" intersect. Click on :guilabel:`Add Point` in the toolbar."
+msgstr "Jika Anda perhatikan lebih dekat, Anda akan melihat grid koordinat dengan penanda. Dengan grid ini, Anda dapat menentukan koordinat X dan Y untuk titik perpotongan grid tersebut. Klik :guilabel:`Tambah Poin` pada toolbar."
 
-# f92eb1b764da41419cd1febf1b859f35
+# 0ed61d121f0a43aab7c7dceb81d15764
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:234
 msgid "A new pop-up window will appear, enter the coordinates."
-msgstr ""
+msgstr "Sebuah jendela akan muncul, masukkan koodinatnya."
 
-# bd9e26626e014d8e954aeefdcf27c0f0
+# 0f62a5cc94de4982b5699fc4773e424a
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:232
 msgid ""
-"For Indonesia enter X for Bujur (BT) and Y for Lintang (LS). Click :guilabel:"
-"`OK`. It can use decimal degree (dd,dd), projected coordinates/UTM (mmmm,"
-"mmm) and degree minutes seconds (dd mm ss,ss) format. **Don’t forget to put "
-"Negative ( - ) in Y/North value for area in South part of equator**."
-msgstr ""
+"For Indonesia enter X for Bujur (BT) and Y for Lintang (LS). Click "
+":guilabel:`OK`. It can use decimal degree (dd,dd), projected coordinates/UTM"
+" (mmmm,mmm) and degree minutes seconds (dd mm ss,ss) format. **Don’t forget "
+"to put Negative ( - ) in Y/North value for area in South part of equator**."
+msgstr "Untuk Indonesia masukkan X untuk Bujur (BT) dan Y untuk Lintang (LS). Klik :guilabel:`OK`. Koordinat dapat menggunakan format decimal degree (dd,dd), projected coordinates/UTM (mmmm,mmm) dan degree minutes seconds (dd mm ss,ss). **Jangan lupa untuk menambahkan tanda Negatif ( - ) pada nilai Y untuk area di bagian Selatan dari equator**"
 
-# e4306bdac67b47b4968c65018ecbf552
+# 70409d2ded554761b20dbe8565c1943e
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:239
 msgid ""
 "Notice that GCP table in bottom window has a row with detail of your first "
 "GCP."
-msgstr ""
+msgstr "Perhatikan bahwa tabel GCP di bagian bawah memiliki sebuah baris dengan detail dari GCP pertama Anda."
 
-# 64af877bd43242a8b95a1c5712c18f0f
+# 4636b12ccb3b42809ff7a9d2702a9e6b
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:241
 msgid ""
 "Now, let’s add at least 4 GCPs that cover entire image. More GCP’s points "
 "will result more accurate image."
-msgstr ""
+msgstr "Sekarang mari tambahkan paling tidak 4 GCP yang mencakup keseluruhan gambar. Semakin banyak titik GCP akan menghasilkan gambar yang lebih akurat."
 
-# 4594364be1a542b2a8a5c75eb340d0a3
+# 091f5b7138114f8f9f790f374cba2901
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:246
 msgid ""
 "After input 4 or more points, click :guilabel:`Transformation Setting` in "
 "toolbar."
-msgstr ""
+msgstr "Setelah memasukkan 4 atau lebih titik, klik :guilabel:`Transformation Setting` pada toolbar."
 
-# 88b70b3accba494a961dc469dccd1239
+# 94dbf800bec143bca676a2bb6c1069ad
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:248
 msgid ""
 "Right click the entry in :guilabel:`GCP Table` to delete the GCP Point or "
 "select :guilabel:`Delete Control Point` tool in toolbar above the image, "
 "then use it to click on the Control Point in either the GCP table or "
 "Workspace Window"
-msgstr ""
+msgstr "Klik kanan pada keseluruhan :guilabel:`Tabel GCP` untuk menghapus titik GCP atau pilih tool :guilabel:`Delete Control Point` pada toolbar di atas gambar, kemudian gunakan ini untuk meng-klik pada Titik Kontrol baik pada Tabel GCP atau jendela area kerja"
 
-# bb6077d26c9c4333b9049b17ab522b00
+# 837da4e4faf349db8e75fac10ac19435
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:255
 msgid ""
-"The Transformation Setting Window is displayed. Follow all setting like this:"
-msgstr ""
+"The Transformation Setting Window is displayed. Follow all setting like "
+"this:"
+msgstr "Jendela Pengaturan Transformasi ditampilkan. Ikuti semua pengaturan seperti ini:"
 
-# e7ff4d0e6d464e0c9d15c3fadfe888da
+# bebb058662ce4219b80a45ffdcea2a19
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:260
 msgid ""
 "In QGIS there are several method s for transforming the image, these are "
@@ -528,37 +531,37 @@ msgid ""
 "polynomials, and the thin plate spline. These different Transformation "
 "Methods interpret your Control Point in different ways, and control how the "
 "map is fitted and warped to your georeferenced base map."
-msgstr ""
+msgstr "Dalam QGIS terdapat beberapa metode untuk mentransformasi gambar, yaitu linear, *Helmert*, 1\\ :sup:`st`, 2\\ :sup:`nd` dan 3\\ :sup:`rd` *order polynomials*, dan *the thin plate spline*. Metode-metode transformasi ini menginterpretasikan Titik Kontrol Anda dalam cara yang berbeda, dan mengontrol bagaimana peta disesuaikan posisinya ke peta dasar Anda yang tergeoreferensi."
 
-# f5426455ba634c6b9961756ea641a5e4
+# d0017358c3dd4216b2d09c6138f6f6a8
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:265
 msgid ""
 "For best fit, the thin-plate spline or higher-number polynomial "
-"transformations are often best. Its look like a true rubber sheeting method, "
-"transforms the source Control Point exactly to the target Control Points, "
+"transformations are often best. Its look like a true rubber sheeting method,"
+" transforms the source Control Point exactly to the target Control Points, "
 "and optimize for local accuracy opposed to global accuracy."
-msgstr ""
+msgstr "Untuk posisi terbaik, transformasi *thin-plate spline* atau *higher-number polynomial* merupakan yang paling sering digunakan. Transformasi ini terlihat seperti metode *true rubber sheeting*, mentransformasikan langsung sumber Titik Kontrol ke target Titik Kontrol, dan mengoptimalkan untuk membandingkan akurasi lokal dengan akurasi global."
 
-# 3d2bb5cfc2e04df1af4d3092e03e1aed
+# 47aeaf15012f417a88e12b8d1e88e23e
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:270
 msgid ""
 "To finish and export your georeferenced map, click the :guilabel:`Start "
 "Georeferencing` button"
-msgstr ""
+msgstr "Untuk menyelesaikan dan mengekspor peta yang telah Anda georeferensikan, klik tombol :guilabel:`Start Georeferencing` "
 
-# d799576a6fe949ed9bae334bba54e4d2
+# 47cc919c702f4f9e8f43ecbbef9da6fd
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:270
 msgid "in the :guilabel:`Main Toolbar` at the top of the QGIS Workspace."
-msgstr ""
+msgstr "pada :guilabel:`toolbar utama` di bagian atas halaman."
 
-# c09f68236f4d4938bd9dadcf8a0c4041
+# d015286258f74edd87996be0d484e4fe
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:275
 msgid ""
 "The Georeferencing is now complete. The georeferenced layer will loaded in "
 "QGIS Map Canvas."
-msgstr ""
+msgstr "Proses georeferensi sekarang sudah selesai. Layer hasil georeferensi akan dimuat di dalam Kanvas Peta QGIS."
 
-# 12d98fb65200452fa98b112148be3f03
+# 322c16b155e04175818ab053f39a463c
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:280
 msgid ""
 "Knowing how to georeference is important when we want to digitize from a "
@@ -566,9 +569,9 @@ msgid ""
 "already georeferenced like this, it can apply the same digitization "
 "techniques that we will learn in the next chapter to create vector "
 "shapefiles that can be used in QGIS and InaSAFE."
-msgstr ""
+msgstr "Mengetahui cara untuk melakukan georeferensi itu penting ketika Anda ingin mendigitasi dari sebuah peta kertas atau gambar yang belum memiliki informasi spasial. Ketika Anda telah melakukan georeferensi sebuah gambar dengan cara ini, Anda dapat melakukan teknik digitasi sesuai dengan apa yang akan kita pelajari di bab selanjutnya untuk membuat shapfile vektor yang dapat digunakan di QGIS dan InaSAFE."
 
-# 82ed01272ccb42a4a47a050e2fff11ae
+# 8a98b9c7e07d40d48ecfb01d38d8bdca
 #: ../../source/training/qgis/Chapter-04-Map_Projection_Basic.rst:284
 msgid ":ref:`Go to next chapter --> <ch5-working-with-vector-data>`"
-msgstr ""
+msgstr ":ref:`Pergi ke bab selanjutnya --> <ch5-working-with-vector-data>`"

@@ -28,7 +28,7 @@ The CRS that all the data as well as the map itself are in right now is called W
 This is a very common Geographic Coordinate System (GCS) for representing data.
 But there’s a problem, as we will see.
 
-1. Open the project :file:`world.qgs`, located in the :file:`qgis/` folder
+1. Open the project :file:`Chapter_4_Map Projection.qgs`, located in the :file:`QGIS for Disaster Management/` folder
 
 2. Zoom in to Indonesia by using the :guilabel:`Zoom In tool`.
 
@@ -103,7 +103,7 @@ The term that we use for this is reprojecting *on the fly*.
 
 9. Deactivate “on the fly” reprojection again, by unchecking the box next to :guilabel:`Enable ‘on the fly’` CRS transformation.
 
-10. Now let’s add another vector layer, located in :file:`qgis/peta\_dunia/Indonesia.shp`. What do you notice? The layer isn’t visible! But that’s easy to fix,right?
+10. Now let’s add another vector layer, located in :file:`QGIS for Disaster Management/peta_dunia/Indonesia.shp`. What do you notice? The layer isn’t visible! But that’s easy to fix,right?
 
 11. Right-click on the layer in the Layers list.
 
@@ -151,7 +151,7 @@ To do this, we will need to export the data to a new file using a new projection
 
 3. Click on the :guilabel:`Browse` button next to the Save as field.
 
-4. Navigate to :file:`qgis/peta_dunia/` and specify the name of the new layer as :kbd:`Indonesia_terproyeksi.shp`.
+4. Navigate to :file:`QGIS for Disaster Management/peta_dunia/` and specify the name of the new layer as :kbd:`Indonesia_terproyeksi.shp`.
 
 5. Leave the :guilabel:`Encoding` unchanged.
 
@@ -206,7 +206,7 @@ Let’s start to georeference an image that we got from `Geospasial BNPB <http:/
 .. image:: /static/training/qgis/4_010.*
    :align: center
 
-3. Select :file:`peta\_krb\_merapi\_2002.jpg` and click :guilabel:`Open`.
+3. Select :file:`QGIS for Disaster Management/Sleman/Merapi/peta_krb_merapi_2002.jpg` and click :guilabel:`Open`.
 
 4. In Coordinate Reference System Selector type :kbd:`4326` in filter box and select :guilabel:`WGS 84` as CRS.
 

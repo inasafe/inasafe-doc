@@ -10,7 +10,7 @@ This document is initial draft and still in reviewing phase by these parties:
 
 -  Badan Nasional Penanggulangan Bencana (BNPB)
 
--  Australia-Indonesia Facility for Disaster Reduction (AIFDR-DFAT)
+-  Disaster Management Innovation (formerly AIFDR)
 
 -  Humanitarian OpenStreetMap Team (HOT)
 
@@ -59,19 +59,17 @@ and coordinating the implementation of disaster management activities in a plann
 
 http://bnpb.go.id
 
-**Australia-Indonesia Facility for Disaster Reduction (AIFDR)**
+**Disaster Management Innovation (formerly AIFDR)**
 
 .. image:: /static/training/qgis/0_003.*
 	 :align: center
 
-The Australia-Indonesia Facility for Disaster Reduction (AIFDR) is a joint initiative
-between the governments of Australia and Indonesia.
-We work to strengthen Indonesia's ability to reduce the impact of disasters.
-The Australian and Indonesian governments at a special ceremony on 15 July 2010 launched the Australia-Indonesia facility.
-The launch marks an important event in the strong relationship now shared by both countries
-and their united commitment to better prepare for and respond to natural disasters in Indonesia.
-
-http://aifdr.org
+Disaster Management Innovation is the new Australian Government aid investment delivered by Geoscience Australia in
+Indonesia. DMInnovation builds on the success of The Australia-Indonesia Facility for Disaster Reduction (AIFDR) which
+was a joint initiative between the governments of Australia and Indonesia. AIFDR was launched by the Australian and
+Indonesian governments at a special ceremony on 15 July 2010 and was officially closed in August 2015. DMInnovation will
+maintain the important scientific technical assistance program delivered in partnership between Indonesian science
+agencies and Geoscience Australia.
 
 **Humanitarian OpenStreetMap Team (HOT)**
 

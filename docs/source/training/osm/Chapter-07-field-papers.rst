@@ -72,8 +72,8 @@ Now let’s learn how to create and use Field Papers.
 7.3 Create and Print Field Papers
 ----------------------------------
 
-1. Open your web browser. In the address bar at the top of the window, enter `http://fieldpapers.org/ <http://fieldpapers.org>`_ 
-   and press :kbd:`Enter`
+1. Open your web browser. In the address bar at the top of the window, 
+   enter `http://fieldpapers.org/ <http://fieldpapers.org>`_ and press :kbd:`Enter`
 
 2. The website should look something like the figure below:
 
@@ -89,88 +89,76 @@ Now let’s learn how to create and use Field Papers.
 
    *Make Field Papers*
 
-4. You will be directed to a page where you can enter a place where you would like to print out a map, 
-   and click on :guilabel:`Search` as shown in the figure below.
+4. You will be directed to a page like this where you can see there are some setting at left panel and 
+   main map at the right.
 
 .. figure:: /static/training/osm/7_007.*    
    :align: center
 
-   *Search Location in Field Papers*
+   *Compose Field Papers*
 
-5. Now you are presented with an interface where you can define the boundaries of your Field Papers. 
-   You can drag the map with the same way when you drag map in OpenStreetMap website, use the left button your mouse for drag map, 
-   and scroll your mouse for zoom in and zoom out. Click on :guilabel:`+` and :guilabel:`-` buttons 
-   in the upper left corner for zoom in and zoom out.
+5. On the main map, to find the area that you want to map, you can click search button and type the location name OR 
+   you can drag manually the map with the same way when you drag map in OpenStreetMap website, use the left button your mouse for drag map, and scroll your mouse for zoom in and zoom out. Click on :guilabel:`+` and :guilabel:`-` buttons in the upper left corner for zoom in and zoom out.  
 
 .. figure:: /static/training/osm/7_008.*    
    :align: center
 
    *Setting the area in Field Papers*
 
-6. At the top your maps are some setting for print out Field Papers. The first is used to adjust the paper size that you want use for print out Field Paper. 
-   You can choose :guilabel:`letter`, :guilabel:`A3`, or :guilabel:`A4`.
-
-.. figure:: /static/training/osm/7_028.*    
-   :align: center
-
-   *Setting the paper size in Field Papers*
-
-7. The second is used to adjust the paper orientation that you want use for print out Field Paper. You can choose between :guilabel:`portrait` 
-   or :guilabel:`landscape` as shown in the figure below.
+   Here you also can define the boundaries of your Field Papers. The boundaries is displayed as hollow box with 
+   black border. You want to make sure that the window displays the area of interest that you intend to map. 
+   You can add more page or less page. Make sure that your map can display building and road for field survey.
 
 .. figure:: /static/training/osm/7_009.*    
    :align: center
 
-   *Setting Paper Orientation in Field Papers*
+   *Setting the page in Field Papers*
 
-8. Next you can select the type data for your Field Papers. You can select different background for change map background. 
-   In this example shown in the figure below, we will select :guilabel:`Satellite Only`.
+6. At the left panel are some setting for print out Field Papers. The first is give information to your atlas 
+   by type a name on the **Atlas Title** column. If you want, you can add notes to be printed on the map, 
+   such as questions you want to remember to answer or specific places you want to identity by give a check mark 
+   on **Print notes** and type your notes on the **Notes** column.
 
 .. figure:: /static/training/osm/7_010.*    
    :align: center
 
+   *Setting atlas information in Field Papers*
+
+7. The second is the Grid Layout setting. The **Paper Size** is used to adjust the paper size that you want use 
+   for print out Field Paper. You can choose :guilabel:`letter`, :guilabel:`A3`, or :guilabel:`A4`. 
+   Then the **Orientation** is used to adjust the paper orientation that you want use for print out Field Paper. 
+   You can choose between :guilabel:`portrait` or :guilabel:`landscape` as shown in the figure below.
+
+.. figure:: /static/training/osm/7_011.*    
+   :align: center
+
+   *Setting the paper size and paper orientation in Field Papers*
+
+8. Still in Grid Layout setting, next you can select the type data for your Field Papers. You can select 
+   different **Basemap** for change map background. In this example shown in the figure below, 
+   we will select :guilabel:`Satellite Only`.
+
+.. figure:: /static/training/osm/7_012.*    
+   :align: center
+
    *Setting Map Background on Field Papers*
 
-9. You want to make sure that the window displays the area of interest that you intend to map. 
-   You can use the control map window to change size page your Field paper, or add more page or less page. 
-   Make sure that your map can display building and road for field survey.
+9. When you’re finished, click :guilabel:`MAKE ATLAS`
 
-10. When you’re finished, click :guilabel:`Next`
-
-.. figure:: /static/training/osm/7_011.*
+.. figure:: /static/training/osm/7_013.*
    :align: center
 
    *Next step to create Field Papers*
 
-11. Next :guilabel:`give a name to your map` in Field Papers as shown in the figure below. If you want, 
-    you can add notes to be printed on the map, such as questions you want to remember to answer 
-    or specific places you want to identity.
-
-.. figure:: /static/training/osm/7_029.*
-   :align: center
-
-   *Fill Name Field Papers*
-
-12. Finally choose your layout. You can indicate whether you want pages only for your maps, 
-    or if you want notes on the same page. If you choose the notes option half of your page will be left blank 
-    for taking notes, and the other half will contain your map. You can select :guilabel:`Maps Only` for default.
-
-.. figure:: /static/training/osm/7_013.*    
-   :align: center
-
-   *Change Layout Field Papers*
-
-13. Click on :guilabel:`Finished!`
-
-14. It may take a few minutes to prepare your final Field Papers map. When finished, you will see your Field Paper on this page, 
-    shown in the figure below.
+10. It may take a few minutes to prepare your final Field Papers map. When finished, you will see your Field Paper 
+    on this page, shown in the figure below.
 
 .. figure:: /static/training/osm/7_014.*    
    :align: center
 
    *The process preparing Field Papers*
 
-15. When your print is ready, Click :guilabel:`Download PDF`. The Field Paper should begin downloading. 
+11. When your print is ready, Click :guilabel:`Download PDF`. The Field Paper should begin downloading. 
     If it loads in your browser, you may need to save it by going to :menuselection:`File ‣ Save`.
 
 .. figure:: /static/training/osm/7_015.*    
@@ -178,7 +166,7 @@ Now let’s learn how to create and use Field Papers.
 
    *Download Field Papers*
 
-16. When the download is finished, open the PDF file. Connect your computer to a printer and print the page. 
+12. When the download is finished, open the PDF file. Connect your computer to a printer and print the page. 
     If everything goes well, you should now have map printed on paper.
 
 7.4 Mapping with Field Papers
@@ -198,11 +186,9 @@ Now let’s learn how to create and use Field Papers.
 1. Field Papers are very useful for mapping with nothing more than paper, but they are not a 100% solution. 
    We will still need to load our paper map into JOSM, add our information digitally, and save our changes on OpenStreetMap.
 
-2. The first step is to scan your Field Papers into your computer. You can do this by attaching a scanner to your computer, 
-   scanning the paper, and saving it as an image file. If you don’t have a scanner, you can take a photography of the paper, 
-   but you should be careful to take a very good photo. Make sure that the paper is flat 
-   and your camera is directly in front of it. Be sure to include the barcode in the image, 
-   as Field Papers will not work without it. Here is an example of a scanned/photographed image:
+2. The first step is to scan your Field Papers into your computer. You can do this by attaching a scanner to 
+   your computer, scanning the paper, and saving it as an image file. If you don’t have a scanner, you can take a photography of the paper, but you should be careful to take a very good photo. Make sure that the paper is flat 
+   and your camera is directly in front of it. Be sure to include the barcode in the image, as Field Papers will not work without it. Here is an example of a scanned/photographed image:
 
 .. figure:: /static/training/osm/7_016.*    
    :align: center
@@ -219,19 +205,23 @@ Now let’s learn how to create and use Field Papers.
 
    *Upload Field Papers*
 
-5. Click :guilabel:`Choose File` and navigate to the file where you scanned/photographed your Field Papers.
+5. Click :guilabel:`Browse...` and navigate to the file where you scanned/photographed your Field Papers.
 
 .. figure:: /static/training/osm/7_018.*
    :align: center
 
-   *Upload Field Papers*
+   *Select the to be uploaded to Field Papers website*
 
-6. Click on :guilabel:`Upload`.
-
-7. It may take a few minutes for your paper to upload, depending on the speed of your connection. 
-   When the upload finished, you can see the page interface as in the figure below:
+6. It may take a few minutes for your paper to upload, depending on the speed of your connection. 
 
 .. figure:: /static/training/osm/7_019.*    
+   :align: center
+
+   *Field Papers uploading process*
+
+7. When the upload finished, you can see the page interface as in the figure below:
+
+.. figure:: /static/training/osm/7_020.*    
    :align: center
 
    *The result from upload Field Papers*
@@ -250,7 +240,7 @@ and we open it using the same procedure for opening satellite imagery in JOSM.
 3. Type :kbd:`fieldpapers` in the :guilabel:`Search` box. After you find it, tick the fieldpapers box 
    and Click :guilabel:`OK` as shown in the figure below.
 
-.. figure:: /static/training/osm/7_020.*    
+.. figure:: /static/training/osm/7_021.*    
    :align: center
 
    *Field Papers Plugin*
@@ -266,16 +256,16 @@ and we open it using the same procedure for opening satellite imagery in JOSM.
 2. Click :guilabel:`Watch` – move your mouse to the bottom and click :guilabel:`Snapshots` until your browser page 
    looks like the figure below:
 
-.. figure:: /static/training/osm/7_021.*    
+.. figure:: /static/training/osm/7_022.*    
    :align: center
 
    *List Field Papers in Snapshots*
 
 3. To open Field Papers in JOSM, we need copy the photo ID from the Field Papers that have been scanned. 
    We can get the ID from the snapshot URL at the Field Papers website. Click on the image until the url appears as shown 
-   below, then copy the URL for example: *http://fieldpapers.org/snapshot.php?id=fdsbgzns#17/-6.20049/106.82533*
+   below, then copy the URL for example: *http://fieldpapers.org/snapshots/cdq5bfq4#17/-6.81299/107.61451*
 
-.. figure:: /static/training/osm/7_022.*    
+.. figure:: /static/training/osm/7_023.*    
    :align: center
 
    *URL from Snapshot Field Papers*
@@ -283,19 +273,19 @@ and we open it using the same procedure for opening satellite imagery in JOSM.
 4. Copy the URL by selecting it and pressing :kbd:`CTRL + C`.
 
 5. Open JOSM and make sure the Field Papers plugin is listed in the menu on the top of toolbar. 
-   Click :menuselection:`Field Papers ‣ Scanned Map`
+   Click :menuselection:`Field Papers ‣ Scanned Map...`
 
-.. figure:: /static/training/osm/7_023.*    
+.. figure:: /static/training/osm/7_024.*    
    :align: center
 
    *Field Papers Menu in JOSM*
 
 6. Then paste the URL that we have copied from the Field Papers site by pressing :kbd:`Ctrl + V` on your keyboard.
 
-.. figure:: /static/training/osm/7_024.*    
+.. figure:: /static/training/osm/7_025.*    
    :align: center
 
-   *Input Field Papers in JOSM*
+   *Input Field Papers URL in JOSM*
 
 7. Click :guilabel:`OK`.
 
@@ -303,21 +293,21 @@ and we open it using the same procedure for opening satellite imagery in JOSM.
    module, we can see how to add objects from the scanned Field Papers to
    OpenStreetMap.
 
-.. figure:: /static/training/osm/7_025.*    
+.. figure:: /static/training/osm/7_026.*    
    :align: center
 
    *Interface Field Papers in JOSM*
 
 Also note that you can use scanned Field Papers in other online editors such as ID Editor 
-or Potlatch2 by clicking the link :guilabel:`Edit in ID` or :guilabel:`Edit in Potlatch` 
+or Potlatch2 by clicking the link :guilabel:`Edit in... ID` or :guilabel:`Edit in... Potlatch` 
 on page Field Papers that have been scanned.
 
-.. figure:: /static/training/osm/7_026.*    
+.. figure:: /static/training/osm/7_027.*    
    :align: center
 
    *Editing Field Papers with iD Editor*
 
-.. figure:: /static/training/osm/7_027.*
+.. figure:: /static/training/osm/7_028.*
    :align: center
 
    *Interface Editing OSM data on iD Editor*

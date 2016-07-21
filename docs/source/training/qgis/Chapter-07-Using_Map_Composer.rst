@@ -27,7 +27,7 @@ In this module we will discuss the presentation of printed maps, and create our 
 
 The QGIS Map Composer allows you to prepare it for printing. Apart from the map, you are able to add additional information such as images, labels, legends, and scalebars.
 
--  Let’s start with some data in the Sleman regency that has already been symbolised. Open the project named **print\_2\_11.qgs** in the **qgis/** directory.
+-  Let’s start with some data in the Sleman regency that has already been symbolised. Open the project named :file:`Chapter_7_Map Composer.qgs` in the :file:`QGIS for Disaster Management` directory.
 
 .. image:: /static/training/qgis/7_001.*
    :align: center
@@ -36,7 +36,7 @@ This map shows some familiar layers from the previous module. We have the roads 
 
 Let’s see how we can use Map Composer to adjust the layout and prepare this map for printing.
 
--  Go to :menuselection:`Project ‣ New Print Composer`. Then, give an unique title name for your layout, for example: :kbd:`My Layout 1`. Click :guilabel:`OK`, then a new window will load that looks like this:
+-  Go to :menuselection:`Project ‣ New Print Composer`. Then, give an unique title name for your layout, for example: :kbd:`Sleman`. Click :guilabel:`OK`, then a new window will load that looks like this:
 
 .. image:: /static/training/qgis/7_002.*
    :align: center

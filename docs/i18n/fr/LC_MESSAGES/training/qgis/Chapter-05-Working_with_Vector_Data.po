@@ -1,63 +1,63 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# 
+# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Project-Id-Version: staging.docs.inasafe.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-04 11:28+0700\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2016-01-04 11:56+0700\n"
+"PO-Revision-Date: 2016-03-01 10:02+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language-Team: French (http://www.transifex.com/inasafe/inasafe-develop/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-# 9b3e3730fece411ea0bc7adeaf0d1982
+# fdbcaa6303d944ba912f5f8778021bfc
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:10
 msgid "Chapter 5: Working with Vector Data"
 msgstr ""
 
-# 9e24c8f7aaea4572acbf167ec8bc59d9
+# ae86270fc9f54ff08af04c31f0227c50
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:12
 msgid "**Learning Objectives**"
-msgstr ""
+msgstr "**Objectifs d'apprentissage**"
 
-# 223cafecfe9c42099e186dc65ac45dee
+# 2e9bd6d06a7e44e9bc76e95b4b893281
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:14
 msgid "Understand vector data"
 msgstr ""
 
-# f1e355d9c61a45f1b8653c109f1d4644
+# 271f8600f3a1426aa5af183b3f416b4b
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:15
 msgid "Identify attribute of vector data"
 msgstr ""
 
-# 3a5f03b9cdce42b2857d5b4888cd7e0f
+# b676d51b467e4dafb529876becd93985
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:16
 msgid "Create vector data"
 msgstr ""
 
-# 7f6fbf386ff14b15b40ce8df8966f63d
+# 08f67a4cbcd3401fbea6f81fe8b70cdf
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:17
 msgid "Add vector layers"
 msgstr ""
 
-# ffa9281d4dd34abfb747fc21b0aea8fb
+# aeb03e9776cd4cd08feaeaf117846ffa
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:18
 msgid "Symbolize vector layers"
 msgstr ""
 
-# 0bb5ca46e455408bb2918e1b40a3ec18
+# ae5658b0ca13407bbaaddbd7104f88b5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:19
 msgid "Add labels to vector layers"
 msgstr ""
 
-# 9cb8ce8b4ff24c81a10cdb745ffdcfc3
+# d1da7a15111f4ede836012907bd72f88
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:21
 msgid ""
 "In this chapter, we will learn what is meant by vector data. We will "
@@ -65,56 +65,56 @@ msgid ""
 "data in different ways."
 msgstr ""
 
-# 12e417374cfa4423bf3b6d8a7cc44269
+# 930af21720534ba7b1e8a5c052f85d36
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:25
 msgid "5.1 Vector Data"
 msgstr ""
 
-# d4f8d0b3c2474d6daaa332574dfe2a10
+# 84ab037ec78c485fa1fc13a904f3f04e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:27
 msgid ""
 "Vector data is the most common type of data found in GIS. A vector is "
-"essentially something in the form of a dots, or lines connecting those dots. "
-"In other words, points, lines, and polygons are all **vectors**. (curved "
-"lines are vectors too, but we won’t worry about that for now) We are already "
-"quite familiar with vector data because in the previous unit, we used JOSM "
+"essentially something in the form of a dots, or lines connecting those dots."
+" In other words, points, lines, and polygons are all **vectors**. (curved "
+"lines are vectors too, but we won’t worry about that for now) We are already"
+" quite familiar with vector data because in the previous unit, we used JOSM "
 "to create it!"
 msgstr ""
 
-# 2cfaf5f068f64bc7b269805eb2de8870
+# e42ad942f86e42fea2921a347ed2d349
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:35
 msgid ""
 "Each object in a vector dataset is referred to as a feature. When we are "
 "using JOSM we often refer to them as objects, but in traditional GIS "
 "terminology they are features. A polygon that represents a building is a "
-"feature, as is a line that represents a river. Each feature has a geographic "
-"location, and is attached to other data that describe the feature."
+"feature, as is a line that represents a river. Each feature has a geographic"
+" location, and is attached to other data that describe the feature."
 msgstr ""
 
-# e86bba71187f455da5cec029ac3febdf
+# 36fb0bdf2c8c43c59af5773cd85dc4a8
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:40
 msgid ""
-"One important thing to note is that QGIS layers can only contain one type of "
-"feature. That is, one layer can’t contain both point features and line "
-"features, because they are different types of data. Hence if you have a file "
-"that contains school polygons and another file that contains school points, "
-"you would add them as two separate layers."
+"One important thing to note is that QGIS layers can only contain one type of"
+" feature. That is, one layer can’t contain both point features and line "
+"features, because they are different types of data. Hence if you have a file"
+" that contains school polygons and another file that contains school points,"
+" you would add them as two separate layers."
 msgstr ""
 
-# 4813e302faca4513b4739a12fc01c2cf
+# 9f4df6a0cef7484e81c824a68267e7eb
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:44
 msgid ""
-"Almost always, polygon layers will be at the bottom of your layer list, line "
-"layers in the middle, and point layers at the top. You don’t generally want "
-"your polygons overlapping your lines and points."
+"Almost always, polygon layers will be at the bottom of your layer list, line"
+" layers in the middle, and point layers at the top. You don’t generally want"
+" your polygons overlapping your lines and points."
 msgstr ""
 
-# 87ac0169262c455c834176a6d4431533
+# 23590e989ffd417c832e2c3ae510d9d3
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:48
 msgid "5.2 Attribute Data"
 msgstr ""
 
-# 4c6dfb0e1f46480583a9d3060c12b396
+# 97dfc9466ded4aa3a51123a7d9315038
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:50
 msgid ""
 "It’s important to know that the data you will be working with does not only "
@@ -122,40 +122,40 @@ msgid ""
 "are."
 msgstr ""
 
-# 53fd06c9428340039ea49a1388870764
+# 98a25f5660ce418db30c35accde3c7ce
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:53
 msgid ""
 "Open the project :file:`sleman_2_5.qgs`. This is the same project that you "
 "worked with previously."
 msgstr ""
 
-# d09d8cd975184455b49e3a984808b720
+# 80c2e58ba44c48df953ab1e1d8b477e6
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:55
 msgid "Close the InaSAFE panel if you still have it open."
 msgstr ""
 
-# 0c4e45dffcdb4bf79e71a2ea02dbfb2f
+# 91988c2483d34f24a1a930feb6304acf
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:57
 msgid ""
 "You can see in your project the position of Sleman districts, the railway, "
 "and some roads, but you can’t see all of the data contained in those layers."
 msgstr ""
 
-# affef5124b584994895dba88a88b529f
+# cc29088d7b4c4468aff6330fb61ae4d2
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:60
 msgid "Select :guilabel:`Jalan_Sleman_OSM` in the layers list."
 msgstr ""
 
-# 2e6b142234ee49e98fca3f2cd3479e23
+# bbe7a49c38cb4420b599d2ee30629d71
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:65
 msgid "Click the :guilabel:`Open Attribute Table` button:"
 msgstr ""
 
-# b2726b58184d4b328da58b1319064da3
+# 49cf458407854185b4ee9945677e18eb
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:70
 msgid ""
-"You will see a table with more data about the streets layer. This extra data "
-"is called **attribute data**. The lines that you can see on your map "
+"You will see a table with more data about the streets layer. This extra data"
+" is called **attribute data**. The lines that you can see on your map "
 "represent where the streets go - this is the **spatial data**. You will "
 "remember in JOSM that there was the same division. The points, lines, and "
 "shapes you drew tell us **where** , but the tags, or attributes, tell us "
@@ -163,48 +163,49 @@ msgid ""
 "remember them!"
 msgstr ""
 
-# f04bb068937041a8a131c3ff3f2fd96d
+# 5438303de3f1437c9df7fb61749f7bb0
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:79
 msgid ""
-"Take a look at the attribute table. Each row in the table is associated with "
-"one feature in the streets layer. Each column contains one of the "
+"Take a look at the attribute table. Each row in the table is associated with"
+" one feature in the streets layer. Each column contains one of the "
 "attributes. If you select other layers and click on the :guilabel:`Open "
 "Attribute Table` button, you’ll see different tables."
 msgstr ""
 
-# a4ea00cf3dc94d04b916b488b95795e7
+# e4e2a68e63a7424b813db3064857f507
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:83
 msgid "Close the attribute table."
 msgstr ""
 
-# 552926b4c67942d6af4c8ffe0876c21e
+# 2dab9df2574c4d47a9b84c347d75a8b9
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:86
 msgid "5.3 Creating Vector Data"
 msgstr ""
 
-# 9243b46a959441e394a02c86626195e7
+# a303ecfe5f2f4e23b41da173173fb703
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:88
 msgid ""
 "Before you can add new vector data, you need a vector dataset (a layer to "
 "add it to). In our case, we’ll begin by creating a new data layer, and then "
-"we will discuss how to edit existing vector layer in QGIS, and how to create "
-"an entirely new dataset."
+"we will discuss how to edit existing vector layer in QGIS, and how to create"
+" an entirely new dataset."
 msgstr ""
 
-# cffe3f22890e447ba3402450997f3e3a
+# 69fc3c7b0a974866a68e3b58b02bafb4
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:92
 msgid ""
-"Create a new project in QGIS by clicking on the :guilabel:`New Project` icon."
+"Create a new project in QGIS by clicking on the :guilabel:`New Project` "
+"icon."
 msgstr ""
 
-# 81ec58f7912a4496af4868de6bab378f
+# 75fe83dfb47b43628ee5725ce7b701d7
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:94
 msgid ""
-"Go to :menuselection:`Layer ‣ Create Layer ‣ New Shapefile Layer`. You’ll be "
-"presented with the following dialog:"
+"Go to :menuselection:`Layer ‣ Create Layer ‣ New Shapefile Layer`. You’ll be"
+" presented with the following dialog:"
 msgstr ""
 
-# 0b0920b2332e463fa53a616e1bdb4582
+# 5e8735fe015044c7b958a1a2361c1345
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:99
 msgid ""
 "At this point we must decide what kind of dataset we want to create. "
@@ -213,19 +214,19 @@ msgid ""
 "of data it will contain."
 msgstr ""
 
-# 5572286f88eb4fd4bbc521ec0984cddb
+# cc3d8b093c0c471283d01305bd7b448a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:103
 msgid ""
 "Since polygon are made up of points and lines. Let’s jump into polygons. "
 "Once you’ve mastered this, creating a point or a line should be easy!"
 msgstr ""
 
-# 09ad88928b7448bf8bcce5a381b5ffef
+# 2e432204445442e79b4abe48af5b827b
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:106
 msgid "Check the box next to **Polygon**."
 msgstr ""
 
-# f169ea836e6a4f0da35f868af7b72439
+# db6da8583bf34cfe9469aa90ec0f0564
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:111
 msgid ""
 "We’ll specify the Coordinate Reference System (CRS) in the next box. By "
@@ -233,7 +234,7 @@ msgid ""
 "WGS84. This is a widely used and very useful CRS, so let’s stick with it!"
 msgstr ""
 
-# d1087ec49cd848dd8ac8567fc2103b96
+# 2218a6ce00f340a0a19a76612d9b63ac
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:117
 msgid ""
 "When we create our new layer, the attribute table will only have one column "
@@ -242,41 +243,41 @@ msgid ""
 "create the layer. Let’s add a name ﬁeld."
 msgstr ""
 
-# 2d1c8f58f5484db195124c754bd9806f
+# f29caf87b3ee462e8ccae87987795f16
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:121
 msgid ""
 "Type :kbd:`keterangan` into the boxt next to Name. The setting should match "
 "those shown here:"
 msgstr ""
 
-# 6d1e54bcce954550a46de4b858b54edc
+# abb81867968b438bbde11bfd722b51ea
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:126
 msgid ""
 "Click the :guilabel:`Add to attributes list` button. Your attributes list "
 "should now look like this."
 msgstr ""
 
-# d70d2ccae8114e1f9153167cdf5b4a26
+# b40bfdca83ab47e5a27fcdce4ab80911
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:131
 msgid "Click :guilabel:`OK`. A save dialog will appear."
 msgstr ""
 
-# d7fe17a06c2a42dfa868fba2a557cb05
+# cb5f5add1a7345149f24f4f4e466fd8a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:133
 msgid "Navigate to a directory of your choosing."
 msgstr ""
 
-# 5f09e9527db64d5595169921e741490f
+# 18d7b7da88dc48b1b1e595e390ada357
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:135
 msgid "Save the new layer as :file:`krb_merapi.shp`."
 msgstr ""
 
-# 2d51f20ffca74a8fa57b58161f69a591
+# dc91affbf64e4b52b44a785f9b2c4b10
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:137
 msgid "The new layer should appear in your Layer panel."
 msgstr ""
 
-# a5bd739c35284c7391805e6b6f779799
+# bcfd7c5eb69a4c3b94d91dea92c5785c
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:139
 msgid ""
 "Shapefile is a commonly used geographic file format. It can easily be "
@@ -284,45 +285,45 @@ msgid ""
 "file."
 msgstr ""
 
-# 2555cd1a38804446a2294dd15b2be072
+# d4bd18fb6371409fb0029362a72ecd4e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:143
 msgid "5.3.1 Digitising Vector Data"
 msgstr ""
 
-# 34f2b3018c2249ef8d3c2cc241832bd6
+# 57ef212fe38d4d54b78cd989b666ac74
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:145
 msgid ""
 "Digitising, as you might have guessed, is the art (or science) of creating "
-"digital vector data from another source, such as a raster image. In order to "
-"begin digitising, we must firt enter edit mode. GIS software commonly "
+"digital vector data from another source, such as a raster image. In order to"
+" begin digitising, we must firt enter edit mode. GIS software commonly "
 "requires a separate mode for editing, to prevent user from accidentally "
 "editing or deleting important data. Edit mode is switched on or off "
 "individually for each layer."
 msgstr ""
 
-# 8da299f3743d4def89388c4c043b525c
+# c01692ac8a4c4bfa84457ca86abbbfc8
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:150
 msgid ""
 "Open raster layer :file:`peta_krb_merapi_2002_modified.tif` in left QGIS "
 "toolbar:"
 msgstr ""
 
-# 18f4d8b4ddac4040af3b4913bed9e96c
+# 59c18eb325aa426fa17f790efcff0625
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:155
 msgid "Open vector layer :file:`krb_merapi.shp`:"
 msgstr ""
 
-# f9b4c0cd78824d7ea72a48ef28c25e61
+# a5096ca22b4b401a91642df8fea00459
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:160
 msgid "Select :file:`krb_merapi.shp` in the Layers panel."
 msgstr ""
 
-# 9da4c26c26e3431db0e87123ca7dd34b
+# f6ef841b6baf4a8eb1bf317be0c8f894
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:162
 msgid "Click on the :guilabel:`Toggle Editing` button:"
 msgstr ""
 
-# 79a4d228fa9c4b90ba4b0949f214d1d6
+# 30dff679b593477da5b71da709ffcb88
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:167
 msgid ""
 "If you can’t find this button, ensure that the Digitising toolbar is "
@@ -330,77 +331,77 @@ msgid ""
 "Toolbars ‣ Digitizing` menu entry."
 msgstr ""
 
-# 6aec6f18d8b84191899f9532ee76530d
+# 4fe8f049a6c24792aaab21c8382a1531
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:170
 msgid "One you are in edit mode, the digitising tools will become active:"
 msgstr ""
 
-# 8812e3918cd643db9852d14f620adfe0
+# 2fbcc3e10b9f45738d502266af08894d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:175
 msgid "From left to right on the image above, they are:"
 msgstr ""
 
-# 7c5a3653804549b9bb78581d047d2a49
+# 93fb5ca6ffa9447d9ae751cf1d7ecb96
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:177
 msgid "**Toggle Editing**: activates / deactivates edit mode."
 msgstr ""
 
-# f5e58bf021c44a86a9f8b9c30f5188f6
+# f64cefd899c04ca080fce957aa795160
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:178
 msgid "**Save Layer Edits**: saves changes made to the layer."
 msgstr ""
 
-# e01e287091b24a63ac5ecd17f84555c6
+# a1493dc4b41644b8a533a1f5bc672ec5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:179
 msgid "**Add Feature**: start digitising a new feature."
 msgstr ""
 
-# 481681480a8f4acab47f266aed523207
+# 3f9fb0f6a8fa443399a846e2fa16fbb2
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:180
 msgid "**Move Feature(s)**: move an entire feature around."
 msgstr ""
 
-# 1777a8b757dd4d3da86e7e9d41d36ec3
+# 30814e3dbf4f48d8a61e6c4543dccbe8
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:181
 msgid "**Node Tool**: move only one part of a feature."
 msgstr ""
 
-# 3cf52d0456ee4224a4a4d1f0c6f51b65
+# 4b3af2da2eef4a38b1b6c6b939842de8
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:182
 msgid ""
 "**Delete Selected**: delete the selected feature (only active if a feature "
 "is selected)."
 msgstr ""
 
-# a793fc7c2e1141d2936ab46a73993c0a
+# 666f4f63744e44cb884e97af43b1dec4
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:183
 msgid ""
 "**Cut Features**: cut the selected feature (only active if a feature is "
 "selected)."
 msgstr ""
 
-# 7f6763f71b2949e2938d426dc5ae2914
+# aa9c9068ecd14cadb74bc73ba88e616c
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:184
 msgid ""
 "**Copy Features**: copy the selected feature (only active if a feature is "
 "selected)."
 msgstr ""
 
-# 188cb169b3db45298eda0ee8c024fa9b
+# 6f183f0fca194e389227e46949f474fe
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:185
 msgid ""
 "**Paste Features**: paste a cut or copied feature back into the map (only "
 "active if a feature has been cut or copied)."
 msgstr ""
 
-# 9893c862e0464dcdb364e3f8bd714abe
+# a364d611e0b8426f90a9e4ba6b0bc30e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:188
 msgid ""
 "Before you start digitising, go to :menuselection:`Setting ‣ Snapping "
 "Options…`"
 msgstr ""
 
-# 2ac8df9b781b4b67bc3456742c0b16e7
+# ae4a628c769e49f1ace57bd7ebd6847c
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:190
 msgid ""
 "Change Snapping mode to **Advanced**, and check **krb_merapi** layer with "
@@ -408,17 +409,17 @@ msgid ""
 "to pixels:"
 msgstr ""
 
-# 69ca28cf64e94bb29c7779774e2d4471
+# 0763335270a044b0b054c70e2cbf8081
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:196
 msgid ""
 "It’s important to check Avoid intersection if you want to create a polygon "
 "with each feature snap each other."
 msgstr ""
 
-# e89fe0f1454c42f18ca6764a966726c2
-# b7b8faf2edc44584b9741952fcb9fd59
-# c2a01a51ea91449eb6e81bd45b7f83c5
-# 98af5a6d201e44d4a0ab385a26096aa5
+# 2362bc79f8e843d0b621b53458d3f2d8
+# 4f738611aff843cf82a2e03ec5ebf6d1
+# 53a7690db51e41bbb958759f6f1974ee
+# 89de36e070ea412eb05007fb8bbbf66a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:199
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:227
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:409
@@ -426,112 +427,112 @@ msgstr ""
 msgid "Click :guilabel:`OK`."
 msgstr ""
 
-# c400af02ef5b43ec947a75fb55521867
+# a21cfc30444b4fd8aa311a9d20943b6d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:201
 msgid ""
 "Let’s add new feature. Click on the :guilabel:`Add Feature` button to start "
 "digitising:"
 msgstr ""
 
-# bcb466037c3945e4b987aac7222986e1
+# 3b2f479cf4514db686126a4bda018ff5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:206
 msgid ""
 "You’ll notice that your mouse cursor become a crosshair. This allow you to "
-"more accurately place the points you’ll be digitising. Remember that even as "
-"you’re using the digitising tool, you can zoom in and out on your map by "
+"more accurately place the points you’ll be digitising. Remember that even as"
+" you’re using the digitising tool, you can zoom in and out on your map by "
 "rolling the mouse wheel, and you can pan around by holding down the mouse "
 "wheel and dragging around in the map.*"
 msgstr ""
 
-# 7acd7d3b33224544b9fc12085d916227
+# 5650e284c0f1436c96691fdbb48ac008
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:211
 msgid ""
 "Start by clicking on a point somewhere along the edge of the dark pink area."
 msgstr ""
 
-# e11b3d9a5caa4f8b93a42d887ba8275f
+# 735ca832628a4dc0b38e77f9ee087bd7
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:213
 msgid ""
-"Place more points by clicking further along the edge, until the shape you’re "
-"drawing completely covers the field. This is very similar to drawing a "
+"Place more points by clicking further along the edge, until the shape you’re"
+" drawing completely covers the field. This is very similar to drawing a "
 "polygon in JOSM."
 msgstr ""
 
-# f1c1970cbd6d4849abc5aaf12f1a95cc
+# d38589b89386490385a50d8743b91c2e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:219
 msgid ""
 "To place the last point, right-click where you want it to be. This will "
 "finalise the feature and bring up the Attribute form filling dialog."
 msgstr ""
 
-# 1b9e357f9a6f4e709183bf27fd8403b8
+# 50beeb5b958744dea05028901ca2c3c2
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:222
 msgid "Fill in the values as shown here:"
 msgstr ""
 
-# 650def81120b4a75924b6799e4cc7e48
+# 31336a0df33b41aca12685b38ea9b6ca
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:229
 msgid ""
 "If you make a mistake while digitising a feature, you can always edit it "
 "later. Simply finish digitising the feature and then follow these steps:"
 msgstr ""
 
-# 1ee0c64764554d8d958602f76691c2f0
+# d779cd7722784a7085e6ffb7e14ba85d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:232
 msgid "Select the feature with the :guilabel:`Select Feature` tool:"
 msgstr ""
 
-# 1a14a673d6094fd288f6ac75c6c08abd
+# 756b437eb3c44feb9be79ce44fc8fbb2
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:237
 msgid "Then use one of these tools to edit the feature:"
 msgstr ""
 
-# 8069f9a56117446abe16540dd239cbf1
+# 863c7e0224e8469ea42d1e82023afe0a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:240
 msgid "Move feature(s) tools"
 msgstr ""
 
-# 3b9768a9a0f5452b804c5443830ce56e
+# 2dfc6aa139ed4402940e49742772baaa
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:240
 msgid "Move entire feature(s)"
 msgstr ""
 
-# 43722907dfaf4cdc8dcb26c9519396ec
+# cd4dfdbcb76745ca898e00a77d7d1aa3
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:242
 msgid "Node tools"
 msgstr ""
 
-# a68c93ce62a543feb6249b388dc3a1f1
+# 3b163ad209154a34ab579fdceaff5ade
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:242
 msgid "Move only one point where you may have misclicked"
 msgstr ""
 
-# 02fd710c1ff9442480cd8679e183dde8
+# 0375e7cd08b64f13a9e0f1484fcc64c3
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:245
 msgid "Delete selected"
 msgstr ""
 
-# f30fcb8402784020a0592df5b39d526f
+# 29e075ae08b64b5eb0bc3af20aa93054
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:245
 msgid "Get rid of the feature entirely so you can try again"
 msgstr ""
 
-# 589a54f9218e402893284ecc546b7af1
+# 707d990cf1514109bd0fc240788cdcd5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:248
 msgid "Undo"
 msgstr ""
 
-# edc19cd3db334c599ceaa6d32a35dd49
+# a329a1aa39cc4f46a2171b3a8aa8051e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:248
 msgid "Undo mistakes or press :kbd:`Ctrl + Z` on keyboard"
 msgstr ""
 
-# 000dbe26754c48059801cb01f09531b2
+# cc48dac5f66d4adba68459821b725dcf
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:252
 msgid "Now try it on your own:"
 msgstr ""
 
-# e050ac5963984249b799d470197f468b
+# 5325dde85ce14560bcd16886979c99fc
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:254
 msgid ""
 "Digitise all the hazard prone area from inner circle and then to outer "
@@ -540,106 +541,106 @@ msgid ""
 "right side."
 msgstr ""
 
-# ea3fd80754124a8ea342976bcd2049c2
+# 1132dd2f34234744970242c39f24aca9
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:260
 msgid "Remember that each new feature need to have a unique id value!"
 msgstr ""
 
-# 7aafd42e11b84c0794aca9c5d8680247
+# d6d83173a7894eeb8282baa1f154a115
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:262
 msgid ""
 "When you are finished adding feature to a layer, you must savee the changes "
 "to that layer."
 msgstr ""
 
-# 84c9952b447c4a88823c41a95ca320f2
+# 40f430f92d144edb86fbd0664b97679a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:264
 msgid "Click on the :guilabel:`Toggle Editing` button."
 msgstr ""
 
-# 2fb782d4e77b42dc82db902897e7832a
+# 54ef7513fa5c460bbeeab610f7b67d58
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:266
 msgid "You will be asked to save your edits. Click :guilabel:`Save`."
 msgstr ""
 
-# 78d6d0e4f9ae4b7d928d2a431e59cfad
+# 1b4872cc7ea441f28e4bd701ccfd0706
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:271
 msgid ""
 "Now you know how to create polygon feature! Creating points and line layer "
 "is just as easy – you simply need to define the type of layer when you "
-"create it, and of course you can only create point in point layers and lines "
-"in line layers."
+"create it, and of course you can only create point in point layers and lines"
+" in line layers."
 msgstr ""
 
-# 17fdc17b60124c7aa7205178b8ab74fa
+# 0482b456b8d6429da0d2738505af4144
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:276
 msgid "5.4 Adding Vector Data"
 msgstr ""
 
-# c620a91487404c59b3c875f43adf1da1
+# 7b66f71c1f3f4e2f935b8c0cf819d73d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:278
 msgid ""
 "As we mentioned previously, a shapefile is a commonly used geographic file "
-"format. It can easily be converted into other formats, and most GIS software "
-"can read this type of file. You may notice when adding a shapefile that "
+"format. It can easily be converted into other formats, and most GIS software"
+" can read this type of file. You may notice when adding a shapefile that "
 "there are numerous files in your shapefile directory with the same name. "
-"This is because a shapefile actually relies on a collection of several other "
-"files to store the data and keep various settings. When you add a shapefile "
-"to your project, you should always add the one that ends in **.shp**, but "
+"This is because a shapefile actually relies on a collection of several other"
+" files to store the data and keep various settings. When you add a shapefile"
+" to your project, you should always add the one that ends in **.shp**, but "
 "the rest of the files are important too!"
 msgstr ""
 
-# 6e2b012707fb4506aec66a27f9355c60
+# 3cf75a4a518d4d53af521fa50a322c04
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:284
 msgid ""
-"Do you remember how to add a shapefile? Try adding the layer :file:"
-"`POI_Sleman_OSM`, from the shapefile located in the tutorial directory. If "
-"you don’t remember how to add a new vector layer, refer to the instructions "
-"in chapter 2."
+"Do you remember how to add a shapefile? Try adding the layer "
+":file:`POI_Sleman_OSM`, from the shapefile located in the tutorial "
+"directory. If you don’t remember how to add a new vector layer, refer to the"
+" instructions in chapter 2."
 msgstr ""
 
-# a2bf307e143a45479a6fb14123d35c65
+# a144b0a366694a059642c9713becccb2
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:288
 msgid "Your project should look like this after the new layer has been added:"
 msgstr ""
 
-# 7ca2c4b42e2a423491525522caf3132a
+# 8577461f7ee44578977a6cf05fa30a59
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:293
 msgid "**Databases**"
 msgstr ""
 
-# dc44a2fd20eb4e13b018fb8d695102ed
+# ff035704b246435a901294a9694b43f5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:295
 msgid ""
 "Shapefiles (and other types of files) are one way to store geographic data. "
 "You can also load a vector layer into QGIS from a database. You may already "
 "be familiar with Database Management Systems (DBMS) such as Microsoft "
 "Access. GIS applications also make use of databases to store geographic "
-"data. Databases can be hosted and used locally on your computer, or could be "
-"shared between users over a network or even the internet."
+"data. Databases can be hosted and used locally on your computer, or could be"
+" shared between users over a network or even the internet."
 msgstr ""
 
-# f21abe501dd74eb5b50bec8a9b26e765
+# 476a4da5630e48ad9d98581ef8e23903
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:300
 msgid ""
 "Let’s try adding a layer from a database. Click on the following icon. If "
-"you can’t find it, right-click on the toolbar and make sure that the “Manage "
-"Layers” toolbar is enabled."
+"you can’t find it, right-click on the toolbar and make sure that the “Manage"
+" Layers” toolbar is enabled."
 msgstr ""
 
-# fbbbd321903f481194cbb0ca52060032
+# 23233154862f4157bc474a7e3247bc7f
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:306
 msgid "You will see a dialog box. Click :guilabel:`New`."
 msgstr ""
 
-# 0ae9260444d0416d8c5f7d336e430f76
+# 06691d1fc8604af48279f96465bc0a1d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:311
 msgid ""
-"Navigate to the :file:`qgis_data/Sleman` folder and find the file :file:"
-"`guna_lahan.db`. Select the file and click :guilabel:`Open`."
+"Navigate to the :file:`qgis_data/Sleman` folder and find the file "
+":file:`guna_lahan.db`. Select the file and click :guilabel:`Open`."
 msgstr ""
 
-# cbbdc92f488545039b7f1b4948953e98
+# 0a501d6a7b9a45df9920016a96dac9b2
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:314
 msgid ""
 "Now in the original dialog box, you will see that the dropdown button now "
@@ -647,12 +648,12 @@ msgid ""
 "on your computer."
 msgstr ""
 
-# 98660458e2444c91bf035e25ca2ea77e
+# a152eb510321435bb5ce4d13b7616c5f
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:317
 msgid "Click :guilabel:`Connect`. You will see the following in the box:"
 msgstr ""
 
-# 2b992cb4613e47a58086875430828458
+# 38f4ca29d7074a08b80e3b814e9f085e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:322
 msgid ""
 "This database actually has three different layers available, all saved in "
@@ -660,21 +661,21 @@ msgid ""
 "click the last layer to select them all."
 msgstr ""
 
-# a79f04d22f7748ff802ce37131301943
+# 838b8b6980314fb799f7616c362adaa5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:325
 msgid "Click :guilabel:`Add`. This will add all three layers to our project."
 msgstr ""
 
-# 564fb416431f49a192f519dd33104181
+# c6179770f92d4f3681673679451aa4ae
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:327
 msgid ""
 "Remember frequently to save your map! Your QGIS project file does not save "
 "the data (data is saved in a shapefile or a database), but it does remember "
-"the layers that you have added to the project, their order, and any settings "
-"that you adjust."
+"the layers that you have added to the project, their order, and any settings"
+" that you adjust."
 msgstr ""
 
-# 113afcbba8454cef8cf738d231a090c8
+# b089954544334c5b9e1faece85845eb8
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:331
 msgid ""
 "The layers you have just added are all polygon layers, so you will want to "
@@ -683,173 +684,173 @@ msgid ""
 "and check it."
 msgstr ""
 
-# 3a60d9155eb64a239d6bb387990fadfe
+# 7b8f3c76e5704421bb114377865694b7
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:335
 msgid ""
 "Let’s remove a couple of layers to make it easier to deal with our data. "
-"Right-click on the railway and district layers and click :guilabel:`Remove`. "
-"Then order your layers like this:"
+"Right-click on the railway and district layers and click :guilabel:`Remove`."
+" Then order your layers like this:"
 msgstr ""
 
-# d552e9c669094b15adcc0eda7ad8bd9a
+# 5b9cf1d729f641139303a4ee97761a04
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:342
 msgid "5.5 Symbology"
 msgstr ""
 
-# eb6b10437b80470f858b96fdf3c22fa6
+# 8c7e330c4a704e69b3cf66182a9a8c74
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:344
 msgid ""
 "The symbology of a layer is its visual appearance on the map. One of the "
 "basic strengths of GIS is that you have a dynamic visual representation of "
 "the data you’re working with. Therefore, the visual appearance of the map "
-"(which depends on the symbology of the individual layers) is very important. "
-"The end user of the maps you produce will need to be able to easily see what "
-"the map represents. Equally as important, you need to be able to explore the "
-"data as you’re working with it, and good symbology helps a lot."
+"(which depends on the symbology of the individual layers) is very important."
+" The end user of the maps you produce will need to be able to easily see "
+"what the map represents. Equally as important, you need to be able to "
+"explore the data as you’re working with it, and good symbology helps a lot."
 msgstr ""
 
-# dc3da15e249a454cabecc70aa646a0b0
+# b00179517fdf478a83469c02e5343c8e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:350
 msgid ""
 "In other words, having proper symbology is not a luxury or just nice to "
-"have. In fact, it’s essential for you to use a GIS properly and produce maps "
-"and information that people will understand and be able to use."
+"have. In fact, it’s essential for you to use a GIS properly and produce maps"
+" and information that people will understand and be able to use."
 msgstr ""
 
-# 9c6bc2f202494c6097628058816e2ade
+# 3523fb0fe9a0464da14e25b7f4366f0e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:354
 msgid "5.5.1 Changing colors"
 msgstr ""
 
-# 6f7dc77304024f1d811493f90dc12bed
+# 99fc2739c6e64184a49e128d2e5ad30e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:356
 msgid ""
 "To change a layer’s symbology, we will open its Layer Properties. Let’s "
 "begin by changing the color of the **pemukiman** layer."
 msgstr ""
 
-# 2f5ad978abb4415c970ee5906d8eeb8a
+# fd40e01aea5741bdaab4c2ba00f184c5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:359
 msgid "Right-click on the **pemukiman** layer in the Layers list."
 msgstr ""
 
-# ae81a8680284418fb6d5288d3134e663
+# 54eacf6f2d0344daa431d9f2c2008a9c
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:361
 msgid "Select the menu item Properties in the menu that appears."
 msgstr ""
 
-# 0d46aee368bb4970bd1a7e562afde6de
+# 26cb354385c54a4c971ba418c33c954d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:363
 msgid ""
-"By default you can also access the Properties menu by double-clicking on the "
-"name of the layer."
+"By default you can also access the Properties menu by double-clicking on the"
+" name of the layer."
 msgstr ""
 
-# a0d8f4007e894411b5ed3bdb4d07c978
+# 95b2d76fabe54408a824ee4502a55334
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:365
 msgid "In the Properties window select the :guilabel:`Style` tab."
 msgstr ""
 
-# f6785d7f30234d029200ff3e7c5e8ecb
+# 3352e935f26a4e219be65e714c373c9f
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:370
 msgid "Click the color button to change the color"
 msgstr ""
 
-# e0bc65b9dc684adbad230e463cbcb7b4
+# dcf6381a10584542832f7bcd3e9de86f
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:375
 msgid ""
-"A standard color dialog will appear. Choose a **grey** color and click :"
-"guilabel:`OK`."
+"A standard color dialog will appear. Choose a **grey** color and click "
+":guilabel:`OK`."
 msgstr ""
 
-# 9a0b69fd53f2400db28b24c9f790a163
+# cc5917c86fd74d98b616cab2ebf19e8a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:380
 msgid ""
 "Click :guilabel:`OK` again in the Layer Properties window, and you will see "
 "the color change being applied to the layer."
 msgstr ""
 
-# 58b131d35f664ba5b1d5c41eb642b66c
+# e319924f680b4198bc3d2913d1189f6b
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:387
 msgid "5.5.2 Changing Symbol Structure"
 msgstr ""
 
-# f44ef7f03fd74f4e9dc1eae51e82cfb9
+# 77adf469712048c388ed51ffb79f4b6f
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:389
 msgid ""
-"This is good stuff so far, but there’s more to a layer’s symbology than just "
-"its color. Next we want to change the color of the vegetation, but we also "
+"This is good stuff so far, but there’s more to a layer’s symbology than just"
+" its color. Next we want to change the color of the vegetation, but we also "
 "want to eliminate the lines between the different types of vegetation so as "
 "to make the map less visually cluttered."
 msgstr ""
 
-# 16ba409b771549aab426dfe9450653e8
+# 7b825100209f4159a9aca280c9923d24
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:393
 msgid ""
-"Open the Layer Properties window for the **vegetasi** layer. Under the Style "
-"tab, you will see the same kind of dialog as before. This time, however, we "
-"will do more than just change the color."
+"Open the Layer Properties window for the **vegetasi** layer. Under the Style"
+" tab, you will see the same kind of dialog as before. This time, however, we"
+" will do more than just change the color."
 msgstr ""
 
-# 07028f0828fc4d7093b638498b3eb809
+# 45e3754db85640678f12f6b1ec44260c
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:396
 msgid ""
 "Click on the Simple Fill under the symbol layer column panel. Then Symbol "
 "layer dialog will appear next to the symbol layer column panel."
 msgstr ""
 
-# 7dbd85863f3d436094b5518792f75a69
+# b07e0459817643a3809576d4d128b838
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:402
 msgid ""
 "Change the color inside the polygons in the layer by clicking the button "
 "next to the Fill label:"
 msgstr ""
 
-# 1a5f52abd5214c5c8b31da24ee42e43a
+# ef999648e80243f8b2d784400c3553b3
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:407
 msgid ""
 "In the dialog that appears, choose a new color (that seems to suit "
 "vegetation)."
 msgstr ""
 
-# 305a87a482ab469e898451f5996403fb
+# 23afe21cc157465eae694a2037688349
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:411
 msgid "Next, we want to get rid of the lines between all the farms."
 msgstr ""
 
-# e1e232bd74a44508b1e99da545f0dbb5
+# 6a00226fcb5b49ddb567e9df0795a5f9
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:413
 msgid ""
 "Click on the Border style dropdown. At the moment, it should be showing a "
 "short line and the words Solid Line."
 msgstr ""
 
-# 34a9a956a59a4bab806d55385b974368
+# 73519971337b4f98895616cd53cf96cc
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:418
 msgid "Change this to **No Pen**."
 msgstr ""
 
-# ae29addff5fa46b0abf72ee07f99f312
+# 7999f74d228147e0a4801355570d9571
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:420
 msgid ""
-"Click :guilabel:`OK`, and then :guilabel:`OK` again. Now when we look at our "
-"map, the **vegetasi** layer will have a new color and no lines between "
+"Click :guilabel:`OK`, and then :guilabel:`OK` again. Now when we look at our"
+" map, the **vegetasi** layer will have a new color and no lines between "
 "polygons."
 msgstr ""
 
-# 94be7fbc892f406d9a2b50fc8f4c39da
+# 7f7f8a001283478aa6983e4345941c1c
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:426
 msgid ""
 "Try changing the symbology of the **pemukiman** layer so that it also does "
 "not have outlines."
 msgstr ""
 
-# 4ecc2daa52224b3b97f960037fd2fcd0
+# 1e816148167648d0a82a704878dbd6be
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:429
 msgid "5.5.3 Scale-based Visibility"
 msgstr ""
 
-# 0cb630d4aabc4815b59b6a301c98fa9a
+# 147b519b03e4493cb5bd855f4358b3b3
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:431
 msgid ""
 "Sometimes you will find that one of your layers is not suitable for a given "
@@ -858,17 +859,17 @@ msgid ""
 "when you are zoomed in very far to see streets."
 msgstr ""
 
-# 1cdbeb542cb9459a8a6767958c9a39ff
+# 3868cf016fa041918362a0757a30a56f
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:435
 msgid ""
 "Scale is a reference to how your map references what is actually on the "
-"ground in terms of size. Scale is usually given in terms like 1:10000, which "
-"means that one centimeter of length on your map is equal to 10000 "
+"ground in terms of size. Scale is usually given in terms like 1:10000, which"
+" means that one centimeter of length on your map is equal to 10000 "
 "centimeters in the real world. When you zoom in or out on a map, the scale "
 "changes, as you can see in the status bar at the bottom of QGIS."
 msgstr ""
 
-# e0591d2205b34c4bba8e3584134c5219
+# 17f3b66a22364c668f4c199e2208087e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:440
 msgid ""
 "In our case, we may decide to hide our streets layer when we are zoomed out "
@@ -876,30 +877,30 @@ msgid ""
 "when we are zoomed out far and it looks like a blob."
 msgstr ""
 
-# d81db869be1b4053975aef2ff965eeca
+# a41626bc5133418ea903b7af9ebf15d5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:443
 msgid "Let’s enable scale-based rendering:"
 msgstr ""
 
-# 89ce077df43f4b71b1ead8920f36594c
+# e278b7bc7d154b609a1889c0680c886a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:445
 msgid "Open the Layer Properties dialog for the **Jalan_Sleman_OSM** layer."
 msgstr ""
 
-# d40caa7e0c0543cd87439b2c5c113419
+# 5cf4810cdeb94291bcb6a98d6e5da913
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:447
 msgid "Activate the General tab."
 msgstr ""
 
-# ed55064df57940179cd831f85db3a7e3
+# d1288ead8af640649b1a9edc3dea5b5f
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:452
 msgid ""
-"Enable scale-based rendering by clicking on the checkbox labeled :guilabel:"
-"`Scale dependent visibility`. Then change the value in “Maximum” to 1:10 and "
-"“Minimum” to 1:100000"
+"Enable scale-based rendering by clicking on the checkbox labeled "
+":guilabel:`Scale dependent visibility`. Then change the value in “Maximum” "
+"to 1:10 and “Minimum” to 1:100000"
 msgstr ""
 
-# d42fd8ec9ca54d3d885fed68c4e54679
+# 3beff9404eb04e79a40a57f52b4ec3ac
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:460
 msgid ""
 "Now look at your map and see what happens when you zoom in and out. The "
@@ -907,115 +908,117 @@ msgid ""
 "small scales."
 msgstr ""
 
-# 17eba3293a4b428bb42934334f89dc00
+# 59d83cf71b8146fa82281d8efc59dcd5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:463
 msgid ""
 "You can use your mouse wheel to zoom in increments. Alternatively, use the "
 "zoom tools to draw a box and zoom to it:"
 msgstr ""
 
-# 453f1bb9d5834addba24d91d02ac6c68
+# 7299497773b8470a856afdb40d2f4ab6
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:470
 msgid "5.5.4 Adding Symbol Layers"
 msgstr ""
 
-# 1e869bb6ce464a0eadcee0ebfc6f3a41
+# 57d394d7557547169b043ea04a3a2fed
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:472
 msgid ""
 "Now that you know how to change simple symbology for layers, the next step "
-"is to create more complex symbology. QGIS allows you to do this using symbol "
-"layers."
+"is to create more complex symbology. QGIS allows you to do this using symbol"
+" layers."
 msgstr ""
 
-# 89d020dd8c8e499ba67324ce5de18cf5
+# cba71e2391ec4f78940896372107bbd5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:475
-msgid "Go back to the **vegetasi** layer’s Symbol properties dialog as before."
+msgid ""
+"Go back to the **vegetasi** layer’s Symbol properties dialog as before."
 msgstr ""
 
-# 574a338b8afc4ed3a0ea1df1e58dde4d
+# 363bd6901b9b4e95901efac58c7a8d35
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:477
 msgid ""
-"In this example, the current symbol has no outline (i.e., it uses the No Pen "
-"border style)."
+"In this example, the current symbol has no outline (i.e., it uses the No Pen"
+" border style)."
 msgstr ""
 
-# dced33ca6c4c45c68dbef395b7f98d39
+# 2d4fbe9ca9114e9ab13849f27d10438b
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:482
 msgid "Click on :guilabel:`Fill` then click :guilabel:`+` button on the left."
 msgstr ""
 
-# dc5cfd6234454e74aef4acf9c2c147c8
+# 8788208dc2ff47c1a8fb25b2997b54a2
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:487
 msgid "Click on it and another symbol layer will be added to the list:"
 msgstr ""
 
-# 0b23c6432b7b4230981b021afcd83c2d
+# b74b486d67ca47e0be0d402544c42355
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:492
 msgid ""
 "Note that it may appear different in color, but we’re going to change that "
 "anyway."
 msgstr ""
 
-# ec429fb426d54861a21cdcb39215d98a
+# 3914313e8c3e4effaad49a434e62c41b
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:494
 msgid ""
-"Now this layer has two different symbologies. In other words, both the green "
-"color AND the blue color will be drawn. However, the blue color will be "
+"Now this layer has two different symbologies. In other words, both the green"
+" color AND the blue color will be drawn. However, the blue color will be "
 "drawn above the green, and since it is a solid color, it will completely "
 "hide the green color. Let’s change it."
 msgstr ""
 
-# d2a467afeefa447ab78b5abb5161f76c
+# e51fc211f291484499b7b4143c09fe5f
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:498
 msgid ""
-"It’s important not to get confused between a map layer and a symbol layer. A "
-"map layer is a vector (or raster) that has been loaded into the map. A "
+"It’s important not to get confused between a map layer and a symbol layer. A"
+" map layer is a vector (or raster) that has been loaded into the map. A "
 "symbol layer is part of the symbol used to represent a map layer. This "
-"course will usually refer to a map layer as just a layer, but a symbol layer "
-"will always be called a symbol layer, to prevent confusion."
+"course will usually refer to a map layer as just a layer, but a symbol layer"
+" will always be called a symbol layer, to prevent confusion."
 msgstr ""
 
-# c2c10ac4dac94d66be156e97b13e52ba
+# de56450f055c4de789b29d723564b659
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:503
 msgid "Set the border style to **No Pen**, as before."
 msgstr ""
 
-# c4f9d51958b24044b35cdb37436771ac
+# af37514388b0419ebb0a0cad1fb2f4a1
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:505
 msgid ""
-"Change the fill style to something other than Solid or No brush. For example:"
+"Change the fill style to something other than Solid or No brush. For "
+"example:"
 msgstr ""
 
-# 008fe1e6807d4849ae25158fad143f81
+# 870473929c3240198569e335010b835e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:510
 msgid ""
 "Click :guilabel:`OK` and then :guilabel:`OK` and take a look at your layers "
 "new symbology."
 msgstr ""
 
-# db8744784d3e46d695409108bcf8cd6b
+# b2efe83982f442a085ef94d98230a49c
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:515
 msgid ""
 "Now try it yourself. Add an additional symbology layer to the "
 "**Jalan_Sleman_OSM** layer."
 msgstr ""
 
-# 412b322144f446db9682e3b2eeb6091b
+# 0018387cc5ea4506a2a62d0e56cc8caf
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:517
 msgid "Give the thickness of the original layer a value of 2.0"
 msgstr ""
 
-# c3b36abbac7e4c4fb13a27a952f89cf2
+# 0a9833f7f71d4400851692b02428daf7
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:519
 msgid "Give the thickness of the new symbology layer a value of 1.0"
 msgstr ""
 
-# c1f088ced3e74905aff680c87a5a4de2
+# bef283205caf48fab5ec9c388e2e7bfa
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:521
 msgid "This will result in your roads looking something like this:"
 msgstr ""
 
-# 8fb96708c5c042bcbf2e3e5bb97db906
+# 50f3300004394b81a898ffd02cd3ec07
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:526
 msgid ""
 "Our streets now appear to have an outline, but they seem disjointed, as if "
@@ -1024,35 +1027,35 @@ msgid ""
 "symbol layers are rendered."
 msgstr ""
 
-# e953ca3b547744fc95ce0f5ecc48ba70
+# cee43a267cf0446c816506378eb5d47b
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:530
 msgid ""
 "In the Layer Properties dialog, click on :menuselection:`Advanced ‣ Symbol "
 "levels`:"
 msgstr ""
 
-# 1cee111e9a164297849c9e05a9730833
+# f71a3d6110d04370aeca84231364014a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:535
 msgid ""
 "The Symbol Levels dialog will appear. Check the box next to **Enable symbol "
 "levels**."
 msgstr ""
 
-# 335d620544394f3abcdc2dda2761471f
+# 4fb0f0c644714f63ab66cee8123d0663
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:540
 msgid "Your map will now look like this:"
 msgstr ""
 
-# 1d008c4e8a6e47b7a471b7509787ef2b
+# 4a507c17fc6d4476bf41a30a1b33237c
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:545
 msgid ""
 "When you’re done, you can save the symbol itself in QGIS so that you won’t "
 "have to do all this work again if you want to use the symbol again in the "
-"future. Save your current symbol style by clicking the :guilabel:`Save "
-"Style ...` button under the Style tab of the Layer Properties dialog."
+"future. Save your current symbol style by clicking the :guilabel:`Save Style"
+" ...` button under the Style tab of the Layer Properties dialog."
 msgstr ""
 
-# 8f35da27aaf8444e920ce381c311de3e
+# 85c64fb0da6e4626877156c7da0342c2
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:552
 msgid ""
 "Give your style file a name and save. You can load a previously saved style "
@@ -1061,7 +1064,7 @@ msgid ""
 "be lost."
 msgstr ""
 
-# 03d9a009fae741788f86be524624262e
+# 99309baea845434fa9e5f8b20842b5bf
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:556
 msgid ""
 "Symbol levels also work for classified layers (i.e., layers having multiple "
@@ -1069,103 +1072,103 @@ msgid ""
 "how it works here with roads."
 msgstr ""
 
-# 6d4ba300140843068c29c00dd598dcac
+# b2a0b5f75bbb434f94877e8813ea9eb4
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:560
 msgid "5.5.5 Symbol layer types"
 msgstr ""
 
-# 91a1d622d1db4b7c85f2f560ec8d289c
+# 29cd582f812842359ff08136f0612ada
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:562
 msgid ""
 "In addition to setting fill colors and using predefined patterns, you can "
-"use different symbol layer types entirely. The only type we’ve been using up "
-"to now was the Simple Fill type. The more advanced symbol layer types allow "
-"you to customize your symbols even further."
+"use different symbol layer types entirely. The only type we’ve been using up"
+" to now was the Simple Fill type. The more advanced symbol layer types allow"
+" you to customize your symbols even further."
 msgstr ""
 
-# 454ff24e682742fca26ecdb14471277f
+# f9650184f1e14626bb0277f6e946e89d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:566
 msgid ""
 "Each type of vector (point, line and polygon) has its own set of symbol "
 "layer types. First we will look at the types available for points."
 msgstr ""
 
-# fc15d5779ab5475bb6c0c79fd5662cd0
+# 72b1124dcfeb4740b7ff7a186971843e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:570
 msgid "a. Vector Points"
 msgstr ""
 
-# 19935b841ed34585984b11caf44ae041
+# 5b9face028cf40a38b3e760989d5158a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:572
 msgid "Change the symbol properties for the **POI_Sleman_OSM** layer:"
 msgstr ""
 
-# 666e790af95e4b318fcc53737ecc0efb
+# cb8f1a7ba13d4f8ab388c3383b05f692
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:577
 msgid ""
-"You can access the various symbol layer types by clicking a symbol layer (1) "
-"then clicking the dropdown box in the upper right corner (2)"
+"You can access the various symbol layer types by clicking a symbol layer (1)"
+" then clicking the dropdown box in the upper right corner (2)"
 msgstr ""
 
-# 3518e85f1e3847ae8fc94d41bb3ab055
+# 67b251b007a04a409d9e72da79c8f14b
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:583
 msgid ""
 "Investigate the various options available to you, and choose a symbol layer "
 "type other than the default **Simple Marker**."
 msgstr ""
 
-# 900c98e3d3c84b23917e738e19da7cc6
+# 741bab0082924e5a97cbf867a6d86083
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:586
 msgid "If in doubt, use an **Ellipse Marker**."
 msgstr ""
 
-# 93201bdcdb9244d6a897e07d4a4ff485
+# 4f957655571b482b8509765da4f4fc55
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:588
 msgid ""
-"Choose a light outline and dark fill, with a symbol width of 2.00 and symbol "
-"height of 4.00."
+"Choose a light outline and dark fill, with a symbol width of 2.00 and symbol"
+" height of 4.00."
 msgstr ""
 
-# dacd5e310d7b4d109ee788639b35009c
+# 0f30d69772c846a9a089cc116840bb07
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:597
 msgid "b. Vector Lines"
 msgstr ""
 
-# 954dbaa4f81542ce83cb8fd4107615cf
+# 20b71faba08840e68c461134484d1cda
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:599
 msgid ""
 "To see the various symbology options for vector lines, open the streets "
 "layer properties and click on the dropdown box:"
 msgstr ""
 
-# 1ad36d81475647d5bcd0195c73f5fb20
+# 18407be14d52492daca666a92068bcdb
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:605
 msgid "Click on :guilabel:`Marker line`."
 msgstr ""
 
-# f76688470011413c9bbfb265385d79f5
+# 85af2e2271604872aa3c43937dc15076
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:610
 msgid "Click :guilabel:`Simple Marker` on symbol layers (1)"
 msgstr ""
 
-# be78158c18734f338b8c2ff2931dc806
+# 2c1d07620e344a659aecc60226108ca3
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:615
 msgid "Change the symbol properties to match this dialog:"
 msgstr ""
 
-# 292a9faaad024a3fb15eef0774e4577c
+# 28605e1deedd40a59e8f55ff7cc08fc7
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:620
 msgid ""
 "Now, click on :guilabel:`Marker line` on symbol layers panel, then change "
 "the interval to 2.00:"
 msgstr ""
 
-# 42bdd3e18ce544c5b2f7ab5d9bbc33a4
+# 4ebf6bf188954f869bae14a9ea257853
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:625
 msgid "Your road should now look something like this:"
 msgstr ""
 
-# f6cf7998694a48aa8accd656ec7bf9ca
+# dcf07b2b07d24b41b98397a2a1f01aa3
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:630
 msgid ""
 "Once you have applied the style, take a look at its results on the map. If "
@@ -1177,7 +1180,7 @@ msgid ""
 "before."
 msgstr ""
 
-# 8a7768475a254b1194f9ed209b775877
+# 680a4d6147c4466da16a7b390f4860f0
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:636
 msgid ""
 "Try to change the appearance of the streets layer again, so that the roads "
@@ -1185,12 +1188,12 @@ msgid ""
 "running in the middle."
 msgstr ""
 
-# 01e878acee464f9b88a3eacba3fd5413
+# 04aa325169c34f858824175a9e383bac
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:643
 msgid "c. Vector Polygons"
 msgstr ""
 
-# 12694c920d4b4f24a335877d2d875c4a
+# e45f925feafa4ac39099f2c0fbd924d4
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:645
 msgid ""
 "Now let’s change the symbol layer type for the :guilabel:`pemukiman` layer. "
@@ -1198,35 +1201,35 @@ msgid ""
 "layers, and see what the various options can do."
 msgstr ""
 
-# 2e7efdcd7c16443b907bee1d6f7af424
+# 380d5d892c92410fb6711e1065377b88
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:651
 msgid ""
 "Feel free to play around with the various options. We will use the Point "
 "pattern fill with the following settings:"
 msgstr ""
 
-# 19abe270aad643f686f2f9c87a174f08
+# 785e4f9840c34e1a95bcfc75caf3ab83
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:659
 msgid "Add a new symbol layer with a normal Simple fill."
 msgstr ""
 
-# 9c7e821412ba4706af0c728cd5f2ee8c
+# e230183f7c7e4329b3851c87f3594c40
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:661
 msgid "Make it gray with no outlines."
 msgstr ""
 
-# 5c9438764b024450be06902f2e6de6de
+# 479a849b1fd64dfe896cf660badb03e0
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:663
 msgid ""
 "Move it underneath the point pattern symbol layer with the Move down button:"
 msgstr ""
 
-# 2bf851dd147b499ca863a6d5101fc8fe
+# bdc277ab85444a98b1ad78cff21e61fd
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:668
 msgid "The symbol properties should look like this:"
 msgstr ""
 
-# dac589fb92e44e7792989d3544f0f81b
+# 5c06936bfcbd45ad9ca3657998188b1e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:673
 msgid ""
 "As a result, you have a textured symbol for the urban layer, with the added "
@@ -1234,108 +1237,109 @@ msgid ""
 "dots that make up the texture."
 msgstr ""
 
-# 4543e3f5a2fe4b178786b5c5eb87721b
+# 4bc4b867b1fe431ebda15c140741fbdc
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:677
 msgid "5.5.6 Classified Symbology"
 msgstr ""
 
-# 1c68f6e4decd4575b743ec396fd634b0
+# 926c6f089fff45f6867c034165158b5d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:679
 msgid ""
 "By classifying vector data according to their type, we can give them "
 "different symbologies and they will still appear to flow into each other."
 msgstr ""
 
-# 81e847f988a545cc9022f678ee92879b
+# 216f1a727956467fb09f20a4fcbe7914
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:686
 msgid "a. Classifying nominal data"
 msgstr ""
 
-# f4b0c07e9b8645cd8455005d381de936
+# 760fd1c086a7465099ec40a0aef4a1df
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:688
 msgid "Open Layer Properties for the :guilabel:`vegetasi` layer."
 msgstr ""
 
-# 9defe0f030e24e3ab01b3f8eaee9c725
+# fb21563b973943db9f3fa0f3d435dc85
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:690
 msgid "Go to the :guilabel:`Style` tab."
 msgstr ""
 
-# 6c4bf1fa01774b209e3afc8110ef3343
+# a5f699331c7c42888e45fd7ac538ee99
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:692
 msgid "Click on the dropdown that says :guilabel:`Single Symbol`:"
 msgstr ""
 
-# d41b4ac10ef24a9384e8f3ff0a211705
+# a05cd2d8d7ea41fb8d67f071c79be1d6
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:697
 msgid "Change it to :guilabel:`Categorized` and the interface will change:"
 msgstr ""
 
-# 2cc9bdbf030149f5bc10bc7b43058495
+# 4a36a00a0feb4875a5247e74dd0849f0
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:702
-msgid "Change the Column to **guna_lahan** and the Color ramp to **Spectral**:"
+msgid ""
+"Change the Column to **guna_lahan** and the Color ramp to **Spectral**:"
 msgstr ""
 
-# 84396437d8af408987114455f68113ea
+# 56b719bfb3fb44d9b0c24b786bf6dc4e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:707
 msgid "Click the button labeled :guilabel:`Classify`:"
 msgstr ""
 
-# 0fd6784061384f569b8a3a0963faeec9
+# ebcba81c17244243af4ec380e0bb22b0
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:712
 msgid "Click :guilabel:`OK`. You’ll see something like this:"
 msgstr ""
 
-# 4091ea9486ad40b2b0a60e5d3474204a
+# 6495a429c3564dcb871325b9f3e8c446
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:717
 msgid ""
 "Click the arrow (or plus sign) next to rural in the Layer list, you’ll see "
 "the categories explained:"
 msgstr ""
 
-# 730eb13cdb7a4d5d8b436b3e8c1d3c2d
+# c6e5fb4385d54fb780fb64b2c75bfacb
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:722
 msgid ""
 "So, this is useful! But it hurts your eyes to look at it, so let’s see what "
 "we can do about that."
 msgstr ""
 
-# 43ab4959f1d742e18ef0baa79efed6e5
+# 4a9c60bde9924338b041b02ba884ec20
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:724
 msgid ""
 "Open :guilabel:`Layer Properties` and go to the :guilabel:`Style` tab again."
 msgstr ""
 
-# 6e04fb117af24eefb22122a8dceee700
+# f0519d4b23994854a5901dbd19b64990
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:726
 msgid "Click the :guilabel:`Change` button next to Symbol."
 msgstr ""
 
-# f44c2b817c9c401da1607288e02b73de
+# 0f0c95ace637436f802e8a3d3f559b0d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:731
 msgid ""
 "Remove the outline as you did in the previous chapter. (change the border "
 "style to “No Pen”)"
 msgstr ""
 
-# d1087104f9354a2386f8a2a0a81d521b
+# c45105bb96db4d34a3230c9aa2791d65
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:733
 msgid "Click the Delete all button:"
 msgstr ""
 
-# ff3dcb03bf484dbea9fa8a73d710f414
+# 385fe65f04824065ba2c680318c591ce
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:738
 msgid "Now click :guilabel:`Classify` again, and the new symbols will appear."
 msgstr ""
 
-# 318ff6134b024612b3878382bbb4ad29
+# 73b610fece684c7b8ce601de4858fe3d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:740
 msgid ""
 "You’ll notice they don’t have outlines. This is because because you just "
 "removed the outlines!"
 msgstr ""
 
-# cd0d44f00b784d56a3821fba1733fb2b
+# 77c9a97cdb864683acaddbbe6d76f526
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:742
 msgid ""
 "Change the color for each type of vegetation by double-clicking on the "
@@ -1344,32 +1348,32 @@ msgid ""
 "here:"
 msgstr ""
 
-# c29feb16ffd64df2962509233bd9ac65
+# a1354845c52141c78d5ff71b73f8efac
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:749
 msgid ""
-"Notice that the category on the bottom is empty. Select it, and click the :"
-"guilabel:`Delete` button."
+"Notice that the category on the bottom is empty. Select it, and click the "
+":guilabel:`Delete` button."
 msgstr ""
 
-# cb4bc9824d4f436f93a0e03b5f7a4864
+# 7a98f289c4b449dfb2e9dfc1d8dce1da
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:751
 msgid "When we click :guilabel:`OK` our map looks like this:"
 msgstr ""
 
-# c0979b6896284d93b8c9fa7e11b75ba8
+# b4236354652d498b9ffbe85d692718a9
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:756
 msgid ""
-"If you feel confident in your new classification skills, try to classify the "
-"residential layer yourself. Use darker colors to distinguish it from "
+"If you feel confident in your new classification skills, try to classify the"
+" residential layer yourself. Use darker colors to distinguish it from "
 "vegetation."
 msgstr ""
 
-# 5b3a28a9750f4adab9b970f632d65976
+# 253dfa1895a7406eb825807cd3a1c9e6
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:761
 msgid "b. Ratio classification"
 msgstr ""
 
-# 063a794b8586485a8f81b681f58ab4bd
+# 47bdc7d143014cd3a372a942fb9f0055
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:763
 msgid ""
 "In the previous example, we classified the **vegetasi** layer by what is "
@@ -1380,7 +1384,7 @@ msgid ""
 "as **ratio classification**."
 msgstr ""
 
-# 1ed45cf50c044824bc345a38c79c077f
+# 1a07ab685c7b4c82a90992e7430a8f59
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:768
 msgid ""
 "Open the attribute table for the **pemukiman** layer. Notice the final "
@@ -1388,31 +1392,31 @@ msgid ""
 "contained within that feature polygon."
 msgstr ""
 
-# 8315d9c514d5433491d817f6829553f2
+# 34870b41b6fc450bb0421c76d04ba16d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:774
 msgid "Open the layer properties for **pemukiman**."
 msgstr ""
 
-# 102bf9d1b6cd461190030b596ecef6b0
+# 539d487758414399b5fbb3582eca4d1f
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:776
 msgid ""
 "Change the Style type to **Graduated**, and use **luas_ha** as the column."
 msgstr ""
 
-# 8550c5a5d0ca4d198181162a655ab12d
+# cfa03047fc604052b033defdb2ff4555
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:781
 msgid ""
-"Because we are categorizing with numbers this time, a color gradient will be "
-"useful for representing our categories. Click on “Oranges” in the color "
+"Because we are categorizing with numbers this time, a color gradient will be"
+" useful for representing our categories. Click on “Oranges” in the color "
 "ramp, and then click :guilabel:`Classify`."
 msgstr ""
 
-# ab33d09f906846d5a6038bb3871e625f
+# 058b5a1f78a2409094507c1c78ce1d72
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:787
 msgid "Now you’ll have something like this:"
 msgstr ""
 
-# 66f3b3fb17e848b398a92ff9fb11535a
+# f00b0cea52ad4a9aa28e468a815d3d19
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:792
 msgid ""
 "Now you already know how to symbolize vector data into various types. You "
@@ -1420,12 +1424,12 @@ msgid ""
 "data more informative."
 msgstr ""
 
-# 815a3cf5e4874b4aa8ab65948737079a
+# 61d91f3514fe459fa08435c3fef2f9fa
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:796
 msgid "5.6 The Label Tool"
 msgstr ""
 
-# dc38630dc57b473abfb0082d713b5f57
+# 8ac26d8e8c9741ff8b1c9b43d3c84053
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:798
 msgid ""
 "Labels can be added to a map to show any information about an object. Any "
@@ -1433,7 +1437,7 @@ msgid ""
 "attribute data of a layer for their content."
 msgstr ""
 
-# 3ab2c51b7f654a87ae234cb5c3ba921f
+# f0691ba0f9d047c8ae93813538b1f36c
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:800
 msgid ""
 "There are several ways to add labels in QGIS, but some are better than "
@@ -1443,54 +1447,54 @@ msgid ""
 "which we will learn in this section."
 msgstr ""
 
-# 8ae054df0c524bc495c5a2c4f77dd2ae
+# ea52465c41f64b8c89ab328a86c511b1
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:805
 msgid "5.6.1 Labeling Points"
 msgstr ""
 
-# bb5f067d5d7a43dbae06d7e54ddf5f70
+# e24ca3d6d4874c19aab1227f5d5a9a14
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:807
 msgid ""
 "Before being able to access the Label tool, you will need to ensure that it "
 "has been activated."
 msgstr ""
 
-# 6de908a475434b329bf01a708f3ef711
+# d1de358ef0b2453aab6cfc549cbda0f5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:809
 msgid "Go to the menu item :menuselection:`View ‣ Toolbars`."
 msgstr ""
 
-# 024835f3116d4e39992adede7606ab47
+# 6dfab45eaa884ea78bad4a9b19c9dfea
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:811
 msgid ""
 "Ensure that the Label item has a checkmark next to it. If it doesn’t, click "
-"on the :guilabel:`Label` item, and it will be activated. The :guilabel:"
-"`Label` toolbar looks like this:"
+"on the :guilabel:`Label` item, and it will be activated. The "
+":guilabel:`Label` toolbar looks like this:"
 msgstr ""
 
-# 7e23a3e310f749bf941d6300e195838b
+# 6d528cd7f1104744b1002fdd6127dd8a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:817
 msgid ""
 "Click on the **POI_Sleman_OSM** layer in the :guilabel:`Layers` list, so "
 "that it is highlighted."
 msgstr ""
 
-# eedbaa0b6bb340089979e8b591f90612
+# ce4f8504dc1c4069954e55374bbdd524
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:819
 msgid "Click on the :guilabel:`Labelling` button:"
 msgstr ""
 
-# 46494195418540f7a7f3f6a7683e8212
+# dcff7582b588401eb96d755bd7f8e957
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:824
 msgid "This gives you the :guilabel:`Layer labeling settings` dialog."
 msgstr ""
 
-# 01f224a69921436380b00375a513d74e
+# 2592284d0e294d0c934031457a2fa57d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:826
 msgid "Check the box next to :guilabel:`Label this layer with`...."
 msgstr ""
 
-# b688f907f3334deb93d4fa0649fc752b
+# 171706d3ae104844b841642c80d36a05
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:831
 msgid ""
 "We must indicate which of the attribute fields we want to use for the "
@@ -1498,12 +1502,12 @@ msgid ""
 "let’s select **NAME** from the list:"
 msgstr ""
 
-# f2c3da96296d47f4a2bf67296883461b
+# a87ce941d6714fa7b5faa3c70829a8fb
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:837
 msgid "Click :guilabel:`OK`. The map should now have labels like this:"
 msgstr ""
 
-# 22b8dbffb9114f0fb8ec79cb6ba6f165
+# 322e3de3ee084312bb931a6b63a2ce68
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:842
 msgid ""
 "What we have so far is good, but as you can see, the labels are overlapping "
@@ -1511,71 +1515,72 @@ msgid ""
 "text is also a bit larger than it needs to be. Let’s fix these problems!"
 msgstr ""
 
-# 12ecd367ccd04d65b53aa941cebc678d
+# 41f4cfca483148349e377c1b9d415864
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:845
 msgid ""
 "Open the :guilabel:`Label` tool again by clicking on its button as before."
 msgstr ""
 
-# 8b2eb55f16174451beeda0df643f99a4
+# cba3af33a636430ca6c3c36acd35d191
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:847
-msgid "Click on the :guilabel:`Text` tab button to change the text properties:"
+msgid ""
+"Click on the :guilabel:`Text` tab button to change the text properties:"
 msgstr ""
 
-# fe05cb22bd1c41d892f8aaed1002edd6
+# 421a115ededd46e4a78e2350a775e5f2
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:852
 msgid ""
 "A standard text change dialog appears, similar to those in many other "
 "programs. Change the font to Arial size 9."
 msgstr ""
 
-# ec2ee564132c411fac8f8716aca517a2
+# 9ca08b2912d441a89857523aed949318
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:854
 msgid ""
 "Now click on :guilabel:`Buffer` tab to add buffer on the text. Check box "
 "labelled :guilabel:`Draw text buffer`"
 msgstr ""
 
-# 87b6f697ce9b4f42964b503bb639a826
+# 9191fd6fa9094c0890f877f6193b6bb8
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:859
 msgid "Your labels will now look like this:"
 msgstr ""
 
-# 4a9ac2c74af04a2092b450cb38e634c7
+# 9d77591c08e7468c86b124f4ea2ff9f5
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:864
 msgid "Now you can see why we usually need label buffers!"
 msgstr ""
 
-# d5857faf7cd1400998fbd1ace697721b
+# f9e0a3d2aacd4e47b554ee7d74ae0000
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:866
 msgid ""
 "That’s the font problem solved! Now let’s look at the problem of the labels "
 "overlapping the points."
 msgstr ""
 
-# 28936040b00d4cc28e08d717de3c84ab
+# bb8c84339df24beeb578b913e6dd2d2b
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:868
 msgid "In the Label tool dialog, click on :guilabel:`Distance` tab."
 msgstr ""
 
-# d66f1aa8bd6547d783ba72f87d4a414c
+# 61867db3e28f4057be43bb6a4a5c0745
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:870
 msgid "Change the value of Label distance to 2."
 msgstr ""
 
-# 6efc33bd1f8340859fbc468a4de07d6d
+# 64d31f8e01de49c49610b14d45b43fb9
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:875
 msgid ""
 "Click :guilabel:`OK`. The labels no longer hover over the icons, but are "
 "“buffered” a short distance away:"
 msgstr ""
 
-# db9883a7126848dc822222641a0bc019
+# f011a4222f84497c9b831c10434857ad
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:881
 msgid "5.6.2 Labeling lines"
 msgstr ""
 
-# 85da1a51d8e6424fbcead34aa1b303ad
+# 3120501c2d784ff2a5f2c70adfce43e0
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:883
 msgid ""
 "Now that you know how labeling works, there’s an additional problem. Points "
@@ -1583,50 +1588,50 @@ msgid ""
 "same way as the points, your results would look like this:"
 msgstr ""
 
-# 1c9deb58fa76458f872bf353748c1d0f
+# 58841b179f314c14b9f7634728d983ef
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:889
 msgid ""
 "This is not very useful! To make lines behave, we’ll need to edit some "
 "options."
 msgstr ""
 
-# 3ecc2377ca874e67a380ad4090893738
+# 64144ec286804df891b39816ff12f56a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:891
 msgid "Hide the **POI_Sleman_OSM** layer so that it doesn’t distract you."
 msgstr ""
 
-# 43a556d58fc141aaa4c15df7cd259275
+# c99e60e914294973ae4c8c5d4b0ae7a8
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:893
 msgid ""
 "Activate labels for the **Jalan_Sleman_OSM** layer as before. (Remember to "
 "use the Label tool on the toolbar, not the one in Label Properties!)"
 msgstr ""
 
-# bdaf8cd83e1e47f4802fa412302ad119
+# 57d4c300e0584bac8e9f7cd7295c8f27
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:896
 msgid ""
 "Set the font Size to 9 and activate the buffer so that you can see more "
 "labels."
 msgstr ""
 
-# 943c0fd25c314282b7b4cc1a720737a0
+# be45175985e24c5c99c309945e885816
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:898
 msgid "Zoom in so that the scale is around 1:10000."
 msgstr ""
 
-# 831a105679824c7bb5070a1b3e413a2f
+# 67e7a2e3145d4151a74b88cd551612c0
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:900
 msgid ""
 "In the Label tool dialog’s :guilabel:`Placement` tab, choose the following "
 "settings:"
 msgstr ""
 
-# 362403e1e38847408864931f415e9e6f
+# 2b18392f517a4bbbbfd978a9b854434a
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:905
 msgid "The map will look somewhat like this, depending on scale:"
 msgstr ""
 
-# 674f62e9d23447ec999be7e9b97399d0
+# 710a630b985a483fa7d9e425e856567d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:910
 msgid ""
 "It’s better than before, but still not ideal. For starters, some of the "
@@ -1634,62 +1639,62 @@ msgid ""
 "that from happening:"
 msgstr ""
 
-# 7acc45a73aaa4ac6b24152970808968c
+# f44039dbf7f240ee844e522b55b02ece
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:913
 msgid "Go to :guilabel:`Rendering` tab"
 msgstr ""
 
-# 2b807b14ea4949a3b93362ee12bbc6b9
+# 38f9ea2a36e84f5cb2c42e12deaf4b9b
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:915
 msgid ""
 "Enable the option Merge connected lines to avoid duplicate labels (also "
 "under the Rendering tab - you may need to scroll down to see it)."
 msgstr ""
 
-# be3fedb0d63a45c1a95af2bdc28f6734
+# 2a236b60b6a24652b103b2a2defa0d1e
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:918
 msgid ""
 "Another useful function is to prevent labels being drawn for features too "
 "short to be of notice."
 msgstr ""
 
-# fa814c8a87f04378a37fe86095e74688
+# 2e542102eab94b6c91a0d122ab710479
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:920
 msgid ""
 "Set the value of Suppress labeling of features smaller than ... to 5 mm and "
 "note the results when you click :guilabel:`Apply`."
 msgstr ""
 
-# 29e590a46e7641c89d29afd931bf3060
+# 06f1c7920d4d4d7295c8e45f7e829b75
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:923
 msgid ""
-"Try out different Placement settings as well (also under the Placement tab). "
-"As we’ve seen before, the horizontal option is not a good idea in this case, "
-"so let’s try the curved option instead!"
+"Try out different Placement settings as well (also under the Placement tab)."
+" As we’ve seen before, the horizontal option is not a good idea in this "
+"case, so let’s try the curved option instead!"
 msgstr ""
 
-# 0e39028d766f4440a7bb2c568f98d867
+# 672a746df5254ff4bec3f550fa42dab6
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:926
 msgid ""
 "Select the :guilabel:`curved` option under the :guilabel:`Placement` tab of "
 "the :guilabel:`Layer labeling settings` dialog."
 msgstr ""
 
-# 0d47508a6d6443cba3f227a8ff61f6b7
+# daf25c7268374e2c9b84ca37acf311bb
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:929
 msgid "Here’s the result:"
 msgstr ""
 
-# 8c1179cf5fc54a6faf515e06d0a64ebf
+# a1c96525b8d6455591af9c06e5976d6d
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:934
 msgid ""
-"As you can see, this hides a lot of the labels that were previously visible, "
-"because of the difficulty of making some of them follow twisting street "
+"As you can see, this hides a lot of the labels that were previously visible,"
+" because of the difficulty of making some of them follow twisting street "
 "lines and still be legible. You can decide which of these options to use, "
 "depending on what you think seems more useful or what looks better."
 msgstr ""
 
-# 8d93e1b55024473ca9b69faedd9090fc
+# 95716b6c97f841feaa9e511f53651ad6
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:938
 msgid ""
 "Now that you know how attributes can make a visual difference for your map, "
@@ -1697,7 +1702,7 @@ msgid ""
 "the topic for the next section!"
 msgstr ""
 
-# 45464805d3734537b2a382604febc375
+# 19c950a68d194b9f93807ce00ed9b0d1
 #: ../../source/training/qgis/Chapter-05-Working_with_Vector_Data.rst:941
 msgid ":ref:`Go to next chapter --> <ch6-working-with-raster-data>`"
 msgstr ""
