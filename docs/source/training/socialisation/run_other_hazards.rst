@@ -296,7 +296,7 @@ In the |project_name| panel we now see the impact summary. Detalils are explaine
 
 The results show the buildings that will be affected by tsunami starting from 1 metre. What if the disaster manager decides that buildings in 80 cm of water are also considered inundated? You can change the water depth threshold to see the result, refer to the `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ module.
 
-..note:: InaSAFE Tsunami Impact Function is very similar with Flood, but due to the force of tsunami waves, the maximum depth of water that would affect people and infrastructure is shallower.
+.. note:: InaSAFE Tsunami Impact Function is very similar with Flood, but due to the force of tsunami waves, the maximum depth of water that would affect people and infrastructure is shallower.
 
 3. Run |project_name| for Volcano
 ---------------------------------
@@ -348,7 +348,7 @@ Hazard Data that we want to use for this scenario can be found in :file:`InaSAFE
 
 Building Exposure data can be found in :file:`InSAFE Training Data > Sinabung > Exposure Data` folder and please select :file:`Sinabung_buildings_WGS84.shp` .
 
-..note:: The differences between Volcano and Volcanic Ash can be seen in :ref:`Hazard Data Section <datasets>`, and for detail explanation about type of data you can be found in :ref:`Key concepts in disaster management planning with InaSAFE. <inasafe_concepts>`.
+.. note:: The differences between Volcano and Volcanic Ash can be seen in :ref:`Hazard Data Section <datasets>`, and for detail explanation about type of data you can be found in :ref:`Key concepts in disaster management planning with InaSAFE. <inasafe_concepts>`.
 
 If you have followed the instruction in IFCW box, before running |project_name| you should see the final form below:
 
