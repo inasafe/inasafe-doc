@@ -1,22 +1,24 @@
 #!/bin/bash
 
-INASAFE_DEV_PATH=$HOME/dev/python/inasafe/
-export QGIS_PREFIX_PATH=/usr/local/qgis-2.8/
 
-if [ -d $INASAFE_DEV_PATH ]
-then
-  export INASAFE_DEV_PATH=$HOME/dev/python/inasafe/
-else
-  echo Please set INASAFE_DEV_PATH as PATH to your local
-  echo clone of inasafe repository inside this script
- exit 1
-fi
+# INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
+# export QGIS_PREFIX_PATH=/usr/local/qgis-2.8/
 
-export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
-export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$QGIS_PREFIX_PATH/share/qgis/python/plugins:$INASAFE_DEV_PATH:$PYTHONPATH
-export QGIS_DEBUG=0
-export QGIS_LOG_FILE=/dev/null
-export QGIS_DEBUG_FILE=/dev/null
+# if [ -d $INASAFE_DEV_PATH ]
+# then
+#   export INASAFE_DEV_PATH=$HOME/dev/python/inasafe-dev/
+# else
+#   echo Please set INASAFE_DEV_PATH as PATH to your local
+#   echo clone of inasafe repository inside this script
+#  exit 1
+# fi
+
+# export LD_LIBRARY_PATH=$QGIS_PREFIX_PATH/lib
+# export PYTHONPATH=$QGIS_PREFIX_PATH/share/qgis/python:$QGIS_PREFIX_PATH/share/qgis/python/plugins:$INASAFE_DEV_PATH:$PYTHONPATH
+# export QGIS_DEBUG=0
+# export QGIS_LOG_FILE=/dev/null
+# export QGIS_DEBUG_FILE=/dev/null
+
 
 # Path to the documentation root relative to script execution dir
 DOCROOT=../docs
