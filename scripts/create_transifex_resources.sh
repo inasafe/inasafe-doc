@@ -28,19 +28,33 @@ do
     BASE=`basename $GENERICFILE .po`
     BASE=`echo $BASE | sed 's/_/-/g' | sed 's/ /-/g'`
     RESOURCE=inasafe-doc.${ITEM}-$BASE
+    
+    #
     # Register each po file as a transifex resource (an individual translatable file)
+    #
     #set -x
-    tx set -t PO --auto-local -r $RESOURCE \
-      "$GENERICFILE" \
+    #--source  this is the source language from which other tranlations are done
+    #-t this is a PO file that contains translation strings
+    #--auto-local  automatically add to the local .tx/config file
+    #GENERICFILE  the pattern to use when matching for other translation files
+    #--source-lang  the language of the original source file
+    # add it to the config file
+    #set -x
+    tx set --source \
+      -t PO \
+      -r $RESOURCE \
+      -l en "$GENERICFILE" \
       --source-lang en \
-      --execute
+      --auto-local \
+      --execute \
+      --source-file=$POFILE
     #set +x
     # Now register the language translations for the localised po file against
     # this resource.
     for LOCALE in $LOCALES
     do
-        LOCALEFILE=`echo $POFILE | sed "s/\/en\//\/$LOCALE\//g"`
-        tx set -r $RESOURCE -l $LOCALE  "$LOCALEFILE"
+       LOCALEFILE=`echo $POFILE | sed "s/\/en\//\/$LOCALE\//g"`
+       tx set -r $RESOURCE -l $LOCALE  "$LOCALEFILE"
     done
     # When we are done in this block we should have created a section in the
     # .tx/config file that looks like this:
@@ -60,4 +74,4 @@ done
 tx status
 
 # Push all the resources to the tx server
-tx push -s
+#tx push -s
