@@ -86,7 +86,7 @@ OpenStreetMap Team (|hot|).
 Manual based on:
 ................
 
-* Version 3.4.x of |project_name|
+* Version 3.5.x of |project_name|
 * Version 2.14.x of |QGIS|
 
 Produced:
@@ -96,6 +96,7 @@ August 2013 (original)
 September 2014 (update)
 September 2015 (major revision)
 June 2016 (update)
+August 2016 (update)
 
 More information:
 .................
