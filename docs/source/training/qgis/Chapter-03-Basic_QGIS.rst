@@ -71,28 +71,13 @@ The QGIS website will look something like this:
 
 4.  Click :guilabel:`I Agree` to agree with the conditions in the license agreement.
 
-.. image:: /static/training/qgis/3_008.*
-   :align: center
-
 5.  The next window asks where you would like to install QGIS. In most cases, the default should be fine. Click on :guilabel:`Next`.
-
-.. image:: /static/training/qgis/3_009.*
-   :align: center
 
 6.  In the next window, click :guilabel:`Install` without checking any of the boxes.
 
-.. image:: /static/training/qgis/3_010.*
-   :align: center
-
 QGIS will begin to install. It may take a few minutes to complete.
      
-.. image:: /static/training/qgis/3_011.*
-   :align: center
-
-7.  click :guilabel:`Finish` to complete the installation. Your computer will automatically reboot.
-
-.. image:: /static/training/qgis/3_012.*
-   :align: center
+7.  click :guilabel:`Finish` to complete the installation.
 
 8.  Now open QGIS from the Start Menu.
 
