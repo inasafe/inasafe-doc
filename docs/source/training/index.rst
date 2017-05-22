@@ -19,7 +19,6 @@ This section of the documentation contains step-by-step tutorials on using OpenS
 
 |
 
-Testing if staging updates will show up automatically (TODO: richard remove this line)
 
 .. toctree::
    :maxdepth: 4
