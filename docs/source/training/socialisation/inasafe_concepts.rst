@@ -356,6 +356,29 @@ the impact of a hazard event such as a volcanic eruption on crops.
 |Source        | National mapping agency                                       |
 +--------------+---------------------------------------------------------------+
 
+Places data
+...........
+.. image:: /static/training/socialisation/icon_places.*
+   :align: left
+   :width: 150 pt
+
+Places data can often be obtained from national mapping agencies or through
+various online data sources. Places data are useful if you want to assess
+the impact of a hazard event such as a volcanic ash event on place.
+
++--------------+---------------------------------------------------------------+
+|              |   **Key notes for places    data**                            |
++==============+===============================================================+
+|Format        |  Vector point data                                            |
++--------------+---------------------------------------------------------------+
+|Field         | A field representing place name                               |
++--------------+---------------------------------------------------------------+
+|Notes         | There must be a field representing place name                 |
++--------------+---------------------------------------------------------------+
+|Source        | National mapping agency                                       |
++--------------+---------------------------------------------------------------+
+
+
 What is aggregation?
 --------------------
 Aggregation is the process whereby we group the results of the analysis by
@@ -498,104 +521,104 @@ they work on:
 Supported data types for each hazard type in  |project_name|
 ............................................................
 
-.. image:: /static/training/socialisation/icon_earthquake.*
-   :align: left
-   :width: 120 pt
-
-Earthquake Impact Functions
-...........................
-
-**Earthquake hazard**:  continuous raster, classified raster, and classified polygon
-
-**Population exposure**: continuous raster with counts
-
-**Building exposure**: classified polygon or point with a type attribute
 
 
++-------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+|   Name Impact Functions                                     |  Detail                                                                                             |
++=============================================================+=====================================================================================================+
+|                                                             |                                                                                                     |
+|**Earthquake Impact Function**                               |                                                                                                     |
+|                                                             |                                                                                                     |
+|.. image:: /static/training/socialisation/icon_earthquake.*  |                                                                                                     |
+|   :align: center                                            |  **Earthquake hazard**:  continuous raster, classified raster, and classified polygon               |
+|   :width: 100 pt                                            |                                                                                                     |
+|                                                             |  **Population exposure**: continuous raster with counts                                             |
+|                                                             |                                                                                                     |
+|                                                             |  **Building exposure**: classified polygon or point with a type attribute                           |
+|                                                             |                                                                                                     |
+|                                                             |                                                                                                     |
+|                                                             |                                                                                                     |
++-------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+|                                                             |                                                                                                     |
+|**Flood Impact Functions**                                   |                                                                                                     |
+|                                                             |                                                                                                     |
+|.. image:: /static/training/socialisation/icon_flood.*       |                                                                                                     |
+|   :align: center                                            |  **Flood hazard**:  continuous raster or classified polygon                                         |
+|   :width: 100 pt                                            |                                                                                                     |
+|                                                             |  **Population exposure**: continuous raster with counts                                             |
+|                                                             |                                                                                                     |
+|                                                             |  **Building exposure**: classified polygon or point with a type attribute                           |
+|                                                             |                                                                                                     |
+|                                                             |  **Road exposure**: classified line with a type attribute                                           |
+|                                                             |                                                                                                     |
++-------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+|                                                             |                                                                                                     |
+|**Tsunami Impact Functions**                                 |                                                                                                     |
+|                                                             |                                                                                                     |
+|.. image:: /static/training/socialisation/icon_tsunami.*     |                                                                                                     |
+|   :align: center                                            |  **Tsunami hazard**: continuous raster or classified polygon                                        |
+|   :width: 100 pt                                            |                                                                                                     |
+|                                                             |  **Population exposure**: continuous raster with counts                                             |
+|                                                             |                                                                                                     |
+|                                                             |  **Building exposure**: classified polygon with a type attribute                                    |
+|                                                             |                                                                                                     |
+|                                                             |  **Road exposure**: classified line with a type attribute                                           |
+|                                                             |                                                                                                     |
++-------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+|                                                             |                                                                                                     |
+|**Volcano Impact Functions**                                 |                                                                                                     |
+|                                                             |                                                                                                     |
+|.. image:: /static/training/socialisation/icon_volcano.*     |                                                                                                     |
+|   :align: center                                            |  **Volcano hazard**:  continuous polygon, classified polygon, and point                             |
+|   :width: 100 pt                                            |                                                                                                     |
+|                                                             |  **Population exposure**: continuous raster with counts                                             |
+|                                                             |                                                                                                     |
+|                                                             |  **Building exposure**: classified polygon with a type attribute                                    |
+|                                                             |                                                                                                     |
+|                                                             |                                                                                                     |
++-------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+|                                                             |                                                                                                     |
+|**Volcanic Ash Impact Functions**                            |                                                                                                     |
+|                                                             |                                                                                                     |
+|.. image:: /static/training/socialisation/icon_volcanic_ash.*|                                                                                                     |
+|   :align: center                                            |  **Volcano hazard**:  clasified polygon or continuous raster                                        |
+|   :width: 100 pt                                            |                                                                                                     |
+|                                                             |  **Population exposure**: continuous raster with counts                                             |
+|                                                             |                                                                                                     |
+|                                                             |  **Building exposure**: classified polygon with a type attribute                                    |
+|                                                             |                                                                                                     |
+|                                                             |                                                                                                     |
++-------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+|                                                             |                                                                                                     |
+|**Cyclone Impact Functions**                                 |                                                                                                     |
+|                                                             |                                                                                                     |
+|.. image:: /static/training/socialisation/icon_cyclone.*     |                                                                                                     |
+|   :align: center                                            |  **Cyclone hazard**:  clasified polygon or continuous raster                                        |
+|   :width: 100 pt                                            |                                                                                                     |
+|                                                             |  **Building exposure**: classified polygon with a type attribute                                    |
+|                                                             |                                                                                                     |
+|                                                             |                                                                                                     |
++-------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
+|                                                             |                                                                                                     |
+|**Generic Impact Functions**                                 |                                                                                                     |
+|                                                             |                                                                                                     |
+|.. image:: /static/training/socialisation/icon_generic.*     |                                                                                                     |
+|   :align: center                                            |**Generic hazard**:  classified polygon, classified raster or continuous raster                      |
+|   :width: 100 pt                                            |                                                                                                     |
+|                                                             |**Population exposure**: continuous raster with counts                                               |
+|                                                             |                                                                                                     |
+|                                                             |**Building exposure**: classified polygon with a type attribute                                      |
+|                                                             |                                                                                                     |
+|                                                             |**Landcover exposure**: classified polygon with a type                                               |
+|                                                             |                                                                                                     |
+|                                                             |A note about generic impact functions: Generic IF's are useful when your                             |
+|                                                             |data does not conform to the a priori expectations of |project_name|.                                |
+|                                                             |For example, you may wish to produce a report on buildings that might be                             |
+|                                                             |affected by a landslide, drought, smoke haze or any other hazard that does not                       |
+|                                                             |have an explicit Impact Function in |project_name|.                                                  |
++-------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+
 
-.. image:: /static/training/socialisation/icon_flood.*
-   :align: left
-   :width: 120 pt
 
-Flood Impact Functions
-......................
-
-**Flood hazard**:  continuous raster or classified polygon
-
-**Population exposure**: continuous raster with counts
-
-**Building exposure**: classified polygon or point with a type attribute
-
-**Road exposure**: classified line with a type attribute
-
-
-
-.. image:: /static/training/socialisation/icon_tsunami.*
-   :align: left
-   :width: 120 pt
-
-Tsunami Impact Functions
-........................
-
-**Tsunami hazard**: continuous raster or classified polygon
-
-**Population exposure**: continuous raster with counts
-
-**Building exposure**: classified polygon with a type attribute
-
-**Road exposure**: classified line with a type attribute
-
-
-
-.. image:: /static/training/socialisation/icon_volcano.*
-   :align: left
-   :width: 120 pt
-
-Volcano Impact Functions
-........................
-
-**Volcano hazard**:  continuous polygon, classified polygon, and point
-
-**Population exposure**: continuous raster with counts
-
-**Building exposure**: classified polygon with a type attribute
-
-
-
-.. image:: /static/training/socialisation/icon_volcanic_ash.*
-   :align: left
-   :width: 120 pt
-
-Volcanic Ash Impact Functions
-.............................
-
-**Volcano hazard**:  clasified polygon or continuous raster
-
-**Population exposure**: continuous raster with counts
-
-**Building exposure**: classified polygon with a type attribute
-
-
-.. image:: /static/training/socialisation/icon_generic.*
-   :align: left
-   :width: 120 pt
-
-Generic Impact Functions
-........................
-
-**Volcano hazard**:  classified polygon, classified raster or continuous raster
-
-**Population exposure**: continuous raster with counts
-
-**Building exposure**: classified polygon with a type attribute
-
-**Landcover exposure**: classified polygon with a type attribute
-
-A note about generic impact functions: Generic IF's are useful when your
-data does not conform to the a priori expectations of |project_name|.
-For example, you may wish to produce a report on buildings that might be
-affected by a landslide, drought, smoke haze or any other hazard that does not
-have an explicit Impact Function in |project_name|.
 
 Each Impact Function will generate outputs that may include:
 - an impact map layer
