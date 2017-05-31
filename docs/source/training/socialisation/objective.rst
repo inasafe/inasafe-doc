@@ -68,7 +68,7 @@ Prerequisites
 
   * Minimum RAM of 2 GB (recommended 4 GB)
   * WIFI - connected to the internet
-  * Windows (XP, 7, 8), Linux (Training Ubuntu later than 12.04) or similar
+  * Windows (XP, 7, 8, 10), Linux (Training Ubuntu later than 12.04) or similar
     (e.g. Mint or Debian), Mac OSX (Lion - 10.7,  Snow Leopard -10.6)
   * |QGIS| long term release installed http://www.qgis.org or the ability to install software on computer (i.e. have administration password)
 
@@ -86,7 +86,7 @@ OpenStreetMap Team (|hot|).
 Manual based on:
 ................
 
-* Version 3.5.x of |project_name|
+* Version 4.0.x of |project_name|
 * Version 2.14.x of |QGIS|
 
 Produced:
@@ -97,6 +97,7 @@ September 2014 (update)
 September 2015 (major revision)
 June 2016 (update)
 August 2016 (update)
+April 2017 (update)
 
 More information:
 .................
@@ -136,5 +137,5 @@ Authors:
 `Charlotte Morgan <charlotte.morgan@ga.gov.au>`_, Spatial Data Analyst -
 Geoscience Australia
 
-Adityo Dwijananto, Harry Mahardika and Wulansari Khairunisa - Humanitarian OpenStreetmap Team Indonesia
+Adityo Dwijananto, Harry Mahardika and Wulansari Khairunisa, Tri Selasa, Adhitya Dido, Sheila Amalia - Humanitarian OpenStreetmap Team Indonesia
 
