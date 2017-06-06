@@ -35,7 +35,7 @@ features. By the end of this exercise, participants will be able to:
 Data for this exercise
 ----------------------
 
-The data for this exercise are available in DKI Jakarta.zip which can be downloaded from `InaSAFE Training Data <http://data.inasafe.org/TrainingDataPackages/>`__. We will use
+The data for this exercise are available in DKI Jakarta.zip which can be downloaded from `InaSAFE Training Data <http://data.inasafe.org/>`__. We will use
 the following data:
 
 1. Jakarta Flood 18113 WGS84
@@ -49,8 +49,8 @@ the following data:
 Exercise
 --------
 
-Run |project_name| for Population Data
-......................................
+1. Running |project_name| for Population Data
+.............................................
 
 A. Add and symbolize vector data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -83,7 +83,7 @@ On the InaSAFE Dock, you will notice that the hazard is not
 there and only exposure data (population) is visible, even
 though you already turned ON the data layer.
 
-.. image:: /static/training/socialisation/intermediate_inasafe_18.*
+.. image:: /static/training/socialisation/intermediate_inasafe_19.*
    :align: center
    :width: 300 pt
 
@@ -176,7 +176,7 @@ detailed result since the aggregated data can provide detailed
 information on specific administrative (or other) area. |project_name| allow us to add administrative data with specific boundaries that we can use to aggregate results.
 
 To do this, look at the Layer List and make sure to turn ON the
-**Jakarta District** layer. Next, take a look at the |project_name| dock under the heading *Aggregate results by*.
+**Jakarta District** layer. Next, take a look at the |project_name| dock under the heading *Summarise the results by*.
 
 .. image:: /static/training/socialisation/intermediate_inasafe_08.*
    :align: center
@@ -189,7 +189,7 @@ is because it did not have keyword data defube. Go ahead and add a
 keyword for **Jakarta District** using the :guilabel:`Keyword Creation Wizard`. For
 your reference, refer to the keyword diagram as explained above.
 
-Now you will able to select **Jakarta District** under 'Aggregate results by' in the |project_name|
+Now you will able to select **Jakarta District** under 'Summarise the results by' in the |project_name|
 Dock. The |project_name| Dock should look like this:
 
 .. image:: /static/training/socialisation/intermediate_inasafe_09.*
@@ -320,14 +320,14 @@ will find the impact result layer in Layer List.
    :align: center
    :width: 300 pt
 
-Looking at the **Detailed building type report** (pictured above) we only see
-two districts in Jakarta (Jakarta Timur and Jakarta Selatan). Your results may differ
+Look at the **Detailed building type report** (picture above) it shows that
+five districts in Jakarta are affected by flood. Your results may vary
 since it depend on the analysis area selected and
 also the aggregation layer that you used for analysis.
 
 |project_name| did not separate the impact result into three categories as in
 the :ref:`Run Basic InaSAFE <run_basic_inasafe>` because in the
-previous exercise we used raster data containing flood depth in each pixel
+previous exercise we used raster data containing information of flood depth in each pixel
 yet in this exercise, the hazard data that we use only depicts affected
 areas. Therefore, |project_name| will calculate how many buildings are inside the affected
 area but not level of impact on each building.
@@ -361,7 +361,7 @@ in the affected area and also a breakdown of the result by road type.
 If you are using aggregation, there will be detailed results for each aggregation.
 In the action checklist, you will see several questions
 that can be used for points of discussion related to road impact, and disaster logistics planning,
-for example: *Which roads can be used to evacuate people or to distribute relief items?*
+for example: *Which roads can be used to evacuate people or to distribute logistics?*
 
 Summary
 -------
@@ -386,7 +386,7 @@ In this exercise, you have learned how to download buildings and
 roads data from OpenStreetMap using :guilabel:`OpenStreetMap Downloader`. With
 this feature you can define the size of the area
 and what type of data you want to download. The availability of the data
-depend on how complete the data are in OpenStreetMap.
+depends on how complete the data are in OpenStreetMap.
 
 In the next section, you will learn how to run |project_name| with other type
 of hazard data such as tsunami, earthquake, volcano and generic data.
