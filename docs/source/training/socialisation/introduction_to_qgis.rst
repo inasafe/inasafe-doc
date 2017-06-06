@@ -85,7 +85,7 @@ You can download QGIS software by accessing the main QGIS website:
 
 -  Click :guilabel:`Download Now`.
 
--  If you are using Windows, there are 2 versions of QGIS (version 2.14 and version 2.8).
+-  If you are using Windows, there are 2 versions of QGIS (version 2.14 and version 2.18).
    Choose :kbd:`Latest release (eg. for new users)` and click 
    :guilabel:`QGIS Standalone Installer Version 2.14 (32 bit or 64 bit depend your computer operating system)`.
    Your exact version number may be different.

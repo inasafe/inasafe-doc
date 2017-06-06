@@ -137,7 +137,7 @@ Both of these files are drawn together in the map canvas.
 On the left side of QGIS is the layers list. This lists the layers, or files, that are loaded into our QGIS project. 
 In this project, we have two layers, **Kecamatan_Sleman** and **railway_Sleman_OSM**.
 
-The layers panel not only shows all the files that are currently open, it also determines the order that they will be drawn on the map canvas.
+The layers panel not only shows all the files that are currently opened, but also determines the order that they are drawn on the map canvas.
 A layer that is at the bottom of the list will be drawn first, and any layers above it will be drawn on top.
 
 1.  Click on the layer :guilabel:`railway_Sleman_OSM` 
@@ -163,9 +163,9 @@ A map should never show railway hidden beneath district areas, so go ahead and m
 
 **Toolbars**
 
-At the top of QGIS are a large number of tools, which are contained within various *toolbars*. 
+At the top of QGIS are a large number of tools, which are contained with various *toolbars*. 
 For example, the *File* toolbar allows you to save, load, print, and start a new project. 
-We already used one of these tools when we opened this project.
+We have already used one of these tools when we opened this project.
 
 .. image:: /static/training/qgis/3_019.*
    :align: center
@@ -173,10 +173,10 @@ We already used one of these tools when we opened this project.
 By hovering your mouse over an icon, the name of the tool will appear to help you identify each tool.
 
 The number of tools (buttons) can seem a bit overwhelming at first, 
-but you will gradually get to know them. 
+but you will gradually get used to them. 
 The tools are grouped into related functions on toolbars. 
-If you look closed you can see a vertical array of ten dots to the left of each toolbar. 
-By grabbing these with your mouse, you can move the toolbar to a more convenient location, or separate it so that it sits on its own.
+If you look closely, you can see a vertical array of ten dots to the left of each toolbar. 
+By dragging these with your mouse, you can move the toolbar to a more convenient position, or separate it so that it stands on its own.
 
 .. image:: /static/training/qgis/3_020.*
    :align: center
@@ -224,7 +224,7 @@ It allows you to adjust the map scale and see the mouse cursor’s coordinates o
 The coordinates of this map are the same type of coordinates that are recorded by GPS devices. 
 The status bar show shows the longitude and latitude of your mouse cursor.
 
-This may not all be clear right now, but as you progress in your knowledge of GIS is will make more and more sense.
+This may not all be clear right now, but as you progress in your knowledge of GIS it will make more and more sense.
 
 3.4 Adding a Vector Layer
 -------------------------
@@ -328,7 +328,7 @@ We’re going to download and activate a new plugin in the next section.
 3.7.1 Installing Plugins
 .........................
 
-There are many more plugins, but they must first be downloaded. To download a plugin, click the *Not installed* tab. 
+There are numerous plugins available, but they must first be downloaded. To download a plugin, click the *Not installed* tab. 
 This will load available plugin repositories, and you will see a list of all available plugins for download.
 
 .. image:: /static/training/qgis/3_037.*
@@ -341,7 +341,7 @@ If it has not yet been downloaded, downloading a plugin from the *Not installed*
 ............................
 
 The OpenLayers plugin allows you to view various web maps as a layer in QGIS. 
-This means that you can access the OSM slippy map, Google Maps and Bing Maps from within QGIS. 
+This means that you can access the OSM slippy map, Google Maps and Bing Maps from QGIS directly. 
 Follow along and we’ll see how this works.
 
 1.  Go to :menuselection:`Plugins --> Manage and Install Plugins…` and click on the :guilabel:`Not installed` tab. 
