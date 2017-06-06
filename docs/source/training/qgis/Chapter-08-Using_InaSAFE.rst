@@ -3,7 +3,7 @@
 ..  _ch8-using-inasafe:
 
 Chapter 8: Using InaSAFE 
-=======================
+========================
 
 **Learning Objectives**
 
