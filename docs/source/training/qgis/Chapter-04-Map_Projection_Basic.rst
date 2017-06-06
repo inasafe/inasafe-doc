@@ -43,7 +43,7 @@ But there’s a problem, as we will see.
 
 4. Now pan around the map while keeping an eye on the Scale field.
 
-Notice the scale changing? That’s because you’re moving away from the one point that you zoomed into at 1:20000000,
+Notice that the scale is changing? That’s because you’re moving away from the one point that you zoomed into at 1:20000000,
 which was at the center of your screen. All around that point, the scale is different.
 
 To understand why, think about a globe of the Earth. It has lines running along it from North to South.
@@ -155,7 +155,7 @@ To do this, we will need to export the data to a new file using a new projection
 
 5. Leave the :guilabel:`Encoding` unchanged.
 
-6. Change the value of the Layer CRS dropdown by click on :guilabel:`Select CRS` icon in the right panel.
+6. Change the value of the Layer CRS dropdown by clicking on :guilabel:`Select CRS` icon in the right panel.
 
 .. image:: /static/training/qgis/4_007.*
    :align: center
@@ -187,59 +187,63 @@ To do this, we will need to export the data to a new file using a new projection
 Georeference is the process of associating a physical map or raster image of a map with spatial locations
 and may be applied to any kind of object or structure that can be related to a geographic location,
 such as point of interest, roads, places, bridges, or buildings.
-Georeferencing is crucial to making aerial or satellite imagery and also raster images to be able to overlay with other spatial data,
+Georeferencing is crucial to enable aerial or satellite imagery and also raster images to be overlayed with other spatial data,
 like vector data and raster data.
 
 To georeference an image, we need to establish point with geographic coordinates in these point, known as control points.
-This control point refer to actual position of objects in earth.
+This control point refer to actual position of objects on Earth.
 These coordinates are obtained by doing field survey. 
-For example, we need to georeference an aerial image and we know location an object in aerial image with exact location in earth.
+For example, we need to georeference an aerial image and we know location an object in aerial image with exact location on Earth.
 To georeference this, simply input the control points with coordinates that we know from field survey.
 We need 4 control points or more to georeference the image.
 
 Let’s start to georeference an image that we got from `Geospasial BNPB <http://geospasial.bnpb.go.id>`_.
 
-1. Go to :menuselection:`Raster --> Georeferencer --> Georeferencer…`.
+1. Georeferencing in QGIS is done via the :guilabel:`Georeferencer GDAL` plugin. This is a core plugin - meaning
+   it is already part of your QGIS Installation. You just need to enable it. Go to :menuselection:`Plugins --> Manage and Install Plugins…`
+   and enable the Georeferencer GDAL plugin in the Installed tab.
+   
+2. Go to :menuselection:`Raster --> Georeferencer --> Georeferencer…`.
 
-2. A new window will appear. Click :guilabel:`Open Raster` icon in upper left side of the window.
+3. A new window will appear. Click :guilabel:`Open Raster` icon in upper left side of the window.
 
 .. image:: /static/training/qgis/4_010.*
    :align: center
 
-3. Select :file:`QGIS for Disaster Management/Sleman/Merapi/peta_krb_merapi_2002.jpg` and click :guilabel:`Open`.
+4. Select :file:`QGIS for Disaster Management/Sleman/Merapi/peta_krb_merapi_2002.jpg` and click :guilabel:`Open`.
 
-4. In Coordinate Reference System Selector type :kbd:`4326` in filter box and select :guilabel:`WGS 84` as CRS.
+5. In Coordinate Reference System Selector type :kbd:`4326` in filter box and select :guilabel:`WGS 84` as CRS.
 
-5. An image will be appear in Georeferencer Window.
+6. An image will appear in Georeferencer Window.
 
-6. You can use the :guilabel:`zoom/pan` controls in the toolbar to learn more about the map.
+7. You can use the :guilabel:`zoom/pan` controls in the toolbar to learn more about the map.
 
 .. image:: /static/training/qgis/4_011.*
    :align: center
 
-7. If you look closely, you will see coordinate grid with markings.
+8. If you look closely, you will see coordinate grid with markings.
    Using this grid, you can determine the X and Y coordinates of the points where the grid intersect.
    Click on :guilabel:`Add Point` in the toolbar.
 
 .. image:: /static/training/qgis/4_012.*
    :align: center
 
-8. A new pop-up window will appear, enter the coordinates. 
+9. A new pop-up window will appear, enter the coordinates. 
     For Indonesia enter X for Bujur (BT) and Y for Lintang (LS). 
     Click :guilabel:`OK`. It can use decimal degree (dd,dd), projected coordinates/UTM (mmmm,mmm) and degree minutes seconds (dd mm ss,ss) format.
-    **Don’t forget to put Negative ( - ) in Y/North value for area in South part of equator**.
+    **Don’t forget to put Negative ( - ) in Y/North value for area in the South part of equator**.
 
 .. image:: /static/training/qgis/4_013.*
    :align: center
 
-9. Notice that GCP table in bottom window has a row with detail of your first GCP.
+10. Notice that GCP table in the bottom of window has a row with detail of your first GCP.
 
-10. Now, let’s add at least 4 GCPs that cover entire image. More GCP’s points will result more accurate image.
+11. Now, let’s add at least 4 GCPs that covers entire image. More GCP’s points will result to a more accurate image.
 
 .. image:: /static/training/qgis/4_014.*
    :align: center
 
-11. After input 4 or more points, click :guilabel:`Transformation Setting` in toolbar.
+12. After inputting 4 or more points, click :guilabel:`Transformation Setting` in toolbar.
 
 .. note:: Right click the entry in :guilabel:`GCP Table` to delete the GCP Point
              or select :guilabel:`Delete Control Point` tool in toolbar above the image,
@@ -248,7 +252,7 @@ Let’s start to georeference an image that we got from `Geospasial BNPB <http:/
 .. image:: /static/training/qgis/4_015.*
    :align: center
 
-12. The Transformation Setting Window is displayed. Follow all setting like this:
+13. The Transformation Setting Window is displayed. Follow all setting like this:
 
 .. image:: /static/training/qgis/4_016.*
    :align: center
@@ -262,19 +266,19 @@ Let’s start to georeference an image that we got from `Geospasial BNPB <http:/
           Its look like a true rubber sheeting method, transforms the source Control Point exactly to the target Control Points,
           and optimize for local accuracy opposed to global accuracy.
 
-13. To finish and export your georeferenced map, click the :guilabel:`Start Georeferencing` button
+14. To finish and export your georeferenced map, click the :guilabel:`Start Georeferencing` button
      in the :guilabel:`Main Toolbar` at the top of the QGIS Workspace.
 
 .. image:: /static/training/qgis/4_017.*
    :align: center
 
-14. The Georeferencing is now complete. The georeferenced layer will loaded in QGIS Map Canvas.
+15. The Georeferencing is now complete. The georeferenced layer will be loaded in QGIS Map Canvas.
 
 .. image:: /static/training/qgis/4_018.*
    :align: center
 
 Knowing how to georeference is important when we want to digitize from a paper map or an image that is not already georeferenced.
-Once the image already georeferenced like this, it can apply the same digitization techniques that we will learn
-in the next chapter to create vector shapefiles that can be used in QGIS and InaSAFE.
+Once the image is georeferenced like this, it can be used at the same digitization techniques that we will learn later.
+In the next chapter, we will create vector shapefiles that can be used in QGIS and InaSAFE.
 
 :ref:`Go to next chapter --> <ch5-working-with-vector-data>`

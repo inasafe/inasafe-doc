@@ -2,7 +2,7 @@
 
 ..  _ch8-using-inasafe:
 
-Chapter 8 Using InaSAFE 
+Chapter 8: Using InaSAFE 
 =======================
 
 **Learning Objectives**
@@ -28,7 +28,7 @@ you go and learn in `InaSAFE website <http://www.inasafe.org>`_.
 8.1 Hazards, Exposure and Impact
 ---------------------------------
 
-Let’s begin by reviewing he inputs and outputs of InaSAFE – **hazard**; **exposure**; and 
+Let’s begin by reviewing the inputs and outputs of InaSAFE – **hazard**; **exposure**; and 
 **impact**. These terms are important for you to remember because the analysis process depend on
 these three things.
 
@@ -94,9 +94,9 @@ that we want InaSAFE to process. The purpose of InaSAFE is to make your impact a
 very simple and easy to do. The Questions section provides a simple way for you 
 to formulate what you want to know. All questions are created in the following format:
 
-In the event of [**hazard**] how many [**exposure**] might [**impact**]?
+In the event of [**hazard**] how many [**exposure**] will be affected?
 
-For example: "In the event of an earthquake how many buildings might be destroyed?"
+For example: "In the event of an earthquake how many buildings will be affected?"
 
 The Results section is filled in with information after InaSAFE is run, as we shall see. 
 The buttons at the bottom allow us to run a scenario, print and access help.
@@ -107,8 +107,8 @@ The buttons at the bottom allow us to run a scenario, print and access help.
 8.3.1 Adding Hazard Data
 ........................
 
-We will learn about how to using InaSAFE to run impact scenario based on Infrastructure data.
-Before we started let start how to add hazard data. Hazards can be represented by vector layers or
+We will learn about how to use InaSAFE to run impact scenario based on Infrastructure data.
+Before we start, let's find out how to add hazard data first. Hazards can be represented by vector layers or
 by raster layers. Remember that raster layers are like images with many pixels, 
 and each pixel represents some data about an area on the ground. A raster that shows elevation,
 for example, will contain pixels with different values based on the altitude of the location.
@@ -122,7 +122,7 @@ Let’s begin by adding our hazard layer to QGIS. It’s a raster model of flood
 .. image:: /static/training/qgis/8_004.*
    :align: center
 
-2. Open :file:`flood_hkv_current.tif`. This data is raster data (in .tif format) which represents
+2. Open :file:`Jakarta_Flood_HKV_WGS84.tif`. This data is raster data (in .tif format) which represents
    the flood prone area. The layer will look like this:
 
 .. image:: /static/training/qgis/8_005.*
@@ -138,8 +138,8 @@ When we add the exposure data, we will learn how to add these InaSAFE keywords o
 
 We can get the data from OpenStreetMap using OpenStreetMap Downloader. 
 We will get any OpenStreetMap data based on the current map extent in QGIS. 
-If your map extent displaying Indonesia, it will take a whole day according of 
-our internet connection. It better to zoom in in specific location to minimize the bandwidth.
+If your map extent displaying Indonesia, that will take a while to download it since there will be a whole
+lot of OpenStreetMap data. It would be better to zoom in in specific location to minimize the bandwidth.
 Let’s learn how to use OpenStreetMap Downloader in QGIS to get OpenStreetMap data.
 
 1. Click on :guilabel:`OpenStreetMap Downloader` button.
@@ -160,11 +160,11 @@ Let’s learn how to use OpenStreetMap Downloader in QGIS to get OpenStreetMap d
 4. If you want to use some prefix, for example :kbd:`jakarta` you can type in 
    :guilabel:`File name prefix` area.
 
-5. We can download all the map canvas extent but it takes a long time. 
+5. We can download all the map canvas extent but it would take a long time. 
    Otherwise if you want to download specific area, click on :guilabel:`Drag on Map` button and
-   create a bounding box by dragging it to set download area
+   create a bounding box by dragging it to set download area.
 
-6. Click on :guilabel:`OK` and wait until download finish.
+6. Click on :guilabel:`OK` and wait until the download is finished.
 
 .. image:: /static/training/qgis/8_008.*
    :align: center
@@ -184,17 +184,35 @@ Let’s take a look at the keywords that have already been created on the hazard
 .. image:: /static/training/qgis/8_009.*
    :align: center
 
-2. In the *InaSAFE Keywords Creation Wizard* window, we can follow the existing instructions 
-   step by step and change several keyword fields.
+2. In the *InaSAFE Keywords Creation Wizard* window, firstly, choose :guilabel:`Exposure`
+   since building is one of the exposure affected by hazard. Then, click :guilabel:`Next`.
 
 .. image:: /static/training/qgis/8_010.*
    :align: center
 
-3. Click :guilabel:`OK`.
+3. In the next step, we have to choose what kind of exposure the building layer represents.
+   Choose :guilabel:`Structures` and then click :guilabel:`Next`.
+   
+4. Choose what kind of data the building layer represents. Since the building layer data has
+   been classified, choose :guilabel:`Classified` and then click :guilabel:`Next`.
 
-4. Select the :guilabel:`Roads` layer and open again the keyword editor.
+5. In the next step, we have to select the attribute in the building layer that represents the classes.
+   Then click :guilabel:`Next`.
+   
+6. Select the type of classification we want to use and then click :guilabel:`Next`.
 
-5. Notice that the layer now appears in the InaSAFE panel.
+7. Drag unique values from the list on the left into the panel on the right and place them
+   in the appropriate categories and then click :guilabel:`Next`.
+
+8. The next step is optional. We can write a short comment about the source of the data. Then click :guilabel:`Next`.
+
+9. Give title to the building layer and then click :guilabel:`Next`.
+   
+10. Click :guilabel:`Finish`.
+
+11. Select the :guilabel:`Roads` layer. Open the keyword editor and do the steps above all over again.
+
+12. Notice that the layer now appears in the InaSAFE panel.
 
 .. image:: /static/training/qgis/8_011.*
    :align: center
@@ -202,21 +220,21 @@ Let’s take a look at the keywords that have already been created on the hazard
 8.3.4 Set Outline Impact Analysis
 ..................................
 
-If you have a laptop with small ram, run InaSAFE for large area with so many data will takes 
-a long time to finish. To solve that, we can set the analysis area to smaller area 
+If you have a laptop with small RAM, run InaSAFE for large area with so many data will take 
+a long time to finish. To solve the problem, we can set the analysis area to a smaller area 
 to make the analysis quicker.
 
-1. Select :guilabel:`Toggle Scenario Outlines` to showing analysis outline area.
+1. Select :guilabel:`Toggle Scenario Outlines` to show analysis outline area.
 
 .. image:: /static/training/qgis/8_012.*
    :align: center
 
-It will showing green box around in the map canvas.
+Green box will appear around the map canvas.
 
 .. image:: /static/training/qgis/8_013.*
    :align: center
 
-This green box is the analysis area that InaSAFE will calculate all the data inside the green box.
+This green box is the analysis area. InaSAFE will calculate all the data inside the green box.
 
 2. To change the analysis area, click :guilabel:`Set analysis area` button.
 
@@ -241,7 +259,7 @@ Note that if we were to add a second exposure layer to our project,
 we would be able to choose which exposure layer we wanted from the InaSAFE drop-down menu. 
 The same applies to hazard layers.
 
-The third drop-down box is the impact function (“Might”). This concludes our question, 
+The third drop-down box is the impact function. This concludes our question, 
 and defines the function that InaSAFE will run behind the scenes. 
 InaSAFE developers have written many of these functions to analyse all sorts of hazard and
 exposure layers. The function that is selected for us here will process 
@@ -250,7 +268,7 @@ the hazard and exposure layers spatially to determine how the exposure layer wil
 Click the :guilabel:`Run` button at the bottom to start the impact analysis. 
 At the end of the process, the statistics will be displayed in the Results section, 
 and a new layer will be added to the Layers panel that describes the result of the analysis.
-The map will distinguish between buildings that are affected and those that are not.
+The map will show which buildings that are affected and which are not.
 
 .. image:: /static/training/qgis/8_016.*
    :align: center
@@ -259,44 +277,56 @@ The map will distinguish between buildings that are affected and those that are 
 -------------------------------
 
 In this section we will learn how to run impact analysis for population data with InaSAFE. 
-We still use raster hazard data for flood in Jakarta but we will add another exposure data which
-is population from AsiaPop.
+We are going to use the same raster hazard data for flood in Jakarta and we will add another
+exposure data: population from AsiaPop.
 
 8.4.1 Adding Exposure Data
 ...........................
 
-We already learn about how to symbolise this data in previous chapter (chapter 6), 
-so if you think the colour of this AsiaPop’s data different than yours, 
-you may need to symbolise it.
+We have already learned about how to change the symbol for this data in previous chapter (chapter 6), 
+so if the appearance of this AsiaPop’s data is different than yours, 
+you may need to change it.
 
-1. Click :guilabel:`Add Raster Layer` button and add :file:`popmap10_all`.
+1. Click :guilabel:`Add Raster Layer` button and add :file:`Java_Population_WGS84.tif`.
 
 2. Change the layer order like this:
 
 .. image:: /static/training/qgis/8_017.*
    :align: center
 
-3. You can hide the vector data such as roads and building to create more clear view in map canvas.
+3. You can hide the vector data such as roads and buildings to create clearer view in map canvas.
 
 8.4.2 Adding Keyword Data for Population
 .........................................
 
-1. Select the **popmap10\_all** layer in the Layers panel, and click on the 
+1. Select the **Java_Population_WGS84** layer in the Layers panel, and click on the 
    :guilabel:`Keywords Creation Wizard` button.
 
 .. image:: /static/training/qgis/8_018.*
    :align: center
 
-2. In the *Keywords Creation Wizard* window choose exposure as category layer, 
-   we can follow the existing instructions step by step and change several keyword fields. 
-   The last step, you can fill the :guilabel:`Title` with :kbd:`people`.
+2. In the *Keywords Creation Wizard* window choose :guilabel:`Exposure` as category layer, then click :guilabel:`Next`.
 
 .. image:: /static/training/qgis/8_019.*
    :align: center
 
-3. Click :guilabel:`OK`.
+3. In the next step, we have to choose what kind of exposure the population layer represents.
+   Choose :guilabel:`Population` and then click :guilabel:`Next`.
+   
+4. Choose what kind of data the building layer represents. Choose :guilabel:`Continuous` and then click :guilabel:`Next`.
 
-4. Notice that the layer now appears in the InaSAFE panel.
+5. We have to choose what units the continuous data are in. Then, click :guilabel:`Next`.
+
+6. In the next step, we can select the checkbox if we want InaSAFE to resample the layer to the
+   hazard layer resolution during analyses. Then, click :guilabel:`Next`.
+   
+7. The next step is optional. We can write a short comment about the source of the data. Then click :guilabel:`Next`.
+
+8. We can fill the :guilabel:`Title` with :kbd:`People` and then click :guilabel:`Next`.
+   
+9. Click :guilabel:`Finish`.
+
+10. Notice that the layer now appears in the InaSAFE panel.
 
 .. image:: /static/training/qgis/8_020.*
    :align: center
@@ -304,46 +334,54 @@ you may need to symbolise it.
 8.4.3 Using boundary as aggregation layer
 ..........................................
 
-We can let InaSAFE to give impact result to us according whole area or divide it 
-by administration boundary. It mean that the InaSAFE will provide impact analyst result 
-into each administration area that we provide. This method will help us 
-to know more specific result for each area, so we can know how many people 
+We can use InaSAFE to give impact result according to the whole area or divide it 
+by administrative boundary. InaSAFE will provide impact analyst result 
+for each administration area that we provide. This method will help us 
+to know the result specifically for each area, so we are able to know how many people 
 that might be affected and how many logistic we should prepare for each administration area. 
 To do this, we need to define aggregation layer first using :guilabel:`Keyword Creation Wizard`.
 
 1. Click :guilabel:`Add Vector Layer` button and add :file:`Jakarta_District_Boundary_WGS84.shp`.
 
-2. Select the :file:`district_osm_jakarta.shp` layer in the Layers panel, and click on the 
+2. Select the :file:`Jakarta District.shp` layer in the Layers panel, and click on the 
    :guilabel:`Keywords Creation Wizard` button.
 
 3. In the *Keywords Creation Wizard* window choose aggregation as category layer.
 
-4. After that, you can follow the existing instructions step by step 
-   and change several keyword fields. The last step, you can give the Title with 
-   :kbd:`District Jakarta`.
-
 .. image:: /static/training/qgis/8_021.*
    :align: center
+
+4. Select the attribute in the layer that has the name of the aggregation areas.
+   Then click :guilabel:`Next`.
+   
+5. Choose the field in the layer that represents specified concept of field or/and set default
+   value if there is no value and then click :guilabel:`Next`.
+
+6. The next step is optional. We can write a short comment about the source of the data. Then click :guilabel:`Next`.
+   
+7. We can fill the :guilabel:`Title` with :kbd:`District Jakarta` and then click :guilabel:`Next`.
+
+8. Click :guilabel:`Finish`.
 
 8.4.4 Set Outline Analysis
 ...........................
 
-We already set the analysis area for calculating impact for building.
+We have already set the analysis area for imapct calculation for the building.
 This time we will set the analysis area for population data.
 
-1. Right click on :guilabel:`flood_hkv_current_jakarta` layer and click :guilabel:`Zoom to Layer`
+1. Right click on :guilabel:`A flood similar to the 2007 Jakarta event` layer and click :guilabel:`Zoom to Layer`
 
-2. Select :guilabel:`Toggle Scenario Outlines` to showing analysis outline area.
+2. Select :guilabel:`Toggle Scenario Outlines` to show the analysis outline area.
 
 .. image:: /static/training/qgis/8_022.*
    :align: center
 
-It will showing green box around in the map canvas.
+Green box will appear around the map canvas.
 
 .. image:: /static/training/qgis/8_023.*
    :align: center
 
-This green box is the analysis area that InaSAFE will calculate all the data inside the green box.
+This green box is the analysis area. InaSAFE will calculate all the data inside the green box.
 
 3. To change the analysis area, click *Set analysis area* button.
 
@@ -351,7 +389,7 @@ This green box is the analysis area that InaSAFE will calculate all the data ins
    :align: center
 
 -  Click :guilabel:`Drag on map` button and create a box to set around the
-   **flood\_hkv\_current\_jakarta** area. This will create blue box around map canvas.
+   **A flood similar to the 2007 Jakarta event** area. This will create a blue box around map canvas.
 
 .. image:: /static/training/qgis/8_025.*
    :align: center
@@ -359,7 +397,7 @@ This green box is the analysis area that InaSAFE will calculate all the data ins
 -  After that click :guilabel:`OK`.
 
 -  We will run InaSAFE with Jakarta boundary as aggregation layer. To do this, simply change 
-   :guilabel:`aggregate result by` in InaSAFE panel into district boundary.
+   :guilabel:`Summarise the result by` in the InaSAFE panel into district boundary.
 
 .. image:: /static/training/qgis/8_026.*
    :align: center
@@ -380,7 +418,7 @@ by 5 municipal in Jakarta.
 
 When you scroll impact result from running InaSAFE scenario, you will notice 
 that there are some statistic that show how many rice, drinking water, clean water, family kits
-and toilet for each municipals in Jakarta. It called minimum needs per week
+and toilet for each municipals in Jakarta. It's called minimum needs per week
 for each people evacuated. The purpose of this minimum needs is to provide quick method calculating
 support requirements (in terms of food, water, etc) for displaced persons.
 
@@ -391,10 +429,10 @@ according to the following default formulas:
 -  2.5l drinking water per person per day (17.51 L per week)
 -  15l clean water per person per day (105 L per week)
 -  One family kits per family per week (assumes five people per families
-   which not specified in perka)
+   which is not specified in perka)
 -  20 people per toilet
 
-If you feel not satisfied with these configuration, you can define your custom minimum needs 
+If you are not satisfied with these configuration, you can define your custom minimum needs 
 for your own area using *Minimum Needs Configuration*
 
 1. Click in :menuselection:`Plugin → InaSAFE → Minimum Needs Configuration`
@@ -403,8 +441,8 @@ for your own area using *Minimum Needs Configuration*
    :align: center
 
 2. *Minimum Needs Manager* Window will appear. You can see in the
-   :guilabel:`Profile` selection there are 3 profile that already defined,
-   **BNPB_en**, **Philippine Minimum Needs_en**, **BNPB_id**, and **Tanzania**.
+   :guilabel:`Profile` selection there are 4 profile defined,
+   **BNPB_en**, **Philippine Minimum Needs_en**, **BNPB_id**, **SPHERE**, and **Tanzania**.
 
 .. image:: /static/training/qgis/8_030.*
    :align: center
@@ -418,69 +456,39 @@ for your own area using *Minimum Needs Configuration*
 button in the right upper side of the window.
 
 4. You will enter *Resource editor* and from these editor, you can add
-   or modify resource by fill each field that you think it’s important
+   or modify resource by filling each field that you think is important.
 
-5. Click :guilabel:`Save Resource` if you already change the value from an item or
+5. Click :guilabel:`Save Resource` if you have already changed the value from an item or
    click :guilabel:`Discard Changes` if you didn’t change anything.
 
 6. If you want to create your own custom minimum needs, click :guilabel:`New` in the bottom side
-   of the window and you can start adding new item by click :guilabel:`+` button 
+   of the window and you can start adding new item by clicking the :guilabel:`+` button 
    in the right upper side of the window to open *Resource editor.*
 
-7. Click :guilabel:`Save` after you add several item to your custom minimum needs.
+7. Click :guilabel:`Save` after adding several items to your custom minimum needs.
 
 8.4.6 Run Impact Analyst with Modified Minimum Needs
 ......................................................
 
-After you create your custom minimum needs you can run InaSAFE with your own minimum needs:
+After creating your custom minimum needs you can run InaSAFE with your own minimum needs:
 
 1. Go to :menuselection:`Plugins ‣ InaSAFE ‣ Minimum Needs Configuration`
 
 2. In *Minimum Needs Manager* Window, select your custom profile in Profile selector. 
-   After that close the *Minimum Needs Manager* Window.
+   After that, close the *Minimum Needs Manager* Window.
 
-3. Click :guilabel:`Options…` in InaSAFE Panel to open *InaSAFE impact function configuration*
-
-.. image:: /static/training/qgis/8_032.*
-   :align: center
-
-4. Click :guilabel:`Minimum Needs` tab to see if your own Custom Minimum Needs already set.
-
-5. Click :guilabel:`Run` to see the InaSAFE result with your custom minimum needs.
+3. Click :guilabel:`Run` to see the InaSAFE result with your custom minimum needs.
 
 8.5 Print InaSAFE Result
 -------------------------
 
 The data displayed on the screen can be saved to a PDF file by clicking
-:guilabel:`Print` at the bottom of the InaSAFE panel. Before we print the InaSAFE result, 
-we can improve our impact map by editing the symbology in QGIS. Styles can be changed, 
-other relevant layers can be added, and the layout can be changed using the Print Composer.
+:guilabel:`Print` at the bottom of the InaSAFE panel.
 
 1. Click on the InaSAFE result layer and click :guilabel:`Print`.
 
-2. A window will appear in which you can choose the extent to be printed. 
-   Choose :guilabel:`Analysis extent` if you want to print the entire map extent, or choose 
-   :guilabel:`Current extent` to print the analysis based on the current view of the map.
-
-3. You may also choose a custom print template *a3-landscape-blue, a3-landscape-orange, a3-portrait-blue, a3-portrait-orange, a4-landscape-blue, a4-landscape-orange, a4-portrait-blue, and a4-portrait-orange*.
-
-.. image:: /static/training/qgis/8_033.*
-   :align: center
-
-4. If you want to add additional information before printing, click :guilabel:`Open Composer`.
-
-5. To save it in PDF format for printing, click :guilabel:`Open PDF`.
-
-6. Choose your save location and click :guilabel:`Save`.
-
-.. image:: /static/training/qgis/8_034.*
-   :align: center
-
-7. After you wait for a while, InaSAFE will create 2 pdf output, first one is the **map based** 
-   on your extent view and the second one is the **statistics data**.
-
-.. image:: /static/training/qgis/8_035.*
-   :align: center
+2. The analysis results will automatically open in pdf format. 
+   If you want to print it, click File -- Print or if you want to save it click File -- Save As.
 
 8.6 Save Your Results
 ----------------------
@@ -494,11 +502,11 @@ It will show you only black and white layer and you need to symbolise again.
 
 To get the style from your InaSAFE result, you need to save the InaSAFE result’s style first.
 
-1. Right click on :guilabel:`Population which need evacuation`, and go to
+1. Right click on :guilabel:`Number of People`, and go to
    :guilabel:`Properties`.
 
-2. Go to :guilabel:`Style` button on the bottom side the properties window and
-   click :guilabel:`Save Style …`.
+2. Go to :guilabel:`Style` button on the bottom side the properties window, 
+   click :guilabel:`Save Style` and choose :guilabel:`QGIS Layer Style File …`.
 
 .. image:: /static/training/qgis/8_036.*
    :align: center
@@ -517,7 +525,7 @@ To get the style from your InaSAFE result, you need to save the InaSAFE result�
 After you saved your InaSAFE result style now you can save your InaSAFE result layer 
 and get the same style like the InaSAFE Result.
 
-1. Right click on :guilabel:`Population which need evacuation`, and go to 
+1. Right click on :guilabel:`Number of People`, and go to 
    :guilabel:`Save As…`
 
 2. Click on :guilabel:`Browse` button and select a name and location for the file.
@@ -558,8 +566,8 @@ and get the same style like the InaSAFE Result.
 .. image:: /static/training/qgis/8_041.*
    :align: center
 
-Now you already learn about how to use InaSAFE from using InaSAFE Keyword Wizard 
+Now you have learned about how to use InaSAFE from using InaSAFE Keyword Wizard 
 to define keyword attribute, how to run InaSAFE with InaSAFE dock and Impact Function Wizard, 
 how to modify minimum needs, and how to use OSM Downloader to download OpenStreetMap data directly.
-InaSAFE it’s really help use to know the impact of disaster 
-and how we can create some plan if the disaster happen in real life.
+InaSAFE is really helpful for us to know the impact of disaster 
+and how we can create some plans if the disaster were to happen in real life.
