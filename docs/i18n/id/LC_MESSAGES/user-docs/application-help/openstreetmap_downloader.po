@@ -1,56 +1,44 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-#
-# Translators:
-# adityo dwijananto <adz.only@gmail.com>, 2013
-# adityo dwijananto <adz.only@gmail.com>, 2014
-# Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2013
-# mahardika fadmastuti <mahardika.fadmastuti@gmail.com>, 2013
-# Emir Hartato <emir.hartato@gmail.com>, 2014
-# harry mahardhika <harry.mahardhika17@gmail.com>, 2013
-# mahardika fadmastuti <mahardika.fadmastuti@gmail.com>, 2014
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe-develop\n"
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-22 12:27\n"
-"PO-Revision-Date: 2014-02-20 07:10+0000\n"
-"Last-Translator: Emir Hartato <emir.hartato@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
-"develop/language/id/)\n"
-"Language: id\n"
+"POT-Creation-Date: 2016-07-22 06:59-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Dewi Sulistioningrum <dewi.sulistioningrum@hotosm.org>, 2016\n"
+"Language-Team: Indonesian (https://www.transifex.com/inasafe/teams/57762/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# f9a08aeea0e8403680ed810b20853421
-# 359b1c444b374c31b0af44f6fd834f2c
+# bf5fa5a03d5e40d59a3f425e33a3c8ca
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:8
 msgid "OpenStreetMap Downloader"
-msgstr "OpenStreetMap Downloader"
+msgstr "Pengunduh OpenStreetMap"
 
-# 130ee400901546d19b464bd24ab68761
+# ea76b7bf76034f47917d17b5358852bf
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:10
-#, fuzzy
 msgid ""
 "This tool fetches building ('structure') and highway ('road') data from the "
 "OpenStreetMap project for you."
 msgstr ""
 "Tool ini akan membantu Anda memperoleh data ('struktur') bangunan dan "
-"jaringan jalan ('jalan') dari projek OpenStreetMap."
+"jaringan jalan ('jalan') dari projek OpenStreetMap untuk Anda."
 
-# f9a08aeea0e8403680ed810b20853421
-# 359b1c444b374c31b0af44f6fd834f2c
+# 628b5c2b49a74699a95612b1e9da3cd6
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:18
-#, fuzzy
 msgid "*OpenStreetMap Downloader*"
-msgstr "OpenStreetMap Downloader"
+msgstr "*Alat Download OpenStreetMap*"
 
-# 30399e5230084e5d8490926e904231f2
+# 689d5764e6904744953eaccdfd4575a9
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:20
-#, fuzzy
 msgid ""
 "The tool requires an internet connection as it fetches the data via a web "
 "service running on `Linfiniti's OSM Reporter <http://osm.linfiniti.com>`_ "
@@ -59,24 +47,22 @@ msgstr ""
 "Tool ini membutuhkan koneksi internet karena tool ini mengambil data dari "
 "layanan situs `Laporan OSM Linfiniti <http://osm.linfiniti.com>`_"
 
-# 619c58bc1d4a458f85ca34bf65077b52
+# 9bef3c53e8164d51a1a9974ee1622e97
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:23
-#, fuzzy
 msgid ""
-"The data, once downloaded, becomes available as a shapefile. A style file is "
-"automatically created so that it symbolises nicely in QGIS. In addition, the "
-"correct keyword metadata is created for the downloaded dataset so that it "
-"can be used directly in |project_name| impact scenario analyses."
+"The data, once downloaded, becomes available as a shapefile. A style file is"
+" automatically created so that it symbolises nicely in QGIS. In addition, "
+"the correct keyword metadata is created for the downloaded dataset so that "
+"it can be used directly in |project_name| impact scenario analyses."
 msgstr ""
 "Data, setelah didownload akan tersedia untuk Anda sebagai sebuah shapefile. "
-"Sebuah gaya file secara otomatis dibuat sehingga dilambangkan dengan baik "
-"dalam QGIS. Selain itu, metadata kata kunci yang benar dibuat untuk dataset "
-"didownload sehingga dapat digunakan secara langsung dalam skenario analisis "
-"dampak menggunakan InaSAFE."
+"Sebuah *style* file secara otomatis dibuat sehingga data bisa disimbolkan "
+"dengan baik dalam QGIS. Selain itu, metadata kata kunci yang benar dibuat "
+"untuk dataset didownload sehingga dapat digunakan secara langsung dalam "
+"skenario analisis dampak InaSAFE."
 
-# cd77a7c267c44c75b00685ad19c288f2
+# 881fa77bc3d94390acf0095141d3eeda
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:28
-#, fuzzy
 msgid ""
 "The downloader service has limitations as to the size of datasets that can "
 "be retrieved. As such you may experience issues trying to fetch large "
@@ -86,15 +72,15 @@ msgstr ""
 "Layanan *download* ini memiliki keterbatasan terhadap besarnya dataset yang "
 "dapat diterima. Kemungkinan Anda akan mendapati isu ketika mencoba untuk "
 "mengambil misalnya untuk data batas tapak bangunan seluas satu negara. "
-"Umumnya pen-*download*-an dataset pada level perkotaan dan di bawahnya "
-"seharusnya mampu bekerja lebih baik."
+"Umumnya dataset pada level perkotaan dan di bawahnya seharusnya mampu "
+"bekerja lebih baik."
 
-# 6c01c68a22694f998ba1d4cc7f170dea
+# fb5ec14216594ad2a403c5f8a3b9fe93
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:34
 msgid "To use this tool effectively:"
 msgstr "Untuk menggunakan alat ini secara efektif:"
 
-# 4895287779ef4d7d94f5a3521192f366
+# a09c3e3a1e2245f198368b31702cc30b
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:36
 msgid ""
 "Use QGIS to zoom in to the area for which you want building data to be "
@@ -105,81 +91,78 @@ msgstr ""
 "Untuk mendapatkan area yang Anda inginkan, anda bisa mengatur kotak secara "
 "manual di area yang disediakan pada bagian bawah dari dialog."
 
-# 338df32490224df6b81760ea5eed2d27
+# a21d3a854ee14b2fa4d571cdd9713013
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:40
-#, fuzzy
 msgid ""
 "Check that the output directory is correct. Note that the saved datasets "
 "will be called :file:`buildings.shp` and :file:`roads.shp` (and their "
 "associated files)."
 msgstr ""
-"Periksa apakah direktori output sudah benar. Catatan bahwa set data yang "
-"tersimpan akan diberi nama buildings.shp dan roads.shp (beserta berkas-"
-"berkas yang terhubung dengannya)"
+"Periksa apakah direktori output sudah benar. Perhatikan bahwa set data yang "
+"tersimpan akan diberi nama :file:`buildings.shp` dan :file:`roads.shp` "
+"(beserta berkas-berkas yang terhubung dengannya)"
 
-# f3809496bc2d4cbeb450ec36d3d8e62e
+# 93f77b96c5c34e26b13bbafcd0d55794
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:43
-#, fuzzy
 msgid ""
-"By default simple file names will be used (e.g. :file:`roads.shp`, :file:"
-"`buildings.shp`). If you wish you can specify a prefix to add in front of "
-"this default name. For example using a prefix of 'padang-' will cause the "
-"downloaded files to be saved as :file:`padang-roads.shp` and :file:`padang-"
-"buildings.shp`. Note that the only allowed prefix characters are A-Z, a-z, "
-"0-9 and the characters '-' and '_'. You can leave this blank if you prefer."
+"By default simple file names will be used (e.g. :file:`roads.shp`, "
+":file:`buildings.shp`). If you wish you can specify a prefix to add in front"
+" of this default name. For example using a prefix of 'padang-' will cause "
+"the downloaded files to be saved as :file:`padang-roads.shp` and :file"
+":`padang-buildings.shp`. Note that the only allowed prefix characters are "
+"A-Z, a-z, 0-9 and the characters '-' and '_'. You can leave this blank if "
+"you prefer."
 msgstr ""
-"Secara default, nama file yang sederhana akan digunakan (misalnya roads.shp, "
-"buildings.shp). Anda dapat menggunakan prefix untuk ditambahkan di depan "
-"nama default ini,. Sebagai contoh, menggunakan prefix 'padang-' akan "
-"mengubah file yang di-download menjadi 'padang-roads.shp' dan 'padang-"
-"buildings.shp'. Sebagai catatan, prefix hanya dibolehkan untuk menggunakan "
-"karakter A-Z, a-z, 0-9 dan karakter '-', dan '_'. Anda dapat mengosongkan "
-"pilihan ini."
+"Secara pengaturan awal nama file yang sederhana akan digunakan (misalnya "
+":file:`roads.shp`, :file:`buildings.shp`). Jika mau Anda dapat menggunakan "
+"prefix untuk ditambahkan di depan nama default ini,. Sebagai contoh, "
+"menggunakan prefix 'padang-' akan mengubah file yang di-download menjadi "
+":file:`padang-roads.shp` dan :file:`padang-buildings.shp`. Sebagai catatan, "
+"prefix hanya dibolehkan untuk menggunakan karakter A-Z, a-z, 0-9 dan "
+"karakter '-', dan '_'. Anda dapat mengosongkan pilihan ini."
 
-# e3cedc82da4742da9dc794096a17d2bd
+# 99634d9385664613b30fb60a3fca4abc
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:51
 msgid "Click :guilabel:`OK` to retrieve the data."
-msgstr ""
+msgstr "Klik :guilabel:`OK` untuk menerima data."
 
-# dc93d77dba354f42b0eb9d2e24d336f1
+# f3044d2bcd6f4043bef085c939e49d88
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:54
 msgid ""
 "If a dataset already exists in the output directory it will be overwritten. "
-"This tool requires a working internet connection and fetching buildings will "
-"consume your bandwidth."
+"This tool requires a working internet connection and fetching buildings will"
+" consume your bandwidth."
 msgstr ""
 "Jika dataset sudah ada di direktori output, dataset tersebut akan ditimpa. "
 "Alat ini memerlukan koneksi internet untuk bekerja dan mengambil bangunan "
 "akan menggunakan bandwidth Anda."
 
-# f2567da1f671469080646c8f9f83f842
+# 52b597ab582c4b4a8d6dca5c77d896e3
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:59
-#, fuzzy
 msgid ""
 "Downloaded data is copyright OpenStreetMap contributors (`click for more "
 "info <http://www.openstreetmap.org/copyright>`_)."
 msgstr ""
-"Data yang didownload adalah hak cipta kontributor OpenStreetMap (klik untuk "
-"info lebih lanjut)."
+"Data yang didownload adalah hak cipta kontributor OpenStreetMap  (klik untuk"
+" info lebih lanjut <http://www.openstreetmap.org/copyright>`_)."
 
-# b8050e7a1a5a4c6e92908f639c227dc4
+# b8f2543af26f4ee78fb555696c0ee8dd
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:63
 msgid "Building data"
 msgstr "Data bangunan"
 
-# 2a1c21e7bfcd4295b31a497e5f893d3a
+# 6eccf3ff82b64b13ab9d5ed8e17a0398
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:65
-#, fuzzy
 msgid ""
 "|project_name| supports the use of building data in various impact "
 "functions. In particular we support building footprints sourced from the "
 "`OpenStreetMap <https://openstreetmap.org>`_ project (OSM)."
 msgstr ""
-"InaSAFE mendukung penggunaan data bangunan pada berbagai macam fungsi "
-"dampak. Pada umumnya kami mendukung batas tapak bangunan yang bersumber dari "
-"proyek `OpenStreetMap (OSM) <https://openstreetmap.org>`_"
+"|project_name| mendukung penggunaan data bangunan pada berbagai macam fungsi"
+" dampak. Pada umumnya kami mendukung batas tapak bangunan yang bersumber "
+"dari proyek `OpenStreetMap (OSM) <https://openstreetmap.org>`_"
 
-# 6ce18fecc05645a9b3c235d2f36739f0
+# b651b930d50448b38625e84e9840f051
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:69
 msgid ""
 "The following building types are derived (depending on the various tags "
@@ -188,191 +171,190 @@ msgstr ""
 "Tipe bangunan berikut ini yang berasal (tergantung dari berbagai tags yang "
 "diberikan pada OSM) adalah sebagai berikut:"
 
-# 07380434ed6143648d79af0ef36419c3
+# 54c6b237a4214504bcc66d9a9a68ce16
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:72
 msgid "School"
 msgstr "Sekolah"
 
-# eba4e2ab8f3f4c58a6e3c20e4a5a5cc6
+# 331ff0dd58054f8b88f42d9ddae38218
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:73
 msgid "University/College"
 msgstr "Universitas/Kampus"
 
-# 30326ba8c8c54e87a4b966169b3fa634
+# 12c8d0be4d8440cda589ee982e801775
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:74
 msgid "Government"
 msgstr "Pemerintahan"
 
-# bf9df15b98554b17bf5438a3259cd5ea
+# 51b892ed870c41aa92a9fb07617bb4cc
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:75
 msgid "Clinic/Doctor"
 msgstr "Klinik/Dokter"
 
-# cfd45ec75908411892f3742c0bd643a6
+# 717f409f6b434be8b414c32565b29b38
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:76
 msgid "Hospital"
 msgstr "Rumah Sakit"
 
-# 2f4cb22c300e40a2b94ca3391c4e7d69
+# 2462407bb0df4905bc32fa988f2c62f9
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:77
 msgid "Fire Station"
 msgstr "Stasiun Pemadam Kebakaran"
 
-# e2bb3410999e447ea682e6c8fe278664
+# 589b50672231445599bde2c49570252c
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:78
 msgid "Police Station"
 msgstr "Kantor Polisi"
 
-# 089642643ed147f18b19adcfd99d80be
+# ee33b0aef17846c8937d88b8b6281523
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:79
 msgid "Public Building"
 msgstr "Bangunan Publik"
 
-# 9b33b852662b485c89b4bdd494de7d32
+# ee517d86032245408be2f0aaf5180a14
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:80
 msgid "Place of Worship - Islam"
 msgstr "Tempat Ibadah - Islam"
 
-# 8789cf4569ce49abaa21d8cc71b30c2d
-# aafc9cf7c1264f98b2ea4ff93cf58ed7
+# b2a2ab785c27464bb966452d3b12a168
+# 38e8e1f81cd54e45a8f96ac4bd2097db
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:81
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:83
 msgid "Place of Worship - Unitarian"
 msgstr "Tempat Ibadah - Unitarian"
 
-# 0a423c5f75c444dab1b0e31a11b52d1a
+# a7ca39b24ca646dab0ea6e16d0facafc
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:82
 msgid "Place of Worship - Buddhist"
 msgstr "Tempat Ibadah - Buddha"
 
-# 89705823dec64814891b7566cff9a353
+# cbdc8f777251453e98c41531e2f9702b
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:84
 msgid "Supermarket"
 msgstr "Supermarket"
 
-# 24ff2a6dd1e2411ea70e24a6120e139d
+# 1166617a4f634bb0af1d46d7a81729d1
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:85
 msgid "Residential"
 msgstr "Permukiman"
 
-# 35fce88b32dc45f098ff51eeb61ee46e
+# d661dbeb85b24398b29e23b6e20312b0
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:86
 msgid "Sports Facility"
 msgstr "Fasilitas Olahraga"
 
-# aafbe21a162647bda1b91d9802a3df96
+# 201ab785bb274ac291af5da5fb8b92ef
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:87
 msgid "Place of Worship"
 msgstr "Tempat Beribadah"
 
-# 497ae32d40b244f1b27cf11880286e01
+# 45b80379bd3d496a8ded828ec52445ce
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:88
 msgid "Commercial"
 msgstr "Komersil"
 
-# 50ae59bf2ab649e7932cf391420aa238
+# 7129c4484f814c6293fa75f1f547ceef
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:89
 msgid "Industrial"
 msgstr "Industri"
 
-# 928ca8d565564079b4777686dd3ac5f8
+# 6124292429094a26aa46892d1fa52b74
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:91
 msgid ""
 "These derived types will be present in a field called 'type' when "
-"downloading the building data. Note that depending on the area for which you "
-"have downloaded, only some of these categories may be present in your "
+"downloading the building data. Note that depending on the area for which you"
+" have downloaded, only some of these categories may be present in your "
 "buildings dataset."
 msgstr ""
-"Jenis turunan akan hadir dalam sebuah *field* yang disebut 'type' saat men-"
-"*download* data bangunan. Perhatikan bahwa hal ini tergantung pada daerah "
-"mana yang anda *download*, kemungkinan hanya beberapa dari kategori ini yang "
-"akan muncul pada set data bangunan Anda."
+"Jenis turunan akan hadir dalam sebuah *field* yang disebut 'type' saat "
+"men-*download* data bangunan. Perhatikan bahwa hal ini tergantung pada "
+"daerah mana yang anda *download*, kemungkinan hanya beberapa dari kategori "
+"ini yang akan muncul pada set data bangunan Anda."
 
-# ea5739c9fad94a45a0d7b05d93f3b952
+# 0cc24800610442f4a6ff0b8a5d0374c2
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:97
 msgid "Roads data"
 msgstr "Data jalan"
 
-# b469a9e7e0264396bfea3e388a6ba74c
+# f064189c26794ad6aef8d904f65d9d87
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:99
-#, fuzzy
 msgid ""
-"|project_name| supports the use of road data in various impact functions. In "
-"particular we support roads sourced from the `OpenStreetMap <https://"
-"openstreetmap.org>`_ project (OSM)."
+"|project_name| supports the use of road data in various impact functions. In"
+" particular we support roads sourced from the `OpenStreetMap "
+"<https://openstreetmap.org>`_ project (OSM)."
 msgstr ""
-"InaSAFE mendukung penggunaan data bangunan untuk berbagai fungsi dampak. "
-"Pada umumnya kami mendukung jalan yang bersumber dari proyek `OpenStreetMap "
-"(OSM) <https://openstreetmap.org>`_"
+"|project_name| mendukung penggunaan data bangunan untuk berbagai fungsi "
+"dampak. Pada umumnya kami mendukung jalan yang bersumber dari proyek "
+"`OpenStreetMap (OSM) <https://openstreetmap.org>`_"
 
-# 95e9ade734884fa1b46264cfb7b439a2
+# 3a825ea21b27432c8ee918f3b40ac458
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:103
 msgid ""
-"The following road types are derived (depending on the various tags assigned "
-"to them in OSM):"
+"The following road types are derived (depending on the various tags assigned"
+" to them in OSM):"
 msgstr ""
 "Tipe jalan berikut ini yang berasal (tergantung dari berbagai tags yang "
 "diberikan pada OSM) adalah sebagai berikut:"
 
-# ece595e9f03d4563a05dc0edf33ca642
+# 8c5505233f5b4d959643b313a9f6d27f
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:106
 msgid "Motorway / highway (includes 'trunk' from OSM)"
 msgstr ""
 "Jalan besar / jalan bebas hambatan (termasuk 'trunk' / jalan penting dari "
 "OSM)"
 
-# 76eb5236743d4abfa30d48209c5858b8
+# 393af4058ced45f1ab3e50f263530b17
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:107
 msgid "Motorway link"
 msgstr "Percabangan jalan besar"
 
-# 38cea4e724914692a9b7e351b8abd1c1
+# 6425cd03c86042a2943aaa26be14e43b
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:108
 msgid "Primary road"
 msgstr "Jalan primer"
 
-# 10fd23e6693b44c7b4a85e51a8f79fa1
+# f9983c23b407492ba56ab428c48d9a6c
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:109
 msgid "Primary link"
 msgstr "Percabangan jalan primer"
 
-# 9b6e14418bd540e492f1dd2e30c8ce5e
+# f6a2109994b34035ae53d374cebecb41
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:110
 msgid "Tertiary"
 msgstr "Jalan tertier"
 
-# 47de92b4a2dd420eb1017ada1f7defd8
+# f225adbb74c54306af06aeb0624f3dc6
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:111
 msgid "Tertiary link"
 msgstr "Percabangan jalan tertier"
 
-# 6fb02a60c89741ccbd73d7ae36c6832a
+# ca7e5b4218f14cc58651148726e7d3e4
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:112
 msgid "Secondary"
 msgstr "Jalan Sekunder"
 
-# 66bd4e21b7184c52b12e85d9ecec48c8
+# 0a6148bb48dc4fd2a33ad11f7e7a2646
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:113
 msgid "Secondary link"
 msgstr "Percabangan jalan sekunder"
 
-# 610a377e065f47cc951d6e67d2d81df8
+# 33b5f78a9bb4418b8e9c4fc426d51e85
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:114
 msgid ""
 "Road, residential, living street, etc. (includes all highways tagged with "
-"'living_street', 'residential', 'yes', 'road', 'unclassified', 'service', '' "
-"and NULL highways)"
+"'living_street', 'residential', 'yes', 'road', 'unclassified', 'service', ''"
+" and NULL highways)"
 msgstr ""
 "Jalan, perumahan, permukiman, etc. (termasuk semua jalan yang diberi tag "
-"'living_street', 'residential', 'yes', 'road', 'unclassified', 'service', '' "
-"dan NULL)"
+"'living_street', 'residential', 'yes', 'road', 'unclassified', 'service', ''"
+" dan NULL)"
 
-# 58d123ee98c040aaa024618d715c8fbe
+# c25d4f7b9bda41a1942908009c46e2f3
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:117
 msgid "Track"
 msgstr "*Track*"
 
-# 2fe221a6015543bc811e0dd19979c39f
+# 7958eeb96afb41d9a4896e936974e4ab
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:118
 msgid ""
 "Cycleway, footpath, etc. (includes 'cycleway', 'footpath', 'pedestrian', "
@@ -381,9 +363,8 @@ msgstr ""
 "Jalur sepeda, jalan kecil, etc. (termasuk jalan dengan tag  'cycleway', "
 "'footpath', 'pedestrian', 'footway' dan 'path' )"
 
-# 93e78457f93f47f78f2d038a550a36f0
+# f67e5402200f4bf6bd565c57f89d73b2
 #: ../../source/user-docs/application-help/openstreetmap_downloader.rst:121
-#, fuzzy
 msgid ""
 "The roads data is symbolised using a rule based renderer in QGIS. As you "
 "zoom out the roads will be rendered using different styles to avoid an "
@@ -394,8 +375,3 @@ msgstr ""
 "hingga terlihat jalan-jalannya akan disesuaikan dengan gaya (*style*) yang "
 "berbeda untuk menghindari peta terlalu nampak berantakan dalam skala yang "
 "lebih kecil."
-
-# 3a824ba88d1044198eae72e936aca2be
-#~ msgid ""
-#~ "Press the :guilabel:`OK Button` and wait for the data to be retrieved."
-#~ msgstr "Tekan :guilabel:`OK` dan tunggu data untuk diambil."

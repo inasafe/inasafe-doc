@@ -1,0 +1,631 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: staging.docs.inasafe.org\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-04 11:56+0700\n"
+"PO-Revision-Date: 2016-03-01 10:03+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French (http://www.transifex.com/inasafe/inasafe-develop/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# d6a23771ef144ecc9cc7015b01bfe1c9
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:10
+msgid "Run Intermediate |project_name|"
+msgstr ""
+
+# 9f1a19d606904fe3836d73e179ab9c29
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:13
+msgid "Introduction"
+msgstr "Introduction"
+
+# 369be9b47a944c87958fbe18c7ae66dd
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:15
+msgid ""
+"In `Run Basic InaSAFE "
+"<http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__"
+" we learned how to run a flood analysis on population and buildings, adjust "
+"the flood impact default settings and analyze impact summary report, and "
+"change analysis threshold. We also learned how to save our work and generate"
+" a pdf of the analysis results. In this exercise we will learn more "
+"techniques such as how to run |project_name| with aggregation data to "
+"produce reports broken down by districts or regions. We will also learn how "
+"to download data using the OpenStreetMap downloader and how to run "
+"|project_name| analysis on the downloaded building polygons and roads. Last "
+"but not least, we will learn how to define the analysis area."
+msgstr ""
+
+# 2602e24c7bf549c688b4fe1c662a0d1a
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:26
+msgid "Learning Objective"
+msgstr ""
+
+# 97a8c0243c6e4529862f7840d787431f
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:28
+msgid ""
+"To improve the participant’s understanding of additional |project_name| "
+"function and features. By the end of this exercise, participants will be "
+"able to:"
+msgstr ""
+
+# a3d2b2b4320a49a1be6ff9e6d6221401
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:31
+msgid "Define keywords using the |project_name| keyword wizard"
+msgstr ""
+
+# 98a2bd08e93840ef895310bd2e848a70
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:33
+msgid "Run |project_name| with aggregation data"
+msgstr ""
+
+# e1d6f110907349eabb9b583e45e3a49d
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:35
+msgid "Use the OpenStreetMap Downloader to download data for |project_name|"
+msgstr ""
+
+# d424259698db45cc9682bb0f8f5bec27
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:37
+msgid ""
+"Set the |project_name| analysis area using the |project_name| analysis area "
+"tool."
+msgstr ""
+
+# 5ee6067bcd39494db0595c83145f72fb
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:40
+msgid "Data for this exercise"
+msgstr ""
+
+# 4be0f2109ade40c9a7b047d11c2bb8f2
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:42
+msgid ""
+"The data for this exercise are available in DKI Jakarta.zip which can be "
+"downloaded from `InaSAFE Training Data "
+"<http://data.inasafe.org/TrainingDataPackages/>`__. We will use the "
+"following data:"
+msgstr ""
+
+# ee14bf84260e422baf45af2c8cccb584
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:45
+msgid "Jakarta Flood 18113 WGS84"
+msgstr ""
+
+# b0657f08c2354133936b82f23ebdbd74
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:47
+msgid "Jakarta District Boundary WGS84"
+msgstr ""
+
+# b63ac58fbd8746898da22087c0b89e79
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:49
+msgid "Jakarta Subdistrict Boundary WGS84"
+msgstr ""
+
+# c9877cdc81c940b48c0a0d4c38ea874e
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:51
+msgid "Jakarta Population WGS84"
+msgstr ""
+
+# e7a878fa782b433abb59998560b27c64
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:54
+msgid "Exercise"
+msgstr ""
+
+# a13e2fb7233341dab68a3a55fd47a3e0
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:57
+msgid "Run |project_name| for Population Data"
+msgstr ""
+
+# e5920bc13dd540ed995312252c406737
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:60
+msgid "A. Add and symbolize vector data"
+msgstr ""
+
+# c2cdbcf4131c47078c86ff7248249af8
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:62
+msgid ""
+"Click :guilabel:`Open` and select :file:`DKI Jakarta Intermediate.qgs`. "
+"There is a notification to save the current project, choose whether to save "
+"your current work or discard your current work. Once "
+":file:`DKI_Jakarta_Intermediate` is opened, you will see the following:"
+msgstr ""
+
+# 4784a3dd2b5f42e2b560b14c81633690
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:70
+msgid ""
+"Next, add :file:`Jakarta Flood 18113 WGS84` data from :file:`Run "
+"Intermediate InaSAFE > DKI Jakarta > 01 Hazard Data`. This is the flood "
+"hazard data for Jakarta from an actual flood event. During Jakarta floods in"
+" January 2013, the provincial disaster manager collected information about "
+"the flood, including the location of flooded areas by sub-village boundary "
+"(see more about this data at :ref:`datasets`.)"
+msgstr ""
+
+# 35cec35fe9a048debb61dbfc135b056c
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:76
+msgid ""
+"Let us symbolize this layer so that it shows only affected areas (if you "
+"forget how to symbolize, you can go to :ref:`introduction_to_qgis`.) The "
+"layer should look like this:"
+msgstr ""
+
+# c259dc2d4d2a4267a4d38db55a61fa0a
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:84
+msgid ""
+"Using this layer, we will be able to see which area in Jakarta are "
+"categorized as flooded/affected area by analyzing the data using "
+"|project_name|. On the InaSAFE Dock, you will notice that the hazard is not "
+"there and only exposure data (population) is visible, even though you "
+"already turned ON the data layer."
+msgstr ""
+
+# 98832aa5fe8f48f39e257327ee72a601
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:94
+msgid ""
+"Do you know why |project_name| did not display the Jakarta Flood Vector "
+"Hazard data on the dock? The answer will be provided in the next section."
+msgstr ""
+
+# 72c82e1a02334ed6ad1626b3243217cc
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:98
+msgid "B. Define keyword for hazard data"
+msgstr ""
+
+# 0183add1ef2b48b480a38ff3293be6d6
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:100
+msgid ""
+"|project_name| need a keyword to determine what type of data the user "
+"provide for analysis (hazard data, exposure data or aggregation data). If "
+"the data provided does not have a keyword, it will show a warning message "
+"“Layer Keyword Missing” in the |project_name| Dock. Try selecting "
+":guilabel:`A Flood in Jakarta like 2013` layer and look at the "
+"|project_name| dock, You will see the following:"
+msgstr ""
+
+# 312f8352df264c78bc26d34f26aa79a6
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:111
+msgid ""
+"As you can see from the picture above, this layer keywords are missing and "
+"we need to open the keyword wizard to solve this problem. The keywords "
+"wizard will take you through a step-by-step process of assigning keywords to"
+" your data."
+msgstr ""
+
+# 0f6152a3b30a442395dbbe623dd0e152
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:116
+msgid ""
+"Select **A Flood in Jakarta like 2013** layer and click :guilabel:`Keyword "
+"Creation Wizard`. A window will appear and follow the steps provided by the "
+":guilabel:`Keyword Creation Wizard.` If you get stuck, you can follow the "
+"diagram below to understand the steps and the choices you will be offered."
+msgstr ""
+
+# 0cbb669bb7c6498fb219ac784854fb68
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:123
+msgid "Steps in the Keyword Creation Wizard"
+msgstr ""
+
+# 0a5e9c8f92ad41579fbef6ef53087152
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:125
+msgid ""
+"Starting at the top of the diagram and working down; in the first step you "
+"will choose if your data are hazard, exposure or aggregation data. Your "
+"choice will determine the next options offered. You can always go back and "
+"change things later."
+msgstr ""
+
+# a0236c7cef2e48b6a6c31611ec340a8e
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:130
+msgid ""
+"If you choose Hazard or Exposure, you will need to select the type of hazard"
+" or exposure. Next, you will choose whether the layer mode is continuous or "
+"classified (if you forget what Continuous or Classified means, you can "
+"reference the `Key Concept of Disaster Management section "
+"<http://docs.inasafe.org/en/training/socialisation/inasafe_concepts.html>`__)."
+" Both Hazard and Exposure types have the same step after you define the "
+"layer mode: defining which unit or attribute represents the hazard."
+msgstr ""
+
+# 62033b6258d1407e97bf8429d40e7d1a
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:139
+msgid ""
+"The steps will be different for aggregation data. After you define the data "
+"as aggregation data, you will select the attribute to represent the names of"
+" aggregation areas. After you select it, you will be asked to define the "
+"population ratio. Finally, you will need to enter the source of data and the"
+" name of your layer to be displayed in the |project_name| dock."
+msgstr ""
+
+# 1dad774e1392433db48ec7a439c69c0a
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:154
+msgid ""
+"After you set the keyword using the Keyword Wizard, you can see in the "
+"|project_name| panel on the right side that the layer keyword has been set. "
+"Verify that it looks like the image below? If it does not, you should go "
+"back and try to define the keyword again."
+msgstr ""
+
+# e2d635fe31f047afb6efcab5635d87c6
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:163
+msgid ""
+"After you set the keyword to match the image above, the hazard data will "
+"appear in the hazard panel of the |project_name| Dock."
+msgstr ""
+
+# f90055d4c425401db36752f68dfeef76
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:170
+msgid ""
+"Now all the keyword data has been set and we can move into the next section "
+"to run |project_name| with population data."
+msgstr ""
+
+# 5adb8206371c411189fbb52dee14d7ec
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:174
+msgid "C. Run |project_name| for population with aggregation"
+msgstr ""
+
+# 909bce8d5a3f4f7b974f0961d5feaab0
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:176
+msgid ""
+"We have seen the result of |project_name| on buildings and populations with "
+"raster hazard data. Now we will run |project_name| analysis using flood "
+"vector hazard data and raster population as exposure data. This time, "
+"however, we will use aggregated data. Using |project_name| with aggregated "
+"data will help you to get detailed result since the aggregated data can "
+"provide detailed information on specific administrative (or other) area. "
+"|project_name| allow us to add administrative data with specific boundaries "
+"that we can use to aggregate results."
+msgstr ""
+
+# 1e4f41edd39d4c5ea1888b2baa9d0d4c
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:182
+msgid ""
+"To do this, look at the Layer List and make sure to turn ON the **Jakarta "
+"District** layer. Next, take a look at the |project_name| dock under the "
+"heading *Aggregate results by*."
+msgstr ""
+
+# 3ac088bbb4424886b2e2b656e7956fd4
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:189
+msgid ""
+"Why are we not able to see the **Jakarta District** layer that we just "
+"turned ON before? Check the layer by selecting it on the Layer List. Did you"
+" see the keyword? The reason why this layer did not appear in the "
+"|project_name| Dock is because it did not have keyword data defube. Go ahead"
+" and add a keyword for **Jakarta District** using the :guilabel:`Keyword "
+"Creation Wizard`. For your reference, refer to the keyword diagram as "
+"explained above."
+msgstr ""
+
+# 03cac07903924d0785155880ec8aa50c
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:196
+msgid ""
+"Now you will able to select **Jakarta District** under 'Aggregate results "
+"by' in the |project_name| Dock. The |project_name| Dock should look like "
+"this:"
+msgstr ""
+
+# 4e6d14c7677148abb0a642023fe22f09
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:203
+msgid ""
+"Click :guilabel:`Run` and wait until |project_name| finishes analyzing the "
+"data. A new impact layer will be added to the Layer List. When you look at "
+"the result, it looks the same as |project_name| analysis result without "
+"aggregation, but if you scroll down to the bottom you will see the detailed "
+"result. As explained before, using aggregation will let you get detailed "
+"information for a specific area or administration region."
+msgstr ""
+
+# 6975fc0a2eef421fb88a793e1a9e5dbd
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:214
+msgid ""
+"In the screenshot above, we see detailed impact results for each district in"
+" Jakarta for the detailed gender report, the detailed age report and the "
+"detailed minimum needs report. You can also use *jakarta subdistrict* rather"
+" than using *jakarta_district* for aggregation if you want to get more "
+"detailed results. Try running the analysis again using *jakarta "
+"subdistrict*. The aggregation option in |project_name| can also be applied "
+"for buildings and roads (in addition to population). In the next exercise, "
+"we will learn to run |project_name| for roads and buildings."
+msgstr ""
+
+# 82d9c6b993204a8290361f73129e4d05
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:223
+msgid "2. Running |project_name| for roads and buildings"
+msgstr ""
+
+# 064c42e0de7944a69a5fbc2b15c46322
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:226
+msgid "A. Download building polygons and roads with OpenStreetMap Downloader"
+msgstr ""
+
+# 7390880c688c40ceb66d287685364873
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:228
+msgid ""
+"We have completed running |project_name| with population and vector hazard "
+"data. Now, we will run |project_name| with different type of vector exposure"
+" data: roads and buildings polygons. We will obtain these dataset using one "
+"of |project_name| features, :guilabel:`OpenStreetMap Downloader`. "
+":guilabel:`OpenStreetMap Downloader` is a feature that enables downloading "
+"OpenStreetMap data and directly loading it into QGIS. This feature requires "
+"an internet connection as it fetches the data via a web service. Once "
+"downloaded, the data will be available as shapefiles and symbolized neatly "
+"(more information at `OpenStreetMap Downloader page "
+"<http://docs.inasafe.org/en/user-docs/application-"
+"help/openstreetmap_downloader.html>`__)."
+msgstr ""
+
+# fdfa33873c104ac4a52f0685e1a5919d
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:239
+msgid "To use this feature for our next exercise, follow these steps:"
+msgstr ""
+
+# 22cec9a2783245a8b91fa2e685b733f6
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:241
+msgid ":guilabel:`Zoom in` to any flooded area that you prefer."
+msgstr ""
+
+# 33b1f5c2bf0b48cb8cd17c972f6e1c46
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:243
+msgid "Click the :guilabel:`OpenStreetMap Downloader` icon."
+msgstr ""
+
+# 6d242b25686344139a0c02236eec5779
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:245
+msgid ""
+"Select :guilabel:`Building Polygons` and :guilabel:`Roads` as the feature "
+"types to download."
+msgstr ""
+
+# 4d5c4aa1549d4bb5af57954b346dfad3
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:247
+msgid ""
+"Click :guilabel:`Drag on Map` to select the boundary box from which data "
+"will be downloaded."
+msgstr ""
+
+# 1c64cf0e3bcc4b7caea365ea7dfa9c44
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:249
+msgid ""
+"Choose the your output directory, where OSM data will be stored. Adding a "
+"file name prefix makes it easier to identify the data downloaded."
+msgstr ""
+
+# bb16eb1aefff4e368e989ef932637949
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:255
+msgid "Click :guilabel:`OK`."
+msgstr ""
+
+# a8a35c60aa5c477a8072609c554513e5
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:257
+msgid ""
+"It may take a while to download all the data in the given area based on how "
+"big the area is (generally dataset at city level and below should work "
+"well). After you download the data, a new layer will appear in the Layer "
+"List. The amount of data available depends on the OpenStreetMap data "
+"available in the downloaded region. If you want to get more data in your "
+"area, you can participate in OpenStreetMap and start map the area."
+msgstr ""
+
+# 63a0dd3f1af1437e9f2aee8aa18c662d
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:264
+msgid ""
+"Since the data already downloaded, we are ready to run |project_name| "
+"analysis. But can |project_name| run the data for only the small part of the"
+" whole hazard data? We will find the answer in the next section."
+msgstr ""
+
+# ab25ea201a6d4a278a5ae5564c54a136
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:269
+msgid "B. Define your custom analysis area"
+msgstr ""
+
+# 82a6ca3c14534a1f94744e874a7f61b9
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:271
+msgid ""
+"|project_name| has a feature that allows you specify exactly which area "
+"should be used for your analysis. If you have exposure data that is not the "
+"same size, you can use this feature to define your own analysis area."
+msgstr ""
+
+# 95b0bb0c8f854358bfccb1dd58c4b3fd
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:276
+msgid ""
+"Click :guilabel:`Set Analysis Area` to show set analysis extent feature."
+msgstr ""
+
+# 9eea1fdf59a74c43af4fceb8ab126c15
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:278
+msgid ""
+"Select :guilabel:`Use intersection of hazard, exposure and this bounding "
+"box`."
+msgstr ""
+
+# 4b3a49fba4264f3787550a86a0e07bc6
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:280
+msgid ""
+"Click :guilabel:`Drag on Map` to draw the bounding box around building "
+"polygons and roads."
+msgstr ""
+
+# 04905f30dafa4104b5a329d1038a894a
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:283
+msgid "Click :guilabel:`OK`"
+msgstr ""
+
+# e7902e4d709b488fa37549ff054619ba
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:285
+msgid ""
+"if you click Draw on Map, the window will be temporarily hidden so that you "
+"can drag a rectangle on the map. After you have finished dragging the "
+"rectangle, the window will reappear."
+msgstr ""
+
+# 414c5842f7e34e37b82504089f634a41
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:293
+msgid ""
+"To verify that your analysis area has been successfully defined, click "
+":guilabel:`Toggle Scenario Outlines`. A green box will appear around your "
+"data."
+msgstr ""
+
+# 7815265f23c54d56b1ac5811afb1704f
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:300
+msgid ""
+"Using Toggle Scenario Outlines help you understand which area that "
+"|project_name| will analyze. It is also an important step before running "
+"|project_name| analysis because not all of the data you put in the Layer "
+"List will be automatically defined by |project_name|."
+msgstr ""
+
+# bfdaf167aaef4d0db3763e8acf01d299
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:305
+msgid ""
+"Take a look at the |project_name| panel dock to make sure building polygons "
+"and roads have a keyword defined. If they do not you can define one using "
+":guilabel:`InaSAFE Keyword Wizard`. After the keyword has been already set, "
+"we are ready to run |project_name| for building polygons and roads."
+msgstr ""
+
+# d654e7a746034396b67d3f7f567b8e81
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:310
+msgid "C. Run |project_name| analysis for building polygons"
+msgstr ""
+
+# fd06fb1bafa34bc0b303a423ba5d6b12
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:312
+msgid ""
+"Let us run analysis for building polygons first. Make sure you set the "
+"|project_name| dock as pictured below:"
+msgstr ""
+
+# 8e80c787d34f421dbc09a6ba63ebd34e
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:319
+msgid ""
+"We will run |project_name| for flood vector hazard and building polygons "
+"with data aggregated by Jakarta district Click :guilabel:`Run` to begin "
+"|project_name| analysis. After running, you will find the impact result "
+"layer in Layer List."
+msgstr ""
+
+# 2d06381d1c884529ba4f4472807bd470
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:327
+msgid ""
+"Looking at the **Detailed building type report** (pictured above) we only "
+"see two districts in Jakarta (Jakarta Timur and Jakarta Selatan). Your "
+"results may differ since it depend on the analysis area selected and also "
+"the aggregation layer that you used for analysis."
+msgstr ""
+
+# 118871b888d14cbbadd79a7199b10964
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:332
+msgid ""
+"|project_name| did not separate the impact result into three categories as "
+"in the `Run Basic InaSAFE "
+"<http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__"
+" because in the previous exercise we used raster data containing flood depth"
+" in each pixel yet in this exercise, the hazard data that we use only "
+"depicts affected areas. Therefore, |project_name| will calculate how many "
+"buildings are inside the affected area but not level of impact on each "
+"building."
+msgstr ""
+
+# 6643bd063dce47678848f45c94e61415
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:339
+msgid ""
+"We just succeeded running |project_name| on flood vector hazard with "
+"building polygon. Next, we will run |project_name| for roads. What are the "
+"results that you expect to get when you run |project_name| for roads?"
+msgstr ""
+
+# 0f5e6062b0aa4d81866dfbd09c68bd69
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:344
+msgid "D. Run |project_name| for roads"
+msgstr ""
+
+# d08d16c049fc4adeab2ebd982295324c
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:346
+msgid ""
+"In this last exercise, we will run |project_name| on roads data that we "
+"previously downloaded from OpenStreetMap. Make sure that you select roads as"
+" exposure data in the |project_name| dock, as shown in the screenshot below:"
+msgstr ""
+
+# 30b44e10dbaf4090821a02f44ebb6db6
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:354
+msgid ""
+"Click :guilabel:`Run` to start |project_name| analysis. A new impact layer "
+"will be added to your Layer List and in the map canvas you will see green "
+"roads as not flooded and red as flooded. Select the **Flooded roads** layer "
+"to see statistics from the |project_name| analysis."
+msgstr ""
+
+# e33c763704824ba48e1150584d71c9f4
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:363
+msgid ""
+"In this analysis, |project_name| will generate statistics on how many roads "
+"are temporarily closed in the affected area and also a breakdown of the "
+"result by road type. If you are using aggregation, there will be detailed "
+"results for each aggregation. In the action checklist, you will see several "
+"questions that can be used for points of discussion related to road impact, "
+"and disaster logistics planning, for example: *Which roads can be used to "
+"evacuate people or to distribute relief items?*"
+msgstr ""
+
+# 4cc815bf245b4320bd8d10004dd8c0d9
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:371
+msgid "Summary"
+msgstr ""
+
+# de3c4479250b4623a7f66ecc4071cd3f
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:373
+msgid ""
+"In this exercise, you have learned how to run |project_name| analysis with "
+"different hazard data formats and with new type of exposure data. You have "
+"also learned two fundamental steps to remember before you run "
+"|project_name|:"
+msgstr ""
+
+# 63649e596f4940cbb5e6b57f3cee2ddb
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:377
+msgid ""
+"First, you learned how to define a keyword for your data so it can be "
+"analyzed with |project_name|. Without a keyword, |project_name| will not "
+"recognize your data, so you need to define it whether the data is hazard, "
+"exposure or aggregation data. You can set the keyword using the "
+":guilabel:`Keyword Creatuib Wizard` feature."
+msgstr ""
+
+# 6b3244e12e2f49ddb37987a0d892c1db
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:383
+msgid ""
+"Second, it is important to review the analysis area using *Toggle Scenario "
+"Outline* before you run |project_name| analysis. This is because, "
+"|project_name| sometimes does not automatically set the analysis area "
+"according to the intersection of hazard and exposure data. If |project_name|"
+" did not set the analysis area, you need to define it manually using the "
+":guilabel:`Set Analysis Area` feature."
+msgstr ""
+
+# 5e8d568c8aaf4b19957d48fdaef2a1ee
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:389
+msgid ""
+"In this exercise, you have learned how to download buildings and roads data "
+"from OpenStreetMap using :guilabel:`OpenStreetMap Downloader`. With this "
+"feature you can define the size of the area and what type of data you want "
+"to download. The availability of the data depend on how complete the data "
+"are in OpenStreetMap."
+msgstr ""
+
+# 81399a44ded04930a1cf58a374df4620
+#: ../../source/training/socialisation/run_intermediate_inasafe.rst:395
+msgid ""
+"In the next section, you will learn how to run |project_name| with other "
+"type of hazard data such as tsunami, earthquake, volcano and generic data."
+msgstr ""

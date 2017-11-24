@@ -1,566 +1,861 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-#
+# 
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe-develop\n"
+"Project-Id-Version: staging.docs.inasafe.org\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-02 19:18+0200\n"
-"PO-Revision-Date: 2015-04-02 17:15+0000\n"
-"Last-Translator: Werner Macho <werner.macho@gmail.com>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/inasafe-develop/"
-"language/fr/)\n"
-"Language: fr\n"
+"POT-Creation-Date: 2016-01-04 11:30+0700\n"
+"PO-Revision-Date: 2016-03-01 10:03+0000\n"
+"Last-Translator: adityo dwijananto <adz.only@gmail.com>\n"
+"Language-Team: French (http://www.transifex.com/inasafe/inasafe-develop/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 # 487ff2ec640a47e380a22aaca3389bf4
-#: ../../source/training/socialisation/run_basic_inasafe.rst:8
+#: ../../source/training/socialisation/run_basic_inasafe.rst:10
 msgid "Run Basic |project_name|"
 msgstr ""
 
-# 7589a5d298214183a457d72ebd286267
-#: ../../source/training/socialisation/run_basic_inasafe.rst:10
-msgid "**Learning Objectives:**"
-msgstr ""
-
-# 0061b50f5d1544e38d1072194cbaa230
-#: ../../source/training/socialisation/run_basic_inasafe.rst:12
-msgid ""
-"Run |project_name| using flood and population models and examine the results"
-msgstr ""
-
-# c02a5317c3ad4f36b647ec4407eb5c22
-#: ../../source/training/socialisation/run_basic_inasafe.rst:14
-msgid "Create an impact map"
-msgstr ""
-
-# e1ec447f9fc044f183368fc7242b619d
-#: ../../source/training/socialisation/run_basic_inasafe.rst:15
-msgid "Modify the threshold (parameters) of an impact function"
-msgstr ""
-
-# 95a7392fef6e457cbc7291343b6ec7e3
-#: ../../source/training/socialisation/run_basic_inasafe.rst:16
-msgid ""
-"Run |project_name| using flood and building models and examine the results"
-msgstr ""
-
-# e2afd6dab8c147eeabd8e1b6dd14b9ca
-#: ../../source/training/socialisation/run_basic_inasafe.rst:18
-msgid "**Data for this module**"
-msgstr ""
-
-# ab28db825a124c998455642332d03635
-#: ../../source/training/socialisation/run_basic_inasafe.rst:20
-msgid ""
-"Download the InaSAFEv2.0.zip from `InaSAFE Training Data Packages <http://"
-"data.inasafe.org/TrainingDataPackages/>`_ or it will be provided to you "
-"during the training."
-msgstr ""
-
 # 65db813ce2804a64b1afeb4572acf0df
-#: ../../source/training/socialisation/run_basic_inasafe.rst:25
+#: ../../source/training/socialisation/run_basic_inasafe.rst:13
 msgid "Introduction"
 msgstr "Introduction"
 
-# a6c92aba8b5c43a6ba904e0250a400d0
-#: ../../source/training/socialisation/run_basic_inasafe.rst:27
+# 2c186bd081a94743bd3aaaeee2ce9b04
+#: ../../source/training/socialisation/run_basic_inasafe.rst:15
 msgid ""
-"In this section we will run |project_name| using a scenario in Jakarta, "
-"Indonesia to determine the impact of a flood model on both Jakarta's "
-"population and buildings."
+"In this exercise we will work through an example scenario where we show how "
+"the different data elements used by |project_name| are combined in order to "
+"analyse the potential impact of a flood in Jakarta on both the buildings and"
+" the population."
 msgstr ""
 
-# 60f0d0c6715848229909394e6bbf638f
-#: ../../source/training/socialisation/run_basic_inasafe.rst:30
-msgid "Go to :menuselection:`Project --> Open`."
+# 01395e61e7fc412d870c4d349e6d577f
+#: ../../source/training/socialisation/run_basic_inasafe.rst:20
+msgid ""
+"After we have run the |project_name| analysis we will print the map and "
+"analysis report as pdf and review the results. We will also learn how to "
+"change the flood threshold and take a look at the default settings for "
+"minimum needs. We will also learn how to save our work."
 msgstr ""
 
-# 37656dd725a340009f0fe4b4ad769065
+# 38154e80883542b4bbbe47435367f260
+#: ../../source/training/socialisation/run_basic_inasafe.rst:26
+msgid "Learning objective"
+msgstr ""
+
+# 36d0f9cb3f1943b19a3b527d1fe06053
+#: ../../source/training/socialisation/run_basic_inasafe.rst:28
+msgid ""
+"To develop the participant’s basic understanding of the |project_name| "
+"workflow and application of |project_name| in the Disaster Management "
+"sector. By the end of this exercise; participants will:"
+msgstr ""
+
+# d46a1790716b4eb09cc1675425fe47f3
 #: ../../source/training/socialisation/run_basic_inasafe.rst:32
-msgid ""
-"If you have been working in QGIS previously a message box will appear asking "
-"if you want to save the current project. Click :guilabel:`Discard` to exit "
-"your current work without saving."
+msgid "Be able to run a flood analysis using |project_name| - on buildings;"
 msgstr ""
 
-# addf5ae855bf40c0b44c8b930d627aa2
-#: ../../source/training/socialisation/run_basic_inasafe.rst:39
-msgid ""
-"Navigate to the :file:`InaSAFE_project` folder and select :file:"
-"`Jakarta_floods.qgs`. Click :guilabel:`Open`."
+# aed0224b426a424f8838d83b52006a2a
+#: ../../source/training/socialisation/run_basic_inasafe.rst:34
+msgid "Be able to run a flood analysis using |project_name| - on population;"
 msgstr ""
 
-# 467d8157629e4efd8ee14d020a60f287
+# 9255ef0fef7e4aaa8c327fa62c8de015
+#: ../../source/training/socialisation/run_basic_inasafe.rst:36
+msgid "Understand the flood impact default settings;"
+msgstr ""
+
+# b78233029e084a2fb045eb96cc0ca390
+#: ../../source/training/socialisation/run_basic_inasafe.rst:38
+msgid "Understand the impact summary report;"
+msgstr ""
+
+# dd9e71d967c64d3d87f351e0a30ceb38
+#: ../../source/training/socialisation/run_basic_inasafe.rst:40
+msgid "Be able to change the analysis threshold and run a new scenario;"
+msgstr ""
+
+# fcf6188492eb4e2193276bcefa7c4e65
 #: ../../source/training/socialisation/run_basic_inasafe.rst:42
-msgid "The project looks something like this:"
+msgid "Be able to generate a PDF map from the results of an analysis; and"
 msgstr ""
 
-# 9b9a569782ea416c9a8c05e2eaf10005
+# b3b68c367af3457183454ad2853c7877
+#: ../../source/training/socialisation/run_basic_inasafe.rst:44
+msgid "Be able to save their work to share results with others."
+msgstr ""
+
+# f2a211bd388f48abac25693d2016aa94
+#: ../../source/training/socialisation/run_basic_inasafe.rst:47
+msgid "Data for this exercise"
+msgstr ""
+
+# 74dc981eefb34b5c98723f1e05a73de6
 #: ../../source/training/socialisation/run_basic_inasafe.rst:49
-msgid "Number of population which need evacuation"
+msgid ""
+"The data for this exercise are available in **Run Basic InaSAFE v3.2 zip** "
+"which can be downloaded from `InaSAFE Training Data "
+"<http://data.inasafe.org/TrainingDataPackages/>`__ Packages . We will use "
+"the following QGIS project file and spatial data:"
 msgstr ""
 
-# b05ef4d39bab4f44b6f17a1ad9926e55
-#: ../../source/training/socialisation/run_basic_inasafe.rst:51
+# 80fb880b620d4e2a91c886c34612b7f7
+#: ../../source/training/socialisation/run_basic_inasafe.rst:54
+msgid "DKI_Jakarta_Basic.qgs"
+msgstr ""
+
+# 22917b7b6598456fa2c107bfefb65ad2
+#: ../../source/training/socialisation/run_basic_inasafe.rst:56
+msgid "Jakarta_Flood_HKV_WGS84"
+msgstr ""
+
+# b56de527448c40559bb43f9134dd9f71
+#: ../../source/training/socialisation/run_basic_inasafe.rst:58
+msgid "Jakarta_Buildings_WGS84"
+msgstr ""
+
+# e214c4d08b7e4b6fa2d2dda1d5bdcb8a
+#: ../../source/training/socialisation/run_basic_inasafe.rst:60
+msgid "Java_Population"
+msgstr ""
+
+# a1889140efc84f639d860e190595c19a
+#: ../../source/training/socialisation/run_basic_inasafe.rst:63
+msgid "Exercise"
+msgstr ""
+
+# 65b6b8a7df724a5aa6aeb2b79f1ddddb
+#: ../../source/training/socialisation/run_basic_inasafe.rst:66
+msgid "1. Open QGIS Project"
+msgstr ""
+
+# e4fef38f784e41ffa8fccab2876f7eec
+#: ../../source/training/socialisation/run_basic_inasafe.rst:68
 msgid ""
-"The |project_name| panel has the first three drop-down menus filled in "
-"already:"
+"Before we can run an |project_name| analysis, we must open a QGIS project. "
+"Please open the QGIS project file :file:`DKI_Jakarta.qgs` from the "
+":file:`InSAFE Training Data > DKI Jakarta` folder. The project looks "
+"something like this:"
+msgstr ""
+
+# 7c3385354df94ad79dfc2f2089026640
+#: ../../source/training/socialisation/run_basic_inasafe.rst:78
+msgid ""
+"As you can see from the picture above, you will presented with several data "
+"in Jakarta from building, java population, raster and vector flood hazard."
+msgstr ""
+
+# 7bd44c55f9ee445aa0feb617c5c0ff5d
+#: ../../source/training/socialisation/run_basic_inasafe.rst:82
+msgid "You will see that the project has three layers loaded:"
+msgstr ""
+
+# 00c1ec67d3c740f78962b1b7660b8667
+#: ../../source/training/socialisation/run_basic_inasafe.rst:84
+msgid ""
+"Buildings: these are exposure data. We will use these to assess the flood "
+"impact on buildings."
+msgstr ""
+
+# fde76aa589f94aefbca60e1e1dfb73f5
+#: ../../source/training/socialisation/run_basic_inasafe.rst:87
+msgid ""
+"Flood: this is the hazard model. We will use this to determine the depth of "
+"water."
+msgstr ""
+
+# e897e2a48bbb4f8898a8ce1977f03860
+#: ../../source/training/socialisation/run_basic_inasafe.rst:90
+msgid ""
+"Population: this is a population raster. We will use it to determine the "
+"number of people exposed to the flood."
+msgstr ""
+
+# d33cd5c4c74b4ad2ba6e3e11a47b035a
+#: ../../source/training/socialisation/run_basic_inasafe.rst:93
+msgid ""
+"More detailed information about the data used in this exercise can be found "
+"in (datasets.rst). The table below provides a brief summary about the source"
+" of the data."
+msgstr ""
+
+# 7f95f6e2bdd145e08ecc87facb1a85aa
+#: ../../source/training/socialisation/run_basic_inasafe.rst:98
+msgid "**Data**"
+msgstr ""
+
+# 016550ec6b3c4f8a84061cdc7df4641e
+#: ../../source/training/socialisation/run_basic_inasafe.rst:98
+msgid "**Source**"
+msgstr ""
+
+# 8eeb7232f4014d329cab0fc98c88a81d
+#: ../../source/training/socialisation/run_basic_inasafe.rst:98
+msgid "**Description**"
+msgstr ""
+
+# c19c8cee25904e9cbcf3cad6e422b629
+#: ../../source/training/socialisation/run_basic_inasafe.rst:100
+msgid "Buildings"
+msgstr ""
+
+# 45ca60b7715c439483f3aee0a358fd8d
+#: ../../source/training/socialisation/run_basic_inasafe.rst:100
+msgid "OpenStreetMap"
+msgstr "OpenStreetMap"
+
+# fd74c37594b94ada8d1657f3566b5427
+#: ../../source/training/socialisation/run_basic_inasafe.rst:100
+msgid ""
+"Most of the important buildings in Jakarta have been mapped through the "
+"collaboration of BPBD DKI Jakarta, OpenStreetMap and the Australian "
+"Government. `See more at... "
+"<http://inasafe.org/en/training/socialisation/datasets.html>`__"
+msgstr ""
+
+# 701ad21630fc4c8d8dfda3158cfa83ab
+#: ../../source/training/socialisation/run_basic_inasafe.rst:106
+msgid "Java_population_WGS84"
+msgstr ""
+
+# 91cb8a4247dd4b92b031063e560d9703
+#: ../../source/training/socialisation/run_basic_inasafe.rst:106
+msgid "WorldPop"
+msgstr ""
+
+# ac50265271634c5ea24264c5231c1c12
+#: ../../source/training/socialisation/run_basic_inasafe.rst:106
+msgid ""
+"High resolution, modelled data for human population distributions. `See more"
+" at... <http://inasafe.org/en/training/socialisation/datasets.html>`__"
+msgstr ""
+
+# 079ff5d69cca49cc9990f9fd40d9dfe2
+#: ../../source/training/socialisation/run_basic_inasafe.rst:110
+msgid "a Flood similiar to 2007"
+msgstr ""
+
+# 6132839d36634770a47ce34b4077d014
+#: ../../source/training/socialisation/run_basic_inasafe.rst:110
+msgid "Jakarta Event"
+msgstr ""
+
+# c30678fa660342c89a65ab0dd6a0dd2d
+#: ../../source/training/socialisation/run_basic_inasafe.rst:109
+msgid "HKV"
+msgstr ""
+
+# 004bac09af5a49c096390abce4bbed05
+#: ../../source/training/socialisation/run_basic_inasafe.rst:109
+msgid ""
+"The flood model was created by scientists/engineers in coordination with DKI"
+" Jakarta Public Works based on the 2007 flood conditions. `See more at... "
+"<http://inasafe.org/en/training/socialisation/datasets.html>`__"
+msgstr ""
+
+# 2925397a09734e8cb3709497e8ccda64
+#: ../../source/training/socialisation/run_basic_inasafe.rst:114
+msgid ""
+"Let's move into the next section where we will run our first |project_name| "
+"analysis using these data. We will be working with the flood hazard model to"
+" look at the number of affected buildings. These data already have keywords "
+"assigned so we are ready to run the analysis."
+msgstr ""
+
+# 2253377a1064429ba57758dfe90a3cf0
+#: ../../source/training/socialisation/run_basic_inasafe.rst:120
+msgid "2. Run |project_name| Analysis for Building"
+msgstr ""
+
+# e95ed59f301c4ee6a46c8238f40f0d42
+#: ../../source/training/socialisation/run_basic_inasafe.rst:122
+msgid ""
+"Take a look at the |project_name| dock on the right side of QGIS. The "
+"|project_name| dock should show that you are ready to run a flood analysis "
+"on buildings. It poses the question “In the event of **a flood similar to "
+"the 2007 Jakarta event**, how many **buildings** might **be flooded**?” In "
+"this analysis we will use the default flood depth threshold of 1.0 metre. "
+"Later on we will learn how to change the threshold."
+msgstr ""
+
+# a9f5602cfbc04f6caafcc0fc6eb88c6e
+# 0cd8065898de41da9e57603fcd69018e
+#: ../../source/training/socialisation/run_basic_inasafe.rst:129
+#: ../../source/training/socialisation/run_basic_inasafe.rst:294
+msgid "a. Run |project_name| Analysis"
+msgstr ""
+
+# 35601b34b2014ad8983ef4574876515f
+#: ../../source/training/socialisation/run_basic_inasafe.rst:135
+msgid ""
+"Click :guilabel:`Run` in the lower right corner of the |project_name| panel "
+"to start the analysis process. If everything was set up correctly, you "
+"should get a result in the dock area after a few seconds, and a new map "
+"layer should be added to the map."
+msgstr ""
+
+# 148fcd081eb14925996d630dfeb97995
+#: ../../source/training/socialisation/run_basic_inasafe.rst:145
+msgid "b. Interpret the results"
+msgstr ""
+
+# 652c94b0649d43b893eb4df7ef3101e0
+#: ../../source/training/socialisation/run_basic_inasafe.rst:147
+msgid ""
+"The new impact layer will be generated and called **Estimated buildings "
+"affected**. Let’s take a look for a while at the new impact layer generated "
+"by |project_name|."
+msgstr ""
+
+# 804c1c8f26f945b6b2c4c3f0b63e0071
+#: ../../source/training/socialisation/run_basic_inasafe.rst:151
+msgid "Zoom in to some area in Map Canvas"
+msgstr ""
+
+# 871363af5b4843e1995d84e8c496b4e7
+#: ../../source/training/socialisation/run_basic_inasafe.rst:153
+msgid ""
+"Here we have zoomed in to a location showing two rivers going through the "
+"middle of Jakarta. There will be three new different colours generated from "
+"|project_name| (green, orange, and red)."
+msgstr ""
+
+# b2492d13fd89420884d6bb380104f4ac
+#: ../../source/training/socialisation/run_basic_inasafe.rst:161
+msgid ""
+"If you didn't see these colours, you might need to turn off the data layer "
+"above the *Estimated building affected* layer."
+msgstr ""
+
+# 3bf5c1bcf4fa4d9b86978ff29445efd4
+#: ../../source/training/socialisation/run_basic_inasafe.rst:163
+msgid ""
+"The red buildings are situated in water greater than one metre, the orange "
+"buildings are situated in water between zero and one metre, while the green "
+"buildings are considered unaffected as they are situated in water less than "
+"the threshold of one metre."
+msgstr ""
+
+# d0d3b7ecd8874267aaf8e5d455614f5f
+#: ../../source/training/socialisation/run_basic_inasafe.rst:168
+msgid ""
+"Click :guilabel:`Estimated building affected` in the layer list to select it"
+" and click :guilabel:`Identify Feature` tool and then click on building to "
+"know what attribute of the building."
+msgstr ""
+
+# a2c5bc5be443447481047e26ec801dbd
+# 0d3dea67018a476f8e9661a8594e0d28
+#: ../../source/training/socialisation/run_basic_inasafe.rst:176
+#: ../../source/training/socialisation/run_basic_inasafe.rst:334
+msgid ""
+"In the |project_name| panel we now see the impact summary. The details of "
+"are explained below."
+msgstr ""
+
+# 927d511675e144b29c472774c2442fa6
+#: ../../source/training/socialisation/run_basic_inasafe.rst:183
+msgid ""
+"**Hazard Category**: divides the results into several categories based on "
+"the threshold set in the hazard analysis. In this impact summary, "
+"|project_name| divides the impact buildings into three category: number of "
+"building inundated (building affected by water deeper than the analysis "
+"threshold), number of wet building (building affected by flood water but not"
+" as deep as the analysis threshold), and number of dry building (building "
+"that are not affected by any flood water)"
+msgstr ""
+
+# ad7c7bab244e4bc08545ac3b9da11f5a
+#: ../../source/training/socialisation/run_basic_inasafe.rst:192
+msgid ""
+"**Building type:** divides the exposed buildings into several categories "
+"based on the building type attribute for each building. In this impact "
+"summary, |project_name| breaks down the results into a more detailed report "
+"by looking at each type of the building, for example the number of inundated"
+" hospitals and the total number of hospital in analysis area."
+msgstr ""
+
+# 6b25e4b4d6a2456dbfe928c7c4b74c30
+# e69c943a063344738ac1f795792c20ca
+#: ../../source/training/socialisation/run_basic_inasafe.rst:199
+#: ../../source/training/socialisation/run_basic_inasafe.rst:349
+msgid ""
+"**Action checklist:** designed to make disaster managers think about what "
+"they need to do/discuss when planning for a similar event in the future."
+msgstr ""
+
+# 3c3346abe0704678942b51376af4956b
+#: ../../source/training/socialisation/run_basic_inasafe.rst:203
+msgid ""
+"**Note:** provides details about the input data and any limitations or "
+"assumptions in the analysis or report summary. In this example, it explains "
+"why building are said to be inundated, wet and dry."
+msgstr ""
+
+# b55617b4d09a4bf59917dd0cd7ed7d66
+#: ../../source/training/socialisation/run_basic_inasafe.rst:208
+msgid ""
+"**Detailed building type report:** statistical breakdown of the number of "
+"results. In this example is the number of important infrastructure. When you"
+" choose to use an aggregation layer with your analysis (we will do this "
+"later) this table will show the number of buildings by aggregation boundary."
+msgstr ""
+
+# c7ed4df80a654fb9811b6cda99395bce
+#: ../../source/training/socialisation/run_basic_inasafe.rst:214
+msgid "**Hazard details:** explains where the hazard data come from"
+msgstr ""
+
+# 987fa7c6ad0a4edcacb051d08c48b52c
+#: ../../source/training/socialisation/run_basic_inasafe.rst:216
+msgid "**Exposure detail:** explains where the exposure come from"
+msgstr ""
+
+# 2f668a30845b44668c4952cf0f763749
+#: ../../source/training/socialisation/run_basic_inasafe.rst:218
+msgid ""
+"The results show the buildings that will be affected by flood water 1m deep."
+" But what if the disaster manager decides that buildings in 80cm of water "
+"are also flooded? In order to assess this new scenario, we need to change "
+"the water depth threshold at which buildings are considered to be inundated."
+" With |project_name| it is easy to run a new scenario, all you need to do is"
+" change the **Thresholds [m]** in the Options tab to 0.8 and run the "
+"scenario again. We will do this next."
+msgstr ""
+
+# ef088502639944ee8f30a998682352ce
+#: ../../source/training/socialisation/run_basic_inasafe.rst:227
+msgid "c. Changing threshold"
+msgstr ""
+
+# 3b242cbcb08b4c319d9d28c6418b5ff3
+#: ../../source/training/socialisation/run_basic_inasafe.rst:229
+msgid ""
+"In the Jakarta flood scenario we are running; the threshold refers to the "
+"depth of water that a disaster manager decides is the boundary between "
+"buildings being flooded (affected) and buildings not being affected."
+msgstr ""
+
+# ebe97a22ae314e00bdcaa04282e16b32
+#: ../../source/training/socialisation/run_basic_inasafe.rst:234
+msgid ""
+"You only can change the threshold mostly for Raster Hazard Type. Default "
+"threshold for this hazard is 1m or 100cm."
+msgstr ""
+
+# e0323e171b51487dbb3168cf6134322f
+#: ../../source/training/socialisation/run_basic_inasafe.rst:236
+msgid ""
+"If you want to open |project_name| question panel again, click on "
+":guilabel:`Show question form` at the top of the |project_name| panel. You "
+"will see the |project_name| question panel again and you can click the "
+":guilabel:`Options` button next to :guilabel:`be flooded`."
+msgstr ""
+
+# 1ca531d8536d478a918804111d5f52d6
+#: ../../source/training/socialisation/run_basic_inasafe.rst:245
+msgid "It will open the |project_name| impact function configuration."
+msgstr ""
+
+# c2d2db8d61b5422fa156c1203b70be11
+#: ../../source/training/socialisation/run_basic_inasafe.rst:251
+msgid ""
+"Here you can change the threshold of the flood according to your need, in "
+"this example we change it to 0.8m. After you change the threshold to 0.8, "
+"click :guilabel:`OK` to close the dialog and then run the analysis again to "
+"see the change in the results."
+msgstr ""
+
+# 74d043f1ce324fc9bfd281fd9b74b85d
+#: ../../source/training/socialisation/run_basic_inasafe.rst:256
+msgid ""
+"When the function completes, take a look at the impact summary in the "
+"|project_name| panel. How do the results compare to the first analysis "
+"results? The result should be different to the first analysis because in the"
+" first analysis |project_name| buildings are said to be inundated if the "
+"**flood level exceeds 1.0m** and now we have changed the flood level to "
+"**0.8m**, this means that building are said to be inundated when the **flood"
+" level exceed 0.8m**. This means that more building will be defined as "
+"inundated with the lower flood threshold value because a greater area of "
+"Jakarta is flooded at this depth."
+msgstr ""
+
+# 6b22d83573bb4d3eb5d7854ffb7c6c3f
+#: ../../source/training/socialisation/run_basic_inasafe.rst:265
+msgid "ask your tutor to explain if you do not understand this."
+msgstr ""
+
+# c1eedc11172c46b1bc29aca6abe66675
+#: ../../source/training/socialisation/run_basic_inasafe.rst:267
+msgid ""
+"This completes our first |project_name| analysis using the flood hazard "
+"model to look at the number of affected buildings."
+msgstr ""
+
+# c44a8f9cf7b049eea01a8d61b49282ca
+#: ../../source/training/socialisation/run_basic_inasafe.rst:270
+msgid "3. Run |project_name| for population"
+msgstr ""
+
+# 1939e99cae6d4d2eb5949e6d2617ad90
+#: ../../source/training/socialisation/run_basic_inasafe.rst:272
+msgid ""
+"We are now ready to run our second |project_name| analysis using the flood "
+"hazard data for Jakarta. We will be working with the flood hazard model "
+"again, but this time to look at the number of impacted people. These data "
+"already have keywords assigned so we will be ready to run the analysis as "
+"soon as we have turned on the relevant data layers."
+msgstr ""
+
+# ab424d9db5f545b0b8ad1002756392b2
+#: ../../source/training/socialisation/run_basic_inasafe.rst:278
+msgid ""
+"In the QGIS, turn OFF the **Buildings** and **estimated building affected** "
+"(the layers generated from |project_name| analysis and turn ON "
+"**Java_Population_WGS84** layer."
+msgstr ""
+
+# dceacf5e123d46338a6622092fa94609
+#: ../../source/training/socialisation/run_basic_inasafe.rst:281
+msgid ""
+"Confirm that the |project_name| panel on the right side is set to query how "
+"many people might need evacuation:"
 msgstr ""
 
 # d761beb0f1f741be90edd50eb384c7a8
 # 0c508ae508264f76958629231cd5aa66
 # 943ebd0bdca64741a14d35b114880945
 # f2bb00acd8234557a1b8b9061e804bb6
-#: ../../source/training/socialisation/run_basic_inasafe.rst:54
-#: ../../source/training/socialisation/run_basic_inasafe.rst:63
-#: ../../source/training/socialisation/run_basic_inasafe.rst:201
-#: ../../source/training/socialisation/run_basic_inasafe.rst:291
+#: ../../source/training/socialisation/run_basic_inasafe.rst:283
 msgid "A flood similar to the 2007 Jakarta event"
 msgstr ""
 
 # ef22c5f8ab674241aded7037061e71a8
-#: ../../source/training/socialisation/run_basic_inasafe.rst:55
+#: ../../source/training/socialisation/run_basic_inasafe.rst:285
 msgid "People"
 msgstr ""
 
 # 3893c050ec3a4582b4818ec77ee8fabb
-#: ../../source/training/socialisation/run_basic_inasafe.rst:56
+#: ../../source/training/socialisation/run_basic_inasafe.rst:287
 msgid "Need evacuation"
 msgstr ""
 
-# 6c419a68cead45259340a50a3eef48ae
-#: ../../source/training/socialisation/run_basic_inasafe.rst:61
-msgid "The |project_name| panel may instead read as follows:"
-msgstr ""
-
-# c19c8cee25904e9cbcf3cad6e422b629
-#: ../../source/training/socialisation/run_basic_inasafe.rst:64
-#: ../../source/training/socialisation/run_basic_inasafe.rst:202
-#: ../../source/training/socialisation/run_basic_inasafe.rst:292
-msgid "Buildings"
-msgstr ""
-
-# ffc3ca6fb0894342a211873d350192ca
-# e0cbc13460f6427883d359955a9ea0eb
-#: ../../source/training/socialisation/run_basic_inasafe.rst:65
-#: ../../source/training/socialisation/run_basic_inasafe.rst:293
-msgid "Be flooded"
-msgstr ""
-
-# f58775f2cb844f41b5b0f9d2a3c8600b
-#: ../../source/training/socialisation/run_basic_inasafe.rst:67
+# 652c823934504d7f803a485f921499de
+#: ../../source/training/socialisation/run_basic_inasafe.rst:296
 msgid ""
-"If so, click on buildings and change it to people. When you change this "
-"field, the impact function is automatically changed between :guilabel:`Be "
-"flooded` and :guilabel:`Need evacuation`, based on the combination of hazard "
-"and exposure layers."
+"If everything is setup correctly, the |project_name| dock should show that "
+"you are ready to run a flood analysis on population. It poses the question "
+"“In the event of **a flood similar to the 2007 Jakarta event**, how many "
+"**people** might **need evacuation**?” In this analysis we will use the "
+"default flood depth threshold of 1.0 metre to find out how many people are "
+"in 1 metre of water. After everything is setup accordingly click "
+":guilabel:`Run` to process the new scenario."
 msgstr ""
 
-# 0d1010a046304650b99f40511a2bc63c
-#: ../../source/training/socialisation/run_basic_inasafe.rst:72
+# 881c3418cd8240169cbbc4d3b2331692
+#: ../../source/training/socialisation/run_basic_inasafe.rst:304
 msgid ""
-"Let's run this scenario first. Click :guilabel:`Run` in the lower right "
-"corner of the |project_name| panel."
+"Notice that if you click on the drop-down list on \"How Many **People**, the"
+" **building** option is not available. This is because **building** is not "
+"checked in the Layers panel."
 msgstr ""
 
-# 9cd9a4be0ad947ba895193c156534ae6
-#: ../../source/training/socialisation/run_basic_inasafe.rst:78
-msgid ""
-"A new layer should appear in the layer panel called :guilabel:`Population "
-"which need evacuation`."
-msgstr ""
-
-# 86ba98e4b2da46deaa730a88cec88ec5
-#: ../../source/training/socialisation/run_basic_inasafe.rst:84
-msgid ""
-"In the |project_name| panel we now see text and statistics. The details of "
-"this report are explained below."
-msgstr ""
-
-# bc6e2632ec3a41c8b7684564cbc44f0f
-#: ../../source/training/socialisation/run_basic_inasafe.rst:90
-msgid ""
-"**People:** |project_name| shows approximately how many people are located "
-"in water deeper than one metre. It is assumed that all of these people will "
-"need to evacuate their homes. The threshold of one metre can be changed (see "
-"Changing threshold section below)."
-msgstr ""
-
-# b6b872b2ad994624a40ac49f114521f8
-#: ../../source/training/socialisation/run_basic_inasafe.rst:95
-msgid ""
-"**Needs per week** is calculated using the above number of evacuated people "
-"to estimate the amount of food, water and other products that the refugees "
-"will need to survive. The default figures are based on Indonesian policy."
-msgstr ""
-
-# 4d17c9eecb5847cb859372acd33c16f5
-#: ../../source/training/socialisation/run_basic_inasafe.rst:99
-msgid ""
-"**Action checklist** is designed to make disaster managers think about what "
-"they need to do to prepare for the event."
-msgstr ""
-
-# 362f839a4fa947f68f5455891eafa8ce
-#: ../../source/training/socialisation/run_basic_inasafe.rst:102
-msgid ""
-"**Notes** explains the total people in the map canvas, the threshold of "
-"water depth that requires evacuation and the source of the minimum needs "
-"assessment."
-msgstr ""
-
-# cbc390b2db8e4fe3a60fb205b49e9ae8
-#: ../../source/training/socialisation/run_basic_inasafe.rst:105
-msgid ""
-"**Detailed gender and age report:** Statistical breakdown of the number of "
-"females, minimum needs for women's hygiene and pregnant women, as well as a "
-"statistical breakdown of Youth, Adults and Elderly."
-msgstr ""
-
-# dd9110a1bf514378adce1830620d5f8d
-#: ../../source/training/socialisation/run_basic_inasafe.rst:110
-msgid "Print Results"
-msgstr ""
-
-# cde58c2395f3486794d2fb3efbf881c7
-#: ../../source/training/socialisation/run_basic_inasafe.rst:112
-msgid "Click :guilabel:`Print...` at the bottom of the |project_name| panel."
-msgstr ""
-
-# 96befdab2533447b96649bc813a69a2e
-#: ../../source/training/socialisation/run_basic_inasafe.rst:117
-msgid ""
-"You can choose whether you want to print the whole analysis or just the "
-"current map extent. You can also pick an existing print template or you can "
-"navigate to your own QGIS template (.qpt). For more information about "
-"printing, click :guilabel:`Help` in the print window."
-msgstr ""
-
-# 59947a7063d848b98e57520f03e0de5d
-# d64505bef1bf4156be07863dfece44d8
-# 866f20caa4444460a52e6a5a1f273848
-#: ../../source/training/socialisation/run_basic_inasafe.rst:122
-#: ../../source/training/socialisation/run_basic_inasafe.rst:187
-#: ../../source/training/socialisation/run_basic_inasafe.rst:273
-msgid ""
-"A window will pop up as shown below. Ensure that :guilabel:`Analysis extent` "
-"is selected under :guilabel:`Area to print` and :guilabel:`inasafe...` is "
-"chosen under :guilabel:`Template to use`. Click :guilabel:`Open PDF`."
-msgstr ""
-
-# 4b96659dc5364e8092733d967ed712d8
-#: ../../source/training/socialisation/run_basic_inasafe.rst:129
-msgid ""
-"Navigate to where you would like to save the PDF and type :file:"
-"`Jakartaflood_evacuation_1m`. Click :guilabel:`Save`."
-msgstr ""
-
-# fa6f788b21c44c00807dc4d1589a583e
-#: ../../source/training/socialisation/run_basic_inasafe.rst:135
-msgid ""
-"Two PDFs will be generated, which contain a map and a table of information "
-"about the impact."
-msgstr ""
-
-# 9577a21670224698aa4d8cb91b617025
-#: ../../source/training/socialisation/run_basic_inasafe.rst:140
-msgid ""
-"In future versions of |project_name|, the developers will make improvements "
-"to the layout of these PDF files. *If you have time during this course "
-"please provide us with your ideas on how the print map and table should look!"
-"*"
-msgstr ""
-
-# 146e3d23bcb64798a081b7ad5fcf2d05
-#: ../../source/training/socialisation/run_basic_inasafe.rst:145
-msgid "Changing threshold"
-msgstr ""
-
-# dde5663b9e1e4360bd43e719c1509b5b
-#: ../../source/training/socialisation/run_basic_inasafe.rst:147
-msgid ""
-"What if the disaster manager decides that people should be evacuated if they "
-"are in 80cm or more of water? In this case we will need to change the water "
-"threshold at which level people should be evacuated."
-msgstr ""
-
-# 00f6b387a219422e900c70c76b243301
-#: ../../source/training/socialisation/run_basic_inasafe.rst:151
-msgid ""
-"Click :guilabel:`Show question form` found at the top of the |project_name| "
-"panel."
-msgstr ""
-
-# 4cf514d09e5d4b26a05cea9d4eb63028
-#: ../../source/training/socialisation/run_basic_inasafe.rst:156
-msgid ""
-"To change the impact function click the :guilabel:`Options...` button next "
-"to :guilabel:`Need evacuation`."
-msgstr ""
-
-# 3909e04a811d43b6bd596a7f96d4212f
-# 158f9e33733d4adfbda6f5f0d01b26c0
-#: ../../source/training/socialisation/run_basic_inasafe.rst:162
-#: ../../source/training/socialisation/run_basic_inasafe.rst:298
-msgid "Type :kbd:`0.8` in the :guilabel:`Thresholds` field."
-msgstr ""
-
-# 154bdb2f24ab4f96802546477aa06fb8
-#: ../../source/training/socialisation/run_basic_inasafe.rst:167
-msgid "Click :guilabel:`OK`."
-msgstr ""
-
-# d2676c276db94f4bb871130333a35156
-# eed38f7327494b86a244b8a24418e731
-#: ../../source/training/socialisation/run_basic_inasafe.rst:169
-#: ../../source/training/socialisation/run_basic_inasafe.rst:300
-msgid ""
-"Click :guilabel:`Run` to process the scenario with the new water threshold."
-msgstr ""
-
-# be4e6f367a6b48f5a87e5bb73040f89e
-#: ../../source/training/socialisation/run_basic_inasafe.rst:174
-msgid ""
-"When the function completes, take a look at the new numbers in the |"
-"project_name| panel. How have they changed?"
-msgstr ""
-
-# f14398ebc0a444afab0de45d0fe77d72
-#: ../../source/training/socialisation/run_basic_inasafe.rst:182
-#: ../../source/training/socialisation/run_basic_inasafe.rst:268
-msgid "Click :guilabel:`Print...` at the bottom the |project_name| panel."
-msgstr ""
-
-# f9beaf45341643a9b34143d3ebdac8a1
-#: ../../source/training/socialisation/run_basic_inasafe.rst:194
-msgid ""
-"Navigate to where you would like to save the PDF and type :file:"
-"`Jakartaflood_evacuation_80cm`. Click :guilabel:`Save`."
-msgstr ""
-
-# 27c7a08724da4b1fb2fef8d620c76532
-#: ../../source/training/socialisation/run_basic_inasafe.rst:197
-msgid ""
-"Next we will run the |project_name| analysis on buildings, but first let's "
-"turn some layers off. In the Layers panel there should now be five layers. "
-"Uncheck everything except:"
-msgstr ""
-
-# ad4e890c3e824422a22e3f66454ab3bc
-#: ../../source/training/socialisation/run_basic_inasafe.rst:208
-msgid "Buildings Affected"
-msgstr ""
-
-# a382064d41b841e7a4c6966015c77f67
-#: ../../source/training/socialisation/run_basic_inasafe.rst:210
-msgid ""
-"Confirm that the |project_name| panel is set to query how many buildings "
-"might be flooded."
-msgstr ""
-
-# a703c7cca02d4bf69d3e6216ebb62b0c
-#: ../../source/training/socialisation/run_basic_inasafe.rst:216
-msgid ""
-"Notice that if you click on the drop-down list with :guilabel:`Buildings`, "
-"the people option is not available. This is because :guilabel:`people` is "
-"not checked in the Layers panel."
-msgstr ""
-
-# 35b3950d4de3405a9d11f7cba515c7d3
-#: ../../source/training/socialisation/run_basic_inasafe.rst:220
-msgid ""
-"If you want to be able to select layers within the |project_name| panel that "
-"are not checked in the Layers panel you can modify the |project_name| "
-"options. For more information on |project_name| options, see the user "
-"documentation here: :doc:`../../user-docs/application-help/options`. The "
-"options menu is also discussed later in this tutorial in :doc:"
-"`helpful_hints_and_tips`."
-msgstr ""
-
-# 4c2839c9cfd344c78ae3a2abe7ea9bf4
-#: ../../source/training/socialisation/run_basic_inasafe.rst:227
-msgid "Click :guilabel:`Run` to process the new scenario."
-msgstr ""
-
-# 72313295815a478facd3e061d3f047fc
-#: ../../source/training/socialisation/run_basic_inasafe.rst:232
-msgid ""
-"In this scenario approximately 2,914 buildings could be affected out of "
-"13,353 buildings. Your results may vary depending on updates that have been "
-"made to the exposure data and the analysis extent."
-msgstr ""
-
-# aafd253b497b42b99cc4e4eccadb3e21
-#: ../../source/training/socialisation/run_basic_inasafe.rst:236
-msgid ""
-"Due to the provincial BPBD work in OpenStreetMap, all important buildings in "
-"this area have been mapped (and then some!)."
-msgstr ""
-
-# 86dc53062baf4b0e80af81b1b67029e9
-#: ../../source/training/socialisation/run_basic_inasafe.rst:239
-msgid "Important buildings are defined as:"
-msgstr ""
-
-# 5ebf600dead44e82aad7cda95579b003
-#: ../../source/training/socialisation/run_basic_inasafe.rst:241
-msgid "Clinic/doctors"
-msgstr ""
-
-# eec169906f60488a8e0941cd2084397d
-#: ../../source/training/socialisation/run_basic_inasafe.rst:242
-msgid "Fire stations"
-msgstr ""
-
-# 019661ae8dbc449a9f8ec133d35810cf
-#: ../../source/training/socialisation/run_basic_inasafe.rst:243
-msgid "Government buildings"
-msgstr ""
-
-# ef50d5f7755540519d87283d0be54b75
-#: ../../source/training/socialisation/run_basic_inasafe.rst:244
-msgid "Hospitals"
-msgstr ""
-
-# a6a3d96962f64ddab67f4426cc4a95ad
-#: ../../source/training/socialisation/run_basic_inasafe.rst:245
-msgid "Places of worship"
-msgstr ""
-
-# 2fe7f5616c094c18ad2dc5e910a67f57
-#: ../../source/training/socialisation/run_basic_inasafe.rst:246
-msgid "Police stations"
-msgstr ""
-
-# 3f07199c79354bf6b77ce9a0b1b7987a
-#: ../../source/training/socialisation/run_basic_inasafe.rst:247
-msgid "Residential buildings"
-msgstr ""
-
-# 2acf35ca8ae2410397e67dcd7605e864
-#: ../../source/training/socialisation/run_basic_inasafe.rst:248
-msgid "Schools"
-msgstr ""
-
-# b64a7631c0ec4889baaa87f72eb9e53e
-#: ../../source/training/socialisation/run_basic_inasafe.rst:249
-msgid "Sports facilities"
-msgstr ""
-
-# f5ed1d05e0a54740a2ed04f34f6fcccc
-#: ../../source/training/socialisation/run_basic_inasafe.rst:250
-msgid "Universities/colleges"
-msgstr ""
-
-# 19fe720e155e4001839d607993488a35
-#: ../../source/training/socialisation/run_basic_inasafe.rst:252
-msgid ""
-"In the |project_name| panel we now see text and statistics. The details of "
-"this report are explained here:"
-msgstr ""
-
-# a4b34179663141c4b6ab020518e4d516
-#: ../../source/training/socialisation/run_basic_inasafe.rst:255
-msgid ""
-"**Action Checklist:** A different set of actions have been identified to "
-"relate to structures."
-msgstr ""
-
-# 8ee2d7d9433d4dfd922b198a9e3a8768
-#: ../../source/training/socialisation/run_basic_inasafe.rst:258
-msgid ""
-"**Note:** Similar to the last |project_name| analysis, this analysis also "
-"assumes impact is in water above one metre."
-msgstr ""
-
-# 5bfd3a8a4ca34e519d73c6a18e07f5b1
-#: ../../source/training/socialisation/run_basic_inasafe.rst:261
-msgid ""
-"**Detailed building type report:** This is a breakdown of important "
-"infrastructure. When you choose to aggregate (we will do this later) this "
-"table will show the number of buildings by aggregation boundary."
-msgstr ""
-
-# f4e167b03dc94cf586c0993178e6b1c7
-#: ../../source/training/socialisation/run_basic_inasafe.rst:265
-msgid "**Source** shows the source of the hazard and exposure datasets."
-msgstr ""
-
-# cdaa4697c8f74e08b5a346097608a030
-#: ../../source/training/socialisation/run_basic_inasafe.rst:280
-msgid ""
-"Navigate to where you would like to save the PDF and type :file:"
-"`Jakartaflood_inundated_1m`. Click :guilabel:`Save`."
-msgstr ""
-
-# 973e41ad3c9043a3a29fca45c1247c0b
-#: ../../source/training/socialisation/run_basic_inasafe.rst:285
-msgid "(Optional) Change the threshold to 0.8"
-msgstr ""
-
-# 19053757276f4429aef57fa3c48d33e9
-#: ../../source/training/socialisation/run_basic_inasafe.rst:287
-msgid ""
-"You may try running this scenario again with a water threshold of 0.8 metres."
-msgstr ""
-
-# 97afecf2c4b34677afdf103fac859434
-#: ../../source/training/socialisation/run_basic_inasafe.rst:289
-msgid "Check that |project_name| has the following in the drop-down boxes:"
-msgstr ""
-
-# c7aa93acae9c44138daf611bcb512bcb
-#: ../../source/training/socialisation/run_basic_inasafe.rst:295
-msgid ""
-"To change the impact function click the :guilabel:`Options...` button on the "
-"|project_name| panel."
-msgstr ""
-
-# d5ec4592ba5a45d09a87cbbf2b3400e2
-#: ../../source/training/socialisation/run_basic_inasafe.rst:302
-msgid "Click :guilabel:`Print` and save PDFs the same way as before."
-msgstr ""
-
-# 3a9f0ba667524fe4979146665f0960fd
-#: ../../source/training/socialisation/run_basic_inasafe.rst:305
-msgid "(Optional) Save your work"
-msgstr ""
-
-# 41cb07397d4f4ba6aab9568a58c428d5
-#: ../../source/training/socialisation/run_basic_inasafe.rst:307
-msgid "Click :menuselection:`Project --> Save` to save your current project"
-msgstr ""
-
-# 481aa8b010a345b8b2a134b5c92b1d90
+# 8542d1c212af427fa77927ea0bfe5615
 #: ../../source/training/socialisation/run_basic_inasafe.rst:309
-msgid ""
-"Because the InaSAFE output by default saved in temporary folder, you need to "
-"manually save your InaSAFE output as new layer in same directiory as your "
-"project."
+msgid "b. Interpret The Results"
 msgstr ""
 
-# ab75090300b748f981d821954c0d480a
-#: ../../source/training/socialisation/run_basic_inasafe.rst:312
+# 3015e281cb48497daa13e2000d20e2c7
+#: ../../source/training/socialisation/run_basic_inasafe.rst:311
 msgid ""
-"Right click on :guilabel:`Population which need evacuation` and click :"
-"guilabel:`Save As...`"
+"If everything was set up correctly, you should get a result in the dock area"
+" after a few seconds, and a new map layer should be added to the map. The "
+"new impact layer will be called **population which need evacuation**. Let’s "
+"explore the result again to make you understand more about the "
+"|project_name| result."
 msgstr ""
 
-# 2ecea37246894ff796d152fc98df5c77
-#: ../../source/training/socialisation/run_basic_inasafe.rst:314
+# 16b99c899aaf44ca85f90d630518aa45
+#: ../../source/training/socialisation/run_basic_inasafe.rst:316
 msgid ""
-"A new window will appear. Click :guilabel:`Browse...` and name your new "
-"layer with :kbd:`Population which need evacuation`. Click :guilabel:`Save` "
-"and then click :guilabel:`OK`"
+"Turn Off **Estimated building affected** layer and drag the **population "
+"which need evacuation** above **a flood similar to 2007 Jakarta event**"
 msgstr ""
 
-# 619d20b16cd24c48972ed785e80043a6
-#: ../../source/training/socialisation/run_basic_inasafe.rst:317
-msgid ":ref:`Go to next module --> <inasafe-in-more-detail>`"
+# 565b8d9406484bac8442ee408ce63f7c
+#: ../../source/training/socialisation/run_basic_inasafe.rst:319
+msgid "Zoom in the area you choose"
+msgstr ""
+
+# 397a4bf4096c461ab2044b62cd64a528
+#: ../../source/training/socialisation/run_basic_inasafe.rst:321
+msgid ""
+"Select **population which need evacuation** in the layer list and use "
+":guilabel:`Identify Feature` tool again to select a pixel (square) in the "
+"map canvas."
+msgstr ""
+
+# 97e6d9cf25ea448388cfcbee0616ddaf
+#: ../../source/training/socialisation/run_basic_inasafe.rst:325
+msgid ""
+"Here we clicked on one of the light green pixels and find that there is a "
+"value of 80.75106, which means there are approximately 80 people in this one"
+" pixel (square) needed to evacuate because of the flood."
+msgstr ""
+
+# f048e1427ac24cb685e9205462afc203
+#: ../../source/training/socialisation/run_basic_inasafe.rst:341
+msgid ""
+"**Population needing evacuation:** |project_name| estimates the number of "
+"affected people in the analysis area. It is assumed that all of these people"
+" will need to be evacuated."
+msgstr ""
+
+# fd2880e3182c41e88df5a5141f24593f
+#: ../../source/training/socialisation/run_basic_inasafe.rst:345
+msgid ""
+"**Needs per week:** are calculation numbers of food, water and other "
+"products that needed by evacuated people. These needs should be provided "
+"weekly."
+msgstr ""
+
+# 6de5dfb657a3476cb4bcaad6d4ab51ca
+#: ../../source/training/socialisation/run_basic_inasafe.rst:352
+msgid ""
+"**Notes:** provides details about the input data and any limitations or "
+"assumptions in the analysis or report summary. In this example, it explains "
+"the total people in the analysis area and the source of minimum needs."
+msgstr ""
+
+# 71615dfcc4a447a99f7206919fa34b7b
+#: ../../source/training/socialisation/run_basic_inasafe.rst:356
+msgid ""
+"**Detailed gender and age report:** provides a breakdown of the number of "
+"affected people by age (youth, adults and elderly) and gender based on the "
+"default world population demographics and calculates the minimum needs for "
+"women’s hygiene and pregnant women."
+msgstr ""
+
+# ffc92cda4e294160a812cfac54e9fbbb
+#: ../../source/training/socialisation/run_basic_inasafe.rst:361
+msgid ""
+"**Detailed minimum needs report:** provides a breakdown of the number "
+"minimum needs for evacuated people which based on **PERKA No 7/2008**. This "
+"minimum need consist of rice, drinking water, clean water, family kits and "
+"toilet and provided weekly."
+msgstr ""
+
+# 186d526cc7a44c22a8a1de573916dedb
+#: ../../source/training/socialisation/run_basic_inasafe.rst:371
+msgid "c. Understand defaults minimum needs"
+msgstr ""
+
+# 46dae17c42bc4b44815d3cee201249d5
+#: ../../source/training/socialisation/run_basic_inasafe.rst:373
+msgid ""
+"The |project_name| impact summary for flood impact on people includes "
+"details for the amount of drinking water, rice, clean water, and family kits"
+" and for the number of toilets that should provide for displaced persons "
+"each week. The minimum needs in the Jakarta flood impact assessment are "
+"based on **Head of Indonesia National Disaster Management Agency, BNPB, "
+"regulation, PERKA No 7/2008 guideline procedure for fulfillment of basic "
+"needs in Disaster Response.** According to the following default formula:"
+msgstr ""
+
+# 3e21c4cfed30448d94cddc1a1805a984
+#: ../../source/training/socialisation/run_basic_inasafe.rst:382
+msgid "400g rice per person per day (2.8kg per week)"
+msgstr ""
+
+# 066dd79d497b450d81a109cce405d764
+#: ../../source/training/socialisation/run_basic_inasafe.rst:384
+msgid "2.5l drinking water per person per day (17.5l per week)"
+msgstr ""
+
+# 8a3f76feb4a84472b0fac8db757114bb
+#: ../../source/training/socialisation/run_basic_inasafe.rst:386
+msgid "15l clean water per person per day (105l per week)"
+msgstr ""
+
+# 16810b1a7dcb43de8c0000f026469b5a
+#: ../../source/training/socialisation/run_basic_inasafe.rst:388
+msgid ""
+"one family kit per family per week (assumes five people per family which is "
+"not specified in perka)"
+msgstr ""
+
+# e4da029a6c8544ab94d07ead40732fed
+#: ../../source/training/socialisation/run_basic_inasafe.rst:390
+msgid "20 people per toilet"
+msgstr ""
+
+# b571b90f258c4495babea46e51e9148c
+#: ../../source/training/socialisation/run_basic_inasafe.rst:392
+msgid ""
+"As described above, the impact summary and minimum needs calculation is "
+"based on the default world population demographics (which assumes a ratio of"
+" 26.3% youth, 65.9% adult and 7.9% elderly)."
+msgstr ""
+
+# 1d9807d005804e3fae08829a5623c4ce
+#: ../../source/training/socialisation/run_basic_inasafe.rst:396
+msgid ""
+"You may like to refer to local population statics (for example - `Population"
+" of DKI Jakarta "
+"<http://sp2010.bps.go.id/index.php/site/tabel?tid=336&wid=3100000000>`__) to"
+" change these defaults for your analysis area, similarly if you have other "
+"regulation for minimum needs, you can change in the Impact Function "
+"Configuration in Minimum Needs Tab or if you want to create your own minimum"
+" needs, you can use minimum needs configuration (see more at `Minimum Needs "
+"Configuration manuals <http://docs.inasafe.org/en/user-docs/application-"
+"help/minimum_needs.html#minimum-needs>`__)."
+msgstr ""
+
+# a506ca282123442198e89b8e388d1e9e
+#: ../../source/training/socialisation/run_basic_inasafe.rst:409
+msgid "4. Print and Save your |project_name| Results"
+msgstr ""
+
+# fae4d7e1b98b4dc89499c75c5a52cbe5
+#: ../../source/training/socialisation/run_basic_inasafe.rst:411
+msgid ""
+"We can also print the analysis results; the impact map and the impact "
+"summary, as two separate pdf files. To print |project_name| result:"
+msgstr ""
+
+# 06ee6321cb174e95bc58496a50a429d9
+#: ../../source/training/socialisation/run_basic_inasafe.rst:414
+msgid "Click :guilabel:`Print` at the bottom of the |project_name| panel."
+msgstr ""
+
+# d2f0899240b54eddbf43bde0a597d03d
+#: ../../source/training/socialisation/run_basic_inasafe.rst:416
+msgid "A window will pop up as shown below."
+msgstr ""
+
+# 1da96d28ccad43b2b976edfef1571f6c
+#: ../../source/training/socialisation/run_basic_inasafe.rst:422
+msgid "**Area to print**: leave this set to the default **analysis extent**."
+msgstr ""
+
+# 05ac442b982a4691bb05664e1e8c1006
+#: ../../source/training/socialisation/run_basic_inasafe.rst:424
+msgid "**Template to use**: leave this set to the **default portrait - a3**."
+msgstr ""
+
+# 549dd59c7950486e92bd528d838dc8d9
+#: ../../source/training/socialisation/run_basic_inasafe.rst:426
+msgid ""
+"For more information about printing, click :guilabel:`Help` in the print "
+"window."
+msgstr ""
+
+# 2dbd04acc63b4e38908ee1fd06d2b831
+#: ../../source/training/socialisation/run_basic_inasafe.rst:428
+msgid "Click :guilabel:`Open PDF`."
+msgstr ""
+
+# 92127b1debdb40a79326ee0d0f26d482
+#: ../../source/training/socialisation/run_basic_inasafe.rst:430
+msgid ""
+"Navigate to where you would like to save the PDF. By default, the filename "
+"is related to the scenario (in this case it will say Buildings_inundated) "
+"but you can name the file name by yourself, for example "
+":file:`Jakartaflood_building_1m`. In this case adding 1m to the file name "
+"reminds us that in this flood impact scenario our threshold flood depth was "
+"1 metre. Click :guilabel:`Save`."
+msgstr ""
+
+# 309117a9baa54c7698f0713a53331a5b
+#: ../../source/training/socialisation/run_basic_inasafe.rst:439
+msgid ""
+"Two PDFs will be generated, one shows a map with the impact layer and the "
+"other has tables from the impact summary. Take a look at the result."
+msgstr ""
+
+# f26270a3d27a41939969c3fa1887cd89
+#: ../../source/training/socialisation/run_basic_inasafe.rst:446
+msgid ""
+"We are now already have the impact result in pdf files, but what if we want "
+"to keep the impact result in shapefile? Is the impact result shapefile "
+"automatically stored?"
+msgstr ""
+
+# 9ce1cf96443c438cb8170749f7417f43
+#: ../../source/training/socialisation/run_basic_inasafe.rst:450
+msgid ""
+"The |project_name| impact result layer is saved in temporary folder, this "
+"means that it will automatically deleted if you restart your computer, "
+"unless you save your QGIS project. If you want to keep your |project_name| "
+"results (so you can refer to them again or share them with others), you need"
+" to manually save the |project_name| impact layer |project_name| as new "
+"layer in same directory as your project."
+msgstr ""
+
+# 473a45b3b1e242efb874183cdd797b0a
+#: ../../source/training/socialisation/run_basic_inasafe.rst:457
+msgid ""
+"Right click on your |project_name| analysis result, for example **estimated "
+"building affected** or **population which need evacuation** and click "
+":guilabel:`Save As...`"
+msgstr ""
+
+# d43a8414201b43bfb64be195432681d9
+#: ../../source/training/socialisation/run_basic_inasafe.rst:460
+msgid ""
+"A new window will appear. Click :guilabel:`Browse…` and name your new layer "
+"and click :guilabel:`Save` and then click :guilabel:`OK`."
+msgstr ""
+
+# 71998ce54d05417c975e6f737810f9dd
+#: ../../source/training/socialisation/run_basic_inasafe.rst:463
+msgid ""
+"If you want to save your current project you can save it by clicking on "
+":menuselection:`Project > Save As...` to save your current project. It’s "
+"better to not overwrite the training project so you can exercise again "
+"later."
+msgstr ""
+
+# 6428972ccccc4e1fb31bb214e352f8b3
+#: ../../source/training/socialisation/run_basic_inasafe.rst:468
+msgid "Summary"
+msgstr ""
+
+# 4d24fbf473db4a47a23827ac09e4d56e
+#: ../../source/training/socialisation/run_basic_inasafe.rst:470
+msgid ""
+"In this exercise you have learned how to run a basic |project_name| analysis"
+" using an existing QGIS project file and what the minimum component that "
+"must be there to run |project_name| properly. Those components are hazard "
+"and exposure data. In this exercise, you have run an |project_name| impact "
+"assessment for a flood scenario in Jakarta using two types of exposure data."
+" The hazard data you used was a modelled flood raster and the exposure data "
+"were buildings and population. These analyses produced impact layers and "
+"impact summaries for affected buildings and impacted people."
+msgstr ""
+
+# 7db94557739a448ca399d27765d87861
+#: ../../source/training/socialisation/run_basic_inasafe.rst:480
+msgid ""
+"You have also learned how to modify the analysis options through the Impact "
+"Function configuration, how to print |project_name| results in PDF format, "
+"understand what minimum needs is and how to save both your impact layers and"
+" your QGIS project file."
+msgstr ""
+
+# 71daeacf7c0e4f26b21297fcc6d65580
+#: ../../source/training/socialisation/run_basic_inasafe.rst:485
+msgid ""
+"In the next section you will learn more about how to run |project_name| in "
+"more detail. In that module you will learn how to use more |project_name| "
+"tools such as Agreggation options, OSM Downloader, Minimum Needs "
+"Configuration, etc."
 msgstr ""

@@ -8,60 +8,24 @@ Installation
 
 To install |project_name|, use the plugin manager in QGIS.
 
-Go to :menuselection:`Plugins ‣ Fetch Python Plugins`
-and search for :kbd:`inasafe`. Select it and click the :guilabel:`Install` 
-button. |project_name| will now be added to the plugins menu.
+- Go to :menuselection:`Plugins -> Manage and install plugins` menu.
+
+.. image:: /static/training/socialisation/Intro_QGIS_32.*
+
+- Go to the search box and type :kbd:`InaSAFE`.
+
+.. image:: /static/training/socialisation/Intro_QGIS_33.*
+
+- Select InaSAFE and click :guilabel:`Install plugin` and 
+   wait for a moment until the InaSAFE dock appears
+   in the right side of QGIS main window.
+
+- Close the plugin manager window.
 
 For more information on |QGIS| and |project_name| 
-see :doc:`../training/socialisation/introduction_of_qgis`.
-
-From |project_name| test repository
------------------------------------
-
-During development of each version of |project_name|, the developers make an 
-experimental version of the software available for users. To install the latest
-test version of |project_name|, follow these instructions:
-
-1. In QGIS, go to :menuselection:`Plugins ‣ Manage and Install Plugins`.
-
-   .. image:: /static/user-docs/plugin_manager.*
-      :align: center
-
-2. Click on the :guilabel:`Settings` tab and check the box next to 
-   :guilabel:`Show also experimental plugins`.
-
-   .. image:: /static/user-docs/experimental.*
-      :align: center
-
-3. Click :guilabel:`Add...` at the bottom of the plugins window.
-
-4. A :guilabel:`Repository details` window will open. Enter the following:
-
-::
-
-   Name:   InaSAFE Test
-   URL:    http://experimental.inasafe.org/
+see :doc:`../training/socialisation/introduction_to_qgis`.
 
 
-.. image:: /static/user-docs/repository_details.*
-   :align: center
-
-5. Click :guilabel:`OK`.
-
-   .. image:: /static/user-docs/connected.*
-      :align: center
-
-6. You will now see that two repositories are connected. Click the
-   :guilabel:`Installed` tab and ensure that the |project_name| plugin is checked.
-
-   .. image:: /static/user-docs/InaSAFE_installed.*
-      :align: center
-
-7. The experimental version of |project_name| is now installed. Restart QGIS
-   before using |project_name|.
-
-   .. image:: /static/user-docs/restart.*
-      :align: center
 
 From Zip Archive
 ----------------
@@ -97,7 +61,7 @@ plugins will be in:
    :file:`.qgis(2)` means that the directory is either called
    :file:`.qgis` or :file:`.qgis2`.
 
-If you are running Windows with QGIS 2.0, do the following:
+If you are running Windows with QGIS 2.8 or above, do the following:
 
 1. Locate the directory
    :file:`C:\\Users\\<your username>\\.qgis2\\python\\plugins`.
@@ -111,13 +75,13 @@ directory, :file:`~/.qgis2/python/plugins/`.
 
 Once the plugin is extracted, start QGIS and enable it from the plugin manager.
 
-3. To do this go to :menuselection:`Plugins ‣ Manage plugins...` and type 
-   :kbd:`inasafe` into the filter box.
+3. To do this go to :menuselection:`Plugins ‣ Manage and Install Plugins` and type 
+   :kbd:`inasafe` into the search box.
 
 4. You should see the |project_name| plugin appear in the list.
    Tick the checkbox next to it to enable the plugin.
 
-.. figure:: /static/user-docs/plugin-manager.png
+.. figure:: /static/user-docs/plugin_manager.png
    :scale: 75 %
    :align: center
    :alt: Plugin Manager
@@ -151,5 +115,5 @@ System Requirements
 The requirements for running |project_name| are:
 
  - a standard PC with at least 4GB of RAM running Windows, Linux or OS X
- - the Open Source Geographic Information System QGIS (http://www.qgis.org);
-   |project_name| requires QGIS version 1.7 or newer
+ - QGIS long term release version (http://www.qgis.org);
+   |project_name| requires QGIS version 2.8 or newer

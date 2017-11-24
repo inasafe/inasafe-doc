@@ -1,0 +1,700 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 06:59-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: mahardika fadmastuti <mahardika.fadmastuti@gmail.com>, 2016\n"
+"Language-Team: Indonesian (https://www.transifex.com/inasafe/teams/57762/id/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# 9342bb03c6cd4e6888712fe99cf5f55b
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:10
+msgid "Chapter 7: Using Map Composer"
+msgstr "Bab 7: Menggunakan Map Composer"
+
+# 22165fb7f60d4ad28971488adb1b8037
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:12
+msgid "**Learning Objectives**"
+msgstr "**Tujuan Pembelajaran**"
+
+# fefdc1ec5fd0421d875f06135de0a5cd
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:14
+msgid "Arrange map layout"
+msgstr "Merancang layout peta "
+
+# 349e3cc8b9994c9095e1a38f5e2a3f8a
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:15
+msgid "Add new map"
+msgstr "Menambahkan peta baru"
+
+# 14bcf879aaf143499edd1d3dd645474a
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:16
+msgid "Add title to a map"
+msgstr "Menambahkan judul pada sebuah peta "
+
+# 4549a6ed28c64babbf216c5571013c8a
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:17
+msgid "Add graphic and numeric scales"
+msgstr "Menambahkan skala grafik dan numerik "
+
+# 1d951284eceb4cf199a7d82e287073fb
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:18
+msgid "Add grid to a map"
+msgstr "Menambahkan grid pada sebuah peta "
+
+# b916503004424ab48dfba8eb0c1bd4b5
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:19
+msgid "Add an inset"
+msgstr "Menambahkan sebuah inset"
+
+# 91a9fcbe2c9d47998a36912bf2a302be
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:20
+msgid "Customise the content of the legend"
+msgstr "Menyesuaikan isi legenda"
+
+# 745cc72cad74403ea006f717e8b700a0
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:21
+msgid "Export a map to different formats (pdf, jpeg, svg)"
+msgstr ""
+"Meng-eksport sebuah peta ke dalam format yang berbeda (pdf, jpeg, jpeg, svg)"
+
+# 6367c8d5a71142b89873e0c5ef36482a
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:23
+msgid ""
+"A map is a means to communicate information (as well as new ideas) tothe "
+"audience. We use symbology to convey the contents of our data so it can be "
+"easily understood. When we create a map layout, we go one step further - we "
+"present your map so that it becomes a means of information."
+msgstr ""
+"Sebuah peta merupakan sarana untuk menyampaikan informasi (serta ide-ide "
+"baru) kepada pembaca peta. Kita menggunakan simbologi untuk menyampaikan isi"
+" dari data kita sehingga dapat mudah dipahami. Ketika kita membuat layout "
+"peta, kita sudah satu langkah lebih jauh - kita menyajikan peta Anda "
+"sehingga menjadi sarana informasi. "
+
+# 60094ba898b24e9387b4f8677d23e680
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:26
+msgid ""
+"No matter what media we plan to distribute your map by (whether it’s printed"
+" or sent over the internet), we must pay attention to how you compose your "
+"map elements in the layout. In this module we will discuss the presentation "
+"of printed maps, and create our very own."
+msgstr ""
+"Apapun media yang Anda gunakan untuk mendistribusikan peta Anda (baik versi "
+"cetak maupun melalui internet), kita harus memperhatikan bagaimana Anda "
+"mengemas elemen-elemen yang ada di dalam peta ke dalam sebuah layout. Pada "
+"bab ini kita akan mendiskusikan bagaimana mempresentasikan peta cetak, dan "
+"membuat peta Anda sendiri."
+
+# cf42dd74f65240ee82d564ef8f95f3b2
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:30
+msgid "7.1 The Map Composer"
+msgstr "7.1 Map Composer"
+
+# 2ae895af8cb7436caa83c75d4a3ae9a6
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:32
+msgid ""
+"The QGIS Map Composer allows you to prepare it for printing. Apart from the "
+"map, you are able to add additional information such as images, labels, "
+"legends, and scalebars."
+msgstr ""
+"Map Composer pada QGIS memungkinkan Anda untuk mempersiapkannya untuk "
+"dicetak. Selain menambahkan peta, Anda dapat menambahkan informasi tambahan "
+"seperti gambar, label, dan skala."
+
+# 4d6e1733ba3d4e2989b9b83e6e7e4762
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:34
+msgid ""
+"Let’s start with some data in the Sleman regency that has already been "
+"symbolised. Open the project named :file:`Chapter_7_Map Composer.qgs` in the"
+" :file:`QGIS for Disaster Management` directory."
+msgstr ""
+"Mari kita mulai dengan beberapa data pada Kabupaten Sleman yang telah "
+"disimbolisasi. Buka sebuah project dengan nama :file:`Chapter_7_Map "
+"Composer.qgs` yang terletak di direktori :file:`QGIS for Disaster "
+"Management` ."
+
+# cb2134ae121143388a5c3a987e11cdfc
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:39
+msgid ""
+"This map shows some familiar layers from the previous module. We have the "
+"roads and vegetation of Sleman, along with the three impact zones from a "
+"Merapi eruption model."
+msgstr ""
+"Peta ini menunjukkan beberapa layer yang telah kita gunakan pada bab-bab "
+"sebelumnya. Kita memiliki layer jalan dan vegetasi dari Sleman, begitu pula "
+"dengan tiga buah zona dampak dari model erupsi Gunung Merapi."
+
+# 42524833d95b4229932068ee0af8a6d8
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:41
+msgid ""
+"Let’s see how we can use Map Composer to adjust the layout and prepare this "
+"map for printing."
+msgstr ""
+"Mari kita lihat bagaimana kita dapat menggunakan Map Composer untuk mengatur"
+" layout dan mempersiapkan peta ini untuk dicetak."
+
+# f71f41edbc53467b994510c4c6a840dd
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:43
+msgid ""
+"Go to :menuselection:`Project ‣ New Print Composer`. Then, give an unique "
+"title name for your layout, for example: :kbd:`Sleman`. Click "
+":guilabel:`OK`, then a new window will load that looks like this:"
+msgstr ""
+"Pergi ke :menuselection:`Project ‣ New Print Composer`. Kemudian, berilah "
+"sebuah nama unik untuk layout peta Anda, misalnya :kbd:`Sleman`. Klik "
+":guilabel:`OK`, kemudian jendela baru akan terbuka dan tampak seperti ini:"
+
+# 48cd2e23c4be46f6b19c7e0ebceab175
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:48
+msgid ""
+"This is the window where you can compose the layout of a map that you want "
+"to print. The blank white area is your “canvas”.It is a model of the paper "
+"you are going to print out. You can put various elements onto this canvas, "
+"such as your map (obviously), a title, scalebar, and legend. These are "
+"elements commonly used on printed maps."
+msgstr ""
+"Ini adalah jendela dimana Anda dapat membuat sebuah layout dari peta yang "
+"ingin Anda cetak. Area putih kosong adalah \"kanvas\" Anda. Ini merupakan "
+"sebuah model dari kertas yang nantinya akan dicetak. Anda dapat menaruh "
+"berbagai macam elemen pada kanvas ini, seperti peta Anda (secara jelas), "
+"judul, skala, dan legenda. Inilah elemen-elemen yang biasa digunakan pada "
+"peta cetak."
+
+# baff82f00227447f8c47683b0d8efa15
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:51
+msgid ""
+"Take a look at the right panel. In Composition tab, you change paper size, "
+"number of pages, and quality of output."
+msgstr ""
+"Lihat pada panel sebelah kanan. Pada tab :guilabel:`Komposisi`, Anda dapat "
+"mengubah ukuran kertas, jumlah halaman, dan kualitas gambar peta. "
+
+# d34ef1d9319c42a9bbaf107c2a0199f7
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:56
+msgid ""
+"Take a look at the icons on the left of the window. We will use some of "
+"these as we lay our map out, so here’s an overview of what they do:"
+msgstr ""
+"Lihatlah pada ikon-ikon yang ada pada bagian kiri jendela. Kita akan "
+"menggunakan beberapa ikon ketika melakukan layout peta, jadi inilah garis "
+"besar dari apa yang kita lakukan:"
+
+# b63290ceb1cb469f95cc536eb9cde568
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:59
+msgid ""
+"**Add New Map** will add a map element. This is what we will use to add the "
+"map from our project into our print layout. It should be noted, however, "
+"that if we change the map in our QGIS project, it will not update the same "
+"map that we have added to our print composer, as we shall see later."
+msgstr ""
+"**Tambahkan Peta Baru** akan menambahkann elemen peta. Inilah yang akan kita"
+" gunakan untuk menambahkan peta dari proyek kita yang akan kita desain "
+"hingga layak untuk dicetak. Perlu diingat, bahwa, jika kita mengubah peta "
+"pada projek QGIS kita, maka hasil dari perubahan itu tidak akan "
+"memperbaharui peta yang telah kita tambahkan pada print komposer kita, nanti"
+" akan kita lihat lebih lanjut."
+
+# 760f7baa1c9f43458cf09670704478f7
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:65
+msgid ""
+"**Add Image** allows us to add a picture. You can add a company or "
+"organisational logo, or simply display images from a particular location. "
+"You can also add an image of a compass (to point North)."
+msgstr ""
+"**Tambahkan Gambar** memungkinkan kita untuk menambahkan gambar. Anda dapat "
+"menambahkan logo perusahaan atau organisasi, atau jika Anda hanya ingin "
+"menampilkan gambar dari lokasi peta tersebut. Anda juga dapat menampilkan "
+"gambar dari sebuah kompas atau arah mata angin (untuk menunjukkan arah "
+"Utara)."
+
+# 36c6e3e88fbf4cfabd232633c1ab928f
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:70
+msgid ""
+"**Add New Label** is used for adding text to the layout, such as titles or "
+"other information."
+msgstr ""
+"**Tambahkan Label Baru** digunakan untuk menambahkan teks pada layout, "
+"seperti judul atau informasi lainnya. "
+
+# e870e938803b4768af96eb5142545cb4
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:73
+msgid ""
+"**Add New Legend** is for adding a legend, which will conform to the active "
+"layer in the QGIS window."
+msgstr ""
+"**Tambahkan Legenda Baru** untuk menambahkan legenda, yang akan dihubungkan "
+"dengan layer aktif pada jendela QGIS."
+
+# bea71032f67440ca8c6c27c91b7be7d4
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:76
+msgid "**Add New Scalebar** is used to add a scale to the layout."
+msgstr "**Tambahkan Skala Bar Baru** untuk menambahkan skala pada layout."
+
+# b6e821083b8d4b41a82bdfb786daee28
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:78
+msgid ""
+"**Add Ellipse/Triangle/Rectangle** is used to add one of these geometric "
+"shapes. For example, this might be used to indicate special areas or "
+"highlight things on the map."
+msgstr ""
+"**Tambahkan Ellips/Segitiga/Persegi Panjang** digunakan untuk menambahkan "
+"salah satu dari bentuk geometrik ini. Contohnya, ini bisa digunakan untuk "
+"mengindikasikan area-area tertentu atau untuk memberikan *highlight* pada "
+"suatu objek pada peta."
+
+# 3c28bf9db7704bd5b6363be734211e33
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:83
+msgid "**Add Arrow** is used to draw an arrow on the map layout."
+msgstr ""
+"**Tambah Panah** digunakan untuk menggambar sebuah panah pada layout peta."
+
+# da51a1fc3a144e48b4074e8b6d571e8f
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:85
+msgid ""
+"**Select / Move Item** allows us to choose and move the elements that are in"
+" the map layout. With this tool selected, you can right-click on an element "
+"to lock its position."
+msgstr ""
+"**Pilih / Pindahkan Item** untuk memilih atau memindahkan elemen yang ada "
+"pada layout peta. Dangan tool ini, Anda dapat melakukan klik kanan pada "
+"sebuah elemen untuk mengunci posisi elemen tersebut."
+
+# afa167bc1b9644aa910e62b58c3debbf
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:92
+msgid "7.2 Adding a New Map"
+msgstr "7.2 Menambahkan Peta Baru"
+
+# 484e3e07bf1b4b8fa219407515f97823
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:94
+msgid ""
+"In the Print Composer window, click on the :guilabel:`Add new map` button."
+msgstr ""
+"Pada jendela Print Komposer, klik pada ikon :guilabel:`Tambahkan peta baru`."
+
+# 51b02311d34948dfaf3fe15a4aa905c5
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:100
+msgid "Next, click and drag your mouse across the canvas, creating a box."
+msgstr ""
+"Berikutnya, klik dan geser mouse pada kanvas untuk membuat sebuah kotak."
+
+# 69e015c6a675442e879aac17ec5a681e
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:100
+msgid "Your map layout should look similar to this when you are done:"
+msgstr ""
+"Layout peta Anda seharusnya terlihat seperti ini ketika Anda sudah selesai:"
+
+# e45fa6832d8543a597224541ce5866f5
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:105
+msgid ""
+"If you are not happy with the placement of your map, you can drag the "
+"corners to change the size, or drag the entire element around the canvas."
+msgstr ""
+"Jika Anda tidak senang dengan penempatan dari peta Anda, Anda dapat "
+"menggeser ujung-ujungnya untuk mengubah ukuran, atau geser seluruh elemen di"
+" sekitar kanvas."
+
+# 9aa1d2840b9144be9d3474216fb7b867
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:107
+msgid ""
+"Once you are happy set the scale of your map by going to the :guilabel:`Item"
+" Properties` tab on the right panel."
+msgstr ""
+"Setelah Anda puas, silahkan atur skala peta Anda dengan pergi ke tab "
+":guilabel:`Properti Item` pada panel sebelah kanan."
+
+# 928cecbd38c84f6da592b12546314e0f
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:112
+msgid ""
+"Edit the Scale and press :kbd:`Enter`. You’ll see that the scale (zoom "
+"level) of the map element changes. A scale of about 200000 should be good "
+"for this project."
+msgstr ""
+"Edit Skala dan tekan :kbd:`Enter`. Anda akan melihat skala (tingkat "
+"perbesaran) dari perubahan elemen peta. Skala sebesar 200000 tampaknya sudah"
+" cukup untuk proyek ini."
+
+# 9326333c93a4400c8df260041b332d9b
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:114
+msgid ""
+"Add a frame clicking the box next to :guilabel:`Frame`. Configure the frame "
+"color and border thickness."
+msgstr ""
+"Tambahkan sebuah bingkai dengan mengklik pada kotak di samping "
+":guilabel:`Frame`. Ubah warna bingkai dan ketebalan garisnya."
+
+# c00613e33772493f86867e7135383316
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:120
+msgid ""
+"When you change the scale some parts of your map may become invisible. Click"
+" on the :guilabel:`Move item content` button and drag the map so that it is "
+"all visible."
+msgstr ""
+"Ketika Anda mengubah skala, beberapa bagian peta Anda akan menghilang. Klik "
+"pada tombol :guilabel:`Pindahkan Konten Item` dan geser peta sehingga "
+"seluruhnya terlihat."
+
+# 4fcae28cb4744d4caa59f8111d1b918f
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:127
+msgid "7.3 Adding a Title"
+msgstr "7.3 Menambahkan Judul"
+
+# 525a895495e94f16aad41c822f802fc7
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:129
+msgid ""
+"Now we’ve got the most important thing added to our map layout - the map! "
+"But let’s add some additional elements to make it more informative."
+msgstr ""
+"Sekarang kita telah memasukkan hal paling penting yang ingin kita tambahkan "
+"pada layout peta kita - peta! Tetapi mari kita tambahkan beberapa elemen "
+"tambahan untuk membuat peta ini lebih informatif. "
+
+# 6a20706666df44489acc887a751de7cf
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:131
+msgid ""
+"Let’s add a title to our map. Click on the :guilabel:`Add new label` button."
+msgstr ""
+"Mari menambahkan  judul pada peta kita. Klik pada tombol "
+":guilabel:`Tambahkan label baru`"
+
+# 1182d1e30851400cabf3a1471033f091
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:136
+msgid ""
+"Adjust the size of the element. We will edit the text and the text "
+"properties in the panel on the right."
+msgstr ""
+"Sesuaikan ukuran dari elemen. Kita akan mengedit teks dan pengaturan teks "
+"terdapat pada panel di sebelah kanan."
+
+# 9484ca60bcc743049c332046b9084424
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:138
+msgid ""
+"Click the :guilabel:`Font` button and change the text size to 18 and make it"
+" bold. Change the aligment to :guilabel:`Center`. Lastly, add the following "
+"text, or create your own:"
+msgstr ""
+"Klik pada tombol :guilabel:`Huruf` dan ubah ukuran huruf menjadi 18 dan buat"
+" menjadi tebal. Ubah penjajaran teks menjadi :guilabel:`Tengah`. Terakhir, "
+"tambahkan teks berikut ini, atau buat teks Anda sendiri:"
+
+# 458e32341d6845959658957afe2734bc
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:147
+msgid "Your map layout should now look similar to this:"
+msgstr "Layout peta Anda akan tampak seperti ini:"
+
+# 7412b6684d204c2295f4dfaf08a99c91
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:154
+msgid "7.4 Adding a Scale Bar"
+msgstr "7.4 Menambahkan Skala Bar"
+
+# 3321ea21cc3c4106a99cdc3ad7bf5c67
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:156
+msgid ""
+"Let’s add a scale bar, so that anyone who looks at our map will have an idea"
+" what size area this map shows."
+msgstr ""
+"Mari menambahkan skala bar agar siapapun yang melihat peta kita dapat "
+"memperkirakan ukuran area yang ditunjukkan pada peta ini."
+
+# 54a8d7a63fe04092b8b77f29f29dd90a
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:158
+msgid "Click on the :guilabel:`Add scale bar` button."
+msgstr "Klik pada tombol :guilabel:`Tambahkan skala bar baru`"
+
+# 83a52e8c878642c4bb19a8b795b1dfab
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:163
+msgid ""
+"Draw the new scalebar element on your map. A good location for it is in the "
+"lower left corner of your map layout."
+msgstr ""
+"Gambarkan elemen skala bar baru pada peta Anda. Lokasi yang tepat untuk "
+"menggambarnya adalah di sebelah pojok kiri dari *layout* peta"
+
+# 929602a70b124c5c99f3dbe7d9ec68ee
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:165
+msgid ""
+"Next we need adjust the scalebar options. Since our project is in a PCS "
+"(Projected Coordinate System), our measurements are in meters. Enter the "
+"following values in the scalebar options:"
+msgstr ""
+"Berikutnya kita perlu menyesuaikan pilihan skala. Karena proyek kita "
+"menggunakan PCS (Projected Coordinate System), maka pengukuran kita dalam "
+"meter. Masukkan nilai berikut ini pada pilihan skala:"
+
+# a077783cf445404f8267e4d288a6a6a4
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:170
+msgid "This should result in a scalebar that looks like this:"
+msgstr "Nantinya akan muncul sebuah skala bar yang tampak seperti ini:"
+
+# 86f9e607d801405eb2abca7aa9f9f37f
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:177
+msgid "7.5 Creating a Grid"
+msgstr "7.5 Menambahkan Grid"
+
+# 7666243e3d1a4b89a320237c612d88b3
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:179
+msgid "Now let’s create a grid for our map."
+msgstr "Sekarang mari kita buat sebuah grid untuk peta Anda."
+
+# 8a9ed878b40944a7957d1297e39d7dfe
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:181
+msgid "Choose the :guilabel:`Select` tool and click on the map."
+msgstr "Pilih pada tool :guilabel:`Pilih/pindahkan item` dan klik pada peta."
+
+# 95ac1f081b6a4678bc4d1975ad6c27cb
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:186
+msgid ""
+"In the panel on the right you should see the word :guilabel:`Grid`. Click on"
+" it."
+msgstr ""
+"Pada panel di sebelah kanan Anda akan melihat :guilabel:`Grid`, kemudian "
+"klik."
+
+# 25a05211580244d3b9929cf810669e03
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:188
+msgid "Click on the box + and enter the following values:"
+msgstr "Klik pada kotak :guilabel:`+` dan masukkan seperti dibawah ini:"
+
+# 92487a0f3b7f4636b8ab6a9c8b5089c6
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:193
+msgid ""
+"We used coordinate reference systems with UTM (metre) on the project QGIS "
+"and all map layers."
+msgstr ""
+"Kita menggunakan sistem koordinat dengan UTM (meter) pada proyek QGIS dan "
+"semua layer peta."
+
+# 843d859d143e465da798b5252330f514
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:195
+msgid ""
+"Scrool down :guilabel:`Item Properties` dialog and Check the box next to "
+":guilabel:`Draw Coordinates` and enter the following values:"
+msgstr ""
+"Gulir ke bawah pada dialog :guilabel:`Propeti Item` dan beri tanda centang "
+"pada :guilabel:`Gambar koordinat` dan masukkan nilai seperti berikut ini:"
+
+# a6b5dfcfff724fbbb401de6ad51f0bc3
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:200
+msgid ""
+"Your map should now have a grid appear over it, which will look something "
+"like this:"
+msgstr ""
+"Peta Anda saat ini seharusnya sudah memiliki grid yang muncul di atasnya, "
+"akan muncul seperti ini:"
+
+# c2005b43ba1e4e4abff58a85557223ea
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:207
+msgid "Tips:"
+msgstr "Tips:"
+
+# 60ba456d2303416986aa7890dd36e95a
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:209
+msgid ""
+"Play around a little bit with coordinate format. You can change decimal "
+"degree as the coordinate fromat or change it into Degree Minute format (DD "
+"MM) or Degree Minute Second (DD MM SS)."
+msgstr ""
+"Coba berlatih dengan format koordinat. Anda dapat mengubah format koordinat "
+"*decimal degree* atau mengubahnya ke dalam format *Degree Minute* (DD MM) "
+"atau *Degree Minute Second* (DD MM SS)."
+
+# 1914d9f8640d4a10835ff0728b253e13
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:211
+msgid ""
+"You can also adjust the coordinate placement. You can place the text inside "
+"or outside the frame, and make the orientation either vertical or "
+"horizontal."
+msgstr ""
+"Anda juga dapat menyesuaikan penempatan koordinat. Anda dapat meletakkan "
+"teksnya di bagian dalam atau luar dari bingkai, dan mengubah orientasi peta "
+"menjadi vertikal atau horizontal."
+
+# 2b4b0fe2628948489c79dd78549f577f
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:213
+msgid ""
+"Change the font type and font size by clicking :guilabel:`Font` in the "
+"panel."
+msgstr ""
+"Ubah tipe huruf dan ukurannya dengan cara klik pada :guilabel:`Huruf` pada "
+"panel."
+
+# cf37cca48ada46b89b4a40a9f962ef5b
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:217
+msgid "7.6 Overview Inset"
+msgstr "7.6 Gambaran Inset"
+
+# 3bca7dee769a4fd8b436cdcd06c8099b
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:219
+msgid ""
+"Next, let’s add an inset that gives viewers of our map a little more "
+"information about what they are looking at."
+msgstr ""
+"Berikutnya, mari kita tambahkan sebuah inset yang dapat memberi pengguna "
+"sedikit informasi mengenai apa yang mereka lihat pada peta."
+
+# d61801b4bca44f6d9691be6312a4378d
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:221
+msgid "Click on the Map and go to :guilabel:`Item` tab."
+msgstr "Klik pada peta dan pergi ke tab :guilabel:`Item`."
+
+# f7db3e2b5aea43e6807365c626c04bf1
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:223
+msgid "Check the box next to Map 0 item to lock the item."
+msgstr "Centang kotak di sebelah :guilabel:`Peta 0` untuk mengunci item."
+
+# da21f94e30af40539990125167eb9492
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:228
+msgid "Minimize the Print Composer and go back into QGIS."
+msgstr "Perkecil jendela :guilabel:`Print Composer` dan kembali ke QGIS."
+
+# f4574482d366448d8654a2f555efacde
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:230
+msgid ""
+"Add the layer :guilabel:`Indonesia.shp`, which is located in "
+"**qgis/peta\\_dunia**. Cllick :guilabel:`Zoom Full`."
+msgstr ""
+"Tambahkan layer  :file:`Indonesia.shp`, yang terletak pada folder "
+":file:`../qgis/peta_dunia`. Klik :guilabel:`Zoom Full`. "
+
+# f8f8e673865e4585a6f3910d241b3402
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:235
+msgid "The new layer will load."
+msgstr "Anda akan melihat sebuah layer baru akan dimasukkan."
+
+# 37945b97f2d5427ea19b8e3d7bf8c2e4
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:240
+msgid ""
+"Return to the Map Composer and create a new map with the :guilabel:`Add new "
+"map` button."
+msgstr ""
+"Kembali ke Map Composer dan buat sebuah peta baru dengan tombol "
+":guilabel:`Tambahkan Peta Baru`."
+
+# 83f351a9d3fa4984a049b2f5e6aaed80
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:245
+msgid "Draw a small box on the right side of your map layout."
+msgstr "Gambar sebuah kotak kecil pada sisi kanan dari layout peta Anda."
+
+# 8dce154271134018a1f2b82ab86eb740
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:247
+msgid ""
+"7. The current view of your QGIS project will appear in the new map element "
+"(but notice that the old map element doesn’t change. It’s because we locked "
+"the Map 0 in :guilabel:`Item` tab). Add a frame for the inset, so it will "
+"look like this:"
+msgstr ""
+"7. Tampilan saat ini dari proyek QGIS akan muncul pada elemen peta yang baru"
+" (namun perhatikan elemen yang lama tidak berubah.  Hal ini karena kita "
+"telah mengunci Peta 0 tab :guilabel:`Item`). Tambahkan sebuah bingkai untuk "
+"inset, sehingga akan terlihat seperti ini:"
+
+# 3dc9d94756eb4ee3bc6c083982675a90
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:255
+msgid "7.7 Adding a Legend"
+msgstr "7.7 Menambahkan Legenda"
+
+# d1b290efbfef4a34b6ce442fc54bdb3e
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:257
+msgid ""
+"Now let’s add a legend so that viewers of our map will know what our "
+"symbology represents."
+msgstr ""
+"Sekarang mari kita tambahkan sebuah legenda sehingga pembaca peta Anda akan "
+"mengetahui apa saja yang diwakili oleh simbol-simbol tersebut."
+
+# cc5f25502c5e408ca5ae7c131a305eae
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:259
+msgid "Click on the :guilabel:`Add legend` button."
+msgstr "Klik pada tombol :guilabel:`Tambahkan legenda baru`."
+
+# cff1894ef4744b3d88ddca41e09f3143
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:264
+msgid ""
+"Draw a box in the remaining empty space on your map layout. You will see a "
+"legend with symbologies shown in a list."
+msgstr ""
+"Gambarkan sebuah kotak pada tempat kosong yang tersisa pada layout peta "
+"Anda. Anda akan melihat sebuah legenda dengan simbologinya yang ditampilkan "
+"pada sebuah daftar."
+
+# 551706eaa6d648faa982d3efe1564415
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:266
+msgid ""
+"3. In the panel on the right, click on :guilabel:`Legend items`. Uncheck "
+":guilabel:`Auto update` and use the edit button to change the names on the "
+"legend. Use the :kbd:`+` and :kbd:`-` buttons to add or remove items from "
+"the legend. Choose which elements are important to include."
+msgstr ""
+"3. Pada panel di sebelah kanan, klik pada :guilabel:`Item Legenda`. "
+"Hilangkan :guilabel:`Perbarui otomatis` dan menggunakan tombol edit untuk "
+"mengubah nama pada legenda. Gunakan tombol :kbd:`+` dan :kbd:`-` untuk "
+"menambahkan atau menghapus item dari legenda. Pilih elemen penting untuk "
+"dimasukkan."
+
+# 6de1cbdcd32d4234be9f8b35f19f04ab
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:272
+msgid "Our legend look like this:"
+msgstr "Legenda yang kita buat akan tampil seperti ini:"
+
+# 8c0fdd3071e6414c95d99643f8d164bb
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:277
+msgid "When you are finished, your map layout should look similiar to this:"
+msgstr "Ketika Anda sudah selesai, layout peta Anda akan tampak seperti ini:"
+
+# 786449b5debe4dff99c4e06cd0a53e1a
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:283
+msgid ""
+"For save your map composer that you created, you can click on the "
+":menuselection:`Composer > Save Project`.So if you open the project QGIS and"
+" you want use map composer that you saved, click on :menuselection:`Project "
+"> Print Composer > My Layout 1`"
+msgstr ""
+"Untuk menyimpan *map composer* yang telah dibuat, Anda dapat klik pada "
+":menuselection:`Composer > Simpan Proyek`. Jika Anda buka proyek QGIS dan "
+"Anda ingin menggunakan *map composer* yang Anda simpan, klik pada  "
+":menuselection:`Project > Print Composer > Layout Saya 1`."
+
+# fa9fc47a60684c7d8303d404fbe61de9
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:287
+msgid "7.8 Printing the Map"
+msgstr "7.8 Mencetak Peta"
+
+# 9b2a1d2832b745e3b9eb8e0305f11cdc
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:289
+msgid ""
+"Lastly, you can print your map. Simply click the :guilabel:`Print` button "
+"and follow the dialog."
+msgstr ""
+"Yang terakhir, kita dapat mencetak peta tersebut. Klik pada tombol "
+":guilabel:`Cetak` dan ikuti instruksi selanjutnya."
+
+# a1b9761f097d44b487fbe35755f6e244
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:294
+msgid "You may also save the map as PNG image."
+msgstr "Anda juga dapat menyimpan petanya sebagai gambar PNG."
+
+# a9b989656f1b460c877c3bf4af6fd453
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:299
+msgid ""
+"Additionally you can save the map as a PDF, which you can easily send over "
+"email or print later when you have a chance."
+msgstr ""
+"Sebagai tambahan Anda dapat menyimpan peta yang Anda buat dalam format PDF, "
+"yang nantinya dapat dengan mudah Anda kirim melalui email atau ingin Anda "
+"cetak di kemudian hari."
+
+# 2a044c29557a4e829d2a721ec227fc8f
+#: ../../source/training/qgis/Chapter-07-Using_Map_Composer.rst:304
+msgid ":ref:`Go to next chapter --> <ch8-using-inasafe>`"
+msgstr ":ref:`Pergi ke modul selanjutnya --> <ch8-using-inasafe>`"

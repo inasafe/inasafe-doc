@@ -1,0 +1,361 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013, InaSAFE project
+# This file is distributed under the same license as the InaSAFE Documentation Project package.
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: staging.docs.inasafe.org\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-01-04 11:56+0700\n"
+"PO-Revision-Date: 2016-03-01 10:01+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French (http://www.transifex.com/inasafe/inasafe-develop/language/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# dd25d1d07c3e4ad48d6e3a49f9d29d3e
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:10
+msgid "Chapter 8: Conflict Resolution in OSM"
+msgstr ""
+
+# 9e96445897404088bc35f7b5b0057f3c
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:12
+msgid "**Learning Objectives**"
+msgstr "**Objectifs d'apprentissage**"
+
+# 6fcc1cfb2eb748a792a55885e854cf2f
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:14
+msgid "Finding and resolving conflicts in JOSM"
+msgstr ""
+
+# 3124514c06e7445288e53a3dd7a9a15a
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:16
+msgid "Learning ways to avoid conflicts (using tasking manager)"
+msgstr ""
+
+# 4187456375424e9e95dc2a6ee7dcdced
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:19
+msgid "8.1 Conflict in JOSM"
+msgstr ""
+
+# e9303292e7694a688ffbb42458bf212f
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:21
+msgid ""
+"When we are working with JOSM and about to upload the changes, sometimes we "
+"encounter this message:"
+msgstr ""
+
+# bb03c01bc03242be95a9ce88649b48ec
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:26
+msgid ""
+"This happens when you download a group of data that includes a particular "
+"point, let’s say point A. At the same time there are other people who also "
+"downloaded point A, making changes to it and upload it back to OSM. Now when"
+" you try to upload your changes (including point A) with your version, the "
+"version is already different from the server version. This causes the server"
+" to be confused on which version of Point A that is correct."
+msgstr ""
+
+# cb161e2a67724db6941771120e310935
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:32
+msgid "8.1.1 Resolving a Conflict"
+msgstr ""
+
+# e9ae38a24fa2440b8ac8c1e01fea3221
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:34
+msgid ""
+"The process of resolving conflicts in JOSM is pretty simple, even though it "
+"might be confusing at first. Basically, all conflicts that occur in JOSM "
+"will leave you with two options – Your Version of the object and Their "
+"Version of the object that is on the server. You just need to choose which "
+"version you want to use, -your version or the new version in the server."
+msgstr ""
+
+# 6355b5b92e7b4e8eafb63855c3ec49d5
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:39
+msgid ""
+"When a conflict window appears, you might want to choose the “Syncronize "
+"node ... only”, but this will only resolve the conflict that occurs on the "
+"particular node. That is why it is better to choose the "
+":guilabel:`Synchronize Entire Dataset` option so that you can resolve the "
+"conflicts all together."
+msgstr ""
+
+# 43fa156845e64bcb896273edf8a91432
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:46
+msgid ""
+"When you click on that button, there will be a new window that includes all "
+"of the conflict details. The conflict messages might seems complicated, but "
+"actually they are quite simple. You will know the type of conflict you "
+"encounter by indicating where the symbol"
+msgstr ""
+
+# 738690d7c80e47da98754c461ce78128
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:53
+msgid ""
+"located. Conflict in this example indicating that it is on the properties, "
+"such as location or the object’s position. You can see that the coordinate "
+"and state are deleted."
+msgstr ""
+
+# 04e0404a1b0947dba0aa1f142fae052d
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:56
+msgid "**Types of Conflict:**"
+msgstr ""
+
+# 3d6f33ae9f07495992268fd31daf67ae
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:58
+msgid "**Properties:**  Object has been moved (coordinate) or deleted"
+msgstr ""
+
+# 43c262e27eb140bebf8191a685307b22
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:60
+msgid "**Tag**:  Object has different tags on both version"
+msgstr ""
+
+# 392909b703f849439e1a732c7aca8704
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:62
+msgid "**Node**:  There are differences on the node list"
+msgstr ""
+
+# e36d439d7f0e4bc5ab5291aee72f9a48
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:64
+msgid "**Members**: There are differences regarding the members of a relation"
+msgstr ""
+
+# e2c0927f827d426ca810e2a010c621cf
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:69
+msgid ""
+"Conflict just shows up on two different edits at the same time. If there are"
+" three or more different edits happen at the same time, chain of conflicts "
+"will occurs. You can only solve two conflicts at the same time. You can "
+"choose Your Version, Their Version, or merge the two changes."
+msgstr ""
+
+# fc3cb8c6e3f3403f9d5204d46bd7a3eb
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:73
+msgid ""
+"In this example, you don’t have option to merge the changes. Click on the "
+":guilabel:`My Version` column if you are sure that your version is the right"
+" one. Click on :guilabel:`Their Version` if you think that other mapper’s "
+"edit should be retained."
+msgstr ""
+
+# cb7140beca92405b85168a373aba10d7
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:80
+msgid ""
+"After you choose which version is best, click on the :guilabel:`Apply "
+"Resolution` as shown in the figure above. After you finished resolving all "
+"the  conflicts, you can start to upload your changes."
+msgstr ""
+
+# 760f562b14bc4ae4b7bde2727fced4dc
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:83
+msgid ""
+"Do some more editing. Then click :guilabel:`Upload`. You will get a pop-up "
+"like the one below that says:"
+msgstr ""
+
+# 8fb0b1832a604c1189db3b8112a5b884
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:88
+msgid "On your Windows menu you have a **Conflict List Dialog**"
+msgstr ""
+
+# b1ba6c6d2b694f01a66255a31901eb44
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:93
+msgid ""
+"This window displays a list of conflicts. The total number of unresolved "
+"conflicts is shown in the header. You can select or resolve a conflict by "
+"clicking on it. This is useful when you have many conflicts to deal with."
+msgstr ""
+
+# 6cb7fb3bfe7441de8bc53935bc7e0826
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:99
+msgid ""
+"You cannot upload your changes until this list is empty and all conflicts "
+"have been resolved."
+msgstr ""
+
+# ad21a6f1124f455ab0db274541051baa
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:103
+msgid "8.1.2 Tips to Avoid Conflict"
+msgstr ""
+
+# 72883ddea8e94b928a78b35d1ae19b3e
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:105
+msgid "**Upload frequently**"
+msgstr ""
+
+# cfa8454fb18b419385e21481c0441f1a
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:107
+msgid ""
+"To minimise the chance and number of conflicts it is important to upload "
+"your edits regularly. Conflicts appear more frequently for those who tend to"
+" save the area they are working on in their local computer, but wait a while"
+" to upload their changes. It is best to download the area you are working "
+"on, edit it and then immediately upload it. The longer the time between "
+"downloading data and uploading changes to that data, the more likely it is "
+"that someone has edited something in the meantime."
+msgstr ""
+
+# bae130aa169b49df90d78bfa994f578d
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:113
+msgid "**ONLY edit in the area you download**"
+msgstr ""
+
+# 358ae60a0aa7442083093d781745474a
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:115
+msgid ""
+"Editing in the specific area you have downloaded minimises the risk of "
+"conflict. Make sure you do not edit outside of the area that you have "
+"downloaded. You can easily see the areas outside your download area in JOSM,"
+" because the background is made up of diagonal lines instead of being solid "
+"black."
+msgstr ""
+
+# f5e3f3e4c5e14e9c901e43b098580353
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:123
+msgid "**Using the tasking manager**"
+msgstr ""
+
+# a8b36fc9f1cd415992a540c6c5d2abae
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:125
+msgid ""
+"The OSM Tasking Manager is a **tool** that mappers can use to **sort an area"
+" into a grid**, and work together **to map in an organised way**. Apart from"
+" being more organised, the tasking manager is also one way to avoid editing "
+"conflicts, because it helps prevent more than one person from editing the "
+"same area at the same time."
+msgstr ""
+
+# aa67252f78da4c449bbf24b6ea1b01bc
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:130
+msgid ""
+"The way the tasking manager operates is every mapper on a project selects "
+"one box from a grid overlaid on the mapping project area. This box "
+"represents a subsection of the mapping project area. When a mapper finishes "
+"mapping all features in their box, they can mark it as complete. This way, a"
+" team distributed in different areas can coordinate and work together to "
+"finish mapping in that grid."
+msgstr ""
+
+# 238509650217406d91c625a8c16b77ce
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:135
+msgid "To see how tasking manager works, let’s practice a bit more."
+msgstr ""
+
+# 0399dac975d54b5fbde0e99844c47ff0
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:137
+msgid ""
+"Open your internet browser and go to `tasks.hotosm.org "
+"<http://tasks.hotosm.org>`_. You will see a page like this:"
+msgstr ""
+
+# 46652397d4de4ee394aa43b37ba21b61
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:143
+msgid "Click :guilabel:`Log in to OpenStreetMap`"
+msgstr ""
+
+# 04caa58375bb48669034ea9ac1042cd1
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:148
+msgid ""
+"Here you must agree to allow this application some access to your OSM "
+"account. To do so, click :guilabel:`Save Changes`."
+msgstr ""
+
+# 2ab52c0649d9447faf78839828ff2e1a
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:153
+msgid ""
+"Now you will see a list of projects that currently active from many country "
+"where they doing coordination for mapping activities."
+msgstr ""
+
+# ecb035d3a7ae4281a54d475edd4767d2
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:158
+msgid ""
+"Click on a project to see further information related to the task as shown "
+"in the figure below."
+msgstr ""
+
+# 1499bf14033f4ce6be203481e6e28f8e
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:163
+msgid ""
+"This page shows you everything you need to know about the project. On the "
+"left side of the page is a description of the mapping project and how it is "
+"being organised. You can click on the different tabs to get more "
+"information. On the right side is a grid showing the area to be mapped. Red "
+"grid squares have been completed, green squares have been completed and "
+"checked by another person, and the remaining squares still need to be mapped"
+" or are being worked on."
+msgstr ""
+
+# 42fdc06a32704b249298f513592757a7
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:169
+msgid "In the right side show an area that currently being map."
+msgstr ""
+
+# 9d64d9cfe15048e4b512e55b80a3277b
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:171
+msgid "**Orange** box represent an area that already mapped"
+msgstr ""
+
+# 7d53410fdfb1478db4222948962e2449
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:173
+msgid ""
+"**Green** box represent an area that already mapped and validated by other "
+"people"
+msgstr ""
+
+# 56fbf81acbee447f919c69e9ba299d21
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:175
+msgid ""
+"**Orange outline** box represent there is someone who currently map in that "
+"area"
+msgstr ""
+
+# 6c548dcde36a43cf8c2c2ee9f8e43469
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:177
+msgid "**Grey/empty** box represent the task is unfinished."
+msgstr ""
+
+# 589a4e8127e4418aa850b3e35364ebb6
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:179
+msgid ""
+"You can click on tab :guilabel:`Contribute`, with click on :guilabel:`Take a"
+" task at random` if you want to pick task randomly or you can select a task "
+"manually in slippy map and then click :guilabel:`Start Mapping`"
+msgstr ""
+
+# c31ae046edc24d44995909e717bb2b8d
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:182
+msgid ""
+"After that select :guilabel:`Edit with JOSM` (You need to open JOSM and "
+"enable remote control first)"
+msgstr ""
+
+# c90ea267797045c589ca96720be2d7b1
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:187
+msgid ""
+"You can also open another editing software such as iD Editor, Potlach 2 and "
+"Field Papers"
+msgstr ""
+
+# 40c40f214f9f4fc8ab321e915f3a1e7f
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:189
+msgid ""
+"After you finish editing and upload the data into OSM server, you need to go"
+" back to the tasking manager and click :guilabel:`Mark task as done` making "
+"sure to add a changeset comment for the edits you created. It’s important to"
+" let other mappers know that you have finished the grid square. If you "
+"cannot finish the task, click :guilabel:`Unlock it` so another mapper can "
+"finish your task."
+msgstr ""
+
+# cb83e955478940b698b17bf505de7de6
+#: ../../source/training/osm/Chapter-08-conflict-resolution-in-osm.rst:194
+msgid ":ref:`Go to next chapter --> <ch9-inserting-special-tag-in-osm>`"
+msgstr ""

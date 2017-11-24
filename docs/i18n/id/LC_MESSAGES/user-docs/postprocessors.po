@@ -1,52 +1,46 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
-#
-# Translators:
-# Emir Hartato <emir.hartato@gmail.com>, 2013
-# Emir Hartato <emir.hartato@gmail.com>, 2014
-# harry mahardhika <harry.mahardhika17@gmail.com>, 2013
-# Ismail Sunni, 2013
-# Yantisa Akhadi <yantisa@gmail.com>, 2013
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: inasafe-develop\n"
+"Project-Id-Version: InaSAFE Documentation Project 3.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-22 12:27\n"
-"PO-Revision-Date: 2014-03-11 06:00+0000\n"
-"Last-Translator: Emir Hartato <emir.hartato@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/projects/p/inasafe-"
-"develop/language/id/)\n"
-"Language: id\n"
+"POT-Creation-Date: 2016-07-22 06:59-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: adityo dwijananto <adz.only@gmail.com>, 2016\n"
+"Language-Team: Indonesian (https://www.transifex.com/inasafe/teams/57762/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-# dc7285bb7ecf4121a447c0ef43a5e9c2
+# 7b955338ab034f879ae130595ba46e02
 #: ../../source/user-docs/postprocessors.rst:8
 msgid "Post-processors"
 msgstr "*Post-prosesor*"
 
-# e6cc566fb79c46a39bfa4da91d71d91e
+# d2a2b7aade524bca8a54631c033c1de7
 #: ../../source/user-docs/postprocessors.rst:10
 msgid ""
 "This document explains the purpose of post-processors and lists the "
-"different available post-processors and the requirements each has to be used "
-"effectively."
+"different available post-processors and the requirements each has to be used"
+" effectively."
 msgstr ""
-"Dokumen ini menjelaskan tujuan dari pasca-prosesor dan daftar pasca-prosesor "
-"berbeda yang tersedia dan kebutuhan yang diperlukan untuk digunakan dengan "
+"Dokumen ini menjelaskan tujuan dari pasca-prosesor dan daftar pasca-prosesor"
+" berbeda yang tersedia dan kebutuhan yang diperlukan untuk digunakan dengan "
 "efektif."
 
-# 4fe50703d02f45daadf93ca3a6de5c38
+# fbf420619f894c2faf65cb77a29e327e
 #: ../../source/user-docs/postprocessors.rst:15
 msgid "What is a post-processor?"
 msgstr "Apa itu *post-prosesor* ?"
 
-# 4d2e53b7779849d9a4648d1a567de921
+# 3b7276bb0f3b4ec092c97733be4ae532
 #: ../../source/user-docs/postprocessors.rst:17
-#, fuzzy
 msgid ""
 "A post-processor is a function that takes the results from the impact "
 "function and calculates derivative indicators. For example, if you have an "
@@ -54,89 +48,83 @@ msgid ""
 "gender specific indicators such as additional nutritional requirements for "
 "pregnant women."
 msgstr ""
-"*Postprocessor* merupakan sebuah fungsi yang akan mengambil hasil dari "
-"fungsi dampak dan mengkalkulasikan indikator turunan, sebagai contoh jika "
-"anda mempunyai jumlah populasi terdampak, post-processor **Gender** akan "
-"memperhitungkan indikator sebagai informasi nutrisi tambahan yang dibutuhkan "
-"untuk ibu hamil."
+"Pasca pemrosesan merupakan sebuah fungsi yang akan mengambil hasil dari "
+"fungsi dampak dan mengkalkulasi indikator turunan. Sebagai contoh jika Anda "
+"mempunyai jumlah populasi terdampak, pasca pemrosesan **Gender** akan "
+"menghitung indikator yang terkait dengan jenis kelamin secara lebih khusus "
+"misalnya tambahan nutrisi yang dibutuhkan untuk ibu hamil."
 
-# 8212b1e5d1494b56a10fffa0d13eacbb
+# aeda981dad5548c6b83808187d1d8966
 #: ../../source/user-docs/postprocessors.rst:23
 msgid "Selecting a post-processor"
 msgstr "Memilih *post-prosesor*"
 
-# 6d3a08a1b2cc470f8b4d0f2345da1f7b
+# 9eff1975461d47458a533aa0dc7d9f07
 #: ../../source/user-docs/postprocessors.rst:25
-#, fuzzy
 msgid ""
 "Post-processors and their settings can be edited in the user configurable "
 "function parameters dialog. See :ref:`analysis_parameters` for more "
 "information."
 msgstr ""
-"Post-processors dan pengaturannya dapat diedit di dialog parameter fungsi "
-"yang dapat dikonfigurasi oleh pengguna. Lihat :ref:`analysis_parameters` "
-"untuk menemukan tombol yang benar."
+"Pasca pemrosesan dan pengaturannya dapat diedit pada kotak dialog parameter "
+"fungsi yang dapat dikonfigurasi oleh pengguna. Lihat "
+":ref:`analysis_parameters` untuk memperoleh informasi lebih lengkap."
 
-# 04bccd09454f4869990de0ec041f5d14
+# 61559a848fe3465f932bdad2dd4f595d
 #: ../../source/user-docs/postprocessors.rst:29
-#, fuzzy
 msgid ""
 "To disable a post-processor simply go to the :guilabel:`Postprocessors` tab "
 "and enable or disable any post-processor you like by clicking on the "
 "checkbox next to it. You can even set the post-processing values you like "
 "here by entering the values in the fields."
 msgstr ""
-"Untuk menon-aktifkan post-processor silahkan ke tab :guilabel:"
-"`Postprocessors` dan anda dapat mengaktifkan atau menon-aktifkan post-"
-"proccessor manapun yang anda inginkan dengan mencentang kotak di sampingnya. "
-"Anda bahkan dapat  menetapkan nilai postprocessing yang anda inginkan dengan "
-"memasukkan nilai yang  pada baris yang ada."
+"Untuk menonaktifkan pasca pemrosesan, pergi ke tab "
+":guilabel:`Postprocessors` dan aktifkan atau menonaktifkan pasca pemrosesan "
+"manapun yang Anda inginkan dengan mencentang kotak di sampingnya. Anda "
+"bahkan dapat  menetapkan nilai pasca pemrosesan yang Anda inginkan dengan "
+"memasukkan nilai pada kotak isian yang ada."
 
-# 7bb08ab043b042d889f9a1d5d26ad22d
+# c38fa5d87b5e4a86acfc68bd6f7a266f
 #: ../../source/user-docs/postprocessors.rst:34
-#, fuzzy
 msgid ""
 "If you don't see a post-processors field, it means that the impact function "
 "you are trying to use does not support any post-processor."
 msgstr ""
-" Pengaturan tersebut juga berlaku untuk pengaturan apapun yang mungkin akan "
-"anda temukan. Jika anda tidak melihat sebuah baris post-processor, itu "
-"berarti fungsi dampak yang anda ingin gunakan tidak mendukung post-processor "
-"apapun."
+"Jika Anda tidak melihat *field* pasca pemrosesan, berarti fungsi dampak yang"
+" ingin Anda gunakan tidak mendukung pasca pemrosesan apapun."
 
-# 0afb85d72e7a4171b551e4362e0dde9e
+# 89453b8483b94bba921f4960e3f7316d
 #: ../../source/user-docs/postprocessors.rst:42
-#, fuzzy
 msgid "*Post-processor configuration*"
-msgstr "Konfigurasi post-processor"
+msgstr "*Konfigurasi pasca pemrosesan*"
 
-# beda8138ce1a4d9bb52ca973900c3096
+# c35ae45a7f90409cb4e9f59181945cd6
 #: ../../source/user-docs/postprocessors.rst:44
-#, fuzzy
 msgid ""
 "Each activated post-processor will create an additional report in the dock "
 "and in the printout. If problems arise while post-processing, the system "
 "will inform you and will skip post-processing."
 msgstr ""
-"Setiap post-processor yang aktif akan membuat sebuah laporan tambahan pada "
-"dek dan pada hasil cetak. Jika terjadi suatu masalah pada saat post "
-"processing, sistem akan memberi tahu anda dan akan melewati post-processing."
+"Setiap pasca pemrosesan yang aktif akan membuat sebuah laporan tambahan pada"
+" dek dan pada hasil cetak. Jika terjadi suatu masalah pada saat melakukan "
+"pasca pemrosesan, sistem akan memberi tahu Anda dan akan melewati pasca "
+"pemrosesan."
 
-# ba1ef45ec493413091ed227995f628e0
+# af5fbf8d42d24e38b7c70229de485c63
 #: ../../source/user-docs/postprocessors.rst:49
 msgid "Creating post-processors"
 msgstr "Membuat *post-prosesor*"
 
-# fe9628ed62bf4c0599bd4da8b6fb58f9
+# afb90181963d4d409f7039b1e8a982d0
 #: ../../source/user-docs/postprocessors.rst:51
 msgid ""
-"If you feel there is an important post-processor which is missing, there are "
-"two avenues you can follow:"
+"If you feel there is an important post-processor which is missing, there are"
+" two avenues you can follow:"
 msgstr ""
 "Jika anda merasa terdapat suatu post-processor penting yang tidak ada, "
 "terdapat dua langkah yang anda dapat ikuti:"
 
-# 6e4e48e2ead7446abe7e43acd7411e77
+# fbbd0a06bff942e7a5bf46ae9e553fd6
 #: ../../source/user-docs/postprocessors.rst:54
 msgid ""
 "You can develop it yourself or with the aid of a programmer who has a good "
@@ -145,13 +133,13 @@ msgstr ""
 "Anda dapat mengembagkannya sendiri atau dengan bantuan seorang programmer "
 "yang memiliki pemahaman baik mengenai bahasa program python"
 
-# 6dd7a8ad17594c59a379d2e369e5828a
+# 251e8e3b9280479a9c4185256d85f594
 #: ../../source/user-docs/postprocessors.rst:56
 msgid ""
-"You can file a ticket on our `issue tracking system <https://github.com/"
-"AIFDR/inasafe/issues>`_, and if time and resources allow we will implement "
-"it for you."
+"You can file a ticket on our `issue tracking system "
+"<https://github.com/AIFDR/inasafe/issues>`_, and if time and resources allow"
+" we will implement it for you."
 msgstr ""
-"Anda dapat melaporkan sebuah tiket pada `sistem pengecekan masalah <https://"
-"github.com/AIFDR/inasafe/issues>`_, dan jika terdapat waktu dan sumber daya, "
-"kami akan mengimplementasikannya untuk anda."
+"Anda dapat melaporkan sebuah tiket pada `sistem pengecekan masalah "
+"<https://github.com/AIFDR/inasafe/issues>`_, dan jika terdapat waktu dan "
+"sumber daya, kami akan mengimplementasikannya untuk anda."
