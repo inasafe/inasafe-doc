@@ -20,6 +20,7 @@ html:
    - .:/inasafe-doc/
   working_dir: /inasafe-doc
   entrypoint: ./scripts/post_translate.sh
+  restart: unless-stopped
   tty: true
 
 # build pdf AND html
