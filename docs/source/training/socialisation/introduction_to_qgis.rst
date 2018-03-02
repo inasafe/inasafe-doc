@@ -54,7 +54,7 @@ Data for this exercise:
 -----------------------
 
 The data for this exercise is available in Introduction to QGIS.zip which can be downloaded
-in `InaSAFE Training Data Packages <http://data.inasafe.org/TrainingDataPackages/>`__.
+in `InaSAFE Training Data Packages <http://data.inasafe.org/Socialisation%20Training/>`__.
 To download QGIS, go to the `QGIS Website <http://qgis.org/en/site/>`__
 (we will explain how to download and install QGIS later in this exercise).
 We will use the following QGIS project and data:
@@ -85,9 +85,9 @@ You can download QGIS software by accessing the main QGIS website:
 
 -  Click :guilabel:`Download Now`.
 
--  If you are using Windows, there are 2 versions of QGIS (version 2.14 and version 2.18).
-   Choose :kbd:`Latest release (eg. for new users)` and click 
-   :guilabel:`QGIS Standalone Installer Version 2.14 (32 bit or 64 bit depend your computer operating system)`.
+-  If you are using Windows, there are 2 versions of QGIS (version 2.18 and version 3.0).
+   Choose :kbd:`Long term release repository (most stable)` and click 
+   :guilabel:`QGIS Standalone Installer Version 2.18 (32 bit or 64 bit depend your computer operating system)`.
    Your exact version number may be different.
 
 .. image:: /static/training/socialisation/Intro_QGIS_02.*
@@ -282,7 +282,7 @@ Sometimes if you handle many layers, you need to hide/unhide layers
 to make the map canvas more organized. For example,
 open the pre-saved QGIS project, :file:`DKI_Jakarta_Introduction.qgs`.
 Once all the data are displayed on your map canvas, try toggling the layer,
-**a flood similar to the 2007 Jakarta Event** by clicking on the checkbox
+**Flood continous raster (2007)** by clicking on the checkbox
 in the Layers Panel on the left side of your screen.
 
 .. image:: /static/training/socialisation/Intro_QGIS_27.*
@@ -321,7 +321,7 @@ What do you see after you move the **Jakarta_roads_WGS84** layer?
 You can see the road network now because the **Jakarta_roads_WGS84** layer is
 shown above the other layers.
 
-8. Symbolize layer
+8. Symbolise layer
 ..................
 
 The symbology of a layer is its visual appearance on the map.
@@ -332,11 +332,11 @@ For example in the project that you currently have open, :file:`DKI_Jakarta_Intr
 you will see the **A Flood in Jakarta like 2013** layer covering the area of DKI Jakarta.
 Did the flood really cover the whole of DKI Jakarta?
 
-To answer this, let’s turn OFF the **Jakarta_roads_WGS84** and **A Flood Similar to the Jakarta 2007 event**
+To answer this, let’s turn OFF the **Jakarta_roads_WGS84** and **Flood continous raster (2007)**
 layers and open the attribute table of **A Flood in Jakarta like 2013** by right clicking the layer and
 selecting :guilabel:`Open Attribute Table`. You will see there are 6 columns
-in this table and one of the columns has the name ‘affected’ with values of 1 and 0.
-A value of 1 represents an area that is flooded, while a value of 0 represents
+in this table and one of the columns has the name ‘FLOODPRONE’ with values of Yes and No.
+A value of Yes represents an area that is flooded, while a value of No represents
 an area that has not been flooded. Let’s select a feature in this layer and see
 the highlighted feature in the attribute table.
 
@@ -345,9 +345,9 @@ the highlighted feature in the attribute table.
 
 What is the value of the selected feature in the attribute table?
 
-Not all of the features in this dataset have a value of 1 (or flooded).
-You need to see which features have a value of 1 to make it easier to interpret the hazard area.
-To solve this problem, we will symbolize the data so it will only shows the flooded area.
+Not all of the features in this dataset have a value of Yes (or flooded).
+You need to see which features have a value of Yes to make it easier to interpret the hazard area.
+To solve this problem, we will symbolise the data so it will only shows the flooded area.
 
 1. Right click on the **A flood in Jakarta like 2013** layer and select :guilabel:`Properties`.
 
@@ -355,15 +355,15 @@ To solve this problem, we will symbolize the data so it will only shows the floo
 
 3. Select :guilabel:`affected` in Column as the column that we will use to categorize the data.
 
-4. Click :guilabel:`classify` and turn off the values that have a value of 0 or no value.
+4. Click :guilabel:`classify` and turn off the values that have a value of No or no value.
 
 5. Click OK
 
 .. image:: /static/training/socialisation/Intro_QGIS_31.*
 
-After you click :guilabel:`OK`, only features that have a value of 1
+After you click :guilabel:`OK`, only features that have a value of Yes
 (flooded) will be displayed on the map canvas, the other values won’t be shown
-on the map canvas because you turned OFF the symbol that represents a value of 0.
+on the map canvas because you turned OFF the symbol that represents a value of No.
 Symbology helps us better understand the data that we will work on.
 
 9. InaSAFE installation and set up
@@ -420,6 +420,8 @@ toolbar, you can right-click on the top toolbar and check InaSAFE.
 +--------------------------------------------------------------+----------------------------------+
 | .. image:: /static/training/socialisation/Intro_QGIS_42.*    | Add OpenStreetMap Tile Layer     |
 +--------------------------------------------------------------+----------------------------------+
+| .. image:: /static/training/socialisation/Intro_QGIS_43.*    | InaSAFE Help                     |
++--------------------------------------------------------------+----------------------------------+
 
 Later we will explore and use these tools in **Run Basic InaSAFE** and **Intermediate Modules**.
 
@@ -429,9 +431,9 @@ Summary
 In this exercise you have learned about QGIS, the free and
 open source software for processing spatial data.
 You have learned where to get QGIS, how to install QGIS,
-understand the QGIS layout and looked at some useful toolbars,
+understood the QGIS layout and looked at some useful toolbars,
 learning how to turn ON/OFF QGIS layers,
-and learned how to symbolize the data layers.
+and learned how to symbolise the data layers.
 
 We also learned how to install InaSAFE through the QGIS plugin manager.
 Later on we will learn how to operate InaSAFE with DKI Jakarta flood scenario.
