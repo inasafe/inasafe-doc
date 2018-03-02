@@ -8,12 +8,11 @@ analysis with
 QGIS and InaSAFE.
 
 
-1. *What are the important things that need to prepared before running InaSAFE?*
+1. *What are the important things that need to be prepared before running InaSAFE?*
 
    - To run InaSAFE you need one hazard dataset and one exposure dataset.
    - The data must have keywords defined (current version) and it must be turned on.
    - There must be an overlap between the hazard and exposure layers.
-   - `See more in InaSAFE concepts .. <http://inasafe.org/en/training/socialisation/inasafe_concepts.html>`__
 
 
 2. *Why are there is no active layers available in the InaSAFE dock?*
@@ -26,7 +25,7 @@ QGIS and InaSAFE.
 3. *The data has keywords defined, but it is not showing up in the dock as an option for InaSAFE analysis?*
 
    - Check the keyword version is the same with the InaSAFE version.
-   - Use the keywords wizard to and update your keywords if necessary.
+   - Use the keywords wizard tools and update your keywords if necessary.
    - Check that the layer appears in the map and is turned on.
 
 
@@ -44,7 +43,7 @@ QGIS and InaSAFE.
 
 6. *Why are there no options for population in the keyword for my vector population data?*
 
-   - Make sure that your population data in in raster format
+   - Make sure that your population data in raster format
    - The current version of InaSAFE only supports raster population data.
    - `See more in InaSAFE concepts .. <http://inasafe.org/en/training/socialisation/inasafe_concepts.html>`__
 

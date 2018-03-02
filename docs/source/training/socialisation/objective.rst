@@ -40,14 +40,14 @@ skills related to using |project_name|:
 
 * Analysis – Run Other Hazards
     * Be able to run InaSAFE with other hazards, such as  Earthquake, Tsunami and Volcano
-    * Be able to read metadata and assign keywords to hazard data;
-    * Be able to use the |project_name| dock and the |project_name| Impact Function Centric Wizard; and
-    * Be able to use the Generic Impact Function and understand how to use it to work with their own data.
+    * Be able to read metadata and assign keywords to hazard data
+    * Be able to use the |project_name| dock and the |project_name| Impact Function Centric Wizard
+    * Be able to use the Generic Impact Function and understand how to use it to work with their own data
 
 
 * Practical application
     * Be able to explain the purpose of |project_name|
-    * Be able to interpret |project_name| analysis results and use them in disaster management.
+    * Be able to interpret |project_name| analysis results and use them in disaster management
 
 Target audience
 ---------------
@@ -69,7 +69,7 @@ Prerequisites
   * Minimum RAM of 2 GB (recommended 4 GB)
   * WIFI - connected to the internet
   * Windows (XP, 7, 8, 10), Linux (Training Ubuntu later than 12.04) or similar
-    (e.g. Mint or Debian), Mac OSX (Lion - 10.7,  Snow Leopard -10.6)
+    (e.g. Mint or Debian), Mac OS X Mavericks (10.9), Mountain Lion (10.8) and Lion (10.7).
   * |QGIS| long term release installed http://www.qgis.org or the ability to install software on computer (i.e. have administration password)
 
 Credits
@@ -86,8 +86,8 @@ OpenStreetMap Team (|hot|).
 Manual based on:
 ................
 
-* Version 4.0.x of |project_name|
-* Version 2.14.x of |QGIS|
+* Version 4.3.x of |project_name|
+* Version 2.18.x of |QGIS|
 
 Produced:
 .........
@@ -98,6 +98,7 @@ September 2015 (major revision)
 June 2016 (update)
 August 2016 (update)
 April 2017 (update)
+Maret 2018 (update)
 
 More information:
 .................
@@ -111,11 +112,13 @@ Contact: info@inasafe.org
 
 DMInnovation,
 
-Menara Thamrin Suite 1505
+Cyber 2 Tower 17th floor, suite M57-58
+Jl. HR. Rasuna Said, Blok X-5, Kav. 13
+Jakarta 12950
+Indonesia
 
-Jl. MH Thamrin Kav. 3, Jakarta 10250, Indonesia,
-
-Ph: +62 21 398 30088
+Phone. 021- 5799 8239
+Ext.439
 
 
 
@@ -137,5 +140,5 @@ Authors:
 `Charlotte Morgan <charlotte.morgan@ga.gov.au>`_, Spatial Data Analyst -
 Geoscience Australia
 
-Adityo Dwijananto, Harry Mahardika and Wulansari Khairunisa, Tri Selasa, Adhitya Dido, Sheila Amalia - Humanitarian OpenStreetmap Team Indonesia
+Adityo Dwijananto, Harry Mahardika, Wulansari Khairunisa, Tri Selasa, Adhitya Dido, Sheila Amalia, Fatisya Ilani - Humanitarian OpenStreetmap Team Indonesia
 

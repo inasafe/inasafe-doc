@@ -494,7 +494,7 @@ have done this before starting your analysis.
    :alt: Analysis extent in |project_name|
 
 |project_name| will show you what your current desired analysis extent is
-(blue box), what the extent of your last analysis was
+(blue line in green box), what the extent of your last analysis was
 (red box in the image above) and what your effective extent is
 (green box in the image above). The effective extent may not correspond
 exactly to your desired analysis extent because |project_name| always aligns
@@ -527,7 +527,7 @@ Supported data types for each hazard type in  |project_name|
 |   Name Impact Functions                                     |  Detail                                                                                             |
 +=============================================================+=====================================================================================================+
 |                                                             |                                                                                                     |
-|**Earthquake Impact Function**                               |                                                                                                     |
+|**Earthquake Impact Functions**                              |                                                                                                     |
 |                                                             |                                                                                                     |
 |.. image:: /static/training/socialisation/icon_earthquake.*  |                                                                                                     |
 |   :align: center                                            |  **Earthquake hazard**:  continuous raster, classified raster, and classified polygon               |
