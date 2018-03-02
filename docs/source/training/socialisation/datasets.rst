@@ -9,10 +9,10 @@ will need to download for the course, if it is not provided.
 If you are working through the training independently, use the following data
 packages:
 
-- `Introduction to QGIS.zip <http://data.inasafe.org/TrainingDataPackages/Indroduction%20To%20QGIS.zip>`_
-- `Run Basic InaSAFE.zip <http://data.inasafe.org/TrainingDataPackages/Run%20Basic%20InaSAFE%20v3.2.zip>`_
-- `Run Intermediate InaSAFE.zip <http://data.inasafe.org/TrainingDataPackages/Run%20Intermediate%20InaSAFE.zip>`_
-- `Other Hazards.zip <http://data.inasafe.org/TrainingDataPackages/Other%20Hazards%20.zip>`_
+- `Introduction to QGIS.zip <http://data.inasafe.org/Socialisation%20Training/Introduction%20to%20QGIS.zip>`_
+- `Run Basic InaSAFE.zip <http://data.inasafe.org/TrainingDataPackages/Run%20Basic%20InaSAFE%20v3.4.zip>`_
+- `Run Intermediate InaSAFE.zip <http://data.inasafe.org/Socialisation%20Training/Run%20Intermediate%20InaSAFE.zip>`_
+- `Other Hazards.zip <http://data.inasafe.org/TrainingDataPackages/Run%20Other%20Hazards.zip>`_
 
 Hazard data
 -----------
@@ -130,8 +130,8 @@ Volcano
 :Scenario:                Multiple event
 :Attribute field:         KRB
 :Attribute value map:     Kawasan rawan bencana III - High; Kawasan rawan bencana II - Medium; Kawasan rawan bencana I - Low
-:Source:                  PVMG
-:URL:                     http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (published map)
+:Source:                  PVMBG
+:URL:                     http://vsi.esdm.go.id/gallery/picture.php?/63/category/7 (published map)
 :Date:                    2015
 :Licence:
 :Coverage:                Sinabung
@@ -154,8 +154,8 @@ Volcano Point
 :Scenario:                Multiple event
 :Attribute field:         Name
 :Attribute value:         Sinabung
-:Source:                  PVMG
-:URL:                     http://www.vsi.esdm.go.id/galeri/index.php/Peta-Kawasan-Rawan-Bencana-Gunungapi-01/Wilayah-Sumatera/KRB-G-Sinabung (publish map)
+:Source:                  PVMBG
+:URL:                     http://vsi.esdm.go.id/gallery/picture.php?/63/category/7 (publish map)
 :Date:                    2015
 :Licence:
 :Coverage:                Sinabung
@@ -178,7 +178,7 @@ Volcanic Ash
 :Scenario:                Single event
 :Attribute field:         KRB
 :Attribute value map:     High; Medium; Low
-:Source:                  PVMG - BNPB
+:Source:                  PVMBG - BNPB
 :URL:
 :Date:                    2014
 :Licence:
@@ -204,7 +204,7 @@ Landslide
                           Moderate Landslide Vulnerability Zone - Medium;
                           Low Landslide Vulnerability Zone - Low
 :Source:                  PVMBG
-:URL:                     http://vsi.esdm.go.id/galeri/index.php/Peta-Zona-Kerentanan-Gerakan-Tanah-01/Peta-Zona-Kerentanan-Gerakan-Tanah/Prov-NTT (published map)
+:URL:                     http://vsi.esdm.go.id/gallery/picture.php?/230/category/14 (published map)
 :Date:                    2009
 :Licence:
 :Coverage:
@@ -298,7 +298,7 @@ Buildings
 
 |GoA| has been working with the Humanitarian OpenStreetMap Team (HOT) since 2011 
 to pilot and train OpenStreetMap data capture in Indonesia.
-So far over 4 million buildings have been mapped.
+So far over 12 million buildings have been mapped.
 Some of the scenarios we use in the training materials are situated in Jakarta,
 Yogyakarta (Merapi), Sumatra (Padang) and Flores (Maumere).
 

@@ -8,8 +8,8 @@ Run Intermediate |project_name|
 Introduction
 ------------
 
-In `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ we learned how to run a flood analysis on
-population and buildings, adjust the flood impact default settings and analyze
+In `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html>`__ we learned how to run a flood analysis on
+population and buildings, adjust the flood impact default settings and analyse
 impact summary report, and change analysis threshold. We also
 learned how to save our work and generate a pdf of the analysis results.
 In this exercise we will learn more techniques such as how to run
@@ -35,7 +35,7 @@ features. By the end of this exercise, participants will be able to:
 Data for this exercise
 ----------------------
 
-The data for this exercise are available in DKI Jakarta.zip which can be downloaded from `InaSAFE Training Data <http://data.inasafe.org/>`__. We will use
+The data for this exercise are available in Run Intermediate InaSAFE.zip which can be downloaded from `InaSAFE Training Data <http://data.inasafe.org/Socialisation%20Training/>`__. We will use
 the following data:
 
 1. Jakarta Flood 18113 WGS84
@@ -52,7 +52,7 @@ Exercise
 1. Running |project_name| for Population Data
 .............................................
 
-A. Add and symbolize vector data
+A. Add and symbolise vector data
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Click :guilabel:`Open` and select :file:`DKI Jakarta Intermediate.qgs`.
@@ -69,8 +69,8 @@ for Jakarta from an actual flood event. During Jakarta floods in January
 including the location of flooded areas by sub-village boundary
 (see more about this data at :ref:`datasets`.)
 
-Let us symbolize this layer so that it shows only affected areas (if you
-forget how to symbolize, you can go to :ref:`introduction_to_qgis`.)
+Let us symbolise this layer so that it shows only affected areas (if you
+forget how to symbolise, you can go to :ref:`introduction_to_qgis`.)
 The layer should look like this:
 
 .. image:: /static/training/socialisation/intermediate_inasafe_02.*
@@ -78,7 +78,7 @@ The layer should look like this:
    :width: 300 pt
 
 Using this layer, we will be able to see which area in Jakarta are categorized as
-flooded/affected area by analyzing the data using |project_name|.
+flooded/affected area by analysing the data using |project_name|.
 On the InaSAFE Dock, you will notice that the hazard is not
 there and only exposure data (population) is visible, even
 though you already turned ON the data layer.
@@ -96,8 +96,7 @@ B. Define keyword for hazard data
 |project_name| need a keyword to determine what type of data the user
 provide for analysis (hazard data, exposure data or aggregation data).
 If the data provided does not have a keyword, it will show a warning
-message “Layer Keyword Missing” in the |project_name| Dock. Try selecting :guilabel:`A Flood in
-Jakarta like 2013` layer and look at the |project_name| dock, You will see
+message “Layer Keyword Missing” in the |project_name| Dock. Try selecting :guilabel:`Jakarta_Flood_18113_WGS84` layer and look at the |project_name| dock, You will see
 the following:
 
 .. image:: /static/training/socialisation/intermediate_inasafe_03.*
@@ -109,7 +108,7 @@ and we need to open the keyword wizard to solve this problem. The
 keywords wizard will take you through a step-by-step process of
 assigning keywords to your data.
 
-Select **A Flood in Jakarta like 2013** layer and click :guilabel:`Keyword Creation Wizard`.
+Select **Jakarta_Flood_18113_WGS84** layer and click :guilabel:`Keyword Creation Wizard`.
 A window will appear and follow the steps
 provided by the :guilabel:`Keyword Creation Wizard.` If you get stuck, you can follow
 the diagram below to understand the steps and the choices you will be
@@ -173,7 +172,7 @@ We have seen the result of |project_name| on buildings and populations with
 raster hazard data. Now we will run |project_name| analysis using
 flood vector hazard data and raster population as exposure data. This time, however, we will use aggregated data. Using |project_name| with aggregated data will help you to get
 detailed result since the aggregated data can provide detailed
-information on specific administrative (or other) area. |project_name| allow us to add administrative data with specific boundaries that we can use to aggregate results.
+information on specific administrative (or other) area. |project_name| allows us to add administrative data with specific boundaries that we can use to aggregate results.
 
 To do this, look at the Layer List and make sure to turn ON the
 **Jakarta District** layer. Next, take a look at the |project_name| dock under the heading *Summarise the results by*.
@@ -196,7 +195,7 @@ Dock. The |project_name| Dock should look like this:
    :align: center
    :width: 300 pt
 
-Click :guilabel:`Run` and wait until |project_name| finishes analyzing the data. A new
+Click :guilabel:`Run` and wait until |project_name| finishes analysing the data. A new
 impact layer will be added to the Layer List. When you look at the result,
 it looks the same as |project_name| analysis result without aggregation, but if
 you scroll down to the bottom you will see the detailed result. As
@@ -208,8 +207,7 @@ information for a specific area or administration region.
    :width: 300 pt
 
 In the screenshot above, we see detailed impact results for each
-district in Jakarta for the detailed gender report, the detailed age report and the
-detailed minimum needs report. You can also use *jakarta subdistrict*
+district in Jakarta for the detailed minimum needs report. You can also use *jakarta subdistrict*
 rather than using *jakarta_district* for aggregation if you want to get more detailed results.
 Try running the analysis again using *jakarta subdistrict*. The
 aggregation option in |project_name| can also be applied for buildings and roads (in addition to population).
@@ -228,7 +226,7 @@ one of |project_name| features, :guilabel:`OpenStreetMap Downloader`.
 :guilabel:`OpenStreetMap Downloader` is a feature that enables downloading OpenStreetMap data
 and directly loading it into QGIS. This feature requires an internet
 connection as it fetches the data via a web service. Once downloaded, the data
-will be available as shapefiles and symbolized neatly (more information
+will be available as shapefiles and symbolised neatly (more information
 at `OpenStreetMap Downloader
 page <http://docs.inasafe.org/en/user-docs/application-help/openstreetmap_downloader.html>`__).
 
@@ -242,7 +240,7 @@ To use this feature for our next exercise, follow these steps:
 
 4. Click :guilabel:`Drag on Map` to select the boundary box from which data will be downloaded.
 
-5. Choose the your output directory, where OSM data will be stored. Adding a file name prefix makes it easier to identify the data downloaded.
+5. Choose your output directory, where OSM data will be stored. Adding a file name prefix makes it easier to identify the data downloaded.
 
 .. image:: /static/training/socialisation/intermediate_inasafe_11.*
    :align: center
@@ -294,7 +292,7 @@ click :guilabel:`Toggle Scenario Outlines`. A green box will appear around your 
    :width: 300 pt
 
 .. note:: Using Toggle Scenario Outlines help you understand which area that |project_name|
-        will analyze. It is also an important step before running |project_name|
+        will analyse. It is also an important step before running |project_name|
         analysis because not all of the data you put in the Layer List will be
         automatically defined by |project_name|.
 
@@ -371,7 +369,7 @@ different hazard data formats and with new type of exposure data. You have also
 learned two fundamental steps to remember before you run |project_name|:
 
 First, you learned how to define a keyword for your data so it can be
-analyzed with |project_name|. Without a keyword, |project_name| will not recognize
+analysed with |project_name|. Without a keyword, |project_name| will not recognize
 your data, so you need to define it whether the data is hazard, exposure
 or aggregation data. You can set the keyword
 using the :guilabel:`Keyword Creation Wizard` feature.
