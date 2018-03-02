@@ -56,7 +56,7 @@ freely available which means that anyone with a little technical knowledge
 can contribute to the project. Being an Open Source project is important for
 us because we want as many people as possible to be able to use and improve
 the software. If 'better planning saves lives', having a tool that can be used
-by everyone to do better planning makes sense right?
+by everyone to do better planning makes sense, right?
 
 Open data
 .........
