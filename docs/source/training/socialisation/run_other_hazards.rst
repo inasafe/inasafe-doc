@@ -35,7 +35,7 @@ By the end of this exercise, participants will be able to:
 Data for This Exercise:
 -----------------------
 
-The data used for this exercise is the same as that used in previous exercises. The data can be downloaded from |project_name| `Training Data Packages <http://data.inasafe.org/>`__
+The data used for this exercise is the same as that used in previous exercises. The data can be downloaded from |project_name| `Training Data Packages <http://data.inasafe.org/Socialisation%20Training/>`__
 Once the data has been downloaded, we will use the following QGIS project file and spatial data:
 
 - Padang.qgs
@@ -126,7 +126,7 @@ Let’s take a look at the new data layer generated from |project_name|.
 
 - Click :guilabel:`Number of Buildings` in the layer list to select it, click the :guilabel:`Identify Feature` tool, and then click on building to view attributes of the building.
 
-.. note:: Default Threshold  for Earthquake are 0-6 MMI for Low Threshold, 6.1-8 MMI for Medium and more than 8 MMI for high threshold. You can change the threshold of MMI Value for each affected area before run |project_name|. Please run keyword wizard again and click Edit on Earthquake on Building. Don't forget to click Save. This configuration will make your result different with Run |project_name| using default threshold.
+.. note:: Default Threshold  for Earthquake are 0-6 MMI for Low Threshold, 6.1-8 MMI for Medium and more than 8 MMI for high threshold. You can change the threshold of MMI Value for each affected area before running |project_name|. Please run keyword wizard again and click Edit on Earthquake on Building. Don't forget to click Save. This configuration will make your result different with Run |project_name| using default threshold.
 
 .. image:: /static/training/socialisation/other_hazard_05.*
    :align: center
@@ -206,7 +206,9 @@ In the |project_name| panel we now see the impact summary. The details are expla
 
 .. image:: /static/training/socialisation/other_hazard_09.*
    :align: center
-
+.. image:: /static/training/socialisation/other_hazard_36.*
+   :align: center
+   
 - **General report:** shows estimated number of affected people based on hazard zone and population. It is assumed that all of these people will need to be evacuated. **Hazard zone** divides the results into several categories based on the threshold set in the hazard analysis. In this impact summary,|project_name| divides the affected people into several categories based on MMI classes. **Population**  divides the results that shows the count of displaced and fatalities.
 
 - **Minimum needs:** are calculated numbers of food, water and other products needed by evacuated people on a weekly basis.
@@ -262,7 +264,7 @@ Let’s explore the result again to help you understand more.
 
 - Zoom in to any area you choose
 
-- Here we have zoomed in to a location in Maumere. There will be five new different colours generated from |project_name| (light yellow, orange, red, and grey).
+- Here we have zoomed in to a location in Maumere. There will be five new different colours generated from |project_name| (light yellow, orange, red, green, and grey).
 
 - The red buildings are situated in area where the depth of tsunami inundation is more than 3 metres; the orange buildings are situated in area where the depth of tsunami inundation is between 1.0 and 3 metres; the light yellow are situated in area where the depth of tsunami inundation is 0.1 and 1.0 metres; the green buildings considered dry as they are situated in water less than the threshold of 0.1 metre; and the grey buildings considered not exposed by the hazard.
 
@@ -297,7 +299,7 @@ In the |project_name| panel we now see the impact summary. Details are explained
 - **Analysis details (source)**:explanation of where the hazard data, exposure data, aggregation come from.
 
 
-The results show the buildings that will be affected by tsunami starting from 1 metre. What if the disaster manager decides that buildings in 80 cm of water are also considered inundated? You can change the water depth threshold to see the result, refer to the `Run Basic InaSAFE <http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html/>`__ module.
+The results show the buildings that will be affected by tsunami starting from 1 metre. What if the disaster manager decides that buildings in 80 cm of water are also considered inundated? You can change the water depth threshold to see the result, refer to the :ref:`Run Basic InaSAFE. <run_basic_inasafe>` module.
 
 .. note:: InaSAFE Tsunami Impact Function is very similar with Flood, but due to the force of tsunami waves, the maximum depth of water that would affect people and infrastructure is shallower.
 
@@ -340,16 +342,23 @@ After clicking that icon, you will see the following dialogue box appear:
 In the box above, there are some fields that help us select the scenario to use.
 Green fields mean those scenarios are available and ready to run in |project_name|. Grey fields means those scenarios are not available in |project_name| at the moment.
 
-Because we want to run Volcano with building in this session, please click :guilabel:`Field Volcano and Structure`. The resulting dialogue box appears like this:
+Because we want to run Volcano with building in this session, please click :guilabel:`Field Volcano' and :guilabel: 'Structure`. The resulting dialogue box appears like this:
 
 .. image:: /static/training/socialisation/other_hazard_19.*
    :align: center
 
+You can click :guilabel:`Next` and select the geometry types for the hazard and exposure layers, click :guilabel:`Polygon`.
+
+.. image:: /static/training/socialisation/other_hazard_37.*
+   :align: center
+   
 You can click :guilabel:`Next` and follow the instructions in the IFCW box.
 
 Hazard Data that we want to use for this scenario can be found in :file:`InaSAFE Training Data > Sinabung > Hazard Data` folder and please select :file:`Sinabung_Hazard_Map_2015_WGS84.shp`.
 
 Building Exposure data can be found in :file:`InSAFE Training Data > Sinabung > Exposure Data` folder and please select :file:`Sinabung_buildings_WGS84.shp` .
+
+There is optional to use aggregation for your analysis, either you load aggregation layer from your own local file or you just aggregate results for the entire analysis windows.
 
 .. note:: The differences between Volcano and Volcanic Ash can be seen in :ref:`Hazard Data Section <datasets>`, and for detail explanation about type of data you can be found in :ref:`Key concepts in disaster management planning with InaSAFE. <inasafe_concepts>`.
 
@@ -368,9 +377,9 @@ If your IFCW box looks like the screenshot above, click :guilabel:`Run` and wait
 
 Once you have finished running the analysis, you will see the result has new layer named
 “Number of buildings” . This layer will show you which buildings are affected for each hazard zone.
-There will be three new colours of building generated from |project_name| (light yellow, orange, and red).
+There will be four new colours of building generated from |project_name| (light yellow, orange, red, and grey).
 
-The blood orange buildings mean these buildings are located in a Low Risk Zone (Risk Zone 1), the red buildings mean these buildings are located in an Intermediate Risk Zone (Risk Zone 2) and dark red buildings are considered situated in a High Risk Zone (Risk Zone 3) of Sinabung Volcano.
+The light yellow buildings mean these buildings are located in a Low Risk Zone (Risk Zone 1), the orange buildings mean these buildings are located in an Intermediate Risk Zone (Risk Zone 2), red buildings are considered situated in a High Risk Zone (Risk Zone 3) of Sinabung Volcano, and grey buildings considered not exposed by the hazard.
 
 .. image:: /static/training/socialisation/other_hazard_22.*
    :align: center
@@ -397,19 +406,17 @@ You have now run |project_name| for a volcano scenario using the Impact Function
 Quite different than the |project_name| Dock, this tool is designed to help a user run |project_name| more easily without needing to open all the required data one by one in QGIS. IFCW provides precise guidance and detail about
 what actions should be taken step by step until the scenario is ready to run. This tool is very useful, especially for |project_name| user who are less familiar with QGIS and Spatial Data.
 
-4. Generic Impact Function in |project_name|
----------------------------------------------
+4. Generic Hazard Impact Function in |project_name|
+---------------------------------------------------
 
-|project_name| can run analyses for multiple hazards, using scenarios that we set up based on
-data availability. These scenarios include five types of hazards : floods, earthquakes, volcanos,
-volcanic ash and tsunamis. What if our hazard scenario is not included in this list (for example, a land slide or drought). To solve this problem, |project_name| provides a tool called the **Generic Impact Function** that can run analyses for any hazard not available via a specific Scenario Impact Function.
+|project_name| can run analyses for multiple hazards, using scenarios that we set up based on data availability. These scenarios include seven types of hazards : floods, earthquakes, volcanos, volcanic ash, tsunamis, dam break, and, cyclone. What if our hazard scenario is not included in this list (for example, a land slide or drought). To solve this problem, |project_name| provides a tool called the **Generic Hazard Impact Function** that can run analyses for any hazard not available via a specific Scenario Impact Function.
 
 4.1 Open Project
 .................
 
 Next, we will explore this tool using a landslide hazard in Nagekeo, East Nusa Tenggara with building and population data
 for each scenario. Please open the QGIS project file :file:`Nagekeo.qgs` from 
-the :file:`InSAFE Training Data > Nagekeo` folder. Once opened, the project should look like the screenshot below:
+the :file:`InaSAFE Training Data > Nagekeo` folder. Once opened, the project should look like the screenshot below:
 
 .. image:: /static/training/socialisation/other_hazard_24.*
    :align: center
@@ -434,7 +441,7 @@ Once you finish defining keyword for each layer, your |project_name| form should
 a. Run |project_name|
 ^^^^^^^^^^^^^^^^^^^^^
 
-Your |project_name| Dock now poses the question “In the event of **Landslide Hazard Zone**,how many **buildings** will **be affected**?" 
+Your |project_name| Dock now poses the question “In the event of **Landslide Hazard Zone**, how many **buildings** will **be affected**?" 
 Click :guilabel:`Run` on the bottom right corner in your |project_name| Dock.
 If everything was set up correctly, you should get a result in the dock area after a few seconds, and a new map layer should be added to the map. The new layer will be named “Number of buildings”.
 
@@ -484,11 +491,11 @@ a. Run |project_name|
 ^^^^^^^^^^^^^^^^^^^^^
 
 Turn off the Buildings Affected by each hazard zone (the layers generated from |project_name| analysis and
-turn ON the **People** layer. Because we want to look at the number of people who might die or be displaced in
+turn ON the **People** layer. Since we want to look at the number of people who might die or be displaced in
 a specific area, we also need to turn ON the **Village** layer in QGIS. This layer will be used as an aggregation layer that
 can show us results grouped by administrative boundary.
 
-If you forget the steps to define and aggregation layer, refer to the :ref:`Run Intermediate InaSAFE. <run_intermediate_inasafe>` section.
+If you forget the steps to define an aggregation layer, refer to the :ref:`Run Intermediate InaSAFE. <run_intermediate_inasafe>` section.
 Edit the question form in the |project_name| Dock so that it appears similar to the below screenshot:
 
 .. image:: /static/training/socialisation/other_hazard_30.*
@@ -532,8 +539,8 @@ In the |project_name| panel we now see the impact summary. The details are expla
 
 - **Detailed gender and age report:** provides a breakdown of the number of affected people by age (youth, adults and elderly) and gender based on the default world population demographics and calculates the minimum needs for women’s hygiene and pregnant women. If you using aggregation layer, the result will be broken down based on administrative area.
 
-.. note:: In the result of |project_name|, Action Checklist and Notes might be unrelated with hazard that we runned.
-   For instance, if we run drought hazard the action checklist might be has some topics such as how many building closed, or people die or displaced. Those topics not really related with drought. 
+.. note:: In the result of |project_name|, Action Checklist and Notes might be unrelated with hazard that we run.
+   For instance, if we run drought hazard the action checklist might have some topics such as how many building closed, or people die or displaced. Those topics are not really related with drought. 
 
 Summary
 -------
@@ -541,4 +548,4 @@ Summary
 Congratulation! You have now learned to use most of |project_name|'s functionality. You can run analyses for specific hazard using tools such as
 the Impact Function Centric Wizard (IFCW) and the Generic Impact Function which will make using |project_name| easier.
 
-Now, to become an expert user of |project_name|, try utilizing all those tools that you explored in this module using your own scenarios and data, and practice interpreting the results.
+Now, to become an expert user of |project_name|, try utilising all those tools that you explored in this module using your own scenarios and data, and practice interpreting the results.
