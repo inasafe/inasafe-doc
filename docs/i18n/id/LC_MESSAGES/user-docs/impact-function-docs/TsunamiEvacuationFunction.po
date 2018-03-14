@@ -1,18 +1,17 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2013, InaSAFE project
 # This file is distributed under the same license as the InaSAFE Documentation Project package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# adityo dwijananto <adz.only@gmail.com>, 2014
-# mahardika fadmastuti <mahardika.fadmastuti@gmail.com>, 2014
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: staging.docs.inasafe.org\n"
+"Project-Id-Version: InaSAFE Documentation Project 2.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-10 16:15+0100\n"
-"PO-Revision-Date: 2014-12-28 17:51+0000\n"
-"Last-Translator: adityo dwijananto <adz.only@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/inasafe/inasafe-develop/language/id/)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: adityo dwijananto <adz.only@gmail.com>, 2018\n"
+"Language-Team: Indonesian (https://www.transifex.com/inasafe/teams/57764/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,7 +21,7 @@ msgstr ""
 # a896775d16d34a66bd217ccd73526ab1
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:6
 msgid "Tsunami Evacuation Function"
-msgstr "Fungsi Evakuasi Tsunami"
+msgstr "Fungsi Evakuasi Tsunam"
 
 # 69947245e914428b9cde48208b6afc39
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:9
@@ -37,7 +36,7 @@ msgstr "**Identifikasi Unik**: Fungsi Evakuasi Tsunami"
 # 2065a2b854d84cd092ea3e55d61f404e
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:14
 msgid "**Author**: AIFDR"
-msgstr "**Dibuat oleh**: AIFDR"
+msgstr "**Pembuat**: AIFDR"
 
 # b5541fbd72aa42e2b547378c48b93baa
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:17
@@ -54,7 +53,9 @@ msgstr "**Judul**: Butuh Evakuasi"
 msgid ""
 "**Synopsis**: To assess the impacts of tsunami inundation in raster format "
 "on population."
-msgstr "**Sinopsis**: Untuk menghitung dampak genangan tsunami dalam format raster pada penduduk."
+msgstr ""
+"**Sinopsis*: Untuk mengakses dampak dari tsunami dalam format raster "
+"terhadap penduduk."
 
 # ea0ad265a1c946ea8b18a25170e6a532
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:26
@@ -62,35 +63,46 @@ msgid ""
 "**Actions**: Provide details about how many people would likely need to be "
 "evacuated, where they are located and what resources would be required to "
 "support them."
-msgstr "**Tindakan**: Menyediakan rincian mengenai berapa banyak orang yang perlu dievakuasi, dimana lokasi keberadaan mereka dan sumber daya apa yang dibutuhkan untuk mendukung keselamatan mereka."
+msgstr ""
+"**Tindakan**: Menyediakan rincian mengenai berapa banyak orang yang perlu "
+"dievakuasi, dimana lokasi keberadaan mereka dan sumber daya apa yang "
+"dibutuhkan untuk mendukung keselamatan mereka."
 
 # fb04e7288103402c81d2e3d39f226d75
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:29
 msgid ""
 "**Hazard Input**: A hazard raster layer where each cell represents tsunami "
 "depth (in meters)."
-msgstr "**Hazard Input**: Layer raster ancaman dimana setiap sel mewakili kedalaman banjir (dalam meter)."
+msgstr ""
+"**Input Ancaman**: sebuah layer ancaman bertipe raster dimana setiap sel "
+"merepresentasikan kedalaman tsunami (dalam meter)"
 
 # c124e28186a148e98714ea4406566a1a
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:32
 msgid ""
 "**Exposure Input**: An exposure raster layer where each cell represent "
 "population count."
-msgstr "**Input Keterpaparan**: Layer data keterpaparan berjenis data raster dimana setiap sel mewakili sejumlah populasi penduduk."
+msgstr ""
+"**Input Keterpaparan**: Layer data keterpaparan berjenis raster data dimana "
+"setiap sel mewakili sejumlah populasi penduduk."
 
 # a4cbccf248c64a9aba0077eb1e36ee38
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:35
 msgid ""
 "**Output**: Raster layer contains population affected and the minimum needs "
 "based on the population affected."
-msgstr "**Output**: Layer raster berisi penduduk terdampak dan kebutuhan minimum berdasarkan pada penduduk yang terdampak."
+msgstr ""
+"**Output**: Layer raster berisi penduduk terdampak dan kebutuhan minimum "
+"berdasarkan pada penduduk terdampak."
 
 # a7e5b01cd4c54a098e298e3953f24b37
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:38
 msgid ""
 "**Limitation**: The default threshold of 0.7 meter was selected based on "
 "consensus, not hard evidence."
-msgstr "**Batasan**: Ambang batas standar 0,7 meter telah dipilih berdasarkan kesepakatan, bukan bukti yang nyata."
+msgstr ""
+"**Batasan**: Ambang batas standar 0.7 meter telah dipilih berdasarkan pada "
+"kesepakatan, bukan bukti yang nyata."
 
 # a83dd4e56a414da5b036e439e77facbd
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:42
@@ -110,7 +122,18 @@ msgid ""
 " resampled population counts reflect estimates of population count per "
 "resampled cell. The resulting impact layer has the same resolution and "
 "reflects population count per cell which are affected by inundation."
-msgstr "Subjek populasi genangan melebihi ambang batas (pengaturan awal adalah 0.7m) dihitung dan dikembalikan sebagai layer aster. Selain itu, jumlah dan kebutuhan yang diperlukan sesuai aturan BNPB (Perka 7) dilaporkan. Ambang batas dapat diubah dan bahkan mengandung beberapa nilai dalam hal evakuasi dan kebutuhan dihitung menggunakan jumlah terbesar dengan populasi diperinci untuk jumlah yang lebih kecil. Lapisan raster populasi diresampling dengan resolusi raster ancaman dan direscaling sehingga jumlah populasi hasil resampling mencerminkan perkiraan jumlah populasi per sel terresampling. Lapisan dampak yang dihasilkan memiliki resolusi yang sama dan mencerminkan jumlah penduduk per sel yang dipengaruhi oleh genangan."
+msgstr ""
+"Subyek populasi yang terkena genangan yang melebihi ambang batas (pengaturan"
+" awal adalah 1m) dihitung dan dikembalikan sebagai layer data raster. Selain"
+" itu, jumlah dan kebutuhan yang diperlukan sesuai aturan BNPB (Perka 7) "
+"dilaporkan. Ambang batas dapat diubah dan bahkan mengandung beberapa nilai "
+"dalam hal evakuasi dan kebutuhan dihitung menggunakan jumlah terbesar dengan"
+" populasi diperinci untuk jumlah yang lebih kecil. Layer data raster "
+"populasi diresampling dengan resolusi raster data ancaman dan direscaling "
+"sehingga jumlah populasi hasil resampling mencerminkan perkiraan jumlah "
+"populasi per sel dapat diresampling. Layer data dampak yang dihasilkan "
+"memiliki resolusi yang sama dan mencerminkan jumlah penduduk per sel yang "
+"dipengaruhi oleh adanya genangan."
 
 # d9c0f63039e5453fb94b7d890e570f29
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:47
@@ -128,11 +151,15 @@ msgid ""
 ":author AIFDR :rating 4 :param requires category=='hazard' and"
 "                     subcategory=='tsunami' and                     "
 "layertype=='raster' and                     unit=='m'"
-msgstr ":author AIFDR :rating 4 :param membutuhkan kategori=='hazard' dan subkategori=='tsunami' dan jenislayer=='raster' dan unit=='m'"
+msgstr ""
+":*author* AIFDR :rating 4 :param membutuhkan kategori=='hazard' dan "
+"subkategori=='tsunami' dan jenislayer=='raster' dan unit=='m'"
 
 # 0a36ef4e60ec41cdb9281fb9c4e74460
 #: ../../source/user-docs/impact-function-docs/TsunamiEvacuationFunction.rst:55
 msgid ""
 ":param requires category=='exposure' and                     "
 "subcategory=='population' and                     layertype=='raster'"
-msgstr ":param membutuhkan category=='exposure' dan subcategory=='population' dan layertype=='raster'"
+msgstr ""
+":param membutuhkan category=='exposure' dan subcategory=='population' dan "
+"layertype=='raster'"
