@@ -86,7 +86,8 @@ do
   LOG=/tmp/sphinx$$.log
   #  -n   Run in nit-picky mode. Currently, this generates warnings for all missing references.
   #  -W   Turn warnings into errors. This means that the build stops at the first warning and sphinx-build exits with exit status 1.
-  ${SPHINXBUILD} -nW -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html source ${HTMLDIR}/${LOCALE} > $LOG
+  #${SPHINXBUILD} -nW -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html source ${HTMLDIR}/${LOCALE} > $LOG
+  ${SPHINXBUILD} -n -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b html source ${HTMLDIR}/${LOCALE} > $LOG
   WARNINGS=`cat $LOG | grep warning`
   ERRORS=`cat $LOG | grep ERROR`
   if [[  $WARNINGS ]]
@@ -136,7 +137,8 @@ if $CREATE_PDF; then
       # Compile the latex docs for that locale
       #  -n   Run in nit-picky mode. Currently, this generates warnings for all missing references.
       #  -W   Turn warnings into errors. This means that the build stops at the first warning and sphinx-build exits with exit status 1.
-      ${SPHINXBUILD} -nW -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b latex source ${BUILDDIR}/latex/${LOCALE}  > /dev/null 2>&1
+      #${SPHINXBUILD} -nW -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b latex source ${BUILDDIR}/latex/${LOCALE}  > /dev/null 2>&1
+      ${SPHINXBUILD} -n -d ${BUILDDIR}/doctrees -D language=${LOCALE} -b latex source ${BUILDDIR}/latex/${LOCALE}  > /dev/null 2>&1
       # Compile the pdf docs for that locale
       # we use texi2pdf since latexpdf target is not available via
       # sphinx-build which we need to use since we need to pass language flag

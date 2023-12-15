@@ -42,6 +42,7 @@ in pkgs.mkShell rec {
   '';
 
   shellHook = ''
+    export LC_ALL=C
   '';
   # Now we can execute any commands within the virtual environment.
   # This is optional and can be left out to run pip manually.
