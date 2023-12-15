@@ -28,7 +28,8 @@ in pkgs.mkShell rec {
     pinnedPkgs.argparse
     pinnedPkgs.rpl
     pinnedPkgs.gettext
-    
+    # Simple http server to test the built docs
+    pinnedPkgs.httplz 
     
     # This executes some shell code to initialize a venv in $venvDir before
     # dropping into the shell
