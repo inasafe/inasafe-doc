@@ -15,4 +15,5 @@ jobs:
         packages: hello,docker
         script: |
           nix-shell
-          sphinx --help
+          scripts/pre_translate.sh
+          scripts/post_translate.sh
