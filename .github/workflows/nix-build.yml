@@ -7,11 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: cachix/install-nix-action@v18
+    - uses: cachix/install-nix-action@v20
       with:
         nix_path: nixpkgs=channel:nixos-unstable
-    - uses: workflow/nix-shell-action@v3
-      with:
-        packages: sphinx gettext
-        script: |
-          nix-shell && scripts/pre_translate.sh && scripts/post_translate.sh
+    - uses: DeterminateSystems/magic-nix-cache-action@v2
+    - run: nix-shell && scripts/pre_translate.sh && scripts/post_translate.sh
