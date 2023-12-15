@@ -12,6 +12,6 @@ jobs:
         nix_path: nixpkgs=channel:nixos-unstable
     - uses: workflow/nix-shell-action@v3
       with:
-        packages: hello,docker
+        packages: sphinx
         script: |
           nix-shell && scripts/pre_translate.sh && scripts/post_translate.sh
