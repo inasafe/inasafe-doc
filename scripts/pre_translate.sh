@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # INASAFE_DEV_PATH=$HOME/dev/python/inasafe/
 # export QGIS_PREFIX_PATH=/usr/local/qgis-2.8/

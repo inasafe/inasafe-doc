@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Based off the script from QGIS by Tim Sutton and Richard Duivenvoorde
 
 # Name of the dir containing static files
