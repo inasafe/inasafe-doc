@@ -14,6 +14,4 @@ jobs:
       with:
         packages: hello,docker
         script: |
-          nix-shell
-          scripts/pre_translate.sh
-          scripts/post_translate.sh
+          nix-shell && scripts/pre_translate.sh && scripts/post_translate.sh
