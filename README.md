@@ -98,20 +98,27 @@ six==1.16.0
  
 We are now going to use that inasafe-doc directory as source and output directory for the 
 
-    scripts/post_translate.sh en html
 
+```
+scripts/pre_translate.sh
+scripts/post_translate.sh 
+```
 
-Working on the translated Documentation
-====================================
+You can also build the docs for a single language:
 
+```
+scripts/post_translate.sh en html
+```
 
-.. note:: if you want to create docs in another language, use the locale code as
-   parameter.
+## Viewing the docs
 
-For example, to create indonesian docs::
+After building the docs, you can run a lightweight web server to view the
+generated web pages:
 
-* cd inasafe-doc
-* scripts/post_translate.sh id
+```
+httplz docs/output/html/
+```
+
 
 Translating the english InaSAFE Documentation
 =============================================

@@ -19,7 +19,7 @@
 # export QGIS_DEBUG_FILE=/dev/null
 
 # Path to the documentation root relative to script execution dir
-DOCROOT=../docs
+DOCROOT=docs
 # Path from execution dir of this script to docs sources (could be just
 # '' depending on how your sphinx project is set up).
 SOURCE=source
