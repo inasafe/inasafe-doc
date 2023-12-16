@@ -24,8 +24,7 @@ jobs:
         nix_path: nixpkgs=channel:nixos-unstable
     - uses: DeterminateSystems/magic-nix-cache-action@v2
     - run: nix-shell --run "./english_build.sh"
-    - name: Commit files
-        run: |
+    - run: |
           mv ./docs/output/html/en /tmp/en
           cd /tmp/en
           git init .
