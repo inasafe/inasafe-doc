@@ -875,9 +875,6 @@ Based on the curriculum, program structure is designed as follows.
 |    | Total                                   | 9                                       |
 +----+-----------------------------------------+-----------------------------------------+
 
-Syllabus
---------
-
 The syllabus is a learning plan for the workshop material that includes 
 basic competencies, indicators, core material, learning activity, assessment, 
 allocation of time and learning resources.

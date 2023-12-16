@@ -102,12 +102,13 @@ We are now going to use that inasafe-doc directory as source and output director
 ```
 scripts/pre_translate.sh
 scripts/post_translate.sh 
+scripts/english_build.sh
 ```
 
 You can also build the docs for a single language:
 
 ```
-scripts/post_translate.sh en html
+scripts/post_translate.sh id html
 ```
 
 ## Viewing the docs

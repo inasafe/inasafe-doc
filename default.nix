@@ -11,9 +11,12 @@ in pkgs.mkShell rec {
   buildInputs = [
     # A Python interpreter including the 'venv' module is required to bootstrap
     # the environment.
+    pythonPackages.python
+    # This executes some shell code to initialize a venv in $venvDir before
+    # dropping into the shell
+    pythonPackages.venvShellHook
     # By preference, install packages from nixpkgs first, 
     # falling back to requirements.txt if that is not possible
-    pythonPackages.python
     pythonPackages.six
     pythonPackages.jinja2
     pythonPackages.markupsafe
@@ -31,9 +34,6 @@ in pkgs.mkShell rec {
     # Simple http server to test the built docs
     pinnedPkgs.httplz 
     
-    # This executes some shell code to initialize a venv in $venvDir before
-    # dropping into the shell
-    pythonPackages.venvShellHook
   ];
 
   # Run this command, only after creating the virtual environment
@@ -42,8 +42,9 @@ in pkgs.mkShell rec {
     pip install -r requirements.txt 
   '';
 
+  # Note!! Adding content to shellHook below will prevent requirements.txt
+  # being installed.
   shellHook = ''
-    export LC_ALL=C
   '';
   # Now we can execute any commands within the virtual environment.
   # This is optional and can be left out to run pip manually.

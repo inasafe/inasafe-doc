@@ -13,3 +13,4 @@ jobs:
     - uses: DeterminateSystems/magic-nix-cache-action@v2
     - run: nix-shell --run "scripts/pre_translate.sh"
     - run: nix-shell --run "scripts/post_translate.sh"
+    - run: nix-shell --run "scripts/english_build.sh"
