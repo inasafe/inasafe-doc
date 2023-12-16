@@ -24,6 +24,8 @@ jobs:
         nix_path: nixpkgs=channel:nixos-unstable
     - uses: DeterminateSystems/magic-nix-cache-action@v2
     - run: nix-shell --run "./english_build.sh"
+    # Fix for https://github.com/inasafe/inasafe-doc/actions/runs/7233606517/job/19709062547#step:7:14
+    - run: git config --global --add safe.directory $PWD
     - uses: ad-m/github-push-action@v0.5.0
       with:
         # Token for the repo
