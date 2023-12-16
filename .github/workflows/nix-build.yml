@@ -24,7 +24,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - name: Nix shell
         uses: DeterminateSystems/magic-nix-cache-action@v2
-        run: nix-shell --run "./english_build.sh"
+          run: nix-shell --run "./english_build.sh"
       - name: Deploy docs to github pages
         uses: ad-m/github-push-action@v0.5.0
         with:
