@@ -1,9 +1,19 @@
-name: "Test"
+name: 📖 Documentation
 on:
-  pull_request:
   push:
+    branches:
+      - main
+      - docs
+    # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
+    paths:
+      - ".github/workflows/nix-build.yml"
+      - "docs/**"
+  # Allow manually running in the actions tab
+  workflow_dispatch:
+
 jobs:
   tests:
+    name: Deploy docs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout docs
@@ -14,7 +24,7 @@ jobs:
           nix_path: nixpkgs=channel:nixos-unstable
       - name: Nix shell
         uses: DeterminateSystems/magic-nix-cache-action@v2
-        - run: nix-shell --run "./english_build.sh"
+        run: nix-shell --run "./english_build.sh"
       - name: Deploy docs to github pages
         uses: ad-m/github-push-action@v0.5.0
         with:
