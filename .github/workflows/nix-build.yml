@@ -35,32 +35,5 @@ jobs:
         force: true
         # We have to push from the folder where files were generated.
         # Same were the new repo was initialized in the previous step
-        directory: ./docs/en
-
-#jobs:
-#  tests:
-#    name: Deploy docs
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout docs
-#        uses: actions/checkout@v3
-#      - name: Setup Nix
-#        uses: cachix/install-nix-action@v20
-#        with:
-#          nix_path: nixpkgs=channel:nixos-unstable
-#      - name: Nix Cache
-#        uses: DeterminateSystems/magic-nix-cache-action@v2
-#      - name: Deploy docs to github pages
-#        uses: ad-m/github-push-action@v0.5.0
-#        with:
-#          # Token for the repo
-#          # Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          # Destination branch to push changes
-#          branch: gh-pages
-#          # Use force push to fully overwrite the destination branch
-#          force: true
-#          # We have to push from the folder where files were generated.
-#          # Same were the new repo was initialized in the previous step
-#          directory: ./docs/en
+        directory: ./docs/output/html/en
 
