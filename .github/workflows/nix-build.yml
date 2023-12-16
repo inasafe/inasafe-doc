@@ -24,6 +24,14 @@ jobs:
         nix_path: nixpkgs=channel:nixos-unstable
     - uses: DeterminateSystems/magic-nix-cache-action@v2
     - run: nix-shell --run "./english_build.sh"
+    - name: Commit files
+        run: |
+          mv ./docs/output/html/en /tmp/en
+          cd /tmp/en
+          git init .
+          git config --local user.email "test@test.com"
+          git config --local user.name "Test"
+          git commit -a -m "Update docs"
     - uses: ad-m/github-push-action@master
       with:
         # Token for the repo
@@ -35,5 +43,5 @@ jobs:
         force: true
         # We have to push from the folder where files were generated.
         # Same were the new repo was initialized in the previous step
-        directory: ./docs/output/html/en
+        directory: /tmp/en
 
