@@ -27,10 +27,8 @@ in pkgs.mkShell rec {
     pythonPackages.twitter
     
     pinnedPkgs.sphinx
-    pinnedPkgs.transifex-client
     pinnedPkgs.argparse
     pinnedPkgs.rpl
-    pinnedPkgs.gettext
     # Simple http server to test the built docs
     pinnedPkgs.httplz 
     
