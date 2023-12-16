@@ -25,7 +25,7 @@ jobs:
       - name: Nix Cache
         uses: DeterminateSystems/magic-nix-cache-action@v2
       - name: Build docs
-          run: nix-shell --run "./english_build.sh"
+        run: nix-shell --run "./english_build.sh"
       - name: Deploy docs to github pages
         uses: ad-m/github-push-action@v0.5.0
         with:
