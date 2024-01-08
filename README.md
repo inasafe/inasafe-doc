@@ -113,3 +113,8 @@ httplz docs/output/html/en/
 
 [InaSAFEImage]: http://inasafe.org/en/_static/img/logo.png
 [website]: http://inasafe.org/
+
+
+Tim Sutton
+
+2024
