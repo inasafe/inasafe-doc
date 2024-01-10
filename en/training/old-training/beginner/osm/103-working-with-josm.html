@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 3: Working with JOSM &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 4: Using GPS" href="104-using-gps.html" />
+    <link rel="prev" title="Module 2: Working with OSM" href="102-working-with-osm.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/osm/103-working-with-josm.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/osm/103-working-with-josm.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 1: Data Collection Using OpenStreetMap Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 3: Working with JOSM</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="104-using-gps.html"
+                   title="Module 4: Using GPS"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="102-working-with-osm.html"
+                   title="Module 2: Working with OSM"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="100-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="101-basic-concept-of-osm-website.html">Module 1: The OpenStreetMap Website</a></li>
+<li class="toctree-l5"><a class="reference internal" href="102-working-with-osm.html">Module 2: Working with OSM</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 3: Working with JOSM</a></li>
+<li class="toctree-l5"><a class="reference internal" href="104-using-gps.html">Module 4: Using GPS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="105-field-papers.html">Module 5: Field Papers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="106-editing-osm-with-josm.html">Module 6: Editing OpenStreetMap with JOSM</a></li>
+<li class="toctree-l5"><a class="reference internal" href="107-imagery-offset.html">Module 7: Imagery Offset</a></li>
+<li class="toctree-l5"><a class="reference internal" href="108-getting-osm-data.html">Module 8: Getting OSM Data</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../qgis-inasafe/index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image6.png" src="../../../../_images/image6.png" />
+<section id="module-3-working-with-josm">
+<span id="working-with-josm"></span><h1>Module 3: Working with JOSM<a class="headerlink" href="#module-3-working-with-josm" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Download JOSM</p></li>
+<li><p>Install JOSM</p></li>
+<li><p>Set JOSM preferences</p></li>
+<li><p>Use basic tools</p></li>
+<li><p>Draw nodes and ways in JOSM</p></li>
+<li><p>Change objects</p></li>
+<li><p>Add tags to objects using presets menu</p></li>
+</ul>
+<p>In this module we will learn step-by-step how to download and install JOSM,
+the Java OpenStreetMap editor. We will change some of the settings in JOSM
+to make it easier to use. Then we will open a sample map and learn some of
+the basic operations of the software. Remember
+in <a class="reference internal" href="101-basic-concept-of-osm-website.html#basic-concept-of-osm-website"><span class="std std-ref">Module 1</span></a> when we asked you
+to draw a map of your town or village? We will conclude this module by
+drawing your map again, this time digitally. After this you should have a
+good understanding of how to draw maps in JOSM.</p>
+<section id="downloading-josm">
+<h2>1. Downloading JOSM<a class="headerlink" href="#downloading-josm" title="Link to this heading">¶</a></h2>
+<p>There is a copy of JOSM in the <code class="file docutils literal notranslate"><span class="pre">software/</span></code> folder of the package that
+accompanies this course. If you don’t have this or would like the most
+up-to-date version, follow the instructions here. Otherwise skip ahead
+to <a class="reference internal" href="#install-josm"><span class="std std-ref">2. Installing JOSM</span></a>.</p>
+<ol class="arabic simple">
+<li><p>Open your web browser - this may be Firefox, Chrome, Opera,
+or Internet Explorer.</p></li>
+<li><p>In the address bar at the top of the window,
+enter <a class="reference external" href="http://josm.openstreetmap.de">josm.openstreetmap.de</a> and
+press <kbd class="kbd docutils literal notranslate">Enter</kbd>:</p></li>
+</ol>
+<p>The website should look something like this:</p>
+<img alt="../../../../_images/image17.png" class="align-center" src="../../../../_images/image17.png" />
+<ol class="arabic simple" start="3">
+<li><p>If you are running Windows, click
+<span class="guilabel">Windows Installer</span> to download JOSM. If you have a different
+operating system, click on the link for your system. Your download should
+begin. In this module we assume that you are using Windows, but the
+instructions are similar for other operating systems.</p></li>
+</ol>
+</section>
+<section id="installing-josm">
+<span id="install-josm"></span><h2>2. Installing JOSM<a class="headerlink" href="#installing-josm" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="4">
+<li><p>You may have problems installing JOSM if Java is not already installed on
+your computer. Install Java by running <code class="file docutils literal notranslate"><span class="pre">jre-8u25-windows-i586</span></code>
+in the <code class="file docutils literal notranslate"><span class="pre">software/</span></code> folder. The exact version may be different. The most
+up-to-date version can also be downloaded here:
+<a class="reference external" href="http://www.java.com/en/download/">http://www.java.com/en/download/</a></p></li>
+<li><p>Find the JOSM install file on your computer. It should be named
+<code class="file docutils literal notranslate"><span class="pre">josm-setup.exe</span></code>. Double-click it to begin setup.</p></li>
+<li><p>Click <span class="guilabel">OK</span>, <span class="guilabel">Next</span>, <span class="guilabel">I Agree</span> and
+<span class="guilabel">Install</span>. When the installation is complete, click
+<span class="guilabel">Finish</span> to launch JOSM for the first time. Later when you want
+to start JOSM, you can do so by clicking on the <span class="guilabel">Start Menu</span> in
+the lower-left corner of your computer, and clicking the program JOSM.</p></li>
+<li><p>A window may pop up that asks if you want to update the software. It is not
+necessary to update since it is new. Click the <span class="guilabel">Cancel</span> button.
+If you don’t ever want to see this message again,
+check the box at the bottom before pressing <span class="guilabel">Cancel</span>.</p></li>
+</ol>
+<p>When JOSM starts, it will look something like this:</p>
+<img alt="../../../../_images/image18.png" class="align-center" src="../../../../_images/image18.png" />
+</section>
+<section id="changing-josm-settings">
+<h2>3. Changing JOSM settings<a class="headerlink" href="#changing-josm-settings" title="Link to this heading">¶</a></h2>
+<p>Before we begin using JOSM, it’s a good idea to change some of the settings
+so that it will be easier to use. To change the settings,
+go to <span class="menuselection">Edit ‣ Preferences</span>.</p>
+<img alt="../../../../_images/image19.png" class="align-center" src="../../../../_images/image19.png" />
+<section id="adding-bing-imagery">
+<h3>3.1. Adding Bing imagery<a class="headerlink" href="#adding-bing-imagery" title="Link to this heading">¶</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This may be unnecessary if Bing Imagery is already activated in your
+copy of JOSM.</p>
+</div>
+<p>In order to use satellite imagery while making our maps, we must make sure that
+it is enabled in the JOSM settings.</p>
+<ol class="arabic simple" start="8">
+<li><p>On the left side of the Preferences window there are different icons for
+different settings. Click the icon that says <span class="guilabel">WMS TMS</span>. You
+may need to click on the down arrow to find it:</p></li>
+</ol>
+<img alt="../../../../_images/image20.png" class="align-center" src="../../../../_images/image20.png" />
+<img alt="../../../../_images/image21.png" class="align-center" src="../../../../_images/image21.png" />
+<ol class="arabic simple" start="9">
+<li><p>Click on <span class="guilabel">Bing Sat</span>. Then click <span class="guilabel">Activate</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image22.png" class="align-center" src="../../../../_images/image22.png" />
+<ol class="arabic simple" start="10">
+<li><p><span class="guilabel">Bing Sat</span> should now be in the list below the
+<span class="guilabel">Activate</span> button.</p></li>
+</ol>
+</section>
+<section id="adding-presets">
+<h3>3.2. Adding presets<a class="headerlink" href="#adding-presets" title="Link to this heading">¶</a></h3>
+<p>We will be using presets so that we can add special data to OSM.
+Don’t worry if this is unclear right now - we will learn more about presets
+as we go along.</p>
+<ol class="arabic simple" start="11">
+<li><p>You should still have the Preferences window open. If not,
+go to <span class="menuselection">Edit ‣ Preferences</span> to open the window.</p></li>
+<li><p>On the left side, click the icon that looks like a grid.</p></li>
+</ol>
+<img alt="../../../../_images/image23.png" class="align-center" src="../../../../_images/image23.png" />
+<ol class="arabic simple" start="13">
+<li><p>Click the tab at the top that reads <span class="guilabel">Tagging Presets</span>.</p></li>
+<li><p>Under <span class="guilabel">Available Presets</span> find and select the entry labelled
+<kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Buildings</kbd> <kbd class="kbd docutils literal notranslate">Indonesia</kbd></kbd>. Click the blue arrow to the right of this box.</p></li>
+</ol>
+<img alt="../../../../_images/image24.png" class="align-center" src="../../../../_images/image24.png" />
+<ol class="arabic simple" start="15">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+</ol>
+</section>
+<section id="adding-plugins">
+<h3>3.3. Adding plugins<a class="headerlink" href="#adding-plugins" title="Link to this heading">¶</a></h3>
+<p>Plugins provide extra functionality for specific purposes. JOSM has many
+plugins that can be downloaded. To install a plugin follow these steps:</p>
+<ol class="arabic simple" start="16">
+<li><p>Make sure the Preferences window is open.</p></li>
+<li><p>Click the <span class="guilabel">Plugin</span> icon on the left:</p></li>
+</ol>
+<img alt="../../../../_images/image25.png" class="align-center" src="../../../../_images/image25.png" />
+<ol class="arabic simple" start="18">
+<li><p>On the plugin tab, first download the plugin list by
+clicking <span class="guilabel">Download list</span>. It may take a few minutes.</p></li>
+<li><p>After the plugin list appears, type the name of the plugin you want to
+download in the <span class="guilabel">Search</span> box.</p></li>
+</ol>
+<img alt="../../../../_images/image26.png" class="align-center" src="../../../../_images/image26.png" />
+<ol class="arabic simple" start="20">
+<li><p>When the plugin is found, check the box to the left of the plugin name.</p></li>
+<li><p>Click <span class="guilabel">OK</span> to download and install the selected plugins.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Skim through the list to see what sort of additional
+features are available through plugins.</p>
+</div>
+</section>
+<section id="changing-the-language">
+<h3>3.4. Changing the language<a class="headerlink" href="#changing-the-language" title="Link to this heading">¶</a></h3>
+<p>JOSM has been translated into many languages. If it has been translated
+into your language, you can change it in the Preferences.</p>
+<ol class="arabic simple" start="22">
+<li><p>Make sure the Preferences window is open.</p></li>
+<li><p>On the left side, click the icon that looks like a paint can and paintbrush.</p></li>
+<li><p>At the top of the window, click the tab that says <span class="guilabel">Look and Feel</span>.</p></li>
+<li><p>Choose your language in the drop-down box next to the word <span class="guilabel">Language</span>.</p></li>
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image27.png" class="align-center" src="../../../../_images/image27.png" />
+<ol class="arabic simple" start="27">
+<li><p>JOSM must be restarted to save the language settings. Go
+to <span class="menuselection">File ‣ Exit</span>.</p></li>
+<li><p>Start JOSM again by going to the Windows <span class="guilabel">Start Menu</span>. Find JOSM
+and click on it to start.</p></li>
+</ol>
+</section>
+</section>
+<section id="basic-drawing-with-josm">
+<h2>4. Basic drawing with JOSM<a class="headerlink" href="#basic-drawing-with-josm" title="Link to this heading">¶</a></h2>
+<p>Now let’s open up a sample OSM file which we will use to learn the basic
+ways to draw maps with JOSM. Note that this map is not real,
+in that it is not a real map of a real place, so we will not save it on
+OSM.</p>
+<ol class="arabic simple" start="29">
+<li><p>The file is located in <code class="file docutils literal notranslate"><span class="pre">osm/</span></code> and is named <code class="file docutils literal notranslate"><span class="pre">sample.osm</span></code>.</p></li>
+<li><p>Open JOSM. Go to <span class="menuselection">Open</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image28.png" class="align-center" src="../../../../_images/image28.png" />
+<ol class="arabic simple" start="31">
+<li><p>Navigate to the file <code class="file docutils literal notranslate"><span class="pre">sample.osm</span></code>. Click on it, and then
+click <span class="guilabel">Open</span>.</p></li>
+<li><p>You should now see a sample map, similar to this:</p></li>
+</ol>
+<img alt="../../../../_images/image29.png" class="align-center" src="../../../../_images/image29.png" />
+<section id="basic-operations">
+<h3>4.1. Basic operations<a class="headerlink" href="#basic-operations" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="33">
+<li><p>To move the map left or right, up or down, hold the right mouse button
+down, and move the mouse.</p></li>
+<li><p>There are several ways to zoom in and out of the map. With a mouse,
+the scroll wheel is used to zoom in and out. If you are using a laptop
+and don’t have a mouse, zoom in and out using the scale bar in the
+upper-left of the map window. Drag the bar left and right by holding your
+left mouse down and moving the bar left or right with your mouse.</p></li>
+</ol>
+<img alt="../../../../_images/image30.png" class="align-center" src="../../../../_images/image30.png" />
+<ol class="arabic simple" start="35">
+<li><p>Look at the sample map. There are a few different types of objects here. There
+is a river, a forest, some buildings, several roads, and a couple of shops.
+To select an object, click on it with your left mouse button.</p></li>
+</ol>
+</section>
+<section id="points-lines-and-shapes-polygons">
+<h3>4.2. Points, lines, and shapes (polygons)<a class="headerlink" href="#points-lines-and-shapes-polygons" title="Link to this heading">¶</a></h3>
+<p>As you click different objects on the sample map, notice that there are
+three different types of objects on the map. There are points, lines,
+and shapes. In mapping, shapes are usually called <em>polygons</em>.</p>
+<p>Points are a single location, represented by symbols. On this sample map,
+there are two points, a clothing shop and a market. The clothing shop is
+represented by a shirt symbol, and the market is represented by a shopping
+cart.</p>
+<p>There are several lines on the map as well, which represent roads. If you
+look closely you will see that within the lines, there are points as well.
+These points don’t have any symbols or other information associated with
+them, but they help to define where the line is located.</p>
+<p>Lastly, there are numerous shapes on the sample map,
+representing different places - a forest, a river, and buildings. A shape
+generally represents an area, like a field or a building. A shape is
+exactly like a line - the only difference is that the line begins at the
+same point where it ends.</p>
+<p>Notice that when you select an object, a list appears to the right
+of the map in a window called <span class="guilabel">Properties</span>. These are known as tags.
+<strong>Tags</strong> are information that is tied to a point, line or shape that describes
+what it is. For now all you need to know is that this information helps
+describe whether our object is a forest, a river, a building or something
+else.</p>
+<ol class="arabic simple" start="36">
+<li><p>Think about drawing a map by hand, and how you are also drawing points,
+lines and shapes. What other places are best represented by points? Lines?
+Shapes?</p></li>
+</ol>
+<p>Now, let’s practise drawing an object (point, line and shape).</p>
+<p>On the left side of JOSM is a column of buttons. Many of these buttons
+open new panels on the right side that provide more information about the
+map. The most important buttons are at the top of the column.
+These buttons change what you can do with your mouse. The top four buttons
+in this column are the most important. They allow you
+to: <span class="guilabel">Select</span>, <span class="guilabel">Draw</span>, <span class="guilabel">Zoom in</span> and
+<span class="guilabel">Delete</span></p>
+<p>Until now, you have been using the <span class="guilabel">Select</span> tool, which looks like
+this:</p>
+<img alt="../../../../_images/image31.png" class="align-center" src="../../../../_images/image31.png" />
+<ol class="arabic simple" start="37">
+<li><p>Before drawing, we need to make sure that nothing is selected. Click in
+the black space on the map, where it is empty, to make sure nothing is
+selected.</p></li>
+<li><p>Click the second button, the <span class="guilabel">Draw</span> tool.</p></li>
+</ol>
+<img alt="../../../../_images/image32.png" class="align-center" src="../../../../_images/image32.png" />
+<ol class="arabic simple" start="39">
+<li><p>Find an empty area on the map, and double-click with your mouse.
+This will create a single point.</p></li>
+<li><p>To draw a line, single-click with the mouse. Move the mouse and
+click again. Continue until you are happy with the line. To end the line,
+double-click.</p></li>
+<li><p>Draw a shape the same way that you draw a line, but finish the shape by
+double-clicking on the point where you started the line.</p></li>
+</ol>
+</section>
+<section id="changing-objects">
+<h3>4.3. Changing objects<a class="headerlink" href="#changing-objects" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="42">
+<li><p>Select the forest on the left side of the map. Be sure to click on the
+line around the forest, not one of the points on the line. Now hold your
+left mouse button down and drag your mouse. You should be able to move the
+forest to a new location on the map.</p></li>
+<li><p>Click on one of the points on the line around the forest. Hold your left
+mouse button down and drag your mouse. You should be able to move the point.
+This is how you can change the shape of an object, or move a point.</p></li>
+</ol>
+</section>
+<section id="id1">
+<h3>4.4. Adding presets<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p>Now we know how to draw points, lines and shapes,
+but we still haven’t defined what they represent. We want to be able to say
+that our points are shops, schools or something else,
+and whether our shapes are fields, buildings or something else.</p>
+<ol class="arabic simple" start="44">
+<li><p>Click the <span class="guilabel">Select</span> tool, in the column of buttons on the left.</p></li>
+</ol>
+<img alt="../../../../_images/image31.png" class="align-center" src="../../../../_images/image31.png" />
+<ol class="arabic simple" start="45">
+<li><p>Select one of the objects that you drew with the <span class="guilabel">Draw tool</span>. On the
+top menu, click <span class="menuselection">Presets</span>. Move your mouse through the sub-menu
+to the type of location you would like to define.</p></li>
+<li><p>When you click on a preset, a form pops up asking you for more
+information. You do not have to fill in every field, but you may wish to add
+some important fields, such as the name of the object.</p></li>
+<li><p>When you are finished entering the information, click <span class="guilabel">Apply Preset</span>.
+If everything went well, your point, line or shape should change colours or
+show a symbol. This is because it has now been defined.</p></li>
+</ol>
+</section>
+<section id="exercise">
+<h3>Exercise:<a class="headerlink" href="#exercise" title="Link to this heading">¶</a></h3>
+<p>Now let’s draw a map in order to practise the techniques we’ve learned.
+You may wish to redraw the map that you drew on paper in Module 1.</p>
+<ol class="arabic simple" start="48">
+<li><p>Drag the window away from the sample map by holding the right mouse button and
+dragging your mouse, until you have a nice empty area to draw on.</p></li>
+<li><p>Use the Draw tool to create points, lines and shapes. Describe what your
+objects are by selecting from the Presets menu.</p></li>
+<li><p>When you are finished, you should have your own map,
+similar to the sample map that we opened in <code class="file docutils literal notranslate"><span class="pre">sample.osm</span></code>.</p></li>
+</ol>
+<p><a class="reference internal" href="104-using-gps.html#using-gps"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="104-using-gps.html"
+                   title="Module 4: Using GPS"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="102-working-with-osm.html"
+                   title="Module 2: Working with OSM"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

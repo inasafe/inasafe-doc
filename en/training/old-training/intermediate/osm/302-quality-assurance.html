@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 2: Quality Assurance &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 3: Dealing With Conflicts" href="303-dealing-with-conflicts.html" />
+    <link rel="prev" title="Module 1: Advanced Editing" href="301-advanced-editing.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/intermediate/osm/302-quality-assurance.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/intermediate/osm/302-quality-assurance.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Intermediate Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 3: Data Collection Using OpenStreetMap Intermediate Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 2: Quality Assurance</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="303-dealing-with-conflicts.html"
+                   title="Module 3: Dealing With Conflicts"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="301-advanced-editing.html"
+                   title="Module 1: Advanced Editing"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../beginner/index.html">Beginner Training Module</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Intermediate Training Module</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 3: Data Collection Using OpenStreetMap Intermediate Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="300-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="301-advanced-editing.html">Module 1: Advanced Editing</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 2: Quality Assurance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="303-dealing-with-conflicts.html">Module 3: Dealing With Conflicts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="304-creating-josm-file-presets.html">Module 4: Creating JOSM File Presets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="305-using-private-data-store.html">Module 5: Using the Separate Data Store</a></li>
+<li class="toctree-l5"><a class="reference internal" href="306-editing-wiki-osm.html">Module 6: Editing the OpenStreetMap Wiki</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../qgis-inasafe/index.html">Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image610.png" src="../../../../_images/image610.png" />
+<section id="module-2-quality-assurance">
+<span id="quality-assurance"></span><h1>Module 2: Quality Assurance<a class="headerlink" href="#module-2-quality-assurance" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Use validation tools in JOSM</p></li>
+<li><p>Use online validation tools</p></li>
+</ul>
+<p>Contributing to OpenStreetMap is easy to learn, but difficult to master.
+Everybody makes mistakes, but the system works because even when one person
+does something the “wrong” way, there are always other mappers ready to help
+and fix errors.
+As you map more and more it will continue to get easier, and you will
+learn the “proper” way to do things.
+In this module we will take a look at the JOSM validation tool,
+which is an automated tool to search for errors and warnings in your data.
+We will also take a look at one of the online validation tools,
+which can aid us further in identifying mistakes on OSM.</p>
+<section id="errors-and-warnings">
+<h2>1. Errors and warnings<a class="headerlink" href="#errors-and-warnings" title="Link to this heading">¶</a></h2>
+<p>Sometimes when you go to upload your edits in JOSM you get a pop-up window like
+this:</p>
+<img alt="../../../../_images/image402.png" class="align-center" src="../../../../_images/image402.png" />
+<p>This is JOSM’s way of telling you that there is suspicious data and that you
+might want to review the errors and warnings before uploading to OSM.</p>
+<p>JOSM comes with a tool that does an automated analysis of possible mistakes.
+This is useful for finding errors that you may have overlooked.
+When you run the validation tool, it returns two lists of problems:</p>
+<ul class="simple">
+<li><p><strong>Errors:</strong> These are important to fix, and therefore usually you should not
+ignore these.
+Examples of errors include duplicated objects or overlapping lines and
+polygons.</p></li>
+<li><p><strong>Warnings:</strong> These are problems that are important to fix,
+but in some cases, they are tolerable.</p></li>
+</ul>
+<p>One thing to note is that if you download a large area of the map and run the
+validation tool, you may get a very long list of errors and warnings.
+This is because the validation tool works on the whole map,
+not only the changes that you have made.
+You may see mistakes that other mappers have made, and you can fix them,
+or ignore them.
+The validation tool gives you the opportunity to look at the mistakes one
+by one.</p>
+</section>
+<section id="using-the-validation-tool">
+<h2>2. Using the validation tool<a class="headerlink" href="#using-the-validation-tool" title="Link to this heading">¶</a></h2>
+<p>Let’s see how to use the validation tool:</p>
+<ol class="arabic simple">
+<li><p>In JOSM, download a section of the map. If you don’t see the
+<span class="guilabel">Validation Results</span> window in the right panel, click on the blue
+checkmark on the left to show it.</p></li>
+</ol>
+<img alt="../../../../_images/image412.png" class="align-center" src="../../../../_images/image412.png" />
+<ol class="arabic simple" start="2">
+<li><p>Ensure that nothing on the map is selected.
+If you run the validation tool with anything selected,
+it will only validate what you have selected, and not the whole map.
+Hover your mouse in the validation window and click <span class="guilabel">Validation</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image422.png" class="align-center" src="../../../../_images/image422.png" />
+<p>The map will change and any warnings will be circled in yellow, errors in red.
+In the <span class="guilabel">Validation Results</span> window you will see a list of warnings
+and errors, if there are any.</p>
+<img alt="../../../../_images/image432.png" class="align-center" src="../../../../_images/image432.png" />
+<ol class="arabic simple" start="3">
+<li><p>Errors should almost always be fixed.
+Zoom to an error by right-clicking on it in the window and
+selecting <span class="guilabel">Zoom to Problem</span>.
+Then fix the mistake manually.</p></li>
+<li><p>Some errors can be automatically fixed, such as “Duplicated nodes” errors.
+Click on the folder for these types of errors and click the
+<span class="guilabel">Fix</span> button in the window.
+Many errors, however, need to be corrected manually.</p></li>
+</ol>
+<img alt="../../../../_images/image442.png" class="align-center" src="../../../../_images/image442.png" />
+<p>Usually there are many more warnings than errors.
+By giving you a warning, JOSM is telling you that it is probably a mistake,
+but not always.
+Use your judgement to see if it is an important error or not.</p>
+<ol class="arabic simple" start="5">
+<li><p>If you select a warning from the list and decide that it is not a problem,
+click <span class="guilabel">Ignore</span> and it will be removed from the list.</p></li>
+<li><p>Re-run the validation tool at any time by clicking the
+<span class="guilabel">Validation</span> button.</p></li>
+</ol>
+</section>
+<section id="common-validation-warnings">
+<h2>3. Common validation warnings<a class="headerlink" href="#common-validation-warnings" title="Link to this heading">¶</a></h2>
+<section id="ways-that-are-not-closed">
+<h3>Ways that are not closed<a class="headerlink" href="#ways-that-are-not-closed" title="Link to this heading">¶</a></h3>
+<p>This is usually a line that does not form a polygon.
+Common examples are buildings where the first node does not meet the last node.</p>
+<img alt="../../../../_images/image592.png" class="align-center" src="../../../../_images/image592.png" />
+<p>To fix this, select both nodes and go to <span class="menuselection">Tools ‣ Merge Nodes</span>
+to connect them.</p>
+</section>
+<section id="crossing-buildings-overlapping-buildings">
+<h3>Crossing buildings (overlapping buildings)<a class="headerlink" href="#crossing-buildings-overlapping-buildings" title="Link to this heading">¶</a></h3>
+<p>This means that buildings are overlapping each other.</p>
+<img alt="../../../../_images/image602.png" class="align-center" src="../../../../_images/image602.png" />
+<p>To fix this, move the nodes of one of the buildings outside of the other
+building. It is possible for two buildings to share nodes, if the buildings
+share a common wall. But two buildings cannot overlap with one another.</p>
+</section>
+<section id="untagged-nodes-or-ways">
+<h3>Untagged nodes or ways<a class="headerlink" href="#untagged-nodes-or-ways" title="Link to this heading">¶</a></h3>
+<p>If someone draws a point or a line but forgets to
+give it any tags, then it is useless, because it does not mean anything.</p>
+<img alt="../../../../_images/image612.png" class="align-center" src="../../../../_images/image612.png" />
+<p>To fix this, apply tags to the object to identify it, or delete it if it is a
+mistake.</p>
+</section>
+<section id="end-node-near-another-way">
+<h3>End node near another way<a class="headerlink" href="#end-node-near-another-way" title="Link to this heading">¶</a></h3>
+<p>If a line ends very close to another line but
+does not connect, this raises a warning.</p>
+<p>Many times this warning is not important, but it helps to find road
+intersections that are supposed to connect but do not.</p>
+<img alt="../../../../_images/image622.png" class="align-center" src="../../../../_images/image622.png" />
+</section>
+<section id="crossing-ways">
+<h3>Crossing ways<a class="headerlink" href="#crossing-ways" title="Link to this heading">¶</a></h3>
+<p>Lines that cross other lines without being connected will
+raise warnings.
+Many times this is not a problem, because the crossing ways are intentional -
+such as in the case of bridges, or streets and rivers that cross landuse
+polygons.
+However, it is sometimes helpful to find errors.</p>
+<img alt="../../../../_images/image632.png" class="align-center" src="../../../../_images/image632.png" />
+<p>OSM depends on people correcting and editing mistakes.
+Editing and validating data is important for improving maps.
+If you do not have time to get in the field with a GPS or trace imagery,
+validating objects and attribute data is a good way to contribute.</p>
+</section>
+</section>
+<section id="using-the-tasking-manager">
+<h2>4. Using the tasking manager<a class="headerlink" href="#using-the-tasking-manager" title="Link to this heading">¶</a></h2>
+<p>The OSM Tasking Manager is a tool that mappers can use to sort an area into a
+grid, and work together to map in an organised way.
+Apart from being more organised, the tasking manager is also one way to avoid
+editing conflicts, because it helps prevent more than one person from editing
+the same area at the same time.</p>
+<p>One consistent challenge is coordinating field and/or remote workers to map an
+area together.
+To help address this, HOT has developed the Tasking Manager to make
+it easier for administrators to define the areas of mapping interest and to
+delegate workers.
+The idea behind this tool is that if there is an area, let’s say a city,
+that we want to map, we can coordinate between people mapping on the ground
+and others mapping remotely with satellite imagery,
+This tool allows us to create a grid of the entire area.
+Collaborators select blocks in the grid that they plan to map,
+and when they finish, they mark the area as complete.
+In this way a team of many people can coordinate to map the entire grid.</p>
+<p>To see how the tasking manager works, let’s take a closer look.</p>
+<ol class="arabic simple" start="7">
+<li><p>Open your internet browser and go <a class="reference external" href="http://tasks.hotosm.org">here</a>.
+You will see a page like this:</p></li>
+</ol>
+<img alt="../../../../_images/image452.png" class="align-center" src="../../../../_images/image452.png" />
+<ol class="arabic simple" start="8">
+<li><p>Click <span class="guilabel">login to OpenStreetMap</span>.</p></li>
+<li><p>Here you must agree to allow this application some access to your
+OSM account. To do so, click <span class="guilabel">Save Changes</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image462.png" class="align-center" src="../../../../_images/image462.png" />
+<p>On the left is a list of current mapping tasks.
+These are different places in the world that people are coordinating to map.</p>
+<img alt="../../../../_images/image472.png" class="align-center" src="../../../../_images/image472.png" />
+<ol class="arabic simple" start="10">
+<li><p>Click on one of the projects to see more information about it.</p></li>
+</ol>
+<img alt="../../../../_images/image481.png" class="align-center" src="../../../../_images/image481.png" />
+<p>This page shows you everything you need to know about the project.
+On the left side of the page is a description of the mapping project and
+how it is being organised.
+You can click on the different tabs to get more information.
+On the right side is a grid showing the area to be mapped.
+Red grid squares have been completed, green squares have been completed and
+checked by another person, and the remaining squares still need to be
+mapped or are being worked on.</p>
+<ol class="arabic simple" start="11">
+<li><p>Click on the <span class="guilabel">Activity</span> tab to see activity for this task. The
+<span class="guilabel">Stats</span> tab shows various users and their contributions.</p></li>
+<li><p>To claim a grid square to work on yourself, click <span class="guilabel">Start contributing</span>
+on the <span class="guilabel">Instructions</span> tab, or simply click an unclaimed square on the
+map and then click <span class="guilabel">Start mapping</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image492.png" class="align-center" src="../../../../_images/image492.png" />
+<ol class="arabic simple" start="13">
+<li><p>Next you see a view of the square that you have chosen to map.
+Click the button on the left to open the area up for editing with JOSM,
+iD, Potlatch 2 or create a Field Paper.</p></li>
+</ol>
+<img alt="../../../../_images/image49b.png" class="align-center" src="../../../../_images/image49b.png" />
+<ol class="arabic simple" id="quality-assurance-step-14" start="14">
+<li><p>If you plan to edit with JOSM, you need to enable the JOSM remote control
+before you are able to launch the application from the Tasking Manager.
+To do this, open JOSM and go the <span class="menuselection">Preferences</span> menu.
+Click on the  <span class="guilabel">Remote Settings</span> tab and check the box next to
+<span class="guilabel">Enable remote control</span>.
+Restart JOSM.</p></li>
+</ol>
+<img alt="../../../../_images/image502.png" class="align-center" src="../../../../_images/image502.png" />
+<ol class="arabic simple" start="15">
+<li><p>Return to the Tasking Manager and choose <span class="guilabel">Edit with JOSM</span>.
+If you have JOSM open and you correctly enabled the remote control,
+the grid area of the map you selected will automatically be loaded into JOSM.</p></li>
+<li><p>Next you may edit the area using the instructions provided in the project
+information. Usually tasks will be to trace certain features using imagery,
+such as buildings and roads. Alternatively, tasks might be set to map in
+more detail on the ground.</p></li>
+<li><p>When you are finished you will upload your edits and then return to the
+Tasking Manager to add a comment about your work. If you finish the grid
+square, click <span class="guilabel">Mark task as done</span>.</p></li>
+<li><p>If you are unable to complete the task, click <span class="guilabel">Unlock</span> to make
+the task available again for other mappers.</p></li>
+</ol>
+<img alt="../../../../_images/image512.png" class="align-center" src="../../../../_images/image512.png" />
+<p>When you finish an area, the grid square
+will turn yellow on the map to indicate that it is done.
+Someone else will then look at your work to make sure it is good,
+and if they agree that you’ve completed the square well,
+the grid square will turn green, meaning it is complete!</p>
+</section>
+<section id="editing-tips">
+<h2>5. Editing tips<a class="headerlink" href="#editing-tips" title="Link to this heading">¶</a></h2>
+<p>In this section we will go over some common mistakes in JOSM and provide some
+editing tips for making your maps great!</p>
+<section id="some-objects-should-not-connect">
+<h3>Some objects should not connect<a class="headerlink" href="#some-objects-should-not-connect" title="Link to this heading">¶</a></h3>
+<p>When you are creating polygons and lines that are not supposed to be connected,
+make sure that they are not merged together by sharing a node.
+For example, highway nodes should not be snapped to buildings,
+because no one likes a road that leads directly into a wall!
+If you want to disentangle two or more obejcts that share the same node,
+select the node and press <kbd class="kbd docutils literal notranslate">G</kbd>.</p>
+<img alt="../../../../_images/image522.png" class="align-center" src="../../../../_images/image522.png" />
+<img alt="../../../../_images/image532.png" class="align-center" src="../../../../_images/image532.png" />
+</section>
+<section id="but-some-objects-should-connect">
+<h3>But, some objects should connect<a class="headerlink" href="#but-some-objects-should-connect" title="Link to this heading">¶</a></h3>
+<p>However, some objects SHOULD connect!
+Road intersections should always be snapped together.
+If two roads do not share a common node, then the computer
+has no way of knowing that the roads actually connect to each other.</p>
+<img alt="../../../../_images/image542.png" class="align-center" src="../../../../_images/image542.png" />
+</section>
+<section id="overlapping-objects">
+<h3>Overlapping objects<a class="headerlink" href="#overlapping-objects" title="Link to this heading">¶</a></h3>
+<p>A common error is to have overlapping polygons when the objects they represent
+do not overlap in real life.
+A building cannot overlap another building.
+This mistake is commonly made with buildings and landuse polygons.
+For example, a polygon drawn to represent a park outside a building should
+not overlap with the building.
+Instead it should be drawn next to the building.
+There are some exceptions to this rule, such as schools.
+Within a school yard you might identify individual buildings using polygons,
+yet you also might want to create a polygon around the entire school yard.
+In this case it is fine for the polygons to overlap, but the rule to follow
+here is to make sure that the buildings are completely inside the landuse
+polygon.</p>
+<img alt="../../../../_images/image552.png" class="align-center" src="../../../../_images/image552.png" />
+<img alt="../../../../_images/image562.png" class="align-center" src="../../../../_images/image562.png" />
+<p>We all make mistakes, and as you map more you will make less mistakes!
+Just remember that even if you upload data that contains mistakes,
+it is simple to fix your mistakes and upload the change again.
+This is what is great about OSM, you can always make it better!</p>
+</section>
+</section>
+<section id="presets-standardisation">
+<h2>6. Presets standardisation<a class="headerlink" href="#presets-standardisation" title="Link to this heading">¶</a></h2>
+<p>OSM is used around the world by speakers of many different languages.
+Any feature in OSM can have whatever tags users choose. While this provides
+a lot of flexibility, it is important that users worldwide agree on the same
+tags to identify the same objects no matter what country they are located in.</p>
+<p>For such purposes of standardisation, most tags in OSM are in British English.
+An extensive list of standardised OSM tags is available on the OSM Wiki
+<a class="reference external" href="http://wiki.openstreetmap.org/wiki/Map_Features">Map Features page</a>.</p>
+<p>When users enter tags manually in JOSM or another editor, it is common to
+make spelling or other mistakes, particularly for beginners. For this reason,
+it is a good idea to use the presets menu, which uses forms that prevent
+incorrect tags from being entered.</p>
+<p>Using standardised tags aids in:</p>
+<ul class="simple">
+<li><p>Assuring data consistency and stability</p></li>
+<li><p>Easier data search and analysis</p></li>
+<li><p>Setting benchmarks for improvement</p></li>
+<li><p>Data validation</p></li>
+<li><p>Map rendering on OSM website</p></li>
+</ul>
+</section>
+<section id="keepright">
+<h2>7. KeepRight<a class="headerlink" href="#keepright" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="19">
+<li><p>The KeepRight website is another useful validation tool for OSM.
+Open your web browser and head to <a class="reference external" href="http://keepright.at">http://keepright.at</a>.</p></li>
+<li><p>If needed, switch the site into Indonesian by choosing <span class="guilabel">id</span> from
+the drop-down box in the in the upper right.</p></li>
+</ol>
+<img alt="../../../../_images/image642.png" class="align-center" src="../../../../_images/image642.png" />
+<ol class="arabic simple" start="21">
+<li><p>Click <span class="guilabel">Data Checks for Asia</span> to check OSM data in Asia.
+This will open up a slippy map with errors displayed on it.</p></li>
+<li><p>Navigate to your area of interest by using the zoom and pan
+functions.</p></li>
+</ol>
+<img alt="../../../../_images/image651.png" class="align-center" src="../../../../_images/image651.png" />
+<ol class="arabic simple" start="23">
+<li><p>The types of errors are listed to the left of the map.
+Get more details about each error by clicking on the icons which
+hover above the map.</p></li>
+</ol>
+<img alt="../../../../_images/image661.png" class="align-center" src="../../../../_images/image661.png" />
+<ol class="arabic simple" start="24">
+<li><p>When you see an error in your area of interest, the next step is to fix
+it. Click on the links to one of the editors (JOSM, Potlatch, or iD)
+to open this data in the editor. Note that to edit in JOSM you must
+have the JOSM Remote Control Enabled (as described in the
+<a class="reference internal" href="#quality-assurance-step-14"><span class="std std-ref">Tasking Manager section</span></a>
+above).</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We recommend that the editing is done in JOSM,
+because its editing features are more complete. Note that JOSM
+must be open (with remote control enabled) in order to connect with
+the KeepRight website.</p>
+</div>
+<img alt="../../../../_images/image671.png" class="align-center" src="../../../../_images/image671.png" />
+<ol class="arabic simple" start="25">
+<li><p>Use JOSM (or another editor) to fix the errors that you find on the
+KeepRight website. After fixing them, return to the site and select
+<span class="guilabel">ignore temporarily</span>. Add a comment and click <span class="guilabel">save</span>.</p></li>
+</ol>
+<p><a class="reference internal" href="303-dealing-with-conflicts.html#dealing-with-conflicts"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="303-dealing-with-conflicts.html"
+                   title="Module 3: Dealing With Conflicts"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="301-advanced-editing.html"
+                   title="Module 1: Advanced Editing"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

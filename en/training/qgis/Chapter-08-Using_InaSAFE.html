@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Chapter 8: Using InaSAFE &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Training of Trainer Module" href="../tot/index.html" />
+    <link rel="prev" title="Chapter 7: Using Map Composer" href="Chapter-07-Using_Map_Composer.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/qgis/Chapter-08-Using_InaSAFE.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/qgis/Chapter-08-Using_InaSAFE.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    QGIS and InaSAFE for Disaster Management</a>
+                </li>
+                
+
+                <li><a href="#">Chapter 8: Using InaSAFE</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="../tot/index.html"
+                   title="Training of Trainer Module"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-07-Using_Map_Composer.html"
+                   title="Chapter 7: Using Map Composer"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">QGIS and InaSAFE for Disaster Management</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Chapter-00-Preface.html">Preface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-01-GIS_for_Disaster_Management.html">Chapter 1: GIS for Disaster Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-02-QGIS_and_InaSAFE_for_Disaster_Management.html">Chapter 2: QGIS and InaSAFE in Disaster Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-03-Basic_QGIS.html">Chapter 3: The Basics of QGIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-04-Map_Projection_Basic.html">Chapter 4: Map Projection Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-05-Working_with_Vector_Data.html">Chapter 5: Working with Vector Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-06-Working_with_Raster_Data.html">Chapter 6: Working with Raster Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-07-Using_Map_Composer.html">Chapter 7: Using Map Composer</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 8: Using InaSAFE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hazards-exposure-and-impact">8.1 Hazards, Exposure and Impact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-inasafe-interface">8.2 The InaSAFE Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#run-inasafe-for-infrastructure">8.3 Run InaSAFE for Infrastructure</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#adding-hazard-data">8.3.1 Adding Hazard Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#adding-exposure-data">8.3.2 Adding Exposure Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#adding-keyword-metadata">8.3.3 Adding Keyword Metadata</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#set-outline-impact-analysis">8.3.4 Set Outline Impact Analysis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#impact-analysis">8.3.5 Impact Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#run-inasafe-for-population">8.4 Run InaSAFE for Population</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#id1">8.4.1 Adding Exposure Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#adding-keyword-data-for-population">8.4.2 Adding Keyword Data for Population</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#using-boundary-as-aggregation-layer">8.4.3 Using boundary as aggregation layer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#set-outline-analysis">8.4.4 Set Outline Analysis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#configure-minimum-needs">8.4.5 Configure Minimum Needs</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#run-impact-analyst-with-modified-minimum-needs">8.4.6 Run Impact Analyst with Modified Minimum Needs</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#print-inasafe-result">8.5 Print InaSAFE Result</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#save-your-results">8.6 Save Your Results</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#save-your-inasafe-result-style">8.6.1 Save your InaSAFE result style</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#save-inasafe-result-layer">8.6.2 Save InaSAFE Result layer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#save-project">8.6.3 Save Project</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/1_0001.png" src="../../_images/1_0001.png" />
+<section id="chapter-8-using-inasafe">
+<span id="ch8-using-inasafe"></span><h1>Chapter 8: Using InaSAFE<a class="headerlink" href="#chapter-8-using-inasafe" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand Hazard, Exposure and Impact</p></li>
+<li><p>Learn InaSAFE interface</p></li>
+<li><p>Run InaSAFE for Infrastructure</p></li>
+<li><p>Use InaSAFE OpenStreetMap downloader</p></li>
+<li><p>Add keyword metadata</p></li>
+<li><p>Set outline impact analysis</p></li>
+<li><p>Run InaSAFE for Population</p></li>
+<li><p>Use aggregation layer</p></li>
+<li><p>Customize minimum needs</p></li>
+<li><p>Print InaSAFE Result</p></li>
+<li><p>Save Impact Result data into new layer</p></li>
+</ul>
+<p>InaSAFE provides overviews of potential disaster scenarios, of their outcomes, as well as map
+which can aid decision makers when disaster strikes. In this chapter we will learn about
+how to use InaSAFE along with other usefull features in InaSAFE for flood hazard scenario.
+If you interest to learn more about InaSAFE with other hazard beside flood,
+you go and learn in <a class="reference external" href="http://www.inasafe.org">InaSAFE website</a>.</p>
+<section id="hazards-exposure-and-impact">
+<h2>8.1 Hazards, Exposure and Impact<a class="headerlink" href="#hazards-exposure-and-impact" title="Link to this heading">¶</a></h2>
+<p>Let’s begin by reviewing the inputs and outputs of InaSAFE – <strong>hazard</strong>; <strong>exposure</strong>; and
+<strong>impact</strong>. These terms are important for you to remember because the analysis process depend on
+these three things.</p>
+<p><strong>Hazards</strong> (also called disasters) are what we call the data layers that describe the extent and
+magnitude of natural events (such as earthquakes, tsunamis, volcanic eruptions)
+that could potentially cause an event or series of events that threaten and disrupt the lives and
+livelihoods of people.</p>
+<p>In general, the hazards data we use in InaSAFE represents a single hazard scenario.
+A scenario means that the hazard:</p>
+<ul class="simple">
+<li><p>is at a particular location</p></li>
+<li><p>has a measured intensity</p></li>
+<li><p>has a measured duration</p></li>
+<li><p>has a certain time frame</p></li>
+</ul>
+<p><strong>Exposure</strong> data represents things that are at risk when faced with a potential hazard.
+This can be man-made features such as public buildings, houses, roads and bridges,
+or it can be so-called natural features, such as population, rice paddies and lakes.
+These exposed elements can be divided into various categories, including physical elements
+(houses, power lines), economic elements (agricultural land, access to employment),
+social elements (vulnerable groups, population count), and environmental elements
+(air, water, plants and animals).</p>
+<p><strong>Impact</strong> is the result we get after InaSAFE processes the effect of the hazard data upon
+the exposure data. For example, if there is an earthquake model in Lembang,
+and we process it against building data in Bandung, our impact layer may show those houses
+that would be severely damaged, those somewhat damaged, and those mildly damaged.
+In other words, what goes in to InaSAFE are hazards and exposure. What comes out is impact.</p>
+</section>
+<section id="the-inasafe-interface">
+<h2>8.2 The InaSAFE Interface<a class="headerlink" href="#the-inasafe-interface" title="Link to this heading">¶</a></h2>
+<p>Before we run any scenarios, let’s take a closer look at the InaSAFE interface.</p>
+<ol class="arabic simple">
+<li><p>First, make sure you’ve installed the InaSAFE plugins. Follow the plugin instructions
+in <a class="reference internal" href="Chapter-03-Basic_QGIS.html#ch3-basic-of-qgis"><span class="std std-ref">chapter 3</span></a>. Find and install the plugin called InaSAFE.</p></li>
+<li><p>Open a new project in QGIS.</p></li>
+<li><p>If the InaSAFE toolbar is not visible, right-click on the toolbars and make sure
+that <span class="guilabel">InaSAFE</span> plugin is checked. The toolbar looks like this:</p></li>
+</ol>
+<img alt="../../_images/8_0011.png" class="align-center" src="../../_images/8_0011.png" />
+<ol class="arabic simple" start="4">
+<li><p>To show the InaSAFE panel, click on the <span class="guilabel">Toggle InaSAFE dock</span> button.</p></li>
+</ol>
+<img alt="../../_images/8_0021.png" class="align-center" src="../../_images/8_0021.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Just like QGIS toolbars, you can drag and drop the InaSAFE dock panel
+to change its position on the QGIS interface. You can pull it away as a separate window,
+or place it below the Layers panel. It’s convenient in its location on the right side
+of QGIS, so we will leave it there.</p>
+</div>
+<img alt="../../_images/8_0031.png" class="align-center" src="../../_images/8_0031.png" />
+<p>The InaSAFE panel consists of three parts: Questions, Results and Buttons. The questions are mixed
+in with dropdown boxes - this is where we establish our input data and define the scenario
+that we want InaSAFE to process. The purpose of InaSAFE is to make your impact analysis
+very simple and easy to do. The Questions section provides a simple way for you
+to formulate what you want to know. All questions are created in the following format:</p>
+<p>In the event of [<strong>hazard</strong>] how many [<strong>exposure</strong>] will be affected?</p>
+<p>For example: “In the event of an earthquake how many buildings will be affected?”</p>
+<p>The Results section is filled in with information after InaSAFE is run, as we shall see.
+The buttons at the bottom allow us to run a scenario, print and access help.</p>
+</section>
+<section id="run-inasafe-for-infrastructure">
+<h2>8.3 Run InaSAFE for Infrastructure<a class="headerlink" href="#run-inasafe-for-infrastructure" title="Link to this heading">¶</a></h2>
+<section id="adding-hazard-data">
+<h3>8.3.1 Adding Hazard Data<a class="headerlink" href="#adding-hazard-data" title="Link to this heading">¶</a></h3>
+<p>We will learn about how to use InaSAFE to run impact scenario based on Infrastructure data.
+Before we start, let’s find out how to add hazard data first. Hazards can be represented by vector layers or
+by raster layers. Remember that raster layers are like images with many pixels,
+and each pixel represents some data about an area on the ground. A raster that shows elevation,
+for example, will contain pixels with different values based on the altitude of the location.
+Similarly, a raster that represents a flood will contain the depth of the flood in every pixel in
+the raster.</p>
+<p>Let’s begin by adding our hazard layer to QGIS. It’s a raster model of flood in Jakarta.</p>
+<ol class="arabic simple">
+<li><p>Click the <span class="guilabel">Add Raster Layer</span> button.</p></li>
+</ol>
+<img alt="../../_images/8_0041.png" class="align-center" src="../../_images/8_0041.png" />
+<ol class="arabic simple" start="2">
+<li><p>Open <code class="file docutils literal notranslate"><span class="pre">Jakarta_Flood_HKV_WGS84.tif</span></code>. This data is raster data (in .tif format) which represents
+the flood prone area. The layer will look like this:</p></li>
+</ol>
+<img alt="../../_images/8_0051.png" class="align-center" src="../../_images/8_0051.png" />
+<p>You will notice that the hazard drop-down box has been automatically filled in the InaSAFE panel.
+This is because the data file has already been prepared for us with keyword metadata
+(fancy words for settings) that tells InaSAFE whether it’s a hazard or exposure layer.
+When we add the exposure data, we will learn how to add these InaSAFE keywords ourselves.</p>
+</section>
+<section id="adding-exposure-data">
+<h3>8.3.2 Adding Exposure Data<a class="headerlink" href="#adding-exposure-data" title="Link to this heading">¶</a></h3>
+<p>We can get the data from OpenStreetMap using OpenStreetMap Downloader.
+We will get any OpenStreetMap data based on the current map extent in QGIS.
+If your map extent displaying Indonesia, that will take a while to download it since there will be a whole
+lot of OpenStreetMap data. It would be better to zoom in in specific location to minimize the bandwidth.
+Let’s learn how to use OpenStreetMap Downloader in QGIS to get OpenStreetMap data.</p>
+<ol class="arabic simple">
+<li><p>Click on <span class="guilabel">OpenStreetMap Downloader</span> button.</p></li>
+</ol>
+<img alt="../../_images/8_0061.png" class="align-center" src="../../_images/8_0061.png" />
+<ol class="arabic simple" start="2">
+<li><p>In the <em>Feature Types</em> you can choose all the OpenStreetMap data or specific data
+that you want download such as <span class="guilabel">building polygons</span> and <span class="guilabel">Roads</span>.
+Also you can download <span class="guilabel">political boundaries</span> and select level administration
+in your area such as RW Jakarta is level 8.</p></li>
+<li><p>Set you <em>output directory</em> to the destination you want by clicking “…” button on the right side.</p></li>
+</ol>
+<img alt="../../_images/8_0071.png" class="align-center" src="../../_images/8_0071.png" />
+<ol class="arabic simple" start="4">
+<li><p>If you want to use some prefix, for example <kbd class="kbd docutils literal notranslate">jakarta</kbd> you can type in
+<span class="guilabel">File name prefix</span> area.</p></li>
+<li><p>We can download all the map canvas extent but it would take a long time.
+Otherwise if you want to download specific area, click on <span class="guilabel">Drag on Map</span> button and
+create a bounding box by dragging it to set download area.</p></li>
+<li><p>Click on <span class="guilabel">OK</span> and wait until the download is finished.</p></li>
+</ol>
+<img alt="../../_images/8_0081.png" class="align-center" src="../../_images/8_0081.png" />
+<ol class="arabic simple" start="7">
+<li><p>You can hide the <strong>Roads</strong> by clicking the box next to <span class="guilabel">Roads</span> layer list.</p></li>
+</ol>
+</section>
+<section id="adding-keyword-metadata">
+<h3>8.3.3 Adding Keyword Metadata<a class="headerlink" href="#adding-keyword-metadata" title="Link to this heading">¶</a></h3>
+<p>In order for InaSAFE to know that our layers are hazard or exposure datasets,
+we need to assign keywords to the layers using the InaSAFE keyword tool.
+Let’s take a look at the keywords that have already been created on the hazard layer.</p>
+<ol class="arabic simple">
+<li><p>Select the <span class="guilabel">buildings</span> layer in the Layers panel, and click on the
+<span class="guilabel">Keywords Creation Wizard</span> button.</p></li>
+</ol>
+<img alt="../../_images/8_0091.png" class="align-center" src="../../_images/8_0091.png" />
+<ol class="arabic simple" start="2">
+<li><p>In the <em>InaSAFE Keywords Creation Wizard</em> window, firstly, choose <span class="guilabel">Exposure</span>
+since building is one of the exposure affected by hazard. Then, click <span class="guilabel">Next</span>.</p></li>
+</ol>
+<img alt="../../_images/8_0101.png" class="align-center" src="../../_images/8_0101.png" />
+<ol class="arabic simple" start="3">
+<li><p>In the next step, we have to choose what kind of exposure the building layer represents.
+Choose <span class="guilabel">Structures</span> and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>Choose what kind of data the building layer represents. Since the building layer data has
+been classified, choose <span class="guilabel">Classified</span> and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>In the next step, we have to select the attribute in the building layer that represents the classes.
+Then click <span class="guilabel">Next</span>.</p></li>
+<li><p>Select the type of classification we want to use and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>Drag unique values from the list on the left into the panel on the right and place them
+in the appropriate categories and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>The next step is optional. We can write a short comment about the source of the data. Then click <span class="guilabel">Next</span>.</p></li>
+<li><p>Give title to the building layer and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>Click <span class="guilabel">Finish</span>.</p></li>
+<li><p>Select the <span class="guilabel">Roads</span> layer. Open the keyword editor and do the steps above all over again.</p></li>
+<li><p>Notice that the layer now appears in the InaSAFE panel.</p></li>
+</ol>
+<img alt="../../_images/8_0111.png" class="align-center" src="../../_images/8_0111.png" />
+</section>
+<section id="set-outline-impact-analysis">
+<h3>8.3.4 Set Outline Impact Analysis<a class="headerlink" href="#set-outline-impact-analysis" title="Link to this heading">¶</a></h3>
+<p>If you have a laptop with small RAM, run InaSAFE for large area with so many data will take
+a long time to finish. To solve the problem, we can set the analysis area to a smaller area
+to make the analysis quicker.</p>
+<ol class="arabic simple">
+<li><p>Select <span class="guilabel">Toggle Scenario Outlines</span> to show analysis outline area.</p></li>
+</ol>
+<img alt="../../_images/8_0121.png" class="align-center" src="../../_images/8_0121.png" />
+<p>Green box will appear around the map canvas.</p>
+<img alt="../../_images/8_0131.png" class="align-center" src="../../_images/8_0131.png" />
+<p>This green box is the analysis area. InaSAFE will calculate all the data inside the green box.</p>
+<ol class="arabic simple" start="2">
+<li><p>To change the analysis area, click <span class="guilabel">Set analysis area</span> button.</p></li>
+</ol>
+<img alt="../../_images/8_0141.png" class="align-center" src="../../_images/8_0141.png" />
+<ol class="arabic simple" start="3">
+<li><p>Click <span class="guilabel">Use intersections of hazard, exposure and this bounding box</span> and click on
+<span class="guilabel">Drag on map</span> button and create a box to set analysis area.
+This will create blue box around map canvas.</p></li>
+</ol>
+<img alt="../../_images/8_0151.png" class="align-center" src="../../_images/8_0151.png" />
+<ol class="arabic simple" start="4">
+<li><p>After that click <span class="guilabel">OK</span>.</p></li>
+</ol>
+</section>
+<section id="impact-analysis">
+<h3>8.3.5 Impact Analysis<a class="headerlink" href="#impact-analysis" title="Link to this heading">¶</a></h3>
+<p>Now our hazard and exposure data are set in the InaSAFE panel,
+because the appropriate keywords have been added to our layers.
+Note that if we were to add a second exposure layer to our project,
+we would be able to choose which exposure layer we wanted from the InaSAFE drop-down menu.
+The same applies to hazard layers.</p>
+<p>The third drop-down box is the impact function. This concludes our question,
+and defines the function that InaSAFE will run behind the scenes.
+InaSAFE developers have written many of these functions to analyse all sorts of hazard and
+exposure layers. The function that is selected for us here will process
+the hazard and exposure layers spatially to determine how the exposure layer will “be flooded.”</p>
+<p>Click the <span class="guilabel">Run</span> button at the bottom to start the impact analysis.
+At the end of the process, the statistics will be displayed in the Results section,
+and a new layer will be added to the Layers panel that describes the result of the analysis.
+The map will show which buildings that are affected and which are not.</p>
+<img alt="../../_images/8_016.png" class="align-center" src="../../_images/8_016.png" />
+</section>
+</section>
+<section id="run-inasafe-for-population">
+<h2>8.4 Run InaSAFE for Population<a class="headerlink" href="#run-inasafe-for-population" title="Link to this heading">¶</a></h2>
+<p>In this section we will learn how to run impact analysis for population data with InaSAFE.
+We are going to use the same raster hazard data for flood in Jakarta and we will add another
+exposure data: population from AsiaPop.</p>
+<section id="id1">
+<h3>8.4.1 Adding Exposure Data<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p>We have already learned about how to change the symbol for this data in previous chapter (chapter 6),
+so if the appearance of this AsiaPop’s data is different than yours,
+you may need to change it.</p>
+<ol class="arabic simple">
+<li><p>Click <span class="guilabel">Add Raster Layer</span> button and add <code class="file docutils literal notranslate"><span class="pre">Java_Population_WGS84.tif</span></code>.</p></li>
+<li><p>Change the layer order like this:</p></li>
+</ol>
+<img alt="../../_images/8_017.png" class="align-center" src="../../_images/8_017.png" />
+<ol class="arabic simple" start="3">
+<li><p>You can hide the vector data such as roads and buildings to create clearer view in map canvas.</p></li>
+</ol>
+</section>
+<section id="adding-keyword-data-for-population">
+<h3>8.4.2 Adding Keyword Data for Population<a class="headerlink" href="#adding-keyword-data-for-population" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Select the <strong>Java_Population_WGS84</strong> layer in the Layers panel, and click on the
+<span class="guilabel">Keywords Creation Wizard</span> button.</p></li>
+</ol>
+<img alt="../../_images/8_018.png" class="align-center" src="../../_images/8_018.png" />
+<ol class="arabic simple" start="2">
+<li><p>In the <em>Keywords Creation Wizard</em> window choose <span class="guilabel">Exposure</span> as category layer, then click <span class="guilabel">Next</span>.</p></li>
+</ol>
+<img alt="../../_images/8_019.png" class="align-center" src="../../_images/8_019.png" />
+<ol class="arabic simple" start="3">
+<li><p>In the next step, we have to choose what kind of exposure the population layer represents.
+Choose <span class="guilabel">Population</span> and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>Choose what kind of data the building layer represents. Choose <span class="guilabel">Continuous</span> and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>We have to choose what units the continuous data are in. Then, click <span class="guilabel">Next</span>.</p></li>
+<li><p>In the next step, we can select the checkbox if we want InaSAFE to resample the layer to the
+hazard layer resolution during analyses. Then, click <span class="guilabel">Next</span>.</p></li>
+<li><p>The next step is optional. We can write a short comment about the source of the data. Then click <span class="guilabel">Next</span>.</p></li>
+<li><p>We can fill the <span class="guilabel">Title</span> with <kbd class="kbd docutils literal notranslate">People</kbd> and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>Click <span class="guilabel">Finish</span>.</p></li>
+<li><p>Notice that the layer now appears in the InaSAFE panel.</p></li>
+</ol>
+<img alt="../../_images/8_020.png" class="align-center" src="../../_images/8_020.png" />
+</section>
+<section id="using-boundary-as-aggregation-layer">
+<h3>8.4.3 Using boundary as aggregation layer<a class="headerlink" href="#using-boundary-as-aggregation-layer" title="Link to this heading">¶</a></h3>
+<p>We can use InaSAFE to give impact result according to the whole area or divide it
+by administrative boundary. InaSAFE will provide impact analyst result
+for each administration area that we provide. This method will help us
+to know the result specifically for each area, so we are able to know how many people
+that might be affected and how many logistic we should prepare for each administration area.
+To do this, we need to define aggregation layer first using <span class="guilabel">Keyword Creation Wizard</span>.</p>
+<ol class="arabic simple">
+<li><p>Click <span class="guilabel">Add Vector Layer</span> button and add <code class="file docutils literal notranslate"><span class="pre">Jakarta_District_Boundary_WGS84.shp</span></code>.</p></li>
+<li><p>Select the <code class="file docutils literal notranslate"><span class="pre">Jakarta</span> <span class="pre">District.shp</span></code> layer in the Layers panel, and click on the
+<span class="guilabel">Keywords Creation Wizard</span> button.</p></li>
+<li><p>In the <em>Keywords Creation Wizard</em> window choose aggregation as category layer.</p></li>
+</ol>
+<img alt="../../_images/8_021.png" class="align-center" src="../../_images/8_021.png" />
+<ol class="arabic simple" start="4">
+<li><p>Select the attribute in the layer that has the name of the aggregation areas.
+Then click <span class="guilabel">Next</span>.</p></li>
+<li><p>Choose the field in the layer that represents specified concept of field or/and set default
+value if there is no value and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>The next step is optional. We can write a short comment about the source of the data. Then click <span class="guilabel">Next</span>.</p></li>
+<li><p>We can fill the <span class="guilabel">Title</span> with <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">District</kbd> <kbd class="kbd docutils literal notranslate">Jakarta</kbd></kbd> and then click <span class="guilabel">Next</span>.</p></li>
+<li><p>Click <span class="guilabel">Finish</span>.</p></li>
+</ol>
+</section>
+<section id="set-outline-analysis">
+<h3>8.4.4 Set Outline Analysis<a class="headerlink" href="#set-outline-analysis" title="Link to this heading">¶</a></h3>
+<p>We have already set the analysis area for imapct calculation for the building.
+This time we will set the analysis area for population data.</p>
+<ol class="arabic simple">
+<li><p>Right click on <span class="guilabel">A flood similar to the 2007 Jakarta event</span> layer and click <span class="guilabel">Zoom to Layer</span></p></li>
+<li><p>Select <span class="guilabel">Toggle Scenario Outlines</span> to show the analysis outline area.</p></li>
+</ol>
+<img alt="../../_images/8_022.png" class="align-center" src="../../_images/8_022.png" />
+<p>Green box will appear around the map canvas.</p>
+<img alt="../../_images/8_023.png" class="align-center" src="../../_images/8_023.png" />
+<p>This green box is the analysis area. InaSAFE will calculate all the data inside the green box.</p>
+<ol class="arabic simple" start="3">
+<li><p>To change the analysis area, click <em>Set analysis area</em> button.</p></li>
+</ol>
+<img alt="../../_images/8_024.png" class="align-center" src="../../_images/8_024.png" />
+<ul class="simple">
+<li><p>Click <span class="guilabel">Drag on map</span> button and create a box to set around the
+<strong>A flood similar to the 2007 Jakarta event</strong> area. This will create a blue box around map canvas.</p></li>
+</ul>
+<img alt="../../_images/8_025.png" class="align-center" src="../../_images/8_025.png" />
+<ul class="simple">
+<li><p>After that click <span class="guilabel">OK</span>.</p></li>
+<li><p>We will run InaSAFE with Jakarta boundary as aggregation layer. To do this, simply change
+<span class="guilabel">Summarise the result by</span> in the InaSAFE panel into district boundary.</p></li>
+</ul>
+<img alt="../../_images/8_026.png" class="align-center" src="../../_images/8_026.png" />
+<ul class="simple">
+<li><p>Now click, <span class="guilabel">Run</span> to calculate impact analysis and wait for a moment.</p></li>
+</ul>
+<img alt="../../_images/8_027.png" class="align-center" src="../../_images/8_027.png" />
+<p>You will get impact result in the InaSAFE panel in the right side divided
+by 5 municipal in Jakarta.</p>
+<img alt="../../_images/8_028.png" class="align-center" src="../../_images/8_028.png" />
+</section>
+<section id="configure-minimum-needs">
+<h3>8.4.5 Configure Minimum Needs<a class="headerlink" href="#configure-minimum-needs" title="Link to this heading">¶</a></h3>
+<p>When you scroll impact result from running InaSAFE scenario, you will notice
+that there are some statistic that show how many rice, drinking water, clean water, family kits
+and toilet for each municipals in Jakarta. It’s called minimum needs per week
+for each people evacuated. The purpose of this minimum needs is to provide quick method calculating
+support requirements (in terms of food, water, etc) for displaced persons.</p>
+<p>The minimum needs (by default) are based on ‘Perka 7/2008’ BNPB
+according to the following default formulas:</p>
+<ul class="simple">
+<li><p>400g rice per person per day (2.8 kg per week)</p></li>
+<li><p>2.5l drinking water per person per day (17.51 L per week)</p></li>
+<li><p>15l clean water per person per day (105 L per week)</p></li>
+<li><p>One family kits per family per week (assumes five people per families
+which is not specified in perka)</p></li>
+<li><p>20 people per toilet</p></li>
+</ul>
+<p>If you are not satisfied with these configuration, you can define your custom minimum needs
+for your own area using <em>Minimum Needs Configuration</em></p>
+<ol class="arabic simple">
+<li><p>Click in <span class="menuselection">Plugin → InaSAFE → Minimum Needs Configuration</span></p></li>
+</ol>
+<img alt="../../_images/8_029.png" class="align-center" src="../../_images/8_029.png" />
+<ol class="arabic simple" start="2">
+<li><p><em>Minimum Needs Manager</em> Window will appear. You can see in the
+<span class="guilabel">Profile</span> selection there are 4 profile defined,
+<strong>BNPB_en</strong>, <strong>Philippine Minimum Needs_en</strong>, <strong>BNPB_id</strong>, <strong>SPHERE</strong>, and <strong>Tanzania</strong>.</p></li>
+</ol>
+<img alt="../../_images/8_030.png" class="align-center" src="../../_images/8_030.png" />
+<ol class="arabic simple" start="3">
+<li><p>If you want to change the default minimum needs for each item in each profile,
+simply select an item that you want to change and click</p></li>
+</ol>
+<img alt="../../_images/8_031.png" class="align-center" src="../../_images/8_031.png" />
+<p>button in the right upper side of the window.</p>
+<ol class="arabic simple" start="4">
+<li><p>You will enter <em>Resource editor</em> and from these editor, you can add
+or modify resource by filling each field that you think is important.</p></li>
+<li><p>Click <span class="guilabel">Save Resource</span> if you have already changed the value from an item or
+click <span class="guilabel">Discard Changes</span> if you didn’t change anything.</p></li>
+<li><p>If you want to create your own custom minimum needs, click <span class="guilabel">New</span> in the bottom side
+of the window and you can start adding new item by clicking the <span class="guilabel">+</span> button
+in the right upper side of the window to open <em>Resource editor.</em></p></li>
+<li><p>Click <span class="guilabel">Save</span> after adding several items to your custom minimum needs.</p></li>
+</ol>
+</section>
+<section id="run-impact-analyst-with-modified-minimum-needs">
+<h3>8.4.6 Run Impact Analyst with Modified Minimum Needs<a class="headerlink" href="#run-impact-analyst-with-modified-minimum-needs" title="Link to this heading">¶</a></h3>
+<p>After creating your custom minimum needs you can run InaSAFE with your own minimum needs:</p>
+<ol class="arabic simple">
+<li><p>Go to <span class="menuselection">Plugins ‣ InaSAFE ‣ Minimum Needs Configuration</span></p></li>
+<li><p>In <em>Minimum Needs Manager</em> Window, select your custom profile in Profile selector.
+After that, close the <em>Minimum Needs Manager</em> Window.</p></li>
+<li><p>Click <span class="guilabel">Run</span> to see the InaSAFE result with your custom minimum needs.</p></li>
+</ol>
+</section>
+</section>
+<section id="print-inasafe-result">
+<h2>8.5 Print InaSAFE Result<a class="headerlink" href="#print-inasafe-result" title="Link to this heading">¶</a></h2>
+<p>The data displayed on the screen can be saved to a PDF file by clicking
+<span class="guilabel">Print</span> at the bottom of the InaSAFE panel.</p>
+<ol class="arabic simple">
+<li><p>Click on the InaSAFE result layer and click <span class="guilabel">Print</span>.</p></li>
+<li><p>The analysis results will automatically open in pdf format.
+If you want to print it, click File – Print or if you want to save it click File – Save As.</p></li>
+</ol>
+</section>
+<section id="save-your-results">
+<h2>8.6 Save Your Results<a class="headerlink" href="#save-your-results" title="Link to this heading">¶</a></h2>
+<p>You can save the impact layer that InaSAFE created, and you can save the QGIS project
+to come back to it later, but note that the InaSAFE’s symbology style cannot be saved.
+It will show you only black and white layer and you need to symbolise again.</p>
+<section id="save-your-inasafe-result-style">
+<h3>8.6.1 Save your InaSAFE result style<a class="headerlink" href="#save-your-inasafe-result-style" title="Link to this heading">¶</a></h3>
+<p>To get the style from your InaSAFE result, you need to save the InaSAFE result’s style first.</p>
+<ol class="arabic simple">
+<li><p>Right click on <span class="guilabel">Number of People</span>, and go to
+<span class="guilabel">Properties</span>.</p></li>
+<li><p>Go to <span class="guilabel">Style</span> button on the bottom side the properties window,
+click <span class="guilabel">Save Style</span> and choose <span class="guilabel">QGIS Layer Style File …</span>.</p></li>
+</ol>
+<img alt="../../_images/8_036.png" class="align-center" src="../../_images/8_036.png" />
+<ol class="arabic simple" start="3">
+<li><p>Save your symbology style as <kbd class="kbd docutils literal notranslate">population_result_style</kbd> and click <span class="guilabel">Save button</span>.</p></li>
+</ol>
+<img alt="../../_images/8_037.png" class="align-center" src="../../_images/8_037.png" />
+<ol class="arabic simple" start="4">
+<li><p>To save the newly generated layer, right-click on it in the Layers panel. Click
+<span class="guilabel">Save As …</span></p></li>
+</ol>
+</section>
+<section id="save-inasafe-result-layer">
+<h3>8.6.2 Save InaSAFE Result layer<a class="headerlink" href="#save-inasafe-result-layer" title="Link to this heading">¶</a></h3>
+<p>After you saved your InaSAFE result style now you can save your InaSAFE result layer
+and get the same style like the InaSAFE Result.</p>
+<ol class="arabic simple">
+<li><p>Right click on <span class="guilabel">Number of People</span>, and go to
+<span class="guilabel">Save As…</span></p></li>
+<li><p>Click on <span class="guilabel">Browse</span> button and select a name and location for the file.
+Click <span class="guilabel">OK</span>.</p></li>
+<li><p>Load your saved layer using <span class="guilabel">Add Raster Layer</span> button.</p></li>
+<li><p>You will see black and white layer in map extent. Open the properties of your saved layer
+to resolve this.</p></li>
+<li><p>Go to <span class="guilabel">Style</span> button on the bottom side the properties window and
+click <span class="guilabel">Load Style…</span></p></li>
+</ol>
+<img alt="../../_images/8_038.png" class="align-center" src="../../_images/8_038.png" />
+<ol class="arabic simple" start="6">
+<li><p>Select your <code class="file docutils literal notranslate"><span class="pre">population_result_style</span></code> and click <span class="guilabel">Open</span> button.</p></li>
+<li><p>Now your saved layer will have the same style with your temporary InaSAFE result layer.</p></li>
+<li><p>To use this style as default style you can click <span class="guilabel">Save as Default</span>
+under <span class="guilabel">Style</span> button.</p></li>
+</ol>
+<img alt="../../_images/8_039.png" class="align-center" src="../../_images/8_039.png" />
+</section>
+<section id="save-project">
+<h3>8.6.3 Save Project<a class="headerlink" href="#save-project" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click <span class="guilabel">Save As</span> button in toolbar.</p></li>
+</ol>
+<img alt="../../_images/8_040.png" class="align-center" src="../../_images/8_040.png" />
+<ol class="arabic simple" start="2">
+<li><p>Give a name to the project and put it in the directory where you want to save your work.
+Then click <span class="guilabel">Save</span>.</p></li>
+</ol>
+<img alt="../../_images/8_041.png" class="align-center" src="../../_images/8_041.png" />
+<p>Now you have learned about how to use InaSAFE from using InaSAFE Keyword Wizard
+to define keyword attribute, how to run InaSAFE with InaSAFE dock and Impact Function Wizard,
+how to modify minimum needs, and how to use OSM Downloader to download OpenStreetMap data directly.
+InaSAFE is really helpful for us to know the impact of disaster
+and how we can create some plans if the disaster were to happen in real life.</p>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="../tot/index.html"
+                   title="Training of Trainer Module"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-07-Using_Map_Composer.html"
+                   title="Chapter 7: Using Map Composer"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

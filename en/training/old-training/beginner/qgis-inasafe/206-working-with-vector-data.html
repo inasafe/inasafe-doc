@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 6: Working with Vector Data &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 7: Labels and Classification" href="207-labels-and-classification.html" />
+    <link rel="prev" title="Module 5: Map Projection Basics" href="205-map-projection-basics.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/206-working-with-vector-data.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/206-working-with-vector-data.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 6: Working with Vector Data</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="207-labels-and-classification.html"
+                   title="Module 7: Labels and Classification"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="205-map-projection-basics.html"
+                   title="Module 5: Map Projection Basics"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="200-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="201-gis-for-developing-contingency-plan.html">Module 1: GIS for Developing Contingency Plan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="202-qgis-and-inasafe-in-contingency-plan.html">Module 2: QGIS and InaSAFE in Contingency Planning</a></li>
+<li class="toctree-l5"><a class="reference internal" href="203-the-basics-of-qgis.html">Module 3: The Basics of QGIS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="204-qgis-plugin.html">Module 4: QGIS Plugins</a></li>
+<li class="toctree-l5"><a class="reference internal" href="205-map-projection-basics.html">Module 5: Map Projection Basics</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 6: Working with Vector Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="207-labels-and-classification.html">Module 7: Labels and Classification</a></li>
+<li class="toctree-l5"><a class="reference internal" href="208-working-with-raster-data.html">Module 8: Working with Raster Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="209-create-a-new-vector-layer.html">Module 9: Creating Vector Layers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="210-vector-analysis-for-problem-solving.html">Module 10: Vector Analysis for Problem Solving</a></li>
+<li class="toctree-l5"><a class="reference internal" href="211-using-map-composer.html">Module 11: Using Map Composer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="212-understanding-inasafe.html">Module 12: Understanding InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="213-getting-support.html">Module 13: Getting Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image710.png" src="../../../../_images/image710.png" />
+<section id="module-6-working-with-vector-data">
+<span id="working-with-vector-data"></span><h1>Module 6: Working with Vector Data<a class="headerlink" href="#module-6-working-with-vector-data" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand vector data</p></li>
+<li><p>Identify attributes of vector data</p></li>
+<li><p>Add vector layers</p></li>
+<li><p>Symbolise vector layers</p></li>
+</ul>
+<p>In this module, we will learn what is meant by vector data.
+We will practise adding it to our QGIS projects, and we will learn how to
+style the data in different ways.</p>
+<section id="vector-data">
+<h2>1. Vector data<a class="headerlink" href="#vector-data" title="Link to this heading">¶</a></h2>
+<p>Vector data is the most common type of data found in GIS.
+A vector is essentially something made up of single points, or
+lines connecting those points.
+In other words, points, lines and polygons are all vectors (curved
+lines are vectors too, but we won’t worry about that for now).
+We are already quite familiar with vector data because in the previous unit,
+we used JOSM to create it!</p>
+<p>Each object in a vector dataset is referred to as a feature.
+In JOSM we often refer to them as objects,
+but in traditional GIS terminology they are features.
+A polygon that represents a building is a feature, as is a
+line that represents a river.
+Each feature has a geographic location and is attached to other data that
+describe the feature.</p>
+<p>One important thing to note is that QGIS layers can only contain one type of
+feature.
+That is, one layer can’t contain both point features and line features,
+because they are different types of data.
+Hence if you have a file that contains school polygons and another file that
+contains school points, you would add them as two separate layers.</p>
+<p>Almost always, polygon layers will be at the bottom of your layers list, line
+layers in the middle and point layers at the top.
+You don’t generally want your polygons overlapping your lines and points.</p>
+</section>
+<section id="attribute-data">
+<h2>2. Attribute data<a class="headerlink" href="#attribute-data" title="Link to this heading">¶</a></h2>
+<p>It’s important to know that the data you will be working with does not only
+represent where objects are in space, but also tells you what those objects are.</p>
+<ol class="arabic simple">
+<li><p>Open the project <code class="file docutils literal notranslate"><span class="pre">sleman_2_5.qgs</span></code>. This is the same project that you
+worked with previously.</p></li>
+</ol>
+<p>In the project we see the position of Sleman districts, the railway,
+and some roads, but we can’t see all of the data contained in those layers.</p>
+<ol class="arabic simple" start="2">
+<li><p>Select <span class="guilabel">Jalan_Sleman_OSM</span> in the Layers panel.</p></li>
+</ol>
+<img alt="../../../../_images/image721.png" class="align-center" src="../../../../_images/image721.png" />
+<ol class="arabic simple" start="3">
+<li><p>Click the <span class="guilabel">Open Attribute Table</span> button:</p></li>
+</ol>
+<img alt="../../../../_images/image401.png" class="align-center" src="../../../../_images/image401.png" />
+<p>You will see a table with more data about the streets layer.
+This extra data is called <strong>attribute data</strong>.
+The lines that you can see on your map, which represent the location of the
+streets is called <strong>spatial data</strong>.
+Remember in JOSM there was the same division.
+The points, lines and shapes we draw tell us <strong>where</strong>, but the tags,
+or attributes, tell us <strong>what</strong>.
+These definitions are commonly used in GIS, so it’s essential to remember
+them!</p>
+<img alt="../../../../_images/image731.png" class="align-center" src="../../../../_images/image731.png" />
+<ol class="arabic simple" start="4">
+<li><p>Take a look at the attribute table.
+Each row in the table is associated with one feature in the streets layer.
+Each column contains one of the attributes.
+If you select other layers and click on the <span class="guilabel">Open Attribute
+Table</span> button, you’ll see different tables.</p></li>
+<li><p>Close the attribute table.</p></li>
+</ol>
+</section>
+<section id="adding-vector-data">
+<h2>3. Adding vector data<a class="headerlink" href="#adding-vector-data" title="Link to this heading">¶</a></h2>
+<section id="shapefiles">
+<h3>3.1 Shapefiles<a class="headerlink" href="#shapefiles" title="Link to this heading">¶</a></h3>
+<p>You’ve already added vector data to a project in the form of a shapefile.
+As we mentioned previously, a shapefile is a commonly used geographic file
+format.
+It can easily be converted into other formats, and most GIS software can read
+this type of file.
+You may notice when adding a shapefile that there are numerous files in your
+shapefile directory with the same name.
+This is because a shapefile actually relies on a collection of several other
+files to store the data and keep various settings.
+When you add a shapefile to your project, you should always add the one that
+ends in <code class="file docutils literal notranslate"><span class="pre">.shp</span></code>, but the rest of the files are important too!</p>
+<ol class="arabic simple" start="6">
+<li><p>Do you remember how to add a shapefile to a project?
+Try adding the layer <code class="file docutils literal notranslate"><span class="pre">POI_Sleman_OSM</span></code>, from the shapefile located in
+the tutorial directory.
+If you don’t remember how to add a new vector layer,
+refer to the instructions <a class="reference internal" href="203-the-basics-of-qgis.html#adding-vector-layer"><span class="std std-ref">module 3</span></a>.</p></li>
+</ol>
+<p>Your project should look like this after the new layer has been added:</p>
+<img alt="../../../../_images/image741.png" class="align-center" src="../../../../_images/image741.png" />
+</section>
+<section id="databases">
+<h3>3.2 Databases<a class="headerlink" href="#databases" title="Link to this heading">¶</a></h3>
+<p>Shapefiles (and other types of files) are one way to store geographic data.
+You can also load a vector layer into QGIS from a database.
+You may already be familiar with Database Management Systems (DBMS) such as
+Microsoft Access.
+GIS applications also make use of databases to store geographic data.
+Databases can be hosted and used locally on your computer,
+or could be shared between users over a network or the internet.</p>
+<ol class="arabic simple" start="7">
+<li><p>Let’s try adding a layer from a database.
+Click the <span class="guilabel">Add SpatiaLite Layer</span> button.
+If you can’t find it, right-click on the toolbar and make sure that the
+<span class="guilabel">Manage Layers</span> toolbar is enabled.</p></li>
+</ol>
+<img alt="../../../../_images/image751.png" class="align-center" src="../../../../_images/image751.png" />
+<ol class="arabic simple" start="8">
+<li><p>You will see a dialog box.
+Click <span class="guilabel">New</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image761.png" class="align-center" src="../../../../_images/image761.png" />
+<ol class="arabic simple" start="9">
+<li><p>Navigate to the <code class="file docutils literal notranslate"><span class="pre">qgis_data/Sleman/</span></code> folder and find
+<code class="file docutils literal notranslate"><span class="pre">guna_lahan.db</span></code>.
+Select the file and click <span class="guilabel">Open</span>.</p></li>
+<li><p>Now in the original dialog box, notice that the drop-down button
+contains <em>“guna_lahan.db &#64; …”</em>, followed by the path of the database file
+on your computer.</p></li>
+<li><p>Click <span class="guilabel">Connect</span>.
+You will see the following in the box:</p></li>
+</ol>
+<img alt="../../../../_images/image771.png" class="align-center" src="../../../../_images/image771.png" />
+<ol class="arabic simple" start="12">
+<li><p>This database actually has three different layers available, all saved
+in the database.
+Click on the first layer to select it, then hold <kbd class="kbd docutils literal notranslate">SHIFT</kbd> and click the
+last layer to select them all.</p></li>
+<li><p>Click <span class="guilabel">Add</span>.
+This will add all three layers to our project.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember frequently to save your map!
+Your QGIS project file does not save the data (data is saved in a
+shapefile or a database), but it does remember the layers that you have
+added to the project, their order and any settings that you adjust.</p>
+</div>
+<ol class="arabic simple" start="14">
+<li><p>The layers you have just added are all polygon layers, so you will want
+to drag them down below the line and point layers.
+If you have a checkbox beneath your layers list that reads
+<span class="guilabel">Control rendering order</span>, go ahead and check it.</p></li>
+<li><p>Let’s remove a couple of layers to make it easier to deal with our data.
+Right-click on the <span class="guilabel">railway</span> and <span class="guilabel">district</span> layers and
+click <span class="guilabel">Remove</span>.
+Then order your layers like this:</p></li>
+</ol>
+<img alt="../../../../_images/image781.png" class="align-center" src="../../../../_images/image781.png" />
+</section>
+</section>
+<section id="symbology">
+<h2>4. Symbology<a class="headerlink" href="#symbology" title="Link to this heading">¶</a></h2>
+<p>The symbology of a layer is its visual appearance on the map.
+One of the basic strengths of GIS is that you have a dynamic visual
+representation of the data you are working with.
+Therefore, the visual appearance of the map (which depends on the symbology
+of the individual layers) is very important.
+The end user of the maps you produce, will need to be able to easily see what
+the map represents.
+Equally as important, you need to be able to explore the data as you’re
+working with it, and good symbology helps a lot.</p>
+<p>In other words, having proper symbology is not a luxury or just nice to have.
+In fact, it’s essential for you to use a GIS properly and produce maps and
+information that people will understand and be able to use.</p>
+<section id="changing-colours">
+<h3>4.1 Changing colours<a class="headerlink" href="#changing-colours" title="Link to this heading">¶</a></h3>
+<p>To change a layer’s symbology, we will open its properties.
+Let’s begin by changing the colour of the <span class="guilabel">pemukiman</span> layer.</p>
+<ol class="arabic simple" start="16">
+<li><p>Right-click on the <span class="guilabel">pemukiman</span> layer in the Layers panel.</p></li>
+<li><p>Select <span class="guilabel">Properties</span> in the menu that appears.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default you can also access the Properties menu by double-clicking
+on the name of the layer.</p>
+</div>
+<ol class="arabic simple" start="18">
+<li><p>In the Properties window select the <span class="guilabel">Style</span> tab.</p></li>
+</ol>
+<img alt="../../../../_images/image791.png" class="align-center" src="../../../../_images/image791.png" />
+<ol class="arabic simple" start="19">
+<li><p>Click the <span class="guilabel">Color</span> button to change the colour.</p></li>
+</ol>
+<img alt="../../../../_images/image801.png" class="align-center" src="../../../../_images/image801.png" />
+<ol class="arabic simple" start="20">
+<li><p>A standard colour dialog will appear.
+Choose a pink colour and click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image811.png" class="align-center" src="../../../../_images/image811.png" />
+<ol class="arabic simple" start="21">
+<li><p>If you succeed at changing the colour of the <span class="guilabel">pemukiman`layer then you
+can try to change the colour of the :guilabel:`vegetasi</span> layer and
+the <span class="guilabel">tubuh_air</span> layer too. You can use a green colour for
+the <span class="guilabel">vegetasi</span> layer and a blue colour for the <span class="guilabel">tubuh_air</span> layer.</p></li>
+<li><p>Click <span class="guilabel">OK</span> again in the Layer Properties window, and you will see
+the colour change being applied to the layer.</p></li>
+</ol>
+<img alt="../../../../_images/image821.png" class="align-center" src="../../../../_images/image821.png" />
+</section>
+<section id="changing-symbol-structure">
+<h3>4.2 Changing symbol structure<a class="headerlink" href="#changing-symbol-structure" title="Link to this heading">¶</a></h3>
+<p>There’s more to a layer’s symbology than just its
+colour.
+Next we want to change the colour of the vegetation,
+but we also want to eliminate the lines between the different types of
+vegetation, so as to make the map less visually cluttered.</p>
+<ol class="arabic simple" start="23">
+<li><p>Open the <span class="guilabel">Layer Properties</span> window for the <span class="guilabel">vegetasi</span>
+layer. Under the <span class="guilabel">Style</span> tab, you will see the same kind of
+dialog as before.
+This time, however, we will do more than just change the colour.</p></li>
+<li><p>Click on <span class="guilabel">Simple Fill</span> under <span class="guilabel">Symbol layers</span>.
+The Symbol layer dialog will appear on the right side of the panel.</p></li>
+</ol>
+<img alt="../../../../_images/image831.png" class="align-center" src="../../../../_images/image831.png" />
+<ol class="arabic simple" start="25">
+<li><p>Change the colour inside the polygons in the layer by clicking the button
+next to the <span class="guilabel">Fill</span> label:</p></li>
+</ol>
+<img alt="../../../../_images/image841.png" class="align-center" src="../../../../_images/image841.png" />
+<ol class="arabic simple" start="26">
+<li><p>In the dialog that appears, choose a new colour (one that suits
+vegetation).</p></li>
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<p>Next, we want to get rid of the lines between all the farms.</p>
+<ol class="arabic simple" start="28">
+<li><p>Click on the <span class="guilabel">Border style</span> drop-down box.
+At the moment, it should be showing a short line and the words
+<span class="guilabel">Solid Line</span>.</p></li>
+<li><p>Change this to <span class="guilabel">No Pen</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image851.png" class="align-center" src="../../../../_images/image851.png" />
+<ol class="arabic simple" start="30">
+<li><p>Click <span class="guilabel">OK</span>, and then <span class="guilabel">OK</span> again.
+Now when we look at our map, the vegetasi layer will have a new colour and
+no lines between polygons.</p></li>
+<li><p>Try changing the symbology of the <span class="guilabel">pemukiman</span> layer so that it
+also does not have outlines.</p></li>
+</ol>
+<img alt="../../../../_images/image861.png" class="align-center" src="../../../../_images/image861.png" />
+</section>
+<section id="scale-based-visibility">
+<h3>4.3 Scale-based visibility<a class="headerlink" href="#scale-based-visibility" title="Link to this heading">¶</a></h3>
+<p>Sometimes you will find that one of your layers is not suitable for a given
+scale.
+For example, if you have a layer which shows the earth’s continents but not
+with very much detail, the continent lines may not be very accurate when you
+are zoomed in very far.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Scale is a reference to how your map references what is actually on
+the ground in terms of size.
+Scale is usually given in terms like 1:10000, which means that one
+centimetre of length on your map is equal to 10000 centimetres in the real
+world.
+When you zoom in or out on a map, the scale changes,
+as you can see in the status bar at the bottom of QGIS.</p>
+</div>
+<p>In our case, we may decide to hide our streets layer when we are zoomed out very
+far (a small scale).
+For example, the streets layer is not very useful when we are zoomed out far
+and it looks like a blob.</p>
+<p>Let’s enable scale-based rendering:</p>
+<ol class="arabic simple" start="32">
+<li><p>Open the <span class="guilabel">Layer Properties</span> dialog for the
+<span class="guilabel">Jalan_Sleman_OSM</span> layer.</p></li>
+<li><p>Click the <span class="guilabel">General</span> tab.</p></li>
+</ol>
+<img alt="../../../../_images/image871.png" class="align-center" src="../../../../_images/image871.png" />
+<ol class="arabic simple" start="34">
+<li><p>Enable scale-based rendering by clicking on the checkbox
+<span class="guilabel">Scale dependent visibility</span> then change the value in
+<span class="guilabel">Maximum</span> to 1:10 and <span class="guilabel">Minimum</span> to 1:100000.</p></li>
+</ol>
+<img alt="../../../../_images/image881.png" class="align-center" src="../../../../_images/image881.png" />
+<ol class="arabic simple" start="35">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+<li><p>Look at your map and see what happens when you zoom in and out.
+The streets layer should appear when you are at a large scale and
+disappear at small scales.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can use your mouse wheel to zoom in increments.
+Alternatively, use the zoom tools to draw a box and zoom to it:</p>
+</div>
+<img alt="../../../../_images/image891.png" class="align-center" src="../../../../_images/image891.png" />
+</section>
+<section id="adding-symbol-layers">
+<h3>4.4 Adding symbol layers<a class="headerlink" href="#adding-symbol-layers" title="Link to this heading">¶</a></h3>
+<p>Now that we know how to change simple symbology for layers,
+the next step is to create more complex symbology.
+QGIS allows us to do this using symbol layers.</p>
+<ol class="arabic simple" start="37">
+<li><p>Open the <span class="guilabel">vegetasi</span> layer’s Symbol properties dialog as before.</p></li>
+<li><p>In this example, the current symbology has no outline (i.e., it uses the
+<span class="guilabel">No Pen</span> border style).</p></li>
+</ol>
+<img alt="../../../../_images/image90.png" class="align-center" src="../../../../_images/image90.png" />
+<ol class="arabic simple" start="39">
+<li><p>Select <span class="guilabel">Fill</span> and Click the <span class="guilabel">+</span> button on the left.</p></li>
+</ol>
+<img alt="../../../../_images/image911.png" class="align-center" src="../../../../_images/image911.png" />
+<ol class="arabic simple" start="40">
+<li><p>Another symbol layer will be added to the list:</p></li>
+</ol>
+<img alt="../../../../_images/image921.png" class="align-center" src="../../../../_images/image921.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The symbol layers may appear different in colour, but don’t worry,
+we’re going to customise it anyway.</p>
+</div>
+<p>Now this layer has two different symbologies.
+In other words, both the blue colour AND the green colour will be drawn.
+However, the green colour will be drawn above the blue,
+and since it is a solid colour, it will completely hide the blue colour.
+Let’s change it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It’s important not to get confused between a map layer and a symbol
+layer. A map layer is a vector (or raster) that has been loaded into the
+map. A symbol layer is only the symbology used to represent a map layer.
+This course will usually refer to a map layer as just a layer, but a symbol
+layer will always be called a symbol layer, to prevent confusion.</p>
+</div>
+<ol class="arabic simple" start="41">
+<li><p>Set the <span class="guilabel">Border style</span> to <span class="guilabel">No Pen</span> as before.</p></li>
+<li><p>Change the fill style to something other than <span class="guilabel">Solid</span> or
+<span class="guilabel">No brush</span>. For example, <span class="guilabel">Dense 7</span>:</p></li>
+</ol>
+<img alt="../../../../_images/image931.png" class="align-center" src="../../../../_images/image931.png" />
+<ol class="arabic simple" start="43">
+<li><p>Click <span class="guilabel">OK</span> and then <span class="guilabel">OK</span> and take a look at your
+layer’s new symbology.</p></li>
+</ol>
+<img alt="../../../../_images/image941.png" class="align-center" src="../../../../_images/image941.png" />
+<ol class="arabic" start="44">
+<li><p>Now try it yourself. Add an additional symbology layer to
+the <span class="guilabel">Jalan_Sleman_OSM</span> layer.</p>
+<ul class="simple">
+<li><p>Give the thickness of the original layer a value of 2.0</p></li>
+<li><p>Give the thickness of the new symbology layer a value of 1.0</p></li>
+</ul>
+<p>This will result in your roads looking something like this:</p>
+</li>
+</ol>
+<img alt="../../../../_images/image951.png" class="align-center" src="../../../../_images/image951.png" />
+<ol class="arabic simple" start="45">
+<li><p>Our streets now appear to have an outline, but they seem disjointed, as if
+they don’t connect with each other.
+To prevent this from happening, we can enable symbol levels,
+which will control the order in which the different symbol layers are
+rendered.</p></li>
+<li><p>In the Layer Properties dialog, go to
+<span class="menuselection">Advanced ‣ Symbol levels…</span>:</p></li>
+</ol>
+<img alt="../../../../_images/image961.png" class="align-center" src="../../../../_images/image961.png" />
+<ol class="arabic simple" start="47">
+<li><p>The Symbol Levels dialog will appear.
+Check the box next to <span class="guilabel">Enable symbol levels</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image971.png" class="align-center" src="../../../../_images/image971.png" />
+<p>Your map will now look like this:</p>
+<img alt="../../../../_images/image981.png" class="align-center" src="../../../../_images/image981.png" />
+<ol class="arabic simple" start="48">
+<li><p>When you’re done, you can save the symbol itself in QGIS so that you won’t
+have to do all this work again if you want to use the symbol in the
+future. Save your current symbol style by clicking the
+<span class="guilabel">Save Style…</span> button under the Style tab of the Layer
+Properties dialog.</p></li>
+<li><p>Give your style file a name and save.
+You can load a previously saved style at any time by clicking the
+<span class="guilabel">Load Style …</span> button.
+Before you change a style, keep in mind that any unsaved style you are
+replacing will be lost.</p></li>
+</ol>
+<img alt="../../../../_images/image991.png" class="align-center" src="../../../../_images/image991.png" />
+<ol class="arabic simple" start="50">
+<li><p>Try to change the appearance of the streets layer again, so that the roads
+are dark grey or black, with a thin yellow outline and a dashed white line
+running in the middle.</p></li>
+</ol>
+<img alt="../../../../_images/image1001.png" class="align-center" src="../../../../_images/image1001.png" />
+</section>
+<section id="classified-symbology">
+<h3>4.5 Classified symbology<a class="headerlink" href="#classified-symbology" title="Link to this heading">¶</a></h3>
+<p>Symbol levels also work for classified layers (i.e., layers having multiple
+symbols).
+We will cover classification in the next module, but you can see how it
+works here with roads.
+By classifying various streets according to their type,
+we can give them different symbologies and they will still appear to flow
+into each other.</p>
+<img alt="../../../../_images/image1011.png" class="align-center" src="../../../../_images/image1011.png" />
+</section>
+<section id="symbol-layer-types">
+<h3>4.6 Symbol layer types<a class="headerlink" href="#symbol-layer-types" title="Link to this heading">¶</a></h3>
+<p>In addition to setting fill colours and using predefined patterns, you can use
+different symbol layer types entirely.
+The only type we’ve been using up to now was the Simple Fill type.
+The more advanced symbol layer types allow you to customise your symbols even
+further.</p>
+<p>Each type of vector (point, line and polygon) has its own set of symbol layer
+types.</p>
+<section id="vector-points">
+<h4>4.6.1 Vector points<a class="headerlink" href="#vector-points" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple" start="51">
+<li><p>Open the symbol properties for the <span class="guilabel">POI_Sleman_OSM</span> layer:</p></li>
+</ol>
+<img alt="../../../../_images/image1021.png" class="align-center" src="../../../../_images/image1021.png" />
+<ol class="arabic simple" start="52">
+<li><p>Access the various symbol layer types by clicking a symbol layer (1)
+then clicking the drop-down box in the upper right corner (2)</p></li>
+</ol>
+<img alt="../../../../_images/image1031.png" class="align-center" src="../../../../_images/image1031.png" />
+<ol class="arabic simple" start="53">
+<li><p>Investigate the various options available to you, and choose a symbol layer
+type other than the default Simple Marker.</p></li>
+<li><p>If in doubt, use an Ellipse Marker.</p></li>
+<li><p>Choose a white outline and dark fill, with a symbol width of 2.00 and
+symbol height of 4.00.</p></li>
+</ol>
+<img alt="../../../../_images/image1041.png" class="align-center" src="../../../../_images/image1041.png" />
+<img alt="../../../../_images/image104a.png" class="align-center" src="../../../../_images/image104a.png" />
+</section>
+<section id="vector-lines">
+<h4>4.6.2 Vector lines<a class="headerlink" href="#vector-lines" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple" start="56">
+<li><p>To see the various symbology options for vector lines, open the Layer
+Properties for the streets layer, and click on the drop-down box:</p></li>
+</ol>
+<img alt="../../../../_images/image1061.png" class="align-center" src="../../../../_images/image1061.png" />
+<ol class="arabic simple" start="57">
+<li><p>Click <span class="guilabel">Marker line</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image1071.png" class="align-center" src="../../../../_images/image1071.png" />
+<ol class="arabic simple" start="58">
+<li><p>Click <span class="guilabel">Simple Marker</span> in the Symbol layers panel (1).</p></li>
+</ol>
+<img alt="../../../../_images/image1081.png" class="align-center" src="../../../../_images/image1081.png" />
+<ol class="arabic simple" start="59">
+<li><p>Change the symbol properties to match this dialog:</p></li>
+</ol>
+<img alt="../../../../_images/image1091.png" class="align-center" src="../../../../_images/image1091.png" />
+<ol class="arabic simple" start="60">
+<li><p>Click on <span class="guilabel">Marker line</span> in the Symbol layers panel,
+and change the interval to 2.00:</p></li>
+</ol>
+<img alt="../../../../_images/image1101.png" class="align-center" src="../../../../_images/image1101.png" />
+<p>Once you have applied the style, take a look at its results on the map.
+As you can see, these symbols change direction along with the road but don’t
+always bend along with it.
+This is useful for some purposes, but not for others.
+If you prefer, you can change the symbol layer in question back to the way it
+was before.</p>
+<img alt="../../../../_images/image110a.png" class="align-center" src="../../../../_images/image110a.png" />
+</section>
+<section id="vector-polygons">
+<h4>4.6.3 Vector polygons<a class="headerlink" href="#vector-polygons" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple" start="61">
+<li><p>Now let’s change the symbol layer type for the <span class="guilabel">pemukiman</span> layer.
+Take a look at the drop-down menu as you have done for the point and line
+layers, and see what the various options can do.</p></li>
+</ol>
+<img alt="../../../../_images/image1131.png" class="align-center" src="../../../../_images/image1131.png" />
+<ol class="arabic simple" start="62">
+<li><p>Feel free to play around with the various options.
+We will use the Point pattern fill with the following settings:</p></li>
+</ol>
+<img alt="../../../../_images/image1141.png" class="align-center" src="../../../../_images/image1141.png" />
+<ol class="arabic simple" start="63">
+<li><p>Add a new symbol layer with a normal Simple fill.</p></li>
+<li><p>Make it grey with no outlines.</p></li>
+<li><p>Move it underneath the point pattern symbol layer with the
+<span class="guilabel">Move down</span> button:</p></li>
+</ol>
+<img alt="../../../../_images/image1151.png" class="align-center" src="../../../../_images/image1151.png" />
+<p>The symbol properties should look like this:</p>
+<img alt="../../../../_images/image1161.png" class="align-center" src="../../../../_images/image1161.png" />
+<p>As a result, you have a textured symbol for the urban layer, with the added
+benefit that you can change the size, shape and distance of the individual dots
+that make up the texture.</p>
+<p><a class="reference internal" href="207-labels-and-classification.html#labels-and-classifications"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="207-labels-and-classification.html"
+                   title="Module 7: Labels and Classification"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="205-map-projection-basics.html"
+                   title="Module 5: Map Projection Basics"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

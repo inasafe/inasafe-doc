@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Chapter 11: Export OSM data &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="QGIS and InaSAFE for Disaster Management" href="../qgis/index.html" />
+    <link rel="prev" title="Chapter 10: Imagery Offset" href="Chapter-10-imagery-offset.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/osm/Chapter-11-export-osm-data.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/osm/Chapter-11-export-osm-data.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Data Collection Using OpenStreetMap</a>
+                </li>
+                
+
+                <li><a href="#">Chapter 11: Export OSM data</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="../qgis/index.html"
+                   title="QGIS and InaSAFE for Disaster Management"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-10-imagery-offset.html"
+                   title="Chapter 10: Imagery Offset"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Data Collection Using OpenStreetMap</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Chapter-00-preface.html">Preface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-01-introduction.html">Chapter 1: Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-02-getting-started.html">Chapter 2: Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-03-introducing-the-id-editor.html">Chapter 3: Introducing the iD Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-04-getting-started-with-josm.html">Chapter 4: Getting started with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-05-editing-with-josm.html">Chapter 5:  Editing with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-06-using-gps.html">Chapter 6: Using GPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-07-field-papers.html">Chapter 7: Field Papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-08-conflict-resolution-in-osm.html">Chapter 8: Conflict Resolution in OSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-09-inserting-tag.html">Chapter 9: Inserting Special Tag in JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-10-imagery-offset.html">Chapter 10: Imagery Offset</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 11: Export OSM data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hot-export-tool">11.1 Hot Export Tool</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#overpass-turbo">11.2 Overpass-Turbo</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/1_000.png" src="../../_images/1_000.png" />
+<section id="chapter-11-export-osm-data">
+<span id="ch11-export-osm-data"></span><h1>Chapter 11: Export OSM data<a class="headerlink" href="#chapter-11-export-osm-data" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives:</strong></p>
+<ul class="simple">
+<li><p>Learn how to use HOT Export</p></li>
+<li><p>Learn how to use overpass turbo</p></li>
+</ul>
+<p>After you learn how to add and edit in <em>OpenStreetMap (OSM)</em>,
+you may want to export OSM data as back-up or for processing using GIS software
+such as <strong>QGIS</strong> <a class="reference external" href="http://www.qgis.org/">www.qgis.org</a>.
+In this chapter we will learn how to use these tools.</p>
+<section id="hot-export-tool">
+<h2>11.1 Hot Export Tool<a class="headerlink" href="#hot-export-tool" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Open your browser and type <a class="reference external" href="http://export.hotosm.org/">export.hotosom.org</a> and it will show like this:</p></li>
+</ol>
+<figure class="align-center" id="id3">
+<img alt="../../_images/11_001.png" src="../../_images/11_001.png" />
+<figcaption>
+<p><span class="caption-text"><em>Hot Export front page</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>To get data from this website, you will need to login into your OpenStreetMap account first before you can use HOT Export. Click <span class="guilabel">Login to OpenStreetMap</span></p></li>
+</ol>
+<figure class="align-center" id="id4">
+<img alt="../../_images/11_002.png" src="../../_images/11_002.png" />
+<figcaption>
+<p><span class="caption-text"><em>Screenshot Login into OSM Account Page</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>3. if you do not already have one, you have to create it.
+The first step is you can click <span class="guilabel">here</span> in the sentence ‘<strong>if you don’t have an OpenStreetMap account you can register for one here</strong>’ of HOT Export front page.</p>
+<figure class="align-center" id="id5">
+<img alt="../../_images/11_003.png" src="../../_images/11_003.png" />
+<figcaption>
+<p><span class="caption-text"><em>Screenshot in Create OSM Account Page</em></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>After that fill in your email, display name, password and password confirmation. Then click <span class="guilabel">Sign Up</span> and open your email to confirm the email from OpenStreetMap.</p></li>
+</ol>
+<figure class="align-center" id="id6">
+<img alt="../../_images/11_004.png" src="../../_images/11_004.png" />
+<figcaption>
+<p><span class="caption-text"><em>Screenshot in Create OSM Account Page</em></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>After you confirm the email, come back to HOT Export front page and login with your OSM account.
+Fill in your email and password and then click <span class="guilabel">Log in</span>.</p></li>
+</ol>
+<p>6. After you successfully log in to the website, you automatically directed into New Export page.
+In tab <span class="guilabel">Describe Export</span> you can fill your export file name, description about the export and the project name that using this export file.</p>
+<p>7. In right side of the page, you can define the exported area.
+You can search by type area name in <strong>search box</strong> or you can select manually by click <span class="guilabel">Export Area</span> and draw the area box.</p>
+<figure class="align-center" id="id7">
+<img alt="../../_images/11_005.png" src="../../_images/11_005.png" />
+<figcaption>
+<p><span class="caption-text"><em>Screenshot in New Export Page</em></span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>8. If you finish define name and area for your export, click <span class="guilabel">File Formats</span> tab to select file format for your export file.
+There are some file format that you can select such as Esri SHP, Garmin File, Google KMZ, OSM OBF File and SQlite SQL.
+For Esri SHP file, there are 2 format types which provide different data. OSM Schema will provide 3 type data OSM like point, line and polygon and Thematic Schema will provide data based on its type in OSM such as health, landuse, school, etc.</p>
+<figure class="align-center" id="id8">
+<img alt="../../_images/11_006.png" src="../../_images/11_006.png" />
+<figcaption>
+<p><span class="caption-text"><em>Screenshot in Export Format Page</em></span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>9. After select file format, you can click <span class="guilabel">Tree Tag</span> tab to chose feature for result data tag of your export.
+There are 2 options that you can select. Humanitarian Data Model only export all tags that related with humanitarian information such as hazard, public services and utilities, whereas OSM Data Model export all tag in OSM.</p>
+<figure class="align-center" id="id9">
+<img alt="../../_images/11_007.png" src="../../_images/11_007.png" />
+<figcaption>
+<p><span class="caption-text"><em>Screenshot in Tree Tag Page</em></span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="10">
+<li><p>Then, click <span class="guilabel">Preset File</span> tab add specific preset file if you have any. Using specific preset file will export your data with specific tag based on the presets. Moreover, tag from previous data model both Humanitarian and OSM Data Model will be cleared. However, if you do not have any specific preset you can skip this step.</p></li>
+</ol>
+<figure class="align-center" id="id10">
+<img alt="../../_images/11_008.png" src="../../_images/11_008.png" />
+<figcaption>
+<p><span class="caption-text"><em>Screenshot in Preset File Page</em></span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>11. Last step to make an export file in HOT Export is click <span class="guilabel">Export Details</span> tab and you can see summary of your export details file and please select at least one of three options in Export Options about how your export result will be share to other users.
+If you finish, please click <span class="guilabel">Create Export</span> .</p>
+<figure class="align-center" id="id11">
+<img alt="../../_images/11_009.png" src="../../_images/11_009.png" />
+<figcaption>
+<p><span class="caption-text"><em>Screenshot in Export Details Page</em></span><a class="headerlink" href="#id11" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>12. After the running process finished and export status is completed, you can download your export file result in some file format data which have been defined previously.
+You also can delete, clone or rerun this export project if you want. All other request for HOT Export can be found in <span class="guilabel">Exports</span> menu.</p>
+<figure class="align-center" id="id12">
+<img alt="../../_images/11_010.png" src="../../_images/11_010.png" />
+<figcaption>
+<p><span class="caption-text"><em>Screenshot in Export Result Page</em></span><a class="headerlink" href="#id12" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="overpass-turbo">
+<h2>11.2 Overpass-Turbo<a class="headerlink" href="#overpass-turbo" title="Link to this heading">¶</a></h2>
+<p>If you only want specific object in OSM data, the right choice is to use <a class="reference external" href="http://overpass-turbo.eu/">Overpass Turbo</a>.
+For example you only need schools data in Jakarta and surrounding area.
+To download OpenStreetMap data using Overpass Turbo you can follow this step:</p>
+<ol class="arabic simple">
+<li><p>Point your web browser to <a class="reference external" href="http://overpass-turbo.eu/">Overpass Turbo</a></p></li>
+<li><p>You can start find to your area of interest in OpenStreetMap using the Slippy Map in the right side.
+You can drag and zoom in map with <strong>(+)</strong> and zoom out map using <strong>(-)</strong>.
+You can also search directly with typing in search box as shown in the Jakarta example shown below.
+There will be several arear related to Jakarta and you can choose the right area that you want to download.</p></li>
+</ol>
+<figure class="align-center">
+<img alt="../../_images/11_011.png" src="../../_images/11_011.png" />
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>If you don’t want to download the larger area you can resize the area and draw a border by yourself
+with click <span class="guilabel">manually select box</span> from the toolbar in the left side of the map.
+Draw a box in the slippy map to define the target area.</p></li>
+</ol>
+<figure class="align-center" id="id13">
+<img alt="../../_images/11_012.png" src="../../_images/11_012.png" />
+<figcaption>
+<p><span class="caption-text"><em>Select area manually</em></span><a class="headerlink" href="#id13" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>To download OSM data specific to one feature, for example schools, click <span class="guilabel">Wizard</span> menu.
+In the Wizard menu, you can filter your data with using <a class="reference external" href="http://www.jsoniq.org/">JOSN</a> query,
+in the simple way it can be a tag contains Key and Value,
+for example if you want to download schools type <kbd class="kbd docutils literal notranslate">amenity=school</kbd> in <span class="guilabel">Query Wizard</span>.</p></li>
+</ol>
+<figure class="align-center" id="id14">
+<img alt="../../_images/11_013.png" src="../../_images/11_013.png" />
+<figcaption>
+<p><span class="caption-text"><em>Query box in Overpass Turbo</em></span><a class="headerlink" href="#id14" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Click <span class="guilabel">Build and Run Query</span>, wait for a moment until school objects are displayed in the area of interest.
+You should see something like the screenshot below which shows all the school objects in OSM in the area of interest.</p></li>
+</ol>
+<figure class="align-center">
+<img alt="../../_images/11_014.png" src="../../_images/11_014.png" />
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>If you only want data type in point/node format,
+you can specify that in the query box in the left side.
+To do this, erase school with way and relation type, and then click <span class="guilabel">Run</span> menu in the top left side.
+The result will be a school objects with only point/node data type filtered.
+You can also add more detailed query in the query box and then click <span class="guilabel">Run</span>.</p></li>
+</ol>
+<figure class="align-center" id="id15">
+<img alt="../../_images/11_015.png" src="../../_images/11_015.png" />
+<figcaption>
+<p><span class="caption-text"><em>Erase several query in query box</em></span><a class="headerlink" href="#id15" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>To download the schools data you can click Export menu,
+there are several data formats that you can choose such as <strong>geoJSON, GPX, KML, .osm</strong>, etc.
+If you not familiar with geoJSON, you can select <span class="guilabel">level0</span> to download .osm data format that you can use later with QGIS or other mapping software.</p></li>
+</ol>
+<figure class="align-center" id="id16">
+<img alt="../../_images/11_016.png" src="../../_images/11_016.png" />
+<figcaption>
+<p><span class="caption-text"><em>Export Overpass Turbo result</em></span><a class="headerlink" href="#id16" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="../qgis/index.html"
+                   title="QGIS and InaSAFE for Disaster Management"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-10-imagery-offset.html"
+                   title="Chapter 10: Imagery Offset"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

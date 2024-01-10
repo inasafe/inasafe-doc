@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Unit 1 Facilitator Guide &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Unit 2 Facilitator Guide" href="qgis-inasafe-beginner-toolkit.html" />
+    <link rel="prev" title="Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE" href="curriculum.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/curriculum/osm-beginner-toolkit.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/curriculum/osm-beginner-toolkit.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Curriculum and Guide for Facilitator</a>
+                </li>
+                
+
+                <li><a href="#">Unit 1 Facilitator Guide</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="qgis-inasafe-beginner-toolkit.html"
+                   title="Unit 2 Facilitator Guide"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="curriculum.html"
+                   title="Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Curriculum and Guide for Facilitator</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="curriculum.html">Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Unit 1 Facilitator Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#beginning-openstreetmap-trainer-toolkit-a-guide-for-facilitators">Beginning OpenStreetMap Trainer Toolkit - (A Guide for Facilitators)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#about-toolkit">About Toolkit</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#purpose-of-workshop">Purpose of Workshop</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#schedule">Schedule</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#day-i">Day I:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-ii">Day II:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-iii">Day III:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-iv">Day IV:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-v">Day V:</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#workshop-plan">Workshop Plan</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#session-1">Session 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-2">Session 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-3">Session 3</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-4">Session 4</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-5">Session 5</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-6">Session 6</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-7">Session 7</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-8">Session 8</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="qgis-inasafe-beginner-toolkit.html">Unit 2 Facilitator Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="osm-intermediate-toolkit.html">Unit 3 Facilitator Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qgis-inasafe-intermediate-toolkit.html">Unit 4 Facilitator Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <section id="unit-1-facilitator-guide">
+<h1>Unit 1 Facilitator Guide<a class="headerlink" href="#unit-1-facilitator-guide" title="Link to this heading">¶</a></h1>
+<section id="beginning-openstreetmap-trainer-toolkit-a-guide-for-facilitators">
+<h2>Beginning OpenStreetMap Trainer Toolkit - (A Guide for Facilitators)<a class="headerlink" href="#beginning-openstreetmap-trainer-toolkit-a-guide-for-facilitators" title="Link to this heading">¶</a></h2>
+<p><strong>BADAN NASIONAL PENANGGULANGAN BENCANA</strong></p>
+<p><strong>2013</strong></p>
+</section>
+<section id="about-toolkit">
+<h2>About Toolkit<a class="headerlink" href="#about-toolkit" title="Link to this heading">¶</a></h2>
+<p><strong>The Beginning OpenStreetMap Trainer Toolkit</strong> is designed to prepare
+trainers to deliver an introductory training course to new users of OSM.
+The materials included will prepare trainers to conduct trainings with a
+variety of audiences and to cover common problems and pitfalls,
+and also provide trainers with the best methodologies to engage new mappers.</p>
+<p>When organising an OpenStreetMap workshop, numerous factors must be
+considered, including the length of time you have to train,
+available resources, number of trainees and their technical skills.
+This toolkit will help trainers prepare trainings for different types of
+participants, but it will primarily focus on educating those with little or
+no experience with GPS, map-making and computers.</p>
+<p>The purpose of this toolkit is to prepare the trainer to successfully train
+workshop participants in adding spatial data to OpenStreetMap.</p>
+<section id="purpose-of-workshop">
+<h3>Purpose of Workshop<a class="headerlink" href="#purpose-of-workshop" title="Link to this heading">¶</a></h3>
+<p>This workshop is intended to achieve the following standard and basic
+competencies:</p>
+<section id="standard-competency">
+<h4>Standard Competency<a class="headerlink" href="#standard-competency" title="Link to this heading">¶</a></h4>
+<p>Collecting Spatial Data with OSM</p>
+</section>
+<section id="basic-competencies">
+<h4>Basic Competencies<a class="headerlink" href="#basic-competencies" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Draw paper maps to gain a basic understanding of OpenStreetMap</p></li>
+<li><p>Navigate OpenStreetMap website</p></li>
+<li><p>Operate JOSM</p></li>
+<li><p>Use GPS to add data to OSM</p></li>
+<li><p>Use Field Papers to add data to OSM</p></li>
+<li><p>Edit a map and add information to OSM using JOSM</p></li>
+<li><p>Correct imagery offset</p></li>
+<li><p>Get OSM data in a specific format to be analysed further in Geographic Information System (GIS) software</p></li>
+</ol>
+</section>
+<section id="workshop-materials">
+<h4>Workshop Materials<a class="headerlink" href="#workshop-materials" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>The OpenStreetMap website</p></li>
+<li><p>Working with OSM</p></li>
+<li><p>Working with JOSM</p></li>
+<li><p>Using GPS</p></li>
+<li><p>Field Papers</p></li>
+<li><p>Editing OpenStreetMap through JOSM</p></li>
+<li><p>Imagery offset</p></li>
+<li><p>Getting OSM data</p></li>
+</ol>
+</section>
+<section id="workshop-strategies">
+<h4>Workshop Strategies<a class="headerlink" href="#workshop-strategies" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Methods emphasised in this workshop are participatory teaching
+and active participation in all sections and
+activities, rather than lecture method.</p></li>
+<li><p><strong>Participant oriented.</strong>
+Participants are encouraged to find and gain knowledge and skills
+by themselves.</p></li>
+<li><p><strong>Trainers serve as facilitators.</strong>
+Trainers facilitate to help ideas in the workshop emerge
+from the participants, not only from trainers.
+However, trainers must be ready to provide necessary information
+when the participants need any assistance.</p></li>
+<li><p><strong>Outcome oriented.</strong> Workshop must produce the outcomes mentioned
+previously.</p></li>
+</ol>
+</section>
+<section id="tools">
+<h4>Tools<a class="headerlink" href="#tools" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Copy of <a class="reference internal" href="../osm/index.html#begin-osm"><span class="std std-ref">Data Collection Using OpenStreetMap Beginner Level</span></a>
+for participants</p></li>
+<li><p>A workshop space with tables and seats</p></li>
+<li><p>Computers (one computer may be used by two participants,
+but it is better if one computer is used by one participant)</p></li>
+<li><p>A Printer (to print out Field Papers)</p></li>
+<li><p>A Projector (to present slide and demonstrate technical instructions and
+software)</p></li>
+<li><p>GPS devices (ideally, one GPS is used by two or three participants in
+a group)</p></li>
+<li><p>Batteries for GPS devices</p></li>
+<li><p>USB cable to connect GPS devices to computer</p></li>
+<li><p>USB Flash drive(s) to transfer files and software</p></li>
+<li><p>Good internet connection</p></li>
+<li><p>Snacks and coffee for breaks</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="schedule">
+<h2>Schedule<a class="headerlink" href="#schedule" title="Link to this heading">¶</a></h2>
+<p>Below is an outline of a schedule for a five day workshop that has been tested with
+several groups in Indonesia. You may choose to adapt and change this
+workshop schedule to meet your needs.</p>
+<section id="day-i">
+<h3>Day I:<a class="headerlink" href="#day-i" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><p>Opening and Introductions</p></td>
+<td><p>Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 11.45</p></td>
+<td><ol class="arabic simple">
+<li><p>The OpenStreetMap website</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>11.45 - 12.45</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>12.45 - 14.45</p></td>
+<td><ol class="arabic simple" start="2">
+<li><p>Working with OSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>14.45 - 15.00</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15.00 - 16.00</p></td>
+<td><ol class="arabic simple" start="2">
+<li><p>Working with OSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>16.00 - 17.00</p></td>
+<td><ol class="arabic simple" start="3">
+<li><p>Working with JOSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-ii">
+<h3>Day II:<a class="headerlink" href="#day-ii" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="3">
+<li><p>Working with JOSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 11.15</p></td>
+<td><ol class="arabic simple" start="3">
+<li><p>Working with JOSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>11.15 - 12.15</p></td>
+<td><ol class="arabic simple" start="4">
+<li><p>Using GPS</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-even"><td><p>12.15 - 13.15</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>13.15 - 15.15</p></td>
+<td><ol class="arabic simple" start="4">
+<li><p>Using GPS</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-even"><td><p>15.15 - 15.30</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>15.30 - 17.00</p></td>
+<td><ol class="arabic simple" start="4">
+<li><p>Using GPS</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-iii">
+<h3>Day III:<a class="headerlink" href="#day-iii" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="4">
+<li><p>Using GPS</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 12.00</p></td>
+<td><ol class="arabic simple" start="5">
+<li><p>Field Papers</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>12.00 - 13.00</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13.00 - 15.00</p></td>
+<td><ol class="arabic simple" start="5">
+<li><p>Field Papers</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>15.00 - 15.15</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15.15 - 16.15</p></td>
+<td><ol class="arabic simple" start="5">
+<li><p>Field Papers</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>16.15 - 17.15</p></td>
+<td><ol class="arabic simple" start="5">
+<li><p>Field Papers</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-iv">
+<h3>Day IV:<a class="headerlink" href="#day-iv" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="6">
+<li><p>Editing OpenStreetMap with JOSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 12.00</p></td>
+<td><ol class="arabic simple" start="6">
+<li><p>Editing OpenStreetMap with JOSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>12.00 - 13.00</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13.00 - 14.30</p></td>
+<td><ol class="arabic simple" start="6">
+<li><p>Editing OpenStreetMap with JOSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>14.30 - 15.00</p></td>
+<td><ol class="arabic simple" start="6">
+<li><p>Editing OpenStreetMap with JOSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-even"><td><p>15.00 - 15.15</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>15.15 - 16.15</p></td>
+<td><ol class="arabic simple" start="7">
+<li><p>Imagery offset</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-even"><td><p>16.15 - 17.15</p></td>
+<td><ol class="arabic simple" start="7">
+<li><p>Imagery offset</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-v">
+<h3>Day V:<a class="headerlink" href="#day-v" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="6">
+<li><p>Editing OpenStreetMap with JOSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 12.00</p></td>
+<td><ol class="arabic simple" start="6">
+<li><p>Editing OpenStreetMap with JOSM</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>12.00 - 13.00</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13.00 - 14.30</p></td>
+<td><ol class="arabic simple" start="9">
+<li><p>Getting OSM Data</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>14.30 - 15.00</p></td>
+<td><ol class="arabic simple" start="9">
+<li><p>Getting OSM Data</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-even"><td><p>15.00 - 15.15</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>15.15 - 16.15</p></td>
+<td><p>Workshop Evaluation and Closing</p></td>
+<td><p>Plenary Session</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="workshop-plan">
+<h2>Workshop Plan<a class="headerlink" href="#workshop-plan" title="Link to this heading">¶</a></h2>
+<section id="session-1">
+<h3>Session 1<a class="headerlink" href="#session-1" title="Link to this heading">¶</a></h3>
+<section id="the-openstreetmap-website">
+<h4>The OpenStreetMap Website<a class="headerlink" href="#the-openstreetmap-website" title="Link to this heading">¶</a></h4>
+<p>Time : 90 minutes</p>
+<section id="basic-competency">
+<h5>Basic Competency<a class="headerlink" href="#basic-competency" title="Link to this heading">¶</a></h5>
+<p>Draw paper maps to gain a basic understanding of OpenStreetMap</p>
+</section>
+<section id="indicators">
+<h5>Indicators<a class="headerlink" href="#indicators" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand the concept of OpenStreetMap</p></li>
+<li><p>Understand the definition and objectives of data collection</p></li>
+<li><p>Understand the composition of a map</p></li>
+<li><p>Make a hand-drawn sketch of an area</p></li>
+</ol>
+</section>
+<section id="outcomes">
+<h5>Outcomes<a class="headerlink" href="#outcomes" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Questions and comments about OSM, data and maps</p></li>
+<li><p>Hand-drawn sketch of an area</p></li>
+</ol>
+</section>
+<section id="core-material">
+<h5>Core Material<a class="headerlink" href="#core-material" title="Link to this heading">¶</a></h5>
+<p><strong>The OpenStreetMap Website</strong></p>
+<ol class="arabic simple">
+<li><p>Concept of <em>OpenStreetMap</em></p></li>
+<li><p>Definition and objectives of data collection</p></li>
+<li><p>Components of a map</p></li>
+<li><p>Hand-drawn sketch of an area</p></li>
+</ol>
+</section>
+<section id="activities">
+<h5>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture
+<em>Slide</em></p></td>
+<td><p><em>Powerpoint</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Quiz 15’</strong></p>
+<p>Ask questions to be answered by participants, such
+as:</p>
+<ul class="simple">
+<li><p>What is OpenStreetMap?</p></li>
+<li><p>What is data?</p></li>
+<li><p>What are the components of a map?</p></li>
+</ul>
+</td>
+<td><p>Quiz</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 1</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Explanation 30’</strong></p>
+<p>Definition of OpenStreetMap</p>
+<p>Data:</p>
+<ul class="simple">
+<li><p>Definition of data</p></li>
+<li><p>Objectives of data collection</p></li>
+<li><p>How to add data</p></li>
+<li><p>How to save data</p></li>
+</ul>
+<p>Map:</p>
+<ul class="simple">
+<li><p>Definition of a map</p></li>
+<li><p>Components of a map</p></li>
+<li><p>How can a map show us information?</p></li>
+<li><p>How to connect attributes to a map?</p></li>
+<li><p>Mapping process</p></li>
+</ul>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Powerpoint</em>
+<em>Slide</em></p>
+<p>Module 1</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Individual Work 10’</strong></p>
+<p>Ask each participant to draw a map, complete with its
+information such as the name of streets or districts</p>
+</td>
+<td><p>Individual
+work</p></td>
+<td><p>Paper and pen</p>
+<p>Module 1</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Presentation 15’</strong></p>
+<p>Ask the participants to show their maps and
+explain what they have drawn</p>
+</td>
+<td><p>Presentation</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Emphasis 10’</strong></p>
+<p>Emphasise some points:</p>
+<ul class="simple">
+<li><p>A map represents places/objects with different
+symbols</p></li>
+<li><p>There are three ways to represent an object: as point, line
+and polygon (area).</p></li>
+<li><p>Objects on a map represent objects from the real world</p></li>
+<li><p>Digital maps are composed of shapes similar to real
+objects and the shape is composed from points, lines and
+polygons (area).</p></li>
+</ul>
+<p>Ask the participants to give examples about objects
+that can be represented as point, line and polygon (area).</p>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>Slide</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 5’</strong></p>
+<p>Ask the participants to give their opinion and feedback about
+what they have learned in Session 1.</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="faq-frequently-asked-questions">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#faq-frequently-asked-questions" title="Link to this heading">¶</a></h5>
+<p><strong>How did the UK begin mapping? How did OpenStreetMap start?</strong></p>
+<p>OpenStreetMap started with just a handful of volunteers who had GPS devices.
+They went out, collected data on their GPS and made sketches of maps and
+took notes, and then added the data into the OSM database at home.
+These initial volunteers hosted “Mapping Parties” in different towns,
+in which anybody could come out with them one day and go mapping.
+These parties helped expand the network of volunteers,
+get more people involved, and create great maps of different towns.</p>
+<p><strong>How did they create maps so thoroughly? What technologies did they use?</strong></p>
+<p>At the beginning, mappers only had GPS to work with, and any map data that
+was freely given to the OpenStreetMap community.
+Later, OSM made a deal with Yahoo! to be able to use their satellite
+imagery to digitise maps with.
+More recently, Microsoft and Mapbox have made imagery available to OSM.</p>
+<p><strong>Can we use OSM with Google Maps?</strong></p>
+<p>It is not legal to use Google Maps as a resource when editing
+OpenStreetMap.
+Google has not given permission for this like Microsoft has,
+and so it is not acceptable to use.</p>
+</section>
+</section>
+</section>
+<section id="session-2">
+<h3>Session 2<a class="headerlink" href="#session-2" title="Link to this heading">¶</a></h3>
+<section id="working-with-osm">
+<h4>Working with <em>OSM</em><a class="headerlink" href="#working-with-osm" title="Link to this heading">¶</a></h4>
+<p>Time : 180 minutes</p>
+<section id="id1">
+<h5>Basic Competency<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h5>
+<p>Navigate OpenStreetMap website</p>
+</section>
+<section id="id2">
+<h5>Indicators<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Visit OSM website</p></li>
+<li><p>Navigate map on OSM website</p></li>
+<li><p>Save an image from OSM</p></li>
+<li><p>Register an OSM account</p></li>
+<li><p>Editing a map</p></li>
+<li><p>Save edits</p></li>
+</ol>
+</section>
+<section id="id3">
+<h5>Outcomes<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Participants sign up for an OSM account</p></li>
+<li><p>Map images created from OSM website</p></li>
+</ol>
+</section>
+<section id="id4">
+<h5>Core Material<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h5>
+<p><strong>Working with OSM</strong></p>
+<ol class="arabic simple">
+<li><p>OSM website</p></li>
+<li><p>Navigating the OSM map</p></li>
+<li><p>Saving images from OSM</p></li>
+<li><p>Creating an OSM account</p></li>
+<li><p>Editing the OSM map</p></li>
+</ol>
+</section>
+<section id="id5">
+<h5>Activities<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demonstration 20’</strong></p>
+<p>Ask participants to pay attention to a
+demonstration about:</p>
+<ul class="simple">
+<li><p>Main functions of OpenStreetMap website</p></li>
+<li><p>Zoom in and zoom out the map</p></li>
+<li><p>Pan the map</p></li>
+<li><p>Find a place</p></li>
+<li><p>Save image from OSM website</p></li>
+</ul>
+</td>
+<td><p>Demo</p></td>
+<td><p>Computer</p>
+<p>Projector</p>
+<p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 2</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Practice 40’</strong></p>
+<p>On the projector, show participants
+openstreetmap.org and ask participants to
+follow these activities:</p>
+<ul class="simple">
+<li><p>Main functions of OpenStreetMap website</p></li>
+<li><p>Zoom in and zoom out the map</p></li>
+<li><p>Pan the map</p></li>
+<li><p>Find a place</p></li>
+<li><p>Save image from OSM website</p></li>
+</ul>
+</td>
+<td><p>Practice</p></td>
+<td><p>Computer</p>
+<p>Projector</p>
+<p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 2</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Input 20’</strong></p>
+<p>Explain:</p>
+<ul class="simple">
+<li><p>The OpenStreetMap licence. ODbL is a
+licence in which all of the data in OpenStreetMap can be used
+by everyone freely, but the user must add OpenStreetMap
+attribution and contribute back to OpenStreetMap</p></li>
+<li><p>If users choose public domain when they sign up, it
+means that they consider their edits to be freely usable
+with no licence whatsoever</p></li>
+</ul>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A</p>
+</td>
+<td><p>Projector</p>
+<p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 2</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Demo and Practice 45’</strong></p>
+<ul class="simple">
+<li><p>Show the participants how to sign up or
+register an OpenStreetMap account (problems: some
+participants might not have email accounts, some
+participants might forget their email passwords)</p></li>
+<li><p>When everyone is signed up, show
+participants how to log in to their OSM account</p></li>
+</ul>
+</td>
+<td><p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p>Computer</p>
+<p>Projector</p>
+<p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 2</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demo and Practice 45’</strong></p>
+<p>Show participants how to edit the map on the
+OpenStreetMap website and save their edits.</p>
+<ul class="simple">
+<li><p>How to add and remove objects in the iD editor</p></li>
+<li><p>How to save edits in the iD editor</p></li>
+</ul>
+</td>
+<td><p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p>Computer</p>
+<p>Projector</p>
+<p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 2</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 5’</strong></p>
+<p>Ask the participants to give their opinion and feedback about
+what they have learned in Session 2.</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td><p>Projector
+<em>Powerpoint</em>
+<em>presentation</em>
+Module 2</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id6">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h5>
+<p><strong>Forgot Password</strong></p>
+<p>Sometimes participants forget their password.
+In this case, you will need to help them to reset or create a new password.
+If that is not possible they may need to open a new email account.
+If the participants already have an OpenStreetMap account but forget the
+password, help them to reset their password.</p>
+<p><strong>Do not have email</strong></p>
+<p>If participants do not have an email account, help them create a new
+one.</p>
+</section>
+</section>
+</section>
+<section id="session-3">
+<h3>Session 3<a class="headerlink" href="#session-3" title="Link to this heading">¶</a></h3>
+<section id="working-with-josm">
+<h4>Working with JOSM<a class="headerlink" href="#working-with-josm" title="Link to this heading">¶</a></h4>
+<p>Time : 180 minutes</p>
+<section id="id7">
+<h5>Basic Competency<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h5>
+<p>Operate JOSM</p>
+</section>
+<section id="id8">
+<h5>Indicators<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Download JOSM</p></li>
+<li><p>Install JOSM</p></li>
+<li><p>Set JOSM preferences</p></li>
+<li><p>Use basic tools</p></li>
+<li><p>Draw nodes and ways in JOSM</p></li>
+<li><p>Change objects</p></li>
+<li><p>Add tags to objects using presets menu</p></li>
+</ol>
+</section>
+<section id="id9">
+<h5>Outcomes<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>JOSM is ready to use for OSM mapping</p></li>
+</ol>
+</section>
+<section id="id10">
+<h5>Core Material<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h5>
+<p><strong>Working with JOSM</strong></p>
+<ol class="arabic simple">
+<li><p>Downloading JOSM</p></li>
+<li><p>Installing JOSM</p></li>
+<li><p>Setting preferences in JOSM</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Bing imagery</p></li>
+<li><p>Presets</p></li>
+<li><p>Plugins</p></li>
+<li><p>Language settings</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Drawing maps using JOSM</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Basic operation</p></li>
+<li><p>Nodes, ways, and shapes</p></li>
+<li><p>Changing objects</p></li>
+<li><p>Adding presets</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="id11">
+<h5>Activities<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 15’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+<p>Ensure that JOSM, GPSBabel and GPS
+drivers are installed on the computers of participants</p>
+</td>
+<td><p>Talk</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demonstration and Practice 1: 45’</strong></p>
+<ul class="simple">
+<li><p>Demonstrate how to install software using
+projector</p></li>
+<li><p>Ask participants to follow
+along</p></li>
+<li><p>Help participants if they have problems with
+the steps like installing software or computer
+system configuration</p></li>
+</ul>
+</td>
+<td><p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Participants</p>
+<p>Computer
+software on
+USB
+Projector</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Demonstration and Practice 2: 90’</strong></p>
+<ul>
+<li><p>If software is already installed, ask
+participants to open JOSM</p></li>
+<li><p>Demonstrate the basic features of drawing a map</p></li>
+<li><p>Ask participants to follow the steps
+shown about:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Setting language to Bahasa Indonesia</p></li>
+<li><p>Drawing nodes, ways and shapes</p></li>
+<li><p>Selecting nodes and ways</p></li>
+<li><p>Understanding that a way consists of nodes, and a
+shape is a way that is finishes where it begins</p></li>
+<li><p>Adding custom presets to the menu</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Explain how the data is added to objects in
+tag format. A good way to explain a tag is to describe it
+as a label which is put on the objects and each label
+describes different attributes about that object</p></li>
+<li><p>Show that there are many types of tags for
+different attributes, and the easiest way to add them to
+objects is by using the presets menu</p></li>
+<li><p>Ask participants to draw their paper maps
+using JOSM to create nodes, ways and shapes</p></li>
+</ul>
+</td>
+<td><p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p>Computer
+with installed
+software</p>
+<p>Paper Map</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Closing 30’</strong></p>
+<p>One or several participants are asked to summarise
+Session 3</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="common-problems">
+<h5>Common Problems<a class="headerlink" href="#common-problems" title="Link to this heading">¶</a></h5>
+<p><strong>Setting up on Mac and Ubuntu</strong></p>
+<p>The steps to install on Mac and Ubuntu are quite easy.
+JOSM is a software based on Java so it is platform independent,
+but you have to make sure Java is already installed on your computer
+system.
+GPSBabel does not have a GUI for Linux, so it would be harder to use on Linux,
+especially for newbie users.</p>
+<p><strong>JOSM runs out of memory</strong></p>
+<p>Sometimes if someone downloads a lot of imagery and data on JOSM,
+the computer runs out of memory and crashes.
+The solution is to start JOSM with a batch file that will tell JOSM to add extra
+memory.
+An example batch file is provide in this toolkit, but you have to edit it
+using a text editor to put the correct location of the josm.jar file.</p>
+<p><strong>Participants add tags on nodes rather than the ways</strong></p>
+<p>Sometimes it is difficult for new OSM users to understand that a way consists of
+several nodes. Often a tag that is supposed to be put on a way is accidentally
+put on the nodes that make up that way.
+This can happen when a user draws a selection box that selects all the nodes on
+an object. This is an important problem to correct from the beginning, to
+train good mappers.</p>
+</section>
+<section id="id12">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h5>
+<p><strong>Is there an easy way to restart JOSM after we finish installing plugins?</strong></p>
+<p>Yes, there is a plugin that you can add which allow you to restart JOSM by
+clicking a button.
+To activate it, install it in the Preferences menu.</p>
+<p><strong>Could we make tags in Bahasa Indonesia?</strong></p>
+<p>Theoretically, you can add any tag to nodes, ways or shapes on OSM.
+But because all of the objects on OSM are saved in international databases
+and cover the whole world, we need a consensus about how to make a tag.
+As an example, a hospital is still a hospital in England, France and
+even in Indonesia.
+If every country gives a tag with their own language it will be difficult and
+confusing to show the icon or symbol for different locations.
+Because OSM originated in England and English is a very common language
+all over the world, the English language is the language which is accepted for
+tagging in OpenStreetMap.
+However if you want to alter the presets menu to use your own language it is
+still possible.</p>
+<p><strong>Can we change the colour of nodes and ways and can we change the icons? How
+can we print?</strong></p>
+<p>You can change the colour of the objects in the Preferences menu.
+This is very useful especially when it is hard to see nodes on ways and
+shapes against a background.
+When participants ask about how to change the symbol or show the name of
+objects, you need to tell them that this program is for editing data and
+not to see the preview or result and print a map.
+All of the nodes and tags will be saved in a database, but you can use some other
+software to render your map to look better.
+For example, the map on openstreetmap.org is rendered, although there are many
+more examples.
+The difference between editing data and rendering on another software might
+be quite hard to understand by participants in the beginning.</p>
+<p><strong>What is the difference between presets and tags?</strong></p>
+<p>A tag is a piece of information that you attach to nodes,
+ways or shapes (polygon) to describe one of the attributes.
+Presets are a menu that simplifies the task of applying tags to an object.</p>
+</section>
+</section>
+</section>
+<section id="session-4">
+<h3>Session 4<a class="headerlink" href="#session-4" title="Link to this heading">¶</a></h3>
+<section id="using-gps">
+<h4>Using GPS<a class="headerlink" href="#using-gps" title="Link to this heading">¶</a></h4>
+<p>Time : 6 hours 15 minutes</p>
+<section id="id13">
+<h5>Basic Competency<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h5>
+<p>Use GPS to add data to OSM</p>
+</section>
+<section id="id14">
+<h5>Indicators<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand GPS and the types of GPS</p></li>
+<li><p>Turn on GPS</p></li>
+<li><p>Set up GPS</p></li>
+<li><p>Understand factors that affect GPS accuracy</p></li>
+<li><p>Understand tracks and waypoints</p></li>
+<li><p>Collect data using GPS</p></li>
+<li><p>Copy GPS data (tracks and waypoints) to computer</p></li>
+<li><p>Open waypoints and tracks in JOSM</p></li>
+<li><p>Upload GPS tracks using JOSM</p></li>
+<li><p>Edit OSM based on GPS data in JOSM</p></li>
+</ol>
+</section>
+<section id="id15">
+<h5>Outcomes<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Collect GPS field data in gpx format</p></li>
+</ol>
+</section>
+<section id="id16">
+<h5>Core Material<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h5>
+<p><strong>Using GPS</strong></p>
+<ol class="arabic simple">
+<li><p>What is GPS</p></li>
+<li><p>Turning on GPS</p></li>
+<li><p>Navigating the GPS</p></li>
+<li><p>Tracks and waypoints</p></li>
+<li><p>Saving location (waypoint)</p></li>
+<li><p>Turning on the Track Log</p></li>
+<li><p>GPS settings</p></li>
+<li><p>How to copy waypoints and tracks to computer</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Connecting GPS to computer</p></li>
+<li><p>Installing GPS driver</p></li>
+<li><p>GPSBabel program setup</p></li>
+<li><p>GPSBabel installation</p></li>
+<li><p>Copying tracks and waypoints</p></li>
+<li><p>GPS data in JOSM</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p>Uploading GPS tracks in JOSM</p></li>
+<li><p>Editing GPS data using JOSM</p></li>
+</ol>
+</section>
+<section id="id17">
+<h5>Activities<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 10’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Talk</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Sharing 15’</strong></p>
+<ol class="arabic simple">
+<li><p>Any participants who have experience using
+smartphones may share with others their
+experience using GPS on their smartphone.</p></li>
+<li><p>Other participants respond and ask about
+experiences using GPS in smartphone.</p></li>
+</ol>
+</td>
+<td><p>Discussion</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 4</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Advice 20’</strong></p>
+<p>Present
+what GPS does and how it works on the smartphone.
+For example:</p>
+<ul class="simple">
+<li><p>Phone receives signals from radio towers, GPS
+receives signals from satellites orbiting in space.</p></li>
+<li><p>When receiving a signal, GPS can track absolute
+locations on earth.</p></li>
+</ul>
+</td>
+<td><p>Talk</p>
+<p>Q &amp; A</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 4</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demonstration and Practice 180’</strong></p>
+<ol class="arabic simple">
+<li><p>Give a GPS to each pair of participants (if
+there are enough GPS). Go outside away from buildings
+to make sure the satellite signal is good.</p></li>
+<li><p>Participants should follow the following
+demonstrations:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>How to turn on the GPS</p></li>
+<li><p>Satellite page. Give brief explanation that when GPS is
+connected with three or more satellite you can know
+your current location. It is usually takes 30 seconds.</p></li>
+<li><p>Go to other pages on GPS. Use <kbd class="kbd docutils literal notranslate">X</kbd> button to move
+to other pages.</p></li>
+<li><p>Create a waypoint and explain what it is.</p></li>
+<li><p>Look to the map page, try to zoom in and zoom out.</p></li>
+<li><p>Turn on track log and explain how the track log works.</p></li>
+<li><p>Look at the map page and walk so the
+participants can see the track.</p></li>
+<li><p>Make another waypoint.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Ask participants to practice using GPS in
+groups.</p></li>
+</ol>
+</td>
+<td><p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p>GPS (ideally
+one GPS for
+every two or
+three
+participants)</p>
+<p>Paper and
+Pen</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Second Practice 120’</strong></p>
+<p>Ask participants to walk to some roads around the
+training location in groups.
+Participants should collect waypoints and
+tracks correctly, make notes for waypoints
+in diaries or survey forms and make sketches of the area.</p>
+<ol class="arabic simple">
+<li><p>Instruct every group of participants to follow the steps.</p></li>
+<li><p>After each group understands how to save the
+information, send each group to a different direction</p></li>
+<li><p>Ask every group to collect at least ten waypoints
+before returning to the training location.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>GPS (ideally
+one GPS for
+every two or
+three
+participants)</p>
+<p>Paper and
+Pen</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Presentation 60’</strong></p>
+<p>Participants are asked to share their experience doing
+field practice.</p>
+</td>
+<td><p>Presentation</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 15’</strong></p>
+<p>Q &amp; A about experiences and problems in the field when
+using GPS.</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id18">
+<h5>Common Problems<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h5>
+<p><strong>Make sure you have batteries and extra USB cables</strong></p>
+<p>GPS devices burn through batteries relatively quickly, so it is a good idea to
+make sure every group has extra batteries when they go out mapping.
+Then when they return, they will need to move the data from GPS to the computer.
+It is best if every group has its own USB cable, which will enable
+faster copying of data to the computers.</p>
+<p><strong>All GPSes should be formatted the same</strong></p>
+<p>Before the training, make sure all GPS devices are formatted in the same way,
+which will prevent participants from getting confused. Many GPS settings can
+be changed, but when teaching a group it is best if they all look the same.</p>
+<p>The key things to make sure of are that:</p>
+<ul class="simple">
+<li><p>Page arrangement is same and in the same order: Main Menu, Track page, Map
+page, Satellite page</p></li>
+<li><p>Coordinates are saved in decimal degrees</p></li>
+<li><p>Units are in metres</p></li>
+<li><p>Elevation has been calibrated correctly</p></li>
+</ul>
+</section>
+<section id="id19">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h5>
+<p><strong>What projection does the GPS use for collected data?</strong></p>
+<p>A GPS can be set to record in different projections, but for our needs,
+the GPS must be set to record coordinates in geographic projection WGS84
+(EPSG:4326).</p>
+<p><strong>How accurate is the GPS? How can the accuracy affect the data?</strong></p>
+<p>Consumer-grade GPS devices (such as the Garmin eTrex line) typically have an
+accuracy of between three and 15 metres.
+The Satellite page on the GPS indicates the accuracy when it is in use.
+For our mapping needs, inaccuracy less than 15 metres can be ignored.</p>
+</section>
+</section>
+</section>
+<section id="session-5">
+<h3>Session 5<a class="headerlink" href="#session-5" title="Link to this heading">¶</a></h3>
+<section id="field-papers">
+<h4>Field Papers<a class="headerlink" href="#field-papers" title="Link to this heading">¶</a></h4>
+<p>Time : 6 hours 15 minutes</p>
+<section id="id20">
+<h5>Basic Competency<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h5>
+<p>Use Field Papers to add data to OSM</p>
+</section>
+<section id="id21">
+<h5>Indicators<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand how to use Field Papers</p></li>
+<li><p>Make and print Field Papers</p></li>
+<li><p>Add information to Field Papers</p></li>
+<li><p>Scan and upload Field Papers to fieldpapers.org</p></li>
+<li><p>Open Field Papers in JOSM</p></li>
+</ol>
+</section>
+<section id="id22">
+<h5>Outcomes<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Print Field Papers as PDF for surveying</p></li>
+<li><p>Add field data to Field Papers</p></li>
+</ol>
+</section>
+<section id="id23">
+<h5>Core Material<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h5>
+<p><strong>Field Papers</strong></p>
+<ol class="arabic simple">
+<li><p>What is Field Papers</p></li>
+<li><p>Using Field Papers</p></li>
+<li><p>Making and printing Field Papers</p></li>
+<li><p>Mapping with Field Papers</p></li>
+<li><p>Scanning and uploading</p></li>
+<li><p>Field Papers in JOSM</p></li>
+</ol>
+</section>
+<section id="id24">
+<h5>Activities<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 15’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Talk</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Q &amp; A 15’</strong></p>
+<ol class="arabic simple">
+<li><p>Ask if participants have any experience
+using Field Papers and how they work</p></li>
+<li><p>Participants ask about how Field Papers works</p></li>
+<li><p>Show participants Field Papers
+website</p></li>
+</ol>
+</td>
+<td><p>Q &amp; A</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p><em>Field Papers</em>
+examples</p>
+<p>Module 5</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Explanation 15’</strong></p>
+<p>Explains Field Papers, why it is useful
+and how it works.</p>
+</td>
+<td><p>Talk</p></td>
+<td><p>Projector</p>
+<p><em>Powerpoint</em>
+<em>presentation</em></p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demonstrate and Practice 105’</strong></p>
+<p>Demonstrate: (and participants practice)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Mapping using Field Papers</p></li>
+<li><p>Scanning and Uploading</p></li>
+<li><p>Opening Field Papers in JOSM</p></li>
+</ul>
+</div></blockquote>
+</td>
+<td><p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p>Projector</p>
+<p>Participants</p>
+<p>Computer</p>
+</td>
+</tr>
+<tr class="row-even"><td><p>Guide teams to make their own Field Papers,
+and then collect Field Papers from each team as PDF
+and print them.</p></td>
+<td><p>Practice</p></td>
+<td><p>Participants
+Computers
+Projector
+Printer
+Papers</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Big Practice 225’</strong></p>
+<p><strong>Divide area among groups</strong></p>
+<ol class="arabic simple">
+<li><p>Show participants a satellite picture of the area to be mapped
+today, over which you’ve drawn lines dividing it into sections.</p></li>
+<li><p>Do not create very large areas. The focus of this
+exercise is simply to introduce the survey method.</p></li>
+<li><p>Explain that together you will all make a fantastic map of
+this area today. Each team (partners) will be assigned one
+of these areas to map, and they will all go out to collect
+data, and later will add it to OpenStreetMap</p></li>
+<li><p>Teams will be equipped with a GPS, as well as one
+or two Field Papers for their area, which they can use to
+write on and take notes.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>Projector</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p>Each group goes out to map their area. Make sure
+all problems and questions about GPS and Field
+Papers have been answered and the participants
+understand what they should do. When they finish
+collect their Field Papers and add them to the website
+during the break.</p></li>
+<li><p>The easiest way to do this is to take photos of the Field
+Papers and upload them to the fieldpapers.org website.</p></li>
+</ol>
+</td>
+<td></td>
+<td><p>GPS</p>
+<p>Field Papers</p>
+<p>Pen and
+Papers</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Review/Q &amp; A</strong></p>
+<p>Ask one participant from each team to tell how the survey went:</p>
+<ul class="simple">
+<li><p>Their survey strategy</p></li>
+<li><p>Benefits and weaknesses of their strategy</p></li>
+<li><p>Problems or challenges that come from doing field surveys</p></li>
+</ul>
+<p>After identifying common problems, discuss
+solutions for them to minimise participant problems.</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td><p>Microphone</p>
+<p>Speaker</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id25">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h5>
+<p><strong>How can we print large size maps, such as a poster for a community mapping project?</strong></p>
+<p>One way of doing this is by using <a class="reference external" href="http://qgis.org/">QGIS</a>, though the topic is not covered
+during this session. Basic QGIS training is provided in the next unit of
+this training, and from there users may be able to learn how to format and
+print large maps.</p>
+<p><strong>How do we scan Field Papers?</strong></p>
+<p>You can use a scanner, a mobile (smartphone) or a camera to take photos of
+Field Papers and then upload them to fieldpapers.org.</p>
+<p><strong>What should we do if uploading Field Papers is really slow or does not work at all?</strong></p>
+<p>Unfortunately, the Field Papers website is not always 100% working, especially
+when many people are using it as once. The process of uploading may take longer
+than your lunch break. If this becomes a problem during training, participants
+may simply use their Field Papers as handheld notes and you may show them how
+to use imagery and GPS data as reference layers.</p>
+</section>
+</section>
+</section>
+<section id="session-6">
+<h3>Session 6<a class="headerlink" href="#session-6" title="Link to this heading">¶</a></h3>
+<section id="editing-openstreetmap-with-josm">
+<h4>Editing <em>OpenStreetMap</em> with <em>JOSM</em><a class="headerlink" href="#editing-openstreetmap-with-josm" title="Link to this heading">¶</a></h4>
+<p>Time : 7 hours 45 minutes</p>
+<section id="id26">
+<h5>Basic Competency<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h5>
+<p>Edit a map and add information to OSM using JOSM</p>
+</section>
+<section id="id27">
+<h5>Indicators<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Download OSM data in the area you want to edit</p></li>
+<li><p>Select layers</p></li>
+<li><p>Edit OSM data</p></li>
+<li><p>Edit and understand tags</p></li>
+<li><p>Upload OSM data</p></li>
+<li><p>Save OSM files</p></li>
+</ol>
+</section>
+<section id="id28">
+<h5>Outcomes<a class="headerlink" href="#id28" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Survey area mapped in OSM</p></li>
+</ol>
+</section>
+<section id="id29">
+<h5>Core Material<a class="headerlink" href="#id29" title="Link to this heading">¶</a></h5>
+<p><strong>Editing OpenStreetMap with JOSM</strong></p>
+<ol class="arabic simple">
+<li><p>Exploring JOSM</p></li>
+<li><p>JOSM layers</p></li>
+<li><p>Editing OSM data</p></li>
+<li><p>Tags</p></li>
+<li><p>Uploading changes</p></li>
+<li><p>Saving OSM files</p></li>
+</ol>
+</section>
+<section id="id30">
+<h5>Activities<a class="headerlink" href="#id30" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Review 20’</strong></p>
+<p>Remind participants of the basic
+operations in JOSM.</p>
+<p>Ask participants about basic operations
+such as how to zoom in and out on the map and
+how to draw points, lines and polygons.</p>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 6</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Download current OSM data of the area you want to edit 20’</strong></p>
+<p>Instruct the participants to download
+OpenStreetMap data according to the region to be edited.</p>
+</td>
+<td><p>Practice</p></td>
+<td><p>Computer
+Participant</p>
+<p><em>Powerpoint</em>
+<em>presentation</em>
+and projector</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Setting layer JOSM 20’</strong></p>
+<p>Demonstrate:</p>
+<ul class="simple">
+<li><p>Moving JOSM layers above and below one another</p></li>
+<li><p>Hiding and showing layers</p></li>
+<li><p>Enabling and disabling layers</p></li>
+<li><p>Removing a layer</p></li>
+<li><p>Setting layer transparency</p></li>
+</ul>
+<p>Participants should practice after these tasks are demonstrated.</p>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p>Computer</p>
+<p>Participant</p>
+<p>Projector</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Editing OSM data 180’</strong></p>
+<ol class="arabic simple">
+<li><p>Ask participants to edit their respective
+regions, according to the information they collected.</p></li>
+<li><p>Continually walk around to each group to observe
+participants’ work, help answer questions and catch
+mistakes.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>Computer</p>
+<p>Participant</p>
+<p>Projector</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Tags 150’</strong></p>
+<ol class="arabic simple">
+<li><p>Show participants how to enter
+information (tags) to the objects instead of
+through presets in JOSM.</p></li>
+<li><p>Ask participants to practice
+adding tags directly</p></li>
+</ol>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p>Computer</p>
+<p>Participant</p>
+<p>Projector</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Upload OSM Data 45’</strong></p>
+<ol class="arabic simple">
+<li><p>Show participants how to upload the
+data that they have added to OSM.</p></li>
+<li><p>Ask participants to upload their data in
+accordance with their respective working areas. Each
+group is allowed one person only to upload to avoid
+conflicts that otherwise might occur.</p></li>
+</ol>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p>Computer</p>
+<p>Participant</p>
+<p>Projector</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Save OSM file 25’</strong></p>
+<p>Show participants how to save
+OpenStreetMap files on their laptops. Participants should be
+reminded not to let too much time pass between downloading
+and uploading OSM data.</p>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p>Computer</p>
+<p>Participant</p>
+<p>Projector</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id31">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id31" title="Link to this heading">¶</a></h5>
+<p><strong>Should we use a point or a polygon to identify a restaurant in a mall?</strong></p>
+<p>You should use a point.
+Polygons are used if you clearly know the shape of a building or area.
+If you want to identify a landmark inside a larger polygon,
+such as a building it is better to use a point.</p>
+<p><strong>How do we map a bridge in JOSM?</strong></p>
+<p>To mark a bridge, you need to split the lines which marks the bridge (usually
+a way) on both sides of the bridge.
+If you have a road that crosses a river, you can click on the dots on the
+side of the river and press ‘P’ on the keyboard to split the line at that
+point.
+Then the selected line can be tagged as bridge using the presets menu.</p>
+<p><strong>How do we digitise a building to have a perfect rectangle shape?</strong></p>
+<p>It is not easy to make a perfect rectangle only using your hand.
+Luckily there are tools that can make the proper angle at each corner of a
+polygon.
+Select the polygon (building) and press <kbd class="kbd docutils literal notranslate">Q</kbd> on the keyboard to shape
+that polygon.</p>
+<p><strong>The map on OpenStreetMap does not show edits immediately. What can we do?</strong></p>
+<p>Usually it will take about 5-10 minutes to see your changes appear
+on the OpenStreetMap website.
+If you can not see the changes on OpenStreetmap after that time it may be
+because your browser is still caching the old map.
+In this case you should reload the page in your browser.
+If this is not successful you may need to delete the cache in your browser.
+For example, in Google Chrome go to <span class="menuselection">Tools ‣ Clear Browsing Data</span>.
+Click <span class="guilabel">Empty the cache</span> and click <span class="guilabel">Clear browsing data</span>.
+Then refresh the page again and your edits should appear.
+Sometimes it still can take a while until changes to OpenStreetMap appear on
+the main page.</p>
+</section>
+</section>
+</section>
+<section id="session-7">
+<h3>Session 7<a class="headerlink" href="#session-7" title="Link to this heading">¶</a></h3>
+<section id="imagery-offset">
+<h4>Imagery Offset<a class="headerlink" href="#imagery-offset" title="Link to this heading">¶</a></h4>
+<p>Time : 90 minutes</p>
+<section id="id32">
+<h5>Basic Competency<a class="headerlink" href="#id32" title="Link to this heading">¶</a></h5>
+<p>Correct imagery offset</p>
+</section>
+<section id="id33">
+<h5>Indicators<a class="headerlink" href="#id33" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand the definition of imagery offset</p></li>
+<li><p>Understand components of imagery (resolution and georeference)</p></li>
+<li><p>Explain how imagery offsets occur</p></li>
+<li><p>Fix imagery offset</p></li>
+</ol>
+</section>
+<section id="id34">
+<h5>Outcomes<a class="headerlink" href="#id34" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Able to correct imagery offset</p></li>
+</ol>
+</section>
+<section id="id35">
+<h5>Core Material<a class="headerlink" href="#id35" title="Link to this heading">¶</a></h5>
+<p><strong>Imagery Offset</strong></p>
+<ol class="arabic simple">
+<li><p>Definition of imagery offset</p></li>
+<li><p>Imagery resolution and georeferencing</p></li>
+<li><p>Imagery offset</p></li>
+<li><p>Fixing imagery offset</p></li>
+</ol>
+</section>
+<section id="id36">
+<h5>Activities<a class="headerlink" href="#id36" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Explain Imagery 60’</strong></p>
+<p>Explains about imagery, including resolution,
+georeference, why imagery offset occurs and how to fix it.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 7</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Add plugin imagery_offset_db in JOSM 20’</strong></p>
+<ol class="arabic simple">
+<li><p>Ask participants to add imagery_offset_db
+plugin from the Plugins list in the Preferences menu.</p></li>
+<li><p>Guide the participants step-by-step on how to utilise the
+plugin.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>Computer</p>
+<p>Participant</p>
+<p>Projector</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Closing 5’</strong></p>
+<p>Discussion and Questions</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="session-8">
+<h3>Session 8<a class="headerlink" href="#session-8" title="Link to this heading">¶</a></h3>
+<section id="getting-osm-data">
+<h4>Getting OSM Data<a class="headerlink" href="#getting-osm-data" title="Link to this heading">¶</a></h4>
+<p>Time : 90 minutes</p>
+<section id="id37">
+<h5>Basic Competency<a class="headerlink" href="#id37" title="Link to this heading">¶</a></h5>
+<p>Get OSM data in a specific format to be analysed further in
+Geographic Information System (GIS) software</p>
+</section>
+<section id="id38">
+<h5>Indicators<a class="headerlink" href="#id38" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Download OpenStreetMap data from Geofabrik website</p></li>
+<li><p>Download customised OpenStreetMap data using HOT Exports</p></li>
+</ol>
+</section>
+<section id="id39">
+<h5>Outcomes<a class="headerlink" href="#id39" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Able to access pre-processed vector files for use in Beginner QGIS training</p></li>
+</ol>
+</section>
+<section id="id40">
+<h5>Core Material<a class="headerlink" href="#id40" title="Link to this heading">¶</a></h5>
+<p><strong>Getting OSM Data</strong></p>
+<ol class="arabic simple">
+<li><p>OpenStreetMap data from Geofabrik Website</p></li>
+<li><p>OpenStreetMap data according to region and
+selecting attributes with HOT export tool</p></li>
+</ol>
+</section>
+<section id="id41">
+<h5>Activities<a class="headerlink" href="#id41" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Module 9</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Download OSM vector files from Geofabrik website 20’</strong></p>
+<ol class="arabic simple">
+<li><p>Shows how participants can get OSM
+data in shapefile format through the Geofabrik
+website that can be processed by QGIS
+and InaSAFE.</p></li>
+<li><p>Ask participants to download vector files themselves via
+the Geofabrik website.</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>Practice</p>
+</td>
+<td><p>Computer
+Participants</p>
+<p>Projector</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Download OSM vector files via HOT Export website 30’</strong></p>
+<ol class="arabic simple">
+<li><p>Demonstrate</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>How participants can get OSM data in shapefile
+format through the HOT Export website that
+can be processed by QGIS and InaSAFE software</p></li>
+<li><p>The difference between Geofabrik and HOT Export websites</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Ask participants to download vector files themselves via
+the HOT Export website.</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>Practice</p>
+</td>
+<td><p>Computer</p>
+<p>Participants</p>
+<p>Projector</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>FGD 20’</strong></p>
+<p>Topics for discussion are:</p>
+<ul class="simple">
+<li><p>How will OSM will be useful for participant activities?</p></li>
+<li><p>Difficulties in using OSM for participants. For example, some
+common difficulties are the unavailability
+of GPS devices and satellite imagery or slow internet.</p></li>
+</ul>
+<p>Do not provide solutions directly to the
+participants. Note the comments and needs of the participants
+so that it can be submitted to the training organiser
+or relevant partner to be followed up on (for example, set
+aside a budget for the procurement of GPS).</p>
+</td>
+<td><p>Lecture</p>
+<p>FGD</p>
+</td>
+<td><p>Projector</p>
+<p>Microphone</p>
+<p>Speaker</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing and Follow-up 15’</strong></p>
+<p>Demonstrate:</p>
+<ul class="simple">
+<li><p>How participants can discuss through social
+media such as Facebook or Twitter</p></li>
+<li><p>How participants can join the talk-id mailing list</p></li>
+</ul>
+</td>
+<td><p>Demonstration</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id42">
+<h5>Common Problems<a class="headerlink" href="#id42" title="Link to this heading">¶</a></h5>
+<p><strong>HOT Exports takes a long time to process a job</strong></p>
+<p>The HOT Export server uses a first come - first serve strategy.
+That means the server serves the user who executes the first data request
+first. The size of the desired area also affects the processing time.
+The greater the total area the longer the process will take.</p>
+</section>
+</section>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="qgis-inasafe-beginner-toolkit.html"
+                   title="Unit 2 Facilitator Guide"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="curriculum.html"
+                   title="Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

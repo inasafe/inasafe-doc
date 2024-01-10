@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 2: QGIS and InaSAFE in Contingency Planning &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 3: The Basics of QGIS" href="203-the-basics-of-qgis.html" />
+    <link rel="prev" title="Module 1: GIS for Developing Contingency Plan" href="201-gis-for-developing-contingency-plan.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/202-qgis-and-inasafe-in-contingency-plan.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/202-qgis-and-inasafe-in-contingency-plan.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 2: QGIS and InaSAFE in Contingency Planning</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="203-the-basics-of-qgis.html"
+                   title="Module 3: The Basics of QGIS"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="201-gis-for-developing-contingency-plan.html"
+                   title="Module 1: GIS for Developing Contingency Plan"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="200-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="201-gis-for-developing-contingency-plan.html">Module 1: GIS for Developing Contingency Plan</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 2: QGIS and InaSAFE in Contingency Planning</a></li>
+<li class="toctree-l5"><a class="reference internal" href="203-the-basics-of-qgis.html">Module 3: The Basics of QGIS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="204-qgis-plugin.html">Module 4: QGIS Plugins</a></li>
+<li class="toctree-l5"><a class="reference internal" href="205-map-projection-basics.html">Module 5: Map Projection Basics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="206-working-with-vector-data.html">Module 6: Working with Vector Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="207-labels-and-classification.html">Module 7: Labels and Classification</a></li>
+<li class="toctree-l5"><a class="reference internal" href="208-working-with-raster-data.html">Module 8: Working with Raster Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="209-create-a-new-vector-layer.html">Module 9: Creating Vector Layers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="210-vector-analysis-for-problem-solving.html">Module 10: Vector Analysis for Problem Solving</a></li>
+<li class="toctree-l5"><a class="reference internal" href="211-using-map-composer.html">Module 11: Using Map Composer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="212-understanding-inasafe.html">Module 12: Understanding InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="213-getting-support.html">Module 13: Getting Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image710.png" src="../../../../_images/image710.png" />
+<section id="module-2-qgis-and-project-name-in-contingency-planning">
+<span id="qgis-and-inasafe-in-contingency-plan"></span><h1>Module 2: QGIS and InaSAFE in Contingency Planning<a class="headerlink" href="#module-2-qgis-and-project-name-in-contingency-planning" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand the role of GIS in contingency plan preparation</p></li>
+<li><p>Understand the importance of data</p></li>
+<li><p>Understand the benefits of QGIS/InaSAFE in the development of
+scenarios for contingency planning</p></li>
+</ul>
+<section id="gis-for-preparing-contingency-plans">
+<h2>GIS for preparing contingency plans<a class="headerlink" href="#gis-for-preparing-contingency-plans" title="Link to this heading">¶</a></h2>
+<p>GIS has an important role in contingency planning.
+A contingency plan is intended to support community preparedness to
+anticipate the arrival of a potentially hazardous event,
+such as an earthquake or tsunami.
+The purpose of such a plan is to minimise casualties and losses in case of
+such an event.</p>
+<p>Before contemplating a contingency plan, one must first consider potential
+disaster scenarios.
+A good plan will likely answer questions such as:</p>
+<ul class="simple">
+<li><p>what sort of disaster is likely to happen?</p></li>
+<li><p>how widespread might the impact be?</p></li>
+<li><p>who is responsible for helping?</p></li>
+<li><p>what should be given as aid?</p></li>
+<li><p>where are the priority areas?</p></li>
+</ul>
+<p>In other words, a contingency plan answers the question, who does what, where
+and when?</p>
+<p>A Geographic Information System is able to help planners answer these questions,
+especially the important spatial elements of contingency planning.
+GIS may be used to model hazardous events so that they can be better
+predicted.
+It may be used to plan evacuation routes prior to a disaster.
+When a disaster occurs, GIS may also play a role in the emergency response
+phase.
+It can be used to map the area affected and position of refugee camps, so that
+helpers can be directed to the most useful locations to aid those affected.
+After a disaster, GIS may also be used to plan for rehabilitation and
+reconstruction.
+Overall, GIS helps to perform analysis of a disaster,
+damage and losses caused, and opportunities for reducing risk.</p>
+</section>
+<section id="the-importance-of-data">
+<h2>The importance of data<a class="headerlink" href="#the-importance-of-data" title="Link to this heading">¶</a></h2>
+<p>We previously learned how to start collecting exposure data.
+When thinking about GIS it is important to remember that if your data is bad,
+your analysis will be bad also.
+Hence the more detailed and accurate your data is, the better your analysis
+and action may be during a disaster.</p>
+<p>As we shall see in this unit, some data may be obtained from various agencies
+that specialise in certain kinds of data.
+For example, we will obtain our hazard models (hazard data) from various
+organisations that specialise in this.
+As for exposure data, some data we may find through agencies,
+such as population data.
+For infrastructure data, collecting data at a community
+level is key, which is why in the previous unit we learned how to utilise the
+crowd-sourced OpenStreetMap platform.</p>
+</section>
+<section id="qgis-and-project-name">
+<h2>QGIS and InaSAFE<a class="headerlink" href="#qgis-and-project-name" title="Link to this heading">¶</a></h2>
+<p>QGIS is a user-friendly open-source Geographic Information System (GIS).
+It runs on Windows, Mac OSX, and Linux.
+QGIS provides a continually growing number of capabilities provided by core
+functions and plugins.
+You can visualise, manage, edit, analyse data and compose printable maps.
+QGIS is great because:</p>
+<ul class="simple">
+<li><p>It’s completely free. It doesn’t cost anything.</p></li>
+<li><p>It’s free, as in liberty.
+If you think a feature is missing, you can sponsor the development of a
+feature, or add it yourself if you are familiar with programming.</p></li>
+<li><p>It’s constantly developing and improving.
+Because many people continue adding features, it keeps getting better.</p></li>
+<li><p>Extensive help and documentation is available.
+If you have problems you can always turn to the software documentation,
+other QGIS users, or even the developers.</p></li>
+</ul>
+<p>QGIS has many plugins which extend the core functionality of the software.
+One of these plugins is InaSAFE, which can be used to analyse the
+impact of a disaster and create a list of actions needed to be taken when a
+disaster occurs.
+QGIS and InaSAFE can also help to determine the location of ideal
+places of refuge, evacuation routes, areas likely to be damaged and more.</p>
+<img alt="../../../../_images/image89.png" class="align-center" src="../../../../_images/image89.png" />
+<p>InaSAFE provides overviews of potential disaster scenarios and
+their outcomes, as well as maps which can aid decision-makers when
+disaster strikes.
+Maps are an effective way of communicating disaster impact,
+by showing in a simple way the areas of damage, such as the extent of
+flood-affected areas and buildings affected by a flood.</p>
+<p><a class="reference internal" href="203-the-basics-of-qgis.html#basics-of-qgis"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="203-the-basics-of-qgis.html"
+                   title="Module 3: The Basics of QGIS"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="201-gis-for-developing-contingency-plan.html"
+                   title="Module 1: GIS for Developing Contingency Plan"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

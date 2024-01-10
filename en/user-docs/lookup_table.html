@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Lookup-Table &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../_static/doctools.js?v=849807d4"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/custom-jquery.js"></script>
+    <script src="../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Writing Documentation" href="writing_documentation.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'user-docs/lookup_table.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'user-docs/lookup_table.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    InaSAFE User documentation</a>
+                </li>
+                
+
+                <li><a href="#">Lookup-Table</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="writing_documentation.html"
+                   title="Writing Documentation"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../training/index.html">Training Materials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">InaSAFE User documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_help.html">Getting Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="toolbar.html">Toolbar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="application-help/index.html">Application Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functionality.html">Functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="postprocessors.html">Post-processors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_qgis.html">Using QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_involved.html">Getting involved</a></li>
+<li class="toctree-l2"><a class="reference internal" href="issue_tracker.html">Submit an Issue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="writing_documentation.html">Writing Documentation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lookup-Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#indonesian-translation-index">Indonesian Translation Index</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <section id="lookup-table">
+<span id="id1"></span><h1>Lookup-Table<a class="headerlink" href="#lookup-table" title="Link to this heading">¶</a></h1>
+<p>Here you can find a Table of not translate able phrases and words.
+Take it as a dictionary if you are going to translate with transifex</p>
+<section id="indonesian-translation-index">
+<h2>Indonesian Translation Index<a class="headerlink" href="#indonesian-translation-index" title="Link to this heading">¶</a></h2>
+<p>To coordinate translation of InaSAFE into Bahasa Indonesian we have developed
+a table of commonly used terms and translation.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>English</p></th>
+<th class="head"><p>Bahasa Indonesia</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>hazard</p></td>
+<td><p>ancaman</p></td>
+</tr>
+<tr class="row-odd"><td><p>exposure</p></td>
+<td><p>keterpaparan</p></td>
+</tr>
+<tr class="row-even"><td><p>activities</p></td>
+<td><p>langkah kegiatan</p></td>
+</tr>
+<tr class="row-odd"><td><p>common problem</p></td>
+<td><p>masalah yang sering dijumpai</p></td>
+</tr>
+<tr class="row-even"><td><p>workshop</p></td>
+<td><p>lokakarya</p></td>
+</tr>
+<tr class="row-odd"><td><p>jobs</p></td>
+<td><p>job</p></td>
+</tr>
+<tr class="row-even"><td><p>working with</p></td>
+<td><p>pengoperasian/mengoperasikan</p></td>
+</tr>
+<tr class="row-odd"><td><p>demo</p></td>
+<td><p>demonstrasi</p></td>
+</tr>
+<tr class="row-even"><td><p>module</p></td>
+<td><p>modul</p></td>
+</tr>
+<tr class="row-odd"><td><p>learning activity</p></td>
+<td><p>kegiatan pembelajaran</p></td>
+</tr>
+<tr class="row-even"><td><p>population</p></td>
+<td><p>populasi</p></td>
+</tr>
+<tr class="row-odd"><td><p>keyword</p></td>
+<td><p>kata kunci</p></td>
+</tr>
+<tr class="row-even"><td><p>update</p></td>
+<td><p>pembaharuan</p></td>
+</tr>
+<tr class="row-odd"><td><p>option</p></td>
+<td><p>pilihan</p></td>
+</tr>
+<tr class="row-even"><td><p>interface</p></td>
+<td><p>antarmuka/tampilan antarmuka (sesuaikan dengan kalimat)</p></td>
+</tr>
+<tr class="row-odd"><td><p>software</p></td>
+<td><p>perangkat lunak</p></td>
+</tr>
+<tr class="row-even"><td><p>hardware</p></td>
+<td><p>perangkat keras</p></td>
+</tr>
+<tr class="row-odd"><td><p>check</p></td>
+<td><p>tanda centang</p></td>
+</tr>
+<tr class="row-even"><td><p>checklist</p></td>
+<td><p>daftar aktivitas/daftar kebutuhan</p></td>
+</tr>
+<tr class="row-odd"><td><p>GIS</p></td>
+<td><p>SIG</p></td>
+</tr>
+<tr class="row-even"><td><p>explore</p></td>
+<td><p>eksplorasi</p></td>
+</tr>
+<tr class="row-odd"><td><p>website</p></td>
+<td><p>situs</p></td>
+</tr>
+<tr class="row-even"><td><p>login</p></td>
+<td><p>masuk</p></td>
+</tr>
+<tr class="row-odd"><td><p>username</p></td>
+<td><p>nama pengguna</p></td>
+</tr>
+<tr class="row-even"><td><p>attribute</p></td>
+<td><p>atribut</p></td>
+</tr>
+<tr class="row-odd"><td><p>symbology</p></td>
+<td><p>pengaturan simbol</p></td>
+</tr>
+<tr class="row-even"><td><p>footprint hazard</p></td>
+<td><p>batas area bencana</p></td>
+</tr>
+<tr class="row-odd"><td><p>building footprint</p></td>
+<td><p>batas tapak bangunan</p></td>
+</tr>
+<tr class="row-even"><td><p>way</p></td>
+<td><p>garis</p></td>
+</tr>
+<tr class="row-odd"><td><p>polygon</p></td>
+<td><p>poligon</p></td>
+</tr>
+<tr class="row-even"><td><p>editing</p></td>
+<td><p>mengedit</p></td>
+</tr>
+<tr class="row-odd"><td><p>browse</p></td>
+<td><p>telusuri</p></td>
+</tr>
+<tr class="row-even"><td><p>password</p></td>
+<td><p>kata sandi</p></td>
+</tr>
+<tr class="row-odd"><td><p>dropdown</p></td>
+<td><p>daftar pilihan</p></td>
+</tr>
+<tr class="row-even"><td><p>default</p></td>
+<td><p>pengaturan bawaan</p></td>
+</tr>
+<tr class="row-odd"><td><p>contingency</p></td>
+<td><p>kontinjensi</p></td>
+</tr>
+<tr class="row-even"><td><p>digitalization</p></td>
+<td><p>digitalisasi</p></td>
+</tr>
+<tr class="row-odd"><td><p>drag</p></td>
+<td><p>geser</p></td>
+</tr>
+<tr class="row-even"><td><p>practicing</p></td>
+<td><p>mempraktikkan</p></td>
+</tr>
+<tr class="row-odd"><td><p>IDP camp</p></td>
+<td><p>tempat pengungsian</p></td>
+</tr>
+<tr class="row-even"><td><p>map canvas</p></td>
+<td><p>kanvas peta</p></td>
+</tr>
+<tr class="row-odd"><td><p>filter</p></td>
+<td><p>penyaringan</p></td>
+</tr>
+<tr class="row-even"><td><p>directory</p></td>
+<td><p>direktori</p></td>
+</tr>
+<tr class="row-odd"><td><p>log</p></td>
+<td><p>catatan</p></td>
+</tr>
+<tr class="row-even"><td><p>web browser</p></td>
+<td><p>browser internet</p></td>
+</tr>
+<tr class="row-odd"><td><p>feature</p></td>
+<td><p>fitur</p></td>
+</tr>
+<tr class="row-even"><td><p>liquefied</p></td>
+<td><p>tergenang</p></td>
+</tr>
+<tr class="row-odd"><td><p>intersect</p></td>
+<td><p>perpotongan</p></td>
+</tr>
+<tr class="row-even"><td><p>disclaimer</p></td>
+<td><p>peringatan</p></td>
+</tr>
+<tr class="row-odd"><td><p>extent</p></td>
+<td><p>jangkauan</p></td>
+</tr>
+</tbody>
+</table>
+<p>The list of abbreviations to use (including the automatic link to the
+respective homepage) is:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span><span class="n">project_name</span><span class="o">|</span> <span class="k">for</span> <span class="n">InaSAFE</span>
+<span class="o">|</span><span class="n">AIFDR</span><span class="o">|</span>
+<span class="o">|</span><span class="n">BNPB</span><span class="o">|</span>
+<span class="o">|</span><span class="n">GoA</span><span class="o">|</span> <span class="k">for</span> <span class="n">DFAT</span><span class="o">-</span><span class="n">Australian</span> <span class="n">Aid</span>
+<span class="o">|</span><span class="n">GFDRR</span><span class="o">|</span>
+<span class="o">|</span><span class="n">GA</span><span class="o">|</span> <span class="k">for</span> <span class="n">Geoscience</span> <span class="n">Australia</span>
+<span class="o">|</span><span class="n">OSM</span><span class="o">|</span>
+<span class="o">|</span><span class="n">Linfiniti</span><span class="o">|</span>
+<span class="o">|</span><span class="n">HOT</span><span class="o">|</span>
+<span class="o">|</span><span class="n">QGIS</span><span class="o">|</span>
+</pre></div>
+</div>
+<p>We have also made a blanket decision not to translate the following words:</p>
+<ul class="simple">
+<li><p><em>python</em></p></li>
+<li><p><em>qgis</em></p></li>
+<li><p><em>batch runner</em></p></li>
+<li><p><em>review</em></p></li>
+<li><p><em>tool</em></p></li>
+<li><p><em>template</em></p></li>
+<li><p><em>input</em></p></li>
+<li><p><em>output</em></p></li>
+<li><p><em>layer</em></p></li>
+<li><p><em>layout</em></p></li>
+<li><p><em>upload</em></p></li>
+<li><p><em>download</em></p></li>
+<li><p><em>tag</em></p></li>
+<li><p><em>edit</em></p></li>
+<li><p><em>field papers</em></p></li>
+<li><p><em>value</em></p></li>
+<li><p><em>query</em></p></li>
+<li><p><em>buffer</em></p></li>
+<li><p><em>field</em></p></li>
+<li><p><em>field calculator</em></p></li>
+<li><p><em>outcome</em></p></li>
+<li><p><em>plugin</em></p></li>
+<li><p><em>overlay</em></p></li>
+<li><p><em>file</em></p></li>
+<li><p><em>node</em></p></li>
+<li><p><em>track</em></p></li>
+<li><p><em>track log</em></p></li>
+<li><p><em>waypoint</em></p></li>
+<li><p><em>copy &amp; paste</em></p></li>
+</ul>
+<p>Please add to this list as required.</p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="writing_documentation.html"
+                   title="Writing Documentation"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

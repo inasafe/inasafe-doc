@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Datasets &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Introduction to QGIS" href="introduction_to_qgis.html" />
+    <link rel="prev" title="InaSAFE concepts" href="inasafe_concepts.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/socialisation/datasets.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/socialisation/datasets.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Socialisation Training Manual</a>
+                </li>
+                
+
+                <li><a href="#">Datasets</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="introduction_to_qgis.html"
+                   title="Introduction to QGIS"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="inasafe_concepts.html"
+                   title="InaSAFE concepts"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Socialisation Training Manual</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#project-name-is-funded-by">InaSAFE is funded by:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#preface">Preface</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#course-media">Course media</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="objective.html">Course objectives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="introduction.html">Introducing InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inasafe_concepts.html">InaSAFE concepts</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Datasets</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#hazard-data">Hazard data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#exposure-data">Exposure data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#aggregation-data">Aggregation Data</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="introduction_to_qgis.html">Introduction to QGIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_basic_inasafe.html">Run Basic InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_intermediate_inasafe.html">Run Intermediate InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_other_hazards.html">Other Hazards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <section id="datasets">
+<span id="id1"></span><h1>Datasets<a class="headerlink" href="#datasets" title="Link to this heading">¶</a></h1>
+<p>The data used in this course is available for download at
+<a class="reference external" href="http://data.inasafe.org/">data.inasafe.org</a>. Ask your trainer what data you
+will need to download for the course, if it is not provided.</p>
+<p>If you are working through the training independently, use the following data
+packages:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://data.inasafe.org/Socialisation%20Training/Introduction%20to%20QGIS.zip">Introduction to QGIS.zip</a></p></li>
+<li><p><a class="reference external" href="http://data.inasafe.org/TrainingDataPackages/Run%20Basic%20InaSAFE%20v3.4.zip">Run Basic InaSAFE.zip</a></p></li>
+<li><p><a class="reference external" href="http://data.inasafe.org/Socialisation%20Training/Run%20Intermediate%20InaSAFE.zip">Run Intermediate InaSAFE.zip</a></p></li>
+<li><p><a class="reference external" href="http://data.inasafe.org/TrainingDataPackages/Run%20Other%20Hazards.zip">Other Hazards.zip</a></p></li>
+</ul>
+<section id="hazard-data">
+<h2>Hazard data<a class="headerlink" href="#hazard-data" title="Link to this heading">¶</a></h2>
+<section id="flood-model">
+<h3>Flood Model<a class="headerlink" href="#flood-model" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">File name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Jakarta_Flood_HKV_WGS84.tif</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>A flood similar to the 2007 Jakarta event</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Raster</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Continuous</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Scenario<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Single event</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Unit<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>metres</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>HKV</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">URL<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://deltares.nl">http://deltares.nl</a></p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>2012</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://creativecommons.org/">Creative Commons by Attribution (CCbyA)</a></p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Jakarta</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>The flood model was created by scientists/engineers in
+coordination with DKI Jakarta Public Works based on the
+2007 flood conditions. The water depth is the maximum
+depth occurring across the entire flooding period.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_flood_model.png"><img alt="../../_images/005_data_flood_model.png" class="align-center" src="../../_images/005_data_flood_model.png" style="width: 350pt;" /></a>
+</section>
+<section id="flood-footprint">
+<h3>Flood Footprint<a class="headerlink" href="#flood-footprint" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">File name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Jakarta_Flood_18113_WGS84.shp</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>A flood in Jakarta like 2013</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Polygon</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Classified</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Scenario<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Single event</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute field<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>FLOODPRONE</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute value map<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Wet (Yes), Dry (No)</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://www.openstreetmap.org/">OSM</a> and BPBD DKI Jakarta</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>18 January 2013</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://creativecommons.org/">Creative Commons by Attribution (CCbyA)</a></p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Jakarta</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Along with sub-village boundaries that were mapped during
+the DKI mapping project, this dataset was used to
+identify flood areas based on information provided by the
+villages.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_flood_footprint.png"><img alt="../../_images/005_data_flood_footprint.png" class="align-center" src="../../_images/005_data_flood_footprint.png" style="width: 350pt;" /></a>
+</section>
+<section id="earthquake">
+<h3>Earthquake<a class="headerlink" href="#earthquake" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">File name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Padang_EQ_2009_WGS84.tif</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Earthquake in Padang 2009</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Raster</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Continuous</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Scenario<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Single event</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Unit<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>MMI</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Badan Geologi and <a class="reference external" href="http://aid.dfat.gov.au">Australian Government</a></p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>2012</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://creativecommons.org/">Creative Commons by Attribution (CCbyA)</a></p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Padang</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>A shakemap is a representation of ground shaking
+produced by an earthquake. This particular scenario was
+modelled on the 30th September 2009 Mw 7.9 earthquake
+in Padang. ShakeMaps are generated automatically
+following moderate and large earthquakes by USGS.
+For more     information go to <a class="reference external" href="http://earthquake.usgs.gov/earthquakes/map/">http://earthquake.usgs.gov/earthquakes/map/</a>.
+Pre-event / scenario based shakemaps must be modelled by
+earthquake specialists.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_earthquake.png"><img alt="../../_images/005_data_earthquake.png" class="align-center" src="../../_images/005_data_earthquake.png" style="width: 400pt;" /></a>
+</section>
+<section id="tsunami">
+<h3>Tsunami<a class="headerlink" href="#tsunami" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">File name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Maumere_Tsunami_WGS84.tif</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Tsunami in Maumere (Mw 8.1)</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Raster</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Continuous</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Scenario<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Single event</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://aid.dfat.gov.au">Australian Government</a> and Badan Geologi</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>2012</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://creativecommons.org/">Creative Commons by Attribution (CCbyA)</a></p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Maumere, Flores</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>In September 2011, the Indonesian government held a
+national exercise in Maumere, Flores. <a class="reference external" href="http://www.aifdr.org/">AIFDR</a> and <a class="reference external" href="http://aid.dfat.gov.au">Australian Government</a>
+assisted Badan Geology to develop a tsunami model for
+Maumere based on an Mw 8.1 earthquake. The Tsunami was
+modelled using open source software called ANUGA and
+elevation data from NEXTMap. The water depth is the
+maximum depth occurring across the entire tsunami event.
+For more information visit <a class="reference external" href="http://anuga.anu.edu.au/">http://anuga.anu.edu.au/</a>
+and <a class="reference external" href="http://intermap.com/">http://intermap.com/</a></p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_tsunami.png"><img alt="../../_images/005_data_tsunami.png" class="align-center" src="../../_images/005_data_tsunami.png" style="width: 400pt;" /></a>
+</section>
+<section id="volcano">
+<h3>Volcano<a class="headerlink" href="#volcano" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">File name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung_Hazard_Map_2015_WGS84.shp</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung Hazard Map</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Polygon</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Classified</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Scenario<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Multiple event</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute field<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>KRB</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute value map<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Kawasan rawan bencana III - High; Kawasan rawan bencana II - Medium; Kawasan rawan bencana I - Low</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>PVMBG</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">URL<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://vsi.esdm.go.id/gallery/picture.php?/63/category/7">http://vsi.esdm.go.id/gallery/picture.php?/63/category/7</a> (published map)</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>2015</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>This map contains information about the hazard level for
+each zone. It can be used to identify the potential impact.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_volcano_hazard.png"><img alt="../../_images/005_data_volcano_hazard.png" class="align-center" src="../../_images/005_data_volcano_hazard.png" style="width: 400pt;" /></a>
+</section>
+<section id="volcano-point">
+<h3>Volcano Point<a class="headerlink" href="#volcano-point" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">File name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung_Mount_WGS84.shp</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung Mt</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Point</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Classified</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Scenario<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Multiple event</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute field<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Name</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute value<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>PVMBG</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">URL<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://vsi.esdm.go.id/gallery/picture.php?/63/category/7">http://vsi.esdm.go.id/gallery/picture.php?/63/category/7</a> (publish map)</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>2015</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>The data shows the location of Mount Sinabung peak.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_volcano_sinabung.png"><img alt="../../_images/005_data_volcano_sinabung.png" class="align-center" src="../../_images/005_data_volcano_sinabung.png" style="width: 400pt;" /></a>
+</section>
+<section id="volcanic-ash">
+<h3>Volcanic Ash<a class="headerlink" href="#volcanic-ash" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">File name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung_Volcanic_Ash_1Feb14_WGS84.shp</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung Volcanic Ash</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Polygon</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Classified</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Scenario<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Single event</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute field<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>KRB</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute value map<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>High; Medium; Low</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>PVMBG - BNPB</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">URL<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>2014</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Sinabung region</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>The data show the spread of volcanic ash from Mount
+Sinabung during the 2014 eruption.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_volcanic_ash.png"><img alt="../../_images/005_data_volcanic_ash.png" class="align-center" src="../../_images/005_data_volcanic_ash.png" style="width: 400pt;" /></a>
+</section>
+<section id="landslide">
+<h3>Landslide<a class="headerlink" href="#landslide" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">File name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>NGK_Landslide_Vulnerability_WGS84.shp</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Landslide Hazard Zone</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Polygon</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Classified</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Scenario<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Single event</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute field<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>KRB</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute value map<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>High Landslide Vulnerability Zone - High;
+Moderate Landslide Vulnerability Zone - Medium;
+Low Landslide Vulnerability Zone - Low</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>PVMBG</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">URL<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://vsi.esdm.go.id/gallery/picture.php?/230/category/14">http://vsi.esdm.go.id/gallery/picture.php?/230/category/14</a> (published map)</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>2009</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Landslide vulnerability maps show the regions where
+landslides may occur. Topographic and landuse changes
+after mapping can change the landslide zone in the map.
+The high vulnerability zone is to be avoided for
+settlement areas or strategic infrastructure. If it
+can’t be avoided, build on the moderate zone, but
+detailed research is needed to avoid landslide happen.
+In moderate zone, detailed research is also needed
+when planning to cut the slope.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_landslide_zones.png"><img alt="../../_images/005_data_landslide_zones.png" class="align-center" src="../../_images/005_data_landslide_zones.png" style="width: 350pt;" /></a>
+</section>
+</section>
+<section id="exposure-data">
+<h2>Exposure data<a class="headerlink" href="#exposure-data" title="Link to this heading">¶</a></h2>
+<section id="population">
+<h3>Population<a class="headerlink" href="#population" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">File name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>World_Population</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>see table below</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Raster</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Continuous</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Unit<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Count</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>World Pop</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">URL<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://worldpop.org.uk">http://worldpop.org.uk</a></p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>2010</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://creativecommons.org/">Creative Commons by Attribution (CCbyA)</a></p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>ASEAN +</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>High resolution (1 pixel represents 100m x 100m,
+contemporary data on human population distributions
+are a prerequisite for the accurate measurement of
+the impacts of population growth, for monitoring
+changes and for planning interventions. The AsiaPop
+project was initiated in July 2011 with the aim of
+producing detailed and freely-available population
+distribution maps for the whole of Asia. This project
+has expanded as the World Pop project to include
+other continents.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_asiapop.png"><img alt="../../_images/005_data_asiapop.png" class="align-center" src="../../_images/005_data_asiapop.png" style="width: 500pt;" /></a>
+<p>Training data provided:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Training Package</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Coverage</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Basic InaSAFE</p></td>
+<td><p>Jakarta_Population_WGS84</p></td>
+<td><p>Jakarta</p></td>
+</tr>
+<tr class="row-odd"><td><p>Intermediate InaSAFE</p></td>
+<td><p>Jakarta_Population_WGS84</p></td>
+<td><p>Jakarta</p></td>
+</tr>
+<tr class="row-even"><td><p>Other Hazards</p></td>
+<td><p>West_Sumatera_Population_WGS84</p></td>
+<td><p>Padang</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other Hazards</p></td>
+<td><p>NGK_Population_WGS84</p></td>
+<td><p>Nagekeo</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="buildings">
+<h3>Buildings<a class="headerlink" href="#buildings" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>OSM Buildings</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>see table below</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Polygon or point</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Classified</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute field<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Type</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute value map<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>hospital,
+school,
+clinic,  etc</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>OpenStreetMap</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">URL<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://openstreetmap.org">http://openstreetmap.org</a></p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>July 2015</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License (ODbL)</a></p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>World - incomplete</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>OpenStreetMap is a collaborative project to create a
+free editable map of the world. Two major driving forces
+behind the establishment and growth of OSM have been
+restrictions on the use or availability of map
+information across much of the world and the advent
+of inexpensive portable satellite navigation devices.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_osm_building.png"><img alt="../../_images/005_data_osm_building.png" class="align-center" src="../../_images/005_data_osm_building.png" style="width: 400pt;" /></a>
+<p><a class="reference external" href="http://aid.dfat.gov.au">Australian Government</a> has been working with the Humanitarian OpenStreetMap Team (HOT) since 2011
+to pilot and train OpenStreetMap data capture in Indonesia.
+So far over 12 million buildings have been mapped.
+Some of the scenarios we use in the training materials are situated in Jakarta,
+Yogyakarta (Merapi), Sumatra (Padang) and Flores (Maumere).</p>
+<p>Training data provided:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Training Package</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Coverage</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Basic InaSAFE</p></td>
+<td><p>Jakarta_Buildings_WGS84</p></td>
+<td><p>Jakarta</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other Hazards</p></td>
+<td><p>Padang_Buildings_WGS84</p></td>
+<td><p>Padang</p></td>
+</tr>
+<tr class="row-even"><td><p>Other Hazards</p></td>
+<td><p>Maumere_Buildings_WGS84</p></td>
+<td><p>Maumere</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other Hazards</p></td>
+<td><p>NGK_Buildings_WGS84</p></td>
+<td><p>Nagekeo</p></td>
+</tr>
+<tr class="row-even"><td><p>Other Hazards</p></td>
+<td><p>Sinabung_Buildings_WGS84</p></td>
+<td><p>Sinabung</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other Hazards</p></td>
+<td><p>Sinabung_Building-points_WGS84</p></td>
+<td><p>Sinabung</p></td>
+</tr>
+</tbody>
+</table>
+<p>Each one of these areas has a different OpenStreetMap data collection
+methodology.
+Below the data collection methodologies used in Jakarta and Padang are explained:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Jakarta<span class="colon">:</span></dt>
+<dd class="field-odd"><p>BPBD DKI Jakarta (Regional Disaster Managers) and <a class="reference external" href="http://www.bnpb.go.id/">BNPB</a> (National
+Disaster Managers) with assistance from <a class="reference external" href="http://aid.dfat.gov.au">Australian Government</a>, the World Bank,
+UNOCHA, HOT and University of Indonesia, held
+workshops in each of Jakarta’s six districts in order to help village heads
+map their community boundaries and major infrastructure.
+Over 500 representatives from Jakarta’s 267 villages participated in these
+workshops and have mapped an impressive 6,000 buildings and all 2,668
+sub-village boundaries (Rukun Warga-RW).
+For more information go to <a class="reference external" href="http://www.aifdr.org/?p=619">AIFDR Website</a></p>
+</dd>
+<dt class="field-even">Padang<span class="colon">:</span></dt>
+<dd class="field-even"><p>After the Haiti earthquake in 2010, there was a large effort to map Haiti
+through OSM. Coordinating this effort was difficult,
+and so <a class="reference external" href="http://aid.dfat.gov.au">Australian Government</a> funded the creation of the OSM Tasking Manager.
+The OSM Tasking Manager is a web-based tool in which a designated area is
+easily divided into a grid, and individual users can select one piece at a time
+to quickly work together and digitally map the target area. The tool was
+first piloted in Padang, where contributors from around the world helped
+digitise over 95,000 buildings. However, the buildings are only footprints -
+an on the ground mapping effort is needed to record attributes about each building.
+The tool is now being used across the world to coordinate OSM mapping efforts.
+It is available at <a class="reference external" href="http://tasks.hotosm.org/">tasks.hotosm.org</a></p>
+</dd>
+</dl>
+</section>
+<section id="roads">
+<h3>Roads<a class="headerlink" href="#roads" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>OSM Roads</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>see table below</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Line</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Classified</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute field<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Type</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute value map<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>types of roads</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>OpenStreetMap</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">URL<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://openstreetmap.org">http://openstreetmap.org</a></p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>July 2015</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p><a class="reference external" href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License (ODbL)</a></p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>World - incomplete</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>OpenStreetMap is a collaborative project to create a
+free editable map of the world. Two major driving
+forces behind the establishment and growth of OSM
+have been restrictions on use or availability of
+map information across much of the world and the
+advent of inexpensive portable satellite navigation
+devices.</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../../_images/005_data_osm_road.png"><img alt="../../_images/005_data_osm_road.png" class="align-center" src="../../_images/005_data_osm_road.png" style="width: 400pt;" /></a>
+<p>Training data provided:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Training Package</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Coverage</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>QGIS Introduction</p></td>
+<td><p>Jakarta_Roads_WGS84</p></td>
+<td><p>Jakarta</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="aggregation-data">
+<h2>Aggregation Data<a class="headerlink" href="#aggregation-data" title="Link to this heading">¶</a></h2>
+<section id="administrative-boundary">
+<h3>Administrative Boundary<a class="headerlink" href="#administrative-boundary" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Name<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Administrative Boundary</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Training data<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>see table below</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Geometry<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Polygon</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Data type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Classified</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute field<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Kabupaten / Kecamatan / Desa</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Attribute value map<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>toponymy of the area</p></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Source<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>BPS</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">URL<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Date<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>2010</p></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Licence<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><dl class="field-list simple">
+<dt class="field-odd">Coverage<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><dl class="field-list simple">
+<dt class="field-odd">Description<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</td>
+<td><p>Administrative boundaries in Indonesia</p></td>
+</tr>
+</tbody>
+</table>
+<p>Training data provided:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Training Package</strong></p></td>
+<td><p><strong>Name</strong></p></td>
+<td><p><strong>Coverage</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Run Intermediate InaSAFE</p></td>
+<td><p>Jakarta_District_Boundary_WGS84</p></td>
+<td><p>Jakarta</p></td>
+</tr>
+<tr class="row-odd"><td><p>Run Intermediate InaSAFE</p></td>
+<td><p>Jakarta_Subdistrict_Boundary_WGS84</p></td>
+<td><p>Jakarta</p></td>
+</tr>
+<tr class="row-even"><td><p>Other Hazards</p></td>
+<td><p>Sikka_Village_Boundary_WGS84</p></td>
+<td><p>Maumere</p></td>
+</tr>
+<tr class="row-odd"><td><p>Other Hazards</p></td>
+<td><p>NGK_Villages_BPS_WGS84</p></td>
+<td><p>Nagakeo</p></td>
+</tr>
+<tr class="row-even"><td><p>Other Hazards</p></td>
+<td><p>Padang_Village_Boundary_WGS84</p></td>
+<td><p>Padang</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="introduction_to_qgis.html"
+                   title="Introduction to QGIS"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="inasafe_concepts.html"
+                   title="InaSAFE concepts"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

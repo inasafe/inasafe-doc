@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 5: Using the Separate Data Store &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 6: Editing the OpenStreetMap Wiki" href="306-editing-wiki-osm.html" />
+    <link rel="prev" title="Module 4: Creating JOSM File Presets" href="304-creating-josm-file-presets.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/intermediate/osm/305-using-private-data-store.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/intermediate/osm/305-using-private-data-store.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Intermediate Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 3: Data Collection Using OpenStreetMap Intermediate Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 5: Using the Separate Data Store</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="306-editing-wiki-osm.html"
+                   title="Module 6: Editing the OpenStreetMap Wiki"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="304-creating-josm-file-presets.html"
+                   title="Module 4: Creating JOSM File Presets"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../beginner/index.html">Beginner Training Module</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Intermediate Training Module</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 3: Data Collection Using OpenStreetMap Intermediate Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="300-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="301-advanced-editing.html">Module 1: Advanced Editing</a></li>
+<li class="toctree-l5"><a class="reference internal" href="302-quality-assurance.html">Module 2: Quality Assurance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="303-dealing-with-conflicts.html">Module 3: Dealing With Conflicts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="304-creating-josm-file-presets.html">Module 4: Creating JOSM File Presets</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 5: Using the Separate Data Store</a></li>
+<li class="toctree-l5"><a class="reference internal" href="306-editing-wiki-osm.html">Module 6: Editing the OpenStreetMap Wiki</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../qgis-inasafe/index.html">Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image610.png" src="../../../../_images/image610.png" />
+<section id="module-5-using-the-separate-data-store">
+<span id="using-private-data-store"></span><h1>Module 5: Using the Separate Data Store<a class="headerlink" href="#module-5-using-the-separate-data-store" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand the functions of the Separate Data Store (SDS)</p></li>
+<li><p>Understand what data should be kept publicly and what should be private</p></li>
+<li><p>Install SDS plugin in JOSM</p></li>
+<li><p>Use SDS presets</p></li>
+<li><p>Use SDS plugin for selecting public and private data</p></li>
+<li><p>Access online datastore</p></li>
+</ul>
+<p>OpenStreetMap data is open and available to anyone who would like to access it.
+However, there may be times when you want to use OSM to collect data,
+but you would like to keep some attributes stored in a private database.
+For this purpose, HOT has developed a tool for JOSM known as the
+Separate Data Store.
+The SDS allows you to create maps and add data into JOSM the same as always,
+but when you upload your edits, public data is saved to the
+OSM database and private data is saved separately to your
+private data server.</p>
+<img alt="../../../../_images/image1042.png" class="align-center" src="../../../../_images/image1042.png" />
+<p>This module is designed for people who desire to
+store private geospatial information, such as household income,
+personal health care data or the location of gold mines.</p>
+<p>For liability reasons, HOT does not provide the SDS service itself, but the
+software is available for installation on a private server. In this module
+we will utilise the SDS development server to demonstrate its functionality.</p>
+<p>If you are interested to set up your own SDS server, please contact us
+(team.id[at]hotosm.org).</p>
+<section id="installing-the-sds-plugin">
+<h2>1. Installing the SDS plugin<a class="headerlink" href="#installing-the-sds-plugin" title="Link to this heading">¶</a></h2>
+<p>This plug-in allows private data to be diverted into the private data
+store, rather than being saved in the OSM database.
+A recent version of JOSM is required for the SDS plugin to run.
+(If you do not have a recent version of JOSM, download and install it from
+<a class="reference external" href="http://josm.openstreetmap.de/">http://josm.openstreetmap.de/</a>.).</p>
+<ol class="arabic simple">
+<li><p>Open the preferences menu in JOSM and go to the plugins tab.</p></li>
+</ol>
+<img alt="../../../../_images/image1051.png" class="align-center" src="../../../../_images/image1051.png" />
+<ol class="arabic simple" start="2">
+<li><p>Click <span class="guilabel">Download List</span> to ensure that all available plugins are
+listed.</p></li>
+<li><p>In the search box, type <kbd class="kbd docutils literal notranslate">sds</kbd>.</p></li>
+</ol>
+<img alt="../../../../_images/image1062.png" class="align-center" src="../../../../_images/image1062.png" />
+<ol class="arabic simple" start="4">
+<li><p>Check the box next to the plugin to activate it. Click <span class="guilabel">OK</span>
+to download and install. You will need to restart JOSM.</p></li>
+</ol>
+</section>
+<section id="using-the-plugin">
+<h2>2. Using the plugin<a class="headerlink" href="#using-the-plugin" title="Link to this heading">¶</a></h2>
+<p>Editing the map works just the same as before.
+The only difference is that when you upload changes,
+some tags will be automatically saved on the private datastore,
+and the rest will be saved directly onto OSM.</p>
+<p>After installing the plugin, you need to edit the settings so that private
+data is directed to the correct SDS server. In this module we will use
+a demo version of the SDS, but you may also configure the plugin to
+save private data on your custom SDS server.</p>
+<ol class="arabic simple" start="5">
+<li><p>Go to <span class="menuselection">SDS ‣ Preferences…</span>.</p></li>
+<li><p>Edit the <span class="guilabel">SDS server URL</span> so that it points to
+<kbd class="kbd docutils literal notranslate">http://sds.dev.hotosm.org/</kbd>.</p></li>
+<li><p>We will use a sample account to try out the SDS. Enter the following for
+the username and password:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>SDS username: <a class="reference external" href="mailto:test_sds&#37;&#52;&#48;hotosm&#46;org">test_sds<span>&#64;</span>hotosm<span>&#46;</span>org</a></p></li>
+<li><p>SDS password: CyYi3VeuHk</p></li>
+</ul>
+</div></blockquote>
+<img alt="../../../../_images/image1082.png" class="align-center" src="../../../../_images/image1082.png" />
+<ol class="arabic simple" start="8">
+<li><p>Click <span class="guilabel">Test credentials now</span>. If it is set up correctly, you
+should receive a message which tells you the connection is successful.</p></li>
+</ol>
+</section>
+<section id="how-it-works">
+<h2>3. How it works<a class="headerlink" href="#how-it-works" title="Link to this heading">¶</a></h2>
+<p>How does the plugin know which data you want to store on OSM and
+which data you want to store publicly?
+Quite simply, it knows because of the tags.
+Normal tags go to OSM as always, but you can use tags with a
+special prefix that will be sent to the private datastore.</p>
+<p>By default, any tag that has the prefix <strong>hot:</strong> will go to the
+private datastore. This can be changed in the SDS preferences menu:</p>
+<img alt="../../../../_images/image1092.png" class="align-center" src="../../../../_images/image1092.png" />
+<p>When you create or edit an object on the map, you can apply tags like this:</p>
+<img alt="../../../../_images/image1102.png" class="align-center" src="../../../../_images/image1102.png" />
+<p>In this case, the first two tags will be saved on OSM.
+The third tag, because it has the prefix <strong>hot:</strong>, will be saved on the
+private datastore.</p>
+<p>You will most likely collaborate with others when using a private datastore,
+so you will have a standard list of tags to use for the specific data you are
+collecting.
+These tags can then be made into a presets menu, which will provide an
+easy-to-use form for adding both public and private data.</p>
+</section>
+<section id="accessing-the-datastore-online">
+<h2>4. Accessing the datastore online<a class="headerlink" href="#accessing-the-datastore-online" title="Link to this heading">¶</a></h2>
+<p>You can access the SDS online with your username and password. To visit
+the example SDS, open your browser and go to <a class="reference external" href="http://sds.dev.hotosm.org/">http://sds.dev.hotosm.org/</a>.</p>
+<img alt="../../../../_images/image1112.png" class="align-center" src="../../../../_images/image1112.png" />
+<p>There are two types of SDS users.
+Admin users can add new projects or users onto the SDS. Personal users are
+regular users who are part of a project team which is using the SDS.</p>
+<img alt="../../../../_images/image1121.png" class="align-center" src="../../../../_images/image1121.png" />
+<p>Our sample account is a personal account, not an admin, but we can see the
+online platform where our private data is kept.</p>
+<p>Let’s see what the private data looks like online.</p>
+<ol class="arabic simple" start="9">
+<li><p>Click on <span class="guilabel">Tag search</span>.</p></li>
+<li><p>In the text box, type <kbd class="kbd docutils literal notranslate">hot</kbd> and click <span class="guilabel">search</span>.</p></li>
+<li><p>You should see at least one search result. Click on the eyeball button
+next to it to see complete information.</p></li>
+</ol>
+<img alt="../../../../_images/image112b.png" class="align-center" src="../../../../_images/image112b.png" />
+<p>We can see all the information about this object, both the public attributes
+from OSM and the private attributes kept in the SDS.</p>
+<img alt="../../../../_images/image112c.png" class="align-center" src="../../../../_images/image112c.png" />
+<ol class="arabic simple" start="12">
+<li><p>Click on <span class="guilabel">Expert View</span> to see the actual tags that are used with
+this object. Look at <span class="guilabel">OSM Properties</span> to see the tags that
+are saved publicly on OSM.</p></li>
+</ol>
+</section>
+<section id="common-questions">
+<h2>5. Common questions<a class="headerlink" href="#common-questions" title="Link to this heading">¶</a></h2>
+<section id="how-do-we-save-our-data">
+<h3>How do we save our data?<a class="headerlink" href="#how-do-we-save-our-data" title="Link to this heading">¶</a></h3>
+<p>The steps are exactly the same as uploading changes to OSM. The only difference
+is that tags with the prefix you select (such as <strong>hot:</strong>) will be diverted to
+a private datastore.</p>
+</section>
+<section id="how-many-users-can-use-the-same-account-how-can-we-add-users">
+<h3>How many users can use the same account? How can we add users?<a class="headerlink" href="#how-many-users-can-use-the-same-account-how-can-we-add-users" title="Link to this heading">¶</a></h3>
+<p>There is no limit for user accounts. When you set up your own SDS, you will
+have an Admin account and can add as many users as you need.</p>
+</section>
+<section id="how-much-data-can-we-save-in-our-private-server">
+<h3>How much data can we save in our private server?<a class="headerlink" href="#how-much-data-can-we-save-in-our-private-server" title="Link to this heading">¶</a></h3>
+<p>A lot! Basically this depends on the size of your server.</p>
+</section>
+<section id="is-there-an-easy-way-to-search-the-private-data">
+<h3>Is there an easy way to search the private data?<a class="headerlink" href="#is-there-an-easy-way-to-search-the-private-data" title="Link to this heading">¶</a></h3>
+<p>After you sign in to the SDS website you are able to perform a
+tag search, as we have done in this module.</p>
+<p><a class="reference internal" href="306-editing-wiki-osm.html#editing-wiki-osm"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="306-editing-wiki-osm.html"
+                   title="Module 6: Editing the OpenStreetMap Wiki"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="304-creating-josm-file-presets.html"
+                   title="Module 4: Creating JOSM File Presets"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

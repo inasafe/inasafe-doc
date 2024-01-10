@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 2: Preparing Data and Keywords for InaSAFE &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 3: Determining IDP Camp Location" href="403-determining-idp-camp-location.html" />
+    <link rel="prev" title="Module 1: QGIS Review" href="401-review-qgis.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/intermediate/qgis-inasafe/402-preparing-data-and-keywords-for-inasafe.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Intermediate Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 2: Preparing Data and Keywords for InaSAFE</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="403-determining-idp-camp-location.html"
+                   title="Module 3: Determining IDP Camp Location"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="401-review-qgis.html"
+                   title="Module 1: QGIS Review"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../beginner/index.html">Beginner Training Module</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Intermediate Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 3: Data Collection Using OpenStreetMap Intermediate Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="400-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="401-review-qgis.html">Module 1: QGIS Review</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 2: Preparing Data and Keywords for InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="403-determining-idp-camp-location.html">Module 3: Determining IDP Camp Location</a></li>
+<li class="toctree-l5"><a class="reference internal" href="404-planning-evacuation-route.html">Module 4: Planning an Evacuation Route Based on Hazard Information</a></li>
+<li class="toctree-l5"><a class="reference internal" href="405-calculating-damages-and-losses.html">Module 5: Calculating Damages and Losses</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image713.png" src="../../../../_images/image713.png" />
+<section id="module-2-preparing-data-and-keywords-for-project-name">
+<span id="preparing-data-and-keywords-for-inasafe"></span><h1>Module 2: Preparing Data and Keywords for InaSAFE<a class="headerlink" href="#module-2-preparing-data-and-keywords-for-project-name" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand InaSAFE inputs</p></li>
+<li><p>Get OSM data from the HOT export server</p></li>
+<li><p>Load data into InaSAFE</p></li>
+<li><p>Add keywords</p></li>
+<li><p>Prepare the hazard layer</p></li>
+<li><p>Run InaSAFE</p></li>
+</ul>
+<p>Now that you know your way around QGIS and InaSAFE, let’s go further.
+In this module, we will see how to prepare our own data so that it can be
+processed in InaSAFE.
+Much of what we cover in this module you’ve already done, though we
+will go over some of it in greater detail.
+We’ll be using the project created in this module throughout the rest of the
+unit, so be sure to save it along the way!</p>
+<section id="project-name-inputs">
+<h2>1. InaSAFE inputs<a class="headerlink" href="#project-name-inputs" title="Link to this heading">¶</a></h2>
+<p>Let’s review the types of data used by InaSAFE.</p>
+<p><strong>Hazards</strong> are conditions, phenomenon, or human activity that potentially
+cause victims and destruction to society and environment.
+Frequently observed hazards are earthquakes, tsunamis, floods, landslides
+and tornadoes.</p>
+<p>When we are working in InaSAFE, hazard data refers to a vector or raster
+dataset that represents the level and magnitude of an event that can
+potentially cause damages.
+To be used for impact calculation in InaSAFE, level and magnitude of
+an event scenario must be mapped over the area of interest.
+This means that hazard data must be geographic - it must have location.
+We have already looked at hazard data for the 2007 Jakarta flood and the
+Lembang earthquake.
+These hazard layers were produced from scientific modelling conducted by
+scientific organisations and government agencies.
+These are typical sources for such hazard data, although in cases of flood
+hazards such data may also be gathered from affected communities.</p>
+<p>Generally, hazard data has the following characteristics:</p>
+<ul class="simple">
+<li><p>are at a particular location</p></li>
+<li><p>have a measured intensity (ie. the depth of a flood or the MMI of an
+earthquake)</p></li>
+<li><p>have a measured duration of impact (ie. hours or days after a flood)</p></li>
+<li><p>have a certain time frame (ie. in the case of a sea rise flood)</p></li>
+</ul>
+<p>In this module, our hazard input will be a flood in the village of Sirahan, in
+Magelang regency in Central Java.
+The data for this flood comes from participatory mapping activities done by
+community members as part of the REKOMPAK project.
+The data is in the training folder <code class="file docutils literal notranslate"><span class="pre">qgis/Sirahan/</span></code>.</p>
+<p><strong>Exposure</strong> data refers to natural and man-made objects that may be
+affected if a disaster scenario really happens.
+In this module we will use building exposure data created in OpenStreetMap.</p>
+<p>The InaSAFE impact functions produce an output layer representing
+potential damages or losses on the affected exposure layer.
+This output layer will be created once the impact calculation process is
+finished processing.
+InaSAFE has many impact functions available, which are listed through
+the ‘Impact Functions Doc’ menu (see below).
+The impact calculation will only be possible when users provide the hazard
+and exposure layer datasets and, when necessary, users define the required
+parameters through the keyword Wizard correctly.</p>
+<img alt="../../../../_images/image2712.png" class="align-center" src="../../../../_images/image2712.png" />
+<p><strong>Aggregation</strong> is used to reclassify the result of the impact calculation
+according to a specific administrative boundary level.</p>
+<p><strong>Keywords</strong> define which category a dataset belongs to, whether hazard or
+exposure.
+They are also used to define specific parameters to be considered,
+as we shall see.
+After you calculate the impact of a scenario with InaSAFE, what next?
+Well, the impact calculation can be used to prepare a contingency plan.
+That’s why relevant questions and remarks are displayed in the Result section,
+which may then be considered by disaster risk managers or planning managers.</p>
+</section>
+<section id="getting-osm-data-from-hot-exports">
+<h2>2. Getting OSM data from HOT Exports<a class="headerlink" href="#getting-osm-data-from-hot-exports" title="Link to this heading">¶</a></h2>
+<p>In previous scenarios, we used example data provided in the training directory,
+but to set up our scenario in the village of Sirahan, let’s access the
+OSM data ourselves to use as our exposure layer.
+We will use the OSM buildings to calculate how many buildings (and which)
+will be inundated when a flood occurs similar to our hazard model.</p>
+<p>We’ve worked with OSM data a lot already.
+Now we will utilise a website where we can quickly and easily access the data
+from OSM.</p>
+<ol class="arabic simple">
+<li><p>Open your web browser and navigate to <a class="reference external" href="http://export.hotosm.org">http://export.hotosm.org</a>.</p></li>
+</ol>
+<img alt="../../../../_images/image2812.png" class="align-center" src="../../../../_images/image2812.png" />
+<ol class="arabic simple" start="2">
+<li><p>If you are a new user, create an account.
+If you have an account already, sign in.</p></li>
+</ol>
+<p>The HOT Export website allows you to choose an area and create a data extract
+from that area.
+Then you can download the data in a variety of formats that are easily read
+by QGIS.</p>
+<ol class="arabic simple" start="3">
+<li><p>In the upper right corner, click <span class="guilabel">New Job</span></p></li>
+<li><p>Give the job a name, such as <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Desa</kbd> <kbd class="kbd docutils literal notranslate">Sirahan</kbd></kbd>.</p></li>
+<li><p>Zoom in on the map until you can see the village Sirahan, which is just
+north-west of Yogyakarta.</p></li>
+<li><p>Click <span class="guilabel">Select Area</span> and then draw a box around Sirahan village.</p></li>
+</ol>
+<img alt="../../../../_images/image2912.png" class="align-center" src="../../../../_images/image2912.png" />
+<p>The page should look something like this:</p>
+<img alt="../../../../_images/image303.png" class="align-center" src="../../../../_images/image303.png" />
+<ol class="arabic simple" start="7">
+<li><p>Click the <span class="guilabel">Create Job</span> button.</p></li>
+</ol>
+<p>You will be asked to define a presets file.
+This is like the presets that you added to JOSM in the previous unit,
+except here, they define the attributes that the HOT export server will
+provide.</p>
+<ol class="arabic simple" start="8">
+<li><p>Choose <span class="guilabel">preset file-INASAFE</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image313.png" class="align-center" src="../../../../_images/image313.png" />
+<ol class="arabic simple" start="9">
+<li><p>Click the <span class="guilabel">Save</span> button and take a few breaths!</p></li>
+</ol>
+<p>It may take a few minutes for the data extraction job to process.
+When it is finished, the page will change and you will see a list of files
+you can download like this:</p>
+<img alt="../../../../_images/image323.png" class="align-center" src="../../../../_images/image323.png" />
+<ol class="arabic simple" start="10">
+<li><p>Click on <span class="guilabel">ESRI Shapefile</span> to download shapefiles, and once you have
+it, extract (unzip) the archive on your computer.
+It should create a directory named <code class="file docutils literal notranslate"><span class="pre">extract.shp</span></code>.</p></li>
+</ol>
+</section>
+<section id="loading-data">
+<h2>3. Loading data<a class="headerlink" href="#loading-data" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="11">
+<li><p>We will use this OSM data as our exposure data.
+Open a new QGIS project and add all of the shapefiles that you downloaded
+as vector layers.
+You should have four layers:</p></li>
+</ol>
+<img alt="../../../../_images/image333.png" class="align-center" src="../../../../_images/image333.png" />
+<p>For reasons that will become clear later, we need to change the map projection
+from the default OSM projection (WGS 84) to WGS 84 / UTM 49S.
+In other words, we need a CRS that uses metres, not degrees.</p>
+<ol class="arabic simple" start="12">
+<li><p>Right-click on the <span class="guilabel">planet_osm_polygon</span> layer and click
+<span class="guilabel">Save as</span>.</p></li>
+<li><p>Click <span class="guilabel">Browse</span> and navigate to a place where you would like to
+put the new shapefile.
+Name the file <kbd class="kbd docutils literal notranslate">Bangunan_Sirahan</kbd> and click <span class="guilabel">Save</span>.</p></li>
+<li><p>Next to CRS, click <span class="guilabel">CRS icon</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image33a.png" class="align-center" src="../../../../_images/image33a.png" />
+<ol class="arabic simple" start="15">
+<li><p>In the filter box, type <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">UTM</kbd> <kbd class="kbd docutils literal notranslate">zone</kbd> <kbd class="kbd docutils literal notranslate">49S</kbd></kbd>, as shown below:</p></li>
+</ol>
+<img alt="../../../../_images/image343.png" class="align-center" src="../../../../_images/image343.png" />
+<ol class="arabic simple" start="16">
+<li><p>Select the CRS <span class="guilabel">WGS 84 / UTM zone 49S</span> and click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<p>The <span class="guilabel">Save vector layer as…</span> dialog will look like this:</p>
+<img alt="../../../../_images/image353.png" class="align-center" src="../../../../_images/image353.png" />
+<p>This is the layer that we will be using as our exposure data.
+You can remove the other OSM layers, or if you would like them to
+remain visible, go to <span class="menuselection">Settings ‣ Project Properties</span> and
+enable ‘on the fly’ transformation.</p>
+</section>
+<section id="adding-keywords">
+<h2>4. Adding keywords<a class="headerlink" href="#adding-keywords" title="Link to this heading">¶</a></h2>
+<p>Since we’ll be using this buildings layer as our exposure, we need to set the
+keywords so that InaSAFE knows what the layer contains.
+If you remember from Unit 2, this is done with the keywords Wizard.</p>
+<ol class="arabic simple" start="17">
+<li><p>Select the <span class="guilabel">Bangunan_Sirahan</span> layer and click the
+<span class="guilabel">Wizard</span> button on the InaSAFE toolbar.</p></li>
+</ol>
+<img alt="../../../../_images/image363.png" class="align-center" src="../../../../_images/image363.png" />
+<ol class="arabic simple" start="18">
+<li><p>You will see a dialog box and select <span class="guilabel">exposure</span> and after that you
+can follow the steps in the dialog box.</p></li>
+</ol>
+<img alt="../../../../_images/image373.png" class="align-center" src="../../../../_images/image373.png" />
+<ol class="arabic simple" start="19">
+<li><p>Select unit information that you want to calculate in InaSAFE. For building
+data you can choose <span class="guilabel">building type</span> to group the result of the impact
+function. You need to make sure there is the building type attribute in your
+exposure data. Or if you do not have the building type attribute in your exposure
+data, you can select <span class="guilabel">building generic</span>.</p></li>
+<li><p>You also need to select which attribute has building type values.  In
+this data please select <span class="guilabel">amenity</span> and in the last step you can
+give a title for your exposure data and click <span class="guilabel">Finish</span></p></li>
+</ol>
+<img alt="../../../../_images/image383.png" class="align-center" src="../../../../_images/image383.png" />
+</section>
+<section id="preparing-a-hazard-layer">
+<h2>5. Preparing a hazard layer<a class="headerlink" href="#preparing-a-hazard-layer" title="Link to this heading">¶</a></h2>
+<p>The hazard data that we have used previously has come from government agencies
+and scientific institutions.
+This time, we will use data that came from community mapping activities,
+that is, from community members on the ground.
+The data was created as a paper map and later converted into digital
+format.
+The data has already been prepared, so we simply need to add it as our hazard
+layer.</p>
+<ol class="arabic simple" start="21">
+<li><p>Click <span class="guilabel">Add Vector Layer…</span> and add
+<code class="file docutils literal notranslate"><span class="pre">area_terdampak_Sirahan.shp</span></code> in
+the <code class="file docutils literal notranslate"><span class="pre">qgis/Sirahan/</span></code> directory.</p></li>
+</ol>
+<img alt="../../../../_images/image413.png" class="align-center" src="../../../../_images/image413.png" />
+<p>You can see that this layer is already known to InaSAFE,
+so presumably it has keywords already set.</p>
+<ol class="arabic simple" start="22">
+<li><p>Before we define the keywords of this data and because of the way that
+InaSAFE calculates this function, we need to make sure that this
+exposure layer has a column in the attribute table that InaSAFE
+expects, named “AFFECTED”.</p></li>
+<li><p>Open the attribute table for the <span class="guilabel">area_terdampak_Sirahan</span> layer.</p></li>
+</ol>
+<img alt="../../../../_images/image433.png" class="align-center" src="../../../../_images/image433.png" />
+<p>We need to add some data to this layer so that QGIS can run the flood
+function correctly.
+When QGIS runs the flood function, it checks every feature in the hazard
+layer to make sure that it is in fact a flood prone area.
+Hence, each feature must have an attribute named “AFFECTED”.
+First, let’s add the new column to our layer.</p>
+<ol class="arabic simple" start="24">
+<li><p>In the attribute table, click the <span class="guilabel">Toggle Editing</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image443.png" class="align-center" src="../../../../_images/image443.png" />
+<ol class="arabic simple" start="25">
+<li><p>Click the <span class="guilabel">New Column</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image453.png" class="align-center" src="../../../../_images/image453.png" />
+<ol class="arabic simple" start="26">
+<li><p>Type <kbd class="kbd docutils literal notranslate">affected</kbd> as the name and select <span class="guilabel">Text(string)</span> for
+<span class="guilabel">Type</span>. Give <kbd class="kbd docutils literal notranslate">10</kbd> for the width.</p></li>
+</ol>
+<img alt="../../../../_images/image463.png" class="align-center" src="../../../../_images/image463.png" />
+<ol class="arabic simple" start="27">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+<li><p>Now select each value in the column “affected” and type “1”, instead of NULL</p></li>
+</ol>
+<img alt="../../../../_images/image473.png" class="align-center" src="../../../../_images/image473.png" />
+<ol class="arabic simple" start="29">
+<li><p>Click <span class="guilabel">Save Edits</span> and then <span class="guilabel">Toggle Editing</span> to stop the
+editing process.</p></li>
+</ol>
+<img alt="../../../../_images/image482.png" class="align-center" src="../../../../_images/image482.png" />
+<ol class="arabic simple" start="30">
+<li><p>Select the layer and open the <span class="guilabel">Keyword Wizard</span> and select
+<span class="guilabel">Hazard</span> and follow the steps in the dialog box</p></li>
+</ol>
+<img alt="../../../../_images/image423.png" class="align-center" src="../../../../_images/image423.png" />
+<ol class="arabic simple" start="31">
+<li><p>In this hazard data we select <span class="guilabel">flood</span> as the hazard type because we
+assume that this is a flood hazard.</p></li>
+<li><p>Select <span class="guilabel">wet/dry</span> as the subcategory for flood, and after that select the
+<span class="guilabel">wet/dry</span> attribute that represents the flood extent as wet/dry.</p></li>
+<li><p>As the last step, you can give a title for your hazard data and click
+<span class="guilabel">Finish</span></p></li>
+</ol>
+</section>
+<section id="running-project-name">
+<h2>6. Running InaSAFE<a class="headerlink" href="#running-project-name" title="Link to this heading">¶</a></h2>
+<p>Everything is prepared now - our layers are loaded, the keywords are set, and
+we’ve ensured that the layers have the data that InaSAFE expects. Make
+sure the question form in InaSAFE looks like this</p>
+<img alt="../../../../_images/image49a.png" class="align-center" src="../../../../_images/image49a.png" />
+<p>and then click <span class="guilabel">Run</span>!</p>
+<img alt="../../../../_images/image493.png" class="align-center" src="../../../../_images/image493.png" />
+<p>The results should looks something like this:</p>
+<img alt="../../../../_images/image503.png" class="align-center" src="../../../../_images/image503.png" />
+<p>Save your project!
+We’ll be using it in the upcoming modules…</p>
+<p>We’ve run a few scenarios, but what is next?
+In the next modules we will use our QGIS skills to find the best evacuation
+routes for people to use in the case of the flood disaster,
+as well as examining appropriate places for IDP camps.</p>
+<p><a class="reference internal" href="403-determining-idp-camp-location.html#determining-idp-camp-location"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="403-determining-idp-camp-location.html"
+                   title="Module 3: Determining IDP Camp Location"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="401-review-qgis.html"
+                   title="Module 1: QGIS Review"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

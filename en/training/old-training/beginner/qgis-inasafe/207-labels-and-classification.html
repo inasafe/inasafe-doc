@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 7: Labels and Classification &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 8: Working with Raster Data" href="208-working-with-raster-data.html" />
+    <link rel="prev" title="Module 6: Working with Vector Data" href="206-working-with-vector-data.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/207-labels-and-classification.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/207-labels-and-classification.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 7: Labels and Classification</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="208-working-with-raster-data.html"
+                   title="Module 8: Working with Raster Data"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="206-working-with-vector-data.html"
+                   title="Module 6: Working with Vector Data"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="200-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="201-gis-for-developing-contingency-plan.html">Module 1: GIS for Developing Contingency Plan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="202-qgis-and-inasafe-in-contingency-plan.html">Module 2: QGIS and InaSAFE in Contingency Planning</a></li>
+<li class="toctree-l5"><a class="reference internal" href="203-the-basics-of-qgis.html">Module 3: The Basics of QGIS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="204-qgis-plugin.html">Module 4: QGIS Plugins</a></li>
+<li class="toctree-l5"><a class="reference internal" href="205-map-projection-basics.html">Module 5: Map Projection Basics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="206-working-with-vector-data.html">Module 6: Working with Vector Data</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 7: Labels and Classification</a></li>
+<li class="toctree-l5"><a class="reference internal" href="208-working-with-raster-data.html">Module 8: Working with Raster Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="209-create-a-new-vector-layer.html">Module 9: Creating Vector Layers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="210-vector-analysis-for-problem-solving.html">Module 10: Vector Analysis for Problem Solving</a></li>
+<li class="toctree-l5"><a class="reference internal" href="211-using-map-composer.html">Module 11: Using Map Composer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="212-understanding-inasafe.html">Module 12: Understanding InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="213-getting-support.html">Module 13: Getting Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image710.png" src="../../../../_images/image710.png" />
+<section id="module-7-labels-and-classification">
+<span id="labels-and-classifications"></span><h1>Module 7: Labels and Classification<a class="headerlink" href="#module-7-labels-and-classification" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Explore attribute data of an object and understand the uses of different
+types of data</p></li>
+<li><p>Add labels to vector layers</p></li>
+<li><p>Symbolise vector data using categories</p></li>
+</ul>
+<p>Up to now, none of the changes we have made to the map have been influenced by
+the objects that are being shown. In other words, every type of vegetation looks
+alike, and all the roads look alike. When looking at the map, the viewers don’t
+know anything about the roads they are seeing; only that there is a road of a
+certain shape in a certain area.</p>
+<p>But the whole strength of GIS is that all the objects that are visible on the
+map also have attributes. Maps in a GIS aren’t just pictures. They represent not
+only objects in locations, but also information about those objects. In this
+lesson we will explore the attribute data of an object and understand what the
+various data can be useful for.</p>
+<p>If you would like to start with the examples used in this module, begin by
+opening the QGIS project <code class="file docutils literal notranslate"><span class="pre">sleman_2_6.qgs</span></code>.</p>
+<section id="attribute-data">
+<h2>1. Attribute data<a class="headerlink" href="#attribute-data" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Open the attribute table for the <span class="guilabel">POI_Sleman_OSM</span> layer by
+selecting it in the Layers panel and clicking the
+<span class="guilabel">Open Attribute Table</span> button
+(or right-click on the layer and select
+<span class="menuselection">Open Attribute Table</span>).</p></li>
+</ol>
+<img alt="../../../../_images/image401.png" class="align-center" src="../../../../_images/image401.png" />
+<ol class="arabic simple" start="2">
+<li><p>Which field would be the most useful to use as a label?</p></li>
+</ol>
+<img alt="../../../../_images/image1171.png" class="align-center" src="../../../../_images/image1171.png" />
+<p>You now know how to use the attribute table to see what is actually in the data
+you’re using. A dataset will only be useful to you if it has the attributes that
+you care about. If you know which attributes you need, you can quickly decide if
+you’re able to use a given dataset, or if you need to look for another one that
+has the required attribute data.</p>
+<p>Different attributes are useful for different purposes. Some of them can be
+represented directly as text for the map user to see. Next we’ll see how to use
+attributes as labels, so that users can see the text on your map.</p>
+</section>
+<section id="label-tool">
+<h2>2. Label tool<a class="headerlink" href="#label-tool" title="Link to this heading">¶</a></h2>
+<p>Labels can be added to a map to show any information about an object. Any
+vector layer can have labels associated with it. Labels rely on the attribute
+data of a layer for their content.</p>
+<p>There are several ways to add labels in QGIS, but some are better than others.
+You may notice that when you open the Layer Properties window for a layer, there
+is a tab called “Labels.”  While this tab is designed to put labels on your map,
+it is not nearly as good as the so-called “Label Tool,” which we will learn in
+this section. Before being able to access the Label tool, you will need to
+ensure that it has been activated.</p>
+<ol class="arabic simple" start="3">
+<li><p>Go to the menu item <span class="menuselection">View ‣ Toolbars</span>.</p></li>
+<li><p>Ensure that the Label item has a checkmark next to it. If it doesn’t, click on
+the Label item, and it will be activated. The Label toolbar looks like this:</p></li>
+</ol>
+<img alt="../../../../_images/image1181.png" class="align-center" src="../../../../_images/image1181.png" />
+<ol class="arabic simple" start="5">
+<li><p>Click on the <span class="guilabel">POI_Sleman_OSM</span> layer in the Layers panel, so that it
+is highlighted.</p></li>
+<li><p>Click on the <span class="guilabel">Layer Labeling Options</span> button:</p></li>
+</ol>
+<img alt="../../../../_images/image1191.png" class="align-center" src="../../../../_images/image1191.png" />
+<p>This gives you the Layer labeling settings dialog.</p>
+<ol class="arabic simple" start="7">
+<li><p>Check the box next to <span class="guilabel">Label this layer with…</span></p></li>
+</ol>
+<img alt="../../../../_images/image1201.png" class="align-center" src="../../../../_images/image1201.png" />
+<ol class="arabic simple" start="8">
+<li><p>We must indicate which of the attribute fields we want to use for the labels.
+The <strong>NAME</strong> field is the mostly likely candidate for a label, so select
+NAME from the drop-down box:</p></li>
+</ol>
+<img alt="../../../../_images/image1211.png" class="align-center" src="../../../../_images/image1211.png" />
+<ol class="arabic simple" start="9">
+<li><p>Click <span class="guilabel">OK</span>. The map should now have labels like this:</p></li>
+</ol>
+<img alt="../../../../_images/image1221.png" class="align-center" src="../../../../_images/image1221.png" />
+<p>This is good, but as you can see, the labels are overlapping the
+points that they are associated with. That doesn’t look very nice. The text is
+also a bit larger than it needs to be. Let’s fix these problems!</p>
+<ol class="arabic simple" start="10">
+<li><p>Open the <span class="guilabel">Layer Labeling Options</span> again by clicking on its button.</p></li>
+<li><p>Click on the <span class="guilabel">Text</span> tab to change the text properties:</p></li>
+</ol>
+<img alt="../../../../_images/image1231.png" class="align-center" src="../../../../_images/image1231.png" />
+<ol class="arabic simple" start="12">
+<li><p>A standard text change dialog appears, similar to those in many other
+programs. Change the font to <kbd class="kbd docutils literal notranslate">Arial</kbd> and size to <kbd class="kbd docutils literal notranslate">9</kbd>.</p></li>
+<li><p>Now click on the <span class="guilabel">Buffer</span> tab to add a buffer space around the
+text. Check the box labelled <span class="guilabel">Draw text buffer</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image1241.png" class="align-center" src="../../../../_images/image1241.png" />
+<p>Your labels will look like this:</p>
+<img alt="../../../../_images/image1251.png" class="align-center" src="../../../../_images/image1251.png" />
+<p>That’s the font problem solved! Now let’s look at the problem of the labels
+overlapping the points.</p>
+<ol class="arabic simple" start="14">
+<li><p>In the Label window dialog, go to the <span class="guilabel">Placement</span> tab.</p></li>
+<li><p>Change the value of <span class="guilabel">Distance</span> to <kbd class="kbd docutils literal notranslate">2</kbd>.</p></li>
+</ol>
+<img alt="../../../../_images/image1261.png" class="align-center" src="../../../../_images/image1261.png" />
+<ol class="arabic simple" start="16">
+<li><p>Click <span class="guilabel">OK</span>. The labels no longer hover over the icons,
+but are “buffered” a short distance away:</p></li>
+</ol>
+<img alt="../../../../_images/image1271.png" class="align-center" src="../../../../_images/image1271.png" />
+<section id="labelling-lines">
+<h3>Labelling lines<a class="headerlink" href="#labelling-lines" title="Link to this heading">¶</a></h3>
+<p>Now that you know how labelling works, there’s an additional problem. Points and
+polygons are easy to label, but what about lines? If you label them the same
+way as the points, they will look funny. Street name labels, for example,
+should be parallel to the street lines, not hovering horizontally above them.
+To make lines behave, we’ll need to edit some options.</p>
+<ol class="arabic simple" start="17">
+<li><p>Hide the <span class="guilabel">POI_Sleman_OSM</span> layer so that it doesn’t distract you.</p></li>
+<li><p>Activate labels for the <span class="guilabel">Jalan_Sleman_OSM</span> layer as before.
+(Remember to use the Label tool on the toolbar, not the one in Label
+Properties!)</p></li>
+<li><p>Set the font size to <kbd class="kbd docutils literal notranslate">9</kbd> so that you can see more labels.</p></li>
+<li><p>Zoom in so that the scale is near 1:10000.</p></li>
+<li><p>On the Label window’s <span class="guilabel">Placement</span> tab, choose the following
+settings:</p></li>
+</ol>
+<img alt="../../../../_images/image1291.png" class="align-center" src="../../../../_images/image1291.png" />
+<p>The map will look somewhat like this, depending on scale:</p>
+<img alt="../../../../_images/image1301.png" class="align-center" src="../../../../_images/image1301.png" />
+<p>It’s good but still not ideal. For starters, some of the names
+appear more than once, and that’s not always necessary. To prevent that from
+happening:</p>
+<ol class="arabic simple" start="22">
+<li><p>Enable the option <span class="guilabel">Merge connected lines to avoid duplicate labels</span>
+which is located on the <span class="guilabel">Rendering</span> tab.</p></li>
+</ol>
+<p>Another useful function is to prevent labels being drawn for features too short
+to be of notice.</p>
+<ol class="arabic simple" start="23">
+<li><p>Also on the <span class="guilabel">Rendering</span> tab, set the value of
+<span class="guilabel">Suppress labeling of features smaller than …</span> to
+<kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">5.0</kbd> <kbd class="kbd docutils literal notranslate">mm</kbd></kbd>. Observe the results after you click <span class="guilabel">Apply</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image130a.png" class="align-center" src="../../../../_images/image130a.png" />
+<ol class="arabic simple" start="24">
+<li><p>Try out different settings on the <span class="guilabel">Placement</span> tab as well.
+As we mentioned before, the horizontal option is not a good idea for roads
+in this case, so let’s try the curved option instead!</p></li>
+</ol>
+<img alt="../../../../_images/image130b.png" class="align-center" src="../../../../_images/image130b.png" />
+<ol class="arabic simple" start="25">
+<li><p>Select <span class="guilabel">Curved</span> under <span class="guilabel">Placement</span>. Here’s the result:</p></li>
+</ol>
+<img alt="../../../../_images/image1311.png" class="align-center" src="../../../../_images/image1311.png" />
+<p>As you can see, this hides a lot of the labels that were previously visible,
+because of the difficulty of making some of them follow twisting street lines
+and still be legible. You can decide which of these options to use, depending on
+what you think seems more useful or what looks better.</p>
+<p>Now that you know how attributes can make a visual difference for your map, how
+about using them to change the symbology of objects themselves? That’s the topic
+for the next section!</p>
+</section>
+</section>
+<section id="classification">
+<h2>3. Classification<a class="headerlink" href="#classification" title="Link to this heading">¶</a></h2>
+<p>Labels are a good way to communicate information such as the names of individual
+places, but they can’t be used for everything. For example, let’s say that we
+want to show which district each feature in our vegetation layer is in. Using
+labels, it would look like this:</p>
+<img alt="../../../../_images/image1321.png" class="align-center" src="../../../../_images/image1321.png" />
+<p>Obviously this is not ideal, so we need another solution. That’s what this
+lesson is about! In this section, we will learn how to classify vector data
+effectively.</p>
+<section id="classifying-nominal-data">
+<h3>3.1 Classifying nominal data<a class="headerlink" href="#classifying-nominal-data" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="26">
+<li><p>Open Layer Properties for the <span class="guilabel">vegetasi</span> layer.</p></li>
+<li><p>Go to the <span class="guilabel">Style</span> tab.</p></li>
+<li><p>Click on the drop-down box that says <span class="guilabel">Single Symbol</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image1331.png" class="align-center" src="../../../../_images/image1331.png" />
+<ol class="arabic simple" start="29">
+<li><p>Change it to <span class="guilabel">Categorized</span>. The interface will change:</p></li>
+</ol>
+<img alt="../../../../_images/image1341.png" class="align-center" src="../../../../_images/image1341.png" />
+<ol class="arabic simple" start="30">
+<li><p>Change the <span class="guilabel">Column</span> field to <span class="guilabel">guna_lahan</span> and the
+<span class="guilabel">Color ramp</span> to <span class="guilabel">Spectral</span>:</p></li>
+</ol>
+<img alt="../../../../_images/image1351.png" class="align-center" src="../../../../_images/image1351.png" />
+<ol class="arabic simple" start="31">
+<li><p>Click the button labelled <span class="guilabel">Classify</span>:</p></li>
+</ol>
+<img alt="../../../../_images/image1361.png" class="align-center" src="../../../../_images/image1361.png" />
+<ol class="arabic simple" start="32">
+<li><p>Click <span class="guilabel">OK</span>. You’ll see something like this:</p></li>
+</ol>
+<img alt="../../../../_images/image1371.png" class="align-center" src="../../../../_images/image1371.png" />
+<ol class="arabic simple" start="33">
+<li><p>In the Layers panel, click the plus sign next to the <span class="guilabel">vegetasi</span>
+layer. This will show more information about the layer classification
+and styles.</p></li>
+</ol>
+<img alt="../../../../_images/image1381.png" class="align-center" src="../../../../_images/image1381.png" />
+<p>So, this is useful! But it hurts your eyes to look at it, so let’s see what we
+can do about that.</p>
+<ol class="arabic simple" start="34">
+<li><p>Open <span class="guilabel">Layer Properties</span> and go to the <span class="guilabel">Style</span> tab again.</p></li>
+<li><p>Click the <span class="guilabel">Change</span> button next to <span class="guilabel">Symbol</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image1391.png" class="align-center" src="../../../../_images/image1391.png" />
+<ol class="arabic simple" start="36">
+<li><p>Remove the outline as you did in the previous module (change the border
+style to “No Pen”).</p></li>
+<li><p>Click the <span class="guilabel">Delete all</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image1401.png" class="align-center" src="../../../../_images/image1401.png" />
+<ol class="arabic simple" start="38">
+<li><p>Now click <span class="guilabel">Classify</span> again, and new symbols will appear.</p></li>
+<li><p>Change the colour for each type of vegetation by double-clicking on the
+coloured block next to its name. You can change the colour for each type
+of vegetation to something that you think is more applicable.</p></li>
+</ol>
+<img alt="../../../../_images/image1411.png" class="align-center" src="../../../../_images/image1411.png" />
+<ol class="arabic simple" start="40">
+<li><p>Notice that the category on the bottom is empty. Select it, and click the
+<span class="guilabel">Delete</span> button.</p></li>
+<li><p>When we click <span class="guilabel">OK</span> our map looks like this:</p></li>
+</ol>
+<img alt="../../../../_images/image142.png" class="align-center" src="../../../../_images/image142.png" />
+<p>If you feel confident in your new classification skills, try to classify the
+residential layer yourself. Use darker colours to distinguish it from
+vegetation.</p>
+</section>
+<section id="ratio-classification">
+<h3>3.2 Ratio classification<a class="headerlink" href="#ratio-classification" title="Link to this heading">¶</a></h3>
+<p>In the previous example, we classified the <span class="guilabel">vegetasi</span> layer by what
+is known as nominal classification. This type of classification is when
+categories are defined based on names. Next we will classify the
+<span class="guilabel">pemukiman</span> layer based on the size of each feature. Classifying
+with attributes that contain only positive numbers, such as land area, is
+known as ratio classification.</p>
+<ol class="arabic simple" start="42">
+<li><p>Open the Attribute Table for the <span class="guilabel">pemukiman</span> layer. Notice the
+final column, <span class="guilabel">luas_ha</span>. This attribute contains the size of the
+land area contained within that feature polygon.</p></li>
+</ol>
+<img alt="../../../../_images/image143.png" class="align-center" src="../../../../_images/image143.png" />
+<ol class="arabic simple" start="43">
+<li><p>Open the Layer Properties for <span class="guilabel">pemukiman</span>.</p></li>
+<li><p>Change the style type to <span class="guilabel">Graduated</span> and use <span class="guilabel">luas_ha</span>
+as the <span class="guilabel">Column</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image144.png" class="align-center" src="../../../../_images/image144.png" />
+<ol class="arabic simple" start="45">
+<li><p>Because we are categorising with numbers this time, a colour gradient will be
+useful for representing our categories. Click on <span class="guilabel">Oranges</span> next
+to <span class="guilabel">Color ramp</span> and then click <span class="guilabel">Classify</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image145.png" class="align-center" src="../../../../_images/image145.png" />
+<p>Now you’ll have something like this:</p>
+<img alt="../../../../_images/image146.png" class="align-center" src="../../../../_images/image146.png" />
+<p><a class="reference internal" href="208-working-with-raster-data.html#working-with-raster-data"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="208-working-with-raster-data.html"
+                   title="Module 8: Working with Raster Data"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="206-working-with-vector-data.html"
+                   title="Module 6: Working with Vector Data"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

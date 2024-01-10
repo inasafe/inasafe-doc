@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Chapter 5: Editing with JOSM &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Chapter 6: Using GPS" href="Chapter-06-using-gps.html" />
+    <link rel="prev" title="Chapter 4: Getting started with JOSM" href="Chapter-04-getting-started-with-josm.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/osm/Chapter-05-editing-with-josm.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/osm/Chapter-05-editing-with-josm.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Data Collection Using OpenStreetMap</a>
+                </li>
+                
+
+                <li><a href="#">Chapter 5:  Editing with JOSM</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-06-using-gps.html"
+                   title="Chapter 6: Using GPS"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-04-getting-started-with-josm.html"
+                   title="Chapter 4: Getting started with JOSM"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Data Collection Using OpenStreetMap</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Chapter-00-preface.html">Preface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-01-introduction.html">Chapter 1: Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-02-getting-started.html">Chapter 2: Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-03-introducing-the-id-editor.html">Chapter 3: Introducing the iD Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-04-getting-started-with-josm.html">Chapter 4: Getting started with JOSM</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 5:  Editing with JOSM</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#editing-tools-in-josm">5.1 Editing tools in JOSM</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#drawing-tools">5.1.1 Drawing Tools</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#keyboard-shortcuts">5.1.2 Keyboard Shortcuts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#josm-plugins">5.1.3 JOSM Plugins</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-tips">5.2 Editing Tips</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#connecting-objects">5.2.1 Connecting Objects</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#overlapping-object">5.2.2 Overlapping Object</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#other-errors">5.2.3 Other Errors</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#josm-editing-process">5.3 JOSM Editing Process</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#downloading-osm-data">5.3.1 Downloading OSM Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#add-imagery">5.3.2 Add Imagery</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#edit-with-josm">5.3.3 Edit with JOSM</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#save-changes">5.3.4 Save Changes</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#save-osm-file">5.3.5 Save OSM File</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#see-your-changes-on-the-map">5.3.6 See Your Changes on The Map</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#josm-data-quality-assurance">5.4 JOSM Data Quality Assurance</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#warnings-and-errors-in-josm">5.4.1 Warnings and Errors in JOSM</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#validation-tool">5.4.2 Validation Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-06-using-gps.html">Chapter 6: Using GPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-07-field-papers.html">Chapter 7: Field Papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-08-conflict-resolution-in-osm.html">Chapter 8: Conflict Resolution in OSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-09-inserting-tag.html">Chapter 9: Inserting Special Tag in JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-10-imagery-offset.html">Chapter 10: Imagery Offset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-11-export-osm-data.html">Chapter 11: Export OSM data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/5_000.png" src="../../_images/5_000.png" />
+<section id="chapter-5-editing-with-josm">
+<span id="ch5-editing-with-josm"></span><h1>Chapter 5:  Editing with JOSM<a class="headerlink" href="#chapter-5-editing-with-josm" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Using the editing tools in JOSM</p></li>
+<li><p>Knowing the shortcut buttons in JOSM</p></li>
+<li><p>Extending functionality with JOSM plug-ins</p></li>
+<li><p>Familiarity with errors and editing tips</p></li>
+<li><p>Knowing and understanding the stages of editing in JOSM</p></li>
+<li><p>Saving OSM file</p></li>
+</ul>
+<p>In a previous session, you have already installed and configured JOSM as well as master basic operations in JOSM such as drawing points, lines, and polygons.
+You also used menu presets to add attributes to an object you created on the map. Finally, you are to the point where you can digitize and edit features on the map using JOSM.</p>
+<p>In this session, we will look closely at the JOSM interface and learn how to stage the map editing process in JOSM and also how to maximize the tools that exist in JOSM.</p>
+<section id="editing-tools-in-josm">
+<h2>5.1 Editing tools in JOSM<a class="headerlink" href="#editing-tools-in-josm" title="Link to this heading">¶</a></h2>
+<p>In this section, we build on our command of basic tools and techniques to draw map features in JOSM and look closely at some advanced drawing tools.
+To follow along with this section and practice using advanced JOSM tools, please download in <a class="reference external" href="http://bit.ly/edittools">Edit tools</a> then open JOSM and point to the edittools package. It will look like the figure below:</p>
+<figure class="align-center" id="id1">
+<img alt="../../_images/5_001.png" src="../../_images/5_001.png" />
+<figcaption>
+<p><span class="caption-text"><em>The display of editing file in JOSM</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="drawing-tools">
+<h3>5.1.1 Drawing Tools<a class="headerlink" href="#drawing-tools" title="Link to this heading">¶</a></h3>
+<p>JOSM has some additional tools to make it easier to create high quality lines and polygons. These tools are found in the <span class="guilabel">Tools</span> menu at the top of
+JOSM.
+A quick glance reveals many functions that can help when drawing lines and polygons, and editing objects on the map. We discuss the most important of those tools
+in this section.</p>
+<figure class="align-center">
+<img alt="../../_images/5_002.png" src="../../_images/5_002.png" />
+</figure>
+<p><strong>Options in JOSM Tools Menu</strong></p>
+<p>In applying the functions in this menu, you first must select a point, line or polygon in the map window. The sample file you already downloaded contains various elements that are labeled the names of different tools on the menu.</p>
+<ol class="arabic simple">
+<li><p>Try to select one of the elements in the file. Then go to the <span class="guilabel">Tools</span> menu and click on the function identified on the feature you have selected.</p></li>
+<li><p>For example, click on the asymmetric circle.</p></li>
+</ol>
+<img alt="../../_images/5_003.png" class="align-center" src="../../_images/5_003.png" />
+<ol class="arabic simple" start="3">
+<li><p>Next go to the <span class="menuselection">Tools ‣ Align Nodes in Circle</span></p></li>
+<li><p>The irregular circle will be aligned and symmetrical.</p></li>
+</ol>
+<p>Experiment with each of the tools using this sample file. A description of some of the tools is provided below.</p>
+<ul class="simple">
+<li><p><strong>Split Way:</strong> This allows you to divide a way into two separate ways. This is useful if you want to add the attribute to the different road, such as bridge. To use this function, select a point in the middle of way that you want to cut, then select <strong>Split Way</strong> from the <span class="guilabel">Tools</span> menu, and your way should be split into two ways.</p></li>
+<li><p><strong>Combine Way:</strong> This is <strong>the opposite of Split Way</strong>. To combine two ways into one way, they have to share a single point. To use this function, select the way you want to combine. You can select more than one object by holding the <strong>SHIFT</strong> button on your keyboard and click on each way. When you have selected the both of the ways, select <span class="menuselection">Tools ‣ Combine Way</span>.</p></li>
+</ul>
+<figure class="align-center" id="id2">
+<img alt="../../_images/5_004.png" src="../../_images/5_004.png" />
+<figcaption>
+<p><span class="caption-text"><em>The result of the combine way operation in JOSM</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>That if you want to combine ways that have different directions, you will see this warning:</p>
+</div>
+<img alt="../../_images/5_005.png" class="align-center" src="../../_images/5_005.png" />
+<p>If the ways are connected, they can be aligned in the same direction by selecting <span class="guilabel">Reverse and Combine</span>.</p>
+<ul class="simple">
+<li><p><strong>Reverse Way</strong>: This will change the direction of a way. All ways in OSM have a direction, shown in JOSM with an arrow pointing in the direction of alignment. Direction is usual not a problem, except in cases where the one way roads and river that flow in a certain direction. In this case, you need to reverse the way so that it flows in the right direction.</p></li>
+</ul>
+<img alt="../../_images/5_006.png" class="align-center" src="../../_images/5_006.png" />
+<ul class="simple">
+<li><p><strong>Simplify Way</strong>: If your way has too many points in it and you want to make it simpler, this operation will remove some points from a way without adversely affecting the shape.</p></li>
+</ul>
+<figure class="align-center" id="id3">
+<img alt="../../_images/5_007.png" src="../../_images/5_007.png" />
+<figcaption>
+<p><span class="caption-text"><em>The example of ways which will be simplified in JOSM</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Align Nodes in Circle</strong>: If you try to make a circle, you draw a circle as best you can then select the object. This function will help distribute the points to make a perfect circle.</p></li>
+<li><p><strong>Create Circle</strong>: Alternatively, you can use this tool, it will make a perfect circle. Draw a way that represents the diameter of your circle.</p></li>
+</ul>
+<img alt="../../_images/5_008.png" class="align-center" src="../../_images/5_008.png" />
+<ul class="simple">
+<li><p><strong>Align Nodes in Line</strong>: This function will align a series of points into a straight way. With long ways it is best to select sections of the line to straighten. Be careful as this does have the tendency to shift the line a little bit.</p></li>
+</ul>
+<figure class="align-center" id="id4">
+<img alt="../../_images/5_009.png" src="../../_images/5_009.png" />
+<figcaption>
+<p><span class="caption-text"><em>The Concept of Making A Way That Turned into A Straight</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Orthogonalize Shape</strong>: This function is more useful to draw a regular shape such as building. After you draw an area, this function will reshaped it to have square corners.</p></li>
+</ul>
+<figure class="align-center" id="id5">
+<img alt="../../_images/5_010.png" src="../../_images/5_010.png" />
+<figcaption>
+<p><span class="caption-text"><em>The concept of perfect the shape of polygon</em></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Unglue way</strong>: This tool allows you to detach the nodes that are connected. For example, the common error is for a road shares the point with the corner of a building. Of course roads don’t run into buildings usually, so this is a mistake, and you can unglue the objects from one another.</p></li>
+</ul>
+<img alt="../../_images/5_011.png" class="align-center" src="../../_images/5_011.png" />
+<p>The common question is how to rotate a way or a polygon after the object was drew.</p>
+<ul class="simple">
+<li><p>To rotate an object, first you need to select the object</p></li>
+<li><p>Hold <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">SHIFT</kbd>+<kbd class="kbd docutils literal notranslate">CTRL</kbd></kbd> in your keyboard</p></li>
+<li><p>Click and drag the mouse to rotate</p></li>
+</ul>
+<figure class="align-center" id="id6">
+<img alt="../../_images/5_012.png" src="../../_images/5_012.png" />
+<figcaption>
+<p><span class="caption-text"><em>The concept of rotating an object in JOSM</em></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="keyboard-shortcuts">
+<h3>5.1.2 Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Link to this heading">¶</a></h3>
+<p>After editing in OpenStreetMap, you will realize that you are spending a lot of time with each click on the menu and submenu. To overcome this, JOSM has a shortcut button that substitutes the lengthy menu process.
+You can simply select the object directly and press the button in your keyboard. Here are the most important shortcut keys.</p>
+<ol class="arabic">
+<li><dl>
+<dt>Select Tool</dt><dd><img alt="../../_images/5_013.png" class="align-center" src="../../_images/5_013.png" />
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Draw Tool</dt><dd><img alt="../../_images/5_014.png" class="align-center" src="../../_images/5_014.png" />
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Zoom Tool</dt><dd><img alt="../../_images/5_015.png" class="align-center" src="../../_images/5_015.png" />
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Remove Object</dt><dd><img alt="../../_images/5_016.png" class="align-center" src="../../_images/5_016.png" />
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Zoom In</dt><dd><img alt="../../_images/5_017.png" class="align-center" src="../../_images/5_017.png" />
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Zoom Out</dt><dd><img alt="../../_images/5_018.png" class="align-center" src="../../_images/5_018.png" />
+</dd>
+</dl>
+</li>
+</ol>
+</section>
+<section id="josm-plugins">
+<h3>5.1.3 JOSM Plugins<a class="headerlink" href="#josm-plugins" title="Link to this heading">¶</a></h3>
+<p>After you have acquired some skill in editing the map, you may want to use the additional JOSM features to improve your mapping skills. JOSM allows you to install various plugins, extending the functionality of the software.
+In this session, we will look some of the more useful plugins that exist for JOSM.</p>
+<ul>
+<li><p><strong>buildings_tools</strong>: If you draw a lot of buildings, this tool will make the process faster and easier. <strong>Building Tools Plugin</strong> is useful to digitize the building. It allows you to digitize one side of square building and extend the shapes with ease, saving mouse clicks and saving time. After the plugin is installed, you will see the new button in left side of JOSM, that look like this:</p>
+<blockquote>
+<div><img alt="../../_images/5_019.png" class="align-center" src="../../_images/5_019.png" />
+<ol class="arabic simple">
+<li><p>Open JOSM and make a new layer</p></li>
+<li><p>Select <span class="guilabel">building_tools</span> and double click to draw a way on the map</p></li>
+<li><p>Then drag your mouse and click again to draw a square as shown in the figure below</p></li>
+</ol>
+<img alt="../../_images/5_020.png" class="align-center" src="../../_images/5_020.png" />
+<figure class="align-center" id="id7">
+<img alt="../../_images/5_021.png" src="../../_images/5_021.png" />
+<figcaption>
+<p><span class="caption-text"><em>The process of drawing a building with building tools plugin</em></span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>The tool not only creates a square with a triple click, but it also will automatically apply the <strong>building=yes</strong> tag into the polygon.</p></li>
+</ol>
+</div></blockquote>
+<p><strong>Creating Complex Buildings</strong></p>
+<p>You can also create building more complicated buildings by first drawing some overlapping buildings and merging them together.</p>
+<ol class="arabic simple">
+<li><p>Draw two buildings which overlap, so that they form a L shape.</p></li>
+<li><p>Select both buildings (hold <kbd class="kbd docutils literal notranslate">SHIFT</kbd> to select more than one object).</p></li>
+<li><p>Go to <span class="menuselection">Tools &gt; Join overlapping areas</span> or hold <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">SHIFT</kbd>+<kbd class="kbd docutils literal notranslate">J</kbd></kbd> in your keyboard.</p></li>
+</ol>
+<img alt="../../_images/5_022.png" class="align-center" src="../../_images/5_022.png" />
+</li>
+<li><p><strong>DirectUpload:</strong> If you collect a lot of GPS tracks and you want to save to the OSM database, this plugin will make it easier for bulk uploads.</p></li>
+<li><p><strong>editgpx</strong>: If you want to upload the GPS track from Garmin device, you may need to use this plugin. Due to a technical glitch, OSM will not receive GPS track that have been saved on an external memory card in Garmin, but this plugin can fix the file so they can be uploaded.</p></li>
+<li><p><strong>fieldpapers</strong>: This plugin loads Field Papers that have been scanned in JOSM.</p></li>
+<li><p><strong>imagery_offset_db</strong>: This plugin for mappers who discover areas where the Bing satellite imagery is not aligned. This will be explained in more detail in the next chapter.</p></li>
+<li><p><strong>mirrored_download</strong>: With this plugin, you can download OSM data with a wider area to edit.</p></li>
+<li><p><strong>print</strong>: To add Print function, if you want to print an area quickly and where it need not look very good.</p></li>
+<li><p><strong>utilsplugin2</strong>: To add additional tools and menus in JOSM.</p>
+<blockquote>
+<div><p>If you haven’t done so already, install the plugin shown in the figure below following the instructions for <a class="reference external" href="http://learnosm.org/bi/editing/josm-plugins">JOSM Plugins</a>.</p>
+</div></blockquote>
+</li>
+</ul>
+<figure class="align-center" id="id8">
+<img alt="../../_images/5_023.png" src="../../_images/5_023.png" />
+<figcaption>
+<p><span class="caption-text"><em>The display of utilsplugin 2</em></span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>After you install this plugin and restart JOSM, you will have a new menu at the top of JOSM labeled <span class="guilabel">More Tools</span> as shown in the figure below.</p>
+<figure class="align-center" id="id9">
+<img alt="../../_images/5_024.png" src="../../_images/5_024.png" />
+<figcaption>
+<p><span class="caption-text"><em>The option of more tools menu in JOSM</em></span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Create new layer and experiment with some of the new tools. We will explain some of the new tools that are very useful:</p>
+<ul class="simple">
+<li><p><strong>Add Nodes at Intersections</strong>: This tool is very useful to add a missing node in the selected way intersections. It’s good practice that the way should have common nodes where they intersect.</p></li>
+</ul>
+<figure class="align-center" id="id10">
+<img alt="../../_images/5_025.png" src="../../_images/5_025.png" />
+<figcaption>
+<p><span class="caption-text"><em>Adding node at intersections</em></span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Copy Tags from Previous Selection</strong>: This function is very useful for copying a tag easily. Suppose you want to create a lot of objects with the same tagging scheme. Click on an object with the tagging scheme you want to apply and press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">SHIFT</kbd>+<kbd class="kbd docutils literal notranslate">R</kbd></kbd> to copy a tag from the previously selected object. You can repeat this process for all objects that you want to apply a tag. Remember that the tags will be copied from the previously selected object, so if you click on an object that has not been tagged the copy function will have no effect..</p></li>
+</ul>
+<figure class="align-center" id="id11">
+<img alt="../../_images/5_026.png" src="../../_images/5_026.png" />
+<figcaption>
+<p><span class="caption-text"><em>Copying tag from the selected building</em></span><a class="headerlink" href="#id11" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Add Source Tag</strong>: This tool simplifies adding a source tag, given that the last specified source will be added as source tag to your object. You can insert source with just one click.</p></li>
+<li><p><strong>Replace Geometry</strong>: This tool is very good if you want to improve the drawing of an object, but retain the history, the attribute and the object ID. Example, if you find a complex building drawn in a way that is not appropriate, you can draw the object again, select the old object and new object, select <span class="guilabel">Replace Geometry</span> to transfer all of the above information.</p></li>
+</ul>
+<figure class="align-center" id="id12">
+<img alt="../../_images/5_027.png" src="../../_images/5_027.png" />
+<figcaption>
+<p><span class="caption-text"><em>Replace Geometry in JOSM</em></span><a class="headerlink" href="#id12" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>Selection</strong></p>
+<p>Utilsplugin2 also provides a lot of tools in <span class="guilabel">Selection</span> menu.
+Try experimenting with each of these tools.</p>
+<figure class="align-center" id="id13">
+<img alt="../../_images/5_028.png" src="../../_images/5_028.png" />
+<figcaption>
+<p><span class="caption-text"><em>The display of menu in selection tools</em></span><a class="headerlink" href="#id13" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>One of the selection tools which we use frequently is <strong>Unselect Nodes</strong>: This tool deselects all points.
+This can be useful if you draw a square to select a lof of objects, but you don’t want to select a point that contains all the lines and polygons.
+An example is shown in the figure below.</p>
+<figure class="align-center" id="id14">
+<img alt="../../_images/5_029.png" src="../../_images/5_029.png" />
+<figcaption>
+<p><span class="caption-text"><em>The example cancel node in JOSM</em></span><a class="headerlink" href="#id14" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="editing-tips">
+<h2>5.2 Editing Tips<a class="headerlink" href="#editing-tips" title="Link to this heading">¶</a></h2>
+<p>There are some common mistakes that mappers make when they start using OpenStreetmap. In this chapter we’ll identify a few of the most frequent errors and offer some tips for better mapping.</p>
+<section id="connecting-objects">
+<h3>5.2.1 Connecting Objects<a class="headerlink" href="#connecting-objects" title="Link to this heading">¶</a></h3>
+<p><strong>Some objects should not connect…</strong></p>
+<p>When you are creating polygon and line that are not supposed to be connected, make sure that they are not merged together by sharing a node.
+For example, highway nodes should not be snapped to buildings, because no one likes a road that leads directly into a wall! If you want to disconnect two or more objects that share the same node, select node and go to <span class="menuselection">Tools -&gt; Unglue Ways</span> or press <kbd class="kbd docutils literal notranslate">G</kbd> as shown in the figure below.</p>
+<figure class="align-center" id="id15">
+<img alt="../../_images/5_030.png" src="../../_images/5_030.png" />
+<figcaption>
+<p><span class="caption-text"><em>Building and Road Connected</em></span><a class="headerlink" href="#id15" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id16">
+<img alt="../../_images/5_031.png" src="../../_images/5_031.png" />
+<figcaption>
+<p><span class="caption-text"><em>Building and Road Separated</em></span><a class="headerlink" href="#id16" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p><strong>…but some objects should connect</strong></p>
+<p>Roads that intersect should always share a node as shown in the figure below. If they do not share in a common node, then the computer has no way of knowing that the roads actually connect to each other.
+Therefore if you see the roads are not connecting to each other, please fix it by selecting the node from the road that you want to connect then go to <span class="menuselection">Tools -&gt; Merge Node</span> or press <kbd class="kbd docutils literal notranslate">M</kbd> in your keyboard and drag it.</p>
+<figure class="align-center" id="id17">
+<img alt="../../_images/5_032.png" src="../../_images/5_032.png" />
+<figcaption>
+<p><span class="caption-text"><em>Road must connect to each other</em></span><a class="headerlink" href="#id17" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="overlapping-object">
+<h3>5.2.2 Overlapping Object<a class="headerlink" href="#overlapping-object" title="Link to this heading">¶</a></h3>
+<p>A common error is to have overlapping polygons when the objects they represent do not overlap in real life. A building can not overlap to another building.
+For example, a polygon drawn to represent a park outside a building should not overlap with the building.
+Instead it should be drawn next to the building.</p>
+<figure class="align-center" id="id18">
+<img alt="../../_images/5_033.png" src="../../_images/5_033.png" />
+<figcaption>
+<p><span class="caption-text"><em>The example of overlap building</em></span><a class="headerlink" href="#id18" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>There are some exceptions to this rule, such as school. Within a school yard you might identify individual buildings using polygons, yet you also might want to create a polygon around the entire school yard.
+In this case it is fine for the polygons to overlap, but the rule to follow here is to make sure that the buildings are completely inside the landuse polygon.</p>
+<figure class="align-center" id="id19">
+<img alt="../../_images/5_034.png" src="../../_images/5_034.png" />
+<figcaption>
+<p><span class="caption-text"><em>The example of overlap building that is true and false</em></span><a class="headerlink" href="#id19" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="other-errors">
+<h3>5.2.3 Other Errors<a class="headerlink" href="#other-errors" title="Link to this heading">¶</a></h3>
+<section id="tag-given-in-the-node-rather-than-on-building">
+<h4>Tag given in the node rather than on building<a class="headerlink" href="#tag-given-in-the-node-rather-than-on-building" title="Link to this heading">¶</a></h4>
+<figure class="align-center" id="id20">
+<img alt="../../_images/5_035.png" src="../../_images/5_035.png" />
+<figcaption>
+<p><span class="caption-text"><em>The example of building given a false tag (left) and true tag (right)</em></span><a class="headerlink" href="#id20" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>A common error is adding tag on a node that makes up part of a line or polygon. This often happens when someone draws a building and then select one of the nodes
+that participate in the object.
+The way to avoid creating an improper way is by clicking directly on the line.</p>
+</section>
+<section id="intersection-that-meets-in-road-corner-intersections-should-be-separated">
+<h4>Intersection that meets in road corner/ intersections should be separated<a class="headerlink" href="#intersection-that-meets-in-road-corner-intersections-should-be-separated" title="Link to this heading">¶</a></h4>
+<figure class="align-center" id="id21">
+<img alt="../../_images/5_036.png" src="../../_images/5_036.png" />
+<figcaption>
+<p><span class="caption-text"><em>The wrong intersection (left) and true intersection (right)</em></span><a class="headerlink" href="#id21" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>When roads intersect each other at road corners, you should not create a curved line at intersection. Line should form an angle of 90° that represents the actual
+conditions.</p>
+</section>
+<section id="there-is-no-tag-in-a-node-or-a-line">
+<h4>There is no tag in a node or a line<a class="headerlink" href="#there-is-no-tag-in-a-node-or-a-line" title="Link to this heading">¶</a></h4>
+<img alt="../../_images/5_037.png" class="align-center" src="../../_images/5_037.png" />
+<p>To fix this, select an object and tag the object in accordance with the information that describes the object. Alternatively, the object can be removed if the
+object is in error.</p>
+</section>
+<section id="line-near-or-with-another-line-but-they-are-not-connecting">
+<h4>Line near, or with another line but they are not connecting<a class="headerlink" href="#line-near-or-with-another-line-but-they-are-not-connecting" title="Link to this heading">¶</a></h4>
+<p>The figure below shows an example of lines that should connect but do not.</p>
+<figure class="align-center" id="id22">
+<img alt="../../_images/5_038.png" src="../../_images/5_038.png" />
+<figcaption>
+<p><span class="caption-text"><em>The example of lines not connecting to each other</em></span><a class="headerlink" href="#id22" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>To fix it, you can select a node from the line that you want to connect, and then select the <span class="guilabel">Draw Node</span> tool to add a node at the end of the line.
+Alternatively, you can use the <span class="guilabel">Merge Node</span> tool (if the front line is not connecting, that is a node), the following stages are:</p>
+<ol class="arabic simple">
+<li><p>Select the two adjacent nodes, which is in the second line you want to connect</p></li>
+<li><p>Select <span class="menuselection">Merge Node &gt; Tools</span> menu</p></li>
+</ol>
+<p>If the end of the first line is not yet connected, and there is not a point to connect to in the second line, you can use the
+<span class="menuselection">Tools &gt; Join Node to Way</span>.</p>
+</section>
+<section id="way-should-not-cross-the-building">
+<h4>Way should not cross the building<a class="headerlink" href="#way-should-not-cross-the-building" title="Link to this heading">¶</a></h4>
+<p>In the figure below, a linear feature runs directly through a building.</p>
+<figure class="align-center" id="id23">
+<img alt="../../_images/5_039.png" src="../../_images/5_039.png" />
+<figcaption>
+<p><span class="caption-text"><em>The example of way cross the building</em></span><a class="headerlink" href="#id23" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>To fix this, you need to use the latest satellite imagery so you can determine which objects are correctly placed. If you are already using the latest imagery,
+simply move the object to the appropriate place and delete any obsolete features.</p>
+</section>
+</section>
+</section>
+<section id="josm-editing-process">
+<h2>5.3 JOSM Editing Process<a class="headerlink" href="#josm-editing-process" title="Link to this heading">¶</a></h2>
+<p>Editing OpenStreetMap with JOSM is similar to editing with the iD editor. But because JOSM is a desktop application, it works a little bit differently.
+The general process of editing and adding to OpenStreetMap with JOSM will always follow this pattern:</p>
+<ol class="arabic simple">
+<li><p><span class="guilabel">Download</span> the current map data from OSM</p></li>
+<li><p><span class="guilabel">Edit</span> it using satellite imagery, GPS or Field Papers</p></li>
+<li><p><span class="guilabel">Save</span> changes to OpenStreetMap</p></li>
+</ol>
+<p>In the following sections, we explore this pattern in greater detail.</p>
+<section id="downloading-osm-data">
+<h3>5.3.1 Downloading OSM Data<a class="headerlink" href="#downloading-osm-data" title="Link to this heading">¶</a></h3>
+<p>The first step is to download the data for the area of interest that you want to map. Remember that you need to do this every time that you want to make changes
+to the map, because the map is often being updated by other users and you will want the latest data.</p>
+<ol class="arabic simple">
+<li><p>Click on <span class="guilabel">File</span> in the top left corner of JOSM and click <span class="guilabel">Download from OSM</span>. This will open up the download window.
+You can access this window more simply by clicking on the <span class="guilabel">download</span> button, shown here:</p></li>
+</ol>
+<img alt="../../_images/5_040.png" class="align-center" src="../../_images/5_040.png" />
+<ol class="arabic simple" start="2">
+<li><p>When the download window opens, you should see a map with a pink box drawn on it. If you don’t see the map, click on the tab marked
+<span class="guilabel">Slippy map</span> as shown in the figure below.</p></li>
+</ol>
+<img alt="../../_images/5_041.png" class="align-center" src="../../_images/5_041.png" />
+<p>3. The pink box represents the area of interest that we would like to download for editing. Use your mouse to pan and zoom to an area that you know very well,
+such as your hometown or neighborhood. The controls are the same as in the JOSM map window. The right mouse button lets you drag the map, and your scroll wheel
+allows you to zoom in and out.</p>
+<p>4. Draw a box around the area that you want to download. To draw a new box, click on the map, hold your left mouse button down,
+and drag your mouse to create a box. Release the mouse button to finish drawing the box.</p>
+<p>5. When you are satisfied with the size and location of the box, click <span class="guilabel">Download</span> at the bottom of the window. JOSM will fetch the data for this area
+from OpenStreetMap and open it in your map window for editing.</p>
+<img alt="../../_images/5_042.png" class="align-center" src="../../_images/5_042.png" />
+</section>
+<section id="add-imagery">
+<h3>5.3.2 Add Imagery<a class="headerlink" href="#add-imagery" title="Link to this heading">¶</a></h3>
+<p>If you followed along when we added our first points with the iD editor, you remember that beneath the map data there was a satellite image that helped us
+identify objects on the ground. This imagery was licensed from Microsoft Bing, which generously provides its imagery for OpenStreetMap users to use as a reference
+while contributing to the map.</p>
+<p>To add the Bing satellite imagery in JOSM, click <span class="guilabel">Imagery</span> on the top menu of JOSM and selecting <span class="guilabel">Bing Sat</span>.</p>
+<img alt="../../_images/5_043.png" class="align-center" src="../../_images/5_043.png" />
+</section>
+<section id="edit-with-josm">
+<h3>5.3.3 Edit with JOSM<a class="headerlink" href="#edit-with-josm" title="Link to this heading">¶</a></h3>
+<p>To this point, we have been doing some pre-edit steps in JOSM starting with downloading OSM data and adding satellite imagery as the background. Next, we’ll edit
+the map and add new objects on it.</p>
+<p>You might rather see more or less data in your editing window. What you see will depend on the size of your editable area.
+Please note, the data you are working with is real data and the nodes, lines and polygon in your map area represents actual objects on the ground.</p>
+<ol class="arabic simple">
+<li><p>Use same steps that you have learned before to add nodes to your map. If you see any error in your object, please fix it.</p></li>
+</ol>
+<p>2. You do not need to hurry, take your time to understand the steps. If you are not really sure about the outline or identify of some object, you should leave
+these off the map.</p>
+<p>3. If you want to move nodes, lines, or polygon, you can use <span class="guilabel">Select Tools</span>. Click the object that you want to move and drag it to where
+it should be.This step could be used to fix location of objects which have wrong position.</p>
+<img alt="../../_images/5_044.png" class="align-center" src="../../_images/5_044.png" />
+<p>4. Use <span class="guilabel">Draw Tool</span> to draw nodes, lines, and polygon. Add description and information of your object using Presets menu.
+You have done this in previous chapter.</p>
+<section id="josm-layer">
+<h4>JOSM Layer<a class="headerlink" href="#josm-layer" title="Link to this heading">¶</a></h4>
+<p>You might be notice that everytime you add new object to JOSM, your object will be added to layer panel at right side in JOSM. Your <span class="guilabel">Panel Layer</span>
+should looks like this:</p>
+<img alt="../../_images/5_045.png" class="align-center" src="../../_images/5_045.png" />
+<p>Every item listed is a different source of data that you have open in JOSM. In the example shown in the figure above, <span class="guilabel">Data Layer 1</span>
+is the OpenStreetMap data that we are currently editing.
+<span class="guilabel">BingSat</span> layer is satellite imagery that is used as a background in JOSM.</p>
+<p>Those layers that are used as background images help us identify and digitize objects in JOSM. These include satellite imagery, but also GPS tracks
+and scans of Field Papers.
+We call these layers <strong>base layers</strong> and our OSM data layer is main layer that we use to digitize and edit, add objects, move objects, etc.</p>
+<ol class="arabic simple">
+<li><p>To move a layer, click on that layer in <span class="guilabel">Layers</span> panel and click <span class="guilabel">up</span> or <span class="guilabel">down blue arrow</span> to move it.</p></li>
+</ol>
+<img alt="../../_images/5_046.png" class="align-center" src="../../_images/5_046.png" />
+<ol class="arabic simple" start="2">
+<li><p>To hide a layer, select layer with your mouse and you can click <span class="guilabel">Show/Hide</span> button:</p></li>
+</ol>
+<img alt="../../_images/5_047.png" class="align-center" src="../../_images/5_047.png" />
+<p>You should see your layer that you select will be hide in JOSM. If you want to show it again, you can click the show/hide button and
+it would be automatically show in JOSM.</p>
+<ol class="arabic simple" start="3">
+<li><p>You also can delete a layer using the <span class="guilabel">delete</span> button:</p></li>
+</ol>
+<img alt="../../_images/5_048.png" class="align-center" src="../../_images/5_048.png" />
+<p>4.  Last, it is very important to know that you only can edit the <span class="guilabel">Active</span> layer in JOSM. If you can not edit your map in JOSM,
+it might be because your layer is not active. Most layer, such as GPS point, Field Papers, and Aerial Imagery cannot be edited.
+The only layer that can be edited are data from OpenStreetMap, which are usually called <strong>Data Layer 1</strong>.</p>
+<ol class="arabic simple" start="5">
+<li><p>To make a layer active, select it in the <span class="guilabel">Layers</span> panel, and click on the <span class="guilabel">Activate</span> button:</p></li>
+</ol>
+<img alt="../../_images/5_049.png" class="align-center" src="../../_images/5_049.png" />
+</section>
+<section id="tag">
+<h4>Tag<a class="headerlink" href="#tag" title="Link to this heading">¶</a></h4>
+<p>Tag is just like a label that you put to an object. For instance, if we add an object in some area and that object is a mosque and its name is
+<strong>Masjid Raya Sabilal Muhtadin</strong>; amenity that we can use is <strong>place of worship</strong> and mosque as we know, is Muslim place of worship.
+Therefore, you can add a <strong>religion=Muslim</strong> tag to the mosque as well as any other information you can supply about that object.
+The tag will be saved as text, specifically as a <strong>key</strong> and <strong>value</strong> combination. In OpenStreetMap, you can see all information about an objects
+in properties panel at right side of your JOSM window as shown in the figure below.</p>
+<figure class="align-center" id="id24">
+<img alt="../../_images/5_050.png" src="../../_images/5_050.png" />
+<figcaption>
+<p><span class="caption-text"><em>Example Tag of object in JOSM</em></span><a class="headerlink" href="#id24" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="editing-tags">
+<h4>Editing Tags<a class="headerlink" href="#editing-tags" title="Link to this heading">¶</a></h4>
+<p>You can add, edit, and remove tags directly from properties panel. But, tags are automatically defined in English and sometimes it is confusing especially
+if you do not understand English. Hence, non-English speakers may find it is easier to manage tags using a Preset Menu. Needless to say, when you add or edit tag,
+the attribute of object will be change as well.</p>
+<ol class="arabic simple">
+<li><p>To edit tag of an object, first <strong>select the object</strong>.</p></li>
+<li><p>You can edit the tag either: (1) <strong>Using Presets Menu</strong>, or (2) <strong>Edit Directly</strong> in properties windows at right side of your JOSM.</p></li>
+</ol>
+</section>
+</section>
+<section id="save-changes">
+<h3>5.3.4 Save Changes<a class="headerlink" href="#save-changes" title="Link to this heading">¶</a></h3>
+<p>The third and final step to complete our edits is to upload changes we have made to the OpenStreetMap database. To save the changes,
+you must be connected to the internet.</p>
+<p>1. Click <span class="guilabel">File</span> on the top menu, and then click :guilabel: <cite>Upload Data</cite>. This will open up the upload window. You can access this window more simply by
+clicking on the <span class="guilabel">upload</span> button, shown here:</p>
+<img alt="../../_images/5_051.png" class="align-center" src="../../_images/5_051.png" />
+<p>2. The window that appears shows a list of the objects that you are adding and the objects you are modifying or deleting. In the box at the bottom you are asked
+to provide a comment about the changes that you are making. Type in here a brief description of your edits.</p>
+<img alt="../../_images/5_052.png" class="align-center" src="../../_images/5_052.png" />
+<ol class="arabic simple" start="3">
+<li><p>Click <span class="guilabel">Upload Changes</span></p></li>
+<li><p>Wait a few seconds for your changes to be uploaded, and then you are finished! You have edited OpenStreetMap!</p></li>
+</ol>
+</section>
+<section id="save-osm-file">
+<h3>5.3.5 Save OSM File<a class="headerlink" href="#save-osm-file" title="Link to this heading">¶</a></h3>
+<p>When you edit using JOSM, you should download, edit and upload your changes at regular intervals. Do not be afraid to upload your changes several times during an
+editing session. This insures your changes upload to OSM database completely and you face less risk of losing your work.
+There are some cases where you have not finished your work, or your internet connection may be suddenly turned off.
+If that happens, you can save your work locally in JOSM. These are the steps to save your work:</p>
+<p>1. To save your OSM file, make sure your layer active. Click <span class="menuselection">File &gt; Save</span>. Choose your location in your computer and give a name to your file.
+You also can save your file by click this button:</p>
+<img alt="../../_images/5_053.png" class="align-center" src="../../_images/5_053.png" />
+<ol class="arabic simple" start="2">
+<li><p>You can close your JOSM and your works has been saved. When you want to open your file, open JOSM and go to <span class="menuselection">File &gt; Open</span>.</p></li>
+</ol>
+</section>
+<section id="see-your-changes-on-the-map">
+<h3>5.3.6 See Your Changes on The Map<a class="headerlink" href="#see-your-changes-on-the-map" title="Link to this heading">¶</a></h3>
+<p>To see your edits on the map, take the following steps:</p>
+<ol class="arabic simple">
+<li><p>Open your internet browser and go to <a class="reference external" href="http://openstreetmap.org/">openstreetmap.org</a></p></li>
+<li><p>Move the map to the area that you edited.</p></li>
+<li><p>You should see your changes now appearing on the map! If you don’t, try pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">CTRL</kbd>+<kbd class="kbd docutils literal notranslate">R</kbd></kbd> to refresh the web page. Sometimes the map doesn’t update properly and needs to be reloaded.</p></li>
+<li><p>What if you don’t see your changes? Don’t worry, it may take a few minutes for the changes to be shown on the map. Also, check your additions in JOSM to make sure that you added them correctly. A good general rule is, if your point has an icon in JOSM, then it should be seen on the main map at the OpenStreetMap website.</p></li>
+</ol>
+</section>
+</section>
+<section id="josm-data-quality-assurance">
+<h2>5.4 JOSM Data Quality Assurance<a class="headerlink" href="#josm-data-quality-assurance" title="Link to this heading">¶</a></h2>
+<p>Contributing to OpenStreetMap is easy to learn, but difficult to master.
+Everybody makes mistakes, but the system works because even when one person does something the “wrong” way, there are always other mappers ready to help and fix errors.
+As you map more and more, the process will continue to get easier, and you will learn the “proper” way to do things. This chapter is devoted to helping you make quality contributions to OpenStreetMap.
+We will begin by discussing various editing techniques in JOSM that will improve your workflow, and how to avoid common mistakes that beginning mappers make.
+Lastly, we will then discuss the JOSM validator tool, which is an automated way of checking for errors.</p>
+<section id="warnings-and-errors-in-josm">
+<h3>5.4.1 Warnings and Errors in JOSM<a class="headerlink" href="#warnings-and-errors-in-josm" title="Link to this heading">¶</a></h3>
+<p>There is a stage when you upload your work to OpenStreetMap when you get a window notification as in the figure below:</p>
+<img alt="../../_images/5_054.png" class="align-center" src="../../_images/5_054.png" />
+<p>This is the way JOSM tells us that something is wrong with our data and it needs to be fixed before we upload it to the server.</p>
+<p>JOSM comes with a <span class="guilabel">validation</span> tool that does an automated analysis of possible mistakes. This is useful for finding errors that you may have overlooked. When you run the validation tool, it returns two types of problems:</p>
+<ul class="simple">
+<li><p><strong>Errors</strong>: These are important to fix, and you should not ignore these. Examples of errors include duplicated objects or overlapping lines and polygons.</p></li>
+<li><p><strong>Warning:</strong> These are problems that are important to fix, but in some cases, they are tolerable.</p></li>
+</ul>
+<p>One thing to note is that if you download a large area of the map and run the validation tool, you may get a very long list of errors and warnings.
+This is because the validation tool works on the whole map in your editing extents, –not only the changes that you have made.
+So you may see mistakes that other mappers have made which you are free to fix or ignore. But the validation tool gives you the opportunity to look at the mistakes one by one and evaluate them.</p>
+</section>
+<section id="validation-tool">
+<h3>5.4.2 Validation Tool<a class="headerlink" href="#validation-tool" title="Link to this heading">¶</a></h3>
+<p>Let’s learn how to use validation tool.</p>
+<ol class="arabic simple">
+<li><p>Download some area in JOSM. If you do not see <span class="guilabel">Validation Result</span> at <strong>right side panel</strong> in your window, tick on the <strong>blue checklist</strong> icon from the left panel in your JOSM window as circled in the figure below.</p></li>
+</ol>
+<figure class="align-center" id="id25">
+<img alt="../../_images/5_055.png" src="../../_images/5_055.png" />
+<figcaption>
+<p><span class="caption-text"><em>Validation Result Button</em></span><a class="headerlink" href="#id25" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p><strong>Ensure that nothing on the map is selected</strong>. If you run the validation tool with anything selected, it will only validate what you have selected, and not the whole map. However your mouse in the validation window and click <span class="guilabel">Validation</span></p></li>
+</ol>
+<img alt="../../_images/5_056.png" class="align-center" src="../../_images/5_056.png" />
+<ol class="arabic simple" start="3">
+<li><p>The map will change and any warnings will be circled in yellow, errors in red. In the <span class="guilabel">Validation Results</span> window, as shown in the figure below, you will see a list of warnings and errors, if there are any.</p></li>
+</ol>
+<figure class="align-center" id="id26">
+<img alt="../../_images/5_057.png" src="../../_images/5_057.png" />
+<figcaption>
+<p><span class="caption-text"><em>Validation Layer and Validation Result</em></span><a class="headerlink" href="#id26" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p><strong>Error</strong> should almost always be fixed. You can zoom to an error, by right clicking on it in the window and selecting <span class="guilabel">Zoom to Problem</span>. Then you can fix the mistake manually.</p></li>
+</ol>
+<p>5.  <strong>Some errors can be automatically fixed</strong>, such as <strong>Duplicated node</strong> errors. You can click on the folder for these types of errors and click the
+<span class="guilabel">Fix</span> button in the window. Many errors, however, need to be corrected manually.</p>
+<img alt="../../_images/5_058.png" class="align-center" src="../../_images/5_058.png" />
+<ol class="arabic simple" start="6">
+<li><p>Usually there are many more warnings than errors. By giving you a warning, JOSM is telling you that it is probably a mistake, but not always. So you will need to use your judgement to see if it is an error or not.</p></li>
+<li><p>If you select a warning from the list and decide that it is not a problem, click <span class="guilabel">Ignore</span> and it will be removed from the list.</p></li>
+<li><p>You can re-run the validation tool at any time by clicking <span class="guilabel">Validation</span>.</p></li>
+</ol>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>Awesome! You have successfully learned how to edit OpenStreetMap in JOSM and how to maximize some tools in JOSM to help us in editing our map.
+You also know about mistakes and errors that should be avoided when editing in JOSM.</p>
+<p>In next chapter, we will learn how to use <strong>Global Positioning System</strong> (GPS) to collect data when doing a field survey and how to add it to OpenStreetMap.</p>
+<p><a class="reference internal" href="Chapter-06-using-gps.html#ch6-using-gps"><span class="std std-ref">Go to next chapter –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-06-using-gps.html"
+                   title="Chapter 6: Using GPS"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-04-getting-started-with-josm.html"
+                   title="Chapter 4: Getting started with JOSM"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

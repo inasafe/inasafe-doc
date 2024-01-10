@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Chapter 8: Conflict Resolution in OSM &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Chapter 9: Inserting Special Tag in JOSM" href="Chapter-09-inserting-tag.html" />
+    <link rel="prev" title="Chapter 7: Field Papers" href="Chapter-07-field-papers.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/osm/Chapter-08-conflict-resolution-in-osm.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/osm/Chapter-08-conflict-resolution-in-osm.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Data Collection Using OpenStreetMap</a>
+                </li>
+                
+
+                <li><a href="#">Chapter 8: Conflict Resolution in OSM</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-09-inserting-tag.html"
+                   title="Chapter 9: Inserting Special Tag in JOSM"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-07-field-papers.html"
+                   title="Chapter 7: Field Papers"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Data Collection Using OpenStreetMap</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Chapter-00-preface.html">Preface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-01-introduction.html">Chapter 1: Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-02-getting-started.html">Chapter 2: Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-03-introducing-the-id-editor.html">Chapter 3: Introducing the iD Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-04-getting-started-with-josm.html">Chapter 4: Getting started with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-05-editing-with-josm.html">Chapter 5:  Editing with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-06-using-gps.html">Chapter 6: Using GPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-07-field-papers.html">Chapter 7: Field Papers</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 8: Conflict Resolution in OSM</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#conflict-in-josm">8.1 Conflict in JOSM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#resolving-a-conflict">8.1.1 Resolving a Conflict</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tips-to-avoid-conflict">8.1.2 Tips to Avoid Conflict</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-09-inserting-tag.html">Chapter 9: Inserting Special Tag in JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-10-imagery-offset.html">Chapter 10: Imagery Offset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-11-export-osm-data.html">Chapter 11: Export OSM data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/1_000.png" src="../../_images/1_000.png" />
+<section id="chapter-8-conflict-resolution-in-osm">
+<span id="ch8-conflict-resolution-in-osm"></span><h1>Chapter 8: Conflict Resolution in OSM<a class="headerlink" href="#chapter-8-conflict-resolution-in-osm" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Finding and resolving conflicts in JOSM</p></li>
+<li><p>Learning ways to avoid conflicts (using tasking manager)</p></li>
+</ul>
+<section id="conflict-in-josm">
+<h2>8.1 Conflict in JOSM<a class="headerlink" href="#conflict-in-josm" title="Link to this heading">¶</a></h2>
+<p>When we are working with JOSM and about to upload the changes, sometimes we encounter this message:</p>
+<img alt="../../_images/8_001.png" class="align-center" src="../../_images/8_001.png" />
+<p>This happens when you download a group of data that includes a particular point, let’s say point A.
+At the same time there are other people who also downloaded point A, making changes to it and upload it back to OSM. Now when you try to upload your changes (including point A) with your version,
+the version is already different from the server version.
+This causes the server to be confused on which version of Point A that is correct.</p>
+</section>
+<section id="resolving-a-conflict">
+<h2>8.1.1 Resolving a Conflict<a class="headerlink" href="#resolving-a-conflict" title="Link to this heading">¶</a></h2>
+<p>The process of resolving conflicts in JOSM is pretty simple, even though it might be confusing at first.
+Basically, all conflicts that occur in JOSM will leave you with
+two options – Your Version of the object and Their Version of the object that is on the server.
+You just need to choose which version you want to use, -your version or the new version in the server.</p>
+<ul class="simple">
+<li><p>When a conflict window appears, you might want to choose the “Syncronize node … only”,
+but this will only resolve the conflict that occurs on the particular node. That is why it is better to choose the
+<span class="guilabel">Synchronize Entire Dataset</span> option so that you can resolve the conflicts all together.</p></li>
+</ul>
+<img alt="../../_images/8_002.png" class="align-center" src="../../_images/8_002.png" />
+<ul class="simple">
+<li><p>When you click on that button, there will be a new window that includes all of the conflict details.
+The conflict messages might seems complicated, but actually they are quite simple.
+You will know the type of conflict you encounter by indicating where the symbol</p></li>
+</ul>
+<img alt="../../_images/8_008.png" class="align-center" src="../../_images/8_008.png" />
+<p>located. Conflict in this example indicating that it is on the properties,
+such as location or the object’s position. You can see that the coordinate and state are deleted.</p>
+<p><strong>Types of Conflict:</strong></p>
+<ul class="simple">
+<li><p><strong>Properties:</strong>  Object has been moved (coordinate) or deleted</p></li>
+<li><p><strong>Tag</strong>:  Object has different tags on both version</p></li>
+<li><p><strong>Node</strong>:  There are differences on the node list</p></li>
+<li><p><strong>Members</strong>: There are differences regarding the members of a relation</p></li>
+</ul>
+<img alt="../../_images/8_003.png" class="align-center" src="../../_images/8_003.png" />
+<p>Conflict just shows up on two different edits at the same time. If there are three or more different edits happen
+at the same time, chain of conflicts will occurs. You can only solve two conflicts at the same time.
+You can choose Your Version, Their Version, or merge the two changes.</p>
+<p>In this example, you don’t have option to merge the changes.
+Click on the <span class="guilabel">My Version</span> column if you are sure that your version is the right one.
+Click on <span class="guilabel">Their Version</span> if you think that other mapper’s edit should be retained.</p>
+<img alt="../../_images/8_004.png" class="align-center" src="../../_images/8_004.png" />
+<ol class="arabic simple">
+<li><p>After you choose which version is best, click on the <span class="guilabel">Apply Resolution</span> as shown in the figure above.
+After you finished resolving all the  conflicts, you can start to upload your changes.</p></li>
+<li><p>Do some more editing. Then click <span class="guilabel">Upload</span>. You will get a pop-up like the one below that says:</p></li>
+</ol>
+<img alt="../../_images/8_005.png" class="align-center" src="../../_images/8_005.png" />
+<ol class="arabic simple" start="3">
+<li><p>On your Windows menu you have a <strong>Conflict List Dialog</strong></p></li>
+</ol>
+<img alt="../../_images/8_006.png" class="align-center" src="../../_images/8_006.png" />
+<p>This window displays a list of conflicts. The total number of unresolved conflicts is shown in the header.
+You can select or resolve a conflict by clicking on it. This is useful when you have many conflicts to deal with.</p>
+<img alt="../../_images/8_007.png" class="align-center" src="../../_images/8_007.png" />
+<ol class="arabic simple" start="4">
+<li><p>You cannot upload your changes until this list is empty and all conflicts have been resolved.</p></li>
+</ol>
+</section>
+<section id="tips-to-avoid-conflict">
+<h2>8.1.2 Tips to Avoid Conflict<a class="headerlink" href="#tips-to-avoid-conflict" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Upload frequently</strong></p></li>
+</ul>
+<blockquote>
+<div><p>To minimise the chance and number of conflicts it is important to upload your edits regularly.
+Conflicts appear more frequently for those who tend to save the area they are working on in their local computer, but wait a while to upload their changes. It is best to download the area you are working on,
+edit it and then immediately upload it.
+The longer the time between downloading data and uploading changes to that data,
+the more likely it is that someone has edited something in the meantime.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p><strong>ONLY edit in the area you download</strong></p></li>
+</ul>
+<blockquote>
+<div><p>Editing in the specific area you have downloaded minimises the risk of conflict.
+Make sure you do not edit outside of the area that you have downloaded.
+You can easily see the areas outside your download area in JOSM,
+because the background is made up of diagonal lines instead of being solid black.</p>
+</div></blockquote>
+<img alt="../../_images/8_009.png" class="align-center" src="../../_images/8_009.png" />
+<ul class="simple">
+<li><p><strong>Using the tasking manager</strong></p></li>
+</ul>
+<blockquote>
+<div><p>The OSM Tasking Manager is a <strong>tool</strong> that mappers can use to <strong>sort an area into a grid</strong>,
+and work together <strong>to map in an organised way</strong>.
+Apart from being more organised, the tasking manager is also one way to avoid editing conflicts,
+because it helps prevent more than one person from editing the same area at the same time.</p>
+<p>The way the tasking manager operates is every mapper on a project selects one box from a grid overlaid on the mapping project area.
+This box represents a subsection of the mapping project area.
+When a mapper finishes mapping all features in their box, they can mark it as complete.
+This way, a team distributed in different areas can coordinate and work together to finish mapping in that grid.</p>
+<p>To see how tasking manager works, let’s practice a bit more.</p>
+</div></blockquote>
+<ol class="arabic simple">
+<li><p>Open your internet browser and go to <a class="reference external" href="http://tasks.hotosm.org">tasks.hotosm.org</a>.
+You will see a page like this:</p></li>
+</ol>
+<img alt="../../_images/8_010.png" class="align-center" src="../../_images/8_010.png" />
+<ol class="arabic simple" start="2">
+<li><p>Click <span class="guilabel">Log in to OpenStreetMap</span></p></li>
+</ol>
+<img alt="../../_images/8_011.png" class="align-center" src="../../_images/8_011.png" />
+<ol class="arabic simple" start="3">
+<li><p>Here you must agree to allow this application some access to your OSM account. To do so, click <span class="guilabel">Save Changes</span>.</p></li>
+</ol>
+<img alt="../../_images/8_012.png" class="align-center" src="../../_images/8_012.png" />
+<ol class="arabic simple" start="4">
+<li><p>Now you will see a list of projects that currently active from many country where they doing coordination for mapping activities.</p></li>
+</ol>
+<img alt="../../_images/8_013.png" class="align-center" src="../../_images/8_013.png" />
+<ol class="arabic simple" start="5">
+<li><p>Click on a project to see further information related to the task as shown in the figure below.</p></li>
+</ol>
+<img alt="../../_images/8_014.png" class="align-center" src="../../_images/8_014.png" />
+<ol class="arabic simple" start="6">
+<li><p>This page shows you everything you need to know about the project.
+On the left side of the page is a description of the mapping project and how it is being organised.
+You can click on the different tabs to get more information. On the right side is a grid showing the area to be mapped.
+Red grid squares have been completed, green squares have been completed and checked by another person,
+and the remaining squares still need to be mapped or are being worked on.</p></li>
+<li><p>In the right side show an area that currently being map.</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Orange</strong> box represent an area that already mapped</p></li>
+<li><p><strong>Green</strong> box represent an area that already mapped and validated by other people</p></li>
+<li><p><strong>Orange outline</strong> box represent there is someone who currently map in that area</p></li>
+<li><p><strong>Grey/empty</strong> box represent the task is unfinished.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p>You can click on tab <span class="guilabel">Contribute</span>, with click on <span class="guilabel">Take a task at random</span> if you want to pick task randomly
+or you can select a task manually in slippy map and then click <span class="guilabel">Start Mapping</span></p></li>
+<li><p>After that select <span class="guilabel">Edit with JOSM</span> (You need to open JOSM and enable remote control first)</p></li>
+</ol>
+<img alt="../../_images/8_015.png" class="align-center" src="../../_images/8_015.png" />
+<ol class="arabic simple" start="10">
+<li><p>You can also open another editing software such as iD Editor, Potlach 2 and Field Papers</p></li>
+<li><p>After you finish editing and upload the data into OSM server, you need to go back to the tasking manager and click <span class="guilabel">Mark task as done</span>
+making sure to add a changeset comment for the edits you created.
+It’s important to let other mappers know that you have finished the grid square.
+If you cannot finish the task, click <span class="guilabel">Unlock it</span> so another mapper can finish your task.</p></li>
+</ol>
+<p><a class="reference internal" href="Chapter-09-inserting-tag.html#ch9-inserting-special-tag-in-osm"><span class="std std-ref">Go to next chapter –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-09-inserting-tag.html"
+                   title="Chapter 9: Inserting Special Tag in JOSM"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-07-field-papers.html"
+                   title="Chapter 7: Field Papers"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

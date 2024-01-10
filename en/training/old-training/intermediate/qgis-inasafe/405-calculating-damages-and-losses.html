@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 5: Calculating Damages and Losses &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Training Data" href="../../../test_data.html" />
+    <link rel="prev" title="Module 4: Planning an Evacuation Route Based on Hazard Information" href="404-planning-evacuation-route.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/intermediate/qgis-inasafe/405-calculating-damages-and-losses.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Intermediate Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 5: Calculating Damages and Losses</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="../../../test_data.html"
+                   title="Training Data"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="404-planning-evacuation-route.html"
+                   title="Module 4: Planning an Evacuation Route Based on Hazard Information"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../beginner/index.html">Beginner Training Module</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Intermediate Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 3: Data Collection Using OpenStreetMap Intermediate Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="400-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="401-review-qgis.html">Module 1: QGIS Review</a></li>
+<li class="toctree-l5"><a class="reference internal" href="402-preparing-data-and-keywords-for-inasafe.html">Module 2: Preparing Data and Keywords for InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="403-determining-idp-camp-location.html">Module 3: Determining IDP Camp Location</a></li>
+<li class="toctree-l5"><a class="reference internal" href="404-planning-evacuation-route.html">Module 4: Planning an Evacuation Route Based on Hazard Information</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 5: Calculating Damages and Losses</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image713.png" src="../../../../_images/image713.png" />
+<section id="module-5-calculating-damages-and-losses">
+<span id="calculating-damages-and-losses"></span><h1>Module 5: Calculating Damages and Losses<a class="headerlink" href="#module-5-calculating-damages-and-losses" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand the definition of damages, losses and their calculation based
+on community exposure data</p></li>
+<li><p>Understand damage and losses assessment values based on BNPB and BPBD</p></li>
+<li><p>Make a damage and losses map</p></li>
+<li><p>Calculate damage area</p></li>
+<li><p>Manipulate attribute data of affected features to obtain damage values for
+each object</p></li>
+<li><p>Manipulate attribute data of affected features to obtain loss values for
+each object</p></li>
+<li><p>Group attribute data for administrative areas (hamlet, village,
+subdistrict)</p></li>
+<li><p>Join attribute data for administrative areas (hamlet, village,
+subdistrict)</p></li>
+<li><p>Present damage and loss values using charts</p></li>
+</ul>
+<p>A <strong>Damage and Loss Assessment (DaLA)</strong> is usually created after a
+disaster.
+The standard DaLA methodology was developed by the UN Economic Commission for
+Latin America and the Caribbean (UN-ECLAC) in 1972,
+and has evolved with various international organisations since.
+Simply, it is a methodology for approximating damage and losses due to a
+disaster, basing calculations on a country’s economy and individual
+livelihoods to define the needs for recovery and reconstruction.</p>
+<p>A Damage and Loss Assessment includes the following:</p>
+<ul class="simple">
+<li><p>Damage calculated as the replacement value of totally or partially destroyed
+physical assets</p></li>
+<li><p>Losses in the flows of economy that arise from the temporary absence of the
+damaged assets</p></li>
+<li><p>The resultant impact on post-disaster macroeconomic performance, with special
+reference to economic growth/GDP, the balance of payments and fiscal situation
+of the government.</p></li>
+</ul>
+<p>In this module we will learn how to calculate some of the basic data used in a
+DaLA, and use various QGIS functions to design a thematic map that shows
+damage and loss.</p>
+<section id="bpbd-damage-assessment-guide">
+<h2>1. BPBD damage assessment guide<a class="headerlink" href="#bpbd-damage-assessment-guide" title="Link to this heading">¶</a></h2>
+<p>The BPBD has created a guide for damage and loss assessment for Indonesia,
+which defines varying degrees of damage and the economic impact of individual
+elements.
+Parts of this definition are shown here:</p>
+<img alt="../../../../_images/image833.png" class="align-center" src="../../../../_images/image833.png" />
+<p>Notice that there are several elements at work here. First,
+damage to different types of infrastructure is “valued” differently.
+To put losses into monetary terms, the loss of a bridge has a loss value as
+does the loss of a public building or a private home.
+Then, depending on whether a feature suffers heavy, medium or low damage,
+a multiplier is applied to determine the value of the loss.</p>
+<p>By adding up all of the damage it is possible to assess the total damages
+caused by a disaster.
+In the remainder of this module, we will calculate the value of the losses in
+our Sirahan project, and see how we can display them graphically using our
+map, based on the damage suffered in each hamlet.</p>
+</section>
+<section id="damage-and-losses-assessment-map">
+<h2>2. Damage and losses assessment map<a class="headerlink" href="#damage-and-losses-assessment-map" title="Link to this heading">¶</a></h2>
+<p>We will create a damage and loss assessment map using our data from Sirahan
+village that we have been working with throughout this unit.</p>
+<ol class="arabic simple">
+<li><p>Open QGIS and make sure that the following layers are loaded into your project:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>area_terdampak_Sirahan</p></li>
+<li><p>Jalan_Sirahan</p></li>
+<li><p>Sungai_Sirahan</p></li>
+<li><p>Batas_Desa_Sirahan</p></li>
+<li><p>Bangunan_Sirahan</p></li>
+</ul>
+</div></blockquote>
+<img alt="../../../../_images/image842.png" class="align-center" src="../../../../_images/image842.png" />
+<p>We will assume that all the buildings in the <span class="guilabel">area_terdampak_Sirahan</span>
+layer (hazard zone) suffered heavy damage from the disaster.
+Let’s create a spatial query to filter out these buildings.</p>
+<ol class="arabic simple" start="2">
+<li><p>Go to <span class="menuselection">Vector ‣ Spatial Query ‣ Spatial Query</span> and enter the
+fields like this:</p></li>
+</ol>
+<img alt="../../../../_images/image853.png" class="align-center" src="../../../../_images/image853.png" />
+<p>We now have a group of buildings selected which we are assuming will suffer
+heavy damages. According to the BNPB Guide, we can assess the loss of heavily
+damaged buildings at a rate of 1.8 million Rp. per square metre, and the
+multiplier factor is 70%. Our formula for calculating losses is:</p>
+<blockquote>
+<div><p><em>Total Building area x Loss Value per m² x Multiplier factor</em></p>
+</div></blockquote>
+<p>Therefore we want to calculate:</p>
+<blockquote>
+<div><p><em>Total Building Area x 1.8 million Rp. x 70%</em></p>
+</div></blockquote>
+<p>in order to get a calculation of the value of total losses.</p>
+<p>We will use the Intersect Geoprocessing tool, so that we can combine
+attributes from our district layer with the selection of buildings we have
+just made.</p>
+<ol class="arabic simple" start="3">
+<li><p>Go to <span class="menuselection">Vector ‣ Geoprocessing Tools ‣ Intersect</span> and fill in
+the fields as follows:</p></li>
+</ol>
+<img alt="../../../../_images/image863.png" class="align-center" src="../../../../_images/image863.png" />
+<ol class="arabic simple" start="4">
+<li><p>Save the result as <kbd class="kbd docutils literal notranslate">Bangunan_Terdampak</kbd>.</p></li>
+<li><p>Hide the original buildings layer so that your map looks like this:</p></li>
+</ol>
+<img alt="../../../../_images/image873.png" class="align-center" src="../../../../_images/image873.png" />
+<ol class="arabic simple" start="6">
+<li><p>Run Intersect again, this time with the new <span class="guilabel">Bangunan_Terdampak</span>
+layer and the <span class="guilabel">Batas_Desa_Sirahan</span> layer, so that the attribute
+table will include the DUSUN attribute. Name the new layer
+<kbd class="kbd docutils literal notranslate">bangunan_terdampak_perdusun.shp</kbd>.</p></li>
+</ol>
+<img alt="../../../../_images/image883.png" class="align-center" src="../../../../_images/image883.png" />
+</section>
+<section id="calculating-damage-area">
+<h2>3. Calculating damage area<a class="headerlink" href="#calculating-damage-area" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="7">
+<li><p>On the attribute table of <span class="guilabel">bangunan_terdampak_perdusun</span>,
+click the <span class="guilabel">Toggle Editing</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image893.png" class="align-center" src="../../../../_images/image893.png" />
+<ol class="arabic simple" start="8">
+<li><p>Click the <span class="guilabel">New Column</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image902.png" class="align-center" src="../../../../_images/image902.png" />
+<ol class="arabic simple" start="9">
+<li><p>Create a new column named <kbd class="kbd docutils literal notranslate">Damage</kbd> of type decimal number:</p></li>
+</ol>
+<img alt="../../../../_images/image915.png" class="align-center" src="../../../../_images/image915.png" />
+<ol class="arabic simple" start="10">
+<li><p>To calculate the damaged area of affected buildings we will use the field
+calculator to determine the number of square metres in each building
+feature. Click on <span class="guilabel">Field Calculator</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image923.png" class="align-center" src="../../../../_images/image923.png" />
+<ol class="arabic simple" start="11">
+<li><p>Check the box next to <span class="guilabel">Update existing field</span> and select
+<span class="guilabel">Damage_Area</span> in the drop-down box.</p></li>
+<li><p>Find <span class="guilabel">$area</span> under <span class="guilabel">Geometry</span> in the function list
+and double-click on it, so that it appears in the Expression box at the
+bottom. It should look like this:</p></li>
+</ol>
+<img alt="../../../../_images/image933.png" class="align-center" src="../../../../_images/image933.png" />
+<ol class="arabic simple" start="13">
+<li><p>Click <span class="guilabel">OK</span>. You will see that the column is filled in with the area,
+in square metres, of the buildings.</p></li>
+</ol>
+<img alt="../../../../_images/image943.png" class="align-center" src="../../../../_images/image943.png" />
+<ol class="arabic simple" start="14">
+<li><p>Click the <span class="guilabel">Toggle Editing</span> button and be sure to save your edits.</p></li>
+</ol>
+</section>
+<section id="calculating-damages-using-the-group-stats-plugin">
+<h2>4. Calculating damages using the Group Stats plugin<a class="headerlink" href="#calculating-damages-using-the-group-stats-plugin" title="Link to this heading">¶</a></h2>
+<p>We will be using a QGIS plugin called Group Stats in order to calculate damages
+by each hamlet within Sirahan.
+You must be connected to the internet to install this plugin.</p>
+<ol class="arabic simple" start="15">
+<li><p>Go to <span class="menuselection">Plugins ‣ Manage and Install Plugins</span>.</p></li>
+<li><p>Go to the <span class="guilabel">All</span> tab. Type <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">group</kbd> <kbd class="kbd docutils literal notranslate">stats</kbd></kbd>. When you find the
+plugin, select it and click <span class="guilabel">Install</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image953.png" class="align-center" src="../../../../_images/image953.png" />
+<ol class="arabic simple" start="17">
+<li><p>Once it is installed, you will find Group Stats on <span class="menuselection">Vektor ‣
+Group Stats ‣ Group Stats</span> or your Toolbar. Click it.</p></li>
+</ol>
+<img alt="../../../../_images/image963.png" class="align-center" src="../../../../_images/image963.png" />
+<p>The Group Stats window will appear.</p>
+<ol class="arabic simple" start="18">
+<li><p>To calculate building damages per hamlet, select
+<span class="guilabel">bangunan_terdampak_perdusun</span>
+in the drop-down box under <span class="guilabel">layers</span>.</p></li>
+<li><p>Find <span class="guilabel">Nama_Dusun</span> in the list of fields. Drag and drop it
+to <span class="guilabel">Rows</span>.</p></li>
+<li><p>Find <span class="guilabel">Damage</span> and <span class="guilabel">sum</span> in the list of fields. Drag and
+drop them to <span class="guilabel">Value</span>.</p></li>
+<li><p>Click <span class="guilabel">Calculate</span>. The results should look like this:</p></li>
+</ol>
+<img alt="../../../../_images/image973.png" class="align-center" src="../../../../_images/image973.png" />
+<ol class="arabic simple" start="22">
+<li><p>Go to <span class="menuselection">Data ‣ Save all to CSV files</span> and save it as
+<kbd class="kbd docutils literal notranslate">BNG_Damages</kbd>.</p></li>
+</ol>
+</section>
+<section id="calculating-losses">
+<h2>5. Calculating losses<a class="headerlink" href="#calculating-losses" title="Link to this heading">¶</a></h2>
+<p>We’ve calculated the damaged area and we’ve created a table with damage
+data for various hamlets in Sirahan.
+Now let’s implement our losses formula in the same way.</p>
+<ol class="arabic simple" start="23">
+<li><p>Go back to the attribute table for <span class="guilabel">bangunan_terdampak_perdusun</span>
+and add a new column named <kbd class="kbd docutils literal notranslate">Losses</kbd>.</p></li>
+</ol>
+<img alt="../../../../_images/image983.png" class="align-center" src="../../../../_images/image983.png" />
+<ol class="arabic simple" start="24">
+<li><p>Open the <span class="guilabel">Field Calculator</span>.</p></li>
+<li><p>Check the box next to <span class="guilabel">Update existing field</span> and choose
+<span class="guilabel">Losses</span> in the function list.</p></li>
+<li><p>At the bottom in the Expression box, enter the following formula:</p></li>
+</ol>
+<blockquote>
+<div><p><em>“Damage” * 1800000 * 0.7</em></p>
+</div></blockquote>
+<img alt="../../../../_images/image993.png" class="align-center" src="../../../../_images/image993.png" />
+<p>Your new column is now filled with information calculated from this formula,
+which assesses the value of losses in Rp for each individual building.</p>
+<ol class="arabic simple" start="27">
+<li><p>Save the layer and end the editing session.</p></li>
+</ol>
+</section>
+<section id="calculating-losses-using-the-group-stats-plugin">
+<h2>6. Calculating losses using the Group Stats plugin<a class="headerlink" href="#calculating-losses-using-the-group-stats-plugin" title="Link to this heading">¶</a></h2>
+<p>Now let’s calculate losses per hamlet using the Group Stats again.</p>
+<ol class="arabic simple" start="28">
+<li><p>Open the Group Stats window.</p></li>
+<li><p>Select <span class="guilabel">bangunan_terdampak_perdusun</span>
+in the drop-down box under <span class="guilabel">layers</span>.</p></li>
+<li><p>Click <span class="guilabel">Clear</span> to start a new analysis.</p></li>
+<li><p>Find <span class="guilabel">Nama_Dusun</span> in the list of fields. Drag and drop it
+to <span class="guilabel">Rows</span>.</p></li>
+<li><p>Find <span class="guilabel">Losses</span> and <span class="guilabel">sum</span> in the list of fields. Drag and
+drop them to <span class="guilabel">Value</span>.</p></li>
+<li><p>Click <span class="guilabel">Calculate</span>. The new table shows the losses in each hamlet:</p></li>
+</ol>
+<img alt="../../../../_images/image1003.png" class="align-center" src="../../../../_images/image1003.png" />
+<ol class="arabic simple" start="34">
+<li><p>Go to <span class="menuselection">Data ‣ Save all to CSV files</span> and save it as
+<kbd class="kbd docutils literal notranslate">BNG_Losses</kbd>.</p></li>
+</ol>
+</section>
+<section id="joining-data">
+<h2>7. Joining data<a class="headerlink" href="#joining-data" title="Link to this heading">¶</a></h2>
+<p>Now we will join the tables that we created to our
+<span class="guilabel">Batas_Desa_Sirahan</span> attribute
+table and then use them to add new columns to the file.</p>
+<ol class="arabic simple" start="35">
+<li><p>Add the files <code class="file docutils literal notranslate"><span class="pre">BNG_Damages</span></code> and <code class="file docutils literal notranslate"><span class="pre">BNG_Losses</span></code> into QGIS, using
+<span class="guilabel">Add vector layer</span>. Make sure you set the file type as CSV in
+the dialog so that CSV files appear.</p></li>
+</ol>
+<img alt="../../../../_images/image1015.png" class="align-center" src="../../../../_images/image1015.png" />
+<ol class="arabic simple" start="36">
+<li><p>The new files will appear in your Layers panel but not on your map,
+because they are not geographic data files, but rather tables.</p></li>
+</ol>
+<img alt="../../../../_images/image1023.png" class="align-center" src="../../../../_images/image1023.png" />
+<ol class="arabic simple" start="37">
+<li><p>Now we will perform an operation to join the layer
+<span class="guilabel">Batas_Desa_Sirahan</span> with
+<span class="guilabel">BNG_Damage</span>. Right-click on the <span class="guilabel">Batas_Desa_Sirahan</span>
+layer and open the Properties window.</p></li>
+<li><p>Go to the Joins tab:</p></li>
+</ol>
+<img alt="../../../../_images/image1033.png" class="align-center" src="../../../../_images/image1033.png" />
+<ol class="arabic simple" start="39">
+<li><p>Click the plus sign and fill in the following fields:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Join layer: BNG_Damages</p></li>
+<li><p>Join field: Nama_Dusun</p></li>
+<li><p>Target field: Nama_Dusun</p></li>
+</ul>
+</div></blockquote>
+<img alt="../../../../_images/image1043.png" class="align-center" src="../../../../_images/image1043.png" />
+<ol class="arabic simple" start="40">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+<li><p>Click the plus sign again and fill in the following fields:</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Join layer : BNG_Losses</p></li>
+<li><p>Join field: Nama_Dusun</p></li>
+<li><p>Target field : Nama_Dusun</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="42">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+<li><p>Close the Properties window. Open the attribute table for
+<span class="guilabel">Batas_Desa_Sirahan</span>.
+The BNG_Damages and BNG_Losses columns
+are now attached based on the hamlet.</p></li>
+</ol>
+<img alt="../../../../_images/image1052.png" class="align-center" src="../../../../_images/image1052.png" />
+<ol class="arabic simple" start="44">
+<li><p>Note that the BNG_Damages and BNG_Losses columns are not permanently
+attached, but rather joined together with our file in the computer
+memory. We should save it as a new layer. Close the attribute table.
+Right-click the <span class="guilabel">Batas_Desa_Sirahan</span> layer
+and click <span class="guilabel">Save as</span>. Name the new layer
+<kbd class="kbd docutils literal notranslate">analisis_dala_Sirahan.shp</kbd>.</p></li>
+<li><p>We need to convert the BNG_Damages and BNG_Losses column in our new layer
+to real numbers. Open the attribute table for
+<span class="guilabel">analisis_dala_Sirahan</span>.
+Click the <span class="guilabel">Toggle editing</span> button and open the Field Calculator.</p></li>
+<li><p>This time, we will create a new field.
+Enter as the new field name <kbd class="kbd docutils literal notranslate">Damages</kbd>, with the output field type
+as <span class="guilabel">Decimal number (real)</span>.
+Enter <kbd class="kbd docutils literal notranslate">20</kbd> as the field width and the precision as <kbd class="kbd docutils literal notranslate">10</kbd>. Under
+the function list double-click <span class="guilabel">BNG_Damage</span>.
+The window should look like this:</p></li>
+</ol>
+<img alt="../../../../_images/image1063.png" class="align-center" src="../../../../_images/image1063.png" />
+<ol class="arabic simple" start="47">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+<li><p>Now, we will create another new field for Losses. Enter as the new field
+name <kbd class="kbd docutils literal notranslate">Losses</kbd>, with the output field type
+as <span class="guilabel">Decimal number (real)</span>.
+Enter <kbd class="kbd docutils literal notranslate">20</kbd> as the field width and the precision as <kbd class="kbd docutils literal notranslate">10</kbd>. Under
+the function list double-click <span class="guilabel">BNG_Losses</span>.
+Click <span class="guilabel">OK</span>.</p></li>
+<li><p>Exit editing mode and save your changes.</p></li>
+</ol>
+</section>
+<section id="creating-a-chart">
+<h2>8. Creating a chart<a class="headerlink" href="#creating-a-chart" title="Link to this heading">¶</a></h2>
+<p>We will conclude by representing these damage and loss values as a chart in QGIS.</p>
+<ol class="arabic simple" start="50">
+<li><p>Open the the Properties window for <span class="guilabel">analisis_dala_Sirahan</span>. Go
+to the <span class="guilabel">Diagram</span> tab.</p></li>
+<li><p>Check the box next to <span class="guilabel">Display diagrams</span></p></li>
+<li><p>Make sure <span class="guilabel">Pie chart</span> is selected in the drop-down box.</p></li>
+<li><p>Under <span class="guilabel">Available attributes</span>, select <span class="guilabel">Damages</span>
+and click the plus(+) button.</p></li>
+<li><p>You can change the colour by double-clicking the colour under
+<span class="guilabel">Assigned attributes</span>. The settings should look like this:</p></li>
+</ol>
+<img alt="../../../../_images/image1072.png" class="align-center" src="../../../../_images/image1072.png" />
+<ol class="arabic simple" start="55">
+<li><p>Go to the <span class="guilabel">Size</span> tab.</p></li>
+<li><p>Disable the fixed value, and then click <span class="guilabel">Find Maximum Value</span>.
+Change the scale value to <span class="guilabel">Area</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image1083.png" class="align-center" src="../../../../_images/image1083.png" />
+<ol class="arabic simple" start="57">
+<li><p>You may change the value next to <span class="guilabel">Size</span> also if you feel the
+diagram is too big.</p></li>
+</ol>
+<p>The resulting map will look like this:</p>
+<img alt="../../../../_images/image1093.png" class="align-center" src="../../../../_images/image1093.png" />
+<p>The size of each bubble represents the loss values in each hamlet. The bigger
+the size, the heavier the losses. Creating a map with this sort of chart can
+be an effective way to communicate the impact of a disaster. Now you can lay
+out your map, and then create another map showing Losses.</p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="../../../test_data.html"
+                   title="Training Data"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="404-planning-evacuation-route.html"
+                   title="Module 4: Planning an Evacuation Route Based on Hazard Information"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

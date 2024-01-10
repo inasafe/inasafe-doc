@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Chapter 6: Working with Raster Data &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Chapter 7: Using Map Composer" href="Chapter-07-Using_Map_Composer.html" />
+    <link rel="prev" title="Chapter 5: Working with Vector Data" href="Chapter-05-Working_with_Vector_Data.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/qgis/Chapter-06-Working_with_Raster_Data.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/qgis/Chapter-06-Working_with_Raster_Data.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    QGIS and InaSAFE for Disaster Management</a>
+                </li>
+                
+
+                <li><a href="#">Chapter 6: Working with Raster Data</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-07-Using_Map_Composer.html"
+                   title="Chapter 7: Using Map Composer"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-05-Working_with_Vector_Data.html"
+                   title="Chapter 5: Working with Vector Data"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">QGIS and InaSAFE for Disaster Management</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Chapter-00-Preface.html">Preface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-01-GIS_for_Disaster_Management.html">Chapter 1: GIS for Disaster Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-02-QGIS_and_InaSAFE_for_Disaster_Management.html">Chapter 2: QGIS and InaSAFE in Disaster Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-03-Basic_QGIS.html">Chapter 3: The Basics of QGIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-04-Map_Projection_Basic.html">Chapter 4: Map Projection Basics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-05-Working_with_Vector_Data.html">Chapter 5: Working with Vector Data</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 6: Working with Raster Data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#loading-raster-data">6.1 Loading Raster Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#symbolise-raster-data">6.2 Symbolise Raster Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#terrain-analysis">6.3 Terrain Analysis</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#calculating-a-hillshade">6.3.1 Calculating a hillshade</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#using-a-hillshade-as-an-overlay">6.3.2 Using a hillshade as an overlay</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-07-Using_Map_Composer.html">Chapter 7: Using Map Composer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-08-Using_InaSAFE.html">Chapter 8: Using InaSAFE</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/1_0001.png" src="../../_images/1_0001.png" />
+<section id="chapter-6-working-with-raster-data">
+<span id="ch6-working-with-raster-data"></span><h1>Chapter 6: Working with Raster Data<a class="headerlink" href="#chapter-6-working-with-raster-data" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Load Raster Data</p></li>
+<li><p>Change Raster Symbology</p></li>
+<li><p>Terrain Analysis</p></li>
+</ul>
+<p>Thus far we’ve worked mostly with vector data, which consists of features, and these features are themselves made up of points and lines. In this chapter we will learn about raster data.
+Remember when you were editing OpenStreetMap in JOSM? The points, lines and shapes that you drew were vector data. But when you loaded Bing aerial imagery in the background, that was raster data. So what’s the difference?</p>
+<p>Raster data essentially comes in the form of an image. It is made up of pixels, like a photograph, and a raster image will always be some number of pixels wide and some number of pixels high.
+If you zoom in far enough on a raster image, it will start to become blurry, just as if you opened a photo on your computer and zoomed in very close. As we’ll see in this chapter, however, a raster image can mean more than just a photograph from the sky. Follow along and we’ll learn all about rasters!</p>
+<section id="loading-raster-data">
+<h2>6.1 Loading Raster Data<a class="headerlink" href="#loading-raster-data" title="Link to this heading">¶</a></h2>
+<p>Not all raster data consist of aerial photographs. There are many other forms of raster data, and in many of those cases, it’s essential to symbolise the data so that it becomes properly visible and useful.
+In this section we’ll add a new kind of raster and see how to change its symbology.</p>
+<ol class="arabic simple">
+<li><p>Click on the <span class="guilabel">Load Raster Layer</span> button:</p></li>
+</ol>
+<img alt="../../_images/6_0011.png" class="align-center" src="../../_images/6_0011.png" />
+<ol class="arabic simple" start="2">
+<li><p>The Load Raster Layer dialog will open. Find the file named <code class="file docutils literal notranslate"><span class="pre">popmap10_all.tif</span></code> in <code class="file docutils literal notranslate"><span class="pre">QGSI</span> <span class="pre">for</span> <span class="pre">Disaster</span> <span class="pre">Management/Working</span> <span class="pre">with</span> <span class="pre">Raster</span></code> folder. Open it.</p></li>
+<li><p>When it appears in the Layers Panel, right-click on it and click <span class="guilabel">Rename</span>. Give it the name <em>Indonesian Population</em>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>High resolution, contemporary data on human population distributions are a prerequisite for the accurate measurement of the impacts of population growth, for monitoring changes and for planning Interventions. The AsiaPop project was initiated in July 2011 with an aim of producing detailed and Freely-available population distribution maps for the whole of Asia.*</p>
+</div>
+<p>When it loads, you’ll notice that the new raster image appears as whole Indonesia’s Islands in grey colour.</p>
+<img alt="../../_images/6_0021.png" class="align-center" src="../../_images/6_0021.png" />
+<p>The layer appears grey (and doesn’t give us any information) because its symbology hasn’t been customised yet.
+In the colour aerial photograph we loaded via <em>OpenLayer</em> Plugin, everything is already deﬁned. But if you
+load a raster image and it’s just a grey rectangle, then you know there’s no symbology for it yet. It still needs to be deﬁned. That’s what we will do next.</p>
+</section>
+<section id="symbolise-raster-data">
+<h2>6.2 Symbolise Raster Data<a class="headerlink" href="#symbolise-raster-data" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Open the <span class="guilabel">Layer Properties dialog</span> for the Population layer, which is now named <em>Indonesian Population</em>.</p></li>
+<li><p>Switch to the <span class="guilabel">Style</span> tab. This shows the current symbology settings, and as we’ve seen, they don’t give us much information on the layer. Let’s make sure the layer has data in it.</p></li>
+<li><p>Change the <span class="guilabel">Render type</span> to <span class="guilabel">Singleband pseudocolor</span>. Set colour to <span class="guilabel">YlOrBr</span> and change mode to <span class="guilabel">Equal Interval</span> with <span class="guilabel">6 Classes</span>. Click <span class="guilabel">Classify</span> to show 6 classes. As shown below:</p></li>
+</ol>
+<img alt="../../_images/6_0031.png" class="align-center" src="../../_images/6_0031.png" />
+<ol class="arabic simple" start="4">
+<li><p>Click <em>OK</em>. The raster should look like this:</p></li>
+</ol>
+<img alt="../../_images/6_0041.png" class="align-center" src="../../_images/6_0041.png" />
+<p>Good! This tell us that there is data in this layer. And by looking at it we can get an idea in Java Island, population number higher than other island in Indonesia.</p>
+<p>Let’s stop for a minute and understand what is happening here. Remember that an image is made up of pixels, individual cells that contain a value, which is usually a colour value. For example, if you zoom in very closely on a photograph you can see those individual pixels, like this:</p>
+<img alt="../../_images/6_0051.png" class="align-center" src="../../_images/6_0051.png" />
+<p>The value of each cell is saved in the ﬁle. Imagine the ﬁle being saved something like this, where each square is a pixel:</p>
+<img alt="../../_images/6_0061.png" class="align-center" src="../../_images/6_0061.png" />
+<p>Of course the computer doesn’t understand words for colours. In fact the value of each cell would be a number, which the computer then associates with a certain colour. For our aerial image, this is already deﬁned.
+Since it is a normal image, it knows to associate the numbers for each pixel in the ﬁle with the common colours that we see every day. But this new raster image is different, because the values of each pixel don’t represent colours, but rather altitude, and QGIS doesn’t know automatically how to display it. Hence it shows every pixel in the image as grey, even if the values in each pixel are different.
+When we change the symbology to Psuedocolor, we can see all the different pixel values shown with various colours.</p>
+<p>It would be nice to represent our Indonesian Population layer as a greyscale spectrum, rather than a variety of bright colours. Next we will tell QGIS to symbolise the layer with colours in a spectrum, beginning at the lowest pixel value in the ﬁle and ending at the highest pixel value. In other words, if the pixel values looked like this:</p>
+<img alt="../../_images/6_0071.png" class="align-center" src="../../_images/6_0071.png" />
+<p>QGIS would create a spectrum equating numbers to colours like this:</p>
+<img alt="../../_images/6_0081.png" class="align-center" src="../../_images/6_0081.png" />
+<p>And render the image like this:</p>
+<img alt="../../_images/6_0091.png" class="align-center" src="../../_images/6_0091.png" />
+<p>To do that, let’s start to symbolise Indonesia Population:</p>
+<ol class="arabic simple">
+<li><p>Open the <span class="guilabel">Layer Properties</span> Again.</p></li>
+<li><p>Switch the render type back to <span class="guilabel">Singleband gray</span> (1).</p></li>
+<li><p>Check the box next to <span class="guilabel">Min / max</span> (2).</p></li>
+<li><p>Next to <span class="guilabel">Contrast enhancement</span> select <span class="guilabel">Stretch to MinMax</span> (3).</p></li>
+<li><p>Under <span class="guilabel">Load min / max values</span>, select <span class="guilabel">Estimate (faster)</span>.</p></li>
+<li><p>Click the <span class="guilabel">Load</span> button:</p></li>
+</ol>
+<img alt="../../_images/6_0101.png" class="align-center" src="../../_images/6_0101.png" />
+<p>Notice how the custom Min and Max values have changed.
+The lowest pixel value in this image ﬁle is 0 and the highest is about 3024.93. But what are the minimum and maximum values that should be used? The current values are those that just gave us a grey rectangle. Instead, we should
+be using the minimum and maximum pixel values that are actually in the image.
+You can determine those values easily by loading the minimum and maximum values of the raster.</p>
+<ol class="arabic simple">
+<li><p>Click <em>OK.</em> You should see the values of the raster properly displayed, with the darker colour representing small number of population in each pixel and the lighter one, high number of population in each pixel:</p></li>
+</ol>
+<img alt="../../_images/6_0111.png" class="align-center" src="../../_images/6_0111.png" />
+<p>We’ve learned to do this the tricky way, but can we do it faster? Of course! Now that you understand what needs to be done, you’ll be glad to know that there’s a tool for doing all of this more easily.</p>
+<ol class="arabic simple">
+<li><p>Remove <span class="guilabel">Indonesian Population</span> from the Layers panel, by right-clicking it and clicking <span class="guilabel">Remove</span></p></li>
+<li><p>Load the raster image again, renaming it to <em>Indonesian Population</em> as before. It will be a grey rectangle again.</p></li>
+<li><p>Enable the tool you’ll need by enabling <span class="guilabel">View → Toolbars → Raster</span> These icons will appear in the interface:</p></li>
+</ol>
+<img alt="../../_images/6_0121.png" class="align-center" src="../../_images/6_0121.png" />
+<p>The button on the right will stretch the minimum and maximum values to give you the best contrast in the local area that you’re zoomed into. It’s useful for large datasets. The button on the left will stretch the minimum and maximum values to constant values across the whole image.</p>
+<ol class="arabic simple" start="4">
+<li><p>Click the right button labelled <span class="guilabel">(Stretch Histogram to Full Dataset)</span>. You’ll see the data is now correctly represented as before!</p></li>
+</ol>
+</section>
+<section id="terrain-analysis">
+<h2>6.3 Terrain Analysis<a class="headerlink" href="#terrain-analysis" title="Link to this heading">¶</a></h2>
+<p>Certain types of rasters allow you to gain more insight into the terrain that they represent. Digital Elevation Models (DEMs) are particularly useful in this regard. In this section we’ll do a little bit more with our DEM raster, in order to try to extract more information from it.</p>
+<section id="calculating-a-hillshade">
+<h3>6.3.1 Calculating a hillshade<a class="headerlink" href="#calculating-a-hillshade" title="Link to this heading">¶</a></h3>
+<p>The DEM you have on your map right now does show you the elevation of the terrain, but it can sometimes seem a little abstract. It contains all the 3D elevation information about the terrain that you need, but it doesn’t really look 3-Dimensional.
+To get a better look at the terrain, it is possible to calculate a hillshade, which is a raster that maps the terrain using light and shadow to create a 3D-looking image.</p>
+<p>To work with DEMs, we will use the all-in-one DEM (Terrain models) analysis tool.</p>
+<ol class="arabic simple">
+<li><p>Open the file named <code class="file docutils literal notranslate"><span class="pre">SRTM_Merapi.tif</span></code>, which is located in <code class="file docutils literal notranslate"><span class="pre">QGIS</span> <span class="pre">for</span> <span class="pre">Disaster</span> <span class="pre">Management/Working</span> <span class="pre">with</span> <span class="pre">Raster</span></code> folder.</p></li>
+<li><p>When it appears in the <span class="guilabel">Layer</span> panel, rename it to <strong>DEM</strong>.</p></li>
+<li><p>Click <span class="guilabel">Stretch Histogram to Full Dataset</span> button.</p></li>
+<li><p>Go to <span class="guilabel">Raster → Analysis → DEM (Terrain Models)…</span></p></li>
+</ol>
+<img alt="../../_images/6_0131.png" class="align-center" src="../../_images/6_0131.png" />
+<ol class="arabic simple" start="5">
+<li><p>In the dialog that appears, ensure that the input file is the <strong>DEM</strong>
+layer.</p></li>
+<li><p>Set the output file to <span class="guilabel">hillshade.tif</span> in the directory <span class="guilabel">Merapi/SRTM/</span>.</p></li>
+</ol>
+<img alt="../../_images/6_014.png" class="align-center" src="../../_images/6_014.png" />
+<ol class="arabic simple" start="7">
+<li><p>Check the box next to <span class="guilabel">Load into canvas</span> when finished.</p></li>
+</ol>
+<img alt="../../_images/6_015.png" class="align-center" src="../../_images/6_015.png" />
+<ol class="arabic simple" start="8">
+<li><p>Leave all the other option unchanged.</p></li>
+<li><p>Click <span class="guilabel">OK</span> to generate the hillshade.</p></li>
+<li><p>When the processing is complete. Click <span class="guilabel">OK</span> on the notification.</p></li>
+<li><p>Click <span class="guilabel">Close</span> in the dialog.</p></li>
+</ol>
+<p>There should now be a new layer called <em>hillshade</em> that looks like this:</p>
+<img alt="../../_images/6_016.png" class="align-center" src="../../_images/6_016.png" />
+<p>This looks more Three-Dimensional, but can we improve on this? When you open <span class="guilabel">DEM (Terrain Models)</span> tools, you will notice in the Mode Options for hillshade there’re <em>Azimuth of the light</em> and <em>Altitude of the light</em>.</p>
+<p><span class="guilabel">Azimuth of the light</span> defines in which direction the sun is, whereas 0° represent north, east is 90°, south is 180° and west is 270°.
+While <span class="guilabel">Altitude of the light</span> is the angle between the horizon and the centre of the sun’s disc.</p>
+<p>On its own, the hillshade looks like a plaster cast. It will look better if we can combine it with our more colourful DEM. We can do this by making the hillshade layer an overlay.</p>
+</section>
+<section id="using-a-hillshade-as-an-overlay">
+<h3>6.3.2 Using a hillshade as an overlay<a class="headerlink" href="#using-a-hillshade-as-an-overlay" title="Link to this heading">¶</a></h3>
+<p>Hillshade can provide very useful information about the sunlight at a given time of day. But it can also be used for aesthetic purposes, to make the map look better. The key to this is setting the hillshade to being mostly transparent.</p>
+<ol class="arabic simple">
+<li><p>Change the symbology of the original <span class="guilabel">DEM</span> layer to use the <span class="guilabel">Pseudocolor</span> scheme.</p></li>
+<li><p>Click and drag the <span class="guilabel">DEM</span> layer beneath the <span class="guilabel">hillshade</span> layer in the Layers panel.</p></li>
+</ol>
+<img alt="../../_images/6_017.png" class="align-center" src="../../_images/6_017.png" />
+<ol class="arabic simple" start="3">
+<li><p>Ensure that <span class="guilabel">Control rendering order</span> is checked.</p></li>
+</ol>
+<img alt="../../_images/6_018.png" class="align-center" src="../../_images/6_018.png" />
+<ol class="arabic simple" start="4">
+<li><p>Now we will make the hillshade layer somewhat transparent. Open its <span class="guilabel">Layer Properties</span> and go to the <span class="guilabel">Transparency</span> tab.</p></li>
+<li><p>Set the <span class="guilabel">Global transparency</span> to 50%:</p></li>
+</ol>
+<img alt="../../_images/6_019.png" class="align-center" src="../../_images/6_019.png" />
+<ol class="arabic simple" start="6">
+<li><p>Click <span class="guilabel">OK</span> in the Layer Properties dialog. You should get a result similar to this:</p></li>
+</ol>
+<img alt="../../_images/6_020.png" class="align-center" src="../../_images/6_020.png" />
+<p>Using a hillshade in this way, it’s possible to enhance the topography of the landscape. If the effect doesn’t seem strong enough to you, you can change the transparency of the hillshade layer; but of course, the brighter the hillshade becomes, the dimmer the colours behind it will be. You will need to ﬁnd a balance that works for you.</p>
+<p><a class="reference internal" href="Chapter-07-Using_Map_Composer.html#ch7-using-map-composer"><span class="std std-ref">Go to next chapter –&gt;</span></a></p>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-07-Using_Map_Composer.html"
+                   title="Chapter 7: Using Map Composer"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-05-Working_with_Vector_Data.html"
+                   title="Chapter 5: Working with Vector Data"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 10: Vector Analysis for Problem Solving &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 11: Using Map Composer" href="211-using-map-composer.html" />
+    <link rel="prev" title="Module 9: Creating Vector Layers" href="209-create-a-new-vector-layer.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/210-vector-analysis-for-problem-solving.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 10: Vector Analysis for Problem Solving</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="211-using-map-composer.html"
+                   title="Module 11: Using Map Composer"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="209-create-a-new-vector-layer.html"
+                   title="Module 9: Creating Vector Layers"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="200-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="201-gis-for-developing-contingency-plan.html">Module 1: GIS for Developing Contingency Plan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="202-qgis-and-inasafe-in-contingency-plan.html">Module 2: QGIS and InaSAFE in Contingency Planning</a></li>
+<li class="toctree-l5"><a class="reference internal" href="203-the-basics-of-qgis.html">Module 3: The Basics of QGIS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="204-qgis-plugin.html">Module 4: QGIS Plugins</a></li>
+<li class="toctree-l5"><a class="reference internal" href="205-map-projection-basics.html">Module 5: Map Projection Basics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="206-working-with-vector-data.html">Module 6: Working with Vector Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="207-labels-and-classification.html">Module 7: Labels and Classification</a></li>
+<li class="toctree-l5"><a class="reference internal" href="208-working-with-raster-data.html">Module 8: Working with Raster Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="209-create-a-new-vector-layer.html">Module 9: Creating Vector Layers</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 10: Vector Analysis for Problem Solving</a></li>
+<li class="toctree-l5"><a class="reference internal" href="211-using-map-composer.html">Module 11: Using Map Composer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="212-understanding-inasafe.html">Module 12: Understanding InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="213-getting-support.html">Module 13: Getting Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image710.png" src="../../../../_images/image710.png" />
+<section id="module-10-vector-analysis-for-problem-solving">
+<span id="vector-analysis-for-problem-solving"></span><h1>Module 10: Vector Analysis for Problem Solving<a class="headerlink" href="#module-10-vector-analysis-for-problem-solving" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand the GIS process</p></li>
+<li><p>Identify addressable problems</p></li>
+<li><p>Understand data needs</p></li>
+<li><p>Start a QGIS project</p></li>
+<li><p>Analyse problems</p></li>
+<li><p>Identify hazard zones</p></li>
+<li><p>Look for important roads</p></li>
+<li><p>Look for medical facilities</p></li>
+<li><p>Buffer roads and medical facilities</p></li>
+<li><p>Analyse overlapped areas</p></li>
+</ul>
+<p>The power of GIS is its ability to help us analyse data. Vector data can be
+analysed to reveal how different features interact with each other. In this
+module, we’ll work through the GIS process, attempting to solve a problem, and
+as we proceed, we will learn about various analysis tools that QGIS provides.</p>
+<section id="the-gis-process">
+<h2>1. The GIS process<a class="headerlink" href="#the-gis-process" title="Link to this heading">¶</a></h2>
+<p>Before we start, it will be useful to give a brief overview of a process that
+can be used to solve any GIS problem. The steps are simple:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>State the problem</p></li>
+<li><p>Get the data</p></li>
+<li><p>Analyse the problem</p></li>
+<li><p>Present the results</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="problem">
+<h2>2. Problem<a class="headerlink" href="#problem" title="Link to this heading">¶</a></h2>
+<p>Let’s start off by deciding on a problem to solve. Imagine that you’re
+a disaster manager, and you need to provide the best locations to place refugees
+(IDPs) in villages surrounding Mount Merapi when it erupts. You’ve come up with
+the following criteria for these locations:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>The area should be a dry field or farm in the districts Ngemplak, Turi or
+Pakem.</p></li>
+<li><p>The area must be outside of Merapi Eruption Disaster Prone Region III.</p></li>
+<li><p>Access to the site should be easy, so it will not be more than 300
+metres from a main road.</p></li>
+<li><p>The site should be close to health facilities.</p></li>
+<li><p>The land area should be between 50000-150000 m².</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="data">
+<h2>3. Data<a class="headerlink" href="#data" title="Link to this heading">¶</a></h2>
+<p>To answer these questions, we’re going to need the following data:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Landuse in Sleman regency</p></li>
+<li><p>Streets in Sleman</p></li>
+<li><p>Location of health facilities</p></li>
+<li><p>KRB Merapi (Merapi Eruption Disaster Prone Region - this is the
+same data that we learned how to georeference in the previous module)</p></li>
+</ol>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For this exercise the data has been provided already, but in a real
+scenario you may need to find providers for the datasets in question. In
+Indonesia, the National Land Agency and BNPB Bappeda are good sources for the
+types of data you will need, and OpenStreetMap can be used as a source for
+roads and infrastructure.</p>
+</div>
+</section>
+<section id="start-a-project">
+<h2>4. Start a project<a class="headerlink" href="#start-a-project" title="Link to this heading">¶</a></h2>
+<p>Now that we know what we want to do, let’s start doing it!</p>
+<ol class="arabic simple">
+<li><p>Start a new QGIS project.</p></li>
+</ol>
+<img alt="../../../../_images/image206.png" class="align-center" src="../../../../_images/image206.png" />
+<ol class="arabic simple" start="2">
+<li><p>Start adding the layers we will use. In the <code class="file docutils literal notranslate"><span class="pre">Sleman/Merapi/</span></code> folder,
+add the layers <code class="file docutils literal notranslate"><span class="pre">jalan_sleman_49S</span></code>, <code class="file docutils literal notranslate"><span class="pre">tempat_penting_Sleman_49S</span></code>,
+<code class="file docutils literal notranslate"><span class="pre">KRB3_49S</span></code> and <code class="file docutils literal notranslate"><span class="pre">vegetasi_49S</span></code>. Your Layers panel should look
+like this:</p></li>
+</ol>
+<img alt="../../../../_images/image207.png" class="align-center" src="../../../../_images/image207.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most of the layers are pretty self-explanatory, but what are KRB3,
+KRB2, and KRB1? These layers show areas of impact when Merapi erupts. KRB3 is
+the area of worst impact, KRB2 is medium, and KRB1 has little impact. In
+this scenario we want to find locations that are not within KRB3.</p>
+</div>
+<p>The data we are working with now is similar to that from previous modules, but
+now it is in a Projected Coordinate System. The previous data was saved in
+WGS84 - this meant that the coordinates of our features were stored in degrees,
+which aren’t very good for measuring size or distance. By using a projected
+system our coordinates are in metres, which is important for analysis, because
+we can easily measure distances between and around features.</p>
+<ol class="arabic simple" start="3">
+<li><p>Rename the layers by right-clicking on them and selecting <span class="guilabel">Rename</span>.</p></li>
+<li><p>Give them the new, simpler names <span class="guilabel">jalan</span>, <span class="guilabel">lokasi_penting</span>,
+<span class="guilabel">KRB III</span> and <span class="guilabel">vegetasi</span>.</p></li>
+<li><p>Save your project as <kbd class="kbd docutils literal notranslate">merapi_analisis.qgs</kbd>.</p></li>
+<li><p>In your operating system’s file manager, create a
+new folder under <code class="file docutils literal notranslate"><span class="pre">qgis/Sleman/Merapi/</span></code> and call it
+<code class="file docutils literal notranslate"><span class="pre">evakuasi_bencana</span></code>.</p></li>
+</ol>
+<p>This is where you’ll save the datasets that we will create during our anaysis.</p>
+<p>Now that we’ve got the data, let’s analyse the problem!</p>
+</section>
+<section id="analysing-the-problem-farms-and-dry-fields">
+<h2>5. Analysing the problem: farms and dry fields<a class="headerlink" href="#analysing-the-problem-farms-and-dry-fields" title="Link to this heading">¶</a></h2>
+<p>The first criteria we’re facing is that the land must be a farm or dry field,
+and it must be in one of three areas. So let’s tell QGIS to only show us the
+farms and dry fields that are, in fact, in these sub-districts!</p>
+<ol class="arabic simple" start="7">
+<li><p>Right-click on the <span class="guilabel">vegetasi</span> layer in the Layers panel.</p></li>
+<li><p>Click <span class="guilabel">Filter…</span> This opens the Query Builder dialog.</p></li>
+</ol>
+<img alt="../../../../_images/image208.png" class="align-center" src="../../../../_images/image208.png" />
+<ol class="arabic simple" start="9">
+<li><p>Scroll down in the Fields list on the left of this dialog until
+you see the field <span class="guilabel">kec</span>. Click on it once.</p></li>
+<li><p>Click the <span class="guilabel">All</span> button underneath the Values list:</p></li>
+</ol>
+<img alt="../../../../_images/image209.png" class="align-center" src="../../../../_images/image209.png" />
+<p>Next we are going to build a query. A query is a statement that allows us to
+show only the data that we want from a layer. In this case, we want to instruct
+QGIS to only show us farms and dry fields, that have a sub-district value equal to
+Ngemplak, Turi, or Pakem.</p>
+<ol class="arabic simple" start="11">
+<li><p>Double-click <span class="guilabel">kec</span> in the Fields list.</p></li>
+<li><p>Click the <span class="guilabel">=</span> button (under Operators).</p></li>
+</ol>
+<img alt="../../../../_images/image210.png" class="align-center" src="../../../../_images/image210.png" />
+<ol class="arabic simple" start="13">
+<li><p>Double-click the value <span class="guilabel">Ngemplak</span> in the Values list.</p></li>
+<li><p>Click <span class="guilabel">OR</span>.</p></li>
+<li><p>Repeat these steps twice more, using the values <span class="guilabel">Turi</span> and
+<span class="guilabel">Pakem</span> instead of <span class="guilabel">Ngemplak</span>. The query should
+look like this:</p></li>
+</ol>
+<img alt="../../../../_images/image2111.png" class="align-center" src="../../../../_images/image2111.png" />
+<ol class="arabic simple" start="16">
+<li><p>Click <span class="guilabel">AND</span>.</p></li>
+<li><p>Now highlight <span class="guilabel">guna_lahan</span> in the Fields list,
+and click the <span class="guilabel">All</span> button to load the values.</p></li>
+<li><p>Double-click <span class="guilabel">guna_lahan</span>. Then click the <span class="guilabel">=</span> button.
+Then double-click the value <span class="guilabel">KEBUN</span>.</p></li>
+<li><p>Click <span class="guilabel">OR</span>.</p></li>
+<li><p>Repeat the previous step but instead of <span class="guilabel">KEBUN</span> use
+<span class="guilabel">TEGALAN</span>. Your query should look like this:</p></li>
+</ol>
+<img alt="../../../../_images/image212.png" class="align-center" src="../../../../_images/image212.png" />
+<p>The idea is that the query will filter the data layer so that it will only show
+us the features we want - that is, farms and dry fields in Pakem, Turis and
+Ngemplak.</p>
+<ol class="arabic simple" start="21">
+<li><p>We need to add one more thing to our query: parentheses.
+Without these, our query won’t work quite right.
+Add two pairs of parentheses on each side of the word AND, like so:</p></li>
+</ol>
+<img alt="../../../../_images/image213.png" class="align-center" src="../../../../_images/image213.png" />
+<ol class="arabic simple" start="22">
+<li><p>Click <span class="guilabel">OK</span>. The <span class="guilabel">vegetasi</span> layer has far fewer features
+now.</p></li>
+</ol>
+<img alt="../../../../_images/image214.png" class="align-center" src="../../../../_images/image214.png" />
+<p>Well done!  We’ve applied our first criteria to begin solving the problem!</p>
+</section>
+<section id="danger-zone">
+<h2>6. Danger zone<a class="headerlink" href="#danger-zone" title="Link to this heading">¶</a></h2>
+<p>Our next criteria is that our chosen location should be outside of the danger
+zone, which is defined by the layer <span class="guilabel">KRB III</span>. For this we can use
+the Spatial Query tool.</p>
+<ol class="arabic simple" start="23">
+<li><p>Go to <span class="menuselection">Vector ‣ Spatial Query ‣ Spatial Query</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image215.png" class="align-center" src="../../../../_images/image215.png" />
+<ol class="arabic simple" start="24">
+<li><p>Under <span class="guilabel">Select source features from</span> choose <span class="guilabel">vegetasi</span>.
+In the next box choose <span class="guilabel">Is disjoint</span>. The third box should be set
+to <span class="guilabel">KRB III</span>. The Spatial Query window should look like this:</p></li>
+</ol>
+<img alt="../../../../_images/image216.png" class="align-center" src="../../../../_images/image216.png" />
+<ol class="arabic simple" start="25">
+<li><p>Click <span class="guilabel">Apply</span>. Then click <span class="guilabel">Close</span>
+once the selection has been applied.</p></li>
+</ol>
+<img alt="../../../../_images/image217.png" class="align-center" src="../../../../_images/image217.png" />
+<p>Now the vegetasi layer looks like the image below. Notice that all the features
+have been selected that fall outside the KRB III area.</p>
+<img alt="../../../../_images/image218.png" class="align-center" src="../../../../_images/image218.png" />
+<p>The next steps of our analysis will be easier if we save this selection as a
+separate layer.</p>
+<ol class="arabic simple" start="26">
+<li><p>Right-click on the <span class="guilabel">vegetasi</span> layer and
+click <span class="guilabel">Save As…</span></p></li>
+</ol>
+<img alt="../../../../_images/image219.png" class="align-center" src="../../../../_images/image219.png" />
+<ol class="arabic simple" start="27">
+<li><p>Next to the <span class="guilabel">Save as</span> field in the dialog that appears,
+click the <span class="guilabel">Browse</span> button.</p></li>
+<li><p>Save the layer under <code class="file docutils literal notranslate"><span class="pre">evakuasi_bencana/</span></code> as <kbd class="kbd docutils literal notranslate">kebun_tegalan.shp</kbd>.</p></li>
+<li><p>Check the box labelled <span class="guilabel">Save only selected features</span> and
+<span class="guilabel">Add saved file to map</span> in the <span class="guilabel">Save vector layer as…</span>
+dialog.</p></li>
+</ol>
+<img alt="../../../../_images/image220.png" class="align-center" src="../../../../_images/image220.png" />
+<ol class="arabic simple" start="30">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+<li><p>Rename the layers by right-clicking on new vegetasi layer and selecting
+<span class="guilabel">Rename</span>. Rename with <kbd class="kbd docutils literal notranslate">kebun_tegalan</kbd>.</p></li>
+<li><p><span class="guilabel">Right-click</span> on the old vegetation layer and remove it.
+You should have these layers remaining:</p></li>
+</ol>
+<img alt="../../../../_images/image2211.png" class="align-center" src="../../../../_images/image2211.png" />
+</section>
+<section id="finding-important-roads">
+<h2>7. Finding important roads<a class="headerlink" href="#finding-important-roads" title="Link to this heading">¶</a></h2>
+<p>We have a problem with our roads layer, similar to that of our vegetation layer.
+Our roads layer has too many roads! We only want to use main roads for our
+analysis, so that we can meet the criteria that our location is within 300
+metres of a major road. Once again, we will use the Query Builder.</p>
+<ol class="arabic simple" start="33">
+<li><p>Right-click on the <span class="guilabel">jalan</span> layer and click <span class="guilabel">Filter…</span></p></li>
+<li><p>Build a query for the roads layer, like you did above for the vegetation layer
+You want only primary and secondary roads,
+so you need to build this query:</p></li>
+</ol>
+<p><em>“TYPE” = ‘primary’ OR “TYPE” = ‘secondary’</em></p>
+<ol class="arabic simple" start="35">
+<li><p>You can use the approach that we learned above, or you can simply
+type this command into the query box. But be careful that you type it
+correctly!</p></li>
+</ol>
+<img alt="../../../../_images/image222.png" class="align-center" src="../../../../_images/image222.png" />
+</section>
+<section id="looking-for-health-facilities">
+<h2>8. Looking for health facilities<a class="headerlink" href="#looking-for-health-facilities" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="36">
+<li><p>Using the same approach, build a query for the <span class="guilabel">lokasi_penting</span>
+layer as shown:</p></li>
+</ol>
+<p><em>“Fungsi” = ‘Kesehatan’</em></p>
+</section>
+<section id="buffering-roads">
+<h2>9. Buffering Roads<a class="headerlink" href="#buffering-roads" title="Link to this heading">¶</a></h2>
+<p>Okay, we’ve refined our data a bit so that it shows us the features we are
+interested in analysing. Remember that according to our criteria our land area
+should be within 300 metres of a main road and close to a health facility. QGIS
+allows us to calculate distances from any vector object, and we will use this
+functionality to help us reach a solution.</p>
+<ol class="arabic simple" start="37">
+<li><p>Make sure that only the <span class="guilabel">jalan</span> and <span class="guilabel">kebun_tegalan</span>
+layers are visible, to simplify the map while you’re working.</p></li>
+</ol>
+<img alt="../../../../_images/image223.png" class="align-center" src="../../../../_images/image223.png" />
+<ol class="arabic simple" start="38">
+<li><p>Go to <span class="menuselection">Vector ‣ Geoprocessing Tools ‣ Buffer(s)</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image224.png" class="align-center" src="../../../../_images/image224.png" />
+<ol class="arabic simple" start="39">
+<li><p>In the first drop-down box select <span class="guilabel">jalan</span>.</p></li>
+<li><p>Enter <kbd class="kbd docutils literal notranslate">300</kbd> next to <span class="guilabel">Buffer distance</span>.</p></li>
+<li><p>Check the box next to <span class="guilabel">Dissolve buffer results.</span></p></li>
+<li><p>Click <span class="guilabel">Browse</span> and type <kbd class="kbd docutils literal notranslate">buffer_jalan_300m.shp</kbd> for the
+filename.</p></li>
+</ol>
+<img alt="../../../../_images/image225.png" class="align-center" src="../../../../_images/image225.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We input the buffer distance in metres. Good thing we used
+projected data!</p>
+</div>
+<ol class="arabic simple" start="43">
+<li><p>Click <span class="guilabel">OK</span>. QGIS will create a buffer around the streets that
+extends 300 metres.</p></li>
+<li><p>When the process finish and buffer_jalan_300m.shp appear in the Layers, you
+can click <span class="guilabel">Close</span> the Buffer dialog.</p></li>
+</ol>
+<img alt="../../../../_images/image226.png" class="align-center" src="../../../../_images/image226.png" />
+<ol class="arabic simple" start="45">
+<li><p>Close the Buffer dialog and see your new layer:</p></li>
+</ol>
+<img alt="../../../../_images/image227.png" class="align-center" src="../../../../_images/image227.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Those big fat lines are actually areas that are within
+300 metres of primary and secondary roads.</p>
+</div>
+</section>
+<section id="buffering-health-facilities">
+<h2>10. Buffering health facilities<a class="headerlink" href="#buffering-health-facilities" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="46">
+<li><p>Now try it yourself! Using the same approach, create a new buffer layer
+around your health facilities. The buffer should be 2.5 km in radius.</p></li>
+<li><p>Don’t forget to check the box <span class="guilabel">Dissolve buffer results</span> so
+every overlapping buffer will become one feature. Then save the new layer in
+the same directory as <code class="file docutils literal notranslate"><span class="pre">buffer_fas_kesehatan_2.5km.shp</span></code>. Your resulting
+map will look something like this:</p></li>
+</ol>
+<img alt="../../../../_images/image228.png" class="align-center" src="../../../../_images/image228.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember that the buffer distance is in metres. Keep this in mind
+when you want to create a 2.5 km buffer!</p>
+</div>
+</section>
+<section id="overlapping-areas">
+<h2>11. Overlapping areas<a class="headerlink" href="#overlapping-areas" title="Link to this heading">¶</a></h2>
+<p>Now we can see areas where a main road is 300 metres away and where there is a
+health facility within 2.5 km. But we only want the areas where both of these
+criteria are satisfied at once!  To do that we will use the Intersect tool.</p>
+<ol class="arabic simple" start="48">
+<li><p>Go to <span class="menuselection">Vector ‣ Geoprocessing Tools ‣ Intersect</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image229.png" class="align-center" src="../../../../_images/image229.png" />
+<ol class="arabic simple" start="49">
+<li><p>Enter <span class="guilabel">buffer_fas_kesehatan_2.5km</span> and
+<span class="guilabel">buffer_jalan_300m</span> as the two input layers.
+Name the output shapefile <kbd class="kbd docutils literal notranslate">intersect_buffer_jalan_kesehatan.shp</kbd>.</p></li>
+</ol>
+<img alt="../../../../_images/image230.png" class="align-center" src="../../../../_images/image230.png" />
+<ol class="arabic simple" start="50">
+<li><p>Click <span class="guilabel">OK</span> and add the layer to the project when prompted.</p></li>
+</ol>
+<p>If we hide the original layers, we can see that our new layer shows us
+the areas where they intersect. These are the areas where both of
+these criteria are satisfied.</p>
+<img alt="../../../../_images/image2311.png" class="align-center" src="../../../../_images/image2311.png" />
+</section>
+<section id="select-farms-and-dry-fields">
+<h2>12. Select farms and dry fields<a class="headerlink" href="#select-farms-and-dry-fields" title="Link to this heading">¶</a></h2>
+<p>Now we have the layer <span class="guilabel">kebun_tegalan</span>, which satisfies two of our
+criteria, and the layer <span class="guilabel">intersect_buffer_jalan_kesehatan.shp</span>, which
+satisfies two other criteria. We need to know where they overlap!</p>
+<ol class="arabic simple" start="51">
+<li><p>Go to <span class="menuselection">Vector ‣ Research Tools ‣ Select by location</span>.
+A dialog will appear.</p></li>
+</ol>
+<img alt="../../../../_images/image232.png" class="align-center" src="../../../../_images/image232.png" />
+<ol class="arabic simple" start="52">
+<li><p>Set it up like this:</p></li>
+</ol>
+<img alt="../../../../_images/image233.png" class="align-center" src="../../../../_images/image233.png" />
+<ol class="arabic simple" start="53">
+<li><p>Click <span class="guilabel">OK</span> and you’ll see the results are selected (they are
+yellow).</p></li>
+</ol>
+<img alt="../../../../_images/image234.png" class="align-center" src="../../../../_images/image234.png" />
+<p>Let’s save this selection as a new layer.</p>
+<ol class="arabic simple" start="54">
+<li><p>Right-click on the <span class="guilabel">kebun_tegalan</span> layer in the Layers panel.</p></li>
+<li><p>Click <span class="guilabel">Save As…</span>.</p></li>
+<li><p>Name the new file <kbd class="kbd docutils literal notranslate">kebun_tegalan_lokasi_terpilih.shp</kbd>. Then check
+the box next to <span class="guilabel">Save only selected features</span> and <span class="guilabel">Add saved
+file to map</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image235.png" class="align-center" src="../../../../_images/image235.png" />
+<p>After the process is finish, rename the layers by right-clicking the new kebun_tegalan
+layer and selecting <span class="guilabel">Rename</span>. Rename with <kbd class="kbd docutils literal notranslate">kebun_tegalan_lokasi_terpilih</kbd>.
+If we hide all the other layers, we can see the resulting layer:</p>
+<img alt="../../../../_images/image236.png" class="align-center" src="../../../../_images/image236.png" />
+</section>
+<section id="select-land-areas-of-the-appropriate-size">
+<h2>13. Select land areas of the appropriate size<a class="headerlink" href="#select-land-areas-of-the-appropriate-size" title="Link to this heading">¶</a></h2>
+<p>Hooray!  We have now found land areas that meet four of our five criteria. The
+only remaining criteria is the size of the land. We need to make sure that our
+possible locations are between 50000-150000 m².</p>
+<ol class="arabic simple" start="57">
+<li><p>Open the attribute table for the <span class="guilabel">kebun_tegalan_lokasi_terpilih</span>
+layer. Notice that there is a column named <span class="guilabel">luas_ha</span>. This is the
+size of the area in hectares. We could use this field to answer our question,
+but let’s add another column that contains the size of the area in
+square metres.</p></li>
+<li><p>Select the <span class="guilabel">kebun_tegalan_lokasi_terpilih</span> layer and open its
+attribute table:</p></li>
+</ol>
+<img alt="../../../../_images/image237.png" class="align-center" src="../../../../_images/image237.png" />
+<ol class="arabic simple" start="59">
+<li><p>Enter editing mode by clicking this button:</p></li>
+</ol>
+<img alt="../../../../_images/image238.png" class="align-center" src="../../../../_images/image238.png" />
+<ol class="arabic simple" start="60">
+<li><p>Click the <span class="guilabel">Start the field calculator</span> button (located in the
+Attribute Table window).</p></li>
+</ol>
+<img alt="../../../../_images/image239.png" class="align-center" src="../../../../_images/image239.png" />
+<ol class="arabic simple" start="61">
+<li><p>Check the box next to <span class="guilabel">Create a new field</span>. In the box type
+<kbd class="kbd docutils literal notranslate">luas_m2</kbd>.</p></li>
+</ol>
+<img alt="../../../../_images/image240.png" class="align-center" src="../../../../_images/image240.png" />
+<ol class="arabic simple" start="62">
+<li><p>Change <span class="guilabel">Output field type</span> to <span class="guilabel">Decimal number (real)</span>.
+Then click on <span class="guilabel">Geometry</span> and double-click <span class="guilabel">$area</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image2411.png" class="align-center" src="../../../../_images/image2411.png" />
+<ol class="arabic simple" start="63">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<p>You should now see a new column on your attribute table, named <kbd class="kbd docutils literal notranslate">luas_m2</kbd>.
+And QGIS has filled it in for us with square metres!</p>
+<img alt="../../../../_images/image242.png" class="align-center" src="../../../../_images/image242.png" />
+<ol class="arabic simple" start="64">
+<li><p>Click the edit mode button again, and save your edits.</p></li>
+</ol>
+<img alt="../../../../_images/image243.png" class="align-center" src="../../../../_images/image243.png" />
+<ol class="arabic simple" start="65">
+<li><p>Close the attribute table. Now we can just do a simple query.</p></li>
+<li><p>Right-click on the <span class="guilabel">kebun_tegalan_lokasi_terpilih</span> layer and
+click <span class="guilabel">Filter…</span></p></li>
+<li><p>Enter the following:</p></li>
+</ol>
+<p><em>“luas_m2” &gt;= 50000 AND “luas_m2” &lt;= 150000</em></p>
+<img alt="../../../../_images/image244.png" class="align-center" src="../../../../_images/image244.png" />
+<ol class="arabic simple" start="68">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image245.png" class="align-center" src="../../../../_images/image245.png" />
+<p>That’s it!  We have eight pieces of land that meet ALL of our criteria.
+Any of these pieces of land might be suitable for a location to place refugees.</p>
+<ol class="arabic simple" start="69">
+<li><p>Right-click the <span class="guilabel">kebun_tegalan_terpilih</span> layer and click
+<span class="guilabel">Save As</span>. Name the file <code class="file docutils literal notranslate"><span class="pre">refugees_location.shp</span></code>.</p></li>
+</ol>
+<p><a class="reference internal" href="211-using-map-composer.html#using-map-composer"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="211-using-map-composer.html"
+                   title="Module 11: Using Map Composer"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="209-create-a-new-vector-layer.html"
+                   title="Module 9: Creating Vector Layers"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Introduction to QGIS &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Run Basic InaSAFE" href="run_basic_inasafe.html" />
+    <link rel="prev" title="Datasets" href="datasets.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/socialisation/introduction_to_qgis.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/socialisation/introduction_to_qgis.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Socialisation Training Manual</a>
+                </li>
+                
+
+                <li><a href="#">Introduction to QGIS</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="run_basic_inasafe.html"
+                   title="Run Basic InaSAFE"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="datasets.html"
+                   title="Datasets"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Socialisation Training Manual</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#project-name-is-funded-by">InaSAFE is funded by:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#preface">Preface</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#course-media">Course media</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="objective.html">Course objectives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="introduction.html">Introducing InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inasafe_concepts.html">InaSAFE concepts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="datasets.html">Datasets</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Introduction to QGIS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#learning-objectives">Learning objectives:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#data-for-this-exercise">Data for this exercise:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#exercises">Exercises</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="run_basic_inasafe.html">Run Basic InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_intermediate_inasafe.html">Run Intermediate InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_other_hazards.html">Other Hazards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/inasafe_logo.png" src="../../_images/inasafe_logo.png" />
+<section id="introduction-to-qgis">
+<span id="id1"></span><h1>Introduction to QGIS<a class="headerlink" href="#introduction-to-qgis" title="Link to this heading">¶</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>QGIS is a user-friendly open source Geographic Information System (GIS).
+It runs on Linux, OS X, Windows and Android. QGIS supports numerous vector, raster,
+database formats and provide extendable functionality. Learn more about the project at:
+<a class="reference external" href="http://www.qgis.org">http://www.qgis.org</a></p>
+<p>QGIS is great because:</p>
+<ul class="simple">
+<li><p>It is completely free. It doesn’t cost anything.</p></li>
+<li><p>It’s free, as in liberty. If you think a feature is missing,
+you can sponsor the development of a feature,
+or add it yourself if you are familiar with programming.</p></li>
+<li><p>It’s constantly developing and improving. Because many people continue adding features,
+it keeps getting better.</p></li>
+<li><p>Extensive help and documentation is available.
+If you have problems you can always turn to the software documentation,
+other QGIS users, or even the developers.</p></li>
+</ul>
+<p>QGIS provides a continuously growing number of capabilities provided by core functions and plugins.
+You can visualise, manage, edit, analyse data and compose printable maps.
+QGIS is also the platform which InaSAFE is built on,
+and so this document focuses on building foundational skills using QGIS.</p>
+</section>
+<section id="learning-objectives">
+<h2>Learning objectives:<a class="headerlink" href="#learning-objectives" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Understand how to get QGIS</p></li>
+<li><p>Understand how to install QGIS</p></li>
+<li><p>Understand QGIS and its layout</p></li>
+<li><p>Understand QGIS toolbars and how to manage them</p></li>
+<li><p>Learn basic operation in QGIS</p></li>
+<li><p>How to install InaSAFE from QGIS</p></li>
+<li><p>Introduction to the InaSAFE toolbar and functionality</p></li>
+</ul>
+</section>
+<section id="data-for-this-exercise">
+<h2>Data for this exercise:<a class="headerlink" href="#data-for-this-exercise" title="Link to this heading">¶</a></h2>
+<p>The data for this exercise is available in Introduction to QGIS.zip which can be downloaded
+in <a class="reference external" href="http://data.inasafe.org/Socialisation%20Training/">InaSAFE Training Data Packages</a>.
+To download QGIS, go to the <a class="reference external" href="http://qgis.org/en/site/">QGIS Website</a>
+(we will explain how to download and install QGIS later in this exercise).
+We will use the following QGIS project and data:</p>
+<ol class="arabic simple">
+<li><p>DKI_Jakarta_Introduction.qgs</p></li>
+<li><p>Jakarta_roads_WGS84.shp</p></li>
+<li><p>Jakarta_Flood_18113_WGS84.shp</p></li>
+<li><p>Jakarta_Flood_HKV_WGS84.tif</p></li>
+</ol>
+</section>
+<section id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">¶</a></h2>
+<section id="getting-qgis">
+<h3>1. Getting QGIS<a class="headerlink" href="#getting-qgis" title="Link to this heading">¶</a></h3>
+<p>You can download QGIS software by accessing the main QGIS website:</p>
+<ul class="simple">
+<li><p>Open your web browser and in the address bar at the top of the window
+type <kbd class="kbd docutils literal notranslate">qgis.org</kbd>. Press <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
+<li><p>The QGIS website will look something like this:</p></li>
+</ul>
+<img alt="../../_images/Intro_QGIS_01.png" class="align-center" src="../../_images/Intro_QGIS_01.png" />
+<ul class="simple">
+<li><p>Click <span class="guilabel">Download Now</span>.</p></li>
+<li><p>If you are using Windows, there are 2 versions of QGIS (version 2.18 and version 3.0).
+Choose <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Long</kbd> <kbd class="kbd docutils literal notranslate">term</kbd> <kbd class="kbd docutils literal notranslate">release</kbd> <kbd class="kbd docutils literal notranslate">repository</kbd> <kbd class="kbd docutils literal notranslate">(most</kbd> <kbd class="kbd docutils literal notranslate">stable)</kbd></kbd> and click
+<span class="guilabel">QGIS Standalone Installer Version 2.18 (32 bit or 64 bit depend your computer operating system)</span>.
+Your exact version number may be different.</p></li>
+</ul>
+<img alt="../../_images/Intro_QGIS_02.png" class="align-center" src="../../_images/Intro_QGIS_02.png" />
+<ul class="simple">
+<li><p>If you are not using Windows, select your operating system from the menu.
+Follow the installation instructions.</p></li>
+</ul>
+</section>
+<section id="installing-qgis">
+<h3>2. Installing QGIS<a class="headerlink" href="#installing-qgis" title="Link to this heading">¶</a></h3>
+<p>After you download the QGIS software installer, the next step is to install QGIS to your computer.</p>
+<ul class="simple">
+<li><p>Open the folder where you have the QGIS installation file.</p></li>
+</ul>
+<img alt="../../_images/Intro_QGIS_03.png" class="align-center" src="../../_images/Intro_QGIS_03.png" />
+<ul class="simple">
+<li><p>Run the installation file. If you are installing QGIS version 2.x, it should look something like this:</p></li>
+</ul>
+<img alt="../../_images/Intro_QGIS_04.png" class="align-center" src="../../_images/Intro_QGIS_04.png" />
+<ul class="simple">
+<li><p>Click <span class="guilabel">Next</span> and follow the instructions.</p></li>
+<li><p>Once the installation is finished, you can open your QGIS in Start Menu.</p></li>
+</ul>
+<img alt="../../_images/Intro_QGIS_05.png" class="align-center" src="../../_images/Intro_QGIS_05.png" />
+<ul class="simple">
+<li><p>QGIS will look something like this:</p></li>
+</ul>
+<img alt="../../_images/Intro_QGIS_06.png" class="align-center" src="../../_images/Intro_QGIS_06.png" />
+</section>
+<section id="understanding-qgis-interface">
+<h3>3. Understanding QGIS interface<a class="headerlink" href="#understanding-qgis-interface" title="Link to this heading">¶</a></h3>
+<p>Next, we will introduce the main QGIS interface. In general, there are
+four elements in QGIS:</p>
+<img alt="../../_images/Intro_QGIS_07.png" class="align-center" src="../../_images/Intro_QGIS_07.png" />
+<ol class="arabic simple">
+<li><p><strong>Layers Panel</strong>: On the left side of QGIS is the layers panel.
+This panel lists the layers, or files, that are loaded into our QGIS project.
+The Layers Panel not only shows all the files that are currently open,
+it also determines the order that they will be drawn on the map canvas.
+A layer that is at the bottom of the list will be drawn first,
+and any layers above it will be drawn on top.</p></li>
+<li><p><strong>Toolbar</strong>: At the top of QGIS are a large number of tools,
+which are contained within various <em>toolbars</em>.
+For example, the <span class="guilabel">File</span> toolbar allows you to save, load,
+print and start a new project.
+We already used one of these tools when we opened this project.</p></li>
+</ol>
+<img alt="../../_images/Intro_QGIS_08.png" class="align-center" src="../../_images/Intro_QGIS_08.png" />
+<p>By hovering your mouse over an icon, the name of the tool will
+appear to help you identify each tool. The number of tools (buttons)
+can seem a bit overwhelming at first, but you will gradually get to
+know them. The tools are grouped into related functions on toolbars.
+If you look closely you can see a vertical array of ten dots to the
+left of each toolbar. By grabbing these with your mouse, you can
+move the toolbar to a more convenient location, or separate it so
+that it sits on its own.</p>
+<img alt="../../_images/Intro_QGIS_09.png" class="align-center" src="../../_images/Intro_QGIS_09.png" />
+<ol class="arabic simple" start="3">
+<li><p><strong>Map Canvas</strong>: All of the map data that we load into QGIS
+will be displayed here, both vector data and raster data.</p></li>
+<li><p><strong>Status bar</strong>: The status bar shows information about the current map.
+It allows you to adjust the map scale and see the mouse cursor’s coordinates
+on the map.</p></li>
+</ol>
+<img alt="../../_images/Intro_QGIS_10.png" class="align-center" src="../../_images/Intro_QGIS_10.png" />
+<p>The coordinates of this map are the same type of coordinates that are recorded by GPS devices.
+The status bar shows the longitude and latitude of your mouse cursor.</p>
+</section>
+<section id="manage-toolbars">
+<h3>4. Manage toolbars<a class="headerlink" href="#manage-toolbars" title="Link to this heading">¶</a></h3>
+<p>At the top of QGIS are a large number of tools, which are contained within various ‘toolbars.’
+For example, the File toolbar allows you to save, load, print, and start a new project.
+We already used one of these tools when we opened this project.</p>
+<img alt="../../_images/Intro_QGIS_11.png" class="align-center" src="../../_images/Intro_QGIS_11.png" />
+<p>By hovering your mouse over an icon, the name of the tool will appear to
+help you identify each tool.</p>
+<p>The number of tools (buttons) can seem a bit overwhelming at first, but
+you will gradually get to know them. The tools are grouped into related
+functions on toolbars. If you look closly you can see a vertical array
+of ten dots to the left of each toolbar. By grabbing these with your
+mouse, you can move the toolbar to a more convenient location, or
+separate it so that it sits on its own.</p>
+<img alt="../../_images/Intro_QGIS_12.png" class="align-center" src="../../_images/Intro_QGIS_12.png" />
+<p>If you feel overwhelmed by the number of toolbars, you can customize the
+interface to see only the tools you use most often, adding or removing
+toolbars as necessary.</p>
+<p>To add or remove a toolbar, <strong>right-click</strong> on empty space in toolbars,
+or go to <span class="menuselection">View ‣ Toolbars</span>.</p>
+<p>Rearrange the toolbar so that it’s on one line. Left-click and hold the
+vertical dots on the left hand side of the tool. Drag to the first line
+of the toolbar.</p>
+<img alt="../../_images/Intro_QGIS_13.png" class="align-center" src="../../_images/Intro_QGIS_13.png" />
+</section>
+<section id="qgis-basic-tools">
+<h3>5. QGIS basic tools<a class="headerlink" href="#qgis-basic-tools" title="Link to this heading">¶</a></h3>
+<p>We’ve already taken a look at the QGIS toolbar and have seen the tools
+for opening QGIS. Here’s a list of some of the most commonly used tools.
+Feel free to play around with them if you like. The important thing for
+now is to start getting familiar with QGIS.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_14.png" src="../../_images/Intro_QGIS_14.png" />
+</td>
+<td><p>Add Vector Layer</p></td>
+<td><p>Add vector data to Layer List</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_15.png" src="../../_images/Intro_QGIS_15.png" />
+</td>
+<td><p>Add Raster Layer</p></td>
+<td><p>Add raster data to Layer List</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_16.png" src="../../_images/Intro_QGIS_16.png" />
+</td>
+<td><p>New</p></td>
+<td><p>Create new QGIS project</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_17.png" src="../../_images/Intro_QGIS_17.png" />
+</td>
+<td><p>Open</p></td>
+<td><p>Open QGIS project</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_18.png" src="../../_images/Intro_QGIS_18.png" />
+</td>
+<td><p>Toggle Editing</p></td>
+<td><p>Edit features in a layer</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_19.png" src="../../_images/Intro_QGIS_19.png" />
+</td>
+<td><p>Pan Map</p></td>
+<td><p>Drag the map to a new location</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_20.png" src="../../_images/Intro_QGIS_20.png" />
+</td>
+<td><p>Zoom In</p></td>
+<td><p>Zoom in on the map</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_21.png" src="../../_images/Intro_QGIS_21.png" />
+</td>
+<td><p>Zoom Out</p></td>
+<td><p>Zoom out on the map</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_22.png" src="../../_images/Intro_QGIS_22.png" />
+</td>
+<td><p>Zoom Full</p></td>
+<td><p>Zoom so that all layers fit in the map window</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_23.png" src="../../_images/Intro_QGIS_23.png" />
+</td>
+<td><p>Identify features</p></td>
+<td><p>Identify the attribute of an active layer in the map canvas</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_24.png" src="../../_images/Intro_QGIS_24.png" />
+</td>
+<td><p>Open Attribute Table</p></td>
+<td><p>Open a layer’s attribute table</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_25.png" src="../../_images/Intro_QGIS_25.png" />
+</td>
+<td><p>Select Single Feature</p></td>
+<td><p>Select a feature in the selected layer</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="navigating-the-map">
+<h3>6. Navigating the map<a class="headerlink" href="#navigating-the-map" title="Link to this heading">¶</a></h3>
+<p>Before we examine the attributes of individual features, let’s take a quick look at how to navigate the map.
+The main controls for moving the map around and zooming in-and-out are on the panels at the top of QGIS by default.</p>
+<img alt="../../_images/Intro_QGIS_26.png" class="align-center" src="../../_images/Intro_QGIS_26.png" />
+<p>When you click on one of these buttons, it changes the action of your mouse in the main map window.</p>
+<ul class="simple">
+<li><p>Select the first button that looks like a hand. Now hold the left mouse button down
+and drag the mouse in the map window.
+This allows you to <strong>pan</strong> the map, or move it around.</p></li>
+<li><p>Select the button that has a plus <span class="guilabel">(+)</span> sign inside a magnifying
+glass allows you to <strong>zoom in</strong> on the map. Using your mouse, draw a box
+around your area of interest and release your mouse.</p></li>
+<li><p>The button that has a minus <span class="guilabel">(-)</span> sign inside a magnifying glass
+allows you to <strong>zoom out</strong> on the map. Select this button and click on the
+map.</p></li>
+<li><p>The button that looks like a magnifying glass with blue arrows pointing away
+from it lets you <strong>zoom to the full extent</strong> of your map. Click this button
+to see all the data that is loaded in the project fit into the map canvas.</p></li>
+</ul>
+<p>We can always change the QGIS projection based on the projection of the data.
+It makes it easier to edit our data in further steps if QGIS has the same
+projection as the data.</p>
+</section>
+<section id="hide-and-move-layers">
+<h3>7. Hide and move layers<a class="headerlink" href="#hide-and-move-layers" title="Link to this heading">¶</a></h3>
+<p>Sometimes if you handle many layers, you need to hide/unhide layers
+to make the map canvas more organized. For example,
+open the pre-saved QGIS project, <code class="file docutils literal notranslate"><span class="pre">DKI_Jakarta_Introduction.qgs</span></code>.
+Once all the data are displayed on your map canvas, try toggling the layer,
+<strong>Flood continous raster (2007)</strong> by clicking on the checkbox
+in the Layers Panel on the left side of your screen.</p>
+<img alt="../../_images/Intro_QGIS_27.png" class="align-center" src="../../_images/Intro_QGIS_27.png" />
+<p>After you uncheck the check box, the layer will disappear from the map canvas.
+This operation won’t remove your layer from the layers list but only hide it
+temporarily until you recheck again the check box.
+Try to turn ON the layer again to unhide the layer.</p>
+<p>What if your layer does not appear in the map canvas even though you
+already turned ON your layers? In this example,
+the <strong>Jakarta_roads_WGS84</strong> layer didn’t appear in Map Canvas even though
+it’s already turned ON. In this case, it’s related to layer order.
+The layers in your Layers List are drawn on the map in a certain order.
+The layer at the bottom of the list is drawn first,
+and the layer at the top is drawn last.
+By changing the order of the layers in the list,
+you can change the order they are drawn in.</p>
+<p>For example in this layer order…</p>
+<img alt="../../_images/Intro_QGIS_28.png" class="align-center" src="../../_images/Intro_QGIS_28.png" />
+<p>… would result in <strong>Jakarta_roads_WGS84</strong> being hidden as they
+position <em>underneath</em> <strong>A Flood in Jakarta like 2013</strong>.
+To solve this problem, simply click the <strong>Jakarta_roads_WGS84</strong> layer
+and drag to the top of the Layer List or reorder them to the correct order.</p>
+<img alt="../../_images/Intro_QGIS_29.png" class="align-center" src="../../_images/Intro_QGIS_29.png" />
+<p>What do you see after you move the <strong>Jakarta_roads_WGS84</strong> layer?</p>
+<p>You can see the road network now because the <strong>Jakarta_roads_WGS84</strong> layer is
+shown above the other layers.</p>
+</section>
+<section id="symbolise-layer">
+<h3>8. Symbolise layer<a class="headerlink" href="#symbolise-layer" title="Link to this heading">¶</a></h3>
+<p>The symbology of a layer is its visual appearance on the map.
+One of the basic strengths of GIS is that you have a dynamic visual representation
+of the data you’re working with. Therefore, the visual appearance of the map
+(which depends on the symbology of the individual layers) is very important.
+For example in the project that you currently have open, <code class="file docutils literal notranslate"><span class="pre">DKI_Jakarta_Introduction.qgs</span></code>,
+you will see the <strong>A Flood in Jakarta like 2013</strong> layer covering the area of DKI Jakarta.
+Did the flood really cover the whole of DKI Jakarta?</p>
+<p>To answer this, let’s turn OFF the <strong>Jakarta_roads_WGS84</strong> and <strong>Flood continous raster (2007)</strong>
+layers and open the attribute table of <strong>A Flood in Jakarta like 2013</strong> by right clicking the layer and
+selecting <span class="guilabel">Open Attribute Table</span>. You will see there are 6 columns
+in this table and one of the columns has the name ‘FLOODPRONE’ with values of Yes and No.
+A value of Yes represents an area that is flooded, while a value of No represents
+an area that has not been flooded. Let’s select a feature in this layer and see
+the highlighted feature in the attribute table.</p>
+<img alt="../../_images/Intro_QGIS_30.png" class="align-center" src="../../_images/Intro_QGIS_30.png" />
+<p>What is the value of the selected feature in the attribute table?</p>
+<p>Not all of the features in this dataset have a value of Yes (or flooded).
+You need to see which features have a value of Yes to make it easier to interpret the hazard area.
+To solve this problem, we will symbolise the data so it will only shows the flooded area.</p>
+<ol class="arabic simple">
+<li><p>Right click on the <strong>A flood in Jakarta like 2013</strong> layer and select <span class="guilabel">Properties</span>.</p></li>
+<li><p>Go to the <span class="guilabel">Style</span> tab and and change <span class="guilabel">Single Symbol</span> into <span class="guilabel">Categorized</span>.</p></li>
+<li><p>Select <span class="guilabel">affected</span> in Column as the column that we will use to categorize the data.</p></li>
+<li><p>Click <span class="guilabel">classify</span> and turn off the values that have a value of No or no value.</p></li>
+<li><p>Click OK</p></li>
+</ol>
+<img alt="../../_images/Intro_QGIS_31.png" src="../../_images/Intro_QGIS_31.png" />
+<p>After you click <span class="guilabel">OK</span>, only features that have a value of Yes
+(flooded) will be displayed on the map canvas, the other values won’t be shown
+on the map canvas because you turned OFF the symbol that represents a value of No.
+Symbology helps us better understand the data that we will work on.</p>
+</section>
+<section id="inasafe-installation-and-set-up">
+<h3>9. InaSAFE installation and set up<a class="headerlink" href="#inasafe-installation-and-set-up" title="Link to this heading">¶</a></h3>
+<p>As we know, the InaSAFE plugin has been built for QGIS. It is one of the plugins
+which are available in the QGIS Repository. Make sure that you have a working
+internet connection before you follow the steps below.
+To get InaSAFE please follow these steps:</p>
+<ul class="simple">
+<li><p>Go to <span class="menuselection">Plugins -&gt; Manage and install plugins</span> menu.</p></li>
+</ul>
+<img alt="../../_images/Intro_QGIS_32.png" src="../../_images/Intro_QGIS_32.png" />
+<ul class="simple">
+<li><p>Go to the search box and type <kbd class="kbd docutils literal notranslate">InaSAFE</kbd>.</p></li>
+</ul>
+<img alt="../../_images/Intro_QGIS_33.png" src="../../_images/Intro_QGIS_33.png" />
+<ul class="simple">
+<li><dl class="simple">
+<dt>Select InaSAFE and click <span class="guilabel">Install plugin</span> and</dt><dd><p>wait for a moment until the InaSAFE dock appears
+in the right side of QGIS main window.</p>
+</dd>
+</dl>
+</li>
+<li><p>Close the plugin manager window.</p></li>
+</ul>
+<p>Congratulations! Now you have InaSAFE installed in QGIS.</p>
+</section>
+<section id="inasafe-toolbars">
+<h3>10. InaSAFE toolbars<a class="headerlink" href="#inasafe-toolbars" title="Link to this heading">¶</a></h3>
+<p>After successfully installing InaSAFE, you should now have an <strong>InaSAFE dock</strong>
+on the right hand side of your screen. It should look like this:</p>
+<img alt="../../_images/Intro_QGIS_34.png" class="align-center" src="../../_images/Intro_QGIS_34.png" />
+<p>InaSAFE also comes with a toolbar of its own! To retrieve the InaSAFE
+toolbar, you can right-click on the top toolbar and check InaSAFE.</p>
+<img alt="../../_images/Intro_QGIS_35.png" class="align-center" src="../../_images/Intro_QGIS_35.png" />
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_36.png" src="../../_images/Intro_QGIS_36.png" />
+</td>
+<td><p>InaSAFE Dock</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_37.png" src="../../_images/Intro_QGIS_37.png" />
+</td>
+<td><p>Set Analysis Area</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_38.png" src="../../_images/Intro_QGIS_38.png" />
+</td>
+<td><p>Toggle Scenario Outline</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_39.png" src="../../_images/Intro_QGIS_39.png" />
+</td>
+<td><p>Keyword Creation Wizard</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_40.png" src="../../_images/Intro_QGIS_40.png" />
+</td>
+<td><p>Impact Function Centric Wizard</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_41.png" src="../../_images/Intro_QGIS_41.png" />
+</td>
+<td><p>OpenStreetMap Downloader</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/Intro_QGIS_42.png" src="../../_images/Intro_QGIS_42.png" />
+</td>
+<td><p>Add OpenStreetMap Tile Layer</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/Intro_QGIS_43.png" src="../../_images/Intro_QGIS_43.png" />
+</td>
+<td><p>InaSAFE Help</p></td>
+</tr>
+</tbody>
+</table>
+<p>Later we will explore and use these tools in <strong>Run Basic InaSAFE</strong> and <strong>Intermediate Modules</strong>.</p>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>In this exercise you have learned about QGIS, the free and
+open source software for processing spatial data.
+You have learned where to get QGIS, how to install QGIS,
+understood the QGIS layout and looked at some useful toolbars,
+learning how to turn ON/OFF QGIS layers,
+and learned how to symbolise the data layers.</p>
+<p>We also learned how to install InaSAFE through the QGIS plugin manager.
+Later on we will learn how to operate InaSAFE with DKI Jakarta flood scenario.</p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="run_basic_inasafe.html"
+                   title="Run Basic InaSAFE"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="datasets.html"
+                   title="Datasets"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

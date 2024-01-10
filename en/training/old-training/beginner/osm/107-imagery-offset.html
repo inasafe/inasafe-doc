@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 7: Imagery Offset &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 8: Getting OSM Data" href="108-getting-osm-data.html" />
+    <link rel="prev" title="Module 6: Editing OpenStreetMap with JOSM" href="106-editing-osm-with-josm.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/osm/107-imagery-offset.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/osm/107-imagery-offset.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 1: Data Collection Using OpenStreetMap Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 7: Imagery Offset</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="108-getting-osm-data.html"
+                   title="Module 8: Getting OSM Data"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="106-editing-osm-with-josm.html"
+                   title="Module 6: Editing OpenStreetMap with JOSM"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="100-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="101-basic-concept-of-osm-website.html">Module 1: The OpenStreetMap Website</a></li>
+<li class="toctree-l5"><a class="reference internal" href="102-working-with-osm.html">Module 2: Working with OSM</a></li>
+<li class="toctree-l5"><a class="reference internal" href="103-working-with-josm.html">Module 3: Working with JOSM</a></li>
+<li class="toctree-l5"><a class="reference internal" href="104-using-gps.html">Module 4: Using GPS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="105-field-papers.html">Module 5: Field Papers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="106-editing-osm-with-josm.html">Module 6: Editing OpenStreetMap with JOSM</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 7: Imagery Offset</a></li>
+<li class="toctree-l5"><a class="reference internal" href="108-getting-osm-data.html">Module 8: Getting OSM Data</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../qgis-inasafe/index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image6.png" src="../../../../_images/image6.png" />
+<section id="module-7-imagery-offset">
+<span id="imagery-offset"></span><h1>Module 7: Imagery Offset<a class="headerlink" href="#module-7-imagery-offset" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand the definition of imagery offset</p></li>
+<li><p>Understand components of imagery (resolution and georeference)</p></li>
+<li><p>Understand how imagery offset occurs</p></li>
+<li><p>Fix imagery offset</p></li>
+</ul>
+<p>Using aerial imagery is the most widely used approach in making maps with
+OpenStreetMap. Mappers typically use Bing or Mapbox satellite imagery as a
+background layer, or imagery from another provider. We have already
+seen this in action. In this module we will learn a little bit more about
+aerial imagery, and we will learn how to solve the one important problem of
+using aerial photographs - imagery offset.</p>
+<section id="components-of-imagery">
+<h2>1. Components of imagery<a class="headerlink" href="#components-of-imagery" title="Link to this heading">¶</a></h2>
+<p>Aerial imagery is the term that we use to describe photographs that are
+taken from the sky. These can be taken from airplanes, helicopters,
+or even kites and balloons, but the most common source of imagery comes from
+satellites orbiting the Earth.</p>
+<p>In the <a class="reference internal" href="104-using-gps.html#using-gps"><span class="std std-ref">module on GPS</span></a> we learned about the dozens of satellites
+orbiting Earth which allow our GPS receivers to identify latitude and longitude.
+In addition to these GPS satellites, there are also satellites which take
+photos of the earth. These photos are then manipulated so that they can be
+used in GIS (mapping) software. Bing Aerial Imagery is made up of satellite
+photos.</p>
+<p>Let’s look at a couple of the components of aerial imagery - resolution and
+georeferencing.</p>
+<section id="resolution">
+<h3>1.1. Resolution<a class="headerlink" href="#resolution" title="Link to this heading">¶</a></h3>
+<p>All digital photographs are made up of pixels. If you zoom in very close on
+a photograph, you will notice the the image starts to get blurry,
+and eventually you’ll see that an image is made up of thousands of little
+squares that are each a different colour. This is true whether the
+photograph is taken with a handheld camera, a mobile phone
+or a satellite orbiting Earth.</p>
+<img alt="../../../../_images/image108.png" class="align-center" src="../../../../_images/image108.png" />
+<p>Resolution refers to the number of pixels wide by the number of pixels high
+that an image is. More pixels means higher resolution,
+which means that you are able to see greater detail in the photograph.
+Resolution in handheld cameras is often measured in megapixels. The more
+megapixels your camera is able to record, the higher the resolution of your
+photos.</p>
+<p>Aerial imagery works the same, except that we talk about resolution
+differently. Measurement is important with aerial photographs - hence,
+a pixel represents a certain measurable area on the surface of the Earth. We
+usually describe imagery as something like “two metre resolution imagery”,
+which means that one pixel in the image is equivalent to two metres on the
+ground. One metre resolution imagery would have a higher resolution than this,
+and 50cm resolution would be higher still. This is generally the range of
+imagery that is provided by Bing, though it varies between locations,
+and in many places it is worse than two metres, at which point it becomes
+difficult to identify objects in the image.</p>
+<img alt="../../../../_images/image109.png" class="align-center" src="../../../../_images/image109.png" />
+<p>The higher the resolution of an aerial image, the easier it is to use in
+making maps.</p>
+</section>
+<section id="georeferencing">
+<h3>1.2. Georeferencing<a class="headerlink" href="#georeferencing" title="Link to this heading">¶</a></h3>
+<p>Every aerial image is georeferenced, meaning that it is manipulated so that
+it can be shown in its correct location on the Earth. Georeferencing is a
+relatively complex process, because images are flat and the Earth is round,
+and the images need to be positioned and stretched so that the pixels are
+accurately positioned on the planet.</p>
+<p>The imagery available to us is already georeferenced, so it is not something
+that we need to concern ourselves with too deeply. We can happily use imagery
+to help add to OSM, so long as we understand a little bit about the
+imagery we are using, and so long as we are aware of one common pitfall -
+imagery offset.</p>
+</section>
+</section>
+<section id="id1">
+<h2>2. Imagery offset<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>Imagery providers usually do a pretty good job of georeferencing their
+imagery, but occasionally the images can be a little bit out of position. This
+is particularly true in hilly or mountainous areas, where it can be difficult
+to stretch a flat image over an area of the Earth with many contours. When
+you load imagery in JOSM, it can sometimes be ten metres or more from its
+true position. This is called imagery offset.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Aerial imagery layers are composed of many photographs of the Earth’s
+surface that have been georeferenced and then stitched together. Imagery
+providers cannot verify the accuracy of every photo, so some images may be
+shifted from their actual positions. This might be a shift of a couple
+metres, or in rare instances up to hundreds of metres. In mountainous areas,
+imagery may be distorted non-linearly, which means that nearby parts of the
+same image may be shifted in many different directions.</p>
+</div>
+<p>Notice in the following image that two separate aerial photographs have been
+georeferenced and merged together. Because georeferencing is not a perfect
+process, the images do not line up perfectly with each other. Hence one,
+or both, must be inaccurate.</p>
+<img alt="../../../../_images/image110.png" class="align-center" src="../../../../_images/image110.png" />
+<p>We’ve learned about two major ways of making maps - one is by utilising
+aerial imagery to identify features on the ground, and another is by using
+GPS to record tracks and waypoints and then add them to OSM. The
+advantage of aerial imagery is obvious. It enables you, the mapper,
+to see the whole picture, to observe various details from the image,
+consider your knowledge of the area, and easily trace roads, buildings
+and areas. One key advantage of GPS however, is that it doesn’t suffer from
+offset like imagery. A GPS will always provide you with a correct latitude
+and longitude. The only exception is when the satellite signals are
+interrupted by tall buildings or mountains, but in this case it is easy to
+recognise the error. Observe the GPS trace in this image,
+compared with the Bing aerial imagery layer beneath it:</p>
+<img alt="../../../../_images/image111.png" class="align-center" src="../../../../_images/image111.png" />
+<p>Because of what we now know, it is clear that the GPS trace is likely to be
+accurate, and the image beneath it is out of place.</p>
+<p>So now we must ask, “if the imagery may be out of place,
+how can we still use it and make accurate maps?”</p>
+</section>
+<section id="correcting-imagery-offset">
+<h2>3. Correcting imagery offset<a class="headerlink" href="#correcting-imagery-offset" title="Link to this heading">¶</a></h2>
+<p>The answer to the preceding question is that we can move the imagery so that
+it aligns with things that we know are in the correct location,
+such as GPS tracks. It is easy to correct imagery offset in JOSM.</p>
+<p>The best references for adjusting imagery are GPS tracks that follow roads.
+And the more GPS tracks that you have to reference, the more accurate you
+will be able to align your imagery. Since OSM users often upload
+their GPS tracks to the OSM database, we can download them and use them to
+align our imagery.</p>
+<ol class="arabic simple">
+<li><p>In JOSM, click on the <span class="guilabel">Download</span> button.</p></li>
+<li><p>Check the box next to <span class="guilabel">Raw GPS Data</span> near the top of the
+<span class="guilabel">Download</span> window. Select your area and click
+<span class="guilabel">Download</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image112.png" class="align-center" src="../../../../_images/image112.png" />
+<ol class="arabic simple" start="3">
+<li><p>This will download an additional layer to JOSM containing GPS tracks.
+Depending on how many tracks have been uploaded by OSM users,
+you may see few tracks (or even no tracks):</p></li>
+</ol>
+<img alt="../../../../_images/image113.png" class="align-center" src="../../../../_images/image113.png" />
+<ol class="arabic simple" start="4">
+<li><p>Or, you may see many tracks:</p></li>
+</ol>
+<img alt="../../../../_images/image114.png" class="align-center" src="../../../../_images/image114.png" />
+<ol class="arabic simple" start="5">
+<li><p>Add an imagery layer (such as Bing Sat) to JOSM.</p></li>
+<li><p>To adjust an imagery layer, click on the <span class="guilabel">Adjust imagery offset</span>
+button at the top of JOSM, and then click <span class="guilabel">New Offset</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image115.png" class="align-center" src="../../../../_images/image115.png" />
+<ol class="arabic simple" start="7">
+<li><p>Ignoring the box that pops up, use your mouse to drag the imagery layer so
+that it aligns correctly with the GPS tracks. The GPS tracks should line
+up with the roads on the imagery as closely as possible. You will see the
+offset numbers in the box change.</p></li>
+</ol>
+<img alt="../../../../_images/image116.png" class="align-center" src="../../../../_images/image116.png" />
+<ol class="arabic simple" start="8">
+<li><p>If you like, you can save these offset settings by entering a bookmark
+name and then clicking <span class="guilabel">OK</span>. You can then automatically apply
+the same settings later by going to <span class="menuselection">Imagery ‣ Imagery offset</span>
+and clicking on your bookmark.</p></li>
+<li><p>If you do not want to save the offset, simply click <span class="guilabel">OK</span> without
+entering a bookmark name.</p></li>
+</ol>
+<p>What if there are no GPS tracks on OSM, and you don’t have a GPS?
+Without GPS tracks, it is difficult to align imagery. If it is a relatively
+empty area (not much mapping done), you might choose to simply use the
+imagery as it is and correct the data later. It’s better to map an
+area 20 or 30 metres offset than to not map it at all.</p>
+<p>If you can positively identify the latitude and longitude of one object on
+the ground, you can ensure the imagery is correctly placed by following
+these steps:</p>
+<ol class="arabic simple" start="10">
+<li><p>First, identify the object whose position you know on the imagery.</p></li>
+<li><p>Click on the latitude and longitude in the bottom left corner of JOSM.</p></li>
+</ol>
+<img alt="../../../../_images/image117.png" class="align-center" src="../../../../_images/image117.png" />
+<ol class="arabic simple" start="12">
+<li><p>In the dialog that opens, enter the latitude and longitude of the place
+that you know, and enter a small number for <span class="guilabel">Zoom</span>, about five
+or 10.</p></li>
+</ol>
+<img alt="../../../../_images/image118.png" class="align-center" src="../../../../_images/image118.png" />
+<ol class="arabic simple" start="13">
+<li><p>This will zoom and centre the map to your longitude and latitude. Now you
+can move the imagery as you did previously so that the feature you know is
+centred at the correct position.</p></li>
+</ol>
+<p>If, on the other hand, the area has already been extensively mapped,
+then hopefully the previous mappers have drawn objects in their correct
+locations. In this case, you can align the imagery to the OSM map,
+but beware!  Other mappers may not be aware of imagery offset,
+and they may have made mistakes when they mapped.</p>
+<section id="the-imagery-offset-database">
+<h3>3.1. The imagery offset database<a class="headerlink" href="#the-imagery-offset-database" title="Link to this heading">¶</a></h3>
+<p>Now you know how to watch out for and correct imagery offset,
+but there is one major problem with this approach that we have overlooked
+thus far. If every OSM user adjusts the imagery differently,
+everybody will be mapping with slightly different backgrounds.</p>
+<p>Imagine that you are mapping a small town, and you realise that Bing imagery
+is offset by 15 metres to the north. So you adjust the imagery and then
+use it to map the whole town accurately. But then somebody else wants to
+add something to the map, so they download the data and load Bing imagery,
+but they don’t know about the imagery offset you discovered!  They will
+think that something is wrong and all of the objects in town are misplaced
+by 15 metres, and they will start to move them, which is not correct!  This
+can be disastrous for the town’s map data.</p>
+<p>For this reason it is important that all users are aware of imagery offset,
+and should always check for it before mapping an area. To help with this
+problem, some smart people created a plugin that allows users to save offset
+information in a database and share it with others. Let’s see how this works:</p>
+<ol class="arabic simple" start="14">
+<li><p>Open the <span class="guilabel">Preferences</span> menu in JOSM, and click on the
+<span class="guilabel">Plugins</span> tab.</p></li>
+</ol>
+<img alt="../../../../_images/image119.png" class="align-center" src="../../../../_images/image119.png" />
+<ol class="arabic simple" start="15">
+<li><p>Find the plugin named <em>imagery_offset_db</em> and check the box next to it.</p></li>
+</ol>
+<img alt="../../../../_images/image120.png" class="align-center" src="../../../../_images/image120.png" />
+<ol class="arabic simple" start="16">
+<li><p>Click <span class="guilabel">OK</span>. You will need to restart JOSM to finish the plugin
+installation.</p></li>
+</ol>
+<p>In the same way that you are able to save offsets as bookmarks,
+this plugin allows you to save offsets to a central database,
+and to access the offsets that other users have created. Hence,
+if one mapper creates an imagery offset in an area, other users can use the
+exact same offset to map with.</p>
+<p>When using aerial imagery layers, you should ALWAYS check for existing
+offsets, and when you create your own offset, you should ALWAYS save it to
+this database.</p>
+</section>
+<section id="add-imagery-offset-from-the-database">
+<h3>3.2. Add imagery offset from the database<a class="headerlink" href="#add-imagery-offset-from-the-database" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="17">
+<li><p>When you add an imagery layer, the new plugin will alert you that you
+should check the imagery database for an existing offset. You will see an
+icon with a red exclamation point on it at the top of JOSM, like this:</p></li>
+</ol>
+<img alt="../../../../_images/image121.png" class="align-center" src="../../../../_images/image121.png" />
+<ol class="arabic simple" start="18">
+<li><p>Click on the button and the plugin will communicate with the database to
+see if there are existing offsets in this area.</p></li>
+<li><p>Here we have downloaded OSM data and GPS tracks in Kuta, Bali,
+Indonesia. In this case, we have found one existing offset. Click on it to
+apply to the map.</p></li>
+</ol>
+<img alt="../../../../_images/image122.png" class="align-center" src="../../../../_images/image122.png" />
+<ol class="arabic simple" start="20">
+<li><p>This causes the imagery layer to shift. However,
+when we add someone else’s offset like this, we should check that it is
+valid by comparing it to GPS tracks.</p></li>
+</ol>
+<img alt="../../../../_images/image123.png" class="align-center" src="../../../../_images/image123.png" />
+<ol class="arabic simple" start="21">
+<li><p>We can see that the imagery layer is in fact misaligned. We don’t want
+other users to use this offset, so we should mark it as incorrect in the
+database. Click on the <span class="guilabel">Offsets</span> button again (it won’t have a red
+exclamation mark anymore).</p></li>
+</ol>
+<img alt="../../../../_images/image124.png" class="align-center" src="../../../../_images/image124.png" />
+<ol class="arabic simple" start="22">
+<li><p>This time when the dialog opens, right-click on the offset and click
+<span class="guilabel">Deprecate Offset</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image125.png" class="align-center" src="../../../../_images/image125.png" />
+<ol class="arabic simple" start="23">
+<li><p>Click <span class="guilabel">Yes</span> to confirm.</p></li>
+<li><p>Enter a reason for deprecating this offset.</p></li>
+</ol>
+<img alt="../../../../_images/image126.png" class="align-center" src="../../../../_images/image126.png" />
+</section>
+<section id="add-imagery-offset-to-the-database">
+<h3>3.3. Add imagery offset to the database<a class="headerlink" href="#add-imagery-offset-to-the-database" title="Link to this heading">¶</a></h3>
+<p>Now that we have marked this user’s offset as “deprecated”, we should add an
+improved offset to the database.</p>
+<ol class="arabic simple" start="25">
+<li><p>Click on the <span class="guilabel">Adjust imagery offset</span> button.</p></li>
+<li><p>Adjust the imagery to match the GPS tracks. Click <span class="guilabel">OK</span> in the box.</p></li>
+<li><p>Now go to <span class="menuselection">Offset ‣ Store Imagery Offset…</span></p></li>
+</ol>
+<img alt="../../../../_images/image127.png" class="align-center" src="../../../../_images/image127.png" />
+<ol class="arabic simple" start="28">
+<li><p>Enter a description of the offset in the box that opens.</p></li>
+</ol>
+<img alt="../../../../_images/image128.png" class="align-center" src="../../../../_images/image128.png" />
+<ol class="arabic simple" start="29">
+<li><p>Click <span class="guilabel">OK</span>. Your offset will be saved to the database.</p></li>
+<li><p>Now let’s hide the GPS layer and look at the OSM data against the
+correctly placed imagery.</p></li>
+</ol>
+<img alt="../../../../_images/image129.png" class="align-center" src="../../../../_images/image129.png" />
+<p>Oh No!  Somebody mapped this area with misaligned imagery,
+so the area is not correctly mapped. This will take some time to fix.</p>
+</section>
+<section id="imagery-offset-database-website">
+<h3>3.4. Imagery offset database website<a class="headerlink" href="#imagery-offset-database-website" title="Link to this heading">¶</a></h3>
+<p>For more information on the offset database,
+you can visit the website at <a class="reference external" href="http://offsets.textual.ru/">http://offsets.textual.ru/</a>. This lists all the
+offsets that have been uploaded to the database, and it also has a map
+feature that visualises where the offsets are located, as you can see here:</p>
+<img alt="../../../../_images/image130.png" class="align-center" src="../../../../_images/image130.png" />
+<p>One last thing to remember is that the imagery may not be offset the same
+distance everywhere! This is especially true in regions where there are
+lots of hills and mountains. So if the imagery seems to be offset
+differently in different areas, you’ll need to move it again.</p>
+<p><a class="reference internal" href="108-getting-osm-data.html#getting-osm-data"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="108-getting-osm-data.html"
+                   title="Module 8: Getting OSM Data"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="106-editing-osm-with-josm.html"
+                   title="Module 6: Editing OpenStreetMap with JOSM"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

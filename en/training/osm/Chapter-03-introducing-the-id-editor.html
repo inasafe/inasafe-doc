@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Chapter 3: Introducing the iD Editor &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Chapter 4: Getting started with JOSM" href="Chapter-04-getting-started-with-josm.html" />
+    <link rel="prev" title="Chapter 2: Getting Started" href="Chapter-02-getting-started.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/osm/Chapter-03-introducing-the-id-editor.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/osm/Chapter-03-introducing-the-id-editor.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Data Collection Using OpenStreetMap</a>
+                </li>
+                
+
+                <li><a href="#">Chapter 3: Introducing the iD Editor</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-04-getting-started-with-josm.html"
+                   title="Chapter 4: Getting started with JOSM"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-02-getting-started.html"
+                   title="Chapter 2: Getting Started"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Data Collection Using OpenStreetMap</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Chapter-00-preface.html">Preface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-01-introduction.html">Chapter 1: Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-02-getting-started.html">Chapter 2: Getting Started</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 3: Introducing the iD Editor</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#starting-id-editor">3.1 STARTING ID EDITOR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id-editor-interface">3.2 iD Editor Interface</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-the-map-background">3.3 Setting the Map Background</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#basic-editing-with-id-editor">3.4 BASIC EDITING WITH ID EDITOR</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#adding-a-point">Adding a Point</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#adding-a-line">Adding a Line</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#adding-an-area-polygon">Adding an Area (Polygon)</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#saving-your-changes">3.5 Saving your Changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#additional-attributes">3.6 Additional Attributes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-04-getting-started-with-josm.html">Chapter 4: Getting started with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-05-editing-with-josm.html">Chapter 5:  Editing with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-06-using-gps.html">Chapter 6: Using GPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-07-field-papers.html">Chapter 7: Field Papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-08-conflict-resolution-in-osm.html">Chapter 8: Conflict Resolution in OSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-09-inserting-tag.html">Chapter 9: Inserting Special Tag in JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-10-imagery-offset.html">Chapter 10: Imagery Offset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-11-export-osm-data.html">Chapter 11: Export OSM data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/3_000.png" src="../../_images/3_000.png" />
+<section id="chapter-3-introducing-the-id-editor">
+<span id="ch3-introducing-the-id-editor"></span><h1>Chapter 3: Introducing the iD Editor<a class="headerlink" href="#chapter-3-introducing-the-id-editor" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understanding iD Editor interface</p></li>
+<li><p>Editing OpenStreetMap using the iD Editor</p></li>
+<li><p>Saving and Uploading edits</p></li>
+</ul>
+<p>You have succeeded on creating OpenStreetMap account and you’re eligible to edit OpenStreetMap.
+Now we will learn how to add your data and edit it using an editor that runs in the browser called the iD Editor.</p>
+<p>iD Editor is a web based OpenStreetMap editor that allows you to add and make changes to the OpenStreetMap data easily and fast by using spatial data sources such
+as satelite imagerY, GPS, and FiledPapers.</p>
+<section id="starting-id-editor">
+<h2>3.1 STARTING ID EDITOR<a class="headerlink" href="#starting-id-editor" title="Link to this heading">¶</a></h2>
+<p>Before you start, your computer must be connected to the internet. Open your browser, then go to OpenStreetMap website
+<a class="reference external" href="http://www.openstreetmap.org">http://www.openstreetmap.org</a> ,
+<span class="guilabel">log in</span> to your account and <span class="guilabel">zoom in</span> to the area that you want to edit until the Edit menu is active.
+Click on the <span class="guilabel">arrow sign</span> next to the <span class="menuselection">Edit ‣ Edit with iD (in-browser editor)</span> as shown in the figure below.</p>
+<figure class="align-center" id="id1">
+<img alt="../../_images/3_001.png" src="../../_images/3_001.png" />
+<figcaption>
+<p><span class="caption-text"><em>Activating iD Editor on OpenStreetMap website</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="id-editor-interface">
+<h2>3.2 iD Editor Interface<a class="headerlink" href="#id-editor-interface" title="Link to this heading">¶</a></h2>
+<p>The figure below shows the main features of the iD editor.</p>
+<figure class="align-center" id="id2">
+<img alt="../../_images/3_002.png" src="../../_images/3_002.png" />
+<figcaption>
+<p><span class="caption-text"><em>iD Editor Interface</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple">
+<li><p><strong>Feature Panel</strong>: This panel will show the attributes of an object selected from the map.
+You can add and edit attribute data from this panel.</p></li>
+<li><p><strong>Panel tools</strong>: This Panel shows some basic editing functions, such as:</p></li>
+</ol>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><img alt="../../_images/3_003.png" src="../../_images/3_003.png" />
+</td>
+<td><p>Adding a point</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_004.png" src="../../_images/3_004.png" />
+</td>
+<td><p>Adding lines</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_005.png" src="../../_images/3_005.png" />
+</td>
+<td><p>Adding an area (polygon)</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_006.png" src="../../_images/3_006.png" />
+</td>
+<td><p>Undo</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_007.png" src="../../_images/3_007.png" />
+</td>
+<td><p>Redo</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_008.png" src="../../_images/3_008.png" />
+</td>
+<td><p>Saving your changes</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="3">
+<li><p><strong>Map Panel</strong>: This panel shows some functions to set and alter the map display</p></li>
+</ol>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><img alt="../../_images/3_009.png" src="../../_images/3_009.png" />
+</td>
+<td><p>Zoom In</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_010.png" src="../../_images/3_010.png" />
+</td>
+<td><p>Zoom Out</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_011.png" src="../../_images/3_011.png" />
+</td>
+<td><p>Go to your current location</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_012.png" src="../../_images/3_012.png" />
+</td>
+<td><p>Set the map background</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_013.png" src="../../_images/3_013.png" />
+</td>
+<td><p>Getting Help</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="4">
+<li><p><strong>Information panel</strong>: At the very bottom of the image area, this panel shows some information such as
+those who have contributed map edits in this area, as well as attribution for imagery sources and other map data.</p></li>
+</ol>
+</section>
+<section id="setting-the-map-background">
+<h2>3.3 Setting the Map Background<a class="headerlink" href="#setting-the-map-background" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Before you start editing, you can change the map background. Now click on the <span class="guilabel">layer button</span></p></li>
+</ol>
+<img alt="../../_images/3_014.png" class="align-center" src="../../_images/3_014.png" />
+<ol class="arabic simple" start="2">
+<li><p>Then a new panel will pop up like this:</p></li>
+</ol>
+<figure class="align-center" id="id3">
+<img alt="../../_images/3_015.png" src="../../_images/3_015.png" />
+<figcaption>
+<p><span class="caption-text"><em>Background and brightness setting in iD Editor</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>There are several ways to adjust the background in iD Editor. They are:</p>
+<ol class="arabic simple">
+<li><p>You can set the brightness of the satellite imagery by clicking on this box</p></li>
+</ol>
+<img alt="../../_images/3_016.png" class="align-center" src="../../_images/3_016.png" />
+<p>There are 3 brightness you can choose: 100%, 50%, and 0%. Try all of them to see the difference.</p>
+<ol class="arabic simple" start="2">
+<li><p>You can also set the provider of satellite imagery depending on which one is available for your desired area
+(the standard choice is Bing Aerial Imagery). You can also set OpenStreetMap map as your background.</p></li>
+<li><p>Also, if you want to make a previously uploaded Field Papers to be your background,
+please click on the <span class="guilabel">Custom</span> choice and put the FieldPapers URL
+(for example: <em>http://fieldpapers.org/snapshot.php?id=fdsbgzns#17/-6.20049/106.82533</em>) on the column as seen below:</p></li>
+</ol>
+<figure class="align-center" id="id4">
+<img alt="../../_images/3_017.png" src="../../_images/3_017.png" />
+<figcaption>
+<p><span class="caption-text"><em>Inserting Field Papers into iD Editor</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>You can add your GPS tracks and waypoints that are saved on your computer (they must be in GPX file format).
+Just click on your <span class="guilabel">GPX</span>, hold, and drag it to the editor page.</p></li>
+<li><p>If there is a known satellite imagery offset, you can do a correction by clicking on
+<span class="guilabel">Fix misalignment</span> until a box seen below shows up:</p></li>
+</ol>
+<img alt="../../_images/3_018.png" class="align-center" src="../../_images/3_018.png" />
+<ol class="arabic simple" start="6">
+<li><p>You can set the correction by clicking on the <span class="guilabel">navigation buttons</span></p></li>
+</ol>
+<img alt="../../_images/3_019.png" class="align-center" src="../../_images/3_019.png" />
+<ol class="arabic simple" start="7">
+<li><p>Click on</p></li>
+</ol>
+<img alt="../../_images/3_020.png" class="align-center" src="../../_images/3_020.png" />
+<p>to bring the imagery back to the initial position.</p>
+</section>
+<section id="basic-editing-with-id-editor">
+<h2>3.4 BASIC EDITING WITH ID EDITOR<a class="headerlink" href="#basic-editing-with-id-editor" title="Link to this heading">¶</a></h2>
+<p>Before we start practicing using iD Editor, first navigate to the desired area on the map that you want to edit.
+You can pan around the map by clicking on your mouse and dragging the map to your area of interest.</p>
+<section id="adding-a-point">
+<h3>Adding a Point<a class="headerlink" href="#adding-a-point" title="Link to this heading">¶</a></h3>
+<p>To add a point feature, click on</p>
+<img alt="../../_images/3_021.png" class="align-center" src="../../_images/3_021.png" />
+<p>You will see the cursor change into a plus sign <strong>(+)</strong>. Now, click on the object that you want to map. For example,
+you see a building on the map and you know that building is a hospital. Click on the building.</p>
+<figure class="align-center" id="id5">
+<img alt="../../_images/3_022.png" src="../../_images/3_022.png" />
+<figcaption>
+<p><span class="caption-text"><em>Adding a point in iD Editor</em></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Now, you can see there’s a new point. At the same time, the feature panel will be showing you attributes
+that you can choose depending on the object type. Now type <strong>Hospital</strong> on the Search section,
+and choose <strong>Hospital</strong> to add this feature to the map, as shown in the figure below.</p>
+<figure class="align-center" id="id6">
+<img alt="../../_images/3_023.png" src="../../_images/3_023.png" />
+<figcaption>
+<p><span class="caption-text"><em>Adding information to a point in iD Editor</em></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The point symbol will change automatically, and the feature panel will change into a form which can be filled with information about the hospital, such as the name of the hospital, the address, and other information about this feature.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Features may have a different forms - points, lines, or polygons. It will depends on
+the type of the feature, the mapping scale, and the quality of imagery.</p>
+</div>
+<p>If you want to move the location of that point, you can click on the object then hold it and move it
+to the new location. If you want to delete the object, click on the object, a delete button will show up.</p>
+<img alt="../../_images/3_024.png" class="align-center" src="../../_images/3_024.png" />
+<p>Click on that button to delete the object.</p>
+</section>
+<section id="adding-a-line">
+<h3>Adding a Line<a class="headerlink" href="#adding-a-line" title="Link to this heading">¶</a></h3>
+<p>Click on:</p>
+<img alt="../../_images/3_025.png" class="align-center" src="../../_images/3_025.png" />
+<p>And again you will see the cursor change into a plus sign <strong>(+)</strong>.
+Suppose you want to draw a road. To do this, first click at one of the ends of the road,
+then just move your cursor to and keep clicking along the way of the roads and follow it until a road line formed.
+Double click to end the line and the feature panel will appear again on the left side of the window.</p>
+<figure class="align-center" id="id7">
+<img alt="../../_images/3_026.png" src="../../_images/3_026.png" />
+<figcaption>
+<p><span class="caption-text"><em>Adding lines in iD Editor</em></span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The feature panel will display some attributes for you to choose from, depending on the type of your line.
+You can also move the points in the line by clicking on a point and move it.
+The other thing you can do is move the line by clicking on it, holding down the mouse button, and moving the line.
+Also, when you click on a point (vertex) on the line, you will find
+some additional functions as shown in the figure below:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><img alt="../../_images/3_027.png" src="../../_images/3_027.png" />
+</td>
+<td><p>Deleting/removing the point from the line</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_028.png" src="../../_images/3_028.png" />
+</td>
+<td><p>Separating a point that is attached to other object.</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_029.png" src="../../_images/3_029.png" />
+</td>
+<td><p>Spliting a line into two different parts. It is useful when there are different attributes in a long line (For example, different road names)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Also, when you click on the line (in between points), you will find additional functionality as shown in the figure below:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><img alt="../../_images/3_030.png" src="../../_images/3_030.png" />
+</td>
+<td><p>Removing the line</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_031.png" src="../../_images/3_031.png" />
+</td>
+<td><p>Forming the line into a circle</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_032.png" src="../../_images/3_032.png" />
+</td>
+<td><p>Moving the line position</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_033.png" src="../../_images/3_033.png" />
+</td>
+<td><p>Creating the angles of the line into right-angled line</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_034.png" src="../../_images/3_034.png" />
+</td>
+<td><p>Reversing the line direction</p></td>
+</tr>
+</tbody>
+</table>
+<img alt="../../_images/3_035.png" class="align-center" src="../../_images/3_035.png" />
+</section>
+<section id="adding-an-area-polygon">
+<h3>Adding an Area (Polygon)<a class="headerlink" href="#adding-an-area-polygon" title="Link to this heading">¶</a></h3>
+<p>To add an area, or polygon feature, click on the button below:</p>
+<img alt="../../_images/3_036.png" class="align-center" src="../../_images/3_036.png" />
+<p>Again the cursor will change to a plus sign <strong>(+)</strong>. Using the imagery as a guide, trace the area by clicking
+on the corners of the feature, as shown in the figure below.</p>
+<figure class="align-center" id="id8">
+<img alt="../../_images/3_037.png" src="../../_images/3_037.png" />
+<figcaption>
+<p><span class="caption-text"><em>Adding area/polygon in iD Editor</em></span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>As with point and line features, when you click on one of the point on the polygon,
+you will see additional editing functionality. Similarly, clicking on the line of the polygon (between points)
+will reveal additional editing operations available to you.</p>
+</section>
+</section>
+<section id="saving-your-changes">
+<h2>3.5 Saving your Changes<a class="headerlink" href="#saving-your-changes" title="Link to this heading">¶</a></h2>
+<p>Click on the button below:</p>
+<img alt="../../_images/3_038.png" class="align-center" src="../../_images/3_038.png" />
+<p>to save your changes. Pay attention to the panel on your left side that will show something like this:</p>
+<figure class="align-center" id="id9">
+<img alt="../../_images/3_039.png" src="../../_images/3_039.png" />
+<figcaption>
+<p><span class="caption-text"><em>Saving your changes in iD Editor</em></span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Fill in the <span class="guilabel">Comment column</span> with a brief note about the changes made in that area
+so that other users can note your edits. Then click <span class="guilabel">Save</span>.</p>
+</section>
+<section id="additional-attributes">
+<h2>3.6 Additional Attributes<a class="headerlink" href="#additional-attributes" title="Link to this heading">¶</a></h2>
+<p>When you add attributes to features, you can make the data more useful by adding more information.
+The icons shown in the figure below help you to add additional details to your map data:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><img alt="../../_images/3_040.png" src="../../_images/3_040.png" />
+</td>
+<td><p>Adding elevation information</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_041.png" src="../../_images/3_041.png" />
+</td>
+<td><p>Adding notes</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_042.png" src="../../_images/3_042.png" />
+</td>
+<td><p>Adding contacts/phone number</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_043.png" src="../../_images/3_043.png" />
+</td>
+<td><p>Adding sources</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_044.png" src="../../_images/3_044.png" />
+</td>
+<td><p>Adding website information</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../_images/3_045.png" src="../../_images/3_045.png" />
+</td>
+<td><p>Add information on the availability of accessibility for people with disabilities</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../_images/3_046.png" src="../../_images/3_046.png" />
+</td>
+<td><p>Adding Wikipedia links</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tags list on iD Editor</strong></p>
+<p>In addition, you can also add your own attributes by clicking on the icon</p>
+<img alt="../../_images/3_047.png" class="align-center" src="../../_images/3_047.png" />
+<p>This will raise a form allowing you to add your own attributes:</p>
+<img alt="../../_images/3_048.png" class="align-center" src="../../_images/3_048.png" />
+<p>Click on the <span class="guilabel">+</span> sign to add a key and value that you want.
+For guidance, consult the full list for key/value pairs here:
+<a class="reference external" href="http://wiki.openstreetmap.org/wiki/Map_Features">Wiki OpenStreetMap Map Features</a></p>
+<figure class="align-center" id="id10">
+<img alt="../../_images/3_049.png" src="../../_images/3_049.png" />
+<figcaption>
+<p><span class="caption-text"><em>Adding a tag in iD Editor</em></span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>You should now be able to add your data to OpenStreetMap using the in-browser iD Editor.
+You also learned how to digitize the 3 types of objects in OpenStreetMap: points, lines, and areas (polygons).
+In the next chapter, we will learn about another editor, the Java OpenStreetMap editor,
+or JOSM as it is popularly known.</p>
+<p><a class="reference internal" href="Chapter-04-getting-started-with-josm.html#ch4-getting-started-with-josm"><span class="std std-ref">Go to next chapter –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-04-getting-started-with-josm.html"
+                   title="Chapter 4: Getting started with JOSM"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-02-getting-started.html"
+                   title="Chapter 2: Getting Started"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

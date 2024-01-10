@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 11: Using Map Composer &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 12: Understanding InaSAFE" href="212-understanding-inasafe.html" />
+    <link rel="prev" title="Module 10: Vector Analysis for Problem Solving" href="210-vector-analysis-for-problem-solving.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/211-using-map-composer.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/211-using-map-composer.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 11: Using Map Composer</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="212-understanding-inasafe.html"
+                   title="Module 12: Understanding InaSAFE"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="210-vector-analysis-for-problem-solving.html"
+                   title="Module 10: Vector Analysis for Problem Solving"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="200-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="201-gis-for-developing-contingency-plan.html">Module 1: GIS for Developing Contingency Plan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="202-qgis-and-inasafe-in-contingency-plan.html">Module 2: QGIS and InaSAFE in Contingency Planning</a></li>
+<li class="toctree-l5"><a class="reference internal" href="203-the-basics-of-qgis.html">Module 3: The Basics of QGIS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="204-qgis-plugin.html">Module 4: QGIS Plugins</a></li>
+<li class="toctree-l5"><a class="reference internal" href="205-map-projection-basics.html">Module 5: Map Projection Basics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="206-working-with-vector-data.html">Module 6: Working with Vector Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="207-labels-and-classification.html">Module 7: Labels and Classification</a></li>
+<li class="toctree-l5"><a class="reference internal" href="208-working-with-raster-data.html">Module 8: Working with Raster Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="209-create-a-new-vector-layer.html">Module 9: Creating Vector Layers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="210-vector-analysis-for-problem-solving.html">Module 10: Vector Analysis for Problem Solving</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 11: Using Map Composer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="212-understanding-inasafe.html">Module 12: Understanding InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="213-getting-support.html">Module 13: Getting Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image710.png" src="../../../../_images/image710.png" />
+<section id="module-11-using-map-composer">
+<span id="using-map-composer"></span><h1>Module 11: Using Map Composer<a class="headerlink" href="#module-11-using-map-composer" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Arrange map layout</p></li>
+<li><p>Add a new map</p></li>
+<li><p>Add title to a map</p></li>
+<li><p>Add graphic and numeric scales</p></li>
+<li><p>Add grid to a map</p></li>
+<li><p>Add an inset</p></li>
+<li><p>Customise the content of the legend</p></li>
+<li><p>Export a map to different formats (pdf, jpeg, svg)</p></li>
+</ul>
+<p>A map is a means to communicate information (as well as new ideas) to
+the audience. We use symbology to convey the contents of our
+data so it can be easily understood. When we create a map layout,
+we go one step further - we present our map so that it becomes a means of
+information.</p>
+<p>No matter what media we plan to distribute our map by (whether it’s
+printed or sent over the internet), we must pay attention to how
+the map elements are composed in the layout. In this module we will discuss
+the presentation of printed maps, and create our very own.</p>
+<section id="the-map-composer">
+<h2>1. The Map Composer<a class="headerlink" href="#the-map-composer" title="Link to this heading">¶</a></h2>
+<p>The QGIS Map Composer allows you to prepare your map for printing.
+Apart from the map, you are able to add additional information such as
+images, labels, legends and scalebars.</p>
+<ol class="arabic simple">
+<li><p>Let’s start with some data in the Sleman regency that has already been
+symbolised. Open the project named <code class="file docutils literal notranslate"><span class="pre">print_2_11.qgs</span></code> in the
+<code class="file docutils literal notranslate"><span class="pre">qgis/</span></code> directory.</p></li>
+</ol>
+<img alt="../../../../_images/image246.png" class="align-center" src="../../../../_images/image246.png" />
+<p>This map shows some familiar layers from the previous module. We have
+the roads and vegetation of Sleman, along with the three impact zones from a
+Merapi eruption model.</p>
+<p>Let’s see how we can use Map Composer to adjust the layout and prepare
+this map for printing.</p>
+<ol class="arabic simple" start="2">
+<li><p>Go to <span class="menuselection">Project ‣ New Print Composer</span>. Then, give a unique
+title name for your layout, such as <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">My</kbd> <kbd class="kbd docutils literal notranslate">Layout</kbd> <kbd class="kbd docutils literal notranslate">1</kbd></kbd>. Click
+<span class="guilabel">OK</span>. A new window will load that looks like this:</p></li>
+</ol>
+<img alt="../../../../_images/image247.png" class="align-center" src="../../../../_images/image247.png" />
+<p>This is the window where you can compose the layout of a map that you want
+to print. The blank white area is your “canvas.” It is
+a model of the paper you are going to print out. You can put various
+elements onto this canvas, such as your map (obviously), a title, scalebar
+and legend. These are elements commonly used on printed maps.</p>
+<p>Take a look at the right panel. In the <span class="guilabel">Composition</span> tab, you can
+change paper size, number of pages and quality of output.</p>
+<figure class="align-center">
+<img alt="../../../../_images/image248.png" src="../../../../_images/image248.png" />
+</figure>
+<p>Take a look at the icons across the top of the window. We will use some
+of these as we lay our map out, so here’s an overview of what they do:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Display Icon</p></th>
+<th class="head"><p>Function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><img alt="../../../../_images/image249.png" src="../../../../_images/image249.png" />
+</td>
+<td><p><strong>Add New Map</strong> will add a map element. This is what we will use to add
+the map from our project into our print layout. It should be noted,
+however, that if we change the map in our QGIS project,
+it will not update the same map that we have added to our print composer,
+as we shall see later.</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../../../_images/image250.png" src="../../../../_images/image250.png" />
+</td>
+<td><p><strong>Add Image</strong> allows us to add a picture. You can add a company or
+organisational logo, or simply display images from a particular location.
+You can also add an image of a compass (to point North).</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../../../_images/image2511.png" src="../../../../_images/image2511.png" />
+</td>
+<td><p><strong>Add New Label</strong> is used for adding text to the layout,
+such as titles or other information.</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../../../_images/image252.png" src="../../../../_images/image252.png" />
+</td>
+<td><p><strong>Add New Legend</strong> is for adding a legend, which will conform to the
+active layer in the QGIS window.</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../../../_images/image253.png" src="../../../../_images/image253.png" />
+</td>
+<td><p><strong>Add New Scalebar</strong> is used to add a scale to the layout.</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../../../_images/image254.png" src="../../../../_images/image254.png" />
+</td>
+<td><p><strong>Add Ellipse/Triangle/Rectangle</strong> is used to add one of these geometric
+shapes. For example, this might be used to indicate special areas or
+highlight things on the map.</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../../../_images/image255.png" src="../../../../_images/image255.png" />
+</td>
+<td><p><strong>Add Arrow</strong> is used to draw an arrow on the map layout.</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../../../_images/image256.png" src="../../../../_images/image256.png" />
+</td>
+<td><p><strong>Select / Move Item</strong> allows us to choose and move the elements
+that are in the map layout. With this tool selected,
+you can right-click on an element to lock its position.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="adding-a-new-map">
+<h2>2. Adding a new map<a class="headerlink" href="#adding-a-new-map" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="3">
+<li><p>In the Print Composer window, click on the <span class="guilabel">Add new map</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image249.png" class="align-center" src="../../../../_images/image249.png" />
+<ol class="arabic simple" start="4">
+<li><p>Next, click and drag your mouse across the canvas, creating a box.
+Your map layout should look similar to this when you are done:</p></li>
+</ol>
+<img alt="../../../../_images/image257.png" class="align-center" src="../../../../_images/image257.png" />
+<ol class="arabic simple" start="5">
+<li><p>If you are not happy with the placement of your map,
+you can drag the corners to change the size, or drag the entire element
+around the canvas.</p></li>
+<li><p>Once you are happy set the scale of your map by going to the
+<span class="guilabel">Item Properties</span> tab in the right panel.</p></li>
+</ol>
+<img alt="../../../../_images/image258.png" class="align-center" src="../../../../_images/image258.png" />
+<ol class="arabic simple" start="7">
+<li><p>Edit the scale and press <kbd class="kbd docutils literal notranslate">Enter</kbd>. You’ll see that the scale
+(zoom level) of the map element changes. A scale of about 200000 should
+be good for this project.</p></li>
+<li><p>Add a frame by clicking the box next to <span class="guilabel">Frame</span>.
+Configure the frame colour and border thickness.</p></li>
+</ol>
+<img alt="../../../../_images/image259.png" class="align-center" src="../../../../_images/image259.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you change the scale some parts of your map may become
+invisible. Click on the “Move item content” button and drag the map so that
+it is all visible.</p>
+<img alt="../../../../_images/image260.png" class="align-center" src="../../../../_images/image260.png" />
+</div>
+</section>
+<section id="adding-a-title">
+<h2>3. Adding a title<a class="headerlink" href="#adding-a-title" title="Link to this heading">¶</a></h2>
+<p>Now we’ve got the most important thing added to our map layout - the map!
+But let’s add some additional elements to make it more informative.</p>
+<ol class="arabic simple" start="9">
+<li><p>Let’s add a title to our map. Click on the <span class="guilabel">Add new label</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image2511.png" class="align-center" src="../../../../_images/image2511.png" />
+<ol class="arabic simple" start="10">
+<li><p>Adjust the size of the element. We will edit the text and the text
+properties in the panel on the right.</p></li>
+<li><p>Click the <span class="guilabel">Font</span> button. Change the text size to 18 and make it
+bold. Change the alignment to <span class="guilabel">Center</span>. Lastly, add the following
+text, or create your own:</p></li>
+</ol>
+<img alt="../../../../_images/image2611.png" class="align-center" src="../../../../_images/image2611.png" />
+<img alt="../../../../_images/image262.png" class="align-center" src="../../../../_images/image262.png" />
+<p>Your map layout should now look similar to this:</p>
+<img alt="../../../../_images/image263.png" class="align-center" src="../../../../_images/image263.png" />
+</section>
+<section id="adding-a-scale-bar">
+<h2>4. Adding a scale bar<a class="headerlink" href="#adding-a-scale-bar" title="Link to this heading">¶</a></h2>
+<p>Let’s add a scale bar, so that anyone who looks at our map will have an
+idea what size area this map shows.</p>
+<ol class="arabic simple" start="12">
+<li><p>Click on the <span class="guilabel">Add scale bar</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image253.png" class="align-center" src="../../../../_images/image253.png" />
+<ol class="arabic simple" start="13">
+<li><p>Draw the new scalebar element on your map. A good location for
+it is in the lower left corner of your map layout.</p></li>
+<li><p>Next we need to adjust the scalebar options. Since our project is in a PCS
+(Projected Coordinate System), our measurements are in metres. Enter the
+following values in the scalebar options:</p></li>
+</ol>
+<img alt="../../../../_images/image264.png" class="align-center" src="../../../../_images/image264.png" />
+<p>This should result in a scalebar that looks like this:</p>
+<img alt="../../../../_images/image265.png" class="align-center" src="../../../../_images/image265.png" />
+</section>
+<section id="creating-a-grid">
+<h2>5. Creating a grid<a class="headerlink" href="#creating-a-grid" title="Link to this heading">¶</a></h2>
+<p>Now let’s create a grid for our map.</p>
+<ol class="arabic simple" start="15">
+<li><p>Choose the <span class="guilabel">Select</span> tool and click on the map.</p></li>
+</ol>
+<img alt="../../../../_images/image256.png" class="align-center" src="../../../../_images/image256.png" />
+<ol class="arabic simple" start="16">
+<li><p>In the panel on the right you should see the word <span class="guilabel">Grid</span>.
+Click on it.</p></li>
+<li><p>Check the box <span class="guilabel">+</span> and enter the following values:</p></li>
+</ol>
+<img alt="../../../../_images/image266.png" class="align-center" src="../../../../_images/image266.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We used coordinate reference systems with UTM (metre) on the project
+QGIS and all map layers.</p>
+</div>
+<ol class="arabic simple" start="18">
+<li><p>Scroll down item properties dialog and check the box next to <span class="guilabel">Draw
+Coordinates</span> and enter the following values:</p></li>
+</ol>
+<img alt="../../../../_images/image267.png" class="align-center" src="../../../../_images/image267.png" />
+<ol class="arabic simple" start="19">
+<li><p>Your map should now have a grid appear over it, which will look something
+like this:</p></li>
+</ol>
+<img alt="../../../../_images/image268.png" class="align-center" src="../../../../_images/image268.png" />
+<section id="tips">
+<h3>Tips<a class="headerlink" href="#tips" title="Link to this heading">¶</a></h3>
+<p>Play around a little bit with the coordinate format.
+You can change decimal degrees as the coordinate format or change it
+into Degree Minute format (DD MM) or Degree
+Minute Second (DD MM SS).</p>
+<p>You can also adjust the coordinate placement.
+You can place the text inside or outside the frame, and make the
+orientation either vertical or horizontal.</p>
+<p>Change the font type and font size by clicking <span class="guilabel">Font</span> in the panel.</p>
+</section>
+</section>
+<section id="overview-inset">
+<h2>6. Overview inset<a class="headerlink" href="#overview-inset" title="Link to this heading">¶</a></h2>
+<p>Next, let’s add an inset that gives viewers of our map a little more
+information about what they are looking at.</p>
+<ol class="arabic simple" start="20">
+<li><p>Minimise the Print Composer and go back into QGIS.</p></li>
+<li><p>Add the layer <code class="file docutils literal notranslate"><span class="pre">Indonesia.shp</span></code>, which is located in
+<code class="file docutils literal notranslate"><span class="pre">qgis/peta_dunia/</span></code>. Click <span class="guilabel">Zoom Full</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image269.png" class="align-center" src="../../../../_images/image269.png" />
+<p>The new layer will load.</p>
+<img alt="../../../../_images/image270.png" class="align-center" src="../../../../_images/image270.png" />
+<ol class="arabic simple" start="22">
+<li><p>Return to the Map Composer and create a new map with the
+<span class="guilabel">Add new map</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image249.png" class="align-center" src="../../../../_images/image249.png" />
+<ol class="arabic simple" start="23">
+<li><p>Draw a small box on the right side of your map layout.</p></li>
+<li><p>The current view of your QGIS project will appear in the new map element
+(but notice that the old map element doesn’t change!). Add a frame
+for the inset, so that it looks like this:</p></li>
+</ol>
+<img alt="../../../../_images/image2711.png" class="align-center" src="../../../../_images/image2711.png" />
+</section>
+<section id="adding-a-legend">
+<h2>7. Adding a legend<a class="headerlink" href="#adding-a-legend" title="Link to this heading">¶</a></h2>
+<p>Now let’s add a legend so that viewers of our map will know what our
+symbology represents.</p>
+<ol class="arabic simple" start="25">
+<li><p>Click on the <span class="guilabel">Add legend</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image252.png" class="align-center" src="../../../../_images/image252.png" />
+<ol class="arabic simple" start="26">
+<li><p>Draw a box in the remaining empty space on your map layout. You will see a
+legend with symbologies shown in a list.</p></li>
+<li><p>In the panel on the right, click on <span class="guilabel">Legend items</span>. Uncheck
+<span class="guilabel">Auto update</span> and use the edit button to change the names on the
+legend. Use the <span class="guilabel">+</span> and <span class="guilabel">-</span> buttons to add or remove
+items from the legend. Choose which elements are important to include.</p></li>
+</ol>
+<img alt="../../../../_images/image272.png" class="align-center" src="../../../../_images/image272.png" />
+<ol class="arabic simple" start="28">
+<li><p>Our legend looks like this:</p></li>
+</ol>
+<img alt="../../../../_images/image273.png" class="align-center" src="../../../../_images/image273.png" />
+<ol class="arabic simple" start="29">
+<li><p>When you are finished, your map layout should look similiar to this:</p></li>
+</ol>
+<img alt="../../../../_images/image274.png" class="align-center" src="../../../../_images/image274.png" />
+<section id="id1">
+<h3>Tips<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p>To save your map composer that you created, you can click on the
+<span class="menuselection">Composer ‣ Save Project</span>. So if you open the project QGIS and
+want to use the map composer that you saved, click on <span class="menuselection">Project ‣
+Print Composer ‣ My Layout 1</span></p>
+</section>
+</section>
+<section id="printing-the-map">
+<h2>8. Printing the map<a class="headerlink" href="#printing-the-map" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="30">
+<li><p>Lastly, you can print your map. Simply click
+the <span class="guilabel">Print</span> button and follow the dialog.</p></li>
+</ol>
+<img alt="../../../../_images/image275.png" class="align-center" src="../../../../_images/image275.png" />
+<ol class="arabic simple" start="31">
+<li><p>You may also save the map as PNG image.</p></li>
+</ol>
+<img alt="../../../../_images/image276.png" class="align-center" src="../../../../_images/image276.png" />
+<ol class="arabic simple" start="32">
+<li><p>Additionally you can save the map as a PDF, which you can easily send over
+email or print later when you have a chance.</p></li>
+</ol>
+<img alt="../../../../_images/image277.png" class="align-center" src="../../../../_images/image277.png" />
+<p><a class="reference internal" href="212-understanding-inasafe.html#understanding-inasafe"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="212-understanding-inasafe.html"
+                   title="Module 12: Understanding InaSAFE"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="210-vector-analysis-for-problem-solving.html"
+                   title="Module 10: Vector Analysis for Problem Solving"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

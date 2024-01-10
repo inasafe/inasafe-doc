@@ -1,0 +1,2344 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Unit 2 Facilitator Guide &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Unit 3 Facilitator Guide" href="osm-intermediate-toolkit.html" />
+    <link rel="prev" title="Unit 1 Facilitator Guide" href="osm-beginner-toolkit.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/curriculum/qgis-inasafe-beginner-toolkit.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/curriculum/qgis-inasafe-beginner-toolkit.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Curriculum and Guide for Facilitator</a>
+                </li>
+                
+
+                <li><a href="#">Unit 2 Facilitator Guide</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="osm-intermediate-toolkit.html"
+                   title="Unit 3 Facilitator Guide"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="osm-beginner-toolkit.html"
+                   title="Unit 1 Facilitator Guide"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Curriculum and Guide for Facilitator</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="curriculum.html">Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="osm-beginner-toolkit.html">Unit 1 Facilitator Guide</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Unit 2 Facilitator Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#beginning-qgis-project-name-trainer-s-toolkit-a-guide-for-facilitators">Beginning QGIS-InaSAFE Trainer’s Toolkit - (A Guide for Facilitators)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#about-toolkit">About Toolkit</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#purpose-of-workshop">Purpose of Workshop</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#schedule">Schedule</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#day-i">Day I:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-ii">Day II:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-iii">Day III:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-iv">Day IV:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-v">Day V:</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#workshop-plan">Workshop Plan</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#session-1">Session 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-2">Session 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-3">Session 3</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-4">Session 4</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-5">Session 5</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-6">Session 6</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-7">Session 7</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-8">Session 8</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-9">Session 9</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-10">Session 10</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-11">Session 11</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-12">Session 12</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-13">Session 13</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="osm-intermediate-toolkit.html">Unit 3 Facilitator Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qgis-inasafe-intermediate-toolkit.html">Unit 4 Facilitator Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <section id="unit-2-facilitator-guide">
+<h1>Unit 2 Facilitator Guide<a class="headerlink" href="#unit-2-facilitator-guide" title="Link to this heading">¶</a></h1>
+<section id="beginning-qgis-project-name-trainer-s-toolkit-a-guide-for-facilitators">
+<h2>Beginning QGIS-InaSAFE Trainer’s Toolkit - (A Guide for Facilitators)<a class="headerlink" href="#beginning-qgis-project-name-trainer-s-toolkit-a-guide-for-facilitators" title="Link to this heading">¶</a></h2>
+<p><strong>BADAN NASIONAL PENANGGULANGAN BENCANA</strong></p>
+<p><strong>2013</strong></p>
+</section>
+<section id="about-toolkit">
+<h2>About Toolkit<a class="headerlink" href="#about-toolkit" title="Link to this heading">¶</a></h2>
+<p><strong>The Beginning QGIS-</strong> InaSAFE <strong>Toolkit</strong> is designed to prepare
+trainers to deliver training for new QGIS users.
+The materials included will prepare trainers to conduct trainings with a
+variety of audiences and to cover common problems and pitfalls,
+and also provide trainers with the best methodologies.</p>
+<p>When organising a QGIS-InaSAFE training, numerous factors must be
+considered, including the length of time you have to train,
+available resources, number of trainees and their technical skills.
+This toolkit will help trainers prepare trainings for different types of
+participants, but it will primarily focus on educating those with little or
+no experience with GPS, map-making and computers.</p>
+<p>The purpose of this toolkit is to prepare the trainer to successfully train
+workshop participants in using QGIS and analysing hazard and exposure data with
+InaSAFE.</p>
+<section id="purpose-of-workshop">
+<h3>Purpose of Workshop<a class="headerlink" href="#purpose-of-workshop" title="Link to this heading">¶</a></h3>
+<p>This workshop is intended to achieve the following standard and basic
+competencies:</p>
+<section id="standard-competency">
+<h4>Standard Competency<a class="headerlink" href="#standard-competency" title="Link to this heading">¶</a></h4>
+<p>Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios
+with InaSAFE</p>
+</section>
+<section id="basic-competencies">
+<h4>Basic Competencies<a class="headerlink" href="#basic-competencies" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Use GIS to develop scenarios for contingency planning</p></li>
+<li><p>Understand the benefit of QGIS and InaSAFE for developing realistic
+scenarios for contingency planning</p></li>
+<li><p>Install QGIS and understand QGIS user interface</p></li>
+<li><p>Use QGIS plugins</p></li>
+<li><p>Understand projection systems and transformation in QGIS</p></li>
+<li><p>Use and understand vector data</p></li>
+<li><p>Categorise and create labels from vector data</p></li>
+<li><p>Use and understand raster data</p></li>
+<li><p>Create and edit new vector layers</p></li>
+<li><p>Analyse vector data to solve problems</p></li>
+<li><p>Create maps with the Map Composer</p></li>
+<li><p>Use InaSAFE</p></li>
+<li><p>Understand how to get support for QGIS and InaSAFE in Indonesia</p></li>
+</ol>
+</section>
+<section id="workshop-materials">
+<h4>Workshop Materials<a class="headerlink" href="#workshop-materials" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>GIS for Developing Contingency Plan</p></li>
+<li><p>QGIS and InaSAFE in Contingency Planning</p></li>
+<li><p>The Basics of QGIS</p></li>
+<li><p>QGIS Plugins</p></li>
+<li><p>Map Projection Basics</p></li>
+<li><p>Working with Vector Data</p></li>
+<li><p>Labels and Classification</p></li>
+<li><p>Working with Raster Data</p></li>
+<li><p>Creating Vector Layers</p></li>
+<li><p>Vector Analysis for Problem Solving</p></li>
+<li><p>Using Map Composer</p></li>
+<li><p>Understanding InaSAFE</p></li>
+<li><p>Getting Support</p></li>
+</ol>
+</section>
+<section id="workshop-strategies">
+<h4>Workshop Strategies<a class="headerlink" href="#workshop-strategies" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Methods emphasised in this workshop are participatory teaching
+and active participation in all sections and
+activities, rather than lecture method.</p></li>
+<li><p><strong>Participant oriented.</strong>
+Participants are encouraged to find and gain knowledge and skills
+by themselves.</p></li>
+<li><p><strong>Trainers serve as facilitators.</strong>
+Trainers facilitate to help ideas in the workshop emerge
+from the participants, not only from trainers.
+However, trainers must be ready to provide necessary information
+when the participants need any assistance.</p></li>
+<li><p><strong>Outcome oriented.</strong> Workshop must produce the outcomes mentioned
+previously.</p></li>
+</ol>
+</section>
+<section id="tools">
+<h4>Tools<a class="headerlink" href="#tools" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Copy of <a class="reference internal" href="../old-training/beginner/qgis-inasafe/index.html#begin-qgis-inasafe"><span class="std std-ref">Data Analysis using QGIS and InaSAFE Beginner
+Level</span></a> for participants</p></li>
+<li><p>A workshop space with tables and seats</p></li>
+<li><p>Computers (one computer may be used by two participants,
+but it is better if one computer is used by one participant)</p></li>
+<li><p>A Projector (to present slide and demonstrate technical instructions and
+software)</p></li>
+<li><p>USB Flash drive(s) to transfer files and software</p></li>
+<li><p>Good internet connection</p></li>
+<li><p>Snacks and coffee for breaks</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="schedule">
+<h2>Schedule<a class="headerlink" href="#schedule" title="Link to this heading">¶</a></h2>
+<p>Below is an outline of a schedule for a five day workshop that has been tested with
+several groups in Indonesia. You may choose to adapt and change this
+workshop schedule to meet your needs.</p>
+<section id="day-i">
+<h3>Day I:<a class="headerlink" href="#day-i" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><p>Opening and building learning contract</p></td>
+<td><p>Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 11.00</p></td>
+<td><ol class="arabic simple">
+<li><p>GIS for Developing Contingency Plan</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>11.00 - 11.45</p></td>
+<td><ol class="arabic simple" start="2">
+<li><p>QGIS and InaSAFE in Contingency Planning</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-even"><td><p>11.45 - 12.45</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>12.45 - 15.00</p></td>
+<td><ol class="arabic simple" start="3">
+<li><p>The Basics of QGIS</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-even"><td><p>15.00 - 15.15</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>15.15 - 16.00</p></td>
+<td><ol class="arabic simple" start="3">
+<li><p>The Basics of QGIS</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-even"><td><p>16.00 - 17.00</p></td>
+<td><ol class="arabic simple" start="4">
+<li><p>QGIS Plugins</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-ii">
+<h3>Day II:<a class="headerlink" href="#day-ii" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="4">
+<li><p>QGIS Plugins</p></li>
+</ol>
+</td>
+<td><p>Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 11.45</p></td>
+<td><ol class="arabic simple" start="5">
+<li><p>Map Projection Basics</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>11.45 - 12.45</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>12.45 - 15.00</p></td>
+<td><ol class="arabic simple" start="6">
+<li><p>Working with Vector Data</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>15.00 - 15.15</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15.15 - 17.30</p></td>
+<td><ol class="arabic simple" start="7">
+<li><p>Labels and Classification</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-iii">
+<h3>Day III:<a class="headerlink" href="#day-iii" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="8">
+<li><p>Working with Raster Data</p></li>
+</ol>
+</td>
+<td><p>Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 11.30</p></td>
+<td><ol class="arabic simple" start="8">
+<li><p>Working with Raster Data</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>11.30 - 12.00</p></td>
+<td><ol class="arabic simple" start="9">
+<li><p>Creating Vector Layers</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-even"><td><p>12.00 - 13.00</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>13.00 - 14.30</p></td>
+<td><ol class="arabic simple" start="9">
+<li><p>Creating Vector Layers</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-even"><td><p>14.30 - 15.00</p></td>
+<td><ol class="arabic simple" start="10">
+<li><p>Vector Analysis for Problem Solving</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>15.00 - 15.15</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15.15 - 17.15</p></td>
+<td><ol class="arabic simple" start="10">
+<li><p>Vector Analysis for Problem Solving</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-iv">
+<h3>Day IV:<a class="headerlink" href="#day-iv" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="10">
+<li><p>Vector Analysis for Problem Solving</p></li>
+</ol>
+</td>
+<td><p>Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 12.15</p></td>
+<td><ol class="arabic simple" start="11">
+<li><p>Using Map Composer</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>12.15 - 13.15</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13.15 - 15.15</p></td>
+<td><ol class="arabic simple" start="11">
+<li><p>Using Map Composer</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>15.15 - 15.30</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15.30 - 16.00</p></td>
+<td><ol class="arabic simple" start="11">
+<li><p>Using Map Composer</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>16.00 - 17.15</p></td>
+<td><ol class="arabic simple" start="12">
+<li><p>Understanding InaSAFE</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-v">
+<h3>Day V:<a class="headerlink" href="#day-v" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="12">
+<li><p>Understanding InaSAFE</p></li>
+</ol>
+</td>
+<td><p>Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 12.00</p></td>
+<td><ol class="arabic simple" start="12">
+<li><p>Understanding InaSAFE</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>12.00 - 13.00</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13.00 - 14.00</p></td>
+<td><ol class="arabic simple" start="12">
+<li><p>Understanding InaSAFE</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-odd"><td><p>14.00 - 15.00</p></td>
+<td><ol class="arabic simple" start="13">
+<li><p>Getting Support</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+<tr class="row-even"><td><p>15.00 - 15.15</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>15.15 - 17.00</p></td>
+<td><p>Workshop Evaluation and Closing</p></td>
+<td><p>FGD and Plenary</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="workshop-plan">
+<h2>Workshop Plan<a class="headerlink" href="#workshop-plan" title="Link to this heading">¶</a></h2>
+<section id="session-1">
+<h3>Session 1<a class="headerlink" href="#session-1" title="Link to this heading">¶</a></h3>
+<section id="gis-for-developing-contingency-plan">
+<h4>GIS for Developing Contingency Plan<a class="headerlink" href="#gis-for-developing-contingency-plan" title="Link to this heading">¶</a></h4>
+<p>Time : 45 minutes</p>
+<section id="basic-competency">
+<h5>Basic Competency<a class="headerlink" href="#basic-competency" title="Link to this heading">¶</a></h5>
+<p>Use GIS to develop scenarios for contingency planning</p>
+</section>
+<section id="indicator">
+<h5>Indicator<a class="headerlink" href="#indicator" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Distinguish between data and information</p></li>
+<li><p>Understand the concept of GIS</p></li>
+</ol>
+</section>
+<section id="outcomes">
+<h5>Outcomes<a class="headerlink" href="#outcomes" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Questions and comments about GIS and problem solving</p></li>
+</ol>
+</section>
+<section id="core-material">
+<h5>Core Material<a class="headerlink" href="#core-material" title="Link to this heading">¶</a></h5>
+<p><strong>GIS for Developing Contingency Plan</strong></p>
+<ol class="arabic simple">
+<li><p>The difference between data and information</p></li>
+<li><p>Terminology of Geographic Information System (GIS)</p></li>
+</ol>
+</section>
+<section id="activities">
+<h5>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 10’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p></li>
+<li><p>Give some questions about the OpenStreetMap
+beginner workshop to participants. Ask participants to
+answer the questions in turns and other participants to
+give input or corrections from the answer given, so a
+discussion will develop.</p></li>
+<li><p>Bridge the OpenStreetMap beginner workshop
+that has been given before with QGIS/InaSAFE beginner
+workshop. Explain that OpenStreetMap is a resource
+for spatial data which is free and open source
+and we can analyse it using GIS software</p></li>
+</ol>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>GIS for Developing Contingency Plan 30’</strong></p>
+<p>Explain:</p>
+<ul class="simple">
+<li><p>The differences between data and information</p></li>
+<li><p>Basic concept of GIS, GIS terminology and functions
+in GIS, along with examples of the software</p></li>
+<li><p>Benefit of GIS to in contingency planning</p></li>
+<li><p>Importance of having accurate data to develop
+contingency planning</p></li>
+</ul>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Projector</p>
+<p>Module 1</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 5’</strong></p>
+<p>Ask participants to give reflections on
+this first session.</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="session-2">
+<h3>Session 2<a class="headerlink" href="#session-2" title="Link to this heading">¶</a></h3>
+<section id="qgis-and-project-name-in-contingency-planning">
+<h4>QGIS and InaSAFE in Contingency Planning<a class="headerlink" href="#qgis-and-project-name-in-contingency-planning" title="Link to this heading">¶</a></h4>
+<p>Time : 45 minutes</p>
+<section id="id1">
+<h5>Basic Competency<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h5>
+<p>Understand the benefit of QGIS and InaSAFE for developing
+realistic scenario for contingency planning</p>
+</section>
+<section id="indicators">
+<h5>Indicators<a class="headerlink" href="#indicators" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand the role of GIS for preparing contingency planning</p></li>
+<li><p>Understand the importance of data</p></li>
+<li><p>Understand the benefits of QGIS/InaSAFE in the
+development of scenarios for contingency planning</p></li>
+</ol>
+</section>
+<section id="id2">
+<h5>Outcomes<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>QGIS and InaSAFE are used to support development of contingency planning</p></li>
+</ol>
+</section>
+<section id="id3">
+<h5>Core Material<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h5>
+<p><strong>QGIS and InaSAFE in Contingency Planning</strong></p>
+<ol class="arabic simple">
+<li><p>GIS for Preparing contingency Planning</p></li>
+<li><p>The Importance of Data</p></li>
+<li><p>QGIS and InaSAFE</p></li>
+</ol>
+</section>
+<section id="id4">
+<h5>Activities<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Understanding contingency planning 15’</strong></p>
+<p>Before going into GIS to support contingency planning, it is
+better to ask participants about their understanding
+of contingency planning. Provide some review based on
+contingency planning terminology from BNPB.</p>
+</td>
+<td><p>Q &amp; A</p>
+<p>Lecture</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Projector</p>
+<p>Module 2</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Using QGIS/InaSAFE software to support development of</strong>
+<strong>contingency planning 20’</strong></p>
+<p>Explain:</p>
+<ul class="simple">
+<li><p>Terminology of QGIS and InaSAFE</p></li>
+<li><p>Why QGIS and InaSAFE is important for developing
+contingency planning</p></li>
+<li><p>The benefit of using QGIS rather than other GIS software</p></li>
+<li><p>Mapping disaster impact using InaSAFE</p></li>
+</ul>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A</p>
+</td>
+<td><p>Projector</p>
+<p><em>Slide PP</em></p>
+<p>Module 2</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Closing 5’</strong></p>
+<p>Ask participants to give reflections on
+this session.</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="session-3">
+<h3>Session 3<a class="headerlink" href="#session-3" title="Link to this heading">¶</a></h3>
+<section id="the-basics-of-qgis">
+<h4>The Basics of QGIS<a class="headerlink" href="#the-basics-of-qgis" title="Link to this heading">¶</a></h4>
+<p>Time : 180 minutes</p>
+<section id="id5">
+<h5>Basic Competency<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h5>
+<p>Install QGIS and understand QGIS user interface</p>
+</section>
+<section id="id6">
+<h5>Indicators<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Download QGIS</p></li>
+<li><p>Install QGIS</p></li>
+<li><p>Open a previously created QGIS project</p></li>
+<li><p>Understand the layers panel</p></li>
+<li><p>Access basic tools through the toolbar</p></li>
+<li><p>Clean up the toolbar</p></li>
+<li><p>Show a map in the map window</p></li>
+<li><p>Get information on an active map through the status bar</p></li>
+</ol>
+</section>
+<section id="id7">
+<h5>Outcomes<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>QGIS is successfully installed in each participant’s computer/laptop</p></li>
+<li><p>Participants understand basic QGIS navigation and layout</p></li>
+</ol>
+</section>
+<section id="id8">
+<h5>Core Material<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h5>
+<p><strong>The Basics of QGIS</strong></p>
+<ol class="arabic simple">
+<li><p>Getting QGIS</p></li>
+<li><p>Installing QGIS</p></li>
+<li><p>QGIS user interface layout</p></li>
+<li><p>Adding vector layer</p></li>
+<li><p>QGIS basic tool</p></li>
+<li><p>Panning maps</p></li>
+</ol>
+</section>
+<section id="id9">
+<h5>Activities<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Practice 170’</strong></p>
+<ol class="arabic simple">
+<li><p>Ask participants to install QGIS which has been
+downloaded before workshop on a flash drive. If internet
+connection is reliable they can download it directly
+from <a class="reference external" href="http://download.qgis.org">http://download.qgis.org</a>.</p></li>
+<li><p>Make sure every participant installs QGIS. Guide them
+through the installation.</p></li>
+<li><p>After each participant installs QGIS successfully, explain
+the QGIS user interface such as the toolbar menu, layers
+panel, map window and status bar.</p></li>
+<li><p>Guide each participant to add a shapefile (already
+prepared) into QGIS and explain the status bar under the
+user interface layout.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>QGIS
+Installation
+file</p>
+<p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Projector</p>
+<p>Module 3</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 5’</strong></p>
+<p>Ask participants to give reflections on
+this session.</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="common-problems">
+<h5>Common Problems<a class="headerlink" href="#common-problems" title="Link to this heading">¶</a></h5>
+<p>In this session, it is possible that QGIS will not install on some computers/laptops.
+One common problem is that a problem with sqlite shows up when QGIS opened.
+You can solve this problem by copying sqlite file from another computer/laptop
+that has QGIS successfully running.</p>
+</section>
+</section>
+</section>
+<section id="session-4">
+<h3>Session 4<a class="headerlink" href="#session-4" title="Link to this heading">¶</a></h3>
+<section id="qgis-plugins">
+<h4>QGIS Plugins<a class="headerlink" href="#qgis-plugins" title="Link to this heading">¶</a></h4>
+<p>Time : 105 minutes</p>
+<section id="id10">
+<h5>Basic Competency<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h5>
+<p>Use QGIS plugins</p>
+</section>
+<section id="id11">
+<h5>Indicators<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand the concept of plugins</p></li>
+<li><p>Install QGIS plugins</p></li>
+<li><p>Add satellite imagery via OpenLayers</p></li>
+</ol>
+</section>
+<section id="id12">
+<h5>Outcomes<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Participants can add QGIS plugins based on their needs</p></li>
+<li><p>Participants install and use the OpenLayers plugin</p></li>
+</ol>
+</section>
+<section id="id13">
+<h5>Core Material<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h5>
+<p><strong>QGIS Plugins</strong></p>
+<ol class="arabic simple">
+<li><p>Plugin setup</p></li>
+<li><p>Installing plugin</p></li>
+<li><p>OpenLayers plugin</p></li>
+</ol>
+</section>
+<section id="id14">
+<h5>Activities<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demo and Practice 80’</strong></p>
+<ol class="arabic simple">
+<li><p>Explains the idea behind plugins. Show some
+examples of plugins. Explain
+how plugins work in QGIS.</p></li>
+<li><p>Show how to install a QGIS plugin, explain the QGIS
+plugin menu and make sure every participant
+practices it.</p></li>
+<li><p>Ask the participants to download the
+OpenLayers Plugin. After installing, ask
+participants to use the plugin. One thing to remind
+participants is to not use
+Google imagery with OpenStreetMap because the license is
+commercial.</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Projector</p>
+<p>Module 4</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 5’</strong></p>
+<p>Ask participants to give reflections on
+this session.</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="faq-frequently-asked-questions">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#faq-frequently-asked-questions" title="Link to this heading">¶</a></h5>
+<p><strong>What should we do if the plugin installation fails?</strong></p>
+<p>This can be caused by a poor internet connection. An internet connection is
+needed during plugin installation, especially if the plugin file is big like
+InaSAFE.
+If this is a major problem, it can be addressed by preparing the plugin file
+on a flash drive.
+Then copy the plugin to <code class="file docutils literal notranslate"><span class="pre">C:UsersComputer.qgispythonplugins</span></code>.</p>
+<p><strong>What if the Fetch Python Plugin menu is not available?</strong></p>
+<p>Open the settings from the <em>fetch python plugin</em>
+options menu.
+Tick the box next to <em>check for updates</em> on startup which should add a list of new
+plugins automatically.</p>
+</section>
+</section>
+</section>
+<section id="session-5">
+<h3>Session 5<a class="headerlink" href="#session-5" title="Link to this heading">¶</a></h3>
+<section id="map-projection-basics">
+<h4>Map Projection Basics<a class="headerlink" href="#map-projection-basics" title="Link to this heading">¶</a></h4>
+<p>Time : 90 minutes</p>
+<section id="id15">
+<h5>Basic Competency<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h5>
+<p>Understand projection systems and transformation in QGIS</p>
+</section>
+<section id="id16">
+<h5>Indicators<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand Coordinate Reference Systems (CRS)</p></li>
+<li><p>Identify the CRS of a vector dataset</p></li>
+<li><p>Do ‘on the fly’ reprojection</p></li>
+<li><p>Save dataset with a different CRS</p></li>
+<li><p>Create a custom projection</p></li>
+</ol>
+</section>
+<section id="id17">
+<h5>Outcomes<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Participants can change and create different projection systems</p></li>
+</ol>
+</section>
+<section id="id18">
+<h5>Core Material<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h5>
+<p><strong>Map Projection Basics</strong></p>
+<ol class="arabic simple">
+<li><p>Coordinate Reference Systems (CRS)</p></li>
+<li><p>“On the fly” reprojection</p></li>
+<li><p>Dataset with different CRS</p></li>
+<li><p>Defining a custom projection</p></li>
+</ol>
+</section>
+<section id="id19">
+<h5>Activities<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Lecture and Discussion 15’</strong></p>
+<p>Explain projection
+systems and the difference between the use of UTM
+and WGS 84 in Indonesia. If the participants are not
+familiar with projection systems, you
+should slowly explain and give examples of its use in
+the real world.</p>
+</td>
+<td><p>Lecture</p>
+<p>Discussion</p>
+</td>
+<td><p><em>Slide PP</em></p>
+<p>Module 5</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Demo and Practice 35’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain how to change the CRS of a
+map and activate the “On the fly” reprojection</p></li>
+<li><p>Explain
+how to save vector data into another projection system.</p></li>
+<li><p>Challenge the participants to
+make a projection system in QGIS, and
+ask them to explain why they chose that
+projection system.</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>Demo</p>
+<p>Practice</p>
+<p>Q &amp; A</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Projector</p>
+<p>Module 5</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demonstration and Practice 35’</strong></p>
+<p>Explain how to make a custom projection
+system. Participants should follow along.</p>
+</td>
+<td><p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Projector</p>
+<p>Module 5</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="session-6">
+<h3>Session 6<a class="headerlink" href="#session-6" title="Link to this heading">¶</a></h3>
+<section id="working-with-vector-data">
+<h4>Working with Vector Data<a class="headerlink" href="#working-with-vector-data" title="Link to this heading">¶</a></h4>
+<p>Time : 135 minutes</p>
+<section id="id20">
+<h5>Basic Competency<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h5>
+<p>Use and understand vector data</p>
+</section>
+<section id="id21">
+<h5>Indicators<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand vector data</p></li>
+<li><p>Identify attributes of vector data</p></li>
+<li><p>Add vector layers</p></li>
+<li><p>Symbolise vector layers</p></li>
+</ol>
+</section>
+<section id="id22">
+<h5>Outcomes<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand how vector data works</p></li>
+<li><p>Add and symbolise vector layers</p></li>
+</ol>
+</section>
+<section id="id23">
+<h5>Core Material<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h5>
+<p><strong>Working with Vector Data</strong></p>
+<ol class="arabic simple">
+<li><p>Vector data</p></li>
+<li><p>Data attribute</p></li>
+<li><p>Add vector data</p></li>
+<li><p>Symbology</p></li>
+</ol>
+</section>
+<section id="id24">
+<h5>Activities<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p>Projector
+Computer</p>
+<p>Participant</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vector Data 75’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain what is vector data
+and examples of file formats. After
+explaining the theory of vector data,
+open sample file containing vector data
+in QGIS and show data points, lines and
+polygons.</p></li>
+<li><p>Demonstrate how to open
+vector data in QGIS. Guide the
+participants to open a sample file that contains
+vector data on each computer.</p></li>
+<li><p>Demonstrate how we can identify the
+attributes in the vector data and then let participants
+explore the contents of data attribute vector points,
+lines and polygon for approximately 5-10 minutes.</p></li>
+<li><p>Explain how vector data works in QGIS.
+Show how to change the symbols into symbols
+or shapes we want.</p></li>
+<li><p>Show that the appearance of symbols may differ
+at different magnification levels.
+Explain that it is important because we
+do not want to see messy map symbols when
+too many objects appear, especially if
+we have a map with a small scale.</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p>Projector</p>
+<p>Participant’s
+Computer</p>
+<p>File
+containing
+vector data</p>
+<p>Module 6</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Test 40’</strong></p>
+<p>Allow about 30 minutes for the participants so that
+they can practice independently in setting symbology
+of vector data. Ask participants to evaluate their
+partners’ work.</p>
+</td>
+<td><p>Practice</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Closing 5’</strong></p>
+<p>Ask participants to give reflections on
+this session.</p>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id25">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h5>
+<p><strong>When adding vector data, why doesn’t my vector data show up in the Open dialog?</strong></p>
+<p>Sometimes participants find it difficult to distinguish between the buttons to
+open vector data and raster data (because they are next to one another).
+Make sure participants click the correct button.</p>
+<p><strong>When adding vector data, why is there some data that does not appear on</strong>
+<strong>the QGIS display?</strong></p>
+<p>Check the order of the data layers in the Layers panel. Polygons should be
+at the bottom, followed by the lines, then the points at the top. Often one
+layer may overlap another layer.</p>
+<p><strong>Sometimes when using the Identify tool, the attribute window does not appear
+when we click on an object. Why?</strong></p>
+<p>Check that the vector data layer is selected in the Layers panel before clicking
+on objects to identify.</p>
+</section>
+</section>
+</section>
+<section id="session-7">
+<h3>Session 7<a class="headerlink" href="#session-7" title="Link to this heading">¶</a></h3>
+<section id="labels-and-classification">
+<h4>Labels and Classification<a class="headerlink" href="#labels-and-classification" title="Link to this heading">¶</a></h4>
+<p>Time : 135 minutes</p>
+<section id="id26">
+<h5>Basic Competency<a class="headerlink" href="#id26" title="Link to this heading">¶</a></h5>
+<p>Categorise and create labels from vector data</p>
+</section>
+<section id="id27">
+<h5>Indicators<a class="headerlink" href="#id27" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Explore attribute data of an object attributes and understand
+the uses of different types of data</p></li>
+<li><p>Add labels to vector layers</p></li>
+<li><p>Symbolise vector data using categories</p></li>
+</ol>
+</section>
+<section id="id28">
+<h5>Outcomes<a class="headerlink" href="#id28" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Add labels to vector features</p></li>
+<li><p>Symbolise data using categories</p></li>
+</ol>
+</section>
+<section id="id29">
+<h5>Core Material<a class="headerlink" href="#id29" title="Link to this heading">¶</a></h5>
+<p><strong>Labels and Classification</strong></p>
+<ol class="arabic simple">
+<li><p>Data attributes</p></li>
+<li><p>Tool label</p></li>
+<li><p>Classification</p></li>
+</ol>
+</section>
+<section id="id30">
+<h5>Activities<a class="headerlink" href="#id30" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demo and Practice  100’</strong></p>
+<ol class="arabic simple">
+<li><p>Demonstrate how to add labels to vector layers.
+Participants should follow along.</p></li>
+<li><p>Demonstrate how to symbolise features
+by categorising them.</p></li>
+</ol>
+</td>
+<td><p>Demo</p>
+<p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p>Projector</p>
+<p>Participant’s
+Computer</p>
+<p>File
+containing
+vector data</p>
+<p>Module 7</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 30’</strong></p>
+<p>Give a conclusion of this session. Ask
+participants to ask questions about the material
+provided, so that the discussion can go well.</p>
+</td>
+<td><p>Discussion</p></td>
+<td><p>Participant’s
+Computer</p>
+<p>Projector
+Microphone
+Module 7</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="session-8">
+<h3>Session 8<a class="headerlink" href="#session-8" title="Link to this heading">¶</a></h3>
+<section id="working-with-raster-data">
+<h4>Working with Raster Data<a class="headerlink" href="#working-with-raster-data" title="Link to this heading">¶</a></h4>
+<p>Time : 135 minutes</p>
+<section id="id31">
+<h5>Basic Competency<a class="headerlink" href="#id31" title="Link to this heading">¶</a></h5>
+<p>Use and understand raster data</p>
+</section>
+<section id="id32">
+<h5>Indicators<a class="headerlink" href="#id32" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Create raster data</p></li>
+<li><p>Change raster symbology</p></li>
+<li><p>Perform terrain analysis</p></li>
+</ol>
+</section>
+<section id="id33">
+<h5>Outcomes<a class="headerlink" href="#id33" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand how to change raster symbology</p></li>
+<li><p>Perform terrain analysis</p></li>
+</ol>
+</section>
+<section id="id34">
+<h5>Core Material<a class="headerlink" href="#id34" title="Link to this heading">¶</a></h5>
+<p><strong>Working with Raster Data</strong></p>
+<ol class="arabic simple">
+<li><p>How to load raster data</p></li>
+<li><p>Tool label</p></li>
+<li><p>Classification</p></li>
+</ol>
+</section>
+<section id="id35">
+<h5>Activities<a class="headerlink" href="#id35" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demo and Practice  100’</strong></p>
+<ol class="arabic simple">
+<li><p>Use the raster example file that is given to
+participants. Reiterate what
+is the difference between raster data and vector data.</p></li>
+<li><p>Show how to open and identify raster data
+in QGIS. Remember when showing
+raster and vector data at the same time the vector layers
+should be above the raster data to be visible.</p></li>
+<li><p>Change the raster symbology
+to make it more easily understood.
+Make the symbology as in the module text. If you
+want to change the symbology of raster data it
+will be better if the raster data has been given
+symbology before.</p></li>
+<li><p>Do terrain analysis and create a hillshade.</p></li>
+<li><p>Explain each step, especially
+if the participants have never worked with raster
+data. Ask the participants to pay attention and
+practice by themself.</p></li>
+</ol>
+</td>
+<td><p>Demo</p>
+<p>Practice</p>
+</td>
+<td><p>Projector</p>
+<p>Participant’s
+Computer</p>
+<p>File
+containing
+vector data</p>
+<p>Module 8</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 30’</strong></p>
+<p>Give a conclusion of the session working with
+raster data. Discuss the outcomes with participants.</p>
+</td>
+<td><p>Discussion</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id36">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id36" title="Link to this heading">¶</a></h5>
+<p><strong>How do we get raster data?</strong></p>
+<p>Raster data can be obtained from a variety of sources.
+SRTM can be downloaded at
+<a class="reference external" href="http://dwtkns.com/srtm/">http://dwtkns.com/srtm/</a>. Raster data associated with
+earthquakes can be obtained from
+<a class="reference external" href="http://earthquake.usgs.gov/earthquakes/shakemap/list.php">http://earthquake.usgs.gov/earthquakes/shakemap/list.php</a>.</p>
+</section>
+</section>
+</section>
+<section id="session-9">
+<h3>Session 9<a class="headerlink" href="#session-9" title="Link to this heading">¶</a></h3>
+<section id="creating-vector-layers">
+<h4>Creating Vector Layers<a class="headerlink" href="#creating-vector-layers" title="Link to this heading">¶</a></h4>
+<p>Time : 180 minutes</p>
+<section id="id37">
+<h5>Basic Competency<a class="headerlink" href="#id37" title="Link to this heading">¶</a></h5>
+<p>Create and edit new vector layers</p>
+</section>
+<section id="id38">
+<h5>Indicators<a class="headerlink" href="#id38" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Add a raster layer for digitising</p></li>
+<li><p>Create new vector features (polygon, lines and points)</p></li>
+<li><p>Digitise new vector layers by tracing a raster layer,
+considering topology</p></li>
+<li><p>Georeference an image</p></li>
+</ol>
+</section>
+<section id="id39">
+<h5>Outcomes<a class="headerlink" href="#id39" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Add raster layers</p></li>
+<li><p>Trace raster layers</p></li>
+<li><p>Georeference an image</p></li>
+</ol>
+</section>
+<section id="id40">
+<h5>Core Material<a class="headerlink" href="#id40" title="Link to this heading">¶</a></h5>
+<p><strong>Creating Vector Layers</strong></p>
+<ol class="arabic simple">
+<li><p>Adding raster layer</p></li>
+<li><p>Creating new vector feature</p></li>
+<li><p>Digitising new vector layer</p></li>
+<li><p>Georeference</p></li>
+</ol>
+</section>
+<section id="id41">
+<h5>Activities<a class="headerlink" href="#id41" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Creating New Vector Data Practice 80’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain that
+QGIS can also be used to digitise data. However,
+explain that the weakness of digitising through
+QGIS is that data is more difficult to share, unlike OSM.</p></li>
+<li><p>Explain also that things that can not be digitised in
+OSM can be digitised in QGIS, such as flood-
+prone areas or KRB areas. Vector data like this
+will be used for analysis in InaSAFE.</p></li>
+<li><p>Show how to digitise and the differences
+between digitising in QGIS and JOSM. Use the raster
+GeoTIFF file that has previously been given to the
+participants to do the digitisation process with QGIS.</p></li>
+<li><p>After that, participants may be asked whether they
+can digitise a map with image formats such as
+JPEG or PNG, for example in disaster prone areas
+map from BNPB. If no one asks, explain
+that if participants want to digitise from JPEG or
+PNG maps, the
+map coordinates should be
+determined first through the georeferencing process.</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>Practice</p>
+</td>
+<td><p>Projector</p>
+<p>Participant’s
+Computer</p>
+<p>Module 9</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Georeference Practice 80’</strong></p>
+<p>Give an example of a JPEG formatted map to
+participants and guide them to do georeferencing.</p>
+<p>It is important to note that
+before digitising
+over another map, make sure the participants know the
+data source and the map licence! Do not let the
+participants digitise from commercial maps without
+permission in the future!</p>
+</td>
+<td><p>Lecture</p>
+<p>Practice</p>
+</td>
+<td><p>Projector</p>
+<p>Participant’s
+Computer</p>
+<p>JPEG
+formatted
+maps</p>
+<p>Module 9</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Closing 15’</strong></p>
+<p>Guide the participants to reflect on
+what they have learned in this session and hold a
+Q &amp; A session / discussions before the giving
+the final conclusion for this session.</p>
+</td>
+<td><p>Lecture</p>
+<p>Discussion</p>
+<p>Q &amp; A</p>
+</td>
+<td><p>Projector</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="session-10">
+<h3>Session 10<a class="headerlink" href="#session-10" title="Link to this heading">¶</a></h3>
+<section id="vector-analysis-for-problem-solving">
+<h4>Vector Analysis for Problem Solving<a class="headerlink" href="#vector-analysis-for-problem-solving" title="Link to this heading">¶</a></h4>
+<p>Time : 210 minutes</p>
+<section id="id42">
+<h5>Basic Competency<a class="headerlink" href="#id42" title="Link to this heading">¶</a></h5>
+<p>Analyse vector data to solve problems</p>
+</section>
+<section id="id43">
+<h5>Indicators<a class="headerlink" href="#id43" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand the GIS process</p></li>
+<li><p>Identify addressable problems</p></li>
+<li><p>Understand data needs</p></li>
+<li><p>Start a QGIS project</p></li>
+<li><p>Analyse problems</p></li>
+<li><p>Identify hazard zones</p></li>
+<li><p>Look for important roads</p></li>
+<li><p>Look for medical facilities</p></li>
+<li><p>Buffer roads</p></li>
+<li><p>Buffer medical facilities</p></li>
+<li><p>Analyse overlapped areas</p></li>
+<li><p>Choose features by landuse type</p></li>
+</ol>
+</section>
+<section id="id44">
+<h5>Outcomes<a class="headerlink" href="#id44" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Conduct GIS analysis of a spatial problem</p></li>
+</ol>
+</section>
+<section id="id45">
+<h5>Core Material<a class="headerlink" href="#id45" title="Link to this heading">¶</a></h5>
+<p><strong>Vector Analysis for Problem Solving</strong></p>
+<ol class="arabic simple">
+<li><p>GIS Processes</p></li>
+<li><p>Problems</p></li>
+<li><p>Data</p></li>
+<li><p>Starting a project</p></li>
+<li><p>Analysing problems: farms and moors</p></li>
+<li><p>Hazard zone</p></li>
+<li><p>Searching for important roads</p></li>
+<li><p>Searching for health facilities</p></li>
+<li><p>Road Buffer</p></li>
+<li><p>Health Facilities Buffer</p></li>
+<li><p>Overlapped area</p></li>
+<li><p>Choosing farms and moors</p></li>
+<li><p>Choosing land area with right size</p></li>
+</ol>
+</section>
+<section id="id46">
+<h5>Activities<a class="headerlink" href="#id46" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Review 10’</strong></p>
+<p>In this session you will do a review regarding the
+materials from the previous day. You can ask a
+few questions to the participants about some
+subjects or you can also ask the participants about
+which subjects that were not clear yet for them.</p>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A</p>
+</td>
+<td><p><em>Previous</em>
+<em>materials</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Demonstration and Practice 150’</strong></p>
+<ol class="arabic simple">
+<li><p>This session should start with reviewing some
+types of GIS analysis that are provided in QGIS.
+Ask the participants to finish one analysis, for
+example buffer analysis, or any other analysis.</p></li>
+<li><p>The session continues with a simulation
+of a natural hazard happening in an
+area where they need IDP camps, areas affected,
+and the requirements to find a safe place.</p></li>
+<li><p>Explain that to solve
+the problems, they can use vector analysis in
+QGIS. The first thing to do is to practise
+how to determine the evacuation site,
+main roads, and hospital location. To
+determine them you can use the query builder
+feature in module 10. After that you can
+determine the distance from schools to roads
+and the range of hospitals with road buffer to
+determine the right location for IDP camp.</p></li>
+</ol>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Projector</p>
+<p>Module 10</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Vector Analysis Practice 25’</strong></p>
+<ol class="arabic simple">
+<li><p>This session is almost the same as the previous
+session. In this session you’ll explain more
+about vector
+analysis.</p></li>
+<li><p>Ask the participants to practice along with
+you. If any participants have already
+determined the evacuation sites, you can ask
+them to do another analysis such as practising
+how to determine which location is suitable
+for farming, etc.</p></li>
+</ol>
+</td>
+<td><p>Practice</p>
+<p>Module 10</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Projector</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 20’</strong></p>
+<p>Q &amp; A and discussion</p>
+</td>
+<td><p>Discussion</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id47">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id47" title="Link to this heading">¶</a></h5>
+<p><strong>Why does my buffer result look bigger than the one shown in the example?</strong></p>
+<p>This happens because of the projection.
+It just looks different because of the projection, but it is the same size
+in reality.</p>
+<p><strong>Why doesn’t the query builder result show up?</strong></p>
+<p>This is usually because of incorrect input into the query builder.
+Watch carefully what you input into the query builder.</p>
+</section>
+</section>
+</section>
+<section id="session-11">
+<h3>Session 11<a class="headerlink" href="#session-11" title="Link to this heading">¶</a></h3>
+<section id="using-map-composer">
+<h4>Using Map Composer<a class="headerlink" href="#using-map-composer" title="Link to this heading">¶</a></h4>
+<p>Time : 4 hours 30 minutes</p>
+<section id="id48">
+<h5>Basic Competency<a class="headerlink" href="#id48" title="Link to this heading">¶</a></h5>
+<p>Create maps with the Map Composer</p>
+</section>
+<section id="id49">
+<h5>Indicators<a class="headerlink" href="#id49" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Arrange map layout</p></li>
+<li><p>Add a new map</p></li>
+<li><p>Add title to a map</p></li>
+<li><p>Add graphic and numeric scales</p></li>
+<li><p>Add grid to a map</p></li>
+<li><p>Add an inset</p></li>
+<li><p>Customise the content of the legend</p></li>
+<li><p>Export a map to different formats (pdf, jpeg, svg)</p></li>
+</ol>
+</section>
+<section id="id50">
+<h5>Outcomes<a class="headerlink" href="#id50" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Maps that are well laid out and ready to print.</p></li>
+</ol>
+</section>
+<section id="id51">
+<h5>Core Material<a class="headerlink" href="#id51" title="Link to this heading">¶</a></h5>
+<p><strong>Using Map Composer</strong></p>
+<ol class="arabic simple">
+<li><p>Map Composer</p></li>
+<li><p>Adding new maps</p></li>
+<li><p>Adding a title to the map</p></li>
+<li><p>Adding scale</p></li>
+<li><p>Adding grids</p></li>
+<li><p>Adding inset</p></li>
+<li><p>Adding legend</p></li>
+<li><p>Printing the map</p></li>
+</ol>
+</section>
+<section id="id52">
+<h5>Activities<a class="headerlink" href="#id52" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Making a Map Layout 250’</strong></p>
+<ol class="arabic simple">
+<li><p>In this session you will be explain how to make
+maps that are ready to be printed using
+QGIS. First, you need to explain that it is
+important to change the projection system into
+mercator projection system (Universal Transverse
+Mercator/UTM) and ask participants to change
+all of the data projections into the same projection system.</p></li>
+<li><p>Ask what are the basic elements that should be put into a
+map and show some
+examples of good maps and bad maps. You should
+emphasise the basic elements of maps to the participants.</p></li>
+<li><p>Explain the interface of the
+Map Composer in QGIS. Explain the
+functions of the toolbars and then practice
+inputting the data into the composer page, and adjust
+the scale so all of the data that needs to be shown
+can be seen. Then add a map title.</p></li>
+<li><p>Add the compass rose and scale bar
+into the map. Explain
+that there are two types of scale, numerical and
+graphical. The numeric scale uses numbers to
+symbolise real distances. The
+graphical scale uses a scale bar to compare distance.</p></li>
+<li><p>The next elements that need to be added to the map
+are a legend, inset and grid. Explain why those
+elements are important. The legend needs to be
+shown because it help the map user understand
+the symbols contained in the map. Inset needs to be
+shown to show the location of the map from the
+smaller scale (for example 1:500.000 or
+1:5000.000). A grid makes it easier for us to
+determine the location through coordinates.</p></li>
+<li><p>After finishing the map, tell participants to save
+the print composer and about the
+formats that they can use in the print composer,
+such as .pdf, .jpeg and .svg, using the export feature.</p></li>
+</ol>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p><em>Powerpoint</em>
+<em>presentation</em></p>
+<p>Projector</p>
+<p>Module 11</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 20’</strong></p>
+<p>Q &amp; A and discussion</p>
+</td>
+<td><p>Discussion</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id53">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id53" title="Link to this heading">¶</a></h5>
+<p><strong>I put the correct numbers in the x and y intervals in the grid dialog,</strong>
+<strong>but why does the grid not show up?</strong></p>
+<p>This can occur because the map may still be using geographic projection
+(WGS 84), which is in decimal degrees. To make the x and y intervals, it
+is better to use the mercator projection system so that they intervals
+are in metres.</p>
+</section>
+</section>
+</section>
+<section id="session-12">
+<h3>Session 12<a class="headerlink" href="#session-12" title="Link to this heading">¶</a></h3>
+<section id="understanding-inasafe">
+<h4>Understanding InaSAFE<a class="headerlink" href="#understanding-inasafe" title="Link to this heading">¶</a></h4>
+<p>Time : 4 hours 30 minutes</p>
+<section id="id54">
+<h5>Basic Competency<a class="headerlink" href="#id54" title="Link to this heading">¶</a></h5>
+<p>Use InaSAFE</p>
+</section>
+<section id="id55">
+<h5>Indicators<a class="headerlink" href="#id55" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand the concept of hazard, exposure and impact data</p></li>
+<li><p>Understand how to determine impact</p></li>
+<li><p>Understand the InaSAFE interface</p></li>
+<li><p>Add hazard data</p></li>
+<li><p>Add unprocessed exposure data (vector and raster)</p></li>
+<li><p>Use the keywords editor</p></li>
+<li><p>Analyse impact</p></li>
+<li><p>Improve InaSAFE output map</p></li>
+<li><p>Save and print scenario results</p></li>
+</ol>
+</section>
+<section id="id56">
+<h5>Outcomes<a class="headerlink" href="#id56" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand InaSAFE and what it does</p></li>
+<li><p>Assemble an InaSAFE scenario</p></li>
+<li><p>Save and print scenario results</p></li>
+</ol>
+</section>
+<section id="id57">
+<h5>Core Material<a class="headerlink" href="#id57" title="Link to this heading">¶</a></h5>
+<p><strong>Understanding InaSAFE</strong></p>
+<ol class="arabic simple">
+<li><p>Hazard, Exposure, Impact</p></li>
+<li><p>InaSAFE interface</p></li>
+<li><p>Adding hazard data</p></li>
+<li><p>Adding exposure data</p></li>
+<li><p>Adding keyword in metadata</p></li>
+<li><p>Impact analysis</p></li>
+<li><p>Improving InaSAFE maps output</p></li>
+<li><p>Using print button</p></li>
+<li><p>Saving your work</p></li>
+</ol>
+</section>
+<section id="id58">
+<h5>Activities<a class="headerlink" href="#id58" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Lecture, Q &amp; A 30’</strong></p>
+<p>Ask the participants what is hazard,
+exposure and impact. Discuss and explain each in more
+detail. Give examples for each
+definition and explain how to get the relevant data.</p>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A</p>
+</td>
+<td><p><em>Slide PP</em></p>
+<p>Module 12</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Demonstration 30’</strong></p>
+<p>Explain the InaSAFE interface.
+Explain the following:</p>
+<ul class="simple">
+<li><p>Activating InaSAFE plugin toolbar</p></li>
+<li><p>How to change InaSAFE panel position in QGIS interface</p></li>
+<li><p>The question format in the InaSAFE panel
+The
+panels should be explained by the facilitators
+so that a question can be formed: <em>In the event of</em>
+<strong>[hazard]</strong> <em>how many</em> <strong>[exposure]</strong> <em>might</em> <strong>[impact]</strong> ?</p></li>
+<li><p>Explain the options in the InaSAFE plugin toolbar.</p></li>
+</ul>
+</td>
+<td><p>Demonstration</p></td>
+<td><p><em>Slide PP</em></p>
+<p>Module 12</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demonstration and Practice 45’</strong></p>
+<p>Explain how to add hazard and exposure
+data so that it can later be analysed in InaSAFE.
+Ask the participants to put hazard and exposure layer
+into QGIS. After that, ask the participants to
+open the attribute table for each hazard or exposure
+layer and check if the data has the right columns for
+InaSAFE analysis. If not, add the necessary columns.</p>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p><em>Slide PP</em></p>
+<p>Module 12</p>
+<p>Participants’
+computers</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Demonstration and Practice 60’</strong></p>
+<p>Explain how to use the keyword editor in
+InaSAFE so that data can be read and then
+ask the participants to follow along with what has been done.
+Use the Advanced Editor to add the source of the data.</p>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p><em>Slide PP</em></p>
+<p>Module 12</p>
+<p>Participants’
+computers</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demonstration, Lecture, and Practice 60’</strong></p>
+<p>Ask participants to run an analysis
+using InaSAFE. Describe the analysis results
+to participants,
+especially about how many objects or buildings are impacted.</p>
+</td>
+<td><p>Demonstration</p>
+<p>Lecture</p>
+<p>Practice</p>
+</td>
+<td><p><em>Slide PP</em></p>
+<p>Module 12</p>
+<p>Participants’
+computers</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Demonstration and Practice 30’</strong></p>
+<ol class="arabic simple">
+<li><p>Ask participants to improve their InaSAFE
+analysis to be more informative by:</p>
+<ol class="loweralpha simple">
+<li><p>Activating OpenLayers plugin with Bing
+Sat as the background</p></li>
+<li><p>Symbolising and labeling the data</p></li>
+</ol>
+</li>
+<li><p>Ask participants to print their InaSAFE
+results and explain the output from it. Output
+consists of two files, the map and the
+details of the analysis.</p></li>
+<li><p>Lastly, demonstrate how to save
+results, having the participants
+follow along.</p></li>
+</ol>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p><em>Slide PP</em></p>
+<p>Module 12</p>
+<p>Participants’
+computers</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Closing 10’</strong></p>
+<p>Q &amp; A and discussion</p>
+</td>
+<td><p>Discussion</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="session-13">
+<h3>Session 13<a class="headerlink" href="#session-13" title="Link to this heading">¶</a></h3>
+<section id="getting-support">
+<h4>Getting Support<a class="headerlink" href="#getting-support" title="Link to this heading">¶</a></h4>
+<p>Time : 60 minutes</p>
+<section id="id59">
+<h5>Basic Competency<a class="headerlink" href="#id59" title="Link to this heading">¶</a></h5>
+<p>Understand how to get support for QGIS and InaSAFE in Indonesia</p>
+</section>
+<section id="id60">
+<h5>Indicators<a class="headerlink" href="#id60" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Use social media to connect with InaSAFE community</p></li>
+<li><p>Access QGIS tutorial website</p></li>
+</ol>
+</section>
+<section id="id61">
+<h5>Outcomes<a class="headerlink" href="#id61" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Participants join the Forum Pengguna QGIS and InaSAFE</p></li>
+<li><p>Find the QGIS tutorial website</p></li>
+</ol>
+</section>
+<section id="id62">
+<h5>Core Material<a class="headerlink" href="#id62" title="Link to this heading">¶</a></h5>
+<p><strong>Getting Support</strong></p>
+<ol class="arabic simple">
+<li><p>Facebook</p></li>
+<li><p>QGIS tutorials</p></li>
+</ol>
+</section>
+<section id="id63">
+<h5>Activities<a class="headerlink" href="#id63" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 10’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p><em>Slide PP</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Demonstration and Practice 40’</strong></p>
+<ol class="arabic simple">
+<li><p>Show how participants can seek
+and get help remotely by using social media in
+the internet. Invite all of the participants into a
+QGIS and InaSAFE forum or group in Facebook.
+(Forum Pengguna QGIS dan InaSAFE)</p></li>
+<li><p>Show them some websites that can be useful for learning
+QGIS (<a class="reference external" href="http://manual.linfiniti.com">http://manual.linfiniti.com</a>) and InaSAFE
+(<a class="reference external" href="http://inasafe.org">http://inasafe.org</a>)</p></li>
+</ol>
+</td>
+<td><p>Demonstration</p>
+<p>Practice</p>
+</td>
+<td><p><em>Slide PP</em></p>
+<p>Module 13</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Closing 10’</strong></p>
+<p>Give a conclusion of the whole
+training.</p>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="osm-intermediate-toolkit.html"
+                   title="Unit 3 Facilitator Guide"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="osm-beginner-toolkit.html"
+                   title="Unit 1 Facilitator Guide"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

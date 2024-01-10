@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 4: Using GPS &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 5: Field Papers" href="105-field-papers.html" />
+    <link rel="prev" title="Module 3: Working with JOSM" href="103-working-with-josm.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/osm/104-using-gps.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/osm/104-using-gps.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 1: Data Collection Using OpenStreetMap Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 4: Using GPS</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="105-field-papers.html"
+                   title="Module 5: Field Papers"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="103-working-with-josm.html"
+                   title="Module 3: Working with JOSM"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="100-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="101-basic-concept-of-osm-website.html">Module 1: The OpenStreetMap Website</a></li>
+<li class="toctree-l5"><a class="reference internal" href="102-working-with-osm.html">Module 2: Working with OSM</a></li>
+<li class="toctree-l5"><a class="reference internal" href="103-working-with-josm.html">Module 3: Working with JOSM</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 4: Using GPS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="105-field-papers.html">Module 5: Field Papers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="106-editing-osm-with-josm.html">Module 6: Editing OpenStreetMap with JOSM</a></li>
+<li class="toctree-l5"><a class="reference internal" href="107-imagery-offset.html">Module 7: Imagery Offset</a></li>
+<li class="toctree-l5"><a class="reference internal" href="108-getting-osm-data.html">Module 8: Getting OSM Data</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../qgis-inasafe/index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image33.png" src="../../../../_images/image33.png" />
+<section id="module-4-using-gps">
+<span id="using-gps"></span><h1>Module 4: Using GPS<a class="headerlink" href="#module-4-using-gps" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand GPS and the types of GPS</p></li>
+<li><p>Turn on GPS</p></li>
+<li><p>Understand factors that affect GPS accuracy</p></li>
+<li><p>Understand tracks and waypoints</p></li>
+<li><p>Collect data using GPS</p></li>
+<li><p>GPS settings</p></li>
+<li><p>Copy GPS data (tracks and waypoints) to computer</p></li>
+<li><p>Open waypoints and tracks in JOSM</p></li>
+<li><p>Upload GPS tracks using JOSM</p></li>
+<li><p>Edit OSM based on GPS data in JOSM</p></li>
+</ul>
+<p>In this module we see what a GPS does and how it works. We explore
+how to operate a GPS and how to use it to create maps. We will
+explain how to operate the Garmin eTrex Vista HCx, a common GPS used for
+mapping. There are many other models of GPS which do the same thing, so if you
+are working with a different one, don’t worry - the principles remain the same.</p>
+<section id="what-is-gps">
+<h2>1. What is GPS?<a class="headerlink" href="#what-is-gps" title="Link to this heading">¶</a></h2>
+<p>A GPS is like a mobile phone, except that instead of receiving radio signals
+from telephone companies, it receives signals from satellites that are going
+around the Earth. By receiving these signals from the satellites,
+a GPS is able to calculate its exact location on the planet. It records
+this location in coordinates, which are two long numbers. One number tells
+you how far east or west you are - this is called <strong>longitude</strong>. The second
+number tells you how far north or south you are - this is called <strong>latitude</strong>.
+Every place on Earth has unique geographic coordinates.</p>
+<p>For example: -8.639298 Latitude, 116.311607 Longitude is a location in
+Lombok, Indonesia.</p>
+<figure class="align-center" id="id1">
+<img alt="../../../../_images/image34.png" src="../../../../_images/image34.png" />
+<figcaption>
+<p><span class="caption-text"><em>Google Earth software, showing coordinates of a place in Lombok, Indonesia.</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../../../_images/image35.png"><img alt="../../../../_images/image35.png" src="../../../../_images/image35.png" style="width: 200pt;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Garmin eTrex Vista HCx</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="turning-on-the-gps">
+<h2>2. Turning on the GPS<a class="headerlink" href="#turning-on-the-gps" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Before turning on your GPS, go outside where you have a clear view of the
+sky. Because the GPS determines your location by receiving signals from
+satellites, <strong>it won’t work indoors</strong>.</p></li>
+<li><p>On the right side of the GPS, press and hold the <span class="guilabel">Power</span> button.
+The GPS will start, and it will show you the Satellites page. You
+should see something like the image below. The GPS is looking for satellite signals.
+When it has connected to three or more satellites, it will have your location.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image36.png"><img alt="../../../../_images/image36.png" class="align-center" src="../../../../_images/image36.png" style="width: 225pt;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>Once your location is determined, the Satellites page will
+disappear and you will see the Main Menu.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image37.png"><img alt="../../../../_images/image37.png" class="align-center" src="../../../../_images/image37.png" style="width: 225pt;" /></a>
+</section>
+<section id="navigating-the-gps">
+<h2>3. Navigating the GPS<a class="headerlink" href="#navigating-the-gps" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="4">
+<li><p>The GPS has different pages and menus that allow you to do different
+things. To switch between pages, press the button marked <kbd class="kbd docutils literal notranslate">X</kbd>,
+just above the power button on the right side of the device. This button
+also serves to go back. If you press something by mistake and would like
+to cancel or go back, press the <kbd class="kbd docutils literal notranslate">X</kbd> button.</p></li>
+<li><p>By pressing the <kbd class="kbd docutils literal notranslate">X</kbd> button, you should be able to flip through different
+screens that will look something like this:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image51.png"><img alt="../../../../_images/image51.png" class="align-center" src="../../../../_images/image51.png" style="width: 225pt;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/image52.png"><img alt="../../../../_images/image52.png" class="align-center" src="../../../../_images/image52.png" style="width: 225pt;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/image53.png"><img alt="../../../../_images/image53.png" class="align-center" src="../../../../_images/image53.png" style="width: 225pt;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/image54.png"><img alt="../../../../_images/image54.png" class="align-center" src="../../../../_images/image54.png" style="width: 225pt;" /></a>
+<ol class="arabic simple" start="6">
+<li><p>Return to the Satellites page and see that you are
+connected to three or more satellites. In the upper left corner are your
+coordinates, your latitude and longitude.</p></li>
+<li><p>Flip to the Map page, and you can see a map of where you are. If you have
+added OpenStreetMap maps to your GPS, you may see roads and places.
+Otherwise, the map may look quite blank. Zoom in and out by pressing the
+up and down arrow buttons on the left side of the GPS.</p></li>
+</ol>
+</section>
+<section id="tracks-and-waypoints">
+<h2>4. Tracks and waypoints<a class="headerlink" href="#tracks-and-waypoints" title="Link to this heading">¶</a></h2>
+<p>A GPS records two kinds of information that are useful for creating maps
+or saving the coordinates of a place. First, it allows you to save your
+location in the memory of the GPS. When you save a location,
+the coordinates will be saved with a name. For example,
+your first saved point will be named 001, the second 002,
+and so on. When you save a point, you can write down the number on a piece
+of paper, along with a note about what it is, and any attributes or
+indicators you would like to collect. Saved locations on your GPS are called
+waypoints.</p>
+<p>Second, a GPS can save what are called tracks. While a waypoint only
+saves a single location, a track will save a series of locations wherever
+you move. For example, a track will record your location every one
+second, or every one metre, and the result will be a series of dots that
+show the path of where you have been. Tracks are useful for mapping objects
+that are represented by lines or shapes, such as the course of a road
+or the shape of a field.</p>
+<a class="reference internal image-reference" href="../../../../_images/image55.png"><img alt="../../../../_images/image55.png" class="align-center" src="../../../../_images/image55.png" style="width: 400pt;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A GPS can record a single point as well as a path of where you
+travel. Here the points are numbered in the order they are recorded.
+The path or <strong>track</strong> is shown with a green line and the
+<strong>waypoints</strong> are shown in red.</p>
+</div>
+</section>
+<section id="saving-your-location">
+<h2>5. Saving Your location<a class="headerlink" href="#saving-your-location" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="8">
+<li><p>To save your current location as a waypoint, click the <kbd class="kbd docutils literal notranslate">X</kbd> button until
+your reach the Main Menu. Using the joystick, move it so that <span class="guilabel">Mark</span>
+is highlighted on the screen. Push the joystick button down to open the
+Save Waypoint page.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image56.png"><img alt="../../../../_images/image56.png" class="align-center" src="../../../../_images/image56.png" style="width: 225pt;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/image57.png"><img alt="../../../../_images/image57.png" class="align-center" src="../../../../_images/image57.png" style="width: 225pt;" /></a>
+<p>You can see on this page some information about the waypoint that you are
+saving. First is the name. If this is your first waypoint,
+it probably reads “001”. This is the number you should record on paper
+along with the information you want to collect with this object. Next you
+will see the time and date when the point is recorded. Below that are the
+coordinates, followed by the altitude.</p>
+<ol class="arabic simple" start="9">
+<li><p>Use the joystick to move to the <span class="guilabel">OK</span> button at the bottom of the
+screen. Press the joystick button down to save this point. Be sure to write
+down the number of the point, along with what the place is and any other
+information you want to record about the place in your notebook.</p></li>
+<li><p>Press the <kbd class="kbd docutils literal notranslate">X</kbd> button to go to the Map page. You should now see your point
+on the map.</p></li>
+</ol>
+</section>
+<section id="turning-on-the-track-log">
+<span id="turn-on-track-log"></span><h2>6. Turning on the Track Log<a class="headerlink" href="#turning-on-the-track-log" title="Link to this heading">¶</a></h2>
+<p>Now that we have learned how to save points, let’s learn how to turn the
+track log on and off. When the track log is turned on,
+it will automatically record your path. It’s good practice to turn on the
+log when you begin mapping, and turn it off when you are finished. You
+will then be able to look at the track on a computer and see the path that
+you mapped. If you would like to map the course of a road,
+it is a good idea to save a waypoint at the beginning and end of the road,
+writing in your notebook the name and type of the road,
+and any other important information about the road.</p>
+<ol class="arabic simple" start="11">
+<li><p>Click the <kbd class="kbd docutils literal notranslate">X</kbd> button until your reach the page
+that says Track Log.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image58.png"><img alt="../../../../_images/image58.png" class="align-center" src="../../../../_images/image58.png" style="width: 225pt;" /></a>
+<ol class="arabic simple" start="12">
+<li><p>To empty the track log (to delete earlier recordings),
+use the joystick to select <span class="guilabel">Clear</span>, and press the joystick down.
+The bar at the top should read “0%”.</p></li>
+<li><p>To turn on the log, move the joystick to highlight <span class="guilabel">On</span>,
+and press the joystick down. The track log is now recording your path.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Under <span class="guilabel">Setup</span>, you also can set time or distance
+intervals to track. Time intervals instruct your GPS to record your location
+at given intervals. If you have a memory card in your GPS, it is good
+practice to set this to one second, meaning that every second your location
+will be added to the track log. This may be useful when detailed surveys are
+needed.</p>
+<p>See <a class="reference internal" href="#gps-settings-tracks"><span class="std std-ref">GPS Settings</span></a> for more information on setting
+up the track log.</p>
+</div>
+<ol class="arabic simple" start="14">
+<li><p>Press the <kbd class="kbd docutils literal notranslate">X</kbd> button to go to the Map page. As you move you will see
+your track shown as a series of dots.</p></li>
+</ol>
+</section>
+<section id="gps-settings">
+<h2>7. GPS settings<a class="headerlink" href="#gps-settings" title="Link to this heading">¶</a></h2>
+<p>Here we demonstrate how to edit some of the core settings of the GPS
+device. Use this as a reference to set up your GPS properly.</p>
+<section id="system-settings">
+<h3>7.1. System settings<a class="headerlink" href="#system-settings" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="15">
+<li><p>Go to the Main Menu by using the <span class="guilabel">Page</span> button
+(the <kbd class="kbd docutils literal notranslate">X</kbd> button on the right side of the device). Use the joystick
+to click <span class="guilabel">Setup</span>, and then click on <span class="guilabel">System</span>.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image38.png"><img alt="../../../../_images/image38.png" class="align-center" src="../../../../_images/image38.png" style="width: 175pt;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/image39.png"><img alt="../../../../_images/image39.png" class="align-center" src="../../../../_images/image39.png" style="width: 175pt;" /></a>
+<p>Some of the settings that can be changed on the <span class="guilabel">System</span> menu
+are as follows:</p>
+<ul class="simple">
+<li><p><strong>GPS</strong>: regulates how the GPS sensor works. Choose the <span class="guilabel">Normal</span>
+option. This tells the device to capture only signals from GPS satellites.
+The only drawback is that positional accuracy may sometimes be
+less accurate (about 10-30 metres).</p></li>
+<li><p><strong>WAAS/EGNOS</strong>: WAAS stands for Wide Area Augmentation System,
+while EGNOS stands for Euro Geostationary Navigation Overlay Service.
+WAAS/EGNOS is a system of satellites and ground stations that provide GPS
+signal corrections, giving you a better position accuracy (to less than
+three metres). Ensure that it is <span class="guilabel">Enabled</span>. The drawback
+to this feature is that although it provides better accuracy, it will
+use the GPS battery more quickly.</p></li>
+</ul>
+<img alt="../../../../_images/image40.png" class="align-center" src="../../../../_images/image40.png" />
+<ul class="simple">
+<li><p><strong>Battery Type</strong>: To optimise power usage, this should match the type of battery
+in the device. The default is Alkaline.</p></li>
+<li><p><strong>Text Language</strong>: Choose the language for the device.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../../_images/image41.png"><img alt="../../../../_images/image41.png" class="align-center" src="../../../../_images/image41.png" style="width: 175pt;" /></a>
+</section>
+<section id="unit-settings">
+<h3>7.2. Unit settings<a class="headerlink" href="#unit-settings" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="16">
+<li><p>From the Main Menu, go to <span class="menuselection">Setup ‣ Units</span>. Here the
+type of measurement units can be set, such as metres, feet and more.
+The location unit format is also set here (decimal degrees, decimal
+minutes degrees, second minutes degrees), datum (standard WGS 84) and
+projection (standard WGS 84).</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image42.png"><img alt="../../../../_images/image42.png" class="align-center" src="../../../../_images/image42.png" style="width: 175pt;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/image43.png"><img alt="../../../../_images/image43.png" class="align-center" src="../../../../_images/image43.png" style="width: 175pt;" /></a>
+</section>
+<section id="time-settings">
+<h3>7.3. Time settings<a class="headerlink" href="#time-settings" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="17">
+<li><p>From the Main Menu, go to <span class="menuselection">Setup ‣ Time</span>. Here the time
+format is set (12 hours or 24 hours) as well as the time zone. It is good
+to have the local time set, because all tracks and waypoints
+saved in the device are also saved with the current time.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image44.png"><img alt="../../../../_images/image44.png" class="align-center" src="../../../../_images/image44.png" style="width: 175pt;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/image45.png"><img alt="../../../../_images/image45.png" class="align-center" src="../../../../_images/image45.png" style="width: 175pt;" /></a>
+</section>
+<section id="page-settings">
+<h3>7.4. Page settings<a class="headerlink" href="#page-settings" title="Link to this heading">¶</a></h3>
+<p>Remember that when you press the <span class="guilabel">Page</span> button (the <kbd class="kbd docutils literal notranslate">X</kbd>)
+you are able to switch between different menus. By editing the page
+settings, the pages, as well as their order, may be customised.</p>
+<ol class="arabic simple" start="18">
+<li><p>From the Main Menu, go to <span class="menuselection">Setup ‣ Page Sequence</span>.</p></li>
+<li><p>Add a new page to the list by selecting <span class="guilabel">Add Page</span>. Then select
+a page such as: <span class="guilabel">Tracks</span> (to see details of your trip),
+<span class="guilabel">Map</span> (to view maps), or <span class="guilabel">Satellite</span> (to view the
+satellite status, position, and accuracy).</p></li>
+<li><p>Click on one of the pages to move it around the list and change
+the order in which the pages flip.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image46.png"><img alt="../../../../_images/image46.png" class="align-center" src="../../../../_images/image46.png" style="width: 175pt;" /></a>
+<a class="reference internal image-reference" href="../../../../_images/image47.png"><img alt="../../../../_images/image47.png" class="align-center" src="../../../../_images/image47.png" style="width: 175pt;" /></a>
+</section>
+<section id="track-settings">
+<span id="gps-settings-tracks"></span><h3>7.5. Track settings<a class="headerlink" href="#track-settings" title="Link to this heading">¶</a></h3>
+<p>Remember that <a class="reference internal" href="#turn-on-track-log"><span class="std std-ref">tracks</span></a> are a bread-crumb trail
+recording your movement, which is useful for mapping roads. On the Track
+page there are several settings.</p>
+<ol class="arabic simple" start="21">
+<li><p>From the Track page, click <span class="guilabel">Setup</span>.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image49.png"><img alt="../../../../_images/image49.png" class="align-center" src="../../../../_images/image49.png" style="width: 175pt;" /></a>
+<p>The settings are as follows:</p>
+<ul class="simple">
+<li><p><strong>Wrap When Full</strong>: This option should be checked. It means that when the GPS
+runs out of internal memory, it will start overwriting the oldest trackpoints
+to record new ones. It is a good idea to keep this checked, although typically
+you will be recording tracks to a memory card anyway, making this option
+unimportant.</p></li>
+<li><p><strong>Record Method</strong>: There are several ways the GPS can record track points:</p>
+<ul>
+<li><p><em>Distance</em>: tracks a new point each time a certain distance has been covered</p></li>
+<li><p><em>Time</em>: tracks a new point when an amount of time has elapsed</p></li>
+<li><p><em>Auto</em>: automatically choose method (typically this should be selected)</p></li>
+</ul>
+</li>
+<li><p><strong>Interval</strong>: This setting indicates how often the GPS will record the track,
+depending on the method selected in <strong>Record Method</strong>. Using a high setting
+(collecting many points) here will result in tracks that are smooth and
+detailed but will also drain the battery faster. If <strong>Record Method</strong> is set
+to <em>Auto</em>, the <strong>Interval</strong> options will be as follows:</p>
+<ul>
+<li><p><em>Most often</em></p></li>
+<li><p><em>More often</em></p></li>
+<li><p><em>Normal</em></p></li>
+<li><p><em>Less often</em></p></li>
+<li><p><em>Least often</em></p></li>
+</ul>
+</li>
+</ul>
+<p>If <strong>Record Method</strong> is set to <em>Distance</em> or <em>Time</em>, the options will allow
+you to set a matching unit of measurement.</p>
+<ul class="simple">
+<li><p><strong>Color</strong>: This setting is for defining the colour of the track line as
+shown on the GPS map page.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../../../../_images/image50.png"><img alt="../../../../_images/image50.png" class="align-center" src="../../../../_images/image50.png" style="width: 175pt;" /></a>
+</section>
+</section>
+<section id="copying-waypoints-and-tracks-to-the-computer">
+<h2>8. Copying waypoints and tracks to the computer<a class="headerlink" href="#copying-waypoints-and-tracks-to-the-computer" title="Link to this heading">¶</a></h2>
+<section id="attaching-gps-to-the-computer">
+<h3>8.1. Attaching GPS to the computer<a class="headerlink" href="#attaching-gps-to-the-computer" title="Link to this heading">¶</a></h3>
+<p>When you are finished mapping with the GPS you will want to copy the
+points and tracks to your computer so that you can open them in JOSM.</p>
+<ol class="arabic simple" start="22">
+<li><p>First, turn off the track log on your GPS by going to the Track page and
+selecting <span class="guilabel">Off</span>.</p></li>
+<li><p>Attach the GPS to your computer with the cable. One end should plug into
+your computer’s USB port, and the other goes into the back of the GPS,
+beneath the rubber flap at the top. The GPS should be turned on to copy
+the points and tracks.</p></li>
+</ol>
+</section>
+<section id="installing-gps-drivers">
+<h3>8.2. Installing GPS drivers<a class="headerlink" href="#installing-gps-drivers" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="24">
+<li><p>You may need to install GPS drivers on your computer. Open your training
+folder and find <code class="file docutils literal notranslate"><span class="pre">software/USBDrivers_23.exe</span></code>. Double-click it and
+install.</p></li>
+<li><p>If you don’t have this file, you can download it. Open your internet
+browser and go to: <a class="reference external" href="http://www8.garmin.com/support/download_details.jsp?id=591">http://www8.garmin.com/support/download_details
+.jsp?id=591</a></p></li>
+<li><p>Click <span class="guilabel">Download</span> to get the installation file. Locate it on your
+computer, and double-click to install.</p></li>
+</ol>
+</section>
+<section id="getting-the-gpsbabel-setup-program">
+<h3>8.3. Getting the GPSBabel setup program<a class="headerlink" href="#getting-the-gpsbabel-setup-program" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="27">
+<li><p>GPSBabel is a program that allows us to copy data from the GPS. It is
+saved as <code class="file docutils literal notranslate"><span class="pre">GPSBabel-1.5.1-Setup</span></code> in the <code class="file docutils literal notranslate"><span class="pre">software</span></code> folder (the
+exact version number may be different).</p></li>
+<li><p>If you don’t have GPSbabel already, open your web browser and go to
+<a class="reference external" href="http://www.gpsbabel.org">www.gpsbabel.org</a>.</p></li>
+<li><p>Click <span class="guilabel">Downloads</span> at the top of the page.</p></li>
+<li><p>Scroll down the page. If your computer uses Windows,
+you want to download the installation file for Windows. Click
+<code class="file docutils literal notranslate"><span class="pre">GPSBabel-1.5.1-Setup.exe</span></code>. The file will be downloaded to
+your computer.</p></li>
+</ol>
+</section>
+<section id="installing-gpsbabel">
+<h3>8.4. Installing GPSBabel<a class="headerlink" href="#installing-gpsbabel" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="31">
+<li><p>Locate the GPSBabel setup file on your computer. Double-click it to install.</p></li>
+<li><p>Click <span class="guilabel">Next</span>.</p></li>
+<li><p>Click <span class="guilabel">I accept</span> and <span class="guilabel">Next</span>.</p></li>
+<li><p>Continue clicking <span class="guilabel">Next</span> until the program installs.</p></li>
+<li><p>When the program has finished installing, click <span class="guilabel">Finish</span> to start
+GPSBabel.</p></li>
+</ol>
+</section>
+<section id="copying-tracks-and-waypoints">
+<h3>8.5. Copying Tracks and Waypoints<a class="headerlink" href="#copying-tracks-and-waypoints" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="36">
+<li><p>Click in the circle next to the word <span class="guilabel">Device</span> at the top of the
+window.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image59.png"><img alt="../../../../_images/image59.png" class="align-center" src="../../../../_images/image59.png" style="width: 400pt;" /></a>
+<ol class="arabic simple" start="37">
+<li><p>In the drop-down menu labelled <span class="guilabel">Format</span>, select
+<span class="guilabel">Garmin serial/USB protocol</span></p></li>
+<li><p>Go down to the middle of the window, under <span class="guilabel">Output</span>. In the
+drop-down menu labelled <span class="guilabel">Format</span>, select <span class="guilabel">GPX XML</span>:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image60.png"><img alt="../../../../_images/image60.png" class="align-center" src="../../../../_images/image60.png" style="width: 300pt;" /></a>
+<ol class="arabic simple" start="39">
+<li><p>Click <span class="guilabel">File Name</span> and type a name for your saved file. It should be
+something that describes the data, such as the date and the location. For
+example: <code class="file docutils literal notranslate"><span class="pre">jakarta-07-07-2011</span></code>.</p></li>
+<li><p>Make sure your GPS is connected to the computer and turned on.</p></li>
+<li><p>Click <span class="guilabel">Apply</span> in the bottom right corner of the window.</p></li>
+<li><p>If all goes well you should see a bar move across the screen,
+indicating that the data is being retrieved from the GPS. When it is
+finished, your points and track will be saved in the file that you selected.</p></li>
+</ol>
+</section>
+<section id="opening-in-josm">
+<h3>8.6. Opening in JOSM<a class="headerlink" href="#opening-in-josm" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple" start="43">
+<li><p>Now open JOSM. Go to <span class="menuselection">File ‣ Open…</span></p></li>
+<li><p>Find and select the file that you created with GPSBabel. Click
+<span class="guilabel">Open</span>.</p></li>
+</ol>
+<p>You should now see your points and tracks loaded into JOSM.</p>
+<img alt="../../../../_images/image61.png" class="align-center" src="../../../../_images/image61.png" />
+</section>
+</section>
+<section id="uploading-gps-data-in-josm">
+<h2>9. Uploading GPS data in JOSM<a class="headerlink" href="#uploading-gps-data-in-josm" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are not interested in sharing your tracks publicly on OSM,
+feel free to skip this section.</p>
+</div>
+<p>Adding GPS tracks to the OSM server is useful because it enables other users
+to see and use your tracks. For those who do not have a GPS or who can’t
+access a location, they are still able to benefit from your work and
+help improve the map.</p>
+<p>The easiest way to upload GPS tracks is to download the JOSM plugin
+<span class="guilabel">DirectUpload</span>:</p>
+<ol class="arabic simple" start="45">
+<li><p>Open JOSM and go to <span class="menuselection">Edit ‣ Preferences</span>. Click the plugins
+tab.</p></li>
+<li><p>Type <kbd class="kbd docutils literal notranslate">directupload</kbd> in the <span class="guilabel">Search</span> box. Check the box next
+to the plugin, and then click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../../../_images/image62.png"><img alt="../../../../_images/image62.png" class="align-center" src="../../../../_images/image62.png" style="width: 300pt;" /></a>
+<ol class="arabic simple" start="47">
+<li><p>Restart JOSM.</p></li>
+<li><p>Open your GPX file in JOSM.</p></li>
+<li><p>Go to <span class="menuselection">Tools ‣ Upload Traces</span></p></li>
+</ol>
+<img alt="../../../../_images/image63.png" class="align-center" src="../../../../_images/image63.png" />
+<ol class="arabic simple" start="50">
+<li><p>Add tags, a description, and choose an option for whom to make the track
+visible. Unless you have a reason for doing otherwise, choose
+<span class="guilabel">Public</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image64.png" class="align-center" src="../../../../_images/image64.png" />
+<ol class="arabic simple" start="51">
+<li><p>Click <span class="guilabel">Upload Trace</span>. If requested to enter a username and password,
+enter the credentials of your OSM account and click
+<span class="guilabel">Authenticate</span>.</p></li>
+</ol>
+<p><a class="reference internal" href="105-field-papers.html#field-papers"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="105-field-papers.html"
+                   title="Module 5: Field Papers"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="103-working-with-josm.html"
+                   title="Module 3: Working with JOSM"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

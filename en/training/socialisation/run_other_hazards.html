@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Other Hazards &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Frequently Asked Questions" href="faq.html" />
+    <link rel="prev" title="Run Intermediate InaSAFE" href="run_intermediate_inasafe.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/socialisation/run_other_hazards.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/socialisation/run_other_hazards.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Socialisation Training Manual</a>
+                </li>
+                
+
+                <li><a href="#">Other Hazards</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="faq.html"
+                   title="Frequently Asked Questions"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="run_intermediate_inasafe.html"
+                   title="Run Intermediate InaSAFE"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Socialisation Training Manual</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#project-name-is-funded-by">InaSAFE is funded by:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#preface">Preface</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#course-media">Course media</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="objective.html">Course objectives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="introduction.html">Introducing InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inasafe_concepts.html">InaSAFE concepts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="datasets.html">Datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="introduction_to_qgis.html">Introduction to QGIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_basic_inasafe.html">Run Basic InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_intermediate_inasafe.html">Run Intermediate InaSAFE</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Other Hazards</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#learning-objectives">Learning objectives:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#data-for-this-exercise">Data for This Exercise:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#run-project-name-for-earthquake">1. Run InaSAFE for Earthquake</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#run-project-name-for-tsunami">2. Run InaSAFE for Tsunami</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#run-project-name-for-volcano">3. Run InaSAFE for Volcano</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#generic-hazard-impact-function-in-project-name">4. Generic Hazard Impact Function in InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/inasafe_logo.png" src="../../_images/inasafe_logo.png" />
+<section id="other-hazards">
+<span id="run-other-hazards"></span><h1>Other Hazards<a class="headerlink" href="#other-hazards" title="Link to this heading">¶</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>InaSAFE was designed to predict the result of a disaster by giving us the potential impact on buildings, populations and roads based on specific scenarios.
+From previous exercises, we have learned how to use Basic and Intermediate InaSAFE functionality.
+We also learned about using tools in InaSAFE such as define keywords, configure minimum needs and area analysis,
+using aggregation as well as many others.</p>
+<p>In previous exercises, we used the “flooding in Jakarta” scenario and related data to learn InaSAFE functionality.
+In addition to floods, InaSAFE impact analyses can be run for many hazard types including earthquakes, tsunamis and volcanos.
+In this exercise, we will explore and learn to run other hazard scenarios in InaSAFE using InaSAFE dock and InaSAFE Function Centric Wizard.
+Last but not least, we will also use the Generic Impact Function.</p>
+</section>
+<section id="learning-objectives">
+<h2>Learning objectives:<a class="headerlink" href="#learning-objectives" title="Link to this heading">¶</a></h2>
+<p>To improve the participant’s understanding of how to use InaSAFE to run impact analyses for hazards other than floods.
+By the end of this exercise, participants will be able to:</p>
+<ul class="simple">
+<li><p>Run InaSAFE with other hazards such as Earthquakes, Tsunamis and Volcanos;</p></li>
+<li><p>Be able to read metadata and assign keywords to hazard data;</p></li>
+<li><p>Be able to use the InaSAFE dock and the InaSAFE Function Centric Wizard; and</p></li>
+<li><p>Be able to use the Generic Impact Function and understand how to use it to work with their own data.</p></li>
+</ul>
+</section>
+<section id="data-for-this-exercise">
+<h2>Data for This Exercise:<a class="headerlink" href="#data-for-this-exercise" title="Link to this heading">¶</a></h2>
+<p>The data used for this exercise is the same as that used in previous exercises. The data can be downloaded from InaSAFE <a class="reference external" href="http://data.inasafe.org/Socialisation%20Training/">Training Data Packages</a>
+Once the data has been downloaded, we will use the following QGIS project file and spatial data:</p>
+<ul class="simple">
+<li><p>Padang.qgs</p></li>
+<li><p>Maumere.qgs</p></li>
+<li><p>Nagekeo.qgs</p></li>
+<li><p>Padang_village_boundary_WGS84.shp</p></li>
+<li><p>West_Sumatera_Population_WGS84.shp</p></li>
+<li><p>Padang_EQ_2009_WGS84.tif</p></li>
+<li><p>Maumere_Tsunami_WGS84.tif</p></li>
+<li><p>Maumere_Buildings_WGS84.shp</p></li>
+<li><p>Sikka_Village_Boundary_WGS84.shp</p></li>
+<li><p>Sinabung_Hazard_Map_2015_WGS84.shp</p></li>
+<li><p>Sinabung_buildings_WGS84.shp</p></li>
+<li><p>NGK_Landslide_Vulnerability_WGS84.shp</p></li>
+<li><p>NGK_Buildings_WGS84.shp</p></li>
+<li><p>NGK_Population_WGS84.tif</p></li>
+<li><p>NGK_Villages_BPS_WGS84.shp</p></li>
+</ul>
+</section>
+<section id="run-project-name-for-earthquake">
+<h2>1. Run InaSAFE for Earthquake<a class="headerlink" href="#run-project-name-for-earthquake" title="Link to this heading">¶</a></h2>
+<section id="run-project-name-for-building">
+<h3>1.1 Run InaSAFE for Building<a class="headerlink" href="#run-project-name-for-building" title="Link to this heading">¶</a></h3>
+<section id="a-open-project">
+<h4>a. Open Project<a class="headerlink" href="#a-open-project" title="Link to this heading">¶</a></h4>
+<p>Indonesia’s location on the edges of the Pacific, Eurasian, and Australian tectonic plates makes it not only a site of numerous volcanoes but also frequent earthquakes.
+The hazard layer we are going to use for this example has been provided by Badan Geologi and AIFDR, Australian Government and describes the shaking or Modified Mercalli Intensity (MMI) Scale.</p>
+<p>This particular scenario is a modelled version of the 2009 Padang earthquake. Please open QGIS project file <code class="file docutils literal notranslate"><span class="pre">Padang.qgs</span></code> from the <code class="file docutils literal notranslate"><span class="pre">InSAFE</span> <span class="pre">Training</span> <span class="pre">Data</span> <span class="pre">&gt;</span> <span class="pre">West</span> <span class="pre">Sumatera</span></code> folder. Once opened, you will see the below :</p>
+<img alt="../../_images/other_hazard_01.png" class="align-center" src="../../_images/other_hazard_01.png" />
+<p>In the InaSAFE dock, note that the InaSAFE form is still empty. It means that your hazard and exposure data does not yet have keywords assigned.
+Therefore, you must first define keywords for each dataset in the project.</p>
+<p>To define keywords, please click on the <span class="guilabel">Keywords Creation Wizard</span> icon and follow the instructions provided.
+You can refer back to the <a class="reference internal" href="run_intermediate_inasafe.html#run-intermediate-inasafe"><span class="std std-ref">Run Intermediate InaSAFE</span></a> module for step-by-step instructions.</p>
+<p>While you define the hazard layer, please select hazard classifications for each exposure type. In this example, you must choose ‘Earthquake MMI Classes’ on Population and ‘Generic Classes’ on Structures Classifications to edit the threshold. Do not forget to save the thresholds before you continue to the next step.</p>
+<img alt="../../_images/other_hazard_02.png" class="align-center" src="../../_images/other_hazard_02.png" />
+<p>Once you have finished defining keywords for each layer, your InaSAFE form should look like this :</p>
+<img alt="../../_images/other_hazard_03.png" class="align-center" src="../../_images/other_hazard_03.png" />
+</section>
+<section id="b-run-project-name">
+<h4>b. Run InaSAFE<a class="headerlink" href="#b-run-project-name" title="Link to this heading">¶</a></h4>
+<p>Once your InaSAFE dock appears the same as the above image, you are ready to run an earthquake analysis on buildings.
+It poses the question “In the event of an <strong>Earthquake in Padang 2009</strong>”, how many <strong>buildings</strong> will <strong>be affected?</strong>.
+Click <span class="guilabel">Run</span> on the bottom right corner in your InaSAFE Dock. If everything was set up correctly, you should get a result in the dock area after a few seconds, and a new map layer should be added to the map.
+The new layer is named <strong>Number of Buildings</strong>.</p>
+<img alt="../../_images/other_hazard_04.png" class="align-center" src="../../_images/other_hazard_04.png" />
+</section>
+<section id="c-interpret-the-results">
+<h4>c. Interpret the Results<a class="headerlink" href="#c-interpret-the-results" title="Link to this heading">¶</a></h4>
+<p>Let’s take a look at the new data layer generated from InaSAFE.</p>
+<ul class="simple">
+<li><p>Zoom in to any area in the Map Canvas</p></li>
+<li><p>There will be three new different colours generated from InaSAFE (light yellow, orange, and red).</p></li>
+<li><p>The red buildings are located in highly affected areas which have MMI Values greater than 8 MMI. The orange buildings are located in medium affected areas which have MMI between 6 to 8 MMI while the light yellow buildings are considered located in areas with low impact which have MMI Values of less than 6 MMI.</p></li>
+<li><p>Click <span class="guilabel">Number of Buildings</span> in the layer list to select it, click the <span class="guilabel">Identify Feature</span> tool, and then click on building to view attributes of the building.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Default Threshold  for Earthquake are 0-6 MMI for Low Threshold, 6.1-8 MMI for Medium and more than 8 MMI for high threshold. You can change the threshold of MMI Value for each affected area before running InaSAFE. Please run keyword wizard again and click Edit on Earthquake on Building. Don’t forget to click Save. This configuration will make your result different with Run InaSAFE using default threshold.</p>
+</div>
+<img alt="../../_images/other_hazard_05.png" class="align-center" src="../../_images/other_hazard_05.png" />
+<p>In the InaSAFE panel we now see the impact summary. Details are explained below.</p>
+<img alt="../../_images/other_hazard_06.png" class="align-center" src="../../_images/other_hazard_06.png" />
+<ul class="simple">
+<li><p><strong>General report:</strong> shows estimated number of buildings based on hazard zone and structures. <strong>Hazard zone</strong> divides the results into several categories based on the threshold set in the hazard analysis. In this impact summary, InaSAFE divides the impact buildings into three categories based on MMI. <strong>Structures</strong>  divides the results that shows the count of affected, not affected and not exposed buildings.</p></li>
+<li><p><strong>Analysis detail:</strong> divides the exposed buildings into several categories based on the building type attribute for each building. In this impact summary, InaSAFE breaks down the results into a more detailed report by looking at each type of the building.</p></li>
+<li><p><strong>Action checklist:</strong> designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.</p></li>
+<li><p><strong>Notes and assumptions:</strong> provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains why buildings are said to be inundated, wet and dry.</p></li>
+<li><p><strong>Aggregation result:</strong> statistical breakdown of the number of results. This example shows the count of important infrastructure. When you choose to use an aggregation layer with your analysis (we will do this later) this table will show the number of buildings by aggregation boundary.</p></li>
+<li><p><strong>Analysis details (source):</strong> explanation of where the hazard data, exposure data, aggregation come from.</p></li>
+</ul>
+</section>
+</section>
+<section id="run-project-name-for-population">
+<h3>1.2 Run InaSAFE for Population<a class="headerlink" href="#run-project-name-for-population" title="Link to this heading">¶</a></h3>
+<p>We are now ready to run our second InaSAFE analysis using earthquake data in Padang. We will be working with the same earthquake data again, but this time looking at the number of impacted people in a specific area.
+If you finished defining keywords, these data should have keywords assigned so you will be ready to run InaSAFE.</p>
+<p>In QGIS, turn off the <strong>Buildings</strong> and <strong>estimated buildings affected</strong> (the layers generated from InaSAFE analysis and turn ON the population layer).
+Because we want to look at the number people who might be killed or displaced in a specific area, we also need to turn ON <strong>the Village</strong> layer in QGIS.
+This layer will be used as an aggregation layer that can show us the result for each administrative area.
+If you forget the steps needed to define a layer as an aggregation, please refer to the <a class="reference internal" href="run_intermediate_inasafe.html#run-intermediate-inasafe"><span class="std std-ref">Run Intermediate InaSAFE.</span></a></p>
+<p>Confirm that the InaSAFE panel on the right side is set to query how many people will be affected :</p>
+<ul class="simple">
+<li><p>Earthquake in Padang 2009</p></li>
+<li><p>People</p></li>
+<li><p>Village</p></li>
+</ul>
+<p>Your InaSAFE form should appear like the below screenshoot:</p>
+<img alt="../../_images/other_hazard_07.png" class="align-center" src="../../_images/other_hazard_07.png" />
+<section id="a-run-project-name">
+<h4>a. Run InaSAFE<a class="headerlink" href="#a-run-project-name" title="Link to this heading">¶</a></h4>
+<p>If everything is setup correctly, the InaSAFE dock should show that you are ready to run a flood analysis on population.
+It poses the question “In the event of an <strong>Earthquake in Padang (2009)</strong>, how many <strong>people</strong> will be <strong>affected</strong>?”
+In this analysis we still use Shakemap data which has values from 6 – 8 MMI. If you want to see the minimum relief needs that should be provided based on the result, you can click <span class="guilabel">Options</span> and select <span class="guilabel">Minimum Needs</span>.</p>
+<p>You can refer to the <a class="reference internal" href="run_basic_inasafe.html#run-basic-inasafe"><span class="std std-ref">Run Basic InaSAFE</span></a> to learn more about the basis of default minimum needs in InaSAFE
+or if you want edit an item or add new minimum needs, you can refer to the <a class="reference external" href="http://docs.inasafe.org/en/user-docs/application-help/minimum_needs.html#minimum-needs">Minimum Needs Configuration manuals</a>.
+After everything is setup accordingly, click <span class="guilabel">Run</span> to process the new scenario.</p>
+</section>
+<section id="b-interpret-the-result">
+<h4>b. Interpret The Result<a class="headerlink" href="#b-interpret-the-result" title="Link to this heading">¶</a></h4>
+<p>If everything was set up correctly, you should get a result in the dock area after a few  seconds, and a new map layer should be added to the map.
+The new impact layer will be called <strong>People Displaced</strong>. Let’s explore the result again to help you better understand its meaning :</p>
+<ul class="simple">
+<li><p>Turn off the <strong>Number of Buildings</strong> layer and drag the <strong>People Displaced</strong> above Earthquake in Padang 2009.</p></li>
+<li><p>Zoom in to the area you choose.</p></li>
+<li><p>Select <strong>People Displaced</strong> in the layer list and use the <span class="guilabel">Identify Feature</span> tool again to select a pixel (square) in the map canvas.</p></li>
+<li><p>In the screenshot below, clicking on one of the brown pixels displays a value of 98.94569, which means there are approximately 98 people in this one pixel (square) whom might be displaced.</p></li>
+</ul>
+<img alt="../../_images/other_hazard_08.png" class="align-center" src="../../_images/other_hazard_08.png" />
+<p>In the InaSAFE panel we now see the impact summary. The details are explained below.</p>
+<img alt="../../_images/other_hazard_09.png" class="align-center" src="../../_images/other_hazard_09.png" />
+<img alt="../../_images/other_hazard_36.png" class="align-center" src="../../_images/other_hazard_36.png" />
+<ul class="simple">
+<li><p><strong>General report:</strong> shows estimated number of affected people based on hazard zone and population. It is assumed that all of these people will need to be evacuated. <strong>Hazard zone</strong> divides the results into several categories based on the threshold set in the hazard analysis. In this impact summary,|project_name| divides the affected people into several categories based on MMI classes. <strong>Population</strong>  divides the results that shows the count of displaced and fatalities.</p></li>
+<li><p><strong>Minimum needs:</strong> are calculated numbers of food, water and other products needed by evacuated people on a weekly basis.</p></li>
+<li><p><strong>Action checklist:</strong> designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.</p></li>
+<li><p><strong>Notes and assumptions:</strong> provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains the total number of people in the analysis area and the source of minimum needs.</p></li>
+<li><p><strong>Detailed minimum needs report:</strong> statistical breakdown of the number of total displaced population and minimum needs based on administrative area.</p></li>
+<li><p><strong>Detailed gender and age report:</strong> provides a breakdown of the number of affected people by age (youth, adults and elderly) and gender based on the default world population demographics and calculates the minimum needs for women’s hygiene and pregnant women. If you using aggregation layer, the result will be broken down based on administrative area.</p></li>
+</ul>
+<img alt="../../_images/other_hazard_10.png" class="align-center" src="../../_images/other_hazard_10.png" />
+</section>
+</section>
+</section>
+<section id="run-project-name-for-tsunami">
+<h2>2. Run InaSAFE for Tsunami<a class="headerlink" href="#run-project-name-for-tsunami" title="Link to this heading">¶</a></h2>
+<p>The 1992 Flores earthquake occurred on December 12, 1992 on the island of Flores in Indonesia. With a magnitude of 7.8, it was the largest and also the deadliest earthquake in 1992.
+This earthquake triggered another hazard in that area a tsunami in Maumere, Flores.</p>
+<p>Next, we will run another scenario in InaSAFE using Tsunami Hazard Model.
+It is a modelled version of a Magnitude 8.1 earthquake generating a tsunami which impacts Maumere.</p>
+<section id="open-project">
+<h3>2.1 Open Project<a class="headerlink" href="#open-project" title="Link to this heading">¶</a></h3>
+<p>Please open the QGIS project file <code class="file docutils literal notranslate"><span class="pre">Maumere.qgs</span></code> from the <code class="file docutils literal notranslate"><span class="pre">InaSAFE</span> <span class="pre">Training</span> <span class="pre">Data</span>
+<span class="pre">&gt;</span> <span class="pre">Maumere</span></code> folder. Once opened, the project should appear similar to the screenshot below:</p>
+<img alt="../../_images/other_hazard_11.png" class="align-center" src="../../_images/other_hazard_11.png" />
+<p>You will see in the InaSAFE dock that keywords for each layer have not yet been defined. As before, we use the <span class="guilabel">Keyword Creation Wizard</span> icon to define keyword. For detailed steps, please reference the <a class="reference internal" href="run_intermediate_inasafe.html#run-intermediate-inasafe"><span class="std std-ref">Run Intermediate InaSAFE.</span></a> module</p>
+</section>
+<section id="run-project-name">
+<h3>2.2 Run InaSAFE<a class="headerlink" href="#run-project-name" title="Link to this heading">¶</a></h3>
+<p>Once you have finished defining keywords for each layer, your InaSAFE form should look like this :</p>
+<img alt="../../_images/other_hazard_12.png" class="align-center" src="../../_images/other_hazard_12.png" />
+<p>In this scenario we will use Buildings as an exposure and Village Boundary as an aggregation layer. Once your InaSAFE form appears the same as the above screenshoot,
+click <span class="guilabel">Run</span> at the bottom right corner in your InaSAFE dock.</p>
+</section>
+<section id="interpret-the-result">
+<h3>2.3 Interpret the Result<a class="headerlink" href="#interpret-the-result" title="Link to this heading">¶</a></h3>
+<p>If everything was set up correctly, you should get a result in the dock area after a few  seconds, and a new map layer should be added to the map.
+The new impact layer will be called Number of buildings.
+Let’s explore the result again to help you understand more.</p>
+<ul class="simple">
+<li><p>Zoom in to any area you choose</p></li>
+<li><p>Here we have zoomed in to a location in Maumere. There will be five new different colours generated from InaSAFE (light yellow, orange, red, green, and grey).</p></li>
+<li><p>The red buildings are situated in area where the depth of tsunami inundation is more than 3 metres; the orange buildings are situated in area where the depth of tsunami inundation is between 1.0 and 3 metres; the light yellow are situated in area where the depth of tsunami inundation is 0.1 and 1.0 metres; the green buildings considered dry as they are situated in water less than the threshold of 0.1 metre; and the grey buildings considered not exposed by the hazard.</p></li>
+</ul>
+<img alt="../../_images/other_hazard_13.png" class="align-center" src="../../_images/other_hazard_13.png" />
+<ul class="simple">
+<li><p>Click <strong>Number of buildings</strong> in the layer list to select it and click <span class="guilabel">Identify Feature</span> tool and then click on building to know what attribute of the building.</p></li>
+</ul>
+<img alt="../../_images/other_hazard_14.png" class="align-center" src="../../_images/other_hazard_14.png" />
+<p>Here we clicked on one of the red building and find that there is a value of hazard class ‘high’. This means that the building is located in an affected area which is predicted to be flooded more than 3 metres.</p>
+<p>In the InaSAFE panel we now see the impact summary. Details are explained below.</p>
+<img alt="../../_images/other_hazard_15.png" class="align-center" src="../../_images/other_hazard_15.png" />
+<ul class="simple">
+<li><p><strong>General report</strong>: shows estimated number of buildings based on hazard zone and structures. <strong>Hazard zone</strong> divides the results into several categories based on the threshold set in the hazard analysis. In this impact summary, InaSAFE divides the impact buildings into four categories: number of building in low hazard zone, number of building in medium hazard zone, number of building in high hazard zone and number of dry buildings (not affected by any tsunami impact). <strong>Structures</strong>  divides the results that shows the count of affected, not affected and not exposed buildings.</p></li>
+<li><p><strong>Analysis detail</strong>: divides the exposed buildings into several categories based on the building type attribute for each building. In this impact summary, InaSAFE breaks down the results into a more detailed report by looking at each type of the building.</p></li>
+<li><p><strong>Action checklist</strong>: designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.</p></li>
+<li><p><strong>Notes and assumptions</strong>: provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains why building are predicted to be inundated, wet and dry.</p></li>
+<li><p><strong>Aggregation result</strong>: statistical breakdown of the number of impacted building based on administrative area.</p></li>
+</ul>
+<img alt="../../_images/other_hazard_16.png" class="align-center" src="../../_images/other_hazard_16.png" />
+<ul class="simple">
+<li><p><strong>Analysis details (source)</strong>:explanation of where the hazard data, exposure data, aggregation come from.</p></li>
+</ul>
+<p>The results show the buildings that will be affected by tsunami starting from 1 metre. What if the disaster manager decides that buildings in 80 cm of water are also considered inundated? You can change the water depth threshold to see the result, refer to the <a class="reference internal" href="run_basic_inasafe.html#run-basic-inasafe"><span class="std std-ref">Run Basic InaSAFE.</span></a> module.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>InaSAFE Tsunami Impact Function is very similar with Flood, but due to the force of tsunami waves, the maximum depth of water that would affect people and infrastructure is shallower.</p>
+</div>
+</section>
+</section>
+<section id="run-project-name-for-volcano">
+<h2>3. Run InaSAFE for Volcano<a class="headerlink" href="#run-project-name-for-volcano" title="Link to this heading">¶</a></h2>
+<p>Indonesia has many volcanoes, and most of them are still active today. In fact, one of the most frequent disasters in Indonesia is volcano eruptions. There are 129 active volcanoes across the country,
+and it is valuable to know how many people and how much infrastructure is within a certain perimeter of the vent.</p>
+<p>InaSAFE also has an impact function for volcano eruption scenarios. This function can run some type of
+hazard data. For detail information about the InaSAFE volcano hazard function, please look at the <a class="reference internal" href="datasets.html#datasets"><span class="std std-ref">Hazard Data Section.</span></a></p>
+<p>In this section we will be using the Sinabung volcano hazard from the National Disaster Management Agency (BNPB) as
+hazard data and building from OpenStreetMap as exposure data. For this run, we will using
+Impact Function Centric Wizard (IFCW). For more information about IFCW you can refer to
+<a class="reference internal" href="inasafe_concepts.html#inasafe-concepts"><span class="std std-ref">Key concepts in disaster management planning with InaSAFE.</span></a></p>
+<section id="id1">
+<h3>3.1 Open Project<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p>Please open a new QGIS project in order to use IFCW to run this project.
+You new QGIS project should look like this:</p>
+<img alt="../../_images/other_hazard_17.png" class="align-center" src="../../_images/other_hazard_17.png" />
+</section>
+<section id="id2">
+<h3>3.2 Run InaSAFE<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<p>To use the <strong>Impact Function Centric Wizard</strong>, please click <span class="guilabel">Impact Fuction Centric Wizard</span> icon.</p>
+<img alt="../../_images/other_hazard_18a.png" class="align-center" src="../../_images/other_hazard_18a.png" />
+<p>After clicking that icon, you will see the following dialogue box appear:</p>
+<img alt="../../_images/other_hazard_18.png" class="align-center" src="../../_images/other_hazard_18.png" />
+<p>In the box above, there are some fields that help us select the scenario to use.
+Green fields mean those scenarios are available and ready to run in InaSAFE. Grey fields means those scenarios are not available in InaSAFE at the moment.</p>
+<p>Because we want to run Volcano with building in this session, please click <span class="guilabel">Field Volcano’ and :guilabel: ‘Structure</span>. The resulting dialogue box appears like this:</p>
+<img alt="../../_images/other_hazard_19.png" class="align-center" src="../../_images/other_hazard_19.png" />
+<p>You can click <span class="guilabel">Next</span> and select the geometry types for the hazard and exposure layers, click <span class="guilabel">Polygon</span>.</p>
+<img alt="../../_images/other_hazard_37.png" class="align-center" src="../../_images/other_hazard_37.png" />
+<p>You can click <span class="guilabel">Next</span> and follow the instructions in the IFCW box.</p>
+<p>Hazard Data that we want to use for this scenario can be found in <code class="file docutils literal notranslate"><span class="pre">InaSAFE</span> <span class="pre">Training</span> <span class="pre">Data</span> <span class="pre">&gt;</span> <span class="pre">Sinabung</span> <span class="pre">&gt;</span> <span class="pre">Hazard</span> <span class="pre">Data</span></code> folder and please select <code class="file docutils literal notranslate"><span class="pre">Sinabung_Hazard_Map_2015_WGS84.shp</span></code>.</p>
+<p>Building Exposure data can be found in <code class="file docutils literal notranslate"><span class="pre">InSAFE</span> <span class="pre">Training</span> <span class="pre">Data</span> <span class="pre">&gt;</span> <span class="pre">Sinabung</span> <span class="pre">&gt;</span> <span class="pre">Exposure</span> <span class="pre">Data</span></code> folder and please select <code class="file docutils literal notranslate"><span class="pre">Sinabung_buildings_WGS84.shp</span></code> .</p>
+<p>There is optional to use aggregation for your analysis, either you load aggregation layer from your own local file or you just aggregate results for the entire analysis windows.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The differences between Volcano and Volcanic Ash can be seen in <a class="reference internal" href="datasets.html#datasets"><span class="std std-ref">Hazard Data Section</span></a>, and for detail explanation about type of data you can be found in <a class="reference internal" href="inasafe_concepts.html#inasafe-concepts"><span class="std std-ref">Key concepts in disaster management planning with InaSAFE.</span></a>.</p>
+</div>
+<p>If you have followed the instruction in IFCW box, before running InaSAFE you should see the final form below:</p>
+<img alt="../../_images/other_hazard_20.png" class="align-center" src="../../_images/other_hazard_20.png" />
+<p>If your IFCW box looks like the screenshot above, click <span class="guilabel">Run</span> and wait for analysis processing until a result box appears.</p>
+<img alt="../../_images/other_hazard_21.png" class="align-center" src="../../_images/other_hazard_21.png" />
+</section>
+<section id="id3">
+<h3>3.3 Interpret the Result<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<p>Once you have finished running the analysis, you will see the result has new layer named
+“Number of buildings” . This layer will show you which buildings are affected for each hazard zone.
+There will be four new colours of building generated from InaSAFE (light yellow, orange, red, and grey).</p>
+<p>The light yellow buildings mean these buildings are located in a Low Risk Zone (Risk Zone 1), the orange buildings mean these buildings are located in an Intermediate Risk Zone (Risk Zone 2), red buildings are considered situated in a High Risk Zone (Risk Zone 3) of Sinabung Volcano, and grey buildings considered not exposed by the hazard.</p>
+<img alt="../../_images/other_hazard_22.png" class="align-center" src="../../_images/other_hazard_22.png" />
+<p>In the InaSAFE result box, we now see the impact summary. It is very similar to the InaSAFE Dock. Details are explained below.</p>
+<img alt="../../_images/other_hazard_23.png" class="align-center" src="../../_images/other_hazard_23.png" />
+<ul class="simple">
+<li><p><strong>General report</strong>: shows estimated number of buildings based on hazard zone and structures. <strong>Hazard zone</strong> divides the results into several categories based on the threshold set in the hazard analysis. In this impact summary, InaSAFE divides the impacted buildings into three categories for each hazard zone of Sinabung Volcano. <strong>Structures</strong>  divides the results that shows the count of affected, not affected and not exposed buildings.</p></li>
+<li><p><strong>Analysis detail</strong>: divides the exposed buildings into several categories based on the building type attribute for each building.</p></li>
+<li><p><strong>Action checklist</strong>: designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.</p></li>
+<li><p><strong>Notes and assumptions</strong>: provides details about the input data and any limitations or assumptions in the analysis or report summary.</p></li>
+<li><p><strong>Aggregation result</strong>: statistical breakdown of the number of impacted building based on administrative area.</p></li>
+<li><p><strong>Analysis details (source)</strong>: explanation of where the hazard data, exposure data, aggregation come from.</p></li>
+</ul>
+<p>You have now run InaSAFE for a volcano scenario using the Impact Function Centric Wizard (IFCW).
+Quite different than the InaSAFE Dock, this tool is designed to help a user run InaSAFE more easily without needing to open all the required data one by one in QGIS. IFCW provides precise guidance and detail about
+what actions should be taken step by step until the scenario is ready to run. This tool is very useful, especially for InaSAFE user who are less familiar with QGIS and Spatial Data.</p>
+</section>
+</section>
+<section id="generic-hazard-impact-function-in-project-name">
+<h2>4. Generic Hazard Impact Function in InaSAFE<a class="headerlink" href="#generic-hazard-impact-function-in-project-name" title="Link to this heading">¶</a></h2>
+<p>InaSAFE can run analyses for multiple hazards, using scenarios that we set up based on data availability. These scenarios include seven types of hazards : floods, earthquakes, volcanos, volcanic ash, tsunamis, dam break, and, cyclone. What if our hazard scenario is not included in this list (for example, a land slide or drought). To solve this problem, InaSAFE provides a tool called the <strong>Generic Hazard Impact Function</strong> that can run analyses for any hazard not available via a specific Scenario Impact Function.</p>
+<section id="id4">
+<h3>4.1 Open Project<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<p>Next, we will explore this tool using a landslide hazard in Nagekeo, East Nusa Tenggara with building and population data
+for each scenario. Please open the QGIS project file <code class="file docutils literal notranslate"><span class="pre">Nagekeo.qgs</span></code> from
+the <code class="file docutils literal notranslate"><span class="pre">InaSAFE</span> <span class="pre">Training</span> <span class="pre">Data</span> <span class="pre">&gt;</span> <span class="pre">Nagekeo</span></code> folder. Once opened, the project should look like the screenshot below:</p>
+<img alt="../../_images/other_hazard_24.png" class="align-center" src="../../_images/other_hazard_24.png" />
+<p>In the InaSAFE dock, the InaSAFE form still appears empty. This means that your hazard and
+exposure data lacks keywords. Before proceeding, you should define keywords for each dataset in this project.</p>
+<p>To define a keyword, please click on the <span class="guilabel">Keywords Creation Wizard</span> icon</p>
+<img alt="../../_images/other_hazard_02b.png" class="align-center" src="../../_images/other_hazard_02b.png" />
+<p>and follow the instructions. You can refer to the <a class="reference internal" href="run_intermediate_inasafe.html#run-intermediate-inasafe"><span class="std std-ref">Run Intermediate InaSAFE.</span></a> if you need additional assistance.
+Once you finish defining keyword for each layer, your InaSAFE form should appear like the below screenshot:</p>
+<img alt="../../_images/other_hazard_25.png" class="align-center" src="../../_images/other_hazard_25.png" />
+</section>
+<section id="id5">
+<h3>4.2 Run InaSAFE for Building<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<section id="id6">
+<h4>a. Run InaSAFE<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
+<p>Your InaSAFE Dock now poses the question “In the event of <strong>Landslide Hazard Zone</strong>, how many <strong>buildings</strong> will <strong>be affected</strong>?”
+Click <span class="guilabel">Run</span> on the bottom right corner in your InaSAFE Dock.
+If everything was set up correctly, you should get a result in the dock area after a few seconds, and a new map layer should be added to the map. The new layer will be named “Number of buildings”.</p>
+<img alt="../../_images/other_hazard_26.png" class="align-center" src="../../_images/other_hazard_26.png" />
+<img alt="../../_images/other_hazard_27.png" class="align-center" src="../../_images/other_hazard_27.png" />
+</section>
+<section id="id7">
+<h4>b. Interpret The Result<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
+<p>Let’s take a look at the new data layer generated from InaSAFE:</p>
+<ul class="simple">
+<li><p>Zoom in to an area in the Map Canvas</p></li>
+<li><p>There will be three new colours generated from InaSAFE (red, orange, light yellow and grey).</p></li>
+<li><p>The red buildings are located in a high vulnerability zone, the orange buildings are located in moderate vulnerability zone, light yellow buildings are located in a Low Landslide Vulnerability Zone and the grey buildings are not exposed by the landslide.</p></li>
+<li><p>Click building affected in the layer list to select it. Next, click the <span class="guilabel">Identify Feature</span> tool and then click on a building to view attributes of the building.</p></li>
+</ul>
+<img alt="../../_images/other_hazard_28.png" class="align-center" src="../../_images/other_hazard_28.png" />
+<p>In the InaSAFE panel we now see the impact summary. Details are explained below.</p>
+<img alt="../../_images/other_hazard_29.png" class="align-center" src="../../_images/other_hazard_29.png" />
+<ul class="simple">
+<li><p><strong>General report</strong>: shows estimated number of buildings based on hazard zone and structures. <strong>Hazard zone</strong> divides the results into several categories based on the threshold set in the hazard analysis. In this impact summary, InaSAFE divides the impacted buildings into three categories for each hazard zone of Landslide. <strong>Structures</strong>  divides the results that shows the count of affected, not affected and not exposed buildings.</p></li>
+<li><p><strong>Analysis detail</strong>: divides the exposed buildings into several categories based on the building type attribute for each building.</p></li>
+<li><p><strong>Action checklist</strong>: designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.</p></li>
+<li><p><strong>Notes and assumptions</strong>: provides details about the input data and any limitations or assumptions in the analysis or report summary.</p></li>
+<li><p><strong>Aggregation result</strong>: statistical breakdown of the number of impacted building based on administrative area.</p></li>
+<li><p><strong>Analysis details (source)</strong>: explanation of where the hazard data, exposure data, aggregation come from.</p></li>
+</ul>
+</section>
+</section>
+<section id="id8">
+<h3>4.3 Run InaSAFE for Population<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<section id="id9">
+<h4>a. Run InaSAFE<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h4>
+<p>Turn off the Buildings Affected by each hazard zone (the layers generated from InaSAFE analysis and
+turn ON the <strong>People</strong> layer. Since we want to look at the number of people who might die or be displaced in
+a specific area, we also need to turn ON the <strong>Village</strong> layer in QGIS. This layer will be used as an aggregation layer that
+can show us results grouped by administrative boundary.</p>
+<p>If you forget the steps to define an aggregation layer, refer to the <a class="reference internal" href="run_intermediate_inasafe.html#run-intermediate-inasafe"><span class="std std-ref">Run Intermediate InaSAFE.</span></a> section.
+Edit the question form in the InaSAFE Dock so that it appears similar to the below screenshot:</p>
+<img alt="../../_images/other_hazard_30.png" class="align-center" src="../../_images/other_hazard_30.png" />
+<p>Next, click <span class="guilabel">Run</span> to start the analysis.</p>
+</section>
+<section id="id10">
+<h4>b. Interpret the Result<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h4>
+<p>If everything was set up correctly, you should get a result in the dock area after a few  seconds,
+and a new map layer should be added to the map. The new impact layer will be called <strong>Number of People</strong>.
+Let’s explore the result again to help you understand more.</p>
+<ul class="simple">
+<li><p>Zoom in to any area.</p></li>
+<li><p>Select Number of people in the layer list and use the <span class="guilabel">Identify Feature</span> tool again to select a pixel (square) in the map canvas.</p></li>
+</ul>
+<p>Here we clicked on the red zone and find that there is a value of hazard class ‘high’. This means that the people is located in affected area which is predicted as high hazard zone.</p>
+<img alt="../../_images/other_hazard_31.png" class="align-center" src="../../_images/other_hazard_31.png" />
+<img alt="../../_images/other_hazard_32.png" class="align-center" src="../../_images/other_hazard_32.png" />
+<p>In the InaSAFE panel we now see the impact summary. The details are explained below.</p>
+<img alt="../../_images/other_hazard_33.png" class="align-center" src="../../_images/other_hazard_33.png" />
+<ul class="simple">
+<li><p><strong>General report:</strong> shows estimated number of affected people based on hazard zone and population. It is assumed that all of these people will need to be evacuated. <strong>Hazard zone</strong> divides the results into several categories based on the threshold set in the hazard analysis. <strong>Population</strong>  divides the results that shows the count of displaced and fatalities.</p></li>
+<li><p><strong>Minimum needs:</strong> are calculated numbers of food, water and other products needed by evacuated people on a weekly basis.</p></li>
+<li><p><strong>Action checklist:</strong> designed to make disaster managers think about what they need to do/discuss when planning for a similar event in the future.</p></li>
+<li><p><strong>Notes and assumptions:</strong> provides details about the input data and any limitations or assumptions in the analysis or report summary. In this example, it explains the total number of people in the analysis area and the source of minimum needs.</p></li>
+<li><p><strong>Detailed minimum needs report:</strong> statistical breakdown of the number of total displaced population and minimum needs based on administrative area.</p></li>
+<li><p><strong>Detailed gender and age report:</strong> provides a breakdown of the number of affected people by age (youth, adults and elderly) and gender based on the default world population demographics and calculates the minimum needs for women’s hygiene and pregnant women. If you using aggregation layer, the result will be broken down based on administrative area.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the result of InaSAFE, Action Checklist and Notes might be unrelated with hazard that we run.
+For instance, if we run drought hazard the action checklist might have some topics such as how many building closed, or people die or displaced. Those topics are not really related with drought.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>Congratulation! You have now learned to use most of InaSAFE’s functionality. You can run analyses for specific hazard using tools such as
+the Impact Function Centric Wizard (IFCW) and the Generic Impact Function which will make using InaSAFE easier.</p>
+<p>Now, to become an expert user of InaSAFE, try utilising all those tools that you explored in this module using your own scenarios and data, and practice interpreting the results.</p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="faq.html"
+                   title="Frequently Asked Questions"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="run_intermediate_inasafe.html"
+                   title="Run Intermediate InaSAFE"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

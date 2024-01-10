@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Chapter 2: Getting Started &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Chapter 3: Introducing the iD Editor" href="Chapter-03-introducing-the-id-editor.html" />
+    <link rel="prev" title="Chapter 1: Introduction" href="Chapter-01-introduction.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/osm/Chapter-02-getting-started.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/osm/Chapter-02-getting-started.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Data Collection Using OpenStreetMap</a>
+                </li>
+                
+
+                <li><a href="#">Chapter 2: Getting Started</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-03-introducing-the-id-editor.html"
+                   title="Chapter 3: Introducing the iD Editor"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-01-introduction.html"
+                   title="Chapter 1: Introduction"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Data Collection Using OpenStreetMap</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Chapter-00-preface.html">Preface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-01-introduction.html">Chapter 1: Introduction</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 2: Getting Started</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#visit-the-openstreetmap-website">2.1 Visit the OpenStreetMap Website</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#navigate-the-map">2.2 Navigate the Map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#view-with-different-map-styles">2.3 View with Different Map Styles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#export-map-into-image">2.4 Export Map into Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-an-account-in-openstreetmap">2.5 Create an Account in OpenStreetMap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-03-introducing-the-id-editor.html">Chapter 3: Introducing the iD Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-04-getting-started-with-josm.html">Chapter 4: Getting started with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-05-editing-with-josm.html">Chapter 5:  Editing with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-06-using-gps.html">Chapter 6: Using GPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-07-field-papers.html">Chapter 7: Field Papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-08-conflict-resolution-in-osm.html">Chapter 8: Conflict Resolution in OSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-09-inserting-tag.html">Chapter 9: Inserting Special Tag in JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-10-imagery-offset.html">Chapter 10: Imagery Offset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-11-export-osm-data.html">Chapter 11: Export OSM data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/1_000.png" src="../../_images/1_000.png" />
+<section id="chapter-2-getting-started">
+<span id="ch2-getting-started"></span><h1>Chapter 2: Getting Started<a class="headerlink" href="#chapter-2-getting-started" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Navigating to the OpenStreetMap Website</p></li>
+<li><p>Know how to navigate OpenStreetMap (search, move, zoom in/zoom out)</p></li>
+<li><p>Know how to export OpenStreetMap into image and changing layers</p></li>
+<li><p>Know how to create an account in OpenStreetMap</p></li>
+</ul>
+<p>In this section we will learn step by step how to navigate the OpenStreetMap website, view maps, and sign up for a user account. After you have your OpenStreetMap account, you will be able to contribute your first points to the map.</p>
+<section id="visit-the-openstreetmap-website">
+<h2>2.1 Visit the OpenStreetMap Website<a class="headerlink" href="#visit-the-openstreetmap-website" title="Link to this heading">¶</a></h2>
+<p>Before you begin, be sure your computer is connected to the internet. Then, follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Open your web browser. Common browsers are Firefox, Chrome, Opera, or Internet Explorer.</p></li>
+<li><p>In the address bar at the top of your browser, type <a class="reference external" href="http://www.openstreetmap.org/">www.openstreetmap.org</a> and enter</p></li>
+<li><p>When the page has finished loading, you should see something like this:</p></li>
+</ol>
+<figure class="align-center" id="id1">
+<img alt="../../_images/2_001.png" src="../../_images/2_001.png" />
+<figcaption>
+<p><span class="caption-text"><em>OpenStreetMap Interface</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="navigate-the-map">
+<h2>2.2 Navigate the Map<a class="headerlink" href="#navigate-the-map" title="Link to this heading">¶</a></h2>
+<p>The main thing you should see is the map. Move the map by clicking on it with your left mouse button, holding the button down, and dragging your mouse around (see figure below).</p>
+<figure class="align-center" id="id2">
+<img alt="../../_images/2_002.png" src="../../_images/2_002.png" />
+<figcaption>
+<p><span class="caption-text"><em>Some Tools in OpenStreetMap</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If you have mouse with scroll wheel, you can zoom in and zoom out your map using scroll wheel in your mouse.
+If you do not have, you can use <span class="guilabel">+</span> and <span class="guilabel">-</span> button at the top right corner on your map.</p>
+<figure class="align-center" id="id3">
+<img alt="../../_images/2_003.png" src="../../_images/2_003.png" />
+<figcaption>
+<p><span class="caption-text"><em>Navigation Instruction Using a Mouse</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>To search for a place, left-click in the box labeled <span class="guilabel">search</span> on the left side of the page.
+Type name of your town or village and press Enter. A window should appear to the left of the map with the results of your search. Click on the location that looks like the one  you want.
+The map will automatically re-center on the location chosen from the list.</p>
+<figure class="align-center" id="id4">
+<img alt="../../_images/2_004.png" src="../../_images/2_004.png" />
+<figcaption>
+<p><span class="caption-text"><em>OpenStreetMap Search Result</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="view-with-different-map-styles">
+<h2>2.3 View with Different Map Styles<a class="headerlink" href="#view-with-different-map-styles" title="Link to this heading">¶</a></h2>
+<p>OpenStreetMap contains geographic data from all over the world. Although it is a single database, the data can be interpreted and styled in different ways.
+To see this in action, click the <span class="guilabel">layers</span> button at right side in your map window.</p>
+<figure class="align-center" id="id5">
+<img alt="../../_images/2_005.png" src="../../_images/2_005.png" />
+<figcaption>
+<p><span class="caption-text"><em>Layer Button to change layers in OpenStreetMap</em></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Click on the different layer options for the map. Each layer has a different style.
+For instance, the Transport Map emphasizes transportation routes such as roads and bus stations, while the Humanitarian Map emphasizes public facilities such as schools, hospitals and government offices.
+All of these views are possible because of the structured data contained in the OSM database. See the figure below for a comparison of the Transport Map and the Humanitarian Map.</p>
+<figure class="align-center" id="id6">
+<img alt="../../_images/2_006.png" src="../../_images/2_006.png" />
+<figcaption>
+<p><span class="caption-text"><em>(Top) Humanitarian (Bottom) Transport Map</em></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="export-map-into-image">
+<h2>2.4 Export Map into Image<a class="headerlink" href="#export-map-into-image" title="Link to this heading">¶</a></h2>
+<p>In addition to changing the layers in OpenStreetMap, you also can export your map as an image. The steps are as follow:</p>
+<ol class="arabic simple">
+<li><p>Click the <span class="guilabel">Share</span> icon at your right side on your map window, as shown in the figure below:</p></li>
+</ol>
+<figure class="align-center" id="id7">
+<img alt="../../_images/2_007.png" src="../../_images/2_007.png" />
+<figcaption>
+<p><span class="caption-text"><em>Share Button in OpenStreetMap</em></span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>After determining the area that want to be exported, tick <span class="guilabel">Set custom dimensions</span> box and adjust size of the area that you want to export. You also can change the scale.</p></li>
+<li><p>When you are finished adjusting the size of the download area, click <span class="guilabel">download</span></p></li>
+</ol>
+<figure class="align-center" id="id8">
+<img alt="../../_images/2_008.png" src="../../_images/2_008.png" />
+<figcaption>
+<p><span class="caption-text"><em>Export Map in OpenStreetMap</em></span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="create-an-account-in-openstreetmap">
+<h2>2.5 Create an Account in OpenStreetMap<a class="headerlink" href="#create-an-account-in-openstreetmap" title="Link to this heading">¶</a></h2>
+<p>Now that you have seen what the main website looks like, you’re now ready to learn how to create an account in OpenStreetMap and make your first additions to the map. The steps are as follows:</p>
+<ol class="arabic simple">
+<li><p>On the OpenStreetMap website, click <span class="guilabel">sign up</span> in the top right corner of the page.</p></li>
+<li><p>You should see a new page that looks like the figure below:</p></li>
+</ol>
+<figure class="align-center" id="id9">
+<img alt="../../_images/2_009.png" src="../../_images/2_009.png" />
+<figcaption>
+<p><span class="caption-text"><em>Interface to make account in OpenStreetMap</em></span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>There are five boxes on this page that you need to fill in to register an account with OSM.</p></li>
+<li><p>Enter your <span class="guilabel">email address</span> in the first two boxes. You should enter the same email address in both boxes. Later, you will need to open your email to confirm your account with OpenStreetMap.</p></li>
+<li><p>In the third box, enter the <span class="guilabel">username</span> that you would like to have. Your username will be unique to you, and you will not be able to choose a username that someone else has chosen, so be creative. If you try to enter something simple, like your first name, it is likely that someone has already claimed that name.</p></li>
+<li><p>Enter a <span class="guilabel">new password</span> in the fourth and fifth boxes. Take care to enter the same password in both boxes. It does not need to be the same as the password for your email.</p></li>
+<li><p>You may want to write down your OSM username and password. You will need it to log in later.</p></li>
+<li><p>After you have completed all the boxes, click <span class="guilabel">Sign Up</span> at the bottom of the page.</p></li>
+<li><p>Open a separate window or tab in your internet browser, and open your email.</p></li>
+<li><p>Enter your email address and your email password to open your email.</p></li>
+<li><p>If everything was successful with your registration, you should see an email from OpenStreetMap in your inbox. Open the email. It should look like the image below. Click on the link that is identified below:</p></li>
+</ol>
+<figure class="align-center" id="id10">
+<img alt="../../_images/2_010.png" src="../../_images/2_010.png" />
+<figcaption>
+<p><span class="caption-text"><em>Notification from OSM in your inbox</em></span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="12">
+<li><p>A new tab or window will open. You now have an OSM account!</p></li>
+<li><p>On the OpenStreetMap page, click <span class="guilabel">Sign Up</span> in the top right corner. Enter your OpenStreetMap username and password and press Enter. You should now be logged in. You should see your username in the upper right corner of the page.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there are any problems, an error message may pop up. Check top make sure that your email is the same in the first two boxes, and your password is the same in the bottom two boxes. If the third box is highlighted red, it means that someone else has already chosen your username, and you should try a different name.</p>
+</div>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>Congratulations! If all went as expected, you have your own OpenStreetMap account and you know how to navigate the OSM website.
+In next chapter, we will learn how to add our data into OpenStreetMap using online editor called iD Editor.</p>
+<p><a class="reference internal" href="Chapter-03-introducing-the-id-editor.html#ch3-introducing-the-id-editor"><span class="std std-ref">Go to next chapter –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-03-introducing-the-id-editor.html"
+                   title="Chapter 3: Introducing the iD Editor"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-01-introduction.html"
+                   title="Chapter 1: Introduction"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

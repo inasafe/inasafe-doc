@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>InaSAFE concepts &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Datasets" href="datasets.html" />
+    <link rel="prev" title="Introducing InaSAFE" href="introduction.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/socialisation/inasafe_concepts.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/socialisation/inasafe_concepts.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Socialisation Training Manual</a>
+                </li>
+                
+
+                <li><a href="#">InaSAFE concepts</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="datasets.html"
+                   title="Datasets"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="introduction.html"
+                   title="Introducing InaSAFE"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Socialisation Training Manual</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#project-name-is-funded-by">InaSAFE is funded by:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#preface">Preface</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#course-media">Course media</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="objective.html">Course objectives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="introduction.html">Introducing InaSAFE</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">InaSAFE concepts</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#how-does-project-name-work">How does InaSAFE work?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#definitions">Definitions:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-disaster-management">What is disaster management?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-a-hazard">What is a hazard?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#single-event-versus-multiple-event-hazards">Single-event versus multiple-event hazards</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-exposure">What is exposure?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-aggregation">What is aggregation?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-contextual-data">What is contextual data?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-the-difference-between-raster-and-vector-data">What is the difference between raster and vector data?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-the-difference-between-continuous-and-classified-data">What is the difference between continuous and classified data?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-the-analysis-extent">What is the analysis extent?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-an-impact-function">What is an Impact Function?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-an-impact-layer">What is an impact layer?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-is-the-impact-summary">What is the impact summary?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-are-minimum-needs">What are minimum needs?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#what-are-action-checklists">What are action checklists?</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="datasets.html">Datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="introduction_to_qgis.html">Introduction to QGIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_basic_inasafe.html">Run Basic InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_intermediate_inasafe.html">Run Intermediate InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_other_hazards.html">Other Hazards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <section id="project-name-concepts">
+<span id="inasafe-concepts"></span><h1>InaSAFE concepts<a class="headerlink" href="#project-name-concepts" title="Link to this heading">¶</a></h1>
+<p>In this section we explain the key concepts of InaSAFE and explore the
+merits of disaster management planning.</p>
+<section id="how-does-project-name-work">
+<h2>How does InaSAFE work?<a class="headerlink" href="#how-does-project-name-work" title="Link to this heading">¶</a></h2>
+<p>InaSAFE combines one exposure data layer (e.g. location of buildings)
+with one hazard scenario (e.g. the footprint of a flood) and returns a
+spatial impact layer along with a statistical summary and action questions.
+InaSAFE is framed around answering questions such as:
+<em>‘In the event of a flood similar to the 2013 Jakarta event how many people
+might need evacuating.’</em></p>
+<a class="reference internal image-reference" href="../../_images/004_inasafe_concept.png"><img alt="../../_images/004_inasafe_concept.png" class="align-center" src="../../_images/004_inasafe_concept.png" style="width: 400pt;" /></a>
+<p>InaSAFE is also able to divide the impact results by administrative
+boundary and provide a breakdown of information about the gender and age of
+affected people.</p>
+</section>
+<section id="definitions">
+<h2>Definitions:<a class="headerlink" href="#definitions" title="Link to this heading">¶</a></h2>
+<p>Before we start, here are some definitions you may find useful.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><strong>Risk assessment:</strong></p></td>
+<td><p><em>“A methodology to determine the nature and extent of
+risk by analysing potential hazards and evaluating
+existing conditions of vulnerability that together
+could potentially harm exposed people, property,
+services, livelihoods and the environment on which
+they depend. “</em></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Contingency planning:</strong></p></td>
+<td><p><em>“A management process that analyses specific
+potential events or emerging situations that might
+threaten society or the environment and establishes
+arrangements in advance to enable timely, effective
+and appropriate responses to such events and
+situations.”</em></p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Response:</strong></p></td>
+<td><p><em>“The provision of emergency services and public
+assistance during or immediately after a disaster in
+order to save lives, reduce health impacts, ensure
+public safety and meet the basic subsistence needs
+of the people affected.”</em></p></td>
+</tr>
+</tbody>
+</table>
+<p>Source: <a class="reference external" href="http://www.unisdr.org/we/inform/terminology">http://www.unisdr.org/we/inform/terminology</a></p>
+</section>
+<section id="what-is-disaster-management">
+<h2>What is disaster management?<a class="headerlink" href="#what-is-disaster-management" title="Link to this heading">¶</a></h2>
+<p>In the context of disaster management, the expected ‘normal’ situation is that
+there is no disaster in progress, and people are going about their normal
+daily lives. Disaster managers need to plan for the occasions when the ‘normal’
+situation has been replaced by a disaster and people can no longer go about
+their normal daily lives. In order to prepare for such situations, disaster
+managers need to have a basic understanding of questions like:</p>
+<ul class="simple">
+<li><p>how many people might be in the affected area?</p></li>
+<li><p>how might those people be impacted?</p></li>
+</ul>
+<p>For example are they likely to be injured, stranded, deceased, or unable to
+continue with their normal economic activities;  have they lost access to
+food and water?</p>
+<ul class="simple">
+<li><p>how will roads in the affected area be impacted?</p></li>
+<li><p>how many dwellings in the affected will be affected? And to what degree?</p></li>
+</ul>
+<p>For example in a flood are buildings dry, wet (but still possibly habitable)
+or flooded (with occupants evacuated)?</p>
+<ul class="simple">
+<li><p>if people are affected, how many of them are likely to be women, children, pregnant, elderly etc.?</p></li>
+</ul>
+<p>Knowing the likely answers to these questions can be helpful to disaster
+managers. For example if you are aware of how many people live in flood prone
+areas you can estimate how many temporary shelters might be needed in the
+event of a disaster, how many provisions should be stockpiled in order to
+provide for the daily needs of affected people and so on. Having demographic
+breakdowns for the people likely to be affected, can help disaster managers
+include things like special dietary requirements for lactating women in their
+disaster management planning.</p>
+<p>This planning might also take into account expected impacts on
+infrastructure - for example by planning to have sufficient rescue boats
+should all the local roads be flooded.</p>
+</section>
+<section id="what-is-a-hazard">
+<h2>What is a hazard?<a class="headerlink" href="#what-is-a-hazard" title="Link to this heading">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/004_hazard.png"><img alt="../../_images/004_hazard.png" class="align-center" src="../../_images/004_hazard.png" style="width: 150pt;" /></a>
+<p>In the context of InaSAFE a hazard is any natural or human caused event
+or series of events that may negatively impact the population, infrastructure
+or resources in an area.</p>
+<p>Some examples of natural hazards:</p>
+<ul class="simple">
+<li><p>a flood (caused by overflowing rivers, storm surge, localised precipitation that cannot drain effectively, or by engineering failure such as a dam or levee breach)</p></li>
+<li><p>an earthquake and the resulting ground shaking that is produced by it</p></li>
+<li><p>a volcano eruption and its associated hazards (lava flow, ash fall, lahar, pyroclastic flow)</p></li>
+<li><p>a tsunami</p></li>
+</ul>
+<p>Some examples of non-natural hazards:</p>
+<ul class="simple">
+<li><p>a chemical spill</p></li>
+<li><p>a nuclear plant failure</p></li>
+<li><p>an industrial fire / explosion</p></li>
+</ul>
+<p>It is important to note that InaSAFE is not a hazard modelling tool.
+That means that you need to obtain your hazard data from elsewhere and bring
+it along ready to use in InaSAFE. In this training course we will
+focus on natural hazards, so we will take a moment here to explain how
+hazard datasets might be made.</p>
+<a class="reference internal image-reference" href="../../_images/004_jakarta_flood.jpg"><img alt="../../_images/004_jakarta_flood.jpg" class="align-center" src="../../_images/004_jakarta_flood.jpg" style="width: 400pt;" /></a>
+<p>There are three main ways that can be used to generate hazard datasets:</p>
+<ul class="simple">
+<li><p>Local knowledge</p></li>
+<li><p>Modelling</p></li>
+<li><p>Mapping</p></li>
+</ul>
+<section id="local-knowledge">
+<h3>Local knowledge<a class="headerlink" href="#local-knowledge" title="Link to this heading">¶</a></h3>
+<p>This is probably the most practical way to gather hazard data quickly.
+One approach that has been effective in Indonesia is to hold mapping
+workshops where village chiefs and local officials are invited. The officials
+are asked to indicate which villages and sub-villages within their area of
+responsibility flood regularly.</p>
+<p>Instead of simply mapping which areas are flooded, it is also possible to
+take another approach and map each flood event, using the same boundaries
+(village / sub-village). During the event community officials can use online
+systems to update the status of the flood waters in their area.</p>
+<p>A key requirement for any local knowledge based process is that there are
+suitable mapping units available to use for deciding if an area is flood
+prone or not. In some cases participants may need to capture these, in other
+cases village or sub-village boundaries can be used. Using administrative
+boundaries may not always be ideal since the flood extents are unlikely to
+align well with the boundaries, but it may be sufficient for broad
+planning purposes; especially when response activities are managed at the
+same administrative level.</p>
+</section>
+<section id="modelling">
+<h3>Modelling<a class="headerlink" href="#modelling" title="Link to this heading">¶</a></h3>
+<p>Modelling floods is an entire discipline in its own right. Flood modelling
+can be carried out by combining factors such as precipitation, geology and
+runoff characteristics, terrain etc. to derive a model of impending or
+current flood. Modelling can use data interpolation techniques - e.g. by
+taking flood depth readings manually or using telemetry from various sites
+around the flood prone area, flood depths can be interpolated to estimate
+the depth at places that were not sampled.</p>
+<p>Another modelling approach used by engineers is to install depth sensors
+upstream of the catchment and then try to model how much water is coming into
+the catchment area based on depth and flow rates. This has the potential
+advantage of giving early warning before floods enter the flood prone area,
+although it also has the disadvantage that localised rainfall may not be
+accurately considered in the model.</p>
+<p>Using a digital elevation model (DEM) and a stream network, it is also
+possible to generate a simple model of which areas might be inundated by a
+water rise in the river network of a certain amount. DEM cells adjacent to
+the stream network which are below the flood-rise threshold will be
+considered flooded and then those cell neighbours can in turn be considered
+so as to ensure that only contiguous areas in the DEM are flagged as inundated.
+There are various other approaches that can be used to model flood potential
+that involve using a DEM.</p>
+<p>One advantage of using a modelling approach is that it allows us to forecast
+less frequent events. For example, there may not be localised knowledge about
+1 in 50 or 100 year flood events and their impacts, but these can be estimated
+using modelling techniques.</p>
+</section>
+</section>
+<section id="single-event-versus-multiple-event-hazards">
+<h2>Single-event versus multiple-event hazards<a class="headerlink" href="#single-event-versus-multiple-event-hazards" title="Link to this heading">¶</a></h2>
+<p>Hazard data used in InaSAFE can represent either single-event or
+multiple-event. Single event hazards are useful when you want to estimate
+scenarios like <em>‘how many people would be affected if we had another flood
+like in 2013’.</em>  A single event hazard covers a short span of time - like a
+single flood or earthquake event. Single event data is also the most suitable
+to use for events which are stochastic e.g. earthquakes which seldom occur
+at the same place and with the same intensity more than once.</p>
+<p>Multiple-event data are useful when you would like to plan for disasters
+that repeatedly affect the same area. For example over the course of 10 years,
+the same districts or sub-districts may get flooded, though not on every event.
+Flood and volcano eruptions may be good candidates for using multiple-event
+data in your disaster management planning.</p>
+<p>Requirements for using flood data in InaSAFE</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><strong>Key notes for floods</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Format</p></td>
+<td><p>Vector polygon data or raster data</p></td>
+</tr>
+<tr class="row-odd"><td><p>Vector</p></td>
+<td><p>A field representing whether the polygon is flood prone or not.</p></td>
+</tr>
+<tr class="row-even"><td><p>Raster</p></td>
+<td><p>A simple grid with cell values that represent water depth</p></td>
+</tr>
+<tr class="row-odd"><td><p>Source</p></td>
+<td><p>Can be obtained from community mapping or a national mapping agency</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="what-is-exposure">
+<h2>What is exposure?<a class="headerlink" href="#what-is-exposure" title="Link to this heading">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/004_exposure.png"><img alt="../../_images/004_exposure.png" class="align-center" src="../../_images/004_exposure.png" style="width: 200pt;" /></a>
+<p>In the context of InaSAFE, exposure refers to people, infrastructure
+or land areas that may be affected by a disaster. Currently InaSAFE
+supports four kinds of exposure data:</p>
+<ul class="simple">
+<li><p>roads</p></li>
+<li><p>buildings</p></li>
+<li><p>population / people</p></li>
+<li><p>landcover</p></li>
+</ul>
+<section id="roads-data">
+<h3>Roads data<a class="headerlink" href="#roads-data" title="Link to this heading">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/icon_road.png"><img alt="../../_images/icon_road.png" class="align-left" src="../../_images/icon_road.png" style="width: 150pt;" /></a>
+<p>Road datasets are a useful data source when you want to understand the impact
+of a flood on roads infrastructure. With the InaSAFE flood on roads
+impact functions; you can calculate which roads of which type might be
+impacted by a flood.</p>
+<p>Very often there will be national datasets available for roads.  In this case
+you should contact your national mapping agency for up-to-date datasets.
+The OpenStreetMap project is an excellent source of exposure data. The data
+is freely available, generally well maintained and a vital resource for
+disaster management planners. There are numerous ways to download
+OpenStreetMap roads data, but our recommended way is to download the data
+using the OSM download tool provided with InaSAFE.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><strong>Key notes for road data</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Format</p></td>
+<td><p>Vector line data</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field</p></td>
+<td><p>A field representing road type</p></td>
+</tr>
+<tr class="row-even"><td><p>Notes</p></td>
+<td><p>Topologically correct data are best but not essential</p></td>
+</tr>
+<tr class="row-odd"><td><p>Source</p></td>
+<td><p>Can be obtained from community mapping or a national mapping agency</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="buildings-structure-data">
+<h3>Buildings (structure) data<a class="headerlink" href="#buildings-structure-data" title="Link to this heading">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/icon_building.png"><img alt="../../_images/icon_building.png" class="align-left" src="../../_images/icon_building.png" style="width: 150pt;" /></a>
+<p>Like roads, building footprints can be a useful dataset to have for
+understanding the impacts of a flood. For example you may wish to know
+‘how many buildings might be flooded, and what types of buildings are they?’.
+In InaSAFE  you do not need to use engineering quality data.
+We are more concerned with the numbers and types of structures affected by a
+disaster and do not work at engineering tolerances needed when, for example,
+planning a new water mains system.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><strong>Key notes for buildings data</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Format</p></td>
+<td><p>Vector polygon data</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field</p></td>
+<td><p>A field representing building type</p></td>
+</tr>
+<tr class="row-even"><td><p>Notes</p></td>
+<td><p>InaSAFE does not need ‘engineering quality’ data</p></td>
+</tr>
+<tr class="row-odd"><td><p>Source</p></td>
+<td><p>Can be obtained from community mapping or a national mapping agency</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="population-data">
+<h3>Population data<a class="headerlink" href="#population-data" title="Link to this heading">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/icon_people.png"><img alt="../../_images/icon_people.png" class="align-left" src="../../_images/icon_people.png" style="width: 150pt;" /></a>
+<p>Population data can often be obtained from your census bureau or through
+various online data sources. One problem with population data is that it is
+often quite coarse (represented using a raster with a large pixel size) and
+so analysis at large scales (e.g. a small neighbourhood) using population
+data may not always be the best idea. Currently InaSAFE  only supports
+raster based census data, but in the near future we will be releasing a
+version that supports assigning population estimates to buildings using
+census data. One of the best online resources for population data is
+‘WorldPop’ - a project that aims to provide population data for anywhere
+in the globe produced in a standardised and rigorous way.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><strong>Key notes for population data</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Format</p></td>
+<td><p>Raster ‘cell’ data</p></td>
+</tr>
+<tr class="row-odd"><td><p>Requirements</p></td>
+<td><p>Currently the data should be in EPSG:4326 CRS</p></td>
+</tr>
+<tr class="row-even"><td><p>Notes</p></td>
+<td><p>Make sure you know if your data represent density or count</p></td>
+</tr>
+<tr class="row-odd"><td><p>Source</p></td>
+<td><p>Can be obtained from a national mapping agency</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="landcover-data">
+<h3>Landcover data<a class="headerlink" href="#landcover-data" title="Link to this heading">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/icon_landcover.png"><img alt="../../_images/icon_landcover.png" class="align-left" src="../../_images/icon_landcover.png" style="width: 150pt;" /></a>
+<p>Landcover data can often be obtained from national mapping agencies or through
+various online data sources. Landcover data are useful if you want to assess
+the impact of a hazard event such as a volcanic eruption on crops.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><strong>Key notes for landcover data</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Format</p></td>
+<td><p>Vector polygon data</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field</p></td>
+<td><p>A field representing landcover type</p></td>
+</tr>
+<tr class="row-even"><td><p>Notes</p></td>
+<td><p>Topologically correct data are best but not essential</p></td>
+</tr>
+<tr class="row-odd"><td><p>Source</p></td>
+<td><p>National mapping agency</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="places-data">
+<h3>Places data<a class="headerlink" href="#places-data" title="Link to this heading">¶</a></h3>
+<a class="reference internal image-reference" href="../../_images/icon_places.png"><img alt="../../_images/icon_places.png" class="align-left" src="../../_images/icon_places.png" style="width: 150pt;" /></a>
+<p>Places data can often be obtained from national mapping agencies or through
+various online data sources. Places data are useful if you want to assess
+the impact of a hazard event such as a volcanic ash event on place.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p><strong>Key notes for places    data</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Format</p></td>
+<td><p>Vector point data</p></td>
+</tr>
+<tr class="row-odd"><td><p>Field</p></td>
+<td><p>A field representing place name</p></td>
+</tr>
+<tr class="row-even"><td><p>Notes</p></td>
+<td><p>There must be a field representing place name</p></td>
+</tr>
+<tr class="row-odd"><td><p>Source</p></td>
+<td><p>National mapping agency</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="what-is-aggregation">
+<h2>What is aggregation?<a class="headerlink" href="#what-is-aggregation" title="Link to this heading">¶</a></h2>
+<p>Aggregation is the process whereby we group the results of the analysis by
+district so that you can see how many people, roads or buildings were
+affected in each area. This will help you to understand where the most
+critical needs are, and to generate reports as shown in the image below.
+Aggregation is optional in InaSAFE - if you do not use aggregation,
+the entire analysis area will be used for the data summaries.
+Typically aggregation layers in InaSAFE have as attributes the name
+of the district or reporting area. It is also possible to use extended
+attributes to indicate the ratio of men and women; youth, adults and
+elderly living in each area. Where these are provided and the exposure layer
+is population, InaSAFE will provide a demographic breakdown per
+aggregation area indicating how many men, women etc were probably affected
+in that area.</p>
+<a class="reference internal image-reference" href="../../_images/004_aggregation.png"><img alt="../../_images/004_aggregation.png" class="align-center" src="../../_images/004_aggregation.png" style="width: 400pt;" /></a>
+</section>
+<section id="what-is-contextual-data">
+<h2>What is contextual data?<a class="headerlink" href="#what-is-contextual-data" title="Link to this heading">¶</a></h2>
+<p>Contextual data are data that provide a sense of place and scale when
+preparing or viewing the results of analysis, while not actually being used
+for the analysis. For example you may include online maps to show the
+underlying relief of the study area, or an aerial image to show what
+buildings and infrastructure exist in the area.</p>
+<a class="reference internal image-reference" href="../../_images/004_jakarta_bing.png"><img alt="../../_images/004_jakarta_bing.png" class="align-center" src="../../_images/004_jakarta_bing.png" style="width: 400pt;" /></a>
+<p>Bing Aerial imagery for Jakarta, courtesy Bing Maps Open Layers</p>
+</section>
+<section id="what-is-the-difference-between-raster-and-vector-data">
+<h2>What is the difference between raster and vector data?<a class="headerlink" href="#what-is-the-difference-between-raster-and-vector-data" title="Link to this heading">¶</a></h2>
+<p>Vector data is arguably the most common kind of data you will find in the
+daily use of GIS. It describes geographic data in terms of points that may be
+connected into lines and polygons. Every object in a vector dataset is called
+a feature, and is associated with data that describes that feature. The basic
+shape of objects stored in the vector data is defined with a two-dimensional
+coordinate system / Cartesian (x, y).</p>
+<a class="reference internal image-reference" href="../../_images/004_vector.png"><img alt="../../_images/004_vector.png" class="align-center" src="../../_images/004_vector.png" style="width: 250pt;" /></a>
+<p>Raster data is different from vector data. While vector data has discrete
+features constructed out of vertices, and perhaps connected with lines
+and/or areas; raster data, is like an image. Although it may portray various
+properties of objects in the real world, these objects don’t exist as separate
+objects; rather, they are represented using pixels or cells of various
+different numerical values. These values can be real and represent different
+characteristics of the geography, such as water depth or amount of volcanic
+ash; or they can be a code than is related to the type of land use or the
+hazard class.</p>
+<a class="reference internal image-reference" href="../../_images/004_raster.png"><img alt="../../_images/004_raster.png" class="align-center" src="../../_images/004_raster.png" style="width: 150pt;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Creating vector data is like using a pen, where you can draw a point,
+a line or a polygon, Raster data is like taking a picture with a
+camera, where each square has one value, and all the squares (pixels)
+combine to make a picture.</p>
+</div>
+<p>Both vector and raster data can be used in InaSAFE. For example, we use
+vector data for the extent of a flood hazard and as well as roads and
+building footprint; but we use raster data for modelled hazards such as
+flood depth, tsunami inundation and for population exposure.</p>
+</section>
+<section id="what-is-the-difference-between-continuous-and-classified-data">
+<h2>What is the difference between continuous and classified data?<a class="headerlink" href="#what-is-the-difference-between-continuous-and-classified-data" title="Link to this heading">¶</a></h2>
+<p>In InaSAFE we differentiate between data which is continuous and data
+which is classified. The terms can be applied equally to both hazard and
+exposure data. <strong>Continuous</strong> data represent a <strong>continuously varying
+phenomenon</strong> such as depth in meters, population counts and so on.</p>
+<a class="reference internal image-reference" href="../../_images/004_raster_continuous.png"><img alt="../../_images/004_raster_continuous.png" class="align-center" src="../../_images/004_raster_continuous.png" style="width: 500pt;" /></a>
+<p>Continuous population data - courtesy WorldPop</p>
+<p><strong>Classified</strong> data represent <strong>named groups of values</strong>, for example, high,
+medium and low hazard. Grouping values works well when you wish to reduce data
+preparation complexity or deal with local variances in the interpretation of
+data. For example, a flood depth of 50cm may represent a high hazard zone
+in an area where people commonly have basements in their houses, and a low
+hazard zone in areas where people commonly build their houses on raised
+platforms.</p>
+<a class="reference internal image-reference" href="../../_images/004_raster_classified.png"><img alt="../../_images/004_raster_classified.png" class="align-center" src="../../_images/004_raster_classified.png" style="width: 500pt;" /></a>
+<p>Classified raster flood data - courtesy BNPB/Australian Government</p>
+</section>
+<section id="what-is-the-analysis-extent">
+<h2>What is the analysis extent?<a class="headerlink" href="#what-is-the-analysis-extent" title="Link to this heading">¶</a></h2>
+<p>In InaSAFE  you need to explicitly state what the intended analysis
+extent should be. In other words, you need to tell InaSAFE where the analysis
+should be carried out. There is a tool in InaSAFE that will allow you to drag
+a box around the intended analysis area - you should always check that you
+have done this before starting your analysis.</p>
+<a class="reference internal image-reference" href="../../_images/004_analysis_extent.png"><img alt="Analysis extent in |project_name|" class="align-center" src="../../_images/004_analysis_extent.png" style="width: 350pt;" /></a>
+<p>InaSAFE will show you what your current desired analysis extent is
+(blue line in green box), what the extent of your last analysis was
+(red box in the image above) and what your effective extent is
+(green box in the image above). The effective extent may not correspond
+exactly to your desired analysis extent because InaSAFE always aligns
+the extent to the edge of raster pixels.</p>
+</section>
+<section id="what-is-an-impact-function">
+<h2>What is an Impact Function?<a class="headerlink" href="#what-is-an-impact-function" title="Link to this heading">¶</a></h2>
+<a class="reference internal image-reference" href="../../_images/004_impact_function.png"><img alt="../../_images/004_impact_function.png" class="align-center" src="../../_images/004_impact_function.png" style="width: 300pt;" /></a>
+<p>An Impact Function (often abbreviated to IF) is software code in
+InaSAFE that implements a particular algorithm to determine the
+impact of a hazard on the selected exposure. Running an impact function
+is done when you have prepared all your input data, defined your analysis
+extent and wish to now see the impact outputs.</p>
+<p>Again, we should emphasise here that Impact Functions <strong>do not model hazards</strong>
+- they <strong>model the effects</strong> of one or more hazard events on an exposure layer.
+InaSAFE groups its impact functions according to the kind of hazard
+they work on:</p>
+<section id="supported-data-types-for-each-hazard-type-in-project-name">
+<h3>Supported data types for each hazard type in  InaSAFE<a class="headerlink" href="#supported-data-types-for-each-hazard-type-in-project-name" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name Impact Functions</p></th>
+<th class="head"><p>Detail</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Earthquake Impact Functions</strong></p>
+<a class="reference internal image-reference" href="../../_images/icon_earthquake.png"><img alt="../../_images/icon_earthquake.png" class="align-center" src="../../_images/icon_earthquake.png" style="width: 100pt;" /></a>
+</td>
+<td><p><strong>Earthquake hazard</strong>:  continuous raster, classified raster, and classified polygon</p>
+<p><strong>Population exposure</strong>: continuous raster with counts</p>
+<p><strong>Building exposure</strong>: classified polygon or point with a type attribute</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Flood Impact Functions</strong></p>
+<a class="reference internal image-reference" href="../../_images/icon_flood.png"><img alt="../../_images/icon_flood.png" class="align-center" src="../../_images/icon_flood.png" style="width: 100pt;" /></a>
+</td>
+<td><p><strong>Flood hazard</strong>:  continuous raster or classified polygon</p>
+<p><strong>Population exposure</strong>: continuous raster with counts</p>
+<p><strong>Building exposure</strong>: classified polygon or point with a type attribute</p>
+<p><strong>Road exposure</strong>: classified line with a type attribute</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Tsunami Impact Functions</strong></p>
+<a class="reference internal image-reference" href="../../_images/icon_tsunami.png"><img alt="../../_images/icon_tsunami.png" class="align-center" src="../../_images/icon_tsunami.png" style="width: 100pt;" /></a>
+</td>
+<td><p><strong>Tsunami hazard</strong>: continuous raster or classified polygon</p>
+<p><strong>Population exposure</strong>: continuous raster with counts</p>
+<p><strong>Building exposure</strong>: classified polygon with a type attribute</p>
+<p><strong>Road exposure</strong>: classified line with a type attribute</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Volcano Impact Functions</strong></p>
+<a class="reference internal image-reference" href="../../_images/icon_volcano.png"><img alt="../../_images/icon_volcano.png" class="align-center" src="../../_images/icon_volcano.png" style="width: 100pt;" /></a>
+</td>
+<td><p><strong>Volcano hazard</strong>:  continuous polygon, classified polygon, and point</p>
+<p><strong>Population exposure</strong>: continuous raster with counts</p>
+<p><strong>Building exposure</strong>: classified polygon with a type attribute</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Volcanic Ash Impact Functions</strong></p>
+<a class="reference internal image-reference" href="../../_images/icon_volcanic_ash.png"><img alt="../../_images/icon_volcanic_ash.png" class="align-center" src="../../_images/icon_volcanic_ash.png" style="width: 100pt;" /></a>
+</td>
+<td><p><strong>Volcano hazard</strong>:  clasified polygon or continuous raster</p>
+<p><strong>Population exposure</strong>: continuous raster with counts</p>
+<p><strong>Building exposure</strong>: classified polygon with a type attribute</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Cyclone Impact Functions</strong></p>
+<a class="reference internal image-reference" href="../../_images/icon_cyclone.png"><img alt="../../_images/icon_cyclone.png" class="align-center" src="../../_images/icon_cyclone.png" style="width: 100pt;" /></a>
+</td>
+<td><p><strong>Cyclone hazard</strong>:  clasified polygon or continuous raster</p>
+<p><strong>Building exposure</strong>: classified polygon with a type attribute</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Generic Impact Functions</strong></p>
+<a class="reference internal image-reference" href="../../_images/icon_generic.png"><img alt="../../_images/icon_generic.png" class="align-center" src="../../_images/icon_generic.png" style="width: 100pt;" /></a>
+</td>
+<td><p><strong>Generic hazard</strong>:  classified polygon, classified raster or continuous raster</p>
+<p><strong>Population exposure</strong>: continuous raster with counts</p>
+<p><strong>Building exposure</strong>: classified polygon with a type attribute</p>
+<p><strong>Landcover exposure</strong>: classified polygon with a type</p>
+<p>A note about generic impact functions: Generic IF’s are useful when your
+data does not conform to the a priori expectations of InaSAFE.
+For example, you may wish to produce a report on buildings that might be
+affected by a landslide, drought, smoke haze or any other hazard that does not
+have an explicit Impact Function in InaSAFE.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Each Impact Function will generate outputs that may include:
+- an impact map layer
+- an impact summary
+- minimum needs
+- action checklists</p>
+<a class="reference internal image-reference" href="../../_images/004_inasafe_outputs.png"><img alt="../../_images/004_inasafe_outputs.png" class="align-center" src="../../_images/004_inasafe_outputs.png" style="width: 300pt;" /></a>
+</section>
+</section>
+<section id="what-is-an-impact-layer">
+<h2>What is an impact layer?<a class="headerlink" href="#what-is-an-impact-layer" title="Link to this heading">¶</a></h2>
+<p>An impact layer is a new GIS dataset that is produced as the result of
+running an impact function. It will usually represent the exposure layer.
+For example, if you do a flood  analysis on buildings, the impact layer
+produced will be a buildings layer but each building will be classified
+according to whether it is dry, wet or flooded. InaSAFE will typically
+apply its own symbology to the output impact layer to make it clear which
+are the impacted buildings. This is illustrated in the image below.</p>
+<p>It should also be noted that the impact layer will only include features /
+cells that occur within the analysis extent. All others will be ‘clipped away’.
+It is very important to remember this when interpreting the map legend and the
+impact summary (see section below) because they are only relevant to the
+analysis area.  The impact layer is not saved by default. If you want to
+save this spatial data you need to do this yourself.</p>
+<a class="reference internal image-reference" href="../../_images/004_building_output.png"><img alt="../../_images/004_building_output.png" class="align-center" src="../../_images/004_building_output.png" style="width: 300pt;" /></a>
+</section>
+<section id="what-is-the-impact-summary">
+<h2>What is the impact summary?<a class="headerlink" href="#what-is-the-impact-summary" title="Link to this heading">¶</a></h2>
+<p>Whereas the impact layer represents spatial data, the impact summary is
+tabular and textual data. The impact summary provides a table (or series of
+tables) and other textual information with the numbers of buildings, roads or
+people affected, and includes other useful information such as minimum needs
+breakdowns, action checklists and summaries. The impact summary presents the
+results of the impact function in an easy to digest form. Our expectation that
+the numbers show here would form part of the input to your emergency
+management planning process - typically as a launch point for discussion and
+planning on how to have sufficient resources in order to cater for the
+impacted people, buildings or roads should a similar event to the one on
+which the scenario is based occur.
+An example of an impact summary is shown below.</p>
+<a class="reference internal image-reference" href="../../_images/004_impact_summary_buildings.png"><img alt="../../_images/004_impact_summary_buildings.png" class="align-center" src="../../_images/004_impact_summary_buildings.png" style="width: 600pt;" /></a>
+<p>Example impact summary table showing breakdown of buildings flooded.</p>
+</section>
+<section id="what-are-minimum-needs">
+<h2>What are minimum needs?<a class="headerlink" href="#what-are-minimum-needs" title="Link to this heading">¶</a></h2>
+<p>Minimum needs are a population specific reporting component for the
+impact summary. They are based on generic or regional preferences and define
+the daily food and well-being requirements for each individual who may be
+displaced during a disaster. For example you could specify that each person
+should receive 20l of fresh drinking water per day, 50l of bathing water and
+so on. InaSAFE will calculate these numbers to provide an estimate of
+the total needs for the displaced population.</p>
+<a class="reference internal image-reference" href="../../_images/004_impact_summary_min_needs.png"><img alt="../../_images/004_impact_summary_min_needs.png" class="align-center" src="../../_images/004_impact_summary_min_needs.png" style="width: 600pt;" /></a>
+</section>
+<section id="what-are-action-checklists">
+<h2>What are action checklists?<a class="headerlink" href="#what-are-action-checklists" title="Link to this heading">¶</a></h2>
+<p>Action checklists are generated lists of things disaster managers should
+consider when implementing their disaster management plan. Currently the
+action checklists are fairly simplistic - they are intended to prompt
+discussion and stimulate disaster managers to think about the important
+contingencies they should have in place.</p>
+<a class="reference internal image-reference" href="../../_images/004_impact_summary_actions.png"><img alt="../../_images/004_impact_summary_actions.png" class="align-center" src="../../_images/004_impact_summary_actions.png" style="width: 300pt;" /></a>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="datasets.html"
+                   title="Datasets"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="introduction.html"
+                   title="Introducing InaSAFE"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

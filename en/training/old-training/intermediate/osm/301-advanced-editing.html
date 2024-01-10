@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 1: Advanced Editing &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 2: Quality Assurance" href="302-quality-assurance.html" />
+    <link rel="prev" title="Introduction" href="300-introduction.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/intermediate/osm/301-advanced-editing.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/intermediate/osm/301-advanced-editing.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Intermediate Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 3: Data Collection Using OpenStreetMap Intermediate Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 1: Advanced Editing</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="302-quality-assurance.html"
+                   title="Module 2: Quality Assurance"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="300-introduction.html"
+                   title="Introduction"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../beginner/index.html">Beginner Training Module</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Intermediate Training Module</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 3: Data Collection Using OpenStreetMap Intermediate Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="300-introduction.html">Introduction</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 1: Advanced Editing</a></li>
+<li class="toctree-l5"><a class="reference internal" href="302-quality-assurance.html">Module 2: Quality Assurance</a></li>
+<li class="toctree-l5"><a class="reference internal" href="303-dealing-with-conflicts.html">Module 3: Dealing With Conflicts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="304-creating-josm-file-presets.html">Module 4: Creating JOSM File Presets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="305-using-private-data-store.html">Module 5: Using the Separate Data Store</a></li>
+<li class="toctree-l5"><a class="reference internal" href="306-editing-wiki-osm.html">Module 6: Editing the OpenStreetMap Wiki</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../qgis-inasafe/index.html">Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image610.png" src="../../../../_images/image610.png" />
+<section id="module-1-advanced-editing">
+<span id="advanced-editing"></span><h1>Module 1: Advanced Editing<a class="headerlink" href="#module-1-advanced-editing" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Use advanced editing tools in JOSM</p></li>
+<li><p>Make relations among objects</p></li>
+</ul>
+<p>Welcome to the intermediate guide for spatial data collection with
+OpenStreetMap. In the previous unit you learned how to draw points, lines
+and shapes in JOSM, how to open your GPS waypoints and tracks in JOSM and how
+to download, edit and upload your changes on OSM. In this module,
+we will describe relations, JOSM editing tools and editing techniques in
+greater detail.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While this module is not extremely advanced, it is a step higher than
+the previous unit. If you don’t feel like you fully understand the
+lessons leading up to this, you may wish to practise a little bit more
+before continuing.</p>
+</div>
+<section id="advanced-editing-tools">
+<h2>1. Advanced editing tools<a class="headerlink" href="#advanced-editing-tools" title="Link to this heading">¶</a></h2>
+<p>There are a few ways you can access more editing tools in JOSM. We will look
+more at the default tools, as well as additional tools available through
+plugins.</p>
+<section id="default-drawing-tools">
+<h3>1.1 Default drawing tools<a class="headerlink" href="#default-drawing-tools" title="Link to this heading">¶</a></h3>
+<p>JOSM has some additional tools to make it easier to draw lines and shapes.
+These tools are found in the <span class="menuselection">Tools</span> menu at the top of JOSM.</p>
+<img alt="../../../../_images/image712.png" class="align-center" src="../../../../_images/image712.png" />
+<p>In order to apply the functions in this menu, you must first select a point,
+line or shape in the map window. Some of the most useful functions are
+described here:</p>
+<section id="split-way">
+<h4>Split Way<a class="headerlink" href="#split-way" title="Link to this heading">¶</a></h4>
+<p>This allows you to divide a line into two separate lines. This
+is useful if you want to add different attributes to different parts of a
+road, such as a bridge. To use this function, select a point in the middle
+of the line that you want to split, go to <span class="menuselection">Tools ‣ Split Way</span>
+and your line should be split in two.</p>
+<img alt="../../../../_images/image810.png" class="align-center" src="../../../../_images/image810.png" />
+</section>
+<section id="combine-way">
+<h4>Combine Way<a class="headerlink" href="#combine-way" title="Link to this heading">¶</a></h4>
+<p>This does the opposite of <span class="guilabel">Split Way</span>. To combine
+two lines into a single line, they must share a single point. To use this
+function, select both lines that you want to combine. You can select more
+than one object by holding the <kbd class="kbd docutils literal notranslate">SHIFT</kbd> key on your keyboard and
+clicking on each line. When you have selected both lines,
+go to <span class="menuselection">Tools ‣ Combine Way</span>.</p>
+<img alt="../../../../_images/image912.png" class="align-center" src="../../../../_images/image912.png" />
+<p>Note that you if are combining roads that have different directions,
+you might get this warning:</p>
+<img alt="../../../../_images/image1012.png" class="align-center" src="../../../../_images/image1012.png" />
+<p>If the roads are connected and go in the same direction, click
+<span class="guilabel">Reverse and Combine</span>.</p>
+</section>
+<section id="reverse-way">
+<h4>Reverse Way<a class="headerlink" href="#reverse-way" title="Link to this heading">¶</a></h4>
+<p>This will change the direction of the line. If the line
+incorrectly represents a road or river that is one-way, you may want to
+change its direction. Unless someone has intentionally created a way to be
+one way you do not usually have to worry about altering the direction
+because ways in OSM default to represent both directions.</p>
+<img alt="../../../../_images/image1111.png" class="align-center" src="../../../../_images/image1111.png" />
+</section>
+<section id="simplify-way">
+<h4>Simplify Way<a class="headerlink" href="#simplify-way" title="Link to this heading">¶</a></h4>
+<p>If your line has too many nodes in it and you’d like to
+make it simpler, this will remove some of the points from a line.</p>
+<img alt="../../../../_images/image1212.png" class="align-center" src="../../../../_images/image1212.png" />
+</section>
+<section id="create-circle-or-align-nodes-in-circle">
+<h4>Create Circle OR Align Nodes in Circle<a class="headerlink" href="#create-circle-or-align-nodes-in-circle" title="Link to this heading">¶</a></h4>
+<p>If you are trying to make a
+circular shape, draw the circle as best you can and then select three nodes
+and the function. It will help arrange your points in a circle.</p>
+<img alt="../../../../_images/image1312.png" class="align-center" src="../../../../_images/image1312.png" />
+</section>
+<section id="align-nodes-in-line">
+<h4>Align Nodes in Line<a class="headerlink" href="#align-nodes-in-line" title="Link to this heading">¶</a></h4>
+<p>This function will align a series of points into a
+straight line. With long lines it is best to select sections of the line to
+straighten. Be careful as this does have the tendency to shift the line a
+little.</p>
+<img alt="../../../../_images/image1410.png" class="align-center" src="../../../../_images/image1410.png" />
+</section>
+<section id="orthogonalize-shape">
+<h4>Orthogonalize Shape<a class="headerlink" href="#orthogonalize-shape" title="Link to this heading">¶</a></h4>
+<p>This function is very useful for drawing regular
+shapes such as buildings. After you draw an area, this function will reshape
+it to have square corners. This feature is most useful for other regularly
+shaped features, such as tennis courts or landuse areas (Using the
+Building Plugin, which is explained below, might be easier
+for buildings).</p>
+<img alt="../../../../_images/image1510.png" class="align-center" src="../../../../_images/image1510.png" />
+</section>
+<section id="unglue-ways">
+<h4>Unglue Ways<a class="headerlink" href="#unglue-ways" title="Link to this heading">¶</a></h4>
+<p>This tool allows you to detach nodes that are connected.</p>
+<img alt="../../../../_images/image1610.png" class="align-center" src="../../../../_images/image1610.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The line and node will not actually appear separate as the last
+screenshot implies.</p>
+</div>
+</section>
+</section>
+<section id="plugins">
+<h3>1.2 Plugins<a class="headerlink" href="#plugins" title="Link to this heading">¶</a></h3>
+<section id="building-plugin">
+<h4>Building Plugin<a class="headerlink" href="#building-plugin" title="Link to this heading">¶</a></h4>
+<img alt="../../../../_images/image1710.png" src="../../../../_images/image1710.png" />
+<p>This plugin is by far one of the most useful tools for editing (digitising).
+Install it as with any other plugin. It will appear as an icon on the left hand
+toolbar. The functionality of this tool is explained here:</p>
+<p>The Building tool allows you to create shapes with 90 degree
+corners with just three clicks. First, trace the edge of the building
+and then drag out the line to make it a polygon.</p>
+<img alt="../../../../_images/image1810.png" class="align-center" src="../../../../_images/image1810.png" />
+<img alt="../../../../_images/image1910.png" class="align-center" src="../../../../_images/image1910.png" />
+<p>You can also create more complicated buildings by using the merge option.
+Create your building outline, select all of the polygons (press <kbd class="kbd docutils literal notranslate">SHIFT</kbd>
+to highlight them all) and then press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">SHIFT</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">J</kbd></kbd> to merge the objects.</p>
+<img alt="../../../../_images/image2010.png" class="align-center" src="../../../../_images/image2010.png" />
+<p>Furthermore, you can also change the default settings (size of building and
+default tags) by going to <span class="menuselection">Data ‣ Set building size</span>.</p>
+<img alt="../../../../_images/image2110.png" class="align-center" src="../../../../_images/image2110.png" />
+<p>This is useful if you are drawing many buildings of a known dimension (such as
+five by six metres). If you are mapping infrastructure which requires tags
+other than <strong>building=yes</strong>, you can set the desired default tags by going to
+<span class="guilabel">Advanced…</span>.</p>
+<img alt="../../../../_images/image2210.png" class="align-center" src="../../../../_images/image2210.png" />
+</section>
+<section id="utilsplugin2-more-tools">
+<h4>Utilsplugin2 (More Tools)<a class="headerlink" href="#utilsplugin2-more-tools" title="Link to this heading">¶</a></h4>
+<p>The plugin utilsplugin2 has several features that are also useful for editing.</p>
+<img alt="../../../../_images/image2310.png" class="align-center" src="../../../../_images/image2310.png" />
+<p>After you install this plugin, a new menu will appear called
+<span class="menuselection">More Tools</span>.</p>
+<img alt="../../../../_images/image2410.png" class="align-center" src="../../../../_images/image2410.png" />
+<p>The following tools are some of the most useful:</p>
+<section id="add-nodes-at-intersections">
+<h5>Add Nodes at Intersections<a class="headerlink" href="#add-nodes-at-intersections" title="Link to this heading">¶</a></h5>
+<p>This tool is helpful for adding
+missing nodes in intersections of selected ways. It is good practice that
+roads and rivers should always have common nodes where they intersect.</p>
+<img alt="../../../../_images/image2510.png" class="align-center" src="../../../../_images/image2510.png" />
+</section>
+<section id="copy-tags-from-previous-selection">
+<h5>Copy Tags from Previous Selection<a class="headerlink" href="#copy-tags-from-previous-selection" title="Link to this heading">¶</a></h5>
+<p>This function makes copying tags
+easier. If you want to create many objects with the same tags, first draw
+the objects. Then add the tags to one object. Click on another object and
+press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">R</kbd></kbd> to copy the tags from the previously selected object.
+You can do this for all objects that you want to tag. Remember that the tags
+will be copied from the previously selected object, so if you click on an
+untagged object and then another untagged object, you will not be able to
+copy any tags.</p>
+<img alt="../../../../_images/image2610.png" class="align-center" src="../../../../_images/image2610.png" />
+</section>
+<section id="add-source-tag">
+<h5>Add Source Tag<a class="headerlink" href="#add-source-tag" title="Link to this heading">¶</a></h5>
+<p>This tool simplifies adding a source tag. It remembers
+the source that was specified last and adds it as remembered source tag to
+your objects. You can insert the source with just one click.</p>
+</section>
+<section id="replace-geometry">
+<h5>Replace Geometry<a class="headerlink" href="#replace-geometry" title="Link to this heading">¶</a></h5>
+<p>This tool is great if you want to redraw a poorly shaped
+object, but want to keep the history, attributes and ID number of that
+object. For example, if you come across a building that is complicated and
+drawn in a poor fashion, then instead of painfully changing each node, you
+can (2) just draw the object again (3) select the old and new object (4)
+press <span class="guilabel">Replace Geometry</span> to transfer all the information over.</p>
+<img alt="../../../../_images/image2710.png" class="align-center" src="../../../../_images/image2710.png" />
+<p>Utilsplugin2 also provides a new selection menu that provides more tools:</p>
+<img alt="../../../../_images/image2810.png" class="align-center" src="../../../../_images/image2810.png" />
+<p>These tools are some of the most useful:</p>
+</section>
+<section id="unselect-nodes">
+<h5>Unselect Nodes<a class="headerlink" href="#unselect-nodes" title="Link to this heading">¶</a></h5>
+<p>This tool allows you to deselect nodes, which makes it useful for tagging
+the objects selected. This tool is necessary if you have mapped several
+polygon objects with similar attributes and would like to tag the objects
+without tagging the nodes. To do so, select all of the objects - polygons,
+ways and relations. Then unselect the nodes and tag appropriately.</p>
+<img alt="../../../../_images/image2910.png" class="align-center" src="../../../../_images/image2910.png" />
+</section>
+<section id="select-last-modified-nodes">
+<h5>Select Last Modified Nodes<a class="headerlink" href="#select-last-modified-nodes" title="Link to this heading">¶</a></h5>
+<p>This tool permits you to go back to the
+nodes that you most recently changed.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="relations">
+<h2>2. Relations<a class="headerlink" href="#relations" title="Link to this heading">¶</a></h2>
+<p>In the first unit we learned that there are three types of objects that can be
+drawn in OSM - points (nodes), lines (ways) and polygons. Lines
+contain numerous points, and the line itself carries the attributes that define
+what it represents. Polygons are the same as lines, except that the the line
+must finish where it begins in order to form a shape.</p>
+<p>In fact, there is one other type of object in OSM, and these are
+called relations. In the same way that a line consists of other points, a
+relation contains a group of other objects, be they points, lines or polygons.
+If you are looking to obtain advanced editing skills, then understanding and
+knowing how to properly edit relations is important.</p>
+<p>For example, imagine that you want to map a building that has courtyards in the
+centre. You would need to draw a polygon around the outside of the building,
+and you would need other polygons around the courtyards to indicate that they
+are not part of the building. This is an example of a relation. The relation
+would contain several polygons - and the attributes of the building would be
+attached to the relation, not the polygons.</p>
+<img alt="../../../../_images/image302.png" class="align-center" src="../../../../_images/image302.png" />
+<p>Relations are used to represent anything that requires a collection of objects
+to define. Other examples are bus routes (a collections of lines), long and
+complex objects (rivers or roads), or multiple polygons that are all part of one
+location (like buildings in a university).</p>
+<p>There are mainly four types of relations you will encounter in OSM:
+<strong>Multipolygons, Routes, Boundaries and Restrictions</strong>.
+In this section we will go over Multipolygons and Routes.</p>
+<section id="editing-relations">
+<h3>2.1 Editing relations<a class="headerlink" href="#editing-relations" title="Link to this heading">¶</a></h3>
+<p>The multipolygon above contains a polygon for the outer limits of the building
+and two more to mark the inner courtyards. To create a relation from these three
+polygons we need to:</p>
+<ol class="arabic simple">
+<li><p>Select all of the polygons.</p></li>
+<li><p>Go to <span class="menuselection">Tools ‣ Create multipolygon</span></p></li>
+</ol>
+<img alt="../../../../_images/image312.png" class="align-center" src="../../../../_images/image312.png" />
+<p>The polygons should automatically be created as a multi-polygon.</p>
+<img alt="../../../../_images/image322.png" class="align-center" src="../../../../_images/image322.png" />
+<ol class="arabic simple" start="3">
+<li><p>Click the <span class="guilabel">Edit</span> button in the <span class="guilabel">Tags</span> tab.</p></li>
+</ol>
+<p>This opens the relation editor. Notice that in the lower-left corner is a list
+of the members of the relation. One has been automatically defined with the
+role of “outer” (the outer polygon), and the other carries the role of “inner.”</p>
+<p>At the top are a list of the tags applied to this relation. Right now only one
+tag exists, <strong>type=multipolygon</strong>. This tag indicates what type of relation
+the object is.</p>
+<ol class="arabic simple" start="4">
+<li><p>Click beneath it and add one more tag: <strong>building=yes</strong>.</p></li>
+</ol>
+<img alt="../../../../_images/image32b.png" class="align-center" src="../../../../_images/image32b.png" />
+<ol class="arabic simple" start="5">
+<li><p>Click <span class="guilabel">OK</span>. The object will change colours and will now appear as
+a building, but with a courtyard.</p></li>
+</ol>
+<p>The data behind the relation in our example is visible on OSM: You
+can see this multipolygon on OSM by going to
+<a class="reference external" href="http://www.openstreetmap.org/browse/relation/2435797">http://www.openstreetmap.org/browse/relation/2435797</a>.
+It will appear on OSM like this:</p>
+<img alt="../../../../_images/image332.png" class="align-center" src="../../../../_images/image332.png" />
+</section>
+<section id="another-multipolygon">
+<h3>2.2  Another multipolygon<a class="headerlink" href="#another-multipolygon" title="Link to this heading">¶</a></h3>
+<p>The river below is another example of a multipolygon.
+Effectively it is the same as the building example, but with a greater number
+of members and covering a much larger area.
+It can be viewed on OSM here:
+<a class="reference external" href="http://www.openstreetmap.org/browse/relation/1046961">http://www.openstreetmap.org/browse/relation/1046961</a>.</p>
+<img alt="../../../../_images/image342.png" class="align-center" src="../../../../_images/image342.png" />
+<img alt="../../../../_images/image352.png" class="align-center" src="../../../../_images/image352.png" />
+<p>This river contains ten ways that are connected like a long polygon.</p>
+</section>
+<section id="linestring-relations">
+<h3>2.3  Linestring relations<a class="headerlink" href="#linestring-relations" title="Link to this heading">¶</a></h3>
+<p>Relations are also very useful for creating, labeling and editing large
+linestrings; for example, bus routes, hiking trails, bicycle paths, etc.
+These differ from multipolygons because they are relations with members,
+as supposed to complex areas.
+A linestring could simply be one line with multiple members.
+Additional features, such as bus stops represented by separate nodes can also
+be tagged as relation members.</p>
+<img alt="../../../../_images/image362.png" src="../../../../_images/image362.png" />
+<img alt="../../../../_images/image372.png" src="../../../../_images/image372.png" />
+<p>To create a linestring relation:</p>
+<ol class="arabic simple" start="6">
+<li><p>Make sure that all of the ways in which the route runs along are
+appropriately tagged. For example, <strong>highway=footway</strong>.</p></li>
+<li><p>Select all of the highways or ways that are part of the bus route.
+If you would only like to select certain parts of a way, then
+you must divide the way into sections.
+This creates more work, but you can easily do it with the
+<span class="guilabel">Split Way</span> tool.</p></li>
+<li><p>Go to <span class="menuselection">Presets ‣ Transport Public Transport ‣ Route master</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image382.png" class="align-center" src="../../../../_images/image382.png" />
+<ol class="arabic simple" start="9">
+<li><p>Fill in the information about the bus route and click
+<span class="guilabel">New relation</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image392.png" class="align-center" src="../../../../_images/image392.png" />
+<p>Relations are difficult to understand and do not have to be used often,
+but they are necessary to know about. As you get more developed with your
+OSM skills and want to create more complex buildings, rivers and routes,
+relations will be useful.</p>
+<p><a class="reference internal" href="302-quality-assurance.html#quality-assurance"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="302-quality-assurance.html"
+                   title="Module 2: Quality Assurance"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="300-introduction.html"
+                   title="Introduction"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

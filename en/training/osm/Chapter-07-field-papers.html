@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Chapter 7: Field Papers &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Chapter 8: Conflict Resolution in OSM" href="Chapter-08-conflict-resolution-in-osm.html" />
+    <link rel="prev" title="Chapter 6: Using GPS" href="Chapter-06-using-gps.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/osm/Chapter-07-field-papers.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/osm/Chapter-07-field-papers.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Data Collection Using OpenStreetMap</a>
+                </li>
+                
+
+                <li><a href="#">Chapter 7: Field Papers</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-08-conflict-resolution-in-osm.html"
+                   title="Chapter 8: Conflict Resolution in OSM"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="Chapter-06-using-gps.html"
+                   title="Chapter 6: Using GPS"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Data Collection Using OpenStreetMap</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Chapter-00-preface.html">Preface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-01-introduction.html">Chapter 1: Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-02-getting-started.html">Chapter 2: Getting Started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-03-introducing-the-id-editor.html">Chapter 3: Introducing the iD Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-04-getting-started-with-josm.html">Chapter 4: Getting started with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-05-editing-with-josm.html">Chapter 5:  Editing with JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-06-using-gps.html">Chapter 6: Using GPS</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chapter 7: Field Papers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview-of-field-papers">7.1 Overview of Field Papers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-does-field-papers-work">7.2 How does Field Papers Work?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#create-and-print-field-papers">7.3 Create and Print Field Papers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mapping-with-field-papers">7.4 Mapping with Field Papers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scan-and-upload-field-papers">7.5 Scan and Upload Field Papers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-plugin-field-papers">7.6 Add Plugin Field Papers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#open-field-papers-from-josm">7.7 Open Field Papers from JOSM</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#excercise">Excercise!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-08-conflict-resolution-in-osm.html">Chapter 8: Conflict Resolution in OSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-09-inserting-tag.html">Chapter 9: Inserting Special Tag in JOSM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-10-imagery-offset.html">Chapter 10: Imagery Offset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Chapter-11-export-osm-data.html">Chapter 11: Export OSM data</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/7_000.png" src="../../_images/7_000.png" />
+<section id="chapter-7-field-papers">
+<span id="ch7-field-papers"></span><h1>Chapter 7: Field Papers<a class="headerlink" href="#chapter-7-field-papers" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>How to use Field Papers</p></li>
+<li><p>Make and print Field Papers</p></li>
+<li><p>Add data to print using Field Papers</p></li>
+<li><p>Scan and upload Field Papers to Field Papers website</p></li>
+<li><p>Open Field Papers into JOSM</p></li>
+</ul>
+<p>In this module we will see how we can record the coordinates of places without a GPS.
+We will use a paper-based tool called Field Papers, which allows you to print a map of an area, draw on it, add notes,
+and load the paper back into JOSM, where you can add your locations to OpenStreetMap.</p>
+<section id="overview-of-field-papers">
+<h2>7.1 Overview of Field Papers<a class="headerlink" href="#overview-of-field-papers" title="Link to this heading">¶</a></h2>
+<p>Before going into detail about Field Papers, let’s look at a general overview of how the Field Papers process works:</p>
+<ol class="arabic simple">
+<li><p>Locate the area of interest you want to map on the Field Papers website. Create a map for the area of interest.
+Print out a map of this area. You can choose to print the area of interest using the default OpenStreetMap backdrop,
+or you may choose to print aerial imagery, if it is a available in your area.</p></li>
+</ol>
+<figure class="align-center" id="id1">
+<img alt="../../_images/7_001.png" src="../../_images/7_001.png" />
+<figcaption>
+<p><span class="caption-text"><em>Interface Field Papers</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Use your printed map to survey the area. Add more places by drawing them on the map. Draw lines for roads,
+shapes for buildings, and so forth. Write notes about each location directly on the map,
+or write numbers on the map that relate to numbers in your notebook, where you can write more detailed information
+about each object.</p></li>
+<li><p>Scan your paper into the computer. If you do not have a scanner, you can take a photograph of the paper,
+if your camera is able to take high quality pictures. Upload the image to the Field Papers website.</p></li>
+</ol>
+<figure class="align-center" id="id2">
+<img alt="../../_images/7_002.png" src="../../_images/7_002.png" />
+<figcaption>
+<p><span class="caption-text"><em>Field Papers Image</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>In JOSM, load the Field Papers. Use the objects you drew as a reference to add the digitally into OpenStreetMap.</p></li>
+</ol>
+<figure class="align-center" id="id3">
+<img alt="../../_images/7_003.png" src="../../_images/7_003.png" />
+<figcaption>
+<p><span class="caption-text"><em>Interface Field Papers in JOSM</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="how-does-field-papers-work">
+<h2>7.2 How does Field Papers Work?<a class="headerlink" href="#how-does-field-papers-work" title="Link to this heading">¶</a></h2>
+<p>If you follow the Field Papers process described above, you will be collecting accurate geographic coordinate
+of places with nothing more than paper. How is this possible?</p>
+<figure class="align-center" id="id4">
+<img alt="../../_images/7_004.png" src="../../_images/7_004.png" />
+<figcaption>
+<p><span class="caption-text"><em>Barcode Field Papers</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>When you print a Field Papers, the paper comes with a square barcode on the bottom of the page.
+This barcode allows Field Papers to determine the exact location of the map that you are using to survey.
+Later, when you load the paper back into JOSM, all the objects that you drew will be in shown relative
+to their actual locations. This is same with you using GPS for collecting actual coordinates, except all you need is paper!</p>
+<p>Now let’s learn how to create and use Field Papers.</p>
+</section>
+<section id="create-and-print-field-papers">
+<h2>7.3 Create and Print Field Papers<a class="headerlink" href="#create-and-print-field-papers" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Open your web browser. In the address bar at the top of the window,
+enter <a class="reference external" href="http://fieldpapers.org">http://fieldpapers.org/</a> and press <kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
+<li><p>The website should look something like the figure below:</p></li>
+</ol>
+<figure class="align-center" id="id5">
+<img alt="../../_images/7_005.png" src="../../_images/7_005.png" />
+<figcaption>
+<p><span class="caption-text"><em>Interface Field Papers</em></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Click <span class="guilabel">Make yourself an Atlas</span> to select the area that you want print out.</p></li>
+</ol>
+<figure class="align-center" id="id6">
+<img alt="../../_images/7_006.png" src="../../_images/7_006.png" />
+<figcaption>
+<p><span class="caption-text"><em>Make Field Papers</em></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>You will be directed to a page like this where you can see there are some setting at left panel and
+main map at the right.</p></li>
+</ol>
+<figure class="align-center" id="id7">
+<img alt="../../_images/7_007.png" src="../../_images/7_007.png" />
+<figcaption>
+<p><span class="caption-text"><em>Compose Field Papers</em></span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>On the main map, to find the area that you want to map, you can click search button and type the location name OR
+you can drag manually the map with the same way when you drag map in OpenStreetMap website, use the left button your mouse for drag map, and scroll your mouse for zoom in and zoom out. Click on <span class="guilabel">+</span> and <span class="guilabel">-</span> buttons in the upper left corner for zoom in and zoom out.</p></li>
+</ol>
+<figure class="align-center" id="id8">
+<img alt="../../_images/7_008.png" src="../../_images/7_008.png" />
+<figcaption>
+<p><span class="caption-text"><em>Setting the area in Field Papers</em></span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+<div class="legend">
+<p>Here you also can define the boundaries of your Field Papers. The boundaries is displayed as hollow box with
+black border. You want to make sure that the window displays the area of interest that you intend to map.
+You can add more page or less page. Make sure that your map can display building and road for field survey.</p>
+</div>
+</figcaption>
+</figure>
+<figure class="align-center" id="id9">
+<img alt="../../_images/7_009.png" src="../../_images/7_009.png" />
+<figcaption>
+<p><span class="caption-text"><em>Setting the page in Field Papers</em></span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>At the left panel are some setting for print out Field Papers. The first is give information to your atlas
+by type a name on the <strong>Atlas Title</strong> column. If you want, you can add notes to be printed on the map,
+such as questions you want to remember to answer or specific places you want to identity by give a check mark
+on <strong>Print notes</strong> and type your notes on the <strong>Notes</strong> column.</p></li>
+</ol>
+<figure class="align-center" id="id10">
+<img alt="../../_images/7_010.png" src="../../_images/7_010.png" />
+<figcaption>
+<p><span class="caption-text"><em>Setting atlas information in Field Papers</em></span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>The second is the Grid Layout setting. The <strong>Paper Size</strong> is used to adjust the paper size that you want use
+for print out Field Paper. You can choose <span class="guilabel">letter</span>, <span class="guilabel">A3</span>, or <span class="guilabel">A4</span>.
+Then the <strong>Orientation</strong> is used to adjust the paper orientation that you want use for print out Field Paper.
+You can choose between <span class="guilabel">portrait</span> or <span class="guilabel">landscape</span> as shown in the figure below.</p></li>
+</ol>
+<figure class="align-center" id="id11">
+<img alt="../../_images/7_011.png" src="../../_images/7_011.png" />
+<figcaption>
+<p><span class="caption-text"><em>Setting the paper size and paper orientation in Field Papers</em></span><a class="headerlink" href="#id11" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="8">
+<li><p>Still in Grid Layout setting, next you can select the type data for your Field Papers. You can select
+different <strong>Basemap</strong> for change map background. In this example shown in the figure below,
+we will select <span class="guilabel">Satellite Only</span>.</p></li>
+</ol>
+<figure class="align-center" id="id12">
+<img alt="../../_images/7_012.png" src="../../_images/7_012.png" />
+<figcaption>
+<p><span class="caption-text"><em>Setting Map Background on Field Papers</em></span><a class="headerlink" href="#id12" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="9">
+<li><p>When you’re finished, click <span class="guilabel">MAKE ATLAS</span></p></li>
+</ol>
+<figure class="align-center" id="id13">
+<img alt="../../_images/7_013.png" src="../../_images/7_013.png" />
+<figcaption>
+<p><span class="caption-text"><em>Next step to create Field Papers</em></span><a class="headerlink" href="#id13" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="10">
+<li><p>It may take a few minutes to prepare your final Field Papers map. When finished, you will see your Field Paper
+on this page, shown in the figure below.</p></li>
+</ol>
+<figure class="align-center" id="id14">
+<img alt="../../_images/7_014.png" src="../../_images/7_014.png" />
+<figcaption>
+<p><span class="caption-text"><em>The process preparing Field Papers</em></span><a class="headerlink" href="#id14" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="11">
+<li><p>When your print is ready, Click <span class="guilabel">Download PDF</span>. The Field Paper should begin downloading.
+If it loads in your browser, you may need to save it by going to <span class="menuselection">File ‣ Save</span>.</p></li>
+</ol>
+<figure class="align-center" id="id15">
+<img alt="../../_images/7_015.png" src="../../_images/7_015.png" />
+<figcaption>
+<p><span class="caption-text"><em>Download Field Papers</em></span><a class="headerlink" href="#id15" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="12">
+<li><p>When the download is finished, open the PDF file. Connect your computer to a printer and print the page.
+If everything goes well, you should now have map printed on paper.</p></li>
+</ol>
+</section>
+<section id="mapping-with-field-papers">
+<h2>7.4 Mapping with Field Papers<a class="headerlink" href="#mapping-with-field-papers" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Take your Field Papers outside, and use it as a guide to walk and identify new places that are not on the map.</p></li>
+<li><p>Draw lines for roads, shapes for buildings, and so forth. Write notes about each location directly on the map,
+or write numbers on the map that relate to numbers in your notebook, where you can write more detailed information
+about each object.</p></li>
+<li><p>When you are satisfied with your additions on the paper map, then you can add them digitally into OpenStreetMap.</p></li>
+</ol>
+</section>
+<section id="scan-and-upload-field-papers">
+<h2>7.5 Scan and Upload Field Papers<a class="headerlink" href="#scan-and-upload-field-papers" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Field Papers are very useful for mapping with nothing more than paper, but they are not a 100% solution.
+We will still need to load our paper map into JOSM, add our information digitally, and save our changes on OpenStreetMap.</p></li>
+<li><p>The first step is to scan your Field Papers into your computer. You can do this by attaching a scanner to
+your computer, scanning the paper, and saving it as an image file. If you don’t have a scanner, you can take a photography of the paper, but you should be careful to take a very good photo. Make sure that the paper is flat
+and your camera is directly in front of it. Be sure to include the barcode in the image, as Field Papers will not work without it. Here is an example of a scanned/photographed image:</p></li>
+</ol>
+<figure class="align-center" id="id16">
+<img alt="../../_images/7_016.png" src="../../_images/7_016.png" />
+<figcaption>
+<p><span class="caption-text"><em>Field Papers Image</em></span><a class="headerlink" href="#id16" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Once you have your Field papers scanned and saved on the computer, open your web browser and return
+to Field Papers website just as before.</p></li>
+<li><p>Click the <span class="guilabel">Upload</span> tab at the top of the page.</p></li>
+</ol>
+<figure class="align-center" id="id17">
+<img alt="../../_images/7_017.png" src="../../_images/7_017.png" />
+<figcaption>
+<p><span class="caption-text"><em>Upload Field Papers</em></span><a class="headerlink" href="#id17" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Click <span class="guilabel">Browse…</span> and navigate to the file where you scanned/photographed your Field Papers.</p></li>
+</ol>
+<figure class="align-center" id="id18">
+<img alt="../../_images/7_018.png" src="../../_images/7_018.png" />
+<figcaption>
+<p><span class="caption-text"><em>Select the to be uploaded to Field Papers website</em></span><a class="headerlink" href="#id18" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>It may take a few minutes for your paper to upload, depending on the speed of your connection.</p></li>
+</ol>
+<figure class="align-center" id="id19">
+<img alt="../../_images/7_019.png" src="../../_images/7_019.png" />
+<figcaption>
+<p><span class="caption-text"><em>Field Papers uploading process</em></span><a class="headerlink" href="#id19" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>When the upload finished, you can see the page interface as in the figure below:</p></li>
+</ol>
+<figure class="align-center" id="id20">
+<img alt="../../_images/7_020.png" src="../../_images/7_020.png" />
+<figcaption>
+<p><span class="caption-text"><em>The result from upload Field Papers</em></span><a class="headerlink" href="#id20" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="add-plugin-field-papers">
+<h2>7.6 Add Plugin Field Papers<a class="headerlink" href="#add-plugin-field-papers" title="Link to this heading">¶</a></h2>
+<p>Before we open Field Papers in JOSM, we need install the Field Papers plugin. The fieldpapers plugin enables JOSM
+to open Field Papers that have been uploaded to the Field Papers website. The Field Papers will be used as background,
+and we open it using the same procedure for opening satellite imagery in JOSM.</p>
+<ol class="arabic simple">
+<li><p>Open JOSM and go to <span class="menuselection">Edit ‣ Preferences</span>.</p></li>
+<li><p>Click on <span class="guilabel">Plugins</span> tab.</p></li>
+<li><p>Type <kbd class="kbd docutils literal notranslate">fieldpapers</kbd> in the <span class="guilabel">Search</span> box. After you find it, tick the fieldpapers box
+and Click <span class="guilabel">OK</span> as shown in the figure below.</p></li>
+</ol>
+<figure class="align-center" id="id21">
+<img alt="../../_images/7_021.png" src="../../_images/7_021.png" />
+<figcaption>
+<p><span class="caption-text"><em>Field Papers Plugin</em></span><a class="headerlink" href="#id21" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Restart JOSM so the plugin loads.</p></li>
+</ol>
+</section>
+<section id="open-field-papers-from-josm">
+<h2>7.7 Open Field Papers from JOSM<a class="headerlink" href="#open-field-papers-from-josm" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Now you can add the results of your scanned Field Papers to JOSM and add your information to OpenStreetMap.
+Return to the <a class="reference external" href="http://fieldpapers.org">Field Papers website</a> in browser address bar.</p></li>
+<li><p>Click <span class="guilabel">Watch</span> – move your mouse to the bottom and click <span class="guilabel">Snapshots</span> until your browser page
+looks like the figure below:</p></li>
+</ol>
+<figure class="align-center" id="id22">
+<img alt="../../_images/7_022.png" src="../../_images/7_022.png" />
+<figcaption>
+<p><span class="caption-text"><em>List Field Papers in Snapshots</em></span><a class="headerlink" href="#id22" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>To open Field Papers in JOSM, we need copy the photo ID from the Field Papers that have been scanned.
+We can get the ID from the snapshot URL at the Field Papers website. Click on the image until the url appears as shown
+below, then copy the URL for example: <em>http://fieldpapers.org/snapshots/cdq5bfq4#17/-6.81299/107.61451</em></p></li>
+</ol>
+<figure class="align-center" id="id23">
+<img alt="../../_images/7_023.png" src="../../_images/7_023.png" />
+<figcaption>
+<p><span class="caption-text"><em>URL from Snapshot Field Papers</em></span><a class="headerlink" href="#id23" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Copy the URL by selecting it and pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">CTRL</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">C</kbd></kbd>.</p></li>
+<li><p>Open JOSM and make sure the Field Papers plugin is listed in the menu on the top of toolbar.
+Click <span class="menuselection">Field Papers ‣ Scanned Map…</span></p></li>
+</ol>
+<figure class="align-center" id="id24">
+<img alt="../../_images/7_024.png" src="../../_images/7_024.png" />
+<figcaption>
+<p><span class="caption-text"><em>Field Papers Menu in JOSM</em></span><a class="headerlink" href="#id24" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Then paste the URL that we have copied from the Field Papers site by pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">V</kbd></kbd> on your keyboard.</p></li>
+</ol>
+<figure class="align-center" id="id25">
+<img alt="../../_images/7_025.png" src="../../_images/7_025.png" />
+<figcaption>
+<p><span class="caption-text"><em>Input Field Papers URL in JOSM</em></span><a class="headerlink" href="#id25" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+<li><p>If everything goes well, the Field Papers will open in JOSM. The next
+module, we can see how to add objects from the scanned Field Papers to
+OpenStreetMap.</p></li>
+</ol>
+<figure class="align-center" id="id26">
+<img alt="../../_images/7_026.png" src="../../_images/7_026.png" />
+<figcaption>
+<p><span class="caption-text"><em>Interface Field Papers in JOSM</em></span><a class="headerlink" href="#id26" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Also note that you can use scanned Field Papers in other online editors such as ID Editor
+or Potlatch2 by clicking the link <span class="guilabel">Edit in… ID</span> or <span class="guilabel">Edit in… Potlatch</span>
+on page Field Papers that have been scanned.</p>
+<figure class="align-center" id="id27">
+<img alt="../../_images/7_027.png" src="../../_images/7_027.png" />
+<figcaption>
+<p><span class="caption-text"><em>Editing Field Papers with iD Editor</em></span><a class="headerlink" href="#id27" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id28">
+<img alt="../../_images/7_028.png" src="../../_images/7_028.png" />
+<figcaption>
+<p><span class="caption-text"><em>Interface Editing OSM data on iD Editor</em></span><a class="headerlink" href="#id28" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="excercise">
+<h2>Excercise!<a class="headerlink" href="#excercise" title="Link to this heading">¶</a></h2>
+<p>After you add your changes to OSM, they will be saved to the OSM servers. When you want add some information to your map,
+you can print a Field Paper that includes the changes you made. As this process is repeated, and you acquire more details,
+the map will steadily improve!</p>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>In this module, You have learned how to use Field Papers and how Field Papers works as a data collection device.
+You have learned how to print, mapping, and scans Field Paper, and how you can use them to improve OpenStreetMap.</p>
+<p><a class="reference internal" href="Chapter-08-conflict-resolution-in-osm.html#ch8-conflict-resolution-in-osm"><span class="std std-ref">Go to next chapter –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-08-conflict-resolution-in-osm.html"
+                   title="Chapter 8: Conflict Resolution in OSM"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="Chapter-06-using-gps.html"
+                   title="Chapter 6: Using GPS"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

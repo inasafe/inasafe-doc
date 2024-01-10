@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 4: Planning an Evacuation Route Based on Hazard Information &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 5: Calculating Damages and Losses" href="405-calculating-damages-and-losses.html" />
+    <link rel="prev" title="Module 3: Determining IDP Camp Location" href="403-determining-idp-camp-location.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/intermediate/qgis-inasafe/404-planning-evacuation-route.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Intermediate Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 4: Planning an Evacuation Route Based on Hazard Information</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="405-calculating-damages-and-losses.html"
+                   title="Module 5: Calculating Damages and Losses"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="403-determining-idp-camp-location.html"
+                   title="Module 3: Determining IDP Camp Location"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../beginner/index.html">Beginner Training Module</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Intermediate Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 3: Data Collection Using OpenStreetMap Intermediate Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 4: Data Analysis Using QGIS and InaSAFE Intermediate Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="400-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="401-review-qgis.html">Module 1: QGIS Review</a></li>
+<li class="toctree-l5"><a class="reference internal" href="402-preparing-data-and-keywords-for-inasafe.html">Module 2: Preparing Data and Keywords for InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="403-determining-idp-camp-location.html">Module 3: Determining IDP Camp Location</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 4: Planning an Evacuation Route Based on Hazard Information</a></li>
+<li class="toctree-l5"><a class="reference internal" href="405-calculating-damages-and-losses.html">Module 5: Calculating Damages and Losses</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image713.png" src="../../../../_images/image713.png" />
+<section id="module-4-planning-an-evacuation-route-based-on-hazard-information">
+<span id="planning-evacuation-route"></span><h1>Module 4: Planning an Evacuation Route Based on Hazard Information<a class="headerlink" href="#module-4-planning-an-evacuation-route-based-on-hazard-information" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand the concept of shortest path and fastest route</p></li>
+<li><p>Use the Road Graph plugin</p></li>
+<li><p>Set up speed and road direction</p></li>
+<li><p>Determine start and destination points</p></li>
+<li><p>Conduct route analysis and selection</p></li>
+</ul>
+<p>By now you should have a pretty good understanding of how InaSAFE
+works and its operations.</p>
+<p>You know how to add layers, and how to define keywords
+so that InaSAFE can recognise layers appropriately.
+Now that we can use InaSAFE effectively to run scenario analyses,
+we will look at other QGIS functionality that will help us in preparing
+contingency plans.</p>
+<p>In this module, we will learn how to perform a GIS analysis in order to
+determine an appropriate evacuation route in the event of a disaster.</p>
+<p>The term <strong>fastest route</strong> indicates the route a person can take between
+point A and point B that will allow them to cover the distance in the least
+amount of time.</p>
+<p>Similarly, <strong>shortest path</strong> indicates the route that will allow a person to
+get from point A to point B with the least distance travelled.
+In theory, this would be a straight line between point A and point B,
+but in reality this is impractical, because travelling in a straight line
+means climbing hills and going around buildings and fences. Of course this
+is why we use roads, and why we calculate fastest and shortest routes using
+roads.</p>
+<p>We will use the Road Graph plugin in this module, which does just that.
+If we provide two points, the plugin is able to calculate either the fastest
+route or the shortest path between them.</p>
+<section id="road-graph-plugin">
+<h2>1. Road Graph plugin<a class="headerlink" href="#road-graph-plugin" title="Link to this heading">¶</a></h2>
+<p>We will be continuing with the previous example, which you should have
+saved. We won’t be using the InaSAFE plugin in this module,
+so you may close the panel if you like.</p>
+<ol class="arabic simple">
+<li><p>Open the project in QGIS.</p></li>
+<li><p>We will use a pre-prepared roads layer in this module, which may
+be slightly more detailed than OpenStreetMap.
+Remove the <span class="guilabel">planet_osm_roads</span> layer and add
+<span class="guilabel">Jalan_Sirahan</span>,
+which is located in the <code class="file docutils literal notranslate"><span class="pre">qgis/Sirahan/</span></code> directory.
+You should have the following layers:</p></li>
+</ol>
+<img alt="../../../../_images/image722.png" class="align-center" src="../../../../_images/image722.png" />
+<ol class="arabic simple" start="3">
+<li><p>We will be using a plugin that comes installed with QGIS.
+Right-click on the toolbars to see which toolbars are activated, and select
+<span class="guilabel">Shortest path</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image732.png" class="align-center" src="../../../../_images/image732.png" />
+<ol class="arabic simple" start="4">
+<li><p>A new plugin window will appear in your project window that looks like this:</p></li>
+</ol>
+<img alt="../../../../_images/image742.png" class="align-center" src="../../../../_images/image742.png" />
+</section>
+<section id="editing-plugin-settings">
+<h2>2. Editing plugin settings<a class="headerlink" href="#editing-plugin-settings" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple" start="5">
+<li><p>We must edit some settings in order for the <span class="guilabel">Shortest path</span> plugin
+to work.
+Go to <span class="menuselection">Vector ‣ Road graph ‣ Settings</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image753.png" class="align-center" src="../../../../_images/image753.png" />
+<ol class="arabic simple" start="6">
+<li><p>Make sure that <span class="guilabel">hour</span> and <span class="guilabel">kilometer</span> are selected
+as the units.</p></li>
+<li><p>Set <span class="guilabel">Topology tolerance</span> to <kbd class="kbd docutils literal notranslate">4</kbd>.</p></li>
+<li><p>On the <span class="guilabel">Transportation layer</span> tab, select <span class="guilabel">Jalan_Sirahan</span>
+as the layer. This layer contains the streets that the plugin will use to calculate
+routes. The rest will remain the same. It should look like this:</p></li>
+</ol>
+<img alt="../../../../_images/image763.png" class="align-center" src="../../../../_images/image763.png" />
+<ol class="arabic simple" start="9">
+<li><p>On the <span class="guilabel">Default settings</span> tab, we must fill in the direction and
+speed. Choose <span class="guilabel">two-way direction</span> and <kbd class="kbd docutils literal notranslate">25</kbd> for the speed
+(meaning 25 km/hr).
+This assumes that traffic can go in both directions at a maximum speed of
+25 km/hr.</p></li>
+</ol>
+<img alt="../../../../_images/image773.png" src="../../../../_images/image773.png" />
+<ol class="arabic simple" start="10">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+</ol>
+</section>
+<section id="choosing-start-and-destination-points">
+<h2>3. Choosing start and destination points<a class="headerlink" href="#choosing-start-and-destination-points" title="Link to this heading">¶</a></h2>
+<p>The Road Graph plugin calculates either the shortest or fastest route between
+two points, so we need to provide a start point and an end point for an
+evacuation route.</p>
+<p>Of course an evacuation route should be for all people in an area,
+but we can experiment with different start points and see if evacuation
+routes will be different in different areas.</p>
+<ol class="arabic simple" start="11">
+<li><p>On the Road Graph panel, click on the plus button next to <span class="guilabel">Start</span>
+and then click somewhere on the map to indicate the first point of your
+evacuation route. This would be the initial point for the evacuation route
+in the time of a disaster.</p></li>
+</ol>
+<img alt="../../../../_images/image783.png" class="align-center" src="../../../../_images/image783.png" />
+<p>Your starting point will be marked as a green point and the coordinates of
+the point will be recorded in the <span class="guilabel">Start</span> input box.</p>
+<p>Now we need to assign the destination of our evacuation route.
+Where will people be evacuated to?
+Because this is an example, we don’t have a great idea of where an
+appropriate place would be. We might use GIS to determine appropriate
+locations, which would most likely be high ground in the event of a flood.
+For this example, we will choose a destination at the south-east corner of the
+village.</p>
+<ol class="arabic simple" start="12">
+<li><p>Click the plus sign next to <span class="guilabel">Stop</span> and click somewhere on the map.
+The destination will be marked with a red point.</p></li>
+</ol>
+<img alt="../../../../_images/image793.png" class="align-center" src="../../../../_images/image793.png" />
+<ol class="arabic simple" start="13">
+<li><p>Choose <span class="guilabel">Length</span> or <span class="guilabel">Time</span> next to <span class="guilabel">Criterion</span>.
+This determines whether Road Graph will look for the shortest distance or
+the shortest amount of time.</p></li>
+<li><p>Click <span class="guilabel">Calculate</span>.</p></li>
+<li><p>The time and distance required for the evacuation route will be displayed.</p></li>
+</ol>
+<img alt="../../../../_images/image803.png" class="align-center" src="../../../../_images/image803.png" />
+<p>In this example, the length of the fastest route between our two points is
+about 1.97 kilometres and the travel time is 0.0788 hours, which is about 5
+minutes. The time in our example is determined by the distance and our default
+speed of 25 km/hr. The speed can be changed, and can even be set to different
+amounts for each segment of road.</p>
+<p>The route appears on our map:</p>
+<img alt="../../../../_images/image814.png" class="align-center" src="../../../../_images/image814.png" />
+<ol class="arabic simple" start="16">
+<li><p>To save the evacuation route as a separate layer, go to
+<span class="menuselection">Export ‣ New temporary layer</span>, and click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image823.png" class="align-center" src="../../../../_images/image823.png" />
+<ol class="arabic simple" start="17">
+<li><p>You may need to choose a CRS for the new layer.
+UTM zone 49S should work fine.</p></li>
+<li><p>The layer will be added to your Layers panel as <span class="guilabel">shortest_path</span>,
+but you still need to save the layer.</p></li>
+<li><p>To save, right-click on the layer and click <span class="guilabel">Save as…</span></p></li>
+</ol>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>In this module we’ve learned how to calculate the shortest distance between
+two points using the Road Graph plugin. Using this you can easily determine
+evacuation routes from various areas. Evacuation routes are important for
+contingency plans, and those living in threatened areas can be educated with
+the quickest and safest routes to take in the event of an emergency.</p>
+<p><a class="reference internal" href="405-calculating-damages-and-losses.html#calculating-damages-and-losses"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="405-calculating-damages-and-losses.html"
+                   title="Module 5: Calculating Damages and Losses"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="403-determining-idp-camp-location.html"
+                   title="Module 3: Determining IDP Camp Location"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

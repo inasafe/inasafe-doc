@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>The Impact Layer Merge Tool &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Keywords Editor" href="keywords_editor.html" />
+    <link rel="prev" title="OpenStreetMap Downloader" href="openstreetmap_downloader.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'user-docs/application-help/impact_layer_merge_tool.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'user-docs/application-help/impact_layer_merge_tool.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    InaSAFE User documentation</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Application Help</a>
+                </li>
+                
+
+                <li><a href="#">The Impact Layer Merge Tool</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="keywords_editor.html"
+                   title="Keywords Editor"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="openstreetmap_downloader.html"
+                   title="OpenStreetMap Downloader"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../training/index.html">Training Materials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">InaSAFE User documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_help.html">Getting Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../toolbar.html">Toolbar</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Application Help</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dock.html">InaSAFE Panel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keywords.html">Keywords System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reports.html">Reports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="impact_functions.html">Understand Impact Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="minimum_needs.html">Minimum Needs Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="needs_manager.html">Minimum Needs Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="converter.html">Shakemap Converter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="batch_runner.html">Batch Runner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="batch_runner.html#steps-for-using-the-batch-runner">Steps for using the Batch Runner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="save_scenario.html">Save Scenario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openstreetmap_downloader.html">OpenStreetMap Downloader</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">The Impact Layer Merge Tool</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#procedure">Procedure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generated-outputs">Generated outputs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-customised-templates">Using customised templates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#map-template-elements">Map template elements</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="keywords_editor.html">Keywords Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keywords_wizard.html">Keywords Wizard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_driven_age.html">Data Driven Age Post-processor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_extents.html">User Extents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../functionality.html">Functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../postprocessors.html">Post-processors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../using_qgis.html">Using QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_involved.html">Getting involved</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../issue_tracker.html">Submit an Issue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../writing_documentation.html">Writing Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lookup_table.html">Lookup-Table</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <section id="the-impact-layer-merge-tool">
+<span id="toolbar-impact-layer-merge-tool"></span><h1>The Impact Layer Merge Tool<a class="headerlink" href="#the-impact-layer-merge-tool" title="Link to this heading">¶</a></h1>
+<p>In some cases you may wish to create a report containing the combined output of
+two impact functions for the same area for the <strong>same hazard</strong> but <strong>different
+exposures</strong>. For example, you may carry out an assessment of the impact of a
+flood on population and on buildings and combine the results into a single
+report. The Impact Layer Merge tool allows you to do this.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/impact_merge_dialog.png"><img alt="Opened impact merge dialog" src="../../_images/impact_merge_dialog.png" style="width: 389.25px; height: 507.75px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Opened impact merge dialog</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h2>
+<p>In order to use this tool, please bear in mind the following requirements:</p>
+<ul class="simple">
+<li><p>Both impact layers should be loaded in your current project</p></li>
+<li><p>Both impact layers should have been created for the same geographic region</p></li>
+<li><p>The same aggregation area should be used for both assessments</p></li>
+</ul>
+</section>
+<section id="procedure">
+<h2>Procedure<a class="headerlink" href="#procedure" title="Link to this heading">¶</a></h2>
+<p>To use this tool, follow this procedure:</p>
+<ul class="simple">
+<li><p>Run an impact assessment for an area using aggregation. such as flood impact
+on buildings aggregated by municipal boundaries.</p></li>
+<li><p>Run a second impact assessment for the same area using the same aggregation.
+e.g. flood impact on people aggregated by municipal boundaries.</p></li>
+<li><p>Open the Impact Merge tool and select each impact layer from the pick lists
+provided.</p></li>
+<li><p>Select the aggregation layer that was used to generate the first and second
+impact layer.</p></li>
+<li><p>Select an output directory.</p></li>
+<li><p>Check the box next to <span class="guilabel">Use customized report template</span> and select
+the report template file if you want to use your own template. Note that
+all the map composer components that are needed must be completed.</p></li>
+<li><p>Click <span class="guilabel">OK</span> to generate the per aggregation area combined summaries.</p></li>
+</ul>
+</section>
+<section id="generated-outputs">
+<h2>Generated outputs<a class="headerlink" href="#generated-outputs" title="Link to this heading">¶</a></h2>
+<p>The tool will generate a PDF per aggregation area. The PDFs will be placed in
+the designated output directory after completion of the merge process. The
+output will consist of a map page and a table page. These are illustrated
+below:</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/impact_merge_map.png"><img alt="Impact merge report - map page" src="../../_images/impact_merge_map.png" style="width: 827.25px; height: 585.0px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Map page generated by the impact merge tool</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/impact_merge_table.png"><img alt="Impact merge report - table page" src="../../_images/impact_merge_table.png" style="width: 825.75px; height: 584.25px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Table page generated by the impact merge tool</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>In the case of impact assessments where no aggregation has been used, only
+a single PDF report is generated. In the case of impact assessments where
+aggregation has been used, one PDF is generated per aggregation area.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After report generation completes, the output directory will be
+opened automatically.</p>
+</div>
+</section>
+<section id="using-customised-templates">
+<h2>Using customised templates<a class="headerlink" href="#using-customised-templates" title="Link to this heading">¶</a></h2>
+<p>The default template report is located in
+<code class="file docutils literal notranslate"><span class="pre">/resources/qgis-composer-templates/merged-report.qpt</span></code>.
+If that template does not satisfy your needs, you can use your own report template.
+Before using your own report template, make sure that your template contains
+all of these elements with id:</p>
+<ul class="simple">
+<li><p><strong>impact-map</strong>, a QgsComposerMap</p></li>
+<li><p><strong>safe-logo</strong>, a QgsComposerPicture</p></li>
+<li><p><strong>summary-report</strong>, a QgsComposerLabel</p></li>
+<li><p><strong>aggregation-area</strong>, a QgsComposerLabel</p></li>
+<li><p><strong>map-scale</strong>, a QgsComposerScaleBar</p></li>
+<li><p><strong>map-legend</strong>, a QgsComposerLegend</p></li>
+<li><p><strong>organisation-logo</strong>, a QgsComposerPicture</p></li>
+<li><p><strong>merged-report-table</strong>, a QgsComposerHTML</p></li>
+</ul>
+<p>If any of those elements does not exist on the report template, the tools will
+tell you what element is missing on the template.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can arrange those elements in any position you want.</p>
+</div>
+</section>
+<section id="map-template-elements">
+<h2>Map template elements<a class="headerlink" href="#map-template-elements" title="Link to this heading">¶</a></h2>
+<p>In terms of value replacement, there are three groups of elements on the template:</p>
+<p>1. Elements that can be changed with the InaSAFE Options tool. To change the
+value of these elements,
+please go to <strong>InaSAFE Options</strong> and change the value of the related field.
+Those elements are:</p>
+<ul class="simple">
+<li><p><strong>organisation-logo</strong>. It corresponds to the <span class="guilabel">Organisation logo</span> field in
+InaSAFE Options.
+If you do not fill this field, then the default one,
+<code class="file docutils literal notranslate"><span class="pre">supporters.png</span></code>, will be used.</p></li>
+<li><p><strong>disclaimer</strong>. This corresponds to the <span class="guilabel">Disclaimer text</span> field in InaSAFE
+Options.
+If you do not fill in this field the default text will be used: “InaSAFE
+has been jointly developed by Indonesian Government-BPNB, Australian Govenment-AIFDR and the World
+Bank-GFDRR. These agencies and the individual software developers of InaSAFE take no responsibility for
+the correctness of outputs from InaSAFE or decisions derived as a consequence.”</p></li>
+</ul>
+<p>2. Elements containing tokens. The id of these elements is not significant, only the token
+it contains. At render time, these tokens will be replaced. If you want to have a
+label containing the value of these elements, enclose these elements with [] on a label i.e
+<strong>[impact-title]</strong> or <strong>[hazard-title]</strong>. The elements are listed below:</p>
+<ul class="simple">
+<li><p><strong>impact-title</strong> - indicates the title of two impacts. The value will be “<em>first_impact_title</em> and <em>second_impact_title</em>”</p></li>
+<li><p><strong>hazard-title</strong> - indicates the hazard title used to generate the impact layer.</p></li>
+</ul>
+<p>3. Elements that are direcly updated by the renderer. All of these elements below are
+generated automatically by the tools.</p>
+<ul class="simple">
+<li><p><strong>impact-map</strong>. This contains the map of two impact layers.</p></li>
+<li><p><strong>summary-report</strong>. This contains the summary of the impact from two impact layers.</p></li>
+<li><p><strong>aggregation-area</strong>. This contains the name of the aggregation area.</p></li>
+<li><p><strong>map-scale</strong>. This indicates the scale of the map. To work with any layer projection preferences, we encourage you to use a numeric scale bar.</p></li>
+<li><p><strong>map-legend</strong>. This shows the legend of merged impact layers. The map legend on default template is set to have 2 columns showing each impact layer legend.</p></li>
+<li><p><strong>merged-report-table</strong>. This contains the detailed information of each impact.</p></li>
+</ul>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="keywords_editor.html"
+                   title="Keywords Editor"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="openstreetmap_downloader.html"
+                   title="OpenStreetMap Downloader"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

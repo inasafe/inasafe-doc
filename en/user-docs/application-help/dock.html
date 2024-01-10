@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>InaSAFE Panel &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Keywords System" href="keywords.html" />
+    <link rel="prev" title="Application Help" href="index.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'user-docs/application-help/dock.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'user-docs/application-help/dock.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    InaSAFE User documentation</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Application Help</a>
+                </li>
+                
+
+                <li><a href="#">InaSAFE Panel</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="keywords.html"
+                   title="Keywords System"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="index.html"
+                   title="Application Help"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../training/index.html">Training Materials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">InaSAFE User documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_help.html">Getting Help</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../toolbar.html">Toolbar</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Application Help</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">InaSAFE Panel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#the-questions-area">The questions area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-results-area">The results area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#the-buttons-area">The buttons area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#data-conversions-when-running-a-scenario">Data conversions when running a scenario</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setting-analysis-parameters">Setting analysis parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#generating-impact-report">Generating impact report</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="keywords.html">Keywords System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="reports.html">Reports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="options.html">Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="impact_functions.html">Understand Impact Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="minimum_needs.html">Minimum Needs Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="needs_manager.html">Minimum Needs Manager</a></li>
+<li class="toctree-l3"><a class="reference internal" href="converter.html">Shakemap Converter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="batch_runner.html">Batch Runner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="batch_runner.html#steps-for-using-the-batch-runner">Steps for using the Batch Runner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="save_scenario.html">Save Scenario</a></li>
+<li class="toctree-l3"><a class="reference internal" href="openstreetmap_downloader.html">OpenStreetMap Downloader</a></li>
+<li class="toctree-l3"><a class="reference internal" href="impact_layer_merge_tool.html">The Impact Layer Merge Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keywords_editor.html">Keywords Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keywords_wizard.html">Keywords Wizard</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_driven_age.html">Data Driven Age Post-processor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_extents.html">User Extents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../functionality.html">Functionality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../postprocessors.html">Post-processors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../using_qgis.html">Using QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../getting_involved.html">Getting involved</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../issue_tracker.html">Submit an Issue</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../writing_documentation.html">Writing Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lookup_table.html">Lookup-Table</a></li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <section id="project-name-panel">
+<span id="toolbar-dock"></span><h1>InaSAFE Panel<a class="headerlink" href="#project-name-panel" title="Link to this heading">¶</a></h1>
+<p>This document describes the usage of the InaSAFE ‘dock panel’ -
+the primary interface for running risk scenarios within the QGIS environment.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to use InaSAFE effectively,
+you should also read the <a class="reference internal" href="keywords.html"><span class="doc">Keywords System</span></a> and
+<a class="reference internal" href="impact_functions.html"><span class="doc">Understand Impact Functions</span></a> documentation before getting started.</p>
+</div>
+<p>The InaSAFE dock panel is the main way to interact with the tools that
+are provided in InaSAFE. After you have installed the InaSAFE
+plugin, the dock panel will automatically load in QGIS and appear somewhere
+on your screen. It looks like this:</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/dock-panel.png"><img alt="Docking Panel" src="../../_images/dock-panel.png" style="width: 261.0px; height: 676.5px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Docking Panel</em></span><a class="headerlink" href="#id1" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Drag and drop the dock panel to reposition it in the user interface.
+For example, dragging the panel towards the right margin of the QGIS
+application will dock it to the right side of the screen.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../../_images/docked-right.png"><img alt="Dock on the right" src="../../_images/docked-right.png" style="width: 847.0px; height: 486.5px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Dock positioned on the right with a project loaded</em></span><a class="headerlink" href="#id2" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>There are three components within the panel:</p>
+<ul class="simple">
+<li><p>the <span class="guilabel">Questions</span> area</p></li>
+<li><p>the <span class="guilabel">Results</span> area</p></li>
+<li><p>the <span class="guilabel">Buttons</span> area</p></li>
+</ul>
+<p>At any time you can obtain help in InaSAFE by clicking on the
+<span class="guilabel">Help</span> buttons provided on each dock and dialog.</p>
+<section id="the-questions-area">
+<h2>The questions area<a class="headerlink" href="#the-questions-area" title="Link to this heading">¶</a></h2>
+<p>The objective of InaSAFE is to make it easy to perform
+an impact analysis. The questions area provides a simple way to
+formulate the scenario question. All questions are formulated in
+the form:</p>
+<blockquote>
+<div><p>If [<strong>hazard</strong>] how many [<strong>exposure</strong>] might [<strong>impact</strong>].</p>
+</div></blockquote>
+<p>For example:</p>
+<blockquote>
+<div><p>If <strong>there is a flood</strong> how many <strong>schools</strong> might <strong>be closed</strong>.</p>
+</div></blockquote>
+<p>In order to answer such questions, the InaSAFE developers have built
+a number of <strong>impact functions</strong> that cover scenarios such as flood,
+tsunami, volcanic ash fall, earthquake and more. Visit <a class="reference internal" href="impact_functions.html#impact-functions"><span class="std std-ref">Understand Impact Functions</span></a>
+for detailed information on each impact function.</p>
+<p>To formulate these questions, various layers must be loaded into QGIS that
+represent either <strong>hazard</strong> or <strong>exposure</strong> information.</p>
+<ul class="simple">
+<li><p>A <strong>hazard</strong> (<span class="guilabel">In the event of</span>) may be represented as,
+for example, a raster layer in QGIS where each pixel in the raster represents
+the current flood depth following an inundation event.</p></li>
+<li><p>An <strong>exposure</strong> (<span class="guilabel">How many</span>) layer could be represented, for
+example, as vector polygon data representing building outlines, or a raster
+outline where each pixel represents the number of people resident in that
+cell.</p></li>
+</ul>
+<p>The <strong>impact function</strong> (<span class="guilabel">Might</span>) will combine these two input layers
+in a mathematical model in order to postulate what the impacts of the hazard
+will be on the exposure infrastructure or people.</p>
+<p>By selecting a combination from the <span class="guilabel">In the event of</span> and
+<span class="guilabel">How many</span> combo boxes, an appropriate set of impact functions will
+be listed in the <span class="guilabel">Might</span> combo box.</p>
+<p>How does the InaSAFE plugin determine whether a layer
+should be listed in the <span class="guilabel">In the event of</span> or <span class="guilabel">How many</span>
+combo boxes? The plugin relies on simple keyword metadata associated
+with each layer.</p>
+<p>The keyword system is described in detail in <a class="reference internal" href="keywords.html"><span class="doc">Keywords System</span></a>.
+Each layer that has a keyword defining its <strong>category</strong> as <strong>hazard</strong> will
+be listed in the <span class="guilabel">In the event of</span> combo box.
+Similarly, a <strong>category</strong> of <strong>exposure</strong> in the keywords will
+result in a layer being listed under the <span class="guilabel">How many</span> combo box.</p>
+<p>InaSAFE uses the combination of <strong>category</strong>, <strong>subcategory</strong>, <strong>units</strong>
+and <strong>datatype</strong> keywords to determine which <strong>impact functions</strong> will be
+listed in the <span class="guilabel">Might</span> combo box.</p>
+<p>The impact function can be configured (if applicable) by pressing the
+<span class="guilabel">…</span> button next to the chosen impact function.</p>
+<p>This is explained in more detail below under <a class="reference internal" href="#analysis-parameters"><span class="std std-ref">Setting analysis parameters</span></a>.</p>
+<p>As of InaSAFE 1.2, you can also choose an aggregation layer for both
+raster and vector layers.</p>
+<p>Aggregation allows you to specify an additional layer when defining the
+analysis criteria. This layer is used to provide a by-area breakdown of
+the results of the analysis. For example, if you are carrying out an analysis
+for a city, you can use district areas within the city to provide per-area
+results. In the absence of an aggregation layer, the analysis extent is used
+as the aggregation unit. To use this option you must load a polygon
+layer into QGIS that represents the areas you wish to summarise by.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After running an analysis, the questions area is hidden to maximise
+the amount of space allocated to the results area (see below). You can
+re-open the question area at any time by pressing the <span class="guilabel">Show
+question form</span> button.</p>
+</div>
+</section>
+<section id="the-results-area">
+<h2>The results area<a class="headerlink" href="#the-results-area" title="Link to this heading">¶</a></h2>
+<p>The results area is used to display feedback
+to the user. Once an impact scenario has been run (see next section),
+a summary table will be shown.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../_images/scenario-results.png"><img alt="Scenario results" src="../../_images/scenario-results.png" style="width: 847.0px; height: 486.5px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Results shown after processing of scenario</em></span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>If you select an <strong>impact layer</strong> (i.e. a layer that was produced using an
+InaSAFE impact function), in the QGIS Layers panel, this summary will
+also be displayed in the results area.</p>
+<p>When you select a <strong>hazard</strong> or <strong>exposure</strong> layer in the QGIS Layers panel,
+the keywords for that layer will be shown in the <span class="guilabel">Results</span> area,
+making it easy to understand what metadata exists for that layer.</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="../../_images/keywords-for-active-layer.png"><img alt="Dock on the right" src="../../_images/keywords-for-active-layer.png" style="width: 847.0px; height: 486.5px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Showing keywords for active layer</em></span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The <span class="guilabel">Results</span> area is also used to display status information. For
+example, when a suitable combination of <strong>hazard</strong>
+(<span class="guilabel">In the event of</span>), <strong>exposure</strong> (<span class="guilabel">How many</span>) and
+<strong>impact function</strong> (<span class="guilabel">In the event of</span>) are selected, the results
+area will be updated to indicate that you can proceed to run the impact
+scenario calculation. The <span class="guilabel">Run</span> button will be activated.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="../../_images/status-ready.png"><img alt="Ready to run" src="../../_images/status-ready.png" style="width: 261.0px; height: 450.0px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Run button activated</em></span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Finally, the results area is also used to display error
+messages so that the user is informed as to what went wrong and why. You
+may need to scroll down a bit in the window.</p>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="../../_images/error-display.png"><img alt="Displaying Problems" src="../../_images/error-display.png" style="width: 261.0px; height: 450.0px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Showing error messages</em></span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>To allow more space for the results your question is automatically hidden
+to make the results area as large as possible for displaying the results.
+If you want to have a look again what the question was that you formulated
+click on the <span class="guilabel">Show question form</span> button at the top of the results
+area.</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="../../_images/show_question_form.png"><img alt="Show question form" src="../../_images/show_question_form.png" style="width: 261.0px; height: 450.0px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Show question form</em></span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>To hide the question again to have more space for the
+results, simply make active the layer which InaSAFE
+created during the calculation in the Layers panel.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>At the bottom of the error display you may see a button like the
+following. Click on this button to display a box which contains
+diagnostic information that can be submitted as part of a bug
+report if you think the error was incorrect.</p>
+<a class="reference internal image-reference" href="../../_images/toggle-traceback.png"><img alt="../../_images/toggle-traceback.png" src="../../_images/toggle-traceback.png" style="width: 211.5px; height: 56.25px;" /></a>
+</div>
+</section>
+<section id="the-buttons-area">
+<h2>The buttons area<a class="headerlink" href="#the-buttons-area" title="Link to this heading">¶</a></h2>
+<p>The buttons area contains four buttons:</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../_images/buttons.png"><img alt="Buttons area" src="../../_images/buttons.png" style="width: 270.0px; height: 27.75px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Buttons Area</em></span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><span class="guilabel">Help</span> - click on this if you need context help, such as the
+document you are reading right now!</p></li>
+<li><p><span class="guilabel">About</span> - click on this to get information about InaSAFE.</p></li>
+<li><p><span class="guilabel">Print…</span> - click on this if you wish to create a PDF of your
+impact scenario project or to generate a report and open it in composer for
+further tuning. An <strong>impact layer</strong> must be active before this
+button will be enabled.</p></li>
+<li><p><span class="guilabel">Run</span> - when the combination of options in the questions
+area is suitable to be run, this button is enabled.</p></li>
+</ul>
+</section>
+<section id="data-conversions-when-running-a-scenario">
+<h2>Data conversions when running a scenario<a class="headerlink" href="#data-conversions-when-running-a-scenario" title="Link to this heading">¶</a></h2>
+<p>When running a scenario, the data being used needs to be processed into a state
+where it is acceptable for use by the impact function. In particular it should
+be noted that:</p>
+<ul class="simple">
+<li><p>Remote datasets will be copied locally before processing</p></li>
+<li><p>All datasets will be clipped to the intersection of the <strong>hazard</strong> layer,
+the <strong>exposure</strong> layer and the current view extents</p></li>
+<li><p>All clipped datasets will be converted (reprojected) to Geographic
+(EPSG:4326) coordinate reference system before analysis</p></li>
+</ul>
+</section>
+<section id="setting-analysis-parameters">
+<span id="analysis-parameters"></span><h2>Setting analysis parameters<a class="headerlink" href="#setting-analysis-parameters" title="Link to this heading">¶</a></h2>
+<p>Depending on the impact function you choose there will be different options
+to adjust the parameters of the the question you are asking. Some impact
+functions have more configurable options and some have less. This depends
+on the impact function itself and the question you are asking.</p>
+<p>To open the impact function configuration dialog click on the
+<span class="guilabel">…</span> Button next to the <span class="guilabel">Might</span> combo box.</p>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="../../_images/imp_func_conf1.png"><img alt="Impact Function Configurator" src="../../_images/imp_func_conf1.png" style="width: 260.25px; height: 129.75px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Open the impact function configurator</em></span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>There will be up to three tabs available:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="guilabel">Options</span>: Depending in the impact function you select,
+you can influence the result of your question here (the impact function)
+by setting different initial values which are presented depending on the
+function you choose (not all impact functions may be customised).</p></li>
+<li><p><span class="guilabel">Postprocessors</span>: This takes the results from the impact function
+and calculates derivative indicators. For example, if you have an affected
+population total, the gender postprocessor will calculate gender specific
+indicators such as additional nutritional requirements for pregnant women.</p></li>
+<li><p><span class="guilabel">Minimum Needs</span>: If the impact function calculates effects on
+people, this calculates the minimum needs of the people affected by the
+impact scenario.
+To use this you should have the necessary data available and
+calculate this by using the <a class="reference internal" href="minimum_needs.html#minimum-needs"><span class="std std-ref">Minimum Needs Tool</span></a>.</p></li>
+</ul>
+</div></blockquote>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../../_images/imp_func_conf2.png"><img alt="Impact Function Configurator" src="../../_images/imp_func_conf2.png" style="width: 863.25px; height: 287.25px;" /></a>
+</figure>
+</section>
+<section id="generating-impact-report">
+<span id="impact-report"></span><h2>Generating impact report<a class="headerlink" href="#generating-impact-report" title="Link to this heading">¶</a></h2>
+<p>When scenario analysis is complete you may want to generate a report. Usually the
+<span class="guilabel">Print…</span>  button will be enabled immediately after analysis. If it is
+still inactive, select the impact layer in the Layers panel.</p>
+<p>To generate a report click on the <span class="guilabel">Print…</span> button
+in the buttons area. This will open an <span class="guilabel">Impact report</span> dialog.</p>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../_images/impact_report_dlg.png"><img alt="Impact Report configuration" src="../../_images/impact_report_dlg.png" style="width: 315.0px; height: 173.25px;" /></a>
+<figcaption>
+<p><span class="caption-text"><em>Impact report configuration</em></span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The dialog has three components:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="guilabel">Area to print</span> allows you to customise the extent of the report
+map. There are two options available.
+Choose <span class="guilabel">Current extent</span> if the current canvas extent represents
+the necessary area. Choose
+<span class="guilabel">Analysis extent</span> to set the extent of the report map to the
+impact layer extent.</p></li>
+<li><p><span class="guilabel">Template to use</span> allows you to select a template for the report.
+The combo box lists all templates bundled with the plugin as well as
+templates from the user-defined template directory (see
+<a class="reference internal" href="options.html#toolbar-options"><span class="std std-ref">Options</span></a> for information on how to set the templates directory).
+It is also possible to select a custom template from any location -
+activate the radio button under the combo box and provide a path to the
+template using the <span class="guilabel">…</span> button.</p></li>
+<li><p>At the bottom are four buttons:
+<span class="guilabel">Open PDF</span> will generate the report and export it in PDF
+format. The resulting file(s) will be opened in your default PDF viewer.
+<span class="guilabel">Open composer</span> is used when you need to adjust the generated
+report before printing. Click this button and the report will be opened
+in the QGIS composer, where you can edit it as needed.</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="keywords.html"
+                   title="Keywords System"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="index.html"
+                   title="Application Help"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

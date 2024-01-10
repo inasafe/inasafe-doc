@@ -1,0 +1,3613 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Unit 1 Facilitator Guide" href="osm-beginner-toolkit.html" />
+    <link rel="prev" title="Curriculum and Guide for Facilitator" href="index.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/curriculum/curriculum.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/curriculum/curriculum.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Curriculum and Guide for Facilitator</a>
+                </li>
+                
+
+                <li><a href="#">Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="osm-beginner-toolkit.html"
+                   title="Unit 1 Facilitator Guide"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="index.html"
+                   title="Curriculum and Guide for Facilitator"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Curriculum and Guide for Facilitator</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#foreword">FOREWORD</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#introduction">INTRODUCTION</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#levels-of-workshop">LEVELS OF WORKSHOP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#curriculum">CURRICULUM</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#a-aims">A. Aims</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#b-target-audience-and-qualifications">B. Target Audience and Qualifications</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#c-map-of-competencies">C. Map of Competencies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#d-curriculum-development-process">D. Curriculum Development Process</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#e-curriculum-scheme">E. Curriculum Scheme</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#f-curriculum-structure">F. Curriculum Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="osm-beginner-toolkit.html">Unit 1 Facilitator Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qgis-inasafe-beginner-toolkit.html">Unit 2 Facilitator Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="osm-intermediate-toolkit.html">Unit 3 Facilitator Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qgis-inasafe-intermediate-toolkit.html">Unit 4 Facilitator Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <section id="contingency-planning-with-openstreetmap-osm-and-qgis-project-name">
+<h1>Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE<a class="headerlink" href="#contingency-planning-with-openstreetmap-osm-and-qgis-project-name" title="Link to this heading">¶</a></h1>
+<p><strong>BADAN NASIONAL PENANGGULANGAN BENCANA</strong></p>
+<p><strong>2013</strong></p>
+<section id="foreword">
+<h2>FOREWORD<a class="headerlink" href="#foreword" title="Link to this heading">¶</a></h2>
+<p>The Contingency Planning with OpenStreetMap (OSM) and <a class="reference external" href="http://qgis.org/">QGIS</a>/InaSAFE
+workshop program is designed to provide provincial and district disaster
+management agency officials and staff with the knowledge and skills required
+to handle emergencies during all stages of a disaster.
+The knowledge and skills acquired through this workshop program will help
+them to reduce and manage risks from natural disasters.</p>
+<p>Badan Nasional Penanggulangan Bencana (<a class="reference external" href="http://www.bnpb.go.id/">BNPB</a>) has identified as a priority
+the need to create improved methodology for contingency planning.
+This methodology is focused on the use of realistic disaster scenarios as
+a starting point for the new comprehensive process.</p>
+<p><a class="reference external" href="http://www.bnpb.go.id/">BNPB</a> and <a class="reference external" href="http://aid.dfat.gov.au">Australian Government</a> through Australia-Indonesia Facility for Disaster
+Reduction (<a class="reference external" href="http://www.aifdr.org/">AIFDR</a>) have worked together to create
+open source software tools for realistic disaster scenario
+development as an input for contingency planning. They are designed
+to help disaster managers improve their own scenario analysis
+which can be used as an input for their disaster contingency planning.</p>
+<p>To aid the <a class="reference external" href="http://www.bnpb.go.id/">BNPB</a> workshop centre (Pusat Diklat BNPB) in developing
+systematic workshops which cover all required competencies, this package
+of training and curriculum materials was created. The workshop curriculum
+is developed to be used as reference in workshop organisation, both for
+national or provincial/district level.</p>
+<p>This curriculum will be enhanced through test and input from stakeholders,
+both from government and non-government agencies.</p>
+</section>
+<section id="introduction">
+<h2>INTRODUCTION<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>As one of the most hazard-prone and densely populated countries in the
+world, Indonesia faces significant risk of loss of life and challenges to
+development progress as a result of natural disasters.
+This is why disaster risk reduction has been recognised by the Government of
+Indonesia as one of their top eleven priorities in the Medium-Term
+Development Plan (2010-2014).
+In recognition of the impact of disasters on developing economies,
+AusAid’s policy on disaster risk reduction highlights the importance of
+investing in disaster reduction.</p>
+<p><a class="reference external" href="http://www.bnpb.go.id/">BNPB</a> has a mandate to increase the overall disaster management capacity of
+Indonesia, including workshops for managers who handle disasters at the
+sub-national level.
+To date, BNPB’s Education and Workshop Centre has been developing a range of
+workshop curriculum and modules with specific focus on</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Basic Disaster Management</p></li>
+<li><p>Rapid Assessment and Coordination</p></li>
+<li><p>Contingency Planning</p></li>
+</ol>
+</div></blockquote>
+<p><a class="reference external" href="http://www.bnpb.go.id/">BNPB</a> works with various actors and stakeholders on the
+development of these workshop modules. <a class="reference external" href="http://www.bnpb.go.id/">BNPB</a> has identified as a priority
+the need to improve its methodology for
+contingency planning with an emphasis on the use of realistic disaster
+scenarios as the starting point for this new comprehensive process.</p>
+<p><a class="reference external" href="http://www.bnpb.go.id/">BNPB</a> and <a class="reference external" href="http://aid.dfat.gov.au">Australian Government</a> through the Australia-Indonesia Facility for Disaster
+Reduction have worked together on a methodology and associated open
+source software for developing realistic disaster scenarios for contingency
+planning.
+This will enable emergency managers to develop their own scenario assessments
+that can feed into their disaster contingency plans.
+Over the last year three specific tools have been piloted in Indonesia with
+huge success:</p>
+<ul class="simple">
+<li><p><strong>InaSAFE</strong>: a free and open source software that produces realistic
+natural hazard impact scenarios for better planning, preparedness and
+response activities.
+It is being developed by <a class="reference external" href="http://www.aifdr.org/">AIFDR</a> in close consultation with <a class="reference external" href="http://www.bnpb.go.id/">BNPB</a>.</p></li>
+<li><p><strong>OpenStreetMap (OSM) tools</strong>: OSM is a free map of the world that anyone
+can add to and edit.
+Community mapping allows for more detailed information to be
+collected that can be utilised for analysis in InaSAFE (e.g. How
+many houses will be affected by a specific hazard).</p></li>
+<li><p><strong>QGIS</strong>: open source Geographical Information System
+(GIS) software that allows users to spatially analyse their data.
+It is also the platform on which InaSAFE is built.</p></li>
+</ul>
+<p>In order to ensure uptake, effectiveness and sustainability of these tools
+it is necessary to develop and test a comprehensive workshop package for
+each individual tool as well as create a pool of trainers across Indonesia.</p>
+<p>This curriculum outline describes competencies to be achieved,
+the lists of content required to achieve the competencies in the workshop
+package and the program structure of the workshop course.
+The workshop consists of beginner, intermediate and training of trainer levels.
+The beginner workshop is mainly aimed to introduce participants to the
+concept of realistic disaster scenario development and help them become
+socialised to the concepts and explore all three of the open source tools.
+In contingency planning, having realistic disaster scenarios contributes
+significantly to the reliability of the created planning results.
+As complexity and uncertainty are common in developing realistic disaster
+scenarios, advanced knowledge and skills in mapping and impact calculations
+using OSM, QGIS and InaSAFE are required.
+For this reason, the intermediate level of the workshop on OSM,
+QGIS and InaSAFE is required to further participants’ knowledge and
+skills to work with the tools in anticipating possible disaster events and
+impacts.</p>
+<p>The beginner and intermediate workshops are expected to be continued with
+an advanced level course for training of trainers.</p>
+<p>To gain the required competencies, the workshop course is expected to apply
+andragogical principles (a learning approach for adults) with an emphasis on
+real tasks in the field and various methods in engaging active participation
+from the participants.</p>
+</section>
+<section id="levels-of-workshop">
+<h2>LEVELS OF WORKSHOP<a class="headerlink" href="#levels-of-workshop" title="Link to this heading">¶</a></h2>
+<p>The workshop consists of three levels:</p>
+<ol class="arabic simple">
+<li><p>Beginner Workshop</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Collecting Data Using OSM (Beginner)</p></li>
+<li><p>Data Analysis Using QGIS and InaSAFE (Beginner)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Intermediate Workshop</p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Collecting Data Using OSM (Intermediate)</p></li>
+<li><p>Data Analysis Using QGIS and InaSAFE (Intermediate)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Training of Trainer (ToT) Workshop</p></li>
+</ol>
+</section>
+<section id="curriculum">
+<h2>CURRICULUM<a class="headerlink" href="#curriculum" title="Link to this heading">¶</a></h2>
+<section id="a-aims">
+<h3>A. Aims<a class="headerlink" href="#a-aims" title="Link to this heading">¶</a></h3>
+<p>The scheme of the curriculum on Scenario Development for Contingency Planning
+by using OSM and QGIS/InaSAFE is designed to provide a reference to
+workshop organisers at national, provincial and district levels.</p>
+<p>The course consists of three separate workshops which cover four training modules
+and a training for trainers. The objective of the first workshop is to provide
+a complete, albeit beginner understanding of all components of the scenario
+development process. The second workshop is intended to continue on to more
+advanced topics in OSM and QGIS/InaSAFE.</p>
+<p>The main objective of the ToT workshop is to train people to be leaders and
+trainers in Scenario Development program for Contingency Planning (SD4CP) in their
+respective regions.</p>
+<p>After completing the three workshops, participants will have the skills
+in OSM / QGIS / InaSAFE which are needed as a facilitator,
+to help train others in developing realistic disaster
+scenarios that can be used in contingency plans.
+This will lead to better decision making during the process of making
+contingency plans.
+It is also expected that those who reach the training of trainer level can
+provide technical assistance in their respective regions.</p>
+</section>
+<section id="b-target-audience-and-qualifications">
+<h3>B. Target Audience and Qualifications<a class="headerlink" href="#b-target-audience-and-qualifications" title="Link to this heading">¶</a></h3>
+<p>The target participants of the workshop courses, both at beginner and
+intermediate levels are:</p>
+<ol class="arabic simple">
+<li><p>Persons responsible in developing contingency plans at BPBD at provincial
+and district levels. Priority is given to those working in the prevention
+working unit</p></li>
+<li><p>Lecturers and students from relevant departments such as Geography,
+Geodesy, Geomatics, Information Technology and other earth-related sciences</p></li>
+<li><p>Representatives from NGOs working in disaster risk reduction</p></li>
+<li><p>Other relevant organisations such as Army, Police, Red Cross and Scouts</p></li>
+<li><p>Other relevant agencies</p></li>
+</ol>
+<p>Qualifications for participants at beginner level:</p>
+<ol class="arabic simple">
+<li><p>Able to operate a computer (word processing, presentations, internet,
+spreadsheets)</p></li>
+<li><p>Have a laptop with minimum RAM of 2 GB (recommended 4 GB)</p></li>
+<li><p>Having a GPS unit and understanding of how it works is an advantage</p></li>
+<li><p>Having basic skills in Geographic Information Systems is an advantage</p></li>
+</ol>
+<p>Qualifications for participants at intermediate level:</p>
+<ol class="arabic simple">
+<li><p>MUST have attended the workshop at beginner level OR equivalent knowledge
+OR have a background in Geographic Information Systems
+and have read through the beginner manuals</p></li>
+<li><p>Able to operate a computer (word processing, presentations, internet,
+spreadsheets)</p></li>
+<li><p>Have a laptop with minimum RAM of 2 GB (recommended 4 GB)</p></li>
+<li><p>Have an understanding of Geographic Information Systems</p></li>
+<li><p>Having a GPS unit and understanding of how it works is an advantage</p></li>
+</ol>
+<p>Qualifications for participants at Training of Trainer (ToT) level:</p>
+<ol class="arabic simple">
+<li><p>MUST have attended the workshop at both beginner and intermediate
+levels.</p></li>
+<li><p>Demonstrate the potential to be a key advocate, trainer and technical
+resource for Scenario Development Contingency Planning in their region</p></li>
+<li><p>Satisfactory completion of prerequisite tasks (as assessed by HOT)</p></li>
+</ol>
+</section>
+<section id="c-map-of-competencies">
+<h3>C. Map of Competencies<a class="headerlink" href="#c-map-of-competencies" title="Link to this heading">¶</a></h3>
+<p>Note that the competencies map (and curriculum scheme below) are organised by topic,
+rather than by workshop level.</p>
+<p><strong>1. Beginner Workshop</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Standard and Basic Competencies</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li></li>
+</ol>
+</td>
+<td><p>Collecting
+Data Using
+OSM
+(Beginner)</p></td>
+<td><p><strong>Collecting Spatial Data with OSM</strong></p>
+<ol class="arabic simple">
+<li><p>Draw paper maps to gain a basic understanding of OpenStreetMap</p></li>
+<li><p>Navigate OpenStreetMap website</p></li>
+<li><p>Operate JOSM</p></li>
+<li><p>Use GPS to add data to OSM</p></li>
+<li><p>Use Field Papers to add data to OSM</p></li>
+<li><p>Edit a map and add information to OSM using JOSM</p></li>
+<li><p>Correct imagery offset</p></li>
+<li><p>Get OSM data in a specific format to be analysed further in Geographic Information System (GIS) software</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Data Analysis
+using QGIS
+and
+InaSAFE
+(Beginner)</p></td>
+<td><p><strong>Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios with</strong> InaSAFE</p>
+<ol class="arabic simple">
+<li><p>Use GIS to develop scenarios for contingency planning</p></li>
+<li><p>Understand the benefit of QGIS and InaSAFE for developing realistic scenarios for contingency planning</p></li>
+<li><p>Install QGIS and understand QGIS user interface</p></li>
+<li><p>Use QGIS plugins</p></li>
+<li><p>Understand projection systems and transformation in QGIS</p></li>
+<li><p>Use and understand vector data</p></li>
+<li><p>Categorise and create labels from vector data</p></li>
+<li><p>Use and understand raster data</p></li>
+<li><p>Create and edit new vector layers</p></li>
+<li><p>Analyse vector data to solve problems</p></li>
+<li><p>Create maps with the Map Composer</p></li>
+<li><p>Use InaSAFE</p></li>
+<li><p>Understand how to get support for QGIS and InaSAFE in Indonesia</p></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Intermediate Workshop</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Standard and Basic Competencies</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li></li>
+</ol>
+</td>
+<td><p>Collecting
+Data Using
+OSM
+(Intermediate)</p></td>
+<td><p><strong>Quality Assurance in OSM mapping</strong></p>
+<ol class="arabic simple">
+<li><p>Apply better digitising techniques for improving quality of collected data</p></li>
+<li><p>Use JOSM validation tools to ensure the quality of map contributions</p></li>
+<li><p>Resolve conflicts when uploading OSM data</p></li>
+<li><p>Create presets files in JOSM</p></li>
+<li><p>Use private data store feature to keep private data</p></li>
+<li><p>Create and edit pages in OSM Wiki</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="upperalpha simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Data Analysis
+using QGIS
+and
+InaSAFE
+(Intermediate)</p></td>
+<td><p><strong>Spatial Data Analysis using QGIS and</strong> InaSAFE <strong>for Contingency Planning</strong></p>
+<ol class="arabic simple">
+<li><p>Understand QGIS concepts</p></li>
+<li><p>Prepare data and keywords for InaSAFE</p></li>
+<li><p>Determine temporary IDP camp or evacuation locations</p></li>
+<li><p>Plan evacuation routes based on hazard information</p></li>
+<li><p>Calculate damage and losses</p></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Training of Trainers</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>No.</p></th>
+<th class="head"><p>Level</p></th>
+<th class="head"><p>Standard and Basic Competencies</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="upperalpha simple">
+<li></li>
+</ol>
+</td>
+<td><p>Advanced</p></td>
+<td><p><strong>Teaching data collection and analysis with OSM, QGIS and</strong> InaSAFE <strong>in their respective region</strong></p>
+<ol class="arabic simple">
+<li><p>Master how to implement adult learning</p></li>
+<li><p>Demonstrate basic teaching skills</p></li>
+<li><p>Practise data collection and analysis through OSM, QGIS and InaSAFE</p></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="d-curriculum-development-process">
+<h3>D. Curriculum Development Process<a class="headerlink" href="#d-curriculum-development-process" title="Link to this heading">¶</a></h3>
+<p>The curriculum development process is ongoing, and involves the following core
+components:</p>
+<ol class="arabic">
+<li><p>Identify the exact competencies that have to be learned to collect spatial
+data using OSM and analyse it using QGIS/InaSAFE. Competencies are
+described as standard and basic.</p>
+<p>A standard competency, or workshop material competency, is the minimum
+requirement of participants which encapsulates their knowledge, attitude,
+and skill that need to be achieved.</p>
+<p>A basic competency is an individual skill that needs to be mastered by the
+participant in the workshop material as a reference for indicators.</p>
+<p>Indicators are:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Behavioral characteristics (measurable evidence) that indicate
+that workshop participants have achieved basic competency</p></li>
+<li><p>Basic competency achievement marks derived from measurable
+behavior such as attitude, knowledge and skills</p></li>
+<li><p>Developed in accordance with the characteristics of the workshop
+participant, conditions and workshop organiser</p></li>
+<li><p>Measurable and/or observable</p></li>
+<li><p>Used as a basis to develop an assessment tool</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Compile all teaching and workshop materials to be used in the workshop.</p></li>
+<li><p>Solicit input from participants who have attended previous workshops.</p></li>
+<li><p>Discuss with workshop trainers to make sure:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>All necessary materials are included.</p></li>
+<li><p>Depth of the material is in accordance with the competencies to be mastered.</p></li>
+<li><p>Materials are organised systematically.</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</section>
+<section id="e-curriculum-scheme">
+<h3>E. Curriculum Scheme<a class="headerlink" href="#e-curriculum-scheme" title="Link to this heading">¶</a></h3>
+<p><strong>Data Collection Using OSM Beginner Level</strong></p>
+<p><strong>Standard Competency:</strong>
+Collecting Spatial Data with OSM</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p>Draw paper maps to gain a basic understanding of OpenStreetMap</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand the concept of OpenStreetMap</p></li>
+<li><p>Understand the definition and objectives of data collection</p></li>
+<li><p>Understand the composition of a map</p></li>
+<li><p>Make a hand-drawn sketch of an area</p></li>
+</ol>
+</td>
+<td><p><strong>The OpenStreetMap Website</strong></p>
+<ol class="arabic simple">
+<li><p>Concept of OpenStreetMap</p></li>
+<li><p>Definition and objectives of data collection</p></li>
+<li><p>Components of a map</p></li>
+<li><p>Hand-drawn sketch of an area</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li><p>Navigate OpenStreetMap website</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Visit OSM website</p></li>
+<li><p>Navigate map on OSM website</p></li>
+<li><p>Save an image from OSM</p></li>
+<li><p>Register an OSM account</p></li>
+<li><p>Edit the OSM map</p></li>
+<li><p>Save edits</p></li>
+</ol>
+</td>
+<td><p><strong>Working with OSM</strong></p>
+<ol class="arabic simple">
+<li><p>OSM website</p></li>
+<li><p>Navigating the OSM map</p></li>
+<li><p>Saving images from OSM</p></li>
+<li><p>Creating an OSM account</p></li>
+<li><p>Editing the OSM map</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li><p>Operate JOSM</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Download JOSM</p></li>
+<li><p>Install JOSM</p></li>
+<li><p>Set JOSM preferences</p></li>
+<li><p>Use basic tools</p></li>
+<li><p>Draw nodes and ways in JOSM</p></li>
+<li><p>Change objects</p></li>
+<li><p>Add tags to objects using presets menu</p></li>
+</ol>
+</td>
+<td><p><strong>Working with JOSM</strong></p>
+<ol class="arabic simple">
+<li><p>Downloading JOSM</p></li>
+<li><p>Installing JOSM</p></li>
+<li><p>Setting preferences in JOSM</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Bing imagery</p></li>
+<li><p>Presets</p></li>
+<li><p>Plugins</p></li>
+<li><p>Language settings</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Drawing maps using JOSM</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Basic operation</p></li>
+<li><p>Nodes, ways, and shapes</p></li>
+<li><p>Changing objects</p></li>
+<li><p>Adding presets</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li><p>Use GPS to add data to OSM</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand GPS and the types of GPS</p></li>
+<li><p>Turn on GPS</p></li>
+<li><p>Set up GPS</p></li>
+<li><p>Understand factors that affect GPS accuracy</p></li>
+<li><p>Understand tracks and waypoints</p></li>
+<li><p>Collect data using GPS</p></li>
+<li><p>Copy GPS data (tracks and waypoints) to computer</p></li>
+<li><p>Open waypoints and tracks in JOSM</p></li>
+<li><p>Upload GPS tracks using JOSM</p></li>
+<li><p>Edit OSM based on GPS data in JOSM</p></li>
+</ol>
+</td>
+<td><p><strong>Using GPS</strong></p>
+<ol class="arabic simple">
+<li><p>What is GPS</p></li>
+<li><p>Turning on GPS</p></li>
+<li><p>Navigating the GPS</p></li>
+<li><p>Tracks and waypoints</p></li>
+<li><p>Saving location (waypoint)</p></li>
+<li><p>Turning on the Track Log</p></li>
+<li><p>GPS settings</p></li>
+<li><p>How to copy waypoints and tracks to computer</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Connecting GPS to computer</p></li>
+<li><p>Installing GPS driver</p></li>
+<li><p>GPSBabel program setup</p></li>
+<li><p>GPSBabel installation</p></li>
+<li><p>Copying tracks and waypoints</p></li>
+<li><p>GPS data in JOSM</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p>Uploading GPS tracks in JOSM</p></li>
+<li><p>Editing GPS data using JOSM</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="5">
+<li><p>Use Field Papers to add data to OSM</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand how to use Field Papers</p></li>
+<li><p>Make and print Field Papers</p></li>
+<li><p>Add information to Field Papers</p></li>
+<li><p>Scan and upload Field Papers to fieldpapers.org</p></li>
+<li><p>Open Field Papers in JOSM</p></li>
+</ol>
+</td>
+<td><p><strong>Field Papers</strong></p>
+<ol class="arabic simple">
+<li><p>What is Field Papers</p></li>
+<li><p>Using Field Papers</p></li>
+<li><p>Making and printing Field Papers</p></li>
+<li><p>Mapping with Field Papers</p></li>
+<li><p>Scanning and uploading</p></li>
+<li><p>Field Papers in JOSM</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li><p>Edit a map and add information to OSM using JOSM</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Download OSM data in the area you want to edit</p></li>
+<li><p>Select layers</p></li>
+<li><p>Edit OSM data</p></li>
+<li><p>Edit and understand tags</p></li>
+<li><p>Upload OSM data</p></li>
+<li><p>Save OSM files</p></li>
+</ol>
+</td>
+<td><p><strong>Editing OpenStreetMap with JOSM</strong></p>
+<ol class="arabic simple">
+<li><p>Exploring JOSM</p></li>
+<li><p>JOSM layers</p></li>
+<li><p>Editing OSM data</p></li>
+<li><p>Tags</p></li>
+<li><p>Uploading changes</p></li>
+<li><p>Saving OSM files</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="7">
+<li><p>Correct imagery offset</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand the definition of imagery offset</p></li>
+<li><p>Understand components of imagery (resolution and georeference)</p></li>
+<li><p>Explain how imagery offsets occur</p></li>
+<li><p>Fix imagery offset</p></li>
+</ol>
+</td>
+<td><p><strong>Imagery Offset</strong></p>
+<ol class="arabic simple">
+<li><p>Definition of imagery offset</p></li>
+<li><p>Imagery resolution and georeferencing</p></li>
+<li><p>Imagery offset</p></li>
+<li><p>Fixing imagery offset</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="8">
+<li><p>Get OSM data in a specific format to be analysed further in
+Geographic Information System (GIS) software</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Download OpenStreetMap data from Geofabrik website</p></li>
+<li><p>Download customised OpenStreetMap data using HOT Exports</p></li>
+</ol>
+</td>
+<td><p><strong>Getting OSM Data</strong></p>
+<ol class="arabic simple">
+<li><p>OpenStreetMap data from Geofabrik Website</p></li>
+<li><p>OpenStreetMap data according to region and
+selecting attributes with HOT export tool</p></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data Analysis using QGIS and</strong> InaSAFE <strong>Beginner Level</strong></p>
+<p><strong>Standard Competency:</strong>
+Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios with InaSAFE</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p>Use GIS to develop scenarios for contingency planning</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Distinguish between data and information</p></li>
+<li><p>Understand the concept of GIS</p></li>
+</ol>
+</td>
+<td><p><strong>GIS for Developing Contingency Plan</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>The difference between data and information</p></li>
+<li><p>Terminology of Geographic Information System (GIS)</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li><p>Understand the benefit of QGIS and InaSAFE for developing
+realistic scenario for contingency planning</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand the role of GIS for preparing contingency planning</p></li>
+<li><p>Understand the importance of data</p></li>
+<li><p>Understand the benefits of QGIS/InaSAFE in the
+development of scenarios for contingency planning</p></li>
+</ol>
+</td>
+<td><p><strong>QGIS and InaSAFE in Contingency Planning</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>GIS for Preparing contingency Planning</p></li>
+<li><p>The Importance of Data</p></li>
+<li><p>QGIS and InaSAFE</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li><p>Install QGIS and understand QGIS user interface</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Download QGIS</p></li>
+<li><p>Install QGIS</p></li>
+<li><p>Open a previously created QGIS project</p></li>
+<li><p>Understand the layers panel</p></li>
+<li><p>Access basic tools through the toolbar</p></li>
+<li><p>Clean up the toolbar</p></li>
+<li><p>Show a map in the map window</p></li>
+<li><p>Get information on an active map through the status bar</p></li>
+</ol>
+</td>
+<td><p><strong>The Basics of QGIS</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Getting QGIS</p></li>
+<li><p>Installing QGIS</p></li>
+<li><p>QGIS user interface layout</p></li>
+<li><p>Adding vector layer</p></li>
+<li><p>QGIS basic tool</p></li>
+<li><p>Panning maps</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li><p>Use QGIS plugins</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand the concept of plugins</p></li>
+<li><p>Install QGIS plugins</p></li>
+<li><p>Add satellite imagery via OpenLayers</p></li>
+</ol>
+</td>
+<td><p><strong>QGIS Plugins</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Plugin setup</p></li>
+<li><p>Installing plugin</p></li>
+<li><p>OpenLayers plugin</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="5">
+<li><p>Understand projection systems and transformation in QGIS</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand Coordinate Reference Systems (CRS)</p></li>
+<li><p>Identify the CRS of a vector dataset</p></li>
+<li><p>Do ‘on the fly’ reprojection</p></li>
+<li><p>Save dataset with a different CRS</p></li>
+<li><p>Create a custom projection</p></li>
+</ol>
+</td>
+<td><p><strong>Map Projection Basics</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Coordinate Reference Systems (CRS)</p></li>
+<li><p>“On the fly” reprojection</p></li>
+<li><p>Dataset with different CRS</p></li>
+<li><p>Defining a custom projection</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li><p>Use and understand vector data</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand vector data</p></li>
+<li><p>Identify attributes of vector data</p></li>
+<li><p>Add vector layers</p></li>
+<li><p>Symbolise vector layers</p></li>
+</ol>
+</td>
+<td><p><strong>Working with Vector Data</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Vector data</p></li>
+<li><p>Data attribute</p></li>
+<li><p>Add vector data</p></li>
+<li><p>Symbology</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="7">
+<li><p>Categorise and create labels from vector data</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Explore attribute data of an object attributes and understand
+the uses of different types of data</p></li>
+<li><p>Add labels to vector layers</p></li>
+<li><p>Symbolise vector data using categories</p></li>
+</ol>
+</td>
+<td><p><strong>Labels and Classification</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Data attributes</p></li>
+<li><p>Tool label</p></li>
+<li><p>Classification</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="8">
+<li><p>Use and understand raster data</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Create raster data</p></li>
+<li><p>Change raster symbology</p></li>
+<li><p>Perform terrain analysis</p></li>
+</ol>
+</td>
+<td><p><strong>Working with Raster Data</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>How to load raster data</p></li>
+<li><p>Tool label</p></li>
+<li><p>Classification</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="9">
+<li><p>Create and edit new vector layers</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Add a raster layer for digitising</p></li>
+<li><p>Create new vector features (polygon, lines and points)</p></li>
+<li><p>Digitise new vector layers by tracing a raster layer,
+considering topology</p></li>
+<li><p>Georeference an image</p></li>
+</ol>
+</td>
+<td><p><strong>Creating Vector Layers</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Adding raster layer</p></li>
+<li><p>Creating new vector feature</p></li>
+<li><p>Digitising new vector layer</p></li>
+<li><p>Georeference</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="10">
+<li><p>Analyse vector data to solve problems</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand the GIS process</p></li>
+<li><p>Identify addressable problems</p></li>
+<li><p>Understand data needs</p></li>
+<li><p>Start a QGIS project</p></li>
+<li><p>Analyse problems</p></li>
+<li><p>Identify hazard zones</p></li>
+<li><p>Look for important roads</p></li>
+<li><p>Look for medical facilities</p></li>
+<li><p>Buffer roads</p></li>
+<li><p>Buffer medical facilities</p></li>
+<li><p>Analyse overlapped areas</p></li>
+<li><p>Choose features by landuse type</p></li>
+</ol>
+</td>
+<td><p><strong>Vector Analysis for Problem Solving</strong></p>
+<ol class="arabic simple">
+<li><p>GIS Processes</p></li>
+<li><p>Problems</p></li>
+<li><p>Data</p></li>
+<li><p>Starting a project</p></li>
+<li><p>Analysing problems: farms and moors</p></li>
+<li><p>Hazard zone</p></li>
+<li><p>Searching for important roads</p></li>
+<li><p>Searching for health facilities</p></li>
+<li><p>Road Buffer</p></li>
+<li><p>Health Facilities Buffer</p></li>
+<li><p>Overlapped area</p></li>
+<li><p>Choosing farms and moors</p></li>
+<li><p>Choosing land area with right size</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="11">
+<li><p>Create maps with the Map Composer</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Arrange map layout</p></li>
+<li><p>Add a new map</p></li>
+<li><p>Add title to a map</p></li>
+<li><p>Add graphic and numeric scales</p></li>
+<li><p>Add grid to a map</p></li>
+<li><p>Add an inset</p></li>
+<li><p>Customise the content of the legend</p></li>
+<li><p>Export a map to different formats (pdf, jpeg, svg)</p></li>
+</ol>
+</td>
+<td><p><strong>Using Map Composer</strong></p>
+<ol class="arabic simple">
+<li><p>Map Composer</p></li>
+<li><p>Adding new maps</p></li>
+<li><p>Adding a title to the map</p></li>
+<li><p>Adding scale</p></li>
+<li><p>Adding grids</p></li>
+<li><p>Adding inset</p></li>
+<li><p>Adding legend</p></li>
+<li><p>Printing the map</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="12">
+<li><p>Use InaSAFE</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand the concept of hazard, exposure and impact data</p></li>
+<li><p>Understand how to determine impact</p></li>
+<li><p>Understand the InaSAFE interface</p></li>
+<li><p>Add hazard data</p></li>
+<li><p>Add unprocessed exposure data (vector and raster)</p></li>
+<li><p>Use the keywords editor</p></li>
+<li><p>Analyse impact</p></li>
+<li><p>Improve InaSAFE output map</p></li>
+<li><p>Save and print scenario results</p></li>
+</ol>
+</td>
+<td><p><strong>Understanding InaSAFE</strong></p>
+<ol class="arabic simple">
+<li><p>Hazard, Exposure, Impact</p></li>
+<li><p>InaSAFE interface</p></li>
+<li><p>Adding hazard data</p></li>
+<li><p>Adding exposure data</p></li>
+<li><p>Adding keyword in metadata</p></li>
+<li><p>Impact analysis</p></li>
+<li><p>Improving InaSAFE maps output</p></li>
+<li><p>Using print button</p></li>
+<li><p>Saving your work</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="13">
+<li><p>Understand how to get support for QGIS and InaSAFE in
+Indonesia</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Use social media to connect with InaSAFE community</p></li>
+<li><p>Access QGIS tutorial website</p></li>
+</ol>
+</td>
+<td><p><strong>Getting Support</strong></p>
+<ol class="arabic simple">
+<li><p>Facebook</p></li>
+<li><p>QGIS tutorials</p></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data Collection Using OSM Intermediate Level</strong></p>
+<p><strong>Standard Competency:</strong>
+Quality Assurance in OSM mapping</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p>Apply better digitising technique for improving quality
+of collected data.</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Use advanced editing tools in JOSM</p></li>
+<li><p>Make relations among objects</p></li>
+</ol>
+</td>
+<td><p><strong>Advanced Editing</strong></p>
+<ol class="arabic simple">
+<li><p>Advanced editing tools</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Default drawing tools</p></li>
+<li><p>Plugins</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Relations</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Editing relations</p></li>
+<li><p>Multipolygons and linestrings</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li><p>Use JOSM validation tools to ensure the quality of
+map contributions</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Use validation tools in JOSM</p></li>
+<li><p>Use online validation tools</p></li>
+</ol>
+</td>
+<td><p><strong>Quality Assurance</strong></p>
+<ol class="arabic simple">
+<li><p>Error and warnings</p></li>
+<li><p>Using the validation tool</p></li>
+<li><p>Common validation warnings</p></li>
+<li><p>Using the tasking manager</p></li>
+<li><p>Editing tips</p></li>
+<li><p>Presets standardisation</p></li>
+<li><p>KeepRight</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li><p>Resolve conflicts when uploading OSM data</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Identify conflicts</p></li>
+<li><p>Understand why conflicts occur</p></li>
+<li><p>Solve conflicts</p></li>
+</ol>
+</td>
+<td><p><strong>Dealing with Conflicts</strong></p>
+<ol class="arabic simple">
+<li><p>Conflicts</p></li>
+<li><p>Conflict resolution</p></li>
+<li><p>Ways to avoid conflicts</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li><p>Create presets files in JOSM</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand tags</p></li>
+<li><p>Understand XML</p></li>
+<li><p>Understand keys and values</p></li>
+<li><p>Make presets</p></li>
+<li><p>Put preset files into JOSM</p></li>
+<li><p>Apply new presets to an object</p></li>
+</ol>
+</td>
+<td><p><strong>Creating JOSM File Presets</strong></p>
+<ol class="arabic simple">
+<li><p>Tags and presets</p></li>
+<li><p>Introduction to XML</p></li>
+<li><p>JOSM presets files</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="5">
+<li><p>Use private data store feature to keep private data</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand the functions of the Separate Data Store (SDS)</p></li>
+<li><p>Understand what data should be kept publicly and what should
+be private</p></li>
+<li><p>Install SDS plugin in JOSM</p></li>
+<li><p>Use SDS presets</p></li>
+<li><p>Use SDS plugin for selecting public and private data</p></li>
+<li><p>Access online datastore</p></li>
+</ol>
+</td>
+<td><p><strong>Using the Separate Data Store</strong></p>
+<ol class="arabic simple">
+<li><p>Installing the SDS plugin</p></li>
+<li><p>Using the plugin</p></li>
+<li><p>How it works</p></li>
+<li><p>Accessing the datastore online</p></li>
+</ol>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li><p>Create and edit pages in OSM wiki</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Make an account on the OpenStreetMap wiki</p></li>
+<li><p>Understand conventions and rules in developing a wiki page</p></li>
+<li><p>Edit the wiki</p></li>
+<li><p>Upload files and images</p></li>
+<li><p>Translate and revise wiki</p></li>
+</ol>
+</td>
+<td><p><strong>Editing the OpenStreetMap Wiki</strong></p>
+<ol class="arabic simple">
+<li><p>OSM wiki</p></li>
+<li><p>Signing up</p></li>
+<li><p>Editing</p></li>
+<li><p>Wiki formatting</p></li>
+<li><p>Creating a new page</p></li>
+<li><p>Uploading files and images</p></li>
+<li><p>Translating pages</p></li>
+<li><p>Watching pages</p></li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data Analysis using QGIS and</strong> InaSAFE <strong>Intermediate Level</strong></p>
+<p><strong>Standard Competency:</strong>
+Spatial Data Analysis using QGIS and InaSAFE for Contingency Planning</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p>Understand QGIS concepts</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Identify data types in QGIS</p></li>
+<li><p>Understand symbology</p></li>
+<li><p>Understand map layout</p></li>
+</ol>
+</td>
+<td><p><strong>QGIS Review</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Data types in QGIS</p></li>
+<li><p>Symbolising data</p></li>
+<li><p>Map layout</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li><p>Prepare data and keywords for InaSAFE</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand InaSAFE inputs</p></li>
+<li><p>Get OSM data from the HOT export server</p></li>
+<li><p>Load data into InaSAFE</p></li>
+<li><p>Add keywords</p></li>
+<li><p>Prepare the hazard layer</p></li>
+<li><p>Run InaSAFE</p></li>
+</ol>
+</td>
+<td><p><strong>Preparing data and keywords for</strong> InaSAFE</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>InaSAFE inputs</p></li>
+<li><p>Getting OSM data from HOT Exports</p></li>
+<li><p>Loading data</p></li>
+<li><p>Adding keywords</p></li>
+<li><p>Preparing a hazard layer</p></li>
+<li><p>Running InaSAFE</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li><p>Determine temporary IDP camp or evacuation locations</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Develop criteria for determining an ideal IDP camp
+location</p></li>
+<li><p>Use geoprocessing tools</p></li>
+<li><p>Use various spatial queries: contains, within, equal,
+intersect and is disjoint</p></li>
+<li><p>Combine geoprocessing tools and spatial queries to select
+building(s) for temporary IDP camps</p></li>
+</ol>
+</td>
+<td><p><strong>Determining IDP Camp Location</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Geoprocessing tools</p></li>
+<li><p>Spatial queries</p></li>
+<li><p>IDP camp criteria and data</p></li>
+<li><p>Criteria #1: building must be outside
+affected area</p></li>
+<li><p>Criteria #2: location must have direct access
+to a primary/secondary road within 20 metres</p></li>
+<li><p>Criteria #3: building must have an area of at least
+225 square metres</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li><p>Plan evacuation routes based on hazard information</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand the concept of shortest path and fastest route</p></li>
+<li><p>Use the Road Graph plugin</p></li>
+<li><p>Set up speed and road direction</p></li>
+<li><p>Determine start and destination points</p></li>
+<li><p>Conduct route analysis and selection</p></li>
+</ol>
+</td>
+<td><p><strong>Planning an Evacuation Route</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Road graph plugin</p></li>
+<li><p>Editing plugin settings</p></li>
+<li><p>Choosing start and destination points</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="5">
+<li><p>Calculate damage and losses</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Understand the definition of damages, losses and their
+calculation based on community exposure data</p></li>
+<li><p>Understand damage and losses assessment values based
+on BNPB and BPBD</p></li>
+<li><p>Make a damage and losses map</p></li>
+<li><p>Calculate damage area</p></li>
+<li><p>Manipulate attribute data of affected features to obtain
+damage values for each object</p></li>
+<li><p>Manipulate attribute data of affected features to obtain
+loss values for each object</p></li>
+<li><p>Group attribute data for administrative areas (hamlet
+village, subdistrict)</p></li>
+<li><p>Combine attribute data for administrative areas (hamlet
+village, subdistrict)</p></li>
+<li><p>Present damage and loss values using charts</p></li>
+</ol>
+</td>
+<td><p><strong>Calculating Damages and Losses</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>BPBD damage assessment guide</p></li>
+<li><p>Damage and losses assessment map</p></li>
+<li><p>Calculating damage area</p></li>
+<li><p>Calculating damages using the Group Stats plugin</p></li>
+<li><p>Calculating losses</p></li>
+<li><p>Calculating losses using the Group Stats plugin</p></li>
+<li><p>Joining data</p></li>
+<li><p>Creating a chart</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Training of Trainer Workshop for Contingency Planning using OSM, QGIS,</strong>
+<strong>and</strong> InaSAFE</p>
+<p><strong>Standard Competency:</strong>
+Participant can be a workshop facilitator to teach Data collection and Data
+Analysis through OSM, QGIS and InaSAFE in their respective region.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><ol class="arabic simple">
+<li><p>Master how to implement adult learning</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Explain the principles of adult learning</p></li>
+<li><p>Analyse the characteristics of adult learning</p></li>
+<li><p>Determine strategies, teaching methods or techniques that
+apply in adult learning</p></li>
+<li><p>Evaluate adult learning</p></li>
+</ol>
+</td>
+<td><p><strong>Adult Learning</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Principles of adult learning</p></li>
+<li><p>Characteristics of adult learning</p></li>
+<li><p>Strategies, teaching methods or techniques that apply
+adult learning</p></li>
+<li><p>Adult learning evaluation</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li><p>Demonstrate basic teaching skills</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Describe the principles of effective communication</p></li>
+<li><p>Describe the communication models in workshops</p></li>
+<li><p>Demonstrate the basic skills component of teaching workshops</p></li>
+</ol>
+</td>
+<td><p><strong>Communication skills</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Principles of effective communication</p></li>
+<li><p>Communication models in workshop</p></li>
+<li><p>Basic teaching skills component</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li><p>Practise Data Collection and Analysis through OSM, QGIS, and
+InaSAFE workshop</p></li>
+</ol>
+</td>
+<td><ol class="arabic simple">
+<li><p>Practise data collection and analysis through OSM, QGIS
+and InaSAFE workshop using adult learning</p></li>
+<li><p>Practise communication skills in data collection and
+analysis through OSM, QGIS and InaSAFE workshop</p></li>
+</ol>
+</td>
+<td><p><strong>Facilitator Skills for Data Collection and Analysis
+through OSM, QGIS, and InaSAFE workshop</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Implementation of adult learning in data collection and
+analysis through OSM, QGIS, and InaSAFE workshop</p></li>
+<li><p>Implementation of communication skills data collection
+and analysis through OSM, QGIS, and InaSAFE workshop</p></li>
+</ol>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="f-curriculum-structure">
+<h3>F. Curriculum Structure<a class="headerlink" href="#f-curriculum-structure" title="Link to this heading">¶</a></h3>
+<p>Based on the curriculum, program structure is designed as follows.</p>
+<p><strong>1. Data Collection Using OSM Beginner Level</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Workshop Material</p></th>
+<th class="head"><p>Time (learning hour) &#64; 45Minutes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p><strong>General Program</strong></p></td>
+<td><p><strong>1</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>BNPBPolicy</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><strong>Main Program</strong></p></td>
+<td><p><strong>46</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>The OpenStreetMap website</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Working with OSM</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Working with JOSM</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="5">
+<li></li>
+</ol>
+</td>
+<td><p>Using GPS</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li></li>
+</ol>
+</td>
+<td><p>Field Papers</p></td>
+<td><p>10</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="7">
+<li></li>
+</ol>
+</td>
+<td><p>Editing OpenStreetMap with JOSM</p></td>
+<td><p>12</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="8">
+<li></li>
+</ol>
+</td>
+<td><p>Imagery Offset</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="9">
+<li></li>
+</ol>
+</td>
+<td><p>Getting OSM Data</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><strong>Supporting Program</strong></p></td>
+<td><p><strong>3</strong></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="10">
+<li></li>
+</ol>
+</td>
+<td><p>Opening and Closing</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="11">
+<li></li>
+</ol>
+</td>
+<td><p>Workshop Evaluation</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Total</p></td>
+<td><p>50</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. Data Analysis Using QGIS/</strong> InaSAFE <strong>Beginner Level</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Workshop Material</p></th>
+<th class="head"><p>Time (learning hour) &#64; 45 Minutes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p><strong>General Program</strong></p></td>
+<td><p><strong>1</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>BNPB Policy</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><strong>Main Program</strong></p></td>
+<td><p><strong>46</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Using GIS to develop scenario for contingency planning</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Explaining the benefit of QGIS and InaSAFE for developing realistic scenario for contingency planning</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Installing QGIS and explaining QGIS user interface</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="5">
+<li></li>
+</ol>
+</td>
+<td><p>Using QGIS plugins</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li></li>
+</ol>
+</td>
+<td><p>Determining projection system and transformation in QGIS</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="7">
+<li></li>
+</ol>
+</td>
+<td><p>Working with vector data</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="8">
+<li></li>
+</ol>
+</td>
+<td><p>Categorising and creating label from vector data</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="9">
+<li></li>
+</ol>
+</td>
+<td><p>Working with raster data</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="10">
+<li></li>
+</ol>
+</td>
+<td><p>Creating and editing new vector layer</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="11">
+<li></li>
+</ol>
+</td>
+<td><p>Analysing vector data to solve problem</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="12">
+<li></li>
+</ol>
+</td>
+<td><p>Creating maps with Map Composer</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="13">
+<li></li>
+</ol>
+</td>
+<td><p>Using InaSAFE</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="14">
+<li></li>
+</ol>
+</td>
+<td><p>Keeping interaction and communication to support QGIS and InaSAFE in Indonesia</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><strong>Supporting Program</strong></p></td>
+<td><p><strong>3</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="15">
+<li></li>
+</ol>
+</td>
+<td><p>Opening and Closing</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="16">
+<li></li>
+</ol>
+</td>
+<td><p>Workshop Evaluation</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Total</p></td>
+<td><p>50</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>3. Data Collection Using OSM Intermediate Level</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Workshop Material</p></th>
+<th class="head"><p>Time (learning hour) &#64; 45 Minutes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p><strong>General Program</strong></p></td>
+<td><p><strong>1</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>BNPB Policy</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><strong>Main Program</strong></p></td>
+<td><p><strong>26</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Advanced Editing</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Quality Assurance</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Resolving conflicts when uploading OSM Data</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="5">
+<li></li>
+</ol>
+</td>
+<td><p>XML and Presets in JOSM</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li></li>
+</ol>
+</td>
+<td><p>Using Private Data Store</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="8">
+<li></li>
+</ol>
+</td>
+<td><p>OpenStreetMap Wiki</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><strong>Supporting Program</strong></p></td>
+<td><p><strong>3</strong></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="9">
+<li></li>
+</ol>
+</td>
+<td><p>Opening and Closing</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="10">
+<li></li>
+</ol>
+</td>
+<td><p>Workshop Evaluation</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Total</p></td>
+<td><p>30</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. Data Analysis Using QGIS/</strong> InaSAFE <strong>Intermediate Level</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Workshop Material</p></th>
+<th class="head"><p>Time (learning hour) &#64; 45Minutes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p><strong>General Program</strong></p></td>
+<td><p><strong>1</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>BNPB Policy</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><strong>Main Program</strong></p></td>
+<td><p><strong>26</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>QGIS Review</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Preparing data and keywords for InaSAFE</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Planning temporary shelter</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="5">
+<li></li>
+</ol>
+</td>
+<td><p>Planning evacuation route</p></td>
+<td><p>3</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="6">
+<li></li>
+</ol>
+</td>
+<td><p>Calculating damage and losses</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="7">
+<li></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p><strong>Supporting Program</strong></p></td>
+<td><p><strong>3</strong></p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="8">
+<li></li>
+</ol>
+</td>
+<td><p>Opening and Closing</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="9">
+<li></li>
+</ol>
+</td>
+<td><p>Workshop Evaluation</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p>Total</p></td>
+<td><p>50</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>5. Training of Trainer for Contingency Planning Using OSM, QGIS, and</strong>
+InaSAFE</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Workshop Material</p></th>
+<th class="head"><p>Time (learning hour) &#64; 45Minutes</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td></td>
+<td><p><strong>General Program</strong></p></td>
+<td><p><strong>1</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple">
+<li></li>
+</ol>
+</td>
+<td><p>BNPB Policy</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><strong>Main Program</strong></p></td>
+<td><p><strong>6</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="2">
+<li></li>
+</ol>
+</td>
+<td><p>Adult learning</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="3">
+<li></li>
+</ol>
+</td>
+<td><p>Communication skills</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="4">
+<li></li>
+</ol>
+</td>
+<td><p>Practising Data Collection and Analysis
+through OSM, QGIS, and InaSAFE workshop</p></td>
+<td><p>2</p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><strong>Supporting Program</strong></p></td>
+<td><p><strong>2</strong></p></td>
+</tr>
+<tr class="row-odd"><td><ol class="arabic simple" start="8">
+<li></li>
+</ol>
+</td>
+<td><p>Opening and Closing</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-even"><td><ol class="arabic simple" start="9">
+<li></li>
+</ol>
+</td>
+<td><p>Workshop Evaluation</p></td>
+<td><p>1</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Total</p></td>
+<td><p>9</p></td>
+</tr>
+</tbody>
+</table>
+<p>The syllabus is a learning plan for the workshop material that includes
+basic competencies, indicators, core material, learning activity, assessment,
+allocation of time and learning resources.
+The syllabus is based on the structure of the program and allocation of a
+predetermined time.</p>
+<p>This syllabus is described in more detail in the toolkit/workshop
+manuals separate from this curriculum.
+Therefore, the syllabus may be more easily understood by reading
+the prepared toolkit.</p>
+<p><strong>Data Collection Using OSM Beginner Level</strong></p>
+<p><strong>Standard Competency:</strong>
+Collecting Spatial Data with OSM</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+<th class="head"><p>Learning Activity</p></th>
+<th class="head"><p>Time Allocation</p></th>
+<th class="head"><p>Assessment</p></th>
+<th class="head"><p>Learning Sources</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="7"><p><strong>1. Basic Concept of OpenStreetMap Website (2 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Draw paper maps to gain a basic understanding of OpenStreetMap</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand the concept of OpenStreetMap</p></li>
+<li><p>Understand the definition and objectives of data collection</p></li>
+<li><p>Understand the composition of a map</p></li>
+<li><p>Make a hand-drawn sketch of an area</p></li>
+</ol>
+</td>
+<td><p><strong>The OpenStreetMap Website</strong></p>
+<ol class="arabic simple">
+<li><p>Concept of OpenStreetMap</p></li>
+<li><p>Definition and objectives of data collection</p></li>
+<li><p>Components of a map</p></li>
+<li><p>Hand-drawn sketch of an area</p></li>
+</ol>
+</td>
+<td><p>Quiz about OSM, data, and map</p>
+<p>Make a hand-drawn sketch of an area
+(individually)</p>
+</td>
+<td><p>90 Minutes</p></td>
+<td><p>Test/Practice</p></td>
+<td><p>Projector
+Slide PPT
+Module 1
+Paper and pen</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>2. Working with OSM (4 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Navigate OpenStreetMap website</p></td>
+<td><ol class="arabic simple">
+<li><p>Visit OSM website</p></li>
+<li><p>Navigate map on OSM Website</p></li>
+<li><p>Save an image from OSM</p></li>
+<li><p>Register an OSM account</p></li>
+<li><p>Edit the OSM map</p></li>
+<li><p>Save edits</p></li>
+</ol>
+</td>
+<td><p><strong>Working with OSM</strong></p>
+<ol class="arabic simple">
+<li><p>OSM website</p></li>
+<li><p>Navigating the OSM map</p></li>
+<li><p>Saving images from OSM</p></li>
+<li><p>Creating an OSM account</p></li>
+<li><p>Editing the OSM map</p></li>
+</ol>
+</td>
+<td><p>Participants visit the OSM website,
+navigate the map, save OSM map as an
+image, create an OSM account, and
+edit the OSM map after demonstrated by
+Facilitator</p></td>
+<td><p>180 Minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Participant’s computer
+Projector
+Slide PPT
+Module 2</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>3. Working with JOSM (4 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Operate JOSM</p></td>
+<td><ol class="arabic simple">
+<li><p>Download JOSM</p></li>
+<li><p>Install JOSM</p></li>
+<li><p>Set JOSM preferences</p></li>
+<li><p>Use basic tools</p></li>
+<li><p>Draw nodes and ways in JOSM</p></li>
+<li><p>Change objects</p></li>
+<li><p>Add tags to objects using presets menu</p></li>
+</ol>
+</td>
+<td><p><strong>Working with JOSM</strong></p>
+<ol class="arabic simple">
+<li><p>Downloading JOSM</p></li>
+<li><p>Installing JOSM</p></li>
+<li><p>Setting preferences in JOSM</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Bing imagery</p></li>
+<li><p>Presets</p></li>
+<li><p>Plugins</p></li>
+<li><p>Language settings</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p>Drawing maps using JOSM</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Basic operation</p></li>
+<li><p>Nodes, ways, and shapes</p></li>
+<li><p>Changing objects</p></li>
+<li><p>Adding presets</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants practise how to
+download and install JOSM, change
+JOSM preferences, learn basic map
+drawing in jOSM, and add presets after
+demonstrated by facilitator</p></td>
+<td><p>180 Minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 3
+Participant’s computer</p>
+<p>All required software that
+is distributed to
+participant on USB stick</p>
+</td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>4. Using GPS (10 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use GPS to add data to OSM</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand GPS and the types of GPS</p></li>
+<li><p>Turn on GPS</p></li>
+<li><p>Set up GPS</p></li>
+<li><p>Understand factors that affect GPS accuracy</p></li>
+<li><p>Understand tracks and waypoints</p></li>
+<li><p>Collect data using GPS</p></li>
+<li><p>Copy GPS data (tracks and waypoints) to computer</p></li>
+<li><p>Open waypoints and tracks in JOSM</p></li>
+<li><p>Upload GPS tracks in JOSM</p></li>
+<li><p>Edit OSM based on GPS data in JOSM</p></li>
+</ol>
+</td>
+<td><p><strong>Using GPS</strong></p>
+<ol class="arabic simple">
+<li><p>What is GPS</p></li>
+<li><p>Turning on GPS</p></li>
+<li><p>Navigating the GPS</p></li>
+<li><p>Tracks and waypoints</p></li>
+<li><p>Saving location (waypoint)</p></li>
+<li><p>Turning on the Track Log</p></li>
+<li><p>GPS settings</p></li>
+<li><p>How to copy waypoints and tracks to computer</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Connecting GPS to computer</p></li>
+<li><p>Installing GPS driver</p></li>
+<li><p>GPSBabel program setup</p></li>
+<li><p>GPSBabel installation</p></li>
+<li><p>Copying tracks and waypoints</p></li>
+<li><p>GPS data in JOSM</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p>Uploading GPS tracks in JOSM</p></li>
+<li><p>Editing GPS data using JOSM</p></li>
+</ol>
+</td>
+<td><p>Participants are asked about and
+discuss GPS.</p>
+<p>Participants practise how to
+turn on GPS, set up GPS for
+the first time, navigate with GPS,
+save tracks and waypoints, turn
+on track log, and transferr
+waypoints and tracks to computer
+after demonstrated by facilitator</p>
+</td>
+<td><p>5 hours and 30 minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 4
+Participant’s Computer</p>
+<p>GPS Device (ideally minimum
+one GPS for two or three
+participants)
+Pen and Paper</p>
+</td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>5. Field Papers (10 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use Field Papers to add data to OSM</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand how to use Field Papers</p></li>
+<li><p>Make and print Field Papers</p></li>
+<li><p>Add information to Field Papers</p></li>
+<li><p>Scan and upload Field Papers to fieldpapers.org</p></li>
+<li><p>Open Field Papers in JOSM</p></li>
+</ol>
+</td>
+<td><p><strong>Field Papers</strong></p>
+<ol class="arabic simple">
+<li><p>What is Field Papers</p></li>
+<li><p>Using Field Papers</p></li>
+<li><p>Making and printing Field Papers</p></li>
+<li><p>Mapping with Field Papers</p></li>
+<li><p>Scanning and uploading</p></li>
+<li><p>Field Papers in JOSM</p></li>
+</ol>
+</td>
+<td><p>Participants are asked about and
+discuss Field Papers.</p>
+<p>Participants practise how Field
+Papers works, how to create and print
+Field Papers, how to map with Field
+Papers, scan and upload, and how to
+to open scanned Field Papers in JOSM
+after demonstrated by Facilitator</p>
+</td>
+<td><p>5 hours and 30 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 5
+Participant’s computer
+Example of Field Papers</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>6. Editing OpenStreetMap with JOSM (12 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Edit a map and add information to OSM using JOSM</p></td>
+<td><ol class="arabic simple">
+<li><p>Download OSM data in the area you want to edit</p></li>
+<li><p>Select layers</p></li>
+<li><p>Edit OSM data</p></li>
+<li><p>Edit and understand tags</p></li>
+<li><p>Upload OSM data</p></li>
+<li><p>Save OSM files</p></li>
+</ol>
+</td>
+<td><p><strong>Editing OpenStreetMap with JOSM</strong></p>
+<ol class="arabic simple">
+<li><p>Exploring JOSM</p></li>
+<li><p>JOSM layers</p></li>
+<li><p>Editing OSM data</p></li>
+<li><p>Tags</p></li>
+<li><p>Uploading changes</p></li>
+<li><p>Saving OSM files</p></li>
+</ol>
+</td>
+<td><p>Participants learn JOSM user
+interface, JOSM layers, and practise
+how to edit OSM data, tags, upload
+changes, and saving OSM files, and
+using keyboard
+shortcuts after demonstrated by
+Facilitator</p></td>
+<td><p>7 Hours</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 6
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>7. Imagery Offset (2 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Correct imagery offset</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand the definition of imagery offset</p></li>
+<li><p>Understand components of imagery (resolution and georeference)</p></li>
+<li><p>Explain how imagery offsets occur</p></li>
+<li><p>Fix imagery offset</p></li>
+</ol>
+</td>
+<td><p><strong>Imagery Offset</strong></p>
+<ol class="arabic simple">
+<li><p>Definition of imagery offset</p></li>
+<li><p>Imagery resolution and georeferencing</p></li>
+<li><p>Imagery offset</p></li>
+<li><p>Fixing imagery offset</p></li>
+</ol>
+</td>
+<td><p>Participants watch demo from
+facilitator and learn about
+imagery offset, imagery components
+(resolution and georeference), then
+practise how to fix imagery offset</p></td>
+<td><p>90 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 7
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>8. Getting OSM data (2 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Get OSM data in a specific format to be analysed further in
+Geographic Information System (GIS) software</p></td>
+<td><ol class="arabic simple">
+<li><p>Download OpenStreetMap data from Geofabrik Website</p></li>
+<li><p>Download customised OpenStreetMap data using HOT Exports</p></li>
+</ol>
+</td>
+<td><p><strong>Getting OSM Data</strong></p>
+<ol class="arabic simple">
+<li><p>OpenStreetMap data from Geofabrik Website</p></li>
+<li><p>OpenStreetMap data according to region and
+selecting attributes with HOT export tool</p></li>
+</ol>
+</td>
+<td><p>Participants practise how to
+download OSM data from Geofabrik
+website, and download OSM data
+based on area and tags needed using
+Hot export tool</p></td>
+<td><p>90 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 9
+Participant’s computer</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data Analysis using QGIS and</strong> InaSAFE <strong>Beginner Level Workshop</strong></p>
+<p><strong>Standard Competency:</strong>
+Managing Spatial Data using QGIS and Analysing Disaster Impact Scenarios
+with InaSAFE</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+<th class="head"><p>Learning Activity</p></th>
+<th class="head"><p>Time Allocation</p></th>
+<th class="head"><p>Assessment</p></th>
+<th class="head"><p>Learning Sources</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="7"><p><strong>1. Using GIS to develop scenario for contingency planning (1 Hour)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use GIS to develop scenarios for contingency planning</p></td>
+<td><ol class="arabic simple">
+<li><p>Distinguish between data and information</p></li>
+<li><p>Explain GIS terminology</p></li>
+</ol>
+</td>
+<td><p><strong>GIS for Developing Contingency Plan</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>The difference between data and information</p></li>
+<li><p>Terminology of Geographic information System (GIS)</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants watch presentation
+from facilitator and discuss about
+the difference between data and
+information, and Geographic
+Information System (GIS) terminology</p></td>
+<td><p>45 Minutes</p></td>
+<td><p>Test</p></td>
+<td><p>Projector
+Slide PP
+Module 1</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>2. InaSAFE for Contingency Planning (1 Hour)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Understand the benefit of QGIS and InaSAFE for developing
+realistic scenario for contingency planning</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand the role of GIS for preparing contingency planning</p></li>
+<li><p>Understand the importance of data</p></li>
+<li><p>Understand the benefits of QGIS/InaSAFE in the
+development of scenarios for contingency planning</p></li>
+</ol>
+</td>
+<td><p><strong>QGIS and InaSAFE in Contingency Planning</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>GIS for Preparing contingency planning</p></li>
+<li><p>The Importance of Data</p></li>
+<li><p>QGIS and InaSAFE</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Facilitator
+explains about GIS
+for contingency planning and the
+importance of data in QGIS and InaSAFE</p></td>
+<td><p>45 Minutes</p></td>
+<td><p>Test</p></td>
+<td><p>Projector
+Slide PP
+Module 2</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>3. QGIS Installation and QGIS User Interface Layout (5 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Install QGIS and understand QGIS user interface</p></td>
+<td><ol class="arabic simple">
+<li><p>Download QGIS</p></li>
+<li><p>Install QGIS</p></li>
+<li><p>Open a previously created QGIS project</p></li>
+<li><p>Understand the layers panel</p></li>
+<li><p>Access basic tools through the toolbar</p></li>
+<li><p>Clean up the toolbar</p></li>
+<li><p>Show a map in the map window</p></li>
+<li><p>Get information on an active map through the status bar</p></li>
+</ol>
+</td>
+<td><p><strong>The Basics of QGIS</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Getting QGIS</p></li>
+<li><p>Installing QGIS</p></li>
+<li><p>QGIS User interface layout</p></li>
+<li><p>Adding vector layer</p></li>
+<li><p>QGIS basic tool</p></li>
+<li><p>Panning maps</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants practise
+how to get QGIS, install QGIS,
+set up QGIS, add vector layers,
+basic QGIS tools, panning map</p></td>
+<td><p>180 Minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 3
+Participant’s computer
+QGIS Installation file</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>4. QGIS Plugin (2 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use QGIS plugins</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand the concept of plugins</p></li>
+<li><p>Install QGIS plugins</p></li>
+<li><p>Add satellite imagery via OpenLayers</p></li>
+</ol>
+</td>
+<td><p><strong>QGIS Plugins</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Plugin setup</p></li>
+<li><p>Installing plugin</p></li>
+<li><p>OpenLayers plugin</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants learn how to
+manage plugins, install new plugins,
+and OpenLayer plugin</p></td>
+<td><p>105 Minutes</p></td>
+<td><p>105 Minutes</p></td>
+<td><p>Projector
+Slide PP
+Module 4
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>5. Projection systems and Transformation (2 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Understand projection systems and transformation in QGIS</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand Coordinate Reference Systems (CRS)</p></li>
+<li><p>Identify the CRS of a vector dataset</p></li>
+<li><p>Do ‘on the fly’ reprojection</p></li>
+<li><p>Save dataset with a different CRS</p></li>
+<li><p>Create a custom projection</p></li>
+</ol>
+</td>
+<td><p><strong>Map Projection Basics</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Coordinate Reference Systems (CRS)</p></li>
+<li><p>“On the fly” reprojection</p></li>
+<li><p>Dataset with different CRS</p></li>
+<li><p>Making its own projection</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants learn about
+Coordinate Reference System (CRS)</p>
+<p>Participants
+practise how to reproject with
+“on the fly” projection, how to deal
+with different CRS, and
+how to set custom projection</p>
+</td>
+<td><p>90 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 5
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>6. Vector Data (3 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use and understand vector data</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand vector data</p></li>
+<li><p>Identify attributes of vector data</p></li>
+<li><p>Add vector layers</p></li>
+<li><p>Symbolise vector layers</p></li>
+</ol>
+</td>
+<td><p><strong>Working with Vector Data</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Vector data</p></li>
+<li><p>Data attribute</p></li>
+<li><p>Add vector data</p></li>
+<li><p>Symbology</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants learn from
+facilitator about vector data and its
+attributes</p>
+<p>Participants practise how to add
+vector layers and do symbology</p>
+</td>
+<td><p>135 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 6
+Participant’s computer
+Example file contain vector
+data</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>7. Label and classification (3 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Categorise and create labels from vector data</p></td>
+<td><ol class="arabic simple">
+<li><p>Explore attribute data of an object attributes and understand
+the uses of different types of data</p></li>
+<li><p>Add labels to vector layers</p></li>
+<li><p>Symbolise vector data using categories</p></li>
+</ol>
+</td>
+<td><p><strong>Labels and Classification</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Data attributes</p></li>
+<li><p>Tool label</p></li>
+<li><p>Classification</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants learn about
+attribute data, labeling tools, and
+classifying attributes</p></td>
+<td><p>135 Minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 7
+Participant’s computer
+Example file contain vector
+data</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>8. Raster data (3 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use and understand raster data</p></td>
+<td><ol class="arabic simple">
+<li><p>Create raster data</p></li>
+<li><p>Change raster symbology</p></li>
+<li><p>Perform terrain analysis</p></li>
+</ol>
+</td>
+<td><p><strong>Working with Raster Data</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>How to load raster data</p></li>
+<li><p>Tool label</p></li>
+<li><p>Classification</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants learn and
+practise how to add raster layer,
+change its symbol, and doing simple
+terrain analysis.</p></td>
+<td><p>135 Minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 8
+Participant’s computer
+Example file contain Raster</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>9. Creating new Vector data (3 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Create and edit new vector layers</p></td>
+<td><ol class="arabic simple">
+<li><p>Add a raster layer for digitising</p></li>
+<li><p>Create new vector features (polygon, lines and points)</p></li>
+<li><p>Digitise new vector layers by tracing a raster layer,
+considering topology</p></li>
+<li><p>Georeference an image</p></li>
+</ol>
+</td>
+<td><p><strong>Creating Vector Layers</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Adding raster layer</p></li>
+<li><p>Creating new vector feature</p></li>
+<li><p>Digitising new vector layer</p></li>
+<li><p>Georeference</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants learn and
+practise how to add raster layers,
+change its symbology, and do simple
+terrain analysis</p></td>
+<td><p>135 Minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 8
+Participant’s computer
+Example file contain raster</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>10. Vector analysis (6 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Analyse vector data to solve problems</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand the GIS process</p></li>
+<li><p>Identify addressable problems</p></li>
+<li><p>Understand data needs</p></li>
+<li><p>Start a QGIS project</p></li>
+<li><p>Analyse problems</p></li>
+<li><p>Identify hazard zones</p></li>
+<li><p>Look for important roads</p></li>
+<li><p>Look for medical facilities</p></li>
+<li><p>Buffer roads</p></li>
+<li><p>Buffer medical facilities</p></li>
+<li><p>Analyse overlapped areas</p></li>
+<li><p>Choose features by landuse type</p></li>
+</ol>
+</td>
+<td><p><strong>Vector Analysis for Problem Solving</strong></p>
+<ol class="arabic simple">
+<li><p>GIS Processes</p></li>
+<li><p>Problems</p></li>
+<li><p>Data</p></li>
+<li><p>Starting a project</p></li>
+<li><p>Analysing problems: farms and moors</p></li>
+<li><p>Hazard zone</p></li>
+<li><p>Searching for important roads</p></li>
+<li><p>Searching for health facilities</p></li>
+<li><p>Road Buffer</p></li>
+<li><p>Health Facilities Buffer</p></li>
+<li><p>Overlapped area</p></li>
+<li><p>Choosing farms and moors</p></li>
+<li><p>Choosing land area with right size</p></li>
+</ol>
+</td>
+<td><p>Participants discuss about GIS
+process, problems, and data</p>
+<p>Participants learn and
+practise how to start a project,
+analyse problems, determining hazard
+zone, search for important roads
+and health facilities, buffering, and
+choosing right size for land area</p>
+</td>
+<td><p>210 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 9
+Module 10
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>11. Map Layout with Map Composer (8 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Create maps with the Map Composer</p></td>
+<td><ol class="arabic simple">
+<li><p>Arrange map layout</p></li>
+<li><p>Add a new map</p></li>
+<li><p>Add title to a map</p></li>
+<li><p>Add graphic and numeric scales</p></li>
+<li><p>Add grid to a map</p></li>
+<li><p>Add an inset</p></li>
+<li><p>Customise the content of the legend</p></li>
+<li><p>Export a map to different formats (pdf, jpeg, svg)</p></li>
+</ol>
+</td>
+<td><p><strong>Using Map Composer</strong></p>
+<ol class="arabic simple">
+<li><p>Map Composer</p></li>
+<li><p>Adding new maps</p></li>
+<li><p>Adding a title to the map</p></li>
+<li><p>Adding scale</p></li>
+<li><p>Adding grids</p></li>
+<li><p>Adding inset</p></li>
+<li><p>Adding legend</p></li>
+<li><p>Printing the map</p></li>
+</ol>
+</td>
+<td><p>Participants practise how to lay out
+a map in Map Composer: add a new map,
+add a title, add scale, add a
+grid, add an inset, add a legend, and
+print map</p></td>
+<td><p>4 hours 30 minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 11
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>12. Working with InaSAFE (8 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use InaSAFE</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand the concept of hazard, exposure, and impact data</p></li>
+<li><p>Understand how to determine impact</p></li>
+<li><p>Understand the InaSAFE interface</p></li>
+<li><p>Add hazard data</p></li>
+<li><p>Add unprocessed exposure data (vector and raster)</p></li>
+<li><p>Use the keywords editor</p></li>
+<li><p>Analyse impact</p></li>
+<li><p>Improve InaSAFE output map</p></li>
+<li><p>Save and print scenario results</p></li>
+</ol>
+</td>
+<td><p><strong>Understanding InaSAFE</strong></p>
+<ol class="arabic simple">
+<li><p>Hazard, Exposure, Impact</p></li>
+<li><p>InaSAFE interface</p></li>
+<li><p>Adding hazard data</p></li>
+<li><p>Adding exposure data</p></li>
+<li><p>Adding keyword in metadata</p></li>
+<li><p>Impact analysis</p></li>
+<li><p>Improving InaSAFE maps output</p></li>
+<li><p>Using print button</p></li>
+<li><p>Saving your work</p></li>
+</ol>
+</td>
+<td><p>Participants discuss about hazard,
+exposure, impact and InaSAFE user
+user interface.</p></td>
+<td><p>4 Hours 30 Minutes</p></td>
+<td><p>Test</p>
+<p>Practice</p>
+</td>
+<td><p>Projector
+Slide PP
+Module 12
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>13. Social media to keep QGIS and InaSAFE interaction (1 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Understand how to get support for QGIS and InaSAFE in
+Indonesia</p></td>
+<td><ol class="arabic simple">
+<li><p>Use social media to connect with InaSAFE community</p></li>
+<li><p>Access QGIS tutorial website</p></li>
+</ol>
+</td>
+<td><p><strong>Getting Support</strong></p>
+<ol class="arabic simple">
+<li><p>Facebook</p></li>
+<li><p>QGIS tutorials</p></li>
+</ol>
+</td>
+<td><p>Participants are expected to keep
+up to date with social media through
+Facebook or QGIS forum.</p></td>
+<td><p>60 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 13
+Participant’s Computer</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data collection using OSM Intermediate Level Workshop</strong></p>
+<p><strong>Standard Competency:</strong>
+Quality Assurance in OSM mapping</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+<th class="head"><p>Learning Activity</p></th>
+<th class="head"><p>Time Allocation</p></th>
+<th class="head"><p>Assessment</p></th>
+<th class="head"><p>Learning Sources</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="7"><p><strong>1. Advanced Editing (6 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Apply better digitising technique for improving quality
+of collected data.</p></td>
+<td><ol class="arabic simple">
+<li><p>Use advanced editing tools in JOSM</p></li>
+<li><p>Make relations between objects</p></li>
+</ol>
+</td>
+<td><p><strong>Advanced Editing</strong></p>
+<ol class="arabic simple">
+<li><p>Advanced editing tools</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Default drawing tools</p></li>
+<li><p>Plugins</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Relations</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Editing relations</p></li>
+<li><p>Multipolygons and linestrings</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants practise using
+more editing tools in JOSM and create
+relations between objects</p></td>
+<td><p>4 Hours</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 1</p>
+<p>Participant’s computer</p>
+<p>Exercise file in USB stick</p>
+<p>(tools_menu_sample.osm and
+utilsplugin2_sample.osm)</p>
+</td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>2. Quality Assurance (6 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use JOSM validation tools to ensure the quality of
+map contributions</p></td>
+<td><ol class="arabic simple">
+<li><p>Use validation tools in JOSM</p></li>
+<li><p>Use online validation tools</p></li>
+</ol>
+</td>
+<td><p><strong>Quality Assurance</strong></p>
+<ol class="arabic simple">
+<li><p>Error and warnings</p></li>
+<li><p>Using the validation tool</p></li>
+<li><p>Common validation warnings</p></li>
+<li><p>Using the tasking manager</p></li>
+<li><p>Editing tips</p></li>
+<li><p>Presets standardisation</p></li>
+<li><p>KeepRight</p></li>
+</ol>
+</td>
+<td><p>Participants practise editing
+tips and giving presets based on
+standard to improve the quality
+assurance of OSM data by using
+validation tools in JOSM, and online
+validation tools (KeepRight)</p></td>
+<td><p>4 Hours 15 Minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 2
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>3. Resolving conflicts when uploading OSM data (3 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Resolve conflicts when uploading OSM data</p></td>
+<td><ol class="arabic simple">
+<li><p>Identify conflicts</p></li>
+<li><p>Understand why conflicts occur</p></li>
+<li><p>Solve conflicts</p></li>
+</ol>
+</td>
+<td><p><strong>Dealing with Conflicts</strong></p>
+<ol class="arabic simple">
+<li><p>Conflicts</p></li>
+<li><p>Conflict resolution</p></li>
+<li><p>Ways to avoid conflicts</p></li>
+</ol>
+</td>
+<td><p>Participants discuss how conflicts
+can happen when uploading OSM data</p>
+<p>Participants practise conflict
+resolution and how to avoid conflicts
+when uploading OSM data</p>
+</td>
+<td><p>2 Hours</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 3
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>4. XML and presets in JOSM (5 hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Create presets files in JOSM</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand tags</p></li>
+<li><p>Understand XML</p></li>
+<li><p>Understand keys and values</p></li>
+<li><p>Make presets</p></li>
+<li><p>Put preset files into JOSM</p></li>
+<li><p>Apply new presets to an object</p></li>
+</ol>
+</td>
+<td><p><strong>Creating JOSM File Presets</strong></p>
+<ol class="arabic simple">
+<li><p>Tags and presets</p></li>
+<li><p>Introduction to XML</p></li>
+<li><p>JOSM presets files</p></li>
+</ol>
+</td>
+<td><p>Participants learn from
+facilitator about tags, XML, keys and
+values.</p>
+<p>Participants practise making their
+own preset file, setting up preset
+files in JOSM, and applying a new
+preset to some objects.</p>
+</td>
+<td><p>150 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 4
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>5. Using Private Datastore (3 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Use private data store feature to keep private data</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand the functions of the Separate Data Store (SDS)</p></li>
+<li><p>Understand what data should be kept publicly and what should
+be private</p></li>
+<li><p>Install SDS plugin in JOSM</p></li>
+<li><p>Use SDS presets</p></li>
+<li><p>Use SDS plugin for selecting public and private data</p></li>
+<li><p>Access online datastore</p></li>
+</ol>
+</td>
+<td><p><strong>Using the Separate Data Store</strong></p>
+<ol class="arabic simple">
+<li><p>Installing the SDS plugin</p></li>
+<li><p>Using the plugin</p></li>
+<li><p>How it works</p></li>
+<li><p>Accessing the datastore online</p></li>
+</ol>
+</td>
+<td><p>Participants watch presentation
+from facilitator about private data
+store function and discuss about
+the kind of data that can go public
+and should go private.</p>
+<p>Participants practise installing</p>
+<p>private data store plugin in JOSM and
+how to use the plugin also how the
+plugin works, and accessing the data
+store via web.</p>
+</td>
+<td><p>120 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 5
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>6. OpenStreetMap Wiki (3 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Create and edit pages in OSM wiki</p></td>
+<td><ol class="arabic simple">
+<li><p>Make an account on the OpenStreetMap wiki</p></li>
+<li><p>Understand conventions and rules in developing a wiki page</p></li>
+<li><p>Edit the wiki</p></li>
+<li><p>Upload files and images</p></li>
+<li><p>Translate and revise wiki</p></li>
+</ol>
+</td>
+<td><p><strong>Editing the OpenStreetMap Wiki</strong></p>
+<ol class="arabic simple">
+<li><p>OSM wiki</p></li>
+<li><p>Signing up</p></li>
+<li><p>Editing</p></li>
+<li><p>Wiki formatting</p></li>
+<li><p>Creating a new page</p></li>
+<li><p>Uploading files and images</p></li>
+<li><p>Translating pages</p></li>
+<li><p>Watching pages</p></li>
+</ol>
+</td>
+<td><p>Participants do a FGD about
+OpenStreetMap Wiki.</p>
+<p>Participants practise how to
+create OSM wiki account, edit wiki,
+learning about wiki format, create
+new wiki page, upload images,
+translate pages, and view the
+changelog.</p>
+</td>
+<td><p>2 hours</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 6
+Participant’s Computer</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Data Analysis using QGIS and InaSAFE Intermediate Level Workshop</strong></p>
+<p><strong>Standard Competency:</strong>
+Spatial Data Analysis using QGIS and InaSAFE for Contingency Planning</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+<th class="head"><p>Learning Activity</p></th>
+<th class="head"><p>Time Allocation</p></th>
+<th class="head"><p>Assessment</p></th>
+<th class="head"><p>Learning Sources</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="7"><p><strong>1. QGIS Review (3 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Understand QGIS concepts</p></td>
+<td><ol class="arabic simple">
+<li><p>Identify data types in QGIS</p></li>
+<li><p>Understand symbology</p></li>
+<li><p>Understand map layout</p></li>
+</ol>
+</td>
+<td><p><strong>QGIS Review</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Data types in QGIS</p></li>
+<li><p>Symbolising data</p></li>
+<li><p>Map layout</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants discuss about
+QGIS data type, symbology, and map
+layout.</p></td>
+<td><p>135 minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 1
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>2. Preparing data and keywords for InaSAFE (4 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Prepare data and keywords for InaSAFE</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand InaSAFE inputs</p></li>
+<li><p>Get OSM data from the HOT export server</p></li>
+<li><p>Load data into InaSAFE</p></li>
+<li><p>Add keywords</p></li>
+<li><p>Prepare the hazard layer</p></li>
+<li><p>Run InaSAFE</p></li>
+</ol>
+</td>
+<td><p><strong>Preparing Data and keywords for</strong> InaSAFE</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>InaSAFE inputs</p></li>
+<li><p>Getting OSM data from HOT Exports</p></li>
+<li><p>Loading data</p></li>
+<li><p>Adding keywords</p></li>
+<li><p>Preparing a hazard layer</p></li>
+<li><p>Running InaSAFE</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants watch explanation
+about input data in InaSAFE from
+facilitator</p>
+<p>Participants learn to get
+exposure data from HOT Exports,
+input data, add keywords,
+prepare hazard layer, and run
+InaSAFE</p>
+</td>
+<td><p>180 Minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 2
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>3. Temporary IDP (Internally Displaced Persons) camps planning (4 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Determine temporary IDP camp or evacuation locations</p></td>
+<td><ol class="arabic simple">
+<li><p>Develop criteria for determining an ideal IDP camp
+location</p></li>
+<li><p>Use geoprocessing tools</p></li>
+<li><p>Use various spatial queries: contains, within, equal,
+intersect and is disjoint</p></li>
+<li><p>Combine geoprocessing tools and spatial queries to select
+building(s) for temporary IDP camps</p></li>
+</ol>
+</td>
+<td><p><strong>Determining IDP Camp Location</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Geoprocessing tools</p></li>
+<li><p>Spatial queries</p></li>
+<li><p>IDP camp criteria and data</p></li>
+<li><p>Criteria #1: building must be outside
+affected area</p></li>
+<li><p>Criteria #2: location must have direct access
+to a primary/secondary road within 20 metres</p></li>
+<li><p>Criteria #3: building must have an area of at least
+225 square metres</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants practise QGIS analysis
+to determine temporary IDP camps</p></td>
+<td><p>225 minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 3
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>4. Evacuation route planning (3 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Plan evacuation routes based on hazard information</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand the concept of shortest path and fastest route</p></li>
+<li><p>Use the Road Graph plugin</p></li>
+<li><p>Set up speed and road direction</p></li>
+<li><p>Determine start and destination points</p></li>
+<li><p>Conduct route analysis and selection</p></li>
+</ol>
+</td>
+<td><p><strong>Planning an Evacuation Route</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Road graph plugin</p></li>
+<li><p>Editing plugin settings</p></li>
+<li><p>Choosing start and destination points</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants learn about
+road graph plugin in QGIS.</p>
+<p>Participants practise how to
+set up road graph plugin, and choose
+start and end points</p>
+</td>
+<td><p>225 minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 3
+Participant’s computer</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>5. Damages and losses assessment (4 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Calculate damage and losses</p></td>
+<td><ol class="arabic simple">
+<li><p>Understand the definition of damages, losses and their
+calculation based on community exposure data</p></li>
+<li><p>Understand damage and losses assessment values based
+on BNPB and BPBD</p></li>
+<li><p>Make a damage and losses map</p></li>
+<li><p>Calculate damage area</p></li>
+<li><p>Manipulate attribute data of affected features to obtain
+damage values for each object</p></li>
+<li><p>Manipulate attribute data of affected features to obtain
+loss values for each object</p></li>
+<li><p>Group attribute data for administrative areas (hamlet
+village, subdistrict)</p></li>
+<li><p>Combine attribute data for administrative areas (hamlet
+village, subdistrict)</p></li>
+<li><p>Present damage and loss values using charts</p></li>
+</ol>
+</td>
+<td><p><strong>Calculating Damages and Losses</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>BPBD damage assessment guide</p></li>
+<li><p>Damage and losses assessment map</p></li>
+<li><p>Calculating damage area</p></li>
+<li><p>Calculating damages using the Group Stats plugin</p></li>
+<li><p>Calculating losses</p></li>
+<li><p>Calculating losses using the Group Stats plugin</p></li>
+<li><p>Joining data</p></li>
+<li><p>Creating a chart</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants discuss about
+BPBD’s damage and losses assessment
+guide.</p>
+<p>Participants learn how to
+calculate damage and losses using
+group stat plugin, join data, and
+create a diagram.</p>
+</td>
+<td><p>210 minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 5
+Participant’s computer</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Training of Trainer workshop for contingency planning using OSM, QGIS, and InaSAFE</strong></p>
+<p><strong>Standard Competency:</strong>
+Teaching data collection and analysis with OSM, QGIS and InaSAFE
+in their respective region</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Basic competency</p></th>
+<th class="head"><p>Indicator</p></th>
+<th class="head"><p>Core material</p></th>
+<th class="head"><p>Learning Activity</p></th>
+<th class="head"><p>Time Allocation</p></th>
+<th class="head"><p>Assessment</p></th>
+<th class="head"><p>Learning Sources</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="7"><p><strong>1. Adult Learning (2 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Master how to implement adult learning</p></td>
+<td><ol class="arabic simple">
+<li><p>Explain the principles of adult learning</p></li>
+<li><p>Analysing the characteristics of adult learning</p></li>
+<li><p>Determining strategies, teaching methods or techniques that
+apply adult learning</p></li>
+<li><p>Evaluating adult learning</p></li>
+</ol>
+</td>
+<td><p><strong>Adult Learning</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Principles of adult learning</p></li>
+<li><p>Characteristics of adult learning</p></li>
+<li><p>Strategies, teaching methods or techniques that apply
+adult learning</p></li>
+<li><p>Adult learning evaluation</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><ol class="arabic simple">
+<li><p>Participants learn about
+characteristics and principles of
+adult learning</p></li>
+<li><p>Participants discuss about
+strategy of adult learning</p></li>
+<li><p>Participants discuss in pairs
+about how to evaluate adult
+learning</p></li>
+</ol>
+</td>
+<td><p>90 minutes</p></td>
+<td><p>Test</p></td>
+<td><p>Projector
+Slide PPT
+Module 1
+Plano Paper
+HVS Paper
+Small ball
+Music</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>2. Communication skill (2 Hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Demonstrate basic teaching skills</p></td>
+<td><ol class="arabic simple">
+<li><p>Describe the principles of effective communication</p></li>
+<li><p>Describing the communication models in workshop</p></li>
+<li><p>Demonstrate the basic skills component of teaching / workshop</p></li>
+</ol>
+</td>
+<td><p><strong>Communication skills</strong></p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Principles of effective communication</p></li>
+<li><p>Communication models in workshop</p></li>
+<li><p>Basic teaching skills component</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><ol class="arabic simple">
+<li><p>Participants learn about
+effective communication</p></li>
+<li><p>Participants discuss about
+communication models in the
+workshop setting</p></li>
+</ol>
+</td>
+<td><p>90 minutes</p></td>
+<td><p>Test
+Practice</p></td>
+<td><p>Projector
+Slide PP
+Module 2</p></td>
+</tr>
+<tr class="row-even"><td colspan="7"><p><strong>3. Facilitator skills for data collection and analysis through OSM, QGIS,and</strong> InaSAFE <strong>workshop (2 hours)</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Practise data collection and analysis through OSM, QGIS, and
+InaSAFE workshop</p></td>
+<td><ol class="arabic simple">
+<li><p>Practise data collection and analysis through OSM, QGIS
+and InaSAFE workshop using adult learning</p></li>
+<li><p>Practise communication skills in data collection and
+analysis through OSM, QGIS, and InaSAFE workshop</p></li>
+</ol>
+</td>
+<td><p>** Facilitator Skills for Data Collection and Analysis
+through OSM, QGIS, and InaSAFE workshop</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Implementation of adult learning in data collection and
+analysis through OSM, QGIS, and InaSAFE workshop</p></li>
+<li><p>Implementation of communication skills data collection
+and analysis through OSM, QGIS, and InaSAFE workshop</p></li>
+</ol>
+</div></blockquote>
+</td>
+<td><p>Participants practise their
+facilitating skill for data collection
+and analysis using OSM, QGIS, and
+InaSAFE Workshop</p></td>
+<td><p>90 minutes</p></td>
+<td><p>Practice</p></td>
+<td><p>Projector
+Slide PPT</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>After completing the three trainings, including the Training of Trainers for
+Scenario Development for Contingency Planning using OSM and QGIS/InaSAFE,
+it is expected that workshop organisers from national or
+province/district level can use this document as reference in order to create
+the same output.</p>
+<p>This curriculum is continually augmented and improved through input from
+stakeholders, such as government officials or non-government who are included
+in the working group.</p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="osm-beginner-toolkit.html"
+                   title="Unit 1 Facilitator Guide"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="index.html"
+                   title="Curriculum and Guide for Facilitator"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Run Intermediate InaSAFE &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Other Hazards" href="run_other_hazards.html" />
+    <link rel="prev" title="Run Basic InaSAFE" href="run_basic_inasafe.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/socialisation/run_intermediate_inasafe.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/socialisation/run_intermediate_inasafe.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Socialisation Training Manual</a>
+                </li>
+                
+
+                <li><a href="#">Run Intermediate InaSAFE</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="run_other_hazards.html"
+                   title="Other Hazards"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="run_basic_inasafe.html"
+                   title="Run Basic InaSAFE"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Socialisation Training Manual</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="index.html#project-name-is-funded-by">InaSAFE is funded by:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="index.html#preface">Preface</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="index.html#course-media">Course media</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="objective.html">Course objectives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="introduction.html">Introducing InaSAFE</a></li>
+<li class="toctree-l4"><a class="reference internal" href="inasafe_concepts.html">InaSAFE concepts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="datasets.html">Datasets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="introduction_to_qgis.html">Introduction to QGIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="run_basic_inasafe.html">Run Basic InaSAFE</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Run Intermediate InaSAFE</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#learning-objective">Learning Objective</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#data-for-this-exercise">Data for this exercise</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#exercise">Exercise</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="run_other_hazards.html">Other Hazards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html">Frequently Asked Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../_images/inasafe_logo.png" src="../../_images/inasafe_logo.png" />
+<section id="run-intermediate-project-name">
+<span id="run-intermediate-inasafe"></span><h1>Run Intermediate InaSAFE<a class="headerlink" href="#run-intermediate-project-name" title="Link to this heading">¶</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>In <a class="reference external" href="http://docs.inasafe.org/en/training/socialisation/run_basic_inasafe.html">Run Basic InaSAFE</a> we learned how to run a flood analysis on
+population and buildings, adjust the flood impact default settings and analyse
+impact summary report, and change analysis threshold. We also
+learned how to save our work and generate a pdf of the analysis results.
+In this exercise we will learn more techniques such as how to run
+InaSAFE with aggregation data to produce reports broken down by districts or regions. We
+will also learn how to download data using the OpenStreetMap downloader and
+how to run InaSAFE analysis on the downloaded building polygons and roads.
+Last but not least, we will learn how to define the analysis area.</p>
+</section>
+<section id="learning-objective">
+<h2>Learning Objective<a class="headerlink" href="#learning-objective" title="Link to this heading">¶</a></h2>
+<p>To improve the participant’s understanding of additional InaSAFE function and
+features. By the end of this exercise, participants will be able to:</p>
+<ul class="simple">
+<li><p>Define keywords using the InaSAFE keyword wizard</p></li>
+<li><p>Run InaSAFE with aggregation data</p></li>
+<li><p>Use the OpenStreetMap Downloader to download data for InaSAFE</p></li>
+<li><p>Set the InaSAFE analysis area using the InaSAFE analysis area tool.</p></li>
+</ul>
+</section>
+<section id="data-for-this-exercise">
+<h2>Data for this exercise<a class="headerlink" href="#data-for-this-exercise" title="Link to this heading">¶</a></h2>
+<p>The data for this exercise are available in Run Intermediate InaSAFE.zip which can be downloaded from <a class="reference external" href="http://data.inasafe.org/Socialisation%20Training/">InaSAFE Training Data</a>. We will use
+the following data:</p>
+<ol class="arabic simple">
+<li><p>Jakarta Flood 18113 WGS84</p></li>
+<li><p>Jakarta District Boundary WGS84</p></li>
+<li><p>Jakarta Subdistrict Boundary WGS84</p></li>
+<li><p>Jakarta Population WGS84</p></li>
+</ol>
+</section>
+<section id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Link to this heading">¶</a></h2>
+<section id="running-project-name-for-population-data">
+<h3>1. Running InaSAFE for Population Data<a class="headerlink" href="#running-project-name-for-population-data" title="Link to this heading">¶</a></h3>
+<section id="a-add-and-symbolise-vector-data">
+<h4>A. Add and symbolise vector data<a class="headerlink" href="#a-add-and-symbolise-vector-data" title="Link to this heading">¶</a></h4>
+<p>Click <span class="guilabel">Open</span> and select <code class="file docutils literal notranslate"><span class="pre">DKI</span> <span class="pre">Jakarta</span> <span class="pre">Intermediate.qgs</span></code>.
+There is a notification to save the current project, choose
+whether to save your current work or discard your current work. Once <code class="file docutils literal notranslate"><span class="pre">DKI_Jakarta_Intermediate</span></code> is opened, you will see the following:</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_01.png"><img alt="../../_images/intermediate_inasafe_01.png" class="align-center" src="../../_images/intermediate_inasafe_01.png" style="width: 300pt;" /></a>
+<p>Next, add <code class="file docutils literal notranslate"><span class="pre">Jakarta</span> <span class="pre">Flood</span> <span class="pre">18113</span> <span class="pre">WGS84</span></code> data from <code class="file docutils literal notranslate"><span class="pre">Run</span> <span class="pre">Intermediate</span> <span class="pre">InaSAFE</span> <span class="pre">&gt;</span> <span class="pre">DKI</span> <span class="pre">Jakarta</span> <span class="pre">&gt;</span> <span class="pre">01</span> <span class="pre">Hazard</span> <span class="pre">Data</span></code>. This is the flood hazard data
+for Jakarta from an actual flood event. During Jakarta floods in January
+2013, the provincial disaster manager collected information about the flood,
+including the location of flooded areas by sub-village boundary
+(see more about this data at <a class="reference internal" href="datasets.html#datasets"><span class="std std-ref">Datasets</span></a>.)</p>
+<p>Let us symbolise this layer so that it shows only affected areas (if you
+forget how to symbolise, you can go to <a class="reference internal" href="introduction_to_qgis.html#introduction-to-qgis"><span class="std std-ref">Introduction to QGIS</span></a>.)
+The layer should look like this:</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_02.png"><img alt="../../_images/intermediate_inasafe_02.png" class="align-center" src="../../_images/intermediate_inasafe_02.png" style="width: 300pt;" /></a>
+<p>Using this layer, we will be able to see which area in Jakarta are categorized as
+flooded/affected area by analysing the data using InaSAFE.
+On the InaSAFE Dock, you will notice that the hazard is not
+there and only exposure data (population) is visible, even
+though you already turned ON the data layer.</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_19.png"><img alt="../../_images/intermediate_inasafe_19.png" class="align-center" src="../../_images/intermediate_inasafe_19.png" style="width: 300pt;" /></a>
+<p>Do you know why InaSAFE did not display the Jakarta Flood Vector Hazard data on the dock?
+The answer will be provided in the next section.</p>
+</section>
+<section id="b-define-keyword-for-hazard-data">
+<h4>B. Define keyword for hazard data<a class="headerlink" href="#b-define-keyword-for-hazard-data" title="Link to this heading">¶</a></h4>
+<p>InaSAFE need a keyword to determine what type of data the user
+provide for analysis (hazard data, exposure data or aggregation data).
+If the data provided does not have a keyword, it will show a warning
+message “Layer Keyword Missing” in the InaSAFE Dock. Try selecting <span class="guilabel">Jakarta_Flood_18113_WGS84</span> layer and look at the InaSAFE dock, You will see
+the following:</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_03.png"><img alt="../../_images/intermediate_inasafe_03.png" class="align-center" src="../../_images/intermediate_inasafe_03.png" style="width: 300pt;" /></a>
+<p>As you can see from the picture above, this layer keywords are missing
+and we need to open the keyword wizard to solve this problem. The
+keywords wizard will take you through a step-by-step process of
+assigning keywords to your data.</p>
+<p>Select <strong>Jakarta_Flood_18113_WGS84</strong> layer and click <span class="guilabel">Keyword Creation Wizard</span>.
+A window will appear and follow the steps
+provided by the <span class="guilabel">Keyword Creation Wizard.</span> If you get stuck, you can follow
+the diagram below to understand the steps and the choices you will be
+offered.</p>
+</section>
+<section id="steps-in-the-keyword-creation-wizard">
+<h4>Steps in the Keyword Creation Wizard<a class="headerlink" href="#steps-in-the-keyword-creation-wizard" title="Link to this heading">¶</a></h4>
+<p>Starting at the top of the diagram and working down; in the first step
+you will choose if your data are hazard, exposure or aggregation data.
+Your choice will determine the next options offered.
+You can always go back and change things later.</p>
+<p>If you choose Hazard or Exposure, you will need to select the type of
+hazard or exposure. Next, you will choose whether the layer mode
+is continuous or classified (if you forget what Continuous
+or Classified means, you can reference the <a class="reference external" href="http://docs.inasafe.org/en/training/socialisation/inasafe_concepts.html">Key Concept of Disaster Management
+section</a>).
+Both Hazard and Exposure types have the same step after you define the
+layer mode: defining which unit or attribute
+represents the hazard.</p>
+<p>The steps will be different for aggregation data. After you define the
+data as aggregation data, you will select the attribute to represent
+the names of aggregation areas. After you select it, you will be asked
+to define the population ratio. Finally, you will need to enter the
+source of data and the name of your layer to be displayed in the
+InaSAFE dock.</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_04.png"><img alt="../../_images/intermediate_inasafe_04.png" class="align-center" src="../../_images/intermediate_inasafe_04.png" style="width: 300pt;" /></a>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_05.png"><img alt="../../_images/intermediate_inasafe_05.png" class="align-center" src="../../_images/intermediate_inasafe_05.png" style="width: 300pt;" /></a>
+<p>After you set the keyword using the Keyword Wizard, you can see in the
+InaSAFE panel on the right side that the layer keyword has been set.
+Verify that it looks like the image below? If it does not, you should go back and try to
+define the keyword again.</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_06.png"><img alt="../../_images/intermediate_inasafe_06.png" class="align-center" src="../../_images/intermediate_inasafe_06.png" style="width: 300pt;" /></a>
+<p>After you set the keyword to match the image above, the hazard data will
+appear in the hazard panel of the InaSAFE Dock.</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_07.png"><img alt="../../_images/intermediate_inasafe_07.png" class="align-center" src="../../_images/intermediate_inasafe_07.png" style="width: 300pt;" /></a>
+<p>Now all the keyword data has been set and we can move into the next
+section to run InaSAFE with population data.</p>
+</section>
+<section id="c-run-project-name-for-population-with-aggregation">
+<h4>C. Run InaSAFE for population with aggregation<a class="headerlink" href="#c-run-project-name-for-population-with-aggregation" title="Link to this heading">¶</a></h4>
+<p>We have seen the result of InaSAFE on buildings and populations with
+raster hazard data. Now we will run InaSAFE analysis using
+flood vector hazard data and raster population as exposure data. This time, however, we will use aggregated data. Using InaSAFE with aggregated data will help you to get
+detailed result since the aggregated data can provide detailed
+information on specific administrative (or other) area. InaSAFE allows us to add administrative data with specific boundaries that we can use to aggregate results.</p>
+<p>To do this, look at the Layer List and make sure to turn ON the
+<strong>Jakarta District</strong> layer. Next, take a look at the InaSAFE dock under the heading <em>Summarise the results by</em>.</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_08.png"><img alt="../../_images/intermediate_inasafe_08.png" class="align-center" src="../../_images/intermediate_inasafe_08.png" style="width: 300pt;" /></a>
+<p>Why are we not able to see the <strong>Jakarta District</strong> layer that we just turned ON
+before? Check the layer by selecting it on the Layer List. Did you see
+the keyword? The reason why this layer did not appear in the InaSAFE Dock
+is because it did not have keyword data defube. Go ahead and add a
+keyword for <strong>Jakarta District</strong> using the <span class="guilabel">Keyword Creation Wizard</span>. For
+your reference, refer to the keyword diagram as explained above.</p>
+<p>Now you will able to select <strong>Jakarta District</strong> under ‘Summarise the results by’ in the InaSAFE
+Dock. The InaSAFE Dock should look like this:</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_09.png"><img alt="../../_images/intermediate_inasafe_09.png" class="align-center" src="../../_images/intermediate_inasafe_09.png" style="width: 300pt;" /></a>
+<p>Click <span class="guilabel">Run</span> and wait until InaSAFE finishes analysing the data. A new
+impact layer will be added to the Layer List. When you look at the result,
+it looks the same as InaSAFE analysis result without aggregation, but if
+you scroll down to the bottom you will see the detailed result. As
+explained before, using aggregation will let you get detailed
+information for a specific area or administration region.</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_10.png"><img alt="../../_images/intermediate_inasafe_10.png" class="align-center" src="../../_images/intermediate_inasafe_10.png" style="width: 300pt;" /></a>
+<p>In the screenshot above, we see detailed impact results for each
+district in Jakarta for the detailed minimum needs report. You can also use <em>jakarta subdistrict</em>
+rather than using <em>jakarta_district</em> for aggregation if you want to get more detailed results.
+Try running the analysis again using <em>jakarta subdistrict</em>. The
+aggregation option in InaSAFE can also be applied for buildings and roads (in addition to population).
+In the next exercise, we will learn to run InaSAFE for roads and buildings.</p>
+</section>
+</section>
+<section id="running-project-name-for-roads-and-buildings">
+<h3>2. Running InaSAFE for roads and buildings<a class="headerlink" href="#running-project-name-for-roads-and-buildings" title="Link to this heading">¶</a></h3>
+<section id="a-download-building-polygons-and-roads-with-openstreetmap-downloader">
+<h4>A. Download building polygons and roads with OpenStreetMap Downloader<a class="headerlink" href="#a-download-building-polygons-and-roads-with-openstreetmap-downloader" title="Link to this heading">¶</a></h4>
+<p>We have completed running InaSAFE with population and vector hazard data. Now, we
+will run InaSAFE with different type of vector exposure
+data: roads and buildings polygons. We will obtain these dataset using
+one of InaSAFE features, <span class="guilabel">OpenStreetMap Downloader</span>.
+<span class="guilabel">OpenStreetMap Downloader</span> is a feature that enables downloading OpenStreetMap data
+and directly loading it into QGIS. This feature requires an internet
+connection as it fetches the data via a web service. Once downloaded, the data
+will be available as shapefiles and symbolised neatly (more information
+at <a class="reference external" href="http://docs.inasafe.org/en/user-docs/application-help/openstreetmap_downloader.html">OpenStreetMap Downloader
+page</a>).</p>
+<p>To use this feature for our next exercise, follow these steps:</p>
+<ol class="arabic simple">
+<li><p><span class="guilabel">Zoom in</span> to any flooded area that you prefer.</p></li>
+<li><p>Click the <span class="guilabel">OpenStreetMap Downloader</span> icon.</p></li>
+<li><p>Select <span class="guilabel">Building Polygons</span> and <span class="guilabel">Roads</span> as the feature types to download.</p></li>
+<li><p>Click <span class="guilabel">Drag on Map</span> to select the boundary box from which data will be downloaded.</p></li>
+<li><p>Choose your output directory, where OSM data will be stored. Adding a file name prefix makes it easier to identify the data downloaded.</p></li>
+</ol>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_11.png"><img alt="../../_images/intermediate_inasafe_11.png" class="align-center" src="../../_images/intermediate_inasafe_11.png" style="width: 300pt;" /></a>
+<ol class="arabic simple" start="6">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<p>It may take a while to download all the data in the given area based on
+how big the area is (generally dataset at city level and below should
+work well). After you download the data, a new layer will appear in the
+Layer List. The amount of data available depends on the OpenStreetMap
+data available in the downloaded region. If you want to get more data in
+your area, you can participate in OpenStreetMap and start map the area.</p>
+<p>Since the data already downloaded, we are ready to run InaSAFE analysis.
+But can InaSAFE run the data for only the small part of the whole hazard
+data? We will find the answer in the next section.</p>
+</section>
+<section id="b-define-your-custom-analysis-area">
+<h4>B. Define your custom analysis area<a class="headerlink" href="#b-define-your-custom-analysis-area" title="Link to this heading">¶</a></h4>
+<p>InaSAFE has a feature that allows you specify exactly
+which area should be used for your analysis. If you
+have exposure data that is not the same size, you can use this
+feature to define your own analysis area.</p>
+<ol class="arabic simple">
+<li><p>Click <span class="guilabel">Set Analysis Area</span> to show set analysis extent feature.</p></li>
+<li><p>Select <span class="guilabel">Use intersection of hazard, exposure and this bounding box</span>.</p></li>
+<li><p>Click <span class="guilabel">Drag on Map</span> to draw the bounding box around building polygons
+and roads.</p></li>
+<li><p>Click <span class="guilabel">OK</span></p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>if you click Draw on Map, the window will be temporarily hidden
+so that you can drag a rectangle on the map. After you have finished
+dragging the rectangle, the window will reappear.</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_12.png"><img alt="../../_images/intermediate_inasafe_12.png" class="align-center" src="../../_images/intermediate_inasafe_12.png" style="width: 300pt;" /></a>
+<p>To verify that your analysis area has been successfully defined,
+click <span class="guilabel">Toggle Scenario Outlines</span>. A green box will appear around your data.</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_13.png"><img alt="../../_images/intermediate_inasafe_13.png" class="align-center" src="../../_images/intermediate_inasafe_13.png" style="width: 300pt;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Using Toggle Scenario Outlines help you understand which area that InaSAFE
+will analyse. It is also an important step before running InaSAFE
+analysis because not all of the data you put in the Layer List will be
+automatically defined by InaSAFE.</p>
+</div>
+<p>Take a look at the InaSAFE panel dock to make sure building polygons and
+roads have a keyword defined. If they do not you can define one using <span class="guilabel">InaSAFE Keyword Wizard</span>.
+After the keyword has been already set, we are ready to run InaSAFE for building polygons and roads.</p>
+</section>
+<section id="c-run-project-name-analysis-for-building-polygons">
+<h4>C. Run InaSAFE analysis for building polygons<a class="headerlink" href="#c-run-project-name-analysis-for-building-polygons" title="Link to this heading">¶</a></h4>
+<p>Let us run analysis for building polygons first. Make sure you set the
+InaSAFE dock as pictured below:</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_14.png"><img alt="../../_images/intermediate_inasafe_14.png" class="align-center" src="../../_images/intermediate_inasafe_14.png" style="width: 300pt;" /></a>
+<p>We will run InaSAFE for flood vector hazard and building polygons with data aggregated by Jakarta district
+Click <span class="guilabel">Run</span> to begin InaSAFE analysis. After running, you
+will find the impact result layer in Layer List.</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_15.png"><img alt="../../_images/intermediate_inasafe_15.png" class="align-center" src="../../_images/intermediate_inasafe_15.png" style="width: 300pt;" /></a>
+<p>Look at the <strong>Detailed building type report</strong> (picture above) it shows that
+five districts in Jakarta are affected by flood. Your results may vary
+since it depend on the analysis area selected and
+also the aggregation layer that you used for analysis.</p>
+<p>InaSAFE did not separate the impact result into three categories as in
+the <a class="reference internal" href="run_basic_inasafe.html#run-basic-inasafe"><span class="std std-ref">Run Basic InaSAFE</span></a> because in the
+previous exercise we used raster data containing information of flood depth in each pixel
+yet in this exercise, the hazard data that we use only depicts affected
+areas. Therefore, InaSAFE will calculate how many buildings are inside the affected
+area but not level of impact on each building.</p>
+<p>We just succeeded running InaSAFE on flood vector hazard with building
+polygon. Next, we will run InaSAFE for roads. What are the results
+that you expect to get when you run InaSAFE for roads?</p>
+</section>
+<section id="d-run-project-name-for-roads">
+<h4>D. Run InaSAFE for roads<a class="headerlink" href="#d-run-project-name-for-roads" title="Link to this heading">¶</a></h4>
+<p>In this last exercise, we will run InaSAFE on roads data that we previously downloaded
+from OpenStreetMap. Make sure that you select roads as
+exposure data in the InaSAFE dock, as shown in the screenshot below:</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_16.png"><img alt="../../_images/intermediate_inasafe_16.png" class="align-center" src="../../_images/intermediate_inasafe_16.png" style="width: 300pt;" /></a>
+<p>Click <span class="guilabel">Run</span> to start InaSAFE analysis. A new impact layer will be added
+to your Layer List and in the map canvas you will see green roads as not
+flooded and red as flooded. Select the <strong>Flooded roads</strong> layer to see
+statistics from the InaSAFE analysis.</p>
+<a class="reference internal image-reference" href="../../_images/intermediate_inasafe_17.png"><img alt="../../_images/intermediate_inasafe_17.png" class="align-center" src="../../_images/intermediate_inasafe_17.png" style="width: 300pt;" /></a>
+<p>In this analysis, InaSAFE will generate statistics on how many roads are temporarily closed
+in the affected area and also a breakdown of the result by road type.
+If you are using aggregation, there will be detailed results for each aggregation.
+In the action checklist, you will see several questions
+that can be used for points of discussion related to road impact, and disaster logistics planning,
+for example: <em>Which roads can be used to evacuate people or to distribute logistics?</em></p>
+</section>
+</section>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h2>
+<p>In this exercise, you have learned how to run InaSAFE analysis with
+different hazard data formats and with new type of exposure data. You have also
+learned two fundamental steps to remember before you run InaSAFE:</p>
+<p>First, you learned how to define a keyword for your data so it can be
+analysed with InaSAFE. Without a keyword, InaSAFE will not recognize
+your data, so you need to define it whether the data is hazard, exposure
+or aggregation data. You can set the keyword
+using the <span class="guilabel">Keyword Creation Wizard</span> feature.</p>
+<p>Second, it is important to review the analysis area using <em>Toggle Scenario
+Outline</em> before you run InaSAFE analysis. This is because, InaSAFE sometimes does
+not automatically set the analysis area according to the intersection of hazard
+and exposure data. If InaSAFE did not set the analysis area, you need to
+define it manually using the <span class="guilabel">Set Analysis Area</span> feature.</p>
+<p>In this exercise, you have learned how to download buildings and
+roads data from OpenStreetMap using <span class="guilabel">OpenStreetMap Downloader</span>. With
+this feature you can define the size of the area
+and what type of data you want to download. The availability of the data
+depends on how complete the data are in OpenStreetMap.</p>
+<p>In the next section, you will learn how to run InaSAFE with other type
+of hazard data such as tsunami, earthquake, volcano and generic data.</p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="run_other_hazards.html"
+                   title="Other Hazards"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="run_basic_inasafe.html"
+                   title="Run Basic InaSAFE"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

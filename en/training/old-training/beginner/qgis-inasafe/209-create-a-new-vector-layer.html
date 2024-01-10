@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 9: Creating Vector Layers &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 10: Vector Analysis for Problem Solving" href="210-vector-analysis-for-problem-solving.html" />
+    <link rel="prev" title="Module 8: Working with Raster Data" href="208-working-with-raster-data.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/209-create-a-new-vector-layer.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/209-create-a-new-vector-layer.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 9: Creating Vector Layers</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="210-vector-analysis-for-problem-solving.html"
+                   title="Module 10: Vector Analysis for Problem Solving"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="208-working-with-raster-data.html"
+                   title="Module 8: Working with Raster Data"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="200-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="201-gis-for-developing-contingency-plan.html">Module 1: GIS for Developing Contingency Plan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="202-qgis-and-inasafe-in-contingency-plan.html">Module 2: QGIS and InaSAFE in Contingency Planning</a></li>
+<li class="toctree-l5"><a class="reference internal" href="203-the-basics-of-qgis.html">Module 3: The Basics of QGIS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="204-qgis-plugin.html">Module 4: QGIS Plugins</a></li>
+<li class="toctree-l5"><a class="reference internal" href="205-map-projection-basics.html">Module 5: Map Projection Basics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="206-working-with-vector-data.html">Module 6: Working with Vector Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="207-labels-and-classification.html">Module 7: Labels and Classification</a></li>
+<li class="toctree-l5"><a class="reference internal" href="208-working-with-raster-data.html">Module 8: Working with Raster Data</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 9: Creating Vector Layers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="210-vector-analysis-for-problem-solving.html">Module 10: Vector Analysis for Problem Solving</a></li>
+<li class="toctree-l5"><a class="reference internal" href="211-using-map-composer.html">Module 11: Using Map Composer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="212-understanding-inasafe.html">Module 12: Understanding InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="213-getting-support.html">Module 13: Getting Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image710.png" src="../../../../_images/image710.png" />
+<section id="module-9-creating-vector-layers">
+<span id="create-a-new-vector-layer"></span><h1>Module 9: Creating Vector Layers<a class="headerlink" href="#module-9-creating-vector-layers" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Add a raster layer for digitising</p></li>
+<li><p>Create new vector features (polygons, lines and points)</p></li>
+<li><p>Digitise new vectors  by tracing a raster layer, considering topology</p></li>
+<li><p>Georeference an image</p></li>
+</ul>
+<p>Creating a map using data that already exists is only the beginning.
+We have already learned how to edit and add features to OpenStreetMap using
+JOSM.
+In this module, we will discuss how to edit existing vector layers in QGIS,
+and how to create an entirely new dataset.</p>
+<section id="the-layer-creation-dialog">
+<h2>1. The layer creation dialog<a class="headerlink" href="#the-layer-creation-dialog" title="Link to this heading">¶</a></h2>
+<p>Before you can add new vector data, you need a vector dataset (a layer) to
+add it to.
+In our case, we’ll begin by creating a new data layer,
+and then we’ll add features to it.
+First, we must define our dataset.</p>
+<ol class="arabic simple">
+<li><p>Create a new project in QGIS by clicking on the
+<span class="guilabel">New Project</span> icon.</p></li>
+</ol>
+<img alt="../../../../_images/image172.png" class="align-center" src="../../../../_images/image172.png" />
+<ol class="arabic simple" start="2">
+<li><p>Go to <span class="menuselection">Layer ‣ Create Layer ‣ New Shapefile Layer</span>.
+You’ll be presented with the following dialog:</p></li>
+</ol>
+<img alt="../../../../_images/image173.png" class="align-center" src="../../../../_images/image173.png" />
+<p>At this point we must decide what kind of dataset we want to create.
+Remember that a data layer can only contain features of points, lines
+or polygons - never a mix.
+When we create the layer, we must define
+what type of data it will contain.</p>
+<p>Since polygons are made up of points and lines, let’s jump into polygons.
+Once you’ve mastered this, creating a point or a line layer should be easy!</p>
+<ol class="arabic simple" start="3">
+<li><p>Check the box next to <span class="guilabel">Polygon</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image174.png" class="align-center" src="../../../../_images/image174.png" />
+<ol class="arabic simple" start="4">
+<li><p>We’ll specify the Coordinate Reference System (CRS) in the next box.
+By default the box will contain the CRS of the project, which for us will
+be WGS84.
+This is a widely used and very useful CRS, so let’s stick with it!</p></li>
+</ol>
+<img alt="../../../../_images/image175.png" class="align-center" src="../../../../_images/image175.png" />
+<ol class="arabic simple" start="5">
+<li><p>When we create our new layer, the attribute table will only have one
+column by default - <strong>id</strong>.
+This attribute contains a unique id number for every feature.
+We can add additional fields to the attribute table now,
+when we create the layer.
+Let’s add a name field.</p></li>
+<li><p>Type <kbd class="kbd docutils literal notranslate">nama</kbd> into the box next to Name.
+The settings should match those shown here:</p></li>
+</ol>
+<img alt="../../../../_images/image176.png" class="align-center" src="../../../../_images/image176.png" />
+<ol class="arabic simple" start="7">
+<li><p>Click the <span class="guilabel">Add to attributes list</span> button.</p></li>
+</ol>
+<p>Your attributes list should now look like this.</p>
+<img alt="../../../../_images/image177.png" class="align-center" src="../../../../_images/image177.png" />
+<ol class="arabic simple" start="8">
+<li><p>Click <span class="guilabel">OK</span>.
+A save dialog will appear.</p></li>
+<li><p>Navigate to a directory of your choosing.</p></li>
+<li><p>Save the new layer as <kbd class="kbd docutils literal notranslate">gedung_kampus.shp</kbd>.</p></li>
+</ol>
+<p>The new layer should appear in your Layers panel.</p>
+</section>
+<section id="data-sources">
+<h2>2. Data sources<a class="headerlink" href="#data-sources" title="Link to this heading">¶</a></h2>
+<p>When you create new data, it should represent objects that really
+exist on the ground.
+We have already learned of numerous ways to collect data using OSM
+tools.
+We learned about GPS to record locations, Field Papers and of course,
+aerial imagery.
+These are all tools that we can use to identify real-life locations and
+record them in a digital data layer.</p>
+<p>In QGIS, we can use the same types of sources to get information about the
+ground.
+In this example, we will once again turn to aerial imagery,
+but instead of using Bing, we will use a raster image provided in the
+tutorial directory.</p>
+<ol class="arabic simple" start="11">
+<li><p>Click on the <span class="guilabel">Add Raster Layer</span> button:</p></li>
+</ol>
+<img alt="../../../../_images/image147.png" class="align-center" src="../../../../_images/image147.png" />
+<ol class="arabic simple" start="12">
+<li><p>Navigate to <code class="file docutils literal notranslate"><span class="pre">/qgis/Sleman/</span></code>.</p></li>
+<li><p>Select the file <code class="file docutils literal notranslate"><span class="pre">UGM.tif</span></code>.</p></li>
+<li><p>Click <span class="guilabel">Open</span>.
+An image will load into your map.</p></li>
+<li><p>Find the new entry in the Layers panel.</p></li>
+<li><p>Drag it to the bottom of the list so that it is below
+the vector layer you created in the previous section.</p></li>
+</ol>
+<img alt="../../../../_images/image178.png" class="align-center" src="../../../../_images/image178.png" />
+<ol class="arabic simple" start="17">
+<li><p>Go to <span class="menuselection">Project ‣ Project Properties</span> and enable
+‘on the fly’ transformation.</p></li>
+<li><p>Make sure that “WGS 84” is selected as the CRS, and click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image179.png" class="align-center" src="../../../../_images/image179.png" />
+<ol class="arabic simple" start="19">
+<li><p>Right-click on the <span class="guilabel">UGM</span> layer and click
+<span class="guilabel">Zoom to Layer</span>.</p></li>
+<li><p>Zoom in to the centre of the raster image.
+We will be digitising three areas:</p></li>
+</ol>
+<img alt="../../../../_images/image180.png" class="align-center" src="../../../../_images/image180.png" />
+</section>
+<section id="digitising">
+<h2>3. Digitising<a class="headerlink" href="#digitising" title="Link to this heading">¶</a></h2>
+<p>Digitising, as you might have guessed, is the art (or science) of creating
+digital vector data from another source, such as a raster image.
+In order to begin digitising, we must first enter edit mode.
+GIS software commonly requires a separate mode for editing,
+to prevent users from accidentally editing or deleting important data.
+Edit mode is switched on or off individually for each layer.</p>
+<p>Let’s enter edit mode for the <span class="guilabel">gedung_kampus</span> layer:</p>
+<ol class="arabic simple" start="21">
+<li><p>Select <span class="guilabel">gedung_kampus</span> in the Layers panel.</p></li>
+<li><p>Click on the <span class="guilabel">Toggle Editing</span> button:</p></li>
+</ol>
+<img alt="../../../../_images/image351.png" class="align-center" src="../../../../_images/image351.png" />
+<ol class="arabic simple" start="23">
+<li><p>If you can’t find this button, ensure that the Digitising toolbar is
+enabled.
+There should be a check mark next to the
+<span class="menuselection">View ‣ Toolbars ‣ Digitizing</span> menu entry.</p></li>
+<li><p>Once you are in edit mode, the digitising tools will become active:</p></li>
+</ol>
+<img alt="../../../../_images/image1811.png" class="align-center" src="../../../../_images/image1811.png" />
+<p>From left to right on the image above, they are:</p>
+<ul class="simple">
+<li><p><strong>Toggle Editing</strong>: activates / deactivates edit mode.</p></li>
+<li><p><strong>Save Layer Edits</strong>: saves changes made to the layer.</p></li>
+<li><p><strong>Add Feature</strong>: start digitising a new feature.</p></li>
+<li><p><strong>Move Feature(s)</strong>: move an entire feature around.</p></li>
+<li><p><strong>Node Tool</strong>: move only one part of a feature.</p></li>
+<li><p><strong>Delete Selected</strong>: delete the selected feature (only active if a feature is
+selected).</p></li>
+<li><p><strong>Cut Features</strong>: cut the selected feature (only active if a feature is
+selected).</p></li>
+<li><p><strong>Copy Features</strong>: copy the selected feature (only active if a feature is
+selected).</p></li>
+<li><p><strong>Paste Features</strong>: paste a cut or copied feature back into the map (only
+active if a feature has been cut or copied).</p></li>
+</ul>
+<p>We want to add a new feature.</p>
+<ol class="arabic simple" start="25">
+<li><p>Click on the <span class="guilabel">Add Feature</span> button to start digitising:</p></li>
+</ol>
+<img alt="../../../../_images/image182.png" class="align-center" src="../../../../_images/image182.png" />
+<p>You’ll notice that your mouse cursor becomes a crosshair.
+This allows you to more accurately place the points you’ll be digitising.
+Remember that even as you’re using the digitising tool,
+you can zoom in and out on your map by rolling the mouse wheel,
+and you can pan around by holding down the mouse wheel and dragging around
+in the map.</p>
+<p>The first feature you’ll digitise is a field (called “GSP Field”):</p>
+<img alt="../../../../_images/image183.png" class="align-center" src="../../../../_images/image183.png" />
+<ol class="arabic simple" start="26">
+<li><p>Start by clicking on a point somewhere along the edge of the field.</p></li>
+<li><p>Place more points by clicking further along the edge,
+until the shape you’re drawing completely covers the field.
+This is very similar to drawing a polygon in JOSM.</p></li>
+<li><p>To place the last point, right-click where you want it to be.
+This will finalise the feature and bring up the Attributes dialog.</p></li>
+<li><p>Fill in the values as shown here:</p></li>
+</ol>
+<img alt="../../../../_images/image184.png" class="align-center" src="../../../../_images/image184.png" />
+<ol class="arabic simple" start="30">
+<li><p>Click <span class="guilabel">OK</span>. You’ve created a new feature!</p></li>
+</ol>
+<p>If you make a mistake while digitising a feature,
+you can always edit it later.
+Simply finish digitising the feature and then follow these steps:</p>
+<ul class="simple">
+<li><p>Select the feature with the <span class="guilabel">Select Feature</span> tool:</p></li>
+</ul>
+<img alt="../../../../_images/image185.png" class="align-center" src="../../../../_images/image185.png" />
+<ul class="simple">
+<li><p>Then use one of these tools to edit the feature:</p></li>
+</ul>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><img alt="../../../../_images/image186.png" src="../../../../_images/image186.png" />
+</td>
+<td><p>Move feature(s) tools</p></td>
+<td><p>Move the entire feature(s)</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../../../../_images/image187.png" src="../../../../_images/image187.png" />
+</td>
+<td><p>Node tools</p></td>
+<td><p>move only one point where you may have misclicked</p></td>
+</tr>
+<tr class="row-odd"><td><img alt="../../../../_images/image188.png" src="../../../../_images/image188.png" />
+</td>
+<td><p>Delete selected</p></td>
+<td><p>get rid of the feature entirely so you can try again</p></td>
+</tr>
+<tr class="row-even"><td><p>Go to Edit ‣ Undo or press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">Z</kbd></kbd> on keyboard</p></td>
+<td><p>Undo mistakes</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Now try it on your own:</p>
+<ol class="arabic simple" start="31">
+<li><p>Digitise the school itself and the upper field.
+Use this image to assist you:</p></li>
+</ol>
+<img alt="../../../../_images/image189.png" class="align-center" src="../../../../_images/image189.png" />
+<ol class="arabic simple" start="32">
+<li><p>Remember that each new feature needs to have a unique id value!</p></li>
+</ol>
+<p>When you are finished adding features to a layer, you must save the changes
+to that layer.</p>
+<ol class="arabic simple" start="33">
+<li><p>Click on the <span class="guilabel">Toggle Editing</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image351.png" class="align-center" src="../../../../_images/image351.png" />
+<ol class="arabic simple" start="34">
+<li><p>You will be asked to save your edits.
+Click <span class="guilabel">Save</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image190.png" class="align-center" src="../../../../_images/image190.png" />
+<p>Now you know how to create polygon features!
+Creating points and line layers is just as easy - you simply need to
+define the type of layer when you create it, and of course you can only
+create points in point layers and lines in line layers.</p>
+</section>
+<section id="georeferencing">
+<h2>4. Georeferencing<a class="headerlink" href="#georeferencing" title="Link to this heading">¶</a></h2>
+<p>In the previous section we digitised a raster image, thus creating vector
+data.
+This is essentially the same process as when we use Bing imagery in JOSM to
+add to OSM.
+In both of these cases, the imagery that we use is already
+<strong>georeferenced</strong> - that is, it is correctly placed in its proper location.</p>
+<p>When an image is georeferenced, it is stretched in different ways so that
+each pixel in the image corresponds as closely as possible to the area it
+represents on the spherical Earth.
+Because it is difficult to perfectly align a flat image on a round object,
+there are often small georeferencing errors, as we learned previously with
+imagery offset.</p>
+<p>What if you have a map that is not georeferenced?
+What if you have a paper map given to you by a government agency?
+How can you digitise it?</p>
+<p>The first step is to turn your paper map into a digital image that you can
+manipulate with your computer.
+You can do this with a scanner (or possibly a digital camera),
+although doing so is beyond the scope of this module.</p>
+<section id="georeferencing-an-image">
+<h3>4.1 Georeferencing an image<a class="headerlink" href="#georeferencing-an-image" title="Link to this heading">¶</a></h3>
+<p>Now we will learn how to georeference an image in QGIS so that is correctly
+located on Earth.
+We will be using a map provided in the tutorial files, which looks like this:</p>
+<img alt="../../../../_images/image191.jpg" class="align-center" src="../../../../_images/image191.jpg" />
+<ol class="arabic simple" start="35">
+<li><p>Start a new QGIS project.
+Save your previous work if you like.</p></li>
+<li><p>Go to <span class="menuselection">Raster ‣ Georeferencer ‣ Georeferencer</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image192.png" class="align-center" src="../../../../_images/image192.png" />
+<ol class="arabic simple" start="37">
+<li><p>Click the <span class="guilabel">Open raster</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image193.png" class="align-center" src="../../../../_images/image193.png" />
+<ol class="arabic simple" start="38">
+<li><p>Find the file <code class="file docutils literal notranslate"><span class="pre">peta_krb_merapi_2002.jpg</span></code>, which is located in the the
+<code class="file docutils literal notranslate"><span class="pre">qgis/Sleman/Merapi/</span></code> folder. Click <span class="guilabel">Open</span>.</p></li>
+<li><p>Select <span class="guilabel">WGS 84</span> when prompted and click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image194.png" class="align-center" src="../../../../_images/image194.png" />
+<p>In order to georeference this image, we need to associate points on the
+image, to known points on the Earth.
+Such points are called ground control points (GCPs).
+Luckily, this map image has latitude and longitude coordinates written on it
+at every corner.
+So, to georeference this image, we will create four GCPs,
+one at each corner of the map, and we will turn our jpeg file into a geotiff,
+a georeferenced image.</p>
+<ol class="arabic simple" start="40">
+<li><p>Zoom in to the upper left corner of the map.</p></li>
+</ol>
+<img alt="../../../../_images/image195.png" class="align-center" src="../../../../_images/image195.png" />
+<ol class="arabic simple" start="41">
+<li><p>Click the <span class="guilabel">Add point</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image196.png" class="align-center" src="../../../../_images/image196.png" />
+<ol class="arabic simple" start="42">
+<li><p>Click on the very top left point of the map, right where the
+top border of the map meets the left border.</p></li>
+<li><p>A box will pop up requesting the x and y coordinates of the point you just
+clicked.
+The coordinates are written in blue on the map.
+The longitude (x coordinate) is 110° 15’ 00” E and the latitude (y
+coordinate) is 7° 29’ 47” S.
+We can enter the coordinates in the box as follows.
+Remember that south and west coordinates will be negative numbers.</p></li>
+</ol>
+<img alt="../../../../_images/image197.png" class="align-center" src="../../../../_images/image197.png" />
+<ol class="arabic simple" start="44">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+<li><p>You will see a red point appear showing the location of your control
+point, and an entry in the table at the bottom.</p></li>
+<li><p>Repeat this process, creating ground control points at each of the four
+corners of the map.
+Remember to enter the longitude and latitude that is written at each corner.
+When you are finished, you should have four GCPs and your table will look
+like this:</p></li>
+</ol>
+<img alt="../../../../_images/image198.png" class="align-center" src="../../../../_images/image198.png" />
+<p>Lastly we will adjust the settings and then create our output file.</p>
+<ol class="arabic simple" start="47">
+<li><p>Click on the <span class="guilabel">Transformation settings</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image199.png" class="align-center" src="../../../../_images/image199.png" />
+<ol class="arabic simple" start="48">
+<li><p>Next to <span class="guilabel">Transformation type</span> select <span class="guilabel">Linear</span>.</p></li>
+<li><p>Provide a filename for the output raster.
+The file type will be <code class="file docutils literal notranslate"><span class="pre">.tif</span></code>.</p></li>
+<li><p>Check the box next to <span class="guilabel">Load in QGIS when done</span>.
+It should look like this:</p></li>
+</ol>
+<img alt="../../../../_images/image200.png" class="align-center" src="../../../../_images/image200.png" />
+<ol class="arabic simple" start="51">
+<li><p>Click <span class="guilabel">OK</span> and look at the table.</p></li>
+</ol>
+<img alt="../../../../_images/image2011.png" class="align-center" src="../../../../_images/image2011.png" />
+<ol class="arabic simple" start="52">
+<li><p>Make sure the residual value is near zero to improve accuracy.</p></li>
+<li><p>Now we are ready to produce the georeferenced image file.
+Click on the <span class="guilabel">Start georeferencing</span> button.</p></li>
+</ol>
+<img alt="../../../../_images/image202.png" class="align-center" src="../../../../_images/image202.png" />
+<ol class="arabic simple" start="54">
+<li><p>If you are asked to select the layer’s coordinate system,
+choose <span class="guilabel">WGS 84</span>.</p></li>
+<li><p>Go to <span class="menuselection">Project ‣ Project Properties</span> and make sure
+that on the fly transformation is enabled.</p></li>
+</ol>
+<img alt="../../../../_images/image203.png" class="align-center" src="../../../../_images/image203.png" />
+<ol class="arabic simple" start="56">
+<li><p>The output file will be created and automatically added to
+your project.
+If you hover over the image, you should see coordinates at the bottom of
+QGIS, which are close to the coordinates you entered when placing the GCPs.</p></li>
+</ol>
+<img alt="../../../../_images/image204.png" class="align-center" src="../../../../_images/image204.png" />
+<p>Another way to see that the image is correctly placed, is by adding a layer
+with the OpenLayers plugin.
+Here we have added Bing satellite imagery, and made our new geotiff
+transparent to see Merapi in the background.</p>
+<img alt="../../../../_images/image205.png" class="align-center" src="../../../../_images/image205.png" />
+<p>Knowing how to georeference is important when you want to digitise from a
+paper map or an image that is not already georeferenced.
+Once you have georeferenced an image like this, you can apply the same
+digitisation techniques that we learned previously in this module to create
+vector shapefiles that can be used in QGIS and InaSAFE.</p>
+<p><a class="reference internal" href="210-vector-analysis-for-problem-solving.html#vector-analysis-for-problem-solving"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="210-vector-analysis-for-problem-solving.html"
+                   title="Module 10: Vector Analysis for Problem Solving"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="208-working-with-raster-data.html"
+                   title="Module 8: Working with Raster Data"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Module 5: Map Projection Basics &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/custom-jquery.js"></script>
+    <script src="../../../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Module 6: Working with Vector Data" href="206-working-with-vector-data.html" />
+    <link rel="prev" title="Module 4: QGIS Plugins" href="204-qgis-plugin.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/205-map-projection-basics.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/old-training/beginner/qgis-inasafe/205-map-projection-basics.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../../index.html"
+                       style="z-index: 1;" 
+                    >
+                    OSM &amp; QGIS (Old Training Materials)</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Beginner Training Module</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a>
+                </li>
+                
+
+                <li><a href="#">Module 5: Map Projection Basics</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="206-working-with-vector-data.html"
+                   title="Module 6: Working with Vector Data"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="204-qgis-plugin.html"
+                   title="Module 4: QGIS Plugins"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../curriculum/index.html">Curriculum and Guide for Facilitator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">OSM &amp; QGIS (Old Training Materials)</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="../index.html">Beginner Training Module</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../osm/index.html">Unit 1: Data Collection Using OpenStreetMap Beginner Level</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="index.html">Unit 2: Data Analysis Using QGIS and InaSAFE Beginner Level</a><ul class="current">
+<li class="toctree-l5"><a class="reference internal" href="200-introduction.html">Introduction</a></li>
+<li class="toctree-l5"><a class="reference internal" href="201-gis-for-developing-contingency-plan.html">Module 1: GIS for Developing Contingency Plan</a></li>
+<li class="toctree-l5"><a class="reference internal" href="202-qgis-and-inasafe-in-contingency-plan.html">Module 2: QGIS and InaSAFE in Contingency Planning</a></li>
+<li class="toctree-l5"><a class="reference internal" href="203-the-basics-of-qgis.html">Module 3: The Basics of QGIS</a></li>
+<li class="toctree-l5"><a class="reference internal" href="204-qgis-plugin.html">Module 4: QGIS Plugins</a></li>
+<li class="toctree-l5 current"><a class="current reference internal" href="#">Module 5: Map Projection Basics</a></li>
+<li class="toctree-l5"><a class="reference internal" href="206-working-with-vector-data.html">Module 6: Working with Vector Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="207-labels-and-classification.html">Module 7: Labels and Classification</a></li>
+<li class="toctree-l5"><a class="reference internal" href="208-working-with-raster-data.html">Module 8: Working with Raster Data</a></li>
+<li class="toctree-l5"><a class="reference internal" href="209-create-a-new-vector-layer.html">Module 9: Creating Vector Layers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="210-vector-analysis-for-problem-solving.html">Module 10: Vector Analysis for Problem Solving</a></li>
+<li class="toctree-l5"><a class="reference internal" href="211-using-map-composer.html">Module 11: Using Map Composer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="212-understanding-inasafe.html">Module 12: Understanding InaSAFE</a></li>
+<li class="toctree-l5"><a class="reference internal" href="213-getting-support.html">Module 13: Getting Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intermediate/index.html">Intermediate Training Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <img alt="../../../../_images/image710.png" src="../../../../_images/image710.png" />
+<section id="module-5-map-projection-basics">
+<span id="map-projection-basics"></span><h1>Module 5: Map Projection Basics<a class="headerlink" href="#module-5-map-projection-basics" title="Link to this heading">¶</a></h1>
+<p><strong>Learning Objectives</strong></p>
+<ul class="simple">
+<li><p>Understand Coordinate Reference Systems (CRS)</p></li>
+<li><p>Identify the CRS of a vector dataset</p></li>
+<li><p>Do ‘on the fly’ reprojection</p></li>
+<li><p>Save dataset with a different CRS</p></li>
+<li><p>Create a custom projection</p></li>
+</ul>
+<p>We’ve talked a little bit about Coordinate Reference Systems (CRSs) previously,
+but haven’t covered it in depth.
+In this module, we’ll look more at what a CRS means practically,
+and how it affects our work in QGIS.</p>
+<section id="coordinate-reference-systems-crs">
+<h2>1. Coordinate Reference Systems (CRS)<a class="headerlink" href="#coordinate-reference-systems-crs" title="Link to this heading">¶</a></h2>
+<p>The CRS that all the data, as well as the map itself are in right now is called
+WGS84.
+This is a very common Geographic Coordinate System (GCS) for representing
+data.
+But there’s a problem, as we will see.</p>
+<ol class="arabic simple">
+<li><p>Open the project <code class="file docutils literal notranslate"><span class="pre">world.qgs</span></code>, located in the <code class="file docutils literal notranslate"><span class="pre">qgis/</span></code> folder.
+Zoom in to Indonesia by using the <span class="guilabel">Zoom In</span> tool.</p></li>
+</ol>
+<img alt="../../../../_images/image371.png" class="align-center" src="../../../../_images/image371.png" />
+<ol class="arabic simple" start="2">
+<li><p>Set the scale in the <span class="guilabel">Scale</span> field, which is in the status bar
+along the bottom of the screen. While over Indonesia, set this value
+to 1:20000000 (one to twenty million).</p></li>
+</ol>
+<img alt="../../../../_images/image601.png" class="align-center" src="../../../../_images/image601.png" />
+<ol class="arabic simple" start="3">
+<li><p>Now pan around the map while keeping an eye on the Scale field.</p></li>
+</ol>
+<p>Do you notice the scale changing?
+This is because you’re moving away from the one point that you zoomed into at
+1:20000000, which was at the centre of your screen.
+All around that point, the scale is different.</p>
+<p>To understand why, think about a globe of the Earth.
+It has lines running vertically along it from North to South.
+These longitude lines are far apart at the equator, but they meet at the
+poles.
+In a GCS, you’re working on this sphere, but your screen is flat.
+When you try to represent the sphere of the earth on a flat surface,
+it becomes distorted, as if you took an orange peel and tried to flatten it.
+What this means on a map is that the longitude lines stay equally far apart
+from each other, even at the poles (where they are supposed to meet).
+This means that, as you travel away from the equator on your map,
+the scale of the objects that you see gets larger and larger.
+What this means for us, practically, is that there is no constant scale on
+our map!</p>
+<p>To solve this, we’ll use a Projected Coordinate System (PCS) instead.
+A PCS projects or converts the data in a way that makes allowance for the
+scale change and corrects it.
+Therefore, to keep the scale constant, we should re-project our data to use a
+PCS.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Projection is the act of taking coordinates on a sphere (like the
+earth), and manipulating them so that they can be displayed on a flat
+surface.</p>
+</div>
+</section>
+<section id="on-the-fly-reprojection">
+<h2>2. “On the fly” reprojection<a class="headerlink" href="#on-the-fly-reprojection" title="Link to this heading">¶</a></h2>
+<p>Every QGIS project has a CRS, and each of the data layers has a CRS too.
+Often these are the same.
+Your project may be in WGS84, and the layers too.
+But sometimes you will add a layer that is not in the same CRS as the
+project, and you need QGIS to convert it so that it can be displayed along
+with the rest of the data.
+The term that we use for this is reprojecting ‘on the fly’.</p>
+<ol class="arabic simple" start="4">
+<li><p>To enable ‘on the fly’ projection, click on the <span class="guilabel">CRS Status</span> button
+in the status bar along the bottom of the QGIS window:</p></li>
+</ol>
+<img alt="../../../../_images/image611.png" class="align-center" src="../../../../_images/image611.png" />
+<ol class="arabic simple" start="5">
+<li><p>In the dialog that appears, check the box next to
+<span class="guilabel">Enable ‘on the fly’ CRS transformation</span>.</p></li>
+</ol>
+<img alt="../../../../_images/image621.png" class="align-center" src="../../../../_images/image621.png" />
+<ol class="arabic simple" start="6">
+<li><p>Type <kbd class="kbd docutils literal notranslate">NSIDC</kbd> into the Filter field. One CRS
+(“NSIDC EASE-Grid Global”) will appear in the list below.</p></li>
+</ol>
+<img alt="../../../../_images/image631.png" class="align-center" src="../../../../_images/image631.png" />
+<ol class="arabic simple" start="7">
+<li><p>Click on it to select it, and then click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<p>Notice how the shape of Indonesia changes.
+All projections work by changing the apparent shapes of objects on Earth.</p>
+<ol class="arabic simple" start="8">
+<li><p>Zoom in to a scale of 1:20000000 again, as before.</p></li>
+<li><p>Pan around the map.</p></li>
+</ol>
+<p>Notice that the scale stays the same! ‘On the fly’ reprojection is useful
+for combining datasets that are in different CRSes.</p>
+<ol class="arabic simple" start="10">
+<li><p>Deactivate ‘on the fly’ reprojection again, by unchecking the box
+next to <span class="guilabel">Enable ‘on the fly’ CRS transformation</span>.</p></li>
+<li><p>Load the vector layer <code class="file docutils literal notranslate"><span class="pre">Indonesia.shp</span></code> located in
+<code class="file docutils literal notranslate"><span class="pre">qgis/peta_dunia/</span></code>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may need to unzip <code class="file docutils literal notranslate"><span class="pre">peta_dunia.zip</span></code> first in order
+to open the shapefile.</p>
+</div>
+<p>What do you notice?
+The layer is not visible!
+But that’s easy to fix, right?</p>
+<ol class="arabic simple" start="12">
+<li><p>Right-click on the new layer in the Layers panel.</p></li>
+<li><p>Click <span class="guilabel">Zoom to Layer Extent</span>.</p></li>
+</ol>
+<p>OK, so now we see Indonesia… but where is the rest of the world?</p>
+<p>It turns out that we can zoom between these two layers, but we can’t ever see
+them at the same time.
+That is because their Coordinate Reference Systems are so different.
+The continents layer is in degrees, but the Indonesia layer is in
+metres.
+In other words, one feature in the continents layer might be 8.5 degrees away
+from the equator, but the same feature in the Indonesia layer might be 900000
+metres away from the equator.</p>
+<p>8.5 degrees and 900000 metres is about the same distance,
+but QGIS does not know that!
+One of our layers must be reprojected to match the other layer.
+To correct this, again enable tranformation:</p>
+<ol class="arabic simple" start="14">
+<li><p>Activate <span class="guilabel">Enable ‘on the fly’ CRS transformation</span> as before.</p></li>
+<li><p>Again click <span class="guilabel">Zoom to Layer extent</span> on the Indonesia dataset.</p></li>
+</ol>
+<p>Now, because they’re made to project in the same CRS, the two datasets fit
+perfectly:</p>
+<img alt="../../../../_images/image641.png" class="align-center" src="../../../../_images/image641.png" />
+<p>When combining data from different sources, it’s important to remember that they
+might not be in the same CRS.
+‘On the fly’ reprojection helps you to display them together.</p>
+</section>
+<section id="datasets-with-different-crses">
+<h2>3. Datasets with different CRSes<a class="headerlink" href="#datasets-with-different-crses" title="Link to this heading">¶</a></h2>
+<p>It’s great that QGIS can reproject layers on the fly so that we can work with
+them in the same project.
+But this requires more time for our computer to reproject the layers,
+and can slow down our work.
+For this, or for other reasons, we might want to be able to reproject a
+dataset one time, and save it with the new projection.</p>
+<p>Let’s reproject the Indonesia layer so that it is in the same CRS as the
+project.
+To do this, we will need to export the data to a new file using a new
+projection.</p>
+<ol class="arabic simple" start="16">
+<li><p>Right-click on the <span class="guilabel">Indonesia</span> layer in the Layers panel.</p></li>
+<li><p>Select <span class="guilabel">Save As…</span> in the menu that appears.
+You will be shown the <span class="guilabel">Save vector layer as…</span> dialog.</p></li>
+<li><p>Click the <span class="guilabel">Browse</span> button next to the <span class="guilabel">Save as</span> field.</p></li>
+<li><p>Navigate to <code class="file docutils literal notranslate"><span class="pre">qgis/peta_dunia/</span></code> and specify the name of the new layer as
+<kbd class="kbd docutils literal notranslate">Indonesia_terproyeksi.shp</kbd>.</p></li>
+<li><p>Leave the encoding unchanged.</p></li>
+<li><p>Change the value of the CRS in drop-down box to <span class="guilabel">Project CRS</span>.</p></li>
+<li><p>Check the box next to <span class="guilabel">Add saved file to map</span>.</p></li>
+<li><p>The <span class="guilabel">Save vector layer as…</span> dialog now looks like this:</p></li>
+</ol>
+<img alt="../../../../_images/image65.png" class="align-center" src="../../../../_images/image65.png" />
+<ol class="arabic simple" start="24">
+<li><p>Click <span class="guilabel">OK</span> and after a minute, above your map extent you should be presented with:</p></li>
+</ol>
+<img alt="../../../../_images/image65a.png" class="align-center" src="../../../../_images/image65a.png" />
+<ol class="arabic simple" start="25">
+<li><p>Wait until the notification disappear.</p></li>
+</ol>
+<p>Now your new layer, <span class="guilabel">Indonesia_terproyeksi</span>, will be shown in the
+layers panel. If you turn off ‘on the fly’ reprojection, this layer will still
+be shown correctly, because it has been reprojected into the same CRS as the
+project (and the continents layer).</p>
+</section>
+<section id="creating-a-custom-projection">
+<h2>4. Creating a custom projection<a class="headerlink" href="#creating-a-custom-projection" title="Link to this heading">¶</a></h2>
+<p>There are many more projections than just those included in QGIS by default.
+You can even create your own projections.
+Let’s see how this works.</p>
+<ol class="arabic simple" start="26">
+<li><p>Start a new project.</p></li>
+<li><p>Load the vector layer <code class="file docutils literal notranslate"><span class="pre">oceans.shp</span></code> located
+in <code class="file docutils literal notranslate"><span class="pre">qgis/peta_dunia/</span></code>.</p></li>
+<li><p>Go to <span class="menuselection">Settings ‣ Custom CRS…</span> and you’ll see this dialog:</p></li>
+</ol>
+<img alt="../../../../_images/image66.png" class="align-center" src="../../../../_images/image66.png" />
+<p>We will create a projection known as Van der Grinten I.
+This interesting projection represents the earth on a circular field
+instead of a rectangular field, as most projections do.</p>
+<ol class="arabic simple" start="29">
+<li><p>Enter <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Van</kbd> <kbd class="kbd docutils literal notranslate">der</kbd> <kbd class="kbd docutils literal notranslate">Grinten</kbd> <kbd class="kbd docutils literal notranslate">I</kbd></kbd> in the <span class="guilabel">Name</span> field.</p></li>
+<li><p>In the Parameters field, enter the following string:</p></li>
+</ol>
+<p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">+proj=vandg</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate">lon_0=0</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate">x_0=0</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate">y_0=0</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate">R_A</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate">a=6371000</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate">b=6371000</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate">units=m</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate">no_defs</kbd></kbd></p>
+<ol class="arabic simple" start="31">
+<li><p>Click <span class="guilabel">OK</span>.</p></li>
+<li><p>Go to <span class="menuselection">Project ‣ Project Properties</span>.</p></li>
+<li><p>Enable ‘on the fly’ reprojection.</p></li>
+</ol>
+<img alt="../../../../_images/image691.png" class="align-center" src="../../../../_images/image691.png" />
+<ol class="arabic simple" start="34">
+<li><p>Search for your newly defined projection by typing it into the
+<span class="guilabel">Filter</span> box:</p></li>
+</ol>
+<img alt="../../../../_images/image701.png" class="align-center" src="../../../../_images/image701.png" />
+<ol class="arabic simple" start="35">
+<li><p>You should see it appear in the box at the bottom.
+Select it, and click <span class="guilabel">OK</span>.</p></li>
+</ol>
+<p>Once you’ve applied the new projection, the map will be reprojected like this:</p>
+<img alt="../../../../_images/image711.png" class="align-center" src="../../../../_images/image711.png" />
+<p><a class="reference internal" href="206-working-with-vector-data.html#working-with-vector-data"><span class="std std-ref">Go to next module –&gt;</span></a></p>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="206-working-with-vector-data.html"
+                   title="Module 6: Working with Vector Data"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="204-qgis-plugin.html"
+                   title="Module 4: QGIS Plugins"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>

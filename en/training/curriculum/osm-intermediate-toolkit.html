@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Unit 3 Facilitator Guide &#8212; InaSAFE Documentation Project 3.0.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=8c3b96fd" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/blog.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/bootstrap/css/bootstrap-responsive.min.css" type="text/css" />
+    <script src="../../_static/documentation_options.js?v=acc74ff5"></script>
+    <script src="../../_static/doctools.js?v=849807d4"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/custom-jquery.js"></script>
+    <script src="../../_static/bootstrap/js/bootstrap.js"></script>
+    <script src="../../_static/jQuery.equalHeights.js"></script>
+    <link rel="icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Unit 4 Facilitator Guide" href="qgis-inasafe-intermediate-toolkit.html" />
+    <link rel="prev" title="Unit 2 Facilitator Guide" href="qgis-inasafe-beginner-toolkit.html" />
+
+
+<style>
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    {
+        padding-bottom : 0px;
+        padding-left   : 0px;
+        padding-right  : 0px;
+        padding-top    : 0px;
+    }
+    .navbar .brand
+    {
+        height            : 42px;
+        padding-left      : 30px;
+    }
+    .navbar-inverse .navbar-inner
+    {
+        background-color : none;
+    }
+</style>
+
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+<script>
+    // detects current language and hides/shows up the links
+    $(document).ready(function () {
+        var currentPage = 'training/curriculum/osm-intermediate-toolkit.html';
+        var currentLang = window.location.href.slice(
+                window.location.href.indexOf(currentPage) - 3,
+                window.location.href.indexOf(currentPage) - 1);
+	
+        $('.lang_sel_sel.icl-' + currentLang).show(); // show current language in the language selection menu title
+	$('ul.sel_lang li.icl-' + currentLang).addClass("hidden"); // hide the current language link in the language selection menu
+	$('.nav-main .icl-' + currentLang).show(); // show the current language link in the main menu
+	$('.second-menu .icl-' + currentLang).show(); // show the current language link in the second menu
+        // Make the search button pretty - issue 36
+        $(':submit').addClass('btn btn-warning btn-small');
+    })
+
+    // load current page in a different language 
+    function gotoLang(lang) {
+        var currentPage = 'training/curriculum/osm-intermediate-toolkit.html';
+        var baseUrl = window.location.href.slice(0, window.location.href.indexOf(currentPage) - 3); // -3 removes current locale
+        window.location.href = baseUrl + lang + '/' + currentPage;
+    }
+</script>
+
+
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.hotosm.org/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
+
+
+<link rel="shortcut icon" href="../../_static/img/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="../../_static/bootstrap/img/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72"
+      href="../../_static/bootstrap/img/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+<link rel="apple-touch-icon-precomposed"
+      href="../../_static/bootstrap/img/apple-touch-icon-57x57-precomposed.png">
+
+  </head><body>
+
+    
+
+<header id="banner-header" class="banner navbar navbar-default topnavbar navbar-static-top default" role="banner">
+<div class="container">
+  <div class="navbar-header">
+      
+      <button class="search navbar-toggle"></button>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-main, .nav-extras, .nav-second">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo" href="http://inasafe.org/en/"></a>
+  </div>
+  
+  <nav class="nav-main navbar-collapse collapse" role="navigation">
+      <ul id="menu-default" class="navbar-nav nav">
+          <li class="menu-for-users"><a title="For Users" href="http://inasafe.org/for-users/" class="icl-en" style="display:none;">For Users</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=fr" class="icl-fr" style="display:none;">Pour les utilisateurs</a>
+                                     <a title="For Users" href="http://inasafe.org/for-users/?lang=id" class="icl-id" style="display:none;">For Users</a></li>
+          <li class="menu-for-contributors dropdown"><a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-en" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-fr" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+                                                     <a title="For Contributors" href="#" data-toggle="dropdown" class="dropdown-toggle icl-id" aria-haspopup="true" style="display:none;">For Contributors <span class="caret"></span></a>
+              <ul role="menu" class=" dropdown-menu">
+                  <li class="menu-coders"><a title="Coders" href="http://inasafe.org/for-contributors/for-coders/" class="icl-en" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=fr" class="icl-fr" style="display:none;">Coders</a>
+                                          <a title="Coders" href="http://inasafe.org/for-contributors/for-coders/?lang=id" class="icl-id" style="display:none;">Coders</a></li>
+                  <li class="menu-writers-and-designers active"><a title="Writers and Designers" href="http://inasafe.org/en/for-contributors/for-documentation-writers-and-designers/" class="icl-en" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/fr/for-contributors/for-documentation-writers-and-designers/" class="icl-fr" style="display:none;">Writers and Designers</a>
+                                                                <a title="Writers and Designers" href="http://inasafe.org/id/for-contributors/for-documentation-writers-and-designers/" class="icl-id" style="display:none;">Writers and Designers</a></li>
+                  <li class="menu-translators"><a title="Translators" href="http://inasafe.org/for-contributors/for-translators/" class="icl-en" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=fr" class="icl-fr" style="display:none;">Translators</a>
+                                               <a title="Translators" href="http://inasafe.org/for-contributors/for-translators/?lang=id" class="icl-id" style="display:none;">Translators</a></li>
+              </ul>
+          </li>
+          <li class="menu-blog"><a title="Blog" href="http://inasafe.org/blog/" class="icl-en" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=fr" class="icl-fr" style="display:none;">Blog</a>
+                                <a title="Blog" href="http://inasafe.org/blog/?lang=id" class="icl-id" style="display:none;">Blog</a></li>
+          <li class="menu-chat-live"><a title="Chat Live!" href="http://inasafe.org/chat-live/" class="icl-en" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=fr" class="icl-fr" style="display:none;">Chat Live!</a>
+                                     <a title="Chat Live!" href="http://inasafe.org/chat-live//?lang=id" class="icl-id" style="display:none;">Chat Live!</a></li>
+          <li class="menu-report-an-issue"><a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-en" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-fr" style="display:none;">Report an Issue</a>
+                                           <a title="Report an Issue" target="_blank" href="https://github.com/AIFDR/inasafe/issues" class="icl-id" style="display:none;">Report an Issue</a></li>
+      </ul>
+      <div id="lang_sel">
+          <ul>
+              <li><a href="#" class="lang_sel_sel icl-en" style="display:none">English</a>
+                  <a href="#" class="lang_sel_sel icl-fr" style="display:none">Français</a>
+                  <a href="#" class="lang_sel_sel icl-id" style="display:none">Indonesia</a>
+                  <ul class="sel_lang">
+                      <li class="icl-en">
+                          <a href="#" onclick="gotoLang('en');">English</a>
+                      </li>
+                      <li class="icl-fr">
+                          <a href="#" onclick="gotoLang('fr');">Français</a>
+                      </li>
+                      <li class="icl-id">
+                          <a href="#" onclick="gotoLang('id');">Indonesia</a>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+<div class="second-menu" id="menu-developers">
+    <div class="container">
+        <nav class="nav-second navbar-collapse collapse">
+            <span class="dropdown" data-toggle="dropdown"  style="display:none;">For Coders <em class="caret"></em></span>
+                <ul id="menu-for-users" class="menu">
+                      <li class="menu-quick-start">
+                      		<a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html" class="icl-en" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=fr" class="icl-fr" style="display:none;">Quick Start</a>
+                            <a title="Quick Start" target="_blank" href="http://inasafe.org/user-docs/install.html/?lang=id" class="icl-id" style="display:none;">Quick Start</a></li>
+                      <li class="menu-documentation">
+                      		<a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-en" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-fr" style="display:none;">Documentation</a>
+                            <a title="Documentation" target="_blank" href="https://github.com/AIFDR/inasafe/wiki" class="icl-id" style="display:none;">Documentation</a></li>
+                      <li class="menu-training-materials">
+                      		<a title="Training Materials" target="_blank" href="http://docs.inasafe.org/en/training/index.html" class="icl-en" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/fr/training/index.html" class="icl-fr" style="display:none;">Training Materials</a>
+                            <a title="Training Materials" target="_blank" href="http://docs.inasafe.org/id/training/index.html" class="icl-id" style="display:none;">Training Materials</a></li>
+                      <li class="menu-get-help">
+                      		<a title="Get Help" href="http://inasafe.org/for-users/get-help/" class="icl-en" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=fr" class="icl-fr" style="display:none;">Get Help</a>
+                            <a title="Get Help" href="http://inasafe.org/for-users/get-help/?lang=id" class="icl-id" style="display:none;">Get Help</a></li>
+                      <li class="menu-data">
+                      		<a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-en" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-fr" style="display:none;">Data</a>
+                            <a title="Data" target="_blank" href="http://data.inasafe.org" class="icl-id" style="display:none;">Data</a></li>
+                      <li class="menu-releases">
+                      		<a title="Releases" href="http://inasafe.org/for-users/releases/" class="icl-en" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=fr" class="icl-fr" style="display:none;">Releases</a>
+                            <a title="Releases" href="http://inasafe.org/for-users/releases/?lang=id" class="icl-id" style="display:none;">Releases</a></li>
+                      <li class="menu-user-map">
+                      		<a title="User Map" href="http://users.inasafe.org/" class="icl-en" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-fr" style="display:none;">User Map</a>
+                            <a title="User Map" href="http://users.inasafe.org/" class="icl-id" style="display:none;">User Map</a></li>
+                      <li class="menu-known-issues">
+                      		<a title="Known Issues" href="http://inasafe.org/for-users/known-issues/" class="icl-en" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=fr" class="icl-fr" style="display:none;">Known Issues</a>
+                            <a title="Known Issues" href="http://inasafe.org/for-users/known-issues/?lang=id" class="icl-id" style="display:none;">Known Issues</a></li>
+                     
+                  </ul>
+             
+            <button class="search"></button>
+        </nav>
+    </div>
+</div> 
+
+<div id="header-searchbox" style="display: none;" class="container">
+<form id="h-search" class="header-form" method="get" action="http://inasafe.org/en/search.html">
+<input type="text" placeholder="Search the documentation" name="q">
+<button class="submit" type="submit" value=""></button>
+<input type="hidden" value="yes" name="check_keywords">
+<input type="hidden" value="default" name="area">
+</form>
+</div>
+</header>
+
+
+ 
+        <div class="related container">
+          <div id="breadcrumbs">
+            <ul class="breadcrumb left">
+                
+                <li class="first">
+                    <a style="z-index:100;" href="../../index.html"> InaSAFE Docs </a>
+                </li>
+				
+                
+                <li class="parent">
+                    <a href="../index.html"
+                       style="z-index: 1;" 
+                    >
+                    Training Materials</a>
+                </li>
+                
+                <li class="parent">
+                    <a href="index.html"
+                       style="z-index: 1;" 
+                    accesskey="U">
+                    Curriculum and Guide for Facilitator</a>
+                </li>
+                
+
+                <li><a href="#">Unit 3 Facilitator Guide</a></li>
+            </ul>
+            
+            
+           <ul id="top-nav" class="breadcrumb right">
+           		
+                <li
+                style="margin-right: 16px" >
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                accesskey="I">index</a>
+                </li>
+                
+                <li
+                 >
+                <a href="qgis-inasafe-intermediate-toolkit.html"
+                   title="Unit 4 Facilitator Guide"
+                   style="z-index:;"
+                accesskey="N">next</a>
+                </li>
+                
+                <li
+                 >
+                <a href="qgis-inasafe-beginner-toolkit.html"
+                   title="Unit 2 Facilitator Guide"
+                   style="z-index:;"
+                accesskey="P">previous</a>
+                </li>
+                             
+           </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    
+    
+  
+    
+    
+<div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well sidebar-nav">
+                <span style="clear:both">&nbsp;</span>
+<h3><a href="../../index.html">Table Of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Training Materials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../socialisation/index.html">Socialisation Training Manual</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Curriculum and Guide for Facilitator</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="curriculum.html">Contingency Planning with OpenStreetMap (OSM) and QGIS/InaSAFE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="osm-beginner-toolkit.html">Unit 1 Facilitator Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qgis-inasafe-beginner-toolkit.html">Unit 2 Facilitator Guide</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Unit 3 Facilitator Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#intermediate-openstreetmap-trainer-s-toolkit-a-guide-for-facilitators">Intermediate OpenStreetMap Trainer’s Toolkit - (A Guide for Facilitators)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#about-toolkit">About Toolkit</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#purpose-of-workshop">Purpose of Workshop</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#schedule">Schedule</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#day-i">Day I:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-ii">Day II:</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#day-iii">Day III:</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#workshop-plan">Workshop Plan</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#session-1">Session 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-2">Session 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-3">Session 3</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-4">Session 4</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-5">Session 5</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#session-6">Session 6</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="qgis-inasafe-intermediate-toolkit.html">Unit 4 Facilitator Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../osm/index.html">Data Collection Using OpenStreetMap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../qgis/index.html">QGIS and InaSAFE for Disaster Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tot/index.html">Training of Trainer Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../old-training/index.html">OSM &amp; QGIS (Old Training Materials)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test_data.html">Training Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../user-docs/index.html">InaSAFE User documentation</a></li>
+</ul>
+
+            </div>
+        </div>
+        <div class="span9">
+                
+  <section id="unit-3-facilitator-guide">
+<h1>Unit 3 Facilitator Guide<a class="headerlink" href="#unit-3-facilitator-guide" title="Link to this heading">¶</a></h1>
+<section id="intermediate-openstreetmap-trainer-s-toolkit-a-guide-for-facilitators">
+<h2>Intermediate OpenStreetMap Trainer’s Toolkit - (A Guide for Facilitators)<a class="headerlink" href="#intermediate-openstreetmap-trainer-s-toolkit-a-guide-for-facilitators" title="Link to this heading">¶</a></h2>
+<p><strong>BADAN NASIONAL PENANGGULANGAN BENCANA</strong></p>
+<p><strong>2013</strong></p>
+</section>
+<section id="about-toolkit">
+<h2>About Toolkit<a class="headerlink" href="#about-toolkit" title="Link to this heading">¶</a></h2>
+<p><strong>The Intermediate OpenStreetMap Trainer Toolkit</strong> is designed to prepare
+trainers to deliver an intermediate training course to users of OSM.
+The materials included are designed to continue from the
+<strong>Beginner OpenStreetMap Training</strong>.</p>
+<p>When organising an OpenStreetMap workshop, numerous factors must be
+considered, including the length of time you have to train,
+available resources, number of trainees and their technical skills.
+This toolkit will help trainers prepare trainings for different types of
+participants, but it will primarily focus on educating those with little or
+no experience with GPS, map-making and computers. Participants of this
+training should have experience already working with OSM.</p>
+<p>The purpose of this toolkit is to prepare the trainer to successfully train
+workshop participants in adding spatial data to OpenStreetMap.</p>
+<section id="purpose-of-workshop">
+<h3>Purpose of Workshop<a class="headerlink" href="#purpose-of-workshop" title="Link to this heading">¶</a></h3>
+<p>This workshop is intended to achieve the following standard and basic
+competencies:</p>
+<section id="standard-competency">
+<h4>Standard Competency<a class="headerlink" href="#standard-competency" title="Link to this heading">¶</a></h4>
+<p>Quality Assurance in OSM mapping</p>
+</section>
+<section id="basic-competencies">
+<h4>Basic Competencies<a class="headerlink" href="#basic-competencies" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Apply better digitising techniques for improving quality of collected data</p></li>
+<li><p>Use JOSM validation tools to ensure the quality of map contributions</p></li>
+<li><p>Resolve conflicts when uploading OSM data</p></li>
+<li><p>Create presets files in JOSM</p></li>
+<li><p>Use private data store feature to keep private data</p></li>
+<li><p>Create and edit pages in OSM Wiki</p></li>
+</ol>
+</section>
+<section id="workshop-materials">
+<h4>Workshop Materials<a class="headerlink" href="#workshop-materials" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Advanced Editing</p></li>
+<li><p>Quality Assurance</p></li>
+<li><p>Dealing with Conflicts</p></li>
+<li><p>Creating JOSM File Presets</p></li>
+<li><p>Using the Separate Data Store</p></li>
+<li><p>Editing the OpenStreetMap Wiki</p></li>
+</ol>
+</section>
+<section id="workshop-strategies">
+<h4>Workshop Strategies<a class="headerlink" href="#workshop-strategies" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Methods emphasised in this workshop are participatory teaching
+and active participation in all sections and
+activities, rather than lecture method.</p></li>
+<li><p><strong>Participant oriented.</strong>
+Participants are encouraged to find and gain knowledge and skills
+by themselves.</p></li>
+<li><p><strong>Trainers serve as facilitators.</strong>
+Trainers facilitate to help ideas in the workshop emerge
+from the participants, not only from trainers.
+However, trainers must be ready to provide necessary information
+when the participants need any assistance.</p></li>
+<li><p><strong>Outcome oriented.</strong> Workshop must produce the outcomes mentioned
+previously.</p></li>
+</ol>
+</section>
+<section id="tools">
+<h4>Tools<a class="headerlink" href="#tools" title="Link to this heading">¶</a></h4>
+<ol class="arabic simple">
+<li><p>Copy of <a class="reference internal" href="../old-training/intermediate/osm/index.html#interm-osm"><span class="std std-ref">Data Collection Using OSM Intermediate Guide</span></a>
+for participants</p></li>
+<li><p>A workshop space with tables and seats</p></li>
+<li><p>Computers (one computer may be used by two participants,
+but it is better if one computer is used by one participant)</p></li>
+<li><p>A Projector (to present slide and demonstrate technical instructions and
+software)</p></li>
+<li><p>USB Flash drive(s) to transfer files and software</p></li>
+<li><p>Good internet connection</p></li>
+<li><p>Snacks and coffee for breaks</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="schedule">
+<h2>Schedule<a class="headerlink" href="#schedule" title="Link to this heading">¶</a></h2>
+<p>Below is an outline of a schedule for a three day workshop that has been tested with
+several groups in Indonesia. You may choose to adapt and change this
+workshop schedule to meet your needs.</p>
+<section id="day-i">
+<h3>Day I:<a class="headerlink" href="#day-i" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><p>Opening and Introductions</p></td>
+<td><p>Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 12.15</p></td>
+<td><ol class="arabic simple">
+<li><p>Advanced Editing</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>12.15 - 13.15</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13.15 - 15.15</p></td>
+<td><ol class="arabic simple">
+<li><p>Advanced Editing</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>15.15 - 15.30</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15.30 - 17.00</p></td>
+<td><ol class="arabic simple" start="2">
+<li><p>Quality Assurance</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-ii">
+<h3>Day II:<a class="headerlink" href="#day-ii" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="2">
+<li><p>Quality Assurance</p></li>
+</ol>
+</td>
+<td><p>Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 12.00</p></td>
+<td><ol class="arabic simple" start="2">
+<li><p>Quality Assurance</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>12.00 - 13.00</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13.00 - 15.15</p></td>
+<td><ol class="arabic simple" start="3">
+<li><p>Dealing with Conflicts</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>15.15 - 15.30</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15.30 - 17.00</p></td>
+<td><ol class="arabic simple" start="4">
+<li><p>Creating JOSM File Presets</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="day-iii">
+<h3>Day III:<a class="headerlink" href="#day-iii" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Time</strong></p></th>
+<th class="head"><p><strong>Materials</strong></p></th>
+<th class="head"><p><strong>Activities</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>09.00 - 10.00</p></td>
+<td><ol class="arabic simple" start="4">
+<li><p>Creating JOSM File Presets</p></li>
+</ol>
+</td>
+<td><p>Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>10.00 - 10.15</p></td>
+<td><p>Break 1</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10.15 - 12.15</p></td>
+<td><ol class="arabic simple" start="5">
+<li><p>Using the Separate Data Store</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>12.15 - 13.15</p></td>
+<td><p>Lunch break</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>13.15 - 15.15</p></td>
+<td><ol class="arabic simple" start="6">
+<li><p>Editing the OpenStreetMap Wiki</p></li>
+</ol>
+</td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+<tr class="row-odd"><td><p>15.15 - 15.30</p></td>
+<td><p>Break 2</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>15.30 - 17.00</p></td>
+<td><p>Evaluation and Closing</p></td>
+<td><p>FGD and Plenary Session</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="workshop-plan">
+<h2>Workshop Plan<a class="headerlink" href="#workshop-plan" title="Link to this heading">¶</a></h2>
+<section id="session-1">
+<h3>Session 1<a class="headerlink" href="#session-1" title="Link to this heading">¶</a></h3>
+<section id="advanced-editing">
+<h4>Advanced Editing<a class="headerlink" href="#advanced-editing" title="Link to this heading">¶</a></h4>
+<p>Time : 4 hours</p>
+<section id="basic-competency">
+<h5>Basic Competency<a class="headerlink" href="#basic-competency" title="Link to this heading">¶</a></h5>
+<p>Apply a better digitising technique for improving quality of
+collected data</p>
+</section>
+<section id="indicators">
+<h5>Indicators<a class="headerlink" href="#indicators" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Use advanced editing tools in JOSM</p></li>
+<li><p>Make relations among objects</p></li>
+</ol>
+</section>
+<section id="outcomes">
+<h5>Outcomes<a class="headerlink" href="#outcomes" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Make data in OpenStreetMap better</p></li>
+<li><p>Understand relations</p></li>
+</ol>
+</section>
+<section id="core-material">
+<h5>Core Material<a class="headerlink" href="#core-material" title="Link to this heading">¶</a></h5>
+<p><strong>Advanced Editing</strong></p>
+<ol class="arabic simple">
+<li><p>Advanced editing tools</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Default drawing tools</p></li>
+<li><p>Plugins</p></li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Relations</p></li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Editing relations</p></li>
+<li><p>Multipolygons and linestrings</p></li>
+</ol>
+</div></blockquote>
+</section>
+<section id="activities">
+<h5>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p>Powerpoint</p>
+<p>Slide</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Review OSM Materials for Beginners 30’</strong></p>
+<ol class="arabic simple">
+<li><p>Request participants to discuss what they have
+done with OpenStreetMap (OSM) since
+the first workshop (beginner training)</p></li>
+<li><p>Create a questions list from participants, showing them all
+on the projector.</p></li>
+<li><p>If the questions are simple, answer them directly.
+But if the questions are outside workshop material,
+give the other references
+or do an individual session outside the workshop,
+for example at lunch break.</p></li>
+<li><p>Explain what participants will get from this workshop
+(intermediate workshop). Separate participants into two sides,
+asking more details about their experience using
+computers and OSM. Pair the participants so that there is
+a good balance of skill in each pair. Less experienced
+participants should be paired with more advanced users.</p></li>
+</ol>
+</td>
+<td><p>Discussion</p>
+<p>Q &amp; A Session
+Lecture</p>
+</td>
+<td><p>Schedules</p>
+<p>Microphone
+Speakers
+Projector</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Shortcuts in JOSM 20’</strong></p>
+<ol class="arabic simple">
+<li><p>Ask participants to discuss in brief about the
+shortcuts (shortcut keys on your keyboard) to activate
+tools in JOSM.</p></li>
+<li><p>Demonstrate how shortcut keys
+can make the job of editing easier
+by saving a lot of time.</p></li>
+<li><p>Ask participants to practise by following the
+demonstration in the use of shortcuts.</p></li>
+</ol>
+</td>
+<td><p>Discussion</p>
+<p>Q &amp; A Session
+Lecture</p>
+</td>
+<td><p>Powerpoint</p>
+<p>Presentation
+Projector
+Computer
+Laptop
+Sample files
+in USB drive
+(tools_menu
+_sample.osm
+utilplugin2
+_sample.osm)</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Building tools plugin 30’</strong></p>
+<ol class="arabic simple">
+<li><p>Make sure all the participants have installed the
+<strong>building_tools</strong> and <strong>utilsplugin2</strong> plugins. Make sure
+that participants remove the previous training files
+and ask them to create new layer. Use that layer to practice
+with the <strong>buildings_tool</strong> plugin. Demonstrate:</p>
+<ol class="loweralpha simple">
+<li><p>How building tools works</p></li>
+<li><p>Make sure that they don’t select any object when
+using building tools.</p></li>
+<li><p>Teach how to set the building
+size (for example 10 m x 10 m)</p></li>
+<li><p>How to automatically add tags other than building=yes</p></li>
+</ol>
+</li>
+</ol>
+</td>
+<td><p>Discussion</p>
+<p>Demonstration
+Practice</p>
+</td>
+<td><p>Powerpoint</p>
+<p>Presentation
+Projector
+Computer/
+Laptop</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Utilplugin2 60’</strong></p>
+<ol class="arabic simple">
+<li><p>After the <strong>building_tool</strong> plugin, ask
+participants to close the layer and open the training file
+<strong>utilsplugin2_sample.osm</strong>. With this file, participants
+practise using new tools.</p></li>
+<li><p>Explain new tools in utilplugin2
+plugin such as <em>add source tag, select way nodes, replace
+geometry</em>. Give examples of situations when these will be used.</p></li>
+<li><p>Participants should practise the tools as
+they are explained.</p></li>
+</ol>
+</td>
+<td><p>Discussion</p>
+<p>Demonstration
+Practice</p>
+</td>
+<td><p>Powerpoint</p>
+<p>Presentation
+Projector
+Computer/
+Laptop</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Create relations between objects 35’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain relations and show an example in JOSM and on the OSM
+website.</p></li>
+<li><p>Have participants create two polygons with one inside the
+other (to demonstrate making a building with a courtyard)</p></li>
+<li><p>Explain relation attributes, and the “inner” and “outer” roles.</p></li>
+</ol>
+</td>
+<td><p>Discussion</p>
+<p>Demonstration
+Practice</p>
+</td>
+<td><p>Powerpoint</p>
+<p>Presentation
+Projector
+Computer
+Laptop</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="faq-frequently-asked-questions">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#faq-frequently-asked-questions" title="Link to this heading">¶</a></h5>
+<p><strong>I have set the building size in the building tools plugin. Why do buildings
+show as a line, not as a polygon?</strong></p>
+<p>It may look this way if you are not zoomed in far enough. Zoom in further
+to see the building properly.</p>
+<p><strong>I want to create a circle. Why do I get a very large circle with the
+‘create a circle’ tool in utilsplugins2?</strong></p>
+<p>Before using this tool, first create a way with exactly two nodes. If you
+create a way with more than two nodes, the resulting circle made from this
+tool can end up very large.</p>
+</section>
+</section>
+</section>
+<section id="session-2">
+<h3>Session 2<a class="headerlink" href="#session-2" title="Link to this heading">¶</a></h3>
+<section id="quality-assurance">
+<h4>Quality Assurance<a class="headerlink" href="#quality-assurance" title="Link to this heading">¶</a></h4>
+<p>Time : 4 Hours 15 minutes</p>
+<section id="id1">
+<h5>Basic Competency<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h5>
+<p>Use JOSM validation tools to ensure the quality of
+map contributions</p>
+</section>
+<section id="id2">
+<h5>Indicators<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Use validation tools in JOSM</p></li>
+<li><p>Use online validation tools</p></li>
+</ol>
+</section>
+<section id="id3">
+<h5>Outcomes<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Use validation tools to make OSM data better</p></li>
+</ol>
+</section>
+<section id="id4">
+<h5>Core Material<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h5>
+<p><strong>Quality Assurance</strong></p>
+<ol class="arabic simple">
+<li><p>Error and warnings</p></li>
+<li><p>Using the validation tool</p></li>
+<li><p>Common validation warnings</p></li>
+<li><p>Using the tasking manager</p></li>
+<li><p>Editing tips</p></li>
+<li><p>Presets standardisation</p></li>
+<li><p>KeepRight</p></li>
+</ol>
+</section>
+<section id="id5">
+<h5>Activities<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p></li>
+<li><p>Answer any participant questions about editing
+OSM data</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A
+Session</p>
+</td>
+<td><p>Powerpoint</p>
+<p>Presentation
+Projector</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Input 45’</strong></p>
+<p>Explain quality assurance. Show a few common errors
+that occur when editing in OSM.</p>
+</td>
+<td><p>Practice</p></td>
+<td><p>Powerpoint</p>
+<p>Presentation
+Projector
+Computer/
+Laptop</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Practice 150’</strong></p>
+<ol class="arabic simple">
+<li><p>Show the proper way to digitise with JOSM.</p></li>
+<li><p>Show how to fix errors or warnings.</p></li>
+<li><p>Find and fix errors in JOSM using two validation tools, JOSM
+validator and KeepRight.</p></li>
+<li><p>Remind participants of the tools from the previous
+session such as those on the tools menu and
+more tools.</p></li>
+<li><p>Use the tools to correct existing mistakes, according to the
+functions of each tool (like split, merge nodes, add
+intersection, etc.)</p></li>
+<li><p>Participants should practise using the JOSM
+validation tool and KeepRight.</p></li>
+<li><p>Let participants practise validation in an area, using
+the tasking manager to arrange tasks so that upload conflicts
+do not occur.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>Powerpoint</p>
+<p>Presentation
+Projector
+Computer/
+Laptop</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Closing 30’</strong></p>
+<p>Q &amp; A about problems that may happen when using validation
+tools in JOSM or online</p>
+</td>
+<td><p>Q &amp; A</p>
+<p>Session</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="session-3">
+<h3>Session 3<a class="headerlink" href="#session-3" title="Link to this heading">¶</a></h3>
+<section id="dealing-with-conflicts">
+<h4>Dealing with Conflicts<a class="headerlink" href="#dealing-with-conflicts" title="Link to this heading">¶</a></h4>
+<p>Time : 2 Hours</p>
+<section id="id6">
+<h5>Basic Competency<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h5>
+<p>Resolve conflicts when uploading OSM data</p>
+</section>
+<section id="id7">
+<h5>Indicators<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Identify conflicts</p></li>
+<li><p>Understand why conflicts occur</p></li>
+<li><p>Solve conflicts</p></li>
+</ol>
+</section>
+<section id="outcome">
+<h5>Outcome<a class="headerlink" href="#outcome" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Conflicts occur less</p></li>
+<li><p>Able to resolve conflicts in JOSM</p></li>
+</ol>
+</section>
+<section id="id8">
+<h5>Core Material<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h5>
+<p><strong>Dealing with Conflicts</strong></p>
+<ol class="arabic simple">
+<li><p>Conflicts</p></li>
+<li><p>Conflict resolution</p></li>
+<li><p>Ways to avoid conflicts</p></li>
+</ol>
+</section>
+<section id="id9">
+<h5>Activities<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 5’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p>Powerpoint</p>
+<p>Presentations
+Projector (get
+there are two
+projector)</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Group Discussion 15’</strong></p>
+<ol class="arabic simple">
+<li><p>Ask participants to form groups and discuss the causes of
+conflicts and how to solve them.</p></li>
+<li><p>One group can present their discussion results and others
+respond.</p></li>
+<li><p>Reinforce the discussion by showing on the
+projector how a conflict occurs, by downloading
+some area around the training location.</p></li>
+</ol>
+</td>
+<td><p>Discussion</p>
+<p>Lecture</p>
+</td>
+<td><p>Powerpoint</p>
+<p>Presentations
+Projector</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Demonstration and practice 100’</strong></p>
+<ol class="arabic simple">
+<li><p>Before demonstrating a conflict, first create
+a sample conflict.</p></li>
+<li><p>Explain the three type of conflict that
+arise when uploading JOSM data. Describe the cause of
+each, show an example and how to handle it.</p></li>
+<li><p>Ask participants to demonstrate to the others on the projector
+how to solve a given conflict.</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>Demonstration
+Practice</p>
+</td>
+<td><p>Computer/</p>
+<p>Laptop</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id10">
+<h5>FAQ (Frequently Asked Questions)<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h5>
+<p><strong>How do we avoid conflicts?</strong></p>
+<p>If you are working with other mappers, divide the work area so that your
+efforts do not overlap.</p>
+<p>It is also wise to upload your edits regularly. Fewer conflicts will occur
+if you upload changes soon after downloading data.</p>
+<p><strong>What is the meaning of the green, yellow and red colours in the conflict
+dialog?</strong></p>
+<p>The green colour means that the nodes are also in the OSM server and in the
+same order.
+The yellow colour means that the nodes are also in the OSM server but not the
+same order.
+The red colour means that the nodes exist just in one version,
+whether it is the working version or on the OSM server.</p>
+</section>
+</section>
+</section>
+<section id="session-4">
+<h3>Session 4<a class="headerlink" href="#session-4" title="Link to this heading">¶</a></h3>
+<section id="creating-josm-file-presets">
+<h4>Creating JOSM File Presets<a class="headerlink" href="#creating-josm-file-presets" title="Link to this heading">¶</a></h4>
+<p>Time : 150 minutes</p>
+<section id="id11">
+<h5>Basic Competency<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h5>
+<p>Create presets files in JOSM</p>
+</section>
+<section id="id12">
+<h5>Indicators<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand tags</p></li>
+<li><p>Understand XML</p></li>
+<li><p>Understand keys and values</p></li>
+<li><p>Make presets</p></li>
+<li><p>Put preset files into JOSM</p></li>
+<li><p>Apply new presets to an object</p></li>
+</ol>
+</section>
+<section id="id13">
+<h5>Outcomes<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Presets can be used to ease and standardise editing process</p></li>
+</ol>
+</section>
+<section id="id14">
+<h5>Core Material<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h5>
+<p><strong>Creating JOSM File Presets</strong></p>
+<ol class="arabic simple">
+<li><p>Tags and presets</p></li>
+<li><p>Introduction to XML</p></li>
+<li><p>JOSM presets files</p></li>
+</ol>
+</section>
+<section id="id15">
+<h5>Activities<a class="headerlink" href="#id15" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 10’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p></li>
+<li><p>Give questions to make sure that the
+participants still remember what are presets and tags.</p></li>
+<li><p>Make sure that the participants understand
+commonly accepted tags in OSM
+(remind about Map Features page on OSM wiki).</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A
+Discussion</p>
+</td>
+<td><p>Powerpoint</p>
+<p>Presentations
+Projector</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Input 45’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain presets, different
+tags, keys and values.</p></li>
+<li><p>Introduce the XML language which is used
+to create a presets file.</p></li>
+<li><p>Explain the various
+elements that can be added to a presets menu through the XML
+code. Explain each element
+carefully, so that participants understand the
+relationship between their code and how results appear
+in the preset menu.</p></li>
+</ol>
+</td>
+<td><p>Lecture</p></td>
+<td><p>Powerpoint</p>
+<p>Presentations
+Projector</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Making Your Own Preset File 30’</strong></p>
+<ol class="arabic simple">
+<li><p>Invite participants to discuss presets
+that you want to make together. Make sure the ideas
+include all types of preset menu items, such as
+text box, check box and
+multiselect.</p></li>
+<li><p>Ask participants to visit the Map Features page on the
+OSM wiki and the taginfo.openstreetmap.org
+website to see what keys and value are already available in
+OpenStreetMap. They should try to use keys and values that
+exist or once existed. If they have not been created before,
+they may invent keys and values of their own.</p></li>
+</ol>
+</td>
+<td><p>Discussion</p>
+<p>Demonstration
+Practice</p>
+</td>
+<td><p>Computer/</p>
+<p>Laptop
+Module 4</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Making Your Own Preset File 45’</strong></p>
+<ol class="arabic simple">
+<li><p>Help participants install Notepad++ for use in this
+session.</p></li>
+<li><p>Ask participants to open the <em>presets_sample.xml</em>
+file that has been provided on USB flash disk.
+This file is an empty preset file provided as the starting
+point for writing custom XML.</p></li>
+<li><p>Guide participants to make together the
+presets file that was previously discussed. Go around
+and check how the participants write XML code.
+Fix mistakes and explain them to participants. When they
+finish writing their XML file, show how to save it and
+add into JOSM.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>Powerpoint</p>
+<p>Presentations
+Projector
+Computer/
+Laptop
+USB Flash
+disk Installer
+Notepad ++
+a XML file
+example
+Module 4
+XML and
+Presets in
+JOSM</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Adding new presets file to JOSM 15’</strong></p>
+<ol class="arabic simple">
+<li><p>Add presets through the “Preferences” menu.</p></li>
+<li><p>If participants get an error after adding their presets file
+into JOSM, help them correct it.
+Usually errors happen when participants make mistakes
+with their XML.
+Make sure participants are able to succesfully correct and
+add into JOSM. Then practise tagging objects with the new
+menu.</p></li>
+</ol>
+</td>
+<td><p>Q &amp; A</p>
+<p>Practice</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="session-5">
+<h3>Session 5<a class="headerlink" href="#session-5" title="Link to this heading">¶</a></h3>
+<section id="using-the-separate-data-store">
+<h4>Using the Separate Data Store<a class="headerlink" href="#using-the-separate-data-store" title="Link to this heading">¶</a></h4>
+<p>Time : 2 Hours</p>
+<section id="id16">
+<h5>Basic Competency<a class="headerlink" href="#id16" title="Link to this heading">¶</a></h5>
+<p>Use private data store feature to keep private data</p>
+</section>
+<section id="id17">
+<h5>Indicators<a class="headerlink" href="#id17" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand the functions of the Separate Data Store (SDS)</p></li>
+<li><p>Understand what data should be kept publicly and what should
+be private</p></li>
+<li><p>Install SDS plugin in JOSM</p></li>
+<li><p>Use SDS presets</p></li>
+<li><p>Use SDS plugin for selecting public and private data</p></li>
+<li><p>Access online datastore</p></li>
+</ol>
+</section>
+<section id="id18">
+<h5>Outcomes<a class="headerlink" href="#id18" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Understand how to use the SDS</p></li>
+</ol>
+</section>
+<section id="id19">
+<h5>Core Material<a class="headerlink" href="#id19" title="Link to this heading">¶</a></h5>
+<p><strong>Using the Separate Data Store</strong></p>
+<ol class="arabic simple">
+<li><p>Installing the SDS plugin</p></li>
+<li><p>Using the plugin</p></li>
+<li><p>How it works</p></li>
+<li><p>Accessing the datastore online</p></li>
+</ol>
+</section>
+<section id="id20">
+<h5>Activities<a class="headerlink" href="#id20" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 15’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p></li>
+<li><p>Through games, participants should list what kind of
+data can be mapped using a private datastore.</p></li>
+<li><p>Explain reasons why data might be better as
+private or public data.</p></li>
+</ol>
+</td>
+<td><p>Lecture</p></td>
+<td><p>Powerpoint</p>
+<p>Presentations
+Projector</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Input 30’</strong></p>
+<p>Explain:</p>
+<ul class="simple">
+<li><p>How Separate Data Store (SDS) works</p></li>
+<li><p>The purpose of using the SDS</p></li>
+<li><p>Applications of the tool</p></li>
+</ul>
+</td>
+<td><p>Lecture</p>
+<p>Q &amp; A</p>
+</td>
+<td><p>Powerpoint</p>
+<p>Presentations</p>
+<p>Projector
+Computer/
+Laptop</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Practice 60’</strong></p>
+<ol class="arabic simple">
+<li><p>Show how to install the plugin and ask participants
+to install on their computer/laptop. Edit the settings
+so that the SDS points to HOT’s demo server
+(sds.dev.hotosm.org).</p></li>
+<li><p>Demonstrate how to add tags to objects which will be
+redirected to the private demo server. Participants should
+download a small area and practise adding custom tags.
+Upload the edits.</p></li>
+<li><p>Use the sample account to access the demo data store.
+Allow participants to explore the SDS and see the private data
+which they uploaded in JOSM.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Closing 15’</strong></p>
+<blockquote>
+<div><p>Discuss the session. Explain how the SDS can be set up privately
+for organisations and users that want to maintain their own
+private data store.</p>
+</div></blockquote>
+</td>
+<td><p>Q &amp; A</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="common-problems">
+<h5>Common Problems<a class="headerlink" href="#common-problems" title="Link to this heading">¶</a></h5>
+<p><strong>Internet connection</strong></p>
+<p>Sometimes the demo SDS has problems when many people are using it
+because of limited bandwidth. You may need to ask participants to
+watch demonstration rather than practising all on their own.</p>
+</section>
+</section>
+</section>
+<section id="session-6">
+<h3>Session 6<a class="headerlink" href="#session-6" title="Link to this heading">¶</a></h3>
+<section id="editing-the-openstreetmap-wiki">
+<h4>Editing the OpenStreetMap Wiki<a class="headerlink" href="#editing-the-openstreetmap-wiki" title="Link to this heading">¶</a></h4>
+<p>Time : 2 Hours</p>
+<section id="id21">
+<h5>Basic Competency<a class="headerlink" href="#id21" title="Link to this heading">¶</a></h5>
+<p>Create and edit pages in OSM wiki</p>
+</section>
+<section id="id22">
+<h5>Indicators<a class="headerlink" href="#id22" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Make an account on the OpenStreetMap wiki</p></li>
+<li><p>Understand conventions and rules in developing a wiki page</p></li>
+<li><p>Edit the wiki</p></li>
+<li><p>Upload files and images</p></li>
+<li><p>Translate and revise wiki</p></li>
+</ol>
+</section>
+<section id="id23">
+<h5>Outcomes<a class="headerlink" href="#id23" title="Link to this heading">¶</a></h5>
+<ol class="arabic simple">
+<li><p>Edit the OpenStreetMap wiki</p></li>
+<li><p>Understand how to contribute to OSM wiki</p></li>
+</ol>
+</section>
+<section id="id24">
+<h5>Core Material<a class="headerlink" href="#id24" title="Link to this heading">¶</a></h5>
+<p><strong>Editing the OpenStreetMap Wiki</strong></p>
+<ol class="arabic simple">
+<li><p>OSM wiki</p></li>
+<li><p>Signing up</p></li>
+<li><p>Editing</p></li>
+<li><p>Wiki formatting</p></li>
+<li><p>Creating a new page</p></li>
+<li><p>Uploading files and images</p></li>
+<li><p>Translating pages</p></li>
+<li><p>Watching pages</p></li>
+</ol>
+</section>
+<section id="id25">
+<h5>Activities<a class="headerlink" href="#id25" title="Link to this heading">¶</a></h5>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Activities</strong></p></th>
+<th class="head"><p><strong>Methods</strong></p></th>
+<th class="head"><p><strong>Tools</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Introduction 15’</strong></p>
+<p>Explain the importance of the session, objectives,
+outcomes and activities of the session.</p>
+</td>
+<td><p>Lecture</p></td>
+<td><p>Powerpoint</p>
+<p>Presentations
+Projector</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Explain OpenStreetMap Wiki 25’</strong></p>
+<ol class="arabic simple">
+<li><p>Explain:</p>
+<ul class="simple">
+<li><p>What is the OSM wiki and how it can be used</p></li>
+<li><p>The importance of the wiki as the
+main information source about anything related to
+OSM</p></li>
+<li><p>How the wiki works similar to OSM, where all users
+can add and edit the wiki pages</p></li>
+<li><p>The importance of posting projects related to OSM and
+also various kinds of OSM tags</p></li>
+</ul>
+</li>
+<li><p>Show some important wiki pages, such as
+<em>Map Features</em> and <em>Basics of JOSM</em>
+(JOSM Basic). Show how to translate pages to
+improve the accessibility of OSM</p></li>
+</ol>
+</td>
+<td><p>Lecture</p>
+<p>FGD</p>
+</td>
+<td><p>Powerpoint</p>
+<p>Presentations</p>
+<p>Projector
+Module 6</p>
+</td>
+</tr>
+<tr class="row-even"><td><p><strong>Create Wiki Accounts 30’</strong></p>
+<ol class="arabic simple">
+<li><p>Help participants to register
+on OSM wiki, so they can log in and
+contribute.</p></li>
+<li><p>Tell participants that they should sign up with the same
+name (account), because it will help them remember their
+login info (which often confuses users and prevents
+them from logging in) and it makes it easier for
+other users to find them both on OSM and the wiki.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>Powerpoint</p>
+<p>Presentations
+Projector
+Computer
+connected
+internet
+Module 6</p>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Create and Edit OSM Wiki Page 60’</strong></p>
+<ol class="arabic simple">
+<li><p>Ask participants to access their user page
+to practise adding to the wiki.</p></li>
+<li><p>Show how the editor works, and ask the participants to add
+basic information about themselves to their user page.</p></li>
+<li><p>Demonstrate how to use the buttons at the top of the editor
+to make the formatting look better.</p></li>
+<li><p>Teach basic formatting. It does not need to be commplex. The
+important thing is for participants to understand the basic
+concepts.</p></li>
+<li><p>Have participants create a new page entirely on their own.</p></li>
+</ol>
+</td>
+<td><p>Practice</p></td>
+<td><p>Powerpoint</p>
+<p>Presentations
+Projector
+Computer
+connected
+internet
+Module 6</p>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+</section>
+</section>
+
+
+        </div> 
+        <hr>
+    </div>
+</div>
+  
+ 
+ 
+   
+ <div class="related container">            
+           <ul class="breadcrumb center">
+           		
+                <li>
+                <a href="../../genindex.html"
+                   title="General Index"
+                   style="z-index:;"
+                >index</a>
+                </li>
+                
+                <li>
+                <a href="qgis-inasafe-intermediate-toolkit.html"
+                   title="Unit 4 Facilitator Guide"
+                   style="z-index:;"
+                >next</a>
+                </li>
+                
+                <li>
+                <a href="qgis-inasafe-beginner-toolkit.html"
+                   title="Unit 2 Facilitator Guide"
+                   style="z-index:;"
+                >previous</a>
+                </li>
+                                  
+           </ul>
+
+        </div>
+    </div>  
+ 
+ 
+  
+  <footer id="page-footer" class="content-info"> 
+    <div class="container">
+        <div class="centered">
+            Contact
+            <a href="mailto:info@inasafe.org?subject=[inasafe-info]">
+            <b>info@inasafe.org</b></a> for more information.
+            Source code available on
+            <a href="https://github.com/AIFDR/inasafe"><b>GitHub</b></a>!
+            Please <a href="https://github.com/AIFDR/inasafe/issues"><b>
+            file a ticket</b></a> if you have discovered an issue.<br>
+            This document is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB">Creative Commons Attribution 3.0 Australia License.</a> - last build: 10:52 Jan 10, 2024<br>
+            <a href="http://creativecommons.org/licenses/by/3.0/au/deed.en_GB"><b>CCByA</b></a>,
+            Copyright 2014, Indonesian Government-BNPB, Australian
+            Government-AIFDR and the World Bank-GFDRR.
+        </div>
+    </div>
+   </footer>
+
+    <div class="footer" role="contentinfo">
+      Last updated on 10:52 Jan 10, 2024.
+    </div>
+  </body>
+</html>
