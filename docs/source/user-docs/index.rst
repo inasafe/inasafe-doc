@@ -1,6 +1,6 @@
 .. _user_documentation:
 
-User documentation
+InaSAFE User documentation
 ==================
 
 This section of the documentation describes how to use the |project_name|
